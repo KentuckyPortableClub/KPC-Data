@@ -84,6 +84,33 @@
   "problems": [],
   "with official lines": 233
  },
+ "pass5": {
+  "cell_m": 5.0,
+  "checked": 12,
+  "date": "2026-10-27",
+  "left out": {
+   "Kentucky (own list)": "all (ky-overlaps.geojson)",
+   "approximate": 419,
+   "no outline": 3650,
+   "no pin": 4,
+   "pin well outside": 0
+  },
+  "official parks": 272,
+  "pairs tested": 0,
+  "pass": 5,
+  "problems": [
+   "W&S river corridors joined as area parks: 15",
+   "NHD water: HTTP Error 504: Gateway Time-out",
+   "NHD water: HTTP Error 504: Gateway Time-out",
+   "NHD water: The read operation timed out",
+   "NHD water: The read operation timed out",
+   "NHD water: HTTP Error 504: Gateway Time-out",
+   "NHD water: HTTP Error 502: Bad Gateway"
+  ],
+  "still not checked": 6,
+  "water only": 0,
+  "with official lines": 0
+ },
  "per state": {
   "CA-AB": {
    "candidates": 200,
@@ -626,15 +653,15 @@
    "water only": 0
   },
   "US-OH": {
-   "candidates": 27,
+   "candidates": 22,
    "candidates (saved outline only)": 0,
    "lines": 72,
    "n-fers": 0,
-   "not sure": 14,
+   "not sure": 20,
    "pass1": 222,
    "pass2": 185,
    "spots": 222,
-   "very tight": 4,
+   "very tight": 0,
    "water only": 1
   },
   "US-OK": {
