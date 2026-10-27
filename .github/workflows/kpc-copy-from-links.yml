@@ -30,19 +30,11 @@ jobs:
       - name: Copy (folders mirrored, single files copied)
         continue-on-error: true
         run: |
-          DIRS="data/wwff data/world-bounds data/pota data/names data/sota data/canada-bounds data/parkinfo data/world-key data/us-key data/trails data/access data/ca-key data/sota-land data/campfed data/campstate data/campstate-manual data/nwr"
-          FILES="locations.json locations-ky.json data/northam.json data/canada.json data/parkinfo-web.json data/boundary-score.json data/boundary-report.json data/state-gis-found.json data/access-layers.json data/state-gis.json"
+          DIRS="data/world-bounds data/pota data/canada-bounds data/world-key data/us-key data/ca-key data/campfed data/campstate data/campstate-manual data/nwr"
+          FILES="data/northam.json data/canada.json data/parkinfo-web.json data/boundary-score.json data/boundary-report.json data/state-gis-found.json data/access-layers.json data/state-gis.json"
           for d in $DIRS; do [ -d "links/$d" ] && mkdir -p "kpcdata/$d" && rsync -a --delete "links/$d/" "kpcdata/$d/"; done
           for f in $FILES; do [ -f "links/$f" ] && mkdir -p "kpcdata/$(dirname $f)" && cp "links/$f" "kpcdata/$f"; done
           echo "::notice title=Step B3 copy::$(du -sh kpcdata/data | cut -f1) in kpcdata/data"
       - name: Save (once)
         continue-on-error: true
-        run: |
-          cd kpcdata
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -A data locations.json locations-ky.json 2>/dev/null || true
-          git diff --cached --quiet && exit 0
-          git commit -qm "Site data copied from KPC-Links (Step B3)" || exit 0
-          for i in 1 2 3 4 5; do git pull -q --rebase --autostash && git push -q && exit 0; sleep $((i * 9)); done
-          true
+        run: bash links/.github/scripts/kpc_push_data.sh kpcdata "Site data copied from KPC-Links (Step B3)" data

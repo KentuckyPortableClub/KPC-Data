@@ -1,0 +1,54 @@
+name: KPC US access points
+# Step B5 (chat 2, Oct 27): MOVED from KPC-Links. Checks out KPC-Links read-only (scripts + the data that stays there), lays
+# KPC-Data's moved data over it (kpc_overlay.sh), runs, and saves data/access/ HERE (kpc_push_data.sh: only this job's files, no
+# rebase). Never fails.
+on:
+  schedule:
+    - cron: '41 8 6 * *'          # monthly, the 6th (after the US key on the 1st)
+  workflow_dispatch:
+    inputs:
+      states:
+        description: 'States, e.g. "MO PA" (blank = every state in data/access-layers.json)'
+        default: ''
+permissions:
+  contents: write
+concurrency:
+  group: kpc-us-access
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - name: Get the scripts and park data (KPC-Links, read-only)
+        uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          persist-credentials: false
+      - name: Get this repo (KPC-Data)
+        uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - name: Lay this repo's data over the checkout
+        run: touch /tmp/kpc-start; bash .github/scripts/kpc_overlay.sh kpcdata || true
+      - name: Fetch the saved park outlines
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p cache/us cache/ca
+          gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'US-*.json.gz' -D cache/us --clobber || true
+          gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'CA-ALL.json.gz' -D cache/ca --clobber || true
+      - name: Build the access points
+        continue-on-error: true
+        env:
+          STATES: ${{ inputs.states }}
+          MINUTES: '150'
+        run: python3 .github/scripts/kpc_us_access.py || true
+      - name: Save (once)
+        if: always()
+        continue-on-error: true
+        run: |
+          mkdir -p kpcdata/data/access/ && rm -rf kpcdata/data/access/ && cp -a data/access kpcdata/data/access 2>/dev/null || true
+          for f in data/status/*.json; do [ "$f" -nt /tmp/kpc-start ] && ! cmp -s "$f" "kpcdata/$f" && mkdir -p kpcdata/data/status && cp "$f" "kpcdata/$f"; done; true
+          bash .github/scripts/kpc_push_data.sh kpcdata "US access points: parking, entrances, ramps" data

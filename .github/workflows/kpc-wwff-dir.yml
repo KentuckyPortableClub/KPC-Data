@@ -1,0 +1,44 @@
+name: KPC WWFF + SOTA directory copy
+# Step B5 (chat 2, Oct 27): MOVED from KPC-Links. Checks out KPC-Links read-only (scripts + the data that stays there), lays
+# KPC-Data's moved data over it (kpc_overlay.sh), runs, and saves data/wwff/, data/sota/, data/names/ HERE (kpc_push_data.sh: only this job's files, no
+# rebase). Never fails.
+on:
+  schedule:
+    - cron: '23 9 * * 0'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: kpc-wwff-dir
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - name: Get the scripts and park data (KPC-Links, read-only)
+        uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          persist-credentials: false
+      - name: Get this repo (KPC-Data)
+        uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - name: Lay this repo's data over the checkout
+        run: touch /tmp/kpc-start; bash .github/scripts/kpc_overlay.sh kpcdata || true
+      - name: Directories
+        continue-on-error: true
+        run: |
+          python3 .github/scripts/kpc_wwff_dir.py || true
+          python3 .github/scripts/kpc_sota_dir.py || true
+          python3 .github/scripts/kpc_name_index.py || true   # Oct 24: world WWFF + SOTA name search (data/names)
+      - name: Save (once)
+        if: always()
+        continue-on-error: true
+        run: |
+          mkdir -p kpcdata/data/wwff/ && rm -rf kpcdata/data/wwff/ && cp -a data/wwff kpcdata/data/wwff 2>/dev/null || true
+          mkdir -p kpcdata/data/sota/ && rm -rf kpcdata/data/sota/ && cp -a data/sota kpcdata/data/sota 2>/dev/null || true
+          mkdir -p kpcdata/data/names/ && rm -rf kpcdata/data/names/ && cp -a data/names kpcdata/data/names 2>/dev/null || true
+          for f in data/status/*.json; do [ "$f" -nt /tmp/kpc-start ] && ! cmp -s "$f" "kpcdata/$f" && mkdir -p kpcdata/data/status && cp "$f" "kpcdata/$f"; done; true
+          bash .github/scripts/kpc_push_data.sh kpcdata "Update WWFF directory copy" data

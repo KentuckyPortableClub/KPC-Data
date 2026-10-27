@@ -1,0 +1,54 @@
+name: KPC park links by state
+# Step B5 (chat 2, Oct 27): MOVED from KPC-Links. Checks out KPC-Links read-only (scripts + the data that stays there), lays
+# KPC-Data's moved data over it (kpc_overlay.sh), runs, and saves data/parkinfo/ HERE (kpc_push_data.sh: only this job's files, no
+# rebase). Never fails.
+on:
+  schedule:
+    - cron: '41 8 * * 2'
+  workflow_dispatch:
+    inputs:
+      states:
+        description: 'States (blank = every state but KY)'
+        default: ''
+      programs:
+        description: 'POTA programs outside the US, like CA MX (blank = all of North America when states is blank too)'
+        default: ''
+      recheck:
+        description: 'Fetch every park page again'
+        type: boolean
+        default: false
+permissions:
+  contents: write
+concurrency:
+  group: kpc-state-links
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - name: Get the scripts and park data (KPC-Links, read-only)
+        uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          persist-credentials: false
+      - name: Get this repo (KPC-Data)
+        uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - name: Lay this repo's data over the checkout
+        run: touch /tmp/kpc-start; bash .github/scripts/kpc_overlay.sh kpcdata || true
+      - name: Build the state files
+        continue-on-error: true
+        env:
+          STATES: ${{ inputs.states }}
+          PROGS: ${{ inputs.programs }}
+          RECHECK: ${{ inputs.recheck && '1' || '' }}
+        run: python3 .github/scripts/kpc_state_links.py || true
+      - name: Save (once)
+        if: always()
+        continue-on-error: true
+        run: |
+          mkdir -p kpcdata/data/parkinfo/ && rm -rf kpcdata/data/parkinfo/ && cp -a data/parkinfo kpcdata/data/parkinfo 2>/dev/null || true
+          for f in data/status/*.json; do [ "$f" -nt /tmp/kpc-start ] && ! cmp -s "$f" "kpcdata/$f" && mkdir -p kpcdata/data/status && cp "$f" "kpcdata/$f"; done; true
+          bash .github/scripts/kpc_push_data.sh kpcdata "Park links: states around Kentucky" data

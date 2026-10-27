@@ -46,6 +46,8 @@ jobs:
       - uses: actions/checkout@v5
         with:
           path: kpcdata
+      - name: Lay KPC-Data's moved data over the KPC-Links checkout (Step B)
+        run: bash .github/scripts/kpc_overlay.sh kpcdata || true
       - name: Tools + saved outlines + the last 2-fer files
         continue-on-error: true
         run: |
@@ -91,6 +93,7 @@ jobs:
       - name: Tools + the bundle
         continue-on-error: true
         run: |
+          bash .github/scripts/kpc_overlay.sh || true   # Step B: KPC-Data's moved data (trails, parkinfo, access…)
           pip install -q numpy opencv-python-headless || true
           mkdir -p cache/us cache/ca bundle/http data/fers
           gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'US-*.json.gz' -D cache/us --clobber || true
@@ -124,6 +127,8 @@ jobs:
       - uses: actions/checkout@v5
         with:
           path: kpcdata
+      - name: Lay KPC-Data's moved data over the KPC-Links checkout (Step B)
+        run: bash .github/scripts/kpc_overlay.sh kpcdata || true
       - name: Check (offline, from the bundle)
         continue-on-error: true
         env:
