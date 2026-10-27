@@ -98,17 +98,39 @@
   "problems": [],
   "with official lines": 1
  },
+ "pass5": {
+  "cell_m": 5.0,
+  "checked": 35,
+  "date": "2026-10-27",
+  "left out": {
+   "approximate": 0,
+   "no outline": 4,
+   "no pin": 0,
+   "pin well outside": 0
+  },
+  "official parks": 199,
+  "pairs tested": 0,
+  "pass": 5,
+  "problems": [
+   "NHD water: HTTP Error 504: Gateway Time-out",
+   "NHD water: HTTP Error 502: Bad Gateway",
+   "NHD water: HTTP Error 504: Gateway Time-out"
+  ],
+  "still not checked": 3,
+  "water only": 0,
+  "with official lines": 11
+ },
  "per state": {
   "US-KY": {
-   "candidates": 31,
-   "candidates (saved outline only)": 20,
+   "candidates": 21,
+   "candidates (saved outline only)": 15,
    "lines": 115,
    "n-fers": 5,
-   "not sure": 6,
+   "not sure": 9,
    "pass1": 201,
    "pass2": 184,
    "spots": 201,
-   "very tight": 4,
+   "very tight": 3,
    "water only": 0
   }
  }

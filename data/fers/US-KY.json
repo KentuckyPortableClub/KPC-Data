@@ -1,8 +1,9 @@
 {
- "about": "Spots where the boundaries of two or more POTA parks may overlap, by the 2-FER RULES FOR THE WHOLE WORLD (Brandon Oct 27, notes/mapping.md): the park = where its designation legally applies (national forests + grasslands = Forest Service-OWNED land only, never proclamation lines); public land open to the public; layered = real, side by side = not (ownership step: PAD-US / CPCAD at the spot); a patch 50 yards across in every park ('small' = 50-100 yards; 25-50 yards = the separate 'very tight' list, members only; under 25 = not kept); line-only trails / rivers by POTA's 100-ft rule from the line or the river EDGE (USGS NHD); pins never count. Status: 'candidate' = all checks passed; 'not sure: …' and 'water only: boat or kayak' are separate lists, never the main one; 'dropped: …' says why. Every decided spot shows 'checked' + 'map_dates'. Parks with no official boundary: missing-<region>.json. HIDDEN, not reviewed: passes [saved, fresh, finest] must all be 1 and status 'candidate' before a person looks. Wording when shown (house rule, Oct 26 5:45 PM): '⚠️ Possible POTA overlap only. We think these POTA parks' boundaries may overlap here, but we can't confirm it. Check both official boundary maps and make your own call before you count it.' Tool pages carry the FULL notice from CLAUDE.md.",
+ "about": "Spots where the boundaries of two or more POTA parks may overlap, by the 2-FER RULES FOR THE WHOLE WORLD (Brandon Oct 27, notes/mapping.md): the park = where its designation legally applies (national forests + grasslands = Forest Service-OWNED land only, never proclamation lines); public land open to the public; layered = real, side by side = not (ownership step: PAD-US / CPCAD at the spot, read at up to 5 points of the patch; no public owner there = not sure); a patch 50 yards across in every park ('small' = 50-100 yards; 25-50 yards = the separate 'very tight' list, members only; under 25 = not kept); line-only trails / rivers by POTA's 100-ft rule from the line or the river EDGE (USGS NHD); pins never count. Status: 'candidate' = all checks passed; 'not sure: …' and 'water only: boat or kayak' are separate lists, never the main one; n-fers up to 9; 'Same land, two park numbers' (two numbers on one official outline) is shown with that label; 'dropped: …' says why. Every decided spot shows 'checked' + 'map_dates'. Parks with no official boundary: missing-<region>.json. HIDDEN, not reviewed: passes [saved, fresh, finest] must all be 1 and status 'candidate' before a person looks. Wording when shown (house rule, Oct 26 5:45 PM): '⚠️ Possible POTA overlap only. We think these POTA parks' boundaries may overlap here, but we can't confirm it. Check both official boundary maps and make your own call before you count it.' Tool pages carry the FULL notice from CLAUDE.md.",
  "pass1": "2026-10-27",
  "pass2": "2026-10-27",
  "pass3": "2026-10-27",
+ "pass5": "2026-10-27",
  "spots": [
   {
    "acres": 25.7,
@@ -1006,6 +1007,7 @@
     ]
    ],
    "status": "candidate (saved outline only)",
+   "water_checked": "2026-10-27",
    "wide_m": 1384
   },
   {
@@ -4365,6 +4367,7 @@
     36.502927,
     -88.060504
    ],
+   "checked": "2026-10-27",
    "found": "2026-10-27",
    "id": "US-0703+US-3790@same land@36.503,-88.061",
    "kind": "same land",
@@ -10369,6 +10372,7 @@
     ]
    ],
    "status": "candidate (saved outline only)",
+   "water_checked": "2026-10-27",
    "wide_m": 665
   },
   {
@@ -10426,6 +10430,11 @@
    },
    "owner_here": "U.S. Forest Service (Forest Service ownership map, Basic Ownership, 2015)",
    "ownership": "layered on usfs land",
+   "pairs_here": [
+    "US-10104+US-3801",
+    "US-10104+US-4484",
+    "US-3801+US-4484"
+   ],
    "passes": [
     1,
     1,
@@ -10728,6 +10737,7 @@
     ]
    ],
    "status": "candidate (saved outline only)",
+   "water_checked": "2026-10-27",
    "wide_m": 447
   },
   {
@@ -11076,7 +11086,8 @@
      37.830036
     ]
    ],
-   "status": "candidate (saved outline only)",
+   "status": "merged into one row: US-10104+US-3801+US-4484@area@37.815,-83.548 (the same patch as the 3-fer)",
+   "water_checked": "2026-10-27",
    "wide_m": 447
   },
   {
@@ -11391,7 +11402,8 @@
      37.83001
     ]
    ],
-   "status": "candidate (saved outline only)",
+   "status": "merged into one row: US-10104+US-3801+US-4484@area@37.815,-83.548 (the same patch as the 3-fer)",
+   "water_checked": "2026-10-27",
    "wide_m": 447
   },
   {
@@ -11450,6 +11462,10 @@
    },
    "owner_here": "U.S. Forest Service (Forest Service ownership map, Basic Ownership, 2015)",
    "ownership": "layered on usfs land",
+   "pairs_here": [
+    "US-10106+US-10121",
+    "US-10106+US-4484"
+   ],
    "passes": [
     1,
     1,
@@ -11636,6 +11652,7 @@
     ]
    ],
    "status": "candidate (saved outline only)",
+   "water_checked": "2026-10-27",
    "wide_m": 290
   },
   {
@@ -11868,7 +11885,8 @@
      37.041074
     ]
    ],
-   "status": "candidate (saved outline only)",
+   "status": "merged into one row: US-10106+US-10121+US-4484@area@37.041,-84.301 (the same patch as the 3-fer)",
+   "water_checked": "2026-10-27",
    "wide_m": 292
   },
   {
@@ -11994,6 +12012,7 @@
     ]
    ],
    "status": "candidate (saved outline only)",
+   "water_checked": "2026-10-27",
    "wide_m": 248
   },
   {
@@ -12502,7 +12521,8 @@
      37.162142
     ]
    ],
-   "status": "candidate (saved outline only)",
+   "status": "merged into one row: US-10106+US-10121+US-4484@area@37.041,-84.301 (the same patch as the 3-fer)",
+   "water_checked": "2026-10-27",
    "wide_m": 681
   },
   {
@@ -12680,6 +12700,7 @@
     ]
    ],
    "status": "candidate (saved outline only)",
+   "water_checked": "2026-10-27",
    "wide_m": 314
   },
   {
@@ -14018,6 +14039,7 @@
     ]
    ],
    "status": "candidate (saved outline only)",
+   "water_checked": "2026-10-27",
    "wide_m": 1077
   },
   {
@@ -14380,7 +14402,8 @@
      36.694974
     ]
    ],
-   "status": "candidate (saved outline only)",
+   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "water_checked": "2026-10-27",
    "wide_m": 849
   },
   {
@@ -14746,6 +14769,7 @@
     ]
    ],
    "status": "candidate (saved outline only)",
+   "water_checked": "2026-10-27",
    "wide_m": 1659
   },
   {
@@ -15549,7 +15573,8 @@
      37.070119
     ]
    ],
-   "status": "candidate",
+   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "water_checked": "2026-10-27",
    "wide_m": 2991
   },
   {
@@ -15656,7 +15681,8 @@
     ]
    ],
    "small": "small overlap: tight fit, check carefully",
-   "status": "candidate",
+   "status": "merged into one row: US-10138+US-4484@area@37.088,-83.368",
+   "water_checked": "2026-10-27",
    "wide_m": 64
   },
   {
@@ -15770,7 +15796,8 @@
      37.010419
     ]
    ],
-   "status": "candidate",
+   "status": "merged into one row: US-10138+US-4484@area@37.088,-83.368",
+   "water_checked": "2026-10-27",
    "wide_m": 130
   },
   {
@@ -15869,7 +15896,8 @@
     ]
    ],
    "small": "small overlap: tight fit, check carefully",
-   "status": "candidate",
+   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "water_checked": "2026-10-27",
    "wide_m": 80
   },
   {
@@ -15968,7 +15996,8 @@
     ]
    ],
    "small": "small overlap: tight fit, check carefully",
-   "status": "candidate",
+   "status": "merged into one row: US-10138+US-4484@area@37.088,-83.368",
+   "water_checked": "2026-10-27",
    "wide_m": 80
   },
   {
@@ -16093,7 +16122,8 @@
     ]
    ],
    "small": "small overlap: tight fit, check carefully",
-   "status": "candidate",
+   "status": "merged into one row: US-10138+US-4484@area@37.088,-83.368",
+   "water_checked": "2026-10-27",
    "wide_m": 80
   },
   {
@@ -16109,10 +16139,11 @@
     "walk_m": 0
    },
    "acres": 43.4,
+   "acres_all": 79.3,
    "box": [
-    -83.37027,
-    37.08168,
-    -83.36166,
+    -83.37709,
+    36.91341,
+    -83.27387,
     37.09624
    ],
    "center": [
@@ -16148,6 +16179,39 @@
     1,
     1,
     1
+   ],
+   "patches": 5,
+   "pins": [
+    {
+     "at": [
+      37.02404,
+      -83.27506
+     ],
+     "from": "road",
+     "name": "White Oak Creek Rd",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 173
+    },
+    {
+     "at": [
+      37.012734,
+      -83.313335
+     ],
+     "from": "road",
+     "name": "White Oak Creek Rd",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 250
+    },
+    {
+     "at": [
+      37.012733,
+      -83.313382
+     ],
+     "from": "road",
+     "name": "White Oak Creek Rd",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 252
+    }
    ],
    "pins_inside": {
     "US-10138": true,
@@ -16240,6 +16304,7 @@
     ]
    ],
    "status": "candidate",
+   "water_checked": "2026-10-27",
    "wide_m": 142
   },
   {
@@ -16253,6 +16318,7 @@
     37.092694,
     -82.733912
    ],
+   "checked": "2026-10-27",
    "found": "2026-10-27",
    "id": "US-10139+US-4526@same land@37.093,-82.734",
    "kind": "same land",
@@ -17520,6 +17586,7 @@
     ]
    ],
    "status": "candidate",
+   "water_checked": "2026-10-27",
    "wide_m": 3928
   },
   {
@@ -17578,6 +17645,11 @@
    },
    "owner_here": "U.S. Forest Service (Forest Service ownership map, Basic Ownership, 2015)",
    "ownership": "layered on usfs land",
+   "pairs_here": [
+    "US-10158+US-10171",
+    "US-10158+US-4484",
+    "US-10171+US-4484"
+   ],
    "passes": [
     1,
     1,
@@ -17625,6 +17697,7 @@
    ],
    "status": "very tight: could be map error: check both official maps on the ground",
    "tier": "very tight: could be map error: check both official maps on the ground",
+   "water_checked": "2026-10-27",
    "wide_m": 42
   },
   {
@@ -17717,8 +17790,9 @@
      38.074951
     ]
    ],
-   "status": "very tight: could be map error: check both official maps on the ground",
+   "status": "merged into one row: US-10158+US-10171+US-4484@area@38.075,-83.497 (the same patch as the 3-fer)",
    "tier": "very tight: could be map error: check both official maps on the ground",
+   "water_checked": "2026-10-27",
    "wide_m": 40
   },
   {
@@ -19357,7 +19431,8 @@
      38.092359
     ]
    ],
-   "status": "candidate",
+   "status": "merged into one row: US-10158+US-10171+US-4484@area@38.075,-83.497 (the same patch as the 3-fer)",
+   "water_checked": "2026-10-27",
    "wide_m": 4478
   },
   {
@@ -19725,6 +19800,7 @@
     ]
    ],
    "status": "candidate",
+   "water_checked": "2026-10-27",
    "wide_m": 6783
   },
   {
@@ -19907,7 +19983,8 @@
     ]
    ],
    "small": "small overlap: tight fit, check carefully",
-   "status": "candidate",
+   "status": "merged into one row: US-10160+US-4484@area@37.109,-84.308",
+   "water_checked": "2026-10-27",
    "wide_m": 54
   },
   {
@@ -19973,9 +20050,10 @@
     "walk_m": 51
    },
    "acres": 4.5,
+   "acres_all": 22.8,
    "box": [
-    -84.30878,
-    37.107,
+    -84.33925,
+    37.08399,
     -84.30518,
     37.1089
    ],
@@ -20012,6 +20090,29 @@
     1,
     1,
     1
+   ],
+   "patches": 2,
+   "pins": [
+    {
+     "at": [
+      37.111352,
+      -84.299703
+     ],
+     "from": "road",
+     "name": "Adkins-Arthur Rd",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 51
+    },
+    {
+     "at": [
+      37.115334,
+      -84.351463
+     ],
+     "from": "road",
+     "name": "public road",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 0
+    }
    ],
    "pins_inside": {
     "US-10160": true,
@@ -20065,6 +20166,7 @@
    ],
    "small": "small overlap: tight fit, check carefully",
    "status": "candidate",
+   "water_checked": "2026-10-27",
    "wide_m": 60
   },
   {
@@ -20207,6 +20309,7 @@
    ],
    "status": "very tight: could be map error: check both official maps on the ground",
    "tier": "very tight: could be map error: check both official maps on the ground",
+   "water_checked": "2026-10-27",
    "wide_m": 40
   },
   {
@@ -20295,6 +20398,7 @@
    ],
    "status": "very tight: could be map error: check both official maps on the ground",
    "tier": "very tight: could be map error: check both official maps on the ground",
+   "water_checked": "2026-10-27",
    "wide_m": 42
   },
   {
@@ -20582,6 +20686,7 @@
     ]
    ],
    "status": "candidate",
+   "water_checked": "2026-10-27",
    "wide_m": 1173
   },
   {
@@ -20928,7 +21033,8 @@
      38.075675
     ]
    ],
-   "status": "candidate",
+   "status": "merged into one row: US-10158+US-10171+US-4484@area@38.075,-83.497 (the same patch as the 3-fer)",
+   "water_checked": "2026-10-27",
    "wide_m": 445
   },
   {
@@ -44573,6 +44679,7 @@
     ]
    ],
    "status": "candidate (saved outline only)",
+   "water_checked": "2026-10-27",
    "wide_m": 667
   },
   {
@@ -44710,6 +44817,7 @@
     ]
    ],
    "status": "candidate (saved outline only)",
+   "water_checked": "2026-10-27",
    "wide_m": 180
   },
   {
@@ -48049,6 +48157,7 @@
     ]
    ],
    "status": "candidate",
+   "water_checked": "2026-10-27",
    "wide_m": 5020
   },
   {
@@ -48572,7 +48681,8 @@
      37.900651
     ]
    ],
-   "status": "candidate",
+   "status": "merged into one row: US-10104+US-3801+US-4484@area@37.815,-83.548 (the same patch as the 3-fer)",
+   "water_checked": "2026-10-27",
    "wide_m": 3388
   },
   {
