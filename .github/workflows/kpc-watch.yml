@@ -47,7 +47,9 @@ jobs:
           [ -z "$BASE" ] && BASE=$(git rev-list --max-parents=0 HEAD 2>/dev/null | tail -1)
           [ -z "$BASE" ] && BASE=HEAD
           cp kpcdata/data/outline-leads/near-miss.json data/outline-leads/near-miss.json 2>/dev/null || true
-          OBS_BASE=$BASE OBS_DATA_DIR=kpcdata OBS_FILE=kpcdata/data/map-observations.json OBS_RUN='daily watch' python3 .github/scripts/kpc_map_observations.py || true
+          git -C kpcdata fetch -q --shallow-since="2 days ago" origin HEAD || true
+          DBASE=$(git -C kpcdata rev-list -1 --before="25 hours ago" HEAD 2>/dev/null); [ -z "$DBASE" ] && DBASE=HEAD
+          OBS_DATA_BASE=$DBASE OBS_BASE=$BASE OBS_DATA_DIR=kpcdata OBS_FILE=kpcdata/data/map-observations.json OBS_RUN='daily watch' python3 .github/scripts/kpc_map_observations.py || true
       - name: Save (once)
         if: always()
         continue-on-error: true
