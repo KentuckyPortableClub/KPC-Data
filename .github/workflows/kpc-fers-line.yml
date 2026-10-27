@@ -31,7 +31,7 @@ env:
   BUNDLE: bundle-${{ inputs.tag }}.tar.gz
   STATES: ${{ inputs.states }}
   RUN_TAG: ${{ inputs.tag }}
-  REGION: na
+  REGION: ${{ inputs.tag == 'ky' && 'ky' || 'na' }}   # tag ky = Kentucky from its official files (the hand-checked test state)
   HTTP_CACHE: bundle/http
 jobs:
   fetcher:
@@ -136,17 +136,18 @@ jobs:
         run: |
           gh release download fers-bundles -R ${{ github.repository }} -p "$BUNDLE" -D . --clobber && tar xzf "$BUNDLE" data/fers || true
           [ -f data/fers/known-answers.json ] || cp kpcdata/data/fers/known-answers.json data/fers/ 2>/dev/null || true
-          python3 .github/scripts/kpc_fers_expected.py || true
+          if [ "$REGION" = ky ]; then python3 .github/scripts/kpc_fers_known.py || true; AREA=ky python3 .github/scripts/kpc_fers_expected.py || true
+          else python3 .github/scripts/kpc_fers_expected.py || true; fi
           TAG=$RUN_TAG python3 .github/scripts/kpc_fers_line_check.py || true
           OBS_RUN="2-fer line $RUN_TAG" OBS_FILE=kpcdata/data/map-observations.json OBS_DATA_DIR=kpcdata python3 .github/scripts/kpc_map_observations.py || true
       - name: Save (once)
         if: always()
-        continue-on-error: true
         run: |
+          set +e
           for f in data/fers/*.json; do [ -f "$f" ] && [ $(stat -c %s "$f") -gt 20000000 ] && gzip -9nf "$f"; done
           mkdir -p kpcdata/data/fers
           for f in data/fers/*; do [ -f "$f" ] && ! cmp -s "$f" "kpcdata/$f" && cp "$f" kpcdata/data/fers/; done
           cd kpcdata
           for f in data/fers/*.json.gz; do [ -f "$f" ] && rm -f "${f%.gz}"; done
           cd ..
-          bash .github/scripts/kpc_push_data.sh kpcdata "2-fer line ${{ inputs.tag }} (hidden data)" data   # Oct 27: keeps only this job's files, no rebase (the KY run lost its save)
+          STRICT=1 bash .github/scripts/kpc_push_data.sh kpcdata "2-fer line ${{ inputs.tag }} (hidden data)" data || exit 1   # HQ: a failed save = a red run (kpc_push_data.sh: only this job's files, no rebase)
