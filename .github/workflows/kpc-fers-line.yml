@@ -143,10 +143,5 @@ jobs:
           for f in data/fers/*; do [ -f "$f" ] && ! cmp -s "$f" "kpcdata/$f" && cp "$f" kpcdata/data/fers/; done
           cd kpcdata
           for f in data/fers/*.json.gz; do [ -f "$f" ] && rm -f "${f%.gz}"; done
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data 2>/dev/null || true
-          git diff --cached --quiet && exit 0
-          git commit -qm "2-fer line ${{ inputs.tag }} (hidden data)" || exit 0
-          for i in 1 2 3 4 5 6; do git pull -q --rebase --autostash && git push -q && exit 0; sleep $((i * 11)); done
-          true
+          cd ..
+          bash .github/scripts/kpc_push_data.sh kpcdata "2-fer line ${{ inputs.tag }} (hidden data)" data   # Oct 27: keeps only this job's files, no rebase (the KY run lost its save)

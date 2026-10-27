@@ -112,13 +112,8 @@ jobs:
           for f in data/fers/*; do [ -f "$f" ] && ! cmp -s "$f" "kpcdata/$f" && cp "$f" kpcdata/data/fers/; done
           cd kpcdata
           for f in data/fers/*.json.gz; do [ -f "$f" ] && rm -f "${f%.gz}"; done
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data 2>/dev/null || true
-          git diff --cached --quiet && exit 0
-          git commit -qm "2-fer bot ${{ matrix.r.tag }} pass ${{ inputs.pass }} (hidden data)" || exit 0
-          for i in 1 2 3 4 5 6 7 8; do git pull -q --rebase --autostash && git push -q && exit 0; sleep $((i * 11)); done
-          true
+          cd ..
+          bash .github/scripts/kpc_push_data.sh kpcdata "2-fer bot ${{ matrix.r.tag }} pass ${{ inputs.pass }} (hidden data)" data   # Oct 27: keeps only this job's files, no rebase (the KY run lost its save)
   observations:
     # one job after the regions (the log is one shared file: written once, no push races)
     needs: fers
@@ -143,10 +138,5 @@ jobs:
         continue-on-error: true
         run: |
           cd kpcdata
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data 2>/dev/null || true
-          git diff --cached --quiet && exit 0
-          git commit -qm "observations: 2-fer regions" || exit 0
-          for i in 1 2 3 4 5; do git pull -q --rebase --autostash && git push -q && exit 0; sleep $((i * 9)); done
-          true
+          cd ..
+          bash .github/scripts/kpc_push_data.sh kpcdata "observations: 2-fer regions" data   # Oct 27: keeps only this job's files, no rebase (the KY run lost its save)
