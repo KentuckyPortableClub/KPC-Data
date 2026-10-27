@@ -1,0 +1,62 @@
+name: KPC map watch (near misses + observations log)
+# Oct 27 (storage plan Stage 2 step A): the two HIDDEN review lists chat 8 reads, kept in KPC-Data.
+#   near misses      data/outline-leads/near-miss.json (parks with no outline + official areas around their pin)
+#   observations     data/map-observations.json (what changed in the park data over the last day: outlines, closures,
+#                    campgrounds, access points, links, new possible 2-fers) - compares KPC-Links now with ~25 hours ago
+# Reads KPC-Links (public) read-only. Daily after the nightly boundary check, and by hand. Never fails, never emails.
+on:
+  schedule:
+    - cron: '53 11 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: kpc-watch
+  cancel-in-progress: false
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Get the park data (KPC-Links, read-only)
+        uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          persist-credentials: false
+      - name: Get this repo (KPC-Data)
+        uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - name: Near misses
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p cache/us cache/ca data/outline-leads
+          gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'US-*.json.gz' -D cache/us --clobber || true
+          gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'CA-ALL.json.gz' -D cache/ca --clobber || true
+          rm -f cache/us/prev-*.json.gz
+          python3 .github/scripts/kpc_near_miss.py || true
+          mkdir -p kpcdata/data/outline-leads
+          [ -f data/outline-leads/near-miss.json ] && cp data/outline-leads/near-miss.json kpcdata/data/outline-leads/ || true
+      - name: Observations log (the last day's changes)
+        continue-on-error: true
+        run: |
+          git fetch -q --shallow-since="2 days ago" origin HEAD || true
+          BASE=$(git rev-list -1 --before="25 hours ago" HEAD 2>/dev/null)
+          [ -z "$BASE" ] && BASE=$(git rev-list --max-parents=0 HEAD 2>/dev/null | tail -1)
+          [ -z "$BASE" ] && BASE=HEAD
+          cp kpcdata/data/outline-leads/near-miss.json data/outline-leads/near-miss.json 2>/dev/null || true
+          OBS_BASE=$BASE OBS_DATA_DIR=kpcdata OBS_FILE=kpcdata/data/map-observations.json OBS_RUN='daily watch' python3 .github/scripts/kpc_map_observations.py || true
+      - name: Save (once)
+        if: always()
+        continue-on-error: true
+        run: |
+          cd kpcdata
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -qm "Map watch: near misses + observations (hidden review lists)" || exit 0
+          for i in 1 2 3 4; do git pull -q --rebase --autostash && git push -q && exit 0; sleep $((i * 7)); done
+          true

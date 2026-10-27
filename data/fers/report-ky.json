@@ -1,0 +1,115 @@
+{
+ "about": "Counts from the 2-fer bot (kpc_fers.py). Hidden: data only.",
+ "pass1": {
+  "cell_m": 20.0,
+  "date": "2026-10-27",
+  "left out": {
+   "approximate": 0,
+   "no outline": 5,
+   "no pin": 0,
+   "pin well outside": 0
+  },
+  "missing boundary": 1,
+  "official parks": 199,
+  "pairs tested": 555,
+  "pairs whose boxes touch": 555,
+  "parks done by the box test": 0,
+  "parks whose outline could not be read": 0,
+  "pass": 1,
+  "problems": [],
+  "with official lines": 11
+ },
+ "pass2": {
+  "agree with the pass before": 182,
+  "cell_m": 10.0,
+  "date": "2026-10-27",
+  "left out": {
+   "approximate": 0,
+   "no outline": 5,
+   "no pin": 0,
+   "pin well outside": 0
+  },
+  "new here only (not counted)": 85,
+  "official parks": 199,
+  "pairs tested": 58,
+  "parks whose outline could not be read": 0,
+  "parks with a saved copy only (no fresh download possible)": 13,
+  "pass": 2,
+  "problems": [],
+  "with official lines": 11
+ },
+ "pass3": {
+  "agree with the pass before": 171,
+  "cell_m": 5.0,
+  "date": "2026-10-27",
+  "left out": {
+   "approximate": 0,
+   "no outline": 5,
+   "no pin": 0,
+   "pin well outside": 0
+  },
+  "new here only (not counted)": 85,
+  "official parks": 199,
+  "pairs tested": 58,
+  "parks whose outline could not be read": 0,
+  "parks with a saved copy only (no fresh download possible)": 13,
+  "pass": 3,
+  "problems": [
+   "NHD water: HTTP Error 502: Bad Gateway",
+   "NHD water: HTTP Error 504: Gateway Time-out",
+   "NHD water: HTTP Error 504: Gateway Time-out",
+   "NHD water: HTTP Error 504: Gateway Time-out",
+   "NHD water: HTTP Error 504: Gateway Time-out",
+   "NHD water: HTTP Error 504: Gateway Time-out",
+   "NHD water: HTTP Error 504: Gateway Time-out",
+   "NHD water: HTTP Error 504: Gateway Time-out",
+   "NHD water: HTTP Error 504: Gateway Time-out",
+   "NHD water: HTTP Error 504: Gateway Time-out",
+   "NHD water: HTTP Error 504: Gateway Time-out",
+   "NHD water: HTTP Error 504: Gateway Time-out",
+   "NHD water: HTTP Error 504: Gateway Time-out",
+   "NHD water: HTTP Error 504: Gateway Time-out",
+   "NHD water: HTTP Error 502: Bad Gateway",
+   "NHD water: HTTP Error 504: Gateway Time-out",
+   "NHD water: The read operation timed out",
+   "NHD water: HTTP Error 504: Gateway Time-out",
+   "NHD water: HTTP Error 504: Gateway Time-out",
+   "NHD water: HTTP Error 504: Gateway Time-out",
+   "NHD water: HTTP Error 504: Gateway Time-out",
+   "NHD water: HTTP Error 504: Gateway Time-out",
+   "NHD water: HTTP Error 504: Gateway Time-out"
+  ],
+  "with official lines": 11
+ },
+ "pass4": {
+  "candidates without a pin": 14,
+  "cell_m": 5.0,
+  "date": "2026-10-26",
+  "left out": {
+   "approximate": 0,
+   "no outline": 4,
+   "no pin": 0,
+   "pin well outside": 0
+  },
+  "official parks": 190,
+  "pairs tested": 0,
+  "pass": 4,
+  "pins placed": 14,
+  "problems": [],
+  "with official lines": 1
+ },
+ "per state": {
+  "US-KY": {
+   "candidates": 31,
+   "candidates (saved outline only)": 20,
+   "lines": 115,
+   "n-fers": 5,
+   "not sure": 6,
+   "pass1": 201,
+   "pass2": 184,
+   "spots": 201,
+   "very tight": 4,
+   "water only": 0
+  }
+ }
+}
