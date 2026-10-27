@@ -72,14 +72,16 @@ jobs:
           # the rest; a pass out of time saves 'waiting for pass N' and the next run carries on (never a red run)
           if [ "$PASS" = all ]; then
             END=$(( $(date +%s) + ${MINUTES:-320} * 60 ))
-            for p in 1 2 3; do
+            for p in 1 2 3 5; do   # 5 = re-check water + tidy the rows + 'same land' owner / pin (Oct 27)
               LEFT=$(( (END - $(date +%s)) / 60 ))
-              if [ $p = 1 ]; then CAP=$(( ${MINUTES:-320} / 5 )); elif [ $p = 2 ]; then CAP=$(( LEFT / 2 )); else CAP=$LEFT; fi
+              if [ $p = 1 ]; then CAP=$(( ${MINUTES:-320} / 5 )); elif [ $p = 2 ]; then CAP=$(( LEFT / 2 )); elif [ $p = 3 ]; then CAP=$(( LEFT * 4 / 5 )); else CAP=$LEFT; fi
               [ $CAP -gt $LEFT ] && CAP=$LEFT
               [ $CAP -lt 5 ] && { echo "::notice title=2-fer bot::no time left for pass $p (next run carries on)"; break; }
               PASS=$p MINUTES=$CAP python3 .github/scripts/kpc_fers.py || true
             done
           else python3 .github/scripts/kpc_fers.py || true; fi
+          # Oct 27 (HQ): Kentucky's known river + trail pairs must come out before any big run
+          if [ "$REGION" = ky ]; then python3 .github/scripts/kpc_fers_known.py || true; fi
       - name: Observations log (new possible overlaps)
         if: ${{ matrix.region != 'world' }}
         continue-on-error: true
