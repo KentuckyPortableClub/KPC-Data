@@ -1,0 +1,47 @@
+name: KPC Europe weather warnings
+# Moved here from KPC-Links Oct 27 (storage plan Stage 2, step B5; chat 5). Every 6 h: copy MeteoAlarm's warnings for each
+# European country into data/alerts/eu.json for the Field Weather page (pages read KPC-Data first). Commits only when the
+# warnings really changed (a new time stamp alone is not a change). Never fails. No secrets.
+on:
+  schedule:
+    - cron: '41 */6 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: kpc-eu-alerts
+  cancel-in-progress: true
+jobs:
+  copy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Get the scripts (KPC-Links, read-only; public, no token)
+        uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          persist-credentials: false
+      - name: Get this repo (KPC-Data) and lay its fresh data on top
+        uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - name: Fresh data first
+        run: |
+          rsync -a kpcdata/data/ data/ 2>/dev/null || true
+          cp kpcdata/locations.json kpcdata/locations-ky.json . 2>/dev/null || true
+      - name: Copy the warnings
+        continue-on-error: true
+        run: python3 .github/scripts/kpc_eu_alerts.py || true
+      - name: Save (once, only real changes)
+        continue-on-error: true
+        run: |
+          [ -s data/alerts/eu.json ] || exit 0
+          mkdir -p kpcdata/data/alerts && cp data/alerts/eu.json kpcdata/data/alerts/eu.json
+          cd kpcdata
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          python3 ../.github/scripts/kpc_save_filter.py data/alerts/eu.json || true
+          git add data/alerts/eu.json
+          git diff --cached --quiet && exit 0
+          git commit -qm 'Europe weather warnings'
+          for i in 1 2 3 4; do git pull -q --rebase -X theirs origin main && git push -q origin HEAD:main && exit 0; sleep $((i*10)); done; exit 0

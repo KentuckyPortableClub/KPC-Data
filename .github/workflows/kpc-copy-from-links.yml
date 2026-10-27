@@ -2,7 +2,7 @@ name: KPC copy site data to KPC-Data (Step B3)
 # Oct 27 (storage plan Stage 2, step B3; HQ 5:39 PM): copies the bot-rewritten data folders the pages fetch from KPC-Links to the
 # SAME paths here (KPC.dataUrl tries /KPC-Data/<path> first). Runs once by hand, then daily, so these copies never go stale while
 # the bots still write in KPC-Links. Step B5 (a bot moves here): take its folder OUT of the list below the same day.
-# LEFT OUT (HQ 5:41 PM: written more than once a day, so pages must keep reading the site's fresh copy): data/alerts (US closures 4x a day,
+# B5 (chat 5, Oct 27): data/leaders came off this list (its bot now writes here). LEFT OUT (HQ 5:41 PM: written more than once a day, so pages must keep reading the site's fresh copy): data/alerts (US closures 4x a day,
 # EU alerts every 6 h). They come here the day their bot moves (B5). Only folders changed daily or less are copied.
 # KPC-Links is read only. One commit per run, only when something changed. Never fails.
 on:
@@ -30,7 +30,7 @@ jobs:
       - name: Copy (folders mirrored, single files copied)
         continue-on-error: true
         run: |
-          DIRS="data/wwff data/world-bounds data/pota data/names data/sota data/canada-bounds data/parkinfo data/world-key data/us-key data/trails data/access data/ca-key data/sota-land data/leaders data/campfed data/campstate data/campstate-manual data/nwr"
+          DIRS="data/wwff data/world-bounds data/pota data/names data/sota data/canada-bounds data/parkinfo data/world-key data/us-key data/trails data/access data/ca-key data/sota-land data/campfed data/campstate data/campstate-manual data/nwr"
           FILES="locations.json locations-ky.json data/northam.json data/canada.json data/parkinfo-web.json data/boundary-score.json data/boundary-report.json data/state-gis-found.json data/access-layers.json data/state-gis.json"
           for d in $DIRS; do [ -d "links/$d" ] && mkdir -p "kpcdata/$d" && rsync -a --delete "links/$d/" "kpcdata/$d/"; done
           for f in $FILES; do [ -f "links/$f" ] && mkdir -p "kpcdata/$(dirname $f)" && cp "links/$f" "kpcdata/$f"; done

@@ -1,0 +1,51 @@
+name: KPC US park closures (state agencies)
+# Moved here from KPC-Links Oct 27 (storage plan Stage 2, step B5; chat 5; the closure watcher itself is chat 2's).
+# Reads the state agencies' own closure feeds and ties them to POTA parks -> data/alerts/us-parks.json (pages read it here).
+# KPC-Links keeps a small merge job (its kpc-us-closures.yml, 30 min later) that copies these 'uc-' items into its
+# kpc-conditions.json, the small file the park cards need. Posts nothing. Every 6 hours + by hand. Never fails. No secrets.
+on:
+  schedule:
+    - cron: '23 1,7,13,19 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: kpc-us-closures
+  cancel-in-progress: false
+jobs:
+  closures:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Get the scripts (KPC-Links, read-only; public, no token)
+        uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          persist-credentials: false
+      - name: Get this repo (KPC-Data) and lay its fresh data on top
+        uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - name: Fresh data first
+        run: |
+          rsync -a kpcdata/data/ data/ 2>/dev/null || true
+          cp kpcdata/locations.json kpcdata/locations-ky.json . 2>/dev/null || true
+      - name: Read the closure feeds
+        continue-on-error: true
+        timeout-minutes: 20
+        run: python3 .github/scripts/kpc_us_closures.py || true
+      - name: Save (once, only real changes)
+        continue-on-error: true
+        run: |
+          [ -s data/alerts/us-parks.json ] || exit 0
+          mkdir -p kpcdata/data/alerts kpcdata/data/status
+          cp data/alerts/us-parks.json kpcdata/data/alerts/us-parks.json
+          cp data/status/kpc_us_closures.json kpcdata/data/status/ 2>/dev/null || true
+          cd kpcdata
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          python3 ../.github/scripts/kpc_save_filter.py data/alerts/us-parks.json data/status/kpc_us_closures.json || true
+          git add data/alerts/us-parks.json data/status/kpc_us_closures.json 2>/dev/null || git add data/alerts/us-parks.json
+          git diff --cached --quiet && exit 0
+          git commit -qm 'US park closures'
+          for i in 1 2 3 4; do git pull -q --rebase -X theirs origin main && git push -q origin HEAD:main && exit 0; sleep $((i*10)); done; exit 0
