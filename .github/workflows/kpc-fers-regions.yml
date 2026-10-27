@@ -1,0 +1,152 @@
+name: KPC 2-fer bot, regions side by side (hidden)
+# Oct 27 5:11 PM (HQ, Brandon: 'double up some bots over there'): US + Canada 2-fer REGIONS, up to 3 at once (max-parallel 3 =
+# never more than 3 jobs at PAD-US / NHD / agency servers). Each region = its own job + its own files (RUN_TAG keeps report /
+# same-outline / missing / looked / expected apart; the state files are per state anyway). USE ONLY AFTER Kentucky, Ohio, Michigan and
+# Utah pass the known-answers test + the missing check. Never fails (nothing emails). Chat 8 reviews region by region; data stays hidden.
+# Ohio, Michigan, Utah, Kentucky are left out (done as single-state tests). ND + SD were in no region on the run sheet: put in Midwest.
+on:
+  workflow_dispatch:
+    inputs:
+      regions:
+        description: 'Regions (up to 3 run at once): southeast midwest northeast southcentral mountain pacific canadaeast canadawest'
+        default: 'southeast midwest northeast'
+      pass:
+        description: 'Pass: all (1+2+3+5) or 1 / 2 / 3 / 5'
+        default: 'all'
+      minutes:
+        description: 'Minutes for the passes per job (default 270; the POTA history step takes up to 60 more)'
+        default: '270'
+permissions:
+  contents: write
+concurrency:
+  group: kpc-fers
+  cancel-in-progress: false
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      list: ${{ steps.p.outputs.list }}
+    steps:
+      - id: p
+        continue-on-error: true
+        env:
+          REGIONS: ${{ inputs.regions }}
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, os
+          R = {'southeast': 'US-TN US-NC US-VA US-WV US-GA US-AL US-SC US-FL US-MS',
+               'midwest': 'US-IN US-IL US-MO US-WI US-MN US-IA US-ND US-SD',
+               'northeast': 'US-PA US-NY US-NJ US-CT US-RI US-MA US-VT US-NH US-ME US-MD US-DE US-DC',
+               'southcentral': 'US-AR US-LA US-OK US-TX US-KS US-NE',
+               'mountain': 'US-CO US-WY US-ID US-MT US-NV US-AZ US-NM',
+               'pacific': 'US-CA US-OR US-WA US-AK US-HI',
+               'canadaeast': 'CA-ON CA-QC CA-NB CA-NS CA-PE CA-NL',
+               'canadawest': 'CA-MB CA-SK CA-AB CA-BC CA-YT CA-NT CA-NU'}
+          want = [r for r in os.environ.get('REGIONS', '').lower().replace(',', ' ').split() if r in R] or ['southeast']
+          print('list=' + json.dumps([{'tag': r, 'states': R[r]} for r in want]))
+          PY
+  fers:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix:
+        r: ${{ fromJSON(needs.plan.outputs.list) }}
+    steps:
+      - name: Get the scripts and park data (KPC-Links, read-only)
+        uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          persist-credentials: false
+      - name: Get this repo (KPC-Data)
+        uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - name: Tools + saved outlines + the last 2-fer files
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          pip install -q numpy opencv-python-headless || true
+          mkdir -p cache/us cache/ca cache/world data/fers
+          rm -rf data/fers && cp -r kpcdata/data/fers data/fers 2>/dev/null || mkdir -p data/fers
+          for f in data/fers/*.json.gz; do [ -f "$f" ] && gunzip -f "$f"; done
+          gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'US-*.json.gz' -D cache/us --clobber || true
+          gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'CA-ALL.json.gz' -D cache/ca --clobber || true
+      - name: POTA activation history (pairs worked the same day, counts only)
+        continue-on-error: true
+        timeout-minutes: 65
+        env:
+          STATES: ${{ matrix.r.states }}
+          PAIR_MINUTES: '60'
+        run: python3 .github/scripts/kpc_pota_pairs.py || true
+      - name: Look for shared ground
+        continue-on-error: true
+        timeout-minutes: 280
+        env:
+          PASS: ${{ inputs.pass }}
+          MINUTES: ${{ inputs.minutes }}
+          STATES: ${{ matrix.r.states }}
+          RUN_TAG: ${{ matrix.r.tag }}
+          REGION: na
+        run: |
+          if [ "$PASS" = all ]; then
+            END=$(( $(date +%s) + ${MINUTES:-270} * 60 ))
+            for p in 1 2 3 5; do
+              LEFT=$(( (END - $(date +%s)) / 60 ))
+              if [ $p = 1 ]; then CAP=$(( ${MINUTES:-270} / 5 )); elif [ $p = 2 ]; then CAP=$(( LEFT / 2 )); elif [ $p = 3 ]; then CAP=$(( LEFT * 4 / 5 )); else CAP=$LEFT; fi
+              [ $CAP -gt $LEFT ] && CAP=$LEFT
+              [ $CAP -lt 5 ] && { echo "::notice title=2-fer bot::${RUN_TAG}: no time left for pass $p (next run carries on)"; break; }
+              PASS=$p MINUTES=$CAP python3 .github/scripts/kpc_fers.py || true
+            done
+          else python3 .github/scripts/kpc_fers.py || true; fi
+          python3 .github/scripts/kpc_fers_expected.py || true
+      - name: Save (once, at the end)
+        if: always()
+        continue-on-error: true
+        run: |
+          for f in data/fers/*.json; do [ -f "$f" ] && [ $(stat -c %s "$f") -gt 20000000 ] && gzip -9nf "$f"; done
+          mkdir -p kpcdata/data/fers
+          for f in data/fers/*; do [ -f "$f" ] && ! cmp -s "$f" "kpcdata/$f" && cp "$f" kpcdata/data/fers/; done
+          cd kpcdata
+          for f in data/fers/*.json.gz; do [ -f "$f" ] && rm -f "${f%.gz}"; done
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -qm "2-fer bot ${{ matrix.r.tag }} pass ${{ inputs.pass }} (hidden data)" || exit 0
+          for i in 1 2 3 4 5 6 7 8; do git pull -q --rebase --autostash && git push -q && exit 0; sleep $((i * 11)); done
+          true
+  observations:
+    # one job after the regions (the log is one shared file: written once, no push races)
+    needs: fers
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          persist-credentials: false
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - name: Observations log (new possible overlaps)
+        continue-on-error: true
+        env:
+          OBS_RUN: 2-fer bot regions ${{ inputs.regions }}
+          OBS_FILE: kpcdata/data/map-observations.json
+          OBS_DATA_DIR: kpcdata
+        run: python3 .github/scripts/kpc_map_observations.py || true
+      - name: Save
+        continue-on-error: true
+        run: |
+          cd kpcdata
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -qm "observations: 2-fer regions" || exit 0
+          for i in 1 2 3 4 5; do git pull -q --rebase --autostash && git push -q && exit 0; sleep $((i * 9)); done
+          true
