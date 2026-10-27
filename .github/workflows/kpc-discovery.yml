@@ -1,0 +1,56 @@
+name: KPC discovery bot (hidden)
+# Oct 27 (HQ: the Discovery Bot, Fable's design .claude/build/research/KPC_DiscoveryBot_Design_Fable.md in KPC-Links; replaces the
+# portal scout). Asks the agencies' catalogs by keyword, tests new leads, ranks them -> data/discovery/leads.json + leads.md here.
+# Never adds to live data, never emails, never fails. By hand only until the Ohio test passes; then monthly (the 1st).
+on:
+  workflow_dispatch:
+    inputs:
+      states:
+        description: 'States / provinces (e.g. "OH", "UT", "CA-QC")'
+        default: 'OH'
+      steps:
+        description: 'Steps: A (catalog search) B (test leads) C (Maps tab, browser) D (write the list)'
+        default: 'A,B,C,D'
+permissions:
+  contents: write
+concurrency:
+  group: kpc-discovery
+  cancel-in-progress: false
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          persist-credentials: false
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - name: Tools + the last lead list
+        continue-on-error: true
+        run: |
+          mkdir -p data/discovery && cp -r kpcdata/data/discovery/. data/discovery/ 2>/dev/null || true
+          case "${{ inputs.steps }}" in *C*) pip install -q playwright && python3 -m playwright install --with-deps chromium >/dev/null 2>&1 || true;; esac
+      - name: Discover
+        continue-on-error: true
+        timeout-minutes: 160
+        env:
+          STATES: ${{ inputs.states }}
+          STEPS: ${{ inputs.steps }}
+        run: python3 .github/scripts/kpc_discovery.py || true
+      - name: Save (once)
+        if: always()
+        continue-on-error: true
+        run: |
+          mkdir -p kpcdata/data/discovery
+          for f in data/discovery/*; do [ -f "$f" ] && ! cmp -s "$f" "kpcdata/$f" && cp "$f" kpcdata/data/discovery/; done
+          cd kpcdata
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -qm "discovery bot ${{ inputs.states }} (hidden leads)" || exit 0
+          for i in 1 2 3 4 5; do git pull -q --rebase --autostash && git push -q && exit 0; sleep $((i * 9)); done
+          true
