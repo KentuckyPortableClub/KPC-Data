@@ -58,6 +58,14 @@ jobs:
             gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'US-*.json.gz' -D cache/us --clobber || true
             gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'CA-ALL.json.gz' -D cache/ca --clobber || true
           fi
+      - name: POTA activation history (pairs worked the same day, counts only)
+        if: ${{ matrix.region == 'ky' || (matrix.region == 'na' && inputs.states != '') }}
+        continue-on-error: true
+        timeout-minutes: 45
+        env:
+          STATES: ${{ matrix.region == 'ky' && 'US-KY' || inputs.states }}
+          PAIR_MINUTES: '40'
+        run: python3 .github/scripts/kpc_pota_pairs.py || true
       - name: Look for shared ground
         continue-on-error: true
         timeout-minutes: 335
@@ -82,6 +90,9 @@ jobs:
           else python3 .github/scripts/kpc_fers.py || true; fi
           # Oct 27 (HQ): Kentucky's known river + trail pairs must come out before any big run
           if [ "$REGION" = ky ]; then python3 .github/scripts/kpc_fers_known.py || true; fi
+          # Oct 27 (HQ 3:46 PM): MISSING CHECK = every pair we have outside reason to expect: FOUND / DROPPED / NEVER LOOKED AT
+          if [ "$REGION" = ky ]; then AREA=ky python3 .github/scripts/kpc_fers_expected.py || true
+          elif [ -n "$STATES" ] && [ "$REGION" = na ]; then python3 .github/scripts/kpc_fers_expected.py || true; fi
       - name: Observations log (new possible overlaps)
         if: ${{ matrix.region != 'world' }}
         continue-on-error: true
