@@ -1,0 +1,86 @@
+# SD: POTA parks vs official land (USGS PAD-US)
+
+Built by `.github/scripts/kpc_us_key.py` (date: data/status/kpc_us_key.json). **109 of 120** parks joined to official land (same name + same kind of place). **1** to check by hand, **6** with nothing found. Nothing below is joined until a person checks it.
+
+## To check (not joined)
+
+- **US-10319** South Scalp Creek State Recreation Area (State Recreation Area) → S. Scalp Creek Recreation Area (~305 ac, similar name)
+
+## Sites on bigger public land (no outline of their own; the land around the pin)
+
+- US-10363 DeGray State Recreation Area (State Recreation Area) → on Degrey Recreation Area (~25 ac); Sharpe Recreation Area (~78,431 ac)
+- US-10376 Le Beau State Recreation Area (State Recreation Area) → on Lebeau Recreation Area (~46 ac); Oaha Recreation Area (~314,305 ac)
+- US-11905 Centennial Trail State Trail (State Trail) → on Bear Butte Lake (~0 ac); Bear Butte Lake (~0 ac)
+- US-8164 George S. Mickelson State Trail (State Trail) → on Exemption Area (~22,459 ac)
+
+## Nothing found in PAD-US
+
+- US-0525 Huron Wetland Management District (Wetland Management District)
+- US-0529 Madison Wetland Management District (Wetland Management District)
+- US-0532 Waubay Wetland Management District (Wetland Management District)
+- US-4501 Custer Gallatin National Forest (National Forest)
+- US-4572 Lewis and Clark National Historic Trail (National Historic Trail)
+- US-7844 Adams Homestead State Nature Preserve (State Nature Preserve)
+
+## Biggest federal / state places with no POTA park joined (first 60)
+
+- Casper Field Officer ERMA ·  · BLM recreation management areas · official (BLM planning area) · ~1,343,359 ac
+- Sd Public Land · SRMA · Unknown · ~595,248 ac
+- Oaha Recreation Area · REC · Omaha · ~314,305 ac
+- South Dakota Field Office · PUB · BLM · ~275,364 ac
+- Newcastle Field Office ERMA ·  · BLM recreation management areas · official (BLM planning area) · ~273,309 ac
+- State Lands · SRMA · Unknown · ~229,003 ac
+- Francis Case Recreation Area · REC · Omaha · ~102,941 ac
+- Sharpe Recreation Area · REC · Omaha · ~78,431 ac
+- Custer National Forest · NF · Forest Service Region 01 Northern · ~73,890 ac
+- Valentine National Wildlife Refuge ·  · U.S. Fish & Wildlife Service (own map) · ~72,350 ac
+- Missouri Wild and Scenic River ·  · NPS Wild and Scenic River corridor (official boundary) · ~35,687 ac
+- Niobrara Wild and Scenic River ·  · NPS Wild and Scenic River corridor (official boundary) · ~29,062 ac
+- Missouri Wild and Scenic River ·  · NPS Wild and Scenic River corridor (official boundary) · ~24,274 ac
+- Exemption Area ·  · BLM recreation management areas · official (BLM planning area) · ~22,459 ac
+- Mcpherson County Waterfowl Production Area · RMA · MCPHERSON COUNTY WATERFOWL PRODUCTION AREA · ~20,999 ac
+- Mcpherson County Waterfowl Production Area · RMA · Mcpherson County Waterfowl Production Area · ~20,999 ac
+- Fort Niobrara National Wildlife Refuge ·  · U.S. Fish & Wildlife Service (own map) · ~19,093 ac
+- Stateline SRMA ·  · BLM recreation management areas · official (BLM planning area) · ~15,870 ac
+- Belle Fourche Reservoir · RMA · Unknown · ~14,167 ac
+- Black Elk Wilderness ·  · National Wilderness Preservation System (Forest Service map) · ~13,534 ac
+- Big Stone National Wildlife Refuge ·  · U.S. Fish & Wildlife Service (own map) · ~11,657 ac
+- Marshall County Waterfowl Production Area · RMA · Marshall County Waterfowl Production Area · ~11,269 ac
+- Marshall County Waterfowl Production Area · RMA · MARSHALL COUNTY WATERFOWL PRODUCTION AREA · ~11,268 ac
+- Edmunds County Waterfowl Production Area · RMA · EDMUNDS COUNTY WATERFOWL PRODUCTION AREA · ~9,246 ac
+- Edmunds County Waterfowl Production Area · RMA · Edmunds County Waterfowl Production Area · ~9,246 ac
+- Niobrara Wild and Scenic River ·  · NPS Wild and Scenic River corridor (official boundary) · ~8,987 ac
+- Soldier Creek Wilderness ·  · National Wilderness Preservation System (Forest Service map) · ~7,833 ac
+- Beadle County Waterfowl Production Area · RMA · BEADLE COUNTY WATERFOWL PRODUCTION AREA · ~7,777 ac
+- Beadle County Waterfowl Production Area · RMA · Beadle County Waterfowl Production Area · ~7,535 ac
+- Day County Waterfowl Production Area · RMA · DAY COUNTY WATERFOWL PRODUCTION AREA · ~7,318 ac
+- Day County Waterfowl Production Area · RMA · Day County Waterfowl Production Area · ~7,318 ac
+- Kingsbury County Waterfowl Production Area · RMA · KINGSBURY COUNTY WATERFOWL PRODUCTION AREA · ~7,052 ac
+- Kingsbury County Waterfowl Production Area · RMA · Kingsbury County Waterfowl Production Area · ~7,052 ac
+- Brookings County Waterfowl Production Area · RMA · Brookings County Waterfowl Production Area · ~6,641 ac
+- Brookings County Waterfowl Production Area · RMA · BROOKINGS COUNTY WATERFOWL PRODUCTION AREA · ~6,640 ac
+- Fort Meade Recreation Area ACEC ·  · BLM recreation management areas · official (BLM planning area) · ~6,569 ac
+- Clark County Waterfowl Production Area · RMA · CLARK COUNTY WATERFOWL PRODUCTION AREA · ~6,172 ac
+- Clark County Waterfowl Production Area · RMA · Clark County Waterfowl Production Area · ~6,172 ac
+- Lake County Waterfowl Production Area Of Sd · RMA · LAKE COUNTY WATERFOWL PRODUCTION AREA OF SD · ~6,090 ac
+- Lake County Waterfowl Production Area Of Sd · RMA · Lake County Waterfowl Production Area Of Sd · ~6,090 ac
+- Codington County Waterfowl Production Area · RMA · CODINGTON COUNTY WATERFOWL PRODUCTION AREA · ~6,074 ac
+- Codington County Waterfowl Production Area · RMA · Codington County Waterfowl Production Area · ~6,074 ac
+- Grant County Waterfowl Production Area · RMA · GRANT COUNTY WATERFOWL PRODUCTION AREA · ~5,371 ac
+- Grant County Waterfowl Production Area · RMA · Grant County Waterfowl Production Area · ~5,371 ac
+- Lake Thompson Game Production Area · SCA · Unknown · ~5,280 ac
+- South Dakota Game Fish and Parks - Wildlife Division · SP · South Dakota Game Fish and Parks - Wildlife Division · ~4,920 ac
+- Aurora County Waterfowl Production Area · RMA · AURORA COUNTY WATERFOWL PRODUCTION AREA · ~4,884 ac
+- Aurora County Waterfowl Production Area · RMA · Aurora County Waterfowl Production Area · ~4,884 ac
+- Roberts County Waterfowl Production Area · RMA · Roberts County Waterfowl Production Area · ~4,870 ac
+- Roberts County Waterfowl Production Area · RMA · ROBERTS COUNTY WATERFOWL PRODUCTION AREA · ~4,869 ac
+- Buryanek Game Production Area · SCA · Unknown · ~4,839 ac
+- Minnehaha County Waterfowl Production Area · RMA · MINNEHAHA COUNTY WATERFOWL PRODUCTION AREA · ~4,746 ac
+- Minnehaha County Waterfowl Production Area · RMA · Minnehaha County Waterfowl Production Area · ~4,746 ac
+- Brown County Waterfowl Production Area · RMA · BROWN COUNTY WATERFOWL PRODUCTION AREA · ~4,690 ac
+- Brown County Waterfowl Production Area Of Sd · RMA · Brown County Waterfowl Production Area Of Sd · ~4,690 ac
+- Friendshuh Game Production Area · SCA · Unknown · ~4,624 ac
+- Douglas County Waterfowl Production Area · RMA · DOUGLAS COUNTY WATERFOWL PRODUCTION AREA · ~4,493 ac
+- Douglas County Waterfowl Production Area Of Sd · RMA · Douglas County Waterfowl Production Area Of Sd · ~4,493 ac
+- Charles Mix County Waterfowl Production Area · RMA · CHARLES MIX COUNTY WATERFOWL PRODUCTION AREA · ~4,378 ac
+- Charles Mix County Waterfowl Production Area · RMA · Charles Mix County Waterfowl Production Area · ~4,378 ac
