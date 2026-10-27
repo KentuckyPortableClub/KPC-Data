@@ -1,0 +1,152 @@
+name: KPC 2-fer assembly line (hidden)
+# Oct 27 5:23 PM (HQ): FETCHER -> WORKER -> CHECKER for one area (a state, or a few). Michigan = the first state through it.
+#  1 FETCHER (network, polite): POTA same-day history + passes 1-2 (saved + fresh outlines). Every map-server answer is kept in a
+#    BUNDLE (kpc_http_cache.py) = a KPC-Data release asset 'bundle-<tag>.tar.gz' (release 'fers-bundles'), never in git.
+#  2 WORKER: unpacks the bundle, passes 3 + 5 (finest shapes, ownership, water, pins); answers already in the bundle are not asked
+#    again; the bundle grows and goes back up. A worker out of time can be run again alone (stage = worker) from the bundle.
+#  3 CHECKER (offline): known-answers test + missing check + every state saved by pass 3/5 -> data/fers/line-<tag>.json verdict
+#    READY FOR CHAT 8 / STOPPED; the results go into git ONCE, here (fetcher + worker never commit). Never fails (nothing emails).
+on:
+  workflow_dispatch:
+    inputs:
+      states:
+        description: 'Area (e.g. "US-MI")'
+        default: 'US-MI'
+      tag:
+        description: 'Short name for its files (e.g. "mi")'
+        default: 'mi'
+      stage:
+        description: 'all (fetcher + worker + checker), worker (+ checker, from the saved bundle), or checker'
+        default: 'all'
+      minutes:
+        description: 'Minutes for each of fetcher and worker (default 300)'
+        default: '300'
+permissions:
+  contents: write
+concurrency:
+  group: kpc-fers
+  cancel-in-progress: false
+env:
+  GH_TOKEN: ${{ github.token }}
+  BUNDLE: bundle-${{ inputs.tag }}.tar.gz
+  STATES: ${{ inputs.states }}
+  RUN_TAG: ${{ inputs.tag }}
+  REGION: na
+  HTTP_CACHE: bundle/http
+jobs:
+  fetcher:
+    if: ${{ inputs.stage == 'all' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 345
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          persist-credentials: false
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - name: Tools + saved outlines + the last 2-fer files
+        continue-on-error: true
+        run: |
+          pip install -q numpy opencv-python-headless || true
+          mkdir -p cache/us cache/ca bundle/http && rm -rf data/fers && cp -r kpcdata/data/fers data/fers 2>/dev/null || mkdir -p data/fers
+          for f in data/fers/*.json.gz; do [ -f "$f" ] && gunzip -f "$f"; done
+          gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'US-*.json.gz' -D cache/us --clobber || true
+          gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'CA-ALL.json.gz' -D cache/ca --clobber || true
+          gh release download fers-bundles -p "$BUNDLE" -D . --clobber 2>/dev/null && tar xzf "$BUNDLE" bundle/http 2>/dev/null || true
+      - name: POTA same-day history
+        continue-on-error: true
+        timeout-minutes: 65
+        env:
+          PAIR_MINUTES: '60'
+        run: python3 .github/scripts/kpc_pota_pairs.py || true
+      - name: Passes 1 + 2
+        continue-on-error: true
+        timeout-minutes: 270
+        env:
+          MINUTES: ${{ inputs.minutes }}
+        run: |
+          M=${MINUTES:-300}; [ $M -gt 260 ] && M=260
+          PASS=1 MINUTES=$(( M / 3 )) python3 .github/scripts/kpc_fers.py || true
+          PASS=2 MINUTES=$(( M * 2 / 3 )) python3 .github/scripts/kpc_fers.py || true
+      - name: Bundle up
+        if: always()
+        continue-on-error: true
+        run: |
+          tar czf "$BUNDLE" bundle/http data/fers
+          gh release view fers-bundles >/dev/null 2>&1 || gh release create fers-bundles --title 'Hidden 2-fer bundles' --notes 'Assembly-line bundles (bot use only).' || true
+          gh release upload fers-bundles "$BUNDLE" --clobber || true
+          echo "::notice title=2-fer line::fetcher bundle $(du -h "$BUNDLE" | cut -f1)"
+  worker:
+    needs: fetcher
+    if: ${{ always() && inputs.stage != 'checker' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 345
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          persist-credentials: false
+      - name: Tools + the bundle
+        continue-on-error: true
+        run: |
+          pip install -q numpy opencv-python-headless || true
+          mkdir -p cache/us cache/ca bundle/http data/fers
+          gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'US-*.json.gz' -D cache/us --clobber || true
+          gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'CA-ALL.json.gz' -D cache/ca --clobber || true
+          gh release download fers-bundles -R ${{ github.repository }} -p "$BUNDLE" -D . --clobber && tar xzf "$BUNDLE" || echo "::notice title=2-fer line::no bundle yet: run stage all"
+      - name: Passes 3 + 5
+        continue-on-error: true
+        timeout-minutes: 320
+        env:
+          MINUTES: ${{ inputs.minutes }}
+        run: |
+          M=${MINUTES:-300}; [ $M -gt 310 ] && M=310
+          PASS=3 MINUTES=$(( M * 4 / 5 )) python3 .github/scripts/kpc_fers.py || true
+          PASS=5 MINUTES=$(( M / 5 )) python3 .github/scripts/kpc_fers.py || true
+      - name: Bundle up
+        if: always()
+        continue-on-error: true
+        run: |
+          tar czf "$BUNDLE" bundle/http data/fers
+          gh release upload fers-bundles "$BUNDLE" --clobber -R ${{ github.repository }} || true
+          echo "::notice title=2-fer line::worker bundle $(du -h "$BUNDLE" | cut -f1)"
+  checker:
+    needs: [fetcher, worker]
+    if: ${{ always() }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          persist-credentials: false
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - name: Check (offline, from the bundle)
+        continue-on-error: true
+        env:
+          HTTP_OFFLINE: '1'
+        run: |
+          gh release download fers-bundles -R ${{ github.repository }} -p "$BUNDLE" -D . --clobber && tar xzf "$BUNDLE" data/fers || true
+          [ -f data/fers/known-answers.json ] || cp kpcdata/data/fers/known-answers.json data/fers/ 2>/dev/null || true
+          python3 .github/scripts/kpc_fers_expected.py || true
+          TAG=$RUN_TAG python3 .github/scripts/kpc_fers_line_check.py || true
+          OBS_RUN="2-fer line $RUN_TAG" OBS_FILE=kpcdata/data/map-observations.json OBS_DATA_DIR=kpcdata python3 .github/scripts/kpc_map_observations.py || true
+      - name: Save (once)
+        if: always()
+        continue-on-error: true
+        run: |
+          for f in data/fers/*.json; do [ -f "$f" ] && [ $(stat -c %s "$f") -gt 20000000 ] && gzip -9nf "$f"; done
+          mkdir -p kpcdata/data/fers
+          for f in data/fers/*; do [ -f "$f" ] && ! cmp -s "$f" "kpcdata/$f" && cp "$f" kpcdata/data/fers/; done
+          cd kpcdata
+          for f in data/fers/*.json.gz; do [ -f "$f" ] && rm -f "${f%.gz}"; done
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -qm "2-fer line ${{ inputs.tag }} (hidden data)" || exit 0
+          for i in 1 2 3 4 5 6; do git pull -q --rebase --autostash && git push -q && exit 0; sleep $((i * 11)); done
+          true
