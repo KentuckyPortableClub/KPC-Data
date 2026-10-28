@@ -33,7 +33,7 @@ LINKS = pathlib.Path(os.environ.get('LINKS') or 'links')
 T0 = time.time(); LIMIT = float(os.environ.get('MINUTES') or 55) * 60
 REFRESH_DAYS = int(os.environ.get('REFRESH_DAYS') or 90)
 TODAY = time.strftime('%Y-%m-%d')
-VER = 5   # Oct 28 9 AM: debug text for gate misses; VER 4 =: the page-list unpack fix; VER 3 was the 6:40 AM (chat 11's grade + regrade): schedule / labelled rows count; questions, events, '$N million' never; attraction hours labelled
+VER = 6   # Oct 28 10:15 AM (regrade 3): headings ending ':' dropped, no statewide licence prices / nationwide notices / legal text, campground hours apart, days need a time; VER 5 =: debug text for gate misses; VER 4 =: the page-list unpack fix; VER 3 was the 6:40 AM (chat 11's grade + regrade): schedule / labelled rows count; questions, events, '$N million' never; attraction hours labelled
 QUEUE = T.QUEUE
 STAT = {'parks': 0, 'pages_read': 0, 'hours': 0, 'fees': 0, 'permits': 0, 'none': 0, 'no_page': 0, 'skipped_fresh': 0, 'errors': 0}
 
@@ -65,6 +65,9 @@ SCHEDULE = re.compile(r'^\s*(?:' + DAYS + r'(?:\s*(?:-|–|to|through|thru)\s*' 
 LABELLED = re.compile(r'^\s*(?:park |visitor |general |operating |day[- ]use |gate )?(?:hours|open|opens|closed|admission|entrance fee|entry fee|day[- ]use fee|parking fee|fees?|permits?)\s*[:\-–]\s*\S', re.I)
 EVENT = re.compile(r'performance|concert|show begins|meet (?:&|and) greet|festival|parade|race day|gates? open at \d{1,2}(?::\d\d)? ?[ap]m\s*\|?\s*(?:performance|show)|tickets? (?:go )?on sale|registration (?:opens|begins)|event (?:begins|starts)|doors open|fireworks|celebration|camp(?:s)? for kids|summer camp', re.I)
 MILLION = re.compile(r'\$\s?[\d.,]+\s*(?:million|billion|m\b|k\b)|million|renovation|grant|budget|funding|raised', re.I)
+LEGAL = re.compile(r'\bKAR\b|\bKRS\b|\bCFR\b|\bU\.?S\.?C\.?\b|section \d|this section|subsection|pursuant to|statute|administrative regulation|shall not|shall be|hereby|promulgat', re.I)
+STATEWIDE = re.compile(r'statewide|all (?:state|national) parks|nationwide|fee[- ]free days?|free admission days?|entrance fee[- ]free|sportsman|hunting licen[cs]e|fishing licen[cs]e|turkey permit|deer permit|waterfowl permit|trapping licen[cs]e|licen[cs]e fees?|hunt permit \$|senior/disabled licen', re.I)
+CAMPHOURS = re.compile(r'campground|campsite|camping|rv park|check[- ]in|check[- ]out', re.I)
 TOPIC_PAGE = re.compile(r'field[- ]trip|school|group[- ]tour|programs?/|education|events?/|hunting-season|seasons-and-limits|regulations', re.I)
 TOURISM = re.compile(r'kentuckytourism\.com|visit[a-z]+\.com|tourism', re.I)
 
@@ -92,7 +95,7 @@ def is_heading(sen):
 def facts_in(text, park_name='', url=''):
     """{'hours', 'fees', 'permits', 'other_fees', 'office_hours', 'attraction_fees'}: each a list of the agency's own sentences.
     H-R2 a hit needs a subject; H-R3 hunting-season hours are a separate label; H-R4 a fee for one attraction is labelled so."""
-    out = {'hours': [], 'fees': [], 'permits': [], 'other_fees': [], 'office_hours': [], 'hunting_hours': [], 'attraction_fees': [], 'attraction_hours': []}
+    out = {'hours': [], 'fees': [], 'permits': [], 'other_fees': [], 'office_hours': [], 'hunting_hours': [], 'attraction_fees': [], 'attraction_hours': [], 'campground_hours': []}
     seen = set()
     cn = [w for w in T.core(park_name).split() if len(w) > 2][:3]
     def put(k, s):
@@ -103,11 +106,14 @@ def facts_in(text, park_name='', url=''):
     for sen in sentences(text):
         if is_heading(sen): continue
         if sen.rstrip().endswith('?') or re.match(r'^(is|are|does|do|can|how|what|when|where|why)\b', sen, re.I): continue   # a question is never a fact
+        if sen.rstrip().endswith(':') or LEGAL.search(sen) or STATEWIDE.search(sen): continue   # a heading, a statute, a statewide licence / permit price list, a nationwide notice
         if EVENT.search(sen): continue                                                                                          # an event's times are not park hours
         sen = re.sub(r'^(however|also|additionally|in addition|note|please note|but),?\s+', '', sen, flags=re.I)                # 'However, the trails…' reads whole
         has_subject = bool(SUBJECT.search(sen)) or any(w in sen.lower() for w in cn) or bool(SCHEDULE.match(sen)) or bool(LABELLED.match(sen))
         if HOURS_RX.search(sen):
             if not has_subject: continue
+            if not re.search(TIME, sen, re.I) and not re.search(r'\b(open|closed)\b.*\b(daily|every day|year[- ]round|seven days)\b', sen, re.I): continue   # 'Monday - Saturday' with no time is not hours
+            if CAMPHOURS.search(sen) and not re.search(r'\b(park|area|refuge|forest|grounds|gates?|day[- ]use)\b', sen, re.I): put('campground_hours', sen); continue
             if HUNTSEASON.search(sen): put('hunting_hours', sen)
             elif OFFICE.search(sen) and not re.search(r'\b(park|area|refuge|forest|grounds|gates?|trails?|day[- ]use)\b', sen, re.I): put('office_hours', sen)
             elif HOURS_BAD.search(sen): continue
@@ -127,11 +133,11 @@ def facts_in(text, park_name='', url=''):
 def one_park(ref, park, web, docs, ky):
     r = {'n': park['n'], 't': park.get('t', ''), 'hours': [], 'fees': [], 'permits': [], 'other_fees': [], 'pages': [], 'checked': TODAY, 'ver': VER}
     pages = [(p[0], p[1]) for p in T.candidate_pages(ref, park, web, docs, ky)]   # truth v4 returns (url, why, other_unit): keep the first two
-    pages = [p for p in pages if 'news' not in p[1] and 'statistics' not in p[1]][:4]
+    pages = [p for p in pages if 'news' not in p[1] and 'statistics' not in p[1] and not re.search(r'legislature|ecfr\.gov|law\.cornell|\.gov/law/|/kar/|/krs/', p[0], re.I)][:4]   # statute pages are never hours / fees pages
     kl = (HKEY.get(ref) or {}).get('link')   # Kentucky's hand-checked hours page (answer key) is read too: it IS the agency's page
     if kl and kl.startswith('http') and kl not in [p[0] for p in pages]: pages.insert(0, (kl, 'hours page (Kentucky hours answer key)'))
     if not pages: r['status'] = 'no official page on file'; STAT['no_page'] += 1; return r
-    for k in ('office_hours', 'hunting_hours', 'attraction_fees', 'attraction_hours'): r[k] = []
+    for k in ('office_hours', 'hunting_hours', 'attraction_fees', 'attraction_hours', 'campground_hours'): r[k] = []
     for u, why in pages:
         if late(): break
         if TOPIC_PAGE.search(u): r['pages'].append({'url': u, 'why': why, 'status': 'skipped: another topic (field trips / programs / seasons)'}); continue
@@ -143,12 +149,19 @@ def one_park(ref, park, web, docs, ky):
         if os.environ.get('TEST') == '1' and ref in HKEY and (HKEY[ref].get('hours') or HKEY[ref].get('fee')) and not (f['hours'] or f['fees']):   # the gate's parks: keep what the page said around 'hours' / 'open' so a MISS can be read
             m = re.search(r'(?i)(hours|open|admission|fee)', text); r.setdefault('debug', []).append({'url': u, 'kind': kind, 'text': ' '.join(text[max(0, (m.start() if m else 0) - 200):(m.start() if m else 0) + 600].split())})
         tour = bool(TOURISM.search(u))   # H-R5: a tourism site is state government, not the park's agency: labelled, kept apart
-        for k in ('hours', 'fees', 'permits', 'other_fees', 'office_hours', 'hunting_hours', 'attraction_fees', 'attraction_hours'):
+        for k in ('hours', 'fees', 'permits', 'other_fees', 'office_hours', 'hunting_hours', 'attraction_fees', 'attraction_hours', 'campground_hours'):
             for s in f[k]:
                 row = {'line': s, 'url': u, 'read': TODAY}
                 if tour: row['src_note'] = 'tourism site (state government), not the park agency'
                 if len(r[k]) < 6: r[k].append(row)
         if r['hours'] and r['fees']: break
+    for k in ('hours', 'fees', 'permits', 'office_hours', 'attraction_fees', 'attraction_hours', 'campground_hours', 'hunting_hours', 'other_fees'):
+        seen = set(); kept = []
+        for x in r.get(k) or []:
+            key = re.sub(r'[^a-z0-9]', '', x['line'].lower())[:70]
+            if key in seen: continue
+            seen.add(key); kept.append(x)
+        r[k] = kept
     r['status'] = 'ok' if (r['hours'] or r['fees'] or r['permits']) else ('nothing found' if any(p['status'] == 'ok' for p in r['pages']) else 'no page opened')
     for k in ('hours', 'fees', 'permits'):
         if r[k]: STAT[k] += 1
