@@ -3,12 +3,12 @@
   "US-KY": {
    "checked": 193,
    "counts": {
-    "fees": 8,
-    "hours": 34,
+    "fees": 5,
+    "hours": 20,
     "no_page": 0,
-    "nothing": 155,
+    "nothing": 163,
     "parks": 193,
-    "permits": 11
+    "permits": 10
    },
    "left": 0,
    "parks": 193,
@@ -26,20 +26,20 @@
   "manners": {
    "arcgis_exempt": 0,
    "errors": 0,
-   "requests": 401,
-   "rested": 0,
+   "requests": 534,
+   "rested": 1,
    "robots": 0,
-   "strikes": 3
+   "strikes": 1
   },
   "stat": {
    "errors": 1,
-   "fees": 8,
-   "hours": 34,
+   "fees": 5,
+   "hours": 20,
    "no_page": 0,
-   "none": 155,
-   "pages_read": 391,
+   "none": 163,
+   "pages_read": 471,
    "parks": 193,
-   "permits": 11,
+   "permits": 10,
    "skipped_fresh": 0
   },
   "when": "2026-10-28"
@@ -47,6 +47,6 @@
  "test": {
   "result": "FAIL",
   "when": "2026-10-28",
-  "why": "hours rows 9/38 (24%); Otter Creek Wed–Sun MISS; Buckley $8 ok (US-3802); Peabody permit ok; US-3781 MISS, US-1251 MISS, US-1254 MISS, US-7950 ok, US-7708 ok, US-7966 MISS, US-7956 MISS, US-7954 ok, US-7967 ok, US-7965 MISS, US-7960 MISS, US-7968 ok, US-7957 MISS, US-7961 MISS, US-7958 ok, US-7953 MISS, US-7963 MISS, US-7959 MISS, US-7951 ok, US-4690 MISS, US-3779 MISS, US-3783 MISS, US-3784 MISS, US-3785 MISS, US-10172 MISS, US-3788 MISS, US-11181 MISS, US-13598 MISS, US-13607 MISS, US-13606 MISS, US-13600 MISS, US-3802 ok, US-13601 MISS, US-10173 ok, US-13599 MISS, US-3792 MISS, US-8144 MISS, US-10099 MISS"
+  "why": "hours rows 5/38 (13%); Otter Creek Wed–Sun MISS; Buckley $8 ok (US-3802); Peabody permit ok; US-3781 MISS, US-1251 MISS, US-1254 ok, US-7950 MISS, US-7708 ok, US-7966 MISS, US-7956 MISS, US-7954 ok, US-7967 ok, US-7965 MISS, US-7960 MISS, US-7968 MISS, US-7957 MISS, US-7961 MISS, US-7958 ok, US-7953 MISS, US-7963 MISS, US-7959 MISS, US-7951 MISS, US-4690 MISS, US-3779 MISS, US-3783 MISS, US-3784 MISS, US-3785 MISS, US-10172 MISS, US-3788 MISS, US-11181 MISS, US-13598 MISS, US-13607 MISS, US-13606 MISS, US-13600 MISS, US-3802 MISS, US-13601 MISS, US-10173 MISS, US-13599 MISS, US-3792 MISS, US-8144 MISS, US-10099 MISS"
  }
 }
