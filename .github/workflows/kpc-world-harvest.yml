@@ -17,6 +17,9 @@ on:
       chain:
         description: 'How many MORE jobs may follow this one by themselves when countries remain (0 = none)'
         default: '4'
+      then_queue:
+        description: 'For a named test country: "yes" = when it PASSES (a known-good layer found + an A/B lead), start the whole queue by itself'
+        default: ''
 permissions:
   contents: write
   actions: write
@@ -60,6 +63,23 @@ jobs:
             elif [ "$LEFT" = 0 ]; then break; fi
           done
           echo "LEFT=$LEFT" >> "$GITHUB_ENV"
+      - name: A passed test country starts the queue
+        if: ${{ inputs.countries != '' && inputs.then_queue == 'yes' }}
+        continue-on-error: true
+        run: |
+          cd kpcdata
+          P=$(python3 -c "
+          import json,os
+          ok=True
+          for cc in os.environ['CC'].split():
+              d=json.load(open(f'data/harvest/leads-{cc}.json'))
+              ok = ok and bool(d.get('known_good_found')) and any(v.get('band') in ('A','B') for v in d['leads'].values())
+          print('PASS' if ok else 'FAIL')" 2>/dev/null || echo FAIL)
+          echo "::notice title=World harvester::test $CC: $P"
+          [ "$P" = PASS ] && gh workflow run kpc-world-harvest.yml -R ${{ github.repository }} -f countries= -f chunks=5 -f chain=${{ inputs.chain }} && echo "::notice title=World harvester::the long run has started (queue order, ${{ inputs.chain }} more jobs may follow)"
+          true
+        env:
+          CC: ${{ inputs.countries }}
       - name: Carry on in a new job when countries remain
         if: ${{ inputs.countries == '' && inputs.chain != '0' }}
         continue-on-error: true

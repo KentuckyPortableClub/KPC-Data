@@ -55,6 +55,7 @@ HAND = {
  'RU': ('Russia', ['Россия'], ['национальный парк', 'заповедник', 'заказник', 'особо охраняемая природная территория', 'ООПТ'], [], 3, 41),
  'CN': ('China', ['中国'], ['国家公园', '自然保护区', '自然公园', 'nature reserve'], [], 3, 42),
 }
+OFFICIAL_ORGS = {'GB': ['JJzESW51TqeY9uat']}   # Defra group (Natural England, Environment Agency, Forestry Commission…)
 RESEARCH_FILE = {'GB': ['WORLD/KPC_W_GB_desk.md', 'UK/*.md'], 'DO': ['WORLD/KPC_X1_DO_desk.md'], 'MX': ['WORLD/KPC_X3_MX_CENTRALAM_desk.md'],
                  'EE': ['WORLD/KPC_W_BALTIC_desk.md'], 'LV': ['WORLD/KPC_W_BALTIC_desk.md'], 'LT': ['WORLD/KPC_W_BALTIC_desk.md'], 'LU': ['WORLD/KPC_W_BALTIC_desk.md']}
 GOVWORDS = ('ministry|ministerio|ministère|ministerium|ministero|ministerstwo|agency|agentur|agence|agencia|agenzia|department|dept|'
@@ -63,6 +64,10 @@ GOVWORDS = ('ministry|ministerio|ministère|ministerium|ministero|ministerstwo|a
             'conservation|naturschutz|nature|natur|natuur|natura|miljø|miljö|ympäristö|conselleria|generalitat|junta de|xunta|regione|'
             'landesamt|land |canton|kanton|county council|crown|state of|geological survey|survey|cartográfic|geoportal|lasy|gdoś|gios|'
             'bfn|icnf|inpn|mnhn|ign|metsähallitus|naturvårdsverket|miljødirektoratet|rvo|pdok|bafu|ofev|doc |department of conservation|'
+            'defra|forestry commission|forestry england|scottish government|welsh government|natural heritage|environment agency|rijkswaterstaat|'
+            'staatsbosbeheer|lantmäteriet|umweltbundesamt|landesbetrieb|parks victoria|dbca|deeca|dcceew|dpie|office national|national parks|'
+            'parks and wildlife|parks & wildlife|conservation authority|nature agency|naturstyrelsen|skogsstyrelsen|luke\\b|syke\\b|'
+            'generalitat|comunidad|diputaci|región|regione|provincia|kraj|voivod|województw|canton|kanton|amt für|landesamt|bezirk|'
             'anb|coillte|npws|moe|環境省|国土|自然|ministerstvo|ministerul|agenția|úrad|urząd|ministère de|institut|instituto|istituto')
 
 
@@ -85,7 +90,7 @@ def main():
             if re.search(r'wfs|wms|geoserver|/ows\b|ogcapi|/wss/', u, re.I): ogc.add(u.split('?')[0]); continue
             if re.search(r'/dataset[s]?/', u): pages.add(u)
         orgs |= {m.group(1) for m in re.finditer(r'arcgis\.com/([A-Za-z0-9]{16,})/', txt)}
-        seeds[cc] = {'name': name, 'names': [name] + other, 'words': words, 'catalogs': cats, 'stage': stage, 'order': order,
+        seeds[cc] = {'name': name, 'names': [name] + other, 'words': words, 'catalogs': cats, 'stage': stage, 'order': order, 'official_orgs': OFFICIAL_ORGS.get(cc, []),
                      'servers': sorted(servers), 'agol_orgs': sorted(orgs), 'ogc': sorted(ogc), 'catalog_pages': sorted(pages)[:40],
                      'known_good': sorted(u for u in urls if re.search(r'/rest/services/|wfs|ows|ogcapi', u, re.I))[:60],
                      'research': [os.path.relpath(f, LINKS) for pat in files for f in glob.glob(str(LINKS / '.claude/build/research' / pat))]}

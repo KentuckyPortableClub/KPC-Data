@@ -127,8 +127,13 @@ STRIKE = {}
 
 
 # ------------------------------------------------------------------ what a layer is
+TRUSTED_ORGS = set()   # ArcGIS Online organisations chat 8 names as the agency itself (seed 'official_orgs')
+
+
 def official(publisher, url, cc, govwords):
     p = (publisher or '').lower()
+    m = re.search(r'arcgis\.com/([A-Za-z0-9]{16,})/', url or '')
+    if m and m.group(1) in TRUSTED_ORGS: return True
     return bool(OFFICIAL_DOM.search(host_of(url))) or bool(re.search(govwords, p))
 
 
@@ -361,6 +366,7 @@ def catalog(kind, base, c, cc, leads, known, govwords, done, log):
 # ------------------------------------------------------------------ one country
 def run_country(cc, c, cfg, state, known):
     govwords = cfg['govwords']
+    TRUSTED_ORGS.clear(); TRUSTED_ORGS.update(c.get('official_orgs') or [])
     st = state['countries'].setdefault(cc, {'status': 'started', 'started': RUN, 'done': [], 'log': [], 'steps': []})
     leads = load(OUT / f'leads-{cc}.json', {}).get('leads') or {}
     done = set(st['done']); log = st['log']
