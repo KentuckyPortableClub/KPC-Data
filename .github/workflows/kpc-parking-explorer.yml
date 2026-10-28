@@ -18,6 +18,10 @@ on:
         description: 'Outline kind: skip the search, only test the leads already found'
         type: boolean
         default: false
+      refresh:
+        description: 'Re-read every layer (count + sample) even when it is already in the lead file'
+        type: boolean
+        default: false
       deep:
         description: 'Canada deep look: search EVERY folder on the provincial / Parks Canada servers (two jobs, west + east)'
         type: boolean
@@ -61,6 +65,7 @@ jobs:
           MINUTES: ${{ inputs.minutes || '100' }}
           PART: ${{ matrix.part }}
           KIND: ${{ inputs.kind || 'parking' }}
+          REFRESH: ${{ inputs.refresh && '1' || '' }}
         if: ${{ !inputs.test_only }}
         run: python3 .github/scripts/kpc_parking_explorer.py || true
       - name: Test the outline leads (outline kind, one job only)
@@ -79,11 +84,5 @@ jobs:
             mkdir -p kpcdata/data/$d
             for f in data/$d/*; do [ -f "$f" ] && ! cmp -s "$f" "kpcdata/$f" && cp "$f" kpcdata/data/$d/; done
           done
-          cd kpcdata
-          git config user.name 'github-actions[bot]'
-          git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git add data/access-leads data/outline-leads 2>/dev/null || true
-          git diff --cached --quiet && exit 0
-          git commit -qm "Layer leads (${{ inputs.kind || 'parking' }}, ${{ matrix.part }})" || exit 0
-          for i in 1 2 3 4; do git pull -q --rebase && git push -q && exit 0; sleep $((i * 7)); done
-          true
+          # Oct 28: the one safe save (only this job's files on a fresh main; four matrix jobs push at once)
+          bash .github/scripts/kpc_push_data.sh kpcdata "Layer leads (${{ inputs.kind || 'parking' }}, ${{ matrix.part }})" data/access-leads data/outline-leads
