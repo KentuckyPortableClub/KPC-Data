@@ -1,6 +1,39 @@
 {
- "checked": "2026-10-26",
+ "checked": "2026-10-28",
  "leads": [
+  {
+   "agency": "",
+   "area": "Name",
+   "count": 127,
+   "fields": [
+    "Name",
+    "FolderPath",
+    "Snippet",
+    "PopupInfo"
+   ],
+   "known": false,
+   "layer": "Angling Access Points",
+   "sample": [
+    {
+     "FolderPath": "Disabled Angler Access Map/NW Region",
+     "Name": "Adair Pond",
+     "PopupInfo": "<img src=\"https://lh3.googleusercontent.com/umsh/ANkjSgHB9AZdTnvR9vxCwCAngIsgUfnzUzlm65HVKIY3OUhfhbB4Qkzyp3wrZuNAe6LIggX82cObhvYbPC-avsv880cYqJnbMQjxKKkyUVRIGbUuZsvFyXE0UczGGXaPRiXomPlXAQ\" height=\"200\" width=\"auto\" /><br><br>This is a 5 acre pond located on the EE Wilson Wildlife Area a few hundred yards from the main office. Amenities include a paved/gravel wheelchair-accessible path and fishing platform. Connects to E.E. Wilson but do not need a wildlife area parking permit for the pond parking lot.<br>Fish species: largemouth bass, bluegill, read-ear sunfish, and channel catfish<br>Amenities: paved/gravel accessible path to a fishing platform, covered picnic table, restroom by the pond <br>Open: year-round; stocked February – June<br>Accessibility rating: Medium – accessible parking, and fishing opportunity but parking is a little ways from the pond."
+    },
+    {
+     "FolderPath": "Disabled Angler Access Map/NW Region",
+     "Name": "Albany, Bowman Park",
+     "PopupInfo": "<img src=\"https://lh3.googleusercontent.com/umsh/ANkjSgFCiEkOg7ZcrD391jCJMyA1nz1FIeQ1rRds7U0G5Q938-jgmvrnlR1ywWqYDFFRpXtWNubwjhGv_wtDDdhwpkfKnwzn-NMIaazRMblSc7OvVM3YrUsEv81f6yztloHI4_fptnzS50gsfCE\" height=\"200\" width=\"auto\" /><br><br>Bowman Park, Albany: This park is up against the Willamette River.<br>Fish species: spring Chinook, steelhead and bass. <br>Amenities: boat ramp, picnic area, shelter, restroom, packed dirt trail from paved parking lot<br>Accessibility rating: low-medium. Some accessible fishing from dock adjacent to boat launch."
+    },
+    {
+     "FolderPath": "Disabled Angler Access Map/NW Region",
+     "Name": "Alton Baker Pond & Canoe Canal",
+     "PopupInfo": "<img src=\"https://lh3.googleusercontent.com/umsh/ANkjSgGYtvN6GzS5wsDPzvWmB7K4yM41mr7PVwYGqsZL7G76uZznZ-_6dgu615F-z87nyw5cJGAHAH9hmlQx1Os6qZbcefUEHXc5k1HGV07FP-AjOlxukWU4vPAfvnaJbw7QH9wRL4G_Ya97pjW_HeR5BT97q_VYqrDH9Pp__SEZJG13qRPubSx6FNiFEIIZDe67EHAcN64_BKHvkE_Wy1BrjtYQbYgWIkSqcPoW2ZNbaDoVABcDcz3mGOwgYJ07gG-cs7jubw8BvT70rby6Ing7WOV3sgwveudlhIZ9Y7wee7mTRemKdUHnjceaKzRCVyOEPNdTUWVGj1P0\" height=\"200\" width=\"auto\" /><br><br>Located in Alton Baker Park in Eugene, this trout and warmwater fishing opportunity includes two miles of canal with a pond in the middle. Alton Baker Pond and Canoe Canal are located within Alton Baker Park, one of the most popular and multi-functional parks in Eugene. The park is located on the north bank of the Willamette River just east of the Ferry Street Bridge and Coburg Road. It is accessible by foot or bike from either side of the river via the River Bank Trails. By car you can enter via the Club Road underpass off Coburg Road or from Autzen Stadium off MLK/Centennial. Located within the park are two ponds and a canal, which can be accessed by rented canoes during the summer months. The park is managed by the City of Eugene Parks & Open Space Division.<br>ADA restrooms are available at the park entrance on Day Island Rd. There are several pedestrian bridges people can fish from or you can follow the trails along the canal and pond to find some flat spots along the bank to cast a line in. If needed, reach out to the city and you can get a permit to drive closer to the water and accessible fishing locations.<br>Fish species: trout, steelhead, warmwater species<br>Amenities: boat launch, dog park, ADA restrooms, potable water, pedestrian bridges, paved/gravel/dirt trails<br>Accessibility rating: High – parking, amenities, and fishing opportunities are suited for those who use mobility devices"
+    }
+   ],
+   "service": "Disabled_Angling_Access_Points",
+   "typef": "",
+   "url": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Disabled_Angling_Access_Points/FeatureServer/0"
+  },
   {
    "agency": "",
    "area": "Website",
@@ -71,6 +104,132 @@
    "service": "2026_Participating_Libraries",
    "typef": "Library_Type",
    "url": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/2026_Participating_Libraries/FeatureServer/0"
+  },
+  {
+   "agency": "",
+   "area": "",
+   "count": 68,
+   "fields": [
+    "BLDG_CODE",
+    "DAS_MANG",
+    "R",
+    "BLDG_NAME",
+    "LABEL_NAME",
+    "ADDRESS",
+    "CITY",
+    "MC_SPCS",
+    "SVC_SEC",
+    "NOTES",
+    "Creator",
+    "Editor"
+   ],
+   "known": false,
+   "layer": "DAS_Parking",
+   "sample": [
+    {
+     "ADDRESS": "550 Airport Road SE",
+     "BLDG_CODE": "110116",
+     "BLDG_NAME": "Print Plant",
+     "CITY": "Salem",
+     "Creator": "daniel.christensen_DAS",
+     "DAS_MANG": " ",
+     "Editor": "daniel.christensen_DAS",
+     "LABEL_NAME": "Print Plant",
+     "MC_SPCS": " ",
+     "NOTES": " ",
+     "R": " ",
+     "SVC_SEC": " "
+    },
+    {
+     "ADDRESS": "1298 Ferry Street SE",
+     "BLDG_CODE": "110600",
+     "BLDG_NAME": "Parking Structure - Ferry Street",
+     "CITY": "Salem",
+     "Creator": "daniel.christensen_DAS",
+     "DAS_MANG": "Y",
+     "Editor": "daniel.christensen_DAS",
+     "LABEL_NAME": "Parking Structure - Ferry Street",
+     "MC_SPCS": "2 areas",
+     "NOTES": "Includes 15 Visitor Spaces on Roof",
+     "R": "C",
+     "SVC_SEC": "10 SVC"
+    },
+    {
+     "ADDRESS": "875 Union Street NE",
+     "BLDG_CODE": "110637",
+     "BLDG_NAME": "Parking Structure - Employment Well",
+     "CITY": "Salem",
+     "Creator": "daniel.christensen_DAS",
+     "DAS_MANG": "Y",
+     "Editor": "daniel.christensen_DAS",
+     "LABEL_NAME": "Parking Structure - Employment Well",
+     "MC_SPCS": "2 areas",
+     "NOTES": "2 access aisles",
+     "R": "C",
+     "SVC_SEC": "2 SVC"
+    }
+   ],
+   "service": "DAS_Parking",
+   "typef": "",
+   "url": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/DAS_Parking/FeatureServer/0"
+  },
+  {
+   "agency": "",
+   "area": "name",
+   "count": 20,
+   "fields": [
+    "name",
+    "name_alias",
+    "manager",
+    "owner",
+    "manager_phone",
+    "waterway_name",
+    "waterway_alias",
+    "county",
+    "web_url",
+    "facility_type",
+    "launch_type",
+    "ramp_lanes",
+    "public_display",
+    "PARKING",
+    "SANITATION",
+    "RAMP",
+    "HAND",
+    "NONMOTOR",
+    "USEFEE",
+    "SHORTTIE"
+   ],
+   "known": false,
+   "layer": "Boating Access Sites",
+   "sample": [
+    {
+     "county": "Yamhill",
+     "facility_type": "Boat Ramp",
+     "manager": "Private",
+     "name": "Lower Willamina Falls take-out",
+     "owner": "Private",
+     "waterway_name": "Willamina Creek"
+    },
+    {
+     "county": "Yamhill",
+     "facility_type": "Boat Ramp",
+     "manager": "Private",
+     "name": "Tindle Creek",
+     "owner": "Private",
+     "waterway_name": "Willamina Creek"
+    },
+    {
+     "county": "Yamhill",
+     "facility_type": "Boat Ramp",
+     "manager": "Private",
+     "name": "S Main St",
+     "owner": "Private",
+     "waterway_name": "Willamina Creek"
+    }
+   ],
+   "service": "Boating_Access_Yamhill",
+   "typef": "facility_type",
+   "url": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Boating_Access_Yamhill/FeatureServer/112"
   }
  ],
  "st": "OR"

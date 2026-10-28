@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-26",
+ "checked": "2026-10-28",
  "leads": [
   {
    "agency": "ODOT GIS Management Branch",
@@ -148,6 +148,66 @@
    "service": "OLAP_UpdatedLayers_062626_PublicView",
    "typef": "PointType",
    "url": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/OLAP_UpdatedLayers_062626_PublicView/FeatureServer/6"
+  },
+  {
+   "agency": "ODOT GIS Management Branch",
+   "area": "",
+   "count": 32,
+   "fields": [
+    "ROUTE",
+    "DIRECTION",
+    "FACILITY_TYPE",
+    "COUNTY",
+    "MILE_MARKER",
+    "EXIT_NO_",
+    "FACILITIES",
+    "COMMENTS",
+    "LINK_TAG",
+    "ZOOM_LINK"
+   ],
+   "known": false,
+   "layer": "Parking",
+   "sample": [
+    {
+     "COMMENTS": "Striped",
+     "COUNTY": "Logan",
+     "DIRECTION": "NB",
+     "EXIT_NO_": "149",
+     "FACILITIES": "N",
+     "FACILITY_TYPE": "Turnout",
+     "LINK_TAG": "I-35N_NB_Turnout_Logan",
+     "MILE_MARKER": "149",
+     "ROUTE": "I-35N",
+     "ZOOM_LINK": "https://okdot.maps.arcgis.com/apps/View/index.html?appid=cac89b9a8a0b4dd793377fd8b7d8d3d9&LINK_TAG=I-35N_NB_Turnout_Logan"
+    },
+    {
+     "COMMENTS": "Striped",
+     "COUNTY": "Logan",
+     "DIRECTION": "SB ",
+     "EXIT_NO_": "149",
+     "FACILITIES": "N",
+     "FACILITY_TYPE": "Turnout",
+     "LINK_TAG": "I-35N_SB _Turnout_Logan",
+     "MILE_MARKER": "149",
+     "ROUTE": "I-35N",
+     "ZOOM_LINK": "https://okdot.maps.arcgis.com/apps/View/index.html?appid=cac89b9a8a0b4dd793377fd8b7d8d3d9&LINK_TAG=I-35N_SB _Turnout_Logan"
+    },
+    {
+     "COMMENTS": "Paved - No Markings ",
+     "COUNTY": "Payne",
+     "DIRECTION": "SB",
+     "EXIT_NO_": "173",
+     "FACILITIES": "N",
+     "FACILITY_TYPE": "Turnout",
+     "LINK_TAG": "I-35N_SB_Turnout_Payne",
+     "MILE_MARKER": "173",
+     "ROUTE": "I-35N",
+     "ZOOM_LINK": "https://okdot.maps.arcgis.com/apps/View/index.html?appid=cac89b9a8a0b4dd793377fd8b7d8d3d9&LINK_TAG=I-35N_SB_Turnout_Payne"
+    }
+   ],
+   "service": "RestAreaParking",
+   "typef": "FACILITY_TYPE",
+   "url": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/RestAreaParking/FeatureServer/0"
   },
   {
    "agency": "ODOT GIS Management Branch",

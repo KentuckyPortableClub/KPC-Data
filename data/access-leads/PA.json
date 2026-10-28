@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-26",
+ "checked": "2026-10-28",
  "leads": [
   {
    "agency": "",
@@ -135,38 +135,6 @@
    "service": "GateID",
    "typef": "GATE_TYPE",
    "url": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/GateID/FeatureServer/1"
-  },
-  {
-   "agency": "",
-   "area": "PARK_NAME",
-   "count": 78,
-   "fields": [
-    "PARK_NAME",
-    "COUNTY",
-    "Nav_Desc"
-   ],
-   "known": false,
-   "layer": "State Park Office",
-   "sample": [
-    {
-     "COUNTY": "Bedford",
-     "Nav_Desc": "Park Office",
-     "PARK_NAME": "Shawnee"
-    },
-    {
-     "COUNTY": "Venango",
-     "Nav_Desc": "Park Office",
-     "PARK_NAME": "Oil Creek"
-    },
-    {
-     "COUNTY": "Erie",
-     "Nav_Desc": "Park Office",
-     "PARK_NAME": "Presque Isle"
-    }
-   ],
-   "service": "Parks/State_Parks",
-   "typef": "Nav_Desc",
-   "url": "https://www.gis.dcnr.pa.gov/agsprod/rest/services/Parks/State_Parks/MapServer/2"
   },
   {
    "agency": "",
@@ -307,6 +275,38 @@
    "service": "Parks/boat_launch",
    "typef": "",
    "url": "https://www.gis.dcnr.pa.gov/agsprod/rest/services/Parks/boat_launch/MapServer/0"
+  },
+  {
+   "agency": "",
+   "area": "PARK_NAME",
+   "count": 78,
+   "fields": [
+    "PARK_NAME",
+    "COUNTY",
+    "Nav_Desc"
+   ],
+   "known": true,
+   "layer": "State Park Office",
+   "sample": [
+    {
+     "COUNTY": "Bedford",
+     "Nav_Desc": "Park Office",
+     "PARK_NAME": "Shawnee"
+    },
+    {
+     "COUNTY": "Venango",
+     "Nav_Desc": "Park Office",
+     "PARK_NAME": "Oil Creek"
+    },
+    {
+     "COUNTY": "Erie",
+     "Nav_Desc": "Park Office",
+     "PARK_NAME": "Presque Isle"
+    }
+   ],
+   "service": "Parks/State_Parks",
+   "typef": "Nav_Desc",
+   "url": "https://www.gis.dcnr.pa.gov/agsprod/rest/services/Parks/State_Parks/MapServer/2"
   },
   {
    "agency": "",
