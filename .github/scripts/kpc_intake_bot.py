@@ -695,7 +695,8 @@ def main():
         STAT['rows'] += 1
         if want and u not in want: continue
         prev = state['rows'].get(u) or {}
-        fresh = prev.get('probed') and days_ago(prev['probed']) < REFRESH_DAYS and prev.get('sig') == sig(row) and not prev.get('retry')
+        stale_fail = any(not (r.get('probe') or {}).get('opened') for r in old.values() if (r.get('queue_url') or r.get('url')) == u or r.get('url', '').startswith(u + '/'))
+        fresh = prev.get('probed') and days_ago(prev['probed']) < REFRESH_DAYS and prev.get('sig') == sig(row) and not prev.get('retry') and not stale_fail and 'RETRY' not in (prev.get('verdicts') or [])
         if fresh and not want: STAT['skipped_fresh'] += 1; continue
         todo.append(row)
     notice(f'{len(todo)} queue rows to probe ({STAT["skipped_fresh"]} probed within {REFRESH_DAYS} days skipped; {len(known)} layers already read)')
@@ -711,7 +712,7 @@ def main():
         for r in results:
             r['queue_url'] = u
             pr = r.get('probe') or {}; st = str(pr.get('status') or '')
-            if not pr.get('opened') and (RETRYABLE.search(st) or not st or st == 'item page only' and not pr.get('opened')):
+            if not pr.get('opened'):   # EVERY non-opened probe, whatever the kind (REST, WFS, file, item page) or status
                 # RULE (chat 9, Oct 28): a probe that did not open (error, rest, robots, 403) is never a REJECT: it is RETRY, probed again
                 # next run; three failed runs → the url goes to chat 9.
                 r['retry'] = fails + 1 < 3
@@ -737,6 +738,13 @@ def main():
     def still_queued(r):   # a row whose queue url was removed or changed (the first SC url) leaves ready.json
         qu = r.get('queue_url') or r.get('url')
         return qu in qurls or any(r.get('url', '').startswith(q.rstrip('/') + '/') for q in qurls)
+    qrows = {strip_query(r.get('url')): r for r in queue if r.get('url')}
+    for r in old.values():   # rows written by an older run: a probe that did not open is RETRY, never REJECT
+        if not (r.get('probe') or {}).get('opened') and r.get('verdict') != 'RETRY':
+            r['verdict'] = 'RETRY'; r['retry'] = True
+            r['why'] = f"did not open ({(r.get('probe') or {}).get('status')}): probed again next run"
+            qr = qrows.get(r.get('queue_url') or r.get('url'))
+            if qr: r['test'] = test_result(qr, 'RETRY', r.get('overlap') or '')
     ready['rows'] = [r for r in old.values() if still_queued(r)]; ready['updated'] = TODAY
     save(OUT / 'ready.json', ready)
     counts = write_review(ready['rows'], state)

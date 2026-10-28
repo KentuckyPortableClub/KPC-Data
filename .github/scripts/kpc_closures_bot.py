@@ -212,7 +212,7 @@ HUNT_SEASON_RX = re.compile(r"\b(deer|turkey|dove|waterfowl|duck|small game|arch
 SEASONAL_RX = re.compile(r"\b(annually|each year|every year|seasonal(ly)?|nesting|plovers?|eagle|bats?\b|hibernat|winter (gate|closure|season)|for the season|peregrine|falcon|closed (each|every) (winter|spring|summer|fall))\b", re.I)
 VEHICLE_RX = re.compile(r"closed to (all )?(motor(ized)? )?vehicles?\b|closed to (all )?motorized|vehicle traffic|vehicular (traffic|access)|closed to (cars|trucks|automobiles)|gate (is |will be )?closed to vehicles", re.I)
 VEHICLE_NOT = re.compile(r"all access|all traffic|all use|all users|foot traffic|pedestrians?|hikers|closed to all\b|no entry", re.I)
-PERMIT_RX = re.compile(r"permit (is |are )?(required|needed|necessary)|requires? an? [^.]{0,30}permit|user permit|by permit only|permit holders only|must (have|hold|obtain) an? [^.]{0,30}permit|licen[cs]e (is )?required", re.I)
+PERMIT_RX = re.compile(r"(?<!driver's )(?<!drivers )permit (is |are )?(required|needed|necessary)|requires? an? [^.]{0,30}permit|user permit|by permit only|permit holders only|must (have|hold|obtain) an? [^.]{0,30}permit|(?<!driver.s )(?<!drivers )licen[cs]e (is )?required", re.I)
 LAND_RX = re.compile(r"lease[^.]{0,60}(not (been )?renewed|has ended|ended|expired|terminated)|no longer (open to the public|public|part of|enrolled|available for public)|removed from the (program|wma|system)|has been sold|is now private|reverted to", re.I)
 CAUTION_RX = re.compile(r"\b(caution|advisory|be aware|low water|algae|algal|bloom|expect delays|hazard(ous)?|use care|slippery|limited services|services (are |may be )?(limited|not guaranteed)|lapse in appropriations|shutdown|not guaranteed|high water|boil water|out of service|suspended)\b", re.I)
 RULES_RX = re.compile(r"\b(camping|campfires?|fires?|open flames?|charcoal|stoves?)\b[^.]{0,80}\b(prohibited|not (allowed|permitted)|banned|restricted)|\bno (camping|campfires?|fires?)\b|\b(burn|fire) (ban|restriction)s?\b", re.I)
@@ -247,6 +247,20 @@ def classify(sent, ctx=None):
     low = s.lower()
     has_close = bool(CLOSE_RX.search(s))
     lang = 'fr' if FR_RX.search(s) and not re.search(r'\bclosed?\b', low) else 'en'
+    if re.search(r'[“”"]|\bsigns?\b (define|are erected|mark)|^prohibited activities|regulations (are|is) representative', low) and not re.search(r'\bis closed\b|\bare closed\b', low):
+        return {'skip': 'a sentence about signs or rules in general, not a closure'}
+    if ctx.get('hunt_page') and re.search(r'quota|drawn|managed hunt|controlled hunt|youth(-only)? hunt', low) and not NEG_RX.search(s):
+        frm0, to0, clear0 = parse_dates(s, ctx.get('updated'), ctx.get('year'))
+        if frm0 or to0:                                                                 # CL-2: a dated drawn / quota hunt = closed to non-hunters
+            return {'from': frm0, 'to': to0, 'dates_clear': clear0, 'flags': {'emergency': False, 'longterm': False, 'annually': False}, 'lang': 'en',
+                    'class': 'hunt', 'what': 'closed to non-hunters'}
+    only_prohib = has_close and not re.search(r"\b(clos(?:ed|ure|ures|ing|es)|ferm(?:é|ée|és|ées|eture)|until further notice|jusqu'à nouvel ordre|no entry|not open to the public)\b", low)
+    if only_prohib and not re.search(r'\b(entering|entry|enter|occupying|access(?:ing)?|going (?:into|onto)|being (?:in|on|upon)|presence|trespass)\b', low) and not RULES_RX.search(s):
+        return {'skip': 'a prohibited ACTIVITY (alcohol, ATVs, collecting, metal detecting…) is a standing rule, not a closure'}
+    if re.search(r'\bclosed to (?:all )?(?:fishing|boating|hunting|swimming|camping|trapping|horses?|horseback|bikes?|bicycles?|climbing|rappelling|target shooting|shooting|drones?|dogs?|pets?|atvs?|ohvs?|motor(?:ized)? (?:vehicles?|use))\b', low) \
+            and not re.search(r'\b(all access|all use|all users|all other|all public|entry|except)\b', low):
+        return {'from': None, 'to': None, 'dates_clear': True, 'flags': {'emergency': False, 'longterm': False, 'annually': False}, 'lang': lang,
+                'class': 'note', 'note_kind': 'rules', 'what': 'closed to an activity, land open'}        # 'Energy Lake closed to hunting' = a rule, not a part closure
     if not (has_close or PERMIT_RX.search(s) or LAND_RX.search(s) or CAUTION_RX.search(s) or RULES_RX.search(s) or HUNT_SEASON_RX.search(s) or HUNT_RX.search(s)):
         return None
     if NEG_RX.search(s) and not re.search(r'\bremains? closed\b|\bstill closed\b|\bis not open\b', low):
@@ -416,7 +430,8 @@ def html_lines(html):
     t = re.sub(r'(?is)<(script|style|noscript|svg|nav|header|footer|form)\b.*?</\1>', ' ', html)
     t = re.sub(r'(?is)<(h[1-6])\b[^>]*>(.*?)</\1>', lambda m: '\n# ' + re.sub(r'<[^>]+>', ' ', m.group(2)) + '\n', t)
     t = re.sub(r'(?is)<(?:strong|b)\b[^>]*>(.{3,120}?)</(?:strong|b)>\s*(?:<br\s*/?>|</p>|</div>|:)', lambda m: '\n# ' + m.group(1) + '\n', t)
-    t = re.sub(r'(?i)<br\s*/?>|</(p|div|li|tr|td|th|section|article|dd|dt|summary)>|<(li|p|tr|dt|dd)\b[^>]*>', '\n', t)
+    t = re.sub(r'(?i)</t[dh]>', ' | ', t)                                               # a table row stays ONE line (quota-hunt tables)
+    t = re.sub(r'(?i)<br\s*/?>|</(p|div|li|tr|section|article|dd|dt|summary)>|<(li|p|tr|dt|dd)\b[^>]*>', '\n', t)
     t = re.sub(r'<[^>]+>', ' ', t)
     out = []
     for ln in _html.unescape(t).split('\n'):
@@ -435,7 +450,11 @@ def split_sentences(ln):
     return out
 
 
-def entries_from_lines(lines, park_hint=None):
+LEAD_DATE = re.compile(r'^(\d{1,2})/(\d{1,2})/(\d{4})\s*[-–:]\s*(.+)$')
+HUNT_ROW = re.compile(r'quota|drawn|managed (deer |elk |turkey )?hunt|controlled hunt|youth(-only)? hunt|closed to', re.I)
+
+
+def entries_from_lines(lines, park_hint=None, hunt=False):
     """-> [{'head', 'names', 'updated', 'sent', 'year'}]: each sentence that may concern us, with the heading above it (the
     place's name), the agency's 'Updated' date and the year the page itself names (for dates without a year)."""
     out, head, names, upd = [], '', [], None
@@ -448,6 +467,11 @@ def entries_from_lines(lines, park_hint=None):
         if is_h: ln = ln[2:].strip()
         if not ln: continue
         if re.match(r'(?i)^(last updated|page last|this page)', ln) and not UPD_RX.match(ln): continue
+        ml = LEAD_DATE.match(ln)
+        if ml:
+            try: upd = dt.date(int(ml.group(3)), int(ml.group(1)), int(ml.group(2)))
+            except ValueError: upd = None
+            ln = ml.group(4).strip()
         mu = UPD_RX.match(ln) or UPD2_RX.match(ln)
         if mu:
             try:
@@ -458,6 +482,10 @@ def entries_from_lines(lines, park_hint=None):
                     upd = dt.date(int(mu.group(3)), MON.get(mu.group(1).lower().rstrip('.'), 1), int(mu.group(2))); ln = mu.group(4).strip()
             except ValueError: upd = None
             if not ln: continue
+        if hunt and ' | ' in ln and HUNT_ROW.search(ln) and (D1.search(ln) or DNUM.search(ln)):      # a quota-hunt TABLE ROW: WMA | hunt | dates
+            cells = [c.strip() for c in ln.split(' | ') if c.strip()]
+            first = cells[0] if cells and len(cells[0]) < 70 and not D1.search(cells[0]) and not DNUM.search(cells[0]) else ''
+            out.append({'head': first or head, 'names': ([first] if first else names), 'updated': upd, 'sent': ln[:400], 'year': year, 'hunt_page': True}); continue
         if (is_h or (len(ln) < 110 and not re.search(r'[.!?]$', ln) and not VERB.search(ln))) and len(ln) < 110 and (AREA_WORD.search(ln) or is_h) \
                 and not re.search(r'(?i)^(closures?|cautions?|alerts?|notices?|region \d+|shooting ranges?|education centers?|boat ramps?|wma, pfa|current closures|news|home|menu|search)\b', ln):
             head = ln
@@ -466,17 +494,31 @@ def entries_from_lines(lines, park_hint=None):
             continue
         for sent in split_sentences(ln):
             if CLOSE_RX.search(sent) or PERMIT_RX.search(sent) or LAND_RX.search(sent) or CAUTION_RX.search(sent) or RULES_RX.search(sent) or HUNT_RX.search(sent) or HUNT_SEASON_RX.search(sent):
-                out.append({'head': head, 'names': names, 'updated': upd, 'sent': sent[:600], 'year': year})
+                out.append({'head': head, 'names': names, 'updated': upd, 'sent': sent[:600], 'year': year, 'hunt_page': hunt})
+            elif hunt and HUNT_ROW.search(sent) and (D1.search(sent) or DNUM.search(sent)):
+                out.append({'head': head, 'names': names, 'updated': upd, 'sent': sent[:600], 'year': year, 'hunt_page': True})
     return out
 
 
 SAMPLE_PAGE = """<h1>Alerts</h1><h3>Ballard WMA</h3><p>Updated 10/20/26 The huntable portion is closed to all access except drawn quota hunters Nov 14-21.</p>
 <h3>Peabody WMA</h3><p>Part of Peabody WMA (Unit 2) is closed Saturday for a hunt. A Peabody WMA User Permit is required to hunt, fish or trap on the area.</p>
-<h3>Buckhorn Lake</h3><p>Buckhorn Lake Dam Ramp Access closed until Feb. 2027</p><h3>Hickory Run</h3><p>The trail is closed.</p>"""
+<h3>Buckhorn Lake</h3><p>Buckhorn Lake Dam Ramp Access closed until Feb. 2027</p><h3>Hickory Run</h3><p>The trail is closed.</p>
+<table><tr><th>WMA</th><th>Hunt</th><th>Dates</th></tr><tr><td>Clay WMA</td><td>Deer quota hunt</td><td>Nov 7-8, 2026</td></tr><tr><td>Beaver Creek WMA</td><td>Deer quota hunt</td><td>Nov 7-8, 2026</td></tr></table>
+<p>Metal detecting is prohibited on all WMAs.</p>"""
+
+
+def safe_url(u):
+    """A path with spaces or control characters is quoted before the fetch (copied from the truth checker's fix 6)."""
+    try:
+        u = re.sub(r'[\x00-\x1f\x7f]', '', str(u)).strip()
+        p = urllib.parse.urlsplit(u)
+        return urllib.parse.urlunsplit((p.scheme, p.netloc, urllib.parse.quote(p.path, safe=':/?&=%+@,;!$*()~'), urllib.parse.quote(p.query, safe=':/?&=%+@,;!$*()~'), ''))
+    except Exception: return u  # noqa: BLE001
 
 
 def read(url, pdf=False):
     """-> (ok, kind, body_text_or_html, status). Through Manners: robots obeyed, 1 request / 2 s per host."""
+    url = safe_url(url)
     if OFFLINE:
         if 'fw.ky.gov/Hunt' in url: return True, 'html', SAMPLE_PAGE, 'ok'      # plumbing test only: a built-in sample page
         return False, '', '', 'offline'
@@ -728,7 +770,7 @@ def src_nps(area, parks):
 
 
 # ---- Forest Service 'alerts-notices' pages (the usa-card blocks kpc_park_alerts.forest_alerts reads; else the generic reader)
-def src_fs_alerts(url, refs):
+def src_fs_alerts(url, refs, home=None):
     ok, kind, body, st = read(url)
     if not ok: raise RuntimeError(st)
     rows = []
@@ -738,26 +780,27 @@ def src_fs_alerts(url, refs):
         bodym = re.search(r'<div class="usa-card__body">(.*?)</div>', block, re.S)
         if not head: continue
         path = head.group(1)
-        rows.append({'name': None, 'refs': list(refs), 'title': clean(head.group(2), 160), 'text': clean(bodym.group(1) if bodym else ''),
+        rows.append({'name': None, 'refs': list(refs or []), 'home': list(home or []), 'head': clean(head.group(2), 160), 'title': clean(head.group(2), 160), 'text': clean(bodym.group(1) if bodym else ''),
                      'end': None, 'at': None, 'link': ('https://www.fs.usda.gov' + path) if path.startswith('/') else path, 'date': None, 'level': level})
     if rows: return rows
-    return page_rows(body, url, refs)
+    return page_rows(body, url, refs, home)
 
 
-def page_rows(body, url, refs=None):
-    """The GENERIC PAGE READER: one row per sentence that may concern us, with its heading and 'Updated' date."""
+def page_rows(body, url, refs=None, home=None, hunt=False):
+    """The GENERIC PAGE READER: one row per sentence that may concern us, with its heading and 'Updated' date. refs = pinned
+    (the agency's own tie); home = the unit's own park (a forest, a refuge) for notices that name no other POTA park."""
     lines = html_lines(body) if '<' in body[:2000] else [l for l in body.split('\n') if l.strip()]
     rows = []
-    for e in entries_from_lines(lines):
-        rows.append({'name': None, 'names': e['names'], 'head': e['head'], 'refs': list(refs or []), 'title': e['head'][:160], 'text': e['sent'],
-                     'sent': e['sent'], 'end': None, 'at': None, 'link': url, 'date': e['updated'], 'year': e['year']})
+    for e in entries_from_lines(lines, hunt=hunt):
+        rows.append({'name': None, 'names': e['names'], 'head': e['head'], 'refs': list(refs or []), 'home': list(home or []), 'title': e['head'][:160], 'text': e['sent'],
+                     'sent': e['sent'], 'end': None, 'at': None, 'link': url, 'date': e['updated'], 'year': e['year'], 'hunt_page': e.get('hunt_page', False)})
     return rows
 
 
-def src_page(url, refs=None, pdfs=True):
+def src_page(url, refs=None, pdfs=True, home=None, hunt=False):
     ok, kind, body, st = read(url, pdf=url.lower().split('?')[0].endswith('.pdf'))
     if not ok: raise RuntimeError(st)
-    rows = page_rows(body, url, refs)
+    rows = page_rows(body, url, refs, home, hunt)
     if kind == 'html' and pdfs and not late():                        # CL-7: a PDF closure list linked from the page, by range
         n = 0
         for u, txt in links_in(body, url):
@@ -765,7 +808,7 @@ def src_page(url, refs=None, pdfs=True):
             if u.lower().split('?')[0].endswith('.pdf') and re.search(r'clos|alert|notice|hunt|order', (txt + ' ' + u).lower()):
                 n += 1
                 ok2, k2, t2, st2 = read(u, pdf=True)
-                if ok2: rows += page_rows(t2, u, refs)
+                if ok2: rows += page_rows(t2, u, refs, home, hunt)
                 else: rows.append({'name': None, 'title': 'PDF ' + txt[:60], 'text': '', 'status_only': st2, 'link': u})
     return rows
 
@@ -814,76 +857,148 @@ def park_list(area, scope='all'):
     return P
 
 
+_FS_STATES = None
+
+
+def fs_states():
+    """{forest slug: set of states whose park lists give that forest's fs.usda.gov page}: a slug in two states = a multi-state forest."""
+    global _FS_STATES
+    if _FS_STATES is None:
+        _FS_STATES = {}
+        import glob
+        for f in glob.glob('data/parkinfo/US-*.json') + glob.glob(str(LINKS / 'data/parkinfo/US-*.json')):
+            stx = f[-7:-5]
+            for r, v in (load(f, {}).get('parks') or {}).items():
+                m = re.search(r'fs\.usda\.gov/(?:r\d+/)?([a-z0-9-]+)/?(?:$|\?|#)', str(v[1] if len(v) > 1 else '').lower())
+                if m: _FS_STATES.setdefault(m.group(1), set()).add(stx)
+        for x in load(LINKS / 'kpc-ky-data.json', {}).get('parks', []):
+            m = re.search(r'fs\.usda\.gov/(?:r\d+/)?([a-z0-9-]+)/?(?:$|\?|#)', str(x.get('web') or '').lower())
+            if m: _FS_STATES.setdefault(m.group(1), set()).add('KY')
+    return _FS_STATES
+
+
 def sources_for(area):
-    """[(id, agency, url, kind, how, scope, refs)] in Sheet D's order: feeds, then pages, then federal by pattern, then Canada."""
+    """[(id, agency, url, kind, how, scope, refs, home)] in Sheet D's order: feeds, then pages, then federal by pattern, then Canada.
+    refs = pinned to those parks (the agency's own tie); home = the unit's own park for notices that name no other POTA park."""
     st = area[3:]
     S = []
     if area in FEEDS:
         sid, agency, page, fn = FEEDS[area]
-        S.append((sid, agency, page, 'feed', fn, 'state', []))
+        S.append((sid, agency, page, 'feed', fn, 'state', [], []))
     extra = (load(OUT / 'sources.json', {}) or load('data/closures/sources.json', {})).get('sources') or []
     for r in extra:
         if r.get('area') in (area, 'ALL') or (r.get('area') == 'US' and area.startswith('US-')):
-            if r.get('how') == 'ky-parks': S.append((r['id'], r['agency'], r['url'], 'feed', 'ky-parks', r.get('scope', 'state'), r.get('refs') or []))
-            else: S.append((r['id'], r['agency'], r['url'], r.get('kind', 'page'), r.get('how', 'generic'), r.get('scope', 'state'), r.get('refs') or []))
-    if NPS_KEY and area.startswith('US-'): S.append((f'nps-{st.lower()}', 'National Park Service', f'https://www.nps.gov/state/{st.lower()}/index.htm', 'feed', 'nps', 'federal', []))
-    else: S.append((f'nps-{st.lower()}', 'National Park Service', '', 'feed', 'nps-nokey', 'federal', []))
-    if RIDB_KEY: S.append(('ridb', 'Recreation.gov (RIDB)', 'https://ridb.recreation.gov/', 'feed', 'ridb', 'federal', []))
+            if r.get('how') == 'ky-parks': S.append((r['id'], r['agency'], r['url'], 'feed', 'ky-parks', r.get('scope', 'state'), r.get('refs') or [], r.get('home') or []))
+            else: S.append((r['id'], r['agency'], r['url'], r.get('kind', 'page'), r.get('how', 'generic'), r.get('scope', 'state'), r.get('refs') or [], r.get('home') or []))
+    if NPS_KEY and area.startswith('US-'): S.append((f'nps-{st.lower()}', 'National Park Service', f'https://www.nps.gov/state/{st.lower()}/index.htm', 'feed', 'nps', 'federal', [], []))
+    else: S.append((f'nps-{st.lower()}', 'National Park Service', '', 'feed', 'nps-nokey', 'federal', [], []))
+    if RIDB_KEY: S.append(('ridb', 'Recreation.gov (RIDB)', 'https://ridb.recreation.gov/', 'feed', 'ridb', 'federal', [], []))
     seen_urls = {s[2] for s in S}
     if area == 'US-KY':                                                              # KDFWR's own WMA pages (Public_Lands_Search), pinned per park
         for ref, v in ((load(LINKS / 'data' / 'ky-hunting.json', {}) or {}).get('wma') or {}).items():
             u = v.get('link') or ''
             if 'fw.ky.gov' in u and u not in seen_urls:
-                seen_urls.add(u); S.append((f'ky-wma-{slug(ref, 10)}', 'Kentucky Fish and Wildlife', u, 'page', 'generic', 'state', [ref]))
+                seen_urls.add(u); S.append((f'ky-wma-{slug(ref, 10)}', 'Kentucky Fish and Wildlife', u, 'page', 'hunt-page', 'state', [ref], []))
     for p in closure_pages():
         if p.get('st') == st and p.get('page') and p['page'] not in seen_urls:
-            seen_urls.add(p['page']); S.append((f'{st.lower()}-' + slug(p['agency'], 24), p['agency'], p['page'], 'page', 'generic', 'state', []))
+            seen_urls.add(p['page']); S.append((f'{st.lower()}-' + slug(p['agency'], 24), p['agency'], p['page'], 'page', 'generic', 'state', [], []))
     # federal by pattern, from the parks' own pages
     for ref, (pn, typ, la, lo, web) in sorted(park_list(area).items()):
         w = str(web or '')
         m = re.search(r'fs\.usda\.gov/(?:r\d+/)?([a-z0-9-]+)/?(?:$|\?|#)', w.lower())
         if m and m.group(1) not in ('alerts', 'recarea', 'wildflowers', 'main', 'detail', 'visit'):
             u = f'https://www.fs.usda.gov/alerts/{m.group(1)}/alerts-notices'
-            if u not in seen_urls: seen_urls.add(u); S.append((f'fs-{m.group(1)}', 'US Forest Service', u, 'page', 'fs-alerts', 'federal', [ref]))
+            if u not in seen_urls: seen_urls.add(u); S.append((f'fs-{m.group(1)}', 'US Forest Service', u, 'page', 'fs-alerts', 'federal', [], [ref]))
         m = re.search(r'fws\.gov/refuge/([a-z0-9-]+)', w.lower())
         if m:
             u = f'https://www.fws.gov/refuge/{m.group(1)}/visit-us'
-            if u not in seen_urls: seen_urls.add(u); S.append((f'fws-{m.group(1)}', 'US Fish and Wildlife Service', u, 'page', 'fws', 'federal', [ref]))
+            if u not in seen_urls: seen_urls.add(u); S.append((f'fws-{m.group(1)}', 'US Fish and Wildlife Service', u, 'page', 'fws', 'federal', [], [ref]))
         m = re.search(r'parks\.canada\.ca/pn-np/([a-z]{2})/([a-z0-9-]+)', w.lower())
         if m and area.startswith('CA-'):
             u = f'https://parks.canada.ca/pn-np/{m.group(1)}/{m.group(2)}/visit/bulletins'
-            if u not in seen_urls: seen_urls.add(u); S.append((f'pc-{m.group(2)}', 'Parks Canada', u, 'page', 'parks-canada', 'federal', [ref]))
-    return S
+            if u not in seen_urls: seen_urls.add(u); S.append((f'pc-{m.group(2)}', 'Parks Canada', u, 'page', 'parks-canada', 'federal', [], [ref]))
+    # a hand row in sources.json with the same url as a pattern source (e.g. ky-fs-dbnf) keeps the hand row: drop the pattern twin
+    firsts = {}
+    for x in S:
+        if x[2] and x[2] in firsts: continue
+        firsts[x[2] or x[0]] = x
+    return list(firsts.values())
 
 
-def rows_of(sid, agency, url, kind, how, refs, area, parks):
+def rows_of(sid, agency, url, kind, how, refs, area, parks, home=None):
     if kind == 'feed' and callable(how): return how()
     if how == 'ky-parks': return src_ky_parks(url)
     if how == 'nps': return src_nps(area, parks)
     if how == 'nps-nokey': raise RuntimeError('needs NPS_API_KEY secret')
     if how == 'ridb': raise RuntimeError('D-R8: RIDB carries no closure text (names and points only); not read')
-    if how == 'fs-alerts': return src_fs_alerts(url, refs)
+    if how == 'fs-alerts': return src_fs_alerts(url, refs, home)
     if how == 'links': return src_links(url, refs)
+    if how == 'hunt-page': return src_page(url, refs, home=home, hunt=True)
     if how == 'parks-canada':
-        rows = src_page(url, refs, pdfs=False)
+        rows = src_page(url, refs, pdfs=False, home=home)
         if area in FRENCH_AREAS and not late():                                  # G9 / CL-6: French kept beside the English
             fr = url.replace('parks.canada.ca', 'parcs.canada.ca').replace('/visit/bulletins', '/visite/bulletins')
-            try: frows = [r for r in src_page(fr, refs, pdfs=False) if CLOSE_RX.search(r['sent'])]
+            try: frows = [r for r in src_page(fr, refs, pdfs=False, home=home) if CLOSE_RX.search(r['sent'])]
             except Exception: frows = []  # noqa: BLE001
             en = [r for r in rows if CLOSE_RX.search(r['sent'])]
             if frows and len(frows) == len(en):
                 for r, f in zip(en, frows): r['details_fr'] = f['sent']
             elif frows and not en: rows += frows                                  # a French-only page: shown in French (CL-6)
         return rows
-    return src_page(url, refs)
+    return src_page(url, refs, home=home)
 
 
-def tie(K, row, parks, area):
+STATE_RX = re.compile(r'\b(alabama|alaska|arizona|arkansas|california|colorado|connecticut|delaware|florida|georgia|hawaii|idaho|illinois|indiana|iowa|kansas|kentucky|louisiana|maine|maryland|massachusetts|michigan|minnesota|mississippi|missouri|montana|nebraska|nevada|new hampshire|new jersey|new mexico|new york|north carolina|north dakota|ohio|oklahoma|oregon|pennsylvania|rhode island|south carolina|south dakota|tennessee|texas|utah|vermont|virginia|washington|west virginia|wisconsin|wyoming)\b', re.I)
+STATE_NAMES = {'AL': 'Alabama', 'AK': 'Alaska', 'AZ': 'Arizona', 'AR': 'Arkansas', 'CA': 'California', 'CO': 'Colorado', 'CT': 'Connecticut', 'DE': 'Delaware', 'FL': 'Florida', 'GA': 'Georgia', 'HI': 'Hawaii', 'ID': 'Idaho', 'IL': 'Illinois', 'IN': 'Indiana', 'IA': 'Iowa', 'KS': 'Kansas', 'KY': 'Kentucky', 'LA': 'Louisiana', 'ME': 'Maine', 'MD': 'Maryland', 'MA': 'Massachusetts', 'MI': 'Michigan', 'MN': 'Minnesota', 'MS': 'Mississippi', 'MO': 'Missouri', 'MT': 'Montana', 'NE': 'Nebraska', 'NV': 'Nevada', 'NH': 'New Hampshire', 'NJ': 'New Jersey', 'NM': 'New Mexico', 'NY': 'New York', 'NC': 'North Carolina', 'ND': 'North Dakota', 'OH': 'Ohio', 'OK': 'Oklahoma', 'OR': 'Oregon', 'PA': 'Pennsylvania', 'RI': 'Rhode Island', 'SC': 'South Carolina', 'SD': 'South Dakota', 'TN': 'Tennessee', 'TX': 'Texas', 'UT': 'Utah', 'VT': 'Vermont', 'VA': 'Virginia', 'WA': 'Washington', 'WV': 'West Virginia', 'WI': 'Wisconsin', 'WY': 'Wyoming', 'DC': 'District of Columbia'}
+AREA_CTX = {}
+
+
+def area_ctx(area):
+    """What 'in this state' means for a multi-state unit's notices: the state's name, its counties (Kentucky: from kpc-ky-data),
+    and the hand list of ranger districts in sources.json ('districts': {'US-KY': {'gwj': ['Clinch']}})."""
+    if area in AREA_CTX: return AREA_CTX[area]
+    st = area[3:]
+    counties = set()
+    if area == 'US-KY':
+        for x in load(LINKS / 'kpc-ky-data.json', {}).get('parks', []):
+            for c in re.split(r'\s*/\s*', x.get('co') or ''):
+                if c and c != 'Multiple': counties.add(c.lower())
+    dist = ((load(OUT / 'sources.json', {}) or load('data/closures/sources.json', {})).get('districts') or {}).get(area) or {}
+    AREA_CTX[area] = {'state': STATE_NAMES.get(st, st).lower(), 'counties': counties, 'districts': {k: [d.lower() for d in v] for k, v in dist.items()}}
+    return AREA_CTX[area]
+
+
+def in_state(row, area, sid):
+    """Rule (HQ Oct 28): a multi-state forest's notice counts for this area only when it names this state, one of its counties,
+    one of the unit's ranger districts here, or ties to a park here; a notice naming another state is dropped. Single-state units
+    keep every notice (a forest-wide alert belongs to the forest's own park)."""
+    text = lowtext((row.get('head') or '') + ' ' + (row.get('title') or '') + ' ' + (row.get('sent') or row.get('text') or ''))
+    cx = area_ctx(area)
+    slug_ = sid.split('-', 1)[1] if sid.startswith('fs-') else (sid.split('-fs-', 1)[1] if '-fs-' in sid else '')
+    multi = slug_ and len(fs_states().get(slug_, set())) > 1
+    others = {m.group(1).lower() for m in STATE_RX.finditer(text)} - {cx['state']}
+    if 'west virginia' in others and 'virginia' in others and cx['state'] != 'west virginia': pass
+    if 'virginia' in others and 'west virginia' in text and cx['state'] == 'west virginia': others.discard('virginia')
+    if multi:
+        if cx['state'] in text: return True
+        if any(f' {c} county' in f' {text} ' or f' {c} co ' in f' {text} ' for c in cx['counties']): return True
+        if any(d in text for d in cx['districts'].get(slug_, [])): return True
+        return None                                    # the caller may still keep it when the text ties to a park HERE
+    return not others or cx['state'] in text
+
+
+def tie(K, row, parks, area, sid=''):
     """-> (refs, part_from_name). Pinned refs win (the agency's own tie); else the name / heading; else the text; two parks or
     none = unmatched (Sheet A rule 4; Sheet A ex. 8 'Hickory Run')."""
     if row.get('refs'): return list(row['refs']), ''
     st = area[3:]
     part = ''
+    if row.get('home'):                                                         # a forest / refuge / Parks Canada unit page
+        ok = in_state(row, area, sid)
+        hits = match_hay(K, (row.get('head') or '') + ' ' + (row.get('sent') or row.get('text') or ''), {r: v for r, v in parks.items() if r not in row['home']})
+        if ok is None: ok = len(hits) == 1
+        if not ok: return ['OUT-OF-STATE'], ''
+        return list(row['home']) + (hits if len(hits) == 1 else []), ''        # Sheet D ex. 5: the WMA on forest land gets it too
     if row.get('name'):
         _, part = unit_split(str(row['name']))
         hits = match(K, row, parks, st)
@@ -971,34 +1086,36 @@ def process_area(K, area, state, review):
     srcs, items, banners, unreadable = {}, [], [], []
     S = sources_for(area)
     stopped = False
-    for sid, agency, url, kind, how, scope, refs in S:
+    for sid, agency, url, kind, how, scope, refs, home in S:
         if late(): stopped = True; break
-        parks = park_list(area, scope)
+        parks = park_list(area, scope if not home else 'all')
         ps = prev_src.get(sid) or {}
         old = [it for it in prev_items.values() if it['src'] == sid]
         try:
-            rows = rows_of(sid, agency, url, kind, how, refs, area, parks)
+            rows = rows_of(sid, agency, url, kind, how, refs, area, parks, home)
             ok = True; why = ''
         except Exception as e:  # noqa: BLE001
             rows, ok, why = [], False, str(e)[:160]
         if not ok:                                                                   # keep the last items: a failed read never reopens a park
-            STAT['sources_failed'] += 1
+            skipped = why.startswith('needs ') or why.startswith('D-R8')
+            if not skipped: STAT['sources_failed'] += 1
             items += old
-            srcs[sid] = {'agency': agency, 'url': url, 'kind': kind, 'ok': False, 'why': why, 'n': len(old), 'n_prev': ps.get('n', 0),
-                         'unmatched': ps.get('unmatched', []), 'last_ok': ps.get('last_ok'), 'fails': (ps.get('fails') or 0) + 1}
+            srcs[sid] = {'agency': agency, 'url': url, 'kind': kind, 'ok': False, 'skipped': skipped, 'why': why, 'n': len(old), 'n_prev': ps.get('n', 0),
+                         'unmatched': ps.get('unmatched', []), 'last_ok': ps.get('last_ok'), 'fails': 0 if skipped else (ps.get('fails') or 0) + 1}
             continue
-        n, unmatched, now_ids = 0, [], set()
+        n, unmatched, now_ids, out_state = 0, [], set(), 0
         for r in rows:
             if r.get('status_only'):
                 unreadable.append({'src': sid, 'why': r['status_only'], 'link': r.get('link')}); continue
             sents = [r['sent']] if r.get('sent') else split_sentences(((r.get('title') or '') + '. ' + (r.get('text') or '')).strip('. '))
-            refs_, part = tie(K, r, parks, area)
+            refs_, part = tie(K, r, parks, area, sid)
+            if refs_ == ['OUT-OF-STATE']: out_state += 1; continue                 # a multi-state unit's notice about another state
             if not refs_:
                 if any(CLOSE_RX.search(x) for x in sents):
                     unmatched.append(clean((r.get('head') or r.get('name') or r.get('title') or sents[0]), 80)); STAT['unmatched'] += 1
                 continue
             ctx = {'updated': r.get('date'), 'year': r.get('year'), 'names': r.get('names') or ([r['name']] if r.get('name') else []),
-                   'park': parks.get(refs_[0], ('',))[0] if len(refs_) == 1 else ''}
+                   'park': parks.get(refs_[0], ('',))[0] if len(refs_) == 1 else '', 'hunt_page': r.get('hunt_page', False)}
             got = 0
             for sent in sents:
                 STAT['sentences'] += 1
@@ -1041,7 +1158,7 @@ def process_area(K, area, state, review):
                 oit.update({'taken_down': TODAY.isoformat(), 'kind': 'Park notice', 'stale': 'notice taken down: check the agency page',
                             'expires': (TODAY + dt.timedelta(days=TAKEN_DOWN_DAYS)).isoformat(), 'label': f'ℹ️ Notice taken down: check the agency page ({oit.get("agency", "")}; was: {oit.get("details", "")[:160]})'})
             items.append(oit)
-        srcs[sid] = {'agency': agency, 'url': url, 'kind': kind, 'ok': True, 'rows': len(rows), 'n': n, 'n_prev': ps.get('n', 0),
+        srcs[sid] = {'agency': agency, 'url': url, 'kind': kind, 'ok': True, 'rows': len(rows), 'n': n, 'n_prev': ps.get('n', 0), 'out_of_state': out_state,
                      'unmatched': sorted(set(unmatched))[:25], 'last_ok': TODAY.isoformat(), 'fails': 0}
     if stopped:                                                                      # out of time: sources not reached keep their old items
         for sid in {it['src'] for it in prev_items.values()} - set(srcs):
@@ -1056,7 +1173,7 @@ def process_area(K, area, state, review):
     state['areas'][area] = {'status': 'partial' if stopped else 'done', 'read': NOW, 'items': len(items), 'sources': len(srcs),
                             'failed': sum(1 for s in srcs.values() if not s.get('ok')), 'counts': D['counts']}
     review[area] = D
-    notice(f"{area}: {len(items)} items from {sum(1 for s in srcs.values() if s.get('ok'))}/{len(srcs)} sources" + (' (out of time)' if stopped else '')
+    notice(f"{area}: {len(items)} items from {sum(1 for s in srcs.values() if s.get('ok'))}/{len(srcs)} sources ({sum(1 for s in srcs.values() if s.get('skipped'))} skipped: no secret)" + (' (out of time)' if stopped else '')
            + f"; unmatched {sum(len(s.get('unmatched') or []) for s in srcs.values())}; " + ', '.join(f'{k} {v}' for k, v in D['counts'].items() if v))
     return not stopped
 
@@ -1139,6 +1256,9 @@ def side_by_side(area, D, own, label):
         for it in mine:
             if it['ref'] != o['ref']: continue
             if len(ow & _words(it['details'] + ' ' + (it.get('title') or ''))) >= 2: hit = it; break
+            if o.get('kind') == 'Hunt closure' and it['class'] == 'hunt':
+                m = re.search(r'(\d{4}-\d\d-\d\d)$', oid)
+                if not m or not it.get('from') or abs((dt.date.fromisoformat(it['from']) - dt.date.fromisoformat(m.group(1))).days) <= 3: hit = it; break
         if hit: matched.append((oid, hit['id'])); used.add(hit['id'])
         else: only_there.append((oid, o['ref'], o['text'][:100]))
     only_here = [(it['id'], it['ref'], it['class'], it['details'][:100]) for it in mine if it['id'] not in used]
@@ -1182,8 +1302,12 @@ def write_review(state, review):
         a = state['areas'][area]
         L += [f"## {area} ({a.get('status')}, read {a.get('read', '')[:16]})",
               ' · '.join(f'{k} {v}' for k, v in (D.get('counts') or {}).items()) + f" · {len(D.get('banners') or [])} banners", '']
-        bad = [(s, v) for s, v in (D.get('sources') or {}).items() if not v.get('ok')]
+        bad = [(s, v) for s, v in (D.get('sources') or {}).items() if not v.get('ok') and not v.get('skipped')]
         if bad: L += ['Sources that failed (last items kept): ' + '; '.join(f"{s} ({v.get('why', '')[:60]})" for s, v in bad), '']
+        sk = [(s, v) for s, v in (D.get('sources') or {}).items() if v.get('skipped')]
+        if sk: L += ['Skipped quietly (a secret is missing): ' + '; '.join(f"{s} ({v.get('why', '')[:50]})" for s, v in sk), '']
+        oos = sum(v.get('out_of_state') or 0 for v in (D.get('sources') or {}).values())
+        if oos: L += [f'Dropped as another state\'s place (multi-state forest): {oos} notices', '']
         um = [(s, u) for s, v in (D.get('sources') or {}).items() for u in (v.get('unmatched') or [])]
         if um: L += ['Unmatched (two parks or none; for chat 8): ' + '; '.join(f'{u} [{s}]' for s, u in um[:30]), '']
         own = ky_own_items() if area == 'US-KY' else uc_by_area.get(area)
@@ -1227,6 +1351,16 @@ SELFTEST = [  # (sentence, context, expected class, expected note_kind or what-c
     ("The gift shop will close at 4 p.m. on Fridays.", {}, None, None, None),
     ("Open Wednesday through Sunday, daylight to dark.", {}, None, None, None),
     ("The road was closed last year but is open again.", {}, None, None, None),
+    # standing rules (HQ Oct 28): a prohibited ACTIVITY is never a closure
+    ("Alcohol is prohibited anywhere in the recreation area.", {}, None, None, None),
+    ("ATV's are prohibited.", {}, None, None, None),
+    ("Metal detecting and the collection of objects of antiquity are prohibited.", {}, None, None, None),
+    # real closures about a PLACE stay
+    ("Due to safety concerns the bridge on FS Road 126, Davenport Bay, is temporarily closed.", {}, 'part', 'bridge on fs road 126', (None, None)),
+    ("Bolar Mountain Recreation Area - Twin Ridge Road Closure.", {}, 'part', 'twin ridge road', (None, None)),
+    ("Grindstone Campground and its parking area will be closed for the remainder of the 2026 season.", {}, 'part', 'grindstone campground', (None, None)),
+    ("Hematite Lake and Honker Lake closed to fishing and boating", {}, 'note', 'rules', (None, None)),
+    ("Ballard WMA | Deer quota hunt | Nov 7-8", {'updated': dt.date(2026, 10, 20), 'hunt_page': True}, 'hunt', None, (dt.date(2026, 11, 7), dt.date(2026, 11, 8))),
 ]
 
 
@@ -1260,11 +1394,23 @@ def selftest():
         ok = refs == exp and part == exp_part
         print(('ok   ' if ok else 'FAIL ') + f"matcher {row.get('name') or row.get('names')} -> {refs} part={part!r}")
         bad += not ok
+    # the Virginia place drop (multi-state forest, area US-KY): names another state's place -> dropped; a Kentucky county or district -> kept
+    _FS_STATES_SAVE = fs_states().copy(); fs_states()['gwj'] = {'VA', 'WV', 'KY'}
+    AREA_CTX['US-KY'] = {'state': 'kentucky', 'counties': {'pike', 'letcher', 'pulaski'}, 'districts': {'gwj': ['clinch']}}
+    pk = {'US-4526': ('George Washington & Jefferson National Forest', 'National Forest', 37.09, -82.73, ''), 'US-11181': ('Sheltowee Trace National Recreation Trail', 'Trail', 37.0, -84.0, '')}
+    for row, exp in [({'home': ['US-4526'], 'head': 'Mount Rogers National Recreation Area: Forest Service Road 84 Closed', 'sent': 'Mount Rogers National Recreation Area: Forest Service Road 84 Closed Beginning 9/1/25.'}, ['OUT-OF-STATE']),
+                     ({'home': ['US-4526'], 'head': 'Clinch Ranger District road closure', 'sent': 'Forest Road 2097 on the Clinch Ranger District is closed.'}, ['US-4526']),
+                     ({'home': ['US-4526'], 'head': 'Pine Mountain', 'sent': 'The Pine Mountain trailhead in Letcher County, Kentucky is closed.'}, ['US-4526']),
+                     ({'home': ['US-4484'], 'head': 'Tornado Damaged Area Closure', 'sent': 'This closure includes a portion of the Sheltowee Trace National Recreation Trail.'}, ['US-4484', 'US-11181'])]:
+        refs, _ = tie(K, row, pk, 'US-KY', 'fs-gwj')
+        ok = refs == exp
+        print(('ok   ' if ok else 'FAIL ') + f"in-state: {row['head'][:50]} -> {refs}"); bad += not ok
+    _FS_STATES.clear(); _FS_STATES.update(_FS_STATES_SAVE); AREA_CTX.pop('US-KY', None)
     # the object of the Marben sentence
     cl = classify('Lake Margery at Marben PFA is currently closed to all access', {'names': ['Cybel WMA', 'Marben PFA']})
     ok = cl and cl['class'] == 'part' and cl['what'].lower().startswith('lake margery')
     print(('ok   ' if ok else 'FAIL ') + f"object: {cl and cl.get('what')} ({cl and cl.get('class')})"); bad += not ok
-    print(f'SELFTEST {"PASS" if not bad else "FAIL"}: {len(SELFTEST) + len(tests) + 1 - bad} of {len(SELFTEST) + len(tests) + 1}')
+    print(f'SELFTEST {"PASS" if not bad else "FAIL"}: {len(SELFTEST) + len(tests) + 5 - bad} of {len(SELFTEST) + len(tests) + 5}')
     return bad == 0
 
 

@@ -1,14 +1,127 @@
 {
- "about": "Source list for the CLOSURES SUPER-BOT (kpc_closures_bot.py, RULE SHEET D). One row per page or feed: area (US-XX / CA-XX / 'US' for every state), agency, url, kind ('feed' = machine-readable, 'page' = read as text, 'pdf' = read by range), how (a reader name in the bot, or 'generic'), scope ('state' = state parks and WMAs only, 'federal' = federal units only, 'all'). The 49 pages of KPC-Links data/closure-pages.json are read too (loaded by the bot, not copied here) with how 'generic'. Chat 8 adds rows here; the bot lists a page once. Pages that block robots are reported 'robots' and never worked around.",
+ "about": "Source list for the CLOSURES SUPER-BOT (kpc_closures_bot.py, RULE SHEET D). One row per page or feed: area (US-XX / CA-XX / 'US' for every state), agency, url, kind ('feed' = machine-readable, 'page' = read as text, 'pdf' = read by range), how (a reader name in the bot, or 'generic'), scope ('state' = state parks and WMAs only, 'federal' = federal units only, 'all'). The 49 pages of KPC-Links data/closure-pages.json are read too (loaded by the bot, not copied here) with how 'generic'. Chat 8 adds rows here; the bot lists a page once. Pages that block robots are reported 'robots' and never worked around. 'home' on a row = the unit's own park for notices that name no other POTA park (forests, refuges). 'districts' = the ranger districts of a multi-state forest inside each area.",
  "sources": [
-  {"id": "ky-parks-api", "area": "US-KY", "agency": "Kentucky State Parks", "url": "https://parks.ky.gov/api/default/alerts?$top=100", "kind": "feed", "how": "ky-parks", "scope": "state", "note": "Kentucky's own reader (kpc_park_alerts.py) reads the same list; CL-5: that reader wins until Brandon's GO"},
-  {"id": "ky-fw-alerts", "area": "US-KY", "agency": "Kentucky Fish and Wildlife", "url": "https://fw.ky.gov/Alerts/Pages/default.aspx", "kind": "page", "how": "links", "scope": "state", "note": "SharePoint list: each alert is a link to its own page; the link text is the notice"},
-  {"id": "ky-fw-quota", "area": "US-KY", "agency": "Kentucky Fish and Wildlife", "url": "https://fw.ky.gov/Hunt/Pages/Quota-Hunts.aspx", "kind": "page", "how": "generic", "scope": "state", "note": "quota-hunt calendar: HUNT items (closed to non-hunters on the dates)"},
-  {"id": "ky-fs-dbnf", "area": "US-KY", "agency": "Daniel Boone National Forest", "url": "https://www.fs.usda.gov/alerts/dbnf/alerts-notices", "kind": "page", "how": "fs-alerts", "scope": "federal"},
-  {"id": "ky-fs-lbl", "area": "US-KY", "agency": "Land Between the Lakes", "url": "https://www.fs.usda.gov/alerts/lbl/alerts-notices", "kind": "page", "how": "fs-alerts", "scope": "federal", "refs": ["US-3792"]},
-  {"id": "ky-lbl-site", "area": "US-KY", "agency": "Land Between the Lakes", "url": "https://www.landbetweenthelakes.us/alerts/", "kind": "page", "how": "generic", "scope": "federal", "refs": ["US-3792"]},
-  {"id": "ga-wrd", "area": "US-GA", "agency": "Georgia DNR Wildlife Resources", "url": "https://georgiawildlife.com/closures", "kind": "page", "how": "generic", "scope": "state", "note": "Georgia sheet GA1-GA4: 'Updated m/d/yy' = the agency date; vehicles-only = note; lease ended = 'may not be public land now'"},
-  {"id": "ga-wrd-quota", "area": "US-GA", "agency": "Georgia DNR Wildlife Resources", "url": "https://georgiawildlife.com/hunting/quota-hunts", "kind": "page", "how": "generic", "scope": "state", "note": "GA4: quota hunts read like Kentucky's"},
-  {"id": "il-dnr-closures", "area": "US-IL", "agency": "Illinois DNR", "url": "https://dnr.illinois.gov/closures/currentclosuresofdnrsitesandareas.html", "kind": "page", "how": "generic", "scope": "state", "note": "also in closure-pages.json; listed here so a PDF list linked from it is read by range (CL-7)"}
- ]
+  {
+   "id": "ky-parks-api",
+   "area": "US-KY",
+   "agency": "Kentucky State Parks",
+   "url": "https://parks.ky.gov/api/default/alerts?$top=100",
+   "kind": "feed",
+   "how": "ky-parks",
+   "scope": "state",
+   "note": "Kentucky's own reader (kpc_park_alerts.py) reads the same list; CL-5: that reader wins until Brandon's GO"
+  },
+  {
+   "id": "ky-fw-alerts",
+   "area": "US-KY",
+   "agency": "Kentucky Fish and Wildlife",
+   "url": "https://fw.ky.gov/Alerts/Pages/default.aspx",
+   "kind": "page",
+   "how": "links",
+   "scope": "state",
+   "note": "SharePoint list: each alert is a link to its own page; the link text is the notice"
+  },
+  {
+   "id": "ky-fw-quota",
+   "area": "US-KY",
+   "agency": "Kentucky Fish and Wildlife",
+   "url": "https://fw.ky.gov/Hunt/Pages/Quota-Hunts.aspx",
+   "kind": "page",
+   "how": "hunt-page",
+   "scope": "state",
+   "note": "KDFWR quota-hunt calendar (URL confirmed by chat 2 Oct 25 probe): table rows WMA | hunt | dates -> HUNT items (CL-2)"
+  },
+  {
+   "id": "ky-fw-public-land",
+   "area": "US-KY",
+   "agency": "Kentucky Fish and Wildlife",
+   "url": "https://fw.ky.gov/Hunt/Pages/Public-Land-Hunting.aspx",
+   "kind": "page",
+   "how": "hunt-page",
+   "scope": "state",
+   "note": "public-land hunting page: WMA closures to non-hunters with dates"
+  },
+  {
+   "id": "ky-fs-dbnf",
+   "area": "US-KY",
+   "agency": "Daniel Boone National Forest",
+   "url": "https://www.fs.usda.gov/alerts/dbnf/alerts-notices",
+   "kind": "page",
+   "how": "fs-alerts",
+   "scope": "federal",
+   "home": [
+    "US-4484"
+   ],
+   "note": "home = the forest's own park: a forest-wide alert belongs to US-4484; a named WMA / trail on forest land gets it too (Sheet D ex. 5)"
+  },
+  {
+   "id": "ky-lbl-site",
+   "area": "US-KY",
+   "agency": "Land Between the Lakes",
+   "url": "https://www.landbetweenthelakes.us/alerts/",
+   "kind": "page",
+   "how": "generic",
+   "scope": "federal",
+   "refs": [
+    "US-3792"
+   ],
+   "note": "the fs.usda.gov/alerts/lbl page is 404 (Oct 28); this JetEngine page lists each alert as a dated paragraph"
+  },
+  {
+   "id": "ga-wrd",
+   "area": "US-GA",
+   "agency": "Georgia DNR Wildlife Resources",
+   "url": "https://georgiawildlife.com/closures",
+   "kind": "page",
+   "how": "generic",
+   "scope": "state",
+   "note": "Georgia sheet GA1-GA4: 'Updated m/d/yy' = the agency date; vehicles-only = note; lease ended = 'may not be public land now'"
+  },
+  {
+   "id": "ga-wrd-quota",
+   "area": "US-GA",
+   "agency": "Georgia DNR Wildlife Resources",
+   "url": "https://georgiawildlife.com/hunting/quota-hunts",
+   "kind": "page",
+   "how": "hunt-page",
+   "scope": "state",
+   "note": "GA4: quota hunts read like Kentucky's"
+  },
+  {
+   "id": "il-dnr-closures",
+   "area": "US-IL",
+   "agency": "Illinois DNR",
+   "url": "https://dnr.illinois.gov/closures/currentclosuresofdnrsitesandareas.html",
+   "kind": "page",
+   "how": "generic",
+   "scope": "state",
+   "note": "also in closure-pages.json; listed here so a PDF list linked from it is read by range (CL-7)"
+  }
+ ],
+ "districts": {
+  "about": "Ranger districts of multi-state national forests that lie IN this area (HQ Oct 28 fix 3): a notice from such a forest counts here only when it names this state, one of its counties, one of these districts, or a park here.",
+  "US-KY": {
+   "gwj": [
+    "Clinch"
+   ]
+  },
+  "US-VA": {
+   "gwj": [
+    "Glenwood-Pedlar",
+    "James River",
+    "Warm Springs",
+    "North River",
+    "Lee",
+    "Eastern Divide",
+    "Mount Rogers",
+    "Clinch"
+   ]
+  },
+  "US-WV": {
+   "gwj": [
+    "Lee",
+    "North River"
+   ]
+  }
+ }
 }
