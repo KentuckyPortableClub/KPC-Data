@@ -1,0 +1,220 @@
+# Campground info bot: review (facts only; nothing here decides anything)
+
+Updated 2026-10-28. Every fact in <area>.json carries its source url, read date and quoted line (facts_src). Unknown = null, never guessed.
+ℹ️ Maps and park info are a planning aid, not a guarantee. Always check the official agency map and rules before you go.
+
+| area | campgrounds | read ok | needs RIDB key | needs browser (403) | robots no | host resting | no page on file | not official host | other | with site count | with booking link | with elevation |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| US-KY | 109 | 58 | 42 | 0 | 0 | 0 | 0 | 9 | 0 | 7 | 58 | 86 |
+
+## Needs a secret / not built yet
+
+- RIDB_API_KEY is not set in KPC-Data: every federal (Recreation.gov) row has status "needs RIDB_API_KEY secret in KPC-Data". Free key: ridb.recreation.gov, Profile. Add it under Settings -> Secrets and variables -> Actions.
+- FCC_BDC_USERNAME + FCC_BDC_TOKEN are not set: cell coverage stays blank with status "needs FCC token". Free account at broadbandmap.fcc.gov; the public data API gives per-state bulk coverage files (step 2, point lookup, is not built yet).
+
+## Kentucky answer-key check (R5: the bot vs kpc-campgrounds.json, hand-checked)
+
+- 2026-10-28: 67 hand-checked campgrounds · fields agree 44 · DIFFER 16 · bot blank 164
+
+- Barren River Lake State Resort Park Campground (ok): sites bot blank (key: 101); amps bot blank (key: [30, 50]); electric bot blank (key: True); dump_station bot blank (key: True); showers bot blank (key: True)
+- Big Bone Lick Campground (ok): sites bot blank (key: 62); amps bot blank (key: [30]); electric bot blank (key: True); dump_station bot blank (key: True); showers bot blank (key: True)
+- Blue Heron Campground (KY) (ok): sites bot blank (key: 45); electric agree (True); showers agree (True); phone DIFFER bot (423) 569-9778 vs key (423) 286-7275
+- Bear Creek Horse Camp (KY) (ok): sites DIFFER bot 23 vs key 22; electric agree (True); showers agree (True); phone DIFFER bot (423) 569-9778 vs key (423) 286-7275
+- Alum Ford Campground (KY) (ok): sites bot blank (key: 6); electric bot blank (key: False); phone agree ((423) 569-9778)
+- Bandy Creek Campground (TN) (ok): electric agree (True); showers agree (True); phone DIFFER bot (423) 569-9778 vs key (423) 286-7275
+- Station Camp Campground (TN) (ok): sites agree (24); electric agree (True); showers agree (True); phone DIFFER bot (423) 569-9778 vs key (423) 286-7275
+- Blue Licks Battlefield Campground (ok): sites bot blank (key: 55); electric bot blank (key: True); dump_station bot blank (key: True); showers bot blank (key: True); phone bot blank (key: (859) 289-3653)
+- Carr Creek Campground (ok): sites bot blank (key: 39); electric bot blank (key: True)
+- Carter Caves Campground (ok): sites bot blank (key: 128); amps bot blank (key: [20, 30, 50]); electric bot blank (key: True); dump_station bot blank (key: True); showers bot blank (key: True); phone bot blank (key: (606) 286-4411)
+- Columbus-Belmont Campground (ok): sites bot blank (key: 35); amps bot blank (key: [50]); electric bot blank (key: True); dump_station bot blank (key: True); showers bot blank (key: True)
+- Ridgeline & Clifty Campgrounds (ok): sites bot blank (key: 50); amps bot blank (key: [20, 30]); electric bot blank (key: True); phone bot blank (key: (800) 325-0063)
+- Wilderness Road Campground (ok): sites bot blank (key: 151); amps bot blank (key: [20, 30, 50]); electric agree (True); dump_station agree (True); showers agree (True); phone agree ((606) 248-2817)
+- Dale Hollow Lake Campground (ok): sites bot blank (key: 151); amps bot blank (key: [50]); electric bot blank (key: True)
+- Twin Knobs Campground (ok): sites agree (200); electric agree (True); showers agree (True); phone agree ((606) 780-7818)
+- Zilpo Campground (ok): electric agree (True); showers agree (True); phone agree ((606) 768-2722)
+- Clear Creek Campground (ok): sites bot blank (key: 20); electric DIFFER bot False vs key True; phone agree ((606) 784-6428)
+- White Sulphur Horse Camp (ok): electric DIFFER bot False vs key True; phone agree ((606) 784-6428)
+- Koomer Ridge Campground (ok): sites agree (54); electric DIFFER bot False vs key True; showers agree (True); phone agree ((606) 784-6428)
+- Holly Bay Campground (ok): sites bot blank (key: 94); electric agree (True); showers agree (True); phone DIFFER bot (859) 428-7706 vs key (606) 864-4163
+- Grove Drive-In Campground (ok): sites bot blank (key: 44); electric agree (True); phone DIFFER bot (859) 428-7706 vs key (606) 864-4163
+- Bee Rock Campground (ok): sites bot blank (key: 25); electric bot blank (key: True); phone DIFFER bot (859) 428-7706 vs key (606) 864-4163
+- Great Meadows Campground (ok): sites bot blank (key: 18); electric DIFFER bot False vs key True; phone agree ((606) 376-5323)
+- Barren Fork Horse Camp (ok): sites agree (41); electric bot blank (key: True); phone agree ((606) 376-5323)
+- Turkey Foot Campground (ok): sites bot blank (key: 15); electric agree (True); phone DIFFER bot (859) 428-7706 vs key (606) 864-4163
+- S-Tree Campground (ok): sites bot blank (key: 20); phone DIFFER bot (859) 428-7706 vs key (606) 864-4163
+- Fort Boonesborough Campground (ok): sites bot blank (key: 163); electric bot blank (key: True); phone bot blank (key: (859) 527-3454)
+- General Burnside Island Campground (ok): sites bot blank (key: 101); electric bot blank (key: True); phone bot blank (key: (606) 561-3625)
+- General Butler Campground (ok): sites bot blank (key: 104); electric bot blank (key: True)
+- Grayson Lake Campground (ok): sites bot blank (key: 69); amps bot blank (key: [50]); electric bot blank (key: True); phone bot blank (key: (606) 474-6856)
+- Green River Lake Campground (ok): sites bot blank (key: 227); electric bot blank (key: True); phone bot blank (key: (270) 465-8255)
+- Greenbo Lake Campground (ok): sites bot blank (key: 102); amps bot blank (key: [30]); electric bot blank (key: True)
+- Jenny Wiley Campground (ok): sites bot blank (key: 118); electric bot blank (key: True); dump_station bot blank (key: True); showers bot blank (key: True); phone bot blank (key: (606) 889-1790)
+- John James Audubon Campground (ok): sites bot blank (key: 83); amps bot blank (key: [20]); electric bot blank (key: True)
+- Kenlake Campground (ok): sites bot blank (key: 63); electric bot blank (key: True); phone bot blank (key: (270) 474-2211)
+- Kentucky Dam Village Campground (ok): sites bot blank (key: 69); electric bot blank (key: True)
+- Kincaid Lake Campground (ok): sites bot blank (key: 159); electric bot blank (key: True)
+- Lake Barkley Campground (ok): sites bot blank (key: 79); amps bot blank (key: [30]); electric bot blank (key: True)
+- Lake Cumberland Campground (ok): sites bot blank (key: 87); electric bot blank (key: True); phone bot blank (key: (270) 343-3111)
+- Lake Malone Campground (ok): sites bot blank (key: 25); amps bot blank (key: [30]); electric bot blank (key: True)
+- Hillman Ferry Campground (page not on an official host: www.landbetweenthelakes.us): sites bot blank (key: 368); amps bot blank (key: [30, 50]); electric bot blank (key: True); showers bot blank (key: True); phone bot blank (key: (270) 924-2181)
+- Energy Lake Campground (page not on an official host: www.landbetweenthelakes.us): sites bot blank (key: 35); amps bot blank (key: [50]); electric bot blank (key: True); phone bot blank (key: (270) 924-2270)
+- Wranglers Campground (page not on an official host: www.landbetweenthelakes.us): sites bot blank (key: 198); amps bot blank (key: [30, 50]); electric bot blank (key: True); showers bot blank (key: True); phone bot blank (key: (270) 924-2200)
+- Piney Campground (TN) (page not on an official host: www.landbetweenthelakes.us): sites bot blank (key: 384); electric bot blank (key: True); phone bot blank (key: (931) 232-5331)
+- Fenton Self-Service Campground (page not on an official host: www.landbetweenthelakes.us): amps bot blank (key: [30]); electric bot blank (key: True)
+- Self-service lakeside campgrounds (10) (page not on an official host: www.landbetweenthelakes.us): electric bot blank (key: True)
+- Mammoth Cave Campground (ok): sites bot blank (key: 111); electric bot blank (key: True); dump_station bot blank (key: True); showers agree (True); phone DIFFER bot (270) 758-2180 vs key (270) 758-2424
+- Maple Springs Group Campground (ok): sites bot blank (key: 7); electric bot blank (key: True); dump_station bot blank (key: True); phone DIFFER bot (270) 758-2166 vs key (270) 758-2180
+- Houchin Ferry Campground (ok): sites bot blank (key: 12); electric bot blank (key: True); phone agree ((270) 758-2180)
+- My Old Kentucky Home Campground (ok): sites bot blank (key: 49); amps bot blank (key: [50]); electric bot blank (key: True); phone bot blank (key: (502) 348-3502)
+- Whittleton & Middle Fork Campgrounds (ok): sites bot blank (key: 86); amps bot blank (key: [20]); electric bot blank (key: True); phone bot blank (key: (606) 663-2214)
+- Nolin Lake Campground (ok): sites bot blank (key: 65); electric bot blank (key: True); showers bot blank (key: True)
+- Otter Creek ORA Campground (ok): electric bot blank (key: True); dump_station bot blank (key: True); showers bot blank (key: True); phone agree ((270) 750-4257)
+- Paintsville Lake Campground (ok): sites bot blank (key: 42); electric bot blank (key: True)
+- Pennyrile Forest Campground (ok): sites bot blank (key: 63); electric bot blank (key: True)
+- Taylorsville Lake Campground (ok): sites bot blank (key: 75); amps bot blank (key: [20]); electric bot blank (key: True); dump_station bot blank (key: True); showers bot blank (key: True)
+- Twin Knobs Campground (ok): sites agree (200); electric agree (True); showers agree (True); phone agree ((606) 780-7818)
+- Yatesville Lake Campground (ok): sites bot blank (key: 47); electric bot blank (key: True)
+- Yellowbank WMA primitive campground (Main Area) (ok): electric bot blank (key: False); phone agree ((270) 547-6856)
+- Zilpo Campground (ok): electric agree (True); showers agree (True); phone agree ((606) 768-2722)
+- Kentucky Horse Park Campground (page not on an official host: kyhorsepark.com): sites bot blank (key: 257); amps bot blank (key: [20, 30, 50]); electric bot blank (key: True); dump_station bot blank (key: True); showers bot blank (key: True); phone bot blank (key: (859) 259-4257)
+- Levi Jackson Campground (page not on an official host: levijacksonpark.com): sites bot blank (key: 146); amps bot blank (key: [30, 50]); electric bot blank (key: True); dump_station bot blank (key: True); showers bot blank (key: True); phone bot blank (key: (606) 330-2130)
+- Breaks Interstate Park Campground (page not on an official host: www.breakspark.com): sites bot blank (key: 138); electric bot blank (key: True); phone bot blank (key: (276) 865-4413)
+- Kingdom Come primitive campsites (ok): electric bot blank (key: False)
+- Higginson-Henry WMA designated campsites (ok): electric bot blank (key: False)
+- West Kentucky WMA designated camping site (ok): electric bot blank (key: False)
+- Rolling Fork WMA designated camping area (ok): electric bot blank (key: False)
+
+## US-KY: 12 samples (the records with the most facts)
+
+- **Twin Knobs Campground** (twin-knobs-campground, KY (hand-checked list), status ok, 19 facts, 789 ft) · [www.fs.usda.gov](https://www.fs.usda.gov/r08/danielboone/recreation/twin-knobs-campground)
+  - booking.how = "online: www.recreation.gov" · “link “Make Reservations Here””
+  - booking.url = "https://www.recreation.gov/camping/campgrounds/233782" · “link “Make Reservations Here” -> https://www.recreation.gov/camping/campgrounds/233782”
+  - checkin = "2 p.m" · “your visit. Seasons of Use 2nd Friday in March - 1st Sunday in November Operational Hours Check-in: 2 p.m. Checkout: 11:00 a.m. Only registe”
+  - checkout = "11:00 a.m" · “ns of Use 2nd Friday in March - 1st Sunday in November Operational Hours Check-in: 2 p.m. Checkout: 11:00 a.m. Only registered campers are a”
+  - drinking_water = true · “available at this site. Facility and Amenity Information Restrooms Flush toilet(s) Water Potable water is available at this site. Drinking w”
+  - dump_station = true · “a picnic table and campfire ring. RV sites range from electric-only to full hookups and a dump station is available. Bathhouses with showers”
+  - fees = "$35 per night | $45 per night | $50 per night | $64 per nig · “ers are allowed at Twin Knobs after 10 p.m. Fee Site and Info Overnight Use: Single Site: $35 per night Premium Single Site: $45 per night D”
+  - hookups.electric = true · “tent and RV camping. Each site has a picnic table and campfire ring. RV sites range from electric-only to full hookups and a dump station is”
+  - hookups.sewer = true · “ing. Each site has a picnic table and campfire ring. RV sites range from electric-only to full hookups and a dump station is available. Bath”
+  - hookups.water = true · “ing. Each site has a picnic table and campfire ring. RV sites range from electric-only to full hookups and a dump station is available. Bath”
+- **Twin Knobs Campground** (us-10170-twin-knobs-campground, KY (hand-checked list), status ok, 19 facts, 789 ft) · [www.fs.usda.gov](https://www.fs.usda.gov/r08/danielboone/recreation/twin-knobs-campground)
+  - booking.how = "online: www.recreation.gov" · “link “Make Reservations Here””
+  - booking.url = "https://www.recreation.gov/camping/campgrounds/233782" · “link “Make Reservations Here” -> https://www.recreation.gov/camping/campgrounds/233782”
+  - checkin = "2 p.m" · “your visit. Seasons of Use 2nd Friday in March - 1st Sunday in November Operational Hours Check-in: 2 p.m. Checkout: 11:00 a.m. Only registe”
+  - checkout = "11:00 a.m" · “ns of Use 2nd Friday in March - 1st Sunday in November Operational Hours Check-in: 2 p.m. Checkout: 11:00 a.m. Only registered campers are a”
+  - drinking_water = true · “available at this site. Facility and Amenity Information Restrooms Flush toilet(s) Water Potable water is available at this site. Drinking w”
+  - dump_station = true · “a picnic table and campfire ring. RV sites range from electric-only to full hookups and a dump station is available. Bathhouses with showers”
+  - fees = "$35 per night | $45 per night | $50 per night | $64 per nig · “ers are allowed at Twin Knobs after 10 p.m. Fee Site and Info Overnight Use: Single Site: $35 per night Premium Single Site: $45 per night D”
+  - hookups.electric = true · “tent and RV camping. Each site has a picnic table and campfire ring. RV sites range from electric-only to full hookups and a dump station is”
+  - hookups.sewer = true · “ing. Each site has a picnic table and campfire ring. RV sites range from electric-only to full hookups and a dump station is available. Bath”
+  - hookups.water = true · “ing. Each site has a picnic table and campfire ring. RV sites range from electric-only to full hookups and a dump station is available. Bath”
+- **Bandy Creek Campground (TN)** (bandy-creek-campground-tn, KY (hand-checked list), status ok, 17 facts) · [home.nps.gov](https://home.nps.gov/biso/planyourvisit/bandycreekcampground.htm)
+  - booking.how = "online: www.recreation.gov" · “link “Start Your Reservation””
+  - booking.url = "https://www.recreation.gov/camping/campgrounds/232506" · “link “Start Your Reservation” -> https://www.recreation.gov/camping/campgrounds/232506”
+  - checkin = "12:00 pm" · “es a bookstore and vending machines at this location. Important Information Check-out and check-in time is 12:00 pm (ET) for all campsites i”
+  - checkout = "12:00 pm" · “NRRA with the exception of Bandy Creek Group Camp where check-in time is 2:00 pm (ET) and check-out time is 12:00 pm (ET). Note: Sites that ”
+  - dump_station = true · “. All campsites include picnic tables, fire rings, and access to restrooms and showers. A dump station is located near the registration kios”
+  - hookups.amps = [50] · “check-in time is 2:00 pm (ET) and check-out time is 12:00 pm (ET). Note: Sites that have 50-amp power service are shaded in gray. Campground”
+  - hookups.electric = true · “n. The campground offers a total of 181 campsites: 96 trailer sites which offer water and electric hook-ups, 49 sites for tent camping, and ”
+  - hookups.sewer = true · “estrooms and showers. A dump station is located near the registration kiosk. There are no sewer hook-ups at individual trailer sites. The gr”
+  - hookups.water = true · “f Jamestown. The campground offers a total of 181 campsites: 96 trailer sites which offer water and electric hook-ups, 49 sites for tent cam”
+  - phone = "(423) 569-9778" · “6 Park footer Contact Info Mailing Address: 4564 Leatherwood Road Oneida, TN 37841 Phone: 423 569-9778 Contact Us Tools FAQ Site Index Españ”
+- **Bear Creek Horse Camp (KY)** (bear-creek-horse-camp-ky, KY (hand-checked list), status ok, 16 facts) · [home.nps.gov](https://home.nps.gov/biso/planyourvisit/bear-creek-horse-camp.htm)
+  - booking.how = "online: www.recreation.gov" · “link “Start Your Reservation””
+  - booking.url = "https://www.recreation.gov/camping/campgrounds/251468" · “link “Start Your Reservation” -> https://www.recreation.gov/camping/campgrounds/251468”
+  - checkin = "12:00 pm" · “mpgrounds, please use proper food storage techniques. Important Information Check-out and check-in time is 12:00 pm (ET) for all campsites i”
+  - checkout = "12:00 pm" · “NRRA with the exception of Bandy Creek Group Camp where check-in time is 2:00 pm (ET) and check-out time is 12:00 pm (ET). Notice: Sites wit”
+  - dump_station = true · “ty, tables, grills, tie-outs for 4 horses, access to modern restrooms with hot showers, a dump station and access miles of horse trails. Bea”
+  - fees = "$30.00 for sites with 30-amp electric service and $35 | $35 · “ted on Bear Creek Road off Hwy. 742, west of Stearns, Kentucky. The fee rate per night is $30.00 for sites with 30-amp electric service and ”
+  - hookups.amps = [30, 50] · “off Hwy. 742, west of Stearns, Kentucky. The fee rate per night is $30.00 for sites with 30-amp electric service and $35.00 for sites with 5”
+  - hookups.electric = true · “with their respective lengths available for download (10 KB). Each site offers water and electricity, tables, grills, tie-outs for 4 horses,”
+  - hookups.water = true · “campsites with their respective lengths available for download (10 KB). Each site offers water and electricity, tables, grills, tie-outs for”
+  - map.date_how = "PDF, year 2024 in the link" · “link “Download your map here””
+- **Station Camp Campground (TN)** (station-camp-campground-tn, KY (hand-checked list), status ok, 16 facts) · [home.nps.gov](https://home.nps.gov/biso/planyourvisit/station-camp-campground.htm)
+  - booking.how = "online: www.recreation.gov" · “link “Start Your Reservation””
+  - booking.url = "https://www.recreation.gov/camping/campgrounds/10004358" · “link “Start Your Reservation” -> https://www.recreation.gov/camping/campgrounds/10004358”
+  - checkin = "12:00 pm" · “ng 1-877-444-6777 or on the Recreation.Gov web site . Important Information Check-out and check-in time is 12:00 pm (ET) for all campsites i”
+  - checkout = "12:00 pm" · “NRRA with the exception of Bandy Creek Group Camp where check-in time is 2:00 pm (ET) and check-out time is 12:00 pm (ET). . Campground Regu”
+  - dump_station = true · “ers water and electricity, tables, grills, access to modern restrooms with hot showers, a dump station and access to miles of horse trails. ”
+  - fees = "$30.00 (half price for holders of the Interagency Access" · “Oneida, Tennessee. Station Camp Horse Camp is open year-round. The fee rate per night is $30.00 (half price for holders of the Interagency A”
+  - hookups.electric = true · “ns 24 campsites for equestrian and non-equestrian campers. Each campsite offers water and electricity, tables, grills, access to modern rest”
+  - hookups.water = true · “und contains 24 campsites for equestrian and non-equestrian campers. Each campsite offers water and electricity, tables, grills, access to m”
+  - map.date_how = "PDF, year 2024 in the link" · “link “Download your map here.””
+  - map.url = "https://home.nps.gov/biso/planyourvisit/upload/Station-Camp · “link “Download your map here.” -> https://home.nps.gov/biso/planyourvisit/upload/Station-Camp-Campground-Map-and-Regs-2024.pdf”
+- **Zilpo Campground** (us-10171-zilpo-campground, KY (hand-checked list), status ok, 16 facts, 758 ft) · [www.fs.usda.gov](https://www.fs.usda.gov/r08/danielboone/recreation/zilpo-campground)
+  - booking.how = "online: www.recreation.gov" · “link “Make Reservations Here””
+  - booking.url = "https://www.recreation.gov/camping/campgrounds/232370" · “link “Make Reservations Here” -> https://www.recreation.gov/camping/campgrounds/232370”
+  - checkin = "2 p.m" · “your visit. Seasons of Use 3rd Friday in March - Last Sunday in October Operational Hours Check-in: 2 p.m. Checkout: 11 a.m. Only registered”
+  - checkout = "11 a.m" · “ns of Use 3rd Friday in March - Last Sunday in October Operational Hours Check-in: 2 p.m. Checkout: 11 a.m. Only registered campers are allo”
+  - drinking_water = true · “ccessible. Contact VISTA Recreation for more information. Restrooms Flush toilet(s) Water Potable water is available at this site. Drinking ”
+  - dump_station = true · “lable at some campsites. Bathhouses with showers are spread throughout the campground. An RV dump station is available. Reservable cabins sl”
+  - fees = "$31 per night | $45 per night | $46 per night | $105 per ni · “campers are allowed at Zilpo after 10 p.m. Fee Site and Info Overnight Use: Single Site: $31 per night Premium Single Site: $45 per night Do”
+  - hookups.electric = true · “ilpo Campground Scenic Zilpo Campground offers cabin rentals, tent camping, RV sites with electric hookups and a selection of lakefront site”
+  - map.date_how = "web page, no date in the link" · “link “Zilpo Recreation Area Map””
+  - map.url = "https://usfs-public.box.com/s/q18extxpqb7ota6w4c6vpl65317w2 · “link “Zilpo Recreation Area Map” -> https://usfs-public.box.com/s/q18extxpqb7ota6w4c6vpl65317w2iv0”
+- **Zilpo Campground** (zilpo-campground, KY (hand-checked list), status ok, 16 facts, 758 ft) · [www.fs.usda.gov](https://www.fs.usda.gov/r08/danielboone/recreation/zilpo-campground)
+  - booking.how = "online: www.recreation.gov" · “link “Make Reservations Here””
+  - booking.url = "https://www.recreation.gov/camping/campgrounds/232370" · “link “Make Reservations Here” -> https://www.recreation.gov/camping/campgrounds/232370”
+  - checkin = "2 p.m" · “your visit. Seasons of Use 3rd Friday in March - Last Sunday in October Operational Hours Check-in: 2 p.m. Checkout: 11 a.m. Only registered”
+  - checkout = "11 a.m" · “ns of Use 3rd Friday in March - Last Sunday in October Operational Hours Check-in: 2 p.m. Checkout: 11 a.m. Only registered campers are allo”
+  - drinking_water = true · “ccessible. Contact VISTA Recreation for more information. Restrooms Flush toilet(s) Water Potable water is available at this site. Drinking ”
+  - dump_station = true · “lable at some campsites. Bathhouses with showers are spread throughout the campground. An RV dump station is available. Reservable cabins sl”
+  - fees = "$31 per night | $45 per night | $46 per night | $105 per ni · “campers are allowed at Zilpo after 10 p.m. Fee Site and Info Overnight Use: Single Site: $31 per night Premium Single Site: $45 per night Do”
+  - hookups.electric = true · “ilpo Campground Scenic Zilpo Campground offers cabin rentals, tent camping, RV sites with electric hookups and a selection of lakefront site”
+  - map.date_how = "web page, no date in the link" · “link “Zilpo Recreation Area Map””
+  - map.url = "https://usfs-public.box.com/s/q18extxpqb7ota6w4c6vpl65317w2 · “link “Zilpo Recreation Area Map” -> https://usfs-public.box.com/s/q18extxpqb7ota6w4c6vpl65317w2iv0”
+- **Blue Heron Campground (KY)** (blue-heron-campground-ky, KY (hand-checked list), status ok, 15 facts) · [home.nps.gov](https://home.nps.gov/biso/planyourvisit/blueheroncampground.htm)
+  - booking.how = "online: www.recreation.gov" · “link “Start Your Reservation””
+  - booking.url = "https://www.recreation.gov/camping/campgrounds/232505" · “link “Start Your Reservation” -> https://www.recreation.gov/camping/campgrounds/232505”
+  - checkin = "12:00 pm" · “ly from April through mid-to-late December each year. Important Information Check-out and check-in time is 12:00 pm (ET) for all campsites i”
+  - checkout = "12:00 pm" · “NRRA with the exception of Bandy Creek Group Camp where check-in time is 2:00 pm (ET) and check-out time is 12:00 pm (ET). Notice: Sites wit”
+  - dump_station = true · “r and electric hook-ups, picnic tables, fire-rings, access to restrooms and showers and a dump station. A map of the Blue Heron Campground m”
+  - hookups.amps = [50] · “ere check-in time is 2:00 pm (ET) and check-out time is 12:00 pm (ET). Notice: Sites with 50-amp electric service are shaded in gray. . Camp”
+  - hookups.electric = true · “of Stearns off Highway 742. The campground offers a total of 45 sites all with water and electric hook-ups, picnic tables, fire-rings, acces”
+  - hookups.water = true · “miles west of Stearns off Highway 742. The campground offers a total of 45 sites all with water and electric hook-ups, picnic tables, fire-r”
+  - map.date_how = "PDF, year 2024 in the link" · “link “map of the Blue Heron Campground””
+  - map.url = "https://home.nps.gov/biso/planyourvisit/upload/Blue-Heron-C · “link “map of the Blue Heron Campground” -> https://home.nps.gov/biso/planyourvisit/upload/Blue-Heron-Campground-Map-and-Regs-2024.pdf”
+- **Holly Bay Campground** (holly-bay-campground, KY (hand-checked list), status ok, 14 facts, 1092 ft) · [www.fs.usda.gov](https://www.fs.usda.gov/r08/danielboone/recreation/holly-bay-campground)
+  - booking.how = "online: www.recreation.gov" · “link “Make Reservations Here””
+  - booking.url = "https://www.recreation.gov/camping/campgrounds/232259" · “link “Make Reservations Here” -> https://www.recreation.gov/camping/campgrounds/232259”
+  - drinking_water = true · “s available at the site. Facility and Amenity Information Restrooms Flush toilet(s) Water Potable water is available at this site. Drinking ”
+  - fees = "$46 per night | $92 per night | $32 per night | $63 per nig · “er 19th Operational Hours Open 24 hours/day Fee Site and Info Overnight Use: Single Site: $46 per night Double Site: $92 per night Single Si”
+  - hookups.electric = true · “it easy to wash off a day of adventure. The 75 drive-in campsites are reservable and have electricity, water, a paved vehicle pad, gravel te”
+  - hookups.water = true · “it easy to wash off a day of adventure. The 75 drive-in campsites are reservable and have electricity, water, a paved vehicle pad, gravel te”
+  - map.date_how = "web page, no date in the link" · “link “Holly Bay Campground Guide Map””
+  - map.url = "https://usfs-public.box.com/s/53p80eudq3r20y7i4kjk8n3lb7sg9 · “link “Holly Bay Campground Guide Map” -> https://usfs-public.box.com/s/53p80eudq3r20y7i4kjk8n3lb7sg9jqn”
+  - phone = "(859) 428-7706" · “rvice/US Army Corps of Engineers Resource Managers Office KY-1193 London, KY 40744 Phone: 859-428-7706; 606-864-4163 Hours: Available by pho”
+  - reservable = "mixed" · “ent pad, fire ring, picnic table and lantern pole. The 19 walk-in tent campsites are on a first-come, first-served basis and have access to ”
+- **Koomer Ridge Campground** (koomer-ridge-campground, KY (hand-checked list), status ok, 14 facts, 1255 ft) · [www.fs.usda.gov](https://www.fs.usda.gov/r08/danielboone/recreation/koomer-ridge-campground)
+  - booking.how = "online: www.recreation.gov" · “link “Make Reservations Here””
+  - booking.url = "https://www.recreation.gov/camping/campgrounds/10311270" · “link “Make Reservations Here” -> https://www.recreation.gov/camping/campgrounds/10311270”
+  - drinking_water = true · “et accessibility standards for persons with disabilities. Restrooms Flush toilet(s) Water Potable water is available at this site. Drinking ”
+  - dump_station = false · “kups. Campground facilities include an amphitheater and bath house with seasonal showers. No dump station available. The area serves as a tr”
+  - fees = "$35 per night | $45 per night | $27 per night | $10 per nig · “Open 24 hours/day Fee Site and Info Spring - Fall (March 14 - Nov 1, 2026): Single Site: $35 per night Double Site: $45 per night Walk in te”
+  - hookups.electric = false · “und provides 54 campsites suitable for tent camping, 19 of which may accommodate RVs with no hookups. Campground facilities include an amphi”
+  - map.date_how = "web page, no date in the link" · “link “View Guide/Map””
+  - map.url = "https://usfs-public.box.com/s/uv28hc08gky5zkaw4bzowmqk1jbiq · “link “View Guide/Map” -> https://usfs-public.box.com/s/uv28hc08gky5zkaw4bzowmqk1jbiqgs3”
+  - phone = "(606) 784-6428" · “on Cumberland Ranger District Office Address: 2375 KY 801 South Morehead, KY 40351 Phone: 606-784-6428 Hours: Monday through Friday 8 a.m. t”
+  - reservable = "mixed" · “Sept 2027 Reservations Make Reservations Here Reservations available. Sites are available first-come, first-served unless reserved. General ”
+- **Grove Drive-In Campground** (grove-drive-in-campground, KY (hand-checked list), status ok, 12 facts, 1198 ft) · [www.fs.usda.gov](https://www.fs.usda.gov/r08/danielboone/recreation/grove-drive-campground)
+  - booking.how = "online: www.recreation.gov" · “link “Make Reservations Here””
+  - booking.url = "https://www.recreation.gov/camping/campgrounds/232258" · “link “Make Reservations Here” -> https://www.recreation.gov/camping/campgrounds/232258”
+  - drinking_water = true · “lot for walk-in campers. Facility and Amenity Information Restrooms Flush toilet(s) Water Potable water is available at this site. Drinking ”
+  - fees = "$46 per night | $92 per night | $10" · “ber 5th Operational Hours Open 24 hours/day Fee Site and Info Overnight Use: Single Site: $46 per night Double Site: $92 per night Extra Veh”
+  - hookups.electric = true · “B is reservable, and Loop A is first come, first served. Thirty-five drive-in sites have electricity and water and five have water only. All”
+  - hookups.water = true · “B is reservable, and Loop A is first come, first served. Thirty-five drive-in sites have electricity and water and five have water only. All”
+  - map.date_how = "web page, no date in the link" · “link “Grove Drive-In Campground Map Guide””
+  - map.url = "https://usfs-public.box.com/s/wmwd44d3zi74a1whm9cf7o30v1vmg · “link “Grove Drive-In Campground Map Guide” -> https://usfs-public.box.com/s/wmwd44d3zi74a1whm9cf7o30v1vmgnys”
+  - phone = "(859) 428-7706" · “rvice/US Army Corps of Engineers Resource Managers Office KY-1193 London, KY 40744 Phone: 859-428-7706; 606-864-4163 Hours: Available by pho”
+  - reservable = "mixed" · “Grove Boat Ramp and Marina. Of the 40 drive-in sites, Loop B is reservable, and Loop A is first come, first served. Thirty-five drive-in sit”
+- **Turkey Foot Campground** (turkey-foot-campground, KY (hand-checked list), status ok, 12 facts, 868 ft) · [www.fs.usda.gov](https://www.fs.usda.gov/r08/danielboone/recreation/turkey-foot-campground)
+  - booking.how = "online: recreation.gov" · “link “Recreation.gov””
+  - booking.url = "https://recreation.gov" · “link “Recreation.gov” -> https://recreation.gov”
+  - drinking_water = false · “sibility standards for persons with disabilities. Restrooms Vault toilet(s) Water Potable water is not available at this site. Picnic Tables”
+  - dump_station = true · “h a picnic table, fire ring, tent pad and lantern pole. There is no water, electricity or dump station available in the campground. A playfi”
+  - hookups.electric = true · “re equipped with a picnic table, fire ring, tent pad and lantern pole. There is no water, electricity or dump station available in the campg”
+  - map.date_how = "web page, no date in the link" · “link “View Guide/Map””
+  - map.url = "https://usfs-public.box.com/s/9cpbos54l97s0vqkhihkaqz0ua8vl · “link “View Guide/Map” -> https://usfs-public.box.com/s/9cpbos54l97s0vqkhihkaqz0ua8vlt61”
+  - phone = "(859) 428-7706" · “rvice/US Army Corps of Engineers Resource Managers Office KY-1193 London, KY 40744 Phone: 859-428-7706; 606-864-4163 Hours: Available by pho”
+  - reservable = false · “s a low water ford across the creek at the campground entrance. Each of the 15 primitive, first come, first served sites are equipped with a”
+  - restrooms = "vault" · “ccessibility Campsites do not meet accessibility standards for persons with disabilities. Vault toilets meet accessibility standards for per”
