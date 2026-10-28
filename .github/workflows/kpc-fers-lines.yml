@@ -2,15 +2,17 @@ name: KPC 2-fer assembly lines, several at once (hidden)
 # Oct 28 2026 (HQ 4:40 AM, Brandon: 'duplicate the line'): up to THREE assembly lines side by side, each one a full line
 # (fetcher -> worker -> checker, kpc-fers-line.yml called as a reusable workflow) with its own bundle tag, its own output files and
 # its own checker result; no two lines write the same file (each saves only its own area's files); the outside servers see at most
-# 3 lines' worth of requests, each line with the usual manners. First use: Michigan + Utah side by side (the last two test states);
-# after all four test states pass, the US regions 3 at a time in the run order (southeast, midwest, northeast, south central,
-# mountain, pacific, Canada east, Canada west).
+# 3 lines' worth of requests, each line with the usual manners. THE QUEUE (HQ Oct 28 7:50 AM, after chat 8's Kentucky READY):
+# the default 'areas' list in HQ's order, 3 at a time, the next area starting when a line frees up (the matrix does that);
+# every area's data stays hidden until chat 8 grades it (the checker writes one 'grade me' line per area into
+# data/status/inbox-checkers.md + inbox-chat-8.md); a broken area is recorded and the queue moves on; two breaks in a row
+# cancel the whole run (kpc-fers-line.yml 'broke' job).
 on:
   workflow_dispatch:
     inputs:
       areas:
         description: 'Lines, one per entry "STATES|tag" separated by ";" (e.g. "US-MI|mi; US-UT|ut"); or a region name per entry (southeast; midwest; …)'
-        default: 'US-MI|mi; US-UT|ut'
+        default: 'US-MI|mi; US-UT|ut; southeast; midwest; northeast; southcentral; mountain; pacific; canadaeast; canadawest'
       minutes:
         description: 'Minutes for each of fetcher and worker per line (default 280)'
         default: '280'

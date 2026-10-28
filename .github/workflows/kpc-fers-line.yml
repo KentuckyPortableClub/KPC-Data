@@ -238,4 +238,59 @@ jobs:
           cd kpcdata
           for f in data/fers/*.json.gz; do [ -f "$f" ] && rm -f "${f%.gz}"; done
           cd ..
+          # Oct 28 (HQ queue rule 2): one 'grade me' line per finished area for chat 8 (data stays hidden until graded)
+          python3 - <<'PY' || true
+          import json, os, time
+          t = os.environ['RUN_TAG']; v = json.load(open(f'data/fers/line-{t}.json'))
+          st = os.environ['STATES'].split(); ns = []
+          for x in st:
+              try:
+                  d = json.load(open(f'data/fers/{x}.json')); sp = d.get('spots', [])
+                  ns.append(f"{x}: live {sum(1 for q in sp if str(q.get('status','')).startswith(('candidate','very tight')))}, not sure {sum(1 for q in sp if str(q.get('status','')).startswith('not sure'))}, water only {sum(1 for q in sp if str(q.get('status','')).startswith('water only'))}")
+              except Exception: ns.append(f'{x}: no file')
+          url = f"https://github.com/{os.environ['REPO']}/actions/runs/{os.environ['GITHUB_RUN_ID']}"
+          if v.get('verdict', '').startswith('READY'): line = f"- FROM BOT 2-fer line (chat 2; {time.strftime('%Y-%m-%d')}): grade me: {' '.join(st)} ({t}) — READY · known {v.get('known_answers')} · {'; '.join(ns)} · files data/fers/<state>.json + line-{t}.json + missing-{t}.json · [run]({url})"
+          else: line = f"- FROM BOT 2-fer line (chat 2; {time.strftime('%Y-%m-%d')}): STOPPED (not for grading): {' '.join(st)} ({t}) — {'; '.join(v.get('why') or [])[:300]} · {'; '.join(ns)} · [run]({url})"
+          for f in ('kpcdata/data/status/inbox-checkers.md', 'kpcdata/data/status/inbox-chat-8.md'):
+              os.makedirs(os.path.dirname(f), exist_ok=True)
+              if not os.path.exists(f): open(f, 'w').write('# 2-fer lines: verdicts for chat 8 (written by the bot)\n\n')
+              open(f, 'a').write(line + '\n')
+          print(line)
+          PY
           STRICT=1 bash .github/scripts/kpc_push_data.sh kpcdata "2-fer line ${{ inputs.tag }} (hidden data)" data || exit 1
+  broke:
+    # Oct 28 (HQ queue rule 3): a line whose fetcher / worker broke is recorded; the queue goes on to the next area, but TWO
+    # breaks in a row (different areas, within 6 h) = something that would repeat (bad bundle, a server down for everyone):
+    # the whole run is cancelled and Brandon gets the one red mail.
+    needs: [fetcher, worker]
+    if: ${{ always() && (needs.fetcher.result == 'failure' || needs.worker.result == 'failure') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          persist-credentials: false
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - name: Record the break; stop everything on the second in a row
+        run: |
+          export STAGE=fetcher; [ "${{ needs.worker.result }}" = failure ] && export STAGE=worker
+          python3 - <<'PY'
+          import json, os, time
+          f = 'kpcdata/data/status/line-breaks.json'
+          try: L = json.load(open(f))
+          except Exception: L = []
+          now = time.time()
+          L.append({'tag': os.environ['RUN_TAG'], 'states': os.environ['STATES'], 'stage': os.environ['STAGE'], 'run': os.environ['GITHUB_RUN_ID'], 'date': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime(now)), 't': now})
+          L = L[-50:]
+          os.makedirs(os.path.dirname(f), exist_ok=True); json.dump(L, open(f, 'w'), indent=1)
+          line = f"- FROM BOT 2-fer line (chat 2; {time.strftime('%Y-%m-%d')}): BROKE in the {os.environ['STAGE']} (not for grading): {os.environ['STATES']} ({os.environ['RUN_TAG']}) · [run](https://github.com/{os.environ['REPO']}/actions/runs/{os.environ['GITHUB_RUN_ID']})"
+          open('kpcdata/data/status/inbox-checkers.md', 'a').write(line + '\n')
+          prev = [x for x in L[:-1] if now - x.get('t', 0) < 6 * 3600 and x.get('tag') != os.environ['RUN_TAG']]
+          open('stop.flag', 'w').write('1' if prev else '')
+          print('::notice title=2-fer line::' + line + (' · SECOND BREAK IN A ROW: the queue is stopped' if prev else ''))
+          PY
+          bash .github/scripts/kpc_push_data.sh kpcdata "2-fer line ${{ inputs.tag }}: broke in the $STAGE" data || true
+          if [ -s stop.flag ]; then echo "::error title=2-fer lines::two lines broke in a row ($RUN_TAG after an earlier one): everything stopped"; gh run cancel "$GITHUB_RUN_ID" -R "$REPO" || true; fi
