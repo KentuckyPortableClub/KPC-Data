@@ -36,7 +36,7 @@ campground we already list (federal, state, Kentucky hand-checked) it writes ONE
   MANNERS         kpc_manners.py (robots.txt obeyed, 1 request / 2 s per host incl. RIDB, back-off, three strikes = a day's rest).
   NEVER FAILS     exit 0 always; MINUTES (55) per chunk; state.json resumes; one commit per chunk by the workflow.
 
-Env: AREAS='US-KY US-TN' (blank = next unfinished in queue order) · MINUTES · LINKS (KPC-Links checkout, default 'links') ·
+Env: AREAS='US-KY US-TN' (blank = next unfinished in queue order) · BROWSER=1 (Playwright browser pass for 'needs browser' pages) · MINUTES · LINKS (KPC-Links checkout, default 'links') ·
      OUT (data/campinfo) · REFRESH_DAYS · RIDB_API_KEY · FCC_BDC_USERNAME · FCC_BDC_TOKEN.  `--selftest` runs the regexes on
      sample page texts offline and prints what they pulled out (no network); `--negtest` = the 30-sentence negation test (C-1).
 """
@@ -51,7 +51,9 @@ REFRESH_DAYS = int(os.environ.get('REFRESH_DAYS') or 30)
 RIDB_KEY = (os.environ.get('RIDB_API_KEY') or '').strip()
 FCC_USER = (os.environ.get('FCC_BDC_USERNAME') or '').strip(); FCC_TOKEN = (os.environ.get('FCC_BDC_TOKEN') or '').strip()
 TODAY = time.strftime('%Y-%m-%d')
-VER = 6   # 6 = round 5: gate rows blocked by a missing secret / a browser are WARN, PASS = every READ row right; browser hosts listed once.
+VER = 7   # 7 = round 6: BROWSER PASS (Playwright) for 'needs browser' records, fees only from this campground's section, shelter links
+          # are not camping booking, merge waiting-on-key twins, re-read when the RIDB key arrives.
+          # 6 = round 5; 6 = round 5: gate rows blocked by a missing secret / a browser are WARN, PASS = every READ row right; browser hosts listed once.
           # 5 = round 4; 5 = round 4: facts only from THIS campground's section of a shared page, KEY_WRONG table, 'some' = agree, WARN rows.
           # 4 = round 3; 4 = round 3 (chat 11 regrade): reservation-line phones out, bare-domain booking out, fire RULES only, merge by park ref,
           # state-park campground sub-pages read, more gate rows.
@@ -267,7 +269,7 @@ def judge_mentions(text, rx, extra_pos=False):
     return ('some' if some else True), pos
 
 
-def facts_from_text(text, url):
+def facts_from_text(text, url, name=''):
     """Every campground fact the regexes can read from one page's visible text. Unknown = not present (never guessed)."""
     F = {}
     def put(k, v, m, line=None): F[k] = fact(v, url, line if line is not None else line_at(text, m.start(), m.end()))
@@ -312,9 +314,15 @@ def facts_from_text(text, url):
         rr = judge_mentions(text, RESTROOM)
         if rr: put('restrooms', 'yes (kind not stated)' if rr[0] is True else 'some' if rr[0] == 'some' else 'none', rr[1])
     fees = []; seen = set(); first = None
+    many = bool(name) and names_other_camps(text, name)
     for m in FEE.finditer(text):
         t = ' '.join(m.group(0).split())
         if t in seen: continue
+        # round 6 rule 2: on a page that lists several campgrounds a fee line counts only when it names THIS campground
+        if many:
+            # only the comma-clause that holds the fee may name this campground ('$12 Cravens Bay, $10 Fenton' -> Fenton's clause only)
+            cl = (clause_before(text, m.start(), 60).split(',')[-1] + ' ' + m.group(0) + ' ' + clause_after(text, m.end(), 60))
+            if not any(w in norm_name(cl).split() for w in key_words(name)): continue
         seen.add(t); first = first or m
         # the published text: the amount plus the words that follow it (up to the end of the phrase)
         tail = re.split(r'[.;|\n]|,\s+(?:and\s+)?\$', text[m.end():m.end() + 50])[0]
@@ -393,6 +401,7 @@ def links_facts(links, url):
         says_book = any(h.endswith(b) for b in bh) or re.search(r'reserv|book (?:now|a site|online|here)|make a reservation', tl + ' ' + ul)
         if not says_book or re.search(r'cancel|policy|faq|fund|donat|conservation|heritage', tl + ' ' + ul): continue
         if bare_domain(u): continue   # round 3 rule 2: https://recreation.gov is the site's front door, not this campground's page
+        if re.search(r'shelter|pavilion|picnic|day[- ]use|wedding|meeting|golf|pool', tl + ' ' + ul) and not re.search(r'camp', tl + ' ' + ul): continue   # round 6 rule 3: a picnic-shelter booking is not camping
         lodging = re.search(r'lodge|cottage|cabin|room|yurt|inn\b|hotel', tl + ' ' + ul) and not re.search(r'camp', tl + ' ' + ul)
         key = 'lodging_booking' if lodging else 'booking'
         if key + '.url' not in F:
@@ -631,22 +640,29 @@ def apply_facts(rec, F):
         rec['facts_src'][k] = {'url': f['url'], 'date': f['date'], 'line': f['line']}
 
 
+GENERIC_W = {'self', 'service', 'area', 'main', 'site', 'sites', 'lake', 'river', 'creek', 'point', 'bay', 'ridge', 'horse', 'group', 'loop', 'north', 'south', 'east', 'west', 'upper', 'lower', 'drive', 'primitive', 'designated', 'camping', 'campsites', 'wma'}
+
+
+def key_words(name):
+    """The distinctive words of a campground name ('Fenton Self-Service Campground' -> ['fenton']); all words when none is distinctive."""
+    ws = [w for w in norm_name(name).split() if len(w) > 2]
+    return [w for w in ws if w not in GENERIC_W] or ws
+
+
 def own_section(text, name):
     """Round 4 rule 1: when a page lists SEVERAL campgrounds (a forest 'camping' page, an LBL sister page), only the part that
     names THIS campground counts. -> the text from the first line that names the campground up to the next line that names a
     different campground (a heading-like line ending in Campground / Camp / Area), or '' when the page never names it."""
-    cn = norm_name(name)
-    if not cn: return ''
-    words = [w for w in cn.split() if len(w) > 2]
+    words = key_words(name)
     if not words: return ''
     lines = text.split('\n'); start = None
     for i, ln in enumerate(lines):
-        if all(w in norm_name(ln) for w in words): start = i; break
+        if all(w in norm_name(ln).split() for w in words): start = i; break
     if start is None: return ''
     end = len(lines)
     for j in range(start + 1, len(lines)):
         ln = lines[j]
-        if len(ln) < 70 and re.search(r'(campground|camp|horse camp|recreation area|boat-in)\s*$', ln, re.I) and not all(w in norm_name(ln) for w in words):
+        if len(ln) < 70 and re.search(r'(campground|camp|horse camp|recreation area|boat-in)\s*$', ln, re.I) and not all(w in norm_name(ln).split() for w in words):
             end = j; break
     return '\n'.join(lines[start:end])
 
@@ -678,7 +694,7 @@ def one_camp(area, r, state):
                 if names_other_camps(text, r['name']):
                     sec = own_section(text, r['name']); rec['read_section'] = 'own section' if sec else 'page names other campgrounds, never this one'
                     text = sec
-                F = facts_from_text(text, u) if text else {}; F.update(links_facts(links, u))
+                F = facts_from_text(text, u, r['name']) if text else {}; F.update(links_facts(links, u))
                 # round 3 rule 5: a PARK page (parks.ky.gov …) often keeps the campground facts on its own 'Campground' page: when
                 # the page gave no site count, follow ONE same-host link whose text or url says campground / camping and fill the blanks.
                 # Round 4: the sub-page is read only in this campground's section when it lists several (the forest 'camping' page)
@@ -690,7 +706,7 @@ def one_camp(area, r, state):
                         rec['campground_page'] = {'url': sub, 'status': st2}
                         if st2 == 'ok':
                             if names_other_camps(text2, r['name']): text2 = own_section(text2, r['name']); rec['campground_page']['read'] = 'own section' if text2 else 'names other campgrounds only'
-                            F2 = facts_from_text(text2, sub) if text2 else {}
+                            F2 = facts_from_text(text2, sub, r['name']) if text2 else {}
                             if text2: F2.update(links_facts(links2, sub))
                             for k2, v2 in F2.items():
                                 if k2 not in F: F[k2] = v2
@@ -853,7 +869,10 @@ def merge_duplicates(D):
             same_park = bool(set((A.get('park') or '').split()) & set((B.get('park') or '').split()))
             no_point = None in (A['lat'], A['lon'], B['lat'], B['lon'])
             # round 3 rule 4: a record with no point of its own still merges when the park ref matches (Mammoth Cave, Twin Knobs)
-            if d > 300 and not (no_point and same_park) and not (no_point and A.get('list') != B.get('list')): continue
+            waiting = any((X.get('status') or '').startswith(('needs', 'not read')) or not X.get('facts_src') for X in (A, B))
+            # round 6 rule 4: twins from two lists (RIDB row + hand-checked row) merge at any distance under 2 km when one of
+            # them is empty / waiting on the key; same park ref merges without a point
+            if d > 300 and not (no_point and same_park) and not (no_point and A.get('list') != B.get('list')) and not (waiting and A.get('list') != B.get('list') and d < 2000): continue
             # keep the record WITH facts; on a tie the RIDB (campfed) record keeps its point
             fa, fb = len(A.get('facts_src') or {}), len(B.get('facts_src') or {})
             if fa != fb: keep, drop = (a, b) if fa > fb else (b, a)
@@ -882,11 +901,59 @@ def counts(D):
     c = {'camps': len(D['camps']), 'ok': 0, 'needs_key': 0, 'needs_browser': 0, 'robots': 0, 'resting': 0, 'no_page': 0, 'not_official': 0, 'other': 0, 'with_sites': 0, 'with_booking': 0, 'with_elevation': 0}
     for r in D['camps'].values():
         s = r.get('status') or ''
-        c['ok' if s == 'ok' else 'needs_key' if 'RIDB' in s else 'needs_browser' if ('403' in s or 'needs browser' in s) else 'robots' if 'robots' in s else 'resting' if 'resting' in s else 'no_page' if 'no official page' in s else 'not_official' if 'not on an official' in s else 'other'] += 1
+        c['ok' if s.startswith('ok') and 'needs browser' not in s and 'even in a browser' not in s else 'needs_key' if 'RIDB' in s else 'needs_browser' if ('403' in s or 'needs browser' in s) else 'robots' if 'robots' in s else 'resting' if 'resting' in s else 'no_page' if 'no official page' in s else 'not_official' if 'not on an official' in s else 'other'] += 1
         if (r.get('sites') or {}).get('total') is not None: c['with_sites'] += 1
         if (r.get('booking') or {}).get('url'): c['with_booking'] += 1
         if (r.get('elevation_ft') or {}).get('value') is not None: c['with_elevation'] += 1
     return c
+
+
+BROWSER = os.environ.get('BROWSER') == '1'
+
+
+def browser_pass(area, D, rows, budget_s=900):
+    """Round 6 (chat 11 regrade 3): records whose status says 'needs browser' (parks.ky.gov, home.nps.gov, KDFWR pages filled by
+    script) are read once more in headless Chromium (Playwright, like the documents bot): same manners (robots.txt, 1 page / 2 s per
+    host, stop a host after 4 errors), the page's text AFTER its scripts ran, then the same fact extraction. Every fact read this
+    way carries 'browser': true in facts_src. Needs env BROWSER=1 and Playwright on the runner; otherwise a notice and nothing."""
+    if not BROWSER: return 0
+    try: from playwright.sync_api import sync_playwright
+    except Exception: notice(f'{area}: no browser on this runner (pip install playwright + chromium)'); return 0  # noqa: BLE001
+    todo = [(cid, r) for cid, r in D['camps'].items() if 'needs browser' in (r.get('status') or '') and r.get('browser_checked') != TODAY and r.get('official_page')]
+    if not todo: return 0
+    t0 = time.time(); n = 0; errs = {}; last = {}
+    with sync_playwright() as p:
+        b = p.chromium.launch(); ctx = b.new_context(user_agent=M.ua); pg = ctx.new_page()
+        for cid, rec in todo:
+            if time.time() - t0 > budget_s or late(): break
+            url = rec['official_page']; h = host_of(url)
+            if not M.robots_ok(url) or errs.get(h, 0) >= 4 or M.dead.get(h, 0) > time.time(): rec['browser_checked'] = TODAY; continue
+            w = M.gap + 1 - (time.time() - last.get(h, 0))
+            if w > 0: time.sleep(w)
+            last[h] = time.time(); M.stat['requests'] += 1
+            try:
+                pg.goto(url, timeout=40000, wait_until='networkidle'); n += 1; STAT['browser'] = STAT.get('browser', 0) + 1
+                text = pg.evaluate('() => document.body ? document.body.innerText.slice(0, 60000) : ""')
+                links = pg.eval_on_selector_all('a[href]', 'as => as.map(a => [a.href, (a.innerText || a.getAttribute("aria-label") || a.title || "").trim().slice(0, 80)])')
+            except Exception as e:  # noqa: BLE001
+                errs[h] = errs.get(h, 0) + 1; rec['browser_error'] = str(e)[:80]; rec['browser_checked'] = TODAY; time.sleep(3); continue
+            text = '\n'.join(' '.join(l.split()) for l in text.split('\n') if l.strip())
+            if names_other_camps(text, rec['name']): text = own_section(text, rec['name'])
+            F = facts_from_text(text, url, rec['name']) if text else {}
+            F.update(links_facts([(u2, t2) for u2, t2 in links], url))
+            for k, v in F.items():
+                if k in rec['facts_src']: continue
+                v['browser'] = True
+            new = {k: v for k, v in F.items() if k not in rec['facts_src']}
+            apply_facts(rec, new)
+            for k in new: rec['facts_src'][k]['browser'] = True
+            rec['browser_checked'] = TODAY
+            has_facts = any(k.startswith(('sites.', 'hookups.')) or k in ('dump_station', 'showers', 'fees') for k in rec['facts_src'])
+            rec['status'] = 'ok (browser)' if has_facts else 'ok, no campground facts even in a browser'
+            if has_facts: STAT['ok'] += 1; STAT['needs_browser'] = max(0, STAT['needs_browser'] - 1)
+        b.close()
+    notice(f'{area}: browser pass read {n} pages')
+    return n
 
 
 def run_area(area, state):
@@ -901,13 +968,20 @@ def run_area(area, state):
     for cid in sorted(rows, key=lambda i: (rows[i]['src'] != 'kpc-campgrounds.json', rows[i]['name'])):
         if late(): break
         old = D['camps'].get(cid)
-        if old and old.get('ver', 0) >= VER and old.get('checked', '') >= fresh_cut and old.get('status') not in ('needs RIDB_API_KEY secret in KPC-Data', 'host resting'):
+        if old is None:
+            host = next((r for r in D['camps'].values() if cid in (r.get('ids') or [])), None)   # merged into a twin: skip unless the twin is stale
+            if host and host.get('ver', 0) >= VER and host.get('checked', '') >= fresh_cut: fresh += 1; STAT['skipped_fresh'] += 1; continue
+        stale_status = (old or {}).get('status') in ('needs RIDB_API_KEY secret in KPC-Data', 'host resting') or ('secret' in str((old or {}).get('status')) and RIDB_KEY)
+        if old and old.get('ver', 0) >= VER and old.get('checked', '') >= fresh_cut and not stale_status:
             fresh += 1; STAT['skipped_fresh'] += 1; continue
         STAT['camps'] += 1
         try: D['camps'][cid] = one_camp(area, rows[cid], state)
         except Exception as e:  # noqa: BLE001
             STAT['errors'] += 1; rec = blank_record(rows[cid]); rec['status'] = 'bot error: ' + str(e)[:80]; D['camps'][cid] = rec
         done += 1
+    try: browser_pass(area, D, rows)
+    except Exception as e:  # noqa: BLE001
+        STAT['errors'] += 1; notice(f'{area}: browser pass stopped: {str(e)[:100]}')
     merge_duplicates(D)
     D['read'] = TODAY; D['counts'] = counts(D)
     save(f, D)

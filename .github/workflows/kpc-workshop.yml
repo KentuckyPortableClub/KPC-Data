@@ -28,6 +28,9 @@ on:
       then_queue:
         description: 'yes = when every gate PASSES, start the whole queue by itself'
         default: ''
+      browser:
+        description: 'yes = headless-browser pass for pages that hide their facts behind scripts (parks.ky.gov, home.nps.gov, KDFWR)'
+        default: 'yes'
   schedule:
     - cron: '17 9 * * 0'
 permissions:
@@ -71,7 +74,9 @@ jobs:
       - name: Tools
         if: steps.gate.outputs.skip != '1'
         continue-on-error: true
-        run: pip install -q --break-system-packages pypdf || pip install -q pypdf || true
+        run: |
+          pip install -q --break-system-packages pypdf || pip install -q pypdf || true
+          if [ "${{ inputs.browser || 'yes' }}" = yes ]; then pip install -q --break-system-packages playwright || pip install -q playwright || true; python3 -m playwright install --with-deps chromium >/dev/null 2>&1 || true; fi
       - name: Run the bots one at a time, one save per batch
         if: steps.gate.outputs.skip != '1'
         continue-on-error: true
@@ -79,7 +84,9 @@ jobs:
           AREAS: ${{ inputs.areas }}
           MINUTES: ${{ inputs.minutes || 300 }}
           TEST: ${{ inputs.test == 'yes' && '1' || '0' }}
+          BROWSER: ${{ (inputs.browser || 'yes') == 'yes' && '1' || '0' }}
           LINKS: ../links
+          NPS_API_KEY: ${{ secrets.NPS_API_KEY }}
           RIDB_API_KEY: ${{ secrets.RIDB_API_KEY }}
           FCC_BDC_USERNAME: ${{ secrets.FCC_BDC_USERNAME }}
           FCC_BDC_TOKEN: ${{ secrets.FCC_BDC_TOKEN }}
@@ -94,11 +101,11 @@ jobs:
         continue-on-error: true
         run: |
           echo "::notice title=Workshop::Kentucky gates PASSED: starting the whole queue (chain ${{ inputs.chain }})"
-          gh workflow run kpc-workshop.yml -R ${{ github.repository }} -f bots="${{ inputs.bots }}" -f areas= -f minutes=300 -f chain=${{ inputs.chain }} || true
+          gh workflow run kpc-workshop.yml -R ${{ github.repository }} -f bots="${{ inputs.bots }}" -f areas= -f minutes=300 -f chain=${{ inputs.chain }} -f browser=${{ inputs.browser || 'yes' }} || true
       - name: Areas remain, so the next job starts itself
         if: ${{ inputs.areas == '' && env.LEFT != '0' && env.LEFT != '' && inputs.chain != '0' && inputs.chain != '' }}
         continue-on-error: true
         run: |
           C=$(( ${{ inputs.chain }} - 1 ))
           echo "::notice title=Workshop::$LEFT areas left: the next job starts itself (then $C more may follow)"
-          gh workflow run kpc-workshop.yml -R ${{ github.repository }} -f bots="${{ inputs.bots }}" -f areas= -f minutes=300 -f chain=$C || true
+          gh workflow run kpc-workshop.yml -R ${{ github.repository }} -f bots="${{ inputs.bots }}" -f areas= -f minutes=300 -f chain=$C -f browser=${{ inputs.browser || 'yes' }} || true

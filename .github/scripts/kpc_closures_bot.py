@@ -64,7 +64,7 @@ PDF_FIRST = 400_000     # CL-7: PDF lists read by range, first 400 KB
 GONE_READS = 2          # A5: an item leaves only after this many good reads without it
 TAKEN_DOWN_DAYS = 7     # ... and then says 'notice taken down' for this long
 UPCOMING_DAYS = 14      # D9: a future closure shows from 14 days before its start
-VER = 1
+VER = 3   # Oct 28: v2 HQ fixes 1-5 (hunt pages, home parks, state filter, standing rules, safe URLs); v3 chat 11's regrade (named place + close verb, KDFWR wording, debug snippets)
 
 QUEUE = ['US-KY',
          'US-TN', 'US-NC', 'US-VA', 'US-WV', 'US-GA', 'US-AL', 'US-SC', 'US-FL', 'US-MS',
@@ -208,6 +208,10 @@ NEG_RX = re.compile(r"\b(not closed|no closures?|is not|are not|reopen(?:ed|s|in
                     r"is open|are open|back open|has reopened|have reopened|closed captioning|no longer closed|rouvert|réouvert|réouverture|will close (?:at|on|friday|monday|tuesday|wednesday|thursday|saturday|sunday|daily))\b", re.I)
 HOURS_RX = re.compile(r"\b(is|are)\s+open\b[^.]*\b(a\.?m\.?|p\.?m\.?)|\bopen (from|daily|year[- ]round)\b|\bgates? (close|closes|closed) at\b|\bclosed (on )?(mondays?|tuesdays?|wednesdays?|thursdays?|fridays?)\b(?![^.]*\b(for|due|until|through)\b)|\b(daylight|dawn|sunrise) to (dark|dusk|sunset)\b|\bhours\b[^.]*\b\d\s*(a\.?m|p\.?m)", re.I)
 HUNT_RX = re.compile(r"quota hunt|drawn (hunters?|permit|applicants?)|managed (deer |elk |turkey )?hunts?|controlled hunt|youth(-only)? hunt|except (drawn|permitted|quota|selected) hunters?|closed to all other (public )?use|closed to (non-hunters|the general public|all users? except)|hunters? (with|holding) [^.]{0,40}permits? only|lottery hunt", re.I)
+STANDING_RX = re.compile(r"\b(is|are|shall be|will be)\s+(?:strictly\s+|also\s+)?(prohibited|not (?:allowed|permitted)|unlawful|illegal|forbidden)\b|\bshall not\b|\bmust not\b|\bunlicensed vehicles?\b|\bgroups? (?:of more than|over|larger than) \w+\b|\bdischarg\w* (?:a |of )?firearms?\b|\bsteep banks\b|\bnot permitted\b|\bno (?:camping|fires?|campfires?|alcohol|pets|dogs|swimming|glass)\b(?![^.]*\bclos)", re.I)
+HUNT_WORDS = re.compile(r"\bclos(?:ed|ure|es|ing)\b|no public access|except (?:drawn|quota|permitted|selected) hunters?|quota hunt|permit hunt|drawn hunters?|closed to all other|closed to everyone|closed to the public|closed to (?:non-?hunters|public use|all public)", re.I)
+# the hunting season a WMA page talks about: Sep-Aug; 'Nov. 7-8' on a page read in October 2026 = Nov 2026; 'Jan. 15' = Jan 2027
+SEASON_YEAR = TODAY.year if TODAY.month >= 7 else TODAY.year - 1
 HUNT_SEASON_RX = re.compile(r"\b(deer|turkey|dove|waterfowl|duck|small game|archery|firearms?|muzzleloader|modern gun|elk|bear|squirrel|rabbit|quail)\s+(gun |archery )?season\b", re.I)
 SEASONAL_RX = re.compile(r"\b(annually|each year|every year|seasonal(ly)?|nesting|plovers?|eagle|bats?\b|hibernat|winter (gate|closure|season)|for the season|peregrine|falcon|closed (each|every) (winter|spring|summer|fall))\b", re.I)
 VEHICLE_RX = re.compile(r"closed to (all )?(motor(ized)? )?vehicles?\b|closed to (all )?motorized|vehicle traffic|vehicular (traffic|access)|closed to (cars|trucks|automobiles)|gate (is |will be )?closed to vehicles", re.I)
@@ -249,11 +253,22 @@ def classify(sent, ctx=None):
     lang = 'fr' if FR_RX.search(s) and not re.search(r'\bclosed?\b', low) else 'en'
     if re.search(r'[“”"]|\bsigns?\b (define|are erected|mark)|^prohibited activities|regulations (are|is) representative', low) and not re.search(r'\bis closed\b|\bare closed\b', low):
         return {'skip': 'a sentence about signs or rules in general, not a closure'}
-    if ctx.get('hunt_page') and re.search(r'quota|drawn|managed hunt|controlled hunt|youth(-only)? hunt', low) and not NEG_RX.search(s):
-        frm0, to0, clear0 = parse_dates(s, ctx.get('updated'), ctx.get('year'))
-        if frm0 or to0:                                                                 # CL-2: a dated drawn / quota hunt = closed to non-hunters
+    if ' | ' in s or s.count('|') >= 2 or len(s.split()) < 4 and not ctx.get('hunt_page'):
+        if not ctx.get('hunt_page'): return {'skip': 'a table fragment or a few words, not a notice (chat 11 regrade)'}
+    if STANDING_RX.search(s) and not re.search(r'\b(is|are|remains?|will be|has been)\s+(?:temporarily\s+)?clos', low) and not ctx.get('hunt_page') \
+            and not re.search(r'\b(entering|entry|enter|occupying|access(?:ing)?|going (?:into|onto)|being (?:in|on|upon)|presence)\b', low) and not RULES_RX.search(s):   # CL-3: camping / fire orders stay a note
+        return {'skip': 'a standing rule (prohibited / not permitted / shall not): never a closure or a note (chat 11 regrade)'}
+    if re.match(r'^(?:the\s+)?(?:trail|road|area|bridge|campground|ramp|gate|lake|loop|section|unit|boardwalk)s?\b', low) and ctx.get('head'):
+        s = re.sub(r'^(?:the\s+)?', ctx['head'].strip().rstrip(':') + ': ', s, count=1)                       # 'the trail is closed…' takes its heading as the subject
+        low = s.lower()
+    if ctx.get('hunt_page') and HUNT_WORDS.search(s) and not NEG_RX.search(s) and (D1.search(s) or DNUM.search(s) or D1FR.search(s)):
+        frm0, to0, clear0 = parse_dates(s, ctx.get('updated'), ctx.get('year') or SEASON_YEAR, season=True)
+        if frm0 or to0:                                                                 # CL-2 (HQ Oct 28 fix 1): a dated hunt closure on a WMA page = closed to non-hunters
+            what = ''
+            mu = re.search(r"\b([A-Z][\w'.-]+(?:\s+[A-Z][\w'.-]+){0,3}\s+(?:Unit|Tract|Area|Section|Portion))\b", s)
+            if mu and not re.search(r'wildlife management area', mu.group(1), re.I): what = mu.group(1)
             return {'from': frm0, 'to': to0, 'dates_clear': clear0, 'flags': {'emergency': False, 'longterm': False, 'annually': False}, 'lang': 'en',
-                    'class': 'hunt', 'what': 'closed to non-hunters'}
+                    'class': 'hunt', 'what': what or 'closed to non-hunters', 'hunt_item': True}
     only_prohib = has_close and not re.search(r"\b(clos(?:ed|ure|ures|ing|es)|ferm(?:é|ée|és|ées|eture)|until further notice|jusqu'à nouvel ordre|no entry|not open to the public)\b", low)
     if only_prohib and not re.search(r'\b(entering|entry|enter|occupying|access(?:ing)?|going (?:into|onto)|being (?:in|on|upon)|presence|trespass)\b', low) and not RULES_RX.search(s):
         return {'skip': 'a prohibited ACTIVITY (alcohol, ATVs, collecting, metal detecting…) is a standing rule, not a closure'}
@@ -286,13 +301,20 @@ def classify(sent, ctx=None):
     if VEHICLE_RX.search(s) and not VEHICLE_NOT.search(s):
         return {**base, 'class': 'note', 'note_kind': 'vehicles', 'what': _object(s, ctx) or 'road closed to vehicles'}   # GA2 / G4
     if not has_close:
-        if CAUTION_RX.search(s): return {**base, 'class': 'note', 'note_kind': 'caution', 'what': 'caution'}
+        if CAUTION_RX.search(s) and re.search(r'\b(suspended|out of service|closed|closure|limited|not guaranteed|lapse|shutdown|low water|high water|boil water|algae|algal|bloom)\b', low):
+            return {**base, 'class': 'note', 'note_kind': 'caution', 'what': 'caution'}
+        if CAUTION_RX.search(s): return {'skip': 'a safety tip with no place or service named (chat 11 regrade)'}
         if HUNT_SEASON_RX.search(s): return {**base, 'class': 'note', 'note_kind': 'season', 'what': 'hunting season'}
         return None
     if re.search(r'lapse in appropriations|shutdown', low) and not WHOLE_PHRASE.search(s) and not re.search(r'park (is )?closed|closed to all', low):
         return {**base, 'class': 'note', 'note_kind': 'caution', 'what': 'services limited'}              # D-R7
     what = _object(s, ctx)
     wl = what.lower()
+    if what and (len(what) < 4 or wl in ('the', 'this', 'that', 'it', 'they', 'these', 'all', 'closure', 'the closure')
+                 or (not re.search(r'[A-Z][a-z]|\d|[A-Z]{2,}', what) and not PART_RX.search(what))) \
+            and not any(lowtext(n) and lowtext(n) in lowtext(s) for n in (ctx.get('names') or []) + ([ctx['park']] if ctx.get('park') else [])) \
+            and not WHOLE_PHRASE.search(s) and not ctx.get('hunt_page'):
+        return {'skip': f'no named place in the sentence ("{what[:40]}"): dropped (chat 11 regrade)'}
     if what and FACILITY_RX.search(what) and not PART_RX.search(re.sub(r'\b(shooting|archery|rifle) range\b', '', what, flags=re.I)):
         return {**base, 'class': 'note', 'note_kind': 'facility', 'what': what}                            # G5
     if not what and FACILITY_RX.search(s) and not PART_RX.search(s) and not WHOLE_PHRASE.search(s):
@@ -367,10 +389,11 @@ def _year_for(m, d, explicit, ref, hint):
     return None
 
 
-def parse_dates(sent, ref=None, hint=None):
+def parse_dates(sent, ref=None, hint=None, season=False):
     """-> (from, to, clear). Reads 'Nov 14-21', 'Feb 15 – Jul 31', 'from April 1 through August 31', 'through Nov 15',
     'until Feb. 2027', 'closed Saturday' (no date), '10/08/26'. clear = False when a date is there but its year cannot be told."""
     s = sent.replace('\u2013', '-').replace('\u2014', '-')
+    s = re.sub(r'\b(jan|feb|mar|apr|jun|jul|aug|sept?|oct|nov|dec)\.\s*', lambda m: m.group(1) + ' ', s, flags=re.I)   # 'Nov. 7-8' -> 'Nov 7-8'
     low = s.lower()
     found = []     # (start, end, month, day, explicit_year)
     for m in DNUM.finditer(s):
@@ -397,6 +420,7 @@ def parse_dates(sent, ref=None, hint=None):
         if is_range:
             (_, _, m1, d1, y1), (_, _, mb, db, yb) = found[0], found[1]
             Y1 = _year_for(m1, d1, y1, ref, hint); Yb = yb if yb else Y1
+            if season and not y1 and hint: Y1 = hint + (1 if m1 < 7 else 0); Yb = yb if yb else hint + (1 if mb < 7 else 0)
             if Y1 and Yb:
                 frm, to = _mk(Y1, m1, d1), _mk(Yb, mb, db)
                 if frm and to and to < frm: to = _mk(Yb + 1, mb, db)
@@ -404,6 +428,7 @@ def parse_dates(sent, ref=None, hint=None):
         else:
             _, _, m1, d1, y1 = found[0]
             Y = _year_for(m1, d1, y1, ref, hint)
+            if season and not y1 and hint: Y = hint + (1 if m1 < 7 else 0)
             before = low[max(0, found[0][0] - 24):found[0][0]]
             if not Y: clear = False
             elif re.search(r'\b(until|through|thru|till|to|by|before|ending|ends?|jusqu)\b[^a-z]*$', before): to = _mk(Y, m1, d1)
@@ -505,6 +530,10 @@ SAMPLE_PAGE = """<h1>Alerts</h1><h3>Ballard WMA</h3><p>Updated 10/20/26 The hunt
 <h3>Buckhorn Lake</h3><p>Buckhorn Lake Dam Ramp Access closed until Feb. 2027</p><h3>Hickory Run</h3><p>The trail is closed.</p>
 <table><tr><th>WMA</th><th>Hunt</th><th>Dates</th></tr><tr><td>Clay WMA</td><td>Deer quota hunt</td><td>Nov 7-8, 2026</td></tr><tr><td>Beaver Creek WMA</td><td>Deer quota hunt</td><td>Nov 7-8, 2026</td></tr></table>
 <p>Metal detecting is prohibited on all WMAs.</p>"""
+SAMPLE_WMA = """<h1>Clay WMA</h1><p>The area is closed to all other hunting Nov. 7-8 for the quota deer hunt. Sauerheber Unit closed to all public access Nov. 1 - Mar. 15 except for quota hunters. ATVs are prohibited.</p>"""
+
+
+LAST_HTML = {}
 
 
 def safe_url(u):
@@ -521,6 +550,7 @@ def read(url, pdf=False):
     url = safe_url(url)
     if OFFLINE:
         if 'fw.ky.gov/Hunt' in url: return True, 'html', SAMPLE_PAGE, 'ok'      # plumbing test only: a built-in sample page
+        if 'Kdfwr_id=155' in url: LAST_HTML[url] = SAMPLE_WMA; return True, 'html', SAMPLE_WMA, 'ok'
         return False, '', '', 'offline'
     st, hd, body, final = M.get(url, rng=(0, PDF_FIRST - 1) if pdf else None)
     STAT['requests'] += 1
@@ -532,7 +562,10 @@ def read(url, pdf=False):
         if len(txt.strip()) < 60: return False, 'pdf', '', 'not readable (scanned image PDF?): check the agency'   # CL-7
         return True, 'pdf', txt, 'ok'
     STAT['pages'] += 1
-    return True, 'html', body.decode('utf-8', 'replace'), 'ok'
+    html = body.decode('utf-8', 'replace')
+    if len(LAST_HTML) > 8: LAST_HTML.clear()
+    LAST_HTML[url] = html
+    return True, 'html', html, 'ok'
 
 
 def read_json(url):
@@ -1063,7 +1096,9 @@ def build_item(sid, agency, ref, cl, sent, row, area, first_seen):
         if (TODAY - base).days > clock: stale = ('may be over: check the agency page' if clock == 30 else 'may be out of date: check the agency page')
     what = cl.get('what') or ''
     key = slug((what + ' ' + sent)[:70], 48)
-    it = {'id': f'sc-{sid}-{key}-{ref}', 'ref': ref, 'area': area, 'src': sid, 'agency': agency, 'class': cl['class'],
+    iid = f'sc-{sid}-{key}-{ref}'
+    if cl.get('hunt_item') and frm: iid = f'sc-ky-fw-wma-{ref}-{frm.isoformat()}' if sid.startswith('ky-') else f'sc-{sid}-hunt-{ref}-{frm.isoformat()}'
+    it = {'id': iid, 'ref': ref, 'area': area, 'src': sid, 'agency': agency, 'class': cl['class'],
           'what': what[:90], 'details': f'"{sent.strip()}"', 'from': frm.isoformat() if frm else None, 'to': to.isoformat() if to else None,
           'updated': upd.isoformat() if upd else None, 'stale': stale, 'link': row.get('link') or '', 'link2': '',
           'seen': (first_seen or TODAY).isoformat(), 'confirmed': 1, 'lang': cl.get('lang', 'en'),
@@ -1081,7 +1116,7 @@ def build_item(sid, agency, ref, cl, sent, row, area, first_seen):
 def process_area(K, area, state, review):
     out_f = OUT / f'{area}.json'
     prev = load(out_f, {}) or {}
-    prev_items = {it['id']: it for it in prev.get('items', [])}
+    prev_items = {it['id']: it for it in prev.get('items', []) if (prev.get('ver') or 0) >= VER}   # items made under older rules are not kept alive (A5 applies within one rule version)
     prev_src = prev.get('sources') or {}
     srcs, items, banners, unreadable = {}, [], [], []
     S = sources_for(area)
@@ -1104,6 +1139,10 @@ def process_area(K, area, state, review):
                          'unmatched': ps.get('unmatched', []), 'last_ok': ps.get('last_ok'), 'fails': 0 if skipped else (ps.get('fails') or 0) + 1}
             continue
         n, unmatched, now_ids, out_state = 0, [], set(), 0
+        page_txt = ''
+        if TEST and how == 'hunt-page':
+            try: page_txt = page_text(LAST_HTML.get(url, '')) if LAST_HTML.get(url) else ''
+            except Exception: page_txt = ''  # noqa: BLE001
         for r in rows:
             if r.get('status_only'):
                 unreadable.append({'src': sid, 'why': r['status_only'], 'link': r.get('link')}); continue
@@ -1115,14 +1154,15 @@ def process_area(K, area, state, review):
                     unmatched.append(clean((r.get('head') or r.get('name') or r.get('title') or sents[0]), 80)); STAT['unmatched'] += 1
                 continue
             ctx = {'updated': r.get('date'), 'year': r.get('year'), 'names': r.get('names') or ([r['name']] if r.get('name') else []),
-                   'park': parks.get(refs_[0], ('',))[0] if len(refs_) == 1 else '', 'hunt_page': r.get('hunt_page', False)}
+                   'park': parks.get(refs_[0], ('',))[0] if len(refs_) == 1 else '', 'hunt_page': r.get('hunt_page', False),
+                   'head': (r.get('head') or r.get('title') or '')[:120] if (r.get('head') or r.get('title') or '').lower() != (r.get('sent') or '').lower()[:120] else ''}
             got = 0
             for sent in sents:
                 STAT['sentences'] += 1
                 cl = classify(sent, ctx)
                 if cl is None: continue
                 if cl.get('skip'): unreadable.append({'src': sid, 'why': cl['skip'], 'sent': sent[:160]}); STAT['unreadable'] += 1; continue
-                if part and cl['class'] in ('whole', 'hunt') and not cl.get('what', '').lower().startswith(part.lower()[:4]): cl = {**cl, 'class': 'part', 'what': part}
+                if part and cl['class'] in ('whole', 'hunt') and not cl.get('hunt_item') and not cl.get('what', '').lower().startswith(part.lower()[:4]): cl = {**cl, 'class': 'part', 'what': part}
                 if r.get('end') and not cl.get('to'): cl['to'] = r['end']
                 if r.get('start') and not cl.get('from'): cl['from'] = r['start']
                 for ref in refs_:
@@ -1160,6 +1200,9 @@ def process_area(K, area, state, review):
             items.append(oit)
         srcs[sid] = {'agency': agency, 'url': url, 'kind': kind, 'ok': True, 'rows': len(rows), 'n': n, 'n_prev': ps.get('n', 0), 'out_of_state': out_state,
                      'unmatched': sorted(set(unmatched))[:25], 'last_ok': TODAY.isoformat(), 'fails': 0}
+        if how == 'hunt-page' and TEST and not any(it.get('class') == 'hunt' and it['id'] in now_ids for it in items):
+            m = re.search(r'closed|quota|drawn', page_txt, re.I)
+            srcs[sid]['debug'] = ('…' + page_txt[max(0, m.start() - 200):m.start() + 200].replace('\n', ' ') + '…') if m else ('page text %d chars, no closed / quota word' % len(page_txt))
     if stopped:                                                                      # out of time: sources not reached keep their old items
         for sid in {it['src'] for it in prev_items.values()} - set(srcs):
             items += [it for it in prev_items.values() if it['src'] == sid]
@@ -1306,6 +1349,8 @@ def write_review(state, review):
         if bad: L += ['Sources that failed (last items kept): ' + '; '.join(f"{s} ({v.get('why', '')[:60]})" for s, v in bad), '']
         sk = [(s, v) for s, v in (D.get('sources') or {}).items() if v.get('skipped')]
         if sk: L += ['Skipped quietly (a secret is missing): ' + '; '.join(f"{s} ({v.get('why', '')[:50]})" for s, v in sk), '']
+        dbg = [(k, v['debug']) for k, v in (D.get('sources') or {}).items() if v.get('debug')]
+        if dbg: L += ['KDFWR pages with no hunt item (the real wording, TEST=1): ' + ' ‖ '.join(f'{k}: {d[:300]}' for k, d in dbg[:12]), '']
         oos = sum(v.get('out_of_state') or 0 for v in (D.get('sources') or {}).values())
         if oos: L += [f'Dropped as another state\'s place (multi-state forest): {oos} notices', '']
         um = [(s, u) for s, v in (D.get('sources') or {}).items() for u in (v.get('unmatched') or [])]
@@ -1361,6 +1406,19 @@ SELFTEST = [  # (sentence, context, expected class, expected note_kind or what-c
     ("Grindstone Campground and its parking area will be closed for the remainder of the 2026 season.", {}, 'part', 'grindstone campground', (None, None)),
     ("Hematite Lake and Honker Lake closed to fishing and boating", {}, 'note', 'rules', (None, None)),
     ("Ballard WMA | Deer quota hunt | Nov 7-8", {'updated': dt.date(2026, 10, 20), 'hunt_page': True}, 'hunt', None, (dt.date(2026, 11, 7), dt.date(2026, 11, 8))),
+    # KDFWR property-page wording (HQ Oct 28; season year assumed, 'Nov. 15-Jan. 15' spans the year)
+    ("The area is closed to all other hunting Nov. 7-8 for the quota deer hunt.", {'hunt_page': True}, 'hunt', None, (dt.date(SEASON_YEAR, 11, 7), dt.date(SEASON_YEAR, 11, 8))),
+    ("Sauerheber Unit closed to all public access Nov. 1 - Mar. 15 except for quota hunters.", {'hunt_page': True}, 'hunt', 'sauerheber unit', (dt.date(SEASON_YEAR, 11, 1), dt.date(SEASON_YEAR + 1, 3, 15))),
+    ("The WMA is closed to everyone except drawn hunters November 21-24.", {'hunt_page': True}, 'hunt', None, (dt.date(SEASON_YEAR, 11, 21), dt.date(SEASON_YEAR, 11, 24))),
+    ("Closed to all public access Nov. 15-Jan. 15 except waterfowl hunters with a drawn permit.", {'hunt_page': True}, 'hunt', None, (dt.date(SEASON_YEAR, 11, 15), dt.date(SEASON_YEAR + 1, 1, 15))),
+    # chat 11's regrade: standing rules never notes; subjectless sentence takes the heading; fragments dropped; safety tip dropped
+    ("Any unlicensed vehicle is prohibited on all refuge property.", {}, None, None, None),
+    ("Groups of more than ten people are prohibited without a permit.", {}, None, None, None),
+    ("It is prohibited to discharge a firearm within the forest unless hunting.", {}, None, None, None),
+    ("The trail is closed between the two trailheads.", {'head': 'Dog Slaughter Falls Trail Closure'}, 'part', 'dog slaughter falls trail', (None, None)),
+    ("Camping | Not permitted. |", {}, None, None, None),
+    ("When landing on an island be aware of steep banks and rock dikes.", {}, None, None, None),
+    ("The closure will likely last until the end of December 2026", {}, None, None, None),
 ]
 
 

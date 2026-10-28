@@ -1,0 +1,60 @@
+{
+ "areas": {
+  "US-KY": {
+   "counts": {
+    "both": 2,
+    "campgrounds": 99,
+    "check_first": 4,
+    "dayuse": 18,
+    "disagree": 0,
+    "dispersed": 5,
+    "inside": 50,
+    "inside_rows": 52,
+    "line": 0,
+    "line_parks": 3,
+    "merged_pairs": 4,
+    "no_point": 20,
+    "parks": 193,
+    "parks_with_inside": 35,
+    "parks_with_nearby": 50,
+    "parks_with_outline": 189,
+    "patches": 65,
+    "placed": 79
+   },
+   "status": "done",
+   "when": "2026-10-28"
+  }
+ },
+ "last": {
+  "areas": [
+   "US-KY"
+  ],
+  "ver": 1,
+  "when": "2026-10-28"
+ },
+ "proven": "2026-10-28",
+ "test": {
+  "distance_notes": [],
+  "result": "PASS",
+  "rows": [
+   {
+    "ok": true,
+    "ref": "counts"
+   },
+   {
+    "ok": true,
+    "ref": "both"
+   },
+   {
+    "ok": true,
+    "ref": "zilpo"
+   },
+   {
+    "ok": true,
+    "ref": "inside lists"
+   }
+  ],
+  "when": "2026-10-28",
+  "why": "all of chat 8's Kentucky answers matched"
+ }
+}

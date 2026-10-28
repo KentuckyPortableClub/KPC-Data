@@ -1,0 +1,76 @@
+name: KPC camp and activate bot (which campground is in which park)
+# Oct 28 2026 (Fable, chat 10 'bot workshop'; RULE SHEET E + Brandon's rulings CA-1..CA-6, rules first DONE). Review lists only
+# (data/campsites/<area>.json + review.md): campgrounds INSIDE each POTA park, inside a RULED 2-fer patch ('camp here, activate
+# both'), within 100 ft of a line park on public land, and NEARBY (5 miles) kept apart. Nothing links to it; nothing posts;
+# it never touches a key, an outline, a card or a 2-fer row. Kentucky reads the KPC-Links layers; other states need the
+# boundary-cache copies (downloaded below; an area without them is written as a stub, never an error).
+# TEST=yes = the Kentucky gate: chat 8's desk answers (99/79/50/35/2/0/4, Twin Knobs + Great Meadows, Zilpo = check first,
+# the per-park lists) must ALL match -> GATE=PASS; every difference is printed in the run's notices and in review.md.
+# No cron yet: weekly once proven (data/campsites/state.json 'proven') AND Brandon's GO. Never fails except a failed save.
+on:
+  workflow_dispatch:
+    inputs:
+      areas:
+        description: 'Areas (e.g. "US-KY US-TN"); blank = the next unfinished areas in the workshop queue (Kentucky first, southeast next)'
+        default: 'US-KY'
+      chunks:
+        description: 'Areas per job when areas is blank'
+        default: '6'
+      chain:
+        description: 'How many MORE jobs may follow this one by themselves when areas remain (0 = none)'
+        default: '0'
+      test:
+        description: 'yes = the Kentucky gate against chat 8 known answers (KPC_CampActivate_KY_desk.md)'
+        default: 'yes'
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: kpc-campsites
+  cancel-in-progress: false
+jobs:
+  campsites:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - name: Kentucky answer key, outlines, trail lines and the desk answers (KPC-Links, read-only)
+        uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+      - name: Saved official outlines for the other states (boundary cache release)
+        continue-on-error: true
+        run: |
+          mkdir -p kpcdata/cache/us
+          if [ "${{ inputs.areas }}" != "US-KY" ]; then
+            gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'US-*.json.gz' -D kpcdata/cache/us --clobber || true
+          fi
+          ls kpcdata/cache/us | wc -l
+      - name: Run the bot area by area and save once per chunk
+        continue-on-error: true
+        env:
+          AREAS: ${{ inputs.areas }}
+          CHUNKS: ${{ inputs.chunks || 6 }}
+          TEST: ${{ inputs.test == 'yes' && '1' || '0' }}
+          LINKS: ../links
+          GEO_CACHE: cache/us
+          STATUS: '1'
+        run: |
+          cd kpcdata
+          python3 .github/scripts/kpc_campsites_bot.py | tee /tmp/campsites.log || true
+          grep -o '^LEFT=[0-9]*' /tmp/campsites.log | tail -1 >> "$GITHUB_ENV"
+          grep -o '^GATE=[A-Z]*' /tmp/campsites.log | tail -1 >> "$GITHUB_ENV"
+          bash ../links/.github/scripts/kpc_push_data.sh . "camp and activate bot: ${{ inputs.areas || 'queue' }} (gate ${GATE:-none})" data/campsites data/status || true
+      - name: Areas remain, so the next job starts itself
+        if: ${{ inputs.areas == '' && env.LEFT != '0' && env.LEFT != '' && inputs.chain != '0' && inputs.chain != '' }}
+        continue-on-error: true
+        run: |
+          C=$(( ${{ inputs.chain }} - 1 ))
+          echo "::notice title=Camp and activate::$LEFT areas left: the next job starts itself (then $C more may follow)"
+          gh workflow run kpc-campsites.yml -R ${{ github.repository }} -f areas= -f chunks=${{ inputs.chunks }} -f chain=$C -f test=no || true

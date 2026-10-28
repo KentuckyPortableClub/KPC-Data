@@ -1,0 +1,2395 @@
+{
+ "about": "Camp & activate (RULE SHEET E + CA-1..6): which campground is in which park. Planning aid, not a guarantee; every row keeps its source.",
+ "area": "US-KY",
+ "both": [
+  {
+   "agency": "FS",
+   "booking": "https://www.recreation.gov/camping/campgrounds/233782",
+   "hunt_note": "on a hunt area (Twin Knobs Campground Wildlife Management Area): apply the hunt closure dates (Sheet D) before showing (CA-5)",
+   "id": "233782",
+   "ids": [
+    "233782",
+    "twin-knobs-campground"
+   ],
+   "kind": "campground",
+   "label": "Forest Service land managed by KDFWR",
+   "lat": 38.09472,
+   "lon": -83.51694,
+   "name": "Twin Knobs Campground",
+   "notice": "⚠️ Parks' boundaries may overlap here, but we can't confirm it. Check both official boundary maps and make your own call before you count it.",
+   "park_names": [
+    "Twin Knobs Campground Wildlife Management Area",
+    "Daniel Boone National Forest"
+   ],
+   "parks": [
+    "US-10170",
+    "US-4484"
+   ],
+   "patch_acres": 688.4,
+   "patch_id": "US-10170+US-4484@area@38.092,-83.511",
+   "patch_kind": "area",
+   "patch_tier": "main",
+   "show": true,
+   "sites": 200
+  },
+  {
+   "agency": "KY (hand-checked list)",
+   "booking": "https://www.fs.usda.gov/r08/danielboone/recreation/great-meadows-campground",
+   "hunt_note": "",
+   "id": "great-meadows-campground",
+   "kind": "campground",
+   "label": "",
+   "lat": 36.628297,
+   "lon": -84.726545,
+   "name": "Great Meadows Campground",
+   "notice": "⚠️ Parks' boundaries may overlap here, but we can't confirm it. Check both official boundary maps and make your own call before you count it.",
+   "park_names": [
+    "Rock Creek National Wild and Scenic River",
+    "Daniel Boone National Forest"
+   ],
+   "parks": [
+    "US-10111",
+    "US-4484"
+   ],
+   "patch_acres": 2593.5,
+   "patch_id": "US-10111+US-4484@area@36.643,-84.711",
+   "patch_kind": "area",
+   "patch_tier": "main",
+   "show": true,
+   "sites": null
+  }
+ ],
+ "check_first": [
+  {
+   "id": "232370",
+   "name": "Zilpo - Daniel Boone Nat. For.",
+   "why": [
+    "rounded point (3 decimals, RIDB): any near-edge answer on it is unreliable",
+    "two records for one campground: Zilpo - Daniel Boone Nat. For. (campfed) and Zilpo Campground (kpc-campgrounds.json) are 1452 m apart and give different answers (2-fer: [] vs ['US-10171+US-4484@area@38.071,-83.481']; inside: ['US-4484'] vs ['US-10171', 'US-4484']): needs one agency-map point"
+   ]
+  },
+  {
+   "id": "232609",
+   "name": "Hurricane Creek",
+   "why": [
+    "rounded point (3 decimals, RIDB): any near-edge answer on it is unreliable"
+   ]
+  },
+  {
+   "id": "233782",
+   "name": "Twin Knobs Campground",
+   "why": [
+    "on a hunt area (Twin Knobs Campground Wildlife Management Area): apply the hunt closure dates (Sheet D) before showing (CA-5)"
+   ]
+  },
+  {
+   "id": "my-old-kentucky-home-campground",
+   "name": "My Old Kentucky Home Campground",
+   "why": [
+    "point 1 m inside the edge of My Old Kentucky Home State Park -> 'at the edge: check the official map'"
+   ]
+  }
+ ],
+ "counts": {
+  "both": 2,
+  "campgrounds": 99,
+  "check_first": 4,
+  "dayuse": 18,
+  "disagree": 0,
+  "dispersed": 5,
+  "inside": 50,
+  "inside_rows": 52,
+  "line": 0,
+  "line_parks": 3,
+  "merged_pairs": 4,
+  "no_point": 20,
+  "parks": 193,
+  "parks_with_inside": 35,
+  "parks_with_nearby": 50,
+  "parks_with_outline": 189,
+  "patches": 65,
+  "placed": 79
+ },
+ "dayuse": [
+  {
+   "agency": "USACE",
+   "booking": "https://www.recreation.gov/camping/campgrounds/10304481",
+   "id": "10304481",
+   "kind": "day-use shelter / picnic area",
+   "name": "Barren River Lake Tailwater Picnic Shelter",
+   "park": null
+  },
+  {
+   "agency": "USACE",
+   "booking": "https://www.recreation.gov/camping/campgrounds/10228743",
+   "id": "10228743",
+   "kind": "day-use shelter / picnic area",
+   "name": "Big Oak Picnic Shelter",
+   "park": null
+  },
+  {
+   "agency": "USACE",
+   "booking": "https://www.recreation.gov/camping/campgrounds/10250704",
+   "id": "10250704",
+   "kind": "day-use shelter / picnic area",
+   "name": "Buckhorn Day Use",
+   "park": null
+  },
+  {
+   "agency": "USACE",
+   "booking": "https://www.recreation.gov/camping/campgrounds/233353",
+   "id": "233353",
+   "kind": "day-use shelter / picnic area",
+   "name": "Carr Creek Lake Shelters",
+   "park": null
+  },
+  {
+   "agency": "USACE",
+   "booking": "https://www.recreation.gov/camping/campgrounds/234222",
+   "id": "234222",
+   "kind": "day-use shelter / picnic area",
+   "name": "Dewey Lake Shelter",
+   "park": null
+  },
+  {
+   "agency": "USACE",
+   "booking": "https://www.recreation.gov/camping/campgrounds/10228628",
+   "id": "10228628",
+   "kind": "day-use shelter / picnic area",
+   "name": "Dog Creek Day Use (KY)",
+   "park": null
+  },
+  {
+   "agency": "USACE",
+   "booking": "https://www.recreation.gov/camping/campgrounds/234233",
+   "id": "234233",
+   "kind": "day-use shelter / picnic area",
+   "name": "Fishtrap Lake Shelters",
+   "park": null
+  },
+  {
+   "agency": "USACE",
+   "booking": "https://www.recreation.gov/camping/campgrounds/234226",
+   "id": "234226",
+   "kind": "day-use shelter / picnic area",
+   "name": "Grayson Lake Damsite Shelters",
+   "park": null
+  },
+  {
+   "agency": "USACE",
+   "booking": "https://www.recreation.gov/camping/campgrounds/249992",
+   "id": "249992",
+   "kind": "day-use shelter / picnic area",
+   "name": "Laurel River Lake Picnic Area",
+   "park": null
+  },
+  {
+   "agency": "NPS",
+   "booking": "https://www.recreation.gov/camping/campgrounds/232442",
+   "id": "232442",
+   "kind": "day-use shelter / picnic area",
+   "name": "Mammoth Picnic Shelters",
+   "park": "US-0050"
+  },
+  {
+   "agency": "USACE",
+   "booking": "https://www.recreation.gov/camping/campgrounds/234748",
+   "id": "234748",
+   "kind": "day-use shelter / picnic area",
+   "name": "Mill Springs Mill Shelter",
+   "park": null
+  },
+  {
+   "agency": "USACE",
+   "booking": "https://www.recreation.gov/camping/campgrounds/10228626",
+   "id": "10228626",
+   "kind": "day-use shelter / picnic area",
+   "name": "Moutardier Day Use",
+   "park": null
+  },
+  {
+   "agency": "USACE",
+   "booking": "https://www.recreation.gov/camping/campgrounds/10304483",
+   "id": "10304483",
+   "kind": "day-use shelter / picnic area",
+   "name": "Quarry Road Picnic Shelter",
+   "park": null
+  },
+  {
+   "agency": "USACE",
+   "booking": "https://www.recreation.gov/camping/campgrounds/10228741",
+   "id": "10228741",
+   "kind": "day-use shelter / picnic area",
+   "name": "Satterly Picnic Shelter",
+   "park": null
+  },
+  {
+   "agency": "USACE",
+   "booking": "https://www.recreation.gov/camping/campgrounds/10228630",
+   "id": "10228630",
+   "kind": "day-use shelter / picnic area",
+   "name": "Tailwater Day Use (Nolin River Lake)",
+   "park": null
+  },
+  {
+   "agency": "USACE",
+   "booking": "https://www.recreation.gov/camping/campgrounds/10228745",
+   "id": "10228745",
+   "kind": "day-use shelter / picnic area",
+   "name": "Tailwater Picnic Shelter",
+   "park": null
+  },
+  {
+   "agency": "USACE",
+   "booking": "https://www.recreation.gov/camping/campgrounds/10304479",
+   "id": "10304479",
+   "kind": "day-use shelter / picnic area",
+   "name": "The Narrows Picnic Shelter",
+   "park": null
+  },
+  {
+   "agency": "USACE",
+   "booking": "https://www.recreation.gov/camping/campgrounds/10228747",
+   "id": "10228747",
+   "kind": "day-use shelter / picnic area",
+   "name": "Visitor Center Picnic Shelter",
+   "park": null
+  }
+ ],
+ "disagree": [],
+ "dispersed": {
+  "US-10161": "Rolling Fork WMA designated camping area: camping allowed under the agency's rules (no single point); see the agency page",
+  "US-1262": "Kingdom Come primitive campsites: camping allowed under the agency's rules (no single point); see the agency page",
+  "US-3815": "Higginson-Henry WMA designated campsites: camping allowed under the agency's rules (no single point); see the agency page",
+  "US-3837": "West Kentucky WMA designated camping site: camping allowed under the agency's rules (no single point); see the agency page",
+  "US-3840": "Yellowbank WMA primitive campground (Main Area): camping allowed under the agency's rules (no single point); see the agency page"
+ },
+ "inside": {
+  "US-0050": [
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://www.recreation.gov/camping/gateways/2818",
+    "id": "mammoth-cave-campground",
+    "kind": "campground",
+    "lat": 37.19028,
+    "lon": -86.09139,
+    "m_inside": 5802,
+    "name": "Mammoth Cave Campground",
+    "notes": [],
+    "outline": "NPS units",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "NPS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/232468",
+    "id": "232468",
+    "kind": "campground",
+    "lat": 37.20722,
+    "lon": -86.13167,
+    "m_inside": 5102,
+    "name": "Maple Springs",
+    "notes": [],
+    "outline": "NPS units",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-0686": [
+   {
+    "agency": "NPS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/251468",
+    "id": "251468",
+    "kind": "campground",
+    "lat": 36.64108,
+    "lon": -84.52364,
+    "m_inside": 1166,
+    "name": "Bear Creek Campground - KY",
+    "notes": [],
+    "outline": "NPS units",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://home.nps.gov/biso/planyourvisit/alumfordcampground.htm",
+    "id": "alum-ford-campground-ky",
+    "kind": "campground",
+    "lat": 36.76517,
+    "lon": -84.54722,
+    "m_inside": 820,
+    "name": "Alum Ford Campground (KY)",
+    "notes": [],
+    "outline": "NPS units",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://www.recreation.gov/camping/campgrounds/232505",
+    "id": "blue-heron-campground-ky",
+    "kind": "campground",
+    "lat": 36.67806,
+    "lon": -84.51889,
+    "m_inside": 274,
+    "name": "Blue Heron Campground (KY)",
+    "notes": [],
+    "outline": "NPS units",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-10111": [
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://www.fs.usda.gov/r08/danielboone/recreation/great-meadows-campground",
+    "id": "great-meadows-campground",
+    "kind": "campground",
+    "lat": 36.628297,
+    "lon": -84.726545,
+    "m_inside": 446,
+    "name": "Great Meadows Campground",
+    "notes": [],
+    "outline": "KY wild river corridors",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-10170": [
+   {
+    "agency": "FS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/233782",
+    "id": "233782",
+    "ids": [
+     "233782",
+     "twin-knobs-campground"
+    ],
+    "kind": "campground",
+    "lat": 38.09472,
+    "lon": -83.51694,
+    "m_inside": 336,
+    "name": "Twin Knobs Campground",
+    "notes": [],
+    "outline": "KDFWR public hunting areas",
+    "sites": 200,
+    "tier": "inside"
+   }
+  ],
+  "US-10173": [
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://www.reserveamerica.com/explore/kentucky-horse-park/KY/90800/overview",
+    "id": "kentucky-horse-park-campground",
+    "kind": "campground",
+    "lat": 38.15028,
+    "lon": -84.52111,
+    "m_inside": 583,
+    "name": "Kentucky Horse Park Campground",
+    "notes": [],
+    "outline": "USGS PAD-US",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-1251": [
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://kentuckystateparks.reserveamerica.com/camping/carr-creek-state-park/r/campgroundDetails.do?contractCode=KY&parkId=91833",
+    "id": "carr-creek-campground",
+    "kind": "campground",
+    "lat": 37.2324583,
+    "lon": -83.0019444,
+    "m_inside": 106,
+    "name": "Carr Creek Campground",
+    "notes": [],
+    "outline": "Kentucky State Parks (DGI)",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-1252": [
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://kentuckystateparks.reserveamerica.com/camping/columbus-belmont-state-park/r/campgroundDetails.do?contractCode=KY&parkId=91805",
+    "id": "columbus-belmont-campground",
+    "kind": "campground",
+    "lat": 36.7620222,
+    "lon": -89.1073111,
+    "m_inside": 23,
+    "name": "Columbus-Belmont Campground",
+    "notes": [],
+    "outline": "Kentucky State Parks (DGI)",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-1256": [
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://kentuckystateparks.reserveamerica.com/camping/fort-boonesborough-state-park/r/campgroundDetails.do?contractCode=KY&parkId=91810",
+    "id": "fort-boonesborough-campground",
+    "kind": "campground",
+    "lat": 37.89813,
+    "lon": -84.26807,
+    "m_inside": 49,
+    "name": "Fort Boonesborough Campground",
+    "notes": [],
+    "outline": "Kentucky State Parks (DGI)",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-1257": [
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://kentuckystateparks.reserveamerica.com/camping/general-burnside-state-park/r/campgroundDetails.do?contractCode=KY&parkId=91811",
+    "id": "general-burnside-island-campground",
+    "kind": "campground",
+    "lat": 36.9805,
+    "lon": -84.6014,
+    "m_inside": 136,
+    "name": "General Burnside Island Campground",
+    "notes": [],
+    "outline": "Kentucky State Parks (DGI)",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-1258": [
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://kentuckystateparks.reserveamerica.com/camping/grayson-lake-state-park/r/campgroundDetails.do?contractCode=KY&parkId=91812",
+    "id": "grayson-lake-campground",
+    "kind": "campground",
+    "lat": 38.20056,
+    "lon": -83.02806,
+    "m_inside": 269,
+    "name": "Grayson Lake Campground",
+    "notes": [],
+    "outline": "Kentucky State Parks (DGI)",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-1259": [
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://kentuckystateparks.reserveamerica.com/camping/green-river-lake-state-park/r/campgroundDetails.do?contractCode=KY&parkId=91813",
+    "id": "green-river-lake-campground",
+    "kind": "campground",
+    "lat": 37.2733472,
+    "lon": -85.3167306,
+    "m_inside": 179,
+    "name": "Green River Lake Campground",
+    "notes": [],
+    "outline": "Kentucky State Parks (DGI)",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-1260": [
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://kentuckystateparks.reserveamerica.com/camping/john-james-audubon-state-park/r/campgroundDetails.do?contractCode=KY&parkId=91801",
+    "id": "john-james-audubon-campground",
+    "kind": "campground",
+    "lat": 37.8809556,
+    "lon": -87.5635278,
+    "m_inside": 68,
+    "name": "John James Audubon Campground",
+    "notes": [],
+    "outline": "Kentucky State Parks (DGI)",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-1261": [
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://kentuckystateparks.reserveamerica.com/camping/kincaid-lake-state-park/r/campgroundDetails.do?contractCode=KY&parkId=91815",
+    "id": "kincaid-lake-campground",
+    "kind": "campground",
+    "lat": 38.7236111,
+    "lon": -84.2813889,
+    "m_inside": 104,
+    "name": "Kincaid Lake Campground",
+    "notes": [],
+    "outline": "Kentucky State Parks (DGI)",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-1263": [
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://kentuckystateparks.reserveamerica.com/camping/lake-malone-state-park/r/campgroundDetails.do?contractCode=KY&parkId=91817",
+    "id": "lake-malone-campground",
+    "kind": "campground",
+    "lat": 37.07474,
+    "lon": -87.04053,
+    "m_inside": 190,
+    "name": "Lake Malone Campground",
+    "notes": [],
+    "outline": "Kentucky State Parks (DGI)",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-1267": [
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://kentuckystateparks.reserveamerica.com/camping/my-old-kentucky-home-state-park/r/campgroundDetails.do?contractCode=KY&parkId=91820",
+    "id": "my-old-kentucky-home-campground",
+    "kind": "campground",
+    "lat": 37.79814,
+    "lon": -85.4569,
+    "m_inside": 1,
+    "name": "My Old Kentucky Home Campground",
+    "notes": [
+     "at the edge: check the official map"
+    ],
+    "outline": "Kentucky State Parks (DGI)",
+    "sites": null,
+    "tier": "at the edge"
+   }
+  ],
+  "US-1268": [
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://kentuckystateparks.reserveamerica.com/camping/nolin-lake-state-park/r/campgroundDetails.do?contractCode=KY&parkId=91832",
+    "id": "nolin-lake-campground",
+    "kind": "campground",
+    "lat": 37.2961278,
+    "lon": -86.21285,
+    "m_inside": 31,
+    "name": "Nolin Lake Campground",
+    "notes": [],
+    "outline": "Kentucky State Parks (DGI)",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-1270": [
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://kentuckystateparks.reserveamerica.com/camping/paintsville-lake-state-park/r/campgroundDetails.do?contractCode=KY&parkId=91823",
+    "id": "paintsville-lake-campground",
+    "kind": "campground",
+    "lat": 37.8427333,
+    "lon": -82.8787444,
+    "m_inside": 97,
+    "name": "Paintsville Lake Campground",
+    "notes": [],
+    "outline": "Kentucky State Parks (DGI)",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-1271": [
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://kentuckystateparks.reserveamerica.com/camping/taylorsville-lake-state-park/r/campgroundDetails.do?contractCode=KY&parkId=91825",
+    "id": "taylorsville-lake-campground",
+    "kind": "campground",
+    "lat": 38.0292,
+    "lon": -85.2557639,
+    "m_inside": 589,
+    "name": "Taylorsville Lake Campground",
+    "notes": [],
+    "outline": "Kentucky State Parks (DGI)",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-1272": [
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://kentuckystateparks.reserveamerica.com/camping/yatesville-lake-state-park/r/campgroundDetails.do?contractCode=KY&parkId=91831",
+    "id": "yatesville-lake-campground",
+    "kind": "campground",
+    "lat": 38.0965861,
+    "lon": -82.6824528,
+    "m_inside": 44,
+    "name": "Yatesville Lake Campground",
+    "notes": [],
+    "outline": "Kentucky State Parks (DGI)",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-1273": [
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://kentuckystateparks.reserveamerica.com/camping/barren-river-lake-state-resort-park/r/campgroundDetails.do?contractCode=KY&parkId=91901",
+    "id": "barren-river-lake-state-resort-park-campground",
+    "kind": "campground",
+    "lat": 36.8546778,
+    "lon": -86.0562667,
+    "m_inside": 266,
+    "name": "Barren River Lake State Resort Park Campground",
+    "notes": [],
+    "outline": "Kentucky State Parks (DGI)",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-1274": [
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://kentuckystateparks.reserveamerica.com/camping/blue-licks-battlefield-state-resort-park/r/campgroundDetails.do?contractCode=KY&parkId=91917",
+    "id": "blue-licks-battlefield-campground",
+    "kind": "campground",
+    "lat": 38.4294139,
+    "lon": -83.9929028,
+    "m_inside": 64,
+    "name": "Blue Licks Battlefield Campground",
+    "notes": [],
+    "outline": "Kentucky State Parks (DGI)",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-1276": [
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://kentuckystateparks.reserveamerica.com/camping/carter-caves-state-resort-park/r/campgroundDetails.do?contractCode=KY&parkId=91903",
+    "id": "carter-caves-campground",
+    "kind": "campground",
+    "lat": 38.3750472,
+    "lon": -83.1307472,
+    "m_inside": 513,
+    "name": "Carter Caves Campground",
+    "notes": [],
+    "outline": "Kentucky State Parks (DGI)",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-1277": [
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://kentuckystateparks.reserveamerica.com/camping/cumberland-falls-state-resort-park/r/campgroundDetails.do?contractCode=KY&parkId=91904",
+    "id": "ridgeline-clifty-campgrounds",
+    "kind": "campground",
+    "lat": 36.8411278,
+    "lon": -84.3353861,
+    "m_inside": 280,
+    "name": "Ridgeline & Clifty Campgrounds",
+    "notes": [],
+    "outline": "Kentucky State Parks (DGI)",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-1278": [
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://kentuckystateparks.reserveamerica.com/camping/dale-hollow-lake-state-resort-park/r/campgroundDetails.do?contractCode=KY&parkId=91916",
+    "id": "dale-hollow-lake-campground",
+    "kind": "campground",
+    "lat": 36.6533444,
+    "lon": -85.2913389,
+    "m_inside": 1107,
+    "name": "Dale Hollow Lake Campground",
+    "notes": [],
+    "outline": "KDFWR public hunting areas",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-1279": [
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://kentuckystateparks.reserveamerica.com/camping/general-butler-state-resort-park/r/campgroundDetails.do?contractCode=KY&parkId=91905",
+    "id": "general-butler-campground",
+    "kind": "campground",
+    "lat": 38.6644444,
+    "lon": -85.1505556,
+    "m_inside": 170,
+    "name": "General Butler Campground",
+    "notes": [],
+    "outline": "Kentucky State Parks (DGI)",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-1280": [
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://kentuckystateparks.reserveamerica.com/camping/greenbo-lake-state-resort-park/r/campgroundDetails.do?contractCode=KY&parkId=91906",
+    "id": "greenbo-lake-campground",
+    "kind": "campground",
+    "lat": 38.4841472,
+    "lon": -82.8901944,
+    "m_inside": 171,
+    "name": "Greenbo Lake Campground",
+    "notes": [],
+    "outline": "KDFWR public hunting areas",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-1281": [
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://kentuckystateparks.reserveamerica.com/camping/jenny-wiley-state-resort-park/r/campgroundDetails.do?contractCode=KY&parkId=91907",
+    "id": "jenny-wiley-campground",
+    "kind": "campground",
+    "lat": 37.71568,
+    "lon": -82.74066,
+    "m_inside": 25,
+    "name": "Jenny Wiley Campground",
+    "notes": [],
+    "outline": "Kentucky State Parks (DGI)",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-1282": [
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://kentuckystateparks.reserveamerica.com/camping/kenlake-state-resort-park/r/campgroundDetails.do?contractCode=KY&parkId=91908",
+    "id": "kenlake-campground",
+    "kind": "campground",
+    "lat": 36.77191,
+    "lon": -88.13806,
+    "m_inside": 225,
+    "name": "Kenlake Campground",
+    "notes": [],
+    "outline": "KDFWR public hunting areas",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-1283": [
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://kentuckystateparks.reserveamerica.com/camping/kentucky-dam-village-state-resort-park/r/campgroundDetails.do?contractCode=KY&parkId=91909",
+    "id": "kentucky-dam-village-campground",
+    "kind": "campground",
+    "lat": 37.0124806,
+    "lon": -88.2817167,
+    "m_inside": 212,
+    "name": "Kentucky Dam Village Campground",
+    "notes": [],
+    "outline": "Kentucky State Parks (DGI)",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-1284": [
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://kentuckystateparks.reserveamerica.com/camping/lake-barkley-state-resort-park/r/campgroundDetails.do?contractCode=KY&parkId=91910",
+    "id": "lake-barkley-campground",
+    "kind": "campground",
+    "lat": 36.8549611,
+    "lon": -87.9147611,
+    "m_inside": 78,
+    "name": "Lake Barkley Campground",
+    "notes": [],
+    "outline": "Kentucky State Parks (DGI)",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-1285": [
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://kentuckystateparks.reserveamerica.com/camping/lake-cumberland-state-resort-park/r/campgroundDetails.do?contractCode=KY&parkId=91911",
+    "id": "lake-cumberland-campground",
+    "kind": "campground",
+    "lat": 36.92215,
+    "lon": -85.0422611,
+    "m_inside": 517,
+    "name": "Lake Cumberland Campground",
+    "notes": [],
+    "outline": "Kentucky State Parks (DGI)",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-1286": [
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://kentuckystateparks.reserveamerica.com/camping/natural-bridge-state-resort-park/r/campgroundDetails.do?contractCode=KY&parkId=91912",
+    "id": "whittleton-middle-fork-campgrounds",
+    "kind": "campground",
+    "lat": 37.76635,
+    "lon": -83.67496,
+    "m_inside": 143,
+    "name": "Whittleton & Middle Fork Campgrounds",
+    "notes": [],
+    "outline": "Kentucky State Parks (DGI)",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-1287": [
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://kentuckystateparks.reserveamerica.com/camping/pennyrile-forest-state-resort-park/r/campgroundDetails.do?contractCode=KY&parkId=91913",
+    "id": "pennyrile-forest-campground",
+    "kind": "campground",
+    "lat": 37.0722222,
+    "lon": -87.6561111,
+    "m_inside": 97,
+    "name": "Pennyrile Forest Campground",
+    "notes": [],
+    "outline": "Kentucky State Parks (DGI)",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-3779": [
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://kentuckystateparks.reserveamerica.com/camping/big-bone-lick-state-historic-site/r/campgroundDetails.do?contractCode=KY&parkId=91803",
+    "id": "big-bone-lick-campground",
+    "kind": "campground",
+    "lat": 38.8837917,
+    "lon": -84.7472722,
+    "m_inside": 378,
+    "name": "Big Bone Lick Campground",
+    "notes": [],
+    "outline": "Kentucky State Parks (DGI)",
+    "sites": null,
+    "tier": "inside"
+   }
+  ],
+  "US-4484": [
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://www.fs.usda.gov/r08/danielboone/recreation/clear-creek-campground",
+    "id": "clear-creek-campground",
+    "kind": "campground",
+    "lat": 38.04596598,
+    "lon": -83.58639044,
+    "m_inside": 1813,
+    "name": "Clear Creek Campground",
+    "notes": [],
+    "outline": "Forest Service Basic Ownership (owned land)",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://www.fs.usda.gov/r08/danielboone/recreation/white-sulphur-horse-camp",
+    "id": "white-sulphur-horse-camp",
+    "kind": "campground",
+    "lat": 38.08675672,
+    "lon": -83.57558553,
+    "m_inside": 1681,
+    "name": "White Sulphur Horse Camp",
+    "notes": [],
+    "outline": "Forest Service Basic Ownership (owned land)",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "FS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/232370",
+    "id": "232370",
+    "ids": [
+     "232370",
+     "us-10171-zilpo-campground"
+    ],
+    "kind": "campground",
+    "lat": 38.075,
+    "lon": -83.5,
+    "m_inside": 1406,
+    "name": "Zilpo - Daniel Boone Nat. For.",
+    "notes": [],
+    "outline": "Forest Service Basic Ownership (owned land)",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://www.fs.usda.gov/r08/danielboone/recreation/s-tree-campground",
+    "id": "s-tree-campground",
+    "kind": "campground",
+    "lat": 37.38497287,
+    "lon": -84.07326899,
+    "m_inside": 1126,
+    "name": "S-Tree Campground",
+    "notes": [],
+    "outline": "Forest Service Basic Ownership (owned land)",
+    "sites": 20,
+    "tier": "inside"
+   },
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://www.fs.usda.gov/r08/danielboone/recreation/barren-fork-horse-camp",
+    "id": "barren-fork-horse-camp",
+    "kind": "campground",
+    "lat": 36.775619,
+    "lon": -84.468008,
+    "m_inside": 1092,
+    "name": "Barren Fork Horse Camp",
+    "notes": [],
+    "outline": "Forest Service Basic Ownership (owned land)",
+    "sites": 41,
+    "tier": "inside"
+   },
+   {
+    "agency": "FS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/233782",
+    "id": "233782",
+    "ids": [
+     "233782",
+     "twin-knobs-campground"
+    ],
+    "kind": "campground",
+    "lat": 38.09472,
+    "lon": -83.51694,
+    "m_inside": 1068,
+    "name": "Twin Knobs Campground",
+    "notes": [],
+    "outline": "Forest Service Basic Ownership (owned land)",
+    "sites": 200,
+    "tier": "inside"
+   },
+   {
+    "agency": "FS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/10286341",
+    "id": "10286341",
+    "kind": "campground",
+    "lat": 38.05903,
+    "lon": -83.47153,
+    "m_inside": 965,
+    "name": "Claylick Boat-In Campground",
+    "notes": [],
+    "outline": "Forest Service Basic Ownership (owned land)",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "FS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/232257",
+    "id": "232257",
+    "kind": "campground",
+    "lat": 36.99167,
+    "lon": -84.25833,
+    "m_inside": 806,
+    "name": "Craigs Creek Group Area",
+    "notes": [],
+    "outline": "Forest Service Basic Ownership (owned land)",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "FS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/232258",
+    "id": "232258",
+    "ids": [
+     "232258",
+     "grove-drive-in-campground"
+    ],
+    "kind": "campground",
+    "lat": 36.94167,
+    "lon": -84.21667,
+    "m_inside": 805,
+    "name": "Grove",
+    "notes": [],
+    "outline": "Forest Service Basic Ownership (owned land)",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "FS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/232259",
+    "id": "232259",
+    "ids": [
+     "232259",
+     "holly-bay-campground"
+    ],
+    "kind": "campground",
+    "lat": 36.97917,
+    "lon": -84.26667,
+    "m_inside": 472,
+    "name": "Holly Bay",
+    "notes": [],
+    "outline": "Forest Service Basic Ownership (owned land)",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "FS",
+    "booking": "https://www.recreation.gov/camping/campgrounds/251820",
+    "id": "251820",
+    "kind": "campground",
+    "lat": 38.09927,
+    "lon": -83.50235,
+    "m_inside": 292,
+    "name": "Boat Gunnel Group Campground",
+    "notes": [],
+    "outline": "Forest Service Basic Ownership (owned land)",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://www.fs.usda.gov/r08/danielboone/recreation/bee-rock-campground",
+    "id": "bee-rock-campground",
+    "kind": "campground",
+    "lat": 37.027909,
+    "lon": -84.317916,
+    "m_inside": 260,
+    "name": "Bee Rock Campground",
+    "notes": [],
+    "outline": "Forest Service Basic Ownership (owned land)",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://www.fs.usda.gov/r08/danielboone/recreation/turkey-foot-campground",
+    "id": "turkey-foot-campground",
+    "kind": "campground",
+    "lat": 37.46602109,
+    "lon": -83.91662833,
+    "m_inside": 256,
+    "name": "Turkey Foot Campground",
+    "notes": [],
+    "outline": "Forest Service Basic Ownership (owned land)",
+    "sites": null,
+    "tier": "inside"
+   },
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://www.recreation.gov/camping/campgrounds/10311270",
+    "id": "koomer-ridge-campground",
+    "kind": "campground",
+    "lat": 37.78403169,
+    "lon": -83.63263379,
+    "m_inside": 241,
+    "name": "Koomer Ridge Campground",
+    "notes": [],
+    "outline": "Forest Service Basic Ownership (owned land)",
+    "sites": 54,
+    "tier": "inside"
+   },
+   {
+    "agency": "KY (hand-checked list)",
+    "booking": "https://www.fs.usda.gov/r08/danielboone/recreation/great-meadows-campground",
+    "id": "great-meadows-campground",
+    "kind": "campground",
+    "lat": 36.628297,
+    "lon": -84.726545,
+    "m_inside": 41,
+    "name": "Great Meadows Campground",
+    "notes": [],
+    "outline": "Forest Service Basic Ownership (owned land)",
+    "sites": null,
+    "tier": "inside"
+   }
+  ]
+ },
+ "line": [],
+ "merged": [
+  {
+   "apart_m": 125,
+   "kept": "Grove",
+   "merged": "Grove Drive-In Campground"
+  },
+  {
+   "apart_m": 342,
+   "kept": "Holly Bay",
+   "merged": "Holly Bay Campground"
+  },
+  {
+   "apart_m": 1452,
+   "kept": "Zilpo - Daniel Boone Nat. For.",
+   "merged": "Zilpo Campground"
+  },
+  {
+   "apart_m": 929,
+   "kept": "Twin Knobs Campground",
+   "merged": "Twin Knobs Campground"
+  }
+ ],
+ "nearby": {
+  "US-0050": [
+   {
+    "id": "nolin-lake-campground",
+    "kind": "campground",
+    "miles": 1.5,
+    "name": "Nolin Lake Campground"
+   },
+   {
+    "id": "233556",
+    "kind": "campground",
+    "miles": 2.9,
+    "name": "Moutardier"
+   },
+   {
+    "id": "233488",
+    "kind": "campground",
+    "miles": 3.9,
+    "name": "Dog Creek (KY)"
+   }
+  ],
+  "US-0686": [
+   {
+    "id": "great-meadows-campground",
+    "kind": "campground",
+    "miles": 1.0,
+    "name": "Great Meadows Campground"
+   },
+   {
+    "id": "barren-fork-horse-camp",
+    "kind": "campground",
+    "miles": 2.2,
+    "name": "Barren Fork Horse Camp"
+   }
+  ],
+  "US-10098": [
+   {
+    "id": "john-james-audubon-campground",
+    "kind": "campground",
+    "miles": 0.3,
+    "name": "John James Audubon Campground"
+   }
+  ],
+  "US-10099": [
+   {
+    "id": "232615",
+    "kind": "campground",
+    "miles": 0.0,
+    "name": "Kendall Campground"
+   }
+  ],
+  "US-10103": [
+   {
+    "id": "ridgeline-clifty-campgrounds",
+    "kind": "campground",
+    "miles": 0.1,
+    "name": "Ridgeline & Clifty Campgrounds"
+   }
+  ],
+  "US-10104": [
+   {
+    "id": "koomer-ridge-campground",
+    "kind": "campground",
+    "miles": 4.0,
+    "name": "Koomer Ridge Campground"
+   }
+  ],
+  "US-10105": [
+   {
+    "id": "mammoth-cave-campground",
+    "kind": "campground",
+    "miles": 0.6,
+    "name": "Mammoth Cave Campground"
+   },
+   {
+    "id": "232468",
+    "kind": "campground",
+    "miles": 1.0,
+    "name": "Maple Springs"
+   }
+  ],
+  "US-10106": [
+   {
+    "id": "bee-rock-campground",
+    "kind": "campground",
+    "miles": 0.4,
+    "name": "Bee Rock Campground"
+   },
+   {
+    "id": "232257",
+    "kind": "campground",
+    "miles": 3.7,
+    "name": "Craigs Creek Group Area"
+   },
+   {
+    "id": "232259",
+    "kind": "campground",
+    "miles": 4.1,
+    "name": "Holly Bay"
+   }
+  ],
+  "US-10107": [
+   {
+    "id": "251468",
+    "kind": "campground",
+    "miles": 0.5,
+    "name": "Bear Creek Campground - KY"
+   },
+   {
+    "id": "blue-heron-campground-ky",
+    "kind": "campground",
+    "miles": 0.7,
+    "name": "Blue Heron Campground (KY)"
+   }
+  ],
+  "US-10111": [
+   {
+    "id": "blue-heron-campground-ky",
+    "kind": "campground",
+    "miles": 3.6,
+    "name": "Blue Heron Campground (KY)"
+   },
+   {
+    "id": "251468",
+    "kind": "campground",
+    "miles": 4.2,
+    "name": "Bear Creek Campground - KY"
+   },
+   {
+    "id": "alum-ford-campground-ky",
+    "kind": "campground",
+    "miles": 4.9,
+    "name": "Alum Ford Campground (KY)"
+   }
+  ],
+  "US-10121": [
+   {
+    "id": "bee-rock-campground",
+    "kind": "campground",
+    "miles": 0.4,
+    "name": "Bee Rock Campground"
+   },
+   {
+    "id": "232257",
+    "kind": "campground",
+    "miles": 1.1,
+    "name": "Craigs Creek Group Area"
+   },
+   {
+    "id": "232259",
+    "kind": "campground",
+    "miles": 1.5,
+    "name": "Holly Bay"
+   }
+  ],
+  "US-10140": [
+   {
+    "id": "kenlake-campground",
+    "kind": "campground",
+    "miles": 3.9,
+    "name": "Kenlake Campground"
+   }
+  ],
+  "US-10146": [
+   {
+    "id": "s-tree-campground",
+    "kind": "campground",
+    "miles": 0.1,
+    "name": "S-Tree Campground"
+   },
+   {
+    "id": "turkey-foot-campground",
+    "kind": "campground",
+    "miles": 4.3,
+    "name": "Turkey Foot Campground"
+   }
+  ],
+  "US-10158": [
+   {
+    "id": "232370",
+    "kind": "campground",
+    "miles": 0.1,
+    "name": "Zilpo - Daniel Boone Nat. For."
+   },
+   {
+    "id": "clear-creek-campground",
+    "kind": "campground",
+    "miles": 0.5,
+    "name": "Clear Creek Campground"
+   },
+   {
+    "id": "white-sulphur-horse-camp",
+    "kind": "campground",
+    "miles": 0.5,
+    "name": "White Sulphur Horse Camp"
+   },
+   {
+    "id": "233782",
+    "kind": "campground",
+    "miles": 1.0,
+    "name": "Twin Knobs Campground"
+   },
+   {
+    "id": "10286341",
+    "kind": "campground",
+    "miles": 1.2,
+    "name": "Claylick Boat-In Campground"
+   },
+   {
+    "id": "10005354",
+    "kind": "campground",
+    "miles": 1.6,
+    "name": "Cave Run Dam Tailwater"
+   },
+   {
+    "id": "251820",
+    "kind": "campground",
+    "miles": 1.7,
+    "name": "Boat Gunnel Group Campground"
+   }
+  ],
+  "US-10160": [
+   {
+    "id": "bee-rock-campground",
+    "kind": "campground",
+    "miles": 3.9,
+    "name": "Bee Rock Campground"
+   }
+  ],
+  "US-10170": [
+   {
+    "id": "251820",
+    "kind": "campground",
+    "miles": 0.2,
+    "name": "Boat Gunnel Group Campground"
+   },
+   {
+    "id": "232370",
+    "kind": "campground",
+    "miles": 0.6,
+    "name": "Zilpo - Daniel Boone Nat. For."
+   },
+   {
+    "id": "10005354",
+    "kind": "campground",
+    "miles": 1.6,
+    "name": "Cave Run Dam Tailwater"
+   },
+   {
+    "id": "10286341",
+    "kind": "campground",
+    "miles": 2.5,
+    "name": "Claylick Boat-In Campground"
+   },
+   {
+    "id": "white-sulphur-horse-camp",
+    "kind": "campground",
+    "miles": 2.8,
+    "name": "White Sulphur Horse Camp"
+   },
+   {
+    "id": "clear-creek-campground",
+    "kind": "campground",
+    "miles": 4.7,
+    "name": "Clear Creek Campground"
+   }
+  ],
+  "US-10171": [
+   {
+    "id": "232370",
+    "kind": "campground",
+    "miles": 0.1,
+    "name": "Zilpo - Daniel Boone Nat. For."
+   },
+   {
+    "id": "10286341",
+    "kind": "campground",
+    "miles": 0.8,
+    "name": "Claylick Boat-In Campground"
+   },
+   {
+    "id": "251820",
+    "kind": "campground",
+    "miles": 1.6,
+    "name": "Boat Gunnel Group Campground"
+   },
+   {
+    "id": "233782",
+    "kind": "campground",
+    "miles": 1.7,
+    "name": "Twin Knobs Campground"
+   },
+   {
+    "id": "10005354",
+    "kind": "campground",
+    "miles": 3.5,
+    "name": "Cave Run Dam Tailwater"
+   },
+   {
+    "id": "white-sulphur-horse-camp",
+    "kind": "campground",
+    "miles": 4.3,
+    "name": "White Sulphur Horse Camp"
+   }
+  ],
+  "US-1251": [
+   {
+    "id": "232625",
+    "kind": "campground",
+    "miles": 2.7,
+    "name": "Littcarr Campground"
+   }
+  ],
+  "US-1253": [
+   {
+    "id": "paintsville-lake-campground",
+    "kind": "campground",
+    "miles": 4.7,
+    "name": "Paintsville Lake Campground"
+   }
+  ],
+  "US-1257": [
+   {
+    "id": "232733",
+    "kind": "campground",
+    "miles": 1.6,
+    "name": "Waitsboro Campground"
+   }
+  ],
+  "US-1259": [
+   {
+    "id": "233583",
+    "kind": "campground",
+    "miles": 1.3,
+    "name": "Pikes Ridge"
+   },
+   {
+    "id": "233633",
+    "kind": "campground",
+    "miles": 1.6,
+    "name": "Smith Ridge"
+   },
+   {
+    "id": "233513",
+    "kind": "campground",
+    "miles": 4.6,
+    "name": "Holmes Bend"
+   }
+  ],
+  "US-1266": [
+   {
+    "id": "232661",
+    "kind": "campground",
+    "miles": 0.7,
+    "name": "Old Kuttawa"
+   }
+  ],
+  "US-1268": [
+   {
+    "id": "233556",
+    "kind": "campground",
+    "miles": 1.3,
+    "name": "Moutardier"
+   },
+   {
+    "id": "233488",
+    "kind": "campground",
+    "miles": 4.4,
+    "name": "Dog Creek (KY)"
+   }
+  ],
+  "US-1273": [
+   {
+    "id": "233420",
+    "kind": "campground",
+    "miles": 1.6,
+    "name": "Baileys Point"
+   },
+   {
+    "id": "233650",
+    "kind": "campground",
+    "miles": 1.8,
+    "name": "The Narrows"
+   },
+   {
+    "id": "233698",
+    "kind": "campground",
+    "miles": 3.6,
+    "name": "Tailwater"
+   }
+  ],
+  "US-1275": [
+   {
+    "id": "232566",
+    "kind": "campground",
+    "miles": 3.0,
+    "name": "Buckhorn Campground"
+   },
+   {
+    "id": "233809",
+    "kind": "campground",
+    "miles": 4.8,
+    "name": "Trace Branch Campground"
+   }
+  ],
+  "US-1281": [
+   {
+    "id": "248040",
+    "kind": "campground",
+    "miles": 2.5,
+    "name": "German Campground"
+   }
+  ],
+  "US-1283": [
+   {
+    "id": "232541",
+    "kind": "campground",
+    "miles": 3.8,
+    "name": "Canal"
+   },
+   {
+    "id": "232585",
+    "kind": "campground",
+    "miles": 4.7,
+    "name": "Eureka"
+   }
+  ],
+  "US-1284": [
+   {
+    "id": "232538",
+    "kind": "campground",
+    "miles": 3.4,
+    "name": "Cadiz"
+   },
+   {
+    "id": "232609",
+    "kind": "campground",
+    "miles": 4.8,
+    "name": "Hurricane Creek"
+   }
+  ],
+  "US-1285": [
+   {
+    "id": "232615",
+    "kind": "campground",
+    "miles": 2.7,
+    "name": "Kendall Campground"
+   }
+  ],
+  "US-1286": [
+   {
+    "id": "koomer-ridge-campground",
+    "kind": "campground",
+    "miles": 1.5,
+    "name": "Koomer Ridge Campground"
+   }
+  ],
+  "US-1289": [
+   {
+    "id": "233411",
+    "kind": "campground",
+    "miles": 1.8,
+    "name": "Cave Creek"
+   },
+   {
+    "id": "233410",
+    "kind": "campground",
+    "miles": 2.4,
+    "name": "Laurel Branch"
+   },
+   {
+    "id": "233408",
+    "kind": "campground",
+    "miles": 2.5,
+    "name": "Axtel"
+   },
+   {
+    "id": "233409",
+    "kind": "campground",
+    "miles": 3.5,
+    "name": "North Fork (KY)"
+   }
+  ],
+  "US-12971": [
+   {
+    "id": "carter-caves-campground",
+    "kind": "campground",
+    "miles": 0.1,
+    "name": "Carter Caves Campground"
+   }
+  ],
+  "US-12972": [
+   {
+    "id": "carter-caves-campground",
+    "kind": "campground",
+    "miles": 1.5,
+    "name": "Carter Caves Campground"
+   }
+  ],
+  "US-3792": [
+   {
+    "id": "232541",
+    "kind": "campground",
+    "miles": 0.2,
+    "name": "Canal"
+   },
+   {
+    "id": "232661",
+    "kind": "campground",
+    "miles": 0.9,
+    "name": "Old Kuttawa"
+   },
+   {
+    "id": "232624",
+    "kind": "campground",
+    "miles": 1.2,
+    "name": "Linton"
+   },
+   {
+    "id": "kenlake-campground",
+    "kind": "campground",
+    "miles": 1.3,
+    "name": "Kenlake Campground"
+   },
+   {
+    "id": "232609",
+    "kind": "campground",
+    "miles": 2.3,
+    "name": "Hurricane Creek"
+   },
+   {
+    "id": "232585",
+    "kind": "campground",
+    "miles": 2.4,
+    "name": "Eureka"
+   },
+   {
+    "id": "kentucky-dam-village-campground",
+    "kind": "campground",
+    "miles": 3.6,
+    "name": "Kentucky Dam Village Campground"
+   },
+   {
+    "id": "lake-barkley-campground",
+    "kind": "campground",
+    "miles": 4.1,
+    "name": "Lake Barkley Campground"
+   }
+  ],
+  "US-3794": [
+   {
+    "id": "barren-fork-horse-camp",
+    "kind": "campground",
+    "miles": 4.0,
+    "name": "Barren Fork Horse Camp"
+   },
+   {
+    "id": "ridgeline-clifty-campgrounds",
+    "kind": "campground",
+    "miles": 4.5,
+    "name": "Ridgeline & Clifty Campgrounds"
+   }
+  ],
+  "US-3801": [
+   {
+    "id": "koomer-ridge-campground",
+    "kind": "campground",
+    "miles": 1.4,
+    "name": "Koomer Ridge Campground"
+   },
+   {
+    "id": "whittleton-middle-fork-campgrounds",
+    "kind": "campground",
+    "miles": 3.5,
+    "name": "Whittleton & Middle Fork Campgrounds"
+   }
+  ],
+  "US-3808": [
+   {
+    "id": "columbus-belmont-campground",
+    "kind": "campground",
+    "miles": 1.3,
+    "name": "Columbus-Belmont Campground"
+   }
+  ],
+  "US-3810": [
+   {
+    "id": "big-bone-lick-campground",
+    "kind": "campground",
+    "miles": 1.2,
+    "name": "Big Bone Lick Campground"
+   }
+  ],
+  "US-3834": [
+   {
+    "id": "pennyrile-forest-campground",
+    "kind": "campground",
+    "miles": 4.3,
+    "name": "Pennyrile Forest Campground"
+   }
+  ],
+  "US-3839": [
+   {
+    "id": "yatesville-lake-campground",
+    "kind": "campground",
+    "miles": 1.1,
+    "name": "Yatesville Lake Campground"
+   }
+  ],
+  "US-4484": [
+   {
+    "id": "whittleton-middle-fork-campgrounds",
+    "kind": "campground",
+    "miles": 0.1,
+    "name": "Whittleton & Middle Fork Campgrounds"
+   },
+   {
+    "id": "blue-heron-campground-ky",
+    "kind": "campground",
+    "miles": 0.2,
+    "name": "Blue Heron Campground (KY)"
+   },
+   {
+    "id": "10005354",
+    "kind": "campground",
+    "miles": 0.3,
+    "name": "Cave Run Dam Tailwater"
+   },
+   {
+    "id": "ridgeline-clifty-campgrounds",
+    "kind": "campground",
+    "miles": 0.3,
+    "name": "Ridgeline & Clifty Campgrounds"
+   },
+   {
+    "id": "alum-ford-campground-ky",
+    "kind": "campground",
+    "miles": 0.5,
+    "name": "Alum Ford Campground (KY)"
+   },
+   {
+    "id": "251468",
+    "kind": "campground",
+    "miles": 1.1,
+    "name": "Bear Creek Campground - KY"
+   },
+   {
+    "id": "233809",
+    "kind": "campground",
+    "miles": 1.2,
+    "name": "Trace Branch Campground"
+   },
+   {
+    "id": "232566",
+    "kind": "campground",
+    "miles": 2.3,
+    "name": "Buckhorn Campground"
+   },
+   {
+    "id": "general-burnside-island-campground",
+    "kind": "campground",
+    "miles": 2.8,
+    "name": "General Burnside Island Campground"
+   },
+   {
+    "id": "232733",
+    "kind": "campground",
+    "miles": 4.7,
+    "name": "Waitsboro Campground"
+   }
+  ],
+  "US-4687": [
+   {
+    "id": "jenny-wiley-campground",
+    "kind": "campground",
+    "miles": 0.4,
+    "name": "Jenny Wiley Campground"
+   },
+   {
+    "id": "248040",
+    "kind": "campground",
+    "miles": 3.1,
+    "name": "German Campground"
+   }
+  ],
+  "US-4692": [
+   {
+    "id": "pennyrile-forest-campground",
+    "kind": "campground",
+    "miles": 0.1,
+    "name": "Pennyrile Forest Campground"
+   }
+  ],
+  "US-4693": [
+   {
+    "id": "carter-caves-campground",
+    "kind": "campground",
+    "miles": 0.3,
+    "name": "Carter Caves Campground"
+   }
+  ],
+  "US-7708": [
+   {
+    "id": "232587",
+    "kind": "campground",
+    "miles": 2.1,
+    "name": "Fishing Creek Campground"
+   },
+   {
+    "id": "234727",
+    "kind": "campground",
+    "miles": 2.8,
+    "name": "Fall Creek Campground"
+   },
+   {
+    "id": "232563",
+    "kind": "campground",
+    "miles": 3.1,
+    "name": "Cumberland Point Campground"
+   }
+  ],
+  "US-7951": [
+   {
+    "id": "john-james-audubon-campground",
+    "kind": "campground",
+    "miles": 2.7,
+    "name": "John James Audubon Campground"
+   }
+  ],
+  "US-7961": [
+   {
+    "id": "greenbo-lake-campground",
+    "kind": "campground",
+    "miles": 4.9,
+    "name": "Greenbo Lake Campground"
+   }
+  ],
+  "US-7962": [
+   {
+    "id": "great-meadows-campground",
+    "kind": "campground",
+    "miles": 2.4,
+    "name": "Great Meadows Campground"
+   }
+  ],
+  "US-7964": [
+   {
+    "id": "bee-rock-campground",
+    "kind": "campground",
+    "miles": 0.8,
+    "name": "Bee Rock Campground"
+   },
+   {
+    "id": "232257",
+    "kind": "campground",
+    "miles": 4.7,
+    "name": "Craigs Creek Group Area"
+   }
+  ],
+  "US-7965": [
+   {
+    "id": "233650",
+    "kind": "campground",
+    "miles": 4.1,
+    "name": "The Narrows"
+   },
+   {
+    "id": "barren-river-lake-state-resort-park-campground",
+    "kind": "campground",
+    "miles": 4.6,
+    "name": "Barren River Lake State Resort Park Campground"
+   }
+  ]
+ },
+ "no_point": [
+  {
+   "id": "bandy-creek-campground-tn",
+   "name": "Bandy Creek Campground (TN)",
+   "park": "US-0686",
+   "why": "no point (name only): needs a real point from the agency page"
+  },
+  {
+   "id": "bear-creek-horse-camp-ky",
+   "name": "Bear Creek Horse Camp (KY)",
+   "park": "US-0686",
+   "why": "no point (name only): needs a real point from the agency page"
+  },
+  {
+   "id": "breaks-interstate-park-campground",
+   "name": "Breaks Interstate Park Campground",
+   "park": "US-3781",
+   "why": "no point (name only): needs a real point from the agency page"
+  },
+  {
+   "id": "energy-lake-campground",
+   "name": "Energy Lake Campground",
+   "park": "US-3792",
+   "why": "no point (name only): needs a real point from the agency page"
+  },
+  {
+   "id": "fenton-self-service-campground",
+   "name": "Fenton Self-Service Campground",
+   "park": "US-3792",
+   "why": "no point (name only): needs a real point from the agency page"
+  },
+  {
+   "id": "higginson-henry-wma-designated-campsites",
+   "name": "Higginson-Henry WMA designated campsites",
+   "park": "US-3815",
+   "why": "no point (name only): needs a real point from the agency page"
+  },
+  {
+   "id": "hillman-ferry-campground",
+   "name": "Hillman Ferry Campground",
+   "park": "US-3792",
+   "why": "no point (name only): needs a real point from the agency page"
+  },
+  {
+   "id": "houchin-ferry-campground",
+   "name": "Houchin Ferry Campground",
+   "park": "US-0050",
+   "why": "no point (name only): needs a real point from the agency page"
+  },
+  {
+   "id": "kingdom-come-primitive-campsites",
+   "name": "Kingdom Come primitive campsites",
+   "park": "US-1262",
+   "why": "no point (name only): needs a real point from the agency page"
+  },
+  {
+   "id": "levi-jackson-campground",
+   "name": "Levi Jackson Campground",
+   "park": "US-1264",
+   "why": "no point (name only): needs a real point from the agency page"
+  },
+  {
+   "id": "maple-springs-group-campground",
+   "name": "Maple Springs Group Campground",
+   "park": "US-0050",
+   "why": "no point (name only): needs a real point from the agency page"
+  },
+  {
+   "id": "otter-creek-ora-campground",
+   "name": "Otter Creek ORA Campground",
+   "park": "US-8144",
+   "why": "no point (name only): needs a real point from the agency page"
+  },
+  {
+   "id": "piney-campground-tn",
+   "name": "Piney Campground (TN)",
+   "park": "US-3792",
+   "why": "no point (name only): needs a real point from the agency page"
+  },
+  {
+   "id": "rolling-fork-wma-designated-camping-area",
+   "name": "Rolling Fork WMA designated camping area",
+   "park": "US-10161",
+   "why": "no point (name only): needs a real point from the agency page"
+  },
+  {
+   "id": "self-service-lakeside-campgrounds-10",
+   "name": "Self-service lakeside campgrounds (10)",
+   "park": "US-3792",
+   "why": "no point (name only): needs a real point from the agency page"
+  },
+  {
+   "id": "station-camp-campground-tn",
+   "name": "Station Camp Campground (TN)",
+   "park": "US-0686",
+   "why": "no point (name only): needs a real point from the agency page"
+  },
+  {
+   "id": "west-kentucky-wma-designated-camping-site",
+   "name": "West Kentucky WMA designated camping site",
+   "park": "US-3837",
+   "why": "no point (name only): needs a real point from the agency page"
+  },
+  {
+   "id": "wilderness-road-campground",
+   "name": "Wilderness Road Campground",
+   "park": "US-0019",
+   "why": "no point (name only): needs a real point from the agency page"
+  },
+  {
+   "id": "wranglers-campground",
+   "name": "Wranglers Campground",
+   "park": "US-3792",
+   "why": "no point (name only): needs a real point from the agency page"
+  },
+  {
+   "id": "yellowbank-wma-primitive-campground",
+   "name": "Yellowbank WMA primitive campground (Main Area)",
+   "park": "US-3840",
+   "why": "no point (name only): needs a real point from the agency page"
+  }
+ ],
+ "park_names": {
+  "US-0050": {
+   "n": "Mammoth Cave National Park",
+   "notes": [],
+   "src": "NPS units"
+  },
+  "US-0686": {
+   "n": "Big South Fork National Recreation Area",
+   "notes": [],
+   "src": "NPS units"
+  },
+  "US-10098": {
+   "n": "Green River National Wildlife Refuge",
+   "notes": [],
+   "src": "FWS refuges"
+  },
+  "US-10099": {
+   "n": "Wolf Creek National Fish Hatchery",
+   "notes": [],
+   "src": "FWS refuges"
+  },
+  "US-10103": {
+   "n": "The Cumberland River Wilderness Area",
+   "notes": [],
+   "src": "KY wild river corridors"
+  },
+  "US-10104": {
+   "n": "Red River National Wild and Scenic River",
+   "notes": [],
+   "src": "KY wild river corridors"
+  },
+  "US-10105": {
+   "n": "The Green National Wild and Scenic River",
+   "notes": [],
+   "src": "KY wild river corridors"
+  },
+  "US-10106": {
+   "n": "The Rockcastle National Wild and Scenic River",
+   "notes": [],
+   "src": "KY wild river corridors"
+  },
+  "US-10107": {
+   "n": "Big South Fork National Wild and Scenic River",
+   "notes": [],
+   "src": "KY wild river corridors"
+  },
+  "US-10111": {
+   "n": "Rock Creek National Wild and Scenic River",
+   "notes": [],
+   "src": "KY wild river corridors"
+  },
+  "US-10121": {
+   "n": "Cane Creek Wildlife Management Area",
+   "notes": [],
+   "src": "KDFWR public hunting areas"
+  },
+  "US-10140": {
+   "n": "Kentucky Lake Wildlife Management Area",
+   "notes": [],
+   "src": "KDFWR public hunting areas"
+  },
+  "US-10146": {
+   "n": "Mill Creek Wildlife Management Area",
+   "notes": [],
+   "src": "KDFWR public hunting areas"
+  },
+  "US-10158": {
+   "n": "Pioneer Weapons Wildlife Management Area",
+   "notes": [],
+   "src": "KDFWR public hunting areas"
+  },
+  "US-10160": {
+   "n": "Rockcastle River Wildlife Management Area",
+   "notes": [],
+   "src": "KDFWR public hunting areas"
+  },
+  "US-10161": {
+   "n": "Rolling Fork Wildlife Management Area",
+   "notes": [],
+   "src": "KDFWR public hunting areas"
+  },
+  "US-10170": {
+   "n": "Twin Knobs Campground Wildlife Management Area",
+   "notes": [],
+   "src": "KDFWR public hunting areas"
+  },
+  "US-10171": {
+   "n": "Zilpo Campground Wildlife Management Area",
+   "notes": [],
+   "src": "KDFWR public hunting areas"
+  },
+  "US-10173": {
+   "n": "Kentucky Horse Park",
+   "notes": [],
+   "src": "USGS PAD-US"
+  },
+  "US-1251": {
+   "n": "Carr Creek State Park",
+   "notes": [],
+   "src": "Kentucky State Parks (DGI)"
+  },
+  "US-1252": {
+   "n": "Columbus Belmont State Park",
+   "notes": [],
+   "src": "Kentucky State Parks (DGI)"
+  },
+  "US-1253": {
+   "n": "Dawkins Line Rail Trail State Park",
+   "notes": [],
+   "src": "Kentucky State Parks (DGI)"
+  },
+  "US-1256": {
+   "n": "Fort Boonesborough State Park",
+   "notes": [],
+   "src": "Kentucky State Parks (DGI)"
+  },
+  "US-1257": {
+   "n": "General Burnside State Park",
+   "notes": [],
+   "src": "Kentucky State Parks (DGI)"
+  },
+  "US-1258": {
+   "n": "Grayson Lake State Park",
+   "notes": [],
+   "src": "Kentucky State Parks (DGI)"
+  },
+  "US-1259": {
+   "n": "Green River Lake State Park",
+   "notes": [],
+   "src": "KDFWR public hunting areas, Kentucky State Parks (DGI)"
+  },
+  "US-1260": {
+   "n": "John James Audubon State Park",
+   "notes": [],
+   "src": "Kentucky State Parks (DGI), Office of Kentucky Nature Preserves"
+  },
+  "US-1261": {
+   "n": "Kincaid Lake State Park",
+   "notes": [],
+   "src": "KDFWR public hunting areas, Kentucky State Parks (DGI)"
+  },
+  "US-1262": {
+   "n": "Kingdom Come State Park",
+   "notes": [],
+   "src": "Kentucky State Parks (DGI), Office of Kentucky Nature Preserves"
+  },
+  "US-1263": {
+   "n": "Lake Malone State Park",
+   "notes": [],
+   "src": "Kentucky State Parks (DGI)"
+  },
+  "US-1266": {
+   "n": "Mineral Mounds State Park",
+   "notes": [],
+   "src": "Kentucky State Parks (DGI)"
+  },
+  "US-1267": {
+   "n": "My Old Kentucky Home State Park",
+   "notes": [],
+   "src": "Kentucky State Parks (DGI)"
+  },
+  "US-1268": {
+   "n": "Nolin Lake State Park",
+   "notes": [],
+   "src": "Kentucky State Parks (DGI)"
+  },
+  "US-1270": {
+   "n": "Paintsville Lake State Park",
+   "notes": [],
+   "src": "Kentucky State Parks (DGI)"
+  },
+  "US-1271": {
+   "n": "Taylorsville Lake State Park",
+   "notes": [],
+   "src": "Kentucky State Parks (DGI)"
+  },
+  "US-1272": {
+   "n": "Yatesville Lake State Park",
+   "notes": [],
+   "src": "Kentucky State Parks (DGI)"
+  },
+  "US-1273": {
+   "n": "Barren River Lake State Park",
+   "notes": [],
+   "src": "Kentucky State Parks (DGI)"
+  },
+  "US-1274": {
+   "n": "Blue Licks Battlefield State Park",
+   "notes": [],
+   "src": "Kentucky State Parks (DGI), Office of Kentucky Nature Preserves"
+  },
+  "US-1275": {
+   "n": "Buckhorn Lake State Park",
+   "notes": [],
+   "src": "Kentucky State Parks (DGI)"
+  },
+  "US-1276": {
+   "n": "Carter Caves State Park",
+   "notes": [],
+   "src": "Kentucky State Parks (DGI)"
+  },
+  "US-1277": {
+   "n": "Cumberland Falls State Park",
+   "notes": [],
+   "src": "Kentucky State Parks (DGI), Office of Kentucky Nature Preserves"
+  },
+  "US-1278": {
+   "n": "Dale Hollow State Park",
+   "notes": [],
+   "src": "KDFWR public hunting areas, Kentucky State Parks (DGI)"
+  },
+  "US-1279": {
+   "n": "General Butler State Park",
+   "notes": [],
+   "src": "Kentucky State Parks (DGI)"
+  },
+  "US-1280": {
+   "n": "Greenbo Lake State Park",
+   "notes": [],
+   "src": "KDFWR public hunting areas, Kentucky State Parks (DGI)"
+  },
+  "US-1281": {
+   "n": "Jenny Wiley State Park",
+   "notes": [],
+   "src": "KDFWR public hunting areas, Kentucky State Parks (DGI)"
+  },
+  "US-1282": {
+   "n": "Kenlake State Park",
+   "notes": [],
+   "src": "KDFWR public hunting areas, Kentucky State Parks (DGI)"
+  },
+  "US-1283": {
+   "n": "Kentucky Dam Village State Park",
+   "notes": [],
+   "src": "Kentucky State Parks (DGI)"
+  },
+  "US-1284": {
+   "n": "Lake Barkley State Park",
+   "notes": [],
+   "src": "Kentucky State Parks (DGI)"
+  },
+  "US-1285": {
+   "n": "Lake Cumberland State Park",
+   "notes": [],
+   "src": "Kentucky State Parks (DGI)"
+  },
+  "US-1286": {
+   "n": "Natural Bridge State Park",
+   "notes": [],
+   "src": "Kentucky State Parks (DGI), Office of Kentucky Nature Preserves"
+  },
+  "US-1287": {
+   "n": "Pennyrile Forest State Park",
+   "notes": [],
+   "src": "Kentucky State Parks (DGI)"
+  },
+  "US-1289": {
+   "n": "Rough River Dam State Park",
+   "notes": [],
+   "src": "Kentucky State Parks (DGI)"
+  },
+  "US-12971": {
+   "n": "Bat Cave State Nature Preserve",
+   "notes": [],
+   "src": "Office of Kentucky Nature Preserves"
+  },
+  "US-12972": {
+   "n": "Cascade Caverns State Nature Preserve",
+   "notes": [],
+   "src": "Office of Kentucky Nature Preserves"
+  },
+  "US-3779": {
+   "n": "Big Bone Lick State Historic Site",
+   "notes": [],
+   "src": "Kentucky State Parks (DGI)"
+  },
+  "US-3792": {
+   "n": "Land Between the Lakes National Recreation Area",
+   "notes": [],
+   "src": "KDFWR public hunting areas"
+  },
+  "US-3794": {
+   "n": "Beaver Creek Wildlife Management Area",
+   "notes": [],
+   "src": "KDFWR public hunting areas"
+  },
+  "US-3801": {
+   "n": "Clifty Wilderness Area",
+   "notes": [],
+   "src": "wilderness"
+  },
+  "US-3808": {
+   "n": "Doug Travis Wildlife Management Area",
+   "notes": [],
+   "src": "KDFWR public hunting areas"
+  },
+  "US-3810": {
+   "n": "Dr. Norman And Martha Adair Wildlife Management Area",
+   "notes": [],
+   "src": "KDFWR public hunting areas"
+  },
+  "US-3815": {
+   "n": "Higginson-Henry Wildlife Management Area",
+   "notes": [],
+   "src": "KDFWR public hunting areas"
+  },
+  "US-3834": {
+   "n": "Tradewater Wildlife Management Area",
+   "notes": [],
+   "src": "KDFWR public hunting areas"
+  },
+  "US-3837": {
+   "n": "West Kentucky Wildlife Management Area",
+   "notes": [],
+   "src": "KDFWR public hunting areas"
+  },
+  "US-3839": {
+   "n": "Yatesville Lake Wildlife Management Area",
+   "notes": [],
+   "src": "KDFWR public hunting areas"
+  },
+  "US-3840": {
+   "n": "Yellowbank Wildlife Management Area",
+   "notes": [],
+   "src": "KDFWR public hunting areas"
+  },
+  "US-4484": {
+   "n": "Daniel Boone National Forest",
+   "notes": [],
+   "src": "Forest Service Basic Ownership (owned land)"
+  },
+  "US-4687": {
+   "n": "Dewey Lake Wildlife Management Area",
+   "notes": [],
+   "src": "KDFWR public hunting areas"
+  },
+  "US-4692": {
+   "n": "Pennyrile State Forest",
+   "notes": [],
+   "src": "KDFWR public hunting areas"
+  },
+  "US-4693": {
+   "n": "Tygarts State Forest",
+   "notes": [],
+   "src": "KDFWR public hunting areas"
+  },
+  "US-7708": {
+   "n": "Mill Springs Battlefield National Monument",
+   "notes": [],
+   "src": "NPS units"
+  },
+  "US-7951": {
+   "n": "Green River State Forest",
+   "notes": [],
+   "src": "KDFWR public hunting areas"
+  },
+  "US-7961": {
+   "n": "Jesse Stuart State Nature Preserve",
+   "notes": [],
+   "src": "Office of Kentucky Nature Preserves"
+  },
+  "US-7962": {
+   "n": "Little South Fork State Natural Area",
+   "notes": [],
+   "src": "KY natural areas"
+  },
+  "US-7964": {
+   "n": "William H. Martin State Natural Area",
+   "notes": [],
+   "src": "KY natural areas"
+  },
+  "US-7965": {
+   "n": "Brigadoon State Nature Preserve",
+   "notes": [],
+   "src": "Office of Kentucky Nature Preserves"
+  }
+ },
+ "read": {
+  "inputs": [
+   "data/campinfo/US-KY.json (103 records, read 2026-10-28)",
+   "data/campfed/US-KY.json day-use rows (18)"
+  ],
+  "outline_source": "official agency files (Kentucky layers)",
+  "patches": "data/fers/US-KY.json candidate rows (main + small tiers)",
+  "ver": 1,
+  "when": "2026-10-28"
+ }
+}
