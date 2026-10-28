@@ -1,0 +1,166 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "southeast",
+ "states": [
+  "US-TN",
+  "US-NC",
+  "US-VA",
+  "US-WV",
+  "US-GA",
+  "US-AL",
+  "US-SC",
+  "US-FL",
+  "US-MS"
+ ],
+ "since": "2026-10-28",
+ "date": "2026-10-28 17:31 UTC",
+ "verdict": "STOPPED",
+ "why": [
+  "US-MS: 24 rows still waiting for a pass (out of time: run the worker again)"
+ ],
+ "known_answers": "18/18 on 2026-10-28",
+ "missing_check": {
+  "FOUND": 297,
+  "DROPPED": 1773,
+  "NEVER LOOKED AT": 14393
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-28",
+   "pairs tested": 5924,
+   "pairs whose boxes touch": 5924
+  },
+  "pass2": {
+   "agree with the pass before": 3280,
+   "date": "2026-10-28",
+   "pairs tested": 878
+  },
+  "pass3": {
+   "agree with the pass before": 1572,
+   "date": "2026-10-28",
+   "pairs tested": 814
+  },
+  "pass5": {
+   "checked": 461,
+   "date": "2026-10-28",
+   "pairs tested": 0,
+   "still not checked": 434
+  }
+ },
+ "US-TN": {
+  "rows": 687,
+  "live": 21,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "the outlines overlap, but the PAD-US Park Service fee record": 2,
+   "water not checked": 61,
+   "the ownership map shows more than one owner across the spot": 1,
+   "no public owner on the ownership map": 1,
+   "low-confidence outline for Land Between the Lakes National R": 1
+  },
+  "dropped": 514,
+  "merged": 86
+ },
+ "US-NC": {
+  "rows": 901,
+  "live": 17,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "water not checked": 101,
+   "the ownership map shows more than one owner across the spot": 1,
+   "the outlines overlap, but the PAD-US Park Service fee record": 2,
+   "the outlines overlap, but the Forest Service ownership map": 1
+  },
+  "dropped": 593,
+  "merged": 186
+ },
+ "US-VA": {
+  "rows": 143,
+  "live": 24,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "water not checked": 32,
+   "the ownership map shows more than one owner across the spot": 3,
+   "no public owner on the ownership map": 1
+  },
+  "dropped": 35,
+  "merged": 48
+ },
+ "US-WV": {
+  "rows": 292,
+  "live": 4,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "water not checked": 28,
+   "the ownership map shows more than one owner across the spot": 2
+  },
+  "dropped": 214,
+  "merged": 44
+ },
+ "US-GA": {
+  "rows": 289,
+  "live": 10,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "water not checked": 50
+  },
+  "dropped": 166,
+  "merged": 63
+ },
+ "US-AL": {
+  "rows": 77,
+  "live": 6,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "water not checked": 18
+  },
+  "dropped": 39,
+  "merged": 14
+ },
+ "US-SC": {
+  "rows": 234,
+  "live": 9,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "water not checked": 21,
+   "the ownership map shows more than one owner across the spot": 1,
+   "no public owner on the ownership map": 2
+  },
+  "dropped": 126,
+  "merged": 75
+ },
+ "US-FL": {
+  "rows": 1273,
+  "live": 82,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "water not checked": 126,
+   "the ownership map shows more than one owner across the spot": 5,
+   "no public owner on the ownership map": 9,
+   "owner not known for Suwannee River State Park": 1,
+   "owner not known for Apalachicola River Wildlife Area": 3
+  },
+  "dropped": 778,
+  "merged": 269
+ },
+ "US-MS": {
+  "rows": 95,
+  "live": 3,
+  "waiting": 24,
+  "unfinished": 0,
+  "not_sure": {
+   "water not checked": 6,
+   "the ownership map shows more than one owner across the spot": 1
+  },
+  "dropped": 31,
+  "merged": 30
+ }
+}
