@@ -2,11 +2,11 @@
  "about": "KPC bot status board: per bot the last run, green / red, what it made, what is waiting on whom. Written by kpc_status.py from each workflow; a members-only page reads it later.",
  "bots": {
   "campground info bot": {
-   "areas": "left: 64",
+   "areas": "left: 63",
    "last_run": "2026-10-28",
-   "made": "US-KY: partial; {\"camps\": 100, \"needs_browser\": 1, \"needs_key\": 0, \"no_page\": 0, \"not_official\": 0, \"ok\": 52, \"other\": 12, \"resting\": 0, \"robots\": 35, \"with_booking\": 51, \"with_elevation\": 80, \"with_sites\": 18}",
+   "made": "US-KY: failed; {\"camps\": 103, \"needs_browser\": 42, \"needs_key\": 38, \"no_page\": 0, \"not_official\": 0, \"ok\": 23, \"other\": 0, \"resting\": 0, \"robots\": 0, \"with_booking\": 49, \"with_elevation\": 83, \"with_sites\": 8}",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/40720357428",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/40693435527",
    "waiting_on": "chat 8 grades the sample; Brandon GO before any card"
   },
   "closures super-bot": {
@@ -14,15 +14,15 @@
    "last_run": "2026-10-28",
    "made": "1 areas read, 1 saved; see data/closures/review.md",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/40720991844",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/40702238642",
    "waiting_on": "chat 11 grades the Kentucky side-by-side; Brandon GO before any merge (CL-5)"
   },
   "hours fees permits bot": {
-   "areas": "left: 64",
+   "areas": "left: 63",
    "last_run": "2026-10-28",
-   "made": "US-KY: failed; {\"fees\": 5, \"hours\": 20, \"no_page\": 0, \"nothing\": 166, \"parks\": 193, \"permits\": 8}",
+   "made": "US-KY: failed; {\"fees\": 5, \"hours\": 21, \"no_page\": 0, \"nothing\": 165, \"parks\": 193, \"permits\": 10}",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/40712933960",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/40693435527",
    "waiting_on": "chat 8 grades the sample; Brandon GO before any card"
   },
   "layer intake": {
@@ -36,7 +36,7 @@
   "official documents bot": {
    "areas": "",
    "last_run": "2026-10-28",
-   "made": "chunk 1 saved",
+   "made": "chunk 2 saved",
    "result": "green",
    "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/40703708847",
    "waiting_on": "chat 8 grades review.md samples"

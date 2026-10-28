@@ -9,15 +9,16 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://www.nps.gov/bisc/planyourvisit/maps.htm",
-    "status": "ok",
+    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "a link on the park's page ('Maps')",
     "posted": "July 17, 2023",
-    "posted_how": "the page's 'last updated' line",
-    "names_park": null,
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": false,
     "checked": "2026-10-28",
+    "covers": 0,
     "via": "the agency site"
    },
    "rules": {
@@ -29,7 +30,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 4
   },
   "US-0023": {
    "n": "Dry Tortugas National Park",
@@ -44,10 +45,12 @@
     "date_how": "date unknown, checked 2026-10-28",
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "June 17, 2016",
-    "posted_how": "the page's 'last updated' line",
-    "names_park": null,
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.nps.gov/drto/learn/management/lawsandpolicies.htm",
@@ -58,7 +61,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 4
   },
   "US-0024": {
    "n": "Everglades National Park",
@@ -73,10 +76,12 @@
     "date_how": "date unknown, checked 2026-10-28",
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "June 5, 2018",
-    "posted_how": "the page's 'last updated' line",
-    "names_park": null,
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.nps.gov/ever/learn/management/lawsandpolicies.htm",
@@ -87,7 +92,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 4
   },
   "US-0231": {
    "n": "Archie Carr National Wildlife Refuge",
@@ -103,9 +108,11 @@
     "how": "a link on the park's page ('Map')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.fws.gov/refuge/archie-carr/visit-us/rules-policies",
@@ -113,27 +120,26 @@
     "status": "ok"
    },
    "agency": "U.S. Fish and Wildlife Service",
-   "runs": [
-    "managed by the U.S. Fish"
-   ],
+   "runs": [],
    "handover": [],
    "notes": [],
    "map_also": [
     {
-     "url": "https://www.fws.gov/library",
+     "url": "https://www.fws.gov/media/archie-carr-general-brochure",
      "status": "ok",
      "kind": "page",
      "date": null,
      "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Maps, Guides and Resources')",
+     "how": "a link on the park's page ('')",
      "posted": "",
      "posted_how": "",
-     "names_park": null,
+     "names_park": true,
      "checked": "2026-10-28",
+     "covers": 0,
      "via": "the agency site"
     }
    ],
-   "ver": 2
+   "ver": 4
   },
   "US-0232": {
    "n": "Arthur R. Marshall Loxahatchee National Wildlife Refuge",
@@ -149,37 +155,38 @@
     "how": "a link on the park's page ('Map')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
-    "url": "https://www.fws.gov/laws-regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://www.fws.gov/refuge/arthur-r-marshall-loxahatchee/visit-us/rules-policies",
+    "how": "a link on the park's page ('Rules Policies')",
     "status": "ok"
    },
    "agency": "U.S. Fish and Wildlife Service",
-   "runs": [
-    "managed by the U.S. Fish"
-   ],
+   "runs": [],
    "handover": [],
    "notes": [],
    "map_also": [
     {
-     "url": "https://www.fws.gov/library",
+     "url": "https://www.fws.gov/refuge/arthur-r-marshall-loxahatchee/map?trail=perimeter-levee-trail",
      "status": "ok",
      "kind": "page",
      "date": null,
      "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Maps, Guides and Resources')",
+     "how": "a link on the park's page ('Perimeter Levee Trail')",
      "posted": "",
      "posted_how": "",
-     "names_park": null,
+     "names_park": true,
      "checked": "2026-10-28",
+     "covers": 0,
      "via": "the agency site"
     }
    ],
-   "ver": 2
+   "ver": 4
   },
   "US-0234": {
    "n": "Cedar Keys National Wildlife Refuge",
@@ -197,8 +204,11 @@
     "posted_how": "posted: the server's file date",
     "names_park": true,
     "checked": "2026-10-28",
+    "covers": 2,
     "page": "https://www.fws.gov/media/public-use-map-cedar-keys-nwr",
-    "via": "the agency site"
+    "via": "the agency site",
+    "kind_note": "combined map: covers 2 units",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.fws.gov/refuge/cedar-keys/visit-us/rules-policies",
@@ -219,12 +229,13 @@
      "how": "a link on the park's page ('Map')",
      "posted": "",
      "posted_how": "",
-     "names_park": null,
+     "names_park": true,
      "checked": "2026-10-28",
+     "covers": 0,
      "via": "the agency site"
     }
    ],
-   "ver": 2
+   "ver": 4
   },
   "US-0235": {
    "n": "Chassahowitzka National Wildlife Refuge",
@@ -240,9 +251,11 @@
     "how": "a link on the park's page ('Map')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.fws.gov/refuge/chassahowitzka/visit-us/rules-policies",
@@ -253,22 +266,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://www.fws.gov/library",
-     "status": "ok",
-     "kind": "page",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Maps, Guides and Resources')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": null,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-0236": {
    "n": "Crocodile Lake National Wildlife Refuge",
@@ -284,37 +282,22 @@
     "how": "a link on the park's page ('Map')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
-    "url": "https://www.fws.gov/laws-regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://www.fws.gov/policies",
+    "how": "a link on the park's page ('Policies')",
     "status": "ok"
    },
    "agency": "U.S. Fish and Wildlife Service",
-   "runs": [
-    "managed by the U.S. Fish"
-   ],
+   "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://www.fws.gov/library",
-     "status": "ok",
-     "kind": "page",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Maps, Guides and Resources')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": null,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-0237": {
    "n": "Crystal River National Wildlife Refuge",
@@ -330,35 +313,22 @@
     "how": "a link on the park's page ('Map')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
-    "url": "https://www.fws.gov/laws-regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://www.fws.gov/refuge/crystal-river/visit-us/rules-policies",
+    "how": "a link on the park's page ('Rules Policies')",
     "status": "ok"
    },
    "agency": "U.S. Fish and Wildlife Service",
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://www.fws.gov/library",
-     "status": "ok",
-     "kind": "page",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Maps, Guides and Resources')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": null,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-0238": {
    "n": "Egmont Key National Wildlife Refuge",
@@ -374,9 +344,11 @@
     "how": "a link on the park's page ('Map')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.fws.gov/refuge/egmont-key/visit-us/rules-policies",
@@ -385,27 +357,11 @@
    },
    "agency": "U.S. Fish and Wildlife Service",
    "runs": [
-    "is managed by the U.S. Fish",
-    "managed by the U.S. Fish"
+    "managed by the U.S. Fish and Wildlife Service"
    ],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://www.fws.gov/library",
-     "status": "ok",
-     "kind": "page",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Maps, Guides and Resources')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": null,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-0239": {
    "n": "Florida Panther National Wildlife Refuge",
@@ -421,37 +377,38 @@
     "how": "a link on the park's page ('Map')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
-    "url": "https://www.fws.gov/laws-regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://www.fws.gov/refuge/florida-panther/visit-us/rules-policies",
+    "how": "a link on the park's page ('Rules Policies')",
     "status": "ok"
    },
    "agency": "U.S. Fish and Wildlife Service",
-   "runs": [
-    "managed by the U.S. Fish"
-   ],
+   "runs": [],
    "handover": [],
    "notes": [],
    "map_also": [
     {
-     "url": "https://www.fws.gov/library",
+     "url": "https://www.fws.gov/media/florida-panther-general-brochure-2023",
      "status": "ok",
      "kind": "page",
      "date": null,
      "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Maps, Guides and Resources')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": null,
+     "how": "a link on the park's page ('')",
+     "posted": "2023",
+     "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+     "names_park": true,
      "checked": "2026-10-28",
+     "covers": 0,
      "via": "the agency site"
     }
    ],
-   "ver": 2
+   "ver": 4
   },
   "US-0240": {
    "n": "Great White Heron National Wildlife Refuge",
@@ -467,37 +424,24 @@
     "how": "a link on the park's page ('Map')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
-    "url": "https://www.fws.gov/laws-regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://www.fws.gov/policies",
+    "how": "a link on the park's page ('Policies')",
     "status": "ok"
    },
    "agency": "U.S. Fish and Wildlife Service",
    "runs": [
-    "managed by the State of Florida through a Management Agreement"
+    "managed by the State of Florida"
    ],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://www.fws.gov/library",
-     "status": "ok",
-     "kind": "page",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Maps, Guides and Resources')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": null,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-0241": {
    "n": "Hobe Sound National Wildlife Refuge",
@@ -513,9 +457,11 @@
     "how": "a link on the park's page ('Map')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.fws.gov/refuge/nathaniel-p-reed-hobe-sound/visit-us/rules-policies",
@@ -528,20 +474,21 @@
    "notes": [],
    "map_also": [
     {
-     "url": "https://www.fws.gov/library",
+     "url": "https://www.fws.gov/media/npr-hobe-sound-nwr-brochure-2019",
      "status": "ok",
      "kind": "page",
      "date": null,
      "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Maps, Guides and Resources')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": null,
+     "how": "a link on the park's page ('')",
+     "posted": "2019",
+     "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+     "names_park": true,
      "checked": "2026-10-28",
+     "covers": 0,
      "via": "the agency site"
     }
    ],
-   "ver": 2
+   "ver": 4
   },
   "US-0243": {
    "n": "J.N. Ding Darling National Wildlife Refuge",
@@ -557,37 +504,22 @@
     "how": "a link on the park's page ('Map')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
-    "url": "https://www.fws.gov/laws-regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://www.fws.gov/refuge/jn-ding-darling/visit-us/rules-policies",
+    "how": "a link on the park's page ('Rules Policies')",
     "status": "ok"
    },
    "agency": "U.S. Fish and Wildlife Service",
-   "runs": [
-    "managed by the U.S. Fish"
-   ],
+   "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://www.fws.gov/library",
-     "status": "ok",
-     "kind": "page",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Maps, Guides and Resources')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": null,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-0244": {
    "n": "Key West National Wildlife Refuge",
@@ -603,9 +535,11 @@
     "how": "a link on the park's page ('Map')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.fws.gov/refuge/key-west/visit-us/rules-policies",
@@ -614,26 +548,11 @@
    },
    "agency": "U.S. Fish and Wildlife Service",
    "runs": [
-    "managed by the State of Florida through a Management Agreement"
+    "managed by the State of Florida"
    ],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://www.fws.gov/library",
-     "status": "ok",
-     "kind": "page",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Maps, Guides and Resources')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": null,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-0245": {
    "n": "Lake Wales Ridge Wildlife Management Area",
@@ -641,30 +560,29 @@
    "page": "https://myfwc.com/recreation/lead/lake-wales-ridge/",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://gis.myfwc.com/RecreationMap/",
-    "status": "ok",
+    "url": "https://myfwc.com/hunting/wma-brochures/",
+    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Explore by map')",
+    "date_how": "",
+    "how": "a link on the park's page ('WMA Brochures')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
-    "via": "same government (gis.myfwc.com)"
+    "covers": 0,
+    "via": "the agency site"
    },
    "rules": {
-    "url": "https://myfwc.com/about/rules-regulations/",
-    "how": "a link on the park's page ('Know the Rules')",
+    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
+    "how": "a link on the park's page ('Range Safety Rules')",
     "status": "ok"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the map link refused a plain reader (ok)",
-   "ver": 2,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-0246": {
    "n": "Lake Woodruff National Wildlife Refuge",
@@ -680,37 +598,22 @@
     "how": "a link on the park's page ('Map')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
-    "url": "https://www.fws.gov/laws-regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://www.fws.gov/refuge/lake-woodruff/visit-us/rules-policies",
+    "how": "a link on the park's page ('Rules Policies')",
     "status": "ok"
    },
    "agency": "U.S. Fish and Wildlife Service",
-   "runs": [
-    "managed by the U.S. Fish"
-   ],
+   "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://www.fws.gov/library",
-     "status": "ok",
-     "kind": "page",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Maps, Guides and Resources')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": null,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-0247": {
    "n": "Lower Suwannee National Wildlife Refuge",
@@ -726,13 +629,15 @@
     "how": "a link on the park's page ('Map')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
-    "url": "https://www.fws.gov/laws-regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://www.fws.gov/policies",
+    "how": "a link on the park's page ('Policies')",
     "status": "ok"
    },
    "agency": "U.S. Fish and Wildlife Service",
@@ -741,20 +646,21 @@
    "notes": [],
    "map_also": [
     {
-     "url": "https://www.fws.gov/library",
+     "url": "https://www.fws.gov/media/lower-suwannee-general-information-brochure",
      "status": "ok",
      "kind": "page",
      "date": null,
      "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Maps, Guides and Resources')",
+     "how": "a link on the park's page ('')",
      "posted": "",
      "posted_how": "",
-     "names_park": null,
+     "names_park": true,
      "checked": "2026-10-28",
+     "covers": 0,
      "via": "the agency site"
     }
    ],
-   "ver": 2
+   "ver": 4
   },
   "US-0249": {
    "n": "Merritt Island National Wildlife Refuge",
@@ -770,9 +676,11 @@
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.fws.gov/refuge/merritt-island/visit-us/rules-policies",
@@ -780,9 +688,7 @@
     "status": "ok"
    },
    "agency": "U.S. Fish and Wildlife Service",
-   "runs": [
-    "managed by the U.S. Fish"
-   ],
+   "runs": [],
    "handover": [],
    "notes": [],
    "map_also": [
@@ -795,12 +701,13 @@
      "how": "a link on the park's page ('Map')",
      "posted": "",
      "posted_how": "",
-     "names_park": null,
+     "names_park": true,
      "checked": "2026-10-28",
+     "covers": 0,
      "via": "the agency site"
     }
    ],
-   "ver": 2
+   "ver": 4
   },
   "US-0250": {
    "n": "National Key Deer National Wildlife Refuge",
@@ -816,37 +723,22 @@
     "how": "a link on the park's page ('Map')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
-    "url": "https://www.fws.gov/laws-regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://www.fws.gov/refuge/national-key-deer/visit-us/rules-policies",
+    "how": "a link on the park's page ('Rules Policies')",
     "status": "ok"
    },
    "agency": "U.S. Fish and Wildlife Service",
-   "runs": [
-    "managed by the U.S. Fish"
-   ],
+   "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://www.fws.gov/library",
-     "status": "ok",
-     "kind": "page",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Maps, Guides and Resources')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": null,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-0252": {
    "n": "Pelican Island National Wildlife Refuge",
@@ -862,9 +754,11 @@
     "how": "a link on the park's page ('Map')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.fws.gov/refuge/pelican-island/visit-us/rules-policies",
@@ -885,12 +779,13 @@
      "how": "a link on the park's page ('Pelican Island Visitor Facilities Map')",
      "posted": "",
      "posted_how": "",
-     "names_park": null,
+     "names_park": true,
      "checked": "2026-10-28",
+     "covers": 0,
      "via": "the agency site"
     }
    ],
-   "ver": 2
+   "ver": 4
   },
   "US-0256": {
    "n": "St. Marks National Wildlife Refuge",
@@ -906,13 +801,15 @@
     "how": "a link on the park's page ('Map')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
-    "url": "https://www.fws.gov/laws-regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://www.fws.gov/refuge/st-marks/visit-us/rules-policies",
+    "how": "a link on the park's page ('Rules Policies')",
     "status": "ok"
    },
    "agency": "U.S. Fish and Wildlife Service",
@@ -921,20 +818,21 @@
    "notes": [],
    "map_also": [
     {
-     "url": "https://www.fws.gov/library",
+     "url": "https://www.fws.gov/library/collections/maps-st-marks-nwr",
      "status": "ok",
      "kind": "page",
      "date": null,
      "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Maps, Guides and Resources')",
+     "how": "a link on the park's page ('online library')",
      "posted": "",
      "posted_how": "",
-     "names_park": null,
+     "names_park": true,
      "checked": "2026-10-28",
+     "covers": 0,
      "via": "the agency site"
     }
    ],
-   "ver": 2
+   "ver": 4
   },
   "US-0257": {
    "n": "St. Vincent National Wildlife Refuge",
@@ -950,35 +848,22 @@
     "how": "a link on the park's page ('Map')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
-    "url": "https://www.fws.gov/laws-regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://www.fws.gov/policies",
+    "how": "a link on the park's page ('Policies')",
     "status": "ok"
    },
    "agency": "U.S. Fish and Wildlife Service",
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://www.fws.gov/library",
-     "status": "ok",
-     "kind": "page",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Maps, Guides and Resources')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": null,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-0258": {
    "n": "Ten Thousand Islands National Wildlife Refuge",
@@ -994,37 +879,22 @@
     "how": "a link on the park's page ('Map')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
-    "url": "https://www.fws.gov/laws-regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://www.fws.gov/refuge/ten-thousand-islands/visit-us/rules-policies",
+    "how": "a link on the park's page ('Rules Policies')",
     "status": "ok"
    },
    "agency": "U.S. Fish and Wildlife Service",
-   "runs": [
-    "managed by the U.S. Fish"
-   ],
+   "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://www.fws.gov/library",
-     "status": "ok",
-     "kind": "page",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Maps, Guides and Resources')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": null,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-0634": {
    "n": "Little Talbot State Park",
@@ -1044,12 +914,9 @@
    "agency": "Florida State Parks (DEP)",
    "runs": [],
    "handover": [],
-   "notes": [
-    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
-    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
-   ],
+   "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 4
   },
   "US-0635": {
    "n": "St. George State Park",
@@ -1069,12 +936,9 @@
    "agency": "Florida State Parks (DEP)",
    "runs": [],
    "handover": [],
-   "notes": [
-    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
-    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
-   ],
+   "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 4
   },
   "US-0658": {
    "n": "Timucuan Preserve National Conservation Area",
@@ -1089,10 +953,12 @@
     "date_how": "date unknown, checked 2026-10-28",
     "how": "a link on the park's page ('Maps')",
     "posted": "November 18, 2021",
-    "posted_how": "the page's 'last updated' line",
-    "names_park": null,
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.nps.gov/timu/learn/management/lawsandpolicies.htm",
@@ -1103,7 +969,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 4
   },
   "US-0659": {
    "n": "Big Cypress National Preserve",
@@ -1118,10 +984,12 @@
     "date_how": "date unknown, checked 2026-10-28",
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "August 13, 2025",
-    "posted_how": "the page's 'last updated' line",
-    "names_park": null,
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.nps.gov/bicy/learn/management/lawsandpolicies.htm",
@@ -1132,7 +1000,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 4
   },
   "US-0660": {
    "n": "Canaveral National Seashore",
@@ -1147,10 +1015,12 @@
     "date_how": "date unknown, checked 2026-10-28",
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "September 17, 2023",
-    "posted_how": "the page's 'last updated' line",
-    "names_park": null,
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.nps.gov/cana/learn/management/lawsandpolicies.htm",
@@ -1161,7 +1031,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 4
   },
   "US-0661": {
    "n": "Gulf Islands National Seashore",
@@ -1169,18 +1039,19 @@
    "page": "https://www.nps.gov/guis/index.htm",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.nps.gov/guis/planyourvisit/upload/Fort-Pickens-Area-508-1.pdf",
+    "url": "https://www.nps.gov/guis/planyourvisit/maps.htm",
     "status": "ok",
-    "kind": "pdf",
+    "kind": "page",
     "date": null,
     "date_how": "date unknown, checked 2026-10-28",
-    "how": "on file (parkinfo-web / Kentucky answer key) -> the page's 'Fort Pickens Area Map' file",
-    "posted": "Feb 24, 2025",
-    "posted_how": "posted: the server's file date",
-    "names_park": false,
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "July 23, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
     "checked": "2026-10-28",
-    "page": "https://www.nps.gov/guis/planyourvisit/maps.htm",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.nps.gov/guis/learn/management/lawsandpolicies.htm",
@@ -1191,7 +1062,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 4
   },
   "US-0772": {
    "n": "De Soto National Memorial",
@@ -1206,10 +1077,12 @@
     "date_how": "date unknown, checked 2026-10-28",
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "March 7, 2016",
-    "posted_how": "the page's 'last updated' line",
-    "names_park": null,
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.nps.gov/deso/learn/management/lawsandpolicies.htm",
@@ -1220,7 +1093,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 4
   },
   "US-0775": {
    "n": "Fort Caroline National Memorial",
@@ -1241,7 +1114,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 4
   },
   "US-0896": {
    "n": "Wekiva National Wild and Scenic River",
@@ -1257,9 +1130,11 @@
     "how": "a link on the park's page ('System-wide Map')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "linked from the agency page (fws.gov)"
+    "covers": 0,
+    "via": "linked from the agency page (fws.gov)",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "",
@@ -1267,12 +1142,10 @@
     "status": "not found"
    },
    "agency": "government agency (rivers.gov)",
-   "runs": [
-    "is administered by either a federal or state agency"
-   ],
+   "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 4
   },
   "US-0912": {
    "n": "Castillo de San Marcos National Monument",
@@ -1287,10 +1160,12 @@
     "date_how": "date unknown, checked 2026-10-28",
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "March 2, 2016",
-    "posted_how": "the page's 'last updated' line",
-    "names_park": null,
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.nps.gov/casa/learn/management/lawsandpolicies.htm",
@@ -1301,7 +1176,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 4
   },
   "US-0927": {
    "n": "Fort Matanzas National Monument",
@@ -1316,10 +1191,12 @@
     "date_how": "date unknown, checked 2026-10-28",
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "March 7, 2016",
-    "posted_how": "the page's 'last updated' line",
-    "names_park": null,
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.nps.gov/foma/learn/management/lawsandpolicies.htm",
@@ -1330,7 +1207,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 4
   },
   "US-10462": {
    "n": "DuPuis State Conservation Area",
@@ -1346,9 +1223,11 @@
     "how": "a link on the park's page ('Recreation Area Map')",
     "posted": "Apr 04, 2025",
     "posted_how": "posted: the server's file date",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.sfwmd.gov/doing-business-with-us/rules",
@@ -1357,11 +1236,11 @@
    },
    "agency": "Florida water management district",
    "runs": [
-    "is managed by the Florida Fish"
+    "is managed by the Florida Fish and Wildlife Conservation Commission"
    ],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 4
   },
   "US-10463": {
    "n": "Price's Scrub State Park",
@@ -1383,8 +1262,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-10550": {
    "n": "Scanlon State Conservation Area",
@@ -1400,9 +1278,11 @@
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "",
@@ -1413,22 +1293,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/07/map-legend.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": "2021-10-20",
-     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-     "how": "a link on the park's page ('Map Legend')",
-     "posted": "2021-07",
-     "posted_how": "posted: the upload folder in the address",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-10551": {
    "n": "Falling Creek State Conservation Area",
@@ -1444,9 +1309,11 @@
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "",
@@ -1457,22 +1324,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/07/map-legend.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": "2021-10-20",
-     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-     "how": "a link on the park's page ('Map Legend')",
-     "posted": "2021-07",
-     "posted_how": "posted: the upload folder in the address",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-10552": {
    "n": "Fox Trail State Conservation Area",
@@ -1488,9 +1340,11 @@
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "",
@@ -1501,22 +1355,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/07/map-legend.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": "2021-10-20",
-     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-     "how": "a link on the park's page ('Map Legend')",
-     "posted": "2021-07",
-     "posted_how": "posted: the upload folder in the address",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-10553": {
    "n": "Guaranto State Conservation Area",
@@ -1532,9 +1371,11 @@
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "",
@@ -1545,22 +1386,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/07/map-legend.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": "2021-10-20",
-     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-     "how": "a link on the park's page ('Map Legend')",
-     "posted": "2021-07",
-     "posted_how": "posted: the upload folder in the address",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-10554": {
    "n": "Suwannee Street State Conservation Area",
@@ -1576,9 +1402,11 @@
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "",
@@ -1589,22 +1417,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/07/map-legend.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": "2021-10-20",
-     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-     "how": "a link on the park's page ('Map Legend')",
-     "posted": "2021-07",
-     "posted_how": "posted: the upload folder in the address",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-10559": {
    "n": "Camp Branch State Conservation Area",
@@ -1620,9 +1433,11 @@
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "",
@@ -1633,22 +1448,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/07/map-legend.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": "2021-10-20",
-     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-     "how": "a link on the park's page ('Map Legend')",
-     "posted": "2021-07",
-     "posted_how": "posted: the upload folder in the address",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-10565": {
    "n": "Stuart's Landing North State Conservation Area",
@@ -1664,9 +1464,11 @@
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "",
@@ -1677,22 +1479,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/07/map-legend.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": "2021-10-20",
-     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-     "how": "a link on the park's page ('Map Legend')",
-     "posted": "2021-07",
-     "posted_how": "posted: the upload folder in the address",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-10566": {
    "n": "Stuart's Landing South State Conservation Area",
@@ -1708,9 +1495,11 @@
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "",
@@ -1721,22 +1510,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/07/map-legend.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": "2021-10-20",
-     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-     "how": "a link on the park's page ('Map Legend')",
-     "posted": "2021-07",
-     "posted_how": "posted: the upload folder in the address",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-10567": {
    "n": "Hatchbend State Conservation Area",
@@ -1752,9 +1526,11 @@
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "",
@@ -1765,22 +1541,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/07/map-legend.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": "2021-10-20",
-     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-     "how": "a link on the park's page ('Map Legend')",
-     "posted": "2021-07",
-     "posted_how": "posted: the upload folder in the address",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-10568": {
    "n": "Trillium Slopes State Conservation Area",
@@ -1788,16 +1549,17 @@
    "page": "https://map.mysuwanneeriver.com/tracts/trillium-slopes/",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://map.mysuwanneeriver.com/",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('')",
+    "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/07/map-legend.pdf",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+    "kind": "pdf",
+    "date": "2021-10-20",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Map Legend')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
+    "covers": 0,
     "via": "the agency site"
    },
    "rules": {
@@ -1809,22 +1571,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/07/map-legend.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": "2021-10-20",
-     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-     "how": "a link on the park's page ('Map Legend')",
-     "posted": "2021-07",
-     "posted_how": "posted: the upload folder in the address",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-10569": {
    "n": "Hunter Creek State Conservation Area",
@@ -1832,16 +1579,17 @@
    "page": "https://map.mysuwanneeriver.com/tracts/hunter-creek/",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Hunter-Creek.jpg",
-    "status": "ok",
-    "kind": "image",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('')",
-    "posted": "2021-09",
-    "posted_how": "posted: the upload folder in the address",
-    "names_park": null,
+    "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/07/map-legend.pdf",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+    "kind": "pdf",
+    "date": "2021-10-20",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Map Legend')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": false,
     "checked": "2026-10-28",
+    "covers": 0,
     "via": "the agency site"
    },
    "rules": {
@@ -1853,22 +1601,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/07/map-legend.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": "2021-10-20",
-     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-     "how": "a link on the park's page ('Map Legend')",
-     "posted": "2021-07",
-     "posted_how": "posted: the upload folder in the address",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-10570": {
    "n": "Belmont State Conservation Area",
@@ -1884,9 +1617,11 @@
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "",
@@ -1897,22 +1632,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/07/map-legend.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": "2021-10-20",
-     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-     "how": "a link on the park's page ('Map Legend')",
-     "posted": "2021-07",
-     "posted_how": "posted: the upload folder in the address",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-10571": {
    "n": "Avoca State Conservation Area",
@@ -1928,9 +1648,11 @@
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "",
@@ -1941,22 +1663,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/07/map-legend.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": "2021-10-20",
-     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-     "how": "a link on the park's page ('Map Legend')",
-     "posted": "2021-07",
-     "posted_how": "posted: the upload folder in the address",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-10588": {
    "n": "Branford-Bend State Conservation Area",
@@ -1972,9 +1679,11 @@
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "",
@@ -1985,22 +1694,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/07/map-legend.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": "2021-10-20",
-     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-     "how": "a link on the park's page ('Map Legend')",
-     "posted": "2021-07",
-     "posted_how": "posted: the upload folder in the address",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-10590": {
    "n": "Lake Alto State Conservation Area",
@@ -2016,9 +1710,11 @@
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "",
@@ -2029,22 +1725,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/07/map-legend.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": "2021-10-20",
-     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-     "how": "a link on the park's page ('Map Legend')",
-     "posted": "2021-07",
-     "posted_how": "posted: the upload folder in the address",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-10591": {
    "n": "Steinhatchee Rise State Conservation Area",
@@ -2060,9 +1741,11 @@
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "",
@@ -2073,22 +1756,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Steinhatchee-Falls-Steinhatchee-Rise-Map.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Steinhatchee Falls, Steinhatchee Rise Map')",
-     "posted": "2021-09",
-     "posted_how": "posted: the upload folder in the address",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-10592": {
    "n": "Big Pine Tract State Conservation Area",
@@ -2104,9 +1772,11 @@
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "",
@@ -2117,22 +1787,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/07/map-legend.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": "2021-10-20",
-     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-     "how": "a link on the park's page ('Map Legend')",
-     "posted": "2021-07",
-     "posted_how": "posted: the upload folder in the address",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-10593": {
    "n": "New Pine Landing State Conservation Area",
@@ -2148,9 +1803,11 @@
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "",
@@ -2161,22 +1818,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/07/map-legend.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": "2021-10-20",
-     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-     "how": "a link on the park's page ('Map Legend')",
-     "posted": "2021-07",
-     "posted_how": "posted: the upload folder in the address",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-10594": {
    "n": "Manatee Springs South State Conservation Area",
@@ -2192,9 +1834,11 @@
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "",
@@ -2205,22 +1849,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/07/map-legend.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": "2021-10-20",
-     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-     "how": "a link on the park's page ('Map Legend')",
-     "posted": "2021-07",
-     "posted_how": "posted: the upload folder in the address",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-10601": {
    "n": "Suwannee Springs Park State Conservation Area",
@@ -2236,9 +1865,11 @@
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "",
@@ -2249,22 +1880,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/07/map-legend.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": "2021-10-20",
-     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-     "how": "a link on the park's page ('Map Legend')",
-     "posted": "2021-07",
-     "posted_how": "posted: the upload folder in the address",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-10602": {
    "n": "Linville State Conservation Area",
@@ -2280,9 +1896,11 @@
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "",
@@ -2293,22 +1911,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/07/map-legend.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": "2021-10-20",
-     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-     "how": "a link on the park's page ('Map Legend')",
-     "posted": "2021-07",
-     "posted_how": "posted: the upload folder in the address",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-10603": {
    "n": "Rocky Creek State Conservation Area",
@@ -2324,9 +1927,11 @@
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "",
@@ -2337,22 +1942,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/07/map-legend.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": "2021-10-20",
-     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-     "how": "a link on the park's page ('Map Legend')",
-     "posted": "2021-07",
-     "posted_how": "posted: the upload folder in the address",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-10604": {
    "n": "Blue Sink State Conservation Area",
@@ -2368,9 +1958,11 @@
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "",
@@ -2381,22 +1973,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/07/map-legend.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": "2021-10-20",
-     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-     "how": "a link on the park's page ('Map Legend')",
-     "posted": "2021-07",
-     "posted_how": "posted: the upload folder in the address",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-10614": {
    "n": "Roline State Conservation Area",
@@ -2412,9 +1989,11 @@
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "",
@@ -2425,22 +2004,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/07/map-legend.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": "2021-10-20",
-     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-     "how": "a link on the park's page ('Map Legend')",
-     "posted": "2021-07",
-     "posted_how": "posted: the upload folder in the address",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-10615": {
    "n": "Cypress Creek South State Conservation Area",
@@ -2456,9 +2020,11 @@
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "",
@@ -2469,22 +2035,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/07/map-legend.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": "2021-10-20",
-     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-     "how": "a link on the park's page ('Map Legend')",
-     "posted": "2021-07",
-     "posted_how": "posted: the upload folder in the address",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-10616": {
    "n": "Tyree State Conservation Area",
@@ -2500,9 +2051,11 @@
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "",
@@ -2513,22 +2066,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/07/map-legend.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": "2021-10-20",
-     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-     "how": "a link on the park's page ('Map Legend')",
-     "posted": "2021-07",
-     "posted_how": "posted: the upload folder in the address",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-10617": {
    "n": "Alapaha Bluffs State Conservation Area",
@@ -2544,9 +2082,11 @@
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "",
@@ -2557,22 +2097,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/07/map-legend.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": "2021-10-20",
-     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-     "how": "a link on the park's page ('Map Legend')",
-     "posted": "2021-07",
-     "posted_how": "posted: the upload folder in the address",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-10618": {
    "n": "Wolf Creek State Conservation Area",
@@ -2588,9 +2113,11 @@
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "",
@@ -2601,22 +2128,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/07/map-legend.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": "2021-10-20",
-     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-     "how": "a link on the park's page ('Map Legend')",
-     "posted": "2021-07",
-     "posted_how": "posted: the upload folder in the address",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-10619": {
    "n": "Little River Wildlife Management Area",
@@ -2624,30 +2136,29 @@
    "page": "https://myfwc.com/recreation/cooperative/little-river/",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://gis.myfwc.com/RecreationMap/",
-    "status": "ok",
+    "url": "https://myfwc.com/hunting/wma-brochures/",
+    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Explore by map')",
+    "date_how": "",
+    "how": "a link on the park's page ('WMA Brochures')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
-    "via": "same government (gis.myfwc.com)"
+    "covers": 0,
+    "via": "the agency site"
    },
    "rules": {
-    "url": "https://myfwc.com/about/rules-regulations/",
-    "how": "a link on the park's page ('Know the Rules')",
+    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
+    "how": "a link on the park's page ('Range Safety Rules')",
     "status": "ok"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the map link refused a plain reader (ok)",
-   "ver": 2,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-10620": {
    "n": "Jerry Branch State Conservation Area",
@@ -2663,9 +2174,11 @@
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "",
@@ -2676,22 +2189,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/07/map-legend.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": "2021-10-20",
-     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-     "how": "a link on the park's page ('Map Legend')",
-     "posted": "2021-07",
-     "posted_how": "posted: the upload folder in the address",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-11223": {
    "n": "Ruth B. Kirby Gilchrist Blue Springs State Park",
@@ -2713,8 +2211,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-12097": {
    "n": "Hickory Hammock Wildlife Management Area",
@@ -2722,30 +2219,29 @@
    "page": "https://myfwc.com/recreation/cooperative/hickory-hammock/",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://gis.myfwc.com/RecreationMap/",
-    "status": "ok",
+    "url": "https://myfwc.com/hunting/wma-brochures/",
+    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Explore by map')",
+    "date_how": "",
+    "how": "a link on the park's page ('WMA Brochures')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
-    "via": "same government (gis.myfwc.com)"
+    "covers": 0,
+    "via": "the agency site"
    },
    "rules": {
-    "url": "https://myfwc.com/about/rules-regulations/",
-    "how": "a link on the park's page ('Know the Rules')",
+    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
+    "how": "a link on the park's page ('Range Safety Rules')",
     "status": "ok"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the map link refused a plain reader (ok)",
-   "ver": 2,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-12121": {
    "n": "Lower Reedy Creek: Rough Island North and South, and Johnson Island State Conservation Area",
@@ -2761,9 +2257,11 @@
     "how": "a link on the park's page ('Recreation Area Map')",
     "posted": "Apr 16, 2025",
     "posted_how": "posted: the server's file date",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.sfwmd.gov/doing-business-with-us/rules",
@@ -2772,11 +2270,11 @@
    },
    "agency": "Florida water management district",
    "runs": [
-    "is managed by the Florida Fish"
+    "is managed by the Florida Fish and Wildlife Conservation Commission"
    ],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 4
   },
   "US-12122": {
    "n": "S-65E Impoundment and Paradise Run State Conservation Area",
@@ -2792,9 +2290,11 @@
     "how": "a link on the park's page ('Recreation Area Map')",
     "posted": "Apr 17, 2025",
     "posted_how": "posted: the server's file date",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.sfwmd.gov/doing-business-with-us/rules",
@@ -2803,11 +2303,11 @@
    },
    "agency": "Florida water management district",
    "runs": [
-    "is managed by the Florida Fish"
+    "is managed by the Florida Fish and Wildlife Conservation Commission"
    ],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 4
   },
   "US-12123": {
    "n": "Oak Creek, No Name Slough and Starvation Slough State Conservation Area",
@@ -2823,9 +2323,11 @@
     "how": "a link on the park's page ('Recreation Area Map')",
     "posted": "Apr 17, 2025",
     "posted_how": "posted: the server's file date",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.sfwmd.gov/doing-business-with-us/rules",
@@ -2834,11 +2336,11 @@
    },
    "agency": "Florida water management district",
    "runs": [
-    "is managed by the Florida Fish"
+    "is managed by the Florida Fish and Wildlife Conservation Commission"
    ],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 4
   },
   "US-12124": {
    "n": "Harold A. Campbell Public Use and STA 3/4 State Conservation Area",
@@ -2847,15 +2349,16 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://www.sfwmd.gov/sites/default/files/documents/map_showing_public_access_to_stas.pdf",
-    "status": "ok",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "a link on the park's page ('Map of Public Access Locations for STAs [PDF]')",
-    "posted": "Aug 08, 2017",
-    "posted_how": "posted: the server's file date",
+    "posted": "",
+    "posted_how": "",
     "names_park": false,
     "checked": "2026-10-28",
+    "covers": 0,
     "via": "the agency site"
    },
    "rules": {
@@ -2865,26 +2368,11 @@
    },
    "agency": "Florida water management district",
    "runs": [
-    "is managed by the Florida Fish"
+    "is managed by the Florida Fish and Wildlife Conservation Commission"
    ],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://www.sfwmd.gov/sites/default/files/documents/trailguide_h_campbell.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Trail Guide and Map - Harold A. Campbell Public Use Area [PDF]')",
-     "posted": "Jan 19, 2017",
-     "posted_how": "posted: the server's file date",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-12125": {
    "n": "Seaboard Marsh, Telex Marsh and Yates Marsh State Conservation Area",
@@ -2900,9 +2388,11 @@
     "how": "a link on the park's page ('Recreation Area Map')",
     "posted": "Apr 17, 2025",
     "posted_how": "posted: the server's file date",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.sfwmd.gov/doing-business-with-us/rules",
@@ -2911,26 +2401,11 @@
    },
    "agency": "Florida water management district",
    "runs": [
-    "is managed by the Florida Fish"
+    "is managed by the Florida Fish and Wildlife Conservation Commission"
    ],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://www.sfwmd.gov/sites/default/files/documents/trailguide_chandler_slough.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Trail Guide and Map – Chandler Slough Management Unit [PDF]')",
-     "posted": "Dec 30, 2016",
-     "posted_how": "posted: the server's file date",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-12126": {
    "n": "Stormwater Treatment Area 5/6 State Conservation Area",
@@ -2939,15 +2414,16 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://www.sfwmd.gov/sites/default/files/documents/trailguide_sta5_6.pdf",
-    "status": "ok",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "a link on the park's page ('Trail Guide and Map – Stormwater Treatment Area 5/6 [PDF]')",
-    "posted": "Jan 05, 2017",
-    "posted_how": "posted: the server's file date",
+    "posted": "",
+    "posted_how": "",
     "names_park": false,
     "checked": "2026-10-28",
+    "covers": 0,
     "via": "the agency site"
    },
    "rules": {
@@ -2957,26 +2433,11 @@
    },
    "agency": "Florida water management district",
    "runs": [
-    "is managed by the Florida Fish"
+    "is managed by the Florida Fish and Wildlife Conservation Commission"
    ],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://www.sfwmd.gov/sites/default/files/documents/map_showing_public_access_to_stas.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Map of Public Access Locations for STAs [PDF]')",
-     "posted": "Aug 08, 2017",
-     "posted_how": "posted: the server's file date",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-12127": {
    "n": "Stormwater Treatment Area 1 West State Conservation Area",
@@ -2985,15 +2446,16 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://www.sfwmd.gov/sites/default/files/documents/map_showing_public_access_to_stas.pdf",
-    "status": "ok",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "a link on the park's page ('Map of Public Access Locations for STAs [PDF]')",
-    "posted": "Aug 08, 2017",
-    "posted_how": "posted: the server's file date",
+    "posted": "",
+    "posted_how": "",
     "names_park": false,
     "checked": "2026-10-28",
+    "covers": 0,
     "via": "the agency site"
    },
    "rules": {
@@ -3003,26 +2465,11 @@
    },
    "agency": "Florida water management district",
    "runs": [
-    "is managed by the Florida Fish"
+    "is managed by the Florida Fish and Wildlife Conservation Commission"
    ],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://www.sfwmd.gov/sites/default/files/documents/trailguide_sta1w.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Trail Guide and Map - Stormwater Treatment Area 1 West [PDF]')",
-     "posted": "Aug 23, 2016",
-     "posted_how": "posted: the server's file date",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-12128": {
    "n": "Stormwater Treatment Area 1 East State Conservation Area",
@@ -3031,15 +2478,16 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://www.sfwmd.gov/sites/default/files/documents/map_showing_public_access_to_stas.pdf",
-    "status": "ok",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "a link on the park's page ('Map of Public Access Locations for STAs [PDF]')",
-    "posted": "Aug 08, 2017",
-    "posted_how": "posted: the server's file date",
+    "posted": "",
+    "posted_how": "",
     "names_park": false,
     "checked": "2026-10-28",
+    "covers": 0,
     "via": "the agency site"
    },
    "rules": {
@@ -3049,26 +2497,11 @@
    },
    "agency": "Florida water management district",
    "runs": [
-    "is managed by the Florida Fish"
+    "is managed by the Florida Fish and Wildlife Conservation Commission"
    ],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://www.sfwmd.gov/sites/default/files/documents/trailguide_sta1e.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": "2008-05-06",
-     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-     "how": "a link on the park's page ('Trail Guide and Map - Stormwater Treatment Area 1 East [PDF]')",
-     "posted": "Dec 21, 2017",
-     "posted_how": "posted: the server's file date",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-12129": {
    "n": "Shingle Creek State Conservation Area",
@@ -3084,9 +2517,11 @@
     "how": "a link on the park's page ('Recreation Area Map')",
     "posted": "Apr 03, 2025",
     "posted_how": "posted: the server's file date",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.sfwmd.gov/doing-business-with-us/rules",
@@ -3097,22 +2532,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://www.sfwmd.gov/sites/default/files/documents/sc_trailguide_2.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Trail Guide and Map - Shingle Creek Management Area [PDF]')",
-     "posted": "Aug 08, 2017",
-     "posted_how": "posted: the server's file date",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-12130": {
    "n": "Nubbin Slough Stormwater Treatment Area State Conservation Area",
@@ -3128,9 +2548,11 @@
     "how": "a link on the park's page ('Recreation Area Map')",
     "posted": "Apr 07, 2025",
     "posted_how": "posted: the server's file date",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.sfwmd.gov/doing-business-with-us/rules",
@@ -3141,7 +2563,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 4
   },
   "US-12131": {
    "n": "Loxahatchee River/Cypress Creek Management Area State Conservation Area",
@@ -3157,9 +2579,11 @@
     "how": "a link on the park's page ('Recreation Area Map')",
     "posted": "Apr 17, 2025",
     "posted_how": "posted: the server's file date",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.sfwmd.gov/doing-business-with-us/rules",
@@ -3170,7 +2594,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 4
   },
   "US-12132": {
    "n": "Chandler Slough State Conservation Area",
@@ -3186,9 +2610,11 @@
     "how": "a link on the park's page ('Recreation Area Map')",
     "posted": "Apr 17, 2025",
     "posted_how": "posted: the server's file date",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.sfwmd.gov/doing-business-with-us/rules",
@@ -3197,26 +2623,11 @@
    },
    "agency": "Florida water management district",
    "runs": [
-    "is managed by the Florida Fish"
+    "is managed by the Florida Fish and Wildlife Conservation Commission"
    ],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://www.sfwmd.gov/sites/default/files/documents/trailguide_chandler_slough.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Trail Guide and Map – Chandler Slough Management Unit [PDF]')",
-     "posted": "Dec 30, 2016",
-     "posted_how": "posted: the server's file date",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-12133": {
    "n": "Catfish Creek State Conservation Area",
@@ -3232,9 +2643,11 @@
     "how": "a link on the park's page ('Recreation Area Map')",
     "posted": "Apr 16, 2025",
     "posted_how": "posted: the server's file date",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.sfwmd.gov/doing-business-with-us/rules",
@@ -3243,11 +2656,11 @@
    },
    "agency": "Florida water management district",
    "runs": [
-    "is managed by the Florida Fish"
+    "is managed by the Florida Fish and Wildlife Conservation Commission"
    ],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 4
   },
   "US-12134": {
    "n": "A-1 Flow Equalization Basin State Conservation Area",
@@ -3263,9 +2676,11 @@
     "how": "a link on the park's page ('Recreation Area Map')",
     "posted": "Apr 04, 2025",
     "posted_how": "posted: the server's file date",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.sfwmd.gov/doing-business-with-us/rules",
@@ -3274,26 +2689,11 @@
    },
    "agency": "Florida water management district",
    "runs": [
-    "is managed by the Florida Fish"
+    "is managed by the Florida Fish and Wildlife Conservation Commission"
    ],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://www.sfwmd.gov/sites/default/files/A1_Closure_2022.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('map of A-1 FEB')",
-     "posted": "2022",
-     "posted_how": "a year in the file's name (an edition hint, not a printed date)",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 4
   },
   "US-12135": {
    "n": "Myakka River — Flatford Swamp State Conservation Area",
@@ -3302,15 +2702,16 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://www.swfwmd.state.fl.us/sites/default/files/Flatford%20Swamp%20Georeferenced%2009-15-2022.pdf",
-    "status": "ok",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "a link on the park's page ('Flatford Swamp Georeferenced map')",
-    "posted": "2022",
-    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "posted": "",
+    "posted_how": "",
     "names_park": false,
     "checked": "2026-10-28",
+    "covers": 0,
     "via": "the agency site"
    },
    "rules": {
@@ -3322,7 +2723,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 4
   },
   "US-12136": {
    "n": "Deep Creek Preserve Desoto County State Conservation Area",
@@ -3331,15 +2732,16 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://www.swfwmd.state.fl.us/sites/default/files/Deep%20Creek%20Georeferenced%20%2003-02-2023.pdf",
-    "status": "ok",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "a link on the park's page ('Deep Creek Georeferenced map')",
-    "posted": "2023",
-    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "posted": "",
+    "posted_how": "",
     "names_park": false,
     "checked": "2026-10-28",
+    "covers": 0,
     "via": "the agency site"
    },
    "rules": {
@@ -3351,7 +2753,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 4
   },
   "US-13011": {
    "n": "Shoal River Headwaters State Park",
@@ -3373,8 +2775,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-1829": {
    "n": "Alafia River State Park",
@@ -3396,8 +2797,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-1830": {
    "n": "Alfred B.Maclay Gardens State Park",
@@ -3419,8 +2819,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-1831": {
    "n": "Amelia Island State Park",
@@ -3442,8 +2841,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-1832": {
    "n": "Anastasia State Park",
@@ -3465,8 +2863,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-1833": {
    "n": "Avalon State Park",
@@ -3488,8 +2885,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-1834": {
    "n": "Bahia Honda State Park",
@@ -3511,8 +2907,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-1835": {
    "n": "Bald Point State Park",
@@ -3534,8 +2929,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-1836": {
    "n": "Barnacle State Park",
@@ -3557,8 +2951,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-1837": {
    "n": "Big Lagoon State Park",
@@ -3580,8 +2973,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-1838": {
    "n": "Big Shoals State Park",
@@ -3603,8 +2995,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-1839": {
    "n": "Big Talbot Island State Park",
@@ -3626,8 +3017,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-1840": {
    "n": "Bill Baggs Cape Florida State Park",
@@ -3649,8 +3039,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-1841": {
    "n": "Blackwater River State Park",
@@ -3672,8 +3061,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-1842": {
    "n": "Blue Spring State Park",
@@ -3695,8 +3083,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-1843": {
    "n": "Bulow Creek State Park",
@@ -3718,8 +3105,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-1844": {
    "n": "Caladesi Island State Park",
@@ -3741,8 +3127,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-1845": {
    "n": "Camp Helen State Park",
@@ -3764,8 +3149,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-1846": {
    "n": "Cayo Costa State Park",
@@ -3787,8 +3171,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-1847": {
    "n": "Collier-Seminole State Park",
@@ -3806,6 +3189,7 @@
     "posted_how": "",
     "names_park": null,
     "checked": "2026-10-28",
+    "covers": 0,
     "via": "the agency site"
    },
    "rules": {
@@ -3818,8 +3202,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the map link refused a plain reader (HTTP 403)",
-   "ver": 2,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-1848": {
    "n": "Colt Creek State Park",
@@ -3837,6 +3220,7 @@
     "posted_how": "",
     "names_park": null,
     "checked": "2026-10-28",
+    "covers": 0,
     "via": "the agency site"
    },
    "rules": {
@@ -3849,8 +3233,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the map link refused a plain reader (HTTP 403)",
-   "ver": 2,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-1849": {
    "n": "Constitution Convention Museum State Park",
@@ -3872,8 +3255,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-1850": {
    "n": "Crystal River Archaeological State Park",
@@ -3895,8 +3277,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-1851": {
    "n": "Curry Hammock State Park",
@@ -3918,8 +3299,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-1852": {
    "n": "Dagny Johnson Key Largo Hammock Botanical State Park",
@@ -3941,8 +3321,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-1853": {
    "n": "De Leon Springs State Park",
@@ -3964,8 +3343,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-1854": {
    "n": "Deer Lake State Park",
@@ -3987,8 +3365,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-1855": {
    "n": "Delnor-Wiggins Pass State Park",
@@ -14255,18 +13632,18 @@
  "read": "2026-10-28",
  "counts": {
   "parks": 460,
-  "map ok": 249,
-  "map found by the bot": 234,
+  "map ok": 237,
+  "map found by the bot": 222,
   "date on the map": 22,
-  "posted date only": 152,
-  "date unknown": 75,
-  "no map": 209,
+  "posted date only": 144,
+  "date unknown": 71,
+  "no map": 221,
   "rules ok": 116,
-  "needs browser": 2,
+  "needs browser": 31,
   "handover hints": 0,
-  "runs hints": 45,
+  "runs hints": 35,
   "host resting / robots": 2,
-  "map names the park": 34,
+  "map names the park": 90,
   "region overview only": 0
  }
 }
