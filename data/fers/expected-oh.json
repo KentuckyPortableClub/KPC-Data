@@ -12,11 +12,33 @@
  "date": "2026-10-28",
  "pass": true,
  "counts": {
-  "FOUND": 29,
-  "DROPPED": 113,
+  "FOUND": 32,
+  "DROPPED": 110,
   "NEVER LOOKED AT": 446
  },
  "FOUND": [
+  {
+   "refs": [
+    "US-0482",
+    "US-9479"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (45x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "row": "US-0482+US-9479@area@41.689,-83.350"
+  },
+  {
+   "refs": [
+    "US-0483",
+    "US-1944"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (75x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "row": "US-0483+US-1944@area@41.619,-83.191"
+  },
   {
    "refs": [
     "US-12057",
@@ -49,6 +71,17 @@
     "outlines about 0 m apart"
    ],
    "row": "US-1936+US-5436@same land@39.833,-81.869"
+  },
+  {
+   "refs": [
+    "US-1939",
+    "US-4521"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (25x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "row": "US-1939+US-4521@area@39.525,-82.057"
   },
   {
    "refs": [
@@ -352,18 +385,6 @@
   },
   {
    "refs": [
-    "US-0482",
-    "US-9479"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (45x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "reason": "not sure: the ownership map shows more than one owner across the spot: FED:FWS, STATE",
-   "rule": "rule 7 (NOT SURE is kept out)"
-  },
-  {
-   "refs": [
     "US-0483",
     "US-1941"
    ],
@@ -373,18 +394,6 @@
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
-  },
-  {
-   "refs": [
-    "US-0483",
-    "US-1944"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (75x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "reason": "dropped in pass 3",
-   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   },
   {
    "refs": [
@@ -625,18 +634,6 @@
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
-  },
-  {
-   "refs": [
-    "US-1939",
-    "US-4521"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (25x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "reason": "not sure: owner not known for Burr Oak State Park",
-   "rule": "rule 7 (NOT SURE is kept out)"
   },
   {
    "refs": [
