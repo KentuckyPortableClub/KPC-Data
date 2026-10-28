@@ -125,7 +125,7 @@ def sizes_in(text, name):
             if NOTTOTAL.search(near): looks = False
             me = core(name)
             if looks and me not in core(near):   # another park named in the sentence, this one not: not our size
-                if any(oc in core(near) for oc in OTHER_CORES if len(oc) >= 8 and oc != me): looks = False
+                if any(oc in core(near) for oc in OTHER_CORES if len(oc) >= 6 and oc != me): looks = False
             out.append((round(a, 1), f'{n} {unit}', line, looks))
             if len(out) >= 12: return out
     return out
