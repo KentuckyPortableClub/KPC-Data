@@ -19,6 +19,9 @@ on:
       at_once:
         description: 'Lines running at the same time (1-3; never more: the outside servers)'
         default: '3'
+      round:
+        description: 'Retry round (0 = first; areas parked on the USGS water map are run once more as round 1, never more)'
+        default: '0'
 permissions:
   contents: write
   actions: write
@@ -68,3 +71,30 @@ jobs:
       minutes: ${{ inputs.minutes }}
       next: ''
     secrets: inherit
+  again:
+    # Oct 28 (HQ 12:50 PM): an area STOPPED only because the USGS water map did not answer is PARKED while the queue goes on,
+    # then tried ONCE more at the end from its own bundle (@worker: the saved water tiles + answers are reused, only the missing
+    # tiles are asked). Round 1 never starts another round.
+    needs: [plan, line]
+    if: ${{ always() && inputs.round == '0' }}
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      LINES: ${{ needs.plan.outputs.lines }}
+    steps:
+      - uses: actions/checkout@v5
+      - name: Areas parked on the water map -> one more round
+        run: |
+          python3 - <<'PY' > again.txt
+          import json, os
+          out = []
+          for l in json.loads(os.environ['LINES']):
+              try: v = json.load(open(f"data/fers/line-{l['tag']}.json"))
+              except Exception: continue
+              why = v.get('why') or []
+              if v.get('verdict') == 'STOPPED' and why and all(str(w).startswith('water service') for w in why):
+                  out.append(f"{l['states']}|{l['tag']}@worker")
+          print('; '.join(out))
+          PY
+          A=$(cat again.txt); echo "::notice title=2-fer lines::parked on the USGS water map: ${A:-none}"
+          if [ -n "$A" ]; then gh workflow run kpc-fers-lines.yml -R "${{ github.repository }}" -f "areas=$A" -f round=1 -f minutes=${{ inputs.minutes }} && echo "::notice title=2-fer lines::retry round started for: $A"; fi
