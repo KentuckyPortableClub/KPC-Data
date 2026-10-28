@@ -206,40 +206,6 @@
    "why": "water only: for the 2-fer owner step only (lakes / reservoirs / water bodies never go in the key as a park outline); otherwise READY: official, open terms, named polygons, requested by chat 9"
   },
   {
-   "approved": null,
-   "area": "US-SC",
-   "closes": "not probed",
-   "expect": "ASK-THE-PUBLISHER or already read",
-   "from": "chat 9",
-   "overlap": "same publisher as sgsca",
-   "probe": {
-    "opened": false,
-    "status": "error Invalid URL"
-   },
-   "probed": "2026-10-28",
-   "publisher": "Clemson University (hosting for South Carolina DNR)",
-   "publisher_test": [
-    "hosted for an agency",
-    "a university account holds an agency layer"
-   ],
-   "queue_licence": "",
-   "queue_note": "test row (c): hosted on a university account, no credits; url to confirm (we read DEV_-_SCDNR_Public_Lands_Viewer/4 from the same org acgZYxoN5Oj8pDLa)",
-   "requests_used": 1,
-   "retry": true,
-   "sig": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/SCDNR_Managed_Lands_Public_Viewer/FeatureServer/0|SCDNR managed lands (public viewer) on Clemson's ArcGIS Online account|Clemson University (hosting for South Carolina DNR)||test row (c): hosted on a university account, no credits; url to confirm (we read DEV_-_SCDNR_Public_Lands_Viewer/4 from the same org acgZYxoN5Oj8pDLa)|ASK-THE-PUBLISHER or already read",
-   "terms": {
-    "class": "NOTHING STATED",
-    "line": "",
-    "source": "none"
-   },
-   "test": "MISS ASK-THE-PUBLISHER or already read vs REJECT",
-   "title": "SCDNR managed lands (public viewer) on Clemson's ArcGIS Online account",
-   "url": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/SCDNR_Managed_Lands_Public_Viewer/FeatureServer/0",
-   "ver": 1,
-   "verdict": "REJECT",
-   "why": "did not open (error Invalid URL): url to confirm"
-  },
-  {
    "approved": false,
    "area": "CA-PE",
    "chat9": "agree ASK-THE-PUBLISHER (on the ask table). (chat 9, 2026-10-28)",
@@ -1032,7 +998,7 @@
    "approved": null,
    "area": "US-KY",
    "closes": "not probed",
-   "expect": "REJECT",
+   "expect": "REJECT or did-not-open",
    "from": "chat 9",
    "overlap": "",
    "probe": {
@@ -1046,10 +1012,11 @@
     "hobby in the publisher words"
    ],
    "queue_licence": "",
-   "queue_note": "test row (h): a made-up hobby layer on a non-government account; the bot will mark it 'did not open' and REJECT",
+   "queue_note": "test row (h): a made-up hobby layer on a non-government account; the bot marks it RETRY (did not open) and after three runs sends the url to chat 9; a real hobby layer that opens is REJECT (not official)",
+   "queue_url": "https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0",
    "requests_used": 3,
    "retry": true,
-   "sig": "https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0|My favorite camping spots (a hobby map)|hobby account (personal map)||test row (h): a made-up hobby layer on a non-government account; the bot will mark it 'did not open' and REJECT|REJECT",
+   "sig": "https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0|My favorite camping spots (a hobby map)|hobby account (personal map)||test row (h): a made-up hobby layer on a non-government account; the bot marks it RETRY (did not open) and after three runs sends the url to chat 9; a real hobby layer that opens is REJECT (not official)|REJECT or did-not-open",
    "terms": {
     "class": "NOTHING STATED",
     "line": "",
@@ -1059,8 +1026,8 @@
    "title": "My favorite camping spots (a hobby map)",
    "url": "https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0",
    "ver": 1,
-   "verdict": "REJECT",
-   "why": "did not open (error Invalid URL) and no item search hit on the publisher: url to confirm"
+   "verdict": "RETRY",
+   "why": "did not open (error Invalid URL): probed again next run (failed 1 of 3)"
   },
   {
    "approved": null,

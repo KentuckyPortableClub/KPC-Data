@@ -1,6 +1,6 @@
 # Layer intake review (2026-10-28)
 
-Every lead in data/intake/queue.json, probed politely (metadata and counts only, never geometry). Chat 9 approves a READY row by setting `approved: true` in ready.json; the nightly key rebuild reads approved rows later. LIVE-ONLY = read live, never stored. ASK = the publisher must be asked (nothing stated, or hosted for an agency). WATER-ONLY = lakes / reservoirs: for the 2-fer owner step only, never a park outline. Terms are read on the publisher's OWN item page first (the Nevada lesson).
+Every lead in data/intake/queue.json, probed politely (metadata and counts only, never geometry). Chat 9 approves a READY row by setting `approved: true` in ready.json; the nightly key rebuild reads approved rows later. LIVE-ONLY = read live, never stored. ASK = the publisher must be asked (nothing stated, or hosted for an agency). WATER-ONLY = lakes / reservoirs: for the 2-fer owner step only, never a park outline. RETRY = the probe did not open (error, rest, robots, 403): probed again next run, three failures → chat 9 checks the url. Terms are read on the publisher's OWN item page first (the Nevada lesson).
 
 | verdict | rows |
 |---|---|
@@ -8,7 +8,8 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 | WATER-ONLY | 1 |
 | LIVE-ONLY | 1 |
 | ASK-THE-PUBLISHER | 2 |
-| REJECT | 7 |
+| RETRY | 1 |
+| REJECT | 5 |
 
 ## READY (1)
 
@@ -111,7 +112,18 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 36 missing parks lie in the layer's extent)
 - TEST: ok
 
-## REJECT (7)
+## RETRY (1)
+
+### My favorite camping spots (a hobby map)  ·  US-KY  ·  from chat 9
+- url: https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0
+- WHY: did not open (error Invalid URL): probed again next run (failed 1 of 3)
+- publisher: hobby account (personal map) → not official (hobby in the publisher words)
+- terms: NOTHING STATED · source none
+- facts: status error Invalid URL
+- closes: not probed
+- TEST: ok
+
+## REJECT (5)
 
 ### Nevada State Parks boundaries (Division of State Parks, VS Boundary Map)  ·  US-NV  ·  from chat 9
 - url: https://services7.arcgis.com/5hLFVlePaucIMGhw/arcgis/rest/services/VS_Boundary_Map_2_WFL1/FeatureServer/2
@@ -122,16 +134,6 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - overlap: already read as sgnvc
 - closes: not probed
 - TEST: ok
-
-### SCDNR managed lands (public viewer) on Clemson's ArcGIS Online account  ·  US-SC  ·  from chat 9
-- url: https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/SCDNR_Managed_Lands_Public_Viewer/FeatureServer/0
-- WHY: did not open (error Invalid URL): url to confirm
-- publisher: Clemson University (hosting for South Carolina DNR) → hosted for an agency (a university account holds an agency layer)
-- terms: NOTHING STATED · source none
-- facts: status error Invalid URL
-- overlap: same publisher as sgsca
-- closes: not probed
-- TEST: MISS ASK-THE-PUBLISHER or already read vs REJECT
 
 ### Montana FWP state parks  ·  US-MT  ·  from chat 9
 - url: https://services3.arcgis.com/Cdxz8r11hT0MGzg1/arcgis/rest/services/FWPLND_STATEPARKS/FeatureServer/0
@@ -161,15 +163,6 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - closes: 0 of 60 tested missing parks (by name 0, pin only 0; 3357 of the area's 3357 missing parks lie in the layer's extent)
 - TEST: ok
 
-### My favorite camping spots (a hobby map)  ·  US-KY  ·  from chat 9
-- url: https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0
-- WHY: did not open (error Invalid URL) and no item search hit on the publisher: url to confirm
-- publisher: hobby account (personal map) → not official (hobby in the publisher words)
-- terms: NOTHING STATED · source none
-- facts: status error Invalid URL
-- closes: not probed
-- TEST: ok
-
 ### Slovenia protected areas (ARSO, INSPIRE PS WFS)  ·  W-SI  ·  from chat 9
 - url: https://prostor4.gov.si/ows2-ins/ps/wfs
 - WHY: did not open (rest): url to confirm
@@ -185,14 +178,13 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 |---|---|---|---|
 | Nevada State Parks boundaries (Division of State Parks, VS Boundary Map) | READY or already read | REJECT | ok |
 | USACE reservoirs (Army Corps of Engineers) | WATER-ONLY | WATER-ONLY | ok |
-| SCDNR managed lands (public viewer) on Clemson's ArcGIS Online account | ASK-THE-PUBLISHER or already read | REJECT | MISS ASK-THE-PUBLISHER or already read vs REJECT |
 | PEI provincial parks (GeoLinc, ENV polygon layer) | ASK-THE-PUBLISHER | ASK-THE-PUBLISHER | ok |
 | Czechia natural parks (AOPK CR, gis.nature.cz, Prirodni park) | LIVE-ONLY | LIVE-ONLY | ok |
 | Montana FWP state parks | already read | REJECT | ok |
 | Doorstep Greens (England) polygons | READY or REJECT | REJECT | ok |
 | Millennium Greens (England) polygons | READY or REJECT | REJECT | ok |
 | SSSI units (England) | READY or REJECT | READY | ok |
-| My favorite camping spots (a hobby map) | REJECT | REJECT | ok |
+| My favorite camping spots (a hobby map) | REJECT or did-not-open | RETRY | ok |
 | Slovenia protected areas (ARSO, INSPIRE PS WFS) | READY (WFS) or did-not-open | REJECT | MISS READY (WFS) or did-not-open vs REJECT |
 | SCDNR managed lands (public viewer) on Clemson's ArcGIS Online account | ASK-THE-PUBLISHER or already read | ASK-THE-PUBLISHER | ok |
 
