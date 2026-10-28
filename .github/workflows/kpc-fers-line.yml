@@ -163,6 +163,10 @@ jobs:
           for st in os.environ['STATES'].split():
               if not os.path.exists(f'data/fers/{st}.json'): print(f'::error title=2-fer line::bundle has no data/fers/{st}.json'); sys.exit(1)
           PY
+      - name: USGS water from the bulk files (tiles under the spots with no saved copy; chat 8's first backup)
+        continue-on-error: true
+        timeout-minutes: 90
+        run: STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 .github/scripts/kpc_water_bulk.py || true
       - name: Passes 3 + 5
         continue-on-error: true
         timeout-minutes: 320
