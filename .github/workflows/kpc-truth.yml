@@ -48,7 +48,7 @@ jobs:
           repository: KentuckyPortableClub/KPC-Links
           path: links
           persist-credentials: false
-      - name: Weekly run only once proven
+      - name: Weekly runs only once proven
         id: gate
         continue-on-error: true
         run: |
@@ -102,7 +102,7 @@ jobs:
         run: |
           echo "::notice title=Park truth checker::Kentucky test PASSED: starting the whole queue (chain ${{ inputs.chain }})"
           gh workflow run kpc-truth.yml -R ${{ github.repository }} -f areas= -f chunks=5 -f chain=${{ inputs.chain }} || true
-      - name: Areas remain: the next job starts itself
+      - name: Areas remain, so the next job starts itself
         if: ${{ inputs.areas == '' && env.LEFT != '0' && env.LEFT != '' && inputs.chain != '0' && inputs.chain != '' }}
         continue-on-error: true
         run: |
