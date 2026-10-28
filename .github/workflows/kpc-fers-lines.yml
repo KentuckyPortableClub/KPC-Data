@@ -1,0 +1,65 @@
+name: KPC 2-fer assembly lines, several at once (hidden)
+# Oct 28 2026 (HQ 4:40 AM, Brandon: 'duplicate the line'): up to THREE assembly lines side by side, each one a full line
+# (fetcher -> worker -> checker, kpc-fers-line.yml called as a reusable workflow) with its own bundle tag, its own output files and
+# its own checker result; no two lines write the same file (each saves only its own area's files); the outside servers see at most
+# 3 lines' worth of requests, each line with the usual manners. First use: Michigan + Utah side by side (the last two test states);
+# after all four test states pass, the US regions 3 at a time in the run order (southeast, midwest, northeast, south central,
+# mountain, pacific, Canada east, Canada west).
+on:
+  workflow_dispatch:
+    inputs:
+      areas:
+        description: 'Lines, one per entry "STATES|tag" separated by ";" (e.g. "US-MI|mi; US-UT|ut"); or a region name per entry (southeast; midwest; …)'
+        default: 'US-MI|mi; US-UT|ut'
+      minutes:
+        description: 'Minutes for each of fetcher and worker per line (default 280)'
+        default: '280'
+      at_once:
+        description: 'Lines running at the same time (1-3; never more: the outside servers)'
+        default: '3'
+permissions:
+  contents: write
+  actions: write
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      lines: ${{ steps.p.outputs.lines }}
+      n: ${{ steps.p.outputs.n }}
+    steps:
+      - id: p
+        env:
+          AREAS: ${{ inputs.areas }}
+          AT_ONCE: ${{ inputs.at_once }}
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, os, re
+          R = {'southeast': 'US-TN US-NC US-VA US-WV US-GA US-AL US-SC US-FL US-MS', 'midwest': 'US-IN US-IL US-MO US-WI US-MN US-IA US-ND US-SD',
+               'northeast': 'US-PA US-NY US-NJ US-CT US-RI US-MA US-VT US-NH US-ME US-MD US-DE US-DC', 'southcentral': 'US-AR US-LA US-OK US-TX US-KS US-NE',
+               'mountain': 'US-CO US-WY US-ID US-MT US-NV US-AZ US-NM', 'pacific': 'US-CA US-OR US-WA US-AK US-HI',
+               'canadaeast': 'CA-ON CA-QC CA-NB CA-NS CA-PE CA-NL', 'canadawest': 'CA-MB CA-SK CA-AB CA-BC CA-YT CA-NT CA-NU'}
+          out = []
+          for e in [x.strip() for x in os.environ['AREAS'].split(';') if x.strip()]:
+              if '|' in e: st, tag = [x.strip() for x in e.split('|', 1)]
+              elif e.lower() in R: st, tag = R[e.lower()], e.lower()
+              else: st, tag = e.upper(), re.sub(r'[^a-z0-9]', '', e.lower())
+              out.append({'states': st.upper(), 'tag': re.sub(r'[^a-z0-9-]', '', tag.lower())})
+          n = max(1, min(3, int(os.environ.get('AT_ONCE') or 3)))
+          print('lines=' + json.dumps(out)); print(f'n={n}')
+          print(f'::notice title=2-fer lines::{len(out)} line(s), {n} at a time: ' + '; '.join(f"{o['states']} ({o['tag']})" for o in out))
+          PY
+  line:
+    needs: plan
+    strategy:
+      fail-fast: false
+      max-parallel: ${{ fromJSON(needs.plan.outputs.n) }}
+      matrix:
+        line: ${{ fromJSON(needs.plan.outputs.lines) }}
+    uses: ./.github/workflows/kpc-fers-line.yml
+    with:
+      states: ${{ matrix.line.states }}
+      tag: ${{ matrix.line.tag }}
+      stage: all
+      minutes: ${{ inputs.minutes }}
+      next: ''
+    secrets: inherit
