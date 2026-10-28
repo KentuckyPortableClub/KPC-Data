@@ -107,7 +107,10 @@ def get(u, params=None, timeout=30, raw=False):
             with urllib.request.urlopen(urllib.request.Request(full, headers={'User-Agent': UA, 'Accept': 'application/json, text/xml, */*'}), timeout=timeout) as r:
                 body = r.read(30_000_000)
             if raw: return body.decode('utf-8', 'replace')
-            j = json.loads(body.decode('utf-8', 'replace'))
+            try: j = json.loads(body.decode('utf-8', 'replace'))
+            except json.JSONDecodeError:
+                if attempt == 0: STAT['retried_json'] = STAT.get('retried_json', 0) + 1; time.sleep(5); continue   # Oct 28 (chat 8): 'Unterminated string' = a cut answer: once more
+                raise
             if isinstance(j, dict) and j.get('error'): raise RuntimeError('server error: ' + str(j['error'])[:100])
             return j
         except urllib.error.HTTPError as e:
@@ -130,21 +133,37 @@ STRIKE = {}
 TRUSTED_ORGS = set()   # ArcGIS Online organisations chat 8 names as the agency itself (seed 'official_orgs')
 
 
+NONGOV = re.compile(r'\bwwf\b|world wide fund|consult|\bltd\b|limited|\bgmbh\b|\binc\b|\bllc\b|\bplc\b|\bnabu\b|foundation|stiftung|'
+                    r'\btrust\b|university|universit|college|esri\b|community|volunteer|club\b|\bngo\b|association|verein', re.I)
+
+
 def official(publisher, url, cc, govwords):
     p = (publisher or '').lower()
+    if NONGOV.search(p): return False   # Oct 28 (chat 8): WWF Germany and a consultancy are not the government
     m = re.search(r'arcgis\.com/([A-Za-z0-9]{16,})/', url or '')
     if m and m.group(1) in TRUSTED_ORGS: return True
     return bool(OFFICIAL_DOM.search(host_of(url))) or bool(re.search(govwords, p))
 
 
-def classify(name, geom, fields, service=''):
+# Oct 28 (chat 8 grade): census areas, photo footprints, fire, air quality, planning, map-sheet grids are never park layers
+GENERIC = re.compile(r'census|statistic|\babs[_ ]?20|mesh ?block|orthophoto|aerial|imagery|photo|footprint|bush ?fire|fire[_ ]?prone|wildfire|air[_ ]?quality|'
+                     r'\bpm10\b|\bpm2|nitrogen|\bno2\b|ozone|noise|flood|zoning|planning scheme|parcel|cadastr|property|electoral|postcode|post code|'
+                     r'map ?index|sheet index|\bindex\b|\bgrid\b|\btiles?\b|lga\b|local government area|suburb|locality|mining|tenement|geolog|soil|elevation|contour|'
+                     r'conservation target|capture status|roadside|town reserve|aboriginal communit|common land|access layer|open access land|\bcrow\b|right to roam', re.I)
+
+
+def classify(name, geom, fields, service='', force=False):
     n = re.sub(r'[_\-/]+', ' ', (name or '') + ' ' + (service or ''))
-    if SKIP.search(n): return None, 'skipped (' + SKIP.search(n).group(0) + ': historic / city / not a park)'
+    ln = re.sub(r'[_\-/]+', ' ', name or '')
+    if SKIP.search(n) and not force: return None, 'skipped (' + SKIP.search(n).group(0) + ': historic / city / not a park)'
+    if force and 'polygon' in (geom or '').lower(): return 'outline', 'known-good layer (chat 8)'
+    if GENERIC.search(ln): return None, 'not a park layer (' + GENERIC.search(ln).group(0) + ')'   # the LAYER's own name (a service called 'Property_and_Planning' still holds park layers)
+    if re.search(r'legislated lands|managed lands|public lands|crown reserve|protected lands', ln, re.I) and 'polygon' in (geom or '').lower(): return 'outline', 'agency-managed land polygons'
     g = (geom or '').lower()
     hasname = any(re.search(r'name|nom|nombre|nome|navn|namn|nimi|nazwa|název|naam|bezeichnung|title|label|site|designation|designat', f, re.I) for f in fields or [])
     if TRAILW.search(n) and 'line' in g: return 'trail line', 'trail / path lines'
     if PARKW.search(n) and 'polygon' in g: return 'outline', 'park / protected-area polygons' + (' with a name field' if hasname else ' (no name field seen)')
-    if 'polygon' in g and hasname and re.search(r'boundar|grenze|limite|límite|limiti|granic|hranice|boundary|zone|zona|area|gebiet|område|alue', n, re.I): return 'outline', 'named area polygons'
+    if 'polygon' in g and hasname and re.search(r'boundar|grenze|limite|límite|limiti|granic|hranice|boundary|zone|zona|area|gebiet|område|alue', n, re.I): return 'area', 'named area polygons (no park word: never band A)'
     if PARKW.search(n) and 'point' in g: return 'access', 'park points (sites / entrances)'
     return None, 'not a park layer'
 
@@ -162,11 +181,11 @@ def already_read():
 
 
 # ------------------------------------------------------------------ sources
-def probe_layer(lu, service=''):
+def probe_layer(lu, service='', force=False):
     d = get(lu)
     flds = [x['name'] for x in d.get('fields') or []]
     geom = (d.get('geometryType') or '').replace('esriGeometry', '')
-    gap, why = classify(d.get('name') or '', geom, flds, service)
+    gap, why = classify(d.get('name') or '', geom, flds, service, force)
     row = {'id': d.get('id'), 'name': (d.get('name') or '')[:70], 'geom': geom, 'gap': gap, 'is': why, 'fields': flds[:20]}
     if gap:
         try: row['records'] = get(lu + '/query', {'where': '1=1', 'returnCountOnly': 'true'}).get('count')
@@ -183,9 +202,11 @@ def probe_layer(lu, service=''):
 def add_lead(leads, cc, url, title, publisher, catalog, licence, date, rows, known, govwords, note=''):
     k = key_of(url)
     if k in known: STAT['already_read'] += 1; return None
-    if not official(publisher, url, cc, govwords): STAT['not_official'] += 1; return None
     gaps = sorted({r['gap'] for r in rows if r.get('gap')})
     if not gaps: STAT['skipped'] += 1; return None
+    off = official(publisher, url, cc, govwords)
+    kg = key_of(url) in KG_NOW
+    if not off and not kg and not ({'outline', 'trail line'} & set(gaps)): STAT['not_official'] += 1; return None
     x = leads.get(k) or {'url': url, 'cc': cc, 'title': (title or '')[:90], 'publisher': (publisher or '')[:80], 'catalog': catalog,
                          'licence': (licence or '')[:200], 'date': date or '', 'found': RUN, 'gaps': gaps, 'layers': [], 'note': note}
     x['layers'] = ([r for r in rows if r.get('gap')] + x.get('layers', []))[:12]
@@ -202,6 +223,10 @@ def add_lead(leads, cc, url, title, publisher, catalog, licence, date, rows, kno
     g += 1 if 'outline' in gaps else 0
     g += 1 if max([r.get('records') or 0 for r in x['layers']] or [0]) >= 20 else 0
     x['grade'] = g; x['band'] = 'A' if g >= 5 else 'B' if g >= 3 else 'C'
+    if not ({'outline', 'trail line', 'access'} & set(x['gaps'])): x['band'] = 'C'; x['band_note'] = 'only generic named areas (no park word): never band A'
+    if not off:   # Oct 28 (chat 8): content may be right, publisher is not the government: B at most (a known-good), else C
+        x['band'] = 'B' if kg and x['band'] != 'C' else 'C'; x['publisher_note'] = 'not a government publisher: take the agency\'s own copy if one exists'
+    if kg: x['known_good'] = True
     if x.get('licence_note', '').startswith('LICENCE FORBIDS'): x['band'] = 'C'
     leads[k] = x; STAT['leads'] += 1
     return x
@@ -216,9 +241,15 @@ def walk_service(svc, cc, leads, known, govwords, catalog, publisher='', licence
     rows = []
     if lays is None and 'geometryType' in d: rows.append(probe_layer(svc))
     else:
-        for L in (lays or [])[:MAX_LAYERS]:
+        # Oct 28 (chat 8 fix 1): the layer LIST is read first; park- / trail-named layers are opened wherever they sit (GB
+        # Core_Data_Non_WMS layer 50 was past the old 40-layer limit), then other layers up to MAX_LAYERS; generic ones never
+        lays = lays or []
+        named = [L for L in lays if (PARKW.search(L.get('name') or '') or TRAILW.search(L.get('name') or '')) and not GENERIC.search(L.get('name') or '')]
+        want = [L for L in lays if str(L.get('id')) in ONLY_LAYER.get(key_of(svc), set())]
+        rest = [L for L in lays if L not in named and L not in want and not GENERIC.search(L.get('name') or '')][:max(0, MAX_LAYERS - len(named))]
+        for L in (want + named[:150] + rest):
             if late(): break
-            try: rows.append(probe_layer(f"{svc.rstrip('/')}/{L.get('id')}", d.get('name') or svc.split('/services/')[-1]))
+            try: rows.append(probe_layer(f"{svc.rstrip('/')}/{L.get('id')}", d.get('name') or svc.split('/services/')[-1], force=L in want))
             except Exception as e: rows.append({'id': L.get('id'), 'error': str(e)[:60]})  # noqa: BLE001
     add_lead(leads, cc, svc, svc.split('/services/')[-1].replace('/FeatureServer', '').replace('/MapServer', ''), publisher or host_of(svc), catalog, lic, date, rows, known, govwords, note)
 
@@ -250,9 +281,15 @@ def walk_server(root, cc, leads, known, govwords, done):
 def wfs_capabilities(u, cc, leads, known, govwords):
     """A WFS / OGC endpoint: GetCapabilities only = the list of feature types (names + titles), never the data."""
     base = u.split('?')[0]
-    try: xml = get(base, {'service': 'WFS', 'request': 'GetCapabilities'}, raw=True)
-    except Exception as e: STAT['errors'] += 1; return f'{base}: {str(e)[:60]}'  # noqa: BLE001
-    types = re.findall(r'<(?:wfs:)?FeatureType>.*?<(?:wfs:)?Name>([^<]+)</(?:wfs:)?Name>.*?(?:<(?:wfs:)?Title>([^<]*)</(?:wfs:)?Title>)?', xml, re.S)[:200]
+    if re.search(r'ogcapi|/collections$', base, re.I): return ogc_collections(base, cc, leads, known, govwords)
+    try: xml = get(base, {'service': 'WFS', 'version': '2.0.0', 'request': 'GetCapabilities'}, raw=True)
+    except Exception as e:  # noqa: BLE001
+        try: return ogc_collections(base, cc, leads, known, govwords)   # Oct 28: an OGC API answers /collections, not GetCapabilities
+        except Exception: STAT['errors'] += 1; return f'{base}: {str(e)[:60]}'  # noqa: BLE001
+    types = []
+    for blk in re.findall(r'<(?:\w+:)?FeatureType\b[^>]*>(.*?)</(?:\w+:)?FeatureType>', xml, re.S)[:300]:   # Oct 28 (chat 8): <FeatureType xmlns=…> has attributes
+        nm = re.search(r'<(?:\w+:)?Name>([^<]+)</', blk); ti = re.search(r'<(?:\w+:)?Title>([^<]*)</', blk)
+        if nm: types.append((nm.group(1).strip(), (ti.group(1).strip() if ti else '')))
     lic = ' '.join(re.findall(r'<(?:ows:)?(?:AccessConstraints|Fees)>([^<]{0,160})<', xml))[:200]
     prov = ' '.join(re.findall(r'<(?:ows:)?ProviderName>([^<]{0,80})<', xml))
     rows = []
@@ -261,6 +298,37 @@ def wfs_capabilities(u, cc, leads, known, govwords):
         if gap: rows.append({'name': (title or nm)[:70], 'type': nm[:80], 'geom': 'unknown (WFS)', 'gap': gap, 'is': why + ' (geometry not read)'})
     add_lead(leads, cc, base, 'WFS ' + host_of(base), prov or host_of(base), 'WFS capabilities', lic, '', rows, known, govwords, f'{len(types)} feature types listed')
     return f'{base}: {len(types)} feature types, {len(rows)} look like park layers'
+
+
+def ogc_collections(base, cc, leads, known, govwords):
+    """OGC API - Features: /collections lists the collections (id, title); metadata only."""
+    j = get(base.rstrip('/') + '/collections', {'f': 'json'}, raw=False)
+    cols = j.get('collections') or []
+    rows = []
+    for c in cols[:300]:
+        nm, ti = str(c.get('id') or ''), str(c.get('title') or '')
+        gap, why = classify(ti or nm, 'Polygon', ['name'])
+        if gap: rows.append({'name': (ti or nm)[:70], 'type': nm[:80], 'geom': 'unknown (OGC API)', 'gap': gap, 'is': why + ' (geometry not read)'})
+    add_lead(leads, cc, base, 'OGC API ' + host_of(base), host_of(base), 'OGC API collections', '', '', rows, known, govwords, f'{len(cols)} collections listed')
+    return f'{base}: {len(cols)} OGC API collections, {len(rows)} look like park layers'
+
+
+def known_goods(c, cc, leads, known, govwords, done, log):
+    """Oct 28 (chat 8 fix 1): every seeded known-good is opened DIRECTLY, before any crawl: a layer -> its service with that
+    layer forced in; a service -> walked; a WFS / OGC API -> its list; a root that does not answer -> the service itself."""
+    for u in c.get('known_good') or []:
+        if late(): break
+        try:
+            if re.search(r'/rest/services/.+/(Feature|Map)Server/\d+$', u):
+                svc, lid = u.rsplit('/', 1)
+                ONLY_LAYER.setdefault(key_of(svc), set()).add(lid)
+                walk_service(svc, cc, leads, known, govwords, 'known-good (chat 8)', note='known-good layer ' + lid); done.add(svc)
+            elif re.search(r'/rest/services/.+/(Feature|Map)Server$', u):
+                walk_service(u, cc, leads, known, govwords, 'known-good (chat 8)', note='known-good service'); done.add(u)
+            elif re.search(r'/rest/services/?$', u): log.append({'step': 'known', 'what': walk_server(u.rstrip('/'), cc, leads, known, govwords, done)})
+            else: log.append({'step': 'known', 'what': wfs_capabilities(u, cc, leads, known, govwords)}); done.add(u)
+            log.append({'step': 'known', 'what': u, 'found': key_of(u) in leads or key_of(u.rsplit('/', 1)[0]) in leads})
+        except Exception as e: STAT['errors'] += 1; log.append({'step': 'known', 'what': u, 'error': str(e)[:80]})  # noqa: BLE001
 
 
 def agol_org(orgid, cc, leads, known, govwords, done):
@@ -284,6 +352,8 @@ def agol_org(orgid, cc, leads, known, govwords, done):
     return f'org {orgid} ({(ORG.get(orgid) or "")[:30]}): {n} services read'
 
 
+ONLY_LAYER = {}   # service -> layer ids to open whatever the limit (known-goods)
+KG_NOW = set()    # this country's known-good addresses (kept even from a non-government publisher, band B at most)
 ORG = {}
 def org_name(oid):
     if oid not in ORG:
@@ -324,7 +394,12 @@ def catalog(kind, base, c, cc, leads, known, govwords, done, log):
     for kw in c['words'][:4]:
         if late(): break
         try:
-            if kind == 'ckan': j = get(f'{base}/api/3/action/package_search', {'q': kw, 'rows': 30}); items = (j.get('result') or {}).get('results') or []
+            if kind == 'ckan':
+                try: j = get(f'{base}/api/3/action/package_search', {'q': kw, 'rows': 30})
+                except RuntimeError as e:
+                    if 'HTTP 400' not in str(e): raise
+                    j = get(f'{base}/api/3/action/package_search', {'q': ' AND '.join(kw.split()), 'rows': 20})   # Oct 28: data.gov.uk / e-gov answered 400 to the phrase
+                items = (j.get('result') or {}).get('results') or []
             elif kind == 'datagouv': j = get(f'{base}/datasets/', {'q': kw, 'page_size': 30}); items = j.get('data') or []
             elif kind == 'dane': j = get(f'{base}/datasets', {'q': kw, 'per_page': 30}); items = [dict((x.get('attributes') or {}), id=x.get('id'), resources=[]) for x in j.get('data') or []]
             else: continue
@@ -353,7 +428,8 @@ def catalog(kind, base, c, cc, leads, known, govwords, done, log):
                 for u in wfss[:1]:
                     if u in done or late(): continue
                     wfs_capabilities(u, cc, leads, known, govwords); done.add(u); svc += 1
-            elif PARKW.search(title) and official(str(org), base, cc, govwords):
+            elif PARKW.search(title) and official(str(org), base, cc, govwords) and any(re.search(r'shp|shape|gml|wfs|arcgis|geojson|geopackage|gpkg|kml|kmz|esri|zip', str(r.get('format') or '') + ' ' + str(r.get('url') or ''), re.I) for r in res):
+                # Oct 28 (chat 8): only datasets whose resources are GIS files (the 13 Polish rows were statistics)
                 dl += 1
                 k = 'dl:' + (p.get('id') or title)[:60]
                 page = p.get('page') or (f"{base.rsplit('/api', 1)[0]}/dataset/{p.get('name')}" if p.get('name') else base)
@@ -370,10 +446,19 @@ def run_country(cc, c, cfg, state, known):
     st = state['countries'].setdefault(cc, {'status': 'started', 'started': RUN, 'done': [], 'log': [], 'steps': []})
     leads = load(OUT / f'leads-{cc}.json', {}).get('leads') or {}
     done = set(st['done']); log = st['log']
-    steps = ['orgs', 'servers', 'wfs', 'catalogs', 'search', 'eea']
+    steps = ['known', 'servers', 'wfs', 'orgs', 'catalogs', 'downloads', 'search', 'eea']
+    KG_NOW.clear(); KG_NOW.update(key_of(u) for u in c.get('known_good') or []); KG_NOW.update(key_of(u.rsplit('/', 1)[0]) for u in c.get('known_good') or [] if re.search(r'/\d+$', u))
     for step in steps:
         if step in st['steps'] or late(): continue
-        if step == 'orgs':
+        if step == 'known':
+            known_goods(c, cc, leads, known, govwords, done, log)
+        elif step == 'downloads':
+            # Oct 28 (chat 8): official FILE downloads from the survey (Japan's MLIT A10): listed by hand, never fetched
+            for dlu in c.get('downloads') or []:
+                leads.setdefault('dl:' + dlu['url'], {'url': dlu['url'], 'cc': cc, 'title': dlu.get('title', '')[:90], 'publisher': dlu.get('publisher', ''), 'catalog': 'survey (chat 8)',
+                                                     'licence': dlu.get('licence', ''), 'date': dlu.get('date', ''), 'found': RUN, 'gaps': ['outline?'], 'kind': 'download, needs a loader',
+                                                     'layers': [], 'grade': 3, 'band': 'B', 'note': 'an official file download, not a service: needs a loader (chat 8 decides)'})
+        elif step == 'orgs':
             for o in c.get('agol_orgs') or []:
                 if late(): break
                 log.append({'step': 'org', 'what': agol_org(o, cc, leads, known, govwords, done)})
@@ -433,7 +518,10 @@ def main():
         if late(): break
         c = cfg['countries'].get(cc)
         if not c: continue
-        if state['countries'].get(cc, {}).get('status') == 'done' and os.environ.get('COUNTRIES'): state['countries'][cc]['steps'] = []   # a named country is redone
+        if os.environ.get('FRESH') == '1' and os.environ.get('COUNTRIES'):   # Oct 28 (chat 8 regrade): redo from nothing under the new rules
+            state['countries'][cc] = {'status': 'started', 'started': RUN, 'done': [], 'log': [], 'steps': [], 'redo': RUN}
+            save(OUT / f'leads-{cc}.json', {'leads': {}})
+        elif state['countries'].get(cc, {}).get('status') == 'done' and os.environ.get('COUNTRIES'): state['countries'][cc]['steps'] = []   # a named country is redone
         for h in list(DEAD): pass
         leads, st = run_country(cc, c, cfg, state, KNOWN)
         done_now.append(f"{cc} {st['status'].split(' (')[0]}: {len(leads)} leads (A {sum(1 for v in leads.values() if v.get('band')=='A')}), known-good found {len(load(OUT / f'leads-{cc}.json', {}).get('known_good_found') or [])} of {len(c.get('known_good') or [])}")
