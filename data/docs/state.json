@@ -15,36 +15,67 @@
    "updated": "2026-10-28"
   },
   "US-KY": {
-   "status": "partial",
+   "status": "done",
    "parks": 193,
-   "checked": 148,
-   "left": 45,
+   "checked": 193,
+   "left": 0,
+   "updated": "2026-10-28"
+  },
+  "US-TN": {
+   "status": "done",
+   "parks": 277,
+   "checked": 277,
+   "left": 0,
+   "updated": "2026-10-28"
+  },
+  "US-NC": {
+   "status": "done",
+   "parks": 253,
+   "checked": 253,
+   "left": 0,
+   "updated": "2026-10-28"
+  },
+  "US-VA": {
+   "status": "partial",
+   "parks": 184,
+   "checked": 57,
+   "left": 127,
    "updated": "2026-10-28"
   }
  },
  "hosts": {
   "www5.swfwmd.state.fl.us": 1793262436.7233734,
-  "legacy.fws.gov": 1793264444.9435768
+  "legacy.fws.gov": 1793264444.9435768,
+  "parks.ky.gov": 1793267495.7892177,
+  "www.tn.gov": 1793267801.512577,
+  "wolfememorial.com": 1793268984.2034903,
+  "www.virginiastateparks.gov": 1793269856.6741216
  },
  "last": {
   "when": "2026-10-28",
   "areas": [
-   "US-MO",
-   "US-FL",
-   "US-KY"
+   "US-KY",
+   "US-TN",
+   "US-NC",
+   "US-VA",
+   "US-WV",
+   "US-GA",
+   "US-AL",
+   "US-SC"
   ],
   "stat": {
-   "requests": 705,
-   "parks": 148,
-   "maps_ok": 145,
-   "maps_found": 19,
-   "dates": 39,
-   "rules": 83,
-   "browser": 231,
-   "robots": 10,
-   "strikes": 3,
-   "errors": 1,
-   "skipped_fresh": 1021
+   "requests": 1402,
+   "parks": 633,
+   "maps_ok": 305,
+   "maps_found": 192,
+   "dates": 92,
+   "rules": 260,
+   "browser": 95,
+   "robots": 4,
+   "strikes": 12,
+   "errors": 10,
+   "skipped_fresh": 147,
+   "handovers": 3
   }
  }
 }
