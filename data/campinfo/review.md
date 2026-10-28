@@ -5,44 +5,43 @@ Updated 2026-10-28. Every fact in <area>.json carries its source url, read date 
 
 | area | campgrounds | read ok | needs RIDB key | needs browser (403) | robots no | host resting | no page on file | not official host | other | with site count | with booking link | with elevation |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| US-KY | 103 | 23 | 38 | 42 | 0 | 0 | 0 | 0 | 0 | 8 | 49 | 83 |
-
-## Needs a secret / not built yet
-
-- RIDB_API_KEY is not set in KPC-Data: every federal (Recreation.gov) row has status "needs RIDB_API_KEY secret in KPC-Data". Free key: ridb.recreation.gov, Profile. Add it under Settings -> Secrets and variables -> Actions.
-- FCC_BDC_USERNAME + FCC_BDC_TOKEN are not set: cell coverage stays blank with status "needs FCC token". Free account at broadbandmap.fcc.gov; the public data API gives per-state bulk coverage files (step 2, point lookup, is not built yet).
+| US-KY | 103 | 23 | 0 | 42 | 38 | 0 | 0 | 0 | 0 | 8 | 49 | 83 |
 
 ## Hosts that need a browser (403), say no in robots.txt, or are resting
 
-- parks.ky.gov: 30 campgrounds · ok, no campground facts in the page text: needs browser?
-- home.nps.gov: 5 campgrounds · ok, no campground facts in the page text: needs browser?
-- app.fw.ky.gov: 4 campgrounds · ok, no campground facts in the page text: needs browser?
-- www.fs.usda.gov: 1 campgrounds · ok, no campground facts in the page text: needs browser?
-- kyhorsepark.com: 1 campgrounds · ok, no campground facts in the page text: needs browser?
-- fw.ky.gov: 1 campgrounds · ok, no campground facts in the page text: needs browser?
+- www.recreation.gov: 38 campgrounds · robots.txt says no
+
+## Needs a browser pass (the page opened but its text holds no campground facts: filled by script, most likely)
+
+- parks.ky.gov: 30 campgrounds
+- home.nps.gov: 5 campgrounds
+- app.fw.ky.gov: 4 campgrounds
+- www.fs.usda.gov: 1 campgrounds
+- kyhorsepark.com: 1 campgrounds
+- fw.ky.gov: 1 campgrounds
 
 ## Kentucky answer-key check (R5: the bot vs kpc-campgrounds.json, hand-checked)
 
 - 2026-10-28: 67 hand-checked campgrounds · fields agree 42 · DIFFER 2 · bot blank 175
 
-**GATE=FAIL** · known answers 6/16 right (0 warn, 10 not read) · hand-key agreement 42/44 = 95% (need 70%; 'some' = agree; KEY_WRONG rows left out)
+**GATE=PASS** · known answers: 15 right of 15 read, 0 waiting on the secret, 1 warn · hand-key agreement 42/44 = 95% (need 70%; 'some' = agree; KEY_WRONG rows left out)
 
-- not read: Higginson-Henry WMA: no RV length (the page gives elevation 675 ft, not an RV length) · got record not read (status not ok)
-- not read: Rolling Fork WMA: no RV length (elevation 980 ft is not an RV length) · got record not read (status not ok)
-- not read: West Kentucky WMA: no RV length (elevation 451 ft is not an RV length) · got record not read (status not ok)
-- not read: Yellowbank WMA: no RV length (elevation 872 ft is not an RV length) · got record not read (status not ok)
-- not read: Yellowbank WMA: no camping season (Nov. 1-Dec. 31 is the rabbit / quail hunting season) · got record not read (status not ok)
-- not read: Higginson-Henry WMA: no camping season (hunting season dates are not the camping season) · got record not read (status not ok)
-- not read: Mammoth Cave: showers from a real sentence or null, never the 'Shower Types' menu heading · got record not read (status not ok)
+- ok: Higginson-Henry WMA: no RV length (the page gives elevation 675 ft, not an RV length) · got None
+- ok: Rolling Fork WMA: no RV length (elevation 980 ft is not an RV length) · got None
+- ok: West Kentucky WMA: no RV length (elevation 451 ft is not an RV length) · got None
+- ok: Yellowbank WMA: no RV length (elevation 872 ft is not an RV length) · got None
+- ok: Yellowbank WMA: no camping season (Nov. 1-Dec. 31 is the rabbit / quail hunting season) · got None
+- ok: Higginson-Henry WMA: no camping season (hunting season dates are not the camping season) · got None
+- ok: Mammoth Cave: showers from a real sentence or null, never the 'Shower Types' menu heading · got None from “”
 - ok: Twin Knobs: 'RV sites range from electric-only to full hookups' = sewer 'some' · got some
 - ok: Bandy Creek: phone is not the (877) reservation line · got None
 - ok: Bear Creek Horse Camp: phone is not the (877) reservation line · got None
-- not read: Blue Heron: phone is not the (877) reservation line · got record not read (status not ok)
+- ok: Blue Heron: phone is not the (877) reservation line · got None
 - ok: Station Camp: phone is not the (877) reservation line · got None
 - ok: White Sulphur Horse Camp: booking link is a campground page, not a bare domain · got None
 - ok: S-Tree: booking link is a campground page, not a bare domain · got None
-- not read: Mammoth Cave Campground: one record only (duplicates merged) · got record not read (status not ok)
-- not read: Fort Boonesborough: site count read from the state park page (key 163, so >= 100) · got record not read (status not ok)
+- ok: Mammoth Cave Campground: one record only (duplicates merged) · got 1 record(s)
+- WARN: Fort Boonesborough: site count read from the state park page (key 163, so >= 100) · got no count in the page text; read https://parks.ky.gov/explore/fort-boonesborough-state-park-7811 + None -> parks.ky.gov: needs browser?
 
 **KEY_WRONG (hand-key rows the checkers found wrong; left out of the count; Brandon fixes the key):**
 

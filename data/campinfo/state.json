@@ -6,23 +6,33 @@
    "counts": {
     "camps": 103,
     "needs_browser": 42,
-    "needs_key": 38,
+    "needs_key": 0,
     "no_page": 0,
     "not_official": 0,
     "ok": 23,
     "other": 0,
     "resting": 0,
-    "robots": 0,
+    "robots": 38,
     "with_booking": 49,
     "with_elevation": 83,
     "with_sites": 8
    },
    "left": 6,
-   "status": "failed",
+   "status": "partial",
    "updated": "2026-10-28"
   }
  },
- "fcc": {},
+ "fcc": {
+  "US-KY": {
+   "cell": {
+    "carriers": null,
+    "files": [],
+    "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2025-12-31?category=State&subcategory=Mobile%20Broadband",
+    "status": "FCC as of 2025-12-31: 0 mobile coverage files for the state (point lookup = step 2, not built)"
+   },
+   "read": "2026-10-28"
+  }
+ },
  "hosts": {},
  "ky_check": {
   "agree": 42,
@@ -31,41 +41,41 @@
   "differ": 2,
   "gate": {
    "pct": 95,
-   "result": "FAIL",
+   "result": "PASS",
    "rows": [
     {
-     "got": "record not read (status not ok)",
-     "ok": null,
+     "got": null,
+     "ok": true,
      "why": "Higginson-Henry WMA: no RV length (the page gives elevation 675 ft, not an RV length)"
     },
     {
-     "got": "record not read (status not ok)",
-     "ok": null,
+     "got": null,
+     "ok": true,
      "why": "Rolling Fork WMA: no RV length (elevation 980 ft is not an RV length)"
     },
     {
-     "got": "record not read (status not ok)",
-     "ok": null,
+     "got": null,
+     "ok": true,
      "why": "West Kentucky WMA: no RV length (elevation 451 ft is not an RV length)"
     },
     {
-     "got": "record not read (status not ok)",
-     "ok": null,
+     "got": null,
+     "ok": true,
      "why": "Yellowbank WMA: no RV length (elevation 872 ft is not an RV length)"
     },
     {
-     "got": "record not read (status not ok)",
-     "ok": null,
+     "got": null,
+     "ok": true,
      "why": "Yellowbank WMA: no camping season (Nov. 1-Dec. 31 is the rabbit / quail hunting season)"
     },
     {
-     "got": "record not read (status not ok)",
-     "ok": null,
+     "got": null,
+     "ok": true,
      "why": "Higginson-Henry WMA: no camping season (hunting season dates are not the camping season)"
     },
     {
-     "got": "record not read (status not ok)",
-     "ok": null,
+     "got": "None from “”",
+     "ok": true,
      "why": "Mammoth Cave: showers from a real sentence or null, never the 'Shower Types' menu heading"
     },
     {
@@ -84,8 +94,8 @@
      "why": "Bear Creek Horse Camp: phone is not the (877) reservation line"
     },
     {
-     "got": "record not read (status not ok)",
-     "ok": null,
+     "got": null,
+     "ok": true,
      "why": "Blue Heron: phone is not the (877) reservation line"
     },
     {
@@ -104,18 +114,18 @@
      "why": "S-Tree: booking link is a campground page, not a bare domain"
     },
     {
-     "got": "record not read (status not ok)",
-     "ok": null,
+     "got": "1 record(s)",
+     "ok": true,
      "why": "Mammoth Cave Campground: one record only (duplicates merged)"
     },
     {
-     "got": "record not read (status not ok)",
-     "ok": null,
+     "got": "no count in the page text; read https://parks.ky.gov/explore/fort-boonesborough-state-park-7811 + None -> parks.ky.gov: needs browser?",
+     "ok": "warn",
      "why": "Fort Boonesborough: site count read from the state park page (key 163, so >= 100)"
     }
    ],
    "when": "2026-10-28",
-   "why": "known answers 6/16 right (0 warn, 10 not read) · hand-key agreement 42/44 = 95% (need 70%; 'some' = agree; KEY_WRONG rows left out)"
+   "why": "known answers: 15 right of 15 read, 0 waiting on the secret, 1 warn · hand-key agreement 42/44 = 95% (need 70%; 'some' = agree; KEY_WRONG rows left out)"
   },
   "key_wrong": [
    {
@@ -860,36 +870,36 @@
   "areas": [
    "US-KY"
   ],
-  "fcc_token": false,
+  "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
    "errors": 0,
-   "requests": 47,
+   "requests": 177,
    "rested": 0,
-   "robots": 0,
+   "robots": 42,
    "strikes": 0
   },
-  "ridb_key": false,
+  "ridb_key": true,
   "stat": {
-   "camps": 44,
-   "elevations": 44,
+   "camps": 109,
+   "elevations": 86,
    "errors": 0,
-   "needs_browser": 0,
-   "needs_key": 42,
+   "needs_browser": 42,
+   "needs_key": 0,
    "no_page": 0,
    "not_official": 0,
-   "ok": 2,
-   "pages_read": 3,
+   "ok": 67,
+   "pages_read": 89,
    "resting": 0,
-   "ridb_calls": 0,
+   "ridb_calls": 42,
    "robots": 0,
-   "skipped_fresh": 65
+   "skipped_fresh": 0
   },
   "when": "2026-10-28"
  },
  "test": {
-  "result": "FAIL",
+  "result": "PASS",
   "when": "2026-10-28",
-  "why": "known answers 6/16 right (0 warn, 10 not read) · hand-key agreement 42/44 = 95% (need 70%; 'some' = agree; KEY_WRONG rows left out)"
+  "why": "known answers: 15 right of 15 read, 0 waiting on the secret, 1 warn · hand-key agreement 42/44 = 95% (need 70%; 'some' = agree; KEY_WRONG rows left out)"
  }
 }
