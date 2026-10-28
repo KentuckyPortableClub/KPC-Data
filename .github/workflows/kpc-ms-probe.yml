@@ -6,11 +6,11 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
+      - run: pip install -q --break-system-packages pyshp pyproj || pip install -q pyshp pyproj || true
       - name: zips
         continue-on-error: true
         shell: python3 {0}
         run: |
-          import subprocess, sys; subprocess.run([sys.executable, '-m', 'pip', 'install', '-q', '--break-system-packages', 'pyshp', 'pyproj'])
           import io, json, zipfile, urllib.request, collections, shapefile
           UA = {'User-Agent': 'KPC park-map bot (https://kentuckyportableclub.github.io/KPC-Links/)'}
           def note(t, m): print(f'::notice title={t}::{m}'[:1000], flush=True)
