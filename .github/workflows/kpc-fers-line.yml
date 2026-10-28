@@ -184,6 +184,11 @@ jobs:
           MINUTES: ${{ inputs.minutes }}
         run: |
           M=${MINUTES:-280}; [ $M -gt 300 ] && M=300
+          # Oct 28 (Brandon: 'why did Mississippi run out of time'): the fetcher's pass 2 ran out of time before Mississippi's rows
+          # (9 states in one line) and a worker run never did pass 2 again, so 24 rows waited forever: finish pass 2 here first
+          if python3 -c "import json,glob,sys; sys.exit(0 if any(str(s.get('status','')).startswith('waiting for pass 2') for f in glob.glob('data/fers/US-*.json')+glob.glob('data/fers/CA-*.json') for s in json.load(open(f)).get('spots',[])) else 1)" 2>/dev/null; then
+            echo "::notice title=2-fer line::rows still waiting for pass 2: finishing pass 2 in the worker"; PASS=2 MINUTES=$(( M / 4 )) python3 .github/scripts/kpc_fers.py || true
+          fi
           PASS=3 MINUTES=$(( M * 4 / 5 )) python3 .github/scripts/kpc_fers.py || true
           PASS=5 MINUTES=$(( M / 5 )) python3 .github/scripts/kpc_fers.py || true
       - name: Bundle up (a lost bundle = a red run)
