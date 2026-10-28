@@ -14,7 +14,7 @@
  ],
  "rows": [
   {
-   "approved": null,
+   "approved": false,
    "area": "US-NV",
    "closes": "not probed",
    "expect": "READY or already read",
@@ -108,10 +108,11 @@
    "url": "https://services7.arcgis.com/5hLFVlePaucIMGhw/arcgis/rest/services/VS_Boundary_Map_2_WFL1/FeatureServer/2",
    "ver": 1,
    "verdict": "REJECT",
-   "why": "already read as sgnvc: nothing new to take"
+   "why": "already read as sgnvc: nothing new to take",
+   "chat9": "agree REJECT: already read (sgnvc); the newer NDSP boundaries (arcgis.water.nv.gov NDSP_State_Park_Bondaries/1) are already added by chat 9 (merged). (chat 9, 2026-10-28)"
   },
   {
-   "approved": null,
+   "approved": false,
    "area": "US",
    "closes": {
     "by_name": 0,
@@ -201,10 +202,11 @@
    "url": "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_rez/FeatureServer/0",
    "ver": 1,
    "verdict": "READY",
-   "why": "official, open terms, named polygons, requested by chat 9"
+   "why": "official, open terms, named polygons, requested by chat 9",
+   "chat9": "REJECT for the key: lake SURFACES are never a land outline (rule B6). Kept for chat 2's rule-14 Corps step (kpc_fers), not the key. (chat 9, 2026-10-28)"
   },
   {
-   "approved": null,
+   "approved": false,
    "area": "US-SC",
    "closes": "not probed",
    "expect": "ASK-THE-PUBLISHER or already read",
@@ -235,10 +237,11 @@
    "url": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/SCDNR_Managed_Lands_Public_Viewer/FeatureServer/0",
    "ver": 1,
    "verdict": "REJECT",
-   "why": "did not open (error Invalid URL): url to confirm"
+   "why": "did not open (error Invalid URL): url to confirm",
+   "chat9": "agree not used: the Clemson copy is replaced by SCDNR's OWN layer (DEV_-_SCDNR_Public_Lands_Viewer/3, merged). Gate note for chat 10: the queue row had the wrong host (Clemson's is services1 …/x5wCko8UnSi4h0CB). (chat 9, 2026-10-28)"
   },
   {
-   "approved": null,
+   "approved": false,
    "area": "CA-PE",
    "closes": {
     "by_name": 0,
@@ -303,10 +306,11 @@
    "url": "https://gis.princeedwardisland.ca/server/rest/services/GeoLincData/GeoLinc_provincial_park_polygon_ENV/MapServer/0",
    "ver": 1,
    "verdict": "ASK-THE-PUBLISHER",
-   "why": "nothing stated about use on the item page or the service"
+   "why": "nothing stated about use on the item page or the service",
+   "chat9": "agree ASK-THE-PUBLISHER (on the ask table). (chat 9, 2026-10-28)"
   },
   {
-   "approved": null,
+   "approved": true,
    "area": "CZ",
    "closes": {
     "by_name": 18,
@@ -466,10 +470,12 @@
    "url": "https://gis.nature.cz/arcgis/rest/services/ObecnaOchrana/PrirodniPark/MapServer/0",
    "ver": 1,
    "verdict": "READY",
-   "why": "official, credit terms, named polygons, closes 19 missing park(s)"
+   "why": "official, credit terms, named polygons, closes 19 missing park(s)",
+   "chat9": "APPROVED as LIVE-ONLY (HQ live-only rule): AOPK's terms are 'viewing only' (chat 8, KPC_W_CZ); the copyright line is a credit, not the terms. Read live, never stored (chat9-world LIVE_ONLY set). (chat 9, 2026-10-28)",
+   "live_only": true
   },
   {
-   "approved": null,
+   "approved": false,
    "area": "US-MT",
    "closes": "not probed",
    "expect": "already read",
@@ -559,10 +565,11 @@
    "url": "https://services3.arcgis.com/Cdxz8r11hT0MGzg1/arcgis/rest/services/FWPLND_STATEPARKS/FeatureServer/0",
    "ver": 1,
    "verdict": "REJECT",
-   "why": "already read as sgmta: nothing new to take"
+   "why": "already read as sgmta: nothing new to take",
+   "chat9": "agree REJECT: already read (sgmta). (chat 9, 2026-10-28)"
   },
   {
-   "approved": null,
+   "approved": false,
    "area": "GB",
    "closes": {
     "by_name": 0,
@@ -660,10 +667,11 @@
    "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Doorstep_Greens_Polygons/FeatureServer/0",
    "ver": 1,
    "verdict": "REJECT",
-   "why": "official and usable, but it closes none of the area's missing parks (nothing to gain yet)"
+   "why": "official and usable, but it closes none of the area's missing parks (nothing to gain yet)",
+   "chat9": "agree REJECT: closes none. (chat 9, 2026-10-28)"
   },
   {
-   "approved": null,
+   "approved": false,
    "area": "GB",
    "closes": {
     "by_name": 0,
@@ -760,10 +768,11 @@
    "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Millennium_Greens_England_Polygons/FeatureServer/0",
    "ver": 1,
    "verdict": "REJECT",
-   "why": "official and usable, but it closes none of the area's missing parks (nothing to gain yet)"
+   "why": "official and usable, but it closes none of the area's missing parks (nothing to gain yet)",
+   "chat9": "agree REJECT: closes none. (chat 9, 2026-10-28)"
   },
   {
-   "approved": null,
+   "approved": true,
    "area": "GB",
    "closes": {
     "by_name": 13,
@@ -1013,10 +1022,11 @@
    "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/SSSI_Units_England/FeatureServer/1",
    "ver": 1,
    "verdict": "READY",
-   "why": "official, open terms, named polygons, closes 27 missing park(s)"
+   "why": "official, open terms, named polygons, closes 27 missing park(s)",
+   "chat9": "APPROVED: OGL, closes 27 tested. Note for the key: the pin-only joins (an NNR / RSPB reserve inside a big estuary SSSI) are 'sits on', not the park's own outline: name rules decide, never pin alone. (chat 9, 2026-10-28)"
   },
   {
-   "approved": null,
+   "approved": false,
    "area": "US-KY",
    "closes": "not probed",
    "expect": "REJECT",
@@ -1047,7 +1057,8 @@
    "url": "https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0",
    "ver": 1,
    "verdict": "REJECT",
-   "why": "did not open (error Invalid URL): url to confirm"
+   "why": "did not open (error Invalid URL): url to confirm",
+   "chat9": "agree REJECT (hobby map). (chat 9, 2026-10-28)"
   }
  ],
  "updated": "2026-10-28"
