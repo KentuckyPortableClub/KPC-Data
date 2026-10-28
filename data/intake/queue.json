@@ -110,6 +110,17 @@
    "added": "2026-10-28",
    "note": "test row (h): a made-up hobby layer on a non-government account; the bot will mark it 'did not open' and REJECT",
    "expect": "REJECT"
+  },
+  {
+   "url": "https://prostor4.gov.si/ows2-ins/ps/wfs?service=wfs&version=2.0.0&request=GetCapabilities",
+   "area": "W-SI",
+   "title": "Slovenia protected areas (ARSO, INSPIRE PS WFS)",
+   "publisher": "Agencija RS za okolje (ARSO) / Slovenian Environment Agency",
+   "licence": "ATOM feed rights: 'No limitations'",
+   "from": "chat 9",
+   "added": "2026-10-28",
+   "note": "WFS (not ArcGIS): the host did not resolve from a GitHub runner on Oct 28 (DNS); ATOM download feed http://gis.arso.gov.si/related/atom/inspire/datafeeds/zav_obm_poli.xml (GML, 2021-12-10). Needs the typename read from GetCapabilities.",
+   "expect": "READY (WFS) or did-not-open"
   }
  ]
 }
