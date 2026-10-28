@@ -3,15 +3,15 @@
   "US-KY": {
    "checked": 193,
    "counts": {
-    "agree": 87,
-    "handover_hints": 46,
+    "agree": 98,
+    "handover_hints": 49,
     "no_page": 0,
-    "no_size": 83,
-    "off": 7,
+    "no_size": 72,
+    "off": 5,
     "ours_unknown": 0,
     "parks": 193,
     "retired": 0,
-    "unsure": 12,
+    "unsure": 14,
     "weak": 30,
     "with_outline": 189
    },
@@ -32,22 +32,22 @@
   "manners": {
    "arcgis_exempt": 0,
    "errors": 0,
-   "requests": 369,
+   "requests": 504,
    "rested": 2,
    "robots": 0,
-   "strikes": 0
+   "strikes": 1
   },
   "stat": {
    "errors": 1,
-   "handover_hints": 46,
-   "no_size": 83,
+   "handover_hints": 49,
+   "no_size": 72,
    "ours_unknown": 0,
-   "pages_read": 292,
+   "pages_read": 440,
    "parks": 193,
    "retired": 0,
-   "size_agree": 87,
-   "size_off": 7,
-   "size_unsure": 12,
+   "size_agree": 98,
+   "size_off": 5,
+   "size_unsure": 14,
    "skipped_fresh": 0,
    "with_outline": 189
   },
@@ -75,11 +75,12 @@
    "status": "HTTP 404"
   }
  },
+ "proven": "2026-10-28",
  "test": {
   "levi_ok": true,
-  "otter_ok": false,
-  "result": "FAIL",
+  "otter_ok": true,
+  "result": "PASS",
   "when": "2026-10-28",
-  "why": "Levi Jackson: verdict off ours 722 agency 896 acres · Otter Creek hints: 0 (no Meade County line)"
+  "why": "Levi Jackson: verdict off ours 722 agency 896 acres · Otter Creek hints: 3 (Meade found)"
  }
 }

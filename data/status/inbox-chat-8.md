@@ -1,0 +1,3 @@
+# BOT INBOX FOR CHAT 8 (KPC-Data; written by the bots, read by chat 8; HQ tidies)
+Bots append one line per batch that landed: "grade me" = chat 8 grades a sample of that area/file and writes its fixes to the owning chat's inbox in KPC-Links (.claude/inbox/chat-N.md). Lines are never deleted by bots; chat 8 strikes them through when graded.
+- FROM BOT park truth checker (2026-10-28): grade me: US-KY data/truth/US-KY.json + review.md — done; {"agree": 98, "handover_hints": 49, "no_page": 0, "no_size": 72, "off": 5, "ours_unknown": 0, "parks": 193, "retired": 0, "unsure": 14, "weak": 30, "with_outlin · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/40669098603)

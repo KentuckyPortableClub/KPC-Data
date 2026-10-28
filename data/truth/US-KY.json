@@ -2,22 +2,37 @@
  "about": "Park truth checker: official acreage vs our outline, handover hints, second-witness score. Review lists only: nothing here changes a key or a card.",
  "area": "US-KY",
  "counts": {
-  "agree": 87,
-  "handover_hints": 46,
+  "agree": 98,
+  "handover_hints": 49,
   "no_page": 0,
-  "no_size": 83,
-  "off": 7,
+  "no_size": 72,
+  "off": 5,
   "ours_unknown": 0,
   "parks": 193,
   "retired": 0,
-  "unsure": 12,
+  "unsure": 14,
   "weak": 30,
   "with_outline": 189
  },
  "parks": {
   "US-0019": {
    "checked": "2026-10-28",
-   "handover": [],
+   "handover": [
+    {
+     "date_hint": null,
+     "kind": "transfer",
+     "line": "rights, title, merchantability, fitness for a particular purpose or freedom from computer virus, is given with respect to the contents of this Web site or its links to other Internet resources. The information appearing on this Web site is for general informational purposes only and is not i",
+     "src": "https://www.nps.gov/cuga/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "date_hint": null,
+     "kind": "managed by",
+     "line": "the National Park Service Web site includes hypertext links or pointers to information created and maintained by other public and/or private organizations. The National Park Service provides these links and pointers solely for yo",
+     "src": "https://www.nps.gov/cuga/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    }
+   ],
    "n": "Cumberland Gap National Historical Park",
    "official": {
     "acres": 14000.0,
@@ -63,6 +78,11 @@
      "why": "official map (Kentucky answer key)"
     },
     {
+     "status": "ok",
+     "url": "https://www.nps.gov/cuga/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
      "status": "HTTP 404",
      "url": "https://www.nps.gov/cuga/learn/management/statistics.htm",
      "why": "NPS park statistics page"
@@ -105,12 +125,28 @@
     }
    ],
    "t": "National / NPS",
-   "ver": 2,
+   "ver": 3,
    "verdict": "unsure"
   },
   "US-0050": {
+   "cause": "boundary vs owned: our line may be the authorized boundary, the agency counts owned land (rule 1: use owned land)",
    "checked": "2026-10-28",
-   "handover": [],
+   "handover": [
+    {
+     "date_hint": null,
+     "kind": "transfer",
+     "line": "rictions to address unique management needs in their park unit. Within the CFR, superintendents are given the authority to amend, modify, relax, or make more stringent certain regulations. These park-specific regulations are incorporated into a document called the Superintendent's Compe",
+     "src": "https://www.nps.gov/maca/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "date_hint": null,
+     "kind": "managed by",
+     "line": "Unmanned Aircraft Launching, landing, or operating an unmanned aircraft from or on lands and waters administered by the National Park Service within the boundaries of Mammoth Cave National Park is prohibited except as approved in writing by the superintendent. Read more abo",
+     "src": "https://www.nps.gov/maca/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    }
+   ],
    "n": "Mammoth Cave National Park",
    "official": {
     "acres": 52831.0,
@@ -152,13 +188,13 @@
     },
     {
      "status": "ok",
-     "url": "https://www.nps.gov/maca/learn/management/statistics.htm",
-     "why": "NPS park statistics page"
+     "url": "https://www.nps.gov/maca/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
     },
     {
      "status": "ok",
-     "url": "https://www.nps.gov/maca/learn/news/newsreleases.htm",
-     "why": "NPS news releases"
+     "url": "https://www.nps.gov/maca/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
     }
    ],
    "pct": 35,
@@ -193,7 +229,7 @@
     }
    ],
    "t": "National Park",
-   "ver": 2,
+   "ver": 3,
    "verdict": "off"
   },
   "US-0295": {
@@ -229,7 +265,6 @@
     }
    ],
    "n": "Clarks River National Wildlife Refuge",
-   "note": "the agency figure may cover several states; our outline may be this state's share only",
    "official": {
     "acres": 73962.0,
     "as": "73,962 acres",
@@ -268,6 +303,26 @@
      "status": "ok",
      "url": "https://www.fws.gov/refuge/clarks-river/about-us",
      "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/clarks-river/visit-us",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/sites/default/files/documents/2024-08/public-map-july-2024.pdf",
+     "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/clarks-river/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/clarks-river/about-us",
+     "why": "FWS refuge about page"
     }
    ],
    "pct": 68,
@@ -297,19 +352,25 @@
      "acres": 73962.0,
      "as": "73,962 acres",
      "line": "reads: George Rogers Clark was original patentee of land on which Paducah is now located. Two grants totaling 73,962 acres were conveyed to Clark by Virginia, a portion of this representing money owed him for services rendered. Land",
-     "total_like": true,
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/clarks-river/about-us"
+    },
+    {
+     "acres": 73962.0,
+     "as": "73,962 acres",
+     "line": "reads: George Rogers Clark was original patentee of land on which Paducah is now located. Two grants totaling 73,962 acres were conveyed to Clark by Virginia, a portion of this representing money owed him for services rendered. Land",
+     "total_like": false,
      "url": "https://www.fws.gov/refuge/clarks-river/about-us"
     }
    ],
    "t": "National / NPS",
-   "ver": 2,
+   "ver": 3,
    "verdict": "unsure"
   },
   "US-0538": {
    "checked": "2026-10-28",
    "handover": [],
    "n": "Reelfoot National Wildlife Refuge",
-   "note": "the agency figure may cover several states; our outline may be this state's share only",
    "official": {
     "acres": 11556.0,
     "as": "11,556 acres",
@@ -350,9 +411,19 @@
      "why": "about / history page of the park's site"
     },
     {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/reelfoot/about-us",
+     "why": "about / history page of the park's site"
+    },
+    {
      "status": "rest",
      "url": "https://legacy.fws.gov/sites/default/files/documents/RF%20Gen%20Brochure.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/reelfoot/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
     },
     {
      "status": "ok",
@@ -373,33 +444,47 @@
      "acres": 11556.0,
      "as": "11,556 acres",
      "line": "Other Facilities in the Complex Hatchie National Wildlife Refuge Hatchie National Wildlife Refuge encompasses 11,556 acres in west Tennessee, and serves as an important resting and feeding area for wintering waterfowl and other migr",
-     "total_like": true,
+     "total_like": false,
      "url": "https://www.fws.gov/refuge/reelfoot/visit-us"
     },
     {
      "acres": 1850.0,
      "as": "1,850 acres",
      "line": "938 and became the first National Wildlife Refuge in the state of Tennessee. The refuge currently encompasses 1,850 acres and is located in Lake County, Tennessee. National Wildlife Refuge Union City, TN View All Rules & Policies L",
-     "total_like": true,
+     "total_like": false,
      "url": "https://www.fws.gov/refuge/reelfoot/visit-us"
     },
     {
      "acres": 11556.0,
      "as": "11,556 acres",
      "line": "ther Facilities in this Complex Hatchie National Wildlife Refuge Hatchie National Wildlife Refuge encompasses 11,556 acres in west Tennessee, and serves as an important resting and feeding area for wintering waterfowl and other migr",
-     "total_like": true,
+     "total_like": false,
      "url": "https://www.fws.gov/refuge/reelfoot/about-us"
     },
     {
      "acres": 1850.0,
      "as": "1,850 acres",
      "line": "938 and became the first National Wildlife Refuge in the state of Tennessee. The refuge currently encompasses 1,850 acres and is located in Lake County, Tennessee. National Wildlife Refuge Union City, TN You are exiting the U.S. Fi",
-     "total_like": true,
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/reelfoot/about-us"
+    },
+    {
+     "acres": 11556.0,
+     "as": "11,556 acres",
+     "line": "ther Facilities in this Complex Hatchie National Wildlife Refuge Hatchie National Wildlife Refuge encompasses 11,556 acres in west Tennessee, and serves as an important resting and feeding area for wintering waterfowl and other migr",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/reelfoot/about-us"
+    },
+    {
+     "acres": 1850.0,
+     "as": "1,850 acres",
+     "line": "938 and became the first National Wildlife Refuge in the state of Tennessee. The refuge currently encompasses 1,850 acres and is located in Lake County, Tennessee. National Wildlife Refuge Union City, TN You are exiting the U.S. Fi",
+     "total_like": false,
      "url": "https://www.fws.gov/refuge/reelfoot/about-us"
     }
    ],
    "t": "National / NPS",
-   "ver": 2,
+   "ver": 3,
    "verdict": "unsure"
   },
   "US-0608": {
@@ -442,6 +527,11 @@
     },
     {
      "status": "ok",
+     "url": "https://www.fws.gov/refuge/ohio-river-islands/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
      "url": "https://www.fws.gov/refuge/ohio-river-islands/about-us",
      "why": "FWS refuge about page"
     }
@@ -478,18 +568,32 @@
     }
    ],
    "t": "National / NPS",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-0686": {
    "checked": "2026-10-28",
    "handover": [
     {
+     "date_hint": "1916",
+     "kind": "managed by",
+     "line": "Many laws , including the 1916 Organic Act that created the National Park Service, affect all areas managed by the National Park Service. Big South Fork Enabling Legislation provides specific instructions and guidance on how the park must be managed.",
+     "src": "https://www.nps.gov/biso/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "date_hint": "1970",
+     "kind": "managed by",
+     "line": "hrough the General Authorities Act of 1970 (16 U.S.C. Sections 1a1-1a8), Congress brought all areas administered by the NPS into one National Park System and directed the NPS to manage all areas under its administration consistent with the Organic Act of 1916. In 19",
+     "src": "https://www.nps.gov/biso/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
      "date_hint": null,
      "kind": "managed by",
-     "line": "llow for the protection of 125,000 acres of the Cumberland Plateau. Approximately 116,000 acres are currently owned by the Department of the Interior. Economic Impact Based on current visitation and using the Money Generation Model developed by Michigan State University, Big",
-     "src": "https://www.nps.gov/biso/learn/management/statistics.htm",
-     "why": "NPS park statistics page"
+     "line": "U.S.C. Section 1c defines the National Park System as”…any areas of land and water now or hereafter administered by the Secretary of the Interior through the National Park Service for park, monument, historic, parkway, recreational, or other purposes.” In addition to the",
+     "src": "https://www.nps.gov/biso/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
     }
    ],
    "n": "Big South Fork National Recreation Area",
@@ -501,19 +605,13 @@
     "url": "https://www.nps.gov/biso/index.htm"
    },
    "ours": {
-    "acres": 151973,
+    "acres": 121831,
     "manager": "Federal",
     "pieces": [
      [
       "bnps",
       "Big South Fork National River and Recreation Area",
       121831,
-      "alias"
-     ],
-     [
-      "bwma",
-      "Big South Fork National River and Recreation Area",
-      30142,
       "alias"
      ]
     ],
@@ -529,16 +627,16 @@
     },
     {
      "status": "ok",
-     "url": "https://www.nps.gov/biso/learn/management/statistics.htm",
-     "why": "NPS park statistics page"
+     "url": "https://www.nps.gov/biso/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
     }
    ],
-   "pct": 22,
-   "score": 6,
+   "pct": 3,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -548,25 +646,11 @@
      "line": "This Site All NPS Exiting nps.gov Cancel Big South Fork National River & Recreation Area • KY,TN Encompassing 125,000 acres of the Cumberland Plateau, Big South Fork National River and Recreation Area protects the free-flowing Big So",
      "total_like": true,
      "url": "https://www.nps.gov/biso/index.htm"
-    },
-    {
-     "acres": 125000.0,
-     "as": "125,000 acres",
-     "line": "eage Legislative boundaries for Big South Fork National River and Recreation Area allow for the protection of 125,000 acres of the Cumberland Plateau. Approximately 116,000 acres are currently owned by the Department of the Interior.",
-     "total_like": true,
-     "url": "https://www.nps.gov/biso/learn/management/statistics.htm"
-    },
-    {
-     "acres": 116000.0,
-     "as": "116,000 acres",
-     "line": "River and Recreation Area allow for the protection of 125,000 acres of the Cumberland Plateau. Approximately 116,000 acres are currently owned by the Department of the Interior. Economic Impact Based on current visitation and using",
-     "total_like": true,
-     "url": "https://www.nps.gov/biso/learn/management/statistics.htm"
     }
    ],
    "t": "National Recreation Area",
-   "ver": 2,
-   "verdict": "off"
+   "ver": 3,
+   "verdict": "agree"
   },
   "US-0703": {
    "checked": "2026-10-28",
@@ -577,6 +661,13 @@
      "line": "ground and gaining new positions as well. The way of escape was closed once more. Floyd and Pillow turned over command of Fort Donelson to Buckner and slipped away to Nashville with about 2,000 men. Others followed cavalryman Lt. Colonel Nathan Bedford Forrest across swollen Lick Creek. That morn",
      "src": "https://www.nps.gov/fodo/planyourvisit/thebattleforfortdonelson.htm",
      "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "1916",
+     "kind": "managed by",
+     "line": "Many laws , including the 1916 Organic Act that created the National Park Service, affect all areas managed by the National Park Service. Fort Donelson 's enabling legislation provides specific instructions and guidance on how the park must",
+     "src": "https://www.nps.gov/fodo/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
     },
     {
      "date_hint": "2006",
@@ -627,6 +718,11 @@
     },
     {
      "status": "ok",
+     "url": "https://www.nps.gov/fodo/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
      "url": "https://www.nps.gov/fodo/learn/management/statistics.htm",
      "why": "NPS park statistics page"
     },
@@ -661,7 +757,7 @@
     }
    ],
    "t": "National / NPS",
-   "ver": 2,
+   "ver": 3,
    "verdict": "unsure"
   },
   "US-0724": {
@@ -723,6 +819,11 @@
      "why": "about / history page of the park's site"
     },
     {
+     "status": "ok",
+     "url": "https://www.nps.gov/abli/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
      "status": "HTTP 404",
      "url": "https://www.nps.gov/abli/learn/management/statistics.htm",
      "why": "NPS park statistics page"
@@ -743,7 +844,7 @@
    },
    "sizes": [],
    "t": "National / NPS",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-10098": {
@@ -800,6 +901,11 @@
      "status": "ok",
      "url": "https://www.fws.gov/sites/default/files/documents/2024-12/2024-hunt-map-508.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/green-river/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
     },
     {
      "status": "ok",
@@ -874,7 +980,7 @@
     }
    ],
    "t": "National / NPS",
-   "ver": 2,
+   "ver": 3,
    "verdict": "unsure"
   },
   "US-10099": {
@@ -918,6 +1024,11 @@
      "status": "ok",
      "url": "https://www.fws.gov/about-us/work-us",
      "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/laws-regulations",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -930,7 +1041,7 @@
    },
    "sizes": [],
    "t": "Fish Hatchery",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-10102": {
@@ -958,6 +1069,11 @@
      "status": "ok",
      "url": "https://parks.ky.gov/whitesburg/parks/recreation/pine-mountain-state-scenic-trail",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -970,7 +1086,7 @@
    },
    "sizes": [],
    "t": "Trail",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-10103": {
@@ -1037,6 +1153,11 @@
      "status": "ok",
      "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Archived-Regulation-History.aspx",
      "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Air-Quality-Regulations.aspx",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -1049,14 +1170,20 @@
    },
    "sizes": [],
    "t": "River / Wilderness",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-10104": {
    "checked": "2026-10-28",
    "handover": [],
    "n": "Red River National Wild and Scenic River",
-   "official": null,
+   "official": {
+    "acres": 879.0,
+    "as": "879 acres",
+    "line": "r Districts - Cumberland, London, Stearns, and Redbird. Each District Office shares in the management of 708, 879 acres of national forest lands. These lands are intermixed among state, private and other federal lands within a 2.",
+    "read": "2026-10-28",
+    "url": "https://www.fs.usda.gov/r08/danielboone/about-area"
+   },
    "ours": {
     "acres": 1049,
     "manager": "",
@@ -1074,12 +1201,27 @@
    },
    "pages": [
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://www.fs.usda.gov/recarea/dbnf/recreation/recarea/?recid=39548",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fs.usda.gov/r08/danielboone/about-area",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fs.usda.gov/about-agency",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fs.usda.gov/r08/danielboone",
+     "why": "rules page (documents bot)"
     }
    ],
-   "pct": null,
+   "pct": 19,
    "score": 3,
    "score_parts": {
     "name": 1,
@@ -1087,12 +1229,56 @@
     "size": 1,
     "source": 1
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 8270.0,
+     "as": "8,270 acre",
+     "line": "reation Regions Cave Run Lake Cave Run Lake is nestled among the rolling hills of northeastern Kentucky. This 8,270-acre lake provides flood protection and a clean water… Central Forest The Central Forest region of the Daniel Boon",
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/recarea/dbnf/recreation/recarea/?recid=39548"
+    },
+    {
+     "acres": 5600.0,
+     "as": "5,600 acres",
+     "line": "t trailhead of the Sheltowee Trace National Recreation Trail in… Laurel River Lake Laurel River Lake features 5,600 acres of clear, deep water and nearly 200 miles of tree-lined shore. The quiet coves and cliff-lined shores offer…",
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/recarea/dbnf/recreation/recarea/?recid=39548"
+    },
+    {
+     "acres": 879.0,
+     "as": "879 acres",
+     "line": "r Districts - Cumberland, London, Stearns, and Redbird. Each District Office shares in the management of 708, 879 acres of national forest lands. These lands are intermixed among state, private and other federal lands within a 2.",
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/r08/danielboone/about-area"
+    },
+    {
+     "acres": 13853.0,
+     "as": "13,853 acres",
+     "line": "– provide excellent opportunities for boating, fishing and other water sport activities. In total, there are 13,853 acres of lakes and 2,516 miles of streams open to the public on Forest lands. 19 of these bodies of water are routi",
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/r08/danielboone/about-area"
+    },
+    {
+     "acres": 708000.0,
+     "as": "708,000 acres",
+     "line": "onal Forest Spread across 21 counties of eastern Kentucky, the Daniel Boone National Forest manages more than 708,000 acres of national forest system lands within a 2.1 million-acre proclamation boundary. From over 600 miles of trail",
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/r08/danielboone"
+    },
+    {
+     "acres": 2100000.0,
+     "as": "2.1 million acre",
+     "line": "ky, the Daniel Boone National Forest manages more than 708,000 acres of national forest system lands within a 2.1 million-acre proclamation boundary. From over 600 miles of trails to two federally recognized wildernesses and more than 2",
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/r08/danielboone"
+    }
+   ],
    "t": "National / NPS",
-   "ver": 2,
-   "verdict": "no size on page"
+   "ver": 3,
+   "verdict": "unsure"
   },
   "US-10105": {
+   "cause": "agency bigger: our outline may miss a tract",
    "checked": "2026-10-28",
    "handover": [
     {
@@ -1170,6 +1356,11 @@
     },
     {
      "status": "ok",
+     "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Air-Quality-Regulations.aspx",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
      "url": "https://www.nps.gov/maca/learn/management/statistics.htm",
      "why": "NPS park statistics page"
     }
@@ -1206,7 +1397,7 @@
     }
    ],
    "t": "National / NPS",
-   "ver": 2,
+   "ver": 3,
    "verdict": "off"
   },
   "US-10106": {
@@ -1273,6 +1464,11 @@
      "status": "ok",
      "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Archived-Regulation-History.aspx",
      "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Air-Quality-Regulations.aspx",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -1285,7 +1481,7 @@
    },
    "sizes": [],
    "t": "National / NPS",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-10107": {
@@ -1358,6 +1554,11 @@
      "status": "ok",
      "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Archived-Regulation-History.aspx",
      "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Air-Quality-Regulations.aspx",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 98,
@@ -1378,7 +1579,7 @@
     }
    ],
    "t": "National / NPS",
-   "ver": 2,
+   "ver": 3,
    "verdict": "unsure"
   },
   "US-10111": {
@@ -1445,6 +1646,11 @@
      "status": "ok",
      "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Archived-Regulation-History.aspx",
      "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Air-Quality-Regulations.aspx",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -1457,7 +1663,7 @@
    },
    "sizes": [],
    "t": "National / NPS",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-10112": {
@@ -1524,6 +1730,11 @@
      "status": "ok",
      "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Archived-Regulation-History.aspx",
      "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Air-Quality-Regulations.aspx",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -1536,7 +1747,7 @@
    },
    "sizes": [],
    "t": "National / NPS",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-10121": {
@@ -1598,7 +1809,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-10124": {
@@ -1634,9 +1845,14 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/ClayWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 1,
@@ -1657,7 +1873,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-10128": {
@@ -1693,9 +1909,14 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/FergusonCreekWMA_All.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 1,
@@ -1723,7 +1944,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-10131": {
@@ -1759,9 +1980,14 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/GabbardBranchWMA_All.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 0,
@@ -1789,7 +2015,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-10137": {
@@ -1825,9 +2051,14 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/Harris-Dickerson_All.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 0,
@@ -1855,7 +2086,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-10138": {
@@ -1891,9 +2122,14 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/Hoskins_WMA_All.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 0,
@@ -1914,7 +2150,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-10139": {
@@ -1997,7 +2233,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-10140": {
@@ -2059,7 +2295,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-10141": {
@@ -2095,9 +2331,14 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/KentuckyRidgeForestWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 1,
@@ -2125,7 +2366,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-10145": {
@@ -2161,9 +2402,14 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/MeadowCreekWMA_all.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 0,
@@ -2184,7 +2430,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-10146": {
@@ -2260,7 +2506,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-10148": {
@@ -2296,9 +2542,14 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/MudCreekCampWMA_All.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 0,
@@ -2326,7 +2577,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-10153": {
@@ -2362,9 +2613,14 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/Old_Trace_Creek_WMA_all.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 12,
@@ -2392,7 +2648,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-10155": {
@@ -2428,9 +2684,14 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/PaulVanBoovenWMA_All.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 0,
@@ -2465,7 +2726,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-10157": {
@@ -2501,9 +2762,14 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/Ping-SinkingValleyWMA_All.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 0,
@@ -2531,7 +2797,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-10158": {
@@ -2600,7 +2866,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-10159": {
@@ -2676,7 +2942,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-10160": {
@@ -2712,9 +2978,14 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/RockcastleRiverWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 0,
@@ -2742,7 +3013,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-10161": {
@@ -2778,9 +3049,14 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/RollingForkWMA_all.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 1,
@@ -2801,7 +3077,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-10162": {
@@ -2837,9 +3113,14 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/RossCreekWMAall.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 0,
@@ -2857,10 +3138,17 @@
      "line": "Public Land Search | KDFWR --> Ross Creek WMA Get Directions Close Return to Search --> WMA Overview Size: 1296 acres Location: Lee, Estill Contact: (606)344-0585 Elevation: minimum 605 feet, maximum 1180 feet. Entrance GPS coo",
      "total_like": true,
      "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9705"
+    },
+    {
+     "acres": 6.0,
+     "as": "6 Ac",
+     "line": "/Ür<m¢_u¯usëa´¥í{U7â MDµa\u001b®+$ý {=øÝ¶YÞaÛ½brã\u000f þP^ zkì¸\u0006¢.sJÄÛY\u0006û¥³ã\u0007 sÔè1¸UQn^>\u0015£Â¢bBÎþ\u0006uMíä ë Z ¶6Ac\u0003ÄåéJ*ÐLs;¼Ø]êèÄË9\"\"E>H\u000eÀv\"£I¬YûQç,]ìg½ý\u0013ÝÖýzM³-{a h£ B/ *zÚÂ%åÁ\u000fó83qÌ o¨çõMÌ\u001b[OõÍÞbW½ß\u0018å",
+     "total_like": false,
+     "url": "https://fw.ky.gov/More/Documents/RossCreekWMAall.pdf"
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-10164": {
@@ -2896,9 +3184,14 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/ShilalahCreekWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 1,
@@ -2926,7 +3219,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-10166": {
@@ -2962,9 +3255,14 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/StephensCreekWMA_All.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 1,
@@ -2992,7 +3290,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-10167": {
@@ -3028,9 +3326,14 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/SimonKentonWMA_all.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 1,
@@ -3051,7 +3354,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-10168": {
@@ -3087,9 +3390,14 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/SunnybrookWMAall.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 0,
@@ -3107,10 +3415,17 @@
      "line": "Public Land Search | KDFWR --> Sunny Brook WMA Get Directions Close Return to Search --> WMA Overview Size: 142 acres Location: Rowan Contact: 859-473-0061 Elevation: minimum 800 feet, maximum 1140 feet. Entrance GPS coordinate",
      "total_like": true,
      "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9707"
+    },
+    {
+     "acres": 1.0,
+     "as": "1 ac",
+     "line": "E^?]r6`bpOaKc 8m*\"&!3Lh 0p=q@U'Gqhn:<n-U$MR*+;[,,RK.80!-3V.$kk l5huYXLmm%>HX#<pdKEF$T0EFVX%3'h^=@/GXjKXoX t\"1ac[%U%?/F -t/!H5q#Vul'*!>M!^aIl[YiK2Q_N%I'9 BNrU '`t@2]l?l9M@BV1,`Lo[X%[,ZX=B>6l 2rsMNn#aIB&CT@?rn1/SZ:Zn`gu5",
+     "total_like": false,
+     "url": "https://fw.ky.gov/More/Documents/SunnybrookWMAall.pdf"
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-10170": {
@@ -3152,6 +3467,11 @@
      "status": "ok",
      "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9116",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 0,
@@ -3186,7 +3506,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-10171": {
@@ -3228,6 +3548,11 @@
      "status": "ok",
      "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9094",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 1,
@@ -3255,7 +3580,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-10172": {
@@ -3265,7 +3590,7 @@
    "ours": null,
    "score": null,
    "t": "Other",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no outline"
   },
   "US-10173": {
@@ -3310,7 +3635,7 @@
    },
    "sizes": [],
    "t": "State Facility",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-11181": {
@@ -3320,7 +3645,7 @@
    "ours": null,
    "score": null,
    "t": "Trail",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no outline"
   },
   "US-11274": {
@@ -3356,9 +3681,14 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/Horse_Mill_branch_WMAmap_ALL.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 0,
@@ -3386,7 +3716,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-12079": {
@@ -3411,14 +3741,19 @@
    },
    "pages": [
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/more/documents/LittleSextonsCreekWMAALL.pdf",
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/LittleSextonsCreekWMAALL.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://fw.ky.gov/Hunt/Pages/Public-Hunting-Areas.aspx",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -3431,7 +3766,7 @@
    },
    "sizes": [],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-12083": {
@@ -3454,7 +3789,7 @@
     "unknown_pieces": 0
    },
    "score": null,
-   "ver": 2,
+   "ver": 3,
    "verdict": "bot error: URL can't contain control characters. '/More/Documents/University of the Cumberl"
   },
   "US-1251": {
@@ -3487,6 +3822,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-mapc310a36d-e0a5-4184-9d51-b0156c7fbd1f.pdf?sfvrsn=4585a9ff_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -3499,7 +3839,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-1252": {
@@ -3532,6 +3872,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map5b26b649-8218-47fa-93e2-4d9b3a8b06b7.pdf?sfvrsn=c1efe6cb_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -3544,7 +3889,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-1253": {
@@ -3577,6 +3922,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/trail-map91be9d1d-06e0-4f87-9b9d-ead09b608681.pdf?sfvrsn=816f3c58_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -3589,7 +3939,7 @@
    },
    "sizes": [],
    "t": "Trail",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-1254": {
@@ -3622,6 +3972,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/parkslibraries/default-document-library/ep-tom-sawyer.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -3634,7 +3989,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-1255": {
@@ -3670,9 +4025,14 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/FishtrapLakeWMA_All.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 1,
@@ -3690,10 +4050,17 @@
      "line": "Public Land Search | KDFWR --> Fishtrap Lake WMA Get Directions Close Return to Search --> WMA Overview Size: 13138 acres Location: Pike Contact: 606-207-3385 Elevation: minimum 749 feet, maximum 1989 feet. Entrance GPS coordinates",
      "total_like": true,
      "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=25"
+    },
+    {
+     "acres": 2.0,
+     "as": "2 ac",
+     "line": "/b S£eÀk±¬Þ\u0010\u0014ø½\u0013°;*¦ñBà*_Ç!ùÆ¤åLlñ;lB d÷öÛ^;£ ÏÊ!Ì\u0004¡\u0005ÜÆØFÄw7\u001bÏ¼ü#Kð°«XÜOøSj{h'i µåî'¯\u000f Ü|\u0004\b/2ac R \u0017}y3ª\u0003°<ºeÄáâÖÇÀ2J\u0005XÆ \u0015bU n\u0018-ÇÒÚ éÈuIm}ao3rQçHv=È ò?ke6ïÈ3¹IÉ2ÀøÜ\u0016 \u0015íþ&º\u0001\u0000-xCK]e«E\u0013Iô\u0015,\u0004",
+     "total_like": false,
+     "url": "https://fw.ky.gov/More/Documents/FishtrapLakeWMA_All.pdf"
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-1256": {
@@ -3726,6 +4093,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map44579b90-ee86-48ee-9948-8e4a78f29318.pdf?sfvrsn=fca89642_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -3738,7 +4110,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-1257": {
@@ -3771,6 +4143,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map114a9b2b-4e39-4282-94a3-8ee0727dd8e6.pdf?sfvrsn=c9ee8f89_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -3783,7 +4160,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-1258": {
@@ -3816,6 +4193,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map0b6523f0-dc20-4163-a883-2a10599a6192.pdf?sfvrsn=3eec0d56_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -3828,7 +4210,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-1259": {
@@ -3867,6 +4249,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-mapee6c05c4-df01-40fa-a37d-0bac8b77095c.pdf?sfvrsn=42132385_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -3879,7 +4266,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-1260": {
@@ -3918,6 +4305,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map50475013-f17e-4081-963b-98164c6a6fca.pdf?sfvrsn=f8b3bb8f_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -3930,7 +4322,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-1261": {
@@ -3969,6 +4361,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map711472d8-e0ef-4cea-856b-39f8a9d0fd7c.pdf?sfvrsn=a27d63d9_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -3981,7 +4378,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-1262": {
@@ -4020,6 +4417,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-mapd99a2476-e940-431e-9e02-1589dfccd4aa.pdf?sfvrsn=9acbaaa8_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -4032,7 +4434,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-1263": {
@@ -4065,6 +4467,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-mapbf184522-cd67-4f33-87c6-1c4ee8486611.pdf?sfvrsn=542319e7_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -4077,10 +4484,11 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-1264": {
+   "cause": "agency bigger: our outline may miss a tract",
    "checked": "2026-10-28",
    "handover": [
     {
@@ -4158,7 +4566,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 2,
+   "ver": 3,
    "verdict": "off"
   },
   "US-1265": {
@@ -4191,6 +4599,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map3ce19887-b5a1-4d79-bc7b-b81ad7ef3856.pdf?sfvrsn=1db84187_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -4203,7 +4616,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-1266": {
@@ -4236,6 +4649,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map7425b9de-cd7f-4e5f-adb4-b87af339ed21.pdf?sfvrsn=c72b87b0_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -4248,7 +4666,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-1267": {
@@ -4281,6 +4699,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map1304db69-b50d-4c0c-a075-74ffeae15a0a.pdf?sfvrsn=dd5d8c7c_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -4293,7 +4716,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-1268": {
@@ -4326,6 +4749,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-mape83dbdcd-0e10-442e-896e-749c8363bb03.pdf?sfvrsn=b777de3_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -4338,7 +4766,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-1269": {
@@ -4371,6 +4799,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map40d4be5e-7a24-4f10-94a0-0dad613ff87f.pdf?sfvrsn=544d1890_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -4383,7 +4816,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-1270": {
@@ -4416,6 +4849,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map39a5f06b-fed6-49fc-85ac-6aaa67d3b44f.pdf?sfvrsn=e8f8d06c_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -4428,7 +4866,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-1271": {
@@ -4467,6 +4905,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map4c3a99b9-34ff-4971-afc1-6d7fc2c900d3.pdf?sfvrsn=523b76a3_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 713,
@@ -4487,7 +4930,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 2,
+   "ver": 3,
    "verdict": "unsure"
   },
   "US-1272": {
@@ -4520,6 +4963,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map10d06200-bfed-4fa9-995b-37a853f47ee3.pdf?sfvrsn=f75f0246_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -4532,7 +4980,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-1273": {
@@ -4565,6 +5013,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map.pdf?sfvrsn=b177d244_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -4577,7 +5030,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-1274": {
@@ -4616,6 +5069,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map9a72ac6f-42af-45f2-987c-a78bea3716ad.pdf?sfvrsn=13ca9773_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -4628,7 +5086,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-1275": {
@@ -4661,6 +5119,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/map58f2dd46-f51b-47b9-a327-fa37a6a36d88.pdf?sfvrsn=82d241d4_0",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -4673,10 +5136,11 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-12752": {
+   "cause": "agency bigger: our outline may miss a tract",
    "checked": "2026-10-28",
    "handover": [],
    "n": "Green River State Natural Area",
@@ -4713,6 +5177,11 @@
      "status": "ok",
      "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Rush-Island-Bottoms.aspx",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Air-Quality-Regulations.aspx",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 31,
@@ -4740,7 +5209,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 2,
+   "ver": 3,
    "verdict": "off"
   },
   "US-1276": {
@@ -4773,6 +5242,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map3d3eab0a-2c5a-424c-9142-739ead7c04eb.pdf?sfvrsn=147455ae_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -4785,7 +5259,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-1277": {
@@ -4824,6 +5298,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map41e9d530-cbc4-4e6d-9f22-ba3d912c5938.pdf?sfvrsn=978558b1_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -4836,7 +5315,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-1278": {
@@ -4875,6 +5354,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map299d3114-7520-4a68-9eb4-9c83abd57b53.pdf?sfvrsn=10762b4_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -4887,7 +5371,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-1279": {
@@ -4920,6 +5404,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-trail-map.pdf?sfvrsn=c9c9146f_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -4932,7 +5421,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-1280": {
@@ -4971,6 +5460,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map786e23f1-10fd-43dc-8a0d-ae5790d0a26b.pdf?sfvrsn=d3a95095_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -4983,7 +5477,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-1281": {
@@ -5022,6 +5516,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-mapbc5b996c-9d9d-4496-820c-85d249377d4b.pdf?sfvrsn=4be2dff7_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -5034,7 +5533,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-1282": {
@@ -5073,6 +5572,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map184010cd-2282-44e9-8538-2c31533d3699.pdf?sfvrsn=3adced7e_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -5085,7 +5589,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-1283": {
@@ -5118,6 +5622,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-mapa1d96cf9-4bbf-40cb-9e2c-17ae776ad27d.pdf?sfvrsn=f6a25db3_0",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -5130,7 +5639,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-1284": {
@@ -5163,6 +5672,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map0bd2c0e4-72b5-4555-ab96-b722b2c866f3.pdf?sfvrsn=53829469_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -5175,7 +5689,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-1285": {
@@ -5208,6 +5722,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-mapd0ec4c31-5b64-467c-8700-6d4dc2b8c96e.pdf?sfvrsn=4a0abfe7_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -5220,7 +5739,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-1286": {
@@ -5259,6 +5778,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/trail-park-map.pdf?sfvrsn=4adcf593_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -5271,7 +5795,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-1287": {
@@ -5304,6 +5828,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map08cc7e0a-9307-47b3-85e9-29db02ce7648.pdf?sfvrsn=145d90d5_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -5316,7 +5845,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-1288": {
@@ -5355,6 +5884,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-mapb229d418-421c-441c-a94a-3767521710cb.pdf?sfvrsn=a8964d93_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -5367,7 +5901,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-1289": {
@@ -5400,6 +5934,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-mapdfb1e246-2868-4a48-9910-0a7654200f0b.pdf?sfvrsn=dd759b8b_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -5412,7 +5951,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-12971": {
@@ -5446,6 +5985,11 @@
      "status": "ok",
      "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Carter-Caves.aspx",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Air-Quality-Regulations.aspx",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 13,
@@ -5480,7 +6024,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-12972": {
@@ -5520,7 +6064,7 @@
    },
    "sizes": [],
    "t": "Nature Preserve",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-12974": {
@@ -5556,9 +6100,14 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/ClearCreekWMA_All.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 0,
@@ -5579,7 +6128,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-13598": {
@@ -5613,6 +6162,11 @@
      "status": "ok",
      "url": "https://app.fw.ky.gov/fisheries/waterbodydetail.aspx?wid=49",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 2,
@@ -5633,7 +6187,7 @@
     }
    ],
    "t": "State Fishing Lake",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-13599": {
@@ -5667,6 +6221,11 @@
      "status": "ok",
      "url": "https://app.fw.ky.gov/fisheries/waterbodydetail.aspx?wid=40",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 146,
@@ -5687,7 +6246,7 @@
     }
    ],
    "t": "State Fishing Lake",
-   "ver": 2,
+   "ver": 3,
    "verdict": "unsure"
   },
   "US-13600": {
@@ -5721,6 +6280,11 @@
      "status": "ok",
      "url": "https://app.fw.ky.gov/fisheries/waterbodydetail.aspx?wid=39",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 4,
@@ -5741,7 +6305,7 @@
     }
    ],
    "t": "State Fishing Lake",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-13601": {
@@ -5775,6 +6339,11 @@
      "status": "ok",
      "url": "https://app.fw.ky.gov/fisheries/waterbodydetail.aspx?wid=56",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 2,
@@ -5795,7 +6364,7 @@
     }
    ],
    "t": "State Fishing Lake",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-13606": {
@@ -5829,6 +6398,11 @@
      "status": "ok",
      "url": "https://app.fw.ky.gov/fisheries/waterbodydetail.aspx?wid=51",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 7,
@@ -5849,7 +6423,7 @@
     }
    ],
    "t": "State Fishing Lake",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-13607": {
@@ -5883,6 +6457,11 @@
      "status": "ok",
      "url": "https://app.fw.ky.gov/fisheries/waterbodydetail.aspx?wid=50",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 5,
@@ -5903,7 +6482,7 @@
     }
    ],
    "t": "State Fishing Lake",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-3779": {
@@ -5936,6 +6515,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map8929d877-a36c-45e6-a250-e218cc865fb7.pdf?sfvrsn=77032b6c_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -5948,7 +6532,7 @@
    },
    "sizes": [],
    "t": "Other",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-3781": {
@@ -6003,7 +6587,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-3782": {
@@ -6036,6 +6620,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map588164a3-d22b-4fd3-a499-5131a10d4c08.pdf?sfvrsn=9d9fcd12_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -6048,7 +6637,7 @@
    },
    "sizes": [],
    "t": "Other",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-3783": {
@@ -6081,6 +6670,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-mapc540f78e-2462-424b-b5e5-c447b5a6722f.pdf?sfvrsn=aee07697_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -6093,7 +6687,7 @@
    },
    "sizes": [],
    "t": "Other",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-3784": {
@@ -6126,6 +6720,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/meetinghouse-cemetery-map.pdf?sfvrsn=c168a4b5_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -6138,7 +6737,7 @@
    },
    "sizes": [],
    "t": "Other",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-3785": {
@@ -6171,6 +6770,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/trail-mapbac509a8-7d2a-48b2-8ac4-db37c6e13041.pdf?sfvrsn=48b1a47_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -6183,7 +6787,7 @@
    },
    "sizes": [],
    "t": "Other",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-3786": {
@@ -6216,6 +6820,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-mapa3c1f5b0-c74b-4d8b-9d28-ff8e3cb13018.pdf?sfvrsn=ebab9901_2",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -6228,7 +6837,7 @@
    },
    "sizes": [],
    "t": "Other",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-3787": {
@@ -6283,7 +6892,7 @@
    },
    "sizes": [],
    "t": "Other",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-3788": {
@@ -6316,6 +6925,11 @@
      "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map5a0ad43e-b0cf-4f09-8ae9-c5db00f46227.pdf?sfvrsn=b3c88011_0",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://parks.ky.gov/park-rules",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -6328,12 +6942,13 @@
    },
    "sizes": [],
    "t": "Other",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-3789": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-10-28",
    "n": "William Whitley House State Historic Site",
    "official": null,
    "ours": {
@@ -6368,7 +6983,7 @@
    },
    "sizes": [],
    "t": "Other",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-3790": {
@@ -6394,6 +7009,13 @@
      "line": "including at the National Park Service. Reasonable Accommodations for Employees The Access Center (formerly called the Assisted Technology Center) is a Department of the Interior resource center that offers consultation, information, advice, and demonstration of assistive technology, safety, a",
      "src": "https://www.nps.gov/aboutus/accessibility.htm",
      "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "1916",
+     "kind": "managed by",
+     "line": "Many laws , including the 1916 Organic Act that created the National Park Service, affect all areas managed by the National Park Service. Fort Donelson 's enabling legislation provides specific instructions and guidance on how the park must",
+     "src": "https://www.nps.gov/fodo/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
     },
     {
      "date_hint": "2006",
@@ -6444,6 +7066,11 @@
     },
     {
      "status": "ok",
+     "url": "https://www.nps.gov/fodo/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
      "url": "https://www.nps.gov/fodo/learn/management/statistics.htm",
      "why": "NPS park statistics page"
     },
@@ -6478,7 +7105,7 @@
     }
    ],
    "t": "National / NPS",
-   "ver": 2,
+   "ver": 3,
    "verdict": "unsure"
   },
   "US-3791": {
@@ -6488,7 +7115,7 @@
    "ours": null,
    "score": null,
    "t": "National / NPS",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no outline"
   },
   "US-3792": {
@@ -6522,6 +7149,16 @@
      "status": "ok",
      "url": "https://landbetweenthelakes.us/",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.landbetweenthelakes.us/wp-content/uploads/2025/03/GeneralBrochure23CLUpdated_2023.pdf",
+     "why": "official map (documents bot)"
+    },
+    {
+     "status": "HTTP 403",
+     "url": "https://www.usda.gov/about-usda/policies-and-links",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 37,
@@ -6549,7 +7186,7 @@
     }
    ],
    "t": "National Recreation Area",
-   "ver": 2,
+   "ver": 3,
    "verdict": "unsure"
   },
   "US-3793": {
@@ -6585,9 +7222,14 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/BallardWMA_All.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 0,
@@ -6615,7 +7257,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-3794": {
@@ -6691,7 +7333,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-3795": {
@@ -6716,9 +7358,14 @@
    },
    "pages": [
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/BeechyCreekWMA-ALL.pdf",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://fw.ky.gov/Hunt/Pages/Public-Hunting-Areas.aspx",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -6731,7 +7378,7 @@
    },
    "sizes": [],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-3796": {
@@ -6767,9 +7414,14 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/BigRiversWMA_and_StateForest_all.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 0,
@@ -6797,7 +7449,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-3797": {
@@ -6833,9 +7485,14 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/BoatwrightWMA_All.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 0,
@@ -6905,7 +7562,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-3798": {
@@ -6930,9 +7587,14 @@
    },
    "pages": [
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/BuckCreekWMA_All.pdf",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://fw.ky.gov/Hunt/Pages/Public-Hunting-Areas.aspx",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -6945,7 +7607,7 @@
    },
    "sizes": [],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-3799": {
@@ -6981,9 +7643,14 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/Burchell-BeechCreekWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 0,
@@ -7018,10 +7685,11 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-3800": {
+   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
    "checked": "2026-10-28",
    "handover": [],
    "n": "Cedar Creek Lake Wildlife Management Area",
@@ -7054,9 +7722,14 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/CedarCreekLakeWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 200,
@@ -7091,14 +7764,20 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "off"
   },
   "US-3801": {
    "checked": "2026-10-28",
    "handover": [],
    "n": "Clifty Wilderness Area",
-   "official": null,
+   "official": {
+    "acres": 13853.0,
+    "as": "13,853 acres",
+    "line": "– provide excellent opportunities for boating, fishing and other water sport activities. In total, there are 13,853 acres of lakes and 2,516 miles of streams open to the public on Forest lands. 19 of these bodies of water are routi",
+    "read": "2026-10-28",
+    "url": "https://www.fs.usda.gov/r08/danielboone/about-area"
+   },
    "ours": {
     "acres": 12484,
     "manager": "",
@@ -7116,23 +7795,81 @@
    },
    "pages": [
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://www.fs.usda.gov/recarea/dbnf/recarea/?recid=39460",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fs.usda.gov/r08/danielboone/about-area",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fs.usda.gov/about-agency",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fs.usda.gov/r08/danielboone",
+     "why": "rules page (documents bot)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 10,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 1
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 8270.0,
+     "as": "8,270 acre",
+     "line": "reation Regions Cave Run Lake Cave Run Lake is nestled among the rolling hills of northeastern Kentucky. This 8,270-acre lake provides flood protection and a clean water… Central Forest The Central Forest region of the Daniel Boon",
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/recarea/dbnf/recarea/?recid=39460"
+    },
+    {
+     "acres": 5600.0,
+     "as": "5,600 acres",
+     "line": "t trailhead of the Sheltowee Trace National Recreation Trail in… Laurel River Lake Laurel River Lake features 5,600 acres of clear, deep water and nearly 200 miles of tree-lined shore. The quiet coves and cliff-lined shores offer…",
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/recarea/dbnf/recarea/?recid=39460"
+    },
+    {
+     "acres": 879.0,
+     "as": "879 acres",
+     "line": "r Districts - Cumberland, London, Stearns, and Redbird. Each District Office shares in the management of 708, 879 acres of national forest lands. These lands are intermixed among state, private and other federal lands within a 2.",
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/r08/danielboone/about-area"
+    },
+    {
+     "acres": 13853.0,
+     "as": "13,853 acres",
+     "line": "– provide excellent opportunities for boating, fishing and other water sport activities. In total, there are 13,853 acres of lakes and 2,516 miles of streams open to the public on Forest lands. 19 of these bodies of water are routi",
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/r08/danielboone/about-area"
+    },
+    {
+     "acres": 708000.0,
+     "as": "708,000 acres",
+     "line": "onal Forest Spread across 21 counties of eastern Kentucky, the Daniel Boone National Forest manages more than 708,000 acres of national forest system lands within a 2.1 million-acre proclamation boundary. From over 600 miles of trail",
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/r08/danielboone"
+    },
+    {
+     "acres": 2100000.0,
+     "as": "2.1 million acre",
+     "line": "ky, the Daniel Boone National Forest manages more than 708,000 acres of national forest system lands within a 2.1 million-acre proclamation boundary. From over 600 miles of trails to two federally recognized wildernesses and more than 2",
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/r08/danielboone"
+    }
+   ],
    "t": "River / Wilderness",
-   "ver": 2,
-   "verdict": "no size on page"
+   "ver": 3,
+   "verdict": "agree"
   },
   "US-3802": {
    "checked": "2026-10-28",
@@ -7193,7 +7930,7 @@
     }
    ],
    "t": "Sanctuary",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-3803": {
@@ -7218,9 +7955,14 @@
    },
    "pages": [
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/CoilEstateWMA_ALL.pdf",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://fw.ky.gov/Hunt/Pages/Public-Hunting-Areas.aspx",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -7233,7 +7975,7 @@
    },
    "sizes": [],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-3804": {
@@ -7258,9 +8000,14 @@
    },
    "pages": [
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/CranksCreekWMA_ALL.pdf",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://fw.ky.gov/Hunt/Pages/Public-Hunting-Areas.aspx",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -7273,7 +8020,7 @@
    },
    "sizes": [],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-3805": {
@@ -7349,7 +8096,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-3806": {
@@ -7411,7 +8158,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-3807": {
@@ -7447,9 +8194,14 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/DixRiverWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 0,
@@ -7491,7 +8243,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-3808": {
@@ -7527,9 +8279,14 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/DougTravisWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 0,
@@ -7550,7 +8307,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-3809": {
@@ -7586,9 +8343,14 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/Dr.JamesR.RichWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 0,
@@ -7616,7 +8378,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-3810": {
@@ -7685,7 +8447,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-3811": {
@@ -7710,9 +8472,14 @@
    },
    "pages": [
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/EdMabry-LaurelGorgeWMA_ALL.pdf",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://fw.ky.gov/Hunt/Pages/Public-Hunting-Areas.aspx",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -7725,7 +8492,7 @@
    },
    "sizes": [],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-3812": {
@@ -7761,9 +8528,14 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/FlemingWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 0,
@@ -7784,7 +8556,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-3813": {
@@ -7820,9 +8592,14 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/GriffithWoodsWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 1,
@@ -7871,7 +8648,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-3814": {
@@ -7896,9 +8673,14 @@
    },
    "pages": [
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/Hensley-PineMountainWMA_ALL.pdf",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://fw.ky.gov/Hunt/Pages/Public-Hunting-Areas.aspx",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -7911,7 +8693,7 @@
    },
    "sizes": [],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-3815": {
@@ -7947,9 +8729,14 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/Higginson-HenryWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 0,
@@ -7984,7 +8771,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-3816": {
@@ -8020,9 +8807,14 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/John_A_Kleber_WMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 0,
@@ -8050,7 +8842,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-3817": {
@@ -8086,9 +8878,14 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/JohnCWilliamsWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 1,
@@ -8116,14 +8913,20 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-3818": {
    "checked": "2026-10-28",
    "handover": [],
    "n": "Jones-Keeney Wildlife Management Area",
-   "official": null,
+   "official": {
+    "acres": 2055.0,
+    "as": "2,055 acres",
+    "line": "on Public Hunting Area Location Regional Locator WMA Overview Location & Size: Caldwell County, 2,055 acres. Contact: (270) 753-6913 Elevation: minimum 390 feet, maximum 688 feet. Entrance GPS coordinates: Latit",
+    "read": "2026-10-28",
+    "url": "https://fw.ky.gov/More/Documents/Jones-KeeneyWMA_All.pdf"
+   },
    "ours": {
     "acres": 2045,
     "manager": "KDFWR",
@@ -8141,23 +8944,36 @@
    },
    "pages": [
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/Jones-KeeneyWMA_All.pdf",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://fw.ky.gov/Hunt/Pages/Public-Hunting-Areas.aspx",
+     "why": "rules page (documents bot)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 0,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 1
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 2055.0,
+     "as": "2,055 acres",
+     "line": "on Public Hunting Area Location Regional Locator WMA Overview Location & Size: Caldwell County, 2,055 acres. Contact: (270) 753-6913 Elevation: minimum 390 feet, maximum 688 feet. Entrance GPS coordinates: Latit",
+     "total_like": true,
+     "url": "https://fw.ky.gov/More/Documents/Jones-KeeneyWMA_All.pdf"
+    }
+   ],
    "t": "WMA",
-   "ver": 2,
-   "verdict": "no size on page"
+   "ver": 3,
+   "verdict": "agree"
   },
   "US-3819": {
    "checked": "2026-10-28",
@@ -8192,9 +9008,14 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/KalerBottomsWMA_All.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 0,
@@ -8215,7 +9036,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-3820": {
@@ -8251,9 +9072,14 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/KentuckyRiverWMA_All.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 1,
@@ -8302,7 +9128,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-3821": {
@@ -8327,9 +9153,14 @@
    },
    "pages": [
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/L.B.DavisonWMA_ALL.pdf",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://fw.ky.gov/Hunt/Pages/Public-Hunting-Areas.aspx",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -8342,7 +9173,7 @@
    },
    "sizes": [],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-3822": {
@@ -8404,7 +9235,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-3823": {
@@ -8419,7 +9250,7 @@
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9117"
    },
    "ours": {
-    "acres": 3966,
+    "acres": 2417,
     "manager": "KDFWR",
     "pieces": [
      [
@@ -8427,22 +9258,10 @@
       "Livingston County WMA and State Natural Area",
       2417,
       "name"
-     ],
-     [
-      "bsnp",
-      "Livingston County Wildlife Management Area and State Nature Preserve (Newman's Bluff SNP)",
-      989,
-      "alias"
-     ],
-     [
-      "bsnp",
-      "Livingston County Wildlife Management Area and State Nature Preserve (Bissell Bluff SNP)",
-      560,
-      "alias"
      ]
     ],
     "pin": "inside",
-    "src": "KDFWR public hunting areas, Office of Kentucky Nature Preserves",
+    "src": "KDFWR public hunting areas",
     "unknown_pieces": 0
    },
    "pages": [
@@ -8452,17 +9271,22 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/LivingstonCountyWMAandStateNaturalArea_All.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
-   "pct": 63,
-   "score": 5,
+   "pct": 1,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 1
    },
    "sizes": [
@@ -8503,8 +9327,8 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
-   "verdict": "off"
+   "ver": 3,
+   "verdict": "agree"
   },
   "US-3824": {
    "checked": "2026-10-28",
@@ -8528,9 +9352,14 @@
    },
    "pages": [
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/MarionCountyWMAandSF_ALL.pdf",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://fw.ky.gov/Hunt/Pages/Public-Hunting-Areas.aspx",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -8543,7 +9372,7 @@
    },
    "sizes": [],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-3825": {
@@ -8619,14 +9448,20 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-3826": {
    "checked": "2026-10-28",
    "handover": [],
    "n": "Mullins Wildlife Management Area",
-   "official": null,
+   "official": {
+    "acres": 259.0,
+    "as": "259 acres",
+    "line": "on Public Hunting Area Location Regional Locator WMA Overview Location & Size: Kenton County; 259 acres. Contact: (859) 428-2262 Elevation: minimum 780 feet, maximum 923 feet. Entrance GPS coordinates: Lat",
+    "read": "2026-10-28",
+    "url": "https://fw.ky.gov/More/Documents/MullinsWMA_ALL.pdf"
+   },
    "ours": {
     "acres": 257,
     "manager": "KDFWR",
@@ -8644,23 +9479,36 @@
    },
    "pages": [
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/MullinsWMA_ALL.pdf",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://fw.ky.gov/Hunt/Pages/Public-Hunting-Areas.aspx",
+     "why": "rules page (documents bot)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 1,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 1
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 259.0,
+     "as": "259 acres",
+     "line": "on Public Hunting Area Location Regional Locator WMA Overview Location & Size: Kenton County; 259 acres. Contact: (859) 428-2262 Elevation: minimum 780 feet, maximum 923 feet. Entrance GPS coordinates: Lat",
+     "total_like": true,
+     "url": "https://fw.ky.gov/More/Documents/MullinsWMA_ALL.pdf"
+    }
+   ],
    "t": "WMA",
-   "ver": 2,
-   "verdict": "no size on page"
+   "ver": 3,
+   "verdict": "agree"
   },
   "US-3827": {
    "checked": "2026-10-28",
@@ -8695,9 +9543,14 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/ObionCreekWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 1,
@@ -8727,7 +9580,7 @@
      "acres": 1099.0,
      "as": "1099 acres",
      "line": "m land hard wood forest and wetland complex that will be beneficial to many wildlife species. Wallace Tract: (1099 acres) is west of HWY 307 at Obion Creek bridge. Bottomland hardwood swamp. Travis Slough Tract: (329 acres), acces",
-     "total_like": true,
+     "total_like": false,
      "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=176"
     },
     {
@@ -8760,7 +9613,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-3828": {
@@ -8796,9 +9649,14 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/PeabodyAll.pdf",
      "why": "official map (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
+     "why": "rules page (documents bot)"
     }
    ],
    "pct": 0,
@@ -8833,7 +9691,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-3829": {
@@ -8869,7 +9727,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/RFTarterWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -8899,7 +9757,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-3830": {
@@ -8975,14 +9833,20 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-3831": {
    "checked": "2026-10-28",
    "handover": [],
    "n": "South Shore Wildlife Management Area",
-   "official": null,
+   "official": {
+    "acres": 98.0,
+    "as": "98 acres",
+    "line": "on Public Hunting Area Location Regional Locator WMA Overview Location & Size: Greenup County, 98 acres. Contact: (606) 474-8535. Elevation: minimum 480 feet, maximum 550 feet. Entrance GPS coordinates: Lati",
+    "read": "2026-10-28",
+    "url": "https://fw.ky.gov/More/Documents/SouthShoreWMA_ALL.pdf"
+   },
    "ours": {
     "acres": 96,
     "manager": "KDFWR",
@@ -9000,23 +9864,31 @@
    },
    "pages": [
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/SouthShoreWMA_ALL.pdf",
      "why": "the park's page (Kentucky answer key)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 2,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 1
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 98.0,
+     "as": "98 acres",
+     "line": "on Public Hunting Area Location Regional Locator WMA Overview Location & Size: Greenup County, 98 acres. Contact: (606) 474-8535. Elevation: minimum 480 feet, maximum 550 feet. Entrance GPS coordinates: Lati",
+     "total_like": true,
+     "url": "https://fw.ky.gov/More/Documents/SouthShoreWMA_ALL.pdf"
+    }
+   ],
    "t": "WMA",
-   "ver": 2,
-   "verdict": "no size on page"
+   "ver": 3,
+   "verdict": "agree"
   },
   "US-3832": {
    "checked": "2026-10-28",
@@ -9046,7 +9918,7 @@
    },
    "pages": [
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/StoneMountainWMAandStateNaturalArea_ALL.pdf",
      "why": "the park's page (Kentucky answer key)"
     }
@@ -9061,14 +9933,20 @@
    },
    "sizes": [],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-3833": {
    "checked": "2026-10-28",
    "handover": [],
    "n": "T. N. Sullivan Wildlife Management Area",
-   "official": null,
+   "official": {
+    "acres": 146.0,
+    "as": "146 acres",
+    "line": "n Public Hunting Area Location Regional Locator WMA Overview Location & Size: Franklin County, 146 acres. Contact: (502) 535-6335 Elevation: minimum 540 feet, maximum 798 feet. Entrance GPS coordinates: Latit",
+    "read": "2026-10-28",
+    "url": "https://fw.ky.gov/More/Documents/TN_SullivanWMA_All.pdf"
+   },
    "ours": {
     "acres": 145,
     "manager": "KDFWR",
@@ -9086,23 +9964,31 @@
    },
    "pages": [
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/TN_SullivanWMA_All.pdf",
      "why": "the park's page (Kentucky answer key)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 1,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 1
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 146.0,
+     "as": "146 acres",
+     "line": "n Public Hunting Area Location Regional Locator WMA Overview Location & Size: Franklin County, 146 acres. Contact: (502) 535-6335 Elevation: minimum 540 feet, maximum 798 feet. Entrance GPS coordinates: Latit",
+     "total_like": true,
+     "url": "https://fw.ky.gov/More/Documents/TN_SullivanWMA_All.pdf"
+    }
+   ],
    "t": "WMA",
-   "ver": 2,
-   "verdict": "no size on page"
+   "ver": 3,
+   "verdict": "agree"
   },
   "US-3834": {
    "checked": "2026-10-28",
@@ -9137,7 +10023,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/PennyrileStateForestandTradewaterWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -9157,17 +10043,30 @@
      "line": "Public Land Search | KDFWR --> Tradewater WMA Get Directions Close Return to Search --> WMA Overview Size: 727 acres Location: Christian & Hopkins Contact: (270) 753-6913 Elevation: minimum 373 feet, maximum 641 feet. Entrance",
      "total_like": true,
      "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=128"
+    },
+    {
+     "acres": 4.0,
+     "as": "4 aC",
+     "line": "\u0001ö\"'1 ¾\u0017\u0001Ó >Gp \u0013pD#\u0006¿táC¦ª<âÑ\u0018*G Ð>Fð ¨\u0014×tXúßåØþcÿPÍµvOriÙßht²± '¼þ,qYX ã üà½IóÆål \u0018·\u000eizö%¥aï¾,Y4aC\u0018|IÎ {§&$`\u0019@\u0011Ý-xÄ¤ ñÚ$ ©ý­7\u0010h\u0006õr ç{ß\u0006[\bÜ/ÐFß8Óza3<N\u0018/RÞ¥|È\u0017³\u0014Ê-©A¶, ¥8ÕÆ<°k§,ý fÙ_\u0014\u0007Úä³ IZ\u0003Z¥·­I",
+     "total_like": false,
+     "url": "https://fw.ky.gov/More/Documents/PennyrileStateForestandTradewaterWMA_ALL.pdf"
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-3835": {
    "checked": "2026-10-28",
    "handover": [],
    "n": "Twin Eagle Wildlife Management Area",
-   "official": null,
+   "official": {
+    "acres": 167.0,
+    "as": "167 acres",
+    "line": "mation Public Hunting Area Location Regional Locator WMA Overview Location & Size: Owen County, 167 acres. Contact: (502) 535-6335 Elevation: minimum 451 feet, maximum 804 feet. Entrance GPS coordinates: Latit",
+    "read": "2026-10-28",
+    "url": "https://fw.ky.gov/More/Documents/TwinEagleWMA_ALL.pdf"
+   },
    "ours": {
     "acres": 169,
     "manager": "KDFWR",
@@ -9185,23 +10084,31 @@
    },
    "pages": [
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/TwinEagleWMA_ALL.pdf",
      "why": "the park's page (Kentucky answer key)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 1,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 1
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 167.0,
+     "as": "167 acres",
+     "line": "mation Public Hunting Area Location Regional Locator WMA Overview Location & Size: Owen County, 167 acres. Contact: (502) 535-6335 Elevation: minimum 451 feet, maximum 804 feet. Entrance GPS coordinates: Latit",
+     "total_like": true,
+     "url": "https://fw.ky.gov/More/Documents/TwinEagleWMA_ALL.pdf"
+    }
+   ],
    "t": "WMA",
-   "ver": 2,
-   "verdict": "no size on page"
+   "ver": 3,
+   "verdict": "agree"
   },
   "US-3836": {
    "checked": "2026-10-28",
@@ -9236,7 +10143,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/Veterans_Memorial_WMA_all.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -9266,7 +10173,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-3837": {
@@ -9302,7 +10209,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/West_Kentucky_WMA.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -9339,7 +10246,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-3838": {
@@ -9364,7 +10271,7 @@
    },
    "pages": [
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/WinfordWMA_ALL.pdf",
      "why": "the park's page (Kentucky answer key)"
     }
@@ -9379,7 +10286,7 @@
    },
    "sizes": [],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-3839": {
@@ -9469,7 +10376,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-3840": {
@@ -9545,14 +10452,20 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-4484": {
    "checked": "2026-10-28",
    "handover": [],
    "n": "Daniel Boone National Forest",
-   "official": null,
+   "official": {
+    "acres": 708000.0,
+    "as": "708,000 acres",
+    "line": "onal Forest Spread across 21 counties of eastern Kentucky, the Daniel Boone National Forest manages more than 708,000 acres of national forest system lands within a 2.1 million-acre proclamation boundary. From over 600 miles of trail",
+    "read": "2026-10-28",
+    "url": "https://www.fs.usda.gov/dbnf/"
+   },
    "ours": {
     "acres": 706956,
     "manager": "",
@@ -9570,29 +10483,51 @@
    },
    "pages": [
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://www.fs.usda.gov/dbnf/",
      "why": "the park's page (Kentucky answer key)"
     }
    ],
-   "pct": null,
-   "score": 5,
+   "pct": 0,
+   "score": 6,
    "score_parts": {
     "name": 1,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 1
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 708000.0,
+     "as": "708,000 acres",
+     "line": "onal Forest Spread across 21 counties of eastern Kentucky, the Daniel Boone National Forest manages more than 708,000 acres of national forest system lands within a 2.1 million-acre proclamation boundary. From over 600 miles of trail",
+     "total_like": true,
+     "url": "https://www.fs.usda.gov/dbnf/"
+    },
+    {
+     "acres": 2100000.0,
+     "as": "2.1 million acre",
+     "line": "ky, the Daniel Boone National Forest manages more than 708,000 acres of national forest system lands within a 2.1 million-acre proclamation boundary. From over 600 miles of trails to two federally recognized wildernesses and more than 2",
+     "total_like": true,
+     "url": "https://www.fs.usda.gov/dbnf/"
+    }
+   ],
    "t": "National Forest",
-   "ver": 2,
-   "verdict": "no size on page"
+   "ver": 3,
+   "verdict": "agree"
   },
   "US-4526": {
    "checked": "2026-10-28",
    "handover": [],
    "n": "George Washington & Jefferson National Forest",
-   "official": null,
+   "note": "the agency figure may cover several states; our outline may be this state's share only",
+   "official": {
+    "acres": 1800000.0,
+    "as": "1.8 million acres",
+    "line": "West Virginia, the George Washington and Jefferson National Forest blankets the Blue Ridge mountains offering 1.8 million acres of lush woodlands, unique mountain balds, peaceful waterways, and adventures galore. With more wildlife and t",
+    "read": "2026-10-28",
+    "url": "https://www.fs.usda.gov/gwj"
+   },
    "ours": {
     "acres": 856,
     "manager": "Federal",
@@ -9610,17 +10545,17 @@
    },
    "pages": [
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://www.fs.usda.gov/gwj",
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "HTTP 404",
      "url": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd1136678.pdf",
      "why": "official map (parkinfo-web)"
     }
    ],
-   "pct": null,
+   "pct": 100,
    "score": 6,
    "score_parts": {
     "name": 2,
@@ -9628,10 +10563,25 @@
     "size": 1,
     "source": 1
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 1800000.0,
+     "as": "1.8 million acres",
+     "line": "p Explore your forests Experience lush woodlands, cold mountain streams, and unique mountaintop balds on over 1.8 million acres of Appalachian forests. Recreation Opportunities T T T Welcome to the George Washington & Jefferson National",
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/gwj"
+    },
+    {
+     "acres": 1800000.0,
+     "as": "1.8 million acres",
+     "line": "West Virginia, the George Washington and Jefferson National Forest blankets the Blue Ridge mountains offering 1.8 million acres of lush woodlands, unique mountain balds, peaceful waterways, and adventures galore. With more wildlife and t",
+     "total_like": true,
+     "url": "https://www.fs.usda.gov/gwj"
+    }
+   ],
    "t": "National Forest",
-   "ver": 2,
-   "verdict": "no size on page"
+   "ver": 3,
+   "verdict": "unsure"
   },
   "US-4572": {
    "checked": "2026-10-28",
@@ -9640,7 +10590,7 @@
    "ours": null,
    "score": null,
    "t": "National / NPS",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no outline"
   },
   "US-4687": {
@@ -9665,7 +10615,7 @@
    },
    "pages": [
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/DeweyLakeWMA-ALL.pdf",
      "why": "the park's page (Kentucky answer key)"
     }
@@ -9680,7 +10630,7 @@
    },
    "sizes": [],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-4688": {
@@ -9692,6 +10642,34 @@
      "line": "tent ​​​​​​​Kentenia State Forest​ Kentenia is the oldest state-owned forest, acquired in 1919 as a gift from the Kentenia-Cantron Corp. It is located in Harlan County along the south side of Pine Mountain in seven scattered tracts totaling 4,081 acres. The largest of these tracts is accessible by L",
      "src": "https://eec.ky.gov/Natural-Resources/Forestry/ky-state-forests/Pages/Kentenia-State-Forest.aspx",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "date_hint": "2021",
+     "kind": "transfer",
+     "line": "e started his career in the Department for Environmental Protection’s Division for Air Quality then transferred to the Division of Waste Management before moving to the Department for Natural Resources where he spent 14 years as the department’s legislative analyst and administrative regulation coor",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "2022",
+     "kind": "transfer",
+     "line": "tstanding County Advocate, awarded the Legislative Champion Award at the 2022 Senior Hunger Summit, given a Warrior for Working Families Award from the Working Families PAC, the Kentucky Valley Education Cooperative Henry Clay Award, the Cumberland Valley ADD Outstanding Advocate Award, the KCTC Out",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "1982",
+     "kind": "renamed",
+     "line": "rns that emerged in post-oil crisis America. By 1982, the agency was elevated to cabinet status and renamed the Natural Resources and Environmental Protection Cabinet. In 2008, Gov. Steve Beshear disbanded the cabinet, which was",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "2008",
+     "kind": "renamed",
+     "line": "on Cabinet (EPPC) after its merger with the Labor and Public Protection Cabinet. He reformed it and renamed it the Energy and Environment Cabinet (EEC) under Executive Order 2008-0531. ​ Search by Keyword Search Filter Cancel Office of the Secretary John Lyons Cabinet Secretary Offi",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
     }
    ],
    "n": "Kentenia State Forest",
@@ -9722,6 +10700,21 @@
      "status": "ok",
      "url": "https://eec.ky.gov/Natural-Resources/Forestry/ky-state-forests/Pages/Kentenia-State-Forest.aspx",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Archived-Regulation-History.aspx",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://eec.ky.gov/Natural-Resources/Forestry/Documents/KenteniaStateForest_ALL.pdf",
+     "why": "official map (Kentucky answer key)"
     }
    ],
    "pct": 1,
@@ -9737,12 +10730,12 @@
      "acres": 4081.0,
      "as": "4,081 acres",
      "line": "Corp. It is located in Harlan County along the south side of Pine Mountain in seven scattered tracts totaling 4,081 acres. The largest of these tracts is accessible by Little Shepherd Trail on the crest of Pine Mountain. The forest",
-     "total_like": true,
+     "total_like": false,
      "url": "https://eec.ky.gov/Natural-Resources/Forestry/ky-state-forests/Pages/Kentenia-State-Forest.aspx"
     }
    ],
    "t": "State Forest",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-4689": {
@@ -9840,7 +10833,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 2,
+   "ver": 3,
    "verdict": "unsure"
   },
   "US-4690": {
@@ -9921,7 +10914,7 @@
      "why": "about / history page of the park's site"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/KnobsStateForestandWMA_All.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -9965,7 +10958,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-4692": {
@@ -10010,7 +11003,7 @@
    },
    "sizes": [],
    "t": "State Forest",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-4693": {
@@ -10115,7 +11108,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-7708": {
@@ -10175,7 +11168,7 @@
    },
    "sizes": [],
    "t": "National / NPS",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-7890": {
@@ -10220,7 +11213,7 @@
    },
    "sizes": [],
    "t": "Other",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-7950": {
@@ -10302,7 +11295,7 @@
    },
    "sizes": [],
    "t": "National / NPS",
-   "ver": 2,
+   "ver": 3,
    "verdict": "no size on page"
   },
   "US-7951": {
@@ -10378,14 +11371,20 @@
     }
    ],
    "t": "State Forest",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-7952": {
    "checked": "2026-10-28",
    "handover": [],
    "n": "Marrowbone State Forest",
-   "official": null,
+   "official": {
+    "acres": 1920.0,
+    "as": "3 Mi²",
+    "line": "ª$+­øD,Ù´ºr á\u0000ÇþÆc¢\u0013é¡uÉ4Ìi 8kº\"\u0004e:ã ó09\u0005b`ª ûÃ³õ°Ëi\u0019·°\u000eHú\u000e,¦\u001aÅ-Û\u0018EvæõÈñ°®©\u0011sÀ¨¿¨ú0À£\u0018`MwK#VñJb=z3Mi²v¨MYþø´\u0002\u000f¼¢[\u0014ì £k¦Éªù\u0002û¾Àu¦$ %¯\u001b H¢| EÞçÂÃôkåà¨¦Ï~\u0014 \u0011Ýº\u0006÷;¯£§`wöî ³ÿ»QC¿^Úºè¸1o}P©T¢àoú ùß &®\b»\u000e",
+    "read": "2026-10-28",
+    "url": "https://fw.ky.gov/More/Documents/MarrowboneStateForestandWMA_ALL.pdf"
+   },
    "ours": {
     "acres": 1946,
     "manager": "KDFWR",
@@ -10403,23 +11402,31 @@
    },
    "pages": [
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/MarrowboneStateForestandWMA_ALL.pdf",
      "why": "the park's page (Kentucky answer key)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 1,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 1
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 1920.0,
+     "as": "3 Mi²",
+     "line": "ª$+­øD,Ù´ºr á\u0000ÇþÆc¢\u0013é¡uÉ4Ìi 8kº\"\u0004e:ã ó09\u0005b`ª ûÃ³õ°Ëi\u0019·°\u000eHú\u000e,¦\u001aÅ-Û\u0018EvæõÈñ°®©\u0011sÀ¨¿¨ú0À£\u0018`MwK#VñJb=z3Mi²v¨MYþø´\u0002\u000f¼¢[\u0014ì £k¦Éªù\u0002û¾Àu¦$ %¯\u001b H¢| EÞçÂÃôkåà¨¦Ï~\u0014 \u0011Ýº\u0006÷;¯£§`wöî ³ÿ»QC¿^Úºè¸1o}P©T¢àoú ùß &®\b»\u000e",
+     "total_like": false,
+     "url": "https://fw.ky.gov/More/Documents/MarrowboneStateForestandWMA_ALL.pdf"
+    }
+   ],
    "t": "State Forest",
-   "ver": 2,
-   "verdict": "no size on page"
+   "ver": 3,
+   "verdict": "agree"
   },
   "US-7953": {
    "checked": "2026-10-28",
@@ -10530,7 +11537,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-7954": {
@@ -10599,7 +11606,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-7955": {
@@ -10660,7 +11667,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-7956": {
@@ -10721,7 +11728,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-7957": {
@@ -10794,7 +11801,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-7958": {
@@ -10906,7 +11913,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-7959": {
@@ -10982,7 +11989,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-7960": {
@@ -11050,7 +12057,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-7961": {
@@ -11143,7 +12150,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-7962": {
@@ -11236,7 +12243,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 2,
+   "ver": 3,
    "verdict": "unsure"
   },
   "US-7963": {
@@ -11309,7 +12316,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-7964": {
@@ -11409,7 +12416,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-7965": {
@@ -11489,7 +12496,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-7966": {
@@ -11587,7 +12594,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-7967": {
@@ -11660,7 +12667,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-7968": {
@@ -11721,7 +12728,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-7970": {
@@ -11775,14 +12782,42 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   },
   "US-8144": {
    "checked": "2026-10-28",
-   "handover": [],
+   "handover": [
+    {
+     "date_hint": "2011",
+     "kind": "transfer",
+     "line": "of Fish and Wildlife operated the 2,261-acre property from 2011 to 2026. In 2026, the property was transferred to Meade County Fiscal Court . ​Camping​ OTTER CREEK CAMPGROUND FIREFLY RESERVATIONS CAMPGROUND MAP Otter Creek Campground operat",
+     "src": "https://fw.ky.gov/Pages/Otter-Creek-Outdoor-Recreation-Area.aspx",
+     "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "date_hint": null,
+     "kind": "managed by",
+     "line": "creekcamp@meadeky.gov Campground Info and Reservations: FIREFLY RESERVATIONS Otter Creek Campground operated by Meade County Fiscal Court. Additional Info Promotional Brochure Campground Map Topographic & Brochure Map WMA Information ​ ABOUT OTTER CREEK OUTDOOR RECREATION AR",
+     "src": "https://fw.ky.gov/Pages/Otter-Creek-Outdoor-Recreation-Area.aspx",
+     "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "date_hint": null,
+     "kind": "managed by",
+     "line": "Court . ​Camping​ OTTER CREEK CAMPGROUND FIREFLY RESERVATIONS CAMPGROUND MAP Otter Creek Campground operated by Meade County Fiscal Court. Parking Passes ​ ​ Directions to Otter Creek Outdoor Recreation Area from: Owensboro, KY Travel east on US-60 to K",
+     "src": "https://fw.ky.gov/Pages/Otter-Creek-Outdoor-Recreation-Area.aspx",
+     "why": "the park's page (Kentucky answer key)"
+    }
+   ],
    "n": "Otter Creek State Recreation Area",
-   "official": null,
+   "official": {
+    "acres": 2261.0,
+    "as": "2,261 acre",
+    "line": "for residents of Louisville and neighboring towns, the Kentucky Department of Fish and Wildlife operated the 2,261-acre property from 2011 to 2026. In 2026, the property was transferred to Meade County Fiscal Court . ​Camping​ OT",
+    "read": "2026-10-28",
+    "url": "https://fw.ky.gov/Pages/Otter-Creek-Outdoor-Recreation-Area.aspx"
+   },
    "ours": {
     "acres": 2210,
     "manager": "KDFWR",
@@ -11800,28 +12835,36 @@
    },
    "pages": [
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/Pages/Otter-Creek-Outdoor-Recreation-Area.aspx",
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/Documents/Otter_Creek_Brochure_Map.pdf",
      "why": "official map (Kentucky answer key)"
     }
    ],
-   "pct": null,
-   "score": 5,
+   "pct": 2,
+   "score": 6,
    "score_parts": {
     "name": 1,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 1
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 2261.0,
+     "as": "2,261 acre",
+     "line": "for residents of Louisville and neighboring towns, the Kentucky Department of Fish and Wildlife operated the 2,261-acre property from 2011 to 2026. In 2026, the property was transferred to Meade County Fiscal Court . ​Camping​ OT",
+     "total_like": false,
+     "url": "https://fw.ky.gov/Pages/Otter-Creek-Outdoor-Recreation-Area.aspx"
+    }
+   ],
    "t": "Recreation Area",
-   "ver": 2,
-   "verdict": "no size on page"
+   "ver": 3,
+   "verdict": "agree"
   },
   "US-9756": {
    "checked": "2026-10-28",
@@ -11856,7 +12899,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/DeckerWMAmap_ALL.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -11879,7 +12922,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 2,
+   "ver": 3,
    "verdict": "agree"
   }
  },
