@@ -14,6 +14,7 @@ Updated 2026-10-28. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 | US-SC | 167 | 159 | 6 | **28** | 15 | 105 | 2 | 5 | 0 | 8 |
 | US-FL | 460 | 440 | 75 | **54** | 31 | 278 | 2 | 16 | 0 | 17 |
 | US-MS | 155 | 89 | 1 | **5** | 7 | 76 | 0 | 4 | 0 | 14 |
+| US-IN | 229 | 208 | 6 | **9** | 5 | 187 | 1 | 1 | 0 | 13 |
 
 ## US-KY
 
@@ -799,6 +800,35 @@ You · [www.fws.gov](https://www.fws.gov/refuge/chassahowitzka/about-us)
 - US-0390 Noxubee National Wildlife Refuge · renamed: “located in three counties of Mississippi, Noxubee, Oktibbeha, and Winston. In 2012, the refuge was renamed Sam D. Hamilton Noxubee National Wildlife Refuge in honor of Sam D. Hamilton, a former direct” · [www.fws.gov](https://www.fws.gov/refuge/noxubee/)
 - US-0390 Noxubee National Wildlife Refuge · renamed: “s created from lands obtained through the 1930s Resettlement Administration. In 2012 the refuge was renamed Sam D. Hamilton Noxubee National Wildlife Refuge in honor of Sam D. Hamilton, a former direc” · [www.fws.gov](https://www.fws.gov/refuge/sam-d-hamilton-noxubee/about-us)
 - US-11880 Winterville Mounds State Historical Park · transfer: “g for its future, the Greenville Garden Club raised funding to purchase the 42—acre tract, and then donated the land to the State Park commission (now Wildlife, Fisheries, and Parks) in 1960. An origi” · owner now: State Park · [www.mdah.ms.gov](https://www.mdah.ms.gov/explore-mississippi/winterville-mounds)
+
+## US-IN
+
+**Agree:** 6 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 6 agree (second agency).
+
+**Size more than 15% off (our outline vs the agency):**
+
+- US-4223 Reynolds Creek State Fish and Wildlife Area: ours 2,553 ac vs agency 50 acre (= 50 ac; 5006% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [indianabirdingtrail.com](https://indianabirdingtrail.com/pages/northwest-indiana-birding-opportunities-reynolds-creek-gamebird-habitat-area) · “into the property. Most of the area does not have mowed trails, but look for increased access in the upcoming 50 acre pollinator planting that is being establis”
+- US-4221 Pisgah Marsh Area State Fish and Wildlife Area: ours 923 ac vs agency 128 acres (= 128 ac; 621% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [visitkosciuskocounty.org](https://visitkosciuskocounty.org/locations/pisgah-marsh-area-and-boadwalk/) · “, 2 and 3 is comprised of grassland, wetland, upland forest and lake habitat. Pisgah Area 1 has approximately 128 acres not including the 6.67-acre Pisgah Lake.”
+- US-10193 Elkhart Bog State Nature Preserve: ours 919 ac vs agency 228.48 acres (= 228 ac; 302% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [www.in.gov](https://www.in.gov/dnr/nature-preserves/files/np-elkhart-bog.pdf) · “USGS Quad map: Charlestown, Owen DeLorme ® page: 59 Elkhart Bog Nature Preserve County: Elkhart Size: 228.48 acres Ownership: Nature Preserves - IDNR Location a”
+- US-10181 Nine Penny Branch State Nature Preserve: ours 365 ac vs agency 121 acres (= 121 ac; 202% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [www.in.gov](https://www.in.gov/dnr/nature-preserves/files/np-Nine_Penny_Branch.pdf) · “Nine Penny Branch Nature Preserve County: Clark Size: 121 acres Ownership: Nature Preserves - IDNR Location and Access Parking and trails. From SR 3 and SR 62 a”
+- US-6975 Limberlost State Historic Site: ours 2 ac vs agency 13,000 acres (= 13,000 ac; 100% off) · cause: agency bigger: our outline may miss a tract · [www.indianamuseum.org](https://www.indianamuseum.org/historic-sites/limberlost/) · “people worldwide have read her works, and many of her novels were produced as motion pictures. Stretching for 13,000 acres the vast forest and swampland was leg”
+- US-0289 Muscatatuck National Wildlife Refuge: ours 15,652 ac vs agency 50,000 acres (= 50,000 ac; 69% off) · cause: agency bigger: our outline may miss a tract · [www.fws.gov](https://www.fws.gov/refuge/muscatatuck/visit-us) · “ue habitat at Big Oaks National Wildlife Refuge for many rare and uncommon species of animals and plants. The 50,000 acres of land has been designated as a Glob”
+- US-10180 Fourteenmile Creek State Nature Preserve: ours 830 ac vs agency 1602 acres (= 1,602 ac; 48% off) · cause: agency bigger: our outline may miss a tract · [www.in.gov](https://www.in.gov/dnr/nature-preserves/files/np-Fourteenmile_Cr.pdf) · “Fourteenmile Creek Nature Preserve County: Clark Size: 1602 acres Ownership: State Parks - IDNR Location and Access Parking and trails. This nature preserve is ”
+- US-0765 Indiana Dunes National Park: ours 10,617 ac vs agency 16,000 acres (= 16,000 ac; 34% off) · cause: agency bigger: our outline may miss a tract · [www.nps.gov](https://www.nps.gov/indu/index.htm) · “etlands. Known for its striking plant and bird diversity, it's easy to find inspiration throughout the park’s 16,000 acres. Plan your visit About the park Centr”
+- US-0290 Patoka River National Wildlife Refuge: ours 19,808 ac vs agency 23,743 acres (= 23,743 ac; 17% off) · cause: agency bigger: our outline may miss a tract · [www.fws.gov](https://www.fws.gov/refuge/patoka-river-and-management-area/about-us) · “94 - The refuge was established under the authority of the Emergency Wetlands Resource Act and includes up to 23,743 acres within the current acquisition bounda”
+
+**Unsure (no clean total found; the nearest number is only a guess):**
+
+- US-0782 Lincoln Boyhood Home National Memorial: ours 184 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-10202 Judy Burton State Nature Preserve: ours 385 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-2274 White River State Park: ours 13 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 250 acre, no total words near it) · [whiteriverstatepark.org](https://whiteriverstatepark.org/history/)
+- US-6968 Angel Mound State Historic Site: ours 512 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-6971 Gene Stratton-Porter State Historic Site: ours 111 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 148 acres, no total words near it) · [www.indianamuseum.org](https://www.indianamuseum.org/historic-sites/gene-stratton-porter/)
+
+**Handover / closure hints (a person decides; nothing applied):**
+
+- US-0290 Patoka River National Wildlife Refuge · transfer: “Management Area. This area is not technically part of the refuge acquisition area, but the land was transferred to the National Wildlife Refuge System in 1994 by the Farm Service Agency. This manageme” · owner now: National Wildlife Refuge System · [www.fws.gov](https://www.fws.gov/refuge/patoka-river-and-management-area/about-us)
+- US-0290 Patoka River National Wildlife Refuge · managed by: “management area was restored from agricultural fields and planted to bottomland hardwood trees and is managed by Patoka River National Wildlife Refuge and Management Area. You are exiting the U.S. Fis” · owner now: National Wildlife Refuge System · [www.fws.gov](https://www.fws.gov/refuge/patoka-river-and-management-area/about-us)
 
 ## Kentucky test gate
 

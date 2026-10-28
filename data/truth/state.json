@@ -60,6 +60,26 @@
    "status": "done",
    "updated": "2026-10-28"
   },
+  "US-IN": {
+   "checked": 229,
+   "counts": {
+    "agree": 6,
+    "handover_hints": 1,
+    "no_page": 0,
+    "no_size": 187,
+    "off": 9,
+    "ours_unknown": 1,
+    "parks": 229,
+    "retired": 0,
+    "unsure": 5,
+    "weak": 13,
+    "with_outline": 208
+   },
+   "left": 0,
+   "parks": 229,
+   "status": "done",
+   "updated": "2026-10-28"
+  },
   "US-KY": {
    "checked": 193,
    "counts": {
@@ -204,6 +224,7 @@
  "hosts": {
   "amicalolafallslodge.com": 1793311022.090411,
   "explorekyhistory.ky.gov": 1793258165.3648567,
+  "in.gov": 1793313862.339612,
   "legacy.fws.gov": 1793257782.7889593,
   "tnstateparks.com": 1793308390.7882838,
   "wolfememorial.com": 1793308907.889083,
@@ -211,6 +232,7 @@
   "www.amicalolafallslodge.com": 1793310856.8343172,
   "www.floridastateparks.org": 1793312734.72171,
   "www.fs.usda.gov": 1793309985.139606,
+  "www.in.gov": 1793314014.5818298,
   "www.littleocmulgeelodge.com": 1793311323.8044322,
   "www.mdwfp.com": 1793313490.673676,
   "www.tn.gov": 1793308378.4104462,
@@ -219,29 +241,29 @@
  },
  "last": {
   "areas": [
-   "US-MS"
+   "US-IN"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "errors": 3,
-   "requests": 99,
-   "rested": 67,
-   "robots": 2,
-   "strikes": 4
+   "errors": 6,
+   "requests": 78,
+   "rested": 356,
+   "robots": 0,
+   "strikes": 6
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 4,
-   "no_size": 76,
-   "ours_unknown": 0,
-   "pages_read": 74,
-   "parks": 155,
+   "handover_hints": 1,
+   "no_size": 187,
+   "ours_unknown": 1,
+   "pages_read": 64,
+   "parks": 229,
    "retired": 0,
-   "size_agree": 1,
-   "size_off": 5,
-   "size_unsure": 7,
+   "size_agree": 6,
+   "size_off": 9,
+   "size_unsure": 5,
    "skipped_fresh": 0,
-   "with_outline": 89
+   "with_outline": 208
   },
   "when": "2026-10-28"
  },
@@ -292,6 +314,11 @@
    "status": "HTTP 404"
   },
   "https://www.floridastateparks.org/news": {
+   "links": 0,
+   "read": "2026-10-28",
+   "status": "rest"
+  },
+  "https://www.in.gov/dnr/news/": {
    "links": 0,
    "read": "2026-10-28",
    "status": "rest"
