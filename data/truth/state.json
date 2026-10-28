@@ -19,37 +19,59 @@
    "parks": 193,
    "status": "done",
    "updated": "2026-10-28"
+  },
+  "US-TN": {
+   "checked": 277,
+   "counts": {
+    "agree": 1,
+    "handover_hints": 3,
+    "no_page": 2,
+    "no_size": 237,
+    "off": 8,
+    "ours_unknown": 2,
+    "parks": 277,
+    "retired": 0,
+    "unsure": 4,
+    "weak": 11,
+    "with_outline": 254
+   },
+   "left": 0,
+   "parks": 277,
+   "status": "done",
+   "updated": "2026-10-28"
   }
  },
  "hosts": {
   "explorekyhistory.ky.gov": 1793258165.3648567,
-  "legacy.fws.gov": 1793257782.7889593
+  "legacy.fws.gov": 1793257782.7889593,
+  "tnstateparks.com": 1793308390.7882838,
+  "www.tn.gov": 1793308378.4104462
  },
  "last": {
   "areas": [
-   "US-KY"
+   "US-TN"
   ],
   "manners": {
    "arcgis_exempt": 0,
    "errors": 0,
-   "requests": 555,
-   "rested": 2,
+   "requests": 88,
+   "rested": 387,
    "robots": 0,
-   "strikes": 1
+   "strikes": 8
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 7,
-   "no_size": 73,
-   "ours_unknown": 0,
-   "pages_read": 483,
-   "parks": 193,
+   "handover_hints": 3,
+   "no_size": 239,
+   "ours_unknown": 2,
+   "pages_read": 66,
+   "parks": 277,
    "retired": 0,
-   "size_agree": 99,
+   "size_agree": 1,
    "size_off": 8,
-   "size_unsure": 9,
+   "size_unsure": 4,
    "skipped_fresh": 0,
-   "with_outline": 189
+   "with_outline": 254
   },
   "when": "2026-10-28"
  },
@@ -73,6 +95,16 @@
    "links": 0,
    "read": "2026-10-28",
    "status": "HTTP 404"
+  },
+  "https://tnstateparks.com/about/news": {
+   "links": 0,
+   "read": "2026-10-28",
+   "status": "rest"
+  },
+  "https://www.tn.gov/twra/news.html": {
+   "links": 0,
+   "read": "2026-10-28",
+   "status": "rest"
   }
  },
  "proven": "2026-10-28",
