@@ -58,7 +58,9 @@ jobs:
           for i in $(seq 1 $N); do
             F=0; [ "$i" = 1 ] && [ "${{ inputs.fresh }}" = yes ] && F=1   # cleared once, in the first chunk only
             FRESH=$F LINKS=../links MINUTES=55 python3 .github/scripts/kpc_world_harvest.py || true
-            bash ../links/.github/scripts/kpc_push_data.sh . "world harvester: chunk $i (hidden leads)" data/harvest || true
+            python3 .github/scripts/kpc_status.py grade-me "world harvester" "$(python3 -c "import json;s=json.load(open('data/harvest/state.json'));c=s.get('countries') or {};print(' '.join(k for k,v in c.items() if isinstance(v,dict) and (v.get('finished') or v.get('started'))==__import__('time').strftime('%Y-%m-%d'))[:120] or 'see state.json last_run')" 2>/dev/null)" "data/harvest/leads-<CC>.json" "chunk $i" || true   # Oct 28 (HQ automation, chat 10): one 'grade me' line per batch for chat 8
+            python3 .github/scripts/kpc_status.py board "world harvester" green "chunk $i saved" "chat 8 grades the leads" || true
+            bash ../links/.github/scripts/kpc_push_data.sh . "world harvester: chunk $i (hidden leads)" data/harvest data/status || true
             LEFT=$(python3 -c "import json;s=json.load(open('data/harvest/state.json'));c=json.load(open('data/harvest/countries.json'))['countries'];print(sum(1 for k in c if s['countries'].get(k,{}).get('status')!='done'))" 2>/dev/null || echo 1)
             echo "chunk $i done, $LEFT countries left"
             if [ -n "$COUNTRIES" ]; then

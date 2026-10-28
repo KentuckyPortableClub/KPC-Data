@@ -24,14 +24,15 @@ the read date and the quoted line, so a person can check it in seconds. Unknown 
 | map {url, date_how} | the campground map link, PDF first, and how its date was judged |
 | sites {total, tent, rv, cabin, group, primitive} | counts as the page states them (parts are never summed into a total) |
 | rv_max_ft | maximum RV / trailer length in feet |
-| hookups {electric, amps [30, 50], water, sewer} | true / false / null |
-| dump_station, showers, drinking_water | true / false / null |
+| hookups {electric, amps [30, 50], water, sewer} | true / false / 'some' (only certain sites) / null; a 'no / not / without' in the sentence makes it false, never true |
+| dump_station, showers, drinking_water | true / false / 'some' / null |
 | restrooms | 'flush', 'vault', 'flush + vault', 'none', 'yes (kind not stated)' or null |
 | fees | the amounts as published, with their words ('$26 per night | $32 per night for electric sites') |
 | reservable | true / false / 'mixed' / null |
 | season, checkin, checkout | as published ('April 1 through October 31', 'year-round', '3:00 pm') |
 | rules {pets, generators, quiet_hours, fires, stay_limit} | the sentence or phrase from the page |
-| phone | the office number nearest 'phone / office / information' (toll-free numbers are usually the booking line) |
+| phone | the campground's own number(s): a list when the quoted line holds several; numbers in the page footer / park HQ 'Contact' block are never used; toll-free = booking line, dropped when another exists |
+| ids | present when two list rows were the same campground (same name within 300 m) and were merged into this record |
 | elevation_ft {value, src} | USGS Elevation Point Query Service (US) / NRCan CDEM (Canada), feet |
 | cell {status, carriers, src} | FCC National Broadband Map: blank with status 'needs FCC token' until the secrets exist; step 2 (point lookup in the bulk files) is not built |
 | facts_src {field: {url, date, line}} | the source of EVERY fact above, by field name ('hookups.amps', 'rules.pets' …) |

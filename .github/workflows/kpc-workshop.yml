@@ -1,0 +1,104 @@
+name: KPC bot workshop (truth checker, hours fees permits, campground info)
+# Oct 28 2026 ~5 AM (Fable, chat 10 'bot workshop'; replaces kpc-truth.yml, kpc-hours.yml and kpc-campinfo.yml): ONE job runs the
+# three workshop bots ONE AT A TIME, area by area (truth checker -> hours / fees / permits -> campground info), so no agency host
+# sees two of our bots at once (fw.ky.gov answered 403 when three read it in one hour). Each bot keeps its own script, folder,
+# state and review (data/truth, data/hours, data/campinfo); kpc_workshop.py only orders them, writes the status lines
+# (data/status/inbox-chat-8.md 'grade me' + board.json) and saves ONE commit per bot-and-area batch. All three are REVIEW
+# LISTS / FACTS: nothing here changes a key, an outline or a card. Manners: kpc_manners.py.
+# A job = up to 300 minutes; when areas remain and 'chain' allows, the job starts the next one. Never fails except a failed save.
+# WEEKLY (Sunday 09:17 UTC): the truth checker only, and only once data/truth/state.json says 'proven' (the Kentucky gate passed).
+on:
+  workflow_dispatch:
+    inputs:
+      bots:
+        description: 'Which bots, in order: truth hours campinfo (any subset)'
+        default: 'truth hours campinfo'
+      areas:
+        description: 'Areas (e.g. "US-KY US-TN"); blank = the next unfinished areas in queue order (Kentucky, then the 2-fer regions, southeast first)'
+        default: ''
+      minutes:
+        description: 'Minutes this job may work (max 300)'
+        default: '300'
+      chain:
+        description: 'How many MORE jobs may follow this one by themselves when areas remain (0 = none)'
+        default: '8'
+      test:
+        description: 'yes = Kentucky gates (truth: Levi Jackson 722 vs 896 flagged + Otter Creek -> Meade County; hours: the kpc-ky-hours.json key)'
+        default: ''
+      then_queue:
+        description: 'yes = when every gate PASSES, start the whole queue by itself'
+        default: ''
+  schedule:
+    - cron: '17 9 * * 0'
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: kpc-workshop
+  cancel-in-progress: false
+jobs:
+  workshop:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - name: Kentucky answer keys, outlines and the POTA retired list (KPC-Links, read-only)
+        uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+      - name: Weekly runs only once proven
+        id: gate
+        continue-on-error: true
+        run: |
+          cd kpcdata
+          if [ "${{ github.event_name }}" = schedule ]; then
+            P=$(python3 -c "import json;print((json.load(open('data/truth/state.json')).get('proven') or ''))" 2>/dev/null || echo '')
+            if [ -z "$P" ]; then echo "truth checker not proven yet: nothing to do"; echo "skip=1" >> "$GITHUB_OUTPUT"; exit 0; fi
+            python3 -c "
+          import json; p='data/truth/state.json'; s=json.load(open(p))
+          for a in s.get('areas',{}).values(): a['status']='queued'
+          json.dump(s,open(p,'w'),indent=1)" || true
+            echo "BOTS=truth" >> "$GITHUB_ENV"
+          else
+            echo "BOTS=${{ inputs.bots }}" >> "$GITHUB_ENV"
+          fi
+      - name: Tools
+        if: steps.gate.outputs.skip != '1'
+        continue-on-error: true
+        run: pip install -q --break-system-packages pypdf || pip install -q pypdf || true
+      - name: Run the bots one at a time, one save per batch
+        if: steps.gate.outputs.skip != '1'
+        continue-on-error: true
+        env:
+          AREAS: ${{ inputs.areas }}
+          MINUTES: ${{ inputs.minutes || 300 }}
+          TEST: ${{ inputs.test == 'yes' && '1' || '0' }}
+          LINKS: ../links
+          RIDB_API_KEY: ${{ secrets.RIDB_API_KEY }}
+          FCC_BDC_USERNAME: ${{ secrets.FCC_BDC_USERNAME }}
+          FCC_BDC_TOKEN: ${{ secrets.FCC_BDC_TOKEN }}
+        run: |
+          cd kpcdata
+          python3 .github/scripts/kpc_workshop.py | tee /tmp/workshop.log || true
+          grep -o '^LEFT=[0-9]*' /tmp/workshop.log | tail -1 >> "$GITHUB_ENV"
+          grep -o '^GATE=[A-Z]*' /tmp/workshop.log | tail -1 >> "$GITHUB_ENV"
+          bash ../links/.github/scripts/kpc_push_data.sh . "workshop: status" data/status data/truth data/hours data/campinfo || true
+      - name: Passed Kentucky gates start the queue
+        if: ${{ inputs.areas != '' && inputs.then_queue == 'yes' && env.GATE == 'PASS' }}
+        continue-on-error: true
+        run: |
+          echo "::notice title=Workshop::Kentucky gates PASSED: starting the whole queue (chain ${{ inputs.chain }})"
+          gh workflow run kpc-workshop.yml -R ${{ github.repository }} -f bots="${{ inputs.bots }}" -f areas= -f minutes=300 -f chain=${{ inputs.chain }} || true
+      - name: Areas remain, so the next job starts itself
+        if: ${{ inputs.areas == '' && env.LEFT != '0' && env.LEFT != '' && inputs.chain != '0' && inputs.chain != '' }}
+        continue-on-error: true
+        run: |
+          C=$(( ${{ inputs.chain }} - 1 ))
+          echo "::notice title=Workshop::$LEFT areas left: the next job starts itself (then $C more may follow)"
+          gh workflow run kpc-workshop.yml -R ${{ github.repository }} -f bots="${{ inputs.bots }}" -f areas= -f minutes=300 -f chain=$C || true

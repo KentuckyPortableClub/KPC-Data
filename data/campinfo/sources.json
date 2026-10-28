@@ -1,55 +1,273 @@
 {
- "about": "Campground info bot seed (Oct 28 2026). Which web hosts count as OFFICIAL for a state's campground pages, besides any .gov / .state.XX.us / .mil host (always official). A row whose page is on a host not in this list and not a government host is skipped with status 'page not on an official host'. Reservation systems the states contract (ReserveAmerica, Aspira, UseDirect, Recreation.gov) count as the agency's booking page, never as a source for availability. Chat 8 adds hosts; the bot never guesses one.",
- "booking_hosts": ["recreation.gov", "reserveamerica.com", "usedirect.com", "reservecalifornia.com", "reservedelaware.com", "reserveohio.com", "reservealapark.com", "goingtocamp.com", "camping.ohiodnr.gov", "texasstateparks.reserveamerica.com", "tnstateparks.itinio.com", "reserve.tnstateparks.com", "reservations.pc.gc.ca", "parks.ca.gov"],
+ "about": "Campground info bot seed (Oct 28 2026). Which web hosts count as OFFICIAL for a state's campground pages, besides any .gov / .state.XX.us / .mil host (always official). A row whose page is on a host not in this list and not a government host is skipped with status 'page not on an official host'. Reservation systems the states contract (ReserveAmerica, Aspira, UseDirect, Recreation.gov) count as the agency's booking page, never as a source for availability. Chat 8 adds hosts; the bot never guesses one. extra_official = agency-run sites under plain .com/.us names, one proof line each. Also official for a park: the host of that park's own page in KPC-Links kpc-ky-data.json 'web' or data/parkinfo-web.json 'web'.",
+ "extra_official": [
+  {
+   "host": "landbetweenthelakes.us",
+   "proof": "Land Between the Lakes National Recreation Area is managed by the USDA Forest Service; landbetweenthelakes.us is the unit's own site (the Forest Service's fs.usda.gov/lbl page points to it). Added Oct 28 2026 after chat 8's grade (C-5)."
+  },
+  {
+   "host": "kyhorsepark.com",
+   "proof": "Kentucky Horse Park is a Kentucky state agency (Tourism, Arts and Heritage Cabinet); kyhorsepark.com is its own site. Added Oct 28 2026 (C-5)."
+  },
+  {
+   "host": "levijacksonpark.com",
+   "proof": "Levi Jackson Wilderness Road Park has been run by the City of London, KY since September 2019; levijacksonpark.com is the city park's own site. Added Oct 28 2026 (C-5)."
+  },
+  {
+   "host": "breakspark.com",
+   "proof": "Breaks Interstate Park is run by the Breaks Interstate Park Commission (KY + VA compact); breakspark.com is the commission's own site. Added Oct 28 2026 (C-5)."
+  }
+ ],
+ "booking_hosts": [
+  "recreation.gov",
+  "reserveamerica.com",
+  "usedirect.com",
+  "reservecalifornia.com",
+  "reservedelaware.com",
+  "reserveohio.com",
+  "reservealapark.com",
+  "goingtocamp.com",
+  "camping.ohiodnr.gov",
+  "texasstateparks.reserveamerica.com",
+  "tnstateparks.itinio.com",
+  "reserve.tnstateparks.com",
+  "reservations.pc.gc.ca",
+  "parks.ca.gov"
+ ],
  "states": {
-  "AL": ["alapark.com", "reservealapark.com", "outdooralabama.com"],
-  "AR": ["arkansasstateparks.com", "agfc.com"],
-  "AZ": ["azstateparks.com"],
-  "CA": ["parks.ca.gov", "reservecalifornia.com", "wildlife.ca.gov"],
-  "CO": ["cpw.state.co.us", "cpwshop.com"],
-  "CT": ["ct.gov", "portal.ct.gov"],
-  "DE": ["destateparks.com", "reservedelaware.com", "dnrec.delaware.gov"],
-  "FL": ["floridastateparks.org", "floridastateparks.reserveamerica.com", "myfwc.com", "fdacs.gov"],
-  "GA": ["gastateparks.org", "gastateparks.reserveamerica.com", "georgiawildlife.com"],
-  "IA": ["iowadnr.gov", "iowastateparks.reserveamerica.com"],
-  "ID": ["parksandrecreation.idaho.gov", "idahostateparks.reserveamerica.com"],
-  "IL": ["dnr.illinois.gov", "camp.exploremoreil.com"],
-  "IN": ["in.gov", "indianastateparks.reserveamerica.com", "camp.in.gov"],
-  "KS": ["ksoutdoors.com", "reserve.ksoutdoors.com"],
-  "KY": ["parks.ky.gov", "kentuckystateparks.reserveamerica.com", "fw.ky.gov", "eec.ky.gov"],
-  "LA": ["lastateparks.com", "lastateparks.reserveamerica.com", "wlf.louisiana.gov"],
-  "MA": ["mass.gov", "reserveamerica.com"],
-  "MD": ["dnr.maryland.gov", "parkreservations.maryland.gov"],
-  "ME": ["maine.gov", "campwithme.com"],
-  "MI": ["michigan.gov", "midnrreservations.com"],
-  "MN": ["dnr.state.mn.us", "reservemn.usedirect.com"],
-  "MO": ["mostateparks.com", "icampmo1.usedirect.com", "mdc.mo.gov"],
-  "MS": ["mdwfp.com", "mississippistateparks.reserveamerica.com"],
-  "MT": ["fwp.mt.gov", "montanastateparks.reserveamerica.com"],
-  "NC": ["ncparks.gov", "northcarolinastateparks.reserveamerica.com", "ncwildlife.org", "ncforestservice.gov"],
-  "ND": ["parkrec.nd.gov", "ndparks.usedirect.com"],
-  "NE": ["outdoornebraska.gov", "nebraskastateparks.reserveamerica.com"],
-  "NH": ["nhstateparks.org", "newhampshirestateparks.reserveamerica.com"],
-  "NJ": ["nj.gov", "njportal.com", "camping.nj.gov"],
-  "NM": ["emnrd.nm.gov", "newmexicostateparks.reserveamerica.com"],
-  "NV": ["parks.nv.gov", "nevadastateparks.reserveamerica.com"],
-  "NY": ["dec.ny.gov", "parks.ny.gov", "newyorkstateparks.reserveamerica.com"],
-  "OH": ["ohiodnr.gov", "reserveohio.com"],
-  "OK": ["travelok.com", "oklahomastateparks.com", "okstateparks.usedirect.com"],
-  "OR": ["stateparks.oregon.gov", "oregonstateparks.reserveamerica.com"],
-  "PA": ["dcnr.pa.gov", "pa.gov", "pennsylvaniastateparks.reserveamerica.com"],
-  "RI": ["riparks.ri.gov", "riparks.com", "rhodeislandstateparks.reserveamerica.com"],
-  "SC": ["southcarolinaparks.com", "scprt.com", "dnr.sc.gov"],
-  "SD": ["gfp.sd.gov", "campsd.com"],
-  "TN": ["tnstateparks.com", "tn.gov", "tnwildlife.org"],
-  "TX": ["tpwd.texas.gov", "texasstateparks.reserveamerica.com"],
-  "UT": ["stateparks.utah.gov", "utahstateparks.reserveamerica.com"],
-  "VA": ["dcr.virginia.gov", "virginiastateparks.reserveamerica.com", "dwr.virginia.gov"],
-  "VT": ["vtstateparks.com", "vtstateparks.reserveamerica.com"],
-  "WA": ["parks.wa.gov", "washington.goingtocamp.com", "wdfw.wa.gov", "dnr.wa.gov"],
-  "WI": ["dnr.wisconsin.gov", "wisconsin.goingtocamp.com"],
-  "WV": ["wvstateparks.com", "wvdnr.gov"],
-  "WY": ["wyoparks.wyo.gov", "wyomingstateparks.reserveamerica.com"]
+  "AL": [
+   "alapark.com",
+   "reservealapark.com",
+   "outdooralabama.com"
+  ],
+  "AR": [
+   "arkansasstateparks.com",
+   "agfc.com"
+  ],
+  "AZ": [
+   "azstateparks.com"
+  ],
+  "CA": [
+   "parks.ca.gov",
+   "reservecalifornia.com",
+   "wildlife.ca.gov"
+  ],
+  "CO": [
+   "cpw.state.co.us",
+   "cpwshop.com"
+  ],
+  "CT": [
+   "ct.gov",
+   "portal.ct.gov"
+  ],
+  "DE": [
+   "destateparks.com",
+   "reservedelaware.com",
+   "dnrec.delaware.gov"
+  ],
+  "FL": [
+   "floridastateparks.org",
+   "floridastateparks.reserveamerica.com",
+   "myfwc.com",
+   "fdacs.gov"
+  ],
+  "GA": [
+   "gastateparks.org",
+   "gastateparks.reserveamerica.com",
+   "georgiawildlife.com"
+  ],
+  "IA": [
+   "iowadnr.gov",
+   "iowastateparks.reserveamerica.com"
+  ],
+  "ID": [
+   "parksandrecreation.idaho.gov",
+   "idahostateparks.reserveamerica.com"
+  ],
+  "IL": [
+   "dnr.illinois.gov",
+   "camp.exploremoreil.com"
+  ],
+  "IN": [
+   "in.gov",
+   "indianastateparks.reserveamerica.com",
+   "camp.in.gov"
+  ],
+  "KS": [
+   "ksoutdoors.com",
+   "reserve.ksoutdoors.com"
+  ],
+  "KY": [
+   "parks.ky.gov",
+   "kentuckystateparks.reserveamerica.com",
+   "fw.ky.gov",
+   "eec.ky.gov"
+  ],
+  "LA": [
+   "lastateparks.com",
+   "lastateparks.reserveamerica.com",
+   "wlf.louisiana.gov"
+  ],
+  "MA": [
+   "mass.gov",
+   "reserveamerica.com"
+  ],
+  "MD": [
+   "dnr.maryland.gov",
+   "parkreservations.maryland.gov"
+  ],
+  "ME": [
+   "maine.gov",
+   "campwithme.com"
+  ],
+  "MI": [
+   "michigan.gov",
+   "midnrreservations.com"
+  ],
+  "MN": [
+   "dnr.state.mn.us",
+   "reservemn.usedirect.com"
+  ],
+  "MO": [
+   "mostateparks.com",
+   "icampmo1.usedirect.com",
+   "mdc.mo.gov"
+  ],
+  "MS": [
+   "mdwfp.com",
+   "mississippistateparks.reserveamerica.com"
+  ],
+  "MT": [
+   "fwp.mt.gov",
+   "montanastateparks.reserveamerica.com"
+  ],
+  "NC": [
+   "ncparks.gov",
+   "northcarolinastateparks.reserveamerica.com",
+   "ncwildlife.org",
+   "ncforestservice.gov"
+  ],
+  "ND": [
+   "parkrec.nd.gov",
+   "ndparks.usedirect.com"
+  ],
+  "NE": [
+   "outdoornebraska.gov",
+   "nebraskastateparks.reserveamerica.com"
+  ],
+  "NH": [
+   "nhstateparks.org",
+   "newhampshirestateparks.reserveamerica.com"
+  ],
+  "NJ": [
+   "nj.gov",
+   "njportal.com",
+   "camping.nj.gov"
+  ],
+  "NM": [
+   "emnrd.nm.gov",
+   "newmexicostateparks.reserveamerica.com"
+  ],
+  "NV": [
+   "parks.nv.gov",
+   "nevadastateparks.reserveamerica.com"
+  ],
+  "NY": [
+   "dec.ny.gov",
+   "parks.ny.gov",
+   "newyorkstateparks.reserveamerica.com"
+  ],
+  "OH": [
+   "ohiodnr.gov",
+   "reserveohio.com"
+  ],
+  "OK": [
+   "travelok.com",
+   "oklahomastateparks.com",
+   "okstateparks.usedirect.com"
+  ],
+  "OR": [
+   "stateparks.oregon.gov",
+   "oregonstateparks.reserveamerica.com"
+  ],
+  "PA": [
+   "dcnr.pa.gov",
+   "pa.gov",
+   "pennsylvaniastateparks.reserveamerica.com"
+  ],
+  "RI": [
+   "riparks.ri.gov",
+   "riparks.com",
+   "rhodeislandstateparks.reserveamerica.com"
+  ],
+  "SC": [
+   "southcarolinaparks.com",
+   "scprt.com",
+   "dnr.sc.gov"
+  ],
+  "SD": [
+   "gfp.sd.gov",
+   "campsd.com"
+  ],
+  "TN": [
+   "tnstateparks.com",
+   "tn.gov",
+   "tnwildlife.org"
+  ],
+  "TX": [
+   "tpwd.texas.gov",
+   "texasstateparks.reserveamerica.com"
+  ],
+  "UT": [
+   "stateparks.utah.gov",
+   "utahstateparks.reserveamerica.com"
+  ],
+  "VA": [
+   "dcr.virginia.gov",
+   "virginiastateparks.reserveamerica.com",
+   "dwr.virginia.gov"
+  ],
+  "VT": [
+   "vtstateparks.com",
+   "vtstateparks.reserveamerica.com"
+  ],
+  "WA": [
+   "parks.wa.gov",
+   "washington.goingtocamp.com",
+   "wdfw.wa.gov",
+   "dnr.wa.gov"
+  ],
+  "WI": [
+   "dnr.wisconsin.gov",
+   "wisconsin.goingtocamp.com"
+  ],
+  "WV": [
+   "wvstateparks.com",
+   "wvdnr.gov"
+  ],
+  "WY": [
+   "wyoparks.wyo.gov",
+   "wyomingstateparks.reserveamerica.com"
+  ]
  },
- "canada": ["parks.canada.ca", "pc.gc.ca", "reservation.pc.gc.ca", "ontarioparks.ca", "reservations.ontarioparks.ca", "sepaq.com", "parcsnbparks.ca", "parks.novascotia.ca", "parkscanada.gc.ca", "bcparks.ca", "camping.bcparks.ca", "albertaparks.ca", "reserve.albertaparks.ca", "gov.mb.ca", "saskparks.com", "yukon.ca", "gov.nt.ca", "nunavutparks.com"]
+ "canada": [
+  "parks.canada.ca",
+  "pc.gc.ca",
+  "reservation.pc.gc.ca",
+  "ontarioparks.ca",
+  "reservations.ontarioparks.ca",
+  "sepaq.com",
+  "parcsnbparks.ca",
+  "parks.novascotia.ca",
+  "parkscanada.gc.ca",
+  "bcparks.ca",
+  "camping.bcparks.ca",
+  "albertaparks.ca",
+  "reserve.albertaparks.ca",
+  "gov.mb.ca",
+  "saskparks.com",
+  "yukon.ca",
+  "gov.nt.ca",
+  "nunavutparks.com"
+ ]
 }

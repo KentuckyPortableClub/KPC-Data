@@ -65,12 +65,13 @@ class Manners:
                     body = b'' if head else r.read(self.read_max)
                     return r.status, {k.lower(): v for k, v in r.headers.items()}, body, r.geturl()
             except urllib.error.HTTPError as e:
-                if e.code in (429, 500, 502, 503, 504):
+                if e.code in (403, 429, 500, 502, 503, 504):   # 403 too: fw.ky.gov answered 403 after three bots read it in one hour
                     self.strike[h] = self.strike.get(h, 0) + 1; self.stat['strikes'] += 1
                     if self.strike[h] >= self.strikes_out: self.dead[h] = time.time() + self.rest_s; return 'rest', {}, b'', u
                     ra = 0
                     try: ra = int((e.headers or {}).get('Retry-After') or 0)
                     except Exception: ra = 0  # noqa: BLE001
+                    if e.code == 403: return 403, {k.lower(): v for k, v in (e.headers or {}).items()}, b'', u   # no retry on 403, only the strike
                     time.sleep(min(max(ra, 20 * (attempt + 1)), 120)); continue
                 if e.code == 416 and rng: return self.get(u, None, timeout, head, accept)
                 return e.code, {k.lower(): v for k, v in (e.headers or {}).items()}, b'', u

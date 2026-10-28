@@ -33,7 +33,7 @@ LINKS = pathlib.Path(os.environ.get('LINKS') or 'links')
 T0 = time.time(); LIMIT = float(os.environ.get('MINUTES') or 55) * 60
 REFRESH_DAYS = int(os.environ.get('REFRESH_DAYS') or 90)
 TODAY = time.strftime('%Y-%m-%d')
-VER = 1
+VER = 2   # Oct 28 ~5 AM: chat 8's H-R1..H-R6 (abbreviations, subjects, topic pages, attraction fees, tourism-site label)
 QUEUE = T.QUEUE
 STAT = {'parks': 0, 'pages_read': 0, 'hours': 0, 'fees': 0, 'permits': 0, 'none': 0, 'no_page': 0, 'skipped_fresh': 0, 'errors': 0}
 
@@ -56,30 +56,63 @@ def late(): return time.time() - T0 > LIMIT
 def clean(s): return ' '.join(s.split())[:MAXLEN]
 
 
-def facts_in(text):
-    """{'hours': [...], 'fees': [...], 'permits': [...], 'other_fees': [...]} sentences, each a short quote."""
-    out = {'hours': [], 'fees': [], 'permits': [], 'other_fees': []}
-    text = re.sub(r'\b([ap])\.\s?m\.', r'\1m', text, flags=re.I)   # '7 a.m.' -> '7 am' so the sentence does not split there
+ABBR = re.compile(r'\b(jan|feb|mar|apr|jun|jul|aug|sept?|oct|nov|dec|mon|tues?|wed|thurs?|fri|sat|sun|u\.s|st|mt|ft|dr|mr|mrs|ms|no|vs|etc|approx|inc|co|ave|rd|hwy|rte)\.(?=\s)', re.I)
+SUBJECT = re.compile(r'\b(memorial|building|birthplace|homestead|park|parks|area|areas|refuge|forest|preserve|reserve|sanctuary|site|grounds|trails?|gates?|day[- ]use|visitors?|public|property|lands?|wma|lake|beach|campground|office|visitor cent(?:er|re)|museum|building|lodge|center|centre|headquarters|range|hatchery|cave|tours?|we|it)\b', re.I)
+OFFICE = re.compile(r'office|headquarters|visitor cent|business hours|call|phone', re.I)
+BUILDING = re.compile(r'memorial building|memorial|museum|visitor cent(?:er|re)|lodge|cabin|tour|cave tours?|house|mansion|gift shop|restaurant|pool|marina|gallery|exhibit|planetarium|center|centre', re.I)
+HUNTSEASON = re.compile(r'season|hunting|hunters|quota|shooting hours|legal (?:shooting|hunting)|dove|deer|turkey|waterfowl|grouse|quail|squirrel', re.I)
+TOPIC_PAGE = re.compile(r'field[- ]trip|school|group[- ]tour|programs?/|education|events?/|hunting-season|seasons-and-limits|regulations', re.I)
+TOURISM = re.compile(r'kentuckytourism\.com|visit[a-z]+\.com|tourism', re.I)
+
+
+def sentences(text):
+    """Sentences of a page with abbreviations protected (H-R1: never cut at 'Nov.', 'a.m.', 'U.S.', 'St.')."""
+    t = re.sub(r'\b([apAP])\.\s?[mM]\.(?=\s+[A-Z(]|\s*$)', r'\1m.', text)   # '4:30 p.m. Park grounds…' ends a sentence
+    t = re.sub(r'\b([ap])\.\s?m\.', r'\1m', t, flags=re.I)                               # '10 p.m. to 7 a.m.' does not
+    t = ABBR.sub(lambda m: m.group(1) + '§', t)
+    for line in t.split('\n'):
+        for sen in re.split(r'(?<=[.;!?])\s+', line):
+            sen = sen.replace('§', '.').strip()
+            if sen: yield sen
+
+
+def is_heading(sen):
+    """A heading or a date line: short, no verb-ish word, no time, or a bare 'Month d, yyyy | …' fragment (H-R2)."""
+    w = sen.split()
+    if re.match(r'^[\d,\s|]*(?:19|20)\d\d\b', sen) or re.match(r'^\d{1,2},\s*(?:19|20)\d\d', sen): return True
+    if len(w) <= 6 and not re.search(r'\d', sen) and not re.search(r'\b(is|are|open|opens|closed|closes|from|to|until|daily|free|required)\b', sen, re.I): return True
+    if sen.isupper() and len(w) <= 8: return True
+    return False
+
+
+def facts_in(text, park_name='', url=''):
+    """{'hours', 'fees', 'permits', 'other_fees', 'office_hours', 'attraction_fees'}: each a list of the agency's own sentences.
+    H-R2 a hit needs a subject; H-R3 hunting-season hours are a separate label; H-R4 a fee for one attraction is labelled so."""
+    out = {'hours': [], 'fees': [], 'permits': [], 'other_fees': [], 'office_hours': [], 'hunting_hours': [], 'attraction_fees': []}
     seen = set()
+    cn = [w for w in T.core(park_name).split() if len(w) > 2][:3]
     def put(k, s):
         s = clean(s)
         key = (k, s[:60].lower())
-        if len(s) < 12 or key in seen: return
+        if len(s) < 12 or key in seen or len(out[k]) >= 6: return
         seen.add(key); out[k].append(s)
-    for m in HOURS_RX.finditer(text):
-        s = m.group(1)
-        if HOURS_BAD.search(s): continue
-        if len(out['hours']) < 6: put('hours', s)
-    for m in FEE_RX.finditer(text):
-        s = m.group(1)
-        if FEE_BAD.search(s) and not re.search(r'entrance|entry|admission|day[- ]use|parking|per vehicle|per car', s, re.I):
-            if len(out['other_fees']) < 4: put('other_fees', s)
-            continue
-        if FEE_GOOD.search(s) and len(out['fees']) < 6: put('fees', s)
-    for m in PERMIT_RX.finditer(text):
-        s = m.group(1)
-        if PERMIT_BAD.search(s) or not PERMIT_GOOD.search(s): continue
-        if len(out['permits']) < 4: put('permits', s)
+    for sen in sentences(text):
+        if is_heading(sen): continue
+        has_subject = bool(SUBJECT.search(sen)) or any(w in sen.lower() for w in cn)
+        if HOURS_RX.search(sen):
+            if not has_subject: continue
+            if HUNTSEASON.search(sen): put('hunting_hours', sen)
+            elif OFFICE.search(sen) and not re.search(r'\b(park|area|refuge|forest|grounds|gates?|trails?|day[- ]use)\b', sen, re.I): put('office_hours', sen)
+            elif HOURS_BAD.search(sen): continue
+            else: put('hours', sen)
+        if FEE_RX.search(sen):
+            if not has_subject: continue
+            if FEE_BAD.search(sen) and not re.search(r'entrance|entry|admission|day[- ]use|parking|per vehicle|per car', sen, re.I): put('other_fees', sen)
+            elif BUILDING.search(sen) and not re.search(r'\bpark (?:admission|entrance|entry)|per (?:car|vehicle)|day[- ]use|parking', sen, re.I): put('attraction_fees', sen)
+            elif FEE_GOOD.search(sen): put('fees', sen)
+        if PERMIT_RX.search(sen):
+            if not has_subject or PERMIT_BAD.search(sen) or not PERMIT_GOOD.search(sen): continue
+            put('permits', sen)
     return out
 
 
@@ -90,16 +123,21 @@ def one_park(ref, park, web, docs, ky):
     kl = (HKEY.get(ref) or {}).get('link')   # Kentucky's hand-checked hours page (answer key) is read too: it IS the agency's page
     if kl and kl.startswith('http') and kl not in [p[0] for p in pages]: pages.insert(0, (kl, 'hours page (Kentucky hours answer key)'))
     if not pages: r['status'] = 'no official page on file'; STAT['no_page'] += 1; return r
+    for k in ('office_hours', 'hunting_hours', 'attraction_fees'): r[k] = []
     for u, why in pages:
         if late(): break
+        if TOPIC_PAGE.search(u): r['pages'].append({'url': u, 'why': why, 'status': 'skipped: another topic (field trips / programs / seasons)'}); continue
         st, kind, text = T.read_page(u)
         r['pages'].append({'url': u, 'why': why, 'status': st})
         if st != 'ok' or not text: continue
         STAT['pages_read'] += 1
-        f = facts_in(text)
-        for k in ('hours', 'fees', 'permits', 'other_fees'):
+        f = facts_in(text, park['n'], u)
+        tour = bool(TOURISM.search(u))   # H-R5: a tourism site is state government, not the park's agency: labelled, kept apart
+        for k in ('hours', 'fees', 'permits', 'other_fees', 'office_hours', 'hunting_hours', 'attraction_fees'):
             for s in f[k]:
-                if len(r[k]) < 6: r[k].append({'line': s, 'url': u, 'read': TODAY})
+                row = {'line': s, 'url': u, 'read': TODAY}
+                if tour: row['src_note'] = 'tourism site (state government), not the park agency'
+                if len(r[k]) < 6: r[k].append(row)
         if r['hours'] and r['fees']: break
     r['status'] = 'ok' if (r['hours'] or r['fees'] or r['permits']) else ('nothing found' if any(p['status'] == 'ok' for p in r['pages']) else 'no page opened')
     for k in ('hours', 'fees', 'permits'):
@@ -121,7 +159,11 @@ def run_area(area, state, web, docs_all, ky):
         old = D['parks'].get(ref)
         if old and old.get('ver', 0) >= VER and old.get('checked', '') >= cut: fresh += 1; STAT['skipped_fresh'] += 1; continue
         STAT['parks'] += 1
-        try: D['parks'][ref] = one_park(ref, parks[ref], web, docs, ky if area == 'US-KY' else {})
+        try:
+            new = one_park(ref, parks[ref], web, docs, ky if area == 'US-KY' else {})
+            if old and old.get('status') == 'ok' and not any(p.get('status') == 'ok' for p in new.get('pages') or []):
+                old['last_read_failed'] = TODAY; old['ver'] = VER; new = old   # every page failed (403 / rest): keep what we knew
+            D['parks'][ref] = new
         except Exception as e:  # noqa: BLE001
             STAT['errors'] += 1; D['parks'][ref] = {'n': parks[ref]['n'], 'status': 'bot error: ' + str(e)[:80], 'checked': TODAY, 'ver': VER, 'hours': [], 'fees': [], 'permits': []}
         done += 1
@@ -184,7 +226,7 @@ def review(state):
         for ref, r in D['parks'].items():
             if r.get('status') != 'ok': continue
             L.append(f"- **{ref} {r['n']}**")
-            for k, lab in (('hours', 'Hours'), ('fees', 'Fees'), ('permits', 'Permit')):
+            for k, lab in (('hours', 'Hours'), ('fees', 'Fees'), ('permits', 'Permit'), ('office_hours', 'Office hours'), ('hunting_hours', 'Hunting hours'), ('attraction_fees', 'Attraction fee')):
                 for x in (r.get(k) or [])[:2]: L.append(f"  - {lab}: “{x['line']}” · [{T.host_of(x['url'])}]({x['url']})")
             n += 1
             if n >= 12: break

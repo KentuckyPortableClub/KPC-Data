@@ -7,6 +7,8 @@ name: KPC campground info bot (facts only)
 # GATHERS FACTS, DECIDES NOTHING. Own script (kpc_campinfo_bot.py + kpc_manners.py), own folder (data/campinfo).
 # Manners: robots.txt obeyed, 1 request / 2 s per host (RIDB too), back-off, three strikes = a day's rest.
 # A job = up to 5 chunks of 55 min, ONE commit per chunk; when areas remain and 'chain' allows, the job starts the next one.
+# Oct 28 later (chat 8's grade C-1..C-6): negation-aware reading ('no water, electricity or dump station' = False), footer
+# phones dropped, all phones on a line kept, duplicate ids merged (same name within 300 m), agency .com/.us hosts in sources.json.
 # Never fails except a failed save. NO CRON YET: a monthly schedule comes later, once chat 8 has graded review.md.
 # Secrets (Settings -> Secrets and variables -> Actions): RIDB_API_KEY (federal rows), FCC_BDC_USERNAME + FCC_BDC_TOKEN (cell).
 on:

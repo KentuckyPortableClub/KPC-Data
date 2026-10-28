@@ -44,7 +44,7 @@ REFRESH_DAYS = int(os.environ.get('REFRESH_DAYS') or 7)
 TOL = 0.15
 PDF_FIRST = 400_000
 TODAY = time.strftime('%Y-%m-%d')
-VER = 2   # Oct 28 ~3:30 AM: about-page follow, other-park sentences, multi-state note
+VER = 3   # Oct 28 ~5 AM (chat 8's KY grade): history numbers, containers, designation, units, cause class; a failed read keeps the old record
 QUEUE = ['US-KY',
          'US-TN', 'US-NC', 'US-VA', 'US-WV', 'US-GA', 'US-AL', 'US-SC', 'US-FL', 'US-MS',
          'US-IN', 'US-IL', 'US-MO', 'US-WI', 'US-MN', 'US-IA', 'US-ND', 'US-SD',
@@ -67,13 +67,15 @@ SIZE2 = re.compile(r'(?:acreage|area|size|total area|land area|park area)\s*[:=]
 TOTALWORD = re.compile(r'encompass|cover|consist|compris|total|spans|protects|includes|spread over|acre (?:park|area|refuge|forest|preserve|reserve|site|tract|property|wma|wildlife|recreation|lake|monument|seashore|lakeshore)|'
                        r'(?:park|area|refuge|forest|preserve|reserve|site|tract|property|monument|seashore|lakeshore|wma|lands?) (?:of|is|has|contains|covers|totals?|encompasses|includes) ', re.I)
 NOTTOTAL = re.compile(r'\blake\b.*\bacre|acre[- ]lake|reservoir|pond|campground|campsite|parking|picnic|golf|cemetery|garden|lawn|field|pool|beach|marsh of|wetland of|per acre|acre[- ]feet|acre feet|acres? (?:of|in) (?:water|lake|pond|wetland|crop|timber|hunting|fields?)|'
-                       r'burn|harvest|logged|planted|restored|treated|easement|acquired|purchas|added|expansion|donat', re.I)
+                       r'burn|harvest|logged|planted|restored|treated|easement|acquired|purchas|added|expansion|donat|'
+                       r'land grant|patent|originally|in 1[6-9]\d\d|granted|surveyed|included in the|part of the \d|within the \d|lies within|is part of|portion of the \d|complex|together with', re.I)
 HANDOVER = re.compile(r'\b((?:transferr?ed|transfer of|handed over|turned over|conveyed|deeded|donated|sold|ceded|leased|given|gift(?:ed)?)\s+(?:[^.;\n]{0,80}?\s)?(?:back )?(?:to|from)\s+(?:the\s+)?(?:city|county|town|village|parish|state|commonwealth|municipality|tribe|nation|district|authority|university|foundation|trust|conservancy|audubon|[A-Z][\w.&\'-]+(?:\s+[A-Z][\w.&\'-]+){0,4})[^.;\n]{0,90})', re.I)
 MANAGED = re.compile(r'\b((?:is |are |now |currently |will be |has been )?(?:managed|operated|owned|maintained|administered|run|overseen)\s+(?:and (?:operated|maintained|managed) )?(?:jointly )?by\s+(?:the\s+)?[A-Z][\w.&\'-]+(?:\s+(?:of|and|&|for|the|[A-Z][\w.&\'-]+)){0,7})', re.I)
 CLOSED = re.compile(r'\b((?:closed|closing|will close|has closed)\s+permanently|permanently\s+closed|no longer open to the public|is now closed to (?:the )?public|has been decommissioned|ceased operations|no longer (?:a |an )?(?:state |national )?(?:park|refuge|wildlife area|recreation area))[^.;\n]{0,80}', re.I)
 NEWNAME = re.compile(r'\b((?:renamed|formerly (?:known as|called)|now (?:known as|called)|new name)[^.;\n]{0,80})', re.I)
 KINDW = re.compile(r'\b(state|national|provincial|park|parks|forest|wildlife|management|area|areas|recreation|recreational|conservation|nature|natural|preserve|reserve|refuge|historic|historical|site|game|land|lands|wma|sp|sra|sf|nwr|trail|the|of|and|at|county|city|regional|unit|access|public|fishing|lake|hunting|outdoor|memorial|monument|wilderness|road)\b')
 OTHER_CORES = set()
+DESIG = {}         # {'state': bool, 'national': bool} of the park being read (T4: a State wild river is not the National river of the same name)
 MULTI = {}         # {'area', 'state' (full name), 'ky' (bool)}: set per area   # the other parks of the area (core names), set per area: a sentence naming another park is not this park's size
 STATES_RX = re.compile(r'\b(alabama|alaska|arizona|arkansas|california|colorado|connecticut|delaware|florida|georgia|hawaii|idaho|illinois|indiana|iowa|kansas|kentucky|louisiana|maine|maryland|massachusetts|michigan|minnesota|mississippi|missouri|montana|nebraska|nevada|new hampshire|new jersey|new mexico|new york|north carolina|north dakota|ohio|oklahoma|oregon|pennsylvania|rhode island|south carolina|south dakota|tennessee|texas|utah|vermont|virginia|washington|west virginia|wisconsin|wyoming)\b', re.I)
 SOFT404 = re.compile(r'page not found|404 error|error 404|the page you (?:requested|are looking for)|no longer available|has been (?:moved|removed)|sign in to continue|log ?in required|access denied', re.I)
@@ -124,6 +126,8 @@ def sizes_in(text, name):
             looks = bool(TOTALWORD.search(near)) or any(w in near for w in cn)
             if NOTTOTAL.search(near): looks = False
             me = core(name)
+            if looks and DESIG.get('state') and re.search(r'\bnational\b', near) and not re.search(r'\bstate\b', near): looks = False   # a State park's page quoting a National unit's size
+            if looks and DESIG.get('national') and re.search(r'\bstate (?:wild river|natural area|nature preserve|park|forest|wma)\b', near) and not re.search(r'\bnational\b', near): looks = False
             if looks and me not in core(near):   # another park named in the sentence, this one not: not our size
                 if any(oc in core(near) for oc in OTHER_CORES if len(oc) >= 6 and oc != me): looks = False
             out.append((round(a, 1), f'{n} {unit}', line, looks))
@@ -389,6 +393,7 @@ def one_park(ref, park, ours, web, docs, ky, retired, bs):
     if ref in retired:
         r['retired'] = retired[ref]; STAT['retired'] += 1
     pages = candidate_pages(ref, park, web, docs, ky)
+    DESIG.clear(); DESIG.update({'state': bool(re.search(r'\bstate\b', park['n'] + ' ' + park.get('t', ''), re.I)), 'national': bool(re.search(r'\bnational\b', park['n'] + ' ' + park.get('t', ''), re.I))})
     if not pages: r['verdict'] = 'no official page on file'; return r
     found = []
     for u, why in pages:
@@ -422,8 +427,21 @@ def one_park(ref, park, ours, web, docs, ky, retired, bs):
     mg = (ours or {}).get('manager') or ''
     if mg and re.search(r'city|county|local|private|ngo|non', mg, re.I) and re.search(r'state', park.get('t', ''), re.I):
         r['handover'].append({'kind': 'land record', 'line': f"our outline's land record says manager = {mg}, POTA calls it a {park.get('t')}", 'src': ours.get('src'), 'why': 'the outline source', 'date_hint': None})
+    if v == 'off' and chosen and ours: r['cause'] = cause_of(ours, chosen[0], park)
     r['score'], r['score_parts'] = score_of(ours or {'pin': 'none', 'pieces': []}, v, bs)
     return r
+
+
+def cause_of(ours, agency, park):
+    """T6 (chat 8): one of five causes so a person sees classes, not a pile: our union (one of our pieces alone matches the
+    agency) · boundary vs owned (an NPS / FWS unit line bigger than the owned land) · multi-state · agency smaller (we may hold water or
+    a lease) · agency bigger (we may miss a tract)."""
+    pieces = [p for p in (ours.get('pieces') or []) if isinstance(p[2], (int, float)) and p[2] > 0]
+    if len(pieces) > 1 and any(abs(p[2] - agency) / agency <= TOL for p in pieces): return 'our union: one of our pieces alone matches the agency (double count?)'
+    if re.search(r'national', park.get('t', '') + ' ' + park['n'], re.I) and ours['acres'] > agency and re.search(r'nps|fws|unit', str(ours.get('src')) + ' ' + str(pieces[:1]), re.I):
+        return 'boundary vs owned: our line may be the authorized boundary, the agency counts owned land (rule 1: use owned land)'
+    if ours['acres'] > agency: return 'agency smaller: our outline may hold water, a lease or a neighbour tract'
+    return 'agency bigger: our outline may miss a tract'
 
 
 def run_area(area, state, web, docs_all, ky, ak, retired, bscore, news):
@@ -449,7 +467,11 @@ def run_area(area, state, web, docs_all, ky, ak, retired, bscore, news):
             D['parks'][ref] = {'n': park['n'], 't': park.get('t', ''), 'ours': None, 'verdict': 'no outline', 'checked': TODAY, 'ver': VER, 'handover': [], 'score': None}
             continue
         STAT['with_outline'] += 1
-        try: D['parks'][ref] = one_park(ref, park, ours, web, docs, ky, retired, bscore.get(ref))
+        try:
+            new = one_park(ref, park, ours, web, docs, ky, retired, bscore.get(ref))
+            if old and old.get('verdict') not in (None, 'not read', 'no official page on file') and not any(p.get('status') == 'ok' for p in new.get('pages') or []):
+                old['last_read_failed'] = TODAY; old['ver'] = VER; new = old   # every page failed (403 / rest): keep what we knew
+            D['parks'][ref] = new
         except Exception as e:  # noqa: BLE001
             STAT['errors'] += 1
             D['parks'][ref] = {'n': park['n'], 'ours': ours, 'verdict': 'bot error: ' + str(e)[:80], 'checked': TODAY, 'ver': VER, 'handover': [], 'score': None}
@@ -528,7 +550,7 @@ def review(state):
             L += ['**Size more than 15% off (our outline vs the agency):**', '']
             for ref, r in sorted(off, key=lambda x: -(x[1].get('pct') or 0))[:60]:
                 of = r.get('official') or {}
-                L.append(f"- {ref} {r['n']}: ours {r['ours']['acres']:,} ac vs agency {of.get('as', '')} ({r.get('pct')}% off) · [{host_of(of.get('url', ''))}]({of.get('url', '')}) · “{(of.get('line') or '')[:160]}”")
+                L.append(f"- {ref} {r['n']}: ours {r['ours']['acres']:,} ac vs agency {of.get('as', '')} (= {int(of.get('acres') or 0):,} ac; {r.get('pct')}% off) · cause: {r.get('cause', '?')} · [{host_of(of.get('url', ''))}]({of.get('url', '')}) · “{(of.get('line') or '')[:160]}”")
             if len(off) > 60: L.append(f'- … {len(off) - 60} more in {a}.json')
         if hov:
             L += ['', '**Handover / closure hints (a person decides; nothing applied):**', '']

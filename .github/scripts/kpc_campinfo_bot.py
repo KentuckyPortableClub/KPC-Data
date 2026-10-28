@@ -33,7 +33,7 @@ campground we already list (federal, state, Kentucky hand-checked) it writes ONE
 
 Env: AREAS='US-KY US-TN' (blank = next unfinished in queue order) · MINUTES · LINKS (KPC-Links checkout, default 'links') ·
      OUT (data/campinfo) · REFRESH_DAYS · RIDB_API_KEY · FCC_BDC_USERNAME · FCC_BDC_TOKEN.  `--selftest` runs the regexes on
-     sample page texts offline and prints what they pulled out (no network).
+     sample page texts offline and prints what they pulled out (no network); `--negtest` = the 30-sentence negation test (C-1).
 """
 import json, os, pathlib, re, sys, time, urllib.parse, urllib.request
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -46,7 +46,7 @@ REFRESH_DAYS = int(os.environ.get('REFRESH_DAYS') or 30)
 RIDB_KEY = (os.environ.get('RIDB_API_KEY') or '').strip()
 FCC_USER = (os.environ.get('FCC_BDC_USERNAME') or '').strip(); FCC_TOKEN = (os.environ.get('FCC_BDC_TOKEN') or '').strip()
 TODAY = time.strftime('%Y-%m-%d')
-VER = 1
+VER = 2   # 2 = Oct 28 chat 8 grade C-1..C-6 (negation, footer phones, duplicates, hosts): every row is re-read
 RIDB = 'https://ridb.recreation.gov/api/v1/'
 FCC = 'https://broadbandmap.fcc.gov/api/public/map/'
 QUEUE = ['US-KY',
@@ -107,15 +107,18 @@ CABIN_W = re.compile(r'cabin|cottage|yurt|lean-to|shelter', re.I); GROUP_W = re.
 PRIM_W = re.compile(r'primitive|walk[- ]in|hike[- ]in|backcountry|backpack|boat[- ]in|paddle[- ]in|rustic', re.I)
 PLAIN_W = re.compile(r'^(?:camp|wooded|shaded|improved|developed|individual|family|total|overnight|standard|modern|paved|gravel)?[- ]*$', re.I)
 AMPS = re.compile(r'\b(20|30|50|100)(?:\s*/\s*(20|30|50|100))?(?:\s*/\s*(20|30|50|100))?\s*-?\s*amp', re.I)
-ELECTRIC = re.compile(r'(?<!non-)(?<!non )(?<!no )(?<!without )(?:electric(?:al|ity)?(?:\s+(?:hook-?ups?|service|sites?|pedestals?))?|hook-?ups?|full[- ]hook)', re.I)
-NO_ELECTRIC = re.compile(r'\bno (?:electric\w*|hook-?ups?|utilities)|non-?electric (?:only|sites only)|primitive (?:only|camping only)|without (?:electric|hook-?ups?)', re.I)
+ELECTRIC_W = re.compile(r'electric(?:al|ity)?(?:\s+(?:hook-?ups?|service|sites?|pedestals?))?|\bhook-?ups?|full[- ]hook-?ups?|\bpower\b|utilities', re.I)
 WATER_HOOK = re.compile(r'water (?:and|&|/|,) (?:electric|sewer)|(?:electric(?:al|ity)?|sewer)(?:\s*,|\s+and|\s*&|\s*/)\s*water|water hook-?ups?|full[- ]hook-?ups?|water (?:at|on|to) (?:each|every|all) site', re.I)
-SEWER = re.compile(r'\bsewer\b|full[- ]hook-?ups?', re.I)
-DUMP = re.compile(r'dump station|sanitary (?:dump|station)|rv dump|dumping station', re.I); NO_DUMP = re.compile(r'no (?:rv )?dump station', re.I)
-SHOWERS = re.compile(r'\bshowers?\b|bath ?house|shower house|comfort station', re.I); NO_SHOWERS = re.compile(r'\bno (?:hot )?showers?\b|without showers', re.I)
+SEWER_W = re.compile(r'\bsewer\b|full[- ]hook-?ups?', re.I)
+DUMP = re.compile(r'dump station|sanitary (?:dump|station)|rv dump|dumping station', re.I)
+SHOWERS = re.compile(r'\bshowers?\b|bath ?house|shower house', re.I)
 FLUSH = re.compile(r'flush (?:toilets?|restrooms?)|modern restrooms?', re.I); VAULT = re.compile(r'vault (?:toilets?|restrooms?)|pit toilets?|privies|privy|outhouses?|composting toilets?|portable toilets?|chemical toilets?', re.I)
-RESTROOM = re.compile(r'restrooms?|toilets?|comfort stations?|bath ?house', re.I); NO_RESTROOM = re.compile(r'\bno (?:restrooms?|toilets?|facilities)', re.I)
-DRINK = re.compile(r'(?:drinking|potable) water|water (?:spigots?|fountains?|fill(?:ing)? station|hydrants?)', re.I); NO_DRINK = re.compile(r'no (?:drinking|potable) water|water (?:is )?not available|bring (?:your own )?water', re.I)
+RESTROOM = re.compile(r'restrooms?|toilets?|comfort stations?|bath ?house', re.I)
+DRINK = re.compile(r'(?:drinking|potable) water|water (?:spigots?|fountains?|fill(?:ing)? station|hydrants?)', re.I)
+# negation words that may stand before an amenity in the same clause ('no', 'not available', 'without', 'lacks', 'does not have')
+NEG = re.compile(r"\b(?:no|not|without|none|lacks?|lacking|nor|neither|non)\b|\bn't\b|does not|do not|is not|are not|isn't|aren't|unavailable|not available|not offered|not provided|not permitted|prohibited", re.I)
+NEG_AFTER = re.compile(r"^\W*(?:\w+\W+){0,3}?(?:(?:is|are|was|were)\s+)?(?:not|unavailable|not available|not offered|not provided|is lacking|are lacking|n't available|do not exist|does not exist)\b", re.I)
+SOME_W = re.compile(r"\b(?:some|select|selected|certain|limited|a few|several|most|many|not all|partial|range from|only at|at \d+ (?:of|sites)|\d+ of the \d+|\d+ of (?:the|our) sites)\b", re.I)   # '146 sites with electric' is a total, not 'some'
 RVMAX = re.compile(r'max(?:imum)?\s+(?:rv|trailer|vehicle|camper|unit|site|combined)?\s*(?:length|size)?\s*(?:of|is|:|=)?\s*(\d{2,3})\s*(?:ft\b|feet|\'|-?foot)'
                    r'|(?:rvs?|trailers?|vehicles?|campers?|units?)\s+(?:up to|under|no longer than|not (?:exceeding|to exceed)|(?:of )?(?:less than )?)\s*(\d{2,3})\s*(?:ft\b|feet|\'|-?foot)'
                    r'|(\d{2,3})\s*(?:ft\.?|feet|\'|-?foot)\s+(?:max(?:imum)?|limit|or (?:less|shorter|under))', re.I)
@@ -137,6 +140,29 @@ PHONE = re.compile(r'(?<![\d-])(?:\+?1[-. ]?)?\(?(\d{3})\)?[-. ]?(\d{3})[-. ](\d
 SOFT404 = re.compile(r'page not found|404 error|error 404|the page you (?:requested|are looking for)|no longer available|has been (?:moved|removed)|access denied', re.I)
 
 
+FOOTER_W = re.compile(r'footer|contact us|contact info|headquarters|park information|mailing address|physical address|superintendent|regional office|privacy policy|accessibility|site map|sitemap', re.I)
+TOLLFREE = ('(800)', '(888)', '(877)', '(866)', '(855)', '(844)')
+
+
+def phones_in(text):
+    """C-2 / C-3 (chat 8, Oct 28): the campground's own phone numbers, in page order, as [(number, match)]. A number in the last
+    ~15% of the page text, or within 200 chars of footer words ('footer', 'contact us', 'headquarters', 'park information',
+    'mailing address'), is the site footer / park HQ line and is dropped; a toll-free number is the booking line and is dropped
+    when any other number exists. All numbers on one quoted line are kept (Holly Bay: 'Phone: 859-428-7706; 606-864-4163')."""
+    cut = int(len(text) * 0.85)
+    out = []
+    for m in PHONE.finditer(text):
+        if m.start() >= cut and len(text) > 600: continue
+        if FOOTER_W.search(text[max(0, m.start() - 200):m.end() + 200]): continue
+        p = f'({m.group(1)}) {m.group(2)}-{m.group(3)}'
+        if p not in [x for x, _ in out]: out.append((p, m))
+    if len(out) > 1: out = [x for x in out if not x[0].startswith(TOLLFREE)] or out
+    if not out: return []
+    # keep the first number plus every number on the same quoted line (within 120 chars of it)
+    first = out[0][1]
+    return [x for x in out if abs(x[1].start() - first.start()) <= 120][:4]
+
+
 def line_at(text, s, e, width=90):
     a = max(0, s - width); b = min(len(text), e + width)
     return ' '.join(text[a:b].split())[:200]
@@ -149,6 +175,45 @@ def tidy(x):
 
 def fact(value, url, line):
     return {'value': value, 'url': url, 'date': TODAY, 'line': line}
+
+
+def clause_before(text, pos, width=110):
+    """The words of the same clause before pos (cut at . ; : ! ? or a new line), at most `width` chars."""
+    seg = text[max(0, pos - width):pos]
+    seg = re.split(r'[.;:!?\n]|\s-\s|\s–\s|\s\|\s|,?\s+(?:but|however|although|while|yet)\s+', seg)[-1]
+    return seg
+
+
+def clause_after(text, pos, width=60):
+    """The words right after pos up to the next comma / period / 'and' (so '…, 50-amp at 30 sites' does not colour the amenity before it)."""
+    seg = text[pos:pos + width]
+    return re.split(r'[.;:!?,\n]|\s(?:and|but|with|plus)\s', seg)[0]
+
+
+def judge_mentions(text, rx, extra_pos=False):
+    """Read EVERY mention of one amenity: -> (True / False / 'some', match) or None when the page never mentions it.
+    A mention is negative when a negation word stands before it in the same clause ('no water, electricity or dump station',
+    'without hookups', 'electric hookups are not available': the 'not' may also follow within 3 words).
+    Any negative mention and no positive = False. Positive mentions only = True, or 'some' when the clause says only certain
+    sites have it (C-6: 'range from electric-only to full hookups', 'some sites have 50 amp'). Both kinds on one page = 'some'."""
+    pos = neg = None; some = False
+    for m in rx.finditer(text):
+        before = clause_before(text, m.start())
+        after = text[m.end():m.end() + 40]
+        if NEG.search(before) or NEG_AFTER.search(after):
+            neg = neg or m
+        else:
+            pos = pos or m
+            if SOME_W.search(before.split(',')[-1]) or SOME_W.search(clause_after(text, m.end())): some = True   # 'some' only from the amenity's own comma-clause
+    if pos is None and extra_pos and rx is ELECTRIC_W:
+        m = AMPS.search(text)
+        if m and not NEG.search(clause_before(text, m.start())):
+            pos = m
+            if SOME_W.search(clause_before(text, m.start()).split(',')[-1]) or SOME_W.search(clause_after(text, m.end())): some = True
+    if pos is None and neg is None: return None
+    if neg is not None and pos is None: return False, neg
+    if neg is not None and pos is not None: return 'some', pos
+    return ('some' if some else True), pos
 
 
 def facts_from_text(text, url):
@@ -176,40 +241,22 @@ def facts_from_text(text, url):
     if m: put('rv_max_ft', int(next(g for g in m.groups() if g)), m)
     amps = sorted({int(a) for tup in AMPS.findall(text) for a in tup if a})
     if amps: m = AMPS.search(text); put('hookups.amps', amps, m)
-    m = ELECTRIC.search(text)
-    if m or amps: put('hookups.electric', True, m or AMPS.search(text))   # a positive mention wins ('2 tent sites have no hookups' is a part)
+    # C-1 (chat 8, Oct 28): each amenity is judged mention by mention: a 'no / not / without' in the same clause before the word
+    # makes it False ('There is no water, electricity or dump station' negates every item in the list). A positive mention
+    # elsewhere on the page makes the value 'some' when the page also says it is only at certain sites (C-6), never True.
+    el = judge_mentions(text, ELECTRIC_W, extra_pos=bool(amps))
+    if el: put('hookups.electric', el[0], el[1])
+    for key, rx in (('hookups.water', WATER_HOOK), ('hookups.sewer', SEWER_W), ('dump_station', DUMP), ('showers', SHOWERS), ('drinking_water', DRINK)):
+        v = judge_mentions(text, rx)
+        if v: put(key, v[0], v[1])
+    fl, va = judge_mentions(text, FLUSH), judge_mentions(text, VAULT)
+    fl = fl if fl and fl[0] else None; va = va if va and va[0] else None
+    if fl and va: put('restrooms', 'flush + vault', fl[1])
+    elif fl: put('restrooms', 'flush', fl[1])
+    elif va: put('restrooms', 'vault', va[1])
     else:
-        m = NO_ELECTRIC.search(text)
-        if m: put('hookups.electric', False, m)
-    m = WATER_HOOK.search(text)
-    if m: put('hookups.water', True, m)
-    m = SEWER.search(text)
-    if m: put('hookups.sewer', True, m)
-    m = NO_DUMP.search(text)
-    if m: put('dump_station', False, m)
-    else:
-        m = DUMP.search(text)
-        if m: put('dump_station', True, m)
-    m = NO_SHOWERS.search(text)
-    if m: put('showers', False, m)
-    else:
-        m = SHOWERS.search(text)
-        if m: put('showers', True, m)
-    fl, va = FLUSH.search(text), VAULT.search(text)
-    if fl and va: put('restrooms', 'flush + vault', fl)
-    elif fl: put('restrooms', 'flush', fl)
-    elif va: put('restrooms', 'vault', va)
-    else:
-        m = NO_RESTROOM.search(text)
-        if m: put('restrooms', 'none', m)
-        else:
-            m = RESTROOM.search(text)
-            if m: put('restrooms', 'yes (kind not stated)', m)
-    m = NO_DRINK.search(text)
-    if m: put('drinking_water', False, m)
-    else:
-        m = DRINK.search(text)
-        if m: put('drinking_water', True, m)
+        rr = judge_mentions(text, RESTROOM)
+        if rr: put('restrooms', 'yes (kind not stated)' if rr[0] is True else 'some' if rr[0] == 'some' else 'none', rr[1])
     fees = []; seen = set(); first = None
     for m in FEE.finditer(text):
         t = ' '.join(m.group(0).split())
@@ -246,15 +293,10 @@ def facts_from_text(text, url):
     if m: put('rules.fires', ' '.join(m.group(1).split()), m)
     m = STAY.search(text) or STAY2.search(text)
     if m: put('rules.stay_limit', f'{m.group(1)} {(m.group(2) or "") if m.re is STAY else ""}{m.group(3) if m.re is STAY else "days"}'.replace('  ', ' ').strip(), m)
-    ph = []
-    for m in PHONE.finditer(text):
-        p = f'({m.group(1)}) {m.group(2)}-{m.group(3)}'
-        if p not in ph: ph.append((p, m))
-        if len(ph) >= 2: break
+    ph = phones_in(text)
     if ph:
-        # the office phone = the one nearest 'phone / call / office / information'; a toll-free number is usually the booking line
-        best = next(((p, m) for p, m in ph if re.search(r'phone|call|office|information|contact|ranger|visitor', text[max(0, m.start() - 60):m.start()], re.I) and not p.startswith(('(800)', '(888)', '(877)', '(866)'))), ph[0])
-        put('phone', best[0], best[1])
+        nums = [p for p, m in ph]
+        put('phone', nums if len(nums) > 1 else nums[0], ph[0][1], ' | '.join(line_at(text, m.start(), m.end(), 60) for p, m in ph[:3]))
     return F
 
 
@@ -283,11 +325,29 @@ def links_facts(links, url):
 GOV = re.compile(r'\.(gov|mil|gc\.ca)$|\.state\.[a-z]{2}\.us$|\.[a-z]{2}\.us$|\.gov\.[a-z]{2}$|\.(on|qc|nb|ns|pe|nl|mb|sk|ab|bc|yk|nt|nu)\.ca$', re.I)
 
 
-def official(url, area):
+PARK_HOSTS = None
+
+
+def park_hosts():
+    """C-5: the host of each park's OWN page on file (KPC-Links kpc-ky-data.json 'web', data/parkinfo-web.json 'web') counts as
+    official for that park: an agency's own site under a plain .com / .us name (landbetweenthelakes.us, breakspark.com)."""
+    global PARK_HOSTS
+    if PARK_HOSTS is None:
+        PARK_HOSTS = {}
+        for x in load(LINKS / 'kpc-ky-data.json', {}).get('parks') or []:
+            if x.get('c') and x.get('web'): PARK_HOSTS.setdefault(x['c'], set()).add(re.sub(r'^www\.', '', host_of(x['web'])))
+        for ref, v in ((load('data/parkinfo-web.json', {}) or load(LINKS / 'data/parkinfo-web.json', {})).get('parks') or {}).items():
+            if (v or {}).get('web'): PARK_HOSTS.setdefault(ref, set()).add(re.sub(r'^www\.', '', host_of(v['web'])))
+    return PARK_HOSTS
+
+
+def official(url, area, park=''):
     h = host_of(url)
     if not h: return False
     if GOV.search(h): return True
-    hosts = (SRC.get('states') or {}).get(area[3:], []) if area.startswith('US-') else (SRC.get('canada') or [])
+    hosts = list((SRC.get('states') or {}).get(area[3:], []) if area.startswith('US-') else (SRC.get('canada') or []))
+    hosts += [x['host'] if isinstance(x, dict) else x for x in (SRC.get('extra_official') or [])]
+    if park: hosts += list(park_hosts().get(park) or [])
     return any(h == x or h.endswith('.' + x) for x in hosts + (SRC.get('booking_hosts') or []))
 
 
@@ -495,7 +555,7 @@ def one_camp(area, r, state):
     else:
         u = r['page']
         if not u: rec['status'] = 'no official page on file'; STAT['no_page'] += 1
-        elif not official(u, area): rec['status'] = 'page not on an official host: ' + host_of(u); STAT['not_official'] += 1
+        elif not official(u, area, r['park']): rec['status'] = 'page not on an official host: ' + host_of(u); STAT['not_official'] += 1
         else:
             st, text, links = read_page(u)
             rec['status'] = st
@@ -504,7 +564,7 @@ def one_camp(area, r, state):
             elif st.startswith('HTTP 403'): STAT['needs_browser'] += 1
             elif st == 'robots.txt says no': STAT['robots'] += 1
             elif st == 'host resting': STAT['resting'] += 1
-        if not rec['booking']['url'] and r['reserve'] and official(r['reserve'], area):
+        if not rec['booking']['url'] and r['reserve'] and official(r['reserve'], area, r['park']):
             rec['booking'] = {'url': r['reserve'], 'how': 'online: ' + host_of(r['reserve'])}
             rec['facts_src']['booking.url'] = {'url': r['reserve'], 'date': TODAY, 'line': f"booking link from our {r['src']} row (official system {host_of(r['reserve'])})"}
     # the status of a federal or state read never stops the elevation or the coverage note
@@ -532,7 +592,9 @@ def ky_check(D):
         cmp('dump_station', rec.get('dump_station'), k['dump'])
         cmp('showers', rec.get('showers'), k['showers'])
         if k['phone']:
-            m = PHONE.search(k['phone']); cmp('phone', rec.get('phone'), f'({m.group(1)}) {m.group(2)}-{m.group(3)}' if m else k['phone'])
+            m = PHONE.search(k['phone']); kp = f'({m.group(1)}) {m.group(2)}-{m.group(3)}' if m else k['phone']
+            bp = rec.get('phone'); bp = bp if not isinstance(bp, list) else (kp if kp in bp else bp)   # C-3: a list agrees when it holds the key's number
+            cmp('phone', bp, kp)
         rows.append(row)
     agree = sum(1 for r in rows for v in (r.get('fields') or {}).values() if v.startswith('agree'))
     differ = sum(1 for r in rows for v in (r.get('fields') or {}).values() if v.startswith('DIFFER'))
@@ -541,6 +603,52 @@ def ky_check(D):
 
 
 # ---- areas
+def norm_name(n):
+    n = re.sub(r'\(.*?\)', ' ', str(n or '').lower()); n = re.sub(r'[^a-z0-9 ]', ' ', n)
+    n = re.sub(r'\b(campground|camp|recreation area|rec area|the|nat|national|forest|for|park|state|dbnf|daniel boone)\b', ' ', n)
+    return ' '.join(n.split())
+
+
+def dist_m(a, b):
+    import math
+    if None in (a[0], a[1], b[0], b[1]): return 1e9
+    kx = 111320 * math.cos(math.radians((a[0] + b[0]) / 2)); ky = 110540
+    return math.hypot((a[1] - b[1]) * kx, (a[0] - b[0]) * ky)
+
+
+def merge_duplicates(D):
+    """C-4 (chat 8): the same campground under two ids (Twin Knobs / Zilpo: hand-checked list + RIDB, or two park refs) is ONE
+    record: same normalized name and points within 300 m. Kept: the RIDB point for a federal campground, the state agency's point
+    otherwise; the other ids go in 'ids'; facts the kept record lacks are filled from the other (with their source lines)."""
+    camps = D['camps']; ids = sorted(camps)
+    gone = set()
+    for i, a in enumerate(ids):
+        if a in gone: continue
+        for b in ids[i + 1:]:
+            if b in gone: continue
+            A, B = camps[a], camps[b]
+            if norm_name(A['name']) != norm_name(B['name']) or not norm_name(A['name']): continue
+            if dist_m((A['lat'], A['lon']), (B['lat'], B['lon'])) > 300: continue
+            keep, drop = (a, b) if (A.get('list') == 'campfed') >= (B.get('list') == 'campfed') else (b, a)
+            K, X = camps[keep], camps[drop]
+            K.setdefault('ids', [keep]); K['ids'] = sorted(set(K['ids'] + X.get('ids', [drop]) + [drop]))
+            if X.get('park') and X['park'] not in (K.get('park') or ''): K['park'] = (K['park'] + ' ' + X['park']).strip()
+            for k, src in (X.get('facts_src') or {}).items():
+                if k in (K.get('facts_src') or {}): continue
+                parts = k.split('.'); d = X
+                try:
+                    for p2 in parts: d = d[p2]
+                except Exception: continue  # noqa: BLE001
+                t = K
+                for p2 in parts[:-1]: t = t.setdefault(p2, {})
+                t[parts[-1]] = d; K['facts_src'][k] = src
+            if K.get('status') != 'ok' and X.get('status') == 'ok': K['status'] = 'ok'; K['official_page'] = K.get('official_page') or X.get('official_page')
+            if (K.get('elevation_ft') or {}).get('value') is None and (X.get('elevation_ft') or {}).get('value') is not None: K['elevation_ft'] = X['elevation_ft']
+            gone.add(drop)
+    for d in gone: camps.pop(d, None)
+    D['merged'] = len(gone)
+
+
 def counts(D):
     c = {'camps': len(D['camps']), 'ok': 0, 'needs_key': 0, 'needs_browser': 0, 'robots': 0, 'resting': 0, 'no_page': 0, 'not_official': 0, 'other': 0, 'with_sites': 0, 'with_booking': 0, 'with_elevation': 0}
     for r in D['camps'].values():
@@ -571,6 +679,7 @@ def run_area(area, state):
         except Exception as e:  # noqa: BLE001
             STAT['errors'] += 1; rec = blank_record(rows[cid]); rec['status'] = 'bot error: ' + str(e)[:80]; D['camps'][cid] = rec
         done += 1
+    merge_duplicates(D)
     D['read'] = TODAY; D['counts'] = counts(D)
     save(f, D)
     if area == 'US-KY' and done: state['ky_check'] = ky_check(D)
@@ -630,8 +739,10 @@ def review(state):
     for a in QUEUE:
         D = load(OUT / f'{a}.json', None)
         if not D or not D['camps']: continue
-        L += ['', f'## {a}: 12 samples (the records with the most facts)', '']
-        best = sorted(D['camps'].items(), key=lambda x: -len(x[1].get('facts_src') or {}))[:12]
+        L += ['', f'## {a}: 12 random samples (records with facts; seed = the date)', '']
+        import random
+        pool = [x for x in D['camps'].items() if x[1].get('facts_src')]
+        best = random.Random(TODAY + a).sample(pool, min(12, len(pool)))
         for cid, r in best:
             el = (r.get('elevation_ft') or {}).get('value')
             L.append(f"- **{r['name']}** ({cid}, {r.get('agency') or 'state'}, status {r.get('status')}, {len(r.get('facts_src') or {})} facts" + (f', {el} ft' if el is not None else '') + f") · [{host_of(r.get('official_page') or '')}]({r.get('official_page') or ''})")
@@ -654,6 +765,55 @@ SAMPLES = [
 ]
 
 
+# ---- C-1 negation test: 15 'has' + 15 'has no' sentences; every one must come out right (run by --negtest and by --selftest)
+NEGTEST = [
+    # (sentence, field, wanted value)
+    ('The campground has electric hookups at every site.', 'hookups.electric', True),
+    ('Water and electric at all sites.', 'hookups.electric', True),
+    ('Water and electric at all sites.', 'hookups.water', True),
+    ('A dump station is located near the entrance.', 'dump_station', True),
+    ('Hot showers and flush toilets are available.', 'showers', True),
+    ('Hot showers and flush toilets are available.', 'restrooms', 'flush'),
+    ('Drinking water is available from spigots throughout the loop.', 'drinking_water', True),
+    ('Full hookup sites with water, electric and sewer.', 'hookups.sewer', True),
+    ('Some sites have 50 amp service.', 'hookups.electric', 'some'),
+    ('RV sites range from electric-only to full hookups.', 'hookups.sewer', 'some'),
+    ('Electric hookups are available at 24 of the 48 sites.', 'hookups.electric', 'some'),
+    ('Vault toilets are provided.', 'restrooms', 'vault'),
+    ('The bathhouse has showers and a laundry.', 'showers', True),
+    ('Potable water and a sanitary dump station are available in season.', 'dump_station', True),
+    ('Each site has a 30 amp electrical pedestal.', 'hookups.electric', True),
+    ('There is no water, electricity or dump station available.', 'hookups.electric', False),
+    ('There is no water, electricity or dump station available.', 'dump_station', False),
+    ('There is no water, electricity or dump station available.', 'hookups.water', None),
+    ('No hookups.', 'hookups.electric', False),
+    ('No dump station.', 'dump_station', False),
+    ('Electric hookups are not available.', 'hookups.electric', False),
+    ('This primitive campground has no showers.', 'showers', False),
+    ('Sites are without electricity.', 'hookups.electric', False),
+    ('Drinking water is not available; bring your own.', 'drinking_water', False),
+    ('The campground does not have a dump station.', 'dump_station', False),
+    ('No restrooms or drinking water.', 'restrooms', 'none'),
+    ('No restrooms or drinking water.', 'drinking_water', False),
+    ('Sewer hookups are not offered.', 'hookups.sewer', False),
+    ('There are no showers, but vault toilets are provided.', 'showers', False),
+    ('There are no showers, but vault toilets are provided.', 'restrooms', 'vault'),
+    ('Showers are unavailable in winter. Electricity is not provided.', 'hookups.electric', False),
+]
+
+
+def negtest(quiet=False):
+    bad = 0
+    for sent, field, want in NEGTEST:
+        F = facts_from_text(sent, 'sample://neg')
+        got = (F.get(field) or {}).get('value') if field in F else None
+        ok = got == want
+        bad += 0 if ok else 1
+        if not quiet or not ok: print(f"   {'ok  ' if ok else 'MISS'} {field:17s} want {want!r:8} got {got!r:8} <- {sent}")
+    print(f'NEGTEST: {len(NEGTEST) - bad}/{len(NEGTEST)} right -> {"PASS" if bad == 0 else "FAIL"}')
+    return bad == 0
+
+
 def selftest():
     print('CAMPGROUND INFO BOT selftest (regexes only, no network)')
     bad = 0
@@ -672,7 +832,8 @@ def selftest():
     for k, f in L.items(): print(f'   links: {k} = {f["value"]}')
     if not L.get('booking.url') or not L.get('map.url'): bad += 1; print('   MISS booking or map link')
     print(f'\nKY-style check: {"PASS" if bad == 0 else f"FAIL ({bad} misses)"}')
-    return bad == 0
+    neg_ok = negtest(quiet=True)
+    return bad == 0 and neg_ok
 
 
 def main():
@@ -700,6 +861,8 @@ def main():
 if __name__ == '__main__':
     if '--selftest' in sys.argv:
         sys.exit(0 if selftest() else 1)
+    if '--negtest' in sys.argv:
+        sys.exit(0 if negtest() else 1)
     try: main()
     except Exception as e:  # noqa: BLE001
         import traceback; traceback.print_exc()
