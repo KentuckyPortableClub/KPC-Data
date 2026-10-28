@@ -51,7 +51,9 @@ REFRESH_DAYS = int(os.environ.get('REFRESH_DAYS') or 30)
 RIDB_KEY = (os.environ.get('RIDB_API_KEY') or '').strip()
 FCC_USER = (os.environ.get('FCC_BDC_USERNAME') or '').strip(); FCC_TOKEN = (os.environ.get('FCC_BDC_TOKEN') or '').strip()
 TODAY = time.strftime('%Y-%m-%d')
-VER = 7   # 7 = round 6: BROWSER PASS (Playwright) for 'needs browser' records, fees only from this campground's section, shelter links
+VER = 8   # 8 = round 7 (HQ + chat 11, Oct 28 4:20 PM): fee lines must be fee sentences (never '$5 Million Renovation'), the
+          # sub-page must be THIS campground's, cell = null per record (one area status), FACT gate against the hand key, 'left' fix.
+          # 7 = round 6; 7 = round 6: BROWSER PASS (Playwright) for 'needs browser' records, fees only from this campground's section, shelter links
           # are not camping booking, merge waiting-on-key twins, re-read when the RIDB key arrives.
           # 6 = round 5; 6 = round 5: gate rows blocked by a missing secret / a browser are WARN, PASS = every READ row right; browser hosts listed once.
           # 5 = round 4; 5 = round 4: facts only from THIS campground's section of a shared page, KEY_WRONG table, 'some' = agree, WARN rows.
@@ -112,7 +114,7 @@ MON = r'(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\.?'
 DATE = r'(?:early |mid-? ?|late )?' + MON + r'(?:\s+\d{1,2})?(?:,?\s+\d{4})?'
 TIME = r'\d{1,2}(?::\d\d)?\s*(?:a\.?m\.?|p\.?m\.?|noon|midnight)?'
 SITE = re.compile(r'(\d{1,4})[- ]+((?:[\w/-]+,?[- ]+){0,4}?)(campsites?|camp sites?|sites?|cabins?|cottages?|yurts?|lean-tos?|shelters?|pads?|spaces?)\b', re.I)
-SITE_TOTAL2 = re.compile(r'(?:campground|park|area)\s+(?:has|offers|features|with|provides|contains|includes)\s+(?:a total of\s+)?(\d{1,4})\s+(?:[\w-]+\s+){0,2}?(?:campsites?|sites?)|(\d{1,4})[- ]site campground|(\d{1,4})\s+sites? for (?:tents?|rvs?|campers)|total of (\d{1,4}) (?:campsites?|sites?)', re.I)
+SITE_TOTAL2 = re.compile(r'(?:campground|park|area|\bit|which|that|and|also)\s+(?:has|offers|features|with|provides|contains|includes|boasts)\s+(?:a total of\s+)?(\d{1,4})\s+(?:[\w-]+\s+){0,4}?(?:campsites?|sites?)|(\d{1,4})[- ]site campground|(\d{1,4})\s+sites? for (?:tents?|rvs?|campers)|total of (\d{1,4}) (?:campsites?|sites?)', re.I)
 PARTIAL_BEFORE = re.compile(r'\b(at|of|for|in|on|only|including|includes|and|plus|with|to)\s*$', re.I)
 TENT_W = re.compile(r'\btent', re.I); RV_W = re.compile(r'\brv\b|full[- ]hook|pull[- ]thr|back[- ]in|trailer|motorhome', re.I)
 CABIN_W = re.compile(r'cabin|cottage|yurt|lean-to|shelter', re.I); GROUP_W = re.compile(r'\bgroup', re.I)
@@ -269,6 +271,18 @@ def judge_mentions(text, rx, extra_pos=False):
     return ('some' if some else True), pos
 
 
+NOT_FEE_W = re.compile(r'million|billion|renovation|grant|project|funding|budget|donat|raised|investment|improvement|construction|award|contract|appropriat|\$\s?\d[\d,.]*\s*(?:m|k|mil)\b', re.I)
+FEE_W = re.compile(r'fee|rate|night|nightly|per |/\s*(?:night|day|site)|cost|price|charge|\bday\b|weekly|week|season pass|deposit|camping', re.I)
+
+
+def fee_line_ok(text, m):
+    """Round 7: a dollar amount is a FEE only in a sentence that talks about a fee / rate / night / cost, and never in a sentence
+    about millions, a renovation, a grant or a project (news headlines on a campground's site)."""
+    sent = sentence_of(text, m.start(), m.end())
+    if NOT_FEE_W.search(sent) or NOT_FEE_W.search(text[m.end():m.end() + 12]): return False
+    return bool(FEE_W.search(sent))
+
+
 def facts_from_text(text, url, name=''):
     """Every campground fact the regexes can read from one page's visible text. Unknown = not present (never guessed)."""
     F = {}
@@ -318,6 +332,7 @@ def facts_from_text(text, url, name=''):
     for m in FEE.finditer(text):
         t = ' '.join(m.group(0).split())
         if t in seen: continue
+        if not fee_line_ok(text, m): continue   # round 7: '$5 Million Renovation' (a headline) is never a fee
         # round 6 rule 2: on a page that lists several campgrounds a fee line counts only when it names THIS campground
         if many:
             # only the comma-clause that holds the fee may name this campground ('$12 Cravens Bay, $10 Fenton' -> Fenton's clause only)
@@ -325,7 +340,7 @@ def facts_from_text(text, url, name=''):
             if not any(w in norm_name(cl).split() for w in key_words(name)): continue
         seen.add(t); first = first or m
         # the published text: the amount plus the words that follow it (up to the end of the phrase)
-        tail = re.split(r'[.;|\n]|,\s+(?:and\s+)?\$', text[m.end():m.end() + 50])[0]
+        tail = re.split(r'[.;|\n]|,\s+(?:and\s+)?\$|\s\$|\s(?:\d{2,3} amp|basic|type of)', text[m.end():m.end() + 50], flags=re.I)[0]
         fees.append(' '.join((m.group(0) + tail).split()))
         if len(fees) >= 5: break
     if fees: F['fees'] = fact(' | '.join(fees)[:300], url, line_at(text, first.start(), first.end()))
@@ -615,7 +630,9 @@ def ky_key():
             s = c.get('sites'); n = s if isinstance(s, int) else (int(re.match(r'\s*(\d+)', str(s)).group(1)) if re.match(r'\s*\d+', str(s or '')) else None)
             hk = str(c.get('hookups') or ''); ex = str(c.get('extras') or '')
             K[c.get('id')] = {'name': c.get('name'), 'sites': n, 'amps': sorted({int(a) for tup in AMPS.findall(hk) for a in tup if a}), 'dump': True if re.search(r'dump', ex, re.I) else None,
-                              'showers': True if re.search(r'shower|bath ?house', ex, re.I) else None, 'phone': c.get('phone'), 'checked': c.get('checked'), 'electric': True if re.search(r'electric|amp|hookup', hk, re.I) else (False if re.search(r'primitive only|no hookups', hk, re.I) else None)}
+                              'showers': True if re.search(r'shower|bath ?house', ex, re.I) else None, 'phone': c.get('phone'), 'checked': c.get('checked'), 'electric': (False if re.search(r'primitive only|no hookups|no electric', hk, re.I) else True if re.search(r'electric|amp|hookup', hk, re.I) else None),
+                              'water': (False if re.search(r'no hookups|no water|primitive only', hk, re.I) else True if re.search(r'water|full[- ]?hook|full service', hk, re.I) else None),
+                              'sewer': (False if re.search(r'no sewer|no hookups|primitive only', hk, re.I) else True if re.search(r'sewer|full[- ]?hook|full service', hk, re.I) else None)}
     return K
 
 
@@ -627,7 +644,7 @@ def blank_record(r):
             'hookups': {'electric': None, 'amps': None, 'water': None, 'sewer': None}, 'dump_station': None, 'showers': None, 'restrooms': None, 'drinking_water': None,
             'fees': None, 'reservable': None, 'season': None, 'checkin': None, 'checkout': None,
             'rules': {'pets': None, 'generators': None, 'quiet_hours': None, 'fires': None, 'stay_limit': None}, 'phone': None, 'phone_hint': None, 'features': None,
-            'elevation_ft': {'value': None, 'src': None}, 'cell': {'status': 'needs FCC token', 'carriers': None, 'src': None},
+            'elevation_ft': {'value': None, 'src': None}, 'cell': None,
             'facts_src': {}, 'status': 'not read', 'checked': TODAY, 'ver': VER, 'list': r['src']}
 
 
@@ -667,6 +684,20 @@ def own_section(text, name):
     return '\n'.join(lines[start:end])
 
 
+def other_camp_page(link, text, name):
+    """Round 7: True when a link is ANOTHER campground's own page (its url slug or text names a campground whose distinctive
+    words are not this one's: Energy Lake -> /visit/hillman-ferry-campground/). Such a page gives this record nothing."""
+    slug = urllib.parse.urlparse(link).path.lower().replace('-', ' ').replace('_', ' ')
+    blob = slug + ' ' + (text or '').lower()
+    if not re.search(r'campground|camp\b|horse camp', blob): return False
+    return not any(w in blob.split() or w in slug for w in key_words(name))
+
+
+def names_this(link, name):
+    slug = urllib.parse.urlparse(link).path.lower().replace('-', ' ')
+    return any(w in slug for w in key_words(name))
+
+
 def names_other_camps(text, name):
     """True when the page names 2+ campgrounds other than this one (a list page)."""
     others = {m.group(0).lower() for m in re.finditer(r'\b[A-Z][\w\'-]+(?:\s+[A-Z][\w\'-]+){0,3}\s+(?:Campground|Horse Camp)\b', text) if norm_name(m.group(0)) != norm_name(name)}
@@ -686,6 +717,7 @@ def one_camp(area, r, state):
         u = r['page']
         if not u: rec['status'] = 'no official page on file'; STAT['no_page'] += 1
         elif not official(u, area, r['park']): rec['status'] = 'page not on an official host: ' + host_of(u); STAT['not_official'] += 1
+        elif other_camp_page(u, '', r['name']) and r['src'] != 'kpc-campgrounds.json' and not names_this(u, r['name']): rec['status'] = "the page on file is another campground's page: nothing read"; STAT['no_page'] += 1
         else:
             st, text, links = read_page(u)
             rec['status'] = st
@@ -700,7 +732,8 @@ def one_camp(area, r, state):
                 # Round 4: the sub-page is read only in this campground's section when it lists several (the forest 'camping' page)
                 if 'sites.total' not in F and not late():
                     sub = next((lu for lu, lt in links if host_of(lu) == host_of(u) and re.search(r'campground|camping|campsite', (lt or '') + ' ' + lu, re.I)
-                                and not re.search(r'reserv|cancel|policy|lodg|cottage|\.pdf', (lt or '') + ' ' + lu, re.I) and lu.split('#')[0] != u.split('#')[0]), None)
+                                and not re.search(r'reserv|cancel|policy|lodg|cottage|\.pdf|news|blog|press|article|story|renovat|undergoing|announce|/20\d\d/', (lt or '') + ' ' + lu, re.I)
+                                and lu.split('#')[0] != u.split('#')[0] and not other_camp_page(lu, lt, r['name'])), None)
                     if sub:
                         st2, text2, links2 = read_page(sub)
                         rec['campground_page'] = {'url': sub, 'status': st2}
@@ -725,8 +758,9 @@ def one_camp(area, r, state):
             rec['facts_src'][key + '.url'] = {'url': r['reserve'], 'date': TODAY, 'line': f"booking link from our {r['src']} row (official system {host_of(r['reserve'])})"}
     # the status of a federal or state read never stops the elevation or the coverage note
     if not late(): rec['elevation_ft'] = elevation(r['lat'], r['lon'], canada)
-    rec['cell'] = fcc_files(area, state) if not canada else {'status': 'FCC map covers the US only; Canada = ISED coverage maps (not built)', 'carriers': None, 'src': None}
-    rec['cell'] = {k: v for k, v in rec['cell'].items() if k != 'files'} | ({'files': rec['cell']['files'][:3]} if rec['cell'].get('files') else {})
+    # round 7: coverage can't be computed per point yet, so cell = null on the record and ONE status for the area (D['cell_status'])
+    state.setdefault('cell_status', {})[area] = (fcc_files(area, state) if not canada else {'status': 'FCC map covers the US only; Canada = ISED coverage maps (not built)'}).get('status')
+    rec['cell'] = None
     return rec
 
 
@@ -755,11 +789,14 @@ def ky_check(D):
                 key_wrong.append({'id': cid, 'name': k['name'], 'field': name, 'bot': ours, 'key': theirs, 'why': KEY_WRONG[(cid, name)]})
                 row['fields'][name] = f'KEY WRONG (bot {ours}, key {theirs}): left out'; return
             if ours is None: row['fields'][name] = f'bot blank (key: {theirs})'
-            elif ours == theirs or (ours == 'some' and theirs is True): row['fields'][name] = f'agree ({theirs})' + (' [bot: some]' if ours == 'some' else '')
+            elif ours == theirs or (ours == 'some' and theirs is True) or (name == 'sites' and isinstance(ours, int) and isinstance(theirs, int) and abs(ours - theirs) <= 0.1 * theirs):
+                row['fields'][name] = f'agree ({theirs})' + (' [bot: some]' if ours == 'some' else f' [bot: {ours}]' if ours != theirs else '')
             else: row['fields'][name] = f'DIFFER bot {ours} vs key {theirs}'
         cmp('sites', rec['sites'].get('total'), k['sites'])
         cmp('amps', rec['hookups'].get('amps'), k['amps'] or None)
         cmp('electric', rec['hookups'].get('electric'), k['electric'])
+        cmp('water', rec['hookups'].get('water'), k['water'])
+        cmp('sewer', rec['hookups'].get('sewer'), k['sewer'])
         cmp('dump_station', rec.get('dump_station'), k['dump'])
         cmp('showers', rec.get('showers'), k['showers'])
         if k['phone']:
@@ -771,7 +808,16 @@ def ky_check(D):
     differ = sum(1 for r in rows for v in (r.get('fields') or {}).values() if v.startswith('DIFFER'))
     blank = sum(1 for r in rows for v in (r.get('fields') or {}).values() if v.startswith('bot blank'))
     out = {'when': TODAY, 'campgrounds': len(rows), 'agree': agree, 'differ': differ, 'bot_blank': blank, 'rows': rows, 'key_wrong': key_wrong}
-    out['gate'] = ky_gate(D, agree, differ)
+    # round 7 (HQ): the FACT tally the gate stands on: sites, electric, water, sewer, dump station, showers (amps + phone listed only)
+    FACT_F = ('sites', 'electric', 'water', 'sewer', 'dump_station', 'showers')
+    tally = {f: {'right': 0, 'wrong': 0} for f in FACT_F}
+    for r in rows:
+        for f, v in (r.get('fields') or {}).items():
+            if f in tally and v.startswith('agree'): tally[f]['right'] += 1
+            elif f in tally and v.startswith('DIFFER'): tally[f]['wrong'] += 1
+    out['fact_tally'] = tally
+    out['provenance'] = provenance_faults(D)
+    out['gate'] = ky_gate(D, agree, differ, tally, out['provenance'])
     return out
 
 
@@ -797,7 +843,24 @@ GATE_ROWS = [
 ]
 
 
-def ky_gate(D, agree, differ):
+def provenance_faults(D):
+    """Round 7 (HQ): every fee and site count must come from THIS campground's page (its official page, or a sub-page whose url names
+    it) and a fee from a fee sentence. -> [{id, name, field, url, line, why}]"""
+    out = []
+    for cid, r in (D.get('camps') or {}).items():
+        own = (r.get('official_page') or '').split('#')[0].rstrip('/')
+        for k, src in (r.get('facts_src') or {}).items():
+            if not (k == 'fees' or k.startswith('sites.')): continue
+            u = (src.get('url') or '').split('#')[0].rstrip('/')
+            why = None
+            if u and u != own and not u.startswith(RIDB) and other_camp_page(u, '', r.get('name')): why = "read from another campground's page"
+            elif u and re.search(r'news|blog|press|renovat|undergoing|/20\d\d/', u, re.I): why = 'read from a news / blog page'
+            elif k == 'fees' and NOT_FEE_W.search(src.get('line') or ''): why = 'fee line is a headline / project sentence, not a fee'
+            if why: out.append({'id': cid, 'name': r.get('name'), 'field': k, 'url': src.get('url'), 'line': (src.get('line') or '')[:140], 'why': why})
+    return out
+
+
+def ky_gate(D, agree, differ, tally=None, prov=None):
     """GATE (rounds 2 + 3): PASS = the 16 known answers hold AND at least 70% of the hand-key fields the bot filled agree.
     Printed as 'GATE=PASS' / 'GATE=FAIL' for the workshop driver; saved in state['test'] like the other bots."""
     rows = []
@@ -834,9 +897,16 @@ def ky_gate(D, agree, differ):
     pct = round(100 * agree / filled) if filled else 0
     read = [r for r in rows if r['ok'] in (True, False)]; right = sum(1 for r in read if r['ok'] is True)
     secret = sum(1 for r in rows if r['ok'] == 'secret'); warn = sum(1 for r in rows if r['ok'] == 'warn')
-    res = 'PASS' if read and right == len(read) and pct >= 70 and filled else 'FAIL'
-    why = f"known answers: {right} right of {len(read)} read, {secret} waiting on the secret, {warn} warn · hand-key agreement {agree}/{filled} = {pct}% (need 70%; 'some' = agree; KEY_WRONG rows left out)"
-    return {'result': res, 'why': why, 'when': TODAY, 'rows': rows, 'pct': pct}
+    # round 7 (HQ): the gate stands on FACTS: >= 80% of the filled hand-key facts right (at least 10 filled), no fee / site value
+    # from another campground's page or a non-fee sentence, and every READ known-answer row right. 'A row was read' never passes.
+    tally = tally or {}; fr = sum(v['right'] for v in tally.values()); fw = sum(v['wrong'] for v in tally.values()); ff = fr + fw
+    fpct = round(100 * fr / ff) if ff else 0; prov = prov or []
+    res = 'PASS' if ff >= 10 and fpct >= 80 and not prov and right == len(read) else 'FAIL'
+    per = ', '.join(f"{f} {v['right']}/{v['right'] + v['wrong']}" for f, v in tally.items() if v['right'] + v['wrong'])
+    why = (f"FACTS vs hand key: {fr}/{ff} right = {fpct}% (need 80%, at least 10 filled; {per or 'none filled'}) · "
+           f"{len(prov)} fee/site values from the wrong page or sentence (need 0) · known answers {right} right of {len(read)} read, {secret} waiting on the secret, {warn} warn · "
+           f"all-field agreement {agree}/{filled} = {pct}% ('some' = agree; KEY_WRONG left out)")
+    return {'result': res, 'why': why, 'when': TODAY, 'rows': rows, 'pct': pct, 'fact_pct': fpct, 'provenance': prov[:40]}
 
 
 # ---- areas
@@ -897,12 +967,19 @@ def merge_duplicates(D):
     D['merged'] = len(gone)
 
 
+def has_facts(r):
+    """Round 7: a record 'has facts' only with a campground fact (sites, hookups, dump, showers, restrooms, water, fees, season,
+    rules); an elevation, a booking link or a map link alone is not 'facts'."""
+    return any(not k.startswith(('booking', 'lodging_booking', 'map', 'phone_hint', 'features')) for k in (r.get('facts_src') or {}))
+
+
 def counts(D):
     c = {'camps': len(D['camps']), 'ok': 0, 'needs_key': 0, 'needs_browser': 0, 'robots': 0, 'resting': 0, 'no_page': 0, 'not_official': 0, 'other': 0, 'with_sites': 0, 'with_booking': 0, 'with_elevation': 0}
     for r in D['camps'].values():
         s = r.get('status') or ''
         c['ok' if s.startswith('ok') and 'needs browser' not in s and 'even in a browser' not in s else 'needs_key' if 'RIDB' in s else 'needs_browser' if ('403' in s or 'needs browser' in s) else 'robots' if 'robots' in s else 'resting' if 'resting' in s else 'no_page' if 'no official page' in s else 'not_official' if 'not on an official' in s else 'other'] += 1
         if (r.get('sites') or {}).get('total') is not None: c['with_sites'] += 1
+        if has_facts(r): c['with_facts'] = c.get('with_facts', 0) + 1
         if (r.get('booking') or {}).get('url'): c['with_booking'] += 1
         if (r.get('elevation_ft') or {}).get('value') is not None: c['with_elevation'] += 1
     return c
@@ -983,13 +1060,17 @@ def run_area(area, state):
     except Exception as e:  # noqa: BLE001
         STAT['errors'] += 1; notice(f'{area}: browser pass stopped: {str(e)[:100]}')
     merge_duplicates(D)
+    D['cell_status'] = (state.get('cell_status') or {}).get(area) or 'needs FCC token'
+    for rr in D['camps'].values():
+        if isinstance(rr.get('cell'), dict): rr['cell'] = None   # old per-record blocks go
     D['read'] = TODAY; D['counts'] = counts(D)
     save(f, D)
     if area == 'US-KY' and done:
         state['ky_check'] = ky_check(D)
         g = state['ky_check']['gate']; state['test'] = {'result': g['result'], 'why': g['why'], 'when': g['when']}
         notice(f"KENTUCKY GATE {g['result']}: {g['why']}"); print('GATE=' + g['result'], flush=True)
-    left = sum(1 for i in rows if i not in D['camps'])
+    merged = {i for r in D['camps'].values() for i in (r.get('ids') or [])}
+    left = sum(1 for i in rows if i not in D['camps'] and i not in merged)   # round 7: a merged id is not 'left'
     state['areas'][area] = {'status': 'done' if left == 0 else 'partial', 'camps': len(rows), 'checked': len(D['camps']), 'left': left, 'updated': TODAY, 'counts': D['counts']}
     notice(f"{area}: {done} campgrounds read this chunk ({fresh} fresh, {left} left) · {D['counts']}")
 
@@ -1021,6 +1102,8 @@ def review(state):
     if not (FCC_USER and FCC_TOKEN): notes.append('FCC_BDC_USERNAME + FCC_BDC_TOKEN are not set: cell coverage stays blank with status "needs FCC token". Free account at broadbandmap.fcc.gov; the public data API gives per-state bulk coverage files (step 2, point lookup, is not built yet).')
     ca = [a for a in QUEUE if a.startswith('CA-') and (state['areas'].get(a) or {}).get('note')]
     if ca: notes.append('Canada: no campground rows exist in KPC-Data yet (no campfed / campstate file for CA-xx; parkinfo/CA.json lists activities only), so the Canadian areas are marked done with nothing read. Parks Canada camping needs its own list first.')
+    cs = state.get('cell_status') or {}
+    if cs: notes.append('Cell coverage (one status per area; cell = null on every record until the point lookup exists): ' + '; '.join(f'{a} {v}' for a, v in list(cs.items())[:8]))
     if notes: L += ['', '## Needs a secret / not built yet', ''] + [f'- {n}' for n in notes]
     hosts = {}; browser_pass = {}
     for a in QUEUE:
@@ -1045,6 +1128,8 @@ def review(state):
             L += [f"**GATE={g['result']}** · {g['why']}", '']
             for r in g['rows']: L.append(f"- {'ok' if r['ok'] is True else 'WAITING ON SECRET' if r['ok'] == 'secret' else 'WARN' if r['ok'] == 'warn' else 'MISS'}: {r['why']} · got {r['got']}")
             L.append('')
+        if (g or {}).get('provenance'):
+            L += ['**Fee / site values from the wrong page or sentence (must be 0):**', ''] + [f"- {x['name']} · {x['field']} · {x['why']} · {x['url']} · “{x['line']}”" for x in g['provenance']] + ['']
         if k.get('key_wrong'):
             L += ['**KEY_WRONG (hand-key rows the checkers found wrong; left out of the count; Brandon fixes the key):**', '', '| campground | field | bot | key | why |', '|---|---|---|---|---|']
             for w in k['key_wrong']: L.append(f"| {w['name']} | {w['field']} | {w['bot']} | {w['key']} | {w['why']} |")
@@ -1060,7 +1145,7 @@ def review(state):
         if not D or not D['camps']: continue
         L += ['', f'## {a}: 12 random samples (records with facts; seed = the date)', '']
         import random
-        pool = [x for x in D['camps'].items() if x[1].get('facts_src')]
+        pool = [x for x in D['camps'].items() if has_facts(x[1])]
         best = random.Random(TODAY + a).sample(pool, min(12, len(pool)))
         for cid, r in best:
             el = (r.get('elevation_ft') or {}).get('value')

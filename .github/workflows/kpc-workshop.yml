@@ -37,7 +37,7 @@ permissions:
   contents: write
   actions: write
 concurrency:
-  group: kpc-workshop
+  group: kpc-workshop-${{ inputs.bots || 'weekly' }}   # Oct 28: one queue per bot set, so a Kentucky test of one bot is not cancelled by another bot's long-run chain (they read different areas)
   cancel-in-progress: false
 jobs:
   workshop:
