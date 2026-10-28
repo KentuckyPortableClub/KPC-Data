@@ -233,6 +233,9 @@ jobs:
           set +e
           rm -f data/fers/.since-*
           for f in data/fers/*.json; do [ -f "$f" ] && [ $(stat -c %s "$f") -gt 20000000 ] && gzip -9nf "$f"; done
+          # Oct 28 (HQ storage): the missing check's long lists (rewritten every run) are kept gzipped when over 1 MB
+          for f in data/fers/expected-*.json; do [ -f "$f" ] && [ $(stat -c %s "$f") -gt 1000000 ] && gzip -9nf "$f"; done
+          for f in data/fers/expected-$RUN_TAG.json.gz; do [ -f "$f" ] && mkdir -p kpcdata/data/fers && ! cmp -s "$f" "kpcdata/$f" && cp "$f" kpcdata/data/fers/; done
           mkdir -p kpcdata/data/fers
           # A6: only this area's files go back: own states, the tag's files, POTA pairs, known answers (ky)
           for st in $STATES; do for f in data/fers/$st.json data/fers/$st.json.gz data/fers/pota-pairs-$st.json; do [ -f "$f" ] && ! cmp -s "$f" "kpcdata/$f" && cp "$f" kpcdata/data/fers/; done; done
