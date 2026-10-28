@@ -44,7 +44,7 @@ REFRESH_DAYS = int(os.environ.get('REFRESH_DAYS') or 7)
 TOL = 0.15
 PDF_FIRST = 400_000
 TODAY = time.strftime('%Y-%m-%d')
-VER = 1
+VER = 2   # Oct 28 ~3:30 AM: about-page follow, other-park sentences, multi-state note
 QUEUE = ['US-KY',
          'US-TN', 'US-NC', 'US-VA', 'US-WV', 'US-GA', 'US-AL', 'US-SC', 'US-FL', 'US-MS',
          'US-IN', 'US-IL', 'US-MO', 'US-WI', 'US-MN', 'US-IA', 'US-ND', 'US-SD',
@@ -54,6 +54,7 @@ QUEUE = ['US-KY',
          'US-CA', 'US-OR', 'US-WA', 'US-AK', 'US-HI', 'US-MI', 'US-OH', 'US-UT',
          'CA-ON', 'CA-QC', 'CA-NB', 'CA-NS', 'CA-PE', 'CA-NL',
          'CA-MB', 'CA-SK', 'CA-AB', 'CA-BC', 'CA-YT', 'CA-NT', 'CA-NU']
+STATE_NAMES = {'AL': 'Alabama', 'AK': 'Alaska', 'AZ': 'Arizona', 'AR': 'Arkansas', 'CA': 'California', 'CO': 'Colorado', 'CT': 'Connecticut', 'DE': 'Delaware', 'FL': 'Florida', 'GA': 'Georgia', 'HI': 'Hawaii', 'ID': 'Idaho', 'IL': 'Illinois', 'IN': 'Indiana', 'IA': 'Iowa', 'KS': 'Kansas', 'KY': 'Kentucky', 'LA': 'Louisiana', 'ME': 'Maine', 'MD': 'Maryland', 'MA': 'Massachusetts', 'MI': 'Michigan', 'MN': 'Minnesota', 'MS': 'Mississippi', 'MO': 'Missouri', 'MT': 'Montana', 'NE': 'Nebraska', 'NV': 'Nevada', 'NH': 'New Hampshire', 'NJ': 'New Jersey', 'NM': 'New Mexico', 'NY': 'New York', 'NC': 'North Carolina', 'ND': 'North Dakota', 'OH': 'Ohio', 'OK': 'Oklahoma', 'OR': 'Oregon', 'PA': 'Pennsylvania', 'RI': 'Rhode Island', 'SC': 'South Carolina', 'SD': 'South Dakota', 'TN': 'Tennessee', 'TX': 'Texas', 'UT': 'Utah', 'VT': 'Vermont', 'VA': 'Virginia', 'WA': 'Washington', 'WV': 'West Virginia', 'WI': 'Wisconsin', 'WY': 'Wyoming', 'DC': 'District of Columbia'}
 STAT = {'parks': 0, 'with_outline': 0, 'size_agree': 0, 'size_off': 0, 'size_unsure': 0, 'no_size': 0, 'ours_unknown': 0,
         'handover_hints': 0, 'retired': 0, 'pages_read': 0, 'skipped_fresh': 0, 'errors': 0}
 M = None
@@ -72,6 +73,9 @@ MANAGED = re.compile(r'\b((?:is |are |now |currently |will be |has been )?(?:man
 CLOSED = re.compile(r'\b((?:closed|closing|will close|has closed)\s+permanently|permanently\s+closed|no longer open to the public|is now closed to (?:the )?public|has been decommissioned|ceased operations|no longer (?:a |an )?(?:state |national )?(?:park|refuge|wildlife area|recreation area))[^.;\n]{0,80}', re.I)
 NEWNAME = re.compile(r'\b((?:renamed|formerly (?:known as|called)|now (?:known as|called)|new name)[^.;\n]{0,80})', re.I)
 KINDW = re.compile(r'\b(state|national|provincial|park|parks|forest|wildlife|management|area|areas|recreation|recreational|conservation|nature|natural|preserve|reserve|refuge|historic|historical|site|game|land|lands|wma|sp|sra|sf|nwr|trail|the|of|and|at|county|city|regional|unit|access|public|fishing|lake|hunting|outdoor|memorial|monument|wilderness|road)\b')
+OTHER_CORES = set()
+MULTI = {}         # {'area', 'state' (full name), 'ky' (bool)}: set per area   # the other parks of the area (core names), set per area: a sentence naming another park is not this park's size
+STATES_RX = re.compile(r'\b(alabama|alaska|arizona|arkansas|california|colorado|connecticut|delaware|florida|georgia|hawaii|idaho|illinois|indiana|iowa|kansas|kentucky|louisiana|maine|maryland|massachusetts|michigan|minnesota|mississippi|missouri|montana|nebraska|nevada|new hampshire|new jersey|new mexico|new york|north carolina|north dakota|ohio|oklahoma|oregon|pennsylvania|rhode island|south carolina|south dakota|tennessee|texas|utah|vermont|virginia|washington|west virginia|wisconsin|wyoming)\b', re.I)
 SOFT404 = re.compile(r'page not found|404 error|error 404|the page you (?:requested|are looking for)|no longer available|has been (?:moved|removed)|sign in to continue|log ?in required|access denied', re.I)
 
 
@@ -119,6 +123,9 @@ def sizes_in(text, name):
             near = text[max(0, m.start() - 160):m.end() + 60].lower()
             looks = bool(TOTALWORD.search(near)) or any(w in near for w in cn)
             if NOTTOTAL.search(near): looks = False
+            me = core(name)
+            if looks and me not in core(near):   # another park named in the sentence, this one not: not our size
+                if any(oc in core(near) for oc in OTHER_CORES if len(oc) >= 8 and oc != me): looks = False
             out.append((round(a, 1), f'{n} {unit}', line, looks))
             if len(out) >= 12: return out
     return out
@@ -270,6 +277,23 @@ def candidate_pages(ref, park, web, docs, ky):
     return out[:6]
 
 
+ABOUT_RX = re.compile(r'\babout\b|history|overview|park info|general info|facts|at a glance|\bthe park\b|welcome', re.I)
+_HTML_CACHE = {}
+
+
+def about_links(u):
+    """Up to 2 'about / history / overview' links on the same site as the park's page (read once, from the cached HTML)."""
+    html = _HTML_CACHE.get(u) or ''
+    out = []
+    for link, txt in links_in(html, u):
+        if host_of(link) != host_of(u) or link.rstrip('/') == u.rstrip('/'): continue
+        if re.search(r'\.(pdf|jpe?g|png|zip)(\?|$)', link, re.I): continue
+        if ABOUT_RX.search(txt) or re.search(r'/(about|history|overview|park-info|general-information)', link, re.I):
+            if link not in [x[0] for x in out]: out.append((link, "about / history page of the park's site"))
+        if len(out) >= 2: break
+    return out
+
+
 def read_page(u):
     """-> (status, kind, text). PDFs by range (first 400 KB)."""
     looks_pdf = u.lower().split('?')[0].endswith('.pdf')
@@ -281,6 +305,8 @@ def read_page(u):
         return 'ok', 'pdf', pdf_text(body, 3)
     if looks_pdf: return 'opened, not a PDF', '', ''
     html = body.decode('utf-8', 'replace')
+    if len(_HTML_CACHE) > 40: _HTML_CACHE.clear()
+    _HTML_CACHE[u] = html
     t = page_text(html)
     if len(t) < 200 and SOFT404.search(t): return 'soft 404', 'page', ''
     return 'ok', 'page', t
@@ -292,7 +318,7 @@ def hints_in(text, name, src, why):
         for m in rx.finditer(text):
             s = max(0, m.start() - 100); e = min(len(text), m.end() + 100)
             line = ' '.join(text[s:e].split())
-            if kind == 'managed by' and not re.search(r'(city|county|town|village|parish|municipal|tribe|nation|university|foundation|trust|conservancy|audubon|authority|district|corporation|company|association|club|church)', line, re.I):
+            if kind == 'managed by' and not re.search(r'(city|county|town|village|parish|municipal|tribe|nation|university|college|foundation|trust|conservancy|audubon|authority|district|corporation|company|association|club|church|greensource|society|friends of|partnership|nonprofit|non-profit|inc\\b|llc|fiscal court|forest service|tennessee valley|corps of engineers)', line, re.I):
                 continue   # 'managed by the Division of Parks' is the normal case: only OTHER kinds of owner are hints
             out.append({'kind': kind, 'line': line[:300], 'src': src, 'why': why, 'date_hint': (re.search(r'(?:19|20)\d\d', line) or [None])[0] if re.search(r'(?:19|20)\d\d', line) else None})
             if len(out) >= 6: return out
@@ -372,10 +398,23 @@ def one_park(ref, park, ours, web, docs, ky, retired, bs):
         if st != 'ok' or not text: continue
         for s in sizes_in(text, park['n']): found.append(s + (u,))
         r['handover'].extend(hints_in(text, park['n'], u, why))
+        if kind == 'page' and not any(s[3] for s in found) and why.startswith("the park's page") and len(r['pages']) < 7:
+            for u2, why2 in about_links(u):   # the size often sits on 'About the park' / 'History', not the home page
+                if late(): break
+                st2, k2, t2 = read_page(u2)
+                r['pages'].append({'url': u2, 'why': why2, 'status': st2})
+                if st2 != 'ok' or not t2: continue
+                for s in sizes_in(t2, park['n']): found.append(s + (u2,))
+                r['handover'].extend(hints_in(t2, park['n'], u2, why2))
+                if any(s[3] for s in found): break
         if any(s[3] for s in found) and r['handover']: break
         if len(found) >= 4 and 'news' not in why: continue
     r['sizes'] = [{'acres': s[0], 'as': s[1], 'line': s[2], 'total_like': s[3], 'url': s[4]} for s in found[:8]]
     v, chosen, pct = judge(ours['acres'] if ours else 0, found)
+    if v == 'off' and chosen and MULTI.get('area', '').startswith('US-') and STATES_RX.search(chosen[2]) and not re.search(MULTI.get('state', 'zzz'), chosen[2], re.I):
+        v = 'unsure'; r['note'] = 'the agency figure may cover several states; our outline may be this state\'s share only'
+    elif v == 'off' and chosen and re.search(r'national (forest|park|refuge|river|recreation|trail|seashore|lakeshore|monument|battlefield)', park.get('t', '') + ' ' + park['n'], re.I) and MULTI.get('ky') and abs(chosen[0]) > 1.8 * (ours['acres'] or 1):
+        v = 'unsure'; r['note'] = 'federal unit: the Kentucky key holds only the Kentucky piece; the agency figure is the whole unit'
     if ours and ours.get('unknown_pieces') and not ours.get('acres'): v = 'ours unknown'
     r['verdict'] = v; r['pct'] = pct
     if chosen: r['official'] = {'acres': chosen[0], 'as': chosen[1], 'line': chosen[2], 'url': chosen[4], 'read': TODAY}
@@ -397,6 +436,8 @@ def run_area(area, state, web, docs_all, ky, ak, retired, bscore, news):
     done = fresh = 0
     fresh_cut = time.strftime('%Y-%m-%d', time.gmtime(time.time() - REFRESH_DAYS * 86400))
     parks_by_core = {core(p['n']): ref for ref, p in parks.items()}
+    OTHER_CORES.clear(); OTHER_CORES.update(parks_by_core)
+    MULTI.clear(); MULTI.update({'area': area, 'state': STATE_NAMES.get(area[3:], 'zzz'), 'ky': area == 'US-KY'})
     for ref in sorted(parks):
         if late(): break
         old = D['parks'].get(ref)
