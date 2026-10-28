@@ -80,6 +80,26 @@
    "status": "done",
    "updated": "2026-10-28"
   },
+  "US-MS": {
+   "checked": 155,
+   "counts": {
+    "agree": 1,
+    "handover_hints": 4,
+    "no_page": 0,
+    "no_size": 76,
+    "off": 5,
+    "ours_unknown": 0,
+    "parks": 155,
+    "retired": 0,
+    "unsure": 7,
+    "weak": 14,
+    "with_outline": 89
+   },
+   "left": 0,
+   "parks": 155,
+   "status": "done",
+   "updated": "2026-10-28"
+  },
   "US-NC": {
    "checked": 253,
    "counts": {
@@ -192,35 +212,36 @@
   "www.floridastateparks.org": 1793312734.72171,
   "www.fs.usda.gov": 1793309985.139606,
   "www.littleocmulgeelodge.com": 1793311323.8044322,
+  "www.mdwfp.com": 1793313490.673676,
   "www.tn.gov": 1793308378.4104462,
   "www.virginiastateparks.gov": 1793309532.9542975,
   "www.wildlifesouth.com": 1793312437.0078452
  },
  "last": {
   "areas": [
-   "US-FL"
+   "US-MS"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "errors": 0,
-   "requests": 427,
-   "rested": 355,
-   "robots": 36,
-   "strikes": 3
+   "errors": 3,
+   "requests": 99,
+   "rested": 67,
+   "robots": 2,
+   "strikes": 4
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 16,
-   "no_size": 278,
-   "ours_unknown": 2,
-   "pages_read": 405,
-   "parks": 460,
+   "handover_hints": 4,
+   "no_size": 76,
+   "ours_unknown": 0,
+   "pages_read": 74,
+   "parks": 155,
    "retired": 0,
-   "size_agree": 75,
-   "size_off": 54,
-   "size_unsure": 31,
+   "size_agree": 1,
+   "size_off": 5,
+   "size_unsure": 7,
    "skipped_fresh": 0,
-   "with_outline": 440
+   "with_outline": 89
   },
   "when": "2026-10-28"
  },

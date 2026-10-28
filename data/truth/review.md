@@ -13,6 +13,7 @@ Updated 2026-10-28. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 | US-AL | 155 | 126 | 26 | **18** | 12 | 63 | 4 | 4 | 0 | 10 |
 | US-SC | 167 | 159 | 6 | **28** | 15 | 105 | 2 | 5 | 0 | 8 |
 | US-FL | 460 | 440 | 75 | **54** | 31 | 278 | 2 | 16 | 0 | 17 |
+| US-MS | 155 | 89 | 1 | **5** | 7 | 76 | 0 | 4 | 0 | 14 |
 
 ## US-KY
 
@@ -768,6 +769,36 @@ You · [www.fws.gov](https://www.fws.gov/refuge/chassahowitzka/about-us)
 - US-8356 Lake Monroe State Conservation Area · transfer: “onservation area is dedicated to Minnie Beck Kratzert, whose family owned the property until it was sold to the District in 1987. One of the special highlights of this property is its beautiful views ” · owner now: District · [www.sjrwmd.com](https://www.sjrwmd.com/lands/recreation/lake-monroe/)
 - US-8367 Pellicer Creek State Conservation Area · managed by: “ghts of this property is its location adjacent to other public properties. Princess Place Preserve, managed by Flagler County, is the site of the Princess Estate, a lodge designed by William Wright an” · owner now: Flagler County · [www.sjrwmd.com](https://www.sjrwmd.com/lands/recreation/pellicer-creek/)
 - US-8679 Devil's Hammock State Conservation Area · managed by: “! View Map Show Springs View Tract Details DEVIL’S HAMMOCK View Tract Details Recreation Public use is managed by the Levy County. Visitors may enjoy biking, hiking, horseback riding, and wildlife vie” · owner now: Levy County · [map.mysuwanneeriver.com](https://map.mysuwanneeriver.com/tracts/devils-hammock-51/)
+
+## US-MS
+
+**Agree:** 1 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 1 agree (second agency).
+
+**Size more than 15% off (our outline vs the agency):**
+
+- US-0389 Morgan Brake National Wildlife Refuge: ours 15,138 ac vs agency 7,400 acres (= 7,400 ac; 105% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [www.fws.gov](https://www.fws.gov/refuge/morgan-brake/about-us) · “ws Library Species Map About Us Morgan Brake National Wildlife Refuge, established in 1977, encompasses about 7,400 acres in Holmes County along the ecological ”
+- US-0393 Tallahatchie National Wildlife Refuge: ours 8,372 ac vs agency 4,199 acres (= 4,199 ac; 99% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [www.fws.gov](https://www.fws.gov/refuge/tallahatchie/) · “w Enforcement More on What We Do About Established in 1991, Tallahatchie National Wildlife Refuge consists of 4,199 acres in northern Mississippi. The land was ”
+- US-0387 Mathews Brake National Wildlife Refuge: ours 4,722 ac vs agency 2,418 acres (= 2,418 ac; 95% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [www.fws.gov](https://www.fws.gov/refuge/mathews-brake/about-us) · “uge is one of nine refuges in the Theodore Roosevelt National Wildlife Refuge Complex. The refuge encompasses 2,418 acres in west-central Mississippi. The refug”
+- US-0388 Mississippi Sandhill Crane National Wildlife Refuge: ours 36,869 ac vs agency 20,000 acres (= 20,000 ac; 84% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [www.fws.gov](https://www.fws.gov/refuge/mississippi-sandhill-crane/about-us) · “s the description of 'the rarest bird in North America'. Although the refuge and I-10 were both created, only 20,000 acres of the original crane habitat exist a”
+- US-0391 Panther Swamp National Wildlife Refuge: ours 66,312 ac vs agency 40,000 acres (= 40,000 ac; 66% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.fws.gov](https://www.fws.gov/refuge/panther_swamp/) · “and Cotton's access for some amazing sites to find a variety of game species, but don't stop there! With over 40,000 acres of land, there are plenty of areas fo”
+
+**Unsure (no clean total found; the nearest number is only a guess):**
+
+- US-0383 Dahomey National Wildlife Refuge: ours 19,074 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-0385 Hillside National Wildlife Refuge: ours 30,969 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-0390 Noxubee National Wildlife Refuge: ours 96,660 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 800 acres, no total words near it) · [www.fws.gov](https://www.fws.gov/refuge/sam-d-hamilton-noxubee/about-us)
+- US-0392 St. Catherine Creek National Wildlife Refuge: ours 49,195 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-0395 Yazoo National Wildlife Refuge: ours 26,086 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-0642 Natchez Trace Parkway National Parkway: ours 31,527 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-12639 Pelahatchie Shore State Recreation Area: ours 60 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 250 acres, no total words near it) · [www.therez.ms.gov](https://www.therez.ms.gov/parks-recreation/hunting/draw-hunt-rules)
+
+**Handover / closure hints (a person decides; nothing applied):**
+
+- US-0385 Hillside National Wildlife Refuge · transfer: “National Wildlife Refuge supports hundreds of wildlife species. Before what is now refuge land was transferred to the U.S. Fish and Wildlife Service, it was used by the U.S. Army Corps of Engineers to” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/hillside/about-us)
+- US-0388 Mississippi Sandhill Crane National Wildlife Refuge · managed by: “ational wildlife refuge A national wildlife refuge is typically a contiguous area of land and water managed by the U.S. Fish and Wildlife Service for the conservation and, where appropriate, restorati” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/mississippi-sandhill-crane/about-us)
+- US-0390 Noxubee National Wildlife Refuge · renamed: “located in three counties of Mississippi, Noxubee, Oktibbeha, and Winston. In 2012, the refuge was renamed Sam D. Hamilton Noxubee National Wildlife Refuge in honor of Sam D. Hamilton, a former direct” · [www.fws.gov](https://www.fws.gov/refuge/noxubee/)
+- US-0390 Noxubee National Wildlife Refuge · renamed: “s created from lands obtained through the 1930s Resettlement Administration. In 2012 the refuge was renamed Sam D. Hamilton Noxubee National Wildlife Refuge in honor of Sam D. Hamilton, a former direc” · [www.fws.gov](https://www.fws.gov/refuge/sam-d-hamilton-noxubee/about-us)
+- US-11880 Winterville Mounds State Historical Park · transfer: “g for its future, the Greenville Garden Club raised funding to purchase the 42—acre tract, and then donated the land to the State Park commission (now Wildlife, Fisheries, and Parks) in 1960. An origi” · owner now: State Park · [www.mdah.ms.gov](https://www.mdah.ms.gov/explore-mississippi/winterville-mounds)
 
 ## Kentucky test gate
 
