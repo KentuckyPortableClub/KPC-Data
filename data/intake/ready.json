@@ -112,9 +112,8 @@
    "why": "already read as sgnvc: nothing new to take"
   },
   {
-   "approved": false,
+   "approved": null,
    "area": "US",
-   "chat9": "REJECT for the key: lake SURFACES are never a land outline (rule B6). Kept for chat 2's rule-14 Corps step (kpc_fers), not the key. (chat 9, 2026-10-28)",
    "closes": {
     "by_name": 0,
     "in_extent": 1245,
@@ -124,7 +123,8 @@
     "pin_only": 0,
     "tested": 60
    },
-   "expect": "READY or already read",
+   "expect": "WATER-ONLY",
+   "flag": "water only: for the 2-fer owner step only",
    "from": "chat 9",
    "overlap": "",
    "probe": {
@@ -170,12 +170,12 @@
    "publisher": "U.S. Army Corps of Engineers",
    "publisher_test": [
     "official",
-    "a federal / national agency named"
+    "ArcGIS Online org n1YM8pTrFmm7L4hs = U.S. Army Corps of Engineers"
    ],
    "queue_licence": "publicly available",
-   "queue_note": "test row (b): federal; 'publicly available'. Area 'US' = whole country: no per-area missing list, so the closes test is skipped unless the row is given a state area",
+   "queue_note": "test row (b): federal; 'publicly available'; reservoirs = water only (chat 9 Oct 28), never a park outline, for the 2-fer owner step. Area 'US' = whole country: no per-area missing list, so the closes test is skipped unless the row is given a state area",
    "requests_used": 64,
-   "sig": "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_rez/FeatureServer/0|USACE reservoirs (Army Corps of Engineers)|U.S. Army Corps of Engineers|publicly available|test row (b): federal; 'publicly available'. Area 'US' = whole country: no per-area missing list, so the closes test is skipped unless the row is given a state area|READY or already read",
+   "sig": "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_rez/FeatureServer/0|USACE reservoirs (Army Corps of Engineers)|U.S. Army Corps of Engineers|publicly available|test row (b): federal; 'publicly available'; reservoirs = water only (chat 9 Oct 28), never a park outline, for the 2-fer owner step. Area 'US' = whole country: no per-area missing list, so the closes test is skipped unless the row is given a state area|WATER-ONLY",
    "terms": {
     "access": "public",
     "class": "OPEN",
@@ -202,8 +202,8 @@
    "title": "USACE reservoirs (Army Corps of Engineers)",
    "url": "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_rez/FeatureServer/0",
    "ver": 1,
-   "verdict": "READY",
-   "why": "official, open terms, named polygons, requested by chat 9"
+   "verdict": "WATER-ONLY",
+   "why": "water only: for the 2-fer owner step only (lakes / reservoirs / water bodies never go in the key as a park outline); otherwise READY: official, open terms, named polygons, requested by chat 9"
   },
   {
    "approved": null,
@@ -309,9 +309,8 @@
    "why": "nothing stated about use on the item page or the service"
   },
   {
-   "approved": true,
+   "approved": null,
    "area": "CZ",
-   "chat9": "APPROVED as LIVE-ONLY (HQ live-only rule): AOPK's terms are 'viewing only' (chat 8, KPC_W_CZ); the copyright line is a credit, not the terms. Read live, never stored (chat9-world LIVE_ONLY set). (chat 9, 2026-10-28)",
    "closes": {
     "by_name": 18,
     "in_extent": 19,
@@ -419,7 +418,6 @@
    },
    "expect": "LIVE-ONLY",
    "from": "chat 9",
-   "live_only": true,
    "overlap": "",
    "probe": {
     "copyright": "© krajské úřady ČR a Magistrát hl. m. Prahy, sjednoceno AOPK ČR, 2022",
@@ -458,20 +456,26 @@
     "government host gis.nature.cz"
    ],
    "queue_licence": "viewing only",
-   "queue_note": "test row (e): the service terms say viewing only; url to confirm (layer number guessed)",
-   "requests_used": 22,
-   "sig": "https://gis.nature.cz/arcgis/rest/services/ObecnaOchrana/PrirodniPark/MapServer/0|Czechia natural parks (AOPK CR, gis.nature.cz, Prirodni park)|Agentura ochrany prirody a krajiny CR (nature.cz)|viewing only|test row (e): the service terms say viewing only; url to confirm (layer number guessed)|LIVE-ONLY",
+   "queue_note": "test row (e): AOPK's own pages say viewing only (KNOWN_TERMS table; the service copyrightText is only a credit); layer number guessed",
+   "requests_used": 23,
+   "sig": "https://gis.nature.cz/arcgis/rest/services/ObecnaOchrana/PrirodniPark/MapServer/0|Czechia natural parks (AOPK CR, gis.nature.cz, Prirodni park)|Agentura ochrany prirody a krajiny CR (nature.cz)|viewing only|test row (e): AOPK's own pages say viewing only (KNOWN_TERMS table; the service copyrightText is only a credit); layer number guessed|LIVE-ONLY",
    "terms": {
-    "class": "CREDIT",
-    "line": "© krajské úřady ČR a Magistrát hl. m. Prahy, sjednoceno AOPK ČR, 2022",
-    "source": "service copyrightText"
+    "about": "Přírodní parky - data pocházejí od jednotlivých krajských úřadů ČR a jsou aktuální k 1. 11. 2022. Prezentace geografických dat pro hodnocení žádostí v OPŽP",
+    "class": "LIVE-ONLY",
+    "credit": "© AOPK ČR, podkladová data: Krajské úřady (2022)",
+    "item_url": "https://gis.nature.cz/arcgis/rest/services/ObecnaOchrana/PrirodniPark/MapServer/info/iteminfo",
+    "licence_text": "",
+    "line": "© AOPK ČR, podkladová data: Krajské úřady (2022) © krajské úřady ČR a Magistrát hl. m. Prah",
+    "source": "known-terms table (the agency states its terms elsewhere)",
+    "terms_note": "KNOWN_TERMS override: CREDIT read on the service → LIVE-ONLY. AOPK ČR's own pages say the map services are for viewing only (chat 8 WORLD/CZ_desk.md); the service copyrightText is only a credit",
+    "title": "PrirodniPark"
    },
-   "test": "MISS LIVE-ONLY vs READY",
+   "test": "ok",
    "title": "Czechia natural parks (AOPK CR, gis.nature.cz, Prirodni park)",
    "url": "https://gis.nature.cz/arcgis/rest/services/ObecnaOchrana/PrirodniPark/MapServer/0",
    "ver": 1,
-   "verdict": "READY",
-   "why": "official, credit terms, named polygons, closes 19 missing park(s)"
+   "verdict": "LIVE-ONLY",
+   "why": "terms allow viewing only: read live, never stored"
   },
   {
    "approved": false,
@@ -1043,7 +1047,7 @@
    ],
    "queue_licence": "",
    "queue_note": "test row (h): a made-up hobby layer on a non-government account; the bot will mark it 'did not open' and REJECT",
-   "requests_used": 1,
+   "requests_used": 3,
    "retry": true,
    "sig": "https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0|My favorite camping spots (a hobby map)|hobby account (personal map)||test row (h): a made-up hobby layer on a non-government account; the bot will mark it 'did not open' and REJECT|REJECT",
    "terms": {
@@ -1056,7 +1060,7 @@
    "url": "https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0",
    "ver": 1,
    "verdict": "REJECT",
-   "why": "did not open (error Invalid URL): url to confirm"
+   "why": "did not open (error Invalid URL) and no item search hit on the publisher: url to confirm"
   },
   {
    "approved": null,
@@ -1090,6 +1094,117 @@
    "ver": 1,
    "verdict": "REJECT",
    "why": "did not open (rest): url to confirm"
+  },
+  {
+   "approved": null,
+   "area": "US-SC",
+   "closes": {
+    "by_name": 0,
+    "in_extent": 5,
+    "missing_in_area": 5,
+    "n": 1,
+    "parks": [
+     [
+      "US-9229",
+      "Wild Turkey Wildlife Management Area",
+      "Unnamed WMA"
+     ]
+    ],
+    "pin_only": 1,
+    "tested": 5
+   },
+   "expect": "ASK-THE-PUBLISHER or already read",
+   "from": "chat 9",
+   "overlap": "",
+   "probe": {
+    "copyright": "",
+    "count": 963,
+    "description": "",
+    "extent": [
+     -9278818.907,
+     3770002.851,
+     -8754617.443,
+     4188097.859,
+     3857
+    ],
+    "fields": [
+     "FID",
+     "OBJECTID",
+     "prop_id",
+     "prop_name",
+     "prop_tract",
+     "prop_use",
+     "prop_type",
+     "heritage_p",
+     "wildlife_m",
+     "wma_specia",
+     "prop_statu",
+     "prop_publi",
+     "scdnr_regi",
+     "scdnr_game",
+     "public_vis",
+     "Shape__Are",
+     "Shape__Len",
+     "GlobalID",
+     "Shape__Area",
+     "Shape__Length"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "last_edit": "2023-05-04",
+    "layer_name": "SCDNR_Managed_Lands_Public_Viewer",
+    "name_field": "prop_name",
+    "opened": true,
+    "polygons": true,
+    "sample": [
+     "Altamaha Towne Heritage Preserve",
+     "Fish Dam Ford Heritage Preserve",
+     "Combahee Island Heritage Preserve / Wildlife Management Area"
+    ],
+    "service_item": "3f8ed80d29bb4335a6b5cd28bc0f15d7"
+   },
+   "probed": "2026-10-28",
+   "publisher": "Clemson University (hosting for South Carolina DNR)",
+   "publisher_test": [
+    "hosted for an agency",
+    "ArcGIS Online org x5wCko8UnSi4h0CB = Clemson University (hosts layers for SCDNR)"
+   ],
+   "queue_licence": "",
+   "queue_note": "test row (c): hosted on Clemson's org x5wCko8UnSi4h0CB (chat 9 Oct 28; acgZYxoN5Oj8pDLa is SCDNR's own org); path to confirm: the bot retries by item search on the org",
+   "requests_used": 10,
+   "sig": "https://services1.arcgis.com/x5wCko8UnSi4h0CB/arcgis/rest/services/SCDNR_Managed_Lands_Public_Viewer/FeatureServer/0|SCDNR managed lands (public viewer) on Clemson's ArcGIS Online account|Clemson University (hosting for South Carolina DNR)||test row (c): hosted on Clemson's org x5wCko8UnSi4h0CB (chat 9 Oct 28; acgZYxoN5Oj8pDLa is SCDNR's own org); path to confirm: the bot retries by item search on the org|ASK-THE-PUBLISHER or already read",
+   "terms": {
+    "access": "public",
+    "class": "NOTHING STATED",
+    "credit": "",
+    "item_url": "https://www.arcgis.com/home/item.html?id=3f8ed80d29bb4335a6b5cd28bc0f15d7",
+    "licence_text": "",
+    "line": "",
+    "modified": "2023-05-04",
+    "org_id": "x5wCko8UnSi4h0CB",
+    "org_name": "Clemson University",
+    "org_url": "Clemson",
+    "owner": "bneece@clemson.edu_Clemson",
+    "source": "item page",
+    "tags": [
+     "SEBatHub",
+     "SC",
+     "South Carolina",
+     "managed lands",
+     "public",
+     "public land",
+     "state",
+     "DNR",
+     "SCDNR"
+    ],
+    "title": "SCDNR_Managed_Lands_Public_Viewer"
+   },
+   "test": "ok",
+   "title": "SCDNR managed lands (public viewer) on Clemson's ArcGIS Online account",
+   "url": "https://services1.arcgis.com/x5wCko8UnSi4h0CB/arcgis/rest/services/SCDNR_Managed_Lands_Public_Viewer/FeatureServer/0",
+   "ver": 1,
+   "verdict": "ASK-THE-PUBLISHER",
+   "why": "hosted for an agency on another account: ask who owns and licenses it"
   }
  ],
  "updated": "2026-10-28"
