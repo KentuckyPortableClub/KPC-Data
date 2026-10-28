@@ -12,18 +12,13 @@
   "US-SD"
  ],
  "since": "2026-10-28",
- "date": "2026-10-28 22:46 UTC",
- "verdict": "STOPPED",
- "why": [
-  "water service: US-IL: 16 rows not checked because the USGS water map did not answer (run the worker again)",
-  "water service: US-MO: 23 rows not checked because the USGS water map did not answer (run the worker again)",
-  "water service: US-WI: 21 rows not checked because the USGS water map did not answer (run the worker again)",
-  "water service: US-SD: 11 rows not checked because the USGS water map did not answer (run the worker again)"
- ],
+ "date": "2026-10-28 23:29 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
  "known_answers": "18/18 on 2026-10-28",
  "missing_check": {
-  "FOUND": 260,
-  "DROPPED": 1112,
+  "FOUND": 301,
+  "DROPPED": 1071,
   "NEVER LOOKED AT": 11762
  },
  "report": {
@@ -43,10 +38,10 @@
    "pairs tested": 0
   },
   "pass5": {
-   "checked": 155,
+   "checked": 224,
    "date": "2026-10-28",
    "pairs tested": 0,
-   "still not checked": 1
+   "still not checked": 0
   }
  },
  "US-IN": {
@@ -63,25 +58,23 @@
  },
  "US-IL": {
   "rows": 104,
-  "live": 6,
+  "live": 21,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "water not checked": 16,
    "the ownership map shows more than one owner across the spot": 3,
    "no public owner on the ownership map": 1
   },
   "dropped": 61,
-  "merged": 17
+  "merged": 18
  },
  "US-MO": {
   "rows": 362,
-  "live": 18,
+  "live": 41,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "the ownership map shows more than one owner across the spot": 1,
-   "water not checked": 23,
    "low-confidence outline for Ozark National Wild and Scenic Ri": 12,
    "owner not known for Table Rock State Park": 1
   },
@@ -90,16 +83,15 @@
  },
  "US-WI": {
   "rows": 368,
-  "live": 11,
+  "live": 31,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "water not checked": 21,
    "the outlines overlap, but the PAD-US Park Service fee record": 7,
    "no public owner on the ownership map": 1
   },
   "dropped": 262,
-  "merged": 66
+  "merged": 67
  },
  "US-MN": {
   "rows": 858,
@@ -136,12 +128,10 @@
  },
  "US-SD": {
   "rows": 55,
-  "live": 6,
+  "live": 17,
   "waiting": 0,
   "unfinished": 0,
-  "not_sure": {
-   "water not checked": 11
-  },
+  "not_sure": {},
   "dropped": 29,
   "merged": 9
  }
