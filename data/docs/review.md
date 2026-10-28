@@ -5,7 +5,66 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 
 | area | parks | map ok | found by the bot | names the park | date on the map | posted only | date unknown | no map | rules ok | needs browser | handover notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| US-MO | 431 | 391 | 375 | 304 | 169 | 149 | 73 | 40 | 389 | 19 | 1 |
+| US-FL | 460 | 247 | 227 | 34 | 22 | 146 | 79 | 211 | 116 | 234 | 0 |
+| US-MO | 561 | 524 | 503 | 425 | 238 | 206 | 80 | 37 | 520 | 9 | 1 |
+
+## US-FL sample (first 12 parks with a map)
+| ref | park | map | kind · via | date (how) · posted | rules | runs / card note |
+|---|---|---|---|---|---|---|
+| US-0007 | Biscayne Bay National Park | https://www.nps.gov/bisc/planyourvisit/maps.htm | page · the agency site | — (date unknown, checked 2026-10-28) · posted July 17, 2023 | https://www.nps.gov/bisc/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0023 | Dry Tortugas National Park | https://www.nps.gov/drto/planyourvisit/maps.htm | page · the agency site | — (date unknown, checked 2026-10-28) · posted June 17, 2016 | https://www.nps.gov/drto/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0024 | Everglades National Park | https://www.nps.gov/ever/planyourvisit/maps.htm | page · the agency site | — (date unknown, checked 2026-10-28) · posted June 5, 2018 | https://www.nps.gov/ever/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0231 | Archie Carr National Wildlife Refuge | https://www.fws.gov/refuge/archie-carr/map | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/archie-carr/visit-us/rules-policies ✓ | managed by the U.S. Fish |
+| US-0232 | Arthur R. Marshall Loxahatchee National  | https://www.fws.gov/refuge/arthur-r-marshall-loxahatchee/map | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/laws-regulations ✓ | managed by the U.S. Fish |
+| US-0234 | Cedar Keys National Wildlife Refuge | https://www.fws.gov/sites/default/files/documents/public_use-map-cedar-key-nwr.pdf | pdf ✓name · the agency site | — (date unknown, checked 2026-10-28) · posted Feb 13, 2022 | https://www.fws.gov/refuge/cedar-keys/visit-us/rules-policies ✓ |  |
+| US-0235 | Chassahowitzka National Wildlife Refuge | https://www.fws.gov/refuge/chassahowitzka/map | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/chassahowitzka/visit-us/rules-policies ✓ |  |
+| US-0236 | Crocodile Lake National Wildlife Refuge | https://www.fws.gov/refuge/crocodile-lake/map | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/laws-regulations ✓ | managed by the U.S. Fish |
+| US-0237 | Crystal River National Wildlife Refuge | https://www.fws.gov/refuge/crystal-river/map | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/laws-regulations ✓ |  |
+| US-0238 | Egmont Key National Wildlife Refuge | https://www.fws.gov/refuge/egmont-key/map | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/egmont-key/visit-us/rules-policies ✓ | is managed by the U.S. Fish |
+| US-0239 | Florida Panther National Wildlife Refuge | https://www.fws.gov/refuge/florida-panther/map | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/laws-regulations ✓ | managed by the U.S. Fish |
+| US-0240 | Great White Heron National Wildlife Refu | https://www.fws.gov/refuge/great-white-heron/map | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/laws-regulations ✓ | managed by the State of Florida through a Management Agreement |
+
+### US-FL no map yet (213): the reason
+- US-0634 Little Talbot State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-0635 St. George State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-0775 Fort Caroline National Memorial: no map link on file and none on the park page
+- US-10463 Price's Scrub State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-11223 Ruth B. Kirby Gilchrist Blue Springs State Pa: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-13011 Shoal River Headwaters State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1829 Alafia River State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1830 Alfred B.Maclay Gardens State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1831 Amelia Island State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1832 Anastasia State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1833 Avalon State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1834 Bahia Honda State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1835 Bald Point State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1836 Barnacle State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1837 Big Lagoon State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1838 Big Shoals State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1839 Big Talbot Island State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1840 Bill Baggs Cape Florida State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1841 Blackwater River State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1842 Blue Spring State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1843 Bulow Creek State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1844 Caladesi Island State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1845 Camp Helen State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1846 Cayo Costa State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1847 Collier-Seminole State Park: HTTP 403 (needs browser: the map link refused a plain reader (HTTP 403))
+- US-1848 Colt Creek State Park: HTTP 403 (needs browser: the map link refused a plain reader (HTTP 403))
+- US-1849 Constitution Convention Museum State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1850 Crystal River Archaeological State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1851 Curry Hammock State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1852 Dagny Johnson Key Largo Hammock Botanical Sta: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1853 De Leon Springs State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1854 Deer Lake State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1855 Delnor-Wiggins Pass State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1856 Devil's Millhopper Geological State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1857 Don Pedro Island State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1858 Dr. Von D. Mizell-Eula Johnson State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1859 Dunns Creek State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1860 Econfina River State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1861 Eden Gardens State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1862 Edward Ball Wakulla Springs State Park: no map link on file and none on the park page (needs browser: host on the browser list)
 
 ## US-MO sample (first 12 parks with a map)
 | ref | park | map | kind · via | date (how) · posted | rules | runs / card note |
@@ -26,12 +85,9 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 ### US-MO HANDOVER notes (1): the park STAYS on the card with the note (HQ Oct 28); a person checks the source
 - US-1775 Morris State Park: donated to the state by Jim D. Morris → card: 'May now be run by state by Jim D. Morris: check before you go.' (source https://mostateparks.com/park/morris-state-park)
 
-### US-MO no map yet (40): the reason
+### US-MO no map yet (37): the reason
 - US-10152 Perry Tower Site State Conservation Area: no map link on file and none on the park page
-- US-10575 Walnut Woods State Conservation Area: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
-- US-10576 Rush Creek State Conservation Area: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
 - US-11225 Blue Slip Tower Site State Conservation Area: no map link on file and none on the park page
-- US-1787 Table Rock State Park: HTTP 403 (needs browser: the map link refused a plain reader (HTTP 403))
 - US-3335 Arrow Rock State Historic Site: no map link on file and none on the park page
 - US-3336 Battle of Athens State Historic Site: no map link on file and none on the park page
 - US-3337 Battle of Carthage State Historic Site: no map link on file and none on the park page
@@ -62,8 +118,14 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - US-3366 Towosahgy State Historic Site: no map link on file and none on the park page
 - US-3367 Union Covered Bridge State Historic Site: no map link on file and none on the park page
 - US-3368 Watkins Woolen Mill State Historic Site: no map link on file and none on the park page
-- US-4492 Mark Twain National Forest: no map link on file and none on the park page (needs browser: host on the browser list)
 - US-4587 Harry S. Truman Birthplace State Historic Sit: no map link on file and none on the park page
 - US-5713 Jay Nixon State Park: no map link on file and none on the park page
 - US-5714 Shepherd of the Hills State Park: no map link on file and none on the park page
 - US-5716 Bruce R. Watkins Cultural Heritage Center Sta: no map link on file and none on the park page
+- US-7984 St Genevieve (Beauvais House) National Histor: no map link on file and none on the park page
+
+## robots.txt said no (hosts we did not read)
+- www.fdacs.gov: 37 addresses (User-agent: * | Disallow: / | User-agent: Googlebot | User-agent: Bingbot | User-agent: BingPreview )
+
+## hosts resting a day (three strikes)
+- www5.swfwmd.state.fl.us

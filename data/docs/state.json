@@ -1,14 +1,23 @@
 {
  "areas": {
   "US-MO": {
-   "status": "partial",
+   "status": "done",
    "parks": 561,
-   "checked": 431,
-   "left": 130,
+   "checked": 561,
+   "left": 0,
+   "updated": "2026-10-28"
+  },
+  "US-FL": {
+   "status": "done",
+   "parks": 460,
+   "checked": 460,
+   "left": 0,
    "updated": "2026-10-28"
   }
  },
- "hosts": {},
+ "hosts": {
+  "www5.swfwmd.state.fl.us": 1793262436.7233734
+ },
  "last": {
   "when": "2026-10-28",
   "areas": [
@@ -17,18 +26,17 @@
    "US-KY"
   ],
   "stat": {
-   "requests": 1633,
-   "parks": 431,
-   "maps_ok": 391,
-   "maps_found": 375,
-   "dates": 169,
-   "rules": 389,
-   "browser": 0,
-   "robots": 0,
-   "strikes": 0,
-   "errors": 0,
-   "skipped_fresh": 0,
-   "handovers": 1
+   "requests": 1526,
+   "parks": 590,
+   "maps_ok": 385,
+   "maps_found": 359,
+   "dates": 91,
+   "rules": 247,
+   "browser": 11,
+   "robots": 37,
+   "strikes": 3,
+   "errors": 3,
+   "skipped_fresh": 431
   }
  }
 }

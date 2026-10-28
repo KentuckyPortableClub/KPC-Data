@@ -2329,21 +2329,30 @@
    "page": "https://mdc.mo.gov/discover-nature/places/walnut-woods-conservation-area",
    "checked": "2026-10-28",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://cwd-interactive-maps-mdcgis.hub.arcgis.com/",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "the page in a browser ('CWD Interactive Hub')",
+    "page": "https://mdc.mo.gov/discover-nature/places/walnut-woods-conservation-area",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-28",
+    "via": "linked from the agency page (cwd-interactive-maps-mdcgis.hub.arcgis.com)"
    },
    "rules": {
-    "url": "https://mdc.mo.gov/discover-nature/places/regulations",
-    "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the page in a browser ('Regulations')",
+    "status": "ok"
    },
    "agency": "Missouri Department of Conservation",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2
+   "ver": 2,
+   "browser_checked": "2026-10-28"
   },
   "US-10576": {
    "n": "Rush Creek State Conservation Area",
@@ -2351,21 +2360,30 @@
    "page": "https://mdc.mo.gov/discover-nature/places/rush-creek-conservation-area",
    "checked": "2026-10-28",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://cwd-interactive-maps-mdcgis.hub.arcgis.com/",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "the page in a browser ('CWD Interactive Hub')",
+    "page": "https://mdc.mo.gov/discover-nature/places/rush-creek-conservation-area",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-28",
+    "via": "linked from the agency page (cwd-interactive-maps-mdcgis.hub.arcgis.com)"
    },
    "rules": {
-    "url": "https://mdc.mo.gov/discover-nature/places/regulations",
-    "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the page in a browser ('Regulations')",
+    "status": "ok"
    },
    "agency": "Missouri Department of Conservation",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2
+   "ver": 2,
+   "browser_checked": "2026-10-28"
   },
   "US-10577": {
    "n": "Pigg's Landing Access State Conservation Area",
@@ -10178,7 +10196,9 @@
    "agency": "Missouri State Parks",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
    "needs_browser": "the map link refused a plain reader (ok)",
    "map_also": [
     {
@@ -10203,15 +10223,15 @@
    "page": "https://mdc.mo.gov/discover-nature/places/possum-woods-conservation-area",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://mdc.mo.gov/media/area/map/8705",
+    "url": "https://mdc.mo.gov/media/area/map/8705#main-content",
     "status": "ok",
     "kind": "page",
     "date": null,
     "date_how": "date unknown, checked 2026-10-28",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "how": "the page in a browser ('Skip to main content')",
+    "page": "https://mdc.mo.gov/media/area/map/8705",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -10225,7 +10245,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2
+   "ver": 2,
+   "browser_checked": "2026-10-28"
   },
   "US-1745": {
    "n": "Babler Memorial State Park",
@@ -10981,15 +11002,15 @@
    "page": "https://mostateparks.com/park/harry-s-truman-state-park",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://mostateparks.com/media/pdf/harry-s-truman-state-park-map",
+    "url": "https://mostateparks.com/basic-page/locator-map",
     "status": "ok",
     "kind": "page",
     "date": null,
     "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Park Map')",
+    "how": "the page in a browser ('Locator Map')",
+    "page": "https://mostateparks.com/media/pdf/harry-s-truman-state-park-map",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -11018,7 +11039,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 2
+   "ver": 2,
+   "browser_checked": "2026-10-28"
   },
   "US-1763": {
    "n": "Hawn State Park",
@@ -11290,15 +11312,15 @@
    "page": "https://mostateparks.com/park/lake-wappapello-state-park",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://mostateparks.com/media/pdf/lake-wappapello-state-park",
+    "url": "https://mostateparks.com/basic-page/locator-map",
     "status": "ok",
     "kind": "page",
     "date": null,
     "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Park Map')",
+    "how": "the page in a browser ('Locator Map')",
+    "page": "https://mostateparks.com/media/pdf/lake-wappapello-state-park",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -11327,7 +11349,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 2
+   "ver": 2,
+   "browser_checked": "2026-10-28"
   },
   "US-1770": {
    "n": "Lewis and Clark State Park",
@@ -11379,15 +11402,15 @@
    "page": "https://mostateparks.com/park/long-branch-state-park",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://mostateparks.com/media/pdf/long-branch-state-park-map",
+    "url": "https://mostateparks.com/basic-page/locator-map",
     "status": "ok",
     "kind": "page",
     "date": null,
     "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Park Map')",
+    "how": "the page in a browser ('Locator Map')",
+    "page": "https://mostateparks.com/media/pdf/long-branch-state-park-map",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -11416,7 +11439,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 2
+   "ver": 2,
+   "browser_checked": "2026-10-28"
   },
   "US-1772": {
    "n": "Mark Twain State Park",
@@ -11444,7 +11468,9 @@
    "agency": "Missouri State Parks",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
    "needs_browser": "the map link refused a plain reader (ok)",
    "map_also": [
     {
@@ -11706,15 +11732,15 @@
    "page": "https://mostateparks.com/park/pomme-de-terre-state-park",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://mostateparks.com/media/pdf/color-park-map-pomme-de-terre",
+    "url": "https://mostateparks.com/basic-page/locator-map",
     "status": "ok",
     "kind": "page",
     "date": null,
     "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Park Map')",
+    "how": "the page in a browser ('Locator Map')",
+    "page": "https://mostateparks.com/media/pdf/color-park-map-pomme-de-terre",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -11743,7 +11769,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 2
+   "ver": 2,
+   "browser_checked": "2026-10-28"
   },
   "US-1779": {
    "n": "Prairie State Park",
@@ -12072,15 +12099,15 @@
    "page": "https://mostateparks.com/park/stockton-state-park",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://mostateparks.com/media/pdf/stockton-state-park-map",
+    "url": "https://mostateparks.com/basic-page/locator-map",
     "status": "ok",
     "kind": "page",
     "date": null,
     "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Park Map')",
+    "how": "the page in a browser ('Locator Map')",
+    "page": "https://mostateparks.com/media/pdf/stockton-state-park-map",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -12109,7 +12136,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 2
+   "ver": 2,
+   "browser_checked": "2026-10-28"
   },
   "US-1787": {
    "n": "Table Rock State Park",
@@ -12117,22 +12145,22 @@
    "page": "https://mostateparks.com/map/table-rock-state-park",
    "checked": "2026-10-28",
    "map": {
-    "url": "http://www.swl.usace.army.mil/Portals/50/docs/tablerocklake/TABLE%20ROCK%20MAP%203-05.pdf",
-    "status": "HTTP 403",
-    "kind": "",
+    "url": "https://mostateparks.com/basic-page/locator-map",
+    "status": "ok",
+    "kind": "page",
     "date": null,
-    "date_how": "",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "the page in a browser ('Locator Map')",
+    "page": "https://mostateparks.com/map/table-rock-state-park",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
     "checked": "2026-10-28",
-    "via": "on file, checked by a person or the link harvester (swl.usace.army.mil)"
+    "via": "the agency site"
    },
    "rules": {
-    "url": "https://mostateparks.com/page/55066/rules-and-regulations",
-    "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "url": "https://mostateparks.com/page/laws-and-regulations",
+    "how": "a link on the page in a browser ('Laws and Regulations')",
+    "status": "ok"
    },
    "agency": "Missouri State Parks",
    "runs": [],
@@ -12141,7 +12169,8 @@
     "park page: HTTP 404"
    ],
    "needs_browser": "the map link refused a plain reader (HTTP 403)",
-   "ver": 2
+   "ver": 2,
+   "browser_checked": "2026-10-28"
   },
   "US-1788": {
    "n": "Taum Sauk Mountain State Park",
@@ -12477,7 +12506,9 @@
    "agency": "Missouri State Parks",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
    "needs_browser": "the map link refused a plain reader (ok)",
    "map_also": [
     {
@@ -12658,7 +12689,9 @@
    "agency": "Missouri State Parks",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
    "needs_browser": "the map link refused a plain reader (ok)",
    "map_also": [
     {
@@ -13666,9 +13699,17 @@
    "page": "https://www.fs.usda.gov/mtnf",
    "checked": "2026-10-28",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.fs.usda.gov/r09/marktwain/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "the page in a browser ('Get a Map')",
+    "page": "https://www.fs.usda.gov/mtnf",
+    "posted": "October 8, 2026",
+    "posted_how": "the page's 'last updated' line",
+    "checked": "2026-10-28",
+    "via": "the agency site"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r09/marktwain",
@@ -13680,7 +13721,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 2,
+   "browser_checked": "2026-10-28"
   },
   "US-4566": {
    "n": "California National Historic Trail",
@@ -17662,23 +17704,5576 @@
    "handover": [],
    "notes": [],
    "ver": 2
+  },
+  "US-6531": {
+   "n": "Deer Ridge State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/deer-ridge-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2023-09/5703map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "8/1/2023",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2023-09",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/5703",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7189": {
+   "n": "Beaver Creek State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://www.recreation.gov/camping/campgrounds/232521",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/media/area/map/201111",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "2011-11",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": null,
+    "checked": "2026-10-28",
+    "via": "on file, checked by a person or the link harvester (mdc.mo.gov)"
+   },
+   "rules": {
+    "url": "https://www.recreation.gov/rules-reservation-policies",
+    "how": "a link on the park's page ('Rules Reservation Policies')",
+    "status": "ok"
+   },
+   "agency": "government agency (recreation.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-7496": {
+   "n": "Fox Valley State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/fox-valley-lake-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8004map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2017-08-29",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Feb 21, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/8004",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7497": {
+   "n": "Frost Island State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/frost-island-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2024-06/9601map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "5/29/2026",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2024-06",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/9601",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7498": {
+   "n": "Danville State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/danville-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2022-08/6507map_0.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "8/3/2022",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2022-08",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [
+    "administered by the U. S"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/6507",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7500": {
+   "n": "Saeger Woods State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/saeger-woods-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/7915map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Jul 01, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/7915",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7501": {
+   "n": "Belcher Branch Lake State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/belcher-branch-lake-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2024-09/8925map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2024-09",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/8925",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7502": {
+   "n": "A. Busch Jr at Four Rivers Wetland Reserve",
+   "t": "Wetland Reserve",
+   "page": "https://mdc.mo.gov/discover-nature/places/august-busch-jr-memorial-wetlands-four-rivers-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2022-10/8238map_0.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "10/4/2022",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2022-10",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-7503": {
+   "n": "Bushwacker Lake State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/bushwhacker-lake-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/media/area/map/7823",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "",
+    "posted_how": "",
+    "names_park": null,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/sites/default/files/2024-06/7823map.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('Area Map')",
+     "posted": "2024-06",
+     "posted_how": "posted: the upload folder in the address",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    },
+    {
+     "url": "https://mdc.mo.gov/sites/default/files/2022-08/7923.pdf",
+     "status": "ok",
+     "kind": "region overview",
+     "date": "2022-08-16",
+     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+     "how": "a link on the park's page ('Area Brochure')",
+     "posted": "2022-08",
+     "posted_how": "posted: the upload folder in the address",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7512": {
+   "n": "Baltimore Bend State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/baltimore-bend-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2023-10/8620map_0.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-10-16",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2023-10",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/8620",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7513": {
+   "n": "Bismarck State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/bismarck-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/6112map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "4/8/2019",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Feb 21, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/6112",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7514": {
+   "n": "Marshall Junction State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/marshall-junction-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2023-05/6408map_0.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "11/30/2021",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2023-05",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [
+    "administered by the U.S. Fish"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/6408",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7515": {
+   "n": "Schifferdecker Memorial State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/w-l-schifferdecker-memorial-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/7302map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Aug 24, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-7516": {
+   "n": "White Memorial State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/william-g-erma-parke-white-memorial-wildlife-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2022-01/7702.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Brochure')",
+    "posted": "2022-01",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/7702map.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": "4/4/2019",
+     "date_how": "printed on the map",
+     "how": "a link on the park's page ('Area Map')",
+     "posted": "Mar 11, 2025",
+     "posted_how": "posted: the server's file date",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7517": {
+   "n": "Settle's Ford State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/settles-ford-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2024-09/8515map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "8/25/2025",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2024-09",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [
+    "administered by the U.S. Fish"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/8515",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7519": {
+   "n": "Bridger State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/jim-bridger-urban-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2022-08/8134map_2.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "7/25/2022",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2022-08",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-7521": {
+   "n": "Bluffwoods State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/bluffwoods-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/7403map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "12/4/2018",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Oct 08, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/8435",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7586": {
+   "n": "Toronto Springs State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/toronto-springs-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2024-04/8616map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "12/19/2023",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2024-04",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/8616",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7604": {
+   "n": "Rochester Falls State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/rochester-falls-access",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/6307map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Jan 30, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/6307",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7654": {
+   "n": "Hazel Hill Lake State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/hazel-hill-lake",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2024-04/8321map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-12-22",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2024-04",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-7655": {
+   "n": "J.N. Turkey Kearn Memorial Wildlife Area",
+   "t": "Wildlife Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/j-n-turkey-kearn-memorial-wildlife-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2023-10/7717map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "8/27/2021",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2023-10",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-7656": {
+   "n": "Ralph and Martha Perry Memorial State Wildlife Area",
+   "t": "State Wildlife Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/ralph-martha-perry-memorial-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/7214map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "10/8/2019",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Jul 09, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-7657": {
+   "n": "Connor O. Fewel State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/connor-o-fewel-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2023-10/7803map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "9/2/2021",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2023-10",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/7803",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7658": {
+   "n": "Flight Lake Conservation Reserve",
+   "t": "Conservation Reserve",
+   "page": "https://mdc.mo.gov/discover-nature/places/flight-lake-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2023-01/8406map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2/3/2022",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2023-01",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/8406",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7659": {
+   "n": "Huckleberry Ridge Conservation Reserve",
+   "t": "Conservation Reserve",
+   "page": "https://mdc.mo.gov/discover-nature/places/huckleberry-ridge-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2024-04/6314map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "6/16/2021",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2024-04",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/6314",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7660": {
+   "n": "Fort Crowder Conservation Reserve",
+   "t": "Conservation Reserve",
+   "page": "https://mdc.mo.gov/discover-nature/places/fort-crowder-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2024-09/6510map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2024-09",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/6510",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7661": {
+   "n": "Douglas Branch Conservation Reserve",
+   "t": "Conservation Reserve",
+   "page": "https://mdc.mo.gov/discover-nature/places/douglas-branch-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2022-11/9003map_0.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2022-11-18",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2022-11",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/9003",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7662": {
+   "n": "James R. Harter Conservation Reserve",
+   "t": "Conservation Reserve",
+   "page": "https://mdc.mo.gov/discover-nature/places/james-r-harter-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/9401map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Dec 01, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/9401",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7663": {
+   "n": "Edward Anderson Conservation Reserve",
+   "t": "Conservation Reserve",
+   "page": "https://mdc.mo.gov/discover-nature/places/edward-anderson-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/6311map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "9/4/2019",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Apr 21, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [
+    "administered by the U.S. Fish"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/6311",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7664": {
+   "n": "Dupont Reservation Conservation Reserve",
+   "t": "Conservation Reserve",
+   "page": "https://mdc.mo.gov/discover-nature/places/dupont-reservation-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/4604map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "11/19/2018",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Feb 04, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/4604",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7665": {
+   "n": "Ted Shanks Conservation Reserve",
+   "t": "Conservation Reserve",
+   "page": "https://mdc.mo.gov/discover-nature/places/ted-shanks-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2022-12/7011map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "10/11/2022",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2022-12",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/7011",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7666": {
+   "n": "Davisdale Conservation Reserve",
+   "t": "Conservation Reserve",
+   "page": "https://mdc.mo.gov/discover-nature/places/davisdale-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2023-05/8229map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "11/17/2021",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2023-05",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/8229",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7667": {
+   "n": "Wellsville Lake Conservation Reserve",
+   "t": "Conservation Reserve",
+   "page": "https://mdc.mo.gov/discover-nature/places/wellsville-lake-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/6125map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2015-04-28",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Feb 21, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/6125",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7668": {
+   "n": "Little Lost Creek Conservation Reserve",
+   "t": "Conservation Reserve",
+   "page": "https://mdc.mo.gov/discover-nature/places/little-lost-creek-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2023-01/8030map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2/17/2022",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2023-01",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [
+    "managed by planting food plots"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/8030",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7669": {
+   "n": "Flag Spring Conservation Reserve",
+   "t": "Conservation Reserve",
+   "page": "https://mdc.mo.gov/discover-nature/places/flag-spring-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2023-01/8333map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "3/1/2022",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2023-01",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/8333",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7670": {
+   "n": "Bittern Bottoms Conservation Reserve",
+   "t": "Conservation Reserve",
+   "page": "https://mdc.mo.gov/discover-nature/places/bittern-bottoms-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8430map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Apr 10, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/8430",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7671": {
+   "n": "Dorsett Hill Prairie Conservation Reserve",
+   "t": "Conservation Reserve",
+   "page": "https://mdc.mo.gov/discover-nature/places/dorsett-hill-prairie-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2024-03/7916map_0.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "12/11/2023",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2024-03",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/7916",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7672": {
+   "n": "Sni-A Bar Conservation Reserve",
+   "t": "Conservation Reserve",
+   "page": "https://mdc.mo.gov/discover-nature/places/sni-bar-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2022-12/9626map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "3/22/2022",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2022-12",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/9626",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7673": {
+   "n": "Liberty Bend Conservation Reserve",
+   "t": "Conservation Reserve",
+   "page": "https://mdc.mo.gov/discover-nature/places/liberty-bend-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/9726map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Mar 10, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/9726",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7674": {
+   "n": "Maple Woods Natural Area",
+   "t": "Natural Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/maple-woods-natural-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/7909map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2009-05-16",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "on file (parkinfo-web / Kentucky answer key) -> the page's 'Area Map' file",
+    "posted": "Feb 21, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "page": "https://mdc.mo.gov/discover-nature/places/maple-woods-natural-area",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-7675": {
+   "n": "Foxglove Conservation Reserve",
+   "t": "Conservation Reserve",
+   "page": "https://mdc.mo.gov/discover-nature/places/foxglove-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/9012map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2012-06-24",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Feb 21, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/9012",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7676": {
+   "n": "Hardin Conservation Reserve",
+   "t": "Conservation Reserve",
+   "page": "https://mdc.mo.gov/discover-nature/places/hardin-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2024-09/9618map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2014-05-24",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2024-09",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/9618",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7677": {
+   "n": "Pigeon Hill Conservation Reserve",
+   "t": "Conservation Reserve",
+   "page": "https://mdc.mo.gov/discover-nature/places/pigeon-hill-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/6304map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2/4/2026",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Feb 18, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/6304",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7678": {
+   "n": "Lick Creek Conservation Reserve",
+   "t": "Conservation Reserve",
+   "page": "https://mdc.mo.gov/discover-nature/places/lick-creek-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/9228map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "3/25/2019",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Feb 21, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/9228",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7679": {
+   "n": "Moniteau Creek Conservation Reserve",
+   "t": "Conservation Reserve",
+   "page": "https://mdc.mo.gov/discover-nature/places/moniteau-creek-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2023-05/9735map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "11/16/2021",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2023-05",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/9735",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7680": {
+   "n": "Upper Mississippi Conservation Reserve",
+   "t": "Conservation Reserve",
+   "page": "https://mdc.mo.gov/discover-nature/places/upper-mississippi-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2021-09/6131.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2026-05-05",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Area Brochure')",
+    "posted": "2021-09",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/6131",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    },
+    {
+     "url": "https://mdc.mo.gov/sites/default/files/2026-09/6131map.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('Area Map')",
+     "posted": "2026-09",
+     "posted_how": "posted: the upload folder in the address",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7681": {
+   "n": "William R Logan Conservation Reserve",
+   "t": "Conservation Reserve",
+   "page": "https://mdc.mo.gov/discover-nature/places/william-r-logan-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/6607map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Feb 21, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/6607",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7836": {
+   "n": "Ozark State Trail",
+   "t": "State Trail",
+   "page": "https://www.ozarktrail.com/planner/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.ozarktrail.com/wp-content/uploads/2018/02/Upper-Current-Downloadable-Maps.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Maps') -> the page's 'View Upper Current River section' file",
+    "posted": "2018-02",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": false,
+    "checked": "2026-10-28",
+    "page": "https://ozarktrail.com/maps/",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-7837": {
+   "n": "Taberville Prairie State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/taberville-prairie-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/6124map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Feb 21, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/6124",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7840": {
+   "n": "Elam Bend State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/elam-bend-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/7926map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "May 01, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/7926",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7846": {
+   "n": "Gallatin State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/gallatin-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/6903map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2013-04-07",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Feb 21, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/6903",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7851": {
+   "n": "Marais Temps Clair State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/marais-temps-clair-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2021-09/7902.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Brochure')",
+    "posted": "2021-09",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/7902",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    },
+    {
+     "url": "https://mdc.mo.gov/sites/default/files/2022-12/7902map.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('Area Map')",
+     "posted": "2022-12",
+     "posted_how": "posted: the upload folder in the address",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7863": {
+   "n": "Little Bean Marsh State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/little-bean-marsh-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/7936map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Apr 03, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/7936",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7864": {
+   "n": "Paint Brush Prairie State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/paint-brush-prairie-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2024-10/7832map_0.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "5/5/2026",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2024-10",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/7832",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7868": {
+   "n": "Pawnee Prairie State Natural Area",
+   "t": "State Natural Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/pawnee-prairie-natural-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/9631map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Jun 09, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/9631",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7873": {
+   "n": "Agency State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/agency-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/9238map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2007-08-24",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Feb 21, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/9238",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7874": {
+   "n": "Arthur Dupree Memorial State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/arthur-dupree-memorial-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2021-11/9402.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2018-09-20",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Area Brochure')",
+    "posted": "2021-11",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/9402map.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('Area Map')",
+     "posted": "Sep 30, 2026",
+     "posted_how": "posted: the server's file date",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7875": {
+   "n": "Aspinwall Bend State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/deroin-bend-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/media/area/map/201301",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "2013-01",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": null,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/sites/default/files/2024-06/9615.pdf",
+     "status": "ok",
+     "kind": "region overview",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('Area Map')",
+     "posted": "2024-06",
+     "posted_how": "posted: the upload folder in the address",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    },
+    {
+     "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/9615.pdf",
+     "status": "ok",
+     "kind": "region overview",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('Area Brochure')",
+     "posted": "Dec 03, 2025",
+     "posted_how": "posted: the server's file date",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7984": {
+   "n": "St Genevieve (Beauvais House) National Historical Park",
+   "t": "National Historical Park",
+   "page": "https://www.nps.gov/places/bauvais-amoureux-house.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-8229": {
+   "n": "Brickyard Hill State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/brickyard-hill-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2024-10/6301map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "10/7/2019",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2024-10",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/6301",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8230": {
+   "n": "Corning State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/corning-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2023-10/200222map_0.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-08-18",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2023-10",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/200222",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8231": {
+   "n": "Deroin Bend State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/deroin-bend-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2024-06/9615.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2024-06",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/9615",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8232": {
+   "n": "Lower Hamburg Bend State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/lower-hamburg-bend-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/9911map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2017-07-11",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Feb 21, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/9911",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8233": {
+   "n": "Rush Bottoms State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/rush-bottoms-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/200103map_0.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Mar 24, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/200103",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "2001-03",
+     "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8234": {
+   "n": "Star School Hill Prairie State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/star-school-hill-prairie-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8928map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Mar 06, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [
+    "managed by the use of controlled burning"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/8928",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8235": {
+   "n": "Wolf Creek Bend State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/wolf-creek-bend-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2024-04/200512map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "7/15/2021",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2024-04",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/200512",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "2005-12",
+     "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8236": {
+   "n": "B.K. Leach Memorial State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/b-k-leach-memorial-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2022-12/8514map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "10/21/2022",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2022-12",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-8237": {
+   "n": "Bee Creek State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/bee-creek-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2024-09/200108map_0.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2024-09",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/200108",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "2001-08",
+     "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8238": {
+   "n": "Bethel Prairie State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/bethel-prairie-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/9702map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Feb 21, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/9702",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8239": {
+   "n": "Black Island State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/stephen-c-bradford-unit-black-island-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2023-07/7004map_1.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2023-07",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/7004",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8240": {
+   "n": "Bonanza State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/bonanza-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/6805map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Feb 25, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [
+    "administered by the U.S. Fish",
+    "managed by farming"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/6805",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8241": {
+   "n": "Bristow State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/bristow-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2022-12/9240map_0.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2022-12",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/9240",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8242": {
+   "n": "Buffalo Wallow State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/buffalo-wallow-prairie-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8738map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2014-05-10",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Feb 21, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-8243": {
+   "n": "Bunch Hollow State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/bunch-hollow-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2024-06/8331map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2024-06",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/8331",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8244": {
+   "n": "Caney State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/caney-mountain-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2024-06/5202map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2013-10-12",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2024-06",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-8245": {
+   "n": "Clear Creek State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/clear-creek-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2023-05/8919map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "11/8/2021",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2023-05",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/8919",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8246": {
+   "n": "Cuivre Island State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/cuivre-island-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8801map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2012-04-15",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Feb 21, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/8801",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8247": {
+   "n": "Dorris Creek Prairie State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/dorris-creek-prairie-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8513map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Feb 21, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/8513",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8248": {
+   "n": "Fourche Creek State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/fourche-creek-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/6519map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2017-06-30",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Feb 21, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/6519",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8249": {
+   "n": "Girvin State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/john-l-georgia-girvin-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2024-05/8614map_0.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "5/20/2024",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2024-05",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/8614",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8251": {
+   "n": "Honey Creek State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/honey-creek-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/6127map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Feb 21, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [
+    "administered by the U.S. Fish"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/6127",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8252": {
+   "n": "Ketcherside Mountain State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/ketcherside-mountain-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/7602map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Feb 20, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/7602",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8253": {
+   "n": "Little Compton Lake State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/little-compton-lake-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8329map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Apr 03, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/8329",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8254": {
+   "n": "Mincy State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/drury-mincy-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2022-12/5401map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2022-12",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-8255": {
+   "n": "Mo-No-I Prairie State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/mo-no-i-prairie-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/9106map_1.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Feb 21, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/9106",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8256": {
+   "n": "Monkey Mountain State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/monkey-mountain-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/7805map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Mar 14, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/7805",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8257": {
+   "n": "Osage Prairie State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/osage-prairie-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2024-05/6130map_0.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2024-05",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/6130",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8258": {
+   "n": "Pa Sole Prairie State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/pa-sole-prairie-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2024-09/9131map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2024-09",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/9131",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8259": {
+   "n": "Pelican Island State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/pelican-island-natural-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/9121map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Mar 31, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/9121",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8260": {
+   "n": "Ranacker State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/ranacker-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2022-12/6710map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "3/28/2022",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2022-12",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/6710",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8261": {
+   "n": "Redwing Prairie State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/redwing-prairie-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8826map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "May 06, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/8826",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8262": {
+   "n": "Riverbreaks State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/riverbreaks-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8114map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Sep 15, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/8114",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8263": {
+   "n": "Treaty Line State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/treaty-line-prairie-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8912map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Feb 13, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-8264": {
+   "n": "White Ranch State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/white-ranch-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2024-05/8425map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "10/5/2026",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2024-05",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [
+    "owned by Harry White"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/8425",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8265": {
+   "n": "Worthwine Island State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/worthwine-island-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2024-07/7910map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2024-07",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/7910",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8266": {
+   "n": "Yellow Creek State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/yellow-creek-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2024-09/8802map_0.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "8/19/2024",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2024-09",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/8802",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8268": {
+   "n": "Nishnabotna State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/nishnabotna-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2024-06/200010map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2024-06",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/200010",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "2000-10",
+     "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8274": {
+   "n": "Risch State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/edward-b-marie-o-risch-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8617map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2013-09-22",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Sep 12, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/8617",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8275": {
+   "n": "Stoney Point Prairie State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/stony-point-prairie-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8839map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Apr 15, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/8839",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8276": {
+   "n": "Sky Prairie State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/sky-prairie-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2024-09/8131map_0.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2008-01-12",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2024-09",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/8131",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8277": {
+   "n": "Bluff Springs State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/bluff-springs-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/9101map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Oct 08, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/9101",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8278": {
+   "n": "Brush Creek State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/brush-creek-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/6531map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2009-04-27",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Feb 21, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [
+    "administered by the U.S. Fish"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/6531",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8279": {
+   "n": "Marion Bottoms State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/marion-bottoms-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2024-06/9632map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2024-06",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/9632",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8280": {
+   "n": "Three Creeks State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/three-creeks-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8315map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "12/2/2025",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Mar 20, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/8315",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8281": {
+   "n": "Buford Mountain State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/buford-mountain-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2024-09/7727map_0.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "11/6/2024",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2024-09",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/7727",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8282": {
+   "n": "University Forest State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/university-forest-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8850map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Sep 15, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/8850",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8284": {
+   "n": "Birdsong State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/birdsong-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8043map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "6/23/2025",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Jun 27, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/8043",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8285": {
+   "n": "Little River State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/little-river-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2023-09/9326map_0.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-08-23",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2023-09",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [
+    "managed by the Little River Drainage District"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/9326",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8286": {
+   "n": "Hornersville State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/hornersville-swamp-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2023-10/5610map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "8/2/2021",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2023-10",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/8237",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8301": {
+   "n": "Ripgut Prairie State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/ripgut-prairie-natural-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8618map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2013-04-14",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Sep 10, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [
+    "is maintained by wet soil hydrology"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/8618",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8302": {
+   "n": "Old Town Access State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/old-town-access",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2022-12/8416map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2022-11-18",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2022-12",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/8416",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8304": {
+   "n": "McGee Family State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/mcgee-family-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2023-02/201120map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2/2/2022",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2023-02",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/201120",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8308": {
+   "n": "Pilot Knob State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/pilot-knob-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2023-10/9909map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "1/30/2026",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2023-10",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/9909",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8309": {
+   "n": "Dr Harry and Lina Berrier Memorial State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/dr-harry-lina-berrier-memorial-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2024-03/201917map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2/21/2024",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2024-03",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [
+    "managed by the department is not listed"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/201917",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8310": {
+   "n": "Urich State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/urich-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2025-07/6407map_0.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "6/13/2025",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2025-07",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/6407",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8314": {
+   "n": "Pacific Palisades State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/pacific-palisades-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2024-04/7809map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "9/29/2023",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2024-04",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/7809",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8315": {
+   "n": "Rockwoods State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/rockwoods-reservation",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/5405map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Feb 05, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/5405",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8502": {
+   "n": "Mussel Fork State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/mussel-fork-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8422map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Apr 15, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/8422",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8503": {
+   "n": "Union Ridge State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/union-ridge-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2022-03/8932.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Brochure')",
+    "posted": "2022-03",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/8932",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    },
+    {
+     "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8932map.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('Area Map')",
+     "posted": "Apr 29, 2025",
+     "posted_how": "posted: the server's file date",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8504": {
+   "n": "Sugar Creek State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/sugar-creek",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/media/area/map/7307",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "",
+    "posted_how": "",
+    "names_park": null,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 2
+  },
+  "US-8505": {
+   "n": "Indian Hills State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/indian-hills-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2024-05/8622map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2024-05",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/8622",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8506": {
+   "n": "Hidden Hollow State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/hidden-hollow-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8510map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Mar 06, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/8510",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8507": {
+   "n": "LaBarque Creek State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/labarque-creek-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2024-05/200608map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2024-05",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/200608",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "2006-08",
+     "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8508": {
+   "n": "Big Creek State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/big-creek-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8041map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Mar 06, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [
+    "is managed by the Missouri Department of Natural Resources"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/8041",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8509": {
+   "n": "Shoemaker State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/shoemaker-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2024-08/8927map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2024-08",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/8927",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8510": {
+   "n": "Ruth and Paul Henning Conservation Area State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/ruth-paul-henning-conservation-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2022-07/8208_2.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2026-05-19",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Area Brochure')",
+    "posted": "2022-07",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/media/area/map/8208",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    },
+    {
+     "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8208map.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('Area Map')",
+     "posted": "Feb 26, 2026",
+     "posted_how": "posted: the server's file date",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8511": {
+   "n": "White River Balds Natural Area State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/natural-areas/white-river-balds",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://cwd-interactive-maps-mdcgis.hub.arcgis.com/",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('CWD Interactive Hub')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": null,
+    "checked": "2026-10-28",
+    "via": "linked from the agency page (cwd-interactive-maps-mdcgis.hub.arcgis.com)"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8208map.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": "2026-02-26",
+     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+     "how": "a link on the park's page ('Ruth and Paul Henning Conservation Area Map')",
+     "posted": "Feb 26, 2026",
+     "posted_how": "posted: the server's file date",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-8512": {
+   "n": "Springfield Conservation Nature Center State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://mdc.mo.gov/discover-nature/places/springfield-conservation-nature-center",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mdc.mo.gov/sites/default/files/2024-05/8609map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "2024-05",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mdc.mo.gov/hunting-trapping/regulations",
+    "how": "a link on the park's page ('Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri Department of Conservation",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-9753": {
+   "n": "Katy Trail Rock Island Spur State Park",
+   "t": "State Park",
+   "page": "https://mostateparks.com/park/rock-island-trail-state-park",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://mostateparks.com/page/rock-island-trail-state-park/entire-trail-rock-island-trail",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Park Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": null,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://mostateparks.com/page/laws-and-regulations",
+    "how": "a link on the park's page ('Laws and Regulations')",
+    "status": "ok"
+   },
+   "agency": "Missouri State Parks",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://mostateparks.com/basic-page/locator-map",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('View Full State Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-9757": {
+   "n": "Butterfield Overland National Historic Trail",
+   "t": "National Historic Trail",
+   "page": "https://www.nps.gov/buov/index.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/buov/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "August 28, 2026",
+    "posted_how": "the page's 'last updated' line",
+    "names_park": null,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/buov/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
   }
  },
  "read": "2026-10-28",
  "counts": {
-  "parks": 431,
-  "map ok": 391,
-  "map found by the bot": 375,
-  "date on the map": 169,
-  "posted date only": 149,
-  "date unknown": 73,
-  "no map": 40,
-  "rules ok": 389,
-  "needs browser": 19,
+  "parks": 561,
+  "map ok": 524,
+  "map found by the bot": 503,
+  "date on the map": 238,
+  "posted date only": 206,
+  "date unknown": 80,
+  "no map": 37,
+  "rules ok": 520,
+  "needs browser": 9,
   "handover hints": 1,
-  "runs hints": 31,
+  "runs hints": 45,
   "host resting / robots": 0,
-  "map names the park": 304,
+  "map names the park": 425,
   "region overview only": 0
  }
 }
