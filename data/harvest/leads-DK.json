@@ -1,0 +1,1773 @@
+{
+ "about": "World harvester leads for Denmark (official park GIS only; leads for chat 8, never added to the key by the bot).",
+ "cc": "DK",
+ "date": "2026-10-28",
+ "status": "paused (out of time, will carry on)",
+ "steps_done": [
+  "known"
+ ],
+ "bands": {
+  "A": 0,
+  "B": 0,
+  "C": 24
+ },
+ "known_good_found": [],
+ "known_good_missed": [
+  "https://kort.vd.dk/server/rest/services/Grunddata/Fredede_områder/MapServer"
+ ],
+ "leads": {
+  "https://kort.vd.dk/server/rest/services/grunddata/beskyttet_natur": {
+   "url": "https://kort.vd.dk/server/rest/services/Grunddata/Beskyttet_natur/MapServer",
+   "cc": "DK",
+   "title": "Grunddata/Beskyttet_natur",
+   "publisher": "kort.vd.dk",
+   "catalog": "agency server kort.vd.dk",
+   "licence": "Miljøstyrelsen (MST) / Danmarks Miljø Portal (DMP)",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 4,
+     "name": "Beskyttede naturtyper",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "temakode",
+      "systid_fra",
+      "oprindkode",
+      "statuskode",
+      "off_kode",
+      "natyp_navn",
+      "aendr_kode",
+      "besig_dato",
+      "ObjectID",
+      "SHAPE"
+     ],
+     "records": 320074,
+     "sample": [
+      "Eng",
+      "Overdrev",
+      "Overdrev"
+     ],
+     "name_field": "natyp_navn"
+    }
+   ],
+   "note": "",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://kort.vd.dk/server/rest/services/grunddata/naturregistreringer": {
+   "url": "https://kort.vd.dk/server/rest/services/Grunddata/Naturregistreringer/MapServer",
+   "cc": "DK",
+   "title": "Grunddata/Naturregistreringer",
+   "publisher": "kort.vd.dk",
+   "catalog": "agency server kort.vd.dk",
+   "licence": "Miljøstyrelsen (MST) / Danmarks Miljø Portal (DMP)",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "access",
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 13,
+     "name": "Kortlægning naturtyper flader",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "LifaTS",
+      "ogc_fid",
+      "gml_id",
+      "aktivitetsid",
+      "opdateretdato",
+      "link",
+      "indsamlingsformal",
+      "ansvarliginstitution",
+      "ansvarliginstitutioncvr",
+      "startdato",
+      "stednavn",
+      "program",
+      "aktivitetstype",
+      "naturtype",
+      "arealandelpct",
+      "naturtilstandsindeks",
+      "strukturindeks",
+      "artsindeks",
+      "stjernearter1",
+      "stjernearter2"
+     ],
+     "records": 85313,
+     "sample": [
+      "3-7-144-1005",
+      "3-1-020-1213",
+      "3-067-102"
+     ],
+     "name_field": "stednavn"
+    },
+    {
+     "id": 14,
+     "name": "Kortlægning naturtyper punkter",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "aktivitetsid",
+      "aktivitetstype",
+      "naturtype",
+      "arealandelpct",
+      "strukturindeks",
+      "artsindeks",
+      "naturtilstandsindeks",
+      "problemarter",
+      "stjernearter1",
+      "stjernearter2",
+      "program",
+      "stednavn",
+      "startdato",
+      "ansvarliginstitution",
+      "ansvarliginstitutioncvr",
+      "indsamlingsformal",
+      "ObjectID"
+     ],
+     "records": 70260,
+     "sample": [
+      "3-1-185-0006-2160",
+      "3-1-014-0417-1330",
+      "3-3-051-0613-1330"
+     ],
+     "name_field": "stednavn"
+    },
+    {
+     "id": 2,
+     "name": "Besigtigelser flader",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "LifaID",
+      "ObjectID",
+      "LifaTS",
+      "ogc_fid",
+      "gml_id",
+      "aktivitetsid",
+      "opdateretdato",
+      "link",
+      "indsamlingsformal",
+      "ansvarliginstitution",
+      "ansvarliginstitutioncvr",
+      "startdato",
+      "program",
+      "aktivitetstype",
+      "naturtype",
+      "arealandelpct",
+      "stednavn",
+      "naturtilstandsindeks",
+      "strukturindeks",
+      "artsindeks"
+     ],
+     "records": 359136,
+     "sample": [
+      "T10-7810 eng",
+      "None",
+      "None"
+     ],
+     "name_field": "stednavn"
+    },
+    {
+     "id": 4,
+     "name": "Besigtigelser punkter",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "LifaID",
+      "ObjectID",
+      "LifaTS",
+      "ogc_fid",
+      "gml_id",
+      "aktivitetsid",
+      "opdateretdato",
+      "link",
+      "indsamlingsformal",
+      "ansvarliginstitution",
+      "ansvarliginstitutioncvr",
+      "startdato",
+      "stednavn",
+      "program",
+      "aktivitetstype",
+      "naturtype",
+      "arealandelpct",
+      "naturtilstandsindeks",
+      "strukturindeks",
+      "artsindeks"
+     ],
+     "records": 120141,
+     "sample": [
+      "Mose mellem Trustrup Skov og Flodholm",
+      "Nørhå Sø, 2012_0075",
+      "Østmosen 2"
+     ],
+     "name_field": "stednavn"
+    },
+    {
+     "id": 6,
+     "name": "Generelle artsfund flader",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "LifaTS",
+      "ogc_fid",
+      "gml_id",
+      "aktivitetsid",
+      "opdateretdato",
+      "link",
+      "indsamlingsformal",
+      "ansvarliginstitution",
+      "ansvarliginstitutioncvr",
+      "startdato",
+      "stednavn",
+      "program",
+      "aktivitetstype",
+      "sys_timestamp",
+      "ObjectID",
+      "SHAPE",
+      "SHAPE.STArea()",
+      "SHAPE.STLength()"
+     ],
+     "records": 15713,
+     "sample": [
+      "8f Sengeløse By",
+      "Tørskind",
+      "Grønsund Færgested"
+     ],
+     "name_field": "stednavn"
+    },
+    {
+     "id": 8,
+     "name": "Generelle artsfund punkter",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "LifaTS",
+      "ogc_fid",
+      "gml_id",
+      "aktivitetsid",
+      "opdateretdato",
+      "link",
+      "indsamlingsformal",
+      "ansvarliginstitution",
+      "ansvarliginstitutioncvr",
+      "startdato",
+      "stednavn",
+      "program",
+      "aktivitetstype",
+      "sys_timestamp",
+      "ObjectID",
+      "SHAPE"
+     ],
+     "records": 18520,
+     "sample": [
+      "Lok. nr 08",
+      "Gniben, Tornerosebugten felt 3",
+      "LILLEÅ, VEJBRO VED FREDSGÅRDE"
+     ],
+     "name_field": "stednavn"
+    },
+    {
+     "id": 10,
+     "name": "Kortlægning levesteder flader",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "LifaTS",
+      "ogc_fid",
+      "gml_id",
+      "aktivitetsid",
+      "opdateretdato",
+      "link",
+      "indsamlingsformal",
+      "ansvarliginstitution",
+      "ansvarliginstitutioncvr",
+      "startdato",
+      "stednavn",
+      "program",
+      "aktivitetstype",
+      "sys_timestamp",
+      "ObjectID",
+      "SHAPE",
+      "SHAPE.STArea()",
+      "SHAPE.STLength()"
+     ],
+     "records": 14017,
+     "sample": [
+      "4-30-levesoe-661",
+      "67-levesoe-007",
+      "Stubbergård sydøst"
+     ],
+     "name_field": "stednavn"
+    },
+    {
+     "id": 11,
+     "name": "Kortlægning levesteder punkter",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "aktivitetsid",
+      "link",
+      "aktivitetstype",
+      "program",
+      "stednavn",
+      "startdato",
+      "ansvarliginstitution",
+      "ansvarliginstitutioncvr",
+      "indsamlingsformal",
+      "ObjectID"
+     ],
+     "records": 55,
+     "sample": [
+      "1-005-001-OP33p",
+      "Jordbro_hamatocaulis",
+      "7-140-001-OP33"
+     ],
+     "name_field": "stednavn"
+    }
+   ],
+   "note": "",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://kort.vd.dk/server/rest/services/grunddata/plandata_trafik_og_teknik": {
+   "url": "https://kort.vd.dk/server/rest/services/Grunddata/Plandata_Trafik_og_teknik/MapServer",
+   "cc": "DK",
+   "title": "Grunddata/Plandata_Trafik_og_teknik",
+   "publisher": "kort.vd.dk",
+   "catalog": "agency server kort.vd.dk",
+   "licence": "Plan- og Landdistriksstyrelsen (PLST)",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "area",
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Statslige udpegede energiparker - forslag",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "titel",
+      "id",
+      "status",
+      "komnr",
+      "komnavn",
+      "anvendelse",
+      "datoforsla",
+      "datoikraft",
+      "link_horin",
+      "retsinfo",
+      "delomraade",
+      "SHAPE"
+     ],
+     "records": 8,
+     "sample": [
+      "Mariagerfjord",
+      "Vejen",
+      "Frederikshavn"
+     ],
+     "name_field": "komnavn"
+    },
+    {
+     "id": 1,
+     "name": "Statslige udpegede energiparker - udpeget",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "id",
+      "titel",
+      "status",
+      "anvendelse",
+      "komnr",
+      "komnavn",
+      "datoforsla",
+      "datoikraft",
+      "link_horin",
+      "retsinfo",
+      "delomraade",
+      "SHAPE"
+     ],
+     "records": 15,
+     "sample": [
+      "Holstebro",
+      "Aabenraa",
+      "Aabenraa"
+     ],
+     "name_field": "komnavn"
+    },
+    {
+     "id": 32,
+     "name": "Teknisk anlæg konsekvensområde - forslag",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "LifaID",
+      "ObjectID",
+      "LifaTS",
+      "uuid",
+      "temakode",
+      "temanavn",
+      "objekt_id",
+      "systid_fra",
+      "oprindkode",
+      "oprindelse",
+      "statuskode",
+      "cvr_kode",
+      "cvrname",
+      "link",
+      "plannr",
+      "lovgivning",
+      "komplan_id",
+      "plangrund",
+      "datostart",
+      "datoslut"
+     ],
+     "records": 9,
+     "sample": [
+      "Konsekvensområder omkring tekniske anlæg",
+      "Konsekvensområder omkring tekniske anlæg",
+      "Konsekvensområder omkring tekniske anlæg"
+     ],
+     "name_field": "temanavn"
+    },
+    {
+     "id": 29,
+     "name": "Støjbelastet arealer - forslag",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "temakode",
+      "temanavn",
+      "plannr",
+      "lovgivning",
+      "komplan_id",
+      "plangrund",
+      "cvrname",
+      "cvr_kode",
+      "komnr",
+      "status",
+      "datoforsl",
+      "datostart",
+      "datoslut",
+      "datovedt",
+      "datoikraft",
+      "bem",
+      "systid_fra",
+      "oprindkode",
+      "oprindelse",
+      "statuskode"
+     ],
+     "records": 18,
+     "sample": [
+      "Støjbelastede arealer",
+      "Støjbelastede arealer",
+      "Støjbelastede arealer"
+     ],
+     "name_field": "temanavn"
+    },
+    {
+     "id": 30,
+     "name": "Støjbelastet arealer - vedtaget",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "temakode",
+      "temanavn",
+      "plannr",
+      "lovgivning",
+      "komplan_id",
+      "plangrund",
+      "cvrname",
+      "cvr_kode",
+      "komnr",
+      "status",
+      "datoforsl",
+      "datostart",
+      "datoslut",
+      "datovedt",
+      "datoikraft",
+      "bem",
+      "systid_fra",
+      "oprindkode",
+      "oprindelse",
+      "statuskode"
+     ],
+     "records": 7353,
+     "sample": [
+      "Støjbelastede arealer",
+      "Støjbelastede arealer",
+      "Støjbelastede arealer"
+     ],
+     "name_field": "temanavn"
+    },
+    {
+     "id": 17,
+     "name": "Teknisk anlæg konsekvensområde - forslag",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "uuid",
+      "temakode",
+      "temanavn",
+      "objekt_id",
+      "systid_fra",
+      "oprettet",
+      "oprindkode",
+      "oprindelse",
+      "statuskode",
+      "status",
+      "cvr_kode",
+      "cvrname",
+      "link",
+      "plannr",
+      "lovgivning",
+      "komplan_id",
+      "plangrund",
+      "datostart",
+      "datoslut"
+     ],
+     "records": 153,
+     "sample": [
+      "Konsekvensområder omkring tekniske anlæg",
+      "Konsekvensområder omkring tekniske anlæg",
+      "Konsekvensområder omkring tekniske anlæg"
+     ],
+     "name_field": "temanavn"
+    },
+    {
+     "id": 31,
+     "name": "Teknisk anlæg konsekvensområde - vedtaget",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "temakode",
+      "temanavn",
+      "plannr",
+      "lovgivning",
+      "komplan_id",
+      "plangrund",
+      "cvrname",
+      "cvr_kode",
+      "komnr",
+      "status",
+      "datoforsl",
+      "datostart",
+      "datoslut",
+      "datovedt",
+      "datoikraft",
+      "bem",
+      "systid_fra",
+      "oprindkode",
+      "oprindelse",
+      "statuskode"
+     ],
+     "records": 1041,
+     "sample": [
+      "Konsekvensområder omkring tekniske anlæg",
+      "Konsekvensområder omkring tekniske anlæg",
+      "Konsekvensområder omkring tekniske anlæg"
+     ],
+     "name_field": "temanavn"
+    }
+   ],
+   "note": "",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://kort.vd.dk/server/rest/services/hosted/dmpdata_20230706": {
+   "url": "https://kort.vd.dk/server/rest/services/Hosted/DMPData_20230706/FeatureServer",
+   "cc": "DK",
+   "title": "Hosted/DMPData_20230706",
+   "publisher": "kort.vd.dk",
+   "catalog": "agency server kort.vd.dk",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 8,
+     "name": "DMPData_20230706",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "fid",
+      "program",
+      "aktivitets",
+      "institutio",
+      "stednavn",
+      "startdato",
+      "naturtype",
+      "naturtilst",
+      "strukturin",
+      "artsindeks",
+      "aktid",
+      "sarlink",
+      "SHAPE__Length",
+      "SHAPE__Area",
+      "created_user",
+      "created_date",
+      "last_edited_user",
+      "last_edited_date",
+      "globalid"
+     ],
+     "records": 246,
+     "sample": [
+      "VD_16_407",
+      "VD_15_301",
+      "VD_21_206"
+     ],
+     "name_field": "stednavn"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://kort.vd.dk/server/rest/services/hosted/data_fra_cykelfremmekortet_feature": {
+   "url": "https://kort.vd.dk/server/rest/services/Hosted/Data_fra_cykelfremmekortet_feature/FeatureServer",
+   "cc": "DK",
+   "title": "Hosted/Data_fra_cykelfremmekortet_feature",
+   "publisher": "kort.vd.dk",
+   "catalog": "agency server kort.vd.dk",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Cykelfremmekortet_kommuner",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid_1",
+      "objectid",
+      "adm_kode",
+      "first_navn",
+      "shape_leng",
+      "kom_nr",
+      "kommune_nr",
+      "afstand_arbudd_0_5km",
+      "afstand_arbudd_0km",
+      "afstand_1_5km",
+      "afstand_arbudd_6_10km",
+      "afstand_arbudd_11_15km",
+      "afstand_arbudd_16_20km",
+      "afstand_arbudd_mereend20km",
+      "c_arbudd_min5",
+      "c_arbudd_3_4",
+      "c_arbudd_1_2",
+      "c_arbudd_sjældent",
+      "c_arbudd_aldrig",
+      "c_arbudd_min1"
+     ],
+     "records": 98,
+     "sample": [
+      "København",
+      "Frederiksberg",
+      "Ballerup"
+     ],
+     "name_field": "first_navn"
+    },
+    {
+     "id": 1,
+     "name": "Cykelfremmekortet_trafikzoner",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid_12",
+      "objectid",
+      "komnr",
+      "zonedescri",
+      "zonenavn",
+      "zoneid",
+      "zonearea",
+      "afstand_arbudd_0_5km",
+      "afstand_arbudd_0km",
+      "afstand_1_5km",
+      "afstand_arbudd_6_10km",
+      "afstand_arbudd_11_15km",
+      "afstand_arbudd_16_20km",
+      "afstand_arbudd_mereend20km",
+      "c_arbudd_min5",
+      "c_arbudd_3_4",
+      "c_arbudd_1_2",
+      "c_arbudd_sjældent",
+      "c_arbudd_aldrig",
+      "c_arbudd_min1"
+     ],
+     "records": 907,
+     "sample": [
+      "Kgs. Nytorv",
+      "Rådhuspladsen",
+      "Nørreport"
+     ],
+     "name_field": "zonenavn"
+    },
+    {
+     "id": 2,
+     "name": "Cykelfremmekortet_kvadratnetklynger",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid_1",
+      "klyngeid",
+      "klyngeid_1",
+      "afstand_arbudd_0_5km",
+      "afstand_arbudd_0km",
+      "afstand_1_5km",
+      "afstand_arbudd_6_10km",
+      "afstand_arbudd_11_15km",
+      "afstand_arbudd_16_20km",
+      "afstand_arbudd_mereend20km",
+      "c_arbudd_min5",
+      "c_arbudd_3_4",
+      "c_arbudd_1_2",
+      "c_arbudd_sjældent",
+      "c_arbudd_aldrig",
+      "c_arbudd_min1",
+      "c_arbudd_sjældent_aldrig",
+      "c_daglige_min5",
+      "c_daglige_3_4",
+      "c_daglige_1_2"
+     ],
+     "records": 7474
+    },
+    {
+     "id": 3,
+     "name": "Cykelfremmekortet_regioner",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid_12",
+      "objectid",
+      "navn",
+      "regionid",
+      "regioner",
+      "afstand_arbudd_0_5km",
+      "afstand_arbudd_0km",
+      "afstand_1_5km",
+      "afstand_arbudd_6_10km",
+      "afstand_arbudd_11_15km",
+      "afstand_arbudd_16_20km",
+      "afstand_arbudd_mereend20km",
+      "c_arbudd_min5",
+      "c_arbudd_3_4",
+      "c_arbudd_1_2",
+      "c_arbudd_sjældent",
+      "c_arbudd_aldrig",
+      "c_arbudd_min1",
+      "c_arbudd_sjældent_aldrig",
+      "c_daglige_min5"
+     ],
+     "records": 5,
+     "sample": [
+      "Region Hovedstaden",
+      "Region Sjælland",
+      "Region Syddanmark"
+     ],
+     "name_field": "navn"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://kort.vd.dk/server/rest/services/miljoe/dokumentation_polygon_offentlig_visning": {
+   "url": "https://kort.vd.dk/server/rest/services/miljoe/Dokumentation_polygon_offentlig_visning/FeatureServer",
+   "cc": "DK",
+   "title": "miljoe/Dokumentation_polygon_offentlig_visning",
+   "publisher": "kort.vd.dk",
+   "catalog": "agency server kort.vd.dk",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 25,
+     "name": "Dokumentation - polygon",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Stednavn",
+      "Type",
+      "Status",
+      "Bemaerkninger",
+      "GlobalID",
+      "created_user",
+      "created_date",
+      "last_edited_user",
+      "last_edited_date",
+      "Shape__Area",
+      "Shape__Length",
+      "dok_poly_id",
+      "created_user_vis",
+      "edited_user_vis",
+      "edited_date_vis",
+      "created_date_vis",
+      "SHAPE_STArea__",
+      "SHAPE_STLength__"
+     ],
+     "records": 3519,
+     "sample": [
+      "None",
+      "VD_041_019/0500_H2",
+      "None"
+     ],
+     "name_field": "Stednavn"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://kort.vd.dk/server/rest/services/miljoe/vd_ejendomme_offentlig_visning": {
+   "url": "https://kort.vd.dk/server/rest/services/miljoe/VD_ejendomme_offentlig_visning/FeatureServer",
+   "cc": "DK",
+   "title": "miljoe/VD_ejendomme_offentlig_visning",
+   "publisher": "kort.vd.dk",
+   "catalog": "agency server kort.vd.dk",
+   "licence": "Vejdirektoratet (VD)",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 1,
+     "name": "VD ejendomme",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "timestamp",
+      "matrikelnummer",
+      "landsejerlavskode",
+      "kommunenr",
+      "ejer_navn",
+      "bfe_nr",
+      "dato_redigeret",
+      "GlobalID",
+      "OBJECTID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 3385,
+     "sample": [
+      "**Offentlig vej**",
+      "**Offentlig vej**",
+      "**Offentlig vej**"
+     ],
+     "name_field": "ejer_navn"
+    }
+   ],
+   "note": "",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://kort.vd.dk/server/rest/services/hosted/extent_polygon": {
+   "url": "https://kort.vd.dk/server/rest/services/Hosted/Extent_polygon/FeatureServer",
+   "cc": "DK",
+   "title": "Hosted/Extent_polygon",
+   "publisher": "kort.vd.dk",
+   "catalog": "agency server kort.vd.dk",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Extent polygon",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "fid",
+      "notetype",
+      "name",
+      "notes",
+      "created_us",
+      "created_da",
+      "last_edite",
+      "last_edi_1",
+      "shape_leng",
+      "SHAPE__Length",
+      "SHAPE__Area"
+     ],
+     "records": 1,
+     "sample": [
+      " "
+     ],
+     "name_field": "name"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://kort.vd.dk/server/rest/services/hosted/linje1_asfalt2d_merge": {
+   "url": "https://kort.vd.dk/server/rest/services/Hosted/Linje1_Asfalt2D_Merge/FeatureServer",
+   "cc": "DK",
+   "title": "Hosted/Linje1_Asfalt2D_Merge",
+   "publisher": "kort.vd.dk",
+   "catalog": "agency server kort.vd.dk",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 4,
+     "name": "Linje1_Asfalt2D_Merge",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid_1",
+      "objectid",
+      "buff_dist",
+      "orig_fid",
+      "db_m2kwj_h",
+      "handle",
+      "level_",
+      "layer",
+      "lvldesc",
+      "lyrfrzn",
+      "lyrlock",
+      "lyron",
+      "lvlplot",
+      "color",
+      "entcolor",
+      "lyrcolor",
+      "linetype",
+      "entlinetyp",
+      "lyrlntype",
+      "elevation"
+     ],
+     "records": 4,
+     "sample": [
+      " ",
+      " ",
+      " "
+     ],
+     "name_field": "refname"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://kort.vd.dk/server/rest/services/hosted/linje2_asfalt2d_merge": {
+   "url": "https://kort.vd.dk/server/rest/services/Hosted/Linje2_Asfalt2D_Merge/FeatureServer",
+   "cc": "DK",
+   "title": "Hosted/Linje2_Asfalt2D_Merge",
+   "publisher": "kort.vd.dk",
+   "catalog": "agency server kort.vd.dk",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 4,
+     "name": "Linje2_Asfalt2D_Merge",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "entity",
+      "handle",
+      "level",
+      "layer",
+      "lvldesc",
+      "lyrfrzn",
+      "lyrlock",
+      "lyron",
+      "lvlplot",
+      "color",
+      "entcolor",
+      "lyrcolor",
+      "linetype",
+      "entlinetype",
+      "lyrlntype",
+      "elevation",
+      "class",
+      "ggroup",
+      "cadmodel"
+     ],
+     "records": 2,
+     "sample": [
+      "None",
+      "None"
+     ],
+     "name_field": "refname"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://kort.vd.dk/server/rest/services/hosted/linje3_asfalt2d_merge": {
+   "url": "https://kort.vd.dk/server/rest/services/Hosted/Linje3_Asfalt2D_Merge/FeatureServer",
+   "cc": "DK",
+   "title": "Hosted/Linje3_Asfalt2D_Merge",
+   "publisher": "kort.vd.dk",
+   "catalog": "agency server kort.vd.dk",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 4,
+     "name": "Linje3_Asfalt2D_Merge",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "buff_dist",
+      "orig_fid",
+      "entity",
+      "handle",
+      "level_",
+      "layer",
+      "lvldesc",
+      "lyrfrzn",
+      "lyrlock",
+      "lyron",
+      "lvlplot",
+      "color",
+      "entcolor",
+      "lyrcolor",
+      "linetype",
+      "entlinetype",
+      "lyrlntype",
+      "elevation",
+      "class"
+     ],
+     "records": 2,
+     "sample": [
+      "None",
+      "None"
+     ],
+     "name_field": "refname"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://kort.vd.dk/server/rest/services/hosted/linje4_asfalt2d_merge": {
+   "url": "https://kort.vd.dk/server/rest/services/Hosted/Linje4_Asfalt2D_Merge/FeatureServer",
+   "cc": "DK",
+   "title": "Hosted/Linje4_Asfalt2D_Merge",
+   "publisher": "kort.vd.dk",
+   "catalog": "agency server kort.vd.dk",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 4,
+     "name": "Linje4_Asfalt2D_Merge",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "buff_dist",
+      "orig_fid",
+      "entity",
+      "handle",
+      "level_",
+      "layer",
+      "lvldesc",
+      "lyrfrzn",
+      "lyrlock",
+      "lyron",
+      "lvlplot",
+      "color",
+      "entcolor",
+      "lyrcolor",
+      "linetype",
+      "entlinetype",
+      "lyrlntype",
+      "elevation",
+      "class"
+     ],
+     "records": 4,
+     "sample": [
+      "None",
+      "None",
+      "None"
+     ],
+     "name_field": "refname"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://kort.vd.dk/server/rest/services/hosted/linje5_asfalt2d_merge": {
+   "url": "https://kort.vd.dk/server/rest/services/Hosted/Linje5_Asfalt2D_Merge/FeatureServer",
+   "cc": "DK",
+   "title": "Hosted/Linje5_Asfalt2D_Merge",
+   "publisher": "kort.vd.dk",
+   "catalog": "agency server kort.vd.dk",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 3,
+     "name": "Linje5_Asfalt2D_Merge",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "buff_dist",
+      "orig_fid",
+      "entity",
+      "handle",
+      "level_",
+      "layer",
+      "lvldesc",
+      "lyrfrzn",
+      "lyrlock",
+      "lyron",
+      "lvlplot",
+      "color",
+      "entcolor",
+      "lyrcolor",
+      "linetype",
+      "entlinetype",
+      "lyrlntype",
+      "elevation",
+      "class"
+     ],
+     "records": 4,
+     "sample": [
+      "None",
+      "None",
+      "None"
+     ],
+     "name_field": "refname"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://kort.vd.dk/server/rest/services/hosted/linje6_asfalt2d_merge": {
+   "url": "https://kort.vd.dk/server/rest/services/Hosted/Linje6_Asfalt2D_Merge/FeatureServer",
+   "cc": "DK",
+   "title": "Hosted/Linje6_Asfalt2D_Merge",
+   "publisher": "kort.vd.dk",
+   "catalog": "agency server kort.vd.dk",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 5,
+     "name": "Linje6_Asfalt2D_Merge",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "entity",
+      "handle",
+      "level",
+      "layer",
+      "lvldesc",
+      "lyrfrzn",
+      "lyrlock",
+      "lyron",
+      "lvlplot",
+      "color",
+      "entcolor",
+      "lyrcolor",
+      "linetype",
+      "entlinetype",
+      "lyrlntype",
+      "elevation",
+      "class",
+      "ggroup",
+      "cadmodel"
+     ],
+     "records": 19,
+     "sample": [
+      "None",
+      "None",
+      "None"
+     ],
+     "name_field": "refname"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://kort.vd.dk/server/rest/services/hosted/linje7_asfalt2d_merge": {
+   "url": "https://kort.vd.dk/server/rest/services/Hosted/Linje7_Asfalt2D_Merge/FeatureServer",
+   "cc": "DK",
+   "title": "Hosted/Linje7_Asfalt2D_Merge",
+   "publisher": "kort.vd.dk",
+   "catalog": "agency server kort.vd.dk",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 5,
+     "name": "Linje7_Asfalt2D_Merge",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "entity",
+      "handle",
+      "level_",
+      "layer",
+      "lvldesc",
+      "lyrfrzn",
+      "lyrlock",
+      "lyron",
+      "lvlplot",
+      "color",
+      "entcolor",
+      "lyrcolor",
+      "linetype",
+      "entlinetype",
+      "lyrlntype",
+      "elevation",
+      "class",
+      "ggroup",
+      "cadmodel"
+     ],
+     "records": 4,
+     "sample": [
+      "None",
+      "None",
+      "None"
+     ],
+     "name_field": "refname"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://kort.vd.dk/server/rest/services/hosted/soelinje_2_modelleringsomraade": {
+   "url": "https://kort.vd.dk/server/rest/services/Hosted/SoeLinje_2_Modelleringsomraade/FeatureServer",
+   "cc": "DK",
+   "title": "Hosted/SoeLinje_2_Modelleringsomraade",
+   "publisher": "kort.vd.dk",
+   "catalog": "agency server kort.vd.dk",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 3,
+     "name": "SoeLinje_2_Modelleringsomraade",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid",
+      "fot_id",
+      "mob_id",
+      "feat_kode",
+      "feat_type",
+      "featstatus",
+      "geomstatus",
+      "soetype",
+      "salt_soe",
+      "temporaer",
+      "under_min",
+      "oe_under",
+      "timeof_cre",
+      "timeof_pub",
+      "timeof_rev",
+      "timeof_exp",
+      "SHAPE__Length",
+      "SHAPE__Area"
+     ],
+     "records": 429
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://kort.vd.dk/server/rest/services/hosted/soelinje_3_modelleringsomraade": {
+   "url": "https://kort.vd.dk/server/rest/services/Hosted/SoeLinje_3_Modelleringsomraade/FeatureServer",
+   "cc": "DK",
+   "title": "Hosted/SoeLinje_3_Modelleringsomraade",
+   "publisher": "kort.vd.dk",
+   "catalog": "agency server kort.vd.dk",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 2,
+     "name": "SoeLinje_3_Modelleringsomraade",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid",
+      "fot_id",
+      "mob_id",
+      "feat_kode",
+      "feat_type",
+      "featstatus",
+      "geomstatus",
+      "soetype",
+      "salt_soe",
+      "temporaer",
+      "under_min",
+      "oe_under",
+      "timeof_cre",
+      "timeof_pub",
+      "timeof_rev",
+      "timeof_exp",
+      "SHAPE__Length",
+      "SHAPE__Area"
+     ],
+     "records": 454
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://kort.vd.dk/server/rest/services/hosted/soelinje_4_modelleringsomraade": {
+   "url": "https://kort.vd.dk/server/rest/services/Hosted/SoeLinje_4_Modelleringsomraade/FeatureServer",
+   "cc": "DK",
+   "title": "Hosted/SoeLinje_4_Modelleringsomraade",
+   "publisher": "kort.vd.dk",
+   "catalog": "agency server kort.vd.dk",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "SoeLinje_4_Modelleringsomraade",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid",
+      "fot_id",
+      "mob_id",
+      "feat_kode",
+      "feat_type",
+      "featstatus",
+      "geomstatus",
+      "soetype",
+      "salt_soe",
+      "temporaer",
+      "under_min",
+      "oe_under",
+      "timeof_cre",
+      "timeof_pub",
+      "timeof_rev",
+      "timeof_exp",
+      "SHAPE__Length",
+      "SHAPE__Area"
+     ],
+     "records": 411
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://kort.vd.dk/server/rest/services/hosted/soelinje_4_modelleringsomraade_v2": {
+   "url": "https://kort.vd.dk/server/rest/services/Hosted/SoeLinje_4_Modelleringsomraade_V2/FeatureServer",
+   "cc": "DK",
+   "title": "Hosted/SoeLinje_4_Modelleringsomraade_V2",
+   "publisher": "kort.vd.dk",
+   "catalog": "agency server kort.vd.dk",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 3,
+     "name": "SoeLinje_4_Modelleringsomraade",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid",
+      "fot_id",
+      "mob_id",
+      "feat_kode",
+      "feat_type",
+      "featstatus",
+      "geomstatus",
+      "soetype",
+      "salt_soe",
+      "temporaer",
+      "under_min",
+      "oe_under",
+      "timeof_cre",
+      "timeof_pub",
+      "timeof_rev",
+      "timeof_exp",
+      "SHAPE__Length",
+      "SHAPE__Area"
+     ],
+     "records": 411
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://kort.vd.dk/server/rest/services/hosted/soelinje_5_modelleringsomraade": {
+   "url": "https://kort.vd.dk/server/rest/services/Hosted/SoeLinje_5_Modelleringsomraade/FeatureServer",
+   "cc": "DK",
+   "title": "Hosted/SoeLinje_5_Modelleringsomraade",
+   "publisher": "kort.vd.dk",
+   "catalog": "agency server kort.vd.dk",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 2,
+     "name": "SoeLinje_5_Modelleringsomraade",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid",
+      "fot_id",
+      "mob_id",
+      "feat_kode",
+      "feat_type",
+      "featstatus",
+      "geomstatus",
+      "soetype",
+      "salt_soe",
+      "temporaer",
+      "under_min",
+      "oe_under",
+      "timeof_cre",
+      "timeof_pub",
+      "timeof_rev",
+      "timeof_exp",
+      "SHAPE__Length",
+      "SHAPE__Area"
+     ],
+     "records": 387
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://kort.vd.dk/server/rest/services/hosted/soelinje_6_modelleringsomraade": {
+   "url": "https://kort.vd.dk/server/rest/services/Hosted/SoeLinje_6_Modelleringsomraade/FeatureServer",
+   "cc": "DK",
+   "title": "Hosted/SoeLinje_6_Modelleringsomraade",
+   "publisher": "kort.vd.dk",
+   "catalog": "agency server kort.vd.dk",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 3,
+     "name": "SoeLinje_6_Modelleringsomraade",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid",
+      "fot_id",
+      "mob_id",
+      "feat_kode",
+      "feat_type",
+      "featstatus",
+      "geomstatus",
+      "soetype",
+      "salt_soe",
+      "temporaer",
+      "under_min",
+      "oe_under",
+      "timeof_cre",
+      "timeof_pub",
+      "timeof_rev",
+      "timeof_exp",
+      "SHAPE__Length",
+      "SHAPE__Area"
+     ],
+     "records": 403
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://kort.vd.dk/server/rest/services/hosted/soelinje_7_modelleringsomraade": {
+   "url": "https://kort.vd.dk/server/rest/services/Hosted/SoeLinje_7_Modelleringsomraade/FeatureServer",
+   "cc": "DK",
+   "title": "Hosted/SoeLinje_7_Modelleringsomraade",
+   "publisher": "kort.vd.dk",
+   "catalog": "agency server kort.vd.dk",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 4,
+     "name": "SoeLinje_7_Modelleringsomraade",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid",
+      "fot_id",
+      "mob_id",
+      "feat_kode",
+      "feat_type",
+      "featstatus",
+      "geomstatus",
+      "soetype",
+      "salt_soe",
+      "temporaer",
+      "under_min",
+      "oe_under",
+      "timeof_cre",
+      "timeof_pub",
+      "timeof_rev",
+      "timeof_exp",
+      "SHAPE__Length",
+      "SHAPE__Area"
+     ],
+     "records": 396
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://kort.vd.dk/server/rest/services/miljoe/miljoe_vaerdifuldnatur_offentlig_test": {
+   "url": "https://kort.vd.dk/server/rest/services/miljoe/MILJOE_vaerdifuldnatur_offentlig_test/MapServer",
+   "cc": "DK",
+   "title": "miljoe/MILJOE_vaerdifuldnatur_offentlig_test",
+   "publisher": "kort.vd.dk",
+   "catalog": "agency server kort.vd.dk",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 1,
+     "name": "MILJOE vaerdifuldnatur offentlig",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Shape",
+      "Type",
+      "Link",
+      "GlobalID",
+      "AktID",
+      "areal",
+      "created_date_vis",
+      "edited_date_vis"
+     ],
+     "records": 101974
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://kort.vd.dk/server/rest/services/miljoe/vaerdifuld_natur": {
+   "url": "https://kort.vd.dk/server/rest/services/miljoe/Vaerdifuld_natur/MapServer",
+   "cc": "DK",
+   "title": "miljoe/Vaerdifuld_natur",
+   "publisher": "kort.vd.dk",
+   "catalog": "agency server kort.vd.dk",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 1,
+     "name": "langs infrastruktur offentlig",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Shape",
+      "Type",
+      "Link",
+      "GlobalID",
+      "AktID",
+      "areal",
+      "created_date_vis",
+      "edited_date_vis"
+     ],
+     "records": 101974
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  }
+ }
+}

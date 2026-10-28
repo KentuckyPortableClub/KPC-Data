@@ -2,14 +2,21 @@
  "about": "World harvester leads for Portugal (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "PT",
  "date": "2026-10-28",
- "status": "paused (out of time, will carry on)",
+ "status": "done",
  "steps_done": [
-  "known"
+  "known",
+  "servers",
+  "wfs",
+  "orgs",
+  "catalogs",
+  "downloads",
+  "search",
+  "eea"
  ],
  "bands": {
-  "A": 16,
-  "B": 39,
-  "C": 6
+  "A": 21,
+  "B": 58,
+  "C": 29
  },
  "known_good_found": [
   "https://sigservices.icnf.pt/server/rest/services/BDG/POAP/MapServer"
@@ -1428,6 +1435,81 @@
    "grade": 5,
    "band": "A"
   },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/limite_pnsac": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/Limite_PNSAC/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/Limite_PNSAC",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "access",
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 2,
+     "name": "Limite da área protegida",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "ap_sigla",
+      "ap_nome",
+      "jurisdição",
+      "class",
+      "SHAPE__Length",
+      "SHAPE__Area"
+     ],
+     "records": 1,
+     "sample": [
+      "Parque Natural das Serras de Aire e Candeeiros"
+     ],
+     "name_field": "ap_nome"
+    },
+    {
+     "id": 0,
+     "name": "Coordenadas dos vértices",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "point_x",
+      "point_y",
+      "ap_sigla",
+      "nr",
+      "point_long",
+      "point_lat"
+     ],
+     "records": 435
+    },
+    {
+     "id": 1,
+     "name": "Troços do limite",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid",
+      "id",
+      "descritivo",
+      "buff_dist",
+      "orig_fid",
+      "SHAPE__Length",
+      "SHAPE__Area"
+     ],
+     "records": 75
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 5,
+   "band": "A"
+  },
   "https://sigservices.icnf.pt/server/rest/services/hosted/limite_pnsac_alargamento": {
    "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/Limite_PNSAC_Alargamento/FeatureServer",
    "cc": "PT",
@@ -1479,6 +1561,409 @@
       "ponti_lat"
      ],
      "records": 401
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 5,
+   "band": "A"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/limite_pnti": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/Limite_PNTI/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/Limite_PNTI",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "access",
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Coordenadas dos vértices",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "id",
+      "objectid",
+      "point_x",
+      "poin_y",
+      "point_long",
+      "point_lat"
+     ],
+     "records": 892
+    },
+    {
+     "id": 1,
+     "name": "Troços do limite",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid",
+      "id",
+      "shape_leng",
+      "descricao",
+      "SHAPE__Length",
+      "SHAPE__Area"
+     ],
+     "records": 164
+    },
+    {
+     "id": 2,
+     "name": "Proposta de republicação dos limites do PNVG",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "source",
+      "fid_",
+      "poap",
+      "poap_nome",
+      "area_ha",
+      "area_ab",
+      "SHAPE__Length",
+      "SHAPE__Area"
+     ],
+     "records": 1,
+     "sample": [
+      "Parque Natural do Tejo Internacional"
+     ],
+     "name_field": "poap_nome"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 5,
+   "band": "A"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/limite_pnvg": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/Limite_PNVG/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/Limite_PNVG",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "access",
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Coordenadas dos vértices",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "id",
+      "objectid",
+      "point_x",
+      "point_y",
+      "point_long",
+      "point_lat"
+     ],
+     "records": 482
+    },
+    {
+     "id": 1,
+     "name": "Troços do limite",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid",
+      "id",
+      "descrição",
+      "SHAPE__Length",
+      "SHAPE__Area"
+     ],
+     "records": 79
+    },
+    {
+     "id": 2,
+     "name": "Proposta de republicação dos limites do PNVG",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "nome",
+      "classifica",
+      "jurisdicao",
+      "sigla",
+      "area_ha",
+      "SHAPE__Length",
+      "SHAPE__Area"
+     ],
+     "records": 1,
+     "sample": [
+      "Parque Natural do Vale do Guadiana"
+     ],
+     "name_field": "nome"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 5,
+   "band": "A"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/mapa_da_mn_leiria": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/Mapa_da_MN_Leiria/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/Mapa_da_MN_Leiria",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 2,
+     "name": "Limite da Mata Nacional",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "fid",
+      "nome",
+      "area",
+      "area_qgis",
+      "SHAPE__Length",
+      "SHAPE__Area"
+     ],
+     "records": 1,
+     "sample": [
+      "Mata Nacional de Leiria"
+     ],
+     "name_field": "nome"
+    },
+    {
+     "id": 0,
+     "name": "Limite da área ardida 2017",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "fid",
+      "cod_sgif",
+      "fonte",
+      "nome",
+      "distrito",
+      "tipo",
+      "ano",
+      "areapov",
+      "areamato",
+      "areaagric",
+      "areatotal",
+      "reacendime",
+      "queimada",
+      "falso_alar",
+      "fogacho",
+      "incendio",
+      "agricola",
+      "nomecco",
+      "dataalerta",
+      "horaalerta"
+     ],
+     "records": 1,
+     "sample": [
+      "REE de Leiria"
+     ],
+     "name_field": "nome"
+    },
+    {
+     "id": 1,
+     "name": "Talhões (N.º)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "fid",
+      "talhoes",
+      "area",
+      "SHAPE__Length",
+      "SHAPE__Area"
+     ],
+     "records": 394
+    },
+    {
+     "id": 3,
+     "name": "EM EXECUÇÃO / PLANEADO 2022-2025",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "fid",
+      "tipo",
+      "tipo_id",
+      "projetos",
+      "planeam",
+      "meio_exec",
+      "periodo",
+      "financ",
+      "area",
+      "observ",
+      "SHAPE__Length",
+      "SHAPE__Area"
+     ],
+     "records": 1071
+    },
+    {
+     "id": 4,
+     "name": "PDR2020 - CP20/2021/Controlo de pragas e doenças",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "fid",
+      "tipo",
+      "tipo_id",
+      "projetos",
+      "planeam",
+      "meio_exec",
+      "periodo",
+      "financ",
+      "area",
+      "observ",
+      "SHAPE__Length",
+      "SHAPE__Area"
+     ],
+     "records": 98
+    },
+    {
+     "id": 5,
+     "name": "PDR2020 - CP20/2021/Controlo de invasoras lenhosas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "fid",
+      "tipo",
+      "tipo_id",
+      "projetos",
+      "planeam",
+      "meio_exec",
+      "periodo",
+      "financ",
+      "area",
+      "observ",
+      "SHAPE__Length",
+      "SHAPE__Area"
+     ],
+     "records": 53
+    },
+    {
+     "id": 6,
+     "name": "Área de proteção",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "fid",
+      "tipo",
+      "tipo_id",
+      "projetos",
+      "planeam",
+      "meio_exec",
+      "periodo",
+      "financ",
+      "area",
+      "observ",
+      "SHAPE__Length",
+      "SHAPE__Area"
+     ],
+     "records": 39
+    },
+    {
+     "id": 7,
+     "name": "EXECUTADO 2020-2022",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "fid",
+      "tipo",
+      "tipo_id",
+      "projetos",
+      "planeam",
+      "meio_exec",
+      "periodo",
+      "financ",
+      "area",
+      "observ",
+      "SHAPE__Length",
+      "SHAPE__Area"
+     ],
+     "records": 1071
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 5,
+   "band": "A"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/rnls_ap": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/RNLS_AP/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/RNLS_AP",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "access",
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "RNLS_pontos_finais",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "fid",
+      "nr",
+      "point_x",
+      "point_y",
+      "point_long",
+      "point_lat"
+     ],
+     "records": 54
+    },
+    {
+     "id": 2,
+     "name": "RNLS_poligono_final",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "fid",
+      "shape_leng",
+      "nome",
+      "classifica",
+      "area_ha",
+      "jurisdicao",
+      "sigla"
+     ],
+     "records": 1,
+     "sample": [
+      "Lagoa dos Salgados"
+     ],
+     "name_field": "nome"
     }
    ],
    "note": "",
@@ -3806,6 +4291,796 @@
    "grade": 4,
    "band": "B"
   },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/nutsiii_drcnf": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/NUTSIII_DRCNF/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/NUTSIII_DRCNF",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "NUTSIII_DRCNF",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid",
+      "fid_l0direções_regionais_da_con",
+      "drcnf",
+      "area_ha",
+      "fid_l2nuts_iii",
+      "nuts3_ds",
+      "nuts3_cod",
+      "area_ha_1",
+      "analysisarea"
+     ],
+     "records": 31
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "B"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/nutsii_nutsiii": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/NUTSII_NUTSIII/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/NUTSII_NUTSIII",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "NUTSII_NUTSIII",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid",
+      "fid_l2nuts_iii",
+      "nuts3_ds",
+      "nuts3_cod",
+      "area_ha",
+      "fid_l1nuts_ii",
+      "nutsii_dsg",
+      "nutsii_cod",
+      "area_ha_1",
+      "analysisarea"
+     ],
+     "records": 23
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "B"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/pnrn_artigo11": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/PNRN_Artigo11/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/PNRN_Artigo11",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Base-Ecossistemas Agricolas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid",
+      "id",
+      "cos23_n4_c",
+      "descrição",
+      "classe",
+      "a11_subclasse",
+      "area_ha",
+      "SHAPE__Length",
+      "SHAPE__Area"
+     ],
+     "records": 354703
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "B"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/pnrn_artigo12": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/PNRN_Artigo12/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/PNRN_Artigo12",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Base-Ecossistemas Florestais",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid",
+      "id",
+      "cos23_n4_c",
+      "descrição",
+      "classe",
+      "a12_floresta",
+      "a12_especie",
+      "area_ha",
+      "SHAPE__Length",
+      "SHAPE__Area"
+     ],
+     "records": 283254
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "B"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/pnrn_artigo8": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/PNRN_Artigo8/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/PNRN_Artigo8",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "Grupo de trabalho do Plano Nacional do Restauro da Natureza",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "EcossistemasUrbanosAreasVerdes",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "fid",
+      "dtmnfr",
+      "freguesia",
+      "municipio",
+      "distrito",
+      "nuts3",
+      "nuts2",
+      "nuts1",
+      "uea_km2",
+      "ugs_km2",
+      "areafrg_ha",
+      "uea_id",
+      "pc_uea_fr",
+      "pc_ugs_uea",
+      "tcc_km2",
+      "pc_tcc_uea",
+      "SHAPE__Length",
+      "SHAPE__Area"
+     ],
+     "records": 874
+    },
+    {
+     "id": 1,
+     "name": "Ecossistemas_Urbanos_Prioritarios",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "fid",
+      "dtmnfr",
+      "freguesia",
+      "municipio",
+      "distrito",
+      "nuts1",
+      "nuts2",
+      "nuts3",
+      "areafrg_ha",
+      "uea_id",
+      "uea_km2",
+      "pc_uea_fr",
+      "ugs_km2",
+      "pc_ugs_uea",
+      "tcc_km2",
+      "pc_tcc_uea",
+      "SHAPE__Length",
+      "SHAPE__Area"
+     ],
+     "records": 361
+    },
+    {
+     "id": 2,
+     "name": "EcossitemasUrbanos",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "fid",
+      "dtmnfr",
+      "freguesia",
+      "municipio",
+      "distrito",
+      "nuts1",
+      "nuts2",
+      "nuts3",
+      "areafrg_ha",
+      "uea_id",
+      "uea_km2",
+      "pc_uea_fr",
+      "ugs_km2",
+      "pc_ugs_uea",
+      "tcc_km2",
+      "pc_tcc_uea",
+      "SHAPE__Length",
+      "SHAPE__Area"
+     ],
+     "records": 882
+    }
+   ],
+   "note": "",
+   "grade": 4,
+   "band": "B"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/pnrn_artigo9": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/PNRN_Artigo9/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/PNRN_Artigo9",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "access"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Base-Conectividade dos rios - Barreiras",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "fid",
+      "f_codigo_ma",
+      "f_nome_mass",
+      "f_dimensao_"
+     ],
+     "records": 15601,
+     "sample": [
+      "Río Pacin",
+      "Embalse de Castro",
+      "Albufeira do Alto Lindoso"
+     ],
+     "name_field": "f_nome_mass"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "B"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/parcelas_ifn_invasoras": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/Parcelas_IFN_invasoras/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/Parcelas_IFN_invasoras",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "access"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Espécies invasoras - IFN",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "fid",
+      "objectid",
+      "id_parcela",
+      "nutsii",
+      "nutsiii",
+      "op_mancha",
+      "nome",
+      "abundancia",
+      "abundanc_1"
+     ],
+     "records": 1429,
+     "sample": [
+      "Figueira-da-Índia",
+      "Piteira",
+      "Acácias"
+     ],
+     "name_field": "nome"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "B"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/servicos": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/servicos/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/servicos",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "CAOP",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid",
+      "dicofre",
+      "di",
+      "dico",
+      "area_ha",
+      "freguesia",
+      "concelho",
+      "distrito",
+      "nutsiii_ds",
+      "nutsii_cod",
+      "nutsii_dsg"
+     ],
+     "records": 2882
+    },
+    {
+     "id": 1,
+     "name": "DRCNF",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid",
+      "drcnf",
+      "area_ha",
+      "drcnf_cod"
+     ],
+     "records": 5
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "B"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/rubus_testes/vespa_velutina_quadriculas": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Rubus_testes/Vespa_velutina_quadriculas/MapServer",
+   "cc": "PT",
+   "title": "Rubus_testes/Vespa_velutina_quadriculas",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Distribuicao_VespaVelutina_quadricula10k",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Shape",
+      "GREL_",
+      "GREL_ID",
+      "ID",
+      "AMOSTRA",
+      "QUEM",
+      "Point_Count",
+      "Shape_Length",
+      "Shape_Area"
+     ],
+     "records": 479
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "B"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/matas_nacionais/mnleiria": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/matas_nacionais/MNLeiria/FeatureServer",
+   "cc": "PT",
+   "title": "matas_nacionais/MNLeiria",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "access",
+    "area",
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 2,
+     "name": "MNLeiria_AreaLeslie2018",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "NOME",
+      "ENT_GES",
+      "FIRST_CODI",
+      "FIRST_ENT1",
+      "SUM_AREA_H",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 1,
+     "sample": [
+      "Mata Nacional de Leiria"
+     ],
+     "name_field": "NOME"
+    },
+    {
+     "id": 13,
+     "name": "MNLeiria_Limites_RF",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "NOME",
+      "ENT_GES",
+      "FIRST_CODI",
+      "FIRST_ID_M",
+      "FIRST_TIPO",
+      "FIRST_REGI",
+      "FIRST_PROP",
+      "FIRST_ENT_",
+      "FIRST_ENT1",
+      "SUM_AREA_H",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 1,
+     "sample": [
+      "Mata Nacional de Leiria"
+     ],
+     "name_field": "NOME"
+    },
+    {
+     "id": 0,
+     "name": "MNLeiria_Fotos",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "ID",
+      "Name",
+      "Date",
+      "Time",
+      "Lon",
+      "Lat",
+      "Altitude",
+      "Title",
+      "Comment",
+      "Path",
+      "RelPath",
+      "Timestamp"
+     ],
+     "records": 98,
+     "sample": [
+      "JC01_FOLHADO_Viburnum_tinus_L.jpg",
+      "JC02_PDR2020_814_055037.jpg",
+      "JC03_PDR2020_814_055037.JPG"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 2,
+     "name": "MNLeiria_AreaLeslie2018",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NOME",
+      "ENT_GES",
+      "FIRST_CODI",
+      "FIRST_ENT1",
+      "SUM_AREA_H",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Mata Nacional de Leiria"
+     ],
+     "name_field": "NOME"
+    },
+    {
+     "id": 4,
+     "name": "MNLeiria_ProjTremelgo",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "FID_ICNF_M",
+      "IDPROG",
+      "ENTIDADE",
+      "COD_EQUIPA",
+      "NOME",
+      "ANO",
+      "N_DIAS",
+      "TIPO_OCT",
+      "TIPO_GEST",
+      "DESC_FGC",
+      "TIPO_INTER",
+      "INTERV",
+      "FIN",
+      "OBSERV",
+      "ESTADO",
+      "DATA_INTER",
+      "DATA_INIC",
+      "NOME_SHP",
+      "TECNICO"
+     ],
+     "records": 2,
+     "sample": [
+      "Mata Nacional de Leiria",
+      "Mata Nacional de Leiria"
+     ],
+     "name_field": "NOME"
+    },
+    {
+     "id": 5,
+     "name": "MNLeiria_Voluntariado",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "FID_MN_LEI",
+      "IDPROG",
+      "ENTIDADE",
+      "COD_EQUIPA",
+      "NOME",
+      "ANO",
+      "N_DIAS",
+      "TIPO_OCT",
+      "TIPO_GEST",
+      "DESC_FGC",
+      "TIPO_INTER",
+      "INTERV",
+      "FIN",
+      "OBSERV",
+      "ESTADO",
+      "DATA_INTER",
+      "DATA_INIC",
+      "NOME_SHP",
+      "TECNICO"
+     ],
+     "records": 71,
+     "sample": [
+      "Mata Nacional de Leiria",
+      "Mata Nacional de Leiria",
+      "Mata Nacional de Leiria"
+     ],
+     "name_field": "NOME"
+    },
+    {
+     "id": 6,
+     "name": "MNLeiria_RSFGC",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "FID_MN_LEI",
+      "ID_R_FGC",
+      "ID_S_FGC",
+      "DATA_ACCAO",
+      "DISTRITO",
+      "CONCELHO",
+      "COD_INE",
+      "PF_MN",
+      "DESC_FGC",
+      "TIPO_FGC",
+      "OBJEC_FUNC",
+      "RESP_FGC",
+      "INTER_2018",
+      "EXEC_2018",
+      "FIN_2018",
+      "FASE_2018",
+      "INTER_2019",
+      "EXEC_2019",
+      "FIN_2019"
+     ],
+     "records": 183
+    },
+    {
+     "id": 7,
+     "name": "MNLeiria_Projetos",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "IDPROG",
+      "ENTIDADE",
+      "COD_EQUIPA",
+      "NOME",
+      "ANO",
+      "N_DIAS",
+      "TIPO_OCT",
+      "TIPO_GEST",
+      "DESC_FGC",
+      "TIPO_INTER",
+      "INTERV",
+      "FIN",
+      "OBSERV",
+      "ESTADO",
+      "DATA_INTER",
+      "DATA_INIC",
+      "NOME_SHP",
+      "ID_NUMERO",
+      "NIF"
+     ],
+     "records": 312,
+     "sample": [
+      "Mata Nacional de Leiria",
+      "Mata Nacional de Leiria",
+      "Mata Nacional de Leiria"
+     ],
+     "name_field": "NOME"
+    },
+    {
+     "id": 8,
+     "name": "MNLeiria_PDR2020",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "ID",
+      "NIF",
+      "NOME",
+      "SUBTIPO",
+      "NIFAP",
+      "MN_PF",
+      "TIPO_INTER",
+      "INTERV",
+      "LOTE",
+      "TECNICO",
+      "TALHAO",
+      "PARCELA",
+      "NUMERO",
+      "LOCAL",
+      "OBSERV",
+      "PDR2020",
+      "Area_ha",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 338,
+     "sample": [
+      "8_MNL_814_35",
+      "375_MNL_814_35",
+      "9_MNL_814_35"
+     ],
+     "name_field": "NOME"
+    },
+    {
+     "id": 9,
+     "name": "MNLeiria_ExploracaoFlorestal",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Função",
+      "Talhões_M",
+      "Talhões",
+      "Espécie",
+      "Parcela",
+      "P",
+      "Area_ha",
+      "Estado",
+      "Venda",
+      "Lotes",
+      "Causa",
+      "Ano",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 682
+    },
+    {
+     "id": 11,
+     "name": "MNLeiria_Talhoes",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Talhões",
+      "Hectares",
+      "Culturais",
+      "Regiao_hom",
+      "ID",
+      "Perim_m",
+      "Shape__Area",
+      "Shape__Length",
+      "DBO.MNLeiria_Talhoes.Area"
+     ],
+     "records": 392
+    },
+    {
+     "id": 12,
+     "name": "MNLeiria_Limites",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Hectares",
+      "ID",
+      "Perim_m",
+      "Shape__Area",
+      "Shape__Length",
+      "DBO.MNLeiria_Limites.Area"
+     ],
+     "records": 3
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "B"
+  },
   "https://sigservices.icnf.pt/server/rest/services/bdg/atlas_bivalves": {
    "url": "https://sigservices.icnf.pt/server/rest/services/BDG/Atlas_Bivalves/MapServer",
    "cc": "PT",
@@ -4377,6 +5652,446 @@
    "grade": 3,
    "band": "B"
   },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/pnrn_plantometro_opendata": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/PNRN_Plantometro_OpenData/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/PNRN_Plantometro_OpenData",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "access"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "PNRN___Plantometro",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "globalid",
+      "iniciativa_flag",
+      "iniciativa",
+      "tipologia_acao",
+      "entidade_flag",
+      "entidade_tipo",
+      "entidade_nome",
+      "especies",
+      "especie_outra",
+      "especie_comum",
+      "n_arvores",
+      "ano_plantacao",
+      "municipio",
+      "freguesia",
+      "area_ha",
+      "uso_solo",
+      "tipo_propriedade"
+     ],
+     "records": 10,
+     "sample": [
+      "None",
+      "CNE - Agrupamento 1021 - Praia da Barra",
+      "Agrup. 1076 Vieira de Leiria, Corpo Nacional de Es"
+     ],
+     "name_field": "entidade_nome"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "B"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/percursos_sonoros_lince": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/Percursos_Sonoros_Lince/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/Percursos_Sonoros_Lince",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "access"
+   ],
+   "layers": [
+    {
+     "id": 1,
+     "name": "Pontos2a2b3",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "troco",
+      "nome",
+      "lat",
+      "long"
+     ],
+     "records": 3,
+     "sample": [
+      "Azenhas do Guadiana, Mértola",
+      "Vila de Mértola",
+      "Ribeira de Oeiras - Ponte de São João dos Caldeire"
+     ],
+     "name_field": "nome"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "B"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/rnls_ap_linha": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/RNLS_AP_linha/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/RNLS_AP_linha",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "RNLS_linhas_buffer",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "fid",
+      "id",
+      "shape_leng",
+      "descricao"
+     ],
+     "records": 10
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "B"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/rn2000_terrestres_dissolvidos": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/rn2000_terrestres_dissolvidos/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/rn2000_terrestres_dissolvidos",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "rn2000_terrestres_dissolvidos",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid",
+      "nutsi_dsg",
+      "count",
+      "sum_area_ha",
+      "analysisarea"
+     ],
+     "records": 1
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "B"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/service_0a56743b0c454784a02a2954e9129d04": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/service_0a56743b0c454784a02a2954e9129d04/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/service_0a56743b0c454784a02a2954e9129d04",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "access"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "RoazesRegistoEntidades",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "globalid",
+      "ambito",
+      "empresa",
+      "nif",
+      "email",
+      "senha",
+      "termos",
+      "created_user",
+      "created_date",
+      "last_edited_user",
+      "last_edited_date",
+      "valida_registo",
+      "debug",
+      "empresa_label",
+      "zona"
+     ],
+     "records": 1,
+     "sample": [
+      "Longitude"
+     ],
+     "name_field": "empresa_label"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "B"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/service_c13c503d1a46470888e898a00842ffc1": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/service_c13c503d1a46470888e898a00842ffc1/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/service_c13c503d1a46470888e898a00842ffc1",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "access",
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "UltraNovaDec_Lei59",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "globalid",
+      "uniquerowid",
+      "nif",
+      "senha",
+      "nome",
+      "data_registo",
+      "code_declaracao",
+      "aux_concelhos",
+      "aux_freguesia",
+      "local",
+      "nic",
+      "processo",
+      "parc_ifap",
+      "fonte_prd",
+      "id_predio",
+      "matriz",
+      "area_prd",
+      "area_florestal",
+      "perc_afetada"
+     ],
+     "count_err": "server error: {'code': 500, 'message': \"Capability"
+    },
+    {
+     "id": 1,
+     "name": "novos_predios",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid",
+      "globalid",
+      "id_parcela",
+      "parentrowid",
+      "SHAPE__Length",
+      "SHAPE__Area",
+      "created_user",
+      "created_date",
+      "last_edited_user",
+      "last_edited_date",
+      "area_parcela",
+      "area_ha_etrs"
+     ],
+     "count_err": "server error: {'code': 500, 'message': \"Capability"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "B"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/service_c13c503d1a46470888e898a00842ffc1_form": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/service_c13c503d1a46470888e898a00842ffc1_form/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/service_c13c503d1a46470888e898a00842ffc1_form",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "access",
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "UltraNovaDec_Lei59",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "globalid",
+      "uniquerowid",
+      "nif",
+      "senha",
+      "nome",
+      "data_registo",
+      "code_declaracao",
+      "aux_concelhos",
+      "aux_freguesia",
+      "local",
+      "nic",
+      "processo",
+      "parc_ifap",
+      "fonte_prd",
+      "id_predio",
+      "matriz",
+      "area_prd",
+      "area_florestal",
+      "perc_afetada"
+     ],
+     "count_err": "server error: {'code': 500, 'message': \"Capability"
+    },
+    {
+     "id": 1,
+     "name": "novos_predios",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid",
+      "globalid",
+      "id_parcela",
+      "parentrowid",
+      "SHAPE__Length",
+      "SHAPE__Area",
+      "created_user",
+      "created_date",
+      "last_edited_user",
+      "last_edited_date",
+      "area_parcela",
+      "area_ha_etrs"
+     ],
+     "count_err": "server error: {'code': 500, 'message': \"Capability"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "B"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/survey123_3a03a2f2052449d2b8bfd5ec9606f473": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/survey123_3a03a2f2052449d2b8bfd5ec9606f473/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/survey123_3a03a2f2052449d2b8bfd5ec9606f473",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "access"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "survey",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "globalid",
+      "created_user",
+      "created_date",
+      "last_edited_user",
+      "last_edited_date",
+      "identifica_o_do_participante",
+      "participa_o",
+      "termos_de_aceita_o"
+     ],
+     "records": 28
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "B"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/survey123_4afede19896a4e2889be75780e4142ac_results": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/survey123_4afede19896a4e2889be75780e4142ac_results/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/survey123_4afede19896a4e2889be75780e4142ac_results",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "access"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Censos_da_Cegonha_Branca",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "globalid",
+      "uniquerowid",
+      "data_registo",
+      "data_observacao",
+      "ano_censo",
+      "observadores",
+      "observador_outro",
+      "drcnf",
+      "municipio",
+      "distrito",
+      "nutsiii",
+      "nutsii",
+      "created_user",
+      "created_date",
+      "last_edited_user",
+      "last_edited_date",
+      "entidade",
+      "email",
+      "telefone"
+     ],
+     "records": 7939
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "B"
+  },
   "https://sigservices.icnf.pt/server/rest/services/bdg/geossitios": {
    "url": "https://sigservices.icnf.pt/server/rest/services/BDG/Geossitios/MapServer",
    "cc": "PT",
@@ -4484,6 +6199,1125 @@
    "grade": 2,
    "band": "C",
    "band_note": "only generic named areas (no park word): never band A"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/pontos": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/pontos/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/pontos",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "access"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "pontos",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "esrignss_speed",
+      "esrignss_direction",
+      "esrisnsr_azimuth",
+      "esrignss_positionsourcetype",
+      "esrignss_receiver",
+      "esrignss_h_rms",
+      "esrignss_v_rms",
+      "esrignss_latitude",
+      "esrignss_longitude",
+      "esrignss_altitude",
+      "esrignss_pdop",
+      "esrignss_hdop",
+      "esrignss_vdop",
+      "esrignss_fixtype",
+      "esrignss_correctionage",
+      "esrignss_stationid",
+      "esrignss_numsats",
+      "esrignss_fixdatetime",
+      "esrignss_avg_h_rms"
+     ],
+     "records": 6
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 2,
+   "band": "C"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/service_18929d81d79c40c78f3246ff0b932eab": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/service_18929d81d79c40c78f3246ff0b932eab/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/service_18929d81d79c40c78f3246ff0b932eab",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "access"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Monitorizacao_Roazes_EmpresasMT",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "globalid",
+      "uniquerowid",
+      "data_hora_saida",
+      "empresa",
+      "empresa_label",
+      "embarcacao",
+      "responsavel_emt",
+      "num_clientes",
+      "cond_clima",
+      "created_user",
+      "created_date",
+      "last_edited_user",
+      "last_edited_date",
+      "hora_fim"
+     ],
+     "count_err": "server error: {'code': 500, 'message': \"Capability"
+    },
+    {
+     "id": 1,
+     "name": "registo",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "globalid",
+      "hora_inicio",
+      "especie",
+      "outra_especie",
+      "num_indiv",
+      "crias_juvenis",
+      "num_crias_juvenis",
+      "comportamento",
+      "stress",
+      "sinais_stress",
+      "omt_licenciadas",
+      "emt_licenciadas",
+      "nautica_recreio",
+      "emt_nao_licenciadas",
+      "outras_emt",
+      "parentrowid",
+      "created_user",
+      "created_date",
+      "last_edited_user"
+     ],
+     "count_err": "server error: {'code': 500, 'message': \"Capability"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 2,
+   "band": "C"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/service_3bacd6db3805452ab23e21267efc6918": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/service_3bacd6db3805452ab23e21267efc6918/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/service_3bacd6db3805452ab23e21267efc6918",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "access"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "VNP_formulario",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "globalid",
+      "uniquerowid",
+      "equipa",
+      "senha",
+      "data_registo",
+      "tutor",
+      "created_user",
+      "created_date",
+      "last_edited_user",
+      "last_edited_date",
+      "codigo_evento"
+     ],
+     "count_err": "server error: {'code': 500, 'message': \"Capability"
+    },
+    {
+     "id": 1,
+     "name": "VNP_dados",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "globalid",
+      "tipo",
+      "tipo_depos",
+      "volume",
+      "movim_terras",
+      "especie_florestal",
+      "tipo_acessos",
+      "acessos_comp",
+      "tipo_especie",
+      "fauna_grupo",
+      "fauna",
+      "flora",
+      "nome_cientifico",
+      "flora_habitat",
+      "fauna_estado",
+      "tipo_constr",
+      "motorizada",
+      "nr_veiculos",
+      "nr_pessoas"
+     ],
+     "count_err": "server error: {'code': 500, 'message': \"Capability"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 2,
+   "band": "C"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/service_3bacd6db3805452ab23e21267efc6918_form": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/service_3bacd6db3805452ab23e21267efc6918_form/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/service_3bacd6db3805452ab23e21267efc6918_form",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "access"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "VNP_formulario",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "globalid",
+      "uniquerowid",
+      "equipa",
+      "senha",
+      "data_registo",
+      "tutor",
+      "created_user",
+      "created_date",
+      "last_edited_user",
+      "last_edited_date",
+      "codigo_evento"
+     ],
+     "count_err": "server error: {'code': 500, 'message': \"Capability"
+    },
+    {
+     "id": 1,
+     "name": "VNP_dados",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "globalid",
+      "tipo",
+      "tipo_depos",
+      "volume",
+      "movim_terras",
+      "especie_florestal",
+      "tipo_acessos",
+      "acessos_comp",
+      "tipo_especie",
+      "fauna_grupo",
+      "fauna",
+      "flora",
+      "nome_cientifico",
+      "flora_habitat",
+      "fauna_estado",
+      "tipo_constr",
+      "motorizada",
+      "nr_veiculos",
+      "nr_pessoas"
+     ],
+     "count_err": "server error: {'code': 500, 'message': \"Capability"
+    },
+    {
+     "id": 2,
+     "name": "VNP_formulario",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "globalid",
+      "uniquerowid",
+      "equipa",
+      "senha",
+      "data_registo",
+      "tutor",
+      "created_user",
+      "created_date",
+      "last_edited_user",
+      "last_edited_date",
+      "codigo_evento"
+     ],
+     "count_err": "server error: {'code': 500, 'message': \"Capability"
+    },
+    {
+     "id": 3,
+     "name": "VNP_dados",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "globalid",
+      "tipo",
+      "tipo_depos",
+      "volume",
+      "movim_terras",
+      "especie_florestal",
+      "tipo_acessos",
+      "acessos_comp",
+      "tipo_especie",
+      "fauna_grupo",
+      "fauna",
+      "flora",
+      "nome_cientifico",
+      "flora_habitat",
+      "fauna_estado",
+      "tipo_constr",
+      "motorizada",
+      "nr_veiculos",
+      "nr_pessoas"
+     ],
+     "count_err": "server error: {'code': 500, 'message': \"Capability"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 2,
+   "band": "C"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/service_3f5a5c520f82494094afd9fe065c3f7b": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/service_3f5a5c520f82494094afd9fe065c3f7b/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/service_3f5a5c520f82494094afd9fe065c3f7b",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "access"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "ATN___Registo_Interno",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "globalid",
+      "uniquerowid",
+      "drcnf",
+      "utilizador",
+      "entidade",
+      "marca",
+      "rnaat",
+      "atividades_cod",
+      "atividades_outra",
+      "atividades_atn_count",
+      "atividades",
+      "rnap_cod",
+      "ap_atn_count",
+      "rnap",
+      "zec_cod",
+      "zec_atn_count",
+      "rn2000_zec",
+      "zpe_cod",
+      "zpe_atn_count"
+     ],
+     "count_err": "server error: {'code': 500, 'message': \"Capability"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 2,
+   "band": "C"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/service_5da1d0a332c94d1eb0fb37451a1ff661": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/service_5da1d0a332c94d1eb0fb37451a1ff661/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/service_5da1d0a332c94d1eb0fb37451a1ff661",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "access"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "VN_Pioneiro___Inscricao",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "globalid",
+      "uniquerowid",
+      "equipa",
+      "concelho",
+      "area_protegida",
+      "mn",
+      "senha",
+      "elementos",
+      "termos",
+      "created_user",
+      "created_date",
+      "last_edited_user",
+      "last_edited_date",
+      "estado_equipa",
+      "tutor",
+      "categoria",
+      "local_atuacao"
+     ],
+     "records": 6
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 2,
+   "band": "C"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/service_8782e1046b384c538de16460446a31f6_form": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/service_8782e1046b384c538de16460446a31f6_form/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/service_8782e1046b384c538de16460446a31f6_form",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "access"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "VN_Pioneiro___Inscricao",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "globalid",
+      "uniquerowid",
+      "equipa",
+      "senha",
+      "concelho",
+      "area_protegida",
+      "mn",
+      "elementos",
+      "termos",
+      "created_user",
+      "created_date",
+      "last_edited_user",
+      "last_edited_date"
+     ],
+     "count_err": "server error: {'code': 500, 'message': \"Capability"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 2,
+   "band": "C"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/service_9658357a393c4ca98ea379e89ad7b100": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/service_9658357a393c4ca98ea379e89ad7b100/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/service_9658357a393c4ca98ea379e89ad7b100",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "access"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "registo_kristin_lei59",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "globalid",
+      "nif",
+      "nome",
+      "email",
+      "telefone",
+      "telf_pais",
+      "rua",
+      "num",
+      "codpostal",
+      "localidade",
+      "senha",
+      "created_user",
+      "created_date",
+      "last_edited_user",
+      "last_edited_date",
+      "termos",
+      "cc",
+      "cc_validade",
+      "cc_val_txt"
+     ],
+     "count_err": "server error: {'code': 500, 'message': \"Capability"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 2,
+   "band": "C"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/service_be57bed00962464ea4ea0ac63a0cec69": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/service_be57bed00962464ea4ea0ac63a0cec69/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/service_be57bed00962464ea4ea0ac63a0cec69",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "access"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Fotoarmadilhagem_Carnivoros_Prioritarios",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "globalid",
+      "logo",
+      "enquadramento",
+      "data_registo",
+      "data_observacao",
+      "entidade",
+      "observadores",
+      "email",
+      "telefone",
+      "tipo_dados",
+      "especie",
+      "aceitacao",
+      "created_user",
+      "created_date",
+      "last_edited_user",
+      "last_edited_date",
+      "local_observacao",
+      "projeto",
+      "complementares"
+     ],
+     "count_err": "server error: {'code': 500, 'message': \"Capability"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 2,
+   "band": "C"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/service_d2ee307701984798b3abfda8ea8bf5ce": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/service_d2ee307701984798b3abfda8ea8bf5ce/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/service_d2ee307701984798b3abfda8ea8bf5ce",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "access"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "survey",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "globalid",
+      "imagem",
+      "tipo_vinculo",
+      "outro_vinculo",
+      "nome_proprietario",
+      "indicativo_contacto",
+      "contacto_proprietario",
+      "email",
+      "morada_proprietario",
+      "legenda",
+      "numero_matricial",
+      "artigo_matricial",
+      "obs",
+      "termo_aceitacao",
+      "saiba_mais",
+      "created_user",
+      "created_date",
+      "last_edited_user",
+      "last_edited_date"
+     ],
+     "count_err": "server error: {'code': 500, 'message': \"Capability"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 2,
+   "band": "C"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/service_fcadbb9d970d435c916842bd4cae54d9": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/service_fcadbb9d970d435c916842bd4cae54d9/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/service_fcadbb9d970d435c916842bd4cae54d9",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "access"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "PNRN___Plantometro",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "globalid",
+      "nome",
+      "email",
+      "telefone",
+      "iniciativa_flag",
+      "iniciativa",
+      "tipologia_acao",
+      "entidade_flag",
+      "entidade_tipo",
+      "entidade_nome",
+      "especies",
+      "especie_outra",
+      "especie_comum",
+      "n_arvores",
+      "ano_plantacao",
+      "municipio",
+      "freguesia",
+      "area_ha",
+      "uso_solo"
+     ],
+     "count_err": "server error: {'code': 500, 'message': \"Capability"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 2,
+   "band": "C"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/service_fcadbb9d970d435c916842bd4cae54d9_form": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/service_fcadbb9d970d435c916842bd4cae54d9_form/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/service_fcadbb9d970d435c916842bd4cae54d9_form",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "access"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "PNRN___Plantometro",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "globalid",
+      "nome",
+      "email",
+      "telefone",
+      "iniciativa_flag",
+      "iniciativa",
+      "tipologia_acao",
+      "entidade_flag",
+      "entidade_tipo",
+      "entidade_nome",
+      "especies",
+      "especie_outra",
+      "especie_comum",
+      "n_arvores",
+      "ano_plantacao",
+      "municipio",
+      "freguesia",
+      "area_ha",
+      "uso_solo"
+     ],
+     "count_err": "server error: {'code': 500, 'message': \"Capability"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 2,
+   "band": "C"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/survey123_02317b1800b9459c8f314d24618974ca": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/survey123_02317b1800b9459c8f314d24618974ca/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/survey123_02317b1800b9459c8f314d24618974ca",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "access"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "survey",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "globalid",
+      "created_user",
+      "created_date",
+      "last_edited_user",
+      "last_edited_date",
+      "identifica_o_do_participante",
+      "participa_o",
+      "termos_de_aceita_o"
+     ],
+     "records": 2
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 2,
+   "band": "C"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/survey123_02317b1800b9459c8f314d24618974ca_form": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/survey123_02317b1800b9459c8f314d24618974ca_form/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/survey123_02317b1800b9459c8f314d24618974ca_form",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "access"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "survey",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "globalid",
+      "created_user",
+      "created_date",
+      "last_edited_user",
+      "last_edited_date",
+      "identifica_o_do_participante",
+      "participa_o",
+      "termos_de_aceita_o"
+     ],
+     "count_err": "server error: {'code': 500, 'message': \"Capability"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 2,
+   "band": "C"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/survey123_1af3a0f0afeb4a82867b7c62ebd0ea26_form": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/survey123_1af3a0f0afeb4a82867b7c62ebd0ea26_form/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/survey123_1af3a0f0afeb4a82867b7c62ebd0ea26_form",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "access"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "survey",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "globalid",
+      "created_user",
+      "created_date",
+      "last_edited_user",
+      "last_edited_date",
+      "identifica_o_do_participante",
+      "participa_o",
+      "termos_de_aceita_o"
+     ],
+     "count_err": "server error: {'code': 500, 'message': \"Capability"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 2,
+   "band": "C"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/survey123_2c62450a45014a2ca62fcc6b64824b29": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/survey123_2c62450a45014a2ca62fcc6b64824b29/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/survey123_2c62450a45014a2ca62fcc6b64824b29",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "access"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "survey",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "globalid",
+      "created_user",
+      "created_date",
+      "last_edited_user",
+      "last_edited_date",
+      "identifica_o_do_participante",
+      "participa_o",
+      "termos_aceitacao"
+     ],
+     "records": 9
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 2,
+   "band": "C"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/survey123_2c62450a45014a2ca62fcc6b64824b29_fieldworker": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/survey123_2c62450a45014a2ca62fcc6b64824b29_fieldworker/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/survey123_2c62450a45014a2ca62fcc6b64824b29_fieldworker",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "access"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "survey",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "globalid",
+      "created_user",
+      "created_date",
+      "last_edited_user",
+      "last_edited_date",
+      "identifica_o_do_participante",
+      "participa_o",
+      "termos_aceitacao"
+     ],
+     "count_err": "server error: {'code': 500, 'message': \"Capability"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 2,
+   "band": "C"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/survey123_3a03a2f2052449d2b8bfd5ec9606f473_form": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/survey123_3a03a2f2052449d2b8bfd5ec9606f473_form/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/survey123_3a03a2f2052449d2b8bfd5ec9606f473_form",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "access"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "survey",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "globalid",
+      "created_user",
+      "created_date",
+      "last_edited_user",
+      "last_edited_date",
+      "identifica_o_do_participante",
+      "participa_o",
+      "termos_de_aceita_o"
+     ],
+     "count_err": "server error: {'code': 500, 'message': \"Capability"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 2,
+   "band": "C"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/survey123_40f4f2fa3fbd43a0aba8a1328dd957c2": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/survey123_40f4f2fa3fbd43a0aba8a1328dd957c2/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/survey123_40f4f2fa3fbd43a0aba8a1328dd957c2",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "access"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "survey",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "globalid",
+      "created_user",
+      "created_date",
+      "last_edited_user",
+      "last_edited_date",
+      "identifica_o_do_participante",
+      "participa_o",
+      "termos_de_aceita_o"
+     ],
+     "records": 2
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 2,
+   "band": "C"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/survey123_40f4f2fa3fbd43a0aba8a1328dd957c2_form": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/survey123_40f4f2fa3fbd43a0aba8a1328dd957c2_form/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/survey123_40f4f2fa3fbd43a0aba8a1328dd957c2_form",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "access"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "survey",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "globalid",
+      "created_user",
+      "created_date",
+      "last_edited_user",
+      "last_edited_date",
+      "identifica_o_do_participante",
+      "participa_o",
+      "termos_de_aceita_o"
+     ],
+     "count_err": "server error: {'code': 500, 'message': \"Capability"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 2,
+   "band": "C"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/survey123_881f5eb127fb4b668ff0f70bb14b1f39_form": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/survey123_881f5eb127fb4b668ff0f70bb14b1f39_form/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/survey123_881f5eb127fb4b668ff0f70bb14b1f39_form",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "access"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "survey",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "globalid",
+      "created_user",
+      "created_date",
+      "last_edited_user",
+      "last_edited_date",
+      "identifica_o_do_participante",
+      "participa_o",
+      "termos_de_aceita_o"
+     ],
+     "count_err": "server error: {'code': 500, 'message': \"Capability"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 2,
+   "band": "C"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/survey123_bdc9b064aaab474cbd9f8bafb7c501df_fieldworker": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/survey123_bdc9b064aaab474cbd9f8bafb7c501df_fieldworker/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/survey123_bdc9b064aaab474cbd9f8bafb7c501df_fieldworker",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "access"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "survey",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "globalid",
+      "created_user",
+      "created_date",
+      "last_edited_user",
+      "last_edited_date",
+      "identifica_o_do_participante",
+      "participa_o",
+      "termos_aceitacao"
+     ],
+     "count_err": "server error: {'code': 500, 'message': \"Capability"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 2,
+   "band": "C"
+  },
+  "https://sigservices.icnf.pt/server/rest/services/hosted/survey123_d61db3a56afa4729899db4fb5dda7fef_form": {
+   "url": "https://sigservices.icnf.pt/server/rest/services/Hosted/survey123_d61db3a56afa4729899db4fb5dda7fef_form/FeatureServer",
+   "cc": "PT",
+   "title": "Hosted/survey123_d61db3a56afa4729899db4fb5dda7fef_form",
+   "publisher": "sigservices.icnf.pt",
+   "catalog": "agency server sigservices.icnf.pt",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "access"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "survey",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "globalid",
+      "created_user",
+      "created_date",
+      "last_edited_user",
+      "last_edited_date",
+      "identifica_o_do_participante",
+      "participa_o",
+      "termos_de_aceita_o"
+     ],
+     "count_err": "server error: {'code': 500, 'message': \"Capability"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 2,
+   "band": "C"
   }
  }
 }

@@ -1838,7 +1838,7 @@
    "finished": "2026-10-28"
   },
   "PT": {
-   "status": "paused (out of time, will carry on)",
+   "status": "done",
    "started": "2026-10-28",
    "done": [
     "https://sigservices.icnf.pt/server/rest/services/ApoiosICNF/Candidaturas__Aprovadas/FeatureServer",
@@ -1989,9 +1989,63 @@
     "https://sigservices.icnf.pt/server/rest/services/Hosted/Lei59_Kristin_dadosBase2/FeatureServer",
     "https://sigservices.icnf.pt/server/rest/services/Hosted/Limite_PNLN/FeatureServer",
     "https://sigservices.icnf.pt/server/rest/services/Hosted/Limite_PNPG/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/Limite_PNSAC/FeatureServer",
     "https://sigservices.icnf.pt/server/rest/services/Hosted/Limite_PNSAC_Alargamento/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/Limite_PNTI/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/Limite_PNVG/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/Mapa_da_MN_Leiria/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/NUTSIII_DRCNF/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/NUTSII_NUTSIII/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/PNRN_Artigo11/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/PNRN_Artigo12/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/PNRN_Artigo8/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/PNRN_Artigo9/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/PNRN_Entidades_Rede_Conhecimento/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/PNRN_Plantometro_OpenData/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/Parcelas_IFN/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/Parcelas_IFN_invasoras/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/Percursos_Sonoros_Lince/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/RNLS_AP/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/RNLS_AP_linha/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/Saber_mais/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/Tabela_restauro/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/pontos/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/rn2000_terrestres_dissolvidos/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/service_0a56743b0c454784a02a2954e9129d04/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/service_18929d81d79c40c78f3246ff0b932eab/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/service_3bacd6db3805452ab23e21267efc6918/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/service_3bacd6db3805452ab23e21267efc6918_form/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/service_3f5a5c520f82494094afd9fe065c3f7b/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/service_5da1d0a332c94d1eb0fb37451a1ff661/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/service_8782e1046b384c538de16460446a31f6_form/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/service_9658357a393c4ca98ea379e89ad7b100/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/service_be57bed00962464ea4ea0ac63a0cec69/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/service_c13c503d1a46470888e898a00842ffc1/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/service_c13c503d1a46470888e898a00842ffc1_form/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/service_d2ee307701984798b3abfda8ea8bf5ce/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/service_fcadbb9d970d435c916842bd4cae54d9/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/service_fcadbb9d970d435c916842bd4cae54d9_form/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/servicos/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/survey123_02317b1800b9459c8f314d24618974ca/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/survey123_02317b1800b9459c8f314d24618974ca_form/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/survey123_1af3a0f0afeb4a82867b7c62ebd0ea26_form/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/survey123_2c62450a45014a2ca62fcc6b64824b29/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/survey123_2c62450a45014a2ca62fcc6b64824b29_fieldworker/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/survey123_3a03a2f2052449d2b8bfd5ec9606f473/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/survey123_3a03a2f2052449d2b8bfd5ec9606f473_form/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/survey123_40f4f2fa3fbd43a0aba8a1328dd957c2/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/survey123_40f4f2fa3fbd43a0aba8a1328dd957c2_form/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/survey123_4afede19896a4e2889be75780e4142ac_results/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/survey123_881f5eb127fb4b668ff0f70bb14b1f39_form/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/survey123_bdc9b064aaab474cbd9f8bafb7c501df_fieldworker/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/survey123_d61db3a56afa4729899db4fb5dda7fef_form/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/trajetos_embarcacoes/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Hosted/Área_ardida_2017_MN_Leiria/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/Rubus_testes/Vespa_velutina_quadriculas/MapServer",
     "https://sigservices.icnf.pt/server/rest/services/Temas_Perímetro_Rega_Mira/MapServer",
-    "https://sigservices.icnf.pt/server/rest/services/locais_contagem_aquaticas/MapServer"
+    "https://sigservices.icnf.pt/server/rest/services/locais_contagem_aquaticas/MapServer",
+    "https://sigservices.icnf.pt/server/rest/services/matas_nacionais/MNLeiria/FeatureServer",
+    "https://sigservices.icnf.pt/server/rest/services/matas_nacionais/MNLeiria/MapServer"
    ],
    "log": [
     {
@@ -2002,6 +2056,584 @@
     {
      "step": "server",
      "what": "https://sigservices.icnf.pt/server/rest/services: 25 folders, 148 services read"
+    },
+    {
+     "step": "server",
+     "what": "https://sigservices.icnf.pt/server/rest/services: 25 folders, 53 services read"
+    },
+    {
+     "catalog": "https://dados.gov.pt/api",
+     "keyword": "parque natural",
+     "error": "HTTP 404"
+    },
+    {
+     "catalog": "https://dados.gov.pt/api",
+     "keyword": "parque nacional",
+     "error": "HTTP 404"
+    },
+    {
+     "catalog": "https://dados.gov.pt/api",
+     "keyword": "reserva natural",
+     "error": "HTTP 404"
+    },
+    {
+     "catalog": "https://dados.gov.pt/api",
+     "keyword": "área protegida",
+     "error": "HTTP 404"
+    },
+    {
+     "agol": "parque natural",
+     "hits": 8,
+     "read": 0
+    },
+    {
+     "agol": "parque nacional",
+     "hits": 4,
+     "read": 0
+    },
+    {
+     "agol": "reserva natural",
+     "hits": 6,
+     "read": 0
+    },
+    {
+     "agol": "área protegida",
+     "hits": 16,
+     "read": 0
+    },
+    {
+     "agol": "áreas protegidas",
+     "hits": 16,
+     "read": 0
+    }
+   ],
+   "steps": [
+    "known",
+    "servers",
+    "wfs",
+    "orgs",
+    "catalogs",
+    "downloads",
+    "search",
+    "eea"
+   ],
+   "finished": "2026-10-28"
+  },
+  "RO": {
+   "status": "done",
+   "started": "2026-10-28",
+   "done": [],
+   "log": [
+    {
+     "catalog": "https://data.gov.ro",
+     "keyword": "parc național",
+     "error": "no answer three times: left alone for a day"
+    },
+    {
+     "catalog": "https://data.gov.ro",
+     "keyword": "parc natural",
+     "error": "server left alone (strikes)"
+    },
+    {
+     "catalog": "https://data.gov.ro",
+     "keyword": "arie protejată",
+     "error": "server left alone (strikes)"
+    },
+    {
+     "catalog": "https://data.gov.ro",
+     "keyword": "rezervație",
+     "error": "server left alone (strikes)"
+    },
+    {
+     "agol": "parc național",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "agol": "parc natural",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "agol": "arie protejată",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "agol": "rezervație",
+     "hits": 0,
+     "read": 0
+    }
+   ],
+   "steps": [
+    "known",
+    "servers",
+    "wfs",
+    "orgs",
+    "catalogs",
+    "downloads",
+    "search",
+    "eea"
+   ],
+   "finished": "2026-10-28"
+  },
+  "AT": {
+   "status": "done",
+   "started": "2026-10-28",
+   "done": [
+    "https://gis.tirol.gv.at/arcgis/rest/services/Service_Public/ogd_natur/MapServer",
+    "https://gis.tirol.gv.at/arcgis/rest/services/Service_Public/ogd_umwelt/MapServer"
+   ],
+   "log": [
+    {
+     "catalog": "https://www.data.gv.at/katalog",
+     "keyword": "Nationalpark",
+     "error": "HTTP 404"
+    },
+    {
+     "catalog": "https://www.data.gv.at/katalog",
+     "keyword": "Naturpark",
+     "error": "HTTP 404"
+    },
+    {
+     "catalog": "https://www.data.gv.at/katalog",
+     "keyword": "Naturschutzgebiet",
+     "error": "HTTP 404"
+    },
+    {
+     "catalog": "https://www.data.gv.at/katalog",
+     "keyword": "Schutzgebiet",
+     "error": "HTTP 404"
+    },
+    {
+     "agol": "Nationalpark",
+     "hits": 3,
+     "read": 0
+    },
+    {
+     "agol": "Naturpark",
+     "hits": 1,
+     "read": 0
+    },
+    {
+     "agol": "Naturschutzgebiet",
+     "hits": 3,
+     "read": 0
+    },
+    {
+     "agol": "Schutzgebiet",
+     "hits": 3,
+     "read": 0
+    },
+    {
+     "agol": "Europaschutzgebiet",
+     "hits": 0,
+     "read": 0
+    }
+   ],
+   "steps": [
+    "known",
+    "servers",
+    "wfs",
+    "orgs",
+    "catalogs",
+    "downloads",
+    "search",
+    "eea"
+   ],
+   "finished": "2026-10-28"
+  },
+  "SE": {
+   "status": "done",
+   "started": "2026-10-28",
+   "done": [
+    "https://services2.arcgis.com/FYilPmW8sKfN6ZQM/arcgis/rest/services/Ras_210506/FeatureServer",
+    "https://services2.arcgis.com/FYilPmW8sKfN6ZQM/arcgis/rest/services/Ras_KulturarvRU_WFL1/FeatureServer",
+    "https://services2.arcgis.com/FYilPmW8sKfN6ZQM/arcgis/rest/services/Ras_Miljö_Anläggning__WFL1/FeatureServer",
+    "https://services2.arcgis.com/FYilPmW8sKfN6ZQM/arcgis/rest/services/Ras_Miljö_EkonomiskVerksmhet_WFL1/FeatureServer",
+    "https://services2.arcgis.com/FYilPmW8sKfN6ZQM/arcgis/rest/services/Ras_Miljö_Skyddade_Områden_WFL1/FeatureServer",
+    "https://services2.arcgis.com/FYilPmW8sKfN6ZQM/arcgis/rest/services/Ras_Människorshälsa_WFL1/FeatureServer",
+    "https://services2.arcgis.com/FYilPmW8sKfN6ZQM/arcgis/rest/services/Ras__Alla_verksamhetstyper_Dash/FeatureServer",
+    "https://services2.arcgis.com/FYilPmW8sKfN6ZQM/arcgis/rest/services/Ras__alla_verksamhetstyper/FeatureServer"
+   ],
+   "log": [
+    {
+     "agol": "nationalpark",
+     "hits": 50,
+     "read": 4
+    },
+    {
+     "agol": "naturreservat",
+     "hits": 50,
+     "read": 0
+    },
+    {
+     "agol": "skyddad natur",
+     "hits": 2,
+     "read": 0
+    },
+    {
+     "agol": "naturvårdsregistret",
+     "hits": 0,
+     "read": 0
+    }
+   ],
+   "steps": [
+    "known",
+    "servers",
+    "wfs",
+    "orgs",
+    "catalogs",
+    "downloads",
+    "search",
+    "eea"
+   ],
+   "finished": "2026-10-28"
+  },
+  "SI": {
+   "status": "done",
+   "started": "2026-10-28",
+   "done": [],
+   "log": [
+    {
+     "catalog": "https://podatki.gov.si",
+     "keyword": "narodni park",
+     "error": "robots.txt says no"
+    },
+    {
+     "catalog": "https://podatki.gov.si",
+     "keyword": "krajinski park",
+     "error": "robots.txt says no"
+    },
+    {
+     "catalog": "https://podatki.gov.si",
+     "keyword": "naravni rezervat",
+     "error": "robots.txt says no"
+    },
+    {
+     "catalog": "https://podatki.gov.si",
+     "keyword": "zavarovano območje",
+     "error": "robots.txt says no"
+    },
+    {
+     "agol": "narodni park",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "agol": "krajinski park",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "agol": "naravni rezervat",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "agol": "zavarovano območje",
+     "hits": 0,
+     "read": 0
+    }
+   ],
+   "steps": [
+    "known",
+    "servers",
+    "wfs",
+    "orgs",
+    "catalogs",
+    "downloads",
+    "search",
+    "eea"
+   ],
+   "finished": "2026-10-28"
+  },
+  "CZ": {
+   "status": "done",
+   "started": "2026-10-28",
+   "done": [],
+   "log": [
+    {
+     "catalog": "https://data.gov.cz",
+     "keyword": "národní park",
+     "error": "HTTP 404"
+    },
+    {
+     "catalog": "https://data.gov.cz",
+     "keyword": "chráněná krajinná oblast",
+     "error": "HTTP 404"
+    },
+    {
+     "catalog": "https://data.gov.cz",
+     "keyword": "přírodní rezervace",
+     "error": "HTTP 404"
+    },
+    {
+     "catalog": "https://data.gov.cz",
+     "keyword": "zvláště chráněné území",
+     "error": "HTTP 404"
+    },
+    {
+     "agol": "národní park",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "agol": "chráněná krajinná oblast",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "agol": "přírodní rezervace",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "agol": "zvláště chráněné území",
+     "hits": 0,
+     "read": 0
+    }
+   ],
+   "steps": [
+    "known",
+    "servers",
+    "wfs",
+    "orgs",
+    "catalogs",
+    "downloads",
+    "search",
+    "eea"
+   ],
+   "finished": "2026-10-28"
+  },
+  "BE": {
+   "status": "done",
+   "started": "2026-10-28",
+   "done": [
+    "https://www.mercator.vlaanderen.be/raadpleegdienstenmercatorpubliek/ows",
+    "https://www.mercator.vlaanderen.be/raadpleegdienstenmercatorpubliek/ows?layers=am:am_patdat"
+   ],
+   "log": [
+    {
+     "step": "known",
+     "what": "https://www.mercator.vlaanderen.be/raadpleegdienstenmercatorpubliek/ows: 300 feature types, 30 look like park layers"
+    },
+    {
+     "step": "known",
+     "what": "https://www.mercator.vlaanderen.be/raadpleegdienstenmercatorpubliek/ows?layers=am:am_patdat",
+     "found": true
+    },
+    {
+     "step": "wfs",
+     "what": "https://www.mercator.vlaanderen.be/raadpleegdienstenmercatorpubliek/ows: 300 feature types, 30 look like park layers"
+    },
+    {
+     "agol": "natuurreservaat",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "agol": "nationaal park",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "agol": "réserve naturelle",
+     "hits": 2,
+     "read": 0
+    },
+    {
+     "agol": "parc naturel",
+     "hits": 2,
+     "read": 0
+    },
+    {
+     "agol": "natuurgebied",
+     "hits": 1,
+     "read": 0
+    }
+   ],
+   "steps": [
+    "known",
+    "servers",
+    "wfs",
+    "orgs",
+    "catalogs",
+    "downloads",
+    "search",
+    "eea"
+   ],
+   "finished": "2026-10-28"
+  },
+  "DK": {
+   "status": "paused (out of time, will carry on)",
+   "started": "2026-10-28",
+   "done": [
+    "https://kort.vd.dk/server/rest/services/Administrative_graenser/Enterpriseområder/MapServer",
+    "https://kort.vd.dk/server/rest/services/Administrative_graenser/Jordmodtager/MapServer",
+    "https://kort.vd.dk/server/rest/services/Administrative_graenser/Områdegrænser_for_plan_og_myndighed/MapServer",
+    "https://kort.vd.dk/server/rest/services/Belysning/Vejbelysning/MapServer",
+    "https://kort.vd.dk/server/rest/services/Cykelfremme2_Prøvedata_Arbejdspendlere/MapServer",
+    "https://kort.vd.dk/server/rest/services/Cykelfremme2_Prøvedata_Dagligdag/MapServer",
+    "https://kort.vd.dk/server/rest/services/Cykelfremme2_Prøvedata_Rekreativ/MapServer",
+    "https://kort.vd.dk/server/rest/services/Cykelfremme2_Prøvedata_Uddannelsespendlere/MapServer",
+    "https://kort.vd.dk/server/rest/services/Cykelfremme_Arbejdspendlere_klassiskgis/MapServer",
+    "https://kort.vd.dk/server/rest/services/Cykelfremme_Uddanelsespendlere_klassiskgis/MapServer",
+    "https://kort.vd.dk/server/rest/services/Cykelfremme_dagligdag_klassiskgis/MapServer",
+    "https://kort.vd.dk/server/rest/services/Cykelfremme_klassiskGIS_prøvedata/MapServer",
+    "https://kort.vd.dk/server/rest/services/Cykelfremme_rekreativ_klassiskgis/MapServer",
+    "https://kort.vd.dk/server/rest/services/Data_fra_cykelfremmekortet/MapServer",
+    "https://kort.vd.dk/server/rest/services/Data_fra_cykelfremmekortet_test/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Anvendelse_vand_sø_kyst/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Beskyttede_sten_og_jorddiger/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Beskyttet_natur/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/BilagIV_rødlistede_og_fredede_arter/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Boringer_GEUS/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Danmarks_Administrative_Geografiske_Inddelinger/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Drikkevandets_hårdhed/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Drikkevandsinteresser__MST_/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Fikspunkter/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Fredede_bygninger/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Fredede_fortidsminder/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Fredede_områder/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Fredskov/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Fuglekollision/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Høj_natur_værdi/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Højde_og_dybdekort/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Indsatsplaner/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Invasive_arter/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Jordartskort_GEUS/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Jordbrug_LBST/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Jordbund_og_terræn/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Jordbundskort_2019/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Jordforurening/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Kirkebyggelinjer/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Klitfredning/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Kvælstof_reduktions_potentiale/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Kystnærhedszone__DMP_/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Marker_og_Markblokke/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Matriklen_gaeldende/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Natura_2000_områder/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Naturmæssigt_særlig_værdifuld_skov_på_offentlige_arealer/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Naturplanlægning/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Naturregistreringer/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Plandata_Forsyning/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Plandata_Kommuneplan/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Plandata_Landbrug_erhverv_kultur/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Plandata_Lokalplan_og_zone/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Plandata_Selvstændigt_VVM/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Plandata_Trafik_og_teknik/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Skovbyggelinjer/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Strandbeskyttelse/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Søbeskyttelseslinjer/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/VP3_Vandomraadeplaner/MapServer",
+    "https://kort.vd.dk/server/rest/services/Grunddata/Åbeskyttelseslinjer/MapServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/2D_kort/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/6470_24_04_2026_tif/MapServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje1_V2/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje1_V2/MapServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje3_V2/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje3_V2/MapServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje4_V2/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje4_V2/MapServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje5_V2/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje5_V2/MapServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje6_V2/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje6_V2/MapServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje7_V2/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_Linje7_V2/MapServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_linje2_V2/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Bygninger_linje2_V2/MapServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/DMPData_20230706/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Data_fra_cykelfremmekortet_feature/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Data_fra_cykelfremmekortet_feature/MapServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Extent_polygon/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje1_Asfalt2D_Merge/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje1_Baggrund_Merge_A/MapServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje1_OversigtFoto/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje1_POIs/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje1_Traer/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje2_Asfalt2D_Merge/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje2_Baggrund_Merge/MapServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje2_POIs_V2/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje3_Asfalt2D_Merge/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje3_Baggrund_Merge/MapServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje3_POIs/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje4_Asfalt2D_Merge/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje4_Baggrund_Merge/MapServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje4_POIs/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje5_Asfalt2D_Merge/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje5_Baggrund_Merge/MapServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje5_OversigtFoto/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje5_POIs/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje6_Asfalt2D_Merge/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje6_Baggrund_Merge/MapServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje6_OversigtFoto/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje6_POIs/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje7_Asfalt2D_Merge/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje7_Baggrund_Merge/MapServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje7_OversigtFoto/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Linje7_POIs/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/SoeLinje_2_Modelleringsomraade/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/SoeLinje_3_Modelleringsomraade/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/SoeLinje_4_Modelleringsomraade/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/SoeLinje_4_Modelleringsomraade_V2/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/SoeLinje_5_Modelleringsomraade/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/SoeLinje_6_Modelleringsomraade/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/SoeLinje_7_Modelleringsomraade/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/TraerLinje_2_Modelleringsomraade_Erased/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/TraerLinje_3_Modelleringsomraade_Erased/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/TraerLinje_4_Modelleringsomraade_Erased/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/TraerLinje_5_Modelleringsomraade_Erased/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/TraerLinje_6_Modelleringsomraade_Erased/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/TraerLinje_7_Modelleringsomraade_Erased/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/VD_MV_Centerlinjer___MV_Linje_1/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/VD_MV_Centerlinjer___MV_Linje_2/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/VD_MV_Centerlinjer___MV_Linje_3/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/VD_MV_Centerlinjer___MV_Linje_4/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/VD_MV_Centerlinjer___MV_Linje_5/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/VD_MV_Centerlinjer___MV_Linje_6/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/VD_MV_Centerlinjer___MV_Linje_7/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/Hosted/Visionsplan_for_Supercykelstier/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/MKV/E80140_Widget_MKV_Arealbehov_Projektdata/MapServer",
+    "https://kort.vd.dk/server/rest/services/MKV/MKV_11100_Data/MapServer",
+    "https://kort.vd.dk/server/rest/services/MKV_E1260_Data/MapServer",
+    "https://kort.vd.dk/server/rest/services/afvanding_digitalisering_ler2/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/afvanding_digitalisering_ler2/MapServer",
+    "https://kort.vd.dk/server/rest/services/iModel/Jupiter_Jordboringer/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/iModel/Jupiter_Jordboringer/MapServer",
+    "https://kort.vd.dk/server/rest/services/iModel/Matrikelkort_iModel/MapServer",
+    "https://kort.vd.dk/server/rest/services/ler_broker/ler20_afvandingsledning/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/ler_broker/ler20_afvandingsledning/MapServer",
+    "https://kort.vd.dk/server/rest/services/ler_broker/ler20_elledning/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/ler_broker/ler20_elledning/MapServer",
+    "https://kort.vd.dk/server/rest/services/ler_broker/ler20_foeringsroer/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/ler_broker/ler20_foeringsroer/MapServer",
+    "https://kort.vd.dk/server/rest/services/miljoe/Artsrig_vejkant_aktuel_offentlig_visning/MapServer",
+    "https://kort.vd.dk/server/rest/services/miljoe/Besigtigelsesoverblik_linje_offentlig_visning/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/miljoe/Besigtigelsesoverblik_linje_offentlig_visning/MapServer",
+    "https://kort.vd.dk/server/rest/services/miljoe/Dokumentation_polygon_offentlig_visning/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/miljoe/Dokumentation_polygon_offentlig_visning/MapServer",
+    "https://kort.vd.dk/server/rest/services/miljoe/Dokumentation_punkt_offentlig_visning/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/miljoe/Dokumentation_punkt_offentlig_visning/MapServer",
+    "https://kort.vd.dk/server/rest/services/miljoe/MILJOE_vaerdifuldnatur_offentlig_test/MapServer",
+    "https://kort.vd.dk/server/rest/services/miljoe/Miljø/MapServer",
+    "https://kort.vd.dk/server/rest/services/miljoe/VD_ejendomme_offentlig_visning/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/miljoe/VD_ejendomme_offentlig_visning/MapServer",
+    "https://kort.vd.dk/server/rest/services/miljoe/Vaerdifuld_natur/MapServer",
+    "https://kort.vd.dk/server/rest/services/miljoe/Værdifuld_natur_Offentlig_visning/FeatureServer",
+    "https://kort.vd.dk/server/rest/services/miljoe/Værdifuld_natur_Offentlig_visning/MapServer",
+    "https://kort.vd.dk/server/rest/services/miljoe/Værdifuld_natur_offentlig_WFS_WMS/MapServer"
+   ],
+   "log": [
+    {
+     "step": "known",
+     "what": "https://kort.vd.dk/server/rest/services/Grunddata/Fredede_områder/MapServer",
+     "error": "'ascii' codec can't encode character '\\xe5' in position 47: ordinal not in range"
+    },
+    {
+     "step": "server",
+     "what": "https://kort.vd.dk/server/rest/services: 39 folders, 129 services read"
     }
    ],
    "steps": [
@@ -2012,32 +2644,37 @@
  "last_run": {
   "date": "2026-10-28",
   "stats": {
-   "requests": 1526,
+   "requests": 1365,
    "hits": 0,
-   "leads": 102,
+   "leads": 78,
    "already_read": 0,
-   "skipped": 95,
-   "not_official": 291,
-   "robots": 0,
-   "strikes": 6,
-   "errors": 45,
-   "retried_json": 4
+   "skipped": 80,
+   "not_official": 169,
+   "robots": 6,
+   "strikes": 3,
+   "errors": 54
   },
   "countries": [
-   "FR done: 49 leads (A 0), known-good found 0 of 0",
-   "ES done: 0 leads (A 0), known-good found 0 of 0",
-   "IT done: 0 leads (A 0), known-good found 0 of 0",
-   "NO done: 14 leads (A 13), known-good found 1 of 2",
-   "NL done: 4 leads (A 3), known-good found 0 of 0",
-   "CH done: 0 leads (A 0), known-good found 0 of 0",
-   "PT paused: 61 leads (A 16), known-good found 1 of 1"
+   "PT done: 108 leads (A 21), known-good found 1 of 1",
+   "RO done: 0 leads (A 0), known-good found 0 of 0",
+   "AT done: 0 leads (A 0), known-good found 0 of 0",
+   "SE done: 4 leads (A 1), known-good found 0 of 0",
+   "SI done: 0 leads (A 0), known-good found 0 of 0",
+   "CZ done: 0 leads (A 0), known-good found 0 of 0",
+   "BE done: 1 leads (A 0), known-good found 1 of 1",
+   "DK paused: 24 leads (A 0), known-good found 0 of 1"
   ],
   "dead_servers": [
-   "ogc.geo-ide.developpement-durable.gouv.fr",
-   "ows.region-bretagne.fr"
+   "data.gov.ro"
   ],
-  "robots_refused": {},
-  "robots_said": {},
+  "robots_refused": {
+   "gis.tirol.gv.at": 2,
+   "podatki.gov.si": 4
+  },
+  "robots_said": {
+   "gis.tirol.gv.at": "User-agent: * | Disallow: /",
+   "podatki.gov.si": "User-agent: * | Crawl-delay: 10 | Allow: /misc/*.css$ | Allow: /misc/*.css? | Allow: /misc/*.js$ | Allow: /misc/*.js? | Allow: /misc/*.gif | Allow: /misc/*.jpg "
+  },
   "robots_exempted_hosts (HQ ruling Oct 27: ArcGIS REST API paths only)": {}
  },
  "eea_done": "2026-10-28"

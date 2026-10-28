@@ -1,0 +1,132 @@
+{
+ "about": "World harvester leads for Belgium (official park GIS only; leads for chat 8, never added to the key by the bot).",
+ "cc": "BE",
+ "date": "2026-10-28",
+ "status": "done",
+ "steps_done": [
+  "known",
+  "servers",
+  "wfs",
+  "orgs",
+  "catalogs",
+  "downloads",
+  "search",
+  "eea"
+ ],
+ "bands": {
+  "A": 0,
+  "B": 0,
+  "C": 1
+ },
+ "known_good_found": [
+  "https://www.mercator.vlaanderen.be/raadpleegdienstenmercatorpubliek/ows?layers=am:am_patdat"
+ ],
+ "known_good_missed": [],
+ "leads": {
+  "https://www.mercator.vlaanderen.be/raadpleegdienstenmercatorpubliek/ows": {
+   "url": "https://www.mercator.vlaanderen.be/raadpleegdienstenmercatorpubliek/ows",
+   "cc": "BE",
+   "title": "WFS www.mercator.vlaanderen.be",
+   "publisher": "Vlaamse Overheid - Beleidsdomein Omgeving - MercatorNet",
+   "catalog": "WFS capabilities",
+   "licence": "NONE Gebruiksvoorwaarden zie https://assets.vlaanderen.be/image/upload/v1679331485/GratisopendatalicentieVlaanderenv12_bqxu2t.pdf",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "area",
+    "outline"
+   ],
+   "layers": [
+    {
+     "name": "500m bufferzone bij Rubriek 53.3.3a (draineringen)",
+     "type": "so:so_500m_bufferzone_rubriek_53_3_3_a_draineringen",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "500m bufferzone bij Rubriek 53.3.4 (draineringen)",
+     "type": "so:so_500m_bufferzone_rubriek_53_3_4_draineringen",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Atlas van de woonreservegebieden",
+     "type": "lu:lu_wrg",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Consultatiezones van Seveso-inrichtingen in Vlaanderen",
+     "type": "pf:pf_seveso_con",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Geluidsbelastingkaart vliegverkeer, internationale luchthavens  – Lden",
+     "type": "hh:hh_geluid_vliegver_2024",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Hernieuwbare Energieatlas Vlaanderen - Bijkomende potentiële elektrici",
+     "type": "er:er_heav_p2030_ele_bms",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Hernieuwbare Energieatlas Vlaanderen - Bijkomende potentiële elektrici",
+     "type": "er:er_heav_techpot_ele_bms",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Hernieuwbare Energieatlas Vlaanderen - Bijkomende potentiële energiepr",
+     "type": "er:er_heav_techpot_wrm_digeo",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Hernieuwbare Energieatlas Vlaanderen - Bijkomende potentiële energiepr",
+     "type": "er:er_heav_p2030_ele_wt",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Hernieuwbare Energieatlas Vlaanderen - Bijkomende potentiële energiepr",
+     "type": "er:er_heav_p2030_ele_wk",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Hernieuwbare Energieatlas Vlaanderen - Bijkomende potentiële energiepr",
+     "type": "er:er_heav_techpot_ele_wk",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Hernieuwbare Energieatlas Vlaanderen - Bijkomende potentiële warmtepro",
+     "type": "er:er_heav_p2030_wrm_bms",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    }
+   ],
+   "note": "300 feature types listed",
+   "grade": 2,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists",
+   "known_good": true
+  }
+ }
+}

@@ -160,32 +160,37 @@ access constraints t | 2024-10-18 | https://services.arcgis.com/JJzESW51TqeY9uat
 {
  "date": "2026-10-28",
  "stats": {
-  "requests": 1526,
+  "requests": 1365,
   "hits": 0,
-  "leads": 102,
+  "leads": 78,
   "already_read": 0,
-  "skipped": 95,
-  "not_official": 291,
-  "robots": 0,
-  "strikes": 6,
-  "errors": 45,
-  "retried_json": 4
+  "skipped": 80,
+  "not_official": 169,
+  "robots": 6,
+  "strikes": 3,
+  "errors": 54
  },
  "countries": [
-  "FR done: 49 leads (A 0), known-good found 0 of 0",
-  "ES done: 0 leads (A 0), known-good found 0 of 0",
-  "IT done: 0 leads (A 0), known-good found 0 of 0",
-  "NO done: 14 leads (A 13), known-good found 1 of 2",
-  "NL done: 4 leads (A 3), known-good found 0 of 0",
-  "CH done: 0 leads (A 0), known-good found 0 of 0",
-  "PT paused: 61 leads (A 16), known-good found 1 of 1"
+  "PT done: 108 leads (A 21), known-good found 1 of 1",
+  "RO done: 0 leads (A 0), known-good found 0 of 0",
+  "AT done: 0 leads (A 0), known-good found 0 of 0",
+  "SE done: 4 leads (A 1), known-good found 0 of 0",
+  "SI done: 0 leads (A 0), known-good found 0 of 0",
+  "CZ done: 0 leads (A 0), known-good found 0 of 0",
+  "BE done: 1 leads (A 0), known-good found 1 of 1",
+  "DK paused: 24 leads (A 0), known-good found 0 of 1"
  ],
  "dead_servers": [
-  "ogc.geo-ide.developpement-durable.gouv.fr",
-  "ows.region-bretagne.fr"
+  "data.gov.ro"
  ],
- "robots_refused": {},
- "robots_said": {},
+ "robots_refused": {
+  "gis.tirol.gv.at": 2,
+  "podatki.gov.si": 4
+ },
+ "robots_said": {
+  "gis.tirol.gv.at": "User-agent: * | Disallow: /",
+  "podatki.gov.si": "User-agent: * | Crawl-delay: 10 | Allow: /misc/*.css$ | Allow: /misc/*.css? | Allow: /misc/*.js$ | Allow: /misc/*.js? | Allow: /misc/*.gif | Allow: /misc/*.jpg "
+ },
  "robots_exempted_hosts (HQ ruling Oct 27: ArcGIS REST API paths only)": {}
 }
 ```
