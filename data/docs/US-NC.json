@@ -733,9 +733,18 @@
    "page": "https://www.fs.usda.gov/recarea/nfsnc/recreation/hiking/recarea/?recid=49146&actid=51",
    "checked": "2026-10-28",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.fs.usda.gov/r08/northcarolina/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/recarea/nfsnc/recreation/hiking/recarea/?recid=49146&actid=51",
+    "posted": "October 5, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-10-28",
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/northcarolina",
@@ -747,7 +756,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 5
+   "ver": 5,
+   "browser_checked": "2026-10-28"
   },
   "US-10262": {
    "n": "Linville Gorge Wilderness Area",
@@ -755,9 +765,18 @@
    "page": "https://www.fs.usda.gov/recarea/nfsnc/null/recarea/?recid=48974&actid=37",
    "checked": "2026-10-28",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.fs.usda.gov/r08/northcarolina/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/recarea/nfsnc/null/recarea/?recid=48974&actid=37",
+    "posted": "October 5, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-10-28",
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/northcarolina",
@@ -769,7 +788,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 5
+   "ver": 5,
+   "browser_checked": "2026-10-28"
   },
   "US-10263": {
    "n": "Bonner House Historic Site",
@@ -831,7 +851,9 @@
    "agency": "Tennessee Valley Authority",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
    "ver": 5
   },
@@ -841,9 +863,18 @@
    "page": "https://www.fs.usda.gov/detail/nfsnc/specialplaces/?cid=fseprd561556",
    "checked": "2026-10-28",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.fs.usda.gov/r08/northcarolina/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/detail/nfsnc/specialplaces/?cid=fseprd561556",
+    "posted": "October 5, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-10-28",
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/northcarolina",
@@ -855,7 +886,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 5
+   "ver": 5,
+   "browser_checked": "2026-10-28"
   },
   "US-10398": {
    "n": "Chatuge Dam Trail Recreation Park",
@@ -900,9 +932,17 @@
    "page": "https://www.tva.com/energy/our-power-system/hydroelectric/apalachia",
    "checked": "2026-10-28",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://tva-azr-eastus-cdn-ep-tvawcm-prd.azureedge.net/cdn-tvawcma/docs/default-source/default-document-library/site-content/environment/recreation/pdf/hiwasseemap.pdf?sfvrsn=74649c91_0",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "the page in a browser ('Water Trail Guide')",
+    "page": "https://www.tva.com/energy/our-power-system/hydroelectric/apalachia",
+    "posted": "Apr 06, 2020",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-28",
+    "via": "linked from the agency page (tva-azr-eastus-cdn-ep-tvawcm-prd.azureedge.net)"
    },
    "rules": {
     "url": "",
@@ -914,7 +954,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 5
+   "ver": 5,
+   "browser_checked": "2026-10-28"
   },
   "US-10406": {
    "n": "Lake Rim Fishing & Boating Multiple Use Area",
@@ -994,9 +1035,18 @@
    "page": "https://www.fs.usda.gov/recarea/nfsnc/recarea/?recid=48260",
    "checked": "2026-10-28",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.fs.usda.gov/r08/northcarolina/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/recarea/nfsnc/recarea/?recid=48260",
+    "posted": "October 5, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-10-28",
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/northcarolina",
@@ -1008,7 +1058,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 5
+   "ver": 5,
+   "browser_checked": "2026-10-28"
   },
   "US-11020": {
    "n": "Middle Prong Wilderness Area",
@@ -1016,9 +1067,18 @@
    "page": "https://www.fs.usda.gov/recarea/nfsnc/recarea/?recid=48250",
    "checked": "2026-10-28",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.fs.usda.gov/r08/northcarolina/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/recarea/nfsnc/recarea/?recid=48250",
+    "posted": "October 5, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-10-28",
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/northcarolina",
@@ -1030,7 +1090,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 5
+   "ver": 5,
+   "browser_checked": "2026-10-28"
   },
   "US-11238": {
    "n": "Micken's Branch Multiple Use Area",
@@ -1075,9 +1136,18 @@
    "page": "https://www.fs.usda.gov/recarea/nfsnc/recarea/?recid=70827",
    "checked": "2026-10-28",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.fs.usda.gov/r08/northcarolina/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/recarea/nfsnc/recarea/?recid=70827",
+    "posted": "October 5, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-10-28",
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/northcarolina",
@@ -1089,7 +1159,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 5
+   "ver": 5,
+   "browser_checked": "2026-10-28"
   },
   "US-11375": {
    "n": "Averasboro Battlefield Historic Site",
@@ -1412,7 +1483,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 5
+   "ver": 5,
+   "browser_checked": "2026-10-28"
   },
   "US-2722": {
    "n": "Carolina Beach State Park",
@@ -2395,7 +2467,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 5
+   "ver": 5,
+   "browser_checked": "2026-10-28"
   },
   "US-2753": {
    "n": "South Mountains State Park",
@@ -3447,9 +3520,18 @@
    "page": "https://www.fs.usda.gov/recarea/nfsnc/recreation/natureviewing/recarea/?recid=48466&actid=63",
    "checked": "2026-10-28",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.fs.usda.gov/r08/northcarolina/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/recarea/nfsnc/recreation/natureviewing/recarea/?recid=48466&actid=63",
+    "posted": "October 5, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-10-28",
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/northcarolina",
@@ -3461,7 +3543,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 5
+   "ver": 5,
+   "browser_checked": "2026-10-28"
   },
   "US-4509": {
    "n": "Nantahala National Forest",
@@ -3469,9 +3552,18 @@
    "page": "https://www.fs.usda.gov/recarea/nfsnc/recarea/?recid=48634",
    "checked": "2026-10-28",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.fs.usda.gov/r08/northcarolina/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/recarea/nfsnc/recarea/?recid=48634",
+    "posted": "October 5, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-10-28",
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/northcarolina",
@@ -3483,7 +3575,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 5
+   "ver": 5,
+   "browser_checked": "2026-10-28"
   },
   "US-4510": {
    "n": "Pisgah National Forest",
@@ -3491,9 +3584,18 @@
    "page": "https://www.fs.usda.gov/recarea/nfsnc/recarea/?recid=48114",
    "checked": "2026-10-28",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.fs.usda.gov/r08/northcarolina/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/recarea/nfsnc/recarea/?recid=48114",
+    "posted": "October 5, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-10-28",
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/northcarolina",
@@ -3505,7 +3607,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 5
+   "ver": 5,
+   "browser_checked": "2026-10-28"
   },
   "US-4511": {
    "n": "Uwharrie National Forest",
@@ -3513,9 +3616,18 @@
    "page": "https://www.fs.usda.gov/recarea/nfsnc/recarea/?recid=48934",
    "checked": "2026-10-28",
    "map": {
-    "url": "",
-    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.fs.usda.gov/sites/nfs/files/r08/northcarolina/publication/)",
-    "how": "on file (parkinfo-web / Kentucky answer key)"
+    "url": "https://www.fs.usda.gov/r08/northcarolina/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/recarea/nfsnc/recarea/?recid=48934",
+    "posted": "October 5, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-10-28",
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/northcarolina",
@@ -3543,7 +3655,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 5
+   "ver": 5,
+   "browser_checked": "2026-10-28"
   },
   "US-4556": {
    "n": "Appalachian Trail National Scenic Trail",
@@ -6557,7 +6670,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-6956": {
    "n": "Tar River State Game Land",
@@ -6580,7 +6693,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-6957": {
    "n": "Texas Plantation State Game Land",
@@ -6612,7 +6725,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-6958": {
    "n": "Thurmond Chatham State Game Land",
@@ -6620,18 +6733,9 @@
    "page": "https://www.ncwildlife.gov/hunting/where-hunt-and-shoot/game-lands",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.ncwildlife.gov/hunting/where-hunt-and-shoot/game-lands",
-    "status": "HTTP 404",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "",
-    "posted_how": "",
-    "names_park": null,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: HTTP 404 https://www.ncwildlife.gov/hunting/where-hunt-and-shoot/game-lands)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
    },
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
@@ -6644,7 +6748,23 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://www.ncwildlife.gov/hunting/where-hunt-and-shoot/game-lands",
+     "status": "HTTP 404",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-6959": {
    "n": "Tillery State Game Land",
@@ -6667,7 +6787,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-6960": {
    "n": "Toxaway State Game Land",
@@ -6690,7 +6810,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-6961": {
    "n": "Upper Roanoke River State Game Land",
@@ -6713,7 +6833,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-6962": {
    "n": "Uwharrie State Game Land",
@@ -6736,7 +6856,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-6963": {
    "n": "Nutbush Wildlife Management Area",
@@ -6759,7 +6879,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-6964": {
    "n": "Voice of America State Game Land",
@@ -6790,7 +6910,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-6965": {
    "n": "White Oak River State Game Land",
@@ -6822,7 +6942,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-6966": {
    "n": "Whitehall Plantation State Game Land",
@@ -6853,7 +6973,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-6967": {
    "n": "William H Silver State Game Land",
@@ -6876,7 +6996,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-8005": {
    "n": "Fontana TVA Dam National Recreation Area",
@@ -6900,7 +7020,7 @@
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 4
+   "ver": 5
   },
   "US-8006": {
    "n": "Rachel Carson State Reserve",
@@ -6931,7 +7051,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-8007": {
    "n": "Edenton National Fish Hatchery",
@@ -6952,7 +7072,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-8008": {
    "n": "Armstrong State Fish Hatchery",
@@ -6975,7 +7095,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-8009": {
    "n": "Marion State Fish Hatchery",
@@ -6998,7 +7118,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-8010": {
    "n": "McKinney Lake State Fish Hatchery",
@@ -7019,7 +7139,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-8011": {
    "n": "Bobby N. Setzer State Fish Hatchery",
@@ -7027,18 +7147,9 @@
    "page": "https://www.ncwildlife.gov/fishing/hatcheries-and-stocking/ncwrc-hatcheries/bobby-n-setzer-state-fish-hatchery",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.ncwildlife.gov/wildlife-habitat/interactive-prescribed-fire-map",
-    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
-    "kind": "page",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Interactive Prescribed Fire Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.ncwildlife.gov/wildlife-habitat/interactive-prescribed-fir; opened, a page that does not name this park (a generic agency page is not its map) https://www.ncpaws.org/ncwrcmaps/Home/AllMaps)",
+    "how": "a link on the park's page ('Interactive Prescribed Fire Map')"
    },
    "rules": {
     "url": "https://www.ncwildlife.gov/enforcement/ginseng-regulation",
@@ -7049,7 +7160,37 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://www.ncwildlife.gov/wildlife-habitat/interactive-prescribed-fire-map",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Interactive Prescribed Fire Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://www.ncpaws.org/ncwrcmaps/Home/AllMaps",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Interactive Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (ncpaws.org)"
+    }
+   ],
+   "ver": 5
   },
   "US-8012": {
    "n": "Table Rock State Fish Hatchery",
@@ -7072,7 +7213,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-8013": {
    "n": "Watha State Fish Hatchery",
@@ -7095,7 +7236,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-8226": {
    "n": "Upchurch Lake State Fishing Lake",
@@ -7116,7 +7257,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-8313": {
    "n": "Mountains to Sea State Trail",
@@ -7148,7 +7289,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-9372": {
    "n": "Governor Caswell Memorial State Historic Site",
@@ -7169,7 +7310,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-9758": {
    "n": "Chattooga National Wild and Scenic River",
@@ -7200,20 +7341,20 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   }
  },
  "read": "2026-10-28",
  "counts": {
   "parks": 253,
-  "map ok": 110,
-  "map found by the bot": 72,
+  "map ok": 121,
+  "map found by the bot": 83,
   "date on the map": 76,
-  "posted date only": 20,
+  "posted date only": 31,
   "date unknown": 14,
-  "no map": 143,
+  "no map": 132,
   "rules ok": 55,
-  "needs browser": 15,
+  "needs browser": 2,
   "handover hints": 0,
   "runs hints": 5,
   "host resting / robots": 0,
