@@ -1,2 +1,23 @@
-{"about": "The Maps-tab step (design §2 C, ruling D-3): agency park pages opened with a real browser, allow-listed hosts only, 1 page per 3 s, max 300 pages a run. hosts = park pages we open; files = hosts a kept map link may live on.",
- "OH": {"hosts": ["ohiodnr.gov"], "files": ["ohiodnr.gov", "dam.assets.ohio.gov", "ohio.gov"], "max": 20}}
+{
+ "about": "The Maps-tab step (design \u00a72 C, ruling D-3): agency park pages opened with a real browser, allow-listed hosts only, 1 page per 3 s, max 300 pages a run. hosts = park pages we open; files = hosts a kept map link may live on. patterns = the agency's own PDF host by known URL pattern ({slug} = the park name, letters only, kind words stripped): one HEAD per park.",
+ "OH": {
+  "hosts": [
+   "ohiodnr.gov"
+  ],
+  "files": [
+   "ohiodnr.gov",
+   "dam.assets.ohio.gov",
+   "ohio.gov"
+  ],
+  "max": 20,
+  "patterns": [
+   {
+    "url": "https://dam.assets.ohio.gov/image/upload/ohiodnr.gov/documents/wildlife/wildlife-area-maps/{slug}.pdf",
+    "kind": "wildlife area|fishing area",
+    "strip": "(wildlife|fishing|area|state|park|lake)\\b",
+    "max": 150,
+    "note": "chat 8 Oct 27: ODNR wildlife-area maps live here (beavercreek, killdeerplains, paintcreek, caesarcreek...)"
+   }
+  ]
+ }
+}

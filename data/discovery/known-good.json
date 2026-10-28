@@ -1,0 +1,10 @@
+{"about": "Hand finds by chat 8 (the research desk). The Discovery bot must find these by itself; its report says how many it found and which it missed. Band = chat 8's grade.",
+ "OH": [
+  {"url": "https://gis.ohiodnr.gov/arcgis/rest/services/DSP_Services/Parks_DNAP_Trails/MapServer", "title": "Parks_DNAP_Trails (state park + nature preserve trail lines)", "gaps": ["trail line"], "band": "A", "note": "chat 8 Oct 27: Ohio has no trail lines today"},
+  {"url": "https://gis.ohiodnr.gov/arcgis/rest/services/OIT_Services/Trails_WayPoints_POI/MapServer", "title": "Trails_WayPoints_POI (trail waypoints, trailheads, points of interest)", "gaps": ["access"], "band": "A", "note": "chat 8 Oct 27"},
+  {"url": "https://gis.ohiodnr.gov/arcgis/rest/services/OIT_Services/POI_Verify/MapServer", "title": "POI_Verify (points of interest)", "gaps": ["access"], "band": "B", "note": "chat 8 Oct 27"},
+  {"url": "https://gis.ohiodnr.gov/arcgis/rest/services/DOW_Services/Wildlife_Trails_Verify/MapServer", "title": "Wildlife_Trails_Verify (wildlife area trails)", "gaps": ["trail line"], "band": "B", "note": "chat 8 Oct 27: B/A"},
+  {"url": "https://gis.ohiodnr.gov/arcgis/rest/services/DOW_Services/Roads_ParkingAreas/MapServer", "title": "Roads_ParkingAreas (roads + parking in wildlife areas)", "gaps": ["access", "roads/water"], "band": "B", "note": "chat 8 Oct 27"},
+  {"url": "https://gis.ohiodnr.gov/arcgis/rest/services/DWC_Services/Watercraft_Paddling_Query/MapServer", "title": "Watercraft_Paddling_Query (paddling launches / water trails)", "gaps": ["access"], "band": "B", "note": "chat 8 Oct 27"},
+  {"url": "https://gis.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_Trail_Heads_View/MapServer", "title": "ODNR Trail Heads View (official trailheads)", "gaps": ["access"], "band": "A", "note": "chat 8 Oct 27: the one A in the bot's top 10"}
+ ]}

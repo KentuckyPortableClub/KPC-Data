@@ -1,12 +1,83 @@
-{"about": "Discovery bot keywords per gap (design §3). Grows by hand: every miss a person finds adds a keyword (added_by, date in 'log'). A keyword that finds nothing in 6 months is marked idle in 'idle' (kept).",
+{
+ "about": "Discovery bot keywords per gap (design \u00a73). Grows by hand: every miss a person finds adds a keyword (added_by, date in 'log'). A keyword that finds nothing in 6 months is marked idle in 'idle' (kept).",
  "gaps": {
-  "ownership": ["surface management agency", "land ownership", "public lands", "state owned land", "state-owned lands", "fee title", "managed lands", "conservation lands", "Crown land", "tenure"],
-  "outline": ["park boundary", "state park", "wildlife management area", "wildlife area", "game land", "state forest", "natural area", "nature preserve", "recreation area", "conservation area", "wild river", "scenic river"],
-  "access": ["parking", "trailhead", "boat ramp", "boat launch", "access site", "fishing access", "day use"],
-  "roads/water": ["road network", "hydrography", "waterbody", "shoreline"],
-  "closures": ["closures", "alerts", "advisories", "trail status", "fire restrictions"],
-  "trail line": ["trails", "national trail", "water trail"],
-  "replaces": ["basic ownership", "protected areas"]
+  "ownership": [
+   "surface management agency",
+   "land ownership",
+   "public lands",
+   "state owned land",
+   "state-owned lands",
+   "fee title",
+   "managed lands",
+   "conservation lands",
+   "Crown land",
+   "tenure"
+  ],
+  "outline": [
+   "park boundary",
+   "state park",
+   "wildlife management area",
+   "wildlife area",
+   "game land",
+   "state forest",
+   "natural area",
+   "nature preserve",
+   "recreation area",
+   "conservation area",
+   "wild river",
+   "scenic river"
+  ],
+  "access": [
+   "parking",
+   "trailhead",
+   "boat ramp",
+   "boat launch",
+   "access site",
+   "fishing access",
+   "day use",
+   "trail waypoints"
+  ],
+  "roads/water": [
+   "road network",
+   "hydrography",
+   "waterbody",
+   "shoreline"
+  ],
+  "closures": [
+   "closures",
+   "alerts",
+   "advisories",
+   "trail status",
+   "fire restrictions"
+  ],
+  "trail line": [
+   "trails",
+   "national trail",
+   "water trail",
+   "trails verify"
+  ],
+  "replaces": [
+   "basic ownership",
+   "protected areas"
+  ],
+  "map page": [
+   "wildlife area map"
+  ]
  },
- "log": [{"keyword": "wild river", "gap": "outline", "added_by": "chat 8 / Kentucky", "date": "2026-10-27", "why": "found the KY Wild Rivers (Corridors) layer by hand"}],
- "idle": []}
+ "log": [
+  {
+   "keyword": "wild river",
+   "gap": "outline",
+   "added_by": "chat 8 / Kentucky",
+   "date": "2026-10-27",
+   "why": "found the KY Wild Rivers (Corridors) layer by hand"
+  },
+  {
+   "keyword": "trail waypoints / trails verify / water trail / wildlife area map",
+   "gap": "access / trail line / map page",
+   "added_by": "chat 8 (Ohio grade)",
+   "date": "2026-10-27"
+  }
+ ],
+ "idle": []
+}
