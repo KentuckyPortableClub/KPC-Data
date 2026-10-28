@@ -172,6 +172,12 @@ jobs:
           tar xzf "$BUNDLE" bundle/stamp.json data/fers || { echo "::error title=2-fer line::bundle would not unpack"; exit 1; }
           python3 -c "import json,os,sys; s=json.load(open('bundle/stamp.json')); print('bundle stamp:', s); sys.exit(0 if s.get('stage')=='worker' and s.get('tag')==os.environ['RUN_TAG'] else 1)" || { echo "::error title=2-fer line::the bundle is not this tag's worker bundle"; exit 1; }
           [ -f data/fers/known-answers.json ] || cp kpcdata/data/fers/known-answers.json data/fers/ 2>/dev/null || true
+          # the missing check measures outline to outline (HQ Oct 27): the saved outlines of this run's states
+          mkdir -p cache/us data/us-key
+          for st in $STATES; do
+            cp kpcdata/data/us-key/$st.json data/us-key/ 2>/dev/null || true
+            gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p "$st.json.gz" -D cache/us --clobber || true
+          done
       - name: Check
         continue-on-error: true
         run: |
