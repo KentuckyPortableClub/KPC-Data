@@ -2,14 +2,21 @@
  "about": "World harvester leads for Denmark (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "DK",
  "date": "2026-10-28",
- "status": "paused (out of time, will carry on)",
+ "status": "done",
  "steps_done": [
-  "known"
+  "known",
+  "servers",
+  "wfs",
+  "orgs",
+  "catalogs",
+  "downloads",
+  "search",
+  "eea"
  ],
  "bands": {
   "A": 0,
   "B": 0,
-  "C": 24
+  "C": 25
  },
  "known_good_found": [],
  "known_good_missed": [
@@ -1683,6 +1690,116 @@
       "SHAPE__Area"
      ],
      "records": 396
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://kort.vd.dk/server/rest/services/nybassinapp/vandspejl_kronekant_update_attributes": {
+   "url": "https://kort.vd.dk/server/rest/services/NyBassinapp/Vandspejl_Kronekant_Update_attributes/FeatureServer",
+   "cc": "DK",
+   "title": "NyBassinapp/Vandspejl_Kronekant_Update_attributes",
+   "publisher": "kort.vd.dk",
+   "catalog": "agency server kort.vd.dk",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Oprenses? (zoomet ud)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "Bassinnummer",
+      "Type",
+      "Areal",
+      "Adgangsvej",
+      "Afloeb_dykket",
+      "Afloebstype",
+      "Afspaerringsspjaeld",
+      "Bassin_permanent_vanddybde",
+      "Bassintype",
+      "Bundtype",
+      "Entrepriseomraade",
+      "Ibrugtagningsdato",
+      "Kommune",
+      "Laast_indhegning",
+      "Olieudskillertype",
+      "Recipient",
+      "Sandfang_permanent_vanddybde",
+      "Stuvningshoejde",
+      "Tilloeb_dykket",
+      "Afloeb_tilstand"
+     ],
+     "records": 1555
+    },
+    {
+     "id": 1,
+     "name": "Vandspejl",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "Bassinnummer",
+      "Type",
+      "Areal",
+      "Adgangsvej",
+      "Afloeb_dykket",
+      "Afloebstype",
+      "Afspaerringsspjaeld",
+      "Bassin_permanent_vanddybde",
+      "Bassintype",
+      "Bundtype",
+      "Entrepriseomraade",
+      "Ibrugtagningsdato",
+      "Kommune",
+      "Laast_indhegning",
+      "Olieudskillertype",
+      "Recipient",
+      "Sandfang_permanent_vanddybde",
+      "Stuvningshoejde",
+      "Tilloeb_dykket",
+      "Afloeb_tilstand"
+     ],
+     "records": 1561
+    },
+    {
+     "id": 2,
+     "name": "Kronekant",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "Bassinnummer",
+      "Type",
+      "Areal",
+      "Adgangsvej",
+      "Afloeb_dykket",
+      "Afloebstype",
+      "Afspaerringsspjaeld",
+      "Bassin_permanent_vanddybde",
+      "Bassintype",
+      "Bundtype",
+      "Entrepriseomraade",
+      "Ibrugtagningsdato",
+      "Kommune",
+      "Laast_indhegning",
+      "Olieudskillertype",
+      "Recipient",
+      "Sandfang_permanent_vanddybde",
+      "Stuvningshoejde",
+      "Tilloeb_dykket",
+      "Afloeb_tilstand"
+     ],
+     "records": 1543
     }
    ],
    "note": "",

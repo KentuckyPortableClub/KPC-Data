@@ -1,0 +1,685 @@
+{
+ "about": "World harvester leads for Ireland (official park GIS only; leads for chat 8, never added to the key by the bot).",
+ "cc": "IE",
+ "date": "2026-10-28",
+ "status": "done",
+ "steps_done": [
+  "known",
+  "servers",
+  "wfs",
+  "orgs",
+  "catalogs",
+  "downloads",
+  "search",
+  "eea"
+ ],
+ "bands": {
+  "A": 1,
+  "B": 1,
+  "C": 10
+ },
+ "known_good_found": [
+  "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer"
+ ],
+ "known_good_missed": [],
+ "leads": {
+  "https://services8.arcgis.com/wjawg84s4eayflbd/arcgis/rest/services/important_plant_areas_2020_region": {
+   "url": "https://services8.arcgis.com/WjAwg84s4EayFLBd/arcgis/rest/services/Important_Plant_Areas_2020_region/FeatureServer",
+   "cc": "IE",
+   "title": "Important_Plant_Areas_2020_region",
+   "publisher": "Plantlife International",
+   "catalog": "ArcGIS Online search",
+   "licence": "Data is owned by Plantlife International.&nbsp;Plantlife is keen to encourage the use of its data for conservation purposes. In order to ensure that the user understands and complies with the conditio",
+   "date": "2026-10-01",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Important_Plant_Areas_2020_region",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "IPA_Code",
+      "IPA_Name",
+      "UK_Country",
+      "Shape__Area",
+      "Shape__Length",
+      "Area_ha"
+     ],
+     "records": 165,
+     "sample": [
+      "River Wye IPA",
+      "Cliffs of the Brecon Beacons National Park IPA",
+      "Kenfig IPA"
+     ],
+     "name_field": "IPA_Name"
+    }
+   ],
+   "note": "Plantlife's Important Plant Areas - 2020",
+   "licence_note": "LICENCE FORBIDS PASSING IT ON: list only, never store",
+   "grade": 5,
+   "band": "C"
+  },
+  "https://services.arcgis.com/jjzesw51tqey9uat/arcgis/rest/services/potential_special_protection_areas_england": {
+   "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Potential_Special_Protection_Areas_England/FeatureServer",
+   "cc": "IE",
+   "title": "Potential_Special_Protection_Areas_England",
+   "publisher": "Defra group ArcGIS Online organisation",
+   "catalog": "ArcGIS Online search",
+   "licence": "There are no public access constraints to this data. Use of this data is subject to the Open Government Licence -  https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+   "date": "2026-09-07",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Potential Special Protection Areas (pSPA) (England) © Natural England",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "SPA_NAME",
+      "SPA_CODE",
+      "SPA_AREA",
+      "GRID_REF",
+      "EASTING",
+      "NORTHING",
+      "LATITUDE",
+      "LONGITUDE",
+      "NAME",
+      "STATUS",
+      "ID",
+      "FILE_",
+      "AREA",
+      "EASTING0",
+      "NORTHING0",
+      "GIS_DATE",
+      "VERSION",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Solway Firth"
+     ],
+     "name_field": "SPA_NAME"
+    }
+   ],
+   "note": "Potential Special Protection Areas (England)",
+   "grade": 5,
+   "band": "A"
+  },
+  "https://services7.arcgis.com/6lsadqgf43okrpp6/arcgis/rest/services/coillte_boundaries_consultation": {
+   "url": "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer",
+   "cc": "IE",
+   "title": "Coillte_Boundaries_Consultation",
+   "publisher": "services7.arcgis.com",
+   "catalog": "known-good (chat 8)",
+   "licence": "Coillte Teoranta",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 1,
+     "name": "Forest",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FOREST_COD",
+      "GIS_AREA",
+      "FID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 320
+    },
+    {
+     "id": 4,
+     "name": "Forest Inventory",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FOREST_COD",
+      "COMPARTMEN",
+      "SUBID",
+      "GIS_AREA",
+      "LUT",
+      "SPP1",
+      "PYR1",
+      "CANOPY1",
+      "SPP2",
+      "PYR2",
+      "CANOPY2",
+      "SPP3",
+      "PYR3",
+      "CANOPY3",
+      "SPP4",
+      "PYR4",
+      "CANOPY4",
+      "FID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 126773
+    },
+    {
+     "id": 0,
+     "name": "BAU",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "BAU_NAME",
+      "GIS_AREA",
+      "FID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 6,
+     "sample": [
+      "1",
+      "2",
+      "3"
+     ],
+     "name_field": "BAU_NAME"
+    },
+    {
+     "id": 2,
+     "name": "Properties",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FOREST_COD",
+      "PROPERTY_N",
+      "GIS_AREA",
+      "LAST_REFRE",
+      "FID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 6194
+    },
+    {
+     "id": 3,
+     "name": "Compartment",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "COMPARTMEN",
+      "OS_MAP_NO",
+      "LAST_REFRE",
+      "FID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 23633
+    },
+    {
+     "id": 5,
+     "name": "Ownership",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OWNER",
+      "Area",
+      "FID",
+      "OBJECTID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 2
+    }
+   ],
+   "note": "known-good service",
+   "grade": 4,
+   "band": "B",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists",
+   "known_good": true
+  },
+  "https://services7.arcgis.com/6lsadqgf43okrpp6/arcgis/rest/services/coillte_life_and_millennium_sites": {
+   "url": "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Life_and_Millennium_Sites/FeatureServer",
+   "cc": "IE",
+   "title": "Coillte_Life_and_Millennium_Sites",
+   "publisher": "services7.arcgis.com",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "Use of data     All data on this viewer is available to download and subject to the terms of use – by downloading the data you are agreeing to the terms of use.     Data is in ITM format.    You agree",
+   "date": "2026-01-14",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 1,
+     "name": "Millenium Forests",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NAME",
+      "AREA_HA",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 13,
+     "sample": [
+      "Ballygannon",
+      "Camolin",
+      "Coill an Fhaltaigh"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 0,
+     "name": "Life Site",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "PROJECT",
+      "SITE_NAME",
+      "HECTARES",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 58,
+     "sample": [
+      "Attyslany",
+      "Castletaylor",
+      "Curraghchase"
+     ],
+     "name_field": "SITE_NAME"
+    }
+   ],
+   "note": "Coillte Life and Millennium Sites",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services7.arcgis.com/6lsadqgf43okrpp6/arcgis/rest/services/coillte_recreation_information": {
+   "url": "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Recreation_Information/FeatureServer",
+   "cc": "IE",
+   "title": "Coillte_Recreation_Information",
+   "publisher": "services7.arcgis.com",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "Use of data     All data on this viewer is available to download and subject to the terms of use – by downloading the data you are agreeing to the terms of use.     Data is in ITM format.    You agree",
+   "date": "2026-04-14",
+   "found": "2026-10-28",
+   "gaps": [
+    "access",
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 4,
+     "name": "Forest Park",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Park_Name",
+      "Link",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 17,
+     "sample": [
+      "Avondale",
+      "Ballinastoe MTB",
+      "Cavan Burren"
+     ],
+     "name_field": "Park_Name"
+    },
+    {
+     "id": 0,
+     "name": "Recreation Site Info",
+     "geom": "Multipoint",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "SITE",
+      "WEBaddress",
+      "FOREST_COD",
+      "FOREST_NAM",
+      "PROPERTY_N",
+      "OBJECTID"
+     ],
+     "records": 153
+    },
+    {
+     "id": 1,
+     "name": "Mountain Bike Pole",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "ID",
+      "Site",
+      "Pole",
+      "OBJECTID"
+     ],
+     "records": 244
+    }
+   ],
+   "note": "Coillte Recreation Information",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services7.arcgis.com/6lsadqgf43okrpp6/arcgis/rest/services/coillte_wind_damage_assessment": {
+   "url": "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Wind_Damage_Assessment/FeatureServer",
+   "cc": "IE",
+   "title": "Coillte_Wind_Damage_Assessment",
+   "publisher": "services7.arcgis.com",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "Use of data       All data on this viewer is available to download and subject to the terms of use – by downloading the data you are agreeing to the terms of use.       Data is in ITM format.      You",
+   "date": "2026-03-31",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Wind Damage Assessment",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "BAU_NAME",
+      "County",
+      "wb_area",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 11009,
+     "sample": [
+      "2",
+      "2",
+      "1"
+     ],
+     "name_field": "BAU_NAME"
+    }
+   ],
+   "note": "Coillte Wind Damage Assessment",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services7.arcgis.com/6lsadqgf43okrpp6/arcgis/rest/services/consultation_clearfell_2019": {
+   "url": "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Consultation_Clearfell_2019/FeatureServer",
+   "cc": "IE",
+   "title": "Consultation_Clearfell_2019",
+   "publisher": "services7.arcgis.com",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "Use of data     All data on this viewer is available to download and subject to the terms of use – by downloading the data you are agreeing to the terms of use.     Data is in ITM format.    You agree",
+   "date": "2024-12-13",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Properties in which clearfell may happen in 2021-2025",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "PROPERTY_NAME",
+      "BAU",
+      "BLOCK_HA",
+      "Percent_",
+      "Block_ID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 2876,
+     "sample": [
+      "ABBEYGREY",
+      "ACHONRY",
+      "ACHONRY"
+     ],
+     "name_field": "PROPERTY_NAME"
+    }
+   ],
+   "note": "Coillte Consultation - Clearfell - 2021-2025",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services7.arcgis.com/6lsadqgf43okrpp6/arcgis/rest/services/consultation_thinnings_2019": {
+   "url": "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Consultation_Thinnings_2019/FeatureServer",
+   "cc": "IE",
+   "title": "Consultation_Thinnings_2019",
+   "publisher": "services7.arcgis.com",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "Use of data     All data on this viewer is available to download and subject to the terms of use – by downloading the data you are agreeing to the terms of use.     Data is in ITM format.    You agree",
+   "date": "2025-03-24",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Properties in which thinning operations may happen in 2021-2025 ",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "PROPERTY_NAME",
+      "BAU",
+      "BLOCK_HA",
+      "Forest",
+      "Percent_",
+      "Block_ID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 2793,
+     "sample": [
+      "ABBEYGREY",
+      "ACHONRY",
+      "ACLAMON"
+     ],
+     "name_field": "PROPERTY_NAME"
+    }
+   ],
+   "note": "Coillte Consultation - Thinnings 2021-2025",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services7.arcgis.com/6lsadqgf43okrpp6/arcgis/rest/services/coillte_felling_licences": {
+   "url": "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/COILLTE_FELLING_LICENCES/FeatureServer",
+   "cc": "IE",
+   "title": "COILLTE_FELLING_LICENCES",
+   "publisher": "services7.arcgis.com",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "Use of data     All data on this viewer is available to download and subject to the terms of use – by downloading the data you are agreeing to the terms of use.     Data is in ITM format.    You agree",
+   "date": "2025-02-26",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Felling Licence Submitted to DAFM",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Felling_Re",
+      "Year",
+      "App_Type",
+      "Shape__Area",
+      "Shape__Length",
+      "GlobalID",
+      "HARVEST_BLOCK"
+     ],
+     "records": 6546
+    }
+   ],
+   "note": "Coillte - Felling Licences",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services7.arcgis.com/6lsadqgf43okrpp6/arcgis/rest/services/coillte_biodiversity_area": {
+   "url": "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Biodiversity_Area/FeatureServer",
+   "cc": "IE",
+   "title": "Coillte_Biodiversity_Area",
+   "publisher": "services7.arcgis.com",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "Use of data      All data on this viewer is available to download and subject to the terms of use – by downloading the data you are agreeing to the terms of use.     Data is in ITM format.    You agre",
+   "date": "2026-09-17",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Biodiversity_2026",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "BiodID",
+      "BAU",
+      "Forest",
+      "Property",
+      "Area",
+      "Bioclass",
+      "Potential",
+      "Remcode",
+      "HabGrp1",
+      "HabTyp1",
+      "HabGrp2",
+      "HabTyp2",
+      "TarHabGrp1",
+      "TarHabTyp1",
+      "TarHabGrp2",
+      "TarHabTyp2",
+      "Origin",
+      "RetiredBio",
+      "HabCat"
+     ],
+     "records": 6028
+    }
+   ],
+   "note": "Coillte Biodiversity Area",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services7.arcgis.com/6lsadqgf43okrpp6/arcgis/rest/services/coillte_biodiversity_areas": {
+   "url": "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Biodiversity_Areas/FeatureServer",
+   "cc": "IE",
+   "title": "Coillte_Biodiversity_Areas",
+   "publisher": "services7.arcgis.com",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "Use of data      All data on this viewer is available to download and subject to the terms of use – by downloading the data you are agreeing to the terms of use.     Data is in ITM format.    You agre",
+   "date": "2025-12-15",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Biodiversity Areas (Bio Class)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "BIOD_ID",
+      "BAU",
+      "FOREST",
+      "PROPERTY",
+      "AREA_HA",
+      "BIOCLASS",
+      "HAB_GROUP1",
+      "HAB_TYPE1",
+      "HAB_GROUP2",
+      "HAB_TYPE2",
+      "HAB_CATEG",
+      "TarHabGrp1",
+      "TarHabTyp1",
+      "TarHabGrp2",
+      "TarHabTyp2",
+      "POT_BIOCLS",
+      "NAT_VALUES",
+      "Shape_Leng",
+      "Shape__Area"
+     ],
+     "records": 3503
+    }
+   ],
+   "note": "CoillteBiodiversityArea - retired",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://services7.arcgis.com/6lsadqgf43okrpp6/arcgis/rest/services/coillte_harvest_units": {
+   "url": "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Harvest_Units/FeatureServer",
+   "cc": "IE",
+   "title": "Coillte_Harvest_Units",
+   "publisher": "services7.arcgis.com",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "Use of data       All data on this viewer is available to download and subject to the terms of use – by downloading the data you are agreeing to the terms of use.       Data is in ITM format.      You",
+   "date": "2026-05-15",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Coillte Harvest Unit",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "Reference",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1217
+    }
+   ],
+   "note": "Coillte Harvest Units",
+   "grade": 3,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  }
+ }
+}

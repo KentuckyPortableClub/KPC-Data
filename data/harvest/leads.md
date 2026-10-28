@@ -57,6 +57,41 @@ access constraints t | 2024-10-18 | https://services.arcgis.com/JJzESW51TqeY9uat
 | A | GB | UK_RAMSAR_BNG_20210308_JNCC | park / protected-area polygons with a name field | Defra group ArcGIS Online organisati | Released under the Open Government Licen | 2023-09-13 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/UK_RAMSAR_BNG_20210308_JNCC/FeatureServer |
 | A | GB | c20220316_UKSPAswithMarineComponents_WGS84 | park / protected-area polygons with a name field | Defra group ArcGIS Online organisati | Re-use of the data is subject to the ter | 2022-08-15 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/c20220316_UKSPAswithMarineComponents_WGS84/FeatureServer |
 | C | GB | esri_tpo_woodland | park / protected-area polygons with a name field | Exmoor National Park Authority | Terms of Use   Spatial data provided by  | 2025-11-14 | https://services-eu1.arcgis.com/nvL9EDc30lviBdlc/arcgis/rest/services/esri_tpo_woodland/FeatureServer |
+| A | NZ | AATH_Concession_Locations_view | park / protected-area polygons with a name field | Department of Conservation | Copyright 2018 Crown copyright (c) Depar | 2025-05-01 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/AATH_Concession_Locations_view/FeatureServer |
+| A | NZ | ATES_Avalanche_Classification | park / protected-area polygons with a name field | Department of Conservation | Disclaimers  1. While all care and dilig | 2023-12-04 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/ATES_Avalanche_Classification/FeatureServer |
+| A | NZ | Chamois_Distribution_2007 | park / protected-area polygons with a name field | Department of Conservation | Disclaimers  1. While all care and dilig | 2023-12-05 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Chamois_Distribution_2007/FeatureServer |
+| A | NZ | Covenant_Areas | park / protected-area polygons with a name field | Department of Conservation | Disclaimers  1. While all care and dilig | 2025-12-11 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Covenant_Areas/FeatureServer |
+| A | NZ | DOCFreedomCamping | park / protected-area polygons with a name field | Department of Conservation | Disclaimers  1. While all care and dilig | 2026-09-01 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOCFreedomCamping/FeatureServer |
+| A | NZ | DOC_CMS_Place_Boundaries | park / protected-area polygons with a name field | Department of Conservation | Copyright 2018 Crown copyright (c) Depar | 2023-12-04 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_CMS_Place_Boundaries/FeatureServer |
+| A | NZ | DOC_FreedomCampingSites | park / protected-area polygons with a name field | Department of Conservation | Disclaimers  1. While all care and dilig | 2026-09-01 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_FreedomCampingSites/FeatureServer |
+| A | NZ | DOC_Marine_Protections | park / protected-area polygons with a name field | Department of Conservation | Disclaimers  1. While all care and dilig | 2026-10-21 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Marine_Protections/FeatureServer |
+| A | NZ | DOC_Marine_Reserves | park / protected-area polygons with a name field | Department of Conservation | Copyright 2018 Crown copyright (c) Depar | 2026-10-22 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Marine_Reserves/FeatureServer |
+| A | NZ | DOC_Marine_Reserves_FHV | park / protected-area polygons with a name field | Department of Conservation | Disclaimers  1. While all care and dilig | 2026-10-21 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Marine_Reserves_FHV/FeatureServer |
+| A | NZ | DOC_Operations_Districts | park / protected-area polygons with a name field | Department of Conservation | Copyright 2018 Crown copyright (c) Depar | 2024-06-14 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Operations_Districts/FeatureServer |
+| A | NZ | DOC_PublicConservationAreas_3Colour_HFV | park / protected-area polygons with a name field | Department of Conservation | Disclaimers  1. While all care and dilig | 2026-10-22 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_PublicConservationAreas_3Colour_HFV/FeatureServer |
+| A | NZ | DOC_Public_Conservation_Land | known-good layer (chat 8); known-good layer (chat 8) | services1.arcgis.com | licence unknown: chat 8 asks |  | https://services1.arcgis.com/3JjYDyG3oajxU6HO/ArcGIS/rest/services/DOC_Public_Conservation_Land/FeatureServer |
+| A | NZ | DOC_Public_Conservation_Land_FHV | park / protected-area polygons with a name field | Department of Conservation | Disclaimers  1. While all care and dilig | 2026-10-22 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Public_Conservation_Land_FHV/FeatureServer |
+| A | NZ | DOC_Recreational_Hunting_Areas | park / protected-area polygons with a name field | Department of Conservation | Disclaimers  1. While all care and dilig | 2026-08-30 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Recreational_Hunting_Areas/FeatureServer |
+| A | NZ | Fallow_Deer_Distribution_2007 | park / protected-area polygons with a name field | Department of Conservation | Disclaimers  1. While all care and dilig | 2023-12-05 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Fallow_Deer_Distribution_2007/FeatureServer |
+| A | NZ | Feral_Goat_Distribution_2007 | park / protected-area polygons with a name field | Department of Conservation | Disclaimers  1. While all care and dilig | 2023-12-05 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Feral_Goat_Distribution_2007/FeatureServer |
+| A | NZ | Feral_Goat_Distribution_2014 | park / protected-area polygons with a name field | Department of Conservation | Disclaimers  1. While all care and dilig | 2023-12-05 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Feral_Goat_Distribution_2014/FeatureServer |
+| A | NZ | Feral_Pig_Distribution_2007 | park / protected-area polygons with a name field | Department of Conservation | Disclaimers  1. While all care and dilig | 2023-12-05 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Feral_Pig_Distribution_2007/FeatureServer |
+| A | NZ | Ferret_Distribution_2007 | park / protected-area polygons with a name field | Department of Conservation | Disclaimers  1. While all care and dilig | 2023-12-05 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Ferret_Distribution_2007/FeatureServer |
+| A | NZ | Hare_Distribution_2007 | park / protected-area polygons with a name field | Department of Conservation | Disclaimers  1. While all care and dilig | 2023-12-05 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Hare_Distribution_2007/FeatureServer |
+| A | NZ | Himalayan_Tahr_Distribution_2007 | park / protected-area polygons with a name field | Department of Conservation | Disclaimers  1. While all care and dilig | 2023-12-05 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Himalayan_Tahr_Distribution_2007/FeatureServer |
+| A | NZ | Himalayan_Tahr_Distribution_2014 | park / protected-area polygons with a name field | Department of Conservation | Disclaimers  1. While all care and dilig | 2023-12-05 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Himalayan_Tahr_Distribution_2014/FeatureServer |
+| A | NZ | National_WARO_Concession_Locations_view | park / protected-area polygons with a name field | Department of Conservation | Copyright 2018 Crown copyright (c) Depar | 2025-05-01 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/National_WARO_Concession_Locations_view/FeatureServer |
+| A | NZ | NonMigratoryFreshwaterFishDistribution | park / protected-area polygons with a name field | Department of Conservation | Disclaimers  1. While all care and dilig | 2025-12-11 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/NonMigratoryFreshwaterFishDistribution/FeatureServer |
+| A | NZ | Possum_Distribution_2007 | park / protected-area polygons with a name field | Department of Conservation | Disclaimers  1. While all care and dilig | 2023-12-05 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Possum_Distribution_2007/FeatureServer |
+| A | NZ | Possum_Distribution_2014 | park / protected-area polygons with a name field | Department of Conservation | Disclaimers  1. While all care and dilig | 2023-12-05 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Possum_Distribution_2014/FeatureServer |
+| A | NZ | Rabbit_Distribution_2007 | park / protected-area polygons with a name field | Department of Conservation | Disclaimers  1. While all care and dilig | 2023-12-04 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Rabbit_Distribution_2007/FeatureServer |
+| A | NZ | Red_Deer_Distribution_2007 | park / protected-area polygons with a name field | Department of Conservation | Disclaimers  1. While all care and dilig | 2023-12-05 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Red_Deer_Distribution_2007/FeatureServer |
+| A | NZ | Red_Deer_Distribution_2014 | park / protected-area polygons with a name field | Department of Conservation | Disclaimers  1. While all care and dilig | 2023-12-05 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Red_Deer_Distribution_2014/FeatureServer |
+| A | NZ | Sika_Deer_Distribution_2007 | park / protected-area polygons with a name field | Department of Conservation | Disclaimers  1. While all care and dilig | 2023-12-05 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Sika_Deer_Distribution_2007/FeatureServer |
+| A | NZ | Stoat_Distribution_2007 | park / protected-area polygons with a name field | Department of Conservation | Disclaimers  1. While all care and dilig | 2023-12-05 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Stoat_Distribution_2007/FeatureServer |
+| A | NZ | Stoat_Distribution_2014 | park / protected-area polygons with a name field | Department of Conservation | Disclaimers  1. While all care and dilig | 2023-12-05 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Stoat_Distribution_2014/FeatureServer |
+| A | NZ | Weasel_Distribution_2007 | park / protected-area polygons with a name field | Department of Conservation | Disclaimers  1. While all care and dilig | 2023-12-05 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Weasel_Distribution_2007/FeatureServer |
+| A | NZ | Whitebait_Catchments | park / protected-area polygons with a name field | Department of Conservation | CC-BY ATTRIBUTION Crowncopyright ©. Copy | 2021-10-27 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Whitebait_Catchments/FeatureServer |
 | A | AU | AerialPhotoViewer/Aerial_Photo_Coverage_Areas | named area polygons | services.thelist.tas.gov.au | licence unknown: chat 8 asks |  | https://services.thelist.tas.gov.au/arcgis/rest/services/AerialPhotoViewer/Aerial_Photo_Coverage_Areas/MapServer |
 | A | AU | AerialPhotoViewer/Orthophoto_Coverage_Area | named area polygons | services.thelist.tas.gov.au | licence unknown: chat 8 asks |  | https://services.thelist.tas.gov.au/arcgis/rest/services/AerialPhotoViewer/Orthophoto_Coverage_Area/MapServer |
 | A | AU | Landgate_Public_Maps/Map_of_Bush_Fire_Prone_Areas_ | named area polygons; named area polygons | public-services.slip.wa.gov.au | Landgate/SLIP/OBRM |  | https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Map_of_Bush_Fire_Prone_Areas_3/MapServer |
@@ -119,77 +154,46 @@ access constraints t | 2024-10-18 | https://services.arcgis.com/JJzESW51TqeY9uat
 | A | GB | England_Peat_Map_Upland_Peat_Erosion_and_Drainage_ | park / protected-area polygons (no name field seen) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2025-05-14 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/England_Peat_Map_Upland_Peat_Erosion_and_Drainage_Gullies/FeatureServer |
 | A | GB | England_Peat_Map_Upland_Peat_Erosion_and_Drainage_ | park / protected-area polygons (no name field seen) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2025-05-12 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/England_Peat_Map_Upland_Peat_Erosion_and_Drainage_Haggs/FeatureServer |
 | A | GB | England_Peat_Map_Vegetation_and_Land_Cover_on_Peat | park / protected-area polygons (no name field seen); park / protected- | Defra group ArcGIS Online organisati | There are no public access constraints t | 2025-09-10 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/England_Peat_Map_Vegetation_and_Land_Cover_on_Peaty_Soils/FeatureServer |
-| A | GB | Environment_Agency_Natural_England_Public_Facing_b | park / protected-area polygons with a name field | Defra group ArcGIS Online organisati | There are no public access constraints t | 2026-04-21 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Environment_Agency_Natural_England_Public_Facing_boundaries/FeatureServer |
-| A | GB | Environmental_Stewardship_Scheme_Options | park points (sites / entrances) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2026-08-19 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Environmental_Stewardship_Scheme_Options/FeatureServer |
-| A | GB | GCN_Risk_Zones_Hertfordshire | park / protected-area polygons with a name field | Defra group ArcGIS Online organisati | Use of this data is subject to the terms | 2026-05-21 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/GCN_Risk_Zones_Hertfordshire/FeatureServer |
-| A | GB | GCN_Risk_Zones_Norfolk_and_Suffolk | park / protected-area polygons with a name field | Defra group ArcGIS Online organisati | Use of this data is subject to the Non-C | 2024-05-29 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/GCN_Risk_Zones_Norfolk_and_Suffolk/FeatureServer |
-| A | GB | GCN_Strategic_Opportunity_Areas_England | park / protected-area polygons with a name field | Defra group ArcGIS Online organisati | Use of this data is subject to Natural E | 2022-07-25 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/GCN_Strategic_Opportunity_Areas_England/FeatureServer |
-| A | GB | GCN_Strategic_Opportunity_Areas_Telford | park / protected-area polygons (no name field seen) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2023-06-06 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/GCN_Strategic_Opportunity_Areas_Telford/FeatureServer |
-| A | GB | GS9_10_Eligibility_for_CS | park / protected-area polygons (no name field seen) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2024-03-25 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/GS9_10_Eligibility_for_CS/FeatureServer |
-| A | GB | Gamebird_General_License_500m_Buffer_Zones_England | park / protected-area polygons (no name field seen) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2023-06-06 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Gamebird_General_License_500m_Buffer_Zones_England/FeatureServer |
-| A | GB | Habitat_Networks_Individual_England | park / protected-area polygons (no name field seen); park / protected- | Defra group ArcGIS Online organisati | There are no public access constraints t | 2026-04-21 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Habitat_Networks_Individual_England/FeatureServer |
-| A | GB | Holderness_Coast_Habitat_Mapping_Habitat_Survey | park / protected-area polygons with a name field | Defra group ArcGIS Online organisati | © Natural England copyright.  Contains U | 2025-11-14 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Holderness_Coast_Habitat_Mapping_Habitat_Survey/FeatureServer |
-| A | GB | Hosted/Benzene_annual_mean_Local_Authority_2022 | park / protected-area polygons with a name field | Defra group ArcGIS Online organisati | Custom licence page | 2024-11-12 | https://ukair.maps.rcdo.co.uk/ukairserver/rest/services/Hosted/Benzene_annual_mean_Local_Authority_2022/FeatureServer |
-| A | GB | Hosted/Cadmium_annual_mean_Local_Authority_2021 | park / protected-area polygons with a name field | Defra group ArcGIS Online organisati | Custom licence page | 2024-11-12 | https://ukair.maps.rcdo.co.uk/ukairserver/rest/services/Hosted/Cadmium_annual_mean_Local_Authority_2021/FeatureServer |
-| A | GB | Hosted/Sulphur_Dioxide_annual_mean_Local_Authority | park / protected-area polygons with a name field | Defra group ArcGIS Online organisati | Custom licence page | 2024-11-12 | https://ukair.maps.rcdo.co.uk/ukairserver/rest/services/Hosted/Sulphur_Dioxide_annual_mean_Local_Authority_2020/FeatureServer |
-| A | GB | Hosted/Sulphur_Dioxide_winter_mean_Local_Authority | park / protected-area polygons with a name field | Defra group ArcGIS Online organisati | Custom licence page | 2024-11-12 | https://ukair.maps.rcdo.co.uk/ukairserver/rest/services/Hosted/Sulphur_Dioxide_winter_mean_Local_Authority_2020/FeatureServer |
-| C | GB | Important_Plant_Areas_2020_region | park / protected-area polygons with a name field | Plantlife International | Data is owned by Plantlife International | 2026-10-01 | https://services8.arcgis.com/WjAwg84s4EayFLBd/arcgis/rest/services/Important_Plant_Areas_2020_region/FeatureServer |
-| A | GB | Integrated_Site_Assessment_Species_records_polygon | park / protected-area polygons (no name field seen) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2023-06-06 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Integrated_Site_Assessment_Species_records_polygons_England/FeatureServer |
-| A | GB | Land_Management_Initiatives_England | park / protected-area polygons with a name field | Defra group ArcGIS Online organisati | There are no public access constraints t | 2024-03-25 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Land_Management_Initiatives_England/FeatureServer |
-| A | GB | Living_England_2022_2023 | park / protected-area polygons (no name field seen); park / protected- | Defra group ArcGIS Online organisati | There are no public access constraints t | 2026-04-21 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Living_England_2022_2023/FeatureServer |
-| A | GB | Living_England_Habitat_Map_Phase4 | park / protected-area polygons (no name field seen) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2026-04-21 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Living_England_Habitat_Map_Phase4/FeatureServer |
-| A | GB | MMO_Marine_Plan_Areas | park / protected-area polygons with a name field | Defra group ArcGIS Online organisati | You must always use the following attrib | 2025-09-24 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/MMO_Marine_Plan_Areas/FeatureServer |
-| A | GB | MPA_MMOJuris_SG_gearcode | park / protected-area polygons with a name field | Defra group ArcGIS Online organisati | Re-use of the data is subject to the ter | 2022-12-01 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/MPA_MMOJuris_SG_gearcode/FeatureServer |
-| A | GB | MPA_S4_EngJuris_BTG | park / protected-area polygons with a name field | Defra group ArcGIS Online organisati | Re-use of the data is subject to the ter | 2022-12-01 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/MPA_S4_EngJuris_BTG/FeatureServer |
-| A | GB | MPA_S4_EngJuris_MG | park / protected-area polygons with a name field | Defra group ArcGIS Online organisati | Re-use of the data is subject to the ter | 2022-12-01 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/MPA_S4_EngJuris_MG/FeatureServer |
-| A | GB | MPA_S4_EngJuris_SG_gearcode | park / protected-area polygons with a name field | Defra group ArcGIS Online organisati | Re-use of the data is subject to the ter | 2022-12-01 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/MPA_S4_EngJuris_SG_gearcode/FeatureServer |
-| A | GB | MPA_S4_EngJuris_SG_geargroup | park / protected-area polygons with a name field | Defra group ArcGIS Online organisati | Re-use of the data is subject to the ter | 2022-12-01 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/MPA_S4_EngJuris_SG_geargroup/FeatureServer |
-| A | GB | MPA_S4_WholeSite_BTG | park / protected-area polygons with a name field | Defra group ArcGIS Online organisati | Re-use of the data is subject to the ter | 2022-12-01 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/MPA_S4_WholeSite_BTG/FeatureServer |
-| A | GB | MPA_S4_WholeSite_MG_v2 | park / protected-area polygons with a name field | Defra group ArcGIS Online organisati | Re-use of the data is subject to the ter | 2022-12-02 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/MPA_S4_WholeSite_MG_v2/FeatureServer |
-| A | GB | MPA_S4_WholeSite_SG_geargroup | park / protected-area polygons with a name field | Defra group ArcGIS Online organisati | Re-use of the data is subject to the ter | 2022-12-01 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/MPA_S4_WholeSite_SG_geargroup/FeatureServer |
-| A | GB | Marine_Protected_Areas__Stage_4__English_Jurisdict | park / protected-area polygons with a name field | Defra group ArcGIS Online organisati | Re-use of the data is subject to the ter | 2023-03-20 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Marine_Protected_Areas__Stage_4__English_Jurisdiction_/FeatureServer |
-| A | GB | Marine_Protected_Areas__Stage_4__MMO_Jurisdiction_ | park / protected-area polygons with a name field | Defra group ArcGIS Online organisati | Re-use of the data is subject to the ter | 2023-03-20 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Marine_Protected_Areas__Stage_4__MMO_Jurisdiction_/FeatureServer |
-| A | GB | Marine_Protected_Areas__Stage_4__Whole_Site_ | park / protected-area polygons with a name field | Defra group ArcGIS Online organisati | Re-use of the data is subject to the ter | 2023-03-17 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Marine_Protected_Areas__Stage_4__Whole_Site_/FeatureServer |
-| A | GB | Midlands_Heartlands_Heathland_Nature_Recovery_Oppo | park / protected-area polygons (no name field seen) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2023-06-06 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Midlands_Heartlands_Heathland_Nature_Recovery_Opportunities_Map/FeatureServer |
-| A | GB | Midlands_Heartlands_Heathland_Suitability_Areas | park / protected-area polygons with a name field | Defra group ArcGIS Online organisati | There are no public access constraints t | 2023-06-06 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Midlands_Heartlands_Heathland_Suitability_Areas/FeatureServer |
-| A | GB | Millennium_Greens_England_Points | park points (sites / entrances) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2023-06-06 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Millennium_Greens_England_Points/FeatureServer |
-| A | GB | Moorland_Change_Map_England_2015_2016 | park / protected-area polygons (no name field seen) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2023-11-23 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Moorland_Change_Map_England_2015_2016/FeatureServer |
 
 ## Last run
 ```
 {
  "date": "2026-10-28",
  "stats": {
-  "requests": 1365,
+  "requests": 1597,
   "hits": 0,
-  "leads": 78,
-  "already_read": 0,
-  "skipped": 80,
-  "not_official": 169,
-  "robots": 6,
+  "leads": 284,
+  "already_read": 1,
+  "skipped": 49,
+  "not_official": 225,
+  "robots": 8,
   "strikes": 3,
-  "errors": 54
+  "errors": 57,
+  "retried_json": 8
  },
  "countries": [
-  "PT done: 108 leads (A 21), known-good found 1 of 1",
-  "RO done: 0 leads (A 0), known-good found 0 of 0",
-  "AT done: 0 leads (A 0), known-good found 0 of 0",
-  "SE done: 4 leads (A 1), known-good found 0 of 0",
-  "SI done: 0 leads (A 0), known-good found 0 of 0",
-  "CZ done: 0 leads (A 0), known-good found 0 of 0",
-  "BE done: 1 leads (A 0), known-good found 1 of 1",
-  "DK paused: 24 leads (A 0), known-good found 0 of 1"
+  "DK done: 25 leads (A 0), known-good found 0 of 1",
+  "IE done: 12 leads (A 1), known-good found 1 of 1",
+  "SK done: 0 leads (A 0), known-good found 0 of 0",
+  "HR done: 0 leads (A 0), known-good found 0 of 0",
+  "FI done: 0 leads (A 0), known-good found 0 of 0",
+  "HU done: 0 leads (A 0), known-good found 0 of 0",
+  "EE done: 0 leads (A 0), known-good found 0 of 0",
+  "LV done: 0 leads (A 0), known-good found 0 of 0",
+  "LT done: 0 leads (A 0), known-good found 0 of 0",
+  "LU done: 0 leads (A 0), known-good found 0 of 0",
+  "NZ paused: 270 leads (A 77), known-good found 1 of 1"
  ],
  "dead_servers": [
-  "data.gov.ro"
+  "data.gov.lt"
  ],
  "robots_refused": {
-  "gis.tirol.gv.at": 2,
-  "podatki.gov.si": 4
+  "data.gov.ie": 4,
+  "catalogue.data.govt.nz": 4
  },
  "robots_said": {
-  "gis.tirol.gv.at": "User-agent: * | Disallow: /",
-  "podatki.gov.si": "User-agent: * | Crawl-delay: 10 | Allow: /misc/*.css$ | Allow: /misc/*.css? | Allow: /misc/*.js$ | Allow: /misc/*.js? | Allow: /misc/*.gif | Allow: /misc/*.jpg "
+  "data.gov.ie": "User-agent: * | Disallow: /dataset/rate/ | Disallow: /revision/ | Disallow: /dataset/*/history | Disallow: /api/ | Disallow: */dataset/*?*year_updated= | Disall",
+  "catalogue.data.govt.nz": "User-agent: * | Disallow: /dataset/rate/ | Disallow: /revision/ | Disallow: /dataset/*/history | Disallow: /api/ | Disallow: /*&tags= | Disallow: /*?tags= | Dis"
  },
  "robots_exempted_hosts (HQ ruling Oct 27: ArcGIS REST API paths only)": {}
 }
