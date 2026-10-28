@@ -12,11 +12,22 @@
  "date": "2026-10-28",
  "pass": true,
  "counts": {
-  "FOUND": 78,
-  "DROPPED": 91,
-  "NEVER LOOKED AT": 263
+  "FOUND": 83,
+  "DROPPED": 86,
+  "NEVER LOOKED AT": 262
  },
  "FOUND": [
+  {
+   "refs": [
+    "US-0019",
+    "US-10164"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (6x, POTA history)",
+    "old guide (Oct 13 Kentucky 2-fers guide)"
+   ],
+   "row": "US-0019+US-10164@area@36.659,-83.582"
+  },
   {
    "refs": [
     "US-0050",
@@ -26,7 +37,7 @@
     "activated together by the same call on the same day (295x, POTA history)",
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
-   "row": "US-0050+US-10105@area@37.171,-86.155"
+   "row": "US-0050+US-10105@area@37.171,-86.156"
   },
   {
    "refs": [
@@ -50,7 +61,7 @@
     "hand list (ky-trail-parks.json)",
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
-   "row": "US-0686+US-11181@trail@36.623,-84.666"
+   "row": "US-0686+US-11181@trail@36.621,-84.668"
   },
   {
    "refs": [
@@ -628,7 +639,19 @@
     "activated together by the same call on the same day (8x, POTA history)",
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
-   "row": "US-3790+US-3791@river@36.503,-88.055"
+   "row": "US-3790+US-3791@river@36.505,-88.054"
+  },
+  {
+   "refs": [
+    "US-3791",
+    "US-3792"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (36x, POTA history)",
+    "hand list (ky-trail-parks.json)",
+    "old guide (Oct 13 Kentucky 2-fers guide)"
+   ],
+   "row": "US-3791+US-3792@river@36.743,-88.081"
   },
   {
    "refs": [
@@ -651,6 +674,28 @@
     "hand list (ky-trail-parks.json)"
    ],
    "row": "US-3791+US-3793+US-4572@river@37.145,-89.081"
+  },
+  {
+   "refs": [
+    "US-3791",
+    "US-3797"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (14x, POTA history)",
+    "old guide (Oct 13 Kentucky 2-fers guide)"
+   ],
+   "row": "US-3791+US-3797+US-4572@river@37.013,-89.145"
+  },
+  {
+   "refs": [
+    "US-3791",
+    "US-3797",
+    "US-4572"
+   ],
+   "why_expected": [
+    "hand list (ky-trail-parks.json)"
+   ],
+   "row": "US-3791+US-3797+US-4572@river@37.013,-89.145"
   },
   {
    "refs": [
@@ -768,9 +813,21 @@
    ],
    "why_expected": [
     "activated together by the same call on the same day (4x, POTA history)",
+    "hand list (ky-trail-parks.json)",
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
    "row": "US-3796+US-4572@river@37.525,-88.063"
+  },
+  {
+   "refs": [
+    "US-3797",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (13x, POTA history)",
+    "old guide (Oct 13 Kentucky 2-fers guide)"
+   ],
+   "row": "US-3791+US-3797+US-4572@river@37.013,-89.145"
   },
   {
    "refs": [
@@ -885,18 +942,6 @@
   }
  ],
  "DROPPED": [
-  {
-   "refs": [
-    "US-0019",
-    "US-10164"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (6x, POTA history)",
-    "old guide (Oct 13 Kentucky 2-fers guide)"
-   ],
-   "reason": "not sure: the ownership map shows more than one owner across the spot: FED:NPS, STATE",
-   "rule": "rule 7 (NOT SURE is kept out)"
-  },
   {
    "refs": [
     "US-0019",
@@ -1122,7 +1167,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "reason": "not sure: no public owner on PAD-US at the spot, and KDFWR's own page names no owner for Ferguson Creek Wildlife Management Area (a person adds it to data/ky-wma-owners.json)",
    "rule": "rule 7 (NOT SURE is kept out)"
   },
   {
@@ -1655,43 +1700,6 @@
   },
   {
    "refs": [
-    "US-3791",
-    "US-3792"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (36x, POTA history)",
-    "hand list (ky-trail-parks.json)",
-    "old guide (Oct 13 Kentucky 2-fers guide)"
-   ],
-   "reason": "dropped in pass 2",
-   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
-  },
-  {
-   "refs": [
-    "US-3791",
-    "US-3797"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (14x, POTA history)",
-    "old guide (Oct 13 Kentucky 2-fers guide)"
-   ],
-   "reason": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
-   "rule": "rule 7 (NOT SURE is kept out)"
-  },
-  {
-   "refs": [
-    "US-3791",
-    "US-3797",
-    "US-4572"
-   ],
-   "why_expected": [
-    "hand list (ky-trail-parks.json)"
-   ],
-   "reason": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
-   "rule": "rule 7 (NOT SURE is kept out)"
-  },
-  {
-   "refs": [
     "US-3793",
     "US-3797"
    ],
@@ -1701,18 +1709,6 @@
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
-  },
-  {
-   "refs": [
-    "US-3797",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (13x, POTA history)",
-    "old guide (Oct 13 Kentucky 2-fers guide)"
-   ],
-   "reason": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
-   "rule": "rule 7 (NOT SURE is kept out)"
   },
   {
    "refs": [
@@ -3923,17 +3919,6 @@
   {
    "refs": [
     "US-3791",
-    "US-3796",
-    "US-4572"
-   ],
-   "why_expected": [
-    "hand list (ky-trail-parks.json)"
-   ],
-   "reason": "US-3791: no official boundary; US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3791",
     "US-3803"
    ],
    "why_expected": [
@@ -4128,7 +4113,6 @@
    ],
    "why_expected": [
     "activated together by the same call on the same day (4x, POTA history)",
-    "hand list (ky-trail-parks.json)",
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
    "reason": "US-4572: no official boundary"
