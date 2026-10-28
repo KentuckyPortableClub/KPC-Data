@@ -116,7 +116,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### My favorite camping spots (a hobby map)  ·  US-KY  ·  from chat 9
 - url: https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0
-- WHY: did not open (error Invalid URL): probed again next run (failed 1 of 3)
+- WHY: did not open (error Invalid URL): probed again next run (failed 2 of 3)
 - publisher: hobby account (personal map) → not official (hobby in the publisher words)
 - terms: NOTHING STATED · source none
 - facts: status error Invalid URL
