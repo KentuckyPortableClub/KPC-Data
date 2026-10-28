@@ -2,15 +2,15 @@
  "about": "Park truth checker: official acreage vs our outline, handover hints, second-witness score. Review lists only: nothing here changes a key or a card.",
  "area": "US-KY",
  "counts": {
-  "agree": 95,
-  "handover_hints": 23,
+  "agree": 87,
+  "handover_hints": 46,
   "no_page": 0,
-  "no_size": 73,
-  "off": 11,
+  "no_size": 83,
+  "off": 7,
   "ours_unknown": 0,
   "parks": 193,
   "retired": 0,
-  "unsure": 10,
+  "unsure": 12,
   "weak": 30,
   "with_outline": 189
  },
@@ -46,6 +46,16 @@
      "status": "ok",
      "url": "https://www.nps.gov/cuga/index.htm",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/cuga/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/cuga/learn/historyculture/index.htm",
+     "why": "about / history page of the park's site"
     },
     {
      "status": "ok",
@@ -95,7 +105,7 @@
     }
    ],
    "t": "National / NPS",
-   "ver": 1,
+   "ver": 2,
    "verdict": "unsure"
   },
   "US-0050": {
@@ -129,6 +139,16 @@
      "status": "ok",
      "url": "https://www.nps.gov/maca/index.htm",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/maca/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/maca/learn/historyculture/index.htm",
+     "why": "about / history page of the park's site"
     },
     {
      "status": "ok",
@@ -173,7 +193,7 @@
     }
    ],
    "t": "National Park",
-   "ver": 1,
+   "ver": 2,
    "verdict": "off"
   },
   "US-0295": {
@@ -184,31 +204,32 @@
      "kind": "transfer",
      "line": "as original patentee of land on which Paducah is now located. Two grants totaling 73,962 acres were conveyed to Clark by Virginia, a portion of this representing money owed him for services rendered. Land deeded to brother William (of Lewis and Clark fame) in 1803, \"in consideration of $2,100 for",
      "src": "https://www.fws.gov/refuge/clarks-river/about-us",
-     "why": "FWS refuge about page"
+     "why": "about / history page of the park's site"
     },
     {
      "date_hint": null,
      "kind": "transfer",
      "line": "yed to Clark by Virginia, a portion of this representing money owed him for services rendered. Land deeded to brother William (of Lewis and Clark fame) in 1803, \"in consideration of $2,100 for sundry services.\" Clark later developed Paducah. On June 27, 1778, George Rogers Clark's army of about 200 ",
      "src": "https://www.fws.gov/refuge/clarks-river/about-us",
-     "why": "FWS refuge about page"
+     "why": "about / history page of the park's site"
     },
     {
      "date_hint": null,
      "kind": "managed by",
      "line": "ational wildlife refuge A national wildlife refuge is typically a contiguous area of land and water managed by the U.S. Fish and Wildlife Service for the conservation and, where appropriate, restoration of fish, wildlife and plant resources and their habitats for th",
      "src": "https://www.fws.gov/refuge/clarks-river/about-us",
-     "why": "FWS refuge about page"
+     "why": "about / history page of the park's site"
     },
     {
      "date_hint": null,
      "kind": "renamed",
      "line": "ed in, even after moving to Virginia to marry Julia Hancock. In 1827, He purchased the land that is now known as Paducah, Kentucky. According to the traditional telling of the story, he bought the land from a Chickasaw Chief named",
      "src": "https://www.fws.gov/refuge/clarks-river/about-us",
-     "why": "FWS refuge about page"
+     "why": "about / history page of the park's site"
     }
    ],
    "n": "Clarks River National Wildlife Refuge",
+   "note": "the agency figure may cover several states; our outline may be this state's share only",
    "official": {
     "acres": 73962.0,
     "as": "73,962 acres",
@@ -245,21 +266,16 @@
     },
     {
      "status": "ok",
-     "url": "https://www.fws.gov/sites/default/files/documents/2024-08/public-map-july-2024.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
      "url": "https://www.fws.gov/refuge/clarks-river/about-us",
-     "why": "FWS refuge about page"
+     "why": "about / history page of the park's site"
     }
    ],
    "pct": 68,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 1,
     "source": 1
    },
    "sizes": [
@@ -286,19 +302,20 @@
     }
    ],
    "t": "National / NPS",
-   "ver": 1,
-   "verdict": "off"
+   "ver": 2,
+   "verdict": "unsure"
   },
   "US-0538": {
    "checked": "2026-10-28",
    "handover": [],
    "n": "Reelfoot National Wildlife Refuge",
+   "note": "the agency figure may cover several states; our outline may be this state's share only",
    "official": {
     "acres": 11556.0,
     "as": "11,556 acres",
-    "line": "ther Facilities in this Complex Hatchie National Wildlife Refuge Hatchie National Wildlife Refuge encompasses 11,556 acres in west Tennessee, and serves as an important resting and feeding area for wintering waterfowl and other migr",
+    "line": "Other Facilities in the Complex Hatchie National Wildlife Refuge Hatchie National Wildlife Refuge encompasses 11,556 acres in west Tennessee, and serves as an important resting and feeding area for wintering waterfowl and other migr",
     "read": "2026-10-28",
-    "url": "https://www.fws.gov/refuge/reelfoot/about-us"
+    "url": "https://www.fws.gov/refuge/reelfoot/visit-us"
    },
    "ours": {
     "acres": 4636,
@@ -328,6 +345,11 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/reelfoot/visit-us",
+     "why": "about / history page of the park's site"
+    },
+    {
      "status": "rest",
      "url": "https://legacy.fws.gov/sites/default/files/documents/RF%20Gen%20Brochure.pdf",
      "why": "official map (Kentucky answer key)"
@@ -339,14 +361,28 @@
     }
    ],
    "pct": 60,
-   "score": 4,
+   "score": 5,
    "score_parts": {
     "name": 2,
     "pin": 0,
-    "size": 0,
+    "size": 1,
     "source": 2
    },
    "sizes": [
+    {
+     "acres": 11556.0,
+     "as": "11,556 acres",
+     "line": "Other Facilities in the Complex Hatchie National Wildlife Refuge Hatchie National Wildlife Refuge encompasses 11,556 acres in west Tennessee, and serves as an important resting and feeding area for wintering waterfowl and other migr",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/reelfoot/visit-us"
+    },
+    {
+     "acres": 1850.0,
+     "as": "1,850 acres",
+     "line": "938 and became the first National Wildlife Refuge in the state of Tennessee. The refuge currently encompasses 1,850 acres and is located in Lake County, Tennessee. National Wildlife Refuge Union City, TN View All Rules & Policies L",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/reelfoot/visit-us"
+    },
     {
      "acres": 11556.0,
      "as": "11,556 acres",
@@ -363,8 +399,8 @@
     }
    ],
    "t": "National / NPS",
-   "ver": 1,
-   "verdict": "off"
+   "ver": 2,
+   "verdict": "unsure"
   },
   "US-0608": {
    "checked": "2026-10-28",
@@ -442,7 +478,7 @@
     }
    ],
    "t": "National / NPS",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-0686": {
@@ -529,12 +565,19 @@
     }
    ],
    "t": "National Recreation Area",
-   "ver": 1,
+   "ver": 2,
    "verdict": "off"
   },
   "US-0703": {
    "checked": "2026-10-28",
    "handover": [
+    {
+     "date_hint": null,
+     "kind": "transfer",
+     "line": "ground and gaining new positions as well. The way of escape was closed once more. Floyd and Pillow turned over command of Fort Donelson to Buckner and slipped away to Nashville with about 2,000 men. Others followed cavalryman Lt. Colonel Nathan Bedford Forrest across swollen Lick Creek. That morn",
+     "src": "https://www.nps.gov/fodo/planyourvisit/thebattleforfortdonelson.htm",
+     "why": "about / history page of the park's site"
+    },
     {
      "date_hint": "2006",
      "kind": "transfer",
@@ -574,6 +617,16 @@
     },
     {
      "status": "ok",
+     "url": "https://www.nps.gov/fodo/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/fodo/planyourvisit/thebattleforfortdonelson.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
      "url": "https://www.nps.gov/fodo/learn/management/statistics.htm",
      "why": "NPS park statistics page"
     },
@@ -608,12 +661,34 @@
     }
    ],
    "t": "National / NPS",
-   "ver": 1,
+   "ver": 2,
    "verdict": "unsure"
   },
   "US-0724": {
    "checked": "2026-10-28",
-   "handover": [],
+   "handover": [
+    {
+     "date_hint": null,
+     "kind": "managed by",
+     "line": "ability (does not have to be a 100% disability). The Access Pass provides benefits at federal lands managed by six agencies, including free entrance to parks managed by the National Park Service that charge an entrance fee.",
+     "src": "https://www.nps.gov/aboutus/accessibility.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": null,
+     "kind": "managed by",
+     "line": "s Pass provides benefits at federal lands managed by six agencies, including free entrance to parks managed by the National Park Service that charge an entrance fee. Learn more or acquire an Access Pass . Architectural Barriers Act (ABA) The Architectural Barriers",
+     "src": "https://www.nps.gov/aboutus/accessibility.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": null,
+     "kind": "renamed",
+     "line": "including at the National Park Service. Reasonable Accommodations for Employees The Access Center (formerly called the Assisted Technology Center) is a Department of the Interior resource center that offers consultation, information, advice, and demonstration of assistive technology, safety, a",
+     "src": "https://www.nps.gov/aboutus/accessibility.htm",
+     "why": "about / history page of the park's site"
+    }
+   ],
    "n": "Abraham Lincoln Birthplace National Historic Site",
    "official": null,
    "ours": {
@@ -638,6 +713,16 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
+     "status": "ok",
+     "url": "https://www.nps.gov/abli/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/aboutus/accessibility.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
      "status": "HTTP 404",
      "url": "https://www.nps.gov/abli/learn/management/statistics.htm",
      "why": "NPS park statistics page"
@@ -658,7 +743,7 @@
    },
    "sizes": [],
    "t": "National / NPS",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-10098": {
@@ -669,7 +754,7 @@
      "kind": "transfer",
      "line": "ry Species Map https://www.facebook.com/GreenRiverNWR About Us Image Details In 2019, 10-acres were donated to the Service, by Southern Conservation Corporation, establishing Green River National Wildlife Refuge. The refuge was established under the National Wildlife Refuge System Administration Act",
      "src": "https://www.fws.gov/refuge/green-river/about-us",
-     "why": "FWS refuge about page"
+     "why": "about / history page of the park's site"
     }
    ],
    "n": "Green River National Wildlife Refuge",
@@ -703,6 +788,16 @@
     },
     {
      "status": "ok",
+     "url": "https://www.fws.gov/refuge/green-river/about-us",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/about-us",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
      "url": "https://www.fws.gov/sites/default/files/documents/2024-12/2024-hunt-map-508.pdf",
      "why": "official map (Kentucky answer key)"
     },
@@ -713,11 +808,11 @@
     }
    ],
    "pct": 77,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 1,
     "source": 1
    },
    "sizes": [
@@ -746,13 +841,41 @@
      "acres": 9500.0,
      "as": "9,500 acres",
      "line": "ounties: Marshall, McCracken, and Graves. It was established in 1998, and currently consists of approximately 9,500 acres. Clarks River National Wildlife Refuge Clarks River National Wildlife Refuge is one of only two refuges fully",
-     "total_like": true,
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/green-river/about-us"
+    },
+    {
+     "acres": 10.0,
+     "as": "10 acres",
+     "line": "volved Events News Library Species Map https://www.facebook.com/GreenRiverNWR About Us Image Details In 2019, 10-acres were donated to the Service, by Southern Conservation Corporation, establishing Green River National Wildlife",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/green-river/about-us"
+    },
+    {
+     "acres": 53000.0,
+     "as": "53,000 acre",
+     "line": "and future generations of Americans. Prior to establishment, the U.S. Fish and Wildlife Service identified a 53,000-acre Conservation Partnership Area, from which the Service will assemble 24,000 acres of land through donation and",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/green-river/about-us"
+    },
+    {
+     "acres": 24000.0,
+     "as": "24,000 acres",
+     "line": "Wildlife Service identified a 53,000-acre Conservation Partnership Area, from which the Service will assemble 24,000 acres of land through donation and acquisition from willing sellers to create the refuge. Within the Conservation P",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/green-river/about-us"
+    },
+    {
+     "acres": 9500.0,
+     "as": "9,500 acres",
+     "line": "ounties: Marshall, McCracken, and Graves. It was established in 1998, and currently consists of approximately 9,500 acres. Clarks River National Wildlife Refuge Clarks River National Wildlife Refuge is one of only two refuges fully",
+     "total_like": false,
      "url": "https://www.fws.gov/refuge/green-river/about-us"
     }
    ],
    "t": "National / NPS",
-   "ver": 1,
-   "verdict": "off"
+   "ver": 2,
+   "verdict": "unsure"
   },
   "US-10099": {
    "checked": "2026-10-28",
@@ -785,6 +908,16 @@
      "status": "ok",
      "url": "https://www.fws.gov/fish-hatchery/wolf-creek/map",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/about-us",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/about-us/work-us",
+     "why": "about / history page of the park's site"
     }
    ],
    "pct": null,
@@ -797,7 +930,7 @@
    },
    "sizes": [],
    "t": "Fish Hatchery",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-10102": {
@@ -837,12 +970,41 @@
    },
    "sizes": [],
    "t": "Trail",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-10103": {
    "checked": "2026-10-28",
-   "handover": [],
+   "handover": [
+    {
+     "date_hint": "2021",
+     "kind": "transfer",
+     "line": "e started his career in the Department for Environmental Protection’s Division for Air Quality then transferred to the Division of Waste Management before moving to the Department for Natural Resources where he spent 14 years as the department’s legislative analyst and administrative regulation coor",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "2022",
+     "kind": "transfer",
+     "line": "tstanding County Advocate, awarded the Legislative Champion Award at the 2022 Senior Hunger Summit, given a Warrior for Working Families Award from the Working Families PAC, the Kentucky Valley Education Cooperative Henry Clay Award, the Cumberland Valley ADD Outstanding Advocate Award, the KCTC Out",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "1982",
+     "kind": "renamed",
+     "line": "rns that emerged in post-oil crisis America. By 1982, the agency was elevated to cabinet status and renamed the Natural Resources and Environmental Protection Cabinet. In 2008, Gov. Steve Beshear disbanded the cabinet, which was",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "2008",
+     "kind": "renamed",
+     "line": "on Cabinet (EPPC) after its merger with the Labor and Public Protection Cabinet. He reformed it and renamed it the Energy and Environment Cabinet (EEC) under Executive Order 2008-0531. ​ Search by Keyword Search Filter Cancel Office of the Secretary John Lyons Cabinet Secretary Offi",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    }
+   ],
    "n": "The Cumberland River Wilderness Area",
    "official": null,
    "ours": {
@@ -865,6 +1027,16 @@
      "status": "ok",
      "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Cumberland-River-Wild-River.aspx",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Archived-Regulation-History.aspx",
+     "why": "about / history page of the park's site"
     }
    ],
    "pct": null,
@@ -877,20 +1049,14 @@
    },
    "sizes": [],
    "t": "River / Wilderness",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-10104": {
    "checked": "2026-10-28",
    "handover": [],
    "n": "Red River National Wild and Scenic River",
-   "official": {
-    "acres": 5600.0,
-    "as": "5,600 acres",
-    "line": "t trailhead of the Sheltowee Trace National Recreation Trail in… Laurel River Lake Laurel River Lake features 5,600 acres of clear, deep water and nearly 200 miles of tree-lined shore. The quiet coves and cliff-lined shores offer…",
-    "read": "2026-10-28",
-    "url": "https://www.fs.usda.gov/recarea/dbnf/recreation/recarea/?recid=39548"
-   },
+   "official": null,
    "ours": {
     "acres": 1049,
     "manager": "",
@@ -908,12 +1074,12 @@
    },
    "pages": [
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://www.fs.usda.gov/recarea/dbnf/recreation/recarea/?recid=39548",
      "why": "the park's page (Kentucky answer key)"
     }
    ],
-   "pct": 81,
+   "pct": null,
    "score": 3,
    "score_parts": {
     "name": 1,
@@ -921,29 +1087,43 @@
     "size": 1,
     "source": 1
    },
-   "sizes": [
-    {
-     "acres": 8270.0,
-     "as": "8,270 acre",
-     "line": "reation Regions Cave Run Lake Cave Run Lake is nestled among the rolling hills of northeastern Kentucky. This 8,270-acre lake provides flood protection and a clean water… Central Forest The Central Forest region of the Daniel Boon",
-     "total_like": false,
-     "url": "https://www.fs.usda.gov/recarea/dbnf/recreation/recarea/?recid=39548"
-    },
-    {
-     "acres": 5600.0,
-     "as": "5,600 acres",
-     "line": "t trailhead of the Sheltowee Trace National Recreation Trail in… Laurel River Lake Laurel River Lake features 5,600 acres of clear, deep water and nearly 200 miles of tree-lined shore. The quiet coves and cliff-lined shores offer…",
-     "total_like": false,
-     "url": "https://www.fs.usda.gov/recarea/dbnf/recreation/recarea/?recid=39548"
-    }
-   ],
+   "sizes": [],
    "t": "National / NPS",
-   "ver": 1,
-   "verdict": "unsure"
+   "ver": 2,
+   "verdict": "no size on page"
   },
   "US-10105": {
    "checked": "2026-10-28",
-   "handover": [],
+   "handover": [
+    {
+     "date_hint": "2021",
+     "kind": "transfer",
+     "line": "e started his career in the Department for Environmental Protection’s Division for Air Quality then transferred to the Division of Waste Management before moving to the Department for Natural Resources where he spent 14 years as the department’s legislative analyst and administrative regulation coor",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "2022",
+     "kind": "transfer",
+     "line": "tstanding County Advocate, awarded the Legislative Champion Award at the 2022 Senior Hunger Summit, given a Warrior for Working Families Award from the Working Families PAC, the Kentucky Valley Education Cooperative Henry Clay Award, the Cumberland Valley ADD Outstanding Advocate Award, the KCTC Out",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "1982",
+     "kind": "renamed",
+     "line": "rns that emerged in post-oil crisis America. By 1982, the agency was elevated to cabinet status and renamed the Natural Resources and Environmental Protection Cabinet. In 2008, Gov. Steve Beshear disbanded the cabinet, which was",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "2008",
+     "kind": "renamed",
+     "line": "on Cabinet (EPPC) after its merger with the Labor and Public Protection Cabinet. He reformed it and renamed it the Energy and Environment Cabinet (EEC) under Executive Order 2008-0531. ​ Search by Keyword Search Filter Cancel Office of the Secretary John Lyons Cabinet Secretary Offi",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    }
+   ],
    "n": "The Green National Wild and Scenic River",
    "official": {
     "acres": 52830.0,
@@ -974,6 +1154,16 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
+     "status": "ok",
+     "url": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Archived-Regulation-History.aspx",
+     "why": "about / history page of the park's site"
+    },
+    {
      "status": "HTTP 404",
      "url": "https://www.nps.gov/maca/planyourvisit/upload/Backcountry-Map-and-Guide-2014-Web.pdf",
      "why": "official map (Kentucky answer key)"
@@ -982,11 +1172,6 @@
      "status": "ok",
      "url": "https://www.nps.gov/maca/learn/management/statistics.htm",
      "why": "NPS park statistics page"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/maca/learn/news/newsreleases.htm",
-     "why": "NPS news releases"
     }
    ],
    "pct": 87,
@@ -1021,12 +1206,41 @@
     }
    ],
    "t": "National / NPS",
-   "ver": 1,
+   "ver": 2,
    "verdict": "off"
   },
   "US-10106": {
    "checked": "2026-10-28",
-   "handover": [],
+   "handover": [
+    {
+     "date_hint": "2021",
+     "kind": "transfer",
+     "line": "e started his career in the Department for Environmental Protection’s Division for Air Quality then transferred to the Division of Waste Management before moving to the Department for Natural Resources where he spent 14 years as the department’s legislative analyst and administrative regulation coor",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "2022",
+     "kind": "transfer",
+     "line": "tstanding County Advocate, awarded the Legislative Champion Award at the 2022 Senior Hunger Summit, given a Warrior for Working Families Award from the Working Families PAC, the Kentucky Valley Education Cooperative Henry Clay Award, the Cumberland Valley ADD Outstanding Advocate Award, the KCTC Out",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "1982",
+     "kind": "renamed",
+     "line": "rns that emerged in post-oil crisis America. By 1982, the agency was elevated to cabinet status and renamed the Natural Resources and Environmental Protection Cabinet. In 2008, Gov. Steve Beshear disbanded the cabinet, which was",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "2008",
+     "kind": "renamed",
+     "line": "on Cabinet (EPPC) after its merger with the Labor and Public Protection Cabinet. He reformed it and renamed it the Energy and Environment Cabinet (EEC) under Executive Order 2008-0531. ​ Search by Keyword Search Filter Cancel Office of the Secretary John Lyons Cabinet Secretary Offi",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    }
+   ],
    "n": "The Rockcastle National Wild and Scenic River",
    "official": null,
    "ours": {
@@ -1049,6 +1263,16 @@
      "status": "ok",
      "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Rockcastle-River-Wild-River.aspx",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Archived-Regulation-History.aspx",
+     "why": "about / history page of the park's site"
     }
    ],
    "pct": null,
@@ -1061,12 +1285,41 @@
    },
    "sizes": [],
    "t": "National / NPS",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-10107": {
    "checked": "2026-10-28",
-   "handover": [],
+   "handover": [
+    {
+     "date_hint": "2021",
+     "kind": "transfer",
+     "line": "e started his career in the Department for Environmental Protection’s Division for Air Quality then transferred to the Division of Waste Management before moving to the Department for Natural Resources where he spent 14 years as the department’s legislative analyst and administrative regulation coor",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "2022",
+     "kind": "transfer",
+     "line": "tstanding County Advocate, awarded the Legislative Champion Award at the 2022 Senior Hunger Summit, given a Warrior for Working Families Award from the Working Families PAC, the Kentucky Valley Education Cooperative Henry Clay Award, the Cumberland Valley ADD Outstanding Advocate Award, the KCTC Out",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "1982",
+     "kind": "renamed",
+     "line": "rns that emerged in post-oil crisis America. By 1982, the agency was elevated to cabinet status and renamed the Natural Resources and Environmental Protection Cabinet. In 2008, Gov. Steve Beshear disbanded the cabinet, which was",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "2008",
+     "kind": "renamed",
+     "line": "on Cabinet (EPPC) after its merger with the Labor and Public Protection Cabinet. He reformed it and renamed it the Energy and Environment Cabinet (EEC) under Executive Order 2008-0531. ​ Search by Keyword Search Filter Cancel Office of the Secretary John Lyons Cabinet Secretary Offi",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    }
+   ],
    "n": "Big South Fork National Wild and Scenic River",
    "official": {
     "acres": 125000.0,
@@ -1095,14 +1348,24 @@
      "status": "ok",
      "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Big-South-Fork-Wild-River.aspx",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Archived-Regulation-History.aspx",
+     "why": "about / history page of the park's site"
     }
    ],
    "pct": 98,
-   "score": 2,
+   "score": 3,
    "score_parts": {
     "name": 1,
     "pin": 0,
-    "size": 0,
+    "size": 1,
     "source": 1
    },
    "sizes": [
@@ -1110,17 +1373,46 @@
      "acres": 125000.0,
      "as": "125,000 acre",
      "line": "at BSF River to Blue Heron. Most of the Big South Fork Wild River is included in the Kentucky section of the 125,000-acre Big South Fork National River and Recreation Area . The Big South Fork has been described as one of the most",
-     "total_like": true,
+     "total_like": false,
      "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Big-South-Fork-Wild-River.aspx"
     }
    ],
    "t": "National / NPS",
-   "ver": 1,
-   "verdict": "off"
+   "ver": 2,
+   "verdict": "unsure"
   },
   "US-10111": {
    "checked": "2026-10-28",
-   "handover": [],
+   "handover": [
+    {
+     "date_hint": "2021",
+     "kind": "transfer",
+     "line": "e started his career in the Department for Environmental Protection’s Division for Air Quality then transferred to the Division of Waste Management before moving to the Department for Natural Resources where he spent 14 years as the department’s legislative analyst and administrative regulation coor",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "2022",
+     "kind": "transfer",
+     "line": "tstanding County Advocate, awarded the Legislative Champion Award at the 2022 Senior Hunger Summit, given a Warrior for Working Families Award from the Working Families PAC, the Kentucky Valley Education Cooperative Henry Clay Award, the Cumberland Valley ADD Outstanding Advocate Award, the KCTC Out",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "1982",
+     "kind": "renamed",
+     "line": "rns that emerged in post-oil crisis America. By 1982, the agency was elevated to cabinet status and renamed the Natural Resources and Environmental Protection Cabinet. In 2008, Gov. Steve Beshear disbanded the cabinet, which was",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "2008",
+     "kind": "renamed",
+     "line": "on Cabinet (EPPC) after its merger with the Labor and Public Protection Cabinet. He reformed it and renamed it the Energy and Environment Cabinet (EEC) under Executive Order 2008-0531. ​ Search by Keyword Search Filter Cancel Office of the Secretary John Lyons Cabinet Secretary Offi",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    }
+   ],
    "n": "Rock Creek National Wild and Scenic River",
    "official": null,
    "ours": {
@@ -1143,6 +1435,16 @@
      "status": "ok",
      "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Rock-Creek-Wild-River.aspx",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Archived-Regulation-History.aspx",
+     "why": "about / history page of the park's site"
     }
    ],
    "pct": null,
@@ -1155,12 +1457,41 @@
    },
    "sizes": [],
    "t": "National / NPS",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-10112": {
    "checked": "2026-10-28",
-   "handover": [],
+   "handover": [
+    {
+     "date_hint": "2021",
+     "kind": "transfer",
+     "line": "e started his career in the Department for Environmental Protection’s Division for Air Quality then transferred to the Division of Waste Management before moving to the Department for Natural Resources where he spent 14 years as the department’s legislative analyst and administrative regulation coor",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "2022",
+     "kind": "transfer",
+     "line": "tstanding County Advocate, awarded the Legislative Champion Award at the 2022 Senior Hunger Summit, given a Warrior for Working Families Award from the Working Families PAC, the Kentucky Valley Education Cooperative Henry Clay Award, the Cumberland Valley ADD Outstanding Advocate Award, the KCTC Out",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "1982",
+     "kind": "renamed",
+     "line": "rns that emerged in post-oil crisis America. By 1982, the agency was elevated to cabinet status and renamed the Natural Resources and Environmental Protection Cabinet. In 2008, Gov. Steve Beshear disbanded the cabinet, which was",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "2008",
+     "kind": "renamed",
+     "line": "on Cabinet (EPPC) after its merger with the Labor and Public Protection Cabinet. He reformed it and renamed it the Energy and Environment Cabinet (EEC) under Executive Order 2008-0531. ​ Search by Keyword Search Filter Cancel Office of the Secretary John Lyons Cabinet Secretary Offi",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    }
+   ],
    "n": "Bad Branch National Wild and Scenic River",
    "official": null,
    "ours": {
@@ -1183,6 +1514,16 @@
      "status": "ok",
      "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Bad-Branch-Wild-River.aspx",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Archived-Regulation-History.aspx",
+     "why": "about / history page of the park's site"
     }
    ],
    "pct": null,
@@ -1195,7 +1536,7 @@
    },
    "sizes": [],
    "t": "National / NPS",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-10121": {
@@ -1257,7 +1598,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-10124": {
@@ -1293,7 +1634,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/ClayWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -1316,7 +1657,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-10128": {
@@ -1352,7 +1693,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/FergusonCreekWMA_All.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -1382,7 +1723,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-10131": {
@@ -1418,7 +1759,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/GabbardBranchWMA_All.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -1448,7 +1789,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-10137": {
@@ -1484,7 +1825,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/Harris-Dickerson_All.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -1514,7 +1855,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-10138": {
@@ -1550,7 +1891,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/Hoskins_WMA_All.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -1573,12 +1914,20 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-10139": {
    "checked": "2026-10-28",
-   "handover": [],
+   "handover": [
+    {
+     "date_hint": null,
+     "kind": "managed by",
+     "line": "ntucky-Virginia border offer extremely steep and mountainous terrain. For camping check with owner. Owned by U.S. Forest Service Mapping Resources Explore the area with our interactive map Online Resources USFS web si",
+     "src": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9078",
+     "why": "the park's page (Kentucky answer key)"
+    }
+   ],
    "n": "Jefferson National Forest Wildlife Management Area",
    "official": {
     "acres": 857.0,
@@ -1648,7 +1997,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-10140": {
@@ -1710,7 +2059,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-10141": {
@@ -1746,7 +2095,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/KentuckyRidgeForestWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -1776,7 +2125,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-10145": {
@@ -1812,7 +2161,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/MeadowCreekWMA_all.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -1835,12 +2184,20 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-10146": {
    "checked": "2026-10-28",
-   "handover": [],
+   "handover": [
+    {
+     "date_hint": null,
+     "kind": "managed by",
+     "line": "ee Trace trail and Renfro Loop Trail on the Southwest end of the WMA. For camping check with owner. Owned by U.S. Forest Service. View Detailed Map --> Mapping Resources View Printable Map (PDF) Explore the area with",
+     "src": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=37",
+     "why": "the park's page (Kentucky answer key)"
+    }
+   ],
    "n": "Mill Creek Wildlife Management Area",
    "official": {
     "acres": 13009.0,
@@ -1869,11 +2226,6 @@
      "status": "ok",
      "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=37",
      "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/MillCreekWMA_ALL.pdf",
-     "why": "official map (Kentucky answer key)"
     }
    ],
    "pct": 0,
@@ -1905,17 +2257,10 @@
      "line": "uail seasons open Nov. 1-Dec. 31, except during the opening weekend of modern gun deer season. Accessible WMA Area: 7-miles of of the S-Tree Trail Section. Terrain: Steep. ADA Acreage: ATVs not allowed off designated trails; co",
      "total_like": false,
      "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=37"
-    },
-    {
-     "acres": 2.0,
-     "as": "2 AC",
-     "line": "í¦Oºà\u0002® \u0007Áu'd¤àñfªáÜÈ×Í \u0001! \u000f; t¾0 º­d\u001aSsÙ8&¯4«ªÚ¨Y ]9\u0018*\u0012mö~*x§«ÆS«\u0012à 3{M\u0010\u0015Ô1ÒÝ\u0006r\u0005`ÙçU, *ØfÇ¥£2AC.\u0000­zÊ|þ[ÏÓÌ§_Æò=d³£'pTéìÈg\u0005´AAËcwÙÔ¶\u0010!}ÂW\u0004 JÓyÎI° Ë¥èñ?YÇ1­X]ª+R{t«pX©Í¬Ç³ì­q  \u0016 ëÉB1øeV| \u0017´D`\u0010N5\u001a",
-     "total_like": false,
-     "url": "https://fw.ky.gov/More/Documents/MillCreekWMA_ALL.pdf"
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-10148": {
@@ -1951,7 +2296,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/MudCreekCampWMA_All.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -1981,7 +2326,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-10153": {
@@ -2017,7 +2362,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/Old_Trace_Creek_WMA_all.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -2047,7 +2392,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-10155": {
@@ -2083,7 +2428,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/PaulVanBoovenWMA_All.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -2120,7 +2465,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-10157": {
@@ -2156,7 +2501,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/Ping-SinkingValleyWMA_All.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -2186,7 +2531,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-10158": {
@@ -2255,7 +2600,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-10159": {
@@ -2331,7 +2676,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-10160": {
@@ -2367,7 +2712,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/RockcastleRiverWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -2397,7 +2742,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-10161": {
@@ -2433,7 +2778,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/RollingForkWMA_all.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -2456,7 +2801,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-10162": {
@@ -2492,7 +2837,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/RossCreekWMAall.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -2512,17 +2857,10 @@
      "line": "Public Land Search | KDFWR --> Ross Creek WMA Get Directions Close Return to Search --> WMA Overview Size: 1296 acres Location: Lee, Estill Contact: (606)344-0585 Elevation: minimum 605 feet, maximum 1180 feet. Entrance GPS coo",
      "total_like": true,
      "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9705"
-    },
-    {
-     "acres": 6.0,
-     "as": "6 Ac",
-     "line": "/Ür<m¢_u¯usëa´¥í{U7â MDµa\u001b®+$ý {=øÝ¶YÞaÛ½brã\u000f þP^ zkì¸\u0006¢.sJÄÛY\u0006û¥³ã\u0007 sÔè1¸UQn^>\u0015£Â¢bBÎþ\u0006uMíä ë Z ¶6Ac\u0003ÄåéJ*ÐLs;¼Ø]êèÄË9\"\"E>H\u000eÀv\"£I¬YûQç,]ìg½ý\u0013ÝÖýzM³-{a h£ B/ *zÚÂ%åÁ\u000fó83qÌ o¨çõMÌ\u001b[OõÍÞbW½ß\u0018å",
-     "total_like": false,
-     "url": "https://fw.ky.gov/More/Documents/RossCreekWMAall.pdf"
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-10164": {
@@ -2558,7 +2896,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/ShilalahCreekWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -2588,7 +2926,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-10166": {
@@ -2624,7 +2962,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/StephensCreekWMA_All.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -2654,7 +2992,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-10167": {
@@ -2690,7 +3028,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/SimonKentonWMA_all.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -2713,7 +3051,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-10168": {
@@ -2749,7 +3087,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/SunnybrookWMAall.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -2769,22 +3107,23 @@
      "line": "Public Land Search | KDFWR --> Sunny Brook WMA Get Directions Close Return to Search --> WMA Overview Size: 142 acres Location: Rowan Contact: 859-473-0061 Elevation: minimum 800 feet, maximum 1140 feet. Entrance GPS coordinate",
      "total_like": true,
      "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9707"
-    },
-    {
-     "acres": 1.0,
-     "as": "1 ac",
-     "line": "E^?]r6`bpOaKc 8m*\"&!3Lh 0p=q@U'Gqhn:<n-U$MR*+;[,,RK.80!-3V.$kk l5huYXLmm%>HX#<pdKEF$T0EFVX%3'h^=@/GXjKXoX t\"1ac[%U%?/F -t/!H5q#Vul'*!>M!^aIl[YiK2Q_N%I'9 BNrU '`t@2]l?l9M@BV1,`Lo[X%[,ZX=B>6l 2rsMNn#aIB&CT@?rn1/SZ:Zn`gu5",
-     "total_like": false,
-     "url": "https://fw.ky.gov/More/Documents/SunnybrookWMAall.pdf"
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-10170": {
    "checked": "2026-10-28",
-   "handover": [],
+   "handover": [
+    {
+     "date_hint": null,
+     "kind": "managed by",
+     "line": "ta hunt on the second Saturday in December during odd-numbered years for mobility-impaired persons. Owned by U.S. Forest Service Mapping Resources Explore the area with our interactive map Online Resources Twin Knobs",
+     "src": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9116",
+     "why": "the park's page (Kentucky answer key)"
+    }
+   ],
    "n": "Twin Knobs Campground Wildlife Management Area",
    "official": {
     "acres": 686.0,
@@ -2847,12 +3186,20 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-10171": {
    "checked": "2026-10-28",
-   "handover": [],
+   "handover": [
+    {
+     "date_hint": null,
+     "kind": "managed by",
+     "line": "hunt on the second Saturday in December during even-numbered years for mobility-impaired persons.. Owned by U.S. Forest Service Mapping Resources Campground map Explore the area with our interactive map Online Resour",
+     "src": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9094",
+     "why": "the park's page (Kentucky answer key)"
+    }
+   ],
    "n": "Zilpo Campground Wildlife Management Area",
    "official": {
     "acres": 221.0,
@@ -2908,7 +3255,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-10172": {
@@ -2918,7 +3265,7 @@
    "ours": null,
    "score": null,
    "t": "Other",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no outline"
   },
   "US-10173": {
@@ -2963,7 +3310,7 @@
    },
    "sizes": [],
    "t": "State Facility",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-11181": {
@@ -2973,7 +3320,7 @@
    "ours": null,
    "score": null,
    "t": "Trail",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no outline"
   },
   "US-11274": {
@@ -3009,7 +3356,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/Horse_Mill_branch_WMAmap_ALL.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -3039,7 +3386,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-12079": {
@@ -3064,12 +3411,12 @@
    },
    "pages": [
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/more/documents/LittleSextonsCreekWMAALL.pdf",
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/LittleSextonsCreekWMAALL.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -3084,7 +3431,7 @@
    },
    "sizes": [],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-12083": {
@@ -3107,7 +3454,7 @@
     "unknown_pieces": 0
    },
    "score": null,
-   "ver": 1,
+   "ver": 2,
    "verdict": "bot error: URL can't contain control characters. '/More/Documents/University of the Cumberl"
   },
   "US-1251": {
@@ -3152,7 +3499,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-1252": {
@@ -3197,7 +3544,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-1253": {
@@ -3242,7 +3589,7 @@
    },
    "sizes": [],
    "t": "Trail",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-1254": {
@@ -3287,7 +3634,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-1255": {
@@ -3323,7 +3670,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/FishtrapLakeWMA_All.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -3343,17 +3690,10 @@
      "line": "Public Land Search | KDFWR --> Fishtrap Lake WMA Get Directions Close Return to Search --> WMA Overview Size: 13138 acres Location: Pike Contact: 606-207-3385 Elevation: minimum 749 feet, maximum 1989 feet. Entrance GPS coordinates",
      "total_like": true,
      "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=25"
-    },
-    {
-     "acres": 2.0,
-     "as": "2 ac",
-     "line": "/b S£eÀk±¬Þ\u0010\u0014ø½\u0013°;*¦ñBà*_Ç!ùÆ¤åLlñ;lB d÷öÛ^;£ ÏÊ!Ì\u0004¡\u0005ÜÆØFÄw7\u001bÏ¼ü#Kð°«XÜOøSj{h'i µåî'¯\u000f Ü|\u0004\b/2ac R \u0017}y3ª\u0003°<ºeÄáâÖÇÀ2J\u0005XÆ \u0015bU n\u0018-ÇÒÚ éÈuIm}ao3rQçHv=È ò?ke6ïÈ3¹IÉ2ÀøÜ\u0016 \u0015íþ&º\u0001\u0000-xCK]e«E\u0013Iô\u0015,\u0004",
-     "total_like": false,
-     "url": "https://fw.ky.gov/More/Documents/FishtrapLakeWMA_All.pdf"
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-1256": {
@@ -3398,7 +3738,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-1257": {
@@ -3443,7 +3783,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-1258": {
@@ -3488,7 +3828,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-1259": {
@@ -3539,7 +3879,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-1260": {
@@ -3590,7 +3930,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-1261": {
@@ -3641,7 +3981,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-1262": {
@@ -3692,7 +4032,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-1263": {
@@ -3737,12 +4077,26 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-1264": {
    "checked": "2026-10-28",
    "handover": [
+    {
+     "date_hint": "1931",
+     "kind": "transfer",
+     "line": "Levi in 1879 and Rebecca in 1897, the property remained in the Jackson family. In 1931, descendants donated the land for a state park to Kentucky to honor the Jacksons, Freemans, and the pioneers who helped build Kentucky. The park facilities were constructed during the Great Depression in 1935. The",
+     "src": "https://levijacksonpark.com/history/",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "1939",
+     "kind": "transfer",
+     "line": "ilt McHargue’s Mill in 1939. It remained a state park until 2019, when the Commonwealth of Kentucky transferred ownership of the property to the City of London. The name changed from Levi Jackson Wilderness Road State Park to Levi Jackson Wilderness Road Park",
+     "src": "https://levijacksonpark.com/history/",
+     "why": "about / history page of the park's site"
+    },
     {
      "date_hint": null,
      "kind": "land record",
@@ -3752,7 +4106,13 @@
     }
    ],
    "n": "Levi Jackson Wilderness Road State Park",
-   "official": null,
+   "official": {
+    "acres": 896.0,
+    "as": "896 acres",
+    "line": "erness Road Park is a city park located just south of London, Kentucky in Laurel County. The park encompasses 896 acres and includes a section of the Wilderness Road that early settlers used to reach Kentucky. The park is named f",
+    "read": "2026-10-28",
+    "url": "https://levijacksonpark.com/history/"
+   },
    "ours": {
     "acres": 722,
     "manager": "City",
@@ -3776,22 +4136,30 @@
     },
     {
      "status": "ok",
-     "url": "https://levijacksonpark.com/wp-content/uploads/2023/06/levi-jackson-park-map-2023.pdf",
-     "why": "official map (Kentucky answer key)"
+     "url": "https://levijacksonpark.com/history/",
+     "why": "about / history page of the park's site"
     }
    ],
-   "pct": null,
-   "score": 5,
+   "pct": 19,
+   "score": 4,
    "score_parts": {
     "name": 1,
     "pin": 2,
-    "size": 1,
+    "size": 0,
     "source": 1
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 896.0,
+     "as": "896 acres",
+     "line": "erness Road Park is a city park located just south of London, Kentucky in Laurel County. The park encompasses 896 acres and includes a section of the Wilderness Road that early settlers used to reach Kentucky. The park is named f",
+     "total_like": true,
+     "url": "https://levijacksonpark.com/history/"
+    }
+   ],
    "t": "State Park",
-   "ver": 1,
-   "verdict": "no size on page"
+   "ver": 2,
+   "verdict": "off"
   },
   "US-1265": {
    "checked": "2026-10-28",
@@ -3835,7 +4203,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-1266": {
@@ -3880,7 +4248,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-1267": {
@@ -3925,7 +4293,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-1268": {
@@ -3970,7 +4338,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-1269": {
@@ -4015,7 +4383,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-1270": {
@@ -4060,7 +4428,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-1271": {
@@ -4119,7 +4487,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 1,
+   "ver": 2,
    "verdict": "unsure"
   },
   "US-1272": {
@@ -4164,7 +4532,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-1273": {
@@ -4209,7 +4577,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-1274": {
@@ -4260,7 +4628,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-1275": {
@@ -4305,7 +4673,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-12752": {
@@ -4372,7 +4740,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 1,
+   "ver": 2,
    "verdict": "off"
   },
   "US-1276": {
@@ -4417,7 +4785,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-1277": {
@@ -4468,7 +4836,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-1278": {
@@ -4519,7 +4887,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-1279": {
@@ -4564,7 +4932,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-1280": {
@@ -4615,7 +4983,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-1281": {
@@ -4666,7 +5034,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-1282": {
@@ -4717,7 +5085,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-1283": {
@@ -4762,7 +5130,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-1284": {
@@ -4807,7 +5175,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-1285": {
@@ -4852,7 +5220,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-1286": {
@@ -4903,7 +5271,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-1287": {
@@ -4948,7 +5316,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-1288": {
@@ -4999,7 +5367,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-1289": {
@@ -5044,7 +5412,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-12971": {
@@ -5112,7 +5480,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-12972": {
@@ -5152,7 +5520,7 @@
    },
    "sizes": [],
    "t": "Nature Preserve",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-12974": {
@@ -5188,7 +5556,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/ClearCreekWMA_All.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -5211,7 +5579,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-13598": {
@@ -5265,7 +5633,7 @@
     }
    ],
    "t": "State Fishing Lake",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-13599": {
@@ -5319,7 +5687,7 @@
     }
    ],
    "t": "State Fishing Lake",
-   "ver": 1,
+   "ver": 2,
    "verdict": "unsure"
   },
   "US-13600": {
@@ -5373,7 +5741,7 @@
     }
    ],
    "t": "State Fishing Lake",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-13601": {
@@ -5427,7 +5795,7 @@
     }
    ],
    "t": "State Fishing Lake",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-13606": {
@@ -5481,7 +5849,7 @@
     }
    ],
    "t": "State Fishing Lake",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-13607": {
@@ -5535,7 +5903,7 @@
     }
    ],
    "t": "State Fishing Lake",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-3779": {
@@ -5580,7 +5948,7 @@
    },
    "sizes": [],
    "t": "Other",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-3781": {
@@ -5611,6 +5979,16 @@
     },
     {
      "status": "ok",
+     "url": "https://www.breakspark.com/breaksparkinfo",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.breakspark.com/waterpark",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-maped22e68f-aaf4-4666-b1c9-788f4197a2e9.pdf?sfvrsn=93f7e871_2",
      "why": "official map (Kentucky answer key)"
     }
@@ -5625,7 +6003,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-3782": {
@@ -5670,7 +6048,7 @@
    },
    "sizes": [],
    "t": "Other",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-3783": {
@@ -5715,7 +6093,7 @@
    },
    "sizes": [],
    "t": "Other",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-3784": {
@@ -5760,7 +6138,7 @@
    },
    "sizes": [],
    "t": "Other",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-3785": {
@@ -5805,7 +6183,7 @@
    },
    "sizes": [],
    "t": "Other",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-3786": {
@@ -5850,7 +6228,7 @@
    },
    "sizes": [],
    "t": "Other",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-3787": {
@@ -5905,7 +6283,7 @@
    },
    "sizes": [],
    "t": "Other",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-3788": {
@@ -5950,7 +6328,7 @@
    },
    "sizes": [],
    "t": "Other",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-3789": {
@@ -5990,12 +6368,33 @@
    },
    "sizes": [],
    "t": "Other",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-3790": {
    "checked": "2026-10-28",
    "handover": [
+    {
+     "date_hint": null,
+     "kind": "managed by",
+     "line": "ability (does not have to be a 100% disability). The Access Pass provides benefits at federal lands managed by six agencies, including free entrance to parks managed by the National Park Service that charge an entrance fee.",
+     "src": "https://www.nps.gov/aboutus/accessibility.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": null,
+     "kind": "managed by",
+     "line": "s Pass provides benefits at federal lands managed by six agencies, including free entrance to parks managed by the National Park Service that charge an entrance fee. Learn more or acquire an Access Pass . Architectural Barriers Act (ABA) The Architectural Barriers",
+     "src": "https://www.nps.gov/aboutus/accessibility.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": null,
+     "kind": "renamed",
+     "line": "including at the National Park Service. Reasonable Accommodations for Employees The Access Center (formerly called the Assisted Technology Center) is a Department of the Interior resource center that offers consultation, information, advice, and demonstration of assistive technology, safety, a",
+     "src": "https://www.nps.gov/aboutus/accessibility.htm",
+     "why": "about / history page of the park's site"
+    },
     {
      "date_hint": "2006",
      "kind": "transfer",
@@ -6035,6 +6434,16 @@
     },
     {
      "status": "ok",
+     "url": "https://www.nps.gov/aboutus/accessibility.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/aboutus/privacy.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
      "url": "https://www.nps.gov/fodo/learn/management/statistics.htm",
      "why": "NPS park statistics page"
     },
@@ -6069,7 +6478,7 @@
     }
    ],
    "t": "National / NPS",
-   "ver": 1,
+   "ver": 2,
    "verdict": "unsure"
   },
   "US-3791": {
@@ -6079,7 +6488,7 @@
    "ours": null,
    "score": null,
    "t": "National / NPS",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no outline"
   },
   "US-3792": {
@@ -6140,7 +6549,7 @@
     }
    ],
    "t": "National Recreation Area",
-   "ver": 1,
+   "ver": 2,
    "verdict": "unsure"
   },
   "US-3793": {
@@ -6176,7 +6585,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/BallardWMA_All.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -6206,12 +6615,20 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-3794": {
    "checked": "2026-10-28",
-   "handover": [],
+   "handover": [
+    {
+     "date_hint": null,
+     "kind": "managed by",
+     "line": "owed within the designated wilderness area. No developed facilities. For camping, check with owner. Owned by U.S. Forest Service. View Detailed Map --> Mapping Resources View Printable Map (PDF) Explore habitat & mana",
+     "src": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=39",
+     "why": "the park's page (Kentucky answer key)"
+    }
+   ],
    "n": "Beaver Creek Wildlife Management Area",
    "official": {
     "acres": 17753.0,
@@ -6240,11 +6657,6 @@
      "status": "ok",
      "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=39",
      "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/BeaverCreekWMA_ALL.pdf",
-     "why": "official map (Kentucky answer key)"
     }
    ],
    "pct": 0,
@@ -6279,7 +6691,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-3795": {
@@ -6304,7 +6716,7 @@
    },
    "pages": [
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/BeechyCreekWMA-ALL.pdf",
      "why": "the park's page (Kentucky answer key)"
     }
@@ -6319,7 +6731,7 @@
    },
    "sizes": [],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-3796": {
@@ -6355,7 +6767,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/BigRiversWMA_and_StateForest_all.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -6385,7 +6797,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-3797": {
@@ -6421,7 +6833,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/BoatwrightWMA_All.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -6493,7 +6905,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-3798": {
@@ -6518,7 +6930,7 @@
    },
    "pages": [
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/BuckCreekWMA_All.pdf",
      "why": "the park's page (Kentucky answer key)"
     }
@@ -6533,7 +6945,7 @@
    },
    "sizes": [],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-3799": {
@@ -6569,7 +6981,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/Burchell-BeechCreekWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -6606,7 +7018,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-3800": {
@@ -6642,7 +7054,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/CedarCreekLakeWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -6679,20 +7091,14 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "off"
   },
   "US-3801": {
    "checked": "2026-10-28",
    "handover": [],
    "n": "Clifty Wilderness Area",
-   "official": {
-    "acres": 8270.0,
-    "as": "8,270 acre",
-    "line": "reation Regions Cave Run Lake Cave Run Lake is nestled among the rolling hills of northeastern Kentucky. This 8,270-acre lake provides flood protection and a clean water… Central Forest The Central Forest region of the Daniel Boon",
-    "read": "2026-10-28",
-    "url": "https://www.fs.usda.gov/recarea/dbnf/recarea/?recid=39460"
-   },
+   "official": null,
    "ours": {
     "acres": 12484,
     "manager": "",
@@ -6710,12 +7116,12 @@
    },
    "pages": [
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://www.fs.usda.gov/recarea/dbnf/recarea/?recid=39460",
      "why": "the park's page (Kentucky answer key)"
     }
    ],
-   "pct": 51,
+   "pct": null,
    "score": 6,
    "score_parts": {
     "name": 2,
@@ -6723,29 +7129,22 @@
     "size": 1,
     "source": 1
    },
-   "sizes": [
-    {
-     "acres": 8270.0,
-     "as": "8,270 acre",
-     "line": "reation Regions Cave Run Lake Cave Run Lake is nestled among the rolling hills of northeastern Kentucky. This 8,270-acre lake provides flood protection and a clean water… Central Forest The Central Forest region of the Daniel Boon",
-     "total_like": false,
-     "url": "https://www.fs.usda.gov/recarea/dbnf/recarea/?recid=39460"
-    },
-    {
-     "acres": 5600.0,
-     "as": "5,600 acres",
-     "line": "t trailhead of the Sheltowee Trace National Recreation Trail in… Laurel River Lake Laurel River Lake features 5,600 acres of clear, deep water and nearly 200 miles of tree-lined shore. The quiet coves and cliff-lined shores offer…",
-     "total_like": false,
-     "url": "https://www.fs.usda.gov/recarea/dbnf/recarea/?recid=39460"
-    }
-   ],
+   "sizes": [],
    "t": "River / Wilderness",
-   "ver": 1,
-   "verdict": "unsure"
+   "ver": 2,
+   "verdict": "no size on page"
   },
   "US-3802": {
    "checked": "2026-10-28",
-   "handover": [],
+   "handover": [
+    {
+     "date_hint": null,
+     "kind": "managed by",
+     "line": "life Sanctuary is a 375 acre nature preserve dedicated to environmental education and conservation. Now managed by Bluegrass Greensource, we’re excited to offer field trips, summer camps, and other hands-on learning experiences to explo",
+     "src": "https://bggreensource.org/buckley/",
+     "why": "the park's page (Kentucky answer key)"
+    }
+   ],
    "n": "Clyde E Buckley Sanctuary",
    "official": {
     "acres": 375.0,
@@ -6774,11 +7173,6 @@
      "status": "ok",
      "url": "https://bggreensource.org/buckley/",
      "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://bggreensource.org/wp-content/uploads/2025/01/1_Full_Sanctuary_All_Trails_50_foot_Contours.pdf-compressed_1.pdf",
-     "why": "official map (Kentucky answer key)"
     }
    ],
    "pct": 7,
@@ -6799,7 +7193,7 @@
     }
    ],
    "t": "Sanctuary",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-3803": {
@@ -6824,7 +7218,7 @@
    },
    "pages": [
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/CoilEstateWMA_ALL.pdf",
      "why": "the park's page (Kentucky answer key)"
     }
@@ -6839,7 +7233,7 @@
    },
    "sizes": [],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-3804": {
@@ -6864,7 +7258,7 @@
    },
    "pages": [
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/CranksCreekWMA_ALL.pdf",
      "why": "the park's page (Kentucky answer key)"
     }
@@ -6879,7 +7273,7 @@
    },
    "sizes": [],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-3805": {
@@ -6955,7 +7349,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-3806": {
@@ -7017,7 +7411,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-3807": {
@@ -7053,7 +7447,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/DixRiverWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -7097,7 +7491,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-3808": {
@@ -7133,7 +7527,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/DougTravisWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -7156,7 +7550,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-3809": {
@@ -7192,7 +7586,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/Dr.JamesR.RichWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -7222,7 +7616,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-3810": {
@@ -7291,7 +7685,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-3811": {
@@ -7316,7 +7710,7 @@
    },
    "pages": [
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/EdMabry-LaurelGorgeWMA_ALL.pdf",
      "why": "the park's page (Kentucky answer key)"
     }
@@ -7331,7 +7725,7 @@
    },
    "sizes": [],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-3812": {
@@ -7367,7 +7761,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/FlemingWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -7390,7 +7784,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-3813": {
@@ -7426,7 +7820,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/GriffithWoodsWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -7477,7 +7871,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-3814": {
@@ -7502,7 +7896,7 @@
    },
    "pages": [
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/Hensley-PineMountainWMA_ALL.pdf",
      "why": "the park's page (Kentucky answer key)"
     }
@@ -7517,7 +7911,7 @@
    },
    "sizes": [],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-3815": {
@@ -7553,7 +7947,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/Higginson-HenryWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -7590,7 +7984,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-3816": {
@@ -7626,7 +8020,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/John_A_Kleber_WMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -7656,7 +8050,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-3817": {
@@ -7692,7 +8086,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/JohnCWilliamsWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -7722,20 +8116,14 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-3818": {
    "checked": "2026-10-28",
    "handover": [],
    "n": "Jones-Keeney Wildlife Management Area",
-   "official": {
-    "acres": 2055.0,
-    "as": "2,055 acres",
-    "line": "on Public Hunting Area Location Regional Locator WMA Overview Location & Size: Caldwell County, 2,055 acres. Contact: (270) 753-6913 Elevation: minimum 390 feet, maximum 688 feet. Entrance GPS coordinates: Latit",
-    "read": "2026-10-28",
-    "url": "https://fw.ky.gov/More/Documents/Jones-KeeneyWMA_All.pdf"
-   },
+   "official": null,
    "ours": {
     "acres": 2045,
     "manager": "KDFWR",
@@ -7753,31 +8141,23 @@
    },
    "pages": [
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/Jones-KeeneyWMA_All.pdf",
      "why": "the park's page (Kentucky answer key)"
     }
    ],
-   "pct": 0,
-   "score": 7,
+   "pct": null,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 1,
     "source": 1
    },
-   "sizes": [
-    {
-     "acres": 2055.0,
-     "as": "2,055 acres",
-     "line": "on Public Hunting Area Location Regional Locator WMA Overview Location & Size: Caldwell County, 2,055 acres. Contact: (270) 753-6913 Elevation: minimum 390 feet, maximum 688 feet. Entrance GPS coordinates: Latit",
-     "total_like": true,
-     "url": "https://fw.ky.gov/More/Documents/Jones-KeeneyWMA_All.pdf"
-    }
-   ],
+   "sizes": [],
    "t": "WMA",
-   "ver": 1,
-   "verdict": "agree"
+   "ver": 2,
+   "verdict": "no size on page"
   },
   "US-3819": {
    "checked": "2026-10-28",
@@ -7812,7 +8192,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/KalerBottomsWMA_All.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -7835,7 +8215,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-3820": {
@@ -7871,7 +8251,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/KentuckyRiverWMA_All.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -7922,7 +8302,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-3821": {
@@ -7947,7 +8327,7 @@
    },
    "pages": [
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/L.B.DavisonWMA_ALL.pdf",
      "why": "the park's page (Kentucky answer key)"
     }
@@ -7962,7 +8342,7 @@
    },
    "sizes": [],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-3822": {
@@ -8024,7 +8404,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-3823": {
@@ -8072,7 +8452,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/LivingstonCountyWMAandStateNaturalArea_All.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -8123,7 +8503,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "off"
   },
   "US-3824": {
@@ -8148,7 +8528,7 @@
    },
    "pages": [
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/MarionCountyWMAandSF_ALL.pdf",
      "why": "the park's page (Kentucky answer key)"
     }
@@ -8163,7 +8543,7 @@
    },
    "sizes": [],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-3825": {
@@ -8239,20 +8619,14 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-3826": {
    "checked": "2026-10-28",
    "handover": [],
    "n": "Mullins Wildlife Management Area",
-   "official": {
-    "acres": 259.0,
-    "as": "259 acres",
-    "line": "on Public Hunting Area Location Regional Locator WMA Overview Location & Size: Kenton County; 259 acres. Contact: (859) 428-2262 Elevation: minimum 780 feet, maximum 923 feet. Entrance GPS coordinates: Lat",
-    "read": "2026-10-28",
-    "url": "https://fw.ky.gov/More/Documents/MullinsWMA_ALL.pdf"
-   },
+   "official": null,
    "ours": {
     "acres": 257,
     "manager": "KDFWR",
@@ -8270,31 +8644,23 @@
    },
    "pages": [
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/MullinsWMA_ALL.pdf",
      "why": "the park's page (Kentucky answer key)"
     }
    ],
-   "pct": 1,
-   "score": 7,
+   "pct": null,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 1,
     "source": 1
    },
-   "sizes": [
-    {
-     "acres": 259.0,
-     "as": "259 acres",
-     "line": "on Public Hunting Area Location Regional Locator WMA Overview Location & Size: Kenton County; 259 acres. Contact: (859) 428-2262 Elevation: minimum 780 feet, maximum 923 feet. Entrance GPS coordinates: Lat",
-     "total_like": true,
-     "url": "https://fw.ky.gov/More/Documents/MullinsWMA_ALL.pdf"
-    }
-   ],
+   "sizes": [],
    "t": "WMA",
-   "ver": 1,
-   "verdict": "agree"
+   "ver": 2,
+   "verdict": "no size on page"
   },
   "US-3827": {
    "checked": "2026-10-28",
@@ -8329,7 +8695,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/ObionCreekWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -8394,7 +8760,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-3828": {
@@ -8430,7 +8796,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/PeabodyAll.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -8467,7 +8833,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-3829": {
@@ -8503,7 +8869,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/RFTarterWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -8533,12 +8899,20 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-3830": {
    "checked": "2026-10-28",
-   "handover": [],
+   "handover": [
+    {
+     "date_hint": null,
+     "kind": "managed by",
+     "line": "t access off KY 136 on Martin-Martin RD near Smith Mills; East access off Mill Street, Smith Mills. Owned by US Army Corps of Engineers and Kentucky Department of Fish and Wildlife Resources. View Detailed Map --> Mapping Resources View Printable Map (PDF) Sl",
+     "src": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=230",
+     "why": "the park's page (Kentucky answer key)"
+    }
+   ],
    "n": "Sloughs Wildlife Management Area",
    "official": {
     "acres": 11173.0,
@@ -8567,11 +8941,6 @@
      "status": "ok",
      "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=230",
      "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/Sloughs_WMA_All.pdf",
-     "why": "official map (Kentucky answer key)"
     }
    ],
    "pct": 1,
@@ -8606,20 +8975,14 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-3831": {
    "checked": "2026-10-28",
    "handover": [],
    "n": "South Shore Wildlife Management Area",
-   "official": {
-    "acres": 98.0,
-    "as": "98 acres",
-    "line": "on Public Hunting Area Location Regional Locator WMA Overview Location & Size: Greenup County, 98 acres. Contact: (606) 474-8535. Elevation: minimum 480 feet, maximum 550 feet. Entrance GPS coordinates: Lati",
-    "read": "2026-10-28",
-    "url": "https://fw.ky.gov/More/Documents/SouthShoreWMA_ALL.pdf"
-   },
+   "official": null,
    "ours": {
     "acres": 96,
     "manager": "KDFWR",
@@ -8637,31 +9000,23 @@
    },
    "pages": [
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/SouthShoreWMA_ALL.pdf",
      "why": "the park's page (Kentucky answer key)"
     }
    ],
-   "pct": 2,
-   "score": 7,
+   "pct": null,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 1,
     "source": 1
    },
-   "sizes": [
-    {
-     "acres": 98.0,
-     "as": "98 acres",
-     "line": "on Public Hunting Area Location Regional Locator WMA Overview Location & Size: Greenup County, 98 acres. Contact: (606) 474-8535. Elevation: minimum 480 feet, maximum 550 feet. Entrance GPS coordinates: Lati",
-     "total_like": true,
-     "url": "https://fw.ky.gov/More/Documents/SouthShoreWMA_ALL.pdf"
-    }
-   ],
+   "sizes": [],
    "t": "WMA",
-   "ver": 1,
-   "verdict": "agree"
+   "ver": 2,
+   "verdict": "no size on page"
   },
   "US-3832": {
    "checked": "2026-10-28",
@@ -8691,7 +9046,7 @@
    },
    "pages": [
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/StoneMountainWMAandStateNaturalArea_ALL.pdf",
      "why": "the park's page (Kentucky answer key)"
     }
@@ -8706,20 +9061,14 @@
    },
    "sizes": [],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-3833": {
    "checked": "2026-10-28",
    "handover": [],
    "n": "T. N. Sullivan Wildlife Management Area",
-   "official": {
-    "acres": 146.0,
-    "as": "146 acres",
-    "line": "n Public Hunting Area Location Regional Locator WMA Overview Location & Size: Franklin County, 146 acres. Contact: (502) 535-6335 Elevation: minimum 540 feet, maximum 798 feet. Entrance GPS coordinates: Latit",
-    "read": "2026-10-28",
-    "url": "https://fw.ky.gov/More/Documents/TN_SullivanWMA_All.pdf"
-   },
+   "official": null,
    "ours": {
     "acres": 145,
     "manager": "KDFWR",
@@ -8737,31 +9086,23 @@
    },
    "pages": [
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/TN_SullivanWMA_All.pdf",
      "why": "the park's page (Kentucky answer key)"
     }
    ],
-   "pct": 1,
-   "score": 7,
+   "pct": null,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 1,
     "source": 1
    },
-   "sizes": [
-    {
-     "acres": 146.0,
-     "as": "146 acres",
-     "line": "n Public Hunting Area Location Regional Locator WMA Overview Location & Size: Franklin County, 146 acres. Contact: (502) 535-6335 Elevation: minimum 540 feet, maximum 798 feet. Entrance GPS coordinates: Latit",
-     "total_like": true,
-     "url": "https://fw.ky.gov/More/Documents/TN_SullivanWMA_All.pdf"
-    }
-   ],
+   "sizes": [],
    "t": "WMA",
-   "ver": 1,
-   "verdict": "agree"
+   "ver": 2,
+   "verdict": "no size on page"
   },
   "US-3834": {
    "checked": "2026-10-28",
@@ -8796,7 +9137,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/PennyrileStateForestandTradewaterWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -8816,30 +9157,17 @@
      "line": "Public Land Search | KDFWR --> Tradewater WMA Get Directions Close Return to Search --> WMA Overview Size: 727 acres Location: Christian & Hopkins Contact: (270) 753-6913 Elevation: minimum 373 feet, maximum 641 feet. Entrance",
      "total_like": true,
      "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=128"
-    },
-    {
-     "acres": 4.0,
-     "as": "4 aC",
-     "line": "\u0001ö\"'1 ¾\u0017\u0001Ó >Gp \u0013pD#\u0006¿táC¦ª<âÑ\u0018*G Ð>Fð ¨\u0014×tXúßåØþcÿPÍµvOriÙßht²± '¼þ,qYX ã üà½IóÆål \u0018·\u000eizö%¥aï¾,Y4aC\u0018|IÎ {§&$`\u0019@\u0011Ý-xÄ¤ ñÚ$ ©ý­7\u0010h\u0006õr ç{ß\u0006[\bÜ/ÐFß8Óza3<N\u0018/RÞ¥|È\u0017³\u0014Ê-©A¶, ¥8ÕÆ<°k§,ý fÙ_\u0014\u0007Úä³ IZ\u0003Z¥·­I",
-     "total_like": false,
-     "url": "https://fw.ky.gov/More/Documents/PennyrileStateForestandTradewaterWMA_ALL.pdf"
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-3835": {
    "checked": "2026-10-28",
    "handover": [],
    "n": "Twin Eagle Wildlife Management Area",
-   "official": {
-    "acres": 167.0,
-    "as": "167 acres",
-    "line": "mation Public Hunting Area Location Regional Locator WMA Overview Location & Size: Owen County, 167 acres. Contact: (502) 535-6335 Elevation: minimum 451 feet, maximum 804 feet. Entrance GPS coordinates: Latit",
-    "read": "2026-10-28",
-    "url": "https://fw.ky.gov/More/Documents/TwinEagleWMA_ALL.pdf"
-   },
+   "official": null,
    "ours": {
     "acres": 169,
     "manager": "KDFWR",
@@ -8857,31 +9185,23 @@
    },
    "pages": [
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/TwinEagleWMA_ALL.pdf",
      "why": "the park's page (Kentucky answer key)"
     }
    ],
-   "pct": 1,
-   "score": 7,
+   "pct": null,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 1,
     "source": 1
    },
-   "sizes": [
-    {
-     "acres": 167.0,
-     "as": "167 acres",
-     "line": "mation Public Hunting Area Location Regional Locator WMA Overview Location & Size: Owen County, 167 acres. Contact: (502) 535-6335 Elevation: minimum 451 feet, maximum 804 feet. Entrance GPS coordinates: Latit",
-     "total_like": true,
-     "url": "https://fw.ky.gov/More/Documents/TwinEagleWMA_ALL.pdf"
-    }
-   ],
+   "sizes": [],
    "t": "WMA",
-   "ver": 1,
-   "verdict": "agree"
+   "ver": 2,
+   "verdict": "no size on page"
   },
   "US-3836": {
    "checked": "2026-10-28",
@@ -8916,7 +9236,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/Veterans_Memorial_WMA_all.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -8946,7 +9266,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-3837": {
@@ -8982,7 +9302,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/West_Kentucky_WMA.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -9019,7 +9339,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-3838": {
@@ -9044,7 +9364,7 @@
    },
    "pages": [
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/WinfordWMA_ALL.pdf",
      "why": "the park's page (Kentucky answer key)"
     }
@@ -9059,12 +9379,27 @@
    },
    "sizes": [],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-3839": {
    "checked": "2026-10-28",
-   "handover": [],
+   "handover": [
+    {
+     "date_hint": null,
+     "kind": "managed by",
+     "line": "ies for hunting, fishing, boating, birding and hiking on two marked trails (approximately 8 miles). Managed by Kentucky Department of Fish and Wildlife, owned by U.S. Army Corps of Engineers View Detailed Map --> Mapping Resources View Printable Map (",
+     "src": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=23",
+     "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "date_hint": null,
+     "kind": "managed by",
+     "line": "on two marked trails (approximately 8 miles). Managed by Kentucky Department of Fish and Wildlife, owned by U.S. Army Corps of Engineers View Detailed Map --> Mapping Resources View Printable Map (PDF) Explore the area with our interactive map Online Res",
+     "src": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=23",
+     "why": "the park's page (Kentucky answer key)"
+    }
+   ],
    "n": "Yatesville Lake Wildlife Management Area",
    "official": {
     "acres": 13191.0,
@@ -9093,11 +9428,6 @@
      "status": "ok",
      "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=23",
      "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/YatesvilleLakeWMA_ALL.pdf",
-     "why": "official map (Kentucky answer key)"
     }
    ],
    "pct": 1,
@@ -9139,7 +9469,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-3840": {
@@ -9215,20 +9545,14 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-4484": {
    "checked": "2026-10-28",
    "handover": [],
    "n": "Daniel Boone National Forest",
-   "official": {
-    "acres": 708000.0,
-    "as": "708,000 acres",
-    "line": "onal Forest Spread across 21 counties of eastern Kentucky, the Daniel Boone National Forest manages more than 708,000 acres of national forest system lands within a 2.1 million-acre proclamation boundary. From over 600 miles of trail",
-    "read": "2026-10-28",
-    "url": "https://www.fs.usda.gov/dbnf/"
-   },
+   "official": null,
    "ours": {
     "acres": 706956,
     "manager": "",
@@ -9246,50 +9570,29 @@
    },
    "pages": [
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://www.fs.usda.gov/dbnf/",
      "why": "the park's page (Kentucky answer key)"
     }
    ],
-   "pct": 0,
-   "score": 6,
+   "pct": null,
+   "score": 5,
    "score_parts": {
     "name": 1,
     "pin": 2,
-    "size": 2,
+    "size": 1,
     "source": 1
    },
-   "sizes": [
-    {
-     "acres": 708000.0,
-     "as": "708,000 acres",
-     "line": "onal Forest Spread across 21 counties of eastern Kentucky, the Daniel Boone National Forest manages more than 708,000 acres of national forest system lands within a 2.1 million-acre proclamation boundary. From over 600 miles of trail",
-     "total_like": true,
-     "url": "https://www.fs.usda.gov/dbnf/"
-    },
-    {
-     "acres": 2100000.0,
-     "as": "2.1 million acre",
-     "line": "ky, the Daniel Boone National Forest manages more than 708,000 acres of national forest system lands within a 2.1 million-acre proclamation boundary. From over 600 miles of trails to two federally recognized wildernesses and more than 2",
-     "total_like": true,
-     "url": "https://www.fs.usda.gov/dbnf/"
-    }
-   ],
+   "sizes": [],
    "t": "National Forest",
-   "ver": 1,
-   "verdict": "agree"
+   "ver": 2,
+   "verdict": "no size on page"
   },
   "US-4526": {
    "checked": "2026-10-28",
    "handover": [],
    "n": "George Washington & Jefferson National Forest",
-   "official": {
-    "acres": 1800000.0,
-    "as": "1.8 million acres",
-    "line": "West Virginia, the George Washington and Jefferson National Forest blankets the Blue Ridge mountains offering 1.8 million acres of lush woodlands, unique mountain balds, peaceful waterways, and adventures galore. With more wildlife and t",
-    "read": "2026-10-28",
-    "url": "https://www.fs.usda.gov/gwj"
-   },
+   "official": null,
    "ours": {
     "acres": 856,
     "manager": "Federal",
@@ -9307,43 +9610,28 @@
    },
    "pages": [
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://www.fs.usda.gov/gwj",
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "HTTP 404",
+     "status": "HTTP 403",
      "url": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd1136678.pdf",
      "why": "official map (parkinfo-web)"
     }
    ],
-   "pct": 100,
-   "score": 5,
+   "pct": null,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 1,
     "source": 1
    },
-   "sizes": [
-    {
-     "acres": 1800000.0,
-     "as": "1.8 million acres",
-     "line": "p Explore your forests Experience lush woodlands, cold mountain streams, and unique mountaintop balds on over 1.8 million acres of Appalachian forests. Recreation Opportunities T T T Welcome to the George Washington & Jefferson National",
-     "total_like": false,
-     "url": "https://www.fs.usda.gov/gwj"
-    },
-    {
-     "acres": 1800000.0,
-     "as": "1.8 million acres",
-     "line": "West Virginia, the George Washington and Jefferson National Forest blankets the Blue Ridge mountains offering 1.8 million acres of lush woodlands, unique mountain balds, peaceful waterways, and adventures galore. With more wildlife and t",
-     "total_like": true,
-     "url": "https://www.fs.usda.gov/gwj"
-    }
-   ],
+   "sizes": [],
    "t": "National Forest",
-   "ver": 1,
-   "verdict": "off"
+   "ver": 2,
+   "verdict": "no size on page"
   },
   "US-4572": {
    "checked": "2026-10-28",
@@ -9352,7 +9640,7 @@
    "ours": null,
    "score": null,
    "t": "National / NPS",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no outline"
   },
   "US-4687": {
@@ -9377,7 +9665,7 @@
    },
    "pages": [
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/DeweyLakeWMA-ALL.pdf",
      "why": "the park's page (Kentucky answer key)"
     }
@@ -9392,7 +9680,7 @@
    },
    "sizes": [],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-4688": {
@@ -9454,12 +9742,41 @@
     }
    ],
    "t": "State Forest",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-4689": {
    "checked": "2026-10-28",
-   "handover": [],
+   "handover": [
+    {
+     "date_hint": "2021",
+     "kind": "transfer",
+     "line": "e started his career in the Department for Environmental Protection’s Division for Air Quality then transferred to the Division of Waste Management before moving to the Department for Natural Resources where he spent 14 years as the department’s legislative analyst and administrative regulation coor",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "2022",
+     "kind": "transfer",
+     "line": "tstanding County Advocate, awarded the Legislative Champion Award at the 2022 Senior Hunger Summit, given a Warrior for Working Families Award from the Working Families PAC, the Kentucky Valley Education Cooperative Henry Clay Award, the Cumberland Valley ADD Outstanding Advocate Award, the KCTC Out",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "1982",
+     "kind": "renamed",
+     "line": "rns that emerged in post-oil crisis America. By 1982, the agency was elevated to cabinet status and renamed the Natural Resources and Environmental Protection Cabinet. In 2008, Gov. Steve Beshear disbanded the cabinet, which was",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "2008",
+     "kind": "renamed",
+     "line": "on Cabinet (EPPC) after its merger with the Labor and Public Protection Cabinet. He reformed it and renamed it the Energy and Environment Cabinet (EEC) under Executive Order 2008-0531. ​ Search by Keyword Search Filter Cancel Office of the Secretary John Lyons Cabinet Secretary Offi",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    }
+   ],
    "n": "Kentucky Ridge State Forest",
    "official": {
     "acres": 15251.0,
@@ -9491,6 +9808,16 @@
     },
     {
      "status": "ok",
+     "url": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Archived-Regulation-History.aspx",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
      "url": "https://eec.ky.gov/Natural-Resources/Forestry/Documents/KentuckyRidgeStateForest_ALL.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -9513,12 +9840,41 @@
     }
    ],
    "t": "State Forest",
-   "ver": 1,
+   "ver": 2,
    "verdict": "unsure"
   },
   "US-4690": {
    "checked": "2026-10-28",
-   "handover": [],
+   "handover": [
+    {
+     "date_hint": "2021",
+     "kind": "transfer",
+     "line": "e started his career in the Department for Environmental Protection’s Division for Air Quality then transferred to the Division of Waste Management before moving to the Department for Natural Resources where he spent 14 years as the department’s legislative analyst and administrative regulation coor",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "2022",
+     "kind": "transfer",
+     "line": "tstanding County Advocate, awarded the Legislative Champion Award at the 2022 Senior Hunger Summit, given a Warrior for Working Families Award from the Working Families PAC, the Kentucky Valley Education Cooperative Henry Clay Award, the Cumberland Valley ADD Outstanding Advocate Award, the KCTC Out",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "1982",
+     "kind": "renamed",
+     "line": "rns that emerged in post-oil crisis America. By 1982, the agency was elevated to cabinet status and renamed the Natural Resources and Environmental Protection Cabinet. In 2008, Gov. Steve Beshear disbanded the cabinet, which was",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "2008",
+     "kind": "renamed",
+     "line": "on Cabinet (EPPC) after its merger with the Labor and Public Protection Cabinet. He reformed it and renamed it the Energy and Environment Cabinet (EEC) under Executive Order 2008-0531. ​ Search by Keyword Search Filter Cancel Office of the Secretary John Lyons Cabinet Secretary Offi",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    }
+   ],
    "n": "Knobs State Forest",
    "official": {
     "acres": 2035.0,
@@ -9556,6 +9912,16 @@
     },
     {
      "status": "ok",
+     "url": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Archived-Regulation-History.aspx",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/KnobsStateForestandWMA_All.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -9599,7 +9965,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-4692": {
@@ -9644,12 +10010,41 @@
    },
    "sizes": [],
    "t": "State Forest",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-4693": {
    "checked": "2026-10-28",
-   "handover": [],
+   "handover": [
+    {
+     "date_hint": "2021",
+     "kind": "transfer",
+     "line": "e started his career in the Department for Environmental Protection’s Division for Air Quality then transferred to the Division of Waste Management before moving to the Department for Natural Resources where he spent 14 years as the department’s legislative analyst and administrative regulation coor",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "2022",
+     "kind": "transfer",
+     "line": "tstanding County Advocate, awarded the Legislative Champion Award at the 2022 Senior Hunger Summit, given a Warrior for Working Families Award from the Working Families PAC, the Kentucky Valley Education Cooperative Henry Clay Award, the Cumberland Valley ADD Outstanding Advocate Award, the KCTC Out",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "1982",
+     "kind": "renamed",
+     "line": "rns that emerged in post-oil crisis America. By 1982, the agency was elevated to cabinet status and renamed the Natural Resources and Environmental Protection Cabinet. In 2008, Gov. Steve Beshear disbanded the cabinet, which was",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "2008",
+     "kind": "renamed",
+     "line": "on Cabinet (EPPC) after its merger with the Labor and Public Protection Cabinet. He reformed it and renamed it the Energy and Environment Cabinet (EEC) under Executive Order 2008-0531. ​ Search by Keyword Search Filter Cancel Office of the Secretary John Lyons Cabinet Secretary Offi",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    }
+   ],
    "n": "Tygarts State Forest",
    "official": {
     "acres": 1184.0,
@@ -9678,6 +10073,16 @@
      "status": "ok",
      "url": "https://eec.ky.gov/Natural-Resources/Forestry/ky-state-forests/Pages/Tygarts-State-Forest.aspx",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Archived-Regulation-History.aspx",
+     "why": "about / history page of the park's site"
     },
     {
      "status": "ok",
@@ -9710,7 +10115,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-7708": {
@@ -9740,6 +10145,16 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
+     "status": "ok",
+     "url": "https://www.nps.gov/misp/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/misp/planyourvisit/calendar.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
      "status": "HTTP 404",
      "url": "https://www.nps.gov/misp/learn/management/statistics.htm",
      "why": "NPS park statistics page"
@@ -9760,7 +10175,7 @@
    },
    "sizes": [],
    "t": "National / NPS",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-7890": {
@@ -9805,12 +10220,34 @@
    },
    "sizes": [],
    "t": "Other",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-7950": {
    "checked": "2026-10-28",
-   "handover": [],
+   "handover": [
+    {
+     "date_hint": null,
+     "kind": "managed by",
+     "line": "ability (does not have to be a 100% disability). The Access Pass provides benefits at federal lands managed by six agencies, including free entrance to parks managed by the National Park Service that charge an entrance fee.",
+     "src": "https://www.nps.gov/aboutus/accessibility.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": null,
+     "kind": "managed by",
+     "line": "s Pass provides benefits at federal lands managed by six agencies, including free entrance to parks managed by the National Park Service that charge an entrance fee. Learn more or acquire an Access Pass . Architectural Barriers Act (ABA) The Architectural Barriers",
+     "src": "https://www.nps.gov/aboutus/accessibility.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": null,
+     "kind": "renamed",
+     "line": "including at the National Park Service. Reasonable Accommodations for Employees The Access Center (formerly called the Assisted Technology Center) is a Department of the Interior resource center that offers consultation, information, advice, and demonstration of assistive technology, safety, a",
+     "src": "https://www.nps.gov/aboutus/accessibility.htm",
+     "why": "about / history page of the park's site"
+    }
+   ],
    "n": "Camp Nelson National Monument",
    "official": null,
    "ours": {
@@ -9835,6 +10272,16 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
+     "status": "ok",
+     "url": "https://www.nps.gov/cane/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/aboutus/accessibility.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
      "status": "HTTP 404",
      "url": "https://www.nps.gov/cane/learn/management/statistics.htm",
      "why": "NPS park statistics page"
@@ -9855,7 +10302,7 @@
    },
    "sizes": [],
    "t": "National / NPS",
-   "ver": 1,
+   "ver": 2,
    "verdict": "no size on page"
   },
   "US-7951": {
@@ -9931,20 +10378,14 @@
     }
    ],
    "t": "State Forest",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-7952": {
    "checked": "2026-10-28",
    "handover": [],
    "n": "Marrowbone State Forest",
-   "official": {
-    "acres": 1920.0,
-    "as": "3 Mi²",
-    "line": "ª$+­øD,Ù´ºr á\u0000ÇþÆc¢\u0013é¡uÉ4Ìi 8kº\"\u0004e:ã ó09\u0005b`ª ûÃ³õ°Ëi\u0019·°\u000eHú\u000e,¦\u001aÅ-Û\u0018EvæõÈñ°®©\u0011sÀ¨¿¨ú0À£\u0018`MwK#VñJb=z3Mi²v¨MYþø´\u0002\u000f¼¢[\u0014ì £k¦Éªù\u0002û¾Àu¦$ %¯\u001b H¢| EÞçÂÃôkåà¨¦Ï~\u0014 \u0011Ýº\u0006÷;¯£§`wöî ³ÿ»QC¿^Úºè¸1o}P©T¢àoú ùß &®\b»\u000e",
-    "read": "2026-10-28",
-    "url": "https://fw.ky.gov/More/Documents/MarrowboneStateForestandWMA_ALL.pdf"
-   },
+   "official": null,
    "ours": {
     "acres": 1946,
     "manager": "KDFWR",
@@ -9962,35 +10403,56 @@
    },
    "pages": [
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/MarrowboneStateForestandWMA_ALL.pdf",
      "why": "the park's page (Kentucky answer key)"
     }
    ],
-   "pct": 1,
-   "score": 7,
+   "pct": null,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 1,
     "source": 1
    },
-   "sizes": [
-    {
-     "acres": 1920.0,
-     "as": "3 Mi²",
-     "line": "ª$+­øD,Ù´ºr á\u0000ÇþÆc¢\u0013é¡uÉ4Ìi 8kº\"\u0004e:ã ó09\u0005b`ª ûÃ³õ°Ëi\u0019·°\u000eHú\u000e,¦\u001aÅ-Û\u0018EvæõÈñ°®©\u0011sÀ¨¿¨ú0À£\u0018`MwK#VñJb=z3Mi²v¨MYþø´\u0002\u000f¼¢[\u0014ì £k¦Éªù\u0002û¾Àu¦$ %¯\u001b H¢| EÞçÂÃôkåà¨¦Ï~\u0014 \u0011Ýº\u0006÷;¯£§`wöî ³ÿ»QC¿^Úºè¸1o}P©T¢àoú ùß &®\b»\u000e",
-     "total_like": false,
-     "url": "https://fw.ky.gov/More/Documents/MarrowboneStateForestandWMA_ALL.pdf"
-    }
-   ],
+   "sizes": [],
    "t": "State Forest",
-   "ver": 1,
-   "verdict": "agree"
+   "ver": 2,
+   "verdict": "no size on page"
   },
   "US-7953": {
    "checked": "2026-10-28",
-   "handover": [],
+   "handover": [
+    {
+     "date_hint": "2021",
+     "kind": "transfer",
+     "line": "e started his career in the Department for Environmental Protection’s Division for Air Quality then transferred to the Division of Waste Management before moving to the Department for Natural Resources where he spent 14 years as the department’s legislative analyst and administrative regulation coor",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "2022",
+     "kind": "transfer",
+     "line": "tstanding County Advocate, awarded the Legislative Champion Award at the 2022 Senior Hunger Summit, given a Warrior for Working Families Award from the Working Families PAC, the Kentucky Valley Education Cooperative Henry Clay Award, the Cumberland Valley ADD Outstanding Advocate Award, the KCTC Out",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "1982",
+     "kind": "renamed",
+     "line": "rns that emerged in post-oil crisis America. By 1982, the agency was elevated to cabinet status and renamed the Natural Resources and Environmental Protection Cabinet. In 2008, Gov. Steve Beshear disbanded the cabinet, which was",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "2008",
+     "kind": "renamed",
+     "line": "on Cabinet (EPPC) after its merger with the Labor and Public Protection Cabinet. He reformed it and renamed it the Energy and Environment Cabinet (EEC) under Executive Order 2008-0531. ​ Search by Keyword Search Filter Cancel Office of the Secretary John Lyons Cabinet Secretary Offi",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    }
+   ],
    "n": "Metropolis Lake State Nature Preserve",
    "official": {
     "acres": 123.0,
@@ -10019,6 +10481,16 @@
      "status": "ok",
      "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Metropolis-Lake.aspx",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Archived-Regulation-History.aspx",
+     "why": "about / history page of the park's site"
     },
     {
      "status": "ok",
@@ -10058,7 +10530,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-7954": {
@@ -10127,7 +10599,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-7955": {
@@ -10183,12 +10655,12 @@
      "acres": 85.6,
      "as": "85.58 acres",
      "line": "nd is 1.5 miles upstream from landing. Access Type: Open to Public County: Jefferson Region: Bluegrass Region Size: 85.58 Owner: Office of Kentucky Nature Preserves Manager: Nature Preseve Manager Office of Kentucky Nature Preserves",
-     "total_like": true,
+     "total_like": false,
      "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Six-Mile-Island.aspx"
     }
    ],
    "t": "Nature Preserve",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-7956": {
@@ -10249,7 +10721,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-7957": {
@@ -10310,19 +10782,19 @@
      "acres": 730.0,
      "as": "730 acres",
      "line": "tion of Land, Air & Water magazine. Access Type: Open to Public County: Hardin Region: Bluegrass Region Size: 730 acres Owner: Office of Kentucky Nature Preserves Manager: Nature Preseve Manager Office of Kentucky Nature Preserve",
-     "total_like": true,
+     "total_like": false,
      "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Vernon-Douglas.aspx"
     },
     {
      "acres": 730.0,
      "as": "730 acres",
      "line": "15 edition of Land, Air & Water magazine. Access Type: Open to Public County: Hardin Region: Bluegrass Region Size: 730 acres Owner: Office of Kentucky Nature Preserves Manager: Nature Preseve Manager Office of Kentucky Nature Preserve",
-     "total_like": true,
+     "total_like": false,
      "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Vernon-Douglas.aspx"
     }
    ],
    "t": "Nature Preserve",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-7958": {
@@ -10334,6 +10806,34 @@
      "line": "ature Preserve Main Content ​​About Tom​ Dorman State Nature Preserve​ This preserve was previously owned by the Kentucky River Authority (KRA), and was dedicated as the Kentucky River Authority Palisades State Nature Preserve on Decembe",
      "src": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Tom-Dorman.aspx",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "date_hint": "2021",
+     "kind": "transfer",
+     "line": "e started his career in the Department for Environmental Protection’s Division for Air Quality then transferred to the Division of Waste Management before moving to the Department for Natural Resources where he spent 14 years as the department’s legislative analyst and administrative regulation coor",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "2022",
+     "kind": "transfer",
+     "line": "tstanding County Advocate, awarded the Legislative Champion Award at the 2022 Senior Hunger Summit, given a Warrior for Working Families Award from the Working Families PAC, the Kentucky Valley Education Cooperative Henry Clay Award, the Cumberland Valley ADD Outstanding Advocate Award, the KCTC Out",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "1982",
+     "kind": "renamed",
+     "line": "rns that emerged in post-oil crisis America. By 1982, the agency was elevated to cabinet status and renamed the Natural Resources and Environmental Protection Cabinet. In 2008, Gov. Steve Beshear disbanded the cabinet, which was",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "2008",
+     "kind": "renamed",
+     "line": "on Cabinet (EPPC) after its merger with the Labor and Public Protection Cabinet. He reformed it and renamed it the Energy and Environment Cabinet (EEC) under Executive Order 2008-0531. ​ Search by Keyword Search Filter Cancel Office of the Secretary John Lyons Cabinet Secretary Offi",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
     }
    ],
    "n": "Kentucky River Palisades/Tom Dorman State Nature Preserve",
@@ -10364,6 +10864,21 @@
      "status": "ok",
      "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Tom-Dorman.aspx",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Archived-Regulation-History.aspx",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://eec.ky.gov/Nature-Preserves/Brochures/TomDormanBrochure_bw.pdf",
+     "why": "official map (Kentucky answer key)"
     }
    ],
    "pct": 4,
@@ -10379,7 +10894,7 @@
      "acres": 10.0,
      "as": "10 acres",
      "line": "rd and Jessamine counties is now one of the largest natural areas in the region. The Nature Conserva​ncy owns 10 acres on the Jessamine County side. The Tom Dorman State Nature Preserve is one of the largest protected natural ar",
-     "total_like": true,
+     "total_like": false,
      "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Tom-Dorman.aspx"
     },
     {
@@ -10391,7 +10906,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-7959": {
@@ -10462,12 +10977,12 @@
      "acres": 177.0,
      "as": "177 acres",
      "line": "right, 1.8 miles from the intersection. Access Type: Open to Public County: Harrison Region: Bluegrass Region Size: 177 Owner: Office of Kentucky Nature Preserves Manager: Nature Preseve Manager Office of Kentucky Nature Preserves",
-     "total_like": true,
+     "total_like": false,
      "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Quiet-Trails.aspx"
     }
    ],
    "t": "Nature Preserve",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-7960": {
@@ -10535,12 +11050,41 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-7961": {
    "checked": "2026-10-28",
-   "handover": [],
+   "handover": [
+    {
+     "date_hint": "2021",
+     "kind": "transfer",
+     "line": "e started his career in the Department for Environmental Protection’s Division for Air Quality then transferred to the Division of Waste Management before moving to the Department for Natural Resources where he spent 14 years as the department’s legislative analyst and administrative regulation coor",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "2022",
+     "kind": "transfer",
+     "line": "tstanding County Advocate, awarded the Legislative Champion Award at the 2022 Senior Hunger Summit, given a Warrior for Working Families Award from the Working Families PAC, the Kentucky Valley Education Cooperative Henry Clay Award, the Cumberland Valley ADD Outstanding Advocate Award, the KCTC Out",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "1982",
+     "kind": "renamed",
+     "line": "rns that emerged in post-oil crisis America. By 1982, the agency was elevated to cabinet status and renamed the Natural Resources and Environmental Protection Cabinet. In 2008, Gov. Steve Beshear disbanded the cabinet, which was",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "2008",
+     "kind": "renamed",
+     "line": "on Cabinet (EPPC) after its merger with the Labor and Public Protection Cabinet. He reformed it and renamed it the Energy and Environment Cabinet (EEC) under Executive Order 2008-0531. ​ Search by Keyword Search Filter Cancel Office of the Secretary John Lyons Cabinet Secretary Offi",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    }
+   ],
    "n": "Jesse Stuart State Nature Preserve",
    "official": {
     "acres": 710.0,
@@ -10569,6 +11113,16 @@
      "status": "ok",
      "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Jesse-Stuart.aspx",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Archived-Regulation-History.aspx",
+     "why": "about / history page of the park's site"
     }
    ],
    "pct": 0,
@@ -10589,12 +11143,41 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-7962": {
    "checked": "2026-10-28",
-   "handover": [],
+   "handover": [
+    {
+     "date_hint": "2021",
+     "kind": "transfer",
+     "line": "e started his career in the Department for Environmental Protection’s Division for Air Quality then transferred to the Division of Waste Management before moving to the Department for Natural Resources where he spent 14 years as the department’s legislative analyst and administrative regulation coor",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "2022",
+     "kind": "transfer",
+     "line": "tstanding County Advocate, awarded the Legislative Champion Award at the 2022 Senior Hunger Summit, given a Warrior for Working Families Award from the Working Families PAC, the Kentucky Valley Education Cooperative Henry Clay Award, the Cumberland Valley ADD Outstanding Advocate Award, the KCTC Out",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "1982",
+     "kind": "renamed",
+     "line": "rns that emerged in post-oil crisis America. By 1982, the agency was elevated to cabinet status and renamed the Natural Resources and Environmental Protection Cabinet. In 2008, Gov. Steve Beshear disbanded the cabinet, which was",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "2008",
+     "kind": "renamed",
+     "line": "on Cabinet (EPPC) after its merger with the Labor and Public Protection Cabinet. He reformed it and renamed it the Energy and Environment Cabinet (EEC) under Executive Order 2008-0531. ​ Search by Keyword Search Filter Cancel Office of the Secretary John Lyons Cabinet Secretary Offi",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    }
+   ],
    "n": "Little South Fork State Natural Area",
    "official": {
     "acres": 3145.4,
@@ -10623,6 +11206,16 @@
      "status": "ok",
      "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Burnett-WWCA.aspx",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Archived-Regulation-History.aspx",
+     "why": "about / history page of the park's site"
     }
    ],
    "pct": 29,
@@ -10643,7 +11236,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 1,
+   "ver": 2,
    "verdict": "unsure"
   },
   "US-7963": {
@@ -10716,12 +11309,41 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-7964": {
    "checked": "2026-10-28",
-   "handover": [],
+   "handover": [
+    {
+     "date_hint": "2021",
+     "kind": "transfer",
+     "line": "e started his career in the Department for Environmental Protection’s Division for Air Quality then transferred to the Division of Waste Management before moving to the Department for Natural Resources where he spent 14 years as the department’s legislative analyst and administrative regulation coor",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "2022",
+     "kind": "transfer",
+     "line": "tstanding County Advocate, awarded the Legislative Champion Award at the 2022 Senior Hunger Summit, given a Warrior for Working Families Award from the Working Families PAC, the Kentucky Valley Education Cooperative Henry Clay Award, the Cumberland Valley ADD Outstanding Advocate Award, the KCTC Out",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "1982",
+     "kind": "renamed",
+     "line": "rns that emerged in post-oil crisis America. By 1982, the agency was elevated to cabinet status and renamed the Natural Resources and Environmental Protection Cabinet. In 2008, Gov. Steve Beshear disbanded the cabinet, which was",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "2008",
+     "kind": "renamed",
+     "line": "on Cabinet (EPPC) after its merger with the Labor and Public Protection Cabinet. He reformed it and renamed it the Energy and Environment Cabinet (EEC) under Executive Order 2008-0531. ​ Search by Keyword Search Filter Cancel Office of the Secretary John Lyons Cabinet Secretary Offi",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    }
+   ],
    "n": "William H. Martin State Natural Area",
    "official": {
     "acres": 459.0,
@@ -10750,6 +11372,16 @@
      "status": "ok",
      "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Dr.-William-H.-Martin-WWCA.aspx",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Archived-Regulation-History.aspx",
+     "why": "about / history page of the park's site"
     }
    ],
    "pct": 9,
@@ -10765,7 +11397,7 @@
      "acres": 500.0,
      "as": "500 acres",
      "line": "sity. Dr. Martin’s specialty was the study of forest ecology; it is fitting that his namesake protects nearly 500 acres of Cumberland Plateau forest. An extensive sandstone cliffline is present here, as is a riparian fore​st domi",
-     "total_like": true,
+     "total_like": false,
      "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Dr.-William-H.-Martin-WWCA.aspx"
     },
     {
@@ -10777,7 +11409,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-7965": {
@@ -10857,12 +11489,41 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-7966": {
    "checked": "2026-10-28",
-   "handover": [],
+   "handover": [
+    {
+     "date_hint": "2021",
+     "kind": "transfer",
+     "line": "e started his career in the Department for Environmental Protection’s Division for Air Quality then transferred to the Division of Waste Management before moving to the Department for Natural Resources where he spent 14 years as the department’s legislative analyst and administrative regulation coor",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "2022",
+     "kind": "transfer",
+     "line": "tstanding County Advocate, awarded the Legislative Champion Award at the 2022 Senior Hunger Summit, given a Warrior for Working Families Award from the Working Families PAC, the Kentucky Valley Education Cooperative Henry Clay Award, the Cumberland Valley ADD Outstanding Advocate Award, the KCTC Out",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "1982",
+     "kind": "renamed",
+     "line": "rns that emerged in post-oil crisis America. By 1982, the agency was elevated to cabinet status and renamed the Natural Resources and Environmental Protection Cabinet. In 2008, Gov. Steve Beshear disbanded the cabinet, which was",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "date_hint": "2008",
+     "kind": "renamed",
+     "line": "on Cabinet (EPPC) after its merger with the Labor and Public Protection Cabinet. He reformed it and renamed it the Energy and Environment Cabinet (EEC) under Executive Order 2008-0531. ​ Search by Keyword Search Filter Cancel Office of the Secretary John Lyons Cabinet Secretary Offi",
+     "src": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    }
+   ],
    "n": "Bad Branch State Nature Preserve",
    "official": {
     "acres": 2829.0,
@@ -10894,6 +11555,16 @@
     },
     {
      "status": "ok",
+     "url": "https://eec.ky.gov/About",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Archived-Regulation-History.aspx",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
      "url": "https://eec.ky.gov/Nature-Preserves/Brochures/BadBranchbrochure_bw.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -10916,7 +11587,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-7967": {
@@ -10989,7 +11660,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-7968": {
@@ -11050,7 +11721,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-7970": {
@@ -11104,42 +11775,14 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   },
   "US-8144": {
    "checked": "2026-10-28",
-   "handover": [
-    {
-     "date_hint": "2011",
-     "kind": "transfer",
-     "line": "of Fish and Wildlife operated the 2,261-acre property from 2011 to 2026. In 2026, the property was transferred to Meade County Fiscal Court . ​Camping​ OTTER CREEK CAMPGROUND FIREFLY RESERVATIONS CAMPGROUND MAP Otter Creek Campground operat",
-     "src": "https://fw.ky.gov/Pages/Otter-Creek-Outdoor-Recreation-Area.aspx",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "date_hint": null,
-     "kind": "managed by",
-     "line": "creekcamp@meadeky.gov Campground Info and Reservations: FIREFLY RESERVATIONS Otter Creek Campground operated by Meade County Fiscal Court. Additional Info Promotional Brochure Campground Map Topographic & Brochure Map WMA Information ​ ABOUT OTTER CREEK OUTDOOR RECREATION AR",
-     "src": "https://fw.ky.gov/Pages/Otter-Creek-Outdoor-Recreation-Area.aspx",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "date_hint": null,
-     "kind": "managed by",
-     "line": "Court . ​Camping​ OTTER CREEK CAMPGROUND FIREFLY RESERVATIONS CAMPGROUND MAP Otter Creek Campground operated by Meade County Fiscal Court. Parking Passes ​ ​ Directions to Otter Creek Outdoor Recreation Area from: Owensboro, KY Travel east on US-60 to K",
-     "src": "https://fw.ky.gov/Pages/Otter-Creek-Outdoor-Recreation-Area.aspx",
-     "why": "the park's page (Kentucky answer key)"
-    }
-   ],
+   "handover": [],
    "n": "Otter Creek State Recreation Area",
-   "official": {
-    "acres": 2261.0,
-    "as": "2,261 acre",
-    "line": "for residents of Louisville and neighboring towns, the Kentucky Department of Fish and Wildlife operated the 2,261-acre property from 2011 to 2026. In 2026, the property was transferred to Meade County Fiscal Court . ​Camping​ OT",
-    "read": "2026-10-28",
-    "url": "https://fw.ky.gov/Pages/Otter-Creek-Outdoor-Recreation-Area.aspx"
-   },
+   "official": null,
    "ours": {
     "acres": 2210,
     "manager": "KDFWR",
@@ -11157,31 +11800,28 @@
    },
    "pages": [
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/Pages/Otter-Creek-Outdoor-Recreation-Area.aspx",
      "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 403",
+     "url": "https://fw.ky.gov/Documents/Otter_Creek_Brochure_Map.pdf",
+     "why": "official map (Kentucky answer key)"
     }
    ],
-   "pct": 2,
-   "score": 6,
+   "pct": null,
+   "score": 5,
    "score_parts": {
     "name": 1,
     "pin": 2,
-    "size": 2,
+    "size": 1,
     "source": 1
    },
-   "sizes": [
-    {
-     "acres": 2261.0,
-     "as": "2,261 acre",
-     "line": "for residents of Louisville and neighboring towns, the Kentucky Department of Fish and Wildlife operated the 2,261-acre property from 2011 to 2026. In 2026, the property was transferred to Meade County Fiscal Court . ​Camping​ OT",
-     "total_like": true,
-     "url": "https://fw.ky.gov/Pages/Otter-Creek-Outdoor-Recreation-Area.aspx"
-    }
-   ],
+   "sizes": [],
    "t": "Recreation Area",
-   "ver": 1,
-   "verdict": "agree"
+   "ver": 2,
+   "verdict": "no size on page"
   },
   "US-9756": {
    "checked": "2026-10-28",
@@ -11216,7 +11856,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 403",
      "url": "https://fw.ky.gov/More/Documents/DeckerWMAmap_ALL.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -11239,7 +11879,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 1,
+   "ver": 2,
    "verdict": "agree"
   }
  },
