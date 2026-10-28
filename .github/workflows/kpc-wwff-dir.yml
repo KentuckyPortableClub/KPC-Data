@@ -26,7 +26,7 @@ jobs:
         with:
           path: kpcdata
       - name: Lay this repo's data over the checkout
-        run: touch /tmp/kpc-start; bash .github/scripts/kpc_overlay.sh kpcdata || true
+        run: touch /tmp/kpc-start; bash .github/scripts/kpc_overlay.sh kpcdata
       - name: Directories
         continue-on-error: true
         run: |

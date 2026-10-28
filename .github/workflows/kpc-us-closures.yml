@@ -26,6 +26,8 @@ jobs:
         uses: actions/checkout@v5
         with:
           path: kpcdata
+      - name: Lay KPC-Data's moved data over the KPC-Links checkout (Step B; stops red on empty input)
+        run: bash .github/scripts/kpc_overlay.sh kpcdata
       - name: Fresh data first
         run: |
           rsync -a kpcdata/data/ data/ 2>/dev/null || true

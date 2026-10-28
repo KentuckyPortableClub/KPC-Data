@@ -65,7 +65,7 @@ jobs:
         with:
           path: kpcdata
       - name: Lay KPC-Data's moved data over the KPC-Links checkout (Step B)
-        run: bash .github/scripts/kpc_overlay.sh kpcdata || true
+        run: bash .github/scripts/kpc_overlay.sh kpcdata
       - name: Tools + saved outlines + the last 2-fer files
         continue-on-error: true
         env:
@@ -132,7 +132,7 @@ jobs:
         with:
           path: kpcdata
       - name: Lay KPC-Data's moved data over the KPC-Links checkout (Step B)
-        run: bash .github/scripts/kpc_overlay.sh kpcdata || true
+        run: bash .github/scripts/kpc_overlay.sh kpcdata
       - name: Observations log (new possible overlaps)
         continue-on-error: true
         env:

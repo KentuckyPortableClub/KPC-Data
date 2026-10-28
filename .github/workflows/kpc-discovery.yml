@@ -29,7 +29,7 @@ jobs:
         with:
           path: kpcdata
       - name: Lay KPC-Data's moved data over the KPC-Links checkout (Step B)
-        run: bash .github/scripts/kpc_overlay.sh kpcdata || true
+        run: bash .github/scripts/kpc_overlay.sh kpcdata
       - name: Tools + the last lead list
         continue-on-error: true
         run: |

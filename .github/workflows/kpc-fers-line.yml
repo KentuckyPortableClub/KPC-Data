@@ -58,7 +58,7 @@ jobs:
         with:
           path: kpcdata
       - name: Lay KPC-Data's moved data over the KPC-Links checkout (Step B)
-        run: bash .github/scripts/kpc_overlay.sh kpcdata || true
+        run: bash .github/scripts/kpc_overlay.sh kpcdata
       - name: Tools + saved outlines + this area's last 2-fer files
         continue-on-error: true
         run: |
@@ -129,7 +129,7 @@ jobs:
         with:
           path: kpcdata
       - name: Lay KPC-Data's moved data over the KPC-Links checkout (Step B, A5)
-        run: bash .github/scripts/kpc_overlay.sh kpcdata || true
+        run: bash .github/scripts/kpc_overlay.sh kpcdata
       - name: Tools + the bundle (no bundle = a red run)
         run: |
           pip install -q numpy opencv-python-headless || true
@@ -178,7 +178,7 @@ jobs:
         with:
           path: kpcdata
       - name: Lay KPC-Data's moved data over the KPC-Links checkout (Step B)
-        run: bash .github/scripts/kpc_overlay.sh kpcdata || true
+        run: bash .github/scripts/kpc_overlay.sh kpcdata
       - name: The worker's bundle (no bundle = a red run)
         run: |
           mkdir -p data/fers
