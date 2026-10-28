@@ -11,6 +11,10 @@ on:
         description: 'Print the message instead of posting (saves nothing)'
         type: boolean
         default: true
+      look_back_days:
+        description: 'First run only: how many days back to read (default 7)'
+        required: false
+        default: '7'
 permissions:
   contents: write
 concurrency:
@@ -28,6 +32,7 @@ jobs:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
           KPC_DISCORD_STAFF_WEBHOOK: ${{ secrets.KPC_DISCORD_STAFF_WEBHOOK }}
           DRY_RUN: ${{ inputs.dry_run && '1' || '' }}
+          LOOK_BACK_DAYS: ${{ inputs.look_back_days }}
         run: python3 .github/scripts/kpc_youtube_comments.py || true
       - name: Save the memory (only when something was sent)
         continue-on-error: true

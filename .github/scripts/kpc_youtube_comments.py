@@ -11,7 +11,7 @@ import datetime as dt, json, os, sys, time, urllib.parse, urllib.request
 HANDLES = ['@ky.pota.campout', '@kpc-n4kpc']
 SEEN_F = 'data/status/youtube-seen.json'
 KEEP_DAYS = 60
-FIRST_DAYS = 7          # first run (empty memory): only the last week, so the staff room isn't flooded with old comments
+FIRST_DAYS = int(os.environ.get('LOOK_BACK_DAYS') or 7)          # first run (empty memory): only the last week, so the staff room isn't flooded with old comments
 API = 'https://www.googleapis.com/youtube/v3/'
 KEY = os.environ.get('YOUTUBE_API_KEY', '').strip()
 HOOK = os.environ.get('KPC_DISCORD_STAFF_WEBHOOK', '').strip()
@@ -106,7 +106,7 @@ def main():
             link = f"https://www.youtube.com/watch?v={c['vid']}&lc={c['id']}" if c['vid'] else 'https://www.youtube.com/'
             blocks.append(f"**{c['ch']}** · {titles.get(c['vid'], 'video')}\n"
                           f"{'↪️ reply' if c['reply'] else '💬'} **{c['who']}**: {t}\n<{link}>")
-        head = f"📺 **YouTube comments** ({len(new)} new{', last 7 days' if first else ''})"
+        head = f"📺 **YouTube comments** ({len(new)} new{f', last {FIRST_DAYS} days' if first else ''})"
         msgs, cur = [], head
         for b in blocks:
             if len(cur) + len(b) + 2 > 1900: msgs.append(cur); cur = ''
