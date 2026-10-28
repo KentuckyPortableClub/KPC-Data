@@ -50,7 +50,7 @@ MAX_REQ = 70          # polite requests per row
 MAX_POINTS = 60       # missing parks tested per layer
 MAX_LAYERS = 8        # polygon layers taken from one service url
 M = None
-STAT = {'rows': 0, 'probed': 0, 'skipped_fresh': 0, 'ready': 0, 'water_only': 0, 'live_only': 0, 'ask': 0, 'reject': 0, 'did_not_open': 0, 'tests_ok': 0, 'tests_miss': 0}
+STAT = {'rows': 0, 'probed': 0, 'skipped_fresh': 0, 'ready': 0, 'water_only': 0, 'retry': 0, 'live_only': 0, 'ask': 0, 'reject': 0, 'did_not_open': 0, 'tests_ok': 0, 'tests_miss': 0}
 
 # ---- words
 KINDW = re.compile(r'\b(state|national|provincial|park|parks|forest|wildlife|management|area|areas|recreation|recreational|conservation|nature|natural|preserve|reserve|refuge|historic|historical|site|game|land|lands|wma|sp|sra|sf|nwr|trail|the|of|and|at|county|city|regional|unit|access|public|fishing|lake|hunting|outdoor|memorial|monument|wilderness|road)\b')
@@ -455,7 +455,7 @@ def verdict(row, probe, terms_class, pub, over, cl):
     if pub == 'unsure': return 'ASK-THE-PUBLISHER', 'publisher unsure: no government word found, ask who publishes it'
     requested = (row.get('from') or '') in ('chat 8', 'chat 9')
     if (cl or {}).get('n', 0) >= 1 or requested:
-        return 'READY', f"official, {terms_class.lower()} terms, named polygons" + (f", closes {cl['n']} missing park(s)" if (cl or {}).get('n') else ', requested by ' + row.get('from'))
+        return 'READY', f"official, {terms_class.lower()} terms, named polygons" + (f"; closes {cl['n']} (name + pin {cl.get('by_name', 0)}, pin only {cl.get('pin_only', 0)}): a pin inside a designation polygon is not a sure match" if (cl or {}).get('n') else '; requested by ' + row.get('from'))
     if cl and cl.get('tested', 0) == 0: return 'ASK-THE-PUBLISHER', 'official and usable, but no missing parks were tested (none listed for the area or no time)'
     return 'REJECT', 'official and usable, but it closes none of the area\'s missing parks (nothing to gain yet)'
 
@@ -464,8 +464,8 @@ def test_result(row, v, over):
     e = row.get('expect')
     if not e: return ''
     got = v
-    alts = [a.strip().upper() for a in re.split(r'\s*(?:-or-|\bor\b|/)\s*', e) if a.strip()]
-    ok = any(got == a or (a == 'ALREADY READ' and over.startswith('already read')) or (a == 'ALREADY-READ' and over.startswith('already read')) for a in alts)
+    alts = [re.sub(r'\s*\(.*?\)', '', a).strip().upper() for a in re.split(r'\s*(?:-or-|\bor\b|/)\s*', e) if a.strip()]
+    ok = any(got == a or (a in ('ALREADY READ', 'ALREADY-READ') and over.startswith('already read')) or (a in ('DID-NOT-OPEN', 'DID NOT OPEN', 'RETRY') and got == 'RETRY') for a in alts)
     return 'ok' if ok else f'MISS {e} vs {got}'
 
 
@@ -574,7 +574,8 @@ def probe_row(row, known, hosts, trusted, govwords, miss_cache):
 
 
 # ---- the review page
-ORDER = ['READY', 'WATER-ONLY', 'LIVE-ONLY', 'ASK-THE-PUBLISHER', 'REJECT']
+ORDER = ['READY', 'WATER-ONLY', 'LIVE-ONLY', 'ASK-THE-PUBLISHER', 'RETRY', 'REJECT']
+RETRYABLE = re.compile(r'^(rest|budget|out of time|not json|robots|403|429|5\d\d|err)', re.I)
 
 
 def write_review(rows, state):
@@ -582,7 +583,7 @@ def write_review(rows, state):
     L = [f'# Layer intake review ({TODAY})', '',
          'Every lead in data/intake/queue.json, probed politely (metadata and counts only, never geometry). Chat 9 approves a READY row by setting '
          '`approved: true` in ready.json; the nightly key rebuild reads approved rows later. LIVE-ONLY = read live, never stored. ASK = the publisher must '
-         'be asked (nothing stated, or hosted for an agency). WATER-ONLY = lakes / reservoirs: for the 2-fer owner step only, never a park outline. Terms are read on the publisher\'s OWN item page first (the Nevada lesson).', '',
+         'be asked (nothing stated, or hosted for an agency). WATER-ONLY = lakes / reservoirs: for the 2-fer owner step only, never a park outline. RETRY = the probe did not open (error, rest, robots, 403): probed again next run, three failures → chat 9 checks the url. Terms are read on the publisher\'s OWN item page first (the Nevada lesson).', '',
          '| verdict | rows |', '|---|---|'] + [f'| {v} | {counts[v]} |' for v in ORDER] + ['']
     for v in ORDER:
         sub = [r for r in rows if r.get('verdict') == v]
@@ -706,22 +707,37 @@ def main():
         except Exception as e:  # noqa: BLE001
             results = [{'url': u, 'area': row.get('area'), 'title': row.get('title'), 'from': row.get('from'), 'probed': TODAY, 'sig': sig(row), 'approved': None, 'probe': {'opened': False, 'status': 'bot error ' + str(e)[:120]},
                         'terms': {}, 'publisher_test': ['unsure', ''], 'overlap': '', 'closes': {}, 'verdict': 'REJECT', 'why': 'the bot hit an error on this row (will retry)', 'retry': True, 'test': test_result(row, 'REJECT', '') if row.get('expect') else ''}]
+        fails = int((state['rows'].get(u) or {}).get('fails') or 0)
         for r in results:
+            r['queue_url'] = u
+            pr = r.get('probe') or {}; st = str(pr.get('status') or '')
+            if not pr.get('opened') and (RETRYABLE.search(st) or not st or st == 'item page only' and not pr.get('opened')):
+                # RULE (chat 9, Oct 28): a probe that did not open (error, rest, robots, 403) is never a REJECT: it is RETRY, probed again
+                # next run; three failed runs → the url goes to chat 9.
+                r['retry'] = fails + 1 < 3
+                r['verdict'] = 'RETRY'
+                r['why'] = (f'did not open 3 times ({st}): chat 9 checks the url' if fails + 1 >= 3 else f'did not open ({st}): probed again next run (failed {fails + 1} of 3)') + (f"; {r['searched']}" if r.get('searched') else '')
+                r['test'] = test_result(row, 'RETRY', r.get('overlap') or '')
             keep = old.get(r['url']) or {}
             if keep.get('approved') is True and r.get('verdict') == keep.get('verdict'): r['approved'] = True   # a re-probe keeps chat 9's yes while the verdict holds
             if keep.get('approved_note'): r['approved_note'] = keep['approved_note']
             old[r['url']] = r
             STAT['probed'] += 1
             if not (r.get('probe') or {}).get('opened'): STAT['did_not_open'] += 1
-            k = {'READY': 'ready', 'WATER-ONLY': 'water_only', 'LIVE-ONLY': 'live_only', 'ASK-THE-PUBLISHER': 'ask', 'REJECT': 'reject'}.get(r.get('verdict'))
+            k = {'READY': 'ready', 'WATER-ONLY': 'water_only', 'LIVE-ONLY': 'live_only', 'RETRY': 'retry', 'ASK-THE-PUBLISHER': 'ask', 'REJECT': 'reject'}.get(r.get('verdict'))
             if k: STAT[k] += 1
             if r.get('test') == 'ok': STAT['tests_ok'] += 1
             elif r.get('test'): STAT['tests_miss'] += 1
-        state['rows'][u] = {'probed': TODAY, 'sig': sig(row), 'verdicts': [r.get('verdict') for r in results], 'retry': any(r.get('retry') for r in results)}
+        state['rows'][u] = {'probed': TODAY, 'sig': sig(row), 'verdicts': [r.get('verdict') for r in results], 'retry': any(r.get('retry') for r in results),
+                            'fails': (fails + 1) if any(r.get('verdict') == 'RETRY' for r in results) else 0}
         done += 1
         if done % 5 == 0:
             ready['rows'] = list(old.values()); save(OUT / 'ready.json', ready); state['hosts'] = M.resting(); save(OUT / 'state.json', state)
-    ready['rows'] = list(old.values()); ready['updated'] = TODAY
+    qurls = {strip_query(r.get('url')) for r in queue if r.get('url')}
+    def still_queued(r):   # a row whose queue url was removed or changed (the first SC url) leaves ready.json
+        qu = r.get('queue_url') or r.get('url')
+        return qu in qurls or any(r.get('url', '').startswith(q.rstrip('/') + '/') for q in qurls)
+    ready['rows'] = [r for r in old.values() if still_queued(r)]; ready['updated'] = TODAY
     save(OUT / 'ready.json', ready)
     counts = write_review(ready['rows'], state)
     state['hosts'] = M.resting(); state['last_run'] = TODAY; state['stat'] = STAT; state['manners'] = M.stat

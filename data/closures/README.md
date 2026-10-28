@@ -1,0 +1,26 @@
+# data/closures: the CLOSURES SUPER-BOT (RULE SHEET D)
+
+One bot (`.github/scripts/kpc_closures_bot.py`, workflow `kpc-closures.yml`) reads every official closures / alerts source we know and writes one file per state or province here. **Nothing in this folder is on a card yet.** Kentucky's own reader (KPC-Links `kpc_park_alerts.py`, the `pa-` / `hc-` items) wins while both run; this bot is compared quietly until chat 11 grades the side-by-side and Brandon says GO (ruling CL-5). After GO, chat 2's merge takes these items into `kpc-conditions.json`; the items already carry the `uc-` field names the cards read (`kind`, `call`, `details`, `expires`, `link`, `seen`, `src`).
+
+## Files
+- `US-XX.json` / `CA-XX.json`: `{area, read, sources: {id: {agency, url, kind, ok, n, n_prev, unmatched, last_ok, fails}}, items: [...], banners: [...], unreadable: [...], counts}`.
+  - An **item**: `id` (`sc-<source>-<slug>-<ref>`), `ref`, `class` (`whole` / `part` / `hunt` / `seasonal` / `note`), `note_kind` when class is note (`vehicles` / `facility` / `permit` / `caution` / `land` / `season` / `rules`), `what` (the named road / trail / campground / unit), `details` (**the agency's own sentence in quotes, never our words**), `from`, `to`, `updated` (the agency's own date), `stale` (`may be out of date…`, `may be over…`, `dates unclear…`, `notice taken down…`), `link`, `link2` (a second source for the same closure), `seen`, `confirmed` (how many reads in a row saw it), `lang` (`en` / `fr`), `details_fr` (Quebec / New Brunswick), `as_of` (emergency items: date + time), `upcoming` + `show_from` (a future start, shown from 14 days before), `label` (the rule-5 card line).
+  - **Banners** (G7): one notice closing 8 or more parks in a state = one banner with the park list, plus the park items.
+  - **unreadable**: look-alike sentences the reader refused (a negation, a reopening, no object we can name) and PDFs that could not be read, for the check-up.
+- `review.md`: per area the counts per class, the unmatched notices (two parks or none: for chat 8), the sources that failed, and the SIDE-BY-SIDE: for Kentucky this bot's items vs Kentucky's own reader (matched / only here / only there); for the 10 feed states vs `data/alerts/us-parks.json`.
+- `state.json`: what was read when, resting hosts (Manners), the Kentucky test, and **`proven`**: a person (chat 11 / Brandon) sets `"proven": "<date>"` after the side-by-side passes; only then does the 6-hour schedule run.
+- `sources.json`: the hand list of pages and feeds (area, agency, url, kind `feed` / `page` / `pdf`, how). Chat 8 adds rows here. The 49 pages of KPC-Links `data/closure-pages.json` are read too, without copying them.
+
+## The rules it follows (short form; the full sheets are in KPC-Links `.claude/notes/mapping.md` and `website.md`)
+1. A sentence is a **closure** only with a closing word, an object we can name and no negation / reopening word (D-R1). `details` is always the whole sentence, never cut (D-R2).
+2. Classes: **whole** (the park itself), **part** (a named road, trail, campground, ramp, unit…), **hunt** (closed to all but drawn / quota hunters on dates; CL-2), **seasonal** (published with dates every year; this year's dates only when the page says 'annually' or is under 13 months old, else 'may be out of date', CL-4), **note** (vehicles-only GA2, facility closed G5, permit needed, caution, 'may not be public land now' GA3, hunting season, camping / fire rule CL-3). Standing hours are park info, not a closure.
+3. A notice is tied to **one** park by name (the US answer key's name rules + the agencies' short forms); two parks or none = `unmatched`. A heading that names two places ('Cybel WMA / Marben PFA') ties to the place the sentence names.
+4. Dates from the sentence; no year = the next occurrence only when the page's own date is within 60 days, else 'dates unclear' (D-R3). Stale clock: 90 days open-ended, 30 for emergencies, a year for named long-term work (G3); an 'Updated' date over a year old = 'may be out of date' (GA1).
+5. A source that fails keeps its last items. An item leaves only after 2 good reads without it, then says 'notice taken down: check the agency page' for a week (A5); dated items keep to their end date (D-R5). The same closure from two sources is one item with both links (A6). Two agencies for one park = both items (G11).
+6. Manners: robots.txt obeyed (websites, no exemption), 1 request / 2 s per host, three strikes = a day's rest, PDFs by range (CL-7; scanned PDFs = 'not readable').
+
+## Running it
+- Actions → 'KPC closures super-bot' → Run workflow: `areas` (default `US-KY`), `chunks` (max 5), `minutes`, `chain`, `test` (the Kentucky gate: PASS when 80% of Kentucky's own reader's current items are found here on the same park; printed as `TEST=PASS|FAIL` and written to `state.json['test']`).
+- Locally without web: `python3 .github/scripts/kpc_closures_bot.py --selftest` (30 sentence + matcher tests) and
+  `LINKS=/path/to/KPC-Links OUT=/tmp/closures-test MINUTES=1 AREAS=US-KY TEST=1 OFFLINE=1 python3 .github/scripts/kpc_closures_bot.py`.
+- Every area file is written under `data/closures/`; `kpc_push_data.sh` saves `data/closures` and `data/status` once per chunk.

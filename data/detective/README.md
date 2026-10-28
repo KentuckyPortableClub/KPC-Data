@@ -15,8 +15,16 @@ such as Kentucky's KHLCF annual reports; `sources.json` `reports` rows are the i
 4. PAD-US at the pin (owner / manager / acres) → 5. county PVA / parcel sites (`sources.json` `parcels` rows) ONLY where robots.txt and
 the page's own terms allow a bot (never accept terms, never log in; a terms or sign-in wall = "blocked by terms") → 6. the agency's news
 releases (`data/truth/news-sources.json`).
-Answer = `{fact, line (the source's own sentence, ≤ 240 chars), url, date, step}` or "not found" + what was tried, in `answers.json` +
-`answers.md` (answered first, then not found). Unanswered → chats 8 / 11 → Brandon. A question is answered once per id (ask again with a
+V2 rules (HQ, Oct 28, after the first Kentucky run answered the Boiling Springs questions with the Rush Island polygon): a step-1
+polygon is CONTEXT, never the answer, for tract / acreage / owner / who runs it / handover / access point questions (unless its name
+holds the asked tract name, or the question is 'outline'); the hunt goes on through steps 2-6 and EVERY find is kept (the chain), so a
+person sees context + answer. ANSWERED only when a find's line carries the question's own fact words (the tract name, acres, owner
+words…); else PARTLY (context only) or NOT FOUND, each with what was tried. An 'acreage' question on a park with several units lists
+every polygon with the park's name under or within 2 km of the pin, their acres and the sum, plus the agency page's size sentence:
+"our outline holds X ac in N pieces vs the agency's Y". Report index pages (`sources.json` `reports`) are followed into their PDFs whose
+link text has a year ≥ 2015 or 'annual report' (≤ 6, first 400 KB each).
+Answer = `{fact, line (the source's own sentence, ≤ 240 chars), url, date, step}` + the chain, in `answers.json` + `answers.md`
+(ANSWERED, then PARTLY, then NOT FOUND). A new `VER` in the script asks every question again. Unanswered → chats 8 / 11 → Brandon. A question is answered once per id (ask again with a
 new id); a question whose hosts did not answer is retried next run.
 Test case: `US-12752` Green River State Natural Area (Boiling Springs unit): the KHLCF "Timber Lane … 115.75" tract line and the OKNP page;
 the Hart County PVA parcel may come back "blocked by terms" (that is fine).

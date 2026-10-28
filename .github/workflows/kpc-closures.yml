@@ -1,0 +1,97 @@
+name: KPC closures super-bot
+# Oct 28 2026 (Fable, chat 10 'bot workshop'): RULE SHEET D, ruled by Brandon (CL-1..CL-8). ONE bot reads every official closures
+# source we know (state feeds + pages, NPS alerts API, Forest Service and FWS pages, Parks Canada bulletins, Kentucky's own feeds)
+# and writes data/closures/<area>.json + review.md + state.json. NOTHING here reaches a card: chat 2's merge into kpc-conditions.json
+# waits for Brandon's GO (CL-5: Kentucky's own reader wins while both run; this bot is compared quietly until proven).
+# One job = up to 5 chunks of MINUTES each, one save per chunk; when areas remain and 'chain' allows, the job starts the next one.
+# Never fails except a failed save. Manners: kpc_manners.py (robots obeyed, 1 request / 2 s per host, three strikes = a day's rest).
+# EVERY 6 HOURS: only once data/closures/state.json says 'proven' (set by a person after the Kentucky side-by-side is graded).
+on:
+  workflow_dispatch:
+    inputs:
+      areas:
+        description: 'Areas (e.g. "US-KY US-GA"); blank = every area not read in the last 5 hours, Kentucky first'
+        default: 'US-KY'
+      chunks:
+        description: 'How many chunks this job runs (max 5), one save each'
+        default: '2'
+      minutes:
+        description: 'Minutes per chunk'
+        default: '55'
+      chain:
+        description: 'How many MORE jobs may follow this one by themselves when areas remain (0 = none)'
+        default: '6'
+      test:
+        description: 'yes = the Kentucky gate (80 percent of Kentucky own reader items found here on the same park)'
+        default: 'yes'
+  schedule:
+    - cron: '37 */6 * * *'
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: kpc-closures
+  cancel-in-progress: false
+jobs:
+  closures:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - name: Answer keys, park lists and Kentucky files from KPC-Links (read-only)
+        uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+      - name: Scheduled runs only once proven
+        id: gate
+        continue-on-error: true
+        run: |
+          cd kpcdata
+          if [ "${{ github.event_name }}" = schedule ]; then
+            P=$(python3 -c "import json;print((json.load(open('data/closures/state.json')).get('proven') or ''))" 2>/dev/null || echo '')
+            if [ -z "$P" ]; then echo "closures super-bot not proven yet: nothing to do"; echo "skip=1" >> "$GITHUB_OUTPUT"; exit 0; fi
+            echo "AREAS=" >> "$GITHUB_ENV"; echo "CHUNKS=5" >> "$GITHUB_ENV"; echo "TEST=0" >> "$GITHUB_ENV"
+          else
+            echo "AREAS=${{ inputs.areas }}" >> "$GITHUB_ENV"
+            C="${{ inputs.chunks }}"; [ -z "$C" ] && C=2; [ "$C" -gt 5 ] && C=5; echo "CHUNKS=$C" >> "$GITHUB_ENV"
+            echo "TEST=${{ inputs.test == 'yes' && '1' || '0' }}" >> "$GITHUB_ENV"
+          fi
+      - name: Tools
+        if: steps.gate.outputs.skip != '1'
+        continue-on-error: true
+        run: pip install -q --break-system-packages pypdf || pip install -q pypdf || true
+      - name: Read the sources chunk by chunk, one save per chunk
+        if: steps.gate.outputs.skip != '1'
+        continue-on-error: true
+        env:
+          MINUTES: ${{ inputs.minutes || 55 }}
+          LINKS: ../links
+          NPS_API_KEY: ${{ secrets.NPS_API_KEY }}
+          RIDB_API_KEY: ${{ secrets.RIDB_API_KEY }}
+        run: |
+          cd kpcdata
+          python3 .github/scripts/kpc_closures_bot.py --selftest | tail -1 || true
+          LEFT=1
+          for i in $(seq 1 "$CHUNKS"); do
+            echo "::group::chunk $i of $CHUNKS"
+            python3 .github/scripts/kpc_closures_bot.py | tee /tmp/closures.log || true
+            echo "::endgroup::"
+            L=$(grep -o '^LEFT=[0-9]*' /tmp/closures.log | tail -1 | cut -d= -f2); [ -n "$L" ] && LEFT=$L
+            T=$(grep -o '^TEST=[A-Z]*' /tmp/closures.log | tail -1); [ -n "$T" ] && echo "$T" >> "$GITHUB_ENV"
+            bash ../links/.github/scripts/kpc_push_data.sh . "closures super-bot: chunk $i" data/closures data/status || true
+            [ "$LEFT" = 0 ] && break
+          done
+          echo "LEFT=$LEFT" >> "$GITHUB_ENV"
+      - name: Areas remain, so the next job starts itself
+        if: ${{ github.event_name != 'schedule' && env.LEFT != '0' && env.LEFT != '' && inputs.chain != '0' && inputs.chain != '' }}
+        continue-on-error: true
+        run: |
+          C=$(( ${{ inputs.chain }} - 1 ))
+          echo "::notice title=Closures super-bot::$LEFT areas left: the next job starts itself (then $C more may follow)"
+          gh workflow run kpc-closures.yml -R ${{ github.repository }} -f areas="${{ inputs.areas }}" -f chunks=5 -f minutes="${{ inputs.minutes || 55 }}" -f chain=$C -f test=no || true

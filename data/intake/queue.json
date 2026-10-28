@@ -108,8 +108,8 @@
    "licence": "",
    "from": "chat 9",
    "added": "2026-10-28",
-   "note": "test row (h): a made-up hobby layer on a non-government account; the bot will mark it 'did not open' and REJECT",
-   "expect": "REJECT"
+   "note": "test row (h): a made-up hobby layer on a non-government account; the bot marks it RETRY (did not open) and after three runs sends the url to chat 9; a real hobby layer that opens is REJECT (not official)",
+   "expect": "REJECT or did-not-open"
   },
   {
    "url": "https://prostor4.gov.si/ows2-ins/ps/wfs?service=wfs&version=2.0.0&request=GetCapabilities",
