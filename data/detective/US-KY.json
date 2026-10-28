@@ -73,7 +73,7 @@
     "hub search",
     "PAD-US point"
    ],
-   "ver": 2,
+   "ver": 3,
    "verdict": "padus",
    "why": "PAD-US record matches the name under the pin (fee / designation): chat 2 checks the manager and type"
   },
@@ -124,7 +124,7 @@
     "hub search",
     "PAD-US point"
    ],
-   "ver": 2,
+   "ver": 3,
    "verdict": "mismatch",
    "why": "a polygon under the pin shares the park name: likely a name mismatch in our matcher"
   },
@@ -149,11 +149,11 @@
     "hub search",
     "PAD-US point"
    ],
-   "ver": 2,
+   "ver": 3,
    "verdict": "nothing",
    "why": "no official layer found; tried: read-layer Kentucky State Parks boundaries (kygisserver), read-layer Kentucky public hunting areas / WMAs (kygisserver), read-layer Kentucky state nature preserves (kygisserver), read-layer Kentucky natural areas (kygisserver), agency server kygisserver.ky.gov, hub search, PAD-US point"
   }
  },
  "read": "2026-10-28",
- "ver": 2
+ "ver": 3
 }
