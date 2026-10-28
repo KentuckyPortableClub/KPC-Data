@@ -1,0 +1,45 @@
+name: TEMP Kentucky outline probe (delete after)
+# Oct 28 (HQ): LBL Forest Service land, Mammoth Cave NPS-owned land, Green River SNA's Boiling Springs unit. Never fails.
+on: workflow_dispatch
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: probe
+        continue-on-error: true
+        shell: python3 {0}
+        run: |
+          import json, math, urllib.request, urllib.parse
+          UA = {'User-Agent': 'KPC park-map bot (https://kentuckyportableclub.github.io/KPC-Links/)'}
+          def note(t, m): print(f'::notice title={t}::{m}'[:1000], flush=True)
+          def q(u, p):
+              try: return json.loads(urllib.request.urlopen(urllib.request.Request(u + '?' + urllib.parse.urlencode(p), headers=UA), timeout=90).read())
+              except Exception as e: return {'ERR': str(e)[:120]}
+          def acres(rings):
+              t = 0
+              for r in rings:
+                  la0 = sum(p[1] for p in r) / len(r); kx = 111320 * math.cos(math.radians(la0)); ky = 110570
+                  t += sum(r[i - 1][0] * kx * r[i][1] * ky - r[i][0] * kx * r[i - 1][1] * ky for i in range(len(r))) / 2
+              return abs(t) / 4046.86
+          PAD = 'https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query'
+          FS = 'https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query'
+          for nm, pt in (('LBL KY middle', '-88.06,36.86'), ('LBL KY north', '-88.10,36.97')):
+              j = q(FS, {'geometry': pt, 'geometryType': 'esriGeometryPoint', 'inSR': 4326, 'spatialRel': 'esriSpatialRelIntersects', 'outFields': '*', 'returnGeometry': 'false', 'f': 'json'})
+              note('FS ownership ' + nm, str(j.get('ERR') or [f.get('attributes') for f in j.get('features', [])])[:600])
+              j = q(PAD, {'geometry': pt, 'geometryType': 'esriGeometryPoint', 'inSR': 4326, 'spatialRel': 'esriSpatialRelIntersects', 'outFields': 'Unit_Nm,Category,Own_Name,Mang_Name,GIS_Acres', 'returnGeometry': 'false', 'f': 'json'})
+              note('PAD-US ' + nm, str(j.get('ERR') or [f.get('attributes') for f in j.get('features', [])])[:600])
+          j = q(PAD, {'where': "State_Nm='KY' AND Category='Fee' AND Mang_Name='NPS' AND Unit_Nm LIKE 'Mammoth Cave%'", 'outFields': 'Unit_Nm,GIS_Acres,Own_Name', 'returnGeometry': 'false', 'f': 'json'})
+          a = [f['attributes'] for f in j.get('features', [])]
+          note('Mammoth Cave NPS fee in PAD-US', f"{len(a)} records, {round(sum((x.get('GIS_Acres') or 0) for x in a))} acres; {str(a[:3])[:300]}" if a else str(j)[:300])
+          j = q(PAD, {'where': "State_Nm='KY' AND Category='Fee' AND Unit_Nm LIKE 'Land Between%'", 'outFields': 'Unit_Nm,GIS_Acres,Own_Name,Mang_Name', 'returnGeometry': 'false', 'f': 'json'})
+          a = [f['attributes'] for f in j.get('features', [])]
+          note('LBL fee in PAD-US (KY)', f"{len(a)} records, {round(sum((x.get('GIS_Acres') or 0) for x in a))} acres; {str(a[:3])[:300]}" if a else str(j)[:300])
+          SNA = 'https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Natural_Areas_WGS84WM/MapServer/0/query'
+          j = q(SNA, {'where': "MANAME LIKE '%Green River%'", 'outFields': '*', 'returnGeometry': 'true', 'outSR': 4326, 'f': 'json'})
+          note('OKNP natural areas: Green River', str(j.get('ERR') or [({k: v for k, v in f['attributes'].items() if v not in (None, '') and 'shape' not in k.lower()}, round(acres(f['geometry']['rings']))) for f in j.get('features', [])])[:900])
+          j = q(SNA, {'where': "MANAME LIKE '%Boiling%' OR MANAME LIKE '%Rush Island%' OR MANAME LIKE '%Davis Bend%'", 'outFields': '*', 'returnGeometry': 'false', 'f': 'json'})
+          note('OKNP natural areas: units', str(j.get('ERR') or [{k: v for k, v in f['attributes'].items() if v not in (None, '') and 'shape' not in k.lower()} for f in j.get('features', [])])[:900])
+          NP = 'https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0/query'
+          j = q(NP, {'where': "MANAME LIKE '%Boiling%' OR MANAME LIKE '%Green River%'", 'outFields': '*', 'returnGeometry': 'false', 'f': 'json'})
+          note('OKNP nature preserves: Green River / Boiling', str(j.get('ERR') or [{k: v for k, v in f['attributes'].items() if v not in (None, '') and 'shape' not in k.lower()} for f in j.get('features', [])])[:900])
