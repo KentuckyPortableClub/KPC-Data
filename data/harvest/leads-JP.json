@@ -4,19 +4,40 @@
  "date": "2026-10-28",
  "status": "done",
  "steps_done": [
-  "orgs",
+  "known",
   "servers",
   "wfs",
+  "orgs",
   "catalogs",
+  "downloads",
   "search",
   "eea"
  ],
  "bands": {
   "A": 0,
-  "B": 0,
+  "B": 1,
   "C": 0
  },
  "known_good_found": [],
  "known_good_missed": [],
- "leads": {}
+ "leads": {
+  "dl:https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-A10-v3_1.html": {
+   "url": "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-A10-v3_1.html",
+   "cc": "JP",
+   "title": "MLIT National Land Numerical Information A10: natural park areas",
+   "publisher": "Ministry of Land, Infrastructure, Transport and Tourism (MLIT)",
+   "catalog": "survey (chat 8)",
+   "licence": "see the page (MLIT terms)",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "layers": [],
+   "grade": 3,
+   "band": "B",
+   "note": "an official file download, not a service: needs a loader (chat 8 decides)"
+  }
+ }
 }

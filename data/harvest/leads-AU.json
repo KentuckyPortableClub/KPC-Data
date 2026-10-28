@@ -2,25 +2,523 @@
  "about": "World harvester leads for Australia (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "AU",
  "date": "2026-10-28",
- "status": "paused (out of time, will carry on)",
+ "status": "done",
  "steps_done": [
-  "orgs"
+  "orgs",
+  "known",
+  "servers",
+  "wfs",
+  "catalogs",
+  "downloads",
+  "search",
+  "eea"
  ],
  "bands": {
-  "A": 38,
-  "B": 9,
+  "A": 46,
+  "B": 11,
   "C": 0
  },
  "known_good_found": [
+  "https://opendata.maps.vic.gov.au/geoserver/wfs",
   "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Property_and_Planning/MapServer/15",
+  "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/ArcGIS/rest/services/Protected_areas/FeatureServer",
   "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer/26"
  ],
  "known_good_missed": [
-  "https://gisext.qfes.qld.gov.au/arcgis/rest/services/Hosted/Protected_areas/FeatureServer/0",
-  "https://opendata.maps.vic.gov.au/geoserver/wfs",
-  "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/ArcGIS/rest/services/Protected_areas/FeatureServer"
+  "https://gisext.qfes.qld.gov.au/arcgis/rest/services/Hosted/Protected_areas/FeatureServer/0"
  ],
  "leads": {
+  "https://services9.arcgis.com/epcawupcswtfb9jl/arcgis/rest/services/niaa_administrative_boundaries_2020": {
+   "url": "https://services9.arcgis.com/EPcAWuPcSWtfB9jL/arcgis/rest/services/NIAA_Administrative_Boundaries_2020/FeatureServer",
+   "cc": "AU",
+   "title": "NIAA_Administrative_Boundaries_2020",
+   "publisher": "National Indigenous Australians Agency",
+   "catalog": "ArcGIS Online search",
+   "licence": "Licence:     Creative Commons - Attribution-NonCommercial 4.0 International     Access rights: Open   Security classification: OFFICIAL&nbsp;",
+   "date": "2026-10-21",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "NIAA Subregions 2024 Names (topo)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Region",
+      "Region_Name",
+      "Subregion_Id",
+      "Subregion_Name",
+      "State",
+      "State_Name",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 44,
+     "sample": [
+      "Arnhem Land & Groote Eylandt",
+      "Arnhem Land & Groote Eylandt",
+      "Central Australia"
+     ],
+     "name_field": "Region_Name"
+    },
+    {
+     "id": 1,
+     "name": "NIAA Subregions 2024 Names (satellite)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Region",
+      "Region_Name",
+      "Subregion_Id",
+      "Subregion_Name",
+      "State",
+      "State_Name",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 44,
+     "sample": [
+      "Arnhem Land & Groote Eylandt",
+      "Arnhem Land & Groote Eylandt",
+      "Central Australia"
+     ],
+     "name_field": "Region_Name"
+    },
+    {
+     "id": 2,
+     "name": "NIAA Subregions 2024",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Region",
+      "Region_Name",
+      "Subregion_Id",
+      "Subregion_Name",
+      "State",
+      "State_Name",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 44,
+     "sample": [
+      "Arnhem Land & Groote Eylandt",
+      "Arnhem Land & Groote Eylandt",
+      "Central Australia"
+     ],
+     "name_field": "Region_Name"
+    },
+    {
+     "id": 3,
+     "name": "NIAA Regions 2026 Names (satellite)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Region_Name",
+      "NIAA_Region_Group",
+      "State",
+      "State_Name",
+      "Area_Albers",
+      "Region_Code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 11,
+     "sample": [
+      "Arnhem Land & Groote Eylandt",
+      "Central Australia",
+      "Eastern New South Wales"
+     ],
+     "name_field": "Region_Name"
+    },
+    {
+     "id": 4,
+     "name": "NIAA Regions 2026 Names (topo)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Region_Name",
+      "NIAA_Region_Group",
+      "State",
+      "State_Name",
+      "Area_Albers",
+      "Region_Code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 11,
+     "sample": [
+      "Arnhem Land & Groote Eylandt",
+      "Central Australia",
+      "Eastern New South Wales"
+     ],
+     "name_field": "Region_Name"
+    },
+    {
+     "id": 5,
+     "name": "NIAA Regions 2026",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Region_Name",
+      "NIAA_Region_Group",
+      "State",
+      "State_Name",
+      "Area_Albers",
+      "Region_Code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 11,
+     "sample": [
+      "Arnhem Land & Groote Eylandt",
+      "Central Australia",
+      "Eastern New South Wales"
+     ],
+     "name_field": "Region_Name"
+    },
+    {
+     "id": 6,
+     "name": "NIAA Regions 2026 (Official Template)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Region_Name",
+      "NIAA_Region_Group",
+      "State",
+      "State_Name",
+      "Area_Albers",
+      "Region_Code",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 11,
+     "sample": [
+      "Arnhem Land & Groote Eylandt",
+      "Central Australia",
+      "Eastern New South Wales"
+     ],
+     "name_field": "Region_Name"
+    }
+   ],
+   "note": "NIAA Administration Boundaries",
+   "grade": 6,
+   "band": "A"
+  },
+  "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/australian_marine_parks": {
+   "url": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Australian_Marine_Parks/MapServer",
+   "cc": "AU",
+   "title": "ogc_services/Australian_Marine_Parks",
+   "publisher": "gis.environment.gov.au",
+   "catalog": "ArcGIS Online search",
+   "licence": "This dataset is released under Creative Commons by Attribution 4.0 International (CC BY 4.0).",
+   "date": "2025-02-20",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Australian Marine Parks",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NETNAME",
+      "RESNAME",
+      "ZONENAME",
+      "ZONEIUCN",
+      "POLYGONID",
+      "NATLEGEND",
+      "AREA_KM2",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 216,
+     "sample": [
+      "South-west",
+      "South-west",
+      "Temperate East"
+     ],
+     "name_field": "NETNAME"
+    },
+    {
+     "id": 0,
+     "name": "Australian Marine Parks",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NETNAME",
+      "RESNAME",
+      "ZONENAME",
+      "ZONEIUCN",
+      "POLYGONID",
+      "NATLEGEND",
+      "AREA_KM2",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 216,
+     "sample": [
+      "South-west",
+      "South-west",
+      "Temperate East"
+     ],
+     "name_field": "NETNAME"
+    }
+   ],
+   "note": "Australian Marine Parks",
+   "grade": 6,
+   "band": "A"
+  },
+  "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/australian_marine_parks_outer_boundary": {
+   "url": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Australian_Marine_Parks_Outer_Boundary/MapServer/0",
+   "cc": "AU",
+   "title": "ogc_services/Australian_Marine_Parks_Outer_Boundary/0",
+   "publisher": "gis.environment.gov.au",
+   "catalog": "ArcGIS Online search",
+   "licence": "Licence:          CC - Attribution (CC BY 4.0)    This data has been licensed under the Creative Commons Attribution 4.0 International Licence. More information can be found at:  https://creativecommo",
+   "date": "2025-05-21",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Australian_Marine_Parks_Outer_Boundary",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NETNAME",
+      "RESNAME",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 61,
+     "sample": [
+      "South-east",
+      "North",
+      "North-west"
+     ],
+     "name_field": "NETNAME"
+    }
+   ],
+   "note": "Australian Marine Parks - outer boundaries",
+   "grade": 6,
+   "band": "A"
+  },
+  "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/indigenous_protected_areas": {
+   "url": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Indigenous_Protected_Areas/FeatureServer/0",
+   "cc": "AU",
+   "title": "ogc_services/Indigenous_Protected_Areas/0",
+   "publisher": "gis.environment.gov.au",
+   "catalog": "ArcGIS Online search",
+   "licence": "Licence:      Attribution 3.0 Australia (CC BY 3.0 AU)  This data has been licensed under the Creative Commons Attribution 3.0 Australia Licence. More information can be found at:  https://creativecom",
+   "date": "2026-09-29",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Indigenous Protected Areas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "NAME",
+      "TYPE",
+      "STATE",
+      "ENVIRON",
+      "AUTHORITY",
+      "GAZ_DATE",
+      "COMMENTS",
+      "OBJECTID",
+      "GIS_AREA",
+      "Shape__Area",
+      "Shape__Length",
+      "STATUS",
+      "IUCN_CODE",
+      "LATEST_GAZ",
+      "SOURCE",
+      "CP_APPROVED",
+      "LONGITUDE",
+      "LATITUDE",
+      "IPA_ID_SORT",
+      "IPA_ID"
+     ],
+     "records": 120,
+     "sample": [
+      "Angkum",
+      "Anindilyakwa",
+      "Anindilyakwa"
+     ],
+     "name_field": "NAME"
+    }
+   ],
+   "note": "Indigenous Protected Areas - Dedicated",
+   "grade": 6,
+   "band": "A"
+  },
+  "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/ramsar_wetlands": {
+   "url": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Ramsar_Wetlands/FeatureServer",
+   "cc": "AU",
+   "title": "ogc_services/Ramsar_Wetlands",
+   "publisher": "gis.environment.gov.au",
+   "catalog": "ArcGIS Online search",
+   "licence": "﻿ License:   Creative Commons Attribution 4.0    Access rights:  Open   Security classification:  OFFICIAL",
+   "date": "2026-07-10",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Ramsar_Wetlands",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "REFCODE",
+      "STATE",
+      "AREA_HA",
+      "TOTAL_SITE_AREA_HA",
+      "DESIGNATION_DATE",
+      "SOURCE",
+      "Shape__Area",
+      "Shape__Length",
+      "RAMSAR_NAME",
+      "WETLAND_NAME",
+      "JURISDICTION",
+      "GAZETTED_AREA_HA",
+      "METADATA_URL",
+      "WETLANDSDB_URL"
+     ],
+     "records": 120,
+     "sample": [
+      "Pitt Water-Orielton Lagoon",
+      "Kerang Wetlands",
+      "Lavinia"
+     ],
+     "name_field": "RAMSAR_NAME"
+    }
+   ],
+   "note": "Ramsar Wetlands",
+   "grade": 6,
+   "band": "A"
+  },
+  "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/world_heritage_areas": {
+   "url": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/World_Heritage_Areas/MapServer/0",
+   "cc": "AU",
+   "title": "ogc_services/World_Heritage_Areas/0",
+   "publisher": "gis.environment.gov.au",
+   "catalog": "ArcGIS Online search",
+   "licence": "Licence:    Attribution 4.0 International (CC BY 4.0)  This data has been licensed under the Creative Commons Attribution 4.0 International Licence. More information can be found at:&nbsp; https://cre",
+   "date": "2026-06-30",
+   "found": "2026-10-28",
+   "gaps": [
+    "area",
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "World_Heritage_Areas_Australia",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "PLACE_ID",
+      "FILE_",
+      "NAME",
+      "STATUS",
+      "IUCN_MGT",
+      "BIOGEOPROV",
+      "NATURAL",
+      "CULTURAL",
+      "STATE",
+      "HECTARES",
+      "ADDRESS",
+      "INSCRIBED",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 49,
+     "sample": [
+      "Australian Convict Sites (Brickendon - Woolmers Bu",
+      "Australian Convict Sites (Brickendon - Woolmers)",
+      "Australian Convict Sites (Old Government House and"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 0,
+     "name": "World_Heritage_Areas_Australia",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "PLACE_ID",
+      "FILE_",
+      "NAME",
+      "STATUS",
+      "IUCN_MGT",
+      "BIOGEOPROV",
+      "NATURAL",
+      "CULTURAL",
+      "STATE",
+      "HECTARES",
+      "ADDRESS",
+      "INSCRIBED",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 49,
+     "sample": [
+      "Australian Convict Sites (Brickendon - Woolmers Bu",
+      "Australian Convict Sites (Brickendon - Woolmers)",
+      "Australian Convict Sites (Old Government House and"
+     ],
+     "name_field": "NAME"
+    }
+   ],
+   "note": "Australia, World Heritage Areas",
+   "grade": 6,
+   "band": "A",
+   "band_note": "only generic named areas (no park word): never band A"
+  },
   "https://services.thelist.tas.gov.au/arcgis/rest/services/aerialphotoviewer/aerial_photo_coverage_areas": {
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/AerialPhotoViewer/Aerial_Photo_Coverage_Areas/MapServer",
    "cc": "AU",
@@ -2136,9 +2634,258 @@
    "date": "",
    "found": "2026-10-28",
    "gaps": [
+    "area",
     "outline"
    ],
    "layers": [
+    {
+     "id": 26,
+     "name": "LIST Land Tenure",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "TEN_CLASS",
+      "ACT",
+      "FEAT_NAME",
+      "LIST_GUID",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 46957,
+     "sample": [
+      "None",
+      "None",
+      "None"
+     ],
+     "name_field": "FEAT_NAME"
+    },
+    {
+     "id": 29,
+     "name": "LIST Local Government Reserves",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "CID",
+      "CATEGORY",
+      "FEAT_NAME",
+      "COMP_AREA",
+      "MEAS_AREA",
+      "UFI",
+      "FMP",
+      "CREATED_ON",
+      "LIST_GUID",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 1650,
+     "sample": [
+      "None",
+      "None",
+      "None"
+     ],
+     "name_field": "FEAT_NAME"
+    },
+    {
+     "id": 32,
+     "name": "LIST Marine Nature Reserves",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "CID",
+      "NAME",
+      "NOM_REG_NO",
+      "COMP_AREA",
+      "MEAS_AREA",
+      "COMMENTS",
+      "PLAN_REF",
+      "PLAN_AUTH",
+      "INST_NO",
+      "GOVERN_ACT",
+      "GAZ_DATE",
+      "EFFEC_DATE",
+      "UFI",
+      "FMP",
+      "CREATED_ON",
+      "LIST_GUID",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 9,
+     "sample": [
+      "Maria Island National Park",
+      "Ninepin Point Marine Nature Reserve",
+      "Kent Group National Park"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 37,
+     "name": "LIST Private Reserves",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "CID",
+      "CATEGORY",
+      "NAME",
+      "NOM_REG_NO",
+      "RESERVE_ID",
+      "COMP_AREA",
+      "MEAS_AREA",
+      "PLAN_REF",
+      "PLAN_AUTH",
+      "INST_TYPE",
+      "INST_NO",
+      "GOVERN_ACT",
+      "GAZ_DATE",
+      "EFFEC_DATE",
+      "UFI",
+      "FMP",
+      "CREATED_ON",
+      "LIST_GUID",
+      "SHAPE"
+     ],
+     "records": 43,
+     "sample": [
+      "None",
+      "Swanston Private Nature Reserve",
+      "None"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 39,
+     "name": "LIST Ramsar Wetlands",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "CID",
+      "CATEGORY",
+      "NAME",
+      "NOM_REG_NO",
+      "REFCODE3",
+      "COMP_AREA",
+      "MEAS_AREA",
+      "PLAN_REF",
+      "PLAN_AUTH",
+      "UFI",
+      "FMP",
+      "CREATED_ON",
+      "LIST_GUID",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 10,
+     "sample": [
+      "Logan Lagoon Ramsar Site",
+      "Jocks Lagoon Ramsar Site",
+      "Flood Plain Lower Ringarooma River Ramsar Site"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 22,
+     "name": "LIST Hydrographic Areas",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "HYDAREA_ID",
+      "HYDARTY1",
+      "HYDARTY2",
+      "NAME",
+      "NOM_REG_NO",
+      "SEC_NAME",
+      "SEC_NOMREG",
+      "TER_NAME",
+      "TER_NOMREG",
+      "HYD_CLASS",
+      "PERENNIAL",
+      "EXISTING",
+      "WC_BED_TY",
+      "RELGRND",
+      "INUSE",
+      "ISLANDTYPE",
+      "ELEVATION",
+      "COMP_AREA",
+      "UFI"
+     ],
+     "records": 237938,
+     "sample": [
+      "None",
+      "Ormley Creek",
+      "None"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 44,
+     "name": "LIST Water Management Areas",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "PROC_PLAN",
+      "REGION_NO",
+      "INDEX_PLAN",
+      "CATCH_NO",
+      "CATCH_NAME",
+      "ID",
+      "SHAPE_FID",
+      "LIST_GUID",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 206,
+     "sample": [
+      "Furneaux Islands",
+      "Furneaux Islands",
+      "Furneaux Islands"
+     ],
+     "name_field": "CATCH_NAME"
+    },
+    {
+     "id": 53,
+     "name": "LIST Water Management Plan Areas",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "AREA_ID",
+      "PLAN_NAME",
+      "SHORT_NAME",
+      "AREA_TYPE",
+      "STATUS",
+      "DRAFT_PLAN",
+      "ADOPTED",
+      "EFFECTIVE",
+      "SHAPE"
+     ],
+     "records": 12,
+     "sample": [
+      "Ansons River Catchment Water Management Plan",
+      "Lakes Sorell and Crescent Water Management Plan",
+      "River Clyde Catchment Water Management Plan (Septe"
+     ],
+     "name_field": "PLAN_NAME"
+    },
     {
      "id": 14,
      "name": "LIST Cadastral Parcels",
@@ -2264,145 +3011,12 @@
       "None"
      ],
      "name_field": "FEAT_NAME"
-    },
-    {
-     "id": 30,
-     "name": "LIST Locality and Postcode Areas",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
-     "fields": [
-      "OBJECTID",
-      "LOCAL_ID",
-      "NAME",
-      "POSTCODE",
-      "PLAN_REF",
-      "GAZ_DATE",
-      "NOM_REG_NO",
-      "UFI",
-      "CREATED_ON",
-      "LIST_GUID",
-      "SHAPE",
-      "SHAPE.AREA",
-      "SHAPE.LEN"
-     ],
-     "records": 777,
-     "sample": [
-      "Mount Stuart",
-      "Fitzgerald",
-      "Dover"
-     ],
-     "name_field": "NAME"
-    },
-    {
-     "id": 32,
-     "name": "LIST Marine Nature Reserves",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
-     "fields": [
-      "OBJECTID",
-      "CID",
-      "NAME",
-      "NOM_REG_NO",
-      "COMP_AREA",
-      "MEAS_AREA",
-      "COMMENTS",
-      "PLAN_REF",
-      "PLAN_AUTH",
-      "INST_NO",
-      "GOVERN_ACT",
-      "GAZ_DATE",
-      "EFFEC_DATE",
-      "UFI",
-      "FMP",
-      "CREATED_ON",
-      "LIST_GUID",
-      "SHAPE",
-      "SHAPE.AREA",
-      "SHAPE.LEN"
-     ],
-     "records": 9,
-     "sample": [
-      "Maria Island National Park",
-      "Ninepin Point Marine Nature Reserve",
-      "Kent Group National Park"
-     ],
-     "name_field": "NAME"
-    },
-    {
-     "id": 37,
-     "name": "LIST Private Reserves",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
-     "fields": [
-      "OBJECTID",
-      "CID",
-      "CATEGORY",
-      "NAME",
-      "NOM_REG_NO",
-      "RESERVE_ID",
-      "COMP_AREA",
-      "MEAS_AREA",
-      "PLAN_REF",
-      "PLAN_AUTH",
-      "INST_TYPE",
-      "INST_NO",
-      "GOVERN_ACT",
-      "GAZ_DATE",
-      "EFFEC_DATE",
-      "UFI",
-      "FMP",
-      "CREATED_ON",
-      "LIST_GUID",
-      "SHAPE"
-     ],
-     "records": 43,
-     "sample": [
-      "None",
-      "Swanston Private Nature Reserve",
-      "None"
-     ],
-     "name_field": "NAME"
-    },
-    {
-     "id": 39,
-     "name": "LIST Ramsar Wetlands",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
-     "fields": [
-      "OBJECTID",
-      "CID",
-      "CATEGORY",
-      "NAME",
-      "NOM_REG_NO",
-      "REFCODE3",
-      "COMP_AREA",
-      "MEAS_AREA",
-      "PLAN_REF",
-      "PLAN_AUTH",
-      "UFI",
-      "FMP",
-      "CREATED_ON",
-      "LIST_GUID",
-      "SHAPE",
-      "SHAPE.AREA",
-      "SHAPE.LEN"
-     ],
-     "records": 10,
-     "sample": [
-      "Logan Lagoon Ramsar Site",
-      "Jocks Lagoon Ramsar Site",
-      "Flood Plain Lower Ringarooma River Ramsar Site"
-     ],
-     "name_field": "NAME"
     }
    ],
    "note": "",
    "grade": 5,
-   "band": "A"
+   "band": "A",
+   "known_good": true
   },
   "https://services.thelist.tas.gov.au/arcgis/rest/services/public/pwspublic": {
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer",
@@ -2706,6 +3320,478 @@
     }
    ],
    "note": "",
+   "grade": 5,
+   "band": "A"
+  },
+  "https://services.thelist.tas.gov.au/arcgis/rest/services/public/topographyandrelief": {
+   "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer",
+   "cc": "AU",
+   "title": "Public/TopographyAndRelief",
+   "publisher": "services.thelist.tas.gov.au",
+   "catalog": "agency server services.thelist.tas.gov.au",
+   "licence": "the LIST © State of Tasmania",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "access",
+    "area",
+    "outline",
+    "trail line"
+   ],
+   "layers": [
+    {
+     "id": 4,
+     "name": "National or State Highway",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "OBJECTID",
+      "TRANSEG_ID",
+      "TRANS_TYPE",
+      "TSEG_FEAT",
+      "STATUS",
+      "TRAFF_DIR",
+      "TRAN_CLASS",
+      "USER_TYPE",
+      "TOUR_CLASS",
+      "SURFACE_TY",
+      "PRI_NAME",
+      "PRI_NOMREG",
+      "SEC_NAME",
+      "SEC_NOMREG",
+      "AUTHORITY",
+      "FOREIGN_ID",
+      "COMP_LEN",
+      "SHAPE"
+     ],
+     "records": 8238,
+     "sample": [
+      "Bass Highway",
+      "Midland Highway",
+      "East Tamar Highway"
+     ],
+     "name_field": "PRI_NAME"
+    },
+    {
+     "id": 5,
+     "name": "National or State Highway and Arterial Roads",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "OBJECTID",
+      "TRANSEG_ID",
+      "TRANS_TYPE",
+      "TSEG_FEAT",
+      "STATUS",
+      "TRAFF_DIR",
+      "TRAN_CLASS",
+      "USER_TYPE",
+      "TOUR_CLASS",
+      "SURFACE_TY",
+      "PRI_NAME",
+      "PRI_NOMREG",
+      "SEC_NAME",
+      "SEC_NOMREG",
+      "AUTHORITY",
+      "FOREIGN_ID",
+      "COMP_LEN",
+      "SHAPE"
+     ],
+     "records": 24686,
+     "sample": [
+      "Bass Highway",
+      "Midland Highway",
+      "Pipers River Road"
+     ],
+     "name_field": "PRI_NAME"
+    },
+    {
+     "id": 6,
+     "name": "National or State Highway and Arterial Roads plus Feeder Roads",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "OBJECTID",
+      "TRANSEG_ID",
+      "TRANS_TYPE",
+      "TSEG_FEAT",
+      "STATUS",
+      "TRAFF_DIR",
+      "TRAN_CLASS",
+      "USER_TYPE",
+      "TOUR_CLASS",
+      "SURFACE_TY",
+      "PRI_NAME",
+      "PRI_NOMREG",
+      "SEC_NAME",
+      "SEC_NOMREG",
+      "AUTHORITY",
+      "FOREIGN_ID",
+      "COMP_LEN",
+      "SHAPE"
+     ],
+     "records": 38223,
+     "sample": [
+      "Bass Highway",
+      "Midland Highway",
+      "Pipers River Road"
+     ],
+     "name_field": "PRI_NAME"
+    },
+    {
+     "id": 7,
+     "name": "National or State Highway and Arterial Roads plus Feeder Roads plus Lo",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "OBJECTID",
+      "TRANSEG_ID",
+      "TRANS_TYPE",
+      "TSEG_FEAT",
+      "STATUS",
+      "TRAFF_DIR",
+      "TRAN_CLASS",
+      "USER_TYPE",
+      "TOUR_CLASS",
+      "SURFACE_TY",
+      "PRI_NAME",
+      "PRI_NOMREG",
+      "SEC_NAME",
+      "SEC_NOMREG",
+      "AUTHORITY",
+      "FOREIGN_ID",
+      "COMP_LEN",
+      "SHAPE"
+     ],
+     "records": 273421,
+     "sample": [
+      "Wielangta Road",
+      "Bass Highway",
+      "Speck Road"
+     ],
+     "name_field": "PRI_NAME"
+    },
+    {
+     "id": 30,
+     "name": "Roads - Route Number Annotation [Dynamic]",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "OBJECTID",
+      "TOUR_CLASS",
+      "SHAPE"
+     ],
+     "records": 273491
+    },
+    {
+     "id": 81,
+     "name": "Caravan Park (poly)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "INFRA_ID",
+      "INFTY2_TXT",
+      "NOM_REG_NO",
+      "NAME",
+      "DESCRIPT",
+      "SHAPE",
+      "SHAPE.AREA"
+     ],
+     "records": 83,
+     "sample": [
+      "None",
+      "None",
+      "None"
+     ],
+     "name_field": "NOM_REG_NO"
+    },
+    {
+     "id": 83,
+     "name": "Caravan Park",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "INFRA_ID",
+      "INFTY2_TXT",
+      "NOM_REG_NO",
+      "NAME",
+      "DESCRIPT",
+      "SHAPE"
+     ],
+     "records": 0,
+     "sample": [],
+     "name_field": "NOM_REG_NO"
+    },
+    {
+     "id": 38,
+     "name": "Hydrographic Areas",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "HYDAREA_ID",
+      "HYDARTY1",
+      "HYDARTY2",
+      "NAME",
+      "NOM_REG_NO",
+      "HYD_CLASS",
+      "PERENNIAL",
+      "EXISTING",
+      "WC_BED_TY",
+      "RELGRND",
+      "INUSE",
+      "ISLANDTYPE",
+      "ELEVATION",
+      "COMP_AREA",
+      "SHAPE"
+     ],
+     "records": 349923,
+     "sample": [
+      "None",
+      "Ormley Creek",
+      "None"
+     ],
+     "name_field": "NAME"
+    }
+   ],
+   "note": "",
+   "grade": 5,
+   "band": "A"
+  },
+  "https://services.thelist.tas.gov.au/arcgis/rest/services/public/wildfisheries": {
+   "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer",
+   "cc": "AU",
+   "title": "Public/WildFisheries",
+   "publisher": "services.thelist.tas.gov.au",
+   "catalog": "agency server services.thelist.tas.gov.au",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "area",
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 1,
+     "name": "Marine Reserves - No Fishing",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "AREA_NAME",
+      "DESCRIPTION",
+      "MARINE_NATURE_RESERVE_NO_FISH",
+      "SHAPE"
+     ],
+     "records": 6,
+     "sample": [
+      "Ninepin Point Marine Nature Reserve",
+      "Port Davey/Bathurst Harbour Marine Nature Reserve ",
+      "Maria Island Marine Nature Reserve - No Fishing Zo"
+     ],
+     "name_field": "AREA_NAME"
+    },
+    {
+     "id": 3,
+     "name": "Marine Reserves - Restricted Fishing",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "AREA_NAME",
+      "DESCRIPTION",
+      "MARINE_NATURE_RESERVE_RESTRICT",
+      "SHAPE"
+     ],
+     "records": 2,
+     "sample": [
+      "Kent Group Marine Nature Reserve - Restricted Fish",
+      "Port Davey Marine Nature Reserve "
+     ],
+     "name_field": "AREA_NAME"
+    },
+    {
+     "id": 2,
+     "name": "Marine Parks - No Fishing",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "AREA_NAME",
+      "DESCRIPTION",
+      "MARINE_PARKS_NO_FISHING",
+      "SHAPE"
+     ],
+     "records": 6,
+     "sample": [
+      "Franklin Commonwealth Marine Park",
+      "Huon Commonwealth Marine Park",
+      "Tasman Fracture Commonwealth Marine Park"
+     ],
+     "name_field": "AREA_NAME"
+    },
+    {
+     "id": 24,
+     "name": "Marine Reserves - No Take by Diving",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "AREA_NAME",
+      "DESCRIPTION",
+      "NO_TAKE_BY_DIVING",
+      "SHAPE"
+     ],
+     "records": 15,
+     "sample": [
+      "George III Rock Abalone Research Area",
+      "North Bay Rock Lobster Research Area",
+      "Inner Sister Island Abalone Research Area "
+     ],
+     "name_field": "AREA_NAME"
+    },
+    {
+     "id": 4,
+     "name": "Research Areas",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "AREA_NAME",
+      "DESCRIPTION",
+      "RESEARCH_AREA",
+      "SHAPE"
+     ],
+     "records": 9,
+     "sample": [
+      "George III Rock Abalone Research Area",
+      "North Bay Rock Lobster Research Area",
+      "Inner Sister Island Abalone Research Area "
+     ],
+     "name_field": "AREA_NAME"
+    },
+    {
+     "id": 5,
+     "name": "Shark Refuge Areas",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "AREA_NAME",
+      "DESCRIPTION",
+      "SHARK_REFUGE_AREA",
+      "SHAPE"
+     ],
+     "records": 36,
+     "sample": [
+      "Coles Bay",
+      "Blackman Bay and Dunalley Canal",
+      "Eaglehawk Bay"
+     ],
+     "name_field": "AREA_NAME"
+    },
+    {
+     "id": 12,
+     "name": "Scallop Managed Area",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "AREA_NAME",
+      "DESCRIPTION",
+      "SCALLOP_MANAGED_AREA",
+      "SHAPE"
+     ],
+     "records": 7,
+     "sample": [
+      "Huon River",
+      "Esperance River",
+      "Ninepin Point Marine Nature Reserve"
+     ],
+     "name_field": "AREA_NAME"
+    },
+    {
+     "id": 23,
+     "name": "Research Areas - No Anchoring or Diving",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "AREA_NAME",
+      "DESCRIPTION",
+      "NO_ANCHORING_OR_DIVING",
+      "SHAPE"
+     ],
+     "records": 1,
+     "sample": [
+      "George III Rock Abalone Research Area"
+     ],
+     "name_field": "AREA_NAME"
+    },
+    {
+     "id": 25,
+     "name": "Bream Fishing Areas",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "AREA_NAME",
+      "DESCRIPTION",
+      "BREAM_FISH_AREA",
+      "SHAPE"
+     ],
+     "records": 40,
+     "sample": [
+      "Arthur River Bream Fishing Area",
+      "Ansons River Bream Fishing Area",
+      "Grants Lagoon Bream Fishing Area"
+     ],
+     "name_field": "AREA_NAME"
+    },
+    {
+     "id": 43,
+     "name": "Sand flathead south-eastern zone closure",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "AREA_NAME",
+      "DESCRIPTION",
+      "CLOSURE",
+      "SHAPE"
+     ],
+     "records": 41,
+     "sample": [
+      "Cloudy Bay Lagoon",
+      "Blackswan Lagoon",
+      "Catamaran River"
+     ],
+     "name_field": "AREA_NAME"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
    "grade": 5,
    "band": "A"
   },
@@ -6203,6 +7289,62 @@
    "grade": 5,
    "band": "A"
   },
+  "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/protected_areas": {
+   "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/ArcGIS/rest/services/Protected_areas/FeatureServer",
+   "cc": "AU",
+   "title": "Protected_areas",
+   "publisher": "services-ap1.arcgis.com",
+   "catalog": "known-good (chat 8)",
+   "licence": "© State of Queensland (Department of Environment and Science) 2021",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 177,
+     "name": "Protected_areas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "LOT",
+      "PLAN_",
+      "LOTPLAN",
+      "SYSINTCODE",
+      "ESTATENAME",
+      "NAMEABBREV",
+      "NAME_CAPS",
+      "EST_TYPE",
+      "EST_TENURE",
+      "LEGISLATED",
+      "GAZ_AREAHA",
+      "ZONE",
+      "IUCN_CODE",
+      "GLR_NUMBER",
+      "QPWS_REG",
+      "CURGAZDATE",
+      "SHIRE",
+      "FEAT_NAME_",
+      "PA_AREAHA"
+     ],
+     "records": 1926,
+     "sample": [
+      "Melsonby (Gaarraay) National Park (Cape York Penin",
+      "Daintree National Park (Cape York Peninsula Aborig",
+      "Daintree National Park (Cape York Peninsula Aborig"
+     ],
+     "name_field": "ESTATENAME"
+    }
+   ],
+   "note": "known-good service",
+   "grade": 4,
+   "band": "B",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists",
+   "known_good": true
+  },
   "https://services.thelist.tas.gov.au/arcgis/rest/services/public/infrastructure": {
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Infrastructure/MapServer",
    "cc": "AU",
@@ -6673,6 +7815,111 @@
    "note": "",
    "grade": 3,
    "band": "B"
+  },
+  "https://opendata.maps.vic.gov.au/geoserver/wfs": {
+   "url": "https://opendata.maps.vic.gov.au/geoserver/wfs",
+   "cc": "AU",
+   "title": "WFS opendata.maps.vic.gov.au",
+   "publisher": "opendata.maps.vic.gov.au",
+   "catalog": "WFS capabilities",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "area",
+    "outline"
+   ],
+   "layers": [
+    {
+     "name": "biologically_important_areas",
+     "type": "open-data-platform:biologically_important_areas",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "bushbank_target_landscapes",
+     "type": "open-data-platform:bushbank_target_landscapes",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "cad_area_bdy",
+     "type": "open-data-platform:cad_area_bdy",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "el_grnd_type_area_polygon",
+     "type": "open-data-platform:el_grnd_type_area_polygon",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "el_relief_area",
+     "type": "open-data-platform:el_relief_area",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "el_relief_area_fuzzy",
+     "type": "open-data-platform:el_relief_area_fuzzy",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "fmz100_v_zone",
+     "type": "open-data-platform:fmz100_v_zone",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "fr_framework_area_line",
+     "type": "open-data-platform:fr_framework_area_line",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "fr_framework_area_polygon",
+     "type": "open-data-platform:fr_framework_area_polygon",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "frv_legislated_boundary",
+     "type": "open-data-platform:frv_legislated_boundary",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "frv_response_area",
+     "type": "open-data-platform:frv_response_area",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "gma_zone",
+     "type": "open-data-platform:gma_zone",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    }
+   ],
+   "note": "300 feature types listed",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "B",
+   "known_good": true
   }
  }
 }

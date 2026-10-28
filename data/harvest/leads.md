@@ -3,6 +3,12 @@ Last run 2026-10-28. Leads only: chat 8 grades them; nothing here is in the key.
 
 | Band | Country | Title | What it is | Publisher | Licence | Date | Address |
 |---|---|---|---|---|---|---|---|
+| A | AU | NIAA_Administrative_Boundaries_2020 | park / protected-area polygons with a name field; park / protected-are | National Indigenous Australians Agen | Licence:     Creative Commons - Attribut | 2026-10-21 | https://services9.arcgis.com/EPcAWuPcSWtfB9jL/arcgis/rest/services/NIAA_Administrative_Boundaries_2020/FeatureServer |
+| A | AU | ogc_services/Australian_Marine_Parks | park / protected-area polygons with a name field; park / protected-are | gis.environment.gov.au | This dataset is released under Creative  | 2025-02-20 | https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Australian_Marine_Parks/MapServer |
+| A | AU | ogc_services/Australian_Marine_Parks_Outer_Boundar | park / protected-area polygons with a name field | gis.environment.gov.au | Licence:          CC - Attribution (CC B | 2025-05-21 | https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Australian_Marine_Parks_Outer_Boundary/MapServer/0 |
+| A | AU | ogc_services/Indigenous_Protected_Areas/0 | park / protected-area polygons with a name field | gis.environment.gov.au | Licence:      Attribution 3.0 Australia  | 2026-09-29 | https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Indigenous_Protected_Areas/FeatureServer/0 |
+| A | AU | ogc_services/Ramsar_Wetlands | park / protected-area polygons with a name field | gis.environment.gov.au | ﻿ License:   Creative Commons Attributio | 2026-07-10 | https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Ramsar_Wetlands/FeatureServer |
+| A | AU | ogc_services/World_Heritage_Areas/0 | park / protected-area polygons with a name field; named area polygons  | gis.environment.gov.au | Licence:    Attribution 4.0 Internationa | 2026-06-30 | https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/World_Heritage_Areas/MapServer/0 |
 | A | GB | Ancient_Woodland_England | park / protected-area polygons with a name field | Defra group ArcGIS Online organisati | There are no public access constraints t | 2026-10-22 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Ancient_Woodland_England/FeatureServer |
 | A | GB | Ancient_Woodland_Revised_England | park / protected-area polygons with a name field | Defra group ArcGIS Online organisati | There are no public access constraints t | 2026-07-29 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Ancient_Woodland_Revised_England/FeatureServer |
 | A | GB | Annex_1_Alkaline_Fens_Transition_Mire_Quaking_Bog | park points (sites / entrances); park points (sites / entrances) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2023-06-06 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Annex_1_Alkaline_Fens_Transition_Mire_Quaking_Bog/FeatureServer |
@@ -18,6 +24,7 @@ Last run 2026-10-28. Leads only: chat 8 grades them; nothing here is in the key.
 | A | GB | Living_England_Segmentation_2019 | park / protected-area polygons with a name field | Defra group ArcGIS Online organisati | There are no public access constraints t | 2023-06-06 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Living_England_Segmentation_2019/FeatureServer |
 | A | GB | Local_Nature_Partnerships_England | park / protected-area polygons with a name field | Defra group ArcGIS Online organisati | There are no public access constraints t | 2023-06-06 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Local_Nature_Partnerships_England/FeatureServer |
 | A | GB | Local_Nature_Recovery_Strategy_Areas_England | park / protected-area polygons with a name field | Defra group ArcGIS Online organisati | There are no public access constraints t | 2026-07-13 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Local_Nature_Recovery_Strategy_Areas_England/FeatureServer |
+| A | GB | Local_Plan_Ungrouped | park / protected-area polygons with a name field; park / protected-are | Peak District National Park Authorit | Data is released under the terms of the  | 2026-09-14 | https://services5.arcgis.com/C36oYlzCOmDbFbhM/arcgis/rest/services/Local_Plan_Ungrouped/FeatureServer |
 | A | GB | Long_established_Woodland_England | park / protected-area polygons with a name field | Defra group ArcGIS Online organisati | There are no public access constraints t | 2026-07-24 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Long_established_Woodland_England/FeatureServer |
 | A | GB | MPA_S3_4_MMOJuris_BTG | park / protected-area polygons with a name field | Defra group ArcGIS Online organisati | Re-use of the data is subject to the ter | 2022-12-01 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/MPA_S3_4_MMOJuris_BTG/FeatureServer |
 | A | GB | MPA_S3_4_MMOJuris_MG | park / protected-area polygons with a name field | Defra group ArcGIS Online organisati | Re-use of the data is subject to the ter | 2022-12-01 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/MPA_S3_4_MMOJuris_MG/FeatureServer |
@@ -65,10 +72,12 @@ access constraints t | 2024-10-18 | https://services.arcgis.com/JJzESW51TqeY9uat
 | A | AU | Public/NVAdata | named area polygons | services.thelist.tas.gov.au | licence unknown: chat 8 asks |  | https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer |
 | A | AU | Public/NaturalEnvironment | park / protected-area polygons (no name field seen); park / protected- | services.thelist.tas.gov.au | the LIST  State of Tasmania |  | https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer |
 | A | AU | Public/NaturalEnvironmentV2 | park points (sites / entrances); park points (sites / entrances) | services.thelist.tas.gov.au | licence unknown: chat 8 asks |  | https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironmentV2/MapServer |
-| A | AU | Public/OpenDataWFS | park / protected-area polygons with a name field; named area polygons | services.thelist.tas.gov.au | the LIST  State of Tasmania |  | https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer |
+| A | AU | Public/OpenDataWFS | known-good layer (chat 8); park / protected-area polygons with a name  | services.thelist.tas.gov.au | the LIST  State of Tasmania |  | https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer |
 | A | AU | Public/PWSPublic | park / protected-area polygons (no name field seen); park / protected- | services.thelist.tas.gov.au | the LIST  State of Tasmania |  | https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer |
 | A | AU | Public/Planning | park / protected-area polygons with a name field; park / protected-are | services.thelist.tas.gov.au | licence unknown: chat 8 asks |  | https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Planning/MapServer |
 | A | AU | Public/PlanningOnline | park / protected-area polygons with a name field; named area polygons | services.thelist.tas.gov.au | the LIST  State of Tasmania |  | https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PlanningOnline/MapServer |
+| A | AU | Public/TopographyAndRelief | trail / path lines; trail / path lines | services.thelist.tas.gov.au | the LIST © State of Tasmania |  | https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer |
+| A | AU | Public/WildFisheries | park / protected-area polygons with a name field; park / protected-are | services.thelist.tas.gov.au | licence unknown: chat 8 asks |  | https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer |
 | A | AU | SLIP_Public_Services/Boundaries | named area polygons; named area polygons | public-services.slip.wa.gov.au | SLIP/Landgate |  | https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer |
 | A | AU | SLIP_Public_Services/Boundaries_WFS | named area polygons; named area polygons | public-services.slip.wa.gov.au | LANDGATE/SLIP |  | https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer |
 | A | AU | SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS | park / protected-area polygons with a name field; named area polygons | public-services.slip.wa.gov.au | licence unknown: chat 8 asks |  | https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer |
@@ -124,6 +133,7 @@ access constraints t | 2024-10-18 | https://services.arcgis.com/JJzESW51TqeY9uat
 | A | GB | Hosted/Cadmium_annual_mean_Local_Authority_2021 | park / protected-area polygons with a name field | Defra group ArcGIS Online organisati | Custom licence page | 2024-11-12 | https://ukair.maps.rcdo.co.uk/ukairserver/rest/services/Hosted/Cadmium_annual_mean_Local_Authority_2021/FeatureServer |
 | A | GB | Hosted/Sulphur_Dioxide_annual_mean_Local_Authority | park / protected-area polygons with a name field | Defra group ArcGIS Online organisati | Custom licence page | 2024-11-12 | https://ukair.maps.rcdo.co.uk/ukairserver/rest/services/Hosted/Sulphur_Dioxide_annual_mean_Local_Authority_2020/FeatureServer |
 | A | GB | Hosted/Sulphur_Dioxide_winter_mean_Local_Authority | park / protected-area polygons with a name field | Defra group ArcGIS Online organisati | Custom licence page | 2024-11-12 | https://ukair.maps.rcdo.co.uk/ukairserver/rest/services/Hosted/Sulphur_Dioxide_winter_mean_Local_Authority_2020/FeatureServer |
+| C | GB | Important_Plant_Areas_2020_region | park / protected-area polygons with a name field | Plantlife International | Data is owned by Plantlife International | 2026-10-01 | https://services8.arcgis.com/WjAwg84s4EayFLBd/arcgis/rest/services/Important_Plant_Areas_2020_region/FeatureServer |
 | A | GB | Integrated_Site_Assessment_Species_records_polygon | park / protected-area polygons (no name field seen) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2023-06-06 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Integrated_Site_Assessment_Species_records_polygons_England/FeatureServer |
 | A | GB | Land_Management_Initiatives_England | park / protected-area polygons with a name field | Defra group ArcGIS Online organisati | There are no public access constraints t | 2024-03-25 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Land_Management_Initiatives_England/FeatureServer |
 | A | GB | Living_England_2022_2023 | park / protected-area polygons (no name field seen); park / protected- | Defra group ArcGIS Online organisati | There are no public access constraints t | 2026-04-21 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Living_England_2022_2023/FeatureServer |
@@ -144,45 +154,43 @@ access constraints t | 2024-10-18 | https://services.arcgis.com/JJzESW51TqeY9uat
 | A | GB | Midlands_Heartlands_Heathland_Suitability_Areas | park / protected-area polygons with a name field | Defra group ArcGIS Online organisati | There are no public access constraints t | 2023-06-06 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Midlands_Heartlands_Heathland_Suitability_Areas/FeatureServer |
 | A | GB | Millennium_Greens_England_Points | park points (sites / entrances) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2023-06-06 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Millennium_Greens_England_Points/FeatureServer |
 | A | GB | Moorland_Change_Map_England_2015_2016 | park / protected-area polygons (no name field seen) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2023-11-23 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Moorland_Change_Map_England_2015_2016/FeatureServer |
-| A | GB | Moorland_Change_Map_England_2016_2017 | park / protected-area polygons (no name field seen) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2023-11-23 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Moorland_Change_Map_England_2016_2017/FeatureServer |
-| A | GB | Moorland_Change_Map_England_2017_2018 | park / protected-area polygons (no name field seen) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2023-11-23 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Moorland_Change_Map_England_2017_2018/FeatureServer |
-| A | GB | Moorland_Change_Map_England_2018_2019 | park / protected-area polygons (no name field seen) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2023-11-23 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Moorland_Change_Map_England_2018_2019/FeatureServer |
-| A | GB | Moorland_Change_Map_England_2019_2020 | park / protected-area polygons (no name field seen) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2023-11-23 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Moorland_Change_Map_England_2019_2020/FeatureServer |
-| A | GB | Moorland_Change_Map_England_2020_2021 | park / protected-area polygons (no name field seen) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2023-11-23 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Moorland_Change_Map_England_2020_2021/FeatureServer |
-| A | GB | Moorland_Change_Map_England_2021_2022 | park / protected-area polygons (no name field seen) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2026-05-11 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Moorland_Change_Map_England_2021_2022/FeatureServer |
-| A | GB | Moorland_Change_Map_England_2022_2023 | park / protected-area polygons (no name field seen) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2023-11-23 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Moorland_Change_Map_England_2022_2023/FeatureServer |
-| A | GB | Moorland_Change_Map_England_2023_2024 | park / protected-area polygons (no name field seen) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2026-05-11 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Moorland_Change_Map_England_2023_2024/FeatureServer |
-| A | GB | Moorland_Change_Map_England_2024_2025 | park / protected-area polygons (no name field seen) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2026-05-11 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Moorland_Change_Map_England_2024_2025/FeatureServer |
-| A | GB | National_Habitat_Networks_England | park / protected-area polygons (no name field seen) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2026-04-21 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/National_Habitat_Networks_England/FeatureServer |
 
 ## Last run
 ```
 {
  "date": "2026-10-28",
  "stats": {
-  "requests": 1684,
+  "requests": 430,
   "hits": 0,
-  "leads": 299,
-  "already_read": 6,
-  "skipped": 70,
-  "not_official": 30,
-  "robots": 5,
-  "strikes": 3,
-  "errors": 9
+  "leads": 17,
+  "already_read": 8,
+  "skipped": 21,
+  "not_official": 553,
+  "robots": 9,
+  "strikes": 7,
+  "errors": 30,
+  "retried_json": 2
  },
  "countries": [
-  "GB paused: 297 leads (A 161), known-good found 2 of 2"
+  "GB done: 300 leads (A 162), known-good found 2 of 2",
+  "DE done: 3 leads (A 2), known-good found 1 of 1",
+  "PL done: 13 leads (A 0), known-good found 0 of 3",
+  "JP done: 1 leads (A 0), known-good found 0 of 0",
+  "AU done: 57 leads (A 46), known-good found 4 of 5"
  ],
  "dead_servers": [
-  "mmo.cloud.esriuk.com"
+  "cagmap.snh.gov.uk",
+  "gisext.qfes.qld.gov.au"
  ],
  "robots_refused": {
-  "ckan.publishing.service.gov.uk": 4,
-  "map.cornwall.gov.uk": 1
+  "map.cornwall.gov.uk": 1,
+  "data.gov.au": 4,
+  "discover.data.vic.gov.au": 4
  },
  "robots_said": {
-  "ckan.publishing.service.gov.uk": "User-agent: * | Disallow: /",
-  "map.cornwall.gov.uk": "User-agent: * | Disallow: /"
+  "map.cornwall.gov.uk": "User-agent: * | Disallow: /",
+  "data.gov.au": "User-agent: * | Disallow: /",
+  "discover.data.vic.gov.au": "User-agent: * | Disallow: /dataset/rate/ | Disallow: /revision/ | Disallow: /dataset/*/history | Disallow: /api/ | Crawl-Delay: 10"
  },
  "robots_exempted_hosts (HQ ruling Oct 27: ArcGIS REST API paths only)": {}
 }

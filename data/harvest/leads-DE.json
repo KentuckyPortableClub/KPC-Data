@@ -4,22 +4,24 @@
  "date": "2026-10-28",
  "status": "done",
  "steps_done": [
-  "orgs",
+  "known",
   "servers",
   "wfs",
+  "orgs",
   "catalogs",
+  "downloads",
   "search",
   "eea"
  ],
  "bands": {
   "A": 2,
-  "B": 0,
+  "B": 1,
   "C": 0
  },
- "known_good_found": [],
- "known_good_missed": [
-  "https://geodienste.bfn.de/ogc/wfs/"
+ "known_good_found": [
+  "https://geodienste.bfn.de/ogc/wfs/schutzgebiet"
  ],
+ "known_good_missed": [],
  "leads": {
   "https://services1.arcgis.com/rtk5unh1z71jkiir/arcgis/rest/services/ffh": {
    "url": "https://services1.arcgis.com/RTK5Unh1Z71JKIiR/arcgis/rest/services/FFH/FeatureServer",
@@ -124,6 +126,89 @@
    "note": "Vogelschutzgebiete (2019, marinen Schutzgebiete in Deutschland) ",
    "grade": 5,
    "band": "A"
+  },
+  "https://geodienste.bfn.de/ogc/wfs/schutzgebiet": {
+   "url": "https://geodienste.bfn.de/ogc/wfs/schutzgebiet",
+   "cc": "DE",
+   "title": "WFS geodienste.bfn.de",
+   "publisher": "Bundesamt für Naturschutz (BfN)",
+   "catalog": "WFS capabilities",
+   "licence": "Nicht für Planungszwecke geeignet.",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "area",
+    "outline"
+   ],
+   "layers": [
+    {
+     "name": "Nationale_Naturmonumente",
+     "type": "schutzgebiet:Nationale_Naturmonumente",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Fauna_Flora_Habitat_Gebiete",
+     "type": "schutzgebiet:Fauna_Flora_Habitat_Gebiete",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Vogelschutzgebiete",
+     "type": "schutzgebiet:Vogelschutzgebiete",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Biosphaerenreservate",
+     "type": "schutzgebiet:Biosphaerenreservate",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Biosphaerenreservate_Zonierung",
+     "type": "schutzgebiet:Biosphaerenreservate_Zonierung",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Nationalparke",
+     "type": "schutzgebiet:Nationalparke",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Naturparke",
+     "type": "schutzgebiet:Naturparke",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Naturschutzgebiete",
+     "type": "schutzgebiet:Naturschutzgebiete",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Landschaftsschutzgebiete",
+     "type": "schutzgebiet:Landschaftsschutzgebiete",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    }
+   ],
+   "note": "9 feature types listed",
+   "grade": 3,
+   "band": "B",
+   "known_good": true
   }
  }
 }

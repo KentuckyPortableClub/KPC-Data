@@ -2,19 +2,21 @@
  "about": "World harvester leads for United Kingdom (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "GB",
  "date": "2026-10-28",
- "status": "paused (out of time, will carry on)",
+ "status": "done",
  "steps_done": [
   "known",
   "servers",
   "wfs",
   "orgs",
   "catalogs",
-  "downloads"
+  "downloads",
+  "search",
+  "eea"
  ],
  "bands": {
-  "A": 161,
-  "B": 65,
-  "C": 71
+  "A": 162,
+  "B": 66,
+  "C": 72
  },
  "known_good_found": [
   "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/ArcGIS/rest/services/Core_Data_Non_WMS/FeatureServer/50",
@@ -807,6 +809,263 @@
     }
    ],
    "note": "Local Nature Recovery Strategy Areas (England)",
+   "grade": 6,
+   "band": "A"
+  },
+  "https://services5.arcgis.com/c36oylzcomdbfbhm/arcgis/rest/services/local_plan_ungrouped": {
+   "url": "https://services5.arcgis.com/C36oYlzCOmDbFbhM/arcgis/rest/services/Local_Plan_Ungrouped/FeatureServer",
+   "cc": "GB",
+   "title": "Local_Plan_Ungrouped",
+   "publisher": "Peak District National Park Authority",
+   "catalog": "ArcGIS Online search",
+   "licence": "Data is released under the terms of the Open Government Licence (OGL)     https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/      Peak District National Park Authority. Contain",
+   "date": "2026-09-14",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline",
+    "trail line"
+   ],
+   "layers": [
+    {
+     "id": 63,
+     "name": "Open Spaces in Conservation Areas (Policy L3/DMC8)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "CA_Name",
+      "MI_PRINX",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 444,
+     "sample": [
+      "Beeley",
+      "Litton",
+      "Litton"
+     ],
+     "name_field": "CA_Name"
+    },
+    {
+     "id": 64,
+     "name": "Registered Parks and Gardens (Policy L3/DMC9)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "Listentry",
+      "Name",
+      "Grade",
+      "MI_PRINX",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 82,
+     "sample": [
+      "Kirklees Park",
+      "STONEY ROYD CEMETERY",
+      "BEAUCHIEF HALL"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 72,
+     "name": "The Natural Zone (Policy L1/DMC2)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "category",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 5
+    },
+    {
+     "id": 71,
+     "name": "Landscape Character Area & Type (Policy L1/DMC1)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "LCTNAME",
+      "RCANAME",
+      "MI_PRINX",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 440,
+     "sample": [
+      "Village farmlands on shale ridges",
+      "Village farmlands on shale ridges",
+      "Riverside meadows"
+     ],
+     "name_field": "LCTNAME"
+    },
+    {
+     "id": 101,
+     "name": "Safeguarded Railway (Policy T5)",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "MI_PRINX",
+      "Name",
+      "Landscape_Feature_Type",
+      "Shape__Length"
+     ],
+     "records": 6,
+     "sample": [
+      "Woodhead",
+      "Monsal Trail",
+      "Millers Dale"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 11,
+     "name": "Bakewell Central Shopping Area (Policy DS1)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "Name",
+      "Type",
+      "MI_PRINX",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Bakewell"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 12,
+     "name": "Bakewell Development Boundary (Policy DS1/DMB1)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "MI_PRINX",
+      "FName",
+      "Policy_number",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Bakewell Development Boundary           "
+     ],
+     "name_field": "FName"
+    },
+    {
+     "id": 412,
+     "name": "Brampton Neighbourhood Plan (Policy DS1)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "Name",
+      "Type",
+      "MI_PRINX",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 1,
+     "sample": [
+      "Brampton CP"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 411,
+     "name": "Bradwell Neighbourhood Plan (Policy DS1)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "Name",
+      "Type",
+      "MI_PRINX",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 14,
+     "sample": [
+      "Bradwell",
+      "Bradwell",
+      "Bradwell"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 410,
+     "name": "Chapel en le Frith Neighbourhood Plan (Policy DS1)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "Name",
+      "Type",
+      "MI_PRINX",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 18,
+     "sample": [
+      "Chapel-en-le-Frith",
+      "Chapel-en-le-Frith",
+      "Chapel-en-le-Frith"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 409,
+     "name": "Dore Neighbourhood Plan (Policy DS1)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "Name",
+      "Type",
+      "MI_PRINX",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 49,
+     "sample": [
+      "Dore",
+      "Dore",
+      "Dore"
+     ],
+     "name_field": "Name"
+    },
+    {
+     "id": 408,
+     "name": "Holme Neighbourhood Plan (Policy DS1)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "Name",
+      "MI_PRINX",
+      "Type",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 3,
+     "sample": [
+      "Holme Valley",
+      "Holme",
+      "Holme Valley"
+     ],
+     "name_field": "Name"
+    }
+   ],
+   "note": "PDNPA Local Plan Policies",
    "grade": 6,
    "band": "A"
   },
@@ -4653,6 +4912,48 @@
    "note": "Sulphur Dioxide winter mean Local Authority 2020",
    "grade": 5,
    "band": "A"
+  },
+  "https://services8.arcgis.com/wjawg84s4eayflbd/arcgis/rest/services/important_plant_areas_2020_region": {
+   "url": "https://services8.arcgis.com/WjAwg84s4EayFLBd/arcgis/rest/services/Important_Plant_Areas_2020_region/FeatureServer",
+   "cc": "GB",
+   "title": "Important_Plant_Areas_2020_region",
+   "publisher": "Plantlife International",
+   "catalog": "ArcGIS Online search",
+   "licence": "Data is owned by Plantlife International.&nbsp;Plantlife is keen to encourage the use of its data for conservation purposes. In order to ensure that the user understands and complies with the conditio",
+   "date": "2026-10-01",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Important_Plant_Areas_2020_region",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "IPA_Code",
+      "IPA_Name",
+      "UK_Country",
+      "Shape__Area",
+      "Shape__Length",
+      "Area_ha"
+     ],
+     "records": 165,
+     "sample": [
+      "River Wye IPA",
+      "Cliffs of the Brecon Beacons National Park IPA",
+      "Kenfig IPA"
+     ],
+     "name_field": "IPA_Name"
+    }
+   ],
+   "note": "Plantlife's Important Plant Areas - 2020",
+   "licence_note": "LICENCE FORBIDS PASSING IT ON: list only, never store",
+   "grade": 5,
+   "band": "C"
   },
   "https://services.arcgis.com/jjzesw51tqey9uat/arcgis/rest/services/integrated_site_assessment_species_records_polygons_england": {
    "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Integrated_Site_Assessment_Species_records_polygons_England/FeatureServer",
@@ -11897,6 +12198,44 @@
     }
    ],
    "note": "Sulphur Dioxide annual mean Zone Agglomeration 2020",
+   "grade": 4,
+   "band": "B"
+  },
+  "https://services1.arcgis.com/esmarspqhymw9bz9/arcgis/rest/services/lpa_apr_2023_uk_buc_v2": {
+   "url": "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/LPA_APR_2023_UK_BUC_V2/FeatureServer",
+   "cc": "GB",
+   "title": "LPA_APR_2023_UK_BUC_V2",
+   "publisher": "Office for National Statistics",
+   "catalog": "ArcGIS Online search",
+   "licence": "https://www.ons.gov.uk/methodology/geography/licences",
+   "date": "2025-08-11",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "LPA_APR_2023_UK_BUC_V2",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "FID",
+      "LPA23CD",
+      "LPA23NM",
+      "BNG_E",
+      "BNG_N",
+      "LAT",
+      "LONG",
+      "Shape__Area",
+      "Shape__Length",
+      "GlobalID"
+     ],
+     "records": 379
+    }
+   ],
+   "note": "Local Planning Authorities (April 2023) Boundaries UK BUC (V2)",
    "grade": 4,
    "band": "B"
   },

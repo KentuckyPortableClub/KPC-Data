@@ -2,11 +2,14 @@
  "about": "World harvester progress (resumable).",
  "countries": {
   "GB": {
-   "status": "paused (out of time, will carry on)",
+   "status": "done",
    "started": "2026-10-28",
    "done": [
+    "https://cagmap.snh.gov.uk/arcgis/rest/services/snh_protected_sites/MapServer",
+    "https://cagmap.snh.gov.uk/arcgis/rest/services/snh_protected_sites/MapServer/3",
     "https://environment.data.gov.uk/arcgis/rest/services/RPA/CropMapOfEngland2021/MapServer",
     "https://map.cornwall.gov.uk/arcgis/rest/services/CCmap/MapServer/131",
+    "https://map.cornwall.gov.uk/arcgis/rest/services/CCmap/MapServer/60",
     "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Demographic_WebMercator/MapServer/8",
     "https://mmo.cloud.esriuk.com/server/rest/services/MGD_Protected_Conservation_Sites/SAC_Marine_Components_UK_JNCC/MapServer",
     "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/ArcGIS/rest/services/Core_Data_Non_WMS/FeatureServer",
@@ -86,6 +89,9 @@
     "https://services-eu1.arcgis.com/ZOdPfBS3aqqDYPUQ/arcgis/rest/services/Conservation_Areas/FeatureServer",
     "https://services-eu1.arcgis.com/nvL9EDc30lviBdlc/arcgis/rest/services/esri_tpo_woodland/FeatureServer",
     "https://services-eu1.arcgis.com/nvL9EDc30lviBdlc/arcgis/rest/services/tpo_tree_point/FeatureServer",
+    "https://services.arcgis.com/JJzESW51TqeY9uat/ArcGIS/rest/services/CRoW_Act_2000_Access_Layer/FeatureServer/0",
+    "https://services.arcgis.com/JJzESW51TqeY9uat/ArcGIS/rest/services/CRoW_Act_2000_Section_4_Conclusive_Registered_Common_Land/FeatureServer/0",
+    "https://services.arcgis.com/JJzESW51TqeY9uat/ArcGIS/rest/services/Country_Parks_England/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/ArcGIS/rest/services/National_Trails_England/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Access_Network_Mapping_England/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Agricultural_Land_Classification_Post_1988/FeatureServer",
@@ -94,6 +100,7 @@
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Annex_1_Alkaline_Fens_Transition_Mire_Quaking_Bog/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Aquaculture/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Areas_of_Outstanding_Natural_Beauty_England/FeatureServer",
+    "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Areas_of_Outstanding_Natural_Beauty_England/FeatureServer/0",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Avian_Influenza_Prevention_Zones/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Biogeographic_Zones_Living_England_2021/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Biosphere_Reserves_England/FeatureServer",
@@ -115,6 +122,7 @@
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Conservation_and_Enhancement_Scheme_Agreements_England/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Control_Zones_Public/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Country_Parks_England/FeatureServer",
+    "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Country_Parks_England/FeatureServer/0",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Countryside_Stewardship_Scheme_2016_Management_Areas_England/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Countryside_Stewardship_Scheme_2016_Options_England/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Countryside_Stewardship_Scheme_Agreements/FeatureServer",
@@ -208,6 +216,7 @@
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Local_Nature_Partnerships_England/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Local_Nature_Recovery_Strategy_Areas_England/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Local_Nature_Reserves_England/FeatureServer",
+    "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Local_Nature_Reserves_England/FeatureServer/0",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Long_Term_Monitoring_Network_Soils_Monitoring_Plots_England/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Long_Term_Monitoring_Network_Vegetation_Monitoring_Plots_England/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Long_established_Woodland_England/FeatureServer",
@@ -344,6 +353,7 @@
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/epm01_vegetation_bgz9_s_f/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/peaty_soil_extent_v1/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/peaty_soil_extent_v1_s/FeatureServer",
+    "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/LPA_APR_2023_UK_BUC_V2/FeatureServer",
     "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/National_Statistics_Postcode_Lookup_(February_2026)_for_the_UK_(Hosted_Table)/FeatureServer",
     "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/National_Statistics_Postcode_Lookup_(May_2026)_for_the_United_Kingdom/FeatureServer",
     "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/ONSPD_AUG_2025_UK/FeatureServer",
@@ -351,6 +361,8 @@
     "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/ONS_Postcode_Directory_(February_2026)_for_the_UK_(Hosted_Table)/FeatureServer",
     "https://services1.arcgis.com/LM9GyVFsughzHdbO/arcgis/rest/services/Onshore_Windfarm_Proposals/FeatureServer",
     "https://services2.arcgis.com/LrUbY6lLLgV3tEa5/arcgis/rest/services/Northumberland_National_Park/FeatureServer",
+    "https://services5.arcgis.com/C36oYlzCOmDbFbhM/arcgis/rest/services/Local_Plan_Ungrouped/FeatureServer",
+    "https://services8.arcgis.com/WjAwg84s4EayFLBd/arcgis/rest/services/Important_Plant_Areas_2020_region/FeatureServer",
     "https://tiles-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/arcgis/rest/services/AdmiraltyChartScotland/MapServer",
     "https://tiles-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/arcgis/rest/services/IHLS_Heatmap_2012to2025_Online/MapServer",
     "https://tiles-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/arcgis/rest/services/NINEL_2016to2023_Online/MapServer",
@@ -434,6 +446,36 @@
      "agol": "national park",
      "hits": 47,
      "read": 10
+    },
+    {
+     "agol": "national park",
+     "hits": 50,
+     "read": 2
+    },
+    {
+     "agol": "nature reserve",
+     "hits": 50,
+     "read": 2
+    },
+    {
+     "agol": "country park",
+     "hits": 36,
+     "read": 2
+    },
+    {
+     "agol": "national landscape",
+     "hits": 50,
+     "read": 1
+    },
+    {
+     "agol": "open access land",
+     "hits": 15,
+     "read": 2
+    },
+    {
+     "agol": "national trail",
+     "hits": 37,
+     "read": 0
     }
    ],
    "steps": [
@@ -442,9 +484,12 @@
     "wfs",
     "orgs",
     "catalogs",
-    "downloads"
+    "downloads",
+    "search",
+    "eea"
    ],
-   "redo": "2026-10-28"
+   "redo": "2026-10-28",
+   "finished": "2026-10-28"
   },
   "JP": {
    "status": "done",
@@ -495,13 +540,60 @@
      "agol": "national park",
      "hits": 17,
      "read": 0
+    },
+    {
+     "catalog": "https://data.e-gov.go.jp/data",
+     "keyword": "国立公園",
+     "error": "HTTP 400"
+    },
+    {
+     "catalog": "https://data.e-gov.go.jp/data",
+     "keyword": "国定公園",
+     "error": "HTTP 400"
+    },
+    {
+     "catalog": "https://data.e-gov.go.jp/data",
+     "keyword": "自然公園",
+     "error": "HTTP 400"
+    },
+    {
+     "catalog": "https://data.e-gov.go.jp/data",
+     "keyword": "保護区",
+     "error": "HTTP 400"
+    },
+    {
+     "agol": "国立公園",
+     "hits": 9,
+     "read": 0
+    },
+    {
+     "agol": "国定公園",
+     "hits": 17,
+     "read": 0
+    },
+    {
+     "agol": "自然公園",
+     "hits": 21,
+     "read": 0
+    },
+    {
+     "agol": "保護区",
+     "hits": 29,
+     "read": 0
+    },
+    {
+     "agol": "national park",
+     "hits": 17,
+     "read": 0
     }
    ],
    "steps": [
-    "orgs",
+    "known",
     "servers",
     "wfs",
+    "orgs",
     "catalogs",
+    "downloads",
     "search",
     "eea"
    ],
@@ -512,6 +604,7 @@
    "started": "2026-10-28",
    "done": [
     "https://geodienste.bfn.de/ogc/wfs/",
+    "https://geodienste.bfn.de/ogc/wfs/schutzgebiet",
     "https://services1.arcgis.com/RTK5Unh1Z71JKIiR/arcgis/rest/services/FFH/FeatureServer",
     "https://services1.arcgis.com/RTK5Unh1Z71JKIiR/arcgis/rest/services/Vogelschutzgebiete/FeatureServer"
    ],
@@ -573,13 +666,54 @@
     {
      "step": "eea",
      "what": "https://bio.discomap.eea.europa.eu/arcgis/rest/services: HTTP 502 three times: left alone for a day"
+    },
+    {
+     "step": "known",
+     "what": "https://geodienste.bfn.de/ogc/wfs/schutzgebiet: 9 feature types, 9 look like park layers"
+    },
+    {
+     "step": "known",
+     "what": "https://geodienste.bfn.de/ogc/wfs/schutzgebiet",
+     "found": true
+    },
+    {
+     "agol": "Nationalpark",
+     "hits": 30,
+     "read": 0
+    },
+    {
+     "agol": "Naturschutzgebiet",
+     "hits": 11,
+     "read": 0
+    },
+    {
+     "agol": "Naturpark",
+     "hits": 6,
+     "read": 0
+    },
+    {
+     "agol": "Schutzgebiet",
+     "hits": 24,
+     "read": 0
+    },
+    {
+     "agol": "Biosphärenreservat",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "agol": "Landschaftsschutzgebiet",
+     "hits": 8,
+     "read": 0
     }
    ],
    "steps": [
-    "orgs",
+    "known",
     "servers",
     "wfs",
+    "orgs",
     "catalogs",
+    "downloads",
     "search",
     "eea"
    ],
@@ -667,23 +801,116 @@
      "agol": "obszar chroniony",
      "hits": 0,
      "read": 0
+    },
+    {
+     "step": "known",
+     "what": "https://ogcapi.bdl.lasy.gov.pl: 20 OGC API collections, 0 look like park layers"
+    },
+    {
+     "step": "known",
+     "what": "https://ogcapi.bdl.lasy.gov.pl",
+     "found": false
+    },
+    {
+     "step": "known",
+     "what": "https://powietrze.gios.gov.pl/arcgis/rest/services/MPP/FormyOchronyPrzyrody/MapServer",
+     "error": "HTTP 404"
+    },
+    {
+     "step": "known",
+     "what": "https://wfs.bdl.lasy.gov.pl/geoserver/BDL/ows: 20 feature types, 0 look like park layers"
+    },
+    {
+     "step": "known",
+     "what": "https://wfs.bdl.lasy.gov.pl/geoserver/BDL/ows",
+     "found": false
+    },
+    {
+     "step": "server",
+     "what": "https://powietrze.gios.gov.pl/arcgis/rest/services: HTTP 404"
+    },
+    {
+     "catalog": "https://api.dane.gov.pl/1.4",
+     "keyword": "park narodowy",
+     "hits": 30,
+     "services_read": 0,
+     "downloads_listed": 0
+    },
+    {
+     "catalog": "https://api.dane.gov.pl/1.4",
+     "keyword": "park krajobrazowy",
+     "hits": 30,
+     "services_read": 0,
+     "downloads_listed": 0
+    },
+    {
+     "catalog": "https://api.dane.gov.pl/1.4",
+     "keyword": "rezerwat przyrody",
+     "hits": 30,
+     "services_read": 0,
+     "downloads_listed": 0
+    },
+    {
+     "catalog": "https://api.dane.gov.pl/1.4",
+     "keyword": "formy ochrony przyrody",
+     "hits": 30,
+     "services_read": 0,
+     "downloads_listed": 0
+    },
+    {
+     "agol": "park narodowy",
+     "hits": 2,
+     "read": 0
+    },
+    {
+     "agol": "park krajobrazowy",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "agol": "rezerwat przyrody",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "agol": "formy ochrony przyrody",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "agol": "obszar chroniony",
+     "hits": 0,
+     "read": 0
     }
    ],
    "steps": [
-    "orgs",
+    "known",
     "servers",
     "wfs",
+    "orgs",
     "catalogs",
+    "downloads",
     "search",
     "eea"
    ],
    "finished": "2026-10-28"
   },
   "AU": {
-   "status": "paused (out of time, will carry on)",
+   "status": "done",
    "started": "2026-10-28",
    "done": [
+    "http://services.ga.gov.au/gis/rest/services/Northern_Australia_Land_Tenure/MapServer",
+    "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Australian_Marine_Parks/MapServer",
+    "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Australian_Marine_Parks/MapServer/0",
+    "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Australian_Marine_Parks_Outer_Boundary/MapServer/0",
+    "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/FeatureServer/0",
+    "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/CAPAD/FeatureServer/1",
+    "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Indigenous_Protected_Areas/FeatureServer/0",
+    "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Ramsar_Wetlands/FeatureServer",
+    "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/World_Heritage_Areas/FeatureServer",
+    "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/World_Heritage_Areas/MapServer/0",
     "https://mapprod3.environment.nsw.gov.au/arcgis/rest/services/Planning/EPI_Primary_Planning_Layers/MapServer/2",
+    "https://opendata.maps.vic.gov.au/geoserver/wfs",
     "https://public-services.slip.wa.gov.au/public/rest/services/Land_Monitor/Land_Monitor/MapServer",
     "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Imagery/Wooroloo_Bushfire_05_02_2021/MapServer",
     "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Map_of_Bush_Fire_Prone_Areas_3/MapServer",
@@ -708,6 +935,7 @@
     "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Education/MapServer",
     "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Education_WFS/MapServer",
     "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment/MapServer",
+    "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment/MapServer/21",
     "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment_WFS/MapServer",
     "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming/MapServer",
     "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming_WFS/MapServer",
@@ -734,6 +962,7 @@
     "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals/MapServer",
     "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals_WFS/MapServer",
     "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Property_and_Planning/MapServer",
+    "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Property_and_Planning/MapServer/2",
     "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Property_and_Planning_WFS/MapServer",
     "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Soil_Landscape/MapServer",
     "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Soil_Landscape_WFS/MapServer",
@@ -745,6 +974,7 @@
     "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Transport_WFS/MapServer",
     "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer",
     "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water_FS/MapServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/ArcGIS/rest/services/Protected_areas/FeatureServer",
     "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/AUS_Operating_Mines/FeatureServer",
     "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Addtitional_Land_Sites/FeatureServer",
     "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/BESS_Land_Oppotunities/FeatureServer",
@@ -927,9 +1157,28 @@
     "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer",
     "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Planning/MapServer",
     "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PlanningOnline/MapServer",
+    "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/SES_FloodMapping/MapServer",
     "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/SES_FloodMapping_Calibration1/MapServer",
     "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/SES_FloodMapping_Calibration2/MapServer",
     "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/SearchService/MapServer",
+    "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer",
+    "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer",
+    "https://services.thelist.tas.gov.au/arcgis/rest/services/Raster/AerialPhoto1941_50/MapServer",
+    "https://services.thelist.tas.gov.au/arcgis/rest/services/Raster/AerialPhoto1951_60/MapServer",
+    "https://services.thelist.tas.gov.au/arcgis/rest/services/Raster/AerialPhoto1961_70/MapServer",
+    "https://services.thelist.tas.gov.au/arcgis/rest/services/Raster/AerialPhoto1971_80/MapServer",
+    "https://services.thelist.tas.gov.au/arcgis/rest/services/Raster/AerialPhoto1981_90/MapServer",
+    "https://services.thelist.tas.gov.au/arcgis/rest/services/Raster/AerialPhoto1991_2000/MapServer",
+    "https://services.thelist.tas.gov.au/arcgis/rest/services/Raster/AerialPhoto2015_16/MapServer",
+    "https://services.thelist.tas.gov.au/arcgis/rest/services/Raster/AerialPhoto2016_17/MapServer",
+    "https://services.thelist.tas.gov.au/arcgis/rest/services/Raster/AerialPhoto2018_19/MapServer",
+    "https://services.thelist.tas.gov.au/arcgis/rest/services/Raster/HistoricAerialPhoto/MapServer",
+    "https://services.thelist.tas.gov.au/arcgis/rest/services/Raster/LandDistrictChart/MapServer",
+    "https://services.thelist.tas.gov.au/arcgis/rest/services/Raster/RasterMisc/MapServer",
+    "https://services.thelist.tas.gov.au/arcgis/rest/services/Raster/SprentsBook/MapServer",
+    "https://services.thelist.tas.gov.au/arcgis/rest/services/Raster/TTSA/MapServer",
+    "https://services.thelist.tas.gov.au/arcgis/rest/services/Raster/TownGrantCharts/MapServer",
+    "https://services9.arcgis.com/EPcAWuPcSWtfB9jL/arcgis/rest/services/NIAA_Administrative_Boundaries_2020/FeatureServer",
     "https://tiles-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Anduramba_WS/MapServer",
     "https://tiles-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Boro_ws_online/MapServer",
     "https://tiles-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Boulder_creek_Online/MapServer",
@@ -941,7 +1190,9 @@
     "https://tiles-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Koj_Wind_Speed_Tile_Cache/MapServer",
     "https://tiles-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Nebo_WS/MapServer",
     "https://tiles-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/New_England_REZ_WS1km_Online/MapServer",
-    "https://tiles-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Trundle2_online/MapServer"
+    "https://tiles-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Trundle2_online/MapServer",
+    "https://www.environment.gov.au/mapping/rest/services/abares/AustIndigLandForestEstate2020/MapServer",
+    "https://www.environment.gov.au/mapping/rest/services/ogc_services/Australian_Marine_Parks/MapServer"
    ],
    "log": [
     {
@@ -967,39 +1218,206 @@
     {
      "step": "server",
      "what": "https://services.thelist.tas.gov.au/arcgis/rest/services: 9 folders, 56 services read"
+    },
+    {
+     "step": "known",
+     "what": "https://gisext.qfes.qld.gov.au/arcgis/rest/services/Hosted/Protected_areas/FeatureServer/0",
+     "error": "no answer three times: left alone for a day"
+    },
+    {
+     "step": "known",
+     "what": "https://opendata.maps.vic.gov.au/geoserver/wfs: 300 feature types, 20 look like park layers"
+    },
+    {
+     "step": "known",
+     "what": "https://opendata.maps.vic.gov.au/geoserver/wfs",
+     "found": true
+    },
+    {
+     "step": "known",
+     "what": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Property_and_Planning/MapServer/15",
+     "found": false
+    },
+    {
+     "step": "known",
+     "what": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/ArcGIS/rest/services/Protected_areas/FeatureServer",
+     "found": true
+    },
+    {
+     "step": "known",
+     "what": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer/26",
+     "found": true
+    },
+    {
+     "step": "server",
+     "what": "https://gisext.qfes.qld.gov.au/arcgis/rest/services: server left alone (strikes)"
+    },
+    {
+     "step": "server",
+     "what": "https://public-services.slip.wa.gov.au/public/rest/services: 6 folders, 0 services read"
+    },
+    {
+     "step": "server",
+     "what": "https://services.thelist.tas.gov.au/arcgis/rest/services: 9 folders, 18 services read"
+    },
+    {
+     "catalog": "https://data.gov.au/data",
+     "keyword": "national park",
+     "error": "robots.txt says no"
+    },
+    {
+     "catalog": "https://data.gov.au/data",
+     "keyword": "conservation park",
+     "error": "robots.txt says no"
+    },
+    {
+     "catalog": "https://data.gov.au/data",
+     "keyword": "nature reserve",
+     "error": "robots.txt says no"
+    },
+    {
+     "catalog": "https://data.gov.au/data",
+     "keyword": "protected areas",
+     "error": "robots.txt says no"
+    },
+    {
+     "catalog": "https://data.nsw.gov.au/data",
+     "keyword": "national park",
+     "error": "HTTP 400"
+    },
+    {
+     "catalog": "https://data.nsw.gov.au/data",
+     "keyword": "conservation park",
+     "error": "HTTP 400"
+    },
+    {
+     "catalog": "https://data.nsw.gov.au/data",
+     "keyword": "nature reserve",
+     "error": "HTTP 400"
+    },
+    {
+     "catalog": "https://data.nsw.gov.au/data",
+     "keyword": "protected areas",
+     "error": "HTTP 400"
+    },
+    {
+     "catalog": "https://data.qld.gov.au",
+     "keyword": "national park",
+     "error": "HTTP 400"
+    },
+    {
+     "catalog": "https://data.qld.gov.au",
+     "keyword": "conservation park",
+     "error": "HTTP 400"
+    },
+    {
+     "catalog": "https://data.qld.gov.au",
+     "keyword": "nature reserve",
+     "error": "HTTP 400"
+    },
+    {
+     "catalog": "https://data.qld.gov.au",
+     "keyword": "protected areas",
+     "error": "HTTP 400"
+    },
+    {
+     "catalog": "https://discover.data.vic.gov.au",
+     "keyword": "national park",
+     "error": "robots.txt says no"
+    },
+    {
+     "catalog": "https://discover.data.vic.gov.au",
+     "keyword": "conservation park",
+     "error": "robots.txt says no"
+    },
+    {
+     "catalog": "https://discover.data.vic.gov.au",
+     "keyword": "nature reserve",
+     "error": "robots.txt says no"
+    },
+    {
+     "catalog": "https://discover.data.vic.gov.au",
+     "keyword": "protected areas",
+     "error": "robots.txt says no"
+    },
+    {
+     "agol": "national park",
+     "hits": 50,
+     "read": 5
+    },
+    {
+     "agol": "conservation park",
+     "hits": 45,
+     "read": 0
+    },
+    {
+     "agol": "nature reserve",
+     "hits": 50,
+     "read": 1
+    },
+    {
+     "agol": "protected areas",
+     "hits": 50,
+     "read": 3
+    },
+    {
+     "agol": "state forest",
+     "hits": 6,
+     "read": 0
+    },
+    {
+     "agol": "land tenure",
+     "hits": 29,
+     "read": 3
     }
    ],
    "steps": [
-    "orgs"
-   ]
+    "orgs",
+    "known",
+    "servers",
+    "wfs",
+    "catalogs",
+    "downloads",
+    "search",
+    "eea"
+   ],
+   "finished": "2026-10-28"
   }
  },
  "last_run": {
   "date": "2026-10-28",
   "stats": {
-   "requests": 1684,
+   "requests": 430,
    "hits": 0,
-   "leads": 299,
-   "already_read": 6,
-   "skipped": 70,
-   "not_official": 30,
-   "robots": 5,
-   "strikes": 3,
-   "errors": 9
+   "leads": 17,
+   "already_read": 8,
+   "skipped": 21,
+   "not_official": 553,
+   "robots": 9,
+   "strikes": 7,
+   "errors": 30,
+   "retried_json": 2
   },
   "countries": [
-   "GB paused: 297 leads (A 161), known-good found 2 of 2"
+   "GB done: 300 leads (A 162), known-good found 2 of 2",
+   "DE done: 3 leads (A 2), known-good found 1 of 1",
+   "PL done: 13 leads (A 0), known-good found 0 of 3",
+   "JP done: 1 leads (A 0), known-good found 0 of 0",
+   "AU done: 57 leads (A 46), known-good found 4 of 5"
   ],
   "dead_servers": [
-   "mmo.cloud.esriuk.com"
+   "cagmap.snh.gov.uk",
+   "gisext.qfes.qld.gov.au"
   ],
   "robots_refused": {
-   "ckan.publishing.service.gov.uk": 4,
-   "map.cornwall.gov.uk": 1
+   "map.cornwall.gov.uk": 1,
+   "data.gov.au": 4,
+   "discover.data.vic.gov.au": 4
   },
   "robots_said": {
-   "ckan.publishing.service.gov.uk": "User-agent: * | Disallow: /",
-   "map.cornwall.gov.uk": "User-agent: * | Disallow: /"
+   "map.cornwall.gov.uk": "User-agent: * | Disallow: /",
+   "data.gov.au": "User-agent: * | Disallow: /",
+   "discover.data.vic.gov.au": "User-agent: * | Disallow: /dataset/rate/ | Disallow: /revision/ | Disallow: /dataset/*/history | Disallow: /api/ | Crawl-Delay: 10"
   },
   "robots_exempted_hosts (HQ ruling Oct 27: ArcGIS REST API paths only)": {}
  },
