@@ -1,0 +1,159 @@
+{
+ "about": "GAP FILLER leads (review only; never a key): per park with no outline, what official layer was found under its pin and how sure. Rules in the script docstring.",
+ "area": "US-KY",
+ "counts": {
+  "check": 0,
+  "checked_ever": 3,
+  "different_land": 0,
+  "layers_read": 4,
+  "missing": 3,
+  "name_mismatch": 1,
+  "nothing": 1,
+  "padus_match": 1,
+  "sure": 0
+ },
+ "parks": {
+  "US-10172": {
+   "a": 0,
+   "answers": 5,
+   "find": {
+    "acres": 250,
+    "category": "Fee",
+    "des": "SOTH",
+    "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+    "manager": "SFW",
+    "ours_acres": 0,
+    "pin_inside": true,
+    "poly": "Dr. James C. Salato Wildlife Education Center",
+    "rel": "name match",
+    "sure": "YES",
+    "where": "PAD-US"
+   },
+   "finds": [
+    {
+     "acres": 132,
+     "category": "Fee",
+     "des": "SCA",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "manager": "SFW",
+     "ours_acres": 0,
+     "pin_inside": true,
+     "poly": "KDFWR Game Farm",
+     "rel": "different land under the pin",
+     "sure": "no",
+     "where": "PAD-US"
+    },
+    {
+     "acres": 250,
+     "category": "Fee",
+     "des": "SOTH",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "manager": "SFW",
+     "ours_acres": 0,
+     "pin_inside": true,
+     "poly": "Dr. James C. Salato Wildlife Education Center",
+     "rel": "name match",
+     "sure": "YES",
+     "where": "PAD-US"
+    }
+   ],
+   "la": 38.1777,
+   "lo": -84.9231,
+   "n": "Salato Wildlife Refuge",
+   "read": "2026-10-28",
+   "requests": 6,
+   "sure": "YES",
+   "t": "Other",
+   "tried": [
+    "read-layer Kentucky State Parks boundaries (kygisserver)",
+    "read-layer Kentucky public hunting areas / WMAs (kygisserver)",
+    "read-layer Kentucky state nature preserves (kygisserver)",
+    "read-layer Kentucky natural areas (kygisserver)",
+    "agency server kygisserver.ky.gov",
+    "hub search",
+    "PAD-US point"
+   ],
+   "ver": 1,
+   "verdict": "padus",
+   "why": "PAD-US record matches the name under the pin (fee / designation): chat 2 checks the manager and type"
+  },
+  "US-3791": {
+   "a": 0,
+   "answers": 6,
+   "find": {
+    "acres": 34,
+    "category": "Fee",
+    "des": "LP",
+    "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+    "manager": "CITY",
+    "ours_acres": 0,
+    "pin_inside": true,
+    "poly": "Trail Of Tears Park",
+    "rel": "name mismatch (likely our matcher)",
+    "sure": "check",
+    "where": "PAD-US"
+   },
+   "finds": [
+    {
+     "acres": 34,
+     "category": "Fee",
+     "des": "LP",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "manager": "CITY",
+     "ours_acres": 0,
+     "pin_inside": true,
+     "poly": "Trail Of Tears Park",
+     "rel": "name mismatch (likely our matcher)",
+     "sure": "check",
+     "where": "PAD-US"
+    }
+   ],
+   "la": 36.8532,
+   "lo": -87.4701,
+   "n": "Trail of Tears National Historic Trail",
+   "read": "2026-10-28",
+   "requests": 7,
+   "sure": "check",
+   "t": "National / NPS",
+   "tried": [
+    "read-layer Kentucky State Parks boundaries (kygisserver)",
+    "read-layer Kentucky public hunting areas / WMAs (kygisserver)",
+    "read-layer Kentucky state nature preserves (kygisserver)",
+    "read-layer Kentucky natural areas (kygisserver)",
+    "agency server kygisserver.ky.gov",
+    "hub search",
+    "PAD-US point"
+   ],
+   "ver": 1,
+   "verdict": "mismatch",
+   "why": "a polygon under the pin shares the park name: likely a name mismatch in our matcher"
+  },
+  "US-4572": {
+   "a": 0,
+   "answers": 5,
+   "find": null,
+   "finds": [],
+   "la": 41.2646,
+   "lo": -95.9246,
+   "n": "Lewis and Clark National Historic Trail",
+   "read": "2026-10-28",
+   "requests": 6,
+   "sure": "no",
+   "t": "National / NPS",
+   "tried": [
+    "read-layer Kentucky State Parks boundaries (kygisserver)",
+    "read-layer Kentucky public hunting areas / WMAs (kygisserver)",
+    "read-layer Kentucky state nature preserves (kygisserver)",
+    "read-layer Kentucky natural areas (kygisserver)",
+    "agency server kygisserver.ky.gov",
+    "hub search",
+    "PAD-US point"
+   ],
+   "ver": 1,
+   "verdict": "nothing",
+   "why": "no official layer found; tried: read-layer Kentucky State Parks boundaries (kygisserver), read-layer Kentucky public hunting areas / WMAs (kygisserver), read-layer Kentucky state nature preserves (kygisserver), read-layer Kentucky natural areas (kygisserver), agency server kygisserver.ky.gov, hub search, PAD-US point"
+  }
+ },
+ "read": "2026-10-28",
+ "ver": 1
+}
