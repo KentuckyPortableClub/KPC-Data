@@ -36,7 +36,7 @@ UA = 'KPC park documents (https://kentuckyportableclub.github.io/KPC-Links/; ham
 GAP = 2.0
 STRIKES_OUT = 3
 REFRESH_DAYS = 30
-VER = 2   # Oct 28 (HQ + chat 8's breaks): records made by an older rule set are read again
+VER = 3   # Oct 28 (chat 8 F1-F10 + chat 11's Kentucky grade): records made by an older rule set are read again
 PDF_FIRST = 400_000
 PDF_MAX = 2_000_000
 TODAY = time.strftime('%Y-%m-%d')
@@ -53,17 +53,23 @@ QUEUE = ['US-KY',
          'CA-ON', 'CA-QC', 'CA-NB', 'CA-NS', 'CA-PE', 'CA-NL',                                                 # Canada east
          'CA-MB', 'CA-SK', 'CA-AB', 'CA-BC', 'CA-YT', 'CA-NT', 'CA-NU']                                        # Canada west
 # hosts chat 8 found hide their map links behind script or refuse a plain reader (OFFICIAL_MAPS SUMMARY 'NEEDS A BROWSER BOT')
-BROWSER_HOSTS = {'floridastateparks.org', 'bcparks.ca', 'pgc.pa.gov', 'dep.nj.gov', 'nj.gov', 'state.nj.us', 'fs.usda.gov', 'blm.gov', 'alapark.com',
+BROWSER_HOSTS = {'tn.gov', 'tnstateparks.com', 'floridastateparks.org', 'bcparks.ca', 'pgc.pa.gov', 'dep.nj.gov', 'nj.gov', 'state.nj.us', 'fs.usda.gov', 'blm.gov', 'alapark.com',
                  'arkansasstateparks.com', 'agfc.com', 'apps.agfc.com', 'azstateparks.com', 'azgfd.com', 'gastateparks.org', 'ksoutdoors.com',
                  'michigan.gov', 'dnr.state.mi.us', 'www2.dnr.state.mi.us', 'mdwfp.com', 'fwp.mt.gov', 'nhstateparks.org', 'emnrd.state.nm.us',
                  'vtstateparks.com', 'parks.wa.gov', 'iowadnr.gov', 'dnr.illinois.gov', 'parksandrecreation.idaho.gov', 'dlnr.hawaii.gov',
                  'stateparks.utah.gov', 'mass.gov', 'portal.ct.gov', 'destateparks.com', 'usace.army.mil', 'parks.canada.ca', 'ontarioparks.ca',
                  'albertaparks.ca', 'tpwd.texas.gov', 'stateparks.com'}
 MAPWORD = re.compile(r'\bmaps?\b|brochure|trail guide|geopdf|avenza|\bmapa\b|carte', re.I)
-NOTMAP = re.compile(r'google\.|bing\.com|apple\.com/maps|mapquest|openstreetmap|waze|sitemap|site-map|\bmap of the site|roadmap|mapping tool|interactive map viewer', re.I)
+NOTMAP = re.compile(r'google\.|bing\.com|apple\.com/maps|mapquest|openstreetmap|waze|sitemap|site-map|\bmap of the site|roadmap|mapping tool|interactive map viewer|'
+                    r'regulations|air-quality|water/gis|/gis/pages/default|gis\.myfwc\.com|recreationmap|public-?lands-?(map|viewer|finder)|statewide|/library$|laws-regulations', re.I)   # chat 8 F2, chat 11 fix 1
+VIEWER = re.compile(r'gis\.myfwc\.com|recreationmap|/apps/|webappviewer|experience\.arcgis|mapviewer|portal/apps|statewide', re.I)
+PLANW = re.compile(r'\bdraft\b|\bplans?\b|proposed|concept|master ?plan|management plan|environmental assessment', re.I)   # chat 8 F3: not the visitor map
+NOTRULES = re.compile(r'air-?quality|laws-regulations|/library|privacy|accessibility|foia|/regulations/pages/default|environmental-protection|water-quality|permitting', re.I)   # chat 11 fix 2
 RULEWORD = re.compile(r'\brules?\b|regulations?|policies|laws? (and|&) policies|compendium|permits?|know before you go|r[èe]glements?|hunting (and|&) fishing regulations|park rules|ordinance', re.I)
-HANDOVER = re.compile(r'((?:transferred|handed over|turned over|conveyed|deeded|leased|donated) (?:to|from) (?:the )?(?:city|county|town|village|parish|state|commonwealth|municipality|tribe|nation) (?:of )?[A-Z][\w\s.\'-]{2,50})', re.I)
-MANAGED = re.compile(r'((?:is |now |currently )?(?:managed|operated|owned|maintained|administered|run) (?:jointly )?by (?:the )?[A-Z][\w\s.&\'-]{3,70}?)(?=[.,;:(\n]|\s(?:and|which|that|in|for|under)\b)', re.I)
+ORG = r'(?:the )?(?:(?:City|County|Town|Village|Commonwealth|State|Parish|Municipality|Township) of [A-Z][\w.\'-]+(?: [A-Z][\w.\'-]+){0,2}|[A-Z][\w.&\'-]*(?: (?:of|and|&|for|the)| [A-Z][\w.&\'-]*){0,6}(?: (?:County|City|Fiscal Court|Parks(?: (?:and|&) Recreation)?|Department|Dept\.?|Division|Office|Service|Commission|Agency|District|Authority|Foundation|Trust|Conservancy|Corporation|Tribe|Nation|Township|Town|Village|Government|Board|Council|State)))\b'
+HANDOVER = re.compile(r'((?:transferred|handed (?:over )?to|turned over|conveyed|now (?:managed|operated|owned|run)|will be (?:managed|operated|run)|no longer (?:managed|operated|owned|run)|took over|taken over|assumed (?:management|ownership)|as of (?:19|20)\d\d)[^.;]{0,60}?(?:to |by |from )?' + ORG + r'[^.;]{0,80}?(?:(?:19|20)\d\d|\bnow\b)[^.;]{0,40}[.;]|(?:in |since |as of )(?:20\d\d)[^.;]{0,80}?(?:transferred|handed (?:over )?to|turned over|now (?:managed|operated|owned|run) by|took over|taken over)[^.;]{0,80}?' + ORG + r'[^.;]{0,40}[.;])')
+MANAGED = re.compile(r'((?:is |now |currently )?(?:managed|operated|owned|maintained|administered|co-?managed|run) (?:jointly )?by ' + ORG + r')(?=[.,;:(\n]|\s(?:and|which|that|in|for|under|through|as)\b)')
+ABBR_END = re.compile(r'\b(?:U\.S|U\. S|St|Dr|Co|Inc|Mr|Mrs|Ms|Jr|Sr|No|Dept|Mt|Ft)\.$')
 MONTHS = 'january|february|march|april|may|june|july|august|september|october|november|december|jan|feb|mar|apr|jun|jul|aug|sep|sept|oct|nov|dec'
 PRINTED = [
     (re.compile(r'(?:date published|published|publication date|revised|revision|updated|last updated|updated on|map date|date of map|printed|produced|prepared|effective|current as of|as of|issued)\s*[:\-]?\s*((?:' + MONTHS + r')\.?\s+\d{1,2},?\s+(?:19|20)\d\d|\d{1,2}/\d{1,2}/(?:19|20)\d\d|(?:19|20)\d\d-\d\d-\d\d|(?:' + MONTHS + r')\.?\s+(?:19|20)\d\d|\d{1,2}/(?:19|20)\d\d|(?:19|20)\d\d)', re.I), 'printed on the map'),
@@ -137,6 +143,7 @@ def rested(h):
 def get(u, rng=None, timeout=40, head=False):
     """Polite GET: robots, 2 s per host, back-off on 429 / 5xx, three strikes and the host rests a day.
     Returns (status, headers, body bytes, final url). rng = (start, end) reads only that part of a file."""
+    u = urllib.parse.quote(u, safe=":/?&=%#+~@,;$!*()'[]")   # chat 11: an address with spaces (University of the Cumberlands WMA) is sent escaped
     h = host_of(u)
     if rested(h): return 'rest', {}, b'', u
     if not robots_ok(u): return 'robots', {}, b'', u
@@ -193,6 +200,8 @@ def map_score(url, text, agency_host):
     s = 0; u = url.lower(); t = (text or '').lower()
     if NOTMAP.search(u) or NOTMAP.search(t): return -9
     if not (MAPWORD.search(u) or MAPWORD.search(t)): return -9
+    if VIEWER.search(u): return -9      # chat 8 F2: a statewide viewer is not THE park's map
+    if PLANW.search(u) or PLANW.search(t): s -= 6   # chat 8 F3: a plan / draft is never the main map
     if u.endswith('.pdf') or '.pdf' in u: s += 4
     elif re.search(r'\.(jpe?g|png|gif)(\?|$)', u): s += 2
     elif re.search(r'/rest/services/|arcgis|mapserver|featureserver', u): s += 1
@@ -208,6 +217,7 @@ def rules_score(url, text):
     t = (text or '').lower(); u = url.lower()
     if not (RULEWORD.search(t) or RULEWORD.search(u)): return -9
     if re.search(r'permit', t + u) and not re.search(r'rules?|regulation', t + u): return -9   # a permit SHOP is not the rules (chat 8 B13)
+    if NOTRULES.search(u) or NOTRULES.search(t): return -9   # chat 11: air-quality regulations / a generic laws page / a library are not a park's rules
     if NOTMAP.search(u): return -9
     s = 1
     if re.search(r'rules|regulations|compendium|laws', t): s += 2
@@ -307,6 +317,8 @@ def check_url(u, want_text=True, name=''):
     r['status'] = 'ok' if st in (200, 206) else ('rest' if st == 'rest' else 'robots' if st == 'robots' else f'HTTP {st}' if isinstance(st, int) else str(st))
     r['final'] = final
     if r['status'] != 'ok': return r
+    if VIEWER.search(final or u): r['status'] = 'opened, a statewide map viewer, not this park\'s map (chat 8 F2)'; r['kind'] = 'viewer (statewide)'; return r
+    if PLANW.search(urllib.parse.unquote((final or u).rsplit('/', 1)[-1])): r['status'] = 'opened, a plan / draft, not the visitor map (chat 8 F3)'; r['kind'] = 'plan'; return r
     ct = (hd.get('content-type') or '').lower()
     if looks_pdf and body[:5] != b'%PDF-' and 'application/pdf' not in ct:
         r['status'] = 'opened, wrong thing (a .pdf address that is not a PDF: a soft 404 or a login page)'; return r
@@ -323,8 +335,12 @@ def check_url(u, want_text=True, name=''):
         if cy: r['copyright'] = cy.group(1)   # kept apart: a template / base-map year, never the map date
         r['names_park'] = names_park(name, txt) if name else None
         if OVERVIEW.search(txt[:3000]) and not r['names_park']: r['kind'] = 'region overview'
+        if name and r['names_park'] is False and len(txt.strip()) > 80 and r['kind'] == 'pdf':
+            r['status'] = 'opened, a readable map that does not name this park (chat 8 F2: another unit / several units)'; return r
+        if r['date'] and str(r['date']).startswith(TODAY): r['date'], r['date_how'] = None, 'date unknown (the printed date is the day it was fetched: generated on request)'   # F5
     elif ct.startswith('image/') or re.search(r'\.(jpe?g|png|gif)(\?|$)', u, re.I):
-        r['kind'] = 'image'
+        r['kind'] = 'image'; r['kind_note'] = 'image: the name is known from the file name only, not read from the map (chat 8 F9)'
+        r['names_park'] = bool(name and names_park(name, urllib.parse.unquote(u.rsplit('/', 1)[-1]).replace('_', ' ').replace('-', ' ')))
     elif re.search(r'/rest/services/|mapserver|featureserver', u, re.I):
         r['kind'] = 'arcgis'
     else:
@@ -335,7 +351,9 @@ def check_url(u, want_text=True, name=''):
         if len(txt) < 4000 and SOFT404.search(txt[:1500]):
             r['status'] = 'opened, wrong thing (the page says not found / sign in)'; return r
         m = re.search(r'(?:last updated|page last updated|updated|last modified|date modified)\s*[:\-]?\s*((?:' + MONTHS + r')\.?\s+\d{1,2},?\s+(?:19|20)\d\d|(?:19|20)\d\d-\d\d-\d\d|\d{1,2}/\d{1,2}/(?:19|20)\d\d)', txt, re.I)
-        if m and plausible(re.search(r'(?:19|20)\d\d', m.group(1)).group()): r['posted'], r['posted_how'] = m.group(1), "the page's 'last updated' line"
+        if m and plausible(re.search(r'(?:19|20)\d\d', m.group(1)).group()): r['posted'], r['posted_how'] = m.group(1), "page last updated (the page's own line, not the map's date; chat 8 F4)"
+        r['names_park'] = names_park(name, txt) if name else None
+        if name and r['names_park'] is False and len(txt) > 300: r['status'] = 'opened, a page that does not name this park (a generic agency page is not its map)'; return r
         if len(txt) < 300 and re.search(r'enable javascript|loading|<app-root|ng-app|__NEXT_DATA__|data-reactroot', html, re.I): r['shell'] = True
     if not r['posted']:
         d, how = date_from_url(final if final else u)
@@ -343,6 +361,9 @@ def check_url(u, want_text=True, name=''):
     if not r['posted'] and hd.get('last-modified') and r['kind'] in ('pdf', 'image', 'region overview'):
         m = re.search(r'(\d{1,2}) ([A-Za-z]{3}) ((?:19|20)\d\d)', hd['last-modified'])
         if m and plausible(m.group(3)): r['posted'], r['posted_how'] = f'{m.group(2)} {m.group(1)}, {m.group(3)}', "posted: the server's file date"
+    if r.get('date') and 'stamp' in str(r.get('date_how')) and r.get('posted'):
+        ys, yp = re.search(r'(19|20)\d\d', str(r['date'])), re.search(r'(19|20)\d\d', str(r['posted']))
+        if ys and yp and int(yp.group()) - int(ys.group()) > 1: r['date_how'] = f"file stamp {ys.group()} (older than the posting {yp.group()} by more than a year: a re-posted old map, this map may be old; chat 8 F5)"
     if not r['date']: r['date'], r['date_how'] = None, f'date unknown, checked {TODAY}'   # Oct 28 (HQ 3): never 'the day we read it' as a map date
     return r
 
@@ -416,16 +437,37 @@ def find_on_page(pg, agency_host):
     return maps, rules
 
 
-def who_runs(texts, agency_name):
+def sentences(txt):
+    """Whole sentences (an abbreviation list keeps 'U.S.' and 'St.' from ending one): chat 8 F6, never a cut sentence."""
+    out, cur = [], ''
+    for piece in re.split(r'(?<=[.!?])\s+(?=[A-Z("])', ' '.join((txt or '').split())):
+        cur = (cur + ' ' + piece).strip() if cur else piece
+        if ABBR_END.search(cur): continue
+        out.append(cur); cur = ''
+    if cur: out.append(cur)
+    return out
+
+
+def who_runs(texts, agency_name, park=''):
+    """'runs' hints = whole sentences with an ORGANISATION after 'by' (never a person, a verb or 'beavers'); a HANDOVER needs a
+    change word (transferred / now managed by / took over / as of <year>), an organisation, and a year of 2000 or later or 'now',
+    inside one whole sentence that names the park when the park's name is known (chat 8 F6 / F7, chat 11 fix 4)."""
     hints, hand = [], []
+    core_w = [w for w in core(park).split() if len(w) > 3][:3]
     for txt in texts:
-        for m in HANDOVER.finditer(txt or ''):
-            s = m.group(1).strip()
-            if s not in hand: hand.append(s[:120])
-        for m in MANAGED.finditer(txt or ''):
-            s = ' '.join(m.group(1).split())
-            if len(s) < 100 and s not in hints: hints.append(s)
-    return hints[:3], hand[:3]
+        for sen in sentences(txt):
+            if len(sen) > 400 or len(sen) < 25: continue
+            for m in HANDOVER.finditer(sen):
+                s = m.group(1).strip()
+                yr = re.search(r'(19|20)\d\d', s)
+                if yr and int(yr.group()) < 2000: continue
+                if core_w and not any(re.search(r'\b' + re.escape(w) + r'\b', low(sen)) for w in core_w): continue
+                if s not in hand: hand.append(sen[:300] if len(sen) <= 300 else s[:300])
+            for m in MANAGED.finditer(sen):
+                s = ' '.join(m.group(1).split())
+                if re.search(r'\bby (?:the )?(?:periodic|prescribed|beaver|his |her |their |local |volunteer|a |an )', s, re.I): continue
+                if len(s) < 120 and s not in hints: hints.append(s)
+    return hints[:3], hand[:2]
 
 
 def rules_for(fam, urls, pg_rules, lists_entry):
@@ -568,12 +610,13 @@ def one_park(ref, S, lists, area):
         rec['rules'] = rules_for(fam, [u for u in urls if u], page_rules, le)
         if rec['rules']['status'] == 'ok': STAT['rules'] += 1
     # 4 who runs it
-    hints, hand = who_runs(texts, rec['agency'])
+    hints, hand = who_runs(texts, rec['agency'], S['name'])
     rec['runs'] = hints; rec['handover'] = hand
     if hand:
         STAT['handovers'] = STAT.get('handovers', 0) + 1
-        new = re.sub(r'^.*?(?:to|from) (?:the )?', '', hand[0]).strip(' .')
-        new = re.split(r'\s+(?:in|on|since|effective|as of|during|from)\b|\s+\d', new)[0].strip(' .,') or new
+        m = re.search(r'(?:to|by) ' + ORG, hand[0])
+        new = (m.group(0)[3:] if m else re.sub(r'^.*?(?:to|from|by) (?:the )?', '', hand[0])).strip(' .,')
+        new = re.split(r'\s+(?:in|on|since|effective|as of|during|from|which|that)\b|\s+\d', new)[0].strip(' .,') or new
         # Oct 28 (HQ 4, Brandon OK): a POTA-numbered park STAYS on the card; the card warns and names the source
         rec['card_note'] = f'May now be run by {new}: check before you go.'
         rec['handover_src'] = S['page'] or ((rec.get('map') or {}).get('page') or '')
@@ -632,7 +675,7 @@ def browser_pass(area, D, parks, budget_s):
             if (not rec.get('rules') or rec['rules'].get('status') != 'ok') and pr:
                 st, _, _, final = get(pr[0][1])
                 if st in (200, 206): rec['rules'] = {'url': final, 'how': f"a link on the page in a browser ('{pr[0][2]}')", 'status': 'ok'}; STAT['rules'] += 1
-            hints, hand = who_runs([text], rec.get('agency'))
+            hints, hand = who_runs([text], rec.get('agency'), rec.get('n', ''))
             rec['runs'] = rec['runs'] or hints; rec['handover'] = rec['handover'] or hand
             rec['browser_checked'] = TODAY
             time.sleep(2)
@@ -742,15 +785,20 @@ def review(state):
         f = OUT / f'{area}.json'
         if not f.exists(): continue
         D = load(f, {})
-        L += ['', f'## {area} sample (first 12 parks with a map)', '| ref | park | map | kind · via | date (how) · posted | rules | runs / card note |', '|---|---|---|---|---|---|---|']
-        n = 0
+        import random as _rnd
+        groups = {}
         for ref, p in sorted(D['parks'].items()):
-            m = p.get('map') or {}
-            if m.get('status') != 'ok': continue
+            if (p.get('map') or {}).get('status') != 'ok': continue
+            groups.setdefault(base_host(host_of(p['map'].get('url') or '')).split('.')[-2] if '.' in base_host(host_of(p['map'].get('url') or '')) else 'other', []).append(ref)
+        _rnd.seed(28); pick = []
+        for g in sorted(groups): pick += _rnd.sample(groups[g], min(12, len(groups[g])))   # chat 8 F10: a random 12 per agency group
+        L += ['', f'## {area} sample (random 12 per agency group, seed 28)', '| ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |', '|---|---|---|---|---|---|---|']
+        n = 0
+        for ref in pick:
+            p = D['parks'][ref]; m = p.get('map') or {}
             ru = (p.get('rules') or {})
             L.append(f"| {ref} | {p.get('n','')[:40]} | {m.get('url','')[:90]} | {m.get('kind','')}{' ✓name' if m.get('names_park') else ''} · {str(m.get('via',''))[:40]} | {m.get('date') or '—'} ({m.get('date_how','')[:45]}) · posted {m.get('posted') or '—'} | {(ru.get('url') or '')[:70] + (' ✓' if ru.get('status') == 'ok' else ' ✗') if ru else ''} | {(p.get('card_note') or '; '.join((p.get('runs') or [])[:1]))[:90]} |")
             n += 1
-            if n >= 12: break
         hand = [(ref, p) for ref, p in D['parks'].items() if p.get('handover')]
         if hand:
             L += ['', f'### {area} HANDOVER notes ({len(hand)}): the park STAYS on the card with the note (HQ Oct 28); a person checks the source', *[f"- {ref} {p.get('n','')}: {' / '.join(p['handover'])} → card: '{p.get('card_note','')}' (source {p.get('handover_src','')})" for ref, p in hand[:30]]]
@@ -773,7 +821,10 @@ def main():
     for h, t in (state.get('hosts') or {}).items():
         if t > time.time(): DEAD[h] = t
     want = (os.environ.get('AREAS') or '').upper().split()
-    areas = [a for a in want if a in QUEUE] if want else [a for a in QUEUE if (state['areas'].get(a) or {}).get('status') != 'done']
+    def stale(a):   # an area whose records were made by an older rule set is read again (VER)
+        try: return any((p.get('ver') or 1) < VER for p in (load(OUT / f'{a}.json', {}).get('parks') or {}).values())
+        except Exception: return False  # noqa: BLE001
+    areas = [a for a in want if a in QUEUE] if want else [a for a in QUEUE if (state['areas'].get(a) or {}).get('status') != 'done' or stale(a)]
     if want and not areas: notice('no known area in AREAS'); return
     web = (load('data/parkinfo-web.json', {}) or load(LINKS / 'data/parkinfo-web.json', {})).get('parks') or {}
     lists = load(OUT / 'lists.json', {}).get('areas') or {}
