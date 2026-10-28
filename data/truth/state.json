@@ -60,6 +60,26 @@
    "status": "done",
    "updated": "2026-10-28"
   },
+  "US-IL": {
+   "checked": 219,
+   "counts": {
+    "agree": 33,
+    "handover_hints": 15,
+    "no_page": 1,
+    "no_size": 39,
+    "off": 80,
+    "ours_unknown": 3,
+    "parks": 219,
+    "retired": 0,
+    "unsure": 48,
+    "weak": 8,
+    "with_outline": 204
+   },
+   "left": 0,
+   "parks": 219,
+   "status": "done",
+   "updated": "2026-10-28"
+  },
   "US-IN": {
    "checked": 229,
    "counts": {
@@ -241,29 +261,29 @@
  },
  "last": {
   "areas": [
-   "US-IN"
+   "US-IL"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "errors": 6,
-   "requests": 78,
-   "rested": 356,
+   "errors": 0,
+   "requests": 544,
+   "rested": 4,
    "robots": 0,
-   "strikes": 6
+   "strikes": 0
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 1,
-   "no_size": 187,
-   "ours_unknown": 1,
-   "pages_read": 64,
-   "parks": 229,
+   "handover_hints": 15,
+   "no_size": 40,
+   "ours_unknown": 3,
+   "pages_read": 498,
+   "parks": 219,
    "retired": 0,
-   "size_agree": 6,
-   "size_off": 9,
-   "size_unsure": 5,
+   "size_agree": 33,
+   "size_off": 80,
+   "size_unsure": 48,
    "skipped_fresh": 0,
-   "with_outline": 208
+   "with_outline": 204
   },
   "when": "2026-10-28"
  },
