@@ -1,0 +1,68 @@
+name: KPC world harvester (hidden)
+# Oct 27 2026 (HQ 10:42 PM, built by Fable): explores OUTSIDE North America for official park GIS (protected-area and park
+# boundary layers) and writes LEADS to data/harvest/ for chat 8 to grade. Separate from the Discovery Bot (own scripts, own folder).
+# Manners are in the script (1 request per 2 s per server, robots.txt, back-off, three strikes, metadata only, one country at a time).
+# A job = up to 5 chunks of 55 min, ONE commit per chunk (at most hourly). When countries remain and 'chain' allows, the job starts
+# the next job itself. Never fails except a failed save (a real break).
+on:
+  workflow_dispatch:
+    inputs:
+      countries:
+        description: 'Country codes (e.g. "GB"); blank = the next unfinished countries in queue order'
+        default: ''
+      chunks:
+        description: 'Chunks of 55 min in this job (max 5)'
+        default: '5'
+      chain:
+        description: 'How many MORE jobs may follow this one by themselves when countries remain (0 = none)'
+        default: '4'
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: kpc-world-harvest
+  cancel-in-progress: false
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - name: Chat 8's scouting + the answer keys (KPC-Links, read-only)
+        uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+      - name: Seed the country list from the scouting
+        continue-on-error: true
+        run: cd kpcdata && LINKS=../links python3 .github/scripts/kpc_world_seed.py || true
+      - name: Harvest in chunks, one save per chunk
+        continue-on-error: true
+        env:
+          COUNTRIES: ${{ inputs.countries }}
+        run: |
+          cd kpcdata
+          N=${{ inputs.chunks }}; [ "$N" -gt 5 ] && N=5
+          for i in $(seq 1 $N); do
+            LINKS=../links MINUTES=55 python3 .github/scripts/kpc_world_harvest.py || true
+            bash ../links/.github/scripts/kpc_push_data.sh . "world harvester: chunk $i (hidden leads)" data/harvest || true
+            LEFT=$(python3 -c "import json;s=json.load(open('data/harvest/state.json'));c=json.load(open('data/harvest/countries.json'))['countries'];print(sum(1 for k in c if s['countries'].get(k,{}).get('status')!='done'))" 2>/dev/null || echo 1)
+            echo "chunk $i done, $LEFT countries left"
+            if [ -n "$COUNTRIES" ]; then
+              D=$(python3 -c "import json,os;s=json.load(open('data/harvest/state.json'));print(all(s['countries'].get(k,{}).get('status')=='done' for k in os.environ['COUNTRIES'].split()))" 2>/dev/null || echo False)
+              [ "$D" = True ] && break
+            elif [ "$LEFT" = 0 ]; then break; fi
+          done
+          echo "LEFT=$LEFT" >> "$GITHUB_ENV"
+      - name: Carry on in a new job when countries remain
+        if: ${{ inputs.countries == '' && inputs.chain != '0' }}
+        continue-on-error: true
+        run: |
+          [ "${LEFT:-0}" = 0 ] && { echo "::notice title=World harvester::queue finished"; exit 0; }
+          NEXT=$(( ${{ inputs.chain }} - 1 ))
+          gh workflow run kpc-world-harvest.yml -R ${{ github.repository }} -f countries= -f chunks=5 -f chain=$NEXT && echo "::notice title=World harvester::$LEFT countries left: the next job starts by itself ($NEXT more allowed after it)"
