@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
     inputs:
       areas:
-        description: 'Lines, one per entry "STATES|tag" separated by ";" (e.g. "US-MI|mi; US-UT|ut"); or a region name per entry (southeast; midwest; …)'
+        description: 'Lines, one per entry "STATES|tag" separated by ";" (e.g. "US-MI|mi; US-UT|ut"); or a region name per entry (southeast; midwest; …); "@worker" after an entry = start from its saved fetcher bundle'
         default: 'US-MI|mi; US-UT|ut; southeast; midwest; northeast; southcentral; mountain; pacific; canadaeast; canadawest'
       minutes:
         description: 'Minutes for each of fetcher and worker per line (default 280)'
@@ -42,13 +42,16 @@ jobs:
                'canadaeast': 'CA-ON CA-QC CA-NB CA-NS CA-PE CA-NL', 'canadawest': 'CA-MB CA-SK CA-AB CA-BC CA-YT CA-NT CA-NU'}
           out = []
           for e in [x.strip() for x in os.environ['AREAS'].split(';') if x.strip()]:
+              stage = 'all'
+              if '@' in e: e, stage = [x.strip() for x in e.rsplit('@', 1)]   # 'midwest@worker' = from its saved fetcher bundle
+              if stage not in ('all', 'worker', 'checker'): stage = 'all'
               if '|' in e: st, tag = [x.strip() for x in e.split('|', 1)]
               elif e.lower() in R: st, tag = R[e.lower()], e.lower()
               else: st, tag = e.upper(), re.sub(r'[^a-z0-9]', '', e.lower())
-              out.append({'states': st.upper(), 'tag': re.sub(r'[^a-z0-9-]', '', tag.lower())})
+              out.append({'states': st.upper(), 'tag': re.sub(r'[^a-z0-9-]', '', tag.lower()), 'stage': stage})
           n = max(1, min(3, int(os.environ.get('AT_ONCE') or 3)))
           print('lines=' + json.dumps(out)); print(f'n={n}')
-          print(f'::notice title=2-fer lines::{len(out)} line(s), {n} at a time: ' + '; '.join(f"{o['states']} ({o['tag']})" for o in out))
+          print(f'::notice title=2-fer lines::{len(out)} line(s), {n} at a time: ' + '; '.join(f"{o['states']} ({o['tag']}, {o['stage']})" for o in out))
           PY
   line:
     needs: plan
@@ -61,7 +64,7 @@ jobs:
     with:
       states: ${{ matrix.line.states }}
       tag: ${{ matrix.line.tag }}
-      stage: all
+      stage: ${{ matrix.line.stage }}
       minutes: ${{ inputs.minutes }}
       next: ''
     secrets: inherit
