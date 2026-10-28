@@ -5,16 +5,16 @@
   "US-KY"
  ],
  "since": "2026-10-28",
- "date": "2026-10-28 03:49 UTC",
+ "date": "2026-10-28 08:43 UTC",
  "verdict": "STOPPED",
  "why": [
-  "Kentucky known-answers test not passing (2/18 on 2026-10-28)"
+  "Kentucky known-answers test not passing (15/18 on 2026-10-28)"
  ],
- "known_answers": "2/18 on 2026-10-28",
+ "known_answers": "15/18 on 2026-10-28",
  "missing_check": {
-  "FOUND": 21,
-  "DROPPED": 149,
-  "NEVER LOOKED AT": 2410
+  "FOUND": 78,
+  "DROPPED": 91,
+  "NEVER LOOKED AT": 263
  },
  "report": {
   "pass1": {
@@ -23,33 +23,34 @@
    "pairs whose boxes touch": 555
   },
   "pass2": {
-   "agree with the pass before": 317,
+   "agree with the pass before": 363,
    "date": "2026-10-28",
-   "pairs tested": 118
+   "pairs tested": 104
   },
   "pass3": {
-   "agree with the pass before": 228,
+   "agree with the pass before": 274,
    "date": "2026-10-28",
-   "pairs tested": 108
+   "pairs tested": 101
   },
   "pass5": {
-   "checked": 49,
+   "checked": 19,
    "date": "2026-10-28",
    "pairs tested": 0,
-   "still not checked": 45
+   "still not checked": 0
   }
  },
  "US-KY": {
-  "rows": 352,
-  "live": 20,
+  "rows": 397,
+  "live": 65,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "water not checked": 83,
-   "no public owner on the ownership map": 5,
-   "the outlines overlap, but the Forest Service ownership map": 7
+   "the ownership map shows more than one owner across the spot": 6,
+   "no public owner on the ownership map": 21,
+   "the outlines overlap, but the Forest Service ownership map": 7,
+   "low-confidence outline for Land Between the Lakes National R": 2
   },
-  "dropped": 177,
-  "merged": 60
+  "dropped": 189,
+  "merged": 107
  }
 }

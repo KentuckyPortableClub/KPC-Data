@@ -16,14 +16,11 @@
   "parks done by the box test": 0,
   "parks whose outline could not be read": 0,
   "pass": 1,
-  "problems": [
-   "NHD water: The read operation timed out",
-   "NHD water: HTTP Error 504: Gateway Time-out"
-  ],
+  "problems": [],
   "with official lines": 11
  },
  "pass2": {
-  "agree with the pass before": 317,
+  "agree with the pass before": 363,
   "cell_m": 10.0,
   "date": "2026-10-28",
   "left out": {
@@ -32,21 +29,17 @@
    "no pin": 0,
    "pin well outside": 0
   },
-  "new here only (not counted)": 181,
+  "new here only (not counted)": 186,
   "official parks": 199,
-  "pairs tested": 118,
+  "pairs tested": 104,
   "parks whose outline could not be read": 0,
-  "parks with a saved copy only (no fresh download possible)": 3,
+  "parks with a saved copy only (no fresh download possible)": 1,
   "pass": 2,
-  "problems": [
-   "NHD water: HTTP Error 502: Bad Gateway",
-   "NHD water: HTTP Error 504: Gateway Time-out",
-   "NHD water: HTTP Error 504: Gateway Time-out"
-  ],
+  "problems": [],
   "with official lines": 11
  },
  "pass3": {
-  "agree with the pass before": 228,
+  "agree with the pass before": 274,
   "cell_m": 5.0,
   "date": "2026-10-28",
   "left out": {
@@ -55,17 +48,13 @@
    "no pin": 0,
    "pin well outside": 0
   },
-  "new here only (not counted)": 119,
+  "new here only (not counted)": 161,
   "official parks": 199,
-  "pairs tested": 108,
+  "pairs tested": 101,
   "parks whose outline could not be read": 0,
-  "parks with a saved copy only (no fresh download possible)": 3,
+  "parks with a saved copy only (no fresh download possible)": 1,
   "pass": 3,
-  "problems": [
-   "NHD water: HTTP Error 502: Bad Gateway",
-   "NHD water: The read operation timed out",
-   "NHD water: The read operation timed out"
-  ],
+  "problems": [],
   "with official lines": 11
  },
  "pass4": {
@@ -87,7 +76,7 @@
  },
  "pass5": {
   "cell_m": 5.0,
-  "checked": 49,
+  "checked": 19,
   "date": "2026-10-28",
   "left out": {
    "approximate": 0,
@@ -98,27 +87,24 @@
   "official parks": 199,
   "pairs tested": 0,
   "pass": 5,
-  "problems": [
-   "NHD water: The read operation timed out",
-   "NHD water: The read operation timed out"
-  ],
-  "spots given their boundary lines": 56,
-  "still not checked": 45,
+  "problems": [],
+  "spots given their boundary lines": 50,
+  "still not checked": 0,
   "trail stretches given their true zone": 60,
   "water only": 0,
   "with official lines": 11
  },
  "per state": {
   "US-KY": {
-   "candidates": 19,
+   "candidates": 62,
    "candidates (saved outline only)": 0,
-   "lines": 160,
-   "n-fers": 9,
-   "not sure": 95,
-   "pass1": 352,
-   "pass2": 319,
-   "spots": 352,
-   "very tight": 1,
+   "lines": 205,
+   "n-fers": 20,
+   "not sure": 36,
+   "pass1": 397,
+   "pass2": 365,
+   "spots": 397,
+   "very tight": 3,
    "water only": 0
   }
  }
