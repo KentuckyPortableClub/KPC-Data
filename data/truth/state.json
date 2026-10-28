@@ -1,5 +1,25 @@
 {
  "areas": {
+  "US-GA": {
+   "checked": 237,
+   "counts": {
+    "agree": 18,
+    "handover_hints": 12,
+    "no_page": 0,
+    "no_size": 26,
+    "off": 141,
+    "ours_unknown": 0,
+    "parks": 237,
+    "retired": 0,
+    "unsure": 35,
+    "weak": 8,
+    "with_outline": 220
+   },
+   "left": 0,
+   "parks": 237,
+   "status": "done",
+   "updated": "2026-10-28"
+  },
   "US-KY": {
    "checked": 193,
    "counts": {
@@ -102,39 +122,42 @@
   }
  },
  "hosts": {
+  "amicalolafallslodge.com": 1793311022.090411,
   "explorekyhistory.ky.gov": 1793258165.3648567,
   "legacy.fws.gov": 1793257782.7889593,
   "tnstateparks.com": 1793308390.7882838,
   "wolfememorial.com": 1793308907.889083,
+  "www.amicalolafallslodge.com": 1793310856.8343172,
   "www.fs.usda.gov": 1793309985.139606,
+  "www.littleocmulgeelodge.com": 1793311323.8044322,
   "www.tn.gov": 1793308378.4104462,
   "www.virginiastateparks.gov": 1793309532.9542975
  },
  "last": {
   "areas": [
-   "US-WV"
+   "US-GA"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "errors": 0,
-   "requests": 312,
-   "rested": 25,
+   "errors": 9,
+   "requests": 422,
+   "rested": 4,
    "robots": 0,
-   "strikes": 0
+   "strikes": 14
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 0,
-   "no_size": 37,
+   "handover_hints": 12,
+   "no_size": 26,
    "ours_unknown": 0,
-   "pages_read": 293,
-   "parks": 172,
+   "pages_read": 324,
+   "parks": 237,
    "retired": 0,
-   "size_agree": 1,
-   "size_off": 96,
-   "size_unsure": 26,
+   "size_agree": 18,
+   "size_off": 141,
+   "size_unsure": 35,
    "skipped_fresh": 0,
-   "with_outline": 160
+   "with_outline": 220
   },
   "when": "2026-10-28"
  },
@@ -153,6 +176,11 @@
    "links": 78,
    "read": "2026-10-28",
    "status": "ok"
+  },
+  "https://georgiawildlife.com/news": {
+   "links": 0,
+   "read": "2026-10-28",
+   "status": "HTTP 403"
   },
   "https://kentuckytourism.com/industry/news": {
    "links": 0,
