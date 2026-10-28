@@ -2,33 +2,121 @@
  "areas": {
   "US-KY": {
    "camps": 109,
-   "checked": 106,
+   "checked": 103,
    "counts": {
-    "camps": 106,
+    "camps": 103,
     "needs_browser": 0,
-    "needs_key": 41,
+    "needs_key": 38,
     "no_page": 0,
     "not_official": 0,
     "ok": 65,
     "other": 0,
     "resting": 0,
     "robots": 0,
-    "with_booking": 58,
+    "with_booking": 51,
     "with_elevation": 83,
-    "with_sites": 10
+    "with_sites": 20
    },
-   "left": 3,
-   "status": "partial",
+   "left": 6,
+   "status": "failed",
    "updated": "2026-10-28"
   }
  },
  "fcc": {},
  "hosts": {},
  "ky_check": {
-  "agree": 40,
-  "bot_blank": 152,
+  "agree": 39,
+  "bot_blank": 151,
   "campgrounds": 67,
-  "differ": 21,
+  "differ": 27,
+  "gate": {
+   "pct": 59,
+   "result": "FAIL",
+   "rows": [
+    {
+     "got": null,
+     "ok": true,
+     "why": "Higginson-Henry WMA: no RV length (the page gives elevation 675 ft, not an RV length)"
+    },
+    {
+     "got": null,
+     "ok": true,
+     "why": "Rolling Fork WMA: no RV length (elevation 980 ft is not an RV length)"
+    },
+    {
+     "got": null,
+     "ok": true,
+     "why": "West Kentucky WMA: no RV length (elevation 451 ft is not an RV length)"
+    },
+    {
+     "got": null,
+     "ok": true,
+     "why": "Yellowbank WMA: no RV length (elevation 872 ft is not an RV length)"
+    },
+    {
+     "got": null,
+     "ok": true,
+     "why": "Yellowbank WMA: no camping season (Nov. 1-Dec. 31 is the rabbit / quail hunting season)"
+    },
+    {
+     "got": null,
+     "ok": true,
+     "why": "Higginson-Henry WMA: no camping season (hunting season dates are not the camping season)"
+    },
+    {
+     "got": "None from “”",
+     "ok": true,
+     "why": "Mammoth Cave: showers from a real sentence or null, never the 'Shower Types' menu heading"
+    },
+    {
+     "got": "some",
+     "ok": true,
+     "why": "Twin Knobs: 'RV sites range from electric-only to full hookups' = sewer 'some'"
+    },
+    {
+     "got": null,
+     "ok": true,
+     "why": "Bandy Creek: phone is not the (877) reservation line"
+    },
+    {
+     "got": null,
+     "ok": true,
+     "why": "Bear Creek Horse Camp: phone is not the (877) reservation line"
+    },
+    {
+     "got": null,
+     "ok": true,
+     "why": "Blue Heron: phone is not the (877) reservation line"
+    },
+    {
+     "got": null,
+     "ok": true,
+     "why": "Station Camp: phone is not the (877) reservation line"
+    },
+    {
+     "got": null,
+     "ok": true,
+     "why": "White Sulphur Horse Camp: booking link is a campground page, not a bare domain"
+    },
+    {
+     "got": null,
+     "ok": true,
+     "why": "S-Tree: booking link is a campground page, not a bare domain"
+    },
+    {
+     "got": "1 record(s)",
+     "ok": true,
+     "why": "Mammoth Cave Campground: one record only (duplicates merged)"
+    },
+    {
+     "got": null,
+     "ok": false,
+     "why": "Fort Boonesborough: site count read from the state park page (key 163, so >= 100)"
+    }
+   ],
+   "when": "2026-10-28",
+   "why": "known answers 15/16 right (0 not read) · hand-key agreement 39/66 = 59% (need 70%)"
+  },
   "rows": [
    {
     "fields": {
@@ -57,9 +145,9 @@
    {
     "fields": {
      "electric": "agree (True)",
-     "phone": "DIFFER bot (877) 444-6777 vs key (423) 286-7275",
+     "phone": "bot blank (key: (423) 286-7275)",
      "showers": "agree (True)",
-     "sites": "bot blank (key: 45)"
+     "sites": "agree (45)"
     },
     "id": "blue-heron-campground-ky",
     "name": "Blue Heron Campground (KY)",
@@ -68,7 +156,7 @@
    {
     "fields": {
      "electric": "agree (True)",
-     "phone": "DIFFER bot (877) 444-6777 vs key (423) 286-7275",
+     "phone": "bot blank (key: (423) 286-7275)",
      "showers": "agree (True)",
      "sites": "DIFFER bot 23 vs key 22"
     },
@@ -78,7 +166,7 @@
    },
    {
     "fields": {
-     "electric": "bot blank (key: False)",
+     "electric": "agree (False)",
      "phone": "bot blank (key: (423) 569-9778)",
      "sites": "bot blank (key: 6)"
     },
@@ -89,7 +177,7 @@
    {
     "fields": {
      "electric": "DIFFER bot some vs key True",
-     "phone": "DIFFER bot (877) 444-6777 vs key (423) 286-7275",
+     "phone": "bot blank (key: (423) 286-7275)",
      "showers": "agree (True)"
     },
     "id": "bandy-creek-campground-tn",
@@ -99,7 +187,7 @@
    {
     "fields": {
      "electric": "agree (True)",
-     "phone": "DIFFER bot (877) 444-6777 vs key (423) 286-7275",
+     "phone": "bot blank (key: (423) 286-7275)",
      "showers": "agree (True)",
      "sites": "agree (24)"
     },
@@ -207,7 +295,7 @@
     "fields": {
      "electric": "DIFFER bot False vs key True",
      "phone": "bot blank (key: (606) 784-6428)",
-     "sites": "bot blank (key: 20)"
+     "sites": "DIFFER bot 13 vs key 20"
     },
     "id": "clear-creek-campground",
     "name": "Clear Creek Campground",
@@ -223,16 +311,22 @@
     "status": "ok"
    },
    {
+    "fields": {
+     "electric": "DIFFER bot False vs key True",
+     "phone": "bot blank (key: (606) 784-6428)",
+     "showers": "agree (True)",
+     "sites": "agree (54)"
+    },
     "id": "koomer-ridge-campground",
     "name": "Koomer Ridge Campground",
-    "status": "not in output"
+    "status": "ok"
    },
    {
     "fields": {
      "electric": "DIFFER bot some vs key True",
      "phone": "bot blank (key: (606) 864-4163)",
      "showers": "agree (True)",
-     "sites": "bot blank (key: 94)"
+     "sites": "DIFFER bot 13 vs key 94"
     },
     "id": "holly-bay-campground",
     "name": "Holly Bay Campground",
@@ -242,7 +336,7 @@
     "fields": {
      "electric": "DIFFER bot some vs key True",
      "phone": "bot blank (key: (606) 864-4163)",
-     "sites": "bot blank (key: 44)"
+     "sites": "DIFFER bot 13 vs key 44"
     },
     "id": "grove-drive-in-campground",
     "name": "Grove Drive-In Campground",
@@ -250,9 +344,9 @@
    },
    {
     "fields": {
-     "electric": "bot blank (key: True)",
+     "electric": "DIFFER bot False vs key True",
      "phone": "bot blank (key: (606) 864-4163)",
-     "sites": "bot blank (key: 25)"
+     "sites": "DIFFER bot 13 vs key 25"
     },
     "id": "bee-rock-campground",
     "name": "Bee Rock Campground",
@@ -262,7 +356,7 @@
     "fields": {
      "electric": "DIFFER bot False vs key True",
      "phone": "bot blank (key: (606) 376-5323)",
-     "sites": "bot blank (key: 18)"
+     "sites": "DIFFER bot 13 vs key 18"
     },
     "id": "great-meadows-campground",
     "name": "Great Meadows Campground",
@@ -282,7 +376,7 @@
     "fields": {
      "electric": "DIFFER bot False vs key True",
      "phone": "bot blank (key: (606) 864-4163)",
-     "sites": "bot blank (key: 15)"
+     "sites": "DIFFER bot 13 vs key 15"
     },
     "id": "turkey-foot-campground",
     "name": "Turkey Foot Campground",
@@ -291,7 +385,7 @@
    {
     "fields": {
      "phone": "bot blank (key: (606) 864-4163)",
-     "sites": "bot blank (key: 20)"
+     "sites": "DIFFER bot 13 vs key 20"
     },
     "id": "s-tree-campground",
     "name": "S-Tree Campground",
@@ -441,7 +535,7 @@
     "fields": {
      "amps": "agree ([30, 50])",
      "electric": "agree (True)",
-     "phone": "agree ((270) 924-2181)",
+     "phone": "bot blank (key: (270) 924-2181)",
      "showers": "agree (True)",
      "sites": "bot blank (key: 368)"
     },
@@ -453,7 +547,7 @@
     "fields": {
      "amps": "DIFFER bot [30, 50] vs key [50]",
      "electric": "agree (True)",
-     "phone": "agree ((270) 924-2270)",
+     "phone": "bot blank (key: (270) 924-2270)",
      "sites": "bot blank (key: 35)"
     },
     "id": "energy-lake-campground",
@@ -464,7 +558,7 @@
     "fields": {
      "amps": "agree ([30, 50])",
      "electric": "DIFFER bot some vs key True",
-     "phone": "agree ((270) 924-2200)",
+     "phone": "DIFFER bot (502) 564-4696 vs key (270) 924-2200",
      "showers": "agree (True)",
      "sites": "bot blank (key: 198)"
     },
@@ -475,7 +569,7 @@
    {
     "fields": {
      "electric": "agree (True)",
-     "phone": "agree ((931) 232-5331)",
+     "phone": "bot blank (key: (931) 232-5331)",
      "sites": "DIFFER bot 44 vs key 384"
     },
     "id": "piney-campground-tn",
@@ -504,7 +598,7 @@
      "dump_station": "bot blank (key: True)",
      "electric": "bot blank (key: True)",
      "phone": "bot blank (key: (270) 758-2424)",
-     "showers": "agree (True)",
+     "showers": "bot blank (key: True)",
      "sites": "bot blank (key: 111)"
     },
     "id": "mammoth-cave-campground",
@@ -717,7 +811,7 @@
   "manners": {
    "arcgis_exempt": 0,
    "errors": 0,
-   "requests": 153,
+   "requests": 172,
    "rested": 0,
    "robots": 0,
    "strikes": 0
@@ -732,12 +826,17 @@
    "no_page": 0,
    "not_official": 0,
    "ok": 67,
-   "pages_read": 67,
+   "pages_read": 86,
    "resting": 0,
    "ridb_calls": 0,
    "robots": 0,
    "skipped_fresh": 0
   },
   "when": "2026-10-28"
+ },
+ "test": {
+  "result": "FAIL",
+  "when": "2026-10-28",
+  "why": "known answers 15/16 right (0 not read) · hand-key agreement 39/66 = 59% (need 70%)"
  }
 }
