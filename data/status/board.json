@@ -2,11 +2,11 @@
  "about": "KPC bot status board: per bot the last run, green / red, what it made, what is waiting on whom. Written by kpc_status.py from each workflow; a members-only page reads it later.",
  "bots": {
   "campground info bot": {
-   "areas": "left: 64",
+   "areas": "left: 63",
    "last_run": "2026-10-28",
-   "made": "US-KY: partial; {\"camps\": 100, \"needs_browser\": 1, \"needs_key\": 0, \"no_page\": 0, \"not_official\": 0, \"ok\": 52, \"other\": 12, \"resting\": 0, \"robots\": 35, \"with_booking\": 51, \"with_elevation\": 80, \"with_sites\": 18}",
+   "made": "US-KY: done; {\"camps\": 100, \"needs_browser\": 17, \"needs_key\": 0, \"no_page\": 0, \"not_official\": 0, \"ok\": 40, \"other\": 8, \"resting\": 0, \"robots\": 35, \"with_booking\": 51, \"with_elevation\": 80, \"with_facts\": 47, \"with",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/40766894077",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/40770679333",
    "waiting_on": "chat 8 grades the sample; Brandon GO before any card"
   },
   "closures super-bot": {
@@ -50,9 +50,9 @@
    "waiting_on": "chat 8 grades the sample; chat 2 reads the name-mismatch list; nothing goes in a key by itself"
   },
   "park truth checker": {
-   "areas": "left: 61",
+   "areas": "left: 62",
    "last_run": "2026-10-28",
-   "made": "US-NC: done; {\"agree\": 3, \"handover_hints\": 19, \"no_page\": 1, \"no_size\": 147, \"off\": 28, \"ours_unknown\": 0, \"parks\": 253, \"retired\": 0, \"unsure\": 40, \"weak\": 9, \"with_outline\": 219}",
+   "made": "US-TN: done; {\"agree\": 1, \"handover_hints\": 3, \"no_page\": 2, \"no_size\": 237, \"off\": 8, \"ours_unknown\": 2, \"parks\": 277, \"retired\": 0, \"unsure\": 4, \"weak\": 11, \"with_outline\": 254}",
    "result": "green",
    "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/40769602159",
    "waiting_on": "chat 8 grades the sample; Brandon GO before any card"

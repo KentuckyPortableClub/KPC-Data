@@ -10,11 +10,7 @@ Source file: `data/campinfo/US-KY.json`
   "how": null,
   "url": null
  },
- "cell": {
-  "carriers": null,
-  "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2025-12-31?category=State&subcategory=Mobile%20Broadband",
-  "status": "FCC as of 2025-12-31: 0 mobile coverage files for the state (point lookup = step 2, not built)"
- },
+ "cell": null,
  "checked": "2026-10-28",
  "checkin": null,
  "checkout": null,
@@ -82,11 +78,7 @@ Source file: `data/campinfo/US-KY.json`
   "url": "https://kentuckystateparks.reserveamerica.com/camping/cumberland-falls-state-resort-park/r/campgroundDetails.do?contractCode=KY&parkId=91904"
  },
  "browser_checked": "2026-10-28",
- "cell": {
-  "carriers": null,
-  "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2025-12-31?category=State&subcategory=Mobile%20Broadband",
-  "status": "FCC as of 2025-12-31: 0 mobile coverage files for the state (point lookup = step 2, not built)"
- },
+ "cell": null,
  "checked": "2026-10-28",
  "checkin": null,
  "checkout": null,
@@ -113,8 +105,8 @@ Source file: `data/campinfo/US-KY.json`
  },
  "lon": -84.3353861,
  "map": {
-  "date_how": "PDF, no date in the link",
-  "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/clifty-campground-map.pdf?sfvrsn=6f4ade4a_2"
+  "date_how": null,
+  "url": null
  },
  "name": "Ridgeline & Clifty Campgrounds",
  "needs_browser": true,
@@ -142,7 +134,7 @@ Source file: `data/campinfo/US-KY.json`
   "tent": null,
   "total": null
  },
- "status": "ok, no campground facts even in a browser"
+ "status": "ok, no campground facts in the page text: needs browser?"
 }
 ```
 
@@ -160,11 +152,7 @@ Source file: `data/campinfo/US-KY.json`
   "status": "ok",
   "url": "https://www.fs.usda.gov/r08/danielboone/recreation/camping-cabins"
  },
- "cell": {
-  "carriers": null,
-  "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2025-12-31?category=State&subcategory=Mobile%20Broadband",
-  "status": "FCC as of 2025-12-31: 0 mobile coverage files for the state (point lookup = step 2, not built)"
- },
+ "cell": null,
  "checked": "2026-10-28",
  "checkin": null,
  "checkout": null,
@@ -175,7 +163,7 @@ Source file: `data/campinfo/US-KY.json`
   "value": 741
  },
  "features": "fire ring and lantern post with access to many shared picnic tables",
- "fees": "$15 per night | $20 per night | $15/single | $20/double",
+ "fees": "$15 per night | $20 per night",
  "hookups": {
   "amps": null,
   "electric": null,
@@ -233,11 +221,7 @@ Source file: `data/campinfo/US-KY.json`
   "url": null
  },
  "browser_checked": "2026-10-28",
- "cell": {
-  "carriers": null,
-  "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2025-12-31?category=State&subcategory=Mobile%20Broadband",
-  "status": "FCC as of 2025-12-31: 0 mobile coverage files for the state (point lookup = step 2, not built)"
- },
+ "cell": null,
  "checked": "2026-10-28",
  "checkin": null,
  "checkout": null,
@@ -311,11 +295,7 @@ Source file: `data/campinfo/US-KY.json`
   "status": "ok",
   "url": "https://home.nps.gov/maca/planyourvisit/campingregulations.htm"
  },
- "cell": {
-  "carriers": null,
-  "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2025-12-31?category=State&subcategory=Mobile%20Broadband",
-  "status": "FCC as of 2025-12-31: 0 mobile coverage files for the state (point lookup = step 2, not built)"
- },
+ "cell": null,
  "checked": "2026-10-28",
  "checkin": "1 pm",
  "checkout": null,
@@ -385,11 +365,7 @@ Source file: `data/campinfo/US-KY.json`
   "url": "https://kentuckystateparks.reserveamerica.com/camping/barren-river-lake-state-resort-park/r/campgroundDetails.do?contractCode=KY&parkId=91901"
  },
  "browser_checked": "2026-10-28",
- "cell": {
-  "carriers": null,
-  "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2025-12-31?category=State&subcategory=Mobile%20Broadband",
-  "status": "FCC as of 2025-12-31: 0 mobile coverage files for the state (point lookup = step 2, not built)"
- },
+ "cell": null,
  "checked": "2026-10-28",
  "checkin": null,
  "checkout": null,
@@ -458,16 +434,7 @@ Source file: `data/campinfo/US-KY.json`
   "url": "https://www.recreation.gov/camping/campgrounds/251468"
  },
  "browser_checked": "2026-10-28",
- "campground_page": {
-  "read": "names other campgrounds only",
-  "status": "ok",
-  "url": "https://home.nps.gov/biso/planyourvisit/campground-regulations.htm"
- },
- "cell": {
-  "carriers": null,
-  "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2025-12-31?category=State&subcategory=Mobile%20Broadband",
-  "status": "FCC as of 2025-12-31: 0 mobile coverage files for the state (point lookup = step 2, not built)"
- },
+ "cell": null,
  "checked": "2026-10-28",
  "checkin": "12:00 pm",
  "checkout": "12:00 pm",
@@ -478,7 +445,7 @@ Source file: `data/campinfo/US-KY.json`
   "value": null
  },
  "features": null,
- "fees": "$30.00 for sites with 30-amp electric service and $35 | $35.00 for sites with 50-amp electric service (all fees",
+ "fees": "$30.00 for sites with 30-amp electric service and | $35.00 for sites with 50-amp electric service (all fees",
  "hookups": {
   "amps": [
    30,
@@ -540,11 +507,7 @@ Source file: `data/campinfo/US-KY.json`
   "url": null
  },
  "browser_checked": "2026-10-28",
- "cell": {
-  "carriers": null,
-  "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2025-12-31?category=State&subcategory=Mobile%20Broadband",
-  "status": "FCC as of 2025-12-31: 0 mobile coverage files for the state (point lookup = step 2, not built)"
- },
+ "cell": null,
  "checked": "2026-10-28",
  "checkin": null,
  "checkout": null,
@@ -612,11 +575,7 @@ Source file: `data/campinfo/US-KY.json`
   "how": "online: www.recreation.gov",
   "url": "https://www.recreation.gov/camping/campgrounds/233782"
  },
- "cell": {
-  "carriers": null,
-  "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2025-12-31?category=State&subcategory=Mobile%20Broadband",
-  "status": "FCC as of 2025-12-31: 0 mobile coverage files for the state (point lookup = step 2, not built)"
- },
+ "cell": null,
  "checked": "2026-10-28",
  "checkin": "2 p.m",
  "checkout": "11:00 a.m",
@@ -689,11 +648,7 @@ Source file: `data/campinfo/US-KY.json`
   "how": null,
   "url": null
  },
- "cell": {
-  "carriers": null,
-  "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2025-12-31?category=State&subcategory=Mobile%20Broadband",
-  "status": "FCC as of 2025-12-31: 0 mobile coverage files for the state (point lookup = step 2, not built)"
- },
+ "cell": null,
  "checked": "2026-10-28",
  "checkin": null,
  "checkout": null,
@@ -760,16 +715,7 @@ Source file: `data/campinfo/US-KY.json`
   "how": "online: lblweb.usedirect.com",
   "url": "https://lblweb.usedirect.com/camplbl/"
  },
- "campground_page": {
-  "read": "own section",
-  "status": "ok",
-  "url": "https://www.landbetweenthelakes.us/visit/energy-lake-campground/"
- },
- "cell": {
-  "carriers": null,
-  "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2025-12-31?category=State&subcategory=Mobile%20Broadband",
-  "status": "FCC as of 2025-12-31: 0 mobile coverage files for the state (point lookup = step 2, not built)"
- },
+ "cell": null,
  "checked": "2026-10-28",
  "checkin": "4:30 p.m",
  "checkout": "3:30 p.m",
@@ -826,7 +772,7 @@ Source file: `data/campinfo/US-KY.json`
   "primitive": null,
   "rv": null,
   "tent": null,
-  "total": null
+  "total": 368
  },
  "status": "ok"
 }
@@ -841,16 +787,12 @@ Source file: `data/campinfo/US-KY.json`
   "url": "https://kentuckystateparks.reserveamerica.com/camping/nolin-lake-state-park/r/campgroundDetails.do?contractCode=KY&parkId=91832"
  },
  "browser_checked": "2026-10-28",
- "cell": {
-  "carriers": null,
-  "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2025-12-31?category=State&subcategory=Mobile%20Broadband",
-  "status": "FCC as of 2025-12-31: 0 mobile coverage files for the state (point lookup = step 2, not built)"
- },
+ "cell": null,
  "checked": "2026-10-28",
  "checkin": null,
  "checkout": null,
  "drinking_water": null,
- "dump_station": true,
+ "dump_station": null,
  "elevation_ft": {
   "src": "https://epqs.nationalmap.gov/v1/json?x=-86.21285&y=37.2961278&units=Feet&wkid=4326",
   "value": 540
@@ -859,9 +801,9 @@ Source file: `data/campinfo/US-KY.json`
  "fees": null,
  "hookups": {
   "amps": null,
-  "electric": true,
+  "electric": null,
   "sewer": null,
-  "water": true
+  "water": null
  },
  "kind": "c",
  "lat": 37.2961278,
@@ -882,17 +824,17 @@ Source file: `data/campinfo/US-KY.json`
  "phone": null,
  "phone_hint": null,
  "reservable": null,
- "restrooms": "yes (kind not stated)",
+ "restrooms": null,
  "rules": {
   "fires": null,
   "generators": null,
-  "pets": "Pets are allowed if restrained",
+  "pets": null,
   "quiet_hours": null,
   "stay_limit": null
  },
  "rv_max_ft": null,
  "season": null,
- "showers": true,
+ "showers": null,
  "sites": {
   "cabin": null,
   "group": null,
@@ -901,6 +843,6 @@ Source file: `data/campinfo/US-KY.json`
   "tent": null,
   "total": null
  },
- "status": "ok (browser)"
+ "status": "ok, no campground facts in the page text: needs browser?"
 }
 ```
