@@ -12,7 +12,7 @@
   "US-SD"
  ],
  "since": "2026-10-28",
- "date": "2026-10-28 17:40 UTC",
+ "date": "2026-10-28 18:45 UTC",
  "verdict": "STOPPED",
  "why": [
   "water service: US-IN: 56 rows not checked because the USGS water map did not answer (run the worker again)",
@@ -21,7 +21,7 @@
   "water service: US-WI: 21 rows not checked because the USGS water map did not answer (run the worker again)",
   "water service: US-MN: 66 rows not checked because the USGS water map did not answer (run the worker again)",
   "water service: US-IA: 2 rows not checked because the USGS water map did not answer (run the worker again)",
-  "water service: US-ND: 18 rows not checked because the USGS water map did not answer (run the worker again)",
+  "water service: US-ND: 17 rows not checked because the USGS water map did not answer (run the worker again)",
   "water service: US-SD: 15 rows not checked because the USGS water map did not answer (run the worker again)"
  ],
  "known_answers": "18/18 on 2026-10-28",
@@ -42,15 +42,15 @@
    "pairs tested": 501
   },
   "pass3": {
-   "agree with the pass before": 1124,
+   "agree with the pass before": 0,
    "date": "2026-10-28",
-   "pairs tested": 490
+   "pairs tested": 0
   },
   "pass5": {
    "checked": 231,
    "date": "2026-10-28",
    "pairs tested": 0,
-   "still not checked": 217
+   "still not checked": 216
   }
  },
  "US-IN": {
@@ -133,11 +133,11 @@
  },
  "US-ND": {
   "rows": 83,
-  "live": 1,
+  "live": 2,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "water not checked": 18,
+   "water not checked": 17,
    "owner not known for Lake Sakakawea State Park": 1
   },
   "dropped": 21,
