@@ -15,8 +15,9 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-SC | 167 | 24 | 13 | 21 | 2 | 11 | 11 | 142 | 67 | 0 | 0 |
 | US-FL | 460 | 160 | 147 | 135 | 22 | 110 | 28 | 297 | 116 | 3 | 0 |
 | US-MS | 155 | 33 | 26 | 20 | 0 | 19 | 14 | 121 | 45 | 92 | 0 |
-| US-IN | 220 | 17 | 14 | 17 | 1 | 5 | 11 | 155 | 39 | 3 | 0 |
-| US-MO | 561 | 524 | 503 | 425 | 238 | 206 | 80 | 37 | 520 | 9 | 1 |
+| US-IN | 229 | 23 | 20 | 20 | 1 | 8 | 14 | 158 | 39 | 0 | 0 |
+| US-IL | 219 | 91 | 86 | 18 | 4 | 69 | 18 | 128 | 193 | 0 | 0 |
+| US-MO | 561 | 516 | 500 | 479 | 239 | 204 | 73 | 45 | 472 | 17 | 0 |
 
 ## US-KY sample (random 12 per agency group, seed 28)
 | ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
@@ -977,20 +978,26 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-0289 | Muscatatuck National Wildlife Refuge | https://www.fws.gov/refuge/muscatatuck/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/muscatatuck/visit-us/rules-policies ✓ |  |
 | US-10225 | Post Oak-Cedar State Nature Preserve | https://www.in.gov/dA/ea041344cc/fo-PostOak-Cedar_trail_map.pdf?language_id=1 | pdf ✓name · combined map: covers 2 units · the agency site | date unknown (date unknown, checked 2026-10-28) · posted Apr 07, 2026 | https://www.in.gov/dnr/state-parks/property-rules-and-regulations/ ✓ |  |
 | US-4223 | Reynolds Creek State Fish and Wildlife A | https://indianabirdingtrail.com/pages/birding-sites | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
-| US-6974 | Levi Coffin House State Historic Site | https://www.indianamuseum.org/visit-museum/museum-map-and-parking/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
-| US-6972 | Historic New Harmony State Historic Site | https://www.indianamuseum.org/visit-museum/museum-map-and-parking/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
+| US-6976 | T.C. Steele State Historic Site | https://www.indianamuseum.org/visit-museum/museum-map-and-parking/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
 | US-6975 | Limberlost State Historic Site | https://www.indianamuseum.org/visit-museum/museum-map-and-parking/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — |  |  |
+| US-6972 | Historic New Harmony State Historic Site | https://www.indianamuseum.org/visit-museum/museum-map-and-parking/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
 | US-6970 | Culbertson Mansion State Historic Site | https://www.indianamuseum.org/visit-museum/museum-map-and-parking/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
+| US-6977 | Whitewater Canal State Historic Site | https://www.indianamuseum.org/visit-museum/museum-map-and-parking/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
+| US-6978 | Vincennes State Historic Site | https://www.indianamuseum.org/visit-museum/museum-map-and-parking/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
+| US-6974 | Levi Coffin House State Historic Site | https://www.indianamuseum.org/visit-museum/museum-map-and-parking/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
 | US-6969 | Corydon Capitol State Historic Site | https://www.indianamuseum.org/visit-museum/museum-map-and-parking/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
 | US-6971 | Gene Stratton-Porter State Historic Site | https://www.indianamuseum.org/visit-museum/museum-map-and-parking/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
 | US-6973 | Lanier Mansion State Historic Site | https://www.indianamuseum.org/visit-museum/museum-map-and-parking/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
-| US-0765 | Indiana Dunes National Park | https://www.nps.gov/indu/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted August 27, 2024 | https://www.nps.gov/indu/learn/management/lawsandpolicies.htm ✓ |  |
 | US-0734 | George Rogers Clark National Historical  | https://www.nps.gov/gero/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted September 4, 2024 | https://www.nps.gov/gero/learn/management/lawsandpolicies.htm ✓ |  |
-| US-0782 | Lincoln Boyhood Home National Memorial | https://www.nps.gov/libo/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted September 4, 2024 | https://www.nps.gov/libo/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0765 | Indiana Dunes National Park | https://www.nps.gov/indu/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted August 27, 2024 | https://www.nps.gov/indu/learn/management/lawsandpolicies.htm ✓ |  |
 | US-4572 | Lewis and Clark National Historic Trail | https://www.nps.gov/lecl/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted August 5, 2026 | https://www.nps.gov/lecl/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0782 | Lincoln Boyhood Home National Memorial | https://www.nps.gov/libo/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted September 4, 2024 | https://www.nps.gov/libo/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4170 | Hardin Ridge on Monroe Lake State Recrea | https://www.fs.usda.gov/r09/hoosier/maps-guides | page · the agency site | — (date unknown, checked 2026-10-28) · posted February 25, 2026 | https://www.fs.usda.gov/r09/hoosier ✓ |  |
+| US-4483 | Hoosier National Forest | https://www.fs.usda.gov/r09/hoosier/maps-guides | page · the agency site | — (date unknown, checked 2026-10-28) · posted February 25, 2026 | https://www.fs.usda.gov/r09/hoosier ✓ |  |
+| US-5680 | Indian-Celina State Recreation Area | https://www.fs.usda.gov/r09/hoosier/maps-guides | page · the agency site | — (date unknown, checked 2026-10-28) · posted February 25, 2026 | https://www.fs.usda.gov/r09/hoosier ✓ |  |
 | US-2274 | White River State Park | https://whiteriverstatepark.org/wp-content/uploads/11-x-8.5-WRSP-Map.pdf | pdf ✓name · the agency site | 2024 (file stamp 2024 (older than the posting 2026 ) · posted Aug 06, 2026 | https://whiteriverstatepark.org/park-rules/ ✓ |  |
 
-### US-IN no map yet (203): the reason
+### US-IN no map yet (206): the reason
 - US-10177 Ogle Hollow State Nature Preserve: no map link on file and none on the park page
 - US-10178 Selma N. Steele State Nature Preserve: no map link on file and none on the park page
 - US-10179 Ten O' Clock Line State Nature Preserve: no map link on file and none on the park page
@@ -1032,65 +1039,154 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - US-10279 Pine Hills State Nature Preserve: rest
 - US-10280 Barnes State Nature Preserve: no map link on file and none on the park page
 
+## US-IL sample (random 12 per agency group, seed 28)
+| ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
+|---|---|---|---|---|---|---|
+| US-4119 | Crawford County State Fish and Wildlife  | https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/ | pdf ✓name · linked from the agency page (ngrrec-hunt | 2016: check it is still current (file stamp 2016 (older than the posting 2023 ) · posted 2023-01 | https://huntillinois.org/definitions/ ✓ |  |
+| US-4135 | Kidd Lake Marsh State Natural Area | https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2024/09/ | image · linked from the agency page (ngrrec-hunt | date unknown (date unknown, checked 2026-10-28) · posted 2024-09 | https://huntillinois.org/definitions/ ✓ |  |
+| US-0376 | Great River National Wildlife Refuge | https://www.fws.gov/refuge/great-river/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/great-river/visit-us/rules-policies ✓ |  |
+| US-12314 | Kankakee National Wildlife Refuge | https://www.fws.gov/refuge/kankakee-and-conservation-area/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/kankakee-and-conservation-area/visit-us/rul ✓ |  |
+| US-0282 | Crab Orchard National Wildlife Refuge | https://www.fws.gov/refuge/crab-orchard/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/locations/crab-orchard-national-wildlife-refuge/ru ✓ |  |
+| US-0283 | Cypress Creek National Wildlife Refuge | https://www.fws.gov/refuge/cypress-creek/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/cypress-creek/visit-us/rules-policies ✓ | managed by the U.S. Fish and Wildlife Service |
+| US-12601 | Hackmatack National Wildlife Refuge | https://www.fws.gov/refuge/hackmatack/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/hackmatack/visit-us/rules-policies ✓ |  |
+| US-0285 | Meredosia National Wildlife Refuge | https://www.fws.gov/refuge/meredosia/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/meredosia/visit-us/rules-policies ✓ |  |
+| US-4236 | Upper Mississippi River National Wildlif | https://www.fws.gov/refuge/upper-mississippi-river/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/upper-mississippi-river/visit-us/rules-poli ✓ |  |
+| US-0286 | Middle Mississippi River National Wildli | https://www.fws.gov/refuge/middle-mississippi-river/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/middle-mississippi-river/visit-us/rules-pol ✓ |  |
+| US-0281 | Chautauqua National Wildlife Refuge | https://www.fws.gov/refuge/chautauqua/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/chautauqua/visit-us/rules-policies ✓ |  |
+| US-0272 | Port Louisa National Wildlife Refuge | https://www.fws.gov/refuge/port-louisa/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/port-louisa/visit-us/rules-policies ✓ |  |
+| US-0287 | Two Rivers National Wildlife Refuge | https://www.fws.gov/refuge/two-rivers/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/two-rivers/visit-us/rules-policies ✓ |  |
+| US-0284 | Emiquon National Wildlife Refuge | https://www.fws.gov/refuge/emiquon/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/emiquon/visit-us/rules-policies ✓ |  |
+| US-12217 | Sandy Ford State Natural Reserve | https://www.google.com/maps/place/41%C2%B011'49.2%22N+88%C2%B053'48.8%22W/@41.197004,-88.8 | page · off the government, not linked by the ag | — (date unknown, checked 2026-10-28) · posted — | https://dnr.illinois.gov/adrules.html ✓ |  |
+| US-0523 | Rock Cave State Nature Preserve | https://www.google.com/maps/place/39%C2%B006'01.1%22N+88%C2%B047'57.1%22W/@39.1003041,-88. | page · off the government, not linked by the ag | — (date unknown, checked 2026-10-28) · posted — | https://dnr.illinois.gov/adrules.html ✓ |  |
+| US-12387 | Rall Woods State Reserve | https://www.google.com/maps/place/42%C2%B012'16.2%22N+90%C2%B012'19.1%22W/@42.2046222,-90. | page · off the government, not linked by the ag | — (date unknown, checked 2026-10-28) · posted — | https://dnr.illinois.gov/adrules.html ✓ |  |
+| US-4111 | Bohm Woods State Nature Preserve | https://www.google.com/maps/place/Bohm+Woods+Nature+Preserve/@38.8092836,-90.0090713,853m/ | page · off the government, not linked by the ag | — (date unknown, checked 2026-10-28) · posted — | https://dnr.illinois.gov/adrules.html ✓ |  |
+| US-0985 | Cave-In-Rock State Park | https://dnr.illinois.gov/content/dam/soi/en/web/dnr/publications/documents/00000017.pdf | pdf · the agency site | — (date unknown, checked 2026-10-28) · posted Dec 09, 2024 | https://dnr.illinois.gov/adrules.html ✓ |  |
+| US-11793 | Revis Spring Hill Prairie State Nature P | https://dnr.illinois.gov/content/dam/soi/en/web/dnr/inpc/publishingimages/topographic-maps | image · the agency site | — (date unknown, checked 2026-10-28) · posted May 19, 2023 | https://dnr.illinois.gov/adrules.html ✓ |  |
+| US-1018 | Red Hills State Park | https://dnr.illinois.gov/content/dam/soi/en/web/dnr/publications/documents/00000030.pdf | pdf · the agency site | — (date unknown, checked 2026-10-28) · posted Sep 26, 2024 | https://dnr.illinois.gov/adrules.html ✓ |  |
+| US-0986 | Chain-O-Lakes State Park | https://dnr.illinois.gov/content/dam/soi/en/web/dnr/parks/documents/colspbikinghikingtrail | pdf · the agency site | — (date unknown, checked 2026-10-28) · posted 2025 | https://dnr.illinois.gov/adrules.html ✓ |  |
+| US-0994 | Fox Ridge State Park | https://dnr.illinois.gov/content/dam/soi/en/web/dnr/publications/documents/00000589.pdf | pdf · the agency site | — (date unknown, checked 2026-10-28) · posted Oct 04, 2024 | https://dnr.illinois.gov/adrules.html ✓ |  |
+| US-7871 | Martin T Snyder Memorial State Nature Pr | https://dnr.illinois.gov/content/dam/soi/en/web/dnr/inpc/publishingimages/topographic-maps | image · the agency site | — (date unknown, checked 2026-10-28) · posted May 18, 2023 | https://dnr.illinois.gov/adrules.html ✓ |  |
+| US-4149 | Piney Creek Ravine State Natural Area | https://dnr.illinois.gov/content/dam/soi/en/web/dnr/publications/documents/00000096.pdf | pdf · the agency site | — (date unknown, checked 2026-10-28) · posted Oct 04, 2023 | https://dnr.illinois.gov/adrules.html ✓ |  |
+| US-1030 | Weldon Springs State Park | https://dnr.illinois.gov/content/dam/soi/en/web/dnr/publications/documents/00000019.pdf | pdf · the agency site | — (date unknown, checked 2026-10-28) · posted May 02, 2024 | https://dnr.illinois.gov/adrules.html ✓ |  |
+| US-4115 | Cedar Glen State Natural Area | https://dnr.illinois.gov/content/dam/soi/en/web/dnr/inpc/publishingimages/topographic-maps | image · the agency site | — (date unknown, checked 2026-10-28) · posted May 19, 2023 | https://dnr.illinois.gov/adrules.html ✓ |  |
+| US-4130 | Horseshoe Lake-Alexander State Fish and  | https://dnr.illinois.gov/content/dam/soi/en/web/dnr/publications/documents/00000571.pdf | pdf · the agency site | — (date unknown, checked 2026-10-28) · posted Oct 04, 2024 | https://dnr.illinois.gov/adrules.html ✓ |  |
+| US-0999 | Illini State Park | https://dnr.illinois.gov/content/dam/soi/en/web/dnr/publications/documents/00000957.pdf | pdf · the agency site | — (date unknown, checked 2026-10-28) · posted Sep 18, 2026 | https://dnr.illinois.gov/adrules.html ✓ |  |
+| US-10090 | Mackinaw River State Fish and Wildlife A | https://dnr.illinois.gov/content/dam/soi/en/web/dnr/publications/documents/00000741.pdf | pdf · the agency site | — (date unknown, checked 2026-10-28) · posted Oct 04, 2023 | https://dnr.illinois.gov/adrules.html ✓ |  |
+| US-4572 | Lewis and Clark National Historic Trail | https://www.nps.gov/lecl/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted August 5, 2026 | https://www.nps.gov/lecl/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4573 | Mormon Pioneer National Historic Trail | https://www.nps.gov/mopi/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted August 28, 2026 | https://www.nps.gov/mopi/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0841 | Lincoln Home National Historic Site | https://www.nps.gov/liho/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted September 19, 2024 | https://www.nps.gov/liho/learn/management/lawsandpolicies.htm ✓ |  |
+| US-3791 | Trail of Tears National Historic Trail | https://www.nps.gov/trte/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted August 24, 2026 | https://www.nps.gov/trte/learn/management/lawsandpolicies.htm ✓ |  |
+| US-1012 | Moraine Hills State Park | https://s7d1.scene7.com/is/image/isp/morainehillsmap2026 | image · on file, checked by a person or the link | date unknown (date unknown, checked 2026-10-28) · posted 2026 | https://dnr.illinois.gov/adrules.html ✓ |  |
+| US-4157 | Trail of Tears State Forest | https://s7d1.scene7.com/is/image/isp/trail-of-tears-map | image · linked from the agency page (s7d1.scene7 | — (date unknown, checked 2026-10-28) · posted Feb 03, 2025 | https://dnr.illinois.gov/adrules.html ✓ |  |
+| US-10661 | Oakwood Bottoms USFS Recreation Area | https://www.fs.usda.gov/r09/shawnee/maps-guides | page · the agency site | — (date unknown, checked 2026-10-28) · posted July 24, 2026 | https://www.fs.usda.gov/r09/shawnee ✓ |  |
+| US-4482 | Shawnee National Forest | https://www.fs.usda.gov/r09/shawnee/maps-guides | page · the agency site | — (date unknown, checked 2026-10-28) · posted July 24, 2026 | https://www.fs.usda.gov/r09/shawnee ✓ |  |
+| US-7256 | Midewin National Grassland | https://www.fs.usda.gov/r09/midewin/maps-guides | page · the agency site | — (date unknown, checked 2026-10-28) · posted October 1, 2026 | https://www.fs.usda.gov/r09/midewin ✓ |  |
+
+### US-IL no map yet (128): the reason
+- US-0526 Wildcat Hollow State Nature Preserve: opened, a readable map that does not name this park (chat 8 F2: another unit / several units)
+- US-0571 Lincoln Log Cabin State Historic Site: no map link on file and none on the park page
+- US-0979 Argyle Lake State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-0980 Beall Woods State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-0982 Buffalo Rock State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-0983 Campbell's Island State Park: no map link on file and none on the park page
+- US-0987 Channahon State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-0988 Delabar State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-0989 Dixon Springs State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-0990 Donnelley/DePue State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-0992 Ferne Clyffe State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-0993 Fort Massac State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-0995 Gebhard Woods State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-0997 Hennepin Canal Parkway State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-0998 Horseshoe Lake State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1001 James Pate Philip State Park: HTTP 404 (needs browser: host on the browser list)
+- US-1002 Johnson Sauk Trail State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1003 Jubilee College State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1004 Kankakee River State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1005 Lake Le-Aqua-Na State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1006 Lake Murphysboro State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1007 Lincoln Trail State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1008 Lowden State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10091 Powerton Lake State Fish and Wildlife Area: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10094 Spring Lake State Fish and Wildlife Area: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10095 Woodford State Fish and Wildlife Area: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10100 Anderson Lake State Fish and Wildlife Area: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1014 Nauvoo State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1015 Pere Marquette State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1016 Edward R. Madigan State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1017 Ramsey Lake State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1019 Rock Cut State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1021 Sangchris Lake State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1022 Sid Simpson State Park: no map link on file and none on the park page
+- US-1023 Siloam Springs State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1024 Silver Springs State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10241 Kincaid Mounds State Historic Site: no map link on file and none on the park page
+- US-1027 Starved Rock State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1032 William G. Stratton State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10391 Kishwaukee River State Fish and Wildlife Area: opened, a readable map that does not name this park (chat 8 F2: another unit / several units)
+
 ## US-MO sample (random 12 per agency group, seed 28)
 | ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
 |---|---|---|---|---|---|---|
-| US-10575 | Walnut Woods State Conservation Area | https://cwd-interactive-maps-mdcgis.hub.arcgis.com/ | page · linked from the agency page (cwd-interac | — (date unknown, checked 2026-10-28) · posted — | https://mdc.mo.gov/hunting-trapping/regulations ✓ |  |
+| US-11056 | Calk Bluff Trail Access State Conservati | https://cwd-interactive-maps-mdcgis.hub.arcgis.com/ | page · linked from the agency page (cwd-interac | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp ✓ |  |
 | US-8511 | White River Balds Natural Area State Con | https://cwd-interactive-maps-mdcgis.hub.arcgis.com/ | page · linked from the agency page (cwd-interac | — (date unknown, checked 2026-10-28) · posted — | https://mdc.mo.gov/hunting-trapping/regulations ✓ |  |
-| US-10576 | Rush Creek State Conservation Area | https://cwd-interactive-maps-mdcgis.hub.arcgis.com/ | page · linked from the agency page (cwd-interac | — (date unknown, checked 2026-10-28) · posted — | https://mdc.mo.gov/hunting-trapping/regulations ✓ |  |
-| US-12084 | Weldon Springs National Historical Park | https://www.energy.gov/lm/articles/busch-weldon-greenspace-map | pdf · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://www.energy.gov/topics/policy ✓ |  |
-| US-0375 | Clarence Cannon National Wildlife Refuge | https://www.fws.gov/refuge/clarence-cannon/map | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/laws-regulations ✓ |  |
-| US-0377 | Mingo National Wildlife Refuge | https://www.fws.gov/refuge/mingo/map | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/mingo/visit-us/rules-policies ✓ | managed by the U.S. Fish |
-| US-0380 | Loess Bluffs National Wildlife Refuge | https://www.fws.gov/refuge/loess-bluffs/map | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/laws-regulations ✓ |  |
-| US-0374 | Big Muddy National Wildlife Refuge | https://www.fws.gov/refuge/big-muddy/map | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/laws-regulations ✓ |  |
-| US-0376 | Great River National Wildlife Refuge | https://www.fws.gov/refuge/great-river/map | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/laws-regulations ✓ |  |
-| US-0381 | Swan Lake National Wildlife Refuge | https://www.fws.gov/refuge/swan-lake/map | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/laws-regulations ✓ |  |
-| US-12581 | Blue Springs Creek State Conservation Ar | https://mdc.mo.gov/sites/default/files/2023-10/8405mapBlueSpringsCreek.pdf | pdf ✓name · the agency site | 6/13/2025 (printed on the map) · posted 2023-10 | https://mdc.mo.gov/hunting-trapping/regulations ✓ |  |
-| US-10957 | Block Hole Access State Conservation Are | https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/9108map.pdf | pdf ✓name · the agency site | — (date unknown, checked 2026-10-28) · posted Sep 09, 2025 | https://mdc.mo.gov/hunting-trapping/regulations ✓ |  |
-| US-8507 | LaBarque Creek State Conservation Area | https://mdc.mo.gov/sites/default/files/2024-05/200608map.pdf | pdf ✓name · the agency site | — (date unknown, checked 2026-10-28) · posted 2024-05 | https://mdc.mo.gov/hunting-trapping/regulations ✓ |  |
-| US-10704 | Clark State Conservation Area | https://mdc.mo.gov/sites/default/files/2022-12/8147map.pdf | pdf ✓name · the agency site | 3/30/2022 (printed on the map) · posted 2022-12 | https://mdc.mo.gov/hunting-trapping/regulations ✓ | administered by the Department |
-| US-6530 | Sever Lake State Conservation Area | https://mdc.mo.gov/media/area/map/5801 | page · the agency site | — (date unknown, checked 2026-10-28) · posted — |  |  |
-| US-11041 | Runge Nature Center State Conservation A | https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/3600map.pdf | pdf ✓name · the agency site | March 2012 (a month + year printed on the map) · posted Mar 10, 2026 | https://mdc.mo.gov/hunting-trapping/regulations ✓ |  |
-| US-11057 | Comstock Prairie State Conservation Area | https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/9018map.pdf | pdf ✓name · the agency site | — (date unknown, checked 2026-10-28) · posted Apr 01, 2026 | https://mdc.mo.gov/hunting-trapping/regulations ✓ |  |
-| US-10214 | Niangua State Conservation Area | https://mdc.mo.gov/sites/default/files/2023-10/6514map.pdf | pdf ✓name · the agency site | 3/2/2026 (printed on the map) · posted 2023-10 | https://mdc.mo.gov/hunting-trapping/regulations ✓ |  |
-| US-12668 | Noser Mill State Conservation Area | https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/201501map.pd | pdf ✓name · the agency site | 10/25/2018 (printed on the map) · posted Feb 17, 2026 | https://mdc.mo.gov/hunting-trapping/regulations ✓ |  |
-| US-11077 | Allen Bridge Access State Conservation A | https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/7843map.pdf | pdf ✓name · the agency site | 2008-02-13 (the PDF file's own stamp (may be the print da) · posted Feb 21, 2025 | https://mdc.mo.gov/hunting-trapping/regulations ✓ |  |
-| US-10457 | Rocky Mount Tower Site State Conservatio | https://mdc.mo.gov/sites/default/files/2023-05/4805map_1.pdf | pdf ✓name · the agency site | 2023-05-17 (the PDF file's own stamp (may be the print da) · posted 2023-05 | https://mdc.mo.gov/hunting-trapping/regulations ✓ | managed by the department is not listed |
-| US-10582 | Kearn Memorial State Conservation Area | https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8844map.pdf | pdf ✓name · the agency site | 7/8/2026 (printed on the map) · posted Jul 20, 2026 | https://mdc.mo.gov/hunting-trapping/regulations ✓ |  |
-| US-1770 | Lewis and Clark State Park | https://mostateparks.com/media/pdf/lewis-and-clark-state-park-map | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/laws-and-regulations ✓ |  |
+| US-11085 | Mary Lawson State Conservation Area | https://cwd-interactive-maps-mdcgis.hub.arcgis.com/ | page · linked from the agency page (cwd-interac | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp ✓ |  |
+| US-0375 | Clarence Cannon National Wildlife Refuge | https://www.fws.gov/refuge/clarence-cannon/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/clarence-cannon/visit-us/rules-policies ✓ |  |
+| US-0381 | Swan Lake National Wildlife Refuge | https://www.fws.gov/refuge/swan-lake/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/swan-lake/visit-us/rules-policies ✓ |  |
+| US-0377 | Mingo National Wildlife Refuge | https://www.fws.gov/refuge/mingo/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/mingo/visit-us/rules-policies ✓ | managed by the U.S. Fish and Wildlife Service |
+| US-0380 | Loess Bluffs National Wildlife Refuge | https://www.fws.gov/refuge/loess-bluffs/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/loess-bluffs/visit-us/rules-policies ✓ |  |
+| US-0374 | Big Muddy National Wildlife Refuge | https://www.fws.gov/refuge/big-muddy/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/big-muddy/visit-us/rules-policies ✓ |  |
+| US-0376 | Great River National Wildlife Refuge | https://www.fws.gov/refuge/great-river/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/great-river/visit-us/rules-policies ✓ |  |
+| US-10871 | Pea Ridge State Conservation Area | https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/4711map.pdf | pdf ✓name · combined map: covers 4 units · the agency site | date unknown (date unknown, checked 2026-10-28) · posted Mar 13, 2025 | https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp ✓ |  |
+| US-12659 | Vonaventure Memorial Forest State Wildli | https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/7111map.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted Apr 06, 2026 | https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp ✓ |  |
+| US-10958 | Tywappity Community Lake State Conservat | https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/5708map.pdf | pdf ✓name · the agency site | 2012: check it is still current (file stamp 2012 (older than the posting 2025 ) · posted Feb 21, 2025 | https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp ✓ |  |
+| US-10704 | Clark State Conservation Area | https://mdc.mo.gov/sites/default/files/2022-12/8147map.pdf | pdf ✓name · the agency site | 2022 (printed on the map) · posted 2022-12 | https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp ✓ |  |
+| US-7498 | Danville State Conservation Area | https://mdc.mo.gov/sites/default/files/2022-08/6507map_0.pdf | pdf ✓name · the agency site | 8/3/2022 (printed on the map) · posted 2022-08 | https://mdc.mo.gov/hunting-trapping/regulations ✓ | administered by the U. S |
+| US-11042 | Kahrs-Boger State Conservation Area | https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8111map.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted Feb 26, 2025 | https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp ✓ |  |
+| US-11059 | Corry Flatrocks State Conservation Area | https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/201701map.pd | pdf ✓name · combined map: covers 2 units · the agency site | date unknown (date unknown, checked 2026-10-28) · posted Jul 10, 2026 | https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp ✓ |  |
+| US-10214 | Niangua State Conservation Area | https://mdc.mo.gov/sites/default/files/2023-10/6514map.pdf | pdf ✓name · combined map: covers 2 units · the agency site | 2026 (printed on the map) · posted 2023-10 | https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp ✓ |  |
+| US-12672 | Hemenway State Conservation Area | https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/9325map.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted Feb 21, 2025 | https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp ✓ |  |
+| US-11079 | Wilbur Allen Memorial State Conservation | https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8112map.pdf | pdf ✓name · the agency site | 2019: check it is still current (printed on the map) · posted Mar 06, 2025 | https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp ✓ |  |
+| US-10457 | Rocky Mount Tower Site State Conservatio | https://mdc.mo.gov/sites/default/files/2023-05/4805map_1.pdf | pdf ✓name · the agency site | 2023 (the PDF file's own stamp (may be the print da) · posted 2023-05 | https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp ✓ |  |
+| US-10582 | Kearn Memorial State Conservation Area | https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8844map.pdf | pdf ✓name · combined map: covers 4 units · the agency site | 2026 (printed on the map) · posted Jul 20, 2026 | https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp ✓ |  |
+| US-1770 | Lewis and Clark State Park | https://mostateparks.com/media/pdf/lewis-and-clark-state-park-map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/55066/rules-and-regulations ✗ |  |
+| US-3370 | Eleven Point State Park | https://mostateparks.com/basic-page/locator-map | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/laws-and-regulations ✓ |  |
+| US-1764 | Johnson's Shut-Ins State Park | https://mostateparks.com/media/pdf/johnsons-shut-ins-state-park-map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/pets ✓ |  |
+| US-1789 | Thousand Hills State Park | https://mostateparks.com/media/pdf/thousand-hills-state-park-map | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/laws-and-regulations ✓ |  |
+| US-3339 | Battle of Lexington State Historic Site | https://mostateparks.com/basic-page/locator-map | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/laws-and-regulations ✓ |  |
+| US-1752 | Crowder State Park | https://mostateparks.com/media/pdf/crowder-state-park-map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/55066/rules-and-regulations ✗ |  |
+| US-1755 | Don Robinson State Park | https://mostateparks.com/media/pdf/don-robinson-state-park-map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/55066/rules-and-regulations ✗ |  |
+| US-1776 | Onondaga Cave State Park | https://mostateparks.com/media/pdf/onondaga-cave-state-park-map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/55066/rules-and-regulations ✗ |  |
+| US-1777 | Pershing State Park | https://mostateparks.com/media/pdf/pershing-state-park-map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/55066/rules-and-regulations ✗ |  |
 | US-3369 | Bryant Creek State Park | https://mostateparks.com/media/pdf/bryant-creek-state-park-map | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/laws-and-regulations ✓ |  |
-| US-1764 | Johnson's Shut-Ins State Park | https://mostateparks.com/media/pdf/johnsons-shut-ins-state-park-map | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/johnsons-shut-ins-state-park/shut-ins-ac ✓ |  |
-| US-1788 | Taum Sauk Mountain State Park | https://mostateparks.com/media/pdf/taum-sauk-mountain-state-park-map | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/laws-and-regulations ✓ |  |
-| US-1796 | Weston Bend State Park | https://mostateparks.com/media/pdf/weston-bend-state-park-map | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/laws-and-regulations ✓ |  |
-| US-1752 | Crowder State Park | https://mostateparks.com/media/pdf/crowder-state-park-map | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/laws-and-regulations ✓ |  |
-| US-1755 | Don Robinson State Park | https://mostateparks.com/media/pdf/don-robinson-state-park-map | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/laws-and-regulations ✓ |  |
-| US-1776 | Onondaga Cave State Park | https://mostateparks.com/media/pdf/onondaga-cave-state-park-map | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/laws-and-regulations ✓ |  |
-| US-1777 | Pershing State Park | https://mostateparks.com/media/pdf/pershing-state-park-map | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/laws-and-regulations ✓ |  |
-| US-5715 | Roger Pryor Pioneer Backcountry State Pa | https://mostateparks.com/basic-page/locator-map | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/laws-and-regulations ✓ | is owned by the L-A-D Foundation |
-| US-1790 | Trail of Tears State Park | https://mostateparks.com/media/pdf/trail-tears-state-park-map | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/laws-and-regulations ✓ |  |
-| US-1786 | Stockton State Park | https://mostateparks.com/basic-page/locator-map | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/laws-and-regulations ✓ |  |
-| US-4579 | Santa Fe National Historic Trail | https://www.nps.gov/safe/planyourvisit/maps.htm | page · the agency site | — (date unknown, checked 2026-10-28) · posted August 28, 2026 | https://www.nps.gov/safe/learn/management/lawsandpolicies.htm ✗ |  |
-| US-0936 | George Washington Carver National Monume | https://www.nps.gov/gwca/planyourvisit/maps.htm | page · the agency site | — (date unknown, checked 2026-10-28) · posted September 19, 2024 | https://www.nps.gov/gwca/learn/management/lawsandpolicies.htm ✓ |  |
-| US-4572 | Lewis and Clark National Historic Trail | https://www.nps.gov/lecl/planyourvisit/maps.htm | page · the agency site | — (date unknown, checked 2026-10-28) · posted August 5, 2026 | https://www.nps.gov/lecl/learn/management/lawsandpolicies.htm ✓ |  |
-| US-0870 | Ulysses S. Grant National Historic Site | https://www.nps.gov/ulsg/planyourvisit/maps.htm | page · the agency site | — (date unknown, checked 2026-10-28) · posted September 10, 2024 | https://www.nps.gov/ulsg/learn/management/lawsandpolicies.htm ✓ | owned by his father-in-law |
-| US-4009 | Ozark National Wild and Scenic River | https://www.nps.gov/ozar/planyourvisit/maps.htm | page · the agency site | — (date unknown, checked 2026-10-28) · posted February 24, 2026 | https://www.nps.gov/ozar/learn/management/lawsandpolicies.htm ✓ |  |
-| US-0831 | Harry S. Truman Family Farm National His | https://www.nps.gov/hstr/planyourvisit/maps.htm | page · the agency site | — (date unknown, checked 2026-10-28) · posted August 5, 2024 | https://www.nps.gov/hstr/learn/management/lawsandpolicies.htm ✓ |  |
-| US-4576 | Oregon National Historic Trail | https://www.nps.gov/oreg/planyourvisit/maps.htm | page · the agency site | — (date unknown, checked 2026-10-28) · posted August 28, 2026 | https://www.nps.gov/oreg/learn/management/lawsandpolicies.htm ✓ |  |
-| US-0710 | Wilson's Creek National Battlefield | https://www.nps.gov/wicr/planyourvisit/maps.htm | page · the agency site | — (date unknown, checked 2026-10-28) · posted September 6, 2022 | https://www.nps.gov/wicr/learn/management/lawsandpolicies.htm ✓ |  |
-| US-4566 | California National Historic Trail | https://www.nps.gov/cali/planyourvisit/maps.htm | page · the agency site | — (date unknown, checked 2026-10-28) · posted August 28, 2026 | https://www.nps.gov/cali/learn/management/lawsandpolicies.htm ✓ |  |
-| US-11015 | Harry S Truman Home National Historical  | https://www.nps.gov/hstr/planyourvisit/maps.htm | page · the agency site | — (date unknown, checked 2026-10-28) · posted August 5, 2024 | https://www.nps.gov/hstr/learn/management/lawsandpolicies.htm ✓ |  |
-| US-3791 | Trail of Tears National Historic Trail | https://www.nps.gov/trte/planyourvisit/maps.htm | page · the agency site | — (date unknown, checked 2026-10-28) · posted August 24, 2026 | https://www.nps.gov/trte/learn/management/lawsandpolicies.htm ✓ |  |
+| US-1791 | Van Meter State Park | https://mostateparks.com/media/pdf/annie-and-able-van-meter-state-park-map | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/laws-and-regulations ✓ |  |
+| US-1786 | Stockton State Park | https://mostateparks.com/media/pdf/stockton-state-park-map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/55066/rules-and-regulations ✗ |  |
 | US-9757 | Butterfield Overland National Historic T | https://www.nps.gov/buov/planyourvisit/maps.htm | page · the agency site | — (date unknown, checked 2026-10-28) · posted August 28, 2026 | https://www.nps.gov/buov/learn/management/lawsandpolicies.htm ✓ |  |
+| US-11015 | Harry S Truman Home National Historical  | https://www.nps.gov/hstr/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted August 5, 2024 | https://www.nps.gov/hstr/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4576 | Oregon National Historic Trail | https://www.nps.gov/oreg/planyourvisit/maps.htm | page · the agency site | — (date unknown, checked 2026-10-28) · posted August 28, 2026 | https://www.nps.gov/oreg/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0936 | George Washington Carver National Monume | https://www.nps.gov/gwca/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted September 19, 2024 | https://www.nps.gov/gwca/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4566 | California National Historic Trail | https://www.nps.gov/cali/planyourvisit/maps.htm | page · the agency site | — (date unknown, checked 2026-10-28) · posted August 28, 2026 | https://www.nps.gov/cali/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0870 | Ulysses S. Grant National Historic Site | https://www.nps.gov/ulsg/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted September 10, 2024 | https://www.nps.gov/ulsg/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0779 | Gateway Arch National Park | https://www.nps.gov/jeff/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted December 4, 2025 | https://www.nps.gov/jeff/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0710 | Wilson's Creek National Battlefield | https://www.nps.gov/wicr/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted September 6, 2022 | https://www.nps.gov/wicr/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4572 | Lewis and Clark National Historic Trail | https://www.nps.gov/lecl/planyourvisit/maps.htm | page · the agency site | — (date unknown, checked 2026-10-28) · posted August 5, 2026 | https://www.nps.gov/lecl/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4579 | Santa Fe National Historic Trail | https://www.nps.gov/safe/planyourvisit/maps.htm | page · the agency site | — (date unknown, checked 2026-10-28) · posted August 28, 2026 | https://www.nps.gov/safe/learn/management/lawsandpolicies.htm ✗ |  |
+| US-3791 | Trail of Tears National Historic Trail | https://www.nps.gov/trte/planyourvisit/maps.htm | page · the agency site | — (date unknown, checked 2026-10-28) · posted August 24, 2026 | https://www.nps.gov/trte/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4009 | Ozark National Wild and Scenic River | https://www.nps.gov/ozar/planyourvisit/maps.htm | page · the agency site | — (date unknown, checked 2026-10-28) · posted February 24, 2026 | https://www.nps.gov/ozar/learn/management/lawsandpolicies.htm ✓ |  |
 | US-7836 | Ozark State Trail | https://www.ozarktrail.com/wp-content/uploads/2018/02/Upper-Current-Downloadable-Maps.pdf | pdf · the agency site | — (date unknown, checked 2026-10-28) · posted 2018-02 |  ✗ |  |
 | US-4591 | World War I Museum National Memorial | https://www.theworldwar.org/interactive-map | page · the agency site | — (date unknown, checked 2026-10-28) · posted — |  ✗ | administered by Japan |
 | US-4492 | Mark Twain National Forest | https://www.fs.usda.gov/r09/marktwain/maps-guides | page · the agency site | — (date unknown, checked 2026-10-28) · posted October 8, 2026 | https://www.fs.usda.gov/r09/marktwain ✓ |  |
 
-### US-MO HANDOVER notes (1): the park STAYS on the card with the note (HQ Oct 28); a person checks the source
-- US-1775 Morris State Park: donated to the state by Jim D. Morris → card: 'May now be run by state by Jim D. Morris: check before you go.' (source https://mostateparks.com/park/morris-state-park)
-
-### US-MO no map yet (37): the reason
+### US-MO no map yet (45): the reason
+- US-0831 Harry S. Truman Family Farm National Historic: opened, a page that does not name this park (a generic agency page is not its map)
 - US-10152 Perry Tower Site State Conservation Area: no map link on file and none on the park page
+- US-10575 Walnut Woods State Conservation Area: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
+- US-10576 Rush Creek State Conservation Area: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
+- US-10866 Forest 44 State Conservation Area: opened, a page that does not name this park (a generic agency page is not its map)
 - US-11225 Blue Slip Tower Site State Conservation Area: no map link on file and none on the park page
+- US-11266 August G Beckmeier State Conservation Area: opened, a page that does not name this park (a generic agency page is not its map)
+- US-12084 Weldon Springs National Historical Park: opened, a readable map that does not name this park (chat 8 F2: another unit / several units)
+- US-13258 Possum Woods State Conservation Area: opened, a page that does not name this park (a generic agency page is not its map) (needs browser: the page refused a plain reader (HTTP 403))
+- US-1787 Table Rock State Park: HTTP 403 (needs browser: the map link refused a plain reader (HTTP 403))
 - US-3335 Arrow Rock State Historic Site: no map link on file and none on the park page
 - US-3336 Battle of Athens State Historic Site: no map link on file and none on the park page
 - US-3337 Battle of Carthage State Historic Site: no map link on file and none on the park page
@@ -1121,16 +1217,9 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - US-3366 Towosahgy State Historic Site: no map link on file and none on the park page
 - US-3367 Union Covered Bridge State Historic Site: no map link on file and none on the park page
 - US-3368 Watkins Woolen Mill State Historic Site: no map link on file and none on the park page
-- US-4587 Harry S. Truman Birthplace State Historic Sit: no map link on file and none on the park page
-- US-5713 Jay Nixon State Park: no map link on file and none on the park page
-- US-5714 Shepherd of the Hills State Park: no map link on file and none on the park page
-- US-5716 Bruce R. Watkins Cultural Heritage Center Sta: no map link on file and none on the park page
-- US-7984 St Genevieve (Beauvais House) National Histor: no map link on file and none on the park page
 
 ## robots.txt said no (hosts we did not read)
-- maps.apple.com: 7 addresses (User-agent: * | Allow: /guides?*curated=* | Allow: /guides/?*curated=* | Allow: /guides?*publisher=*)
-- www.fdacs.gov: 37 addresses (User-agent: * | Disallow: / | User-agent: Googlebot | User-agent: Bingbot | User-agent: BingPreview )
-- www.google.com: 1 addresses (User-agent: * | User-agent: Yandex | Disallow: /search | Allow: /search/about | Allow: /search/howse)
+- maps.apple.com: 3 addresses (User-agent: * | Allow: /guides?*curated=* | Allow: /guides/?*curated=* | Allow: /guides?*publisher=*)
 
 ## hosts resting a day (three strikes)
 - in.gov

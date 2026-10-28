@@ -78,10 +78,17 @@
    "updated": "2026-10-28"
   },
   "US-IN": {
-   "status": "partial",
+   "status": "done",
    "parks": 229,
-   "checked": 220,
-   "left": 9,
+   "checked": 229,
+   "left": 0,
+   "updated": "2026-10-28"
+  },
+  "US-IL": {
+   "status": "done",
+   "parks": 219,
+   "checked": 219,
+   "left": 0,
    "updated": "2026-10-28"
   }
  },
@@ -101,27 +108,27 @@
  "last": {
   "when": "2026-10-28",
   "areas": [
-   "US-FL",
-   "US-MS",
    "US-IN",
    "US-IL",
    "US-MO",
    "US-WI",
    "US-MN",
-   "US-IA"
+   "US-IA",
+   "US-ND",
+   "US-SD"
   ],
   "stat": {
-   "requests": 1201,
-   "parks": 723,
-   "maps_ok": 144,
-   "maps_found": 127,
-   "dates": 23,
-   "rules": 152,
-   "browser": 203,
-   "robots": 45,
-   "strikes": 9,
-   "errors": 9,
-   "skipped_fresh": 112
+   "requests": 1683,
+   "parks": 512,
+   "maps_ok": 373,
+   "maps_found": 362,
+   "dates": 110,
+   "rules": 427,
+   "browser": 153,
+   "robots": 3,
+   "strikes": 0,
+   "errors": 0,
+   "skipped_fresh": 220
   }
  }
 }

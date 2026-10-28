@@ -3280,9 +3280,17 @@
    "page": "https://www.fs.usda.gov/recarea/hoosier/recreation/recarea/?recid=41468",
    "checked": "2026-10-28",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.fs.usda.gov/r09/hoosier/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "the page in a browser ('Get a Map')",
+    "page": "https://www.fs.usda.gov/recarea/hoosier/recreation/recarea/?recid=41468",
+    "posted": "February 25, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-10-28",
+    "via": "the agency site"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r09/hoosier",
@@ -3294,7 +3302,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 4,
+   "browser_checked": "2026-10-28"
   },
   "US-4171": {
    "n": "Paynetown on Monroe Lake State Recreation Area",
@@ -4938,9 +4947,17 @@
    "page": "https://www.fs.usda.gov/hoosier",
    "checked": "2026-10-28",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.fs.usda.gov/r09/hoosier/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "the page in a browser ('Get a Map')",
+    "page": "https://www.fs.usda.gov/hoosier",
+    "posted": "February 25, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-10-28",
+    "via": "the agency site"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r09/hoosier",
@@ -4952,7 +4969,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 4,
+   "browser_checked": "2026-10-28"
   },
   "US-4572": {
    "n": "Lewis and Clark National Historic Trail",
@@ -5023,9 +5041,17 @@
    "page": "https://www.fs.usda.gov/recarea/hoosier/recarea/?recid=41486",
    "checked": "2026-10-28",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.fs.usda.gov/r09/hoosier/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "the page in a browser ('Get a Map')",
+    "page": "https://www.fs.usda.gov/recarea/hoosier/recarea/?recid=41486",
+    "posted": "February 25, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-10-28",
+    "via": "the agency site"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r09/hoosier",
@@ -5037,7 +5063,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 4,
+   "browser_checked": "2026-10-28"
   },
   "US-5681": {
    "n": "Little Turtle State Recreation Area",
@@ -5607,23 +5634,254 @@
    "handover": [],
    "notes": [],
    "ver": 4
+  },
+  "US-6976": {
+   "n": "T.C. Steele State Historic Site",
+   "t": "State Historic Site",
+   "page": "https://www.indianamuseum.org/historic-sites/tc-steele/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.indianamuseum.org/visit-museum/museum-map-and-parking/",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Museum Map and Parking')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 4
+  },
+  "US-6977": {
+   "n": "Whitewater Canal State Historic Site",
+   "t": "State Historic Site",
+   "page": "https://www.indianamuseum.org/historic-sites/white-water-canal/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.indianamuseum.org/visit-museum/museum-map-and-parking/",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Museum Map and Parking')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 4
+  },
+  "US-6978": {
+   "n": "Vincennes State Historic Site",
+   "t": "State Historic Site",
+   "page": "https://www.indianamuseum.org/historic-sites/vincennes/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.indianamuseum.org/visit-museum/museum-map-and-parking/",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Museum Map and Parking')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 4
+  },
+  "US-7369": {
+   "n": "Mountain Tea State Forest",
+   "t": "State Forest",
+   "page": "https://www.in.gov/dnr/forestry/properties/mountain-tea-state-forest/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://in.gov/dnr/state-parks/property-rules-and-regulations",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "rules page not read (the site is resting: next run)"
+   },
+   "agency": "government agency (in.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: rest"
+   ],
+   "ver": 4
+  },
+  "US-7370": {
+   "n": "Ravinia Woods State Forest",
+   "t": "State Forest",
+   "page": "https://www.in.gov/dnr/forestry/properties/ravinia-state-forest/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://in.gov/dnr/state-parks/property-rules-and-regulations",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "rules page not read (the site is resting: next run)"
+   },
+   "agency": "government agency (in.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: rest"
+   ],
+   "ver": 4
+  },
+  "US-7713": {
+   "n": "Loblolly Marsh State Nature Preserve",
+   "t": "State Nature Preserve",
+   "page": "https://www.in.gov/dnr/nature-preserves/files/np-Loblolly.pdf",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://in.gov/dnr/state-parks/property-rules-and-regulations",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "rules page not read (the site is resting: next run)"
+   },
+   "agency": "government agency (in.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: rest"
+   ],
+   "ver": 4
+  },
+  "US-7841": {
+   "n": "Frances Slocum State Forest",
+   "t": "State Forest",
+   "page": "https://www.in.gov/dnr/forestry/files/compmaps/fo-FSlocum_CT_Boundaries.pdf",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://in.gov/dnr/state-parks/property-rules-and-regulations",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "rules page not read (the site is resting: next run)"
+   },
+   "agency": "government agency (in.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: rest"
+   ],
+   "ver": 4
+  },
+  "US-7842": {
+   "n": "Red Bridge State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://www.in.gov/dnr/state-parks/files/mississinewa_trail.pdf",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://in.gov/dnr/state-parks/property-rules-and-regulations",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "rules page not read (the site is resting: next run)"
+   },
+   "agency": "government agency (in.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: rest"
+   ],
+   "ver": 4
+  },
+  "US-7843": {
+   "n": "Pearson Mill State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://www.in.gov/dnr/state-parks/files/mississinewa_trail.pdf",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://in.gov/dnr/state-parks/property-rules-and-regulations",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "rules page not read (the site is resting: next run)"
+   },
+   "agency": "government agency (in.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: rest"
+   ],
+   "ver": 4
   }
  },
  "read": "2026-10-28",
  "counts": {
-  "parks": 220,
-  "map ok": 17,
-  "map found by the bot": 14,
+  "parks": 229,
+  "map ok": 23,
+  "map found by the bot": 20,
   "date on the map": 1,
-  "posted date only": 5,
-  "date unknown": 11,
-  "no map": 155,
+  "posted date only": 8,
+  "date unknown": 14,
+  "no map": 158,
   "rules ok": 39,
-  "needs browser": 3,
+  "needs browser": 0,
   "handover hints": 0,
   "runs hints": 0,
   "host resting / robots": 48,
-  "map names the park": 17,
+  "map names the park": 20,
   "region overview only": 0
  }
 }
