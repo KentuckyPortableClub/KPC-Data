@@ -21,7 +21,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-0259": {
    "n": "Banks Lake National Wildlife Refuge",
@@ -29,17 +29,9 @@
    "page": "https://www.fws.gov/refuge/banks-lake/map",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.fws.gov/library",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Maps, Guides and Resources')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": null,
-    "checked": "2026-10-28",
-    "via": "the agency site"
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "https://www.fws.gov/refuge/banks-lake/visit-us/rules-policies",
@@ -50,7 +42,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-0260": {
    "n": "Blackbeard Island National Wildlife Refuge",
@@ -66,37 +58,20 @@
     "how": "a link on the park's page ('Map')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://www.fws.gov/laws-regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://www.fws.gov/refuge/blackbeard-island/visit-us/rules-policies",
+    "how": "a link on the park's page ('Rules Policies')",
     "status": "ok"
    },
    "agency": "U.S. Fish and Wildlife Service",
-   "runs": [
-    "managed by the U.S. Fish"
-   ],
+   "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://www.fws.gov/library",
-     "status": "ok",
-     "kind": "page",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Maps, Guides and Resources')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": null,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-0261": {
    "n": "Bond Swamp National Wildlife Refuge",
@@ -112,7 +87,7 @@
     "how": "a link on the park's page ('Map')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -125,22 +100,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://www.fws.gov/library",
-     "status": "ok",
-     "kind": "page",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Maps, Guides and Resources')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": null,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-0262": {
    "n": "Harris Neck National Wildlife Refuge",
@@ -156,35 +116,20 @@
     "how": "a link on the park's page ('Map')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://www.fws.gov/laws-regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://www.fws.gov/refuge/harris-neck/visit-us/rules-policies",
+    "how": "a link on the park's page ('Rules Policies')",
     "status": "ok"
    },
    "agency": "U.S. Fish and Wildlife Service",
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://www.fws.gov/library",
-     "status": "ok",
-     "kind": "page",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Maps, Guides and Resources')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": null,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-0263": {
    "n": "Okefenokee National Wildlife Refuge",
@@ -200,7 +145,7 @@
     "how": "a link on the park's page ('Map')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -210,27 +155,25 @@
     "status": "ok"
    },
    "agency": "U.S. Fish and Wildlife Service",
-   "runs": [
-    "managed by the U.S. Fish"
-   ],
+   "runs": [],
    "handover": [],
    "notes": [],
    "map_also": [
     {
-     "url": "https://www.fws.gov/library",
+     "url": "https://www.fws.gov/media/okefenokee-national-wildlife-refuge-general-brochure",
      "status": "ok",
      "kind": "page",
      "date": null,
      "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Maps, Guides and Resources')",
+     "how": "a link on the park's page ('')",
      "posted": "",
      "posted_how": "",
-     "names_park": null,
+     "names_park": true,
      "checked": "2026-10-28",
      "via": "the agency site"
     }
    ],
-   "ver": 2
+   "ver": 3
   },
   "US-0264": {
    "n": "Piedmont National Wildlife Refuge",
@@ -246,7 +189,7 @@
     "how": "a link on the park's page ('Map')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -259,22 +202,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://www.fws.gov/library",
-     "status": "ok",
-     "kind": "page",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Maps, Guides and Resources')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": null,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-0266": {
    "n": "Wassaw National Wildlife Refuge",
@@ -290,7 +218,7 @@
     "how": "a link on the park's page ('Map')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -300,27 +228,10 @@
     "status": "ok"
    },
    "agency": "U.S. Fish and Wildlife Service",
-   "runs": [
-    "managed by the U.S. Fish"
-   ],
+   "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://www.fws.gov/library",
-     "status": "ok",
-     "kind": "page",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Maps, Guides and Resources')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": null,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-0267": {
    "n": "Wolf Island National Wildlife Refuge",
@@ -336,7 +247,7 @@
     "how": "a link on the park's page ('Map')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -349,22 +260,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://www.fws.gov/library",
-     "status": "ok",
-     "kind": "page",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Maps, Guides and Resources')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": null,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-0522": {
    "n": "Savannah National Wildlife Refuge",
@@ -372,15 +268,15 @@
    "page": "https://www.fws.gov/refuge/savannah/",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.fws.gov/refuge/savannah/map",
+    "url": "https://www.fws.gov/media/savannah-nwr-full-and-trail-maps",
     "status": "ok",
     "kind": "page",
     "date": null,
     "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Map')",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -390,42 +286,38 @@
     "status": "ok"
    },
    "agency": "U.S. Fish and Wildlife Service",
-   "runs": [
-    "managed by the U.S. Fish"
-   ],
+   "runs": [],
    "handover": [],
    "notes": [],
    "map_also": [
     {
-     "url": "https://www.fws.gov/sites/default/files/documents/2026-07/sav-full-and-trail-map-2025.pdf",
+     "url": "https://www.fws.gov/refuge/savannah/map",
      "status": "ok",
-     "kind": "pdf",
+     "kind": "page",
      "date": null,
      "date_how": "date unknown, checked 2026-10-28",
-     "how": "on file (parkinfo-web / Kentucky answer key) -> the page's 'sav-full-and-trail-map-2025.pdf' file",
-     "posted": "2026-07",
-     "posted_how": "posted: the upload folder in the address",
-     "names_park": false,
+     "how": "a link on the park's page ('Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
      "checked": "2026-10-28",
-     "page": "https://www.fws.gov/media/savannah-nwr-full-and-trail-maps",
      "via": "the agency site"
     },
     {
-     "url": "https://www.fws.gov/sites/default/files/documents/2025-04/savannahtrailbrochure2025.pdf",
+     "url": "https://www.fws.gov/media/savannah-national-wildlife-refuge-brochure-and-map",
      "status": "ok",
-     "kind": "pdf",
+     "kind": "page",
      "date": null,
      "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Refuge Brochure Map') -> the page's '' file",
-     "posted": "2025-04",
-     "posted_how": "posted: the upload folder in the address",
-     "names_park": false,
+     "how": "a link on the park's page ('Refuge Brochure Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
      "checked": "2026-10-28",
-     "page": "https://www.fws.gov/media/savannah-national-wildlife-refuge-brochure-and-map",
      "via": "the agency site"
     }
    ],
-   "ver": 2
+   "ver": 3
   },
   "US-0636": {
    "n": "Jekyll Island State Park",
@@ -441,7 +333,7 @@
     "how": "a link on the park's page ('Open Guide Maps')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -454,7 +346,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-0662": {
    "n": "Chattahoochee River National Recreation Area",
@@ -469,8 +361,8 @@
     "date_how": "date unknown, checked 2026-10-28",
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "August 16, 2026",
-    "posted_how": "the page's 'last updated' line",
-    "names_park": null,
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -483,7 +375,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-0663": {
    "n": "Cumberland Island National Seashore",
@@ -498,8 +390,8 @@
     "date_how": "date unknown, checked 2026-10-28",
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "April 25, 2022",
-    "posted_how": "the page's 'last updated' line",
-    "names_park": null,
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -512,7 +404,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-0711": {
    "n": "Kennesaw Mountain National Battlefield",
@@ -527,8 +419,8 @@
     "date_how": "date unknown, checked 2026-10-28",
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "August 19, 2024",
-    "posted_how": "the page's 'last updated' line",
-    "names_park": null,
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -541,7 +433,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-0716": {
    "n": "Chickamauga and Chattanooga National Military Park",
@@ -556,8 +448,8 @@
     "date_how": "date unknown, checked 2026-10-28",
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "November 23, 2022",
-    "posted_how": "the page's 'last updated' line",
-    "names_park": null,
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -570,7 +462,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-0799": {
    "n": "Andersonville National Historic Site",
@@ -585,8 +477,8 @@
     "date_how": "date unknown, checked 2026-10-28",
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "December 27, 2024",
-    "posted_how": "the page's 'last updated' line",
-    "names_park": null,
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -599,7 +491,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-0837": {
    "n": "Jimmy Carter National Historic Site",
@@ -614,8 +506,8 @@
     "date_how": "date unknown, checked 2026-10-28",
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "September 9, 2025",
-    "posted_how": "the page's 'last updated' line",
-    "names_park": null,
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -637,13 +529,13 @@
      "date_how": "date unknown, checked 2026-10-28",
      "how": "a link on the park's page ('Friends of the Jimmy Carter NHP')",
      "posted": "October 11, 2023",
-     "posted_how": "the page's 'last updated' line",
-     "names_park": null,
+     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+     "names_park": true,
      "checked": "2026-10-28",
      "via": "the agency site"
     }
    ],
-   "ver": 2
+   "ver": 3
   },
   "US-0846": {
    "n": "Martin Luther King Jr. National Historic Site",
@@ -658,8 +550,8 @@
     "date_how": "date unknown, checked 2026-10-28",
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "August 15, 2025",
-    "posted_how": "the page's 'last updated' line",
-    "names_park": null,
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -672,7 +564,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-0926": {
    "n": "Fort Frederica National Monument",
@@ -687,8 +579,8 @@
     "date_how": "date unknown, checked 2026-10-28",
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "April 17, 2020",
-    "posted_how": "the page's 'last updated' line",
-    "names_park": null,
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -701,7 +593,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-0930": {
    "n": "Fort Pulaski National Monument",
@@ -716,8 +608,8 @@
     "date_how": "date unknown, checked 2026-10-28",
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "April 12, 2023",
-    "posted_how": "the page's 'last updated' line",
-    "names_park": null,
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -730,7 +622,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-0952": {
    "n": "Ocmulgee National Monument",
@@ -739,14 +631,14 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://www.nps.gov/ocmu/planyourvisit/maps.htm",
-    "status": "ok",
+    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "a link on the park's page ('Maps')",
     "posted": "June 12, 2023",
-    "posted_how": "the page's 'last updated' line",
-    "names_park": null,
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -759,7 +651,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-10397": {
    "n": "Southern Nantahala Wilderness Area",
@@ -781,17 +673,38 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-12416": {
    "n": "Little River (GA) Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://georgiawildlife.com/little-river-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "",
-    "status": "bot error: URL can't contain control characters. '/sites/default/files/wrd/pdf/maps/locatio"
+    "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/locationmaps/little%20river2025-huntmap_03012025.pdf",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "",
+    "how": "a link on the park's page ('PDF MAP')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": false,
+    "checked": "2026-10-28",
+    "via": "the agency site"
    },
-   "rules": null,
-   "notes": []
+   "rules": {
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
+    "status": "ok"
+   },
+   "agency": "Georgia DNR",
+   "runs": [
+    "owned by the Georgia Dept"
+   ],
+   "handover": [],
+   "notes": [],
+   "ver": 3
   },
   "US-12417": {
    "n": "Rich Mountain Cartecay Tract Wildlife Management Area",
@@ -799,43 +712,28 @@
    "page": "https://georgiawildlife.com/rich-mountain-wma-cartecay-tract",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
-    "kind": "page",
+    "url": "https://georgiawildlife.com/sites/default/files/Rich%20Mountain%20Cartecay%20Topo.pdf",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+    "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Map of All Properties')",
+    "date_how": "",
+    "how": "a link on the park's page ('PDF MAP')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://georgiawildlife.com/sites/default/files/Rich%20Mountain%20Cartecay%20Topo.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('PDF MAP')",
-     "posted": "Feb 02, 2024",
-     "posted_how": "posted: the server's file date",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-12418": {
    "n": "Tallulah Gorge Wildlife Management Area",
@@ -844,53 +742,56 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
+    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "a link on the park's page ('Map of All Properties')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://gastateparks.org:443/sites/default/files/parks/pdf/trailmaps/DonCarter_TrailMap.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Don Carter State Park') -> the page's 'Trail Map' file",
-     "posted": "Apr 09, 2025",
-     "posted_how": "posted: the server's file date",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "page": "https://gastateparks.org:443/DonCarter",
-     "via": "linked from the agency page (gastateparks.org)"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-12419": {
    "n": "Tallapoosa River Wildlife Management Area",
+   "t": "Wildlife Management Area",
+   "page": "https://georgiawildlife.com/tallapoosa-river-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "",
-    "status": "bot error: URL can't contain control characters. '/sites/default/files/wrd/pdf/maps/Tallapo"
+    "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/Tallapoosa%20River%20VPA%20Map%202024.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('PDF MAP')",
+    "posted": "2024",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
    },
-   "rules": null,
-   "notes": []
+   "rules": {
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
+    "status": "ok"
+   },
+   "agency": "Georgia DNR",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 3
   },
   "US-12420": {
    "n": "Treat Mountain Wildlife Management Area",
@@ -898,43 +799,28 @@
    "page": "https://georgiawildlife.com/treat-mountain-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
-    "kind": "page",
+    "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/Treat%20Mountain%20WMA.pdf",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+    "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Map of All Properties')",
+    "date_how": "",
+    "how": "a link on the park's page ('PDF MAP')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/Treat%20Mountain%20WMA.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('PDF MAP')",
-     "posted": "Aug 25, 2025",
-     "posted_how": "posted: the server's file date",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-12421": {
    "n": "Cochrans Creek Wildlife Management Area",
@@ -942,43 +828,28 @@
    "page": "https://georgiawildlife.com/cochrans-creek-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
-    "kind": "page",
+    "url": "https://georgiawildlife.com/sites/default/files/Cochrans%20Creek%20Full%20Handout%20Map.pdf",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+    "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Map of All Properties')",
+    "date_how": "",
+    "how": "a link on the park's page ('PDF MAP')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://georgiawildlife.com/sites/default/files/Cochrans%20Creek%20Full%20Handout%20Map.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('PDF MAP')",
-     "posted": "Feb 02, 2024",
-     "posted_how": "posted: the server's file date",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-12768": {
    "n": "Bowens Mill State Fish Hatchery",
@@ -987,27 +858,27 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
+    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "a link on the park's page ('Map of All Properties')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-12769": {
    "n": "Cordele State Fish Hatchery",
@@ -1016,27 +887,27 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
+    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "a link on the park's page ('Map of All Properties')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-12770": {
    "n": "Richmond Hill State Fish Hatchery",
@@ -1045,27 +916,27 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
+    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "a link on the park's page ('Map of All Properties')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-12771": {
    "n": "Summerville State Fish Hatchery",
@@ -1074,27 +945,27 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
+    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "a link on the park's page ('Map of All Properties')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-12772": {
    "n": "Georgia National Fairgrounds State Recreation Area",
@@ -1115,7 +986,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-12773": {
    "n": "Warm Springs National Fish Hatchery",
@@ -1131,7 +1002,7 @@
     "how": "a link on the park's page ('Interactive Map')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -1144,7 +1015,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-2165": {
    "n": "A. H. Stephens State Park",
@@ -1174,7 +1045,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-2166": {
    "n": "Amicalola Falls State Park",
@@ -1182,17 +1053,17 @@
    "page": "https://www.amicalolafallslodge.com/",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://365publicationsonline.com/AmicalolaEbrochure/",
+    "url": "https://amicalolafallslodge.com/georgia-state-park/",
     "status": "ok",
     "kind": "page",
     "date": null,
     "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('View e-Brochure')",
+    "how": "a link on the park's page ('Park Map')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "linked from the agency page (365publicationsonline.com)"
+    "via": "the agency site"
    },
    "rules": {
     "url": "",
@@ -1206,21 +1077,20 @@
    "needs_browser": "the map link refused a plain reader (ok)",
    "map_also": [
     {
-     "url": "https://amicalolafallslodge.com/wp-content/uploads/2025/11/Coral-Hospitality-2024-3D-Pad-Map-Amicalola-Falls-State-Park.pdf",
+     "url": "https://365publicationsonline.com/AmicalolaEbrochure/",
      "status": "ok",
-     "kind": "pdf",
+     "kind": "page",
      "date": null,
      "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Park Map') -> the page's 'Download map' file",
-     "posted": "2025-11",
-     "posted_how": "posted: the upload folder in the address",
-     "names_park": false,
+     "how": "a link on the park's page ('View e-Brochure')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
      "checked": "2026-10-28",
-     "page": "https://amicalolafallslodge.com/georgia-state-park/",
-     "via": "the agency site"
+     "via": "linked from the agency page (365publicationsonline.com)"
     }
    ],
-   "ver": 2
+   "ver": 3
   },
   "US-2167": {
    "n": "Black Rock Mountain State Park",
@@ -1236,7 +1106,7 @@
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "2022",
     "posted_how": "a year in the file's name (an edition hint, not a printed date)",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -1250,17 +1120,37 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-2168": {
    "n": "Chattahoochee Bend State Park",
+   "t": "State Park",
+   "page": "https://gastateparks.org/ChattahoocheeBend",
    "checked": "2026-10-28",
    "map": {
-    "url": "",
-    "status": "bot error: URL can't contain control characters. '/sites/default/files/parks/pdf/trailmaps/"
+    "url": "https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/parkmaps/chattahoochee%20bend%20sp%202022%20map.jpg",
+    "status": "ok",
+    "kind": "image",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "Feb 02, 2024",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
    },
-   "rules": null,
-   "notes": []
+   "rules": {
+    "url": "https://gastateparks.org/Rules",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "did not open"
+   },
+   "agency": "Georgia DNR",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-2169": {
    "n": "Cloudland Canyon State Park",
@@ -1269,13 +1159,13 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/CloudlandCanyon_TrailMap.pdf",
-    "status": "ok",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "Apr 07, 2025",
-    "posted_how": "posted: the server's file date",
+    "posted": "",
+    "posted_how": "",
     "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
@@ -1290,7 +1180,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-2170": {
    "n": "Crooked River State Park",
@@ -1299,13 +1189,13 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/parkmaps/CrookedRiver_ParkMap.pdf",
-    "status": "ok",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "Apr 15, 2026",
-    "posted_how": "posted: the server's file date",
+    "posted": "",
+    "posted_how": "",
     "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
@@ -1320,7 +1210,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-2171": {
    "n": "Don Carter State Park",
@@ -1329,13 +1219,13 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/DonCarter_TrailMap.pdf",
-    "status": "ok",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "Apr 09, 2025",
-    "posted_how": "posted: the server's file date",
+    "posted": "",
+    "posted_how": "",
     "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
@@ -1350,7 +1240,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-2172": {
    "n": "Elijah Clark State Park",
@@ -1366,7 +1256,7 @@
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "Feb 02, 2024",
     "posted_how": "posted: the server's file date",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -1380,7 +1270,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-2173": {
    "n": "F.D. Roosevelt State Park",
@@ -1389,13 +1279,13 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/FDRoosevelt_ParkMap.pdf",
-    "status": "ok",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "Feb 02, 2024",
-    "posted_how": "posted: the server's file date",
+    "posted": "",
+    "posted_how": "",
     "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
@@ -1410,7 +1300,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-2174": {
    "n": "Florence Marina State Park",
@@ -1419,13 +1309,13 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/FlorenceMarina_TrailMap.pdf",
-    "status": "ok",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "Feb 02, 2024",
-    "posted_how": "posted: the server's file date",
+    "posted": "",
+    "posted_how": "",
     "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
@@ -1440,7 +1330,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-2175": {
    "n": "Fort McAllister State Park",
@@ -1449,13 +1339,13 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://gastateparks.org/sites/default/files/parks/pdf/FortMcAllister/FortMcAllister-ParkMap-2024.pdf",
-    "status": "ok",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "2024",
-    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "posted": "",
+    "posted_how": "",
     "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
@@ -1470,7 +1360,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-2176": {
    "n": "Fort Mountain State Park",
@@ -1500,7 +1390,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-2177": {
    "n": "Fort Yargo State Park",
@@ -1530,7 +1420,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-2178": {
    "n": "General Coffee State Park",
@@ -1560,7 +1450,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-2179": {
    "n": "George L. Smith State Park",
@@ -1569,13 +1459,13 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://gastateparks.org/sites/default/files/parks/pdf/GeorgeLSmith/GeorgeLSmith_ParkMap_2024.pdf",
-    "status": "ok",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "2024",
-    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "posted": "",
+    "posted_how": "",
     "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
@@ -1590,7 +1480,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-2180": {
    "n": "George T. Bagby State Park",
@@ -1612,7 +1502,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-2181": {
    "n": "Georgia Veterans State Park",
@@ -1634,7 +1524,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-2182": {
    "n": "Jack Hill State Park",
@@ -1650,7 +1540,7 @@
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "Feb 02, 2024",
     "posted_how": "posted: the server's file date",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -1664,7 +1554,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-2183": {
    "n": "Hamburg State Park",
@@ -1694,7 +1584,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-2184": {
    "n": "Hard Labor Creek State Park",
@@ -1703,13 +1593,13 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/HardLaborCreek_TrailMap.pdf",
-    "status": "ok",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "Apr 20, 2026",
-    "posted_how": "posted: the server's file date",
+    "posted": "",
+    "posted_how": "",
     "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
@@ -1724,7 +1614,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-2185": {
    "n": "High Falls State Park",
@@ -1740,7 +1630,7 @@
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "Sep 10, 2024",
     "posted_how": "posted: the server's file date",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -1754,7 +1644,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-2186": {
    "n": "Indian Springs State Park",
@@ -1763,13 +1653,13 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/IndianSprings_ParkMap.pdf",
-    "status": "ok",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "May 22, 2026",
-    "posted_how": "posted: the server's file date",
+    "posted": "",
+    "posted_how": "",
     "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
@@ -1784,7 +1674,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-2187": {
    "n": "James H. (Sloppy) Floyd State Park",
@@ -1793,13 +1683,13 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/JamesHFloyd_TrailMap.pdf",
-    "status": "ok",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "Apr 09, 2025",
-    "posted_how": "posted: the server's file date",
+    "posted": "",
+    "posted_how": "",
     "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
@@ -1814,7 +1704,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-2188": {
    "n": "Laura S. Walker State Park",
@@ -1823,13 +1713,13 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/LauraSWalker_ParkMap.pdf",
-    "status": "ok",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "Apr 16, 2025",
-    "posted_how": "posted: the server's file date",
+    "posted": "",
+    "posted_how": "",
     "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
@@ -1844,7 +1734,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-2189": {
    "n": "Little Ocmulgee State Park",
@@ -1860,7 +1750,7 @@
     "how": "a link on the park's page ('Park Map')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -1873,7 +1763,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-2190": {
    "n": "Magnolia Springs State Park",
@@ -1881,17 +1771,16 @@
    "page": "https://gastateparks.org/MagnoliaSprings",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/MagnoliaSprings_TrailMap.pdf",
+    "url": "https://gastateparks.org/MagnoliaSprings",
     "status": "ok",
-    "kind": "pdf",
+    "kind": "page",
     "date": null,
     "date_how": "date unknown, checked 2026-10-28",
-    "how": "on file (parkinfo-web / Kentucky answer key) -> the page's 'Trail Map' file",
-    "posted": "Oct 26, 2026",
-    "posted_how": "posted: the server's file date",
-    "names_park": false,
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
     "checked": "2026-10-28",
-    "page": "https://gastateparks.org/MagnoliaSprings",
     "via": "the agency site"
    },
    "rules": {
@@ -1903,8 +1792,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "host on the browser list",
-   "ver": 2
+   "needs_browser": "map page on the browser list (a download button may hide the file)",
+   "ver": 3
   },
   "US-2191": {
    "n": "Mistletoe State Park",
@@ -1920,7 +1809,7 @@
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "Feb 02, 2024",
     "posted_how": "posted: the server's file date",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -1934,7 +1823,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-2192": {
    "n": "Moccasin Creek State Park",
@@ -1950,7 +1839,7 @@
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "2022",
     "posted_how": "a year in the file's name (an edition hint, not a printed date)",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -1964,7 +1853,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-2193": {
    "n": "Panola Mountain State Park",
@@ -1973,13 +1862,13 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/PanolaMountain_TrailMap.pdf",
-    "status": "ok",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "Sep 15, 2025",
-    "posted_how": "posted: the server's file date",
+    "posted": "",
+    "posted_how": "",
     "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
@@ -1994,7 +1883,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-2194": {
    "n": "Red Top Mountain State Park",
@@ -2010,7 +1899,7 @@
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "Feb 02, 2024",
     "posted_how": "posted: the server's file date",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -2024,7 +1913,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-2195": {
    "n": "Reed Bingham State Park",
@@ -2033,13 +1922,13 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/ReedBingham_TrailMap.pdf",
-    "status": "ok",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "Feb 02, 2024",
-    "posted_how": "posted: the server's file date",
+    "posted": "",
+    "posted_how": "",
     "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
@@ -2054,7 +1943,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-2196": {
    "n": "Richard B. Russell State Park",
@@ -2063,13 +1952,13 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/RichardBRussell_TrailMap.pdf",
-    "status": "ok",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "Feb 02, 2024",
-    "posted_how": "posted: the server's file date",
+    "posted": "",
+    "posted_how": "",
     "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
@@ -2084,7 +1973,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-2197": {
    "n": "Seminole State Park",
@@ -2114,7 +2003,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-2198": {
    "n": "Skidaway Island State Park",
@@ -2123,13 +2012,13 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/parkmaps/SkidawayIsland_ParkMap.pdf",
-    "status": "ok",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "Mar 23, 2026",
-    "posted_how": "posted: the server's file date",
+    "posted": "",
+    "posted_how": "",
     "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
@@ -2144,7 +2033,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-2199": {
    "n": "Smithgall Woods State Park",
@@ -2153,13 +2042,13 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/SmithgallWoods_TrailMap.pdf",
-    "status": "ok",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "Nov 26, 2025",
-    "posted_how": "posted: the server's file date",
+    "posted": "",
+    "posted_how": "",
     "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
@@ -2174,7 +2063,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-2200": {
    "n": "Okefenokee State Park",
@@ -2204,7 +2093,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-2201": {
    "n": "Sweetwater Creek State Park",
@@ -2213,13 +2102,13 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/SweetwaterCreek_TrailMap.pdf",
-    "status": "ok",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "Oct 09, 2025",
-    "posted_how": "posted: the server's file date",
+    "posted": "",
+    "posted_how": "",
     "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
@@ -2234,7 +2123,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-2202": {
    "n": "Tallulah Gorge State Park",
@@ -2243,13 +2132,13 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/parkmaps/TallulahGorge_ParkMap.pdf",
-    "status": "ok",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "Oct 27, 2025",
-    "posted_how": "posted: the server's file date",
+    "posted": "",
+    "posted_how": "",
     "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
@@ -2264,7 +2153,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-2203": {
    "n": "Tugaloo State Park",
@@ -2280,7 +2169,7 @@
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "2022",
     "posted_how": "a year in the file's name (an edition hint, not a printed date)",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -2294,7 +2183,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-2204": {
    "n": "Unicoi State Park",
@@ -2316,7 +2205,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-2205": {
    "n": "Victoria Bryant State Park",
@@ -2325,13 +2214,13 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/VictoriaBryant_TrailMap.pdf?v=20260206",
-    "status": "ok",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "Feb 06, 2026",
-    "posted_how": "posted: the server's file date",
+    "posted": "",
+    "posted_how": "",
     "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
@@ -2346,7 +2235,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-2206": {
    "n": "Vogel State Park",
@@ -2362,7 +2251,7 @@
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "Feb 02, 2024",
     "posted_how": "posted: the server's file date",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -2376,7 +2265,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-2207": {
    "n": "Watson Mill Bridge State Park",
@@ -2406,7 +2295,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-3715": {
    "n": "Etowah Indian Mounds State Historic Site",
@@ -2415,13 +2304,13 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://gastateparks.org/sites/default/files/parks/pdf/sitemaps/EtowahMap2019.pdf",
-    "status": "ok",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "2019",
-    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "posted": "",
+    "posted_how": "",
     "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
@@ -2436,7 +2325,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-3716": {
    "n": "Fort King George State Historic Site",
@@ -2458,7 +2347,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-3717": {
    "n": "Fort Morris State Historic Site",
@@ -2474,7 +2363,7 @@
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "Feb 02, 2024",
     "posted_how": "posted: the server's file date",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -2488,7 +2377,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-3718": {
    "n": "Hardman Farm State Historic Site",
@@ -2510,7 +2399,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-3719": {
    "n": "Hofwyl-Broadfield Plantation State Historic Site",
@@ -2526,7 +2415,7 @@
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "Feb 02, 2024",
     "posted_how": "posted: the server's file date",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -2540,7 +2429,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-3720": {
    "n": "Jarrell Plantation State Historic Site",
@@ -2556,7 +2445,7 @@
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "Feb 02, 2024",
     "posted_how": "posted: the server's file date",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -2570,7 +2459,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-3721": {
    "n": "Jefferson Davis Memorial State Historic Site",
@@ -2592,7 +2481,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-3722": {
    "n": "New Echota State Historic Site",
@@ -2608,7 +2497,7 @@
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "Feb 02, 2024",
     "posted_how": "posted: the server's file date",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -2622,7 +2511,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-3723": {
    "n": "Pickett's Mill Battlefield State Historic Site",
@@ -2631,13 +2520,13 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/PickettsMill_TrailMap.pdf",
-    "status": "ok",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "Apr 24, 2025",
-    "posted_how": "posted: the server's file date",
+    "posted": "",
+    "posted_how": "",
     "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
@@ -2652,7 +2541,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-3724": {
    "n": "Roosevelts Little White House State Historic Site",
@@ -2661,13 +2550,13 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://gastateparks.org/sites/default/files/parks/pdf/littlewhitehouse/LittleWhiteHouseBrochure_Chinese.pdf",
-    "status": "ok",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "Feb 02, 2024",
-    "posted_how": "posted: the server's file date",
+    "posted": "",
+    "posted_how": "",
     "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
@@ -2682,7 +2571,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-3725": {
    "n": "Wormsloe State Historic Site",
@@ -2704,7 +2593,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-3726": {
    "n": "Kolomoki Mounds State Park",
@@ -2734,7 +2623,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-3727": {
    "n": "Hart State Park",
@@ -2764,7 +2653,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-3728": {
    "n": "Providence Canyon State Park",
@@ -2773,13 +2662,13 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/ProvidenceCanyon_TrailMap.pdf",
-    "status": "ok",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "Aug 21, 2025",
-    "posted_how": "posted: the server's file date",
+    "posted": "",
+    "posted_how": "",
     "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
@@ -2794,7 +2683,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2
+   "ver": 3
   },
   "US-3729": {
    "n": "Rocky Mountain State Recreation Area",
@@ -2802,17 +2691,18 @@
    "page": "https://georgiawildlife.com/rocky-mountain-pfa",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/pfa/RMPFA_AreaMap_VisitorGuide_FY22_rev.pdf",
+    "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/pfa/RMPFA_campground%20map_FY22.pdf",
     "status": "ok",
     "kind": "pdf",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Area Map and Visitor Guide')",
+    "date": "2021-12-01",
+    "date_how": "file stamp 2021 (older than the posting 2024 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+    "how": "a link on the park's page ('Campground Map')",
     "posted": "Feb 02, 2024",
     "posted_how": "posted: the server's file date",
-    "names_park": false,
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "via": "the agency site",
+    "kind_note": "campground map (nothing better found)"
    },
    "rules": {
     "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/pfa/RockyMtnPFA_campgroundRules_updated%2011.16.21%20rev%20jh.pdf",
@@ -2823,22 +2713,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/RMPFA%20Hunting%20Reg%20%26%20Map%2026-27.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('HUNTING REGULATIONS MAP')",
-     "posted": "Sep 15, 2026",
-     "posted_how": "posted: the server's file date",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-3730": {
    "n": "Altamaha Wildlife Management Area",
@@ -2847,27 +2722,27 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
+    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "a link on the park's page ('Map of All Properties')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-3731": {
    "n": "B F Grant Wildlife Management Area",
@@ -2875,59 +2750,28 @@
    "page": "https://georgiawildlife.com/bf-grant-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
+    "url": "https://georgiawildlife.com:443/bf-grant-wma",
     "status": "ok",
     "kind": "page",
     "date": null,
     "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Map of All Properties')",
+    "how": "the agency's list page, matched by name ('B.F. Grant WMA')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
-   "runs": [
-    "is owned by the University of Georgia"
-   ],
+   "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://georgiawildlife.com:443/sites/default/files/BF%20GRANT%20hunt%20map%202023.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "the agency's list page, matched by name ('B.F. Grant WMA') -> the page's 'PDF MAP' file",
-     "posted": "2023",
-     "posted_how": "a year in the file's name (an edition hint, not a printed date)",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "page": "https://georgiawildlife.com:443/bf-grant-wma",
-     "via": "the agency site"
-    },
-    {
-     "url": "https://georgiawildlife.com/sites/default/files/BF%20GRANT%20hunt%20map%202023.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('PDF MAP')",
-     "posted": "2023",
-     "posted_how": "a year in the file's name (an edition hint, not a printed date)",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-3733": {
    "n": "Beaverdam Wildlife Management Area",
@@ -2936,27 +2780,27 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
+    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "a link on the park's page ('Map of All Properties')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-3734": {
    "n": "Berry College Wildlife Management Area",
@@ -2964,43 +2808,28 @@
    "page": "https://georgiawildlife.com/berry-college-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
-    "kind": "page",
+    "url": "https://georgiawildlife.com/sites/default/files/Berry%20College.pdf",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+    "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Map of All Properties')",
+    "date_how": "",
+    "how": "a link on the park's page ('PDF MAP')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://georgiawildlife.com/sites/default/files/Berry%20College.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('PDF MAP')",
-     "posted": "Feb 02, 2024",
-     "posted_how": "posted: the server's file date",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-3735": {
    "n": "Big Hammock Wildlife Management Area",
@@ -3009,27 +2838,27 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
+    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "a link on the park's page ('Map of All Properties')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-3736": {
    "n": "Blanton Creek Wildlife Management Area",
@@ -3045,35 +2874,20 @@
     "how": "the agency's list page, matched by name ('')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://georgiawildlife.com/locations/wrd",
-     "status": "ok",
-     "kind": "page",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Map of All Properties')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": null,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-3737": {
    "n": "Bullard Creek Wildlife Management Area",
@@ -3081,43 +2895,28 @@
    "page": "https://georgiawildlife.com/bullard-creek-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
-    "kind": "page",
+    "url": "https://georgiawildlife.com:443/sites/default/files/wrd/pdf/maps/BullardCreekWMA%20BellTelephoneTract%20Nov2017.pdf",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+    "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Map of All Properties')",
+    "date_how": "",
+    "how": "a link on the park's page ('BELL TELEPHONE TRACT MAP')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://georgiawildlife.com:443/sites/default/files/wrd/pdf/maps/BullardCreekWMA%20BellTelephoneTract%20Nov2017.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('BELL TELEPHONE TRACT MAP')",
-     "posted": "2017",
-     "posted_how": "a year in the file's name (an edition hint, not a printed date)",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-3738": {
    "n": "Cedar Creek Wildlife Management Area",
@@ -3125,59 +2924,28 @@
    "page": "https://georgiawildlife.com/cedar-creek-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
+    "url": "https://georgiawildlife.com:443/cedar-creek-wma",
     "status": "ok",
     "kind": "page",
     "date": null,
     "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Map of All Properties')",
+    "how": "the agency's list page, matched by name ('')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
-   "runs": [
-    "is owned by the United States Forest Service"
-   ],
+   "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://georgiawildlife.com:443/sites/default/files/wrd/pdf/maps/locationmaps/CC_2025.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "the agency's list page, matched by name ('') -> the page's 'PDF MAP' file",
-     "posted": "2025",
-     "posted_how": "a year in the file's name (an edition hint, not a printed date)",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "page": "https://georgiawildlife.com:443/cedar-creek-wma",
-     "via": "the agency site"
-    },
-    {
-     "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/locationmaps/CC_2025.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('PDF MAP')",
-     "posted": "2025",
-     "posted_how": "a year in the file's name (an edition hint, not a printed date)",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-3739": {
    "n": "Chickasawhatchee Wildlife Management Area",
@@ -3186,27 +2954,27 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
+    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "a link on the park's page ('Map of All Properties')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-3740": {
    "n": "Clayhole Swamp Wildlife Management Area",
@@ -3215,27 +2983,27 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
+    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "a link on the park's page ('Map of All Properties')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-3741": {
    "n": "Coosawattee Wildlife Management Area",
@@ -3256,15 +3024,15 @@
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-3742": {
    "n": "Crockford-Pigeon Mountain Wildlife Management Area",
@@ -3272,43 +3040,28 @@
    "page": "https://georgiawildlife.com/crockford-pigeon-mountain-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
-    "kind": "page",
+    "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/2025%20Crockford-Pigeon%20Mtn.pdf",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+    "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Map of All Properties')",
+    "date_how": "",
+    "how": "a link on the park's page ('PDF MAP')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/2025%20Crockford-Pigeon%20Mtn.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('PDF MAP')",
-     "posted": "Sep 26, 2025",
-     "posted_how": "posted: the server's file date",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-3743": {
    "n": "Dawson Forest Wildlife Management Area",
@@ -3316,48 +3069,28 @@
    "page": "https://georgiawildlife.com/dawson-forest-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
+    "url": "https://georgiawildlife.com/carters-lake-wma",
     "status": "ok",
     "kind": "page",
     "date": null,
     "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Map of All Properties')",
+    "how": "a link on the park's page ('Carter's Lake WMA')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
-   "runs": [
-    "is managed by the Department of Natural Resources",
-    "owned by the U.S. Army Corps of Engineers surrounding the actual lake",
-    "managed by the U.S. Army Corps of Engineers"
-   ],
+   "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/Carters%20Lake%20Map.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Carter's Lake WMA') -> the page's 'PDF MAP' file",
-     "posted": "Jul 10, 2024",
-     "posted_how": "posted: the server's file date",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "page": "https://georgiawildlife.com/carters-lake-wma",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-3744": {
    "n": "Di-Lane Wildlife Management Area",
@@ -3365,43 +3098,28 @@
    "page": "https://georgiawildlife.com/di-lane-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
-    "kind": "page",
+    "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/Di-Lane%20WMA%20Map.pdf",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+    "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Map of All Properties')",
+    "date_how": "",
+    "how": "a link on the park's page ('PDF MAP')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/Di-Lane%20WMA%20Map.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('PDF MAP')",
-     "posted": "Feb 02, 2024",
-     "posted_how": "posted: the server's file date",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-3745": {
    "n": "Dixon Bay Wildlife Management Area",
@@ -3410,27 +3128,27 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
+    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "a link on the park's page ('Map of All Properties')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-3746": {
    "n": "Dixon Memorial Wildlife Management Area",
@@ -3439,29 +3157,29 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
+    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "a link on the park's page ('Map of All Properties')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [
-    "operated by the Georgia Forestry Commission as a state forest"
+    "operated by the Georgia Forestry Commission"
    ],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-3747": {
    "n": "Elbert County Wildlife Management Area",
@@ -3477,35 +3195,20 @@
     "how": "the agency's list page, matched by name ('')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://georgiawildlife.com/locations/wrd",
-     "status": "ok",
-     "kind": "page",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Map of All Properties')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": null,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-3748": {
    "n": "Elmodel Wildlife Management Area",
@@ -3514,27 +3217,27 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
+    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "a link on the park's page ('Map of All Properties')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-3749": {
    "n": "Flat Tub Wildlife Management Area",
@@ -3542,43 +3245,28 @@
    "page": "https://georgiawildlife.com/flat-tub-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
-    "kind": "page",
+    "url": "https://georgiawildlife.com/sites/default/files/Flat%20Tub%20WMA%202023%20Revised%20Hunter%20Map.pdf",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+    "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Map of All Properties')",
+    "date_how": "",
+    "how": "a link on the park's page ('PDF MAP')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://georgiawildlife.com/sites/default/files/Flat%20Tub%20WMA%202023%20Revised%20Hunter%20Map.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('PDF MAP')",
-     "posted": "Feb 02, 2024",
-     "posted_how": "posted: the server's file date",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-3750": {
    "n": "Flint River Wildlife Management Area",
@@ -3587,27 +3275,27 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
+    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "a link on the park's page ('Map of All Properties')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-3751": {
    "n": "Grand Bay Wildlife Management Area",
@@ -3616,27 +3304,27 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
+    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "a link on the park's page ('Map of All Properties')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-3752": {
    "n": "Griffin Ridge Wildlife Management Area",
@@ -3645,27 +3333,27 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
+    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "a link on the park's page ('Map of All Properties')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-3753": {
    "n": "Hannahatchee Creek Wildlife Management Area",
@@ -3674,27 +3362,27 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
+    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "a link on the park's page ('Map of All Properties')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-3754": {
    "n": "Hart County Wildlife Management Area",
@@ -3710,35 +3398,20 @@
     "how": "the agency's list page, matched by name ('')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://georgiawildlife.com/locations/wrd",
-     "status": "ok",
-     "kind": "page",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Map of All Properties')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": null,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-3755": {
    "n": "Horse Creek Wildlife Management Area",
@@ -3746,43 +3419,28 @@
    "page": "https://georgiawildlife.com/horse-creek-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Map of All Properties')",
+    "url": "https://georgiawildlife.com/sites/default/files/Horse%20Creek%20WMA%202023%20hunter%20map%20for%20web%20color%20copies.pdf",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+    "kind": "pdf",
+    "date": "2023-10-13",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('PDF MAP')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://georgiawildlife.com/sites/default/files/Horse%20Creek%20WMA%202023%20hunter%20map%20for%20web%20color%20copies.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": "2023-10-13",
-     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-     "how": "a link on the park's page ('PDF MAP')",
-     "posted": "Feb 02, 2024",
-     "posted_how": "posted: the server's file date",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-3756": {
    "n": "J.L. Lester Wildlife Management Area",
@@ -3790,43 +3448,28 @@
    "page": "https://georgiawildlife.com/jl-lester-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
-    "kind": "page",
+    "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/JL_Lester.pdf",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+    "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Map of All Properties')",
+    "date_how": "",
+    "how": "a link on the park's page ('PDF MAP')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/JL_Lester.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('PDF MAP')",
-     "posted": "Aug 25, 2025",
-     "posted_how": "posted: the server's file date",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-3757": {
    "n": "Joe Kurz Wildlife Management Area",
@@ -3834,57 +3477,28 @@
    "page": "https://georgiawildlife.com/joe-kurz-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
+    "url": "https://georgiawildlife.com:443/joe-kurz-wma",
     "status": "ok",
     "kind": "page",
     "date": null,
     "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Map of All Properties')",
+    "how": "the agency's list page, matched by name ('')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://georgiawildlife.com:443/sites/default/files/wrd/pdf/maps/2021%20Joe%20Kurz%20Map%20Photo.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "the agency's list page, matched by name ('') -> the page's 'PDF MAP' file",
-     "posted": "Feb 02, 2024",
-     "posted_how": "posted: the server's file date",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "page": "https://georgiawildlife.com:443/joe-kurz-wma",
-     "via": "the agency site"
-    },
-    {
-     "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/2021%20Joe%20Kurz%20Map%20Photo.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('PDF MAP')",
-     "posted": "Feb 02, 2024",
-     "posted_how": "posted: the server's file date",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-3758": {
    "n": "John's Mountain Wildlife Management Area",
@@ -3892,21 +3506,21 @@
    "page": "https://georgiawildlife.com/johns-mountain-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
-    "kind": "page",
+    "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/2025%20Johns%20Mtn.pdf",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+    "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Map of All Properties')",
+    "date_how": "",
+    "how": "a link on the park's page ('PDF MAP')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
@@ -3915,22 +3529,7 @@
    ],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/2025%20Johns%20Mtn.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('PDF MAP')",
-     "posted": "Sep 26, 2025",
-     "posted_how": "posted: the server's file date",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-3759": {
    "n": "Little Satilla Wildlife Management Area",
@@ -3939,27 +3538,27 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
+    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "a link on the park's page ('Map of All Properties')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-3760": {
    "n": "Mayhaw Wildlife Management Area",
@@ -3968,27 +3567,27 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
+    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "a link on the park's page ('Map of All Properties')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-3761": {
    "n": "Oaky Woods Wildlife Management Area",
@@ -3996,43 +3595,28 @@
    "page": "https://georgiawildlife.com/oaky-woods-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
-    "kind": "page",
+    "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/OW-huntmap-2025-online-12172025.pdf",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+    "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Map of All Properties')",
+    "date_how": "",
+    "how": "a link on the park's page ('PDF MAP')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/OW-huntmap-2025-online-12172025.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('PDF MAP')",
-     "posted": "2025",
-     "posted_how": "a year in the file's name (an edition hint, not a printed date)",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-3762": {
    "n": "Ocmulgee Wildlife Management Area",
@@ -4040,43 +3624,28 @@
    "page": "https://georgiawildlife.com/ocmulgee-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
-    "kind": "page",
+    "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/OcmulgeeMap.pdf",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+    "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Map of All Properties')",
+    "date_how": "",
+    "how": "a link on the park's page ('PDF MAP')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/OcmulgeeMap.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('PDF MAP')",
-     "posted": "Feb 02, 2024",
-     "posted_how": "posted: the server's file date",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-3763": {
    "n": "Oconee Wildlife Management Area",
@@ -4084,57 +3653,28 @@
    "page": "https://georgiawildlife.com/oconee-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
+    "url": "https://georgiawildlife.com:443/oconee-wma",
     "status": "ok",
     "kind": "page",
     "date": null,
     "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Map of All Properties')",
+    "how": "the agency's list page, matched by name ('')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/Oconee%20PDF%20Map.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "the agency's list page, matched by name ('') -> the page's 'PDF MAP' file",
-     "posted": "Sep 26, 2025",
-     "posted_how": "posted: the server's file date",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "page": "https://georgiawildlife.com:443/oconee-wma",
-     "via": "the agency site"
-    },
-    {
-     "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/Oconee%20PDF%20Map.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('PDF MAP')",
-     "posted": "Sep 26, 2025",
-     "posted_how": "posted: the server's file date",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-3764": {
    "n": "Oliver Bridge Wildlife Management Area",
@@ -4143,27 +3683,27 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
+    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "a link on the park's page ('Map of All Properties')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-3765": {
    "n": "Ossabaw Island Heritage Wildlife Management Area",
@@ -4172,27 +3712,27 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
+    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "a link on the park's page ('Map of All Properties')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-3766": {
    "n": "Paulks Pasture Wildlife Management Area",
@@ -4201,27 +3741,27 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
+    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "a link on the park's page ('Map of All Properties')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-3767": {
    "n": "Penholoway Swamp Wildlife Management Area",
@@ -4230,27 +3770,27 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
+    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "a link on the park's page ('Map of All Properties')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-3768": {
    "n": "Phinizy Swamp Wildlife Management Area",
@@ -4272,15 +3812,15 @@
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-3769": {
    "n": "River Bend Wildlife Management Area",
@@ -4289,27 +3829,27 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
+    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "a link on the park's page ('Map of All Properties')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-3770": {
    "n": "River Creek - The Rolf and Alexandra Kauka Wildlife Management Area",
@@ -4317,21 +3857,21 @@
    "page": "https://georgiawildlife.com/river-creek-rolf-alexandra-kauka-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
+    "url": "https://storymaps.arcgis.com/stories/5c32de79ec6a4618b4c250ed166c7b52",
     "status": "ok",
     "kind": "page",
     "date": null,
     "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Map of All Properties')",
+    "how": "a link on the park's page ('story map')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "via": "linked from the agency page (storymaps.arcgis.com)"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
@@ -4339,22 +3879,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the map link refused a plain reader (ok)",
-   "map_also": [
-    {
-     "url": "https://storymaps.arcgis.com/stories/5c32de79ec6a4618b4c250ed166c7b52",
-     "status": "ok",
-     "kind": "page",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('story map')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": null,
-     "checked": "2026-10-28",
-     "via": "linked from the agency page (storymaps.arcgis.com)"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-3771": {
    "n": "Rogers Wildlife Management Area",
@@ -4363,27 +3888,27 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
+    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "a link on the park's page ('Map of All Properties')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-3772": {
    "n": "Rum Creek Wildlife Management Area",
@@ -4391,59 +3916,28 @@
    "page": "https://georgiawildlife.com/rum-creek-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
+    "url": "https://georgiawildlife.com:443/rum-creek-wma",
     "status": "ok",
     "kind": "page",
     "date": null,
     "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Map of All Properties')",
+    "how": "the agency's list page, matched by name ('')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
-   "runs": [
-    "operated by Georgia Power"
-   ],
+   "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://georgiawildlife.com:443/sites/default/files/wrd/pdf/maps/RC-huntmap-2025-12172025.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "the agency's list page, matched by name ('') -> the page's 'PDF MAP' file",
-     "posted": "2025",
-     "posted_how": "a year in the file's name (an edition hint, not a printed date)",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "page": "https://georgiawildlife.com:443/rum-creek-wma",
-     "via": "the agency site"
-    },
-    {
-     "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/RC-huntmap-2025-12172025.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('PDF MAP')",
-     "posted": "2025",
-     "posted_how": "a year in the file's name (an edition hint, not a printed date)",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-3773": {
    "n": "Sansavilla Wildlife Management Area",
@@ -4452,27 +3946,27 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
+    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "a link on the park's page ('Map of All Properties')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-3774": {
    "n": "Sapelo Island Wildlife Management Area",
@@ -4481,27 +3975,27 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
+    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "a link on the park's page ('Map of All Properties')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-3775": {
    "n": "Silver Lake Wildlife Management Area",
@@ -4510,27 +4004,27 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
+    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "a link on the park's page ('Map of All Properties')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-3776": {
    "n": "Sprewell Bluff Wildlife Management Area",
@@ -4538,57 +4032,28 @@
    "page": "https://georgiawildlife.com/sprewell-bluff-wma-east",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
+    "url": "https://georgiawildlife.com:443/sprewell-bluff-wma-west",
     "status": "ok",
     "kind": "page",
     "date": null,
     "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Map of All Properties')",
+    "how": "the agency's list page, matched by name ('')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://georgiawildlife.com:443/sites/default/files/Sprewell%20Bluff.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "the agency's list page, matched by name ('') -> the page's 'PDF MAP' file",
-     "posted": "Feb 02, 2024",
-     "posted_how": "posted: the server's file date",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "page": "https://georgiawildlife.com:443/sprewell-bluff-wma-west",
-     "via": "the agency site"
-    },
-    {
-     "url": "https://georgiawildlife.com/sites/default/files/Sprewell%20Bluff.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('PDF MAP')",
-     "posted": "Feb 02, 2024",
-     "posted_how": "posted: the server's file date",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-3777": {
    "n": "Wilson Shoals Wildlife Management Area",
@@ -4604,13 +4069,13 @@
     "how": "the agency's list page, matched by name ('')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
@@ -4619,34 +4084,20 @@
    "notes": [],
    "map_also": [
     {
-     "url": "https://georgiawildlife.com/locations/wrd",
+     "url": "https://gastateparks.org:443/DonCarter",
      "status": "ok",
      "kind": "page",
      "date": null,
      "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Map of All Properties')",
+     "how": "a link on the park's page ('Don Carter State Park')",
      "posted": "",
      "posted_how": "",
-     "names_park": null,
+     "names_park": true,
      "checked": "2026-10-28",
-     "via": "the agency site"
-    },
-    {
-     "url": "https://gastateparks.org:443/sites/default/files/parks/pdf/trailmaps/DonCarter_TrailMap.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Don Carter State Park') -> the page's 'Trail Map' file",
-     "posted": "Apr 09, 2025",
-     "posted_how": "posted: the server's file date",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "page": "https://gastateparks.org:443/DonCarter",
      "via": "linked from the agency page (gastateparks.org)"
     }
    ],
-   "ver": 2
+   "ver": 3
   },
   "US-3778": {
    "n": "Yuchi Wildlife Management Area",
@@ -4654,43 +4105,28 @@
    "page": "https://georgiawildlife.com/yuchi-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Map of All Properties')",
+    "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/Yuchi%20WMA%20Map.pdf",
+    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+    "kind": "pdf",
+    "date": "2014",
+    "date_how": "printed on the map",
+    "how": "a link on the park's page ('PDF MAP')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/Yuchi%20WMA%20Map.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": "2014",
-     "date_how": "printed on the map",
-     "how": "a link on the park's page ('PDF MAP')",
-     "posted": "Feb 02, 2024",
-     "posted_how": "posted: the server's file date",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-3791": {
    "n": "Trail of Tears National Historic Trail",
@@ -4705,8 +4141,8 @@
     "date_how": "date unknown, checked 2026-10-28",
     "how": "a link on the park's page ('Maps')",
     "posted": "August 24, 2026",
-    "posted_how": "the page's 'last updated' line",
-    "names_park": null,
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -4719,22 +4155,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://www.nps.gov/trte/planyourvisit/upload/National-Park-Service-Trail-of-Tears-Map-508.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "on file (parkinfo-web / Kentucky answer key)",
-     "posted": "Mar 22, 2018",
-     "posted_how": "posted: the server's file date",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-4473": {
    "n": "Chattahoochee-Oconee National Forest",
@@ -4750,7 +4171,7 @@
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -4764,7 +4185,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "map page on the browser list (a download button may hide the file)",
-   "ver": 2
+   "ver": 3
   },
   "US-4556": {
    "n": "Appalachian Trail National Scenic Trail",
@@ -4772,15 +4193,15 @@
    "page": "https://www.nps.gov/appa/index.htm",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.nps.gov/appa/planyourvisit/upload/APPA_Map.pdf",
+    "url": "https://www.nps.gov/appa/planyourvisit/maps.htm",
     "status": "ok",
-    "kind": "pdf",
+    "kind": "page",
     "date": null,
     "date_how": "date unknown, checked 2026-10-28",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "Dec 06, 2022",
-    "posted_how": "posted: the server's file date",
-    "names_park": false,
+    "how": "a link on the park's page ('Maps')",
+    "posted": "December 21, 2022",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -4795,7 +4216,7 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-4586": {
    "n": "Big Lazer Creek Wildlife Management Area",
@@ -4811,35 +4232,20 @@
     "how": "the agency's list page, matched by name ('')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://georgiawildlife.com/locations/wrd",
-     "status": "ok",
-     "kind": "page",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Map of All Properties')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": null,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-4647": {
    "n": "Bartram Forest Wildlife Management Area",
@@ -4847,57 +4253,28 @@
    "page": "https://georgiawildlife.com/bartram-forest-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
+    "url": "https://georgiawildlife.com:443/bartram-forest-wma",
     "status": "ok",
     "kind": "page",
     "date": null,
     "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Map of All Properties')",
+    "how": "the agency's list page, matched by name ('')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://georgiawildlife.com/regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://publuu.com/flip-book/1025508/2375523",
+    "how": "a link on the park's page ('Regulations Now Available')",
     "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://georgiawildlife.com:443/sites/default/files/Bartram2023.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "the agency's list page, matched by name ('') -> the page's 'PDF MAP' file",
-     "posted": "2023",
-     "posted_how": "a year in the file's name (an edition hint, not a printed date)",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "page": "https://georgiawildlife.com:443/bartram-forest-wma",
-     "via": "the agency site"
-    },
-    {
-     "url": "https://georgiawildlife.com/sites/default/files/Bartram2023.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('PDF MAP')",
-     "posted": "2023",
-     "posted_how": "a year in the file's name (an edition hint, not a printed date)",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-4648": {
    "n": "Bartram Educational State Forest",
@@ -7363,18 +6740,18 @@
  "read": "2026-10-28",
  "counts": {
   "parks": 212,
-  "map ok": 185,
-  "map found by the bot": 126,
-  "date on the map": 12,
-  "posted date only": 60,
-  "date unknown": 113,
-  "no map": 27,
-  "rules ok": 138,
-  "needs browser": 71,
+  "map ok": 120,
+  "map found by the bot": 83,
+  "date on the map": 13,
+  "posted date only": 36,
+  "date unknown": 71,
+  "no map": 92,
+  "rules ok": 140,
+  "needs browser": 72,
   "handover hints": 0,
-  "runs hints": 26,
+  "runs hints": 19,
   "host resting / robots": 0,
-  "map names the park": 13,
+  "map names the park": 62,
   "region overview only": 0
  }
 }
