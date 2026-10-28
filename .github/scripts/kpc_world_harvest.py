@@ -28,6 +28,8 @@ STRIKES_OUT = 3           # then the server is left alone for a day
 MAX_LAYERS = 40           # layers read per service
 STAT = {'requests': 0, 'hits': 0, 'leads': 0, 'already_read': 0, 'skipped': 0, 'not_official': 0, 'robots': 0, 'strikes': 0, 'errors': 0}
 LAST, ROBOTS, DEAD = {}, {}, {}
+ROBOTS_SAID = {}          # host -> the first lines of its robots.txt (so HQ can see what refused us)
+ROBOTS_EXEMPT = [h for h in (os.environ.get('ROBOTS_EXEMPT') or '').split() if h]   # HQ decision only: REST API hosts read despite a blanket robots.txt
 RUN = time.strftime('%Y-%m-%d')
 
 SKIP = re.compile(r'historic|heritage site|monument\b|castle|schloss|château|castillo|castello|zamek|cemeter|friedhof|cimeti|church|kirche|'
@@ -64,13 +66,22 @@ def robots_ok(u):
     if h not in ROBOTS:
         rp = urllib.robotparser.RobotFileParser()
         try:
-            rp.set_url(f'{urllib.parse.urlparse(u).scheme}://{h}/robots.txt'); rp.read(); ROBOTS[h] = rp
-        except Exception: ROBOTS[h] = None  # noqa: BLE001  (no robots file = allowed)
+            ru = f'{urllib.parse.urlparse(u).scheme}://{h}/robots.txt'
+            with urllib.request.urlopen(urllib.request.Request(ru, headers={'User-Agent': UA}), timeout=15) as r: txt = r.read(20000).decode('utf-8', 'replace')
+            rp.parse(txt.splitlines()); ROBOTS[h] = rp
+            ROBOTS_SAID[h] = ' | '.join(l.strip() for l in txt.splitlines() if l.strip() and not l.startswith('#'))[:160]
+        except Exception as e: ROBOTS[h] = None; ROBOTS_SAID[h] = 'no robots.txt (' + str(e)[:30] + ')'  # noqa: BLE001  (no robots file = allowed)
     rp = ROBOTS[h]
     try: ok = rp is None or rp.can_fetch(UA, u) or rp.can_fetch('*', u)
     except Exception: ok = True  # noqa: BLE001
-    if not ok: STAT['robots'] += 1
+    if not ok and any(h == x or h.endswith('.' + x) for x in ROBOTS_EXEMPT): ok = True; STAT['robots_exempt'] = STAT.get('robots_exempt', 0) + 1
+    if not ok:
+        STAT['robots'] += 1
+        ROBOTS_REFUSED[h] = ROBOTS_REFUSED.get(h, 0) + 1
     return ok
+
+
+ROBOTS_REFUSED = {}
 
 
 def get(u, params=None, timeout=30, raw=False):
@@ -87,7 +98,7 @@ def get(u, params=None, timeout=30, raw=False):
         LAST[h] = time.time(); STAT['requests'] += 1
         try:
             with urllib.request.urlopen(urllib.request.Request(full, headers={'User-Agent': UA, 'Accept': 'application/json, text/xml, */*'}), timeout=timeout) as r:
-                body = r.read(400000)
+                body = r.read(30_000_000)
             if raw: return body.decode('utf-8', 'replace')
             j = json.loads(body.decode('utf-8', 'replace'))
             if isinstance(j, dict) and j.get('error'): raise RuntimeError('server error: ' + str(j['error'])[:100])
@@ -414,7 +425,8 @@ def main():
         leads, st = run_country(cc, c, cfg, state, KNOWN)
         done_now.append(f"{cc} {st['status'].split(' (')[0]}: {len(leads)} leads (A {sum(1 for v in leads.values() if v.get('band')=='A')}), known-good found {len(load(OUT / f'leads-{cc}.json', {}).get('known_good_found') or [])} of {len(c.get('known_good') or [])}")
         save(OUT / 'state.json', state)
-    state['last_run'] = {'date': RUN, 'stats': STAT, 'countries': done_now, 'dead_servers': sorted(DEAD)}
+    state['last_run'] = {'date': RUN, 'stats': STAT, 'countries': done_now, 'dead_servers': sorted(DEAD),
+                         'robots_refused': ROBOTS_REFUSED, 'robots_said': {h: ROBOTS_SAID.get(h, '') for h in ROBOTS_REFUSED}, 'robots_exempt': ROBOTS_EXEMPT}
     save(OUT / 'state.json', state)
     # the people-readable top list across every country
     rows = []

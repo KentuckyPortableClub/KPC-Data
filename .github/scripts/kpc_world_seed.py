@@ -13,7 +13,7 @@ OUT = pathlib.Path('data/harvest/countries.json')
 # catalogs: ('ckan', base) | ('datagouv', base) | ('dane', base) ; AGOL + the country's own servers come from the research files
 HAND = {
  'JP': ('Japan', ['日本'], ['国立公園', '国定公園', '自然公園', '保護区', 'national park'], [('ckan', 'https://data.e-gov.go.jp/data')], 1, 1),
- 'GB': ('United Kingdom', ['England', 'Scotland', 'Wales', 'Northern Ireland', 'Great Britain'], ['national park', 'nature reserve', 'country park', 'national landscape', 'open access land', 'national trail'], [('ckan', 'https://data.gov.uk')], 1, 2),
+ 'GB': ('United Kingdom', ['England', 'Scotland', 'Wales', 'Northern Ireland', 'Great Britain'], ['national park', 'nature reserve', 'country park', 'national landscape', 'open access land', 'national trail'], [('ckan', 'https://ckan.publishing.service.gov.uk')], 1, 2),
  'DE': ('Germany', ['Deutschland'], ['Nationalpark', 'Naturschutzgebiet', 'Naturpark', 'Schutzgebiet', 'Biosphärenreservat', 'Landschaftsschutzgebiet'], [('ckan', 'https://www.govdata.de/ckan')], 1, 3),
  'PL': ('Poland', ['Polska'], ['park narodowy', 'park krajobrazowy', 'rezerwat przyrody', 'formy ochrony przyrody', 'obszar chroniony'], [('dane', 'https://api.dane.gov.pl/1.4')], 1, 4),
  'AU': ('Australia', [], ['national park', 'conservation park', 'nature reserve', 'protected areas', 'state forest', 'land tenure'], [('ckan', 'https://data.gov.au/data'), ('ckan', 'https://data.nsw.gov.au/data'), ('ckan', 'https://data.qld.gov.au'), ('ckan', 'https://discover.data.vic.gov.au')], 1, 5),
