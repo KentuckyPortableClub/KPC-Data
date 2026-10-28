@@ -13,10 +13,10 @@
   "US-MS"
  ],
  "since": "2026-10-28",
- "date": "2026-10-28 18:45 UTC",
+ "date": "2026-10-28 20:06 UTC",
  "verdict": "STOPPED",
  "why": [
-  "water service: US-TN: 61 rows not checked because the USGS water map did not answer (run the worker again)",
+  "water service: US-TN: 54 rows not checked because the USGS water map did not answer (run the worker again)",
   "water service: US-NC: 101 rows not checked because the USGS water map did not answer (run the worker again)",
   "water service: US-VA: 32 rows not checked because the USGS water map did not answer (run the worker again)",
   "water service: US-WV: 28 rows not checked because the USGS water map did not answer (run the worker again)",
@@ -29,8 +29,8 @@
  ],
  "known_answers": "18/18 on 2026-10-28",
  "missing_check": {
-  "FOUND": 301,
-  "DROPPED": 1769,
+  "FOUND": 303,
+  "DROPPED": 1767,
   "NEVER LOOKED AT": 14393
  },
  "report": {
@@ -50,21 +50,21 @@
    "pairs tested": 0
   },
   "pass5": {
-   "checked": 457,
+   "checked": 7,
    "date": "2026-10-28",
    "pairs tested": 0,
-   "still not checked": 398
+   "still not checked": 0
   }
  },
  "US-TN": {
   "rows": 687,
-  "live": 21,
+  "live": 28,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "the outlines overlap, but the PAD-US Park Service fee record": 2,
-   "water not checked": 61,
    "the ownership map shows more than one owner across the spot": 1,
+   "water not checked": 54,
    "no public owner on the ownership map": 1,
    "low-confidence outline for Land Between the Lakes National R": 1
   },

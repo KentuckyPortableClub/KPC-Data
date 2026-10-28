@@ -12,8 +12,8 @@
  "date": "2026-10-28",
  "pass": true,
  "counts": {
-  "FOUND": 301,
-  "DROPPED": 1769,
+  "FOUND": 303,
+  "DROPPED": 1767,
   "NEVER LOOKED AT": 14393
  },
  "FOUND": [
@@ -38,6 +38,17 @@
     "activated together by the same call on the same day (34x, POTA history)"
    ],
    "row": "US-0024+US-8720@area@25.539,-80.571"
+  },
+  {
+   "refs": [
+    "US-0034",
+    "US-6264"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (36x, POTA history)"
+   ],
+   "row": "US-0034+US-6264@area@35.691,-83.668"
   },
   {
    "refs": [
@@ -257,7 +268,18 @@
     "POTA shows one session logged both parks",
     "activated together by the same call on the same day (15x, POTA history)"
    ],
-   "row": "US-0534+US-7568@area@36.494,-87.800"
+   "row": "US-0534+US-7568@area@36.418,-87.678"
+  },
+  {
+   "refs": [
+    "US-0537",
+    "US-5494"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (16x, POTA history)"
+   ],
+   "row": "US-0537+US-5494@area@35.658,-89.790"
   },
   {
    "refs": [
@@ -553,7 +575,7 @@
     "POTA shows one session logged both parks",
     "activated together by the same call on the same day (13x, POTA history)"
    ],
-   "row": "US-0685+US-3931@area@36.081,-84.672"
+   "row": "US-0685+US-3931@area@36.080,-84.774"
   },
   {
    "refs": [
@@ -564,7 +586,7 @@
     "POTA shows one session logged both parks",
     "activated together by the same call on the same day (24x, POTA history)"
    ],
-   "row": "US-0686+US-5498@area@36.577,-84.766"
+   "row": "US-0686+US-5498@area@36.545,-84.785"
   },
   {
    "refs": [
@@ -3608,18 +3630,6 @@
   {
    "refs": [
     "US-0034",
-    "US-6264"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (36x, POTA history)"
-   ],
-   "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "rule": "rule 7 (NOT SURE is kept out)"
-  },
-  {
-   "refs": [
-    "US-0034",
     "US-6936"
    ],
    "why_expected": [
@@ -5280,18 +5290,6 @@
    "why_expected": [
     "POTA shows one session logged both parks",
     "activated together by the same call on the same day (17x, POTA history)"
-   ],
-   "reason": "dropped in pass 3",
-   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
-  },
-  {
-   "refs": [
-    "US-0537",
-    "US-5494"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (16x, POTA history)"
    ],
    "reason": "dropped in pass 3",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
