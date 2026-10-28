@@ -70,7 +70,7 @@
  },
  "pass5": {
   "cell_m": 5.0,
-  "checked": 10,
+  "checked": 38,
   "date": "2026-10-28",
   "left out": {
    "Kentucky (own list)": "all (ky-overlaps.geojson)",
@@ -83,37 +83,26 @@
   "pairs tested": 0,
   "pass": 5,
   "problems": [
-   "W&S river corridors joined as area parks: 15",
-   "NHD water: HTTP Error 504: Gateway Time-out",
-   "NHD water retry: HTTP Error 504: Gateway Time-out",
-   "NHD water: The read operation timed out",
-   "NHD water retry: The read operation timed out",
-   "NHD water retry: HTTP Error 504: Gateway Time-out",
-   "NHD water: The read operation timed out",
-   "NHD water retry: The read operation timed out",
-   "NHD water: The read operation timed out",
-   "NHD water: HTTP Error 502: Bad Gateway",
-   "NHD water: HTTP Error 502: Bad Gateway",
-   "NHD water: The read operation timed out"
+   "W&S river corridors joined as area parks: 15"
   ],
-  "spots given their boundary lines": 0,
+  "spots given their boundary lines": 102,
   "still not checked": 0,
-  "trail stretches given their true zone": 0,
+  "trail stretches given their true zone": 261,
   "water only": 0,
-  "water retries (won / tries)": "6 / 10",
+  "water retries (won / tries)": "0 / 0",
   "with official lines": 27
  },
  "per state": {
   "US-MI": {
-   "candidates": 92,
+   "candidates": 118,
    "candidates (saved outline only)": 0,
    "lines": 524,
    "n-fers": 13,
-   "not sure": 49,
+   "not sure": 20,
    "pass1": 701,
    "pass2": 665,
    "spots": 701,
-   "very tight": 1,
+   "very tight": 2,
    "water only": 0
   }
  }
