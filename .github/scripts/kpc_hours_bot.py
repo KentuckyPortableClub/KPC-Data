@@ -126,7 +126,7 @@ def facts_in(text, park_name='', url=''):
 
 def one_park(ref, park, web, docs, ky):
     r = {'n': park['n'], 't': park.get('t', ''), 'hours': [], 'fees': [], 'permits': [], 'other_fees': [], 'pages': [], 'checked': TODAY, 'ver': VER}
-    pages = T.candidate_pages(ref, park, web, docs, ky)
+    pages = [(p[0], p[1]) for p in T.candidate_pages(ref, park, web, docs, ky)]   # truth v4 returns (url, why, other_unit): keep the first two
     pages = [p for p in pages if 'news' not in p[1] and 'statistics' not in p[1]][:4]
     kl = (HKEY.get(ref) or {}).get('link')   # Kentucky's hand-checked hours page (answer key) is read too: it IS the agency's page
     if kl and kl.startswith('http') and kl not in [p[0] for p in pages]: pages.insert(0, (kl, 'hours page (Kentucky hours answer key)'))

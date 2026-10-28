@@ -20,18 +20,18 @@
    "licence": "publicly available",
    "from": "chat 9",
    "added": "2026-10-28",
-   "note": "test row (b): federal; 'publicly available'. Area 'US' = whole country: no per-area missing list, so the closes test is skipped unless the row is given a state area",
-   "expect": "READY or already read"
+   "note": "test row (b): federal; 'publicly available'; reservoirs = water only (chat 9 Oct 28), never a park outline, for the 2-fer owner step. Area 'US' = whole country: no per-area missing list, so the closes test is skipped unless the row is given a state area",
+   "expect": "WATER-ONLY"
   },
   {
-   "url": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/SCDNR_Managed_Lands_Public_Viewer/FeatureServer/0",
+   "url": "https://services1.arcgis.com/x5wCko8UnSi4h0CB/arcgis/rest/services/SCDNR_Managed_Lands_Public_Viewer/FeatureServer/0",
    "area": "US-SC",
    "title": "SCDNR managed lands (public viewer) on Clemson's ArcGIS Online account",
    "publisher": "Clemson University (hosting for South Carolina DNR)",
    "licence": "",
    "from": "chat 9",
    "added": "2026-10-28",
-   "note": "test row (c): hosted on a university account, no credits; url to confirm (we read DEV_-_SCDNR_Public_Lands_Viewer/4 from the same org acgZYxoN5Oj8pDLa)",
+   "note": "test row (c): hosted on Clemson's org x5wCko8UnSi4h0CB (chat 9 Oct 28; acgZYxoN5Oj8pDLa is SCDNR's own org); path to confirm: the bot retries by item search on the org",
    "expect": "ASK-THE-PUBLISHER or already read"
   },
   {
@@ -53,7 +53,7 @@
    "licence": "viewing only",
    "from": "chat 9",
    "added": "2026-10-28",
-   "note": "test row (e): the service terms say viewing only; url to confirm (layer number guessed)",
+   "note": "test row (e): AOPK's own pages say viewing only (KNOWN_TERMS table; the service copyrightText is only a credit); layer number guessed",
    "expect": "LIVE-ONLY"
   },
   {

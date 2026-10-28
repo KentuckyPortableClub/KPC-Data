@@ -208,11 +208,12 @@ def sizes_in(text, name, other_unit=False):
             if any(a0 <= m.start() < b0 for a0, b0 in sums): looks = False; why = 'part of a sum'
             if HISTORY.search(sl) or OLD_YEAR.search(left_of(text, m.start())): looks = False; why = 'history'
             hard = bool(HARD_PART.search(strip_name(sl))) and not label; soft = bool(PART.search(strip_name(sl))) and not label   # the SAME sentence, not the neighbour's
-            clean = bool(looks and not why and (label or (name_in and CLEAN.search(sl))) and not hard)
+            own_subject = bool(re.match(r'^\s*(?:the|this) (?:park|area|refuge|forest|preserve|sanctuary|site|property|wma|monument|seashore|lakeshore)\b', sent.strip(), re.I)) and not other_unit
+            clean = bool(looks and not why and (label or ((name_in or own_subject) and CLEAN.search(sl))) and not hard)
             if looks and not why and (hard or (soft and not clean)): looks = False; why = 'part (a lake, a purchase, a campground…)'
             if looks and DESIG.get('state') and re.search(r'\bnational\b', near) and not re.search(r'\bstate\b', near): looks = clean = False; why = 'a national unit on a state park page'
             if looks and DESIG.get('national') and re.search(r'\bstate (?:wild river|natural area|nature preserve|park|forest|wma)\b', near) and not re.search(r'\bnational\b', near): looks = clean = False; why = 'a state unit on a national park page'
-            if looks and other_unit_named(sent, me6): looks = clean = False; why = 'another park / unit named in the sentence'
+            if looks and not name_in and other_unit_named(sent, me6): looks = clean = False; why = 'another park / unit named in the sentence'   # a sentence that names THIS park is this park's (Levi Jackson: 'Laurel County' is not Laurel River Lake)
             if looks and other_unit and not name_in: looks = clean = False; why = "a page of another unit; the sentence does not name this park"
             if looks and not why: why = 'clean total' if clean else 'total-looking'
             if not looks and not why: why = 'no total words near it'

@@ -1,0 +1,25 @@
+{
+ "about": "PARK DETECTIVE question queue (any chat or HQ adds a row; the bot answers once per id into answers.json + answers.md). what = outline | tract | acreage | owner | who runs it | handover | access point | free text. Put the question's own words (a tract name, a number) in note: the bot matches them in pages and PDFs.",
+ "questions": [
+  {
+   "id": "q1-boiling-springs-tract",
+   "ref": "US-12752",
+   "park": "Green River State Natural Area (Boiling Springs unit)",
+   "area": "US-KY",
+   "what": "tract",
+   "note": "the KHLCF Timber Lane 115.75-acre tract: is it part of the preserve?",
+   "added": "2026-10-28",
+   "by": "HQ (Brandon test case)"
+  },
+  {
+   "id": "q2-boiling-springs-acreage",
+   "ref": "US-12752",
+   "park": "Green River State Natural Area (Boiling Springs unit)",
+   "area": "US-KY",
+   "what": "acreage",
+   "note": "Boiling Springs unit size (the OKNP page says 440 acres?)",
+   "added": "2026-10-28",
+   "by": "HQ (Brandon test case)"
+  }
+ ]
+}

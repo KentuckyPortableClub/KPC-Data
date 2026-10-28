@@ -51,7 +51,8 @@ REFRESH_DAYS = int(os.environ.get('REFRESH_DAYS') or 30)
 RIDB_KEY = (os.environ.get('RIDB_API_KEY') or '').strip()
 FCC_USER = (os.environ.get('FCC_BDC_USERNAME') or '').strip(); FCC_TOKEN = (os.environ.get('FCC_BDC_TOKEN') or '').strip()
 TODAY = time.strftime('%Y-%m-%d')
-VER = 4   # 4 = round 3 (chat 11 regrade): reservation-line phones out, bare-domain booking out, fire RULES only, merge by park ref,
+VER = 5   # 5 = round 4: facts only from THIS campground's section of a shared page, KEY_WRONG table, 'some' = agree, WARN rows.
+          # 4 = round 3; 4 = round 3 (chat 11 regrade): reservation-line phones out, bare-domain booking out, fire RULES only, merge by park ref,
           # state-park campground sub-pages read, more gate rows.
           # 3 = round 2; 2 = Oct 28 chat 8 grade C-1..C-6 (negation, footer phones, duplicates, hosts); 3 = chat 11 round 2 (elevation != RV length,
           # hunting season != camping season, headings are not facts, lodge links are not booking, phone_hint, gate): every row is re-read
@@ -107,13 +108,13 @@ def status_text(st):
 MON = r'(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\.?'
 DATE = r'(?:early |mid-? ?|late )?' + MON + r'(?:\s+\d{1,2})?(?:,?\s+\d{4})?'
 TIME = r'\d{1,2}(?::\d\d)?\s*(?:a\.?m\.?|p\.?m\.?|noon|midnight)?'
-SITE = re.compile(r'(\d{1,4})[- ]+((?:[\w/-]+[- ]+){0,3}?)(campsites?|camp sites?|sites?|cabins?|cottages?|yurts?|lean-tos?|shelters?|pads?|spaces?)\b', re.I)
+SITE = re.compile(r'(\d{1,4})[- ]+((?:[\w/-]+,?[- ]+){0,4}?)(campsites?|camp sites?|sites?|cabins?|cottages?|yurts?|lean-tos?|shelters?|pads?|spaces?)\b', re.I)
 SITE_TOTAL2 = re.compile(r'(?:campground|park|area)\s+(?:has|offers|features|with|provides|contains|includes)\s+(?:a total of\s+)?(\d{1,4})\s+(?:[\w-]+\s+){0,2}?(?:campsites?|sites?)|(\d{1,4})[- ]site campground|(\d{1,4})\s+sites? for (?:tents?|rvs?|campers)|total of (\d{1,4}) (?:campsites?|sites?)', re.I)
 PARTIAL_BEFORE = re.compile(r'\b(at|of|for|in|on|only|including|includes|and|plus|with|to)\s*$', re.I)
 TENT_W = re.compile(r'\btent', re.I); RV_W = re.compile(r'\brv\b|full[- ]hook|pull[- ]thr|back[- ]in|trailer|motorhome', re.I)
 CABIN_W = re.compile(r'cabin|cottage|yurt|lean-to|shelter', re.I); GROUP_W = re.compile(r'\bgroup', re.I)
 PRIM_W = re.compile(r'primitive|walk[- ]in|hike[- ]in|backcountry|backpack|boat[- ]in|paddle[- ]in|rustic', re.I)
-PLAIN_W = re.compile(r'^(?:camp|wooded|shaded|developed|individual|family|total|overnight|standard|modern|paved|gravel|utility|hookup|electric|full[- ]service)?[- ]*$', re.I)   # 'improved' left out: '92 improved sites' is a part
+PLAIN_W = re.compile(r'^(?:first[- ]come,?[- ]first[- ]serve[d]?|reservable|non-?reservable|camp|wooded|shaded|developed|individual|family|total|overnight|standard|modern|paved|gravel|utility|hookup|electric|full[- ]service)?[- ]*$', re.I)   # 'improved' left out: '92 improved sites' is a part
 AMPS = re.compile(r'\b(20|30|50|100)(?:\s*/\s*(20|30|50|100))?(?:\s*/\s*(20|30|50|100))?\s*-?\s*amp', re.I)
 ELECTRIC_W = re.compile(r'electric(?:al|ity)?(?:\s+(?:hook-?ups?|service|sites?|pedestals?))?|\bhook-?ups?|full[- ]hook-?ups?|utility hook-?ups?|full[- ]service sites?|improved sites?|\bpower\b|utilities', re.I)
 WATER_HOOK = re.compile(r'water (?:and|&|/|,) (?:electric|sewer)|utility hook-?ups?|full[- ]service sites?|(?:electric(?:al|ity)?|sewer)(?:\s*,|\s+and|\s*&|\s*/)\s*water|water hook-?ups?|full[- ]hook-?ups?|water (?:at|on|to) (?:each|every|all) site', re.I)
@@ -171,6 +172,7 @@ def phones_in(text):
         # sentence is never the campground's phone; the sentence must name the campground, the park office or 'campground office'
         if p == '(877) 444-6777' or RESLINE_W.search(sent) or p.startswith(TOLLFREE): continue
         if not OWN_PHONE_W.search(sent): continue
+        if re.search(r'\b[a-z0-9-]+[.·](?:com|org|gov|us)\b|state law|regulation|department of agriculture', sent, re.I): continue   # 'refer to kyagr.com or call …' = another agency's line
         if p not in [x for x, _ in out]: out.append((p, m))
     if not out: return []
     # keep the first number plus every number on the same quoted line (within 120 chars of it)
@@ -202,6 +204,7 @@ def sentence_of(text, s, e):
     """The whole sentence (or label line) around text[s:e]: cut at . ! ? ; or a new line."""
     a = max(0, s - 300); b = min(len(text), e + 300)
     seg = text[a:b]; rs = s - a; re_ = e - a
+    seg = re.sub(r'(\w)\.(?=(?:com|org|gov|us|ca|net|edu)\b)', r'\1·', seg)   # 'kyagr.com' is not the end of a sentence
     starts = [m.end() for m in re.finditer(r'[.!?;\n]', seg[:rs])]
     ends = [m.start() for m in re.finditer(r'[.!?;\n]', seg[re_:])]
     return seg[(starts[-1] if starts else 0):(re_ + ends[0] if ends else len(seg))].strip()
@@ -627,6 +630,32 @@ def apply_facts(rec, F):
         rec['facts_src'][k] = {'url': f['url'], 'date': f['date'], 'line': f['line']}
 
 
+def own_section(text, name):
+    """Round 4 rule 1: when a page lists SEVERAL campgrounds (a forest 'camping' page, an LBL sister page), only the part that
+    names THIS campground counts. -> the text from the first line that names the campground up to the next line that names a
+    different campground (a heading-like line ending in Campground / Camp / Area), or '' when the page never names it."""
+    cn = norm_name(name)
+    if not cn: return ''
+    words = [w for w in cn.split() if len(w) > 2]
+    if not words: return ''
+    lines = text.split('\n'); start = None
+    for i, ln in enumerate(lines):
+        if all(w in norm_name(ln) for w in words): start = i; break
+    if start is None: return ''
+    end = len(lines)
+    for j in range(start + 1, len(lines)):
+        ln = lines[j]
+        if len(ln) < 70 and re.search(r'(campground|camp|horse camp|recreation area|boat-in)\s*$', ln, re.I) and not all(w in norm_name(ln) for w in words):
+            end = j; break
+    return '\n'.join(lines[start:end])
+
+
+def names_other_camps(text, name):
+    """True when the page names 2+ campgrounds other than this one (a list page)."""
+    others = {m.group(0).lower() for m in re.finditer(r'\b[A-Z][\w\'-]+(?:\s+[A-Z][\w\'-]+){0,3}\s+(?:Campground|Horse Camp)\b', text) if norm_name(m.group(0)) != norm_name(name)}
+    return len(others) >= 2
+
+
 def one_camp(area, r, state):
     rec = blank_record(r)
     canada = area.startswith('CA-')
@@ -644,9 +673,14 @@ def one_camp(area, r, state):
             st, text, links = read_page(u)
             rec['status'] = st
             if st == 'ok':
-                F = facts_from_text(text, u); F.update(links_facts(links, u))
+                # round 4 rule 1: a page that lists several campgrounds is read only in THIS campground's section
+                if names_other_camps(text, r['name']):
+                    sec = own_section(text, r['name']); rec['read_section'] = 'own section' if sec else 'page names other campgrounds, never this one'
+                    text = sec
+                F = facts_from_text(text, u) if text else {}; F.update(links_facts(links, u))
                 # round 3 rule 5: a PARK page (parks.ky.gov …) often keeps the campground facts on its own 'Campground' page: when
-                # the page gave no site count, follow ONE same-host link whose text or url says campground / camping and fill the blanks
+                # the page gave no site count, follow ONE same-host link whose text or url says campground / camping and fill the blanks.
+                # Round 4: the sub-page is read only in this campground's section when it lists several (the forest 'camping' page)
                 if 'sites.total' not in F and not late():
                     sub = next((lu for lu, lt in links if host_of(lu) == host_of(u) and re.search(r'campground|camping|campsite', (lt or '') + ' ' + lu, re.I)
                                 and not re.search(r'reserv|cancel|policy|lodg|cottage|\.pdf', (lt or '') + ' ' + lu, re.I) and lu.split('#')[0] != u.split('#')[0]), None)
@@ -654,10 +688,15 @@ def one_camp(area, r, state):
                         st2, text2, links2 = read_page(sub)
                         rec['campground_page'] = {'url': sub, 'status': st2}
                         if st2 == 'ok':
-                            F2 = facts_from_text(text2, sub); F2.update(links_facts(links2, sub))
+                            if names_other_camps(text2, r['name']): text2 = own_section(text2, r['name']); rec['campground_page']['read'] = 'own section' if text2 else 'names other campgrounds only'
+                            F2 = facts_from_text(text2, sub) if text2 else {}
+                            if text2: F2.update(links_facts(links2, sub))
                             for k2, v2 in F2.items():
                                 if k2 not in F: F[k2] = v2
                 apply_facts(rec, F); STAT['ok'] += 1
+                # round 4 rule 3: a state-park page that gave no campground facts at all is probably filled by script -> say so
+                if not any(k.startswith(('sites.', 'hookups.')) or k in ('dump_station', 'showers') for k in F):
+                    rec['status'] = 'ok, no campground facts in the page text: needs browser?'; rec['needs_browser'] = True; STAT['needs_browser'] += 1
             elif st.startswith('HTTP 403'): STAT['needs_browser'] += 1
             elif st == 'robots.txt says no': STAT['robots'] += 1
             elif st == 'host resting': STAT['resting'] += 1
@@ -674,17 +713,32 @@ def one_camp(area, r, state):
     return rec
 
 
+# Round 4: rows the checkers (chat 8 + chat 11, Oct 28) found WRONG IN THE HAND KEY: left out of the agreement count, listed in review.md
+KEY_WRONG = {
+    ('koomer-ridge-campground', 'electric'): "agency page says 'no hookups' (chat 8 grade); key says electric True",
+    ('clear-creek-campground', 'electric'): 'agency words say no hookups (chat 11 regrade); key says electric True',
+    ('white-sulphur-horse-camp', 'electric'): 'agency words say no hookups (chat 11 regrade); key says electric True',
+    ('great-meadows-campground', 'electric'): 'agency words say no hookups (chat 11 regrade); key says electric True',
+    ('turkey-foot-campground', 'electric'): "agency page: 'There is no water, electricity or dump station available' (chat 8); key says electric True",
+}
+
+
 def ky_check(D):
-    """R5: the bot's reading vs the hand-checked Kentucky values; agree / differ / bot blank, field by field."""
-    K = ky_key(); rows = []
+    """R5: the bot's reading vs the hand-checked Kentucky values; agree / differ / bot blank, field by field.
+    Round 4: 'some' vs a key True counts as AGREE (the bot is more careful: only certain sites have it); KEY_WRONG rows are
+    listed apart and left out of the count."""
+    K = ky_key(); rows = []; key_wrong = []
     for cid, k in K.items():
-        rec = (D.get('camps') or {}).get(cid)
+        rec = (D.get('camps') or {}).get(cid) or next((r for r in D.get('camps', {}).values() if cid in (r.get('ids') or [])), None)
         if not rec: rows.append({'id': cid, 'name': k['name'], 'status': 'not in output'}); continue
         row = {'id': cid, 'name': k['name'], 'status': rec.get('status'), 'fields': {}}
         def cmp(name, ours, theirs):
             if theirs is None: return
+            if (cid, name) in KEY_WRONG:
+                key_wrong.append({'id': cid, 'name': k['name'], 'field': name, 'bot': ours, 'key': theirs, 'why': KEY_WRONG[(cid, name)]})
+                row['fields'][name] = f'KEY WRONG (bot {ours}, key {theirs}): left out'; return
             if ours is None: row['fields'][name] = f'bot blank (key: {theirs})'
-            elif ours == theirs: row['fields'][name] = f'agree ({theirs})'
+            elif ours == theirs or (ours == 'some' and theirs is True): row['fields'][name] = f'agree ({theirs})' + (' [bot: some]' if ours == 'some' else '')
             else: row['fields'][name] = f'DIFFER bot {ours} vs key {theirs}'
         cmp('sites', rec['sites'].get('total'), k['sites'])
         cmp('amps', rec['hookups'].get('amps'), k['amps'] or None)
@@ -699,7 +753,7 @@ def ky_check(D):
     agree = sum(1 for r in rows for v in (r.get('fields') or {}).values() if v.startswith('agree'))
     differ = sum(1 for r in rows for v in (r.get('fields') or {}).values() if v.startswith('DIFFER'))
     blank = sum(1 for r in rows for v in (r.get('fields') or {}).values() if v.startswith('bot blank'))
-    out = {'when': TODAY, 'campgrounds': len(rows), 'agree': agree, 'differ': differ, 'bot_blank': blank, 'rows': rows}
+    out = {'when': TODAY, 'campgrounds': len(rows), 'agree': agree, 'differ': differ, 'bot_blank': blank, 'rows': rows, 'key_wrong': key_wrong}
     out['gate'] = ky_gate(D, agree, differ)
     return out
 
@@ -746,7 +800,10 @@ def ky_gate(D, agree, differ):
             ph = got if isinstance(got, list) else [got] if got else []
             ok = not any(str(x).startswith(('(877)', '(800)', '(888)', '(866)')) for x in ph)
         elif want == 'not-bare': ok = not (got and bare_domain(got))
-        elif want == '>=100': ok = isinstance(got, int) and got >= 100
+        elif want == '>=100':
+            ok = isinstance(got, int) and got >= 100
+            if not ok and (rec.get('needs_browser') or got is None):   # round 4 rule 3: the page text held no count -> WARN, not a fail
+                rows.append({'ok': 'warn', 'why': why, 'got': f"no count in the page text; read {rec.get('official_page')} + {(rec.get('campground_page') or {}).get('url')} -> parks.ky.gov: needs browser?"}); continue
         elif want == 'sentence-or-null':
             line = ((rec.get('facts_src') or {}).get(field) or {}).get('line') or ''
             ok = got is None or (bool(line) and not is_heading(line) and re.search(r'shower', line, re.I) and VERB_W.search(line))
@@ -754,9 +811,9 @@ def ky_gate(D, agree, differ):
         rows.append({'ok': bool(ok), 'why': why, 'got': got if want != 'sentence-or-null' else f"{got} from “{line[:90]}”"})
     filled = agree + differ
     pct = round(100 * agree / filled) if filled else 0
-    known_ok = all(r['ok'] for r in rows if r['ok'] is not None); unread = sum(1 for r in rows if r['ok'] is None)
+    known_ok = all(r['ok'] for r in rows if r['ok'] is not None); unread = sum(1 for r in rows if r['ok'] is None); warn = sum(1 for r in rows if r['ok'] == 'warn')
     res = 'PASS' if known_ok and pct >= 70 and unread == 0 and filled else 'FAIL'
-    why = f"known answers {sum(1 for r in rows if r['ok'])}/{len(rows)} right ({unread} not read) · hand-key agreement {agree}/{filled} = {pct}% (need 70%)"
+    why = f"known answers {sum(1 for r in rows if r['ok'] is True)}/{len(rows)} right ({warn} warn, {unread} not read) · hand-key agreement {agree}/{filled} = {pct}% (need 70%; 'some' = agree; KEY_WRONG rows left out)"
     return {'result': res, 'why': why, 'when': TODAY, 'rows': rows, 'pct': pct}
 
 
@@ -819,7 +876,7 @@ def counts(D):
     c = {'camps': len(D['camps']), 'ok': 0, 'needs_key': 0, 'needs_browser': 0, 'robots': 0, 'resting': 0, 'no_page': 0, 'not_official': 0, 'other': 0, 'with_sites': 0, 'with_booking': 0, 'with_elevation': 0}
     for r in D['camps'].values():
         s = r.get('status') or ''
-        c['ok' if s == 'ok' else 'needs_key' if 'RIDB' in s else 'needs_browser' if '403' in s else 'robots' if 'robots' in s else 'resting' if 'resting' in s else 'no_page' if 'no official page' in s else 'not_official' if 'not on an official' in s else 'other'] += 1
+        c['ok' if s == 'ok' else 'needs_key' if 'RIDB' in s else 'needs_browser' if ('403' in s or 'needs browser' in s) else 'robots' if 'robots' in s else 'resting' if 'resting' in s else 'no_page' if 'no official page' in s else 'not_official' if 'not on an official' in s else 'other'] += 1
         if (r.get('sites') or {}).get('total') is not None: c['with_sites'] += 1
         if (r.get('booking') or {}).get('url'): c['with_booking'] += 1
         if (r.get('elevation_ft') or {}).get('value') is not None: c['with_elevation'] += 1
@@ -891,7 +948,7 @@ def review(state):
         if not D: continue
         for r in D['camps'].values():
             s = r.get('status') or ''
-            if '403' in s or 'robots' in s or 'resting' in s:
+            if '403' in s or 'robots' in s or 'resting' in s or 'needs browser' in s:
                 h = host_of(r.get('official_page') or ''); hosts.setdefault(h, [s, 0])[1] += 1
     if hosts:
         L += ['', '## Hosts that need a browser (403), say no in robots.txt, or are resting', ''] + [f'- {h}: {n} campgrounds · {s}' for h, (s, n) in sorted(hosts.items(), key=lambda x: -x[1][1])[:40]]
@@ -902,7 +959,11 @@ def review(state):
         g = k.get('gate')
         if g:
             L += [f"**GATE={g['result']}** · {g['why']}", '']
-            for r in g['rows']: L.append(f"- {'ok' if r['ok'] else 'not read' if r['ok'] is None else 'MISS'}: {r['why']} · got {r['got']}")
+            for r in g['rows']: L.append(f"- {'ok' if r['ok'] is True else 'WARN' if r['ok'] == 'warn' else 'not read' if r['ok'] is None else 'MISS'}: {r['why']} · got {r['got']}")
+            L.append('')
+        if k.get('key_wrong'):
+            L += ['**KEY_WRONG (hand-key rows the checkers found wrong; left out of the count; Brandon fixes the key):**', '', '| campground | field | bot | key | why |', '|---|---|---|---|---|']
+            for w in k['key_wrong']: L.append(f"| {w['name']} | {w['field']} | {w['bot']} | {w['key']} | {w['why']} |")
             L.append('')
         unread = [r for r in k['rows'] if r.get('status') == 'not in output']
         for r in k['rows']:

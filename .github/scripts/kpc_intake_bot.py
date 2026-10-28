@@ -50,7 +50,7 @@ MAX_REQ = 70          # polite requests per row
 MAX_POINTS = 60       # missing parks tested per layer
 MAX_LAYERS = 8        # polygon layers taken from one service url
 M = None
-STAT = {'rows': 0, 'probed': 0, 'skipped_fresh': 0, 'ready': 0, 'live_only': 0, 'ask': 0, 'reject': 0, 'did_not_open': 0, 'tests_ok': 0, 'tests_miss': 0}
+STAT = {'rows': 0, 'probed': 0, 'skipped_fresh': 0, 'ready': 0, 'water_only': 0, 'live_only': 0, 'ask': 0, 'reject': 0, 'did_not_open': 0, 'tests_ok': 0, 'tests_miss': 0}
 
 # ---- words
 KINDW = re.compile(r'\b(state|national|provincial|park|parks|forest|wildlife|management|area|areas|recreation|recreational|conservation|nature|natural|preserve|reserve|refuge|historic|historical|site|game|land|lands|wma|sp|sra|sf|nwr|trail|the|of|and|at|county|city|regional|unit|access|public|fishing|lake|hunting|outdoor|memorial|monument|wilderness|road)\b')
@@ -92,6 +92,41 @@ CREDIT_RX = re.compile(r'copyright|\(c\)|©|all rights reserved|credit|courtesy|
 PIN_ONLY_KINDS = re.compile(r'trail|river|byway|airstrip|hatchery|rec(?:reation)? site|roadside|boat (?:ramp|launch|access)|fishing (?:access|pier|lake)|'
                             r'scenic (?:drive|overlook)|lighthouse|dam\b|marina|harbor|harbour|campground|picnic|memorial\b|monument\b(?! valley)', re.I)
 POLY = re.compile(r'polygon', re.I)
+# Oct 28 (chat 9's review of run 1): a copyrightText credit line is NOT proof of open terms when the agency states its terms
+# elsewhere. host or org-id fragment → (class, note a person sees). Chat 8 keeps the sources (OFFICIAL_MAPS/WORLD/<CC>_desk.md).
+KNOWN_TERMS = [
+    (r'gis\.nature\.cz|aopk', 'LIVE-ONLY', "AOPK ČR's own pages say the map services are for viewing only (chat 8 WORLD/CZ_desk.md); the service copyrightText is only a credit"),
+    (r'kort\.vd\.dk|miljoegis|naturstyrelsen', 'NOTHING STATED', 'Danish Nature Agency (kort.vd.dk): no terms stated on the service → ask, or read live only'),
+    (r'metsa\.fi|metsahallitus|paikkatieto\.ymparisto\.fi|syke', 'CLOSED', 'Metsähallitus / Finnish environmental administration: the services are for environmental-administration use only'),
+]
+# ArcGIS Online org ids we know (the host services*.arcgis.com says nothing; the org id is the publisher)
+AGOL_ORGS = {'x5wCko8UnSi4h0CB': ('Clemson University (hosts layers for SCDNR)', 'hosted for an agency'),
+             'acgZYxoN5Oj8pDLa': ("South Carolina DNR's own ArcGIS Online organisation", 'official'),
+             'JJzESW51TqeY9uat': ('Defra group (Natural England / Environment Agency / Forestry Commission)', 'official'),
+             'Cdxz8r11hT0MGzg1': ('Montana Fish, Wildlife & Parks', 'official'),
+             '5hLFVlePaucIMGhw': ('Nevada Division of State Parks', 'official'),
+             'n1YM8pTrFmm7L4hs': ('U.S. Army Corps of Engineers', 'official')}
+WATER_RX = re.compile(r'reservoir|\blake|\bpool\b|water ?bod|\bwater\b|\brez\b|_rez|hydro|wetland|pond|river|stream|\bbay\b|lagoon|impoundment|nhd\b', re.I)
+
+
+def known_terms(url, words):
+    """(class, note) from the KNOWN_TERMS table for this host / publisher, or (None, '')."""
+    blob = (host_of(url) + ' ' + str(words or '')).lower()
+    for rx, cls, note in KNOWN_TERMS:
+        if re.search(rx, blob, re.I): return cls, note
+    return None, ''
+
+
+def agol_org(url):
+    m = re.match(r'https?://services\d*(?:-eu\d*)?\.arcgis\.com/([A-Za-z0-9]+)/', url or '')
+    return m.group(1) if m else ''
+
+
+def water_layer(probe, url):
+    """True when the layer's features are lakes / reservoirs / water bodies (name, name field, service path): never READY for the key."""
+    blob = ' '.join(str(x or '') for x in (probe.get('layer_name'), probe.get('name_field'), (probe.get('service') or {}).get('service_name'), re.sub(r'.*/rest/services/', '', url or '')))
+    sample = ' '.join(str(x) for x in (probe.get('sample') or []))
+    return bool(WATER_RX.search(blob)) or (sample and len(re.findall(r'lake|reservoir|pond|pool', sample, re.I)) >= 2)
 
 
 def notice(m): print('::notice title=Layer intake::' + str(m).replace('\n', ' ')[:900], flush=True)
@@ -299,6 +334,32 @@ def probe_file(u, budget):
     return r
 
 
+def server_iteminfo(lu, budget):
+    """Agency ArcGIS Servers keep their item terms at <service>/info/iteminfo (Nevada State Parks' licence was there; chat 9)."""
+    svc = re.sub(r'/\d+/?$', '', (lu or '').rstrip('/'))
+    j, st = jget(svc + '/info/iteminfo?f=json', budget)
+    if not j or not (j.get('licenseInfo') or j.get('accessInformation') or j.get('description') or j.get('title')): return {}
+    return {'item_url': svc + '/info/iteminfo', 'title': j.get('title'), 'licence_text': re.sub(r'<[^>]+>', ' ', j.get('licenseInfo') or '')[:800],
+            'credit': re.sub(r'<[^>]+>', ' ', j.get('accessInformation') or '')[:300], 'about': ' '.join(re.sub(r'<[^>]+>', ' ', (j.get('description') or '') + ' ' + (j.get('snippet') or '')).split())[:300]}
+
+
+def item_search(title, url, budget):
+    """A 'did not open' lead gets ONE more chance: search the publisher's org for a Feature Service by title → its url or ''."""
+    if not title: return ''
+    h = host_of(url); oid = agol_org(url)
+    base = 'https://www.arcgis.com' if re.search(r'arcgis\.com$', h) else f'https://{h}'
+    q = re.sub(r'[_\-]+', ' ', re.sub(r'\(.*?\)', '', title)).strip()[:80]
+    if oid: q += f' orgid:{oid}'
+    j, st = jget(f'{base}/sharing/rest/search?' + urllib.parse.urlencode({'q': q + ' type:"Feature Service"', 'num': 10, 'f': 'json'}), budget)
+    for r in (j or {}).get('results') or []:
+        u = r.get('url') or ''
+        if not u or not re.search(r'/rest/services/', u): continue
+        if oid and oid not in u: continue
+        if re.search(r'/\d+$', url or ''): u = u.rstrip('/') + '/' + url.rstrip('/').rsplit('/', 1)[-1]
+        return u
+    return ''
+
+
 def item_terms(item_id, host, budget):
     """The publisher's OWN item page: licenseInfo, accessInformation, owner, orgId, modified, title, tags."""
     if not item_id: return {}
@@ -323,6 +384,8 @@ def publisher_test(row, probe, terms, trusted, govwords):
     """'official' · 'unsure' · 'not official' · 'hosted for an agency' with the reason."""
     h = host_of(row.get('url')); cc = (row.get('area') or '')[:2]
     words = ' '.join(str(x or '') for x in (row.get('publisher'), terms.get('owner'), terms.get('org_name'), terms.get('credit'), probe.get('copyright'), terms.get('title')))
+    oid = agol_org(row.get('url'))
+    if oid in AGOL_ORGS: return AGOL_ORGS[oid][1], f'ArcGIS Online org {oid} = {AGOL_ORGS[oid][0]}'
     if UNIVERSITY.search(words) or UNIVERSITY.search(h):
         if GOV_WORDS.search(words) or FED_ORG.search(words) or re.search(r'\b(dnr|wildlife|parks?|forestry|natural resources)\b', words, re.I): return 'hosted for an agency', 'a university account holds an agency layer'
         return 'not official', 'a university account'
@@ -376,7 +439,7 @@ def closes(lu, nf, miss, budget, ext=None):
 # ---- the verdict
 def verdict(row, probe, terms_class, pub, over, cl):
     """READY · LIVE-ONLY · ASK-THE-PUBLISHER · REJECT with a one-sentence WHY."""
-    if not probe.get('opened'): return 'REJECT', f"did not open ({probe.get('status')}): url to confirm"
+    if not probe.get('opened'): return 'REJECT', f"did not open ({probe.get('status')}) and no item search hit on the publisher: url to confirm"
     if over.startswith('already read'): return 'REJECT', over + ': nothing new to take'
     if pub == 'not official': return 'REJECT', 'not an official publisher: we take outlines only from the managing agency'
     if terms_class == 'CLOSED': return 'REJECT', 'the publisher closed it (internal / sign-in / by request)'
@@ -461,19 +524,29 @@ def probe_row(row, known, hosts, trusted, govwords, miss_cache):
         r['test'] = test_result(row, 'REJECT', ''); return [r]
     # ArcGIS REST layers
     item_cache = {}
+    if layer_urls == [url]:
+        p0 = probe_rest_layer(url, budget)
+        if not p0.get('opened') and not late():
+            found = item_search(row.get('title'), url, budget)
+            if found and found != url:
+                base['searched'] = f'did not open; found by item search on the publisher: {found}'; layer_urls = [found]
+        else: base['_first'] = p0
     for lu in layer_urls:
         if late(): break
-        p = probe_rest_layer(lu, budget)
+        p = base.pop('_first', None) if lu == url and base.get('_first') else probe_rest_layer(lu, budget)
         if svc_info: p['service'] = {k: svc_info.get(k) for k in ('service_name', 'layers_listed', 'polygon_layers')}
         over, _ = overlap(lu, known, hosts)
         iid = p.get('service_item') or svc_info.get('service_item') or ''
-        if iid not in item_cache: item_cache[iid] = item_terms(iid, host_of(lu), budget) if p.get('opened') else {}
+        if iid not in item_cache: item_cache[iid] = (item_terms(iid, host_of(lu), budget) or server_iteminfo(lu, budget)) if p.get('opened') else {}
         terms = dict(item_cache[iid])
         text = ' '.join(x for x in (terms.get('licence_text'), terms.get('credit'), p.get('copyright') or svc_info.get('copyright')) if x)
         tclass, tline = classify_terms(text)
         source = 'item page' if terms.get('item_url') else ('service copyrightText' if (p.get('copyright') or svc_info.get('copyright')) else 'none')
         if tclass == 'NOTHING STATED' and row.get('licence'):   # the publisher's own words first (the Nevada lesson); the catalog's / the chat's text only as a fallback
             tclass, tline = classify_terms(row['licence']); source = 'queue row (not the publisher\'s page)'
+        kcls, knote = known_terms(lu, ' '.join(str(x or '') for x in (row.get('publisher'), terms.get('owner'), terms.get('org_name'))))
+        if kcls:
+            terms['terms_note'] = f"KNOWN_TERMS override: {tclass} read on the service → {kcls}. {knote}"; tclass = kcls; source = 'known-terms table (the agency states its terms elsewhere)'
         terms.update({'class': tclass, 'line': tline, 'source': source})
         pub, why_pub = publisher_test(row, p, terms, trusted, govwords)
         cl = None
@@ -482,20 +555,26 @@ def probe_row(row, known, hosts, trusted, govwords, miss_cache):
             cl = closes(lu, p['name_field'], miss_cache[area], budget, p.get('extent'))
             cl['missing_in_area'] = len(miss_cache[area])
         v, why = verdict(row, p, tclass, pub, over, cl)
+        flag = ''
+        if p.get('opened') and water_layer(p, lu) and v in ('READY', 'ASK-THE-PUBLISHER', 'LIVE-ONLY'):
+            flag = 'water only: for the 2-fer owner step only'; why = f'{flag} (lakes / reservoirs / water bodies never go in the key as a park outline); otherwise {v}: {why}'; v = 'WATER-ONLY'
         r = dict(base, url=lu, probe=p, terms=terms, publisher_test=[pub, why_pub], overlap=over, closes=cl if cl is not None else 'not probed', verdict=v, why=why, requests_used=MAX_REQ - budget[0])
+        if flag: r['flag'] = flag
         r['test'] = test_result(row, v, over)
         results.append(r)
     for r in results:
         st = str((r.get('probe') or {}).get('status') or '')
         if not (r.get('probe') or {}).get('opened') and (st in ('rest', 'budget', 'out of time', 'not json', 'robots') or st.startswith('err')): r['retry'] = True
     if not results:
-        r = dict(base, probe={'opened': False, 'status': 'out of time'}, terms={}, publisher_test=['unsure', ''], overlap='', closes={}, verdict='REJECT', why='out of time before the first layer was probed (will retry)', retry=True)
+        over, _ = overlap(url, known, hosts)
+        r = dict(base, probe={'opened': False, 'status': 'out of time'}, terms={}, publisher_test=['unsure', ''], overlap=over, closes={}, verdict='REJECT', why='out of time before the first layer was probed (will retry)', retry=True)
+        r['test'] = test_result(row, 'REJECT', over)
         results.append(r)
     return results
 
 
 # ---- the review page
-ORDER = ['READY', 'LIVE-ONLY', 'ASK-THE-PUBLISHER', 'REJECT']
+ORDER = ['READY', 'WATER-ONLY', 'LIVE-ONLY', 'ASK-THE-PUBLISHER', 'REJECT']
 
 
 def write_review(rows, state):
@@ -503,7 +582,7 @@ def write_review(rows, state):
     L = [f'# Layer intake review ({TODAY})', '',
          'Every lead in data/intake/queue.json, probed politely (metadata and counts only, never geometry). Chat 9 approves a READY row by setting '
          '`approved: true` in ready.json; the nightly key rebuild reads approved rows later. LIVE-ONLY = read live, never stored. ASK = the publisher must '
-         'be asked (nothing stated, or hosted for an agency). Terms are read on the publisher\'s OWN item page first (the Nevada lesson).', '',
+         'be asked (nothing stated, or hosted for an agency). WATER-ONLY = lakes / reservoirs: for the 2-fer owner step only, never a park outline. Terms are read on the publisher\'s OWN item page first (the Nevada lesson).', '',
          '| verdict | rows |', '|---|---|'] + [f'| {v} | {counts[v]} |' for v in ORDER] + ['']
     for v in ORDER:
         sub = [r for r in rows if r.get('verdict') == v]
@@ -515,6 +594,9 @@ def write_review(rows, state):
             L.append(f"- url: {r['url']}")
             L.append(f"- WHY: {r.get('why')}")
             L.append(f"- publisher: {r.get('publisher') or '?'} → {r.get('publisher_test', ['', ''])[0]} ({r.get('publisher_test', ['', ''])[1]})")
+            if r.get('flag'): L.append(f"- FLAG: {r['flag']}")
+            if r.get('searched'): L.append(f"- {r['searched']}")
+            if t.get('terms_note'): L.append(f"- terms note: {t['terms_note']}")
             L.append(f"- terms: {t.get('class') or '?'} · source {t.get('source') or '?'}" + (f" · \"{(t.get('line') or '')[:200]}\"" if t.get('line') else '') + (f" · item {t.get('item_url')}" if t.get('item_url') else '') + (f" · owner {t.get('owner')}" if t.get('owner') else '') + (f" · org {t.get('org_name')}" if t.get('org_name') else ''))
             facts = []
             if p.get('kind'): facts.append(p['kind'])
@@ -572,7 +654,22 @@ def selftest():
     for (p, tc, pub, over, cl), want in V:
         got = verdict({'from': 'harvester'}, p, tc, pub, over, cl)[0]
         if got != want: bad.append(f'verdict: {tc}/{pub}/{over or "-"} → {got}, wanted {want}')
-    n = len(T) + len(F) + len(V)
+    K = [(('https://gis.nature.cz/arcgis/rest/services/ObecnaOchrana/PrirodniPark/MapServer/0', 'AOPK'), 'LIVE-ONLY'),
+         (('https://kort.vd.dk/arcgis/rest/services/x/MapServer/0', ''), 'NOTHING STATED'),
+         (('https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/x/FeatureServer/0', 'Defra'), None)]
+    for (u, w), want in K:
+        got = known_terms(u, w)[0]
+        if got != want: bad.append(f'known terms: {u} → {got}, wanted {want}')
+    W = [({'layer_name': 'usace_rez', 'name_field': 'NAME'}, 'https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_rez/FeatureServer/0', True),
+         ({'layer_name': 'State Parks', 'name_field': 'NAME', 'sample': ['Big Lake State Park']}, 'https://x/arcgis/rest/services/FWPLND_STATEPARKS/FeatureServer/0', False)]
+    for p, u, want in W:
+        if water_layer(p, u) != want: bad.append(f'water: {u} → {not want}')
+    P = [('https://services1.arcgis.com/x5wCko8UnSi4h0CB/arcgis/rest/services/SCDNR_Managed_Lands_Public_Viewer/FeatureServer/0', 'hosted for an agency'),
+         ('https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/SCDNR_Managed_Lands_Public_Viewer/FeatureServer/0', 'official')]
+    for u, want in P:
+        got = publisher_test({'url': u, 'publisher': '', 'area': 'US-SC'}, {}, {}, {}, '')[0]
+        if got != want: bad.append(f'publisher: {u} → {got}, wanted {want}')
+    n = len(T) + len(F) + len(V) + len(K) + len(W) + len(P)
     for b in bad: print('SELFTEST FAIL ' + b)
     print(f'SELFTEST {"PASS" if not bad else "FAIL"}: {n - len(bad)} of {n} checks ok')
     return 0
@@ -616,7 +713,7 @@ def main():
             old[r['url']] = r
             STAT['probed'] += 1
             if not (r.get('probe') or {}).get('opened'): STAT['did_not_open'] += 1
-            k = {'READY': 'ready', 'LIVE-ONLY': 'live_only', 'ASK-THE-PUBLISHER': 'ask', 'REJECT': 'reject'}.get(r.get('verdict'))
+            k = {'READY': 'ready', 'WATER-ONLY': 'water_only', 'LIVE-ONLY': 'live_only', 'ASK-THE-PUBLISHER': 'ask', 'REJECT': 'reject'}.get(r.get('verdict'))
             if k: STAT[k] += 1
             if r.get('test') == 'ok': STAT['tests_ok'] += 1
             elif r.get('test'): STAT['tests_miss'] += 1
