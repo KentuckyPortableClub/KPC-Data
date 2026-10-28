@@ -1,6 +1,6 @@
 # NC: POTA parks vs official land (USGS PAD-US)
 
-Built by `.github/scripts/kpc_us_key.py` (date: data/status/kpc_us_key.json). **219 of 253** parks joined to official land (same name + same kind of place). **5** to check by hand, **15** with nothing found. Nothing below is joined until a person checks it.
+Built by `.github/scripts/kpc_us_key.py` (date: data/status/kpc_us_key.json). **219 of 253** parks joined to official land (same name + same kind of place). **5** to check by hand, **14** with nothing found. Nothing below is joined until a person checks it.
 
 ## To check (not joined)
 
@@ -21,6 +21,7 @@ Built by `.github/scripts/kpc_us_key.py` (date: data/status/kpc_us_key.json). **
 - US-13002 Dan River State Trail (State Trail) → on NC Wildlife Resources Commission Leaksville Access Area (~1 ac)
 - US-3854 Flower Hill State Nature Preserve (State Nature Preserve) → on Triangle Land Conservancy Preserve (~10 ac)
 - US-3863 Palmetto-Peartree State Preserve (State Preserve) → on NC Department of Transportation Mitigation Site (~10,349 ac); Alligator River Game Land (~24,439 ac)
+- US-4556 Appalachian Trail National Scenic Trail (National Scenic Trail) → on Ed Jenkins National Recreation Area (~23,574 ac)
 - US-6848 President James K. Polk State Historic Site (State Historic Site) → on Polk Memorial State Historic Site (~20 ac)
 - US-6963 Nutbush Wildlife Management Area (Wildlife Management Area) → on Kerr Reservoir (~25,497 ac); Kerr Reservoir (~25,510 ac)
 - US-8010 McKinney Lake State Fish Hatchery (State Fish Hatchery) → on Sandhills Game Land (~65,144 ac); Sandhills Game Land (~65,210 ac)
@@ -38,7 +39,6 @@ Built by `.github/scripts/kpc_us_key.py` (date: data/status/kpc_us_key.json). **
 - US-3791 Trail of Tears National Historic Trail (National Historic Trail)
 - US-3851 Brumley Forest State Nature Preserve (State Nature Preserve)
 - US-3862 Nags Head Woods Ecological State Preserve (State Preserve)
-- US-4556 Appalachian Trail National Scenic Trail (National Scenic Trail)
 - US-4577 Overmountain Victory National Historic Trail (National Historic Trail)
 - US-6837 CSS Neuse Civil War Interpretive Center State Historic Site (State Historic Site)
 - US-6847 NC Transportation Museum State Historic Site (State Historic Site)
@@ -61,6 +61,7 @@ Built by `.github/scripts/kpc_us_key.py` (date: data/status/kpc_us_key.json). **
 - Camp Lejeune ·  · NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table) · ~126,505 ac
 - Camp Lejeune · MIL · UNK · ~126,459 ac
 - Hofmann Forest ·  · NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table) · ~78,930 ac
+- Pisgah National Game Refuge ·  · Forest Service national designated areas (monuments, NRAs, scenic areas) · ~71,916 ac
 - USFWS Critical Habitat - Loggerhead Seaturtle ·  · NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table) · ~63,114 ac
 - Dare County Air Force Range ·  · NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table) · ~46,250 ac
 - Dare County Air Force Range · MIL · UNK · ~46,244 ac
@@ -74,9 +75,11 @@ Built by `.github/scripts/kpc_us_key.py` (date: data/status/kpc_us_key.json). **
 - NC Land and Water Fund Project ·  · NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table) · ~28,627 ac
 - Kerr Reservoir ·  · NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table) · ~25,510 ac
 - USFWS Critical Habitat - Piping Plover ·  · NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table) · ~25,278 ac
+- Noontootly National Game Refuge ·  · Forest Service national designated areas (monuments, NRAs, scenic areas) · ~24,653 ac
 - Great Dismal Swamp National Wildlife Refuge Registered Heritage Area ·  · NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table) · ~24,586 ac
 - NC Department of Transportation Mitigation Site · SOTH · UNK · ~24,566 ac
 - Cape Lookout National Seashore/Core Banks Registered Heritage Area ·  · NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table) · ~23,711 ac
+- Ed Jenkins National Recreation Area ·  · Forest Service national designated areas (monuments, NRAs, scenic areas) · ~23,574 ac
 - Roanoke River Preserve ·  · NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table) · ~23,088 ac
 - Roanoke River Wetlands Game Land ·  · NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table) · ~21,543 ac
 - Roanoke River Wetlands Game Land · SCA · UNK · ~20,543 ac
@@ -104,6 +107,3 @@ Built by `.github/scripts/kpc_us_key.py` (date: data/status/kpc_us_key.json). **
 - Marine Corps Air Station Cherry Point - Piney Island · MIL · UNK · ~11,989 ac
 - Marine Corps Air Station Cherry Point - Piney Island ·  · NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table) · ~11,986 ac
 - Big Ivy/Craggy Mountain Special Interest Area ·  · NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table) · ~11,982 ac
-- Croatan National Forest - Pocosin Wilderness ·  · NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table) · ~11,823 ac
-- Pocosin Wilderness ·  · National Wilderness Preservation System (Forest Service map) · ~11,802 ac
-- Military Ocean Terminal Sunny Point ·  · NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table) · ~11,493 ac

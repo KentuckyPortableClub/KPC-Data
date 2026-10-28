@@ -1,6 +1,6 @@
 # ND: POTA parks vs official land (USGS PAD-US)
 
-Built by `.github/scripts/kpc_us_key.py` (date: data/status/kpc_us_key.json). **102 of 155** parks joined to official land (same name + same kind of place). **0** to check by hand, **49** with nothing found. Nothing below is joined until a person checks it.
+Built by `.github/scripts/kpc_us_key.py` (date: data/status/kpc_us_key.json). **105 of 155** parks joined to official land (same name + same kind of place). **0** to check by hand, **48** with nothing found. Nothing below is joined until a person checks it.
 
 ## To check (not joined)
 
@@ -9,8 +9,6 @@ Built by `.github/scripts/kpc_us_key.py` (date: data/status/kpc_us_key.json). **
 
 - US-4239 North Country Trail National Scenic Trail (National Scenic Trail) → on Lake Sakakawea State Park (~733 ac); Lake Sakakawea State Park (~740 ac)
 - US-5741 Turtle Mountain State Forest (State Forest) → on North Dakota State Forest Service Land (~14,517 ac)
-- US-5742 Homen State Forest (State Forest) → on North Dakota State Forest Service Land (~14,517 ac)
-- US-7702 Lone Tree Wildlife Management Area (Wildlife Management Area) → on Lonetree (~19,798 ac); Lonetree (~19,798 ac)
 
 ## Nothing found in PAD-US
 
@@ -30,7 +28,6 @@ Built by `.github/scripts/kpc_us_key.py` (date: data/status/kpc_us_key.json). **
 - US-5746 Sheyenne River State Forest (State Forest)
 - US-5748 Fort Abercrombie State Historic Site (State Historic Site)
 - US-7143 International Peace Garden Park (Park)
-- US-7511 Little Metigoshe State Recreation Area (State Recreation Area)
 - US-8524 Bismarck-Deadwood Stage Trail State Historic Site (State Historic Site)
 - US-8526 Camp Atchison State Historic Site (State Historic Site)
 - US-8527 Camp Buell State Historic Site (State Historic Site)
@@ -71,11 +68,8 @@ Built by `.github/scripts/kpc_us_key.py` (date: data/status/kpc_us_key.json). **
 - Devils Lake · RMA · Unknown · ~97,667 ac
 - Oaha Recreation Area · REC · Omaha · ~90,626 ac
 - North Dakota Field Office · PUB · BLM · ~58,891 ac
-- Lonetree · SCA · Unknown · ~32,248 ac
 - Stutsman County Waterfowl Production Area · RMA · STUTSMAN COUNTY WATERFOWL PRODUCTION AREA · ~27,734 ac
 - Stutsman County Waterfowl Production Area · RMA · Stutsman County Waterfowl Production Area · ~27,730 ac
-- Lonetree ·  · North Dakota Game and Fish WMAs · ~19,798 ac
-- Lonetree ·  · North Dakota Game & Fish (wild, state GIS table) · ~19,798 ac
 - Mcintosh County Waterfowl Production Area · RMA · MCINTOSH COUNTY WATERFOWL PRODUCTION AREA · ~17,391 ac
 - Mcintosh County Waterfowl Production Area · RMA · Mcintosh County Waterfowl Production Area · ~17,391 ac
 - Oahe Wildlife Management Area · SCA · Unknown · ~16,734 ac
@@ -85,8 +79,6 @@ Built by `.github/scripts/kpc_us_key.py` (date: data/status/kpc_us_key.json). **
 - Cavalier County Waterfowl Production Area · RMA · Cavalier County Waterfowl Production Area · ~12,278 ac
 - Mclean County Waterfowl Production Area · RMA · MCLEAN COUNTY WATERFOWL PRODUCTION AREA · ~12,161 ac
 - Mclean County Waterfowl Production Area · RMA · Mclean County Waterfowl Production Area · ~12,161 ac
-- Lonetree ·  · North Dakota Game and Fish WMAs · ~12,080 ac
-- Lonetree ·  · North Dakota Game & Fish (wild, state GIS table) · ~12,080 ac
 - Logan County Waterfowl Production Area · RMA · LOGAN COUNTY WATERFOWL PRODUCTION AREA · ~12,070 ac
 - Logan County Waterfowl Production Area · RMA · Logan County Waterfowl Production Area · ~12,069 ac
 - Burleigh County Waterfowl Production Area · RMA · BURLEIGH COUNTY WATERFOWL PRODUCTION AREA · ~11,923 ac
@@ -126,3 +118,8 @@ Built by `.github/scripts/kpc_us_key.py` (date: data/status/kpc_us_key.json). **
 - Mchenry County Waterfowl Production Area · RMA · MCHENRY COUNTY WATERFOWL PRODUCTION AREA · ~5,882 ac
 - Mchenry County Waterfowl Production Area · RMA · Mchenry County Waterfowl Production Area · ~5,882 ac
 - Rolette County Waterfowl Production Area · RMA · Rolette County Waterfowl Production Area · ~5,870 ac
+- Wakopa ·  · North Dakota Game and Fish WMAs · ~5,587 ac
+- Wakopa ·  · North Dakota Game & Fish (wild, state GIS table) · ~5,587 ac
+- Lamoure County Waterfowl Production Area · RMA · LAMOURE COUNTY WATERFOWL PRODUCTION AREA · ~5,466 ac
+- Lamoure County Waterfowl Production Area · RMA · Lamoure County Waterfowl Production Area · ~5,466 ac
+- Pembina Hills · SCA · Unknown · ~5,292 ac

@@ -1,6 +1,6 @@
 # MN: POTA parks vs official land (USGS PAD-US)
 
-Built by `.github/scripts/kpc_us_key.py` (date: data/status/kpc_us_key.json). **258 of 294** parks joined to official land (same name + same kind of place). **12** to check by hand, **14** with nothing found. Nothing below is joined until a person checks it.
+Built by `.github/scripts/kpc_us_key.py` (date: data/status/kpc_us_key.json). **264 of 298** parks joined to official land (same name + same kind of place). **11** to check by hand, **14** with nothing found. Nothing below is joined until a person checks it.
 
 ## To check (not joined)
 
@@ -8,7 +8,6 @@ Built by `.github/scripts/kpc_us_key.py` (date: data/status/kpc_us_key.json). **
 - **US-11150** CJ Ramstad North Shore State Trail (State Trail) → NORTH SHORE (~4 ac, similar name); NORTH SHORE (~2 ac, similar name); NORTH SHORE (~1 ac, similar name); NORTH SHORE (~1 ac, similar name); NORTH SHORE (~1 ac, similar name); NORTH SHORE (~1 ac, similar name)
 - **US-11154** Taconite State Trail (State Trail) → TACONITE (~1 ac, similar name)
 - **US-12378** Whitewater Wildlife Management Area (Wildlife Management Area) → Whitewater WMA: Main Branch Unit (~21,664 ac, similar name); R J D Memorial Hardwood (~1,016,227 ac, the POTA pin is inside it (different name))
-- **US-13156** Schueler: East Sub Unit Wildlife Management Area (Wildlife Management Area) → Schueler WMA: East Subunit (~192 ac, similar name); R J D Memorial Hardwood (~1,016,227 ac, the POTA pin is inside it (different name))
 - **US-13545** Horseshoe Bay Protected Area (Protected Area) → Horseshoe Bay WMA (~276 ac, similar name); Grand Portage (~100,174 ac, the POTA pin is inside it (different name))
 - **US-6468** Iron Range OHV State Recreation Area (State Recreation Area) → Iron Range Off-Highway Vehicle (~3,676 ac, similar name); IRON RANGE OFF HWY VEH (~40 ac, similar name); IRON RANGE OFF HWY VEH (~40 ac, similar name); IRON RANGE OFF HWY VEH (~40 ac, similar name); IRON RANGE OFF HWY VEH (~40 ac, similar name); IRON RANGE OFF HWY VEH (~40 ac, similar name)
 - **US-8095** Gitchi Gami State Trail (State Trail) → GITCHI-GAMI (~1 ac, same name, different kind of place); Split Rock Lighthouse (~2,261 ac, the POTA pin is inside it (different name))
@@ -26,7 +25,6 @@ Built by `.github/scripts/kpc_us_key.py` (date: data/status/kpc_us_key.json). **
 - US-0373 Windom Wetland Management District (Wetland Management District) → on Cottonwood County Waterfowl Production Area (~3,454 ac); Cottonwood County Waterfowl Production Area (~3,744 ac)
 - US-11014 David Dill/Taconite and Taconite State Trails State Trail (State Trail) → on Sturgeon River (~170,583 ac)
 - US-11153 Matthew Lourey State Trail (State Trail) → on Chengwatana State Forest (~17,023 ac); Chengwatana (~29,041 ac)
-- US-12380 McCarthy Lake Wildlife Management Area (Wildlife Management Area) → on Mc Carthy Lake WMA (~3,262 ac)
 - US-13549 McQuade Marine Protected Area (Marine Protected Area) → on SUPERIOR LAKE (~0 ac); SUPERIOR LAKE (~1 ac)
 - US-9390 Williard Munger State Trail (State Trail) → on WILLARD MUNGER (~2 ac); WILLARD MUNGER (~2 ac)
 
@@ -100,6 +98,7 @@ Built by `.github/scripts/kpc_us_key.py` (date: data/status/kpc_us_key.json). **
 - Clay County Waterfowl Production Area Of Mn · RMA · Clay County Waterfowl Production Area Of Mn · ~13,486 ac
 - Clay County Waterfowl Production Area Of Minnesota · RMA · CLAY COUNTY WATERFOWL PRODUCTION AREA OF MINNESOTA · ~12,817 ac
 - Big Stone County Waterfowl Production Area · RMA · Big Stone County Waterfowl Production Area · ~12,811 ac
+- Presque Isle, Michigan National Wild and Scenic River ·  · Forest Service Wild and Scenic River corridor (official boundary) · ~12,744 ac
 - Big Stone County Waterfowl Production Area · RMA · BIG STONE COUNTY WATERFOWL PRODUCTION AREA · ~12,540 ac
 - Lost River Peatland State Scientific and Natural Area · SCA · DNR Ecologic and Water Resources · ~11,996 ac
 - Lost River Peatland ·  · Minnesota DNR (preserve, state GIS table) · ~11,989 ac
@@ -108,4 +107,3 @@ Built by `.github/scripts/kpc_us_key.py` (date: data/status/kpc_us_key.json). **
 - Douglas County Waterfowl Production Area · RMA · DOUGLAS COUNTY WATERFOWL PRODUCTION AREA · ~11,468 ac
 - Grant County Waterfowl Production Area · RMA · Grant County Waterfowl Production Area · ~11,390 ac
 - Saint Croix Wild and Scenic River ·  · NPS Wild and Scenic River corridor (official boundary) · ~11,297 ac
-- Grant County Waterfowl Production Area · RMA · GRANT COUNTY WATERFOWL PRODUCTION AREA · ~11,151 ac

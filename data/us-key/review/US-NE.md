@@ -1,6 +1,6 @@
 # NE: POTA parks vs official land (USGS PAD-US)
 
-Built by `.github/scripts/kpc_us_key.py` (date: data/status/kpc_us_key.json). **175 of 196** parks joined to official land (same name + same kind of place). **0** to check by hand, **20** with nothing found. Nothing below is joined until a person checks it.
+Built by `.github/scripts/kpc_us_key.py` (date: data/status/kpc_us_key.json). **178 of 198** parks joined to official land (same name + same kind of place). **0** to check by hand, **19** with nothing found. Nothing below is joined until a person checks it.
 
 ## To check (not joined)
 
@@ -21,7 +21,6 @@ Built by `.github/scripts/kpc_us_key.py` (date: data/status/kpc_us_key.json). **
 - US-4010 Heron Haven State Park (State Park)
 - US-4012 Elkhorn Crossing State Park (State Park)
 - US-4013 Prairie View State Recreation Area (State Recreation Area)
-- US-4015 Platte River Landing State Park (State Park)
 - US-4025 Buckley Creek State Recreation Area (State Recreation Area)
 - US-4027 Lone Star State Recreation Area (State Recreation Area)
 - US-4036 Walnut Creek State Recreation Area (State Recreation Area)
@@ -47,6 +46,7 @@ Built by `.github/scripts/kpc_us_key.py` (date: data/status/kpc_us_key.json). **
 - Swanson Reservoir WMA ·  · NGPC (owner NGPC.GISAdmin) (land, state GIS table) · ~8,059 ac
 - Soldier Creek Wilderness ·  · National Wilderness Preservation System (Forest Service map) · ~7,833 ac
 - Clay County Waterfowl Production Area Of Ne · RMA · CLAY COUNTY WATERFOWL PRODUCTION AREA OF NE · ~6,943 ac
+- Pine Ridge National Recreation Area ·  · Forest Service national designated areas (monuments, NRAs, scenic areas) · ~6,651 ac
 - Clear Creek WMA ·  · NGPC (owner NGPC.GISAdmin) (land, state GIS table) · ~6,118 ac
 - Red Willow Reservoir WMA ·  · NGPC (owner NGPC.GISAdmin) (land, state GIS table) · ~5,216 ac
 - Newcastle Field Office · PUB · BLM · ~5,144 ac
@@ -93,4 +93,3 @@ Built by `.github/scripts/kpc_us_key.py` (date: data/status/kpc_us_key.json). **
 - Branched Oak Wildlife Management Area · SCA · Nebraska Game and Parks Commission · ~1,948 ac
 - Wapiti WMA ·  · NGPC (owner NGPC.GISAdmin) (land, state GIS table) · ~1,920 ac
 - Bordeaux WMA ·  · NGPC (owner NGPC.GISAdmin) (land, state GIS table) · ~1,915 ac
-- Wapiti Wildlife Management Area · SCA · Nebraska Game and Parks Commission’ · ~1,863 ac

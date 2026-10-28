@@ -1,9 +1,10 @@
 # NH: POTA parks vs official land (USGS PAD-US)
 
-Built by `.github/scripts/kpc_us_key.py` (date: data/status/kpc_us_key.json). **191 of 205** parks joined to official land (same name + same kind of place). **0** to check by hand, **9** with nothing found. Nothing below is joined until a person checks it.
+Built by `.github/scripts/kpc_us_key.py` (date: data/status/kpc_us_key.json). **191 of 206** parks joined to official land (same name + same kind of place). **1** to check by hand, **9** with nothing found. Nothing below is joined until a person checks it.
 
 ## To check (not joined)
 
+- **US-13626** Sugar River State Trail (State Trail) → Sugar River Recreational Trail (~0 ac, similar name); Sugar River Recreational Trail (~0 ac, similar name); Sugar River Recreational Trail (~0 ac, similar name); Sugar River Recreational Trail (~0 ac, similar name)
 
 ## Sites on bigger public land (no outline of their own; the land around the pin)
 
@@ -17,12 +18,12 @@ Built by `.github/scripts/kpc_us_key.py` (date: data/status/kpc_us_key.json). **
 
 - US-0885 Lamprey National Wild and Scenic River (National Wild and Scenic River)
 - US-13595 Northern Recreational State Trail (State Trail)
+- US-13625 Ammonoosuc State Trail (State Trail)
 - US-4556 Appalachian Trail National Scenic Trail (National Scenic Trail)
 - US-4931 Max Israel State Forest (State Forest)
 - US-4936 Nash Stream Forest State Forest (State Forest)
 - US-4980 White Farm State Forest (State Forest)
 - US-8014 Nashua, Squannacook, and Nissitissit National Wild and Scenic River (National Wild and Scenic River)
-- US-8015 Wildcat National Wild and Scenic River (National Wild and Scenic River)
 - US-8021 Gov. Wentworth State Historic Site (State Historic Site)
 
 ## Biggest federal / state places with no POTA park joined (first 60)

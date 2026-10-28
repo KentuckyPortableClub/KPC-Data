@@ -31,14 +31,13 @@ Built by `.github/scripts/kpc_us_key.py` (date: data/status/kpc_us_key.json). **
 - Mcfaddin National Wildlife Refuge ·  · U.S. Fish & Wildlife Service (own map) · ~59,859 ac
 - Dow Donation · SOTH · Unknown · ~50,072 ac
 - Red River Wildlife Management Area · SCA · Unknown · ~45,140 ac
+- Red Dirt National Wildlife Refuge ·  · Forest Service national designated areas (monuments, NRAs, scenic areas) · ~40,233 ac
 - Panther Swamp National Wildlife Refuge ·  · U.S. Fish & Wildlife Service (own map) · ~34,139 ac
 - Three Rivers Wildlife Management Area · SCA · Unknown · ~30,086 ac
 - St. Catherine Creek National Wildlife Refuge ·  · U.S. Fish & Wildlife Service (own map) · ~24,283 ac
 - Northwest Louisiana Game And Fish Preserve/clear Lake · SCA · Unknown · ~23,235 ac
 - Wlf - Lake Anacoco / Lake Vernon · SREC · Unknown · ~22,731 ac
 - Lsu Research Station · REA · Unknown · ~19,236 ac
-- D 'Arbonne National Wildlife Refuge · NWR · D 'ARBONNE NATIONAL WILDLIFE REFUGE · ~17,639 ac
-- D 'Arbonne National Wildlife Refuge · NWR · D 'Arbonne National Wildlife Refuge · ~17,639 ac
 - Division Of State Lands · SRMA · Unknown · ~15,672 ac
 - Hillside National Wildlife Refuge ·  · U.S. Fish & Wildlife Service (own map) · ~14,948 ac
 - Camp Beauregard Wildlife Management Area · SCA · Unknown · ~12,606 ac
@@ -55,7 +54,9 @@ Built by `.github/scripts/kpc_us_key.py` (date: data/status/kpc_us_key.json). **
 - Sicily Island Hills Wildlife Management Area · SCA · Unknown · ~7,489 ac
 - Panther Swamp National Wildlife Refuge ·  · U.S. Fish & Wildlife Service (own map) · ~7,008 ac
 - Theodore Roosevelt National Wildlife Refuge ·  · U.S. Fish & Wildlife Service (own map) · ~6,252 ac
+- Saline Bayou, Louisiana National Wild and Scenic River ·  · Forest Service Wild and Scenic River corridor (official boundary) · ~6,090 ac
 - Farm Service Agency Interest Of La · NWR · Farm Service Agency Interest Of La · ~6,039 ac
+- Black Creek, Mississippi National Wild and Scenic River ·  · Forest Service Wild and Scenic River corridor (official boundary) · ~5,668 ac
 - Black Creek Wilderness ·  · National Wilderness Preservation System (Forest Service map) · ~5,084 ac
 - Atchafalaya Land Exchange · SOTH · Unknown · ~4,843 ac
 - Tchefuncte River And Its Tributaries · SCA · Unknown · ~3,355 ac
@@ -80,4 +81,3 @@ Built by `.github/scripts/kpc_us_key.py` (date: data/status/kpc_us_key.json). **
 - Bogue Chitto State Scenic River · SCA · Unknown · ~1,109 ac
 - Ouachita River · SCA · Unknown · ~1,059 ac
 - Russell Sage Wildlife Management Area - Portion In Morehouse · SCA · Unknown · ~1,026 ac
-- Bayou Dorcheat · SCA · Unknown · ~1,012 ac
