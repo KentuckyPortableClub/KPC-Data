@@ -4,7 +4,7 @@ name: KPC SOTA public land
 # rebase). Never fails.
 on:
   schedule:
-    - cron: '23 9 * * *'   # 4:23 AM Central
+    - cron: '23 9 3 * *'   # monthly, the 3rd at 4:23 AM Central (Brandon GO Oct 28: was daily)
   workflow_dispatch:
 permissions:
   contents: write

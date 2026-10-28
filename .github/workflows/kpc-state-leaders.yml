@@ -1,11 +1,10 @@
 name: KPC state leaders
 # Moved here from KPC-Links Oct 27 (storage plan Stage 2, step B5; chat 5). Weekly: top activators in every US state (Hunters
-# Lounge, VIP Top 50); daily: Kentucky alone (fast; the Discord helper's call look-ups read data/leaders/KY-calls.json from here).
+# Lounge, VIP Top 50; the Discord helper's call look-ups read data/leaders/KY-calls.json from here). Weekly only since Oct 28.
 # Only parks with new activations are re-read (the cache below). One commit per run, only real changes. Never fails. No secrets.
 on:
   schedule:
-    - cron: '23 6 * * 3'
-    - cron: '41 9 * * *'
+    - cron: '23 6 * * 3'    # weekly only, Wed 1:23 AM Central (Brandon GO Oct 28: the daily Kentucky run was dropped)
   workflow_dispatch:
     inputs:
       states:
@@ -46,7 +45,7 @@ jobs:
       - name: Count
         continue-on-error: true
         env:
-          STATES: ${{ github.event.schedule == '41 9 * * *' && 'KY' || inputs.states }}
+          STATES: ${{ inputs.states }}
           BUDGET_MIN: '300'
         run: python3 .github/scripts/kpc_state_leaders.py || true
       - uses: actions/cache/save@v4
