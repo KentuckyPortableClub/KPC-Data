@@ -42,6 +42,8 @@ env:
   RUN_TAG: ${{ inputs.tag }}
   REGION: ${{ inputs.tag == 'ky' && 'ky' || 'na' }}   # tag ky = Kentucky from its official files (the hand-checked test state)
   HTTP_CACHE: bundle/http
+  WATER_STORE: bundle/water   # Oct 28 (HQ): the saved USGS water copy (kept between nights as release asset water-<tag>.tar.gz)
+  WATER_ASSET: water-${{ inputs.tag }}.tar.gz
 jobs:
   fetcher:
     if: ${{ inputs.stage == 'all' }}
@@ -71,6 +73,10 @@ jobs:
           # the last bundle of this tag: its map-server answers (<= 21 days) are reused, its data files are not
           if gh release download fers-bundles -R "$REPO" -p "$BUNDLE" -D . --clobber 2>/dev/null; then tar xzf "$BUNDLE" bundle/http 2>/dev/null || true; fi
           find bundle/http -type f -mtime +21 -delete 2>/dev/null || true
+          # the last good USGS water copy of this area (never aged out: each tile carries its own date, rule 13)
+          mkdir -p bundle/water
+          if gh release download fers-bundles -R "$REPO" -p "$WATER_ASSET" -D . --clobber 2>/dev/null; then tar xzf "$WATER_ASSET" bundle/water 2>/dev/null || true; fi
+          echo "saved water tiles: $(ls bundle/water | wc -l)"
           echo "$(date -u +%F)" > data/fers/.since-$RUN_TAG
       - name: POTA same-day history
         continue-on-error: true
@@ -84,9 +90,13 @@ jobs:
         env:
           MINUTES: ${{ inputs.minutes }}
         run: |
-          M=${MINUTES:-280}; [ $M -gt 260 ] && M=260
+          M=${MINUTES:-280}; [ $M -gt 225 ] && M=225
           PASS=1 MINUTES=$(( M / 3 )) python3 .github/scripts/kpc_fers.py || true
           PASS=2 MINUTES=$(( M * 2 / 3 )) python3 .github/scripts/kpc_fers.py || true
+      - name: Save the USGS water near every spot (so the worker does not need USGS up later)
+        continue-on-error: true
+        timeout-minutes: 45
+        run: WATER_PREFETCH=1 MINUTES=40 python3 .github/scripts/kpc_fers.py || true
       - name: Bundle up (a lost bundle = a red run)
         if: always()
         run: |
@@ -95,6 +105,8 @@ jobs:
           tar czf "$BUNDLE" bundle data/fers
           gh release view fers-bundles -R "$REPO" >/dev/null 2>&1 || gh release create fers-bundles -R "$REPO" --title 'Hidden 2-fer bundles' --notes 'Assembly-line bundles (bot use only).'
           gh release upload fers-bundles "$BUNDLE" --clobber -R "$REPO" || { echo "::error title=2-fer line::bundle upload failed"; exit 1; }
+          # the water copy is kept between nights; an empty one never replaces a good one
+          if [ "$(ls bundle/water 2>/dev/null | wc -l)" -gt 0 ]; then tar czf "$WATER_ASSET" bundle/water && gh release upload fers-bundles "$WATER_ASSET" --clobber -R "$REPO" && echo "::notice title=2-fer line::water copy $(ls bundle/water | wc -l) tiles ($(du -h "$WATER_ASSET" | cut -f1)) kept as $WATER_ASSET" || echo "::warning title=2-fer line::water copy not uploaded (the bundle still has it)"; fi
           gh release view fers-bundles -R "$REPO" --json assets --jq '.assets[].name' | grep -qx "$BUNDLE" || { echo "::error title=2-fer line::bundle not on the release after upload"; exit 1; }
           echo "::notice title=2-fer line::fetcher bundle $(du -h "$BUNDLE" | cut -f1) uploaded to $REPO release fers-bundles"
       - name: Start the next area (chained)
@@ -149,6 +161,8 @@ jobs:
           find bundle/http -type f -mtime +21 -delete 2>/dev/null || true
           tar czf "$BUNDLE" bundle data/fers
           gh release upload fers-bundles "$BUNDLE" --clobber -R "$REPO" || { echo "::error title=2-fer line::bundle upload failed"; exit 1; }
+          # the water copy is kept between nights; an empty one never replaces a good one
+          if [ "$(ls bundle/water 2>/dev/null | wc -l)" -gt 0 ]; then tar czf "$WATER_ASSET" bundle/water && gh release upload fers-bundles "$WATER_ASSET" --clobber -R "$REPO" && echo "::notice title=2-fer line::water copy $(ls bundle/water | wc -l) tiles ($(du -h "$WATER_ASSET" | cut -f1)) kept as $WATER_ASSET" || echo "::warning title=2-fer line::water copy not uploaded (the bundle still has it)"; fi
           echo "::notice title=2-fer line::worker bundle $(du -h "$BUNDLE" | cut -f1) uploaded"
   checker:
     needs: [fetcher, worker]
