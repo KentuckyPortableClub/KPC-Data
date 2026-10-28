@@ -30,7 +30,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-0034": {
    "n": "Great Smoky Mountains National Park",
@@ -38,17 +38,16 @@
    "page": "https://www.nps.gov/grsm/index.htm",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.nps.gov/grsm/planyourvisit/upload/grsmmap_2024_reduced_508.pdf",
+    "url": "https://www.nps.gov/grsm/planyourvisit/maps.htm",
     "status": "ok",
-    "kind": "pdf",
+    "kind": "page",
     "date": null,
     "date_how": "date unknown, checked 2026-10-28",
-    "how": "on file (parkinfo-web / Kentucky answer key) -> the page's 'Park Map' file",
-    "posted": "2024",
-    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
-    "names_park": false,
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "July 7, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
     "checked": "2026-10-28",
-    "page": "https://www.nps.gov/grsm/planyourvisit/maps.htm",
     "via": "the agency site"
    },
    "rules": {
@@ -60,7 +59,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-0533": {
    "n": "Chickasaw National Wildlife Refuge",
@@ -76,7 +75,7 @@
     "how": "a link on the park's page ('Map')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -89,22 +88,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://www.fws.gov/library",
-     "status": "ok",
-     "kind": "page",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Maps, Guides and Resources')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": null,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-0534": {
    "n": "Cross Creeks National Wildlife Refuge",
@@ -120,7 +104,7 @@
     "how": "a link on the park's page ('Map')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -135,20 +119,20 @@
    "notes": [],
    "map_also": [
     {
-     "url": "https://www.fws.gov/library",
+     "url": "https://www.fws.gov/media/cross-creeks-hunt-fish-brochure",
      "status": "ok",
      "kind": "page",
      "date": null,
      "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Maps, Guides and Resources')",
+     "how": "a link on the park's page ('')",
      "posted": "",
      "posted_how": "",
-     "names_park": null,
+     "names_park": true,
      "checked": "2026-10-28",
      "via": "the agency site"
     }
    ],
-   "ver": 2
+   "ver": 3
   },
   "US-0535": {
    "n": "Hatchie National Wildlife Refuge",
@@ -164,7 +148,7 @@
     "how": "a link on the park's page ('Map')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -177,22 +161,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://www.fws.gov/library",
-     "status": "ok",
-     "kind": "page",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Maps, Guides and Resources')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": null,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-0536": {
    "n": "Lake Isom National Wildlife Refuge",
@@ -200,28 +169,43 @@
    "page": "https://www.fws.gov/refuge/lake_isom/",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.fws.gov/sites/default/files/documents/2026-01/reelfootlakeisomhunt2025.pdf",
+    "url": "https://www.fws.gov/refuge/lake-isom/map",
     "status": "ok",
-    "kind": "pdf",
-    "date": "July 2025",
-    "date_how": "a month + year printed on the map",
-    "how": "a link on the park's page ('Lake Isom NWR Public Use Regulations Brochure')",
-    "posted": "2026-01",
-    "posted_how": "posted: the upload folder in the address",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
     "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://www.fws.gov/laws-regulations",
-    "how": "a link on the park's page ('Laws Regulations')",
+    "url": "https://www.fws.gov/sites/default/files/documents/2026-01/reelfootlakeisomhunt2025.pdf",
+    "how": "a link on the park's page ('Lake Isom NWR Public Use Regulations Brochure')",
     "status": "ok"
    },
    "agency": "U.S. Fish and Wildlife Service",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "map_also": [
+    {
+     "url": "https://www.fws.gov/media/reelfoot-and-lake-isom-2026-2027-public-use-brochure",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('')",
+     "posted": "2026",
+     "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+     "names_park": true,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 3
   },
   "US-0537": {
    "n": "Lower Hatchie National Wildlife Refuge",
@@ -237,7 +221,7 @@
     "how": "a link on the park's page ('Map')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -250,22 +234,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://www.fws.gov/library",
-     "status": "ok",
-     "kind": "page",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Maps, Guides and Resources')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": null,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-0538": {
    "n": "Reelfoot National Wildlife Refuge",
@@ -281,7 +250,7 @@
     "how": "a link on the park's page ('Map')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -294,22 +263,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://www.fws.gov/library",
-     "status": "ok",
-     "kind": "page",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Maps, Guides and Resources')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": null,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-0539": {
    "n": "Tennessee National Wildlife Refuge",
@@ -325,7 +279,7 @@
     "how": "a link on the park's page ('Map')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -336,26 +290,11 @@
    },
    "agency": "U.S. Fish and Wildlife Service",
    "runs": [
-    "is managed by the U.S. Fish"
+    "is managed by the U.S. Fish and Wildlife Service"
    ],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://www.fws.gov/library",
-     "status": "ok",
-     "kind": "page",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Maps, Guides and Resources')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": null,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-0642": {
    "n": "Natchez Trace Parkway National Parkway",
@@ -370,8 +309,8 @@
     "date_how": "date unknown, checked 2026-10-28",
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "July 3, 2025",
-    "posted_how": "the page's 'last updated' line",
-    "names_park": null,
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -384,7 +323,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-0685": {
    "n": "Obed National Wild and Scenic River",
@@ -392,17 +331,16 @@
    "page": "https://www.nps.gov/obed/index.htm",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.nps.gov/obed/planyourvisit/upload/Obed-Trails-Final-508-2.pdf",
+    "url": "https://www.nps.gov/obed/planyourvisit/maps.htm",
     "status": "ok",
-    "kind": "pdf",
+    "kind": "page",
     "date": null,
     "date_how": "date unknown, checked 2026-10-28",
-    "how": "on file (parkinfo-web / Kentucky answer key) -> the page's 'download the park map' file",
-    "posted": "May 05, 2020",
-    "posted_how": "posted: the server's file date",
-    "names_park": false,
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "June 9, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
     "checked": "2026-10-28",
-    "page": "https://www.nps.gov/obed/planyourvisit/maps.htm",
     "via": "the agency site"
    },
    "rules": {
@@ -414,7 +352,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-0686": {
    "n": "Big South Fork National Recreation Area",
@@ -429,8 +367,8 @@
     "date_how": "date unknown, checked 2026-10-28",
     "how": "a link on the park's page ('Maps')",
     "posted": "August 2, 2021",
-    "posted_how": "the page's 'last updated' line",
-    "names_park": null,
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -443,7 +381,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-0703": {
    "n": "Fort Donelson National Battlefield",
@@ -458,8 +396,8 @@
     "date_how": "date unknown, checked 2026-10-28",
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "April 9, 2021",
-    "posted_how": "the page's 'last updated' line",
-    "names_park": null,
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -472,7 +410,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-0708": {
    "n": "Stones River National Battlefield",
@@ -487,8 +425,8 @@
     "date_how": "date unknown, checked 2026-10-28",
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "July 1, 2019",
-    "posted_how": "the page's 'last updated' line",
-    "names_park": null,
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -501,7 +439,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-0716": {
    "n": "Chickamauga and Chattanooga National Military Park",
@@ -516,8 +454,8 @@
     "date_how": "date unknown, checked 2026-10-28",
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "November 23, 2022",
-    "posted_how": "the page's 'last updated' line",
-    "names_park": null,
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -530,7 +468,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-0722": {
    "n": "Shiloh National Battlefield",
@@ -539,14 +477,14 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://www.nps.gov/shil/planyourvisit/maps.htm",
-    "status": "ok",
+    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "February 4, 2025",
-    "posted_how": "the page's 'last updated' line",
-    "names_park": null,
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -559,7 +497,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-0800": {
    "n": "Andrew Johnson National Historic Site",
@@ -574,8 +512,8 @@
     "date_how": "date unknown, checked 2026-10-28",
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "November 8, 2018",
-    "posted_how": "the page's 'last updated' line",
-    "names_park": null,
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -588,7 +526,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-10621": {
    "n": "McGlothlin-Largen Wildlife Management Area",
@@ -596,30 +534,21 @@
    "page": "https://www.tn.gov/twra/wildlife-management-areas/cumberland-plateau-r3/mcglothin-largen-wma.html",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://experience.arcgis.com/experience/f736acdf47ea44028420c5611291db5f",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
-    "how": "the page in a browser ('Map Help')",
-    "page": "https://experience.arcgis.com/experience/f736acdf47ea44028420c5611291db5f",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-28",
-    "via": "the agency site"
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
-    "url": "https://www.tn.gov/twra/boating/regulations-and-safety-concerns.html",
-    "how": "a link on the park's page ('Regulations Safety')",
-    "status": "ok"
+    "url": "https://www.tn.gov/twra/hunting/wma-hunting.html",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "rest"
    },
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the map link refused a plain reader (ok)",
-   "ver": 2,
-   "browser_checked": "2026-10-28"
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-11181": {
    "n": "Sheltowee Trace National Recreation Trail",
@@ -640,16 +569,16 @@
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://www.fs.usda.gov/about-agency/regulations-policies",
-    "how": "a link on the page in a browser ('Regulations & Policies')",
-    "status": "ok"
+    "url": "https://www.fs.usda.gov/wildflowers/alerts-notices",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "did not open"
    },
    "agency": "U.S. Forest Service",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2,
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-11241": {
@@ -658,30 +587,21 @@
    "page": "https://www.tn.gov/twra/wildlife-management-areas/cumberland-plateau-r3/oak-ridge-wma.html",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://experience.arcgis.com/experience/f736acdf47ea44028420c5611291db5f",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
-    "how": "the page in a browser ('Map Help')",
-    "page": "https://experience.arcgis.com/experience/f736acdf47ea44028420c5611291db5f",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-28",
-    "via": "the agency site"
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
-    "url": "https://www.tn.gov/twra/boating/regulations-and-safety-concerns.html",
-    "how": "a link on the park's page ('Regulations Safety')",
+    "url": "https://www.tn.gov/twra/hunting/wma-hunting.html",
+    "how": "the agency-wide rules page (chat 8 survey)",
     "status": "rest"
    },
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the map link refused a plain reader (ok)",
-   "ver": 2,
-   "browser_checked": "2026-10-28"
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-11357": {
    "n": "Sellars Farm State Archeological Reserve",
@@ -701,10 +621,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-11858": {
    "n": "Middle Fork Bottoms State Park",
@@ -725,8 +644,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-11869": {
@@ -743,7 +662,7 @@
     "how": "a link on the park's page ('Touch for a list and map')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -756,7 +675,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-11879": {
    "n": "North Chickamauga Creek Gorge State Park",
@@ -777,8 +696,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-11918": {
@@ -799,10 +718,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-12064": {
    "n": "Henderson Swamp State Wilderness Area",
@@ -822,10 +740,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-12070": {
    "n": "Garrett Lake State Fishing Lake",
@@ -845,10 +762,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-12071": {
    "n": "Whiteville Lake State Fishing Lake",
@@ -868,10 +784,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-12072": {
    "n": "Bedford Lake State Fishing Lake",
@@ -891,10 +806,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-12360": {
    "n": "Wolf River State Forest",
@@ -914,10 +828,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-12361": {
    "n": "Scott's Gulf Wilderness State Park",
@@ -938,8 +851,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-12369": {
@@ -960,10 +873,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-12663": {
    "n": "Ocoee River State Park",
@@ -984,8 +896,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-12713": {
@@ -1007,8 +919,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-12714": {
@@ -1030,8 +942,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-12715": {
@@ -1052,10 +964,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-12774": {
    "n": "Erwin National Fish Hatchery",
@@ -1071,7 +982,7 @@
     "how": "a link on the park's page ('Interactive Map')",
     "posted": "",
     "posted_how": "",
-    "names_park": null,
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -1084,7 +995,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-12775": {
    "n": "Davy Crockett State Fishing Lake",
@@ -1104,10 +1015,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-13092": {
    "n": "Jarrell Switch Wildlife Management Area",
@@ -1127,10 +1037,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-13362": {
    "n": "Chickamauga WMA Wildlife Management Area",
@@ -1150,10 +1059,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-13364": {
    "n": "Cherokee Trail of Tears State Park",
@@ -1174,8 +1082,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-13501": {
@@ -1197,8 +1105,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-13514": {
@@ -1219,10 +1127,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-13563": {
    "n": "Bear Hollow Mountain Wildlife Management Area",
@@ -1242,10 +1149,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-13567": {
    "n": "Clinch River Valley State Park",
@@ -1266,8 +1172,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2928": {
@@ -1289,8 +1195,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2929": {
@@ -1312,8 +1218,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2930": {
@@ -1335,8 +1241,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2931": {
@@ -1358,8 +1264,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2932": {
@@ -1381,8 +1287,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2933": {
@@ -1404,8 +1310,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2934": {
@@ -1427,8 +1333,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2935": {
@@ -1450,8 +1356,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2936": {
@@ -1473,8 +1379,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2937": {
@@ -1496,8 +1402,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2938": {
@@ -1519,8 +1425,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2939": {
@@ -1542,8 +1448,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2940": {
@@ -1565,8 +1471,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2941": {
@@ -1588,8 +1494,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2942": {
@@ -1611,8 +1517,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2943": {
@@ -1634,8 +1540,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2944": {
@@ -1657,8 +1563,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2945": {
@@ -1680,8 +1586,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2946": {
@@ -1703,8 +1609,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2947": {
@@ -1726,8 +1632,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2948": {
@@ -1749,8 +1655,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2949": {
@@ -1772,8 +1678,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2950": {
@@ -1795,8 +1701,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2951": {
@@ -1818,8 +1724,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2952": {
@@ -1841,8 +1747,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2953": {
@@ -1864,8 +1770,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2954": {
@@ -1887,8 +1793,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2955": {
@@ -1910,8 +1816,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2956": {
@@ -1933,8 +1839,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2957": {
@@ -1956,8 +1862,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2958": {
@@ -1979,8 +1885,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2959": {
@@ -2002,8 +1908,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2960": {
@@ -2025,8 +1931,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2961": {
@@ -2048,8 +1954,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2962": {
@@ -2071,8 +1977,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2963": {
@@ -2094,8 +2000,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2964": {
@@ -2117,8 +2023,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2965": {
@@ -2140,8 +2046,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2966": {
@@ -2163,8 +2069,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2967": {
@@ -2186,8 +2092,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2968": {
@@ -2209,8 +2115,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2969": {
@@ -2232,8 +2138,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2970": {
@@ -2255,8 +2161,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2971": {
@@ -2278,8 +2184,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2972": {
@@ -2301,8 +2207,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2973": {
@@ -2324,8 +2230,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2974": {
@@ -2347,8 +2253,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2975": {
@@ -2370,8 +2276,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2976": {
@@ -2393,8 +2299,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2978": {
@@ -2416,8 +2322,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2979": {
@@ -2439,8 +2345,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2980": {
@@ -2462,8 +2368,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2981": {
@@ -2485,8 +2391,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-2982": {
@@ -2517,7 +2423,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the map link refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-3791": {
@@ -2533,8 +2439,8 @@
     "date_how": "date unknown, checked 2026-10-28",
     "how": "a link on the park's page ('Maps')",
     "posted": "August 24, 2026",
-    "posted_how": "the page's 'last updated' line",
-    "names_park": null,
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -2547,22 +2453,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://www.nps.gov/trte/planyourvisit/upload/National-Park-Service-Trail-of-Tears-Map-508.pdf",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "on file (parkinfo-web / Kentucky answer key)",
-     "posted": "Mar 22, 2018",
-     "posted_how": "posted: the server's file date",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-3792": {
    "n": "Land Between the Lakes National Recreation Area",
@@ -2570,17 +2461,16 @@
    "page": "https://landbetweenthelakes.us/",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.landbetweenthelakes.us/wp-content/uploads/2025/03/GeneralBrochure23CLUpdated_2023.pdf",
+    "url": "https://www.landbetweenthelakes.us/help-center/lbl-maps/",
     "status": "ok",
-    "kind": "pdf",
+    "kind": "page",
     "date": null,
     "date_how": "date unknown, checked 2026-10-28",
-    "how": "on file (parkinfo-web / Kentucky answer key) -> the page's 'Visitor Information Map' file",
-    "posted": "2025-03",
-    "posted_how": "posted: the upload folder in the address",
-    "names_park": false,
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
     "checked": "2026-10-28",
-    "page": "https://www.landbetweenthelakes.us/help-center/lbl-maps/",
     "via": "the agency site"
    },
    "rules": {
@@ -2592,7 +2482,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-3922": {
    "n": "Radnor Lake State Park",
@@ -2613,8 +2503,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-3923": {
@@ -2635,10 +2525,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3924": {
    "n": "Cedars of Lebanon State Forest",
@@ -2658,10 +2547,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3925": {
    "n": "Vesta Cedar Glade State Natural Area",
@@ -2681,10 +2569,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3926": {
    "n": "Bean Switch Refuge Wildlife Management Area",
@@ -2704,10 +2591,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3927": {
    "n": "Bogota Wildlife Management Area",
@@ -2727,10 +2613,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3928": {
    "n": "Bridgestone/firestone Centennial Wilderness Wildlife Management Area",
@@ -2750,10 +2635,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3929": {
    "n": "Buffalo Springs Wildlife Management Area",
@@ -2773,10 +2657,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3930": {
    "n": "Camden Wildlife Management Area",
@@ -2796,10 +2679,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3931": {
    "n": "Catoosa Wildlife Management Area",
@@ -2819,10 +2701,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3932": {
    "n": "Cedar Hill Swamp Wildlife Management Area",
@@ -2842,10 +2723,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3933": {
    "n": "Cheatham Wildlife Management Area",
@@ -2865,10 +2745,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3934": {
    "n": "Chickasaw State Wildlife Area",
@@ -2889,7 +2768,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-3935": {
    "n": "Chuck Swan Wildlife Management Area",
@@ -2909,10 +2788,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3936": {
    "n": "Cowan Marsh State Wildlife Area",
@@ -2932,10 +2810,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3937": {
    "n": "Eagle Lake Refuge Wildlife Management Area",
@@ -2955,10 +2832,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3938": {
    "n": "Ernest Rice Wildlife Management Area",
@@ -2978,10 +2854,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3939": {
    "n": "Forks Of The River Wildlife Management Area",
@@ -3001,10 +2876,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3940": {
    "n": "Gooch Wildlife Management Area",
@@ -3024,10 +2898,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3941": {
    "n": "Grundy Forest State Natural Area",
@@ -3047,10 +2920,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3942": {
    "n": "Haley-jaqueth Wildlife Management Area",
@@ -3070,10 +2942,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3943": {
    "n": "Haynes Bottom Wildlife Management Area",
@@ -3093,10 +2964,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3944": {
    "n": "Hickory Flats Wildlife Management Area",
@@ -3116,10 +2986,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3945": {
    "n": "Hop-in Wildlife Refuge",
@@ -3139,10 +3008,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3946": {
    "n": "Horns Bluff Refuge Wildlife Management Area",
@@ -3162,10 +3030,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3947": {
    "n": "Jackson Swamp Wildlife Management Area",
@@ -3185,10 +3052,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3948": {
    "n": "John Tully Wildlife Management Area",
@@ -3208,10 +3074,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3949": {
    "n": "Kyker Bottoms Wildlife Refuge",
@@ -3231,10 +3096,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3950": {
    "n": "Lauderdale Waterfowl Wildlife Management Area",
@@ -3254,10 +3118,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3951": {
    "n": "Laurel Hill Wildlife Management Area",
@@ -3277,10 +3140,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3952": {
    "n": "M.T.S.U. Wildlife Management Area",
@@ -3300,10 +3162,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3953": {
    "n": "Maness Swamp State Wildlife Area",
@@ -3323,10 +3184,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3954": {
    "n": "Mingo Swamp Wildlife Management Area",
@@ -3346,10 +3206,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3955": {
    "n": "Moss Island Wildlife Management Area",
@@ -3369,10 +3228,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3956": {
    "n": "Murfree Springs State Wildlife Area",
@@ -3402,7 +3260,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-3957": {
@@ -3423,10 +3281,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3958": {
    "n": "North Chickamauga Creek Wildlife Management Area",
@@ -3446,10 +3303,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3959": {
    "n": "Obion River Wildlife Management Area",
@@ -3469,10 +3325,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3960": {
    "n": "Reelfoot State Wildlife Area",
@@ -3494,7 +3349,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 2,
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-3961": {
@@ -3515,10 +3370,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3962": {
    "n": "The Boils State Wildlife Area",
@@ -3538,10 +3392,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3963": {
    "n": "Three Rivers Wildlife Management Area",
@@ -3561,10 +3414,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3964": {
    "n": "Tumbleweed Wildlife Management Area",
@@ -3584,10 +3436,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3965": {
    "n": "White Lake Wildlife Refuge",
@@ -3607,10 +3458,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3966": {
    "n": "White Oak Wildlife Management Area",
@@ -3630,10 +3480,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3967": {
    "n": "Whites Mill Wildlife Refuge",
@@ -3653,10 +3502,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3968": {
    "n": "Williamsport Wildlife Management Area",
@@ -3676,10 +3524,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3969": {
    "n": "Wolf River Wildlife Management Area",
@@ -3699,10 +3546,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3970": {
    "n": "Yanahli Wildlife Management Area",
@@ -3722,10 +3568,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-3971": {
    "n": "Prentice Cooper Wildlife Management Area",
@@ -3745,10 +3590,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-4376": {
    "n": "Manhattan Project National Historical Park",
@@ -3763,8 +3607,8 @@
     "date_how": "date unknown, checked 2026-10-28",
     "how": "a link on the park's page ('Maps')",
     "posted": "April 17, 2025",
-    "posted_how": "the page's 'last updated' line",
-    "names_park": null,
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -3777,7 +3621,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-4525": {
    "n": "Cherokee National Forest",
@@ -3793,7 +3637,7 @@
     "how": "the page in a browser ('Visitor Maps and Guides')",
     "page": "https://www.fs.usda.gov/r08/cherokee",
     "posted": "May 11, 2026",
-    "posted_how": "the page's 'last updated' line",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -3807,7 +3651,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "map page on the browser list (a download button may hide the file)",
-   "ver": 2,
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-4556": {
@@ -3816,15 +3660,15 @@
    "page": "https://www.nps.gov/appa/index.htm",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.nps.gov/appa/planyourvisit/upload/APPA_Map.pdf",
+    "url": "https://www.nps.gov/appa/planyourvisit/maps.htm",
     "status": "ok",
-    "kind": "pdf",
+    "kind": "page",
     "date": null,
     "date_how": "date unknown, checked 2026-10-28",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "Dec 06, 2022",
-    "posted_how": "posted: the server's file date",
-    "names_park": false,
+    "how": "a link on the park's page ('Maps')",
+    "posted": "December 21, 2022",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -3839,7 +3683,7 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-4560": {
    "n": "Natchez Trace Trail National Scenic Trail",
@@ -3854,8 +3698,8 @@
     "date_how": "date unknown, checked 2026-10-28",
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "September 10, 2020",
-    "posted_how": "the page's 'last updated' line",
-    "names_park": null,
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -3868,7 +3712,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-4577": {
    "n": "Overmountain Victory National Historic Trail",
@@ -3883,8 +3727,8 @@
     "date_how": "date unknown, checked 2026-10-28",
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "November 4, 2024",
-    "posted_how": "the page's 'last updated' line",
-    "names_park": null,
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -3897,7 +3741,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-5490": {
    "n": "Bledsoe State Forest",
@@ -3917,10 +3761,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-5491": {
    "n": "Chickasaw State Forest",
@@ -3940,10 +3783,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-5492": {
    "n": "Chuck Swan State Forest",
@@ -3963,10 +3805,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-5493": {
    "n": "Franklin-Marion State Forest",
@@ -3986,10 +3827,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-5494": {
    "n": "John Tully State Forest",
@@ -4009,10 +3849,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-5495": {
    "n": "Lewis State Forest",
@@ -4032,10 +3871,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-5496": {
    "n": "Lone Mountain State Forest",
@@ -4055,10 +3893,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-5497": {
    "n": "Martha Sundquist State Forest",
@@ -4078,10 +3915,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-5498": {
    "n": "Pickett State Forest",
@@ -4101,10 +3937,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-5499": {
    "n": "Prentice Cooper State Forest",
@@ -4124,10 +3959,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-5500": {
    "n": "Scott State Forest",
@@ -4147,10 +3981,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-5501": {
    "n": "Standing Stone State Forest",
@@ -4170,10 +4003,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-5502": {
    "n": "Stewart State Forest",
@@ -4193,10 +4025,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6234": {
    "n": "Bays Mountain State Natural Area",
@@ -4204,17 +4035,16 @@
    "page": "https://www.baysmountain.com/",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.baysmountain.com/wp-content/uploads/2026/08/BMP-Map.pdf",
+    "url": "https://www.baysmountain.com/park/maps-resources/",
     "status": "ok",
-    "kind": "pdf",
+    "kind": "page",
     "date": null,
     "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Park Maps') -> the page's 'Full Park Map' file",
-    "posted": "2026-08",
-    "posted_how": "posted: the upload folder in the address",
-    "names_park": false,
+    "how": "a link on the park's page ('Park Maps')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
     "checked": "2026-10-28",
-    "page": "https://www.baysmountain.com/park/maps-resources/",
     "via": "the agency site"
    },
    "rules": {
@@ -4226,7 +4056,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-6235": {
    "n": "Beaman Park State Natural Area",
@@ -4241,8 +4071,8 @@
     "date_how": "date unknown, checked 2026-10-28",
     "how": "a link on the park's page ('Maps and Trails')",
     "posted": "March 18, 2025",
-    "posted_how": "the page's 'last updated' line",
-    "names_park": null,
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -4255,22 +4085,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://www.nashville.gov/sites/default/files/2022-04/4FoldBeamanBrochureNewMapLegalSize-compressed.pdf?ct=1651245433",
-     "status": "ok",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Hike primitive trails')",
-     "posted": "2022-04",
-     "posted_how": "posted: the upload folder in the address",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 2
+   "ver": 3
   },
   "US-6236": {
    "n": "Carroll Cabin Barrens State Natural Area",
@@ -4290,10 +4105,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6237": {
    "n": "Mr. and Mrs. Harry Lee Carter State Natural Area",
@@ -4313,10 +4127,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6238": {
    "n": "Chimneys State Natural Area",
@@ -4336,10 +4149,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6239": {
    "n": "Colditz Cove State Natural Area",
@@ -4359,10 +4171,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6240": {
    "n": "Couchville Cedar Glade State Natural Area",
@@ -4382,10 +4193,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6241": {
    "n": "Devil's Backbone State Park",
@@ -4406,8 +4216,8 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 2,
+   "needs_browser": "host on the browser list",
+   "ver": 3,
    "browser_checked": "2026-10-28"
   },
   "US-6242": {
@@ -4428,10 +4238,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6243": {
    "n": "Falling Water Falls State Natural Area",
@@ -4451,10 +4260,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6244": {
    "n": "Flat Rock Cedar Glade State Natural Area",
@@ -4474,10 +4282,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6245": {
    "n": "Ghost River State Natural Area",
@@ -4497,10 +4304,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6246": {
    "n": "Hampton Creek Cove State Natural Area",
@@ -4520,10 +4326,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6247": {
    "n": "Hawkins Cove State Natural Area",
@@ -4543,10 +4348,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6248": {
    "n": "Honey Creek State Natural Area",
@@ -4566,10 +4370,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6249": {
    "n": "House Mountain State Natural Area",
@@ -4589,10 +4392,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6250": {
    "n": "John and Hester Lane Cedar Glade State Natural Area",
@@ -4612,10 +4414,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6251": {
    "n": "John Noel at Bon Aqua State Natural Area",
@@ -4635,10 +4436,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6252": {
    "n": "Laurel Snow State Natural Area",
@@ -4658,10 +4458,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6254": {
    "n": "Lucius E. Burch, Jr. State Natural Area",
@@ -4681,10 +4480,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6255": {
    "n": "May Prairie State Natural Area",
@@ -4704,10 +4502,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6256": {
    "n": "Mount View Glade State Natural Area",
@@ -4727,10 +4524,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6258": {
    "n": "Old Forest State Natural Area",
@@ -4750,10 +4546,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6259": {
    "n": "Ozone Falls State Natural Area",
@@ -4773,10 +4568,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6260": {
    "n": "Piney Falls State Natural Area",
@@ -4796,10 +4590,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6261": {
    "n": "Pogue Creek Canyon State Natural Area",
@@ -4819,10 +4612,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6262": {
    "n": "Powell River State Natural Area",
@@ -4842,10 +4634,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6263": {
    "n": "Riverwoods State Natural Area",
@@ -4865,10 +4656,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6264": {
    "n": "Roundtop Mountain State Natural Area",
@@ -4888,10 +4678,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6265": {
    "n": "Rugby State Natural Area",
@@ -4911,10 +4700,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6266": {
    "n": "Savage Gulf State Natural Area",
@@ -4934,10 +4722,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6267": {
    "n": "Sequatchie Cave State Natural Area",
@@ -4957,10 +4744,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6268": {
    "n": "Short Springs State Natural Area",
@@ -4980,10 +4766,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6269": {
    "n": "Stillhouse Hollow Falls State Natural Area",
@@ -5003,10 +4788,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6270": {
    "n": "Stinging Fork Falls State Natural Area",
@@ -5026,10 +4810,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6271": {
    "n": "Sunk Lake State Natural Area",
@@ -5049,10 +4832,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6272": {
    "n": "Twin Arches State Natural Area",
@@ -5072,10 +4854,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6273": {
    "n": "Vine Cedar Glade State Natural Area",
@@ -5095,10 +4876,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6275": {
    "n": "Walls of Jericho State Natural Area",
@@ -5118,10 +4898,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6276": {
    "n": "Walterhill Floodplain State Natural Area",
@@ -5141,10 +4920,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6277": {
    "n": "Washmorgan Hollow State Natural Area",
@@ -5164,10 +4942,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6278": {
    "n": "Watauga River Bluffs State Natural Area",
@@ -5187,10 +4964,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6279": {
    "n": "William B. Clark State Natural Area",
@@ -5210,10 +4986,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-6280": {
    "n": "Windows Cliffs State Natural Area",
@@ -5233,10 +5008,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7565": {
    "n": "AEDC and Woods Reservoir Wildlife Management Area",
@@ -5256,10 +5030,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7566": {
    "n": "Arnold Hollow Wildlife Management Area",
@@ -5279,10 +5052,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7567": {
    "n": "Bark Camp Barrens Wildlife Management Area",
@@ -5302,10 +5074,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7568": {
    "n": "Barkley Wildlife Management Area",
@@ -5325,10 +5096,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7569": {
    "n": "Beason Creek Wildlife Management Area",
@@ -5348,10 +5118,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7570": {
    "n": "Beaverdam Creek Wildlife Management Area",
@@ -5371,10 +5140,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7571": {
    "n": "Beech River Wildlife Management Area",
@@ -5394,10 +5162,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7572": {
    "n": "Big Sandy Wildlife Management Area",
@@ -5417,10 +5184,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7573": {
    "n": "Black Bayou Refuge Wildlife Management Area",
@@ -5440,10 +5206,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7574": {
    "n": "Blackburn Fork Wildlife Management Area",
@@ -5463,10 +5228,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7575": {
    "n": "Browntown Wildlife Management Area",
@@ -5486,10 +5250,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7576": {
    "n": "Chambers Creek Wildlife Management Area",
@@ -5509,10 +5272,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7577": {
    "n": "Charlotte Ann Finnel Neal Wildlife Management Area",
@@ -5532,10 +5294,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7578": {
    "n": "Cheatham Lake Wildlife Management Area",
@@ -5555,10 +5316,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7579": {
    "n": "Colonel Forrest V Durand Wildlife Management Area",
@@ -5578,10 +5338,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7580": {
    "n": "Cordell Hull Wildlife Management Area",
@@ -5609,10 +5368,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7581": {
    "n": "Cordell Hull Waterfowl Refuge Wildlife Management Area",
@@ -5633,7 +5391,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-7582": {
    "n": "Cove Creek Wildlife Management Area",
@@ -5653,10 +5411,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7583": {
    "n": "Cypress Pond Wildlife Management Area",
@@ -5676,10 +5433,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7585": {
    "n": "Eagle Creek Wildlife Management Area",
@@ -5699,10 +5455,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7587": {
    "n": "Flintville Wildlife Management Area",
@@ -5722,10 +5477,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7588": {
    "n": "Foothills Wildlife Management Area",
@@ -5745,10 +5499,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7589": {
    "n": "Fort Ridge Wildlife Management Area",
@@ -5768,10 +5521,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7590": {
    "n": "Fourth Fractional Township Wildlife Management Area",
@@ -5791,10 +5543,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7591": {
    "n": "Grays Creek Wildlife Management Area",
@@ -5814,10 +5565,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7592": {
    "n": "Happy Hollow Wildlife Management Area",
@@ -5837,10 +5587,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7593": {
    "n": "Harmon Creek Wildlife Management Area",
@@ -5860,10 +5609,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7594": {
    "n": "Harp Wildlife Management Area",
@@ -5883,10 +5631,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7595": {
    "n": "Harts Mill Wildlife Management Area",
@@ -5906,10 +5653,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7596": {
    "n": "Headwaters Wildlife Management Area",
@@ -5929,10 +5675,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7597": {
    "n": "Hick Hill Wildlife Management Area",
@@ -5952,10 +5697,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7598": {
    "n": "Hiwassee Refuge Wildlife Management Area",
@@ -5975,10 +5719,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7599": {
    "n": "Keyes-Harrison Wildlife Management Area",
@@ -5998,10 +5741,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7600": {
    "n": "Kyles Ford Wildlife Management Area",
@@ -6021,10 +5763,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7601": {
    "n": "Lick Creek Wildlife Management Area",
@@ -6044,10 +5785,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7602": {
    "n": "Lick Creek Bottoms Wildlife Management Area",
@@ -6067,10 +5807,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7603": {
    "n": "Maple Springs Wildlife Management Area",
@@ -6091,7 +5830,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-7605": {
    "n": "Mt. Roosevelt Wildlife Management Area",
@@ -6111,10 +5850,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7606": {
    "n": "New Hope Wildlife Management Area",
@@ -6134,10 +5872,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7607": {
    "n": "Nolichucky Wildlife Management Area",
@@ -6157,10 +5894,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7608": {
    "n": "Normandy Wildlife Management Area",
@@ -6181,7 +5917,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-7609": {
    "n": "North Cumberland Wildlife Management Area",
@@ -6201,10 +5937,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7610": {
    "n": "Old Hickory Wildlife Management Area",
@@ -6232,10 +5967,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7611": {
    "n": "Owl Hollow Mill Wildlife Management Area",
@@ -6255,10 +5989,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7612": {
    "n": "Paint Rock Refuge Wildlife Management Area",
@@ -6279,7 +6012,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-7613": {
    "n": "Parker Branch Wildlife Management Area",
@@ -6299,10 +6032,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7614": {
    "n": "Pea Ridge Wildlife Management Area",
@@ -6322,10 +6054,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7615": {
    "n": "Percy Priest Wildlife Management Area",
@@ -6345,10 +6076,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7616": {
    "n": "Perry Switch Wildlife Management Area",
@@ -6368,10 +6098,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7617": {
    "n": "Presidents Island Wildlife Management Area",
@@ -6391,10 +6120,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7618": {
    "n": "Rankin Wildlife Management Area",
@@ -6414,10 +6142,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7619": {
    "n": "Shelton Ferry Wildlife Management Area",
@@ -6437,10 +6164,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7620": {
    "n": "Skinner Mountain Wildlife Management Area",
@@ -6460,10 +6186,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7621": {
    "n": "Spring Creek Wildlife Management Area",
@@ -6483,10 +6208,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7622": {
    "n": "Tellico Lake Wildlife Management Area",
@@ -6506,10 +6230,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7623": {
    "n": "Thorny Cypress Wildlife Management Area",
@@ -6529,10 +6252,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7624": {
    "n": "Tie Camp Wildlife Management Area",
@@ -6552,10 +6274,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7625": {
    "n": "Tigrett Wildlife Management Area",
@@ -6575,10 +6296,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7626": {
    "n": "Tull Bottom Wildlife Management Area",
@@ -6598,10 +6318,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7627": {
    "n": "West Sandy Wildlife Management Area",
@@ -6621,10 +6340,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7628": {
    "n": "Yuchi Refuge Wildlife Management Area",
@@ -6644,10 +6362,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-7880": {
    "n": "Luper Mountain Wildlife Management Area",
@@ -6667,10 +6384,9 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   },
   "US-8313": {
    "n": "Mountains to Sea State Trail",
@@ -6699,7 +6415,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 2
+   "ver": 3
   },
   "US-9718": {
    "n": "Savage Gulf State Park",
@@ -6719,27 +6435,26 @@
    "agency": "Tennessee state agency",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: rest"
-   ],
-   "ver": 2
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 3
   }
  },
  "read": "2026-10-28",
  "counts": {
   "parks": 277,
-  "map ok": 32,
-  "map found by the bot": 18,
-  "date on the map": 2,
-  "posted date only": 19,
-  "date unknown": 11,
-  "no map": 245,
-  "rules ok": 28,
-  "needs browser": 0,
+  "map ok": 29,
+  "map found by the bot": 17,
+  "date on the map": 1,
+  "posted date only": 16,
+  "date unknown": 12,
+  "no map": 248,
+  "rules ok": 26,
+  "needs browser": 175,
   "handover hints": 0,
   "runs hints": 2,
   "host resting / robots": 0,
-  "map names the park": 3,
+  "map names the park": 27,
   "region overview only": 0
  }
 }
