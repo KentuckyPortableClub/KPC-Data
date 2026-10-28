@@ -68,7 +68,7 @@
  },
  "pass5": {
   "cell_m": 5.0,
-  "checked": 224,
+  "checked": 219,
   "date": "2026-10-28",
   "left out": {
    "Kentucky (own list)": "all (ky-overlaps.geojson)",
@@ -81,20 +81,13 @@
   "pairs tested": 0,
   "pass": 5,
   "problems": [
-   "W&S river corridors joined as area parks: 15",
-   "NHD water: The read operation timed out",
-   "NHD water retry: HTTP Error 504: Gateway Time-out",
-   "NHD water retry: The read operation timed out",
-   "NHD water retry: The read operation timed out",
-   "NHD second door: HTTP Error 504: Gateway Time-out",
-   "NHD water: The read operation timed out"
+   "W&S river corridors joined as area parks: 15"
   ],
-  "re-checked at the end": 1,
   "spots given their boundary lines": 723,
   "still not checked": 0,
   "trail stretches given their true zone": 213,
-  "water only": 3,
-  "water retries (won / tries)": "1 / 4",
+  "water only": 0,
+  "water retries (won / tries)": "0 / 0",
   "with official lines": 60
  },
  "per state": {
