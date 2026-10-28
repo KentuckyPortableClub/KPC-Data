@@ -25,8 +25,12 @@ on:
       minutes:
         description: 'Minutes for each of fetcher and worker (default 280)'
         default: '280'
+      next:
+        description: 'Optional: "<states> <tag>" (e.g. "US-OH oh") = start that area by itself once this fetcher''s bundle is safely up (two at once, no more)'
+        default: ''
 permissions:
   contents: write
+  actions: write
 concurrency:
   group: kpc-fers-line-${{ inputs.tag }}
   cancel-in-progress: false
@@ -93,6 +97,12 @@ jobs:
           gh release upload fers-bundles "$BUNDLE" --clobber -R "$REPO" || { echo "::error title=2-fer line::bundle upload failed"; exit 1; }
           gh release view fers-bundles -R "$REPO" --json assets --jq '.assets[].name' | grep -qx "$BUNDLE" || { echo "::error title=2-fer line::bundle not on the release after upload"; exit 1; }
           echo "::notice title=2-fer line::fetcher bundle $(du -h "$BUNDLE" | cut -f1) uploaded to $REPO release fers-bundles"
+      - name: Start the next area (chained)
+        if: ${{ inputs.next != '' }}
+        continue-on-error: true
+        run: |
+          set -- ${{ inputs.next }}
+          [ -n "$2" ] && gh workflow run kpc-fers-line.yml -R "$REPO" -f "states=$1" -f "tag=$2" -f stage=all -f minutes=${{ inputs.minutes }} && echo "::notice title=2-fer line::next area started: $1 ($2)"
   worker:
     needs: fetcher
     if: ${{ always() && inputs.stage != 'checker' && (inputs.stage == 'worker' || needs.fetcher.result == 'success') }}
