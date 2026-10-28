@@ -120,10 +120,10 @@ jobs:
           M=${MINUTES:-280}; [ $M -gt 225 ] && M=225
           PASS=1 MINUTES=$(( M / 3 )) python3 .github/scripts/kpc_fers.py || true
           PASS=2 MINUTES=$(( M * 2 / 3 )) python3 .github/scripts/kpc_fers.py || true
-      - name: Save the USGS water near every spot (so the worker does not need USGS up later)
+      - name: USGS water from the BULK FILES up front (HU4 files on USGS's Amazon storage, never the live map; HQ Oct 28 6:57 PM)
         continue-on-error: true
-        timeout-minutes: 45
-        run: WATER_PREFETCH=1 MINUTES=40 python3 .github/scripts/kpc_fers.py || true
+        timeout-minutes: 120
+        run: STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 .github/scripts/kpc_water_bulk.py || true
       - name: Bundle up (a lost bundle = a red run)
         if: always()
         run: |
