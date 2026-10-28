@@ -134,10 +134,16 @@ def browser_text(u, M, timeout_ms=30000):
         M.last[h] = _t.time(); M.stat['requests'] += 1; M.stat['browser'] = M.stat.get('browser', 0) + 1
         pg = _BROWSER['ctx'].new_page()
         try:
-            pg.goto(u, timeout=timeout_ms, wait_until='networkidle')
+            pg.goto(u, timeout=timeout_ms, wait_until='domcontentloaded')
+            try: pg.wait_for_load_state('networkidle', timeout=12000)
+            except Exception: pass  # noqa: BLE001  (busy pages never go idle: read what is there)
+            pg.wait_for_timeout(1500)
             return ' '.join((pg.inner_text('body') or '').split('\n'))[:200000]
         finally: pg.close()
-    except Exception:  # noqa: BLE001  (no Playwright on this runner, or the page failed)
+    except Exception as e:  # noqa: BLE001  (no Playwright on this runner, or the page failed): say so ONCE, never silently
+        if not _BROWSER.get('warned'):
+            _BROWSER['warned'] = True
+            print('::notice title=Browser read::' + f'{type(e).__name__}: {str(e)[:300]}'.replace('\n', ' '), flush=True)
         return ''
 
 
