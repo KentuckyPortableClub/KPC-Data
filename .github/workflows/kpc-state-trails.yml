@@ -8,8 +8,12 @@ on:
   workflow_dispatch:
     inputs:
       states:
-        description: 'States (blank = TN IN OH WV VA MO IL NC GA AL MI PA). Official agency layers come before OpenStreetMap'
+        description: 'States (blank = TN IN OH WV VA MO IL NC GA AL MI PA WI MN AR DE CO ID). Official layers before OpenStreetMap'
         default: ''
+      full:
+        description: 'Search every park again, even ones with an official line read in the last 60 days'
+        type: boolean
+        default: false
 permissions:
   contents: write
 concurrency:
@@ -35,6 +39,7 @@ jobs:
         continue-on-error: true
         env:
           STATES: ${{ inputs.states }}
+          FULL: ${{ inputs.full && '1' || '' }}
           MINUTES: '150'
         run: python3 .github/scripts/kpc_state_trails.py || echo "::notice title=State trails::stopped early (see the log)"
       - name: Save (once)
@@ -43,4 +48,8 @@ jobs:
         run: |
           mkdir -p kpcdata/data/trails/ && rm -rf kpcdata/data/trails/ && cp -a data/trails kpcdata/data/trails 2>/dev/null || true
           for f in data/status/*.json; do [ "$f" -nt /tmp/kpc-start ] && ! cmp -s "$f" "kpcdata/$f" && mkdir -p kpcdata/data/status && cp "$f" "kpcdata/$f"; done; true
+          # Oct 28 self-grade: one 'grade me' (or 'FAILED its gate') line per batch for the checkers (data/status/inbox-checkers.md)
+          if [ -s /tmp/kpc-gate.txt ]; then IFS=$'\t' read -r G A N < /tmp/kpc-gate.txt
+            if [ "$G" = PASS ]; then STATUS_DIR=kpcdata/data/status python3 kpcdata/.github/scripts/kpc_status.py grade-me "kpc_state_trails" "${A:-all}" "data/trails/" "$N"
+            else STATUS_DIR=kpcdata/data/status python3 kpcdata/.github/scripts/kpc_status.py gate "kpc_state_trails" "${A:-all}" FAIL "$N"; fi; fi; true
           bash .github/scripts/kpc_push_data.sh kpcdata "State trails: POTA trail parks" data
