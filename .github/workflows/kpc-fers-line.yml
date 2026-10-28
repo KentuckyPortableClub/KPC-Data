@@ -185,7 +185,10 @@ jobs:
           gh release download fers-bundles -R "$REPO" -p "$BUNDLE" -D . --clobber || { echo "::error title=2-fer line::no bundle $BUNDLE on $REPO"; exit 1; }
           tar xzf "$BUNDLE" bundle/stamp.json data/fers || { echo "::error title=2-fer line::bundle would not unpack"; exit 1; }
           python3 -c "import json,os,sys; s=json.load(open('bundle/stamp.json')); print('bundle stamp:', s); sys.exit(0 if s.get('stage')=='worker' and s.get('tag')==os.environ['RUN_TAG'] else 1)" || { echo "::error title=2-fer line::the bundle is not this tag's worker bundle"; exit 1; }
-          [ -f data/fers/known-answers.json ] || cp kpcdata/data/fers/known-answers.json data/fers/ 2>/dev/null || true
+          # Oct 28: Kentucky's known answers are read FRESH from KPC-Data for every other area (the bundle's copy is as old as its fetcher:
+          # Ohio's checker read last night's 2/18 and then wrote it back over Kentucky's 15/18)
+          if [ "$RUN_TAG" = ky ]; then [ -f data/fers/known-answers.json ] || cp kpcdata/data/fers/known-answers.json data/fers/ 2>/dev/null || true
+          else cp -f kpcdata/data/fers/known-answers.json data/fers/ 2>/dev/null || true; fi
           # the missing check measures outline to outline (HQ Oct 27): the saved outlines of this run's states
           mkdir -p cache/us data/us-key
           for st in $STATES; do
@@ -210,7 +213,9 @@ jobs:
           mkdir -p kpcdata/data/fers
           # A6: only this area's files go back: own states, the tag's files, POTA pairs, known answers (ky)
           for st in $STATES; do for f in data/fers/$st.json data/fers/$st.json.gz data/fers/pota-pairs-$st.json; do [ -f "$f" ] && ! cmp -s "$f" "kpcdata/$f" && cp "$f" kpcdata/data/fers/; done; done
-          for f in data/fers/*-$RUN_TAG.json data/fers/known-answers.json; do [ -f "$f" ] && ! cmp -s "$f" "kpcdata/$f" && cp "$f" kpcdata/data/fers/; done
+          for f in data/fers/*-$RUN_TAG.json; do [ -f "$f" ] && ! cmp -s "$f" "kpcdata/$f" && cp "$f" kpcdata/data/fers/; done
+          # only Kentucky's own run may write the known-answers file (Oct 28)
+          if [ "$RUN_TAG" = ky ] && [ -f data/fers/known-answers.json ] && ! cmp -s data/fers/known-answers.json kpcdata/data/fers/known-answers.json; then cp data/fers/known-answers.json kpcdata/data/fers/; fi
           cd kpcdata
           for f in data/fers/*.json.gz; do [ -f "$f" ] && rm -f "${f%.gz}"; done
           cd ..
