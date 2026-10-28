@@ -20,6 +20,26 @@
    "status": "done",
    "updated": "2026-10-28"
   },
+  "US-NC": {
+   "checked": 253,
+   "counts": {
+    "agree": 3,
+    "handover_hints": 19,
+    "no_page": 1,
+    "no_size": 147,
+    "off": 28,
+    "ours_unknown": 0,
+    "parks": 253,
+    "retired": 0,
+    "unsure": 40,
+    "weak": 9,
+    "with_outline": 219
+   },
+   "left": 0,
+   "parks": 253,
+   "status": "done",
+   "updated": "2026-10-28"
+  },
   "US-TN": {
    "checked": 277,
    "counts": {
@@ -45,33 +65,34 @@
   "explorekyhistory.ky.gov": 1793258165.3648567,
   "legacy.fws.gov": 1793257782.7889593,
   "tnstateparks.com": 1793308390.7882838,
+  "wolfememorial.com": 1793308907.889083,
   "www.tn.gov": 1793308378.4104462
  },
  "last": {
   "areas": [
-   "US-TN"
+   "US-NC"
   ],
   "manners": {
    "arcgis_exempt": 0,
    "errors": 0,
-   "requests": 88,
-   "rested": 387,
+   "requests": 418,
+   "rested": 0,
    "robots": 0,
-   "strikes": 8
+   "strikes": 3
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 3,
-   "no_size": 239,
-   "ours_unknown": 2,
-   "pages_read": 66,
-   "parks": 277,
+   "handover_hints": 19,
+   "no_size": 148,
+   "ours_unknown": 0,
+   "pages_read": 315,
+   "parks": 253,
    "retired": 0,
-   "size_agree": 1,
-   "size_off": 8,
-   "size_unsure": 4,
+   "size_agree": 3,
+   "size_off": 28,
+   "size_unsure": 40,
    "skipped_fresh": 0,
-   "with_outline": 254
+   "with_outline": 219
   },
   "when": "2026-10-28"
  },
@@ -100,6 +121,11 @@
    "links": 0,
    "read": "2026-10-28",
    "status": "rest"
+  },
+  "https://www.ncparks.gov/news": {
+   "links": 138,
+   "read": "2026-10-28",
+   "status": "ok"
   },
   "https://www.tn.gov/twra/news.html": {
    "links": 0,
