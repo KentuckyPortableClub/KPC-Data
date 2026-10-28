@@ -26,8 +26,11 @@ jobs:
           UP=$(gh api repos/${{ github.repository }}/releases --jq '.[]|select(.tag_name=="fers-bundles")|.assets[]|select(.name=="bundle-ky.tar.gz")|.updated_at' 2>/dev/null | head -1)
           echo "bundle-ky updated: ${UP:-none}"
           [ -n "$UP" ] && [ "$UP" \> "2026-10-28T00:28:00Z" ] || { echo "not yet"; exit 0; }
-          if gh run list -R ${{ github.repository }} -w kpc-fers-line.yml -L 10 --json name,status,createdAt --jq '.[]|select(.createdAt > "2026-10-28T00:30:00Z")|.status' | grep -q .; then :; fi
-          gh workflow run kpc-fers-line.yml -R ${{ github.repository }} -f states=US-OH -f tag=oh -f stage=all -f minutes=280 && echo "::notice title=2-fer line::Ohio started on the line (Kentucky's bundle is up)"
+          # already started (a second line run exists besides Kentucky's)? then only remove this watcher
+          N=$(gh run list -R ${{ github.repository }} -w kpc-fers-line.yml -L 10 --json createdAt --jq '[.[]|select(.createdAt > "2026-10-28T00:30:00Z")]|length')
+          if [ "${N:-0}" -lt 2 ]; then
+            gh workflow run kpc-fers-line.yml -R ${{ github.repository }} -f states=US-OH -f tag=oh -f stage=all -f minutes=280 && echo "::notice title=2-fer line::Ohio started on the line (Kentucky's bundle is up)"
+          fi
           git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git rm -q .github/workflows/kpc-fers-chain-oh.yml && git commit -qm "chain: Ohio started, watcher removed" && for i in 1 2 3; do git pull -q --rebase --autostash && git push -q && break; sleep 10; done
           true
