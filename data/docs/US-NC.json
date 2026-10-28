@@ -18,7 +18,9 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.nps.gov/grsm/learn/management/lawsandpolicies.htm",
@@ -29,7 +31,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 3
+   "ver": 4
   },
   "US-0410": {
    "n": "Alligator River National Wildlife Refuge",
@@ -47,8 +49,11 @@
     "posted_how": "posted: the upload folder in the address",
     "names_park": true,
     "checked": "2026-10-28",
+    "covers": 2,
     "page": "https://www.fws.gov/media/tearsheet-map-alligator-river-national-wildlife-refuge",
-    "via": "the agency site"
+    "via": "the agency site",
+    "kind_note": "combined map: covers 2 units",
+    "date_label": "2024"
    },
    "rules": {
     "url": "https://www.fws.gov/refuge/alligator-river/visit-us/rules-policies",
@@ -71,10 +76,11 @@
      "posted_how": "",
      "names_park": true,
      "checked": "2026-10-28",
+     "covers": 0,
      "via": "the agency site"
     }
    ],
-   "ver": 3
+   "ver": 4
   },
   "US-0411": {
    "n": "Cedar Island National Wildlife Refuge",
@@ -82,18 +88,19 @@
    "page": "https://www.fws.gov/refuge/cedar_island/",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.fws.gov/sites/default/files/documents/CedarIslandVirtualHuntBrochure2021-508.pdf",
+    "url": "https://www.fws.gov/refuge/cedar-island/map",
     "status": "ok",
-    "kind": "pdf",
-    "date": "January 2022",
-    "date_how": "a month + year printed on the map",
-    "how": "a link on the park's page ('') -> the page's '' file",
-    "posted": "2021",
-    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
     "names_park": true,
     "checked": "2026-10-28",
-    "page": "https://www.fws.gov/media/cedar-island-nwr-virtual-hunt-brochure",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.fws.gov/refuge/cedar-island/visit-us/rules-policies",
@@ -104,22 +111,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://www.fws.gov/refuge/cedar-island/map",
-     "status": "ok",
-     "kind": "page",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Map')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": true,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 3
+   "ver": 4
   },
   "US-0412": {
    "n": "Currituck National Wildlife Refuge",
@@ -137,7 +129,9 @@
     "posted_how": "",
     "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.fws.gov/refuge/currituck/visit-us/rules-policies",
@@ -148,7 +142,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 3
+   "ver": 4
   },
   "US-0413": {
    "n": "Mackay Island National Wildlife Refuge",
@@ -166,7 +160,9 @@
     "posted_how": "",
     "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.fws.gov/refuge/mackay-island/visit-us/rules-policies",
@@ -189,10 +185,11 @@
      "posted_how": "",
      "names_park": true,
      "checked": "2026-10-28",
+     "covers": 0,
      "via": "the agency site"
     }
    ],
-   "ver": 3
+   "ver": 4
   },
   "US-0414": {
    "n": "Mattamuskeet National Wildlife Refuge",
@@ -210,7 +207,9 @@
     "posted_how": "",
     "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.fws.gov/refuge/mattamuskeet/visit-us/rules-policies",
@@ -233,10 +232,11 @@
      "posted_how": "",
      "names_park": true,
      "checked": "2026-10-28",
+     "covers": 0,
      "via": "the agency site"
     }
    ],
-   "ver": 3
+   "ver": 4
   },
   "US-0415": {
    "n": "Pea Island National Wildlife Refuge",
@@ -254,8 +254,10 @@
     "posted_how": "posted: the server's file date",
     "names_park": true,
     "checked": "2026-10-28",
+    "covers": 1,
     "page": "https://www.fws.gov/media/tearsheet-map-pea-island-national-wildlife-refuge",
-    "via": "the agency site"
+    "via": "the agency site",
+    "date_label": "2015: check it is still current"
    },
    "rules": {
     "url": "https://www.fws.gov/refuge/pea-island/visit-us/rules-policies",
@@ -278,10 +280,11 @@
      "posted_how": "",
      "names_park": true,
      "checked": "2026-10-28",
+     "covers": 0,
      "via": "the agency site"
     }
    ],
-   "ver": 3
+   "ver": 4
   },
   "US-0416": {
    "n": "Pee Dee National Wildlife Refuge",
@@ -299,7 +302,9 @@
     "posted_how": "",
     "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.fws.gov/refuge/pee-dee/visit-us/rules-policies",
@@ -322,10 +327,11 @@
      "posted_how": "",
      "names_park": true,
      "checked": "2026-10-28",
+     "covers": 0,
      "via": "the agency site"
     }
    ],
-   "ver": 3
+   "ver": 4
   },
   "US-0417": {
    "n": "Pocosin Lakes National Wildlife Refuge",
@@ -343,7 +349,9 @@
     "posted_how": "",
     "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.fws.gov/refuge/pocosin-lakes/visit-us/rules-policies",
@@ -366,10 +374,11 @@
      "posted_how": "",
      "names_park": true,
      "checked": "2026-10-28",
+     "covers": 0,
      "via": "the agency site"
     }
    ],
-   "ver": 3
+   "ver": 4
   },
   "US-0418": {
    "n": "Roanoke River National Wildlife Refuge",
@@ -387,7 +396,9 @@
     "posted_how": "",
     "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.fws.gov/refuge/roanoke-river/visit-us/rules-policies",
@@ -410,10 +421,11 @@
      "posted_how": "",
      "names_park": true,
      "checked": "2026-10-28",
+     "covers": 0,
      "via": "the agency site"
     }
    ],
-   "ver": 3
+   "ver": 4
   },
   "US-0419": {
    "n": "Swanquarter National Wildlife Refuge",
@@ -431,7 +443,9 @@
     "posted_how": "",
     "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.fws.gov/refuge/swanquarter/visit-us/rules-policies",
@@ -442,22 +456,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
-    {
-     "url": "https://www.fws.gov/media/swanquarter-nwr-virtual-hunt-brochure",
-     "status": "ok",
-     "kind": "page",
-     "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": true,
-     "checked": "2026-10-28",
-     "via": "the agency site"
-    }
-   ],
-   "ver": 3
+   "ver": 4
   },
   "US-0566": {
    "n": "Great Dismal Swamp National Wildlife Refuge",
@@ -475,7 +474,9 @@
     "posted_how": "",
     "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.fws.gov/refuge/great-dismal-swamp/visit-us/rules-policies",
@@ -486,7 +487,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 3
+   "ver": 4
   },
   "US-0682": {
    "n": "Cape Hatteras National Seashore",
@@ -504,7 +505,9 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.nps.gov/caha/learn/management/lawsandpolicies.htm",
@@ -515,7 +518,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 3
+   "ver": 4
   },
   "US-0683": {
    "n": "Cape Lookout National Seashore",
@@ -533,7 +536,9 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.nps.gov/calo/learn/management/lawsandpolicies.htm",
@@ -544,7 +549,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 3
+   "ver": 4
   },
   "US-0706": {
    "n": "Moores Creek National Battlefield",
@@ -562,7 +567,9 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.nps.gov/mocr/learn/management/lawsandpolicies.htm",
@@ -573,7 +580,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 3
+   "ver": 4
   },
   "US-0718": {
    "n": "Guilford Courthouse National Military Park",
@@ -591,7 +598,9 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.nps.gov/guco/learn/management/lawsandpolicies.htm",
@@ -602,7 +611,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 3
+   "ver": 4
   },
   "US-0797": {
    "n": "Wright Brothers National Memorial",
@@ -620,7 +629,9 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.nps.gov/wrbr/learn/management/lawsandpolicies.htm",
@@ -631,7 +642,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 3
+   "ver": 4
   },
   "US-0804": {
    "n": "Carl Sandburg National Historic Site",
@@ -649,7 +660,9 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.nps.gov/carl/learn/management/lawsandpolicies.htm",
@@ -660,7 +673,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 3
+   "ver": 4
   },
   "US-0820": {
    "n": "Fort Raleigh National Historic Site",
@@ -678,7 +691,9 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.nps.gov/fora/learn/management/lawsandpolicies.htm",
@@ -689,7 +704,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 3
+   "ver": 4
   },
   "US-10259": {
    "n": "NC Vietnam Veteran's Memorial Historic Site",
@@ -710,7 +725,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 3
+   "ver": 4
   },
   "US-10260": {
    "n": "Birkhead Mountains Wilderness Area",
@@ -718,17 +733,9 @@
    "page": "https://www.fs.usda.gov/recarea/nfsnc/recreation/hiking/recarea/?recid=49146&actid=51",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.fs.usda.gov/r08/northcarolina/maps-guides",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
-    "how": "the page in a browser ('Visitor Maps and Guides')",
-    "page": "https://www.fs.usda.gov/recarea/nfsnc/recreation/hiking/recarea/?recid=49146&actid=51",
-    "posted": "October 5, 2026",
-    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
-    "checked": "2026-10-28",
-    "via": "the agency site"
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/northcarolina",
@@ -740,8 +747,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 3,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-10262": {
    "n": "Linville Gorge Wilderness Area",
@@ -749,17 +755,9 @@
    "page": "https://www.fs.usda.gov/recarea/nfsnc/null/recarea/?recid=48974&actid=37",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.fs.usda.gov/r08/northcarolina/maps-guides",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
-    "how": "the page in a browser ('Visitor Maps and Guides')",
-    "page": "https://www.fs.usda.gov/recarea/nfsnc/null/recarea/?recid=48974&actid=37",
-    "posted": "October 5, 2026",
-    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
-    "checked": "2026-10-28",
-    "via": "the agency site"
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/northcarolina",
@@ -771,8 +769,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 3,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-10263": {
    "n": "Bonner House Historic Site",
@@ -793,7 +790,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 3
+   "ver": 4
   },
   "US-10388": {
    "n": "Palmer Marsh House Historic Site",
@@ -814,7 +811,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 3
+   "ver": 4
   },
   "US-10389": {
    "n": "Hiwassee Dam Recreation Park",
@@ -834,11 +831,9 @@
    "agency": "Tennessee Valley Authority",
    "runs": [],
    "handover": [],
-   "notes": [
-    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
-   ],
+   "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 3
+   "ver": 4
   },
   "US-10397": {
    "n": "Southern Nantahala Wilderness Area",
@@ -846,17 +841,9 @@
    "page": "https://www.fs.usda.gov/detail/nfsnc/specialplaces/?cid=fseprd561556",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.fs.usda.gov/r08/northcarolina/maps-guides",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
-    "how": "the page in a browser ('Visitor Maps and Guides')",
-    "page": "https://www.fs.usda.gov/detail/nfsnc/specialplaces/?cid=fseprd561556",
-    "posted": "October 5, 2026",
-    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
-    "checked": "2026-10-28",
-    "via": "the agency site"
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/northcarolina",
@@ -868,8 +855,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 3,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-10398": {
    "n": "Chatuge Dam Trail Recreation Park",
@@ -887,6 +873,7 @@
     "posted_how": "",
     "names_park": false,
     "checked": "2026-10-28",
+    "covers": 0,
     "via": "the agency site"
    },
    "rules": {
@@ -898,7 +885,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 3
+   "ver": 4
   },
   "US-10399": {
    "n": "Apalachia Reservoir Recreation Park",
@@ -906,17 +893,9 @@
    "page": "https://www.tva.com/energy/our-power-system/hydroelectric/apalachia",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://tva-azr-eastus-cdn-ep-tvawcm-prd.azureedge.net/cdn-tvawcma/docs/default-source/default-document-library/site-content/environment/recreation/pdf/hiwasseemap.pdf?sfvrsn=74649c91_0",
-    "status": "ok",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
-    "how": "the page in a browser ('Water Trail Guide')",
-    "page": "https://www.tva.com/energy/our-power-system/hydroelectric/apalachia",
-    "posted": "Apr 06, 2020",
-    "posted_how": "posted: the server's file date",
-    "checked": "2026-10-28",
-    "via": "linked from the agency page (tva-azr-eastus-cdn-ep-tvawcm-prd.azureedge.net)"
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -928,8 +907,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 3,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-10406": {
    "n": "Lake Rim Fishing & Boating Multiple Use Area",
@@ -950,7 +928,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 3
+   "ver": 4
   },
   "US-10511": {
    "n": "Jessups Mill Pond State Game Land",
@@ -958,7 +936,7 @@
    "page": "https://www.lake-link.com/north-carolina-lakes/cumberland-county/jessups-pond/320453/",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.lake-link.com/map-viewer/?CFID=235555637&CFTOKEN=e84c4933db773f46-18268628-C9A0-3817-0EAB3F46AF7CCAFD",
+    "url": "https://www.lake-link.com/map-viewer/?CFID=235782679&CFTOKEN=fb2006493a8c0462-1C798CEE-F3CA-99DE-57BDD472CAA8B93A",
     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
     "kind": "page",
     "date": null,
@@ -968,6 +946,7 @@
     "posted_how": "",
     "names_park": false,
     "checked": "2026-10-28",
+    "covers": 0,
     "via": "the agency site"
    },
    "rules": {
@@ -979,7 +958,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 3
+   "ver": 4
   },
   "US-11019": {
    "n": "Shining Rock Wilderness Area",
@@ -987,17 +966,9 @@
    "page": "https://www.fs.usda.gov/recarea/nfsnc/recarea/?recid=48260",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.fs.usda.gov/r08/northcarolina/maps-guides",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
-    "how": "the page in a browser ('Visitor Maps and Guides')",
-    "page": "https://www.fs.usda.gov/recarea/nfsnc/recarea/?recid=48260",
-    "posted": "October 5, 2026",
-    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
-    "checked": "2026-10-28",
-    "via": "the agency site"
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/northcarolina",
@@ -1009,8 +980,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 3,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-11020": {
    "n": "Middle Prong Wilderness Area",
@@ -1018,17 +988,9 @@
    "page": "https://www.fs.usda.gov/recarea/nfsnc/recarea/?recid=48250",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.fs.usda.gov/r08/northcarolina/maps-guides",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
-    "how": "the page in a browser ('Visitor Maps and Guides')",
-    "page": "https://www.fs.usda.gov/recarea/nfsnc/recarea/?recid=48250",
-    "posted": "October 5, 2026",
-    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
-    "checked": "2026-10-28",
-    "via": "the agency site"
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/northcarolina",
@@ -1040,8 +1002,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 3,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-11238": {
    "n": "Micken's Branch Multiple Use Area",
@@ -1059,6 +1020,7 @@
     "posted_how": "",
     "names_park": false,
     "checked": "2026-10-28",
+    "covers": 0,
     "via": "the agency site"
    },
    "rules": {
@@ -1070,7 +1032,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 3
+   "ver": 4
   },
   "US-11271": {
    "n": "Joyce Kilmer-Slickrock Wilderness Area",
@@ -1078,17 +1040,9 @@
    "page": "https://www.fs.usda.gov/recarea/nfsnc/recarea/?recid=70827",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.fs.usda.gov/r08/northcarolina/maps-guides",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
-    "how": "the page in a browser ('Visitor Maps and Guides')",
-    "page": "https://www.fs.usda.gov/recarea/nfsnc/recarea/?recid=70827",
-    "posted": "October 5, 2026",
-    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
-    "checked": "2026-10-28",
-    "via": "the agency site"
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/northcarolina",
@@ -1100,8 +1054,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 3,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-11375": {
    "n": "Averasboro Battlefield Historic Site",
@@ -1122,7 +1075,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 3
+   "ver": 4
   },
   "US-11856": {
    "n": "Fonta-Flora State Trail",
@@ -1140,7 +1093,9 @@
     "posted_how": "posted: the server's file date",
     "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 1,
+    "via": "the agency site",
+    "date_label": "2022"
    },
    "rules": {
     "url": "",
@@ -1151,7 +1106,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 3
+   "ver": 4
   },
   "US-12119": {
    "n": "Moses H. Cone National Park",
@@ -1169,6 +1124,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "names_park": false,
     "checked": "2026-10-28",
+    "covers": 0,
     "via": "the agency site"
    },
    "rules": {
@@ -1180,7 +1136,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 3
+   "ver": 4
   },
   "US-12175": {
    "n": "Vance State Game Land",
@@ -1201,7 +1157,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 3
+   "ver": 4
   },
   "US-12320": {
    "n": "Yadkin River State Trail",
@@ -1219,7 +1175,10 @@
     "posted_how": "posted: the server's file date",
     "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 2,
+    "via": "the agency site",
+    "kind_note": "combined map: covers 2 units",
+    "date_label": "2022"
    },
    "rules": {
     "url": "",
@@ -1230,7 +1189,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 3
+   "ver": 4
   },
   "US-12371": {
    "n": "Julian Price National Park",
@@ -1248,6 +1207,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "names_park": false,
     "checked": "2026-10-28",
+    "covers": 0,
     "via": "the agency site"
    },
    "rules": {
@@ -1259,7 +1219,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 3
+   "ver": 4
   },
   "US-12414": {
    "n": "Doughton Recreation Park",
@@ -1277,6 +1237,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "names_park": false,
     "checked": "2026-10-28",
+    "covers": 0,
     "via": "the agency site"
    },
    "rules": {
@@ -1288,7 +1249,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 3
+   "ver": 4
   },
   "US-12662": {
    "n": "Harmon Den Wildlife Management Area",
@@ -1309,7 +1270,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 3
+   "ver": 4
   },
   "US-12717": {
    "n": "Deep River State Trail",
@@ -1327,7 +1288,10 @@
     "posted_how": "posted: the server's file date",
     "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 3,
+    "via": "the agency site",
+    "kind_note": "combined map: covers 3 units",
+    "date_label": "2022"
    },
    "rules": {
     "url": "",
@@ -1338,7 +1302,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 3
+   "ver": 4
   },
   "US-13002": {
    "n": "Dan River State Trail",
@@ -1356,7 +1320,10 @@
     "posted_how": "posted: the server's file date",
     "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 5,
+    "via": "the agency site",
+    "kind_note": "combined map: covers 5 units",
+    "date_label": "2022"
    },
    "rules": {
     "url": "",
@@ -1367,7 +1334,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 3
+   "ver": 4
   },
   "US-2721": {
    "n": "Bay Tree Lake State Park",
@@ -1389,8 +1356,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 3,
-   "browser_checked": "2026-10-28"
+   "ver": 4
   },
   "US-2722": {
    "n": "Carolina Beach State Park",
@@ -1408,7 +1374,10 @@
     "posted_how": "posted: the server's file date",
     "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 2,
+    "via": "the agency site",
+    "kind_note": "combined map: covers 2 units",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.ncparks.gov/about-us/guidelines-park-rules-and-regulations",
@@ -1419,7 +1388,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 3
+   "ver": 4
   },
   "US-2723": {
    "n": "Carvers Creek State Park",
@@ -1437,7 +1406,9 @@
     "posted_how": "posted: the server's file date",
     "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 1,
+    "via": "the agency site",
+    "date_label": "2026"
    },
    "rules": {
     "url": "https://www.ncparks.gov/about-us/guidelines-park-rules-and-regulations",
@@ -1448,7 +1419,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 3
+   "ver": 4
   },
   "US-2724": {
    "n": "Chimney Rock State Park",
@@ -1466,7 +1437,9 @@
     "posted_how": "",
     "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.chimneyrockpark.com/rules-of-the-trail/",
@@ -1477,7 +1450,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 3
+   "ver": 4
   },
   "US-2725": {
    "n": "Cliffs of the Neuse State Park",
@@ -1495,7 +1468,9 @@
     "posted_how": "posted: the server's file date",
     "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "2026"
    },
    "rules": {
     "url": "https://www.ncparks.gov/about-us/guidelines-park-rules-and-regulations",
@@ -1506,7 +1481,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 3
+   "ver": 4
   },
   "US-2726": {
    "n": "Crowders Mountain State Park",
@@ -1524,7 +1499,10 @@
     "posted_how": "posted: the server's file date",
     "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 2,
+    "via": "the agency site",
+    "kind_note": "combined map: covers 2 units",
+    "date_label": "2025"
    },
    "rules": {
     "url": "https://www.ncparks.gov/about-us/guidelines-park-rules-and-regulations",
@@ -1535,7 +1513,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 3
+   "ver": 4
   },
   "US-2727": {
    "n": "Dismal Swamp State Park",
@@ -1553,7 +1531,9 @@
     "posted_how": "posted: the server's file date",
     "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 1,
+    "via": "the agency site",
+    "date_label": "2025"
    },
    "rules": {
     "url": "https://www.ncparks.gov/about-us/guidelines-park-rules-and-regulations",
@@ -1564,7 +1544,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 3
+   "ver": 4
   },
   "US-2728": {
    "n": "Elk Knob State Park",
@@ -1582,7 +1562,9 @@
     "posted_how": "posted: the server's file date",
     "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 1,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.ncparks.gov/about-us/guidelines-park-rules-and-regulations",
@@ -1593,7 +1575,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 3
+   "ver": 4
   },
   "US-2729": {
    "n": "Eno River State Park",
@@ -1611,7 +1593,10 @@
     "posted_how": "posted: the server's file date",
     "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 2,
+    "via": "the agency site",
+    "kind_note": "combined map: covers 2 units",
+    "date_label": "2026"
    },
    "rules": {
     "url": "https://www.ncparks.gov/about-us/guidelines-park-rules-and-regulations",
@@ -1622,7 +1607,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 3
+   "ver": 4
   },
   "US-2730": {
    "n": "Fort Macon State Park",
@@ -1640,7 +1625,9 @@
     "posted_how": "posted: the server's file date",
     "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 1,
+    "via": "the agency site",
+    "date_label": "2025"
    },
    "rules": {
     "url": "https://www.ncparks.gov/about-us/guidelines-park-rules-and-regulations",
@@ -1651,7 +1638,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 3
+   "ver": 4
   },
   "US-2731": {
    "n": "Goose Creek State Park",
@@ -1669,7 +1656,9 @@
     "posted_how": "posted: the server's file date",
     "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 1,
+    "via": "the agency site",
+    "date_label": "2025"
    },
    "rules": {
     "url": "https://www.ncparks.gov/about-us/guidelines-park-rules-and-regulations",
@@ -1680,7 +1669,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 3
+   "ver": 4
   },
   "US-2732": {
    "n": "Gorges State Park",
@@ -1698,18 +1687,17 @@
     "posted_how": "posted: the server's file date",
     "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 3,
+    "via": "the agency site",
+    "kind_note": "combined map: covers 3 units",
+    "date_label": "2025"
    },
-   "rules": {
-    "url": "https://www.ncparks.gov/about-us/guidelines-park-rules-and-regulations",
-    "how": "a link on the park's page ('SVG Park Rules')",
-    "status": "ok"
-   },
+   "rules": null,
    "agency": "North Carolina State Parks",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 3
+   "ver": 4
   },
   "US-2733": {
    "n": "Grandfather Mountain State Park",
@@ -6818,14 +6806,14 @@
  "read": "2026-10-28",
  "counts": {
   "parks": 253,
-  "map ok": 128,
-  "map found by the bot": 90,
-  "date on the map": 78,
-  "posted date only": 34,
-  "date unknown": 16,
-  "no map": 125,
-  "rules ok": 95,
-  "needs browser": 2,
+  "map ok": 121,
+  "map found by the bot": 83,
+  "date on the map": 77,
+  "posted date only": 27,
+  "date unknown": 17,
+  "no map": 132,
+  "rules ok": 94,
+  "needs browser": 10,
   "handover hints": 0,
   "runs hints": 5,
   "host resting / robots": 0,
