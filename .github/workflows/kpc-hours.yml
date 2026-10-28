@@ -1,0 +1,92 @@
+name: KPC hours, fees and permits bot (facts)
+# Oct 28 2026 (HQ job 3, Fable's top buildable idea, chat 10 'bot workshop'): for every US + Canada park with an official page,
+# the agency's OWN SENTENCES on open hours, entry / parking fees and permits needed, each quoted with its address and date.
+# FACTS ONLY: nothing reaches a card until chat 8 grades a sample and Brandon says GO. Own script (kpc_hours_bot.py, reads the
+# truth checker's page list + kpc_manners.py), own folder (data/hours). Manners: robots.txt obeyed, 1 request / 2 s per host, back-off, three strikes = a day's rest, PDFs by range.
+# A job = up to 5 chunks of 55 min, ONE commit per chunk; when areas remain and 'chain' allows, the job starts the next one.
+# Never fails except a failed save. No schedule yet: quarterly once chat 8 grades it (REFRESH_DAYS = 90 in the script).
+on:
+  workflow_dispatch:
+    inputs:
+      areas:
+        description: 'Areas (e.g. "US-KY US-TN"); blank = the next unfinished areas in queue order (Kentucky, then the 2-fer regions: southeast first)'
+        default: ''
+      chunks:
+        description: 'Chunks of 55 min in this job (max 5)'
+        default: '5'
+      chain:
+        description: 'How many MORE jobs may follow this one by themselves when areas remain (0 = none)'
+        default: '8'
+      test:
+        description: 'yes = Kentucky test gate (kpc-ky-hours.json answer key: Otter Creek Wed-Sun, Buckley $8, Peabody permit, 70% of hours rows); with then_queue a PASS starts the whole queue'
+        default: ''
+      then_queue:
+        description: 'yes = after a PASSED test, start the whole queue by itself'
+        default: ''
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: kpc-hours
+  cancel-in-progress: false
+jobs:
+  hours:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - name: Kentucky answer keys (KPC-Links, read-only)
+        uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+      - name: Tools
+        continue-on-error: true
+        run: pip install -q --break-system-packages pypdf || pip install -q pypdf || true
+      - name: Check, in chunks, one save per chunk
+        continue-on-error: true
+        env:
+          AREAS: ${{ inputs.areas }}
+          TEST: ${{ inputs.test == 'yes' && '1' || '0' }}
+          LINKS: ../links
+        run: |
+          cd kpcdata
+          N=${{ inputs.chunks || 5 }}; [ "$N" -gt 5 ] && N=5
+          RES=''
+          for i in $(seq 1 $N); do
+            MINUTES=55 python3 .github/scripts/kpc_hours_bot.py | tee /tmp/hours.log || true
+            grep -q '^TEST=PASS' /tmp/hours.log && RES=PASS
+            grep -q '^TEST=FAIL' /tmp/hours.log && RES=FAIL
+            if [ "$RES" = PASS ]; then python3 -c "
+          import json; p='data/hours/state.json'; s=json.load(open(p)); s['proven']='$(date -u +%Y-%m-%d)'; json.dump(s,open(p,'w'),indent=1)" || true; fi
+            bash ../links/.github/scripts/kpc_push_data.sh . "hours fees permits bot: chunk $i (facts with sources)" data/hours || true
+            LEFT=$(python3 -c "
+          import json,os,sys
+          sys.path.insert(0, '.github/scripts'); import kpc_hours_bot as B
+          s = json.load(open('data/hours/state.json'))
+          want = os.environ.get('AREAS', '').upper().split()
+          q = [a for a in B.QUEUE if a in want] if want else B.QUEUE
+          print(sum(1 for a in q if (s['areas'].get(a) or {}).get('status') != 'done'))" 2>/dev/null || echo 1)
+            echo "chunk $i done, $LEFT areas left"
+            [ "$LEFT" = 0 ] && break
+          done
+          echo "LEFT=$LEFT" >> "$GITHUB_ENV"
+          echo "RES=$RES" >> "$GITHUB_ENV"
+      - name: A passed Kentucky test starts the queue
+        if: ${{ inputs.areas != '' && inputs.then_queue == 'yes' && env.RES == 'PASS' }}
+        continue-on-error: true
+        run: |
+          echo "::notice title=Hours fees permits bot::Kentucky test PASSED: starting the whole queue (chain ${{ inputs.chain }})"
+          gh workflow run kpc-hours.yml -R ${{ github.repository }} -f areas= -f chunks=5 -f chain=${{ inputs.chain }} || true
+      - name: Areas remain, so the next job starts itself
+        if: ${{ inputs.areas == '' && env.LEFT != '0' && env.LEFT != '' && inputs.chain != '0' && inputs.chain != '' }}
+        continue-on-error: true
+        run: |
+          C=$(( ${{ inputs.chain }} - 1 ))
+          echo "::notice title=Hours fees permits bot::$LEFT areas left: the next job starts itself (then $C more may follow)"
+          gh workflow run kpc-hours.yml -R ${{ github.repository }} -f areas= -f chunks=5 -f chain=$C || true
