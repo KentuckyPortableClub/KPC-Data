@@ -1,7 +1,8 @@
 name: KPC world harvester (hidden)
 # Oct 27 2026 (HQ 10:42 PM, built by Fable): explores OUTSIDE North America for official park GIS (protected-area and park
 # boundary layers) and writes LEADS to data/harvest/ for chat 8 to grade. Separate from the Discovery Bot (own scripts, own folder).
-# Manners are in the script (1 request per 2 s per server, robots.txt, back-off, three strikes, metadata only, one country at a time).
+# Manners are in the script (1 request per 2 s per server, robots.txt everywhere except ArcGIS's documented REST API paths on arcgis.com
+# hosts (HQ ruling Oct 27 10:57 PM), back-off, three strikes, metadata only, one country at a time).
 # A job = up to 5 chunks of 55 min, ONE commit per chunk (at most hourly). When countries remain and 'chain' allows, the job starts
 # the next job itself. Never fails except a failed save (a real break).
 on:
@@ -16,9 +17,6 @@ on:
       chain:
         description: 'How many MORE jobs may follow this one by themselves when countries remain (0 = none)'
         default: '4'
-      robots_exempt:
-        description: 'HQ ONLY: REST API hosts read despite a blanket robots.txt (e.g. "services.arcgis.com"); blank = robots.txt obeyed everywhere'
-        default: ''
 permissions:
   contents: write
   actions: write
@@ -48,7 +46,6 @@ jobs:
         continue-on-error: true
         env:
           COUNTRIES: ${{ inputs.countries }}
-          ROBOTS_EXEMPT: ${{ inputs.robots_exempt }}
         run: |
           cd kpcdata
           N=${{ inputs.chunks }}; [ "$N" -gt 5 ] && N=5
@@ -69,4 +66,4 @@ jobs:
         run: |
           [ "${LEFT:-0}" = 0 ] && { echo "::notice title=World harvester::queue finished"; exit 0; }
           NEXT=$(( ${{ inputs.chain }} - 1 ))
-          gh workflow run kpc-world-harvest.yml -R ${{ github.repository }} -f countries= -f chunks=5 -f chain=$NEXT -f robots_exempt='${{ inputs.robots_exempt }}' && echo "::notice title=World harvester::$LEFT countries left: the next job starts by itself ($NEXT more allowed after it)"
+          gh workflow run kpc-world-harvest.yml -R ${{ github.repository }} -f countries= -f chunks=5 -f chain=$NEXT && echo "::notice title=World harvester::$LEFT countries left: the next job starts by itself ($NEXT more allowed after it)"

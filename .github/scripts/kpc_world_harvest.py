@@ -29,7 +29,13 @@ MAX_LAYERS = 40           # layers read per service
 STAT = {'requests': 0, 'hits': 0, 'leads': 0, 'already_read': 0, 'skipped': 0, 'not_official': 0, 'robots': 0, 'strikes': 0, 'errors': 0}
 LAST, ROBOTS, DEAD = {}, {}, {}
 ROBOTS_SAID = {}          # host -> the first lines of its robots.txt (so HQ can see what refused us)
-ROBOTS_EXEMPT = [h for h in (os.environ.get('ROBOTS_EXEMPT') or '').split() if h]   # HQ decision only: REST API hosts read despite a blanket robots.txt
+# HQ RULING Oct 27 10:57 PM (narrow, by PATH, not by host): ArcGIS's documented REST API only — the ArcGIS Online search / sharing
+# API (/sharing/rest/) and the hosted services' /rest/services/ metadata (?f=json) on arcgis.com hosts — may be read although those
+# hosts carry a blanket robots.txt. Metadata only, 1 request / 2 s, back-off and three strikes as everywhere. EVERY other host obeys
+# robots.txt. Each exempted host is logged in the run report.
+ROBOTS_API = re.compile(r'(^|\.)arcgis\.com$')
+ROBOTS_API_PATH = re.compile(r'^/sharing/rest/|/rest/services(/|$)')
+ROBOTS_EXEMPTED = {}
 RUN = time.strftime('%Y-%m-%d')
 
 SKIP = re.compile(r'historic|heritage site|monument\b|castle|schloss|château|castillo|castello|zamek|cemeter|friedhof|cimeti|church|kirche|'
@@ -74,7 +80,8 @@ def robots_ok(u):
     rp = ROBOTS[h]
     try: ok = rp is None or rp.can_fetch(UA, u) or rp.can_fetch('*', u)
     except Exception: ok = True  # noqa: BLE001
-    if not ok and any(h == x or h.endswith('.' + x) for x in ROBOTS_EXEMPT): ok = True; STAT['robots_exempt'] = STAT.get('robots_exempt', 0) + 1
+    if not ok and ROBOTS_API.search(h) and ROBOTS_API_PATH.search(urllib.parse.urlparse(u).path):
+        ok = True; STAT['robots_exempt'] = STAT.get('robots_exempt', 0) + 1; ROBOTS_EXEMPTED[h] = ROBOTS_EXEMPTED.get(h, 0) + 1
     if not ok:
         STAT['robots'] += 1
         ROBOTS_REFUSED[h] = ROBOTS_REFUSED.get(h, 0) + 1
@@ -426,7 +433,8 @@ def main():
         done_now.append(f"{cc} {st['status'].split(' (')[0]}: {len(leads)} leads (A {sum(1 for v in leads.values() if v.get('band')=='A')}), known-good found {len(load(OUT / f'leads-{cc}.json', {}).get('known_good_found') or [])} of {len(c.get('known_good') or [])}")
         save(OUT / 'state.json', state)
     state['last_run'] = {'date': RUN, 'stats': STAT, 'countries': done_now, 'dead_servers': sorted(DEAD),
-                         'robots_refused': ROBOTS_REFUSED, 'robots_said': {h: ROBOTS_SAID.get(h, '') for h in ROBOTS_REFUSED}, 'robots_exempt': ROBOTS_EXEMPT}
+                         'robots_refused': ROBOTS_REFUSED, 'robots_said': {h: ROBOTS_SAID.get(h, '') for h in ROBOTS_REFUSED},
+                         'robots_exempted_hosts (HQ ruling Oct 27: ArcGIS REST API paths only)': ROBOTS_EXEMPTED}
     save(OUT / 'state.json', state)
     # the people-readable top list across every country
     rows = []
