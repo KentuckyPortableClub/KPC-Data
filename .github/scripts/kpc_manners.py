@@ -105,6 +105,42 @@ def links_in(html, base):
     return out
 
 
+def looks_binary(txt):
+    """True when 'text' is really compressed bytes (a partial PDF read gives this): few letters and spaces."""
+    t = txt[:4000]
+    if not t.strip(): return True
+    good = sum(1 for ch in t if ch.isascii() and (ch.isalnum() or ch in ' .,;:-()$/\'\n'))
+    return good / max(1, len(t)) < 0.85
+
+
+_BROWSER = {}
+
+
+def browser_text(u, M, timeout_ms=30000):
+    """Oct 28: visible text of a page that builds itself with scripts (parks.ky.gov 'Explore | … Skip to Main Content'),
+    read in headless Chromium when Playwright is installed and BROWSER=1. Same manners: robots.txt, 2 s per host, the rest
+    of the host when it struck out. Returns '' when there is no browser or the page did not open."""
+    import os, time as _t
+    if os.environ.get('BROWSER') != '1': return ''
+    h = M.host(u)
+    if M.dead.get(h, 0) > _t.time() or not M.robots_ok(u): return ''
+    try:
+        if 'pw' not in _BROWSER:
+            from playwright.sync_api import sync_playwright
+            _BROWSER['pw'] = sync_playwright().start(); _BROWSER['b'] = _BROWSER['pw'].chromium.launch()
+            _BROWSER['ctx'] = _BROWSER['b'].new_context(user_agent=M.ua)
+        w = M.gap - (_t.time() - M.last.get(h, 0))
+        if w > 0: _t.sleep(w)
+        M.last[h] = _t.time(); M.stat['requests'] += 1; M.stat['browser'] = M.stat.get('browser', 0) + 1
+        pg = _BROWSER['ctx'].new_page()
+        try:
+            pg.goto(u, timeout=timeout_ms, wait_until='networkidle')
+            return ' '.join((pg.inner_text('body') or '').split('\n'))[:200000]
+        finally: pg.close()
+    except Exception:  # noqa: BLE001  (no Playwright on this runner, or the page failed)
+        return ''
+
+
 def pdf_text(body, pages=2):
     """Text of the first pages of a (possibly partial) PDF: pypdf when installed, else the literal strings in the stream."""
     txt = ''
@@ -117,4 +153,4 @@ def pdf_text(body, pages=2):
     except Exception: pass  # noqa: BLE001
     if len(txt.strip()) < 20:
         txt = ' '.join(re.findall(r'\(([^()\\]{2,120})\)', body.decode('latin-1', 'replace'))[:800])
-    return txt
+    return '' if looks_binary(txt) else txt   # Oct 28: never hand compressed bytes on as text

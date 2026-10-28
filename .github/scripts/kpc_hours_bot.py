@@ -33,11 +33,11 @@ LINKS = pathlib.Path(os.environ.get('LINKS') or 'links')
 T0 = time.time(); LIMIT = float(os.environ.get('MINUTES') or 55) * 60
 REFRESH_DAYS = int(os.environ.get('REFRESH_DAYS') or 90)
 TODAY = time.strftime('%Y-%m-%d')
-VER = 6   # Oct 28 10:15 AM (regrade 3): headings ending ':' dropped, no statewide licence prices / nationwide notices / legal text, campground hours apart, days need a time; VER 5 =: debug text for gate misses; VER 4 =: the page-list unpack fix; VER 3 was the 6:40 AM (chat 11's grade + regrade): schedule / labelled rows count; questions, events, '$N million' never; attraction hours labelled
+VER = 7   # Oct 28 11 AM: whole-PDF read when a slice is unreadable, browser read for script pages, '24/7', agency-wide key rows left out of the gate; VER 6 = Oct 28 10:15 AM (regrade 3): headings ending ':' dropped, no statewide licence prices / nationwide notices / legal text, campground hours apart, days need a time; VER 5 =: debug text for gate misses; VER 4 =: the page-list unpack fix; VER 3 was the 6:40 AM (chat 11's grade + regrade): schedule / labelled rows count; questions, events, '$N million' never; attraction hours labelled
 QUEUE = T.QUEUE
 STAT = {'parks': 0, 'pages_read': 0, 'hours': 0, 'fees': 0, 'permits': 0, 'none': 0, 'no_page': 0, 'skipped_fresh': 0, 'errors': 0}
 
-TIME = r'(?:\d{1,2}(?::\d\d)?\s*(?:a\.?m\.?|p\.?m\.?)|noon|midnight|daylight|dawn|dusk|sunrise|sunset|sundown|dark|24 hours|year[- ]round|seasonal)'
+TIME = r'(?:24/7|24 hours a day|open 24 hours|\d{1,2}(?::\d\d)?\s*(?:a\.?m\.?|p\.?m\.?)|noon|midnight|daylight|dawn|dusk|sunrise|sunset|sundown|dark|24 hours|year[- ]round|seasonal)'
 DAYS = r'(?:mon|tues?|wed|thurs?|fri|sat|sun)[a-z]*\.?'
 HOURS_RX = re.compile(r'([^.;\n]{0,160}?\b(?:open|hours?|closed|closes|gates?|access(?:ible)?|day[- ]use)\b[^.;\n]{0,160}?\b' + TIME + r'[^.;\n]{0,120}|[^.;\n]{0,120}\b' + TIME + r'\s*(?:to|-|–|until|till|through)\s*' + TIME + r'[^.;\n]{0,120}|[^.;\n]{0,120}\b' + DAYS + r'\s*(?:to|-|–|through|thru)\s*' + DAYS + r'[^.;\n]{0,120})', re.I)
 HOURS_BAD = re.compile(r'office hours|customer service|phone|call center|visitor cent(?:er|re) hours|museum hours|gift shop|restaurant|lodge|pool hours|store hours|marina hours|golf|rental|cabin|cottage|campground office|check[- ]in|check[- ]out|headquarters|business hours|hatchery hours', re.I)
@@ -143,7 +143,7 @@ def one_park(ref, park, web, docs, ky):
         if TOPIC_PAGE.search(u): r['pages'].append({'url': u, 'why': why, 'status': 'skipped: another topic (field trips / programs / seasons)'}); continue
         st, kind, text = T.read_page(u)
         r['pages'].append({'url': u, 'why': why, 'status': st})
-        if st != 'ok' or not text: continue
+        if not st.startswith('ok') or not text: continue
         STAT['pages_read'] += 1
         f = facts_in(text, park['n'], u)
         if os.environ.get('TEST') == '1' and ref in HKEY and (HKEY[ref].get('hours') or HKEY[ref].get('fee')) and not (f['hours'] or f['fees']):   # the gate's parks: keep what the page said around 'hours' / 'open' so a MISS can be read
@@ -213,10 +213,12 @@ def ky_test(state):
     D = T.load(OUT / 'US-KY.json', {'parks': {}})
     rows = [(ref, k) for ref, k in key.items() if k.get('done') and k.get('hours')]
     hit = 0; detail = []
-    opened = 0
+    opened = 0; agency_rule = []
+    for ref, k in list(rows):
+        if re.search(r'visitor rules|preserve rules|not stated', k['hours'], re.I): agency_rule.append(ref); rows.remove((ref, k))   # an agency-wide rule, not a sentence on the park's page
     for ref, k in rows:
         r = D['parks'].get(ref) or {}
-        if not any(p.get('status') == 'ok' for p in r.get('pages') or []): detail.append(f'{ref} no page opened'); continue
+        if not any(str(p.get('status', '')).startswith('ok') for p in r.get('pages') or []): detail.append(f'{ref} no page opened'); continue
         opened += 1
         bot = ' '.join(h['line'] for h in (r.get('hours') or []) + (r.get('office_hours') or []) + (r.get('hunting_hours') or [])).lower()
         bot = re.sub(r'\b([ap])\.?m\b', r'\1m', bot)
@@ -237,7 +239,7 @@ def ky_test(state):
     pb_ok = 'permit' in pb
     rate = hit / opened if opened else 0
     res = 'PASS' if (rate >= 0.7 and oc_ok and bk_ok and pb_ok) else 'FAIL'
-    why = f"hours rows {hit}/{opened} opened ({rate:.0%}; {len(rows)} in the key); Otter Creek Wed–Sun {'ok' if oc_ok else 'MISS'}; Buckley $8 {'ok' if bk_ok else 'MISS'} ({bk_ref}); Peabody permit {'ok' if pb_ok else 'MISS'}; " + ', '.join(detail[:40])
+    why = f"hours rows {hit}/{opened} opened ({rate:.0%}; {len(rows)} in the key; {len(agency_rule)} agency-wide rule rows left out); Otter Creek Wed–Sun {'ok' if oc_ok else 'MISS'}; Buckley $8 {'ok' if bk_ok else 'MISS'} ({bk_ref}); Peabody permit {'ok' if pb_ok else 'MISS'}; " + ', '.join(detail[:40])
     state['test'] = {'when': TODAY, 'result': res, 'why': why}
     notice(f'KENTUCKY TEST {res}: {why[:700]}')
     print('TEST=' + res)

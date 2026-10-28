@@ -39,7 +39,7 @@ Env: AREAS='US-KY US-TN' (blank = the next unfinished areas in queue order) · M
 """
 import csv, json, math, os, pathlib, re, sys, time, urllib.parse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from kpc_manners import Manners, page_text, links_in, pdf_text  # noqa: E402
+from kpc_manners import Manners, page_text, links_in, pdf_text, browser_text  # noqa: E402
 
 OUT = pathlib.Path(os.environ.get('OUT') or 'data/truth')
 LINKS = pathlib.Path(os.environ.get('LINKS') or 'links')
@@ -48,7 +48,7 @@ REFRESH_DAYS = int(os.environ.get('REFRESH_DAYS') or 7)
 TOL = 0.15
 PDF_FIRST = 400_000
 TODAY = time.strftime('%Y-%m-%d')
-VER = 6   # Oct 28 (chat 11's KY grade): '708, 879' parse + summed lakes, other-unit pages, history words + stale years, unsure carries a cause, own-page handover hints, quoted URLs, 10-row gate, same-agency label
+VER = 7   # Oct 28 (chat 11's KY grade): '708, 879' parse + summed lakes, other-unit pages, history words + stale years, unsure carries a cause, own-page handover hints, quoted URLs, 10-row gate, same-agency label
 QUEUE = ['US-KY',
          'US-TN', 'US-NC', 'US-VA', 'US-WV', 'US-GA', 'US-AL', 'US-SC', 'US-FL', 'US-MS',
          'US-IN', 'US-IL', 'US-MO', 'US-WI', 'US-MN', 'US-IA', 'US-ND', 'US-SD',
@@ -470,13 +470,22 @@ def read_page(u):
     STAT['pages_read'] += 1
     ct = (hd.get('content-type') or '').lower()
     if body[:5] == b'%PDF-' or 'application/pdf' in ct:
-        return 'ok', 'pdf', pdf_text(body, 3)
+        txt = pdf_text(body, 3)
+        if not txt and looks_pdf:   # Oct 28: a 400 KB slice of a compressed PDF cannot be parsed: read the whole file (4 MB at most)
+            total = int(((hd.get('content-range') or '').rsplit('/', 1)[-1] or 0) if '/' in (hd.get('content-range') or '') else (hd.get('content-length') or 0) or 0)
+            if 0 < total <= 4_000_000 or not total:
+                st2, hd2, body2, _ = M.get(safe_url(u))
+                if st2 in (200, 206) and body2[:5] == b'%PDF-': txt = pdf_text(body2, 3)
+        return ('ok' if txt else 'ok, no readable text'), 'pdf', txt
     if looks_pdf: return 'opened, not a PDF', '', ''
     html = body.decode('utf-8', 'replace')
     if len(_HTML_CACHE) > 40: _HTML_CACHE.clear()
     _HTML_CACHE[u] = html
     t = page_text(html)
     if len(t) < 200 and SOFT404.search(t): return 'soft 404', 'page', ''
+    if len(t) < 400:   # Oct 28: a script-built page ('Explore | … Skip to Main Content'): one headless-browser read when allowed
+        bt = browser_text(u, M)
+        if len(bt) > len(t): return 'ok (browser)', 'page', bt
     return 'ok', 'page', t
 
 
