@@ -1,6 +1,14 @@
 {
  "about": "KPC bot status board: per bot the last run, green / red, what it made, what is waiting on whom. Written by kpc_status.py from each workflow; a members-only page reads it later.",
  "bots": {
+  "camp and activate bot": {
+   "areas": "",
+   "last_run": "2026-10-28",
+   "made": "US-TN: done; {\"campgrounds\": 344, \"placed\": 344, \"no_point\": 0, \"inside\": 265, \"inside_rows\": 320, \"parks_with_inside\": 74, \"both\": 5, \"line\": 0, \"check_first\": 17, \"parks_with_nearby\": 97, \"dayuse\": 8, \"dispersed",
+   "result": "green",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/40719953507",
+   "waiting_on": "chat 8 grades review.md; Brandon GO before the Lounge tab / cards"
+  },
   "campground info bot": {
    "areas": "left: 64",
    "last_run": "2026-10-28",
