@@ -190,7 +190,7 @@ jobs:
             echo "::notice title=2-fer line::rows still waiting for pass 2: finishing pass 2 in the worker"; PASS=2 MINUTES=$(( M / 4 )) python3 .github/scripts/kpc_fers.py || true
           fi
           PASS=3 MINUTES=$(( M * 4 / 5 )) python3 .github/scripts/kpc_fers.py || true
-          PASS=5 MINUTES=$(( M / 5 )) python3 .github/scripts/kpc_fers.py || true
+          PASS=5 MINUTES=$(( M / 3 )) python3 .github/scripts/kpc_fers.py || true
       - name: Bundle up (a lost bundle = a red run)
         if: always()
         run: |
