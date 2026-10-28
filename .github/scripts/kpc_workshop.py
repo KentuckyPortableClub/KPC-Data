@@ -72,12 +72,18 @@ def main():
             remaining = (LIMIT - (time.time() - T0)) / 60
             if remaining < 3: break
             if not want and status_of(bot, area) in ('done', 'failed'): continue
+            tries = 0
             while True:
                 remaining = (LIMIT - (time.time() - T0)) / 60
                 if remaining < 3: break
+                before = json.dumps(((load(f'{FOLDER[bot]}/state.json', {}).get('areas') or {}).get(area) or {}), sort_keys=True)
                 res = run_bot(bot, area, min(CHUNK, remaining), TEST and area == 'US-KY')
                 if res: gates[bot] = res
+                tries += 1
                 if status_of(bot, area) == 'done' or want: break   # named areas: one pass each, no loops
+                after = json.dumps(((load(f'{FOLDER[bot]}/state.json', {}).get('areas') or {}).get(area) or {}), sort_keys=True)
+                if after == before or tries >= 4:   # Oct 28: a chunk that changed nothing (campinfo KY '109 fresh, 9 left' x5 = 5 h) = move on
+                    notice(f'{NAME[bot]}: {area} made no progress (or 4 chunks): moving on; it stays partial'); break
     left = len(left_areas())
     gate = 'NONE' if not gates else ('PASS' if all(v == 'PASS' for b, v in gates.items() if b in GATED) else 'FAIL')
     notice(f'workshop done: gates {gates} · areas left {left}')
