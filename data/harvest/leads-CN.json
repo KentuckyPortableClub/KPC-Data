@@ -1,0 +1,121 @@
+{
+ "about": "World harvester leads for China (official park GIS only; leads for chat 8, never added to the key by the bot).",
+ "cc": "CN",
+ "date": "2026-10-28",
+ "status": "done",
+ "steps_done": [
+  "known",
+  "servers",
+  "wfs",
+  "orgs",
+  "catalogs",
+  "downloads",
+  "search",
+  "eea"
+ ],
+ "bands": {
+  "A": 0,
+  "B": 0,
+  "C": 1
+ },
+ "known_good_found": [],
+ "known_good_missed": [],
+ "leads": {
+  "https://services8.arcgis.com/wjawg84s4eayflbd/arcgis/rest/services/global_important_plant_areas": {
+   "url": "https://services8.arcgis.com/WjAwg84s4EayFLBd/arcgis/rest/services/Global_Important_Plant_Areas/FeatureServer",
+   "cc": "CN",
+   "title": "Global_Important_Plant_Areas",
+   "publisher": "Plantlife International",
+   "catalog": "ArcGIS Online search",
+   "licence": "Global Important Plant Area Dataset    The IPA Network is keen to encourage the use of its data for conservation purposes and planning purposes. For full access to this dataset please  contact the Glo",
+   "date": "2026-10-12",
+   "found": "2026-10-28",
+   "gaps": [
+    "access",
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Important Plant Areas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Country",
+      "CTYISO2",
+      "IPA_NAME",
+      "Alt_IPA_Name",
+      "IPA_CODE",
+      "Shape__Area",
+      "Shape__Length",
+      "Area_km2",
+      "Length_km2"
+     ],
+     "records": 756,
+     "sample": [
+      "Jbel Bouhachem",
+      "Talassemtane National Park",
+      "Al Hoceima National Park"
+     ],
+     "name_field": "IPA_NAME"
+    },
+    {
+     "id": 1,
+     "name": "Important Plant Area Points",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "OBJECTID",
+      "Country",
+      "CTYISO2",
+      "IPA_Name"
+     ],
+     "records": 1285,
+     "sample": [
+      "Suboticka Sands",
+      "Selevenj sand steppe",
+      "Palic Lake"
+     ],
+     "name_field": "IPA_Name"
+    },
+    {
+     "id": 2,
+     "name": "Tropical Important Plant Areas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Country",
+      "CTYISO2",
+      "TIPA_Name",
+      "Alt_TIPA_Name",
+      "IPA_Criteria",
+      "Core_Buffer",
+      "TIPA_ID",
+      "TIPA_Code",
+      "Shape__Area",
+      "Shape__Length",
+      "Area_km2",
+      "Length_km2",
+      "TIPA_Link"
+     ],
+     "records": 469,
+     "sample": [
+      "Ribáuè - M'pàluwé ",
+      "Ribáuè - M'pàluwé ",
+      "Mount Gorongosa"
+     ],
+     "name_field": "TIPA_Name"
+    }
+   ],
+   "note": "Global Important Plant Areas",
+   "licence_note": "LICENCE FORBIDS PASSING IT ON: list only, never store",
+   "grade": 5,
+   "band": "C"
+  }
+ }
+}

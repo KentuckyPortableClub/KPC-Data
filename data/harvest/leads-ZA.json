@@ -1,0 +1,229 @@
+{
+ "about": "World harvester leads for South Africa (official park GIS only; leads for chat 8, never added to the key by the bot).",
+ "cc": "ZA",
+ "date": "2026-10-28",
+ "status": "done",
+ "steps_done": [
+  "known",
+  "servers",
+  "wfs",
+  "orgs",
+  "catalogs",
+  "downloads",
+  "search",
+  "eea"
+ ],
+ "bands": {
+  "A": 0,
+  "B": 1,
+  "C": 0
+ },
+ "known_good_found": [],
+ "known_good_missed": [],
+ "leads": {
+  "https://dffeportal.environment.gov.za/hosting/rest/services/paca/sapad": {
+   "url": "https://dffeportal.environment.gov.za/hosting/rest/services/PACA/SAPAD/MapServer",
+   "cc": "ZA",
+   "title": "PACA/SAPAD",
+   "publisher": "dffeportal.environment.gov.za",
+   "catalog": "ArcGIS Online search",
+   "licence": "",
+   "date": "2023-07-14",
+   "found": "2026-10-28",
+   "gaps": [
+    "area",
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 1,
+     "name": "ENV_DB.LDR.National_Park",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "PROC_DOC",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 22
+    },
+    {
+     "id": 2,
+     "name": "ENV_DB.LDR.Nature_Reserve",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "PROC_DOC",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 1524
+    },
+    {
+     "id": 3,
+     "name": "ENV_DB.LDR.Forest_Nature_Reserve",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "PROC_DOC",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 59
+    },
+    {
+     "id": 4,
+     "name": "ENV_DB.LDR.Forest_Wilderness_Area",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "PROC_DOC",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 12
+    },
+    {
+     "id": 5,
+     "name": "ENV_DB.LDR.Marine_Protected_Area",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "PROC_DOC",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 42
+    },
+    {
+     "id": 7,
+     "name": "ENV_DB.LDR.Protected_Environment",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "PROC_DOC",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 70
+    },
+    {
+     "id": 8,
+     "name": "ENV_DB.LDR.Special_Nature_Reserve",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "PROC_DOC",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 2
+    },
+    {
+     "id": 6,
+     "name": "ENV_DB.LDR.Mountain_Catchment _Area",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "PROC_DOC",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 16
+    }
+   ],
+   "note": "SAPAD",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "B"
+  }
+ }
+}

@@ -3251,9 +3251,17 @@
    "finished": "2026-10-28"
   },
   "NZ": {
-   "status": "paused (out of time, will carry on)",
+   "status": "done",
    "started": "2026-10-28",
    "done": [
+    "https://geospatial.mpi.govt.nz/portal/rest/services/Hosted/Fish_Species_Distribution_FSH/FeatureServer",
+    "https://geospatial.mpi.govt.nz/portal/rest/services/MARINE/Marine_Protected_Areas_Full/FeatureServer/1",
+    "https://geospatial.mpi.govt.nz/portal/rest/services/MARINE/Marine_Protected_Areas_Full/MapServer/1",
+    "https://gis.ecan.govt.nz/arcgis/rest/services/Public/SOE_PANNZ/MapServer",
+    "https://maps.mpi.govt.nz/wss/service/ags-relay/arcgis1/guest/arcgis/rest/services/MARINE/MARINE_Habitat/MapServer/3",
+    "https://maps.waikatoregion.govt.nz/arcgis/rest/services/WRCMAPS/Base_Layers_Ext/MapServer",
+    "https://maps.waikatoregion.govt.nz/arcgis/rest/services/WRCMAPS/Base_Layers_Ext/MapServer/0",
+    "https://services.arcgis.com/xdsHIIxuCWByZiCB/arcgis/rest/services/LINZ_NZ_Facilities/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/ArcGIS/rest/services/DOC_Public_Conservation_Land/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/2022CatlinsAllLocationsIncOtago/FeatureServer",
     "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/2022NZSLCatlinsLandRange/FeatureServer",
@@ -3550,7 +3558,8 @@
     "https://tiles.arcgis.com/tiles/3JjYDyG3oajxU6HO/arcgis/rest/services/Beech_Seeding_Forecast_2018/MapServer",
     "https://tiles.arcgis.com/tiles/3JjYDyG3oajxU6HO/arcgis/rest/services/Rimu_Seeding_Forecast_2018/MapServer",
     "https://tiles.arcgis.com/tiles/3JjYDyG3oajxU6HO/arcgis/rest/services/Simplified_LCDBV4_1/MapServer",
-    "https://tiles.arcgis.com/tiles/3JjYDyG3oajxU6HO/arcgis/rest/services/deltaT_Masting_Forecast_Summer2018_19/MapServer"
+    "https://tiles.arcgis.com/tiles/3JjYDyG3oajxU6HO/arcgis/rest/services/deltaT_Masting_Forecast_Summer2018_19/MapServer",
+    "https://www.sciencebase.gov/arcgis/rest/services/Catalog/594d3c8ee4b062508e39b332/MapServer"
    ],
    "log": [
     {
@@ -3586,6 +3595,31 @@
      "agol": "public conservation land",
      "hits": 50,
      "read": 0
+    },
+    {
+     "agol": "public conservation land",
+     "hits": 50,
+     "read": 0
+    },
+    {
+     "agol": "national park",
+     "hits": 50,
+     "read": 0
+    },
+    {
+     "agol": "regional park",
+     "hits": 7,
+     "read": 3
+    },
+    {
+     "agol": "conservation area",
+     "hits": 50,
+     "read": 0
+    },
+    {
+     "agol": "reserve",
+     "hits": 50,
+     "read": 2
     }
    ],
    "steps": [
@@ -3594,47 +3628,674 @@
     "wfs",
     "orgs",
     "catalogs",
-    "downloads"
-   ]
+    "downloads",
+    "search",
+    "eea"
+   ],
+   "finished": "2026-10-28"
+  },
+  "DO": {
+   "status": "done",
+   "started": "2026-10-28",
+   "done": [],
+   "log": [
+    {
+     "agol": "parque nacional",
+     "hits": 3,
+     "read": 0
+    },
+    {
+     "agol": "área protegida",
+     "hits": 6,
+     "read": 0
+    },
+    {
+     "agol": "reserva científica",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "agol": "monumento natural",
+     "hits": 0,
+     "read": 0
+    }
+   ],
+   "steps": [
+    "known",
+    "servers",
+    "wfs",
+    "orgs",
+    "catalogs",
+    "downloads",
+    "search",
+    "eea"
+   ],
+   "finished": "2026-10-28"
+  },
+  "BR": {
+   "status": "done",
+   "started": "2026-10-28",
+   "done": [
+    "https://www.snirh.gov.br/arcgis/rest/services/DADOSABERTOS/Terra_Indígina/MapServer"
+   ],
+   "log": [
+    {
+     "catalog": "https://dados.gov.br/dados",
+     "keyword": "unidade de conservação",
+     "error": "HTTP 401"
+    },
+    {
+     "catalog": "https://dados.gov.br/dados",
+     "keyword": "parque nacional",
+     "error": "HTTP 401"
+    },
+    {
+     "catalog": "https://dados.gov.br/dados",
+     "keyword": "parque estadual",
+     "error": "HTTP 401"
+    },
+    {
+     "catalog": "https://dados.gov.br/dados",
+     "keyword": "reserva biológica",
+     "error": "HTTP 401"
+    },
+    {
+     "agol": "unidade de conservação",
+     "hits": 50,
+     "read": 0
+    },
+    {
+     "agol": "parque nacional",
+     "hits": 2,
+     "read": 0
+    },
+    {
+     "agol": "parque estadual",
+     "hits": 2,
+     "read": 0
+    },
+    {
+     "agol": "reserva biológica",
+     "hits": 3,
+     "read": 0
+    },
+    {
+     "agol": "área de proteção ambiental",
+     "hits": 4,
+     "read": 0
+    }
+   ],
+   "steps": [
+    "known",
+    "servers",
+    "wfs",
+    "orgs",
+    "catalogs",
+    "downloads",
+    "search",
+    "eea"
+   ],
+   "finished": "2026-10-28"
+  },
+  "KR": {
+   "status": "done",
+   "started": "2026-10-28",
+   "done": [],
+   "log": [
+    {
+     "agol": "국립공원",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "agol": "보호지역",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "agol": "도립공원",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "agol": "national park",
+     "hits": 0,
+     "read": 0
+    }
+   ],
+   "steps": [
+    "known",
+    "servers",
+    "wfs",
+    "orgs",
+    "catalogs",
+    "downloads",
+    "search",
+    "eea"
+   ],
+   "finished": "2026-10-28"
+  },
+  "MX": {
+   "status": "done",
+   "started": "2026-10-28",
+   "done": [],
+   "log": [
+    {
+     "catalog": "https://datos.gob.mx",
+     "keyword": "área natural protegida",
+     "error": "HTTP 403"
+    },
+    {
+     "catalog": "https://datos.gob.mx",
+     "keyword": "parque nacional",
+     "error": "HTTP 403"
+    },
+    {
+     "catalog": "https://datos.gob.mx",
+     "keyword": "reserva de la biosfera",
+     "error": "HTTP 403"
+    },
+    {
+     "catalog": "https://datos.gob.mx",
+     "keyword": "ANP",
+     "error": "HTTP 403"
+    },
+    {
+     "agol": "área natural protegida",
+     "hits": 12,
+     "read": 0
+    },
+    {
+     "agol": "parque nacional",
+     "hits": 5,
+     "read": 0
+    },
+    {
+     "agol": "reserva de la biosfera",
+     "hits": 4,
+     "read": 0
+    },
+    {
+     "agol": "ANP",
+     "hits": 38,
+     "read": 0
+    }
+   ],
+   "steps": [
+    "known",
+    "servers",
+    "wfs",
+    "orgs",
+    "catalogs",
+    "downloads",
+    "search",
+    "eea"
+   ],
+   "finished": "2026-10-28"
+  },
+  "TH": {
+   "status": "done",
+   "started": "2026-10-28",
+   "done": [],
+   "log": [
+    {
+     "catalog": "https://data.go.th",
+     "keyword": "อุทยานแห่งชาติ",
+     "error": "HTTP 403"
+    },
+    {
+     "catalog": "https://data.go.th",
+     "keyword": "เขตรักษาพันธุ์สัตว์ป่า",
+     "error": "HTTP 403"
+    },
+    {
+     "catalog": "https://data.go.th",
+     "keyword": "national park",
+     "error": "HTTP 403"
+    },
+    {
+     "catalog": "https://data.go.th",
+     "keyword": "wildlife sanctuary",
+     "error": "HTTP 403"
+    },
+    {
+     "agol": "อุทยานแห่งชาติ",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "agol": "เขตรักษาพันธุ์สัตว์ป่า",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "agol": "national park",
+     "hits": 30,
+     "read": 0
+    },
+    {
+     "agol": "wildlife sanctuary",
+     "hits": 4,
+     "read": 0
+    }
+   ],
+   "steps": [
+    "known",
+    "servers",
+    "wfs",
+    "orgs",
+    "catalogs",
+    "downloads",
+    "search",
+    "eea"
+   ],
+   "finished": "2026-10-28"
+  },
+  "ZA": {
+   "status": "done",
+   "started": "2026-10-28",
+   "done": [
+    "https://dffeportal.environment.gov.za/hosting/rest/services/PACA/SAPAD/MapServer"
+   ],
+   "log": [
+    {
+     "agol": "national park",
+     "hits": 49,
+     "read": 1
+    },
+    {
+     "agol": "nature reserve",
+     "hits": 19,
+     "read": 0
+    },
+    {
+     "agol": "protected areas",
+     "hits": 50,
+     "read": 0
+    },
+    {
+     "agol": "protected environment",
+     "hits": 2,
+     "read": 0
+    }
+   ],
+   "steps": [
+    "known",
+    "servers",
+    "wfs",
+    "orgs",
+    "catalogs",
+    "downloads",
+    "search",
+    "eea"
+   ],
+   "finished": "2026-10-28"
+  },
+  "AR": {
+   "status": "done",
+   "started": "2026-10-28",
+   "done": [],
+   "log": [
+    {
+     "catalog": "https://datos.gob.ar",
+     "keyword": "parque nacional",
+     "error": "HTTP 400"
+    },
+    {
+     "catalog": "https://datos.gob.ar",
+     "keyword": "área protegida",
+     "error": "HTTP 400"
+    },
+    {
+     "catalog": "https://datos.gob.ar",
+     "keyword": "reserva natural",
+     "error": "HTTP 400"
+    },
+    {
+     "catalog": "https://datos.gob.ar",
+     "keyword": "parque provincial",
+     "error": "HTTP 400"
+    },
+    {
+     "agol": "parque nacional",
+     "hits": 2,
+     "read": 0
+    },
+    {
+     "agol": "área protegida",
+     "hits": 16,
+     "read": 0
+    },
+    {
+     "agol": "reserva natural",
+     "hits": 1,
+     "read": 0
+    },
+    {
+     "agol": "parque provincial",
+     "hits": 0,
+     "read": 0
+    }
+   ],
+   "steps": [
+    "known",
+    "servers",
+    "wfs",
+    "orgs",
+    "catalogs",
+    "downloads",
+    "search",
+    "eea"
+   ],
+   "finished": "2026-10-28"
+  },
+  "CL": {
+   "status": "done",
+   "started": "2026-10-28",
+   "done": [],
+   "log": [
+    {
+     "catalog": "https://datos.gob.cl",
+     "keyword": "parque nacional",
+     "error": "robots.txt says no"
+    },
+    {
+     "catalog": "https://datos.gob.cl",
+     "keyword": "reserva nacional",
+     "error": "robots.txt says no"
+    },
+    {
+     "catalog": "https://datos.gob.cl",
+     "keyword": "área silvestre protegida",
+     "error": "robots.txt says no"
+    },
+    {
+     "catalog": "https://datos.gob.cl",
+     "keyword": "monumento natural",
+     "error": "robots.txt says no"
+    },
+    {
+     "agol": "parque nacional",
+     "hits": 14,
+     "read": 0
+    },
+    {
+     "agol": "reserva nacional",
+     "hits": 13,
+     "read": 0
+    },
+    {
+     "agol": "área silvestre protegida",
+     "hits": 12,
+     "read": 0
+    },
+    {
+     "agol": "monumento natural",
+     "hits": 3,
+     "read": 0
+    }
+   ],
+   "steps": [
+    "known",
+    "servers",
+    "wfs",
+    "orgs",
+    "catalogs",
+    "downloads",
+    "search",
+    "eea"
+   ],
+   "finished": "2026-10-28"
+  },
+  "CO": {
+   "status": "done",
+   "started": "2026-10-28",
+   "done": [
+    "http://mapas.parquesnacionales.gov.co/arcgis/rest/services/PNN/AreasProtegidas/MapServer",
+    "http://maps.cundinamarca.gov.co/agsprod/rest/services/IDER/Areas_Protegidas/MapServer/3",
+    "https://geoservicios.upra.gov.co/arcgis/rest/services/ordenamiento_productivo/frontera_agricola_2019/MapServer/0",
+    "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/IGAC/nuevas_areas/MapServer/0",
+    "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/Limites_oficiales_Poligono/MapServer",
+    "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/runap/MapServer/0",
+    "https://mapasdnp.dnp.gov.co/server/rest/services/Hosted/RUNAP_Registro_%C3%9Anico_Nacional_de_%C3%81reas_Protegidas/FeatureServer",
+    "https://maps.cundinamarca.gov.co/agsprod/rest/services/IDER/Medio_Biotico_Cundinamarca/MapServer/1"
+   ],
+   "log": [
+    {
+     "agol": "parque nacional natural",
+     "hits": 24,
+     "read": 0
+    },
+    {
+     "agol": "área protegida",
+     "hits": 50,
+     "read": 1
+    },
+    {
+     "agol": "reserva natural",
+     "hits": 13,
+     "read": 0
+    },
+    {
+     "agol": "SINAP",
+     "hits": 40,
+     "read": 0
+    }
+   ],
+   "steps": [
+    "known",
+    "servers",
+    "wfs",
+    "orgs",
+    "catalogs",
+    "downloads",
+    "search",
+    "eea"
+   ],
+   "finished": "2026-10-28"
+  },
+  "PH": {
+   "status": "done",
+   "started": "2026-10-28",
+   "done": [],
+   "log": [
+    {
+     "agol": "protected area",
+     "hits": 29,
+     "read": 0
+    },
+    {
+     "agol": "national park",
+     "hits": 2,
+     "read": 0
+    },
+    {
+     "agol": "natural park",
+     "hits": 1,
+     "read": 0
+    },
+    {
+     "agol": "NIPAS",
+     "hits": 2,
+     "read": 0
+    }
+   ],
+   "steps": [
+    "known",
+    "servers",
+    "wfs",
+    "orgs",
+    "catalogs",
+    "downloads",
+    "search",
+    "eea"
+   ],
+   "finished": "2026-10-28"
+  },
+  "TR": {
+   "status": "done",
+   "started": "2026-10-28",
+   "done": [],
+   "log": [
+    {
+     "agol": "milli park",
+     "hits": 3,
+     "read": 0
+    },
+    {
+     "agol": "tabiat parkı",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "agol": "korunan alan",
+     "hits": 1,
+     "read": 0
+    },
+    {
+     "agol": "tabiatı koruma alanı",
+     "hits": 0,
+     "read": 0
+    }
+   ],
+   "steps": [
+    "known",
+    "servers",
+    "wfs",
+    "orgs",
+    "catalogs",
+    "downloads",
+    "search",
+    "eea"
+   ],
+   "finished": "2026-10-28"
+  },
+  "RU": {
+   "status": "done",
+   "started": "2026-10-28",
+   "done": [],
+   "log": [
+    {
+     "agol": "национальный парк",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "agol": "заповедник",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "agol": "заказник",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "agol": "особо охраняемая природная территория",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "agol": "ООПТ",
+     "hits": 2,
+     "read": 0
+    }
+   ],
+   "steps": [
+    "known",
+    "servers",
+    "wfs",
+    "orgs",
+    "catalogs",
+    "downloads",
+    "search",
+    "eea"
+   ],
+   "finished": "2026-10-28"
+  },
+  "CN": {
+   "status": "done",
+   "started": "2026-10-28",
+   "done": [
+    "https://services8.arcgis.com/WjAwg84s4EayFLBd/arcgis/rest/services/Global_Important_Plant_Areas/FeatureServer"
+   ],
+   "log": [
+    {
+     "agol": "国家公园",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "agol": "自然保护区",
+     "hits": 4,
+     "read": 0
+    },
+    {
+     "agol": "自然公园",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "agol": "nature reserve",
+     "hits": 10,
+     "read": 1
+    }
+   ],
+   "steps": [
+    "known",
+    "servers",
+    "wfs",
+    "orgs",
+    "catalogs",
+    "downloads",
+    "search",
+    "eea"
+   ],
+   "finished": "2026-10-28"
   }
  },
  "last_run": {
   "date": "2026-10-28",
   "stats": {
-   "requests": 1597,
+   "requests": 264,
    "hits": 0,
-   "leads": 284,
-   "already_read": 1,
-   "skipped": 49,
-   "not_official": 225,
-   "robots": 8,
-   "strikes": 3,
-   "errors": 57,
-   "retried_json": 8
+   "leads": 8,
+   "already_read": 0,
+   "skipped": 0,
+   "not_official": 653,
+   "robots": 6,
+   "strikes": 12,
+   "errors": 32
   },
   "countries": [
-   "DK done: 25 leads (A 0), known-good found 0 of 1",
-   "IE done: 12 leads (A 1), known-good found 1 of 1",
-   "SK done: 0 leads (A 0), known-good found 0 of 0",
-   "HR done: 0 leads (A 0), known-good found 0 of 0",
-   "FI done: 0 leads (A 0), known-good found 0 of 0",
-   "HU done: 0 leads (A 0), known-good found 0 of 0",
-   "EE done: 0 leads (A 0), known-good found 0 of 0",
-   "LV done: 0 leads (A 0), known-good found 0 of 0",
-   "LT done: 0 leads (A 0), known-good found 0 of 0",
-   "LU done: 0 leads (A 0), known-good found 0 of 0",
-   "NZ paused: 270 leads (A 77), known-good found 1 of 1"
+   "NZ done: 274 leads (A 79), known-good found 1 of 1",
+   "DO done: 0 leads (A 0), known-good found 0 of 0",
+   "BR done: 0 leads (A 0), known-good found 0 of 0",
+   "KR done: 0 leads (A 0), known-good found 0 of 0",
+   "MX done: 0 leads (A 0), known-good found 0 of 0",
+   "TH done: 0 leads (A 0), known-good found 0 of 0",
+   "ZA done: 1 leads (A 0), known-good found 0 of 0",
+   "AR done: 0 leads (A 0), known-good found 0 of 0",
+   "CL done: 0 leads (A 0), known-good found 0 of 0",
+   "CO done: 1 leads (A 0), known-good found 0 of 0",
+   "PH done: 0 leads (A 0), known-good found 0 of 0",
+   "TR done: 0 leads (A 0), known-good found 0 of 0",
+   "RU done: 0 leads (A 0), known-good found 0 of 0",
+   "CN done: 1 leads (A 0), known-good found 0 of 0"
   ],
   "dead_servers": [
-   "data.gov.lt"
+   "mapas.parquesnacionales.gov.co",
+   "maps.cundinamarca.gov.co",
+   "maps.mpi.govt.nz",
+   "www.sciencebase.gov"
   ],
   "robots_refused": {
-   "data.gov.ie": 4,
-   "catalogue.data.govt.nz": 4
+   "maps.waikatoregion.govt.nz": 2,
+   "datos.gob.cl": 4
   },
   "robots_said": {
-   "data.gov.ie": "User-agent: * | Disallow: /dataset/rate/ | Disallow: /revision/ | Disallow: /dataset/*/history | Disallow: /api/ | Disallow: */dataset/*?*year_updated= | Disall",
-   "catalogue.data.govt.nz": "User-agent: * | Disallow: /dataset/rate/ | Disallow: /revision/ | Disallow: /dataset/*/history | Disallow: /api/ | Disallow: /*&tags= | Disallow: /*?tags= | Dis"
+   "maps.waikatoregion.govt.nz": "User-Agent: * | Disallow: /arcgis/ | Disallow: /arcgishosting/ | Disallow: /arcgisimage/",
+   "datos.gob.cl": "User-agent: * | Disallow: /dataset/rate/ | Disallow: /revision/ | Disallow: /dataset/*/history | Disallow: /api/ | Crawl-Delay: 10"
   },
   "robots_exempted_hosts (HQ ruling Oct 27: ArcGIS REST API paths only)": {}
  },

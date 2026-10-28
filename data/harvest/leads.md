@@ -80,6 +80,7 @@ access constraints t | 2024-10-18 | https://services.arcgis.com/JJzESW51TqeY9uat
 | A | NZ | Hare_Distribution_2007 | park / protected-area polygons with a name field | Department of Conservation | Disclaimers  1. While all care and dilig | 2023-12-05 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Hare_Distribution_2007/FeatureServer |
 | A | NZ | Himalayan_Tahr_Distribution_2007 | park / protected-area polygons with a name field | Department of Conservation | Disclaimers  1. While all care and dilig | 2023-12-05 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Himalayan_Tahr_Distribution_2007/FeatureServer |
 | A | NZ | Himalayan_Tahr_Distribution_2014 | park / protected-area polygons with a name field | Department of Conservation | Disclaimers  1. While all care and dilig | 2023-12-05 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Himalayan_Tahr_Distribution_2014/FeatureServer |
+| A | NZ | LINZ_NZ_Facilities | park / protected-area polygons with a name field | Land Information New Zealand | Creative Commons Attribution 4.0 Interna | 2026-05-01 | https://services.arcgis.com/xdsHIIxuCWByZiCB/arcgis/rest/services/LINZ_NZ_Facilities/FeatureServer |
 | A | NZ | National_WARO_Concession_Locations_view | park / protected-area polygons with a name field | Department of Conservation | Copyright 2018 Crown copyright (c) Depar | 2025-05-01 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/National_WARO_Concession_Locations_view/FeatureServer |
 | A | NZ | NonMigratoryFreshwaterFishDistribution | park / protected-area polygons with a name field | Department of Conservation | Disclaimers  1. While all care and dilig | 2025-12-11 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/NonMigratoryFreshwaterFishDistribution/FeatureServer |
 | A | NZ | Possum_Distribution_2007 | park / protected-area polygons with a name field | Department of Conservation | Disclaimers  1. While all care and dilig | 2023-12-05 | https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Possum_Distribution_2007/FeatureServer |
@@ -132,6 +133,7 @@ access constraints t | 2024-10-18 | https://services.arcgis.com/JJzESW51TqeY9uat
 | A | AU | SLIP_Public_Services/Soil_Landscape_WFS | park / protected-area polygons (no name field seen); park / protected- | public-services.slip.wa.gov.au | SLIP / LANDGATE |  | https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Soil_Landscape_WFS/MapServer |
 | A | AU | SLIP_Public_Services/Water | trail / path lines; named area polygons | public-services.slip.wa.gov.au | SLIP / LANDGATE |  | https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer |
 | A | AU | SLIP_Public_Services/Water_FS | trail / path lines; named area polygons | public-services.slip.wa.gov.au | SLIP / LANDGATE |  | https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water_FS/MapServer |
+| C | CN | Global_Important_Plant_Areas | park / protected-area polygons with a name field; park points (sites / | Plantlife International | Global Important Plant Area Dataset    T | 2026-10-12 | https://services8.arcgis.com/WjAwg84s4EayFLBd/arcgis/rest/services/Global_Important_Plant_Areas/FeatureServer |
 | A | DE | FFH | park / protected-area polygons with a name field | World Wide Fund for Nature | Verfügbarkeit: -Offenheit der Lizenz:  F | 2024-01-22 | https://services1.arcgis.com/RTK5Unh1Z71JKIiR/arcgis/rest/services/FFH/FeatureServer |
 | A | DE | Vogelschutzgebiete | park / protected-area polygons with a name field | World Wide Fund for Nature | Verfügbarkeit: -Offenheit der Lizenz:  F | 2024-01-22 | https://services1.arcgis.com/RTK5Unh1Z71JKIiR/arcgis/rest/services/Vogelschutzgebiete/FeatureServer |
 | A | GB | Agricultural_Land_Classification_Post_1988 | park / protected-area polygons (no name field seen) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2023-06-06 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Agricultural_Land_Classification_Post_1988/FeatureServer |
@@ -152,48 +154,51 @@ access constraints t | 2024-10-18 | https://services.arcgis.com/JJzESW51TqeY9uat
 | A | GB | England_Peat_Map_Upland_Peat_Erosion_and_Drainage_ | park / protected-area polygons (no name field seen) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2025-05-14 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/England_Peat_Map_Upland_Peat_Erosion_and_Drainage_Grip_Dams/FeatureServer |
 | A | GB | England_Peat_Map_Upland_Peat_Erosion_and_Drainage_ | park / protected-area polygons (no name field seen) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2025-05-14 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/England_Peat_Map_Upland_Peat_Erosion_and_Drainage_Grips/FeatureServer |
 | A | GB | England_Peat_Map_Upland_Peat_Erosion_and_Drainage_ | park / protected-area polygons (no name field seen) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2025-05-14 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/England_Peat_Map_Upland_Peat_Erosion_and_Drainage_Gullies/FeatureServer |
-| A | GB | England_Peat_Map_Upland_Peat_Erosion_and_Drainage_ | park / protected-area polygons (no name field seen) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2025-05-12 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/England_Peat_Map_Upland_Peat_Erosion_and_Drainage_Haggs/FeatureServer |
-| A | GB | England_Peat_Map_Vegetation_and_Land_Cover_on_Peat | park / protected-area polygons (no name field seen); park / protected- | Defra group ArcGIS Online organisati | There are no public access constraints t | 2025-09-10 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/England_Peat_Map_Vegetation_and_Land_Cover_on_Peaty_Soils/FeatureServer |
 
 ## Last run
 ```
 {
  "date": "2026-10-28",
  "stats": {
-  "requests": 1597,
+  "requests": 264,
   "hits": 0,
-  "leads": 284,
-  "already_read": 1,
-  "skipped": 49,
-  "not_official": 225,
-  "robots": 8,
-  "strikes": 3,
-  "errors": 57,
-  "retried_json": 8
+  "leads": 8,
+  "already_read": 0,
+  "skipped": 0,
+  "not_official": 653,
+  "robots": 6,
+  "strikes": 12,
+  "errors": 32
  },
  "countries": [
-  "DK done: 25 leads (A 0), known-good found 0 of 1",
-  "IE done: 12 leads (A 1), known-good found 1 of 1",
-  "SK done: 0 leads (A 0), known-good found 0 of 0",
-  "HR done: 0 leads (A 0), known-good found 0 of 0",
-  "FI done: 0 leads (A 0), known-good found 0 of 0",
-  "HU done: 0 leads (A 0), known-good found 0 of 0",
-  "EE done: 0 leads (A 0), known-good found 0 of 0",
-  "LV done: 0 leads (A 0), known-good found 0 of 0",
-  "LT done: 0 leads (A 0), known-good found 0 of 0",
-  "LU done: 0 leads (A 0), known-good found 0 of 0",
-  "NZ paused: 270 leads (A 77), known-good found 1 of 1"
+  "NZ done: 274 leads (A 79), known-good found 1 of 1",
+  "DO done: 0 leads (A 0), known-good found 0 of 0",
+  "BR done: 0 leads (A 0), known-good found 0 of 0",
+  "KR done: 0 leads (A 0), known-good found 0 of 0",
+  "MX done: 0 leads (A 0), known-good found 0 of 0",
+  "TH done: 0 leads (A 0), known-good found 0 of 0",
+  "ZA done: 1 leads (A 0), known-good found 0 of 0",
+  "AR done: 0 leads (A 0), known-good found 0 of 0",
+  "CL done: 0 leads (A 0), known-good found 0 of 0",
+  "CO done: 1 leads (A 0), known-good found 0 of 0",
+  "PH done: 0 leads (A 0), known-good found 0 of 0",
+  "TR done: 0 leads (A 0), known-good found 0 of 0",
+  "RU done: 0 leads (A 0), known-good found 0 of 0",
+  "CN done: 1 leads (A 0), known-good found 0 of 0"
  ],
  "dead_servers": [
-  "data.gov.lt"
+  "mapas.parquesnacionales.gov.co",
+  "maps.cundinamarca.gov.co",
+  "maps.mpi.govt.nz",
+  "www.sciencebase.gov"
  ],
  "robots_refused": {
-  "data.gov.ie": 4,
-  "catalogue.data.govt.nz": 4
+  "maps.waikatoregion.govt.nz": 2,
+  "datos.gob.cl": 4
  },
  "robots_said": {
-  "data.gov.ie": "User-agent: * | Disallow: /dataset/rate/ | Disallow: /revision/ | Disallow: /dataset/*/history | Disallow: /api/ | Disallow: */dataset/*?*year_updated= | Disall",
-  "catalogue.data.govt.nz": "User-agent: * | Disallow: /dataset/rate/ | Disallow: /revision/ | Disallow: /dataset/*/history | Disallow: /api/ | Disallow: /*&tags= | Disallow: /*?tags= | Dis"
+  "maps.waikatoregion.govt.nz": "User-Agent: * | Disallow: /arcgis/ | Disallow: /arcgishosting/ | Disallow: /arcgisimage/",
+  "datos.gob.cl": "User-agent: * | Disallow: /dataset/rate/ | Disallow: /revision/ | Disallow: /dataset/*/history | Disallow: /api/ | Crawl-Delay: 10"
  },
  "robots_exempted_hosts (HQ ruling Oct 27: ArcGIS REST API paths only)": {}
 }

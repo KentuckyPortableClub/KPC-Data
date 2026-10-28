@@ -2,18 +2,20 @@
  "about": "World harvester leads for New Zealand (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "NZ",
  "date": "2026-10-28",
- "status": "paused (out of time, will carry on)",
+ "status": "done",
  "steps_done": [
   "known",
   "servers",
   "wfs",
   "orgs",
   "catalogs",
-  "downloads"
+  "downloads",
+  "search",
+  "eea"
  ],
  "bands": {
-  "A": 77,
-  "B": 193,
+  "A": 79,
+  "B": 195,
   "C": 0
  },
  "known_good_found": [
@@ -1283,6 +1285,53 @@
     }
    ],
    "note": "Distribution of Himalayan Tahr in New Zealand (2014)",
+   "grade": 6,
+   "band": "A"
+  },
+  "https://services.arcgis.com/xdshiixucwbyzicb/arcgis/rest/services/linz_nz_facilities": {
+   "url": "https://services.arcgis.com/xdsHIIxuCWByZiCB/arcgis/rest/services/LINZ_NZ_Facilities/FeatureServer",
+   "cc": "NZ",
+   "title": "LINZ_NZ_Facilities",
+   "publisher": "Land Information New Zealand",
+   "catalog": "ArcGIS Online search",
+   "licence": "Creative Commons Attribution 4.0 International          You may use this work for commercial purposes.  You must attribute the creator in your own works.",
+   "date": "2026-05-01",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "LINZ NZ Facilities",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "facility_id",
+      "source_facility_id",
+      "name",
+      "source_name",
+      "use_",
+      "use_type",
+      "use_subtype",
+      "estimated_occupancy",
+      "last_modified",
+      "Shape__Area",
+      "Shape__Length",
+      "GlobalID"
+     ],
+     "records": 2681,
+     "sample": [
+      "Auckland Senior College",
+      "Mercury Bay Area School",
+      "Kaitaia Hospital"
+     ],
+     "name_field": "name"
+    }
+   ],
+   "note": "LINZ NZ Facilities",
    "grade": 6,
    "band": "A"
   },
@@ -3060,6 +3109,456 @@
     }
    ],
    "note": "Ecological Districts",
+   "grade": 5,
+   "band": "A"
+  },
+  "https://geospatial.mpi.govt.nz/portal/rest/services/hosted/fish_species_distribution_fsh": {
+   "url": "https://geospatial.mpi.govt.nz/portal/rest/services/Hosted/Fish_Species_Distribution_FSH/FeatureServer",
+   "cc": "NZ",
+   "title": "Hosted/Fish_Species_Distribution_FSH",
+   "publisher": "geospatial.mpi.govt.nz",
+   "catalog": "ArcGIS Online search",
+   "licence": "Availability of Data - contact: Nabis team, Information Management, Ministry for Primary Industries.     Availability of Layer -    Email GIS Team    Release Constraints - None     Access Constraints ",
+   "date": "2026-06-29",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Albacore Tuna - Annual Distribution",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "distributiontype",
+      "layername",
+      "speciesdepthmaximum",
+      "speciescode",
+      "accuracyexplanation",
+      "speciescommonname",
+      "scientificcontact",
+      "speciesscientificname",
+      "speciesmaoriname",
+      "temporalextent",
+      "keywords",
+      "objectname",
+      "positionalaccuracy",
+      "alertwarning",
+      "endangeredstatus",
+      "speciesdepthminimum",
+      "speciesgroup",
+      "habitattype",
+      "layeridentifier"
+     ],
+     "records": 7,
+     "sample": [
+      "Albacore Tuna - Annual Distribution",
+      "Albacore Tuna - Annual Distribution",
+      "Albacore Tuna - Annual Distribution"
+     ],
+     "name_field": "layername"
+    },
+    {
+     "id": 1,
+     "name": "Albacore Tuna - Autumn Distribution",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "distributiontype",
+      "layername",
+      "speciesdepthmaximum",
+      "speciescode",
+      "accuracyexplanation",
+      "speciescommonname",
+      "scientificcontact",
+      "speciesscientificname",
+      "speciesmaoriname",
+      "temporalextent",
+      "keywords",
+      "objectname",
+      "positionalaccuracy",
+      "alertwarning",
+      "endangeredstatus",
+      "speciesdepthminimum",
+      "speciesgroup",
+      "habitattype",
+      "layeridentifier"
+     ],
+     "records": 7,
+     "sample": [
+      "Albacore Tuna - Autumn Distribution",
+      "Albacore Tuna - Autumn Distribution",
+      "Albacore Tuna - Autumn Distribution"
+     ],
+     "name_field": "layername"
+    },
+    {
+     "id": 2,
+     "name": "Albacore Tuna - Spring Distribution",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "distributiontype",
+      "layername",
+      "speciesdepthmaximum",
+      "speciescode",
+      "accuracyexplanation",
+      "speciescommonname",
+      "scientificcontact",
+      "speciesscientificname",
+      "speciesmaoriname",
+      "temporalextent",
+      "keywords",
+      "objectname",
+      "positionalaccuracy",
+      "alertwarning",
+      "endangeredstatus",
+      "speciesdepthminimum",
+      "speciesgroup",
+      "habitattype",
+      "layeridentifier"
+     ],
+     "records": 5,
+     "sample": [
+      "Albacore Tuna - Spring Distribution",
+      "Albacore Tuna - Spring Distribution",
+      "Albacore Tuna - Spring Distribution"
+     ],
+     "name_field": "layername"
+    },
+    {
+     "id": 3,
+     "name": "Albacore Tuna - Summer Distribution",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "distributiontype",
+      "layername",
+      "speciesdepthmaximum",
+      "speciescode",
+      "accuracyexplanation",
+      "speciescommonname",
+      "scientificcontact",
+      "speciesscientificname",
+      "speciesmaoriname",
+      "temporalextent",
+      "keywords",
+      "objectname",
+      "positionalaccuracy",
+      "alertwarning",
+      "endangeredstatus",
+      "speciesdepthminimum",
+      "speciesgroup",
+      "habitattype",
+      "layeridentifier"
+     ],
+     "records": 6,
+     "sample": [
+      "Albacore Tuna - Summer Distribution",
+      "Albacore Tuna - Summer Distribution",
+      "Albacore Tuna - Summer Distribution"
+     ],
+     "name_field": "layername"
+    },
+    {
+     "id": 4,
+     "name": "Albacore Tuna - Winter Distribution",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "distributiontype",
+      "layername",
+      "speciesdepthmaximum",
+      "speciescode",
+      "accuracyexplanation",
+      "speciescommonname",
+      "scientificcontact",
+      "speciesscientificname",
+      "speciesmaoriname",
+      "temporalextent",
+      "keywords",
+      "objectname",
+      "positionalaccuracy",
+      "alertwarning",
+      "endangeredstatus",
+      "speciesdepthminimum",
+      "speciesgroup",
+      "habitattype",
+      "layeridentifier"
+     ],
+     "records": 6,
+     "sample": [
+      "Albacore Tuna - Winter Distribution",
+      "Albacore Tuna - Winter Distribution",
+      "Albacore Tuna - Winter Distribution"
+     ],
+     "name_field": "layername"
+    },
+    {
+     "id": 5,
+     "name": "Alfonsino - Annual Distribution",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "distributiontype",
+      "layername",
+      "speciesdepthmaximum",
+      "speciescode",
+      "accuracyexplanation",
+      "speciescommonname",
+      "scientificcontact",
+      "speciesscientificname",
+      "speciesmaoriname",
+      "temporalextent",
+      "keywords",
+      "objectname",
+      "positionalaccuracy",
+      "alertwarning",
+      "endangeredstatus",
+      "speciesdepthminimum",
+      "speciesgroup",
+      "habitattype",
+      "layeridentifier"
+     ],
+     "records": 56,
+     "sample": [
+      "Alfonsino - Annual Distribution",
+      "Alfonsino - Annual Distribution",
+      "Alfonsino - Annual Distribution"
+     ],
+     "name_field": "layername"
+    },
+    {
+     "id": 6,
+     "name": "Anchovy - Annual Distribution",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "distributiontype",
+      "layername",
+      "speciesdepthmaximum",
+      "speciescode",
+      "accuracyexplanation",
+      "speciescommonname",
+      "scientificcontact",
+      "speciesscientificname",
+      "speciesmaoriname",
+      "temporalextent",
+      "keywords",
+      "objectname",
+      "positionalaccuracy",
+      "alertwarning",
+      "endangeredstatus",
+      "speciesdepthminimum",
+      "speciesgroup",
+      "habitattype",
+      "layeridentifier"
+     ],
+     "records": 9,
+     "sample": [
+      "Anchovy - Annual Distribution",
+      "Anchovy - Annual Distribution",
+      "Anchovy - Annual Distribution"
+     ],
+     "name_field": "layername"
+    },
+    {
+     "id": 7,
+     "name": "Banded Giant Stargazer - Annual Distribution",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "distributiontype",
+      "layername",
+      "speciesdepthmaximum",
+      "speciescode",
+      "accuracyexplanation",
+      "speciescommonname",
+      "scientificcontact",
+      "speciesscientificname",
+      "speciesmaoriname",
+      "temporalextent",
+      "keywords",
+      "objectname",
+      "positionalaccuracy",
+      "alertwarning",
+      "endangeredstatus",
+      "speciesdepthminimum",
+      "speciesgroup",
+      "habitattype",
+      "layeridentifier"
+     ],
+     "records": 12,
+     "sample": [
+      "Banded Giant Stargazer - Annual Distribution",
+      "Banded Giant Stargazer - Annual Distribution",
+      "Banded Giant Stargazer - Annual Distribution"
+     ],
+     "name_field": "layername"
+    },
+    {
+     "id": 8,
+     "name": "Barracouta - Annual Distribution",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "distributiontype",
+      "layername",
+      "speciesdepthmaximum",
+      "speciescode",
+      "accuracyexplanation",
+      "speciescommonname",
+      "scientificcontact",
+      "speciesscientificname",
+      "speciesmaoriname",
+      "temporalextent",
+      "keywords",
+      "objectname",
+      "positionalaccuracy",
+      "alertwarning",
+      "endangeredstatus",
+      "speciesdepthminimum",
+      "speciesgroup",
+      "habitattype",
+      "layeridentifier"
+     ],
+     "records": 23,
+     "sample": [
+      "Barracouta - Annual Distribution",
+      "Barracouta - Annual Distribution",
+      "Barracouta - Annual Distribution"
+     ],
+     "name_field": "layername"
+    },
+    {
+     "id": 9,
+     "name": "Barracouta - Autumn Distribution",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "distributiontype",
+      "layername",
+      "speciesdepthmaximum",
+      "speciescode",
+      "accuracyexplanation",
+      "speciescommonname",
+      "scientificcontact",
+      "speciesscientificname",
+      "speciesmaoriname",
+      "temporalextent",
+      "keywords",
+      "objectname",
+      "positionalaccuracy",
+      "alertwarning",
+      "endangeredstatus",
+      "speciesdepthminimum",
+      "speciesgroup",
+      "habitattype",
+      "layeridentifier"
+     ],
+     "records": 21,
+     "sample": [
+      "Barracouta - Autumn Distribution",
+      "Barracouta - Autumn Distribution",
+      "Barracouta - Autumn Distribution"
+     ],
+     "name_field": "layername"
+    },
+    {
+     "id": 10,
+     "name": "Barracouta - Spring Distribution",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "distributiontype",
+      "layername",
+      "speciesdepthmaximum",
+      "speciescode",
+      "accuracyexplanation",
+      "speciescommonname",
+      "scientificcontact",
+      "speciesscientificname",
+      "speciesmaoriname",
+      "temporalextent",
+      "keywords",
+      "objectname",
+      "positionalaccuracy",
+      "alertwarning",
+      "endangeredstatus",
+      "speciesdepthminimum",
+      "speciesgroup",
+      "habitattype",
+      "layeridentifier"
+     ],
+     "records": 18,
+     "sample": [
+      "Barracouta - Spring Distribution",
+      "Barracouta - Spring Distribution",
+      "Barracouta - Spring Distribution"
+     ],
+     "name_field": "layername"
+    },
+    {
+     "id": 11,
+     "name": "Barracouta - Summer Distribution",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "distributiontype",
+      "layername",
+      "speciesdepthmaximum",
+      "speciescode",
+      "accuracyexplanation",
+      "speciescommonname",
+      "scientificcontact",
+      "speciesscientificname",
+      "speciesmaoriname",
+      "temporalextent",
+      "keywords",
+      "objectname",
+      "positionalaccuracy",
+      "alertwarning",
+      "endangeredstatus",
+      "speciesdepthminimum",
+      "speciesgroup",
+      "habitattype",
+      "layeridentifier"
+     ],
+     "records": 19,
+     "sample": [
+      "Barracouta - Summer Distribution",
+      "Barracouta - Summer Distribution",
+      "Barracouta - Summer Distribution"
+     ],
+     "name_field": "layername"
+    }
+   ],
+   "note": "Fish Species Distribution FSH",
    "grade": 5,
    "band": "A"
   },
@@ -7736,6 +8235,95 @@
    "grade": 4,
    "band": "B"
   },
+  "https://geospatial.mpi.govt.nz/portal/rest/services/marine/marine_protected_areas_full": {
+   "url": "https://geospatial.mpi.govt.nz/portal/rest/services/MARINE/Marine_Protected_Areas_Full/MapServer/1",
+   "cc": "NZ",
+   "title": "MARINE/Marine_Protected_Areas_Full/1",
+   "publisher": "geospatial.mpi.govt.nz",
+   "catalog": "ArcGIS Online search",
+   "licence": "The data provided on this web service (the Data) has been developed for the purpose of providing general information in relation to statutory or operational requirements or to give context to operatio",
+   "date": "2026-10-28",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 1,
+     "name": "Marine Parks",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "IDENTIFIER",
+      "TYPE",
+      "NAME",
+      "SHORT_NAME",
+      "LOCATION",
+      "REFERENCE",
+      "AREA_KM2",
+      "WARNING",
+      "NOTES",
+      "RESTRICTION",
+      "GAZ_DATE",
+      "IN_FORCE_DATE",
+      "ORIG_LEGAL_INSTRUMENT",
+      "LATEST_LEGAL_INSTRUMENT",
+      "LEGAL_AREA",
+      "Portal_url",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 4,
+     "sample": [
+      "Mimiwhangata Marine Park",
+      "Tawharanui Marine Park",
+      "Tawharanui Regional Park"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 1,
+     "name": "Marine Parks",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "IDENTIFIER",
+      "TYPE",
+      "NAME",
+      "SHORT_NAME",
+      "LOCATION",
+      "REFERENCE",
+      "AREA_KM2",
+      "WARNING",
+      "NOTES",
+      "RESTRICTION",
+      "GAZ_DATE",
+      "IN_FORCE_DATE",
+      "ORIG_LEGAL_INSTRUMENT",
+      "LATEST_LEGAL_INSTRUMENT",
+      "LEGAL_AREA",
+      "Portal_url",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 4,
+     "sample": [
+      "Mimiwhangata Marine Park",
+      "Tawharanui Marine Park",
+      "Tawharanui Regional Park"
+     ],
+     "name_field": "NAME"
+    }
+   ],
+   "note": "Marine Parks",
+   "grade": 4,
+   "band": "B"
+  },
   "https://services1.arcgis.com/3jjydyg3oajxu6ho/arcgis/rest/services/monitoring_groups": {
    "url": "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Monitoring_Groups/FeatureServer",
    "cc": "NZ",
@@ -8377,6 +8965,50 @@
    ],
    "note": "Pesticides - Proposed Application",
    "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "B"
+  },
+  "https://gis.ecan.govt.nz/arcgis/rest/services/public/soe_pannz": {
+   "url": "https://gis.ecan.govt.nz/arcgis/rest/services/Public/SOE_PANNZ/MapServer",
+   "cc": "NZ",
+   "title": "Public/SOE_PANNZ",
+   "publisher": "gis.ecan.govt.nz",
+   "catalog": "ArcGIS Online search",
+   "licence": "Landcare Research",
+   "date": "2019-01-16",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Level of Protection",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Class",
+      "Rank",
+      "Shape_Leng",
+      "SOURCECODE",
+      "QARCODE",
+      "CREATEDBY",
+      "CREATEDDATE",
+      "MODIFIEDBY",
+      "MODIFIEDDATE",
+      "PERIMETER_M",
+      "AREA_M2",
+      "AREA_HA",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 7599
+    }
+   ],
+   "note": "Canterbury - Legally protected areas",
    "grade": 4,
    "band": "B"
   },

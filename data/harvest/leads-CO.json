@@ -1,0 +1,73 @@
+{
+ "about": "World harvester leads for Colombia (official park GIS only; leads for chat 8, never added to the key by the bot).",
+ "cc": "CO",
+ "date": "2026-10-28",
+ "status": "done",
+ "steps_done": [
+  "known",
+  "servers",
+  "wfs",
+  "orgs",
+  "catalogs",
+  "downloads",
+  "search",
+  "eea"
+ ],
+ "bands": {
+  "A": 0,
+  "B": 1,
+  "C": 0
+ },
+ "known_good_found": [],
+ "known_good_missed": [],
+ "leads": {
+  "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/runap": {
+   "url": "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/runap/MapServer/0",
+   "cc": "CO",
+   "title": "pnn/runap/0",
+   "publisher": "mapas.parquesnacionales.gov.co",
+   "catalog": "ArcGIS Online search",
+   "licence": "RUNAP © 2025 por  Parques Nacionales Naturales  licenciado bajo  CC BY-SA 4.0",
+   "date": "2026-10-23",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Registro Unico Nacional AP",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "ap_id",
+      "condicion",
+      "ap_nombre",
+      "ap_categoria",
+      "ap_shape_id",
+      "fecha_inscrita",
+      "fecha_registro",
+      "organizacion",
+      "nit",
+      "area_ha_total_resolucion",
+      "area_ha_maritimo_resolucion",
+      "area_ha_terrestre_resolucion",
+      "centroide_x",
+      "centroide_y",
+      "area_ha_total_geografica",
+      "area_ha_maritima_geografica",
+      "area_ha_terrestre_geografica",
+      "territorial",
+      "sirap"
+     ],
+     "count_err": "no answer three times: left alone for a day"
+    }
+   ],
+   "note": "runap - Registro Unico Nacional AP_server",
+   "grade": 4,
+   "band": "B"
+  }
+ }
+}
