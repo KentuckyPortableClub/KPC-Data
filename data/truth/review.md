@@ -4,7 +4,7 @@ Updated 2026-10-28. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 
 | area | parks | with outline | agree | OFF (>15%) | unsure | no size | ours unknown | handover hints | retired | weak (≤4) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| US-KY | 193 | 189 | 99 | **7** | 10 | 73 | 0 | 7 | 0 | 28 |
+| US-KY | 193 | 189 | 99 | **8** | 9 | 73 | 0 | 7 | 0 | 29 |
 
 ## US-KY
 
@@ -19,6 +19,7 @@ Updated 2026-10-28. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 - US-12752 Green River State Natural Area: ours 304 ac vs agency 440 acres (= 440 ac; 31% off) · cause: agency bigger: our outline may miss a tract · [eec.ky.gov](https://eec.ky.gov/Nature-Preserves/Locations/Pages/Rush-Island-Bottoms.aspx) · “e hiking trails as well and canoe access. Access Type: Open to Public County: Hart Region: Green River Region Size: 440 Owner: ​Office of Kentucky Nature Preser”
 - US-0703 Fort Donelson National Battlefield: ours 1,295 ac vs agency 1007 acres (= 1,007 ac; 29% off) · cause: boundary vs owned: our line may be the authorized boundary, the agency counts owned land (rule 1: use owned land) · stale: agency figure is 'as of 2010' · [www.nps.gov](https://www.nps.gov/fodo/learn/management/statistics.htm) · “Site All NPS Exiting nps.gov Cancel Fort Donelson National Battlefield Contact Us Park Statistics Park Size: 1007 acres (as of 2010) Annual Visitation: Total Vi”
 - US-4689 Kentucky Ridge State Forest: ours 11,736 ac vs agency 15,251 acres (= 15,251 ac; 23% off) · cause: agency bigger: our outline may miss a tract · [eec.ky.gov](https://eec.ky.gov/Natural-Resources/Forestry/ky-state-forests/Pages/Kentucky-Ridge-State-Forest.aspx) · “cky Ridge State Forest Main Content ​​​​Kentucky Ridge State Forest ​​Kentucky Ridge State Forest consists of 15,251 acres and was acquired by lease in 1930, as”
+- US-1264 Levi Jackson Wilderness Road State Park: ours 722 ac vs agency 896 acres (= 896 ac; 19% off) · cause: agency bigger: our outline may miss a tract · [levijacksonpark.com](https://levijacksonpark.com/history/) · “erness Road Park is a city park located just south of London, Kentucky in Laurel County. The park encompasses 896 acres and includes a section of the Wilderness”
 
 **Unsure (no clean total found; the nearest number is only a guess):**
 
@@ -27,7 +28,6 @@ Updated 2026-10-28. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 - US-0538 Reelfoot National Wildlife Refuge: ours 4,636 ac · cause: the agency figure may cover several states; our outline may be this state's share only · [www.fws.gov](https://www.fws.gov/refuge/reelfoot/visit-us)
 - US-10104 Red River National Wild and Scenic River: ours 1,049 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 708,000 acres, no total words near it) · [www.fs.usda.gov](https://www.fs.usda.gov/r08/danielboone)
 - US-10107 Big South Fork National Wild and Scenic River: ours 2,487 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-1264 Levi Jackson Wilderness Road State Park: ours 722 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-3792 Land Between the Lakes National Recreation Area: ours 106,948 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 170,000 acres, no total words near it) · [landbetweenthelakes.us](https://landbetweenthelakes.us/)
 - US-3801 Clifty Wilderness Area: ours 12,484 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 708,000 acres, no total words near it) · [www.fs.usda.gov](https://www.fs.usda.gov/r08/danielboone)
 - US-4526 George Washington & Jefferson National Forest: ours 856 ac · cause: the agency figure may cover several states; our outline may be this state's share only · [www.fs.usda.gov](https://www.fs.usda.gov/gwj)
@@ -48,4 +48,4 @@ Updated 2026-10-28. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 
 ## Kentucky test gate
 
-- 2026-10-28: **FAIL** · US-1264 MISS (Levi Jackson OFF (722 vs ~896) + a hint naming the City of London; verdict unsure, agency None) · US-8144 ok (Otter Creek: a hint naming Meade; verdict agree, agency 2,261 acre) · US-10105 ok (Green WSR: official page is not Mammoth Cave's (/maca/); verdict no size on page, agency None) · US-10104 ok (Red River WSR: official acres is not 879 (the "708, 879" parse); verdict unsure, agency 708,000 acres) · US-0295 ok (Clarks River NWR: official acres is not the 73,962 land grant; verdict unsure, agency 6 million acres) · US-0703+US-3790 ok (Fort Donelson and Fort Heiman do not share one official page; verdict off, agency 1007 acres) · US-10098 ok (Green River NWR OFF (clean 9,500 vs ours); verdict off, agency 9,500 acres) · US-4689 ok (Kentucky Ridge SF OFF (15,251 vs 11,736 = 23%); verdict off, agency 15,251 acres) · US-3800 ok (Cedar Creek Lake WMA OFF (ours 2,390 vs 796); verdict off, agency 796 acres) · US-0050 ok (Mammoth Cave OFF with cause 'boundary vs owned'; verdict off, agency 52,830 acres)
+- 2026-10-28: **PASS** · US-1264 ok (Levi Jackson OFF (722 vs ~896) + a hint naming the City of London; verdict off, agency 896 acres) · US-8144 ok (Otter Creek: a hint naming Meade; verdict agree, agency 2,261 acre) · US-10105 ok (Green WSR: official page is not Mammoth Cave's (/maca/); verdict no size on page, agency None) · US-10104 ok (Red River WSR: official acres is not 879 (the "708, 879" parse); verdict unsure, agency 708,000 acres) · US-0295 ok (Clarks River NWR: official acres is not the 73,962 land grant; verdict unsure, agency 6 million acres) · US-0703+US-3790 ok (Fort Donelson and Fort Heiman do not share one official page; verdict off, agency 1007 acres) · US-10098 ok (Green River NWR OFF (clean 9,500 vs ours); verdict off, agency 9,500 acres) · US-4689 ok (Kentucky Ridge SF OFF (15,251 vs 11,736 = 23%); verdict off, agency 15,251 acres) · US-3800 ok (Cedar Creek Lake WMA OFF (ours 2,390 vs 796); verdict off, agency 796 acres) · US-0050 ok (Mammoth Cave OFF with cause 'boundary vs owned'; verdict off, agency 52,830 acres)
