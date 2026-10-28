@@ -48,7 +48,7 @@ REFRESH_DAYS = int(os.environ.get('REFRESH_DAYS') or 7)
 TOL = 0.15
 PDF_FIRST = 400_000
 TODAY = time.strftime('%Y-%m-%d')
-VER = 4   # Oct 28 (chat 11's KY grade): '708, 879' parse + summed lakes, other-unit pages, history words + stale years, unsure carries a cause, own-page handover hints, quoted URLs, 10-row gate, same-agency label
+VER = 5   # Oct 28 (chat 11's KY grade): '708, 879' parse + summed lakes, other-unit pages, history words + stale years, unsure carries a cause, own-page handover hints, quoted URLs, 10-row gate, same-agency label
 QUEUE = ['US-KY',
          'US-TN', 'US-NC', 'US-VA', 'US-WV', 'US-GA', 'US-AL', 'US-SC', 'US-FL', 'US-MS',
          'US-IN', 'US-IL', 'US-MO', 'US-WI', 'US-MN', 'US-IA', 'US-ND', 'US-SD',
@@ -85,7 +85,7 @@ NOTTOTAL = re.compile(HISTORY.pattern + '|' + PART.pattern, re.I)   # kept for r
 HARD_PART = re.compile(r'acre[- ]lake|\blake\b[^.]{0,30}\bacres?\b|acres? (?:of|in) (?:water|lakes?|ponds?|wetlands?|crops?|timber|hunting|fields?|habitat|\w+ habitat|wilderness|forest lands?|national forest)|per acre|acre[- ]?feet|impoundment|campground|campsite|parking|picnic|golf|cemetery|food plots?|moist[- ]soil|\bconserve\b', re.I)
 # candidates never chosen as the official number (history, another unit, a page of another unit, a summed part)
 EXCLUDED = ('history', 'part of a sum', 'another park / unit named in the sentence', "a page of another unit; the sentence does not name this park",
-            'a national unit on a state park page', 'a state unit on a national park page')
+            'a national unit on a state park page', 'a state unit on a national park page', 'part (a lake, a purchase, a campground…)', 'a map label (no sentence)')   # Oct 28 regrade 2: a lake or a map label is never the guess shown
 NO_TOTAL_CAUSE = 'no total-looking sentence: numbers found were parts or other units'
 # a CLEAN total: the park's own name in the sentence + a total word, or a labelled size row ('Park Size: 1007 acres')
 CLEAN = re.compile(r'consists? of|encompass|compris|\bcovers?\b|\btotals?\b|\bspans\b|is an? [\d,]+(?:\.\d+)?[- ]acre|acre (?:park|forest|refuge|wma|area|preserve|reserve|site|tract|property|monument|battlefield|recreation area)|\bsize\b|total area|park size|land area|acreage', re.I)
@@ -169,7 +169,7 @@ def other_unit_named(sent, me):
     return False
 
 
-def sizes_in(text, name, other_unit=False):
+def sizes_in(text, name, other_unit=False, is_pdf=False):
     """Every size mention in a page: [{'acres','as','line','total','clean','why','stale'}].
     total = looks like the park's whole size (a total word or the park's name near, and not a part / history / another unit);
     clean = a total sentence that names THIS park (or a labelled 'Park Size:' row): a clean number more than 15% off = OFF.
@@ -205,6 +205,7 @@ def sizes_in(text, name, other_unit=False):
             name_in = bool(me6 and me6 in core(sent)) or (label and bool(me6 and me6 in core(text[max(0, m.start() - 400):m.start()])))
             why = ''
             looks = bool(TOTALWORD.search(near)) or any(w in near for w in cn) or label
+            if is_pdf and not (label or (name_in and len(sent.split()) >= 6)): looks = False; why = 'a map label (no sentence)'   # Cumberland Gap '15 acres', Taylorsville '248': labels on a map PDF
             if any(a0 <= m.start() < b0 for a0, b0 in sums): looks = False; why = 'part of a sum'
             if HISTORY.search(sl) or OLD_YEAR.search(left_of(text, m.start())): looks = False; why = 'history'
             hard = bool(HARD_PART.search(strip_name(sl))) and not label; soft = bool(PART.search(strip_name(sl))) and not label   # the SAME sentence, not the neighbour's
@@ -600,7 +601,7 @@ def one_park(ref, park, ours, web, docs, ky, retired, bs):
         r['pages'].append({'url': u, 'why': why, 'status': st, **({'other_unit': True} if other else {})})
         if st != 'ok' or not text: continue
         if 'news' not in why:   # fix 7: news pages never feed the size read
-            for s in sizes_in(text, park['n'], other): s['url'] = u; found.append(s)
+            for s in sizes_in(text, park['n'], other, kind == 'pdf'): s['url'] = u; found.append(s)
         if not other and (why.startswith("the park's page") or why.startswith('about') or 'news' in why or 'statistics' in why or 'about page' in why):
             r['handover'].extend(hints_in(text, park['n'], u, why, mg))   # fix 5: hints only from the park's own pages
         if kind == 'page' and not has_total() and why.startswith("the park's page") and len(r['pages']) < 7:

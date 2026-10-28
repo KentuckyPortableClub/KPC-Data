@@ -33,7 +33,7 @@ LINKS = pathlib.Path(os.environ.get('LINKS') or 'links')
 T0 = time.time(); LIMIT = float(os.environ.get('MINUTES') or 55) * 60
 REFRESH_DAYS = int(os.environ.get('REFRESH_DAYS') or 90)
 TODAY = time.strftime('%Y-%m-%d')
-VER = 3   # Oct 28 ~6:40 AM (chat 11's grade + regrade): schedule / labelled rows count; questions, events, '$N million' never; attraction hours labelled
+VER = 4   # Oct 28 8 AM: the page-list unpack fix; VER 3 was the 6:40 AM (chat 11's grade + regrade): schedule / labelled rows count; questions, events, '$N million' never; attraction hours labelled
 QUEUE = T.QUEUE
 STAT = {'parks': 0, 'pages_read': 0, 'hours': 0, 'fees': 0, 'permits': 0, 'none': 0, 'no_page': 0, 'skipped_fresh': 0, 'errors': 0}
 

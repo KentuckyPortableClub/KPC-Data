@@ -35,6 +35,7 @@ def left_areas(): return [a for a in QUEUE if any(status_of(b, a) not in ('done'
 
 def run_bot(bot, area, minutes, test):
     env = dict(os.environ, AREAS=area, MINUTES=str(minutes), LINKS=LINKS, TEST='1' if test else '0')
+    if (os.environ.get('AREAS') or '').strip(): env['REFRESH_DAYS'] = '0'   # a NAMED area is a rerun: never skip parks as 'fresh'
     notice(f'{NAME[bot]}: {area} ({minutes:.0f} min)')
     p = subprocess.run([sys.executable, SCRIPT[bot]], env=env, capture_output=True, text=True)
     out = (p.stdout or '') + (p.stderr or '')
