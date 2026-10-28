@@ -2,16 +2,14 @@
  "about": "World harvester progress (resumable).",
  "countries": {
   "GB": {
-   "status": "done",
+   "status": "paused (out of time, will carry on)",
    "started": "2026-10-28",
    "done": [
-    "https://cagmap.snh.gov.uk/arcgis/rest/services/snh_protected_sites/MapServer",
-    "https://cagmap.snh.gov.uk/arcgis/rest/services/snh_protected_sites/MapServer/3",
     "https://environment.data.gov.uk/arcgis/rest/services/RPA/CropMapOfEngland2021/MapServer",
     "https://map.cornwall.gov.uk/arcgis/rest/services/CCmap/MapServer/131",
-    "https://map.cornwall.gov.uk/arcgis/rest/services/CCmap/MapServer/60",
     "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Demographic_WebMercator/MapServer/8",
     "https://mmo.cloud.esriuk.com/server/rest/services/MGD_Protected_Conservation_Sites/SAC_Marine_Components_UK_JNCC/MapServer",
+    "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/ArcGIS/rest/services/Core_Data_Non_WMS/FeatureServer",
     "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/arcgis/rest/services/0157_OtherData_WFL1/FeatureServer",
     "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/arcgis/rest/services/0157_ProjectData_WFL1/FeatureServer",
     "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/arcgis/rest/services/0168_Cerulean_Project_Data/FeatureServer",
@@ -88,9 +86,6 @@
     "https://services-eu1.arcgis.com/ZOdPfBS3aqqDYPUQ/arcgis/rest/services/Conservation_Areas/FeatureServer",
     "https://services-eu1.arcgis.com/nvL9EDc30lviBdlc/arcgis/rest/services/esri_tpo_woodland/FeatureServer",
     "https://services-eu1.arcgis.com/nvL9EDc30lviBdlc/arcgis/rest/services/tpo_tree_point/FeatureServer",
-    "https://services.arcgis.com/JJzESW51TqeY9uat/ArcGIS/rest/services/CRoW_Act_2000_Access_Layer/FeatureServer/0",
-    "https://services.arcgis.com/JJzESW51TqeY9uat/ArcGIS/rest/services/CRoW_Act_2000_Section_4_Conclusive_Registered_Common_Land/FeatureServer/0",
-    "https://services.arcgis.com/JJzESW51TqeY9uat/ArcGIS/rest/services/Country_Parks_England/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/ArcGIS/rest/services/National_Trails_England/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Access_Network_Mapping_England/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Agricultural_Land_Classification_Post_1988/FeatureServer",
@@ -99,7 +94,6 @@
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Annex_1_Alkaline_Fens_Transition_Mire_Quaking_Bog/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Aquaculture/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Areas_of_Outstanding_Natural_Beauty_England/FeatureServer",
-    "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Areas_of_Outstanding_Natural_Beauty_England/FeatureServer/0",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Avian_Influenza_Prevention_Zones/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Biogeographic_Zones_Living_England_2021/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Biosphere_Reserves_England/FeatureServer",
@@ -121,7 +115,6 @@
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Conservation_and_Enhancement_Scheme_Agreements_England/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Control_Zones_Public/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Country_Parks_England/FeatureServer",
-    "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Country_Parks_England/FeatureServer/0",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Countryside_Stewardship_Scheme_2016_Management_Areas_England/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Countryside_Stewardship_Scheme_2016_Options_England/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Countryside_Stewardship_Scheme_Agreements/FeatureServer",
@@ -161,13 +154,10 @@
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/GCN_Risk_Zones_Cambridgeshire/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/GCN_Risk_Zones_Cheshire/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/GCN_Risk_Zones_Cumbria/FeatureServer",
-    "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/GCN_Risk_Zones_Derbyshire/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/GCN_Risk_Zones_Dorset/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/GCN_Risk_Zones_Essex/FeatureServer",
-    "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/GCN_Risk_Zones_Greater_Manchester/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/GCN_Risk_Zones_Hertfordshire/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/GCN_Risk_Zones_Kent/FeatureServer",
-    "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/GCN_Risk_Zones_Lancashire/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/GCN_Risk_Zones_Leicestershire_Rutland_Rushcliffe_and_South_Kesteven/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/GCN_Risk_Zones_Norfolk_and_Suffolk/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/GCN_Risk_Zones_North_East_Yorkshire/FeatureServer",
@@ -218,7 +208,6 @@
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Local_Nature_Partnerships_England/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Local_Nature_Recovery_Strategy_Areas_England/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Local_Nature_Reserves_England/FeatureServer",
-    "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Local_Nature_Reserves_England/FeatureServer/0",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Long_Term_Monitoring_Network_Soils_Monitoring_Plots_England/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Long_Term_Monitoring_Network_Vegetation_Monitoring_Plots_England/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Long_established_Woodland_England/FeatureServer",
@@ -238,7 +227,6 @@
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/MPA_S4_EngJuris_SG_geargroup/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/MPA_S4_WholeSite_BTG/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/MPA_S4_WholeSite_MG_v2/FeatureServer",
-    "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/MPA_S4_WholeSite_SG_gearcode/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/MPA_S4_WholeSite_SG_geargroup/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Marine_Conservation_Zones_England/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Marine_Protected_Area_S3_MMO_DTv2/FeatureServer",
@@ -312,7 +300,6 @@
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Short_Sea_Shipping_Port_Service_Craft_Update/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Short_Sea_Shipping_Recreational_Vessels_Update/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Short_Sea_Shipping_Tankers_Update/FeatureServer",
-    "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/South_Dartmoor_SSSI_NVC/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/SpatialFloodDefences/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Special_Areas_of_Conservation_England/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Special_Protection_Areas_England/FeatureServer",
@@ -357,7 +344,6 @@
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/epm01_vegetation_bgz9_s_f/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/peaty_soil_extent_v1/FeatureServer",
     "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/peaty_soil_extent_v1_s/FeatureServer",
-    "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/LPA_APR_2023_UK_BUC_V2/FeatureServer",
     "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/National_Statistics_Postcode_Lookup_(February_2026)_for_the_UK_(Hosted_Table)/FeatureServer",
     "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/National_Statistics_Postcode_Lookup_(May_2026)_for_the_United_Kingdom/FeatureServer",
     "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/ONSPD_AUG_2025_UK/FeatureServer",
@@ -365,8 +351,6 @@
     "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/ONS_Postcode_Directory_(February_2026)_for_the_UK_(Hosted_Table)/FeatureServer",
     "https://services1.arcgis.com/LM9GyVFsughzHdbO/arcgis/rest/services/Onshore_Windfarm_Proposals/FeatureServer",
     "https://services2.arcgis.com/LrUbY6lLLgV3tEa5/arcgis/rest/services/Northumberland_National_Park/FeatureServer",
-    "https://services5.arcgis.com/C36oYlzCOmDbFbhM/arcgis/rest/services/Local_Plan_Ungrouped/FeatureServer",
-    "https://services8.arcgis.com/WjAwg84s4EayFLBd/arcgis/rest/services/Important_Plant_Areas_2020_region/FeatureServer",
     "https://tiles-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/arcgis/rest/services/AdmiraltyChartScotland/MapServer",
     "https://tiles-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/arcgis/rest/services/IHLS_Heatmap_2012to2025_Online/MapServer",
     "https://tiles-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/arcgis/rest/services/NINEL_2016to2023_Online/MapServer",
@@ -379,7 +363,6 @@
     "https://tiles.arcgis.com/tiles/JJzESW51TqeY9uat/arcgis/rest/services/Licensing_Fast_track_MMO_Navigation/MapServer",
     "https://tiles.arcgis.com/tiles/JJzESW51TqeY9uat/arcgis/rest/services/Licensing_Fast_track_MMO_inshore_offshore_area/MapServer",
     "https://tiles.arcgis.com/tiles/JJzESW51TqeY9uat/arcgis/rest/services/Licensing_Fast_track_MPA/MapServer",
-    "https://tiles.arcgis.com/tiles/JJzESW51TqeY9uat/arcgis/rest/services/Licensing_Fast_track_Military_or_Defence/MapServer",
     "https://tiles.arcgis.com/tiles/JJzESW51TqeY9uat/arcgis/rest/services/Licensing_Fast_track_cables_pipelines/MapServer",
     "https://tiles.arcgis.com/tiles/JJzESW51TqeY9uat/arcgis/rest/services/Licensing_Frast_track_Heritage/MapServer",
     "https://tiles.arcgis.com/tiles/JJzESW51TqeY9uat/arcgis/rest/services/PoultryPopulationDensity2023/MapServer",
@@ -389,90 +372,43 @@
     "https://tiles.arcgis.com/tiles/JJzESW51TqeY9uat/arcgis/rest/services/Spatial_Prioritisation_of_Below_Ground_Carbon_Storage_2023__England_/MapServer",
     "https://tiles.arcgis.com/tiles/JJzESW51TqeY9uat/arcgis/rest/services/Spatial_Prioritisation_of_Carbon_Sequestration_and_Loss_from_Land_Use_2023__England_/MapServer",
     "https://tiles.arcgis.com/tiles/JJzESW51TqeY9uat/arcgis/rest/services/Spatial_Prioritisation_of_Total_Carbon_Storage_2023__England_/MapServer",
+    "https://ukair.maps.rcdo.co.uk/ukairserver/rest/services/Hosted/Benzene_annual_mean_Local_Authority_2022/FeatureServer",
     "https://ukair.maps.rcdo.co.uk/ukairserver/rest/services/Hosted/Cadmium_annual_mean_Local_Authority_2021/FeatureServer",
-    "https://ukair.maps.rcdo.co.uk/ukairserver/rest/services/Hosted/Lead_annual_mean_Local_Authority_2020/FeatureServer",
     "https://ukair.maps.rcdo.co.uk/ukairserver/rest/services/Hosted/Nitrogen_Dioxide_annual_mean_Local_Authority_2020/FeatureServer",
     "https://ukair.maps.rcdo.co.uk/ukairserver/rest/services/Hosted/Nitrogen_Dioxide_annual_mean_Local_Authority_2021/FeatureServer",
     "https://ukair.maps.rcdo.co.uk/ukairserver/rest/services/Hosted/Nitrogen_Dioxide_annual_mean_Local_Authority_2022/FeatureServer",
     "https://ukair.maps.rcdo.co.uk/ukairserver/rest/services/Hosted/Nitrogen_Dioxide_annual_mean_Supplementary_Measurements_2021/FeatureServer",
     "https://ukair.maps.rcdo.co.uk/ukairserver/rest/services/Hosted/Nitrogen_Dioxide_annual_mean_Zone_Agglomeration_2022/FeatureServer",
-    "https://ukair.maps.rcdo.co.uk/ukairserver/rest/services/Hosted/Nitrogen_Dioxide_hourly_mean_Local_Authority_2021/FeatureServer",
-    "https://ukair.maps.rcdo.co.uk/ukairserver/rest/services/Hosted/Ozone_AOT40_Local_Authority_2021/FeatureServer",
     "https://ukair.maps.rcdo.co.uk/ukairserver/rest/services/Hosted/Ozone_AOT40_avg_over_5y_Local_Authority_2020/FeatureServer",
     "https://ukair.maps.rcdo.co.uk/ukairserver/rest/services/Hosted/Ozone_max_daily_8hr_running_mean_Local_Authority_2021/FeatureServer",
     "https://ukair.maps.rcdo.co.uk/ukairserver/rest/services/Hosted/Ozone_max_daily_8hr_running_mean_avg_over_3y_Zone_Agglomeration_2021/FeatureServer",
     "https://ukair.maps.rcdo.co.uk/ukairserver/rest/services/Hosted/Ozone_max_daily_8hr_running_mean_over_120_avg_over_3y_Modelled_Background_2020/FeatureServer",
     "https://ukair.maps.rcdo.co.uk/ukairserver/rest/services/Hosted/Ozone_max_daily_8hr_running_mean_over_120_avg_over_3y_Modelled_Background_2021/FeatureServer",
-    "https://ukair.maps.rcdo.co.uk/ukairserver/rest/services/Hosted/PM10_daily_mean_Local_Authority_2020/FeatureServer",
     "https://ukair.maps.rcdo.co.uk/ukairserver/rest/services/Hosted/PM10_daily_mean_Zone_Agglomeration_2021/FeatureServer",
+    "https://ukair.maps.rcdo.co.uk/ukairserver/rest/services/Hosted/PM10_daily_mean_Zone_Agglomeration_2022/FeatureServer",
     "https://ukair.maps.rcdo.co.uk/ukairserver/rest/services/Hosted/PM2_5_annual_mean_Local_Authority_2022/FeatureServer",
+    "https://ukair.maps.rcdo.co.uk/ukairserver/rest/services/Hosted/Sulphur_Dioxide_annual_mean_Local_Authority_2020/FeatureServer",
     "https://ukair.maps.rcdo.co.uk/ukairserver/rest/services/Hosted/Sulphur_Dioxide_annual_mean_Zone_Agglomeration_2020/FeatureServer",
-    "https://ukair.maps.rcdo.co.uk/ukairserver/rest/services/Hosted/Sulphur_Dioxide_daily_mean_Local_Authority_2021/FeatureServer"
+    "https://ukair.maps.rcdo.co.uk/ukairserver/rest/services/Hosted/Sulphur_Dioxide_winter_mean_Local_Authority_2020/FeatureServer"
    ],
    "log": [
     {
-     "step": "org",
-     "what": "org 0zuv5ZFEncBv7NQQ (GoBe Consultants): 3 services read"
+     "step": "known",
+     "what": "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/ArcGIS/rest/services/Core_Data_Non_WMS/FeatureServer/50",
+     "found": true
+    },
+    {
+     "step": "known",
+     "what": "https://services.arcgis.com/JJzESW51TqeY9uat/ArcGIS/rest/services/National_Trails_England/FeatureServer",
+     "found": true
     },
     {
      "step": "org",
-     "what": "org JJzESW51TqeY9uat: Unterminated string starting at: line 1 column 398561 (char "
-    },
-    {
-     "catalog": "https://data.gov.uk",
-     "keyword": "national park",
-     "error": "HTTP 400"
-    },
-    {
-     "catalog": "https://data.gov.uk",
-     "keyword": "nature reserve",
-     "error": "HTTP 400"
-    },
-    {
-     "catalog": "https://data.gov.uk",
-     "keyword": "country park",
-     "error": "HTTP 400"
-    },
-    {
-     "catalog": "https://data.gov.uk",
-     "keyword": "national landscape",
-     "error": "HTTP 400"
-    },
-    {
-     "agol": "national park",
-     "hits": 50,
-     "read": 1
-    },
-    {
-     "agol": "nature reserve",
-     "hits": 50,
-     "read": 0
-    },
-    {
-     "agol": "country park",
-     "hits": 36,
-     "read": 0
-    },
-    {
-     "agol": "national landscape",
-     "error": "Unterminated string starting at: line 1 column 356932 (char "
-    },
-    {
-     "agol": "open access land",
-     "hits": 15,
-     "read": 0
-    },
-    {
-     "agol": "national trail",
-     "error": "Unterminated string starting at: line 1 column 362969 (char "
+     "what": "org 0zuv5ZFEncBv7NQQ (GoBe Consultants): 80 services read"
     },
     {
      "step": "org",
-     "what": "org 0zuv5ZFEncBv7NQQ (): 0 services read"
-    },
-    {
-     "step": "org",
-     "what": "org JJzESW51TqeY9uat (Defra group ArcGIS Online orga): 293 services read"
+     "what": "org JJzESW51TqeY9uat (Defra group ArcGIS Online orga): 288 services read"
     },
     {
      "catalog": "https://ckan.publishing.service.gov.uk",
@@ -496,102 +432,19 @@
     },
     {
      "agol": "national park",
-     "hits": 50,
-     "read": 0
-    },
-    {
-     "agol": "nature reserve",
-     "hits": 50,
-     "read": 0
-    },
-    {
-     "agol": "country park",
-     "hits": 36,
-     "read": 0
-    },
-    {
-     "agol": "national landscape",
-     "hits": 50,
-     "read": 0
-    },
-    {
-     "agol": "open access land",
-     "hits": 15,
-     "read": 0
-    },
-    {
-     "agol": "national trail",
-     "hits": 37,
-     "read": 0
-    },
-    {
-     "step": "org",
-     "what": "org 0zuv5ZFEncBv7NQQ (): 0 services read"
-    },
-    {
-     "step": "org",
-     "what": "org JJzESW51TqeY9uat (Defra group ArcGIS Online orga): 2 services read"
-    },
-    {
-     "catalog": "https://ckan.publishing.service.gov.uk",
-     "keyword": "national park",
-     "error": "robots.txt says no"
-    },
-    {
-     "catalog": "https://ckan.publishing.service.gov.uk",
-     "keyword": "nature reserve",
-     "error": "robots.txt says no"
-    },
-    {
-     "catalog": "https://ckan.publishing.service.gov.uk",
-     "keyword": "country park",
-     "error": "robots.txt says no"
-    },
-    {
-     "catalog": "https://ckan.publishing.service.gov.uk",
-     "keyword": "national landscape",
-     "error": "robots.txt says no"
-    },
-    {
-     "agol": "national park",
-     "hits": 50,
-     "read": 1
-    },
-    {
-     "agol": "nature reserve",
-     "hits": 50,
-     "read": 1
-    },
-    {
-     "agol": "country park",
-     "hits": 36,
-     "read": 2
-    },
-    {
-     "agol": "national landscape",
-     "hits": 50,
-     "read": 1
-    },
-    {
-     "agol": "open access land",
-     "hits": 15,
-     "read": 2
-    },
-    {
-     "agol": "national trail",
-     "hits": 37,
-     "read": 1
+     "hits": 47,
+     "read": 10
     }
    ],
    "steps": [
-    "orgs",
+    "known",
     "servers",
     "wfs",
+    "orgs",
     "catalogs",
-    "search",
-    "eea"
+    "downloads"
    ],
-   "finished": "2026-10-28"
+   "redo": "2026-10-28"
   },
   "JP": {
    "status": "done",
@@ -1124,24 +977,30 @@
  "last_run": {
   "date": "2026-10-28",
   "stats": {
-   "requests": 1577,
+   "requests": 1684,
    "hits": 0,
-   "leads": 34,
-   "already_read": 1,
-   "skipped": 45,
-   "not_official": 0,
-   "robots": 0,
+   "leads": 299,
+   "already_read": 6,
+   "skipped": 70,
+   "not_official": 30,
+   "robots": 5,
    "strikes": 3,
-   "errors": 1
+   "errors": 9
   },
   "countries": [
-   "AU paused: 47 leads (A 38), known-good found 2 of 5"
+   "GB paused: 297 leads (A 161), known-good found 2 of 2"
   ],
   "dead_servers": [
-   "gisext.qfes.qld.gov.au"
+   "mmo.cloud.esriuk.com"
   ],
-  "robots_refused": {},
-  "robots_said": {},
+  "robots_refused": {
+   "ckan.publishing.service.gov.uk": 4,
+   "map.cornwall.gov.uk": 1
+  },
+  "robots_said": {
+   "ckan.publishing.service.gov.uk": "User-agent: * | Disallow: /",
+   "map.cornwall.gov.uk": "User-agent: * | Disallow: /"
+  },
   "robots_exempted_hosts (HQ ruling Oct 27: ArcGIS REST API paths only)": {}
  },
  "eea_done": "2026-10-28"

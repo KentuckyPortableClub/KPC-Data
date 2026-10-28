@@ -33,6 +33,14 @@
    "known_good": [],
    "research": [
     ".claude/build/research/WORLD/KPC_W_JP_desk.md"
+   ],
+   "downloads": [
+    {
+     "url": "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-A10-v3_1.html",
+     "title": "MLIT National Land Numerical Information A10: natural park areas",
+     "publisher": "Ministry of Land, Infrastructure, Transport and Tourism (MLIT)",
+     "licence": "see the page (MLIT terms)"
+    }
    ]
   },
   "GB": {
@@ -86,11 +94,11 @@
    ],
    "research": [
     ".claude/build/research/WORLD/KPC_W_GB_desk.md",
-    ".claude/build/research/UK/KPC_UK_Scotland_desk.md",
-    ".claude/build/research/UK/KPC_UK_NorthernIreland_desk.md",
-    ".claude/build/research/UK/KPC_UK_Summary_desk.md",
     ".claude/build/research/UK/KPC_UK_England_desk.md",
-    ".claude/build/research/UK/KPC_UK_Wales_desk.md"
+    ".claude/build/research/UK/KPC_UK_Wales_desk.md",
+    ".claude/build/research/UK/KPC_UK_Scotland_desk.md",
+    ".claude/build/research/UK/KPC_UK_Summary_desk.md",
+    ".claude/build/research/UK/KPC_UK_NorthernIreland_desk.md"
    ]
   },
   "DE": {
@@ -107,25 +115,20 @@
     "Biosphärenreservat",
     "Landschaftsschutzgebiet"
    ],
-   "catalogs": [
-    [
-     "ckan",
-     "https://www.govdata.de/ckan"
-    ]
-   ],
+   "catalogs": [],
    "stage": 1,
    "order": 3,
    "official_orgs": [],
    "servers": [],
    "agol_orgs": [],
    "ogc": [
-    "https://geodienste.bfn.de/ogc/wfs/"
+    "https://geodienste.bfn.de/ogc/wfs/schutzgebiet"
    ],
    "catalog_pages": [
     "https://test.ckan.open.nrw.de/km/dataset/747eced9-9b1b-41ec-b25c-b3f3ca3ed5a1"
    ],
    "known_good": [
-    "https://geodienste.bfn.de/ogc/wfs/"
+    "https://geodienste.bfn.de/ogc/wfs/schutzgebiet"
    ],
    "research": [
     ".claude/build/research/WORLD/KPC_W_DE_desk.md"
