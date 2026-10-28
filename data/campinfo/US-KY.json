@@ -63,7 +63,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "10286341": {
    "agency": "FS",
@@ -126,7 +126,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "10304520": {
    "agency": "NPS",
@@ -189,13 +189,13 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "10311270": {
    "agency": "FS",
    "booking": {
-    "how": null,
-    "url": null
+    "how": "online: www.recreation.gov",
+    "url": "https://www.recreation.gov/camping/campgrounds/10311270"
    },
    "cell": {
     "carriers": null,
@@ -205,34 +205,104 @@
    "checked": "2026-10-28",
    "checkin": null,
    "checkout": null,
-   "drinking_water": null,
-   "dump_station": null,
+   "drinking_water": true,
+   "dump_station": false,
    "elevation_ft": {
     "src": "https://epqs.nationalmap.gov/v1/json?x=-83.63263&y=37.78403&units=Feet&wkid=4326",
     "value": 1255
    },
-   "facts_src": {},
-   "fees": null,
+   "facts_src": {
+    "booking.how": {
+     "date": "2026-10-28",
+     "line": "link “Make Reservations Here”",
+     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/koomer-ridge-campground"
+    },
+    "booking.url": {
+     "date": "2026-10-28",
+     "line": "link “Make Reservations Here” -> https://www.recreation.gov/camping/campgrounds/10311270",
+     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/koomer-ridge-campground"
+    },
+    "drinking_water": {
+     "date": "2026-10-28",
+     "line": "et accessibility standards for persons with disabilities. Restrooms Flush toilet(s) Water Potable water is available at this site. Drinking water is available from faucets. Picnic Tables Picnic",
+     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/koomer-ridge-campground"
+    },
+    "dump_station": {
+     "date": "2026-10-28",
+     "line": "s. Campground facilities include an amphitheater and bath house with seasonal showers. No dump station available. The area serves as a trailhead for Cliff Trail #206, Silvermine Arch Trail #22",
+     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/koomer-ridge-campground"
+    },
+    "fees": {
+     "date": "2026-10-28",
+     "line": "Open 24 hours/day Fee Site and Info Spring - Fall (March 14 - Nov 1, 2026): Single Site: $35 per night Double Site: $45 per night Walk in tent site: $27 per night Extra Vehicle: $10 per night",
+     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/koomer-ridge-campground"
+    },
+    "hookups.electric": {
+     "date": "2026-10-28",
+     "line": "provides 54 campsites suitable for tent camping, 19 of which may accommodate RVs with no hookups. Campground facilities include an amphitheater and bath house with seasonal showers. No d",
+     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/koomer-ridge-campground"
+    },
+    "map.date_how": {
+     "date": "2026-10-28",
+     "line": "link “View Guide/Map”",
+     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/koomer-ridge-campground"
+    },
+    "map.url": {
+     "date": "2026-10-28",
+     "line": "link “View Guide/Map” -> https://usfs-public.box.com/s/uv28hc08gky5zkaw4bzowmqk1jbiqgs3",
+     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/koomer-ridge-campground"
+    },
+    "reservable": {
+     "date": "2026-10-28",
+     "line": "Sept 2027 Reservations Make Reservations Here Reservations available. Sites are available first-come, first-served unless reserved. General Information Seasons of Use Open year-round Operational Hours … 027 Reservations Make Reservations Here Reservations available. Sites are available first-come, first-",
+     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/koomer-ridge-campground"
+    },
+    "restrooms": {
+     "date": "2026-10-28",
+     "line": "Parking Parking is available at the site. Facility and Amenity Information Accessibility Flush toilets and showers meet accessibility standards for persons with disabilities. Restrooms Flush t",
+     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/koomer-ridge-campground"
+    },
+    "season": {
+     "date": "2026-10-28",
+     "line": "re available first-come, first-served unless reserved. General Information Seasons of Use Open year-round Operational Hours Open 24 hours/day Fee Site and Info Spring - Fall (March 14 - Nov 1, 20",
+     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/koomer-ridge-campground"
+    },
+    "showers": {
+     "date": "2026-10-28",
+     "line": "ch may accommodate RVs with no hookups. Campground facilities include an amphitheater and bath house with seasonal showers. No dump station available. The area serves as a trailhead for Clif",
+     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/koomer-ridge-campground"
+    },
+    "sites.total": {
+     "date": "2026-10-28",
+     "line": "top shop entry point for exploring the Red River Gorge. The developed campground provides 54 campsites suitable for tent camping, 19 of which may accommodate RVs with no hookups. Campground fa",
+     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/koomer-ridge-campground"
+    }
+   },
+   "fees": "$35 per night | $45 per night | $27 per night | $10 per night | $19 per night",
    "hookups": {
     "amps": null,
-    "electric": null,
+    "electric": false,
     "sewer": null,
     "water": null
    },
+   "ids": [
+    "10311270",
+    "koomer-ridge-campground"
+   ],
    "kind": "c",
    "lat": 37.78403,
    "list": "campfed",
    "lon": -83.63263,
    "map": {
-    "date_how": null,
-    "url": null
+    "date_how": "web page, no date in the link",
+    "url": "https://usfs-public.box.com/s/uv28hc08gky5zkaw4bzowmqk1jbiqgs3"
    },
    "name": "Koomer Ridge Campground",
    "official_page": "https://www.recreation.gov/camping/campgrounds/10311270",
-   "park": "",
+   "park": "US-4484",
    "phone": null,
-   "reservable": null,
-   "restrooms": null,
+   "reservable": "mixed",
+   "restrooms": "flush",
    "rules": {
     "fires": null,
     "generators": null,
@@ -241,18 +311,18 @@
     "stay_limit": null
    },
    "rv_max_ft": null,
-   "season": null,
-   "showers": null,
+   "season": "year-round",
+   "showers": true,
    "sites": {
     "cabin": null,
     "group": null,
     "primitive": null,
     "rv": null,
     "tent": null,
-    "total": null
+    "total": 54
    },
-   "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "status": "ok",
+   "ver": 2
   },
   "232257": {
    "agency": "FS",
@@ -315,7 +385,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "232258": {
    "agency": "FS",
@@ -378,7 +448,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "232259": {
    "agency": "FS",
@@ -441,7 +511,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "232370": {
    "agency": "FS",
@@ -504,7 +574,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "232467": {
    "agency": "NPS",
@@ -567,7 +637,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "232468": {
    "agency": "NPS",
@@ -630,7 +700,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "232505": {
    "agency": "NPS",
@@ -693,7 +763,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "232538": {
    "agency": "USACE",
@@ -756,7 +826,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "232541": {
    "agency": "USACE",
@@ -819,7 +889,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "232563": {
    "agency": "USACE",
@@ -882,7 +952,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "232566": {
    "agency": "USACE",
@@ -945,7 +1015,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "232585": {
    "agency": "USACE",
@@ -1008,7 +1078,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "232587": {
    "agency": "USACE",
@@ -1071,7 +1141,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "232609": {
    "agency": "USACE",
@@ -1134,7 +1204,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "232615": {
    "agency": "USACE",
@@ -1197,7 +1267,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "232624": {
    "agency": "USACE",
@@ -1260,7 +1330,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "232625": {
    "agency": "USACE",
@@ -1323,7 +1393,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "232661": {
    "agency": "USACE",
@@ -1386,7 +1456,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "232733": {
    "agency": "USACE",
@@ -1449,7 +1519,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "233408": {
    "agency": "USACE",
@@ -1512,7 +1582,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "233409": {
    "agency": "USACE",
@@ -1575,7 +1645,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "233410": {
    "agency": "USACE",
@@ -1638,7 +1708,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "233411": {
    "agency": "USACE",
@@ -1701,7 +1771,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "233420": {
    "agency": "USACE",
@@ -1764,7 +1834,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "233488": {
    "agency": "USACE",
@@ -1827,7 +1897,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "233513": {
    "agency": "USACE",
@@ -1890,7 +1960,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "233556": {
    "agency": "USACE",
@@ -1953,7 +2023,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "233583": {
    "agency": "USACE",
@@ -2016,7 +2086,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "233633": {
    "agency": "USACE",
@@ -2079,7 +2149,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "233650": {
    "agency": "USACE",
@@ -2142,7 +2212,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "233670": {
    "agency": "USACE",
@@ -2205,7 +2275,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "233698": {
    "agency": "USACE",
@@ -2268,7 +2338,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "233782": {
    "agency": "FS",
@@ -2331,7 +2401,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "233809": {
    "agency": "USACE",
@@ -2394,7 +2464,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "234727": {
    "agency": "USACE",
@@ -2457,7 +2527,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "248040": {
    "agency": "USACE",
@@ -2520,7 +2590,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "251468": {
    "agency": "NPS",
@@ -2583,7 +2653,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "251820": {
    "agency": "FS",
@@ -2646,7 +2716,7 @@
     "total": null
    },
    "status": "needs RIDB_API_KEY secret in KPC-Data",
-   "ver": 1
+   "ver": 2
   },
   "alum-ford-campground-ky": {
    "agency": "KY (hand-checked list)",
@@ -2681,17 +2751,12 @@
     },
     "drinking_water": {
      "date": "2026-10-28",
-     "line": "sts of six campsites each with picnic table and fire ring. Pit toilets are available, but no drinking water. A map of the campground may be downloaded as a PDF file. The campground is located adjac",
+     "line": "of six campsites each with picnic table and fire ring. Pit toilets are available, but no drinking water. A map of the campground may be downloaded as a PDF file. The campground is located adjac",
      "url": "https://home.nps.gov/biso/planyourvisit/alumfordcampground.htm"
     },
     "fees": {
      "date": "2026-10-28",
      "line": "e, Cumberland Falls, & Pickett State Parks in Kentucky and Tennessee. The campsite fee is $15 per night ($7.50 for holders of the Interagency Age/Access Passes). As of July 2024, this campgroun",
-     "url": "https://home.nps.gov/biso/planyourvisit/alumfordcampground.htm"
-    },
-    "phone": {
-     "date": "2026-10-28",
-     "line": "4 Park footer Contact Info Mailing Address: 4564 Leatherwood Road Oneida, TN 37841 Phone: 423 569-9778 Contact Us Tools FAQ Site Index Español Stay Connected -->",
      "url": "https://home.nps.gov/biso/planyourvisit/alumfordcampground.htm"
     },
     "restrooms": {
@@ -2728,7 +2793,7 @@
    "name": "Alum Ford Campground (KY)",
    "official_page": "https://home.nps.gov/biso/planyourvisit/alumfordcampground.htm",
    "park": "US-0686",
-   "phone": "(423) 569-9778",
+   "phone": null,
    "reservable": null,
    "restrooms": "vault",
    "rules": {
@@ -2750,7 +2815,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "bandy-creek-campground-tn": {
    "agency": "KY (hand-checked list)",
@@ -2820,7 +2885,7 @@
     },
     "phone": {
      "date": "2026-10-28",
-     "line": "6 Park footer Contact Info Mailing Address: 4564 Leatherwood Road Oneida, TN 37841 Phone: 423 569-9778 Contact Us Tools FAQ Site Index Español Stay Connected -->",
+     "line": "through National Recreation Reservation Service by calling 1-877-444-6777 or online at the Recreation One Stop web site . Reservation",
      "url": "https://home.nps.gov/biso/planyourvisit/bandycreekcampground.htm"
     },
     "reservable": {
@@ -2864,8 +2929,8 @@
     "amps": [
      50
     ],
-    "electric": true,
-    "sewer": true,
+    "electric": "some",
+    "sewer": false,
     "water": true
    },
    "kind": "c",
@@ -2879,7 +2944,7 @@
    "name": "Bandy Creek Campground (TN)",
    "official_page": "https://home.nps.gov/biso/planyourvisit/bandycreekcampground.htm",
    "park": "US-0686",
-   "phone": "(423) 569-9778",
+   "phone": "(877) 444-6777",
    "reservable": true,
    "restrooms": "yes (kind not stated)",
    "rules": {
@@ -2901,7 +2966,7 @@
     "total": 49
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "barren-fork-horse-camp": {
    "agency": "KY (hand-checked list)",
@@ -2954,11 +3019,6 @@
      "line": "link “View Guide/Map” -> https://usfs-public.box.com/s/jp0e6xw1cv8jjryh53x3k3ixmkyhwggg",
      "url": "https://www.fs.usda.gov/r08/danielboone/recreation/barren-fork-horse-camp"
     },
-    "phone": {
-     "date": "2026-10-28",
-     "line": "on Stearns Ranger District Office Address: 3320 US 27 North Whitley City, KY 42653 Phone: 606-376-5323 Hours: Monday through Friday 8 a.m. to 4:30 p.m. (Closed on federal holidays ) Getting Th",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/barren-fork-horse-camp"
-    },
     "restrooms": {
      "date": "2026-10-28",
      "line": "rs must park in the overflow parking area. Facility and Amenity Information Accessibility Vault toilet meets accessibility standards for persons with disabilities. Restrooms Vault toilet(s) Wa",
@@ -2993,7 +3053,7 @@
    "name": "Barren Fork Horse Camp",
    "official_page": "https://www.fs.usda.gov/r08/danielboone/recreation/barren-fork-horse-camp",
    "park": "US-4484",
-   "phone": "(606) 376-5323",
+   "phone": null,
    "reservable": null,
    "restrooms": "vault",
    "rules": {
@@ -3015,7 +3075,7 @@
     "total": 41
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "barren-river-lake-state-resort-park-campground": {
    "agency": "KY (hand-checked list)",
@@ -3089,7 +3149,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "bear-creek-horse-camp-ky": {
    "agency": "KY (hand-checked list)",
@@ -3169,7 +3229,7 @@
     },
     "phone": {
      "date": "2026-10-28",
-     "line": "6 Park footer Contact Info Mailing Address: 4564 Leatherwood Road Oneida, TN 37841 Phone: 423 569-9778 Contact Us Tools FAQ Site Index Español Stay Connected -->",
+     "line": "l Park Service. Camping reservations can be made by calling 1-877-444-6777 or on the Recreation One Stop web site . Black bears now re",
      "url": "https://home.nps.gov/biso/planyourvisit/bear-creek-horse-camp.htm"
     },
     "reservable": {
@@ -3214,7 +3274,7 @@
    "name": "Bear Creek Horse Camp (KY)",
    "official_page": "https://home.nps.gov/biso/planyourvisit/bear-creek-horse-camp.htm",
    "park": "US-0686",
-   "phone": "(423) 569-9778",
+   "phone": "(877) 444-6777",
    "reservable": true,
    "restrooms": "flush",
    "rules": {
@@ -3236,7 +3296,7 @@
     "total": 23
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "bee-rock-campground": {
    "agency": "KY (hand-checked list)",
@@ -3289,11 +3349,6 @@
      "line": "link “Bee Rock Campground Map Guide” -> https://usfs-public.box.com/s/yfegub8ltz7ye6uudxt0nxmss8tthe7o",
      "url": "https://www.fs.usda.gov/r08/danielboone/recreation/bee-rock-campground"
     },
-    "phone": {
-     "date": "2026-10-28",
-     "line": "rvice/US Army Corps of Engineers Resource Managers Office KY-1193 London, KY 40744 Phone: 859-428-7706; 606-864-4163 Hours: Available by phone Monday through Friday 8 a.m. to 4:30 p.m. Office",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/bee-rock-campground"
-    },
     "reservable": {
      "date": "2026-10-28",
      "line": "Bee Rock Recreation Area along the banks of the Rockcastle River and features 25 wooded, first-come, first-served campsites with scenic views of rocks, cliffs, and the Rockcastle River. The campground",
@@ -3333,7 +3388,7 @@
    "name": "Bee Rock Campground",
    "official_page": "https://www.fs.usda.gov/r08/danielboone/recreation/bee-rock-campground",
    "park": "US-4484",
-   "phone": "(859) 428-7706",
+   "phone": null,
    "reservable": false,
    "restrooms": "vault",
    "rules": {
@@ -3355,7 +3410,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "big-bone-lick-campground": {
    "agency": "KY (hand-checked list)",
@@ -3429,7 +3484,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "blue-heron-campground-ky": {
    "agency": "KY (hand-checked list)",
@@ -3504,7 +3559,7 @@
     },
     "phone": {
      "date": "2026-10-28",
-     "line": "6 Park footer Contact Info Mailing Address: 4564 Leatherwood Road Oneida, TN 37841 Phone: 423 569-9778 Contact Us Tools FAQ Site Index Español Stay Connected -->",
+     "line": "through National Recreation Reservation Service by calling 1-877-444-6777 or online at the Recreation One Stop web site . Reservation",
      "url": "https://home.nps.gov/biso/planyourvisit/blueheroncampground.htm"
     },
     "reservable": {
@@ -3548,7 +3603,7 @@
    "name": "Blue Heron Campground (KY)",
    "official_page": "https://home.nps.gov/biso/planyourvisit/blueheroncampground.htm",
    "park": "US-0686",
-   "phone": "(423) 569-9778",
+   "phone": "(877) 444-6777",
    "reservable": true,
    "restrooms": "yes (kind not stated)",
    "rules": {
@@ -3570,7 +3625,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "blue-licks-battlefield-campground": {
    "agency": "KY (hand-checked list)",
@@ -3644,13 +3699,13 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "breaks-interstate-park-campground": {
    "agency": "KY (hand-checked list)",
    "booking": {
-    "how": null,
-    "url": null
+    "how": "online: www.breakspark.com",
+    "url": "https://www.breakspark.com/shelter-pricing"
    },
    "cell": {
     "carriers": null,
@@ -3658,45 +3713,126 @@
     "status": "needs FCC token"
    },
    "checked": "2026-10-28",
-   "checkin": null,
-   "checkout": null,
+   "checkin": "4:00 pm",
+   "checkout": "1:00 pm",
    "drinking_water": null,
    "dump_station": null,
    "elevation_ft": {
     "src": null,
     "value": null
    },
-   "facts_src": {},
-   "fees": null,
+   "facts_src": {
+    "booking.how": {
+     "date": "2026-10-28",
+     "line": "link “Picnic Shelter Reservations”",
+     "url": "https://www.breakspark.com/campground"
+    },
+    "booking.url": {
+     "date": "2026-10-28",
+     "line": "link “Picnic Shelter Reservations” -> https://www.breakspark.com/shelter-pricing",
+     "url": "https://www.breakspark.com/campground"
+    },
+    "checkin": {
+     "date": "2026-10-28",
+     "line": "eing you! KNOW BEFORE YOU GO: INFORMATION FOR FIRST TIME CAMPERS View Campground Map here Check-in: 4:00 pm Check-out: 1:00 pm Our 138 camp sites range from a great place to pitch your tent to full",
+     "url": "https://www.breakspark.com/campground"
+    },
+    "checkout": {
+     "date": "2026-10-28",
+     "line": "ORE YOU GO: INFORMATION FOR FIRST TIME CAMPERS View Campground Map here Check-in: 4:00 pm Check-out: 1:00 pm Our 138 camp sites range from a great place to pitch your tent to full RV hook-ups. Most",
+     "url": "https://www.breakspark.com/campground"
+    },
+    "fees": {
+     "date": "2026-10-28",
+     "line": "e reservations link at the top of this page. Campsites and Rates Primitive Sites Nightly: $27.00 plus tax Electric and Water Sites Nightly: $37.00 plus tax Electric Service, Water, and S",
+     "url": "https://www.breakspark.com/campground"
+    },
+    "hookups.electric": {
+     "date": "2026-10-28",
+     "line": "ck-out: 1:00 pm Our 138 camp sites range from a great place to pitch your tent to full RV hook-ups. Most of these sites are wooded, but if you prefer, grassy areas are available in campgro",
+     "url": "https://www.breakspark.com/campground"
+    },
+    "hookups.sewer": {
+     "date": "2026-10-28",
+     "line": "0 plus tax Electric and Water Sites Nightly: $37.00 plus tax Electric Service, Water, and Sewer sites Nightly: $41.00 plus tax Group Camp Sites $134 per night, plus tax Campground Rules",
+     "url": "https://www.breakspark.com/campground"
+    },
+    "hookups.water": {
+     "date": "2026-10-28",
+     "line": "ink at the top of this page. Campsites and Rates Primitive Sites Nightly: $27.00 plus tax Electric and Water Sites Nightly: $37.00 plus tax Electric Service, Water, and Sewer sites Nightly: $41.00 p",
+     "url": "https://www.breakspark.com/campground"
+    },
+    "map.date_how": {
+     "date": "2026-10-28",
+     "line": "link “View Campground Map here”",
+     "url": "https://www.breakspark.com/campground"
+    },
+    "map.url": {
+     "date": "2026-10-28",
+     "line": "link “View Campground Map here” -> https://www.breakspark.com/s/BreaksCampground-Map-Optimized.jpg",
+     "url": "https://www.breakspark.com/campground"
+    },
+    "reservable": {
+     "date": "2026-10-28",
+     "line": "Campground | Discover and Book Your Stay Now &mdash; Breaks Interstate Park 0 Skip to Content Open Menu Close Menu Open Menu C",
+     "url": "https://www.breakspark.com/campground"
+    },
+    "rules.fires": {
+     "date": "2026-10-28",
+     "line": "wo vehicles per rented site. No alcoholic beverages. Fires are only permitted in provided fire rings. In times of drought and other elevated fire conditions, fires may not be permitted. All",
+     "url": "https://www.breakspark.com/campground"
+    },
+    "rules.pets": {
+     "date": "2026-10-28",
+     "line": ". In times of drought and other elevated fire conditions, fires may not be permitted. All pets must be kept on a leash. All coolers, drinks, and food must be secured in an RV, vehicle, or suspended ou",
+     "url": "https://www.breakspark.com/campground"
+    },
+    "rules.quiet_hours": {
+     "date": "2026-10-28",
+     "line": "41.00 plus tax Group Camp Sites $134 per night, plus tax Campground Rules and Regulations Quiet Hours: 10:00 pm - 6:00 am. Strictly enforced. Only two vehicles per rented site. No alcoholic beverages.",
+     "url": "https://www.breakspark.com/campground"
+    },
+    "season": {
+     "date": "2026-10-28",
+     "line": "enu Close Menu The Heart of an Authentic Breaks Experience! The Full Breaks Campground is open seasonally from April 1 until October 31 of each year Book Your Campsite Here Breaks Campground Bear Regu",
+     "url": "https://www.breakspark.com/campground"
+    },
+    "sites.total": {
+     "date": "2026-10-28",
+     "line": "FOR FIRST TIME CAMPERS View Campground Map here Check-in: 4:00 pm Check-out: 1:00 pm Our 138 camp sites range from a great place to pitch your tent to full RV hook-ups. Most of these sites are",
+     "url": "https://www.breakspark.com/campground"
+    }
+   },
+   "fees": "$27.00 plus tax | $37.00 plus tax | $41.00 plus tax | $134 per night, plus tax | $10 cancellation fee per site for campground reservat",
    "hookups": {
     "amps": null,
-    "electric": null,
-    "sewer": null,
-    "water": null
+    "electric": "some",
+    "sewer": true,
+    "water": true
    },
    "kind": "c",
    "lat": null,
    "list": "kpc-campgrounds.json",
    "lon": null,
    "map": {
-    "date_how": null,
-    "url": null
+    "date_how": "web page, no date in the link",
+    "url": "https://www.breakspark.com/s/BreaksCampground-Map-Optimized.jpg"
    },
    "name": "Breaks Interstate Park Campground",
    "official_page": "https://www.breakspark.com/campground",
    "park": "US-3781",
    "phone": null,
-   "reservable": null,
+   "reservable": true,
    "restrooms": null,
    "rules": {
-    "fires": null,
+    "fires": "fire rings",
     "generators": null,
-    "pets": null,
-    "quiet_hours": null,
+    "pets": "pets must be kept on a leash",
+    "quiet_hours": "10:00 pm - 6:00 am",
     "stay_limit": null
    },
    "rv_max_ft": null,
-   "season": null,
+   "season": "April 1 through October 31",
    "showers": null,
    "sites": {
     "cabin": null,
@@ -3704,10 +3840,10 @@
     "primitive": null,
     "rv": null,
     "tent": null,
-    "total": null
+    "total": 138
    },
-   "status": "page not on an official host: www.breakspark.com",
-   "ver": 1
+   "status": "ok",
+   "ver": 2
   },
   "carr-creek-campground": {
    "agency": "KY (hand-checked list)",
@@ -3781,7 +3917,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "carter-caves-campground": {
    "agency": "KY (hand-checked list)",
@@ -3855,7 +3991,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "clear-creek-campground": {
    "agency": "KY (hand-checked list)",
@@ -3900,12 +4036,7 @@
     },
     "hookups.electric": {
      "date": "2026-10-28",
-     "line": "Campsites include tent or RV pads, picnic tables, fire rings and lantern poles. There is no electricity or shower facilities. Active Alerts National Visitor Use Monitoring, Oct 2026-Sept 2027 G",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/clear-creek-campground"
-    },
-    "phone": {
-     "date": "2026-10-28",
-     "line": "on Cumberland Ranger District Office Address: 2375 KY 801 South Morehead, KY 40351 Phone: 606-784-6428 Hours: Monday through Friday 8 a.m. to 11:30 a.m. and 12:30 p.m. to 4:30 p.m. (Closed on",
+     "line": "mpsites include tent or RV pads, picnic tables, fire rings and lantern poles. There is no electricity or shower facilities. Active Alerts National Visitor Use Monitoring, Oct 2026-Sept 2027 G",
      "url": "https://www.fs.usda.gov/r08/danielboone/recreation/clear-creek-campground"
     },
     "restrooms": {
@@ -3947,7 +4078,7 @@
    "name": "Clear Creek Campground",
    "official_page": "https://www.fs.usda.gov/r08/danielboone/recreation/clear-creek-campground",
    "park": "US-4484",
-   "phone": "(606) 784-6428",
+   "phone": null,
    "reservable": null,
    "restrooms": "vault",
    "rules": {
@@ -3959,7 +4090,7 @@
    },
    "rv_max_ft": null,
    "season": "year-round",
-   "showers": true,
+   "showers": false,
    "sites": {
     "cabin": null,
     "group": null,
@@ -3969,7 +4100,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "columbus-belmont-campground": {
    "agency": "KY (hand-checked list)",
@@ -4043,7 +4174,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "dale-hollow-lake-campground": {
    "agency": "KY (hand-checked list)",
@@ -4117,7 +4248,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "energy-lake-campground": {
    "agency": "KY (hand-checked list)",
@@ -4131,8 +4262,8 @@
     "status": "needs FCC token"
    },
    "checked": "2026-10-28",
-   "checkin": null,
-   "checkout": null,
+   "checkin": "4:30 p.m",
+   "checkout": "3:30 p.m",
    "drinking_water": null,
    "dump_station": null,
    "elevation_ft": {
@@ -4140,16 +4271,89 @@
     "value": null
    },
    "facts_src": {
+    "booking.how": {
+     "date": "2026-10-28",
+     "line": "link “Reservations”",
+     "url": "https://www.landbetweenthelakes.us/visit/energy-lake-campground/"
+    },
     "booking.url": {
      "date": "2026-10-28",
-     "line": "booking link from our kpc-campgrounds.json row (official system lblweb.usedirect.com)",
-     "url": "https://lblweb.usedirect.com/camplbl/"
+     "line": "link “Reservations” -> https://lblweb.usedirect.com/camplbl/",
+     "url": "https://www.landbetweenthelakes.us/visit/energy-lake-campground/"
+    },
+    "checkin": {
+     "date": "2026-10-28",
+     "line": "Lake Campground The Gatehouse is open from 9:00am until 5:00pm during the camping season. Check-in is 4:30 p.m. , you may check in anytime of your arrival date if the site is vacant. Check-out is 3:30",
+     "url": "https://www.landbetweenthelakes.us/visit/energy-lake-campground/"
+    },
+    "checkout": {
+     "date": "2026-10-28",
+     "line": "ck-in is 4:30 p.m. , you may check in anytime of your arrival date if the site is vacant. Check-out is 3:30 p.m. A 1 night late fee will be assessed. There are no refunds for early check-out. Address:",
+     "url": "https://www.landbetweenthelakes.us/visit/energy-lake-campground/"
+    },
+    "fees": {
+     "date": "2026-10-28",
+     "line": "* reservations can be made 2 days to 6 months in advance Type of Site Basic Nightly Rate $12 30 Amp Electric Nightly Rate $26 50 Amp Electric Nightly Rate $28 Cabins – sleeps 8 Night",
+     "url": "https://www.landbetweenthelakes.us/visit/energy-lake-campground/"
+    },
+    "hookups.amps": {
+     "date": "2026-10-28",
+     "line": "eservations can be made 2 days to 6 months in advance Type of Site Basic Nightly Rate $12 30 Amp Electric Nightly Rate $26 50 Amp Electric Nightly Rate $28 Cabins – sleeps 8 Nightly Rate",
+     "url": "https://www.landbetweenthelakes.us/visit/energy-lake-campground/"
+    },
+    "hookups.electric": {
+     "date": "2026-10-28",
+     "line": "by an earthen dam. It offers 13 cabins and 35 well-defined sites in a wooded area with 33 electrical hookups capable of handling tents to motorhomes. Campers have access to a swimming beach area, pl",
+     "url": "https://www.landbetweenthelakes.us/visit/energy-lake-campground/"
+    },
+    "map.date_how": {
+     "date": "2026-10-28",
+     "line": "link “Energy Lake Campground Map”",
+     "url": "https://www.landbetweenthelakes.us/visit/energy-lake-campground/"
+    },
+    "map.url": {
+     "date": "2026-10-28",
+     "line": "link “Energy Lake Campground Map” -> https://www.landbetweenthelakes.us/wp-content/uploads/2025/04/FINAL_PRINT_-EnergyLakeCampgroundMap_2",
+     "url": "https://www.landbetweenthelakes.us/visit/energy-lake-campground/"
+    },
+    "phone": {
+     "date": "2026-10-28",
+     "line": "t. Address: 5501 Energy Lk Rd, Golden Pond, KY 42211 Phone: 270-924-2270 Maps LBL Maps Energy Lake Campground Map Brochures & Resour",
+     "url": "https://www.landbetweenthelakes.us/visit/energy-lake-campground/"
+    },
+    "reservable": {
+     "date": "2026-10-28",
+     "line": "ls Hourly Rate $15 Life jackets provided Availability is based on weather and season on a first come, first serve basis Quick Links Related Pages Accessible Facilities Backpacking Boating Brandon Spri … k there as well. Additional Information Reserve Online Phone: 1800-525-7077 The call center is",
+     "url": "https://www.landbetweenthelakes.us/visit/energy-lake-campground/"
+    },
+    "rules.fires": {
+     "date": "2026-10-28",
+     "line": "lows, etc. They are not provided. There is a covered porch with a nearby picnic table and fire ring. There is not a boat ramp in Energy Lake Campground but there are ramps at nearby Energy",
+     "url": "https://www.landbetweenthelakes.us/visit/energy-lake-campground/"
+    },
+    "season": {
+     "date": "2026-10-28",
+     "line": "on Reserve Online Phone: 1800-525-7077 The call center is open weekdays from 9 AM – 5 PM, March-November. * reservations can be made 2 days to 6 months in advance Type of Site Basic Nightly Rate",
+     "url": "https://www.landbetweenthelakes.us/visit/energy-lake-campground/"
+    },
+    "showers": {
+     "date": "2026-10-28",
+     "line": "Visitor per vehicle; up to 8 people Nightly Rate $5 Extra Vehicle Nightly Rate $5 Visitor shower per person Nightly Rate $5 Late departure fees Nightly Rate = 1 Night Stay Site change fe",
+     "url": "https://www.landbetweenthelakes.us/visit/energy-lake-campground/"
+    },
+    "sites.cabin": {
+     "date": "2026-10-28",
+     "line": "ound sits next to an inland lake separated from Lake Barkley by an earthen dam. It offers 13 cabins and 35 well-defined sites in a wooded area with 33 electrical hookups capable of handling",
+     "url": "https://www.landbetweenthelakes.us/visit/energy-lake-campground/"
     }
    },
-   "fees": null,
+   "fees": "$12 | $26 | $28 | $75 | $5",
    "hookups": {
-    "amps": null,
-    "electric": null,
+    "amps": [
+     30,
+     50
+    ],
+    "electric": true,
     "sewer": null,
     "water": null
    },
@@ -4158,35 +4362,35 @@
    "list": "kpc-campgrounds.json",
    "lon": null,
    "map": {
-    "date_how": null,
-    "url": null
+    "date_how": "PDF, year 2025 in the link",
+    "url": "https://www.landbetweenthelakes.us/wp-content/uploads/2025/04/FINAL_PRINT_-EnergyLakeCampgroundMap_2025.pdf"
    },
    "name": "Energy Lake Campground",
    "official_page": "https://www.landbetweenthelakes.us/visit/energy-lake-campground/",
    "park": "US-3792",
-   "phone": null,
-   "reservable": null,
+   "phone": "(270) 924-2270",
+   "reservable": "mixed",
    "restrooms": null,
    "rules": {
-    "fires": null,
+    "fires": "fire ring",
     "generators": null,
     "pets": null,
     "quiet_hours": null,
     "stay_limit": null
    },
    "rv_max_ft": null,
-   "season": null,
-   "showers": null,
+   "season": "March through November",
+   "showers": true,
    "sites": {
-    "cabin": null,
+    "cabin": 13,
     "group": null,
     "primitive": null,
     "rv": null,
     "tent": null,
     "total": null
    },
-   "status": "page not on an official host: www.landbetweenthelakes.us",
-   "ver": 1
+   "status": "ok",
+   "ver": 2
   },
   "fenton-self-service-campground": {
    "agency": "KY (hand-checked list)",
@@ -4208,11 +4412,44 @@
     "src": null,
     "value": null
    },
-   "facts_src": {},
-   "fees": null,
+   "facts_src": {
+    "fees": {
+     "date": "2026-10-28",
+     "line": "rash pickup, lake access, and boat ramps. Self-Service Campgrounds include: Cravens Bay – $12 per night Fenton (30 amp electric) – $26 per night Turkey Bay Off-Highway Vehicle Area – $12 per ni",
+     "url": "https://www.landbetweenthelakes.us/facility/self-service-camping/"
+    },
+    "hookups.amps": {
+     "date": "2026-10-28",
+     "line": "ss, and boat ramps. Self-Service Campgrounds include: Cravens Bay – $12 per night Fenton (30 amp electric) – $26 per night Turkey Bay Off-Highway Vehicle Area – $12 per night Nickell Bra",
+     "url": "https://www.landbetweenthelakes.us/facility/self-service-camping/"
+    },
+    "hookups.electric": {
+     "date": "2026-10-28",
+     "line": "boat ramps. Self-Service Campgrounds include: Cravens Bay – $12 per night Fenton (30 amp electric) – $26 per night Turkey Bay Off-Highway Vehicle Area – $12 per night Nickell Branch – $10",
+     "url": "https://www.landbetweenthelakes.us/facility/self-service-camping/"
+    },
+    "restrooms": {
+     "date": "2026-10-28",
+     "line": "er basic amenities including designated campsite pads, picnic tables, grills, fire rings, vault toilets, trash pickup, lake access, and boat ramps. Self-Service Campgrounds include: Cravens Bay",
+     "url": "https://www.landbetweenthelakes.us/facility/self-service-camping/"
+    },
+    "rules.fires": {
+     "date": "2026-10-28",
+     "line": "pgrounds offer basic amenities including designated campsite pads, picnic tables, grills, fire rings, vault toilets, trash pickup, lake access, and boat ramps. Self-Service Campgrounds include: Craven",
+     "url": "https://www.landbetweenthelakes.us/facility/self-service-camping/"
+    },
+    "season": {
+     "date": "2026-10-28",
+     "line": "atives to the more developed campgrounds. We have 11 self-service campgrounds which offer year-round lakeside camping. Although these areas have fewer amenities than our developed campground",
+     "url": "https://www.landbetweenthelakes.us/facility/self-service-camping/"
+    }
+   },
+   "fees": "$12 per night | $26 per night | $10 per night",
    "hookups": {
-    "amps": null,
-    "electric": null,
+    "amps": [
+     30
+    ],
+    "electric": true,
     "sewer": null,
     "water": null
    },
@@ -4229,16 +4466,16 @@
    "park": "US-3792",
    "phone": null,
    "reservable": null,
-   "restrooms": null,
+   "restrooms": "vault",
    "rules": {
-    "fires": null,
+    "fires": "fire rings, vault toilets, trash pickup, lake access, and boat ramps",
     "generators": null,
     "pets": null,
     "quiet_hours": null,
     "stay_limit": null
    },
    "rv_max_ft": null,
-   "season": null,
+   "season": "year-round",
    "showers": null,
    "sites": {
     "cabin": null,
@@ -4248,8 +4485,8 @@
     "tent": null,
     "total": null
    },
-   "status": "page not on an official host: www.landbetweenthelakes.us",
-   "ver": 1
+   "status": "ok",
+   "ver": 2
   },
   "fort-boonesborough-campground": {
    "agency": "KY (hand-checked list)",
@@ -4323,7 +4560,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "general-burnside-island-campground": {
    "agency": "KY (hand-checked list)",
@@ -4397,7 +4634,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "general-butler-campground": {
    "agency": "KY (hand-checked list)",
@@ -4471,7 +4708,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "grayson-lake-campground": {
    "agency": "KY (hand-checked list)",
@@ -4545,7 +4782,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "great-meadows-campground": {
    "agency": "KY (hand-checked list)",
@@ -4590,12 +4827,7 @@
     },
     "hookups.electric": {
      "date": "2026-10-28",
-     "line": "nic tables, parking and a fishing pier. The campground can accommodate RVs up to 35 feet. No hookups or dumpsites are available. Rock Creek, a designated Kentucky Wild River, runs adjacent t",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/great-meadows-campground"
-    },
-    "phone": {
-     "date": "2026-10-28",
-     "line": "on Stearns Ranger District Office Address: 3320 US 27 North Whitley City, KY 42653 Phone: 606-376-5323 Hours: Monday through Friday 8 a.m. to 4:30 p.m. (Closed on federal holidays ) Getting Th",
+     "line": "tables, parking and a fishing pier. The campground can accommodate RVs up to 35 feet. No hookups or dumpsites are available. Rock Creek, a designated Kentucky Wild River, runs adjacent t",
      "url": "https://www.fs.usda.gov/r08/danielboone/recreation/great-meadows-campground"
     },
     "restrooms": {
@@ -4632,7 +4864,7 @@
    "name": "Great Meadows Campground",
    "official_page": "https://www.fs.usda.gov/r08/danielboone/recreation/great-meadows-campground",
    "park": "US-4484",
-   "phone": "(606) 376-5323",
+   "phone": null,
    "reservable": null,
    "restrooms": "vault",
    "rules": {
@@ -4654,7 +4886,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "green-river-lake-campground": {
    "agency": "KY (hand-checked list)",
@@ -4728,7 +4960,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "greenbo-lake-campground": {
    "agency": "KY (hand-checked list)",
@@ -4802,7 +5034,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "grove-drive-in-campground": {
    "agency": "KY (hand-checked list)",
@@ -4865,11 +5097,6 @@
      "line": "link “Grove Drive-In Campground Map Guide” -> https://usfs-public.box.com/s/wmwd44d3zi74a1whm9cf7o30v1vmgnys",
      "url": "https://www.fs.usda.gov/r08/danielboone/recreation/grove-drive-campground"
     },
-    "phone": {
-     "date": "2026-10-28",
-     "line": "rvice/US Army Corps of Engineers Resource Managers Office KY-1193 London, KY 40744 Phone: 859-428-7706; 606-864-4163 Hours: Available by phone Monday through Friday 8 a.m. to 4:30 p.m. Office",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/grove-drive-campground"
-    },
     "reservable": {
      "date": "2026-10-28",
      "line": "Grove Boat Ramp and Marina. Of the 40 drive-in sites, Loop B is reservable, and Loop A is first come, first served. Thirty-five drive-in sites have electricity and water and five have water only. All  … na. Of the 40 drive-in sites, Loop B is reservable, and Loop A is first come, first served",
@@ -4889,7 +5116,7 @@
    "fees": "$46 per night | $92 per night | $10",
    "hookups": {
     "amps": null,
-    "electric": true,
+    "electric": "some",
     "sewer": null,
     "water": true
    },
@@ -4904,7 +5131,7 @@
    "name": "Grove Drive-In Campground",
    "official_page": "https://www.fs.usda.gov/r08/danielboone/recreation/grove-drive-campground",
    "park": "US-4484",
-   "phone": "(859) 428-7706",
+   "phone": null,
    "reservable": "mixed",
    "restrooms": "flush",
    "rules": {
@@ -4926,7 +5153,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "higginson-henry-wma-designated-campsites": {
    "agency": "KY (hand-checked list)",
@@ -4961,7 +5188,7 @@
     },
     "phone": {
      "date": "2026-10-28",
-     "line": "Close Return to Search --> WMA Overview Size: 5446 acres Location: Union Contact: Office (270) 389-3580 Elevation: minimum 396 feet, maximum 675 feet. Entrance GPS coordinates: Latitude N 37.62",
+     "line": "A Overview Size: 5446 acres Location: Union Contact: Office (270) 389-3580 Elevation: minimum 396 feet, maximum 675 feet. Entrance GPS",
      "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=132"
     },
     "rv_max_ft": {
@@ -5015,7 +5242,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "hillman-ferry-campground": {
    "agency": "KY (hand-checked list)",
@@ -5029,8 +5256,8 @@
     "status": "needs FCC token"
    },
    "checked": "2026-10-28",
-   "checkin": null,
-   "checkout": null,
+   "checkin": "4:30 p.m",
+   "checkout": "3:30 p.m",
    "drinking_water": null,
    "dump_station": null,
    "elevation_ft": {
@@ -5038,53 +5265,136 @@
     "value": null
    },
    "facts_src": {
+    "booking.how": {
+     "date": "2026-10-28",
+     "line": "link “Reserve Online”",
+     "url": "https://www.landbetweenthelakes.us/visit/hillman-ferry-campground/"
+    },
     "booking.url": {
      "date": "2026-10-28",
-     "line": "booking link from our kpc-campgrounds.json row (official system lblweb.usedirect.com)",
-     "url": "https://lblweb.usedirect.com/camplbl/"
+     "line": "link “Reserve Online” -> https://lblweb.usedirect.com/camplbl/",
+     "url": "https://www.landbetweenthelakes.us/visit/hillman-ferry-campground/"
+    },
+    "checkin": {
+     "date": "2026-10-28",
+     "line": "DVENTURE... SEARCH About Hillman Ferry Campground Hillman Ferry Campground is open March. Check-in is 4:30 p.m. , you may check in anytime of your arrival date if the site is vacant. Check-out is 3:30",
+     "url": "https://www.landbetweenthelakes.us/visit/hillman-ferry-campground/"
+    },
+    "checkout": {
+     "date": "2026-10-28",
+     "line": "ck-in is 4:30 p.m. , you may check in anytime of your arrival date if the site is vacant. Check-out is 3:30 p.m. A 1 night late fee will be assessed. The Outpost is Open April through October: Mon-Wed",
+     "url": "https://www.landbetweenthelakes.us/visit/hillman-ferry-campground/"
+    },
+    "fees": {
+     "date": "2026-10-28",
+     "line": "* reservations can be made 2 days to 6 months in advance Type of Site Basic Nightly Rate $12 30 Amp Electric Nightly Rate $26 30 Amp Electric/Water Nightly Rate $34 50 Amp Electric/W",
+     "url": "https://www.landbetweenthelakes.us/visit/hillman-ferry-campground/"
+    },
+    "hookups.amps": {
+     "date": "2026-10-28",
+     "line": "eservations can be made 2 days to 6 months in advance Type of Site Basic Nightly Rate $12 30 Amp Electric Nightly Rate $26 30 Amp Electric/Water Nightly Rate $34 50 Amp Electric/Water Ni",
+     "url": "https://www.landbetweenthelakes.us/visit/hillman-ferry-campground/"
+    },
+    "hookups.electric": {
+     "date": "2026-10-28",
+     "line": "es capable of handling a variety of camping units from tents to large motor homes. Basic, electric, water, and sewer sites are available, as are 8-person cabin rentals. Campers have access",
+     "url": "https://www.landbetweenthelakes.us/visit/hillman-ferry-campground/"
+    },
+    "hookups.sewer": {
+     "date": "2026-10-28",
+     "line": "g a variety of camping units from tents to large motor homes. Basic, electric, water, and sewer sites are available, as are 8-person cabin rentals. Campers have access to modern facilit",
+     "url": "https://www.landbetweenthelakes.us/visit/hillman-ferry-campground/"
+    },
+    "hookups.water": {
+     "date": "2026-10-28",
+     "line": "es capable of handling a variety of camping units from tents to large motor homes. Basic, electric, water, and sewer sites are available, as are 8-person cabin rentals. Campers have access to mod",
+     "url": "https://www.landbetweenthelakes.us/visit/hillman-ferry-campground/"
+    },
+    "map.date_how": {
+     "date": "2026-10-28",
+     "line": "link “Hillman Ferry Campground Map”",
+     "url": "https://www.landbetweenthelakes.us/visit/hillman-ferry-campground/"
+    },
+    "map.url": {
+     "date": "2026-10-28",
+     "line": "link “Hillman Ferry Campground Map” -> https://www.landbetweenthelakes.us/wp-content/uploads/2025/04/FINAL_PRINT_-HillmanFerryCampgroundMap",
+     "url": "https://www.landbetweenthelakes.us/visit/hillman-ferry-campground/"
+    },
+    "phone": {
+     "date": "2026-10-28",
+     "line": "dress: 820 Hillman Ferry Road Grand Rivers, KY 42045 Phone: 270-924-2181 Maps LBL Maps Hillman Ferry Campground Map Brochures & Reso",
+     "url": "https://www.landbetweenthelakes.us/visit/hillman-ferry-campground/"
+    },
+    "reservable": {
+     "date": "2026-10-28",
+     "line": "2045 Phone: 270-924-2181 Maps LBL Maps Hillman Ferry Campground Map Brochures & Resources Reserve Online Hillman Ferry Campground FAQs Seasonal Camping Information Hillman Ferry Campground offer",
+     "url": "https://www.landbetweenthelakes.us/visit/hillman-ferry-campground/"
+    },
+    "rules.fires": {
+     "date": "2026-10-28",
+     "line": "dern facilities, including a large swimming area, archery range, ball field, bike trails, campfire amphitheater, hiking trails, two boat ramps, fishing dock, picnic tables, disc golf, and fire rings. ",
+     "url": "https://www.landbetweenthelakes.us/visit/hillman-ferry-campground/"
+    },
+    "season": {
+     "date": "2026-10-28",
+     "line": "ite is vacant. Check-out is 3:30 p.m. A 1 night late fee will be assessed. The Outpost is Open April through October: Mon-Wed - 9am to 5pm Thu-Sat - 7am to 10pm Sunday - 7am to 9pm Address: 820 Hillma",
+     "url": "https://www.landbetweenthelakes.us/visit/hillman-ferry-campground/"
+    },
+    "showers": {
+     "date": "2026-10-28",
+     "line": "Visitor per vehicle; up to 8 people Nightly Rate $5 Extra Vehicle Nightly Rate $5 Visitor shower per person Nightly Rate $5 Late departure fees Nightly Rate = 1 Night Stay Site change fe",
+     "url": "https://www.landbetweenthelakes.us/visit/hillman-ferry-campground/"
+    },
+    "sites.cabin": {
+     "date": "2026-10-28",
+     "line": "tents to large motor homes. Basic, electric, water, and sewer sites are available, as are 8-person cabin rentals. Campers have access to modern facilities, including a large swimming area, arche",
+     "url": "https://www.landbetweenthelakes.us/visit/hillman-ferry-campground/"
     }
    },
-   "fees": null,
+   "fees": "$12 | $26 | $34 | $36 | $40",
    "hookups": {
-    "amps": null,
-    "electric": null,
-    "sewer": null,
-    "water": null
+    "amps": [
+     30,
+     50
+    ],
+    "electric": true,
+    "sewer": true,
+    "water": true
    },
    "kind": "c",
    "lat": null,
    "list": "kpc-campgrounds.json",
    "lon": null,
    "map": {
-    "date_how": null,
-    "url": null
+    "date_how": "PDF, year 2025 in the link",
+    "url": "https://www.landbetweenthelakes.us/wp-content/uploads/2025/04/FINAL_PRINT_-HillmanFerryCampgroundMap_2025.pdf"
    },
    "name": "Hillman Ferry Campground",
    "official_page": "https://www.landbetweenthelakes.us/visit/hillman-ferry-campground/",
    "park": "US-3792",
-   "phone": null,
-   "reservable": null,
+   "phone": "(270) 924-2181",
+   "reservable": true,
    "restrooms": null,
    "rules": {
-    "fires": null,
+    "fires": "campfire amphitheater, hiking trails, two boat ramps, fishing dock, picnic tables, disc golf, and fire rings",
     "generators": null,
     "pets": null,
     "quiet_hours": null,
     "stay_limit": null
    },
    "rv_max_ft": null,
-   "season": null,
-   "showers": null,
+   "season": "April through October",
+   "showers": true,
    "sites": {
-    "cabin": null,
+    "cabin": 8,
     "group": null,
     "primitive": null,
     "rv": null,
     "tent": null,
     "total": null
    },
-   "status": "page not on an official host: www.landbetweenthelakes.us",
-   "ver": 1
+   "status": "ok",
+   "ver": 2
   },
   "holly-bay-campground": {
    "agency": "KY (hand-checked list)",
@@ -5147,11 +5457,6 @@
      "line": "link “Holly Bay Campground Guide Map” -> https://usfs-public.box.com/s/53p80eudq3r20y7i4kjk8n3lb7sg9jqn",
      "url": "https://www.fs.usda.gov/r08/danielboone/recreation/holly-bay-campground"
     },
-    "phone": {
-     "date": "2026-10-28",
-     "line": "rvice/US Army Corps of Engineers Resource Managers Office KY-1193 London, KY 40744 Phone: 859-428-7706; 606-864-4163 Hours: Available by phone Monday through Friday 8 a.m. to 4:30 p.m. Office",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/holly-bay-campground"
-    },
     "reservable": {
      "date": "2026-10-28",
      "line": "ent pad, fire ring, picnic table and lantern pole. The 19 walk-in tent campsites are on a first-come, first-served basis and have access to centrally located water, but no electricity. These primitive … dventure. The 75 drive-in campsites are reservable and have electricity, water, a paved ve",
@@ -5181,7 +5486,7 @@
    "fees": "$46 per night | $92 per night | $32 per night | $63 per night | $10 per vehicle per night",
    "hookups": {
     "amps": null,
-    "electric": true,
+    "electric": "some",
     "sewer": null,
     "water": true
    },
@@ -5196,7 +5501,7 @@
    "name": "Holly Bay Campground",
    "official_page": "https://www.fs.usda.gov/r08/danielboone/recreation/holly-bay-campground",
    "park": "US-4484",
-   "phone": "(859) 428-7706",
+   "phone": null,
    "reservable": "mixed",
    "restrooms": "flush",
    "rules": {
@@ -5218,7 +5523,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "houchin-ferry-campground": {
    "agency": "KY (hand-checked list)",
@@ -5245,11 +5550,6 @@
      "date": "2026-10-28",
      "line": "booking link from our kpc-campgrounds.json row (official system www.recreation.gov)",
      "url": "https://www.recreation.gov/camping/campgrounds/258992"
-    },
-    "phone": {
-     "date": "2026-10-28",
-     "line": "3 Park footer Contact Info Mailing Address: P.O. Box 7 Mammoth Cave, KY 42259-0007 Phone: 270 758-2180 Contact Us Tools FAQ Site Index Español Stay Connected -->",
-     "url": "https://home.nps.gov/maca/planyourvisit/houchinferrycg.htm"
     },
     "restrooms": {
      "date": "2026-10-28",
@@ -5285,7 +5585,7 @@
    "name": "Houchin Ferry Campground",
    "official_page": "https://home.nps.gov/maca/planyourvisit/houchinferrycg.htm",
    "park": "US-0050",
-   "phone": "(270) 758-2180",
+   "phone": null,
    "reservable": null,
    "restrooms": "yes (kind not stated)",
    "rules": {
@@ -5307,7 +5607,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "jenny-wiley-campground": {
    "agency": "KY (hand-checked list)",
@@ -5381,7 +5681,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "john-james-audubon-campground": {
    "agency": "KY (hand-checked list)",
@@ -5455,7 +5755,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "kenlake-campground": {
    "agency": "KY (hand-checked list)",
@@ -5529,7 +5829,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "kentucky-dam-village-campground": {
    "agency": "KY (hand-checked list)",
@@ -5603,13 +5903,13 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "kentucky-horse-park-campground": {
    "agency": "KY (hand-checked list)",
    "booking": {
-    "how": "online: kentuckystateparks.reserveamerica.com",
-    "url": "https://kentuckystateparks.reserveamerica.com/camping/kentucky-horse-park/r/campgroundDetails.do?contractCode=KY&parkId=90800"
+    "how": "online: www.reserveamerica.com",
+    "url": "https://www.reserveamerica.com/explore/kentucky-horse-park/KY/90800/overview"
    },
    "cell": {
     "carriers": null,
@@ -5617,27 +5917,126 @@
     "status": "needs FCC token"
    },
    "checked": "2026-10-28",
-   "checkin": null,
-   "checkout": null,
-   "drinking_water": null,
-   "dump_station": null,
+   "checkin": "2 pm",
+   "checkout": "12:00 noon",
+   "drinking_water": true,
+   "dump_station": true,
    "elevation_ft": {
     "src": "https://epqs.nationalmap.gov/v1/json?x=-84.52111&y=38.15028&units=Feet&wkid=4326",
     "value": 860
    },
    "facts_src": {
+    "booking.how": {
+     "date": "2026-10-28",
+     "line": "link “Make a Reservation”",
+     "url": "https://kyhorsepark.com/campground/"
+    },
     "booking.url": {
      "date": "2026-10-28",
-     "line": "booking link from our kpc-campgrounds.json row (official system kentuckystateparks.reserveamerica.com)",
-     "url": "https://kentuckystateparks.reserveamerica.com/camping/kentucky-horse-park/r/campgroundDetails.do?contractCode=KY&parkId=90800"
+     "line": "link “Make a Reservation” -> https://www.reserveamerica.com/explore/kentucky-horse-park/KY/90800/overview",
+     "url": "https://kyhorsepark.com/campground/"
+    },
+    "checkin": {
+     "date": "2026-10-28",
+     "line": "se Park 4089 Iron Works Pike Lexington, Kentucky, 40511 Get Directions Ready to Check In? Check-in is after 2 pm. Check-out is before/by noon. Please check-in at the campground store. If arriving afte",
+     "url": "https://kyhorsepark.com/campground/"
+    },
+    "checkout": {
+     "date": "2026-10-28",
+     "line": "imum stay is 14 days unless approved by Campground management. Check in time is 2:00 p.m. Check out time is 12:00 noon. All guests are required to check in at the Campground store upon arrival before ",
+     "url": "https://kyhorsepark.com/campground/"
+    },
+    "drinking_water": {
+     "date": "2026-10-28",
+     "line": "yards away (groups of 25 or more are responsible for renting portable toilets). In-ground water hydrant available (renters must supply their own garden hose). Contact the campground at (859) 25",
+     "url": "https://kyhorsepark.com/campground/"
+    },
+    "dump_station": {
+     "date": "2026-10-28",
+     "line": "water, our campground sites are 55’ paved back-ins with fire rings and picnic tables. Two dump stations are provided for your convenience as you exit the park. Our campground also provides a c",
+     "url": "https://kyhorsepark.com/campground/"
+    },
+    "fees": {
+     "date": "2026-10-28",
+     "line": "y Horse Park when they purchase their tickets at the Campground Store. Main Season Adults $23.00 Main Season Military $21.00 Main Season Students (5-17) $12.00 Main Season Children (4 an",
+     "url": "https://kyhorsepark.com/campground/"
+    },
+    "hookups.amps": {
+     "date": "2026-10-28",
+     "line": "Countless Welcome to the Kentucky Horse Park Campground! Offering 260 spacious sites with 50/30/20 amp electricity and water, our campground sites are 55’ paved back-ins with fire rings and pi",
+     "url": "https://kyhorsepark.com/campground/"
+    },
+    "hookups.electric": {
+     "date": "2026-10-28",
+     "line": "come to the Kentucky Horse Park Campground! Offering 260 spacious sites with 50/30/20 amp electricity and water, our campground sites are 55’ paved back-ins with fire rings and picnic tables.",
+     "url": "https://kyhorsepark.com/campground/"
+    },
+    "hookups.sewer": {
+     "date": "2026-10-28",
+     "line": "he campground store. The campground remains available to campers after hours. Do you have sewer at your sites? We do not have sewer hookups at each site. We do have two dump stations lo",
+     "url": "https://kyhorsepark.com/campground/"
+    },
+    "hookups.water": {
+     "date": "2026-10-28",
+     "line": "come to the Kentucky Horse Park Campground! Offering 260 spacious sites with 50/30/20 amp electricity and water, our campground sites are 55’ paved back-ins with fire rings and picnic tables. Two dump",
+     "url": "https://kyhorsepark.com/campground/"
+    },
+    "phone": {
+     "date": "2026-10-28",
+     "line": "erve America at 888.459.7275 For groups of 20 or more: Call 859.259.4257 Toll Free 800.370.6416 The maximum stay is 14 days unless o",
+     "url": "https://kyhorsepark.com/campground/"
+    },
+    "reservable": {
+     "date": "2026-10-28",
+     "line": "nd primitive sites are available for those hoping for a more rustic stay. These areas are first-come, first-serve, and fill quickly during special weekends. Campground Rates & Premium Holiday Dates Se … hildren (4 and under) Free Reservations Reservations can be made at reserveamerica.com Call Reserve Amer",
+     "url": "https://kyhorsepark.com/campground/"
+    },
+    "restrooms": {
+     "date": "2026-10-28",
+     "line": "Restrooms approximately 300 yards away (groups of 25 or more are responsible for renting portable toilets). In-ground water hydrant available (renters must supply their own garden hose). Contact",
+     "url": "https://kyhorsepark.com/campground/"
+    },
+    "rules.fires": {
+     "date": "2026-10-28",
+     "line": "with 50/30/20 amp electricity and water, our campground sites are 55’ paved back-ins with fire rings and picnic tables. Two dump stations are provided for your convenience as you exit the park. Our ca",
+     "url": "https://kyhorsepark.com/campground/"
+    },
+    "rules.pets": {
+     "date": "2026-10-28",
+     "line": "rmation Center from the hours of 9 am to 5 pm daily. Do you allow dogs? The campground is pet-friendly. We do ask that all dogs remain on leashes and that you do your duty, after your pet does",
+     "url": "https://kyhorsepark.com/campground/"
+    },
+    "rules.stay_limit": {
+     "date": "2026-10-28",
+     "line": "ca at 888.459.7275 For groups of 20 or more: Call 859.259.4257 Toll Free 800.370.6416 The maximum stay is 14 days unless otherwise approved by campground management. Changes may be made online on the ",
+     "url": "https://kyhorsepark.com/campground/"
+    },
+    "season": {
+     "date": "2026-10-28",
+     "line": "ions Do you have questions about the KHP Campground? We’ve got answers! Is the campground open year round? Yes! The campground is open year round. However, the summer season is very busy and we r",
+     "url": "https://kyhorsepark.com/campground/"
+    },
+    "showers": {
+     "date": "2026-10-28",
+     "line": "ies and guest experience. Construction Notice: Work is currently underway near the Loop B bathhouse. The bathhouse remains open and fully functional; however, the adjacent basketball court,",
+     "url": "https://kyhorsepark.com/campground/"
+    },
+    "sites.total": {
+     "date": "2026-10-28",
+     "line": "ence as we improve the campground! Learn More… Let the Good Times Roll! The Park boasts a 260-site campground attracting over 40,000 campers annually. The campground’s pool, tennis courts,",
+     "url": "https://kyhorsepark.com/campground/"
     }
    },
-   "fees": null,
+   "fees": "$23.00 | $21.00 | $12.00 | $4/adult and $3/child (up to eight campers per site) | $3/child (up to eight campers per site)",
    "hookups": {
-    "amps": null,
-    "electric": null,
-    "sewer": null,
-    "water": null
+    "amps": [
+     20,
+     30,
+     50
+    ],
+    "electric": "some",
+    "sewer": "some",
+    "water": true
    },
    "kind": "c",
    "lat": 38.15028,
@@ -5650,29 +6049,29 @@
    "name": "Kentucky Horse Park Campground",
    "official_page": "https://kyhorsepark.com/campground/",
    "park": "US-10173",
-   "phone": null,
-   "reservable": null,
-   "restrooms": null,
+   "phone": "(859) 259-4257",
+   "reservable": "mixed",
+   "restrooms": "vault",
    "rules": {
-    "fires": null,
+    "fires": "fire rings and picnic tables",
     "generators": null,
-    "pets": null,
+    "pets": "pet-friendly",
     "quiet_hours": null,
-    "stay_limit": null
+    "stay_limit": "14 days"
    },
    "rv_max_ft": null,
-   "season": null,
-   "showers": null,
+   "season": "year-round",
+   "showers": true,
    "sites": {
     "cabin": null,
     "group": null,
     "primitive": null,
     "rv": null,
     "tent": null,
-    "total": null
+    "total": 260
    },
-   "status": "page not on an official host: kyhorsepark.com",
-   "ver": 1
+   "status": "ok",
+   "ver": 2
   },
   "kincaid-lake-campground": {
    "agency": "KY (hand-checked list)",
@@ -5746,7 +6145,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "kingdom-come-primitive-campsites": {
    "agency": "KY (hand-checked list)",
@@ -5820,141 +6219,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
-  },
-  "koomer-ridge-campground": {
-   "agency": "KY (hand-checked list)",
-   "booking": {
-    "how": "online: www.recreation.gov",
-    "url": "https://www.recreation.gov/camping/campgrounds/10311270"
-   },
-   "cell": {
-    "carriers": null,
-    "src": "https://broadbandmap.fcc.gov/ (BDC public data API, free account)",
-    "status": "needs FCC token"
-   },
-   "checked": "2026-10-28",
-   "checkin": null,
-   "checkout": null,
-   "drinking_water": true,
-   "dump_station": false,
-   "elevation_ft": {
-    "src": "https://epqs.nationalmap.gov/v1/json?x=-83.63263379&y=37.78403169&units=Feet&wkid=4326",
-    "value": 1255
-   },
-   "facts_src": {
-    "booking.how": {
-     "date": "2026-10-28",
-     "line": "link “Make Reservations Here”",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/koomer-ridge-campground"
-    },
-    "booking.url": {
-     "date": "2026-10-28",
-     "line": "link “Make Reservations Here” -> https://www.recreation.gov/camping/campgrounds/10311270",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/koomer-ridge-campground"
-    },
-    "drinking_water": {
-     "date": "2026-10-28",
-     "line": "et accessibility standards for persons with disabilities. Restrooms Flush toilet(s) Water Potable water is available at this site. Drinking water is available from faucets. Picnic Tables Picnic",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/koomer-ridge-campground"
-    },
-    "dump_station": {
-     "date": "2026-10-28",
-     "line": "kups. Campground facilities include an amphitheater and bath house with seasonal showers. No dump station available. The area serves as a trailhead for Cliff Trail #206, Silvermine Arch Trail #22",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/koomer-ridge-campground"
-    },
-    "fees": {
-     "date": "2026-10-28",
-     "line": "Open 24 hours/day Fee Site and Info Spring - Fall (March 14 - Nov 1, 2026): Single Site: $35 per night Double Site: $45 per night Walk in tent site: $27 per night Extra Vehicle: $10 per night",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/koomer-ridge-campground"
-    },
-    "hookups.electric": {
-     "date": "2026-10-28",
-     "line": "und provides 54 campsites suitable for tent camping, 19 of which may accommodate RVs with no hookups. Campground facilities include an amphitheater and bath house with seasonal showers. No d",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/koomer-ridge-campground"
-    },
-    "map.date_how": {
-     "date": "2026-10-28",
-     "line": "link “View Guide/Map”",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/koomer-ridge-campground"
-    },
-    "map.url": {
-     "date": "2026-10-28",
-     "line": "link “View Guide/Map” -> https://usfs-public.box.com/s/uv28hc08gky5zkaw4bzowmqk1jbiqgs3",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/koomer-ridge-campground"
-    },
-    "phone": {
-     "date": "2026-10-28",
-     "line": "on Cumberland Ranger District Office Address: 2375 KY 801 South Morehead, KY 40351 Phone: 606-784-6428 Hours: Monday through Friday 8 a.m. to 11:30 a.m. and 12:30 p.m. to 4:30 p.m. (Closed on",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/koomer-ridge-campground"
-    },
-    "reservable": {
-     "date": "2026-10-28",
-     "line": "Sept 2027 Reservations Make Reservations Here Reservations available. Sites are available first-come, first-served unless reserved. General Information Seasons of Use Open year-round Operational Hours … 027 Reservations Make Reservations Here Reservations available. Sites are available first-come, first-",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/koomer-ridge-campground"
-    },
-    "restrooms": {
-     "date": "2026-10-28",
-     "line": "Parking Parking is available at the site. Facility and Amenity Information Accessibility Flush toilets and showers meet accessibility standards for persons with disabilities. Restrooms Flush t",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/koomer-ridge-campground"
-    },
-    "season": {
-     "date": "2026-10-28",
-     "line": "re available first-come, first-served unless reserved. General Information Seasons of Use Open year-round Operational Hours Open 24 hours/day Fee Site and Info Spring - Fall (March 14 - Nov 1, 20",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/koomer-ridge-campground"
-    },
-    "showers": {
-     "date": "2026-10-28",
-     "line": "ch may accommodate RVs with no hookups. Campground facilities include an amphitheater and bath house with seasonal showers. No dump station available. The area serves as a trailhead for Clif",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/koomer-ridge-campground"
-    },
-    "sites.total": {
-     "date": "2026-10-28",
-     "line": "top shop entry point for exploring the Red River Gorge. The developed campground provides 54 campsites suitable for tent camping, 19 of which may accommodate RVs with no hookups. Campground fa",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/koomer-ridge-campground"
-    }
-   },
-   "fees": "$35 per night | $45 per night | $27 per night | $10 per night | $19 per night",
-   "hookups": {
-    "amps": null,
-    "electric": false,
-    "sewer": null,
-    "water": null
-   },
-   "kind": "c",
-   "lat": 37.78403169,
-   "list": "kpc-campgrounds.json",
-   "lon": -83.63263379,
-   "map": {
-    "date_how": "web page, no date in the link",
-    "url": "https://usfs-public.box.com/s/uv28hc08gky5zkaw4bzowmqk1jbiqgs3"
-   },
-   "name": "Koomer Ridge Campground",
-   "official_page": "https://www.fs.usda.gov/r08/danielboone/recreation/koomer-ridge-campground",
-   "park": "US-4484",
-   "phone": "(606) 784-6428",
-   "reservable": "mixed",
-   "restrooms": "flush",
-   "rules": {
-    "fires": null,
-    "generators": null,
-    "pets": null,
-    "quiet_hours": null,
-    "stay_limit": null
-   },
-   "rv_max_ft": null,
-   "season": "year-round",
-   "showers": true,
-   "sites": {
-    "cabin": null,
-    "group": null,
-    "primitive": null,
-    "rv": null,
-    "tent": null,
-    "total": 54
-   },
-   "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "lake-barkley-campground": {
    "agency": "KY (hand-checked list)",
@@ -6028,7 +6293,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "lake-cumberland-campground": {
    "agency": "KY (hand-checked list)",
@@ -6102,7 +6367,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "lake-malone-campground": {
    "agency": "KY (hand-checked list)",
@@ -6176,13 +6441,13 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "levi-jackson-campground": {
    "agency": "KY (hand-checked list)",
    "booking": {
-    "how": null,
-    "url": null
+    "how": "online: levijacksonpark.com",
+    "url": "https://levijacksonpark.com/accomodations/"
    },
    "cell": {
     "carriers": null,
@@ -6193,16 +6458,62 @@
    "checkin": null,
    "checkout": null,
    "drinking_water": null,
-   "dump_station": null,
+   "dump_station": true,
    "elevation_ft": {
     "src": null,
     "value": null
    },
-   "facts_src": {},
+   "facts_src": {
+    "booking.how": {
+     "date": "2026-10-28",
+     "line": "link “Make A Reservation”",
+     "url": "https://levijacksonpark.com/accomodations/campground/"
+    },
+    "booking.url": {
+     "date": "2026-10-28",
+     "line": "link “Make A Reservation” -> https://levijacksonpark.com/accomodations/",
+     "url": "https://levijacksonpark.com/accomodations/campground/"
+    },
+    "dump_station": {
+     "date": "2026-10-28",
+     "line": "d in a 146-site campground, nestled in open woodland. Utility hookups, a grocery store, a dump station, and three central service buildings containing an activities room, showers, restrooms, a",
+     "url": "https://levijacksonpark.com/accomodations/campground/"
+    },
+    "hookups.electric": {
+     "date": "2026-10-28",
+     "line": "visitors can relax year-round in a 146-site campground, nestled in open woodland. Utility hookups, a grocery store, a dump station, and three central service buildings containing an activ",
+     "url": "https://levijacksonpark.com/accomodations/campground/"
+    },
+    "restrooms": {
+     "date": "2026-10-28",
+     "line": "dump station, and three central service buildings containing an activities room, showers, restrooms, and laundry facilities assure camping convenience. Pets are allowed if restrained. Levi",
+     "url": "https://levijacksonpark.com/accomodations/campground/"
+    },
+    "rules.pets": {
+     "date": "2026-10-28",
+     "line": "n activities room, showers, restrooms, and laundry facilities assure camping convenience. Pets are allowed if restrained. Levi Jackson is a great place for a fun-filled group camping trip. The group c",
+     "url": "https://levijacksonpark.com/accomodations/campground/"
+    },
+    "season": {
+     "date": "2026-10-28",
+     "line": "ring Kentucky’s pioneer heritage at Levi Jackson Wilderness Road Park, visitors can relax year-round in a 146-site campground, nestled in open woodland. Utility hookups, a grocery store, a d",
+     "url": "https://levijacksonpark.com/accomodations/campground/"
+    },
+    "showers": {
+     "date": "2026-10-28",
+     "line": "store, a dump station, and three central service buildings containing an activities room, showers, restrooms, and laundry facilities assure camping convenience. Pets are allowed if restra",
+     "url": "https://levijacksonpark.com/accomodations/campground/"
+    },
+    "sites.total": {
+     "date": "2026-10-28",
+     "line": "pioneer heritage at Levi Jackson Wilderness Road Park, visitors can relax year-round in a 146-site campground, nestled in open woodland. Utility hookups, a grocery store, a dump station, a",
+     "url": "https://levijacksonpark.com/accomodations/campground/"
+    }
+   },
    "fees": null,
    "hookups": {
     "amps": null,
-    "electric": null,
+    "electric": true,
     "sewer": null,
     "water": null
    },
@@ -6219,27 +6530,27 @@
    "park": "US-1264",
    "phone": null,
    "reservable": null,
-   "restrooms": null,
+   "restrooms": "yes (kind not stated)",
    "rules": {
     "fires": null,
     "generators": null,
-    "pets": null,
+    "pets": "Pets are allowed if restrained",
     "quiet_hours": null,
     "stay_limit": null
    },
    "rv_max_ft": null,
-   "season": null,
-   "showers": null,
+   "season": "year-round",
+   "showers": true,
    "sites": {
     "cabin": null,
     "group": null,
     "primitive": null,
     "rv": null,
     "tent": null,
-    "total": null
+    "total": 146
    },
-   "status": "page not on an official host: levijacksonpark.com",
-   "ver": 1
+   "status": "ok",
+   "ver": 2
   },
   "mammoth-cave-campground": {
    "agency": "KY (hand-checked list)",
@@ -6266,11 +6577,6 @@
      "date": "2026-10-28",
      "line": "booking link from our kpc-campgrounds.json row (official system www.recreation.gov)",
      "url": "https://www.recreation.gov/camping/campgrounds/232467"
-    },
-    "phone": {
-     "date": "2026-10-28",
-     "line": "3 Park footer Contact Info Mailing Address: P.O. Box 7 Mammoth Cave, KY 42259-0007 Phone: 270 758-2180 Contact Us Tools FAQ Site Index Español Stay Connected -->",
-     "url": "https://home.nps.gov/maca/planyourvisit/macacampground.htm"
     },
     "restrooms": {
      "date": "2026-10-28",
@@ -6306,7 +6612,7 @@
    "name": "Mammoth Cave Campground",
    "official_page": "https://home.nps.gov/maca/planyourvisit/macacampground.htm",
    "park": "US-0050",
-   "phone": "(270) 758-2180",
+   "phone": null,
    "reservable": null,
    "restrooms": "yes (kind not stated)",
    "rules": {
@@ -6328,7 +6634,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "maple-springs-group-campground": {
    "agency": "KY (hand-checked list)",
@@ -6355,11 +6661,6 @@
      "date": "2026-10-28",
      "line": "booking link from our kpc-campgrounds.json row (official system www.recreation.gov)",
      "url": "https://www.recreation.gov/camping/campgrounds/232468"
-    },
-    "phone": {
-     "date": "2026-10-28",
-     "line": "r driving directions and ferry information, schedules, and trailer standards, please call (270) 758-2166 or visit Directions and Transportation . Loading... Basic Information Campground Features",
-     "url": "https://home.nps.gov/maca/planyourvisit/maplespringscg.htm"
     },
     "restrooms": {
      "date": "2026-10-28",
@@ -6395,7 +6696,7 @@
    "name": "Maple Springs Group Campground",
    "official_page": "https://home.nps.gov/maca/planyourvisit/maplespringscg.htm",
    "park": "US-0050",
-   "phone": "(270) 758-2166",
+   "phone": null,
    "reservable": null,
    "restrooms": "yes (kind not stated)",
    "rules": {
@@ -6417,7 +6718,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "my-old-kentucky-home-campground": {
    "agency": "KY (hand-checked list)",
@@ -6491,7 +6792,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "nolin-lake-campground": {
    "agency": "KY (hand-checked list)",
@@ -6565,7 +6866,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "otter-creek-ora-campground": {
    "agency": "KY (hand-checked list)",
@@ -6598,11 +6899,6 @@
      "line": "link “Campground Map” -> https://fw.ky.gov/Documents/ocoracampgroundmap.pdf",
      "url": "https://fw.ky.gov/Pages/Otter-Creek-Outdoor-Recreation-Area.aspx"
     },
-    "phone": {
-     "date": "2026-10-28",
-     "line": "urs: Open year-round from dawn to dusk. Contact Info For all Campground Inquiries: Phone: 270-750-4257 ( Meade County ) Email: ottercreekcamp@meadeky.gov Campground Info and Reservations: FIRE",
-     "url": "https://fw.ky.gov/Pages/Otter-Creek-Outdoor-Recreation-Area.aspx"
-    },
     "season": {
      "date": "2026-10-28",
      "line": "Home Otter Creek Outdoor Recreation Area Main Content ​ ​​ Hours of Operation Area Hours: Open year-round from dawn to dusk. Contact Info For all Campground Inquiries: Phone: 270-750-4257 ( Meade",
@@ -6627,7 +6923,7 @@
    "name": "Otter Creek ORA Campground",
    "official_page": "https://fw.ky.gov/Pages/Otter-Creek-Outdoor-Recreation-Area.aspx",
    "park": "US-8144",
-   "phone": "(270) 750-4257",
+   "phone": null,
    "reservable": null,
    "restrooms": null,
    "rules": {
@@ -6649,7 +6945,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "paintsville-lake-campground": {
    "agency": "KY (hand-checked list)",
@@ -6723,7 +7019,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "pennyrile-forest-campground": {
    "agency": "KY (hand-checked list)",
@@ -6797,7 +7093,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "piney-campground-tn": {
    "agency": "KY (hand-checked list)",
@@ -6811,8 +7107,8 @@
     "status": "needs FCC token"
    },
    "checked": "2026-10-28",
-   "checkin": null,
-   "checkout": null,
+   "checkin": "4:30 p.m",
+   "checkout": "3:30 p.m",
    "drinking_water": null,
    "dump_station": null,
    "elevation_ft": {
@@ -6820,53 +7116,146 @@
     "value": null
    },
    "facts_src": {
+    "booking.how": {
+     "date": "2026-10-28",
+     "line": "link “Reserve Online”",
+     "url": "https://www.landbetweenthelakes.us/visit/piney-campground/"
+    },
     "booking.url": {
      "date": "2026-10-28",
-     "line": "booking link from our kpc-campgrounds.json row (official system lblweb.usedirect.com)",
-     "url": "https://lblweb.usedirect.com/camplbl/"
+     "line": "link “Reserve Online” -> https://lblweb.usedirect.com/camplbl/",
+     "url": "https://www.landbetweenthelakes.us/visit/piney-campground/"
+    },
+    "checkin": {
+     "date": "2026-10-28",
+     "line": "IND YOUR NEXT ADVENTURE... SEARCH About Piney Campground Outpost is open March – November Check-in is 4:30 p.m., you may check in anytime of your arrival date if the site is vacant. Check-out is 3:30 ",
+     "url": "https://www.landbetweenthelakes.us/visit/piney-campground/"
+    },
+    "checkout": {
+     "date": "2026-10-28",
+     "line": "eck-in is 4:30 p.m., you may check in anytime of your arrival date if the site is vacant. Check-out is 3:30 p.m. A 1-night late fee will be assessed. Address: 621 Fort Henry Road, Dover, TN 37058 Phon",
+     "url": "https://www.landbetweenthelakes.us/visit/piney-campground/"
+    },
+    "fees": {
+     "date": "2026-10-28",
+     "line": "* reservations can be made 2 days to 6 months in advance Type of Site Basic Nightly Rate $12 30 Amp Electric Nightly Rate $26 30 Amp Electric/Water/Sewer Nightly Rate $40 50 Amp Elec",
+     "url": "https://www.landbetweenthelakes.us/visit/piney-campground/"
+    },
+    "hookups.amps": {
+     "date": "2026-10-28",
+     "line": "eservations can be made 2 days to 6 months in advance Type of Site Basic Nightly Rate $12 30 Amp Electric Nightly Rate $26 30 Amp Electric/Water/Sewer Nightly Rate $40 50 Amp Electric/Wa",
+     "url": "https://www.landbetweenthelakes.us/visit/piney-campground/"
+    },
+    "hookups.electric": {
+     "date": "2026-10-28",
+     "line": "is open March – November and offers 384 well-defined lakefront and wooded sites with: 283 electrical hookup sites; 44 sites with electric, water, and sewer; and 57 primitive sites. Most sites are c",
+     "url": "https://www.landbetweenthelakes.us/visit/piney-campground/"
+    },
+    "hookups.sewer": {
+     "date": "2026-10-28",
+     "line": "nt and wooded sites with: 283 electrical hookup sites; 44 sites with electric, water, and sewer; and 57 primitive sites. Most sites are capable of handling large motor homes and campers",
+     "url": "https://www.landbetweenthelakes.us/visit/piney-campground/"
+    },
+    "hookups.water": {
+     "date": "2026-10-28",
+     "line": "well-defined lakefront and wooded sites with: 283 electrical hookup sites; 44 sites with electric, water, and sewer; and 57 primitive sites. Most sites are capable of handling large motor homes",
+     "url": "https://www.landbetweenthelakes.us/visit/piney-campground/"
+    },
+    "map.date_how": {
+     "date": "2026-10-28",
+     "line": "link “Piney Campground Map”",
+     "url": "https://www.landbetweenthelakes.us/visit/piney-campground/"
+    },
+    "map.url": {
+     "date": "2026-10-28",
+     "line": "link “Piney Campground Map” -> https://www.landbetweenthelakes.us/wp-content/uploads/2025/04/FINAL_PRINT_-PineyCampgroundMap_2025.p",
+     "url": "https://www.landbetweenthelakes.us/visit/piney-campground/"
+    },
+    "phone": {
+     "date": "2026-10-28",
+     "line": "essed. Address: 621 Fort Henry Road, Dover, TN 37058 Phone: 931-232-5331 Maps LBL Maps Piney Campground Map Brochures & Resources Re",
+     "url": "https://www.landbetweenthelakes.us/visit/piney-campground/"
+    },
+    "reservable": {
+     "date": "2026-10-28",
+     "line": "er, TN 37058 Phone: 931-232-5331 Maps LBL Maps Piney Campground Map Brochures & Resources Reserve Online Piney Campground FAQ Seasonal Camping Information Piney Campground is open March – Novemb",
+     "url": "https://www.landbetweenthelakes.us/visit/piney-campground/"
+    },
+    "rules.fires": {
+     "date": "2026-10-28",
+     "line": "rn facilities, including a swimming beach area, archery range, ball field, bike trails, a campfire theater, hiking trails, two boat ramps, and a fishing pier. In addition, the summer season offers wee",
+     "url": "https://www.landbetweenthelakes.us/visit/piney-campground/"
+    },
+    "season": {
+     "date": "2026-10-28",
+     "line": "ies Piney Campground FIND YOUR NEXT ADVENTURE... SEARCH About Piney Campground Outpost is open March – November Check-in is 4:30 p.m., you may check in anytime of your arrival date if the site is vaca",
+     "url": "https://www.landbetweenthelakes.us/visit/piney-campground/"
+    },
+    "showers": {
+     "date": "2026-10-28",
+     "line": "Visitor per vehicle; up to 8 people Nightly Rate $5 Extra Vehicle Nightly Rate $5 Visitor shower per person Nightly Rate $5 Late departure fees Nightly Rate = 1 Night Stay Site change fe",
+     "url": "https://www.landbetweenthelakes.us/visit/piney-campground/"
+    },
+    "sites.cabin": {
+     "date": "2026-10-28",
+     "line": "e sites. Most sites are capable of handling large motor homes and campers. Piney also has 19 primitive cabins available for nightly rental. Campers have access to modern facilities, including a swimm",
+     "url": "https://www.landbetweenthelakes.us/visit/piney-campground/"
+    },
+    "sites.primitive": {
+     "date": "2026-10-28",
+     "line": "ed sites with: 283 electrical hookup sites; 44 sites with electric, water, and sewer; and 57 primitive sites. Most sites are capable of handling large motor homes and campers. Piney also has 19 prim",
+     "url": "https://www.landbetweenthelakes.us/visit/piney-campground/"
+    },
+    "sites.total": {
+     "date": "2026-10-28",
+     "line": "and offers 384 well-defined lakefront and wooded sites with: 283 electrical hookup sites; 44 sites with electric, water, and sewer; and 57 primitive sites. Most sites are capable of handli",
+     "url": "https://www.landbetweenthelakes.us/visit/piney-campground/"
     }
    },
-   "fees": null,
+   "fees": "$12 | $26 | $40 | $42 | $50",
    "hookups": {
-    "amps": null,
-    "electric": null,
-    "sewer": null,
-    "water": null
+    "amps": [
+     30,
+     50
+    ],
+    "electric": true,
+    "sewer": true,
+    "water": true
    },
    "kind": "c",
    "lat": null,
    "list": "kpc-campgrounds.json",
    "lon": null,
    "map": {
-    "date_how": null,
-    "url": null
+    "date_how": "PDF, year 2025 in the link",
+    "url": "https://www.landbetweenthelakes.us/wp-content/uploads/2025/04/FINAL_PRINT_-PineyCampgroundMap_2025.pdf"
    },
    "name": "Piney Campground (TN)",
    "official_page": "https://www.landbetweenthelakes.us/visit/piney-campground/",
    "park": "US-3792",
-   "phone": null,
-   "reservable": null,
+   "phone": "(931) 232-5331",
+   "reservable": true,
    "restrooms": null,
    "rules": {
-    "fires": null,
+    "fires": "campfire theater, hiking trails, two boat ramps, and a fishing pier",
     "generators": null,
     "pets": null,
     "quiet_hours": null,
     "stay_limit": null
    },
    "rv_max_ft": null,
-   "season": null,
-   "showers": null,
+   "season": "March through November",
+   "showers": true,
    "sites": {
-    "cabin": null,
+    "cabin": 19,
     "group": null,
-    "primitive": null,
+    "primitive": 57,
     "rv": null,
     "tent": null,
-    "total": null
+    "total": 44
    },
-   "status": "page not on an official host: www.landbetweenthelakes.us",
-   "ver": 1
+   "status": "ok",
+   "ver": 2
   },
   "ridgeline-clifty-campgrounds": {
    "agency": "KY (hand-checked list)",
@@ -6940,7 +7329,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "rolling-fork-wma-designated-camping-area": {
    "agency": "KY (hand-checked list)",
@@ -6975,7 +7364,7 @@
     },
     "phone": {
      "date": "2026-10-28",
-     "line": "Close Return to Search --> WMA Overview Size: 2896 acres Location: Nelson, Larue Contact: (502) 477-9024 Elevation: minimum 520 feet, maximum 980 feet. Entrance GPS coordinates: Latitude N 37.53",
+     "line": "Overview Size: 2896 acres Location: Nelson, Larue Contact: (502) 477-9024 Elevation: minimum 520 feet, maximum 980 feet. Entrance GPS",
      "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9219"
     },
     "rules.stay_limit": {
@@ -7029,7 +7418,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "s-tree-campground": {
    "agency": "KY (hand-checked list)",
@@ -7064,17 +7453,12 @@
     },
     "drinking_water": {
      "date": "2026-10-28",
-     "line": "sibility standards for persons with disabilities. Restrooms Vault toilet(s) Water Potable water is not available at this site. Picnic Tables Picnic tables are available at this site. Picnic tables are",
+     "line": "et accessibility standards for persons with disabilities. Restrooms Vault toilet(s) Water Potable water is not available at this site. Picnic Tables Picnic tables are available at this site. Pi",
      "url": "https://www.fs.usda.gov/r08/danielboone/recreation/s-tree-campground"
     },
     "fees": {
      "date": "2026-10-28",
      "line": "r-round Operational Hours Open 24 hours/day Fee Site and Info Overnight Use: Single Site: $15 per night Double Site: $20 per night Pay at site using fee envelope (cash or check only) or the Rec",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/s-tree-campground"
-    },
-    "phone": {
-     "date": "2026-10-28",
-     "line": "rvice/US Army Corps of Engineers Resource Managers Office KY-1193 London, KY 40744 Phone: 859-428-7706; 606-864-4163 Hours: Available by phone Monday through Friday 8 a.m. to 4:30 p.m. Office",
      "url": "https://www.fs.usda.gov/r08/danielboone/recreation/s-tree-campground"
     },
     "reservable": {
@@ -7116,7 +7500,7 @@
    "name": "S-Tree Campground",
    "official_page": "https://www.fs.usda.gov/r08/danielboone/recreation/s-tree-campground",
    "park": "US-4484",
-   "phone": "(859) 428-7706",
+   "phone": null,
    "reservable": false,
    "restrooms": "vault",
    "rules": {
@@ -7138,7 +7522,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "self-service-lakeside-campgrounds-10": {
    "agency": "KY (hand-checked list)",
@@ -7160,11 +7544,44 @@
     "src": null,
     "value": null
    },
-   "facts_src": {},
-   "fees": null,
+   "facts_src": {
+    "fees": {
+     "date": "2026-10-28",
+     "line": "rash pickup, lake access, and boat ramps. Self-Service Campgrounds include: Cravens Bay – $12 per night Fenton (30 amp electric) – $26 per night Turkey Bay Off-Highway Vehicle Area – $12 per ni",
+     "url": "https://www.landbetweenthelakes.us/facility/self-service-camping/"
+    },
+    "hookups.amps": {
+     "date": "2026-10-28",
+     "line": "ss, and boat ramps. Self-Service Campgrounds include: Cravens Bay – $12 per night Fenton (30 amp electric) – $26 per night Turkey Bay Off-Highway Vehicle Area – $12 per night Nickell Bra",
+     "url": "https://www.landbetweenthelakes.us/facility/self-service-camping/"
+    },
+    "hookups.electric": {
+     "date": "2026-10-28",
+     "line": "boat ramps. Self-Service Campgrounds include: Cravens Bay – $12 per night Fenton (30 amp electric) – $26 per night Turkey Bay Off-Highway Vehicle Area – $12 per night Nickell Branch – $10",
+     "url": "https://www.landbetweenthelakes.us/facility/self-service-camping/"
+    },
+    "restrooms": {
+     "date": "2026-10-28",
+     "line": "er basic amenities including designated campsite pads, picnic tables, grills, fire rings, vault toilets, trash pickup, lake access, and boat ramps. Self-Service Campgrounds include: Cravens Bay",
+     "url": "https://www.landbetweenthelakes.us/facility/self-service-camping/"
+    },
+    "rules.fires": {
+     "date": "2026-10-28",
+     "line": "pgrounds offer basic amenities including designated campsite pads, picnic tables, grills, fire rings, vault toilets, trash pickup, lake access, and boat ramps. Self-Service Campgrounds include: Craven",
+     "url": "https://www.landbetweenthelakes.us/facility/self-service-camping/"
+    },
+    "season": {
+     "date": "2026-10-28",
+     "line": "atives to the more developed campgrounds. We have 11 self-service campgrounds which offer year-round lakeside camping. Although these areas have fewer amenities than our developed campground",
+     "url": "https://www.landbetweenthelakes.us/facility/self-service-camping/"
+    }
+   },
+   "fees": "$12 per night | $26 per night | $10 per night",
    "hookups": {
-    "amps": null,
-    "electric": null,
+    "amps": [
+     30
+    ],
+    "electric": true,
     "sewer": null,
     "water": null
    },
@@ -7181,16 +7598,16 @@
    "park": "US-3792",
    "phone": null,
    "reservable": null,
-   "restrooms": null,
+   "restrooms": "vault",
    "rules": {
-    "fires": null,
+    "fires": "fire rings, vault toilets, trash pickup, lake access, and boat ramps",
     "generators": null,
     "pets": null,
     "quiet_hours": null,
     "stay_limit": null
    },
    "rv_max_ft": null,
-   "season": null,
+   "season": "year-round",
    "showers": null,
    "sites": {
     "cabin": null,
@@ -7200,8 +7617,8 @@
     "tent": null,
     "total": null
    },
-   "status": "page not on an official host: www.landbetweenthelakes.us",
-   "ver": 1
+   "status": "ok",
+   "ver": 2
   },
   "station-camp-campground-tn": {
    "agency": "KY (hand-checked list)",
@@ -7276,7 +7693,7 @@
     },
     "phone": {
      "date": "2026-10-28",
-     "line": "6 Park footer Contact Info Mailing Address: 4564 Leatherwood Road Oneida, TN 37841 Phone: 423 569-9778 Contact Us Tools FAQ Site Index Español Stay Connected -->",
+     "line": "l Park Service. Camping reservations can be made by calling 1-877-444-6777 or on the Recreation.Gov web site . Important Information C",
      "url": "https://home.nps.gov/biso/planyourvisit/station-camp-campground.htm"
     },
     "reservable": {
@@ -7323,7 +7740,7 @@
    "name": "Station Camp Campground (TN)",
    "official_page": "https://home.nps.gov/biso/planyourvisit/station-camp-campground.htm",
    "park": "US-0686",
-   "phone": "(423) 569-9778",
+   "phone": "(877) 444-6777",
    "reservable": true,
    "restrooms": "flush",
    "rules": {
@@ -7345,7 +7762,7 @@
     "total": 24
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "taylorsville-lake-campground": {
    "agency": "KY (hand-checked list)",
@@ -7419,7 +7836,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "turkey-foot-campground": {
    "agency": "KY (hand-checked list)",
@@ -7436,7 +7853,7 @@
    "checkin": null,
    "checkout": null,
    "drinking_water": false,
-   "dump_station": true,
+   "dump_station": false,
    "elevation_ft": {
     "src": "https://epqs.nationalmap.gov/v1/json?x=-83.91662833&y=37.46602109&units=Feet&wkid=4326",
     "value": 868
@@ -7454,7 +7871,7 @@
     },
     "drinking_water": {
      "date": "2026-10-28",
-     "line": "sibility standards for persons with disabilities. Restrooms Vault toilet(s) Water Potable water is not available at this site. Picnic Tables Picnic tables are available at this site. Picnic tables are",
+     "line": "et accessibility standards for persons with disabilities. Restrooms Vault toilet(s) Water Potable water is not available at this site. Picnic Tables Picnic tables are available at this site. Pi",
      "url": "https://www.fs.usda.gov/r08/danielboone/recreation/turkey-foot-campground"
     },
     "dump_station": {
@@ -7475,11 +7892,6 @@
     "map.url": {
      "date": "2026-10-28",
      "line": "link “View Guide/Map” -> https://usfs-public.box.com/s/9cpbos54l97s0vqkhihkaqz0ua8vlt61",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/turkey-foot-campground"
-    },
-    "phone": {
-     "date": "2026-10-28",
-     "line": "rvice/US Army Corps of Engineers Resource Managers Office KY-1193 London, KY 40744 Phone: 859-428-7706; 606-864-4163 Hours: Available by phone Monday through Friday 8 a.m. to 4:30 p.m. Office",
      "url": "https://www.fs.usda.gov/r08/danielboone/recreation/turkey-foot-campground"
     },
     "reservable": {
@@ -7506,7 +7918,7 @@
    "fees": null,
    "hookups": {
     "amps": null,
-    "electric": true,
+    "electric": false,
     "sewer": null,
     "water": null
    },
@@ -7521,7 +7933,7 @@
    "name": "Turkey Foot Campground",
    "official_page": "https://www.fs.usda.gov/r08/danielboone/recreation/turkey-foot-campground",
    "park": "US-4484",
-   "phone": "(859) 428-7706",
+   "phone": null,
    "reservable": false,
    "restrooms": "vault",
    "rules": {
@@ -7543,7 +7955,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "twin-knobs-campground": {
    "agency": "KY (hand-checked list)",
@@ -7560,7 +7972,7 @@
    "checkin": "2 p.m",
    "checkout": "11:00 a.m",
    "drinking_water": true,
-   "dump_station": true,
+   "dump_station": "some",
    "elevation_ft": {
     "src": "https://epqs.nationalmap.gov/v1/json?x=-83.50740413&y=38.09104619&units=Feet&wkid=4326",
     "value": 789
@@ -7626,11 +8038,6 @@
      "line": "link “Twin Knobs Recreation Area Map” -> https://usfs-public.box.com/s/mkk3sln2dj49cc207476rpru4ahck6vp",
      "url": "https://www.fs.usda.gov/r08/danielboone/recreation/twin-knobs-campground"
     },
-    "phone": {
-     "date": "2026-10-28",
-     "line": "lean up after your pet. Contact Information Contact Name: VISTA Recreation Contact Phone: 606-780-7818 Office Contact Information Cumberland Ranger District Office Address: 2375 KY 801 South M",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/twin-knobs-campground"
-    },
     "reservable": {
      "date": "2026-10-28",
      "line": "hibitions Reservations Make Reservations Here Reservations available. Sites are available first-come, first-served unless reserved. General Information The boat ramp will become unsafe and/or inaccess … ons Reservations Make Reservations Here Reservations available. Sites are available first-come, first-",
@@ -7665,10 +8072,14 @@
    "fees": "$35 per night | $45 per night | $50 per night | $64 per night | $13 per night",
    "hookups": {
     "amps": null,
-    "electric": true,
-    "sewer": true,
-    "water": true
+    "electric": "some",
+    "sewer": "some",
+    "water": "some"
    },
+   "ids": [
+    "twin-knobs-campground",
+    "us-10170-twin-knobs-campground"
+   ],
    "kind": "c",
    "lat": 38.09104619,
    "list": "kpc-campgrounds.json",
@@ -7679,8 +8090,8 @@
    },
    "name": "Twin Knobs Campground",
    "official_page": "https://www.fs.usda.gov/r08/danielboone/recreation/twin-knobs-campground",
-   "park": "US-4484",
-   "phone": "(606) 780-7818",
+   "park": "US-4484 US-10170",
+   "phone": null,
    "reservable": "mixed",
    "restrooms": "flush",
    "rules": {
@@ -7702,166 +8113,7 @@
     "total": 200
    },
    "status": "ok",
-   "ver": 1
-  },
-  "us-10170-twin-knobs-campground": {
-   "agency": "KY (hand-checked list)",
-   "booking": {
-    "how": "online: www.recreation.gov",
-    "url": "https://www.recreation.gov/camping/campgrounds/233782"
-   },
-   "cell": {
-    "carriers": null,
-    "src": "https://broadbandmap.fcc.gov/ (BDC public data API, free account)",
-    "status": "needs FCC token"
-   },
-   "checked": "2026-10-28",
-   "checkin": "2 p.m",
-   "checkout": "11:00 a.m",
-   "drinking_water": true,
-   "dump_station": true,
-   "elevation_ft": {
-    "src": "https://epqs.nationalmap.gov/v1/json?x=-83.50740413&y=38.09104619&units=Feet&wkid=4326",
-    "value": 789
-   },
-   "facts_src": {
-    "booking.how": {
-     "date": "2026-10-28",
-     "line": "link “Make Reservations Here”",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/twin-knobs-campground"
-    },
-    "booking.url": {
-     "date": "2026-10-28",
-     "line": "link “Make Reservations Here” -> https://www.recreation.gov/camping/campgrounds/233782",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/twin-knobs-campground"
-    },
-    "checkin": {
-     "date": "2026-10-28",
-     "line": "your visit. Seasons of Use 2nd Friday in March - 1st Sunday in November Operational Hours Check-in: 2 p.m. Checkout: 11:00 a.m. Only registered campers are allowed at Twin Knobs after 10 p.m. Fee",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/twin-knobs-campground"
-    },
-    "checkout": {
-     "date": "2026-10-28",
-     "line": "ns of Use 2nd Friday in March - 1st Sunday in November Operational Hours Check-in: 2 p.m. Checkout: 11:00 a.m. Only registered campers are allowed at Twin Knobs after 10 p.m. Fee Site and Info Overnig",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/twin-knobs-campground"
-    },
-    "drinking_water": {
-     "date": "2026-10-28",
-     "line": "available at this site. Facility and Amenity Information Restrooms Flush toilet(s) Water Potable water is available at this site. Drinking water is available from faucets. Picnic Tables Picnic",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/twin-knobs-campground"
-    },
-    "dump_station": {
-     "date": "2026-10-28",
-     "line": "a picnic table and campfire ring. RV sites range from electric-only to full hookups and a dump station is available. Bathhouses with showers and flush toilets are spread throughout the campgro",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/twin-knobs-campground"
-    },
-    "fees": {
-     "date": "2026-10-28",
-     "line": "ers are allowed at Twin Knobs after 10 p.m. Fee Site and Info Overnight Use: Single Site: $35 per night Premium Single Site: $45 per night Double Site: $50 per night Premium Double Site: $64 pe",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/twin-knobs-campground"
-    },
-    "hookups.electric": {
-     "date": "2026-10-28",
-     "line": "tent and RV camping. Each site has a picnic table and campfire ring. RV sites range from electric-only to full hookups and a dump station is available. Bathhouses with showers and flush t",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/twin-knobs-campground"
-    },
-    "hookups.sewer": {
-     "date": "2026-10-28",
-     "line": "ing. Each site has a picnic table and campfire ring. RV sites range from electric-only to full hookups and a dump station is available. Bathhouses with showers and flush toilets are spread thr",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/twin-knobs-campground"
-    },
-    "hookups.water": {
-     "date": "2026-10-28",
-     "line": "ing. Each site has a picnic table and campfire ring. RV sites range from electric-only to full hookups and a dump station is available. Bathhouses with showers and flush toilets are spread thr",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/twin-knobs-campground"
-    },
-    "map.date_how": {
-     "date": "2026-10-28",
-     "line": "link “Twin Knobs Recreation Area Map”",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/twin-knobs-campground"
-    },
-    "map.url": {
-     "date": "2026-10-28",
-     "line": "link “Twin Knobs Recreation Area Map” -> https://usfs-public.box.com/s/mkk3sln2dj49cc207476rpru4ahck6vp",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/twin-knobs-campground"
-    },
-    "phone": {
-     "date": "2026-10-28",
-     "line": "lean up after your pet. Contact Information Contact Name: VISTA Recreation Contact Phone: 606-780-7818 Office Contact Information Cumberland Ranger District Office Address: 2375 KY 801 South M",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/twin-knobs-campground"
-    },
-    "reservable": {
-     "date": "2026-10-28",
-     "line": "hibitions Reservations Make Reservations Here Reservations available. Sites are available first-come, first-served unless reserved. General Information The boat ramp will become unsafe and/or inaccess … ons Reservations Make Reservations Here Reservations available. Sites are available first-come, first-",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/twin-knobs-campground"
-    },
-    "restrooms": {
-     "date": "2026-10-28",
-     "line": "lectric-only to full hookups and a dump station is available. Bathhouses with showers and flush toilets are spread throughout the campground. During your stay, you will have access to all the a",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/twin-knobs-campground"
-    },
-    "rules.fires": {
-     "date": "2026-10-28",
-     "line": "offers 200 campsites developed for tent and RV camping. Each site has a picnic table and campfire ring. RV sites range from electric-only to full hookups and a dump station is available. Bathh",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/twin-knobs-campground"
-    },
-    "rules.pets": {
-     "date": "2026-10-28",
-     "line": "enior and Access passes will provide a 50% discount on single sites only. Pet Information Pets allowed. Pets must be leashed and cannot be left unattended. You must clean up after your pet. Co",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/twin-knobs-campground"
-    },
-    "showers": {
-     "date": "2026-10-28",
-     "line": "ring. RV sites range from electric-only to full hookups and a dump station is available. Bathhouses with showers and flush toilets are spread throughout the campground. During your stay, y",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/twin-knobs-campground"
-    },
-    "sites.total": {
-     "date": "2026-10-28",
-     "line": "Region: Cave Run Lake Twin Knobs Campground Family-friendly Twin Knobs Campground offers 200 campsites developed for tent and RV camping. Each site has a picnic table and campfire ring. RV sit",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/twin-knobs-campground"
-    }
-   },
-   "fees": "$35 per night | $45 per night | $50 per night | $64 per night | $13 per night",
-   "hookups": {
-    "amps": null,
-    "electric": true,
-    "sewer": true,
-    "water": true
-   },
-   "kind": "c",
-   "lat": 38.09104619,
-   "list": "kpc-campgrounds.json",
-   "lon": -83.50740413,
-   "map": {
-    "date_how": "web page, year 2074 in the link",
-    "url": "https://usfs-public.box.com/s/mkk3sln2dj49cc207476rpru4ahck6vp"
-   },
-   "name": "Twin Knobs Campground",
-   "official_page": "https://www.fs.usda.gov/r08/danielboone/recreation/twin-knobs-campground",
-   "park": "US-10170",
-   "phone": "(606) 780-7818",
-   "reservable": "mixed",
-   "restrooms": "flush",
-   "rules": {
-    "fires": "campfire ring",
-    "generators": null,
-    "pets": "Pets allowed",
-    "quiet_hours": null,
-    "stay_limit": null
-   },
-   "rv_max_ft": null,
-   "season": null,
-   "showers": true,
-   "sites": {
-    "cabin": null,
-    "group": null,
-    "primitive": null,
-    "rv": null,
-    "tent": null,
-    "total": 200
-   },
-   "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "us-10171-zilpo-campground": {
    "agency": "KY (hand-checked list)",
@@ -7934,11 +8186,6 @@
      "line": "link “Zilpo Recreation Area Map” -> https://usfs-public.box.com/s/q18extxpqb7ota6w4c6vpl65317w2iv0",
      "url": "https://www.fs.usda.gov/r08/danielboone/recreation/zilpo-campground"
     },
-    "phone": {
-     "date": "2026-10-28",
-     "line": "n for more information. Contact Information Contact Name: VISTA Recreation Contact Phone: 606-768-2722 Office Contact Information Cumberland Ranger District Office Address: 2375 KY 801 South M",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/zilpo-campground"
-    },
     "reservable": {
      "date": "2026-10-28",
      "line": "ouses with showers are spread throughout the campground. An RV dump station is available. Reservable cabins sleep up to seven, and have beds, table, porch, accessible ramp entrance and picni",
@@ -7968,10 +8215,14 @@
    "fees": "$31 per night | $45 per night | $46 per night | $105 per night for up to 6 persons with one vehicle | $13 per night",
    "hookups": {
     "amps": null,
-    "electric": true,
+    "electric": "some",
     "sewer": null,
     "water": null
    },
+   "ids": [
+    "us-10171-zilpo-campground",
+    "zilpo-campground"
+   ],
    "kind": "c",
    "lat": 38.07090892,
    "list": "kpc-campgrounds.json",
@@ -7982,8 +8233,8 @@
    },
    "name": "Zilpo Campground",
    "official_page": "https://www.fs.usda.gov/r08/danielboone/recreation/zilpo-campground",
-   "park": "US-10171",
-   "phone": "(606) 768-2722",
+   "park": "US-10171 US-4484",
+   "phone": null,
    "reservable": true,
    "restrooms": "flush",
    "rules": {
@@ -8005,7 +8256,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "west-kentucky-wma-designated-camping-site": {
    "agency": "KY (hand-checked list)",
@@ -8040,7 +8291,7 @@
     },
     "phone": {
      "date": "2026-10-28",
-     "line": "ons Close Return to Search --> WMA Overview Size: 4495 acres Location: McCracken Contact: (270) 488-3233 Elevation: minimum 297 feet, maximum 451 feet. Entrance GPS coordinates: Latitude N 37.13",
+     "line": "WMA Overview Size: 4495 acres Location: McCracken Contact: (270) 488-3233 Elevation: minimum 297 feet, maximum 451 feet. Entrance GPS",
      "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=137"
     },
     "rules.fires": {
@@ -8094,7 +8345,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "white-sulphur-horse-camp": {
    "agency": "KY (hand-checked list)",
@@ -8129,7 +8380,7 @@
     },
     "drinking_water": {
      "date": "2026-10-28",
-     "line": "50ft in length. Facility and Amenity Information Restrooms Vault toilet(s) Water Potable water is not available at this site. Picnic Tables Picnic tables are available at this site. Picnic tables are ",
+     "line": "rs up to 50ft in length. Facility and Amenity Information Restrooms Vault toilet(s) Water Potable water is not available at this site. Picnic Tables Picnic tables are available at this site. Pi",
      "url": "https://www.fs.usda.gov/r08/danielboone/recreation/white-sulphur-horse-camp"
     },
     "fees": {
@@ -8139,12 +8390,7 @@
     },
     "hookups.electric": {
      "date": "2026-10-28",
-     "line": "rse Camp White Sulphur Horse Camp, located near Cave Run Lake, is a primitive campground (without electricity) designed for horseback riders. The camp provides access to over 50 miles of multiple-",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/white-sulphur-horse-camp"
-    },
-    "phone": {
-     "date": "2026-10-28",
-     "line": "on Cumberland Ranger District Office Address: 2375 KY 801 South Morehead, KY 40351 Phone: 606-784-6428 Hours: Monday through Friday 8 a.m. to 11:30 a.m. and 12:30 p.m. to 4:30 p.m. (Closed on",
+     "line": "White Sulphur Horse Camp, located near Cave Run Lake, is a primitive campground (without electricity) designed for horseback riders. The camp provides access to over 50 miles of multiple-use",
      "url": "https://www.fs.usda.gov/r08/danielboone/recreation/white-sulphur-horse-camp"
     },
     "restrooms": {
@@ -8181,7 +8427,7 @@
    "name": "White Sulphur Horse Camp",
    "official_page": "https://www.fs.usda.gov/r08/danielboone/recreation/white-sulphur-horse-camp",
    "park": "US-4484",
-   "phone": "(606) 784-6428",
+   "phone": null,
    "reservable": null,
    "restrooms": "vault",
    "rules": {
@@ -8203,7 +8449,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "whittleton-middle-fork-campgrounds": {
    "agency": "KY (hand-checked list)",
@@ -8277,7 +8523,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "wilderness-road-campground": {
    "agency": "KY (hand-checked list)",
@@ -8325,11 +8571,6 @@
      "line": "th flush toilets and showers. RV Camping Each campsite accommodates different lengths. No full hookups (no sewer or water at individual sites). A dump station available near the campground ent",
      "url": "https://www.nps.gov/cuga/planyourvisit/wilderness-road-campground.htm"
     },
-    "phone": {
-     "date": "2026-10-28",
-     "line": "rk footer Contact Info Mailing Address: 91 Bartlett Park Rd. Middlesboro, KY 40965 Phone: 606 248-2817 Contact Us Tools FAQ Site Index Español Stay Connected -->",
-     "url": "https://www.nps.gov/cuga/planyourvisit/wilderness-road-campground.htm"
-    },
     "reservable": {
      "date": "2026-10-28",
      "line": "r families, scout troops, and other large groups. Maximum Group Size: 25 people per site. Reservations Required: Can be booked up to 12 months in advance. Electricity: Not available at group sites. Am",
@@ -8354,9 +8595,9 @@
    "fees": null,
    "hookups": {
     "amps": null,
-    "electric": true,
-    "sewer": true,
-    "water": true
+    "electric": "some",
+    "sewer": false,
+    "water": false
    },
    "kind": "c",
    "lat": null,
@@ -8369,7 +8610,7 @@
    "name": "Wilderness Road Campground",
    "official_page": "https://www.nps.gov/cuga/planyourvisit/wilderness-road-campground.htm",
    "park": "US-0019",
-   "phone": "(606) 248-2817",
+   "phone": null,
    "reservable": true,
    "restrooms": "flush",
    "rules": {
@@ -8391,7 +8632,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "wranglers-campground": {
    "agency": "KY (hand-checked list)",
@@ -8405,8 +8646,8 @@
     "status": "needs FCC token"
    },
    "checked": "2026-10-28",
-   "checkin": null,
-   "checkout": null,
+   "checkin": "4:30 p.m",
+   "checkout": "3:30 p.m",
    "drinking_water": null,
    "dump_station": null,
    "elevation_ft": {
@@ -8414,32 +8655,113 @@
     "value": null
    },
    "facts_src": {
+    "booking.how": {
+     "date": "2026-10-28",
+     "line": "link “Reserve Online”",
+     "url": "https://www.landbetweenthelakes.us/visit/wranglers-campground/"
+    },
     "booking.url": {
      "date": "2026-10-28",
-     "line": "booking link from our kpc-campgrounds.json row (official system lblweb.usedirect.com)",
-     "url": "https://lblweb.usedirect.com/camplbl/"
+     "line": "link “Reserve Online” -> https://lblweb.usedirect.com/camplbl/",
+     "url": "https://www.landbetweenthelakes.us/visit/wranglers-campground/"
+    },
+    "checkin": {
+     "date": "2026-10-28",
+     "line": ".. SEARCH About Wranglers Campground Wranglers Campground is open for camping year-round. Check-in is 4:30 p.m. , you may check in anytime of your arrival date if the site is vacant. Check-out is 3:30",
+     "url": "https://www.landbetweenthelakes.us/visit/wranglers-campground/"
+    },
+    "checkout": {
+     "date": "2026-10-28",
+     "line": "ck-in is 4:30 p.m. , you may check in anytime of your arrival date if the site is vacant. Check-out is 3:30 p.m. A 1 night late fee will be assessed. Address: 5100 Laura Furnace Rd, Golden Pond, KY 42",
+     "url": "https://www.landbetweenthelakes.us/visit/wranglers-campground/"
+    },
+    "fees": {
+     "date": "2026-10-28",
+     "line": ". *reservations can be made 2 days to 6 months in advance Type of Site Basic Nightly Rate $12 30 Amp Electric Nightly Rate $26 50 Amp Electric Nightly Rate $28 30 Amp Electric/Water N",
+     "url": "https://www.landbetweenthelakes.us/visit/wranglers-campground/"
+    },
+    "hookups.amps": {
+     "date": "2026-10-28",
+     "line": "eservations can be made 2 days to 6 months in advance Type of Site Basic Nightly Rate $12 30 Amp Electric Nightly Rate $26 50 Amp Electric Nightly Rate $28 30 Amp Electric/Water Nightly",
+     "url": "https://www.landbetweenthelakes.us/visit/wranglers-campground/"
+    },
+    "hookups.electric": {
+     "date": "2026-10-28",
+     "line": "seback riding and wagon driving enthusiasts. It offers 198 well-defined sites — some with electrical hookups, sites with electric, water, and sewer, primitive sites, and 12 rustic cabins available f",
+     "url": "https://www.landbetweenthelakes.us/visit/wranglers-campground/"
+    },
+    "hookups.sewer": {
+     "date": "2026-10-28",
+     "line": "rs 198 well-defined sites — some with electrical hookups, sites with electric, water, and sewer, primitive sites, and 12 rustic cabins available for nightly rental. Most sites are capab",
+     "url": "https://www.landbetweenthelakes.us/visit/wranglers-campground/"
+    },
+    "hookups.water": {
+     "date": "2026-10-28",
+     "line": "enthusiasts. It offers 198 well-defined sites — some with electrical hookups, sites with electric, water, and sewer, primitive sites, and 12 rustic cabins available for nightly rental. Most site",
+     "url": "https://www.landbetweenthelakes.us/visit/wranglers-campground/"
+    },
+    "map.date_how": {
+     "date": "2026-10-28",
+     "line": "link “Wranglers Campground Map”",
+     "url": "https://www.landbetweenthelakes.us/visit/wranglers-campground/"
+    },
+    "map.url": {
+     "date": "2026-10-28",
+     "line": "link “Wranglers Campground Map” -> https://www.landbetweenthelakes.us/wp-content/uploads/2025/04/Wranglers_Campground_Map_2025_web.pdf",
+     "url": "https://www.landbetweenthelakes.us/visit/wranglers-campground/"
+    },
+    "phone": {
+     "date": "2026-10-28",
+     "line": "ddress: 5100 Laura Furnace Rd, Golden Pond, KY 42211 Phone: 270-924-2200 Wranglers Riding Stable: 270-924-2211 Maps LBL Maps Wrangle | Pond, KY 42211 Phone: 270-924-2200 Wranglers Riding Stable: 270-924-2211 Maps LBL Maps Wranglers Campground Map Wranglers Trail Map",
+     "url": "https://www.landbetweenthelakes.us/visit/wranglers-campground/"
+    },
+    "reservable": {
+     "date": "2026-10-28",
+     "line": "924-2211 Maps LBL Maps Wranglers Campground Map Wranglers Trail Map Brochures & Resources Reserve Online Wranglers Campground FAQs Guided Horse-Riding Poster Seasonal Camping Information Wrangle",
+     "url": "https://www.landbetweenthelakes.us/visit/wranglers-campground/"
+    },
+    "season": {
+     "date": "2026-10-28",
+     "line": "T ADVENTURE... SEARCH About Wranglers Campground Wranglers Campground is open for camping year-round. Check-in is 4:30 p.m. , you may check in anytime of your arrival date if the site is vac",
+     "url": "https://www.landbetweenthelakes.us/visit/wranglers-campground/"
+    },
+    "showers": {
+     "date": "2026-10-28",
+     "line": "Visitor per vehicle; up to 8 people Nightly Rate $5 Extra Vehicle Nightly Rate $5 Visitor shower per person Nightly Rate $5 Late departure fees Nightly Rate = 1 Night Stay Site change fe",
+     "url": "https://www.landbetweenthelakes.us/visit/wranglers-campground/"
+    },
+    "sites.cabin": {
+     "date": "2026-10-28",
+     "line": "some with electrical hookups, sites with electric, water, and sewer, primitive sites, and 12 rustic cabins available for nightly rental. Most sites are capable of handling large motor homes and ho",
+     "url": "https://www.landbetweenthelakes.us/visit/wranglers-campground/"
     }
    },
-   "fees": null,
+   "fees": "$12 | $26 | $28 | $34 | $40",
    "hookups": {
-    "amps": null,
-    "electric": null,
-    "sewer": null,
-    "water": null
+    "amps": [
+     30,
+     50
+    ],
+    "electric": "some",
+    "sewer": true,
+    "water": true
    },
    "kind": "c",
    "lat": null,
    "list": "kpc-campgrounds.json",
    "lon": null,
    "map": {
-    "date_how": null,
-    "url": null
+    "date_how": "PDF, year 2025 in the link",
+    "url": "https://www.landbetweenthelakes.us/wp-content/uploads/2025/04/Wranglers_Campground_Map_2025_web.pdf"
    },
    "name": "Wranglers Campground",
    "official_page": "https://www.landbetweenthelakes.us/visit/wranglers-campground/",
    "park": "US-3792",
-   "phone": null,
-   "reservable": null,
+   "phone": [
+    "(270) 924-2200",
+    "(270) 924-2211"
+   ],
+   "reservable": true,
    "restrooms": null,
    "rules": {
     "fires": null,
@@ -8449,18 +8771,18 @@
     "stay_limit": null
    },
    "rv_max_ft": null,
-   "season": null,
-   "showers": null,
+   "season": "year-round",
+   "showers": true,
    "sites": {
-    "cabin": null,
+    "cabin": 12,
     "group": null,
     "primitive": null,
     "rv": null,
     "tent": null,
     "total": null
    },
-   "status": "page not on an official host: www.landbetweenthelakes.us",
-   "ver": 1
+   "status": "ok",
+   "ver": 2
   },
   "yatesville-lake-campground": {
    "agency": "KY (hand-checked list)",
@@ -8534,7 +8856,7 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
+   "ver": 2
   },
   "yellowbank-wma-primitive-campground": {
    "agency": "KY (hand-checked list)",
@@ -8579,7 +8901,7 @@
     },
     "phone": {
      "date": "2026-10-28",
-     "line": "Return to Search --> WMA Overview Size: 7555 acres Location: Breckinridge Contact: Office (270) 547-6856 Elevation: minimum 382 feet, maximum 872 feet. Entrance GPS coordinates: Latitude N 37.99",
+     "line": "iew Size: 7555 acres Location: Breckinridge Contact: Office (270) 547-6856 Elevation: minimum 382 feet, maximum 872 feet. Entrance GPS",
      "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=192"
     },
     "rv_max_ft": {
@@ -8633,166 +8955,23 @@
     "total": null
    },
    "status": "ok",
-   "ver": 1
-  },
-  "zilpo-campground": {
-   "agency": "KY (hand-checked list)",
-   "booking": {
-    "how": "online: www.recreation.gov",
-    "url": "https://www.recreation.gov/camping/campgrounds/232370"
-   },
-   "cell": {
-    "carriers": null,
-    "src": "https://broadbandmap.fcc.gov/ (BDC public data API, free account)",
-    "status": "needs FCC token"
-   },
-   "checked": "2026-10-28",
-   "checkin": "2 p.m",
-   "checkout": "11 a.m",
-   "drinking_water": true,
-   "dump_station": true,
-   "elevation_ft": {
-    "src": "https://epqs.nationalmap.gov/v1/json?x=-83.48424725&y=38.07090892&units=Feet&wkid=4326",
-    "value": 758
-   },
-   "facts_src": {
-    "booking.how": {
-     "date": "2026-10-28",
-     "line": "link “Make Reservations Here”",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/zilpo-campground"
-    },
-    "booking.url": {
-     "date": "2026-10-28",
-     "line": "link “Make Reservations Here” -> https://www.recreation.gov/camping/campgrounds/232370",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/zilpo-campground"
-    },
-    "checkin": {
-     "date": "2026-10-28",
-     "line": "your visit. Seasons of Use 3rd Friday in March - Last Sunday in October Operational Hours Check-in: 2 p.m. Checkout: 11 a.m. Only registered campers are allowed at Zilpo after 10 p.m. Fee Site and",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/zilpo-campground"
-    },
-    "checkout": {
-     "date": "2026-10-28",
-     "line": "ns of Use 3rd Friday in March - Last Sunday in October Operational Hours Check-in: 2 p.m. Checkout: 11 a.m. Only registered campers are allowed at Zilpo after 10 p.m. Fee Site and Info Overnight Us",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/zilpo-campground"
-    },
-    "drinking_water": {
-     "date": "2026-10-28",
-     "line": "ccessible. Contact VISTA Recreation for more information. Restrooms Flush toilet(s) Water Potable water is available at this site. Drinking water is available from faucets. Picnic Tables Picnic",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/zilpo-campground"
-    },
-    "dump_station": {
-     "date": "2026-10-28",
-     "line": "lable at some campsites. Bathhouses with showers are spread throughout the campground. An RV dump station is available. Reservable cabins sleep up to seven, and have beds, table, porch, a",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/zilpo-campground"
-    },
-    "fees": {
-     "date": "2026-10-28",
-     "line": "campers are allowed at Zilpo after 10 p.m. Fee Site and Info Overnight Use: Single Site: $31 per night Premium Single Site: $45 per night Double Site: $46 per night Cabin: $105 per night for u",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/zilpo-campground"
-    },
-    "hookups.electric": {
-     "date": "2026-10-28",
-     "line": "ilpo Campground Scenic Zilpo Campground offers cabin rentals, tent camping, RV sites with electric hookups and a selection of lakefront sites. A stand of mixed hardwoods shades the campground, and",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/zilpo-campground"
-    },
-    "map.date_how": {
-     "date": "2026-10-28",
-     "line": "link “Zilpo Recreation Area Map”",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/zilpo-campground"
-    },
-    "map.url": {
-     "date": "2026-10-28",
-     "line": "link “Zilpo Recreation Area Map” -> https://usfs-public.box.com/s/q18extxpqb7ota6w4c6vpl65317w2iv0",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/zilpo-campground"
-    },
-    "phone": {
-     "date": "2026-10-28",
-     "line": "n for more information. Contact Information Contact Name: VISTA Recreation Contact Phone: 606-768-2722 Office Contact Information Cumberland Ranger District Office Address: 2375 KY 801 South M",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/zilpo-campground"
-    },
-    "reservable": {
-     "date": "2026-10-28",
-     "line": "ouses with showers are spread throughout the campground. An RV dump station is available. Reservable cabins sleep up to seven, and have beds, table, porch, accessible ramp entrance and picni",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/zilpo-campground"
-    },
-    "restrooms": {
-     "date": "2026-10-28",
-     "line": "ility Some sites are accessible. Contact VISTA Recreation for more information. Restrooms Flush toilet(s) Water Potable water is available at this site. Drinking water is available from faucet",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/zilpo-campground"
-    },
-    "rules.fires": {
-     "date": "2026-10-28",
-     "line": "shades the campground, and campsites have good privacy. Each site has a picnic table and campfire ring. Electric hookups are available at some campsites. Bathhouses with showers are spread thr",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/zilpo-campground"
-    },
-    "rules.pets": {
-     "date": "2026-10-28",
-     "line": "enior and Access passes will provide a 50% discount on single sites only. Pet Information Pets are allowed at specific sites. Contact VISTA Recreation for more information. Contact Information Contact",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/zilpo-campground"
-    },
-    "showers": {
-     "date": "2026-10-28",
-     "line": "e has a picnic table and campfire ring. Electric hookups are available at some campsites. Bathhouses with showers are spread throughout the campground. An RV dump station is available. Rese",
-     "url": "https://www.fs.usda.gov/r08/danielboone/recreation/zilpo-campground"
-    }
-   },
-   "fees": "$31 per night | $45 per night | $46 per night | $105 per night for up to 6 persons with one vehicle | $13 per night",
-   "hookups": {
-    "amps": null,
-    "electric": true,
-    "sewer": null,
-    "water": null
-   },
-   "kind": "c",
-   "lat": 38.07090892,
-   "list": "kpc-campgrounds.json",
-   "lon": -83.48424725,
-   "map": {
-    "date_how": "web page, no date in the link",
-    "url": "https://usfs-public.box.com/s/q18extxpqb7ota6w4c6vpl65317w2iv0"
-   },
-   "name": "Zilpo Campground",
-   "official_page": "https://www.fs.usda.gov/r08/danielboone/recreation/zilpo-campground",
-   "park": "US-4484",
-   "phone": "(606) 768-2722",
-   "reservable": true,
-   "restrooms": "flush",
-   "rules": {
-    "fires": "campfire ring",
-    "generators": null,
-    "pets": "Pets are allowed at specific sites",
-    "quiet_hours": null,
-    "stay_limit": null
-   },
-   "rv_max_ft": null,
-   "season": null,
-   "showers": true,
-   "sites": {
-    "cabin": null,
-    "group": null,
-    "primitive": null,
-    "rv": null,
-    "tent": null,
-    "total": null
-   },
-   "status": "ok",
-   "ver": 1
+   "ver": 2
   }
  },
  "counts": {
-  "camps": 109,
+  "camps": 106,
   "needs_browser": 0,
-  "needs_key": 42,
+  "needs_key": 41,
   "no_page": 0,
-  "not_official": 9,
-  "ok": 58,
+  "not_official": 0,
+  "ok": 65,
   "other": 0,
   "resting": 0,
   "robots": 0,
   "with_booking": 58,
-  "with_elevation": 86,
-  "with_sites": 7
+  "with_elevation": 83,
+  "with_sites": 10
  },
+ "merged": 3,
  "read": "2026-10-28"
 }
