@@ -1,0 +1,80 @@
+name: KPC 2-fer small batches (hidden)
+# Oct 28 2026 (HQ 2:58 PM, Brandon): parks with a new or changed outline wait in data/fers/pending.json (+ the US key's
+# data/us-key/changed-parks.json in KPC-Links). Daily look: when 5+ parks wait, or on Sunday when any wait, each area that has
+# waiting parks gets ONE line run with 'parks' = only the pairs touching them (minutes, from the saved copies), 3 areas at most
+# at once; never while the full queue (kpc-fers-lines) is running. Its checker writes a 'grade me' line for chat 8 as usual.
+on:
+  schedule:
+    - cron: '23 10 * * *'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'yes = run now whatever the count (by hand)'
+        default: ''
+permissions:
+  contents: write
+  actions: write
+jobs:
+  look:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+      - name: Waiting parks -> one small batch per area
+        env:
+          FORCE: ${{ inputs.force }}
+        run: |
+          if [ -n "$(gh run list -R ${{ github.repository }} --workflow kpc-fers-lines.yml --status in_progress --json databaseId --jq '.[].databaseId' 2>/dev/null)" ]; then echo "::notice title=2-fer small batches::the full queue is running: nothing started"; exit 0; fi
+          python3 - <<'PY'
+          import json, os, subprocess, time
+          P = json.load(open('data/fers/pending.json'))
+          try:   # the US key's own list of parks whose joined outline changed
+              ch = json.load(open('links/data/us-key/changed-parks.json'))
+              have = {(x['ref'], x.get('date')) for x in P['parks']} | {(x['ref'], x.get('date')) for x in P.get('done', [])}
+              for r in ch.get('refs') or []:
+                  if (r, ch.get('date')) not in have: P['parks'].append({'ref': r, 'why': 'outline changed (US key rebuild)', 'date': ch.get('date')})
+          except Exception: pass
+          wait = P['parks']; sunday = time.gmtime().tm_wday == 6
+          if not wait or not (len(wait) >= 5 or sunday or os.environ.get('FORCE') == 'yes'):
+              print(f'::notice title=2-fer small batches::{len(wait)} park(s) waiting: nothing to run today'); json.dump(P, open('data/fers/pending.json', 'w'), indent=1); raise SystemExit
+          R = {'southeast': 'US-TN US-NC US-VA US-WV US-GA US-AL US-SC US-FL US-MS', 'midwest': 'US-IN US-IL US-MO US-WI US-MN US-IA US-ND US-SD',
+               'northeast': 'US-PA US-NY US-NJ US-CT US-RI US-MA US-VT US-NH US-ME US-MD US-DE US-DC', 'southcentral': 'US-AR US-LA US-OK US-TX US-KS US-NE',
+               'mountain': 'US-CO US-WY US-ID US-MT US-NV US-AZ US-NM', 'pacific': 'US-CA US-OR US-WA US-AK US-HI',
+               'canadaeast': 'CA-ON CA-QC CA-NB CA-NS CA-PE CA-NL', 'canadawest': 'CA-MB CA-SK CA-AB CA-BC CA-YT CA-NT CA-NU'}
+          OWN = {'US-KY': ('US-KY', 'ky'), 'US-OH': ('US-OH', 'oh'), 'US-MI': ('US-MI', 'mi'), 'US-UT': ('US-UT', 'ut')}
+          def area_of(ref):
+              st = None
+              try:
+                  for f in os.listdir('links/data/parkinfo'):
+                      if f.startswith(('US-', 'CA')) and f.endswith('.json') and f != 'index.json':
+                          d = json.load(open('links/data/parkinfo/' + f)).get('parks') or {}
+                          if ref in d: st = f[:-5] if f.startswith('US-') else 'CA-' + (d[ref][10] if len(d[ref]) > 10 else ''); break
+              except Exception: pass
+              if not st: return None
+              if st in OWN: return OWN[st]
+              for tag, sts in R.items():
+                  if st in sts.split(): return (sts, tag)
+              return None
+          by = {}
+          for x in wait:
+              a = area_of(x['ref'])
+              if a: by.setdefault(a, []).append(x)
+          started = 0
+          for (sts, tag), xs in sorted(by.items(), key=lambda kv: -len(kv[1]))[:3]:
+              refs = ' '.join(sorted({x['ref'] for x in xs}))
+              ok = subprocess.run(['gh', 'workflow', 'run', 'kpc-fers-line.yml', '-R', os.environ['GITHUB_REPOSITORY'], '-f', f'states={sts}', '-f', f'tag={tag}', '-f', 'stage=all', '-f', f'parks={refs}']).returncode == 0
+              if ok:
+                  started += 1; P['done'] += [dict(x, run=time.strftime('%Y-%m-%d')) for x in xs]; P['parks'] = [y for y in P['parks'] if y not in xs]
+                  print(f'::notice title=2-fer small batches::{tag}: started for {refs}')
+          P['done'] = P['done'][-500:]
+          json.dump(P, open('data/fers/pending.json', 'w'), indent=1)
+          PY
+          git config user.name kpc-bot; git config user.email bot@kpc.local
+          git add data/fers/pending.json && git commit -qm "2-fer small batches: waiting list" || true
+          git pull -q --rebase || true; git push -q || true

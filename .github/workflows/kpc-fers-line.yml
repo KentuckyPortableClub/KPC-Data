@@ -25,6 +25,9 @@ on:
       minutes:
         description: 'Minutes for each of fetcher and worker (default 280)'
         default: '280'
+      parks:
+        description: 'Optional small batch: park numbers (e.g. "US-1234 US-5678"): only the pairs touching them are looked at again'
+        default: ''
       next:
         description: 'Optional: "<states> <tag>" (e.g. "US-OH oh") = start that area by itself once this fetcher''s bundle is safely up (two at once, no more)'
         default: ''
@@ -42,6 +45,9 @@ on:
       minutes:
         type: string
         default: '280'
+      parks:
+        type: string
+        default: ''
       next:
         type: string
         default: ''
@@ -61,6 +67,7 @@ env:
   HTTP_CACHE: bundle/http
   WATER_STORE: bundle/water   # Oct 28 (HQ): the saved USGS water copy (kept between nights as release asset water-<tag>.tar.gz)
   WATER_ASSET: water-${{ inputs.tag }}.tar.gz
+  PARKS: ${{ inputs.parks }}   # Oct 28: a small batch (kpc_fers.py PARKS); empty = the whole area
 jobs:
   fetcher:
     if: ${{ inputs.stage == 'all' }}
