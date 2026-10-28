@@ -1182,7 +1182,7 @@
      41.785389
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-28",
    "wide_m": 115
   },
@@ -4340,6 +4340,12 @@
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
+   "pairs_around": [
+    "US-10716+US-4489"
+   ],
+   "pairs_here": [
+    "US-10716+US-12801"
+   ],
    "passes": [
     1,
     1,
@@ -4605,7 +4611,7 @@
      46.722712
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-28",
    "wide_m": 1017
   },
@@ -5360,7 +5366,7 @@
      46.722711
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "merged into one row: US-10716+US-12801+US-4489@area@46.702,-87.958 (the same patch as the 3-fer)",
    "water_checked": "2026-10-28",
    "wide_m": 1017
   },
@@ -12224,6 +12230,9 @@
     "US-10716": "McCormick Wilderness Area",
     "US-4489": "Ottawa National Forest"
    },
+   "nfer_here": [
+    "US-10716+US-12801+US-4489@area@46.702,-87.958"
+   ],
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
@@ -12562,7 +12571,7 @@
      46.730556
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-28",
    "wide_m": 4775
   },
@@ -45444,7 +45453,7 @@
      46.253789
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-28",
    "wide_m": 3013
   },
@@ -48320,6 +48329,12 @@
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
+   "pairs_around": [
+    "US-10718+US-4489"
+   ],
+   "pairs_here": [
+    "US-10718+US-12799"
+   ],
    "passes": [
     1,
     1,
@@ -49037,7 +49052,7 @@
      46.669931
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-28",
    "wide_m": 1333
   },
@@ -52450,7 +52465,7 @@
      46.67117
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "merged into one row: US-10718+US-12799+US-4489@area@46.627,-88.677 (the same patch as the 3-fer)",
    "water_checked": "2026-10-28",
    "wide_m": 1328
   },
@@ -54383,6 +54398,9 @@
     "US-10718": "Sturgeon River Gorge Wilderness Area",
     "US-4489": "Ottawa National Forest"
    },
+   "nfer_here": [
+    "US-10718+US-12799+US-4489@area@46.627,-88.677"
+   ],
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
@@ -55013,7 +55031,7 @@
      46.671175
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-28",
    "wide_m": 4917
   },
@@ -57234,7 +57252,8 @@
    "lines_read": "2026-10-28",
    "map_dates": {
     "US-12787": "downloaded 2026-10-28",
-    "US-4583": "downloaded 2026-10-28"
+    "US-4583": "downloaded 2026-10-28",
+    "USGS water": "USGS NHD second service, read 2026-10-28 (the main USGS water map did not answer)"
    },
    "names": {
     "US-12787": "Bear Creek National Wild and Scenic River",
@@ -57367,7 +57386,7 @@
      44.286803
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-28",
    "wide_m": 958
   },

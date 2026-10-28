@@ -12,8 +12,8 @@
  "date": "2026-10-28",
  "pass": true,
  "counts": {
-  "FOUND": 91,
-  "DROPPED": 244,
+  "FOUND": 98,
+  "DROPPED": 237,
   "NEVER LOOKED AT": 4043
  },
  "FOUND": [
@@ -85,6 +85,17 @@
   {
    "refs": [
     "US-10716",
+    "US-12801"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "row": "US-10716+US-12801+US-4489@area@46.702,-87.958"
+  },
+  {
+   "refs": [
+    "US-10716",
     "US-4239"
    ],
    "why_expected": [
@@ -92,6 +103,50 @@
     "activated together by the same call on the same day (6x, POTA history)"
    ],
    "row": "US-10716+US-4239@trail@46.640,-88.029"
+  },
+  {
+   "refs": [
+    "US-10716",
+    "US-4489"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (7x, POTA history)"
+   ],
+   "row": "US-10716+US-12801+US-4489@area@46.702,-87.958"
+  },
+  {
+   "refs": [
+    "US-10717",
+    "US-4489"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (26x, POTA history)"
+   ],
+   "row": "US-10717+US-4489@area@46.196,-89.318"
+  },
+  {
+   "refs": [
+    "US-10718",
+    "US-12799"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (6x, POTA history)"
+   ],
+   "row": "US-10718+US-12799+US-4489@area@46.627,-88.677"
+  },
+  {
+   "refs": [
+    "US-10718",
+    "US-4489"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (8x, POTA history)"
+   ],
+   "row": "US-10718+US-12799+US-4489@area@46.627,-88.677"
   },
   {
    "refs": [
@@ -113,7 +168,7 @@
     "POTA shows one session logged both parks",
     "activated together by the same call on the same day (8x, POTA history)"
    ],
-   "row": "US-12787+US-4583@area@44.293,-86.100"
+   "row": "US-12787+US-4583@area@44.290,-86.045"
   },
   {
    "refs": [
@@ -315,6 +370,17 @@
   },
   {
    "refs": [
+    "US-12799",
+    "US-4489"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (6x, POTA history)"
+   ],
+   "row": "US-10718+US-12799+US-4489@area@46.627,-88.677"
+  },
+  {
+   "refs": [
     "US-12800",
     "US-4487"
    ],
@@ -323,6 +389,17 @@
     "outlines about 0 m apart"
    ],
    "row": "US-12800+US-4487@area@45.961,-86.922"
+  },
+  {
+   "refs": [
+    "US-12801",
+    "US-4489"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "row": "US-10716+US-12801+US-4489@area@46.702,-87.958"
   },
   {
    "refs": [
@@ -1586,66 +1663,6 @@
   },
   {
    "refs": [
-    "US-10716",
-    "US-12801"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "rule": "rule 7 (NOT SURE is kept out)"
-  },
-  {
-   "refs": [
-    "US-10716",
-    "US-4489"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (7x, POTA history)"
-   ],
-   "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "rule": "rule 7 (NOT SURE is kept out)"
-  },
-  {
-   "refs": [
-    "US-10717",
-    "US-4489"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (26x, POTA history)"
-   ],
-   "reason": "dropped in pass 3",
-   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
-  },
-  {
-   "refs": [
-    "US-10718",
-    "US-12799"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (6x, POTA history)"
-   ],
-   "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "rule": "rule 7 (NOT SURE is kept out)"
-  },
-  {
-   "refs": [
-    "US-10718",
-    "US-4489"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (8x, POTA history)"
-   ],
-   "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "rule": "rule 7 (NOT SURE is kept out)"
-  },
-  {
-   "refs": [
     "US-12787",
     "US-12792"
    ],
@@ -1754,18 +1771,6 @@
   {
    "refs": [
     "US-12799",
-    "US-4489"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (6x, POTA history)"
-   ],
-   "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "rule": "rule 7 (NOT SURE is kept out)"
-  },
-  {
-   "refs": [
-    "US-12799",
     "US-6620"
    ],
    "why_expected": [
@@ -1774,18 +1779,6 @@
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
-  },
-  {
-   "refs": [
-    "US-12801",
-    "US-4489"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "rule": "rule 7 (NOT SURE is kept out)"
   },
   {
    "refs": [
