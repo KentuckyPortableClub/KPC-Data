@@ -31,7 +31,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0281": {
    "n": "Chautauqua National Wildlife Refuge",
@@ -62,7 +62,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0282": {
    "n": "Crab Orchard National Wildlife Refuge",
@@ -93,7 +93,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0283": {
    "n": "Cypress Creek National Wildlife Refuge",
@@ -126,7 +126,7 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0284": {
    "n": "Emiquon National Wildlife Refuge",
@@ -157,7 +157,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0285": {
    "n": "Meredosia National Wildlife Refuge",
@@ -188,7 +188,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0286": {
    "n": "Middle Mississippi River National Wildlife Refuge",
@@ -219,7 +219,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0287": {
    "n": "Two Rivers National Wildlife Refuge",
@@ -250,7 +250,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0376": {
    "n": "Great River National Wildlife Refuge",
@@ -281,7 +281,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0523": {
    "n": "Rock Cave State Nature Preserve",
@@ -290,10 +290,10 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://www.google.com/maps/place/39%C2%B006'01.1%22N+88%C2%B047'57.1%22W/@39.1003041,-88.8017749,17z/data=!3m1!4b1!4m4!3m3!8m2!3d39.1003!4d-88.7992?entry=tts",
-    "status": "ok",
-    "kind": "page",
+    "status": "opened, a government data / policies page, not this park's map (chat 11 regrade 2)",
+    "kind": "denied page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "the page in a browser ('Google Maps')",
     "page": "https://dnr.illinois.gov/inpc/lwr-display.rock-cave.html",
     "posted": "",
@@ -311,7 +311,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-0526": {
@@ -320,29 +320,36 @@
    "page": "https://huntillinois.org/sites/wildcat-hollow-sha",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/17130845/WildcatHollowHunterMap.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Printable Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-cont)",
+    "how": "a link on the park's page ('Printable Map')"
    },
    "rules": {
-    "url": "https://huntillinois.org/definitions/",
-    "how": "a link on the park's page ('Definitions Statewide Regulations')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 27 parks was dropped: https://huntillinois.org/definitions/)",
+    "how": "a link on the park's page ('Definitions Statewide Regulations')"
    },
    "agency": "",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/17130845/WildcatHollowHunterMap.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Printable Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-0571": {
    "n": "Lincoln Log Cabin State Historic Site",
@@ -363,7 +370,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0841": {
    "n": "Lincoln Home National Historic Site",
@@ -394,7 +401,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0978": {
    "n": "Apple River Canyon State Park",
@@ -424,7 +431,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-0979": {
@@ -447,7 +454,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-0980": {
@@ -470,7 +477,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-0981": {
@@ -501,7 +508,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-0982": {
@@ -524,7 +531,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-0983": {
@@ -546,7 +553,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0984": {
    "n": "Castle Rock State Park",
@@ -576,7 +583,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-0985": {
@@ -607,7 +614,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-0986": {
@@ -638,7 +645,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-0987": {
@@ -661,7 +668,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-0988": {
@@ -684,7 +691,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-0989": {
@@ -707,7 +714,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-0990": {
@@ -730,7 +737,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-0991": {
@@ -761,7 +768,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-0992": {
@@ -784,7 +791,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-0993": {
@@ -807,7 +814,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-0994": {
@@ -838,7 +845,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-0995": {
@@ -861,7 +868,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-0996": {
@@ -892,7 +899,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-0997": {
@@ -915,7 +922,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-0998": {
@@ -938,7 +945,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-0999": {
@@ -969,7 +976,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-1000": {
@@ -1000,7 +1007,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-1001": {
@@ -1009,18 +1016,9 @@
    "page": "https://dnr.illinois.gov/parks/park.jamespatephilip.html",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://dnr.illinois.gov/content/dam/soi/en/web/dnr/hunting/factsheets/documents/jamespatephiliphuntermap4.pdf",
-    "status": "HTTP 404",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "",
-    "posted_how": "",
-    "names_park": null,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: HTTP 404 https://dnr.illinois.gov/content/dam/soi/en/web/dnr/hunting/factsheets)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
    },
    "rules": {
     "url": "https://dnr.illinois.gov/adrules.html",
@@ -1034,7 +1032,23 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "map_tried": [
+    {
+     "url": "https://dnr.illinois.gov/content/dam/soi/en/web/dnr/hunting/factsheets/documents/jamespatephiliphuntermap4.pdf",
+     "status": "HTTP 404",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-1002": {
@@ -1057,7 +1071,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-1003": {
@@ -1080,7 +1094,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-1004": {
@@ -1103,7 +1117,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-1005": {
@@ -1126,7 +1140,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-1006": {
@@ -1149,7 +1163,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-1007": {
@@ -1172,7 +1186,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-1008": {
@@ -1195,7 +1209,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-1009": {
@@ -1226,7 +1240,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-10090": {
@@ -1257,7 +1271,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-10091": {
@@ -1280,7 +1294,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-10093": {
@@ -1311,7 +1325,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-10094": {
@@ -1334,7 +1348,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-10095": {
@@ -1357,7 +1371,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-1010": {
@@ -1388,7 +1402,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-10100": {
@@ -1411,7 +1425,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-1012": {
@@ -1444,7 +1458,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-1013": {
@@ -1475,7 +1489,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-1014": {
@@ -1498,7 +1512,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-1015": {
@@ -1521,7 +1535,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-1016": {
@@ -1544,7 +1558,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-1017": {
@@ -1567,7 +1581,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-1018": {
@@ -1598,7 +1612,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-1019": {
@@ -1621,7 +1635,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-1020": {
@@ -1652,7 +1666,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-1021": {
@@ -1675,7 +1689,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-1022": {
@@ -1697,7 +1711,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-1023": {
    "n": "Siloam Springs State Park",
@@ -1719,7 +1733,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-1024": {
@@ -1742,7 +1756,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-10241": {
@@ -1764,7 +1778,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-1026": {
    "n": "Spitler Woods State Park",
@@ -1794,7 +1808,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-1027": {
@@ -1817,7 +1831,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-1028": {
@@ -1848,7 +1862,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-1029": {
@@ -1879,7 +1893,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-1030": {
@@ -1910,7 +1924,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-1031": {
@@ -1941,7 +1955,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-1032": {
@@ -1964,7 +1978,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-1033": {
@@ -1995,7 +2009,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-10391": {
@@ -2004,29 +2018,50 @@
    "page": "https://huntillinois.org/sites/kishwaukee-river-sfwa/#site-contact-info",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/13151816/KishwaukeeRiverHunterMap.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Printable Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-cont; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-cont)",
+    "how": "a link on the park's page ('Printable Map')"
    },
    "rules": {
-    "url": "https://huntillinois.org/definitions/",
-    "how": "a link on the park's page ('Definitions Statewide Regulations')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 27 parks was dropped: https://huntillinois.org/definitions/)",
+    "how": "a link on the park's page ('Definitions Statewide Regulations')"
    },
    "agency": "",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/13151816/KishwaukeeRiverHunterMap.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Printable Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    },
+    {
+     "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/13151815/KishwaukeeRiverHunterMap-1.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Printable Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-10623": {
    "n": "Shawneetown Bank State Historic Site",
@@ -2047,7 +2082,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-10660": {
    "n": "Illinois and Michigan Canal State Trail",
@@ -2055,18 +2090,9 @@
    "page": "https://dnr.illinois.gov/parks/park.imcanal.html",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://dnr.illinois.gov/content/dam/soi/en/web/dnr/hunting/factsheets/documents/imcanaleasthuntermap.pdf",
-    "status": "HTTP 404",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "",
-    "posted_how": "",
-    "names_park": null,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: HTTP 404 https://dnr.illinois.gov/content/dam/soi/en/web/dnr/hunting/factsheets)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
    },
    "rules": {
     "url": "https://dnr.illinois.gov/adrules.html",
@@ -2078,7 +2104,23 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "map_tried": [
+    {
+     "url": "https://dnr.illinois.gov/content/dam/soi/en/web/dnr/hunting/factsheets/documents/imcanaleasthuntermap.pdf",
+     "status": "HTTP 404",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-10661": {
@@ -2097,7 +2139,8 @@
     "posted": "July 24, 2026",
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r09/shawnee",
@@ -2109,7 +2152,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-10662": {
@@ -2140,7 +2183,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-10664": {
@@ -2149,29 +2192,36 @@
    "page": "https://huntillinois.org/sites/mt-vernon-game-propagation-center",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/03/27112814/MountVernonHunterMap.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Printable Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-cont)",
+    "how": "a link on the park's page ('Printable Map')"
    },
    "rules": {
-    "url": "https://huntillinois.org/definitions/",
-    "how": "a link on the park's page ('Definitions Statewide Regulations')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 27 parks was dropped: https://huntillinois.org/definitions/)",
+    "how": "a link on the park's page ('Definitions Statewide Regulations')"
    },
    "agency": "",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/03/27112814/MountVernonHunterMap.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Printable Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-10666": {
    "n": "Double T State Fish and Wildlife Area",
@@ -2179,29 +2229,36 @@
    "page": "https://huntillinois.org/sites/double-t-sfwa/",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/13151607/DoubleTHunterMap.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": "2020-09-28",
-    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-    "how": "a link on the park's page ('Printable Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-cont)",
+    "how": "a link on the park's page ('Printable Map')"
    },
    "rules": {
-    "url": "https://huntillinois.org/definitions/",
-    "how": "a link on the park's page ('Definitions Statewide Regulations')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 27 parks was dropped: https://huntillinois.org/definitions/)",
+    "how": "a link on the park's page ('Definitions Statewide Regulations')"
    },
    "agency": "",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/13151607/DoubleTHunterMap.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": "2020-09-28",
+     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+     "how": "a link on the park's page ('Printable Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-10729": {
    "n": "Pekin Lake State Fish and Wildlife Area",
@@ -2209,29 +2266,36 @@
    "page": "https://huntillinois.org/sites/pekin-lake-sfwa/",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/13152029/PekinLakeHunterMap.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Printable Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-cont)",
+    "how": "a link on the park's page ('Printable Map')"
    },
    "rules": {
-    "url": "https://huntillinois.org/definitions/",
-    "how": "a link on the park's page ('Definitions Statewide Regulations')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 27 parks was dropped: https://huntillinois.org/definitions/)",
+    "how": "a link on the park's page ('Definitions Statewide Regulations')"
    },
    "agency": "",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/13152029/PekinLakeHunterMap.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Printable Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-10777": {
    "n": "Fort Defiance State Park",
@@ -2253,7 +2317,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-10786": {
@@ -2262,29 +2326,36 @@
    "page": "https://huntillinois.org/sites/siloam-springs-sp/",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/17125724/SiloamSpringsHunterMap.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Printable Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-cont)",
+    "how": "a link on the park's page ('Printable Map')"
    },
    "rules": {
-    "url": "https://huntillinois.org/definitions/",
-    "how": "a link on the park's page ('Definitions Statewide Regulations')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 27 parks was dropped: https://huntillinois.org/definitions/)",
+    "how": "a link on the park's page ('Definitions Statewide Regulations')"
    },
    "agency": "",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/17125724/SiloamSpringsHunterMap.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Printable Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-10787": {
    "n": "Weinberg-King Scripps Unit State Park",
@@ -2292,29 +2363,50 @@
    "page": "https://huntillinois.org/sites/weinberg-king-sp/",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/17130636/WeinbergKingHunterMap.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Printable Map – Weinberg-King')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-cont; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-cont)",
+    "how": "a link on the park's page ('Printable Map – Weinberg-King')"
    },
    "rules": {
-    "url": "https://huntillinois.org/definitions/",
-    "how": "a link on the park's page ('Definitions Statewide Regulations')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 27 parks was dropped: https://huntillinois.org/definitions/)",
+    "how": "a link on the park's page ('Definitions Statewide Regulations')"
    },
    "agency": "",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/17130636/WeinbergKingHunterMap.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Printable Map – Weinberg-King')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    },
+    {
+     "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/17130649/WeinbergKingScrippsUnitHunterMap.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Printable Map- Scripps Unit')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-10788": {
    "n": "Ray Norbut East Hannibal Unit State Fish and Wildlife Area",
@@ -2322,29 +2414,36 @@
    "page": "https://huntillinois.org/sites/ray-norbut-sfwa/",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/13152135/RayNorbutHunterMap.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Printable Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-cont)",
+    "how": "a link on the park's page ('Printable Map')"
    },
    "rules": {
-    "url": "https://huntillinois.org/definitions/",
-    "how": "a link on the park's page ('Definitions Statewide Regulations')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 27 parks was dropped: https://huntillinois.org/definitions/)",
+    "how": "a link on the park's page ('Definitions Statewide Regulations')"
    },
    "agency": "",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/13152135/RayNorbutHunterMap.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Printable Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-10852": {
    "n": "Rockton Bog State Nature Preserve",
@@ -2374,7 +2473,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-11043": {
@@ -2397,7 +2496,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-11144": {
@@ -2419,7 +2518,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-11236": {
    "n": "Carl Sandburg State Historic Site",
@@ -2440,7 +2539,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-11351": {
    "n": "Weinberg-King Spunky Bottoms Unit State Park",
@@ -2448,29 +2547,50 @@
    "page": "https://huntillinois.org/sites/weinberg-king-sp/",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/17130636/WeinbergKingHunterMap.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Printable Map – Weinberg-King')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-cont; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-cont)",
+    "how": "a link on the park's page ('Printable Map – Weinberg-King')"
    },
    "rules": {
-    "url": "https://huntillinois.org/definitions/",
-    "how": "a link on the park's page ('Definitions Statewide Regulations')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 27 parks was dropped: https://huntillinois.org/definitions/)",
+    "how": "a link on the park's page ('Definitions Statewide Regulations')"
    },
    "agency": "",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/17130636/WeinbergKingHunterMap.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Printable Map – Weinberg-King')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    },
+    {
+     "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/17130649/WeinbergKingScrippsUnitHunterMap.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Printable Map- Scripps Unit')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-11716": {
    "n": "Long Run Seep State Nature Preserve",
@@ -2500,7 +2620,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-11781": {
@@ -2522,7 +2642,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-11793": {
    "n": "Revis Spring Hill Prairie State Nature Preserve",
@@ -2552,7 +2672,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-11844": {
@@ -2585,7 +2705,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-11959": {
@@ -2607,7 +2727,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-12080": {
    "n": "Kaskaskia Bell Memonial State Historic Site",
@@ -2628,7 +2748,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-12110": {
    "n": "Rend Lake State Fish and Wildlife Area",
@@ -2650,7 +2770,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-12184": {
@@ -2673,7 +2793,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-12217": {
@@ -2683,10 +2803,10 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://www.google.com/maps/place/41%C2%B011'49.2%22N+88%C2%B053'48.8%22W/@41.197004,-88.8994749,17z/data=!3m1!4b1!4m4!3m3!8m2!3d41.197!4d-88.8969?entry=tts",
-    "status": "ok",
-    "kind": "page",
+    "status": "opened, a government data / policies page, not this park's map (chat 11 regrade 2)",
+    "kind": "denied page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "the page in a browser ('Google Maps')",
     "page": "https://dnr.illinois.gov/inpc/lwr-display.sandy-ford.html",
     "posted": "",
@@ -2704,7 +2824,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-12314": {
@@ -2736,7 +2856,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-12327": {
    "n": "Brown Barrens State Nature Preserve",
@@ -2766,7 +2886,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-12329": {
@@ -2797,7 +2917,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-12332": {
@@ -2828,7 +2948,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-12336": {
@@ -2850,7 +2970,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-12366": {
    "n": "McMaster Woods State Nature Preserve",
@@ -2880,7 +3000,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-12367": {
@@ -2889,29 +3009,36 @@
    "page": "https://huntillinois.org/sites/freeman-mine-sha#site-contact-info",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/13151650/FreemanMineHunterMap.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Printable Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-cont)",
+    "how": "a link on the park's page ('Printable Map')"
    },
    "rules": {
-    "url": "https://huntillinois.org/definitions/",
-    "how": "a link on the park's page ('Definitions Statewide Regulations')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 27 parks was dropped: https://huntillinois.org/definitions/)",
+    "how": "a link on the park's page ('Definitions Statewide Regulations')"
    },
    "agency": "",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/13151650/FreemanMineHunterMap.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Printable Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-12368": {
    "n": "Hooper Branch Savanna State Nature Preserve",
@@ -2941,7 +3068,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-12374": {
@@ -2950,29 +3077,36 @@
    "page": "https://huntillinois.org/sites/tapley-woods-sna",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/17130217/TapleyWoodsHunterMap.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": "2010-08-16",
-    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-    "how": "a link on the park's page ('Printable Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-cont)",
+    "how": "a link on the park's page ('Printable Map')"
    },
    "rules": {
-    "url": "https://huntillinois.org/definitions/",
-    "how": "a link on the park's page ('Definitions Statewide Regulations')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 27 parks was dropped: https://huntillinois.org/definitions/)",
+    "how": "a link on the park's page ('Definitions Statewide Regulations')"
    },
    "agency": "",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/17130217/TapleyWoodsHunterMap.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": "2010-08-16",
+     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+     "how": "a link on the park's page ('Printable Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-12387": {
    "n": "Rall Woods State Reserve",
@@ -2981,10 +3115,10 @@
    "checked": "2026-10-28",
    "map": {
     "url": "https://www.google.com/maps/place/42%C2%B012'16.2%22N+90%C2%B012'19.1%22W/@42.2046222,-90.2082624,17.25z/data=!4m4!3m3!8m2!3d42.2045!4d-90.2053056?entry=tts",
-    "status": "ok",
-    "kind": "page",
+    "status": "opened, a government data / policies page, not this park's map (chat 11 regrade 2)",
+    "kind": "denied page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "",
     "how": "the page in a browser ('Google Maps')",
     "page": "https://dnr.illinois.gov/inpc/lwr-display.rall-woods.html",
     "posted": "",
@@ -3002,7 +3136,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-12596": {
@@ -3033,7 +3167,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-12601": {
@@ -3065,7 +3199,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-12617": {
    "n": "Postville Courthouse State Historic Site",
@@ -3086,7 +3220,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-12627": {
    "n": "Rice Lake State Fish and Wildlife Area",
@@ -3094,29 +3228,50 @@
    "page": "https://huntillinois.org/sites/rice-lake-sfwa/",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/17124821/RiceLakeHunterMap.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Printable Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-cont; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-cont)",
+    "how": "a link on the park's page ('Printable Map')"
    },
    "rules": {
-    "url": "https://huntillinois.org/definitions/",
-    "how": "a link on the park's page ('Definitions Statewide Regulations')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 27 parks was dropped: https://huntillinois.org/definitions/)",
+    "how": "a link on the park's page ('Definitions Statewide Regulations')"
    },
    "agency": "",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/17124821/RiceLakeHunterMap.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Printable Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    },
+    {
+     "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/17124854/RiceLakeWalkInHunterMap.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": "2020-10-28",
+     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+     "how": "a link on the park's page ('Printable Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-12640": {
    "n": "Rauchfuss Hill State Recreation Area",
@@ -3124,29 +3279,36 @@
    "page": "https://huntillinois.org/sites/rauchfuss-hill-sra/",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/13152127/RauchfussHillHunterMap.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Printable Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-cont)",
+    "how": "a link on the park's page ('Printable Map')"
    },
    "rules": {
-    "url": "https://huntillinois.org/definitions/",
-    "how": "a link on the park's page ('Definitions Statewide Regulations')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 27 parks was dropped: https://huntillinois.org/definitions/)",
+    "how": "a link on the park's page ('Definitions Statewide Regulations')"
    },
    "agency": "",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/13152127/RauchfussHillHunterMap.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Printable Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-12641": {
    "n": "David Davis Mansion State Historic Site",
@@ -3167,7 +3329,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-13298": {
    "n": "North Point Marina State Recreation Area",
@@ -3189,7 +3351,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-13310": {
@@ -3220,7 +3382,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-13353": {
@@ -3229,29 +3391,36 @@
    "page": "https://huntillinois.org/sites/maytown-pha",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/13151909/MaytownHunterMap.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": "2010-08-17",
-    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-    "how": "a link on the park's page ('Printable Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-cont)",
+    "how": "a link on the park's page ('Printable Map')"
    },
    "rules": {
-    "url": "https://huntillinois.org/definitions/",
-    "how": "a link on the park's page ('Definitions Statewide Regulations')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 27 parks was dropped: https://huntillinois.org/definitions/)",
+    "how": "a link on the park's page ('Definitions Statewide Regulations')"
    },
    "agency": "",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/13151909/MaytownHunterMap.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": "2010-08-17",
+     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+     "how": "a link on the park's page ('Printable Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-13512": {
    "n": "Butterfield Trail State Recreation Area",
@@ -3259,29 +3428,36 @@
    "page": "https://huntillinois.org/sites/butterfield-trail-sra#site-maps",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/13151447/ButterfieldTrailHunterMap.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Printable Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-cont)",
+    "how": "a link on the park's page ('Printable Map')"
    },
    "rules": {
-    "url": "https://huntillinois.org/definitions/",
-    "how": "a link on the park's page ('Definitions Statewide Regulations')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 27 parks was dropped: https://huntillinois.org/definitions/)",
+    "how": "a link on the park's page ('Definitions Statewide Regulations')"
    },
    "agency": "",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/13151447/ButterfieldTrailHunterMap.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Printable Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-3791": {
    "n": "Trail of Tears National Historic Trail",
@@ -3312,7 +3488,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-4092": {
    "n": "Salem Unit of Apple River Canyon State Park",
@@ -3342,7 +3518,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4093": {
@@ -3373,7 +3549,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4094": {
@@ -3396,7 +3572,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4095": {
@@ -3419,7 +3595,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4096": {
@@ -3450,7 +3626,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4097": {
@@ -3481,7 +3657,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4098": {
@@ -3504,7 +3680,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4099": {
@@ -3527,7 +3703,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4100": {
@@ -3550,7 +3726,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4101": {
@@ -3581,7 +3757,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4102": {
@@ -3614,7 +3790,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "map page on the browser list (a download button may hide the file)",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4103": {
@@ -3645,7 +3821,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4104": {
@@ -3668,7 +3844,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4105": {
@@ -3699,7 +3875,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4106": {
@@ -3722,7 +3898,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4107": {
@@ -3745,7 +3921,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4108": {
@@ -3768,7 +3944,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4109": {
@@ -3791,7 +3967,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4110": {
@@ -3814,7 +3990,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4111": {
@@ -3823,17 +3999,9 @@
    "page": "https://dnr.illinois.gov/inpc/area.area7madisonbohmwoods.html",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.google.com/maps/place/Bohm+Woods+Nature+Preserve/@38.8092836,-90.0090713,853m/data=!3m2!1e3!4b1!4m5!3m4!1s0x87df57e4d8574263:0xb8a92822646e0246!8m2!3d38.8092836!4d-90.0068826?hl=en&shorturl=1",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
-    "how": "the page in a browser ('Google Maps')",
-    "page": "https://dnr.illinois.gov/inpc/area.area7madisonbohmwoods.html",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-28",
-    "via": "off the government, not linked by the agency"
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "https://dnr.illinois.gov/adrules.html",
@@ -3845,7 +4013,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4112": {
@@ -3876,7 +4044,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4113": {
@@ -3899,7 +4067,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4114": {
@@ -3922,7 +4090,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4115": {
@@ -3953,7 +4121,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4116": {
@@ -3962,29 +4130,36 @@
    "page": "https://huntillinois.org/sites/horseshoe-lake-gabaret-mosenthein-chouteau-islands",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/13151716/HorseshoeLakeMadisonCorpHunterMap.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Printable Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-cont)",
+    "how": "a link on the park's page ('Printable Map')"
    },
    "rules": {
-    "url": "https://huntillinois.org/definitions/",
-    "how": "a link on the park's page ('Definitions Statewide Regulations')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 27 parks was dropped: https://huntillinois.org/definitions/)",
+    "how": "a link on the park's page ('Definitions Statewide Regulations')"
    },
    "agency": "",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/13151716/HorseshoeLakeMadisonCorpHunterMap.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Printable Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-4117": {
    "n": "Coffeen Lake State Fish and Wildlife Area",
@@ -4014,7 +4189,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4118": {
@@ -4023,29 +4198,36 @@
    "page": "https://huntillinois.org/sites/copperhead-hollow-sfwa",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/13151535/CopperheadHollowHunterMap.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Printable Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-cont)",
+    "how": "a link on the park's page ('Printable Map')"
    },
    "rules": {
-    "url": "https://huntillinois.org/definitions/",
-    "how": "a link on the park's page ('Definitions Statewide Regulations')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 27 parks was dropped: https://huntillinois.org/definitions/)",
+    "how": "a link on the park's page ('Definitions Statewide Regulations')"
    },
    "agency": "",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/13151535/CopperheadHollowHunterMap.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Printable Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-4119": {
    "n": "Crawford County State Fish and Wildlife Area",
@@ -4068,15 +4250,15 @@
     "date_label": "2016: check it is still current"
    },
    "rules": {
-    "url": "https://huntillinois.org/definitions/",
-    "how": "a link on the park's page ('Definitions Statewide Regulations')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 27 parks was dropped: https://huntillinois.org/definitions/)",
+    "how": "a link on the park's page ('Definitions Statewide Regulations')"
    },
    "agency": "",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-4120": {
    "n": "Des Plaines State Fish and Wildlife Area",
@@ -4106,7 +4288,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4121": {
@@ -4115,29 +4297,36 @@
    "page": "https://huntillinois.org/sites/devils-island-swma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/13151558/DevilsIslandHunterMap.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Printable Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-cont)",
+    "how": "a link on the park's page ('Printable Map')"
    },
    "rules": {
-    "url": "https://huntillinois.org/definitions/",
-    "how": "a link on the park's page ('Definitions Statewide Regulations')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 27 parks was dropped: https://huntillinois.org/definitions/)",
+    "how": "a link on the park's page ('Definitions Statewide Regulations')"
    },
    "agency": "",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/13151558/DevilsIslandHunterMap.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Printable Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-4122": {
    "n": "Fall Creek Overlook State Natural Area",
@@ -4159,7 +4348,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4123": {
@@ -4190,7 +4379,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4124": {
@@ -4221,7 +4410,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4125": {
@@ -4252,7 +4441,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4126": {
@@ -4275,7 +4464,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4127": {
@@ -4284,29 +4473,36 @@
    "page": "https://huntillinois.org/sites/harry-babe-woodyard-sna/",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/13151702/HarryBabeWoodyardHunterMap.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Printable Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-cont)",
+    "how": "a link on the park's page ('Printable Map')"
    },
    "rules": {
-    "url": "https://huntillinois.org/definitions/",
-    "how": "a link on the park's page ('Definitions Statewide Regulations')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 27 parks was dropped: https://huntillinois.org/definitions/)",
+    "how": "a link on the park's page ('Definitions Statewide Regulations')"
    },
    "agency": "",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/13151702/HarryBabeWoodyardHunterMap.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Printable Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-4128": {
    "n": "Henderson County State Conservation Area",
@@ -4336,7 +4532,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4129": {
@@ -4367,7 +4563,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4130": {
@@ -4398,7 +4594,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4131": {
@@ -4421,7 +4617,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4132": {
@@ -4452,7 +4648,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4133": {
@@ -4475,7 +4671,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4134": {
@@ -4508,7 +4704,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4135": {
@@ -4532,15 +4728,15 @@
     "date_label": "date unknown"
    },
    "rules": {
-    "url": "https://huntillinois.org/definitions/",
-    "how": "a link on the park's page ('Definitions Statewide Regulations')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 27 parks was dropped: https://huntillinois.org/definitions/)",
+    "how": "a link on the park's page ('Definitions Statewide Regulations')"
    },
    "agency": "",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-4136": {
    "n": "Kinkaid Lake State Fish and Wildlife Area",
@@ -4570,7 +4766,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4137": {
@@ -4601,7 +4797,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4138": {
@@ -4610,29 +4806,36 @@
    "page": "https://huntillinois.org/sites/manito-pha",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/13151837/ManitoHunterMap.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": "2019-11-07",
-    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-    "how": "a link on the park's page ('Printable Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-cont)",
+    "how": "a link on the park's page ('Printable Map')"
    },
    "rules": {
-    "url": "https://huntillinois.org/definitions/",
-    "how": "a link on the park's page ('Definitions Statewide Regulations')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 27 parks was dropped: https://huntillinois.org/definitions/)",
+    "how": "a link on the park's page ('Definitions Statewide Regulations')"
    },
    "agency": "",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/13151837/ManitoHunterMap.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": "2019-11-07",
+     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+     "how": "a link on the park's page ('Printable Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-4139": {
    "n": "Marseilles State Fish and Wildlife Area",
@@ -4640,29 +4843,50 @@
    "page": "https://huntillinois.org/sites/marseilles-sfwa",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/13151843/MarseillesHunterMap.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Printable Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-cont; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-cont)",
+    "how": "a link on the park's page ('Printable Map')"
    },
    "rules": {
-    "url": "https://huntillinois.org/definitions/",
-    "how": "a link on the park's page ('Definitions Statewide Regulations')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 27 parks was dropped: https://huntillinois.org/definitions/)",
+    "how": "a link on the park's page ('Definitions Statewide Regulations')"
    },
    "agency": "",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/13151843/MarseillesHunterMap.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Printable Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    },
+    {
+     "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/13151839/MarseillesHunterMap-1.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Printable Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-4140": {
    "n": "Marshall State Fish and Wildlife Area",
@@ -4684,7 +4908,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4141": {
@@ -4707,7 +4931,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4142": {
@@ -4730,7 +4954,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4143": {
@@ -4753,7 +4977,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4144": {
@@ -4776,7 +5000,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4145": {
@@ -4798,7 +5022,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-4146": {
    "n": "Mississippi River State Fish and Wildlife Area",
@@ -4820,7 +5044,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4147": {
@@ -4843,7 +5067,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4148": {
@@ -4852,29 +5076,36 @@
    "page": "https://huntillinois.org/sites/peabody-river-king-sfwa",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/13152024/PeabodyRiverKingHunterMap.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Printable Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-cont)",
+    "how": "a link on the park's page ('Printable Map')"
    },
    "rules": {
-    "url": "https://huntillinois.org/definitions/",
-    "how": "a link on the park's page ('Definitions Statewide Regulations')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 27 parks was dropped: https://huntillinois.org/definitions/)",
+    "how": "a link on the park's page ('Definitions Statewide Regulations')"
    },
    "agency": "",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/13152024/PeabodyRiverKingHunterMap.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Printable Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-4149": {
    "n": "Piney Creek Ravine State Natural Area",
@@ -4904,7 +5135,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4150": {
@@ -4927,7 +5158,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4151": {
@@ -4950,7 +5181,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4152": {
@@ -4959,29 +5190,36 @@
    "page": "https://huntillinois.org/sites/sanganois-sfwa",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/17125207/SanganoisHunterMap.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Printable Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-cont)",
+    "how": "a link on the park's page ('Printable Map')"
    },
    "rules": {
-    "url": "https://huntillinois.org/definitions/",
-    "how": "a link on the park's page ('Definitions Statewide Regulations')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 27 parks was dropped: https://huntillinois.org/definitions/)",
+    "how": "a link on the park's page ('Definitions Statewide Regulations')"
    },
    "agency": "",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/17125207/SanganoisHunterMap.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Printable Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-4153": {
    "n": "Kaskaskia unit of Shelbyville State Fish and Wildlife Area",
@@ -5003,7 +5241,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4154": {
@@ -5026,7 +5264,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4155": {
@@ -5049,7 +5287,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4156": {
@@ -5072,7 +5310,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4157": {
@@ -5103,7 +5341,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4158": {
@@ -5112,29 +5350,36 @@
    "page": "https://huntillinois.org/sites/turkey-bluffs-sfwa",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/17130414/TurkeyBluffHunterMap.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Printable Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-cont)",
+    "how": "a link on the park's page ('Printable Map')"
    },
    "rules": {
-    "url": "https://huntillinois.org/definitions/",
-    "how": "a link on the park's page ('Definitions Statewide Regulations')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 27 parks was dropped: https://huntillinois.org/definitions/)",
+    "how": "a link on the park's page ('Definitions Statewide Regulations')"
    },
    "agency": "",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/17130414/TurkeyBluffHunterMap.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Printable Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-4159": {
    "n": "Union County State Fish and Wildlife Area",
@@ -5164,7 +5409,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4160": {
@@ -5187,7 +5432,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4236": {
@@ -5235,7 +5480,7 @@
      "via": "the agency site"
     }
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-4482": {
    "n": "Shawnee National Forest",
@@ -5253,7 +5498,8 @@
     "posted": "July 24, 2026",
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r09/shawnee",
@@ -5265,7 +5511,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4572": {
@@ -5297,7 +5543,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-4573": {
    "n": "Mormon Pioneer National Historic Trail",
@@ -5328,7 +5574,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-7256": {
    "n": "Midewin National Grassland",
@@ -5346,7 +5592,8 @@
     "posted": "October 1, 2026",
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r09/midewin",
@@ -5358,7 +5605,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-7257": {
@@ -5381,7 +5628,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-7258": {
@@ -5403,7 +5650,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-7259": {
    "n": "Fort Kaskaskia State Historic Site",
@@ -5424,7 +5671,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-7367": {
    "n": "Fort de Chartres National Historic Site",
@@ -5445,7 +5692,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-7368": {
    "n": "Cahokia Mounds State Historic Site",
@@ -5466,7 +5713,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-7371": {
    "n": "Sam Dale Lake State Fish and Wildlife Area",
@@ -5496,7 +5743,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-7372": {
@@ -5518,7 +5765,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-7373": {
    "n": "Lincoln Trail Memorial State Historic Site",
@@ -5539,7 +5786,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-7638": {
    "n": "Goose Lake Prairie State Natural Area",
@@ -5561,7 +5808,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-7839": {
@@ -5592,7 +5839,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-7853": {
@@ -5623,7 +5870,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-7871": {
@@ -5654,7 +5901,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-7872": {
@@ -5677,7 +5924,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-7917": {
@@ -5686,18 +5933,9 @@
    "page": "https://www.nps.gov/pull/index.htm",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.nps.gov/pull/planyourvisit/maps.htm",
-    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
-    "kind": "page",
-    "date": null,
-    "date_how": "",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "July 2, 2023",
-    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.nps.gov/pull/planyourvisit/maps.htm)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
    },
    "rules": {
     "url": "https://www.nps.gov/pull/learn/management/lawsandpolicies.htm",
@@ -5708,7 +5946,23 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://www.nps.gov/pull/planyourvisit/maps.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "July 2, 2023",
+     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-8267": {
    "n": "World Shooting Complex State Recreation Area",
@@ -5730,7 +5984,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-8294": {
@@ -5752,7 +6006,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-8306": {
    "n": "Lincoln's New Salem State Historic Site",
@@ -5760,18 +6014,9 @@
    "page": "https://dnrhistoric.illinois.gov/experience/sites/central/new-salem.html",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://dnrhistoric.illinois.gov/content/dam/soi/en/web/dnr/parks/documents/lincoln-snewsalem.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Site Campground Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://dnrhistoric.illinois.gov/content/dam/soi/en/web/dnr/parks/docu)",
+    "how": "a link on the park's page ('Site Campground Map')"
    },
    "rules": {
     "url": "",
@@ -5782,7 +6027,23 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://dnrhistoric.illinois.gov/content/dam/soi/en/web/dnr/parks/documents/lincoln-snewsalem.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Site Campground Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-8320": {
    "n": "Lincoln Tomb State Historic Site",
@@ -5803,7 +6064,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-8378": {
    "n": "Snakeden Hollow State Wildlife Area",
@@ -5833,7 +6094,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-8379": {
@@ -5842,29 +6103,36 @@
    "page": "https://huntillinois.org/sites/spoon-river-sf",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/17125920/SpoonRiverHunterMap.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Printable Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-cont)",
+    "how": "a link on the park's page ('Printable Map')"
    },
    "rules": {
-    "url": "https://huntillinois.org/definitions/",
-    "how": "a link on the park's page ('Definitions Statewide Regulations')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 27 parks was dropped: https://huntillinois.org/definitions/)",
+    "how": "a link on the park's page ('Definitions Statewide Regulations')"
    },
    "agency": "",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/wp-content/uploads/2023/01/17125920/SpoonRiverHunterMap.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Printable Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-8380": {
    "n": "Sahara Woods State Recreation Area",
@@ -5886,7 +6154,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-9802": {
@@ -5908,7 +6176,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-9893": {
    "n": "Tunnel Hill State Trail",
@@ -5930,7 +6198,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-9989": {
@@ -5952,19 +6220,19 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   }
  },
  "read": "2026-10-28",
  "counts": {
   "parks": 219,
-  "map ok": 91,
-  "map found by the bot": 86,
+  "map ok": 87,
+  "map found by the bot": 82,
   "date on the map": 4,
   "posted date only": 69,
-  "date unknown": 18,
-  "no map": 128,
-  "rules ok": 193,
+  "date unknown": 14,
+  "no map": 132,
+  "rules ok": 166,
   "needs browser": 0,
   "handover hints": 0,
   "runs hints": 4,

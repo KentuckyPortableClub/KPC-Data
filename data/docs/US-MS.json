@@ -23,7 +23,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-0383": {
    "n": "Dahomey National Wildlife Refuge",
@@ -36,7 +36,7 @@
     "kind": "page",
     "date": null,
     "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Map')",
+    "how": "a link on the park's page ('Interactive Map')",
     "posted": "",
     "posted_how": "",
     "names_park": true,
@@ -46,15 +46,15 @@
     "date_label": "date unknown"
    },
    "rules": {
-    "url": "https://www.fws.gov/refuge/dahomey/visit-us/rules-policies",
-    "how": "FWS rules page (pattern + opened)",
+    "url": "https://www.fws.gov/policies",
+    "how": "a link on the park's page ('Policies')",
     "status": "ok"
    },
    "agency": "U.S. Fish and Wildlife Service",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0384": {
    "n": "Grand Bay National Wildlife Refuge",
@@ -85,7 +85,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0385": {
    "n": "Hillside National Wildlife Refuge",
@@ -116,7 +116,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0386": {
    "n": "Holt Collier National Wildlife Refuge",
@@ -147,7 +147,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0387": {
    "n": "Mathews Brake National Wildlife Refuge",
@@ -178,7 +178,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0388": {
    "n": "Mississippi Sandhill Crane National Wildlife Refuge",
@@ -209,7 +209,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0389": {
    "n": "Morgan Brake National Wildlife Refuge",
@@ -240,7 +240,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0390": {
    "n": "Noxubee National Wildlife Refuge",
@@ -287,7 +287,7 @@
      "via": "the agency site"
     }
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-0391": {
    "n": "Panther Swamp National Wildlife Refuge",
@@ -318,7 +318,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0392": {
    "n": "St. Catherine Creek National Wildlife Refuge",
@@ -349,7 +349,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0393": {
    "n": "Tallahatchie National Wildlife Refuge",
@@ -362,7 +362,7 @@
     "kind": "page",
     "date": null,
     "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Map')",
+    "how": "a link on the park's page ('Interactive Map')",
     "posted": "",
     "posted_how": "",
     "names_park": true,
@@ -372,15 +372,15 @@
     "date_label": "date unknown"
    },
    "rules": {
-    "url": "https://www.fws.gov/refuge/tallahatchie/visit-us/rules-policies",
-    "how": "FWS rules page (pattern + opened)",
-    "status": "ok"
+    "url": "https://doifwsnextprod.prod.acquia-sites.com/sites/default/files/2026-10/north-ms-hunt-regs-2026_web.pdf",
+    "how": "a link on the park's page ('North Mississippi Refuges Complex Hunting and Fishing Regulations brochure')",
+    "status": "robots"
    },
    "agency": "U.S. Fish and Wildlife Service",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0395": {
    "n": "Yazoo National Wildlife Refuge",
@@ -411,7 +411,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0642": {
    "n": "Natchez Trace Parkway National Parkway",
@@ -442,7 +442,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0661": {
    "n": "Gulf Islands National Seashore",
@@ -473,7 +473,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0709": {
    "n": "Tupelo National Battlefield",
@@ -504,7 +504,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0715": {
    "n": "Brices Cross Roads National Battlefield",
@@ -535,7 +535,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0722": {
    "n": "Shiloh National Battlefield",
@@ -543,18 +543,9 @@
    "page": "https://www.nps.gov/shil/index.htm",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.nps.gov/shil/planyourvisit/maps.htm",
-    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
-    "kind": "page",
-    "date": null,
-    "date_how": "",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "February 4, 2025",
-    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.nps.gov/shil/planyourvisit/maps.htm)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
    },
    "rules": {
     "url": "https://www.nps.gov/shil/learn/management/lawsandpolicies.htm",
@@ -565,7 +556,23 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://www.nps.gov/shil/planyourvisit/maps.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "February 4, 2025",
+     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-0723": {
    "n": "Vicksburg National Military Park",
@@ -596,7 +603,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0747": {
    "n": "Natchez National Historical Park",
@@ -627,7 +634,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-10297": {
    "n": "Old Trace Park Recreation Park",
@@ -650,7 +657,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-11880": {
    "n": "Winterville Mounds State Historical Park",
@@ -671,7 +678,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-11881": {
    "n": "Dancing Rabbit Creek Treaty State Historic Site",
@@ -692,7 +699,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-11882": {
    "n": "Grand Village of the Natchez State Historic Site",
@@ -713,7 +720,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-11883": {
    "n": "Emerald Mound National Historical Site",
@@ -721,18 +728,9 @@
    "page": "https://www.nps.gov/natr/learn/historyculture/emeraldmound.htm",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.nps.gov/natr/planyourvisit/maps.htm",
-    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
-    "kind": "page",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Map to Emerald Mound')",
-    "posted": "July 3, 2025",
-    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.nps.gov/natr/planyourvisit/maps.htm)",
+    "how": "a link on the park's page ('Map to Emerald Mound')"
    },
    "rules": {
     "url": "https://www.nps.gov/natr/learn/management/lawsandpolicies.htm",
@@ -743,7 +741,23 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://www.nps.gov/natr/planyourvisit/maps.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map to Emerald Mound')",
+     "posted": "July 3, 2025",
+     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-12193": {
    "n": "Lake Claude Bennett State Fishing Lake",
@@ -765,7 +779,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-12194": {
    "n": "Lake Lamar Bruce State Fishing Lake",
@@ -787,7 +801,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-12195": {
    "n": "Elvis Presley State Fishing Lake",
@@ -809,7 +823,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-12196": {
    "n": "Tippah County State Fishing Lake",
@@ -831,7 +845,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-12197": {
    "n": "Lake Monroe State Fishing Lake",
@@ -853,7 +867,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-12198": {
    "n": "Neshoba County State Fishing Lake",
@@ -875,7 +889,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-12199": {
    "n": "Lake Tom Bailey State Fishing Lake",
@@ -897,7 +911,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-12200": {
    "n": "Simpson County State Fishing Lake",
@@ -919,7 +933,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-12201": {
    "n": "Prentiss Walker State Fishing Lake",
@@ -941,7 +955,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-12202": {
    "n": "Lake Bogue Homa State Fishing Lake",
@@ -963,7 +977,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-12203": {
    "n": "Lake Mary Crawford State Fishing Lake",
@@ -985,7 +999,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-12204": {
    "n": "Calling Panther State Fishing Lake",
@@ -1007,7 +1021,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-12205": {
    "n": "Lake Mike Conner State Fishing Lake",
@@ -1029,7 +1043,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-12206": {
    "n": "Lake Jeff Davis State Fishing Lake",
@@ -1051,7 +1065,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-12207": {
    "n": "Lake Walthall State Fishing Lake",
@@ -1073,7 +1087,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-12208": {
    "n": "Lake Perry State Fishing Lake",
@@ -1095,7 +1109,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-12638": {
    "n": "Bobby Cleveland Park State Recreation Site",
@@ -1103,18 +1117,9 @@
    "page": "https://www.therez.ms.gov/parks-recreation/parks-rentals",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.therez.ms.gov/sites/default/files/inline-images/parksRec_maps/REZ-PARK.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": "2008-01-07",
-    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-    "how": "a link on the park's page ('View Parks Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.therez.ms.gov/sites/default/files/inline-images/parksRec_m)",
+    "how": "a link on the park's page ('View Parks Map')"
    },
    "rules": {
     "url": "https://www.therez.ms.gov/parks-recreation/hunting/draw-hunt-rules",
@@ -1125,7 +1130,23 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://www.therez.ms.gov/sites/default/files/inline-images/parksRec_maps/REZ-PARK.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": "2008-01-07",
+     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+     "how": "a link on the park's page ('View Parks Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-12639": {
    "n": "Pelahatchie Shore State Recreation Area",
@@ -1133,18 +1154,9 @@
    "page": "https://www.therez.ms.gov/parks-recreation/parks-rentals",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.therez.ms.gov/sites/default/files/inline-images/parksRec_maps/REZ-PARK.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": "2008-01-07",
-    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-    "how": "a link on the park's page ('View Parks Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.therez.ms.gov/sites/default/files/inline-images/parksRec_m)",
+    "how": "a link on the park's page ('View Parks Map')"
    },
    "rules": {
     "url": "https://www.therez.ms.gov/parks-recreation/hunting/draw-hunt-rules",
@@ -1155,7 +1167,23 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://www.therez.ms.gov/sites/default/files/inline-images/parksRec_maps/REZ-PARK.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": "2008-01-07",
+     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+     "how": "a link on the park's page ('View Parks Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-2532": {
    "n": "Buccaneer State Park",
@@ -1177,7 +1205,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-2533": {
    "n": "Clarkco State Park",
@@ -1199,7 +1227,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-2534": {
    "n": "Florewood State Park",
@@ -1221,7 +1249,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-2535": {
    "n": "George P Cossar State Park",
@@ -1243,7 +1271,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-2536": {
    "n": "Golden Memorial State Park",
@@ -1265,7 +1293,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-2537": {
    "n": "Great River Road State Park",
@@ -1287,7 +1315,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-2538": {
    "n": "Holmes County State Park",
@@ -1309,7 +1337,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-2539": {
    "n": "Hugh White State Park",
@@ -1331,7 +1359,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-2540": {
    "n": "John W. Kyle State Park",
@@ -1353,7 +1381,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-2541": {
    "n": "J P Coleman State Park",
@@ -1375,7 +1403,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-2542": {
    "n": "Lake Lincoln State Park",
@@ -1397,7 +1425,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-2543": {
    "n": "Lake Lowndes State Park",
@@ -1419,7 +1447,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-2544": {
    "n": "Lefleur's Bluff State Park",
@@ -1441,7 +1469,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-2545": {
    "n": "Legion State Park",
@@ -1463,7 +1491,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-2546": {
    "n": "Leroy Percy State Park",
@@ -1485,7 +1513,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-2547": {
    "n": "Natchez State Park",
@@ -1515,7 +1543,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-2548": {
@@ -1538,7 +1566,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-2549": {
    "n": "Percy E Quin State Park",
@@ -1560,7 +1588,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-2550": {
    "n": "Roosevelt State Park",
@@ -1582,7 +1610,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-2551": {
    "n": "Shepard State Park",
@@ -1604,7 +1632,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-2552": {
    "n": "Tishomingo State Park",
@@ -1626,7 +1654,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-2553": {
    "n": "Tombigbee State Park",
@@ -1648,7 +1676,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-2554": {
    "n": "Trace State Park",
@@ -1670,7 +1698,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-2555": {
    "n": "Wall Doxey State Park",
@@ -1692,7 +1720,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-4493": {
    "n": "Bienville National Forest",
@@ -1710,7 +1738,8 @@
     "posted": "October 26, 2026",
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/mississippi",
@@ -1722,7 +1751,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4494": {
@@ -1741,7 +1770,8 @@
     "posted": "October 26, 2026",
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/mississippi",
@@ -1753,7 +1783,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4495": {
@@ -1772,7 +1802,8 @@
     "posted": "October 26, 2026",
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/mississippi",
@@ -1784,7 +1815,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4496": {
@@ -1803,7 +1834,8 @@
     "posted": "October 26, 2026",
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/mississippi",
@@ -1815,7 +1847,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4497": {
@@ -1834,7 +1866,8 @@
     "posted": "October 26, 2026",
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/mississippi",
@@ -1846,7 +1879,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4498": {
@@ -1865,7 +1898,8 @@
     "posted": "October 26, 2026",
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/mississippi",
@@ -1877,7 +1911,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-4560": {
@@ -1909,7 +1943,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-7070": {
    "n": "O'Keefe Wildlife Management Area",
@@ -1931,7 +1965,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7071": {
    "n": "Charlie Capps Wildlife Management Area",
@@ -1953,7 +1987,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7072": {
    "n": "Riverfront Wildlife Management Area",
@@ -1975,7 +2009,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7073": {
    "n": "William C. Deviney Wildlife Management Area",
@@ -1997,7 +2031,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7074": {
    "n": "Stoneville Wildlife Management Area",
@@ -2019,7 +2053,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7075": {
    "n": "Muscadine Farms Wildlife Management Area",
@@ -2041,7 +2075,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7076": {
    "n": "Sky Lake Wildlife Management Area",
@@ -2063,7 +2097,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7077": {
    "n": "Leroy Percy Wildlife Management Area",
@@ -2085,7 +2119,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7078": {
    "n": "Howard Miller Wildlife Management Area",
@@ -2107,7 +2141,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7079": {
    "n": "Twin Oaks Wildlife Management Area",
@@ -2129,7 +2163,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7080": {
    "n": "Sunflower Wildlife Management Area",
@@ -2151,7 +2185,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7081": {
    "n": "Lake George Wildlife Management Area",
@@ -2173,7 +2207,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7082": {
    "n": "Shipland Wildlife Management Area",
@@ -2195,7 +2229,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7083": {
    "n": "Mahannah Wildlife Management Area",
@@ -2217,7 +2251,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7084": {
    "n": "Phil Bryant Wildlife Management Area",
@@ -2239,7 +2273,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7085": {
    "n": "John W. Starr Wildlife Management Area",
@@ -2261,7 +2295,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7086": {
    "n": "Trim Cane Wildlife Management Area",
@@ -2283,7 +2317,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7087": {
    "n": "Black Prairie Wildlife Management Area",
@@ -2305,7 +2339,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7088": {
    "n": "Choctaw Wildlife Management Area",
@@ -2327,7 +2361,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7089": {
    "n": "Yockanookany Wildlife Management Area",
@@ -2349,7 +2383,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7090": {
    "n": "Nanih Waiya Wildlife Management Area",
@@ -2371,7 +2405,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7091": {
    "n": "Okatibbee Wildlife Management Area",
@@ -2379,18 +2413,9 @@
    "page": "https://www.mdwfp.com/wildlife-hunting/wma/region/east-central/okatibbee",
    "checked": "2026-10-28",
    "map": {
-    "url": "http://www.sam.usace.army.mil/Portals/46/docs/recreation/okatibbee/121022-A-AQ963-001.gif",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "",
-    "posted_how": "",
-    "names_park": null,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "on file, checked by a person or the link harvester (sam.usace.army.mil)"
+    "url": "",
+    "status": "no working map link (tried: HTTP 403 http://www.sam.usace.army.mil/Portals/46/docs/recreation/okatibbee/121)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
    },
    "rules": {
     "url": "",
@@ -2402,7 +2427,23 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the map link refused a plain reader (HTTP 403)",
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "http://www.sam.usace.army.mil/Portals/46/docs/recreation/okatibbee/121022-A-AQ963-001.gif",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "on file, checked by a person or the link harvester (sam.usace.army.mil)"
+    }
+   ],
+   "ver": 5
   },
   "US-7092": {
    "n": "Tuscumbia Wildlife Management Area",
@@ -2424,7 +2465,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7093": {
    "n": "Divide Section Wildlife Management Area",
@@ -2446,7 +2487,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7094": {
    "n": "Hell Creek Wildlife Management Area",
@@ -2468,7 +2509,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7095": {
    "n": "John Bell Williams Wildlife Management Area",
@@ -2490,7 +2531,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7096": {
    "n": "Canal Section Wildlife Management Area",
@@ -2512,7 +2553,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7097": {
    "n": "Chickasaw Wildlife Management Area",
@@ -2534,7 +2575,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7098": {
    "n": "Graham Waterfowl Wildlife Management Area",
@@ -2556,7 +2597,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7099": {
    "n": "Sardis Waterfowl Wildlife Management Area",
@@ -2577,7 +2618,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-7100": {
    "n": "Upper Sardis Wildlife Management Area",
@@ -2599,7 +2640,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7101": {
    "n": "Charles Ray Nix Wildlife Management Area",
@@ -2621,7 +2662,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7102": {
    "n": "Calhoun County Wildlife Management Area",
@@ -2642,7 +2683,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-7103": {
    "n": "Malmaison Wildlife Management Area",
@@ -2664,7 +2705,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7104": {
    "n": "Chickasawhay Wildlife Management Area",
@@ -2686,7 +2727,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7105": {
    "n": "Mason Creek Wildlife Management Area",
@@ -2708,7 +2749,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7106": {
    "n": "Leaf River Wildlife Management Area",
@@ -2716,18 +2757,9 @@
    "page": "https://www.mdwfp.com/wildlife-hunting/wma/leaf-river-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.mdwfp.com/wildlife-hunting/wma",
-    "status": "rest",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "",
-    "posted_how": "",
-    "names_park": null,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: rest https://www.mdwfp.com/wildlife-hunting/wma)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
    },
    "rules": {
     "url": "",
@@ -2739,7 +2771,23 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://www.mdwfp.com/wildlife-hunting/wma",
+     "status": "rest",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-7107": {
    "n": "Theodore Mars Wildlife Management Area",
@@ -2761,7 +2809,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7108": {
    "n": "Pascagoula River Wildlife Management Area",
@@ -2783,7 +2831,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7109": {
    "n": "Old River Wildlife Management Area",
@@ -2805,7 +2853,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7110": {
    "n": "Little Biloxi Wildlife Management Area",
@@ -2827,7 +2875,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7111": {
    "n": "Red Creek Wildlife Management Area",
@@ -2849,7 +2897,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7112": {
    "n": "Ward Bayou Wildlife Management Area",
@@ -2871,7 +2919,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7113": {
    "n": "Pearl River Wildlife Management Area",
@@ -2893,7 +2941,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7114": {
    "n": "Bienville Wildlife Management Area",
@@ -2915,7 +2963,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7115": {
    "n": "Tallahala Wildlife Management Area",
@@ -2937,7 +2985,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7116": {
    "n": "Caney Creek Wildlife Management Area",
@@ -2959,7 +3007,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7117": {
    "n": "Canemount Wildlife Management Area",
@@ -2981,7 +3029,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7118": {
    "n": "Copiah County Wildlife Management Area",
@@ -3003,7 +3051,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7119": {
    "n": "Natchez Wildlife Management Area",
@@ -3033,7 +3081,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-7120": {
@@ -3056,7 +3104,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7121": {
    "n": "Sandy Creek Wildlife Management Area",
@@ -3078,7 +3126,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7122": {
    "n": "Marion County Wildlife Management Area",
@@ -3100,7 +3148,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7123": {
    "n": "Wolf River Wildlife Management Area",
@@ -3122,7 +3170,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7124": {
    "n": "Arkabutla Lake State Recreation Area",
@@ -3144,7 +3192,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-7125": {
@@ -3167,7 +3215,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-7126": {
@@ -3190,7 +3238,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-7127": {
@@ -3199,18 +3247,9 @@
    "page": "https://www.sam.usace.army.mil/Missions/Civil-Works/Recreation/Okatibbee-Lake/",
    "checked": "2026-10-28",
    "map": {
-    "url": "http://www.sam.usace.army.mil/Portals/46/docs/recreation/okatibbee/121022-A-AQ963-001.gif",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "",
-    "posted_how": "",
-    "names_park": null,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: HTTP 403 http://www.sam.usace.army.mil/Portals/46/docs/recreation/okatibbee/121)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
    },
    "rules": {
     "url": "https://unblock.federalregister.gov/",
@@ -3222,7 +3261,23 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the map link refused a plain reader (HTTP 403)",
-   "ver": 4,
+   "map_tried": [
+    {
+     "url": "http://www.sam.usace.army.mil/Portals/46/docs/recreation/okatibbee/121022-A-AQ963-001.gif",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-7128": {
@@ -3231,18 +3286,9 @@
    "page": "https://www.mvk.usace.army.mil/Missions/Recreation/Sardis-Lake/Sardis-Lake-Recreation/",
    "checked": "2026-10-28",
    "map": {
-    "url": "http://www.mvk.usace.army.mil/Portals/58/docs/Lakes/Mississippi/Sardis/hunt_fish_brochure_1986b.pdf",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "",
-    "posted_how": "",
-    "names_park": null,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: HTTP 403 http://www.mvk.usace.army.mil/Portals/58/docs/Lakes/Mississippi/Sardis)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
    },
    "rules": {
     "url": "https://unblock.federalregister.gov/",
@@ -3254,7 +3300,23 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the map link refused a plain reader (HTTP 403)",
-   "ver": 4,
+   "map_tried": [
+    {
+     "url": "http://www.mvk.usace.army.mil/Portals/58/docs/Lakes/Mississippi/Sardis/hunt_fish_brochure_1986b.pdf",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-7129": {
@@ -3277,7 +3339,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-7130": {
@@ -3300,7 +3362,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-7131": {
@@ -3323,7 +3385,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-7132": {
@@ -3346,7 +3408,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-7133": {
@@ -3369,7 +3431,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-7134": {
@@ -3392,7 +3454,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-7629": {
@@ -3411,7 +3473,8 @@
     "posted": "October 26, 2026",
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/mississippi",
@@ -3423,7 +3486,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-7630": {
@@ -3442,7 +3505,8 @@
     "posted": "October 26, 2026",
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/mississippi",
@@ -3454,7 +3518,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-7631": {
@@ -3473,7 +3537,8 @@
     "posted": "October 26, 2026",
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/mississippi",
@@ -3485,7 +3550,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-7632": {
@@ -3517,7 +3582,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-7633": {
    "n": "Turkey Fork Lake State Recreation Area",
@@ -3539,7 +3604,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-7634": {
@@ -3562,7 +3627,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-7635": {
@@ -3581,7 +3646,8 @@
     "posted": "October 26, 2026",
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/mississippi",
@@ -3593,7 +3659,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-8513": {
@@ -3617,7 +3683,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-8514": {
    "n": "Big Creek State Recreation Area",
@@ -3640,7 +3706,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-8515": {
    "n": "Dry Creek State Recreation Area",
@@ -3663,7 +3729,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-8516": {
    "n": "Dunn's Falls State Recreation Area",
@@ -3686,7 +3752,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-8517": {
    "n": "Flint Creek State Recreation Area",
@@ -3709,7 +3775,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-8518": {
    "n": "Maynor Creek State Recreation Area",
@@ -3732,7 +3798,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-8519": {
    "n": "Turkey Creek State Recreation Area",
@@ -3755,7 +3821,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-9847": {
    "n": "Clark Creek Natural Area State Park",
@@ -3777,7 +3843,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-9849": {
    "n": "Deer Island Coastal Park",
@@ -3811,7 +3877,7 @@
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the map link refused a plain reader (ok)",
-   "ver": 4
+   "ver": 5
   }
  },
  "read": "2026-10-28",
@@ -3822,12 +3888,12 @@
   "date on the map": 0,
   "posted date only": 19,
   "date unknown": 14,
-  "no map": 121,
-  "rules ok": 45,
+  "no map": 122,
+  "rules ok": 44,
   "needs browser": 92,
   "handover hints": 0,
   "runs hints": 0,
-  "host resting / robots": 1,
+  "host resting / robots": 0,
   "map names the park": 20,
   "region overview only": 0
  }
