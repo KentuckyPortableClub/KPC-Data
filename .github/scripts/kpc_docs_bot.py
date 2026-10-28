@@ -36,7 +36,7 @@ UA = 'KPC park documents (https://kentuckyportableclub.github.io/KPC-Links/; ham
 GAP = 2.0
 STRIKES_OUT = 3
 REFRESH_DAYS = 30
-VER = 3   # Oct 28 (chat 8 F1-F10 + chat 11's Kentucky grade): records made by an older rule set are read again
+VER = 4   # Oct 28 6:34 AM: Brandon's 8 rulings DOC-3..DOC-11 (campground / combined / overview / dates / hunting / Avenza / same age); v3 = chat 8 F1-F10 + chat 11's grade. Records made by an older rule set are read again
 PDF_FIRST = 400_000
 PDF_MAX = 2_000_000
 TODAY = time.strftime('%Y-%m-%d')
@@ -209,8 +209,13 @@ def map_score(url, text, agency_host):
     if re.search(r'park map|property map|area map|boundary map|trail map|site map(?! of)|facility map|map of the', t): s += 3
     elif re.search(r'\bmap\b', t): s += 2
     if re.search(r'campground|camping|lodge|floor plan|golf|parking only|regional map|directions|driving|location map|vicinity', t + ' ' + u): s -= 2
+    if re.search(r'hunt', t + ' ' + u): s += 1 if HUNTLAND.search(CUR.get('type', '') + ' ' + CUR.get('name', '')) else -3   # DOC-8: a hunting map is the park map for WMAs / game lands only, never a state park
     if agency_host and base_host(host_of(url)) == base_host(agency_host): s += 1
     return s
+
+
+HUNTLAND = re.compile(r'wildlife management|\bwma\b|game land|hunting area|public hunting|wildlife area|\bgma\b|\bwha\b', re.I)
+CUR = {}   # the park being read (type + name), for the scores
 
 
 def rules_score(url, text):
@@ -331,6 +336,7 @@ def check_url(u, want_text=True, name=''):
             if st2 in (200, 206): txt = pdf_first_page_text(body2)
         d, how = date_from_text(txt)
         if d: r['date'], r['date_how'] = d, how
+        r['covers'] = covers(txt, name)   # DOC-4: a combined map naming several units
         cy = COPYR.search(txt)
         if cy: r['copyright'] = cy.group(1)   # kept apart: a template / base-map year, never the map date
         r['names_park'] = names_park(name, txt) if name else None
@@ -366,6 +372,16 @@ def check_url(u, want_text=True, name=''):
         if ys and yp and int(yp.group()) - int(ys.group()) > 1: r['date_how'] = f"file stamp {ys.group()} (older than the posting {yp.group()} by more than a year: a re-posted old map, this map may be old; chat 8 F5)"
     if not r['date']: r['date'], r['date_how'] = None, f'date unknown, checked {TODAY}'   # Oct 28 (HQ 3): never 'the day we read it' as a map date
     return r
+
+
+AREA_NAMES = {}   # core name -> ref, every park of the area being read (DOC-4)
+def covers(txt, name):
+    """How many of the area's parks (incl. this one) a map's first page names."""
+    if not txt or not AREA_NAMES: return 0
+    t = low(txt[:20000]); n = 0
+    for c in AREA_NAMES:
+        if len(c) >= 6 and c in t: n += 1
+    return n
 
 
 def names_park(name, txt):
@@ -513,6 +529,7 @@ def via_of(url, agency_host, linked, how):
     h, a = base_host(host_of(url)), base_host(agency_host or '')
     if a and h == a: return 'the agency site'
     if url in linked: return f'third-party host, linked by the agency ({h})' if THIRD.search(h) else f'linked from the agency page ({h})'
+    if THIRD.search(h): return 'off the government, not linked by the agency'   # DOC-10: Avenza / Gaia / AllTrails only through the agency's own link
     if a and gov_of(h) and gov_of(h) == gov_of(a): return f'same government ({h})'
     if str(how).startswith('on file'): return f'on file, checked by a person or the link harvester ({h})'
     if gov_of(h): return f'government host ({h})'
@@ -529,19 +546,27 @@ def pick_primary(ms):
     while another map exists; when two printed dates are known and more than 3 years apart, the NEWER wins; otherwise the
     kind order (PDF, image, interactive map, page) and the agency's own host decide. Returns (primary, others)."""
     kind_rank = {'pdf': 4, 'image': 3, 'arcgis': 2, 'page': 1, 'region overview': 0}
-    base = lambda m: (m.get('names_park') is not False, m['kind'] != 'region overview', kind_rank.get(m['kind'], 1), m['via'] == 'the agency site')
+    # DOC-11: two official maps of the same age -> the managing agency's own host first, the other as 'also'
+    base = lambda m: (m.get('names_park') is not False, m['kind'] != 'region overview', m['via'] == 'the agency site', kind_rank.get(m['kind'], 1))
     best = sorted(ms, key=base, reverse=True)
     prim = best[0]
     for m in best[1:]:
         y1, y2 = year_of(prim.get('date')), year_of(m.get('date'))
         if y1 and y2 and y2 - y1 > 3 and m.get('names_park') is not False and m['kind'] != 'region overview':
             prim = dict(m, why_primary=f'newer map ({y2}) beats the older {prim["kind"]} ({y1}): more than 3 years apart'); break
-    if prim['kind'] == 'region overview': prim = dict(prim, why_primary='only a region overview map was found')
-    if re.search(r'campground|camping', prim['url'] + ' ' + str(prim.get('how')), re.I): prim = dict(prim, kind_note='campground map (nothing better found)')
+    if prim['kind'] == 'region overview': prim = dict(prim, why_primary='only a region overview map was found', card_note='Overview map: no map of this park alone was found.')   # DOC-5
+    if re.search(r'campground|camping', prim['url'] + ' ' + str(prim.get('how')), re.I): prim = dict(prim, kind_note='campground map (nothing better found)', card_note='Campground map: the agency has no park map.')   # DOC-3
+    if prim.get('covers', 0) >= 2: prim = dict(prim, kind_note=f"combined map: covers {prim['covers']} units")   # DOC-4
+    if THIRD.search(host_of(prim['url'])): prim = dict(prim, kind_note=(prim.get('kind_note', '') + '; ' if prim.get('kind_note') else '') + f"third-party app host ({base_host(host_of(prim['url']))}), linked by the agency")   # DOC-10
+    y = year_of(prim.get('date'))
+    if not y: prim = dict(prim, date_label='date unknown')   # DOC-6: never called current
+    elif int(TODAY[:4]) - y > 5: prim = dict(prim, date_label=f'{y}: check it is still current')   # DOC-7: shown, never hidden
+    else: prim = dict(prim, date_label=str(y))
     return prim, [m for m in best if m is not prim and m['url'] != prim['url']]
 
 
 def one_park(ref, S, lists, area):
+    CUR.clear(); CUR.update({'type': S.get('type', ''), 'name': S.get('name', '')})
     rec = {'n': S['name'], 't': S['type'], 'page': S['page'], 'checked': TODAY, 'map': None, 'rules': None, 'agency': S['agency'], 'runs': [], 'handover': [], 'notes': []}
     texts = []
     agency_host = host_of(S['page']) if S['page'] else (host_of(S['maps'][0]) if S['maps'] else '')
@@ -574,7 +599,7 @@ def one_park(ref, S, lists, area):
         if late(): break
         r = check_url(u, name=S['name'])
         m = {'url': r['final'] or u, 'status': r['status'], 'kind': r['kind'], 'date': r['date'], 'date_how': r['date_how'], 'how': how,
-             'posted': r.get('posted', ''), 'posted_how': r.get('posted_how', ''), 'names_park': r.get('names_park'), 'checked': TODAY}
+             'posted': r.get('posted', ''), 'posted_how': r.get('posted_how', ''), 'names_park': r.get('names_park'), 'checked': TODAY, 'covers': r.get('covers', 0)}
         if r.get('copyright'): m['copyright'] = r['copyright']
         if r['status'] == 'ok' and r['kind'] == 'page':
             texts.append(r.get('text', ''))
@@ -588,7 +613,7 @@ def one_park(ref, S, lists, area):
                 r2 = check_url(pdfs[0][1], name=S['name'])
                 if r2['status'] == 'ok':
                     m.update({'url': r2['final'], 'kind': r2['kind'], 'date': r2['date'], 'date_how': r2['date_how'], 'how': how + f" -> the page's '{pdfs[0][2]}' file",
-                              'page': r['final'], 'posted': r2.get('posted', ''), 'posted_how': r2.get('posted_how', ''), 'names_park': r2.get('names_park')})
+                              'page': r['final'], 'posted': r2.get('posted', ''), 'posted_how': r2.get('posted_how', ''), 'names_park': r2.get('names_park'), 'covers': r2.get('covers', 0)})
         m['via'] = via_of(m['url'], agency_host, linked, how)
         tried.append(m)
         if r['status'] in ('HTTP 403', 'HTTP 406') or (r['status'] == 'ok' and r.get('shell')): rec['needs_browser'] = f'the map link refused a plain reader ({r["status"]})'
@@ -620,6 +645,8 @@ def one_park(ref, S, lists, area):
         # Oct 28 (HQ 4, Brandon OK): a POTA-numbered park STAYS on the card; the card warns and names the source
         rec['card_note'] = f'May now be run by {new}: check before you go.'
         rec['handover_src'] = S['page'] or ((rec.get('map') or {}).get('page') or '')
+    mn = (rec.get('map') or {}).get('card_note')   # DOC-3 / DOC-5: the map's own note on the card too
+    if mn: rec['card_note'] = (rec['card_note'] + ' ' if rec.get('card_note') else '') + mn
     if S['ky_answer']: rec['ky_answer'] = S['ky_answer']
     return rec
 
@@ -706,6 +733,7 @@ def run_area(area, state, web, lists, ky):
     D = load(f, {'area': area, 'about': 'Official map + rules page + who runs it, per park (documents bot). Nothing here reaches a card until chat 8 grades it.', 'parks': {}})
     parks = park_list(area)
     if not parks: notice(f'{area}: no park list (data/parkinfo)'); state['areas'][area] = {'status': 'done', 'parks': 0, 'updated': TODAY}; return
+    AREA_NAMES.clear(); AREA_NAMES.update({core(v[0] if isinstance(v, (list, tuple)) else (v.get('name', '') if isinstance(v, dict) else v)): k for k, v in parks.items()})
     done = 0; fresh = 0
     for ref in sorted(parks):
         if late(): break
@@ -797,7 +825,7 @@ def review(state):
         for ref in pick:
             p = D['parks'][ref]; m = p.get('map') or {}
             ru = (p.get('rules') or {})
-            L.append(f"| {ref} | {p.get('n','')[:40]} | {m.get('url','')[:90]} | {m.get('kind','')}{' ✓name' if m.get('names_park') else ''} · {str(m.get('via',''))[:40]} | {m.get('date') or '—'} ({m.get('date_how','')[:45]}) · posted {m.get('posted') or '—'} | {(ru.get('url') or '')[:70] + (' ✓' if ru.get('status') == 'ok' else ' ✗') if ru else ''} | {(p.get('card_note') or '; '.join((p.get('runs') or [])[:1]))[:90]} |")
+            L.append(f"| {ref} | {p.get('n','')[:40]} | {m.get('url','')[:90]} | {m.get('kind','')}{' ✓name' if m.get('names_park') else ''}{(' · ' + m['kind_note'][:40]) if m.get('kind_note') else ''} · {str(m.get('via',''))[:40]} | {m.get('date_label') or m.get('date') or '—'} ({m.get('date_how','')[:45]}) · posted {m.get('posted') or '—'} | {(ru.get('url') or '')[:70] + (' ✓' if ru.get('status') == 'ok' else ' ✗') if ru else ''} | {(p.get('card_note') or '; '.join((p.get('runs') or [])[:1]))[:90]} |")
             n += 1
         hand = [(ref, p) for ref, p in D['parks'].items() if p.get('handover')]
         if hand:
