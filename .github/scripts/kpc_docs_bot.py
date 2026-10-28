@@ -36,6 +36,7 @@ UA = 'KPC park documents (https://kentuckyportableclub.github.io/KPC-Links/; ham
 GAP = 2.0
 STRIKES_OUT = 3
 REFRESH_DAYS = 30
+VER = 2   # Oct 28 (HQ + chat 8's breaks): records made by an older rule set are read again
 PDF_FIRST = 400_000
 PDF_MAX = 2_000_000
 TODAY = time.strftime('%Y-%m-%d')
@@ -67,8 +68,8 @@ MONTHS = 'january|february|march|april|may|june|july|august|september|october|no
 PRINTED = [
     (re.compile(r'(?:date published|published|publication date|revised|revision|updated|last updated|updated on|map date|date of map|printed|produced|prepared|effective|current as of|as of|issued)\s*[:\-]?\s*((?:' + MONTHS + r')\.?\s+\d{1,2},?\s+(?:19|20)\d\d|\d{1,2}/\d{1,2}/(?:19|20)\d\d|(?:19|20)\d\d-\d\d-\d\d|(?:' + MONTHS + r')\.?\s+(?:19|20)\d\d|\d{1,2}/(?:19|20)\d\d|(?:19|20)\d\d)', re.I), 'printed on the map'),
     (re.compile(r'\b((?:' + MONTHS + r')\.?\s+(?:19|20)\d\d)\b', re.I), 'a month + year printed on the map'),
-    (re.compile(r'(?:©|\(c\)|copyright)\s*((?:19|20)\d\d)', re.I), 'a copyright year on the map'),
 ]
+COPYR = re.compile(r'(?:©|\(c\)|copyright)\s*((?:19|20)\d\d)', re.I)   # Oct 28 (chat 8 B4): a base-map / template year, NEVER the map's date
 AGENCY = [  # host -> who runs it (families first, then named agencies; states fall back to the host)
     (r'nps\.gov$', 'National Park Service', 'nps'), (r'fws\.gov$', 'U.S. Fish and Wildlife Service', 'fws'),
     (r'fs\.usda\.gov$', 'U.S. Forest Service', 'usfs'), (r'blm\.gov$', 'Bureau of Land Management', 'blm'),
@@ -206,6 +207,7 @@ def map_score(url, text, agency_host):
 def rules_score(url, text):
     t = (text or '').lower(); u = url.lower()
     if not (RULEWORD.search(t) or RULEWORD.search(u)): return -9
+    if re.search(r'permit', t + u) and not re.search(r'rules?|regulation', t + u): return -9   # a permit SHOP is not the rules (chat 8 B13)
     if NOTMAP.search(u): return -9
     s = 1
     if re.search(r'rules|regulations|compendium|laws', t): s += 2
@@ -275,32 +277,39 @@ def date_from_text(txt):
             if best is None or key > best[0]: best = (key, d, how)
     if best: return best[1], best[2]
     m = re.search(r'Document date ((?:19|20)\d\d-\d\d-\d\d)', txt)
-    if m and plausible(m.group(1)[:4]): return m.group(1), "the file's own date stamp (PDF info)"
+    if m and plausible(m.group(1)[:4]): return m.group(1), "the PDF file's own stamp (may be the print date, weaker than a printed date)"
     return '', ''
 
 
 def date_from_url(u):
-    p = urllib.parse.urlparse(u); path = urllib.parse.unquote(p.path); q = p.query
+    """Oct 28 (chat 8 B5/B7, HQ): what the ADDRESS says is when the file was POSTED, never the map's own date. Returns
+    (posted, how). Version / cache tails (sfvrsn, rev, v, hash) are not dates at all and are ignored."""
+    p = urllib.parse.urlparse(u); path = urllib.parse.unquote(p.path)
     m = re.search(r'/((?:19|20)\d\d)[-/_](0[1-9]|1[0-2])(?:/|_|-|$)', path)
-    if m and plausible(m.group(1)): return f'{m.group(1)}-{m.group(2)}', 'the upload folder in the address (YYYY-MM)'
+    if m and plausible(m.group(1)): return f'{m.group(1)}-{m.group(2)}', 'posted: the upload folder in the address'
     m = re.search(r'(?:^|[^0-9])((?:19|20)\d\d)[-_]?(0[1-9]|1[0-2])?(?:[-_]?(?:' + MONTHS + r'))?(?:pdf|\.pdf|[-_]|$)', path.rsplit('/', 1)[-1], re.I)
-    if m and plausible(m.group(1)): return m.group(1) + (f'-{m.group(2)}' if m.group(2) else ''), "a year in the file's name"
+    if m and plausible(m.group(1)): return m.group(1) + (f'-{m.group(2)}' if m.group(2) else ''), "a year in the file's name (an edition hint, not a printed date)"
     m = re.search(r'/((?:19|20)\d\d)/', path)
-    if m and plausible(m.group(1)): return m.group(1), 'the upload folder in the address (year)'
-    m = re.search(r'(?:^|[?&])(?:v|ver|version|rev|sfvrsn|t|ts)=([^&]{1,20})', q, re.I)
-    if m: return m.group(1), "the file's version tail (not a date)"
+    if m and plausible(m.group(1)): return m.group(1), 'posted: the upload folder in the address (year)'
     return '', ''
 
 
-def check_url(u, want_text=True):
-    """Open an address the polite way. Returns a dict: status, kind (pdf / page / image / arcgis / other), date, date_how, text."""
-    r = {'url': u, 'status': '', 'kind': '', 'date': '', 'date_how': '', 'final': u}
+SOFT404 = re.compile(r'page not found|404 error|error 404|the page you (?:requested|are looking for)|no longer available|has been (?:moved|removed)|sign in to continue|log ?in required|access denied', re.I)
+OVERVIEW = re.compile(r'\bregion(?:al)?\b.*\bmap\b|\boverview map\b|\bstatewide\b|\bparks and forests\b|\blocator map\b|\ball (?:state )?parks\b|\bdistrict map\b', re.I)
+
+
+def check_url(u, want_text=True, name=''):
+    """Open an address the polite way. Returns a dict: status, kind (pdf / page / image / arcgis / region overview),
+    date (a PRINTED date only, else None) + date_how, posted (what the address / server says), names_park, text."""
+    r = {'url': u, 'status': '', 'kind': '', 'date': None, 'date_how': '', 'final': u, 'posted': '', 'checked': TODAY}
     looks_pdf = u.lower().split('?')[0].endswith('.pdf')
     st, hd, body, final = get(u, rng=(0, PDF_FIRST - 1) if looks_pdf else None)
     r['status'] = 'ok' if st in (200, 206) else ('rest' if st == 'rest' else 'robots' if st == 'robots' else f'HTTP {st}' if isinstance(st, int) else str(st))
     r['final'] = final
     if r['status'] != 'ok': return r
     ct = (hd.get('content-type') or '').lower()
+    if looks_pdf and body[:5] != b'%PDF-' and 'application/pdf' not in ct:
+        r['status'] = 'opened, wrong thing (a .pdf address that is not a PDF: a soft 404 or a login page)'; return r
     if body[:5] == b'%PDF-' or 'application/pdf' in ct:
         r['kind'] = 'pdf'
         if not looks_pdf and len(body) >= 3_000_000: body = body[:PDF_MAX]
@@ -310,6 +319,10 @@ def check_url(u, want_text=True):
             if st2 in (200, 206): txt = pdf_first_page_text(body2)
         d, how = date_from_text(txt)
         if d: r['date'], r['date_how'] = d, how
+        cy = COPYR.search(txt)
+        if cy: r['copyright'] = cy.group(1)   # kept apart: a template / base-map year, never the map date
+        r['names_park'] = names_park(name, txt) if name else None
+        if OVERVIEW.search(txt[:3000]) and not r['names_park']: r['kind'] = 'region overview'
     elif ct.startswith('image/') or re.search(r'\.(jpe?g|png|gif)(\?|$)', u, re.I):
         r['kind'] = 'image'
     elif re.search(r'/rest/services/|mapserver|featureserver', u, re.I):
@@ -319,17 +332,27 @@ def check_url(u, want_text=True):
         html = body.decode('utf-8', 'replace')
         txt = page_text(html)
         r['text'] = txt[:20000]; r['links'] = links_in(html, final)[:400]
+        if len(txt) < 4000 and SOFT404.search(txt[:1500]):
+            r['status'] = 'opened, wrong thing (the page says not found / sign in)'; return r
         m = re.search(r'(?:last updated|page last updated|updated|last modified|date modified)\s*[:\-]?\s*((?:' + MONTHS + r')\.?\s+\d{1,2},?\s+(?:19|20)\d\d|(?:19|20)\d\d-\d\d-\d\d|\d{1,2}/\d{1,2}/(?:19|20)\d\d)', txt, re.I)
-        if m and plausible(re.search(r'(?:19|20)\d\d', m.group(1)).group()): r['date'], r['date_how'] = m.group(1), "the page's 'last updated' line"
+        if m and plausible(re.search(r'(?:19|20)\d\d', m.group(1)).group()): r['posted'], r['posted_how'] = m.group(1), "the page's 'last updated' line"
         if len(txt) < 300 and re.search(r'enable javascript|loading|<app-root|ng-app|__NEXT_DATA__|data-reactroot', html, re.I): r['shell'] = True
-    if not r['date']:
+    if not r['posted']:
         d, how = date_from_url(final if final else u)
-        if d: r['date'], r['date_how'] = d, how
-    if not r['date'] and hd.get('last-modified') and r['kind'] in ('pdf', 'image'):
+        if d: r['posted'], r['posted_how'] = d, how
+    if not r['posted'] and hd.get('last-modified') and r['kind'] in ('pdf', 'image', 'region overview'):
         m = re.search(r'(\d{1,2}) ([A-Za-z]{3}) ((?:19|20)\d\d)', hd['last-modified'])
-        if m and plausible(m.group(3)): r['date'], r['date_how'] = f'{m.group(2)} {m.group(1)}, {m.group(3)}', "the server's file date (Last-Modified)"
-    if not r['date']: r['date'], r['date_how'] = TODAY, 'the day we read it (no date on the map or in the address)'
+        if m and plausible(m.group(3)): r['posted'], r['posted_how'] = f'{m.group(2)} {m.group(1)}, {m.group(3)}', "posted: the server's file date"
+    if not r['date']: r['date'], r['date_how'] = None, f'date unknown, checked {TODAY}'   # Oct 28 (HQ 3): never 'the day we read it' as a map date
     return r
+
+
+def names_park(name, txt):
+    """Does the map's first page name this park? (chat 8 B3: a sister park's or a region's map is not this park's map)"""
+    c = core(name); t = low(txt[:8000])
+    if not c: return None
+    w = [x for x in c.split() if len(x) > 2]
+    return bool(w) and sum(1 for x in w if re.search(r'\b' + re.escape(x) + r'\b', t)) >= max(1, len(w) - (1 if len(w) > 2 else 0))
 
 
 # ------------------------------------------------------------------ the lists (read, matched by name; never a guessed file name)
@@ -425,6 +448,57 @@ def rules_for(fam, urls, pg_rules, lists_entry):
     return {'url': cands[0][0] if cands else '', 'how': cands[0][1] if cands else '', 'status': 'not found' if not cands else 'did not open'}
 
 
+GOVFAM = [  # Oct 28 (HQ 1, chat 8 A1): hosts of the SAME government as the agency count as official (tourism + asset hosts)
+    (r'(^|\.)ky\.gov$|kentuckytourism\.com$', 'Kentucky'), (r'(^|\.)ohio\.gov$|ohiodnr\.gov$', 'Ohio'), (r'(^|\.)nc\.gov$|ncparks\.gov$|ncwildlife\.gov$|ncagr\.gov$|visitnc\.com$', 'North Carolina'),
+    (r'(^|\.)mo\.gov$|mostateparks\.com$|visitmo\.com$', 'Missouri'), (r'(^|\.)fl\.gov$|myflorida\.com$|floridastateparks\.org$|myfwc\.com$|fdacs\.gov$|floridadep\.gov$|sjrwmd\.com$|swfwmd\.state\.fl\.us$|sfwmd\.gov$', 'Florida'),
+    (r'(^|\.)virginia\.gov$', 'Virginia'), (r'wvdnr\.gov$|wvstateparks\.com$|(^|\.)wv\.gov$', 'West Virginia'), (r'(^|\.)qld\.gov\.au$', 'Queensland'),
+    (r'parks\.vic\.gov\.au$|(^|\.)vic\.gov\.au$', 'Victoria'), (r'(^|\.)nps\.gov$', 'NPS'), (r'(^|\.)fws\.gov$', 'FWS'), (r'(^|\.)usda\.gov$', 'USDA'),
+    (r'(^|\.)blm\.gov$', 'BLM'), (r'usace\.army\.mil$', 'Army Corps'), (r'(^|\.)canada\.ca$|(^|\.)gc\.ca$', 'Canada'),
+]
+THIRD = re.compile(r'avenza|gaiagps|alltrails|onxmaps|trailforks|issuu|publuu|yumpu|scribd|dropbox|drive\.google|box\.com', re.I)
+
+
+def gov_of(h):
+    h = base_host(h)
+    for pat, g in GOVFAM:
+        if re.search(pat, h): return g
+    m = re.search(r'\.(state\.[a-z]{2}\.us|[a-z]{2}\.gov)$', h)
+    return m.group(1) if m else ''
+
+
+def via_of(url, agency_host, linked, how):
+    """How a map address is official (HQ 1): the agency's own host, a host the agency's page links to, or the same government."""
+    h, a = base_host(host_of(url)), base_host(agency_host or '')
+    if a and h == a: return 'the agency site'
+    if url in linked: return f'third-party host, linked by the agency ({h})' if THIRD.search(h) else f'linked from the agency page ({h})'
+    if a and gov_of(h) and gov_of(h) == gov_of(a): return f'same government ({h})'
+    if str(how).startswith('on file'): return f'on file, checked by a person or the link harvester ({h})'
+    if gov_of(h): return f'government host ({h})'
+    return 'off the government, not linked by the agency'
+
+
+def year_of(d):
+    m = re.search(r'(19|20)\d\d', str(d or ''))
+    return int(m.group()) if m else None
+
+
+def pick_primary(ms):
+    """Oct 28 (HQ 2 + chat 8 A2/B3/B10): the map that NAMES the park beats one that does not; a region overview is never primary
+    while another map exists; when two printed dates are known and more than 3 years apart, the NEWER wins; otherwise the
+    kind order (PDF, image, interactive map, page) and the agency's own host decide. Returns (primary, others)."""
+    kind_rank = {'pdf': 4, 'image': 3, 'arcgis': 2, 'page': 1, 'region overview': 0}
+    base = lambda m: (m.get('names_park') is not False, m['kind'] != 'region overview', kind_rank.get(m['kind'], 1), m['via'] == 'the agency site')
+    best = sorted(ms, key=base, reverse=True)
+    prim = best[0]
+    for m in best[1:]:
+        y1, y2 = year_of(prim.get('date')), year_of(m.get('date'))
+        if y1 and y2 and y2 - y1 > 3 and m.get('names_park') is not False and m['kind'] != 'region overview':
+            prim = dict(m, why_primary=f'newer map ({y2}) beats the older {prim["kind"]} ({y1}): more than 3 years apart'); break
+    if prim['kind'] == 'region overview': prim = dict(prim, why_primary='only a region overview map was found')
+    if re.search(r'campground|camping', prim['url'] + ' ' + str(prim.get('how')), re.I): prim = dict(prim, kind_note='campground map (nothing better found)')
+    return prim, [m for m in best if m is not prim and m['url'] != prim['url']]
+
+
 def one_park(ref, S, lists, area):
     rec = {'n': S['name'], 't': S['type'], 'page': S['page'], 'checked': TODAY, 'map': None, 'rules': None, 'agency': S['agency'], 'runs': [], 'handover': [], 'notes': []}
     texts = []
@@ -452,27 +526,40 @@ def one_park(ref, S, lists, area):
         pm, page_rules = find_on_page(pg, agency_host)
         for s, u, t in pm[:2]:
             if u not in [c[0] for c in cands]: cands.append((u, f"a link on the park's page ('{t}')"))
-    for u, how in cands:
+    linked = {u for u, t in (pg.get('links') or [])} if pg and pg.get('status') == 'ok' else set()
+    tried = []
+    for u, how in cands[:4]:   # Oct 28 (chat 8 A2 / B3): up to 4 candidates are opened, then the PRIMARY is chosen (never just the first)
         if late(): break
-        r = check_url(u)
-        m = {'url': r['final'] or u, 'status': r['status'], 'kind': r['kind'], 'date': r['date'], 'date_how': r['date_how'], 'how': how}
-        if r['status'] == 'ok':
-            if r['kind'] == 'page':
-                texts.append(r.get('text', ''))
-                if r.get('shell'): rec['needs_browser'] = 'the map page is built by script'
-                # a map PAGE that links a PDF: take the PDF as the map, keep the page as its source
-                pm2, pr2 = find_on_page(r, agency_host)
-                page_rules = page_rules or pr2
-                pdfs = [x for x in pm2 if '.pdf' in x[1].lower()]
-                if pdfs and not late():
-                    r2 = check_url(pdfs[0][1])
-                    if r2['status'] == 'ok': m = {'url': r2['final'], 'status': 'ok', 'kind': r2['kind'], 'date': r2['date'], 'date_how': r2['date_how'], 'how': how + f" -> the page's '{pdfs[0][2]}' file", 'page': r['final']}
-            rec['map'] = m; STAT['maps_ok'] += 1
-            if how != cands[0][1] or not S['maps']: STAT['maps_found'] += 1
-            if m['date_how'] and not m['date_how'].startswith('the day we read it'): STAT['dates'] += 1
-            break
-        rec['map'] = rec['map'] or m
+        r = check_url(u, name=S['name'])
+        m = {'url': r['final'] or u, 'status': r['status'], 'kind': r['kind'], 'date': r['date'], 'date_how': r['date_how'], 'how': how,
+             'posted': r.get('posted', ''), 'posted_how': r.get('posted_how', ''), 'names_park': r.get('names_park'), 'checked': TODAY}
+        if r.get('copyright'): m['copyright'] = r['copyright']
+        if r['status'] == 'ok' and r['kind'] == 'page':
+            texts.append(r.get('text', ''))
+            if r.get('shell'): rec['needs_browser'] = 'the map page is built by script'
+            # a map PAGE that links a PDF: take the PDF as the map, keep the page as its source
+            pm2, pr2 = find_on_page(r, agency_host)
+            page_rules = page_rules or pr2
+            linked |= {x[1] for x in pm2}
+            pdfs = [x for x in pm2 if '.pdf' in x[1].lower()]
+            if pdfs and not late():
+                r2 = check_url(pdfs[0][1], name=S['name'])
+                if r2['status'] == 'ok':
+                    m.update({'url': r2['final'], 'kind': r2['kind'], 'date': r2['date'], 'date_how': r2['date_how'], 'how': how + f" -> the page's '{pdfs[0][2]}' file",
+                              'page': r['final'], 'posted': r2.get('posted', ''), 'posted_how': r2.get('posted_how', ''), 'names_park': r2.get('names_park')})
+        m['via'] = via_of(m['url'], agency_host, linked, how)
+        tried.append(m)
         if r['status'] in ('HTTP 403', 'HTTP 406') or (r['status'] == 'ok' and r.get('shell')): rec['needs_browser'] = f'the map link refused a plain reader ({r["status"]})'
+        if r['status'] == 'ok' and m['kind'] == 'pdf' and m.get('names_park') and m['via'] != 'off the government, not linked by the agency': break   # a PDF that names the park: good enough
+    ok = [m for m in tried if m['status'] == 'ok' and m['via'] != 'off the government, not linked by the agency']
+    if ok:
+        prim, also = pick_primary(ok)
+        rec['map'] = prim
+        if also: rec['map_also'] = also[:2]
+        STAT['maps_ok'] += 1
+        if not str(prim['how']).startswith('on file'): STAT['maps_found'] += 1
+        if prim.get('date'): STAT['dates'] += 1
+    elif tried: rec['map'] = tried[0]
     if rec['map'] is None and not cands: rec['map'] = {'url': '', 'status': 'no map link on file and none on the park page', 'how': ''}
     if rec['map'] and rec['map'].get('status') == 'ok' and base_host(host_of(rec['map']['url'])) in BROWSER_HOSTS and rec['map'].get('kind') == 'page': rec['needs_browser'] = 'map page on the browser list (a download button may hide the file)'
     # 3 the rules page
@@ -483,7 +570,13 @@ def one_park(ref, S, lists, area):
     # 4 who runs it
     hints, hand = who_runs(texts, rec['agency'])
     rec['runs'] = hints; rec['handover'] = hand
-    if hand: STAT['handovers'] = STAT.get('handovers', 0) + 1
+    if hand:
+        STAT['handovers'] = STAT.get('handovers', 0) + 1
+        new = re.sub(r'^.*?(?:to|from) (?:the )?', '', hand[0]).strip(' .')
+        new = re.split(r'\s+(?:in|on|since|effective|as of|during|from)\b|\s+\d', new)[0].strip(' .,') or new
+        # Oct 28 (HQ 4, Brandon OK): a POTA-numbered park STAYS on the card; the card warns and names the source
+        rec['card_note'] = f'May now be run by {new}: check before you go.'
+        rec['handover_src'] = S['page'] or ((rec.get('map') or {}).get('page') or '')
     if S['ky_answer']: rec['ky_answer'] = S['ky_answer']
     return rec
 
@@ -532,7 +625,9 @@ def browser_pass(area, D, parks, budget_s):
                 except Exception: pass  # noqa: BLE001
             if got:
                 r = check_url(got['url'])
-                rec['map'] = {'url': r['final'] or got['url'], 'status': r['status'], 'kind': r['kind'], 'date': r['date'], 'date_how': r['date_how'], 'how': got['how'], 'page': url}
+                rec['map'] = {'url': r['final'] or got['url'], 'status': r['status'], 'kind': r['kind'], 'date': r['date'], 'date_how': r['date_how'], 'how': got['how'], 'page': url,
+                              'posted': r.get('posted', ''), 'posted_how': r.get('posted_how', ''), 'checked': TODAY, 'via': via_of(r['final'] or got['url'], agency_host, {got['url']}, got['how'])}
+                r = dict(r, final=r['final'] or got['url'])
                 if r['status'] == 'ok': STAT['maps_ok'] += 1; STAT['maps_found'] += 1
             if (not rec.get('rules') or rec['rules'].get('status') != 'ok') and pr:
                 st, _, _, final = get(pr[0][1])
@@ -572,10 +667,10 @@ def run_area(area, state, web, lists, ky):
     for ref in sorted(parks):
         if late(): break
         old = D['parks'].get(ref)
-        if old and old.get('checked', '') >= time.strftime('%Y-%m-%d', time.gmtime(time.time() - REFRESH_DAYS * 86400)):
+        if old and old.get('ver', 1) >= VER and old.get('checked', '') >= time.strftime('%Y-%m-%d', time.gmtime(time.time() - REFRESH_DAYS * 86400)):
             fresh += 1; STAT['skipped_fresh'] += 1; continue
         S = seeds(ref, parks, web, ky if area == 'US-KY' else {})
-        try: D['parks'][ref] = one_park(ref, S, lists, area)
+        try: D['parks'][ref] = one_park(ref, S, lists, area); D['parks'][ref]['ver'] = VER
         except Exception as e:  # noqa: BLE001
             D['parks'][ref] = {'n': S['name'], 'checked': TODAY, 'map': {'url': '', 'status': 'bot error: ' + str(e)[:80]}, 'rules': None, 'notes': []}
             STAT['errors'] += 1
@@ -595,7 +690,7 @@ def ky_finder_check(D, parks, ky, web):
     page alone (seed hidden)? Written into the file as 'finder_check' for chat 8."""
     n = int(os.environ.get('SAMPLE') or 25)
     refs = [r for r in sorted(parks) if (ky.get(r) or {}).get('off') and (parks[r][1] or '').startswith('http') and 'pota.app' not in parks[r][1]][:n]
-    out = {'sample': len(refs), 'same': 0, 'other_map': 0, 'none': 0, 'rows': []}
+    out = {'sample': len(refs), 'same': 0, 'other_map': 0, 'other_map (does not name the park)': 0, 'none': 0, 'rows': [], 'rules': f'v{VER}'}
     norm = lambda u: re.sub(r'^https?://(www\.)?', '', (u or '').lower()).split('?')[0].rstrip('/')
     for r in refs:
         if late(): break
@@ -604,6 +699,7 @@ def ky_finder_check(D, parks, ky, web):
         found = (rec.get('map') or {}).get('url') or ''
         want = ky[r]['off']
         k = 'same' if found and norm(found) == norm(want) else 'other_map' if found and (rec['map'].get('status') == 'ok') else 'none'
+        if k == 'other_map' and rec['map'].get('names_park') is False: k = 'other_map (does not name the park)'
         out[k] += 1
         out['rows'].append({'ref': r, 'n': parks[r][0], 'answer': want, 'bot': found, 'verdict': k})
     D['finder_check'] = out
@@ -612,17 +708,18 @@ def ky_finder_check(D, parks, ky, web):
 
 def counts(D):
     P = D['parks'].values()
-    c = {'parks': len(D['parks']), 'map ok': 0, 'map found by the bot': 0, 'date on the map': 0, 'date from the address': 0, 'date = read day': 0, 'no map': 0, 'rules ok': 0,
-         'needs browser': 0, 'handover hints': 0, 'runs hints': 0, 'host resting / robots': 0}
+    c = {'parks': len(D['parks']), 'map ok': 0, 'map found by the bot': 0, 'date on the map': 0, 'posted date only': 0, 'date unknown': 0, 'no map': 0, 'rules ok': 0,
+         'needs browser': 0, 'handover hints': 0, 'runs hints': 0, 'host resting / robots': 0, 'map names the park': 0, 'region overview only': 0}
     for p in P:
         m = p.get('map') or {}
         if m.get('status') == 'ok':
             c['map ok'] += 1
             if not str(m.get('how', '')).startswith('on file'): c['map found by the bot'] += 1
-            dh = m.get('date_how', '')
-            if dh.startswith('the day we read it'): c['date = read day'] += 1
-            elif 'printed' in dh or 'copyright' in dh or 'month + year' in dh or 'last updated' in dh or 'own date stamp' in dh: c['date on the map'] += 1
-            else: c['date from the address'] += 1   # upload folder, file name, version tail, the server's file date
+            if m.get('date'): c['date on the map'] += 1          # printed on the map, or the PDF's own stamp (labelled weaker)
+            elif m.get('posted'): c['posted date only'] += 1     # the upload folder / file name / server date: when it was POSTED
+            else: c['date unknown'] += 1
+            if m.get('names_park'): c['map names the park'] += 1
+            if m.get('kind') == 'region overview': c['region overview only'] += 1
         elif m.get('status') in ('rest', 'robots'): c['host resting / robots'] += 1
         else: c['no map'] += 1
         if (p.get('rules') or {}).get('status') == 'ok': c['rules ok'] += 1
@@ -634,28 +731,29 @@ def counts(D):
 
 def review(state):
     L = ['# Official documents bot: review list (hidden; for chat 8)', f'Updated {TODAY}. One file per area in data/docs/<area>.json: per park the official MAP (link, kind, date + how the date was found), the RULES page (link + how), who runs it (hints from the page) and HANDOVER hints. Nothing here reaches a card until chat 8 grades a sample and Brandon says GO.', '',
-         '| area | parks | map ok | found by the bot | date on the map | date from the address | read day only | no map | rules ok | needs browser | handover hints |', '|---|---|---|---|---|---|---|---|---|---|---|']
+         'Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp, labelled weaker); **posted** = when the file was put online (upload folder, file name, server date): never called the map date; **date unknown** = neither (the card says \'date unknown, checked <day>\'). A © year and version tails (sfvrsn) are never dates.', '',
+         '| area | parks | map ok | found by the bot | names the park | date on the map | posted only | date unknown | no map | rules ok | needs browser | handover notes |', '|---|---|---|---|---|---|---|---|---|---|---|---|']
     for area in QUEUE:
         f = OUT / f'{area}.json'
         if not f.exists(): continue
         D = load(f, {}); c = D.get('counts') or counts(D)
-        L.append(f"| {area} | {c['parks']} | {c['map ok']} | {c['map found by the bot']} | {c['date on the map']} | {c['date from the address']} | {c['date = read day']} | {c['no map']} | {c['rules ok']} | {c['needs browser']} | {c['handover hints']} |")
+        L.append(f"| {area} | {c['parks']} | {c['map ok']} | {c['map found by the bot']} | {c.get('map names the park', 0)} | {c['date on the map']} | {c.get('posted date only', 0)} | {c.get('date unknown', 0)} | {c['no map']} | {c['rules ok']} | {c['needs browser']} | {c['handover hints']} |")
     for area in QUEUE:
         f = OUT / f'{area}.json'
         if not f.exists(): continue
         D = load(f, {})
-        L += ['', f'## {area} sample (first 12 parks with a map)', '| ref | park | map | kind | date (how) | rules | runs / handover |', '|---|---|---|---|---|---|---|']
+        L += ['', f'## {area} sample (first 12 parks with a map)', '| ref | park | map | kind · via | date (how) · posted | rules | runs / card note |', '|---|---|---|---|---|---|---|']
         n = 0
         for ref, p in sorted(D['parks'].items()):
             m = p.get('map') or {}
             if m.get('status') != 'ok': continue
             ru = (p.get('rules') or {})
-            L.append(f"| {ref} | {p.get('n','')[:40]} | {m.get('url','')[:90]} | {m.get('kind','')} | {m.get('date','')} ({m.get('date_how','')[:45]}) | {(ru.get('url') or '')[:70] + (' ✓' if ru.get('status') == 'ok' else ' ✗') if ru else ''} | {'; '.join((p.get('runs') or [])[:1] + (p.get('handover') or [])[:1])[:90]} |")
+            L.append(f"| {ref} | {p.get('n','')[:40]} | {m.get('url','')[:90]} | {m.get('kind','')}{' ✓name' if m.get('names_park') else ''} · {str(m.get('via',''))[:40]} | {m.get('date') or '—'} ({m.get('date_how','')[:45]}) · posted {m.get('posted') or '—'} | {(ru.get('url') or '')[:70] + (' ✓' if ru.get('status') == 'ok' else ' ✗') if ru else ''} | {(p.get('card_note') or '; '.join((p.get('runs') or [])[:1]))[:90]} |")
             n += 1
             if n >= 12: break
         hand = [(ref, p) for ref, p in D['parks'].items() if p.get('handover')]
         if hand:
-            L += ['', f'### {area} HANDOVER hints ({len(hand)}): a person checks each one', *[f"- {ref} {p.get('n','')}: {' / '.join(p['handover'])}" for ref, p in hand[:30]]]
+            L += ['', f'### {area} HANDOVER notes ({len(hand)}): the park STAYS on the card with the note (HQ Oct 28); a person checks the source', *[f"- {ref} {p.get('n','')}: {' / '.join(p['handover'])} → card: '{p.get('card_note','')}' (source {p.get('handover_src','')})" for ref, p in hand[:30]]]
         nomap = [(ref, p) for ref, p in D['parks'].items() if (p.get('map') or {}).get('status') != 'ok']
         if nomap:
             L += ['', f'### {area} no map yet ({len(nomap)}): the reason', *[f"- {ref} {p.get('n','')[:45]}: {(p.get('map') or {}).get('status','')}" + (f" (needs browser: {p['needs_browser']})" if p.get('needs_browser') else '') for ref, p in nomap[:40]]]
@@ -680,6 +778,9 @@ def main():
     web = (load('data/parkinfo-web.json', {}) or load(LINKS / 'data/parkinfo-web.json', {})).get('parks') or {}
     lists = load(OUT / 'lists.json', {}).get('areas') or {}
     ky = ky_answers()
+    if os.environ.get('FINDER_ONLY') == '1':   # Oct 28 (HQ): rerun ONLY Kentucky's finder check with the fixed rules
+        f = OUT / 'US-KY.json'; D = load(f, {'area': 'US-KY', 'parks': {}})
+        ky_finder_check(D, park_list('US-KY'), ky, web); save(f, D); review(state); return
     for area in areas:
         if late(): break
         run_area(area, state, web, lists, ky)
