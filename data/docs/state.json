@@ -90,6 +90,20 @@
    "checked": 219,
    "left": 0,
    "updated": "2026-10-28"
+  },
+  "US-WI": {
+   "status": "done",
+   "parks": 348,
+   "checked": 348,
+   "left": 0,
+   "updated": "2026-10-28"
+  },
+  "US-MN": {
+   "status": "partial",
+   "parks": 298,
+   "checked": 294,
+   "left": 4,
+   "updated": "2026-10-28"
   }
  },
  "hosts": {
@@ -105,7 +119,9 @@
   "www.in.gov": 1793292908.0953734,
   "in.gov": 1793293058.6274643,
   "www.jekyllisland.com": 1793302402.685001,
-  "www.sos.mo.gov": 1793310223.15825
+  "www.sos.mo.gov": 1793310223.15825,
+  "map.co.door.wi.us": 1793314121.8248734,
+  "mobile-maps-files.dnr.state.mn.us": 1793316407.4270828
  },
  "last": {
   "when": "2026-10-28",
@@ -120,17 +136,17 @@
    "US-NY"
   ],
   "stat": {
-   "requests": 1486,
-   "parks": 477,
-   "maps_ok": 427,
-   "maps_found": 417,
-   "dates": 208,
-   "rules": 60,
-   "browser": 0,
-   "robots": 0,
-   "strikes": 3,
+   "requests": 1773,
+   "parks": 720,
+   "maps_ok": 408,
+   "maps_found": 392,
+   "dates": 34,
+   "rules": 337,
+   "browser": 16,
+   "robots": 274,
+   "strikes": 6,
    "errors": 3,
-   "skipped_fresh": 6
+   "skipped_fresh": 483
   }
  }
 }

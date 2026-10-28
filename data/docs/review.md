@@ -17,7 +17,9 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-MS | 155 | 33 | 26 | 20 | 0 | 19 | 14 | 122 | 44 | 92 | 0 |
 | US-IN | 229 | 22 | 19 | 19 | 1 | 7 | 14 | 207 | 11 | 0 | 0 |
 | US-IL | 219 | 87 | 82 | 18 | 4 | 69 | 14 | 132 | 166 | 0 | 0 |
-| US-MO | 561 | 510 | 497 | 501 | 241 | 199 | 70 | 51 | 28 | 11 | 0 |
+| US-MO | 561 | 514 | 503 | 498 | 241 | 200 | 73 | 47 | 27 | 1 | 0 |
+| US-WI | 348 | 294 | 287 | 113 | 0 | 4 | 290 | 53 | 43 | 0 | 0 |
+| US-MN | 294 | 26 | 18 | 26 | 1 | 7 | 18 | 268 | 29 | 3 | 0 |
 
 ## US-KY sample (random 12 per agency group, seed 28)
 | ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
@@ -1113,18 +1115,18 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 ## US-MO sample (random 12 per agency group, seed 28)
 | ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
 |---|---|---|---|---|---|---|
+| US-10575 | Walnut Woods State Conservation Area | https://cwd-interactive-maps-mdcgis.hub.arcgis.com/ | page · linked from the agency page (cwd-interac | — (date unknown, checked 2026-10-28) · posted — | https://mdc.mo.gov/discover-nature/places/regulations ✗ |  |
+| US-10576 | Rush Creek State Conservation Area | https://cwd-interactive-maps-mdcgis.hub.arcgis.com/ | page · linked from the agency page (cwd-interac | — (date unknown, checked 2026-10-28) · posted — | https://mdc.mo.gov/discover-nature/places/regulations ✗ |  |
+| US-13258 | Possum Woods State Conservation Area | https://cwd-interactive-maps-mdcgis.hub.arcgis.com/ | page · linked from the agency page (cwd-interac | — (date unknown, checked 2026-10-28) · posted — | https://mdc.mo.gov/discover-nature/places/regulations ✗ |  |
+| US-8511 | White River Balds Natural Area State Con | https://cwd-interactive-maps-mdcgis.hub.arcgis.com/ | page · linked from the agency page (cwd-interac | date unknown (date unknown, checked 2026-10-28) · posted — | https://mdc.mo.gov/discover-nature/places/regulations ✗ |  |
 | US-11056 | Calk Bluff Trail Access State Conservati | https://cwd-interactive-maps-mdcgis.hub.arcgis.com/ | page · linked from the agency page (cwd-interac | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp ✗ |  |
-| US-8511 | White River Balds Natural Area State Con | https://cwd-interactive-maps-mdcgis.hub.arcgis.com/ | page · linked from the agency page (cwd-interac | — (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
 | US-11085 | Mary Lawson State Conservation Area | https://cwd-interactive-maps-mdcgis.hub.arcgis.com/ | page · linked from the agency page (cwd-interac | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp ✗ |  |
-| US-0375 | Clarence Cannon National Wildlife Refuge | https://www.fws.gov/refuge/clarence-cannon/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/clarence-cannon/visit-us/rules-policies ✓ |  |
-| US-0381 | Swan Lake National Wildlife Refuge | https://www.fws.gov/refuge/swan-lake/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/swan-lake/visit-us/rules-policies ✓ |  |
 | US-0377 | Mingo National Wildlife Refuge | https://www.fws.gov/refuge/mingo/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/mingo/visit-us/rules-policies ✓ | managed by the U.S. Fish and Wildlife Service |
+| US-0375 | Clarence Cannon National Wildlife Refuge | https://www.fws.gov/refuge/clarence-cannon/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/clarence-cannon/visit-us/rules-policies ✓ |  |
 | US-0380 | Loess Bluffs National Wildlife Refuge | https://www.fws.gov/refuge/loess-bluffs/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/loess-bluffs/visit-us/rules-policies ✓ |  |
 | US-0374 | Big Muddy National Wildlife Refuge | https://www.fws.gov/refuge/big-muddy/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/big-muddy/visit-us/rules-policies ✓ |  |
+| US-0381 | Swan Lake National Wildlife Refuge | https://www.fws.gov/refuge/swan-lake/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/swan-lake/visit-us/rules-policies ✓ |  |
 | US-0376 | Great River National Wildlife Refuge | https://www.fws.gov/refuge/great-river/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/great-river/visit-us/rules-policies ✓ |  |
-| US-10871 | Pea Ridge State Conservation Area | https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/4711map.pdf | pdf ✓name · combined map: covers 4 units · the agency site | date unknown (date unknown, checked 2026-10-28) · posted Mar 13, 2025 | https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp ✗ |  |
-| US-12659 | Vonaventure Memorial Forest State Wildli | https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/7111map.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted Apr 06, 2026 | https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp ✗ |  |
-| US-10958 | Tywappity Community Lake State Conservat | https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/5708map.pdf | pdf ✓name · the agency site | 2012: check it is still current (file stamp 2012 (older than the posting 2025 ) · posted Feb 21, 2025 | https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp ✗ |  |
 | US-10704 | Clark State Conservation Area | https://mdc.mo.gov/sites/default/files/2022-12/8147map.pdf | pdf ✓name · the agency site | 2022 (printed on the map) · posted 2022-12 | https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp ✗ |  |
 | US-7500 | Saeger Woods State Conservation Area | https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/7915map.pdf | pdf ✓name · combined map: covers 2 units · the agency site | date unknown (date unknown, checked 2026-10-28) · posted Jul 01, 2026 | https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp ✗ |  |
 | US-11042 | Kahrs-Boger State Conservation Area | https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8111map.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted Feb 26, 2025 | https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp ✗ |  |
@@ -1134,44 +1136,44 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-11079 | Wilbur Allen Memorial State Conservation | https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8112map.pdf | pdf ✓name · the agency site | 2019: check it is still current (printed on the map) · posted Mar 06, 2025 | https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp ✗ |  |
 | US-10457 | Rocky Mount Tower Site State Conservatio | https://mdc.mo.gov/sites/default/files/2023-05/4805map_1.pdf | pdf ✓name · the agency site | 2023 (the PDF file's own stamp (may be the print da) · posted 2023-05 |  ✗ |  |
 | US-10582 | Kearn Memorial State Conservation Area | https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8844map.pdf | pdf ✓name · combined map: covers 4 units · the agency site | 2026 (printed on the map) · posted Jul 20, 2026 | https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp ✗ |  |
-| US-1770 | Lewis and Clark State Park | https://mostateparks.com/media/pdf/lewis-and-clark-state-park-map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/55066/rules-and-regulations ✗ |  |
-| US-1764 | Johnson's Shut-Ins State Park | https://mostateparks.com/media/pdf/johnsons-shut-ins-state-park-map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/pets ✓ |  |
-| US-1789 | Thousand Hills State Park | https://mostateparks.com/media/pdf/thousand-hills-state-park-map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/55066/rules-and-regulations ✗ |  |
-| US-3339 | Battle of Lexington State Historic Site | https://mostateparks.com/basic-page/locator-map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/55066/rules-and-regulations ✗ |  |
+| US-13160 | John Baumgardt Memorial State Conservati | https://mdc.mo.gov/sites/default/files/2024-05/202006map_0.pdf | pdf ✓name · the agency site | 2024 (printed on the map) · posted 2024-05 | https://mdc.mo.gov/discover-nature/places/regulations ✗ |  |
+| US-11368 | Catawissa State Conservation Area | https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/7853map.pdf | pdf ✓name · combined map: covers 2 units · the agency site | date unknown (date unknown, checked 2026-10-28) · posted Feb 21, 2025 | https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp ✗ |  |
+| US-7864 | Paint Brush Prairie State Conservation A | https://mdc.mo.gov/sites/default/files/2024-10/7832map_0.pdf | pdf ✓name · combined map: covers 2 units · the agency site | 2026 (printed on the map) · posted 2024-10 | https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp ✗ |  |
+| US-1796 | Weston Bend State Park | https://mostateparks.com/media/pdf/weston-bend-state-park-map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/55066/rules-and-regulations ✗ |  |
 | US-1752 | Crowder State Park | https://mostateparks.com/media/pdf/crowder-state-park-map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/55066/rules-and-regulations ✗ |  |
 | US-1755 | Don Robinson State Park | https://mostateparks.com/media/pdf/don-robinson-state-park-map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/55066/rules-and-regulations ✗ |  |
 | US-1776 | Onondaga Cave State Park | https://mostateparks.com/media/pdf/onondaga-cave-state-park-map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/55066/rules-and-regulations ✗ |  |
 | US-1777 | Pershing State Park | https://mostateparks.com/media/pdf/pershing-state-park-map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/55066/rules-and-regulations ✗ |  |
-| US-3358 | Missouri Mines State Historic Site | https://mostateparks.com/basic-page/locator-map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/55066/rules-and-regulations ✗ |  |
-| US-1791 | Van Meter State Park | https://mostateparks.com/media/pdf/annie-and-able-van-meter-state-park-map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/55066/rules-and-regulations ✗ |  |
-| US-1786 | Stockton State Park | https://mostateparks.com/media/pdf/stockton-state-park-map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/55066/rules-and-regulations ✗ |  |
+| US-1788 | Taum Sauk Mountain State Park | https://mostateparks.com/media/pdf/taum-sauk-mountain-state-park-map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/55066/rules-and-regulations ✗ |  |
+| US-1790 | Trail of Tears State Park | https://mostateparks.com/media/pdf/trail-tears-state-park-map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/55066/rules-and-regulations ✗ |  |
+| US-1786 | Stockton State Park | https://mostateparks.com/basic-page/locator-map | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/55066/rules-and-regulations ✗ |  |
 | US-1761 | Ha Ha Tonka State Park | https://mostateparks.com/media/pdf/ha-ha-tonka-state-park-map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/ha-ha-tonka-state-park/ha-ha-tonka-backc ✓ |  |
-| US-4578 | Pony Express National Historic Trail | https://www.nps.gov/poex/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted August 28, 2026 | https://www.nps.gov/poex/learn/management/lawsandpolicies.htm ✓ |  |
-| US-0936 | George Washington Carver National Monume | https://www.nps.gov/gwca/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted September 19, 2024 | https://www.nps.gov/gwca/learn/management/lawsandpolicies.htm ✓ |  |
+| US-1783 | Route 66 State Park | https://mostateparks.com/media/pdf/route-66-state-park-map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/55066/rules-and-regulations ✗ |  |
+| US-1758 | Finger Lakes State Park | https://mostateparks.com/media/pdf/finger-lakes-state-park-map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/finger-lakes-state-park/road-riding-rule ✓ |  |
+| US-1787 | Table Rock State Park | https://mostateparks.com/basic-page/locator-map | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://mostateparks.com/page/55066/rules-and-regulations ✗ |  |
 | US-4572 | Lewis and Clark National Historic Trail | https://www.nps.gov/lecl/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted August 5, 2026 | https://www.nps.gov/lecl/learn/management/lawsandpolicies.htm ✓ |  |
 | US-0870 | Ulysses S. Grant National Historic Site | https://www.nps.gov/ulsg/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted September 10, 2024 | https://www.nps.gov/ulsg/learn/management/lawsandpolicies.htm ✓ |  |
-| US-4579 | Santa Fe National Historic Trail | https://www.nps.gov/safe/planyourvisit/trail-brochures.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted April 23, 2025 | https://www.nps.gov/safe/learn/management/lawsandpolicies.htm ✗ |  |
+| US-0936 | George Washington Carver National Monume | https://www.nps.gov/gwca/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted September 19, 2024 | https://www.nps.gov/gwca/learn/management/lawsandpolicies.htm ✓ |  |
 | US-0710 | Wilson's Creek National Battlefield | https://www.nps.gov/wicr/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted September 6, 2022 | https://www.nps.gov/wicr/learn/management/lawsandpolicies.htm ✓ |  |
-| US-4576 | Oregon National Historic Trail | https://www.nps.gov/oreg/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted August 28, 2026 | https://www.nps.gov/oreg/learn/management/lawsandpolicies.htm ✓ |  |
+| US-11015 | Harry S Truman Home National Historical  | https://www.nps.gov/hstr/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted August 5, 2024 | https://www.nps.gov/hstr/learn/management/lawsandpolicies.htm ✓ |  |
 | US-3791 | Trail of Tears National Historic Trail | https://www.nps.gov/trte/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted August 24, 2026 | https://www.nps.gov/trte/learn/management/lawsandpolicies.htm ✓ |  |
 | US-4566 | California National Historic Trail | https://www.nps.gov/cali/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted August 28, 2026 | https://www.nps.gov/cali/learn/management/lawsandpolicies.htm ✓ |  |
-| US-11015 | Harry S Truman Home National Historical  | https://www.nps.gov/hstr/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted August 5, 2024 | https://www.nps.gov/hstr/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4579 | Santa Fe National Historic Trail | https://www.nps.gov/safe/planyourvisit/trail-brochures.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted April 23, 2025 | https://www.nps.gov/safe/learn/management/lawsandpolicies.htm ✗ |  |
+| US-4576 | Oregon National Historic Trail | https://www.nps.gov/oreg/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted August 28, 2026 | https://www.nps.gov/oreg/learn/management/lawsandpolicies.htm ✓ |  |
+| US-9757 | Butterfield Overland National Historic T | https://www.nps.gov/buov/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted August 28, 2026 | https://www.nps.gov/buov/learn/management/lawsandpolicies.htm ✓ |  |
 | US-0779 | Gateway Arch National Park | https://www.nps.gov/jeff/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted December 4, 2025 | https://www.nps.gov/jeff/learn/management/lawsandpolicies.htm ✓ |  |
-| US-9757 | Butterfield Overland National Historic T | https://www.nps.gov/buov/planyourvisit/maps.htm | page · the agency site | — (date unknown, checked 2026-10-28) · posted August 28, 2026 | https://www.nps.gov/buov/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4578 | Pony Express National Historic Trail | https://www.nps.gov/poex/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted August 28, 2026 | https://www.nps.gov/poex/learn/management/lawsandpolicies.htm ✓ |  |
 | US-7836 | Ozark State Trail | https://ozarktrail.com/maps/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
 | US-4591 | World War I Museum National Memorial | https://www.theworldwar.org/interactive-map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
+| US-4492 | Mark Twain National Forest | https://www.fs.usda.gov/r09/marktwain/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-28) · posted October 8, 2026 | https://www.fs.usda.gov/r09/marktwain ✓ |  |
 
-### US-MO no map yet (51): the reason
+### US-MO no map yet (47): the reason
 - US-0831 Harry S. Truman Family Farm National Historic: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.nps.gov/hstr/planyourvisit/maps.htm)
 - US-10152 Perry Tower Site State Conservation Area: no map link on file and none on the park page
-- US-10575 Walnut Woods State Conservation Area: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
-- US-10576 Rush Creek State Conservation Area: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
 - US-10866 Forest 44 State Conservation Area: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://mdc.mo.gov/media/area/map/9023; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservatio; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://mdc.mo.gov/sites/default/files/2022-01/9023.pdf)
 - US-11225 Blue Slip Tower Site State Conservation Area: no map link on file and none on the park page
 - US-11266 August G Beckmeier State Conservation Area: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://mdc.mo.gov/media/area/map/9724; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://mdc.mo.gov/sites/default/files/2024-08/9724map.pdf; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservatio)
 - US-12084 Weldon Springs National Historical Park: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.energy.gov/lm/articles/busch-weldon-greenspace-map)
-- US-13258 Possum Woods State Conservation Area: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://mdc.mo.gov/media/area/map/8705) (needs browser: the page refused a plain reader (HTTP 403))
-- US-1787 Table Rock State Park: no working map link (tried: HTTP 403 http://www.swl.usace.army.mil/Portals/50/docs/tablerocklake/TABLE%20RO) (needs browser: the map link refused a plain reader (HTTP 403))
 - US-3335 Arrow Rock State Historic Site: no map link on file and none on the park page
 - US-3336 Battle of Athens State Historic Site: no map link on file and none on the park page
 - US-3337 Battle of Carthage State Historic Site: no map link on file and none on the park page
@@ -1202,10 +1204,173 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - US-3366 Towosahgy State Historic Site: no map link on file and none on the park page
 - US-3367 Union Covered Bridge State Historic Site: no map link on file and none on the park page
 - US-3368 Watkins Woolen Mill State Historic Site: no map link on file and none on the park page
+- US-3370 Eleven Point State Park: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://mostateparks.com/basic-page/locator-map; opened, a page that does not name this park (a generic agency page is not its map) https://mostateparks.com/basic-page/locator-map)
+- US-4009 Ozark National Wild and Scenic River: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.nps.gov/ozar/planyourvisit/maps.htm)
+- US-4587 Harry S. Truman Birthplace State Historic Sit: no map link on file and none on the park page
+- US-5713 Jay Nixon State Park: no map link on file and none on the park page
+
+## US-WI sample (random 12 per agency group, seed 28)
+| ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
+|---|---|---|---|---|---|---|
+| US-0600 | Green Bay National Wildlife Refuge | https://www.fws.gov/refuge/green-bay/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/green-bay/visit-us/rules-policies ✓ |  |
+| US-0601 | Horicon National Wildlife Refuge | https://www.fws.gov/refuge/horicon/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/horicon/visit-us/rules-policies ✓ | is managed by the U.S. Fish and Wildlife Service |
+| US-11955 | Genoa National Fish Hatchery | https://www.fws.gov/fish-hatchery/genoa/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/locations/genoa-national-fish-hatchery/rules-and-p ✓ |  |
+| US-12601 | Hackmatack National Wildlife Refuge | https://www.fws.gov/refuge/hackmatack/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/hackmatack/visit-us/rules-policies ✓ |  |
+| US-4236 | Upper Mississippi River National Wildlif | https://www.fws.gov/refuge/upper-mississippi-river/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/upper-mississippi-river/visit-us/rules-poli ✓ |  |
+| US-0606 | Whittlesey Creek National Wildlife Refug | https://www.fws.gov/refuge/whittlesey-creek/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/whittlesey-creek/visit-us/rules-policies ✓ |  |
+| US-0603 | Necedah National Wildlife Refuge | https://www.fws.gov/refuge/necedah/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/necedah/visit-us/rules-policies ✓ |  |
+| US-0604 | St. Croix Wetland Management District | https://www.fws.gov/refuge/st-croix-wetland-management-district/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/st-croix-wetland-management-district/visit- ✓ |  |
+| US-0598 | Fox River National Wildlife Refuge | https://www.fws.gov/refuge/fox-river/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/policies ✓ |  |
+| US-10549 | Iron River National Fish Hatchery | https://www.fws.gov/fish-hatchery/iron-river/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/locations/iron-river-national-fish-hatchery/rules- ✓ |  |
+| US-0605 | Trempealeau National Wildlife Refuge | https://www.fws.gov/refuge/trempealeau/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/trempealeau/visit-us/rules-policies ✓ |  |
+| US-4238 | Ice Age National Scenic Trail | https://www.nps.gov/iatr/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted August 10, 2026 | https://www.nps.gov/iatr/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0764 | Apostle Islands National Lakeshore | https://www.nps.gov/apis/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted June 29, 2026 | https://www.nps.gov/apis/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4239 | North Country Trail National Scenic Trai | https://www.nps.gov/noco/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted September 23, 2025 | https://www.nps.gov/noco/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4533 | Chequamegon-Nicolet National Forest | https://www.fs.usda.gov/r09/chequamegon-nicolet/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-28) · posted April 9, 2026 | https://www.fs.usda.gov/r09/chequamegon-nicolet ✓ |  |
+| US-12213 | Andrew Krakow Memorial State Fish and Wi | https://dnrmaps.wi.gov/H5/?Viewer=Public_Access_Lands&amp;ID=ANDREW+KRAKOW+PUBLIC+ACCESS+A | page · government host (dnrmaps.wi.gov) | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
+| US-10191 | Oden State Wildlife Area | https://dnrmaps.wi.gov/H5/?Viewer=Public_Access_Lands&amp;ID=ODEN%20STATE%20HABITAT%20AREA | page · linked from the agency page (dnrmaps.wi. | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
+| US-4312 | Mud Lake State Wildlife Area | https://dnrmaps.wi.gov/H5/?Viewer=Public_Access_Lands&amp;ID=MUD%20LAKE%20WILDLIFE%20AREA- | page · linked from the agency page (dnrmaps.wi. | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
+| US-13515 | Eagle Lake State Fish and Wildlife Area | https://dnrmaps.wi.gov/H5/?Viewer=Public_Access_Lands&amp;ID=EAGLE+LAKE+FISHERY+AREA | page · government host (dnrmaps.wi.gov) | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
+| US-10643 | Blue River State Fish and Wildlife Area | https://dnrmaps.wi.gov/H5/?Viewer=Public_Access_Lands&amp;ID=REM-BLUE+RIVER | page · government host (dnrmaps.wi.gov) | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
+| US-10650 | Nevin Springs State Fish and Wildlife Ar | https://dnrmaps.wi.gov/H5/?Viewer=Public_Access_Lands&amp;ID=NEVIN+HATCHERY | page · government host (dnrmaps.wi.gov) | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
+| US-4315 | Mullet Creek State Wildlife Area | https://dnrmaps.wi.gov/H5/?Viewer=Public_Access_Lands&amp;ID=MULLET%20CREEK%20WILDLIFE%20A | page · linked from the agency page (dnrmaps.wi. | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
+| US-4286 | French Creek State Wildlife Area | https://dnrmaps.wi.gov/H5/?Viewer=Public_Access_Lands&amp;ID=FRENCH%20CREEK%20WILDLIFE%20A | page · linked from the agency page (dnrmaps.wi. | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
+| US-9870 | Van Loon State Wildlife Area | https://dnrmaps.wi.gov/H5/?Viewer=Public_Access_Lands&amp;ID=VAN%20LOON%20WILDLIFE%20AREA | page · linked from the agency page (dnrmaps.wi. | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
+| US-11929 | Duncan Creek State Fish and Wildlife Are | https://dnrmaps.wi.gov/H5/?Viewer=Public_Access_Lands&amp;ID=DUNCAN+CREEK+FISHERY+AREA | page · government host (dnrmaps.wi.gov) | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
+| US-11976 | Prairie River State Fish and Wildlife Ar | https://dnrmaps.wi.gov/H5/?Viewer=Public_Access_Lands&amp;ID=PRAIRIE+RIVER+FISHERY+AREA | page · government host (dnrmaps.wi.gov) | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
+| US-4339 | Waunakee Marsh State Wildlife Area | https://dnrmaps.wi.gov/H5/?Viewer=Public_Access_Lands&amp;ID=WAUNAKEE%20WILDLIFE%20AREA | page · linked from the agency page (dnrmaps.wi. | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
+| US-5643 | Lower Wisconsin State Riverway State Par | https://dnr.wisconsin.gov/topic/lands/lowerwisconsin/maps | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
+| US-9807 | Newton Blackmour State Trail | https://dnr.wisconsin.gov/topic/parks/newton/maps | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
+| US-9815 | Tomorrow River State Trail | https://dnr.wisconsin.gov/topic/parks/tomorrow/maps | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
+| US-9800 | Hank Aaron State Trail | https://dnr.wisconsin.gov/topic/parks/hankaaron/maps | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
+| US-1473 | Rib Mountain State Park | https://dnr.wisconsin.gov/topic/parks/ribmt/maps | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
+| US-9778 | Devil’s River State Trail | https://dnr.wisconsin.gov/topic/parks/devilsriver/maps | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
+| US-1468 | Newport State Park | https://dnr.wisconsin.gov/topic/parks/newport/maps | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
+| US-9805 | Mound View State Trail | https://dnr.wisconsin.gov/topic/parks/moundview/maps | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
+| US-4348 | Black River State Forest | https://dnr.wisconsin.gov/topic/StateForests/blackriver/maps | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
+| US-1455 | Hartman Creek State Park | https://dnr.wisconsin.gov/topic/parks/hartmancreek/maps | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
+| US-1464 | Mirror Lake State Park | https://dnr.wisconsin.gov/topic/parks/mirrorlake/maps | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
+| US-1437 | Aztalan State Park | https://dnr.wisconsin.gov/topic/parks/aztalan/maps | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
+
+### US-WI no map yet (54): the reason
+- US-0602 Leopold Wetland Management District: no map link on file and none on the park page
+- US-0673 Saint Croix National Wild and Scenic River: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.nps.gov/sacn/planyourvisit/upload/Section-1_Namekagon_Name; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.nps.gov/sacn/planyourvisit/upload/Section-2_Namekagon_Hayw)
+- US-10194 Schmit State Wildlife Area: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
+- US-11230 Hallie Marsh State Wildlife Area: no map link on file and none on the park page (needs browser: the page is built by script)
+- US-11927 Upper Wolf River State Fish and Wildlife Area: no working map link (tried: robots https://p.widencdn.net/9q9nsf/2740upperwolfriverupnorth; robots https://p.widencdn.net/tsbqxn/2740upperwolfriverlownorth)
+- US-12029 Alta State Fish and Wildlife Area: no map link on file and none on the park page
+- US-12081 Spring Lake State Fish and Wildlife Area: no map link on file and none on the park page
+- US-12605 Wood County State Wildlife Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://dnr.wisconsin.gov/sites/default/files/topic/Lands/woodcounty.p; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://dnr.wisconsin.gov/sites/default/files/topic/Lands/WM0089.pdf)
+- US-13535 La Crosse Area Comprehensive State Fish and W: no map link on file and none on the park page
+- US-1444 Campbellsport Drumlin State Park: no map link on file and none on the park page
+- US-1445 Copper Culture State Park: no map link on file and none on the park page
+- US-1450 Grand Traverse Island State Park: no working map link (tried: rest http://map.co.door.wi.us/map/; robots https://embed.widencdn.net/pdf/download/widnr/xwmd89irwz/Grand-Travers)
+- US-1475 Rock Island State Park: no working map link (tried: ok https://cf-store.widencdn.net/widnr/0/9/7/097b263b-e46a-49bc-9bf2-42e9)
+- US-3319 Menominee River State Recreation Area: HTTP 403 (needs browser: host on the browser list)
+- US-4244 Big Bay Sand Spit and Bog State Natural Area: no working map link (tried: robots https://widnr.widen.net/s/vlqfnqs9gw/sna156_map)
+- US-4245 Two Creeks Buried Forest State Natural Area: no working map link (tried: robots https://widnr.widen.net/s/x6d2fjs7dr/sna050_map)
+- US-4246 Whitefish Dunes State Natural Area: no working map link (tried: robots https://widnr.widen.net/s/gjnkhbvc2z/sna175_map)
+- US-4247 Heritage Hill State Park: no map link on file and none on the park page
+- US-4248 Lost Dauphin State Park: no map link on file and none on the park page
+- US-4250 Capitol Springs State Recreation Area: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://dnr.wisconsin.gov/topic/parks/capsprings/maps)
+- US-4251 Bibon Swamp State Natural Area: no working map link (tried: robots https://widnr.widen.net/s/bhghfkwcbr/sna275_map)
+- US-4252 Brule Glacial Spillway State Natural Area: no working map link (tried: robots https://widnr.widen.net/s/frfmsv7p9c/sna161_map)
+- US-4253 Cedarburg Bog State Natural Area: no working map link (tried: robots https://widnr.widen.net/s/vsppg7sjf9/sna002_map)
+- US-4254 Chimney Rock Oak Savanna State Natural Area: no working map link (tried: robots https://widnr.widen.net/s/h9pnhzrmgw/sna625_map)
+- US-4255 Lodi Marsh State Natural Area: no working map link (tried: robots https://widnr.widen.net/s/2nfbbxkxnv/sna374_map)
+- US-4258 Fischer Creek State Recreation Area: no map link on file and none on the park page
+- US-4266 Ackley State Wildlife Area: no working map link (tried: robots https://p.widencdn.net/zyypyh/7010ackley; robots https://p.widencdn.net/u171cm/ackley_secondary)
+- US-4268 Amsterdam Sloughs State Wildlife Area: no working map link (tried: robots https://p.widencdn.net/2tpk1v/7060amsterdamsloughs; robots https://p.widencdn.net/t1caf9/LF0087_MapE)
+- US-4272 Bill Cross State Wildlife Area: no working map link (tried: HTTP 404 https://co.lincoln.wi.us/sites/default/files/fileattachments/forestry_; robots https://p.widencdn.net/qlfowq/7163billcross)
+- US-4291 Green Bay West Shores State Wildlife Area: no map link on file and none on the park page
+- US-4321 Peters Marsh State Wildlife Area: no working map link (tried: robots https://p.widencdn.net/ppzmvg/8212petersmarsh; robots https://p.widencdn.net/2hf9pb/petersmarsh_secondary)
+- US-4328 Sandhill State Wildlife Area: no working map link (tried: robots https://widnr.widen.net/s/r7lpfssfxt/sandhillwa_compartmentmap; robots https://p.widencdn.net/activo/8340sandhill)
+- US-7260 Northern Highland American Legion State Fores: opened, wrong thing (a .pdf address that is not a PDF: a soft 404 or a login page) (needs browser: the map link refused a plain reader (ok))
+- US-8205 Kangaroo Lake State Natural Area: no working map link (tried: robots https://widnr.widen.net/s/cqrncqkrzs/sna335_map)
+- US-8206 Meridian Park State Natural Area: no working map link (tried: robots https://widnr.widen.net/s/bxkfksrljz/sna544_map)
+- US-8209 Dewey Marsh State Natural Area: no working map link (tried: robots https://widnr.widen.net/s/rjbsxr2g5n/sna182_map)
+- US-8210 Bark Bay Slough State Natural Area: no working map link (tried: robots https://widnr.widen.net/s/ptbjprsqvb/sna137_map)
+- US-8211 Bear Beach State Natural Area: no working map link (tried: robots https://widnr.widen.net/s/vgdcnctmmp/sna402_map)
+- US-8213 Belden Swamp State Natural Area: no working map link (tried: robots https://widnr.widen.net/s/xhtwtp7mbw/sna317_map)
+- US-8214 Empire Swamp State Natural Area: no working map link (tried: robots https://widnr.widen.net/s/klvc755fmz/sna517_map)
+
+## US-MN sample (random 12 per agency group, seed 28)
+| ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
+|---|---|---|---|---|---|---|
+| US-0357 | Crane Meadows National Wildlife Refuge | https://www.fws.gov/refuge/crane-meadows/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/crane-meadows/visit-us/rules-policies ✓ |  |
+| US-0358 | Detroit Lakes Wetland Management Distric | https://www.fws.gov/refuge/detroit-lakes-wetland-management-district/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/detroit-lakes-wetland-management-district/v ✓ |  |
+| US-0359 | Fergus Falls Wetland Management District | https://www.fws.gov/refuge/fergus-falls-wetland-management-district/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/fergus-falls-wetland-management-district/vi ✓ |  |
+| US-0361 | Hamden Slough National Wildlife Refuge | https://www.fws.gov/refuge/hamden-slough/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/hamden-slough/visit-us/rules-policies ✓ |  |
+| US-0356 | Big Stone Wetland Management District | https://www.fws.gov/refuge/big-stone-wetland-management-district/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/big-stone-wetland-management-district/visit ✓ |  |
+| US-0365 | Minnesota Valley Wetland Management Dist | https://www.fws.gov/refuge/minnesota-valley-wetland-management-district/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/minnesota-valley-wetland-management-distric ✓ |  |
+| US-0370 | Sherburne National Wildlife Refuge | https://www.fws.gov/refuge/sherburne/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/sherburne/visit-us/rules-policies ✓ | managed by the U.S. Fish and Wildlife Service |
+| US-0360 | Glacial Ridge National Wildlife Refuge | https://www.fws.gov/refuge/glacial-ridge/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/glacial-ridge/visit-us/rules-policies ✓ |  |
+| US-4236 | Upper Mississippi River National Wildlif | https://www.fws.gov/refuge/upper-mississippi-river/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/upper-mississippi-river/visit-us/rules-poli ✓ |  |
+| US-0368 | Rice Lake National Wildlife Refuge | https://www.fws.gov/refuge/rice-lake/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/rice-lake/visit-us/rules-policies ✓ |  |
+| US-0369 | Rydell National Wildlife Refuge | https://www.fws.gov/refuge/rydell/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/rydell/visit-us/rules-policies ✓ |  |
+| US-0366 | Morris Wetland Management District | https://www.fws.gov/refuge/morris-wetland-management-district/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/morris-wetland-management-district/visit-us ✓ |  |
+| US-6465 | Greenleaf State Recreation Area | https://files.dnr.state.mn.us/maps/state_parks/sra00310.pdf | pdf ✓name · linked from the agency page (files.dnr.s | 2024 (the PDF file's own stamp (may be the print da) · posted Aug 28, 2024 |  ✗ |  |
+| US-0939 | Grand Portage National Monument | https://www.nps.gov/grpo/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted July 22, 2025 | https://www.nps.gov/grpo/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4239 | North Country Trail National Scenic Trai | https://www.nps.gov/noco/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted September 23, 2025 | https://www.nps.gov/noco/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4801 | Grand Portage State Forest | https://www.nps.gov/grpo/planyourvisit/maps.htm | page ✓name · linked from the agency page (nps.gov) | date unknown (date unknown, checked 2026-10-28) · posted July 22, 2025 |  ✗ |  |
+| US-0067 | Voyageurs National Park | https://www.nps.gov/voya/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted August 24, 2026 | https://www.nps.gov/voya/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0957 | Pipestone National Monument | https://www.nps.gov/pipe/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted July 12, 2021 | https://www.nps.gov/pipe/learn/management/lawsandpolicies.htm ✓ |  |
+| US-2489 | Grand Portage State Park | https://www.nps.gov/grpo/planyourvisit/maps.htm | page ✓name · linked from the agency page (nps.gov) | date unknown (date unknown, checked 2026-10-28) · posted July 22, 2025 |  ✗ |  |
+
+### US-MN no map yet (268): the reason
+- US-0673 Saint Croix National Wild and Scenic River: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.nps.gov/sacn/planyourvisit/upload/Section-1_Namekagon_Name; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.nps.gov/sacn/planyourvisit/upload/Section-2_Namekagon_Hayw)
+- US-10278 Inspiration Peak State Wayside State Natural : no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.dnr.state.mn.us/contact/locator.html; robots https://www.dnr.state.mn.us/maps/compass.html)
+- US-10306 Paul Hugo Farms WMA Wildlife Management Area: no map link on file and none on the park page
+- US-10307 Lamprey Pass WMA Wildlife Management Area: no map link on file and none on the park page
+- US-10308 Carlos Avery WMA Wildlife Management Area: no map link on file and none on the park page
+- US-10380 Orwell WMA Wildlife Management Area: no map link on file and none on the park page
+- US-10720 Forest Lake AMA Aquatic Reserve: no map link on file and none on the park page
+- US-10721 Brown's Creek AMA Aquatic Reserve: no map link on file and none on the park page
+- US-10722 Lost Valley Prairie SNA Scenic Reserve: no map link on file and none on the park page
+- US-10723 Crystal Spring SNA Scenic Reserve: no map link on file and none on the park page
+- US-10724 Falls Creek SNA Scenic Reserve: no map link on file and none on the park page
+- US-10725 St. Croix Savanna SNA Scenic Reserve: no map link on file and none on the park page
+- US-10727 Pine Bend Bluffs SNA Scenic Reserve: no map link on file and none on the park page
+- US-10728 Grey Cloud Dunes SNA Scenic Reserve: no map link on file and none on the park page
+- US-11014 David Dill/Taconite and Taconite State Trails: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.dnr.state.mn.us/snowmobiling/interactive_map/index.html; opened, a page that does not name this park (a generic agency page is not its map) https://www.dnr.state.mn.us/contact/locator.html)
+- US-11022 Otter Tail Prairie SNA State Conservation Are: no map link on file and none on the park page
+- US-11023 Egret Island SNA State Conservation Area: no map link on file and none on the park page
+- US-11024 Blanket Flower Prairie SNA State Conservation: no map link on file and none on the park page
+- US-11147 Jensen Memorial WMA Wildlife Management Area: no map link on file and none on the park page
+- US-11148 Hardwood Creek WMA Wildlife Management Area: no map link on file and none on the park page
+- US-11150 CJ Ramstad North Shore State Trail: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.dnr.state.mn.us/snowmobiling/interactive_map/index.html; opened, a page that does not name this park (a generic agency page is not its map) https://www.dnr.state.mn.us/contact/locator.html)
+- US-11151 Cuyuna Lakes State Trail: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://files.dnr.state.mn.us/maps/state_parks/sra00302.pdf; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://mobile-maps-files.dnr.state.mn.us/file/State_Parks/Cuyuna%20Co)
+- US-11152 Heartland State Trail: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://files.dnr.state.mn.us/maps/state_trails/paul_bunyan_n_heartlan; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://mobile-maps-files.dnr.state.mn.us/file/State_Trails/Paul%20Bun)
+- US-11153 Matthew Lourey State Trail: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://files.dnr.state.mn.us/maps/state_trails/paul_bunyan_n_heartlan; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://mobile-maps-files.dnr.state.mn.us/file/State_Trails/Paul%20Bun)
+- US-11154 Taconite State Trail: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.dnr.state.mn.us/snowmobiling/interactive_map/index.html; opened, a page that does not name this park (a generic agency page is not its map) https://www.dnr.state.mn.us/contact/locator.html)
+- US-11698 Seminary Fen SNA State Sanctuary: no map link on file and none on the park page
+- US-11699 Savage FEN SNA State Sanctuary: no map link on file and none on the park page
+- US-11700 Wolsfeld Woods SNA State Sanctuary: no map link on file and none on the park page
+- US-11701 Wood-Rill SNA State Sanctuary: no map link on file and none on the park page
+- US-11786 Prairie Ridge WMA Wildlife Management Area: no map link on file and none on the park page
+- US-11787 Berskow WMA Wildlife Management Area: no map link on file and none on the park page
+- US-11788 Toad River AMA State Conservation Area: no map link on file and none on the park page
+- US-11865 Mound Prairie Wildlife Management Area: no map link on file and none on the park page
+- US-11872 Lost 40 SNA State Natural Area: no map link on file and none on the park page
+- US-11904 Migizi National Recreation Trail: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-11962 Manston Marsh Wildlife Management Area: no map link on file and none on the park page
+- US-11972 Dead Lake Wildlife Management Area: no map link on file and none on the park page
+- US-11973 Rothsay Wildlife Management Area: no map link on file and none on the park page
+- US-11974 Robert and Marilyn Burman Wildlife Management: no map link on file and none on the park page
+- US-11980 Bethel Wildlife Management Area: no map link on file and none on the park page
+
+## robots.txt said no (hosts we did not read)
+- embed.widencdn.net: 3 addresses (User-agent: Twitterbot | Disallow: | User-agent: * | Allow: /img/3shape/ | Allow: /pdf/*/3shape/ | A)
+- images.dnr.state.mn.us: 1 addresses (User-agent: * | Disallow: /)
+- p.widencdn.net: 65 addresses (User-agent: Twitterbot | Disallow: | User-agent: * | Disallow: /)
+- widnr.widen.net: 38 addresses (User-agent: Twitterbot | Disallow: | User-agent: * | Allow: /content/ | Allow: /view/ | Disallow: /)
+- www.dnr.state.mn.us: 167 addresses (Sitemap: https://www.dnr.state.mn.us/sitemap.xml | Sitemap: https://www.dnr.state.mn.us/sitemap-stat)
 
 ## hosts resting a day (three strikes)
 - in.gov
 - legacy.fws.gov
+- map.co.door.wi.us
+- mobile-maps-files.dnr.state.mn.us
 - parks.ky.gov
 - wolfememorial.com
 - www.baysmountain.com
