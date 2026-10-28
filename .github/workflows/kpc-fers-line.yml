@@ -240,6 +240,8 @@ jobs:
           if [ "$REGION" = ky ]; then python3 .github/scripts/kpc_fers_known.py || true; AREA=ky python3 .github/scripts/kpc_fers_expected.py || true
           else python3 .github/scripts/kpc_fers_expected.py || true; fi
           TAG=$RUN_TAG SINCE=$SINCE python3 .github/scripts/kpc_fers_line_check.py || true
+          # Oct 28 (HQ 5:55 PM): this area's rows of the one big 'needs a human look' list (data/fers/review/<tag>.json)
+          TAG=$RUN_TAG STATES="$STATES" DATA=data/fers OUT=data/fers python3 .github/scripts/kpc_fers_review.py || true
           mkdir -p kpcdata/data/observations
           OBS_RUN="2-fer line $RUN_TAG" OBS_FILE=kpcdata/data/observations/fers-line-$RUN_TAG.json OBS_DATA_DIR=kpcdata python3 .github/scripts/kpc_map_observations.py || true
       - name: Save (once; a failed save = a red run)
@@ -250,6 +252,7 @@ jobs:
           for f in data/fers/*.json; do [ -f "$f" ] && [ $(stat -c %s "$f") -gt 20000000 ] && gzip -9nf "$f"; done
           # Oct 28 (HQ storage): the missing check's long lists (rewritten every run) are kept gzipped when over 1 MB
           for f in data/fers/expected-*.json; do [ -f "$f" ] && [ $(stat -c %s "$f") -gt 1000000 ] && gzip -9nf "$f"; done
+          [ -f data/fers/review/$RUN_TAG.json ] && mkdir -p kpcdata/data/fers/review && cp data/fers/review/$RUN_TAG.json kpcdata/data/fers/review/
           for f in data/fers/expected-$RUN_TAG.json.gz; do [ -f "$f" ] && mkdir -p kpcdata/data/fers && ! cmp -s "$f" "kpcdata/$f" && cp "$f" kpcdata/data/fers/; done
           mkdir -p kpcdata/data/fers
           # A6: only this area's files go back: own states, the tag's files, POTA pairs, known answers (ky)

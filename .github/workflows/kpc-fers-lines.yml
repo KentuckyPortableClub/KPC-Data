@@ -83,6 +83,18 @@ jobs:
       LINES: ${{ needs.plan.outputs.lines }}
     steps:
       - uses: actions/checkout@v5
+      - uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+      - name: The one big 'needs a human look' list from every area's file
+        continue-on-error: true
+        run: |
+          COMBINE_ONLY=1 OUT=data/fers python3 links/.github/scripts/kpc_fers_review.py || true
+          git config user.name kpc-bot; git config user.email bot@kpc.local
+          git add data/fers/review-all.json data/fers/review-all.md && git commit -qm "2-fer review list: combined" || true
+          git pull -q --rebase || true; git push -q || true
       - name: Areas parked on the water map -> one more round
         run: |
           python3 - <<'PY' > again.txt
