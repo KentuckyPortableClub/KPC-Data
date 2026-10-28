@@ -5,8 +5,38 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 
 | area | parks | map ok | found by the bot | names the park | date on the map | posted only | date unknown | no map | rules ok | needs browser | handover notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| US-FL | 460 | 247 | 227 | 34 | 22 | 146 | 79 | 211 | 116 | 234 | 0 |
+| US-KY | 148 | 137 | 11 | 48 | 39 | 84 | 14 | 3 | 83 | 6 | 0 |
+| US-FL | 460 | 249 | 234 | 34 | 22 | 152 | 75 | 209 | 116 | 2 | 0 |
 | US-MO | 561 | 524 | 503 | 425 | 238 | 206 | 80 | 37 | 520 | 9 | 1 |
+
+## US-KY sample (first 12 parks with a map)
+| ref | park | map | kind · via | date (how) · posted | rules | runs / card note |
+|---|---|---|---|---|---|---|
+| US-0019 | Cumberland Gap National Historical Park | https://www.nps.gov/cuga/planyourvisit/upload/CUGAmap1-3.pdf | pdf ✓name · the agency site | — (date unknown, checked 2026-10-28) · posted Dec 07, 2022 | https://www.nps.gov/cuga/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0050 | Mammoth Cave National Park | https://www.nps.gov/maca/planyourvisit/maps.htm | page · the agency site | — (date unknown, checked 2026-10-28) · posted February 4, 2022 | https://www.nps.gov/maca/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0295 | Clarks River National Wildlife Refuge | https://www.fws.gov/refuge/clarks-river/map | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/clarks-river/visit-us/rules-policies ✓ |  |
+| US-0538 | Reelfoot National Wildlife Refuge | https://www.fws.gov/refuge/reelfoot/map | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/reelfoot/visit-us/rules-policies ✓ |  |
+| US-0608 | Ohio River Islands National Wildlife Ref | https://www.fws.gov/refuge/ohio-river-islands/visit-us | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/ohio-river-islands/visit-us/rules-policies ✓ |  |
+| US-0686 | Big South Fork National Recreation Area | https://www.nps.gov/biso/planyourvisit/maps.htm | page · the agency site | — (date unknown, checked 2026-10-28) · posted August 2, 2021 | https://www.nps.gov/biso/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0703 | Fort Donelson National Battlefield | https://www.nps.gov/fodo/planyourvisit/maps.htm | page · the agency site | — (date unknown, checked 2026-10-28) · posted April 9, 2021 | https://www.nps.gov/fodo/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0724 | Abraham Lincoln Birthplace National Hist | https://www.nps.gov/abli/planyourvisit/maps.htm | page · the agency site | — (date unknown, checked 2026-10-28) · posted December 17, 2022 | https://www.nps.gov/abli/learn/management/lawsandpolicies.htm ✓ |  |
+| US-10098 | Green River National Wildlife Refuge | https://www.fws.gov/sites/default/files/documents/2024-12/2024-hunt-map-508.pdf | pdf ✓name · the agency site | May 6, 2024 (printed on the map) · posted 2024-12 | https://www.fws.gov/refuge/green-river/visit-us/rules-policies ✓ |  |
+| US-10099 | Wolf Creek National Fish Hatchery | https://www.fws.gov/fish-hatchery/wolf-creek/map | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/laws-regulations ✓ |  |
+| US-10102 | Pine Mountain State Trail | https://parks.ky.gov/explore/pine-mountain-state-scenic-trail-7826 | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://parks.ky.gov/park-rules ✗ |  |
+| US-10103 | The Cumberland River Wilderness Area | https://eec.ky.gov/Environmental-Protection/Water/GIS/Pages/default.aspx | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://eec.ky.gov/Environmental-Protection/Air/Pages/Air-Quality-Regu ✓ |  |
+
+### US-KY no map yet (11): the reason
+- US-10104 Red River National Wild and Scenic River: robots (needs browser: host on the browser list)
+- US-10170 Twin Knobs Campground Wildlife Management Are: robots
+- US-11181 Sheltowee Trace National Recreation Trail: HTTP 404 (needs browser: host on the browser list)
+- US-12083 University of the Cumberlands Wildlife Manage: bot error: URL can't contain control characters. '/More/Documents/University of the Cumberl
+- US-13598 Beaver Lake State Fishing Lake: robots
+- US-13599 Kingfisher Lakes State Fishing Lake: robots
+- US-13600 Carpenters Lake State Fishing Lake: robots
+- US-13601 Guist Creek Lake State Fishing Lake: robots
+- US-13606 Bullock Pen State Fishing Lake: robots
+- US-13607 Boltz State Fishing Lake: robots
+- US-3787 White Hall State Historic Site: no map link on file and none on the park page
 
 ## US-FL sample (first 12 parks with a map)
 | ref | park | map | kind · via | date (how) · posted | rules | runs / card note |
@@ -24,7 +54,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-0239 | Florida Panther National Wildlife Refuge | https://www.fws.gov/refuge/florida-panther/map | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/laws-regulations ✓ | managed by the U.S. Fish |
 | US-0240 | Great White Heron National Wildlife Refu | https://www.fws.gov/refuge/great-white-heron/map | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/laws-regulations ✓ | managed by the State of Florida through a Management Agreement |
 
-### US-FL no map yet (213): the reason
+### US-FL no map yet (211): the reason
 - US-0634 Little Talbot State Park: no map link on file and none on the park page (needs browser: host on the browser list)
 - US-0635 St. George State Park: no map link on file and none on the park page (needs browser: host on the browser list)
 - US-0775 Fort Caroline National Memorial: no map link on file and none on the park page
@@ -125,7 +155,9 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - US-7984 St Genevieve (Beauvais House) National Histor: no map link on file and none on the park page
 
 ## robots.txt said no (hosts we did not read)
-- www.fdacs.gov: 37 addresses (User-agent: * | Disallow: / | User-agent: Googlebot | User-agent: Bingbot | User-agent: BingPreview )
+- usfs-public.app.box.com: 3 addresses (User-agent: Twitterbot | Disallow: / | Allow: /representation  # Twitter needs to be able to display)
+- www.google.com: 7 addresses (User-agent: * | User-agent: Yandex | Disallow: /search | Allow: /search/about | Allow: /search/howse)
 
 ## hosts resting a day (three strikes)
+- legacy.fws.gov
 - www5.swfwmd.state.fl.us

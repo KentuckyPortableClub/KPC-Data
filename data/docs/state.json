@@ -13,10 +13,18 @@
    "checked": 460,
    "left": 0,
    "updated": "2026-10-28"
+  },
+  "US-KY": {
+   "status": "partial",
+   "parks": 193,
+   "checked": 148,
+   "left": 45,
+   "updated": "2026-10-28"
   }
  },
  "hosts": {
-  "www5.swfwmd.state.fl.us": 1793262436.7233734
+  "www5.swfwmd.state.fl.us": 1793262436.7233734,
+  "legacy.fws.gov": 1793264444.9435768
  },
  "last": {
   "when": "2026-10-28",
@@ -26,17 +34,17 @@
    "US-KY"
   ],
   "stat": {
-   "requests": 1526,
-   "parks": 590,
-   "maps_ok": 385,
-   "maps_found": 359,
-   "dates": 91,
-   "rules": 247,
-   "browser": 11,
-   "robots": 37,
+   "requests": 705,
+   "parks": 148,
+   "maps_ok": 145,
+   "maps_found": 19,
+   "dates": 39,
+   "rules": 83,
+   "browser": 231,
+   "robots": 10,
    "strikes": 3,
-   "errors": 3,
-   "skipped_fresh": 431
+   "errors": 1,
+   "skipped_fresh": 1021
   }
  }
 }
