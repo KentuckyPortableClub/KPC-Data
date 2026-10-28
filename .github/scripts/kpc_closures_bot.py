@@ -66,7 +66,8 @@ PDF_FIRST = 400_000     # CL-7: PDF lists read by range, first 400 KB
 GONE_READS = 2          # A5: an item leaves only after this many good reads without it
 TAKEN_DOWN_DAYS = 7     # ... and then says 'notice taken down' for this long
 UPCOMING_DAYS = 14      # D9: a future closure shows from 14 days before its start
-VER = 3   # Oct 28: v2 HQ fixes 1-5 (hunt pages, home parks, state filter, standing rules, safe URLs); v3 chat 11's regrade (named place + close verb, KDFWR wording, debug snippets)
+VER = 4   # v4 chat 11 round-3 grade: protection orders, other-state names first, ended items dropped, title twins merged, sentence-start subjects
+VER_OLD = 3   # Oct 28: v2 HQ fixes 1-5 (hunt pages, home parks, state filter, standing rules, safe URLs); v3 chat 11's regrade (named place + close verb, KDFWR wording, debug snippets)
 
 QUEUE = ['US-KY',
          'US-TN', 'US-NC', 'US-VA', 'US-WV', 'US-GA', 'US-AL', 'US-SC', 'US-FL', 'US-MS',
@@ -258,11 +259,16 @@ def classify(sent, ctx=None):
         return {'skip': 'a sentence about signs or rules in general, not a closure'}
     if ' | ' in s or s.count('|') >= 2 or len(s.split()) < 4 and not ctx.get('hunt_page'):
         if not ctx.get('hunt_page'): return {'skip': 'a table fragment or a few words, not a notice (chat 11 regrade)'}
+    if re.search(r'closed for (?:the )?protection of|in violation of|posted signs', low) and not (frm_has := (D1.search(s) or DNUM.search(s))):
+        return {'skip': 'a standing protection order or posted-signs rule, not a dated closure (chat 11 round 3)'}
     if STANDING_RX.search(s) and not re.search(r'\b(is|are|remains?|will be|has been)\s+(?:temporarily\s+)?clos', low) and not ctx.get('hunt_page') \
             and not re.search(r'\b(entering|entry|enter|occupying|access(?:ing)?|going (?:into|onto)|being (?:in|on|upon)|presence)\b', low) and not RULES_RX.search(s):   # CL-3: camping / fire orders stay a note
         return {'skip': 'a standing rule (prohibited / not permitted / shall not): never a closure or a note (chat 11 regrade)'}
-    if re.match(r'^(?:the\s+)?(?:trail|road|area|bridge|campground|ramp|gate|lake|loop|section|unit|boardwalk)s?\b', low) and ctx.get('head'):
-        s = re.sub(r'^(?:the\s+)?', ctx['head'].strip().rstrip(':') + ': ', s, count=1)                       # 'the trail is closed…' takes its heading as the subject
+    s = re.sub(r'^(?:currently|at this time|at present|presently|please note|note|effective immediately|until further notice|as of now|today)\s*[,:]?\s+', '', s, flags=re.I)
+    low = s.lower()
+    if re.match(r'^(?:the|this|that|these|those|said)?\s*(?:trail|road|area|bridge|campground|ramp|gate|lake|loop|section|unit|boardwalk|site|route|path)s?\b', low) and ctx.get('head'):
+        h = re.sub(r'\s*[-–:]?\s*(?:temporary\s+)?(?:closures?|closed|update|alert|notice)\b.*$', '', ctx['head'].strip(), flags=re.I).strip(' :-') or ctx['head'].strip()
+        s = re.sub(r'^(?:the|this|that|these|those|said)?\s*', h + ': ', s, count=1, flags=re.I)                       # 'the trail is closed…' takes its heading as the subject
         low = s.lower()
     if ctx.get('hunt_page') and SEASON_RULE.search(s) and not re.search(r'\b(all|public|everyone|access|entry|non-?hunters|all other (?:public )?use|all users)\b', low):
         return {'skip': 'a hunting-season rule (a game season closed), not a land closure (HQ Oct 28)'}
@@ -539,6 +545,7 @@ SAMPLE_WMA = """<h1>Clay WMA</h1><p>The area is closed to all other hunting Nov.
 
 
 LAST_HTML = {}
+BROWSER_LOG = []
 
 
 def safe_url(u):
@@ -839,9 +846,16 @@ def src_page(url, refs=None, pdfs=True, home=None, hunt=False):
     ok, kind, body, st = read(url, pdf=url.lower().split('?')[0].endswith('.pdf'))
     if not ok: raise RuntimeError(st)
     if kind == 'html' and not OFFLINE and len(page_text(body)) < 400:                     # a script-built page (fw.ky.gov quota hunts)
-        bt = ''
+        bt, err = '', ''
         try: bt = browser_text(url, M) or ''
-        except Exception: bt = ''  # noqa: BLE001
+        except Exception as e: err = str(e)[:160]  # noqa: BLE001
+        try:
+            import kpc_manners as _KM
+            started = 'pw' in (getattr(_KM, '_BROWSER', {}) or {})
+        except Exception: started = False  # noqa: BLE001
+        if not err and not bt:
+            err = 'browser returned nothing' + ('' if started else (' (BROWSER env is not 1)' if os.environ.get('BROWSER') != '1' else ' (Chromium did not start)'))
+        BROWSER_LOG.append({'url': url, 'plain_len': len(page_text(body)), 'browser_len': len(bt), 'started': started, 'error': err})
         STAT['browser'] = STAT.get('browser', 0) + (1 if bt else 0)
         if len(bt) > len(page_text(body)):
             bt = '\n'.join(' | '.join(c.strip() for c in ln.split('\t') if c.strip()) + (' |' if '\t' in ln else '') for ln in bt.split('\n'))
@@ -1027,6 +1041,9 @@ def in_state(row, area, sid):
     if 'west virginia' in others and 'virginia' in others and cx['state'] != 'west virginia': pass
     if 'virginia' in others and 'west virginia' in text and cx['state'] == 'west virginia': others.discard('virginia')
     if multi:
+        if others and cx['state'] not in text: return False                     # names another state's place (Bath County, Virginia)
+        for a2, dd in (((load(OUT / 'sources.json', {}) or load('data/closures/sources.json', {})).get('districts') or {}).items()):
+            if a2 != area and isinstance(dd, dict) and any(d.lower() in text for d in dd.get(slug_, []) if d.lower() not in cx['districts'].get(slug_, [])): return False
         if cx['state'] in text: return True
         if any(f' {c} county' in f' {text} ' or f' {c} co ' in f' {text} ' for c in cx['counties']): return True
         if any(d in text for d in cx['districts'].get(slug_, [])): return True
@@ -1179,6 +1196,8 @@ def process_area(K, area, state, review):
                 if part and cl['class'] in ('whole', 'hunt') and not cl.get('hunt_item') and not cl.get('what', '').lower().startswith(part.lower()[:4]): cl = {**cl, 'class': 'part', 'what': part}
                 if r.get('end') and not cl.get('to'): cl['to'] = r['end']
                 if r.get('start') and not cl.get('from'): cl['from'] = r['start']
+                if cl.get('to') and cl['to'] < TODAY:
+                    unreadable.append({'src': sid, 'why': f"ended {cl['to'].isoformat()}: not shown", 'sent': sent[:160]}); continue      # never re-dated
                 for ref in refs_:
                     it = build_item(sid, agency, ref, cl, sent, r, area, None)
                     pit = prev_items.get(it['id'])
@@ -1221,7 +1240,7 @@ def process_area(K, area, state, review):
         for sid in {it['src'] for it in prev_items.values()} - set(srcs):
             items += [it for it in prev_items.values() if it['src'] == sid]
             srcs[sid] = {**(prev_src.get(sid) or {}), 'ok': (prev_src.get(sid) or {}).get('ok', False), 'why': 'not reached this run (out of time)'}
-    items = merge_items(items)
+    items = drop_title_twins(merge_items(items))
     banners = mass_banners(items, area)
     D = {'area': area, 'read': NOW, 'ver': VER, 'about': 'Closures super-bot (RULE SHEET D). details = the agency\'s own sentence. Nothing here is on a card until Brandon\'s GO (CL-5).',
          'sources': srcs, 'items': sorted(items, key=lambda x: (x['ref'], x['id'])), 'banners': banners,
@@ -1241,6 +1260,18 @@ def counts(items):
         if it.get('taken_down'): c['taken_down'] += 1
         else: c[it['class']] = c.get(it['class'], 0) + 1
     return c
+
+
+def drop_title_twins(items):
+    """chat 11 round 3: an item whose sentence is only the heading of another item on the same park (or inside its sentence) goes."""
+    def t(x): return lowtext(str(x or '').strip('"'))
+    out = []
+    for it in items:
+        d = t(it['details'])
+        twin = any(o is not it and o['ref'] == it['ref'] and not o.get('taken_down') and len(t(o['details'])) > len(d)
+                   and (d == t(o.get('title')) or d in t(o['details']) or d in t(o.get('title')) + ' ' + t(o['details'])) for o in items)
+        if not twin: out.append(it)
+    return out
 
 
 def merge_items(items):
@@ -1348,6 +1379,10 @@ def write_review(state, review):
          f"Run: {NOW} · requests {STAT['requests']} · pages {STAT['pages']} · PDFs {STAT['pdfs']} · sentences read {STAT['sentences']} · unmatched {STAT['unmatched']} · look-alikes skipped {STAT['unreadable']} · sources failed {STAT['sources_failed']}", '']
     t = state.get('test')
     if t: L += [f"## Kentucky gate: **{t['result']}** — {t['why']}", '']
+    bl = (state.get('last') or {}).get('browser') or []
+    if bl: L += ['## Browser path (pages with under 400 characters of plain text)', ''] + [f"- {b['url']}: plain {b['plain_len']} chars, browser {b['browser_len']} chars, started {b['started']}" + (f", error: {b['error']}" if b.get('error') else '') for b in bl] + ['']
+    fl = (state.get('last') or {}).get('failed') or []
+    if fl: L += ['## Sources that failed this run', ''] + [f"- {f['area']} {f['src']}: {f['why']} ({f['url']})" for f in fl] + ['']
     us = load('data/alerts/us-parks.json', {}) or load(LINKS / 'data' / 'alerts' / 'us-parks.json', {})
     uc_by_area = {}
     for it in us.get('items', []):
@@ -1437,6 +1472,10 @@ SELFTEST = [  # (sentence, context, expected class, expected note_kind or what-c
     ("All other areas of the WMA remain closed due to extensive storm damage; the only areas open to the public are those adjacent to Highway 192.", {'names': ['Cane Creek WMA'], 'hunt_page': True}, 'part', 'areas', (None, None)),
     ("Rabbit season is open Nov. 1-Dec. 31, except closed Nov. 7-8.", {'hunt_page': True}, None, None, None),
     ("Closed to modern gun deer hunting except for the quota hunt.", {'hunt_page': True}, None, None, None),
+    ("Camping in violation of posted signs is prohibited.", {}, None, None, None),
+    ("Entry into areas closed for protection of threatened and endangered species at Cave Run Lake and Laurel River Lake is prohibited.", {}, None, None, None),
+    ("Currently, the trail is closed between the two trailheads.", {'head': 'Cliffside Trail #519 Closure'}, 'part', 'cliffside trail #519', (None, None)),
+    ("This road is closed for culvert repair.", {'head': 'Road 214 Temporary Closure'}, 'part', 'road 214', (None, None)),
     ("Ballard WMA | Deer | Nov 7–8 | closed to everyone except drawn hunters (and one helper each) |", {'hunt_page': True}, 'hunt', None, (dt.date(SEASON_YEAR, 11, 7), dt.date(SEASON_YEAR, 11, 8))),
 ]
 
@@ -1478,16 +1517,21 @@ def selftest():
     for row, exp in [({'home': ['US-4526'], 'head': 'Mount Rogers National Recreation Area: Forest Service Road 84 Closed', 'sent': 'Mount Rogers National Recreation Area: Forest Service Road 84 Closed Beginning 9/1/25.'}, ['OUT-OF-STATE']),
                      ({'home': ['US-4526'], 'head': 'Clinch Ranger District road closure', 'sent': 'Forest Road 2097 on the Clinch Ranger District is closed.'}, ['US-4526']),
                      ({'home': ['US-4526'], 'head': 'Pine Mountain', 'sent': 'The Pine Mountain trailhead in Letcher County, Kentucky is closed.'}, ['US-4526']),
+                     ({'home': ['US-4526'], 'head': 'Bolar Mountain Recreation Area - Twin Ridge Road Closure', 'sent': 'Twin Ridge Road near Bolar Mountain in Bath County, Virginia is closed until about 9/21/2026.'}, ['OUT-OF-STATE']),
                      ({'home': ['US-4484'], 'head': 'Tornado Damaged Area Closure', 'sent': 'This closure includes a portion of the Sheltowee Trace National Recreation Trail.'}, ['US-4484', 'US-11181'])]:
         refs, _ = tie(K, row, pk, 'US-KY', 'fs-gwj')
         ok = refs == exp
         print(('ok   ' if ok else 'FAIL ') + f"in-state: {row['head'][:50]} -> {refs}"); bad += not ok
     _FS_STATES.clear(); _FS_STATES.update(_FS_STATES_SAVE); AREA_CTX.pop('US-KY', None)
+    cl = classify('Twin Ridge Road is closed until 9/21/2026.', {}); ok = bool(cl and cl.get('to') and cl['to'] < TODAY)
+    print(('ok   ' if ok else 'FAIL ') + f"ended: to={cl and cl.get('to')} < today = not shown"); bad += not ok
+    a = {'ref': 'R', 'details': '"Cliffside Trail #519 Closure"', 'title': ''}; b = {'ref': 'R', 'details': '"Cliffside Trail #519 is closed between Noes and Sawyer ramps."', 'title': 'Cliffside Trail #519 Closure'}
+    ok = drop_title_twins([a, b]) == [b]; print(('ok   ' if ok else 'FAIL ') + 'title-only twin merged'); bad += not ok
     # the object of the Marben sentence
     cl = classify('Lake Margery at Marben PFA is currently closed to all access', {'names': ['Cybel WMA', 'Marben PFA']})
     ok = cl and cl['class'] == 'part' and cl['what'].lower().startswith('lake margery')
     print(('ok   ' if ok else 'FAIL ') + f"object: {cl and cl.get('what')} ({cl and cl.get('class')})"); bad += not ok
-    print(f'SELFTEST {"PASS" if not bad else "FAIL"}: {len(SELFTEST) + len(tests) + 5 - bad} of {len(SELFTEST) + len(tests) + 5}')
+    print(f'SELFTEST {"PASS" if not bad else "FAIL"}: {len(SELFTEST) + len(tests) + 7 - bad} of {len(SELFTEST) + len(tests) + 7}')
     return bad == 0
 
 
@@ -1515,7 +1559,8 @@ def main():
             state['areas'][a] = {**(state['areas'].get(a) or {}), 'status': 'error', 'why': str(e)[:160], 'read': NOW}
     if TEST or ('US-KY' in done): ky_test(state, review)
     state['hosts'] = M.resting()
-    state['last'] = {'when': NOW, 'areas': areas[:12], 'done': done, 'stat': STAT, 'manners': M.stat}
+    failed = [{'area': a, 'src': k, 'why': v.get('why'), 'url': v.get('url')} for a in done for k, v in ((load(OUT / f'{a}.json', {}) or {}).get('sources') or {}).items() if not v.get('ok') and not v.get('skipped')]
+    state['last'] = {'when': NOW, 'areas': areas[:12], 'done': done, 'stat': STAT, 'manners': M.stat, 'browser': BROWSER_LOG[:40], 'failed': failed[:40]}
     save(OUT / 'state.json', state)
     try: write_review(state, review)
     except Exception as e: notice(f'review not written: {str(e)[:160]}')  # noqa: BLE001
