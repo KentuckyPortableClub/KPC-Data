@@ -1,0 +1,157 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "midwest",
+ "states": [
+  "US-IN",
+  "US-IL",
+  "US-MO",
+  "US-WI",
+  "US-MN",
+  "US-IA",
+  "US-ND",
+  "US-SD"
+ ],
+ "since": "2026-10-28",
+ "date": "2026-10-28 17:40 UTC",
+ "verdict": "STOPPED",
+ "why": [
+  "water service: US-IN: 56 rows not checked because the USGS water map did not answer (run the worker again)",
+  "water service: US-IL: 16 rows not checked because the USGS water map did not answer (run the worker again)",
+  "water service: US-MO: 23 rows not checked because the USGS water map did not answer (run the worker again)",
+  "water service: US-WI: 21 rows not checked because the USGS water map did not answer (run the worker again)",
+  "water service: US-MN: 66 rows not checked because the USGS water map did not answer (run the worker again)",
+  "water service: US-IA: 2 rows not checked because the USGS water map did not answer (run the worker again)",
+  "water service: US-ND: 18 rows not checked because the USGS water map did not answer (run the worker again)",
+  "water service: US-SD: 15 rows not checked because the USGS water map did not answer (run the worker again)"
+ ],
+ "known_answers": "18/18 on 2026-10-28",
+ "missing_check": {
+  "FOUND": 184,
+  "DROPPED": 1188,
+  "NEVER LOOKED AT": 11762
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-28",
+   "pairs tested": 2286,
+   "pairs whose boxes touch": 2286
+  },
+  "pass2": {
+   "agree with the pass before": 1875,
+   "date": "2026-10-28",
+   "pairs tested": 501
+  },
+  "pass3": {
+   "agree with the pass before": 1124,
+   "date": "2026-10-28",
+   "pairs tested": 490
+  },
+  "pass5": {
+   "checked": 231,
+   "date": "2026-10-28",
+   "pairs tested": 0,
+   "still not checked": 217
+  }
+ },
+ "US-IN": {
+  "rows": 234,
+  "live": 5,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "the ownership map shows more than one owner across the spot": 2,
+   "water not checked": 56,
+   "low-confidence outline for Mongoquinong State Nature Preserv": 1
+  },
+  "dropped": 142,
+  "merged": 28
+ },
+ "US-IL": {
+  "rows": 104,
+  "live": 6,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "water not checked": 16,
+   "the ownership map shows more than one owner across the spot": 3,
+   "no public owner on the ownership map": 1
+  },
+  "dropped": 61,
+  "merged": 17
+ },
+ "US-MO": {
+  "rows": 362,
+  "live": 18,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "the ownership map shows more than one owner across the spot": 1,
+   "water not checked": 23,
+   "low-confidence outline for Ozark National Wild and Scenic Ri": 12,
+   "owner not known for Table Rock State Park": 1
+  },
+  "dropped": 191,
+  "merged": 116
+ },
+ "US-WI": {
+  "rows": 368,
+  "live": 11,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "water not checked": 21,
+   "the outlines overlap, but the PAD-US Park Service fee record": 7,
+   "no public owner on the ownership map": 1
+  },
+  "dropped": 262,
+  "merged": 66
+ },
+ "US-MN": {
+  "rows": 858,
+  "live": 54,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "water not checked": 66,
+   "the outlines overlap, but the PAD-US Park Service fee record": 1,
+   "no public owner on the ownership map": 4,
+   "the outlines overlap, but the Forest Service ownership map": 4
+  },
+  "dropped": 363,
+  "merged": 366
+ },
+ "US-IA": {
+  "rows": 4,
+  "live": 2,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "water not checked": 2
+  },
+  "dropped": 0,
+  "merged": 0
+ },
+ "US-ND": {
+  "rows": 83,
+  "live": 1,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "water not checked": 18,
+   "owner not known for Lake Sakakawea State Park": 1
+  },
+  "dropped": 21,
+  "merged": 42
+ },
+ "US-SD": {
+  "rows": 55,
+  "live": 2,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "water not checked": 15
+  },
+  "dropped": 29,
+  "merged": 9
+ }
+}
