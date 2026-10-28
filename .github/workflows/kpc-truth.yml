@@ -1,0 +1,111 @@
+name: KPC park truth checker (review lists)
+# Oct 28 2026 (HQ job 1, built by Fable in chat 10 'bot workshop'): for every US + Canada park with an outline, the agency's
+# published ACREAGE vs our outline (flag > 15% off, both numbers + the source line), HANDOVER / closure hints from agency pages,
+# newsrooms and POTA's retired list, and a SECOND-WITNESS SCORE per outline (weakest first) for chat 8's checking list.
+# REVIEW LISTS ONLY: it never changes a key, an outline or a card. Own script (kpc_truth_bot.py + kpc_manners.py), own folder
+# (data/truth). Manners: robots.txt obeyed, 1 request / 2 s per host, back-off, three strikes = a day's rest, PDFs by range.
+# A job = up to 5 chunks of 55 min, ONE commit per chunk; when areas remain and 'chain' allows, the job starts the next one.
+# Never fails except a failed save. WEEKLY (Sunday 09:17 UTC) only once state.json says the Kentucky test passed ('proven').
+on:
+  workflow_dispatch:
+    inputs:
+      areas:
+        description: 'Areas (e.g. "US-KY US-TN"); blank = the next unfinished areas in queue order (Kentucky, then the 2-fer regions: southeast first)'
+        default: ''
+      chunks:
+        description: 'Chunks of 55 min in this job (max 5)'
+        default: '5'
+      chain:
+        description: 'How many MORE jobs may follow this one by themselves when areas remain (0 = none)'
+        default: '8'
+      test:
+        description: 'yes = Kentucky test gate (Levi Jackson 722 vs 896 flagged + Otter Creek -> Meade County found); with then_queue a PASS starts the whole queue'
+        default: ''
+      then_queue:
+        description: 'yes = after a PASSED test, start the whole queue by itself'
+        default: ''
+  schedule:
+    - cron: '17 9 * * 0'
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: kpc-truth
+  cancel-in-progress: false
+jobs:
+  truth:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - name: Kentucky answer key + outlines + POTA retired list (KPC-Links, read-only)
+        uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+      - name: Weekly run only once proven
+        id: gate
+        continue-on-error: true
+        run: |
+          cd kpcdata
+          if [ "${{ github.event_name }}" = schedule ]; then
+            P=$(python3 -c "import json;print((json.load(open('data/truth/state.json')).get('proven') or ''))" 2>/dev/null || echo '')
+            [ -z "$P" ] && { echo "not proven yet: nothing to do"; echo "skip=1" >> "$GITHUB_OUTPUT"; }
+            # the weekly refresh: mark every area for another pass (REFRESH_DAYS decides per park)
+            python3 -c "
+          import json; p='data/truth/state.json'; s=json.load(open(p))
+          for a in s.get('areas',{}).values(): a['status']='queued'
+          json.dump(s,open(p,'w'),indent=1)" 2>/dev/null || true
+          fi
+      - name: Tools
+        if: steps.gate.outputs.skip != '1'
+        continue-on-error: true
+        run: pip install -q --break-system-packages pypdf || pip install -q pypdf || true
+      - name: Check, in chunks, one save per chunk
+        if: steps.gate.outputs.skip != '1'
+        continue-on-error: true
+        env:
+          AREAS: ${{ inputs.areas }}
+          TEST: ${{ inputs.test == 'yes' && '1' || '0' }}
+          LINKS: ../links
+        run: |
+          cd kpcdata
+          N=${{ inputs.chunks || 5 }}; [ "$N" -gt 5 ] && N=5
+          RES=''
+          for i in $(seq 1 $N); do
+            MINUTES=55 python3 .github/scripts/kpc_truth_bot.py | tee /tmp/truth.log || true
+            grep -q '^TEST=PASS' /tmp/truth.log && RES=PASS
+            grep -q '^TEST=FAIL' /tmp/truth.log && RES=FAIL
+            if [ "$RES" = PASS ]; then python3 -c "
+          import json; p='data/truth/state.json'; s=json.load(open(p)); s['proven']='$(date -u +%Y-%m-%d)'; json.dump(s,open(p,'w'),indent=1)" || true; fi
+            bash ../links/.github/scripts/kpc_push_data.sh . "park truth checker: chunk $i (review lists: acreage, handovers, second witness)" data/truth || true
+            LEFT=$(python3 -c "
+          import json,os,sys
+          sys.path.insert(0, '.github/scripts'); import kpc_truth_bot as B
+          s = json.load(open('data/truth/state.json'))
+          want = os.environ.get('AREAS', '').upper().split()
+          q = [a for a in B.QUEUE if a in want] if want else B.QUEUE
+          print(sum(1 for a in q if (s['areas'].get(a) or {}).get('status') != 'done'))" 2>/dev/null || echo 1)
+            echo "chunk $i done, $LEFT areas left"
+            [ "$LEFT" = 0 ] && break
+          done
+          echo "LEFT=$LEFT" >> "$GITHUB_ENV"
+          echo "RES=$RES" >> "$GITHUB_ENV"
+      - name: A passed Kentucky test starts the queue
+        if: ${{ inputs.areas != '' && inputs.then_queue == 'yes' && env.RES == 'PASS' }}
+        continue-on-error: true
+        run: |
+          echo "::notice title=Park truth checker::Kentucky test PASSED: starting the whole queue (chain ${{ inputs.chain }})"
+          gh workflow run kpc-truth.yml -R ${{ github.repository }} -f areas= -f chunks=5 -f chain=${{ inputs.chain }} || true
+      - name: Areas remain: the next job starts itself
+        if: ${{ inputs.areas == '' && env.LEFT != '0' && env.LEFT != '' && inputs.chain != '0' && inputs.chain != '' }}
+        continue-on-error: true
+        run: |
+          C=$(( ${{ inputs.chain }} - 1 ))
+          echo "::notice title=Park truth checker::$LEFT areas left: the next job starts itself (then $C more may follow)"
+          gh workflow run kpc-truth.yml -R ${{ github.repository }} -f areas= -f chunks=5 -f chain=$C || true
