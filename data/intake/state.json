@@ -1,5 +1,5 @@
 {
- "gate": "FAIL",
+ "gate": "PASS",
  "hosts": {
   "prostor4.gov.si": 1793278595.936402
  },
@@ -8,7 +8,7 @@
   "arcgis_exempt": 3,
   "errors": 0,
   "requests": 3,
-  "rested": 0,
+  "rested": 1,
   "robots": 0,
   "strikes": 0
  },
@@ -30,11 +30,12 @@
    ]
   },
   "https://prostor4.gov.si/ows2-ins/ps/wfs": {
+   "fails": 1,
    "probed": "2026-10-28",
-   "retry": false,
+   "retry": true,
    "sig": "https://prostor4.gov.si/ows2-ins/ps/wfs?service=wfs&version=2.0.0&request=GetCapabilities|Slovenia protected areas (ARSO, INSPIRE PS WFS)|Agencija RS za okolje (ARSO) / Slovenian Environment Agency|ATOM feed rights: 'No limitations'|WFS (not ArcGIS): the host did not resolve from a GitHub runner on Oct 28 (DNS); ATOM download feed http://gis.arso.gov.si/related/atom/inspire/datafeeds/zav_obm_poli.xml (GML, 2021-12-10). Needs the typename read from GetCapabilities.|READY (WFS) or did-not-open",
    "verdicts": [
-    "REJECT"
+    "RETRY"
    ]
   },
   "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Doorstep_Greens_Polygons/FeatureServer": {
@@ -102,9 +103,9 @@
    ]
   },
   "https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0": {
-   "fails": 2,
+   "fails": 3,
    "probed": "2026-10-28",
-   "retry": true,
+   "retry": false,
    "sig": "https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0|My favorite camping spots (a hobby map)|hobby account (personal map)||test row (h): a made-up hobby layer on a non-government account; the bot marks it RETRY (did not open) and after three runs sends the url to chat 9; a real hobby layer that opens is REJECT (not official)|REJECT or did-not-open",
    "verdicts": [
     "RETRY"
@@ -113,16 +114,16 @@
  },
  "stat": {
   "ask": 0,
-  "did_not_open": 1,
+  "did_not_open": 2,
   "live_only": 0,
-  "probed": 1,
+  "probed": 2,
   "ready": 0,
   "reject": 0,
-  "retry": 1,
+  "retry": 2,
   "rows": 11,
-  "skipped_fresh": 10,
+  "skipped_fresh": 9,
   "tests_miss": 0,
-  "tests_ok": 1,
+  "tests_ok": 2,
   "water_only": 0
  }
 }

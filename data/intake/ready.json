@@ -1015,7 +1015,7 @@
    "queue_note": "test row (h): a made-up hobby layer on a non-government account; the bot marks it RETRY (did not open) and after three runs sends the url to chat 9; a real hobby layer that opens is REJECT (not official)",
    "queue_url": "https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0",
    "requests_used": 3,
-   "retry": true,
+   "retry": false,
    "sig": "https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0|My favorite camping spots (a hobby map)|hobby account (personal map)||test row (h): a made-up hobby layer on a non-government account; the bot marks it RETRY (did not open) and after three runs sends the url to chat 9; a real hobby layer that opens is REJECT (not official)|REJECT or did-not-open",
    "terms": {
     "class": "NOTHING STATED",
@@ -1027,7 +1027,7 @@
    "url": "https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (error Invalid URL): probed again next run (failed 2 of 3)"
+   "why": "did not open 3 times (error Invalid URL): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -1049,18 +1049,20 @@
    ],
    "queue_licence": "ATOM feed rights: 'No limitations'",
    "queue_note": "WFS (not ArcGIS): the host did not resolve from a GitHub runner on Oct 28 (DNS); ATOM download feed http://gis.arso.gov.si/related/atom/inspire/datafeeds/zav_obm_poli.xml (GML, 2021-12-10). Needs the typename read from GetCapabilities.",
+   "queue_url": "https://prostor4.gov.si/ows2-ins/ps/wfs",
+   "retry": true,
    "sig": "https://prostor4.gov.si/ows2-ins/ps/wfs?service=wfs&version=2.0.0&request=GetCapabilities|Slovenia protected areas (ARSO, INSPIRE PS WFS)|Agencija RS za okolje (ARSO) / Slovenian Environment Agency|ATOM feed rights: 'No limitations'|WFS (not ArcGIS): the host did not resolve from a GitHub runner on Oct 28 (DNS); ATOM download feed http://gis.arso.gov.si/related/atom/inspire/datafeeds/zav_obm_poli.xml (GML, 2021-12-10). Needs the typename read from GetCapabilities.|READY (WFS) or did-not-open",
    "terms": {
     "class": "OPEN",
     "line": "ATOM feed rights: 'No limitations'",
     "source": "GetCapabilities + queue row"
    },
-   "test": "MISS READY (WFS) or did-not-open vs REJECT",
+   "test": "ok",
    "title": "Slovenia protected areas (ARSO, INSPIRE PS WFS)",
    "url": "https://prostor4.gov.si/ows2-ins/ps/wfs",
    "ver": 1,
-   "verdict": "REJECT",
-   "why": "did not open (rest): url to confirm"
+   "verdict": "RETRY",
+   "why": "did not open (rest): probed again next run (failed 1 of 3)"
   },
   {
    "approved": null,

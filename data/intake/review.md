@@ -8,8 +8,8 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 | WATER-ONLY | 1 |
 | LIVE-ONLY | 1 |
 | ASK-THE-PUBLISHER | 2 |
-| RETRY | 1 |
-| REJECT | 5 |
+| RETRY | 2 |
+| REJECT | 4 |
 
 ## READY (1)
 
@@ -112,18 +112,27 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 36 missing parks lie in the layer's extent)
 - TEST: ok
 
-## RETRY (1)
+## RETRY (2)
 
 ### My favorite camping spots (a hobby map)  ·  US-KY  ·  from chat 9
 - url: https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0
-- WHY: did not open (error Invalid URL): probed again next run (failed 2 of 3)
+- WHY: did not open 3 times (error Invalid URL): chat 9 checks the url
 - publisher: hobby account (personal map) → not official (hobby in the publisher words)
 - terms: NOTHING STATED · source none
 - facts: status error Invalid URL
 - closes: not probed
 - TEST: ok
 
-## REJECT (5)
+### Slovenia protected areas (ARSO, INSPIRE PS WFS)  ·  W-SI  ·  from chat 9
+- url: https://prostor4.gov.si/ows2-ins/ps/wfs
+- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- publisher: Agencija RS za okolje (ARSO) / Slovenian Environment Agency → official (government host prostor4.gov.si)
+- terms: OPEN · source GetCapabilities + queue row · "ATOM feed rights: 'No limitations'"
+- facts: wfs · status rest
+- closes: not probed: WFS point query not built
+- TEST: ok
+
+## REJECT (4)
 
 ### Nevada State Parks boundaries (Division of State Parks, VS Boundary Map)  ·  US-NV  ·  from chat 9
 - url: https://services7.arcgis.com/5hLFVlePaucIMGhw/arcgis/rest/services/VS_Boundary_Map_2_WFL1/FeatureServer/2
@@ -163,15 +172,6 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - closes: 0 of 60 tested missing parks (by name 0, pin only 0; 3357 of the area's 3357 missing parks lie in the layer's extent)
 - TEST: ok
 
-### Slovenia protected areas (ARSO, INSPIRE PS WFS)  ·  W-SI  ·  from chat 9
-- url: https://prostor4.gov.si/ows2-ins/ps/wfs
-- WHY: did not open (rest): url to confirm
-- publisher: Agencija RS za okolje (ARSO) / Slovenian Environment Agency → official (government host prostor4.gov.si)
-- terms: OPEN · source GetCapabilities + queue row · "ATOM feed rights: 'No limitations'"
-- facts: wfs · status rest
-- closes: not probed: WFS point query not built
-- TEST: MISS READY (WFS) or did-not-open vs REJECT
-
 ## Known-answer test rows
 
 | row | expect | got | result |
@@ -185,7 +185,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 | Millennium Greens (England) polygons | READY or REJECT | REJECT | ok |
 | SSSI units (England) | READY or REJECT | READY | ok |
 | My favorite camping spots (a hobby map) | REJECT or did-not-open | RETRY | ok |
-| Slovenia protected areas (ARSO, INSPIRE PS WFS) | READY (WFS) or did-not-open | REJECT | MISS READY (WFS) or did-not-open vs REJECT |
+| Slovenia protected areas (ARSO, INSPIRE PS WFS) | READY (WFS) or did-not-open | RETRY | ok |
 | SCDNR managed lands (public viewer) on Clemson's ArcGIS Online account | ASK-THE-PUBLISHER or already read | ASK-THE-PUBLISHER | ok |
 
-GATE=FAIL
+GATE=PASS
