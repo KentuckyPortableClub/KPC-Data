@@ -33,7 +33,7 @@ LINKS = pathlib.Path(os.environ.get('LINKS') or 'links')
 T0 = time.time(); LIMIT = float(os.environ.get('MINUTES') or 55) * 60
 REFRESH_DAYS = int(os.environ.get('REFRESH_DAYS') or 90)
 TODAY = time.strftime('%Y-%m-%d')
-VER = 4   # Oct 28 8 AM: the page-list unpack fix; VER 3 was the 6:40 AM (chat 11's grade + regrade): schedule / labelled rows count; questions, events, '$N million' never; attraction hours labelled
+VER = 5   # Oct 28 9 AM: debug text for gate misses; VER 4 =: the page-list unpack fix; VER 3 was the 6:40 AM (chat 11's grade + regrade): schedule / labelled rows count; questions, events, '$N million' never; attraction hours labelled
 QUEUE = T.QUEUE
 STAT = {'parks': 0, 'pages_read': 0, 'hours': 0, 'fees': 0, 'permits': 0, 'none': 0, 'no_page': 0, 'skipped_fresh': 0, 'errors': 0}
 
@@ -140,6 +140,8 @@ def one_park(ref, park, web, docs, ky):
         if st != 'ok' or not text: continue
         STAT['pages_read'] += 1
         f = facts_in(text, park['n'], u)
+        if os.environ.get('TEST') == '1' and ref in HKEY and (HKEY[ref].get('hours') or HKEY[ref].get('fee')) and not (f['hours'] or f['fees']):   # the gate's parks: keep what the page said around 'hours' / 'open' so a MISS can be read
+            m = re.search(r'(?i)(hours|open|admission|fee)', text); r.setdefault('debug', []).append({'url': u, 'kind': kind, 'text': ' '.join(text[max(0, (m.start() if m else 0) - 200):(m.start() if m else 0) + 600].split())})
         tour = bool(TOURISM.search(u))   # H-R5: a tourism site is state government, not the park's agency: labelled, kept apart
         for k in ('hours', 'fees', 'permits', 'other_fees', 'office_hours', 'hunting_hours', 'attraction_fees', 'attraction_hours'):
             for s in f[k]:

@@ -51,7 +51,8 @@ REFRESH_DAYS = int(os.environ.get('REFRESH_DAYS') or 30)
 RIDB_KEY = (os.environ.get('RIDB_API_KEY') or '').strip()
 FCC_USER = (os.environ.get('FCC_BDC_USERNAME') or '').strip(); FCC_TOKEN = (os.environ.get('FCC_BDC_TOKEN') or '').strip()
 TODAY = time.strftime('%Y-%m-%d')
-VER = 5   # 5 = round 4: facts only from THIS campground's section of a shared page, KEY_WRONG table, 'some' = agree, WARN rows.
+VER = 6   # 6 = round 5: gate rows blocked by a missing secret / a browser are WARN, PASS = every READ row right; browser hosts listed once.
+          # 5 = round 4; 5 = round 4: facts only from THIS campground's section of a shared page, KEY_WRONG table, 'some' = agree, WARN rows.
           # 4 = round 3; 4 = round 3 (chat 11 regrade): reservation-line phones out, bare-domain booking out, fire RULES only, merge by park ref,
           # state-park campground sub-pages read, more gate rows.
           # 3 = round 2; 2 = Oct 28 chat 8 grade C-1..C-6 (negation, footer phones, duplicates, hosts); 3 = chat 11 round 2 (elevation != RV length,
@@ -790,9 +791,13 @@ def ky_gate(D, agree, differ):
             d = (d or {}).get(p) if isinstance(d, dict) else None
         return d
     for words, field, want, why in GATE_ROWS:
-        recs = [r for r in (D.get('camps') or {}).values() if words in r.get('name', '').lower() and r.get('status') == 'ok']
+        allrecs = [r for r in (D.get('camps') or {}).values() if words in r.get('name', '').lower()]
+        recs = [r for r in allrecs if (r.get('status') or '').startswith('ok')]
         if not recs:
-            rows.append({'ok': None, 'why': why, 'got': 'record not read (status not ok)'}); continue
+            # round 5: a row the bot could not READ (secret missing, needs a browser, page not open) is a WARN counted apart, never a fail
+            st = (allrecs[0].get('status') if allrecs else 'no record') or 'no record'
+            kind = 'secret' if 'secret' in st else 'warn'
+            rows.append({'ok': kind, 'why': why, 'got': f'not read: {st}'}); continue
         rec = recs[0]; got = get(rec, field) if field else None
         if want == 'one-record':
             n = sum(1 for r in (D.get('camps') or {}).values() if words in r.get('name', '').lower()); got = f'{n} record(s)'; ok = n == 1
@@ -811,9 +816,10 @@ def ky_gate(D, agree, differ):
         rows.append({'ok': bool(ok), 'why': why, 'got': got if want != 'sentence-or-null' else f"{got} from “{line[:90]}”"})
     filled = agree + differ
     pct = round(100 * agree / filled) if filled else 0
-    known_ok = all(r['ok'] for r in rows if r['ok'] is not None); unread = sum(1 for r in rows if r['ok'] is None); warn = sum(1 for r in rows if r['ok'] == 'warn')
-    res = 'PASS' if known_ok and pct >= 70 and unread == 0 and filled else 'FAIL'
-    why = f"known answers {sum(1 for r in rows if r['ok'] is True)}/{len(rows)} right ({warn} warn, {unread} not read) · hand-key agreement {agree}/{filled} = {pct}% (need 70%; 'some' = agree; KEY_WRONG rows left out)"
+    read = [r for r in rows if r['ok'] in (True, False)]; right = sum(1 for r in read if r['ok'] is True)
+    secret = sum(1 for r in rows if r['ok'] == 'secret'); warn = sum(1 for r in rows if r['ok'] == 'warn')
+    res = 'PASS' if read and right == len(read) and pct >= 70 and filled else 'FAIL'
+    why = f"known answers: {right} right of {len(read)} read, {secret} waiting on the secret, {warn} warn · hand-key agreement {agree}/{filled} = {pct}% (need 70%; 'some' = agree; KEY_WRONG rows left out)"
     return {'result': res, 'why': why, 'when': TODAY, 'rows': rows, 'pct': pct}
 
 
@@ -942,16 +948,20 @@ def review(state):
     ca = [a for a in QUEUE if a.startswith('CA-') and (state['areas'].get(a) or {}).get('note')]
     if ca: notes.append('Canada: no campground rows exist in KPC-Data yet (no campfed / campstate file for CA-xx; parkinfo/CA.json lists activities only), so the Canadian areas are marked done with nothing read. Parks Canada camping needs its own list first.')
     if notes: L += ['', '## Needs a secret / not built yet', ''] + [f'- {n}' for n in notes]
-    hosts = {}
+    hosts = {}; browser_pass = {}
     for a in QUEUE:
         D = load(OUT / f'{a}.json', None)
         if not D: continue
         for r in D['camps'].values():
             s = r.get('status') or ''
-            if '403' in s or 'robots' in s or 'resting' in s or 'needs browser' in s:
+            if '403' in s or 'robots' in s or 'resting' in s:
                 h = host_of(r.get('official_page') or ''); hosts.setdefault(h, [s, 0])[1] += 1
+            elif 'needs browser' in s:
+                h = host_of(r.get('official_page') or ''); browser_pass[h] = browser_pass.get(h, 0) + 1
     if hosts:
         L += ['', '## Hosts that need a browser (403), say no in robots.txt, or are resting', ''] + [f'- {h}: {n} campgrounds · {s}' for h, (s, n) in sorted(hosts.items(), key=lambda x: -x[1][1])[:40]]
+    if browser_pass:
+        L += ['', '## Needs a browser pass (the page opened but its text holds no campground facts: filled by script, most likely)', ''] + [f'- {h}: {n} campgrounds' for h, n in sorted(browser_pass.items(), key=lambda x: -x[1])[:40]]
     k = state.get('ky_check')
     if k:
         L += ['', '## Kentucky answer-key check (R5: the bot vs kpc-campgrounds.json, hand-checked)', '',
@@ -959,7 +969,7 @@ def review(state):
         g = k.get('gate')
         if g:
             L += [f"**GATE={g['result']}** · {g['why']}", '']
-            for r in g['rows']: L.append(f"- {'ok' if r['ok'] is True else 'WARN' if r['ok'] == 'warn' else 'not read' if r['ok'] is None else 'MISS'}: {r['why']} · got {r['got']}")
+            for r in g['rows']: L.append(f"- {'ok' if r['ok'] is True else 'WAITING ON SECRET' if r['ok'] == 'secret' else 'WARN' if r['ok'] == 'warn' else 'MISS'}: {r['why']} · got {r['got']}")
             L.append('')
         if k.get('key_wrong'):
             L += ['**KEY_WRONG (hand-key rows the checkers found wrong; left out of the count; Brandon fixes the key):**', '', '| campground | field | bot | key | why |', '|---|---|---|---|---|']

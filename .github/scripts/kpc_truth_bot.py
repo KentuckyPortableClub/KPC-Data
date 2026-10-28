@@ -48,7 +48,7 @@ REFRESH_DAYS = int(os.environ.get('REFRESH_DAYS') or 7)
 TOL = 0.15
 PDF_FIRST = 400_000
 TODAY = time.strftime('%Y-%m-%d')
-VER = 5   # Oct 28 (chat 11's KY grade): '708, 879' parse + summed lakes, other-unit pages, history words + stale years, unsure carries a cause, own-page handover hints, quoted URLs, 10-row gate, same-agency label
+VER = 6   # Oct 28 (chat 11's KY grade): '708, 879' parse + summed lakes, other-unit pages, history words + stale years, unsure carries a cause, own-page handover hints, quoted URLs, 10-row gate, same-agency label
 QUEUE = ['US-KY',
          'US-TN', 'US-NC', 'US-VA', 'US-WV', 'US-GA', 'US-AL', 'US-SC', 'US-FL', 'US-MS',
          'US-IN', 'US-IL', 'US-MO', 'US-WI', 'US-MN', 'US-IA', 'US-ND', 'US-SD',
@@ -204,24 +204,24 @@ def sizes_in(text, name, other_unit=False, is_pdf=False):
             label = bool(LABEL.search(before))
             name_in = bool(me6 and me6 in core(sent)) or (label and bool(me6 and me6 in core(text[max(0, m.start() - 400):m.start()])))
             why = ''
+            own_subject = bool(re.match(r'^\s*(?:the|this) (?:park|area|refuge|forest|preserve|sanctuary|site|property|wma|monument|seashore|lakeshore)\b', sent.strip(), re.I)) and not other_unit
             looks = bool(TOTALWORD.search(near)) or any(w in near for w in cn) or label
             if is_pdf and not (label or (name_in and len(sent.split()) >= 6)): looks = False; why = 'a map label (no sentence)'   # Cumberland Gap '15 acres', Taylorsville '248': labels on a map PDF
             if any(a0 <= m.start() < b0 for a0, b0 in sums): looks = False; why = 'part of a sum'
             if HISTORY.search(sl) or OLD_YEAR.search(left_of(text, m.start())): looks = False; why = 'history'
             hard = bool(HARD_PART.search(strip_name(sl))) and not label; soft = bool(PART.search(strip_name(sl))) and not label   # the SAME sentence, not the neighbour's
-            own_subject = bool(re.match(r'^\s*(?:the|this) (?:park|area|refuge|forest|preserve|sanctuary|site|property|wma|monument|seashore|lakeshore)\b', sent.strip(), re.I)) and not other_unit
             clean = bool(looks and not why and (label or ((name_in or own_subject) and CLEAN.search(sl))) and not hard)
             if looks and not why and (hard or (soft and not clean)): looks = False; why = 'part (a lake, a purchase, a campground…)'
             if looks and DESIG.get('state') and re.search(r'\bnational\b', near) and not re.search(r'\bstate\b', near): looks = clean = False; why = 'a national unit on a state park page'
             if looks and DESIG.get('national') and re.search(r'\bstate (?:wild river|natural area|nature preserve|park|forest|wma)\b', near) and not re.search(r'\bnational\b', near): looks = clean = False; why = 'a state unit on a national park page'
-            if looks and not name_in and other_unit_named(sent, me6): looks = clean = False; why = 'another park / unit named in the sentence'   # a sentence that names THIS park is this park's (Levi Jackson: 'Laurel County' is not Laurel River Lake)
+            if looks and not name_in and not own_subject and other_unit_named(sent, me6): looks = clean = False; why = 'another park / unit named in the sentence'   # a sentence that names THIS park is this park's (Levi Jackson: 'Laurel County' is not Laurel River Lake)
             if looks and other_unit and not name_in: looks = clean = False; why = "a page of another unit; the sentence does not name this park"
             if looks and not why: why = 'clean total' if clean else 'total-looking'
             if not looks and not why: why = 'no total words near it'
             stale = None
             ms = STALE.search(text[m.end():m.end() + 40])
             if ms and year_now - int(ms.group(1)) > 3: stale = int(ms.group(1))
-            out.append({'acres': round(a, 1), 'as': f'{n} {unit}', 'line': line, 'total': looks, 'clean': clean, 'why': why, 'stale': stale})
+            out.append({'acres': round(a, 1), 'as': f'{n} {unit}', 'line': line, 'total': looks, 'clean': clean, 'why': why, 'stale': stale, 'sent': sent[:300]})
             if len(out) >= 12: return out
     return out
 
