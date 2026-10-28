@@ -1,6 +1,46 @@
 {
- "checked": "2026-10-26",
+ "checked": "2026-10-28",
  "leads": [
+  {
+   "agency": "© 2024 Government of British Columbia",
+   "area": "",
+   "count": 214,
+   "fields": [
+    "FEATURE_CODE",
+    "DESCRIPTION",
+    "LOCATION",
+    "DATA_SOURCE",
+    "COMMENTS"
+   ],
+   "known": false,
+   "layer": "Coastal BC Marine Kayaking Destinations",
+   "sample": [
+    {
+     "COMMENTS": " ",
+     "DATA_SOURCE": "MOF / CTRIP",
+     "DESCRIPTION": "Staging Area",
+     "FEATURE_CODE": " ",
+     "LOCATION": "Lund"
+    },
+    {
+     "COMMENTS": " ",
+     "DATA_SOURCE": "MOF / CTRIP",
+     "DESCRIPTION": "Staging Area",
+     "FEATURE_CODE": " ",
+     "LOCATION": "Okeover Inlet"
+    },
+    {
+     "COMMENTS": "Okeover Arm Provincial Park",
+     "DATA_SOURCE": "PARKS, STREETMAP",
+     "DESCRIPTION": "Picnic Site & Campsite",
+     "FEATURE_CODE": " ",
+     "LOCATION": "Okeover Inlet, Malaspina Peninsula"
+    }
+   ],
+   "service": "whse/bcgw_pub_whse_environmental_monitoring",
+   "typef": "FEATURE_CODE",
+   "url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_environmental_monitoring/MapServer/31"
+  },
   {
    "agency": "© 2024 Government of British Columbia",
    "area": "",
@@ -27,7 +67,7 @@
     "ACTIVITY_DESC3",
     "ACTIVITY4"
    ],
-   "known": false,
+   "known": true,
    "layer": "Recreation Trail Heads Subset - Information Purposes Only",
    "sample": [
     {
@@ -74,7 +114,7 @@
     "DATA_SOURCE",
     "SOURCE_PROJECT"
    ],
-   "known": false,
+   "known": true,
    "layer": "Coastal BC Boat Launches",
    "sample": [
     {
@@ -102,46 +142,6 @@
    "service": "whse/bcgw_pub_whse_environmental_monitoring",
    "typef": "FEATURE_CODE",
    "url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_environmental_monitoring/MapServer/9"
-  },
-  {
-   "agency": "© 2024 Government of British Columbia",
-   "area": "",
-   "count": 214,
-   "fields": [
-    "FEATURE_CODE",
-    "DESCRIPTION",
-    "LOCATION",
-    "DATA_SOURCE",
-    "COMMENTS"
-   ],
-   "known": false,
-   "layer": "Coastal BC Marine Kayaking Destinations",
-   "sample": [
-    {
-     "COMMENTS": " ",
-     "DATA_SOURCE": "MOF / CTRIP",
-     "DESCRIPTION": "Staging Area",
-     "FEATURE_CODE": " ",
-     "LOCATION": "Lund"
-    },
-    {
-     "COMMENTS": " ",
-     "DATA_SOURCE": "MOF / CTRIP",
-     "DESCRIPTION": "Staging Area",
-     "FEATURE_CODE": " ",
-     "LOCATION": "Okeover Inlet"
-    },
-    {
-     "COMMENTS": "Okeover Arm Provincial Park",
-     "DATA_SOURCE": "PARKS, STREETMAP",
-     "DESCRIPTION": "Picnic Site & Campsite",
-     "FEATURE_CODE": " ",
-     "LOCATION": "Okeover Inlet, Malaspina Peninsula"
-    }
-   ],
-   "service": "whse/bcgw_pub_whse_environmental_monitoring",
-   "typef": "FEATURE_CODE",
-   "url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_environmental_monitoring/MapServer/31"
   }
  ],
  "st": "CA-BC"

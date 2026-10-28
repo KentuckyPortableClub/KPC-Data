@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-26",
+ "checked": "2026-10-28",
  "leads": [
   {
    "agency": "",
@@ -230,58 +230,6 @@
   {
    "agency": "",
    "area": "Name",
-   "count": 6,
-   "fields": [
-    "Name",
-    "Type"
-   ],
-   "known": false,
-   "layer": "Public_Boat_Launch",
-   "sample": [
-    {
-     "Name": "Toronto Islands (Trout Pond)",
-     "Type": "Public Boat Launch"
-    },
-    {
-     "Name": "Marie Curtis Park",
-     "Type": "Public Boat Launch"
-    },
-    {
-     "Name": "Humber Bay Park West",
-     "Type": "Public Boat Launch"
-    }
-   ],
-   "service": "Public_Boat_Launch",
-   "typef": "Type",
-   "url": "https://services1.arcgis.com/d0ZCwU7eGKVeNiEE/arcgis/rest/services/Public_Boat_Launch/FeatureServer/0"
-  },
-  {
-   "agency": "",
-   "area": "",
-   "count": 1,
-   "fields": [
-    "CA_ID",
-    "CA_Name",
-    "Feature",
-    "Comments",
-    "Directions"
-   ],
-   "known": false,
-   "layer": "Hedley Forest Entrance",
-   "sample": [
-    {
-     "CA_Name": "Hedley Forest",
-     "Directions": "https://www.google.com/maps?saddr=My+Location&daddr=42.99816,-79.73585",
-     "Feature": "Entrance"
-    }
-   ],
-   "service": "Hedley_Forest_Entrance",
-   "typef": "Feature",
-   "url": "https://services1.arcgis.com/d0ZCwU7eGKVeNiEE/arcgis/rest/services/Hedley_Forest_Entrance/FeatureServer/0"
-  },
-  {
-   "agency": "",
-   "area": "Name",
    "count": 1,
    "fields": [
     "Name",
@@ -324,56 +272,6 @@
    "service": "Scugog_Carrying_Place_Trail",
    "typef": "",
    "url": "https://services1.arcgis.com/d0ZCwU7eGKVeNiEE/arcgis/rest/services/Scugog_Carrying_Place_Trail/FeatureServer/1"
-  },
-  {
-   "agency": "",
-   "area": "",
-   "count": 1,
-   "fields": [
-    "CA_ID",
-    "CA_Name",
-    "Feature",
-    "Comments",
-    "Directions"
-   ],
-   "known": false,
-   "layer": "Wainfleet Wetlands Entrance",
-   "sample": [
-    {
-     "CA_ID": "10",
-     "CA_Name": "Wainfleet Wetlands",
-     "Directions": "https://www.google.com/maps?saddr=My+Location&daddr=42.88615,-79.30516",
-     "Feature": "Entrance"
-    }
-   ],
-   "service": "Wainfleet_Wetlands_Entrance",
-   "typef": "Feature",
-   "url": "https://services1.arcgis.com/d0ZCwU7eGKVeNiEE/arcgis/rest/services/Wainfleet_Wetlands_Entrance/FeatureServer/0"
-  },
-  {
-   "agency": "",
-   "area": "",
-   "count": 1,
-   "fields": [
-    "CA_ID",
-    "CA_Name",
-    "Feature",
-    "Comments",
-    "Directions"
-   ],
-   "known": false,
-   "layer": "Chippawa_Creek_Entrance",
-   "sample": [
-    {
-     "CA_ID": "5",
-     "CA_Name": "Chippawa",
-     "Directions": "https://www.google.com/maps?saddr=My+Location&daddr=42.99197,-79.51509",
-     "Feature": "Entrance"
-    }
-   ],
-   "service": "Chippawa_Creek_Entrance",
-   "typef": "Feature",
-   "url": "https://services1.arcgis.com/d0ZCwU7eGKVeNiEE/arcgis/rest/services/Chippawa_Creek_Entrance/FeatureServer/0"
   },
   {
    "agency": "",
@@ -585,6 +483,108 @@
    "service": "Boat_Launch_CRCA_2021",
    "typef": "",
    "url": "https://services3.arcgis.com/DkDI7U7oNtqFwb5V/arcgis/rest/services/Boat_Launch_CRCA_2021/FeatureServer/0"
+  },
+  {
+   "agency": "",
+   "area": "Name",
+   "count": 6,
+   "fields": [
+    "Name",
+    "Type"
+   ],
+   "known": true,
+   "layer": "Public_Boat_Launch",
+   "sample": [
+    {
+     "Name": "Toronto Islands (Trout Pond)",
+     "Type": "Public Boat Launch"
+    },
+    {
+     "Name": "Marie Curtis Park",
+     "Type": "Public Boat Launch"
+    },
+    {
+     "Name": "Humber Bay Park West",
+     "Type": "Public Boat Launch"
+    }
+   ],
+   "service": "Public_Boat_Launch",
+   "typef": "Type",
+   "url": "https://services1.arcgis.com/d0ZCwU7eGKVeNiEE/arcgis/rest/services/Public_Boat_Launch/FeatureServer/0"
+  },
+  {
+   "agency": "",
+   "area": "",
+   "count": 1,
+   "fields": [
+    "CA_ID",
+    "CA_Name",
+    "Feature",
+    "Comments",
+    "Directions"
+   ],
+   "known": true,
+   "layer": "Hedley Forest Entrance",
+   "sample": [
+    {
+     "CA_Name": "Hedley Forest",
+     "Directions": "https://www.google.com/maps?saddr=My+Location&daddr=42.99816,-79.73585",
+     "Feature": "Entrance"
+    }
+   ],
+   "service": "Hedley_Forest_Entrance",
+   "typef": "Feature",
+   "url": "https://services1.arcgis.com/d0ZCwU7eGKVeNiEE/arcgis/rest/services/Hedley_Forest_Entrance/FeatureServer/0"
+  },
+  {
+   "agency": "",
+   "area": "",
+   "count": 1,
+   "fields": [
+    "CA_ID",
+    "CA_Name",
+    "Feature",
+    "Comments",
+    "Directions"
+   ],
+   "known": true,
+   "layer": "Wainfleet Wetlands Entrance",
+   "sample": [
+    {
+     "CA_ID": "10",
+     "CA_Name": "Wainfleet Wetlands",
+     "Directions": "https://www.google.com/maps?saddr=My+Location&daddr=42.88615,-79.30516",
+     "Feature": "Entrance"
+    }
+   ],
+   "service": "Wainfleet_Wetlands_Entrance",
+   "typef": "Feature",
+   "url": "https://services1.arcgis.com/d0ZCwU7eGKVeNiEE/arcgis/rest/services/Wainfleet_Wetlands_Entrance/FeatureServer/0"
+  },
+  {
+   "agency": "",
+   "area": "",
+   "count": 1,
+   "fields": [
+    "CA_ID",
+    "CA_Name",
+    "Feature",
+    "Comments",
+    "Directions"
+   ],
+   "known": true,
+   "layer": "Chippawa_Creek_Entrance",
+   "sample": [
+    {
+     "CA_ID": "5",
+     "CA_Name": "Chippawa",
+     "Directions": "https://www.google.com/maps?saddr=My+Location&daddr=42.99197,-79.51509",
+     "Feature": "Entrance"
+    }
+   ],
+   "service": "Chippawa_Creek_Entrance",
+   "typef": "Feature",
+   "url": "https://services1.arcgis.com/d0ZCwU7eGKVeNiEE/arcgis/rest/services/Chippawa_Creek_Entrance/FeatureServer/0"
   },
   {
    "agency": "",
