@@ -1,0 +1,55 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "mi",
+ "states": [
+  "US-MI"
+ ],
+ "since": "2026-10-28",
+ "date": "2026-10-28 16:10 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
+ "known_answers": "18/18 on 2026-10-28",
+ "missing_check": {
+  "FOUND": 91,
+  "DROPPED": 244,
+  "NEVER LOOKED AT": 4043
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-28",
+   "pairs tested": 1072,
+   "pairs whose boxes touch": 1072
+  },
+  "pass2": {
+   "agree with the pass before": 654,
+   "date": "2026-10-28",
+   "pairs tested": 153
+  },
+  "pass3": {
+   "agree with the pass before": 592,
+   "date": "2026-10-28",
+   "pairs tested": 153
+  },
+  "pass5": {
+   "checked": 40,
+   "date": "2026-10-28",
+   "pairs tested": 0,
+   "still not checked": 39
+  }
+ },
+ "US-MI": {
+  "rows": 701,
+  "live": 85,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "water not checked": 39,
+   "the ownership map shows more than one owner across the spot": 1,
+   "no public owner on the ownership map": 16,
+   "the outlines overlap, but the PAD-US state fee records does": 2,
+   "the outlines overlap, but the PAD-US state fee records / For": 1
+  },
+  "dropped": 241,
+  "merged": 316
+ }
+}
