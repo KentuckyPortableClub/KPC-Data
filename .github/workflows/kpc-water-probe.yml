@@ -1,0 +1,67 @@
+name: TEMP water backup probe (delete after)
+# Oct 28 (HQ): retest chat 8's river backups (KPC_RiverBackup_desk.md) from the runner. Never fails.
+on: workflow_dispatch
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: probe
+        continue-on-error: true
+        shell: python3 {0}
+        run: |
+          import json, time, urllib.request, urllib.parse
+          UA = {'User-Agent': 'KPC park-map bot (https://kentuckyportableclub.github.io/KPC-Links/)'}
+          def get(u, head=False, n=400000):
+              t = time.time()
+              try:
+                  r = urllib.request.urlopen(urllib.request.Request(u, headers=UA, method='HEAD' if head else 'GET'), timeout=60)
+                  b = b'' if head else r.read(n)
+                  return r.status, b, round(time.time() - t, 1), r.headers.get('Content-Length')
+              except Exception as e: return 'ERR ' + str(e)[:90], b'', round(time.time() - t, 1), None
+          def note(t, m): print(f'::notice title={t}::{m}'[:1000], flush=True)
+          box = '-88.70,37.03,-88.55,37.12'   # Paducah: the Ohio + Tennessee meet
+          q = lambda base, extra='': base + '/query?' + urllib.parse.urlencode({'geometry': box, 'geometryType': 'esriGeometryEnvelope', 'inSR': 4326, 'spatialRel': 'esriSpatialRelIntersects', 'returnCountOnly': 'true', 'f': 'json'}) + extra
+          # 1 USGS downloader (TNM API) for NHDPlus HR files + the S3 bucket
+          s, b, t, _ = get('https://tnmaccess.nationalmap.gov/api/v1/products?' + urllib.parse.urlencode({'datasets': 'National Hydrography Dataset Plus High Resolution (NHDPlus HR)', 'bbox': box, 'max': 10}))
+          urls = []
+          try:
+              j = json.loads(b); urls = [(x.get('title'), x.get('downloadURL'), x.get('sizeInBytes'), x.get('publicationDate')) for x in j.get('items', [])]
+          except Exception as e: pass
+          note('1 TNM API', f'{s} {t}s: {len(urls)} items: ' + ' | '.join(f'{a} {c} {d} {u}' for a, u, c, d in urls[:4]))
+          if urls:
+              s2, _, t2, cl = get(urls[0][1], head=True); note('1 file HEAD', f'{s2} {t2}s size {cl}: {urls[0][1]}')
+          s, b, t, _ = get('https://prd-tnm.s3.amazonaws.com/?list-type=2&max-keys=8&prefix=StagedProducts/Hydrography/NHDPlusHR/', n=20000)
+          import re
+          note('1 S3 list', f'{s} {t}s: ' + ' '.join(re.findall(r'<Key>([^<]+)</Key>', b.decode('utf8', 'ignore'))[:8]))
+          # 2 live NHDPlus HR + the older nhd service
+          for base in ('https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8', 'https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/9', 'https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer'):
+              s, b, t, _ = get(q(base) if base[-1].isdigit() else base + '?f=json')
+              note('2 USGS live', f'{s} {t}s {base}: {b[:160].decode("utf8","ignore")}')
+          # 3 Corps IENC
+          s, b, t, _ = get('https://ienccloud.us/arcgis/rest/services/IENC_Feature_Classes?f=json')
+          svcs = []
+          try: svcs = [x['name'] for x in json.loads(b).get('services', [])]
+          except Exception: pass
+          note('3 IENC folder', f'{s} {t}s {len(svcs)} services: ' + ', '.join(svcs)[:800])
+          for nm in [x for x in svcs if re.search(r'AREA|COAST|LAKE|RIVER|DEPARE|LNDARE', x, re.I)][:6]:
+              base = f'https://ienccloud.us/arcgis/rest/services/{nm}/MapServer'
+              s, b, t, _ = get(base + '?f=json')
+              lays = []
+              try: lays = [(L['id'], L['name']) for L in json.loads(b).get('layers', [])]
+              except Exception: pass
+              cnt = [get(q(f'{base}/{i}'))[1][:60].decode('utf8', 'ignore') for i, _ in lays[:2]]
+              note('3 IENC ' + nm.split('/')[-1], f'{s} {t}s layers {lays[:4]} Paducah counts {cnt}')
+          # 4 EPA NHDPlus V2.1
+          for i in (1, 2):
+              base = f'https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/NHDPlusV21/FeatureServer/{i}'
+              s, b, t, _ = get(q(base)); note('4 EPA V2.1', f'{s} {t}s layer {i}: {b[:120].decode("utf8","ignore")}')
+          # 5 Census TIGER area water (McCracken County KY = 21145): the file + TIGERweb
+          s, _, t, cl = get('https://www2.census.gov/geo/tiger/TIGER2024/AREAWATER/tl_2024_21145_areawater.zip', head=True); note('5 TIGER file', f'{s} {t}s size {cl}')
+          s, b, t, _ = get('https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Hydro/MapServer?f=json')
+          lays = []
+          try: lays = [(L['id'], L['name']) for L in json.loads(b).get('layers', [])]
+          except Exception: pass
+          note('5 TIGERweb', f'{s} {t}s layers {lays[:6]}')
+          for i, nm in lays[:3]:
+              s, b, t, _ = get(q(f'https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Hydro/MapServer/{i}')); note('5 TIGERweb count', f'{nm}: {s} {t}s {b[:80].decode("utf8","ignore")}')
