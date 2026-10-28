@@ -1,0 +1,101 @@
+name: KPC official documents bot (hidden)
+# Oct 28 2026 (HQ 1:24 AM, built by Fable): for every POTA park in the US + Canada, the agency's OFFICIAL MAP (link + date),
+# its RULES page and who runs it now -> data/docs/<area>.json + data/docs/review.md (chat 8 grades a sample; cards only after
+# Brandon's GO). A NEW bot: own script (kpc_docs_bot.py), own folder; it touches nothing else.
+# Manners in the script: robots.txt obeyed, 1 request / 2 s per host, back-off, three strikes = a day's rest, PDFs read by range.
+# A job = up to 5 chunks of 55 min, ONE commit per chunk; when areas remain and 'chain' allows, the job starts the next job
+# itself (like the world harvester). Never fails except a failed save.
+on:
+  workflow_dispatch:
+    inputs:
+      areas:
+        description: 'Areas (e.g. "US-MO US-FL"); blank = the next unfinished areas in queue order (Kentucky, then the 2-fer regions: southeast first)'
+        default: ''
+      chunks:
+        description: 'Chunks of 55 min in this job (max 5)'
+        default: '5'
+      chain:
+        description: 'How many MORE jobs may follow this one by themselves when areas remain (0 = none)'
+        default: '6'
+      browser:
+        description: 'yes = also the headless-Chromium pass for pages that hide their map links'
+        default: 'yes'
+      then_queue:
+        description: 'For named test areas: "yes" = when the test PASSES (Missouri 90%+ maps ok, Florida browser pass found maps), start the whole queue by itself'
+        default: ''
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: kpc-docs
+  cancel-in-progress: false
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - name: Chat 8's survey + the Kentucky answer key (KPC-Links, read-only)
+        uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+      - name: Tools
+        continue-on-error: true
+        run: |
+          pip install -q --break-system-packages pypdf || pip install -q pypdf || true
+          if [ "${{ inputs.browser }}" = yes ]; then pip install -q --break-system-packages playwright || pip install -q playwright || true; python3 -m playwright install --with-deps chromium >/dev/null 2>&1 || true; fi
+      - name: Read, in chunks, one save per chunk
+        continue-on-error: true
+        env:
+          AREAS: ${{ inputs.areas }}
+          BROWSER: ${{ inputs.browser == 'yes' && '1' || '0' }}
+          LINKS: ../links
+        run: |
+          cd kpcdata
+          N=${{ inputs.chunks }}; [ "$N" -gt 5 ] && N=5
+          for i in $(seq 1 $N); do
+            MINUTES=55 python3 .github/scripts/kpc_docs_bot.py || true
+            bash ../links/.github/scripts/kpc_push_data.sh . "documents bot: chunk $i (hidden: official maps, rules, who runs it)" data/docs || true
+            LEFT=$(python3 -c "
+          import json,os,sys
+          sys.path.insert(0, '.github/scripts'); import kpc_docs_bot as B
+          s = json.load(open('data/docs/state.json'))
+          want = os.environ.get('AREAS', '').upper().split()
+          q = [a for a in B.QUEUE if a in want] if want else B.QUEUE
+          print(sum(1 for a in q if (s['areas'].get(a) or {}).get('status') != 'done'))" 2>/dev/null || echo 1)
+            echo "chunk $i done, $LEFT areas left"
+            [ "$LEFT" = 0 ] && break
+          done
+          echo "LEFT=$LEFT" >> "$GITHUB_ENV"
+      - name: A passed test starts the queue
+        if: ${{ inputs.areas != '' && inputs.then_queue == 'yes' }}
+        continue-on-error: true
+        env:
+          AREAS: ${{ inputs.areas }}
+        run: |
+          cd kpcdata
+          P=$(python3 -c "
+          import json, os
+          ok = True
+          for a in os.environ['AREAS'].upper().split():
+              c = json.load(open(f'data/docs/{a}.json')).get('counts') or {}
+              if a == 'US-MO': ok = ok and c.get('map ok', 0) >= 0.9 * max(1, c.get('parks', 0))
+              elif a == 'US-FL': ok = ok and c.get('map ok', 0) >= 20
+              else: ok = ok and c.get('map ok', 0) >= 0.5 * max(1, c.get('parks', 0))
+          print('PASS' if ok else 'FAIL')" 2>/dev/null || echo FAIL)
+          echo "::notice title=Documents bot::test $AREAS: $P"
+          [ "$P" = PASS ] && gh workflow run kpc-docs.yml -R ${{ github.repository }} -f areas= -f chunks=5 -f chain=${{ inputs.chain }} -f browser=${{ inputs.browser }} && echo "::notice title=Documents bot::the long run has started (queue order: Kentucky, southeast, midwest, northeast, south central, mountain, pacific, Canada; ${{ inputs.chain }} more jobs may follow)"
+          true
+      - name: Carry on in a new job when areas remain
+        if: ${{ inputs.areas == '' && inputs.chain != '0' }}
+        continue-on-error: true
+        run: |
+          [ "${LEFT:-0}" = 0 ] && { echo "::notice title=Documents bot::queue finished"; exit 0; }
+          NEXT=$(( ${{ inputs.chain }} - 1 ))
+          gh workflow run kpc-docs.yml -R ${{ github.repository }} -f areas= -f chunks=5 -f chain=$NEXT -f browser=${{ inputs.browser }} && echo "::notice title=Documents bot::$LEFT areas left: the next job starts by itself ($NEXT more allowed after it)"

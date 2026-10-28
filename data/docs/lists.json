@@ -1,0 +1,83 @@
+{
+ "about": "Agency LIST PAGES the documents bot READS and matches parks by name (never a guessed file name), plus the agency-wide RULES page. Keyed by area, then by the host of the park's own page. From chat 8's OFFICIAL_MAPS survey (Oct 28 2026). Add a row the day chat 8 finds a list; 'pick': 'pdf' keeps only PDF links from the list.",
+ "areas": {
+  "US-NC": {
+   "ncwildlife.gov": {"pages": ["https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands-maps/mountain-game-land-maps", "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands-maps/piedmont-game-land-maps", "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands-maps/coastal-game-land-maps"], "pick": "any", "rules": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands"},
+   "ncparks.gov": {"pages": [], "rules": "https://www.ncparks.gov/rules-and-regulations"}
+  },
+  "US-VA": {
+   "dwr.virginia.gov": {"pages": ["https://dwr.virginia.gov/wma/"], "pick": "any", "rules": "https://dwr.virginia.gov/wma/regulations/"},
+   "dcr.virginia.gov": {"pages": [], "rules": "https://www.dcr.virginia.gov/state-parks/park-regulations"}
+  },
+  "US-WV": {
+   "wvdnr.gov": {"pages": ["https://wvdnr.gov/lands-waters/wildlife-management-areas/"], "pick": "any", "rules": "https://wvdnr.gov/lands-waters/wildlife-management-areas/rules-and-regulations/"}
+  },
+  "US-GA": {
+   "georgiawildlife.com": {"pages": ["https://georgiawildlife.com/Piedmont-WMAs"], "pick": "any", "rules": "https://georgiawildlife.com/regulations"},
+   "gastateparks.org": {"pages": [], "rules": "https://gastateparks.org/Rules"}
+  },
+  "US-TN": {
+   "tn.gov": {"pages": ["https://www.tn.gov/twra/gis-maps/wildlife-management-area--wma--maps.html"], "pick": "any", "rules": "https://www.tn.gov/twra/hunting/wma-hunting.html"}
+  },
+  "US-SC": {
+   "dnr.sc.gov": {"pages": ["https://www.dnr.sc.gov/wma/maps.html"], "pick": "any", "rules": "https://www.dnr.sc.gov/regulations.html"}
+  },
+  "US-AL": {
+   "alapark.com": {"pages": ["https://www.alapark.com/maps-directory"], "pick": "any", "rules": "https://www.alapark.com/rules-and-regulations"}
+  },
+  "US-IN": {
+   "in.gov": {"pages": ["https://in.gov/dnr/state-parks/maps", "https://in.gov/dnr/forestry/state-forest-maps2"], "pick": "any", "rules": "https://in.gov/dnr/state-parks/property-rules-and-regulations"}
+  },
+  "US-IL": {
+   "dnr.illinois.gov": {"pages": [], "rules": "https://dnr.illinois.gov/adrules.html"}
+  },
+  "US-MN": {
+   "dnr.state.mn.us": {"pages": ["https://www.dnr.state.mn.us/state-forests/list.html"], "pick": "any", "rules": "https://www.dnr.state.mn.us/state_parks/rules.html"}
+  },
+  "US-MI": {
+   "michigan.gov": {"pages": ["https://www.michigan.gov/dnr/managing-resources/wildlife/wildlife-archive/state-game-area-maps"], "pick": "any", "rules": ""}
+  },
+  "US-SD": {
+   "gfp.sd.gov": {"pages": ["https://gfp.sd.gov/maps"], "pick": "any", "rules": "https://gfp.sd.gov/pages/regulations"}
+  },
+  "US-PA": {
+   "pa.gov": {"pages": ["https://www.pa.gov/agencies/pgc/huntingandtrapping/where-to-hunt/state-game-land-maps"], "pick": "any", "rules": ""}
+  },
+  "US-CT": {
+   "portal.ct.gov": {"pages": ["https://portal.ct.gov/DEEP/State-Parks/Trail-and-Camping-Maps---CT-State-Parks-and-Forests"], "pick": "any", "rules": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information"}
+  },
+  "US-MA": {
+   "mass.gov": {"pages": ["https://www.mass.gov/lists/dcr-trail-maps"], "pick": "any", "rules": ""}
+  },
+  "US-MD": {
+   "dnr.maryland.gov": {"pages": ["https://dnr.maryland.gov/Pages/DNR_TrailMaps.aspx"], "pick": "any", "rules": ""}
+  },
+  "US-ME": {
+   "maine.gov": {"pages": ["https://www.maine.gov/dacf/parks/publications_maps/index.shtml"], "pick": "any", "rules": ""}
+  },
+  "US-TX": {
+   "tpwd.texas.gov": {"pages": ["https://tpwd.texas.gov/state-parks/maps"], "pick": "any", "rules": "https://tpwd.texas.gov/state-parks/park-information/rules/"}
+  },
+  "US-OH": {
+   "ohiodnr.gov": {"pages": [], "rules": "https://codes.ohio.gov/ohio-administrative-code/rule-1501:31-15-04"}
+  },
+  "US-IA": {
+   "iowadnr.gov": {"pages": [], "rules": "https://www.iowadnr.gov/places-go/state-parks/parks-use-rules-guidelines"}
+  },
+  "US-KY": {
+   "fw.ky.gov": {"pages": [], "rules": "https://fw.ky.gov/Hunt/Pages/Public-Hunting-Areas.aspx"},
+   "parks.ky.gov": {"pages": [], "rules": "https://parks.ky.gov/park-rules"}
+  },
+  "US-MO": {
+   "mdc.mo.gov": {"pages": [], "rules": "https://mdc.mo.gov/discover-nature/places/regulations"},
+   "mostateparks.com": {"pages": [], "rules": "https://mostateparks.com/page/55066/rules-and-regulations"}
+  },
+  "US-FL": {
+   "floridastateparks.org": {"pages": [], "rules": "https://www.floridastateparks.org/learn/rules-regulations"},
+   "myfwc.com": {"pages": [], "rules": "https://myfwc.com/hunting/wma-brochures/"}
+  },
+  "CA-ON": {
+   "ontarioparks.ca": {"pages": [], "rules": "https://www.ontarioparks.ca/rules"}
+  }
+ }
+}
