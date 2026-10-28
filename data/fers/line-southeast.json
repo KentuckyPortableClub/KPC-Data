@@ -13,15 +13,24 @@
   "US-MS"
  ],
  "since": "2026-10-28",
- "date": "2026-10-28 17:31 UTC",
+ "date": "2026-10-28 18:45 UTC",
  "verdict": "STOPPED",
  "why": [
-  "US-MS: 24 rows still waiting for a pass (out of time: run the worker again)"
+  "water service: US-TN: 61 rows not checked because the USGS water map did not answer (run the worker again)",
+  "water service: US-NC: 101 rows not checked because the USGS water map did not answer (run the worker again)",
+  "water service: US-VA: 32 rows not checked because the USGS water map did not answer (run the worker again)",
+  "water service: US-WV: 28 rows not checked because the USGS water map did not answer (run the worker again)",
+  "water service: US-GA: 50 rows not checked because the USGS water map did not answer (run the worker again)",
+  "water service: US-AL: 18 rows not checked because the USGS water map did not answer (run the worker again)",
+  "water service: US-SC: 21 rows not checked because the USGS water map did not answer (run the worker again)",
+  "water service: US-FL: 94 rows not checked because the USGS water map did not answer (run the worker again)",
+  "US-MS: 24 rows still waiting for a pass (out of time: run the worker again)",
+  "water service: US-MS: 6 rows not checked because the USGS water map did not answer (run the worker again)"
  ],
  "known_answers": "18/18 on 2026-10-28",
  "missing_check": {
-  "FOUND": 297,
-  "DROPPED": 1773,
+  "FOUND": 301,
+  "DROPPED": 1769,
   "NEVER LOOKED AT": 14393
  },
  "report": {
@@ -36,15 +45,15 @@
    "pairs tested": 878
   },
   "pass3": {
-   "agree with the pass before": 1572,
+   "agree with the pass before": 0,
    "date": "2026-10-28",
-   "pairs tested": 814
+   "pairs tested": 0
   },
   "pass5": {
-   "checked": 461,
+   "checked": 457,
    "date": "2026-10-28",
    "pairs tested": 0,
-   "still not checked": 434
+   "still not checked": 398
   }
  },
  "US-TN": {
@@ -138,18 +147,18 @@
  },
  "US-FL": {
   "rows": 1273,
-  "live": 82,
+  "live": 112,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "water not checked": 126,
+   "water not checked": 94,
    "the ownership map shows more than one owner across the spot": 5,
    "no public owner on the ownership map": 9,
    "owner not known for Suwannee River State Park": 1,
    "owner not known for Apalachicola River Wildlife Area": 3
   },
   "dropped": 778,
-  "merged": 269
+  "merged": 271
  },
  "US-MS": {
   "rows": 95,

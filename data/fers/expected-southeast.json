@@ -12,8 +12,8 @@
  "date": "2026-10-28",
  "pass": true,
  "counts": {
-  "FOUND": 297,
-  "DROPPED": 1773,
+  "FOUND": 301,
+  "DROPPED": 1769,
   "NEVER LOOKED AT": 14393
  },
  "FOUND": [
@@ -115,6 +115,17 @@
     "outlines about 0 m apart"
    ],
    "row": "US-0245+US-6311@area@27.271,-81.324"
+  },
+  {
+   "refs": [
+    "US-0245",
+    "US-6328"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "row": "US-0245+US-6328@area@27.297,-81.326"
   },
   {
    "refs": [
@@ -1641,6 +1652,17 @@
   },
   {
    "refs": [
+    "US-3614",
+    "US-4628"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "row": "US-3614+US-4628@area@28.910,-82.611"
+  },
+  {
+   "refs": [
     "US-3618",
     "US-4634"
    ],
@@ -1770,6 +1792,17 @@
     "activated together by the same call on the same day (19x, POTA history)"
    ],
    "row": "US-3645+US-4559@trail@29.698,-81.764"
+  },
+  {
+   "refs": [
+    "US-3647",
+    "US-4646"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (3x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "row": "US-3647+US-4646@area@28.755,-82.640"
   },
   {
    "refs": [
@@ -2930,6 +2963,17 @@
     "activated together by the same call on the same day (59x, POTA history)"
    ],
    "row": "US-4641+US-8341@area@29.113,-81.193"
+  },
+  {
+   "refs": [
+    "US-4646",
+    "US-6296"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (15x, POTA history)"
+   ],
+   "row": "US-4646+US-6296+US-6312@area@28.682,-82.604"
   },
   {
    "refs": [
@@ -4148,18 +4192,6 @@
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
-  },
-  {
-   "refs": [
-    "US-0245",
-    "US-6328"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "rule": "rule 7 (NOT SURE is kept out)"
   },
   {
    "refs": [
@@ -15265,18 +15297,6 @@
   {
    "refs": [
     "US-3614",
-    "US-4628"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "rule": "rule 7 (NOT SURE is kept out)"
-  },
-  {
-   "refs": [
-    "US-3614",
     "US-4646"
    ],
    "why_expected": [
@@ -16449,18 +16469,6 @@
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
-  },
-  {
-   "refs": [
-    "US-3647",
-    "US-4646"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (3x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "rule": "rule 7 (NOT SURE is kept out)"
   },
   {
    "refs": [
@@ -21651,18 +21659,6 @@
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
-  },
-  {
-   "refs": [
-    "US-4646",
-    "US-6296"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (15x, POTA history)"
-   ],
-   "reason": "dropped in pass 3",
-   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   },
   {
    "refs": [
