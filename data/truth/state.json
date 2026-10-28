@@ -20,6 +20,26 @@
    "status": "done",
    "updated": "2026-10-28"
   },
+  "US-FL": {
+   "checked": 460,
+   "counts": {
+    "agree": 75,
+    "handover_hints": 16,
+    "no_page": 0,
+    "no_size": 278,
+    "off": 54,
+    "ours_unknown": 2,
+    "parks": 460,
+    "retired": 0,
+    "unsure": 31,
+    "weak": 17,
+    "with_outline": 440
+   },
+   "left": 0,
+   "parks": 460,
+   "status": "done",
+   "updated": "2026-10-28"
+  },
   "US-GA": {
    "checked": 237,
    "counts": {
@@ -169,6 +189,7 @@
   "wolfememorial.com": 1793308907.889083,
   "www.alapark.com": 1793311937.1968005,
   "www.amicalolafallslodge.com": 1793310856.8343172,
+  "www.floridastateparks.org": 1793312734.72171,
   "www.fs.usda.gov": 1793309985.139606,
   "www.littleocmulgeelodge.com": 1793311323.8044322,
   "www.tn.gov": 1793308378.4104462,
@@ -177,29 +198,29 @@
  },
  "last": {
   "areas": [
-   "US-SC"
+   "US-FL"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "errors": 3,
-   "requests": 254,
-   "rested": 4,
-   "robots": 1,
-   "strikes": 4
+   "errors": 0,
+   "requests": 427,
+   "rested": 355,
+   "robots": 36,
+   "strikes": 3
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 5,
-   "no_size": 108,
+   "handover_hints": 16,
+   "no_size": 278,
    "ours_unknown": 2,
-   "pages_read": 242,
-   "parks": 167,
+   "pages_read": 405,
+   "parks": 460,
    "retired": 0,
-   "size_agree": 6,
-   "size_off": 28,
-   "size_unsure": 15,
+   "size_agree": 75,
+   "size_off": 54,
+   "size_unsure": 31,
    "skipped_fresh": 0,
-   "with_outline": 159
+   "with_outline": 440
   },
   "when": "2026-10-28"
  },
@@ -248,6 +269,11 @@
    "links": 0,
    "read": "2026-10-28",
    "status": "HTTP 404"
+  },
+  "https://www.floridastateparks.org/news": {
+   "links": 0,
+   "read": "2026-10-28",
+   "status": "rest"
   },
   "https://www.ncparks.gov/news": {
    "links": 138,
