@@ -47,30 +47,26 @@
   "with official lines": 28
  },
  "pass3": {
-  "agree with the pass before": 592,
+  "agree with the pass before": 0,
   "cell_m": 5.0,
   "date": "2026-10-28",
   "left out": {
    "Kentucky (own list)": "all (ky-overlaps.geojson)",
-   "approximate": 420,
-   "no outline": 3604,
+   "approximate": 422,
+   "no outline": 3600,
    "no pin": 0,
    "pin well outside": 0
   },
-  "new here only (not counted)": 185,
-  "official parks": 344,
-  "pairs tested": 153,
+  "new here only (not counted)": 0,
+  "official parks": 345,
+  "pairs tested": 0,
   "parks whose outline could not be read": 0,
   "parks with a saved copy only (no fresh download possible)": 0,
   "pass": 3,
   "problems": [
-   "W&S river corridors joined as area parks: 15",
-   "NHD water: HTTP Error 504: Gateway Time-out",
-   "NHD water: HTTP Error 504: Gateway Time-out",
-   "NHD water: HTTP Error 504: Gateway Time-out",
-   "NHD water: HTTP Error 502: Bad Gateway"
+   "W&S river corridors joined as area parks: 15"
   ],
-  "with official lines": 27
+  "with official lines": 28
  },
  "pass5": {
   "cell_m": 5.0,
@@ -78,32 +74,52 @@
   "date": "2026-10-28",
   "left out": {
    "Kentucky (own list)": "all (ky-overlaps.geojson)",
-   "approximate": 420,
-   "no outline": 3604,
+   "approximate": 422,
+   "no outline": 3600,
    "no pin": 0,
    "pin well outside": 0
   },
-  "official parks": 344,
+  "official parks": 345,
   "pairs tested": 0,
   "pass": 5,
   "problems": [
    "W&S river corridors joined as area parks: 15",
    "NHD water: HTTP Error 504: Gateway Time-out",
-   "NHD water: HTTP Error 502: Bad Gateway"
+   "NHD water retry: HTTP Error 504: Gateway Time-out",
+   "NHD water retry: HTTP Error 504: Gateway Time-out",
+   "NHD water retry: HTTP Error 504: Gateway Time-out",
+   "NHD water: The read operation timed out",
+   "NHD water: The read operation timed out",
+   "NHD water retry: HTTP Error 504: Gateway Time-out",
+   "NHD water retry: The read operation timed out",
+   "NHD water retry: HTTP Error 502: Bad Gateway",
+   "NHD water: HTTP Error 502: Bad Gateway",
+   "NHD water retry: HTTP Error 504: Gateway Time-out",
+   "NHD water retry: HTTP Error 502: Bad Gateway",
+   "NHD water retry: The read operation timed out",
+   "NHD water: The read operation timed out",
+   "NHD water retry: HTTP Error 504: Gateway Time-out",
+   "NHD water retry: HTTP Error 504: Gateway Time-out",
+   "NHD water retry: HTTP Error 504: Gateway Time-out",
+   "NHD water: HTTP Error 504: Gateway Time-out",
+   "NHD water retry: HTTP Error 504: Gateway Time-out",
+   "NHD water: HTTP Error 504: Gateway Time-out"
   ],
-  "spots given their boundary lines": 102,
-  "still not checked": 39,
-  "trail stretches given their true zone": 261,
+  "re-checked at the end": 38,
+  "spots given their boundary lines": 0,
+  "still not checked": 38,
+  "trail stretches given their true zone": 0,
   "water only": 0,
-  "with official lines": 27
+  "water retries (won / tries)": "1 / 14",
+  "with official lines": 28
  },
  "per state": {
   "US-MI": {
-   "candidates": 84,
+   "candidates": 85,
    "candidates (saved outline only)": 0,
    "lines": 524,
    "n-fers": 13,
-   "not sure": 59,
+   "not sure": 58,
    "pass1": 701,
    "pass2": 665,
    "spots": 701,

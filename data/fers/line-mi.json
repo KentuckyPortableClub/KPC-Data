@@ -5,9 +5,11 @@
   "US-MI"
  ],
  "since": "2026-10-28",
- "date": "2026-10-28 16:10 UTC",
- "verdict": "READY FOR CHAT 8",
- "why": [],
+ "date": "2026-10-28 18:46 UTC",
+ "verdict": "STOPPED",
+ "why": [
+  "water service: US-MI: 38 rows not checked because the USGS water map did not answer (run the worker again)"
+ ],
  "known_answers": "18/18 on 2026-10-28",
  "missing_check": {
   "FOUND": 91,
@@ -26,30 +28,30 @@
    "pairs tested": 153
   },
   "pass3": {
-   "agree with the pass before": 592,
+   "agree with the pass before": 0,
    "date": "2026-10-28",
-   "pairs tested": 153
+   "pairs tested": 0
   },
   "pass5": {
    "checked": 40,
    "date": "2026-10-28",
    "pairs tested": 0,
-   "still not checked": 39
+   "still not checked": 38
   }
  },
  "US-MI": {
   "rows": 701,
-  "live": 85,
+  "live": 86,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "water not checked": 39,
+   "water not checked": 38,
    "the ownership map shows more than one owner across the spot": 1,
    "no public owner on the ownership map": 16,
    "the outlines overlap, but the PAD-US state fee records does": 2,
    "the outlines overlap, but the PAD-US state fee records / For": 1
   },
-  "dropped": 241,
-  "merged": 316
+  "dropped": 242,
+  "merged": 315
  }
 }
