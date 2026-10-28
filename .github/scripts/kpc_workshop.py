@@ -30,7 +30,7 @@ def load(p, d):
     try: return json.load(open(p, encoding='utf-8'))
     except Exception: return d  # noqa: BLE001
 def status_of(bot, area): return ((load(f'{FOLDER[bot]}/state.json', {}).get('areas') or {}).get(area) or {}).get('status')
-def left_areas(): return [a for a in QUEUE if any(status_of(b, a) != 'done' for b in BOTS if b in SCRIPT)]
+def left_areas(): return [a for a in QUEUE if any(status_of(b, a) not in ('done', 'failed') for b in BOTS if b in SCRIPT)]   # a FAILED batch waits for a fix, never queues onward
 
 
 def run_bot(bot, area, minutes, test):
@@ -44,8 +44,17 @@ def run_bot(bot, area, minutes, test):
     if test and bot in GATED and res == 'PASS':   # the bot's own gate passed: remember it (the weekly cron reads 'proven')
         sp = pathlib.Path(f'{FOLDER[bot]}/state.json'); s = load(sp, {}); s['proven'] = time.strftime('%Y-%m-%d'); sp.write_text(json.dumps(s, indent=1, ensure_ascii=False, sort_keys=True) + '\n')
     st = status_of(bot, area)
-    counts = (((load(f'{FOLDER[bot]}/state.json', {}).get('areas') or {}).get(area) or {}).get('counts')) or {}
-    subprocess.run([sys.executable, '.github/scripts/kpc_status.py', 'grade-me', NAME[bot], area, f'{FOLDER[bot]}/{area}.json + review.md', f'{st}; {json.dumps(counts)[:160]}'])
+    sp = pathlib.Path(f'{FOLDER[bot]}/state.json'); s = load(sp, {})
+    counts = (((s.get('areas') or {}).get(area) or {}).get('counts')) or {}
+    t = s.get('test') or {}
+    if res == 'FAIL' or (test and t.get('result') == 'FAIL' and t.get('when') == time.strftime('%Y-%m-%d')):   # HQ item A: a failed self-gate = FAILED batch, never queued onward
+        (s.setdefault('areas', {}).setdefault(area, {}))['status'] = 'failed'; sp.write_text(json.dumps(s, indent=1, ensure_ascii=False, sort_keys=True) + '\n')
+        subprocess.run([sys.executable, '.github/scripts/kpc_status.py', 'gate', NAME[bot], area, 'FAIL', str(t.get('why') or 'gate failed')[:380]])
+        st = 'failed'
+    else:
+        smp = subprocess.run([sys.executable, '.github/scripts/kpc_status.py', 'sample', NAME[bot], area, f'{FOLDER[bot]}/{area}.json', '12'], capture_output=True, text=True).stdout.strip().splitlines()
+        smp = smp[-1] if smp else ''
+        subprocess.run([sys.executable, '.github/scripts/kpc_status.py', 'grade-me', NAME[bot], area, (smp or f'{FOLDER[bot]}/{area}.json') + ' (+ review.md)', f'{st}; gate {t.get("result", "none") if t.get("when") == time.strftime("%Y-%m-%d") else "none"}; {json.dumps(counts)[:140]}'])
     subprocess.run([sys.executable, '.github/scripts/kpc_status.py', 'board', NAME[bot], 'green' if p.returncode == 0 else 'red', f'{area}: {st}; {json.dumps(counts)[:200]}', 'chat 8 grades the sample; Brandon GO before any card', f'left: {len(left_areas())}'])
     if PUSH:
         subprocess.run(['bash', f'{LINKS}/.github/scripts/kpc_push_data.sh', '.', f'{NAME[bot]}: {area} ({st})', FOLDER[bot], 'data/status'])
@@ -61,7 +70,7 @@ def main():
             if bot not in SCRIPT: continue
             remaining = (LIMIT - (time.time() - T0)) / 60
             if remaining < 3: break
-            if not want and status_of(bot, area) == 'done': continue
+            if not want and status_of(bot, area) in ('done', 'failed'): continue
             while True:
                 remaining = (LIMIT - (time.time() - T0)) / 60
                 if remaining < 3: break

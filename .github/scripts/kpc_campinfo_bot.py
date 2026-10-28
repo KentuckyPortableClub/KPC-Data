@@ -28,6 +28,11 @@ campground we already list (federal, state, Kentucky hand-checked) it writes ONE
                   R5 Kentucky is the ANSWER KEY: the hand-checked kpc-campgrounds.json values (sites, amps, dump station,
                   showers, phone) are compared with what the bot read; the result goes to review.md as 'ky_check'.
                   R6 a campground checked within REFRESH_DAYS (30) is skipped.
+                  R7 (round 2, chat 11): an RV length needs an RV / trailer / vehicle / length sentence and <= 60 ft, never
+                  'elevation'; a camping season needs a camping / open / season sentence with no hunting words; a bare heading
+                  or menu item ('Shower Types') is never a fact; a lodge / cottage link is 'lodging_booking', not booking;
+                  'phone_hint' = the first number in the campground section. GATE = 8 known Kentucky answers + >= 70% hand-key
+                  agreement -> 'GATE=PASS/FAIL' line + state['test'].
   MANNERS         kpc_manners.py (robots.txt obeyed, 1 request / 2 s per host incl. RIDB, back-off, three strikes = a day's rest).
   NEVER FAILS     exit 0 always; MINUTES (55) per chunk; state.json resumes; one commit per chunk by the workflow.
 
@@ -46,7 +51,10 @@ REFRESH_DAYS = int(os.environ.get('REFRESH_DAYS') or 30)
 RIDB_KEY = (os.environ.get('RIDB_API_KEY') or '').strip()
 FCC_USER = (os.environ.get('FCC_BDC_USERNAME') or '').strip(); FCC_TOKEN = (os.environ.get('FCC_BDC_TOKEN') or '').strip()
 TODAY = time.strftime('%Y-%m-%d')
-VER = 2   # 2 = Oct 28 chat 8 grade C-1..C-6 (negation, footer phones, duplicates, hosts): every row is re-read
+VER = 4   # 4 = round 3 (chat 11 regrade): reservation-line phones out, bare-domain booking out, fire RULES only, merge by park ref,
+          # state-park campground sub-pages read, more gate rows.
+          # 3 = round 2; 2 = Oct 28 chat 8 grade C-1..C-6 (negation, footer phones, duplicates, hosts); 3 = chat 11 round 2 (elevation != RV length,
+          # hunting season != camping season, headings are not facts, lodge links are not booking, phone_hint, gate): every row is re-read
 RIDB = 'https://ridb.recreation.gov/api/v1/'
 FCC = 'https://broadbandmap.fcc.gov/api/public/map/'
 QUEUE = ['US-KY',
@@ -100,19 +108,19 @@ MON = r'(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\.?'
 DATE = r'(?:early |mid-? ?|late )?' + MON + r'(?:\s+\d{1,2})?(?:,?\s+\d{4})?'
 TIME = r'\d{1,2}(?::\d\d)?\s*(?:a\.?m\.?|p\.?m\.?|noon|midnight)?'
 SITE = re.compile(r'(\d{1,4})[- ]+((?:[\w/-]+[- ]+){0,3}?)(campsites?|camp sites?|sites?|cabins?|cottages?|yurts?|lean-tos?|shelters?|pads?|spaces?)\b', re.I)
-SITE_TOTAL2 = re.compile(r'(?:campground|park|area)\s+(?:has|offers|features|with|provides)\s+(\d{1,4})\s+(?:[\w-]+\s+){0,2}?(?:campsites?|sites?)', re.I)
+SITE_TOTAL2 = re.compile(r'(?:campground|park|area)\s+(?:has|offers|features|with|provides|contains|includes)\s+(?:a total of\s+)?(\d{1,4})\s+(?:[\w-]+\s+){0,2}?(?:campsites?|sites?)|(\d{1,4})[- ]site campground|(\d{1,4})\s+sites? for (?:tents?|rvs?|campers)|total of (\d{1,4}) (?:campsites?|sites?)', re.I)
 PARTIAL_BEFORE = re.compile(r'\b(at|of|for|in|on|only|including|includes|and|plus|with|to)\s*$', re.I)
 TENT_W = re.compile(r'\btent', re.I); RV_W = re.compile(r'\brv\b|full[- ]hook|pull[- ]thr|back[- ]in|trailer|motorhome', re.I)
 CABIN_W = re.compile(r'cabin|cottage|yurt|lean-to|shelter', re.I); GROUP_W = re.compile(r'\bgroup', re.I)
 PRIM_W = re.compile(r'primitive|walk[- ]in|hike[- ]in|backcountry|backpack|boat[- ]in|paddle[- ]in|rustic', re.I)
-PLAIN_W = re.compile(r'^(?:camp|wooded|shaded|improved|developed|individual|family|total|overnight|standard|modern|paved|gravel)?[- ]*$', re.I)
+PLAIN_W = re.compile(r'^(?:camp|wooded|shaded|developed|individual|family|total|overnight|standard|modern|paved|gravel|utility|hookup|electric|full[- ]service)?[- ]*$', re.I)   # 'improved' left out: '92 improved sites' is a part
 AMPS = re.compile(r'\b(20|30|50|100)(?:\s*/\s*(20|30|50|100))?(?:\s*/\s*(20|30|50|100))?\s*-?\s*amp', re.I)
-ELECTRIC_W = re.compile(r'electric(?:al|ity)?(?:\s+(?:hook-?ups?|service|sites?|pedestals?))?|\bhook-?ups?|full[- ]hook-?ups?|\bpower\b|utilities', re.I)
-WATER_HOOK = re.compile(r'water (?:and|&|/|,) (?:electric|sewer)|(?:electric(?:al|ity)?|sewer)(?:\s*,|\s+and|\s*&|\s*/)\s*water|water hook-?ups?|full[- ]hook-?ups?|water (?:at|on|to) (?:each|every|all) site', re.I)
+ELECTRIC_W = re.compile(r'electric(?:al|ity)?(?:\s+(?:hook-?ups?|service|sites?|pedestals?))?|\bhook-?ups?|full[- ]hook-?ups?|utility hook-?ups?|full[- ]service sites?|improved sites?|\bpower\b|utilities', re.I)
+WATER_HOOK = re.compile(r'water (?:and|&|/|,) (?:electric|sewer)|utility hook-?ups?|full[- ]service sites?|(?:electric(?:al|ity)?|sewer)(?:\s*,|\s+and|\s*&|\s*/)\s*water|water hook-?ups?|full[- ]hook-?ups?|water (?:at|on|to) (?:each|every|all) site', re.I)
 SEWER_W = re.compile(r'\bsewer\b|full[- ]hook-?ups?', re.I)
 DUMP = re.compile(r'dump station|sanitary (?:dump|station)|rv dump|dumping station', re.I)
 SHOWERS = re.compile(r'\bshowers?\b|bath ?house|shower house', re.I)
-FLUSH = re.compile(r'flush (?:toilets?|restrooms?)|modern restrooms?', re.I); VAULT = re.compile(r'vault (?:toilets?|restrooms?)|pit toilets?|privies|privy|outhouses?|composting toilets?|portable toilets?|chemical toilets?', re.I)
+FLUSH = re.compile(r'flush (?:toilets?|restrooms?)|modern restrooms?|(?:toilets?|restrooms?)\s*:\s*flush', re.I); VAULT = re.compile(r'vault (?:toilets?|restrooms?)|(?:toilets?|restrooms?)\s*:\s*(?:vault|pit)|pit toilets?|privies|privy|outhouses?|composting toilets?|portable toilets?|chemical toilets?', re.I)
 RESTROOM = re.compile(r'restrooms?|toilets?|comfort stations?|bath ?house', re.I)
 DRINK = re.compile(r'(?:drinking|potable) water|water (?:spigots?|fountains?|fill(?:ing)? station|hydrants?)', re.I)
 # negation words that may stand before an amenity in the same clause ('no', 'not available', 'without', 'lacks', 'does not have')
@@ -133,6 +141,7 @@ CHECKOUT = re.compile(r'check[- ]?out(?:\s+time)?(?:\s+(?:is|at|by|before))?\s*[
 PETS = re.compile(r'\b((?:pets?|dogs?)\s+(?:are\s+|is\s+)?(?:welcome|allowed|permitted|ok|okay|accepted|not (?:allowed|permitted|accepted)|prohibited|must be (?:kept )?(?:on a )?leash\w*)[^.;\n]{0,60}|no (?:pets|dogs)(?: allowed| permitted)?[^.;\n]{0,40}|leashed pets[^.;\n]{0,60}|pet[- ]friendly[^.;\n]{0,40})', re.I)
 GENERATORS = re.compile(r'\b(generators?[^.;\n]{0,100}|no generators[^.;\n]{0,40})', re.I)
 QUIET = re.compile(r'quiet (?:hours?|time)\s*(?:are|is|:|-|–|from|run)?\s*(?:from\s+)?(' + TIME + r'\s*(?:to|-|–|until|till|through)\s*' + TIME + r')', re.I)
+RULE_VERB = re.compile(r'allowed|prohibit|permitted|\bbans?\b|banned|not allowed|\bmust\b|may not|not permitted|restricted|only in|quarantin|do not|don\'t|no (?:camp ?fires?|open fires?|fires)|forbidden|required|please', re.I)
 FIRES = re.compile(r'\b((?:camp ?fires?|fire ?wood|fire rings?|fire pits?|burn bans?|open fires?)[^.;\n]{0,100})', re.I)
 STAY = re.compile(r'(?:max(?:imum)?\s+(?:stay|length of stay|of)|stay (?:limit|is limited to|limited to)|limited to(?: a)?|no more than|up to|not (?:to )?exceed(?:ing)?)\s*(?:is\s+|of\s+)?(\d{1,2})\s*(consecutive\s+)?(days|nights)', re.I)
 STAY2 = re.compile(r'(\d{1,2})[- ](?:day|night)\s+(?:maximum|limit|stay limit)', re.I)
@@ -142,6 +151,8 @@ SOFT404 = re.compile(r'page not found|404 error|error 404|the page you (?:reques
 
 FOOTER_W = re.compile(r'footer|contact us|contact info|headquarters|park information|mailing address|physical address|superintendent|regional office|privacy policy|accessibility|site map|sitemap', re.I)
 TOLLFREE = ('(800)', '(888)', '(877)', '(866)', '(855)', '(844)')
+RESLINE_W = re.compile(r'reservation|1-877|recreation one stop|reserve ?america|recreation\.gov|call cent|toll[- ]free|book', re.I)
+OWN_PHONE_W = re.compile(r'campground|camp office|park office|ranger (?:station|district)|district office|visitor cent|office|information|call|phone|contact|camp\b|camping', re.I)
 
 
 def phones_in(text):
@@ -155,8 +166,12 @@ def phones_in(text):
         if m.start() >= cut and len(text) > 600: continue
         if FOOTER_W.search(text[max(0, m.start() - 200):m.end() + 200]): continue
         p = f'({m.group(1)}) {m.group(2)}-{m.group(3)}'
+        sent = sentence_of(text, m.start(), m.end())
+        # round 3 rule 1: the national reservation line (877) 444-6777 / 'Recreation One Stop' / any number in a 'reservation'
+        # sentence is never the campground's phone; the sentence must name the campground, the park office or 'campground office'
+        if p == '(877) 444-6777' or RESLINE_W.search(sent) or p.startswith(TOLLFREE): continue
+        if not OWN_PHONE_W.search(sent): continue
         if p not in [x for x, _ in out]: out.append((p, m))
-    if len(out) > 1: out = [x for x in out if not x[0].startswith(TOLLFREE)] or out
     if not out: return []
     # keep the first number plus every number on the same quoted line (within 120 chars of it)
     first = out[0][1]
@@ -175,6 +190,37 @@ def tidy(x):
 
 def fact(value, url, line):
     return {'value': value, 'url': url, 'date': TODAY, 'line': line}
+
+
+HUNT_W = re.compile(r'\bhunt\w*|quota|\bdeer\b|turkey|rabbit|quail|squirrel|dove|waterfowl|duck|goose|geese|grouse|\bgame\b|firearm|archery|muzzleloader|crossbow|trapping|anterless|bag limit|season dates', re.I)
+CAMP_W = re.compile(r'\bcamp\w*|\bcampground|\bsites? (?:are|is) open|\bopen (?:to campers|for camping)|camping season|season of use|operating season', re.I)
+RV_W2 = re.compile(r'\brvs?\b|trailer|vehicle|motorhome|motor home|\brigs?\b|length|camper', re.I)
+ELEV_W = re.compile(r'elevation|altitude|above sea level|\bmsl\b|summit|peak', re.I)
+
+
+def sentence_of(text, s, e):
+    """The whole sentence (or label line) around text[s:e]: cut at . ! ? ; or a new line."""
+    a = max(0, s - 300); b = min(len(text), e + 300)
+    seg = text[a:b]; rs = s - a; re_ = e - a
+    starts = [m.end() for m in re.finditer(r'[.!?;\n]', seg[:rs])]
+    ends = [m.start() for m in re.finditer(r'[.!?;\n]', seg[re_:])]
+    return seg[(starts[-1] if starts else 0):(re_ + ends[0] if ends else len(seg))].strip()
+
+
+VERB_W = re.compile(r"\b(?:is|are|was|were|has|have|had|offers?|offered|provides?|provided|includes?|included|features?|available|located|allowed|permitted|prohibited|required|accepted|welcome|open|closed|opens|closes|may|must|can|cannot|will|should|do|does|not|no|with|without|per|at|in|for|from|through|each|every|all|only|yes)\b", re.I)
+
+
+def is_heading(sent):
+    """A bare heading or menu item (round 2, rule 3): 3 words or fewer, no verb-like word, no 'Label: value'. 'Shower Types',
+    'Toilet Types', 'Amenities' are headings; 'Showers: yes' and 'Hot showers are available' are not."""
+    w = sent.strip().split()
+    if ':' in sent and re.search(r':\s*\S', sent): return False
+    if len(w) <= 3 and not VERB_W.search(sent): return True
+    # a run of Title Case words with no verb (a page menu flattened into one line) is a menu, not a sentence
+    caps = sum(1 for x in w if x[:1].isupper() or not x[:1].isalpha())
+    lower_verb = any(VERB_W.fullmatch(x.strip('.,;')) and x[:1].islower() for x in w)   # a real sentence has a lower-case verb somewhere
+    if len(w) >= 3 and caps >= 0.8 * len(w) and not lower_verb: return True
+    return False
 
 
 def clause_before(text, pos, width=110):
@@ -198,6 +244,7 @@ def judge_mentions(text, rx, extra_pos=False):
     sites have it (C-6: 'range from electric-only to full hookups', 'some sites have 50 amp'). Both kinds on one page = 'some'."""
     pos = neg = None; some = False
     for m in rx.finditer(text):
+        if is_heading(sentence_of(text, m.start(), m.end())): continue   # round 2 rule 3: 'Shower Types' in a menu is not a fact
         before = clause_before(text, m.start())
         after = text[m.end():m.end() + 40]
         if NEG.search(before) or NEG_AFTER.search(after):
@@ -234,11 +281,14 @@ def facts_from_text(text, url):
         elif PRIM_W.search(q): take('primitive', n, m)
         elif RV_W.search(q): take('rv', n, m)
         elif PLAIN_W.match(q) and not partial and noun.startswith(('camp', 'site')): take('total', n, m)
-    for m in SITE_TOTAL2.finditer(text): take('total', int(m.group(1)), m)
+    for m in SITE_TOTAL2.finditer(text): take('total', int(next(g for g in m.groups() if g)), m)
     for k, v in sites.items():
         if v is not None: F['sites.' + k] = fact(v, url, lines[k])
-    m = RVMAX.search(text)
-    if m: put('rv_max_ft', int(next(g for g in m.groups() if g)), m)
+    for m in RVMAX.finditer(text):
+        # round 2 rule 1: an RV length comes from a sentence about RVs / trailers / vehicles / length, never 'Elevation: maximum 451 feet'
+        sent = sentence_of(text, m.start(), m.end()); n = int(next(g for g in m.groups() if g))
+        if ELEV_W.search(sent) or not RV_W2.search(sent) or n > 60 or n < 10: continue
+        put('rv_max_ft', n, m); break
     amps = sorted({int(a) for tup in AMPS.findall(text) for a in tup if a})
     if amps: m = AMPS.search(text); put('hookups.amps', amps, m)
     # C-1 (chat 8, Oct 28): each amenity is judged mention by mention: a 'no / not / without' in the same clause before the word
@@ -271,33 +321,61 @@ def facts_from_text(text, url):
     if fc and rs: put('reservable', 'mixed', rs, line_at(text, fc.start(), fc.end()) + ' … ' + line_at(text, rs.start(), rs.end(), 40))
     elif rs: put('reservable', True, rs)
     elif fc: put('reservable', False, fc)
-    m = YEARROUND.search(text)
-    if m: put('season', 'year-round', m)
-    else:
-        m = SEASON.search(text)
-        if m: put('season', f'{tidy(m.group(1))} through {tidy(m.group(2))}', m)
-        else:
-            m = SEASON2.search(text)
-            if m and re.search(r'open|season|closed|operat|camping', text[max(0, m.start() - 120):m.end() + 60], re.I): put('season', f'{tidy(m.group(1))} through {tidy(m.group(2))}', m)
+    # round 2 rule 2: a camping season needs 'camp' / 'campground' / 'open' / 'season' in the same sentence and NO hunting words
+    # ('Rabbit and quail hunting seasons are open from Nov. 14-Dec. 31' is a hunting season, not when the campground is open)
+    def season_ok(m):
+        sent = sentence_of(text, m.start(), m.end())
+        return not HUNT_W.search(sent) and bool(CAMP_W.search(sent) or re.search(r'\bopen\b|season', sent, re.I)) and not is_heading(sent)
+    done_season = False
+    for m in YEARROUND.finditer(text):
+        if season_ok(m): put('season', 'year-round', m); done_season = True; break
+    if not done_season:
+        for m in SEASON.finditer(text):
+            if season_ok(m): put('season', f'{tidy(m.group(1))} through {tidy(m.group(2))}', m); done_season = True; break
+    if not done_season:
+        for m in SEASON2.finditer(text):
+            if season_ok(m) and CAMP_W.search(sentence_of(text, m.start(), m.end())): put('season', f'{tidy(m.group(1))} through {tidy(m.group(2))}', m); break
     m = CHECKIN.search(text)
     if m: put('checkin', tidy(m.group(1)), m)
     m = CHECKOUT.search(text)
     if m: put('checkout', tidy(m.group(1)), m)
     m = PETS.search(text)
     if m: put('rules.pets', ' '.join(m.group(1).split()), m)
-    m = GENERATORS.search(text)
-    if m: put('rules.generators', ' '.join(m.group(1).split()), m)
+    for m in GENERATORS.finditer(text):
+        sent = sentence_of(text, m.start(), m.end())
+        if HUNT_W.search(sent) or is_heading(sent): continue
+        put('rules.generators', ' '.join(m.group(1).split()), m); break
     m = QUIET.search(text)
     if m: put('rules.quiet_hours', tidy(m.group(1)), m)
-    m = FIRES.search(text)
-    if m: put('rules.fires', ' '.join(m.group(1).split()), m)
+    feat = None
+    for m in FIRES.finditer(text):
+        sent = sentence_of(text, m.start(), m.end())
+        if HUNT_W.search(sent) or is_heading(sent): continue   # a hunt rule ('firearm deer hunt') is not a campfire rule
+        # round 3 rule 3: a fire RULE needs a rule verb (allowed / prohibited / permitted / ban / must / may not); 'fire ring and
+        # lantern pole' is a site feature and goes under 'features'
+        if RULE_VERB.search(sent): put('rules.fires', ' '.join(m.group(1).split()), m); break
+        if feat is None and re.search(r'fire ring|fire pit', sent, re.I): feat = m
+    if feat is not None and 'rules.fires' not in F: put('features', ' '.join(feat.group(1).split()), feat)
     m = STAY.search(text) or STAY2.search(text)
     if m: put('rules.stay_limit', f'{m.group(1)} {(m.group(2) or "") if m.re is STAY else ""}{m.group(3) if m.re is STAY else "days"}'.replace('  ', ' ').strip(), m)
     ph = phones_in(text)
     if ph:
         nums = [p for p, m in ph]
         put('phone', nums if len(nums) > 1 else nums[0], ph[0][1], ' | '.join(line_at(text, m.start(), m.end(), 60) for p, m in ph[:3]))
+    # round 2 rule 6: phone_hint = the first number in the campground section (within 200 chars after 'campground' / 'camp'),
+    # footer or not, so a person can check it when 'phone' is null
+    for m in PHONE.finditer(text):
+        before = text[max(0, m.start() - 200):m.start()]; pn = f'({m.group(1)}) {m.group(2)}-{m.group(3)}'
+        if pn == '(877) 444-6777' or RESLINE_W.search(sentence_of(text, m.start(), m.end())): continue
+        if re.search(r'camp', before, re.I) and not FOOTER_W.search(text[max(0, m.start() - 200):m.end() + 200]):
+            put('phone_hint', pn, m); break
     return F
+
+
+def bare_domain(u):
+    """True for a link with no path (https://recreation.gov, https://www.recreation.gov/): never a campground's booking page."""
+    pr = urllib.parse.urlparse(u or '')
+    return not (pr.path or '').strip('/') and not pr.query
 
 
 def links_facts(links, url):
@@ -305,11 +383,17 @@ def links_facts(links, url):
     F = {}
     bh = SRC.get('booking_hosts') or []
     for u, t in links:
-        tl = (t or '').lower(); h = host_of(u)
-        if 'booking.url' not in F and (any(h.endswith(b) for b in bh) or re.search(r'reserv|book (?:now|a site|online)|make a reservation', tl + ' ' + u.lower())):
-            if not re.search(r'cancel|policy|faq', tl):
-                F['booking.url'] = fact(u, url, f'link “{t[:80]}” -> {u[:100]}')
-                F['booking.how'] = fact('online: ' + h, url, f'link “{t[:80]}”')
+        tl = (t or '').lower(); h = host_of(u); ul = u.lower()
+        # round 2 rule 4: a booking link says reserve / reservation / book (text or url) or sits on a reservation host, and is about
+        # CAMPING: lodge / cottage / room links go under 'lodging_booking'; a page that only says 'fund' / 'donate' is never booking
+        says_book = any(h.endswith(b) for b in bh) or re.search(r'reserv|book (?:now|a site|online|here)|make a reservation', tl + ' ' + ul)
+        if not says_book or re.search(r'cancel|policy|faq|fund|donat|conservation|heritage', tl + ' ' + ul): continue
+        if bare_domain(u): continue   # round 3 rule 2: https://recreation.gov is the site's front door, not this campground's page
+        lodging = re.search(r'lodge|cottage|cabin|room|yurt|inn\b|hotel', tl + ' ' + ul) and not re.search(r'camp', tl + ' ' + ul)
+        key = 'lodging_booking' if lodging else 'booking'
+        if key + '.url' not in F:
+            F[key + '.url'] = fact(u, url, f'link “{t[:80]}” -> {u[:100]}')
+            F[key + '.how'] = fact('online: ' + h, url, f'link “{t[:80]}”')
     pdfs = [(u, t) for u, t in links if u.lower().split('?')[0].endswith('.pdf')]
     for cand in (pdfs, links):
         for u, t in cand:
@@ -525,11 +609,11 @@ def ky_key():
 # ---- one campground
 def blank_record(r):
     return {'name': r['name'], 'lat': r['lat'], 'lon': r['lon'], 'park': r['park'], 'agency': r['agency'], 'kind': r['kind'], 'official_page': r['page'] or None,
-            'booking': {'url': None, 'how': None}, 'map': {'url': None, 'date_how': None},
+            'booking': {'url': None, 'how': None}, 'lodging_booking': {'url': None, 'how': None}, 'map': {'url': None, 'date_how': None},
             'sites': {'total': None, 'tent': None, 'rv': None, 'cabin': None, 'group': None, 'primitive': None}, 'rv_max_ft': None,
             'hookups': {'electric': None, 'amps': None, 'water': None, 'sewer': None}, 'dump_station': None, 'showers': None, 'restrooms': None, 'drinking_water': None,
             'fees': None, 'reservable': None, 'season': None, 'checkin': None, 'checkout': None,
-            'rules': {'pets': None, 'generators': None, 'quiet_hours': None, 'fires': None, 'stay_limit': None}, 'phone': None,
+            'rules': {'pets': None, 'generators': None, 'quiet_hours': None, 'fires': None, 'stay_limit': None}, 'phone': None, 'phone_hint': None, 'features': None,
             'elevation_ft': {'value': None, 'src': None}, 'cell': {'status': 'needs FCC token', 'carriers': None, 'src': None},
             'facts_src': {}, 'status': 'not read', 'checked': TODAY, 'ver': VER, 'list': r['src']}
 
@@ -560,13 +644,29 @@ def one_camp(area, r, state):
             st, text, links = read_page(u)
             rec['status'] = st
             if st == 'ok':
-                F = facts_from_text(text, u); F.update(links_facts(links, u)); apply_facts(rec, F); STAT['ok'] += 1
+                F = facts_from_text(text, u); F.update(links_facts(links, u))
+                # round 3 rule 5: a PARK page (parks.ky.gov …) often keeps the campground facts on its own 'Campground' page: when
+                # the page gave no site count, follow ONE same-host link whose text or url says campground / camping and fill the blanks
+                if 'sites.total' not in F and not late():
+                    sub = next((lu for lu, lt in links if host_of(lu) == host_of(u) and re.search(r'campground|camping|campsite', (lt or '') + ' ' + lu, re.I)
+                                and not re.search(r'reserv|cancel|policy|lodg|cottage|\.pdf', (lt or '') + ' ' + lu, re.I) and lu.split('#')[0] != u.split('#')[0]), None)
+                    if sub:
+                        st2, text2, links2 = read_page(sub)
+                        rec['campground_page'] = {'url': sub, 'status': st2}
+                        if st2 == 'ok':
+                            F2 = facts_from_text(text2, sub); F2.update(links_facts(links2, sub))
+                            for k2, v2 in F2.items():
+                                if k2 not in F: F[k2] = v2
+                apply_facts(rec, F); STAT['ok'] += 1
             elif st.startswith('HTTP 403'): STAT['needs_browser'] += 1
             elif st == 'robots.txt says no': STAT['robots'] += 1
             elif st == 'host resting': STAT['resting'] += 1
-        if not rec['booking']['url'] and r['reserve'] and official(r['reserve'], area, r['park']):
-            rec['booking'] = {'url': r['reserve'], 'how': 'online: ' + host_of(r['reserve'])}
-            rec['facts_src']['booking.url'] = {'url': r['reserve'], 'date': TODAY, 'line': f"booking link from our {r['src']} row (official system {host_of(r['reserve'])})"}
+        if not rec['booking']['url'] and r['reserve'] and official(r['reserve'], area, r['park']) and not bare_domain(r['reserve']):
+            rl = r['reserve'].lower()
+            if bare_domain(r['reserve']): rl = ''
+            key = 'lodging_booking' if re.search(r'lodge|cottage|cabin|room', rl) and 'camp' not in rl else 'booking'
+            rec[key] = {'url': r['reserve'], 'how': 'online: ' + host_of(r['reserve'])}
+            rec['facts_src'][key + '.url'] = {'url': r['reserve'], 'date': TODAY, 'line': f"booking link from our {r['src']} row (official system {host_of(r['reserve'])})"}
     # the status of a federal or state read never stops the elevation or the coverage note
     if not late(): rec['elevation_ft'] = elevation(r['lat'], r['lon'], canada)
     rec['cell'] = fcc_files(area, state) if not canada else {'status': 'FCC map covers the US only; Canada = ISED coverage maps (not built)', 'carriers': None, 'src': None}
@@ -599,7 +699,65 @@ def ky_check(D):
     agree = sum(1 for r in rows for v in (r.get('fields') or {}).values() if v.startswith('agree'))
     differ = sum(1 for r in rows for v in (r.get('fields') or {}).values() if v.startswith('DIFFER'))
     blank = sum(1 for r in rows for v in (r.get('fields') or {}).values() if v.startswith('bot blank'))
-    return {'when': TODAY, 'campgrounds': len(rows), 'agree': agree, 'differ': differ, 'bot_blank': blank, 'rows': rows}
+    out = {'when': TODAY, 'campgrounds': len(rows), 'agree': agree, 'differ': differ, 'bot_blank': blank, 'rows': rows}
+    out['gate'] = ky_gate(D, agree, differ)
+    return out
+
+
+# the 8 known answers of chat 11's round-2 grade (Oct 28): (which record by name words, field path, wanted value or a test name)
+GATE_ROWS = [
+    ('higginson', 'rv_max_ft', None, 'Higginson-Henry WMA: no RV length (the page gives elevation 675 ft, not an RV length)'),
+    ('rolling fork', 'rv_max_ft', None, 'Rolling Fork WMA: no RV length (elevation 980 ft is not an RV length)'),
+    ('west kentucky', 'rv_max_ft', None, 'West Kentucky WMA: no RV length (elevation 451 ft is not an RV length)'),
+    ('yellowbank', 'rv_max_ft', None, 'Yellowbank WMA: no RV length (elevation 872 ft is not an RV length)'),
+    ('yellowbank', 'season', None, 'Yellowbank WMA: no camping season (Nov. 1-Dec. 31 is the rabbit / quail hunting season)'),
+    ('higginson', 'season', None, 'Higginson-Henry WMA: no camping season (hunting season dates are not the camping season)'),
+    ('mammoth cave campground', 'showers', 'sentence-or-null', "Mammoth Cave: showers from a real sentence or null, never the 'Shower Types' menu heading"),
+    ('twin knobs', 'hookups.sewer', 'some', "Twin Knobs: 'RV sites range from electric-only to full hookups' = sewer 'some'"),
+    # round 3 (chat 11 regrade)
+    ('bandy creek', 'phone', 'not-877', 'Bandy Creek: phone is not the (877) reservation line'),
+    ('bear creek', 'phone', 'not-877', 'Bear Creek Horse Camp: phone is not the (877) reservation line'),
+    ('blue heron', 'phone', 'not-877', 'Blue Heron: phone is not the (877) reservation line'),
+    ('station camp', 'phone', 'not-877', 'Station Camp: phone is not the (877) reservation line'),
+    ('white sulphur', 'booking.url', 'not-bare', 'White Sulphur Horse Camp: booking link is a campground page, not a bare domain'),
+    ('s-tree', 'booking.url', 'not-bare', 'S-Tree: booking link is a campground page, not a bare domain'),
+    ('mammoth cave campground', '', 'one-record', 'Mammoth Cave Campground: one record only (duplicates merged)'),
+    ('fort boonesborough', 'sites.total', '>=100', 'Fort Boonesborough: site count read from the state park page (key 163, so >= 100)'),
+]
+
+
+def ky_gate(D, agree, differ):
+    """GATE (rounds 2 + 3): PASS = the 16 known answers hold AND at least 70% of the hand-key fields the bot filled agree.
+    Printed as 'GATE=PASS' / 'GATE=FAIL' for the workshop driver; saved in state['test'] like the other bots."""
+    rows = []
+    def get(rec, path):
+        d = rec
+        for p in path.split('.'):
+            d = (d or {}).get(p) if isinstance(d, dict) else None
+        return d
+    for words, field, want, why in GATE_ROWS:
+        recs = [r for r in (D.get('camps') or {}).values() if words in r.get('name', '').lower() and r.get('status') == 'ok']
+        if not recs:
+            rows.append({'ok': None, 'why': why, 'got': 'record not read (status not ok)'}); continue
+        rec = recs[0]; got = get(rec, field) if field else None
+        if want == 'one-record':
+            n = sum(1 for r in (D.get('camps') or {}).values() if words in r.get('name', '').lower()); got = f'{n} record(s)'; ok = n == 1
+        elif want == 'not-877':
+            ph = got if isinstance(got, list) else [got] if got else []
+            ok = not any(str(x).startswith(('(877)', '(800)', '(888)', '(866)')) for x in ph)
+        elif want == 'not-bare': ok = not (got and bare_domain(got))
+        elif want == '>=100': ok = isinstance(got, int) and got >= 100
+        elif want == 'sentence-or-null':
+            line = ((rec.get('facts_src') or {}).get(field) or {}).get('line') or ''
+            ok = got is None or (bool(line) and not is_heading(line) and re.search(r'shower', line, re.I) and VERB_W.search(line))
+        else: ok = got == want
+        rows.append({'ok': bool(ok), 'why': why, 'got': got if want != 'sentence-or-null' else f"{got} from “{line[:90]}”"})
+    filled = agree + differ
+    pct = round(100 * agree / filled) if filled else 0
+    known_ok = all(r['ok'] for r in rows if r['ok'] is not None); unread = sum(1 for r in rows if r['ok'] is None)
+    res = 'PASS' if known_ok and pct >= 70 and unread == 0 and filled else 'FAIL'
+    why = f"known answers {sum(1 for r in rows if r['ok'])}/{len(rows)} right ({unread} not read) · hand-key agreement {agree}/{filled} = {pct}% (need 70%)"
+    return {'result': res, 'why': why, 'when': TODAY, 'rows': rows, 'pct': pct}
 
 
 # ---- areas
@@ -628,8 +786,16 @@ def merge_duplicates(D):
             if b in gone: continue
             A, B = camps[a], camps[b]
             if norm_name(A['name']) != norm_name(B['name']) or not norm_name(A['name']): continue
-            if dist_m((A['lat'], A['lon']), (B['lat'], B['lon'])) > 300: continue
-            keep, drop = (a, b) if (A.get('list') == 'campfed') >= (B.get('list') == 'campfed') else (b, a)
+            d = dist_m((A['lat'], A['lon']), (B['lat'], B['lon']))
+            same_park = bool(set((A.get('park') or '').split()) & set((B.get('park') or '').split()))
+            no_point = None in (A['lat'], A['lon'], B['lat'], B['lon'])
+            # round 3 rule 4: a record with no point of its own still merges when the park ref matches (Mammoth Cave, Twin Knobs)
+            if d > 300 and not (no_point and same_park) and not (no_point and A.get('list') != B.get('list')): continue
+            # keep the record WITH facts; on a tie the RIDB (campfed) record keeps its point
+            fa, fb = len(A.get('facts_src') or {}), len(B.get('facts_src') or {})
+            if fa != fb: keep, drop = (a, b) if fa > fb else (b, a)
+            else: keep, drop = (a, b) if (A.get('list') == 'campfed') >= (B.get('list') == 'campfed') else (b, a)
+            if camps[keep]['lat'] is None and camps[drop]['lat'] is not None: camps[keep]['lat'], camps[keep]['lon'] = camps[drop]['lat'], camps[drop]['lon']
             K, X = camps[keep], camps[drop]
             K.setdefault('ids', [keep]); K['ids'] = sorted(set(K['ids'] + X.get('ids', [drop]) + [drop]))
             if X.get('park') and X['park'] not in (K.get('park') or ''): K['park'] = (K['park'] + ' ' + X['park']).strip()
@@ -682,7 +848,10 @@ def run_area(area, state):
     merge_duplicates(D)
     D['read'] = TODAY; D['counts'] = counts(D)
     save(f, D)
-    if area == 'US-KY' and done: state['ky_check'] = ky_check(D)
+    if area == 'US-KY' and done:
+        state['ky_check'] = ky_check(D)
+        g = state['ky_check']['gate']; state['test'] = {'result': g['result'], 'why': g['why'], 'when': g['when']}
+        notice(f"KENTUCKY GATE {g['result']}: {g['why']}"); print('GATE=' + g['result'], flush=True)
     left = sum(1 for i in rows if i not in D['camps'])
     state['areas'][area] = {'status': 'done' if left == 0 else 'partial', 'camps': len(rows), 'checked': len(D['camps']), 'left': left, 'updated': TODAY, 'counts': D['counts']}
     notice(f"{area}: {done} campgrounds read this chunk ({fresh} fresh, {left} left) · {D['counts']}")
@@ -730,6 +899,11 @@ def review(state):
     if k:
         L += ['', '## Kentucky answer-key check (R5: the bot vs kpc-campgrounds.json, hand-checked)', '',
               f"- {k['when']}: {k['campgrounds']} hand-checked campgrounds · fields agree {k['agree']} · DIFFER {k['differ']} · bot blank {k['bot_blank']}", '']
+        g = k.get('gate')
+        if g:
+            L += [f"**GATE={g['result']}** · {g['why']}", '']
+            for r in g['rows']: L.append(f"- {'ok' if r['ok'] else 'not read' if r['ok'] is None else 'MISS'}: {r['why']} · got {r['got']}")
+            L.append('')
         unread = [r for r in k['rows'] if r.get('status') == 'not in output']
         for r in k['rows']:
             fs = r.get('fields') or {}
@@ -824,7 +998,7 @@ def selftest():
     F = facts_from_text(SAMPLES[0][1], 'sample://ky')
     want = {'sites.total': 146, 'hookups.amps': [50], 'hookups.electric': True, 'hookups.water': True, 'dump_station': True, 'showers': True, 'restrooms': 'yes (kind not stated)',
             'rules.pets': 'Pets are welcome on a leash', 'rules.quiet_hours': '10 pm to 7 am', 'rules.stay_limit': '14 consecutive days', 'season': 'April 1 through October 31',
-            'checkin': '3:00 pm', 'checkout': '1:00 pm', 'phone': '(800) 555-0199'}
+            'checkin': '3:00 pm', 'checkout': '1:00 pm', 'phone': None}   # round 3: 'Reservations: 1-800-…' is the booking line, never the phone
     for k, v in want.items():
         got = (F.get(k) or {}).get('value')
         if got != v: bad += 1; print(f'   MISS {k}: want {v!r}, got {got!r}')

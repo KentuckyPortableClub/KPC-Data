@@ -1,0 +1,44 @@
+name: KPC scoreboard (nightly counts, facts only)
+# Oct 28 2026 (chat 2): counts what the other bots have on file per state / province / park (outline, size check, official map,
+# rules, hours, fees, permits, access points, campgrounds, closure sources, who runs it, 2-fer passes) into data/review/scoreboard.json
+# (chat 1's kpc-map-coverage.html reads it) + scoreboard-parks.json + scoreboard-check.md (our counts next to chat 8's hand counts).
+# Local files only, no web, decides nothing. Never fails except a failed save.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 7 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: kpc-scoreboard
+  cancel-in-progress: false
+jobs:
+  scoreboard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - name: Kentucky answer key, retired list and chat 8 hand counts (KPC-Links, read-only)
+        uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+      - name: Count what is on file
+        continue-on-error: true
+        env:
+          LINKS: ../links
+          OUT: data/review
+        run: |
+          cd kpcdata
+          python3 .github/scripts/kpc_scoreboard_bot.py || true
+      - name: Save the scoreboard and tell the status board
+        continue-on-error: true
+        run: |
+          cd kpcdata
+          python3 .github/scripts/kpc_status.py board scoreboard green "scoreboard.json + scoreboard-parks.json + scoreboard-check.md" "nothing (facts only)" || true
+          bash ../links/.github/scripts/kpc_push_data.sh . "scoreboard: nightly counts" data/review data/status || true

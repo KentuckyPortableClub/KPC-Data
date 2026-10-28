@@ -1,0 +1,110 @@
+name: KPC layer intake (probes map-layer leads for chat 9)
+# Oct 28 2026 (Fable, chat 10 'bot workshop'; HQ item B): ONE bot probes every lead in data/intake/queue.json politely (ArcGIS REST
+# metadata, the publisher's own item page for the terms, record counts, which missing parks a layer would close) and writes
+# data/intake/ready.json + review.md. Chat 9 approves rows there. Nothing here changes a key, an outline or a card; no geometry
+# is stored. Manners: kpc_manners.py. Up to 'chunks' chunks of 55 minutes in one job, one save per chunk; when rows remain and
+# 'chain' allows, the next job starts itself. Nightly it runs only when the queue holds unprobed rows (a skip is a green run).
+on:
+  workflow_dispatch:
+    inputs:
+      rows:
+        description: 'Blank = every unprobed queue row; or a space-separated list of urls to (re)probe'
+        default: ''
+      chunks:
+        description: 'How many 55-minute chunks this job may work (max 5)'
+        default: '2'
+      chain:
+        description: 'How many MORE jobs may follow this one by themselves when rows remain (0 = none)'
+        default: '3'
+      test:
+        description: 'yes = print the known-answer test table and the GATE line'
+        default: ''
+  schedule:
+    - cron: '41 8 * * *'
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: kpc-intake
+  cancel-in-progress: false
+jobs:
+  intake:
+    runs-on: ubuntu-latest
+    timeout-minutes: 320
+    env:
+      GH_TOKEN: ${{ github.token }}
+      LINKS: ../links
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - name: Kentucky answer key and state layer list (KPC-Links, read-only)
+        uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+      - name: Nightly runs only when the queue holds unprobed rows
+        id: gate
+        continue-on-error: true
+        run: |
+          cd kpcdata
+          if [ "${{ github.event_name }}" = schedule ]; then
+            N=$(python3 - <<'PY' 2>/dev/null || echo 0
+          import json, re, time
+          def strip(u): return re.sub(r'\?.*$', '', (u or '').strip()).rstrip('/')
+          def sig(r): return '|'.join(str(r.get(k) or '') for k in ('url', 'title', 'publisher', 'licence', 'note', 'expect'))
+          try: q = json.load(open('data/intake/queue.json')).get('rows') or []
+          except Exception: q = []
+          try: s = json.load(open('data/intake/state.json')).get('rows') or {}
+          except Exception: s = {}
+          def old(p):
+              try: return (time.time() - time.mktime(time.strptime(p[:10], '%Y-%m-%d'))) / 86400 >= 30
+              except Exception: return True
+          n = 0
+          for r in q:
+              u = strip(r.get('url'))
+              if not u: continue
+              p = s.get(u) or {}
+              if not p.get('probed') or p.get('sig') != sig(r) or p.get('retry') or old(p['probed']): n += 1
+          print(n)
+          PY
+          )
+            echo "unprobed rows: $N"
+            if [ "${N:-0}" = "0" ]; then echo "skip=1" >> "$GITHUB_OUTPUT"; fi
+          fi
+      - name: Probe the queue in chunks, one save per chunk
+        if: steps.gate.outputs.skip != '1'
+        continue-on-error: true
+        env:
+          ROWS: ${{ inputs.rows }}
+          TEST: ${{ inputs.test == 'yes' && '1' || '0' }}
+          MINUTES: '55'
+        run: |
+          cd kpcdata
+          C="${{ inputs.chunks || 2 }}"; [ "$C" -gt 5 ] && C=5
+          LEFT=1
+          for i in $(seq 1 "$C"); do
+            [ "$LEFT" = "0" ] && break
+            python3 .github/scripts/kpc_intake_bot.py | tee /tmp/intake.log || true
+            LEFT=$(grep -o '^LEFT=[0-9]*' /tmp/intake.log | tail -1 | cut -d= -f2); LEFT=${LEFT:-0}
+            bash ../links/.github/scripts/kpc_push_data.sh . "intake: probe chunk $i (${LEFT} rows left)" data/intake data/status || true
+            [ -n "$ROWS" ] && break
+          done
+          echo "LEFT=$LEFT" >> "$GITHUB_ENV"
+          grep -o '^GATE=[A-Z]*' /tmp/intake.log | tail -1 >> "$GITHUB_ENV" || true
+      - name: Status lines for the checkers and the board
+        if: steps.gate.outputs.skip != '1'
+        continue-on-error: true
+        run: |
+          cd kpcdata
+          python3 .github/scripts/kpc_status.py grade-me "layer intake" "queue" "data/intake/review.md" "READY rows first; chat 9 approves in ready.json" || true
+          python3 .github/scripts/kpc_status.py board "layer intake" green "data/intake/ready.json + review.md" "chat 9 (approve READY rows)" "$LEFT rows left" || true
+          bash ../links/.github/scripts/kpc_push_data.sh . "intake: status" data/status data/intake || true
+      - name: Rows remain, so the next job starts itself
+        if: ${{ inputs.rows == '' && env.LEFT != '0' && env.LEFT != '' && inputs.chain != '0' && inputs.chain != '' }}
+        continue-on-error: true
+        run: |
+          C=$(( ${{ inputs.chain }} - 1 ))
+          echo "::notice title=Layer intake::$LEFT rows left: the next job starts itself (then $C more may follow)"
+          gh workflow run kpc-intake.yml -R ${{ github.repository }} -f rows= -f chunks="${{ inputs.chunks || 2 }}" -f chain=$C || true

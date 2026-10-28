@@ -1,0 +1,115 @@
+{
+ "about": "LAYER INTAKE QUEUE (Oct 28 2026, HQ item B). Every map-layer lead anyone finds goes here as one row; kpc_intake_bot.py probes each unprobed row politely and writes its verdict to ready.json + review.md. Row shape: see README.md. 'expect' = the known answer for a test row (chat 9's last probe list; the bot prints ok / MISS and GATE=PASS when all agree).",
+ "rows": [
+  {
+   "url": "https://services7.arcgis.com/5hLFVlePaucIMGhw/arcgis/rest/services/VS_Boundary_Map_2_WFL1/FeatureServer/2",
+   "area": "US-NV",
+   "title": "Nevada State Parks boundaries (Division of State Parks, VS Boundary Map)",
+   "publisher": "Nevada Division of State Parks (AGOL org owner NDSP_1PARK; copyright Nevada Division of State Lands)",
+   "licence": "",
+   "from": "chat 9",
+   "added": "2026-10-28",
+   "note": "test row (a): the Nevada lesson; the terms on the item page are a disclaimer + credits with no use limits",
+   "expect": "READY or already read"
+  },
+  {
+   "url": "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_rez/FeatureServer/0",
+   "area": "US",
+   "title": "USACE reservoirs (Army Corps of Engineers)",
+   "publisher": "U.S. Army Corps of Engineers",
+   "licence": "publicly available",
+   "from": "chat 9",
+   "added": "2026-10-28",
+   "note": "test row (b): federal; 'publicly available'. Area 'US' = whole country: no per-area missing list, so the closes test is skipped unless the row is given a state area",
+   "expect": "READY or already read"
+  },
+  {
+   "url": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/SCDNR_Managed_Lands_Public_Viewer/FeatureServer/0",
+   "area": "US-SC",
+   "title": "SCDNR managed lands (public viewer) on Clemson's ArcGIS Online account",
+   "publisher": "Clemson University (hosting for South Carolina DNR)",
+   "licence": "",
+   "from": "chat 9",
+   "added": "2026-10-28",
+   "note": "test row (c): hosted on a university account, no credits; url to confirm (we read DEV_-_SCDNR_Public_Lands_Viewer/4 from the same org acgZYxoN5Oj8pDLa)",
+   "expect": "ASK-THE-PUBLISHER or already read"
+  },
+  {
+   "url": "https://gis.princeedwardisland.ca/server/rest/services/GeoLincData/GeoLinc_provincial_park_polygon_ENV/MapServer/0",
+   "area": "CA-PE",
+   "title": "PEI provincial parks (GeoLinc, ENV polygon layer)",
+   "publisher": "Government of Prince Edward Island (GeoLinc)",
+   "licence": "",
+   "from": "chat 9",
+   "added": "2026-10-28",
+   "note": "test row (d): nothing stated on the service; url to confirm (we read GeoLinc_Provincial_Parks/MapServer/0 on the same host, so 'same publisher' is expected)",
+   "expect": "ASK-THE-PUBLISHER"
+  },
+  {
+   "url": "https://gis.nature.cz/arcgis/rest/services/ObecnaOchrana/PrirodniPark/MapServer/0",
+   "area": "CZ",
+   "title": "Czechia natural parks (AOPK CR, gis.nature.cz, Prirodni park)",
+   "publisher": "Agentura ochrany prirody a krajiny CR (nature.cz)",
+   "licence": "viewing only",
+   "from": "chat 9",
+   "added": "2026-10-28",
+   "note": "test row (e): the service terms say viewing only; url to confirm (layer number guessed)",
+   "expect": "LIVE-ONLY"
+  },
+  {
+   "url": "https://services3.arcgis.com/Cdxz8r11hT0MGzg1/arcgis/rest/services/FWPLND_STATEPARKS/FeatureServer/0",
+   "area": "US-MT",
+   "title": "Montana FWP state parks",
+   "publisher": "Montana Fish, Wildlife & Parks",
+   "licence": "",
+   "from": "chat 9",
+   "added": "2026-10-28",
+   "note": "test row (f): we already read this as sgmta",
+   "expect": "already read"
+  },
+  {
+   "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Doorstep_Greens_Polygons/FeatureServer",
+   "area": "GB",
+   "title": "Doorstep Greens (England) polygons",
+   "publisher": "Defra group ArcGIS Online organisation",
+   "licence": "There are no public access constraints to this data. Use of this data is subject to the Open Government Licence",
+   "from": "harvester",
+   "added": "2026-10-28",
+   "note": "test row (g1): a Defra OGL harvester lead; READY if it holds named polygons that close a GB park, else REJECT",
+   "expect": "READY or REJECT"
+  },
+  {
+   "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Millennium_Greens_England_Polygons/FeatureServer",
+   "area": "GB",
+   "title": "Millennium Greens (England) polygons",
+   "publisher": "Defra group ArcGIS Online organisation",
+   "licence": "There are no public access constraints to this data. Use of this data is subject to the Open Government Licence",
+   "from": "harvester",
+   "added": "2026-10-28",
+   "note": "test row (g2): a Defra OGL harvester lead",
+   "expect": "READY or REJECT"
+  },
+  {
+   "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/SSSI_Units_England/FeatureServer",
+   "area": "GB",
+   "title": "SSSI units (England)",
+   "publisher": "Defra group ArcGIS Online organisation",
+   "licence": "There are no public access constraints to this data. Use of this data is subject to the Open Government Licence",
+   "from": "harvester",
+   "added": "2026-10-28",
+   "note": "test row (g3): a Defra OGL harvester lead with named polygons (SSSI names)",
+   "expect": "READY or REJECT"
+  },
+  {
+   "url": "https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0",
+   "area": "US-KY",
+   "title": "My favorite camping spots (a hobby map)",
+   "publisher": "hobby account (personal map)",
+   "licence": "",
+   "from": "chat 9",
+   "added": "2026-10-28",
+   "note": "test row (h): a made-up hobby layer on a non-government account; the bot will mark it 'did not open' and REJECT",
+   "expect": "REJECT"
+  }
+ ]
+}

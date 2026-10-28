@@ -25,8 +25,12 @@ Rules of the read (RULES FIRST: this bot decides nothing for members, so no rule
   R3 the TOLERANCE is 15% (Brandon: 'more than ~15% off'); G-M5's 25% / 500 acres stays the OBSERVATIONS-LOG threshold.
   R4 handover words are HINTS, written with the sentence and the source; the bot applies nothing (same as the documents bot).
   R5 a park retired by POTA keeps its row, marked 'retired by POTA <date>', so a person can see the outline still exists.
-  R6 Kentucky's test cases must pass before the long run: Levi Jackson (US-1264: 722 vs 896 acres) flagged 'off';
-     Otter Creek (US-8144) carries a handover hint naming Meade County.
+  R6 Kentucky's test cases (KNOWN_ANSWERS, 10 rows from chat 11's grade) must ALL pass before the long run: Levi Jackson OFF +
+     City of London hint, Otter Creek's Meade hint, Green WSR not read off Mammoth Cave's page, '708, 879' read as one number, …
+  R7 (V4) a CLEAN official total (a total sentence naming the park, or a labelled 'Park Size:' row) more than 15% off = OFF;
+     'unsure' only when no total-looking number exists, and it always carries a cause. Pages of ANOTHER unit (a different NPS code
+     or FWS refuge slug, a refuge complex) count only where the sentence names this park. Handover hints come only from the park's
+     own pages and must be about the park (its name or 'the park / the refuge…'), with a year >= 2000 or a change word + a new owner.
 Manners: kpc_manners.py (robots, 2 s per host, back-off, three strikes = a day's rest); PDFs by range (first 400 KB).
 Resumable: a park checked within REFRESH_DAYS (7) is skipped; MINUTES (55) per chunk; never fails (exit 0 always).
 
@@ -44,7 +48,7 @@ REFRESH_DAYS = int(os.environ.get('REFRESH_DAYS') or 7)
 TOL = 0.15
 PDF_FIRST = 400_000
 TODAY = time.strftime('%Y-%m-%d')
-VER = 3   # Oct 28 ~5 AM (chat 8's KY grade): history numbers, containers, designation, units, cause class; a failed read keeps the old record
+VER = 4   # Oct 28 (chat 11's KY grade): '708, 879' parse + summed lakes, other-unit pages, history words + stale years, unsure carries a cause, own-page handover hints, quoted URLs, 10-row gate, same-agency label
 QUEUE = ['US-KY',
          'US-TN', 'US-NC', 'US-VA', 'US-WV', 'US-GA', 'US-AL', 'US-SC', 'US-FL', 'US-MS',
          'US-IN', 'US-IL', 'US-MO', 'US-WI', 'US-MN', 'US-IA', 'US-ND', 'US-SD',
@@ -60,15 +64,35 @@ STAT = {'parks': 0, 'with_outline': 0, 'size_agree': 0, 'size_off': 0, 'size_uns
 M = None
 
 # ---- reading sizes
-NUM = r'(\d{1,3}(?:,\d{3})+(?:\.\d+)?|\d+(?:\.\d+)?(?:\s*million)?)'
+# V4 fix 1: '708, 879 acres' (a comma, a space and exactly 3 digits) is ONE number, 708,879; the look-behind stops '2019, 100' from reading as 9,100
+NUM = r'(\d{1,3}(?:,\s?\d{3}(?!\d))+(?:\.\d+)?|\d+(?:\.\d+)?(?:\s*million)?)'
 UNIT = r'(acres?|ac\b|hectares?|\bha\b|square\s+(?:miles?|kilomet(?:er|re)s?)|sq\.?\s*(?:mi|km)\b|km\s*²|km2\b|mi\s*²)'
-SIZE = re.compile(NUM + r'\s*[-–\s]?\s*' + UNIT, re.I)
-SIZE2 = re.compile(r'(?:acreage|area|size|total area|land area|park area)\s*[:=]?\s*' + NUM + r'\s*' + UNIT + '?', re.I)
+SIZE = re.compile(r'(?<![\d.,])' + NUM + r'\s*[-–\s]?\s*' + UNIT, re.I)
+SIZE2 = re.compile(r'(?:acreage|area|size|total area|land area|park area)\s*[:=]?\s*(?<![\d.,])' + NUM + r'\s*' + UNIT + '?', re.I)
+# 'two lakes of 40 and 60 acres' / '21.2 and 13.8 acre lakes': one candidate with the SUM; the parts are not totals
+PNUM = r'\d[\d,]*(?:\.\d+)?'
+SUMRX = re.compile(r'(?<![\d.,])((?:' + PNUM + r'(?:\s*-?\s*acres?)?\s*,\s*)*' + PNUM + r'(?:\s*-?\s*acres?)?\s*(?:and|&)\s*' + PNUM + r')\s*-?\s*acres?\b', re.I)
 TOTALWORD = re.compile(r'encompass|cover|consist|compris|total|spans|protects|includes|spread over|acre (?:park|area|refuge|forest|preserve|reserve|site|tract|property|wma|wildlife|recreation|lake|monument|seashore|lakeshore)|'
                        r'(?:park|area|refuge|forest|preserve|reserve|site|tract|property|monument|seashore|lakeshore|wma|lands?) (?:of|is|has|contains|covers|totals?|encompasses|includes) ', re.I)
-NOTTOTAL = re.compile(r'\blake\b.*\bacre|acre[- ]lake|reservoir|pond|campground|campsite|parking|picnic|golf|cemetery|garden|lawn|field|pool|beach|marsh of|wetland of|per acre|acre[- ]feet|acre feet|acres? (?:of|in) (?:water|lake|pond|wetland|crop|timber|hunting|fields?)|'
-                       r'burn|harvest|logged|planted|restored|treated|easement|acquired|purchas|added|expansion|donat|'
-                       r'land grant|patent|originally|in 1[6-9]\d\d|granted|surveyed|included in the|part of the \d|within the \d|lies within|is part of|portion of the \d|complex|together with', re.I)
+# V4 fix 3: HISTORY / marketing words always win (a land grant, a deed, 'of wilderness'); PART words lose to a CLEAN total sentence
+HISTORY = re.compile(r'\bgrants?\b|grant of|conveyed|deeded|\bpatent|totall?ing|of wilderness|originally|\bonce\b|land grant|granted|surveyed', re.I)
+OLD_YEAR = re.compile(r'in (?:1[6-8]\d\d|19[0-4]\d)', re.I)   # an old year BEFORE the number ('In 1931, 800 acres were donated'): history
+PART = re.compile(r'\blake\b.*\bacre|acre[- ]lake|reservoir|pond|campground|campsite|parking|picnic|golf|cemetery|garden|\blawns?\b|\bfields?\b|\bpools?\b|beach|marsh of|wetland of|per acre|acre[- ]feet|acre feet|acres? (?:of|in) (?:water|lake|pond|wetland|crop|timber|hunting|fields?)|'
+                  r'burn|harvest|logged|planted|restored|treated|easement|acquired|purchas|added|expansion|donat|'
+                  r'included in the|part of the \d|within the \d|lies within|is part of|portion of the \d|complex|together with', re.I)
+NOTTOTAL = re.compile(HISTORY.pattern + '|' + PART.pattern, re.I)   # kept for readers of the old name
+# HARD parts: never a park total, even in a sentence that names the park (a lake, water, habitat, acre-feet, a campground)
+HARD_PART = re.compile(r'acre[- ]lake|\blake\b[^.]{0,30}\bacres?\b|acres? (?:of|in) (?:water|lakes?|ponds?|wetlands?|crops?|timber|hunting|fields?|habitat|\w+ habitat|wilderness|forest lands?|national forest)|per acre|acre[- ]?feet|impoundment|campground|campsite|parking|picnic|golf|cemetery|food plots?|moist[- ]soil|\bconserve\b', re.I)
+# candidates never chosen as the official number (history, another unit, a page of another unit, a summed part)
+EXCLUDED = ('history', 'part of a sum', 'another park / unit named in the sentence', "a page of another unit; the sentence does not name this park",
+            'a national unit on a state park page', 'a state unit on a national park page')
+NO_TOTAL_CAUSE = 'no total-looking sentence: numbers found were parts or other units'
+# a CLEAN total: the park's own name in the sentence + a total word, or a labelled size row ('Park Size: 1007 acres')
+CLEAN = re.compile(r'consists? of|encompass|compris|\bcovers?\b|\btotals?\b|\bspans\b|is an? [\d,]+(?:\.\d+)?[- ]acre|acre (?:park|forest|refuge|wma|area|preserve|reserve|site|tract|property|monument|battlefield|recreation area)|\bsize\b|total area|park size|land area|acreage', re.I)
+LABEL = re.compile(r'(?:park size|total area|land area|size|acreage)\s*[:=]\s*$', re.I)
+STALE = re.compile(r'as of (?:\w+ )?((?:19|20)\d\d)', re.I)
+# another named unit right before the number ('Fort Donelson National Battlefield … Park Size: 1007 acres' on Fort Heiman's row; 'Hatchie NWR 11,556 acres')
+NAMED_UNIT = re.compile(r"((?:[A-Z][\w'’-]+ ){1,4})(?:National (?:Wildlife Refuge|Park|Battlefield|Forest|Monument|Seashore|Lakeshore|Recreation Area|Historical Park|Historic Site|Military Park|River|Preserve)|State (?:Park|Forest|Nature Preserve|Natural Area|Resort Park|Historic Site)|Wildlife Management Area|WMA\b|NWR\b)")
 HANDOVER = re.compile(r'\b((?:transferr?ed|transfer of|handed over|turned over|conveyed|deeded|donated|sold|ceded|leased|given|gift(?:ed)?)\s+(?:[^.;\n]{0,80}?\s)?(?:back )?(?:to|from)\s+(?:the\s+)?(?:city|county|town|village|parish|state|commonwealth|municipality|tribe|nation|district|authority|university|foundation|trust|conservancy|audubon|[A-Z][\w.&\'-]+(?:\s+[A-Z][\w.&\'-]+){0,4})[^.;\n]{0,90})', re.I)
 MANAGED = re.compile(r'\b((?:is |are |now |currently |will be |has been )?(?:managed|operated|owned|maintained|administered|run|overseen)\s+(?:and (?:operated|maintained|managed) )?(?:jointly )?by\s+(?:the\s+)?[A-Z][\w.&\'-]+(?:\s+(?:of|and|&|for|the|[A-Z][\w.&\'-]+)){0,7})', re.I)
 CLOSED = re.compile(r'\b((?:closed|closing|will close|has closed)\s+permanently|permanently\s+closed|no longer open to the public|is now closed to (?:the )?public|has been decommissioned|ceased operations|no longer (?:a |an )?(?:state |national )?(?:park|refuge|wildlife area|recreation area))[^.;\n]{0,80}', re.I)
@@ -107,11 +131,63 @@ def to_acres(n, unit):
     return v
 
 
-def sizes_in(text, name):
-    """Every size mention in a page: [(acres, 'n unit', line, looks_total)]. looks_total = near the park's name words or in a
-    'total' sentence and NOT an obvious part (a lake, a campground, a purchase)."""
+def sentence_at(text, s, e, cap=260):
+    """The sentence holding text[s:e] (cut at . ; ! ? or a line break), capped at `cap` chars each side."""
+    a = max(0, s - cap); b = min(len(text), e + cap)
+    left = text[a:s]; right = text[e:b]
+    m = list(re.finditer(r'[.;!?]\s|\n', left)); left = left[m[-1].end():] if m else left
+    m2 = re.search(r'[.;!?](?:\s|$)|\n', right); right = right[:m2.end()] if m2 else right
+    return ' '.join((left + text[s:e] + right).split())
+
+
+def left_of(text, s, cap=200):
+    """The words of the SAME sentence before text[s] (an old year in the previous sentence is not this number's history)."""
+    left = text[max(0, s - cap):s]
+    m = list(re.finditer(r'[.;!?]\s|\n', left))
+    return (left[m[-1].end():] if m else left).lower()
+
+
+def name_rx(name):
+    """A regex for the park's own name as written in a page (so 'Cedar Creek Lake WMA' is not read as a lake)."""
+    ws = low(name).split()
+    return re.compile(r'\W+'.join(re.escape(w) for w in ws), re.I) if ws else None
+
+
+def name_core6(name):
+    me = core(name)
+    return me if len(me.replace(' ', '')) >= 6 else ''
+
+
+def other_unit_named(sent, me):
+    """True when the sentence names a park / unit that is not this one (another key park, or 'Hatchie National Wildlife Refuge')."""
+    cs = core(sent)
+    if me and me in cs: return False
+    if any(oc in cs for oc in OTHER_CORES if len(oc) >= 6 and oc != me): return True
+    for m in NAMED_UNIT.finditer(sent):
+        c = core(m.group(1))
+        if len(c) >= 4 and not (me and (me in c or c in me)): return True
+    return False
+
+
+def sizes_in(text, name, other_unit=False):
+    """Every size mention in a page: [{'acres','as','line','total','clean','why','stale'}].
+    total = looks like the park's whole size (a total word or the park's name near, and not a part / history / another unit);
+    clean = a total sentence that names THIS park (or a labelled 'Park Size:' row): a clean number more than 15% off = OFF.
+    other_unit = this page belongs to another unit (fix 2): only a sentence naming this park, or a labelled size row with its name, counts."""
     out = []; seen = set()
-    cn = [w for w in core(name).split() if len(w) > 2][:3]
+    me = core(name); me6 = name_core6(name); nrx = name_rx(name)
+    cn = [w for w in me.split() if len(w) > 2][:3]
+    def strip_name(x): return nrx.sub(' ', x) if nrx else x
+    year_now = int(TODAY[:4])
+    sums = []   # fix 1b: 'two lakes of 40 and 60 acres' -> one candidate with the sum; the parts are marked not-total
+    for m in SUMRX.finditer(text):
+        parts = [float(x.replace(',', '')) for x in re.findall(PNUM, m.group(1))]
+        if len(parts) < 2 or any(p <= 0 for p in parts) or sum(parts) > 50_000_000: continue
+        sent = sentence_at(text, m.start(), m.end()); line = ' '.join(text[max(0, m.start() - 110):m.end() + 110].split())
+        hist = bool(HISTORY.search(sent)) or bool(OLD_YEAR.search(left_of(text, m.start())))
+        sums.append((m.start(), m.end()))
+        out.append({'acres': round(sum(parts), 1), 'as': ' + '.join(f'{p:g}' for p in parts) + ' acres', 'line': line, 'total': not hist and not other_unit_named(sent, me6),
+                    'clean': False, 'why': 'history' if hist else 'sum of the pieces named in one sentence', 'stale': None})
     for rx in (SIZE, SIZE2):
         for m in rx.finditer(text):
             n, unit = m.group(1), (m.group(2) or 'acres')
@@ -123,14 +199,27 @@ def sizes_in(text, name):
             if key in seen: continue
             seen.add(key)
             near = text[max(0, m.start() - 160):m.end() + 60].lower()
-            looks = bool(TOTALWORD.search(near)) or any(w in near for w in cn)
-            if NOTTOTAL.search(near): looks = False
-            me = core(name)
-            if looks and DESIG.get('state') and re.search(r'\bnational\b', near) and not re.search(r'\bstate\b', near): looks = False   # a State park's page quoting a National unit's size
-            if looks and DESIG.get('national') and re.search(r'\bstate (?:wild river|natural area|nature preserve|park|forest|wma)\b', near) and not re.search(r'\bnational\b', near): looks = False
-            if looks and me not in core(near):   # another park named in the sentence, this one not: not our size
-                if any(oc in core(near) for oc in OTHER_CORES if len(oc) >= 6 and oc != me): looks = False
-            out.append((round(a, 1), f'{n} {unit}', line, looks))
+            sent = sentence_at(text, m.start(), m.end()); sl = sent.lower()
+            before = text[max(0, m.start() - 24):m.start()]
+            label = bool(LABEL.search(before))
+            name_in = bool(me6 and me6 in core(sent)) or (label and bool(me6 and me6 in core(text[max(0, m.start() - 400):m.start()])))
+            why = ''
+            looks = bool(TOTALWORD.search(near)) or any(w in near for w in cn) or label
+            if any(a0 <= m.start() < b0 for a0, b0 in sums): looks = False; why = 'part of a sum'
+            if HISTORY.search(sl) or OLD_YEAR.search(left_of(text, m.start())): looks = False; why = 'history'
+            hard = bool(HARD_PART.search(strip_name(sl))) and not label; soft = bool(PART.search(strip_name(sl))) and not label   # the SAME sentence, not the neighbour's
+            clean = bool(looks and not why and (label or (name_in and CLEAN.search(sl))) and not hard)
+            if looks and not why and (hard or (soft and not clean)): looks = False; why = 'part (a lake, a purchase, a campground…)'
+            if looks and DESIG.get('state') and re.search(r'\bnational\b', near) and not re.search(r'\bstate\b', near): looks = clean = False; why = 'a national unit on a state park page'
+            if looks and DESIG.get('national') and re.search(r'\bstate (?:wild river|natural area|nature preserve|park|forest|wma)\b', near) and not re.search(r'\bnational\b', near): looks = clean = False; why = 'a state unit on a national park page'
+            if looks and other_unit_named(sent, me6): looks = clean = False; why = 'another park / unit named in the sentence'
+            if looks and other_unit and not name_in: looks = clean = False; why = "a page of another unit; the sentence does not name this park"
+            if looks and not why: why = 'clean total' if clean else 'total-looking'
+            if not looks and not why: why = 'no total words near it'
+            stale = None
+            ms = STALE.search(text[m.end():m.end() + 40])
+            if ms and year_now - int(ms.group(1)) > 3: stale = int(ms.group(1))
+            out.append({'acres': round(a, 1), 'as': f'{n} {unit}', 'line': line, 'total': looks, 'clean': clean, 'why': why, 'stale': stale})
             if len(out) >= 12: return out
     return out
 
@@ -140,18 +229,26 @@ def off_by(ours, theirs):
     return abs(ours - theirs) / theirs
 
 
+UNIT_WHYS = ('another park / unit named in the sentence', "a page of another unit; the sentence does not name this park", 'a national unit on a state park page', 'a state unit on a national park page')
+
+
 def judge(ours, sizes):
-    """(verdict, chosen size tuple or None, pct). agree beats everything; else the best 'total-looking' size; else unsure."""
+    """(verdict, chosen size dict or None, pct). agree beats everything (any number on the park's own pages within 15%, never one
+    tied to another unit); else the best CLEAN total, else the best total-looking size = OFF (fix 4: a clean number more than 15%
+    off is never 'unsure'); 'unsure' only when NO total-looking candidate exists (then the nearest usable number is shown as a guess)."""
     if not sizes: return 'no size on page', None, None
     if not ours: return 'ours unknown', (sizes[0] if sizes else None), None
-    agree = [s for s in sizes if off_by(ours, s[0]) is not None and off_by(ours, s[0]) <= TOL]
-    if agree: return 'agree', min(agree, key=lambda s: off_by(ours, s[0])), round(off_by(ours, agree[0][0]) * 100)
-    totals = [s for s in sizes if s[3]]
-    if totals:
-        best = min(totals, key=lambda s: off_by(ours, s[0]))
-        return 'off', best, round(off_by(ours, best[0]) * 100)
-    best = min(sizes, key=lambda s: off_by(ours, s[0]))
-    return 'unsure', best, round(off_by(ours, best[0]) * 100)
+    usable = [s for s in sizes if s['why'] not in UNIT_WHYS]
+    agree = [s for s in usable if off_by(ours, s['acres']) is not None and off_by(ours, s['acres']) <= TOL]
+    if agree:
+        best = min(agree, key=lambda s: off_by(ours, s['acres'])); return 'agree', best, round(off_by(ours, best['acres']) * 100)
+    for pool in ([s for s in usable if s.get('clean')], [s for s in usable if s['total']]):
+        if pool:
+            best = min(pool, key=lambda s: off_by(ours, s['acres']))
+            return 'off', best, round(off_by(ours, best['acres']) * 100)
+    guess = [s for s in usable if s['why'] not in EXCLUDED] or []
+    best = min(guess, key=lambda s: off_by(ours, s['acres'])) if guess else None
+    return 'unsure', best, (round(off_by(ours, best['acres']) * 100) if best else None)
 
 
 # ---- our outlines
@@ -251,8 +348,52 @@ FWS_UNIT = re.compile(r'fws\.gov/refuge/([a-z0-9-]+)')
 BAD_PAGE = re.compile(r'pota\.app|wikipedia|facebook|google|tripadvisor|yelp|alltrails|recreation\.gov/camping', re.I)
 
 
+NPS_GENERIC = {'aboutus', 'subjects', 'learn', 'planyourvisit', 'index', 'articles', 'media', 'orgs', 'places', 'people', 'stories'}
+OWN = {}   # the unit slug of THIS park's own page: {'nps': 'maca' | None, 'fws': 'clarks-river' | None, 'core': '...'} (fix 2)
+
+
+def unit_of(u):
+    """('nps', 'maca') / ('fws', 'clarks-river') / None for a URL."""
+    m = NPS_UNIT.search(u)
+    if m and 'nps.gov' in u and m.group(1) not in NPS_GENERIC: return ('nps', m.group(1))
+    m = FWS_UNIT.search(u)
+    if m and 'fws.gov' in u: return ('fws', m.group(1))
+    return None
+
+
+def own_unit_of(name, pages):
+    """The park's OWN unit slug: the slug of its first own page whose slug fits the park's name (an FWS slug is the name; an NPS code is
+    4 letters of it), else the first own page's slug when nothing contradicts it. Green WSR's page on eec.ky.gov gives no unit: the
+    NPS 'maca' map is then NOT its own unit (fix 2)."""
+    me = core(name); words = me.split()
+    own = {'nps': None, 'fws': None}
+    for u, why in pages:
+        if not why.startswith("the park's page"): continue
+        un = unit_of(u)
+        if not un: continue
+        kind, slug = un
+        if kind == 'fws':
+            sc = core(slug.replace('-', ' '))
+            if sc and (sc in me or me in sc or sum(w in me for w in sc.split()) >= 1): own['fws'] = own['fws'] or slug
+        else:   # NPS codes: MAmmoth CAve = maca, CUmberland GAp = cuga, FOrt DOnelson = fodo, GReat SMoky = grsm; Fort Heiman is NOT fodo
+            w0 = words[0] if words else ''; rest = ''.join(words[1:])
+            fits = bool(w0) and (slug == w0[:4] or (slug[:2] == w0[:2] and (not rest or rest.startswith(slug[2]) or slug[2:4] in rest)))
+            if fits: own['nps'] = own['nps'] or slug
+    return own
+
+
+def is_other_unit(u, own):
+    """fix 2: the page belongs to a different NPS / FWS unit than the park's own page (or the park has no unit page at all)."""
+    un = unit_of(u)
+    if not un: return bool(re.search(r'/refuge/[a-z0-9-]*complex', u))
+    kind, slug = un
+    return own.get(kind) != slug
+
+
 def candidate_pages(ref, park, web, docs, ky):
-    """Official pages for one park, best first, de-duplicated; never anything off an agency / government site."""
+    """Official pages for one park, best first, de-duplicated; never anything off an agency / government site.
+    -> [(url, why, other_unit)]; also sets OWN (the park's own unit slugs). NPS 'statistics.htm' only for the park's OWN unit;
+    'newsreleases' pages are listed for handover hints only (never the size read)."""
     out = []
     def add(u, why):
         u = (u or '').strip()
@@ -265,43 +406,64 @@ def candidate_pages(ref, park, web, docs, ky):
     add((d.get('page') or ''), "the park's page (documents bot)")
     w = web.get(ref) or {}
     add(w.get('web'), "the park's page (parkinfo-web)")
+    own = own_unit_of(park['n'], out)
     for u, why in ((k.get('off'), 'official map (Kentucky answer key)'), (k.get('off2'), 'second official map (Kentucky answer key)'), (((d.get('map') or {}).get('url')), 'official map (documents bot)'), (w.get('map'), 'official map (parkinfo-web)')):
         if u and str(u).lower().split('?')[0].endswith('.pdf'): add(u, why)
     for u in (((d.get('rules') or {}).get('url')),):
         add(u, 'rules page (documents bot)')
-    # federal unit pages chat 8 found readable (OFFICIAL_MAPS FEDERAL_desk: NPS + FWS READY)
-    for u, why in list(out):
-        m = NPS_UNIT.search(u)
-        if m and 'nps.gov' in u:
-            add(f'https://www.nps.gov/{m.group(1)}/learn/management/statistics.htm', 'NPS park statistics page')
-            add(f'https://www.nps.gov/{m.group(1)}/learn/news/newsreleases.htm', 'NPS news releases')
-        m = FWS_UNIT.search(u)
-        if m and 'fws.gov' in u:
-            add(f'https://www.fws.gov/refuge/{m.group(1)}/about-us', 'FWS refuge about page')
-    return out[:6]
+    # federal unit pages chat 8 found readable (OFFICIAL_MAPS FEDERAL_desk: NPS + FWS READY), for the park's OWN unit only
+    if own.get('nps'):
+        add(f"https://www.nps.gov/{own['nps']}/learn/management/statistics.htm", 'NPS park statistics page')
+        add(f"https://www.nps.gov/{own['nps']}/learn/news/newsreleases.htm", 'NPS news releases')
+    if own.get('fws'):
+        add(f"https://www.fws.gov/refuge/{own['fws']}/about-us", 'FWS refuge about page')
+    OWN.clear(); OWN.update(own); OWN['core'] = name_core6(park['n'])
+    return [(u, why, is_other_unit(u, own)) for u, why in out[:6]]
 
 
 ABOUT_RX = re.compile(r'\babout\b|history|overview|park info|general info|facts|at a glance|\bthe park\b|welcome', re.I)
 _HTML_CACHE = {}
 
 
-def about_links(u):
-    """Up to 2 'about / history / overview' links on the same site as the park's page (read once, from the cached HTML)."""
+GENERIC_PATH = re.compile(r'^/(about|aboutus|about-us)/?$|/aboutus/|accessibility|privacy|disclaimer|lawsandpolicies|/news|newsreleases|press|regulation|/air/|/waste|careers|employment|contact|faq|sitemap|/orgs/|/subjects/', re.I)
+
+
+def about_links(u, name=''):
+    """Up to 2 'about / history / overview' links of the PARK'S OWN site section (fix 5): a dedicated park site (host carries the
+    park's name) may give any about page; on an agency site the link must stay under the park page's first path folder
+    (nps.gov/fodo/…, eec.ky.gov/Nature-Preserves/…); the agency's /About, /accessibility, /lawsandpolicies and news never."""
     html = _HTML_CACHE.get(u) or ''
     out = []
+    pu = urllib.parse.urlparse(u); seg = [s for s in pu.path.split('/') if s]
+    first = seg[0].lower() if seg else ''
+    hc = re.sub(r'[^a-z]', '', host_of(u).lower()); me6 = name_core6(name)
+    dedicated = bool(me6) and any(w for w in me6.split() if len(w) >= 5 and w in hc)
     for link, txt in links_in(html, u):
         if host_of(link) != host_of(u) or link.rstrip('/') == u.rstrip('/'): continue
         if re.search(r'\.(pdf|jpe?g|png|zip)(\?|$)', link, re.I): continue
+        lp = urllib.parse.urlparse(link).path
+        if GENERIC_PATH.search(lp): continue
+        if not dedicated:
+            ls = [s for s in lp.split('/') if s]
+            if not first or not ls or ls[0].lower() != first: continue
         if ABOUT_RX.search(txt) or re.search(r'/(about|history|overview|park-info|general-information)', link, re.I):
             if link not in [x[0] for x in out]: out.append((link, "about / history page of the park's site"))
         if len(out) >= 2: break
     return out
 
 
+def safe_url(u):
+    """fix 6: a path with spaces or other unsafe characters is quoted before the fetch; the review keeps the original."""
+    try:
+        p = urllib.parse.urlsplit(u)
+        return urllib.parse.urlunsplit((p.scheme, p.netloc, urllib.parse.quote(p.path, safe=':/?&=%+@,;!$*()~'), urllib.parse.quote(p.query, safe=':/?&=%+@,;!$*()~'), ''))
+    except Exception: return u  # noqa: BLE001
+
+
 def read_page(u):
     """-> (status, kind, text). PDFs by range (first 400 KB)."""
     looks_pdf = u.lower().split('?')[0].endswith('.pdf')
-    st, hd, body, final = M.get(u, rng=(0, PDF_FIRST - 1) if looks_pdf else None)
+    st, hd, body, final = M.get(safe_url(u), rng=(0, PDF_FIRST - 1) if looks_pdf else None)
     if st not in (200, 206): return (str(st) if not isinstance(st, int) else f'HTTP {st}'), '', ''
     STAT['pages_read'] += 1
     ct = (hd.get('content-type') or '').lower()
@@ -316,21 +478,55 @@ def read_page(u):
     return 'ok', 'page', t
 
 
-def hints_in(text, name, src, why):
-    out = []
+SUBJECT_RX = re.compile(r'\bthe (?:park|area|refuge|property|site|forest|preserve|battlefield|wma|land|lands|campground)\b', re.I)
+CHANGE_RX = re.compile(r'transferr?ed|transfer of|deeded|conveyed|\bnow\b|currently|managed by|operated by|handed over|turned over|renamed|closed|no longer', re.I)
+OWNER_RX = re.compile(r'(?:to|by|from)\s+(?:the\s+)?((?:City|County|Town|Village|Commonwealth|State|Department|Division|Office|Kentucky|Tennessee|National|U\.?S\.?|US|United States|[A-Z][\w.&\'’-]+)(?:\s+(?:of|and|&|for|the|[A-Z][\w.&\'’-]+)){0,6})')
+MANAGER_KEY = {'kdfwr': 'fish and wildlife', 'fws': 'fish and wildlife service', 'nps': 'national park service', 'usfs': 'forest service', 'fs': 'forest service', 'usace': 'corps of engineers', 'tva': 'tennessee valley',
+               'city': 'city', 'county': 'county', 'state': 'state', 'federal': 'federal', 'dgi': 'state parks', 'parks': 'state parks', 'ngo': 'nonprofit'}
+
+
+def same_owner(owner, manager):
+    """True when the owner named in a hint is the manager our land record already names (then a plain 'Owned by X' is not news)."""
+    o = low(owner); mg = low(manager)
+    if not o or not mg: return False
+    if mg in o or o in mg: return True
+    for k, v in MANAGER_KEY.items():
+        if re.search(r'\b' + k + r'\b', mg) and v in o: return True
+    if re.search(r'\bstate\b|kentucky|commonwealth', mg) and re.search(r'\bstate\b|kentucky|commonwealth|department of|division of|office of', o) and not re.search(r'city|county|fiscal court|town', o): return True
+    if re.search(r'\bfederal\b|\bus\b|national', mg) and re.search(r'national park service|fish and wildlife service|forest service|corps of engineers|tennessee valley|united states|\bu\.?s\.?\b', o): return True
+    return False
+
+
+def hints_in(text, name, src, why, manager=''):
+    """fix 5: a handover hint must be ABOUT this park: the sentence names the park (6-letter core) or says 'the park / the area /
+    the refuge / the property / the site'; a plain 'Owned by X' counts only when X is not our land record's manager AND the line
+    says transferred / deeded / conveyed / now / currently / managed by / operated by; a hint is kept only with a year >= 2000,
+    or with those change words naming an owner different from ours. 'owner_now' = the owner named in the line (or None)."""
+    out = []; me6 = name_core6(name)
     for rx, kind in ((HANDOVER, 'transfer'), (MANAGED, 'managed by'), (CLOSED, 'closed'), (NEWNAME, 'renamed')):
         for m in rx.finditer(text):
             s = max(0, m.start() - 100); e = min(len(text), m.end() + 100)
             line = ' '.join(text[s:e].split())
+            sent = sentence_at(text, m.start(), m.end(), 300)
+            about = (me6 and me6 in core(sent)) or (me6 and me6 in core(text[max(0, m.start() - 350):m.end()])) or SUBJECT_RX.search(sent)
+            if not about: continue
             if kind == 'managed by' and not re.search(r'(city|county|town|village|parish|municipal|tribe|nation|university|college|foundation|trust|conservancy|audubon|authority|district|corporation|company|association|club|church|greensource|society|friends of|partnership|nonprofit|non-profit|inc\\b|llc|fiscal court|forest service|tennessee valley|corps of engineers)', line, re.I):
                 continue   # 'managed by the Division of Parks' is the normal case: only OTHER kinds of owner are hints
-            out.append({'kind': kind, 'line': line[:300], 'src': src, 'why': why, 'date_hint': (re.search(r'(?:19|20)\d\d', line) or [None])[0] if re.search(r'(?:19|20)\d\d', line) else None})
+            om = OWNER_RX.search(m.group(0)) or OWNER_RX.search(sent)
+            owner = re.split(r'\.\s', om.group(1))[0].strip(' .,') if om else None
+            different = bool(owner) and not same_owner(owner, manager)
+            change = bool(CHANGE_RX.search(sent))
+            if kind == 'managed by' and re.search(r'\bowned by\b', m.group(0), re.I) and not (different and change): continue   # plain ownership, not a handover
+            years = [int(y) for y in re.findall(r'\b((?:19|20)\d\d)\b', sent)]
+            recent = any(y >= 2000 for y in years)
+            if not recent and not (change and different) and kind not in ('closed',): continue
+            out.append({'kind': kind, 'line': line[:300], 'src': src, 'why': why, 'date_hint': str(max(years)) if years else None, 'owner_now': owner if (owner and different) else None})
             if len(out) >= 6: return out
     return out
 
 
 # ---- news sources (agency newsrooms; each row verified on first use)
-def news_hints(area, parks_by_core, news, nstate):
+def news_hints(area, parks_by_core, news, nstate, managers=None):
     """Read each newsroom index for this area once a run; link texts naming a park -> open the article -> handover words."""
     out = {}
     for row in [r for r in news if r.get('area') in (area, area[:2], 'ALL')]:
@@ -355,7 +551,7 @@ def news_hints(area, parks_by_core, news, nstate):
                     hits += 1
                     st3, k3, t3 = read_page(link)
                     if st3 != 'ok': continue
-                    hs = hints_in(t3, pc, link, f"agency news ({row.get('agency') or host_of(u)})")
+                    hs = hints_in(t3, pc, link, f"agency news ({row.get('agency') or host_of(u)})", (managers or {}).get(ref, ''))
                     hs = [h for h in hs if h['kind'] != 'managed by' or 'transfer' in t3.lower() or 'deed' in t3.lower()]
                     if hs: out.setdefault(ref, []).extend(hs[:3])
     return out
@@ -395,41 +591,62 @@ def one_park(ref, park, ours, web, docs, ky, retired, bs):
     pages = candidate_pages(ref, park, web, docs, ky)
     DESIG.clear(); DESIG.update({'state': bool(re.search(r'\bstate\b', park['n'] + ' ' + park.get('t', ''), re.I)), 'national': bool(re.search(r'\bnational\b', park['n'] + ' ' + park.get('t', ''), re.I))})
     if not pages: r['verdict'] = 'no official page on file'; return r
-    found = []
-    for u, why in pages:
+    found = []; mg = (ours or {}).get('manager') or ''
+    def has_total(): return any(s['total'] for s in found)
+    for u, why, other in pages:
         if late(): break
         st, kind, text = read_page(u)
-        r['pages'].append({'url': u, 'why': why, 'status': st})
+        r['pages'].append({'url': u, 'why': why, 'status': st, **({'other_unit': True} if other else {})})
         if st != 'ok' or not text: continue
-        for s in sizes_in(text, park['n']): found.append(s + (u,))
-        r['handover'].extend(hints_in(text, park['n'], u, why))
-        if kind == 'page' and not any(s[3] for s in found) and why.startswith("the park's page") and len(r['pages']) < 7:
-            for u2, why2 in about_links(u):   # the size often sits on 'About the park' / 'History', not the home page
+        if 'news' not in why:   # fix 7: news pages never feed the size read
+            for s in sizes_in(text, park['n'], other): s['url'] = u; found.append(s)
+        if not other and (why.startswith("the park's page") or why.startswith('about') or 'news' in why or 'statistics' in why or 'about page' in why):
+            r['handover'].extend(hints_in(text, park['n'], u, why, mg))   # fix 5: hints only from the park's own pages
+        if kind == 'page' and not has_total() and why.startswith("the park's page") and len(r['pages']) < 7:
+            for u2, why2 in about_links(u, park['n']):   # the size often sits on 'About the park' / 'History', not the home page
                 if late(): break
                 st2, k2, t2 = read_page(u2)
                 r['pages'].append({'url': u2, 'why': why2, 'status': st2})
                 if st2 != 'ok' or not t2: continue
-                for s in sizes_in(t2, park['n']): found.append(s + (u2,))
-                r['handover'].extend(hints_in(t2, park['n'], u2, why2))
-                if any(s[3] for s in found): break
-        if any(s[3] for s in found) and r['handover']: break
+                for s in sizes_in(t2, park['n'], other): s['url'] = u2; found.append(s)
+                r['handover'].extend(hints_in(t2, park['n'], u2, why2, mg))
+                if has_total(): break
+        if has_total() and r['handover']: break
         if len(found) >= 4 and 'news' not in why: continue
-    r['sizes'] = [{'acres': s[0], 'as': s[1], 'line': s[2], 'total_like': s[3], 'url': s[4]} for s in found[:8]]
+    r['sizes'] = [{'acres': s['acres'], 'as': s['as'], 'line': s['line'], 'total_like': s['total'], 'clean': s['clean'], 'why': s['why'], 'url': s['url'], **({'stale_year': s['stale']} if s.get('stale') else {})} for s in found[:8]]
     v, chosen, pct = judge(ours['acres'] if ours else 0, found)
-    if v == 'off' and chosen and MULTI.get('area', '').startswith('US-') and STATES_RX.search(chosen[2]) and not re.search(MULTI.get('state', 'zzz'), chosen[2], re.I):
+    if v == 'off' and chosen and MULTI.get('area', '').startswith('US-') and STATES_RX.search(chosen['line']) and not re.search(MULTI.get('state', 'zzz'), chosen['line'], re.I):
         v = 'unsure'; r['note'] = 'the agency figure may cover several states; our outline may be this state\'s share only'
-    elif v == 'off' and chosen and re.search(r'national (forest|park|refuge|river|recreation|trail|seashore|lakeshore|monument|battlefield)', park.get('t', '') + ' ' + park['n'], re.I) and MULTI.get('ky') and abs(chosen[0]) > 1.8 * (ours['acres'] or 1):
+    elif v == 'off' and chosen and re.search(r'national (forest|park|refuge|river|recreation|trail|seashore|lakeshore|monument|battlefield)', park.get('t', '') + ' ' + park['n'], re.I) and MULTI.get('ky') and abs(chosen['acres']) > 1.8 * (ours['acres'] or 1):
         v = 'unsure'; r['note'] = 'federal unit: the Kentucky key holds only the Kentucky piece; the agency figure is the whole unit'
     if ours and ours.get('unknown_pieces') and not ours.get('acres'): v = 'ours unknown'
     r['verdict'] = v; r['pct'] = pct
-    if chosen: r['official'] = {'acres': chosen[0], 'as': chosen[1], 'line': chosen[2], 'url': chosen[4], 'read': TODAY}
+    if chosen:
+        r['official'] = {'acres': chosen['acres'], 'as': chosen['as'], 'line': chosen['line'], 'url': chosen['url'], 'read': TODAY, 'clean': chosen['clean'], 'why': chosen['why']}
+        if chosen.get('stale'): r['official']['stale_year'] = chosen['stale']
+        r['same_agency'] = same_agency(chosen['url'], ours or {})   # fix 9: KDFWR outline vs a KDFWR page proves our copy, not KDFWR
     # a transfer hint from the land record itself: PAD-US says City / County / private while POTA calls it a state park
-    mg = (ours or {}).get('manager') or ''
     if mg and re.search(r'city|county|local|private|ngo|non', mg, re.I) and re.search(r'state', park.get('t', ''), re.I):
-        r['handover'].append({'kind': 'land record', 'line': f"our outline's land record says manager = {mg}, POTA calls it a {park.get('t')}", 'src': ours.get('src'), 'why': 'the outline source', 'date_hint': None})
-    if v == 'off' and chosen and ours: r['cause'] = cause_of(ours, chosen[0], park)
+        r['handover'].append({'kind': 'land record', 'line': f"our outline's land record says manager = {mg}, POTA calls it a {park.get('t')}", 'src': ours.get('src'), 'why': 'the outline source', 'date_hint': None, 'owner_now': mg})
+    best_hint = next((h for h in r['handover'] if h.get('owner_now')), None)
+    r['owner_now'] = best_hint['owner_now'] if best_hint else None
+    if v == 'off' and chosen and ours: r['cause'] = cause_of(ours, chosen['acres'], park)
+    elif v == 'unsure' and ours:   # fix 4: unsure always carries a cause
+        r['cause'] = r.get('note') or (NO_TOTAL_CAUSE + (f" (nearest number found: {chosen['as']}, {chosen['why']})" if chosen else ''))
     r['score'], r['score_parts'] = score_of(ours or {'pin': 'none', 'pieces': []}, v, bs)
     return r
+
+
+AGENCY_HOST = (('fw.ky.gov', r'kdfwr|fish\s*(?:&|and)\s*wildlife|hunting areas'), ('nps.gov', r'\bnps\b|national park'), ('fws.gov', r'\bfws\b|fish and wildlife service|refuges'),
+               ('fs.usda.gov', r'forest service|usfs|dbnf'), ('parks.ky.gov', r'state parks'), ('eec.ky.gov', r'nature preserves|natural areas|forestry|state forest'), ('usace', r'corps of engineers|usace'))
+
+
+def same_agency(url, ours):
+    """True when the official page's host and our outline's source name the same agency (fix 9)."""
+    h = host_of(url or ''); src = str(ours.get('src') or '') + ' ' + str(ours.get('manager') or '')
+    for host, rx in AGENCY_HOST:
+        if host in h and re.search(rx, src, re.I): return True
+    return False
 
 
 def cause_of(ours, agency, park):
@@ -481,7 +698,8 @@ def run_area(area, state, web, docs_all, ky, ak, retired, bscore, news):
     if not late():
         nstate = state.setdefault('news', {})
         try:
-            for ref, hs in news_hints(area, parks_by_core, news, nstate).items():
+            managers = {ref: ((r.get('ours') or {}).get('manager') or '') for ref, r in D['parks'].items()}
+            for ref, hs in news_hints(area, parks_by_core, news, nstate, managers).items():
                 if ref in D['parks']:
                     D['parks'][ref].setdefault('handover', []).extend(hs)
         except Exception as e:  # noqa: BLE001
@@ -519,8 +737,9 @@ def write_checklist(area, D):
     for ref, r in D['parks'].items():
         if not r.get('ours'): continue
         o = r['ours']; of = r.get('official') or {}
+        src_line = ('same agency: ' if r.get('same_agency') else '') + (f"stale: as of {of['stale_year']} · " if of.get('stale_year') else '') + (of.get('line') or '')[:200]
         rows.append([r.get('score') if r.get('score') is not None else '', ref, r.get('n', ''), r.get('t', ''), o.get('pin', ''), r.get('verdict', ''), o.get('acres', ''), of.get('acres', ''), r.get('pct', ''),
-                     of.get('url', ''), (of.get('line') or '')[:200], ' | '.join(h['kind'] + ': ' + h['line'][:120] for h in (r.get('handover') or [])[:2]), o.get('src', '')[:80],
+                     of.get('url', ''), src_line, ' | '.join(h['kind'] + ': ' + h['line'][:120] for h in (r.get('handover') or [])[:2]), o.get('src', '')[:80],
                      json.dumps(r.get('score_parts') or {})])
     rows.sort(key=lambda x: (x[0] if x[0] != '' else 99, x[1]))
     p = OUT / f'checklist-{area}.csv'
@@ -543,35 +762,70 @@ def review(state):
         D = load(OUT / f'{a}.json', None)
         if not D: continue
         off = [(ref, r) for ref, r in D['parks'].items() if r.get('verdict') == 'off']
+        uns = [(ref, r) for ref, r in D['parks'].items() if r.get('verdict') == 'unsure']
         hov = [(ref, r) for ref, r in D['parks'].items() if r.get('handover')]
-        if not off and not hov: continue
+        agr = [r for r in D['parks'].values() if r.get('verdict') == 'agree']
+        if not off and not hov and not uns and not agr: continue
         L += ['', f'## {a}', '']
+        if agr:
+            same = sum(1 for r in agr if r.get('same_agency'))
+            L += [f'**Agree:** {len(agr)} parks: {same} agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · {len(agr) - same} agree (second agency).', '']
         if off:
             L += ['**Size more than 15% off (our outline vs the agency):**', '']
             for ref, r in sorted(off, key=lambda x: -(x[1].get('pct') or 0))[:60]:
                 of = r.get('official') or {}
-                L.append(f"- {ref} {r['n']}: ours {r['ours']['acres']:,} ac vs agency {of.get('as', '')} (= {int(of.get('acres') or 0):,} ac; {r.get('pct')}% off) · cause: {r.get('cause', '?')} · [{host_of(of.get('url', ''))}]({of.get('url', '')}) · “{(of.get('line') or '')[:160]}”")
+                stale = f" · stale: agency figure is 'as of {of['stale_year']}'" if of.get('stale_year') else ''
+                L.append(f"- {ref} {r['n']}: ours {r['ours']['acres']:,} ac vs agency {of.get('as', '')} (= {int(of.get('acres') or 0):,} ac; {r.get('pct')}% off) · cause: {r.get('cause', '?')}{stale} · [{host_of(of.get('url', ''))}]({of.get('url', '')}) · “{(of.get('line') or '')[:160]}”")
             if len(off) > 60: L.append(f'- … {len(off) - 60} more in {a}.json')
+        if uns:
+            L += ['', '**Unsure (no clean total found; the nearest number is only a guess):**', '']
+            for ref, r in uns[:60]:
+                of = r.get('official') or {}
+                L.append(f"- {ref} {r['n']}: ours {r['ours']['acres']:,} ac · cause: {r.get('cause', '?')}" + (f" · [{host_of(of.get('url', ''))}]({of.get('url', '')})" if of.get('url') else ''))
+            if len(uns) > 60: L.append(f'- … {len(uns) - 60} more in {a}.json')
         if hov:
             L += ['', '**Handover / closure hints (a person decides; nothing applied):**', '']
             for ref, r in hov[:60]:
+                own = f" · owner now: {r['owner_now']}" if r.get('owner_now') else ''
                 for h in r['handover'][:2]:
-                    L.append(f"- {ref} {r['n']} · {h['kind']}: “{h['line'][:200]}” · [{host_of(h.get('src', ''))}]({h.get('src', '')})")
+                    L.append(f"- {ref} {r['n']} · {h['kind']}: “{h['line'][:200]}”{own} · [{host_of(h.get('src', ''))}]({h.get('src', '')})")
             if len(hov) > 60: L.append(f'- … {len(hov) - 60} more in {a}.json')
     t = state.get('test')
     if t: L += ['', '## Kentucky test gate', '', f"- {t.get('when')}: **{t.get('result')}** · {t.get('why')}"]
     (OUT / 'review.md').write_text('\n'.join(L) + '\n', encoding='utf-8')
 
 
+def _hint_names(p, rx): return any(re.search(rx, (h.get('line') or '') + ' ' + str(h.get('owner_now') or ''), re.I) for h in (p.get('handover') or []))
+def _off(p): return p.get('official') or {}
+
+
+KNOWN_ANSWERS = [   # R6 + chat 11's grade (Oct 28): the Kentucky gate; PASS only when every row passes
+    ('US-1264', 'Levi Jackson OFF (722 vs ~896) + a hint naming the City of London', lambda p, D: p.get('verdict') == 'off' and _off(p).get('acres') and abs(_off(p)['acres'] - 896) < 60 and _hint_names(p, r'city of london')),
+    ('US-8144', 'Otter Creek: a hint naming Meade', lambda p, D: _hint_names(p, r'meade')),
+    ('US-10105', "Green WSR: official page is not Mammoth Cave's (/maca/)", lambda p, D: '/maca/' not in str(_off(p).get('url') or '')),
+    ('US-10104', 'Red River WSR: official acres is not 879 (the "708, 879" parse)', lambda p, D: _off(p).get('acres') != 879),
+    ('US-0295', 'Clarks River NWR: official acres is not the 73,962 land grant', lambda p, D: _off(p).get('acres') != 73962),
+    ('US-0703+US-3790', 'Fort Donelson and Fort Heiman do not share one official page', lambda p, D: not (_off(D['parks'].get('US-0703') or {}).get('url')) or _off(D['parks'].get('US-0703') or {}).get('url') != _off(D['parks'].get('US-3790') or {}).get('url')),
+    ('US-10098', 'Green River NWR OFF (clean 9,500 vs ours)', lambda p, D: p.get('verdict') == 'off'),
+    ('US-4689', 'Kentucky Ridge SF OFF (15,251 vs 11,736 = 23%)', lambda p, D: p.get('verdict') == 'off'),
+    ('US-3800', 'Cedar Creek Lake WMA OFF (ours 2,390 vs 796)', lambda p, D: p.get('verdict') == 'off' and (p.get('ours') or {}).get('acres') == 2390 and _off(p).get('acres') == 796),
+    ('US-0050', "Mammoth Cave OFF with cause 'boundary vs owned'", lambda p, D: p.get('verdict') == 'off' and 'boundary vs owned' in str(p.get('cause') or '')),
+]
+
+
 def ky_test(state):
-    """R6: Levi Jackson flagged 'off' (722 vs 896) AND Otter Creek carries a Meade County hint."""
+    """The Kentucky gate: every KNOWN_ANSWERS row must pass (fix 8)."""
     D = load(OUT / 'US-KY.json', {'parks': {}})
-    lj = D['parks'].get('US-1264') or {}; oc = D['parks'].get('US-8144') or {}
-    a = lj.get('verdict') == 'off' and (lj.get('official') or {}).get('acres') and abs((lj['official']['acres']) - 896) < 60
-    b = any(re.search(r'meade', (h.get('line') or ''), re.I) for h in (oc.get('handover') or []))
-    why = f"Levi Jackson: verdict {lj.get('verdict')} ours {(lj.get('ours') or {}).get('acres')} agency {(lj.get('official') or {}).get('as')} · Otter Creek hints: {len(oc.get('handover') or [])} ({'Meade found' if b else 'no Meade County line'})"
-    res = 'PASS' if (a and b) else 'FAIL'
-    state['test'] = {'when': TODAY, 'result': res, 'why': why, 'levi_ok': bool(a), 'otter_ok': bool(b)}
+    rows = []; ok_all = True
+    for ref, what, check in KNOWN_ANSWERS:
+        p = D['parks'].get(ref.split('+')[0]) or {}
+        try: ok = bool(check(p, D))
+        except Exception: ok = False  # noqa: BLE001
+        ok_all = ok_all and ok
+        rows.append(f"{ref} {'ok' if ok else 'MISS'} ({what}; verdict {p.get('verdict')}, agency {_off(p).get('as')})")
+    why = ' · '.join(rows)
+    res = 'PASS' if ok_all else 'FAIL'
+    state['test'] = {'when': TODAY, 'result': res, 'why': why, 'rows': [{'ref': r.split(' ')[0], 'ok': ' ok ' in r} for r in rows]}
     notice(f'KENTUCKY TEST {res}: {why}')
     print('TEST=' + res)
 

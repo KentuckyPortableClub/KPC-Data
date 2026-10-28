@@ -1,0 +1,91 @@
+name: KPC gap filler (leads for parks with no outline)
+# Oct 28 2026 (Fable, chat 10 'bot workshop'). Brandon: 'a bot that will look at our scoreboard and find the info to fill it in'.
+# LEADS ONLY: for every park on the scoreboard with no outline it looks for the official polygon under the POTA pin (layers we
+# already read, the agency's own ArcGIS, the state open-data portal, PAD-US) and writes what it found to data/gapfill/<area>.json
+# + review.md, plus one intake-queue row per layer found (data/intake/queue.json, from 'gap-filler'). It never changes a key, an
+# outline or a card. Manners: kpc_manners.py (robots.txt, 2 s per host, three strikes = a day's rest). Never fails except a failed save.
+# A job works in MINUTES chunks (max 5 chunks x 55 min); when areas remain and 'chain' allows, the job starts the next one.
+# WEEKLY (Monday 10:41 UTC): only once data/gapfill/state.json says 'proven' (Brandon's GO after chat 8 graded the first batches).
+on:
+  workflow_dispatch:
+    inputs:
+      areas:
+        description: 'Areas (e.g. "US-KY US-NV"); blank = the next unfinished areas in queue order (KY NV ID MS WA UT AR OR NC, the rest of the US, then ON QC NB NS, other provinces)'
+        default: ''
+      chunks:
+        description: 'How many 55-minute chunks this job may work (max 5)'
+        default: '5'
+      chain:
+        description: 'How many MORE jobs may follow this one by themselves when areas remain (0 = none)'
+        default: '6'
+  schedule:
+    - cron: '41 10 * * 1'
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: kpc-gapfill
+  cancel-in-progress: false
+jobs:
+  gapfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 320
+    env:
+      GH_TOKEN: ${{ github.token }}
+      LINKS: ../links
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - name: Keys, layer lists and the Kentucky answer key (KPC-Links, read-only)
+        uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+      - name: Weekly runs only once proven
+        id: gate
+        continue-on-error: true
+        run: |
+          cd kpcdata
+          if [ "${{ github.event_name }}" = schedule ]; then
+            P=$(python3 -c "import json;print((json.load(open('data/gapfill/state.json')).get('proven') or ''))" 2>/dev/null || echo '')
+            if [ -z "$P" ]; then echo "gap filler not proven yet: nothing to do"; echo "skip=1" >> "$GITHUB_OUTPUT"; exit 0; fi
+            python3 -c "
+          import json; p='data/gapfill/state.json'; s=json.load(open(p))
+          for a in s.get('areas',{}).values(): a['status']='queued'
+          json.dump(s,open(p,'w'),indent=1)" || true
+          fi
+      - name: Work in chunks, one save per chunk
+        if: steps.gate.outputs.skip != '1'
+        continue-on-error: true
+        env:
+          AREAS: ${{ inputs.areas }}
+          MINUTES: '55'
+        run: |
+          cd kpcdata
+          N="${{ inputs.chunks || 5 }}"; [ "$N" -gt 5 ] 2>/dev/null && N=5; [ "$N" -lt 1 ] 2>/dev/null && N=1
+          LEFT=
+          for i in $(seq 1 "$N"); do
+            echo "::group::chunk $i of $N"
+            python3 .github/scripts/kpc_gapfill_bot.py | tee /tmp/gapfill.log || true
+            echo "::endgroup::"
+            L=$(grep -o '^LEFT=[0-9]*' /tmp/gapfill.log | tail -1 | cut -d= -f2); LEFT="${L:-$LEFT}"
+            bash ../links/.github/scripts/kpc_push_data.sh . "gap filler: chunk $i" data/gapfill data/intake data/status || true
+            if [ -n "${{ inputs.areas }}" ]; then
+              D=$(python3 -c "import json,os;s=json.load(open('data/gapfill/state.json'));a=os.environ['AREAS'].upper().split();print('1' if all((s['areas'].get(x) or {}).get('status')=='done' for x in a) else '')" 2>/dev/null || echo '')
+              [ "$D" = 1 ] && break
+            else
+              [ "$LEFT" = 0 ] && break
+            fi
+          done
+          echo "LEFT=${LEFT:-}" >> "$GITHUB_ENV"
+          python3 .github/scripts/kpc_status.py board 'gap filler' green "leads in data/gapfill (review.md), intake rows in data/intake/queue.json" "chat 8 grades the sample; chat 2 reads the name-mismatch list; nothing goes in a key by itself" "left: ${LEFT:-?}" || true
+          bash ../links/.github/scripts/kpc_push_data.sh . "gap filler: status" data/gapfill data/intake data/status || true
+      - name: Areas remain, so the next job starts itself
+        if: ${{ inputs.areas == '' && env.LEFT != '0' && env.LEFT != '' && inputs.chain != '0' && inputs.chain != '' }}
+        continue-on-error: true
+        run: |
+          C=$(( ${{ inputs.chain }} - 1 ))
+          echo "::notice title=Gap filler::$LEFT areas left: the next job starts itself (then $C more may follow)"
+          gh workflow run kpc-gapfill.yml -R ${{ github.repository }} -f areas= -f chunks=5 -f chain=$C || true
