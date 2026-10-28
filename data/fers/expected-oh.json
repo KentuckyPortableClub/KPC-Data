@@ -1,7 +1,7 @@
 {
  "filter": {
   "rule": "pairs expected only from POTA history are kept when the outlines are within 1000 m (box to box), or a park has no outline, or one session logged both",
-  "left_out_far": 7462,
+  "left_out_far": 7460,
   "kept_no_outline": 431,
   "kept_same_session": 0,
   "kept_not_measured": 0,
@@ -12,7 +12,7 @@
  "date": "2026-10-28",
  "pass": true,
  "counts": {
-  "FOUND": 27,
+  "FOUND": 29,
   "DROPPED": 113,
   "NEVER LOOKED AT": 446
  },
@@ -118,6 +118,17 @@
   },
   {
    "refs": [
+    "US-1957",
+    "US-9412"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (145x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "row": "US-1957+US-9412@area@41.761,-81.285"
+  },
+  {
+   "refs": [
     "US-1958",
     "US-5442"
    ],
@@ -180,7 +191,7 @@
     "activated together by the same call on the same day (47x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "row": "US-1978+US-9485@area@41.347,-80.758"
+   "row": "US-1978+US-9485@area@41.341,-80.758"
   },
   {
    "refs": [
@@ -290,7 +301,18 @@
     "activated together by the same call on the same day (38x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "row": "US-5442+US-9400@area@39.461,-82.580"
+   "row": "US-5442+US-9400@area@39.461,-82.581"
+  },
+  {
+   "refs": [
+    "US-9393",
+    "US-9458"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (32x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "row": "US-9393+US-9458@area@40.057,-82.220"
   },
   {
    "refs": [
@@ -510,6 +532,18 @@
   },
   {
    "refs": [
+    "US-12057",
+    "US-9444"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (9x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "not sure: no public owner on the ownership map (PAD-US fee records) at every part of the spot: could be private land under the designations",
+   "rule": "rule 7 (NOT SURE is kept out)"
+  },
+  {
+   "refs": [
     "US-1932",
     "US-9391"
    ],
@@ -723,18 +757,6 @@
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
-  },
-  {
-   "refs": [
-    "US-1957",
-    "US-9412"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (145x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "reason": "not sure: low-confidence outline for Headlands Dunes State Nature Preserve (check the join)",
-   "rule": "rule 7 (NOT SURE is kept out)"
   },
   {
    "refs": [
@@ -1477,7 +1499,7 @@
     "activated together by the same call on the same day (9x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "dropped in pass 3",
+   "reason": "dropped in pass 2",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   },
   {
@@ -1650,18 +1672,6 @@
   },
   {
    "refs": [
-    "US-9393",
-    "US-9458"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (32x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "reason": "dropped in pass 3",
-   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
-  },
-  {
-   "refs": [
     "US-9419",
     "US-9453"
    ],
@@ -1671,6 +1681,18 @@
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-9420",
+    "US-9444"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (20x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "reason": "dropped in pass 3",
+   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   }
  ],
  "NEVER LOOKED AT": [

@@ -5,51 +5,51 @@
   "US-OH"
  ],
  "since": "2026-10-28",
- "date": "2026-10-28 09:23 UTC",
+ "date": "2026-10-28 12:09 UTC",
  "verdict": "STOPPED",
  "why": [
   "Kentucky known-answers test not passing (15/18 on 2026-10-28)"
  ],
  "known_answers": "15/18 on 2026-10-28",
  "missing_check": {
-  "FOUND": 27,
+  "FOUND": 29,
   "DROPPED": 113,
   "NEVER LOOKED AT": 446
  },
  "report": {
   "pass1": {
    "date": "2026-10-28",
-   "pairs tested": 125,
-   "pairs whose boxes touch": 125
+   "pairs tested": 127,
+   "pairs whose boxes touch": 127
   },
   "pass2": {
-   "agree with the pass before": 113,
+   "agree with the pass before": 125,
    "date": "2026-10-28",
-   "pairs tested": 38
+   "pairs tested": 40
   },
   "pass3": {
    "agree with the pass before": 40,
    "date": "2026-10-28",
-   "pairs tested": 38
+   "pairs tested": 40
   },
   "pass5": {
-   "checked": 7,
+   "checked": 8,
    "date": "2026-10-28",
    "pairs tested": 0,
    "still not checked": 0
   }
  },
  "US-OH": {
-  "rows": 222,
-  "live": 27,
+  "rows": 304,
+  "live": 29,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "the ownership map shows more than one owner across the spot": 8,
-   "owner not known for Burr Oak State Park": 5,
-   "low-confidence outline for Headlands Dunes State Nature Pres": 1
+   "no public owner on the ownership map": 1,
+   "owner not known for Burr Oak State Park": 5
   },
-  "dropped": 123,
-  "merged": 58
+  "dropped": 130,
+  "merged": 131
  }
 }
