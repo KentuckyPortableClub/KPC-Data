@@ -1,0 +1,40 @@
+name: KPC YouTube comments
+# Oct 28 2026 (chat 5; HQ/Brandon): new public comments + replies on @ky.pota.campout and @kpc-n4kpc -> ONE message a day
+# to the Discord STAFF room. Secrets (names only): YOUTUBE_API_KEY, KPC_DISCORD_STAFF_WEBHOOK. Missing secret = quiet skip.
+# Memory: data/status/youtube-seen.json (60 days). Never fails. Tick 'dry_run' to print instead of posting.
+on:
+  schedule:
+    - cron: '37 13 * * *'    # 8:37 AM Central (7:37 in winter)
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Print the message instead of posting (saves nothing)'
+        type: boolean
+        default: true
+permissions:
+  contents: write
+concurrency:
+  group: kpc-youtube-comments
+  cancel-in-progress: false
+jobs:
+  comments:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - name: Read comments, post to the staff room
+        continue-on-error: true
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          KPC_DISCORD_STAFF_WEBHOOK: ${{ secrets.KPC_DISCORD_STAFF_WEBHOOK }}
+          DRY_RUN: ${{ inputs.dry_run && '1' || '' }}
+        run: python3 .github/scripts/kpc_youtube_comments.py || true
+      - name: Save the memory (only when something was sent)
+        continue-on-error: true
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/status/youtube-seen.json 2>/dev/null || exit 0
+          git diff --cached --quiet && exit 0
+          git commit -qm 'YouTube comments: memory'
+          for i in 1 2 3 4 5; do git pull -q --rebase -X theirs origin main && git push -q origin HEAD:main && exit 0; sleep $((i*8)); done; exit 0
