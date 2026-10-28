@@ -2,10 +2,10 @@
  "about": "Counts from the 2-fer bot (kpc_fers.py). Hidden: data only.",
  "pass1": {
   "cell_m": 20.0,
-  "date": "2026-10-27",
+  "date": "2026-10-28",
   "left out": {
    "approximate": 0,
-   "no outline": 5,
+   "no outline": 4,
    "no pin": 0,
    "pin well outside": 0
   },
@@ -16,68 +16,55 @@
   "parks done by the box test": 0,
   "parks whose outline could not be read": 0,
   "pass": 1,
-  "problems": [],
+  "problems": [
+   "NHD water: The read operation timed out",
+   "NHD water: HTTP Error 504: Gateway Time-out"
+  ],
   "with official lines": 11
  },
  "pass2": {
-  "agree with the pass before": 182,
+  "agree with the pass before": 317,
   "cell_m": 10.0,
-  "date": "2026-10-27",
+  "date": "2026-10-28",
   "left out": {
    "approximate": 0,
-   "no outline": 5,
+   "no outline": 4,
    "no pin": 0,
    "pin well outside": 0
   },
-  "new here only (not counted)": 85,
+  "new here only (not counted)": 181,
   "official parks": 199,
-  "pairs tested": 58,
+  "pairs tested": 118,
   "parks whose outline could not be read": 0,
-  "parks with a saved copy only (no fresh download possible)": 13,
+  "parks with a saved copy only (no fresh download possible)": 3,
   "pass": 2,
-  "problems": [],
-  "with official lines": 11
- },
- "pass3": {
-  "agree with the pass before": 171,
-  "cell_m": 5.0,
-  "date": "2026-10-27",
-  "left out": {
-   "approximate": 0,
-   "no outline": 5,
-   "no pin": 0,
-   "pin well outside": 0
-  },
-  "new here only (not counted)": 85,
-  "official parks": 199,
-  "pairs tested": 58,
-  "parks whose outline could not be read": 0,
-  "parks with a saved copy only (no fresh download possible)": 13,
-  "pass": 3,
   "problems": [
    "NHD water: HTTP Error 502: Bad Gateway",
    "NHD water: HTTP Error 504: Gateway Time-out",
-   "NHD water: HTTP Error 504: Gateway Time-out",
-   "NHD water: HTTP Error 504: Gateway Time-out",
-   "NHD water: HTTP Error 504: Gateway Time-out",
-   "NHD water: HTTP Error 504: Gateway Time-out",
-   "NHD water: HTTP Error 504: Gateway Time-out",
-   "NHD water: HTTP Error 504: Gateway Time-out",
-   "NHD water: HTTP Error 504: Gateway Time-out",
-   "NHD water: HTTP Error 504: Gateway Time-out",
-   "NHD water: HTTP Error 504: Gateway Time-out",
-   "NHD water: HTTP Error 504: Gateway Time-out",
-   "NHD water: HTTP Error 504: Gateway Time-out",
-   "NHD water: HTTP Error 504: Gateway Time-out",
-   "NHD water: HTTP Error 502: Bad Gateway",
-   "NHD water: HTTP Error 504: Gateway Time-out",
-   "NHD water: The read operation timed out",
-   "NHD water: HTTP Error 504: Gateway Time-out",
-   "NHD water: HTTP Error 504: Gateway Time-out",
-   "NHD water: HTTP Error 504: Gateway Time-out",
-   "NHD water: HTTP Error 504: Gateway Time-out",
-   "NHD water: HTTP Error 504: Gateway Time-out",
    "NHD water: HTTP Error 504: Gateway Time-out"
+  ],
+  "with official lines": 11
+ },
+ "pass3": {
+  "agree with the pass before": 228,
+  "cell_m": 5.0,
+  "date": "2026-10-28",
+  "left out": {
+   "approximate": 0,
+   "no outline": 4,
+   "no pin": 0,
+   "pin well outside": 0
+  },
+  "new here only (not counted)": 119,
+  "official parks": 199,
+  "pairs tested": 108,
+  "parks whose outline could not be read": 0,
+  "parks with a saved copy only (no fresh download possible)": 3,
+  "pass": 3,
+  "problems": [
+   "NHD water: HTTP Error 502: Bad Gateway",
+   "NHD water: The read operation timed out",
+   "NHD water: The read operation timed out"
   ],
   "with official lines": 11
  },
@@ -100,8 +87,8 @@
  },
  "pass5": {
   "cell_m": 5.0,
-  "checked": 35,
-  "date": "2026-10-27",
+  "checked": 49,
+  "date": "2026-10-28",
   "left out": {
    "approximate": 0,
    "no outline": 4,
@@ -112,25 +99,26 @@
   "pairs tested": 0,
   "pass": 5,
   "problems": [
-   "NHD water: HTTP Error 504: Gateway Time-out",
-   "NHD water: HTTP Error 502: Bad Gateway",
-   "NHD water: HTTP Error 504: Gateway Time-out"
+   "NHD water: The read operation timed out",
+   "NHD water: The read operation timed out"
   ],
-  "still not checked": 3,
+  "spots given their boundary lines": 56,
+  "still not checked": 45,
+  "trail stretches given their true zone": 60,
   "water only": 0,
   "with official lines": 11
  },
  "per state": {
   "US-KY": {
-   "candidates": 21,
-   "candidates (saved outline only)": 15,
-   "lines": 115,
-   "n-fers": 5,
-   "not sure": 9,
-   "pass1": 201,
-   "pass2": 184,
-   "spots": 201,
-   "very tight": 3,
+   "candidates": 19,
+   "candidates (saved outline only)": 0,
+   "lines": 160,
+   "n-fers": 9,
+   "not sure": 95,
+   "pass1": 352,
+   "pass2": 319,
+   "spots": 352,
+   "very tight": 1,
    "water only": 0
   }
  }
