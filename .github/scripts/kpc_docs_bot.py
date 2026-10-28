@@ -36,7 +36,7 @@ UA = 'KPC park documents (https://kentuckyportableclub.github.io/KPC-Links/; ham
 GAP = 2.0
 STRIKES_OUT = 3
 REFRESH_DAYS = 30
-VER = 4   # Oct 28 6:34 AM: Brandon's 8 rulings DOC-3..DOC-11 (campground / combined / overview / dates / hunting / Avenza / same age); v3 = chat 8 F1-F10 + chat 11's grade. Records made by an older rule set are read again
+VER = 5   # Oct 28 noon: chat 11's chunks 1-3 grade (shared rules pages, inciweb / Google pins / error maps, forest-level maps) + KY regrade 3 (USDA OIG, forest home pages). v4 = Oct 28 6:34 AM: Brandon's 8 rulings DOC-3..DOC-11 (campground / combined / overview / dates / hunting / Avenza / same age); v3 = chat 8 F1-F10 + chat 11's grade. Records made by an older rule set are read again
 PDF_FIRST = 400_000
 PDF_MAX = 2_000_000
 TODAY = time.strftime('%Y-%m-%d')
@@ -66,7 +66,7 @@ VIEWER = re.compile(r'gis\.myfwc\.com|recreationmap|/apps/|webappviewer|experien
 PLANW = re.compile(r'\bdraft\b|\bplans?\b|proposed|concept|master ?plan|management plan|environmental assessment', re.I)   # chat 8 F3: not the visitor map
 NOTRULES = re.compile(r'air-?quality|laws-regulations|/library|privacy|accessibility|foia|/regulations/pages/default|environmental-protection|water-quality|permitting', re.I)   # chat 11 fix 2
 # Oct 28 (chat 11 regrade 2): whole-government policy pages and an agency's data / GIS pages are never a park's rules or map
-DENY = re.compile(r'kentucky\.gov/policies|/policies/pages/default|eec\.ky\.gov/energy|eec\.ky\.gov/environmental-protection|/data-maps/|/gis/pages/default|fs\.usda\.gov/visit/maps/?$|fs\.usda\.gov/maps/?$|/site-policies|/web-policies', re.I)
+DENY = re.compile(r'inciweb|google\.[a-z.]+/maps|maps\.google|goo\.gl/maps|oversight\.gov|usdaoig|/oig/|kentucky\.gov/policies|/policies/pages/default|eec\.ky\.gov/energy|eec\.ky\.gov/environmental-protection|/data-maps/|/gis/pages/default|fs\.usda\.gov/visit/maps/?$|fs\.usda\.gov/maps/?$|/site-policies|/web-policies', re.I)
 RULEWORD = re.compile(r'\brules?\b|regulations?|policies|laws? (and|&) policies|compendium|permits?|know before you go|r[èe]glements?|hunting (and|&) fishing regulations|park rules|ordinance', re.I)
 ORG = r'(?:the )?(?:(?:City|County|Town|Village|Commonwealth|State|Parish|Municipality|Township) of [A-Z][\w.\'-]+(?: [A-Z][\w.\'-]+){0,2}|[A-Z][\w.&\'-]*(?: (?:of|and|&|for|the)| [A-Z][\w.&\'-]*){0,6}(?: (?:County|City|Fiscal Court|Parks(?: (?:and|&) Recreation)?|Department|Dept\.?|Division|Office|Service|Commission|Agency|District|Authority|Foundation|Trust|Conservancy|Corporation|Tribe|Nation|Township|Town|Village|Government|Board|Council|State)))\b'
 HANDOVER = re.compile(r'((?:transferred|handed (?:over )?to|turned over|conveyed|now (?:managed|operated|owned|run)|will be (?:managed|operated|run)|no longer (?:managed|operated|owned|run)|took over|taken over|assumed (?:management|ownership)|as of (?:19|20)\d\d)[^.;]{0,60}?(?:to |by |from )?' + ORG + r'[^.;]{0,80}?(?:(?:19|20)\d\d|\bnow\b)[^.;]{0,40}[.;]|(?:in |since |as of )(?:20\d\d)[^.;]{0,80}?(?:transferred|handed (?:over )?to|turned over|now (?:managed|operated|owned|run) by|took over|taken over)[^.;]{0,80}?' + ORG + r'[^.;]{0,40}[.;])')
@@ -218,6 +218,8 @@ def map_score(url, text, agency_host):
 
 HUNTLAND = re.compile(r'wildlife management|\bwma\b|game land|hunting area|public hunting|wildlife area|\bgma\b|\bwha\b', re.I)
 CUR = {}   # the park being read (type + name), for the scores
+FORESTHOME = re.compile(r'fs\.usda\.gov/(?:r\d\d/)?[a-z-]+/?(?:home)?/?$', re.I)   # a national forest's home page (chat 11 KY regrade 3)
+FORESTLVL = re.compile(r'fs\.usda\.gov/(?:r\d\d/)?[a-z-]+/(?:maps-pubs|visit/maps|maps)', re.I)
 
 
 def rules_score(url, text):
@@ -499,7 +501,7 @@ def rules_for(fam, urls, pg_rules, lists_entry):
     cands += [(u, f"a link on the park's page ('{t}')") for s, u, t in pg_rules[:3]]
     if lists_entry and lists_entry.get('rules'): cands.append((lists_entry['rules'], 'the agency-wide rules page (chat 8 survey)'))
     seen = set()
-    cands = [(u, how) for u, how in cands if not DENY.search(u)]   # Oct 28 (chat 11): never a whole-government policies page
+    cands = [(u, how) for u, how in cands if not DENY.search(u) and not FORESTHOME.search(u)]   # Oct 28 (chat 11): never a whole-government policies page, never a forest's home page
     for u, how in cands:
         if u in seen: continue
         seen.add(u)
@@ -631,7 +633,9 @@ def one_park(ref, S, lists, area):
         STAT['maps_ok'] += 1
         if not str(prim['how']).startswith('on file'): STAT['maps_found'] += 1
         if prim.get('date'): STAT['dates'] += 1
-    elif tried: rec['map'] = tried[0]
+    elif tried:   # Oct 28 (chat 11): a link that answered with an error is never kept as the map; what was tried stays for a person
+        rec['map'] = {'url': '', 'status': 'no working map link (tried: ' + '; '.join(f"{t['status']} {t['url'][:70]}" for t in tried[:3]) + ')', 'how': tried[0].get('how', '')}
+        rec['map_tried'] = tried[:3]
     if rec['map'] is None and not cands: rec['map'] = {'url': '', 'status': 'no map link on file and none on the park page', 'how': ''}
     if rec['map'] and rec['map'].get('status') == 'ok' and base_host(host_of(rec['map']['url'])) in BROWSER_HOSTS and rec['map'].get('kind') == 'page': rec['needs_browser'] = 'map page on the browser list (a download button may hide the file)'
     # 3 the rules page
@@ -753,12 +757,36 @@ def run_area(area, state, web, lists, ky):
         done += 1; STAT['parks'] += 1
     if BROWSER and not late():
         browser_pass(area, D, parks, max(60, LIMIT - (time.time() - T0) - 60))
+    shared_pass(D, lists.get(area, {}))
     if area == 'US-KY' and not late(): ky_finder_check(D, parks, ky, web)
     D['read'] = TODAY; D['counts'] = counts(D)
     save(f, D)
     left = sum(1 for r in parks if r not in D['parks'])
     state['areas'][area] = {'status': 'done' if left == 0 else 'partial', 'parks': len(parks), 'checked': len(D['parks']), 'left': left, 'updated': TODAY}
     notice(f"{area}: {done} parks checked this chunk ({fresh} fresh, {left} left) · {D['counts']}")
+
+
+def shared_pass(D, lists_area):
+    """Oct 28 (chat 11, chunks 1-3): ONE rules page given to 20+ parks (WV: 83 on a whitewater-commission page; FL: 53 on a shooting-
+    range page) is not each park's rules unless it is the agency-wide rules page on file for that park's own agency; ONE map
+    file given to 20+ parks (GA: 130 on a flip-book) is not each park's map. Those are dropped with the reason. A map that is a
+    national forest's maps page is labelled 'forest map only'."""
+    from collections import Counter
+    agency_rules = {(e or {}).get('rules') for e in (lists_area or {}).values()} - {None, ''}
+    ps = D.get('parks') or {}
+    ru = Counter((p.get('rules') or {}).get('url') for p in ps.values() if (p.get('rules') or {}).get('status') == 'ok')
+    mp = Counter((p.get('map') or {}).get('url') for p in ps.values() if (p.get('map') or {}).get('status') == 'ok')
+    n_r = n_m = n_f = 0
+    for p in ps.values():
+        r = p.get('rules') or {}
+        if r.get('status') == 'ok' and ru[r.get('url')] >= 20 and r.get('url') not in agency_rules:
+            p['rules'] = {'url': '', 'status': f"not found (a page shared by {ru[r.get('url')]} parks was dropped: {r.get('url')[:90]})", 'how': r.get('how', '')}; n_r += 1
+        m = p.get('map') or {}
+        if m.get('status') == 'ok' and mp[m.get('url')] >= 20 and m.get('kind') != 'region overview':
+            p['map'] = {'url': '', 'status': f"no map (one file shared by {mp[m.get('url')]} parks was dropped: {m.get('url')[:90]})", 'how': m.get('how', '')}; n_m += 1
+        elif m.get('status') == 'ok' and FORESTLVL.search(m.get('url') or ''):
+            m['kind_note'] = (m.get('kind_note', '') + '; ' if m.get('kind_note') else '') + 'forest map only'; n_f += 1
+    if n_r or n_m or n_f: notice(f"{D.get('area')}: shared pages dropped: rules {n_r}, maps {n_m}; forest-level maps labelled {n_f}")
 
 
 def ky_finder_check(D, parks, ky, web):
