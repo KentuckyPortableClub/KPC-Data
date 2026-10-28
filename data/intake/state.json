@@ -1,14 +1,16 @@
 {
  "gate": "FAIL",
- "hosts": {},
+ "hosts": {
+  "prostor4.gov.si": 1793278595.936402
+ },
  "last_run": "2026-10-28",
  "manners": {
-  "arcgis_exempt": 300,
-  "errors": 0,
-  "requests": 300,
+  "arcgis_exempt": 2,
+  "errors": 3,
+  "requests": 5,
   "rested": 0,
   "robots": 0,
-  "strikes": 0
+  "strikes": 3
  },
  "rows": {
   "https://gis.nature.cz/arcgis/rest/services/ObecnaOchrana/PrirodniPark/MapServer/0": {
@@ -25,6 +27,14 @@
    "sig": "https://gis.princeedwardisland.ca/server/rest/services/GeoLincData/GeoLinc_provincial_park_polygon_ENV/MapServer/0|PEI provincial parks (GeoLinc, ENV polygon layer)|Government of Prince Edward Island (GeoLinc)||test row (d): nothing stated on the service; url to confirm (we read GeoLinc_Provincial_Parks/MapServer/0 on the same host, so 'same publisher' is expected)|ASK-THE-PUBLISHER",
    "verdicts": [
     "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://prostor4.gov.si/ows2-ins/ps/wfs": {
+   "probed": "2026-10-28",
+   "retry": false,
+   "sig": "https://prostor4.gov.si/ows2-ins/ps/wfs?service=wfs&version=2.0.0&request=GetCapabilities|Slovenia protected areas (ARSO, INSPIRE PS WFS)|Agencija RS za okolje (ARSO) / Slovenian Environment Agency|ATOM feed rights: 'No limitations'|WFS (not ArcGIS): the host did not resolve from a GitHub runner on Oct 28 (DNS); ATOM download feed http://gis.arso.gov.si/related/atom/inspire/datafeeds/zav_obm_poli.xml (GML, 2021-12-10). Needs the typename read from GetCapabilities.|READY (WFS) or did-not-open",
+   "verdicts": [
+    "REJECT"
    ]
   },
   "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Doorstep_Greens_Polygons/FeatureServer": {
@@ -93,15 +103,15 @@
   }
  },
  "stat": {
-  "ask": 1,
-  "did_not_open": 2,
+  "ask": 0,
+  "did_not_open": 3,
   "live_only": 0,
-  "probed": 10,
-  "ready": 3,
-  "reject": 6,
-  "rows": 10,
-  "skipped_fresh": 0,
+  "probed": 3,
+  "ready": 0,
+  "reject": 3,
+  "rows": 11,
+  "skipped_fresh": 8,
   "tests_miss": 2,
-  "tests_ok": 8
+  "tests_ok": 1
  }
 }

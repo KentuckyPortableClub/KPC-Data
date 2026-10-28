@@ -7,7 +7,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 | READY | 3 |
 | LIVE-ONLY | 0 |
 | ASK-THE-PUBLISHER | 1 |
-| REJECT | 6 |
+| REJECT | 7 |
 
 ## READY (3)
 
@@ -94,7 +94,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 36 missing parks lie in the layer's extent)
 - TEST: ok
 
-## REJECT (6)
+## REJECT (7)
 
 ### Nevada State Parks boundaries (Division of State Parks, VS Boundary Map)  ·  US-NV  ·  from chat 9
 - url: https://services7.arcgis.com/5hLFVlePaucIMGhw/arcgis/rest/services/VS_Boundary_Map_2_WFL1/FeatureServer/2
@@ -153,6 +153,15 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - closes: not probed
 - TEST: ok
 
+### Slovenia protected areas (ARSO, INSPIRE PS WFS)  ·  W-SI  ·  from chat 9
+- url: https://prostor4.gov.si/ows2-ins/ps/wfs
+- WHY: did not open (rest): url to confirm
+- publisher: Agencija RS za okolje (ARSO) / Slovenian Environment Agency → official (government host prostor4.gov.si)
+- terms: OPEN · source GetCapabilities + queue row · "ATOM feed rights: 'No limitations'"
+- facts: wfs · status rest
+- closes: not probed: WFS point query not built
+- TEST: MISS READY (WFS) or did-not-open vs REJECT
+
 ## Known-answer test rows
 
 | row | expect | got | result |
@@ -167,5 +176,6 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 | Millennium Greens (England) polygons | READY or REJECT | REJECT | ok |
 | SSSI units (England) | READY or REJECT | READY | ok |
 | My favorite camping spots (a hobby map) | REJECT | REJECT | ok |
+| Slovenia protected areas (ARSO, INSPIRE PS WFS) | READY (WFS) or did-not-open | REJECT | MISS READY (WFS) or did-not-open vs REJECT |
 
 GATE=FAIL
