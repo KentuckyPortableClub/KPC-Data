@@ -65,7 +65,7 @@ step('ky_server', s1)
 # ---- 2. ArcGIS Online: anything for Hart County parcels / Kentucky statewide parcels
 def s2():
     out = {}
-    for q in ['Hart County Kentucky parcels', 'Kentucky statewide parcels PVA', 'Hart County KY PVA', 'Kentucky parcel boundaries']:
+    for q in ['orgid:CcI36Pduqd0OR4W9 parcel', 'orgid:CcI36Pduqd0OR4W9 PVA', 'owner:KYTC parcel', 'Kentucky KYTC statewide parcels', 'Hart County Kentucky parcels', 'Kentucky statewide parcels PVA']:
         r = requests.get('https://www.arcgis.com/sharing/rest/search', params={'q': q + ' type:("Feature Service" OR "Map Service")', 'f': 'json', 'num': 25}, headers=H, timeout=60)
         out[q] = [{'title': i.get('title'), 'owner': i.get('owner'), 'url': i.get('url'), 'id': i.get('id'), 'access': i.get('access')} for i in r.json().get('results', [])]
     # try every url that looks like a parcel service: point query layer 0..3
@@ -74,7 +74,7 @@ def s2():
     for lst in out.values():
         for i in lst:
             u = i.get('url') or ''
-            if not u or u in seen or not re.search(r'arcel|PVA|adast', (i.get('title') or '') + u, re.I): continue
+            if not u or u in seen or not re.search(r'arcel|PVA|adast', (i.get('title') or '') + u, re.I) or 'Regrid' in u: continue
             seen.add(u)
             try:
                 meta = requests.get(u, params={'f': 'json'}, headers=H, timeout=60).json()
@@ -134,41 +134,50 @@ def s3():
                 lab = pg.get_by_text(re.compile(r'Owner', re.I)).first; lab.scroll_into_view_if_needed(); tgt = pg.locator('input[type=text]').nth(1); out['owner_input'] = 'guess nth(1)'
             except Exception: pass  # noqa: BLE001
         if tgt is not None:
-            tgt.fill('COMMONWEALTH OF KENTUCKY'); tgt.press('Enter'); pg.wait_for_timeout(6000)
-            pg.screenshot(path=f'{OUT}/hart-owner.png', full_page=True)
-            out['text']['owner'] = pg.inner_text('body')[:12000]
-            links = []
-            for a in pg.locator('a[href*="KeyValue="]').all()[:200]:
-                try: links.append({'href': a.get_attribute('href'), 'text': (a.inner_text() or '').strip()[:80]})
-                except Exception: pass  # noqa: BLE001
+            terms = ['COMMONWEALTH', 'KENTUCKY', 'KY ', 'STATE OF KENTUCKY', 'NATURE PRESERVE', 'FISH AND WILDLIFE', 'NATURAL AREA', 'FINANCE AND ADMIN']
+            links = []; out['auto'] = {}; out['owner_rows'] = {}
+            for term in terms:
+                try:
+                    pg.goto(base + '&PageType=Search', timeout=90000, wait_until='domcontentloaded'); pg.wait_for_timeout(2500)
+                    for sel in ['text=Agree', 'button:has-text("Agree")']:
+                        try:
+                            if pg.locator(sel).first.is_visible(timeout=1000): pg.locator(sel).first.click(); pg.wait_for_timeout(2000)
+                        except Exception: pass  # noqa: BLE001
+                    box = pg.locator('#ctlBodyPane_ctl00_ctl01_txtName')
+                    box.fill(term); pg.wait_for_timeout(3500)
+                    try: out['auto'][term] = [t.strip()[:100] for t in pg.locator('ul[id*=txtName], ul.ui-autocomplete, .ui-autocomplete li, [id*=txtName] + div').all_inner_texts()][:30]
+                    except Exception as e: out['auto'][term] = repr(e)[:100]  # noqa: BLE001
+                    pg.locator('#ctlBodyPane_ctl00_ctl01_btnSearch').click(); pg.wait_for_timeout(6000)
+                    if term == 'COMMONWEALTH': pg.screenshot(path=f'{OUT}/hart-owner.png', full_page=True)
+                    rows = [r.inner_text().replace('\n', ' | ')[:300] for r in pg.locator('table tr').all()[:120]]
+                    out['owner_rows'][term] = rows
+                    for a in pg.locator('a[href*="KeyValue="]').all()[:300]:
+                        try: links.append({'term': term, 'href': a.get_attribute('href'), 'text': (a.inner_text() or '').strip()[:80]})
+                        except Exception: pass  # noqa: BLE001
+                except Exception as e: out['owner_rows'][term] = repr(e)[:200]  # noqa: BLE001
             out['owner_results'] = links
-            # rows of the result table
-            try:
-                rows = pg.locator('table tr').all()
-                out['owner_rows'] = [r.inner_text().replace('\n', ' | ')[:300] for r in rows[:150]]
-            except Exception: pass  # noqa: BLE001
-            # open up to 40 reports (owner, address, acres, legal) + the map page for the data services
             keys = []
             for l in links:
                 m = re.search(r'KeyValue=([^&]+)', l['href'] or '')
                 if m and m.group(1) not in keys: keys.append(m.group(1))
             out['keys'] = keys
-            for k in keys[:40]:
+            for k in keys[:60]:
                 try:
                     pg.goto(f'{base}&PageType=Report&KeyValue={k}', timeout=60000, wait_until='domcontentloaded'); pg.wait_for_timeout(2500)
                     t = pg.inner_text('body')
-                    rep = {'key': k, 'text': t[:5000]}
+                    rep = {'key': k, 'text': t[:4000]}
                     for fld in ('Owner', 'Acres', 'Legal', 'Location', 'Address', 'Deed', 'Class', 'District'):
                         m = re.search(fld + r'[^\n]*\n([^\n]{0,160})', t)
                         if m: rep[fld.lower()] = m.group(1).strip()
                     out['reports'].append(rep)
                 except Exception as e: out['reports'].append({'key': k, 'error': repr(e)[:150]})  # noqa: BLE001
-            # the map page once: what services does it call?
-            if keys:
+            # the map page: what services does it call? (with and without a parcel)
+            for k in (keys[:1] or ['']):
                 try:
-                    pg.goto(f'{base}&PageType=Map&KeyValue={keys[0]}', timeout=90000, wait_until='domcontentloaded'); pg.wait_for_timeout(12000)
+                    pg.goto(f'{base}&PageType=Map' + (f'&KeyValue={k}' if k else ''), timeout=90000, wait_until='domcontentloaded'); pg.wait_for_timeout(15000)
                     pg.screenshot(path=f'{OUT}/hart-map.png', full_page=False)
                     out['text']['map'] = pg.inner_text('body')[:2000]
+                    out['map_frames'] = [f.url[:300] for f in pg.frames]
                 except Exception as e: out['map_error'] = repr(e)[:200]  # noqa: BLE001
         b.close()
     # any ArcGIS service seen in the traffic: ask it for the point
