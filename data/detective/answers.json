@@ -3,19 +3,35 @@
  "answers": {
   "q1-boiling-springs-tract": {
    "answer": {
+    "acres": 139,
     "date": "2026-10-28",
-    "fact": "polygon under the pin in a layer we read: \"Green River State Natural Area (Rush Island Bottoms)\"",
+    "fact": "polygon under the pin in a layer we read: \"Green River State Natural Area (Rush Island Bottoms)\", 139 ac",
     "line": "MA_ID=768.0; MANAME=Green River State Natural Area (Rush Island Bottoms); UNIT_TYPE=State Natural Area; MA_OWNER=Office of Kentucky Nature Preserves; MNG_INST=Office of Kentucky Nature Preserves; ACRES=139.25; PUB_ACCESS=Open; Webpage=https",
+    "poly": "Green River State Natural Area (Rush Island Bottoms)",
+    "role": "answer",
     "step": "1 our layers",
     "url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Natural_Areas_WGS84WM/MapServer/0"
    },
    "area": "US-KY",
    "by": "HQ (Brandon test case)",
+   "finds": [
+    {
+     "acres": 139,
+     "date": "2026-10-28",
+     "fact": "polygon under the pin in a layer we read: \"Green River State Natural Area (Rush Island Bottoms)\", 139 ac",
+     "line": "MA_ID=768.0; MANAME=Green River State Natural Area (Rush Island Bottoms); UNIT_TYPE=State Natural Area; MA_OWNER=Office of Kentucky Nature Preserves; MNG_INST=Office of Kentucky Nature Preserves; ACRES=139.25; PUB_ACCESS=Open; Webpage=https",
+     "poly": "Green River State Natural Area (Rush Island Bottoms)",
+     "role": "answer",
+     "step": "1 our layers",
+     "url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Natural_Areas_WGS84WM/MapServer/0"
+    }
+   ],
    "id": "q1-boiling-springs-tract",
    "note": "the KHLCF Timber Lane 115.75-acre tract: is it part of the preserve?",
    "park": "Green River State Natural Area (Boiling Springs unit)",
    "read": "2026-10-28",
    "ref": "US-12752",
+   "result": "ANSWERED",
    "tried": [
     {
      "step": 1,
@@ -38,45 +54,74 @@
      "what": "point query at the pin"
     }
    ],
+   "ver": 2,
    "what": "tract"
   },
   "q2-boiling-springs-acreage": {
    "answer": {
+    "acres": 139,
     "date": "2026-10-28",
-    "fact": "polygon under the pin in a layer we read: \"Green River State Natural Area (Rush Island Bottoms)\"",
+    "fact": "polygon under or near the pin in a layer we read: \"Green River State Natural Area (Rush Island Bottoms)\", 139 ac",
     "line": "MA_ID=768.0; MANAME=Green River State Natural Area (Rush Island Bottoms); UNIT_TYPE=State Natural Area; MA_OWNER=Office of Kentucky Nature Preserves; MNG_INST=Office of Kentucky Nature Preserves; ACRES=139.25; PUB_ACCESS=Open; Webpage=https",
+    "poly": "Green River State Natural Area (Rush Island Bottoms)",
+    "role": "answer",
     "step": "1 our layers",
     "url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Natural_Areas_WGS84WM/MapServer/0"
    },
    "area": "US-KY",
    "by": "HQ (Brandon test case)",
+   "finds": [
+    {
+     "acres": 139,
+     "date": "2026-10-28",
+     "fact": "polygon under or near the pin in a layer we read: \"Green River State Natural Area (Rush Island Bottoms)\", 139 ac",
+     "line": "MA_ID=768.0; MANAME=Green River State Natural Area (Rush Island Bottoms); UNIT_TYPE=State Natural Area; MA_OWNER=Office of Kentucky Nature Preserves; MNG_INST=Office of Kentucky Nature Preserves; ACRES=139.25; PUB_ACCESS=Open; Webpage=https",
+     "poly": "Green River State Natural Area (Rush Island Bottoms)",
+     "role": "answer",
+     "step": "1 our layers",
+     "url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Natural_Areas_WGS84WM/MapServer/0"
+    }
+   ],
    "id": "q2-boiling-springs-acreage",
    "note": "Boiling Springs unit size (the OKNP page says 440 acres?)",
    "park": "Green River State Natural Area (Boiling Springs unit)",
    "read": "2026-10-28",
    "ref": "US-12752",
+   "result": "ANSWERED",
    "tried": [
     {
      "step": 1,
      "url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8",
-     "what": "point query at the pin"
+     "what": "point query at the pin + within 2000 m"
     },
     {
      "step": 1,
      "url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_Public_Hunting_Areas_WGS84WM/MapServer/1",
-     "what": "point query at the pin"
+     "what": "point query at the pin + within 2000 m"
     },
     {
      "step": 1,
      "url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0",
-     "what": "point query at the pin"
+     "what": "point query at the pin + within 2000 m"
     },
     {
      "step": 1,
      "url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Natural_Areas_WGS84WM/MapServer/0",
-     "what": "point query at the pin"
+     "what": "point query at the pin + within 2000 m"
     }
    ],
+   "units": {
+    "agency_line": "",
+    "our_acres": 139,
+    "pieces": [
+     [
+      "Green River State Natural Area (Rush Island Bottoms)",
+      139
+     ]
+    ],
+    "summary": "our outline holds 139 ac in 1 piece(s) vs the agency: no size sentence found"
+   },
+   "ver": 2,
    "what": "acreage"
   }
  }
