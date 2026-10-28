@@ -2,398 +2,98 @@
  "about": "Hours, fees and permits as the agency's own sentences (hours / fees / permits bot). Facts only; nothing reaches a card until Brandon's GO.",
  "area": "US-KY",
  "counts": {
-  "fees": 5,
-  "hours": 20,
+  "fees": 2,
+  "hours": 2,
   "no_page": 0,
-  "nothing": 163,
+  "nothing": 0,
   "parks": 193,
-  "permits": 10
+  "permits": 1
  },
  "parks": {
   "US-0019": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Cumberland Gap National Historical Park",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/cuga/planyourvisit/basicinfo.htm",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/cuga/index.htm",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/cuga/planyourvisit/upload/CUGAmap1-3.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/cuga/learn/management/lawsandpolicies.htm",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "National / NPS",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-0050": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Mammoth Cave National Park",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/maca/planyourvisit/hours.htm",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/maca/index.htm",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/maca/learn/management/lawsandpolicies.htm",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "National Park",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-0295": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
-   "hours": [
-    {
-     "line": "The Refuge is open during daylight hours.",
-     "read": "2026-10-28",
-     "url": "https://www.fws.gov/refuge/clarks-river/visit-us"
-    },
-    {
-     "line": "The Refuge is open during daylight hours.",
-     "read": "2026-10-28",
-     "url": "https://www.fws.gov/refuge/clarks-river/visit-us/rules-policies"
-    }
-   ],
-   "hunting_hours": [
-    {
-     "line": "The Refuge is only open to the public from sunrise to sunset, with the exception of permitted hunting seasons.",
-     "read": "2026-10-28",
-     "url": "https://www.fws.gov/refuge/clarks-river/visit-us"
-    },
-    {
-     "line": "The mosaic of habitats include bottomland hardwood forest, open water, seasonal and permanent wetlands, uplands, grasslands, and croplands.",
-     "read": "2026-10-28",
-     "url": "https://www.fws.gov/refuge/clarks-river"
-    },
-    {
-     "line": "The Refuge is only open to the public from sunrise to sunset, with the exception of permitted hunting seasons.",
-     "read": "2026-10-28",
-     "url": "https://www.fws.gov/refuge/clarks-river/visit-us/rules-policies"
-    }
-   ],
+   "hours": [],
    "n": "Clarks River National Wildlife Refuge",
-   "office_hours": [
-    {
-     "line": "The office is open Monday – Friday from 7:30 am until 4:00 pm.",
-     "read": "2026-10-28",
-     "url": "https://www.fws.gov/refuge/clarks-river/visit-us"
-    }
-   ],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/clarks-river/visit-us",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/clarks-river",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.fws.gov/sites/default/files/documents/2024-08/public-map-july-2024.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/clarks-river/visit-us/rules-policies",
-     "why": "rules page (documents bot)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/clarks-river/about-us",
-     "why": "FWS refuge about page"
-    }
-   ],
    "permits": [],
-   "status": "ok",
-   "t": "National / NPS",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-0538": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Reelfoot National Wildlife Refuge",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/reelfoot/visit-us",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/reelfoot/",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "rest",
-     "url": "https://legacy.fws.gov/sites/default/files/documents/RF%20Gen%20Brochure.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/reelfoot/visit-us/rules-policies",
-     "why": "rules page (documents bot)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/reelfoot/about-us",
-     "why": "FWS refuge about page"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "National / NPS",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-0608": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
-   "hours": [
-    {
-     "line": "Any activity on refuge property after hours (an hour after sunset to an hour before sunrise)",
-     "read": "2026-10-28",
-     "url": "https://www.fws.gov/refuge/ohio-river-islands/visit-us/rules-policies"
-    }
-   ],
-   "hunting_hours": [],
+   "hours": [],
    "n": "Ohio River Islands National Wildlife Refuge",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://www.fws.gov/rivers/carp/carp/refuge/ohio-river-islands/visit-us",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/ohio-river-islands",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/ohio-river-islands/visit-us/rules-policies",
-     "why": "rules page (documents bot)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/ohio-river-islands/about-us",
-     "why": "FWS refuge about page"
-    }
-   ],
    "permits": [],
-   "status": "ok",
-   "t": "National / NPS",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-0686": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Big South Fork National Recreation Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/biso/planyourvisit/basicinfo.htm",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/biso/index.htm",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/biso/learn/management/lawsandpolicies.htm",
-     "why": "rules page (documents bot)"
-    }
-   ],
-   "permits": [
-    {
-     "line": "This Section, however, requires that a list of activities needing a permit (and a fee schedule for the various types of permits) be maintained by the park.",
-     "read": "2026-10-28",
-     "url": "https://www.nps.gov/biso/learn/management/lawsandpolicies.htm"
-    }
-   ],
-   "status": "ok",
-   "t": "National Recreation Area",
-   "ver": 2
+   "permits": [],
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-0703": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Fort Donelson National Battlefield",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/fodo/",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/fodo/index.htm",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/fodo/learn/management/lawsandpolicies.htm",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "National / NPS",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-0724": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
-   "hours": [
-    {
-     "line": "The Memorial Building closes at 4:30 pm eastern time.",
-     "read": "2026-10-28",
-     "url": "https://www.nps.gov/abli/planyourvisit/basicinfo.htm"
-    }
-   ],
-   "hunting_hours": [],
+   "hours": [],
    "n": "Abraham Lincoln Birthplace National Historic Site",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/abli/planyourvisit/basicinfo.htm",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/abli/index.htm",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/abli/learn/management/lawsandpolicies.htm",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "ok",
-   "t": "National / NPS",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-10098": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
-   "hours": [
-    {
-     "line": "Day use From legal sunrise to legal sunset.",
-     "read": "2026-10-28",
-     "url": "https://www.fws.gov/refuge/green-river/visit-us"
-    }
-   ],
-   "hunting_hours": [
-    {
-     "line": "Some areas/trails may only be open seasonally.",
-     "read": "2026-10-28",
-     "url": "https://www.fws.gov/refuge/green-river/visit-us"
-    }
-   ],
+   "hours": [],
    "n": "Green River National Wildlife Refuge",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/green-river/visit-us",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/green-river/visit-us/locations/green-river-national-wildlife-refuge",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.fws.gov/sites/default/files/documents/2024-12/2024-hunt-map-508.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/green-river/visit-us/rules-policies",
-     "why": "rules page (documents bot)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/green-river/about-us",
-     "why": "FWS refuge about page"
-    }
-   ],
    "permits": [],
-   "status": "ok",
-   "t": "National / NPS",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-10099": {
    "attraction_fees": [],
+   "attraction_hours": [],
    "checked": "2026-10-28",
    "fees": [
     {
@@ -402,7 +102,13 @@
      "url": "https://www.fws.gov/locations/wolf-creek-national-fish-hatchery"
     }
    ],
-   "hours": [],
+   "hours": [
+    {
+     "line": "8:00 am - 4:00 pm",
+     "read": "2026-10-28",
+     "url": "https://www.fws.gov/locations/wolf-creek-national-fish-hatchery"
+    }
+   ],
    "hunting_hours": [],
    "n": "Wolf Creek National Fish Hatchery",
    "office_hours": [],
@@ -412,1251 +118,369 @@
      "status": "ok",
      "url": "https://www.fws.gov/locations/wolf-creek-national-fish-hatchery",
      "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.fws.gov/fish-hatchery/wolf-creek/map",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "skipped: another topic (field trips / programs / seasons)",
-     "url": "https://www.fws.gov/laws-regulations",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [
     {
-     "line": "However, a Kentucky fishing license and trout permit are required for individuals 16 years old and over to fish at Hatchery Creek.",
+     "line": "a Kentucky fishing license and trout permit are required for individuals 16 years old and over to fish at Hatchery Creek.",
      "read": "2026-10-28",
      "url": "https://www.fws.gov/locations/wolf-creek-national-fish-hatchery"
     }
    ],
    "status": "ok",
    "t": "Fish Hatchery",
-   "ver": 2
+   "ver": 3
   },
   "US-10102": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Pine Mountain State Trail",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/parks/find-a-park/pine-mountain-state-scenic-trail-7826",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/whitesburg/parks/recreation/pine-mountain-state-scenic-trail",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "Trail",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-10103": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "The Cumberland River Wilderness Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Cumberland-River-Wild-River.aspx",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "skipped: another topic (field trips / programs / seasons)",
-     "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Air-Quality-Regulations.aspx",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "River / Wilderness",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-10104": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Red River National Wild and Scenic River",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "HTTP 404",
-     "url": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb5294940.pdf",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.fs.usda.gov/recarea/dbnf/recreation/recarea/?recid=39548",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.fs.usda.gov/r08/danielboone",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "National / NPS",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-10105": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "The Green National Wild and Scenic River",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Green-River-Wild-River.aspx",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://www.nps.gov/maca/planyourvisit/upload/Backcountry-Map-and-Guide-2014-Web.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "skipped: another topic (field trips / programs / seasons)",
-     "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Air-Quality-Regulations.aspx",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "National / NPS",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-10106": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "The Rockcastle National Wild and Scenic River",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Rockcastle-River-Wild-River.aspx",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "skipped: another topic (field trips / programs / seasons)",
-     "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Air-Quality-Regulations.aspx",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "National / NPS",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-10107": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Big South Fork National Wild and Scenic River",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Big-South-Fork-Wild-River.aspx",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "skipped: another topic (field trips / programs / seasons)",
-     "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Air-Quality-Regulations.aspx",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "National / NPS",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-10111": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Rock Creek National Wild and Scenic River",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Rock-Creek-Wild-River.aspx",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "skipped: another topic (field trips / programs / seasons)",
-     "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Air-Quality-Regulations.aspx",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "National / NPS",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-10112": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Bad Branch National Wild and Scenic River",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Bad-Branch-Wild-River.aspx",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "skipped: another topic (field trips / programs / seasons)",
-     "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Air-Quality-Regulations.aspx",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "National / NPS",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-10121": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Cane Creek Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=38",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/CaneCreekWMA_ALL.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-10124": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Clay Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=155",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/ClayWMA_ALL.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-10128": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Ferguson Creek Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9715",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/FergusonCreekWMA_All.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-10131": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Gabbard Branch Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9713",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/GabbardBranchWMA_All.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-10137": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Harris-Dickerson Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9709",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/Harris-Dickerson_All.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-10138": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Hoskins Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9711",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/Hoskins_WMA_All.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-10139": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Jefferson National Forest Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9078",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-10140": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Kentucky Lake Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=227",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/KentuckyLakeWMA_ALL.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-10141": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Kentucky Ridge Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Kentucky-Ridge.aspx",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=186",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/KentuckyRidgeForestWMA_ALL.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-10145": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Meadow Creek Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9224",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/MeadowCreekWMA_all.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-10146": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Mill Creek Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=37",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/MillCreekWMA_ALL.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-10148": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Mud Camp Creek Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=146",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/MudCreekCampWMA_All.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-10153": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Old Trace Creek Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9609",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/Old_Trace_Creek_WMA_all.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-10155": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Paul Van Booven Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9105",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/PaulVanBoovenWMA_All.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-10157": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Ping-Sinking Valley Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9208",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/Ping-SinkingValleyWMA_All.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-10158": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Pioneer Weapons Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=36",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/PioneerWeaponsWMA_ALL.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-10159": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Redbird Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=35",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/RedbirdWMA_ALL.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-10160": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Rockcastle River Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9217",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/RockcastleRiverWMA_ALL.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-10161": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Rolling Fork Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9219",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/RollingForkWMA_all.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-10162": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Ross Creek Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9705",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/RossCreekWMAall.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-10164": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Shillalah Creek Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=170",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/ShilalahCreekWMA_ALL.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-10166": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Stephens Creek Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9232",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/StephensCreekWMA_All.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-10167": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Simon Kenton Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9613",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/SimonKentonWMA_all.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-10168": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Sunny Brook Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9707",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/SunnybrookWMAall.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-10170": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Twin Knobs Campground Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9116",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-10171": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Zilpo Campground Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9094",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-10172": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Salato Wildlife Refuge",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "skipped: another topic (field trips / programs / seasons)",
-     "url": "https://fw.ky.gov/Education/Pages/Plan-Your-Visit.aspx",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "skipped: another topic (field trips / programs / seasons)",
-     "url": "https://fw.ky.gov/Education/Pages/Salato-Wildlife-Education-Center.aspx",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "skipped: another topic (field trips / programs / seasons)",
-     "url": "https://fw.ky.gov/Education/Documents/salatotrailmap.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "Other",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-10173": {
-   "attraction_fees": [
-    {
-     "line": "Kentucky Horse Park (at the Man o’ War Memorial) – FREE Entry!",
-     "read": "2026-10-28",
-     "url": "https://www.kyhorsepark.com/"
-    }
-   ],
    "checked": "2026-10-28",
    "fees": [],
-   "hours": [
-    {
-     "line": "Is the campground open year round?",
-     "read": "2026-10-28",
-     "url": "https://www.kyhorsepark.com/"
-    },
-    {
-     "line": "The campground is open year round.",
-     "read": "2026-10-28",
-     "url": "https://www.kyhorsepark.com/"
-    },
-    {
-     "line": "The Kentucky Horse Park will remain open during its regular hours of 9:00 AM – 5:00 PM.",
-     "read": "2026-10-28",
-     "url": "https://www.kyhorsepark.com/"
-    },
-    {
-     "line": "Grounds open at 6 pm | Performance begins at 7 pm",
-     "read": "2026-10-28",
-     "url": "https://www.kyhorsepark.com/"
-    },
-    {
-     "line": "🐴 Horse Meet & Greets: Up-close experiences with KHP horses from 6 pm to 7 pm",
-     "read": "2026-10-28",
-     "url": "https://www.kyhorsepark.com/"
-    }
-   ],
-   "hunting_hours": [
-    {
-     "line": "Based on host availability, we are able to shuttle campers during the summer season from the campground store to the Visitor Information Center from the hours of 9 am to 5 pm daily.",
-     "read": "2026-10-28",
-     "url": "https://www.kyhorsepark.com/"
-    }
-   ],
+   "hours": [],
    "n": "Kentucky Horse Park",
-   "office_hours": [],
-   "other_fees": [
-    {
-     "line": "A $5 million renovation project is officially underway to improve campsites, recreation areas and visitor amenities.",
-     "read": "2026-10-28",
-     "url": "https://www.kyhorsepark.com/"
-    }
-   ],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://kyhorsepark.com/park-information/hours-admission/",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kyhorsepark.com/",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://kyhorsepark.com/wp-content/uploads/2024/06/Large-KHP-Campus-map-layout.pdf",
-     "why": "official map (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "ok",
-   "t": "State Facility",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-11181": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Sheltowee Trace National Recreation Trail",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://www.fs.usda.gov/wildflowers/regions/southern/SheltoweeTrace/index.shtml",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb5427184.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://www.fs.usda.gov/wildflowers/alerts-notices",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "Trail",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-11274": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Horse Mill Branch Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9721",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/Horse_Mill_branch_WMAmap_ALL.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-12079": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Little Sextons Creek Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/more/documents/LittleSextonsCreekWMAALL.pdf",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/LittleSextonsCreekWMAALL.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://fw.ky.gov/Hunt/Pages/Public-Hunting-Areas.aspx",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-12083": {
    "checked": "2026-10-28",
@@ -1664,1731 +488,462 @@
    "hours": [],
    "n": "University of the Cumberlands Wildlife Management Area",
    "permits": [],
-   "status": "bot error: URL can't contain control characters. '/More/Documents/University of the Cumberl",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-1251": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
-   "hours": [
-    {
-     "line": "Sunday gate closes at 11:00 pm Wednesday thru.",
-     "read": "2026-10-28",
-     "url": "https://kentuckystateparks.reserveamerica.com/camping/carr-creek-state-park/r/campgroundDetails.do?contractCode=KY&parkId=91833"
-    }
-   ],
-   "hunting_hours": [],
+   "hours": [],
    "n": "Carr Creek State Park",
-   "office_hours": [],
-   "other_fees": [
-    {
-     "line": "If more than 4 adults are going to be on the site, an additional $5.00 per night per adult will be collected upon arrival at the park.",
-     "read": "2026-10-28",
-     "url": "https://kentuckystateparks.reserveamerica.com/camping/carr-creek-state-park/r/campgroundDetails.do?contractCode=KY&parkId=91833"
-    }
-   ],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://kentuckystateparks.reserveamerica.com/camping/carr-creek-state-park/r/campgroundDetails.do?contractCode=KY&parkId=91833",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/sassafras/parks/recreation/carr-creek-state-park",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-mapc310a36d-e0a5-4184-9d51-b0156c7fbd1f.pdf?sfvrsn=4585a9ff_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "ok",
-   "t": "State Park",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-1252": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Columbus Belmont State Park",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/explore/columbus-belmont-state-park-7809",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/columbus/parks/historic/columbus-belmont-state-park",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map5b26b649-8218-47fa-93e2-4d9b3a8b06b7.pdf?sfvrsn=c1efe6cb_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Park",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-1253": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Dawkins Line Rail Trail State Park",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/explore/dawkins-line-rail-trail-7831",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/swamp-branch/parks/recreation/dawkins-line-rail-trail",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/trail-map91be9d1d-06e0-4f87-9b9d-ead09b608681.pdf?sfvrsn=816f3c58_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "Trail",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-1254": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
-   "hours": [
-    {
-     "line": "Park closes daily at 10 pm.",
-     "read": "2026-10-28",
-     "url": "https://kentuckystateparks.reserveamerica.com/camping/ep-tom-sawyer-state-park/r/campgroundDetails.do?contractCode=KY&parkId=93600"
-    },
-    {
-     "line": "Trails and some access points are subject to close daily at dusk.",
-     "read": "2026-10-28",
-     "url": "https://kentuckystateparks.reserveamerica.com/camping/ep-tom-sawyer-state-park/r/campgroundDetails.do?contractCode=KY&parkId=93600"
-    },
-    {
-     "line": "We 16 outdoor pickleball courts that are free and open to the public dawn to dusk daily, and courts can be reserved for a fee.",
-     "read": "2026-10-28",
-     "url": "https://kentuckystateparks.reserveamerica.com/camping/ep-tom-sawyer-state-park/r/campgroundDetails.do?contractCode=KY&parkId=93600"
-    }
-   ],
-   "hunting_hours": [],
+   "hours": [],
    "n": "E.P. 'Tom' Sawyer State Park",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://kentuckystateparks.reserveamerica.com/camping/ep-tom-sawyer-state-park/r/campgroundDetails.do?contractCode=KY&parkId=93600",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/explore/e-p-tom-sawyer-state-park-7810",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/parkslibraries/default-document-library/ep-tom-sawyer.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "ok",
-   "t": "State Park",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-1255": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Fishtrap Lake Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=25",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/FishtrapLakeWMA_All.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-1256": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Fort Boonesborough State Park",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/parks/find-a-park/fort-boonesborough-state-park-7811",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/richmond/parks/historic/fort-boonesborough-state-park",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map44579b90-ee86-48ee-9948-8e4a78f29318.pdf?sfvrsn=fca89642_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Park",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-1257": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "General Burnside State Park",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/explore/general-burnside-island-state-park-7812",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/burnside/parks/recreation/general-burnside-island-state-park",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map114a9b2b-4e39-4282-94a3-8ee0727dd8e6.pdf?sfvrsn=c9ee8f89_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Park",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-1258": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Grayson Lake State Park",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/olive-hill/parks/recreation/grayson-lake-state-park",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map0b6523f0-dc20-4163-a883-2a10599a6192.pdf?sfvrsn=3eec0d56_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Park",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-1259": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Green River Lake State Park",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/explore/green-river-lake-campground-7960",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/campbellsville/parks/recreation/green-river-lake-state-park",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-mapee6c05c4-df01-40fa-a37d-0bac8b77095c.pdf?sfvrsn=42132385_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Park",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-1260": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "John James Audubon State Park",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/parks/find-a-park/john-james-audubon-state-park-7815",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/henderson/parks/historic/john-james-audubon-state-park",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map50475013-f17e-4081-963b-98164c6a6fca.pdf?sfvrsn=f8b3bb8f_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Park",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-1261": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Kincaid Lake State Park",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/falmouth/parks/recreation/kincaid-lake-state-park",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map711472d8-e0ef-4cea-856b-39f8a9d0fd7c.pdf?sfvrsn=a27d63d9_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Park",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-1262": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Kingdom Come State Park",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/cumberland/parks/recreation/kingdom-come-state-park",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-mapd99a2476-e940-431e-9e02-1589dfccd4aa.pdf?sfvrsn=9acbaaa8_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Park",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-1263": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Lake Malone State Park",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/explore/lake-malone-state-park-7818",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/dunmor/parks/recreation/lake-malone-state-park",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-mapbf184522-cd67-4f33-87c6-1c4ee8486611.pdf?sfvrsn=542319e7_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Park",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-1264": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Levi Jackson Wilderness Road State Park",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/parks/find-a-park",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://levijacksonpark.com/",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://levijacksonpark.com/wp-content/uploads/2023/06/levi-jackson-park-map-2023.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://levijacksonpark.com/maps-policies/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Park",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-1265": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Lincoln Homestead State Park",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "skipped: another topic (field trips / programs / seasons)",
-     "url": "https://parks.ky.gov/field-trips",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/springfield/parks/historic/lincoln-homestead-state-park",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map3ce19887-b5a1-4d79-bc7b-b81ad7ef3856.pdf?sfvrsn=1db84187_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Park",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-1266": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Mineral Mounds State Park",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/explore/mineral-mound-state-park-7820",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/eddyville/parks/recreation/mineral-mound-state-park",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map7425b9de-cd7f-4e5f-adb4-b87af339ed21.pdf?sfvrsn=c72b87b0_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Park",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-1267": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "My Old Kentucky Home State Park",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/explore/my-old-kentucky-home-state-park-7821",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/bardstown/parks/historic/my-old-kentucky-home-state-park",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map1304db69-b50d-4c0c-a075-74ffeae15a0a.pdf?sfvrsn=dd5d8c7c_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Park",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-1268": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Nolin Lake State Park",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/parks/find-a-park/nolin-lake-campground-8135",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/mammoth-cave/parks/recreation/nolin-lake-state-park",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-mape83dbdcd-0e10-442e-896e-749c8363bb03.pdf?sfvrsn=b777de3_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Park",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-1269": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Old Fort Harrod State Park",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/parks/find-a-park/old-fort-harrod-state-park-7823",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/harrodsburg/parks/historic/old-fort-harrod-state-park",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map40d4be5e-7a24-4f10-94a0-0dad613ff87f.pdf?sfvrsn=544d1890_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Park",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-1270": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Paintsville Lake State Park",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/explore/paintsville-lake-state-park-7824",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/staffordsville/parks/recreation/paintsville-lake-state-park",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map39a5f06b-fed6-49fc-85ac-6aaa67d3b44f.pdf?sfvrsn=e8f8d06c_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Park",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-1271": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Taylorsville Lake State Park",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/explore/taylorsville-lake-state-park-7827",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/mount-eden/parks/recreation/taylorsville-lake-state-park",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map4c3a99b9-34ff-4971-afc1-6d7fc2c900d3.pdf?sfvrsn=523b76a3_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Park",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-1272": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Yatesville Lake State Park",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/parks/find-a-park/yatesville-lake-state-park-7828",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/louisa/parks/recreation/yatesville-lake-state-park",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map10d06200-bfed-4fa9-995b-37a853f47ee3.pdf?sfvrsn=f75f0246_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Park",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-1273": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Barren River Lake State Park",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/parks/find-a-park/barren-river-lake-state-resort-park-7781",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/lucas/parks/resort/barren-river-lake-state-resort-park",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map.pdf?sfvrsn=b177d244_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Park",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-1274": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Blue Licks Battlefield State Park",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/parks/find-a-park/blue-licks-battlefield-state-resort-park-7782",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/carlisle/parks/historic/blue-licks-battlefield-state-resort-park",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map9a72ac6f-42af-45f2-987c-a78bea3716ad.pdf?sfvrsn=13ca9773_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Park",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-1275": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Buckhorn Lake State Park",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/explore/buckhorn-lake-state-resort-park-7784",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/buckhorn/parks/resort/buckhorn-lake-state-resort-park",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/map58f2dd46-f51b-47b9-a327-fa37a6a36d88.pdf?sfvrsn=82d241d4_0",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Park",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-12752": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Green River State Natural Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Rush-Island-Bottoms.aspx",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "skipped: another topic (field trips / programs / seasons)",
-     "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Air-Quality-Regulations.aspx",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "Nature Preserve",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-1276": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Carter Caves State Park",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/parks/find-a-park/carter-caves-state-resort-park-7785",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/olive-hill/parks/resort/carter-caves-state-resort-park",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map3d3eab0a-2c5a-424c-9142-739ead7c04eb.pdf?sfvrsn=147455ae_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Park",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-1277": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Cumberland Falls State Park",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/parks/find-a-park/cumberland-falls-state-resort-park-7786",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/corbin/parks/resort/cumberland-falls-state-resort-park",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map41e9d530-cbc4-4e6d-9f22-ba3d912c5938.pdf?sfvrsn=978558b1_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Park",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-1278": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Dale Hollow State Park",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/parks/find-a-park/dale-hollow-lake-state-resort-park-7787",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/burkesville/parks/resort/dale-hollow-lake-state-resort-park",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map299d3114-7520-4a68-9eb4-9c83abd57b53.pdf?sfvrsn=10762b4_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Park",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-1279": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "General Butler State Park",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/parks/find-a-park/general-butler-state-resort-park-7789",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/carrollton/parks/historic/general-butler-state-resort-park",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-trail-map.pdf?sfvrsn=c9c9146f_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Park",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-1280": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Greenbo Lake State Park",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/explore/greenbo-lake-state-resort-park-7790",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/ashland/parks/historic/greenbo-lake-state-resort-park",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map786e23f1-10fd-43dc-8a0d-ae5790d0a26b.pdf?sfvrsn=d3a95095_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Park",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-1281": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Jenny Wiley State Park",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/explore/jenny-wiley-state-resort-park-7791",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/prestonsburg/parks/resort/jenny-wiley-state-resort-park",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-mapbc5b996c-9d9d-4496-820c-85d249377d4b.pdf?sfvrsn=4be2dff7_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Park",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-1282": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Kenlake State Park",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/parks/find-a-park/kenlake-state-resort-park-7792",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/hardin/parks/resort/kenlake-state-resort-park",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map184010cd-2282-44e9-8538-2c31533d3699.pdf?sfvrsn=3adced7e_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Park",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-1283": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Kentucky Dam Village State Park",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/gilbertsville/parks/resort/kentucky-dam-village-state-resort-park",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-mapa1d96cf9-4bbf-40cb-9e2c-17ae776ad27d.pdf?sfvrsn=f6a25db3_0",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Park",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-1284": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Lake Barkley State Park",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/parks/find-a-park/lake-barkley-campground-8066",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/cadiz/parks/resort/lake-barkley-state-resort-park",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map0bd2c0e4-72b5-4555-ab96-b722b2c866f3.pdf?sfvrsn=53829469_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Park",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-1285": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Lake Cumberland State Park",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/explore/lake-cumberland-state-resort-park-7795",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/jamestown/parks/resort/lake-cumberland-state-resort-park",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-mapd0ec4c31-5b64-467c-8700-6d4dc2b8c96e.pdf?sfvrsn=4a0abfe7_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Park",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-1286": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Natural Bridge State Park",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/parks/find-a-park/natural-bridge-state-resort-park-7796",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/slade/parks/resort/natural-bridge-state-resort-park",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/trail-park-map.pdf?sfvrsn=4adcf593_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Park",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-1287": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Pennyrile Forest State Park",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/parks/find-a-park/pennyrile-forest-state-resort-park-7798",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/dawson-springs/parks/resort/pennyrile-forest-state-resort-park",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map08cc7e0a-9307-47b3-85e9-29db02ce7648.pdf?sfvrsn=145d90d5_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Park",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-1288": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Pine Mountain State Park",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/pineville/parks/resort/pine-mountain-state-resort-park",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-mapb229d418-421c-441c-a94a-3767521710cb.pdf?sfvrsn=a8964d93_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Park",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-1289": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Rough River Dam State Park",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/parks/find-a-park/rough-river-dam-state-resort-park-7800",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/falls-rough/parks/resort/rough-river-dam-state-resort-park",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-mapdfb1e246-2868-4a48-9910-0a7654200f0b.pdf?sfvrsn=dd759b8b_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Park",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-12971": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
-   "hours": [
-    {
-     "line": "However, the hiking trails on the portion of the preserve which is above ground are open year round.",
-     "read": "2026-10-28",
-     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Carter-Caves.aspx"
-    }
-   ],
-   "hunting_hours": [],
+   "hours": [],
    "n": "Bat Cave State Nature Preserve",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Carter-Caves.aspx",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "skipped: another topic (field trips / programs / seasons)",
-     "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Air-Quality-Regulations.aspx",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "ok",
-   "t": "Nature Preserve",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-12972": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
-   "hours": [
-    {
-     "line": "However, the hiking trails on the portion of the preserve which is above ground are open year round.",
-     "read": "2026-10-28",
-     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Carter-Caves.aspx"
-    }
-   ],
-   "hunting_hours": [],
+   "hours": [],
    "n": "Cascade Caverns State Nature Preserve",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Carter-Caves.aspx",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://opengisdata.ky.gov/datasets/ky-knp-state-nature-preserves/explore?location=38.354945%2C-83.108279%2C14.97",
-     "why": "the park's page (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "ok",
-   "t": "Nature Preserve",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-12974": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Clear Creek Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9006",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=9006",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/ClearCreekWMA_All.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-13598": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Beaver Lake State Fishing Lake",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/fisheries/waterbodydetail.aspx?wid=49",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Fishing Lake",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-13599": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Kingfisher Lakes State Fishing Lake",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/fisheries/waterbodydetail.aspx?wid=40",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Fishing Lake",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-13600": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Carpenters Lake State Fishing Lake",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/fisheries/waterbodydetail.aspx?wid=39",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Fishing Lake",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-13601": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Guist Creek Lake State Fishing Lake",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/fisheries/waterbodydetail.aspx?wid=56",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Fishing Lake",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-13606": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Bullock Pen State Fishing Lake",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/fisheries/waterbodydetail.aspx?wid=51",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Fishing Lake",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-13607": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Boltz State Fishing Lake",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/fisheries/waterbodydetail.aspx?wid=50",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Fishing Lake",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3779": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Big Bone Lick State Historic Site",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/parks/find-a-park/big-bone-lick-state-historic-site-7807",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/union/parks/historic/big-bone-lick-state-historic-site",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map8929d877-a36c-45e6-a250-e218cc865fb7.pdf?sfvrsn=77032b6c_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "Other",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3781": {
    "attraction_fees": [],
+   "attraction_hours": [],
    "checked": "2026-10-28",
    "fees": [
     {
@@ -3399,7 +954,32 @@
    ],
    "hours": [
     {
-     "line": "River access areas at Ratliff Hole, Center Creek, and Garden Hole are closed at sunset each day and gates are locked at that time.",
+     "line": "Monday: 9am-8pm",
+     "read": "2026-10-28",
+     "url": "https://www.breakspark.com/breaksparkinfo"
+    },
+    {
+     "line": "Tuesday: 9am-8pm",
+     "read": "2026-10-28",
+     "url": "https://www.breakspark.com/breaksparkinfo"
+    },
+    {
+     "line": "Wednesday: 9am-8pm",
+     "read": "2026-10-28",
+     "url": "https://www.breakspark.com/breaksparkinfo"
+    },
+    {
+     "line": "Thursday: 9am-8pm",
+     "read": "2026-10-28",
+     "url": "https://www.breakspark.com/breaksparkinfo"
+    },
+    {
+     "line": "Friday: 8am-9pm",
+     "read": "2026-10-28",
+     "url": "https://www.breakspark.com/breaksparkinfo"
+    },
+    {
+     "line": "Saturday: 8am-9pm",
      "read": "2026-10-28",
      "url": "https://www.breakspark.com/breaksparkinfo"
     }
@@ -3424,2913 +1004,835 @@
    "permits": [],
    "status": "ok",
    "t": "State Park",
-   "ver": 2
+   "ver": 3
   },
   "US-3782": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Dr. Thomas Walker State Historic Site",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/barbourville/parks/historic/dr-thomas-walker-state-historic-site",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map588164a3-d22b-4fd3-a499-5131a10d4c08.pdf?sfvrsn=9d9fcd12_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "Other",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3783": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Jefferson Davis State Historic Site",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/explore/jefferson-davis-state-historic-site-7802",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/fairview/parks/historic/jefferson-davis-state-historic-site",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-mapc540f78e-2462-424b-b5e5-c447b5a6722f.pdf?sfvrsn=aee07697_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "Other",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3784": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Old Mulkey Meetinghouse State Historic Site",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/parks/find-a-park/old-mulkey-meetinghouse-state-historic-site-7803",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/tompkinsville/parks/historic/old-mulkey-meetinghouse-state-historic-site",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/meetinghouse-cemetery-map.pdf?sfvrsn=c168a4b5_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "Other",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3785": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Perryville Battlefield State Historic Site",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/explore/perryville-battlefield-state-historic-site-7804",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/perryville/parks/historic/perryville-battlefield-state-historic-site",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/trail-mapbac509a8-7d2a-48b2-8ac4-db37c6e13041.pdf?sfvrsn=48b1a47_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "Other",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3786": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Waveland State Historic Site",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/lexington/parks/historic/waveland-state-historic-site",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-mapa3c1f5b0-c74b-4d8b-9d28-ff8e3cb13018.pdf?sfvrsn=ebab9901_2",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "Other",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3787": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
-   "hours": [
-    {
-     "line": "Self-guided tours: 11am – 3pm",
-     "read": "2026-10-28",
-     "url": "https://whitehall.eku.edu"
-    },
-    {
-     "line": "White Hall History Tour (Wednesday-Saturday): A guided tour where guests will learn about the history of the Clay family and the mansion.",
-     "read": "2026-10-28",
-     "url": "https://whitehall.eku.edu"
-    }
-   ],
-   "hunting_hours": [],
+   "hours": [],
    "n": "White Hall State Historic Site",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://whitehall.eku.edu",
-     "why": "the park's page (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "ok",
-   "t": "Other",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3788": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Wickliffe Mounds State Historic Site",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/parks/find-a-park/wickliffe-mounds-state-historic-site-7806",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/wickliffe/parks/historic/wickliffe-mounds-state-historic-site",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map5a0ad43e-b0cf-4f09-8ae9-c5db00f46227.pdf?sfvrsn=b3c88011_0",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://parks.ky.gov/park-rules",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "Other",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3789": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "William Whitley House State Historic Site",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://explorekyhistory.ky.gov/files/show/236",
-     "why": "the park's page (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "Other",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3790": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Fort Heiman National Battlefield",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/fodo/planyourvisit/maps.htm",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/fodo/learn/management/lawsandpolicies.htm",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "National / NPS",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3791": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Trail of Tears National Historic Trail",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/trte/planyourvisit/hours.htm",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/trte/index.htm",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/trte/planyourvisit/upload/National-Park-Service-Trail-of-Tears-Map-508.pdf",
-     "why": "official map (parkinfo-web)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/trte/learn/management/lawsandpolicies.htm",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "National / NPS",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3792": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [
-    {
-     "line": "The Woodlands Nature Station, Homeplace Working Farm, North and South Welcome Stations, Piney Campground, Hillman Ferry Campground, and Energy Lake Campground are open seasonally.",
-     "read": "2026-10-28",
-     "url": "https://www.landbetweenthelakes.us/help-center/frequently-asked-questions/"
-    },
-    {
-     "line": "While some of our campgrounds and environmental education facilities close for the winter season, the recreation area itself is open year-round.",
-     "read": "2026-10-28",
-     "url": "https://www.landbetweenthelakes.us/help-center/frequently-asked-questions/"
-    }
-   ],
    "n": "Land Between the Lakes National Recreation Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://www.landbetweenthelakes.us/help-center/frequently-asked-questions/",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://landbetweenthelakes.us/",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.landbetweenthelakes.us/wp-content/uploads/2025/03/GeneralBrochure23CLUpdated_2023.pdf",
-     "why": "official map (documents bot)"
-    },
-    {
-     "status": "HTTP 403",
-     "url": "https://www.usda.gov/about-usda/policies-and-links",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "National Recreation Area",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3793": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [
-    {
-     "line": "Areas designated as no hunting (pink areas on the maps) are open to year-round visitation.",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=224"
-    }
-   ],
    "n": "Ballard Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=224",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/BallardWMA_All.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3794": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Beaver Creek Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=39",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/BeaverCreekWMA_ALL.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3795": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Beechy Creek Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=228",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/BeechyCreekWMA-ALL.pdf",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://fw.ky.gov/Hunt/Pages/Public-Hunting-Areas.aspx",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3796": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Big Rivers Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9203",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/BigRiversWMA_and_StateForest_all.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3797": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Boatwright Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=222",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/BoatwrightWMA_All.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3798": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Buck Creek Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/BuckCreekWMA_All.pdf",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://fw.ky.gov/Hunt/Pages/Public-Hunting-Areas.aspx",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3799": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Burchell-Beech Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=18",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/Burchell-BeechCreekWMA_ALL.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3800": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Cedar Creek Lake Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9004",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/CedarCreekLakeWMA_ALL.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3801": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Clifty Wilderness Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://www.fs.usda.gov/recarea/dbnf/recarea/?recid=39460",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.fs.usda.gov/r08/danielboone",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "River / Wilderness",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3802": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
-   "fees": [
-    {
-     "line": "Trail Hours: Tuesday – Sunday, 9:00 AM – 7:00 PM (seasonal updates apply) Entry Fee: $8 per car (payable onsite via cash, check, or Venmo – see QR code in the parking area).",
-     "read": "2026-10-28",
-     "url": "https://bggreensource.org/buckley/"
-    }
-   ],
+   "fees": [],
    "hours": [],
-   "hunting_hours": [
-    {
-     "line": "Trail Hours: Tuesday – Sunday, 9:00 AM – 7:00 PM (seasonal updates apply) Entry Fee: $8 per car (payable onsite via cash, check, or Venmo – see QR code in the parking area).",
-     "read": "2026-10-28",
-     "url": "https://bggreensource.org/buckley/"
-    }
-   ],
    "n": "Clyde E Buckley Sanctuary",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://bggreensource.org/buckley/",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://bggreensource.org/wp-content/uploads/2025/01/1_Full_Sanctuary_All_Trails_50_foot_Contours.pdf-compressed_1.pdf",
-     "why": "official map (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "ok",
-   "t": "Sanctuary",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3803": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Coil Estate Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=9125",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/CoilEstateWMA_ALL.pdf",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://fw.ky.gov/Hunt/Pages/Public-Hunting-Areas.aspx",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3804": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Cranks Creek Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=150",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/CranksCreekWMA_ALL.pdf",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://fw.ky.gov/Hunt/Pages/Public-Hunting-Areas.aspx",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3805": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
-   "hours": [
-    {
-     "line": "Public Archery range open during daylight hours.",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=153"
-    },
-    {
-     "line": "Public Archery range open during daylight hours.",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=153"
-    }
-   ],
-   "hunting_hours": [],
+   "hours": [],
    "n": "Curtis Gates Lloyd Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=153",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=153",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/CurtisGatesLloydWMA_ALL.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
-   "permits": [
-    {
-     "line": "Shooting Range Permit Required:",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=153"
-    },
-    {
-     "line": "An annual or one-day shooting range permit is now required to use firearms and archery equipment on any department managed, l​eased or affiliated shooting range.",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=153"
-    },
-    {
-     "line": "The permit is free to annual hunting or fishing license holders, but you must obtain it through My Prof​​ile .",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=153"
-    },
-    {
-     "line": "Shooting Range Permit Required:",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=153"
-    },
-    {
-     "line": "An annual or one-day shooting range permit is now required to use firearms and archery equipment on any department managed, l​eased or affiliated shooting range.",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=153"
-    },
-    {
-     "line": "The permit is free to annual hunting or fishing license holders, but you must obtain it through My Prof​​ile .",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=153"
-    }
-   ],
-   "status": "ok",
-   "t": "WMA",
-   "ver": 2
+   "permits": [],
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3806": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Dennis-Gray Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=148",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/Dennis-GrayWMA_ALL.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3807": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Dix River Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/DixRiverWMA_ALL.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3808": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Doug Travis Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=40",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/DougTravisWMA_ALL.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3809": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Dr. James R. Rich Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=34",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/Dr.JamesR.RichWMA_ALL.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3810": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Dr. Norman And Martha Adair Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/default.aspx",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=149",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/Dr.NormanandMarthaAdairWMA_all.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3811": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Ed Mabry-Laurel Gorge Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/EdMabry-LaurelGorgeWMA_ALL.pdf",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://fw.ky.gov/Hunt/Pages/Public-Hunting-Areas.aspx",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3812": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Fleming Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=154",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/FlemingWMA_ALL.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3813": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Griffith Woods Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/Hunt/Pages/Public-Land-Hunting.aspx",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9201",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/GriffithWoodsWMA_ALL.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
-   "permits": [
-    {
-     "line": "In some areas, a user permit is required.",
-     "read": "2026-10-28",
-     "url": "https://fw.ky.gov/Hunt/Pages/Public-Land-Hunting.aspx"
-    },
-    {
-     "line": "In some public-use regions, a user permit is required.",
-     "read": "2026-10-28",
-     "url": "https://fw.ky.gov/Hunt/Pages/Public-Land-Hunting.aspx"
-    },
-    {
-     "line": "An annual or one-day shooting range permit is now required to use firearms and archery equipment on any department-managed, leased, or affiliated shooting range.",
-     "read": "2026-10-28",
-     "url": "https://fw.ky.gov/Hunt/Pages/Public-Land-Hunting.aspx"
-    },
-    {
-     "line": "The permit is free to annual hunting or fishing license holders, but you must obtain it through the",
-     "read": "2026-10-28",
-     "url": "https://fw.ky.gov/Hunt/Pages/Public-Land-Hunting.aspx"
-    },
-    {
-     "line": "Peabody WMA: Any person ages 16 and older entering the area must obtain and carry a Peabody WMA user permit.",
-     "read": "2026-10-28",
-     "url": "https://fw.ky.gov/Hunt/Pages/Public-Land-Hunting.aspx"
-    }
-   ],
-   "status": "ok",
-   "t": "WMA",
-   "ver": 2
+   "permits": [],
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3814": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Hensley-Pine Mountain Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/Hensley-PineMountainWMA_ALL.pdf",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://fw.ky.gov/Hunt/Pages/Public-Hunting-Areas.aspx",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3815": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Higginson-Henry Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=132",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=132",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/Higginson-HenryWMA_ALL.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
-   "permits": [
-    {
-     "line": "Shooting Range Permit Required:",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=132"
-    },
-    {
-     "line": "An annual or one-day shooting range permit is now required to use firearms and archery equipment on any department managed, l​eased or affiliated shooting range.",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=132"
-    },
-    {
-     "line": "The permit is free to annual hunting or fishing license holders, but you must obtain it through My Prof​​ile .",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=132"
-    },
-    {
-     "line": "Shooting Range Permit Required:",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=132"
-    },
-    {
-     "line": "An annual or one-day shooting range permit is now required to use firearms and archery equipment on any department managed, l​eased or affiliated shooting range.",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=132"
-    },
-    {
-     "line": "The permit is free to annual hunting or fishing license holders, but you must obtain it through My Prof​​ile .",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=132"
-    }
-   ],
-   "status": "ok",
-   "t": "WMA",
-   "ver": 2
+   "permits": [],
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3816": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "John A. Kleber Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=14",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/John_A_Kleber_WMA_ALL.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
-   "permits": [
-    {
-     "line": "Shooting Range Permit Required:",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=14"
-    },
-    {
-     "line": "An annual or one-day shooting range permit is now required to use firearms and archery equipment on any department managed, l​eased or affiliated shooting range.",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=14"
-    },
-    {
-     "line": "The permit is free to annual hunting or fishing license holders, but you must obtain it through My Prof​​ile .",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=14"
-    }
-   ],
-   "status": "ok",
-   "t": "WMA",
-   "ver": 2
+   "permits": [],
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3817": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "John C. Williams Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=238",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/JohnCWilliamsWMA_ALL.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3818": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Jones-Keeney Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=19",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/Jones-KeeneyWMA_All.pdf",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://fw.ky.gov/Hunt/Pages/Public-Hunting-Areas.aspx",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3819": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Kaler Bottoms Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=21",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=21",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/KalerBottomsWMA_All.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3820": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Kentucky River Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=169",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/KentuckyRiverWMA_All.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3821": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "L. B. Davison Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/L.B.DavisonWMA_ALL.pdf",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://fw.ky.gov/Hunt/Pages/Public-Hunting-Areas.aspx",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3822": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Lee K. Nelson Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=9011",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/LeeKNelsonWMA_ALL.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3823": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Livingston County Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9117",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/LivingstonCountyWMAandStateNaturalArea_All.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3824": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Marion County Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/MarionCountyWMAandSF_ALL.pdf",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://fw.ky.gov/Hunt/Pages/Public-Hunting-Areas.aspx",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3825": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
-   "hours": [
-    {
-     "line": "Archery ranges (10-60 yard static range and 30-station woodland course) open daily 9:00 AM-sunset.",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=15"
-    }
-   ],
-   "hunting_hours": [
-    {
-     "line": "Trap and skeet shooting facilities are operated by local clubs and open to the public seasonally for nominal fees.",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=15"
-    }
-   ],
+   "hours": [],
    "n": "Miller Welch Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=15",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/MillerWelch-CentralKentuckyWMA_ALL.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
-   "permits": [
-    {
-     "line": "Shooting Range Permit Required:",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=15"
-    },
-    {
-     "line": "An annual or one-day shooting range permit is now required to use firearms and archery equipment on any department managed, l​eased or affiliated shooting range.",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=15"
-    },
-    {
-     "line": "The permit is free to annual hunting or fishing license holders, but you must obtain it through My Prof​​ile .",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=15"
-    }
-   ],
-   "status": "ok",
-   "t": "WMA",
-   "ver": 2
+   "permits": [],
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3826": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Mullins Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/MullinsWMA_ALL.pdf",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://fw.ky.gov/Hunt/Pages/Public-Hunting-Areas.aspx",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3827": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Obion Creek Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=176",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/ObionCreekWMA_ALL.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3828": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
-   "fees": [
-    {
-     "line": "1-Day Shooting Range Permit (At any KDFWR-managed, leased or affiliated shooting range) $5.29",
-     "read": "2026-10-28",
-     "url": "https://fw.ky.gov/licenses/pages/fees.aspx"
-    },
-    {
-     "line": "Peabody WMA User Permit $15.86",
-     "read": "2026-10-28",
-     "url": "https://fw.ky.gov/licenses/pages/fees.aspx"
-    },
-    {
-     "line": "Land Between the Lakes Hunt Permit $25.00 $25.00",
-     "read": "2026-10-28",
-     "url": "https://fw.ky.gov/licenses/pages/fees.aspx"
-    },
-    {
-     "line": "A user permit ($15.00) required to enter the area for any type of use, can be purchased wherever Kentucky hunting and fishing licenses are sold.",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=229"
-    }
-   ],
+   "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Peabody Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [
-    {
-     "line": "Kentucky Wild Membership (Includes a membership kit & the opportunity to go out in the field with our biologists!) Membership options range from $25 - $1,000",
-     "read": "2026-10-28",
-     "url": "https://fw.ky.gov/licenses/pages/fees.aspx"
-    }
-   ],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/licenses/pages/fees.aspx",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=229",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/PeabodyAll.pdf",
-     "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
-    }
-   ],
-   "permits": [
-    {
-     "line": "Any person age 16 and older entering the area must obtain and carry a Peabody WMA user permit.",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=229"
-    },
-    {
-     "line": "A user permit ($15.00) required to enter the area for any type of use, can be purchased wherever Kentucky hunting and fishing licenses are sold.",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=229"
-    }
-   ],
-   "status": "ok",
-   "t": "WMA",
-   "ver": 2
+   "permits": [],
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3829": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "R. F. Tarter Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=171",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/RFTarterWMA_ALL.pdf",
-     "why": "official map (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3830": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Sloughs Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=230",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/Sloughs_WMA_All.pdf",
-     "why": "official map (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3831": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "South Shore Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/SouthShoreWMA_ALL.pdf",
-     "why": "the park's page (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3832": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Stone Mountain Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/StoneMountainWMAandStateNaturalArea_ALL.pdf",
-     "why": "the park's page (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3833": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "T. N. Sullivan Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/TN_SullivanWMA_All.pdf",
-     "why": "the park's page (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3834": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Tradewater Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=128",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/PennyrileStateForestandTradewaterWMA_ALL.pdf",
-     "why": "official map (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3835": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Twin Eagle Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/TwinEagleWMA_ALL.pdf",
-     "why": "the park's page (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3836": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Veterans Memorial Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9202",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/Veterans_Memorial_WMA_all.pdf",
-     "why": "official map (Kentucky answer key)"
-    }
-   ],
-   "permits": [
-    {
-     "line": "Shooting Range Permit Required:",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9202"
-    },
-    {
-     "line": "An annual or one-day shooting range permit is now required to use firearms and archery equipment on any department managed, l​eased or affiliated shooting range.",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9202"
-    },
-    {
-     "line": "The permit is free to annual hunting or fishing license holders, but you must obtain it through My Prof​​ile .",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9202"
-    }
-   ],
-   "status": "ok",
-   "t": "WMA",
-   "ver": 2
+   "permits": [],
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3837": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
-   "hours": [
-    {
-     "line": "Archery range (mobility-impaired accessible) with 10-50 yard targets open daily during daylight hours, wildlife viewing areas (Tupelo Swamp) , the fishing pier at \"Disabled Access Pond\" is handicap assessable.",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=137"
-    }
-   ],
-   "hunting_hours": [],
+   "hours": [],
    "n": "West Kentucky Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=137",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/West_Kentucky_WMA.pdf",
-     "why": "official map (Kentucky answer key)"
-    }
-   ],
-   "permits": [
-    {
-     "line": "Shooting Range Permit Required:",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=137"
-    },
-    {
-     "line": "An annual or one-day shooting range permit is now required to use firearms and archery equipment on any department managed, l​eased or affiliated shooting range.",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=137"
-    },
-    {
-     "line": "The permit is free to annual hunting or fishing license holders, but you must obtain it through My Prof​​ile .",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=137"
-    }
-   ],
-   "status": "ok",
-   "t": "WMA",
-   "ver": 2
+   "permits": [],
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3838": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Winford Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/WinfordWMA_ALL.pdf",
-     "why": "the park's page (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3839": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Yatesville Lake Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=23",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/YatesvilleLakeWMA_ALL.pdf",
-     "why": "official map (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-3840": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Yellowbank Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=192",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/YellowbankWMA_ALL.pdf",
-     "why": "official map (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-4484": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Daniel Boone National Forest",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://www.fs.usda.gov/dbnf/",
-     "why": "the park's page (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "National Forest",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-4526": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "George Washington & Jefferson National Forest",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://www.fs.usda.gov/gwj",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd1136678.pdf",
-     "why": "official map (parkinfo-web)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "National Forest",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-4572": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
-   "fees": [
-    {
-     "line": "All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).",
-     "read": "2026-10-28",
-     "url": "https://www.nps.gov/lecl/planyourvisit/fees.htm"
-    }
-   ],
+   "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Lewis and Clark National Historic Trail",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/lecl/planyourvisit/fees.htm",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/lecl/index.htm",
-     "why": "the park's page (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "ok",
-   "t": "National / NPS",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-4687": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Dewey Lake Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=26",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/DeweyLakeWMA-ALL.pdf",
-     "why": "the park's page (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-4688": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Kentenia State Forest",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Kentenia.aspx",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Natural-Resources/Forestry/ky-state-forests/Pages/Kentenia-State-Forest.aspx",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Natural-Resources/Forestry/Documents/KenteniaStateForest_ALL.pdf",
-     "why": "official map (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Forest",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-4689": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Kentucky Ridge State Forest",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Kentucky-Ridge.aspx",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Natural-Resources/Forestry/ky-state-forests/Pages/Kentucky-Ridge-State-Forest.aspx",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Natural-Resources/Forestry/Documents/KentuckyRidgeStateForest_ALL.pdf",
-     "why": "official map (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Forest",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-4690": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Knobs State Forest",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Natural-Resources/Forestry/ky-state-forests/Pages/Knobs-State-Forest-and-Wildlife-Management-Area.aspx",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/KnobsStateForestandWMA_All.pdf",
-     "why": "official map (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Forest",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-4692": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Pennyrile State Forest",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/dawson-springs/parks/resort/pennyrile-forest-state-resort-park",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Natural-Resources/Forestry/Documents/PennyrileStateForestandTradewaterWMA_ALL.pdf",
-     "why": "official map (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Forest",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-4693": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Tygarts State Forest",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Natural-Resources/Forestry/ky-state-forests/Pages/Tygarts-State-Forest.aspx",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Natural-Resources/Forestry/Documents/TygartsStateForest_ALL.pdf",
-     "why": "official map (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Forest",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-7708": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
-   "hours": [
-    {
-     "line": "All park grounds, year round, including Zollicoffer Park and the driving tour stops, are open daily dawn to dusk.",
-     "read": "2026-10-28",
-     "url": "https://www.nps.gov/misp/planyourvisit/hours.htm"
-    },
-    {
-     "line": "Beginning in June through August, visitors will be able to explore the first floor of the Brown-Lanier House every Friday through Sunday.",
-     "read": "2026-10-28",
-     "url": "https://www.nps.gov/misp/index.htm"
-    }
-   ],
-   "hunting_hours": [],
+   "hours": [],
    "n": "Mill Springs Battlefield National Monument",
-   "office_hours": [
-    {
-     "line": "The Mill Springs Battlefield National Monument Visitor Center and Museum is open Wednesday through Sunday, from 10:00 am to 4:00 pm (ET).",
-     "read": "2026-10-28",
-     "url": "https://www.nps.gov/misp/planyourvisit/hours.htm"
-    },
-    {
-     "line": "Summer hours for the Visitor Center and Museum is Wednesday through Sunday, from 9:00 am to 5:00 pm (ET).",
-     "read": "2026-10-28",
-     "url": "https://www.nps.gov/misp/planyourvisit/hours.htm"
-    }
-   ],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/misp/planyourvisit/hours.htm",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/misp/index.htm",
-     "why": "the park's page (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "ok",
-   "t": "National / NPS",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-7890": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
-   "hours": [
-    {
-     "line": "Gate closes at 5 pm",
-     "read": "2026-10-28",
-     "src_note": "tourism site (state government), not the park agency",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map6c67554c-de88-4d6a-b7a4-3a6821c26376.pdf?sfvrsn=2878dd15_2"
-    }
-   ],
-   "hunting_hours": [],
+   "hours": [],
    "n": "Isaac Shelby Cemetery State Historic Site",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/parks/find-a-park",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://parks.ky.gov/junction-city/parks/historic/isaac-shelby-cemetery-state-historic-site",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map6c67554c-de88-4d6a-b7a4-3a6821c26376.pdf?sfvrsn=2878dd15_2",
-     "why": "official map (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "ok",
-   "t": "Other",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-7950": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
-   "hours": [
-    {
-     "line": "The grounds and trails are accessible seven days a week from dawn to dusk.",
-     "read": "2026-10-28",
-     "url": "https://www.nps.gov/cane/planyourvisit/hours.htm"
-    }
-   ],
-   "hunting_hours": [],
+   "hours": [],
    "n": "Camp Nelson National Monument",
-   "office_hours": [
-    {
-     "line": "The Visitor Center, Museum, and Reconstructed Barracks are currently open 5-days a week, Wednesday through Sunday.",
-     "read": "2026-10-28",
-     "url": "https://www.nps.gov/cane/planyourvisit/hours.htm"
-    }
-   ],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/cane/planyourvisit/hours.htm",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/cane/index.htm",
-     "why": "the park's page (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "ok",
-   "t": "National / NPS",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-7951": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Green River State Forest",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Green-River-Forest.aspx",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Natural-Resources/Forestry/ky-state-forests/Pages/Green-River-State-Forest.aspx",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/GreenRiverStateForest_ALL.pdf",
-     "why": "official map (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Forest",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-7952": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Marrowbone State Forest",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/MarrowboneStateForestandWMA_ALL.pdf",
-     "why": "the park's page (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "State Forest",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-7953": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Metropolis Lake State Nature Preserve",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Metropolis-Lake.aspx",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Nature-Preserves/Brochures/MetropolisLakeBrochure_bw.pdf",
-     "why": "official map (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "Nature Preserve",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-7954": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
-   "hours": [
-    {
-     "line": "The preserve and homestead are open on weekdays from 3 pm to dusk and on weekends from dawn to dusk.",
-     "read": "2026-10-28",
-     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Blackacre.aspx"
-    },
-    {
-     "line": "The Visitors Center is open on Sundays from 1 pm to 5 pm year round.",
-     "read": "2026-10-28",
-     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Blackacre.aspx"
-    }
-   ],
-   "hunting_hours": [],
+   "hours": [],
    "n": "Blackacre State Nature Preserve",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Blackacre.aspx",
-     "why": "the park's page (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "ok",
-   "t": "Nature Preserve",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-7955": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Six Mile Island State Nature Preserve",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Six-Mile-Island.aspx",
-     "why": "the park's page (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "Nature Preserve",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-7956": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Beargrass Creek State Nature Preserve",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Beargrass-Creek.aspx",
-     "why": "the park's page (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "Nature Preserve",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-7957": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Hall-Hill/Vernon-Douglas State Nature Preserve",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Vernon-Douglas.aspx",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Nature-Preserves/Brochures/VernonDouglasBrochure_bw.pdf",
-     "why": "official map (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "Nature Preserve",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-7958": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
-   "hours": [
-    {
-     "line": "The Garrard County part of the preserve is open to the public, sunrise to sunset year-round.",
-     "read": "2026-10-28",
-     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Tom-Dorman.aspx"
-    }
-   ],
-   "hunting_hours": [],
+   "hours": [],
    "n": "Kentucky River Palisades/Tom Dorman State Nature Preserve",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Tom-Dorman.aspx",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Nature-Preserves/Brochures/TomDormanBrochure_bw.pdf",
-     "why": "official map (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "ok",
-   "t": "Nature Preserve",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-7959": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Quiet Trails State Nature Preserve",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Quiet-Trails.aspx",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Nature-Preserves/Brochures/QuietTrailsBrochure_bw.pdf",
-     "why": "official map (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "Nature Preserve",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-7960": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Crooked Creek State Nature Preserve",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Crooked-Creek.aspx",
-     "why": "the park's page (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "Nature Preserve",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-7961": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Jesse Stuart State Nature Preserve",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Jesse-Stuart.aspx",
-     "why": "the park's page (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "Nature Preserve",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-7962": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Little South Fork State Natural Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Burnett-WWCA.aspx",
-     "why": "the park's page (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "Nature Preserve",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-7963": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Pilot Knob State Nature Preserve",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Pilot-Knob.aspx",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Nature-Preserves/Brochures/PilotKnobBrochure_bw.pdf",
-     "why": "official map (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "Nature Preserve",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-7964": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "William H. Martin State Natural Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Dr.-William-H.-Martin-WWCA.aspx",
-     "why": "the park's page (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "Nature Preserve",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-7965": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Brigadoon State Nature Preserve",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Brigadoon.aspx",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Nature-Preserves/Brochures/BrigadoonBrochure_bw.pdf",
-     "why": "official map (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "Nature Preserve",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-7966": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Bad Branch State Nature Preserve",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Bad-Branch.aspx",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Nature-Preserves/Brochures/BadBranchbrochure_bw.pdf",
-     "why": "official map (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "Nature Preserve",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-7967": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
-   "hours": [
-    {
-     "line": "The preserve is open year round during daylight hours and is limited to foot travel only.",
-     "read": "2026-10-28",
-     "url": "https://eec.ky.gov/nature-preserves/locations/pages/blanton-forest.aspx"
-    },
-    {
-     "line": "The preserve is open year round during daylight hours and is limited to foot travel only.",
-     "read": "2026-10-28",
-     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Blanton-Forest.aspx"
-    }
-   ],
-   "hunting_hours": [],
+   "hours": [],
    "n": "Blanton Forest State Nature Preserve",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/nature-preserves/locations/pages/blanton-forest.aspx",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Blanton-Forest.aspx",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Nature-Preserves/Brochures/BlantonForestbrochure_color.pdf",
-     "why": "official map (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "ok",
-   "t": "Nature Preserve",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-7968": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "E. Lucy Braun State Nature Preserve",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/E.-Lucy-Braun.aspx",
-     "why": "the park's page (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "Nature Preserve",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-7970": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Sinking Creek State Natural Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Sinking-Creek.aspx",
-     "why": "the park's page (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "Nature Preserve",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-8144": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Otter Creek State Recreation Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/Documents/ottercreekbrochure.pdf",
-     "why": "hours page (Kentucky hours answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/Pages/Otter-Creek-Outdoor-Recreation-Area.aspx",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/Documents/Otter_Creek_Brochure_Map.pdf",
-     "why": "official map (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "Recreation Area",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   },
   "US-9756": {
-   "attraction_fees": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
-   "hunting_hours": [],
    "n": "Decker Wildlife Management Area",
-   "office_hours": [],
-   "other_fees": [],
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9717",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://fw.ky.gov/More/Documents/DeckerWMAmap_ALL.pdf",
-     "why": "official map (Kentucky answer key)"
-    }
-   ],
    "permits": [],
-   "status": "nothing found",
-   "t": "WMA",
-   "ver": 2
+   "status": "bot error: too many values to unpack (expected 2)",
+   "ver": 3
   }
  },
  "read": "2026-10-28"
