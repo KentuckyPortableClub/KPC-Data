@@ -1,0 +1,1054 @@
+{
+ "about": "Layer intake results: one row per probed layer (metadata and counts only, never geometry). approved: null until chat 9 sets true; the nightly key rebuild reads approved rows later. Written by kpc_intake_bot.py.",
+ "read": [
+  "data/intake/queue.json",
+  "data/us-key/layers.json",
+  "data/ca-key/layers.json",
+  "KPC-Links data/state-gis.json",
+  "data/harvest/countries.json",
+  "data/parkinfo",
+  "data/us-key",
+  "data/ca-key",
+  "data/world-key",
+  "KPC-Links data/ky-answer-key.json"
+ ],
+ "rows": [
+  {
+   "approved": null,
+   "area": "US-NV",
+   "closes": "not probed",
+   "expect": "READY or already read",
+   "from": "chat 9",
+   "overlap": "already read as sgnvc",
+   "probe": {
+    "copyright": "State of Nevada\nDepartment of Conservation and National Resrouces\nNevada Division of State Lands",
+    "count": 1,
+    "description": "Feature Class containing lands managed and owned by the State of Nevada with NDSL property numbers.",
+    "extent": [
+     -13351509.835,
+     4713784.39,
+     -13347011.408,
+     4716623.178,
+     3857
+    ],
+    "fields": [
+     "FID",
+     "OBJECTID",
+     "DSLFile",
+     "LandName",
+     "Acres",
+     "County",
+     "UsingAgenc",
+     "Address",
+     "City",
+     "Performing",
+     "MeetsAgenc",
+     "UseRestric",
+     "LandID",
+     "Acres_Text",
+     "Shape_Leng",
+     "Recommenda",
+     "IsSovereig",
+     "PortLandSt",
+     "EarliestAc",
+     "LastYearTr",
+     "LastTreatm",
+     "Latitude",
+     "Longitude",
+     "Reagion",
+     "Acre",
+     "Shape__Area",
+     "Shape__Length"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "last_edit": "2026-10-02",
+    "layer_name": "Van_Sickle_Boudary",
+    "name_field": "LandName",
+    "opened": true,
+    "polygons": true,
+    "sample": [
+     "Lake Tahoe State Park (Van Sickle Unit/AmackerSchultz)"
+    ],
+    "service_item": "e13c696359584dac85377bde0709bb6e"
+   },
+   "probed": "2026-10-28",
+   "publisher": "Nevada Division of State Parks (AGOL org owner NDSP_1PARK; copyright Nevada Division of State Lands)",
+   "publisher_test": [
+    "official",
+    "government words: Division"
+   ],
+   "queue_licence": "",
+   "queue_note": "test row (a): the Nevada lesson; the terms on the item page are a disclaimer + credits with no use limits",
+   "requests_used": 5,
+   "sig": "https://services7.arcgis.com/5hLFVlePaucIMGhw/arcgis/rest/services/VS_Boundary_Map_2_WFL1/FeatureServer/2|Nevada State Parks boundaries (Division of State Parks, VS Boundary Map)|Nevada Division of State Parks (AGOL org owner NDSP_1PARK; copyright Nevada Division of State Lands)||test row (a): the Nevada lesson; the terms on the item page are a disclaimer + credits with no use limits|READY or already read",
+   "terms": {
+    "access": "public",
+    "class": "CREDIT",
+    "credit": "",
+    "item_url": "https://www.arcgis.com/home/item.html?id=e13c696359584dac85377bde0709bb6e",
+    "licence_text": "",
+    "line": "State of Nevada Department of Conservation and National Resrouces Nevada Division of State Lands",
+    "modified": "2026-10-02",
+    "org_id": "5hLFVlePaucIMGhw",
+    "org_name": "Nevada Division of State Parks",
+    "org_url": "NDSP",
+    "owner": "NDSP_1PARK",
+    "source": "item page",
+    "tags": [
+     "NDSP",
+     "Van Sickle",
+     "Trails",
+     "Park Boundary"
+    ],
+    "title": "VS Boundary Map_2_WFL1"
+   },
+   "test": "ok",
+   "title": "Nevada State Parks boundaries (Division of State Parks, VS Boundary Map)",
+   "url": "https://services7.arcgis.com/5hLFVlePaucIMGhw/arcgis/rest/services/VS_Boundary_Map_2_WFL1/FeatureServer/2",
+   "ver": 1,
+   "verdict": "REJECT",
+   "why": "already read as sgnvc: nothing new to take"
+  },
+  {
+   "approved": null,
+   "area": "US",
+   "closes": {
+    "by_name": 0,
+    "in_extent": 1245,
+    "missing_in_area": 1274,
+    "n": 0,
+    "parks": [],
+    "pin_only": 0,
+    "tested": 60
+   },
+   "expect": "READY or already read",
+   "from": "chat 9",
+   "overlap": "",
+   "probe": {
+    "copyright": "U.S. Army Corps of Engineers",
+    "count": 418,
+    "description": "    This dataset shows maximum conservation pool or is a reasonable representation of the boundaries for reservoirs and lakes owned and operated by USACE. Data is from USACE Districts.    ",
+    "extent": [
+     -123.35,
+     25.761,
+     -71.596,
+     49.0,
+     4326
+    ],
+    "fields": [
+     "OBJECTID",
+     "OMBIL_SITE_ID",
+     "NAME",
+     "DISTRICT",
+     "DIST_SYM",
+     "DIVISION",
+     "DIV_SYM",
+     "DRY",
+     "DAM_NAME",
+     "NIDID",
+     "Shape__Area",
+     "Shape__Length"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "last_edit": "2024-04-02",
+    "layer_name": "USACE Reservoirs",
+    "name_field": "NAME",
+    "opened": true,
+    "polygons": true,
+    "sample": [
+     "Two Rivers Reservoir",
+     "Santa Rosa Reservoir",
+     "Conchas Reservoir"
+    ],
+    "service_item": "03e322d7e89b48a9b48e9c3f4bcaf29e"
+   },
+   "probed": "2026-10-28",
+   "publisher": "U.S. Army Corps of Engineers",
+   "publisher_test": [
+    "official",
+    "a federal / national agency named"
+   ],
+   "queue_licence": "publicly available",
+   "queue_note": "test row (b): federal; 'publicly available'. Area 'US' = whole country: no per-area missing list, so the closes test is skipped unless the row is given a state area",
+   "requests_used": 64,
+   "sig": "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_rez/FeatureServer/0|USACE reservoirs (Army Corps of Engineers)|U.S. Army Corps of Engineers|publicly available|test row (b): federal; 'publicly available'. Area 'US' = whole country: no per-area missing list, so the closes test is skipped unless the row is given a state area|READY or already read",
+   "terms": {
+    "access": "public",
+    "class": "OPEN",
+    "credit": "",
+    "item_url": "https://www.arcgis.com/home/item.html?id=03e322d7e89b48a9b48e9c3f4bcaf29e",
+    "licence_text": "This data set is publicly available without any use restrictions; however, this data set was developed for use at a national scale and may not be appropriate for use in local scale mapping.",
+    "line": "This data set is publicly available without any use restrictions; however, this data set was developed for use at a national",
+    "modified": "2023-01-18",
+    "org_id": null,
+    "owner": "usace_erd_aep",
+    "source": "item page",
+    "tags": [
+     "usace",
+     "coe",
+     "hydro",
+     "reservoir",
+     "geospatial",
+     "navigation",
+     "waterresources"
+    ],
+    "title": "USACE Reservoirs"
+   },
+   "test": "ok",
+   "title": "USACE reservoirs (Army Corps of Engineers)",
+   "url": "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_rez/FeatureServer/0",
+   "ver": 1,
+   "verdict": "READY",
+   "why": "official, open terms, named polygons, requested by chat 9"
+  },
+  {
+   "approved": null,
+   "area": "US-SC",
+   "closes": "not probed",
+   "expect": "ASK-THE-PUBLISHER or already read",
+   "from": "chat 9",
+   "overlap": "same publisher as sgsca",
+   "probe": {
+    "opened": false,
+    "status": "error Invalid URL"
+   },
+   "probed": "2026-10-28",
+   "publisher": "Clemson University (hosting for South Carolina DNR)",
+   "publisher_test": [
+    "hosted for an agency",
+    "a university account holds an agency layer"
+   ],
+   "queue_licence": "",
+   "queue_note": "test row (c): hosted on a university account, no credits; url to confirm (we read DEV_-_SCDNR_Public_Lands_Viewer/4 from the same org acgZYxoN5Oj8pDLa)",
+   "requests_used": 1,
+   "retry": true,
+   "sig": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/SCDNR_Managed_Lands_Public_Viewer/FeatureServer/0|SCDNR managed lands (public viewer) on Clemson's ArcGIS Online account|Clemson University (hosting for South Carolina DNR)||test row (c): hosted on a university account, no credits; url to confirm (we read DEV_-_SCDNR_Public_Lands_Viewer/4 from the same org acgZYxoN5Oj8pDLa)|ASK-THE-PUBLISHER or already read",
+   "terms": {
+    "class": "NOTHING STATED",
+    "line": "",
+    "source": "none"
+   },
+   "test": "MISS ASK-THE-PUBLISHER or already read vs REJECT",
+   "title": "SCDNR managed lands (public viewer) on Clemson's ArcGIS Online account",
+   "url": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/SCDNR_Managed_Lands_Public_Viewer/FeatureServer/0",
+   "ver": 1,
+   "verdict": "REJECT",
+   "why": "did not open (error Invalid URL): url to confirm"
+  },
+  {
+   "approved": null,
+   "area": "CA-PE",
+   "closes": {
+    "by_name": 0,
+    "in_extent": 0,
+    "missing_in_area": 36,
+    "n": 0,
+    "parks": [],
+    "pin_only": 0,
+    "tested": 0
+   },
+   "expect": "ASK-THE-PUBLISHER",
+   "from": "chat 9",
+   "overlap": "same publisher as PE-PP Govern",
+   "probe": {
+    "copyright": "",
+    "count": 46,
+    "description": "",
+    "extent": [
+     293704.9,
+     655461.7,
+     466878.0,
+     766775.4,
+     null
+    ],
+    "fields": [
+     "OBJECTID",
+     "PARK",
+     "Shape",
+     "Shape.STArea()",
+     "Shape.STLength()"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "layer_name": "GeoLinc_provincial_park_polygon_ENV",
+    "name_field": "PARK",
+    "opened": true,
+    "polygons": true,
+    "sample": [
+     "PROV",
+     "PROV PARK",
+     "BRUDENELL"
+    ],
+    "service_item": "4ff9303b571140a881de6a654faef34e"
+   },
+   "probed": "2026-10-28",
+   "publisher": "Government of Prince Edward Island (GeoLinc)",
+   "publisher_test": [
+    "official",
+    "government host gis.princeedwardisland.ca"
+   ],
+   "queue_licence": "",
+   "queue_note": "test row (d): nothing stated on the service; url to confirm (we read GeoLinc_Provincial_Parks/MapServer/0 on the same host, so 'same publisher' is expected)",
+   "requests_used": 5,
+   "sig": "https://gis.princeedwardisland.ca/server/rest/services/GeoLincData/GeoLinc_provincial_park_polygon_ENV/MapServer/0|PEI provincial parks (GeoLinc, ENV polygon layer)|Government of Prince Edward Island (GeoLinc)||test row (d): nothing stated on the service; url to confirm (we read GeoLinc_Provincial_Parks/MapServer/0 on the same host, so 'same publisher' is expected)|ASK-THE-PUBLISHER",
+   "terms": {
+    "class": "NOTHING STATED",
+    "line": "",
+    "source": "none"
+   },
+   "test": "ok",
+   "title": "PEI provincial parks (GeoLinc, ENV polygon layer)",
+   "url": "https://gis.princeedwardisland.ca/server/rest/services/GeoLincData/GeoLinc_provincial_park_polygon_ENV/MapServer/0",
+   "ver": 1,
+   "verdict": "ASK-THE-PUBLISHER",
+   "why": "nothing stated about use on the item page or the service"
+  },
+  {
+   "approved": null,
+   "area": "CZ",
+   "closes": {
+    "by_name": 18,
+    "in_extent": 19,
+    "missing_in_area": 19,
+    "n": 19,
+    "parks": [
+     [
+      "CZ-0040",
+      "Berounka Nature Park",
+      "Berounka"
+     ],
+     [
+      "CZ-0041",
+      "Rohatiny Nature Park",
+      "Rohatiny"
+     ],
+     [
+      "CZ-0042",
+      "Manětínská Nature Park",
+      "Manětínská"
+     ],
+     [
+      "CZ-0043",
+      "Javořická vrchovina Nature Park",
+      "Javořická vrchovina"
+     ],
+     [
+      "CZ-0047",
+      "Čeřínek Nature Park",
+      "Čeřínek"
+     ],
+     [
+      "CZ-0048",
+      "Česká Kanada Nature Park",
+      "Česká Kanada"
+     ],
+     [
+      "CZ-0055",
+      "Homolka – Vojířov Nature Park",
+      "Homolka - Vojířov"
+     ],
+     [
+      "CZ-0056",
+      "Zelenov Nature Park",
+      "Zelenov"
+     ],
+     [
+      "CZ-0063",
+      "Radeč Nature Park",
+      "Radeč"
+     ],
+     [
+      "CZ-0075",
+      "Trhoň Nature Park",
+      "Trhoň"
+     ],
+     [
+      "CZ-0076",
+      "Džbány-Žebrák Nature Park",
+      "Džbány-Žebrák"
+     ],
+     [
+      "CZ-0115",
+      "Hostivar-Zabehlice Nature Park",
+      "Hostivař - Záběhlice"
+     ],
+     [
+      "CZ-0128",
+      "Plánický hřeben Nature Park",
+      "Plánický hřeben"
+     ],
+     [
+      "CZ-0129",
+      "Kakov - Plánický hřeben Nature Park",
+      "Kakov - Plánický hřeben"
+     ],
+     [
+      "CZ-0130",
+      "Svratecká hornatina Nature Park",
+      "Svratecká hornatina"
+     ],
+     [
+      "CZ-0131",
+      "Lysicko Nature Park",
+      "Lysicko"
+     ],
+     [
+      "CZ-0132",
+      "Halasovo Kunštátsko Nature Park",
+      "Halasovo Kunštátsko"
+     ],
+     [
+      "CZ-0138",
+      "Pod Stedrym Nature Park",
+      "Pod Štědrým"
+     ],
+     [
+      "CZ-0139",
+      "Ještěd Nature Park",
+      "Ještěd"
+     ]
+    ],
+    "pin_only": 1,
+    "tested": 19
+   },
+   "expect": "LIVE-ONLY",
+   "from": "chat 9",
+   "overlap": "",
+   "probe": {
+    "copyright": "© krajské úřady ČR a Magistrát hl. m. Prahy, sjednoceno AOPK ČR, 2022",
+    "count": 141,
+    "description": "",
+    "extent": [
+     -904584.859,
+     -1211644.25,
+     -476069.875,
+     -956866.875,
+     5514
+    ],
+    "fields": [
+     "OBJECTID",
+     "SHAPE",
+     "KOD_PRP",
+     "NAZEV"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "layer_name": "Přírodní park",
+    "name_field": "NAZEV",
+    "opened": true,
+    "polygons": true,
+    "sample": [
+     "Hostýnské vrchy",
+     "Záhlinické rybníky",
+     "Chřiby"
+    ],
+    "service_item": ""
+   },
+   "probed": "2026-10-28",
+   "publisher": "Agentura ochrany prirody a krajiny CR (nature.cz)",
+   "publisher_test": [
+    "official",
+    "government host gis.nature.cz"
+   ],
+   "queue_licence": "viewing only",
+   "queue_note": "test row (e): the service terms say viewing only; url to confirm (layer number guessed)",
+   "requests_used": 22,
+   "sig": "https://gis.nature.cz/arcgis/rest/services/ObecnaOchrana/PrirodniPark/MapServer/0|Czechia natural parks (AOPK CR, gis.nature.cz, Prirodni park)|Agentura ochrany prirody a krajiny CR (nature.cz)|viewing only|test row (e): the service terms say viewing only; url to confirm (layer number guessed)|LIVE-ONLY",
+   "terms": {
+    "class": "CREDIT",
+    "line": "© krajské úřady ČR a Magistrát hl. m. Prahy, sjednoceno AOPK ČR, 2022",
+    "source": "service copyrightText"
+   },
+   "test": "MISS LIVE-ONLY vs READY",
+   "title": "Czechia natural parks (AOPK CR, gis.nature.cz, Prirodni park)",
+   "url": "https://gis.nature.cz/arcgis/rest/services/ObecnaOchrana/PrirodniPark/MapServer/0",
+   "ver": 1,
+   "verdict": "READY",
+   "why": "official, credit terms, named polygons, closes 19 missing park(s)"
+  },
+  {
+   "approved": null,
+   "area": "US-MT",
+   "closes": "not probed",
+   "expect": "already read",
+   "from": "chat 9",
+   "overlap": "already read as sgmta",
+   "probe": {
+    "copyright": "",
+    "count": 55,
+    "description": "tempFl",
+    "extent": [
+     -12857367.106,
+     5618590.647,
+     -11588341.462,
+     6229147.391,
+     3857
+    ],
+    "fields": [
+     "OBJECTID",
+     "SITEID",
+     "NAME",
+     "FWPREG",
+     "ACRES",
+     "WEB_PAGE",
+     "CAMPING",
+     "BOAT_FAC",
+     "HUNTING",
+     "Shape__Area",
+     "Shape__Length",
+     "PDFMAP",
+     "GlobalID",
+     "HUNT_ACCESS",
+     "ACQDATE"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "last_edit": "2026-09-07",
+    "layer_name": "Montana State Parks - Polygons",
+    "name_field": "NAME",
+    "opened": true,
+    "polygons": true,
+    "sample": [
+     "Thompson Chain-of-Lakes",
+     "Finley Point",
+     "Big Arm"
+    ],
+    "service_item": "c5b81de66c784da18e75daf96dea3db4"
+   },
+   "probed": "2026-10-28",
+   "publisher": "Montana Fish, Wildlife & Parks",
+   "publisher_test": [
+    "official",
+    "government words: State Parks"
+   ],
+   "queue_licence": "",
+   "queue_note": "test row (f): we already read this as sgmta",
+   "requests_used": 4,
+   "sig": "https://services3.arcgis.com/Cdxz8r11hT0MGzg1/arcgis/rest/services/FWPLND_STATEPARKS/FeatureServer/0|Montana FWP state parks|Montana Fish, Wildlife & Parks||test row (f): we already read this as sgmta|already read",
+   "terms": {
+    "access": "public",
+    "class": "CREDIT",
+    "credit": "Montana Fish, Wildlife & Parks",
+    "item_url": "https://www.arcgis.com/home/item.html?id=c5b81de66c784da18e75daf96dea3db4",
+    "licence_text": "Users must assume responsibility to determine the usability of this data for their purposes. This data set is provided \"as is\" without warranty of any kind. Montana Fish, Wildlife & Parks (FWP) makes no representations or warranties whatsoever with respect to the accuracy or completeness of this data set and assumes no responsibility for the suitability of this data set for a particular purpose.  FWP will not be liable for any damages incurred as a result of errors in this data set. ",
+    "line": "usability of this data for their purposes. This data set is provided \"as is\" without warranty of any kind. Montana Fish, Wildlife & Parks (FWP) makes no representati",
+    "modified": "2026-09-08",
+    "org_id": null,
+    "owner": "MtFishWildlifeParks",
+    "source": "item page",
+    "tags": [
+     "boundaries",
+     "camp",
+     "fish",
+     "fwplnd",
+     "hunt",
+     "hunting",
+     "lands",
+     "location",
+     "montana",
+     "mtfwp",
+     "mtfwp open data",
+     "park"
+    ],
+    "title": "Montana State Parks - Polygons"
+   },
+   "test": "ok",
+   "title": "Montana FWP state parks",
+   "url": "https://services3.arcgis.com/Cdxz8r11hT0MGzg1/arcgis/rest/services/FWPLND_STATEPARKS/FeatureServer/0",
+   "ver": 1,
+   "verdict": "REJECT",
+   "why": "already read as sgmta: nothing new to take"
+  },
+  {
+   "approved": null,
+   "area": "GB",
+   "closes": {
+    "by_name": 0,
+    "in_extent": 3357,
+    "missing_in_area": 3357,
+    "n": 0,
+    "parks": [],
+    "pin_only": 0,
+    "tested": 60
+   },
+   "expect": "READY or REJECT",
+   "from": "harvester",
+   "overlap": "",
+   "probe": {
+    "copyright": "",
+    "count": 192,
+    "description": "",
+    "extent": [
+     147067.547,
+     30943.052,
+     652753.049,
+     651537.399,
+     27700
+    ],
+    "fields": [
+     "OBJECTID",
+     "NAME",
+     "THEME",
+     "THEMEID",
+     "GRID_REF",
+     "EXTERNALID",
+     "MEASURE",
+     "LABEL",
+     "Shape__Area",
+     "Shape__Length"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "last_edit": "2024-02-05",
+    "layer_name": "Doorstep Greens (Polygons) © Natural England",
+    "name_field": "NAME",
+    "opened": true,
+    "polygons": true,
+    "sample": [
+     "Cookley",
+     "Coronation Park",
+     "Cumberland Market"
+    ],
+    "service": {
+     "layers_listed": 1,
+     "polygon_layers": [
+      [
+       0,
+       "Doorstep Greens (Polygons) © Natural England"
+      ]
+     ],
+     "service_name": "Doorstep Greens (Polygons). The Doorstep Greens initiative provides new or renovated areas of public open space close to people's homes that could be enjoyed permanently by the local community."
+    },
+    "service_item": "673be92a820c48c88ff36e6c2508ba98"
+   },
+   "probed": "2026-10-28",
+   "publisher": "Defra group ArcGIS Online organisation",
+   "publisher_test": [
+    "official",
+    "government words: Defra"
+   ],
+   "queue_licence": "There are no public access constraints to this data. Use of this data is subject to the Open Government Licence",
+   "queue_note": "test row (g1): a Defra OGL harvester lead; READY if it holds named polygons that close a GB park, else REJECT",
+   "requests_used": 66,
+   "sig": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Doorstep_Greens_Polygons/FeatureServer|Doorstep Greens (England) polygons|Defra group ArcGIS Online organisation|There are no public access constraints to this data. Use of this data is subject to the Open Government Licence|test row (g1): a Defra OGL harvester lead; READY if it holds named polygons that close a GB park, else REJECT|READY or REJECT",
+   "terms": {
+    "access": "public",
+    "class": "OPEN",
+    "credit": "© Natural England copyright. Contains Ordnance Survey data © Crown copyright and database right [year].",
+    "item_url": "https://www.arcgis.com/home/item.html?id=673be92a820c48c88ff36e6c2508ba98",
+    "licence_text": "  There are no public access constraints to this data. Use of this data is subject to the Open Government Licence -&nbsp;  https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3   ",
+    "line": "c access constraints to this data. Use of this data is subject to the Open Government Licence - https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3 © Natural Eng",
+    "modified": "2024-02-05",
+    "org_id": "JJzESW51TqeY9uat",
+    "org_name": "Defra group ArcGIS Online organisation",
+    "org_url": "Defra",
+    "owner": "Opendata_NE",
+    "source": "item page",
+    "tags": [
+     "Natural England",
+     "people",
+     "urban",
+     "greenspace",
+     "Designations"
+    ],
+    "title": "Doorstep Greens (England) Polygons"
+   },
+   "test": "ok",
+   "title": "Doorstep Greens (England) polygons",
+   "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Doorstep_Greens_Polygons/FeatureServer/0",
+   "ver": 1,
+   "verdict": "REJECT",
+   "why": "official and usable, but it closes none of the area's missing parks (nothing to gain yet)"
+  },
+  {
+   "approved": null,
+   "area": "GB",
+   "closes": {
+    "by_name": 0,
+    "in_extent": 3357,
+    "missing_in_area": 3357,
+    "n": 0,
+    "parks": [],
+    "pin_only": 0,
+    "tested": 60
+   },
+   "expect": "READY or REJECT",
+   "from": "harvester",
+   "overlap": "",
+   "probe": {
+    "copyright": "",
+    "count": 255,
+    "description": "",
+    "extent": [
+     171389.446,
+     44183.442,
+     651707.212,
+     599911.366,
+     27700
+    ],
+    "fields": [
+     "OBJECTID",
+     "NAME",
+     "THEME",
+     "THEMEID",
+     "GRID_REF",
+     "EXTERNALID",
+     "MEASURE",
+     "GEOGEXT",
+     "GlobalID"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "last_edit": "2018-07-05",
+    "layer_name": "Millenium Greens (Polygons) © Natural England",
+    "name_field": "NAME",
+    "opened": true,
+    "polygons": true,
+    "sample": [
+     "Withnell Fold",
+     "Woodcote",
+     "Woodcote"
+    ],
+    "service": {
+     "layers_listed": 1,
+     "polygon_layers": [
+      [
+       0,
+       "Millenium Greens (Polygons) © Natural England"
+      ]
+     ],
+     "service_name": "Millennium Greens (England) Polygons"
+    },
+    "service_item": "73247b05a5054fe6b04dcc6b39fd89f2"
+   },
+   "probed": "2026-10-28",
+   "publisher": "Defra group ArcGIS Online organisation",
+   "publisher_test": [
+    "official",
+    "government words: Defra"
+   ],
+   "queue_licence": "There are no public access constraints to this data. Use of this data is subject to the Open Government Licence",
+   "queue_note": "test row (g2): a Defra OGL harvester lead",
+   "requests_used": 66,
+   "sig": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Millennium_Greens_England_Polygons/FeatureServer|Millennium Greens (England) polygons|Defra group ArcGIS Online organisation|There are no public access constraints to this data. Use of this data is subject to the Open Government Licence|test row (g2): a Defra OGL harvester lead|READY or REJECT",
+   "terms": {
+    "access": "public",
+    "class": "OPEN",
+    "credit": "© Natural England copyright. Contains Ordnance Survey data © Crown copyright and database right [year].",
+    "item_url": "https://www.arcgis.com/home/item.html?id=73247b05a5054fe6b04dcc6b39fd89f2",
+    "licence_text": "  There are no public access constraints to this data. Use of this data is subject to the Open Government Licence&nbsp;-&nbsp;  https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/   ",
+    "line": "c access constraints to this data. Use of this data is subject to the Open Government Licence - https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/ © Natural En",
+    "modified": "2023-06-06",
+    "org_id": "JJzESW51TqeY9uat",
+    "org_name": "Defra group ArcGIS Online organisation",
+    "org_url": "Defra",
+    "owner": "Opendata_NE",
+    "source": "item page",
+    "tags": [
+     "Natural England",
+     "Designations",
+     "greenspace",
+     "people",
+     "urban"
+    ],
+    "title": "Millennium Greens (England) Polygons"
+   },
+   "test": "ok",
+   "title": "Millennium Greens (England) polygons",
+   "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Millennium_Greens_England_Polygons/FeatureServer/0",
+   "ver": 1,
+   "verdict": "REJECT",
+   "why": "official and usable, but it closes none of the area's missing parks (nothing to gain yet)"
+  },
+  {
+   "approved": null,
+   "area": "GB",
+   "closes": {
+    "by_name": 13,
+    "in_extent": 3357,
+    "missing_in_area": 3357,
+    "n": 27,
+    "parks": [
+     [
+      "GB-0002",
+      "Walton Moss SAC (inc Walton Moss NNR) Conservation Reserve",
+      "Bolton Fell and Walton Mosses"
+     ],
+     [
+      "GB-0024",
+      "Marshside RSPB Reserve",
+      "Ribble Estuary"
+     ],
+     [
+      "GB-0027",
+      "Broadland SPA - Sutton Fen RSPB Reserve",
+      "Ant Broads and Marshes"
+     ],
+     [
+      "GB-0045",
+      "Fowlmere RSPB Reserve",
+      "Fowlmere Watercress Beds"
+     ],
+     [
+      "GB-0049",
+      "Northumbrian Coast SPA - Blyth North Beach Protected Area",
+      "Northumberland Shore"
+     ],
+     [
+      "GB-0057",
+      "Hodbarrow RSPB Reserve",
+      "Duddon Estuary"
+     ],
+     [
+      "GB-0077",
+      "West Midlands Mosses SAC Conservation Reserve",
+      "Chartley Moss"
+     ],
+     [
+      "GB-0080",
+      "Spurn Point National Nature Reserve",
+      "Humber Estuary"
+     ],
+     [
+      "GB-0081",
+      "Gibralter Point National Nature Reserve",
+      "Gibraltar Point"
+     ],
+     [
+      "GB-0082",
+      "Ballard Down National Nature Reserve",
+      "Purbeck Ridge (East)"
+     ],
+     [
+      "GB-0091",
+      "Morecambe Pavements SAC (inc Hutton Roof Crags and Park Wood) National Nature Reserve",
+      "Hutton Roof Crags"
+     ],
+     [
+      "GB-0098",
+      "Buckenham Marshes RSPB Reserve",
+      "Yare Broads and Marshes"
+     ],
+     [
+      "GB-0121",
+      "Northumbrian Coast SPA - Spital Point & Carrs Protected Area",
+      "Northumberland Shore"
+     ],
+     [
+      "GB-0131",
+      "Mersey Narrows and North Wirral Foreshore SPA/SAC/Ramsar Conservation Reserve",
+      "North Wirral Foreshore"
+     ],
+     [
+      "GB-0141",
+      "Ensor's Pool SAC Conservation Reserve",
+      "Ensor's Pool"
+     ],
+     [
+      "GB-0145",
+      "Kingley Vale SAC Conservation Reserve",
+      "Kingley Vale"
+     ],
+     [
+      "GB-0153",
+      "Northumbrian Coast SPA - Cresswell Foreshore Protected Area",
+      "Northumberland Shore"
+     ],
+     [
+      "GB-0154",
+      "Dorset Heathlands - Stoborough Heath National Nature Reserve",
+      "Stoborough & Creech Heaths"
+     ],
+     [
+      "GB-0164",
+      "Nor Marsh & Motney Hill RSPB Reserve",
+      "Medway Estuary and Marshes"
+     ],
+     [
+      "GB-0172",
+      "Thames Basin Heaths SPA - Bagshot Heaths Protected Area",
+      "Broadmoor to Bagshot Woods and Heaths"
+     ],
+     [
+      "GB-0176",
+      "Benacre Broad to Easton Bavents Lagoons SPA Protected Area",
+      "Pakefield to Easton Bavents"
+     ],
+     [
+      "GB-0183",
+      "Dorset and East Devon Coast World Heritage Site Provincial Park",
+      "West Dorset Coast"
+     ],
+     [
+      "GB-0188",
+      "Thames Basin Heaths SPA - Broadmoor & Bagshot Heath Site of Significant Scientific Interest",
+      "Broadmoor to Bagshot Woods and Heaths"
+     ],
+     [
+      "GB-0194",
+      "Blacktoft Sands RSPB Reserve",
+      "Humber Estuary"
+     ],
+     [
+      "GB-0198",
+      "Thames Basin Heaths SPA - Yateley Heath Woods Site of Significant Scientific Interest",
+      "Castle Bottom to Yateley and Hawley Commons"
+     ],
+     [
+      "GB-0202",
+      "Garston Wood RSPB Reserve",
+      "Cranborne Chase"
+     ],
+     [
+      "GB-0205",
+      "Breney Common and Goss and Tregoss Moors Conservation Reserve",
+      "Mid Cornwall Moors"
+     ]
+    ],
+    "pin_only": 14,
+    "tested": 60
+   },
+   "expect": "READY or REJECT",
+   "from": "harvester",
+   "overlap": "",
+   "probe": {
+    "copyright": "",
+    "count": 28305,
+    "description": "",
+    "extent": [
+     82667.21,
+     5182.0,
+     654793.355,
+     657601.503,
+     27700
+    ],
+    "fields": [
+     "OBJECTID",
+     "SSSI_NAME",
+     "ENSIS_ID",
+     "NUMBER",
+     "ID",
+     "UNIT_AREA",
+     "UNIT_PERIM",
+     "EASTING",
+     "NORTHING",
+     "GRID_REF",
+     "POLY_AREA",
+     "POLY_PERIM",
+     "EASTING0",
+     "NORTHING0",
+     "REFERENCE",
+     "CONDITION",
+     "COND_DATE",
+     "GID",
+     "GIS_FILE",
+     "MODIFIED",
+     "DATAVERSIO",
+     "GIS_DATE",
+     "MAPVERSION",
+     "STATUS",
+     "GlobalID",
+     "Shape__Area",
+     "Shape__Length"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "last_edit": "2026-10-22",
+    "layer_name": "Sites of Special Scientific Interest Condition Units (SSSI) © Natural England",
+    "name_field": "SSSI_NAME",
+    "opened": true,
+    "polygons": true,
+    "sample": [
+     "Haugh and Gundale Slacks",
+     "Harwood Dale Moor",
+     "Shaw Beck Gill"
+    ],
+    "service": {
+     "layers_listed": 1,
+     "polygon_layers": [
+      [
+       1,
+       "Sites of Special Scientific Interest Condition Units (SSSI) © Natural England"
+      ]
+     ],
+     "service_name": "Sites of Special Scientific Interest Site Units are divisions of SSSIs based on habitat, tenure and management, and are the basis for recording all information on SSSI Condition and management."
+    },
+    "service_item": "03fd7a2f8e4e4346bf41ce7879153949"
+   },
+   "probed": "2026-10-28",
+   "publisher": "Defra group ArcGIS Online organisation",
+   "publisher_test": [
+    "official",
+    "government words: Defra"
+   ],
+   "queue_licence": "There are no public access constraints to this data. Use of this data is subject to the Open Government Licence",
+   "queue_note": "test row (g3): a Defra OGL harvester lead with named polygons (SSSI names)",
+   "requests_used": 66,
+   "sig": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/SSSI_Units_England/FeatureServer|SSSI units (England)|Defra group ArcGIS Online organisation|There are no public access constraints to this data. Use of this data is subject to the Open Government Licence|test row (g3): a Defra OGL harvester lead with named polygons (SSSI names)|READY or REJECT",
+   "terms": {
+    "access": "public",
+    "class": "OPEN",
+    "credit": "© Natural England copyright. Contains Ordnance Survey data © Crown copyright and database right 2024.",
+    "item_url": "https://www.arcgis.com/home/item.html?id=03fd7a2f8e4e4346bf41ce7879153949",
+    "licence_text": "  There are no public access constraints to this data. Use of this data is subject to the Open Government Licence-  https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/  ",
+    "line": "c access constraints to this data. Use of this data is subject to the Open Government Licence- https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/ © Natural Eng",
+    "modified": "2026-10-22",
+    "org_id": "JJzESW51TqeY9uat",
+    "org_name": "Defra group ArcGIS Online organisation",
+    "org_url": "Defra",
+    "owner": "Opendata_NE",
+    "source": "item page",
+    "tags": [
+     "Natural England",
+     "Designations",
+     "ecology",
+     "landscape"
+    ],
+    "title": "Sites of Special Scientific Interest Units (England)"
+   },
+   "test": "ok",
+   "title": "SSSI units (England)",
+   "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/SSSI_Units_England/FeatureServer/1",
+   "ver": 1,
+   "verdict": "READY",
+   "why": "official, open terms, named polygons, closes 27 missing park(s)"
+  },
+  {
+   "approved": null,
+   "area": "US-KY",
+   "closes": "not probed",
+   "expect": "REJECT",
+   "from": "chat 9",
+   "overlap": "",
+   "probe": {
+    "opened": false,
+    "status": "error Invalid URL"
+   },
+   "probed": "2026-10-28",
+   "publisher": "hobby account (personal map)",
+   "publisher_test": [
+    "not official",
+    "hobby in the publisher words"
+   ],
+   "queue_licence": "",
+   "queue_note": "test row (h): a made-up hobby layer on a non-government account; the bot will mark it 'did not open' and REJECT",
+   "requests_used": 1,
+   "retry": true,
+   "sig": "https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0|My favorite camping spots (a hobby map)|hobby account (personal map)||test row (h): a made-up hobby layer on a non-government account; the bot will mark it 'did not open' and REJECT|REJECT",
+   "terms": {
+    "class": "NOTHING STATED",
+    "line": "",
+    "source": "none"
+   },
+   "test": "ok",
+   "title": "My favorite camping spots (a hobby map)",
+   "url": "https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0",
+   "ver": 1,
+   "verdict": "REJECT",
+   "why": "did not open (error Invalid URL): url to confirm"
+  }
+ ],
+ "updated": "2026-10-28"
+}

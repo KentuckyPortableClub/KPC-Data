@@ -1,0 +1,107 @@
+{
+ "gate": "FAIL",
+ "hosts": {},
+ "last_run": "2026-10-28",
+ "manners": {
+  "arcgis_exempt": 300,
+  "errors": 0,
+  "requests": 300,
+  "rested": 0,
+  "robots": 0,
+  "strikes": 0
+ },
+ "rows": {
+  "https://gis.nature.cz/arcgis/rest/services/ObecnaOchrana/PrirodniPark/MapServer/0": {
+   "probed": "2026-10-28",
+   "retry": false,
+   "sig": "https://gis.nature.cz/arcgis/rest/services/ObecnaOchrana/PrirodniPark/MapServer/0|Czechia natural parks (AOPK CR, gis.nature.cz, Prirodni park)|Agentura ochrany prirody a krajiny CR (nature.cz)|viewing only|test row (e): the service terms say viewing only; url to confirm (layer number guessed)|LIVE-ONLY",
+   "verdicts": [
+    "READY"
+   ]
+  },
+  "https://gis.princeedwardisland.ca/server/rest/services/GeoLincData/GeoLinc_provincial_park_polygon_ENV/MapServer/0": {
+   "probed": "2026-10-28",
+   "retry": false,
+   "sig": "https://gis.princeedwardisland.ca/server/rest/services/GeoLincData/GeoLinc_provincial_park_polygon_ENV/MapServer/0|PEI provincial parks (GeoLinc, ENV polygon layer)|Government of Prince Edward Island (GeoLinc)||test row (d): nothing stated on the service; url to confirm (we read GeoLinc_Provincial_Parks/MapServer/0 on the same host, so 'same publisher' is expected)|ASK-THE-PUBLISHER",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Doorstep_Greens_Polygons/FeatureServer": {
+   "probed": "2026-10-28",
+   "retry": false,
+   "sig": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Doorstep_Greens_Polygons/FeatureServer|Doorstep Greens (England) polygons|Defra group ArcGIS Online organisation|There are no public access constraints to this data. Use of this data is subject to the Open Government Licence|test row (g1): a Defra OGL harvester lead; READY if it holds named polygons that close a GB park, else REJECT|READY or REJECT",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Millennium_Greens_England_Polygons/FeatureServer": {
+   "probed": "2026-10-28",
+   "retry": false,
+   "sig": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Millennium_Greens_England_Polygons/FeatureServer|Millennium Greens (England) polygons|Defra group ArcGIS Online organisation|There are no public access constraints to this data. Use of this data is subject to the Open Government Licence|test row (g2): a Defra OGL harvester lead|READY or REJECT",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/SSSI_Units_England/FeatureServer": {
+   "probed": "2026-10-28",
+   "retry": false,
+   "sig": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/SSSI_Units_England/FeatureServer|SSSI units (England)|Defra group ArcGIS Online organisation|There are no public access constraints to this data. Use of this data is subject to the Open Government Licence|test row (g3): a Defra OGL harvester lead with named polygons (SSSI names)|READY or REJECT",
+   "verdicts": [
+    "READY"
+   ]
+  },
+  "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/SCDNR_Managed_Lands_Public_Viewer/FeatureServer/0": {
+   "probed": "2026-10-28",
+   "retry": true,
+   "sig": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/SCDNR_Managed_Lands_Public_Viewer/FeatureServer/0|SCDNR managed lands (public viewer) on Clemson's ArcGIS Online account|Clemson University (hosting for South Carolina DNR)||test row (c): hosted on a university account, no credits; url to confirm (we read DEV_-_SCDNR_Public_Lands_Viewer/4 from the same org acgZYxoN5Oj8pDLa)|ASK-THE-PUBLISHER or already read",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services3.arcgis.com/Cdxz8r11hT0MGzg1/arcgis/rest/services/FWPLND_STATEPARKS/FeatureServer/0": {
+   "probed": "2026-10-28",
+   "retry": false,
+   "sig": "https://services3.arcgis.com/Cdxz8r11hT0MGzg1/arcgis/rest/services/FWPLND_STATEPARKS/FeatureServer/0|Montana FWP state parks|Montana Fish, Wildlife & Parks||test row (f): we already read this as sgmta|already read",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services7.arcgis.com/5hLFVlePaucIMGhw/arcgis/rest/services/VS_Boundary_Map_2_WFL1/FeatureServer/2": {
+   "probed": "2026-10-28",
+   "retry": false,
+   "sig": "https://services7.arcgis.com/5hLFVlePaucIMGhw/arcgis/rest/services/VS_Boundary_Map_2_WFL1/FeatureServer/2|Nevada State Parks boundaries (Division of State Parks, VS Boundary Map)|Nevada Division of State Parks (AGOL org owner NDSP_1PARK; copyright Nevada Division of State Lands)||test row (a): the Nevada lesson; the terms on the item page are a disclaimer + credits with no use limits|READY or already read",
+   "verdicts": [
+    "REJECT"
+   ]
+  },
+  "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_rez/FeatureServer/0": {
+   "probed": "2026-10-28",
+   "retry": false,
+   "sig": "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_rez/FeatureServer/0|USACE reservoirs (Army Corps of Engineers)|U.S. Army Corps of Engineers|publicly available|test row (b): federal; 'publicly available'. Area 'US' = whole country: no per-area missing list, so the closes test is skipped unless the row is given a state area|READY or already read",
+   "verdicts": [
+    "READY"
+   ]
+  },
+  "https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0": {
+   "probed": "2026-10-28",
+   "retry": true,
+   "sig": "https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0|My favorite camping spots (a hobby map)|hobby account (personal map)||test row (h): a made-up hobby layer on a non-government account; the bot will mark it 'did not open' and REJECT|REJECT",
+   "verdicts": [
+    "REJECT"
+   ]
+  }
+ },
+ "stat": {
+  "ask": 1,
+  "did_not_open": 2,
+  "live_only": 0,
+  "probed": 10,
+  "ready": 3,
+  "reject": 6,
+  "rows": 10,
+  "skipped_fresh": 0,
+  "tests_miss": 2,
+  "tests_ok": 8
+ }
+}
