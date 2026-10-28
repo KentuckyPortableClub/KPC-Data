@@ -89,7 +89,7 @@ jobs:
           gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'CA-ALL.json.gz' -D cache/ca --clobber || true
           # the last bundle of this tag: its map-server answers (<= 21 days) are reused, its data files are not
           if gh release download fers-bundles -R "$REPO" -p "$BUNDLE" -D . --clobber 2>/dev/null; then tar xzf "$BUNDLE" bundle/http 2>/dev/null || true; fi
-          find bundle/http -type f -mtime +21 -delete 2>/dev/null || true
+          find bundle/http -type f -mtime +120 -delete 2>/dev/null || true
           # the last good USGS water copy of this area (never aged out: each tile carries its own date, rule 13)
           mkdir -p bundle/water
           if gh release download fers-bundles -R "$REPO" -p "$WATER_ASSET" -D . --clobber 2>/dev/null; then tar xzf "$WATER_ASSET" bundle/water 2>/dev/null || true; fi
@@ -176,7 +176,7 @@ jobs:
         if: always()
         run: |
           echo "{\"stage\":\"worker\",\"tag\":\"$RUN_TAG\",\"states\":\"$STATES\",\"date\":\"$(date -u +%FT%TZ)\",\"run\":\"$GITHUB_RUN_ID\"}" > bundle/stamp.json
-          find bundle/http -type f -mtime +21 -delete 2>/dev/null || true
+          find bundle/http -type f -mtime +120 -delete 2>/dev/null || true
           tar czf "$BUNDLE" bundle data/fers
           bash kpcdata/.github/scripts/kpc_keep2.sh "$REPO" fers-bundles "$BUNDLE"   # the copy already up becomes .prev (last 2 kept per area)
           gh release upload fers-bundles "$BUNDLE" --clobber -R "$REPO" || { echo "::error title=2-fer line::bundle upload failed"; exit 1; }
