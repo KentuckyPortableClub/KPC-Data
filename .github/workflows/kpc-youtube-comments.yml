@@ -1,6 +1,8 @@
 name: KPC YouTube comments
 # Oct 28 2026 (chat 5; HQ/Brandon): new public comments + replies on @ky.pota.campout and @kpc-n4kpc -> ONE message a day
 # to the Discord STAFF room. Secrets (names only): YOUTUBE_API_KEY, KPC_DISCORD_STAFF_WEBHOOK. Missing secret = quiet skip.
+# Also (Oct 28, HQ safety net): KPC-Data's KEYS answer (YouTube, NPS, RIDB, FCC map) -> data/status/keys.json, read by
+# KPC-Links' nightly check-up; that file has no time stamp, so it only commits when a key's result changes.
 # Memory: data/status/youtube-seen.json (60 days). Never fails. Tick 'dry_run' to print instead of posting.
 on:
   schedule:
@@ -34,12 +36,24 @@ jobs:
           DRY_RUN: ${{ inputs.dry_run && '1' || '' }}
           LOOK_BACK_DAYS: ${{ inputs.look_back_days }}
         run: python3 .github/scripts/kpc_youtube_comments.py || true
+      - name: Keys answer (KPC-Data's secrets; a key is never printed)
+        continue-on-error: true
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          NPS_API_KEY: ${{ secrets.NPS_API_KEY }}
+          RIDB_API_KEY: ${{ secrets.RIDB_API_KEY }}
+          FCC_BDC_USERNAME: ${{ secrets.FCC_BDC_USERNAME }}
+          FCC_BDC_TOKEN: ${{ secrets.FCC_BDC_TOKEN }}
+          KEYS_OUT: data/status/keys.json
+        run: |
+          curl -fsS -m 30 -o "$RUNNER_TEMP/kc.py" https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Links/main/.github/scripts/kpc_key_check.py \
+            && python3 "$RUNNER_TEMP/kc.py" || true
       - name: Save the memory (only when something was sent)
         continue-on-error: true
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/status/youtube-seen.json 2>/dev/null || exit 0
+          for f in data/status/youtube-seen.json data/status/keys.json; do [ -f "$f" ] && git add "$f"; done
           git diff --cached --quiet && exit 0
-          git commit -qm 'YouTube comments: memory'
+          git commit -qm 'YouTube comments memory / key check'
           for i in 1 2 3 4 5; do git pull -q --rebase -X theirs origin main && git push -q origin HEAD:main && exit 0; sleep $((i*8)); done; exit 0
