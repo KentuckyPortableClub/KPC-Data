@@ -1,0 +1,85 @@
+{
+ "areas": {
+  "US-KY": {
+   "checked": 193,
+   "counts": {
+    "agree": 95,
+    "handover_hints": 23,
+    "no_page": 0,
+    "no_size": 73,
+    "off": 11,
+    "ours_unknown": 0,
+    "parks": 193,
+    "retired": 0,
+    "unsure": 10,
+    "weak": 30,
+    "with_outline": 189
+   },
+   "left": 0,
+   "parks": 193,
+   "status": "done",
+   "updated": "2026-10-28"
+  }
+ },
+ "hosts": {
+  "explorekyhistory.ky.gov": 1793258165.3648567,
+  "legacy.fws.gov": 1793257782.7889593
+ },
+ "last": {
+  "areas": [
+   "US-KY"
+  ],
+  "manners": {
+   "arcgis_exempt": 0,
+   "errors": 3,
+   "requests": 338,
+   "rested": 0,
+   "robots": 0,
+   "strikes": 6
+  },
+  "stat": {
+   "errors": 1,
+   "handover_hints": 23,
+   "no_size": 73,
+   "ours_unknown": 0,
+   "pages_read": 321,
+   "parks": 193,
+   "retired": 0,
+   "size_agree": 95,
+   "size_off": 11,
+   "size_unsure": 10,
+   "skipped_fresh": 0,
+   "with_outline": 189
+  },
+  "when": "2026-10-28"
+ },
+ "news": {
+  "https://fw.ky.gov/News/Pages/All-News.aspx": {
+   "links": 0,
+   "read": "2026-10-28",
+   "status": "HTTP 404"
+  },
+  "https://fw.ky.gov/News/Pages/default.aspx": {
+   "links": 78,
+   "read": "2026-10-28",
+   "status": "ok"
+  },
+  "https://kentuckytourism.com/industry/news": {
+   "links": 0,
+   "read": "2026-10-28",
+   "status": "HTTP 404"
+  },
+  "https://parks.ky.gov/news": {
+   "links": 0,
+   "read": "2026-10-28",
+   "status": "HTTP 404"
+  }
+ },
+ "test": {
+  "levi_ok": false,
+  "otter_ok": true,
+  "result": "FAIL",
+  "when": "2026-10-28",
+  "why": "Levi Jackson: verdict no size on page ours 722 agency None · Otter Creek hints: 3 (Meade found)"
+ }
+}
