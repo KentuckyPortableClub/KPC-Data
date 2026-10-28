@@ -1,6 +1,123 @@
 {
- "checked": "2026-10-26",
+ "checked": "2026-10-28",
  "leads": [
+  {
+   "agency": "Great Smoky Mountains National Park,\nFacilities Management Division",
+   "area": "LOC_NAME",
+   "count": 673,
+   "fields": [
+    "LOC_NAME",
+    "TYPE",
+    "SURFACE",
+    "ESTIMATE_SPOTS",
+    "FMSS_LOC",
+    "NOTES",
+    "ROAD",
+    "PARKDISTRICT",
+    "DMSLAT",
+    "DMSLON",
+    "DDMLAT",
+    "DDMLON",
+    "DATAACCESS",
+    "MAPMETHOD",
+    "XYACCURACY",
+    "VALID_RESULT"
+   ],
+   "known": false,
+   "layer": "PARKING_AREAS",
+   "sample": [
+    {
+     "DDMLAT": "35° 31.243' N",
+     "DDMLON": "083° 18.585' W",
+     "DMSLAT": "35° 31' 14.58\" N",
+     "DMSLON": "083° 18' 35.11\" W",
+     "FMSS_LOC": "58124",
+     "LOC_NAME": "Mingus Mill Access",
+     "NOTES": "3 handicap spots",
+     "PARKDISTRICT": "South District",
+     "ROAD": "Mingus Mill Access Road",
+     "SURFACE": "Asphalt"
+    },
+    {
+     "DDMLAT": "35° 33.714' N",
+     "DDMLON": "083° 9.834' W",
+     "DMSLAT": "35° 33' 42.87\" N",
+     "DMSLON": "083° 09' 50.04\" W",
+     "ESTIMATE_SPOTS": "Yes",
+     "FMSS_LOC": "103538",
+     "LOC_NAME": "Maple Tree Parking Area",
+     "PARKDISTRICT": "South District",
+     "ROAD": "Maple Tree Parking",
+     "SURFACE": "Asphalt",
+     "TYPE": "Public"
+    },
+    {
+     "DDMLAT": "35° 33.798' N",
+     "DDMLON": "083° 9.696' W",
+     "DMSLAT": "35° 33' 47.85\" N",
+     "DMSLON": "083° 09' 41.78\" W",
+     "ESTIMATE_SPOTS": "No",
+     "FMSS_LOC": "103536",
+     "LOC_NAME": "Polls Gap Parking",
+     "NOTES": "Trailhead Parking",
+     "PARKDISTRICT": "South District",
+     "ROAD": "Polls Gap Trail Parking",
+     "SURFACE": "Asphalt",
+     "TYPE": "Public"
+    }
+   ],
+   "service": "GRSM_PARKING",
+   "typef": "TYPE",
+   "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/GRSM_PARKING/FeatureServer/0"
+  },
+  {
+   "agency": "",
+   "area": "",
+   "count": 544,
+   "fields": [
+    "Watershed",
+    "Map_Type",
+    "Access_Type",
+    "Gate_Number",
+    "Gate_Location",
+    "DriveIn_Access",
+    "DriveInAccess_Type",
+    "DriveInAccess_Details",
+    "Comments"
+   ],
+   "known": false,
+   "layer": "Parking and Access",
+   "sample": [
+    {
+     "Access_Type": "Parking Only",
+     "Comments": "Parking in dirt lot by swamp just north of turn off to the gate. ",
+     "DriveIn_Access": "N",
+     "Gate_Location": "Town Farm Rd Shutesburry",
+     "Gate_Number": "SH5",
+     "Map_Type": "HP",
+     "Watershed": "Quabbin"
+    },
+    {
+     "Access_Type": "Parking Only",
+     "DriveIn_Access": "N",
+     "Gate_Location": "RT 202 P Line NS",
+     "Gate_Number": "NS9",
+     "Map_Type": "HP",
+     "Watershed": "Quabbin"
+    },
+    {
+     "Access_Type": "Parking Only",
+     "DriveIn_Access": "N",
+     "Gate_Location": "RT 202 Sand Pit",
+     "Gate_Number": "NS10",
+     "Map_Type": "HP",
+     "Watershed": "Quabbin"
+    }
+   ],
+   "service": "DWSP_Public_Access_Map_Parking_and_Access",
+   "typef": "Map_Type",
+   "url": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/DWSP_Public_Access_Map_Parking_and_Access/FeatureServer/0"
+  },
   {
    "agency": "National Park Service Appalachian National Scenic Trail & Appalachian Trail Cons",
    "area": "Name",
@@ -72,52 +189,220 @@
    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/ANST_Facilities/FeatureServer/2"
   },
   {
-   "agency": "",
-   "area": "",
-   "count": 244,
+   "agency": "Great Smoky Mountains National Park,\nFacilities Management Division",
+   "area": "LOC_NAME",
+   "count": 154,
    "fields": [
-    "Watershed",
-    "Map_Type",
-    "Access_Type",
-    "Gate_Number",
-    "Gate_Location",
-    "DriveIn_Access",
-    "DriveInAccess_Type",
-    "DriveInAccess_Details",
-    "Comments"
+    "LOC_NAME",
+    "THEAD_TYPE",
+    "TRAIL",
+    "ROAD",
+    "NOTES",
+    "DMSLAT",
+    "DMSLON",
+    "DDMLAT",
+    "DDMLON",
+    "DATAACCESS",
+    "MAPMETHOD",
+    "XYACCURACY",
+    "VALID_RESULT"
    ],
    "known": false,
-   "layer": "Parking and Access",
+   "layer": "TRAILHEADS",
    "sample": [
     {
-     "Access_Type": "Parking Only",
-     "Comments": "Parking in dirt lot by swamp just north of turn off to the gate. ",
-     "DriveIn_Access": "N",
-     "Gate_Location": "Town Farm Rd Shutesburry",
-     "Gate_Number": "SH5",
-     "Map_Type": "HP",
+     "DATAACCESS": "Unrestricted",
+     "DDMLAT": "35° 41.1323100' ",
+     "DDMLON": "-83° 32.2255740' ",
+     "DMSLAT": "35° 41' 7.939\"",
+     "DMSLON": "-83° 32' 13.534\"",
+     "LOC_NAME": "Fighting Creek Nature Trail Trailhead",
+     "MAPMETHOD": "Feature Extraction",
+     "ROAD": "Sugarlands Visitor Center Parking B",
+     "THEAD_TYPE": "Intepretive",
+     "TRAIL": "Fighting Creek Nature Trail",
+     "XYACCURACY": ">=1m and <5m"
+    },
+    {
+     "DATAACCESS": "Unrestricted",
+     "DDMLAT": "35° 41.2301760' ",
+     "DDMLON": "-83° 32.2569540' ",
+     "DMSLAT": "35° 41' 13.811\"",
+     "DMSLON": "-83° 32' 15.417\"",
+     "LOC_NAME": "Fighting Creek Nature Trail Trailhead",
+     "MAPMETHOD": "Feature Extraction",
+     "ROAD": "Sugarlands Headquarters Parking C",
+     "THEAD_TYPE": "Intepretive",
+     "TRAIL": "Fighting Creek Nature Trail",
+     "XYACCURACY": ">=1m and <5m"
+    },
+    {
+     "DATAACCESS": "Unrestricted",
+     "DDMLAT": "35° 41.2815060' ",
+     "DDMLON": "-83° 32.1039660' ",
+     "DMSLAT": "35° 41' 16.890\"",
+     "DMSLON": "-83° 32' 6.238\"",
+     "LOC_NAME": "Old Sugarlands Trail Trailhead",
+     "MAPMETHOD": "Feature Extraction",
+     "ROAD": "Newfound Gap Road North",
+     "THEAD_TYPE": "Hiking",
+     "TRAIL": "Old Sugarlands Trail",
+     "XYACCURACY": ">=1m and <5m"
+    }
+   ],
+   "service": "GRSM_TRAILHEADS",
+   "typef": "THEAD_TYPE",
+   "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/GRSM_TRAILHEADS/FeatureServer/0"
+  },
+  {
+   "agency": "",
+   "area": "",
+   "count": 136,
+   "fields": [
+    "Watershed",
+    "POI_Type",
+    "Location_Name",
+    "Description",
+    "Parking_Available",
+    "Season",
+    "Season_Details",
+    "Additional_Details",
+    "Info_URL"
+   ],
+   "known": false,
+   "layer": "DWSP Public Access Points of Interest",
+   "sample": [
+    {
+     "Additional_Details": "Parking fees (for vehicle or vehicle/trail) apply. Please visit the Quabbin Fishing Guide for more information on how to use the Quabbin Reservoir Boat Launch Areas - including information on rental boat access and requirements for private boats.",
+     "Description": "Boat launch areas are open seven days a week from 6:00 a.m. until closing for the season.",
+     "Info_URL": "https://www.mass.gov/info-details/quabbin-reservoir-fishing-guide",
+     "Location_Name": "BLA 1",
+     "POI_Type": "Quabbin Reservoir Boat Launch Area",
+     "Parking_Available": "Y",
+     "Season": "Restricted",
+     "Season_Details": "The Quabbin Fishing Season starts the third Saturday in April (weather permitting) and ends on the third Saturday in October. ",
      "Watershed": "Quabbin"
     },
     {
-     "Access_Type": "Controlled",
-     "DriveIn_Access": "N",
-     "Gate_Location": "Rt 202 S.",
-     "Gate_Number": "SH4",
-     "Map_Type": "H",
+     "Additional_Details": "Parking fees (for vehicle or vehicle/trail) apply. Please visit the Quabbin Fishing Guide for more information on how to use the Quabbin Reservoir Boat Launch Areas - including information on rental boat access and requirements for private boats.",
+     "Description": "Boat launch areas are open seven days a week from 6:00 a.m. until closing for the season.",
+     "Info_URL": "https://www.mass.gov/info-details/quabbin-reservoir-fishing-guide",
+     "Location_Name": "BLA 2",
+     "POI_Type": "Quabbin Reservoir Boat Launch Area",
+     "Parking_Available": "Y",
+     "Season": "Restricted",
+     "Season_Details": "The Quabbin Fishing Season starts the third Saturday in April (weather permitting) and ends on the third Saturday in October. ",
      "Watershed": "Quabbin"
     },
     {
-     "Access_Type": "Parking Only",
-     "DriveIn_Access": "N",
-     "Gate_Location": "RT 202 P Line NS",
-     "Gate_Number": "NS9",
-     "Map_Type": "HP",
+     "Additional_Details": "Parking fees (for vehicle or vehicle/trail) apply. Please visit the Quabbin Fishing Guide for more information on how to use the Quabbin Reservoir Boat Launch Areas - including information on rental boat access and requirements for private boats.",
+     "Description": "The boat launch areas open the third Saturday in April (weather permitting) and closes on the third Saturday in October.   Boat launch areas are open seven days a week from 6:00 a.m. until closing for the season.",
+     "Info_URL": "https://www.mass.gov/info-details/quabbin-reservoir-fishing-guide",
+     "Location_Name": "BLA 3",
+     "POI_Type": "Quabbin Reservoir Boat Launch Area",
+     "Parking_Available": "Y",
+     "Season": "Restricted",
+     "Season_Details": "The Quabbin Fishing Season starts the third Saturday in April (weather permitting) and ends on the third Saturday in October. ",
      "Watershed": "Quabbin"
     }
    ],
-   "service": "DCR-DWSP_Parking_and_Access_Locations_view",
-   "typef": "Map_Type",
-   "url": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/DCR-DWSP_Parking_and_Access_Locations_view/FeatureServer/0"
+   "service": "DWSP_Public_Access_Points_of_Interest_Public_View",
+   "typef": "POI_Type",
+   "url": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/DWSP_Public_Access_Points_of_Interest_Public_View/FeatureServer/1"
+  },
+  {
+   "agency": "",
+   "area": "UNITNAME",
+   "count": 35,
+   "fields": [
+    "POINAME",
+    "POITYPE",
+    "POILABEL",
+    "POIFEATTYPE",
+    "ISEXTANT",
+    "XYACCURACY",
+    "MAPMETHOD",
+    "MAPSOURCE",
+    "SOURCESCALE",
+    "PUBLICDISPLAY",
+    "DATAACCESS",
+    "UNITCODE",
+    "UNITNAME",
+    "REGIONCODE",
+    "LOCATIONID",
+    "ASSETID",
+    "FEATUREID",
+    "GEOMETRYID",
+    "NOTES"
+   ],
+   "known": false,
+   "layer": "GRTE_TRANS_Parking",
+   "sample": [
+    {
+     "DATAACCESS": "Unrestricted",
+     "ISEXTANT": "True",
+     "POIFEATTYPE": "Vicinity point",
+     "POILABEL": "Parking",
+     "POINAME": "Parking",
+     "POITYPE": "Parking",
+     "PUBLICDISPLAY": "Public Map Display",
+     "UNITCODE": "GRTE"
+    },
+    {
+     "DATAACCESS": "Unrestricted",
+     "ISEXTANT": "True",
+     "POIFEATTYPE": "Vicinity point",
+     "POILABEL": "Parking",
+     "POINAME": "Parking",
+     "POITYPE": "Parking",
+     "PUBLICDISPLAY": "Public Map Display",
+     "UNITCODE": "GRTE"
+    },
+    {
+     "DATAACCESS": "Unrestricted",
+     "ISEXTANT": "True",
+     "POIFEATTYPE": "Vicinity point",
+     "POILABEL": "Parking",
+     "POINAME": "Parking",
+     "POITYPE": "Parking",
+     "PUBLICDISPLAY": "Public Map Display",
+     "UNITCODE": "GRTE"
+    }
+   ],
+   "service": "GRTE_TRANS_Parking_1",
+   "typef": "POITYPE",
+   "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/GRTE_TRANS_Parking_1/FeatureServer/0"
+  },
+  {
+   "agency": "",
+   "area": "",
+   "count": 28,
+   "fields": [
+    "Place_Name",
+    "Grave_Lot_Number",
+    "Narrative"
+   ],
+   "known": false,
+   "layer": "Quabbin Park Cemetery Tour Points",
+   "sample": [
+    {
+     "Narrative": "This section houses monuments and memorials from the four dis-incorporated towns of Greenwich, Enfield, Dana, and Prescott.",
+     "Place_Name": "Memorial Area"
+    },
+    {
+     "Grave_Lot_Number": "L-747, 748",
+     "Narrative": "Robert Cutler was the second minister in Greenwich and was probably the only college graduate in town at that time. His headstone is one of the more unusual monuments, due to its height and the curved arch across the top.",
+     "Place_Name": "Rev. Robert Cutler, Greenwich"
+    },
+    {
+     "Grave_Lot_Number": "L-842",
+     "Narrative": "James Madison Stone served four years in the Civil War, where he was injured in the leg. During his recovery, he wrote a popular book entitled “Personal Recollections of the Civil War.”",
+     "Place_Name": "James Madison Stone, Dana & Greenwich Plains"
+    }
+   ],
+   "service": "Quabbin_Park_Cemetery_Tour_Points_(Public_View)",
+   "typef": "",
+   "url": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Quabbin_Park_Cemetery_Tour_Points_(Public_View)/FeatureServer/0"
   },
   {
    "agency": "Maryland DNR & Virginia DGIF",
@@ -198,6 +483,58 @@
   {
    "agency": "",
    "area": "name",
+   "count": 13,
+   "fields": [
+    "ownership",
+    "source",
+    "town",
+    "launchType",
+    "state",
+    "ownershipType",
+    "sourceDate",
+    "name"
+   ],
+   "known": false,
+   "layer": "FACILITY_BoatLaunch_NortheastOceanData_SunriseHwyBuffer_pt",
+   "sample": [
+    {
+     "launchType": "Ramp",
+     "name": "Hekscher State Park",
+     "ownership": "NYS OPR",
+     "ownershipType": "State",
+     "source": "NYS Office of Parks, Recreation & Historic Preservation",
+     "sourceDate": "2013",
+     "state": "NY",
+     "town": " "
+    },
+    {
+     "launchType": "Hand",
+     "name": "Carmans River",
+     "ownership": "NYS DEC",
+     "ownershipType": "State",
+     "source": "NYS Office of Parks, Recreation & Historic Preservation",
+     "sourceDate": "2013",
+     "state": "NY",
+     "town": " "
+    },
+    {
+     "launchType": "Ramp",
+     "name": "Captree",
+     "ownership": "NYS OPR",
+     "ownershipType": "State",
+     "source": "NYS Office of Parks, Recreation & Historic Preservation",
+     "sourceDate": "2013",
+     "state": "NY",
+     "town": " "
+    }
+   ],
+   "service": "FIIS_Boat_Launches",
+   "typef": "launchType",
+   "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/FIIS_Boat_Launches/FeatureServer/0"
+  },
+  {
+   "agency": "",
+   "area": "name",
    "count": 7,
    "fields": [
     "marker_color",
@@ -245,6 +582,108 @@
    "service": "ANAC_Visitor_Features_PublicView",
    "typef": "",
    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/ANAC_Visitor_Features_PublicView/FeatureServer/5"
+  },
+  {
+   "agency": "",
+   "area": "Name",
+   "count": 6,
+   "fields": [
+    "Name",
+    "Label",
+    "Park_Area",
+    "State"
+   ],
+   "known": false,
+   "layer": "HAFE Climbing Parking",
+   "sample": [
+    {
+     "Label": "Lock 34 Parking (C&O Canal NHP)",
+     "Name": "Lock 34 Parking Area (C&O Canal NHP)",
+     "Park_Area": "C&O Canal NHP",
+     "State": "Maryland"
+    },
+    {
+     "Label": "Pleasantville Parking",
+     "Name": "Pleasantville Parking Area",
+     "Park_Area": "C&O Canal NHP",
+     "State": "Maryland"
+    },
+    {
+     "Label": "Fisherman Lot",
+     "Name": "Fisherman Lot",
+     "Park_Area": "Virginius Island",
+     "State": "West Virginia"
+    }
+   ],
+   "service": "HAFE_Climbing_Parking_Public",
+   "typef": "",
+   "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/HAFE_Climbing_Parking_Public/FeatureServer/0"
+  },
+  {
+   "agency": "",
+   "area": "UNITNAME",
+   "count": 3,
+   "fields": [
+    "POINAME",
+    "POITYPE",
+    "POILABEL",
+    "POIFEATTYPE",
+    "ISEXTANT",
+    "XYACCURACY",
+    "MAPMETHOD",
+    "MAPSOURCE",
+    "SOURCESCALE",
+    "PUBLICDISPLAY",
+    "DATAACCESS",
+    "UNITCODE",
+    "UNITNAME",
+    "REGIONCODE",
+    "LOCATIONID",
+    "ASSETID",
+    "FEATUREID",
+    "GEOMETRYID",
+    "CREATEUSER",
+    "EDITUSER"
+   ],
+   "known": false,
+   "layer": "GRTE_FACILITY_Entrance Station",
+   "sample": [
+    {
+     "DATAACCESS": "Unrestricted",
+     "ISEXTANT": "True",
+     "POIFEATTYPE": "Vicinity point",
+     "POILABEL": "Granite Canyon Entrance Station",
+     "POINAME": "Granite Canyon Entrance Station",
+     "POITYPE": "Entrance Station",
+     "PUBLICDISPLAY": "Public Map Display",
+     "UNITCODE": "GRTE"
+    },
+    {
+     "DATAACCESS": "Unrestricted",
+     "ISEXTANT": "True",
+     "POIFEATTYPE": "Vicinity point",
+     "POILABEL": "Moose Entrance Station",
+     "POINAME": "Moose Entrance Station",
+     "POITYPE": "Entrance Station",
+     "PUBLICDISPLAY": "Public Map Display",
+     "UNITCODE": "GRTE"
+    },
+    {
+     "DATAACCESS": "Unrestricted",
+     "MAPMETHOD": "Digitized",
+     "MAPSOURCE": "NPS Tile Standard",
+     "POIFEATTYPE": "Center point",
+     "POINAME": "Moran Entrance Station",
+     "POITYPE": "Entrance Station",
+     "PUBLICDISPLAY": "Public Map Display",
+     "SOURCESCALE": "1:500",
+     "UNITCODE": "GRTE",
+     "XYACCURACY": ">=5m and <14m"
+    }
+   ],
+   "service": "GRTE_FACILITY_EntranceStation_1",
+   "typef": "POITYPE",
+   "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/GRTE_FACILITY_EntranceStation_1/FeatureServer/0"
   },
   {
    "agency": "",
@@ -296,6 +735,63 @@
    "service": "ANAC_Visitor_Features_PublicView",
    "typef": "",
    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/ANAC_Visitor_Features_PublicView/FeatureServer/3"
+  },
+  {
+   "agency": "NPS",
+   "area": "CampSite",
+   "count": 2,
+   "fields": [
+    "Campground",
+    "CampSite",
+    "Type"
+   ],
+   "known": false,
+   "layer": "Everglades National Park Campgrounds",
+   "sample": [
+    {
+     "CampSite": " ",
+     "Campground": "Long Pine Key Campground",
+     "Type": "Group campground"
+    },
+    {
+     "CampSite": " ",
+     "Campground": "Flamingo Campground",
+     "Type": "Multi type"
+    }
+   ],
+   "service": "EVER_CUL_Campgrounds",
+   "typef": "Type",
+   "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/EVER_CUL_Campgrounds/FeatureServer/0"
+  },
+  {
+   "agency": "",
+   "area": "Name",
+   "count": 2,
+   "fields": [
+    "Name",
+    "Label",
+    "Park_Area",
+    "State"
+   ],
+   "known": false,
+   "layer": "HAFE Climbing Access Points",
+   "sample": [
+    {
+     "Label": "Rd Access to B-Slab",
+     "Name": "05 Rd Access to B-Slab",
+     "Park_Area": "Maryland Heights",
+     "State": "Maryland"
+    },
+    {
+     "Label": "Maryland Heights Trailhead",
+     "Name": "Maryland Heights Trailhead",
+     "Park_Area": "Maryland Heights",
+     "State": "Maryland"
+    }
+   ],
+   "service": "HAFE_Climbing_Access_Points_Public",
+   "typef": "",
+   "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/HAFE_Climbing_Access_Points_Public/FeatureServer/0"
   },
   {
    "agency": "",
@@ -472,6 +968,54 @@
    "service": "ANTI_Temp_Closure_Oct2026_View",
    "typef": "FEATURE_TYPE",
    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/ANTI_Temp_Closure_Oct2026_View/FeatureServer/0"
+  },
+  {
+   "agency": "",
+   "area": "",
+   "count": 244,
+   "fields": [
+    "Watershed",
+    "Map_Type",
+    "Access_Type",
+    "Gate_Number",
+    "Gate_Location",
+    "DriveIn_Access",
+    "DriveInAccess_Type",
+    "DriveInAccess_Details",
+    "Comments"
+   ],
+   "known": true,
+   "layer": "Parking and Access",
+   "sample": [
+    {
+     "Access_Type": "Parking Only",
+     "Comments": "Parking in dirt lot by swamp just north of turn off to the gate. ",
+     "DriveIn_Access": "N",
+     "Gate_Location": "Town Farm Rd Shutesburry",
+     "Gate_Number": "SH5",
+     "Map_Type": "HP",
+     "Watershed": "Quabbin"
+    },
+    {
+     "Access_Type": "Controlled",
+     "DriveIn_Access": "N",
+     "Gate_Location": "Rt 202 S.",
+     "Gate_Number": "SH4",
+     "Map_Type": "H",
+     "Watershed": "Quabbin"
+    },
+    {
+     "Access_Type": "Parking Only",
+     "DriveIn_Access": "N",
+     "Gate_Location": "RT 202 P Line NS",
+     "Gate_Number": "NS9",
+     "Map_Type": "HP",
+     "Watershed": "Quabbin"
+    }
+   ],
+   "service": "DCR-DWSP_Parking_and_Access_Locations_view",
+   "typef": "Map_Type",
+   "url": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/DCR-DWSP_Parking_and_Access_Locations_view/FeatureServer/0"
   }
  ],
  "st": "MA"
