@@ -88,7 +88,10 @@ jobs:
           gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'US-*.json.gz' -D cache/us --clobber || true
           gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'CA-ALL.json.gz' -D cache/ca --clobber || true
           # the last bundle of this tag: its map-server answers (<= 21 days) are reused, its data files are not
-          if gh release download fers-bundles -R "$REPO" -p "$BUNDLE" -D . --clobber 2>/dev/null; then tar xzf "$BUNDLE" bundle/http 2>/dev/null || true; fi
+          if gh release download fers-bundles -R "$REPO" -p "$BUNDLE" -D . --clobber 2>/dev/null; then tar xzf "$BUNDLE" bundle/http 2>/dev/null || true
+            # Oct 28 (HQ storage): the pair-reuse caches travel in the bundle, not the repo (saved answers, not data people see)
+            tar xzf "$BUNDLE" --wildcards 'data/fers/reuse-p*' 2>/dev/null || true
+          fi
           find bundle/http -type f -mtime +120 -delete 2>/dev/null || true
           # the last good USGS water copy of this area (never aged out: each tile carries its own date, rule 13)
           mkdir -p bundle/water
@@ -232,7 +235,9 @@ jobs:
           mkdir -p kpcdata/data/fers
           # A6: only this area's files go back: own states, the tag's files, POTA pairs, known answers (ky)
           for st in $STATES; do for f in data/fers/$st.json data/fers/$st.json.gz data/fers/pota-pairs-$st.json; do [ -f "$f" ] && ! cmp -s "$f" "kpcdata/$f" && cp "$f" kpcdata/data/fers/; done; done
-          for f in data/fers/*-$RUN_TAG.json; do [ -f "$f" ] && ! cmp -s "$f" "kpcdata/$f" && cp "$f" kpcdata/data/fers/; done
+          for f in data/fers/*-$RUN_TAG.json; do case "$f" in data/fers/reuse-p*) continue;; esac; [ -f "$f" ] && ! cmp -s "$f" "kpcdata/$f" && cp "$f" kpcdata/data/fers/; done
+          git -C kpcdata rm -q --cached --ignore-unmatch "data/fers/reuse-p1-$RUN_TAG.json" "data/fers/reuse-p2-$RUN_TAG.json" "data/fers/reuse-p3-$RUN_TAG.json" 2>/dev/null || true
+          rm -f kpcdata/data/fers/reuse-p*-$RUN_TAG.json
           # only Kentucky's own run may write the known-answers file (Oct 28)
           if [ "$RUN_TAG" = ky ] && [ -f data/fers/known-answers.json ] && ! cmp -s data/fers/known-answers.json kpcdata/data/fers/known-answers.json; then cp data/fers/known-answers.json kpcdata/data/fers/; fi
           cd kpcdata
