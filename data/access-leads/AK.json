@@ -1,6 +1,265 @@
 {
- "checked": "2026-10-26",
+ "checked": "2026-10-28",
  "leads": [
+  {
+   "agency": "Great Smoky Mountains National Park,\nFacilities Management Division",
+   "area": "LOC_NAME",
+   "count": 673,
+   "fields": [
+    "LOC_NAME",
+    "TYPE",
+    "SURFACE",
+    "ESTIMATE_SPOTS",
+    "FMSS_LOC",
+    "NOTES",
+    "ROAD",
+    "PARKDISTRICT",
+    "DMSLAT",
+    "DMSLON",
+    "DDMLAT",
+    "DDMLON",
+    "DATAACCESS",
+    "MAPMETHOD",
+    "XYACCURACY",
+    "VALID_RESULT"
+   ],
+   "known": false,
+   "layer": "PARKING_AREAS",
+   "sample": [
+    {
+     "DDMLAT": "35° 31.243' N",
+     "DDMLON": "083° 18.585' W",
+     "DMSLAT": "35° 31' 14.58\" N",
+     "DMSLON": "083° 18' 35.11\" W",
+     "FMSS_LOC": "58124",
+     "LOC_NAME": "Mingus Mill Access",
+     "NOTES": "3 handicap spots",
+     "PARKDISTRICT": "South District",
+     "ROAD": "Mingus Mill Access Road",
+     "SURFACE": "Asphalt"
+    },
+    {
+     "DDMLAT": "35° 33.714' N",
+     "DDMLON": "083° 9.834' W",
+     "DMSLAT": "35° 33' 42.87\" N",
+     "DMSLON": "083° 09' 50.04\" W",
+     "ESTIMATE_SPOTS": "Yes",
+     "FMSS_LOC": "103538",
+     "LOC_NAME": "Maple Tree Parking Area",
+     "PARKDISTRICT": "South District",
+     "ROAD": "Maple Tree Parking",
+     "SURFACE": "Asphalt",
+     "TYPE": "Public"
+    },
+    {
+     "DDMLAT": "35° 33.798' N",
+     "DDMLON": "083° 9.696' W",
+     "DMSLAT": "35° 33' 47.85\" N",
+     "DMSLON": "083° 09' 41.78\" W",
+     "ESTIMATE_SPOTS": "No",
+     "FMSS_LOC": "103536",
+     "LOC_NAME": "Polls Gap Parking",
+     "NOTES": "Trailhead Parking",
+     "PARKDISTRICT": "South District",
+     "ROAD": "Polls Gap Trail Parking",
+     "SURFACE": "Asphalt",
+     "TYPE": "Public"
+    }
+   ],
+   "service": "GRSM_PARKING",
+   "typef": "TYPE",
+   "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/GRSM_PARKING/FeatureServer/0"
+  },
+  {
+   "agency": "National Park Service Appalachian National Scenic Trail & Appalachian Trail Cons",
+   "area": "Name",
+   "count": 483,
+   "fields": [
+    "Reg_Acro",
+    "Acronym",
+    "Name",
+    "Status",
+    "In_FMSS",
+    "FMSS_Name",
+    "FMSS_LocID",
+    "Asset_ID1",
+    "Asset_ID2",
+    "GIS_ID",
+    "Type",
+    "Surface",
+    "Guide_Rai2",
+    "Ditch_Line",
+    "Curb_Mater",
+    "Railing_Ma",
+    "Retaining2",
+    "Culvert_Ma",
+    "Grate_Mate",
+    "Rack_Mater"
+   ],
+   "known": false,
+   "layer": "Parking",
+   "sample": [
+    {
+     "Acronym": "7",
+     "FMSS_LocID": "250377",
+     "FMSS_Name": "NYNJTC NY Rte 22 A.T. Train Station Parking Area",
+     "GIS_ID": "PK339",
+     "In_FMSS": "0",
+     "Name": "NY Rte 22 A.T. Train Station Parking Area",
+     "Reg_Acro": "1",
+     "Status": "Official A.T. Parking Area",
+     "Surface": "3",
+     "Type": "1"
+    },
+    {
+     "Acronym": "7",
+     "FMSS_LocID": "105959",
+     "FMSS_Name": "NYNJTC NY Rte 55 Parking Area",
+     "GIS_ID": "PK353",
+     "In_FMSS": "0",
+     "Name": "NY Rte 55 Parking Area",
+     "Reg_Acro": "1",
+     "Status": "Official A.T. Parking Area",
+     "Surface": "4",
+     "Type": "1"
+    },
+    {
+     "Acronym": "7",
+     "FMSS_LocID": "250374",
+     "FMSS_Name": "NYNJTC Nuclear Lake Old NY Rte 55 Parking Area",
+     "GIS_ID": "PK340",
+     "In_FMSS": "0",
+     "Name": "Nuclear Lake (Old NY Rte 55) Parking Area",
+     "Reg_Acro": "1",
+     "Status": "Official A.T. Parking Area",
+     "Surface": "3",
+     "Type": "1"
+    }
+   ],
+   "service": "ANST_Facilities",
+   "typef": "Type",
+   "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/ANST_Facilities/FeatureServer/2"
+  },
+  {
+   "agency": "Great Smoky Mountains National Park,\nFacilities Management Division",
+   "area": "LOC_NAME",
+   "count": 154,
+   "fields": [
+    "LOC_NAME",
+    "THEAD_TYPE",
+    "TRAIL",
+    "ROAD",
+    "NOTES",
+    "DMSLAT",
+    "DMSLON",
+    "DDMLAT",
+    "DDMLON",
+    "DATAACCESS",
+    "MAPMETHOD",
+    "XYACCURACY",
+    "VALID_RESULT"
+   ],
+   "known": false,
+   "layer": "TRAILHEADS",
+   "sample": [
+    {
+     "DATAACCESS": "Unrestricted",
+     "DDMLAT": "35° 41.1323100' ",
+     "DDMLON": "-83° 32.2255740' ",
+     "DMSLAT": "35° 41' 7.939\"",
+     "DMSLON": "-83° 32' 13.534\"",
+     "LOC_NAME": "Fighting Creek Nature Trail Trailhead",
+     "MAPMETHOD": "Feature Extraction",
+     "ROAD": "Sugarlands Visitor Center Parking B",
+     "THEAD_TYPE": "Intepretive",
+     "TRAIL": "Fighting Creek Nature Trail",
+     "XYACCURACY": ">=1m and <5m"
+    },
+    {
+     "DATAACCESS": "Unrestricted",
+     "DDMLAT": "35° 41.2301760' ",
+     "DDMLON": "-83° 32.2569540' ",
+     "DMSLAT": "35° 41' 13.811\"",
+     "DMSLON": "-83° 32' 15.417\"",
+     "LOC_NAME": "Fighting Creek Nature Trail Trailhead",
+     "MAPMETHOD": "Feature Extraction",
+     "ROAD": "Sugarlands Headquarters Parking C",
+     "THEAD_TYPE": "Intepretive",
+     "TRAIL": "Fighting Creek Nature Trail",
+     "XYACCURACY": ">=1m and <5m"
+    },
+    {
+     "DATAACCESS": "Unrestricted",
+     "DDMLAT": "35° 41.2815060' ",
+     "DDMLON": "-83° 32.1039660' ",
+     "DMSLAT": "35° 41' 16.890\"",
+     "DMSLON": "-83° 32' 6.238\"",
+     "LOC_NAME": "Old Sugarlands Trail Trailhead",
+     "MAPMETHOD": "Feature Extraction",
+     "ROAD": "Newfound Gap Road North",
+     "THEAD_TYPE": "Hiking",
+     "TRAIL": "Old Sugarlands Trail",
+     "XYACCURACY": ">=1m and <5m"
+    }
+   ],
+   "service": "GRSM_TRAILHEADS",
+   "typef": "THEAD_TYPE",
+   "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/GRSM_TRAILHEADS/FeatureServer/0"
+  },
+  {
+   "agency": "",
+   "area": "UnitName",
+   "count": 117,
+   "fields": [
+    "Location_Name",
+    "Street_Address",
+    "Side",
+    "Space_Count",
+    "Collection_Method",
+    "Enforcement_Type",
+    "Rate_Days",
+    "No_Parking_Days",
+    "No_Parking_1",
+    "No_Parking_2",
+    "ZONE",
+    "StreetAddr",
+    "UnitName",
+    "ID_Label",
+    "Signage_Notes",
+    "Maintenance_Notes"
+   ],
+   "known": false,
+   "layer": "Parking Meters",
+   "sample": [
+    {
+     "Collection_Method": "Parkeon",
+     "Enforcement_Type": "Pay by Plate",
+     "Location_Name": "Lot A",
+     "Rate_Days": "Mon-Sun",
+     "Side": "Lot",
+     "Street_Address": "1500A Ohio Drive SW"
+    },
+    {
+     "Collection_Method": "Parkeon",
+     "Enforcement_Type": "Pay by Plate",
+     "Location_Name": "Lot A",
+     "Rate_Days": "Mon-Sun",
+     "Side": "Lot",
+     "Street_Address": "1500A Ohio Drive SW"
+    },
+    {
+     "Collection_Method": "Parkeon",
+     "Enforcement_Type": "Pay by Plate",
+     "Location_Name": "Buckeye Lot",
+     "Rate_Days": "Mon-Sun",
+     "Side": "Lot",
+     "Street_Address": "900 Buckeye Drive SW"
+    }
+   ],
+   "service": "NAMA_Parking_Meters",
+   "typef": "Enforcement_Type",
+   "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NAMA_Parking_Meters/FeatureServer/0"
+  },
   {
    "agency": "Alaska Department of Natural Resources",
    "area": "PARK_NAME",
@@ -16,6 +275,408 @@
     "FCLTYTYPE"
    ],
    "known": false,
+   "layer": "ASP Park Facilities",
+   "sample": [
+    {
+     "CRDNTS": "N 62°44'36.13\" W 150°7'32.06\"",
+     "FACILITYNM": "Byers Lake 1 Cabin",
+     "FCLTYTYPE": "Cabin",
+     "NAME": "Denali",
+     "PARKTYPEAB": "SP",
+     "PARK_NAME": "Denali State Park",
+     "REGION": "Mat-Su",
+     "URL": "http://dnr.alaska.gov/parks/aspcabins/byerslakecabin1.htm"
+    },
+    {
+     "CRDNTS": "N60°48'21.52\"   W148°28'43.01\"",
+     "FACILITYNM": "Squirrel Cove Cabin",
+     "FCLTYTYPE": "Cabin",
+     "NAME": "Decision Point",
+     "PARKTYPEAB": "SMP",
+     "PARK_NAME": "Decision Point State Marine Park",
+     "REGION": "Kenai",
+     "URL": "http://dnr.alaska.gov/parks/aspcabins/squirrelcovecabin.htm"
+    },
+    {
+     "CRDNTS": "N 59°32'43.0795\" W 151°10'3.3594\"",
+     "FACILITYNM": "Moose Valley Cabin",
+     "FCLTYTYPE": "Cabin",
+     "NAME": "Kachemak Bay",
+     "PARKTYPEAB": "SP",
+     "PARK_NAME": "Kachemak Bay State Park",
+     "REGION": "Kenai",
+     "URL": "http://dnr.alaska.gov/parks/aspcabins/moosevalleycabin.htm"
+    }
+   ],
+   "service": "DPOR/Park_Boundary_Facility",
+   "typef": "PARKTYPEAB",
+   "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/FeatureServer/0"
+  },
+  {
+   "agency": "",
+   "area": "UNITNAME",
+   "count": 35,
+   "fields": [
+    "POINAME",
+    "POITYPE",
+    "POILABEL",
+    "POIFEATTYPE",
+    "ISEXTANT",
+    "XYACCURACY",
+    "MAPMETHOD",
+    "MAPSOURCE",
+    "SOURCESCALE",
+    "PUBLICDISPLAY",
+    "DATAACCESS",
+    "UNITCODE",
+    "UNITNAME",
+    "REGIONCODE",
+    "LOCATIONID",
+    "ASSETID",
+    "FEATUREID",
+    "GEOMETRYID",
+    "NOTES"
+   ],
+   "known": false,
+   "layer": "GRTE_TRANS_Parking",
+   "sample": [
+    {
+     "DATAACCESS": "Unrestricted",
+     "ISEXTANT": "True",
+     "POIFEATTYPE": "Vicinity point",
+     "POILABEL": "Parking",
+     "POINAME": "Parking",
+     "POITYPE": "Parking",
+     "PUBLICDISPLAY": "Public Map Display",
+     "UNITCODE": "GRTE"
+    },
+    {
+     "DATAACCESS": "Unrestricted",
+     "ISEXTANT": "True",
+     "POIFEATTYPE": "Vicinity point",
+     "POILABEL": "Parking",
+     "POINAME": "Parking",
+     "POITYPE": "Parking",
+     "PUBLICDISPLAY": "Public Map Display",
+     "UNITCODE": "GRTE"
+    },
+    {
+     "DATAACCESS": "Unrestricted",
+     "ISEXTANT": "True",
+     "POIFEATTYPE": "Vicinity point",
+     "POILABEL": "Parking",
+     "POINAME": "Parking",
+     "POITYPE": "Parking",
+     "PUBLICDISPLAY": "Public Map Display",
+     "UNITCODE": "GRTE"
+    }
+   ],
+   "service": "GRTE_TRANS_Parking_1",
+   "typef": "POITYPE",
+   "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/GRTE_TRANS_Parking_1/FeatureServer/0"
+  },
+  {
+   "agency": "Maryland DNR & Virginia DGIF",
+   "area": "SITENAME",
+   "count": 16,
+   "fields": [
+    "STATE",
+    "COUNTYCODE",
+    "SITENAME",
+    "WATERBODY",
+    "OWNERSHIP",
+    "OWNERNAME",
+    "BOATRAMP",
+    "SOFTLAUNCH",
+    "FISHING",
+    "SWIMMING",
+    "TRAILS",
+    "RESTROOM",
+    "RESTROOMTY",
+    "PARKING",
+    "BARRIER_FR",
+    "FIPS",
+    "CLASS",
+    "ACCESSAREA",
+    "BODYOFWATE",
+    "TYPE"
+   ],
+   "known": false,
+   "layer": "ASIS: Boat Access Points",
+   "sample": [
+    {
+     "BOATRAMP": "Y",
+     "COUNTYCODE": "Worcester",
+     "FISHING": "U",
+     "OWNERNAME": "Worcester County - Department of Public Works",
+     "OWNERSHIP": "COUNTY",
+     "RESTROOM": "Y",
+     "SITENAME": "George Island Landing",
+     "SOFTLAUNCH": "N",
+     "STATE": "MD",
+     "SWIMMING": "U",
+     "TRAILS": "U",
+     "WATERBODY": "Chincoteague Bay"
+    },
+    {
+     "BOATRAMP": "Y",
+     "COUNTYCODE": "Worcester",
+     "FISHING": "U",
+     "OWNERNAME": "Worcester County - Department of Public Works",
+     "OWNERSHIP": "COUNTY",
+     "RESTROOM": "Y",
+     "SITENAME": "Taylors Landing",
+     "SOFTLAUNCH": "N",
+     "STATE": "MD",
+     "SWIMMING": "U",
+     "TRAILS": "U",
+     "WATERBODY": "Chincoteague Bay"
+    },
+    {
+     "BOATRAMP": "Y",
+     "COUNTYCODE": "Worcester",
+     "FISHING": "U",
+     "OWNERNAME": "Worcester County - Department of Public Works",
+     "OWNERSHIP": "COUNTY",
+     "RESTROOM": "Y",
+     "SITENAME": "Public Landing",
+     "SOFTLAUNCH": "N",
+     "STATE": "MD",
+     "SWIMMING": "U",
+     "TRAILS": "U",
+     "WATERBODY": "Chincoteague Bay"
+    }
+   ],
+   "service": "ASIS_Boat_Access",
+   "typef": "CLASS",
+   "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/ASIS_Boat_Access/FeatureServer/0"
+  },
+  {
+   "agency": "",
+   "area": "name",
+   "count": 13,
+   "fields": [
+    "ownership",
+    "source",
+    "town",
+    "launchType",
+    "state",
+    "ownershipType",
+    "sourceDate",
+    "name"
+   ],
+   "known": false,
+   "layer": "FACILITY_BoatLaunch_NortheastOceanData_SunriseHwyBuffer_pt",
+   "sample": [
+    {
+     "launchType": "Ramp",
+     "name": "Hekscher State Park",
+     "ownership": "NYS OPR",
+     "ownershipType": "State",
+     "source": "NYS Office of Parks, Recreation & Historic Preservation",
+     "sourceDate": "2013",
+     "state": "NY",
+     "town": " "
+    },
+    {
+     "launchType": "Hand",
+     "name": "Carmans River",
+     "ownership": "NYS DEC",
+     "ownershipType": "State",
+     "source": "NYS Office of Parks, Recreation & Historic Preservation",
+     "sourceDate": "2013",
+     "state": "NY",
+     "town": " "
+    },
+    {
+     "launchType": "Ramp",
+     "name": "Captree",
+     "ownership": "NYS OPR",
+     "ownershipType": "State",
+     "source": "NYS Office of Parks, Recreation & Historic Preservation",
+     "sourceDate": "2013",
+     "state": "NY",
+     "town": " "
+    }
+   ],
+   "service": "FIIS_Boat_Launches",
+   "typef": "launchType",
+   "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/FIIS_Boat_Launches/FeatureServer/0"
+  },
+  {
+   "agency": "",
+   "area": "Name",
+   "count": 6,
+   "fields": [
+    "Name",
+    "Label",
+    "Park_Area",
+    "State"
+   ],
+   "known": false,
+   "layer": "HAFE Climbing Parking",
+   "sample": [
+    {
+     "Label": "Lock 34 Parking (C&O Canal NHP)",
+     "Name": "Lock 34 Parking Area (C&O Canal NHP)",
+     "Park_Area": "C&O Canal NHP",
+     "State": "Maryland"
+    },
+    {
+     "Label": "Pleasantville Parking",
+     "Name": "Pleasantville Parking Area",
+     "Park_Area": "C&O Canal NHP",
+     "State": "Maryland"
+    },
+    {
+     "Label": "Fisherman Lot",
+     "Name": "Fisherman Lot",
+     "Park_Area": "Virginius Island",
+     "State": "West Virginia"
+    }
+   ],
+   "service": "HAFE_Climbing_Parking_Public",
+   "typef": "",
+   "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/HAFE_Climbing_Parking_Public/FeatureServer/0"
+  },
+  {
+   "agency": "",
+   "area": "UNITNAME",
+   "count": 3,
+   "fields": [
+    "POINAME",
+    "POITYPE",
+    "POILABEL",
+    "POIFEATTYPE",
+    "ISEXTANT",
+    "XYACCURACY",
+    "MAPMETHOD",
+    "MAPSOURCE",
+    "SOURCESCALE",
+    "PUBLICDISPLAY",
+    "DATAACCESS",
+    "UNITCODE",
+    "UNITNAME",
+    "REGIONCODE",
+    "LOCATIONID",
+    "ASSETID",
+    "FEATUREID",
+    "GEOMETRYID",
+    "CREATEUSER",
+    "EDITUSER"
+   ],
+   "known": false,
+   "layer": "GRTE_FACILITY_Entrance Station",
+   "sample": [
+    {
+     "DATAACCESS": "Unrestricted",
+     "ISEXTANT": "True",
+     "POIFEATTYPE": "Vicinity point",
+     "POILABEL": "Granite Canyon Entrance Station",
+     "POINAME": "Granite Canyon Entrance Station",
+     "POITYPE": "Entrance Station",
+     "PUBLICDISPLAY": "Public Map Display",
+     "UNITCODE": "GRTE"
+    },
+    {
+     "DATAACCESS": "Unrestricted",
+     "ISEXTANT": "True",
+     "POIFEATTYPE": "Vicinity point",
+     "POILABEL": "Moose Entrance Station",
+     "POINAME": "Moose Entrance Station",
+     "POITYPE": "Entrance Station",
+     "PUBLICDISPLAY": "Public Map Display",
+     "UNITCODE": "GRTE"
+    },
+    {
+     "DATAACCESS": "Unrestricted",
+     "MAPMETHOD": "Digitized",
+     "MAPSOURCE": "NPS Tile Standard",
+     "POIFEATTYPE": "Center point",
+     "POINAME": "Moran Entrance Station",
+     "POITYPE": "Entrance Station",
+     "PUBLICDISPLAY": "Public Map Display",
+     "SOURCESCALE": "1:500",
+     "UNITCODE": "GRTE",
+     "XYACCURACY": ">=5m and <14m"
+    }
+   ],
+   "service": "GRTE_FACILITY_EntranceStation_1",
+   "typef": "POITYPE",
+   "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/GRTE_FACILITY_EntranceStation_1/FeatureServer/0"
+  },
+  {
+   "agency": "NPS",
+   "area": "CampSite",
+   "count": 2,
+   "fields": [
+    "Campground",
+    "CampSite",
+    "Type"
+   ],
+   "known": false,
+   "layer": "Everglades National Park Campgrounds",
+   "sample": [
+    {
+     "CampSite": " ",
+     "Campground": "Long Pine Key Campground",
+     "Type": "Group campground"
+    },
+    {
+     "CampSite": " ",
+     "Campground": "Flamingo Campground",
+     "Type": "Multi type"
+    }
+   ],
+   "service": "EVER_CUL_Campgrounds",
+   "typef": "Type",
+   "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/EVER_CUL_Campgrounds/FeatureServer/0"
+  },
+  {
+   "agency": "",
+   "area": "Name",
+   "count": 2,
+   "fields": [
+    "Name",
+    "Label",
+    "Park_Area",
+    "State"
+   ],
+   "known": false,
+   "layer": "HAFE Climbing Access Points",
+   "sample": [
+    {
+     "Label": "Rd Access to B-Slab",
+     "Name": "05 Rd Access to B-Slab",
+     "Park_Area": "Maryland Heights",
+     "State": "Maryland"
+    },
+    {
+     "Label": "Maryland Heights Trailhead",
+     "Name": "Maryland Heights Trailhead",
+     "Park_Area": "Maryland Heights",
+     "State": "Maryland"
+    }
+   ],
+   "service": "HAFE_Climbing_Access_Points_Public",
+   "typef": "",
+   "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/HAFE_Climbing_Access_Points_Public/FeatureServer/0"
+  },
+  {
+   "agency": "Alaska Department of Natural Resources",
+   "area": "PARK_NAME",
+   "count": 87,
+   "fields": [
+    "REGION",
+    "URL",
+    "PARK_NAME",
+    "NAME",
+    "PARKTYPEAB",
+    "FACILITYNM",
+    "CRDNTS",
+    "FCLTYTYPE"
+   ],
+   "known": true,
    "layer": "ASP Park Facility",
    "sample": [
     {

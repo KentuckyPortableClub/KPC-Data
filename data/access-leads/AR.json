@@ -1,58 +1,6 @@
 {
- "checked": "2026-10-26",
+ "checked": "2026-10-28",
  "leads": [
-  {
-   "agency": "",
-   "area": "wma_name",
-   "count": 1062,
-   "fields": [
-    "agfc_id",
-    "official_name",
-    "short_name",
-    "feature_category",
-    "feature_group",
-    "feature_type",
-    "feature_subtype",
-    "primary_use",
-    "public_access",
-    "fee_status",
-    "op_status",
-    "construction_material",
-    "accessibility_standard",
-    "historic_status",
-    "owner",
-    "aasis_id",
-    "cost_center",
-    "project_number",
-    "wma_id",
-    "wma_name"
-   ],
-   "known": false,
-   "layer": "Site Features",
-   "sample": [
-    {
-     "feature_subtype": "Concrete",
-     "feature_type": "Boating Access",
-     "official_name": "Caney Creek Boat Ramp",
-     "short_name": "Caney Creek "
-    },
-    {
-     "feature_subtype": "Stationary",
-     "feature_type": "Courtesy Dock",
-     "official_name": "Lake Conway - Adams Lake Landing Courtesy Dock",
-     "short_name": "Lake Conway Courtesy Dock"
-    },
-    {
-     "feature_subtype": "Dirt",
-     "feature_type": "Boating Access",
-     "official_name": "Harris Brake GTR Boating Access",
-     "short_name": "Harris Brake GTR Access"
-    }
-   ],
-   "service": "AGFC_Water_Access",
-   "typef": "feature_category",
-   "url": "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/AGFC_Water_Access/FeatureServer/0"
-  },
   {
    "agency": "",
    "area": "",
@@ -174,6 +122,58 @@
    "service": "2026_ARWRice_Parking_-_Public_View",
    "typef": "",
    "url": "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/2026_ARWRice_Parking_-_Public_View/FeatureServer/0"
+  },
+  {
+   "agency": "",
+   "area": "wma_name",
+   "count": 1062,
+   "fields": [
+    "agfc_id",
+    "official_name",
+    "short_name",
+    "feature_category",
+    "feature_group",
+    "feature_type",
+    "feature_subtype",
+    "primary_use",
+    "public_access",
+    "fee_status",
+    "op_status",
+    "construction_material",
+    "accessibility_standard",
+    "historic_status",
+    "owner",
+    "aasis_id",
+    "cost_center",
+    "project_number",
+    "wma_id",
+    "wma_name"
+   ],
+   "known": true,
+   "layer": "Site Features",
+   "sample": [
+    {
+     "feature_subtype": "Concrete",
+     "feature_type": "Boating Access",
+     "official_name": "Caney Creek Boat Ramp",
+     "short_name": "Caney Creek "
+    },
+    {
+     "feature_subtype": "Stationary",
+     "feature_type": "Courtesy Dock",
+     "official_name": "Lake Conway - Adams Lake Landing Courtesy Dock",
+     "short_name": "Lake Conway Courtesy Dock"
+    },
+    {
+     "feature_subtype": "Dirt",
+     "feature_type": "Boating Access",
+     "official_name": "Harris Brake GTR Boating Access",
+     "short_name": "Harris Brake GTR Access"
+    }
+   ],
+   "service": "AGFC_Water_Access",
+   "typef": "feature_category",
+   "url": "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/AGFC_Water_Access/FeatureServer/0"
   }
  ],
  "st": "AR"
