@@ -1,17 +1,46 @@
 # Hours, fees & permits bot: review (facts only; nothing here reaches a card until Brandon's GO)
 
-Updated 2026-10-28. Every line is the agency's own sentence (H2). Refresh every 90 days.
+Updated 2026-10-28. Every line is the agency's own sentence (H2). Refresh every 0 days.
 
 | area | parks | hours | fees | permits | nothing found | no page |
 |---|---|---|---|---|---|---|
-| US-KY | 193 | 2 | 2 | 1 | 0 | 0 |
+| US-KY | 193 | 21 | 5 | 10 | 165 | 0 |
 
 ## US-KY: 12-park sample for chat 8
 
+- **US-0295 Clarks River National Wildlife Refuge**
+  - Hours: “The Refuge is open during daylight hours.” · [www.fws.gov](https://www.fws.gov/refuge/clarks-river/visit-us)
+  - Hours: “Monday - Friday (Closed on all Federal Holidays)” · [www.fws.gov](https://www.fws.gov/refuge/clarks-river/visit-us)
+  - Office hours: “The office is open Monday – Friday from 7:30 am until 4:00 pm.” · [www.fws.gov](https://www.fws.gov/refuge/clarks-river/visit-us)
+  - Hunting hours: “The Refuge is only open to the public from sunrise to sunset, with the exception of permitted hunting seasons.” · [www.fws.gov](https://www.fws.gov/refuge/clarks-river/visit-us)
+  - Hunting hours: “The mosaic of habitats include bottomland hardwood forest, open water, seasonal and permanent wetlands, uplands, grasslands, and croplands.” · [www.fws.gov](https://www.fws.gov/refuge/clarks-river)
+- **US-0538 Reelfoot National Wildlife Refuge**
+  - Hours: “Monday - Saturday (Closed on all Federal Holidays)” · [www.fws.gov](https://www.fws.gov/refuge/reelfoot/visit-us)
+- **US-0608 Ohio River Islands National Wildlife Refuge**
+  - Hours: “Any activity on refuge property after hours (an hour after sunset to an hour before sunrise)” · [www.fws.gov](https://www.fws.gov/refuge/ohio-river-islands/visit-us/rules-policies)
+- **US-0686 Big South Fork National Recreation Area**
+  - Permit: “This Section, however, requires that a list of activities needing a permit (and a fee schedule for the various types of permits) be maintained by the park.” · [www.nps.gov](https://www.nps.gov/biso/learn/management/lawsandpolicies.htm)
+- **US-10098 Green River National Wildlife Refuge**
+  - Hours: “Day use From legal sunrise to legal sunset.” · [www.fws.gov](https://www.fws.gov/refuge/green-river/visit-us)
+  - Hunting hours: “Some areas/trails may only be open seasonally.” · [www.fws.gov](https://www.fws.gov/refuge/green-river/visit-us)
 - **US-10099 Wolf Creek National Fish Hatchery**
   - Hours: “8:00 am - 4:00 pm” · [www.fws.gov](https://www.fws.gov/locations/wolf-creek-national-fish-hatchery)
   - Fees: “There is no fee to visit Wolf Creek National Fish Hatchery.” · [www.fws.gov](https://www.fws.gov/locations/wolf-creek-national-fish-hatchery)
   - Permit: “a Kentucky fishing license and trout permit are required for individuals 16 years old and over to fish at Hatchery Creek.” · [www.fws.gov](https://www.fws.gov/locations/wolf-creek-national-fish-hatchery)
+- **US-10173 Kentucky Horse Park**
+  - Hours: “10 AM – 4 PM” · [kyhorsepark.com](https://kyhorsepark.com/park-information/hours-admission/)
+  - Hours: “The campground is open year round.” · [www.kyhorsepark.com](https://www.kyhorsepark.com/)
+  - Hunting hours: “Based on host availability, we are able to shuttle campers during the summer season from the campground store to the Visitor Information Center from the hours of 9 am to 5 pm daily.” · [www.kyhorsepark.com](https://www.kyhorsepark.com/)
+  - Attraction fee: “Kentucky Horse Park (at the Man o’ War Memorial) – FREE Entry!” · [www.kyhorsepark.com](https://www.kyhorsepark.com/)
+- **US-1251 Carr Creek State Park**
+  - Hours: “Sunday gate closes at 11:00 pm Wednesday thru.” · [kentuckystateparks.reserveamerica.com](https://kentuckystateparks.reserveamerica.com/camping/carr-creek-state-park/r/campgroundDetails.do?contractCode=KY&parkId=91833)
+- **US-1254 E.P. 'Tom' Sawyer State Park**
+  - Hours: “Park closes daily at 10 pm.” · [kentuckystateparks.reserveamerica.com](https://kentuckystateparks.reserveamerica.com/camping/ep-tom-sawyer-state-park/r/campgroundDetails.do?contractCode=KY&parkId=93600)
+  - Hours: “Trails and some access points are subject to close daily at dusk.” · [kentuckystateparks.reserveamerica.com](https://kentuckystateparks.reserveamerica.com/camping/ep-tom-sawyer-state-park/r/campgroundDetails.do?contractCode=KY&parkId=93600)
+- **US-12971 Bat Cave State Nature Preserve**
+  - Hours: “the hiking trails on the portion of the preserve which is above ground are open year round.” · [eec.ky.gov](https://eec.ky.gov/Nature-Preserves/Locations/Pages/Carter-Caves.aspx)
+- **US-12972 Cascade Caverns State Nature Preserve**
+  - Hours: “the hiking trails on the portion of the preserve which is above ground are open year round.” · [eec.ky.gov](https://eec.ky.gov/Nature-Preserves/Locations/Pages/Carter-Caves.aspx)
 - **US-3781 Breaks Interstate State Park**
   - Hours: “Monday: 9am-8pm” · [www.breakspark.com](https://www.breakspark.com/breaksparkinfo)
   - Hours: “Tuesday: 9am-8pm” · [www.breakspark.com](https://www.breakspark.com/breaksparkinfo)
@@ -19,4 +48,4 @@ Updated 2026-10-28. Every line is the agency's own sentence (H2). Refresh every 
 
 ## Kentucky test gate (H4)
 
-- 2026-10-28: **FAIL** · hours rows 0/2 opened (0%; 2 in the key); Otter Creek Wed–Sun MISS; Buckley $8 MISS (US-3802); Peabody permit MISS; US-3781 MISS, US-1251 no page opened, US-1254 no page opened, US-7950 no page opened, US-7708 no page opened, US-7966 no page opened, US-7956 no page opened, US-7954 no page opened, US-7967 no page opened, US-7965 no page opened, US-7960 no page opened, US-7968 no page opened, US-7957 no page opened, US-7961 no page opened, US-7958 no page opened, US-7953 no page opened, US-7963 no page opened, US-7959 no page opened, US-7951 no page opened, US-4690 no page opened, US-3779 no page opened, US-3783 no page opened, US-3784 no page opened, US-3785 no page opened, US-10172 no page opened, US-3788 no page opened, US-11181 no page opened, US-13598 no page opened, US-13607 no page opened, US-13606 no page opened, US-13600 no page opened, US-3802 no page opened, US-13601 no page ope
+- 2026-10-28: **FAIL** · hours rows 9/38 opened (24%; 38 in the key); Otter Creek Wed–Sun MISS; Buckley $8 ok (US-3802); Peabody permit ok; US-3781 MISS, US-1251 ok, US-1254 ok, US-7950 ok, US-7708 ok, US-7966 MISS, US-7956 MISS, US-7954 ok, US-7967 ok, US-7965 MISS, US-7960 MISS, US-7968 MISS, US-7957 MISS, US-7961 MISS, US-7958 ok, US-7953 MISS, US-7963 MISS, US-7959 MISS, US-7951 MISS, US-4690 MISS, US-3779 MISS, US-3783 MISS, US-3784 MISS, US-3785 MISS, US-10172 MISS, US-3788 MISS, US-11181 MISS, US-13598 MISS, US-13607 MISS, US-13606 MISS, US-13600 MISS, US-3802 ok, US-13601 MISS, US-10173 ok, US-13599 MISS, US-3792 MISS, US-8144 MISS, US-10099 MISS
