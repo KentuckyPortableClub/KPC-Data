@@ -2,11 +2,11 @@
  "about": "KPC bot status board: per bot the last run, green / red, what it made, what is waiting on whom. Written by kpc_status.py from each workflow; a members-only page reads it later.",
  "bots": {
   "campground info bot": {
-   "areas": "left: 64",
+   "areas": "left: 63",
    "last_run": "2026-10-28",
-   "made": "US-KY: partial; {\"camps\": 103, \"needs_browser\": 42, \"needs_key\": 0, \"no_page\": 0, \"not_official\": 0, \"ok\": 23, \"other\": 0, \"resting\": 0, \"robots\": 38, \"with_booking\": 49, \"with_elevation\": 83, \"with_sites\": 8}",
+   "made": "US-KY: failed; {\"camps\": 103, \"needs_browser\": 42, \"needs_key\": 38, \"no_page\": 0, \"not_official\": 0, \"ok\": 23, \"other\": 0, \"resting\": 0, \"robots\": 0, \"with_booking\": 49, \"with_elevation\": 83, \"with_sites\": 8}",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/40703020711",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/40693435527",
    "waiting_on": "chat 8 grades the sample; Brandon GO before any card"
   },
   "closures super-bot": {
@@ -22,7 +22,7 @@
    "last_run": "2026-10-28",
    "made": "US-KY: failed; {\"fees\": 5, \"hours\": 21, \"no_page\": 0, \"nothing\": 165, \"parks\": 193, \"permits\": 10}",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/40703020711",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/40693435527",
    "waiting_on": "chat 8 grades the sample; Brandon GO before any card"
   },
   "layer intake": {
@@ -32,6 +32,14 @@
    "result": "green",
    "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/40702061747",
    "waiting_on": "chat 9 (approve READY rows)"
+  },
+  "official documents bot": {
+   "areas": "",
+   "last_run": "2026-10-28",
+   "made": "chunk 1 saved",
+   "result": "green",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/40703708847",
+   "waiting_on": "chat 8 grades review.md samples"
   },
   "park detective": {
    "areas": "left: 63",
@@ -44,9 +52,9 @@
   "park truth checker": {
    "areas": "left: 63",
    "last_run": "2026-10-28",
-   "made": "US-KY: done; {\"agree\": 99, \"handover_hints\": 7, \"no_page\": 0, \"no_size\": 73, \"off\": 8, \"ours_unknown\": 0, \"parks\": 193, \"retired\": 0, \"unsure\": 9, \"weak\": 29, \"with_outline\": 189}",
+   "made": "US-KY: failed; {\"agree\": 99, \"handover_hints\": 7, \"no_page\": 0, \"no_size\": 73, \"off\": 7, \"ours_unknown\": 0, \"parks\": 193, \"retired\": 0, \"unsure\": 10, \"weak\": 28, \"with_outline\": 189}",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/40703020711",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/40693435527",
    "waiting_on": "chat 8 grades the sample; Brandon GO before any card"
   }
  },
