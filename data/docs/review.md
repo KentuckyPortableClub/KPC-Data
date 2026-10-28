@@ -13,7 +13,9 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-GA | 237 | 105 | 71 | 91 | 12 | 38 | 55 | 132 | 170 | 62 | 0 |
 | US-AL | 155 | 79 | 64 | 40 | 8 | 21 | 50 | 76 | 55 | 5 | 0 |
 | US-SC | 167 | 24 | 13 | 21 | 2 | 11 | 11 | 142 | 67 | 0 | 0 |
-| US-FL | 460 | 237 | 222 | 90 | 22 | 144 | 71 | 221 | 116 | 31 | 0 |
+| US-FL | 460 | 160 | 147 | 135 | 22 | 110 | 28 | 297 | 116 | 3 | 0 |
+| US-MS | 155 | 33 | 26 | 20 | 0 | 19 | 14 | 121 | 45 | 92 | 0 |
+| US-IN | 220 | 17 | 14 | 17 | 1 | 5 | 11 | 155 | 39 | 3 | 0 |
 | US-MO | 561 | 524 | 503 | 425 | 238 | 206 | 80 | 37 | 520 | 9 | 1 |
 
 ## US-KY sample (random 12 per agency group, seed 28)
@@ -768,106 +770,86 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 ## US-FL sample (random 12 per agency group, seed 28)
 | ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
 |---|---|---|---|---|---|---|
-| US-5330 | Green Swamp Wilderness Park Reserve | https://www.swfwmd.state.fl.us/sites/default/files/Green%20Swamp%20East%20Georeferenced%20 | pdf · the agency site | — (date unknown, checked 2026-10-28) · posted 2022 |  ✗ |  |
-| US-5513 | Halpata Tatanaki Preserve State Conserva | https://www.swfwmd.state.fl.us/sites/default/files/H%C3%A1lpata%20Tastanaki%20Preserve%20G | pdf · the agency site | — (date unknown, checked 2026-10-28) · posted 2022 |  ✗ |  |
-| US-5520 | Chassahowitzka River and Coastal Swamp S | https://www.swfwmd.state.fl.us/sites/default/files/Chassahowitzka%20River%20And%20Coastal% | pdf · the agency site | — (date unknown, checked 2026-10-28) · posted Mar 26, 2024 |  ✗ | is operated by Citrus County Parks |
-| US-5624 | Jack Creek State Conservation Area | https://www.swfwmd.state.fl.us/sites/default/files/Annutteliga%20Hammock%20Revised%2002-19 | pdf · the agency site | — (date unknown, checked 2026-10-28) · posted Mar 06, 2026 |  ✗ |  |
-| US-5250 | Annutteliga Hammock State Conservation A | https://www.swfwmd.state.fl.us/sites/default/files/recreation/maps/annuteligahammock.pdf | pdf ✓name · the agency site | 2016-11-28 (the PDF file's own stamp (may be the print da) · posted Feb 12, 2021 |  ✗ |  |
-| US-6639 | Potts Preserve State Conservation Area | https://www.swfwmd.state.fl.us/sites/default/files/Potts%20Preserve%20Georeferenced%2012-0 | pdf · the agency site | — (date unknown, checked 2026-10-28) · posted 2023 |  ✗ |  |
-| US-7155 | Upper Hillsborough Preserve State Conser | https://www.swfwmd.state.fl.us/sites/default/files/Upper%20Hillsborough%20Preserve%2002-24 | pdf · the agency site | — (date unknown, checked 2026-10-28) · posted 2026 |  ✗ |  |
-| US-5524 | Chito Branch Reserve State Conservation  | https://www.swfwmd.state.fl.us/sites/default/files/recreation/maps/chito_branch_reserve.pd | pdf ✓name · the agency site | 2016-11-28 (the PDF file's own stamp (may be the print da) · posted Feb 12, 2021 |  ✗ |  |
-| US-7475 | Starkey Wilderness/Serenova Preserve Sta | https://www.swfwmd.state.fl.us/sites/default/files/Annutteliga%20Hammock%20Revised%2002-19 | pdf · the agency site | — (date unknown, checked 2026-10-28) · posted Mar 06, 2026 |  ✗ | managed by Pasco County |
-| US-6700 | Sawgrass Lake Park State Conservation Ar | https://www.swfwmd.state.fl.us/sites/default/files/recreation/maps/sawgrass.pdf | pdf ✓name · the agency site | — (date unknown, checked 2026-10-28) · posted Feb 12, 2021 |  ✗ |  |
-| US-6744 | Terra Ceia Preserve Frog Creek State Con | https://www.swfwmd.state.fl.us/sites/default/files/recreation/maps/terra_ceia_preserve_fro | pdf ✓name · the agency site | 2016-11-28 (the PDF file's own stamp (may be the print da) · posted Feb 12, 2021 |  ✗ |  |
-| US-6656 | Prairie/Shell Creek State Conservation A | https://www.swfwmd.state.fl.us/sites/default/files/Prairie-Shell%20Creek%20Georeferenced%2 | pdf · the agency site | — (date unknown, checked 2026-10-28) · posted 2022 |  ✗ |  |
-| US-3627 | General James A. Van Fleet State Trail | https://floridadep.gov/sites/default/files/VanFleetStateTrail.pdf | pdf · same government (floridadep.gov) | — (date unknown, checked 2026-10-28) · posted Oct 31, 2025 | https://www.floridastateparks.org/learn/rules-regulations ✗ |  |
-| US-1873 | Fred Gannon Rocky Bayou State Park | https://www.floridastateparks.org/sites/default/files/media/file/fgr-brochure.pdf | pdf · the agency site | — (date unknown, checked 2026-10-28) · posted Jun 24, 2025 | https://www.floridastateparks.org/learn/rules-regulations ✗ |  |
-| US-3633 | Koreshan State Historic Site | https://www.floridastateparks.org/sites/default/files/media/file/FINAL-Koreshan-HandheldMa | pdf · the agency site | — (date unknown, checked 2026-10-28) · posted Jun 24, 2025 | https://www.floridastateparks.org/learn/rules-regulations ✗ |  |
-| US-3617 | Estero Bay Preserve State Park | https://www.floridastateparks.org/sites/default/files/media/file/est-brochure.pdf | pdf · the agency site | — (date unknown, checked 2026-10-28) · posted Jun 24, 2025 | https://www.floridastateparks.org/learn/rules-regulations ✗ |  |
-| US-0231 | Archie Carr National Wildlife Refuge | https://www.fws.gov/refuge/archie-carr/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/archie-carr/visit-us/rules-policies ✓ |  |
+| US-5250 | Annutteliga Hammock State Conservation A | https://www.swfwmd.state.fl.us/sites/default/files/recreation/maps/annuteligahammock.pdf | pdf ✓name · combined map: covers 3 units · the agency site | 2016: check it is still current (file stamp 2016 (older than the posting 2021 ) · posted Feb 12, 2021 |  ✗ |  |
+| US-5524 | Chito Branch Reserve State Conservation  | https://www.swfwmd.state.fl.us/sites/default/files/recreation/maps/chito_branch_reserve.pd | pdf ✓name · combined map: covers 2 units · the agency site | 2016: check it is still current (file stamp 2016 (older than the posting 2021 ) · posted Feb 12, 2021 |  ✗ |  |
+| US-7389 | Cypress Creek Preserve State Conservatio | https://www.swfwmd.state.fl.us/recreation/recreation-maps | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
+| US-7475 | Starkey Wilderness/Serenova Preserve Sta | https://www.swfwmd.state.fl.us/recreation/recreation-maps | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ | managed by Pasco County |
+| US-6700 | Sawgrass Lake Park State Conservation Ar | https://www.swfwmd.state.fl.us/sites/default/files/recreation/maps/sawgrass.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted Feb 12, 2021 |  ✗ |  |
+| US-6744 | Terra Ceia Preserve Frog Creek State Con | https://www.swfwmd.state.fl.us/sites/default/files/recreation/maps/terra_ceia_preserve_fro | pdf ✓name · combined map: covers 2 units · the agency site | 2016: check it is still current (file stamp 2016 (older than the posting 2021 ) · posted Feb 12, 2021 |  ✗ |  |
 | US-0247 | Lower Suwannee National Wildlife Refuge | https://www.fws.gov/refuge/lower-suwannee/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/policies ✓ |  |
-| US-0239 | Florida Panther National Wildlife Refuge | https://www.fws.gov/refuge/florida-panther/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/florida-panther/visit-us/rules-policies ✓ |  |
-| US-0234 | Cedar Keys National Wildlife Refuge | https://www.fws.gov/sites/default/files/documents/public_use-map-cedar-key-nwr.pdf | pdf ✓name · combined map: covers 2 units · the agency site | date unknown (date unknown, checked 2026-10-28) · posted Feb 13, 2022 | https://www.fws.gov/refuge/cedar-keys/visit-us/rules-policies ✓ |  |
-| US-0235 | Chassahowitzka National Wildlife Refuge | https://www.fws.gov/refuge/chassahowitzka/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/chassahowitzka/visit-us/rules-policies ✓ |  |
+| US-0238 | Egmont Key National Wildlife Refuge | https://www.fws.gov/refuge/egmont-key/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/egmont-key/visit-us/rules-policies ✓ | managed by the U.S. Fish and Wildlife Service |
 | US-0896 | Wekiva National Wild and Scenic River | https://www.fws.gov/rivers/map | page ✓name · linked from the agency page (fws.gov) | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
-| US-0243 | J.N. Ding Darling National Wildlife Refu | https://www.fws.gov/refuge/jn-ding-darling/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/jn-ding-darling/visit-us/rules-policies ✓ |  |
-| US-0244 | Key West National Wildlife Refuge | https://www.fws.gov/refuge/key-west/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/key-west/visit-us/rules-policies ✓ | managed by the State of Florida |
-| US-0252 | Pelican Island National Wildlife Refuge | https://www.fws.gov/refuge/pelican-island/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/pelican-island/visit-us/rules-policies ✓ |  |
-| US-0257 | St. Vincent National Wildlife Refuge | https://www.fws.gov/refuge/st-vincent/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/policies ✓ |  |
+| US-0236 | Crocodile Lake National Wildlife Refuge | https://www.fws.gov/refuge/crocodile-lake/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/policies ✓ |  |
 | US-0246 | Lake Woodruff National Wildlife Refuge | https://www.fws.gov/refuge/lake-woodruff/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/lake-woodruff/visit-us/rules-policies ✓ |  |
-| US-0240 | Great White Heron National Wildlife Refu | https://www.fws.gov/refuge/great-white-heron/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/policies ✓ | managed by the State of Florida |
+| US-0237 | Crystal River National Wildlife Refuge | https://www.fws.gov/refuge/crystal-river/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/crystal-river/visit-us/rules-policies ✓ |  |
+| US-0257 | St. Vincent National Wildlife Refuge | https://www.fws.gov/refuge/st-vincent/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/policies ✓ |  |
+| US-0241 | Hobe Sound National Wildlife Refuge | https://www.fws.gov/refuge/nathaniel-p-reed-hobe-sound/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/nathaniel-p-reed-hobe-sound/visit-us/rules- ✓ |  |
+| US-0235 | Chassahowitzka National Wildlife Refuge | https://www.fws.gov/refuge/chassahowitzka/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/chassahowitzka/visit-us/rules-policies ✓ |  |
+| US-6281 | Loxahatchee River National Wild and Scen | https://www.fws.gov/rivers/map | page ✓name · linked from the agency page (fws.gov) | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
+| US-0231 | Archie Carr National Wildlife Refuge | https://www.fws.gov/refuge/archie-carr/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/archie-carr/visit-us/rules-policies ✓ |  |
+| US-0258 | Ten Thousand Islands National Wildlife R | https://www.fws.gov/refuge/ten-thousand-islands/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/ten-thousand-islands/visit-us/rules-policie ✓ |  |
 | US-1915 | Silver Springs State Park | https://www.google.com/maps/place/Silver+Springs+State+Park/@29.2164391,-82.0569528,15z/da | page · off the government, not linked by the ag | — (date unknown, checked 2026-10-28) · posted — | https://silversprings.com/park-rules/ ✓ |  |
-| US-6322 | Salt Lake Wildlife Management Area | https://gis.myfwc.com/RecreationMap/ | page · same government (gis.myfwc.com) | — (date unknown, checked 2026-10-28) · posted — | https://myfwc.com/about/rules-regulations/ ✓ |  |
-| US-6297 | Chinsegut Wildlife Area | https://gis.myfwc.com/RecreationMap/ | page · same government (gis.myfwc.com) | — (date unknown, checked 2026-10-28) · posted — | https://myfwc.com/about/rules-regulations/ ✓ |  |
-| US-6326 | T.M. Goodwin Wildlife Management Area | https://gis.myfwc.com/RecreationMap/ | page · same government (gis.myfwc.com) | — (date unknown, checked 2026-10-28) · posted — | https://myfwc.com/about/rules-regulations/ ✓ |  |
-| US-6311 | J. W. Corbett Wildlife Management Area | https://gis.myfwc.com/RecreationMap/ | page · same government (gis.myfwc.com) | — (date unknown, checked 2026-10-28) · posted — | https://myfwc.com/about/rules-regulations/ ✓ |  |
-| US-6291 | Fred C. Babcock/Cecil M. Webb Wildlife M | https://myfwc.com/media/26670/babcockwebb-trailmap.pdf | pdf · the agency site | — (date unknown, checked 2026-10-28) · posted Feb 23, 2022 | https://myfwc.com/about/rules-regulations/ ✓ |  |
-| US-6295 | Caravelle Ranch Wildlife Management Area | https://gis.myfwc.com/RecreationMap/ | page · same government (gis.myfwc.com) | — (date unknown, checked 2026-10-28) · posted — | https://myfwc.com/about/rules-regulations/ ✓ |  |
-| US-4633 | Okaloacoochee Slough State Forest | https://gis.myfwc.com/RecreationMap/ | page · same government (gis.myfwc.com) | — (date unknown, checked 2026-10-28) · posted — | https://myfwc.com/about/rules-regulations/ ✓ |  |
-| US-6301 | Everglades and Francis S. Taylor Wildlif | https://gis.myfwc.com/RecreationMap/ | page · same government (gis.myfwc.com) | — (date unknown, checked 2026-10-28) · posted — | https://myfwc.com/about/rules-regulations/ ✓ |  |
-| US-6323 | Spirit-of-the-Wild Wildlife Management A | https://gis.myfwc.com/RecreationMap/ | page · same government (gis.myfwc.com) | — (date unknown, checked 2026-10-28) · posted — | https://myfwc.com/about/rules-regulations/ ✓ |  |
-| US-6299 | Dinner Island Ranch Wildlife Management  | https://gis.myfwc.com/RecreationMap/ | page · same government (gis.myfwc.com) | — (date unknown, checked 2026-10-28) · posted — | https://myfwc.com/about/rules-regulations/ ✓ |  |
-| US-6288 | Apalachicola River Wildlife Area | https://gis.myfwc.com/RecreationMap/ | page · same government (gis.myfwc.com) | — (date unknown, checked 2026-10-28) · posted — | https://myfwc.com/about/rules-regulations/ ✓ |  |
-| US-6316 | Little Gator Creek Wildlife Area | https://gis.myfwc.com/RecreationMap/ | page · same government (gis.myfwc.com) | — (date unknown, checked 2026-10-28) · posted — | https://myfwc.com/about/rules-regulations/ ✓ |  |
-| US-8682 | Allardt State Conservation Area | https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Allardt.jpg | image · the agency site | — (date unknown, checked 2026-10-28) · posted 2021-09 |  ✗ |  |
-| US-10593 | New Pine Landing State Conservation Area | https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Manatee-Springs-South-New-Pine- | image ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted 2021-09 |  ✗ |  |
-| US-8702 | Sneads Lake State Conservation Area | https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Sneads-Smokehouse-Lake.jpg | image · the agency site | — (date unknown, checked 2026-10-28) · posted 2021-09 |  ✗ |  |
-| US-10614 | Roline State Conservation Area | https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Roline.jpg | image ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted 2021-09 |  ✗ |  |
-| US-10618 | Wolf Creek State Conservation Area | https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Wolf-Creek.jpg | image ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted 2021-09 |  ✗ |  |
-| US-10616 | Tyree State Conservation Area | https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Osteen-Tyree-1-scaled.jpg | image ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted 2021-09 |  ✗ |  |
-| US-10554 | Suwannee Street State Conservation Area | https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Suwannee-Street.jpg | image ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted 2021-09 |  ✗ |  |
-| US-10552 | Fox Trail State Conservation Area | https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Fox-Trail.jpg | image ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted 2021-09 |  ✗ |  |
-| US-8674 | 47 Bridge State Conservation Area | https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/47-Bridge-01.jpg | image · the agency site | — (date unknown, checked 2026-10-28) · posted 2021-09 |  ✗ |  |
-| US-8696 | Purvis Landing, Otter Springs, Shingle L | https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Otter-Springs-Purvis-Landing-Sh | image · the agency site | — (date unknown, checked 2026-10-28) · posted 2021-09 |  ✗ |  |
-| US-8714 | Withlacoochee Quail Farms State Conserva | https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Withlacoochee-Quail-Farms-02-1. | image · the agency site | — (date unknown, checked 2026-10-28) · posted 2021-09 |  ✗ |  |
-| US-8700 | Santa Fe Swamp State Conservation Area | https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Santa-Fe-Swamp.jpg | image · the agency site | — (date unknown, checked 2026-10-28) · posted 2021-09 |  ✗ |  |
-| US-0912 | Castillo de San Marcos National Monument | https://www.nps.gov/casa/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted March 2, 2016 | https://www.nps.gov/casa/learn/management/lawsandpolicies.htm ✓ |  |
-| US-0661 | Gulf Islands National Seashore | https://www.nps.gov/guis/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted July 23, 2025 | https://www.nps.gov/guis/learn/management/lawsandpolicies.htm ✓ |  |
-| US-0024 | Everglades National Park | https://www.nps.gov/ever/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted June 5, 2018 | https://www.nps.gov/ever/learn/management/lawsandpolicies.htm ✓ |  |
+| US-6291 | Fred C. Babcock/Cecil M. Webb Wildlife M | https://myfwc.com/recreation/lead/babcockwebb/planning-your-visit/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rule ✓ |  |
+| US-6324 | Split Oak Forest Wildlife Area | https://myfwc.com/recreation/lead/split-oak-forest/planning-your-visit/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rule ✓ |  |
+| US-6309 | Hilochee Wildlife Management Area | https://myfwc.com/recreation/lead/hilochee/planning-your-visit/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rule ✓ |  |
+| US-8689 | Little Creek, McAlpin Landing State Cons | https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Little-Creek.jpg | image · the agency site | date unknown (date unknown, checked 2026-10-28) · posted 2021-09 |  ✗ |  |
+| US-10594 | Manatee Springs South State Conservation | https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Manatee-Springs-South-01-scaled | image ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted 2021-09 |  ✗ |  |
+| US-10615 | Cypress Creek South State Conservation A | https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Cypress-Creek-South-01.jpg | image ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted 2021-09 |  ✗ |  |
+| US-8707 | Sugar Creek State Conservation Area | https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Sugar-Creek.jpg | image ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted 2021-09 |  ✗ |  |
+| US-8709 | Turner Bridge State Conservation Area | https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Turner-Bridge.jpg | image ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted 2021-09 |  ✗ |  |
+| US-8680 | Bell Springs State Conservation Area | https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Bell-Springs-02.jpg | image ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted 2021-09 |  ✗ |  |
+| US-8681 | Falmouth Spring State Conservation Area | https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Falmouth-Springs-02.jpg | image · the agency site | date unknown (date unknown, checked 2026-10-28) · posted 2021-09 |  ✗ |  |
+| US-8693 | Mud Swamp State Conservation Area | https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Mud-Swamp-1.jpg | image ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted 2021-09 |  ✗ |  |
+| US-8695 | Peacock Slough State Conservation Area | https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Peacock-Slough-1.jpg | image ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted 2021-09 |  ✗ |  |
+| US-8691 | Mattair Springs State Conservation Area | https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Mattair-Springs-01.jpg | image ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted 2021-09 |  ✗ |  |
+| US-8701 | Shelly, Duck Pond, Hartsfield State Cons | https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Shelly.jpg | image · the agency site | date unknown (date unknown, checked 2026-10-28) · posted 2021-09 |  ✗ |  |
+| US-10601 | Suwannee Springs Park State Conservation | https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Suwannee-Springs.jpg | image ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted 2021-09 |  ✗ |  |
 | US-0659 | Big Cypress National Preserve | https://www.nps.gov/bicy/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted August 13, 2025 | https://www.nps.gov/bicy/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0912 | Castillo de San Marcos National Monument | https://www.nps.gov/casa/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted March 2, 2016 | https://www.nps.gov/casa/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0024 | Everglades National Park | https://www.nps.gov/ever/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted June 5, 2018 | https://www.nps.gov/ever/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0772 | De Soto National Memorial | https://www.nps.gov/deso/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted March 7, 2016 | https://www.nps.gov/deso/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0023 | Dry Tortugas National Park | https://www.nps.gov/drto/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted June 17, 2016 | https://www.nps.gov/drto/learn/management/lawsandpolicies.htm ✓ |  |
 | US-0658 | Timucuan Preserve National Conservation  | https://www.nps.gov/timu/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted November 18, 2021 | https://www.nps.gov/timu/learn/management/lawsandpolicies.htm ✓ |  |
 | US-0927 | Fort Matanzas National Monument | https://www.nps.gov/foma/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted March 7, 2016 | https://www.nps.gov/foma/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0661 | Gulf Islands National Seashore | https://www.nps.gov/guis/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted July 23, 2025 | https://www.nps.gov/guis/learn/management/lawsandpolicies.htm ✓ |  |
 | US-0660 | Canaveral National Seashore | https://www.nps.gov/cana/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted September 17, 2023 | https://www.nps.gov/cana/learn/management/lawsandpolicies.htm ✓ |  |
-| US-0023 | Dry Tortugas National Park | https://www.nps.gov/drto/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted June 17, 2016 | https://www.nps.gov/drto/learn/management/lawsandpolicies.htm ✓ |  |
-| US-0772 | De Soto National Memorial | https://www.nps.gov/deso/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted March 7, 2016 | https://www.nps.gov/deso/learn/management/lawsandpolicies.htm ✓ |  |
-| US-8328 | Chipola River Water Management Area | https://nwfwater.com/wp-content/uploads/2021/09/Chipola_River_Final-scaled.jpg | image · the agency site | — (date unknown, checked 2026-10-28) · posted 2021-09 | https://nwfwater.com/permits/rules-and-references/ ✓ |  |
-| US-8330 | Econfina Creek Water Management Area | https://nwfwater.com/wp-content/uploads/2021/09/Econfina_Creek_Final-scaled.jpg | image · the agency site | — (date unknown, checked 2026-10-28) · posted 2021-09 | https://nwfwater.com/permits/rules-and-references/ ✓ |  |
-| US-8333 | Garcon Point State Conservation Area | https://nwfwater.com/wp-content/uploads/2021/09/Garcon_Point_WMA_Map-scaled.jpg | image · the agency site | — (date unknown, checked 2026-10-28) · posted 2021-09 | https://nwfwater.com/permits/rules-and-references/ ✓ |  |
-| US-8334 | Perdido River State Conservation Area | https://nwfwater.com/wp-content/uploads/2021/09/Perdido_River-Final-scaled.jpg | image · the agency site | — (date unknown, checked 2026-10-28) · posted 2021-09 | https://nwfwater.com/permits/rules-and-references/ ✓ |  |
-| US-8327 | Blackwater River State Conservation Area | https://nwfwater.com/wp-content/uploads/2021/09/Blackwater_River_WMA_Map.jpg | image · the agency site | — (date unknown, checked 2026-10-28) · posted 2021-09 | https://nwfwater.com/permits/rules-and-references/ ✓ | owned by the District |
-| US-8329 | Choctawhatchee & Holmes Creek State Cons | https://nwfwater.com/lands/district-lands-map/ | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://nwfwater.com/permits/rules-and-references/ ✓ | managed by the Northwest Florida Water Management District |
-| US-8326 | Apalachicola River State Conservation Ar | https://nwfwater.com/wp-content/uploads/2021/09/Apalachicola_River_Final_z.jpg | image · the agency site | — (date unknown, checked 2026-10-28) · posted 2021-09 | https://nwfwater.com/permits/rules-and-references/ ✓ |  |
-| US-8335 | Yellow River Water Management Area | https://nwfwater.com/wp-content/uploads/2021/09/Yellow_River_FinalT-scaled.jpg | image · the agency site | — (date unknown, checked 2026-10-28) · posted 2021-09 | https://nwfwater.com/permits/rules-and-references/ ✓ |  |
-| US-8332 | Escambia River State Conservation Area | https://nwfwater.com/lands/district-lands-map/ | page · the agency site | — (date unknown, checked 2026-10-28) · posted — | https://nwfwater.com/permits/rules-and-references/ ✓ |  |
-| US-10462 | DuPuis State Conservation Area | https://www.sfwmd.gov/sites/default/files/DuPuis_WEA_Map.jpg | image ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted Apr 04, 2025 | https://www.sfwmd.gov/doing-business-with-us/rules ✓ | is managed by the Florida Fish and Wildlife Conservation Commission |
-| US-12129 | Shingle Creek State Conservation Area | https://www.sfwmd.gov/sites/default/files/Shingle_Creek_Map.jpg | image ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted Apr 03, 2025 | https://www.sfwmd.gov/doing-business-with-us/rules ✓ |  |
-| US-8719 | Horse Creek State Conservation Area | https://www.sfwmd.gov/sites/default/files/documents/Lake_Marion_Creek_Map.jpg | image · the agency site | — (date unknown, checked 2026-10-28) · posted Apr 09, 2025 | https://www.sfwmd.gov/doing-business-with-us/rules ✓ | is managed by the Florida Fish |
-| US-12134 | A-1 Flow Equalization Basin State Conser | https://www.sfwmd.gov/sites/default/files/A1_FEB_Map.jpg | image · the agency site | date unknown (date unknown, checked 2026-10-28) · posted Apr 04, 2025 | https://www.sfwmd.gov/doing-business-with-us/rules ✓ | is managed by the Florida Fish and Wildlife Conservation Commission |
-| US-12130 | Nubbin Slough Stormwater Treatment Area  | https://www.sfwmd.gov/sites/default/files/Nubbin_Map.jpg | image · the agency site | date unknown (date unknown, checked 2026-10-28) · posted Apr 07, 2025 | https://www.sfwmd.gov/doing-business-with-us/rules ✓ |  |
+| US-8330 | Econfina Creek Water Management Area | https://nwfwater.com/wp-content/uploads/2021/09/Econfina_Creek_Final-scaled.jpg | image ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted 2021-09 | https://nwfwater.com/permits/rules-and-references/ ✓ |  |
+| US-8333 | Garcon Point State Conservation Area | https://nwfwater.com/wp-content/uploads/2021/09/Garcon_Point_WMA_Map-scaled.jpg | image ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted 2021-09 | https://nwfwater.com/permits/rules-and-references/ ✓ |  |
+| US-8326 | Apalachicola River State Conservation Ar | https://nwfwater.com/wp-content/uploads/2021/09/Apalachicola_River_Final_z.jpg | image ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted 2021-09 | https://nwfwater.com/permits/rules-and-references/ ✓ |  |
+| US-8335 | Yellow River Water Management Area | https://nwfwater.com/wp-content/uploads/2021/09/Yellow_River_FinalT-scaled.jpg | image ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted 2021-09 | https://nwfwater.com/permits/rules-and-references/ ✓ |  |
+| US-8329 | Choctawhatchee & Holmes Creek State Cons | https://nwfwater.com/lands/recreation/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://nwfwater.com/permits/rules-and-references/ ✓ | managed by the Northwest Florida Water Management District |
+| US-8334 | Perdido River State Conservation Area | https://nwfwater.com/wp-content/uploads/2021/09/Perdido_River-Final-scaled.jpg | image ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted 2021-09 | https://nwfwater.com/permits/rules-and-references/ ✓ |  |
+| US-8328 | Chipola River Water Management Area | https://nwfwater.com/wp-content/uploads/2021/09/Chipola_River_Final-scaled.jpg | image ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted 2021-09 | https://nwfwater.com/permits/rules-and-references/ ✓ |  |
+| US-8327 | Blackwater River State Conservation Area | https://nwfwater.com/wp-content/uploads/2021/09/Blackwater_River_WMA_Map.jpg | image ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted 2021-09 | https://nwfwater.com/permits/rules-and-references/ ✓ |  |
 | US-12121 | Lower Reedy Creek: Rough Island North an | https://www.sfwmd.gov/sites/default/files/Rough_Island_and_Johnson_Island_Map.jpg | image · the agency site | date unknown (date unknown, checked 2026-10-28) · posted Apr 16, 2025 | https://www.sfwmd.gov/doing-business-with-us/rules ✓ | is managed by the Florida Fish and Wildlife Conservation Commission |
+| US-10462 | DuPuis State Conservation Area | https://www.sfwmd.gov/sites/default/files/DuPuis_WEA_Map.jpg | image ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted Apr 04, 2025 | https://www.sfwmd.gov/doing-business-with-us/rules ✓ | is managed by the Florida Fish and Wildlife Conservation Commission |
+| US-12130 | Nubbin Slough Stormwater Treatment Area  | https://www.sfwmd.gov/sites/default/files/Nubbin_Map.jpg | image · the agency site | date unknown (date unknown, checked 2026-10-28) · posted Apr 07, 2025 | https://www.sfwmd.gov/doing-business-with-us/rules ✓ |  |
 | US-12131 | Loxahatchee River/Cypress Creek Manageme | https://www.sfwmd.gov/sites/default/files/Loxahatchee_River_Cypress_Creek_Map.jpg | image ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted Apr 17, 2025 | https://www.sfwmd.gov/doing-business-with-us/rules ✓ |  |
+| US-12129 | Shingle Creek State Conservation Area | https://www.sfwmd.gov/sites/default/files/Shingle_Creek_Map.jpg | image ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted Apr 03, 2025 | https://www.sfwmd.gov/doing-business-with-us/rules ✓ |  |
 | US-12122 | S-65E Impoundment and Paradise Run State | https://www.sfwmd.gov/sites/default/files/Paradise_Run_S65E_Map.jpg | image · the agency site | date unknown (date unknown, checked 2026-10-28) · posted Apr 17, 2025 | https://www.sfwmd.gov/doing-business-with-us/rules ✓ | is managed by the Florida Fish and Wildlife Conservation Commission |
-| US-8718 | Lakeside Ranch State Conservation Area | https://www.sfwmd.gov/sites/default/files/Lakeside_Ranch_Map.jpg | image · the agency site | — (date unknown, checked 2026-10-28) · posted Apr 04, 2025 | https://www.sfwmd.gov/doing-business-with-us/rules ✓ |  |
 | US-12123 | Oak Creek, No Name Slough and Starvation | https://www.sfwmd.gov/sites/default/files/OakCreek_NoName_Starvation_Boney_Bluff_Map.jpg | image · the agency site | date unknown (date unknown, checked 2026-10-28) · posted Apr 17, 2025 | https://www.sfwmd.gov/doing-business-with-us/rules ✓ | is managed by the Florida Fish and Wildlife Conservation Commission |
-| US-12125 | Seaboard Marsh, Telex Marsh and Yates Ma | https://www.sfwmd.gov/sites/default/files/Chandler_Seaboard_Yates_Telex_S65_Map.jpg | image · the agency site | date unknown (date unknown, checked 2026-10-28) · posted Apr 17, 2025 | https://www.sfwmd.gov/doing-business-with-us/rules ✓ | is managed by the Florida Fish and Wildlife Conservation Commission |
 | US-12133 | Catfish Creek State Conservation Area | https://www.sfwmd.gov/sites/default/files/Catfish_Creek_Rolling_Meadows_Lake_Hatchineha_C- | image ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted Apr 16, 2025 | https://www.sfwmd.gov/doing-business-with-us/rules ✓ | is managed by the Florida Fish and Wildlife Conservation Commission |
-| US-8374 | Thomas Creek State Conservation Area | https://aws.sjrwmd.com/SJRWMD/lands/recreation/Thomas_Creek_Conservation_Area.pdf | pdf ✓name · linked from the agency page (aws.sjrwmd. | 2023-02-17 (the PDF file's own stamp (may be the print da) · posted Jan 22, 2025 |  ✗ | managed by the Florida Fish |
-| US-8368 | Rice Creek State Conservation Area | https://aws.sjrwmd.com/SJRWMD/lands/recreation/Rice_Creek_Conservation_Area.pdf | pdf · linked from the agency page (aws.sjrwmd. | — (date unknown, checked 2026-10-28) · posted Aug 12, 2026 |  ✗ |  |
-| US-8367 | Pellicer Creek State Conservation Area | https://aws.sjrwmd.com/SJRWMD/lands/recreation/Pellicer_Creek_Conservation_Area.pdf | pdf · linked from the agency page (aws.sjrwmd. | — (date unknown, checked 2026-10-28) · posted Jan 22, 2025 |  ✗ | managed by Flagler County |
-| US-8346 | Emeralda Marsh State Conservation Area | https://aws.sjrwmd.com/SJRWMD/lands/recreation/Emeralda_Marsh_Conservation_Area.pdf | pdf ✓name · linked from the agency page (aws.sjrwmd. | — (date unknown, checked 2026-10-28) · posted Jan 22, 2025 |  ✗ | administered by the Florida Fish |
-| US-8366 | Palm Bluff State Conservation Area | https://aws.sjrwmd.com/SJRWMD/lands/recreation/Palm_Bluff_Conservation_Area.pdf | pdf ✓name · linked from the agency page (aws.sjrwmd. | 2023-02-17 (the PDF file's own stamp (may be the print da) · posted Jan 22, 2025 |  ✗ |  |
-| US-8352 | Julington-Durbin Preserve State Conserva | https://aws.sjrwmd.com/SJRWMD/lands/recreation/Julington-Durbin_Preserve.pdf | pdf ✓name · linked from the agency page (aws.sjrwmd. | — (date unknown, checked 2026-10-28) · posted Jan 22, 2025 |  ✗ |  |
-| US-8351 | Heart Island State Conservation Area | https://aws.sjrwmd.com/SJRWMD/lands/recreation/Heart_Island_Conservation_Area.pdf | pdf ✓name · linked from the agency page (aws.sjrwmd. | — (date unknown, checked 2026-10-28) · posted Jan 22, 2025 |  ✗ | is managed by the Florida Fish |
-| US-8376 | Twelve Mile Swamp State Conservation Are | https://aws.sjrwmd.com/SJRWMD/lands/recreation/Twelve_Mile_Swamp_Conservation_Area.pdf?v05 | pdf · linked from the agency page (aws.sjrwmd. | — (date unknown, checked 2026-10-28) · posted Jan 22, 2025 |  ✗ |  |
-| US-8345 | Econlockhatchee Sandhills State Conserva | https://aws.sjrwmd.com/SJRWMD/lands/recreation/Econlockhatchee_Sandhills_Conservation_Area | pdf ✓name · linked from the agency page (aws.sjrwmd. | 2023-02-17 (the PDF file's own stamp (may be the print da) · posted Jan 22, 2025 |  ✗ |  |
-| US-8370 | Seminole Ranch State Conservation Area | https://aws.sjrwmd.com/SJRWMD/lands/recreation/Seminole_Ranch_Conservation_Area.pdf | pdf · linked from the agency page (aws.sjrwmd. | — (date unknown, checked 2026-10-28) · posted May 01, 2025 |  ✗ |  |
-| US-8343 | Deep Creek State Conservation Area | https://aws.sjrwmd.com/SJRWMD/lands/recreation/Deep_Creek_Conservation_Area.pdf | pdf ✓name · linked from the agency page (aws.sjrwmd. | 2023-02-17 (the PDF file's own stamp (may be the print da) · posted Jan 22, 2025 |  ✗ |  |
-| US-8372 | Stokes Landing State Conservation Area | https://aws.sjrwmd.com/SJRWMD/lands/recreation/Stokes_Landing_Conservation_Area.pdf | pdf ✓name · linked from the agency page (aws.sjrwmd. | 2023-02-17 (the PDF file's own stamp (may be the print da) · posted Jan 22, 2025 |  ✗ |  |
-| US-4470 | Apalachicola National Forest | https://www.fs.usda.gov/r08/florida/maps-guides | page · the agency site | — (date unknown, checked 2026-10-28) · posted December 16, 2025 | https://www.fs.usda.gov/r08/florida ✓ |  |
-| US-4472 | Osceola National Forest | https://www.fs.usda.gov/r08/florida/maps-guides | page · the agency site | — (date unknown, checked 2026-10-28) · posted December 16, 2025 | https://www.fs.usda.gov/r08/florida ✓ |  |
+| US-12134 | A-1 Flow Equalization Basin State Conser | https://www.sfwmd.gov/sites/default/files/A1_FEB_Map.jpg | image · the agency site | date unknown (date unknown, checked 2026-10-28) · posted Apr 04, 2025 | https://www.sfwmd.gov/doing-business-with-us/rules ✓ | is managed by the Florida Fish and Wildlife Conservation Commission |
+| US-8719 | Horse Creek State Conservation Area | https://www.sfwmd.gov/sites/default/files/documents/Lake_Marion_Creek_Map.jpg | image · the agency site | date unknown (date unknown, checked 2026-10-28) · posted Apr 09, 2025 | https://www.sfwmd.gov/doing-business-with-us/rules ✓ | is managed by the Florida Fish and Wildlife Conservation Commission |
+| US-8718 | Lakeside Ranch State Conservation Area | https://www.sfwmd.gov/sites/default/files/Lakeside_Ranch_Map.jpg | image ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted Apr 04, 2025 | https://www.sfwmd.gov/doing-business-with-us/rules ✓ |  |
+| US-12132 | Chandler Slough State Conservation Area | https://www.sfwmd.gov/sites/default/files/Chandler_Seaboard_Yates_Telex_S65_Map.jpg | image · the agency site | date unknown (date unknown, checked 2026-10-28) · posted Apr 17, 2025 | https://www.sfwmd.gov/doing-business-with-us/rules ✓ | is managed by the Florida Fish and Wildlife Conservation Commission |
+| US-8345 | Econlockhatchee Sandhills State Conserva | https://aws.sjrwmd.com/SJRWMD/lands/recreation/Econlockhatchee_Sandhills_Conservation_Area | pdf ✓name · combined map: covers 2 units · linked from the agency page (aws.sjrwmd. | 2023 (file stamp 2023 (older than the posting 2025 ) · posted Jan 22, 2025 |  ✗ |  |
+| US-8366 | Palm Bluff State Conservation Area | https://aws.sjrwmd.com/SJRWMD/lands/recreation/Palm_Bluff_Conservation_Area.pdf | pdf ✓name · combined map: covers 4 units · linked from the agency page (aws.sjrwmd. | 2023 (file stamp 2023 (older than the posting 2025 ) · posted Jan 22, 2025 |  ✗ |  |
+| US-8358 | Lochloosa Wildlife State Conservation Ar | https://aws.sjrwmd.com/SJRWMD/lands/recreation/Lochloosa_Wildlife_Conservation_Area.pdf | pdf ✓name · linked from the agency page (aws.sjrwmd. | date unknown (date unknown, checked 2026-10-28) · posted Jan 22, 2025 |  ✗ |  |
+| US-8342 | Crescent Lake State Conservation Area | https://aws.sjrwmd.com/SJRWMD/lands/recreation/Crescent_Lake_Conservation_Area.pdf | pdf ✓name · combined map: covers 2 units · linked from the agency page (aws.sjrwmd. | 2023 (file stamp 2023 (older than the posting 2025 ) · posted Jan 22, 2025 |  ✗ |  |
+| US-8365 | Orange Creek Restoration Area State Cons | https://aws.sjrwmd.com/SJRWMD/lands/recreation/Orange_Creek_Restoration_Area.pdf | pdf ✓name · combined map: covers 2 units · linked from the agency page (aws.sjrwmd. | 2023 (file stamp 2023 (older than the posting 2025 ) · posted Jan 22, 2025 |  ✗ |  |
+| US-8364 | Ocklawaha Prairie Restoration Area State | https://aws.sjrwmd.com/SJRWMD/lands/recreation/Ocklawaha_Prairie_Restoration_Area.pdf | pdf ✓name · linked from the agency page (aws.sjrwmd. | 2023 (file stamp 2023 (older than the posting 2025 ) · posted Jan 22, 2025 |  ✗ |  |
+| US-8357 | Lake Norris State Conservation Area | https://aws.sjrwmd.com/SJRWMD/lands/recreation/Lake_Norris_Conservation_Area.pdf | pdf ✓name · combined map: covers 2 units · linked from the agency page (aws.sjrwmd. | 2023 (file stamp 2023 (older than the posting 2025 ) · posted Jan 22, 2025 |  ✗ |  |
+| US-8349 | Gourd Island State Conservation Area | https://aws.sjrwmd.com/SJRWMD/lands/recreation/Gourd_Island_Conservation_Area.pdf | pdf ✓name · linked from the agency page (aws.sjrwmd. | 2023 (file stamp 2023 (older than the posting 2025 ) · posted Jan 22, 2025 |  ✗ |  |
+| US-8336 | Bayard State Conservation Area | https://aws.sjrwmd.com/SJRWMD/lands/recreation/JP-Hall-Bayard_Conservation_Area.pdf | pdf ✓name · linked from the agency page (aws.sjrwmd. | date unknown (date unknown, checked 2026-10-28) · posted Jan 22, 2025 |  ✗ |  |
+| US-8343 | Deep Creek State Conservation Area | https://aws.sjrwmd.com/SJRWMD/lands/recreation/Deep_Creek_Conservation_Area.pdf | pdf ✓name · combined map: covers 3 units · linked from the agency page (aws.sjrwmd. | 2023 (file stamp 2023 (older than the posting 2025 ) · posted Jan 22, 2025 |  ✗ |  |
+| US-8371 | Silver Springs Forest State Conservation | https://aws.sjrwmd.com/SJRWMD/lands/recreation/Silver_Springs_Forest_Conservation_Area.pdf | pdf ✓name · combined map: covers 2 units · linked from the agency page (aws.sjrwmd. | 2023 (file stamp 2023 (older than the posting 2025 ) · posted Jan 22, 2025 |  ✗ |  |
+| US-8337 | Black Creek Ravines State Conservation A | https://aws.sjrwmd.com/SJRWMD/lands/recreation/Black_Creek_Ravines_Conservation_Area.pdf | pdf ✓name · linked from the agency page (aws.sjrwmd. | 2023 (file stamp 2023 (older than the posting 2025 ) · posted Jan 22, 2025 |  ✗ |  |
 | US-4471 | Ocala National Forest | https://www.fs.usda.gov/r08/florida/maps-guides | page · the agency site | — (date unknown, checked 2026-10-28) · posted December 16, 2025 | https://www.fs.usda.gov/r08/florida ✓ |  |
+| US-4472 | Osceola National Forest | https://www.fs.usda.gov/r08/florida/maps-guides | page · the agency site | — (date unknown, checked 2026-10-28) · posted December 16, 2025 | https://www.fs.usda.gov/r08/florida ✓ |  |
+| US-4470 | Apalachicola National Forest | https://www.fs.usda.gov/r08/florida/maps-guides | page · the agency site | — (date unknown, checked 2026-10-28) · posted December 16, 2025 | https://www.fs.usda.gov/r08/florida ✓ |  |
 
-### US-FL no map yet (223): the reason
+### US-FL no map yet (300): the reason
 - US-0007 Biscayne Bay National Park: opened, a page that does not name this park (a generic agency page is not its map)
 - US-0245 Lake Wales Ridge Wildlife Management Area: opened, a page that does not name this park (a generic agency page is not its map)
 - US-0634 Little Talbot State Park: no map link on file and none on the park page (needs browser: host on the browser list)
@@ -908,6 +890,147 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - US-1848 Colt Creek State Park: HTTP 403 (needs browser: the map link refused a plain reader (HTTP 403))
 - US-1849 Constitution Convention Museum State Park: no map link on file and none on the park page (needs browser: host on the browser list)
 - US-1850 Crystal River Archaeological State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+
+## US-MS sample (random 12 per agency group, seed 28)
+| ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
+|---|---|---|---|---|---|---|
+| US-9849 | Deer Island Coastal Park | https://storymaps.arcgis.com/stories/1f6e568cfcd64f0793b5f7f262eec1ef | page · linked from the agency page (storymaps.a | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
+| US-0395 | Yazoo National Wildlife Refuge | https://www.fws.gov/refuge/yazoo/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/yazoo/visit-us/rules-policies ✓ |  |
+| US-0385 | Hillside National Wildlife Refuge | https://www.fws.gov/refuge/hillside/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/hillside/visit-us/rules-policies ✓ |  |
+| US-0391 | Panther Swamp National Wildlife Refuge | https://www.fws.gov/refuge/theodore-roosevelt-complex-headquarters-panther-swamp/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/theodore-roosevelt-complex-headquarters-pan ✓ |  |
+| US-0392 | St. Catherine Creek National Wildlife Re | https://www.fws.gov/refuge/st-catherine-creek/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/st-catherine-creek/visit-us/rules-policies ✓ |  |
+| US-7632 | Pvt. John Allen National Fish Hatchery | https://www.fws.gov/fish-hatchery/private-john-allen/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/policies ✓ |  |
+| US-0386 | Holt Collier National Wildlife Refuge | https://www.fws.gov/refuge/holt-collier/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/holt-collier/visit-us/rules-policies ✓ |  |
+| US-0384 | Grand Bay National Wildlife Refuge | https://www.fws.gov/refuge/grand-bay/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/grand-bay/visit-us/rules-policies ✓ |  |
+| US-0388 | Mississippi Sandhill Crane National Wild | https://www.fws.gov/refuge/mississippi-sandhill-crane/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/mississippi-sandhill-crane/visit-us/rules-p ✓ |  |
+| US-0390 | Noxubee National Wildlife Refuge | https://www.fws.gov/refuge/sam-d-hamilton-noxubee/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/policies ✓ |  |
+| US-0387 | Mathews Brake National Wildlife Refuge | https://www.fws.gov/refuge/mathews-brake/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/mathews-brake/visit-us/rules-policies ✓ |  |
+| US-0383 | Dahomey National Wildlife Refuge | https://www.fws.gov/refuge/dahomey/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/dahomey/visit-us/rules-policies ✓ |  |
+| US-0393 | Tallahatchie National Wildlife Refuge | https://www.fws.gov/refuge/tallahatchie/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/tallahatchie/visit-us/rules-policies ✓ |  |
+| US-0709 | Tupelo National Battlefield | https://www.nps.gov/tupe/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted March 7, 2016 | https://www.nps.gov/tupe/learn/management/lawsandpolicies.htm ✗ |  |
+| US-2547 | Natchez State Park | https://www.nps.gov/natc/planyourvisit/maps.htm#GlobalNav-toggle | page · the agency site | — (date unknown, checked 2026-10-28) · posted March 7, 2016 | https://www.nps.gov/natc/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0661 | Gulf Islands National Seashore | https://www.nps.gov/guis/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted July 23, 2025 | https://www.nps.gov/guis/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4560 | Natchez Trace Trail National Scenic Trai | https://www.nps.gov/natt/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted September 10, 2020 | https://www.nps.gov/natt/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0723 | Vicksburg National Military Park | https://www.nps.gov/vick/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted June 18, 2024 | https://www.nps.gov/vick/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0747 | Natchez National Historical Park | https://www.nps.gov/natc/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted March 7, 2016 | https://www.nps.gov/natc/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0642 | Natchez Trace Parkway National Parkway | https://www.nps.gov/natr/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted July 3, 2025 | https://www.nps.gov/natr/learn/management/lawsandpolicies.htm ✓ |  |
+| US-7119 | Natchez Wildlife Management Area | https://www.nps.gov/natc/planyourvisit/maps.htm#GlobalNav-toggle | page · the agency site | — (date unknown, checked 2026-10-28) · posted March 7, 2016 | https://www.nps.gov/natc/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0715 | Brices Cross Roads National Battlefield | https://www.nps.gov/brcr/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted March 2, 2016 | https://www.nps.gov/brcr/learn/management/lawsandpolicies.htm ✗ |  |
+| US-4496 | Holly Springs National Forest | https://www.fs.usda.gov/r08/mississippi/maps-guides | page · the agency site | — (date unknown, checked 2026-10-28) · posted October 26, 2026 | https://www.fs.usda.gov/r08/mississippi ✓ |  |
+| US-4494 | De Soto National Forest | https://www.fs.usda.gov/r08/mississippi/maps-guides | page · the agency site | — (date unknown, checked 2026-10-28) · posted October 26, 2026 | https://www.fs.usda.gov/r08/mississippi ✓ |  |
+| US-7631 | Owl Creek Mounds Archeological Reserve | https://www.fs.usda.gov/r08/mississippi/maps-guides | page · the agency site | — (date unknown, checked 2026-10-28) · posted October 26, 2026 | https://www.fs.usda.gov/r08/mississippi ✓ |  |
+| US-7635 | Airey Lake State Recreation Area | https://www.fs.usda.gov/r08/mississippi/maps-guides | page · the agency site | — (date unknown, checked 2026-10-28) · posted October 26, 2026 | https://www.fs.usda.gov/r08/mississippi ✓ |  |
+| US-4495 | Delta National Forest | https://www.fs.usda.gov/r08/mississippi/maps-guides | page · the agency site | — (date unknown, checked 2026-10-28) · posted October 26, 2026 | https://www.fs.usda.gov/r08/mississippi ✓ |  |
+| US-7630 | Chewalla Lake State Recreation Area | https://www.fs.usda.gov/r08/mississippi/maps-guides | page · the agency site | — (date unknown, checked 2026-10-28) · posted October 26, 2026 | https://www.fs.usda.gov/r08/mississippi ✓ |  |
+| US-4497 | Homochitto National Forest | https://www.fs.usda.gov/r08/mississippi/maps-guides | page · the agency site | — (date unknown, checked 2026-10-28) · posted October 26, 2026 | https://www.fs.usda.gov/r08/mississippi ✓ |  |
+| US-4498 | Tombigbee National Forest | https://www.fs.usda.gov/r08/mississippi/maps-guides | page · the agency site | — (date unknown, checked 2026-10-28) · posted October 26, 2026 | https://www.fs.usda.gov/r08/mississippi ✓ |  |
+| US-7629 | Davis Lake State Recreation Area | https://www.fs.usda.gov/r08/mississippi/maps-guides | page · the agency site | — (date unknown, checked 2026-10-28) · posted October 26, 2026 | https://www.fs.usda.gov/r08/mississippi ✓ |  |
+| US-4493 | Bienville National Forest | https://www.fs.usda.gov/r08/mississippi/maps-guides | page · the agency site | — (date unknown, checked 2026-10-28) · posted October 26, 2026 | https://www.fs.usda.gov/r08/mississippi ✓ |  |
+
+### US-MS no map yet (122): the reason
+- US-0382 Coldwater River National Wildlife Refuge: no map link on file and none on the park page
+- US-0722 Shiloh National Battlefield: opened, a page that does not name this park (a generic agency page is not its map)
+- US-10297 Old Trace Park Recreation Park: no map link on file and none on the park page
+- US-11880 Winterville Mounds State Historical Park: no map link on file and none on the park page
+- US-11881 Dancing Rabbit Creek Treaty State Historic Si: no map link on file and none on the park page
+- US-11882 Grand Village of the Natchez State Historic S: no map link on file and none on the park page
+- US-11883 Emerald Mound National Historical Site: opened, a page that does not name this park (a generic agency page is not its map)
+- US-12193 Lake Claude Bennett State Fishing Lake: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-12194 Lake Lamar Bruce State Fishing Lake: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-12195 Elvis Presley State Fishing Lake: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-12196 Tippah County State Fishing Lake: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-12197 Lake Monroe State Fishing Lake: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-12198 Neshoba County State Fishing Lake: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-12199 Lake Tom Bailey State Fishing Lake: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-12200 Simpson County State Fishing Lake: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-12201 Prentiss Walker State Fishing Lake: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-12202 Lake Bogue Homa State Fishing Lake: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-12203 Lake Mary Crawford State Fishing Lake: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-12204 Calling Panther State Fishing Lake: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-12205 Lake Mike Conner State Fishing Lake: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-12206 Lake Jeff Davis State Fishing Lake: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-12207 Lake Walthall State Fishing Lake: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-12208 Lake Perry State Fishing Lake: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-12638 Bobby Cleveland Park State Recreation Site: opened, a readable map that does not name this park (chat 8 F2: another unit / several units)
+- US-12639 Pelahatchie Shore State Recreation Area: opened, a readable map that does not name this park (chat 8 F2: another unit / several units)
+- US-2532 Buccaneer State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-2533 Clarkco State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-2534 Florewood State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-2535 George P Cossar State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-2536 Golden Memorial State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-2537 Great River Road State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-2538 Holmes County State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-2539 Hugh White State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-2540 John W. Kyle State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-2541 J P Coleman State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-2542 Lake Lincoln State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-2543 Lake Lowndes State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-2544 Lefleur's Bluff State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-2545 Legion State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-2546 Leroy Percy State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+
+## US-IN sample (random 12 per agency group, seed 28)
+| ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
+|---|---|---|---|---|---|---|
+| US-0288 | Big Oaks National Wildlife Refuge | https://www.fws.gov/refuge/big-oaks/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/big-oaks/visit-us/rules-policies ✓ |  |
+| US-0290 | Patoka River National Wildlife Refuge | https://www.fws.gov/refuge/patoka-river-and-management-area/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/patoka-river-and-management-area/visit-us/r ✓ |  |
+| US-0289 | Muscatatuck National Wildlife Refuge | https://www.fws.gov/refuge/muscatatuck/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/muscatatuck/visit-us/rules-policies ✓ |  |
+| US-10225 | Post Oak-Cedar State Nature Preserve | https://www.in.gov/dA/ea041344cc/fo-PostOak-Cedar_trail_map.pdf?language_id=1 | pdf ✓name · combined map: covers 2 units · the agency site | date unknown (date unknown, checked 2026-10-28) · posted Apr 07, 2026 | https://www.in.gov/dnr/state-parks/property-rules-and-regulations/ ✓ |  |
+| US-4223 | Reynolds Creek State Fish and Wildlife A | https://indianabirdingtrail.com/pages/birding-sites | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
+| US-6974 | Levi Coffin House State Historic Site | https://www.indianamuseum.org/visit-museum/museum-map-and-parking/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
+| US-6972 | Historic New Harmony State Historic Site | https://www.indianamuseum.org/visit-museum/museum-map-and-parking/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
+| US-6975 | Limberlost State Historic Site | https://www.indianamuseum.org/visit-museum/museum-map-and-parking/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — |  |  |
+| US-6970 | Culbertson Mansion State Historic Site | https://www.indianamuseum.org/visit-museum/museum-map-and-parking/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
+| US-6969 | Corydon Capitol State Historic Site | https://www.indianamuseum.org/visit-museum/museum-map-and-parking/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
+| US-6971 | Gene Stratton-Porter State Historic Site | https://www.indianamuseum.org/visit-museum/museum-map-and-parking/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
+| US-6973 | Lanier Mansion State Historic Site | https://www.indianamuseum.org/visit-museum/museum-map-and-parking/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — |  ✗ |  |
+| US-0765 | Indiana Dunes National Park | https://www.nps.gov/indu/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted August 27, 2024 | https://www.nps.gov/indu/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0734 | George Rogers Clark National Historical  | https://www.nps.gov/gero/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted September 4, 2024 | https://www.nps.gov/gero/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0782 | Lincoln Boyhood Home National Memorial | https://www.nps.gov/libo/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted September 4, 2024 | https://www.nps.gov/libo/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4572 | Lewis and Clark National Historic Trail | https://www.nps.gov/lecl/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted August 5, 2026 | https://www.nps.gov/lecl/learn/management/lawsandpolicies.htm ✓ |  |
+| US-2274 | White River State Park | https://whiteriverstatepark.org/wp-content/uploads/11-x-8.5-WRSP-Map.pdf | pdf ✓name · the agency site | 2024 (file stamp 2024 (older than the posting 2026 ) · posted Aug 06, 2026 | https://whiteriverstatepark.org/park-rules/ ✓ |  |
+
+### US-IN no map yet (203): the reason
+- US-10177 Ogle Hollow State Nature Preserve: no map link on file and none on the park page
+- US-10178 Selma N. Steele State Nature Preserve: no map link on file and none on the park page
+- US-10179 Ten O' Clock Line State Nature Preserve: no map link on file and none on the park page
+- US-10180 Fourteenmile Creek State Nature Preserve: no map link on file and none on the park page
+- US-10181 Nine Penny Branch State Nature Preserve: no map link on file and none on the park page
+- US-10185 White Oak State Nature Preserve: no map link on file and none on the park page
+- US-10193 Elkhart Bog State Nature Preserve: no map link on file and none on the park page
+- US-10201 Sherman Minton State Nature Preserve: no map link on file and none on the park page
+- US-10202 Judy Burton State Nature Preserve: no map link on file and none on the park page
+- US-10204 Bob Kern State Nature Preserve: no map link on file and none on the park page
+- US-10205 Manitou Island State Nature Preserve: no map link on file and none on the park page
+- US-10206 Hemmer Woods State Nature Preserve: no map link on file and none on the park page
+- US-10224 Mouth of Blue River State Nature Preserve: no map link on file and none on the park page
+- US-10226 Knobstone Glade State Nature Preserve: no map link on file and none on the park page
+- US-10227 Coastal Plain Ponds State Nature Preserve: no map link on file and none on the park page
+- US-10228 Stoutsburg Savanna State Nature Preserve: no map link on file and none on the park page
+- US-10229 Tefft Savanna State Nature Preserve: no map link on file and none on the park page
+- US-10230 Bell-Croft Woods State Nature Preserve: no map link on file and none on the park page
+- US-10231 Limberlost Swamp State Nature Preserve: no map link on file and none on the park page
+- US-10232 White Oak Cemetery State Nature Preserve: no map link on file and none on the park page
+- US-10233 Clifty Canyon State Nature Preserve: no map link on file and none on the park page
+- US-10234 Wells Woods State Nature Preserve: no map link on file and none on the park page
+- US-10235 Greider's Woods State Nature Preserve: no map link on file and none on the park page
+- US-10237 Mongoquinong State Nature Preserve: no map link on file and none on the park page
+- US-10238 Tamarack Bog State Nature Preserve: no map link on file and none on the park page
+- US-10239 McCloskey's Burr Oak Savanna State Nature Pre: no map link on file and none on the park page
+- US-10243 Springfield Fen State Nature Preserve: no map link on file and none on the park page
+- US-10244 Donaldson's Woods State Nature Preserve: no map link on file and none on the park page
+- US-10245 Donaldson Cave State Nature Preserve: no map link on file and none on the park page
+- US-10246 Mitchell Sinkhole Plain State Nature Preserve: no map link on file and none on the park page
+- US-10247 Lawrence Creek State Nature Preserve: rest
+- US-10248 Warbler Woods State Nature Preserve: no map link on file and none on the park page
+- US-10250 Bluffs of Beaver Bend State Nature Preserve: no map link on file and none on the park page
+- US-10252 Tank Spring State Nature Preserve: no map link on file and none on the park page
+- US-10253 Low Gap State Nature Preserve: no map link on file and none on the park page
+- US-10254 Scout Ridge State Nature Preserve: no map link on file and none on the park page
+- US-10255 Sweedy Hollow State Nature Preserve: no map link on file and none on the park page
+- US-10256 JD Marshall State Nature Preserve: no map link on file and none on the park page
+- US-10279 Pine Hills State Nature Preserve: rest
+- US-10280 Barnes State Nature Preserve: no map link on file and none on the park page
 
 ## US-MO sample (random 12 per agency group, seed 28)
 | ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
@@ -1005,16 +1128,18 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - US-7984 St Genevieve (Beauvais House) National Histor: no map link on file and none on the park page
 
 ## robots.txt said no (hosts we did not read)
-- app.box.com: 1 addresses (User-agent: Twitterbot | Disallow: / | Allow: /representation  # Twitter needs to be able to display)
-- embed.widencdn.net: 2 addresses (User-agent: Twitterbot | Disallow: | User-agent: * | Allow: /img/3shape/ | Allow: /pdf/*/3shape/ | A)
-- www.blakeleypark.com: 2 addresses (User-agent: * | Disallow: /admin/ | Disallow: /App_Browsers/ | Disallow: /App_Code/ | Disallow: /App)
+- maps.apple.com: 7 addresses (User-agent: * | Allow: /guides?*curated=* | Allow: /guides/?*curated=* | Allow: /guides?*publisher=*)
+- www.fdacs.gov: 37 addresses (User-agent: * | Disallow: / | User-agent: Googlebot | User-agent: Bingbot | User-agent: BingPreview )
 - www.google.com: 1 addresses (User-agent: * | User-agent: Yandex | Disallow: /search | Allow: /search/about | Allow: /search/howse)
 
 ## hosts resting a day (three strikes)
+- in.gov
 - legacy.fws.gov
 - parks.ky.gov
 - wolfememorial.com
 - www.baysmountain.com
+- www.in.gov
+- www.mdwfp.com
 - www.tn.gov
 - www.virginiastateparks.gov
 - www.wildlifesouth.com

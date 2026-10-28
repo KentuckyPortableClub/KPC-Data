@@ -69,6 +69,20 @@
    "checked": 167,
    "left": 0,
    "updated": "2026-10-28"
+  },
+  "US-MS": {
+   "status": "done",
+   "parks": 155,
+   "checked": 155,
+   "left": 0,
+   "updated": "2026-10-28"
+  },
+  "US-IN": {
+   "status": "partial",
+   "parks": 229,
+   "checked": 220,
+   "left": 9,
+   "updated": "2026-10-28"
   }
  },
  "hosts": {
@@ -79,32 +93,35 @@
   "wolfememorial.com": 1793268984.2034903,
   "www.virginiastateparks.gov": 1793269856.6741216,
   "www.baysmountain.com": 1793282536.0758147,
-  "www.wildlifesouth.com": 1793289030.942602
+  "www.wildlifesouth.com": 1793289030.942602,
+  "www.mdwfp.com": 1793292164.6644764,
+  "www.in.gov": 1793292908.0953734,
+  "in.gov": 1793293058.6274643
  },
  "last": {
   "when": "2026-10-28",
   "areas": [
-   "US-GA",
-   "US-AL",
-   "US-SC",
    "US-FL",
    "US-MS",
    "US-IN",
    "US-IL",
-   "US-MO"
+   "US-MO",
+   "US-WI",
+   "US-MN",
+   "US-IA"
   ],
   "stat": {
-   "requests": 1613,
-   "parks": 574,
-   "maps_ok": 249,
-   "maps_found": 207,
-   "dates": 14,
-   "rules": 302,
-   "browser": 53,
-   "robots": 6,
-   "strikes": 3,
-   "errors": 3,
-   "skipped_fresh": 97
+   "requests": 1201,
+   "parks": 723,
+   "maps_ok": 144,
+   "maps_found": 127,
+   "dates": 23,
+   "rules": 152,
+   "browser": 203,
+   "robots": 45,
+   "strikes": 9,
+   "errors": 9,
+   "skipped_fresh": 112
   }
  }
 }
