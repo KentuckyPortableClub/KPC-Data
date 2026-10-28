@@ -17,13 +17,13 @@
    "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/40692026640",
    "waiting_on": "chat 8 grades the sample; Brandon GO before any card"
   },
-  "park detective": {
-   "areas": "left: 63",
+  "layer intake": {
+   "areas": "1 rows left",
    "last_run": "2026-10-28",
-   "made": "answers in data/detective/answers.md, outline leads in data/detective/review.md, intake rows in data/intake/queue.json",
+   "made": "data/intake/ready.json + review.md",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/40694732876",
-   "waiting_on": "chat 8 grades the sample; chat 2 reads the name-mismatch list; nothing goes in a key by itself"
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/40694728086",
+   "waiting_on": "chat 9 (approve READY rows)"
   },
   "park truth checker": {
    "areas": "left: 63",
