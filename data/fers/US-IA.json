@@ -842,7 +842,7 @@
      43.477789
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-28",
    "wide_m": 205
   },
@@ -1485,9 +1485,11 @@
     ]
    },
    "lines_read": "2026-10-28",
+   "list": "🚤 Water only: boat or kayak",
    "map_dates": {
     "US-2284": "downloaded 2026-10-28",
-    "US-2306": "downloaded 2026-10-28"
+    "US-2306": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2020-09-11 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-2284": "Clear Lake State Park",
@@ -1603,7 +1605,7 @@
      43.125763
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "water only: boat or kayak",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "water_checked": "2026-10-28",
    "wide_m": 39

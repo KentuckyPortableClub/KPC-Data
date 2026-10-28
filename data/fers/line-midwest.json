@@ -12,22 +12,18 @@
   "US-SD"
  ],
  "since": "2026-10-28",
- "date": "2026-10-28 20:20 UTC",
+ "date": "2026-10-28 22:46 UTC",
  "verdict": "STOPPED",
  "why": [
-  "water service: US-IN: 56 rows not checked because the USGS water map did not answer (run the worker again)",
   "water service: US-IL: 16 rows not checked because the USGS water map did not answer (run the worker again)",
   "water service: US-MO: 23 rows not checked because the USGS water map did not answer (run the worker again)",
   "water service: US-WI: 21 rows not checked because the USGS water map did not answer (run the worker again)",
-  "water service: US-MN: 66 rows not checked because the USGS water map did not answer (run the worker again)",
-  "water service: US-IA: 2 rows not checked because the USGS water map did not answer (run the worker again)",
-  "water service: US-ND: 17 rows not checked because the USGS water map did not answer (run the worker again)",
-  "water service: US-SD: 15 rows not checked because the USGS water map did not answer (run the worker again)"
+  "water service: US-SD: 11 rows not checked because the USGS water map did not answer (run the worker again)"
  ],
  "known_answers": "18/18 on 2026-10-28",
  "missing_check": {
-  "FOUND": 184,
-  "DROPPED": 1188,
+  "FOUND": 260,
+  "DROPPED": 1112,
   "NEVER LOOKED AT": 11762
  },
  "report": {
@@ -47,7 +43,7 @@
    "pairs tested": 0
   },
   "pass5": {
-   "checked": 1,
+   "checked": 155,
    "date": "2026-10-28",
    "pairs tested": 0,
    "still not checked": 1
@@ -55,16 +51,15 @@
  },
  "US-IN": {
   "rows": 234,
-  "live": 5,
+  "live": 60,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "the ownership map shows more than one owner across the spot": 2,
-   "water not checked": 56,
    "low-confidence outline for Mongoquinong State Nature Preserv": 1
   },
   "dropped": 142,
-  "merged": 28
+  "merged": 29
  },
  "US-IL": {
   "rows": 104,
@@ -108,36 +103,32 @@
  },
  "US-MN": {
   "rows": 858,
-  "live": 54,
+  "live": 116,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "water not checked": 66,
    "the outlines overlap, but the PAD-US Park Service fee record": 1,
    "no public owner on the ownership map": 4,
    "the outlines overlap, but the Forest Service ownership map": 4
   },
   "dropped": 363,
-  "merged": 366
+  "merged": 370
  },
  "US-IA": {
   "rows": 4,
-  "live": 2,
+  "live": 4,
   "waiting": 0,
   "unfinished": 0,
-  "not_sure": {
-   "water not checked": 2
-  },
+  "not_sure": {},
   "dropped": 0,
   "merged": 0
  },
  "US-ND": {
   "rows": 83,
-  "live": 2,
+  "live": 19,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "water not checked": 17,
    "owner not known for Lake Sakakawea State Park": 1
   },
   "dropped": 21,
@@ -145,11 +136,11 @@
  },
  "US-SD": {
   "rows": 55,
-  "live": 2,
+  "live": 6,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "water not checked": 15
+   "water not checked": 11
   },
   "dropped": 29,
   "merged": 9

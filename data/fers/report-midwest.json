@@ -68,7 +68,7 @@
  },
  "pass5": {
   "cell_m": 5.0,
-  "checked": 1,
+  "checked": 155,
   "date": "2026-10-28",
   "left out": {
    "Kentucky (own list)": "all (ky-overlaps.geojson)",
@@ -83,37 +83,38 @@
   "problems": [
    "W&S river corridors joined as area parks: 15",
    "NHD water: The read operation timed out",
+   "NHD water: The read operation timed out",
+   "NHD water retry: HTTP Error 504: Gateway Time-out",
+   "NHD water retry: HTTP Error 504: Gateway Time-out",
+   "NHD water retry: HTTP Error 502: Bad Gateway",
+   "NHD water: The read operation timed out",
+   "NHD water retry: HTTP Error 504: Gateway Time-out",
    "NHD water retry: The read operation timed out",
-   "NHD water: The read operation timed out",
-   "NHD water: The read operation timed out",
-   "NHD water: The read operation timed out",
-   "NHD water retry: The read operation timed out",
+   "NHD water retry: HTTP Error 504: Gateway Time-out",
+   "NHD second door: The read operation timed out",
    "NHD water: The read operation timed out",
    "NHD water retry: The read operation timed out",
-   "NHD water retry: The read operation timed out",
-   "NHD water: The read operation timed out",
-   "NHD water: The read operation timed out",
-   "NHD second door: The read operation timed out"
+   "NHD water retry: The read operation timed out"
   ],
   "spots given their boundary lines": 0,
   "still not checked": 1,
   "trail stretches given their true zone": 0,
-  "water only": 0,
-  "water retries (won / tries)": "5 / 9",
+  "water only": 2,
+  "water retries (won / tries)": "1 / 9",
   "with official lines": 60
  },
  "per state": {
   "US-IA": {
-   "candidates": 2,
+   "candidates": 3,
    "candidates (saved outline only)": 0,
    "lines": 2,
    "n-fers": 0,
-   "not sure": 2,
+   "not sure": 0,
    "pass1": 4,
    "pass2": 4,
    "spots": 4,
    "very tight": 0,
-   "water only": 0
+   "water only": 1
   },
   "US-IL": {
    "candidates": 3,
@@ -128,28 +129,28 @@
    "water only": 0
   },
   "US-IN": {
-   "candidates": 3,
+   "candidates": 51,
    "candidates (saved outline only)": 0,
    "lines": 5,
    "n-fers": 26,
-   "not sure": 59,
+   "not sure": 3,
    "pass1": 234,
    "pass2": 209,
    "spots": 234,
-   "very tight": 2,
+   "very tight": 9,
    "water only": 0
   },
   "US-MN": {
-   "candidates": 48,
+   "candidates": 104,
    "candidates (saved outline only)": 0,
    "lines": 309,
    "n-fers": 37,
-   "not sure": 75,
+   "not sure": 9,
    "pass1": 858,
    "pass2": 800,
    "spots": 858,
-   "very tight": 6,
-   "water only": 0
+   "very tight": 11,
+   "water only": 1
   },
   "US-MO": {
    "candidates": 16,
@@ -164,11 +165,11 @@
    "water only": 0
   },
   "US-ND": {
-   "candidates": 2,
+   "candidates": 19,
    "candidates (saved outline only)": 0,
    "lines": 1,
    "n-fers": 0,
-   "not sure": 18,
+   "not sure": 1,
    "pass1": 83,
    "pass2": 79,
    "spots": 83,
@@ -176,15 +177,15 @@
    "water only": 0
   },
   "US-SD": {
-   "candidates": 2,
+   "candidates": 5,
    "candidates (saved outline only)": 0,
    "lines": 2,
    "n-fers": 4,
-   "not sure": 15,
+   "not sure": 11,
    "pass1": 55,
    "pass2": 55,
    "spots": 55,
-   "very tight": 0,
+   "very tight": 1,
    "water only": 0
   },
   "US-WI": {
