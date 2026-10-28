@@ -10,14 +10,16 @@
     "taken_down": 0,
     "whole": 2
    },
-   "failed": 1,
+   "failed": 2,
    "items": 35,
-   "read": "2026-10-28T15:57Z",
+   "read": "2026-10-28T17:20Z",
    "sources": 72,
    "status": "done"
   }
  },
- "hosts": {},
+ "hosts": {
+  "parks.ky.gov": 1793294595.7977211
+ },
  "last": {
   "areas": [
    "US-KY"
@@ -27,23 +29,23 @@
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "errors": 0,
-   "requests": 89,
+   "errors": 3,
+   "requests": 91,
    "rested": 0,
    "robots": 0,
-   "strikes": 0
+   "strikes": 3
   },
   "stat": {
    "items": 0,
-   "pages": 71,
+   "pages": 70,
    "pdfs": 17,
    "requests": 89,
    "sentences": 171,
-   "sources_failed": 0,
+   "sources_failed": 1,
    "unmatched": 4,
    "unreadable": 60
   },
-  "when": "2026-10-28T15:57Z"
+  "when": "2026-10-28T17:20Z"
  },
  "test": {
   "matched": 7,
