@@ -1162,7 +1162,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the map link refused a plain reader (ok)",
-   "ver": 2
+   "ver": 2,
+   "browser_checked": "2026-10-28"
   },
   "US-12716": {
    "n": "Hayfields State Park",
@@ -1175,10 +1176,10 @@
     "kind": "pdf",
     "date": null,
     "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Download')",
+    "how": "the page in a browser ('Download')",
+    "page": "https://www.dcr.virginia.gov/state-parks/hayfields",
     "posted": "Oct 21, 2025",
     "posted_how": "posted: the server's file date",
-    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -1194,7 +1195,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the map link refused a plain reader (ok)",
-   "ver": 2
+   "ver": 2,
+   "browser_checked": "2026-10-28"
   },
   "US-1290": {
    "n": "Bear Creek Lake State Park",
@@ -1363,10 +1365,10 @@
     "kind": "pdf",
     "date": null,
     "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Download')",
+    "how": "the page in a browser ('Download')",
+    "page": "https://www.dcr.virginia.gov/state-parks/chippokes-plantation",
     "posted": "Feb 25, 2026",
     "posted_how": "posted: the server's file date",
-    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -1376,7 +1378,9 @@
     "status": "ok"
    },
    "agency": "Virginia State Parks (DCR)",
-   "runs": [],
+   "runs": [
+    "managed by the Virginia Department of Conservation"
+   ],
    "handover": [
     "deeded to the state in 2004. Nestled in a pastoral setting and framed b"
    ],
@@ -1384,7 +1388,8 @@
    "needs_browser": "the map link refused a plain reader (ok)",
    "card_note": "May now be run by state: check before you go.",
    "handover_src": "https://www.dcr.virginia.gov/state-parks/chippokes-plantation",
-   "ver": 2
+   "ver": 2,
+   "browser_checked": "2026-10-28"
   },
   "US-1295": {
    "n": "Claytor Lake State Park",
@@ -1925,10 +1930,10 @@
     "kind": "pdf",
     "date": null,
     "date_how": "date unknown, checked 2026-10-28",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "how": "the page in a browser ('Download')",
+    "page": "https://www.dcr.virginia.gov/state-parks/mason-neck",
     "posted": "Oct 22, 2026",
     "posted_how": "posted: the server's file date",
-    "names_park": false,
     "checked": "2026-10-28",
     "via": "the agency site"
    },
@@ -1944,7 +1949,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the map link refused a plain reader (ok)",
-   "ver": 2
+   "ver": 2,
+   "browser_checked": "2026-10-28"
   },
   "US-1309": {
    "n": "Natural Tunnel State Park",
@@ -2048,23 +2054,4296 @@
    "handover": [],
    "notes": [],
    "ver": 2
+  },
+  "US-1312": {
+   "n": "Pocahontas State Park",
+   "t": "State Park",
+   "page": "https://www.dcr.virginia.gov/state-parks/pocahontas",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dcr.virginia.gov/state-parks/document/data/trail-guide-pocahontas.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "Jan 11, 2024",
+    "posted_how": "posted: the server's file date",
+    "names_park": false,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.dcr.virginia.gov/state-parks/rules-and-regulations",
+    "how": "a link on the park's page ('Rules and regulations')",
+    "status": "ok"
+   },
+   "agency": "Virginia State Parks (DCR)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.dcr.virginia.gov/state-parks/document/sp-wedding/printable-brochure/po-group-cabins-brochure.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('specific rustic cabins to groups')",
+     "posted": "Sep 15, 2025",
+     "posted_how": "posted: the server's file date",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    },
+    {
+     "url": "https://www.dcr.virginia.gov/state-parks/document/po-campground-map.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": "2025-01-21",
+     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+     "how": "a link on the park's page ('Map of all campsites')",
+     "posted": "Feb 03, 2025",
+     "posted_how": "posted: the server's file date",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-1313": {
+   "n": "Powhatan State Park",
+   "t": "State Park",
+   "page": "https://forms.office.com/Pages/ResponsePage.aspx?id=qeUKYsFOoE-GQV2fOGxzCaiwI6hWND1GgrSXpi_67hNUQzM3RjJQUkI1UFQzTlM2WDJSTFcyWURVTC4u",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: robots"
+   ],
+   "ver": 2
+  },
+  "US-1314": {
+   "n": "Sailor's Creek Battlefield State Park",
+   "t": "State Park",
+   "page": "https://www.dcr.virginia.gov/state-parks/sailors-creek",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dcr.virginia.gov/state-parks/document/data/sailors-creek-battlefield-avenza-map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Download')",
+    "posted": "Apr 24, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": false,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.dcr.virginia.gov/state-parks/rules-and-regulations",
+    "how": "a link on the park's page ('Rules and regulations')",
+    "status": "ok"
+   },
+   "agency": "Virginia State Parks (DCR)",
+   "runs": [
+    "managed by the Virginia Department of Conservation"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.dcr.virginia.gov/state-parks/document/data/bear-creek-lake-avenza-map.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('Avenza') -> the page's 'Bear Creek Lake State Park' file",
+     "posted": "Nov 20, 2025",
+     "posted_how": "posted: the server's file date",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "page": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-1315": {
+   "n": "Seven Bends State Park",
+   "t": "State Park",
+   "page": "https://www.dcr.virginia.gov/state-parks/seven-bends",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dcr.virginia.gov/state-parks/document/data/seven-bends-geo-map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "Oct 22, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": false,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.dcr.virginia.gov/state-parks/rules-and-regulations",
+    "how": "a link on the park's page ('Rules and regulations')",
+    "status": "ok"
+   },
+   "agency": "Virginia State Parks (DCR)",
+   "runs": [
+    "operated by the nearby Massanutten Military Academy",
+    "managed by the Virginia Department of Conservation"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.dcr.virginia.gov/state-parks/document/se-school-brochure.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('School Programs')",
+     "posted": "Apr 01, 2026",
+     "posted_how": "posted: the server's file date",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-1316": {
+   "n": "Shenandoah River State Park",
+   "t": "State Park",
+   "page": "https://www.dcr.virginia.gov/state-parks/shenandoah-river",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dcr.virginia.gov/state-parks/document/data/shenandoah-river-geo-map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "Oct 22, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": false,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.dcr.virginia.gov/state-parks/rules-and-regulations",
+    "how": "a link on the park's page ('Rules and regulations')",
+    "status": "ok"
+   },
+   "agency": "Virginia State Parks (DCR)",
+   "runs": [
+    "managed by the Virginia Department of Conservation"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.dcr.virginia.gov/state-parks/document/data/bear-creek-lake-avenza-map.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('Avenza') -> the page's 'Bear Creek Lake State Park' file",
+     "posted": "Nov 20, 2025",
+     "posted_how": "posted: the server's file date",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "page": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-1317": {
+   "n": "Shot Tower State Park",
+   "t": "State Park",
+   "page": "https://www.dcr.virginia.gov/state-parks/shot-tower",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "http://www.hillsville.com/recreation_pgs/carter_pines.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Carter Pines Community Park')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": null,
+    "checked": "2026-10-28",
+    "via": "linked from the agency page (hillsville.com)"
+   },
+   "rules": {
+    "url": "https://www.dcr.virginia.gov/state-parks/rules-and-regulations",
+    "how": "a link on the park's page ('Rules and regulations')",
+    "status": "ok"
+   },
+   "agency": "Virginia State Parks (DCR)",
+   "runs": [
+    "managed by the Virginia Department of Conservation",
+    "administered by Carroll County"
+   ],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-1318": {
+   "n": "Sky Meadows State Park",
+   "t": "State Park",
+   "page": "https://www.dcr.virginia.gov/state-parks/sky-meadows",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dcr.virginia.gov/state-parks/document/sk-camping-map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2024-12-09",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "Dec 12, 2024",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site",
+    "kind_note": "campground map (nothing better found)"
+   },
+   "rules": {
+    "url": "https://www.dcr.virginia.gov/state-parks/rules-and-regulations",
+    "how": "a link on the park's page ('Rules and regulations')",
+    "status": "ok"
+   },
+   "agency": "Virginia State Parks (DCR)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-1319": {
+   "n": "Smith Mountain Lake State Park",
+   "t": "State Park",
+   "page": "https://www.dcr.virginia.gov/state-parks/smith-mountain-lake",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dcr.virginia.gov/state-parks/document/maps/Smith-Mountain-Lake-Avenza.Map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "Feb 26, 2021",
+    "posted_how": "posted: the server's file date",
+    "names_park": false,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.dcr.virginia.gov/state-parks/rules-and-regulations",
+    "how": "a link on the park's page ('Rules and regulations')",
+    "status": "ok"
+   },
+   "agency": "Virginia State Parks (DCR)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.dcr.virginia.gov/state-parks/document/sm-cabin-map.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": "2025-07-21",
+     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+     "how": "a link on the park's page ('here for a map')",
+     "posted": "Aug 28, 2025",
+     "posted_how": "posted: the server's file date",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    },
+    {
+     "url": "https://www.dcr.virginia.gov/state-parks/document/sm-campground-map.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('Campground map')",
+     "posted": "Oct 02, 2024",
+     "posted_how": "posted: the server's file date",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-1320": {
+   "n": "Southwest Virginia Museum State Park",
+   "t": "State Park",
+   "page": "https://www.dcr.virginia.gov/state-parks/southwest-virginia-museum",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dcr.virginia.gov/state-parks/document/data/swva-park-map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "Feb 25, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.dcr.virginia.gov/state-parks/rules-and-regulations",
+    "how": "a link on the park's page ('Rules and regulations')",
+    "status": "ok"
+   },
+   "agency": "Virginia State Parks (DCR)",
+   "runs": [
+    "managed by the Virginia Department of Conservation"
+   ],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-1321": {
+   "n": "Staunton River State Park",
+   "t": "State Park",
+   "page": "https://www.dcr.virginia.gov/state-parks/staunton-river",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dcr.virginia.gov/state-parks/document/sr-campground-map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2025-12-30",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "Jun 23, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": false,
+    "checked": "2026-10-28",
+    "via": "the agency site",
+    "kind_note": "campground map (nothing better found)"
+   },
+   "rules": {
+    "url": "https://www.dcr.virginia.gov/state-parks/rules-and-regulations",
+    "how": "a link on the park's page ('Rules and regulations')",
+    "status": "ok"
+   },
+   "agency": "Virginia State Parks (DCR)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.dcr.virginia.gov/state-parks/document/sr-eq-campground-map.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": "2013-02-25",
+     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+     "how": "a link on the park's page ('Campground Map')",
+     "posted": "Feb 26, 2021",
+     "posted_how": "posted: the server's file date",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-1322": {
+   "n": "Staunton River Battlefield State Park",
+   "t": "State Park",
+   "page": "https://www.dcr.virginia.gov/state-parks/staunton-river-battlefield",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dcr.virginia.gov/state-parks/document/data/staunton-river-battlefield-avenza-map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Download')",
+    "posted": "Apr 24, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": false,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.dcr.virginia.gov/state-parks/rules-and-regulations",
+    "how": "a link on the park's page ('Rules and regulations')",
+    "status": "ok"
+   },
+   "agency": "Virginia State Parks (DCR)",
+   "runs": [
+    "managed by the Virginia Department of Conservation"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.dcr.virginia.gov/state-parks/document/data/bear-creek-lake-avenza-map.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('Avenza') -> the page's 'Bear Creek Lake State Park' file",
+     "posted": "Nov 20, 2025",
+     "posted_how": "posted: the server's file date",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "page": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-1323": {
+   "n": "Twin Lakes State Park",
+   "t": "State Park",
+   "page": "https://www.dcr.virginia.gov/state-parks/twin-lakes",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dcr.virginia.gov/state-parks/document/tl-campground-map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2021-02-12",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "Mar 19, 2021",
+    "posted_how": "posted: the server's file date",
+    "names_park": false,
+    "checked": "2026-10-28",
+    "via": "the agency site",
+    "kind_note": "campground map (nothing better found)"
+   },
+   "rules": {
+    "url": "https://www.dcr.virginia.gov/state-parks/rules-and-regulations",
+    "how": "a link on the park's page ('Rules and regulations')",
+    "status": "ok"
+   },
+   "agency": "Virginia State Parks (DCR)",
+   "runs": [
+    "managed by the Virginia Department of Conservation"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.dcr.virginia.gov/state-parks/document/data/twin-lakes-avenza-map.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('Download')",
+     "posted": "Jul 31, 2025",
+     "posted_how": "posted: the server's file date",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-1324": {
+   "n": "Westmoreland State Park",
+   "t": "State Park",
+   "page": "https://www.dcr.virginia.gov/state-parks/westmoreland",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dcr.virginia.gov/state-parks/document/we-campground-map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2024-12-05",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "Jan 31, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": false,
+    "checked": "2026-10-28",
+    "via": "the agency site",
+    "kind_note": "campground map (nothing better found)"
+   },
+   "rules": {
+    "url": "https://www.dcr.virginia.gov/state-parks/rules-and-regulations",
+    "how": "a link on the park's page ('Rules and regulations')",
+    "status": "ok"
+   },
+   "agency": "Virginia State Parks (DCR)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.dcr.virginia.gov/state-parks/document/data/westmoreland-avenza-map.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('Download')",
+     "posted": "Apr 24, 2025",
+     "posted_how": "posted: the server's file date",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-1325": {
+   "n": "Wilderness Road State Park",
+   "t": "State Park",
+   "page": "https://www.dcr.virginia.gov/state-parks/wilderness-road",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dcr.virginia.gov/state-parks/document/data/wilderness-road-avenza-map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Download')",
+    "posted": "Apr 24, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": false,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.dcr.virginia.gov/state-parks/rules-and-regulations",
+    "how": "a link on the park's page ('Rules and regulations')",
+    "status": "ok"
+   },
+   "agency": "Virginia State Parks (DCR)",
+   "runs": [
+    "owned by Robert M",
+    "managed by the Virginia Department of Conservation"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.dcr.virginia.gov/state-parks/document/data/bear-creek-lake-avenza-map.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('Avenza') -> the page's 'Bear Creek Lake State Park' file",
+     "posted": "Nov 20, 2025",
+     "posted_how": "posted: the server's file date",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "page": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-1326": {
+   "n": "York River State Park",
+   "t": "State Park",
+   "page": "https://www.dcr.virginia.gov/state-parks/york-river",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dcr.virginia.gov/state-parks/document/data/york-river-avenza-map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Download')",
+    "posted": "Apr 24, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": false,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.dcr.virginia.gov/state-parks/rules-and-regulations",
+    "how": "a link on the park's page ('Rules and regulations')",
+    "status": "ok"
+   },
+   "agency": "Virginia State Parks (DCR)",
+   "runs": [
+    "managed by the park",
+    "managed by the Virginia Department of Conservation"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.dcr.virginia.gov/state-parks/document/data/bear-creek-lake-avenza-map.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('Avenza') -> the page's 'Bear Creek Lake State Park' file",
+     "posted": "Nov 20, 2025",
+     "posted_how": "posted: the server's file date",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "page": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-2364": {
+   "n": "Machicomoco State Park",
+   "t": "State Park",
+   "page": "https://www.dcr.virginia.gov/state-parks/machicomoco",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dcr.virginia.gov/state-parks/document/data/machicomoco-avenza-map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "the page in a browser ('Download')",
+    "page": "https://www.dcr.virginia.gov/state-parks/machicomoco",
+    "posted": "Apr 24, 2025",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.dcr.virginia.gov/state-parks/rules-and-regulations",
+    "how": "a link on the park's page ('Rules and regulations')",
+    "status": "ok"
+   },
+   "agency": "Virginia State Parks (DCR)",
+   "runs": [
+    "administered by the Virginia Institute of Marine Science"
+   ],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (ok)",
+   "ver": 2,
+   "browser_checked": "2026-10-28"
+  },
+  "US-3378": {
+   "n": "Blue Ridge National Parkway",
+   "t": "National Parkway",
+   "page": "https://www.nps.gov/blri/index.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/blri/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "September 15, 2026",
+    "posted_how": "the page's 'last updated' line",
+    "names_park": null,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/blri/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-3972": {
+   "n": "Natural Bridge State Park",
+   "t": "State Park",
+   "page": "https://www.dcr.virginia.gov/state-parks/natural-bridge",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dcr.virginia.gov/state-parks/document/data/natural-bridge-avenza-map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Download')",
+    "posted": "May 28, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": false,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.dcr.virginia.gov/state-parks/rules-and-regulations",
+    "how": "a link on the park's page ('Rules and regulations')",
+    "status": "ok"
+   },
+   "agency": "Virginia State Parks (DCR)",
+   "runs": [
+    "managed by the Virginia Department of Conservation"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.dcr.virginia.gov/state-parks/document/data/bear-creek-lake-avenza-map.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('Avenza') -> the page's 'Bear Creek Lake State Park' file",
+     "posted": "Nov 20, 2025",
+     "posted_how": "posted: the server's file date",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "page": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-4526": {
+   "n": "George Washington & Jefferson National Forest",
+   "t": "National Forest",
+   "page": "https://www.fs.usda.gov/gwj",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://inciweb.wildfire.gov/",
+    "status": "robots",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('National Incident Wildfire Map')",
+    "page": "https://www.fs.usda.gov/gwj",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-28",
+    "via": "linked from the agency page (inciweb.wildfire.gov)"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r08/gwj",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 2,
+   "browser_checked": "2026-10-28"
+  },
+  "US-4556": {
+   "n": "Appalachian Trail National Scenic Trail",
+   "t": "National Scenic Trail",
+   "page": "https://www.nps.gov/appa/index.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/appa/planyourvisit/upload/APPA_Map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "Dec 06, 2022",
+    "posted_how": "posted: the server's file date",
+    "names_park": false,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/appa/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [
+    "is managed by the National Park Service"
+   ],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-4564": {
+   "n": "Potomac Heritage Trail National Scenic Trail",
+   "t": "National Scenic Trail",
+   "page": "https://www.nps.gov/pohe/index.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/pohe/planyourvisit/upload/POHE-Park-map-2024-opt.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key) -> the page's 'map of the Potomac Heritage National Scenic Trail' file",
+    "posted": "2024",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": false,
+    "checked": "2026-10-28",
+    "page": "https://www.nps.gov/pohe/planyourvisit/maps.htm",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/pohe/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service (Potomac Heritage National Scenic Trail)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-4567": {
+   "n": "Captain John Smith Chesapeake National Historic Trail",
+   "t": "National Historic Trail",
+   "page": "https://www.nps.gov/cajo/planyourvisit/maps.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/cajo/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Maps')",
+    "posted": "November 14, 2024",
+    "posted_how": "the page's 'last updated' line",
+    "names_park": null,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/cajo/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.nps.gov/cajo/planyourvisit/upload/2024_993-082-DOI-NPS-CAJO-Unigrid-508-2.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "2024",
+     "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-4577": {
+   "n": "Overmountain Victory National Historic Trail",
+   "t": "National Historic Trail",
+   "page": "https://www.nps.gov/ovvi/index.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/ovvi/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "November 4, 2024",
+    "posted_how": "the page's 'last updated' line",
+    "names_park": null,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/ovvi/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-4581": {
+   "n": "Star-Spangled Banner National Historic Trail",
+   "t": "National Historic Trail",
+   "page": "https://www.nps.gov/stsp/index.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/stsp/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Maps')",
+    "posted": "November 26, 2025",
+    "posted_how": "the page's 'last updated' line",
+    "names_park": null,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/stsp/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.nps.gov/stsp/upload/508-StarSpangled-Side2-2.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "Aug 22, 2024",
+     "posted_how": "posted: the server's file date",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-4582": {
+   "n": "Washington-Rochambeau Revolutionary Route National Historic Trail",
+   "t": "National Historic Trail",
+   "page": "https://www.nps.gov/waro/index.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/waro/planyourvisit/upload/WARO_UnigridBrochure_2024_Back-2.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "2024",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": false,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/waro/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.nps.gov/waro/planyourvisit/upload/WARO_UnigridBrochure_2024_Front.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('Trail Map') -> the page's 'Front' file",
+     "posted": "2024",
+     "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "page": "https://www.nps.gov/waro/planyourvisit/maps.htm",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-5503": {
+   "n": "Appomattox-Buckingham State Forest",
+   "t": "State Forest",
+   "page": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/appomattox-buckingham-state-forest/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dof.virginia.gov/wp-content/uploads/Appomattox-Buckingham-SF-General-Map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('MAP')",
+    "posted": "Aug 25, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://dwr.virginia.gov/fishing/trout/delayed-harvest-waters/",
+    "how": "a link on the park's page ('Virginia Department of Wildlife Resources Delayed Harvest Waters Regulations')",
+    "status": "ok"
+   },
+   "agency": "government agency (dof.virginia.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-5506": {
+   "n": "Browne State Forest",
+   "t": "State Forest",
+   "page": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/browne-state-forest/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dof.virginia.gov/wp-content/uploads/Browne-SF-General-Map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-08-24",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('MAP')",
+    "posted": "Aug 26, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://dwr.virginia.gov/hunting/regulations/",
+    "how": "a link on the park's page ('Virginia Department of Wildlife Resources Hunting Regulations')",
+    "status": "ok"
+   },
+   "agency": "government agency (dof.virginia.gov)",
+   "runs": [
+    "owned by members of the Browne family when"
+   ],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-5507": {
+   "n": "Channels State Forest",
+   "t": "State Forest",
+   "page": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/channels-state-forest/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dof.virginia.gov/wp-content/uploads/Channels-SF-General-Map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('MAP')",
+    "posted": "Aug 26, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://dwr.virginia.gov/hunting/regulations/",
+    "how": "a link on the park's page ('Virginia Department of Wildlife Resources Hunting Regulations')",
+    "status": "ok"
+   },
+   "agency": "government agency (dof.virginia.gov)",
+   "runs": [
+    "managed by the Virginia Department of Forestry"
+   ],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-5508": {
+   "n": "Chesterfield State Forest",
+   "t": "State Forest",
+   "page": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/chesterfield-state-forest/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dof.virginia.gov/wp-content/uploads/Chesterfield-SF-General-Map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-08-14",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('MAP')",
+    "posted": "Aug 26, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dof.virginia.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-5509": {
+   "n": "Chilton Woods State Forest",
+   "t": "State Forest",
+   "page": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/chilton-woods-state-forest/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dof.virginia.gov/wp-content/uploads/Chilton-Woods-SF-General-Map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-08-14",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('MAP')",
+    "posted": "Aug 26, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://dwr.virginia.gov/hunting/regulations/",
+    "how": "a link on the park's page ('Virginia Department of Wildlife Resources Hunting Regulations')",
+    "status": "ok"
+   },
+   "agency": "government agency (dof.virginia.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-5510": {
+   "n": "Conway-Robinson Memorial State Forest",
+   "t": "State Forest",
+   "page": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/conway-robinson-memorial-state-forest/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dof.virginia.gov/wp-content/uploads/Conway-Robinson-SF-General-Map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-08-28",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('MAP')",
+    "posted": "Aug 26, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://dwr.virginia.gov/hunting/regulations/",
+    "how": "a link on the park's page ('Virginia Department of Wildlife Resources Hunting Regulations')",
+    "status": "ok"
+   },
+   "agency": "government agency (dof.virginia.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-5511": {
+   "n": "Crawfords State Forest",
+   "t": "State Forest",
+   "page": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/crawfords-state-forest/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dof.virginia.gov/wp-content/uploads/Crawfords-SF-General-Map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-08-24",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('MAP')",
+    "posted": "Aug 26, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dof.virginia.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-5512": {
+   "n": "Cumberland State Forest",
+   "t": "State Forest",
+   "page": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/cumberland-state-forest/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dof.virginia.gov/wp-content/uploads/Cumberland-SF-General-Map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('MAP')",
+    "posted": "Aug 25, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": false,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://dwr.virginia.gov/hunting/regulations/",
+    "how": "a link on the park's page ('Virginia Department of Wildlife Resources Hunting Regulations')",
+    "status": "ok"
+   },
+   "agency": "government agency (dof.virginia.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.dof.virginia.gov/wp-content/uploads/Cumberland-SF-Hunting-Map.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('View')",
+     "posted": "Aug 18, 2026",
+     "posted_how": "posted: the server's file date",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-5514": {
+   "n": "Dragon Run State Forest",
+   "t": "State Forest",
+   "page": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/dragon-run-state-forest/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dof.virginia.gov/wp-content/uploads/Dragon-Run-SF-General-Map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-08-23",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('MAP')",
+    "posted": "Aug 26, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://dwr.virginia.gov/hunting/regulations/",
+    "how": "a link on the park's page ('Virginia Department of Wildlife Resources Hunting Regulations')",
+    "status": "ok"
+   },
+   "agency": "government agency (dof.virginia.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-5515": {
+   "n": "Hawks State Forest",
+   "t": "State Forest",
+   "page": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/hawks-state-forest/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dof.virginia.gov/wp-content/uploads/Hawks-SF-General-Map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-08-23",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('MAP')",
+    "posted": "Aug 28, 2023",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dof.virginia.gov)",
+   "runs": [
+    "managed by the Virginia Department of Wildlife Resources"
+   ],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-5516": {
+   "n": "Lesesne State Forest",
+   "t": "State Forest",
+   "page": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/lesense-state-forest/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dof.virginia.gov/wp-content/uploads/Lesesne-SF-General-Map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-08-15",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('MAP')",
+    "posted": "Aug 28, 2023",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://dwr.virginia.gov/hunting/regulations/",
+    "how": "a link on the park's page ('Virginia Department of Wildlife Resources Hunting Regulations')",
+    "status": "ok"
+   },
+   "agency": "government agency (dof.virginia.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-5517": {
+   "n": "Matthews State Forest",
+   "t": "State Forest",
+   "page": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/matthews-state-forest/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dof.virginia.gov/wp-content/uploads/Matthews-SF-General-Map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-08-23",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('MAP')",
+    "posted": "Aug 28, 2023",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://dwr.virginia.gov/hunting/regulations/",
+    "how": "a link on the park's page ('Virginia Department of Wildlife Resources Hunting Regulations')",
+    "status": "ok"
+   },
+   "agency": "government agency (dof.virginia.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.dof.virginia.gov/wp-content/uploads/Trail-Closure-Invasive-Species-Map-2026.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('attached map')",
+     "posted": "2026",
+     "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-5518": {
+   "n": "Moore's Creek State Forest",
+   "t": "State Forest",
+   "page": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/moores-creek/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dof.virginia.gov/wp-content/uploads/Moores-Creek-SF-General-Map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-08-24",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('MAP')",
+    "posted": "Aug 28, 2023",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://dwr.virginia.gov/hunting/regulations/",
+    "how": "a link on the park's page ('Virginia Department of Wildlife Resources Hunting Regulations')",
+    "status": "ok"
+   },
+   "agency": "government agency (dof.virginia.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-5519": {
+   "n": "Niday Place State Forest",
+   "t": "State Forest",
+   "page": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/niday-place-state-forest/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dof.virginia.gov/wp-content/uploads/Niday-Place-SF-General-Map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-08-15",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('MAP')",
+    "posted": "Aug 28, 2023",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dof.virginia.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-5521": {
+   "n": "Paul State Forest",
+   "t": "State Forest",
+   "page": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/paul-state-forest/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dof.virginia.gov/wp-content/uploads/Paul-SF-General-Map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-08-24",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('MAP')",
+    "posted": "Aug 28, 2023",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dof.virginia.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-5522": {
+   "n": "Prince Edward-Gallion State Forest",
+   "t": "State Forest",
+   "page": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/prince-edward-gallion-state-forest/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dof.virginia.gov/wp-content/uploads/Prince-Edward-Gallion-SF-General-Map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-08-24",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('MAP')",
+    "posted": "Aug 28, 2023",
+    "posted_how": "posted: the server's file date",
+    "names_park": false,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://dwr.virginia.gov/hunting/regulations/",
+    "how": "a link on the park's page ('Virginia Department of Wildlife Resources Hunting Regulations')",
+    "status": "ok"
+   },
+   "agency": "government agency (dof.virginia.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-5523": {
+   "n": "Sandy Point State Forest",
+   "t": "State Forest",
+   "page": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/sandy-point-state-forest/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dof.virginia.gov/wp-content/uploads/Sandy-Point-SF-General-Map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-08-24",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('MAP')",
+    "posted": "Aug 28, 2023",
+    "posted_how": "posted: the server's file date",
+    "names_park": false,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://dwr.virginia.gov/hunting/regulations/",
+    "how": "a link on the park's page ('Virginia Department of Wildlife Resources Hunting Regulations')",
+    "status": "ok"
+   },
+   "agency": "government agency (dof.virginia.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.dof.virginia.gov/wp-content/uploads/Sandy-Point-SF-Hunting-Map.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('View')",
+     "posted": "Aug 21, 2026",
+     "posted_how": "posted: the server's file date",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-5525": {
+   "n": "Whitney State Forest",
+   "t": "State Forest",
+   "page": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/whitney-state-forest/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dof.virginia.gov/wp-content/uploads/Whitney-SF-General-Map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-08-15",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('MAP')",
+    "posted": "Aug 28, 2023",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://dwr.virginia.gov/hunting/regulations/",
+    "how": "a link on the park's page ('Virginia Department of Wildlife Resources Hunting Regulations')",
+    "status": "ok"
+   },
+   "agency": "government agency (dof.virginia.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-5526": {
+   "n": "Zoar State Forest",
+   "t": "State Forest",
+   "page": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/zoar-state-forest/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dof.virginia.gov/wp-content/uploads/Zoar-SF-General-Map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('MAP')",
+    "posted": "Aug 25, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dof.virginia.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-7636": {
+   "n": "Widewater State Park",
+   "t": "State Park",
+   "page": "https://www.dcr.virginia.gov/state-parks/widewater",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dcr.virginia.gov/state-parks/document/data/widewater-avenza-map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Download')",
+    "posted": "Nov 03, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": false,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.dcr.virginia.gov/state-parks/rules-and-regulations",
+    "how": "a link on the park's page ('Rules and regulations')",
+    "status": "ok"
+   },
+   "agency": "Virginia State Parks (DCR)",
+   "runs": [
+    "managed by the Virginia Department of Conservation"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.dcr.virginia.gov/state-parks/document/data/bear-creek-lake-avenza-map.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('Avenza') -> the page's 'Bear Creek Lake State Park' file",
+     "posted": "Nov 20, 2025",
+     "posted_how": "posted: the server's file date",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "page": "https://www.dcr.virginia.gov/state-parks/park-trail-maps",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7784": {
+   "n": "Bethel Beach State Natural Area",
+   "t": "State Natural Area",
+   "page": "https://www.dcr.virginia.gov/natural-heritage/natural-area-preserves/bethel",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dcr.virginia.gov/natural-heritage/nhsummarymaps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Locality Summary Maps')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": null,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.dcr.virginia.gov/state-parks/park-regulations",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "did not open"
+   },
+   "agency": "Virginia State Parks (DCR)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.dcr.virginia.gov/natural-heritage/document/nhgenbro.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('Brochures and Factsheets') -> the page's 'Natural Heritage Program Brochure' file",
+     "posted": "Feb 26, 2021",
+     "posted_how": "posted: the server's file date",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "page": "https://www.dcr.virginia.gov/natural-heritage/factsheets",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7785": {
+   "n": "Buffalo Mountain State Natural Area",
+   "t": "State Natural Area",
+   "page": "https://www.dcr.virginia.gov/natural-heritage/natural-area-preserves/buffalo",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dcr.virginia.gov/natural-heritage/nhsummarymaps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Locality Summary Maps')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": null,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.dcr.virginia.gov/state-parks/park-regulations",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "did not open"
+   },
+   "agency": "Virginia State Parks (DCR)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.dcr.virginia.gov/natural-heritage/document/nhgenbro.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('Brochures and Factsheets') -> the page's 'Natural Heritage Program Brochure' file",
+     "posted": "Feb 26, 2021",
+     "posted_how": "posted: the server's file date",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "page": "https://www.dcr.virginia.gov/natural-heritage/factsheets",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7787": {
+   "n": "Bush Mill Stream State Natural Area",
+   "t": "State Natural Area",
+   "page": "https://www.dcr.virginia.gov/natural-heritage/natural-area-preserves/bushmill",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dcr.virginia.gov/natural-heritage/nhsummarymaps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Locality Summary Maps')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": null,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.dcr.virginia.gov/state-parks/park-regulations",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "did not open"
+   },
+   "agency": "Virginia State Parks (DCR)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.dcr.virginia.gov/natural-heritage/document/nhgenbro.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('Brochures and Factsheets') -> the page's 'Natural Heritage Program Brochure' file",
+     "posted": "Feb 26, 2021",
+     "posted_how": "posted: the server's file date",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "page": "https://www.dcr.virginia.gov/natural-heritage/factsheets",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7788": {
+   "n": "Cape Charles State Natural Area",
+   "t": "State Natural Area",
+   "page": "https://www.dcr.virginia.gov/natural-heritage/natural-area-preserves/capecharles",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dcr.virginia.gov/natural-heritage/nhsummarymaps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Locality Summary Maps')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": null,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.dcr.virginia.gov/state-parks/park-regulations",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "did not open"
+   },
+   "agency": "Virginia State Parks (DCR)",
+   "runs": [
+    "managed by the Department of Conservation"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.dcr.virginia.gov/natural-heritage/document/nhgenbro.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('Brochures and Factsheets') -> the page's 'Natural Heritage Program Brochure' file",
+     "posted": "Feb 26, 2021",
+     "posted_how": "posted: the server's file date",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "page": "https://www.dcr.virginia.gov/natural-heritage/factsheets",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7789": {
+   "n": "Chub Sandhill State Natural Area",
+   "t": "State Natural Area",
+   "page": "https://www.dcr.virginia.gov/natural-heritage/natural-area-preserves/chub",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dcr.virginia.gov/natural-heritage/nhsummarymaps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Locality Summary Maps')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": null,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.dcr.virginia.gov/state-parks/park-regulations",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "did not open"
+   },
+   "agency": "Virginia State Parks (DCR)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.dcr.virginia.gov/natural-heritage/document/nhgenbro.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('Brochures and Factsheets') -> the page's 'Natural Heritage Program Brochure' file",
+     "posted": "Feb 26, 2021",
+     "posted_how": "posted: the server's file date",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "page": "https://www.dcr.virginia.gov/natural-heritage/factsheets",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7790": {
+   "n": "Cleveland Barrens State Natural Area",
+   "t": "State Natural Area",
+   "page": "https://www.dcr.virginia.gov/natural-heritage/natural-area-preserves/cleveland",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dcr.virginia.gov/natural-heritage/nhsummarymaps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Locality Summary Maps')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": null,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.dcr.virginia.gov/state-parks/park-regulations",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "did not open"
+   },
+   "agency": "Virginia State Parks (DCR)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.dcr.virginia.gov/natural-heritage/document/nhgenbro.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('Brochures and Factsheets') -> the page's 'Natural Heritage Program Brochure' file",
+     "posted": "Feb 26, 2021",
+     "posted_how": "posted: the server's file date",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "page": "https://www.dcr.virginia.gov/natural-heritage/factsheets",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7791": {
+   "n": "Crow's Nest State Natural Area",
+   "t": "State Natural Area",
+   "page": "https://www.dcr.virginia.gov/natural-heritage/natural-area-preserves/crowsnest",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dcr.virginia.gov/natural-heritage/document/cnnap-trailmap.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "Oct 27, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": false,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.dcr.virginia.gov/natural-heritage/document/cnnap-deerhuntrules2026.pdf",
+    "how": "a link on the park's page ('the rules and regulations')",
+    "status": "ok"
+   },
+   "agency": "Virginia State Parks (DCR)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.dcr.virginia.gov/natural-heritage/document/cnnap-deerhuntmap2026.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('zone map')",
+     "posted": "2026",
+     "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7793": {
+   "n": "Dameron Marsh State Natural Area",
+   "t": "State Natural Area",
+   "page": "https://www.dcr.virginia.gov/natural-heritage/natural-area-preserves/dameron",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dcr.virginia.gov/natural-heritage/nhsummarymaps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Locality Summary Maps')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": null,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.dcr.virginia.gov/state-parks/park-regulations",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "did not open"
+   },
+   "agency": "Virginia State Parks (DCR)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.dcr.virginia.gov/natural-heritage/document/nhgenbro.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('Brochures and Factsheets') -> the page's 'Natural Heritage Program Brochure' file",
+     "posted": "Feb 26, 2021",
+     "posted_how": "posted: the server's file date",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "page": "https://www.dcr.virginia.gov/natural-heritage/factsheets",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7794": {
+   "n": "Goshen Pass State Natural Area",
+   "t": "State Natural Area",
+   "page": "https://www.dcr.virginia.gov/natural-heritage/natural-area-preserves/goshen",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dcr.virginia.gov/natural-heritage/nhsummarymaps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Locality Summary Maps')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": null,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.dcr.virginia.gov/state-parks/park-regulations",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "did not open"
+   },
+   "agency": "Virginia State Parks (DCR)",
+   "runs": [
+    "maintained by the Department of Wildlife Resources"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.dcr.virginia.gov/natural-heritage/document/pggoshenpass.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "Oct 14, 2021",
+     "posted_how": "posted: the server's file date",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7795": {
+   "n": "Grassy Hill State Natural Area",
+   "t": "State Natural Area",
+   "page": "https://www.dcr.virginia.gov/natural-heritage/natural-area-preserves/grassyhill",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dcr.virginia.gov/natural-heritage/document/grassyhilltrailguide.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2006-03-13",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "Feb 26, 2021",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.dcr.virginia.gov/state-parks/park-regulations",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "did not open"
+   },
+   "agency": "Virginia State Parks (DCR)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-7797": {
+   "n": "Hughlett Point State Natural Area",
+   "t": "State Natural Area",
+   "page": "https://www.dcr.virginia.gov/natural-heritage/natural-area-preserves/hughlett",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dcr.virginia.gov/natural-heritage/nhsummarymaps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Locality Summary Maps')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": null,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.dcr.virginia.gov/state-parks/park-regulations",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "did not open"
+   },
+   "agency": "Virginia State Parks (DCR)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.dcr.virginia.gov/natural-heritage/document/nhgenbro.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('Brochures and Factsheets') -> the page's 'Natural Heritage Program Brochure' file",
+     "posted": "Feb 26, 2021",
+     "posted_how": "posted: the server's file date",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "page": "https://www.dcr.virginia.gov/natural-heritage/factsheets",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7798": {
+   "n": "Magothy Bay State Natural Area",
+   "t": "State Natural Area",
+   "page": "https://www.dcr.virginia.gov/natural-heritage/natural-area-preserves/magothybay",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dcr.virginia.gov/natural-heritage/nhsummarymaps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Locality Summary Maps')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": null,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.dcr.virginia.gov/state-parks/park-regulations",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "did not open"
+   },
+   "agency": "Virginia State Parks (DCR)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.dcr.virginia.gov/natural-heritage/document/nhgenbro.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('Brochures and Factsheets') -> the page's 'Natural Heritage Program Brochure' file",
+     "posted": "Feb 26, 2021",
+     "posted_how": "posted: the server's file date",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "page": "https://www.dcr.virginia.gov/natural-heritage/factsheets",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7799": {
+   "n": "Mutton Hunk Fen State Natural Area",
+   "t": "State Natural Area",
+   "page": "https://www.dcr.virginia.gov/natural-heritage/natural-area-preserves/muttonhunk",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dcr.virginia.gov/natural-heritage/nhsummarymaps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Locality Summary Maps')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": null,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.dcr.virginia.gov/state-parks/park-regulations",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "did not open"
+   },
+   "agency": "Virginia State Parks (DCR)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.dcr.virginia.gov/natural-heritage/document/muttonhunkfen-georef.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "Oct 06, 2026",
+     "posted_how": "posted: the server's file date",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7801": {
+   "n": "Pinnacle State Natural Area",
+   "t": "State Natural Area",
+   "page": "https://www.dcr.virginia.gov/natural-heritage/natural-area-preserves/pinnacle",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dcr.virginia.gov/natural-heritage/nhsummarymaps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Locality Summary Maps')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": null,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.dcr.virginia.gov/state-parks/park-regulations",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "did not open"
+   },
+   "agency": "Virginia State Parks (DCR)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.dcr.virginia.gov/natural-heritage/document/pinnacle-georefmap.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "Sep 29, 2026",
+     "posted_how": "posted: the server's file date",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7802": {
+   "n": "Poor Mountain State Natural Area",
+   "t": "State Natural Area",
+   "page": "https://www.dcr.virginia.gov/natural-heritage/natural-area-preserves/poormt",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dcr.virginia.gov/natural-heritage/nhsummarymaps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Locality Summary Maps')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": null,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.dcr.virginia.gov/state-parks/park-regulations",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "did not open"
+   },
+   "agency": "Virginia State Parks (DCR)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.dcr.virginia.gov/natural-heritage/document/nhgenbro.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('Brochures and Factsheets') -> the page's 'Natural Heritage Program Brochure' file",
+     "posted": "Feb 26, 2021",
+     "posted_how": "posted: the server's file date",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "page": "https://www.dcr.virginia.gov/natural-heritage/factsheets",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-7803": {
+   "n": "Savage Neck Dunes State Natural Area",
+   "t": "State Natural Area",
+   "page": "https://www.dcr.virginia.gov/natural-heritage/natural-area-preserves/savage",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dcr.virginia.gov/natural-heritage/nhsummarymaps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Locality Summary Maps')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": null,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.dcr.virginia.gov/state-parks/park-regulations",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "did not open"
+   },
+   "agency": "Virginia State Parks (DCR)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-7804": {
+   "n": "Great Falls Park",
+   "t": "Park",
+   "page": "https://www.nps.gov/grfa/index.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/grfa/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "March 1, 2020",
+    "posted_how": "the page's 'last updated' line",
+    "names_park": null,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/grfa/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-8203": {
+   "n": "Cape Henry National Memorial",
+   "t": "National Memorial",
+   "page": "https://www.nps.gov/came/index.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/came/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Maps')",
+    "posted": "September 3, 2022",
+    "posted_how": "the page's 'last updated' line",
+    "names_park": null,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/came/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-8204": {
+   "n": "Yorktown National Battlefield",
+   "t": "National Battlefield",
+   "page": "https://www.nps.gov/york/index.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/york/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Maps')",
+    "posted": "January 3, 2020",
+    "posted_how": "the page's 'last updated' line",
+    "names_park": null,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/york/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-9897": {
+   "n": "Jamestowne National Historical Site",
+   "t": "National Historical Site",
+   "page": "https://www.nps.gov/jame/index.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/jame/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Maps')",
+    "posted": "October 14, 2026",
+    "posted_how": "the page's 'last updated' line",
+    "names_park": null,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/jame/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-9898": {
+   "n": "Mount Vernon National Historic Trail",
+   "t": "National Historic Trail",
+   "page": "https://www.nps.gov/thingstodo/walk-bike-the-mount-vernon-trail.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/gwmp/planyourvisit/upload/Mt-Vernon-Trail-map-508-2021.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "2021",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": false,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/gwmp/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-9899": {
+   "n": "Fort Hunt National Historical Site",
+   "t": "National Historical Site",
+   "page": "https://www.nps.gov/gwmp/planyourvisit/forthunt.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/gwmp/planyourvisit/upload/Fort-Hunt-Park-map-508-2021.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Fort Hunt Map (nps.gov)')",
+    "posted": "2021",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/gwmp/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-9900": {
+   "n": "Fort Marcy National Historical Site",
+   "t": "National Historical Site",
+   "page": "https://www.nps.gov/gwmp/planyourvisit/fortmarcy.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/gwmp/planyourvisit/upload/George-Washington-Memorial-Parkway-map-508-2021.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Maps') -> the page's 'George Washington Memorial Parkway' file",
+    "posted": "2021",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": false,
+    "checked": "2026-10-28",
+    "page": "https://www.nps.gov/gwmp/planyourvisit/maps.htm",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/gwmp/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-9901": {
+   "n": "Civil War Defenses of Washington National Historic Trail",
+   "t": "National Historic Trail",
+   "page": "https://www.nps.gov/cwdw/index.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/cwdw/learn/historyculture/historic-maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "October 8, 2021",
+    "posted_how": "the page's 'last updated' line",
+    "names_park": null,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/cwdw/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [
+    "now managed by the National Park Service",
+    "administered by the National Park Service located on approximately 130 acres"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.nps.gov/cwdw/planyourvisit/maps.htm",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "August 19, 2019",
+     "posted_how": "the page's 'last updated' line",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-9902": {
+   "n": "Colonial National Parkway",
+   "t": "National Parkway",
+   "page": "https://www.nps.gov/colo/parkway.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/colo/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Maps')",
+    "posted": "September 21, 2022",
+    "posted_how": "the page's 'last updated' line",
+    "names_park": null,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/colo/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-9903": {
+   "n": "Mount Rogers National Recreation Area",
+   "t": "National Recreation Area",
+   "page": "https://www.fs.usda.gov/recarea/gwj/recarea/?recid=77722",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://inciweb.wildfire.gov/",
+    "status": "robots",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('National Incident Wildfire Map')",
+    "page": "https://www.fs.usda.gov/recarea/gwj/recarea/?recid=77722",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-28",
+    "via": "linked from the agency page (inciweb.wildfire.gov)"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r08/gwj",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 2,
+   "browser_checked": "2026-10-28"
+  },
+  "US-9904": {
+   "n": "Apple Orchard Falls National Recreation Trail",
+   "t": "National Recreation Trail",
+   "page": "https://www.fs.usda.gov/recarea/gwj/recreation/hiking/recarea/?recid=78542&actid=50",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://inciweb.wildfire.gov/",
+    "status": "robots",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('National Incident Wildfire Map')",
+    "page": "https://www.fs.usda.gov/recarea/gwj/recreation/hiking/recarea/?recid=78542&actid=50",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-28",
+    "via": "linked from the agency page (inciweb.wildfire.gov)"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r08/gwj",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 2,
+   "browser_checked": "2026-10-28"
+  },
+  "US-9905": {
+   "n": "Cascades National Recreation Trail",
+   "t": "National Recreation Trail",
+   "page": "https://www.fs.usda.gov/recarea/gwj/recreation/hiking/recarea/?recid=79943&actid=50",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://inciweb.wildfire.gov/",
+    "status": "robots",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('National Incident Wildfire Map')",
+    "page": "https://www.fs.usda.gov/recarea/gwj/recreation/hiking/recarea/?recid=79943&actid=50",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-28",
+    "via": "linked from the agency page (inciweb.wildfire.gov)"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r08/gwj",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 2,
+   "browser_checked": "2026-10-28"
+  },
+  "US-9906": {
+   "n": "Cornelius Creek National Recreation Trail",
+   "t": "National Recreation Trail",
+   "page": "https://www.nrtapplication.org/trails/cornelius-creek",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-9907": {
+   "n": "First Landing National Recreation Trail",
+   "t": "National Recreation Trail",
+   "page": "https://www.nrtapplication.org/trails/first-landing-state-park-trails-system",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dcr.virginia.gov/state-parks/document/data/trail-guide-firstlanding.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "Jan 11, 2024",
+    "posted_how": "posted: the server's file date",
+    "names_park": false,
+    "checked": "2026-10-28",
+    "via": "on file, checked by a person or the link harvester (dcr.virginia.gov)"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-9908": {
+   "n": "Hoop Hole National Recreation Trail",
+   "t": "National Recreation Trail",
+   "page": "https://www.nrtapplication.org/trails/hoop-hole-trail",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-9909": {
+   "n": "Little Stony Creek National Recreation Trail",
+   "t": "National Recreation Trail",
+   "page": "https://www.nrtapplication.org/trails/little-stony-creek",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-9910": {
+   "n": "Massanutten National Recreation Trail",
+   "t": "National Recreation Trail",
+   "page": "https://www.nrtapplication.org/trails/massanutten-trail",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-9920": {
+   "n": "Mount Rogers National Recreation Trail",
+   "t": "National Recreation Trail",
+   "page": "https://www.nrtapplication.org/trails/mount-rogers",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-9922": {
+   "n": "The Lion's Tale National Recreation Trail",
+   "t": "National Recreation Trail",
+   "page": "https://www.nrtapplication.org/trails/the-lions-tale",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-9923": {
+   "n": "Virginia Creeper National Recreation Trail",
+   "t": "National Recreation Trail",
+   "page": "https://www.nrtapplication.org/trails/virginia-creeper",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [
+    "is administered by the Mount Rogers National Recreation Area staff"
+   ],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-9925": {
+   "n": "Wild Oak National Recreation Trail",
+   "t": "National Recreation Trail",
+   "page": "https://www.nrtapplication.org/trails/wild-oak",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-9926": {
+   "n": "Big Woods State Forest",
+   "t": "State Forest",
+   "page": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/big-woods/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dof.virginia.gov/wp-content/uploads/Big-Woods-SF-General-Map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-08-24",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('MAP')",
+    "posted": "Aug 25, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://dwr.virginia.gov/hunting/regulations/",
+    "how": "a link on the park's page ('Virginia Department of Wildlife Resources Hunting Regulations')",
+    "status": "ok"
+   },
+   "agency": "government agency (dof.virginia.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-9927": {
+   "n": "Charlotte State Forest",
+   "t": "State Forest",
+   "page": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/charlotte-state-forest/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dof.virginia.gov/wp-content/uploads/Charlotte-SF-General-Map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('MAP')",
+    "posted": "Aug 25, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": false,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://dwr.virginia.gov/hunting/regulations/",
+    "how": "a link on the park's page ('Virginia Department of Wildlife Resources Hunting Regulations')",
+    "status": "ok"
+   },
+   "agency": "government agency (dof.virginia.gov)",
+   "runs": [
+    "owned by Stanley Land"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.dof.virginia.gov/wp-content/uploads/Charlotte-SF-Hunting-Map.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('View')",
+     "posted": "Aug 20, 2026",
+     "posted_how": "posted: the server's file date",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-9928": {
+   "n": "Devil's Backbone State Forest",
+   "t": "State Forest",
+   "page": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/devils-backbone/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dof.virginia.gov/wp-content/uploads/Devils-Backbone-SF-General-Map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('MAP')",
+    "posted": "Aug 25, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://dwr.virginia.gov/hunting/regulations/",
+    "how": "a link on the park's page ('Virginia Department of Wildlife Resources Hunting Regulations')",
+    "status": "ok"
+   },
+   "agency": "government agency (dof.virginia.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-9929": {
+   "n": "First Mountain State Forest",
+   "t": "State Forest",
+   "page": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/first-mountain-state-forest/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dof.virginia.gov/wp-content/uploads/First-Mountain-SF-General-Map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-08-24",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('MAP')",
+    "posted": "Aug 26, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://dwr.virginia.gov/hunting/regulations/",
+    "how": "a link on the park's page ('Virginia Department of Wildlife Resources Hunting Regulations')",
+    "status": "ok"
+   },
+   "agency": "government agency (dof.virginia.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-9930": {
+   "n": "Old Flat State Forest",
+   "t": "State Forest",
+   "page": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/old-flat-state-forest/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dof.virginia.gov/wp-content/uploads/Old-Flat-SF-General-Map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2023-08-24",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('MAP')",
+    "posted": "Aug 28, 2023",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dof.virginia.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-9931": {
+   "n": "Frontier Culture Museum State Historic Site",
+   "t": "State Historic Site",
+   "page": "https://www.frontiermuseum.org/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-9932": {
+   "n": "The Channels State Natural Area",
+   "t": "State Natural Area",
+   "page": "https://www.dcr.virginia.gov/natural-heritage/natural-area-preserves/thechannels",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dcr.virginia.gov/natural-heritage/nhsummarymaps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Locality Summary Maps')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": null,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.dcr.virginia.gov/state-parks/park-regulations",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "did not open"
+   },
+   "agency": "Virginia State Parks (DCR)",
+   "runs": [
+    "managed by the Virginia Department of Forestry"
+   ],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-9933": {
+   "n": "Beaches to Bluegrass State Trail",
+   "t": "State Trail",
+   "page": "https://www.dcr.virginia.gov/recreational-planning/trailb2b",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dcr.virginia.gov/recreational-planning/document/b2b-brochure.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "Feb 26, 2021",
+    "posted_how": "posted: the server's file date",
+    "names_park": false,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.dcr.virginia.gov/state-parks/park-regulations",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "did not open"
+   },
+   "agency": "Virginia State Parks (DCR)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.dcr.virginia.gov/recreational-planning/document/2020-online-vop-survey-results.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('2020 Regional Public Recreation Survey Results and Map (PDF)')",
+     "posted": "2020",
+     "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    },
+    {
+     "url": "https://www.dcr.virginia.gov/recreational-planning/document/2021-online-vop-survey-results.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('2021 Regional Public Recreation Survey Results and Map (PDF)')",
+     "posted": "2021",
+     "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-9934": {
+   "n": "James River Heritage State Trail",
+   "t": "State Trail",
+   "page": "https://www.dcr.virginia.gov/recreational-planning/trailjrh",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dcr.virginia.gov/recreational-planning/document/2020-online-vop-survey-results.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('2020 Regional Public Recreation Survey Results and Map (PDF)')",
+    "posted": "2020",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": false,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.dcr.virginia.gov/state-parks/park-regulations",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "did not open"
+   },
+   "agency": "Virginia State Parks (DCR)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.dcr.virginia.gov/recreational-planning/document/2021-online-vop-survey-results.pdf",
+     "status": "ok",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-28",
+     "how": "a link on the park's page ('2021 Regional Public Recreation Survey Results and Map (PDF)')",
+     "posted": "2021",
+     "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "via": "the agency site"
+    }
+   ],
+   "ver": 2
+  },
+  "US-9935": {
+   "n": "Virginia Bird & Wildlife State Trail",
+   "t": "State Trail",
+   "page": "https://dwr.virginia.gov/vbwt/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://services.dwr.virginia.gov/arcgis/rest/services/Public/BirdingWildlifeTrail/MapServer",
+    "status": "ok",
+    "kind": "arcgis",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "",
+    "posted_how": "",
+    "names_park": null,
+    "checked": "2026-10-28",
+    "via": "same government (services.dwr.virginia.gov)"
+   },
+   "rules": {
+    "url": "https://dwr.virginia.gov/wma/regulations/",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "did not open"
+   },
+   "agency": "Virginia Department of Wildlife Resources",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-9936": {
+   "n": "Sweet Run State Park",
+   "t": "State Park",
+   "page": "https://www.dcr.virginia.gov/state-parks/sweet-run",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.dcr.virginia.gov/state-parks/document/data/sweet-run-avenza-map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "the page in a browser ('Download')",
+    "page": "https://www.dcr.virginia.gov/state-parks/sweet-run",
+    "posted": "Apr 24, 2025",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.dcr.virginia.gov/state-parks/rules-and-regulations",
+    "how": "a link on the park's page ('Rules and regulations')",
+    "status": "ok"
+   },
+   "agency": "Virginia State Parks (DCR)",
+   "runs": [
+    "managed by the Virginia Department of Conservation"
+   ],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (ok)",
+   "ver": 2,
+   "browser_checked": "2026-10-28"
+  },
+  "US-9937": {
+   "n": "Meadowood BLM Special Recreation Management Area",
+   "t": "BLM Special Recreation Management Area",
+   "page": "https://www.blm.gov/visit/meadowood-special-recreation-management-area",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://experience.arcgis.com/experience/bde784e367c3495fa76e3d071720182b#widget_6=active_datasource_id:dataSource_6,center:-77.197411%2C38.674964%2C4326,level:13,marker:-77.197411%2C38.674964%3B%3BMeadowood%20Special%20Recreation%20Management%20Area%3BMeadowood%20Special%20Recreation%20Management%20Area%3B%7B%22type%22%3A%22esriPMS%22%2C%22url%22%3A%22https%3A%2F%2Fwww.arcgis.com%2Fsharing%2Frest%2Fcontent%2Fitems%2F174eea676cdf437f82f8189e31db9e03%2Fdata%22%2C%22width%22%3A20%2C%22height%22%3A20%7D",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "the page in a browser ('View Map In Full Screen(link is external)')",
+    "page": "https://www.blm.gov/visit/meadowood-special-recreation-management-area",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-28",
+    "via": "linked from the agency page (experience.arcgis.com)"
+   },
+   "rules": {
+    "url": "https://www.blm.gov/about/laws-and-regulations",
+    "how": "a link on the page in a browser ('Laws and Regulations')",
+    "status": "ok"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [
+    "is managed by Northeastern States"
+   ],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 2,
+   "browser_checked": "2026-10-28"
+  },
+  "US-9938": {
+   "n": "Barbours Creek Wilderness Area",
+   "t": "Wilderness Area",
+   "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://inciweb.wildfire.gov/",
+    "status": "robots",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('National Incident Wildfire Map')",
+    "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-28",
+    "via": "linked from the agency page (inciweb.wildfire.gov)"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r08/gwj",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 2,
+   "browser_checked": "2026-10-28"
+  },
+  "US-9939": {
+   "n": "Beartown Wilderness Area",
+   "t": "Wilderness Area",
+   "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://inciweb.wildfire.gov/",
+    "status": "robots",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('National Incident Wildfire Map')",
+    "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-28",
+    "via": "linked from the agency page (inciweb.wildfire.gov)"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r08/gwj",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 2,
+   "browser_checked": "2026-10-28"
+  },
+  "US-9940": {
+   "n": "Brush Mountain Wilderness Area",
+   "t": "Wilderness Area",
+   "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://inciweb.wildfire.gov/",
+    "status": "robots",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('National Incident Wildfire Map')",
+    "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-28",
+    "via": "linked from the agency page (inciweb.wildfire.gov)"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r08/gwj",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 2,
+   "browser_checked": "2026-10-28"
+  },
+  "US-9941": {
+   "n": "Brush Mountain East Wilderness Area",
+   "t": "Wilderness Area",
+   "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://inciweb.wildfire.gov/",
+    "status": "robots",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('National Incident Wildfire Map')",
+    "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-28",
+    "via": "linked from the agency page (inciweb.wildfire.gov)"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r08/gwj",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 2,
+   "browser_checked": "2026-10-28"
+  },
+  "US-9942": {
+   "n": "Garden Mountain Wilderness Area",
+   "t": "Wilderness Area",
+   "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://inciweb.wildfire.gov/",
+    "status": "robots",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('National Incident Wildfire Map')",
+    "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-28",
+    "via": "linked from the agency page (inciweb.wildfire.gov)"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r08/gwj",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 2,
+   "browser_checked": "2026-10-28"
+  },
+  "US-9943": {
+   "n": "Hunting Camp Creek Wilderness Area",
+   "t": "Wilderness Area",
+   "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://inciweb.wildfire.gov/",
+    "status": "robots",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('National Incident Wildfire Map')",
+    "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-28",
+    "via": "linked from the agency page (inciweb.wildfire.gov)"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r08/gwj",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 2,
+   "browser_checked": "2026-10-28"
+  },
+  "US-9944": {
+   "n": "James River Face Wilderness Area",
+   "t": "Wilderness Area",
+   "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://inciweb.wildfire.gov/",
+    "status": "robots",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('National Incident Wildfire Map')",
+    "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-28",
+    "via": "linked from the agency page (inciweb.wildfire.gov)"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r08/gwj",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 2,
+   "browser_checked": "2026-10-28"
+  },
+  "US-9945": {
+   "n": "Kimberling Creek Wilderness Area",
+   "t": "Wilderness Area",
+   "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://inciweb.wildfire.gov/",
+    "status": "robots",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('National Incident Wildfire Map')",
+    "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-28",
+    "via": "linked from the agency page (inciweb.wildfire.gov)"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r08/gwj",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 2,
+   "browser_checked": "2026-10-28"
+  },
+  "US-9946": {
+   "n": "Lewis Fork Wilderness Area",
+   "t": "Wilderness Area",
+   "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://inciweb.wildfire.gov/",
+    "status": "robots",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('National Incident Wildfire Map')",
+    "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-28",
+    "via": "linked from the agency page (inciweb.wildfire.gov)"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r08/gwj",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 2,
+   "browser_checked": "2026-10-28"
+  },
+  "US-9947": {
+   "n": "Little Dry Run Wilderness Area",
+   "t": "Wilderness Area",
+   "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://inciweb.wildfire.gov/",
+    "status": "robots",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('National Incident Wildfire Map')",
+    "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-28",
+    "via": "linked from the agency page (inciweb.wildfire.gov)"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r08/gwj",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 2,
+   "browser_checked": "2026-10-28"
+  },
+  "US-9948": {
+   "n": "Little Wilson Creek Wilderness Area",
+   "t": "Wilderness Area",
+   "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://inciweb.wildfire.gov/",
+    "status": "robots",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('National Incident Wildfire Map')",
+    "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-28",
+    "via": "linked from the agency page (inciweb.wildfire.gov)"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r08/gwj",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 2,
+   "browser_checked": "2026-10-28"
+  },
+  "US-9949": {
+   "n": "Mountain Lake Wilderness Area",
+   "t": "Wilderness Area",
+   "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://inciweb.wildfire.gov/",
+    "status": "robots",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('National Incident Wildfire Map')",
+    "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-28",
+    "via": "linked from the agency page (inciweb.wildfire.gov)"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r08/gwj",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 2,
+   "browser_checked": "2026-10-28"
+  },
+  "US-9950": {
+   "n": "Peters Mountain Wilderness Area",
+   "t": "Wilderness Area",
+   "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://inciweb.wildfire.gov/",
+    "status": "robots",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('National Incident Wildfire Map')",
+    "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-28",
+    "via": "linked from the agency page (inciweb.wildfire.gov)"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/gwj/alerts-notices",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "did not open"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 2,
+   "browser_checked": "2026-10-28"
+  },
+  "US-9951": {
+   "n": "Priest Wilderness Area",
+   "t": "Wilderness Area",
+   "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://inciweb.wildfire.gov/",
+    "status": "robots",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('National Incident Wildfire Map')",
+    "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-28",
+    "via": "linked from the agency page (inciweb.wildfire.gov)"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r08/gwj",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 2,
+   "browser_checked": "2026-10-28"
+  },
+  "US-9952": {
+   "n": "Raccoon Branch Wilderness Area",
+   "t": "Wilderness Area",
+   "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://inciweb.wildfire.gov/",
+    "status": "robots",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('National Incident Wildfire Map')",
+    "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-28",
+    "via": "linked from the agency page (inciweb.wildfire.gov)"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/gwj/alerts-notices",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "did not open"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 2,
+   "browser_checked": "2026-10-28"
+  },
+  "US-9953": {
+   "n": "Ramseys Draft Wilderness Area",
+   "t": "Wilderness Area",
+   "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://inciweb.wildfire.gov/",
+    "status": "robots",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('National Incident Wildfire Map')",
+    "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-28",
+    "via": "linked from the agency page (inciweb.wildfire.gov)"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/gwj/alerts-notices",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "did not open"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 2,
+   "browser_checked": "2026-10-28"
+  },
+  "US-9954": {
+   "n": "Rich Hole Wilderness Area",
+   "t": "Wilderness Area",
+   "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://inciweb.wildfire.gov/",
+    "status": "robots",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('National Incident Wildfire Map')",
+    "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-28",
+    "via": "linked from the agency page (inciweb.wildfire.gov)"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r08/gwj",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 2,
+   "browser_checked": "2026-10-28"
+  },
+  "US-9955": {
+   "n": "St. Mary's Wilderness Area",
+   "t": "Wilderness Area",
+   "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://inciweb.wildfire.gov/",
+    "status": "robots",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('National Incident Wildfire Map')",
+    "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-28",
+    "via": "linked from the agency page (inciweb.wildfire.gov)"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r08/gwj",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 2,
+   "browser_checked": "2026-10-28"
+  },
+  "US-9956": {
+   "n": "Shawvers Run Wilderness Area",
+   "t": "Wilderness Area",
+   "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://inciweb.wildfire.gov/",
+    "status": "robots",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('National Incident Wildfire Map')",
+    "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-28",
+    "via": "linked from the agency page (inciweb.wildfire.gov)"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r08/gwj",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 2,
+   "browser_checked": "2026-10-28"
+  },
+  "US-9957": {
+   "n": "Shenandoah Wilderness Area",
+   "t": "Wilderness Area",
+   "page": "https://www.nps.gov/shen/learn/wilderness.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/shen/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Maps')",
+    "posted": "January 14, 2026",
+    "posted_how": "the page's 'last updated' line",
+    "names_park": null,
+    "checked": "2026-10-28",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/shen/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-9958": {
+   "n": "Stone Mountain Wilderness Area",
+   "t": "Wilderness Area",
+   "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://inciweb.wildfire.gov/",
+    "status": "robots",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('National Incident Wildfire Map')",
+    "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-28",
+    "via": "linked from the agency page (inciweb.wildfire.gov)"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r08/gwj",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 2,
+   "browser_checked": "2026-10-28"
+  },
+  "US-9959": {
+   "n": "Three Ridges Wilderness Area",
+   "t": "Wilderness Area",
+   "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://inciweb.wildfire.gov/",
+    "status": "robots",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('National Incident Wildfire Map')",
+    "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-28",
+    "via": "linked from the agency page (inciweb.wildfire.gov)"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r08/gwj",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 2,
+   "browser_checked": "2026-10-28"
+  },
+  "US-9960": {
+   "n": "Thunder Ridge Wilderness Area",
+   "t": "Wilderness Area",
+   "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://inciweb.wildfire.gov/",
+    "status": "robots",
+    "kind": "",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('National Incident Wildfire Map')",
+    "page": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-28",
+    "via": "linked from the agency page (inciweb.wildfire.gov)"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r08/gwj",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 2,
+   "browser_checked": "2026-10-28"
+  },
+  "US-9961": {
+   "n": "Dyke Marsh Wildlife Reserve",
+   "t": "Wildlife Reserve",
+   "page": "https://www.nps.gov/gwmp/planyourvisit/dykemarsh.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/gwmp/planyourvisit/upload/George-Washington-Memorial-Parkway-map-508-2021.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Maps') -> the page's 'George Washington Memorial Parkway' file",
+    "posted": "2021",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": false,
+    "checked": "2026-10-28",
+    "page": "https://www.nps.gov/gwmp/planyourvisit/maps.htm",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/gwmp/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-9966": {
+   "n": "Vic Thomas Striped Bass State Fish Hatchery",
+   "t": "State Fish Hatchery",
+   "page": "https://dwr.virginia.gov/fishing/fish-stocking/state-hatcheries/vic-thomas-fish-hatchery/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://dwr.virginia.gov/wma/regulations/",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "did not open"
+   },
+   "agency": "Virginia Department of Wildlife Resources",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-9967": {
+   "n": "King and Queen State Fish Hatchery",
+   "t": "State Fish Hatchery",
+   "page": "https://dwr.virginia.gov/fishing/fish-stocking/state-hatcheries/king-queen-fish-hatchery/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://dwr.virginia.gov/wma/regulations/",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "did not open"
+   },
+   "agency": "Virginia Department of Wildlife Resources",
+   "runs": [
+    "owned by the King & Queen Rod & Gun Club"
+   ],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-9968": {
+   "n": "Buller State Fish Hatchery",
+   "t": "State Fish Hatchery",
+   "page": "https://dwr.virginia.gov/fishing/fish-stocking/state-hatcheries/buller-fish-hatchery/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://dwr.virginia.gov/wma/regulations/",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "did not open"
+   },
+   "agency": "Virginia Department of Wildlife Resources",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-9969": {
+   "n": "Front Royal State Fish Hatchery",
+   "t": "State Fish Hatchery",
+   "page": "https://dwr.virginia.gov/fishing/fish-stocking/state-hatcheries/front-royal-fish-cultural-station/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://dwr.virginia.gov/wma/regulations/",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "did not open"
+   },
+   "agency": "Virginia Department of Wildlife Resources",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-9970": {
+   "n": "Marion Trout State Fish Hatchery",
+   "t": "State Fish Hatchery",
+   "page": "https://dwr.virginia.gov/fishing/fish-stocking/state-hatcheries/marion-state-fish-hatchery/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://dwr.virginia.gov/wma/regulations/",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "did not open"
+   },
+   "agency": "Virginia Department of Wildlife Resources",
+   "runs": [
+    "operated by the Virginia Department of Wildlife Resources"
+   ],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-9971": {
+   "n": "Montebello State Fish Hatchery",
+   "t": "State Fish Hatchery",
+   "page": "https://dwr.virginia.gov/fishing/fish-stocking/state-hatcheries/montebello-fish-hatchery/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://dwr.virginia.gov/wma/regulations/",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "did not open"
+   },
+   "agency": "Virginia Department of Wildlife Resources",
+   "runs": [
+    "owned by the Seaman family"
+   ],
+   "handover": [
+    "leased to the state until the late 1960s"
+   ],
+   "notes": [],
+   "card_note": "May now be run by state until the late: check before you go.",
+   "handover_src": "https://dwr.virginia.gov/fishing/fish-stocking/state-hatcheries/montebello-fish-hatchery/",
+   "ver": 2
+  },
+  "US-9972": {
+   "n": "Coursey Spring State Fish Hatchery",
+   "t": "State Fish Hatchery",
+   "page": "https://dwr.virginia.gov/fishing/fish-stocking/state-hatcheries/coursey-springs-fish-hatchery/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://dwr.virginia.gov/wma/regulations/",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "did not open"
+   },
+   "agency": "Virginia Department of Wildlife Resources",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-9973": {
+   "n": "Wytheville Trout State Fish Hatchery",
+   "t": "State Fish Hatchery",
+   "page": "https://dwr.virginia.gov/fishing/fish-stocking/state-hatcheries/wytheville-fish-hatchery/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://dwr.virginia.gov/wma/regulations/",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "did not open"
+   },
+   "agency": "Virginia Department of Wildlife Resources",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
+  },
+  "US-9974": {
+   "n": "Paint Bank State Fish Hatchery",
+   "t": "State Fish Hatchery",
+   "page": "https://dwr.virginia.gov/fishing/fish-stocking/state-hatcheries/paint-bank-fish-hatchery/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://dwr.virginia.gov/wma/regulations/",
+    "how": "the agency-wide rules page (chat 8 survey)",
+    "status": "did not open"
+   },
+   "agency": "Virginia Department of Wildlife Resources",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 2
   }
  },
  "read": "2026-10-28",
  "counts": {
-  "parks": 57,
-  "map ok": 53,
-  "map found by the bot": 24,
-  "date on the map": 7,
-  "posted date only": 31,
-  "date unknown": 15,
-  "no map": 4,
-  "rules ok": 51,
-  "needs browser": 4,
-  "handover hints": 2,
-  "runs hints": 15,
-  "host resting / robots": 0,
-  "map names the park": 8,
+  "parks": 184,
+  "map ok": 135,
+  "map found by the bot": 85,
+  "date on the map": 30,
+  "posted date only": 72,
+  "date unknown": 33,
+  "no map": 23,
+  "rules ok": 129,
+  "needs browser": 0,
+  "handover hints": 3,
+  "runs hints": 43,
+  "host resting / robots": 26,
+  "map names the park": 32,
   "region overview only": 0
  }
 }

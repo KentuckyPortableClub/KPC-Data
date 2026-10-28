@@ -36,10 +36,24 @@
    "updated": "2026-10-28"
   },
   "US-VA": {
-   "status": "partial",
+   "status": "done",
    "parks": 184,
-   "checked": 57,
-   "left": 127,
+   "checked": 184,
+   "left": 0,
+   "updated": "2026-10-28"
+  },
+  "US-WV": {
+   "status": "done",
+   "parks": 172,
+   "checked": 172,
+   "left": 0,
+   "updated": "2026-10-28"
+  },
+  "US-GA": {
+   "status": "partial",
+   "parks": 237,
+   "checked": 212,
+   "left": 25,
    "updated": "2026-10-28"
   }
  },
@@ -54,28 +68,28 @@
  "last": {
   "when": "2026-10-28",
   "areas": [
-   "US-KY",
-   "US-TN",
-   "US-NC",
    "US-VA",
    "US-WV",
    "US-GA",
    "US-AL",
-   "US-SC"
+   "US-SC",
+   "US-MS",
+   "US-IN",
+   "US-IL"
   ],
   "stat": {
-   "requests": 1402,
-   "parks": 633,
-   "maps_ok": 305,
-   "maps_found": 192,
-   "dates": 92,
-   "rules": 260,
-   "browser": 95,
-   "robots": 4,
-   "strikes": 12,
-   "errors": 10,
-   "skipped_fresh": 147,
-   "handovers": 3
+   "requests": 1797,
+   "parks": 511,
+   "maps_ok": 435,
+   "maps_found": 324,
+   "dates": 40,
+   "rules": 382,
+   "browser": 49,
+   "robots": 29,
+   "strikes": 0,
+   "errors": 5,
+   "skipped_fresh": 57,
+   "handovers": 1
   }
  }
 }
