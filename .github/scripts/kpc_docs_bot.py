@@ -65,6 +65,8 @@ NOTMAP = re.compile(r'google\.|bing\.com|apple\.com/maps|mapquest|openstreetmap|
 VIEWER = re.compile(r'gis\.myfwc\.com|recreationmap|/apps/|webappviewer|experience\.arcgis|mapviewer|portal/apps|statewide', re.I)
 PLANW = re.compile(r'\bdraft\b|\bplans?\b|proposed|concept|master ?plan|management plan|environmental assessment', re.I)   # chat 8 F3: not the visitor map
 NOTRULES = re.compile(r'air-?quality|laws-regulations|/library|privacy|accessibility|foia|/regulations/pages/default|environmental-protection|water-quality|permitting', re.I)   # chat 11 fix 2
+# Oct 28 (chat 11 regrade 2): whole-government policy pages and an agency's data / GIS pages are never a park's rules or map
+DENY = re.compile(r'kentucky\.gov/policies|/policies/pages/default|eec\.ky\.gov/energy|eec\.ky\.gov/environmental-protection|/data-maps/|/gis/pages/default|fs\.usda\.gov/visit/maps/?$|fs\.usda\.gov/maps/?$|/site-policies|/web-policies', re.I)
 RULEWORD = re.compile(r'\brules?\b|regulations?|policies|laws? (and|&) policies|compendium|permits?|know before you go|r[èe]glements?|hunting (and|&) fishing regulations|park rules|ordinance', re.I)
 ORG = r'(?:the )?(?:(?:City|County|Town|Village|Commonwealth|State|Parish|Municipality|Township) of [A-Z][\w.\'-]+(?: [A-Z][\w.\'-]+){0,2}|[A-Z][\w.&\'-]*(?: (?:of|and|&|for|the)| [A-Z][\w.&\'-]*){0,6}(?: (?:County|City|Fiscal Court|Parks(?: (?:and|&) Recreation)?|Department|Dept\.?|Division|Office|Service|Commission|Agency|District|Authority|Foundation|Trust|Conservancy|Corporation|Tribe|Nation|Township|Town|Village|Government|Board|Council|State)))\b'
 HANDOVER = re.compile(r'((?:transferred|handed (?:over )?to|turned over|conveyed|now (?:managed|operated|owned|run)|will be (?:managed|operated|run)|no longer (?:managed|operated|owned|run)|took over|taken over|assumed (?:management|ownership)|as of (?:19|20)\d\d)[^.;]{0,60}?(?:to |by |from )?' + ORG + r'[^.;]{0,80}?(?:(?:19|20)\d\d|\bnow\b)[^.;]{0,40}[.;]|(?:in |since |as of )(?:20\d\d)[^.;]{0,80}?(?:transferred|handed (?:over )?to|turned over|now (?:managed|operated|owned|run) by|took over|taken over)[^.;]{0,80}?' + ORG + r'[^.;]{0,40}[.;])')
@@ -198,7 +200,7 @@ def page_text(html):
 def map_score(url, text, agency_host):
     """How much a link looks like THE park's official map: PDF + 'park map' best; off-site and generic things worst."""
     s = 0; u = url.lower(); t = (text or '').lower()
-    if NOTMAP.search(u) or NOTMAP.search(t): return -9
+    if NOTMAP.search(u) or NOTMAP.search(t) or DENY.search(u): return -9
     if not (MAPWORD.search(u) or MAPWORD.search(t)): return -9
     if VIEWER.search(u): return -9      # chat 8 F2: a statewide viewer is not THE park's map
     if PLANW.search(u) or PLANW.search(t): s -= 6   # chat 8 F3: a plan / draft is never the main map
@@ -222,7 +224,7 @@ def rules_score(url, text):
     t = (text or '').lower(); u = url.lower()
     if not (RULEWORD.search(t) or RULEWORD.search(u)): return -9
     if re.search(r'permit', t + u) and not re.search(r'rules?|regulation', t + u): return -9   # a permit SHOP is not the rules (chat 8 B13)
-    if NOTRULES.search(u) or NOTRULES.search(t): return -9   # chat 11: air-quality regulations / a generic laws page / a library are not a park's rules
+    if NOTRULES.search(u) or NOTRULES.search(t) or DENY.search(u): return -9   # chat 11: air-quality regulations / a generic laws page / a library are not a park's rules
     if NOTMAP.search(u): return -9
     s = 1
     if re.search(r'rules|regulations|compendium|laws', t): s += 2
@@ -323,6 +325,7 @@ def check_url(u, want_text=True, name=''):
     r['final'] = final
     if r['status'] != 'ok': return r
     if VIEWER.search(final or u): r['status'] = 'opened, a statewide map viewer, not this park\'s map (chat 8 F2)'; r['kind'] = 'viewer (statewide)'; return r
+    if DENY.search(final or u): r['status'] = 'opened, a government data / policies page, not this park\'s map (chat 11 regrade 2)'; r['kind'] = 'denied page'; return r
     if PLANW.search(urllib.parse.unquote((final or u).rsplit('/', 1)[-1])): r['status'] = 'opened, a plan / draft, not the visitor map (chat 8 F3)'; r['kind'] = 'plan'; return r
     ct = (hd.get('content-type') or '').lower()
     if looks_pdf and body[:5] != b'%PDF-' and 'application/pdf' not in ct:
@@ -496,13 +499,15 @@ def rules_for(fam, urls, pg_rules, lists_entry):
     cands += [(u, f"a link on the park's page ('{t}')") for s, u, t in pg_rules[:3]]
     if lists_entry and lists_entry.get('rules'): cands.append((lists_entry['rules'], 'the agency-wide rules page (chat 8 survey)'))
     seen = set()
+    cands = [(u, how) for u, how in cands if not DENY.search(u)]   # Oct 28 (chat 11): never a whole-government policies page
     for u, how in cands:
         if u in seen: continue
         seen.add(u)
         st, hd, body, final = get(u, head=False)
         if st in (200, 206):
+            if DENY.search(final or ''): continue   # a redirect onto a site-policies page is not the rules
             return {'url': final or u, 'how': how, 'status': 'ok'}
-        if st in ('rest', 'robots'): return {'url': u, 'how': how, 'status': str(st)}
+        if st in ('rest', 'robots'): return {'url': u, 'how': how, 'status': 'rules page not read (the site is resting: next run)' if st == 'rest' else str(st)}
     return {'url': cands[0][0] if cands else '', 'how': cands[0][1] if cands else '', 'status': 'not found' if not cands else 'did not open'}
 
 
