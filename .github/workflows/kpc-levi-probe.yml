@@ -1,0 +1,40 @@
+name: TEMP Levi Jackson outline probe (delete after)
+# Oct 28 (HQ): an older official state polygon (~896 ac) for Levi Jackson (US-1264), or City-of-London parcels. Never fails.
+on: workflow_dispatch
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: layers at the park
+        continue-on-error: true
+        shell: python3 {0}
+        run: |
+          import json, math, urllib.request, urllib.parse
+          UA = {'User-Agent': 'KPC park-map bot (https://kentuckyportableclub.github.io/KPC-Links/)'}
+          def note(t, m): print(f'::notice title={t}::{m}'[:1000], flush=True)
+          def get(u, p=None):
+              try: return json.loads(urllib.request.urlopen(urllib.request.Request(u + ('?' + urllib.parse.urlencode(p) if p else ''), headers=UA), timeout=60).read())
+              except Exception as e: return {'ERR': str(e)[:120]}
+          def acres(g):
+              t = 0
+              for r in (g or {}).get('rings') or []:
+                  la0 = sum(p[1] for p in r) / len(r); kx = 111320 * math.cos(math.radians(la0)); ky = 110570
+                  s = sum(r[i - 1][0] * kx * r[i][1] * ky - r[i][0] * kx * r[i - 1][1] * ky for i in range(len(r)))
+                  t += s / 2
+              return round(abs(t) / 4046.86)
+          pt = {'geometry': '-84.0549,37.0838', 'geometryType': 'esriGeometryPoint', 'inSR': 4326, 'spatialRel': 'esriSpatialRelIntersects', 'outFields': '*', 'returnGeometry': 'true', 'outSR': 4326, 'f': 'json'}
+          box = dict(pt, geometry='-84.075,37.07,-84.035,37.10', geometryType='esriGeometryEnvelope')
+          K = 'https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services'
+          for name, base in (('TCM street base 20', K + '/Ky_TCM_Street_Base_WGS84WM/MapServer/20'),):
+              j = get(base + '/query', box)
+              note('Levi ' + name, 'ERR ' + j['ERR'] if 'ERR' in j else ' | '.join(f"{ {k: v for k, v in (f.get('attributes') or {}).items() if v not in (None, '') and 'shape' not in k.lower()} } ~{acres(f.get('geometry'))} ac" for f in j.get('features', []))[:950] or 'no features')
+          # every layer of the State Parks features service, at the park
+          s = get(K + '/Ky_State_Parks_Features_WGS84WM/MapServer', {'f': 'json'})
+          for L in (s.get('layers') or [])[:8]:
+              j = get(f"{K}/Ky_State_Parks_Features_WGS84WM/MapServer/{L['id']}/query", box)
+              if j.get('features'): note(f"Levi SP features {L['id']} {L['name'][:30]}", ' | '.join(f"{ {k: v for k, v in (f.get('attributes') or {}).items() if v not in (None, '') and 'shape' not in k.lower()} } ~{acres(f.get('geometry'))} ac" for f in j['features'])[:900])
+          # ArcGIS Online: Laurel County / London parcels, older KY state park layers
+          for q in ('Laurel County Kentucky parcels', 'London Kentucky parcels', 'Kentucky State Parks boundaries', 'Levi Jackson'):
+              j = get('https://www.arcgis.com/sharing/rest/search', {'q': q + ' type:"Feature Service"', 'num': 8, 'f': 'json'})
+              note('AGOL ' + q, ' | '.join(f"{r.get('title')} ({r.get('owner')}, {r.get('modified') and __import__('time').strftime('%Y-%m-%d', __import__('time').gmtime(r['modified'] / 1000))}) {r.get('url')}" for r in j.get('results', []))[:950] or str(j)[:200])
