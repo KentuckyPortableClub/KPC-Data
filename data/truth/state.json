@@ -1,5 +1,25 @@
 {
  "areas": {
+  "US-AL": {
+   "checked": 155,
+   "counts": {
+    "agree": 26,
+    "handover_hints": 4,
+    "no_page": 3,
+    "no_size": 63,
+    "off": 18,
+    "ours_unknown": 4,
+    "parks": 155,
+    "retired": 0,
+    "unsure": 12,
+    "weak": 10,
+    "with_outline": 126
+   },
+   "left": 0,
+   "parks": 155,
+   "status": "done",
+   "updated": "2026-10-28"
+  },
   "US-GA": {
    "checked": 237,
    "counts": {
@@ -127,6 +147,7 @@
   "legacy.fws.gov": 1793257782.7889593,
   "tnstateparks.com": 1793308390.7882838,
   "wolfememorial.com": 1793308907.889083,
+  "www.alapark.com": 1793311937.1968005,
   "www.amicalolafallslodge.com": 1793310856.8343172,
   "www.fs.usda.gov": 1793309985.139606,
   "www.littleocmulgeelodge.com": 1793311323.8044322,
@@ -135,29 +156,29 @@
  },
  "last": {
   "areas": [
-   "US-GA"
+   "US-AL"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "errors": 9,
-   "requests": 422,
-   "rested": 4,
+   "errors": 0,
+   "requests": 213,
+   "rested": 53,
    "robots": 0,
-   "strikes": 14
+   "strikes": 3
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 12,
-   "no_size": 26,
-   "ours_unknown": 0,
-   "pages_read": 324,
-   "parks": 237,
+   "handover_hints": 4,
+   "no_size": 66,
+   "ours_unknown": 4,
+   "pages_read": 193,
+   "parks": 155,
    "retired": 0,
-   "size_agree": 18,
-   "size_off": 141,
-   "size_unsure": 35,
+   "size_agree": 26,
+   "size_off": 18,
+   "size_unsure": 12,
    "skipped_fresh": 0,
-   "with_outline": 220
+   "with_outline": 126
   },
   "when": "2026-10-28"
  },
