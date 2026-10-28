@@ -1,0 +1,56 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "oh",
+ "states": [
+  "US-OH"
+ ],
+ "since": "2026-10-28",
+ "date": "2026-10-28 02:30 UTC",
+ "verdict": "STOPPED",
+ "why": [
+  "Kentucky known-answers test not passing (no test file)"
+ ],
+ "known_answers": "no test file",
+ "missing_check": {
+  "FOUND": 20,
+  "DROPPED": 120,
+  "NEVER LOOKED AT": 7908
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-28",
+   "pairs tested": 125,
+   "pairs whose boxes touch": 125
+  },
+  "pass2": {
+   "agree with the pass before": 113,
+   "date": "2026-10-28",
+   "pairs tested": 38
+  },
+  "pass3": {
+   "agree with the pass before": 40,
+   "date": "2026-10-28",
+   "pairs tested": 38
+  },
+  "pass5": {
+   "checked": 27,
+   "date": "2026-10-28",
+   "pairs tested": 0,
+   "still not checked": 26
+  }
+ },
+ "US-OH": {
+  "rows": 222,
+  "live": 20,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "the ownership map shows more than one owner across the spot": 6,
+   "water not checked": 26,
+   "owner not known for Burr Oak State Park": 1,
+   "low-confidence outline for Headlands Dunes State Nature Pres": 1
+  },
+  "dropped": 150,
+  "merged": 18
+ }
+}
