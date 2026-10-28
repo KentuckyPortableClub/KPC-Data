@@ -160,38 +160,32 @@ access constraints t | 2024-10-18 | https://services.arcgis.com/JJzESW51TqeY9uat
 {
  "date": "2026-10-28",
  "stats": {
-  "requests": 430,
+  "requests": 1526,
   "hits": 0,
-  "leads": 17,
-  "already_read": 8,
-  "skipped": 21,
-  "not_official": 553,
-  "robots": 9,
-  "strikes": 7,
-  "errors": 30,
-  "retried_json": 2
+  "leads": 102,
+  "already_read": 0,
+  "skipped": 95,
+  "not_official": 291,
+  "robots": 0,
+  "strikes": 6,
+  "errors": 45,
+  "retried_json": 4
  },
  "countries": [
-  "GB done: 300 leads (A 162), known-good found 2 of 2",
-  "DE done: 3 leads (A 2), known-good found 1 of 1",
-  "PL done: 13 leads (A 0), known-good found 0 of 3",
-  "JP done: 1 leads (A 0), known-good found 0 of 0",
-  "AU done: 57 leads (A 46), known-good found 4 of 5"
+  "FR done: 49 leads (A 0), known-good found 0 of 0",
+  "ES done: 0 leads (A 0), known-good found 0 of 0",
+  "IT done: 0 leads (A 0), known-good found 0 of 0",
+  "NO done: 14 leads (A 13), known-good found 1 of 2",
+  "NL done: 4 leads (A 3), known-good found 0 of 0",
+  "CH done: 0 leads (A 0), known-good found 0 of 0",
+  "PT paused: 61 leads (A 16), known-good found 1 of 1"
  ],
  "dead_servers": [
-  "cagmap.snh.gov.uk",
-  "gisext.qfes.qld.gov.au"
+  "ogc.geo-ide.developpement-durable.gouv.fr",
+  "ows.region-bretagne.fr"
  ],
- "robots_refused": {
-  "map.cornwall.gov.uk": 1,
-  "data.gov.au": 4,
-  "discover.data.vic.gov.au": 4
- },
- "robots_said": {
-  "map.cornwall.gov.uk": "User-agent: * | Disallow: /",
-  "data.gov.au": "User-agent: * | Disallow: /",
-  "discover.data.vic.gov.au": "User-agent: * | Disallow: /dataset/rate/ | Disallow: /revision/ | Disallow: /dataset/*/history | Disallow: /api/ | Crawl-Delay: 10"
- },
+ "robots_refused": {},
+ "robots_said": {},
  "robots_exempted_hosts (HQ ruling Oct 27: ArcGIS REST API paths only)": {}
 }
 ```

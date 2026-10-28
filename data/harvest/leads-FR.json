@@ -1,0 +1,1608 @@
+{
+ "about": "World harvester leads for France (official park GIS only; leads for chat 8, never added to the key by the bot).",
+ "cc": "FR",
+ "date": "2026-10-28",
+ "status": "done",
+ "steps_done": [
+  "known",
+  "servers",
+  "wfs",
+  "orgs",
+  "catalogs",
+  "downloads",
+  "search",
+  "eea"
+ ],
+ "bands": {
+  "A": 0,
+  "B": 2,
+  "C": 47
+ },
+ "known_good_found": [],
+ "known_good_missed": [],
+ "leads": {
+  "https://geo.brest-metropole.fr/arcgis/rest/services/public/gpb_nat/mapserver//1912010": {
+   "url": "https://geo.brest-metropole.fr/arcgis/rest/services/public/GPB_NAT/MapServer//1912010",
+   "cc": "FR",
+   "title": "public/GPB_NAT//1912010",
+   "publisher": "geo.brest-metropole.fr",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "lov2",
+   "date": "2026-10-26",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 1912010,
+     "name": "ZONE PROTECTION GESTION - Reserve Naturelle Régionale",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "ID",
+      "COMMUNE",
+      "DEPCO",
+      "PERIMETRE",
+      "SURFACE",
+      "NOM_SITE",
+      "IDENTIFIANT",
+      "SOURCE",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 27,
+     "sample": [
+      "POINTE DU DREZEC",
+      "PORZH KORVEN",
+      "TREZ BIHAN"
+     ],
+     "name_field": "NOM_SITE"
+    }
+   ],
+   "note": "Réserve naturelle régionale",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://data.geopf.fr/wfs/ows": {
+   "url": "https://data.geopf.fr/wfs/ows",
+   "cc": "FR",
+   "title": "WFS data.geopf.fr",
+   "publisher": "Géoplateforme par IGN",
+   "catalog": "WFS capabilities",
+   "licence": "none Conditions Générales d'Utilisation disponibles ici : https://cartes.gouv.fr/cgu",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "area",
+    "outline"
+   ],
+   "layers": [
+    {
+     "name": "Accessibilité physique des forêts PORTEUR",
+     "type": "IGNF_ACCESSIBILITE-PHYSIQUE-FORETS-:acces_porteur",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Accessibilité physique des forêts PORTEUR",
+     "type": "IGNF_ACCESSIBILITE-PHYSIQUE-FORETS-MASQUE-FORETV3:acces_porteur",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Accessibilité physique des forêts SKIDDER",
+     "type": "IGNF_ACCESSIBILITE-PHYSIQUE-FORETS-:acces_skidder",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Accessibilité physique des forêts SKIDDER",
+     "type": "IGNF_ACCESSIBILITE-PHYSIQUE-FORETS-MASQUE-FORETV3:acces_skidder",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Aléa feu de forêt départemental 2021 dans l'Hérault",
+     "type": "n_dfci_intensite_alea_s_034_zip_03-02-2026_wfs:n_dfci_intensite_alea_s_034",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "BD CARTO® Limites terre mer",
+     "type": "BDCARTO_V5:limite_terre_mer",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "BD CARTO® Parcs ou réserves",
+     "type": "BDCARTO_V5:parc_ou_reserve",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "BD CARTO® Zones d'activité ou d'intérêt",
+     "type": "BDCARTO_V5:zone_d_activite_ou_d_interet",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "BD CARTO® Zones d'habitation",
+     "type": "BDCARTO_V5:zone_d_habitation",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "BD Forêt v1 (1987-2004)",
+     "type": "LANDCOVER.FORESTINVENTORY.V1:resu_bdv1_shape",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "BD Forêt v2 (2006-2019)",
+     "type": "LANDCOVER.FORESTINVENTORY.V2:formation_vegetale",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "BD TOPO® - Différentiel - Limites terre-mer",
+     "type": "BDTOPO_V3_DIFF:limite_terre_mer",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    }
+   ],
+   "note": "300 feature types listed",
+   "grade": 3,
+   "band": "B"
+  },
+  "https://data.geopf.fr/wfs": {
+   "url": "https://data.geopf.fr/wfs",
+   "cc": "FR",
+   "title": "WFS data.geopf.fr",
+   "publisher": "Géoplateforme par IGN",
+   "catalog": "WFS capabilities",
+   "licence": "none Conditions Générales d'Utilisation disponibles ici : https://cartes.gouv.fr/cgu",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "area",
+    "outline"
+   ],
+   "layers": [
+    {
+     "name": "Accessibilité physique des forêts PORTEUR",
+     "type": "IGNF_ACCESSIBILITE-PHYSIQUE-FORETS-:acces_porteur",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Accessibilité physique des forêts PORTEUR",
+     "type": "IGNF_ACCESSIBILITE-PHYSIQUE-FORETS-MASQUE-FORETV3:acces_porteur",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Accessibilité physique des forêts SKIDDER",
+     "type": "IGNF_ACCESSIBILITE-PHYSIQUE-FORETS-:acces_skidder",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Accessibilité physique des forêts SKIDDER",
+     "type": "IGNF_ACCESSIBILITE-PHYSIQUE-FORETS-MASQUE-FORETV3:acces_skidder",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Aléa feu de forêt départemental 2021 dans l'Hérault",
+     "type": "n_dfci_intensite_alea_s_034_zip_03-02-2026_wfs:n_dfci_intensite_alea_s_034",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "BD CARTO® Limites terre mer",
+     "type": "BDCARTO_V5:limite_terre_mer",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "BD CARTO® Parcs ou réserves",
+     "type": "BDCARTO_V5:parc_ou_reserve",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "BD CARTO® Zones d'activité ou d'intérêt",
+     "type": "BDCARTO_V5:zone_d_activite_ou_d_interet",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "BD CARTO® Zones d'habitation",
+     "type": "BDCARTO_V5:zone_d_habitation",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "BD Forêt v1 (1987-2004)",
+     "type": "LANDCOVER.FORESTINVENTORY.V1:resu_bdv1_shape",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "BD Forêt v2 (2006-2019)",
+     "type": "LANDCOVER.FORESTINVENTORY.V2:formation_vegetale",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "BD TOPO® - Différentiel - Limites terre-mer",
+     "type": "BDTOPO_V3_DIFF:limite_terre_mer",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    }
+   ],
+   "note": "300 feature types listed",
+   "grade": 3,
+   "band": "B"
+  },
+  "dl:6ac6b9da43e1ad72a7d2962e": {
+   "url": "https://www.data.gouv.fr/datasets/aire-dadhsion-du-parc-national-de-forts-20261007152356",
+   "cc": "FR",
+   "title": "Aire d'adhésion du Parc national de forêts",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "odc-odbl",
+   "date": "2026-10-08",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "gpkg"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:5be172f1634f41047e65bde1": {
+   "url": "https://www.data.gouv.fr/datasets/aire-dadhesion-du-parc-national-des-cevennes",
+   "cc": "FR",
+   "title": "Aire d'adhésion du Parc national des Cévennes",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "odc-odbl",
+   "date": "2025-01-06",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "geojson",
+    "gpkg",
+    "zip"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:6ac6b9d943e1ad72a7d2962c": {
+   "url": "https://www.data.gouv.fr/datasets/aire-optimale-dadhsion-du-parc-national-de-forts-20261007150300",
+   "cc": "FR",
+   "title": "Aire optimale d'adhésion du Parc national de forêts",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "odc-odbl",
+   "date": "2026-10-08",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "gpkg",
+    "pdf"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:5be2ac8e8b4c410aa1398f53": {
+   "url": "https://www.data.gouv.fr/datasets/aire-optimale-dadhesion-du-parc-national-des-cevennes",
+   "cc": "FR",
+   "title": "Aire optimale d'adhésion du Parc national des Cévennes",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "odc-odbl",
+   "date": "2025-01-06",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "geojson",
+    "gpkg",
+    "zip"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:69f4254e9664a2192c2c49cb": {
+   "url": "https://www.data.gouv.fr/datasets/forets-anciennes-du-parc-naturel-regional-du-morvan-1",
+   "cc": "FR",
+   "title": "Ancienneté des forêts du Parc naturel régional du Morvan",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "lov2",
+   "date": "2026-05-01",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "csv",
+    "geojson"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:682c9b96bc71c8a0136e8d03": {
+   "url": "https://www.data.gouv.fr/datasets/atlas-des-paysages-du-parc-national-des-cevennes",
+   "cc": "FR",
+   "title": "Atlas des paysages du Parc national des Cévennes",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "odc-odbl",
+   "date": "2025-05-20",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "gpkg"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:69f425519664a2192c2c49cd": {
+   "url": "https://www.data.gouv.fr/datasets/entites-paysageres-de-latlas-des-paysages-du-morvan-1",
+   "cc": "FR",
+   "title": "Atlas des paysages du Parc naturel régional du Morvan",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "lov2",
+   "date": "2026-05-01",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "csv",
+    "geojson",
+    "pdf",
+    "txt"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:69f425449664a2192c2c49c2": {
+   "url": "https://www.data.gouv.fr/datasets/prestataires-de-la-marque-valeurs-parcs-dans-le-parc-naturel-regional-du-morvan-1",
+   "cc": "FR",
+   "title": "Bénéficiaires de la marque \"Valeurs Parcs\" dans le Parc naturel régional du Morvan",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "lov2",
+   "date": "2026-05-01",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "geojson"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:6ac6b9d943e1ad72a7d2962b": {
+   "url": "https://www.data.gouv.fr/datasets/coeur-du-parc-national-de-forts-20261007153032",
+   "cc": "FR",
+   "title": "Coeur du Parc national de forêts",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "odc-odbl",
+   "date": "2026-10-08",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "gpkg",
+    "pdf"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:6ac6b9da43e1ad72a7d2962d": {
+   "url": "https://www.data.gouv.fr/datasets/communes-du-parc-national-de-forts-20261007154138",
+   "cc": "FR",
+   "title": "Communes du Parc national de forêts",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "odc-odbl",
+   "date": "2026-10-08",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "gpkg"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:69f425639664a2192c2c49dc": {
+   "url": "https://www.data.gouv.fr/datasets/communes-du-parc-naturel-regional-du-morvan-2020-2035-1",
+   "cc": "FR",
+   "title": "Communes du Parc naturel régional du Morvan",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "lov2",
+   "date": "2026-05-01",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "csv",
+    "geojson"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:69f425609664a2192c2c49da": {
+   "url": "https://www.data.gouv.fr/datasets/communes-partenaires-du-parc-naturel-regional-du-morvan-charte-2020-2035-1",
+   "cc": "FR",
+   "title": "Communes partenaires du Parc naturel régional du Morvan",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "lov2",
+   "date": "2026-05-01",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "csv",
+    "geojson"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:5be062a0634f4148058b19a2": {
+   "url": "https://www.data.gouv.fr/datasets/coeur-du-parc-national-des-cevennes",
+   "cc": "FR",
+   "title": "Cœur du Parc national des Cévennes",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "odc-odbl",
+   "date": "2022-07-18",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "geojson",
+    "gpkg",
+    "gpx",
+    "zip"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:69f425599664a2192c2c49d4": {
+   "url": "https://www.data.gouv.fr/datasets/departements-du-parc-naturel-regional-du-morvan-perimetre-integral-1",
+   "cc": "FR",
+   "title": "Départements du Parc naturel régional du Morvan",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "lov2",
+   "date": "2026-05-01",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "csv",
+    "geojson"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:673785adede507b7dec253b1": {
+   "url": "https://www.data.gouv.fr/datasets/espace-naturel-protege-pn",
+   "cc": "FR",
+   "title": "Espace Naturel Protégé PN",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "lov2",
+   "date": "2022-12-22",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "esri shape"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:69f4254d9664a2192c2c49ca": {
+   "url": "https://www.data.gouv.fr/datasets/grandes-itinerances-dans-le-parc-naturel-regional-du-morvan-1",
+   "cc": "FR",
+   "title": "Grandes Itinérances dans le Parc naturel régional du Morvan",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "lov2",
+   "date": "2026-05-01",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "csv",
+    "geojson"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:559b9e35c751df4381390bd7": {
+   "url": "https://www.data.gouv.fr/datasets/inpn-donnees-du-programme-espaces-proteges",
+   "cc": "FR",
+   "title": "INPN - Données du programme 'Espaces Protégés'",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "other-open",
+   "date": "2025-08-28",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "shape",
+    "shapefile"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:689d9232041749f3afbd1e04": {
+   "url": "https://www.data.gouv.fr/datasets/itineraires-pedestres-du-parc-national-de-port-cros",
+   "cc": "FR",
+   "title": "Itinéraires pédestres du Parc national de Port-Cros",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "lov2",
+   "date": "2026-09-28",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "csv",
+    "geojson"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:6aba3ca57d893e3869d17f62": {
+   "url": "https://www.data.gouv.fr/datasets/itineraires-velo-du-parc-national-de-port-cros",
+   "cc": "FR",
+   "title": "Itinéraires vélo du Parc national de Port-Cros",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "lov2",
+   "date": "2026-09-28",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "csv",
+    "geojson"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:5fb4f57986c6efd5d795e36c": {
+   "url": "https://www.data.gouv.fr/datasets/limite-de-laire-dadhesion-du-parc-national-du-mercantour",
+   "cc": "FR",
+   "title": "Limite de l'aire d'adhésion du parc national du Mercantour",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "cc-by",
+   "date": "2026-05-22",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "geojson",
+    "gpkg",
+    "zip"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:5c45e9df634f411e4a3b06ce": {
+   "url": "https://www.data.gouv.fr/datasets/limite-du-coeur-du-parc-national-du-mercantour",
+   "cc": "FR",
+   "title": "Limite du coeur du parc national du Mercantour",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "cc-by",
+   "date": "2026-05-22",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "geojson",
+    "gpkg",
+    "zip"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:6a5e28d7ef41efc2931b7b1d": {
+   "url": "https://www.data.gouv.fr/datasets/massifs-du-parc-national-des-cevennes",
+   "cc": "FR",
+   "title": "Massifs du Parc national des Cévennes",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "odc-odbl",
+   "date": "2026-07-21",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "gpkg"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:68647a8441afac5499cfeea7": {
+   "url": "https://www.data.gouv.fr/datasets/occupation-du-sol-parc-naturel-regional-vercors-mutation-1994-2005",
+   "cc": "FR",
+   "title": "Occupation du sol - Parc Naturel Régional Vercors - mutation 1994/2005",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "lov2",
+   "date": "2025-07-02",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "ogc:wms",
+    "www:downlo"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:68647a3541afac5499cfee9f": {
+   "url": "https://www.data.gouv.fr/datasets/occupation-du-sol-parc-naturel-regional-du-vercors-1994",
+   "cc": "FR",
+   "title": "Occupation du sol - Parc Naturel Régional du Vercors - 1994",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "lov2",
+   "date": "2025-07-02",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "ogc:wms",
+    "www:downlo"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:68647b0e41afac5499cfeeae": {
+   "url": "https://www.data.gouv.fr/datasets/occupation-du-sol-parc-naturel-regional-du-vercors-2005",
+   "cc": "FR",
+   "title": "Occupation du sol - Parc Naturel Régional du Vercors - 2005",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "lov2",
+   "date": "2025-07-02",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "ogc:wms",
+    "www:downlo"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:6842687f9515b580f52f1794": {
+   "url": "https://www.data.gouv.fr/datasets/plu-bioclimatique-espaces-libres-proteges-a-vegetaliser",
+   "cc": "FR",
+   "title": "PLU bioclimatique - Espaces libres protégés à végétaliser",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "odc-odbl",
+   "date": "2026-01-15",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "csv",
+    "json",
+    "pdf",
+    "zip"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:684268689515b580f52f1788": {
+   "url": "https://www.data.gouv.fr/datasets/plu-bioclimatique-espaces-verts-proteges",
+   "cc": "FR",
+   "title": "PLU bioclimatique - Espaces verts protégés",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "odc-odbl",
+   "date": "2025-06-05",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "csv",
+    "json",
+    "pdf",
+    "zip"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:673784be2ddfd17942c40abc": {
+   "url": "https://www.data.gouv.fr/datasets/parc-naturel-regional-1",
+   "cc": "FR",
+   "title": "Parc naturel régional",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "lov2",
+   "date": "2022-09-28",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "esri shape"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:69f4254a9664a2192c2c49c7": {
+   "url": "https://www.data.gouv.fr/datasets/parcelles-acquises-par-le-parc-naturel-regional-du-morvan-1",
+   "cc": "FR",
+   "title": "Parcelles acquises par le Parc naturel régional du Morvan",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "lov2",
+   "date": "2026-05-01",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "csv",
+    "geojson"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:5bf8993d8b4c4168f870eb15": {
+   "url": "https://www.data.gouv.fr/datasets/patrimoines-des-randonnees-du-parc-national-des-ecrins",
+   "cc": "FR",
+   "title": "Patrimoines des randonnées du Parc national des Écrins",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "lov2",
+   "date": "2022-01-18",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "csv",
+    "geojson"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:6151d2ce307a964e59a56ba9": {
+   "url": "https://www.data.gouv.fr/datasets/plan-de-circulation-du-parc-national-des-cevennes",
+   "cc": "FR",
+   "title": "Plan de circulation du Parc national des Cévennes",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "odc-odbl",
+   "date": "2021-09-27",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "geojson",
+    "gpkg",
+    "gpx",
+    "zip"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:69f425439664a2192c2c49c1": {
+   "url": "https://www.data.gouv.fr/datasets/producteurs-de-cabrache-dans-le-parc-naturel-regional-du-morvan-1",
+   "cc": "FR",
+   "title": "Producteurs de Cabrache dans le Parc naturel régional du Morvan",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "lov2",
+   "date": "2026-05-01",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "csv",
+    "geojson"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:69f4254b9664a2192c2c49c8": {
+   "url": "https://www.data.gouv.fr/datasets/leader-1",
+   "cc": "FR",
+   "title": "Programme LEADER dans le Parc naturel Régional du Morvan",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "lov2",
+   "date": "2026-05-01",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "csv",
+    "geojson"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:69f425489664a2192c2c49c5": {
+   "url": "https://www.data.gouv.fr/datasets/perimetre-du-parc-naturel-regional-du-morvan-2020-2035-1",
+   "cc": "FR",
+   "title": "Périmètres du Parc naturel régional du Morvan",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "lov2",
+   "date": "2026-05-01",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "csv",
+    "geojson"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:5bf88cf28b4c4151e7a136d2": {
+   "url": "https://www.data.gouv.fr/datasets/randonnees-du-parc-national-des-ecrins",
+   "cc": "FR",
+   "title": "Randonnées du Parc national des Écrins",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "lov2",
+   "date": "2022-01-25",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "csv",
+    "geojson"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:69f6ba4075697315fe2c49ad": {
+   "url": "https://www.data.gouv.fr/datasets/reserves-naturelles-nationales-rnn-en-bourgogne-franche-comte-2",
+   "cc": "FR",
+   "title": "Réserves Naturelles Nationales (RNN) en Bourgogne-Franche-Comté",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "lov2",
+   "date": "2026-05-03",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "ods",
+    "shp"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:5c4ae6d49ce2e71b15275b74": {
+   "url": "https://www.data.gouv.fr/datasets/reserves-naturelles-regionales",
+   "cc": "FR",
+   "title": "Réserves naturelles régionales",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "lov2",
+   "date": "2018-10-01",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "csv",
+    "json",
+    "parquet",
+    "zip"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:5bd89d9b06e3e738f68c0ebf": {
+   "url": "https://www.data.gouv.fr/datasets/reserves-naturelles-regionales-rnr",
+   "cc": "FR",
+   "title": "Réserves naturelles régionales (RNR)",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "lov2",
+   "date": "2026-10-01",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "csv",
+    "json",
+    "zip"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:5b4cd6caa3a72973e1e1c340": {
+   "url": "https://www.data.gouv.fr/datasets/reserves-naturelles-regionales-des-pays-de-la-loire",
+   "cc": "FR",
+   "title": "Réserves naturelles régionales des Pays de la Loire",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "odc-odbl",
+   "date": "2026-09-30",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "csv",
+    "json",
+    "shp",
+    "zip"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:6a5e30baa06b315b10716d8b": {
+   "url": "https://www.data.gouv.fr/datasets/secteurs-du-coeur-du-parc-national-des-cevennes",
+   "cc": "FR",
+   "title": "Secteurs du cœur du Parc national des Cévennes",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "odc-odbl",
+   "date": "2026-07-21",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "gpkg"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "https://datacarto.sigena.fr/wfs": {
+   "url": "https://datacarto.sigena.fr/wfs",
+   "cc": "FR",
+   "title": "WFS datacarto.sigena.fr",
+   "publisher": "datacarto.sigena.fr",
+   "catalog": "WFS capabilities",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "area",
+    "outline"
+   ],
+   "layers": [
+    {
+     "name": "Ex-reservesnaturellesregionales",
+     "type": "ms:Ex-reservesnaturellesregionales",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "InstallationsClasseespourlaprotectiondelenvironnement",
+     "type": "ms:InstallationsClasseespourlaprotectiondelenvironnement",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "ParcseoliensenPoitouCharentes",
+     "type": "ms:ParcseoliensenPoitouCharentes",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "ZonesvulnerablesenPoitouCharen",
+     "type": "ms:ZonesvulnerablesenPoitouCharen",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "RA2010DONNEESPARCANTONSANSSECR",
+     "type": "ms:RA2010DONNEESPARCANTONSANSSECR",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Limitesseparantlesbassinsversa",
+     "type": "ms:Limitesseparantlesbassinsversa",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Zonehumidedimportanceinternati",
+     "type": "ms:Zonehumidedimportanceinternati",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "PrelocalisationdesZoneshumides",
+     "type": "ms:PrelocalisationdesZoneshumides",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Fondsnationalderevitalisationd",
+     "type": "ms:Fondsnationalderevitalisationd",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "GEOFLAlimitesdescommunesenFran",
+     "type": "ms:GEOFLAlimitesdescommunesenFran",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Zone1vecteurdelaprotectiondese",
+     "type": "ms:Zone1vecteurdelaprotectiondese",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Zone2vecteurdelaprotectiondese",
+     "type": "ms:Zone2vecteurdelaprotectiondese",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    }
+   ],
+   "note": "300 feature types listed",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 2,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://geobretagne.fr/geoserver/pnra/wms": {
+   "url": "https://geobretagne.fr/geoserver/pnra/wms",
+   "cc": "FR",
+   "title": "WFS geobretagne.fr",
+   "publisher": "Partenariat GeoBretagne",
+   "catalog": "WFS capabilities",
+   "licence": "NONE Avant toute utilisation des données, consultez la fiche métadonnées associée à chaque couche.",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "area",
+    "outline"
+   ],
+   "layers": [
+    {
+     "name": "Grands ensembles paysagers du PNR Armorique",
+     "type": "pnra:plan_parc_pnra",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Natura 2000 dans le PNRA",
+     "type": "pnra:natura2000_pnra",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Nature ordinaire (PNRA)",
+     "type": "pnra:nature_ordinaire_pnra",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Nature ordinaire paysage (PNRA)",
+     "type": "pnra:nature_ordinaire_paysage_pnra",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Paysage caractère (PNRA)",
+     "type": "pnra:paysage_caractere_pnra",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Paysage remarquable (PNRA)",
+     "type": "pnra:paysage_remarquable_pnra",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Réserve Man and Biosphère (PNRA)",
+     "type": "pnra:mab_pnra",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Sites naturels à fort potentiel touristique (PNRA)",
+     "type": "pnra:site_naturel_tourisme_pnra",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Zone pub (PNRA)",
+     "type": "pnra:zone_pub_pnra",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    }
+   ],
+   "note": "38 feature types listed",
+   "grade": 2,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://geobretagne.fr/geoserver/dreal_b/wms": {
+   "url": "https://geobretagne.fr/geoserver/dreal_b/wms",
+   "cc": "FR",
+   "title": "WFS geobretagne.fr",
+   "publisher": "Partenariat GeoBretagne",
+   "catalog": "WFS capabilities",
+   "licence": "no conditions apply otherRestrictions",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "area",
+    "outline"
+   ],
+   "layers": [
+    {
+     "name": "Actions Natura 2000 en Bretagne",
+     "type": "dreal_b:N2000_Action",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Arrêtés préfectoraux de protection des habitats naturels en Bretagne",
+     "type": "dreal_b:APHN",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Atlas des zones inondables en Bretagne",
+     "type": "dreal_b:azibretagne",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Contrats Natura 2000 en Bretagne",
+     "type": "dreal_b:N2000_Contrat",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Digues de protection contre les inondations et les submersions en Bret",
+     "type": "dreal_b:digues_a_b_c_d",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Fréquence d'apparition des zones de putréfaction d’algues vertes sur 2",
+     "type": "dreal_b:algues_vertes_occurences_2010_2019",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Fréquence d'apparition des zones de putréfaction d’algues vertes sur 2",
+     "type": "dreal_b:algues_vertes_occurences_2008_2022",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Les forêts de la carte de Cassini",
+     "type": "dreal_b:foret_cassini",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "NATURA 2000 - Directive Habitats en Bretagne (ZSC)",
+     "type": "dreal_b:ZSC",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "NATURA 2000 - Directive Oiseaux en Bretagne (ZPS)",
+     "type": "dreal_b:ZPS",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "Nombre d'exploitations par typologie et zonages d'EQUINOXE",
+     "type": "dreal_b:equinoxe_nb_exploitations",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "PAOT - Natura 2000 / Actions prévues en Bretagne",
+     "type": "dreal_b:paot_rzp_natura2000_actions",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    }
+   ],
+   "note": "259 feature types listed",
+   "grade": 2,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://www.datasud.fr/geoserver/region-sud/ows": {
+   "url": "https://www.datasud.fr/geoserver/region-sud/ows",
+   "cc": "FR",
+   "title": "WFS www.datasud.fr",
+   "publisher": "DATASUD",
+   "catalog": "WFS capabilities",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "area",
+    "outline"
+   ],
+   "layers": [
+    {
+     "name": "Region_SUD_limites_geographiques_departement.zip",
+     "type": "region-sud:region_sud_limites_geographiques_departement.zip",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "Réserves naturelles régionales",
+     "type": "region-sud:reserves-naturelles-regionales",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "osm : Limite - lignes",
+     "type": "region-sud:osm-limite-lignes",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "osm : Limites - points",
+     "type": "region-sud:osm-limites-points",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "osm : Limites - polygones",
+     "type": "region-sud:osm-limites-polygones",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "osm : Limites - relations - lignes",
+     "type": "region-sud:osm-limites-relations-lignes",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "osm : Limites - relations - polygones",
+     "type": "region-sud:osm-limites-relations-polygones",
+     "geom": "unknown (WFS)",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A) (geometry not read)"
+    },
+    {
+     "name": "osm : Nature des terrains - lignes",
+     "type": "region-sud:osm-nature-des-terrains-lignes",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "osm : Nature des terrains - points",
+     "type": "region-sud:osm-nature-des-terrains-points",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "osm : Nature des terrains - polygones",
+     "type": "region-sud:osm-nature-des-terrains-polygones",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "osm : Parcs relais - points",
+     "type": "region-sud:osm-parcs-relais-points",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    },
+    {
+     "name": "osm : Parcs relais - polygones",
+     "type": "region-sud:osm-parcs-relais-polygones",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field (geometry not read)"
+    }
+   ],
+   "note": "191 feature types listed",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 2,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "dl:6a4b7f961d7ecb5a4eb55b27": {
+   "url": "https://www.data.gouv.fr/datasets/dreal-occitanie-reserves-naturelles-nationales-en-occitanie",
+   "cc": "FR",
+   "title": "[DREAL OCCITANIE] Réserves Naturelles Nationales en Occitanie",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "notspecified",
+   "date": "2019-01-21",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "zip"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:67fd1daa354e533abbe73f29": {
+   "url": "https://www.data.gouv.fr/datasets/perimetre-du-parc-naturel-regional-du-vercors",
+   "cc": "FR",
+   "title": "périmètre du parc naturel régional du Vercors",
+   "publisher": "",
+   "catalog": "catalog www.data.gouv.fr",
+   "licence": "notspecified",
+   "date": "2025-06-30",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "gpkg"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  }
+ }
+}
