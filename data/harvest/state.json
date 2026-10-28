@@ -592,31 +592,473 @@
     "eea"
    ],
    "finished": "2026-10-28"
+  },
+  "JP": {
+   "status": "done",
+   "started": "2026-10-28",
+   "done": [],
+   "log": [
+    {
+     "catalog": "https://data.e-gov.go.jp/data",
+     "keyword": "国立公園",
+     "error": "HTTP 400"
+    },
+    {
+     "catalog": "https://data.e-gov.go.jp/data",
+     "keyword": "国定公園",
+     "error": "HTTP 400"
+    },
+    {
+     "catalog": "https://data.e-gov.go.jp/data",
+     "keyword": "自然公園",
+     "error": "HTTP 400"
+    },
+    {
+     "catalog": "https://data.e-gov.go.jp/data",
+     "keyword": "保護区",
+     "error": "HTTP 400"
+    },
+    {
+     "agol": "国立公園",
+     "hits": 9,
+     "read": 0
+    },
+    {
+     "agol": "国定公園",
+     "hits": 17,
+     "read": 0
+    },
+    {
+     "agol": "自然公園",
+     "hits": 21,
+     "read": 0
+    },
+    {
+     "agol": "保護区",
+     "hits": 29,
+     "read": 0
+    },
+    {
+     "agol": "national park",
+     "hits": 17,
+     "read": 0
+    }
+   ],
+   "steps": [
+    "orgs",
+    "servers",
+    "wfs",
+    "catalogs",
+    "search",
+    "eea"
+   ],
+   "finished": "2026-10-28"
+  },
+  "DE": {
+   "status": "done",
+   "started": "2026-10-28",
+   "done": [
+    "https://geodienste.bfn.de/ogc/wfs/",
+    "https://services1.arcgis.com/RTK5Unh1Z71JKIiR/arcgis/rest/services/FFH/FeatureServer",
+    "https://services1.arcgis.com/RTK5Unh1Z71JKIiR/arcgis/rest/services/Vogelschutzgebiete/FeatureServer"
+   ],
+   "log": [
+    {
+     "step": "wfs",
+     "what": "https://geodienste.bfn.de/ogc/wfs/: HTTP 404"
+    },
+    {
+     "catalog": "https://www.govdata.de/ckan",
+     "keyword": "Nationalpark",
+     "error": "robots.txt says no"
+    },
+    {
+     "catalog": "https://www.govdata.de/ckan",
+     "keyword": "Naturschutzgebiet",
+     "error": "robots.txt says no"
+    },
+    {
+     "catalog": "https://www.govdata.de/ckan",
+     "keyword": "Naturpark",
+     "error": "robots.txt says no"
+    },
+    {
+     "catalog": "https://www.govdata.de/ckan",
+     "keyword": "Schutzgebiet",
+     "error": "robots.txt says no"
+    },
+    {
+     "agol": "Nationalpark",
+     "hits": 30,
+     "read": 2
+    },
+    {
+     "agol": "Naturschutzgebiet",
+     "hits": 11,
+     "read": 0
+    },
+    {
+     "agol": "Naturpark",
+     "hits": 6,
+     "read": 0
+    },
+    {
+     "agol": "Schutzgebiet",
+     "hits": 24,
+     "read": 0
+    },
+    {
+     "agol": "Biosphärenreservat",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "agol": "Landschaftsschutzgebiet",
+     "hits": 8,
+     "read": 0
+    },
+    {
+     "step": "eea",
+     "what": "https://bio.discomap.eea.europa.eu/arcgis/rest/services: HTTP 502 three times: left alone for a day"
+    }
+   ],
+   "steps": [
+    "orgs",
+    "servers",
+    "wfs",
+    "catalogs",
+    "search",
+    "eea"
+   ],
+   "finished": "2026-10-28"
+  },
+  "PL": {
+   "status": "done",
+   "started": "2026-10-28",
+   "done": [
+    "http://mapy.geoportal.gov.pl/wss/service/ATOM/httpauth/atom/PS",
+    "https://mapserver.bdl.lasy.gov.pl/ArcGIS/services/WMS_BDL_kat_wlasnosci/MapServer/WMSServer",
+    "https://ogcapi.bdl.lasy.gov.pl",
+    "https://wfs.bdl.lasy.gov.pl/geoserver/BDL/ows"
+   ],
+   "log": [
+    {
+     "step": "server",
+     "what": "https://powietrze.gios.gov.pl/arcgis/rest/services: HTTP 404"
+    },
+    {
+     "step": "wfs",
+     "what": "http://mapy.geoportal.gov.pl/wss/service/ATOM/httpauth/atom/PS: 0 feature types, 0 look like park layers"
+    },
+    {
+     "step": "wfs",
+     "what": "https://mapserver.bdl.lasy.gov.pl/ArcGIS/services/WMS_BDL_kat_wlasnosci/MapServer/WMSServer: 0 feature types, 0 look like park layers"
+    },
+    {
+     "step": "wfs",
+     "what": "https://ogcapi.bdl.lasy.gov.pl: 0 feature types, 0 look like park layers"
+    },
+    {
+     "step": "wfs",
+     "what": "https://wfs.bdl.lasy.gov.pl/geoserver/BDL/ows: 0 feature types, 0 look like park layers"
+    },
+    {
+     "catalog": "https://api.dane.gov.pl/1.4",
+     "keyword": "park narodowy",
+     "hits": 30,
+     "services_read": 0,
+     "downloads_listed": 6
+    },
+    {
+     "catalog": "https://api.dane.gov.pl/1.4",
+     "keyword": "park krajobrazowy",
+     "hits": 30,
+     "services_read": 0,
+     "downloads_listed": 6
+    },
+    {
+     "catalog": "https://api.dane.gov.pl/1.4",
+     "keyword": "rezerwat przyrody",
+     "hits": 30,
+     "services_read": 0,
+     "downloads_listed": 0
+    },
+    {
+     "catalog": "https://api.dane.gov.pl/1.4",
+     "keyword": "formy ochrony przyrody",
+     "hits": 30,
+     "services_read": 0,
+     "downloads_listed": 3
+    },
+    {
+     "agol": "park narodowy",
+     "hits": 2,
+     "read": 0
+    },
+    {
+     "agol": "park krajobrazowy",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "agol": "rezerwat przyrody",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "agol": "formy ochrony przyrody",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "agol": "obszar chroniony",
+     "hits": 0,
+     "read": 0
+    }
+   ],
+   "steps": [
+    "orgs",
+    "servers",
+    "wfs",
+    "catalogs",
+    "search",
+    "eea"
+   ],
+   "finished": "2026-10-28"
+  },
+  "AU": {
+   "status": "paused (out of time, will carry on)",
+   "started": "2026-10-28",
+   "done": [
+    "https://mapprod3.environment.nsw.gov.au/arcgis/rest/services/Planning/EPI_Primary_Planning_Layers/MapServer/2",
+    "https://public-services.slip.wa.gov.au/public/rest/services/Land_Monitor/Land_Monitor/MapServer",
+    "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Imagery/Wooroloo_Bushfire_05_02_2021/MapServer",
+    "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Map_of_Bush_Fire_Prone_Areas_3/MapServer",
+    "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer",
+    "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/WA_Bathymetry/MapServer",
+    "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer",
+    "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer",
+    "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Buildings_and_Structures/MapServer",
+    "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Buildings_and_Structures_WFS/MapServer",
+    "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Bush_Fire_Prone_Areas/MapServer",
+    "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Bush_Fire_Prone_Areas_FS/MapServer",
+    "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Capture_WA/MapServer",
+    "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Climate/MapServer",
+    "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Climate_WFS/MapServer",
+    "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DMIRS_Imagery_Service/MapServer",
+    "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide/MapServer",
+    "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer",
+    "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Defense/MapServer",
+    "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Defense_WFS/MapServer",
+    "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Disaster/MapServer",
+    "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Disaster_FS/MapServer",
+    "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Education/MapServer",
+    "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Education_WFS/MapServer",
+    "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment/MapServer",
+    "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment_WFS/MapServer",
+    "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming/MapServer",
+    "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming_WFS/MapServer",
+    "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Geology_and_Soils_Map/MapServer",
+    "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Geology_and_Soils_Map_WFS/MapServer",
+    "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Health/MapServer",
+    "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Health_WFS/MapServer",
+    "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Historic_Imagery/MapServer",
+    "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Historical_Cadastre/MapServer",
+    "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Historical_Cadastre_WFS/MapServer",
+    "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Imagery_and_Maps/MapServer",
+    "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Imagery_and_Maps_WFS/MapServer",
+    "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Industry_and_Mining_WFS/MapServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/AUS_Operating_Mines/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Addtitional_Land_Sites/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/BESS_Land_Oppotunities/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/BESS_Potential_Sites/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/BESS_Target_Sites/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Blanche_Buildings_Buffer_500m/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Boderdale_WF_59_X_WC_Preliminary_Layout_V01/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Boderdale_WF_63_X_BC_Preliminary_Layout_V01/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Boro_Building_Point/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Boro_Dwellings_1_5km_Buff/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Broom_Hill_High_Potential_Area/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Broom_Hill_Med_Potential_Area/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Building_Identification_Point/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Clermont_WF/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Coastal_Water_Area_Buffer_25km/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Coastal_Water_Area_Buffer_50km/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Coastal_Waters_Limits/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Coastline/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Coastline_Buffer_30km/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Coastline_Buffer_50km/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Com_Projects/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Competing_Projects/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Competitor_Polygons_AltEnergy/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Competitor_Sites/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Dwellings/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Dwellings_1500m_Buff/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/EE_Overhead_Span_Transmission/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/EV_Origination_Candidate_Site/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Enhar_ReGen_5MW_search_radius/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Enhar_Regen_Team_Locations/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Essential_Energy_Substation/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Exploration_Mining_Title_Applications/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Flat_and_Good_Wind_Resource/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Flood_Risk___Rapid_Hazard_Assessment/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Freeways_and_Highways/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Future_Development_Construction_Network/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Future_Substation_and_CEV/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Future_Transmission_Line/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Goulburn_Dwellings_1500m_Buff/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Green_Projects/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Host_800m_Buffer/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/HydroArea/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Indigenous_Land_Use_Agreements/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Land_Assessment_for_ENEL_Project___Interactive_Map_WFL1/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/LocalGoverment_LGATE_233_3857/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/LocalityAndDistrict_Boundary/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/MSES_protected_area_nature_refuges/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Minor_Roads/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/NEW_REZ_Boundaries/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/NSW_Distribution_Substation/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/NSW_Flood_Risk/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/NSW_Land_Prospect/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/NSW_Local_Govenrment_Area/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/NSW_PE_Wind_Pockets/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/NSW_Suitable_Land_Sites_V1/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/NSW_Trundle_2nd_Priority_Zone/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/NSW_Vortex_Wind_Resource/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/NT_Airports/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/NT_GAS_Pipelines_1/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/NT_Land_Prospect_V1/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/NT_Trans_Line_15km_Buff/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/NT_Waterbody/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/New_England_Hubs_and_Substations/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/New_England_Route/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/New_Target_Zones_NSW_Goulburn/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Non_host_1500m_Buffer/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Power_Plant_Substations/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Powercor/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Property_Boundary/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Proposed_BESS_Land_Prospects/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Proposed_HVDC_Transmission_Line/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Prospective_Project_Boundary/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Protected_areas/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/QLD_Airports/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/QLD_Airports_Buffer_15km/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/QLD_BESS_Target_Sites/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/QLD_Enhar_WFL1/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/QLD_Mining_Leases_and_with_Licenses/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/QLD_Roads/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/QLD_Rural_Properties/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/QLD_TNRM_Rural_Properties/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/QLD_Urban_Centres_and_Localities/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/QLD_Urban_Centres_and_Localities_10km_Buff/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/QLD_Vortex_Wind/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/RAPAD_Proposed_Line/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/RenMap__Competitor_Project_Point/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Resource_Reserve_Drill_Intercept/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Ryansbrook_Dwelling_Point/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/SA_1km_Buffer/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/SA_Building_Point/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/SA_Land_Prospect_BESS_org/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/SN_Project_Candidate/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/SWOP_10m_Buffer/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Salt_Water_Outlet_Pipe/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Suitable_Land_Sites/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/TAF_RD182_Prelim_Layout/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Target_Sites/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Townsites_LGate/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Townsites_LGate_10Km_Buff/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Transmission_Line_3km_Buff/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Transmission_Line_40km_Buffer/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Transmission_Lines/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Transmission_Lines_15km_Buff/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Transmission_Study_Corridor/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Transmission_Study_Corridor_15km_Buff/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Transmission_Substations/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Transmission_Substations2/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Trundle_WF_Zone1_Boundary/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Trundle_WF_Zone2_Boundary/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Trundle_WF_Zone3_Boundary/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/VIC_Flood/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/VIC_Land_Prospect_for_BESS/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/VIC_Proposed_Ren_Energy_Zones/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/VicGrid_Renewable_Generation/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Vicmap_Planning___Planning_Scheme_Zone_Polygon_2025_/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/WA_Airports/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/WA_Airports_15Km_Buffer/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/WA_Borderdale_Dwellings_2km_Buffer/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/WA_Cadastre/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/WA_Competitor_Flat_Rock_Alignment/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/WA_Competitor_Flat_Rock_Point/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/WA_Suitable_Land_Suites_V1/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/WA_Vortex_Wind_Resource/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/WA_WindFarm_Search/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Watercourses_NE_NSW/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Zeta_Energy_Group/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/survey123_7dcdb607ed074c7bb8f73aa3b82632d9/FeatureServer",
+    "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/survey123_7dcdb607ed074c7bb8f73aa3b82632d9_form/FeatureServer",
+    "https://services.arcgis.com/1G2EoGF80ChC3Y1o/arcgis/rest/services/Victorian_Irrigation_District/FeatureServer",
+    "https://tiles-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Anduramba_WS/MapServer",
+    "https://tiles-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Boro_ws_online/MapServer",
+    "https://tiles-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Boulder_creek_Online/MapServer",
+    "https://tiles-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Clermont_WS_150m/MapServer",
+    "https://tiles-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/East_Kojonup_ws_50m/MapServer",
+    "https://tiles-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Goulburn2_Online/MapServer",
+    "https://tiles-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Goulburn_WS_100m_Online/MapServer",
+    "https://tiles-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Hunter_REZ_WS_Vortex_150m_online/MapServer",
+    "https://tiles-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Koj_Wind_Speed_Tile_Cache/MapServer",
+    "https://tiles-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Nebo_WS/MapServer",
+    "https://tiles-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/New_England_REZ_WS1km_Online/MapServer",
+    "https://tiles-ap1.arcgis.com/s047i49VH0D2nqIM/arcgis/rest/services/Trundle2_online/MapServer"
+   ],
+   "log": [
+    {
+     "step": "org",
+     "what": "org s047i49VH0D2nqIM (GIS Team): 142 services read"
+    },
+    {
+     "step": "server",
+     "what": "https://gisext.qfes.qld.gov.au/arcgis/rest/services: no answer three times: left alone for a day"
+    },
+    {
+     "step": "server",
+     "what": "https://public-services.slip.wa.gov.au/public/rest/services: 6 folders, 37 services read"
+    }
+   ],
+   "steps": [
+    "orgs"
+   ]
   }
  },
  "last_run": {
   "date": "2026-10-28",
   "stats": {
-   "requests": 37,
+   "requests": 1506,
    "hits": 0,
-   "leads": 6,
-   "already_read": 4,
-   "skipped": 0,
-   "not_official": 180,
+   "leads": 15,
+   "already_read": 0,
+   "skipped": 29,
+   "not_official": 305,
    "robots": 4,
-   "strikes": 0,
-   "errors": 4
+   "strikes": 7,
+   "errors": 12
   },
   "countries": [
-   "GB done: 6 leads (A 3), known-good found 1 of 2"
+   "JP done: 0 leads (A 0), known-good found 0 of 0",
+   "DE done: 2 leads (A 2), known-good found 0 of 1",
+   "PL done: 13 leads (A 0), known-good found 0 of 3",
+   "AU paused: 13 leads (A 10), known-good found 1 of 5"
   ],
-  "dead_servers": [],
+  "dead_servers": [
+   "bio.discomap.eea.europa.eu",
+   "gisext.qfes.qld.gov.au"
+  ],
   "robots_refused": {
-   "ckan.publishing.service.gov.uk": 4
+   "www.govdata.de": 4
   },
   "robots_said": {
-   "ckan.publishing.service.gov.uk": "User-agent: * | Disallow: /"
+   "www.govdata.de": "User-agent: Googlebot | Disallow: /*?*ids= | Crawl-delay: 10 | User-agent: bingbot | Disallow: /*?*ids= | Crawl-delay: 10 | User-agent: YandexBot | Disallow: /*"
   },
   "robots_exempted_hosts (HQ ruling Oct 27: ArcGIS REST API paths only)": {}
- }
+ },
+ "eea_done": "2026-10-28"
 }

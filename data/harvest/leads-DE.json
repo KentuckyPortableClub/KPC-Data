@@ -1,0 +1,129 @@
+{
+ "about": "World harvester leads for Germany (official park GIS only; leads for chat 8, never added to the key by the bot).",
+ "cc": "DE",
+ "date": "2026-10-28",
+ "status": "done",
+ "steps_done": [
+  "orgs",
+  "servers",
+  "wfs",
+  "catalogs",
+  "search",
+  "eea"
+ ],
+ "bands": {
+  "A": 2,
+  "B": 0,
+  "C": 0
+ },
+ "known_good_found": [],
+ "known_good_missed": [
+  "https://geodienste.bfn.de/ogc/wfs/"
+ ],
+ "leads": {
+  "https://services1.arcgis.com/rtk5unh1z71jkiir/arcgis/rest/services/ffh": {
+   "url": "https://services1.arcgis.com/RTK5Unh1Z71JKIiR/arcgis/rest/services/FFH/FeatureServer",
+   "cc": "DE",
+   "title": "FFH",
+   "publisher": "World Wide Fund for Nature",
+   "catalog": "ArcGIS Online search",
+   "licence": "Verfügbarkeit: -Offenheit der Lizenz:  Freie Nutzung  Nutzungsbedingungen:  Nutzungsbestimmungen für die Bereitstellung von Geodaten des Bundes   Namensnennungstext: Quelle: Bundesamt für Naturschutz ",
+   "date": "2024-01-22",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "FHGebiete2019",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "GmlID",
+      "OBJECTID",
+      "NAME",
+      "BFN_ID",
+      "BL",
+      "ID",
+      "LEG_DATE",
+      "LEG_TITEL",
+      "MARIN_AREA",
+      "BIOGEO",
+      "FLAECHE",
+      "WRRL",
+      "LINK",
+      "SITECODE",
+      "Shape_Leng",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 48,
+     "sample": [
+      "Wismarbucht",
+      "Erweiterung Wismarbucht",
+      "Riedensee"
+     ],
+     "name_field": "NAME"
+    }
+   ],
+   "note": "FFH-Gebiete (2019, marinen Schutzgebiete in Deutschland) ",
+   "grade": 5,
+   "band": "A"
+  },
+  "https://services1.arcgis.com/rtk5unh1z71jkiir/arcgis/rest/services/vogelschutzgebiete": {
+   "url": "https://services1.arcgis.com/RTK5Unh1Z71JKIiR/arcgis/rest/services/Vogelschutzgebiete/FeatureServer",
+   "cc": "DE",
+   "title": "Vogelschutzgebiete",
+   "publisher": "World Wide Fund for Nature",
+   "catalog": "ArcGIS Online search",
+   "licence": "Verfügbarkeit: -Offenheit der Lizenz:  Freie Nutzung  Nutzungsbedingungen:  Nutzungsbestimmungen für die Bereitstellung von Geodaten des Bundes   Namensnennungstext: Quelle: Bundesamt für Naturschutz ",
+   "date": "2024-01-22",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Vogelschutzgebiete2019",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "FID",
+      "GmlID",
+      "OBJECTID",
+      "NAME",
+      "BFN_ID",
+      "BL",
+      "ID",
+      "LEG_DATE",
+      "LEG_TITEL",
+      "MARIN_AREA",
+      "BIOGEO",
+      "FLAECHE",
+      "WRRL",
+      "LINK",
+      "SITECODE",
+      "Shape_Leng",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 30,
+     "sample": [
+      "Emsmarsch von Leer bis Emden",
+      "Unterweser",
+      "Hund und Paapsand"
+     ],
+     "name_field": "NAME"
+    }
+   ],
+   "note": "Vogelschutzgebiete (2019, marinen Schutzgebiete in Deutschland) ",
+   "grade": 5,
+   "band": "A"
+  }
+ }
+}

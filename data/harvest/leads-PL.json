@@ -1,0 +1,274 @@
+{
+ "about": "World harvester leads for Poland (official park GIS only; leads for chat 8, never added to the key by the bot).",
+ "cc": "PL",
+ "date": "2026-10-28",
+ "status": "done",
+ "steps_done": [
+  "orgs",
+  "servers",
+  "wfs",
+  "catalogs",
+  "search",
+  "eea"
+ ],
+ "bands": {
+  "A": 0,
+  "B": 0,
+  "C": 13
+ },
+ "known_good_found": [],
+ "known_good_missed": [
+  "https://ogcapi.bdl.lasy.gov.pl",
+  "https://powietrze.gios.gov.pl/arcgis/rest/services/MPP/FormyOchronyPrzyrody/MapServer",
+  "https://wfs.bdl.lasy.gov.pl/geoserver/BDL/ows"
+ ],
+ "leads": {
+  "dl:372": {
+   "url": "https://api.dane.gov.pl/1.4",
+   "cc": "PL",
+   "title": "Dane statystyczne dotyczące wniosków o udzielenie <mark>ochrony</mark> międzynarodowej w R",
+   "publisher": "",
+   "catalog": "catalog api.dane.gov.pl",
+   "licence": "",
+   "date": "2024-03-19",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:582": {
+   "url": "https://api.dane.gov.pl/1.4",
+   "cc": "PL",
+   "title": "Decyzje ministra właściwego do spraw wyznań religijnych oraz mniejszości <mark>narodowych<",
+   "publisher": "",
+   "catalog": "catalog api.dane.gov.pl",
+   "licence": "",
+   "date": "2026-01-13",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:2285": {
+   "url": "https://api.dane.gov.pl/1.4",
+   "cc": "PL",
+   "title": "Formularze KS2017 <mark>Park</mark> centralny</mark>",
+   "publisher": "",
+   "catalog": "catalog api.dane.gov.pl",
+   "licence": "",
+   "date": "2020-06-17",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:347": {
+   "url": "https://api.dane.gov.pl/1.4",
+   "cc": "PL",
+   "title": "Jednostki, którym przyznano dotacje celowe w części 43 budżetu państwa „Wyznania religijne",
+   "publisher": "",
+   "catalog": "catalog api.dane.gov.pl",
+   "licence": "",
+   "date": "2026-01-13",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:431": {
+   "url": "https://api.dane.gov.pl/1.4",
+   "cc": "PL",
+   "title": "NSP 2011 - Wybrane tablice dotyczące przynależności <mark>narodowo</mark>-etnicznej, język",
+   "publisher": "",
+   "catalog": "catalog api.dane.gov.pl",
+   "licence": "",
+   "date": "2024-03-19",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:276": {
+   "url": "https://api.dane.gov.pl/1.4",
+   "cc": "PL",
+   "title": "Nauka języków mniejszości <mark>narodowych</mark>, etnicznych i języka regionalnego</mark>",
+   "publisher": "",
+   "catalog": "catalog api.dane.gov.pl",
+   "licence": "",
+   "date": "2026-04-09",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:383": {
+   "url": "https://api.dane.gov.pl/1.4",
+   "cc": "PL",
+   "title": "Polska Klasyfikacja Obiektów Budowlanych (PKOB)",
+   "publisher": "",
+   "catalog": "catalog api.dane.gov.pl",
+   "licence": "",
+   "date": "2025-01-23",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:243": {
+   "url": "https://api.dane.gov.pl/1.4",
+   "cc": "PL",
+   "title": "Porównania międzynarodowe",
+   "publisher": "",
+   "catalog": "catalog api.dane.gov.pl",
+   "licence": "",
+   "date": "2025-01-23",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:3239": {
+   "url": "https://api.dane.gov.pl/1.4",
+   "cc": "PL",
+   "title": "Program priorytetowy \"Ochrona i przywracanie różnorodności biologicznej i <mark>krajobrazo",
+   "publisher": "",
+   "catalog": "catalog api.dane.gov.pl",
+   "licence": "",
+   "date": "2024-03-19",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:561": {
+   "url": "https://api.dane.gov.pl/1.4",
+   "cc": "PL",
+   "title": "Strategia komunikacji Funduszy Europejskich w Polsce w ramach <mark>Narodowej</mark> Strat",
+   "publisher": "",
+   "catalog": "catalog api.dane.gov.pl",
+   "licence": "",
+   "date": "2024-03-19",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:3364": {
+   "url": "https://api.dane.gov.pl/1.4",
+   "cc": "PL",
+   "title": "Wykaz chronionych danych DGA Babiogórskiego <mark>Parku</mark> Narodowego</mark>",
+   "publisher": "",
+   "catalog": "catalog api.dane.gov.pl",
+   "licence": "",
+   "date": "2024-03-19",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:3501": {
+   "url": "https://api.dane.gov.pl/1.4",
+   "cc": "PL",
+   "title": "Wykaz zasobów chronionych danych DGA - Olsztyński <mark>Park</mark> Naukowo-Technologiczny",
+   "publisher": "",
+   "catalog": "catalog api.dane.gov.pl",
+   "licence": "",
+   "date": "2024-03-19",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  },
+  "dl:3320": {
+   "url": "https://api.dane.gov.pl/1.4",
+   "cc": "PL",
+   "title": "Wykaz zasobów chronionych danych DGA - Wigierski <mark>Park</mark> Narodowy</mark>",
+   "publisher": "",
+   "catalog": "catalog api.dane.gov.pl",
+   "licence": "",
+   "date": "2024-03-19",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  }
+ }
+}
