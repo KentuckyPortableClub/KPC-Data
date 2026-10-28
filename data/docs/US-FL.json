@@ -8,18 +8,9 @@
    "page": "https://www.nps.gov/bisc/index.htm",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.nps.gov/bisc/planyourvisit/maps.htm",
-    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
-    "kind": "page",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Maps')",
-    "posted": "July 17, 2023",
-    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.nps.gov/bisc/planyourvisit/maps.htm)",
+    "how": "a link on the park's page ('Maps')"
    },
    "rules": {
     "url": "https://www.nps.gov/bisc/learn/management/lawsandpolicies.htm",
@@ -30,7 +21,23 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://www.nps.gov/bisc/planyourvisit/maps.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "July 17, 2023",
+     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-0023": {
    "n": "Dry Tortugas National Park",
@@ -61,7 +68,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0024": {
    "n": "Everglades National Park",
@@ -92,7 +99,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0231": {
    "n": "Archie Carr National Wildlife Refuge",
@@ -139,7 +146,7 @@
      "via": "the agency site"
     }
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-0232": {
    "n": "Arthur R. Marshall Loxahatchee National Wildlife Refuge",
@@ -186,7 +193,7 @@
      "via": "the agency site"
     }
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-0234": {
    "n": "Cedar Keys National Wildlife Refuge",
@@ -235,7 +242,7 @@
      "via": "the agency site"
     }
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-0235": {
    "n": "Chassahowitzka National Wildlife Refuge",
@@ -266,7 +273,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0236": {
    "n": "Crocodile Lake National Wildlife Refuge",
@@ -297,7 +304,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0237": {
    "n": "Crystal River National Wildlife Refuge",
@@ -328,7 +335,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0238": {
    "n": "Egmont Key National Wildlife Refuge",
@@ -361,7 +368,7 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0239": {
    "n": "Florida Panther National Wildlife Refuge",
@@ -408,7 +415,7 @@
      "via": "the agency site"
     }
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-0240": {
    "n": "Great White Heron National Wildlife Refuge",
@@ -441,7 +448,7 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0241": {
    "n": "Hobe Sound National Wildlife Refuge",
@@ -488,7 +495,7 @@
      "via": "the agency site"
     }
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-0243": {
    "n": "J.N. Ding Darling National Wildlife Refuge",
@@ -519,7 +526,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0244": {
    "n": "Key West National Wildlife Refuge",
@@ -552,7 +559,7 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0245": {
    "n": "Lake Wales Ridge Wildlife Management Area",
@@ -560,29 +567,50 @@
    "page": "https://myfwc.com/recreation/lead/lake-wales-ridge/",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://myfwc.com/hunting/wma-brochures/",
-    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
-    "kind": "page",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('WMA Brochures')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://myfwc.com/hunting/wma-brochures/; opened, a statewide map viewer, not this park's map (chat 8 F2) https://gis.myfwc.com/RecreationMap/)",
+    "how": "a link on the park's page ('WMA Brochures')"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://myfwc.com/hunting/wma-brochures/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('WMA Brochures')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://gis.myfwc.com/RecreationMap/",
+     "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+     "kind": "viewer (statewide)",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Explore by map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "same government (gis.myfwc.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-0246": {
    "n": "Lake Woodruff National Wildlife Refuge",
@@ -613,7 +641,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0247": {
    "n": "Lower Suwannee National Wildlife Refuge",
@@ -660,7 +688,7 @@
      "via": "the agency site"
     }
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-0249": {
    "n": "Merritt Island National Wildlife Refuge",
@@ -707,7 +735,7 @@
      "via": "the agency site"
     }
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-0250": {
    "n": "National Key Deer National Wildlife Refuge",
@@ -738,7 +766,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0252": {
    "n": "Pelican Island National Wildlife Refuge",
@@ -785,7 +813,7 @@
      "via": "the agency site"
     }
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-0256": {
    "n": "St. Marks National Wildlife Refuge",
@@ -832,7 +860,7 @@
      "via": "the agency site"
     }
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-0257": {
    "n": "St. Vincent National Wildlife Refuge",
@@ -863,7 +891,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0258": {
    "n": "Ten Thousand Islands National Wildlife Refuge",
@@ -894,7 +922,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0634": {
    "n": "Little Talbot State Park",
@@ -914,11 +942,9 @@
    "agency": "Florida State Parks (DEP)",
    "runs": [],
    "handover": [],
-   "notes": [
-    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
-   ],
+   "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-0635": {
    "n": "St. George State Park",
@@ -938,11 +964,9 @@
    "agency": "Florida State Parks (DEP)",
    "runs": [],
    "handover": [],
-   "notes": [
-    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
-   ],
+   "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-0658": {
    "n": "Timucuan Preserve National Conservation Area",
@@ -973,7 +997,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0659": {
    "n": "Big Cypress National Preserve",
@@ -1004,7 +1028,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0660": {
    "n": "Canaveral National Seashore",
@@ -1035,7 +1059,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0661": {
    "n": "Gulf Islands National Seashore",
@@ -1066,7 +1090,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0772": {
    "n": "De Soto National Memorial",
@@ -1097,7 +1121,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0775": {
    "n": "Fort Caroline National Memorial",
@@ -1118,7 +1142,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0896": {
    "n": "Wekiva National Wild and Scenic River",
@@ -1149,7 +1173,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0912": {
    "n": "Castillo de San Marcos National Monument",
@@ -1180,7 +1204,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-0927": {
    "n": "Fort Matanzas National Monument",
@@ -1211,7 +1235,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-10462": {
    "n": "DuPuis State Conservation Area",
@@ -1244,7 +1268,7 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-10463": {
    "n": "Price's Scrub State Park",
@@ -1266,8 +1290,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-10550": {
    "n": "Scanlon State Conservation Area",
@@ -1298,7 +1321,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-10551": {
    "n": "Falling Creek State Conservation Area",
@@ -1329,7 +1352,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-10552": {
    "n": "Fox Trail State Conservation Area",
@@ -1360,7 +1383,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-10553": {
    "n": "Guaranto State Conservation Area",
@@ -1391,7 +1414,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-10554": {
    "n": "Suwannee Street State Conservation Area",
@@ -1422,7 +1445,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-10559": {
    "n": "Camp Branch State Conservation Area",
@@ -1453,7 +1476,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-10565": {
    "n": "Stuart's Landing North State Conservation Area",
@@ -1484,7 +1507,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-10566": {
    "n": "Stuart's Landing South State Conservation Area",
@@ -1515,7 +1538,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-10567": {
    "n": "Hatchbend State Conservation Area",
@@ -1546,7 +1569,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-10568": {
    "n": "Trillium Slopes State Conservation Area",
@@ -1554,18 +1577,9 @@
    "page": "https://map.mysuwanneeriver.com/tracts/trillium-slopes/",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/07/map-legend.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": "2021-10-20",
-    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-    "how": "a link on the park's page ('Map Legend')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://map.mysuwanneeriver.com/wp-content/uploads/2021/07/map-legend.; opened, a page that does not name this park (a generic agency page is not its map) https://map.mysuwanneeriver.com/)",
+    "how": "a link on the park's page ('Map Legend')"
    },
    "rules": {
     "url": "",
@@ -1576,7 +1590,37 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/07/map-legend.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": "2021-10-20",
+     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+     "how": "a link on the park's page ('Map Legend')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://map.mysuwanneeriver.com/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-10569": {
    "n": "Hunter Creek State Conservation Area",
@@ -1584,18 +1628,9 @@
    "page": "https://map.mysuwanneeriver.com/tracts/hunter-creek/",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/07/map-legend.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": "2021-10-20",
-    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-    "how": "a link on the park's page ('Map Legend')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://map.mysuwanneeriver.com/wp-content/uploads/2021/07/map-legend.; opened, a page that does not name this park (a generic agency page is not its map) https://map.mysuwanneeriver.com/)",
+    "how": "a link on the park's page ('Map Legend')"
    },
    "rules": {
     "url": "",
@@ -1606,7 +1641,37 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/07/map-legend.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": "2021-10-20",
+     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+     "how": "a link on the park's page ('Map Legend')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://map.mysuwanneeriver.com/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-10570": {
    "n": "Belmont State Conservation Area",
@@ -1637,7 +1702,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-10571": {
    "n": "Avoca State Conservation Area",
@@ -1668,7 +1733,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-10588": {
    "n": "Branford-Bend State Conservation Area",
@@ -1699,7 +1764,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-10590": {
    "n": "Lake Alto State Conservation Area",
@@ -1730,7 +1795,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-10591": {
    "n": "Steinhatchee Rise State Conservation Area",
@@ -1761,7 +1826,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-10592": {
    "n": "Big Pine Tract State Conservation Area",
@@ -1792,7 +1857,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-10593": {
    "n": "New Pine Landing State Conservation Area",
@@ -1823,7 +1888,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-10594": {
    "n": "Manatee Springs South State Conservation Area",
@@ -1854,7 +1919,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-10601": {
    "n": "Suwannee Springs Park State Conservation Area",
@@ -1885,7 +1950,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-10602": {
    "n": "Linville State Conservation Area",
@@ -1916,7 +1981,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-10603": {
    "n": "Rocky Creek State Conservation Area",
@@ -1947,7 +2012,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-10604": {
    "n": "Blue Sink State Conservation Area",
@@ -1978,7 +2043,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-10614": {
    "n": "Roline State Conservation Area",
@@ -2009,7 +2074,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-10615": {
    "n": "Cypress Creek South State Conservation Area",
@@ -2040,7 +2105,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-10616": {
    "n": "Tyree State Conservation Area",
@@ -2071,7 +2136,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-10617": {
    "n": "Alapaha Bluffs State Conservation Area",
@@ -2102,7 +2167,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-10618": {
    "n": "Wolf Creek State Conservation Area",
@@ -2133,7 +2198,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-10619": {
    "n": "Little River Wildlife Management Area",
@@ -2141,29 +2206,50 @@
    "page": "https://myfwc.com/recreation/cooperative/little-river/",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://myfwc.com/hunting/wma-brochures/",
-    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
-    "kind": "page",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('WMA Brochures')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://myfwc.com/hunting/wma-brochures/; opened, a statewide map viewer, not this park's map (chat 8 F2) https://gis.myfwc.com/RecreationMap/)",
+    "how": "a link on the park's page ('WMA Brochures')"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://myfwc.com/hunting/wma-brochures/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('WMA Brochures')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://gis.myfwc.com/RecreationMap/",
+     "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+     "kind": "viewer (statewide)",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Explore by map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "same government (gis.myfwc.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-10620": {
    "n": "Jerry Branch State Conservation Area",
@@ -2194,7 +2280,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-11223": {
    "n": "Ruth B. Kirby Gilchrist Blue Springs State Park",
@@ -2216,8 +2302,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-12097": {
    "n": "Hickory Hammock Wildlife Management Area",
@@ -2225,29 +2310,50 @@
    "page": "https://myfwc.com/recreation/cooperative/hickory-hammock/",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://myfwc.com/hunting/wma-brochures/",
-    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
-    "kind": "page",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('WMA Brochures')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://myfwc.com/hunting/wma-brochures/; opened, a statewide map viewer, not this park's map (chat 8 F2) https://gis.myfwc.com/RecreationMap/)",
+    "how": "a link on the park's page ('WMA Brochures')"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://myfwc.com/hunting/wma-brochures/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('WMA Brochures')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://gis.myfwc.com/RecreationMap/",
+     "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+     "kind": "viewer (statewide)",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Explore by map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "same government (gis.myfwc.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-12121": {
    "n": "Lower Reedy Creek: Rough Island North and South, and Johnson Island State Conservation Area",
@@ -2280,7 +2386,7 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-12122": {
    "n": "S-65E Impoundment and Paradise Run State Conservation Area",
@@ -2313,7 +2419,7 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-12123": {
    "n": "Oak Creek, No Name Slough and Starvation Slough State Conservation Area",
@@ -2346,7 +2452,7 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-12124": {
    "n": "Harold A. Campbell Public Use and STA 3/4 State Conservation Area",
@@ -2354,18 +2460,9 @@
    "page": "https://www.sfwmd.gov/recreation-site/stormwater-treatment-area-34-sta-34-and-harold-campbell-public-use-area-0",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.sfwmd.gov/sites/default/files/documents/map_showing_public_access_to_stas.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Map of Public Access Locations for STAs [PDF]')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.sfwmd.gov/sites/default/files/documents/map_showing_public; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.sfwmd.gov/sites/default/files/documents/trailguide_h_campb)",
+    "how": "a link on the park's page ('Map of Public Access Locations for STAs [PDF]')"
    },
    "rules": {
     "url": "https://www.sfwmd.gov/doing-business-with-us/rules",
@@ -2378,7 +2475,37 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://www.sfwmd.gov/sites/default/files/documents/map_showing_public_access_to_stas.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map of Public Access Locations for STAs [PDF]')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://www.sfwmd.gov/sites/default/files/documents/trailguide_h_campbell.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Guide and Map - Harold A. Campbell Public Use Area [PDF]')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-12125": {
    "n": "Seaboard Marsh, Telex Marsh and Yates Marsh State Conservation Area",
@@ -2411,7 +2538,7 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-12126": {
    "n": "Stormwater Treatment Area 5/6 State Conservation Area",
@@ -2419,18 +2546,9 @@
    "page": "https://www.sfwmd.gov/recreation-site/stormwater-treatment-area-56-sta-56",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.sfwmd.gov/sites/default/files/documents/trailguide_sta5_6.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Trail Guide and Map – Stormwater Treatment Area 5/6 [PDF]')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.sfwmd.gov/sites/default/files/documents/trailguide_sta5_6.; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.sfwmd.gov/sites/default/files/documents/map_showing_public)",
+    "how": "a link on the park's page ('Trail Guide and Map – Stormwater Treatment Area 5/6 [PDF]')"
    },
    "rules": {
     "url": "https://www.sfwmd.gov/doing-business-with-us/rules",
@@ -2443,7 +2561,37 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://www.sfwmd.gov/sites/default/files/documents/trailguide_sta5_6.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Guide and Map – Stormwater Treatment Area 5/6 [PDF]')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://www.sfwmd.gov/sites/default/files/documents/map_showing_public_access_to_stas.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map of Public Access Locations for STAs [PDF]')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-12127": {
    "n": "Stormwater Treatment Area 1 West State Conservation Area",
@@ -2451,18 +2599,9 @@
    "page": "https://www.sfwmd.gov/recreation-site/stormwater-treatment-area-1-west-sta-1w",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.sfwmd.gov/sites/default/files/documents/map_showing_public_access_to_stas.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Map of Public Access Locations for STAs [PDF]')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.sfwmd.gov/sites/default/files/documents/map_showing_public; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.sfwmd.gov/sites/default/files/documents/trailguide_sta1w.p)",
+    "how": "a link on the park's page ('Map of Public Access Locations for STAs [PDF]')"
    },
    "rules": {
     "url": "https://www.sfwmd.gov/doing-business-with-us/rules",
@@ -2475,7 +2614,37 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://www.sfwmd.gov/sites/default/files/documents/map_showing_public_access_to_stas.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map of Public Access Locations for STAs [PDF]')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://www.sfwmd.gov/sites/default/files/documents/trailguide_sta1w.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Guide and Map - Stormwater Treatment Area 1 West [PDF]')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-12128": {
    "n": "Stormwater Treatment Area 1 East State Conservation Area",
@@ -2483,18 +2652,9 @@
    "page": "https://www.sfwmd.gov/recreation-site/stormwater-treatment-area-1-east-sta-1e",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.sfwmd.gov/sites/default/files/documents/map_showing_public_access_to_stas.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Map of Public Access Locations for STAs [PDF]')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.sfwmd.gov/sites/default/files/documents/map_showing_public; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.sfwmd.gov/sites/default/files/documents/trailguide_sta1e.p)",
+    "how": "a link on the park's page ('Map of Public Access Locations for STAs [PDF]')"
    },
    "rules": {
     "url": "https://www.sfwmd.gov/doing-business-with-us/rules",
@@ -2507,7 +2667,37 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://www.sfwmd.gov/sites/default/files/documents/map_showing_public_access_to_stas.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map of Public Access Locations for STAs [PDF]')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://www.sfwmd.gov/sites/default/files/documents/trailguide_sta1e.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": "2008-05-06",
+     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+     "how": "a link on the park's page ('Trail Guide and Map - Stormwater Treatment Area 1 East [PDF]')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-12129": {
    "n": "Shingle Creek State Conservation Area",
@@ -2538,7 +2728,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-12130": {
    "n": "Nubbin Slough Stormwater Treatment Area State Conservation Area",
@@ -2569,7 +2759,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-12131": {
    "n": "Loxahatchee River/Cypress Creek Management Area State Conservation Area",
@@ -2600,7 +2790,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-12132": {
    "n": "Chandler Slough State Conservation Area",
@@ -2633,7 +2823,7 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-12133": {
    "n": "Catfish Creek State Conservation Area",
@@ -2666,7 +2856,7 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-12134": {
    "n": "A-1 Flow Equalization Basin State Conservation Area",
@@ -2699,7 +2889,7 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-12135": {
    "n": "Myakka River — Flatford Swamp State Conservation Area",
@@ -2707,18 +2897,9 @@
    "page": "https://www.swfwmd.state.fl.us/recreation/myakka-river-flatford-swamp",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.swfwmd.state.fl.us/sites/default/files/Flatford%20Swamp%20Georeferenced%2009-15-2022.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Flatford Swamp Georeferenced map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.swfwmd.state.fl.us/sites/default/files/Flatford%20Swamp%20; opened, a statewide map viewer, not this park's map (chat 8 F2) https://www.arcgis.com/apps/webappviewer/index.html?id=da3616e735ee42e)",
+    "how": "a link on the park's page ('Flatford Swamp Georeferenced map')"
    },
    "rules": {
     "url": "",
@@ -2729,7 +2910,37 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://www.swfwmd.state.fl.us/sites/default/files/Flatford%20Swamp%20Georeferenced%2009-15-2022.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Flatford Swamp Georeferenced map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://www.arcgis.com/apps/webappviewer/index.html?id=da3616e735ee42e9ae2e4d74563a0f4a&extent=-9144686.9557%2C3175201.8142%2C-9141388.2202%2C3177356.3829%2C102100",
+     "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+     "kind": "viewer (statewide)",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('View Interactive Map of Area »')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 5
   },
   "US-12136": {
    "n": "Deep Creek Preserve Desoto County State Conservation Area",
@@ -2737,18 +2948,9 @@
    "page": "https://www.swfwmd.state.fl.us/recreation/deep-creek-preserve",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.swfwmd.state.fl.us/sites/default/files/Deep%20Creek%20Georeferenced%20%2003-02-2023.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Deep Creek Georeferenced map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.swfwmd.state.fl.us/sites/default/files/Deep%20Creek%20Geor; opened, a statewide map viewer, not this park's map (chat 8 F2) https://www.arcgis.com/apps/webappviewer/index.html?id=da3616e735ee42e)",
+    "how": "a link on the park's page ('Deep Creek Georeferenced map')"
    },
    "rules": {
     "url": "",
@@ -2759,7 +2961,37 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://www.swfwmd.state.fl.us/sites/default/files/Deep%20Creek%20Georeferenced%20%2003-02-2023.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Deep Creek Georeferenced map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://www.arcgis.com/apps/webappviewer/index.html?id=da3616e735ee42e9ae2e4d74563a0f4a&extent=-9132268.4476%2C3130023.5905%2C-9128969.7121%2C3132178.1592%2C102100",
+     "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+     "kind": "viewer (statewide)",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('View Interactive Map of Area »')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 5
   },
   "US-13011": {
    "n": "Shoal River Headwaters State Park",
@@ -2781,8 +3013,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1829": {
    "n": "Alafia River State Park",
@@ -2804,8 +3035,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1830": {
    "n": "Alfred B.Maclay Gardens State Park",
@@ -2827,8 +3057,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1831": {
    "n": "Amelia Island State Park",
@@ -2850,8 +3079,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1832": {
    "n": "Anastasia State Park",
@@ -2873,8 +3101,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1833": {
    "n": "Avalon State Park",
@@ -2896,8 +3123,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1834": {
    "n": "Bahia Honda State Park",
@@ -2919,8 +3145,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1835": {
    "n": "Bald Point State Park",
@@ -2942,8 +3167,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1836": {
    "n": "Barnacle State Park",
@@ -2965,8 +3189,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1837": {
    "n": "Big Lagoon State Park",
@@ -2988,8 +3211,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1838": {
    "n": "Big Shoals State Park",
@@ -3011,8 +3233,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1839": {
    "n": "Big Talbot Island State Park",
@@ -3034,8 +3255,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1840": {
    "n": "Bill Baggs Cape Florida State Park",
@@ -3057,8 +3277,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1841": {
    "n": "Blackwater River State Park",
@@ -3080,8 +3299,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1842": {
    "n": "Blue Spring State Park",
@@ -3103,8 +3321,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1843": {
    "n": "Bulow Creek State Park",
@@ -3126,8 +3343,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1844": {
    "n": "Caladesi Island State Park",
@@ -3149,8 +3365,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1845": {
    "n": "Camp Helen State Park",
@@ -3172,8 +3387,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1846": {
    "n": "Cayo Costa State Park",
@@ -3195,8 +3409,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1847": {
    "n": "Collier-Seminole State Park",
@@ -3204,18 +3417,9 @@
    "page": "https://www.floridastateparks.org/parks-and-trails/collier-seminole-state-park",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.floridastateparks.org/parks-and-trails/collier-seminole-state-park",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "",
-    "posted_how": "",
-    "names_park": null,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: HTTP 403 https://www.floridastateparks.org/parks-and-trails/collier-seminole-st)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
    },
    "rules": {
     "url": "https://www.floridastateparks.org/learn/rules-regulations",
@@ -3227,8 +3431,23 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the map link refused a plain reader (HTTP 403)",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "map_tried": [
+    {
+     "url": "https://www.floridastateparks.org/parks-and-trails/collier-seminole-state-park",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-1848": {
    "n": "Colt Creek State Park",
@@ -3236,18 +3455,9 @@
    "page": "https://www.floridastateparks.org/parks-and-trails/colt-creek-state-park",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.floridastateparks.org/parks-and-trails/colt-creek-state-park",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "",
-    "posted_how": "",
-    "names_park": null,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: HTTP 403 https://www.floridastateparks.org/parks-and-trails/colt-creek-state-pa)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
    },
    "rules": {
     "url": "https://www.floridastateparks.org/learn/rules-regulations",
@@ -3259,8 +3469,23 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the map link refused a plain reader (HTTP 403)",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "map_tried": [
+    {
+     "url": "https://www.floridastateparks.org/parks-and-trails/colt-creek-state-park",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-1849": {
    "n": "Constitution Convention Museum State Park",
@@ -3282,8 +3507,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1850": {
    "n": "Crystal River Archaeological State Park",
@@ -3305,8 +3529,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1851": {
    "n": "Curry Hammock State Park",
@@ -3328,8 +3551,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1852": {
    "n": "Dagny Johnson Key Largo Hammock Botanical State Park",
@@ -3351,8 +3573,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1853": {
    "n": "De Leon Springs State Park",
@@ -3374,8 +3595,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1854": {
    "n": "Deer Lake State Park",
@@ -3397,8 +3617,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1855": {
    "n": "Delnor-Wiggins Pass State Park",
@@ -3420,8 +3639,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1856": {
    "n": "Devil's Millhopper Geological State Park",
@@ -3443,8 +3661,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1857": {
    "n": "Don Pedro Island State Park",
@@ -3466,8 +3683,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1858": {
    "n": "Dr. Von D. Mizell-Eula Johnson State Park",
@@ -3489,8 +3705,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1859": {
    "n": "Dunns Creek State Park",
@@ -3512,8 +3727,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1860": {
    "n": "Econfina River State Park",
@@ -3535,8 +3749,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1861": {
    "n": "Eden Gardens State Park",
@@ -3558,8 +3771,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1862": {
    "n": "Edward Ball Wakulla Springs State Park",
@@ -3581,8 +3793,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1863": {
    "n": "Egmont Key State Park",
@@ -3604,8 +3815,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1864": {
    "n": "Falling Waters State Park",
@@ -3627,8 +3837,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1865": {
    "n": "Fanning Springs State Park",
@@ -3650,8 +3859,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1866": {
    "n": "Faver-Dykes State Park",
@@ -3673,8 +3881,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1867": {
    "n": "Florida Caverns State Park",
@@ -3696,8 +3903,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1868": {
    "n": "Forest Capital Museum State Park",
@@ -3719,8 +3925,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1869": {
    "n": "Fort Clinch State Park",
@@ -3742,8 +3947,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1870": {
    "n": "Fort Cooper State Park",
@@ -3765,8 +3969,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1871": {
    "n": "Fort George Island Cultural State Park",
@@ -3788,8 +3991,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1872": {
    "n": "Fort Pierce Inlet State Park",
@@ -3811,8 +4013,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1873": {
    "n": "Fred Gannon Rocky Bayou State Park",
@@ -3820,18 +4021,9 @@
    "page": "https://www.floridastateparks.org/parks-and-trails/fred-gannon-rocky-bayou-state-park",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.floridastateparks.org/sites/default/files/media/file/fgr-brochure.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.floridastateparks.org/sites/default/files/media/file/fgr-b)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
    },
    "rules": {
     "url": "https://www.floridastateparks.org/learn/rules-regulations",
@@ -3843,8 +4035,23 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "map_tried": [
+    {
+     "url": "https://www.floridastateparks.org/sites/default/files/media/file/fgr-brochure.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-1874": {
    "n": "Gasparilla Island State Park",
@@ -3866,8 +4073,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1875": {
    "n": "Grayton Beach State Park",
@@ -3889,8 +4095,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1876": {
    "n": "Henderson Beach State Park",
@@ -3912,8 +4117,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1877": {
    "n": "Highlands Hammock State Park",
@@ -3935,8 +4139,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1878": {
    "n": "Hillsborough River State Park",
@@ -3958,8 +4161,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1879": {
    "n": "Homosassa Springs Wildlife State Park",
@@ -3981,8 +4183,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1880": {
    "n": "Honeymoon Island State Park",
@@ -3990,18 +4191,9 @@
    "page": "https://www.floridastateparks.org/honeymoonisland",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.floridastateparks.org/honeymoonisland",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "",
-    "posted_how": "",
-    "names_park": null,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: HTTP 403 https://www.floridastateparks.org/honeymoonisland)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
    },
    "rules": {
     "url": "https://www.floridastateparks.org/learn/rules-regulations",
@@ -4013,8 +4205,23 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the map link refused a plain reader (HTTP 403)",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "map_tried": [
+    {
+     "url": "https://www.floridastateparks.org/honeymoonisland",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-1881": {
    "n": "Hontoon Island State Park",
@@ -4036,8 +4243,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1882": {
    "n": "Hugh Taylor Birch State Park",
@@ -4059,8 +4265,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1883": {
    "n": "Ichetucknee Springs State Park",
@@ -4082,8 +4287,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1884": {
    "n": "John D. MacArthur Beach State Park",
@@ -4105,8 +4309,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1885": {
    "n": "John Gorrie Museum State Park",
@@ -4128,8 +4331,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1886": {
    "n": "John Pennekamp Coral Reef State Park",
@@ -4151,8 +4353,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1887": {
    "n": "Jonathan Dickinson State Park",
@@ -4160,18 +4361,9 @@
    "page": "https://www.floridastateparks.org/parks-and-trails/jonathan-dickinson-state-park",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.floridastateparks.org/parks-and-trails/jonathan-dickinson-state-park/publications",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "",
-    "posted_how": "",
-    "names_park": null,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: HTTP 403 https://www.floridastateparks.org/parks-and-trails/jonathan-dickinson-)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
    },
    "rules": {
     "url": "https://www.floridastateparks.org/learn/rules-regulations",
@@ -4183,8 +4375,23 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the map link refused a plain reader (HTTP 403)",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "map_tried": [
+    {
+     "url": "https://www.floridastateparks.org/parks-and-trails/jonathan-dickinson-state-park/publications",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-1888": {
    "n": "Lafayette Blue Springs State Park",
@@ -4206,8 +4413,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1889": {
    "n": "Lake Griffin State Park",
@@ -4229,8 +4435,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1890": {
    "n": "Lake Jackson Mounds Archaeological State Park",
@@ -4252,8 +4457,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1891": {
    "n": "Lake June-in-Winter Scrub State Park",
@@ -4275,8 +4479,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1892": {
    "n": "Lake Kissimmee State Park",
@@ -4298,8 +4501,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1893": {
    "n": "Lake Louisa State Park",
@@ -4307,18 +4509,9 @@
    "page": "https://www.floridastateparks.org/parks-and-trails/lake-louisa-state-park",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.floridastateparks.org/parks-and-trails/lake-louisa-state-park",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "",
-    "posted_how": "",
-    "names_park": null,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: HTTP 403 https://www.floridastateparks.org/parks-and-trails/lake-louisa-state-p)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
    },
    "rules": {
     "url": "https://www.floridastateparks.org/learn/rules-regulations",
@@ -4330,8 +4523,23 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the map link refused a plain reader (HTTP 403)",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "map_tried": [
+    {
+     "url": "https://www.floridastateparks.org/parks-and-trails/lake-louisa-state-park",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-1894": {
    "n": "Lake Manatee State Park",
@@ -4353,8 +4561,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1895": {
    "n": "Lake Talquin State Park",
@@ -4376,8 +4583,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1896": {
    "n": "Letchworth-Love Mounds State Park",
@@ -4399,8 +4605,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1897": {
    "n": "Lignumvitae Key Botanical State Park",
@@ -4422,8 +4627,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1898": {
    "n": "Little Manatee River State Park",
@@ -4445,8 +4649,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1899": {
    "n": "Long Key State Park",
@@ -4468,8 +4671,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1900": {
    "n": "Lovers Key State Park",
@@ -4491,8 +4693,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1901": {
    "n": "Manatee Springs State Park",
@@ -4514,8 +4715,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1902": {
    "n": "Mike Roess Gold Head Branch State Park",
@@ -4537,8 +4737,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1903": {
    "n": "Mound Key Archaeological State Park",
@@ -4560,8 +4759,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1904": {
    "n": "Myakka River State Park",
@@ -4583,8 +4781,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1905": {
    "n": "North Peninsula State Park",
@@ -4606,8 +4803,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1906": {
    "n": "O'Leno State Park",
@@ -4629,8 +4825,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1907": {
    "n": "Ochlockonee River State Park",
@@ -4652,8 +4847,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1908": {
    "n": "Oleta River State Park",
@@ -4675,8 +4869,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1909": {
    "n": "Oscar Scherer State Park",
@@ -4684,18 +4877,9 @@
    "page": "https://www.floridastateparks.org/parks-and-trails/oscar-scherer-state-park",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.floridastateparks.org/parks-and-trails/oscar-scherer-state-park",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "",
-    "posted_how": "",
-    "names_park": null,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: HTTP 403 https://www.floridastateparks.org/parks-and-trails/oscar-scherer-state)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
    },
    "rules": {
     "url": "https://www.floridastateparks.org/learn/rules-regulations",
@@ -4707,8 +4891,23 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the map link refused a plain reader (HTTP 403)",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "map_tried": [
+    {
+     "url": "https://www.floridastateparks.org/parks-and-trails/oscar-scherer-state-park",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-1910": {
    "n": "Perdido Key State Park",
@@ -4730,8 +4929,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1911": {
    "n": "Ponce De Leon Springs State Park",
@@ -4753,8 +4951,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1912": {
    "n": "Rainbow Springs State Park",
@@ -4776,8 +4973,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1913": {
    "n": "Ravine Gardens State Park",
@@ -4799,8 +4995,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1914": {
    "n": "Sebastian Inlet State Park",
@@ -4822,8 +5017,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1915": {
    "n": "Silver Springs State Park",
@@ -4831,18 +5025,9 @@
    "page": "https://silversprings.com",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.google.com/maps/place/Silver+Springs+State+Park/@29.2164391,-82.0569528,15z/data=!4m5!3m4!1s0x0:0xac5625f2faeac606!8m2!3d29.2164391!4d-82.0569528?sa=X&ved=2ahUKEwiGr7bZuIPkAhVBUKwKHXcYAj8Q_BIwG3oECA8QCA&shorturl=1",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('5656 E Silver Springs Blvd,')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "off the government, not linked by the agency"
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "https://silversprings.com/park-rules/",
@@ -4853,9 +5038,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "needs_browser": "the map link refused a plain reader (ok)",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1916": {
    "n": "Skyway Fishing Pier State Park",
@@ -4877,8 +5060,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1917": {
    "n": "St. Andrews State Park",
@@ -4900,8 +5082,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1918": {
    "n": "St. Joseph Peninsula State Park",
@@ -4923,8 +5104,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1919": {
    "n": "Stephen Foster Folk Culture Center State Park",
@@ -4946,8 +5126,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1920": {
    "n": "Stump Pass Beach State Park",
@@ -4969,8 +5148,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1921": {
    "n": "Suwannee River State Park",
@@ -4992,8 +5170,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1922": {
    "n": "Three Rivers State Park",
@@ -5015,8 +5192,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1923": {
    "n": "Tomoka State Park",
@@ -5038,8 +5214,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1924": {
    "n": "Torreya State Park",
@@ -5061,8 +5236,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1925": {
    "n": "Troy Spring State Park",
@@ -5084,8 +5258,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1926": {
    "n": "Washington Oaks Gardens State Park",
@@ -5107,8 +5280,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1927": {
    "n": "Wekiwa Springs State Park",
@@ -5130,8 +5302,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1928": {
    "n": "Werner-Boyce Salt Springs State Park",
@@ -5139,18 +5310,9 @@
    "page": "https://www.floridastateparks.org/parks-and-trails/werner-boyce-salt-springs-state-park",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.floridastateparks.org/parks-and-trails/werner-boyce-salt-springs-state-park",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "",
-    "posted_how": "",
-    "names_park": null,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: HTTP 403 https://www.floridastateparks.org/parks-and-trails/werner-boyce-salt-s)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
    },
    "rules": {
     "url": "https://www.floridastateparks.org/learn/rules-regulations",
@@ -5162,8 +5324,23 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the map link refused a plain reader (HTTP 403)",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "map_tried": [
+    {
+     "url": "https://www.floridastateparks.org/parks-and-trails/werner-boyce-salt-springs-state-park",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-1929": {
    "n": "Wes Skiles Peacock Springs State Park",
@@ -5185,8 +5362,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-1930": {
    "n": "Windley Key Fossil Reef Geological State Park",
@@ -5208,8 +5384,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3604": {
    "n": "Addison Blockhouse State Park",
@@ -5231,8 +5406,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3605": {
    "n": "Allen David Broussard Catfish Creek Preserve State Park",
@@ -5254,8 +5428,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3606": {
    "n": "Anclote Key Preserve State Park",
@@ -5277,8 +5450,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3607": {
    "n": "Beker-Wingate Creek State Park",
@@ -5300,8 +5472,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3608": {
    "n": "Blackwater Heritage State Trail",
@@ -5323,8 +5494,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3609": {
    "n": "Bulow Plantation Ruins State Park",
@@ -5346,8 +5516,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3610": {
    "n": "Cedar Key Museum State Park",
@@ -5369,8 +5538,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3611": {
    "n": "Cedar Key Scrub Reserve State Conservation Area",
@@ -5392,8 +5560,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3612": {
    "n": "Charlotte Harbor Preserve State Park",
@@ -5415,8 +5582,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3613": {
    "n": "Cockroach Bay Preserve State Park",
@@ -5438,8 +5604,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3614": {
    "n": "Crystal River Preserve State Park",
@@ -5461,8 +5626,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3615": {
    "n": "Dade Battlefield State Park",
@@ -5484,8 +5648,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3616": {
    "n": "Dudley Farm State Park",
@@ -5507,8 +5670,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3617": {
    "n": "Estero Bay Preserve State Park",
@@ -5516,18 +5678,9 @@
    "page": "https://www.floridastateparks.org/parks-and-trails/estero-bay-preserve-state-park",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.floridastateparks.org/sites/default/files/media/file/est-brochure.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.floridastateparks.org/sites/default/files/media/file/est-b)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
    },
    "rules": {
     "url": "https://www.floridastateparks.org/learn/rules-regulations",
@@ -5539,8 +5692,23 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "map_tried": [
+    {
+     "url": "https://www.floridastateparks.org/sites/default/files/media/file/est-brochure.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-3618": {
    "n": "Fakahatchee Strand Preserve State Park",
@@ -5562,8 +5730,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3619": {
    "n": "Fernandina Plaza State Historic Site",
@@ -5585,8 +5752,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3620": {
    "n": "Florida Keys Overseas Heritage Trail State Park",
@@ -5608,8 +5774,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3621": {
    "n": "Fort Foster State Historic Site",
@@ -5631,8 +5796,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3622": {
    "n": "Fort Mose State Park",
@@ -5654,8 +5818,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3623": {
    "n": "Fort Zachary Taylor State Park",
@@ -5677,8 +5840,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3624": {
    "n": "Gainesville-Hawthorne State Trail",
@@ -5700,8 +5862,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3625": {
    "n": "Gamble Plantation State Park",
@@ -5723,8 +5884,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3626": {
    "n": "Gamble Rogers Memorial State Recreation Area",
@@ -5746,8 +5906,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3627": {
    "n": "General James A. Van Fleet State Trail",
@@ -5755,18 +5914,9 @@
    "page": "https://www.floridastateparks.org/parks-and-trails/general-james-van-fleet-state-trail",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://floridadep.gov/sites/default/files/VanFleetStateTrail.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "same government (floridadep.gov)"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://floridadep.gov/sites/default/files/VanFleetStateTrail.pdf)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
    },
    "rules": {
     "url": "https://www.floridastateparks.org/learn/rules-regulations",
@@ -5778,8 +5928,23 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "map_tried": [
+    {
+     "url": "https://floridadep.gov/sites/default/files/VanFleetStateTrail.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "same government (floridadep.gov)"
+    }
+   ],
+   "ver": 5
   },
   "US-3628": {
    "n": "George Crady Bridge Fishing Pier State Park",
@@ -5801,8 +5966,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3629": {
    "n": "Haw Creek Preserve State Park",
@@ -5824,8 +5988,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3630": {
    "n": "Indian Key State Park",
@@ -5847,8 +6010,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3631": {
    "n": "Indian River Lagoon State Park",
@@ -5870,8 +6032,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3632": {
    "n": "Kissimmee Prairie Preserve State Park",
@@ -5893,8 +6054,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3633": {
    "n": "Koreshan State Historic Site",
@@ -5902,18 +6062,9 @@
    "page": "https://www.floridastateparks.org/parks-and-trails/koreshan-state-park",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.floridastateparks.org/sites/default/files/media/file/FINAL-Koreshan-HandheldMap-%284-16-25%29.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.floridastateparks.org/sites/default/files/media/file/FINAL)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
    },
    "rules": {
     "url": "https://www.floridastateparks.org/learn/rules-regulations",
@@ -5925,8 +6076,23 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "map_tried": [
+    {
+     "url": "https://www.floridastateparks.org/sites/default/files/media/file/FINAL-Koreshan-HandheldMap-%284-16-25%29.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-3634": {
    "n": "Lower Wekiva River Preserve State Park",
@@ -5948,8 +6114,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3635": {
    "n": "Madira Bickel Mound State Historic Site",
@@ -5971,8 +6136,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3636": {
    "n": "Madison Blue Spring State Park",
@@ -5994,8 +6158,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3637": {
    "n": "Marjorie Harris Carr Cross State Park",
@@ -6017,8 +6180,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3638": {
    "n": "Marjorie Kinnan Rawlings State Park",
@@ -6040,8 +6202,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3639": {
    "n": "Natural Bridge Battlefield State Park",
@@ -6063,8 +6224,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3640": {
    "n": "Nature Coast State Trail",
@@ -6086,8 +6246,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3641": {
    "n": "Okeechobee Battlefield State Park",
@@ -6109,8 +6268,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3642": {
    "n": "Olustee Battlefield State Park",
@@ -6132,8 +6290,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3643": {
    "n": "Orman House State Park",
@@ -6155,8 +6312,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3644": {
    "n": "Palatka-St. Augustine State Trail",
@@ -6178,8 +6334,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3645": {
    "n": "Palatka-to-Lake Butler State Trail",
@@ -6201,8 +6356,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3646": {
    "n": "Paynes Creek State Park",
@@ -6224,8 +6378,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3647": {
    "n": "Paynes Prairie Preserve State Park",
@@ -6247,8 +6400,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3648": {
    "n": "Pumpkin Hill Creek Preserve State Park",
@@ -6270,8 +6422,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3649": {
    "n": "River Rise Preserve State Park",
@@ -6293,8 +6444,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3650": {
    "n": "Rock Springs Run State Park",
@@ -6316,8 +6466,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3651": {
    "n": "San Felasco Hammock Preserve State Park",
@@ -6339,8 +6488,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3652": {
    "n": "San Marcos de Apalache State Park",
@@ -6362,8 +6510,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3653": {
    "n": "San Pedro Underwater Archaeological Preserve State Park",
@@ -6385,8 +6532,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3654": {
    "n": "Savannas Preserve State Park",
@@ -6394,18 +6540,9 @@
    "page": "https://www.floridastateparks.org/parks-and-trails/savannas-preserve-state-park",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.floridastateparks.org/parks-and-trails/savannas-preserve-state-park",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "",
-    "posted_how": "",
-    "names_park": null,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: HTTP 403 https://www.floridastateparks.org/parks-and-trails/savannas-preserve-s)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
    },
    "rules": {
     "url": "https://www.floridastateparks.org/learn/rules-regulations",
@@ -6417,8 +6554,23 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the map link refused a plain reader (HTTP 403)",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "map_tried": [
+    {
+     "url": "https://www.floridastateparks.org/parks-and-trails/savannas-preserve-state-park",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-3655": {
    "n": "Seabranch Preserve State Park",
@@ -6440,8 +6592,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3656": {
    "n": "Beker - South Fork State Park",
@@ -6463,8 +6614,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3657": {
    "n": "St. Lucie Inlet Preserve State Park",
@@ -6486,8 +6636,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3658": {
    "n": "Ney Landrum State Park",
@@ -6509,8 +6658,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3659": {
    "n": "St. Sebastian River Preserve State Park",
@@ -6532,8 +6680,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3660": {
    "n": "Suwannee River Wilderness State Trail",
@@ -6555,8 +6702,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3661": {
    "n": "Tallahassee-St. Marks Historic Railroad State Trail",
@@ -6578,8 +6724,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3662": {
    "n": "Tarkiln Bayou Preserve State Park",
@@ -6601,8 +6746,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3663": {
    "n": "Terra Ceia Preserve State Park",
@@ -6624,8 +6768,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3664": {
    "n": "Topsail Hill Preserve State Park",
@@ -6647,8 +6790,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3665": {
    "n": "Waccasassa Bay Preserve State Park",
@@ -6670,8 +6812,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3666": {
    "n": "Weeki Wachee Springs State Park",
@@ -6693,8 +6834,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3667": {
    "n": "Withlacoochee State Trail",
@@ -6716,8 +6856,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3668": {
    "n": "Ybor City Museum State Park",
@@ -6739,8 +6878,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3669": {
    "n": "Yellow Bluff Fort State Park",
@@ -6762,8 +6900,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3670": {
    "n": "Yellow River Marsh Preserve State Park",
@@ -6785,8 +6922,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-3671": {
    "n": "Yulee Sugar Mill Ruins State Park",
@@ -6808,8 +6944,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-4470": {
    "n": "Apalachicola National Forest",
@@ -6817,17 +6952,9 @@
    "page": "https://www.fs.usda.gov/recarea/florida/recarea/?recid=83574",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.fs.usda.gov/r08/florida/maps-guides",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
-    "how": "the page in a browser ('Visitor Maps and Guides')",
-    "page": "https://www.fs.usda.gov/recarea/florida/recarea/?recid=83574",
-    "posted": "December 16, 2025",
-    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
-    "checked": "2026-10-28",
-    "via": "the agency site"
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/florida",
@@ -6839,8 +6966,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-4471": {
    "n": "Ocala National Forest",
@@ -6848,17 +6974,19 @@
    "page": "https://www.fs.usda.gov/recarea/florida/recarea/?recid=83528",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.fs.usda.gov/r08/florida/maps-guides",
+    "url": "https://www.fs.usda.gov/r08/florida",
     "status": "ok",
     "kind": "page",
     "date": null,
     "date_how": "date unknown, checked 2026-10-28",
-    "how": "the page in a browser ('Visitor Maps and Guides')",
-    "page": "https://www.fs.usda.gov/r08/florida",
-    "posted": "December 16, 2025",
-    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
     "checked": "2026-10-28",
-    "via": "the agency site"
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/florida",
@@ -6870,8 +6998,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "map page on the browser list (a download button may hide the file)",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-4472": {
    "n": "Osceola National Forest",
@@ -6879,17 +7006,9 @@
    "page": "https://www.fs.usda.gov/recarea/florida/recarea/?recid=83529",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.fs.usda.gov/r08/florida/maps-guides",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
-    "how": "the page in a browser ('Visitor Maps and Guides')",
-    "page": "https://www.fs.usda.gov/recarea/florida/recarea/?recid=83529",
-    "posted": "December 16, 2025",
-    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
-    "checked": "2026-10-28",
-    "via": "the agency site"
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/florida",
@@ -6901,8 +7020,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-4559": {
    "n": "Florida Trail National Scenic Trail",
@@ -6910,18 +7028,9 @@
    "page": "https://www.fs.usda.gov/fnst",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.fs.usda.gov/detailfull/fnst",
-    "status": "HTTP 404",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "",
-    "posted_how": "",
-    "names_park": null,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: HTTP 404 https://www.fs.usda.gov/detailfull/fnst)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/fnst/alerts-notices",
@@ -6933,8 +7042,23 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "map_tried": [
+    {
+     "url": "https://www.fs.usda.gov/detailfull/fnst",
+     "status": "HTTP 404",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-4612": {
    "n": "Belmore State Forest",
@@ -6957,7 +7081,7 @@
    "notes": [
     "park page: robots"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-4613": {
    "n": "Big Shoals State Forest",
@@ -6980,7 +7104,7 @@
    "notes": [
     "park page: robots"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-4614": {
    "n": "Blackwater River State Forest",
@@ -7003,7 +7127,7 @@
    "notes": [
     "park page: robots"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-4615": {
    "n": "Carl Duval Moore State Forest",
@@ -7026,7 +7150,7 @@
    "notes": [
     "park page: robots"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-4616": {
    "n": "Cary State Forest",
@@ -7049,7 +7173,7 @@
    "notes": [
     "park page: robots"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-4617": {
    "n": "Charles H. Bronson State Forest",
@@ -7072,7 +7196,7 @@
    "notes": [
     "park page: robots"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-4619": {
    "n": "Deep Creek State Forest",
@@ -7095,7 +7219,7 @@
    "notes": [
     "park page: robots"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-4620": {
    "n": "Etoniah Creek State Forest",
@@ -7118,7 +7242,7 @@
    "notes": [
     "park page: robots"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-4621": {
    "n": "Four Creeks State Forest",
@@ -7141,7 +7265,7 @@
    "notes": [
     "park page: robots"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-4622": {
    "n": "Goethe State Forest",
@@ -7164,7 +7288,7 @@
    "notes": [
     "park page: robots"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-4623": {
    "n": "Holopaw State Forest",
@@ -7187,7 +7311,7 @@
    "notes": [
     "park page: robots"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-4624": {
    "n": "Indian Lake State Forest",
@@ -7210,7 +7334,7 @@
    "notes": [
     "park page: robots"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-4625": {
    "n": "Jennings State Forest",
@@ -7233,7 +7357,7 @@
    "notes": [
     "park page: robots"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-4626": {
    "n": "John M. Bethea State Forest",
@@ -7256,7 +7380,7 @@
    "notes": [
     "park page: robots"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-4627": {
    "n": "Lake George State Forest",
@@ -7279,7 +7403,7 @@
    "notes": [
     "park page: robots"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-4628": {
    "n": "Lake Talquin State Forest",
@@ -7302,7 +7426,7 @@
    "notes": [
     "park page: robots"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-4629": {
    "n": "Lake Wales Ridge State Forest",
@@ -7325,7 +7449,7 @@
    "notes": [
     "park page: robots"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-4630": {
    "n": "Little Big Econ State Forest",
@@ -7348,7 +7472,7 @@
    "notes": [
     "park page: robots"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-4631": {
    "n": "Matanzas State Forest",
@@ -7371,7 +7495,7 @@
    "notes": [
     "park page: robots"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-4632": {
    "n": "Myakka State Forest",
@@ -7379,18 +7503,9 @@
    "page": "https://www.fdacs.gov/Forest-Wildfire/Our-Forests/State-Forests/Myakka-State-Forest",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.fdacs.gov/Forest-Wildfire/Our-Forests/State-Forests/Myakka-State-Forest",
-    "status": "robots",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "",
-    "posted_how": "",
-    "names_park": null,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: robots https://www.fdacs.gov/Forest-Wildfire/Our-Forests/State-Forests/Myakka)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
    },
    "rules": {
     "url": "",
@@ -7403,7 +7518,23 @@
    "notes": [
     "park page: robots"
    ],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://www.fdacs.gov/Forest-Wildfire/Our-Forests/State-Forests/Myakka-State-Forest",
+     "status": "robots",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-4633": {
    "n": "Okaloacoochee Slough State Forest",
@@ -7411,29 +7542,36 @@
    "page": "https://myfwc.com/recreation/lead/ok-slough/",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://gis.myfwc.com/RecreationMap/",
-    "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
-    "kind": "viewer (statewide)",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Explore by map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": null,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "same government (gis.myfwc.com)"
+    "url": "",
+    "status": "no working map link (tried: opened, a statewide map viewer, not this park's map (chat 8 F2) https://gis.myfwc.com/RecreationMap/)",
+    "how": "a link on the park's page ('Explore by map')"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://gis.myfwc.com/RecreationMap/",
+     "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+     "kind": "viewer (statewide)",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Explore by map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "same government (gis.myfwc.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-4634": {
    "n": "Picayune Strand State Forest",
@@ -7456,7 +7594,7 @@
    "notes": [
     "park page: robots"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-4635": {
    "n": "Pine Log State Forest",
@@ -7479,7 +7617,7 @@
    "notes": [
     "park page: robots"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-4636": {
    "n": "Point Washington State Forest",
@@ -7502,7 +7640,7 @@
    "notes": [
     "park page: robots"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-4637": {
    "n": "Ralph E. Simmons Memorial State Forest",
@@ -7525,7 +7663,7 @@
    "notes": [
     "park page: robots"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-4638": {
    "n": "Ross Prairie State Forest",
@@ -7548,7 +7686,7 @@
    "notes": [
     "park page: robots"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-4639": {
    "n": "Seminole State Forest",
@@ -7571,7 +7709,7 @@
    "notes": [
     "park page: robots"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-4640": {
    "n": "Tate's Hell State Forest",
@@ -7594,7 +7732,7 @@
    "notes": [
     "park page: robots"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-4641": {
    "n": "Tiger Bay State Forest",
@@ -7617,7 +7755,7 @@
    "notes": [
     "park page: robots"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-4642": {
    "n": "Twin Rivers State Forest",
@@ -7640,7 +7778,7 @@
    "notes": [
     "park page: robots"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-4643": {
    "n": "Wakulla State Forest",
@@ -7663,7 +7801,7 @@
    "notes": [
     "park page: robots"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-4644": {
    "n": "Watson Island State Forest",
@@ -7686,7 +7824,7 @@
    "notes": [
     "park page: robots"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-4645": {
    "n": "Welaka State Forest",
@@ -7709,7 +7847,7 @@
    "notes": [
     "park page: robots"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-4646": {
    "n": "Withlacoochee State Forest",
@@ -7717,18 +7855,9 @@
    "page": "https://www.fdacs.gov/Forest-Wildfire/Our-Forests/State-Forests/Withlacoochee-State-Forest",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.fdacs.gov/content/download/40669/file/Withlacoocheestateforest-entireforest.pdf",
-    "status": "robots",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "",
-    "posted_how": "",
-    "names_park": null,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: robots https://www.fdacs.gov/content/download/40669/file/Withlacoocheestatefo)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
    },
    "rules": {
     "url": "",
@@ -7741,7 +7870,23 @@
    "notes": [
     "park page: robots"
    ],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://www.fdacs.gov/content/download/40669/file/Withlacoocheestateforest-entireforest.pdf",
+     "status": "robots",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-5118": {
    "n": "Edward W. Chance Reserve State Conservation Area",
@@ -7749,18 +7894,9 @@
    "page": "https://www.swfwmd.state.fl.us/recreation/edward-w-chance-reserve-coker-prairie-tract",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.swfwmd.state.fl.us/sites/default/files/Coker%20Prairie%20Georeferenced%2008-29-2022.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Coker Prairie Georeferenced map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.swfwmd.state.fl.us/sites/default/files/Coker%20Prairie%20G; opened, a statewide map viewer, not this park's map (chat 8 F2) https://www.arcgis.com/apps/webappviewer/index.html?id=da3616e735ee42e)",
+    "how": "a link on the park's page ('Coker Prairie Georeferenced map')"
    },
    "rules": {
     "url": "",
@@ -7771,7 +7907,37 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://www.swfwmd.state.fl.us/sites/default/files/Coker%20Prairie%20Georeferenced%2008-29-2022.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Coker Prairie Georeferenced map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://www.arcgis.com/apps/webappviewer/index.html?id=da3616e735ee42e9ae2e4d74563a0f4a&extent=-9150850.7014%2C3180478.6747%2C-9147551.9659%2C3182633.2435%2C102100",
+     "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+     "kind": "viewer (statewide)",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('View Interactive Map of Area »')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 5
   },
   "US-5220": {
    "n": "Flying Eagle Preserve State Conservation Area",
@@ -7779,18 +7945,9 @@
    "page": "https://www.swfwmd.state.fl.us/recreation/flying-eagle-preserve",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.swfwmd.state.fl.us/sites/default/files/Flying%20Eagle%20Preserve%20Georeferenced%2005-25-2022.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Flying Eagle Preserve Georeferenced map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.swfwmd.state.fl.us/sites/default/files/Flying%20Eagle%20Pr; opened, a statewide map viewer, not this park's map (chat 8 F2) https://www.arcgis.com/apps/webappviewer/index.html?id=da3616e735ee42e)",
+    "how": "a link on the park's page ('Flying Eagle Preserve Georeferenced map')"
    },
    "rules": {
     "url": "",
@@ -7801,7 +7958,37 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://www.swfwmd.state.fl.us/sites/default/files/Flying%20Eagle%20Preserve%20Georeferenced%2005-25-2022.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Flying Eagle Preserve Georeferenced map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://www.arcgis.com/apps/webappviewer/index.html?id=da3616e735ee42e9ae2e4d74563a0f4a&extent=-9158425.2082%2C3351882.4509%2C-9155126.4727%2C3354037.0196%2C102100",
+     "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+     "kind": "viewer (statewide)",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('View Interactive Map of Area »')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 5
   },
   "US-5250": {
    "n": "Annutteliga Hammock State Conservation Area",
@@ -7833,7 +8020,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-5330": {
    "n": "Green Swamp Wilderness Park Reserve",
@@ -7841,18 +8028,9 @@
    "page": "https://www.swfwmd.state.fl.us/recreation/green-swamp-east-tract",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www5.swfwmd.state.fl.us/greenswamp/map",
-    "status": "rest",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "",
-    "posted_how": "",
-    "names_park": null,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: rest https://www5.swfwmd.state.fl.us/greenswamp/map; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.swfwmd.state.fl.us/sites/default/files/Green%20Swamp%20Eas; opened, a statewide map viewer, not this park's map (chat 8 F2) https://www.arcgis.com/apps/webappviewer/index.html?id=da3616e735ee42e)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
    },
    "rules": {
     "url": "",
@@ -7863,7 +8041,51 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://www5.swfwmd.state.fl.us/greenswamp/map",
+     "status": "rest",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://www.swfwmd.state.fl.us/sites/default/files/Green%20Swamp%20East%20Georeferenced%2007-05-2022.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Green Swamp East Georeferenced map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://www.arcgis.com/apps/webappviewer/index.html?id=da3616e735ee42e9ae2e4d74563a0f4a&extent=-9135974.7383%2C3291592.2553%2C-9132676.0028%2C3293746.824%2C102100",
+     "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+     "kind": "viewer (statewide)",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('View Interactive Map of Area »')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 5
   },
   "US-5513": {
    "n": "Halpata Tatanaki Preserve State Conservation Area",
@@ -7871,18 +8093,9 @@
    "page": "https://www.swfwmd.state.fl.us/recreation/halpata-tastanaki-preserve",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.swfwmd.state.fl.us/sites/default/files/H%C3%A1lpata%20Tastanaki%20Preserve%20Georeferenced%2009-16-2022.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Hálpata Tastanaki Preserve Georeferenced map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.swfwmd.state.fl.us/sites/default/files/H%C3%A1lpata%20Tast; opened, a statewide map viewer, not this park's map (chat 8 F2) https://www.arcgis.com/apps/webappviewer/index.html?id=da3616e735ee42e)",
+    "how": "a link on the park's page ('Hálpata Tastanaki Preserve Georeferenced map')"
    },
    "rules": {
     "url": "",
@@ -7893,7 +8106,37 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://www.swfwmd.state.fl.us/sites/default/files/H%C3%A1lpata%20Tastanaki%20Preserve%20Georeferenced%2009-16-2022.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Hálpata Tastanaki Preserve Georeferenced map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://www.arcgis.com/apps/webappviewer/index.html?id=da3616e735ee42e9ae2e4d74563a0f4a&extent=-9171690.3847%2C3381325.3431%2C-9168391.6492%2C3383479.9118%2C102100",
+     "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+     "kind": "viewer (statewide)",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('View Interactive Map of Area »')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 5
   },
   "US-5520": {
    "n": "Chassahowitzka River and Coastal Swamp State Conservation Area",
@@ -7901,18 +8144,9 @@
    "page": "https://www.swfwmd.state.fl.us/recreation/chassahowitzka-river-and-coastal-swamps",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.swfwmd.state.fl.us/sites/default/files/Chassahowitzka%20River%20And%20Coastal%20Swamps%202nd%20Draft%2003-26-2024%20ADA.pdf",
-    "status": "opened, a plan / draft, not the visitor map (chat 8 F3)",
-    "kind": "plan",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page (' Chassahowitzka River And Coastal Swamps Georeferenced map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": null,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a plan / draft, not the visitor map (chat 8 F3) https://www.swfwmd.state.fl.us/sites/default/files/Chassahowitzka%20Ri; opened, a statewide map viewer, not this park's map (chat 8 F2) https://www.arcgis.com/apps/webappviewer/index.html?id=da3616e735ee42e)",
+    "how": "a link on the park's page (' Chassahowitzka River And Coastal Swamps Georeferenced map')"
    },
    "rules": {
     "url": "",
@@ -7925,7 +8159,37 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://www.swfwmd.state.fl.us/sites/default/files/Chassahowitzka%20River%20And%20Coastal%20Swamps%202nd%20Draft%2003-26-2024%20ADA.pdf",
+     "status": "opened, a plan / draft, not the visitor map (chat 8 F3)",
+     "kind": "plan",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page (' Chassahowitzka River And Coastal Swamps Georeferenced map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://www.arcgis.com/apps/webappviewer/index.html?id=da3616e735ee42e9ae2e4d74563a0f4a&extent=-9193956.7043%2C3344094.1603%2C-9190657.9688%2C3346248.729%2C102100",
+     "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+     "kind": "viewer (statewide)",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('View Interactive Map of Area »')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 5
   },
   "US-5524": {
    "n": "Chito Branch Reserve State Conservation Area",
@@ -7957,7 +8221,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-5624": {
    "n": "Jack Creek State Conservation Area",
@@ -7965,18 +8229,9 @@
    "page": "https://www.swfwmd.state.fl.us/recreation/jack-creek",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.arcgis.com/apps/webappviewer/index.html?id=da3616e735ee42e9ae2e4d74563a0f4a&extent=-9066547.9328%2C3169824.4118%2C-9063249.1973%2C3171978.9805%2C102100",
-    "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
-    "kind": "viewer (statewide)",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('View Interactive Map of Area »')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": null,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "off the government, not linked by the agency"
+    "url": "",
+    "status": "no working map link (tried: opened, a statewide map viewer, not this park's map (chat 8 F2) https://www.arcgis.com/apps/webappviewer/index.html?id=da3616e735ee42e; opened, a page that does not name this park (a generic agency page is not its map) https://www.swfwmd.state.fl.us/recreation/recreation-maps)",
+    "how": "a link on the park's page ('View Interactive Map of Area »')"
    },
    "rules": {
     "url": "",
@@ -7987,7 +8242,37 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://www.arcgis.com/apps/webappviewer/index.html?id=da3616e735ee42e9ae2e4d74563a0f4a&extent=-9066547.9328%2C3169824.4118%2C-9063249.1973%2C3171978.9805%2C102100",
+     "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+     "kind": "viewer (statewide)",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('View Interactive Map of Area »')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    },
+    {
+     "url": "https://www.swfwmd.state.fl.us/recreation/recreation-maps",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-5670": {
    "n": "Lake Panasoffkee State Conservation Area",
@@ -7995,29 +8280,36 @@
    "page": "https://myfwc.com/recreation/cooperative/lake-panasoffkee/",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://gis.myfwc.com/RecreationMap/",
-    "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
-    "kind": "viewer (statewide)",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Explore by map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": null,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "same government (gis.myfwc.com)"
+    "url": "",
+    "status": "no working map link (tried: opened, a statewide map viewer, not this park's map (chat 8 F2) https://gis.myfwc.com/RecreationMap/)",
+    "how": "a link on the park's page ('Explore by map')"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://gis.myfwc.com/RecreationMap/",
+     "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+     "kind": "viewer (statewide)",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Explore by map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "same government (gis.myfwc.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-6281": {
    "n": "Loxahatchee River National Wild and Scenic River",
@@ -8048,7 +8340,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-6282": {
    "n": "Newnans Lake State Forest",
@@ -8071,7 +8363,7 @@
    "notes": [
     "park page: robots"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-6283": {
    "n": "Plank Road State Forest",
@@ -8079,29 +8371,36 @@
    "page": "https://myfwc.com/recreation/cooperative/plank-road/",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://gis.myfwc.com/RecreationMap/",
-    "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
-    "kind": "viewer (statewide)",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Explore by map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": null,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "same government (gis.myfwc.com)"
+    "url": "",
+    "status": "no working map link (tried: opened, a statewide map viewer, not this park's map (chat 8 F2) https://gis.myfwc.com/RecreationMap/)",
+    "how": "a link on the park's page ('Explore by map')"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://gis.myfwc.com/RecreationMap/",
+     "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+     "kind": "viewer (statewide)",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Explore by map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "same government (gis.myfwc.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-6284": {
    "n": "Atlantic Ridge Preserve State Park",
@@ -8123,8 +8422,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
-   "browser_checked": "2026-10-28"
+   "ver": 5
   },
   "US-6285": {
    "n": "Peace River State Forest",
@@ -8147,7 +8445,7 @@
    "notes": [
     "park page: robots"
    ],
-   "ver": 4
+   "ver": 5
   },
   "US-6286": {
    "n": "Andrews Wildlife Management Area",
@@ -8155,29 +8453,50 @@
    "page": "https://myfwc.com/recreation/lead/andrews/",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://myfwc.com/hunting/wma-brochures/",
-    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
-    "kind": "page",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('WMA Brochures')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://myfwc.com/hunting/wma-brochures/; opened, a statewide map viewer, not this park's map (chat 8 F2) https://gis.myfwc.com/RecreationMap/)",
+    "how": "a link on the park's page ('WMA Brochures')"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://myfwc.com/hunting/wma-brochures/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('WMA Brochures')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://gis.myfwc.com/RecreationMap/",
+     "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+     "kind": "viewer (statewide)",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Explore by map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "same government (gis.myfwc.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-6287": {
    "n": "Apalachee Wildlife Management Area",
@@ -8185,29 +8504,50 @@
    "page": "https://myfwc.com/recreation/lead/apalachee/",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://myfwc.com/hunting/wma-brochures/",
-    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
-    "kind": "page",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('WMA Brochures')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://myfwc.com/hunting/wma-brochures/; opened, a statewide map viewer, not this park's map (chat 8 F2) https://gis.myfwc.com/RecreationMap/)",
+    "how": "a link on the park's page ('WMA Brochures')"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://myfwc.com/hunting/wma-brochures/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('WMA Brochures')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://gis.myfwc.com/RecreationMap/",
+     "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+     "kind": "viewer (statewide)",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Explore by map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "same government (gis.myfwc.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-6288": {
    "n": "Apalachicola River Wildlife Area",
@@ -8215,29 +8555,50 @@
    "page": "https://myfwc.com/recreation/lead/apalachicola-river/",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://myfwc.com/hunting/wma-brochures/",
-    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
-    "kind": "page",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('WMA Brochures')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://myfwc.com/hunting/wma-brochures/; opened, a statewide map viewer, not this park's map (chat 8 F2) https://gis.myfwc.com/RecreationMap/)",
+    "how": "a link on the park's page ('WMA Brochures')"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://myfwc.com/hunting/wma-brochures/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('WMA Brochures')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://gis.myfwc.com/RecreationMap/",
+     "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+     "kind": "viewer (statewide)",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Explore by map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "same government (gis.myfwc.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-6289": {
    "n": "Aucilla Wildlife Management Area",
@@ -8245,29 +8606,50 @@
    "page": "https://myfwc.com/recreation/lead/aucilla/",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://myfwc.com/hunting/wma-brochures/",
-    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
-    "kind": "page",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('WMA Brochures')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://myfwc.com/hunting/wma-brochures/; opened, a statewide map viewer, not this park's map (chat 8 F2) https://gis.myfwc.com/RecreationMap/)",
+    "how": "a link on the park's page ('WMA Brochures')"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://myfwc.com/hunting/wma-brochures/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('WMA Brochures')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://gis.myfwc.com/RecreationMap/",
+     "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+     "kind": "viewer (statewide)",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Explore by map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "same government (gis.myfwc.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-6290": {
    "n": "Bell Ridge Longleaf Wildlife Area",
@@ -8275,29 +8657,50 @@
    "page": "https://myfwc.com/recreation/lead/bell-ridge-longleaf/",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://myfwc.com/hunting/wma-brochures/",
-    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
-    "kind": "page",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('WMA Brochures')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://myfwc.com/hunting/wma-brochures/; opened, a statewide map viewer, not this park's map (chat 8 F2) https://gis.myfwc.com/RecreationMap/)",
+    "how": "a link on the park's page ('WMA Brochures')"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://myfwc.com/hunting/wma-brochures/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('WMA Brochures')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://gis.myfwc.com/RecreationMap/",
+     "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+     "kind": "viewer (statewide)",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Explore by map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "same government (gis.myfwc.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-6291": {
    "n": "Fred C. Babcock/Cecil M. Webb Wildlife Management Area",
@@ -8320,15 +8723,15 @@
     "date_label": "date unknown"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-6292": {
    "n": "Big Bend Wildlife Management Area",
@@ -8336,29 +8739,50 @@
    "page": "https://myfwc.com/recreation/lead/big-bend/",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://myfwc.com/hunting/wma-brochures/",
-    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
-    "kind": "page",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('WMA Brochures')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://myfwc.com/hunting/wma-brochures/; opened, a statewide map viewer, not this park's map (chat 8 F2) https://gis.myfwc.com/RecreationMap/)",
+    "how": "a link on the park's page ('WMA Brochures')"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://myfwc.com/hunting/wma-brochures/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('WMA Brochures')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://gis.myfwc.com/RecreationMap/",
+     "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+     "kind": "viewer (statewide)",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Explore by map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "same government (gis.myfwc.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-6293": {
    "n": "Box-R Wildlife Management Area",
@@ -8366,29 +8790,50 @@
    "page": "https://myfwc.com/recreation/lead/box-r/planning-your-visit/",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://myfwc.com/hunting/wma-brochures/",
-    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
-    "kind": "page",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('WMA Brochures')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://myfwc.com/hunting/wma-brochures/; opened, a statewide map viewer, not this park's map (chat 8 F2) https://gis.myfwc.com/RecreationMap/)",
+    "how": "a link on the park's page ('WMA Brochures')"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://myfwc.com/hunting/wma-brochures/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('WMA Brochures')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://gis.myfwc.com/RecreationMap/",
+     "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+     "kind": "viewer (statewide)",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Explore by map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "same government (gis.myfwc.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-6294": {
    "n": "Branan Field Wildlife Area",
@@ -8396,29 +8841,50 @@
    "page": "https://myfwc.com/recreation/lead/branan-field/",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://myfwc.com/hunting/wma-brochures/",
-    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
-    "kind": "page",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('WMA Brochures')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://myfwc.com/hunting/wma-brochures/; opened, a statewide map viewer, not this park's map (chat 8 F2) https://gis.myfwc.com/RecreationMap/)",
+    "how": "a link on the park's page ('WMA Brochures')"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://myfwc.com/hunting/wma-brochures/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('WMA Brochures')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://gis.myfwc.com/RecreationMap/",
+     "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+     "kind": "viewer (statewide)",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Explore by map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "same government (gis.myfwc.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-6295": {
    "n": "Caravelle Ranch Wildlife Management Area",
@@ -8426,29 +8892,50 @@
    "page": "https://myfwc.com/recreation/lead/caravelle-ranch/",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://myfwc.com/hunting/wma-brochures/",
-    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
-    "kind": "page",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('WMA Brochures')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://myfwc.com/hunting/wma-brochures/; opened, a statewide map viewer, not this park's map (chat 8 F2) https://gis.myfwc.com/RecreationMap/)",
+    "how": "a link on the park's page ('WMA Brochures')"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://myfwc.com/hunting/wma-brochures/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('WMA Brochures')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://gis.myfwc.com/RecreationMap/",
+     "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+     "kind": "viewer (statewide)",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Explore by map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "same government (gis.myfwc.com)"
+    }
+   ],
+   "ver": 5
   },
   "US-6296": {
    "n": "Chassahowitzka Wildlife Management Area",
@@ -8470,9 +8957,9 @@
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
@@ -8500,9 +8987,9 @@
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
@@ -8530,9 +9017,9 @@
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
@@ -8560,9 +9047,9 @@
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
@@ -8590,9 +9077,9 @@
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
@@ -8620,9 +9107,9 @@
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
@@ -8650,9 +9137,9 @@
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
@@ -8680,9 +9167,9 @@
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
@@ -8710,9 +9197,9 @@
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
@@ -8740,9 +9227,9 @@
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
@@ -8770,9 +9257,9 @@
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
@@ -8800,9 +9287,9 @@
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
@@ -8830,9 +9317,9 @@
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
@@ -8861,9 +9348,9 @@
     "date_label": "date unknown"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
@@ -8891,9 +9378,9 @@
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
@@ -8921,9 +9408,9 @@
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
@@ -8951,9 +9438,9 @@
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
@@ -8981,9 +9468,9 @@
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
@@ -9011,9 +9498,9 @@
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
@@ -9041,9 +9528,9 @@
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
@@ -9071,9 +9558,9 @@
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
@@ -9101,9 +9588,9 @@
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
@@ -9131,9 +9618,9 @@
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
@@ -9161,9 +9648,9 @@
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
@@ -9191,9 +9678,9 @@
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
@@ -9221,9 +9708,9 @@
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
@@ -9251,9 +9738,9 @@
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
@@ -9281,9 +9768,9 @@
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
@@ -9312,9 +9799,9 @@
     "date_label": "date unknown"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
@@ -9342,9 +9829,9 @@
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
@@ -9372,9 +9859,9 @@
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
@@ -9402,9 +9889,9 @@
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [
@@ -9434,9 +9921,9 @@
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
@@ -9464,9 +9951,9 @@
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
@@ -9494,9 +9981,9 @@
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
@@ -9524,9 +10011,9 @@
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
@@ -9891,9 +10378,9 @@
     "via": "the agency site"
    },
    "rules": {
-    "url": "https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/",
-    "how": "a link on the park's page ('Range Safety Rules')",
-    "status": "ok"
+    "url": "",
+    "status": "not found (a page shared by 53 parks was dropped: https://myfwc.com/hunting/safety-education/shooting-ranges/safety-rules/)",
+    "how": "a link on the park's page ('Range Safety Rules')"
    },
    "agency": "Florida Fish and Wildlife Conservation Commission",
    "runs": [],
@@ -12857,18 +13344,18 @@
  "read": "2026-10-28",
  "counts": {
   "parks": 460,
-  "map ok": 160,
-  "map found by the bot": 147,
+  "map ok": 157,
+  "map found by the bot": 143,
   "date on the map": 22,
-  "posted date only": 110,
+  "posted date only": 107,
   "date unknown": 28,
-  "no map": 297,
-  "rules ok": 116,
-  "needs browser": 3,
+  "no map": 303,
+  "rules ok": 63,
+  "needs browser": 180,
   "handover hints": 0,
   "runs hints": 28,
-  "host resting / robots": 3,
-  "map names the park": 135,
+  "host resting / robots": 0,
+  "map names the park": 136,
   "region overview only": 0
  }
 }

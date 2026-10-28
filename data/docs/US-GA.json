@@ -699,9 +699,18 @@
    "page": "https://www.fs.usda.gov/detail/nfsnc/specialplaces/?cid=fseprd561556",
    "checked": "2026-10-28",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.fs.usda.gov/r08/northcarolina/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/detail/nfsnc/specialplaces/?cid=fseprd561556",
+    "posted": "October 5, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-10-28",
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/northcarolina",
@@ -713,7 +722,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 5
+   "ver": 5,
+   "browser_checked": "2026-10-28"
   },
   "US-12416": {
    "n": "Little River (GA) Wildlife Management Area",
@@ -1214,27 +1224,25 @@
     "kind": "pdf",
     "date": null,
     "date_how": "date unknown, checked 2026-10-28",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "how": "the page in a browser ('Trail Map')",
+    "page": "https://gastateparks.org/AHStephens",
     "posted": "Apr 07, 2025",
     "posted_how": "posted: the server's file date",
-    "names_park": true,
     "checked": "2026-10-28",
-    "covers": 2,
-    "via": "the agency site",
-    "kind_note": "combined map: covers 2 units",
-    "date_label": "date unknown"
+    "via": "the agency site"
    },
    "rules": {
-    "url": "https://gastateparks.org/Rules",
-    "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "url": "https://gastateparks.org/ParkRules",
+    "how": "a link on the page in a browser ('Park Rules')",
+    "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 5
+   "ver": 5,
+   "browser_checked": "2026-10-28"
   },
   "US-2166": {
    "n": "Amicalola Falls State Park",
@@ -1242,19 +1250,17 @@
    "page": "https://www.amicalolafallslodge.com/",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://amicalolafallslodge.com/georgia-state-park/",
+    "url": "https://amicalolafallslodge.com/wp-content/uploads/2025/11/Coral-Hospitality-2024-3D-Pad-Map-Amicalola-Falls-State-Park.pdf",
     "status": "ok",
-    "kind": "page",
+    "kind": "pdf",
     "date": null,
     "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Park Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": true,
+    "how": "the page in a browser ('')",
+    "page": "https://amicalolafallslodge.com/georgia-state-park/",
+    "posted": "2025-11",
+    "posted_how": "posted: the upload folder in the address",
     "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site",
-    "date_label": "date unknown"
+    "via": "the agency site"
    },
    "rules": {
     "url": "",
@@ -1282,7 +1288,8 @@
      "via": "linked from the agency page (365publicationsonline.com)"
     }
    ],
-   "ver": 5
+   "ver": 5,
+   "browser_checked": "2026-10-28"
   },
   "US-2167": {
    "n": "Black Rock Mountain State Park",
@@ -1290,31 +1297,30 @@
    "page": "https://gastateparks.org/BlackRockMountain",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/parkmaps/black_rock_mountain_sp_2022_sitemap.jpg",
-    "status": "ok",
-    "kind": "image",
+    "url": "https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/BlackRockMountain_TrailMap.pdf",
+    "status": "HTTP 404",
+    "kind": "",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "2022",
-    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
-    "names_park": true,
+    "date_how": "",
+    "how": "the page in a browser ('Trail Map')",
+    "page": "https://gastateparks.org/BlackRockMountain",
+    "posted": "",
+    "posted_how": "",
     "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site",
-    "date_label": "date unknown"
+    "via": "the agency site"
    },
    "rules": {
-    "url": "https://gastateparks.org/Rules",
-    "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "url": "https://gastateparks.org/ParkRules",
+    "how": "a link on the page in a browser ('Park Rules')",
+    "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 5
+   "ver": 5,
+   "browser_checked": "2026-10-28"
   },
   "US-2168": {
    "n": "Chattahoochee Bend State Park",
@@ -1344,7 +1350,9 @@
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
    "needs_browser": "host on the browser list",
    "ver": 5
   },
@@ -1354,14 +1362,22 @@
    "page": "https://gastateparks.org/CloudlandCanyon",
    "checked": "2026-10-28",
    "map": {
-    "url": "",
-    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/Cloud)",
-    "how": "on file (parkinfo-web / Kentucky answer key)"
+    "url": "https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/CloudlandCanyon_TrailMap.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "the page in a browser ('Trail Map')",
+    "page": "https://gastateparks.org/CloudlandCanyon",
+    "posted": "Apr 07, 2025",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-28",
+    "via": "the agency site"
    },
    "rules": {
-    "url": "https://gastateparks.org/Rules",
-    "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "url": "https://gastateparks.org/ParkRules",
+    "how": "a link on the page in a browser ('Park Rules')",
+    "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
@@ -1384,7 +1400,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 5
+   "ver": 5,
+   "browser_checked": "2026-10-28"
   },
   "US-2170": {
    "n": "Crooked River State Park",
@@ -1392,14 +1409,22 @@
    "page": "https://gastateparks.org/CrookedRiver",
    "checked": "2026-10-28",
    "map": {
-    "url": "",
-    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/parkm)",
-    "how": "on file (parkinfo-web / Kentucky answer key)"
+    "url": "https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/parkmaps/CrookedRiver_ParkMap.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "the page in a browser ('Park Map')",
+    "page": "https://gastateparks.org/CrookedRiver",
+    "posted": "Apr 15, 2026",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-28",
+    "via": "the agency site"
    },
    "rules": {
-    "url": "https://gastateparks.org/Rules",
-    "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "url": "https://gastateparks.org/ParkRules",
+    "how": "a link on the page in a browser ('Park Rules')",
+    "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
@@ -1422,7 +1447,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 5
+   "ver": 5,
+   "browser_checked": "2026-10-28"
   },
   "US-2171": {
    "n": "Don Carter State Park",
@@ -1430,14 +1456,22 @@
    "page": "https://gastateparks.org/DonCarter",
    "checked": "2026-10-28",
    "map": {
-    "url": "",
-    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/DonCa)",
-    "how": "on file (parkinfo-web / Kentucky answer key)"
+    "url": "https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/DonCarter_TrailMap.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "the page in a browser ('Trail Map')",
+    "page": "https://gastateparks.org/DonCarter",
+    "posted": "Apr 09, 2025",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-28",
+    "via": "the agency site"
    },
    "rules": {
-    "url": "https://gastateparks.org/Rules",
-    "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "url": "https://gastateparks.org/ParkRules",
+    "how": "a link on the page in a browser ('Park Rules')",
+    "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
@@ -1460,7 +1494,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 5
+   "ver": 5,
+   "browser_checked": "2026-10-28"
   },
   "US-2172": {
    "n": "Elijah Clark State Park",
@@ -1473,26 +1508,25 @@
     "kind": "image",
     "date": null,
     "date_how": "date unknown, checked 2026-10-28",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "how": "the page in a browser ('Park Map')",
+    "page": "https://gastateparks.org/ElijahClark",
     "posted": "Feb 02, 2024",
     "posted_how": "posted: the server's file date",
-    "names_park": true,
     "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site",
-    "date_label": "date unknown"
+    "via": "the agency site"
    },
    "rules": {
-    "url": "https://gastateparks.org/Rules",
-    "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "url": "https://gastateparks.org/ParkRules",
+    "how": "a link on the page in a browser ('Park Rules')",
+    "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 5
+   "ver": 5,
+   "browser_checked": "2026-10-28"
   },
   "US-2173": {
    "n": "F.D. Roosevelt State Park",
@@ -1500,14 +1534,22 @@
    "page": "https://gastateparks.org/FDRoosevelt",
    "checked": "2026-10-28",
    "map": {
-    "url": "",
-    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/FDRoo)",
-    "how": "on file (parkinfo-web / Kentucky answer key)"
+    "url": "https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/FDRoosevelt_ParkMap.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "the page in a browser ('Campground Map')",
+    "page": "https://gastateparks.org/FDRoosevelt",
+    "posted": "Feb 02, 2024",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-28",
+    "via": "the agency site"
    },
    "rules": {
-    "url": "https://gastateparks.org/Rules",
-    "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "url": "https://gastateparks.org/ParkRules",
+    "how": "a link on the page in a browser ('Park Rules')",
+    "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
@@ -1530,7 +1572,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 5
+   "ver": 5,
+   "browser_checked": "2026-10-28"
   },
   "US-2174": {
    "n": "Florence Marina State Park",
@@ -1550,7 +1593,9 @@
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
    "needs_browser": "host on the browser list",
    "map_tried": [
     {
@@ -1576,14 +1621,22 @@
    "page": "https://gastateparks.org/FortMcAllister",
    "checked": "2026-10-28",
    "map": {
-    "url": "",
-    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://gastateparks.org/sites/default/files/parks/pdf/FortMcAllister/)",
-    "how": "on file (parkinfo-web / Kentucky answer key)"
+    "url": "https://gastateparks.org/sites/default/files/parks/pdf/FortMcAllister/FortMcAllister-ParkMap-2024.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "the page in a browser ('Trail Map')",
+    "page": "https://gastateparks.org/FortMcAllister",
+    "posted": "2024",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "checked": "2026-10-28",
+    "via": "the agency site"
    },
    "rules": {
-    "url": "https://gastateparks.org/Rules",
-    "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "url": "https://gastateparks.org/ParkRules",
+    "how": "a link on the page in a browser ('Park Rules')",
+    "status": "ok"
    },
    "agency": "Georgia DNR",
    "runs": [],
@@ -1606,7 +1659,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 5
+   "ver": 5,
+   "browser_checked": "2026-10-28"
   },
   "US-2176": {
    "n": "Fort Mountain State Park",
@@ -1637,7 +1691,9 @@
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
    "needs_browser": "host on the browser list",
    "ver": 5
   },
@@ -1659,7 +1715,9 @@
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
    "needs_browser": "host on the browser list",
    "map_tried": [
     {
@@ -4716,7 +4774,9 @@
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
    "needs_browser": "the map link refused a plain reader (ok)",
    "ver": 5
   },
@@ -5065,19 +5125,17 @@
    "page": "https://www.fs.usda.gov/conf",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.fs.usda.gov/r08/chattahoochee-oconee",
+    "url": "https://store.usgs.gov/product/229534",
     "status": "ok",
     "kind": "page",
     "date": null,
     "date_how": "date unknown, checked 2026-10-28",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "how": "the page in a browser ('Chattahoochee NF Map')",
+    "page": "https://www.fs.usda.gov/r08/chattahoochee-oconee",
     "posted": "",
     "posted_how": "",
-    "names_park": true,
     "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site",
-    "date_label": "date unknown"
+    "via": "linked from the agency page (store.usgs.gov)"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/chattahoochee-oconee",
@@ -5089,7 +5147,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "map page on the browser list (a download button may hide the file)",
-   "ver": 5
+   "ver": 5,
+   "browser_checked": "2026-10-28"
   },
   "US-4556": {
    "n": "Appalachian Trail National Scenic Trail",
@@ -5245,7 +5304,9 @@
    "agency": "",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
    "needs_browser": "the page is built by script",
    "ver": 5
   },
@@ -6064,29 +6125,50 @@
    "page": "https://georgiawildlife.com/mcgraw-ford-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/McGraw%20Ford%20Photo%20and%20Topo%20Map%202022.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('PDF MAP')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/McGraw%20; opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com/locations/wrd)",
+    "how": "a link on the park's page ('PDF MAP')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/McGraw%20Ford%20Photo%20and%20Topo%20Map%202022.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('PDF MAP')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://georgiawildlife.com/locations/wrd",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map of All Properties')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-7455": {
    "n": "Lake Russell Wildlife Management Area",
@@ -6094,22 +6176,13 @@
    "page": "https://georgiawildlife.com/lake-russell-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
-    "kind": "page",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Map of All Properties')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com/locations/wrd; opened, a page that does not name this park (a generic agency page is not its map) https://gastateparks.org:443/DonCarter)",
+    "how": "a link on the park's page ('Map of All Properties')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
@@ -6118,7 +6191,37 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://georgiawildlife.com/locations/wrd",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map of All Properties')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://gastateparks.org:443/DonCarter",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Don Carter State Park')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "off the government, not linked by the agency"
+    }
+   ],
+   "ver": 5
   },
   "US-7456": {
    "n": "Dahlonega Gold Museum State Historic Site",
@@ -6150,7 +6253,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "map page on the browser list (a download button may hide the file)",
-   "ver": 4
+   "ver": 5
   },
   "US-7457": {
    "n": "Chief Vann House State Historic Site",
@@ -6172,7 +6275,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7458": {
    "n": "Travelers Rest State Historic Site",
@@ -6194,7 +6297,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7459": {
    "n": "Lake Nottely Dam Recreation Park",
@@ -6202,18 +6305,9 @@
    "page": "https://tennesseerivervalleygeotourism.org/entries/tva-nottely-dam-and-reservoir/36303fd5-1c0f-4ba9-972d-00a4adf1c1c0",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://tennesseerivervalleygeotourism.org/map",
-    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
-    "kind": "page",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://tennesseerivervalleygeotourism.org/map)",
+    "how": "a link on the park's page ('Map')"
    },
    "rules": {
     "url": "",
@@ -6224,7 +6318,23 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://tennesseerivervalleygeotourism.org/map",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-7460": {
    "n": "Lake Blue Ridge Dam Recreation Park",
@@ -6248,7 +6358,7 @@
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 4
+   "ver": 5
   },
   "US-7461": {
    "n": "Ocmulgee State Fishing Lake",
@@ -6256,29 +6366,36 @@
    "page": "https://georgiawildlife.com/ocmulgee-pfa",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
-    "kind": "page",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Map of All Properties')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com/locations/wrd)",
+    "how": "a link on the park's page ('Map of All Properties')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://georgiawildlife.com/locations/wrd",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map of All Properties')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-7462": {
    "n": "Big Lazer Creek State Fishing Lake",
@@ -6302,14 +6419,14 @@
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-7463": {
    "n": "Dodge County State Fishing Lake",
@@ -6317,29 +6434,36 @@
    "page": "https://georgiawildlife.com/dodge-county-pfa",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
-    "kind": "page",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Map of All Properties')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com/locations/wrd)",
+    "how": "a link on the park's page ('Map of All Properties')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://georgiawildlife.com/locations/wrd",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map of All Properties')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-7464": {
    "n": "Evans County State Fishing Lake",
@@ -6347,29 +6471,36 @@
    "page": "https://georgiawildlife.com/evans-county-pfa",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
-    "kind": "page",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Map of All Properties')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com/locations/wrd)",
+    "how": "a link on the park's page ('Map of All Properties')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://georgiawildlife.com/locations/wrd",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map of All Properties')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-7465": {
    "n": "Flat Creek State Fishing Lake",
@@ -6393,14 +6524,14 @@
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-7466": {
    "n": "Hugh M. Gillis State Fishing Lake",
@@ -6408,29 +6539,36 @@
    "page": "https://georgiawildlife.com/hugh-m-gillis-pfa",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
-    "kind": "page",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Map of All Properties')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com/locations/wrd)",
+    "how": "a link on the park's page ('Map of All Properties')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://georgiawildlife.com/locations/wrd",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map of All Properties')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-7467": {
    "n": "Marben State Fishing Lake",
@@ -6438,29 +6576,36 @@
    "page": "https://georgiawildlife.com/marben-pfa",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
-    "kind": "page",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Map of All Properties')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com/locations/wrd)",
+    "how": "a link on the park's page ('Map of All Properties')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://georgiawildlife.com/locations/wrd",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map of All Properties')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-7468": {
    "n": "McDuffie State Fishing Lake",
@@ -6468,29 +6613,36 @@
    "page": "https://georgiawildlife.com/mcduffie-pfa",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/pfa/McDuffie_Campground%20-%20Temp%20Map.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Campground Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://georgiawildlife.com/sites/default/files/wrd/pdf/pfa/McDuffie_C)",
+    "how": "a link on the park's page ('Campground Map')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/pfa/McDuffie_Campground%20-%20Temp%20Map.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Campground Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-7469": {
    "n": "Paradise State Fishing Lake",
@@ -6498,29 +6650,36 @@
    "page": "https://georgiawildlife.com/paradise-pfa",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
-    "kind": "page",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Map of All Properties')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com/locations/wrd)",
+    "how": "a link on the park's page ('Map of All Properties')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://georgiawildlife.com/locations/wrd",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map of All Properties')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-7470": {
    "n": "Silver Lake State Fishing Lake",
@@ -6528,29 +6687,50 @@
    "page": "https://georgiawildlife.com/silver-lake-pfa",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/Silver%20Lake%20PFA%20Map.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('PDF MAP')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/Silver%20; opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com/locations/wrd)",
+    "how": "a link on the park's page ('PDF MAP')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/Silver%20Lake%20PFA%20Map.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('PDF MAP')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://georgiawildlife.com/locations/wrd",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map of All Properties')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-7471": {
    "n": "Allatoona Pass Battlefield State Historic Site",
@@ -6572,7 +6752,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7472": {
    "n": "Griswoldville Battlefield State Historic Site",
@@ -6594,7 +6774,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7473": {
    "n": "DeSoto Falls National Recreation Area",
@@ -6624,7 +6804,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4,
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-7838": {
@@ -6649,14 +6829,14 @@
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-7852": {
    "n": "Richmond Hill Wildlife Management Area",
@@ -6664,29 +6844,36 @@
    "page": "https://georgiawildlife.com/richmond-hill-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
-    "kind": "page",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Map of All Properties')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com/locations/wrd)",
+    "how": "a link on the park's page ('Map of All Properties')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://georgiawildlife.com/locations/wrd",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map of All Properties')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-7858": {
    "n": "Dames Ferry Campground State Park",
@@ -6718,7 +6905,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7860": {
    "n": "Buford Trout Hatchery State Fish Hatchery",
@@ -6726,29 +6913,36 @@
    "page": "https://georgiawildlife.com/buford-trout-hatchery",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
-    "kind": "page",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Map of All Properties')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com/locations/wrd)",
+    "how": "a link on the park's page ('Map of All Properties')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://georgiawildlife.com/locations/wrd",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map of All Properties')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-7861": {
    "n": "Suwannee River Eco-Lodge State Park",
@@ -6770,7 +6964,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7881": {
    "n": "Alapaha River Wildlife Management Area",
@@ -6778,29 +6972,36 @@
    "page": "https://georgiawildlife.com/alapaha-river-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
-    "kind": "page",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Map of All Properties')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com/locations/wrd)",
+    "how": "a link on the park's page ('Map of All Properties')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://georgiawildlife.com/locations/wrd",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map of All Properties')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-7882": {
    "n": "Doerun Pitcherplant Bog Wildlife Management Area",
@@ -6808,22 +7009,13 @@
    "page": "https://georgiawildlife.com/doerun-pitcherplant-bog-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://www.exploregeorgia.org/sites/default/files/listing_documents/Doerun-PP-Bog-wma-map.pdf",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "",
-    "posted_how": "",
-    "names_park": null,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "on file, checked by a person or the link harvester (exploregeorgia.org)"
+    "url": "",
+    "status": "no working map link (tried: HTTP 403 https://www.exploregeorgia.org/sites/default/files/listing_documents/D; opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com/locations/wrd)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
@@ -6831,7 +7023,37 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the map link refused a plain reader (HTTP 403)",
-   "ver": 4,
+   "map_tried": [
+    {
+     "url": "https://www.exploregeorgia.org/sites/default/files/listing_documents/Doerun-PP-Bog-wma-map.pdf",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "on file, checked by a person or the link harvester (exploregeorgia.org)"
+    },
+    {
+     "url": "https://georgiawildlife.com/locations/wrd",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map of All Properties')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-7883": {
@@ -6854,7 +7076,7 @@
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
@@ -6862,7 +7084,51 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the map link refused a plain reader (HTTP 403)",
-   "ver": 4,
+   "map_tried": [
+    {
+     "url": "http://www.sam.usace.army.mil/Portals/46/docs/recreation/OP-WP/Docs/WestPointHuntingMap2012[1].pdf",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "on file, checked by a person or the link harvester (sam.usace.army.mil)"
+    },
+    {
+     "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/West%20Point%20WMA%20Overview%20Map%20Satellite.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Area Overview Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://georgiawildlife.com/sites/default/files/WestPoint_2023.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('PDF MAP')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-7893": {
@@ -6894,7 +7160,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-7895": {
    "n": "Sheffield Wildlife Management Area",
@@ -6918,14 +7184,14 @@
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-7896": {
    "n": "Standing Boy Creek State Park",
@@ -6947,7 +7213,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 4
+   "ver": 5
   },
   "US-7897": {
    "n": "Arrowhead Wildlife Management Area",
@@ -6955,29 +7221,50 @@
    "page": "https://georgiawildlife.com/arrowhead-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/Arrowhead.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('PDF MAP')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/Arrowhead; opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com/locations/wrd)",
+    "how": "a link on the park's page ('PDF MAP')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/Arrowhead.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('PDF MAP')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://georgiawildlife.com/locations/wrd",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map of All Properties')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-7898": {
    "n": "Conasauga River Wildlife Management Area",
@@ -6985,29 +7272,50 @@
    "page": "https://georgiawildlife.com/conasauga-river-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/Conasauage%20River%20WMA%20Photo%20Map%202024.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('PDF MAP')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/Conasauag; opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com/locations/wrd)",
+    "how": "a link on the park's page ('PDF MAP')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/Conasauage%20River%20WMA%20Photo%20Map%202024.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('PDF MAP')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://georgiawildlife.com/locations/wrd",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map of All Properties')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-7899": {
    "n": "Carter's Lake Wildlife Management Area",
@@ -7015,29 +7323,50 @@
    "page": "https://georgiawildlife.com/carters-lake-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/Carters%20Lake%20Map.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('PDF MAP')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/Carters%2; opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com/locations/wrd)",
+    "how": "a link on the park's page ('PDF MAP')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/Carters%20Lake%20Map.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('PDF MAP')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://georgiawildlife.com/locations/wrd",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map of All Properties')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-7900": {
    "n": "Echeconnee Creek Wildlife Management Area",
@@ -7063,14 +7392,14 @@
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-7901": {
    "n": "Ohoopee Dunes Wildlife Management Area",
@@ -7078,29 +7407,36 @@
    "page": "https://georgiawildlife.com/ohoopee-dunes-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
-    "kind": "page",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Map of All Properties')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com/locations/wrd)",
+    "how": "a link on the park's page ('Map of All Properties')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://georgiawildlife.com/locations/wrd",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map of All Properties')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-7902": {
    "n": "Walton Wildlife Management Area",
@@ -7124,14 +7460,14 @@
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-7903": {
    "n": "Zahnd Wildlife Management Area",
@@ -7139,29 +7475,50 @@
    "page": "https://georgiawildlife.com/zahnd-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/Zahnd%20WMA%20Map.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('PDF MAP')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/Zahnd%20W; opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com/locations/wrd)",
+    "how": "a link on the park's page ('PDF MAP')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/Zahnd%20WMA%20Map.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('PDF MAP')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://georgiawildlife.com/locations/wrd",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map of All Properties')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-7904": {
    "n": "Broad River Wildlife Management Area",
@@ -7185,14 +7542,14 @@
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-7905": {
    "n": "Canoochee Sandhills Wildlife Management Area",
@@ -7200,29 +7557,50 @@
    "page": "https://georgiawildlife.com/canoochee-sandhills-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/locationmaps/CSWMA%20Color%20Line%20Map%202024.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('PDF MAP')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/locationm; opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com/locations/wrd)",
+    "how": "a link on the park's page ('PDF MAP')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/locationmaps/CSWMA%20Color%20Line%20Map%202024.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('PDF MAP')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://georgiawildlife.com/locations/wrd",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map of All Properties')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-7906": {
    "n": "Chattahoochee Fall Line Almo Tract Wildlife Management Area",
@@ -7246,14 +7624,14 @@
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-7907": {
    "n": "Clarks Hill Wildlife Management Area",
@@ -7277,7 +7655,7 @@
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
@@ -7286,7 +7664,7 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-7908": {
    "n": "Fishing Creek Wildlife Management Area",
@@ -7310,14 +7688,14 @@
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-7909": {
    "n": "Germany Creek Wildlife Management Area",
@@ -7341,14 +7719,14 @@
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-7910": {
    "n": "Keg Creek Wildlife Management Area",
@@ -7372,14 +7750,14 @@
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-7911": {
    "n": "Lake Walter F. George Wildlife Management Area",
@@ -7387,22 +7765,13 @@
    "page": "https://georgiawildlife.com/lake-walter-f-george-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "http://www.sam.usace.army.mil/Portals/46/docs/recreation/WFG/docs/Lake.pdf",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "",
-    "posted_how": "",
-    "names_park": null,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "on file, checked by a person or the link harvester (sam.usace.army.mil)"
+    "url": "",
+    "status": "no working map link (tried: HTTP 403 http://www.sam.usace.army.mil/Portals/46/docs/recreation/WFG/docs/Lake; opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com/locations/wrd)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
@@ -7410,7 +7779,37 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the map link refused a plain reader (HTTP 403)",
-   "ver": 4,
+   "map_tried": [
+    {
+     "url": "http://www.sam.usace.army.mil/Portals/46/docs/recreation/WFG/docs/Lake.pdf",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "on file, checked by a person or the link harvester (sam.usace.army.mil)"
+    },
+    {
+     "url": "https://georgiawildlife.com/locations/wrd",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map of All Properties')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-7912": {
@@ -7419,29 +7818,36 @@
    "page": "https://georgiawildlife.com/montezuma-bluffs-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
-    "kind": "page",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Map of All Properties')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com/locations/wrd)",
+    "how": "a link on the park's page ('Map of All Properties')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://georgiawildlife.com/locations/wrd",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map of All Properties')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-7913": {
    "n": "Otting Wildlife Management Area",
@@ -7465,14 +7871,14 @@
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-7914": {
    "n": "Sandhills East Wildlife Management Area",
@@ -7496,14 +7902,14 @@
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-9758": {
    "n": "Chattooga National Wild and Scenic River",
@@ -7534,7 +7940,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-9763": {
    "n": "Albany Nursery Wildlife Management Area",
@@ -7542,29 +7948,36 @@
    "page": "http://georgiawildlife.com/albany-nursery-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com:443/locations/wrd",
-    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
-    "kind": "page",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Map of All Properties')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com:443/locations/wrd)",
+    "how": "a link on the park's page ('Map of All Properties')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://georgiawildlife.com:443/locations/wrd",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map of All Properties')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-9765": {
    "n": "Alexander Wildlife Management Area",
@@ -7572,29 +7985,50 @@
    "page": "http://georgiawildlife.com/alexander-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com:443/sites/default/files/wrd/pdf/maps/Alexander%20WMA%20Map.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('PDF MAP')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://georgiawildlife.com:443/sites/default/files/wrd/pdf/maps/Alexa; opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com:443/locations/wrd)",
+    "how": "a link on the park's page ('PDF MAP')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://georgiawildlife.com:443/sites/default/files/wrd/pdf/maps/Alexander%20WMA%20Map.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('PDF MAP')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://georgiawildlife.com:443/locations/wrd",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map of All Properties')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-9767": {
    "n": "Alligator Creek Wildlife Management Area",
@@ -7602,29 +8036,36 @@
    "page": "https://georgiawildlife.com/alligator-creek-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
-    "kind": "page",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Map of All Properties')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com/locations/wrd)",
+    "how": "a link on the park's page ('Map of All Properties')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://georgiawildlife.com/locations/wrd",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map of All Properties')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-9770": {
    "n": "Altama Plantation Wildlife Management Area",
@@ -7632,29 +8073,36 @@
    "page": "https://georgiawildlife.com/altama-plantation-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
-    "kind": "page",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Map of All Properties')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com/locations/wrd)",
+    "how": "a link on the park's page ('Map of All Properties')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://georgiawildlife.com/locations/wrd",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map of All Properties')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-9772": {
    "n": "Ceylon Wildlife Management Area",
@@ -7662,29 +8110,36 @@
    "page": "https://georgiawildlife.com/ceylon-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
-    "kind": "page",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Map of All Properties')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com/locations/wrd)",
+    "how": "a link on the park's page ('Map of All Properties')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://georgiawildlife.com/locations/wrd",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map of All Properties')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-9774": {
    "n": "Lower Broad River Wildlife Management Area",
@@ -7708,14 +8163,14 @@
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-9776": {
    "n": "Mead Farm Wildlife Management Area",
@@ -7739,14 +8194,14 @@
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-9777": {
    "n": "Moody Forest Wildlife Management Area",
@@ -7754,22 +8209,13 @@
    "page": "https://georgiawildlife.com/moody-forest-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
-    "kind": "page",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Map of All Properties')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com/locations/wrd)",
+    "how": "a link on the park's page ('Map of All Properties')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
@@ -7778,7 +8224,23 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://georgiawildlife.com/locations/wrd",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map of All Properties')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-9779": {
    "n": "Soap Creek Wildlife Management Area",
@@ -7802,14 +8264,14 @@
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-9780": {
    "n": "Townsend Wildlife Management Area",
@@ -7817,29 +8279,36 @@
    "page": "https://georgiawildlife.com/townsend-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
-    "kind": "page",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Map of All Properties')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com/locations/wrd)",
+    "how": "a link on the park's page ('Map of All Properties')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://georgiawildlife.com/locations/wrd",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map of All Properties')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-9782": {
    "n": "Big Dukes Pond Wildlife Management Area",
@@ -7847,29 +8316,50 @@
    "page": "https://georgiawildlife.com/big-dukes-pond-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/Big%20Dukes%20Pond%20WMA%20Map.pdf",
-    "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('PDF MAP')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/Big%20Duk; opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com/locations/wrd)",
+    "how": "a link on the park's page ('PDF MAP')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/Big%20Dukes%20Pond%20WMA%20Map.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('PDF MAP')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://georgiawildlife.com/locations/wrd",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map of All Properties')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-9784": {
    "n": "Hiltonia Wildlife Management Area",
@@ -7894,14 +8384,14 @@
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-9786": {
    "n": "Lake Seminole Wildlife Management Area",
@@ -7909,22 +8399,13 @@
    "page": "https://georgiawildlife.com/lake-seminole-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "http://www.sam.usace.army.mil/Portals/46/docs/recreation/OP-AC-WS/images/080718-A-KI945-124.jpg",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "",
-    "posted_how": "",
-    "names_park": null,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "on file, checked by a person or the link harvester (sam.usace.army.mil)"
+    "url": "",
+    "status": "no working map link (tried: HTTP 403 http://www.sam.usace.army.mil/Portals/46/docs/recreation/OP-AC-WS/imag; opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com/locations/wrd)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
@@ -7932,7 +8413,37 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the map link refused a plain reader (HTTP 403)",
-   "ver": 4,
+   "map_tried": [
+    {
+     "url": "http://www.sam.usace.army.mil/Portals/46/docs/recreation/OP-AC-WS/images/080718-A-KI945-124.jpg",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "on file, checked by a person or the link harvester (sam.usace.army.mil)"
+    },
+    {
+     "url": "https://georgiawildlife.com/locations/wrd",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map of All Properties')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5,
    "browser_checked": "2026-10-28"
   },
   "US-9788": {
@@ -7941,29 +8452,36 @@
    "page": "https://georgiawildlife.com/lanahassee-creek-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
-    "kind": "page",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Map of All Properties')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com/locations/wrd)",
+    "how": "a link on the park's page ('Map of All Properties')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://georgiawildlife.com/locations/wrd",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map of All Properties')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-9791": {
    "n": "Morgan Lake Wildlife Management Area",
@@ -7971,29 +8489,36 @@
    "page": "https://georgiawildlife.com/morgan-lake-wma",
    "checked": "2026-10-28",
    "map": {
-    "url": "https://georgiawildlife.com/locations/wrd",
-    "status": "opened, a page that does not name this park (a generic agency page is not its map)",
-    "kind": "page",
-    "date": null,
-    "date_how": "",
-    "how": "a link on the park's page ('Map of All Properties')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site"
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com/locations/wrd)",
+    "how": "a link on the park's page ('Map of All Properties')"
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "map_tried": [
+    {
+     "url": "https://georgiawildlife.com/locations/wrd",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Map of All Properties')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
   },
   "US-9793": {
    "n": "Ball's Ferry Property Wildlife Management Area",
@@ -8017,14 +8542,14 @@
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-9795": {
    "n": "Sandhills West Wildlife Management Area",
@@ -8048,14 +8573,14 @@
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-9797": {
    "n": "Chattahoochee Fall Line Hilliard Tract Wildlife Management Area",
@@ -8079,14 +8604,14 @@
    },
    "rules": {
     "url": "",
-    "status": "not found (a page shared by 130 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
+    "status": "not found (a page shared by 55 parks was dropped: https://publuu.com/flip-book/1025508/2375523)",
     "how": "a link on the park's page ('Regulations Now Available')"
    },
    "agency": "Georgia DNR",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   },
   "US-9798": {
    "n": "Centennial Olympic State Park",
@@ -8110,7 +8635,7 @@
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 4
+   "ver": 5
   },
   "US-9799": {
    "n": "Stone Mountain (GA) State Park",
@@ -8141,24 +8666,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 4
+   "ver": 5
   }
  },
  "read": "2026-10-28",
  "counts": {
   "parks": 237,
-  "map ok": 101,
-  "map found by the bot": 64,
+  "map ok": 106,
+  "map found by the bot": 73,
   "date on the map": 12,
-  "posted date only": 34,
-  "date unknown": 55,
-  "no map": 136,
-  "rules ok": 34,
-  "needs browser": 70,
+  "posted date only": 40,
+  "date unknown": 54,
+  "no map": 131,
+  "rules ok": 42,
+  "needs browser": 59,
   "handover hints": 0,
   "runs hints": 14,
   "host resting / robots": 0,
-  "map names the park": 94,
+  "map names the park": 89,
   "region overview only": 0
  }
 }
