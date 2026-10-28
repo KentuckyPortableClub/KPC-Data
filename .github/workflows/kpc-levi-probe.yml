@@ -26,15 +26,14 @@ jobs:
           pt = {'geometry': '-84.0549,37.0838', 'geometryType': 'esriGeometryPoint', 'inSR': 4326, 'spatialRel': 'esriSpatialRelIntersects', 'outFields': '*', 'returnGeometry': 'true', 'outSR': 4326, 'f': 'json'}
           box = dict(pt, geometry='-84.075,37.07,-84.035,37.10', geometryType='esriGeometryEnvelope')
           K = 'https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services'
-          for name, base in (('TCM street base 20', K + '/Ky_TCM_Street_Base_WGS84WM/MapServer/20'),):
-              j = get(base + '/query', box)
-              note('Levi ' + name, 'ERR ' + j['ERR'] if 'ERR' in j else ' | '.join(f"{ {k: v for k, v in (f.get('attributes') or {}).items() if v not in (None, '') and 'shape' not in k.lower()} } ~{acres(f.get('geometry'))} ac" for f in j.get('features', []))[:950] or 'no features')
-          # every layer of the State Parks features service, at the park
           s = get(K + '/Ky_State_Parks_Features_WGS84WM/MapServer', {'f': 'json'})
-          for L in (s.get('layers') or [])[:8]:
-              j = get(f"{K}/Ky_State_Parks_Features_WGS84WM/MapServer/{L['id']}/query", box)
-              if j.get('features'): note(f"Levi SP features {L['id']} {L['name'][:30]}", ' | '.join(f"{ {k: v for k, v in (f.get('attributes') or {}).items() if v not in (None, '') and 'shape' not in k.lower()} } ~{acres(f.get('geometry'))} ac" for f in j['features'])[:900])
-          # ArcGIS Online: Laurel County / London parcels, older KY state park layers
-          for q in ('Laurel County Kentucky parcels', 'London Kentucky parcels', 'Kentucky State Parks boundaries', 'Levi Jackson'):
-              j = get('https://www.arcgis.com/sharing/rest/search', {'q': q + ' type:"Feature Service"', 'num': 8, 'f': 'json'})
-              note('AGOL ' + q, ' | '.join(f"{r.get('title')} ({r.get('owner')}, {r.get('modified') and __import__('time').strftime('%Y-%m-%d', __import__('time').gmtime(r['modified'] / 1000))}) {r.get('url')}" for r in j.get('results', []))[:950] or str(j)[:200])
+          note('Levi SP service layers', str([(L['id'], L['name']) for L in s.get('layers') or []])[:900])
+          for L in (s.get('layers') or []):
+              if L['id'] < 8: continue
+              j = get(f"{K}/Ky_State_Parks_Features_WGS84WM/MapServer/{L['id']}/query", pt)
+              if j.get('features'): note(f"Levi SP layer {L['id']} {L['name'][:30]}", ' | '.join(f"{ {k: v for k, v in (f.get('attributes') or {}).items() if v not in (None, '') and 'shape' not in k.lower()} } ~{acres(f.get('geometry'))} ac" for f in j['features'])[:900])
+          for name, base in (('EKU GAP 2023', 'https://services3.arcgis.com/6ivv17yGXadPbqNc/arcgis/rest/services/GAP_land_stewardship/FeatureServer'),):
+              s2 = get(base, {'f': 'json'})
+              for L in (s2.get('layers') or [])[:4]:
+                  j = get(f"{base}/{L['id']}/query", pt)
+                  note(f"{name} {L['id']}", ('ERR ' + j['ERR']) if 'ERR' in j else ' | '.join(f"{ {k: v for k, v in (f.get('attributes') or {}).items() if v not in (None, '') and k.lower() in ('unit_nm','loc_nm','own_type','own_name','mang_name','gis_acres','date_est','src_date','d_own_name','d_mang_nam','category','sourcedate','agency','name')} } ~{acres(f.get('geometry'))} ac" for f in j.get('features', []))[:900] or 'none')
