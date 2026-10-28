@@ -4,11 +4,11 @@
    "checked": 193,
    "counts": {
     "fees": 5,
-    "hours": 21,
+    "hours": 20,
     "no_page": 0,
-    "nothing": 165,
+    "nothing": 166,
     "parks": 193,
-    "permits": 10
+    "permits": 8
    },
    "left": 0,
    "parks": 193,
@@ -26,7 +26,7 @@
   "manners": {
    "arcgis_exempt": 0,
    "errors": 0,
-   "requests": 560,
+   "requests": 490,
    "rested": 1,
    "robots": 0,
    "strikes": 1
@@ -34,12 +34,12 @@
   "stat": {
    "errors": 0,
    "fees": 5,
-   "hours": 21,
+   "hours": 20,
    "no_page": 0,
-   "none": 165,
-   "pages_read": 487,
+   "none": 167,
+   "pages_read": 417,
    "parks": 193,
-   "permits": 10,
+   "permits": 8,
    "skipped_fresh": 0
   },
   "when": "2026-10-28"
@@ -47,6 +47,6 @@
  "test": {
   "result": "FAIL",
   "when": "2026-10-28",
-  "why": "hours rows 9/38 opened (24%; 38 in the key); Otter Creek Wed–Sun MISS; Buckley $8 ok (US-3802); Peabody permit ok; US-3781 MISS, US-1251 ok, US-1254 ok, US-7950 ok, US-7708 ok, US-7966 MISS, US-7956 MISS, US-7954 ok, US-7967 ok, US-7965 MISS, US-7960 MISS, US-7968 MISS, US-7957 MISS, US-7961 MISS, US-7958 ok, US-7953 MISS, US-7963 MISS, US-7959 MISS, US-7951 MISS, US-4690 MISS, US-3779 MISS, US-3783 MISS, US-3784 MISS, US-3785 MISS, US-10172 MISS, US-3788 MISS, US-11181 MISS, US-13598 MISS, US-13607 MISS, US-13606 MISS, US-13600 MISS, US-3802 ok, US-13601 MISS, US-10173 ok, US-13599 MISS, US-3792 MISS, US-8144 MISS, US-10099 MISS"
+  "why": "hours rows 9/37 opened (24%; 37 in the key); Otter Creek Wed–Sun MISS; Buckley $8 ok (US-3802); Peabody permit ok; US-3781 MISS, US-1251 ok, US-1254 ok, US-7950 ok, US-7708 ok, US-7966 MISS, US-7956 MISS, US-7954 ok, US-7967 ok, US-7965 MISS, US-7960 MISS, US-7968 MISS, US-7957 MISS, US-7961 MISS, US-7958 ok, US-7953 MISS, US-7963 MISS, US-7959 MISS, US-7951 MISS, US-4690 MISS, US-3779 MISS, US-3783 MISS, US-3784 MISS, US-3785 MISS, US-10172 no page opened, US-3788 MISS, US-11181 MISS, US-13598 MISS, US-13607 MISS, US-13606 MISS, US-13600 MISS, US-3802 ok, US-13601 MISS, US-10173 ok, US-13599 MISS, US-3792 MISS, US-8144 MISS, US-10099 MISS"
  }
 }

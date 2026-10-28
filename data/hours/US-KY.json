@@ -3,16 +3,17 @@
  "area": "US-KY",
  "counts": {
   "fees": 5,
-  "hours": 21,
+  "hours": 20,
   "no_page": 0,
-  "nothing": 165,
+  "nothing": 166,
   "parks": 193,
-  "permits": 10
+  "permits": 8
  },
  "parks": {
   "US-0019": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -67,11 +68,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "National / NPS",
-   "ver": 5
+   "ver": 6
   },
   "US-0050": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -116,11 +118,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "National Park",
-   "ver": 5
+   "ver": 6
   },
   "US-0295": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -147,19 +150,9 @@
      "url": "https://www.fws.gov/refuge/clarks-river/visit-us"
     },
     {
-     "line": "Monday - Friday (Closed on all Federal Holidays)",
-     "read": "2026-10-28",
-     "url": "https://www.fws.gov/refuge/clarks-river/visit-us"
-    },
-    {
      "line": "7:30 am - 4 pm",
      "read": "2026-10-28",
      "url": "https://www.fws.gov/refuge/clarks-river/visit-us"
-    },
-    {
-     "line": "The Refuge is open during daylight hours.",
-     "read": "2026-10-28",
-     "url": "https://www.fws.gov/refuge/clarks-river/visit-us/rules-policies"
     }
    ],
    "hunting_hours": [
@@ -172,11 +165,6 @@
      "line": "The mosaic of habitats include bottomland hardwood forest, open water, seasonal and permanent wetlands, uplands, grasslands, and croplands.",
      "read": "2026-10-28",
      "url": "https://www.fws.gov/refuge/clarks-river"
-    },
-    {
-     "line": "The Refuge is only open to the public from sunrise to sunset, with the exception of permitted hunting seasons.",
-     "read": "2026-10-28",
-     "url": "https://www.fws.gov/refuge/clarks-river/visit-us/rules-policies"
     }
    ],
    "n": "Clarks River National Wildlife Refuge",
@@ -218,20 +206,15 @@
    "permits": [],
    "status": "ok",
    "t": "National / NPS",
-   "ver": 5
+   "ver": 6
   },
   "US-0538": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
-   "hours": [
-    {
-     "line": "Monday - Saturday (Closed on all Federal Holidays)",
-     "read": "2026-10-28",
-     "url": "https://www.fws.gov/refuge/reelfoot/visit-us"
-    }
-   ],
+   "hours": [],
    "hunting_hours": [],
    "n": "Reelfoot National Wildlife Refuge",
    "office_hours": [],
@@ -264,13 +247,14 @@
     }
    ],
    "permits": [],
-   "status": "ok",
+   "status": "nothing found",
    "t": "National / NPS",
-   "ver": 5
+   "ver": 6
   },
   "US-0608": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -326,11 +310,12 @@
    "permits": [],
    "status": "ok",
    "t": "National / NPS",
-   "ver": 5
+   "ver": 6
   },
   "US-0686": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -372,20 +357,15 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "permits": [
-    {
-     "line": "This Section, however, requires that a list of activities needing a permit (and a fee schedule for the various types of permits) be maintained by the park.",
-     "read": "2026-10-28",
-     "url": "https://www.nps.gov/biso/learn/management/lawsandpolicies.htm"
-    }
-   ],
-   "status": "ok",
+   "permits": [],
+   "status": "nothing found",
    "t": "National Recreation Area",
-   "ver": 5
+   "ver": 6
   },
   "US-0703": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -430,7 +410,7 @@
    "permits": [],
    "status": "nothing found",
    "t": "National / NPS",
-   "ver": 5
+   "ver": 6
   },
   "US-0724": {
    "attraction_fees": [],
@@ -441,6 +421,7 @@
      "url": "https://www.nps.gov/abli/planyourvisit/basicinfo.htm"
     }
    ],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -485,11 +466,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "National / NPS",
-   "ver": 5
+   "ver": 6
   },
   "US-10098": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [
@@ -539,11 +521,12 @@
    "permits": [],
    "status": "ok",
    "t": "National / NPS",
-   "ver": 5
+   "ver": 6
   },
   "US-10099": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [
     {
@@ -570,20 +553,15 @@
      "why": "hours page (Kentucky hours answer key)"
     }
    ],
-   "permits": [
-    {
-     "line": "a Kentucky fishing license and trout permit are required for individuals 16 years old and over to fish at Hatchery Creek.",
-     "read": "2026-10-28",
-     "url": "https://www.fws.gov/locations/wolf-creek-national-fish-hatchery"
-    }
-   ],
+   "permits": [],
    "status": "ok",
    "t": "Fish Hatchery",
-   "ver": 5
+   "ver": 6
   },
   "US-10102": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -611,11 +589,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "Trail",
-   "ver": 5
+   "ver": 6
   },
   "US-10103": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -633,11 +612,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "River / Wilderness",
-   "ver": 5
+   "ver": 6
   },
   "US-10104": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -665,11 +645,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "National / NPS",
-   "ver": 5
+   "ver": 6
   },
   "US-10105": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -692,11 +673,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "National / NPS",
-   "ver": 5
+   "ver": 6
   },
   "US-10106": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -719,11 +701,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "National / NPS",
-   "ver": 5
+   "ver": 6
   },
   "US-10107": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -741,11 +724,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "National / NPS",
-   "ver": 5
+   "ver": 6
   },
   "US-10111": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -768,11 +752,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "National / NPS",
-   "ver": 5
+   "ver": 6
   },
   "US-10112": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -790,11 +775,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "National / NPS",
-   "ver": 5
+   "ver": 6
   },
   "US-10121": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -812,21 +798,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/CaneCreekWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-10124": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -844,21 +826,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/ClayWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-10128": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -876,21 +854,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/FergusonCreekWMA_All.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-10131": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -908,21 +882,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/GabbardBranchWMA_All.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-10137": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -940,21 +910,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/Harris-Dickerson_All.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-10138": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -972,21 +938,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/Hoskins_WMA_All.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-10139": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -999,21 +961,17 @@
      "status": "ok",
      "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9078",
      "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-10140": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -1031,21 +989,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/KentuckyLakeWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-10141": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -1068,21 +1022,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/KentuckyRidgeForestWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-10145": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -1100,21 +1050,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/MeadowCreekWMA_all.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-10146": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -1132,21 +1078,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/MillCreekWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-10148": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -1164,21 +1106,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/MudCreekCampWMA_All.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-10153": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -1196,21 +1134,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/Old_Trace_Creek_WMA_all.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-10155": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -1228,21 +1162,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/PaulVanBoovenWMA_All.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-10157": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -1260,21 +1190,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/Ping-SinkingValleyWMA_All.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-10158": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -1292,21 +1218,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/PioneerWeaponsWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-10159": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -1324,21 +1246,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/RedbirdWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-10160": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -1356,21 +1274,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/RockcastleRiverWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-10161": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -1388,21 +1302,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/RollingForkWMA_all.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-10162": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -1420,21 +1330,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/RossCreekWMAall.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-10164": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -1452,21 +1358,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/ShilalahCreekWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-10166": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -1484,21 +1386,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/StephensCreekWMA_All.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-10167": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -1516,21 +1414,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/SimonKentonWMA_all.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-10168": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -1548,21 +1442,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/SunnybrookWMAall.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-10170": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -1575,21 +1465,17 @@
      "status": "ok",
      "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9116",
      "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-10171": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -1602,29 +1488,18 @@
      "status": "ok",
      "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9094",
      "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-10172": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
-   "debug": [
-    {
-     "kind": "page",
-     "text": "Title 301 • Kentucky Administrative Regulations • Legislative Research Commission • Kentucky General Assembly • Search Title 301 - Tourism, Arts and Heritage Cabinet - Department of Fish and Wildlife Resources",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/"
-    }
-   ],
    "fees": [],
    "hours": [],
    "hunting_hours": [],
@@ -1646,17 +1521,12 @@
      "status": "skipped: another topic (field trips / programs / seasons)",
      "url": "https://fw.ky.gov/Education/Documents/salatotrailmap.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
-   "status": "nothing found",
+   "status": "no page opened",
    "t": "Other",
-   "ver": 5
+   "ver": 6
   },
   "US-10173": {
    "attraction_fees": [
@@ -1667,6 +1537,18 @@
     }
    ],
    "attraction_hours": [],
+   "campground_hours": [
+    {
+     "line": "The campground is open year round.",
+     "read": "2026-10-28",
+     "url": "https://www.kyhorsepark.com/"
+    },
+    {
+     "line": "Based on host availability, we are able to shuttle campers during the summer season from the campground store to the Visitor Information Center from the hours of 9 am to 5 pm daily.",
+     "read": "2026-10-28",
+     "url": "https://www.kyhorsepark.com/"
+    }
+   ],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -1683,23 +1565,12 @@
      "url": "https://kyhorsepark.com/park-information/hours-admission/"
     },
     {
-     "line": "The campground is open year round.",
-     "read": "2026-10-28",
-     "url": "https://www.kyhorsepark.com/"
-    },
-    {
      "line": "The Kentucky Horse Park will remain open during its regular hours of 9:00 AM – 5:00 PM.",
      "read": "2026-10-28",
      "url": "https://www.kyhorsepark.com/"
     }
    ],
-   "hunting_hours": [
-    {
-     "line": "Based on host availability, we are able to shuttle campers during the summer season from the campground store to the Visitor Information Center from the hours of 9 am to 5 pm daily.",
-     "read": "2026-10-28",
-     "url": "https://www.kyhorsepark.com/"
-    }
-   ],
+   "hunting_hours": [],
    "n": "Kentucky Horse Park",
    "office_hours": [],
    "other_fees": [],
@@ -1723,11 +1594,12 @@
    "permits": [],
    "status": "ok",
    "t": "State Facility",
-   "ver": 5
+   "ver": 6
   },
   "US-11181": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -1762,11 +1634,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "Trail",
-   "ver": 5
+   "ver": 6
   },
   "US-11274": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -1784,21 +1657,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/Horse_Mill_branch_WMAmap_ALL.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-12079": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -1826,11 +1695,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-12083": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -1853,21 +1723,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/University%20of%20the%20Cumberlands%20WMAAll.pdf",
      "why": "official map (documents bot)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-1251": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -1924,11 +1790,12 @@
    "permits": [],
    "status": "ok",
    "t": "State Park",
-   "ver": 5
+   "ver": 6
   },
   "US-1252": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -1978,11 +1845,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 5
+   "ver": 6
   },
   "US-1253": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -2032,11 +1900,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "Trail",
-   "ver": 5
+   "ver": 6
   },
   "US-1254": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -2097,11 +1966,12 @@
    "permits": [],
    "status": "ok",
    "t": "State Park",
-   "ver": 5
+   "ver": 6
   },
   "US-1255": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -2119,21 +1989,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/FishtrapLakeWMA_All.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-1256": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -2183,11 +2049,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 5
+   "ver": 6
   },
   "US-1257": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -2220,11 +2087,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 5
+   "ver": 6
   },
   "US-1258": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -2252,11 +2120,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 5
+   "ver": 6
   },
   "US-1259": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -2289,11 +2158,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 5
+   "ver": 6
   },
   "US-1260": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -2343,11 +2213,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 5
+   "ver": 6
   },
   "US-1261": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -2375,11 +2246,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 5
+   "ver": 6
   },
   "US-1262": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -2407,11 +2279,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 5
+   "ver": 6
   },
   "US-1263": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -2444,11 +2317,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 5
+   "ver": 6
   },
   "US-1264": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -2481,11 +2355,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 5
+   "ver": 6
   },
   "US-1265": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -2530,11 +2405,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 5
+   "ver": 6
   },
   "US-1266": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -2567,11 +2443,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 5
+   "ver": 6
   },
   "US-1267": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -2604,11 +2481,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 5
+   "ver": 6
   },
   "US-1268": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -2641,11 +2519,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 5
+   "ver": 6
   },
   "US-1269": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -2695,11 +2574,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 5
+   "ver": 6
   },
   "US-1270": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -2732,11 +2612,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 5
+   "ver": 6
   },
   "US-1271": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -2769,11 +2650,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 5
+   "ver": 6
   },
   "US-1272": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -2806,11 +2688,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 5
+   "ver": 6
   },
   "US-1273": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -2843,11 +2726,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 5
+   "ver": 6
   },
   "US-1274": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -2880,11 +2764,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 5
+   "ver": 6
   },
   "US-1275": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -2917,11 +2802,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 5
+   "ver": 6
   },
   "US-12752": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -2939,11 +2825,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "Nature Preserve",
-   "ver": 5
+   "ver": 6
   },
   "US-1276": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -2976,11 +2863,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 5
+   "ver": 6
   },
   "US-1277": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -3013,11 +2901,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 5
+   "ver": 6
   },
   "US-1278": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -3050,11 +2939,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 5
+   "ver": 6
   },
   "US-1279": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -3087,11 +2977,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 5
+   "ver": 6
   },
   "US-1280": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -3124,11 +3015,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 5
+   "ver": 6
   },
   "US-1281": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -3161,11 +3053,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 5
+   "ver": 6
   },
   "US-1282": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -3198,11 +3091,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 5
+   "ver": 6
   },
   "US-1283": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -3230,11 +3124,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 5
+   "ver": 6
   },
   "US-1284": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -3267,11 +3162,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 5
+   "ver": 6
   },
   "US-1285": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -3304,11 +3200,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 5
+   "ver": 6
   },
   "US-1286": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -3341,11 +3238,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 5
+   "ver": 6
   },
   "US-1287": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -3378,11 +3276,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 5
+   "ver": 6
   },
   "US-1288": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -3410,11 +3309,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 5
+   "ver": 6
   },
   "US-1289": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -3447,11 +3347,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 5
+   "ver": 6
   },
   "US-12971": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [
@@ -3475,11 +3376,12 @@
    "permits": [],
    "status": "ok",
    "t": "Nature Preserve",
-   "ver": 5
+   "ver": 6
   },
   "US-12972": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [
@@ -3508,11 +3410,12 @@
    "permits": [],
    "status": "ok",
    "t": "Nature Preserve",
-   "ver": 5
+   "ver": 6
   },
   "US-12974": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -3535,32 +3438,23 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/ClearCreekWMA_All.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-13598": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
      "kind": "page",
      "text": "s Sites ( Click the Access Site Name for More Info ) Handicap Accessible Only: Yes No Access Type All Types Any Boat Small Boat Carry Down Only Bank Access Fishing Pier Name Map Ref Type Ramp Surface Fee Marina County Beaver Lake Fishing Pier 38 Fishing Pier None No None Anderson Beaver Ramp 38 Any light trailerable recreational boat Paved No None Anderson",
      "url": "https://app.fw.ky.gov/fisheries/waterbodydetail.aspx?wid=49"
-    },
-    {
-     "kind": "page",
-     "text": "Title 301 • Kentucky Administrative Regulations • Legislative Research Commission • Kentucky General Assembly • Search Title 301 - Tourism, Arts and Heritage Cabinet - Department of Fish and Wildlife Resources",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/"
     }
    ],
    "fees": [],
@@ -3574,32 +3468,23 @@
      "status": "ok",
      "url": "https://app.fw.ky.gov/fisheries/waterbodydetail.aspx?wid=49",
      "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "State Fishing Lake",
-   "ver": 5
+   "ver": 6
   },
   "US-13599": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
      "kind": "page",
      "text": "s Sites ( Click the Access Site Name for More Info ) Handicap Accessible Only: Yes No Access Type All Types Any Boat Small Boat Carry Down Only Bank Access Fishing Pier Name Map Ref Type Ramp Surface Fee Marina County New Kingfisher Lake 36 Any light trailerable recreational boat Paved No None Daviess Old Kingfisher Lake 37 Any light trailerable recreational boat Paved No None Daviess",
      "url": "https://app.fw.ky.gov/fisheries/waterbodydetail.aspx?wid=40"
-    },
-    {
-     "kind": "page",
-     "text": "Title 301 • Kentucky Administrative Regulations • Legislative Research Commission • Kentucky General Assembly • Search Title 301 - Tourism, Arts and Heritage Cabinet - Department of Fish and Wildlife Resources",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/"
     }
    ],
    "fees": [],
@@ -3613,32 +3498,23 @@
      "status": "ok",
      "url": "https://app.fw.ky.gov/fisheries/waterbodydetail.aspx?wid=40",
      "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "State Fishing Lake",
-   "ver": 5
+   "ver": 6
   },
   "US-13600": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
      "kind": "page",
      "text": "s Sites ( Click the Access Site Name for More Info ) Handicap Accessible Only: Yes No Access Type All Types Any Boat Small Boat Carry Down Only Bank Access Fishing Pier Name Map Ref Type Ramp Surface Fee Marina County Carpenter Lake Fishing Jetty Fishing Pier None No None Daviess Carpenter Lake Fishing Pier Fishing Pier None No None Daviess Carpenter Lake Ramp 35 Any light trailerable recreational boat Paved No None Daviess",
      "url": "https://app.fw.ky.gov/fisheries/waterbodydetail.aspx?wid=39"
-    },
-    {
-     "kind": "page",
-     "text": "Title 301 • Kentucky Administrative Regulations • Legislative Research Commission • Kentucky General Assembly • Search Title 301 - Tourism, Arts and Heritage Cabinet - Department of Fish and Wildlife Resources",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/"
     }
    ],
    "fees": [],
@@ -3652,32 +3528,23 @@
      "status": "ok",
      "url": "https://app.fw.ky.gov/fisheries/waterbodydetail.aspx?wid=39",
      "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "State Fishing Lake",
-   "ver": 5
+   "ver": 6
   },
   "US-13601": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
      "kind": "page",
      "text": "s Sites ( Click the Access Site Name for More Info ) Handicap Accessible Only: Yes No Access Type All Types Any Boat Small Boat Carry Down Only Bank Access Fishing Pier Name Map Ref Type Ramp Surface Fee Marina County GCL Bank Access Bank Access None No None Shelby Guist Creek Marina 6 Any trailerable recreational boat Paved Yes Year Round - Limited Hours Shelby",
      "url": "https://app.fw.ky.gov/fisheries/waterbodydetail.aspx?wid=56"
-    },
-    {
-     "kind": "page",
-     "text": "Title 301 • Kentucky Administrative Regulations • Legislative Research Commission • Kentucky General Assembly • Search Title 301 - Tourism, Arts and Heritage Cabinet - Department of Fish and Wildlife Resources",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/"
     }
    ],
    "fees": [],
@@ -3691,32 +3558,23 @@
      "status": "ok",
      "url": "https://app.fw.ky.gov/fisheries/waterbodydetail.aspx?wid=56",
      "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "State Fishing Lake",
-   "ver": 5
+   "ver": 6
   },
   "US-13606": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
      "kind": "page",
      "text": "s Sites ( Click the Access Site Name for More Info ) Handicap Accessible Only: Yes No Access Type All Types Any Boat Small Boat Carry Down Only Bank Access Fishing Pier Name Map Ref Type Ramp Surface Fee Marina County Bullock Pen Lake Ramp 6 Any trailerable recreational boat Paved No None Grant",
      "url": "https://app.fw.ky.gov/fisheries/waterbodydetail.aspx?wid=51"
-    },
-    {
-     "kind": "page",
-     "text": "Title 301 • Kentucky Administrative Regulations • Legislative Research Commission • Kentucky General Assembly • Search Title 301 - Tourism, Arts and Heritage Cabinet - Department of Fish and Wildlife Resources",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/"
     }
    ],
    "fees": [],
@@ -3730,32 +3588,23 @@
      "status": "ok",
      "url": "https://app.fw.ky.gov/fisheries/waterbodydetail.aspx?wid=51",
      "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "State Fishing Lake",
-   "ver": 5
+   "ver": 6
   },
   "US-13607": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
      "kind": "page",
      "text": "s Sites ( Click the Access Site Name for More Info ) Handicap Accessible Only: Yes No Access Type All Types Any Boat Small Boat Carry Down Only Bank Access Fishing Pier Name Map Ref Type Ramp Surface Fee Marina County Boltz Lake Ramp 7 Any light trailerable recreational boat Paved No None Grant",
      "url": "https://app.fw.ky.gov/fisheries/waterbodydetail.aspx?wid=50"
-    },
-    {
-     "kind": "page",
-     "text": "Title 301 • Kentucky Administrative Regulations • Legislative Research Commission • Kentucky General Assembly • Search Title 301 - Tourism, Arts and Heritage Cabinet - Department of Fish and Wildlife Resources",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/"
     }
    ],
    "fees": [],
@@ -3769,21 +3618,17 @@
      "status": "ok",
      "url": "https://app.fw.ky.gov/fisheries/waterbodydetail.aspx?wid=50",
      "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "State Fishing Lake",
-   "ver": 5
+   "ver": 6
   },
   "US-3779": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -3833,11 +3678,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "Other",
-   "ver": 5
+   "ver": 6
   },
   "US-3781": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [
     {
@@ -3898,11 +3744,12 @@
    "permits": [],
    "status": "ok",
    "t": "State Park",
-   "ver": 5
+   "ver": 6
   },
   "US-3782": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -3930,11 +3777,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "Other",
-   "ver": 5
+   "ver": 6
   },
   "US-3783": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -3984,11 +3832,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "Other",
-   "ver": 5
+   "ver": 6
   },
   "US-3784": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -4038,11 +3887,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "Other",
-   "ver": 5
+   "ver": 6
   },
   "US-3785": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -4092,11 +3942,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "Other",
-   "ver": 5
+   "ver": 6
   },
   "US-3786": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -4124,7 +3975,7 @@
    "permits": [],
    "status": "nothing found",
    "t": "Other",
-   "ver": 5
+   "ver": 6
   },
   "US-3787": {
    "attraction_fees": [],
@@ -4133,13 +3984,9 @@
      "line": "Self-guided tours: 11am – 3pm",
      "read": "2026-10-28",
      "url": "https://whitehall.eku.edu"
-    },
-    {
-     "line": "White Hall History Tour (Wednesday-Saturday): A guided tour where guests will learn about the history of the Clay family and the mansion.",
-     "read": "2026-10-28",
-     "url": "https://whitehall.eku.edu"
     }
    ],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -4157,11 +4004,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "Other",
-   "ver": 5
+   "ver": 6
   },
   "US-3788": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -4211,11 +4059,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "Other",
-   "ver": 5
+   "ver": 6
   },
   "US-3789": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -4233,11 +4082,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "Other",
-   "ver": 5
+   "ver": 6
   },
   "US-3790": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -4260,11 +4110,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "National / NPS",
-   "ver": 5
+   "ver": 6
   },
   "US-3791": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -4297,11 +4148,18 @@
    "permits": [],
    "status": "nothing found",
    "t": "National / NPS",
-   "ver": 5
+   "ver": 6
   },
   "US-3792": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [
+    {
+     "line": "The Woodlands Nature Station, Homeplace Working Farm, North and South Welcome Stations, Piney Campground, Hillman Ferry Campground, and Energy Lake Campground are open seasonally.",
+     "read": "2026-10-28",
+     "url": "https://www.landbetweenthelakes.us/help-center/frequently-asked-questions/"
+    }
+   ],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -4318,11 +4176,6 @@
    "fees": [],
    "hours": [],
    "hunting_hours": [
-    {
-     "line": "The Woodlands Nature Station, Homeplace Working Farm, North and South Welcome Stations, Piney Campground, Hillman Ferry Campground, and Energy Lake Campground are open seasonally.",
-     "read": "2026-10-28",
-     "url": "https://www.landbetweenthelakes.us/help-center/frequently-asked-questions/"
-    },
     {
      "line": "While some of our campgrounds and environmental education facilities close for the winter season, the recreation area itself is open year-round.",
      "read": "2026-10-28",
@@ -4352,11 +4205,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "National Recreation Area",
-   "ver": 5
+   "ver": 6
   },
   "US-3793": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -4380,21 +4234,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/BallardWMA_All.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3794": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -4412,21 +4262,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/BeaverCreekWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3795": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -4454,11 +4300,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3796": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -4476,21 +4323,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/BigRiversWMA_and_StateForest_all.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3797": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -4508,21 +4351,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/BoatwrightWMA_All.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3798": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -4545,11 +4384,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3799": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -4567,21 +4407,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/Burchell-BeechCreekWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3800": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -4599,21 +4435,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/CedarCreekLakeWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3801": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -4636,11 +4468,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "River / Wilderness",
-   "ver": 5
+   "ver": 6
   },
   "US-3802": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -4682,11 +4515,12 @@
    "permits": [],
    "status": "ok",
    "t": "Sanctuary",
-   "ver": 5
+   "ver": 6
   },
   "US-3803": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -4714,11 +4548,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3804": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -4746,11 +4581,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3805": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [
@@ -4758,11 +4594,6 @@
      "line": "Public Archery range open during daylight hours.",
      "read": "2026-10-28",
      "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=153"
-    },
-    {
-     "line": "Public Archery range open during daylight hours.",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=153"
     }
    ],
    "hunting_hours": [],
@@ -4784,52 +4615,23 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/CurtisGatesLloydWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [
     {
-     "line": "Shooting Range Permit Required:",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=153"
-    },
-    {
      "line": "An annual or one-day shooting range permit is now required to use firearms and archery equipment on any department managed, l​eased or affiliated shooting range.",
      "read": "2026-10-28",
      "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=153"
-    },
-    {
-     "line": "The permit is free to annual hunting or fishing license holders, but you must obtain it through My Prof​​ile .",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=153"
-    },
-    {
-     "line": "Shooting Range Permit Required:",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=153"
-    },
-    {
-     "line": "An annual or one-day shooting range permit is now required to use firearms and archery equipment on any department managed, l​eased or affiliated shooting range.",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=153"
-    },
-    {
-     "line": "The permit is free to annual hunting or fishing license holders, but you must obtain it through My Prof​​ile .",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=153"
     }
    ],
    "status": "ok",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3806": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -4847,21 +4649,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/Dennis-GrayWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3807": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -4879,21 +4677,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/DixRiverWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3808": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -4911,21 +4705,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/DougTravisWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3809": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -4943,21 +4733,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/Dr.JamesR.RichWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3810": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -4980,21 +4766,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/Dr.NormanandMarthaAdairWMA_all.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3811": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -5017,11 +4799,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3812": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -5039,21 +4822,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/FlemingWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3813": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -5076,11 +4855,6 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/GriffithWoodsWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [
@@ -5100,11 +4874,6 @@
      "url": "https://fw.ky.gov/Hunt/Pages/Public-Land-Hunting.aspx"
     },
     {
-     "line": "The permit is free to annual hunting or fishing license holders, but you must obtain it through the",
-     "read": "2026-10-28",
-     "url": "https://fw.ky.gov/Hunt/Pages/Public-Land-Hunting.aspx"
-    },
-    {
      "line": "Peabody WMA: Any person ages 16 and older entering the area must obtain and carry a Peabody WMA user permit.",
      "read": "2026-10-28",
      "url": "https://fw.ky.gov/Hunt/Pages/Public-Land-Hunting.aspx"
@@ -5112,11 +4881,12 @@
    ],
    "status": "ok",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3814": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -5139,11 +4909,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3815": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -5166,52 +4937,23 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/Higginson-HenryWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [
     {
-     "line": "Shooting Range Permit Required:",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=132"
-    },
-    {
      "line": "An annual or one-day shooting range permit is now required to use firearms and archery equipment on any department managed, l​eased or affiliated shooting range.",
      "read": "2026-10-28",
      "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=132"
-    },
-    {
-     "line": "The permit is free to annual hunting or fishing license holders, but you must obtain it through My Prof​​ile .",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=132"
-    },
-    {
-     "line": "Shooting Range Permit Required:",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=132"
-    },
-    {
-     "line": "An annual or one-day shooting range permit is now required to use firearms and archery equipment on any department managed, l​eased or affiliated shooting range.",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=132"
-    },
-    {
-     "line": "The permit is free to annual hunting or fishing license holders, but you must obtain it through My Prof​​ile .",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=132"
     }
    ],
    "status": "ok",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3816": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -5229,37 +4971,23 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/John_A_Kleber_WMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [
     {
-     "line": "Shooting Range Permit Required:",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=14"
-    },
-    {
      "line": "An annual or one-day shooting range permit is now required to use firearms and archery equipment on any department managed, l​eased or affiliated shooting range.",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=14"
-    },
-    {
-     "line": "The permit is free to annual hunting or fishing license holders, but you must obtain it through My Prof​​ile .",
      "read": "2026-10-28",
      "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=14"
     }
    ],
    "status": "ok",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3817": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -5277,21 +5005,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/JohnCWilliamsWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3818": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -5319,11 +5043,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3819": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -5346,21 +5071,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/KalerBottomsWMA_All.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3820": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -5378,21 +5099,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/KentuckyRiverWMA_All.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3821": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -5415,11 +5132,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3822": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -5437,21 +5155,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/LeeKNelsonWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3823": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -5469,21 +5183,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/LivingstonCountyWMAandStateNaturalArea_All.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3824": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -5506,11 +5216,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3825": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [
@@ -5540,37 +5251,23 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/MillerWelch-CentralKentuckyWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [
     {
-     "line": "Shooting Range Permit Required:",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=15"
-    },
-    {
      "line": "An annual or one-day shooting range permit is now required to use firearms and archery equipment on any department managed, l​eased or affiliated shooting range.",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=15"
-    },
-    {
-     "line": "The permit is free to annual hunting or fishing license holders, but you must obtain it through My Prof​​ile .",
      "read": "2026-10-28",
      "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=15"
     }
    ],
    "status": "ok",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3826": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -5593,11 +5290,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3827": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -5615,32 +5313,28 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/ObionCreekWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3828": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
+    {
+     "kind": "page",
+     "text": "Land Search | KDFWR --> Peabody WMA Get Directions Close Return to Search --> WMA Overview Size: 40744 acres Location: Ohio, Hopkins & Muhlenberg Contact: Office (270) 476-1889 Elevation: minimum 324 feet, maximum 654 feet. Entrance GPS coordinates: Latitude N 37.2800, Longitude W -86.9034 Area Habitat: open land 22.76%, forest 59.85%, wetland 13.46%, open water 3.93%. Regulations Fall Hunting Season: Any person age 16 and older entering the area must obtain and carry a Peabody WMA user permit. Individual permits may be obtained through any license vendor. Permits are nontransferable. Rabbit and quail hunters on the Sinclair and Ken units must check in and check out at self-service kiosk and clearly display a department-provided vehicle hang-tag in a vehicle. Hang-tags available in advance",
+     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=229"
+    },
     {
      "kind": "pdf",
      "text": "PeabodyWMAIndex.pdf PeabodyWMAWest1.pdf PeabodyWMAWest2.pdf PeabodyWMACentral1.pdf PeabodyWMACentral2.pdf PeabodyWMAEast.pdf PeabodyWMAMcHenery.pdf Legend.pdf þÿ\u0000P\u0000e\u0000a\u0000b\u0000o\u0000d\u0000y\u0000W\u0000M\u0000A Ò¿v° #¬ [ sõÀÉ ×õ5üØ\u0011-øù \u0001Ú,DØ \b·\u0010á[Ï¢ñü$u®dñ¡\u0005{ ¾W''ó\u0006¾\u0011qX¿hãÙ`ça YÙ1ói³WØ6ë\"_Æ\u0003ÖñÞå;ìªEµ]eX­8ûöI<}z?FÊ \u0018 ¾V#\u0005Å»&J4\u001byjóÖw p º¢nÄ; þÿ\u0000P\u0000e\u0000a\u0000b\u0000o\u0000d\u0000y\u0000W\u0000M\u0000A °y\u0015öMÌ\b!5 : Æk¿ .Mÿ·ãk³\b 9æ\u000fÂÕ N *¢¨ªmÛ¶\u000eÐ¨õ¸ä¶aWáÛéEJI + ?m[}µíQÅ|î I ®ÉîR'ú\u0018\u0016Á&é \u0007? ¼ '¹ºk>wº´\u0010nÚ$ó=ÿ$F Ma-pÒ@3´§\u0006ÿ>Ç-yUàßm«­\u0001ÎÖÏ\u0000ELÏõiGà\u0007àCÑ\u0002Ü N Ü&òÄD 6ùù ¸Á[Ó ³Âaò s \u0010\u0017\u0010qµì\u0003kºß¹\u0015¯Çn}ìÖÇnýqïÖwO\bÆ·>æº\u0003N©ÎTL",
      "url": "https://fw.ky.gov/More/Documents/PeabodyAll.pdf"
-    },
-    {
-     "kind": "page",
-     "text": "Title 301 • Kentucky Administrative Regulations • Legislative Research Commission • Kentucky General Assembly • Search Title 301 - Tourism, Arts and Heritage Cabinet - Department of Fish and Wildlife Resources",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/"
     }
    ],
    "fees": [
@@ -5650,29 +5344,9 @@
      "url": "https://fw.ky.gov/licenses/pages/fees.aspx"
     },
     {
-     "line": "Spring Turkey Permit (statewide) (two turkeys) $31.71",
-     "read": "2026-10-28",
-     "url": "https://fw.ky.gov/licenses/pages/fees.aspx"
-    },
-    {
-     "line": "Fall Turkey Permit (statewide) (two turkeys) $31.71",
-     "read": "2026-10-28",
-     "url": "https://fw.ky.gov/licenses/pages/fees.aspx"
-    },
-    {
      "line": "Peabody WMA User Permit $15.86",
      "read": "2026-10-28",
      "url": "https://fw.ky.gov/licenses/pages/fees.aspx"
-    },
-    {
-     "line": "Land Between the Lakes Hunt Permit $25.00 $25.00",
-     "read": "2026-10-28",
-     "url": "https://fw.ky.gov/licenses/pages/fees.aspx"
-    },
-    {
-     "line": "A user permit ($15.00) required to enter the area for any type of use, can be purchased wherever Kentucky hunting and fishing licenses are sold.",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=229"
     }
    ],
    "hours": [],
@@ -5701,11 +5375,6 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/PeabodyAll.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [
@@ -5713,20 +5382,16 @@
      "line": "Any person age 16 and older entering the area must obtain and carry a Peabody WMA user permit.",
      "read": "2026-10-28",
      "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=229"
-    },
-    {
-     "line": "A user permit ($15.00) required to enter the area for any type of use, can be purchased wherever Kentucky hunting and fishing licenses are sold.",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=229"
     }
    ],
    "status": "ok",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3829": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -5744,21 +5409,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/RFTarterWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3830": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -5776,21 +5437,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/Sloughs_WMA_All.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3831": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -5813,11 +5470,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3832": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -5840,11 +5498,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3833": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -5867,11 +5526,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3834": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -5889,21 +5549,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/PennyrileStateForestandTradewaterWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3835": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -5926,11 +5582,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3836": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [
@@ -5964,37 +5621,23 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/Veterans_Memorial_WMA_all.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [
     {
-     "line": "Shooting Range Permit Required:",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9202"
-    },
-    {
      "line": "An annual or one-day shooting range permit is now required to use firearms and archery equipment on any department managed, l​eased or affiliated shooting range.",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9202"
-    },
-    {
-     "line": "The permit is free to annual hunting or fishing license holders, but you must obtain it through My Prof​​ile .",
      "read": "2026-10-28",
      "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9202"
     }
    ],
    "status": "ok",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3837": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [
@@ -6018,37 +5661,23 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/West_Kentucky_WMA.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [
     {
-     "line": "Shooting Range Permit Required:",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=137"
-    },
-    {
      "line": "An annual or one-day shooting range permit is now required to use firearms and archery equipment on any department managed, l​eased or affiliated shooting range.",
-     "read": "2026-10-28",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=137"
-    },
-    {
-     "line": "The permit is free to annual hunting or fishing license holders, but you must obtain it through My Prof​​ile .",
      "read": "2026-10-28",
      "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=137"
     }
    ],
    "status": "ok",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3838": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -6071,11 +5700,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3839": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -6093,21 +5723,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/YatesvilleLakeWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-3840": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -6125,21 +5751,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/YellowbankWMA_ALL.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-4484": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -6162,11 +5784,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "National Forest",
-   "ver": 5
+   "ver": 6
   },
   "US-4526": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -6194,11 +5817,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "National Forest",
-   "ver": 5
+   "ver": 6
   },
   "US-4572": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [
     {
@@ -6232,11 +5856,12 @@
    "permits": [],
    "status": "ok",
    "t": "National / NPS",
-   "ver": 5
+   "ver": 6
   },
   "US-4687": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -6264,11 +5889,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   },
   "US-4688": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -6296,11 +5922,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Forest",
-   "ver": 5
+   "ver": 6
   },
   "US-4689": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -6328,11 +5955,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Forest",
-   "ver": 5
+   "ver": 6
   },
   "US-4690": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -6367,11 +5995,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Forest",
-   "ver": 5
+   "ver": 6
   },
   "US-4692": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -6399,11 +6028,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Forest",
-   "ver": 5
+   "ver": 6
   },
   "US-4693": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -6426,17 +6056,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Forest",
-   "ver": 5
+   "ver": 6
   },
   "US-7708": {
    "attraction_fees": [],
-   "attraction_hours": [
-    {
-     "line": "Beginning in June through August, visitors will be able to explore the first floor of the Brown-Lanier House every Friday through Sunday.",
-     "read": "2026-10-28",
-     "url": "https://www.nps.gov/misp/index.htm"
-    }
-   ],
+   "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -6493,11 +6118,12 @@
    "permits": [],
    "status": "ok",
    "t": "National / NPS",
-   "ver": 5
+   "ver": 6
   },
   "US-7890": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [
@@ -6537,11 +6163,12 @@
    "permits": [],
    "status": "ok",
    "t": "Other",
-   "ver": 5
+   "ver": 6
   },
   "US-7950": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -6570,13 +6197,7 @@
    ],
    "hunting_hours": [],
    "n": "Camp Nelson National Monument",
-   "office_hours": [
-    {
-     "line": "The Visitor Center, Museum, and Reconstructed Barracks are currently open 5-days a week, Wednesday through Sunday.",
-     "read": "2026-10-28",
-     "url": "https://www.nps.gov/cane/planyourvisit/hours.htm"
-    }
-   ],
+   "office_hours": [],
    "other_fees": [],
    "pages": [
     {
@@ -6598,11 +6219,12 @@
    "permits": [],
    "status": "ok",
    "t": "National / NPS",
-   "ver": 5
+   "ver": 6
   },
   "US-7951": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -6647,11 +6269,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Forest",
-   "ver": 5
+   "ver": 6
   },
   "US-7952": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -6674,11 +6297,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "State Forest",
-   "ver": 5
+   "ver": 6
   },
   "US-7953": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -6713,7 +6337,7 @@
    "permits": [],
    "status": "nothing found",
    "t": "Nature Preserve",
-   "ver": 5
+   "ver": 6
   },
   "US-7954": {
    "attraction_fees": [],
@@ -6724,6 +6348,7 @@
      "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Blackacre.aspx"
     }
    ],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -6759,11 +6384,12 @@
    "permits": [],
    "status": "ok",
    "t": "Nature Preserve",
-   "ver": 5
+   "ver": 6
   },
   "US-7955": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -6781,11 +6407,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "Nature Preserve",
-   "ver": 5
+   "ver": 6
   },
   "US-7956": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -6810,11 +6437,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "Nature Preserve",
-   "ver": 5
+   "ver": 6
   },
   "US-7957": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -6849,11 +6477,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "Nature Preserve",
-   "ver": 5
+   "ver": 6
   },
   "US-7958": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -6889,11 +6518,12 @@
    "permits": [],
    "status": "ok",
    "t": "Nature Preserve",
-   "ver": 5
+   "ver": 6
   },
   "US-7959": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -6928,11 +6558,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "Nature Preserve",
-   "ver": 5
+   "ver": 6
   },
   "US-7960": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -6957,11 +6588,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "Nature Preserve",
-   "ver": 5
+   "ver": 6
   },
   "US-7961": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -6986,11 +6618,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "Nature Preserve",
-   "ver": 5
+   "ver": 6
   },
   "US-7962": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -7008,11 +6641,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "Nature Preserve",
-   "ver": 5
+   "ver": 6
   },
   "US-7963": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -7047,11 +6681,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "Nature Preserve",
-   "ver": 5
+   "ver": 6
   },
   "US-7964": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -7069,11 +6704,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "Nature Preserve",
-   "ver": 5
+   "ver": 6
   },
   "US-7965": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -7108,11 +6744,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "Nature Preserve",
-   "ver": 5
+   "ver": 6
   },
   "US-7966": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -7147,11 +6784,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "Nature Preserve",
-   "ver": 5
+   "ver": 6
   },
   "US-7967": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -7166,11 +6804,6 @@
      "line": "The preserve is open year round during daylight hours and is limited to foot travel only.",
      "read": "2026-10-28",
      "url": "https://eec.ky.gov/nature-preserves/locations/pages/blanton-forest.aspx"
-    },
-    {
-     "line": "The preserve is open year round during daylight hours and is limited to foot travel only.",
-     "read": "2026-10-28",
-     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Blanton-Forest.aspx"
     }
    ],
    "hunting_hours": [],
@@ -7197,11 +6830,12 @@
    "permits": [],
    "status": "ok",
    "t": "Nature Preserve",
-   "ver": 5
+   "ver": 6
   },
   "US-7968": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -7226,11 +6860,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "Nature Preserve",
-   "ver": 5
+   "ver": 6
   },
   "US-7970": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -7248,11 +6883,12 @@
    "permits": [],
    "status": "nothing found",
    "t": "Nature Preserve",
-   "ver": 5
+   "ver": 6
   },
   "US-8144": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "debug": [
     {
@@ -7269,11 +6905,6 @@
      "kind": "pdf",
      "text": "en-US DAZ|<59 pô9xòc÷µz\u0013£Bû@NwK¸Í§-A ×¹[nNó>''AaÛu\u000fÀ `Á kÖx¯³¶,ö·Â·ê\u0004:Î ÎÄ/Ô¤Eñ\u0019ïà/¼orð~¹\u0000§\u0013SwPBÄðÌ§ »ÂnMê«q\u001b êûéÛ>ÇÕ^ÌÅ ^q4¬¡¦n37¯ÉÅn²Ô¾\u0014éB\u0010«ùå>¢¡k,ÆÎ\u000eÎbÎ¤øÒ1¬ª#_XV$6ø'%h»Ìáøj±8 È\u0018ÆÚÑ·É@aô}\u001bcÒÈ0PfH'àdò\u0015b_¹UFE ¹\u001a0å dV\u0005´\b¤Wh À\u0003 »\u0015öJ -KÛ ÒN\u0014úîÈ¦=9SÀEÜàSÄè\u0017üp>¹J5-N:Äf*NT7¦d`'*øoÆ ;`\u001a¢\"º+ëQ¦¡ueI9Ë\u0005áwò\u0005<Þ\u0001Z¦7 _¹¡sSYïù DªWCN\u001b\u0000 6\u0006J¬¼²8íoTöøë\u0006XëmmèeiÎ| \u0013\u0006\u0011\u0005j\u0001\u0007½#¿nm$@\u0018Ï_úy Ñ¯¡Á2å\u0010/ÿSr-C\u0010.ÂQËTÍG]û\u001aÖx ¢hR;«á>ZnWx_ *på äÂðÛÊx^g¹#\u000fÚþy 7ÜäC\"û¢¥nô5t×ásR`àÉjK\u0001È«ÞDhp®´þã\u0006Ô\u0007E§Ø0î;ª\u00111 /É¹¿þóRVªÐ48é¬8e\u0010\u0013³õÍ2Xê\u0015Wäº¡W ÿ\u001a üO?¡\u0007+WWP\u0003¿¦;øeºá;üÍ\u0014É#",
      "url": "https://fw.ky.gov/Documents/Otter_Creek_Brochure_Map.pdf"
-    },
-    {
-     "kind": "page",
-     "text": "Title 301 • Kentucky Administrative Regulations • Legislative Research Commission • Kentucky General Assembly • Search Title 301 - Tourism, Arts and Heritage Cabinet - Department of Fish and Wildlife Resources",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/"
     }
    ],
    "fees": [],
@@ -7297,21 +6928,17 @@
      "status": "ok",
      "url": "https://fw.ky.gov/Documents/Otter_Creek_Brochure_Map.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "Recreation Area",
-   "ver": 5
+   "ver": 6
   },
   "US-9756": {
    "attraction_fees": [],
    "attraction_hours": [],
+   "campground_hours": [],
    "checked": "2026-10-28",
    "fees": [],
    "hours": [],
@@ -7329,17 +6956,12 @@
      "status": "ok",
      "url": "https://fw.ky.gov/More/Documents/DeckerWMAmap_ALL.pdf",
      "why": "official map (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://apps.legislature.ky.gov/law/kar/titles/301/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 5
+   "ver": 6
   }
  },
  "read": "2026-10-28"
