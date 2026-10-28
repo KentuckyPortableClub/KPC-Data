@@ -45,6 +45,8 @@ import xml.etree.ElementTree as ET
 HERE = pathlib.Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 from kpc_manners import Manners, page_text, links_in, pdf_text  # noqa: E402
+try: from kpc_manners import browser_text  # noqa: E402
+except Exception: browser_text = lambda u, M: ''  # noqa: E731,E722
 
 BOT = 'closures super-bot'
 OUT = pathlib.Path(os.environ.get('OUT') or 'data/closures')
@@ -209,6 +211,7 @@ NEG_RX = re.compile(r"\b(not closed|no closures?|is not|are not|reopen(?:ed|s|in
 HOURS_RX = re.compile(r"\b(is|are)\s+open\b[^.]*\b(a\.?m\.?|p\.?m\.?)|\bopen (from|daily|year[- ]round)\b|\bgates? (close|closes|closed) at\b|\bclosed (on )?(mondays?|tuesdays?|wednesdays?|thursdays?|fridays?)\b(?![^.]*\b(for|due|until|through)\b)|\b(daylight|dawn|sunrise) to (dark|dusk|sunset)\b|\bhours\b[^.]*\b\d\s*(a\.?m|p\.?m)", re.I)
 HUNT_RX = re.compile(r"quota hunt|drawn (hunters?|permit|applicants?)|managed (deer |elk |turkey )?hunts?|controlled hunt|youth(-only)? hunt|except (drawn|permitted|quota|selected) hunters?|closed to all other (public )?use|closed to (non-hunters|the general public|all users? except)|hunters? (with|holding) [^.]{0,40}permits? only|lottery hunt", re.I)
 STANDING_RX = re.compile(r"\b(is|are|shall be|will be)\s+(?:strictly\s+|also\s+)?(prohibited|not (?:allowed|permitted)|unlawful|illegal|forbidden)\b|\bshall not\b|\bmust not\b|\bunlicensed vehicles?\b|\bgroups? (?:of more than|over|larger than) \w+\b|\bdischarg\w* (?:a |of )?firearms?\b|\bsteep banks\b|\bnot permitted\b|\bno (?:camping|fires?|campfires?|alcohol|pets|dogs|swimming|glass)\b(?![^.]*\bclos)", re.I)
+SEASON_RULE = re.compile(r"\b(season|seasons)\b[^.]{0,60}\b(open|closed)\b|\bclosed to (?:modern gun |archery |muzzleloader |crossbow |firearms? )?(?:deer |turkey |rabbit |squirrel |quail |dove |waterfowl |small game |elk |bear )?(?:hunting|trapping)\b(?! and)", re.I)
 HUNT_WORDS = re.compile(r"\bclos(?:ed|ure|es|ing)\b|no public access|except (?:drawn|quota|permitted|selected) hunters?|quota hunt|permit hunt|drawn hunters?|closed to all other|closed to everyone|closed to the public|closed to (?:non-?hunters|public use|all public)", re.I)
 # the hunting season a WMA page talks about: Sep-Aug; 'Nov. 7-8' on a page read in October 2026 = Nov 2026; 'Jan. 15' = Jan 2027
 SEASON_YEAR = TODAY.year if TODAY.month >= 7 else TODAY.year - 1
@@ -261,6 +264,8 @@ def classify(sent, ctx=None):
     if re.match(r'^(?:the\s+)?(?:trail|road|area|bridge|campground|ramp|gate|lake|loop|section|unit|boardwalk)s?\b', low) and ctx.get('head'):
         s = re.sub(r'^(?:the\s+)?', ctx['head'].strip().rstrip(':') + ': ', s, count=1)                       # 'the trail is closed…' takes its heading as the subject
         low = s.lower()
+    if ctx.get('hunt_page') and SEASON_RULE.search(s) and not re.search(r'\b(all|public|everyone|access|entry|non-?hunters|all other (?:public )?use|all users)\b', low):
+        return {'skip': 'a hunting-season rule (a game season closed), not a land closure (HQ Oct 28)'}
     if ctx.get('hunt_page') and HUNT_WORDS.search(s) and not NEG_RX.search(s) and (D1.search(s) or DNUM.search(s) or D1FR.search(s)):
         frm0, to0, clear0 = parse_dates(s, ctx.get('updated'), ctx.get('year') or SEASON_YEAR, season=True)
         if frm0 or to0:                                                                 # CL-2 (HQ Oct 28 fix 1): a dated hunt closure on a WMA page = closed to non-hunters
@@ -278,7 +283,7 @@ def classify(sent, ctx=None):
                 'class': 'note', 'note_kind': 'rules', 'what': 'closed to an activity, land open'}        # 'Energy Lake closed to hunting' = a rule, not a part closure
     if not (has_close or PERMIT_RX.search(s) or LAND_RX.search(s) or CAUTION_RX.search(s) or RULES_RX.search(s) or HUNT_SEASON_RX.search(s) or HUNT_RX.search(s)):
         return None
-    if NEG_RX.search(s) and not re.search(r'\bremains? closed\b|\bstill closed\b|\bis not open\b', low):
+    if NEG_RX.search(s) and not re.search(r'\bremains? closed\b|\bstill closed\b|\bis not open\b|\bremain closed\b', low):
         return {'skip': 'negation or reopening word in the sentence (D-R1)'}
     if HOURS_RX.search(s) and not re.search(r'\b(for|due to|until|through|because)\b', low):
         return None                                                                        # standing hours = park info
@@ -833,6 +838,15 @@ def page_rows(body, url, refs=None, home=None, hunt=False):
 def src_page(url, refs=None, pdfs=True, home=None, hunt=False):
     ok, kind, body, st = read(url, pdf=url.lower().split('?')[0].endswith('.pdf'))
     if not ok: raise RuntimeError(st)
+    if kind == 'html' and not OFFLINE and len(page_text(body)) < 400:                     # a script-built page (fw.ky.gov quota hunts)
+        bt = ''
+        try: bt = browser_text(url, M) or ''
+        except Exception: bt = ''  # noqa: BLE001
+        STAT['browser'] = STAT.get('browser', 0) + (1 if bt else 0)
+        if len(bt) > len(page_text(body)):
+            bt = '\n'.join(' | '.join(c.strip() for c in ln.split('\t') if c.strip()) + (' |' if '\t' in ln else '') for ln in bt.split('\n'))
+            LAST_HTML[url] = bt
+            body = bt
     rows = page_rows(body, url, refs, home, hunt)
     if kind == 'html' and pdfs and not late():                        # CL-7: a PDF closure list linked from the page, by range
         n = 0
@@ -1419,6 +1433,11 @@ SELFTEST = [  # (sentence, context, expected class, expected note_kind or what-c
     ("Camping | Not permitted. |", {}, None, None, None),
     ("When landing on an island be aware of steep banks and rock dikes.", {}, None, None, None),
     ("The closure will likely last until the end of December 2026", {}, None, None, None),
+    # HQ Oct 28 round 4
+    ("All other areas of the WMA remain closed due to extensive storm damage; the only areas open to the public are those adjacent to Highway 192.", {'names': ['Cane Creek WMA'], 'hunt_page': True}, 'part', 'areas', (None, None)),
+    ("Rabbit season is open Nov. 1-Dec. 31, except closed Nov. 7-8.", {'hunt_page': True}, None, None, None),
+    ("Closed to modern gun deer hunting except for the quota hunt.", {'hunt_page': True}, None, None, None),
+    ("Ballard WMA | Deer | Nov 7–8 | closed to everyone except drawn hunters (and one helper each) |", {'hunt_page': True}, 'hunt', None, (dt.date(SEASON_YEAR, 11, 7), dt.date(SEASON_YEAR, 11, 8))),
 ]
 
 

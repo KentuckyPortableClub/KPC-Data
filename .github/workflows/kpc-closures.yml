@@ -24,6 +24,9 @@ on:
       test:
         description: 'yes = the Kentucky gate (80 percent of Kentucky own reader items found here on the same park)'
         default: 'yes'
+      browser:
+        description: 'yes = read script-built pages (under 400 characters of text) in headless Chromium'
+        default: 'yes'
   schedule:
     - cron: '37 */6 * * *'
 permissions:
@@ -65,7 +68,9 @@ jobs:
       - name: Tools
         if: steps.gate.outputs.skip != '1'
         continue-on-error: true
-        run: pip install -q --break-system-packages pypdf || pip install -q pypdf || true
+        run: |
+          pip install -q --break-system-packages pypdf || pip install -q pypdf || true
+          if [ "${{ inputs.browser || 'yes' }}" = yes ]; then pip install -q --break-system-packages playwright || pip install -q playwright || true; python3 -m playwright install --with-deps chromium >/dev/null 2>&1 || true; fi
       - name: Read the sources chunk by chunk, one save per chunk
         if: steps.gate.outputs.skip != '1'
         continue-on-error: true
@@ -74,6 +79,7 @@ jobs:
           LINKS: ../links
           NPS_API_KEY: ${{ secrets.NPS_API_KEY }}
           RIDB_API_KEY: ${{ secrets.RIDB_API_KEY }}
+          BROWSER: ${{ (inputs.browser || 'yes') == 'yes' && '1' || '0' }}
         run: |
           cd kpcdata
           python3 .github/scripts/kpc_closures_bot.py --selftest | tail -1 || true
@@ -94,4 +100,4 @@ jobs:
         run: |
           C=$(( ${{ inputs.chain }} - 1 ))
           echo "::notice title=Closures super-bot::$LEFT areas left: the next job starts itself (then $C more may follow)"
-          gh workflow run kpc-closures.yml -R ${{ github.repository }} -f areas="${{ inputs.areas }}" -f chunks=5 -f minutes="${{ inputs.minutes || 55 }}" -f chain=$C -f test=no || true
+          gh workflow run kpc-closures.yml -R ${{ github.repository }} -f areas="${{ inputs.areas }}" -f chunks=5 -f minutes="${{ inputs.minutes || 55 }}" -f chain=$C -f test=no -f browser="${{ inputs.browser || 'yes' }}" || true
