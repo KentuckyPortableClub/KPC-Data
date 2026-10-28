@@ -100,9 +100,9 @@ jobs:
         continue-on-error: true
         env:
           OBS_RUN: 2-fer bot pass ${{ inputs.pass }} (${{ matrix.region }})
-          OBS_FILE: kpcdata/data/map-observations.json
+          OBS_FILE: kpcdata/data/observations/fers-${{ matrix.region }}.json
           OBS_DATA_DIR: kpcdata
-        run: python3 .github/scripts/kpc_map_observations.py || true
+        run: mkdir -p kpcdata/data/observations; python3 .github/scripts/kpc_map_observations.py || true
       - name: Save (once, at the end)
         if: always()
         continue-on-error: true
@@ -111,7 +111,13 @@ jobs:
           for f in data/fers/*.json; do [ -f "$f" ] && [ $(stat -c %s "$f") -gt 20000000 ] && gzip -9nf "$f"; done
           mkdir -p kpcdata/data/fers
           # only the files THIS job changed (the two jobs share the folder)
-          for f in data/fers/*; do [ -f "$f" ] && ! cmp -s "$f" "kpcdata/$f" && cp "$f" kpcdata/data/fers/; done
+          # Fable review A6: only THIS run's files go back (own states + the run's own report/looked/expected/missing files); all states only when STATES is blank
+          if [ -n "${{ inputs.states }}" ] || [ "${{ matrix.region }}" = ky ]; then
+            for st in ${{ inputs.states }} ${{ matrix.region == 'ky' && 'US-KY' || '' }}; do for f in data/fers/$st.json data/fers/$st.json.gz data/fers/pota-pairs-$st.json; do [ -f "$f" ] && ! cmp -s "$f" "kpcdata/$f" && cp "$f" kpcdata/data/fers/; done; done
+            for f in data/fers/*-ky.json data/fers/known-answers.json data/fers/ky-outline-drift.json data/fers/report.json data/fers/same-outline.json data/fers/missing-na.json data/fers/looked-*.json data/fers/expected-*.json; do [ -f "$f" ] && ! cmp -s "$f" "kpcdata/$f" && cp "$f" kpcdata/data/fers/; done
+          else
+            for f in data/fers/*; do [ -f "$f" ] && ! cmp -s "$f" "kpcdata/$f" && cp "$f" kpcdata/data/fers/; done
+          fi
           cd kpcdata
           for f in data/fers/*.json.gz; do [ -f "$f" ] && rm -f "${f%.gz}"; done
           cd ..

@@ -111,7 +111,9 @@ jobs:
         run: |
           for f in data/fers/*.json; do [ -f "$f" ] && [ $(stat -c %s "$f") -gt 20000000 ] && gzip -9nf "$f"; done
           mkdir -p kpcdata/data/fers
-          for f in data/fers/*; do [ -f "$f" ] && ! cmp -s "$f" "kpcdata/$f" && cp "$f" kpcdata/data/fers/; done
+          # Fable review A6: only THIS job's files go back (its states + its tag's files)
+          for st in ${{ matrix.r.states }}; do for f in data/fers/$st.json data/fers/$st.json.gz data/fers/pota-pairs-$st.json; do [ -f "$f" ] && ! cmp -s "$f" "kpcdata/$f" && cp "$f" kpcdata/data/fers/; done; done
+          for f in data/fers/*-${{ matrix.r.tag }}.json; do [ -f "$f" ] && ! cmp -s "$f" "kpcdata/$f" && cp "$f" kpcdata/data/fers/; done
           cd kpcdata
           for f in data/fers/*.json.gz; do [ -f "$f" ] && rm -f "${f%.gz}"; done
           cd ..
@@ -135,9 +137,9 @@ jobs:
         continue-on-error: true
         env:
           OBS_RUN: 2-fer bot regions ${{ inputs.regions }}
-          OBS_FILE: kpcdata/data/map-observations.json
+          OBS_FILE: kpcdata/data/observations/fers-regions.json
           OBS_DATA_DIR: kpcdata
-        run: python3 .github/scripts/kpc_map_observations.py || true
+        run: mkdir -p kpcdata/data/observations; python3 .github/scripts/kpc_map_observations.py || true
       - name: Save
         continue-on-error: true
         run: |
