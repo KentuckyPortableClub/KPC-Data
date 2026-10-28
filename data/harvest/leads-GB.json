@@ -12,14 +12,285 @@
   "eea"
  ],
  "bands": {
-  "A": 0,
-  "B": 0,
+  "A": 3,
+  "B": 3,
   "C": 0
  },
- "known_good_found": [],
- "known_good_missed": [
-  "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/ArcGIS/rest/services/Core_Data_Non_WMS/FeatureServer/50",
+ "known_good_found": [
   "https://services.arcgis.com/JJzESW51TqeY9uat/ArcGIS/rest/services/National_Trails_England/FeatureServer"
  ],
- "leads": {}
+ "known_good_missed": [
+  "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/ArcGIS/rest/services/Core_Data_Non_WMS/FeatureServer/50"
+ ],
+ "leads": {
+  "https://services.arcgis.com/jjzesw51tqey9uat/arcgis/rest/services/sssi_uk_merged": {
+   "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/SSSI_UK_Merged/FeatureServer",
+   "cc": "GB",
+   "title": "SSSI_UK_Merged",
+   "publisher": "services.arcgis.com",
+   "catalog": "ArcGIS Online search",
+   "licence": "Available under the Open Government Licence http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+   "date": "2023-09-20",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "SSSI_UK_Merged",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "sssi_name",
+      "Shape__Area"
+     ],
+     "records": 29494,
+     "sample": [
+      "Shielton Peatlands",
+      "Forsinard Bogs",
+      "Sletill Peatlands"
+     ],
+     "name_field": "sssi_name"
+    }
+   ],
+   "note": "Sites of Special Scientific Interest (SSSIs) UK",
+   "grade": 6,
+   "band": "A"
+  },
+  "https://services.arcgis.com/jjzesw51tqey9uat/arcgis/rest/services/crow_act_2000_section_4_conclusive_registered_common_land": {
+   "url": "https://services.arcgis.com/JJzESW51TqeY9uat/ArcGIS/rest/services/CRoW_Act_2000_Section_4_Conclusive_Registered_Common_Land/FeatureServer/0",
+   "cc": "GB",
+   "title": "CRoW_Act_2000_Section_4_Conclusive_Registered_Common_Land/0",
+   "publisher": "services.arcgis.com",
+   "catalog": "ArcGIS Online search",
+   "licence": "",
+   "date": "2024-10-24",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "CRoW Conclusive Registered Common Land © Natural England",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "UNIQUEID",
+      "MAPPINGARE",
+      "MAPSTATUS",
+      "AUTHORITY",
+      "CL_NUMBER",
+      "NAME",
+      "DATESIGNED",
+      "CACHAIR",
+      "ISSUEDATE",
+      "Version",
+      "GlobalID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 14674,
+     "sample": [
+      "Pickhurst Green",
+      "Biggin Hill Green",
+      "Farnborough Common"
+     ],
+     "name_field": "NAME"
+    }
+   ],
+   "note": "CRoW Act 2000 - Section 4 Conclusive Registered Common Land",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 5,
+   "band": "A"
+  },
+  "https://ukair.maps.rcdo.co.uk/ukairserver/rest/services/hosted/pm10_daily_mean_local_authority_2020": {
+   "url": "https://ukair.maps.rcdo.co.uk/ukairserver/rest/services/Hosted/PM10_daily_mean_Local_Authority_2020/FeatureServer",
+   "cc": "GB",
+   "title": "Hosted/PM10_daily_mean_Local_Authority_2020",
+   "publisher": "Defra group ArcGIS Online organisation",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "Custom licence page",
+   "date": "2024-11-12",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "PM10 daily mean Local Authority",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "name",
+      "unique_code",
+      "pollutant_metric",
+      "maximum_value",
+      "unit",
+      "compliance_status",
+      "compliance_metric",
+      "SHAPE__Length",
+      "SHAPE__Area",
+      "globalid"
+     ],
+     "records": 382,
+     "sample": [
+      "Adur",
+      "Allerdale",
+      "Amber Valley"
+     ],
+     "name_field": "name"
+    }
+   ],
+   "note": "PM10 daily mean Local Authority 2020",
+   "grade": 5,
+   "band": "A"
+  },
+  "https://services.arcgis.com/jjzesw51tqey9uat/arcgis/rest/services/crow_act_2000_access_layer": {
+   "url": "https://services.arcgis.com/JJzESW51TqeY9uat/ArcGIS/rest/services/CRoW_Act_2000_Access_Layer/FeatureServer/0",
+   "cc": "GB",
+   "title": "CRoW_Act_2000_Access_Layer/0",
+   "publisher": "services.arcgis.com",
+   "catalog": "ArcGIS Online search",
+   "licence": "© Natural England copyright. Contains Ordnance Survey data © Crown copyright and database right 2024.",
+   "date": "2024-12-04",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "CRoW Access Land © Natural England",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Descrip",
+      "OC",
+      "RCL",
+      "S16",
+      "Map_Area",
+      "Version",
+      "GlobalID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 42054
+    }
+   ],
+   "note": "CRoW Act 2000 - Access Layer",
+   "grade": 4,
+   "band": "B"
+  },
+  "https://ukair.maps.rcdo.co.uk/ukairserver/rest/services/hosted/nitrogen_dioxide_annual_mean_supplementary_measurements_2021": {
+   "url": "https://ukair.maps.rcdo.co.uk/ukairserver/rest/services/Hosted/Nitrogen_Dioxide_annual_mean_Supplementary_Measurements_2021/FeatureServer",
+   "cc": "GB",
+   "title": "Hosted/Nitrogen_Dioxide_annual_mean_Supplementary_Measurements_2021",
+   "publisher": "Defra group ArcGIS Online organisation",
+   "catalog": "ArcGIS Online (official org)",
+   "licence": "Custom licence page",
+   "date": "2024-11-12",
+   "found": "2026-10-28",
+   "gaps": [
+    "access"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "Nitrogen Dioxide annual mean Supplementary Measurements",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "year",
+      "eoi_code",
+      "site_code",
+      "site_name",
+      "easting",
+      "northing",
+      "country",
+      "site_type",
+      "zone_name",
+      "zone_unique_code",
+      "la_name",
+      "la_unique_code",
+      "pollutant",
+      "objective_type",
+      "aggregating_period",
+      "value",
+      "data_capture_percent",
+      "unit",
+      "compliance_status"
+     ],
+     "records": 277,
+     "sample": [
+      "UUNN_BROX_001",
+      "UUNN_BROX_002",
+      "UUNN_BROX_003"
+     ],
+     "name_field": "site_name"
+    }
+   ],
+   "note": "Nitrogen Dioxide annual mean Supplementary Measurements 2021",
+   "grade": 4,
+   "band": "B"
+  },
+  "https://services.arcgis.com/jjzesw51tqey9uat/arcgis/rest/services/national_trails_england": {
+   "url": "https://services.arcgis.com/JJzESW51TqeY9uat/ArcGIS/rest/services/National_Trails_England/FeatureServer",
+   "cc": "GB",
+   "title": "National_Trails_England",
+   "publisher": "services.arcgis.com",
+   "catalog": "ArcGIS Online search",
+   "licence": "Open Government Licence (nationalarchives.gov.uk)",
+   "date": "2026-10-13",
+   "found": "2026-10-28",
+   "gaps": [
+    "trail line"
+   ],
+   "layers": [
+    {
+     "id": 0,
+     "name": "National Trails (England) © Natural England",
+     "geom": "Polyline",
+     "gap": "trail line",
+     "is": "trail / path lines",
+     "fields": [
+      "OBJECTID_1",
+      "OBJECTID",
+      "Name",
+      "Opened",
+      "Start",
+      "End_",
+      "Length_Km",
+      "Length_Mil",
+      "Updated",
+      "Last_VR",
+      "GlobalID",
+      "Shape__Length"
+     ],
+     "records": 14,
+     "sample": [
+      "Pennine Way",
+      "Offa's Dyke Path",
+      "South Downs Way"
+     ],
+     "name_field": "Name"
+    }
+   ],
+   "note": "National Trails (England)",
+   "grade": 4,
+   "band": "B"
+  }
+ }
 }
