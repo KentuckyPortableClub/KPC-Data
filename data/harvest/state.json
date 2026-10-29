@@ -811,6 +811,81 @@
      "agol": "obszar chroniony",
      "hits": 0,
      "read": 0
+    },
+    {
+     "step": "known",
+     "what": "https://ogcapi.bdl.lasy.gov.pl: 20 OGC API collections, 20 look like park layers"
+    },
+    {
+     "step": "known",
+     "what": "https://ogcapi.bdl.lasy.gov.pl",
+     "found": true
+    },
+    {
+     "step": "known",
+     "what": "https://wfs.bdl.lasy.gov.pl/geoserver/BDL/ows: 20 feature types, 20 look like park layers"
+    },
+    {
+     "step": "known",
+     "what": "https://wfs.bdl.lasy.gov.pl/geoserver/BDL/ows",
+     "found": true
+    },
+    {
+     "step": "server",
+     "what": "https://powietrze.gios.gov.pl/arcgis/rest/services: HTTP 404"
+    },
+    {
+     "catalog": "https://api.dane.gov.pl/1.4",
+     "keyword": "park narodowy",
+     "hits": 30,
+     "services_read": 0,
+     "downloads_listed": 0
+    },
+    {
+     "catalog": "https://api.dane.gov.pl/1.4",
+     "keyword": "park krajobrazowy",
+     "hits": 30,
+     "services_read": 0,
+     "downloads_listed": 0
+    },
+    {
+     "catalog": "https://api.dane.gov.pl/1.4",
+     "keyword": "rezerwat przyrody",
+     "hits": 30,
+     "services_read": 0,
+     "downloads_listed": 0
+    },
+    {
+     "catalog": "https://api.dane.gov.pl/1.4",
+     "keyword": "formy ochrony przyrody",
+     "hits": 30,
+     "services_read": 0,
+     "downloads_listed": 0
+    },
+    {
+     "agol": "park narodowy",
+     "hits": 2,
+     "read": 0
+    },
+    {
+     "agol": "park krajobrazowy",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "agol": "rezerwat przyrody",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "agol": "formy ochrony przyrody",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "agol": "obszar chroniony",
+     "hits": 0,
+     "read": 0
     }
    ],
    "steps": [
@@ -1711,6 +1786,64 @@
      "agol": "natuurmonument",
      "hits": 16,
      "read": 2
+    },
+    {
+     "step": "known",
+     "what": "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1: 0 feature types, 0 look like park layers"
+    },
+    {
+     "step": "known",
+     "what": "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1",
+     "found": false
+    },
+    {
+     "step": "known",
+     "what": "https://api.pdok.nl/rvo/nationale-parken-geharmoniseerd/ogc/v1: 0 feature types, 0 look like park layers"
+    },
+    {
+     "step": "known",
+     "what": "https://api.pdok.nl/rvo/nationale-parken-geharmoniseerd/ogc/v1",
+     "found": false
+    },
+    {
+     "catalog": "https://data.overheid.nl/data",
+     "keyword": "nationaal park",
+     "error": "HTTP 400"
+    },
+    {
+     "catalog": "https://data.overheid.nl/data",
+     "keyword": "natuurgebied",
+     "error": "HTTP 400"
+    },
+    {
+     "catalog": "https://data.overheid.nl/data",
+     "keyword": "natura 2000",
+     "error": "HTTP 400"
+    },
+    {
+     "catalog": "https://data.overheid.nl/data",
+     "keyword": "natuurmonument",
+     "error": "HTTP 400"
+    },
+    {
+     "agol": "nationaal park",
+     "hits": 5,
+     "read": 0
+    },
+    {
+     "agol": "natuurgebied",
+     "hits": 19,
+     "read": 0
+    },
+    {
+     "agol": "natura 2000",
+     "hits": 50,
+     "read": 0
+    },
+    {
+     "agol": "natuurmonument",
+     "hits": 16,
+     "read": 0
     }
    ],
    "steps": [
@@ -2234,6 +2367,44 @@
      "agol": "nationalpark",
      "hits": 50,
      "read": 4
+    },
+    {
+     "agol": "naturreservat",
+     "hits": 50,
+     "read": 0
+    },
+    {
+     "agol": "skyddad natur",
+     "hits": 2,
+     "read": 0
+    },
+    {
+     "agol": "naturvårdsregistret",
+     "hits": 0,
+     "read": 0
+    },
+    {
+     "step": "known",
+     "what": "https://geodata.naturvardsverket.se/andra_skydd/wms: 0 feature types, 0 look like park layers"
+    },
+    {
+     "step": "known",
+     "what": "https://geodata.naturvardsverket.se/andra_skydd/wms",
+     "found": false
+    },
+    {
+     "step": "known",
+     "what": "https://geodata.naturvardsverket.se/naturvardsregistret/wfs: 2 feature types, 2 look like park layers"
+    },
+    {
+     "step": "known",
+     "what": "https://geodata.naturvardsverket.se/naturvardsregistret/wfs",
+     "found": true
+    },
+    {
+     "agol": "nationalpark",
+     "hits": 50,
+     "read": 0
     },
     {
      "agol": "naturreservat",
@@ -4231,15 +4402,15 @@
  "last_run": {
   "date": "2026-10-29",
   "stats": {
-   "requests": 321,
+   "requests": 34,
    "hits": 0,
-   "leads": 11,
+   "leads": 3,
    "already_read": 0,
-   "skipped": 5,
-   "not_official": 179,
-   "robots": 2,
+   "skipped": 3,
+   "not_official": 172,
+   "robots": 0,
    "strikes": 0,
-   "errors": 15
+   "errors": 5
   },
   "countries": [
    "PL done: 3 leads (A 0), known-good found 2 of 2",
@@ -4248,12 +4419,8 @@
    "AT nothing seeded: not searched: 1 leads (A 0), known-good found 0 of 0"
   ],
   "dead_servers": [],
-  "robots_refused": {
-   "gis.tirol.gv.at": 2
-  },
-  "robots_said": {
-   "gis.tirol.gv.at": "User-agent: * | Disallow: /"
-  },
+  "robots_refused": {},
+  "robots_said": {},
   "robots_exempted_hosts (HQ ruling Oct 27: ArcGIS REST API paths only)": {}
  },
  "eea_done": "2026-10-28"

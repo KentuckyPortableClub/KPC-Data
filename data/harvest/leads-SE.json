@@ -42,6 +42,24 @@
    "step": "known",
    "what": "https://geodata.naturvardsverket.se/naturvardsregistret/wfs",
    "found": true
+  },
+  {
+   "step": "known",
+   "what": "https://geodata.naturvardsverket.se/andra_skydd/wms: 0 feature types, 0 look like park layers"
+  },
+  {
+   "step": "known",
+   "what": "https://geodata.naturvardsverket.se/andra_skydd/wms",
+   "found": false
+  },
+  {
+   "step": "known",
+   "what": "https://geodata.naturvardsverket.se/naturvardsregistret/wfs: 2 feature types, 2 look like park layers"
+  },
+  {
+   "step": "known",
+   "what": "https://geodata.naturvardsverket.se/naturvardsregistret/wfs",
+   "found": true
   }
  ],
  "leads": {
@@ -607,6 +625,20 @@
     "outline"
    ],
    "layers": [
+    {
+     "name": "SkyddadeOmraden",
+     "type": "Naturvardsregistret_WFS:SkyddadeOmraden",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    },
+    {
+     "name": "SkyddadePunkter",
+     "type": "Naturvardsregistret_WFS:SkyddadePunkter",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    },
     {
      "name": "SkyddadeOmraden",
      "type": "Naturvardsregistret_WFS:SkyddadeOmraden",

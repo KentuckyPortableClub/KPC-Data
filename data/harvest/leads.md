@@ -160,15 +160,15 @@ access constraints t | 2024-10-18 | https://services.arcgis.com/JJzESW51TqeY9uat
 {
  "date": "2026-10-29",
  "stats": {
-  "requests": 321,
+  "requests": 34,
   "hits": 0,
-  "leads": 11,
+  "leads": 3,
   "already_read": 0,
-  "skipped": 5,
-  "not_official": 179,
-  "robots": 2,
+  "skipped": 3,
+  "not_official": 172,
+  "robots": 0,
   "strikes": 0,
-  "errors": 15
+  "errors": 5
  },
  "countries": [
   "PL done: 3 leads (A 0), known-good found 2 of 2",
@@ -177,12 +177,8 @@ access constraints t | 2024-10-18 | https://services.arcgis.com/JJzESW51TqeY9uat
   "AT nothing seeded: not searched: 1 leads (A 0), known-good found 0 of 0"
  ],
  "dead_servers": [],
- "robots_refused": {
-  "gis.tirol.gv.at": 2
- },
- "robots_said": {
-  "gis.tirol.gv.at": "User-agent: * | Disallow: /"
- },
+ "robots_refused": {},
+ "robots_said": {},
  "robots_exempted_hosts (HQ ruling Oct 27: ArcGIS REST API paths only)": {}
 }
 ```
