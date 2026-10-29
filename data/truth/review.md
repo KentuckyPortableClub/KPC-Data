@@ -15,7 +15,7 @@ Updated 2026-10-29. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 | US-FL | 460 | 440 | 75 | **54** | 31 | 278 | 2 | 16 | 0 | 17 |
 | US-MS | 155 | 89 | 1 | **5** | 7 | 76 | 0 | 4 | 0 | 14 |
 | US-IN | 229 | 208 | 6 | **9** | 5 | 187 | 1 | 1 | 0 | 13 |
-| US-IL | 219 | 204 | 32 | **76** | 53 | 39 | 3 | 15 | 0 | 9 |
+| US-IL | 219 | 204 | 32 | **65** | 63 | 40 | 3 | 15 | 0 | 8 |
 | US-MO | 561 | 545 | 73 | **130** | 242 | 92 | 8 | 15 | 0 | 18 |
 
 ## US-KY
@@ -830,7 +830,7 @@ You · [www.fws.gov](https://www.fws.gov/refuge/chassahowitzka/about-us)
 
 ## US-IL
 
-**Agree:** 31 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 31 agree (second agency).
+**Agree:** 32 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 32 agree (second agency).
 
 **Size more than 15% off (our outline vs the agency):**
 
@@ -859,6 +859,7 @@ You · [www.fws.gov](https://www.fws.gov/refuge/chassahowitzka/about-us)
 - US-12327 Brown Barrens State Nature Preserve: ours 90 ac vs agency 28.8 acres (= 28 ac; 212% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [dnr.illinois.gov](https://dnr.illinois.gov/inpc/area.area9unionbrownbarrens.html) · “grass is common in the barrens. Ownership Illinois Department of Natural Resources Dedicated August 1989 Size 28.8 acres Topographic Quad Jonesboro Topo Map Goo”
 - US-4149 Piney Creek Ravine State Natural Area: ours 615 ac vs agency 198 acre (= 198 ac; 211% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [dnr.illinois.gov](https://dnr.illinois.gov/parks/park.pineycreek.html) · “ontent Site Brochure West of DuQuoin and south of Steeleville on the Randolph-Jackson County line is a unique 198-acre area known as Piney Creek Ravine State Na”
 - US-11716 Long Run Seep State Nature Preserve: ours 241 ac vs agency 79.75 acres (= 79 ac; 202% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [dnr.illinois.gov](https://dnr.illinois.gov/inpc/area.area3willlongrunseep.html) · “e plant communities of the seep. Ownership Illinois Department of Natural Resources Dedicated April 1990 Size 79.75 acres Topo Map: Joliet and Romeoville 7.5 To”
+- US-12314 Kankakee National Wildlife Refuge: ours 198 ac vs agency 66 acres (= 66 ac; 200% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [www.fws.gov](https://www.fws.gov/refuge/kankakee-and-conservation-area) · “olicies Get Involved News Species Map Conservation Kankakee National Wildlife Refuge and Conservation Area is 66 acres of upland oak savanna, established in 201”
 - US-7853 Julius J. Knobeloch Woods State Nature Preserve: ours 105 ac vs agency 35.1 acres (= 35 ac; 199% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [dnr.illinois.gov](https://dnr.illinois.gov/inpc/area.area7stclairjuliusjknobelochwoods.html) · “he control of exotic species. Ownership Illinois Department of Natural Resources Dedicated February 1983 Size 35.1 acres Topographic Quad Freeburg Topo Map Goog”
 - US-4132 Iroquois County State Wildlife Area: ours 5,723 ac vs agency 2,000 acres (= 2,000 ac; 186% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [dnr.illinois.gov](https://dnr.illinois.gov/parks/park.iroquoiscounty.html) · “n the extreme northeast corner of Iroquois County, about 80 miles south of Chicago. The majority of the area, 2,000 acres, is managed as a public hunting area. ”
 - US-4123 Franklin Creek State Natural Area: ours 2,003 ac vs agency 882 acre (= 882 ac; 127% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [dnr.illinois.gov](https://dnr.illinois.gov/parks/park.franklincreek.html) · “e of Franklin Grove and east of Dixon, just north of IL Rt. 38. Beautiful Franklin Creek flows throughout the 882-acre park. Several large natural springs, hard”
@@ -877,6 +878,7 @@ You · [www.fws.gov](https://www.fws.gov/refuge/chassahowitzka/about-us)
 - US-1018 Red Hills State Park: ours 1,928 ac vs agency 967 acres (= 967 ac; 99% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [dnr.illinois.gov](https://dnr.illinois.gov/parks/park.redhills.html) · “llinois, midway between Olney and Lawrenceville on U.S. 50, Red Hills is a carefully preserved and maintained 967 acres of high wooded hills, deep ravines, capt”
 - US-8378 Snakeden Hollow State Wildlife Area: ours 4,974 ac vs agency 2,500 acre (= 2,500 ac; 99% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [dnr.illinois.gov](https://dnr.illinois.gov/parks/park.snakedenhollow.html) · “he state. Actually the site is the namesake of a small creek that “snakes” its way through the property. This 2,500-acre parcel was a surface mining site for co”
 - US-4126 Green River State Wildlife Area: ours 5,057 ac vs agency 2,565 acre (= 2,565 ac; 97% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [dnr.illinois.gov](https://dnr.illinois.gov/parks/park.greenriver.html) · “life restoration area popular among hunters, hikers, birders and other outdoor enthusiasts. Topography of the 2,565-acre area varies from flat to gently rolling”
+- US-4095 Frank Holten State Recreation Area: ours 2,091 ac vs agency 1,080 acre (= 1,080 ac; 94% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [dnr.illinois.gov](https://dnr.illinois.gov/parks/park.frankholten.html) · “k Holten State Park is an ideal destination for outdoor recreation in an urban setting in East St. Louis. The 1,080-acre St. Clair County park features the 18-h”
 - US-4110 Big River State Forest: ours 5,608 ac vs agency 2,900 acres (= 2,900 ac; 93% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [dnr.illinois.gov](https://dnr.illinois.gov/parks/park.bigriver.html) · “es, beginning in 1941 and 1942, and a lease from the U.S. Army Corps of Engineers, have brought the forest to 2,900 acres. Natural Features Big River State Fore”
 - US-0981 Beaver Dam State Park: ours 1,398 ac vs agency 750 acres (= 750 ac; 86% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [dnr.illinois.gov](https://dnr.illinois.gov/parks/park.beaverdam.html) · “uated in an oak/hickory woodland, Beaver Dam State Park offers a variety of recreational opportunities on its 750 acres. Fishing, picnicking, hiking, and tent a”
 - US-1006 Lake Murphysboro State Park: ours 1,896 ac vs agency 1,022 acre (= 1,022 ac; 86% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [dnr.illinois.gov](https://dnr.illinois.gov/parks/park.lakemurphysboro.html) · “picnicking, camping and hiking. Located in Jackson County about 1 mile west of Murphysboro off Route 149, the 1,022-acre state park is the perfect place to enjo”
@@ -892,9 +894,7 @@ You · [www.fws.gov](https://www.fws.gov/refuge/chassahowitzka/about-us)
 - US-4112 Cache River State Natural Area: ours 32,995 ac vs agency 60,000 acre (= 60,000 ac; 45% off) · cause: agency bigger: our outline may miss a tract · [dnr.illinois.gov](https://dnr.illinois.gov/content/dam/soi/en/web/dnr/publications/documents/00000050.pdf) · “rative effort called the Cache River Wetlands Joint Venture Partnership is working to protect and restore a 60,000-acre wetland corridor along 50 miles of the C”
 - US-0283 Cypress Creek National Wildlife Refuge: ours 50,025 ac vs agency 35,000 acres (= 35,000 ac; 43% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.fws.gov](https://www.fws.gov/refuge/cypress-creek/about-us) · “ized on June 26, 1990 under the Emergency Wetland Resources Act of 1986. The refuge will eventually encompass 35,000 acres. Management emphasis is placed on acq”
 - US-0272 Port Louisa National Wildlife Refuge: ours 32,117 ac vs agency 24,149 acre (= 24,149 ac; 33% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.fws.gov](https://www.fws.gov/refuge/port-louisa) · “Activities Trails Rules & Policies Get Involved News Species Map https://www.facebook.com/PortLouisaNWR/ The 24,149 acre Port Louisa National Wildlife Refuge wa”
-- US-10090 Mackinaw River State Fish and Wildlife Area: ours 972 ac vs agency 1,448 acres (= 1,448 ac; 33% off) · cause: agency bigger: our outline may miss a tract · [dnr.illinois.gov](https://dnr.illinois.gov/parks/park.mackinawriver.html) · “e state, and subsequent acquisitions by the Department of Natural Resources have brought the total holding to 1,448 acres. Natural Heritage The Mackinaw River S”
-- US-4146 Mississippi River State Fish and Wildlife Area: ours 30,015 ac vs agency 24,386 acres (= 24,386 ac; 23% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [dnr.illinois.gov](https://dnr.illinois.gov/parks/park.mississippiriver.html) · “and 26, and includes portions of both the Illinois and Mississippi rivers. The total project area consists of 24,386 acres of General Plan lands. Of this total,”
-- … 3 more in US-IL.json
+- … 5 more in US-IL.json
 
 **Unsure (no clean total found; the nearest number is only a guess):**
 
@@ -935,7 +935,6 @@ You · [www.fws.gov](https://www.fws.gov/refuge/chassahowitzka/about-us)
 - US-11793 Revis Spring Hill Prairie State Nature Preserve: ours 902 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 412.7 acres, no total words near it) · [dnr.illinois.gov](https://dnr.illinois.gov/inpc/area.area5masonrevishillprairie.html)
 - US-12110 Rend Lake State Fish and Wildlife Area: ours 12,658 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 5,000 acres, no total words near it) · [dnr.illinois.gov](https://dnr.illinois.gov/parks/park.rend-lake.html)
 - US-12184 Heidecke Lake State Fish and Wildlife Area: ours 3,097 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-12314 Kankakee National Wildlife Refuge: ours 198 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-12329 Berryville Shale Glade State Nature Preserve: ours 116 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 40.72 acres, no total words near it) · [dnr.illinois.gov](https://dnr.illinois.gov/inpc/area.area9unionberryvilleshaleglade.html)
 - US-12332 Ozark Hills State Nature Preserve: ours 435 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 222 acres, no total words near it) · [dnr.illinois.gov](https://dnr.illinois.gov/inpc/area.area9unionozarkhills.html)
 - US-12366 McMaster Woods State Nature Preserve: ours 126 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 40 acres, no total words near it) · [dnr.illinois.gov](https://dnr.illinois.gov/inpc/area.area5greenemcmasterwoods.html)
@@ -944,7 +943,6 @@ You · [www.fws.gov](https://www.fws.gov/refuge/chassahowitzka/about-us)
 - US-12596 Denby Prairie State Nature Preserve: ours 12 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 2.5 acres, a tiny number without size wording) · [dnr.illinois.gov](https://dnr.illinois.gov/inpc/area.area5macoupindenbyprairie.html)
 - US-12601 Hackmatack National Wildlife Refuge: ours 721 ac · cause: whole park compared (POTA lists it in 2 states: {'US-WI': 170, 'US-IL': 551}) · [www.fws.gov](https://www.fws.gov/refuge/hackmatack/about-us)
 - US-4094 Eagle Creek State Park: ours 1,255 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 3,000 acre, no total words near it) · [dnr.illinois.gov](https://dnr.illinois.gov/parks/park.eaglecreek.html)
-- US-4095 Frank Holten State Recreation Area: ours 2,091 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-4096 Golconda Marina State Recreation Area: ours 602 ac · cause: the agency figure may cover several states; our outline may be this state's share only · [dnr.illinois.gov](https://dnr.illinois.gov/parks/park.golcondamarina.html)
 - US-4097 Kickapoo State Recreation Area: ours 8,385 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 1,290 acres, no total words near it) · [dnr.illinois.gov](https://dnr.illinois.gov/parks/park.kickapoo.html)
 - US-4099 Moraine View State Recreation Area: ours 3,301 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 760 acres, no total words near it) · [dnr.illinois.gov](https://dnr.illinois.gov/parks/about/park.moraineview.html)
@@ -958,7 +956,9 @@ You · [www.fws.gov](https://www.fws.gov/refuge/chassahowitzka/about-us)
 - US-4128 Henderson County State Conservation Area: ours 182 ac · cause: the agency figure may cover several states; our outline may be this state's share only · [dnr.illinois.gov](https://dnr.illinois.gov/parks/park.hendersoncounty.html)
 - US-4131 Illinois Caverns State Natural Area: ours 228 ac · cause: a number 3 parks share from one page (4,400,000 ac): an agency total, not this park
 - US-4160 Volo Bog State Natural Area: ours 2,161 ac · cause: no total-looking sentence: numbers found were parts or other units
-- … 5 more in US-IL.json
+- US-7257 Saline County State Fish and Wildlife Area: ours 2,582 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 524 acres, no total words near it) · [dnr.illinois.gov](https://dnr.illinois.gov/parks/park.salinecounty.html)
+- US-7371 Sam Dale Lake State Fish and Wildlife Area: ours 2,627 ac · cause: no total-looking sentence: numbers found were parts or other units
+- … 3 more in US-IL.json
 
 **Handover / closure hints (a person decides; nothing applied):**
 
