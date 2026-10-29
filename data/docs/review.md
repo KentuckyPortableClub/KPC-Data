@@ -10,10 +10,10 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-NC | 253 | 122 | 81 | 108 | 76 | 37 | 9 | 131 | 55 | 3 | 0 |
 | US-VA | 184 | 111 | 70 | 106 | 26 | 72 | 13 | 73 | 50 | 0 | 0 |
 | US-WV | 172 | 135 | 55 | 120 | 7 | 120 | 8 | 37 | 35 | 0 | 0 |
-| US-GA | 237 | 138 | 86 | 130 | 16 | 81 | 41 | 99 | 53 | 68 | 0 |
+| US-GA | 237 | 139 | 93 | 124 | 16 | 82 | 41 | 98 | 41 | 60 | 0 |
 | US-AL | 155 | 82 | 62 | 41 | 11 | 25 | 46 | 73 | 34 | 4 | 0 |
-| US-SC | 167 | 22 | 11 | 19 | 2 | 11 | 9 | 145 | 67 | 0 | 0 |
-| US-FL | 460 | 165 | 149 | 143 | 19 | 122 | 24 | 295 | 63 | 22 | 0 |
+| US-SC | 167 | 26 | 15 | 23 | 2 | 15 | 9 | 141 | 67 | 0 | 0 |
+| US-FL | 460 | 165 | 149 | 143 | 19 | 122 | 24 | 295 | 66 | 89 | 0 |
 | US-MS | 155 | 33 | 26 | 20 | 0 | 19 | 14 | 122 | 46 | 92 | 0 |
 | US-IN | 229 | 22 | 19 | 19 | 1 | 7 | 14 | 207 | 11 | 0 | 0 |
 | US-IL | 219 | 99 | 93 | 30 | 5 | 80 | 14 | 120 | 166 | 0 | 0 |
@@ -534,24 +534,24 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-7456 | Dahlonega Gold Museum State Historic Sit | https://gastateparks.org/Map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://gastateparks.org/ParkRules ✓ |  |
 | US-2184 | Hard Labor Creek State Park | https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/HardLaborCreek_TrailMap.p | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Apr 20, 2026 | https://gastateparks.org/Rules ✗ |  |
 | US-3728 | Providence Canyon State Park | https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/ProvidenceCanyon_TrailMap | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Aug 21, 2025 | https://gastateparks.org/Rules ✗ |  |
-| US-2167 | Black Rock Mountain State Park | https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/parkmaps/black_rock_mount | image ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted 2022 | https://gastateparks.org/Rules ✗ |  |
+| US-2168 | Chattahoochee Bend State Park | https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/parkmaps/chattahoochee%20 | image ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Feb 02, 2024 | https://gastateparks.org/Rules ✗ |  |
 | US-2203 | Tugaloo State Park | https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/parkmaps/tugaloo_state_pa | image ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted 2022 | https://gastateparks.org/Rules ✗ |  |
 | US-2190 | Magnolia Springs State Park | https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/MagnoliaSprings_TrailMap. | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Oct 26, 2026 | https://gastateparks.org/ParkRules ✓ |  |
-| US-2170 | Crooked River State Park | https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/parkmaps/CrookedRiver_Par | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Apr 15, 2026 | https://gastateparks.org/Rules ✗ |  |
-| US-2172 | Elijah Clark State Park | https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/parkmaps/elijah_clark_sta | image ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Feb 02, 2024 | https://gastateparks.org/Rules ✗ |  |
+| US-2171 | Don Carter State Park | https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/DonCarter_TrailMap.pdf | pdf · the agency site | — (date unknown, checked 2026-10-29) · posted Apr 09, 2025 | https://gastateparks.org/ParkRules ✓ |  |
+| US-2173 | F.D. Roosevelt State Park | https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/FDRoosevelt_ParkMap.pdf | pdf · the agency site | — (date unknown, checked 2026-10-29) · posted Feb 02, 2024 | https://gastateparks.org/ParkRules ✓ |  |
 | US-2185 | High Falls State Park | https://gastateparks.org/sites/default/files/parks/pdf/HighFalls/high-falls-map-2024.jpg | image ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Sep 10, 2024 |  |  |
 | US-2206 | Vogel State Park | https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/parkmaps/vogelsp_blairsvi | image · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Feb 02, 2024 | https://gastateparks.org/Rules ✗ |  |
 | US-2182 | Jack Hill State Park | https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/parkmaps/jack_hill_state_ | image ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Feb 02, 2024 | https://gastateparks.org/Rules ✗ |  |
 | US-4650 | Dawson State Forest | https://gatrees.org/wp-content/uploads/2020/03/DawsonForestTrailsMapEMBrev0110.pdf | pdf ✓name · the agency site | 2010: check it is still current (file stamp 2010 (older than the posting 2020 ) · posted 2020-03 | https://georgiawildlife.com/hunting/hunter-resources ✓ | is owned by the State of Georgia |
 | US-3763 | Oconee Wildlife Management Area | https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/Oconee%20PDF%20Map.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Sep 26, 2025 |  ✗ |  |
 | US-9782 | Big Dukes Pond Wildlife Management Area | https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/Big%20Dukes%20Pond%20WMA%20Ma | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Feb 02, 2024 |  ✗ |  |
-| US-9793 | Ball's Ferry Property Wildlife Managemen | https://georgiawildlife.com:443/balls-ferry | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://publuu.com/flip-book/1025508/2375523 ✓ |  |
+| US-9793 | Ball's Ferry Property Wildlife Managemen | https://georgiawildlife.com:443/balls-ferry | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — |  ✗ |  |
 | US-7137 | Cooper's Creek Wildlife Management Area | https://georgiawildlife.com/rich-mountain-wma-cartecay-tract | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — |  ✗ |  |
 | US-4647 | Bartram Forest Wildlife Management Area | https://georgiawildlife.com:443/sites/default/files/Bartram2023.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted 2023 |  ✗ |  |
 | US-7910 | Keg Creek Wildlife Management Area | https://georgiawildlife.com:443/keg-creek-wma | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — |  ✗ |  |
 | US-3736 | Blanton Creek Wildlife Management Area | https://georgiawildlife.com:443/blanton-creek-wma | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — |  ✗ |  |
 | US-3742 | Crockford-Pigeon Mountain Wildlife Manag | https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/2025%20Crockford-Pigeon%20Mtn | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Sep 26, 2025 |  ✗ |  |
-| US-12416 | Little River (GA) Wildlife Management Ar | https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/locationmaps/little%20river20 | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted 2025 | https://publuu.com/flip-book/1025508/2375523 ✓ | owned by the Georgia Dept |
+| US-12416 | Little River (GA) Wildlife Management Ar | https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/locationmaps/little%20river20 | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted 2025 |  ✗ | owned by the Georgia Dept |
 | US-7914 | Sandhills East Wildlife Management Area | https://georgiawildlife.com:443/sandhills-wma-east | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — |  ✗ |  |
 | US-7900 | Echeconnee Creek Wildlife Management Are | https://georgiawildlife.com:443/sites/default/files/wrd/pdf/maps/EcheconneeCreekMap.pdf | pdf ✓name · combined map: covers 2 units · the agency site | 2018: check it is still current (printed on the map) · posted Feb 02, 2024 |  ✗ |  |
 | US-3755 | Horse Creek Wildlife Management Area | https://georgiawildlife.com/sites/default/files/Horse%20Creek%20WMA%202023%20hunter%20map% | pdf ✓name · the agency site | 2023 (the PDF file's own stamp (may be the print da) · posted Feb 02, 2024 |  ✗ |  |
@@ -569,21 +569,21 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-0662 | Chattahoochee River National Recreation  | https://www.nps.gov/chat/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted August 16, 2026 | https://www.nps.gov/chat/learn/management/lawsandpolicies.htm ✓ |  |
 | US-0711 | Kennesaw Mountain National Battlefield | https://www.nps.gov/kemo/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted August 19, 2024 | https://www.nps.gov/kemo/learn/management/lawsandpolicies.htm ✓ |  |
 | US-9799 | Stone Mountain (GA) State Park | https://stonemountainpark.com/maps/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://stonemountainpark.com/about/rules/ ✓ |  |
+| US-10397 | Southern Nantahala Wilderness Area | https://www.fs.usda.gov/r08/northcarolina/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted October 5, 2026 | https://www.fs.usda.gov/r08/northcarolina ✓ |  |
 | US-4473 | Chattahoochee-Oconee National Forest | https://store.usgs.gov/product/229534 | page · linked from the agency page (store.usgs. | — (date unknown, checked 2026-10-29) · posted — | https://www.fs.usda.gov/r08/chattahoochee-oconee ✓ |  |
 
-### US-GA no map yet (99): the reason
+### US-GA no map yet (98): the reason
 - US-0139 Eufaula National Wildlife Refuge: no map link on file and none on the park page
 - US-0259 Banks Lake National Wildlife Refuge: no map link on file and none on the park page
 - US-0636 Jekyll Island State Park: no map link on file and none on the park page
 - US-0952 Ocmulgee National Monument: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.nps.gov/ocmu/planyourvisit/maps.htm)
-- US-10397 Southern Nantahala Wilderness Area: no map link on file and none on the park page (needs browser: host on the browser list)
 - US-12418 Tallulah Gorge Wildlife Management Area: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com/locations/wrd; opened, a page that does not name this park (a generic agency page is not its map) https://gastateparks.org:443/DonCarter)
 - US-12768 Bowens Mill State Fish Hatchery: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com/locations/wrd)
 - US-12769 Cordele State Fish Hatchery: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com/locations/wrd)
 - US-12770 Richmond Hill State Fish Hatchery: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com/locations/wrd)
 - US-12771 Summerville State Fish Hatchery: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com/locations/wrd)
 - US-12772 Georgia National Fairgrounds State Recreation: no map link on file and none on the park page
-- US-2173 F.D. Roosevelt State Park: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/FDRoo) (needs browser: host on the browser list)
+- US-2167 Black Rock Mountain State Park: HTTP 404 (needs browser: host on the browser list)
 - US-2175 Fort McAllister State Park: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://gastateparks.org/sites/default/files/parks/pdf/FortMcAllister/) (needs browser: host on the browser list)
 - US-2177 Fort Yargo State Park: no working map link (tried: HTTP 404 https://gastateparks.org/sites/default/files/parks/pdf/fortyargo/Fort%) (needs browser: host on the browser list)
 - US-2179 George L. Smith State Park: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://gastateparks.org/sites/default/files/parks/pdf/GeorgeLSmith/Ge) (needs browser: host on the browser list)
@@ -612,6 +612,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - US-3751 Grand Bay Wildlife Management Area: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com/locations/wrd)
 - US-3752 Griffin Ridge Wildlife Management Area: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com/locations/wrd)
 - US-3753 Hannahatchee Creek Wildlife Management Area: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com/locations/wrd)
+- US-3758 John's Mountain Wildlife Management Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/2025%20Jo; opened, a page that does not name this park (a generic agency page is not its map) https://georgiawildlife.com/locations/wrd)
 
 ## US-AL sample (random 12 per agency group, seed 28)
 | ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
@@ -705,7 +706,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - US-13004 TVA Cedar Creek Dam Multiple Use Area: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
 - US-13005 TVA Big Bear Creek Dam Multiple Use Area: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
 - US-13081 Fort Toulouse Forever Wild Tract State Wildli: no map link on file and none on the park page
-- US-13083 TVA Wheeler Dam Public Park National Recreati: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://tennesseerivervalleygeotourism.org/map)
+- US-13083 TVA Wheeler Dam Public Park National Recreati: no map link on file and none on the park page
 - US-13088 Choctaw Nation Wildlife Refuge National Wildl: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.fws.gov/refuge/choctaw/map; opened, a page that does not name this park (a generic agency page is not its map) https://www.fws.gov/media/choctaw-bird-brochure)
 - US-13311 TVA Upper Bear Creek Dam Resource Management : no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.outdooralabama.com/FishFromTheBank; opened, a page that does not name this park (a generic agency page is not its map) https://www.outdooralabama.com/CFAP)
 - US-13317 Coffee County State Public Fishing Lake: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.outdooralabama.com/FishFromTheBank; opened, a page that does not name this park (a generic agency page is not its map) https://www.outdooralabama.com/CFAP)
@@ -740,12 +741,16 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-0017 | Congaree National Park | https://www.nps.gov/cong/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted June 5, 2024 | https://www.nps.gov/cong/learn/management/lawsandpolicies.htm ✓ |  |
 | US-0932 | Fort Sumter and Fort Moultrie National H | https://www.nps.gov/fosu/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted May 12, 2023 | https://www.nps.gov/fosu/learn/management/lawsandpolicies.htm ✓ |  |
 | US-9226 | Jocassee Gorges Wildlife Management Area | https://www.dnr.sc.gov/managed/wild/jocassee/map.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.dnr.sc.gov/regulations.html ✓ |  |
+| US-5489 | Wee Tee State Forest | https://www.scfc.gov/wp-content/uploads/2026/10/WeeTeeWMAMap.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted 2026-10 |  ✗ |  |
+| US-5485 | Harbison State Forest | https://www.scfc.gov/wp-content/uploads/2021/06/hsfcanoelaning.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted 2021-06 |  ✗ |  |
+| US-5487 | Poe Creek State Forest | https://www.scfc.gov/wp-content/uploads/2024/01/WMA-PoeCreekStateForest.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted 2024-01 |  ✗ | managed by the SC Forestry Commission |
+| US-5486 | Manchester State Forest | https://www.scfc.gov/wp-content/uploads/2021/06/trailmap-manchester.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted 2021-06 |  ✗ |  |
 | US-2913 | Sesquicentennial State Park | https://southcarolinaparks.com/files/State%20Parks%20Files/Sesqui/MapSesquicentennial.pdf | pdf ✓name · the agency site | 2005: check it is still current (file stamp 2005 (older than the posting 2017 ) · posted Jul 28, 2017 |  ✗ |  |
 | US-2905 | Lee State Park | https://southcarolinaparks.com/lee/maps-and-brochures | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — |  ✗ |  |
 | US-4522 | Francis Marion National Forest | https://www.fs.usda.gov/r08/francismarionsumter/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted November 6, 2025 | https://www.fs.usda.gov/r08/francismarionsumter ✓ |  |
 | US-4523 | Sumter National Forest | https://www.fs.usda.gov/r08/francismarionsumter/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted November 6, 2025 | https://www.fs.usda.gov/r08/francismarionsumter ✓ |  |
 
-### US-SC no map yet (145): the reason
+### US-SC no map yet (141): the reason
 - US-0519 Carolina Sandhills National Wildlife Refuge: no working map link (tried: robots https://doifwsnextprod.prod.acquia-sites.com/sites/default/files/docum; robots https://doifwsnextprod.prod.acquia-sites.com/sites/default/files/docum)
 - US-10414 Wateree Heritage Preserve: no map link on file and none on the park page
 - US-10415 Landsford Canal Forest Legacy Area Wildlife M: no map link on file and none on the park page
@@ -771,7 +776,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - US-2888 Cheraw State Park: no map link on file and none on the park page
 - US-2889 Chester State Park: no map link on file and none on the park page
 - US-2890 Colleton State Park: no map link on file and none on the park page
-- US-2891 Croft State Park: no working map link (tried: robots https://embed.widencdn.net/pdf/plus/scprt/sohstjfuoz/CroftTrailMap.pdf)
+- US-2891 Croft State Park: no map link on file and none on the park page
 - US-2892 Devil's Fork State Park: no map link on file and none on the park page
 - US-2893 Dreher Island State Park: no map link on file and none on the park page
 - US-2894 Edisto Beach State Park: no map link on file and none on the park page
@@ -860,9 +865,9 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-8349 | Gourd Island State Conservation Area | https://aws.sjrwmd.com/SJRWMD/lands/recreation/Gourd_Island_Conservation_Area.pdf | pdf ✓name · linked from the agency page (aws.sjrwmd. | 2023 (file stamp 2023 (older than the posting 2025 ) · posted Jan 22, 2025 |  ✗ |  |
 | US-8336 | Bayard State Conservation Area | https://aws.sjrwmd.com/SJRWMD/lands/recreation/JP-Hall-Bayard_Conservation_Area.pdf | pdf ✓name · linked from the agency page (aws.sjrwmd. | date unknown (date unknown, checked 2026-10-29) · posted Jan 22, 2025 |  ✗ |  |
 | US-8343 | Deep Creek State Conservation Area | https://aws.sjrwmd.com/SJRWMD/lands/recreation/Deep_Creek_Conservation_Area.pdf | pdf ✓name · combined map: covers 3 units · linked from the agency page (aws.sjrwmd. | 2023 (file stamp 2023 (older than the posting 2025 ) · posted Jan 22, 2025 |  ✗ |  |
-| US-4470 | Apalachicola National Forest | https://www.fs.usda.gov/r08/florida/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted December 16, 2025 | https://www.fs.usda.gov/r08/florida ✓ |  |
-| US-4472 | Osceola National Forest | https://www.fs.usda.gov/r08/florida/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted December 16, 2025 | https://www.fs.usda.gov/r08/florida ✓ |  |
-| US-4471 | Ocala National Forest | https://www.fs.usda.gov/r08/florida/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted December 16, 2025 | https://www.fs.usda.gov/r08/florida ✓ |  |
+| US-4470 | Apalachicola National Forest | https://www.fs.usda.gov/r08/florida/maps-guides | page · forest map only; forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted December 16, 2025 | https://www.fs.usda.gov/r08/florida ✓ |  |
+| US-4472 | Osceola National Forest | https://www.fs.usda.gov/r08/florida/maps-guides | page · forest map only; forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted December 16, 2025 | https://www.fs.usda.gov/r08/florida ✓ |  |
+| US-4471 | Ocala National Forest | https://www.fs.usda.gov/r08/florida/maps-guides | page · forest map only; forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted December 16, 2025 | https://www.fs.usda.gov/r08/florida ✓ |  |
 
 ### US-FL no map yet (295): the reason
 - US-0007 Biscayne Bay National Park: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.nps.gov/bisc/planyourvisit/maps.htm)
@@ -881,7 +886,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - US-12127 Stormwater Treatment Area 1 West State Conser: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.sfwmd.gov/sites/default/files/documents/map_showing_public; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.sfwmd.gov/sites/default/files/documents/trailguide_sta1w.p)
 - US-12128 Stormwater Treatment Area 1 East State Conser: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.sfwmd.gov/sites/default/files/documents/map_showing_public; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.sfwmd.gov/sites/default/files/documents/trailguide_sta1e.p)
 - US-12135 Myakka River — Flatford Swamp State Conservat: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
-- US-12136 Deep Creek Preserve Desoto County State Conse: opened, a statewide map viewer, not this park's map (chat 8 F2) (needs browser: the page refused a plain reader (HTTP 403))
+- US-12136 Deep Creek Preserve Desoto County State Conse: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
 - US-13011 Shoal River Headwaters State Park: no map link on file and none on the park page (needs browser: host on the browser list)
 - US-1829 Alafia River State Park: no map link on file and none on the park page (needs browser: host on the browser list)
 - US-1830 Alfred B.Maclay Gardens State Park: no map link on file and none on the park page (needs browser: host on the browser list)
@@ -2818,8 +2823,11 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - US-0446 Funk WPA Wetland Management District: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.fws.gov/refuge/rainwater-basin-wetland-management-district)
 
 ## robots.txt said no (hosts we did not read)
-- doifwsnextprod.prod.acquia-sites.com: 1 addresses (User-agent: * | Disallow: /)
-- forms.office.com: 1 addresses (﻿User-agent: Bingbot | Allow: / | User-agent: Googlebot | Allow: / | User-agent: Twitterbot | Allow:)
+- app.box.com: 1 addresses (User-agent: Twitterbot | Disallow: / | Allow: /representation  # Twitter needs to be able to display)
+- doifwsnextprod.prod.acquia-sites.com: 2 addresses (User-agent: * | Disallow: /)
+- embed.widencdn.net: 2 addresses (User-agent: Twitterbot | Disallow: | User-agent: * | Allow: /img/3shape/ | Allow: /pdf/*/3shape/ | A)
+- www.blakeleypark.com: 2 addresses (User-agent: * | Disallow: /admin/ | Disallow: /App_Browsers/ | Disallow: /App_Code/ | Disallow: /App)
+- www.google.com: 1 addresses (User-agent: * | User-agent: Yandex | Disallow: /search | Allow: /search/about | Allow: /search/howse)
 
 ## hosts resting a day (three strikes)
 - apps.dnr.wi.gov
