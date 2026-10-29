@@ -48,7 +48,7 @@ REFRESH_DAYS = int(os.environ.get('REFRESH_DAYS') or 7)
 TOL = 0.15
 PDF_FIRST = 400_000
 TODAY = time.strftime('%Y-%m-%d')
-VER = 10   # Oct 28 (chat 11's KY grade): '708, 879' parse + summed lakes, other-unit pages, history words + stale years, unsure carries a cause, own-page handover hints, quoted URLs, 10-row gate, same-agency label
+VER = 11   # Oct 28 (chat 11's KY grade): '708, 879' parse + summed lakes, other-unit pages, history words + stale years, unsure carries a cause, own-page handover hints, quoted URLs, 10-row gate, same-agency label
 QUEUE = ['US-KY',
          'US-TN', 'US-NC', 'US-VA', 'US-WV', 'US-GA', 'US-AL', 'US-SC', 'US-FL', 'US-MS',
          'US-IN', 'US-IL', 'US-MO', 'US-WI', 'US-MN', 'US-IA', 'US-ND', 'US-SD',
@@ -66,9 +66,11 @@ M = None
 # ---- reading sizes
 # V4 fix 1: '708, 879 acres' (a comma, a space and exactly 3 digits) is ONE number, 708,879; the look-behind stops '2019, 100' from reading as 9,100
 NUM = r'(\d{1,3}(?:,\s?\d{3}(?!\d))+(?:\.\d+)?|\d+(?:\.\d+)?(?:\s*million)?)'
-UNIT = r'(acres?|ac\b|hectares?|\bha\b|square\s+(?:miles?|kilomet(?:er|re)s?)|sq\.?\s*(?:mi|km)\b|km\s*²|km2\b|mi\s*²)'
+UNIT = r'(acres?\b|ac\b|hectares?\b|\bha\b|square\s+(?:miles?|kilomet(?:er|re)s?)|sq\.?\s*(?:mi|km)\b|km\s*²|km2\b|mi\s*²)'
 SIZE = re.compile(r'(?<![\d.,])' + NUM + r'\s*[-–\s]?\s*' + UNIT, re.I)
-SIZE2 = re.compile(r'(?:acreage|area|size|total area|land area|park area)\s*[:=]?\s*(?<![\d.,])' + NUM + r'\s*' + UNIT + '?', re.I)
+SIZE2 = re.compile(r'\b(?:acreage|area|size|total area|land area|park area)\s*[:=]\s*(?<![\d.,])' + NUM + r'\s*' + UNIT + '?', re.I)   # v11: a bare number needs the ':' ('Wildlife Area 24621 North River Road', '/inpc/area1boone…' were read as acres)
+STREET = re.compile(r'^\s*(?:[NSEW]\.?\s+|North |South |East |West )?(?:[A-Z][\w.]*\s+){0,3}(?:Rd|Road|Hwy|Highway|St|Street|Lane|Ln|Drive|Dr|Pike|Ave|Avenue|Blvd|Route|Rte|Way|Parkway|Pkwy|Trail Rd)\b\.?', re.I)
+DATE_BEFORE = re.compile(r'(?:\b(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\.?\s+\d{1,2},?\s*|\b(?:in|since|established|founded|dedicated|designated|from|until|by|of|year)\s+|\d{1,2}/\d{1,2}/|,\s*)$', re.I)
 # 'two lakes of 40 and 60 acres' / '21.2 and 13.8 acre lakes': one candidate with the SUM; the parts are not totals
 PNUM = r'\d[\d,]*(?:\.\d+)?'
 SUMRX = re.compile(r'(?<![\d.,])((?:' + PNUM + r'(?:\s*-?\s*acres?)?\s*,\s*)*' + PNUM + r'(?:\s*-?\s*acres?)?\s*(?:and|&)\s*' + PNUM + r')\s*-?\s*acres?\b', re.I)
@@ -76,7 +78,7 @@ TOTALWORD = re.compile(r'encompass|cover|consist|compris|total|spans|protects|in
                        r'(?:park|area|refuge|forest|preserve|reserve|site|tract|property|monument|seashore|lakeshore|wma|lands?) (?:of|is|has|contains|covers|totals?|encompasses|includes) ', re.I)
 # V4 fix 3: HISTORY / marketing words always win (a land grant, a deed, 'of wilderness'); PART words lose to a CLEAN total sentence
 HISTORY = re.compile(r'\bgrants?\b|grant of|conveyed|deeded|\bpatent|totall?ing|of wilderness|originally|\bonce\b|land grant|granted|surveyed|'
-                     r'(?:established|founded|created|designated|dedicated|opened|acquired|purchased)\b[^.;]{0,60}\b(?:1[6-9]\d\d|20[01]\d)\b|\bgoal\b|\bplans? to\b|\bauthorized\b|\bapproved\b|\bproposed\b|acquisition boundary|\bup to\b|\bwill (?:protect|cover|include)', re.I)   # v9: 'established in 1938 as a 4,589-acre refuge', 'our goal is to protect 20,000 acres'
+                     r'(?:established|founded|created|designated|dedicated|opened|acquired|purchased)\b[^.;]{0,60}\b(?:1[6-9]\d\d|20[01]\d)\b|\bgoal\b|\bplans? to\b|\bauthorized\b|\bapproved\b|\bproposed\b|acquisition boundary|\bup to\b|\bwill (?:protect|cover|include|enable|allow|let)', re.I)   # v9: 'established in 1938 as a 4,589-acre refuge', 'our goal is to protect 20,000 acres'
 OLD_YEAR = re.compile(r'in (?:1[6-8]\d\d|19[0-4]\d)', re.I)   # an old year BEFORE the number ('In 1931, 800 acres were donated'): history
 PART = re.compile(r'\blake\b.*\bacre|acre[- ]lake|reservoir|pond|campground|campsite|parking|picnic|golf|cemetery|garden|\blawns?\b|\bfields?\b|\bpools?\b|beach|marsh of|wetland of|per acre|acre[- ]feet|acre feet|acres? (?:of|in) (?:water|lake|pond|wetland|crop|timber|hunting|fields?)|'
                   r'burn|harvest|logged|planted|restored|treated|easement|acquired|purchas|added|expansion|donat|'
@@ -198,6 +200,8 @@ def sizes_in(text, name, other_unit=False, is_pdf=False):
             n, unit = m.group(1), (m.group(2) or 'acres')
             a = to_acres(n, unit)
             if a is None or a < 0.5 or a > 50_000_000: continue
+            if STREET.match(text[m.end():m.end() + 40]) and not re.search(r'acre|hectare', text[m.end():m.end() + 12], re.I): continue   # v11: a street number ('24621 North River Road')
+            if re.fullmatch(r'1[7-9]\d\d|20\d\d', n.strip()) and DATE_BEFORE.search(text[max(0, m.start() - 30):m.start()]): continue   # v11: a YEAR ('November 10, 1978 Acre…', 'in 1978 acres were…')
             s = max(0, m.start() - 110); e = min(len(text), m.end() + 110)
             line = ' '.join(text[s:e].split())
             key = (round(a), line[:40])
@@ -214,6 +218,7 @@ def sizes_in(text, name, other_unit=False, is_pdf=False):
             if is_pdf and not (label or (name_in and len(sent.split()) >= 6)): looks = False; why = 'a map label (no sentence)'   # Cumberland Gap '15 acres', Taylorsville '248': labels on a map PDF
             if any(a0 <= m.start() < b0 for a0, b0 in sums): looks = False; why = 'part of a sum'
             if HISTORY.search(sl) or OLD_YEAR.search(left_of(text, m.start())): looks = False; why = 'history'
+            if a < 5 and not label and not re.search(r'\b(?:is|covers|encompasses|consists of|comprises|totals?|protects)\s+(?:an?\s+|about\s+|approximately\s+|nearly\s+|just\s+)?' + re.escape(n.strip()), sl): looks = False; why = why or 'a tiny number without size wording'   # v11: Ozark Hills '1 acres' fragment
             hard = (bool(HARD_PART.search(strip_name(sl))) or bool(NEAR_PART.search(strip_name(text[max(0, m.start() - 45):m.end() + 45].lower())))) and not label; soft = bool(PART.search(strip_name(sl))) and not label   # the SAME sentence, not the neighbour's
             clean = bool(looks and not why and (label or ((name_in or own_subject) and CLEAN.search(sl))) and not hard)
             if looks and not why and (hard or (soft and not clean)): looks = False; why = 'part (a lake, a purchase, a campground…)'
@@ -855,10 +860,29 @@ KNOWN_ANSWERS = [   # R6 + chat 11's grade (Oct 28): the Kentucky gate; PASS onl
 ]
 
 
+SIZE_CASES = [   # v11 (chat 11, Oct 28 9 PM): real sentences from the VA / IL grades; each is a PERMANENT known answer of every area gate
+    ('Des Plaines State Fish and Wildlife Area', 'Des Plaines State Fish and Wildlife Area 24621 North River Road Wilmington, IL 60481, (815) 423-5326', 'none', 24621),
+    ('Maggie L. Walker National Historic Site', 'Park Statistics Designations National Historic Site - November 10, 1978 Acreage Gross Area Acres for FY 2016 - 1 Visitation', 'none', 1978),
+    ('Ozark Hills State Nature Preserve', 'data-cmp-contentfragment-path="/content/dam/soi/en/web/dnr/content-fragments/inpc/area1boonefloraprairie"> Flora Prairie Title Ozark Hill', 'none', 1),
+    ('Culpeper Battlefields State Park', "Culpeper Battlefields State Park is Virginia's 43rd state park. This park will enable visitors to experience more than 2,500 acres of historic battlefield land.", 'not_total', 2500),
+    ('Maggie L. Walker National Historic Site', 'The site was dedicated in 1978 and the house opened to the public in 1985.', 'none', 1978),
+    ('Castle Rock State Park', 'At the present time, Castle Rock consists of approximately 2,000 acres, 710 of which are designated as an Illinois Nature Preserve.', 'total', 2000),
+]
+
+
+def size_cases():
+    bad = []
+    for name, sent, want, acres in SIZE_CASES:
+        got = [s for s in sizes_in(sent, name) if abs(s['acres'] - acres) < 0.6]
+        ok = (not got) if want == 'none' else (bool(got) and not any(s['total'] for s in got)) if want == 'not_total' else any(s['total'] for s in got)
+        if not ok: bad.append(f'known sentence wrong ({want} {acres:g}): {sent[:50]}')
+    return bad
+
+
 def area_test(area, D):
     """v8 generic gate for any area (chat 11's WV / VA / TN / IL grades): no 'off' row may use a number 3+ parks share, a mission /
     about / index page, or a part sentence; cross-state parks carry the whole-park note. Returns (PASS/FAIL, why)."""
-    bad = []
+    bad = size_cases()
     offs = [(ref, r) for ref, r in D['parks'].items() if r.get('verdict') == 'off' and r.get('official')]
     byn = {}
     for ref, r in offs: byn.setdefault((r['official']['acres'], r['official'].get('url')), []).append(ref)
