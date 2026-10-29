@@ -16,9 +16,29 @@
  "bands": {
   "A": 0,
   "B": 2,
-  "C": 3
+  "C": 4
  },
  "failures": [
+  {
+   "catalog": "https://www.avoindata.fi/data",
+   "keyword": "kansallispuisto",
+   "error": "HTTP 403"
+  },
+  {
+   "catalog": "https://www.avoindata.fi/data",
+   "keyword": "luonnonsuojelualue",
+   "error": "HTTP 403"
+  },
+  {
+   "catalog": "https://www.avoindata.fi/data",
+   "keyword": "luonnonpuisto",
+   "error": "HTTP 403"
+  },
+  {
+   "catalog": "https://www.avoindata.fi/data",
+   "keyword": "suojelualue",
+   "error": "HTTP 403"
+  },
   {
    "catalog": "https://www.avoindata.fi/data",
    "keyword": "kansallispuisto",
@@ -52,6 +72,18 @@
     "?",
     14
    ]
+  ],
+  [
+   [
+    "?",
+    11
+   ]
+  ],
+  [
+   [
+    "?",
+    14
+   ]
   ]
  ],
  "known_good_found": [
@@ -61,6 +93,20 @@
   "https://paikkatieto.ymparisto.fi/geoserver/wfs"
  ],
  "known_log": [
+  {
+   "step": "known",
+   "what": "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/suojelualueet/MapServer",
+   "found": true
+  },
+  {
+   "step": "known",
+   "what": "https://paikkatieto.ymparisto.fi/geoserver/wfs: HTTP 404"
+  },
+  {
+   "step": "known",
+   "what": "https://paikkatieto.ymparisto.fi/geoserver/wfs",
+   "found": false
+  },
   {
    "step": "known",
    "what": "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/suojelualueet/MapServer",
@@ -444,6 +490,212 @@
       "Pasitsohkajonka"
      ],
      "name_field": "PVALUENIMI"
+    }
+   ],
+   "note": "",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "C",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists"
+  },
+  "https://gtkdata.gtk.fi/arcgis/rest/services/tukes/tukes_uusi": {
+   "url": "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/TUKES_UUSI/MapServer",
+   "cc": "FI",
+   "title": "Tukes/TUKES_UUSI",
+   "publisher": "gtkdata.gtk.fi",
+   "catalog": "agency server gtkdata.gtk.fi",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-29",
+   "gaps": [
+    "area",
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 11,
+     "name": "Natura 2000 -alueet",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NAME",
+      "CODE_NO",
+      "MUNICIPALI",
+      "CATEGORY",
+      "STATUS",
+      "AREA_HA",
+      "COMMENT1",
+      "COMMENT2"
+     ],
+     "records": 1763,
+     "sample": [
+      "Bölsviken-Stormossen",
+      "Tapelsåsen - Lindöviken - Heimlax",
+      "Harpar Storträsket ja Lillträsket"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 12,
+     "name": "Suojelualueet",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NAME",
+      "AREA_TYPE",
+      "COMMENT_"
+     ],
+     "records": 5173,
+     "sample": [
+      "Pulmankijärven rinnelehto",
+      "Paistunturin erämaa",
+      "Kaldoaivin erämaa"
+     ],
+     "name_field": "NAME"
+    },
+    {
+     "id": 1,
+     "name": "Malminetsintäalueet voimassa",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "ALUETUNNUS",
+      "ALUESTATUS",
+      "ALUEENNIMI",
+      "HAKIJA",
+      "SAAPUMISPVM",
+      "PAATOSPVM",
+      "VOIMASSAOLOPVM",
+      "KIVENNAISET",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 422,
+     "sample": [
+      "Paanapyytö ML2021:0058",
+      "Paana W2 ML2018:0107",
+      "Maaninkijoki 10 ML2025:0012"
+     ],
+     "name_field": "ALUEENNIMI"
+    },
+    {
+     "id": 6,
+     "name": "Malminetsintäaluehakemukset",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "ALUETUNNUS",
+      "ALUESTATUS",
+      "ALUEENNIMI",
+      "HAKIJA",
+      "SAAPUMISPVM",
+      "PAATOSPVM",
+      "VOIMASSAOLOPVM",
+      "KIVENNAISET",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 347,
+     "sample": [
+      "Kotimaa",
+      "Petäjä",
+      "Syrjälä ML2013:0005"
+     ],
+     "name_field": "ALUEENNIMI"
+    },
+    {
+     "id": 7,
+     "name": "Kaivosaluehakemukset",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "ALUETUNNUS",
+      "ALUESTATUS",
+      "ALUEENNIMI",
+      "HAKIJA",
+      "SAAPUMISPVM",
+      "PAATOSPVM",
+      "VOIMASSAOLOPVM",
+      "KIVENNAISET",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 10,
+     "sample": [
+      "Kuikankulta KL2016:0005",
+      "Kivikangas KL2018:0007",
+      "Stormi2 KL2021:0001"
+     ],
+     "name_field": "ALUEENNIMI"
+    },
+    {
+     "id": 9,
+     "name": "Kullanhuuhdonta-alueet",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "ALUETUNNUS",
+      "ALUESTATUS",
+      "ALUEENNIMI",
+      "HAKIJA",
+      "SAAPUMISPVM",
+      "PAATOSPVM",
+      "VOIMASSAOLOPVM",
+      "KIVENNAISET",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 419,
+     "sample": [
+      "Jääräpää [L] HL2013:0036",
+      "AuMag4 [K] HL2014:0027",
+      "Floppiainen [L]"
+     ],
+     "name_field": "ALUEENNIMI"
+    },
+    {
+     "id": 10,
+     "name": "Kullanhuuhdonta-aluehakemukset",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "ALUETUNNUS",
+      "ALUESTATUS",
+      "ALUEENNIMI",
+      "HAKIJA",
+      "SAAPUMISPVM",
+      "PAATOSPVM",
+      "VOIMASSAOLOPVM",
+      "KIVENNAISET",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 141,
+     "sample": [
+      "Siperialainen estetiikka [K] HL2015:0018",
+      "Musta aukko [K] HL2015:0019",
+      "Elenan aarre [K] HL2016:0019"
+     ],
+     "name_field": "ALUEENNIMI"
     }
    ],
    "note": "",

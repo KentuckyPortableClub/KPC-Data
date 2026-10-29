@@ -68,6 +68,31 @@
    "catalog": "https://datos.gob.cl",
    "keyword": "monumento natural",
    "error": "robots.txt says no"
+  },
+  {
+   "step": "known",
+   "what": "https://arcgis.mma.gob.cl/server/rest/services/IDE/Biodiversidad_IDE/MapServer",
+   "error": "server error: {'code': 499, 'message': 'Token Required', 'details': []}"
+  },
+  {
+   "catalog": "https://datos.gob.cl",
+   "keyword": "parque nacional",
+   "error": "robots.txt says no"
+  },
+  {
+   "catalog": "https://datos.gob.cl",
+   "keyword": "reserva nacional",
+   "error": "robots.txt says no"
+  },
+  {
+   "catalog": "https://datos.gob.cl",
+   "keyword": "área silvestre protegida",
+   "error": "robots.txt says no"
+  },
+  {
+   "catalog": "https://datos.gob.cl",
+   "keyword": "monumento natural",
+   "error": "robots.txt says no"
   }
  ],
  "rejected_orgs": [
@@ -113,6 +138,11 @@
   "https://arcgis.mma.gob.cl/server/rest/services/IDE/Biodiversidad_IDE/MapServer"
  ],
  "known_log": [
+  {
+   "step": "known",
+   "what": "https://arcgis.mma.gob.cl/server/rest/services/IDE/Biodiversidad_IDE/MapServer",
+   "error": "server error: {'code': 499, 'message': 'Token Required', 'details': []}"
+  },
   {
    "step": "known",
    "what": "https://arcgis.mma.gob.cl/server/rest/services/IDE/Biodiversidad_IDE/MapServer",

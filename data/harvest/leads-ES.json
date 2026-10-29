@@ -107,6 +107,20 @@
    "step": "known",
    "what": "https://wms.mapama.gob.es/sig/Biodiversidad/ENP",
    "found": false
+  },
+  {
+   "step": "known",
+   "what": "https://nco.ign.es/server/rest/services/nco/ParquesNacionales/MapServer",
+   "found": true
+  },
+  {
+   "step": "known",
+   "what": "https://wms.mapama.gob.es/sig/Biodiversidad/ENP: no answer three times: left alone for a day"
+  },
+  {
+   "step": "known",
+   "what": "https://wms.mapama.gob.es/sig/Biodiversidad/ENP",
+   "found": false
   }
  ],
  "leads": {
@@ -588,6 +602,118 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Parques Nacionales Información",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "editor",
+      "shape",
+      "id",
+      "nombre",
+      "nombre_en",
+      "url_info",
+      "url_info2",
+      "url_info3",
+      "url_info3_en",
+      "fecha_edi",
+      "validado",
+      "globalid"
+     ],
+     "records": 16,
+     "sample": [
+      "Parque Nacional de la Sierra de las Nieves",
+      "Parque Nacional Caldera de Taburiente",
+      "Parque Nacional de Garajonay"
+     ],
+     "name_field": "nombre"
+    },
+    {
+     "id": 1,
+     "name": "Límites parques nacionales",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "objectid",
+      "editor",
+      "shape",
+      "id",
+      "nombre",
+      "nombre_en",
+      "url_info",
+      "url_info2",
+      "url_info3",
+      "url_info3_en",
+      "fecha_edi",
+      "validado",
+      "globalid"
+     ],
+     "records": 16,
+     "sample": [
+      "Parque Nacional de la Sierra de las Nieves",
+      "Parque Nacional de Aigüestortes i Estany de Sant M",
+      "Parque Nacional de Cabañeros"
+     ],
+     "name_field": "nombre"
+    },
+    {
+     "id": 2,
+     "name": "Áreas de especial protección",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "objectid",
+      "idpark",
+      "nombre",
+      "superficie_ha",
+      "fecha_alta",
+      "fuente",
+      "shape_length",
+      "shape_area",
+      "geom",
+      "id_seig",
+      "geom_Length",
+      "geom_Area"
+     ],
+     "records": 1,
+     "sample": [
+      "Área de Especial Protección del Parque Nacional de"
+     ],
+     "name_field": "nombre"
+    },
+    {
+     "id": 3,
+     "name": "Zonas periféricas de protección",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "objectid",
+      "idpark",
+      "nombre",
+      "parque_nacional",
+      "fecha_alta",
+      "fuente",
+      "shape_length",
+      "shape_area",
+      "geom",
+      "id_seig",
+      "geom_Length",
+      "geom_Area"
+     ],
+     "records": 11,
+     "sample": [
+      "Zona Periférica de Protección del Parque Nacional ",
+      "Zona Periférica de Protección del Parque Nacional ",
+      "Zona Periférica de Protección del Teide"
+     ],
+     "name_field": "nombre"
+    },
     {
      "id": 0,
      "name": "Parques Nacionales Información",

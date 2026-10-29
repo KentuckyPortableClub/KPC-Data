@@ -1715,6 +1715,82 @@
        8
       ]
      ]
+    },
+    {
+     "step": "known",
+     "what": "https://nco.ign.es/server/rest/services/nco/ParquesNacionales/MapServer",
+     "found": true
+    },
+    {
+     "step": "known",
+     "what": "https://wms.mapama.gob.es/sig/Biodiversidad/ENP: no answer three times: left alone for a day"
+    },
+    {
+     "step": "known",
+     "what": "https://wms.mapama.gob.es/sig/Biodiversidad/ENP",
+     "found": false
+    },
+    {
+     "step": "server",
+     "what": "https://nco.ign.es/server/rest/services: 8 folders, 0 services read"
+    },
+    {
+     "agol": "parque nacional",
+     "hits": 10,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       10
+      ]
+     ]
+    },
+    {
+     "agol": "parque natural",
+     "hits": 1,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       1
+      ]
+     ]
+    },
+    {
+     "agol": "espacio natural protegido",
+     "hits": 17,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       16
+      ],
+      [
+       "Contenidos Esri España",
+       1
+      ]
+     ]
+    },
+    {
+     "agol": "reserva natural",
+     "hits": 0,
+     "read": 0,
+     "rejected_orgs": []
+    },
+    {
+     "agol": "red natura",
+     "hits": 29,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       21
+      ],
+      [
+       "Contenidos Esri España",
+       8
+      ]
+     ]
     }
    ],
    "steps": [
@@ -3493,8 +3569,61 @@
     "https://gtkdata.gtk.fi/arcgis/rest/services/Povet/pohjaveden_isotoopit/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/Povet/poppa_v11/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/Projects/projektimaat/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Bedrock_WFS/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Geofysiikka_WMS/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Kaavoitus_WFS/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Kaavoitus_WMS/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Kalliopera_WFS/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Kalliopera_WMS/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Kiviainesvarannot_WFS/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Kiviainesvarannot_WMS/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Maapera_WFS/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Maapera_WMS/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Pohjatutkimukset_WFS/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/GTK_Pohjatutkimukset_WMS/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/KallioperaWMS/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/KallioperaWMS27032020/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/Korkeusmalli/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/Korkeusmalli2018/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Rajapinnat/kokoavaWMS/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/SampleWorldCities/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/20230802_Nayte/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/20240111_Nayte/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/20250926_kaivosymp/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/LaajatProvinssit/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/Nayte20220429EN/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/Nayte20240327EN/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/Nayte29042022/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/kaivosymp29122020/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/provinssirajat/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Tapi/tt_alueet_2017/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/TaustaAineisto/Bedrock/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/TaustaAineisto/Kunnat/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/TaustaAineisto/MMLbasemap_101_Euref/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/TaustaAineisto/MMLbasemap_101_KKJ/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/TaustaAineisto/MMLbasemap_10_Euref/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/TaustaAineisto/MMLbasemap_Euref/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/TaustaAineisto/Maapera/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/TaustaAineisto/Pohjavesialueet/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/Kaivosrekisteri/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/TUKES_LYR/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/TUKES_UUSI/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/TukesWMS/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/suojelualueet/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/202311_soiden_ja_turvemaiden_ravinteisuustaso/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/202311_suotyypit_ja_turvekankaat/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/202311_turvetuotantoalueiden_maanpeite/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/20241002_turvemaiden_alueellinen_hiilivarasto/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/20241106_potentiaaliset_rahkasammalen_korjuukohteet/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/HasuGrid18032016/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/Soiden_luonnontilaisuusluokitus/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/TurvevaratJS/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/Valuma_alueet101SDE2/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Turvevarat/rahkasammalen_korjuukohteet/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Updeep/updeep/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Updeep/updeepOnline/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Updeep/updeepOnline13122019/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Updeep/updeepOnline23032020/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/inspire_ge_geology/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/kallionpinnan_korkeustaso_1m/MapServer",
     "https://gtkdata.gtk.fi/arcgis/rest/services/kalliopinnan_korkeustaso_1m/MapServer",
@@ -3523,6 +3652,78 @@
     {
      "step": "server",
      "what": "https://gtkdata.gtk.fi/arcgis/rest/services: 25 folders, 48 services read"
+    },
+    {
+     "catalog": "https://www.avoindata.fi/data",
+     "keyword": "kansallispuisto",
+     "error": "HTTP 403"
+    },
+    {
+     "catalog": "https://www.avoindata.fi/data",
+     "keyword": "luonnonsuojelualue",
+     "error": "HTTP 403"
+    },
+    {
+     "catalog": "https://www.avoindata.fi/data",
+     "keyword": "luonnonpuisto",
+     "error": "HTTP 403"
+    },
+    {
+     "catalog": "https://www.avoindata.fi/data",
+     "keyword": "suojelualue",
+     "error": "HTTP 403"
+    },
+    {
+     "agol": "kansallispuisto",
+     "hits": 0,
+     "read": 0,
+     "rejected_orgs": []
+    },
+    {
+     "agol": "luonnonsuojelualue",
+     "hits": 11,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       11
+      ]
+     ]
+    },
+    {
+     "agol": "luonnonpuisto",
+     "hits": 0,
+     "read": 0,
+     "rejected_orgs": []
+    },
+    {
+     "agol": "suojelualue",
+     "hits": 14,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       14
+      ]
+     ]
+    },
+    {
+     "step": "known",
+     "what": "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/suojelualueet/MapServer",
+     "found": true
+    },
+    {
+     "step": "known",
+     "what": "https://paikkatieto.ymparisto.fi/geoserver/wfs: HTTP 404"
+    },
+    {
+     "step": "known",
+     "what": "https://paikkatieto.ymparisto.fi/geoserver/wfs",
+     "found": false
+    },
+    {
+     "step": "server",
+     "what": "https://gtkdata.gtk.fi/arcgis/rest/services: 25 folders, 53 services read"
     },
     {
      "catalog": "https://www.avoindata.fi/data",
@@ -4777,6 +4978,79 @@
     {
      "step": "server",
      "what": "https://arcgis.mma.gob.cl/server/rest/services: 10 folders, 47 services read"
+    },
+    {
+     "catalog": "https://datos.gob.cl",
+     "keyword": "parque nacional",
+     "error": "robots.txt says no"
+    },
+    {
+     "catalog": "https://datos.gob.cl",
+     "keyword": "reserva nacional",
+     "error": "robots.txt says no"
+    },
+    {
+     "catalog": "https://datos.gob.cl",
+     "keyword": "área silvestre protegida",
+     "error": "robots.txt says no"
+    },
+    {
+     "catalog": "https://datos.gob.cl",
+     "keyword": "monumento natural",
+     "error": "robots.txt says no"
+    },
+    {
+     "agol": "parque nacional",
+     "hits": 14,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       14
+      ]
+     ]
+    },
+    {
+     "agol": "reserva nacional",
+     "hits": 13,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       13
+      ]
+     ]
+    },
+    {
+     "agol": "área silvestre protegida",
+     "hits": 12,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       12
+      ]
+     ]
+    },
+    {
+     "agol": "monumento natural",
+     "hits": 3,
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       3
+      ]
+     ]
+    },
+    {
+     "step": "known",
+     "what": "https://arcgis.mma.gob.cl/server/rest/services/IDE/Biodiversidad_IDE/MapServer",
+     "error": "server error: {'code': 499, 'message': 'Token Required', 'details': []}"
+    },
+    {
+     "step": "server",
+     "what": "https://arcgis.mma.gob.cl/server/rest/services: 10 folders, 0 services read"
     },
     {
      "catalog": "https://datos.gob.cl",
