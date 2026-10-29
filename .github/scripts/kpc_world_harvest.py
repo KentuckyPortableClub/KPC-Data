@@ -283,7 +283,7 @@ def walk_server(root, cc, leads, known, govwords, done):
 def wfs_capabilities(u, cc, leads, known, govwords):
     """A WFS / OGC endpoint: GetCapabilities only = the list of feature types (names + titles), never the data."""
     base = u.split('?')[0]
-    if re.search(r'ogcapi|/collections$', base, re.I): return ogc_collections(base, cc, leads, known, govwords)
+    if re.search(r'ogcapi|/ogc/v\d|/collections$', base, re.I): return ogc_collections(base, cc, leads, known, govwords)   # Oct 29: PDOK's '/ogc/v1' is an OGC API
     try: xml = get(base, {'service': 'WFS', 'version': '2.0.0', 'request': 'GetCapabilities'}, raw=True)
     except Exception as e:  # noqa: BLE001
         try: return ogc_collections(base, cc, leads, known, govwords)   # Oct 28: an OGC API answers /collections, not GetCapabilities
@@ -292,6 +292,9 @@ def wfs_capabilities(u, cc, leads, known, govwords):
     for blk in re.findall(r'<(?:\w+:)?FeatureType\b[^>]*>(.*?)</(?:\w+:)?FeatureType>', xml, re.S)[:300]:   # Oct 28 (chat 8): <FeatureType xmlns=…> has attributes
         nm = re.search(r'<(?:\w+:)?Name>([^<]+)</', blk); ti = re.search(r'<(?:\w+:)?Title>([^<]*)</', blk)
         if nm: types.append((nm.group(1).strip(), (ti.group(1).strip() if ti else '')))
+    if not types and not re.search(r'wms', base, re.I):   # an endpoint that answered with no WFS feature types may be an OGC API: try /collections
+        try: return ogc_collections(base, cc, leads, known, govwords)
+        except Exception: pass  # noqa: BLE001
     lic = ' '.join(re.findall(r'<(?:ows:)?(?:AccessConstraints|Fees)>([^<]{0,160})<', xml))[:200]
     prov = ' '.join(re.findall(r'<(?:ows:)?ProviderName>([^<]{0,80})<', xml))
     rows = []
