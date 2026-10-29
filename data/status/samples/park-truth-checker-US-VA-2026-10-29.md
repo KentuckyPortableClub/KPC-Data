@@ -12,19 +12,22 @@ Source file: `data/truth/US-VA.json`
  "n": "Lewis Fork Wilderness Area",
  "official": null,
  "ours": {
-  "acres": 12155,
+  "acres": 6080,
+  "dissolved": {
+   "after": 6080,
+   "before": 12155,
+   "copies": 1,
+   "parts": 0,
+   "records": 2,
+   "tracts": 1
+  },
   "manager": "",
+  "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 12155 -> 6080 acres",
   "pieces": [
    [
     "sgvae500352",
     "Lewis Fork NF Wilderness Area",
     6080,
-    "name"
-   ],
-   [
-    "wld187",
-    "Lewis Fork Wilderness",
-    6075,
     "name"
    ]
   ],
@@ -51,8 +54,17 @@ Source file: `data/truth/US-VA.json`
  "n": "Brush Mountain Wilderness Area",
  "official": null,
  "ours": {
-  "acres": 17079,
+  "acres": 8540,
+  "dissolved": {
+   "after": 8540,
+   "before": 17079,
+   "copies": 2,
+   "parts": 0,
+   "records": 4,
+   "tracts": 2
+  },
   "manager": "",
+  "note": "4 joined records = 2 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 17079 -> 8540 acres",
   "pieces": [
    [
     "wld46",
@@ -61,20 +73,8 @@ Source file: `data/truth/US-VA.json`
     "name"
    ],
    [
-    "sgvae500421",
-    "Brush Mountain NF Wilderness Area",
-    4794,
-    "name"
-   ],
-   [
     "wld45",
     "Brush Mountain East Wilderness",
-    3745,
-    "name"
-   ],
-   [
-    "sgvae500504",
-    "Brush Mountain East NF Wilderness Area",
     3745,
     "name"
    ]
@@ -140,8 +140,17 @@ Source file: `data/truth/US-VA.json`
  "n": "Petersburg National Battlefield",
  "official": null,
  "ours": {
-  "acres": 6741,
+  "acres": 3020,
+  "dissolved": {
+   "after": 3020,
+   "before": 6741,
+   "copies": 1,
+   "parts": 57,
+   "records": 64,
+   "tracts": 6
+  },
   "manager": "",
+  "note": "64 joined records = 6 tracts: 1 copies of a tract (same acres, another layer) and 57 fee tracts under a designation record folded; summed 6741 -> 3020 acres",
   "pieces": [
    [
     3101,
@@ -150,45 +159,33 @@ Source file: `data/truth/US-VA.json`
     "name"
    ],
    [
-    "sgvae491754",
-    "Petersburg National Battlefield Park",
-    1124,
-    "name"
-   ],
-   [
-    "sgvae491710",
-    "Petersburg National Battlefield Park",
-    930,
-    "name"
-   ],
-   [
-    "sgvae491753",
-    "Petersburg National Battlefield Park",
-    333,
-    "name"
-   ],
-   [
-    271113,
-    "Petersburg National Battlefield Park",
-    212,
-    "name"
-   ],
-   [
-    "sgvae490579",
-    "Petersburg National Battlefield Park",
-    212,
-    "name"
-   ],
-   [
-    "sgvae491746",
-    "Petersburg National Battlefield Park",
-    206,
-    "name"
-   ],
-   [
     "sgvae491709",
     "Petersburg National Battlefield Park",
     185,
+    "name"
+   ],
+   [
+    "sgvae491774",
+    "Petersburg National Battlefield Park",
+    50,
+    "name"
+   ],
+   [
+    "sgvae492501",
+    "Petersburg National Battlefield Park",
+    49,
+    "name"
+   ],
+   [
+    "sgvae491757",
+    "Petersburg National Battlefield Park",
+    18,
+    "name"
+   ],
+   [
+    "sgvae491748",
+    "Petersburg National Battlefield Park",
+    16,
     "name"
    ]
   ],
@@ -213,19 +210,22 @@ Source file: `data/truth/US-VA.json`
  "n": "Ramseys Draft Wilderness Area",
  "official": null,
  "ours": {
-  "acres": 13150,
+  "acres": 6577,
+  "dissolved": {
+   "after": 6577,
+   "before": 13150,
+   "copies": 1,
+   "parts": 0,
+   "records": 2,
+   "tracts": 1
+  },
   "manager": "",
+  "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 13150 -> 6577 acres",
   "pieces": [
    [
     "wld356",
     "Ramseys Draft Wilderness",
     6577,
-    "name"
-   ],
-   [
-    "sgvae500340",
-    "Ramseys Draft NF Wilderness Area",
-    6573,
     "name"
    ]
   ],
@@ -244,43 +244,36 @@ Source file: `data/truth/US-VA.json`
 ## US-7794 Goshen Pass State Natural Area
 ```json
 {
- "cause": "a number 14 parks share from one page (66,000 ac): an agency total, not this park",
  "checked": "2026-10-29",
  "handover": [],
  "n": "Goshen Pass State Natural Area",
- "official": null,
+ "official": {
+  "acres": 936.0,
+  "as": "936 acres",
+  "clean": false,
+  "line": "of local citizens during the previous decades, as well as a grant from the Perry Foundation. In 2002, these 936 acres were dedicated as Goshen Pass Natural Area Preserve. Natural History About 420 million years ago, the area",
+  "read": "2026-10-29",
+  "sent": "In 2002, these 936 acres were dedicated as Goshen Pass",
+  "url": "https://www.dcr.virginia.gov/natural-heritage/document/pggoshenpass.pdf",
+  "why": "total-looking"
+ },
  "ours": {
-  "acres": 3827,
+  "acres": 1012,
+  "dissolved": {
+   "after": 1012,
+   "before": 3827,
+   "copies": 2,
+   "parts": 2,
+   "records": 7,
+   "tracts": 3
+  },
   "manager": "",
+  "note": "7 joined records = 3 tracts: 2 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 3827 -> 1012 acres",
   "pieces": [
    [
     54448,
     "Goshen Pass State Natural Area Preserve",
     942,
-    "words"
-   ],
-   [
-    270565,
-    "Goshen Pass State Natural Area Preserve",
-    942,
-    "name"
-   ],
-   [
-    "sgvab36",
-    "Goshen Pass",
-    936,
-    "name"
-   ],
-   [
-    "sgvae486737",
-    "Goshen Pass State Natural Area Preserve",
-    901,
-    "words"
-   ],
-   [
-    "sgvae486701",
-    "Goshen Pass State Natural Area Preserve",
-    36,
     "words"
    ],
    [
@@ -301,11 +294,11 @@ Source file: `data/truth/US-VA.json`
   "unknown_pieces": 0
  },
  "owner_now": null,
- "pct": null,
+ "pct": 8,
  "same_agency": false,
- "score": 5,
+ "score": 7,
  "t": "State Natural Area",
- "verdict": "unsure"
+ "verdict": "agree"
 }
 ```
 
@@ -342,7 +335,6 @@ Source file: `data/truth/US-VA.json`
 ## US-9968 Buller State Fish Hatchery
 ```json
 {
- "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
  "checked": "2026-10-29",
  "handover": [],
  "n": "Buller State Fish Hatchery",
@@ -357,25 +349,22 @@ Source file: `data/truth/US-VA.json`
   "why": "clean total"
  },
  "ours": {
-  "acres": 264,
+  "acres": 148,
+  "dissolved": {
+   "after": 148,
+   "before": 264,
+   "copies": 0,
+   "parts": 2,
+   "records": 4,
+   "tracts": 2
+  },
   "manager": "",
+  "note": "4 joined records = 2 tracts: 0 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 264 -> 148 acres",
   "pieces": [
    [
     270527,
     "Buller Fish Hatchery",
     116,
-    "name"
-   ],
-   [
-    58207,
-    "Buller Fish Hatchery",
-    68,
-    "name"
-   ],
-   [
-    58206,
-    "Buller Fish Hatchery",
-    48,
     "name"
    ],
    [
@@ -390,11 +379,11 @@ Source file: `data/truth/US-VA.json`
   "unknown_pieces": 0
  },
  "owner_now": null,
- "pct": 80,
+ "pct": 1,
  "same_agency": false,
- "score": 6,
+ "score": 8,
  "t": "State Fish Hatchery",
- "verdict": "off"
+ "verdict": "agree"
 }
 ```
 
@@ -407,8 +396,17 @@ Source file: `data/truth/US-VA.json`
  "n": "Hawks State Forest",
  "official": null,
  "ours": {
-  "acres": 488,
+  "acres": 244,
+  "dissolved": {
+   "after": 244,
+   "before": 488,
+   "copies": 2,
+   "parts": 0,
+   "records": 4,
+   "tracts": 2
+  },
   "manager": "",
+  "note": "4 joined records = 2 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 488 -> 244 acres",
   "pieces": [
    [
     57436,
@@ -418,18 +416,6 @@ Source file: `data/truth/US-VA.json`
    ],
    [
     270422,
-    "Hawks State Forest",
-    122,
-    "name"
-   ],
-   [
-    "sgvaa41",
-    "Hawks State Forest",
-    122,
-    "name"
-   ],
-   [
-    "sgvae486644",
     "Hawks State Forest",
     122,
     "name"
@@ -455,8 +441,17 @@ Source file: `data/truth/US-VA.json`
  "n": "Front Royal State Fish Hatchery",
  "official": null,
  "ours": {
-  "acres": 264,
+  "acres": 176,
+  "dissolved": {
+   "after": 176,
+   "before": 264,
+   "copies": 1,
+   "parts": 0,
+   "records": 3,
+   "tracts": 2
+  },
   "manager": "",
+  "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 264 -> 176 acres",
   "pieces": [
    [
     58212,
@@ -466,12 +461,6 @@ Source file: `data/truth/US-VA.json`
    ],
    [
     270530,
-    "Front Royal Fish Hatchery",
-    88,
-    "name"
-   ],
-   [
-    "sgvae486651",
     "Front Royal Fish Hatchery",
     88,
     "name"
@@ -530,12 +519,6 @@ Source file: `data/truth/US-VA.json`
     "Booker T. Washington National Monument",
     6,
     "name"
-   ],
-   [
-    "sgvae491707",
-    "Booker T. Washington National Monument",
-    0,
-    "name"
    ]
   ],
   "pin": "inside",
@@ -568,25 +551,22 @@ Source file: `data/truth/US-VA.json`
   "why": "total-looking"
  },
  "ours": {
-  "acres": 11573,
+  "acres": 5286,
+  "dissolved": {
+   "after": 5286,
+   "before": 11573,
+   "copies": 7,
+   "parts": 0,
+   "records": 12,
+   "tracts": 5
+  },
   "manager": "",
+  "note": "12 joined records = 5 tracts: 7 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 11573 -> 5286 acres",
   "pieces": [
    [
     "sgvad165",
     "York River State Park",
     2509,
-    "name"
-   ],
-   [
-    "sgvae486622",
-    "York River State Park",
-    2509,
-    "name"
-   ],
-   [
-    270693,
-    "York River State Park",
-    2501,
     "name"
    ],
    [
@@ -602,21 +582,15 @@ Source file: `data/truth/US-VA.json`
     "name"
    ],
    [
-    "sgvae486976",
+    54690,
     "York River State Park",
-    401,
+    45,
     "name"
    ],
    [
-    54691,
+    270692,
     "York River State Park",
-    393,
-    "name"
-   ],
-   [
-    271085,
-    "York River State Park",
-    393,
+    45,
     "name"
    ]
   ],
@@ -625,7 +599,7 @@ Source file: `data/truth/US-VA.json`
   "unknown_pieces": 0
  },
  "owner_now": null,
- "pct": 2104,
+ "pct": 907,
  "same_agency": false,
  "score": 6,
  "t": "State Park",
