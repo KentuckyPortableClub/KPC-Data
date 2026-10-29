@@ -183,22 +183,22 @@
   "US-SC": {
    "checked": 167,
    "counts": {
-    "agree": 6,
-    "handover_hints": 5,
+    "agree": 16,
+    "handover_hints": 4,
     "no_page": 3,
-    "no_size": 105,
-    "off": 28,
+    "no_size": 126,
+    "off": 7,
     "ours_unknown": 2,
     "parks": 167,
     "retired": 0,
-    "unsure": 15,
-    "weak": 8,
+    "unsure": 5,
+    "weak": 4,
     "with_outline": 159
    },
    "left": 0,
    "parks": 167,
    "status": "done",
-   "updated": "2026-10-28"
+   "updated": "2026-10-29"
   },
   "US-TN": {
    "checked": 277,
@@ -281,30 +281,30 @@
  },
  "last": {
   "areas": [
-   "US-NC"
+   "US-SC"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "browser": 1,
+   "browser": 64,
    "errors": 0,
-   "requests": 412,
-   "rested": 22,
-   "robots": 0,
-   "strikes": 0
+   "requests": 325,
+   "rested": 5,
+   "robots": 1,
+   "strikes": 1
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 18,
-   "no_size": 147,
-   "ours_unknown": 0,
-   "pages_read": 303,
-   "parks": 253,
+   "handover_hints": 4,
+   "no_size": 129,
+   "ours_unknown": 2,
+   "pages_read": 248,
+   "parks": 167,
    "retired": 0,
-   "size_agree": 38,
-   "size_off": 10,
-   "size_unsure": 24,
+   "size_agree": 16,
+   "size_off": 7,
+   "size_unsure": 5,
    "skipped_fresh": 0,
-   "with_outline": 219
+   "with_outline": 159
   },
   "when": "2026-10-29"
  },
@@ -382,9 +382,9 @@
  },
  "proven": "2026-10-29",
  "test": {
-  "area": "US-NC",
-  "result": "FAIL",
+  "area": "US-SC",
+  "result": "PASS",
   "when": "2026-10-29",
-  "why": "US-NC: known sentence wrong (total 15251): Kentucky Ridge State Forest consists of 15,251 acr · known sentence wrong (total 1029): Big Oak Tree State Park covers 1,029 acres along B"
+  "why": "US-SC: 7 off rows, no shared numbers / agency pages / part sentences / one-state cross-state compares"
  }
 }
