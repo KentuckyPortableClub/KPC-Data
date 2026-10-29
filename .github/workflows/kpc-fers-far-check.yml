@@ -23,6 +23,8 @@ jobs:
         run: |
           python3 .github/scripts/kpc_fers_far_hold.py kpcdata/data/fers kpcdata/data/parkinfo || true
           python3 .github/scripts/kpc_fers_far_check.py kpcdata/data/fers . || true
+          cp .claude/build/research/layered.json kpcdata/data/fers/layered.json 2>/dev/null || true
+          NET=1 MINUTES=40 python3 .github/scripts/kpc_fers_layered.py kpcdata/data/fers kpcdata/data/parkinfo || true
       - name: Save
         continue-on-error: true
         run: bash .github/scripts/kpc_push_data.sh kpcdata '2-fer far-spot hold + parcel check (official records asked)' data/fers || true

@@ -101,6 +101,17 @@ jobs:
           repository: KentuckyPortableClub/KPC-Links
           path: links
           persist-credentials: false
+      - name: Far-spot hold + parcel check + layered-land list (chat 2, Oct 29; Brandon 8:07 AM + chat 8)
+        # a live row 100+ km from a state-level park's pin is held, then the official map decides (the park's own record holds
+        # the spot = released); every federal x state pair is appended to data/fers/layered.json with PAD-US owner at the patch
+        continue-on-error: true
+        run: |
+          python3 links/.github/scripts/kpc_fers_far_hold.py data/fers data/parkinfo || true
+          python3 links/.github/scripts/kpc_fers_far_check.py data/fers links || true
+          NET=1 MINUTES=20 python3 links/.github/scripts/kpc_fers_layered.py data/fers data/parkinfo || true
+          git config user.name kpc-bot; git config user.email bot@kpc.local
+          git add data/fers && git commit -qm "2-fer: far-spot check + layered-land list" || true
+          git pull -q --rebase || true; git push -q || true
       - name: The one big 'needs a human look' list from every area's file
         continue-on-error: true
         run: |
