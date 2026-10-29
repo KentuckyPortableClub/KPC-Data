@@ -372,14 +372,14 @@ def agol_search(c, cc, leads, known, govwords, done, log):
         q = f'("{kw}") AND ({names}) AND (type:"Feature Service" OR type:"Map Service")'
         try: j = get('https://www.arcgis.com/sharing/rest/search', {'q': q, 'num': 50, 'sortField': 'numviews', 'sortOrder': 'desc'})
         except Exception as e: STAT['errors'] += 1; log.append({'agol': kw, 'error': str(e)[:60]}); continue  # noqa: BLE001
-        hits = new = 0
+        hits = new = 0; rejected = {}
         for it in j.get('results') or []:
             hits += 1
             u = (it.get('url') or '').split('?')[0]
             oid = it.get('orgId') or ''
             if not re.search(r'/(Feature|Map)Server', u, re.I) or u in done: continue
             org = org_name(oid) if oid else ''
-            if not official(org, u, cc, govwords): STAT['not_official'] += 1; continue
+            if not official(org, u, cc, govwords): STAT['not_official'] += 1; rejected[org or oid or '?'] = rejected.get(org or oid or '?', 0) + 1; continue
             if SKIP.search(it.get('title') or ''): STAT['skipped'] += 1; continue
             if late(): break
             try:
@@ -388,7 +388,7 @@ def agol_search(c, cc, leads, known, govwords, done, log):
                 new += 1
             except Exception: STAT['errors'] += 1  # noqa: BLE001
             done.add(u)
-        log.append({'agol': kw, 'hits': hits, 'read': new})
+        log.append({'agol': kw, 'hits': hits, 'read': new, 'rejected_orgs': sorted(rejected.items(), key=lambda kv: -kv[1])[:3]})   # chat 8: who was turned away, so it can be graded
 
 
 def catalog(kind, base, c, cc, leads, known, govwords, done, log):
@@ -501,7 +501,9 @@ def run_country(cc, c, cfg, state, known):
     if len(st['steps']) == len(steps):
         seeded = len(c.get('servers') or []) + len(c.get('ogc') or []) + len(c.get('agol_orgs') or []) + len(c.get('known_good') or [])
         own = [k for k in leads if not str(k).startswith('eea-cdda:')]
+        errs = [l for l in (st.get('log') or []) if l.get('error') and (l.get('catalog') or l.get('agol'))]
         st['status'] = 'done' if (seeded or own) else ('nothing seeded: not searched (EEA lead only)' if leads else 'nothing seeded: not searched')   # Oct 29 (Fable b): never 'done, 0 leads'
+        if not own and errs: st['status'] += f' · {len(errs)} catalog / search errors (see failures)'
         st['finished'] = RUN
     else: st['status'] = 'paused (out of time, will carry on)'
     save_country(cc, c, leads, st)
@@ -515,6 +517,8 @@ def save_country(cc, c, leads, st):
     bands = {b: sum(1 for v in leads.values() if v.get('band') == b) for b in 'ABC'}
     save(OUT / f'leads-{cc}.json', {'about': f"World harvester leads for {c['name']} (official park GIS only; leads for chat 8, never added to the key by the bot).",
                                     'cc': cc, 'date': RUN, 'status': st['status'], 'steps_done': st['steps'], 'bands': bands,
+                                    'failures': [l for l in (st.get('log') or []) if l.get('error')][-20:],   # chat 8: catalog / search errors are FAILURES, never '0 hits'
+                                    'rejected_orgs': [l['rejected_orgs'] for l in (st.get('log') or []) if l.get('rejected_orgs')][-6:],
                                     'known_good_found': kg_found, 'known_good_missed': kg_missed, 'known_log': [l for l in (st.get('log') or []) if l.get('step') == 'known'][-30:],
                                     'leads': dict(sorted(leads.items(), key=lambda kv: (-kv[1].get('grade', 0), kv[1].get('title', ''))))})
 
