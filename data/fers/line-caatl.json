@@ -8,9 +8,12 @@
   "CA-NL"
  ],
  "since": "2026-10-29",
- "date": "2026-10-29 06:27 UTC",
- "verdict": "READY FOR CHAT 8",
- "why": [],
+ "date": "2026-10-29 10:13 UTC",
+ "verdict": "PART READY FOR CHAT 8",
+ "why": [
+  "CA-NB: 17 live 'same land' rows with pins over 30 km apart (a wrong join in the key): CA-1238+CA-4521@same land@47.734,-67.338 CA-1246+CA-4479@same land@45.978,-65.887 CA-4351+CA-4457@same land@47.371,-66.335 CA-4361+CA-6510@same land@46.182,-65.211",
+  "CA-NS: 144 live 'same land' rows with pins over 30 km apart (a wrong join in the key): CA-0008+CA-1841@same land@45.884,-61.089 CA-0013+CA-0922@same land@44.530,-66.041 CA-0013+CA-1866@same land@44.287,-65.592 CA-0013+CA-5441@same land@46.739,-60.573"
+ ],
  "known_answers": "19/19 on 2026-10-29",
  "missing_check": {
   "FOUND": 0,
@@ -181,10 +184,11 @@
   "merged": 3
  },
  "states_ready": [
-  "CA-NB",
-  "CA-NS",
   "CA-PE",
   "CA-NL"
  ],
- "states_held": []
+ "states_held": [
+  "CA-NB",
+  "CA-NS"
+ ]
 }

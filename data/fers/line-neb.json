@@ -7,9 +7,11 @@
   "US-RI"
  ],
  "since": "2026-10-29",
- "date": "2026-10-29 05:49 UTC",
- "verdict": "READY FOR CHAT 8",
- "why": [],
+ "date": "2026-10-29 10:13 UTC",
+ "verdict": "PART READY FOR CHAT 8",
+ "why": [
+  "US-NY: 7 live 'same land' rows with pins over 30 km apart (a wrong join in the key): US-10284+US-5398@same land@42.509,-78.261 US-12778+US-5342@same land@42.011,-76.096 US-2128+US-4374@same land@44.988,-74.856 US-5060+US-9141@same land@43.495,-75.234"
+ ],
  "known_answers": "19/19 on 2026-10-29",
  "missing_check": {
   "FOUND": 68,
@@ -74,9 +76,10 @@
   "merged": 2
  },
  "states_ready": [
-  "US-NY",
   "US-CT",
   "US-RI"
  ],
- "states_held": []
+ "states_held": [
+  "US-NY"
+ ]
 }

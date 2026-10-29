@@ -13,9 +13,11 @@
   "US-MS"
  ],
  "since": "2026-10-28",
- "date": "2026-10-29 05:57 UTC",
- "verdict": "READY FOR CHAT 8",
- "why": [],
+ "date": "2026-10-29 10:13 UTC",
+ "verdict": "PART READY FOR CHAT 8",
+ "why": [
+  "US-NC: 1 live 'same land' rows with pins over 30 km apart (a wrong join in the key): US-6893+US-6894@same land@36.311,-76.687"
+ ],
  "known_answers": "19/19 on 2026-10-29",
  "missing_check": {
   "FOUND": 533,
@@ -47,7 +49,7 @@
  },
  "files": {
   "US-TN": "data/fers/US-TN.json",
-  "US-NC": "data/fers/US-NC.json",
+  "US-NC": "data/fers/US-NC.json.gz",
   "US-VA": "data/fers/US-VA.json",
   "US-WV": "data/fers/US-WV.json",
   "US-GA": "data/fers/US-GA.json",
@@ -167,7 +169,6 @@
  },
  "states_ready": [
   "US-TN",
-  "US-NC",
   "US-VA",
   "US-WV",
   "US-GA",
@@ -176,5 +177,7 @@
   "US-FL",
   "US-MS"
  ],
- "states_held": []
+ "states_held": [
+  "US-NC"
+ ]
 }

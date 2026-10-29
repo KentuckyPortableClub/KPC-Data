@@ -6,10 +6,12 @@
   "CA-BC"
  ],
  "since": "2026-10-29",
- "date": "2026-10-29 06:24 UTC",
- "verdict": "PART READY FOR CHAT 8",
+ "date": "2026-10-29 10:13 UTC",
+ "verdict": "STOPPED",
  "why": [
-  "water not checked: CA-BC: 9 rows (the USGS water map / files had no answer there): never READY with one"
+  "CA-AB: 1 live 'same land' rows with pins over 30 km apart (a wrong join in the key): CA-1182+CA-3063@same land@55.505,-115.594",
+  "water not checked: CA-BC: 9 rows (the USGS water map / files had no answer there): never READY with one",
+  "CA-BC: 4 live 'same land' rows with pins over 30 km apart (a wrong join in the key): CA-0733+CA-3913@same land@58.128,-124.419 CA-3192+CA-3194@same land@55.057,-126.512 CA-3735+CA-3736@same land@59.472,-125.905 CA-3873+CA-3874@same land@59.188,-133.282"
  ],
  "known_answers": "19/19 on 2026-10-29",
  "missing_check": {
@@ -41,7 +43,7 @@
   }
  },
  "files": {
-  "CA-AB": "data/fers/CA-AB.json",
+  "CA-AB": "data/fers/CA-AB.json.gz",
   "CA-BC": "data/fers/CA-BC.json"
  },
  "CA-AB": {
@@ -73,10 +75,9 @@
  "water_weak": {
   "CA-BC": 9
  },
- "states_ready": [
-  "CA-AB"
- ],
+ "states_ready": [],
  "states_held": [
+  "CA-AB",
   "CA-BC"
  ]
 }

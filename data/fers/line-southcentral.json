@@ -10,9 +10,11 @@
   "US-NE"
  ],
  "since": "2026-10-28",
- "date": "2026-10-29 07:18 UTC",
- "verdict": "READY FOR CHAT 8",
- "why": [],
+ "date": "2026-10-29 10:13 UTC",
+ "verdict": "PART READY FOR CHAT 8",
+ "why": [
+  "US-NE: 1 live 'same land' rows with pins over 30 km apart (a wrong join in the key): US-2621+US-4015@same land@40.992,-96.206"
+ ],
  "known_answers": "19/19 on 2026-10-29",
  "missing_check": {
   "FOUND": 120,
@@ -131,8 +133,9 @@
   "US-LA",
   "US-OK",
   "US-TX",
-  "US-KS",
-  "US-NE"
+  "US-KS"
  ],
- "states_held": []
+ "states_held": [
+  "US-NE"
+ ]
 }

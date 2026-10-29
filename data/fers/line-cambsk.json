@@ -6,9 +6,11 @@
   "CA-SK"
  ],
  "since": "2026-10-29",
- "date": "2026-10-29 06:20 UTC",
- "verdict": "READY FOR CHAT 8",
- "why": [],
+ "date": "2026-10-29 10:13 UTC",
+ "verdict": "PART READY FOR CHAT 8",
+ "why": [
+  "CA-MB: 8 live 'same land' rows with pins over 30 km apart (a wrong join in the key): CA-0538+CA-0596@same land@51.693,-101.687 CA-2371+CA-2480@same land@49.223,-98.685 CA-2417+CA-2453@same land@50.739,-97.828 CA-2427+CA-2428@same land@57.129,-90.427"
+ ],
  "known_answers": "19/19 on 2026-10-29",
  "missing_check": {
   "FOUND": 0,
@@ -67,8 +69,9 @@
   "merged": 8
  },
  "states_ready": [
-  "CA-MB",
   "CA-SK"
  ],
- "states_held": []
+ "states_held": [
+  "CA-MB"
+ ]
 }
