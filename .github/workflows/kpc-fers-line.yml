@@ -170,6 +170,8 @@ jobs:
           gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'CA-ALL.json.gz' -D cache/ca --clobber || true
           gh release download fers-bundles -R "$REPO" -p "$BUNDLE" -D . --clobber || { echo "::error title=2-fer line::no bundle $BUNDLE on $REPO: run stage all"; exit 1; }
           tar xzf "$BUNDLE" || { echo "::error title=2-fer line::bundle would not unpack"; exit 1; }
+          # Oct 28 10:44 PM (Brandon: 'have your tiles 3 runs ahead'): tiles fetched ahead (kpc-fers-water.yml) join the bundle's own (new ones only)
+          mkdir -p wahead && gh release download fers-bundles -R "$REPO" -p "$WATER_ASSET" -D wahead --clobber 2>/dev/null && tar xzf "wahead/$WATER_ASSET" -C wahead 2>/dev/null && cp -n wahead/bundle/water/* bundle/water/ 2>/dev/null; echo "saved water tiles: $(ls bundle/water 2>/dev/null | wc -l)"; rm -rf wahead
           python3 - <<'PY' || exit 1
           import json, os, sys
           s = json.load(open('bundle/stamp.json')); print('bundle stamp:', s)

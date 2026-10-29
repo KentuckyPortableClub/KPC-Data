@@ -1,0 +1,78 @@
+name: KPC 2-fer water tiles ahead (hidden)
+# Oct 28 10:44 PM (Brandon: 'stay ahead of yourself, have your tiles for 3 runs ahead of you'): fills the saved USGS water tiles
+# (water-<tag>.tar.gz on release fers-bundles) for areas still WAITING in the queue, from USGS's NHDPlus HR download files
+# (kpc_water_bulk.py: tiles under the area's last rows), so a line never waits on water. Started by kpc-fers-lines.yml for the
+# next 3 queued areas; by hand: areas = "STATES|tag; ..." or region names (same as the lines). Never fails.
+on:
+  workflow_dispatch:
+    inputs:
+      areas:
+        description: 'Areas, e.g. "US-CO US-WY|mountain; pacific"'
+        default: ''
+permissions:
+  contents: read
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      lines: ${{ steps.p.outputs.lines }}
+    steps:
+      - id: p
+        env:
+          AREAS: ${{ inputs.areas }}
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, os, re
+          R = {'southeast': 'US-TN US-NC US-VA US-WV US-GA US-AL US-SC US-FL US-MS', 'midwest': 'US-IN US-IL US-MO US-WI US-MN US-IA US-ND US-SD',
+               'northeast': 'US-PA US-NY US-NJ US-CT US-RI US-MA US-VT US-NH US-ME US-MD US-DE US-DC', 'southcentral': 'US-AR US-LA US-OK US-TX US-KS US-NE',
+               'mountain': 'US-CO US-WY US-ID US-MT US-NV US-AZ US-NM', 'pacific': 'US-CA US-OR US-WA US-AK US-HI'}
+          out = []
+          for e in [x.strip() for x in os.environ['AREAS'].split(';') if x.strip()]:
+              e = e.split('@')[0].strip()
+              if '|' in e: st, tag = [x.strip() for x in e.split('|', 1)]
+              elif e.lower() in R: st, tag = R[e.lower()], e.lower()
+              else: continue
+              st = ' '.join(x for x in st.upper().split() if x.startswith('US-'))   # USGS water covers the US only
+              if st: out.append({'states': st, 'tag': re.sub(r'[^a-z0-9-]', '', tag.lower())})
+          print('lines=' + json.dumps(out or [{'states': '', 'tag': 'none'}]))
+          print('::notice title=2-fer water ahead::' + ('; '.join(f"{o['states']} ({o['tag']})" for o in out) or 'nothing to fetch'))
+          PY
+  water:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    concurrency:
+      group: kpc-fers-water-${{ matrix.a.tag }}
+      cancel-in-progress: false
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix:
+        a: ${{ fromJSON(needs.plan.outputs.lines) }}
+    env:
+      GH_TOKEN: ${{ github.token }}
+      REPO: ${{ github.repository }}
+      STATES: ${{ matrix.a.states }}
+      WATER_ASSET: water-${{ matrix.a.tag }}.tar.gz
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+      - name: Fill the tiles ahead
+        continue-on-error: true
+        run: |
+          [ -z "$STATES" ] && { echo "nothing to fetch"; exit 0; }
+          mkdir -p bundle/water
+          gh release download fers-bundles -R "$REPO" -p "$WATER_ASSET" -D . --clobber 2>/dev/null && tar xzf "$WATER_ASSET" bundle/water 2>/dev/null || true
+          N0=$(ls bundle/water | wc -l)
+          STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 links/.github/scripts/kpc_water_bulk.py || true
+          REPORT=1 STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 links/.github/scripts/kpc_water_bulk.py || true
+          N1=$(ls bundle/water | wc -l)
+          if [ "$N1" -gt "$N0" ]; then
+            tar czf "$WATER_ASSET" bundle/water
+            bash .github/scripts/kpc_keep2.sh "$REPO" fers-bundles "$WATER_ASSET" || true
+            gh release upload fers-bundles "$WATER_ASSET" --clobber -R "$REPO" && echo "::notice title=2-fer water ahead::${{ matrix.a.tag }}: $N0 -> $N1 tiles ($(du -h "$WATER_ASSET" | cut -f1))" || echo "::notice title=2-fer water ahead::${{ matrix.a.tag }}: upload failed"
+          else echo "::notice title=2-fer water ahead::${{ matrix.a.tag }}: nothing new ($N1 tiles)"; fi

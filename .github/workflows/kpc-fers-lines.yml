@@ -56,6 +56,19 @@ jobs:
           print('lines=' + json.dumps(out)); print(f'n={n}')
           print(f'::notice title=2-fer lines::{len(out)} line(s), {n} at a time: ' + '; '.join(f"{o['states']} ({o['tag']}, {o['stage']})" for o in out))
           PY
+  ahead:
+    # Oct 28 10:44 PM (Brandon: 'have your tiles for 3 runs ahead'): the 3 areas waiting behind the first lines get their USGS water
+    # tiles filled now (kpc-fers-water.yml), so their lines never wait on water
+    needs: plan
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      LINES: ${{ needs.plan.outputs.lines }}
+      N: ${{ needs.plan.outputs.n }}
+    steps:
+      - run: |
+          A=$(python3 -c "import json,os; L=json.loads(os.environ['LINES']); n=int(os.environ['N']); print('; '.join(f\"{l['states']}|{l['tag']}\" for l in L[n:n + 3] if any(s.startswith('US-') for s in l['states'].split())))")
+          if [ -n "$A" ]; then gh workflow run kpc-fers-water.yml -R "${{ github.repository }}" -f "areas=$A" && echo "::notice title=2-fer lines::water tiles ahead for: $A"; else echo "nothing waiting"; fi
   line:
     needs: plan
     strategy:
