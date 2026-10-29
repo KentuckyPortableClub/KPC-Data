@@ -552,8 +552,12 @@ def split_sentences(ln):
     parts = re.split(r'(?<=[.!?;])\s+(?=[A-Z"\'(¿¡À-Ü]|[a-z]{0,2}[A-Z])', ln)
     out = []
     for p in parts:
+        subj = ''
         for q in re.split(r'\s*;\s+', p):
             q = q.strip()
+            m = re.match(r"^(the\s+[\w'-]+(?:\s+[\w'-]+){0,4}?\s+(?:tract|unit|portion|area|section|part|field|pond|lake|trail|road))\b", q, re.I)
+            if m: subj = m.group(1)
+            elif subj and re.match(r'^(it|they)\s', q, re.I): q = re.sub(r'^(it|they)\b', subj[0].upper() + subj[1:], q, count=1, flags=re.I)   # Oct 29 (Old Trace Creek): 'The easternmost tract …; it is closed' keeps its subject
             if len(q) > 8: out.append(q)
     return out
 
