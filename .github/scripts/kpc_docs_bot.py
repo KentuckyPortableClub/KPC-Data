@@ -822,7 +822,9 @@ def shared_pass(D, lists_area):
         if r.get('status') == 'ok' and ru[r.get('url')] >= 20 and r.get('url') not in agency_rules:
             p['rules'] = {'url': '', 'status': f"not found (a page shared by {ru[r.get('url')]} parks was dropped: {r.get('url')[:90]})", 'how': r.get('how', '')}; n_r += 1
         m = p.get('map') or {}
-        if m.get('status') == 'ok' and mp[m.get('url')] >= 20 and m.get('kind') != 'region overview':
+        # Oct 29 (chat 11, docs v7 South 83%): ONE map file on 5+ parks (the Indiana Museum map on 10 historic sites, the FWS rivers
+        # map on 5 wild and scenic rivers) is the AGENCY's map, not each park's: dropped too, unless it is a real multi-park NPS page
+        if m.get('status') == 'ok' and m.get('kind') != 'region overview' and (mp[m.get('url')] >= 20 or (mp[m.get('url')] >= 5 and 'nps.gov' not in (m.get('url') or ''))):
             p['map'] = {'url': '', 'status': f"no map (one file shared by {mp[m.get('url')]} parks was dropped: {m.get('url')[:90]})", 'how': m.get('how', '')}; n_m += 1
         elif m.get('status') == 'ok' and FORESTLVL.search(m.get('url') or ''):
             m['kind_note'] = (m.get('kind_note', '') + '; ' if m.get('kind_note') else '') + 'forest map only'; n_f += 1
