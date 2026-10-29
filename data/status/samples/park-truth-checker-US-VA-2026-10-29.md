@@ -312,20 +312,10 @@ Source file: `data/truth/US-VA.json`
 ## US-9899 Fort Hunt National Historical Site
 ```json
 {
- "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 2 acres, no total words near it)",
  "checked": "2026-10-29",
  "handover": [],
  "n": "Fort Hunt National Historical Site",
- "official": {
-  "acres": 2.0,
-  "as": "2 acres",
-  "clean": false,
-  "line": "ane at Site 17, wooded areas between C&O Canal and Lock 10 parking lot, north to Lock 14, and delineated work Area 2 from Rock Run culvert to Potomac River required to address the ongoing safety concerns from DC Water emergency",
-  "read": "2026-10-29",
-  "sent": "Record of Determination for Temporary Closure of the Clara Barton Parkway Right Lane at Site 17, wooded areas between C&O Canal and Lock 10 parking lot, north to Lock 14, and delineated work Area 2 from Rock Run culvert to Potomac River required to address the ongoing safety concerns from DC Water e",
-  "url": "https://www.nps.gov/gwmp/learn/management/lawsandpolicies.htm",
-  "why": "no total words near it"
- },
+ "official": null,
  "ours": {
   "acres": 19,
   "manager": "",
@@ -342,11 +332,10 @@ Source file: `data/truth/US-VA.json`
   "unknown_pieces": 0
  },
  "owner_now": null,
- "pct": 850,
- "same_agency": false,
+ "pct": null,
  "score": 4,
  "t": "National Historical Site",
- "verdict": "unsure"
+ "verdict": "no size on page"
 }
 ```
 
