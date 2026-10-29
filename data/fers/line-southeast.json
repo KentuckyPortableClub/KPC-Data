@@ -13,21 +13,21 @@
   "US-MS"
  ],
  "since": "2026-10-28",
- "date": "2026-10-29 00:16 UTC",
+ "date": "2026-10-29 01:02 UTC",
  "verdict": "STOPPED",
  "why": [
   "water service: US-TN: 36 rows not checked because the USGS water map did not answer (run the worker again)",
-  "water service: US-NC: 67 rows not checked because the USGS water map did not answer (run the worker again)",
+  "water service: US-NC: 66 rows not checked because the USGS water map did not answer (run the worker again)",
   "water service: US-VA: 20 rows not checked because the USGS water map did not answer (run the worker again)",
-  "water service: US-GA: 27 rows not checked because the USGS water map did not answer (run the worker again)",
+  "water service: US-GA: 19 rows not checked because the USGS water map did not answer (run the worker again)",
   "water service: US-AL: 6 rows not checked because the USGS water map did not answer (run the worker again)",
-  "water service: US-SC: 6 rows not checked because the USGS water map did not answer (run the worker again)",
+  "water service: US-SC: 2 rows not checked because the USGS water map did not answer (run the worker again)",
   "US-MS: 24 rows still waiting for a pass (out of time: run the worker again)"
  ],
- "known_answers": "18/18 on 2026-10-28",
+ "known_answers": "18/18 on 2026-10-29",
  "missing_check": {
-  "FOUND": 444,
-  "DROPPED": 1626,
+  "FOUND": 450,
+  "DROPPED": 1620,
   "NEVER LOOKED AT": 14393
  },
  "report": {
@@ -47,10 +47,10 @@
    "pairs tested": 0
   },
   "pass5": {
-   "checked": 455,
+   "checked": 439,
    "date": "2026-10-29",
    "pairs tested": 0,
-   "still not checked": 149
+   "still not checked": 136
   }
  },
  "US-TN": {
@@ -70,13 +70,13 @@
  },
  "US-NC": {
   "rows": 901,
-  "live": 48,
+  "live": 49,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "the ownership map shows more than one owner across the spot": 1,
    "the outlines overlap, but the PAD-US Park Service fee record": 2,
-   "water not checked": 67,
+   "water not checked": 66,
    "the outlines overlap, but the Forest Service ownership map": 1
   },
   "dropped": 593,
@@ -108,14 +108,14 @@
  },
  "US-GA": {
   "rows": 289,
-  "live": 33,
+  "live": 39,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "water not checked": 27
+   "water not checked": 19
   },
   "dropped": 166,
-  "merged": 63
+  "merged": 65
  },
  "US-AL": {
   "rows": 77,
@@ -130,11 +130,11 @@
  },
  "US-SC": {
   "rows": 234,
-  "live": 24,
+  "live": 28,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "water not checked": 6,
+   "water not checked": 2,
    "the ownership map shows more than one owner across the spot": 1,
    "no public owner on the ownership map": 2
   },

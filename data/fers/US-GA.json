@@ -17440,7 +17440,8 @@
    "map_dates": {
     "US-12418": "downloaded 2026-10-28",
     "US-2202": "downloaded 2026-10-28",
-    "US-4473": "downloaded 2026-10-28"
+    "US-4473": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-12418": "Tallulah Gorge Wildlife Management Area",
@@ -17449,6 +17450,13 @@
    },
    "notes": [
     "check the agency's closures and seasons before you go"
+   ],
+   "pairs_around": [
+    "US-12418+US-2202"
+   ],
+   "pairs_here": [
+    "US-12418+US-4473",
+    "US-2202+US-4473"
    ],
    "passes": [
     1,
@@ -17500,7 +17508,7 @@
      34.743645
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 105
   },
@@ -27514,12 +27522,16 @@
    "lines_read": "2026-10-29",
    "map_dates": {
     "US-12418": "downloaded 2026-10-28",
-    "US-2202": "downloaded 2026-10-28"
+    "US-2202": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-12418": "Tallulah Gorge Wildlife Management Area",
     "US-2202": "Tallulah Gorge State Park"
    },
+   "nfer_here": [
+    "US-12418+US-2202+US-4473@area@34.744,-83.357"
+   ],
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
@@ -28394,7 +28406,7 @@
      34.746312
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 1717
   },
@@ -29177,7 +29189,8 @@
    "lines_read": "2026-10-29",
    "map_dates": {
     "US-12418": "downloaded 2026-10-28",
-    "US-4473": "downloaded 2026-10-28"
+    "US-4473": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-12418": "Tallulah Gorge Wildlife Management Area",
@@ -29234,7 +29247,7 @@
      34.743644
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "merged into one row: US-12418+US-2202+US-4473@area@34.744,-83.357 (the same patch as the 3-fer)",
    "water_checked": "2026-10-29",
    "wide_m": 105
   },
@@ -32208,7 +32221,8 @@
    "lines_read": "2026-10-29",
    "map_dates": {
     "US-2171": "downloaded 2026-10-28",
-    "US-7448": "downloaded 2026-10-28"
+    "US-7448": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-2171": "Don Carter State Park",
@@ -32516,7 +32530,7 @@
      34.401308
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 133
   },
@@ -72776,7 +72790,8 @@
    "lines_read": "2026-10-29",
    "map_dates": {
     "US-2196": "downloaded 2026-10-28",
-    "US-3747": "downloaded 2026-10-28"
+    "US-3747": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-2196": "Richard B. Russell State Park",
@@ -73353,7 +73368,7 @@
      34.070236
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 884
   },
@@ -462273,7 +462288,8 @@
    "lines_read": "2026-10-29",
    "map_dates": {
     "US-2202": "downloaded 2026-10-28",
-    "US-4473": "downloaded 2026-10-28"
+    "US-4473": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-2202": "Tallulah Gorge State Park",
@@ -462330,7 +462346,7 @@
      34.743645
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "merged into one row: US-12418+US-2202+US-4473@area@34.744,-83.357 (the same patch as the 3-fer)",
    "water_checked": "2026-10-29",
    "wide_m": 105
   },
@@ -477210,7 +477226,8 @@
    "lines_read": "2026-10-29",
    "map_dates": {
     "US-3758": "downloaded 2026-10-28",
-    "US-4473": "downloaded 2026-10-28"
+    "US-4473": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-3758": "John's Mountain Wildlife Management Area",
@@ -705380,7 +705397,8 @@
    "lines_read": "2026-10-29",
    "map_dates": {
     "US-4473": "downloaded 2026-10-28",
-    "US-7455": "downloaded 2026-10-28"
+    "US-7455": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-4473": "Chattahoochee-Oconee National Forest",
@@ -706060,7 +706078,7 @@
      34.535797
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 5760
   },
@@ -710692,7 +710710,8 @@
    "lines_read": "2026-10-29",
    "map_dates": {
     "US-4653": "downloaded 2026-10-28",
-    "US-7895": "downloaded 2026-10-28"
+    "US-7895": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-4653": "Paulding Forest Wildlife Management Area",
@@ -710989,7 +711008,7 @@
      34.043896
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 595
   },

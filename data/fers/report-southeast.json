@@ -70,7 +70,7 @@
  },
  "pass5": {
   "cell_m": 5.0,
-  "checked": 455,
+  "checked": 439,
   "date": "2026-10-29",
   "left out": {
    "Kentucky (own list)": "all (ky-overlaps.geojson)",
@@ -84,15 +84,15 @@
   "pass": 5,
   "problems": [
    "W&S river corridors joined as area parks: 15",
-   "NHD water (one try): HTTP Error 502: Bad Gateway",
+   "NHD water (one try): The read operation timed out",
    "NHD water (one try): The read operation timed out",
    "NHD water (one try): The read operation timed out"
   ],
-  "re-checked at the end": 149,
+  "re-checked at the end": 136,
   "spots given their boundary lines": 934,
-  "still not checked": 149,
+  "still not checked": 136,
   "trail stretches given their true zone": 312,
-  "water only": 5,
+  "water only": 0,
   "water retries (won / tries)": "0 / 0",
   "with official lines": 39
  },
@@ -122,11 +122,11 @@
    "water only": 2
   },
   "US-GA": {
-   "candidates": 32,
+   "candidates": 38,
    "candidates (saved outline only)": 0,
    "lines": 29,
    "n-fers": 20,
-   "not sure": 27,
+   "not sure": 19,
    "pass1": 289,
    "pass2": 230,
    "spots": 289,
@@ -146,11 +146,11 @@
    "water only": 0
   },
   "US-NC": {
-   "candidates": 36,
+   "candidates": 37,
    "candidates (saved outline only)": 0,
    "lines": 19,
    "n-fers": 148,
-   "not sure": 71,
+   "not sure": 70,
    "pass1": 901,
    "pass2": 768,
    "spots": 901,
@@ -158,11 +158,11 @@
    "water only": 0
   },
   "US-SC": {
-   "candidates": 19,
+   "candidates": 23,
    "candidates (saved outline only)": 0,
    "lines": 69,
    "n-fers": 4,
-   "not sure": 9,
+   "not sure": 5,
    "pass1": 234,
    "pass2": 176,
    "spots": 234,
