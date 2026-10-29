@@ -12,29 +12,6 @@
      "area": "ky",
      "state": "US-KY",
      "refs": [
-      "US-0050",
-      "US-10105"
-     ],
-     "names": {
-      "US-0050": "Mammoth Cave National Park",
-      "US-10105": "The Green National Wild and Scenic River"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "6852.4 ac",
-     "sort": 6852.4,
-     "reason": "the outlines overlap, but the the Park Service's own land tracts (Land Resources Division; PAD-US fee records when it does not answer) does not show this patch as the agency's land (that map may be out of date): check the official map; PAD-US cross-check",
-     "id": "US-0050+US-10105@area@37.171,-86.155",
-     "sources": {
-      "US-0050": "read live from the agency 2026-10-29",
-      "US-10105": "read live from the agency 2026-10-29 \u00b7 https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_Wild_RIvers_Corridors_WM_gdb/FeatureServer/0 (item efefe7342aa4460aaf8697e17deb4146, read 2026-10-29)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "ky",
-     "state": "US-KY",
-     "refs": [
       "US-12079",
       "US-4484"
      ],
@@ -66,7 +43,7 @@
      "kind": "pair",
      "size": "295 same-day activations",
      "sort": 295.0,
-     "reason": "not sure: the outlines overlap, but the the Park Service's own land tracts (Land Resources Division; PAD-US fee records when it does not answer) does not show this patch as the agency's land (that map",
+     "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
      "id": "US-0050+US-10105@pota",
      "sources": {
       "POTA history": "activated together by the same call on the same day (295x, POTA history) / old guide (Oct 13 Kentucky 2-fers guide)"
@@ -95,6 +72,28 @@
       "US-4572": "official line (trails bot)"
      },
      "checked": "2026-10-28"
+    },
+    {
+     "area": "ky",
+     "state": "US-KY",
+     "refs": [
+      "US-10103",
+      "US-4484"
+     ],
+     "names": {
+      "US-10103": "The Cumberland River Wilderness Area",
+      "US-4484": "Daniel Boone National Forest"
+     },
+     "what": "water only (boat spot): is there really no land?",
+     "kind": "area",
+     "size": "81.9 ac",
+     "sort": 81.9,
+     "reason": "water only: boat or kayak",
+     "id": "US-10103+US-4484@area@channel@36.758,-84.289",
+     "sources": {
+      "USGS water": "saved copy of the USGS map, read 2026-10-28"
+     },
+     "checked": "2026-10-29"
     },
     {
      "area": "ky",
@@ -172,6 +171,28 @@
      "id": "US-1287+US-4692@pota",
      "sources": {
       "POTA history": "activated together by the same call on the same day (60x, POTA history) / outlines about 0 m apart"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "ky",
+     "state": "US-KY",
+     "refs": [
+      "US-10106",
+      "US-4484"
+     ],
+     "names": {
+      "US-10106": "The Rockcastle National Wild and Scenic River",
+      "US-4484": "Daniel Boone National Forest"
+     },
+     "what": "water only (boat spot): is there really no land?",
+     "kind": "area",
+     "size": "55.8 ac",
+     "sort": 55.8,
+     "reason": "water only: boat or kayak",
+     "id": "US-10106+US-4484@area@channel@37.165,-84.294",
+     "sources": {
+      "USGS water": "saved copy of the USGS map, read 2026-10-28"
      },
      "checked": "2026-10-29"
     },
@@ -344,6 +365,28 @@
      "sources": {
       "US-10102": "official line (trails bot)",
       "US-10112": "read live from the agency 2026-10-29 \u00b7 https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_Wild_RIvers_Corridors_WM_gdb/FeatureServer/0 (item efefe7342aa4460aaf8697e17deb4146, read 2026-10-29)"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "ky",
+     "state": "US-KY",
+     "refs": [
+      "US-10160",
+      "US-4484"
+     ],
+     "names": {
+      "US-10160": "Rockcastle River Wildlife Management Area",
+      "US-4484": "Daniel Boone National Forest"
+     },
+     "what": "water only (boat spot): is there really no land?",
+     "kind": "area",
+     "size": "22.9 ac",
+     "sort": 22.9,
+     "reason": "water only: boat or kayak",
+     "id": "US-10160+US-4484@area@channel@37.099,-84.334",
+     "sources": {
+      "USGS water": "saved copy of the USGS map, read 2026-10-28"
      },
      "checked": "2026-10-29"
     },
@@ -1276,6 +1319,28 @@
      "id": "US-3804+US-3832@pota",
      "sources": {
       "POTA history": "activated together by the same call on the same day (5x, POTA history) / outlines about 0 m apart"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "ky",
+     "state": "US-KY",
+     "refs": [
+      "US-10168",
+      "US-4484"
+     ],
+     "names": {
+      "US-10168": "Sunny Brook Wildlife Management Area",
+      "US-4484": "Daniel Boone National Forest"
+     },
+     "what": "water only (boat spot): is there really no land?",
+     "kind": "area",
+     "size": "4.5 ac",
+     "sort": 4.5,
+     "reason": "water only: boat or kayak",
+     "id": "US-10168+US-4484@area@channel@38.224,-83.381",
+     "sources": {
+      "USGS water": "saved copy of the USGS map, read 2026-10-28"
      },
      "checked": "2026-10-29"
     },
@@ -29978,332 +30043,6 @@
    "rows": [
     {
      "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-4509",
-      "US-6927"
-     ],
-     "names": {
-      "US-4509": "Nantahala National Forest",
-      "US-6927": "Nantahala State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "349698.8 ac",
-     "sort": 349698.8,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-4509+US-6927@area@35.047,-83.482",
-     "sources": {
-      "US-4509": "downloaded 2026-10-28",
-      "US-6927": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-4510",
-      "US-6936"
-     ],
-     "names": {
-      "US-4510": "Pisgah National Forest",
-      "US-6936": "Pisgah State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "116436.7 ac",
-     "sort": 116436.7,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-4510+US-6936@area@35.303,-82.776",
-     "sources": {
-      "US-4510": "downloaded 2026-10-28",
-      "US-6936": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-4510",
-      "US-6937"
-     ],
-     "names": {
-      "US-4510": "Pisgah National Forest",
-      "US-6937": "Pisgah WRC State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "116436.7 ac",
-     "sort": 116436.7,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-4510+US-6937@area@35.303,-82.776",
-     "sources": {
-      "US-4510": "downloaded 2026-10-28",
-      "US-6937": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-GA",
-     "refs": [
-      "US-4473",
-      "US-7446"
-     ],
-     "names": {
-      "US-4473": "Chattahoochee-Oconee National Forest",
-      "US-7446": "Cohutta Wildlife Management Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "91165.5 ac",
-     "sort": 91165.5,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-4473+US-7446@area@34.885,-84.593",
-     "sources": {
-      "US-4473": "downloaded 2026-10-28",
-      "US-7446": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-AL",
-     "refs": [
-      "US-10396",
-      "US-4452"
-     ],
-     "names": {
-      "US-10396": "Black Warrior Wildlife Management Area",
-      "US-4452": "William B. Bankhead National Forest"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "91039.6 ac",
-     "sort": 91039.6,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-10396+US-4452@area@34.354,-87.434",
-     "sources": {
-      "US-10396": "downloaded 2026-10-28",
-      "US-4452": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-GA",
-     "refs": [
-      "US-4473",
-      "US-7137"
-     ],
-     "names": {
-      "US-4473": "Chattahoochee-Oconee National Forest",
-      "US-7137": "Cooper's Creek Wildlife Management Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "29518.1 ac",
-     "sort": 29518.1,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-4473+US-7137@area@34.771,-84.056",
-     "sources": {
-      "US-4473": "downloaded 2026-10-28",
-      "US-7137": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-AL",
-     "refs": [
-      "US-10396",
-      "US-3706"
-     ],
-     "names": {
-      "US-10396": "Black Warrior Wildlife Management Area",
-      "US-3706": "Sipsey Wilderness Wilderness Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "25736.0 ac",
-     "sort": 25736.0,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-10396+US-3706@area@34.331,-87.429",
-     "sources": {
-      "US-10396": "downloaded 2026-10-28",
-      "US-3706": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-AL",
-     "refs": [
-      "US-3706",
-      "US-4452"
-     ],
-     "names": {
-      "US-3706": "Sipsey Wilderness Wilderness Area",
-      "US-4452": "William B. Bankhead National Forest"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "25733.7 ac",
-     "sort": 25733.7,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-3706+US-4452@area@34.348,-87.435",
-     "sources": {
-      "US-3706": "downloaded 2026-10-28",
-      "US-4452": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-AL",
-     "refs": [
-      "US-10396",
-      "US-3706",
-      "US-4452"
-     ],
-     "names": {
-      "US-10396": "Black Warrior Wildlife Management Area",
-      "US-3706": "Sipsey Wilderness Wilderness Area",
-      "US-4452": "William B. Bankhead National Forest"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "25731.9 ac",
-     "sort": 25731.9,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-10396+US-3706+US-4452@area@34.348,-87.436",
-     "sources": {
-      "US-10396": "downloaded 2026-10-28",
-      "US-3706": "downloaded 2026-10-28",
-      "US-4452": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-TN",
-     "refs": [
-      "US-3935",
-      "US-5492"
-     ],
-     "names": {
-      "US-3935": "Chuck Swan Wildlife Management Area",
-      "US-5492": "Chuck Swan State Forest"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "24035.5 ac",
-     "sort": 24035.5,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-3935+US-5492@area@36.335,-83.924",
-     "sources": {
-      "US-3935": "downloaded 2026-10-28",
-      "US-5492": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-GA",
-     "refs": [
-      "US-4473",
-      "US-7447"
-     ],
-     "names": {
-      "US-4473": "Chattahoochee-Oconee National Forest",
-      "US-7447": "Chattahoochee Wildlife Management Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "23996.1 ac",
-     "sort": 23996.1,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-4473+US-7447@area@34.761,-83.792",
-     "sources": {
-      "US-4473": "downloaded 2026-10-28",
-      "US-7447": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-GA",
-     "refs": [
-      "US-4473",
-      "US-7135"
-     ],
-     "names": {
-      "US-4473": "Chattahoochee-Oconee National Forest",
-      "US-7135": "Blue Ridge Wildlife Management Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "23731.0 ac",
-     "sort": 23731.0,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-4473+US-7135@area@34.675,-84.183",
-     "sources": {
-      "US-4473": "downloaded 2026-10-28",
-      "US-7135": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-GA",
-     "refs": [
-      "US-4473",
-      "US-7138"
-     ],
-     "names": {
-      "US-4473": "Chattahoochee-Oconee National Forest",
-      "US-7138": "Chestatee Wildlife Management Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "21750.2 ac",
-     "sort": 21750.2,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-4473+US-7138@area@34.703,-83.887",
-     "sources": {
-      "US-4473": "downloaded 2026-10-28",
-      "US-7138": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-GA",
-     "refs": [
-      "US-3758",
-      "US-4473"
-     ],
-     "names": {
-      "US-3758": "John's Mountain Wildlife Management Area",
-      "US-4473": "Chattahoochee-Oconee National Forest"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "20496.1 ac",
-     "sort": 20496.1,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-3758+US-4473@area@34.523,-85.075",
-     "sources": {
-      "US-3758": "downloaded 2026-10-28",
-      "US-4473": "downloaded 2026-10-28",
-      "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
      "state": "US-TN",
      "refs": [
       "US-2971",
@@ -30328,1035 +30067,25 @@
     },
     {
      "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-11019",
-      "US-6936"
-     ],
-     "names": {
-      "US-11019": "Shining Rock Wilderness Area",
-      "US-6936": "Pisgah State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "18574.6 ac",
-     "sort": 18574.6,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-11019+US-6936@area@35.368,-82.872",
-     "sources": {
-      "US-11019": "downloaded 2026-10-28",
-      "US-6936": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-11019",
-      "US-6937"
-     ],
-     "names": {
-      "US-11019": "Shining Rock Wilderness Area",
-      "US-6937": "Pisgah WRC State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "18574.6 ac",
-     "sort": 18574.6,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-11019+US-6937@area@35.368,-82.872",
-     "sources": {
-      "US-11019": "downloaded 2026-10-28",
-      "US-6937": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-11019",
-      "US-4510"
-     ],
-     "names": {
-      "US-11019": "Shining Rock Wilderness Area",
-      "US-4510": "Pisgah National Forest"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "18572.7 ac",
-     "sort": 18572.7,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-11019+US-4510@area@35.368,-82.872",
-     "sources": {
-      "US-11019": "downloaded 2026-10-28",
-      "US-4510": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-GA",
-     "refs": [
-      "US-4473",
-      "US-7451"
-     ],
-     "names": {
-      "US-4473": "Chattahoochee-Oconee National Forest",
-      "US-7451": "Swallow Creek Wildlife Management Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "18340.1 ac",
-     "sort": 18340.1,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-4473+US-7451@area@34.824,-83.682",
-     "sources": {
-      "US-4473": "downloaded 2026-10-28",
-      "US-7451": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-GA",
-     "refs": [
-      "US-12417",
-      "US-4473"
-     ],
-     "names": {
-      "US-12417": "Rich Mountain Cartecay Tract Wildlife Management Area",
-      "US-4473": "Chattahoochee-Oconee National Forest"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "17327.4 ac",
-     "sort": 17327.4,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-12417+US-4473@area@34.739,-84.340",
-     "sources": {
-      "US-12417": "downloaded 2026-10-28",
-      "US-4473": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-GA",
-     "refs": [
-      "US-4473",
-      "US-7452"
-     ],
-     "names": {
-      "US-4473": "Chattahoochee-Oconee National Forest",
-      "US-7452": "Rich Mountain Wildlife Management Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "17327.4 ac",
-     "sort": 17327.4,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-4473+US-7452@area@34.739,-84.340",
-     "sources": {
-      "US-4473": "downloaded 2026-10-28",
-      "US-7452": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-GA",
-     "refs": [
-      "US-4473",
-      "US-7450"
-     ],
-     "names": {
-      "US-4473": "Chattahoochee-Oconee National Forest",
-      "US-7450": "Warwoman Wildlife Management Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "16714.2 ac",
-     "sort": 16714.2,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-4473+US-7450@area@34.923,-83.302",
-     "sources": {
-      "US-4473": "downloaded 2026-10-28",
-      "US-7450": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-11019",
-      "US-4510",
-      "US-6936"
-     ],
-     "names": {
-      "US-11019": "Shining Rock Wilderness Area",
-      "US-4510": "Pisgah National Forest",
-      "US-6936": "Pisgah State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "15457.7 ac",
-     "sort": 15457.7,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-11019+US-4510+US-6936@area@35.366,-82.848",
-     "sources": {
-      "US-11019": "downloaded 2026-10-28",
-      "US-4510": "downloaded 2026-10-28",
-      "US-6936": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-11019",
-      "US-4510",
-      "US-6937"
-     ],
-     "names": {
-      "US-11019": "Shining Rock Wilderness Area",
-      "US-4510": "Pisgah National Forest",
-      "US-6937": "Pisgah WRC State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "15457.7 ac",
-     "sort": 15457.7,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-11019+US-4510+US-6937@area@35.366,-82.848",
-     "sources": {
-      "US-11019": "downloaded 2026-10-28",
-      "US-4510": "downloaded 2026-10-28",
-      "US-6937": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-11271",
-      "US-6927"
-     ],
-     "names": {
-      "US-11271": "Joyce Kilmer-Slickrock Wilderness Area",
-      "US-6927": "Nantahala State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "13554.5 ac",
-     "sort": 13554.5,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-11271+US-6927@area@35.379,-83.954",
-     "sources": {
-      "US-11271": "downloaded 2026-10-28",
-      "US-6927": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-11271",
-      "US-4509",
-      "US-6927"
-     ],
-     "names": {
-      "US-11271": "Joyce Kilmer-Slickrock Wilderness Area",
-      "US-4509": "Nantahala National Forest",
-      "US-6927": "Nantahala State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "13540.5 ac",
-     "sort": 13540.5,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-11271+US-4509+US-6927@area@35.379,-83.954",
-     "sources": {
-      "US-11271": "downloaded 2026-10-28",
-      "US-4509": "downloaded 2026-10-28",
-      "US-6927": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-11271",
-      "US-4509"
-     ],
-     "names": {
-      "US-11271": "Joyce Kilmer-Slickrock Wilderness Area",
-      "US-4509": "Nantahala National Forest"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "13539.5 ac",
-     "sort": 13539.5,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-11271+US-4509@area@35.379,-83.954",
-     "sources": {
-      "US-11271": "downloaded 2026-10-28",
-      "US-4509": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-10262",
-      "US-6937"
-     ],
-     "names": {
-      "US-10262": "Linville Gorge Wilderness Area",
-      "US-6937": "Pisgah WRC State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "11883.0 ac",
-     "sort": 11883.0,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-10262+US-6937@area@35.841,-81.901",
-     "sources": {
-      "US-10262": "downloaded 2026-10-28",
-      "US-6937": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-10262",
-      "US-6936"
-     ],
-     "names": {
-      "US-10262": "Linville Gorge Wilderness Area",
-      "US-6936": "Pisgah State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "11874.5 ac",
-     "sort": 11874.5,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-10262+US-6936@area@35.841,-81.901",
-     "sources": {
-      "US-10262": "downloaded 2026-10-28",
-      "US-6936": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-10262",
-      "US-4510"
-     ],
-     "names": {
-      "US-10262": "Linville Gorge Wilderness Area",
-      "US-4510": "Pisgah National Forest"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "11873.8 ac",
-     "sort": 11873.8,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-10262+US-4510@area@35.841,-81.901",
-     "sources": {
-      "US-10262": "downloaded 2026-10-28",
-      "US-4510": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-10397",
-      "US-4509"
-     ],
-     "names": {
-      "US-10397": "Southern Nantahala Wilderness Area",
-      "US-4509": "Nantahala National Forest"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "11723.9 ac",
-     "sort": 11723.9,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-10397+US-4509@area@35.009,-83.528",
-     "sources": {
-      "US-10397": "downloaded 2026-10-28",
-      "US-4509": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-10397",
-      "US-6927"
-     ],
-     "names": {
-      "US-10397": "Southern Nantahala Wilderness Area",
-      "US-6927": "Nantahala State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "11723.0 ac",
-     "sort": 11723.0,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-10397+US-6927@area@35.009,-83.528",
-     "sources": {
-      "US-10397": "downloaded 2026-10-28",
-      "US-6927": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-10397",
-      "US-4509",
-      "US-6927"
-     ],
-     "names": {
-      "US-10397": "Southern Nantahala Wilderness Area",
-      "US-4509": "Nantahala National Forest",
-      "US-6927": "Nantahala State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "11720.9 ac",
-     "sort": 11720.9,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-10397+US-4509+US-6927@area@34.992,-83.597",
-     "sources": {
-      "US-10397": "downloaded 2026-10-28",
-      "US-4509": "downloaded 2026-10-28",
-      "US-6927": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-AL",
-     "refs": [
-      "US-10428",
-      "US-3694"
-     ],
-     "names": {
-      "US-10428": "Walls of Jericho State Natural Area",
-      "US-3694": "James D Martin - Skyline Wildlife Management Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "11676.3 ac",
-     "sort": 11676.3,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-10428+US-3694@area@34.971,-86.089",
-     "sources": {
-      "US-10428": "downloaded 2026-10-28",
-      "US-3694": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-4854",
-      "US-6902"
-     ],
-     "names": {
-      "US-4854": "DuPont State Recreational Forest State Forest",
-      "US-6902": "Dupont State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "11092.2 ac",
-     "sort": 11092.2,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-4854+US-6902@area@35.203,-82.597",
-     "sources": {
-      "US-4854": "downloaded 2026-10-28",
-      "US-6902": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-10397",
-      "US-4473"
-     ],
-     "names": {
-      "US-10397": "Southern Nantahala Wilderness Area",
-      "US-4473": "Chattahoochee-Oconee National Forest"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "8230.2 ac",
-     "sort": 8230.2,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-10397+US-4473@area@34.973,-83.658",
-     "sources": {
-      "US-10397": "downloaded 2026-10-28",
-      "US-4473": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-11020",
-      "US-6936"
-     ],
-     "names": {
-      "US-11020": "Middle Prong Wilderness Area",
-      "US-6936": "Pisgah State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "7466.4 ac",
-     "sort": 7466.4,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-11020+US-6936@area@35.328,-82.934",
-     "sources": {
-      "US-11020": "downloaded 2026-10-28",
-      "US-6936": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-11020",
-      "US-6937"
-     ],
-     "names": {
-      "US-11020": "Middle Prong Wilderness Area",
-      "US-6937": "Pisgah WRC State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "7466.4 ac",
-     "sort": 7466.4,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-11020+US-6937@area@35.328,-82.934",
-     "sources": {
-      "US-11020": "downloaded 2026-10-28",
-      "US-6937": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-11020",
-      "US-4510"
-     ],
-     "names": {
-      "US-11020": "Middle Prong Wilderness Area",
-      "US-4510": "Pisgah National Forest"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "7466.3 ac",
-     "sort": 7466.3,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-11020+US-4510@area@35.328,-82.933",
-     "sources": {
-      "US-11020": "downloaded 2026-10-28",
-      "US-4510": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-TN",
-     "refs": [
-      "US-12361",
-      "US-3928"
-     ],
-     "names": {
-      "US-12361": "Scott's Gulf Wilderness State Park",
-      "US-3928": "Bridgestone/firestone Centennial Wilderness Wildlife Management Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "7101.0 ac",
-     "sort": 7101.0,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-12361+US-3928@area@35.834,-85.270",
-     "sources": {
-      "US-12361": "downloaded 2026-10-28",
-      "US-3928": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-11020",
-      "US-4510",
-      "US-6936"
-     ],
-     "names": {
-      "US-11020": "Middle Prong Wilderness Area",
-      "US-4510": "Pisgah National Forest",
-      "US-6936": "Pisgah State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "6373.1 ac",
-     "sort": 6373.1,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-11020+US-4510+US-6936@area@35.328,-82.934",
-     "sources": {
-      "US-11020": "downloaded 2026-10-28",
-      "US-4510": "downloaded 2026-10-28",
-      "US-6936": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-11020",
-      "US-4510",
-      "US-6937"
-     ],
-     "names": {
-      "US-11020": "Middle Prong Wilderness Area",
-      "US-4510": "Pisgah National Forest",
-      "US-6937": "Pisgah WRC State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "6373.1 ac",
-     "sort": 6373.1,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-11020+US-4510+US-6937@area@35.328,-82.934",
-     "sources": {
-      "US-11020": "downloaded 2026-10-28",
-      "US-4510": "downloaded 2026-10-28",
-      "US-6937": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
      "state": "US-VA",
      "refs": [
-      "US-9903",
-      "US-9946"
+      "US-0561",
+      "US-0671"
      ],
      "names": {
-      "US-9903": "Mount Rogers National Recreation Area",
-      "US-9946": "Lewis Fork Wilderness Area"
+      "US-0561": "Chincoteague National Wildlife Refuge",
+      "US-0671": "Assateague Island National Seashore"
      },
-     "what": "not sure",
+     "what": "water only (boat spot): is there really no land?",
      "kind": "area",
-     "size": "6068.2 ac",
-     "sort": 6068.2,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-9903+US-9946@area@36.670,-81.533",
+     "size": "1264.8 ac",
+     "sort": 1264.8,
+     "reason": "water only: boat or kayak",
+     "id": "US-0561+US-0671@area@channel@37.908,-75.341",
      "sources": {
-      "US-9903": "downloaded 2026-10-28",
-      "US-9946": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-4509",
-      "US-6936"
-     ],
-     "names": {
-      "US-4509": "Nantahala National Forest",
-      "US-6936": "Pisgah State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "5989.8 ac",
-     "sort": 5989.8,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-4509+US-6936@area@35.067,-82.990",
-     "sources": {
-      "US-4509": "downloaded 2026-10-28",
-      "US-6936": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-4509",
-      "US-6937"
-     ],
-     "names": {
-      "US-4509": "Nantahala National Forest",
-      "US-6937": "Pisgah WRC State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "5989.8 ac",
-     "sort": 5989.8,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-4509+US-6937@area@35.067,-82.990",
-     "sources": {
-      "US-4509": "downloaded 2026-10-28",
-      "US-6937": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-11271",
-      "US-4525"
-     ],
-     "names": {
-      "US-11271": "Joyce Kilmer-Slickrock Wilderness Area",
-      "US-4525": "Cherokee National Forest"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "5639.6 ac",
-     "sort": 5639.6,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-11271+US-4525@area@35.378,-84.008",
-     "sources": {
-      "US-11271": "downloaded 2026-10-28",
-      "US-4525": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-VA",
-     "refs": [
-      "US-9903",
-      "US-9948"
-     ],
-     "names": {
-      "US-9903": "Mount Rogers National Recreation Area",
-      "US-9948": "Little Wilson Creek Wilderness Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "5451.5 ac",
-     "sort": 5451.5,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-9903+US-9948@area@36.658,-81.458",
-     "sources": {
-      "US-9903": "downloaded 2026-10-28",
-      "US-9948": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-VA",
-     "refs": [
-      "US-9903",
-      "US-9952"
-     ],
-     "names": {
-      "US-9903": "Mount Rogers National Recreation Area",
-      "US-9952": "Raccoon Branch Wilderness Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "4216.4 ac",
-     "sort": 4216.4,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-9903+US-9952@area@36.741,-81.453",
-     "sources": {
-      "US-9903": "downloaded 2026-10-28",
-      "US-9952": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-TN",
-     "refs": [
-      "US-2955",
-      "US-7880"
-     ],
-     "names": {
-      "US-2955": "Wilson Cumberland Trail State Park",
-      "US-7880": "Luper Mountain Wildlife Management Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "3534.9 ac",
-     "sort": 3534.9,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2955+US-7880@area@35.919,-84.821",
-     "sources": {
-      "US-2955": "downloaded 2026-10-28",
-      "US-7880": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-TN",
-     "refs": [
-      "US-11918",
-      "US-12714"
-     ],
-     "names": {
-      "US-11918": "Sherwood Forest State Natural Area",
-      "US-12714": "Head of the Crow State Park"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "3056.3 ac",
-     "sort": 3056.3,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-11918+US-12714@area@35.086,-85.901",
-     "sources": {
-      "US-11918": "downloaded 2026-10-28",
-      "US-12714": "downloaded 2026-10-28",
       "USGS water": "saved copy of the USGS map, read 2026-10-28"
      },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-VA",
-     "refs": [
-      "US-9903",
-      "US-9947"
-     ],
-     "names": {
-      "US-9903": "Mount Rogers National Recreation Area",
-      "US-9947": "Little Dry Run Wilderness Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "2852.4 ac",
-     "sort": 2852.4,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-9903+US-9947@area@36.784,-81.202",
-     "sources": {
-      "US-9903": "downloaded 2026-10-28",
-      "US-9947": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-TN",
-     "refs": [
-      "US-2955",
-      "US-6252"
-     ],
-     "names": {
-      "US-2955": "Wilson Cumberland Trail State Park",
-      "US-6252": "Laurel Snow State Natural Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "2233.3 ac",
-     "sort": 2233.3,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2955+US-6252@area@35.546,-85.032",
-     "sources": {
-      "US-2955": "downloaded 2026-10-28",
-      "US-6252": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-2754",
-      "US-4859"
-     ],
-     "names": {
-      "US-2754": "Stone Mountain State Park",
-      "US-4859": "Rendezvous Mountain State Park"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "1851.1 ac",
-     "sort": 1851.1,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2754+US-4859@area@36.221,-81.306",
-     "sources": {
-      "US-2754": "downloaded 2026-10-28",
-      "US-4859": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-TN",
-     "refs": [
-      "US-12361",
-      "US-2945"
-     ],
-     "names": {
-      "US-12361": "Scott's Gulf Wilderness State Park",
-      "US-2945": "Fall Creek Falls State Park"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "1137.5 ac",
-     "sort": 1137.5,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-12361+US-2945@area@35.840,-85.327",
-     "sources": {
-      "US-12361": "downloaded 2026-10-28",
-      "US-2945": "downloaded 2026-10-28",
-      "USGS water": "saved copy of the USGS map, read 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-TN",
-     "refs": [
-      "US-2939",
-      "US-2955"
-     ],
-     "names": {
-      "US-2939": "Cumberland Mountain State Park",
-      "US-2955": "Wilson Cumberland Trail State Park"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "1008.2 ac",
-     "sort": 1008.2,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2939+US-2955@area@35.867,-84.902",
-     "sources": {
-      "US-2939": "downloaded 2026-10-28",
-      "US-2955": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-TN",
-     "refs": [
-      "US-11918",
-      "US-5493"
-     ],
-     "names": {
-      "US-11918": "Sherwood Forest State Natural Area",
-      "US-5493": "Franklin-Marion State Forest"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "986.7 ac",
-     "sort": 986.7,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-11918+US-5493@area@35.082,-85.875",
-     "sources": {
-      "US-11918": "downloaded 2026-10-28",
-      "US-5493": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-TN",
-     "refs": [
-      "US-13563",
-      "US-6275"
-     ],
-     "names": {
-      "US-13563": "Bear Hollow Mountain Wildlife Management Area",
-      "US-6275": "Walls of Jericho State Natural Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "781.3 ac",
-     "sort": 781.3,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-13563+US-6275@area@34.997,-86.110",
-     "sources": {
-      "US-13563": "downloaded 2026-10-28",
-      "US-6275": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-TN",
-     "refs": [
-      "US-2955",
-      "US-6270"
-     ],
-     "names": {
-      "US-2955": "Wilson Cumberland Trail State Park",
-      "US-6270": "Stinging Fork Falls State Natural Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "776.1 ac",
-     "sort": 776.1,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2955+US-6270@area@35.719,-84.931",
-     "sources": {
-      "US-2955": "downloaded 2026-10-28",
-      "US-6270": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-VA",
-     "refs": [
-      "US-5507",
-      "US-9932"
-     ],
-     "names": {
-      "US-5507": "Channels State Forest",
-      "US-9932": "The Channels State Natural Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "722.2 ac",
-     "sort": 722.2,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-5507+US-9932@area@36.865,-81.968",
-     "sources": {
-      "US-5507": "downloaded 2026-10-28",
-      "US-9932": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
+     "checked": "2026-10-29"
     },
     {
      "area": "southeast",
@@ -31414,75 +30143,6 @@
      "sources": {
       "US-3637": "downloaded 2026-10-28",
       "US-4559": "official line (trails bot)"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-TN",
-     "refs": [
-      "US-2955",
-      "US-6260"
-     ],
-     "names": {
-      "US-2955": "Wilson Cumberland Trail State Park",
-      "US-6260": "Piney Falls State Natural Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "438.2 ac",
-     "sort": 438.2,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2955+US-6260@area@35.722,-84.872",
-     "sources": {
-      "US-2955": "downloaded 2026-10-28",
-      "US-6260": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-VA",
-     "refs": [
-      "US-0577",
-      "US-7790"
-     ],
-     "names": {
-      "US-0577": "Clinch River State Park",
-      "US-7790": "Cleveland Barrens State Natural Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "438.1 ac",
-     "sort": 438.1,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-0577+US-7790@area@36.947,-82.133",
-     "sources": {
-      "US-0577": "downloaded 2026-10-28",
-      "US-7790": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-TN",
-     "refs": [
-      "US-2946",
-      "US-7622"
-     ],
-     "names": {
-      "US-2946": "Fort Loudon State Park",
-      "US-7622": "Tellico Lake Wildlife Management Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "426.7 ac",
-     "sort": 426.7,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2946+US-7622@area@35.582,-84.199",
-     "sources": {
-      "US-2946": "downloaded 2026-10-28",
-      "US-7622": "downloaded 2026-10-28"
      },
      "checked": "2026-10-28"
     },
@@ -31623,48 +30283,6 @@
      "area": "southeast",
      "state": "",
      "refs": [
-      "US-2206",
-      "US-4473"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "195 same-day activations",
-     "sort": 195.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2206+US-4473@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (195x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "US-TN",
-     "refs": [
-      "US-6242",
-      "US-7615"
-     ],
-     "names": {
-      "US-6242": "Elsie Quarterman Cedar Glade State Natural Area",
-      "US-7615": "Percy Priest Wildlife Management Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "191.9 ac",
-     "sort": 191.9,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-6242+US-7615@area@36.053,-86.556",
-     "sources": {
-      "US-6242": "downloaded 2026-10-28",
-      "US-7615": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
       "US-12044",
       "US-7069"
      ],
@@ -31703,25 +30321,6 @@
      "area": "southeast",
      "state": "",
      "refs": [
-      "US-2166",
-      "US-4473"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "173 same-day activations",
-     "sort": 173.0,
-     "reason": "dropped in pass 2",
-     "id": "US-2166+US-4473@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (173x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
       "US-1841",
       "US-4614"
      ],
@@ -31736,75 +30335,6 @@
       "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (172x, POTA history)"
      },
      "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "US-TN",
-     "refs": [
-      "US-2966",
-      "US-6239"
-     ],
-     "names": {
-      "US-2966": "Pickett State Park",
-      "US-6239": "Colditz Cove State Natural Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "159.9 ac",
-     "sort": 159.9,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2966+US-6239@area@36.358,-84.871",
-     "sources": {
-      "US-2966": "downloaded 2026-10-28",
-      "US-6239": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-TN",
-     "refs": [
-      "US-2935",
-      "US-3925"
-     ],
-     "names": {
-      "US-2935": "Cedars of Lebanon State Park",
-      "US-3925": "Vesta Cedar Glade State Natural Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "149.7 ac",
-     "sort": 149.7,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2935+US-3925@area@36.077,-86.398",
-     "sources": {
-      "US-2935": "downloaded 2026-10-28",
-      "US-3925": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-TN",
-     "refs": [
-      "US-3924",
-      "US-3925"
-     ],
-     "names": {
-      "US-3924": "Cedars of Lebanon State Forest",
-      "US-3925": "Vesta Cedar Glade State Natural Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "149.7 ac",
-     "sort": 149.7,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-3924+US-3925@area@36.077,-86.398",
-     "sources": {
-      "US-3924": "downloaded 2026-10-28",
-      "US-3925": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
     },
     {
      "area": "southeast",
@@ -31865,75 +30395,6 @@
     },
     {
      "area": "southeast",
-     "state": "US-TN",
-     "refs": [
-      "US-2956",
-      "US-6240"
-     ],
-     "names": {
-      "US-2956": "Long Hunter State Park",
-      "US-6240": "Couchville Cedar Glade State Natural Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "138.5 ac",
-     "sort": 138.5,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2956+US-6240@area@36.103,-86.534",
-     "sources": {
-      "US-2956": "downloaded 2026-10-28",
-      "US-6240": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-TN",
-     "refs": [
-      "US-3944",
-      "US-6255"
-     ],
-     "names": {
-      "US-3944": "Hickory Flats Wildlife Management Area",
-      "US-6255": "May Prairie State Natural Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "138.5 ac",
-     "sort": 138.5,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-3944+US-6255@area@35.443,-86.015",
-     "sources": {
-      "US-3944": "downloaded 2026-10-28",
-      "US-6255": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-TN",
-     "refs": [
-      "US-2955",
-      "US-6243"
-     ],
-     "names": {
-      "US-2955": "Wilson Cumberland Trail State Park",
-      "US-6243": "Falling Water Falls State Natural Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "136.6 ac",
-     "sort": 136.6,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2955+US-6243@area@35.187,-85.274",
-     "sources": {
-      "US-2955": "downloaded 2026-10-28",
-      "US-6243": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
      "state": "",
      "refs": [
       "US-1810",
@@ -31967,25 +30428,6 @@
      "id": "US-0658+US-0775@pota",
      "sources": {
       "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (126x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-10396",
-      "US-4452"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "124 same-day activations",
-     "sort": 124.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-10396+US-4452@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (124x, POTA history)"
      },
      "checked": "2026-10-29"
     },
@@ -32051,109 +30493,6 @@
      "area": "southeast",
      "state": "",
      "refs": [
-      "US-2956",
-      "US-6240"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "110 same-day activations",
-     "sort": 110.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2956+US-6240@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (110x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-4473",
-      "US-7137"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "110 same-day activations",
-     "sort": 110.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-4473+US-7137@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (110x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-6936",
-      "US-6960"
-     ],
-     "names": {
-      "US-6936": "Pisgah State Game Land",
-      "US-6960": "Toxaway State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "109.0 ac",
-     "sort": 109.0,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-6936+US-6960@area@35.067,-82.959",
-     "sources": {
-      "US-6936": "downloaded 2026-10-28",
-      "US-6960": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-6937",
-      "US-6960"
-     ],
-     "names": {
-      "US-6937": "Pisgah WRC State Game Land",
-      "US-6960": "Toxaway State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "109.0 ac",
-     "sort": 109.0,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-6937+US-6960@area@35.067,-82.959",
-     "sources": {
-      "US-6937": "downloaded 2026-10-28",
-      "US-6960": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-4473",
-      "US-7451"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "105 same-day activations",
-     "sort": 105.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-4473+US-7451@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (105x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
       "US-0231",
       "US-3631"
      ],
@@ -32168,48 +30507,6 @@
       "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (104x, POTA history)"
      },
      "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-3706",
-      "US-4452"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "104 same-day activations",
-     "sort": 104.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-3706+US-4452@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (104x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "US-TN",
-     "refs": [
-      "US-2972",
-      "US-4525"
-     ],
-     "names": {
-      "US-2972": "Roan Mountain State Park",
-      "US-4525": "Cherokee National Forest"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "103.1 ac",
-     "sort": 103.1,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2972+US-4525@area@36.189,-82.118",
-     "sources": {
-      "US-2972": "downloaded 2026-10-28",
-      "US-4525": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
     },
     {
      "area": "southeast",
@@ -32330,25 +30627,6 @@
      "area": "southeast",
      "state": "",
      "refs": [
-      "US-10262",
-      "US-4510"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "90 same-day activations",
-     "sort": 90.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-10262+US-4510@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (90x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
       "US-1841",
       "US-8335"
      ],
@@ -32399,44 +30677,6 @@
      "id": "US-0659+US-3618@pota",
      "sources": {
       "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (85x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-3758",
-      "US-4473"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "85 same-day activations",
-     "sort": 85.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-3758+US-4473@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (85x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-4473",
-      "US-7446"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "84 same-day activations",
-     "sort": 84.0,
-     "reason": "dropped in pass 2",
-     "id": "US-4473+US-7446@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (84x, POTA history)"
      },
      "checked": "2026-10-29"
     },
@@ -32818,117 +31058,6 @@
      "area": "southeast",
      "state": "",
      "refs": [
-      "US-10262",
-      "US-6937"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "69 same-day activations",
-     "sort": 69.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-10262+US-6937@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (69x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-2747",
-      "US-4510"
-     ],
-     "names": {
-      "US-2747": "Mount Mitchell State Park",
-      "US-4510": "Pisgah National Forest"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "68.7 ac",
-     "sort": 68.7,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2747+US-4510@area@35.744,-82.277",
-     "sources": {
-      "US-2747": "downloaded 2026-10-28",
-      "US-4510": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-2747",
-      "US-6936"
-     ],
-     "names": {
-      "US-2747": "Mount Mitchell State Park",
-      "US-6936": "Pisgah State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "68.7 ac",
-     "sort": 68.7,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2747+US-6936@area@35.744,-82.277",
-     "sources": {
-      "US-2747": "downloaded 2026-10-28",
-      "US-6936": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-2747",
-      "US-6937"
-     ],
-     "names": {
-      "US-2747": "Mount Mitchell State Park",
-      "US-6937": "Pisgah WRC State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "68.7 ac",
-     "sort": 68.7,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2747+US-6937@area@35.744,-82.277",
-     "sources": {
-      "US-2747": "downloaded 2026-10-28",
-      "US-6937": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-TN",
-     "refs": [
-      "US-2948",
-      "US-7609"
-     ],
-     "names": {
-      "US-2948": "Frozen Head State Park",
-      "US-7609": "North Cumberland Wildlife Management Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "67.1 ac",
-     "sort": 67.1,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2948+US-7609@area@36.125,-84.421",
-     "sources": {
-      "US-2948": "downloaded 2026-10-28",
-      "US-7609": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
       "US-1829",
       "US-5524"
      ],
@@ -32939,25 +31068,6 @@
      "sort": 67.0,
      "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
      "id": "US-1829+US-5524@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (67x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-4854",
-      "US-6902"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "67 same-day activations",
-     "sort": 67.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-4854+US-6902@pota",
      "sources": {
       "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (67x, POTA history)"
      },
@@ -33066,25 +31176,6 @@
      "area": "southeast",
      "state": "",
      "refs": [
-      "US-2167",
-      "US-4473"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "64 same-day activations",
-     "sort": 64.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2167+US-4473@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (64x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
       "US-3625",
       "US-3663"
      ],
@@ -33143,25 +31234,6 @@
      "area": "southeast",
      "state": "",
      "refs": [
-      "US-2199",
-      "US-3718"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "63 same-day activations",
-     "sort": 63.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2199+US-3718@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (63x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
       "US-8338",
       "US-8348"
      ],
@@ -33176,127 +31248,6 @@
       "POTA history": "activated together by the same call on the same day (63x, POTA history) / outlines come within 50 m of each other"
      },
      "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-4510",
-      "US-6936",
-      "US-8008"
-     ],
-     "names": {
-      "US-4510": "Pisgah National Forest",
-      "US-6936": "Pisgah State Game Land",
-      "US-8008": "Armstrong State Fish Hatchery"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "62.1 ac",
-     "sort": 62.1,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-4510+US-6936+US-8008@area@35.802,-82.097",
-     "sources": {
-      "US-4510": "downloaded 2026-10-28",
-      "US-6936": "downloaded 2026-10-28",
-      "US-8008": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-4510",
-      "US-6937",
-      "US-8008"
-     ],
-     "names": {
-      "US-4510": "Pisgah National Forest",
-      "US-6937": "Pisgah WRC State Game Land",
-      "US-8008": "Armstrong State Fish Hatchery"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "62.1 ac",
-     "sort": 62.1,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-4510+US-6937+US-8008@area@35.802,-82.097",
-     "sources": {
-      "US-4510": "downloaded 2026-10-28",
-      "US-6937": "downloaded 2026-10-28",
-      "US-8008": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-4510",
-      "US-8008"
-     ],
-     "names": {
-      "US-4510": "Pisgah National Forest",
-      "US-8008": "Armstrong State Fish Hatchery"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "62.0 ac",
-     "sort": 62.0,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-4510+US-8008@area@35.802,-82.097",
-     "sources": {
-      "US-4510": "downloaded 2026-10-28",
-      "US-8008": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-6936",
-      "US-8008"
-     ],
-     "names": {
-      "US-6936": "Pisgah State Game Land",
-      "US-8008": "Armstrong State Fish Hatchery"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "62.0 ac",
-     "sort": 62.0,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-6936+US-8008@area@35.804,-82.100",
-     "sources": {
-      "US-6936": "downloaded 2026-10-28",
-      "US-8008": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-6937",
-      "US-8008"
-     ],
-     "names": {
-      "US-6937": "Pisgah WRC State Game Land",
-      "US-8008": "Armstrong State Fish Hatchery"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "62.0 ac",
-     "sort": 62.0,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-6937+US-8008@area@35.804,-82.100",
-     "sources": {
-      "US-6937": "downloaded 2026-10-28",
-      "US-8008": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
     },
     {
      "area": "southeast",
@@ -33357,29 +31308,6 @@
     },
     {
      "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-6927",
-      "US-6928"
-     ],
-     "names": {
-      "US-6927": "Nantahala State Game Land",
-      "US-6928": "Needmore State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "61.6 ac",
-     "sort": 61.6,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-6927+US-6928@area@35.334,-83.546",
-     "sources": {
-      "US-6927": "downloaded 2026-10-28",
-      "US-6928": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
      "state": "",
      "refs": [
       "US-2979",
@@ -33392,25 +31320,6 @@
      "sort": 61.0,
      "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
      "id": "US-2979+US-4525@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (61x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-3924",
-      "US-3925"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "61 same-day activations",
-     "sort": 61.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-3924+US-3925@pota",
      "sources": {
       "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (61x, POTA history)"
      },
@@ -33449,25 +31358,6 @@
      "sort": 60.0,
      "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
      "id": "US-0064+US-4526@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (60x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-4473",
-      "US-7450"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "60 same-day activations",
-     "sort": 60.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-4473+US-7450@pota",
      "sources": {
       "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (60x, POTA history)"
      },
@@ -33553,25 +31443,6 @@
      "area": "southeast",
      "state": "",
      "refs": [
-      "US-2176",
-      "US-4473"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "59 same-day activations",
-     "sort": 59.0,
-     "reason": "dropped in pass 2",
-     "id": "US-2176+US-4473@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (59x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
       "US-2199",
       "US-7447"
      ],
@@ -33584,25 +31455,6 @@
      "id": "US-2199+US-7447@pota",
      "sources": {
       "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (59x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-10396",
-      "US-3706"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "58 same-day activations",
-     "sort": 58.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-10396+US-3706@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (58x, POTA history)"
      },
      "checked": "2026-10-29"
     },
@@ -33641,44 +31493,6 @@
      "id": "US-2746+US-4511@pota",
      "sources": {
       "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (58x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-2946",
-      "US-7622"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "58 same-day activations",
-     "sort": 58.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2946+US-7622@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (58x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-11271",
-      "US-4509"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "57 same-day activations",
-     "sort": 57.0,
-     "reason": "dropped in pass 3",
-     "id": "US-11271+US-4509@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (57x, POTA history)"
      },
      "checked": "2026-10-29"
     },
@@ -33755,25 +31569,6 @@
      "id": "US-0231+US-0252@pota",
      "sources": {
       "POTA history": "activated together by the same call on the same day (56x, POTA history) / outlines come within 28 m of each other"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-11020",
-      "US-4510"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "56 same-day activations",
-     "sort": 56.0,
-     "reason": "dropped in pass 2",
-     "id": "US-11020+US-4510@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (56x, POTA history)"
      },
      "checked": "2026-10-29"
     },
@@ -34045,81 +31840,6 @@
     },
     {
      "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-4509",
-      "US-6936",
-      "US-6960"
-     ],
-     "names": {
-      "US-4509": "Nantahala National Forest",
-      "US-6936": "Pisgah State Game Land",
-      "US-6960": "Toxaway State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "52.8 ac",
-     "sort": 52.8,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-4509+US-6936+US-6960@area@35.070,-82.969",
-     "sources": {
-      "US-4509": "downloaded 2026-10-28",
-      "US-6936": "downloaded 2026-10-28",
-      "US-6960": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-4509",
-      "US-6937",
-      "US-6960"
-     ],
-     "names": {
-      "US-4509": "Nantahala National Forest",
-      "US-6937": "Pisgah WRC State Game Land",
-      "US-6960": "Toxaway State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "52.8 ac",
-     "sort": 52.8,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-4509+US-6937+US-6960@area@35.070,-82.969",
-     "sources": {
-      "US-4509": "downloaded 2026-10-28",
-      "US-6937": "downloaded 2026-10-28",
-      "US-6960": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-4509",
-      "US-6960"
-     ],
-     "names": {
-      "US-4509": "Nantahala National Forest",
-      "US-6960": "Toxaway State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "52.5 ac",
-     "sort": 52.5,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-4509+US-6960@area@35.074,-82.975",
-     "sources": {
-      "US-4509": "downloaded 2026-10-28",
-      "US-6960": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
      "state": "",
      "refs": [
       "US-0634",
@@ -34172,25 +31892,6 @@
      "id": "US-4523+US-9758@pota",
      "sources": {
       "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (52x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-2935",
-      "US-3925"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "51 same-day activations",
-     "sort": 51.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2935+US-3925@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (51x, POTA history)"
      },
      "checked": "2026-10-29"
     },
@@ -34502,25 +32203,6 @@
      "area": "southeast",
      "state": "",
      "refs": [
-      "US-11271",
-      "US-6927"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "45 same-day activations",
-     "sort": 45.0,
-     "reason": "dropped in pass 3",
-     "id": "US-11271+US-6927@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (45x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
       "US-12774",
       "US-4525"
      ],
@@ -34592,29 +32274,6 @@
       "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (45x, POTA history)"
      },
      "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-4854",
-      "US-4856"
-     ],
-     "names": {
-      "US-4854": "DuPont State Recreational Forest State Forest",
-      "US-4856": "Holmes Educational State Forest"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "44.7 ac",
-     "sort": 44.7,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-4854+US-4856@area@35.237,-82.559",
-     "sources": {
-      "US-4854": "downloaded 2026-10-28",
-      "US-4856": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
     },
     {
      "area": "southeast",
@@ -34691,78 +32350,6 @@
       "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (44x, POTA history)"
      },
      "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-4856",
-      "US-6902"
-     ],
-     "names": {
-      "US-4856": "Holmes Educational State Forest",
-      "US-6902": "Dupont State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "43.8 ac",
-     "sort": 43.8,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-4856+US-6902@area@35.237,-82.560",
-     "sources": {
-      "US-4856": "downloaded 2026-10-28",
-      "US-6902": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-4854",
-      "US-4856",
-      "US-6902"
-     ],
-     "names": {
-      "US-4854": "DuPont State Recreational Forest State Forest",
-      "US-4856": "Holmes Educational State Forest",
-      "US-6902": "Dupont State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "43.6 ac",
-     "sort": 43.6,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-4854+US-4856+US-6902@area@35.237,-82.559",
-     "sources": {
-      "US-4854": "downloaded 2026-10-28",
-      "US-4856": "downloaded 2026-10-28",
-      "US-6902": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-GA",
-     "refs": [
-      "US-2199",
-      "US-3718"
-     ],
-     "names": {
-      "US-2199": "Smithgall Woods State Park",
-      "US-3718": "Hardman Farm State Historic Site"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "43.4 ac",
-     "sort": 43.4,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2199+US-3718@area@34.685,-83.721",
-     "sources": {
-      "US-2199": "downloaded 2026-10-28",
-      "US-3718": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
     },
     {
      "area": "southeast",
@@ -34844,25 +32431,6 @@
      "area": "southeast",
      "state": "",
      "refs": [
-      "US-2192",
-      "US-4473"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "42 same-day activations",
-     "sort": 42.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2192+US-4473@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (42x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
       "US-2935",
       "US-2956"
      ],
@@ -34877,29 +32445,6 @@
       "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (42x, POTA history)"
      },
      "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "US-GA",
-     "refs": [
-      "US-7138",
-      "US-7447"
-     ],
-     "names": {
-      "US-7138": "Chestatee Wildlife Management Area",
-      "US-7447": "Chattahoochee Wildlife Management Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "41.1 ac",
-     "sort": 41.1,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-7138+US-7447@area@34.700,-83.928",
-     "sources": {
-      "US-7138": "downloaded 2026-10-28",
-      "US-7447": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
     },
     {
      "area": "southeast",
@@ -35150,32 +32695,6 @@
     },
     {
      "area": "southeast",
-     "state": "US-GA",
-     "refs": [
-      "US-4473",
-      "US-7138",
-      "US-7447"
-     ],
-     "names": {
-      "US-4473": "Chattahoochee-Oconee National Forest",
-      "US-7138": "Chestatee Wildlife Management Area",
-      "US-7447": "Chattahoochee Wildlife Management Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "38.5 ac",
-     "sort": 38.5,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-4473+US-7138+US-7447@area@34.700,-83.927",
-     "sources": {
-      "US-4473": "downloaded 2026-10-28",
-      "US-7138": "downloaded 2026-10-28",
-      "US-7447": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
      "state": "",
      "refs": [
       "US-1856",
@@ -35287,29 +32806,6 @@
       "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (38x, POTA history)"
      },
      "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "US-GA",
-     "refs": [
-      "US-2206",
-      "US-4473"
-     ],
-     "names": {
-      "US-2206": "Vogel State Park",
-      "US-4473": "Chattahoochee-Oconee National Forest"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "37.9 ac",
-     "sort": 37.9,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2206+US-4473@area@34.756,-83.928",
-     "sources": {
-      "US-2206": "downloaded 2026-10-28",
-      "US-4473": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
     },
     {
      "area": "southeast",
@@ -35599,29 +33095,6 @@
     },
     {
      "area": "southeast",
-     "state": "US-SC",
-     "refs": [
-      "US-2914",
-      "US-9226"
-     ],
-     "names": {
-      "US-2914": "Table Rock State Park",
-      "US-9226": "Jocassee Gorges Wildlife Management Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "34.8 ac",
-     "sort": 34.8,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2914+US-9226@area@35.033,-82.721",
-     "sources": {
-      "US-2914": "downloaded 2026-10-28",
-      "US-9226": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
      "state": "",
      "refs": [
       "US-0607",
@@ -35752,29 +33225,6 @@
       "POTA history": "activated together by the same call on the same day (34x, POTA history) / outlines come within 20 m of each other"
      },
      "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-4509",
-      "US-6928"
-     ],
-     "names": {
-      "US-4509": "Nantahala National Forest",
-      "US-6928": "Needmore State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "33.0 ac",
-     "sort": 33.0,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-4509+US-6928@area@35.297,-83.518",
-     "sources": {
-      "US-4509": "downloaded 2026-10-28",
-      "US-6928": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
     },
     {
      "area": "southeast",
@@ -36027,25 +33477,6 @@
      "area": "southeast",
      "state": "",
      "refs": [
-      "US-11856",
-      "US-4510"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "32 same-day activations",
-     "sort": 32.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-11856+US-4510@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (32x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
       "US-1308",
       "US-4581"
      ],
@@ -36198,25 +33629,6 @@
      "area": "southeast",
      "state": "",
      "refs": [
-      "US-11020",
-      "US-6936"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "31 same-day activations",
-     "sort": 31.0,
-     "reason": "dropped in pass 2",
-     "id": "US-11020+US-6936@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (31x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
       "US-1857",
       "US-3612"
      ],
@@ -36331,25 +33743,6 @@
      "area": "southeast",
      "state": "",
      "refs": [
-      "US-3944",
-      "US-6255"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "31 same-day activations",
-     "sort": 31.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-3944+US-6255@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (31x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
       "US-6276",
       "US-7615"
      ],
@@ -36421,29 +33814,6 @@
       "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (31x, POTA history)"
      },
      "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "US-TN",
-     "refs": [
-      "US-6266",
-      "US-9718"
-     ],
-     "names": {
-      "US-6266": "Savage Gulf State Natural Area",
-      "US-9718": "Savage Gulf State Park"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "30.7 ac",
-     "sort": 30.7,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-6266+US-9718@area@35.438,-85.536",
-     "sources": {
-      "US-6266": "downloaded 2026-10-28",
-      "US-9718": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
     },
     {
      "area": "southeast",
@@ -36706,25 +34076,6 @@
      "sort": 29.0,
      "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
      "id": "US-0237+US-1879@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (29x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-11019",
-      "US-4510"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "29 same-day activations",
-     "sort": 29.0,
-     "reason": "dropped in pass 2",
-     "id": "US-11019+US-4510@pota",
      "sources": {
       "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (29x, POTA history)"
      },
@@ -37000,25 +34351,6 @@
      "area": "southeast",
      "state": "",
      "refs": [
-      "US-6242",
-      "US-7615"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "28 same-day activations",
-     "sort": 28.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-6242+US-7615@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (28x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
       "US-9214",
       "US-9215"
      ],
@@ -37031,6 +34363,28 @@
      "id": "US-9214+US-9215@pota",
      "sources": {
       "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (28x, POTA history)"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "southeast",
+     "state": "US-TN",
+     "refs": [
+      "US-0685",
+      "US-3931"
+     ],
+     "names": {
+      "US-0685": "Obed National Wild and Scenic River",
+      "US-3931": "Catoosa Wildlife Management Area"
+     },
+     "what": "water only (boat spot): is there really no land?",
+     "kind": "area",
+     "size": "27.2 ac",
+     "sort": 27.2,
+     "reason": "water only: boat or kayak",
+     "id": "US-0685+US-3931@area@channel@36.079,-84.765",
+     "sources": {
+      "USGS water": "saved copy of the USGS map, read 2026-10-28"
      },
      "checked": "2026-10-29"
     },
@@ -37392,44 +34746,6 @@
      "id": "US-2938+US-7609@pota",
      "sources": {
       "POTA history": "activated together by the same call on the same day (26x, POTA history) / outlines come within 44 m of each other"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-2955",
-      "US-5499"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "26 same-day activations",
-     "sort": 26.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2955+US-5499@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (26x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-2972",
-      "US-4525"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "26 same-day activations",
-     "sort": 26.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2972+US-4525@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (26x, POTA history)"
      },
      "checked": "2026-10-29"
     },
@@ -38597,25 +35913,6 @@
      "area": "southeast",
      "state": "",
      "refs": [
-      "US-12421",
-      "US-2166"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "22 same-day activations",
-     "sort": 22.0,
-     "reason": "dropped in pass 2",
-     "id": "US-12421+US-2166@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (22x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
       "US-1879",
       "US-6296"
      ],
@@ -38685,25 +35982,6 @@
      "id": "US-2887+US-8145@pota",
      "sources": {
       "POTA history": "activated together by the same call on the same day (22x, POTA history) / outlines about 0 m apart"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-2955",
-      "US-3971"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "22 same-day activations",
-     "sort": 22.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2955+US-3971@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (22x, POTA history)"
      },
      "checked": "2026-10-29"
     },
@@ -38934,52 +36212,6 @@
       "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (22x, POTA history)"
      },
      "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "US-TN",
-     "refs": [
-      "US-13362",
-      "US-7598"
-     ],
-     "names": {
-      "US-13362": "Chickamauga WMA Wildlife Management Area",
-      "US-7598": "Hiwassee Refuge Wildlife Management Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "21.9 ac",
-     "sort": 21.9,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-13362+US-7598@area@35.435,-84.992",
-     "sources": {
-      "US-13362": "downloaded 2026-10-28",
-      "US-7598": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-TN",
-     "refs": [
-      "US-2974",
-      "US-4525"
-     ],
-     "names": {
-      "US-2974": "Rocky Fork State Park",
-      "US-4525": "Cherokee National Forest"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "21.9 ac",
-     "sort": 21.9,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2974+US-4525@area@36.075,-82.566",
-     "sources": {
-      "US-2974": "downloaded 2026-10-28",
-      "US-4525": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
     },
     {
      "area": "southeast",
@@ -39364,29 +36596,6 @@
     },
     {
      "area": "southeast",
-     "state": "US-TN",
-     "refs": [
-      "US-2955",
-      "US-7609"
-     ],
-     "names": {
-      "US-2955": "Wilson Cumberland Trail State Park",
-      "US-7609": "North Cumberland Wildlife Management Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "20.4 ac",
-     "sort": 20.4,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2955+US-7609@area@36.450,-84.050",
-     "sources": {
-      "US-2955": "downloaded 2026-10-28",
-      "US-7609": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
      "state": "",
      "refs": [
       "US-0416",
@@ -39437,25 +36646,6 @@
      "sort": 20.0,
      "reason": "dropped in pass 3",
      "id": "US-0632+US-4526@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (20x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-10397",
-      "US-4473"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "20 same-day activations",
-     "sort": 20.0,
-     "reason": "dropped in pass 2",
-     "id": "US-10397+US-4473@pota",
      "sources": {
       "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (20x, POTA history)"
      },
@@ -39712,25 +36902,6 @@
      "area": "southeast",
      "state": "",
      "refs": [
-      "US-3935",
-      "US-5492"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "20 same-day activations",
-     "sort": 20.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-3935+US-5492@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (20x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
       "US-4526",
       "US-9941"
      ],
@@ -39798,25 +36969,6 @@
      "sort": 20.0,
      "reason": "dropped in pass 3",
      "id": "US-4633+US-6299@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (20x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-4854",
-      "US-4856"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "20 same-day activations",
-     "sort": 20.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-4854+US-4856@pota",
      "sources": {
       "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (20x, POTA history)"
      },
@@ -40149,25 +37301,6 @@
      "area": "southeast",
      "state": "",
      "refs": [
-      "US-2732",
-      "US-4509"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "19 same-day activations",
-     "sort": 19.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2732+US-4509@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (19x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
       "US-2749",
       "US-6851"
      ],
@@ -40216,25 +37349,6 @@
      "sort": 19.0,
      "reason": "dropped in pass 3",
      "id": "US-2892+US-4523@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (19x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-2980",
-      "US-7611"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "19 same-day activations",
-     "sort": 19.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2980+US-7611@pota",
      "sources": {
       "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (19x, POTA history)"
      },
@@ -40444,25 +37558,6 @@
      "sort": 18.0,
      "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
      "id": "US-11376+US-3699@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (18x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-11918",
-      "US-5493"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "18 same-day activations",
-     "sort": 18.0,
-     "reason": "dropped in pass 3",
-     "id": "US-11918+US-5493@pota",
      "sources": {
       "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (18x, POTA history)"
      },
@@ -40831,29 +37926,6 @@
     },
     {
      "area": "southeast",
-     "state": "US-AL",
-     "refs": [
-      "US-0141",
-      "US-9844"
-     ],
-     "names": {
-      "US-0141": "Key Cave National Wildlife Refuge",
-      "US-9844": "Seven Mile Island Wildlife Management Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "17.4 ac",
-     "sort": 17.4,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-0141+US-9844@area@34.746,-87.778",
-     "sources": {
-      "US-0141": "downloaded 2026-10-28",
-      "US-9844": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
      "state": "",
      "refs": [
       "US-0240",
@@ -41151,25 +38223,6 @@
      "sort": 17.0,
      "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
      "id": "US-10617+US-6325@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (17x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-11856",
-      "US-6937"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "17 same-day activations",
-     "sort": 17.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-11856+US-6937@pota",
      "sources": {
       "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (17x, POTA history)"
      },
@@ -42225,25 +39278,6 @@
      "area": "southeast",
      "state": "",
      "refs": [
-      "US-11019",
-      "US-6936"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "15 same-day activations",
-     "sort": 15.0,
-     "reason": "dropped in pass 2",
-     "id": "US-11019+US-6936@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (15x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
       "US-12136",
       "US-6285"
      ],
@@ -42679,81 +39713,6 @@
     },
     {
      "area": "southeast",
-     "state": "US-TN",
-     "refs": [
-      "US-4525",
-      "US-6938"
-     ],
-     "names": {
-      "US-4525": "Cherokee National Forest",
-      "US-6938": "Pond Mountain State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "14.8 ac",
-     "sort": 14.8,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-4525+US-6938@area@36.536,-81.708",
-     "sources": {
-      "US-4525": "downloaded 2026-10-28",
-      "US-6938": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-10262",
-      "US-4510",
-      "US-6936"
-     ],
-     "names": {
-      "US-10262": "Linville Gorge Wilderness Area",
-      "US-4510": "Pisgah National Forest",
-      "US-6936": "Pisgah State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "14.1 ac",
-     "sort": 14.1,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-10262+US-4510+US-6936@area@35.841,-81.901",
-     "sources": {
-      "US-10262": "downloaded 2026-10-28",
-      "US-4510": "downloaded 2026-10-28",
-      "US-6936": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-10262",
-      "US-4510",
-      "US-6937"
-     ],
-     "names": {
-      "US-10262": "Linville Gorge Wilderness Area",
-      "US-4510": "Pisgah National Forest",
-      "US-6937": "Pisgah WRC State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "14.1 ac",
-     "sort": 14.1,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-10262+US-4510+US-6937@area@35.841,-81.901",
-     "sources": {
-      "US-10262": "downloaded 2026-10-28",
-      "US-4510": "downloaded 2026-10-28",
-      "US-6937": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
      "state": "",
      "refs": [
       "US-0034",
@@ -43117,25 +40076,6 @@
      "area": "southeast",
      "state": "",
      "refs": [
-      "US-2974",
-      "US-4525"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "14 same-day activations",
-     "sort": 14.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2974+US-4525@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (14x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
       "US-3601",
       "US-3713"
      ],
@@ -43374,25 +40314,6 @@
      "sort": 14.0,
      "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
      "id": "US-6289+US-8676@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (14x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-6937",
-      "US-8012"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "14 same-day activations",
-     "sort": 14.0,
-     "reason": "dropped in pass 2",
-     "id": "US-6937+US-8012@pota",
      "sources": {
       "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (14x, POTA history)"
      },
@@ -43977,25 +40898,6 @@
      "area": "southeast",
      "state": "",
      "refs": [
-      "US-4856",
-      "US-6902"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "13 same-day activations",
-     "sort": 13.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-4856+US-6902@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (13x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
       "US-6289",
       "US-6292"
      ],
@@ -44067,29 +40969,6 @@
       "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (13x, POTA history)"
      },
      "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "US-VA",
-     "refs": [
-      "US-1300",
-      "US-9903"
-     ],
-     "names": {
-      "US-1300": "Grayson Highlands State Park",
-      "US-9903": "Mount Rogers National Recreation Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "12.4 ac",
-     "sort": 12.4,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-1300+US-9903@area@36.633,-81.468",
-     "sources": {
-      "US-1300": "downloaded 2026-10-28",
-      "US-9903": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
     },
     {
      "area": "southeast",
@@ -44551,25 +41430,6 @@
      "area": "southeast",
      "state": "",
      "refs": [
-      "US-2914",
-      "US-9226"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "12 same-day activations",
-     "sort": 12.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2914+US-9226@pota",
-     "sources": {
-      "POTA history": "activated together by the same call on the same day (12x, POTA history) / outlines about 0 m apart"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
       "US-2938",
       "US-2955"
      ],
@@ -44620,25 +41480,6 @@
      "id": "US-2949+US-7578@pota",
      "sources": {
       "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (12x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-2955",
-      "US-6243"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "12 same-day activations",
-     "sort": 12.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2955+US-6243@pota",
-     "sources": {
-      "POTA history": "activated together by the same call on the same day (12x, POTA history) / outlines about 0 m apart"
      },
      "checked": "2026-10-29"
     },
@@ -44967,52 +41808,6 @@
     },
     {
      "area": "southeast",
-     "state": "US-GA",
-     "refs": [
-      "US-2176",
-      "US-4473"
-     ],
-     "names": {
-      "US-2176": "Fort Mountain State Park",
-      "US-4473": "Chattahoochee-Oconee National Forest"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "11.3 ac",
-     "sort": 11.3,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2176+US-4473@area@34.756,-84.686",
-     "sources": {
-      "US-2176": "downloaded 2026-10-28",
-      "US-4473": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-SC",
-     "refs": [
-      "US-2908",
-      "US-4523"
-     ],
-     "names": {
-      "US-2908": "Oconee State Park",
-      "US-4523": "Sumter National Forest"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "11.3 ac",
-     "sort": 11.3,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2908+US-4523@area@34.872,-83.087",
-     "sources": {
-      "US-2908": "downloaded 2026-10-28",
-      "US-4523": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
      "state": "",
      "refs": [
       "US-0034",
@@ -45291,63 +42086,6 @@
      "sort": 11.0,
      "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
      "id": "US-2954+US-2960@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-2955",
-      "US-6252"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "11 same-day activations",
-     "sort": 11.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2955+US-6252@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-2955",
-      "US-7880"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "11 same-day activations",
-     "sort": 11.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2955+US-7880@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-2976",
-      "US-5498"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "11 same-day activations",
-     "sort": 11.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2976+US-5498@pota",
      "sources": {
       "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
      },
@@ -45640,52 +42378,6 @@
     },
     {
      "area": "southeast",
-     "state": "US-TN",
-     "refs": [
-      "US-12663",
-      "US-4525"
-     ],
-     "names": {
-      "US-12663": "Ocoee River State Park",
-      "US-4525": "Cherokee National Forest"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "10.7 ac",
-     "sort": 10.7,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-12663+US-4525@area@35.083,-84.490",
-     "sources": {
-      "US-12663": "downloaded 2026-10-28",
-      "US-4525": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-TN",
-     "refs": [
-      "US-2952",
-      "US-4525"
-     ],
-     "names": {
-      "US-2952": "Hiwassee Ocoee State Park",
-      "US-4525": "Cherokee National Forest"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "10.7 ac",
-     "sort": 10.7,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2952+US-4525@area@35.082,-84.490",
-     "sources": {
-      "US-2952": "downloaded 2026-10-28",
-      "US-4525": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
      "state": "US-FL",
      "refs": [
       "US-0256",
@@ -45701,58 +42393,6 @@
      "sources": {
       "US-0256": "downloaded 2026-10-28",
       "US-1907": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-2732",
-      "US-4509",
-      "US-6936"
-     ],
-     "names": {
-      "US-2732": "Gorges State Park",
-      "US-4509": "Nantahala National Forest",
-      "US-6936": "Pisgah State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "10.1 ac",
-     "sort": 10.1,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2732+US-4509+US-6936@area@35.081,-82.955",
-     "sources": {
-      "US-2732": "downloaded 2026-10-28",
-      "US-4509": "downloaded 2026-10-28",
-      "US-6936": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-2732",
-      "US-4509",
-      "US-6937"
-     ],
-     "names": {
-      "US-2732": "Gorges State Park",
-      "US-4509": "Nantahala National Forest",
-      "US-6937": "Pisgah WRC State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "10.1 ac",
-     "sort": 10.1,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2732+US-4509+US-6937@area@35.081,-82.955",
-     "sources": {
-      "US-2732": "downloaded 2026-10-28",
-      "US-4509": "downloaded 2026-10-28",
-      "US-6937": "downloaded 2026-10-28"
      },
      "checked": "2026-10-28"
     },
@@ -45815,25 +42455,6 @@
      "id": "US-0024+US-1886@pota",
      "sources": {
       "POTA history": "activated together by the same call on the same day (10x, POTA history) / outlines come within 90 m of each other"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-0141",
-      "US-9844"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "10 same-day activations",
-     "sort": 10.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-0141+US-9844@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
      },
      "checked": "2026-10-29"
     },
@@ -45993,25 +42614,6 @@
      "area": "southeast",
      "state": "",
      "refs": [
-      "US-10262",
-      "US-6936"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "10 same-day activations",
-     "sort": 10.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-10262+US-6936@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
       "US-10602",
       "US-4559"
      ],
@@ -46024,25 +42626,6 @@
      "id": "US-10602+US-4559@pota",
      "sources": {
       "POTA history": "activated together by the same call on the same day (10x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-11019",
-      "US-6895"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "10 same-day activations",
-     "sort": 10.0,
-     "reason": "dropped in pass 3",
-     "id": "US-11019+US-6895@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
      },
      "checked": "2026-10-29"
     },
@@ -46157,25 +42740,6 @@
      "id": "US-2892+US-9226@pota",
      "sources": {
       "POTA history": "activated together by the same call on the same day (10x, POTA history) / outlines about 0 m apart"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-2955",
-      "US-6270"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "10 same-day activations",
-     "sort": 10.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2955+US-6270@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
      },
      "checked": "2026-10-29"
     },
@@ -46539,173 +43103,6 @@
       "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
      },
      "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-2732",
-      "US-6936"
-     ],
-     "names": {
-      "US-2732": "Gorges State Park",
-      "US-6936": "Pisgah State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "9.9 ac",
-     "sort": 9.9,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2732+US-6936@area@35.096,-82.957",
-     "sources": {
-      "US-2732": "downloaded 2026-10-28",
-      "US-6936": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-2732",
-      "US-6937"
-     ],
-     "names": {
-      "US-2732": "Gorges State Park",
-      "US-6937": "Pisgah WRC State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "9.9 ac",
-     "sort": 9.9,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2732+US-6937@area@35.096,-82.957",
-     "sources": {
-      "US-2732": "downloaded 2026-10-28",
-      "US-6937": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-2732",
-      "US-4509"
-     ],
-     "names": {
-      "US-2732": "Gorges State Park",
-      "US-4509": "Nantahala National Forest"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "9.8 ac",
-     "sort": 9.8,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2732+US-4509@area@35.096,-82.957",
-     "sources": {
-      "US-2732": "downloaded 2026-10-28",
-      "US-4509": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-GA",
-     "refs": [
-      "US-2166",
-      "US-4473"
-     ],
-     "names": {
-      "US-2166": "Amicalola Falls State Park",
-      "US-4473": "Chattahoochee-Oconee National Forest"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "9.8 ac",
-     "sort": 9.8,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2166+US-4473@area@34.568,-84.237",
-     "sources": {
-      "US-2166": "downloaded 2026-10-28",
-      "US-4473": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-TN",
-     "refs": [
-      "US-2976",
-      "US-5498"
-     ],
-     "names": {
-      "US-2976": "Sgt. Alvin C. York State Park",
-      "US-5498": "Pickett State Forest"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "9.3 ac",
-     "sort": 9.3,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2976+US-5498@area@36.560,-84.930",
-     "sources": {
-      "US-2976": "downloaded 2026-10-28",
-      "US-5498": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-4510",
-      "US-6936",
-      "US-8012"
-     ],
-     "names": {
-      "US-4510": "Pisgah National Forest",
-      "US-6936": "Pisgah State Game Land",
-      "US-8012": "Table Rock State Fish Hatchery"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "9.0 ac",
-     "sort": 9.0,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-4510+US-6936+US-8012@area@35.852,-81.832",
-     "sources": {
-      "US-4510": "downloaded 2026-10-28",
-      "US-6936": "downloaded 2026-10-28",
-      "US-8012": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-4510",
-      "US-6937",
-      "US-8012"
-     ],
-     "names": {
-      "US-4510": "Pisgah National Forest",
-      "US-6937": "Pisgah WRC State Game Land",
-      "US-8012": "Table Rock State Fish Hatchery"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "9.0 ac",
-     "sort": 9.0,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-4510+US-6937+US-8012@area@35.852,-81.832",
-     "sources": {
-      "US-4510": "downloaded 2026-10-28",
-      "US-6937": "downloaded 2026-10-28",
-      "US-8012": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
     },
     {
      "area": "southeast",
@@ -47110,44 +43507,6 @@
      "area": "southeast",
      "state": "",
      "refs": [
-      "US-2939",
-      "US-2955"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "9 same-day activations",
-     "sort": 9.0,
-     "reason": "dropped in pass 2",
-     "id": "US-2939+US-2955@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (9x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-2966",
-      "US-6239"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "9 same-day activations",
-     "sort": 9.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2966+US-6239@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (9x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
       "US-2981",
       "US-7617"
      ],
@@ -47490,25 +43849,6 @@
      "area": "southeast",
      "state": "",
      "refs": [
-      "US-6266",
-      "US-9718"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "9 same-day activations",
-     "sort": 9.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-6266+US-9718@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (9x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
       "US-6881",
       "US-6924"
      ],
@@ -47583,140 +43923,6 @@
     },
     {
      "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-9903",
-      "US-9946"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "9 same-day activations",
-     "sort": 9.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-9903+US-9946@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (9x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-4510",
-      "US-8012"
-     ],
-     "names": {
-      "US-4510": "Pisgah National Forest",
-      "US-8012": "Table Rock State Fish Hatchery"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "8.8 ac",
-     "sort": 8.8,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-4510+US-8012@area@35.852,-81.832",
-     "sources": {
-      "US-4510": "downloaded 2026-10-28",
-      "US-8012": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-6936",
-      "US-8012"
-     ],
-     "names": {
-      "US-6936": "Pisgah State Game Land",
-      "US-8012": "Table Rock State Fish Hatchery"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "8.8 ac",
-     "sort": 8.8,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-6936+US-8012@area@35.852,-81.832",
-     "sources": {
-      "US-6936": "downloaded 2026-10-28",
-      "US-8012": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-6937",
-      "US-8012"
-     ],
-     "names": {
-      "US-6937": "Pisgah WRC State Game Land",
-      "US-8012": "Table Rock State Fish Hatchery"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "8.8 ac",
-     "sort": 8.8,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-6937+US-8012@area@35.852,-81.832",
-     "sources": {
-      "US-6937": "downloaded 2026-10-28",
-      "US-8012": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-TN",
-     "refs": [
-      "US-4525",
-      "US-6246"
-     ],
-     "names": {
-      "US-4525": "Cherokee National Forest",
-      "US-6246": "Hampton Creek Cove State Natural Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "8.6 ac",
-     "sort": 8.6,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-4525+US-6246@area@36.141,-82.035",
-     "sources": {
-      "US-4525": "downloaded 2026-10-28",
-      "US-6246": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-GA",
-     "refs": [
-      "US-12421",
-      "US-2166"
-     ],
-     "names": {
-      "US-12421": "Cochrans Creek Wildlife Management Area",
-      "US-2166": "Amicalola Falls State Park"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "8.6 ac",
-     "sort": 8.6,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-12421+US-2166@area@34.560,-84.233",
-     "sources": {
-      "US-12421": "downloaded 2026-10-28",
-      "US-2166": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
      "state": "US-MS",
      "refs": [
       "US-0390",
@@ -47737,29 +43943,6 @@
     },
     {
      "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-11019",
-      "US-6895"
-     ],
-     "names": {
-      "US-11019": "Shining Rock Wilderness Area",
-      "US-6895": "Cold Mountain State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "8.4 ac",
-     "sort": 8.4,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-11019+US-6895@area@35.386,-82.932",
-     "sources": {
-      "US-11019": "downloaded 2026-10-28",
-      "US-6895": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
      "state": "US-SC",
      "refs": [
       "US-4577",
@@ -47775,29 +43958,6 @@
      "sources": {
       "US-4577": "official line (trails bot)",
       "US-6936": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-2753",
-      "US-6952"
-     ],
-     "names": {
-      "US-2753": "South Mountains State Park",
-      "US-6952": "South Mountains State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "8.2 ac",
-     "sort": 8.2,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2753+US-6952@area@35.567,-81.661",
-     "sources": {
-      "US-2753": "downloaded 2026-10-28",
-      "US-6952": "downloaded 2026-10-28"
      },
      "checked": "2026-10-28"
     },
@@ -48394,25 +44554,6 @@
      "area": "southeast",
      "state": "",
      "refs": [
-      "US-2955",
-      "US-6260"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "8 same-day activations",
-     "sort": 8.0,
-     "reason": "dropped in pass 2",
-     "id": "US-2955+US-6260@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (8x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
       "US-3614",
       "US-3637"
      ],
@@ -48679,25 +44820,6 @@
      "area": "southeast",
      "state": "",
      "refs": [
-      "US-4510",
-      "US-8012"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "8 same-day activations",
-     "sort": 8.0,
-     "reason": "dropped in pass 2",
-     "id": "US-4510+US-8012@pota",
-     "sources": {
-      "POTA history": "activated together by the same call on the same day (8x, POTA history) / outlines about 0 m apart"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
       "US-4522",
       "US-5489"
      ],
@@ -48765,25 +44887,6 @@
      "sort": 8.0,
      "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
      "id": "US-4628+US-4643@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (8x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-5507",
-      "US-9932"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "8 same-day activations",
-     "sort": 8.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-5507+US-9932@pota",
      "sources": {
       "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (8x, POTA history)"
      },
@@ -50200,25 +46303,6 @@
      "area": "southeast",
      "state": "",
      "refs": [
-      "US-11918",
-      "US-12714"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "6 same-day activations",
-     "sort": 6.0,
-     "reason": "dropped in pass 3",
-     "id": "US-11918+US-12714@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (6x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
       "US-12034",
       "US-7040"
      ],
@@ -51468,48 +47552,6 @@
       "POTA history": "activated together by the same call on the same day (6x, POTA history) / outlines about 0 m apart"
      },
      "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-9903",
-      "US-9948"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "6 same-day activations",
-     "sort": 6.0,
-     "reason": "dropped in pass 2",
-     "id": "US-9903+US-9948@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (6x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-4510",
-      "US-6927"
-     ],
-     "names": {
-      "US-4510": "Pisgah National Forest",
-      "US-6927": "Nantahala State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "5.8 ac",
-     "sort": 5.8,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-4510+US-6927@area@35.175,-82.988",
-     "sources": {
-      "US-4510": "downloaded 2026-10-28",
-      "US-6927": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
     },
     {
      "area": "southeast",
@@ -52848,52 +48890,6 @@
     },
     {
      "area": "southeast",
-     "state": "US-TN",
-     "refs": [
-      "US-2955",
-      "US-7599"
-     ],
-     "names": {
-      "US-2955": "Wilson Cumberland Trail State Park",
-      "US-7599": "Keyes-Harrison Wildlife Management Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "4.4 ac",
-     "sort": 4.4,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2955+US-7599@area@35.978,-84.858",
-     "sources": {
-      "US-2955": "downloaded 2026-10-28",
-      "US-7599": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-GA",
-     "refs": [
-      "US-2192",
-      "US-4473"
-     ],
-     "names": {
-      "US-2192": "Moccasin Creek State Park",
-      "US-4473": "Chattahoochee-Oconee National Forest"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "4.1 ac",
-     "sort": 4.1,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2192+US-4473@area@34.848,-83.587",
-     "sources": {
-      "US-2192": "downloaded 2026-10-28",
-      "US-4473": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
      "state": "",
      "refs": [
       "US-0007",
@@ -53808,25 +49804,6 @@
      "area": "southeast",
      "state": "",
      "refs": [
-      "US-2754",
-      "US-4859"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "4 same-day activations",
-     "sort": 4.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2754+US-4859@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (4x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
       "US-3378",
       "US-5515"
      ],
@@ -54631,75 +50608,6 @@
     },
     {
      "area": "southeast",
-     "state": "US-TN",
-     "refs": [
-      "US-12361",
-      "US-5490"
-     ],
-     "names": {
-      "US-12361": "Scott's Gulf Wilderness State Park",
-      "US-5490": "Bledsoe State Forest"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "3.5 ac",
-     "sort": 3.5,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-12361+US-5490@area@35.801,-85.273",
-     "sources": {
-      "US-12361": "downloaded 2026-10-28",
-      "US-5490": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-TN",
-     "refs": [
-      "US-2980",
-      "US-7611"
-     ],
-     "names": {
-      "US-2980": "Tims Ford State Park",
-      "US-7611": "Owl Hollow Mill Wildlife Management Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "3.5 ac",
-     "sort": 3.5,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2980+US-7611@area@35.201,-86.165",
-     "sources": {
-      "US-2980": "downloaded 2026-10-28",
-      "US-7611": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-TN",
-     "refs": [
-      "US-2955",
-      "US-3971"
-     ],
-     "names": {
-      "US-2955": "Wilson Cumberland Trail State Park",
-      "US-3971": "Prentice Cooper Wildlife Management Area"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "3.3 ac",
-     "sort": 3.3,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2955+US-3971@area@35.131,-85.362",
-     "sources": {
-      "US-2955": "downloaded 2026-10-28",
-      "US-3971": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
      "state": "",
      "refs": [
       "US-0245",
@@ -55234,25 +51142,6 @@
      "area": "southeast",
      "state": "",
      "refs": [
-      "US-13563",
-      "US-6275"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "3 same-day activations",
-     "sort": 3.0,
-     "reason": "dropped in pass 3",
-     "id": "US-13563+US-6275@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (3x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
       "US-1835",
       "US-4470"
      ],
@@ -55493,25 +51382,6 @@
      "id": "US-2536+US-4493@pota",
      "sources": {
       "POTA history": "activated together by the same call on the same day (3x, POTA history) / outlines about 0 m apart"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-2732",
-      "US-6936"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "3 same-day activations",
-     "sort": 3.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2732+US-6936@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (3x, POTA history)"
      },
      "checked": "2026-10-29"
     },
@@ -56524,67 +52394,6 @@
     },
     {
      "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-9903",
-      "US-9947"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "3 same-day activations",
-     "sort": 3.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-9903+US-9947@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (3x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-9903",
-      "US-9952"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "3 same-day activations",
-     "sort": 3.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-9903+US-9952@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (3x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "US-TN",
-     "refs": [
-      "US-2955",
-      "US-5499"
-     ],
-     "names": {
-      "US-2955": "Wilson Cumberland Trail State Park",
-      "US-5499": "Prentice Cooper State Forest"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "2.9 ac",
-     "sort": 2.9,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2955+US-5499@area@35.130,-85.364",
-     "sources": {
-      "US-2955": "downloaded 2026-10-28",
-      "US-5499": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
      "state": "US-FL",
      "refs": [
       "US-10602",
@@ -56680,127 +52489,6 @@
      "sources": {
       "US-0250": "downloaded 2026-10-28",
       "US-6303": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-11856",
-      "US-4510",
-      "US-6936"
-     ],
-     "names": {
-      "US-11856": "Fonta-Flora State Trail",
-      "US-4510": "Pisgah National Forest",
-      "US-6936": "Pisgah State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "2.2 ac",
-     "sort": 2.2,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-11856+US-4510+US-6936@area@35.638,-82.212",
-     "sources": {
-      "US-11856": "downloaded 2026-10-28",
-      "US-4510": "downloaded 2026-10-28",
-      "US-6936": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-11856",
-      "US-4510",
-      "US-6937"
-     ],
-     "names": {
-      "US-11856": "Fonta-Flora State Trail",
-      "US-4510": "Pisgah National Forest",
-      "US-6937": "Pisgah WRC State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "2.2 ac",
-     "sort": 2.2,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-11856+US-4510+US-6937@area@35.638,-82.212",
-     "sources": {
-      "US-11856": "downloaded 2026-10-28",
-      "US-4510": "downloaded 2026-10-28",
-      "US-6937": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-11856",
-      "US-4510"
-     ],
-     "names": {
-      "US-11856": "Fonta-Flora State Trail",
-      "US-4510": "Pisgah National Forest"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "2.2 ac",
-     "sort": 2.2,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-11856+US-4510@area@35.638,-82.212",
-     "sources": {
-      "US-11856": "downloaded 2026-10-28",
-      "US-4510": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-11856",
-      "US-6936"
-     ],
-     "names": {
-      "US-11856": "Fonta-Flora State Trail",
-      "US-6936": "Pisgah State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "2.2 ac",
-     "sort": 2.2,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-11856+US-6936@area@35.638,-82.212",
-     "sources": {
-      "US-11856": "downloaded 2026-10-28",
-      "US-6936": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
-     "state": "US-NC",
-     "refs": [
-      "US-11856",
-      "US-6937"
-     ],
-     "names": {
-      "US-11856": "Fonta-Flora State Trail",
-      "US-6937": "Pisgah WRC State Game Land"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "2.2 ac",
-     "sort": 2.2,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-11856+US-6937@area@35.638,-82.212",
-     "sources": {
-      "US-11856": "downloaded 2026-10-28",
-      "US-6937": "downloaded 2026-10-28"
      },
      "checked": "2026-10-28"
     },
@@ -57304,25 +52992,6 @@
      "area": "southeast",
      "state": "",
      "refs": [
-      "US-11019",
-      "US-6937"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "2 same-day activations",
-     "sort": 2.0,
-     "reason": "dropped in pass 2",
-     "id": "US-11019+US-6937@pota",
-     "sources": {
-      "POTA history": "activated together by the same call on the same day (2x, POTA history) / outlines about 0 m apart"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
       "US-11241",
       "US-2955"
      ],
@@ -57333,25 +53002,6 @@
      "sort": 2.0,
      "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
      "id": "US-11241+US-2955@pota",
-     "sources": {
-      "POTA history": "activated together by the same call on the same day (2x, POTA history) / outlines about 0 m apart"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-11856",
-      "US-6936"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "2 same-day activations",
-     "sort": 2.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-11856+US-6936@pota",
      "sources": {
       "POTA history": "activated together by the same call on the same day (2x, POTA history) / outlines about 0 m apart"
      },
@@ -57846,25 +53496,6 @@
      "sort": 2.0,
      "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
      "id": "US-2535+US-4496@pota",
-     "sources": {
-      "POTA history": "activated together by the same call on the same day (2x, POTA history) / outlines about 0 m apart"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-2732",
-      "US-6937"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "2 same-day activations",
-     "sort": 2.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2732+US-6937@pota",
      "sources": {
       "POTA history": "activated together by the same call on the same day (2x, POTA history) / outlines about 0 m apart"
      },
@@ -59297,29 +54928,6 @@
     },
     {
      "area": "southeast",
-     "state": "US-GA",
-     "refs": [
-      "US-2167",
-      "US-4473"
-     ],
-     "names": {
-      "US-2167": "Black Rock Mountain State Park",
-      "US-4473": "Chattahoochee-Oconee National Forest"
-     },
-     "what": "not sure",
-     "kind": "area",
-     "size": "1.8 ac",
-     "sort": 1.8,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-2167+US-4473@area@34.911,-83.426",
-     "sources": {
-      "US-2167": "downloaded 2026-10-28",
-      "US-4473": "downloaded 2026-10-28"
-     },
-     "checked": "2026-10-28"
-    },
-    {
-     "area": "southeast",
      "state": "US-TN",
      "refs": [
       "US-3959",
@@ -59379,6 +54987,29 @@
      "sources": {
       "US-0417": "downloaded 2026-10-28",
       "US-2749": "downloaded 2026-10-28"
+     },
+     "checked": "2026-10-28"
+    },
+    {
+     "area": "southeast",
+     "state": "US-NC",
+     "refs": [
+      "US-4509",
+      "US-6928"
+     ],
+     "names": {
+      "US-4509": "Nantahala National Forest",
+      "US-6928": "Needmore State Game Land"
+     },
+     "what": "not sure",
+     "kind": "area",
+     "size": "1.2 ac",
+     "sort": 1.2,
+     "reason": "the outlines overlap, but the Forest Service ownership map (Basic Ownership, 2015 data) does not show this patch as the agency's land (that map may be out of date): check the official map; PAD-US cross-check",
+     "id": "US-4509+US-6928@area@35.078,-83.374",
+     "sources": {
+      "US-4509": "downloaded 2026-10-28",
+      "US-6928": "downloaded 2026-10-28"
      },
      "checked": "2026-10-28"
     },
@@ -59625,25 +55256,6 @@
      "sort": 1.0,
      "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
      "id": "US-0577+US-5507@pota",
-     "sources": {
-      "POTA history": "activated together by the same call on the same day (1x, POTA history) / outlines about 0 m apart"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-0577",
-      "US-7790"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "1 same-day activations",
-     "sort": 1.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-0577+US-7790@pota",
      "sources": {
       "POTA history": "activated together by the same call on the same day (1x, POTA history) / outlines about 0 m apart"
      },
@@ -60062,25 +55674,6 @@
      "sort": 1.0,
      "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
      "id": "US-10593+US-3640@pota",
-     "sources": {
-      "POTA history": "activated together by the same call on the same day (1x, POTA history) / outlines about 0 m apart"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-11020",
-      "US-6937"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "1 same-day activations",
-     "sort": 1.0,
-     "reason": "dropped in pass 2",
-     "id": "US-11020+US-6937@pota",
      "sources": {
       "POTA history": "activated together by the same call on the same day (1x, POTA history) / outlines about 0 m apart"
      },
@@ -64365,25 +59958,6 @@
      "area": "southeast",
      "state": "",
      "refs": [
-      "US-6936",
-      "US-8012"
-     ],
-     "names": {},
-     "what": "POTA history says people activate these together, our outlines say no",
-     "kind": "pair",
-     "size": "1 same-day activations",
-     "sort": 1.0,
-     "reason": "dropped in pass 2",
-     "id": "US-6936+US-8012@pota",
-     "sources": {
-      "POTA history": "activated together by the same call on the same day (1x, POTA history) / outlines about 0 m apart"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
       "US-6937",
       "US-6967"
      ],
@@ -64462,6 +60036,26 @@
       "US-3959": "downloaded 2026-10-28",
       "US-3963": "downloaded 2026-10-28",
       "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
+     },
+     "checked": "2026-10-28"
+    },
+    {
+     "area": "southeast",
+     "state": "US-TN",
+     "refs": [
+      "US-2955",
+      "US-7599"
+     ],
+     "names": {},
+     "what": "not sure",
+     "kind": "area",
+     "size": "0.7 ac",
+     "sort": 0.7,
+     "reason": "no public owner on the ownership map (PAD-US fee records) at every part of the spot: could be private land under the designations",
+     "id": "US-2955+US-7599@area@35.982,-84.841",
+     "sources": {
+      "US-2955": "downloaded 2026-10-28",
+      "US-7599": "downloaded 2026-10-28"
      },
      "checked": "2026-10-28"
     },
