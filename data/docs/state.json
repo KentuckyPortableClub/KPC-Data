@@ -127,11 +127,18 @@
    "updated": "2026-10-28"
   },
   "US-PA": {
-   "status": "partial",
+   "status": "done",
    "parks": 494,
-   "checked": 175,
-   "left": 319,
-   "updated": "2026-10-28"
+   "checked": 494,
+   "left": 0,
+   "updated": "2026-10-29"
+  },
+  "US-NY": {
+   "status": "partial",
+   "parks": 851,
+   "checked": 375,
+   "left": 476,
+   "updated": "2026-10-29"
   }
  },
  "hosts": {
@@ -151,32 +158,33 @@
   "map.co.door.wi.us": 1793314121.8248734,
   "mobile-maps-files.dnr.state.mn.us": 1793316407.4270828,
   "iowaculture.gov": 1793316751.8942606,
-  "www.cgcounty.org": 1793316859.6578937
+  "www.cgcounty.org": 1793316859.6578937,
+  "www.lclt.org": 1793322015.230936
  },
  "last": {
-  "when": "2026-10-28",
+  "when": "2026-10-29",
   "areas": [
-   "US-MN",
-   "US-IA",
-   "US-ND",
-   "US-SD",
    "US-PA",
    "US-NY",
    "US-NJ",
-   "US-CT"
+   "US-CT",
+   "US-RI",
+   "US-MA",
+   "US-VT",
+   "US-NH"
   ],
   "stat": {
-   "requests": 1750,
-   "parks": 635,
-   "maps_ok": 333,
-   "maps_found": 285,
-   "dates": 11,
-   "rules": 367,
-   "browser": 125,
-   "robots": 5,
-   "strikes": 6,
-   "errors": 6,
-   "skipped_fresh": 294
+   "requests": 1619,
+   "parks": 694,
+   "maps_ok": 481,
+   "maps_found": 453,
+   "dates": 52,
+   "rules": 348,
+   "browser": 308,
+   "robots": 331,
+   "strikes": 3,
+   "errors": 3,
+   "skipped_fresh": 175
   }
  }
 }
