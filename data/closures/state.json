@@ -3,17 +3,17 @@
  "areas": {
   "US-KY": {
    "counts": {
-    "hunt": 15,
-    "note": 55,
+    "hunt": 11,
+    "note": 59,
     "part": 20,
     "seasonal": 0,
-    "taken_down": 0,
-    "whole": 3
+    "taken_down": 1,
+    "whole": 1
    },
-   "failed": 3,
-   "items": 93,
-   "read": "2026-10-29T14:31Z",
-   "sources": 74,
+   "failed": 0,
+   "items": 92,
+   "read": "2026-10-29T14:56Z",
+   "sources": 73,
    "status": "done"
   }
  },
@@ -26,43 +26,31 @@
   "done": [
    "US-KY"
   ],
-  "failed": [
-   {
-    "area": "US-KY",
-    "src": "ky-parks-api",
-    "url": "https://parks.ky.gov/api/default/alerts?$top=100",
-    "why": "rest (host resting after an earlier strike; last items kept)"
-   },
-   {
-    "area": "US-KY",
-    "src": "ky-parks-closures",
-    "url": "https://parks.ky.gov/park-closures",
-    "why": "rest (host resting after an earlier strike; last items kept)"
-   }
-  ],
+  "failed": [],
   "manners": {
    "arcgis_exempt": 0,
    "errors": 0,
-   "requests": 104,
-   "rested": 2,
+   "keyed_api": 1,
+   "requests": 105,
+   "rested": 0,
    "robots": 0,
    "strikes": 0
   },
   "stat": {
    "items": 0,
-   "pages": 82,
+   "pages": 83,
    "pdfs": 17,
-   "requests": 106,
-   "sentences": 426,
-   "sources_failed": 2,
-   "unmatched": 135,
+   "requests": 105,
+   "sentences": 429,
+   "sources_failed": 0,
+   "unmatched": 139,
    "unreadable": 234
   },
-  "when": "2026-10-29T14:31Z"
+  "when": "2026-10-29T14:56Z"
  },
  "test": {
   "matched": 29,
-  "only_here": 62,
+  "only_here": 60,
   "only_there": [
    "hc-US-3831-2026-11-15",
    "hc-US-3797-2026-10-15",
@@ -71,6 +59,6 @@
   "own": 32,
   "result": "PASS",
   "when": "2026-10-29",
-  "why": "29 of 32 of Kentucky's own reader's items found here on the same park (90%); 62 only here"
+  "why": "29 of 32 of Kentucky's own reader's items found here on the same park (90%); 60 only here"
  }
 }
