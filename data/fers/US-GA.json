@@ -5996,20 +5996,6 @@
     "US-0662": [
      [
       [
-       -84.089374,
-       34.136997
-      ],
-      [
-       -84.087951,
-       34.139023
-      ],
-      [
-       -84.087348,
-       34.139803
-      ]
-     ],
-     [
-      [
        -84.087303,
        34.140893
       ],
@@ -6038,8 +6024,22 @@
        34.140953
       ],
       [
-       -84.091834,
-       34.141827
+       -84.091727,
+       34.144615
+      ]
+     ],
+     [
+      [
+       -84.089374,
+       34.136997
+      ],
+      [
+       -84.087951,
+       34.139023
+      ],
+      [
+       -84.087348,
+       34.139803
       ]
      ]
     ],
@@ -6125,7 +6125,8 @@
    "lines_read": "2026-10-29",
    "map_dates": {
     "US-0662": "downloaded 2026-10-28",
-    "US-7860": "downloaded 2026-10-28"
+    "US-7860": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-0662": "Chattahoochee River National Recreation Area",
@@ -13247,7 +13248,8 @@
    "lines_read": "2026-10-29",
    "map_dates": {
     "US-12417": "downloaded 2026-10-28",
-    "US-4473": "downloaded 2026-10-28"
+    "US-4473": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-04-19 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-12417": "Rich Mountain Cartecay Tract Wildlife Management Area",
@@ -14112,7 +14114,7 @@
      34.76761
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 5746
   },
@@ -17453,10 +17455,6 @@
    ],
    "pairs_around": [
     "US-12418+US-2202"
-   ],
-   "pairs_here": [
-    "US-12418+US-4473",
-    "US-2202+US-4473"
    ],
    "passes": [
     1,
@@ -29684,7 +29682,8 @@
    "lines_read": "2026-10-29",
    "map_dates": {
     "US-12421": "downloaded 2026-10-28",
-    "US-2166": "downloaded 2026-10-28"
+    "US-2166": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-04-19 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-12421": "Cochrans Creek Wildlife Management Area",
@@ -29724,7 +29723,7 @@
      34.560772
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 105
   },
@@ -29901,7 +29900,8 @@
    "lines_read": "2026-10-29",
    "map_dates": {
     "US-2166": "downloaded 2026-10-28",
-    "US-4473": "downloaded 2026-10-28"
+    "US-4473": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-04-19 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-2166": "Amicalola Falls State Park",
@@ -29954,7 +29954,7 @@
     ]
    ],
    "small": "small overlap: tight fit, check carefully",
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 55
   },
@@ -30305,9 +30305,11 @@
     ]
    },
    "lines_read": "2026-10-29",
+   "list": "Very tight (members only)",
    "map_dates": {
     "US-2167": "downloaded 2026-10-28",
-    "US-4473": "downloaded 2026-10-28"
+    "US-4473": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-04-19 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-2167": "Black Rock Mountain State Park",
@@ -30379,7 +30381,7 @@
      34.909399
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "very tight: could be map error: check both official maps on the ground",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "water_checked": "2026-10-29",
    "wide_m": 31
@@ -39480,9 +39482,11 @@
     ]
    },
    "lines_read": "2026-10-29",
+   "list": "Very tight (members only)",
    "map_dates": {
     "US-2176": "downloaded 2026-10-28",
-    "US-4473": "downloaded 2026-10-28"
+    "US-4473": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-04-19 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-2176": "Fort Mountain State Park",
@@ -39526,7 +39530,7 @@
      34.752517
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "very tight: could be map error: check both official maps on the ground",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "water_checked": "2026-10-29",
    "wide_m": 45
@@ -43098,7 +43102,8 @@
    "lines_read": "2026-10-29",
    "map_dates": {
     "US-2192": "downloaded 2026-10-28",
-    "US-4473": "downloaded 2026-10-28"
+    "US-4473": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-04-19 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-2192": "Moccasin Creek State Park",
@@ -43143,7 +43148,7 @@
     ]
    ],
    "small": "small overlap: tight fit, check carefully",
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 75
   },
@@ -461061,7 +461066,8 @@
    "lines_read": "2026-10-29",
    "map_dates": {
     "US-2199": "downloaded 2026-10-28",
-    "US-3718": "downloaded 2026-10-28"
+    "US-3718": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-04-19 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-2199": "Smithgall Woods State Park",
@@ -461121,7 +461127,7 @@
      34.682942
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 385
   },
@@ -463156,7 +463162,8 @@
    "lines_read": "2026-10-29",
    "map_dates": {
     "US-2206": "downloaded 2026-10-28",
-    "US-4473": "downloaded 2026-10-28"
+    "US-4473": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-04-19 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-2206": "Vogel State Park",
@@ -463216,7 +463223,7 @@
      34.75988
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 219
   },
@@ -478072,7 +478079,7 @@
      34.673637
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 3990
   },
@@ -546271,7 +546278,8 @@
    "lines_read": "2026-10-29",
    "map_dates": {
     "US-4473": "downloaded 2026-10-28",
-    "US-7135": "downloaded 2026-10-28"
+    "US-7135": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-04-19 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-4473": "Chattahoochee-Oconee National Forest",
@@ -547017,7 +547025,7 @@
      34.70766
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 6385
   },
@@ -579440,7 +579448,8 @@
    "lines_read": "2026-10-29",
    "map_dates": {
     "US-4473": "downloaded 2026-10-28",
-    "US-7137": "downloaded 2026-10-28"
+    "US-7137": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-04-19 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-4473": "Chattahoochee-Oconee National Forest",
@@ -580105,7 +580114,7 @@
      34.799544
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 4997
   },
@@ -581076,7 +581085,8 @@
    "map_dates": {
     "US-4473": "downloaded 2026-10-28",
     "US-7138": "downloaded 2026-10-28",
-    "US-7447": "downloaded 2026-10-28"
+    "US-7447": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-04-19 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-4473": "Chattahoochee-Oconee National Forest",
@@ -581086,6 +581096,11 @@
    "notes": [
     "check the agency's closures and seasons before you go",
     "restricted access (PAD-US): check the agency rules"
+   ],
+   "pairs_around": [
+    "US-4473+US-7138",
+    "US-4473+US-7447",
+    "US-7138+US-7447"
    ],
    "passes": [
     1,
@@ -581121,7 +581136,7 @@
      34.701551
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 385
   },
@@ -592601,12 +592616,16 @@
    "lines_read": "2026-10-29",
    "map_dates": {
     "US-4473": "downloaded 2026-10-28",
-    "US-7138": "downloaded 2026-10-28"
+    "US-7138": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-04-19 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-4473": "Chattahoochee-Oconee National Forest",
     "US-7138": "Chestatee Wildlife Management Area"
    },
+   "nfer_here": [
+    "US-4473+US-7138+US-7447@area@34.700,-83.927"
+   ],
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
@@ -593433,7 +593452,7 @@
      34.704723
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 4651
   },
@@ -626052,7 +626071,8 @@
    "lines_read": "2026-10-29",
    "map_dates": {
     "US-4473": "downloaded 2026-10-28",
-    "US-7446": "downloaded 2026-10-28"
+    "US-7446": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-04-19 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-4473": "Chattahoochee-Oconee National Forest",
@@ -626696,7 +626716,7 @@
      34.987285
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 8385
   },
@@ -660507,12 +660527,16 @@
    "lines_read": "2026-10-29",
    "map_dates": {
     "US-4473": "downloaded 2026-10-28",
-    "US-7447": "downloaded 2026-10-28"
+    "US-7447": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-04-19 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-4473": "Chattahoochee-Oconee National Forest",
     "US-7447": "Chattahoochee Wildlife Management Area"
    },
+   "nfer_here": [
+    "US-4473+US-7138+US-7447@area@34.700,-83.927"
+   ],
    "notes": [
     "check the agency's closures and seasons before you go",
     "restricted access (PAD-US): check the agency rules"
@@ -661705,7 +661729,7 @@
      34.824283
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 5895
   },
@@ -676402,7 +676426,8 @@
    "lines_read": "2026-10-29",
    "map_dates": {
     "US-4473": "downloaded 2026-10-28",
-    "US-7450": "downloaded 2026-10-28"
+    "US-7450": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-04-19 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-4473": "Chattahoochee-Oconee National Forest",
@@ -677366,7 +677391,7 @@
      34.969297
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 5385
   },
@@ -689025,7 +689050,8 @@
    "lines_read": "2026-10-29",
    "map_dates": {
     "US-4473": "downloaded 2026-10-28",
-    "US-7451": "downloaded 2026-10-28"
+    "US-7451": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-04-19 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-4473": "Chattahoochee-Oconee National Forest",
@@ -689974,7 +690000,7 @@
      34.919904
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 4383
   },
@@ -695515,7 +695541,8 @@
    "lines_read": "2026-10-29",
    "map_dates": {
     "US-4473": "downloaded 2026-10-28",
-    "US-7452": "downloaded 2026-10-28"
+    "US-7452": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-04-19 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-4473": "Chattahoochee-Oconee National Forest",
@@ -696380,7 +696407,7 @@
      34.76761
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 5746
   },
@@ -711918,12 +711945,16 @@
    "lines_read": "2026-10-29",
    "map_dates": {
     "US-7138": "downloaded 2026-10-28",
-    "US-7447": "downloaded 2026-10-28"
+    "US-7447": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-04-19 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-7138": "Chestatee Wildlife Management Area",
     "US-7447": "Chattahoochee Wildlife Management Area"
    },
+   "nfer_here": [
+    "US-4473+US-7138+US-7447@area@34.700,-83.927"
+   ],
    "notes": [
     "check the agency's closures and seasons before you go",
     "restricted access (PAD-US): check the agency rules"
@@ -711976,7 +712007,7 @@
      34.70154
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 385
   },

@@ -1216,7 +1216,8 @@
    "lines_read": "2026-10-29",
    "map_dates": {
     "US-0141": "downloaded 2026-10-28",
-    "US-9844": "downloaded 2026-10-28"
+    "US-9844": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-04-19 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-0141": "Key Cave National Wildlife Refuge",
@@ -1278,7 +1279,7 @@
     ]
    ],
    "small": "small overlap: tight fit, check carefully",
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 51
   },
@@ -14927,7 +14928,8 @@
    "map_dates": {
     "US-10396": "downloaded 2026-10-28",
     "US-3706": "downloaded 2026-10-28",
-    "US-4452": "downloaded 2026-10-28"
+    "US-4452": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-04-19 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-10396": "Black Warrior Wildlife Management Area",
@@ -14936,6 +14938,13 @@
    },
    "notes": [
     "check the agency's closures and seasons before you go"
+   ],
+   "pairs_around": [
+    "US-10396+US-4452"
+   ],
+   "pairs_here": [
+    "US-10396+US-3706",
+    "US-3706+US-4452"
    ],
    "passes": [
     1,
@@ -16030,7 +16039,7 @@
      34.381681
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 5109
   },
@@ -20801,7 +20810,8 @@
    "lines_read": "2026-10-29",
    "map_dates": {
     "US-10396": "downloaded 2026-10-28",
-    "US-3706": "downloaded 2026-10-28"
+    "US-3706": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-04-19 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-10396": "Black Warrior Wildlife Management Area",
@@ -21869,7 +21879,7 @@
      34.381679
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "merged into one row: US-10396+US-3706+US-4452@area@34.348,-87.436 (the same patch as the 3-fer)",
    "water_checked": "2026-10-29",
    "wide_m": 6598
   },
@@ -51324,12 +51334,16 @@
    "lines_read": "2026-10-29",
    "map_dates": {
     "US-10396": "downloaded 2026-10-28",
-    "US-4452": "downloaded 2026-10-28"
+    "US-4452": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-04-19 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-10396": "Black Warrior Wildlife Management Area",
     "US-4452": "William B. Bankhead National Forest"
    },
+   "nfer_here": [
+    "US-10396+US-3706+US-4452@area@34.348,-87.436"
+   ],
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
@@ -52076,7 +52090,7 @@
      34.331852
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 5535
   },
@@ -60409,7 +60423,8 @@
    "lines_read": "2026-10-29",
    "map_dates": {
     "US-10428": "downloaded 2026-10-28",
-    "US-3694": "downloaded 2026-10-28"
+    "US-3694": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-04-19 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-10428": "Walls of Jericho State Natural Area",
@@ -60783,7 +60798,7 @@
      34.989609
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 4045
   },
@@ -91231,7 +91246,8 @@
    "lines_read": "2026-10-29",
    "map_dates": {
     "US-3706": "downloaded 2026-10-28",
-    "US-4452": "downloaded 2026-10-28"
+    "US-4452": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-04-19 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-3706": "Sipsey Wilderness Wilderness Area",
@@ -92295,7 +92311,7 @@
      34.381679
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "merged into one row: US-10396+US-3706+US-4452@area@34.348,-87.436 (the same patch as the 3-fer)",
    "water_checked": "2026-10-29",
    "wide_m": 5112
   },

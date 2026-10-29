@@ -13,21 +13,17 @@
   "US-MS"
  ],
  "since": "2026-10-28",
- "date": "2026-10-29 01:02 UTC",
+ "date": "2026-10-29 01:43 UTC",
  "verdict": "STOPPED",
  "why": [
-  "water service: US-TN: 36 rows not checked because the USGS water map did not answer (run the worker again)",
-  "water service: US-NC: 66 rows not checked because the USGS water map did not answer (run the worker again)",
-  "water service: US-VA: 20 rows not checked because the USGS water map did not answer (run the worker again)",
-  "water service: US-GA: 19 rows not checked because the USGS water map did not answer (run the worker again)",
-  "water service: US-AL: 6 rows not checked because the USGS water map did not answer (run the worker again)",
-  "water service: US-SC: 2 rows not checked because the USGS water map did not answer (run the worker again)",
+  "water service: US-TN: 1 rows not checked because the USGS water map did not answer (run the worker again)",
+  "water service: US-VA: 13 rows not checked because the USGS water map did not answer (run the worker again)",
   "US-MS: 24 rows still waiting for a pass (out of time: run the worker again)"
  ],
  "known_answers": "18/18 on 2026-10-29",
  "missing_check": {
-  "FOUND": 450,
-  "DROPPED": 1620,
+  "FOUND": 523,
+  "DROPPED": 1547,
   "NEVER LOOKED AT": 14393
  },
  "report": {
@@ -47,22 +43,22 @@
    "pairs tested": 0
   },
   "pass5": {
-   "checked": 439,
+   "checked": 437,
    "date": "2026-10-29",
    "pairs tested": 0,
-   "still not checked": 136
+   "still not checked": 1
   }
  },
  "US-TN": {
-  "rows": 687,
-  "live": 46,
+  "rows": 688,
+  "live": 82,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "the outlines overlap, but the PAD-US Park Service fee record": 2,
    "the ownership map shows more than one owner across the spot": 1,
-   "water not checked": 36,
    "no public owner on the ownership map": 1,
+   "water not checked": 1,
    "low-confidence outline for Land Between the Lakes National R": 1
   },
   "dropped": 514,
@@ -70,26 +66,25 @@
  },
  "US-NC": {
   "rows": 901,
-  "live": 49,
+  "live": 94,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "the ownership map shows more than one owner across the spot": 1,
    "the outlines overlap, but the PAD-US Park Service fee record": 2,
-   "water not checked": 66,
    "the outlines overlap, but the Forest Service ownership map": 1
   },
   "dropped": 593,
-  "merged": 189
+  "merged": 210
  },
  "US-VA": {
-  "rows": 143,
-  "live": 35,
+  "rows": 144,
+  "live": 43,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "the ownership map shows more than one owner across the spot": 3,
-   "water not checked": 20,
+   "water not checked": 13,
    "no public owner on the ownership map": 1
   },
   "dropped": 35,
@@ -108,33 +103,28 @@
  },
  "US-GA": {
   "rows": 289,
-  "live": 39,
+  "live": 58,
   "waiting": 0,
   "unfinished": 0,
-  "not_sure": {
-   "water not checked": 19
-  },
+  "not_sure": {},
   "dropped": 166,
   "merged": 65
  },
  "US-AL": {
   "rows": 77,
-  "live": 17,
+  "live": 21,
   "waiting": 0,
   "unfinished": 0,
-  "not_sure": {
-   "water not checked": 6
-  },
+  "not_sure": {},
   "dropped": 39,
-  "merged": 15
+  "merged": 17
  },
  "US-SC": {
   "rows": 234,
-  "live": 28,
+  "live": 30,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "water not checked": 2,
    "the ownership map shows more than one owner across the spot": 1,
    "no public owner on the ownership map": 2
   },
