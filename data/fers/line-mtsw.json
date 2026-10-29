@@ -7,42 +7,40 @@
   "US-NM"
  ],
  "since": "2026-10-29",
- "date": "2026-10-29 11:28 UTC",
+ "date": "2026-10-29 17:35 UTC",
  "verdict": "STOPPED",
  "why": [
   "pass1 stopped for time: not every pair was looked at (run the fetcher again with more minutes)",
-  "pass 1 tested 1296 of 1713 pairs whose boxes touch",
-  "water not checked: US-NV: 1 rows (the USGS water map / files had no answer there): never READY with one",
-  "US-AZ: 1 live 'same land' rows with pins over 30 km apart (a wrong join in the key): US-0030+US-7887@same land@36.155,-113.535"
+  "pass 1 tested 1468 of 1717 pairs whose boxes touch"
  ],
  "known_answers": "19/19 on 2026-10-29",
  "missing_check": {
-  "FOUND": 80,
-  "DROPPED": 169,
-  "NEVER LOOKED AT": 1912
+  "FOUND": 93,
+  "DROPPED": 380,
+  "NEVER LOOKED AT": 1681
  },
  "report": {
   "pass1": {
    "date": "2026-10-29",
-   "pairs tested": 1296,
-   "pairs whose boxes touch": 1713,
+   "pairs tested": 1468,
+   "pairs whose boxes touch": 1717,
    "stopped for time": true
   },
   "pass2": {
-   "agree with the pass before": 1268,
+   "agree with the pass before": 1336,
    "date": "2026-10-29",
-   "pairs tested": 275
+   "pairs tested": 297
   },
   "pass3": {
-   "agree with the pass before": 779,
+   "agree with the pass before": 811,
    "date": "2026-10-29",
-   "pairs tested": 266
+   "pairs tested": 287
   },
   "pass5": {
-   "checked": 27,
+   "checked": 33,
    "date": "2026-10-29",
    "pairs tested": 0,
-   "still not checked": 1
+   "still not checked": 0
   }
  },
  "files": {
@@ -52,42 +50,38 @@
  },
  "US-NV": {
   "rows": 861,
-  "live": 48,
+  "live": 49,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "the agency ownership map did not answer": 81,
-   "no public owner on the ownership map": 7,
-   "water not checked": 1
+   "the agency ownership map did not answer": 38,
+   "no public owner on the ownership map": 7
   },
-  "dropped": 409,
+  "dropped": 452,
   "merged": 315
  },
- "water_weak": {
-  "US-NV": 1
- },
  "US-AZ": {
-  "rows": 488,
-  "live": 31,
+  "rows": 509,
+  "live": 36,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "the agency ownership map did not answer": 1,
    "no public owner on the ownership map": 5
   },
-  "dropped": 243,
-  "merged": 208
+  "dropped": 254,
+  "merged": 213
  },
  "US-NM": {
-  "rows": 12,
-  "live": 4,
+  "rows": 61,
+  "live": 10,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "no public owner on the ownership map": 1
   },
-  "dropped": 2,
-  "merged": 5
+  "dropped": 33,
+  "merged": 17
  },
  "states_ready": [],
  "states_held": [

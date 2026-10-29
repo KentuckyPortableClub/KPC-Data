@@ -6,84 +6,4976 @@
  "pass5": "2026-10-29",
  "spots": [
   {
+   "access": null,
+   "access_pin": {
+    "at": [
+     36.836943,
+     -108.007934
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 7
+   },
    "box": [
-    -106.10772,
-    34.25575,
-    -106.0727,
-    34.26372
+    -108.00789,
+    36.83261,
+    -108.00491,
+    36.83734
    ],
    "center": [
-    34.260312,
-    -106.088168
+    36.835602,
+    -108.006926
    ],
    "checked": "2026-10-29",
    "found": "2026-10-29",
-   "id": "US-11813+US-11814@same land@34.260,-106.088",
-   "kind": "same land",
-   "label": "Same land, two park numbers",
+   "ground": [
+    "Park Service"
+   ],
+   "id": "US-0903+US-4575@trail@36.835,-108.007",
+   "kind": "trail",
+   "len_m": 495,
+   "line_source": {
+    "US-4575": {
+     "by": "National Park Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4575.json",
+     "note": "approximate line (national historic trail, about 1:100,000)"
+    }
+   },
+   "map_dates": {
+    "US-0903": "downloaded 2026-10-29",
+    "US-4575": "official line (trails bot)"
+   },
    "maps": [
     [
-     "US-11813",
-     "https://www.nps.gov/sapu/index.htm"
+     "US-0903",
+     "https://www.nps.gov/azru/planyourvisit/maps.htm"
     ],
     [
-     "US-11814",
-     "https://www.nps.gov/sapu/index.htm"
+     "US-4575",
+     "https://www.nps.gov/olsp/planyourvisit/upload/National-Park-Service-Old-Spanish-Brochure-Map-508.pdf"
     ]
    ],
    "names": {
-    "US-11813": "Salinas Pueblo Missions, Abo Unit National Monument",
-    "US-11814": "Salinas Pueblo Missions, Quarai unit, National Monument"
+    "US-0903": "Aztec Ruins National Monument",
+    "US-4575": "Old Spanish National Historic Trail"
    },
-   "note": "both park numbers are joined to the same official outline (Salinas Pueblo Missions National Monument); POTA lists them separately: check POTA's current list",
+   "note": "approximate line: Old Spanish National Historic Trail",
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (Park Service)",
    "passes": [
     1,
     1,
     1
    ],
+   "pins_inside": {
+    "US-0903": true,
+    "US-4575": true
+   },
    "refs": [
-    "US-11813",
-    "US-11814"
+    "US-0903",
+    "US-4575"
    ],
    "shape": [
     [
-     -106.07614,
-     34.26372
+     -108.007889,
+     36.837335
     ],
     [
-     -106.07593,
-     34.26008
+     -108.006015,
+     36.833951
     ],
     [
-     -106.0727,
-     34.26008
-    ],
-    [
-     -106.0727,
-     34.25587
-    ],
-    [
-     -106.10772,
-     34.25575
-    ],
-    [
-     -106.10772,
-     34.26
-    ],
-    [
-     -106.10215,
-     34.25997
-    ],
-    [
-     -106.10231,
-     34.26362
-    ],
-    [
-     -106.07614,
-     34.26372
+     -108.005947,
+     36.833876
     ]
    ],
-   "status": "dropped: two park numbers joined to one record by name, pins 18 km apart and not both inside it (a wrong join in the key)"
+   "status": "candidate",
+   "strip_wide_m": 65.9,
+   "zone": [
+    [
+     [
+      -108.007525,
+      36.837272
+     ],
+     [
+      -108.007974,
+      36.83682
+     ],
+     [
+      -108.006515,
+      36.834152
+     ],
+     [
+      -108.005729,
+      36.834107
+     ],
+     [
+      -108.007301,
+      36.837001
+     ]
+    ]
+   ],
+   "zone_acres": 5.91,
+   "zone_read": "2026-10-29",
+   "zone_wide_m": 65.9
+  },
+  {
+   "acres": 0.5,
+   "box": [
+    -107.99333,
+    34.71021,
+    -107.99333,
+    34.7121
+   ],
+   "center": [
+    34.712105,
+    -107.993328
+   ],
+   "found": "2026-10-29",
+   "id": "US-0923+US-12169@area@34.711,-107.993",
+   "kind": "area",
+   "masked_out": [
+    "blm",
+    "nps"
+   ],
+   "passes": [
+    1,
+    1,
+    0
+   ],
+   "refs": [
+    "US-0923",
+    "US-12169"
+   ],
+   "shape": [
+    [
+     -107.993328,
+     34.712105
+    ],
+    [
+     -107.993328,
+     34.710206
+    ]
+   ],
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "tier": "very tight: could be map error: check both official maps on the ground",
+   "wide_m": 10
+  },
+  {
+   "acres": 1.5,
+   "box": [
+    -107.95068,
+    34.7675,
+    -107.9463,
+    34.77292
+   ],
+   "center": [
+    34.772924,
+    -107.946296
+   ],
+   "found": "2026-10-29",
+   "id": "US-0923+US-12169@area@34.773,-107.946",
+   "kind": "area",
+   "masked_out": [
+    "blm",
+    "nps"
+   ],
+   "passes": [
+    1,
+    0,
+    0
+   ],
+   "refs": [
+    "US-0923",
+    "US-12169"
+   ],
+   "shape": [
+    [
+     -107.946296,
+     34.772924
+    ]
+   ],
+   "status": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "tier": "very tight: could be map error: check both official maps on the ground",
+   "wide_m": 20
+  },
+  {
+   "acres": 19.5,
+   "box": [
+    -108.15101,
+    34.81356,
+    -108.10372,
+    35.00241
+   ],
+   "center": [
+    34.814959,
+    -108.106126
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "id": "US-0923+US-12169@area@34.815,-108.107",
+   "kind": "area",
+   "map_dates": {
+    "US-0923": "downloaded 2026-10-29",
+    "US-12169": "downloaded 2026-10-29"
+   },
+   "map_note": "the agency land map may be out of date: if the agency does own this patch, it is a 2-fer",
+   "maps": [
+    [
+     "US-0923",
+     "https://www.nps.gov/elma/planyourvisit/maps.htm"
+    ],
+    [
+     "US-12169",
+     "https://www.blm.gov/visit/el-malpais-nca"
+    ]
+   ],
+   "masked_out": [
+    "blm",
+    "nps"
+   ],
+   "names": {
+    "US-0923": "El Malpais National Monument",
+    "US-12169": "El Malpais BLM National Conservation Area"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-0923": false,
+    "US-12169": true
+   },
+   "places": 4,
+   "refs": [
+    "US-0923",
+    "US-12169"
+   ],
+   "shape": [
+    [
+     -108.151014,
+     34.872658
+    ],
+    [
+     -108.151014,
+     34.857102
+    ],
+    [
+     -108.147018,
+     34.857057
+    ],
+    [
+     -108.147018,
+     34.83897
+    ],
+    [
+     -108.146744,
+     34.828027
+    ],
+    [
+     -108.14231,
+     34.828072
+    ],
+    [
+     -108.142201,
+     34.820882
+    ],
+    [
+     -108.133223,
+     34.821063
+    ],
+    [
+     -108.133004,
+     34.817446
+    ],
+    [
+     -108.124245,
+     34.81731
+    ],
+    [
+     -108.124027,
+     34.813692
+    ],
+    [
+     -108.116636,
+     34.813557
+    ],
+    [
+     -108.106783,
+     34.813647
+    ],
+    [
+     -108.106783,
+     34.814687
+    ],
+    [
+     -108.105798,
+     34.814733
+    ],
+    [
+     -108.105688,
+     34.813647
+    ],
+    [
+     -108.103718,
+     34.813647
+    ],
+    [
+     -108.105305,
+     34.813692
+    ],
+    [
+     -108.105415,
+     34.815185
+    ],
+    [
+     -108.107276,
+     34.815139
+    ],
+    [
+     -108.107276,
+     34.813647
+    ],
+    [
+     -108.116636,
+     34.813557
+    ],
+    [
+     -108.123972,
+     34.813692
+    ],
+    [
+     -108.124191,
+     34.81731
+    ],
+    [
+     -108.132949,
+     34.817446
+    ],
+    [
+     -108.133168,
+     34.821063
+    ],
+    [
+     -108.142201,
+     34.820927
+    ],
+    [
+     -108.14231,
+     34.828117
+    ],
+    [
+     -108.146744,
+     34.828072
+    ],
+    [
+     -108.147018,
+     34.84114
+    ],
+    [
+     -108.147018,
+     34.857102
+    ],
+    [
+     -108.151014,
+     34.857148
+    ]
+   ],
+   "small": "small overlap: tight fit, check carefully",
+   "status": "dropped: inside the federal boundary, but the BLM surface management map / the Park Service's own land tracts (Land Resources Division; PAD-US fee records when it does not answer) shows this patch is not the agency's own land (state or other land inside a federal boundary is not an overlap; Brandon Oct 29)",
+   "wide_m": 55
+  },
+  {
+   "acres": 0.6,
+   "box": [
+    -107.91686,
+    34.84794,
+    -107.915,
+    34.85102
+   ],
+   "center": [
+    34.851017,
+    -107.914999
+   ],
+   "found": "2026-10-29",
+   "id": "US-0923+US-12169@area@34.849,-107.916",
+   "kind": "area",
+   "masked_out": [
+    "blm",
+    "nps"
+   ],
+   "passes": [
+    1,
+    1,
+    0
+   ],
+   "refs": [
+    "US-0923",
+    "US-12169"
+   ],
+   "shape": [
+    [
+     -107.915546,
+     34.850293
+    ],
+    [
+     -107.916749,
+     34.848213
+    ]
+   ],
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "tier": "very tight: could be map error: check both official maps on the ground",
+   "wide_m": 10
+  },
+  {
+   "acres": 19.5,
+   "box": [
+    -108.15101,
+    34.81356,
+    -108.10372,
+    34.87266
+   ],
+   "center": [
+    34.814959,
+    -108.106126
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "id": "US-0923+US-12169@area@34.865,-108.151",
+   "kind": "area",
+   "lines": {
+    "US-0923": [
+     [
+      [
+       -108.097693,
+       34.813741
+      ],
+      [
+       -108.105742,
+       34.813669
+      ],
+      [
+       -108.105766,
+       34.814768
+      ],
+      [
+       -108.106832,
+       34.814758
+      ],
+      [
+       -108.106808,
+       34.813659
+      ],
+      [
+       -108.115255,
+       34.813583
+      ],
+      [
+       -108.124075,
+       34.813711
+      ],
+      [
+       -108.124201,
+       34.817346
+      ],
+      [
+       -108.133041,
+       34.81746
+      ],
+      [
+       -108.133189,
+       34.821081
+      ],
+      [
+       -108.142208,
+       34.820887
+      ],
+      [
+       -108.142358,
+       34.828144
+      ],
+      [
+       -108.146795,
+       34.828053
+      ],
+      [
+       -108.146967,
+       34.835316
+      ],
+      [
+       -108.147037,
+       34.842618
+      ],
+      [
+       -108.14702,
+       34.857143
+      ],
+      [
+       -108.151024,
+       34.857105
+      ],
+      [
+       -108.151068,
+       34.871641
+      ],
+      [
+       -108.150676,
+       34.886233
+      ]
+     ]
+    ],
+    "US-12169": [
+     [
+      [
+       -108.150675,
+       34.889873
+      ],
+      [
+       -108.151068,
+       34.871641
+      ],
+      [
+       -108.151024,
+       34.857105
+      ],
+      [
+       -108.14702,
+       34.857143
+      ],
+      [
+       -108.147037,
+       34.842618
+      ],
+      [
+       -108.146795,
+       34.828053
+      ],
+      [
+       -108.142358,
+       34.828144
+      ],
+      [
+       -108.142208,
+       34.820887
+      ],
+      [
+       -108.133189,
+       34.821081
+      ],
+      [
+       -108.133041,
+       34.81746
+      ],
+      [
+       -108.124201,
+       34.817346
+      ],
+      [
+       -108.124074,
+       34.813711
+      ],
+      [
+       -108.115255,
+       34.813583
+      ],
+      [
+       -108.107232,
+       34.813655
+      ],
+      [
+       -108.107307,
+       34.815151
+      ],
+      [
+       -108.105455,
+       34.815212
+      ],
+      [
+       -108.105321,
+       34.813672
+      ],
+      [
+       -108.071284,
+       34.813685
+      ]
+     ]
+    ]
+   },
+   "lines_read": "2026-10-29",
+   "map_dates": {
+    "US-0923": "downloaded 2026-10-29",
+    "US-12169": "downloaded 2026-10-29",
+    "USGS water": "USGS NHDPlus HR file 2022-09-01 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "masked_out": [
+    "blm",
+    "nps"
+   ],
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-0923": false,
+    "US-12169": true
+   },
+   "refs": [
+    "US-0923",
+    "US-12169"
+   ],
+   "shape": [
+    [
+     -108.151014,
+     34.872658
+    ],
+    [
+     -108.151014,
+     34.857102
+    ],
+    [
+     -108.147018,
+     34.857057
+    ],
+    [
+     -108.147018,
+     34.83897
+    ],
+    [
+     -108.146744,
+     34.828027
+    ],
+    [
+     -108.14231,
+     34.828072
+    ],
+    [
+     -108.142201,
+     34.820882
+    ],
+    [
+     -108.133223,
+     34.821063
+    ],
+    [
+     -108.133004,
+     34.817446
+    ],
+    [
+     -108.124245,
+     34.81731
+    ],
+    [
+     -108.124027,
+     34.813692
+    ],
+    [
+     -108.116636,
+     34.813557
+    ],
+    [
+     -108.106783,
+     34.813647
+    ],
+    [
+     -108.106783,
+     34.814687
+    ],
+    [
+     -108.105798,
+     34.814733
+    ],
+    [
+     -108.105688,
+     34.813647
+    ],
+    [
+     -108.103718,
+     34.813647
+    ],
+    [
+     -108.105305,
+     34.813692
+    ],
+    [
+     -108.105415,
+     34.815185
+    ],
+    [
+     -108.107276,
+     34.815139
+    ],
+    [
+     -108.107276,
+     34.813647
+    ],
+    [
+     -108.116636,
+     34.813557
+    ],
+    [
+     -108.123972,
+     34.813692
+    ],
+    [
+     -108.124191,
+     34.81731
+    ],
+    [
+     -108.132949,
+     34.817446
+    ],
+    [
+     -108.133168,
+     34.821063
+    ],
+    [
+     -108.142201,
+     34.820927
+    ],
+    [
+     -108.14231,
+     34.828117
+    ],
+    [
+     -108.146744,
+     34.828072
+    ],
+    [
+     -108.147018,
+     34.84114
+    ],
+    [
+     -108.147018,
+     34.857102
+    ],
+    [
+     -108.151014,
+     34.857148
+    ]
+   ],
+   "small": "small overlap: tight fit, check carefully",
+   "status": "merged into one row: US-0923+US-12169@area@34.815,-108.107 (the same not-sure pair, shown once)",
+   "wide_m": 55
+  },
+  {
+   "acres": 0.5,
+   "box": [
+    -107.8878,
+    34.87258,
+    -107.88692,
+    34.87277
+   ],
+   "center": [
+    34.872766,
+    -107.887139
+   ],
+   "found": "2026-10-29",
+   "id": "US-0923+US-12169@area@34.873,-107.887",
+   "kind": "area",
+   "masked_out": [
+    "blm",
+    "nps"
+   ],
+   "passes": [
+    1,
+    0,
+    0
+   ],
+   "refs": [
+    "US-0923",
+    "US-12169"
+   ],
+   "shape": [
+    [
+     -107.886919,
+     34.872766
+    ],
+    [
+     -107.887796,
+     34.872585
+    ]
+   ],
+   "status": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "tier": "very tight: could be map error: check both official maps on the ground",
+   "wide_m": 20
+  },
+  {
+   "acres": 6.2,
+   "box": [
+    -107.90248,
+    34.87258,
+    -107.89634,
+    34.87638
+   ],
+   "center": [
+    34.875479,
+    -107.898313
+   ],
+   "found": "2026-10-29",
+   "id": "US-0923+US-12169@area@34.875,-107.898",
+   "kind": "area",
+   "masked_out": [
+    "blm",
+    "nps"
+   ],
+   "passes": [
+    1,
+    0,
+    0
+   ],
+   "refs": [
+    "US-0923",
+    "US-12169"
+   ],
+   "shape": [
+    [
+     -107.896779,
+     34.876203
+    ],
+    [
+     -107.898532,
+     34.87566
+    ],
+    [
+     -107.902476,
+     34.872585
+    ]
+   ],
+   "small": "small overlap: tight fit, check carefully",
+   "status": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "wide_m": 60
+  },
+  {
+   "acres": 2.2,
+   "box": [
+    -107.8924,
+    34.87331,
+    -107.88999,
+    34.87638
+   ],
+   "center": [
+    34.876384,
+    -107.892397
+   ],
+   "found": "2026-10-29",
+   "id": "US-0923+US-12169@area@34.876,-107.892",
+   "kind": "area",
+   "masked_out": [
+    "blm",
+    "nps"
+   ],
+   "passes": [
+    1,
+    0,
+    0
+   ],
+   "refs": [
+    "US-0923",
+    "US-12169"
+   ],
+   "shape": [
+    [
+     -107.892397,
+     34.876384
+    ],
+    [
+     -107.889987,
+     34.873309
+    ]
+   ],
+   "status": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "tier": "very tight: could be map error: check both official maps on the ground",
+   "wide_m": 20
+  },
+  {
+   "acres": 0.1,
+   "box": [
+    -107.89437,
+    34.87693,
+    -107.89437,
+    34.87693
+   ],
+   "center": [
+    34.876926,
+    -107.894369
+   ],
+   "found": "2026-10-29",
+   "id": "US-0923+US-12169@area@34.877,-107.894",
+   "kind": "area",
+   "masked_out": [
+    "blm",
+    "nps"
+   ],
+   "passes": [
+    1,
+    0,
+    0
+   ],
+   "refs": [
+    "US-0923",
+    "US-12169"
+   ],
+   "shape": [
+    [
+     -107.894369,
+     34.876926
+    ]
+   ],
+   "status": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "tier": "very tight: could be map error: check both official maps on the ground",
+   "wide_m": 20
+  },
+  {
+   "acres": 3.9,
+   "box": [
+    -107.87966,
+    34.87589,
+    -107.8685,
+    34.88195
+   ],
+   "center": [
+    34.881946,
+    -107.871014
+   ],
+   "found": "2026-10-29",
+   "id": "US-0923+US-12169@area@34.878,-107.880",
+   "kind": "area",
+   "masked_out": [
+    "blm",
+    "nps"
+   ],
+   "passes": [
+    1,
+    1,
+    0
+   ],
+   "refs": [
+    "US-0923",
+    "US-12169"
+   ],
+   "shape": [
+    [
+     -107.868498,
+     34.881946
+    ],
+    [
+     -107.871014,
+     34.881946
+    ],
+    [
+     -107.870905,
+     34.878962
+    ],
+    [
+     -107.871014,
+     34.881856
+    ]
+   ],
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "tier": "very tight: could be map error: check both official maps on the ground",
+   "wide_m": 10
+  },
+  {
+   "acres": 1.0,
+   "box": [
+    -108.15078,
+    34.88077,
+    -108.15078,
+    34.8843
+   ],
+   "center": [
+    34.884297,
+    -108.150775
+   ],
+   "found": "2026-10-29",
+   "id": "US-0923+US-12169@area@34.881,-108.151",
+   "kind": "area",
+   "masked_out": [
+    "blm",
+    "nps"
+   ],
+   "passes": [
+    1,
+    1,
+    0
+   ],
+   "refs": [
+    "US-0923",
+    "US-12169"
+   ],
+   "shape": [
+    [
+     -108.150775,
+     34.884297
+    ],
+    [
+     -108.150775,
+     34.88077
+    ]
+   ],
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "tier": "very tight: could be map error: check both official maps on the ground",
+   "wide_m": 10
+  },
+  {
+   "acres": 99.3,
+   "box": [
+    -108.07112,
+    34.73688,
+    -107.96117,
+    34.8862
+   ],
+   "center": [
+    34.886197,
+    -108.044096
+   ],
+   "found": "2026-10-29",
+   "id": "US-0923+US-12169@area@34.886,-108.044",
+   "kind": "area",
+   "masked_out": [
+    "blm",
+    "nps"
+   ],
+   "passes": [
+    1,
+    1,
+    0
+   ],
+   "refs": [
+    "US-0923",
+    "US-12169"
+   ],
+   "shape": [
+    [
+     -108.009193,
+     34.878871
+    ],
+    [
+     -108.02659,
+     34.878962
+    ],
+    [
+     -108.0267,
+     34.882579
+    ],
+    [
+     -108.035343,
+     34.882579
+    ],
+    [
+     -108.035453,
+     34.886197
+    ],
+    [
+     -108.044096,
+     34.886197
+    ],
+    [
+     -108.044206,
+     34.857166
+    ],
+    [
+     -108.048692,
+     34.857166
+    ],
+    [
+     -108.048801,
+     34.846314
+    ],
+    [
+     -108.053287,
+     34.846314
+    ],
+    [
+     -108.053397,
+     34.842606
+    ],
+    [
+     -108.057773,
+     34.842696
+    ],
+    [
+     -108.057883,
+     34.839079
+    ],
+    [
+     -108.062259,
+     34.839079
+    ],
+    [
+     -108.062369,
+     34.820991
+    ],
+    [
+     -108.071122,
+     34.820901
+    ],
+    [
+     -108.062369,
+     34.820901
+    ],
+    [
+     -108.062259,
+     34.838988
+    ],
+    [
+     -108.057773,
+     34.839079
+    ],
+    [
+     -108.057664,
+     34.842696
+    ],
+    [
+     -108.053287,
+     34.842606
+    ],
+    [
+     -108.053178,
+     34.846314
+    ],
+    [
+     -108.048801,
+     34.846223
+    ],
+    [
+     -108.048692,
+     34.857076
+    ],
+    [
+     -108.044206,
+     34.857076
+    ],
+    [
+     -108.044096,
+     34.886106
+    ],
+    [
+     -108.035562,
+     34.886197
+    ],
+    [
+     -108.035453,
+     34.882579
+    ],
+    [
+     -108.026809,
+     34.882579
+    ],
+    [
+     -108.0267,
+     34.878962
+    ],
+    [
+     -108.009303,
+     34.878871
+    ],
+    [
+     -108.009193,
+     34.875254
+    ],
+    [
+     -108.004926,
+     34.875163
+    ],
+    [
+     -108.004817,
+     34.871636
+    ],
+    [
+     -108.004817,
+     34.875163
+    ],
+    [
+     -108.009193,
+     34.875344
+    ]
+   ],
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "tier": "very tight: could be map error: check both official maps on the ground",
+   "wide_m": 10
+  },
+  {
+   "acres": 5.0,
+   "box": [
+    -107.86686,
+    34.88421,
+    -107.85985,
+    34.89633
+   ],
+   "center": [
+    34.896326,
+    -107.86248
+   ],
+   "found": "2026-10-29",
+   "id": "US-0923+US-12169@area@34.896,-107.862",
+   "kind": "area",
+   "masked_out": [
+    "blm",
+    "nps"
+   ],
+   "passes": [
+    1,
+    1,
+    0
+   ],
+   "refs": [
+    "US-0923",
+    "US-12169"
+   ],
+   "shape": [
+    [
+     -107.859854,
+     34.896326
+    ],
+    [
+     -107.86248,
+     34.896326
+    ],
+    [
+     -107.86248,
+     34.892799
+    ],
+    [
+     -107.866857,
+     34.892799
+    ],
+    [
+     -107.866638,
+     34.884207
+    ],
+    [
+     -107.866857,
+     34.892708
+    ],
+    [
+     -107.862371,
+     34.892799
+    ],
+    [
+     -107.86248,
+     34.896235
+    ]
+   ],
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "tier": "very tight: could be map error: check both official maps on the ground",
+   "wide_m": 10
+  },
+  {
+   "acres": 27.2,
+   "box": [
+    -108.15066,
+    34.88683,
+    -108.09714,
+    34.92635
+   ],
+   "center": [
+    34.916674,
+    -108.097162
+   ],
+   "found": "2026-10-29",
+   "id": "US-0923+US-12169@area@34.930,-108.115",
+   "kind": "area",
+   "masked_out": [
+    "blm",
+    "nps"
+   ],
+   "passes": [
+    1,
+    1,
+    0
+   ],
+   "refs": [
+    "US-0923",
+    "US-12169"
+   ],
+   "shape": [
+    [
+     -108.097162,
+     34.916674
+    ],
+    [
+     -108.097381,
+     34.901028
+    ],
+    [
+     -108.142131,
+     34.900847
+    ],
+    [
+     -108.142131,
+     34.89723
+    ],
+    [
+     -108.146617,
+     34.897139
+    ],
+    [
+     -108.146617,
+     34.889905
+    ],
+    [
+     -108.150665,
+     34.889814
+    ],
+    [
+     -108.150665,
+     34.88683
+    ],
+    [
+     -108.150556,
+     34.889814
+    ],
+    [
+     -108.146617,
+     34.889814
+    ],
+    [
+     -108.146617,
+     34.897049
+    ],
+    [
+     -108.142131,
+     34.897139
+    ],
+    [
+     -108.142022,
+     34.900847
+    ],
+    [
+     -108.097272,
+     34.901028
+    ]
+   ],
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "tier": "very tight: could be map error: check both official maps on the ground",
+   "wide_m": 10
+  },
+  {
+   "acres": 13.4,
+   "box": [
+    -107.85813,
+    34.90049,
+    -107.84234,
+    34.93277
+   ],
+   "center": [
+    34.916674,
+    -107.858103
+   ],
+   "found": "2026-10-29",
+   "id": "US-0923+US-12169@area@34.935,-107.837",
+   "kind": "area",
+   "masked_out": [
+    "blm",
+    "nps"
+   ],
+   "passes": [
+    1,
+    1,
+    0
+   ],
+   "refs": [
+    "US-0923",
+    "US-12169"
+   ],
+   "shape": [
+    [
+     -107.844639,
+     34.932591
+    ],
+    [
+     -107.853414,
+     34.932771
+    ],
+    [
+     -107.853743,
+     34.918482
+    ],
+    [
+     -107.858131,
+     34.917397
+    ],
+    [
+     -107.858131,
+     34.915498
+    ],
+    [
+     -107.858131,
+     34.917307
+    ],
+    [
+     -107.857911,
+     34.917487
+    ],
+    [
+     -107.853743,
+     34.918392
+    ],
+    [
+     -107.853414,
+     34.932681
+    ],
+    [
+     -107.844749,
+     34.932591
+    ],
+    [
+     -107.844749,
+     34.928973
+    ],
+    [
+     -107.842336,
+     34.928973
+    ],
+    [
+     -107.844749,
+     34.929063
+    ]
+   ],
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "tier": "very tight: could be map error: check both official maps on the ground",
+   "wide_m": 10
+  },
+  {
+   "acres": 0.0,
+   "box": [
+    -107.9381,
+    34.95701,
+    -107.9381,
+    34.95701
+   ],
+   "center": [
+    34.957009,
+    -107.938095
+   ],
+   "found": "2026-10-29",
+   "id": "US-0923+US-12169@area@34.957,-107.940",
+   "kind": "area",
+   "masked_out": [
+    "blm",
+    "nps"
+   ],
+   "passes": [
+    1,
+    1,
+    0
+   ],
+   "refs": [
+    "US-0923",
+    "US-12169"
+   ],
+   "shape": [
+    [
+     -107.938095,
+     34.957009
+    ]
+   ],
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "tier": "very tight: could be map error: check both official maps on the ground",
+   "wide_m": 10
+  },
+  {
+   "acres": 43.4,
+   "box": [
+    -107.91758,
+    34.94706,
+    -107.81206,
+    35.00159
+   ],
+   "center": [
+    34.953753,
+    -107.819081
+   ],
+   "found": "2026-10-29",
+   "id": "US-0923+US-12169@area@34.959,-107.817",
+   "kind": "area",
+   "masked_out": [
+    "blm",
+    "nps"
+   ],
+   "passes": [
+    1,
+    1,
+    0
+   ],
+   "refs": [
+    "US-0923",
+    "US-12169"
+   ],
+   "shape": [
+    [
+     -107.81239,
+     35.001142
+    ],
+    [
+     -107.820398,
+     35.001413
+    ],
+    [
+     -107.836632,
+     34.999152
+    ],
+    [
+     -107.853743,
+     35.001594
+    ],
+    [
+     -107.853963,
+     34.987124
+    ],
+    [
+     -107.888954,
+     34.987305
+    ],
+    [
+     -107.889173,
+     34.958365
+    ],
+    [
+     -107.898606,
+     34.958275
+    ],
+    [
+     -107.889173,
+     34.958275
+    ],
+    [
+     -107.888844,
+     34.987305
+    ],
+    [
+     -107.853853,
+     34.987124
+    ],
+    [
+     -107.853634,
+     35.001594
+    ],
+    [
+     -107.836632,
+     34.999152
+    ],
+    [
+     -107.820398,
+     35.001413
+    ],
+    [
+     -107.81261,
+     35.001142
+    ],
+    [
+     -107.812281,
+     35.000418
+    ]
+   ],
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "tier": "very tight: could be map error: check both official maps on the ground",
+   "wide_m": 30
+  },
+  {
+   "acres": 71.4,
+   "box": [
+    -108.06192,
+    34.90772,
+    -107.9472,
+    34.95864
+   ],
+   "center": [
+    34.916674,
+    -108.05285
+   ],
+   "found": "2026-10-29",
+   "id": "US-0923+US-12169@area@34.959,-108.062",
+   "kind": "area",
+   "masked_out": [
+    "blm",
+    "nps"
+   ],
+   "passes": [
+    1,
+    1,
+    0
+   ],
+   "refs": [
+    "US-0923",
+    "US-12169"
+   ],
+   "shape": [
+    [
+     -108.05293,
+     34.915498
+    ],
+    [
+     -108.05293,
+     34.929787
+    ],
+    [
+     -108.044155,
+     34.929877
+    ],
+    [
+     -108.044155,
+     34.937112
+    ],
+    [
+     -108.05293,
+     34.937293
+    ],
+    [
+     -108.05293,
+     34.944438
+    ],
+    [
+     -108.061705,
+     34.944528
+    ],
+    [
+     -108.061815,
+     34.958636
+    ],
+    [
+     -108.026714,
+     34.958546
+    ],
+    [
+     -108.026714,
+     34.95529
+    ],
+    [
+     -108.008944,
+     34.955109
+    ],
+    [
+     -108.008834,
+     34.958456
+    ],
+    [
+     -107.993039,
+     34.958456
+    ],
+    [
+     -108.008944,
+     34.958456
+    ],
+    [
+     -108.009054,
+     34.955109
+    ],
+    [
+     -108.026604,
+     34.95529
+    ],
+    [
+     -108.026604,
+     34.958546
+    ],
+    [
+     -108.061924,
+     34.958636
+    ],
+    [
+     -108.061705,
+     34.944438
+    ],
+    [
+     -108.053039,
+     34.944438
+    ],
+    [
+     -108.05293,
+     34.937203
+    ],
+    [
+     -108.044155,
+     34.937022
+    ],
+    [
+     -108.044264,
+     34.929877
+    ],
+    [
+     -108.05293,
+     34.929877
+    ]
+   ],
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "tier": "very tight: could be map error: check both official maps on the ground",
+   "wide_m": 10
+  },
+  {
+   "acres": 43.4,
+   "box": [
+    -107.91758,
+    34.94706,
+    -107.81206,
+    35.00159
+   ],
+   "center": [
+    34.953753,
+    -107.819081
+   ],
+   "found": "2026-10-29",
+   "id": "US-0923+US-12169@area@34.970,-107.811",
+   "kind": "area",
+   "masked_out": [
+    "blm",
+    "nps"
+   ],
+   "passes": [
+    1,
+    1,
+    0
+   ],
+   "refs": [
+    "US-0923",
+    "US-12169"
+   ],
+   "shape": [
+    [
+     -107.81239,
+     35.001142
+    ],
+    [
+     -107.820398,
+     35.001413
+    ],
+    [
+     -107.836632,
+     34.999152
+    ],
+    [
+     -107.853743,
+     35.001594
+    ],
+    [
+     -107.853963,
+     34.987124
+    ],
+    [
+     -107.888954,
+     34.987305
+    ],
+    [
+     -107.889173,
+     34.958365
+    ],
+    [
+     -107.898606,
+     34.958275
+    ],
+    [
+     -107.889173,
+     34.958275
+    ],
+    [
+     -107.888844,
+     34.987305
+    ],
+    [
+     -107.853853,
+     34.987124
+    ],
+    [
+     -107.853634,
+     35.001594
+    ],
+    [
+     -107.836632,
+     34.999152
+    ],
+    [
+     -107.820398,
+     35.001413
+    ],
+    [
+     -107.81261,
+     35.001142
+    ],
+    [
+     -107.812281,
+     35.000418
+    ]
+   ],
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "tier": "very tight: could be map error: check both official maps on the ground",
+   "wide_m": 30
+  },
+  {
+   "acres": 0.0,
+   "box": [
+    -107.80493,
+    34.98097,
+    -107.80482,
+    34.98134
+   ],
+   "center": [
+    34.981336,
+    -107.804822
+   ],
+   "found": "2026-10-29",
+   "id": "US-0923+US-12169@area@34.981,-107.805",
+   "kind": "area",
+   "masked_out": [
+    "blm",
+    "nps"
+   ],
+   "passes": [
+    1,
+    1,
+    0
+   ],
+   "refs": [
+    "US-0923",
+    "US-12169"
+   ],
+   "shape": [
+    [
+     -107.804822,
+     34.981336
+    ]
+   ],
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "tier": "very tight: could be map error: check both official maps on the ground",
+   "wide_m": 10
+  },
+  {
+   "acres": 11.7,
+   "box": [
+    -108.11446,
+    34.99517,
+    -108.10711,
+    35.00241
+   ],
+   "center": [
+    34.995444,
+    -108.114181
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "id": "US-0923+US-12169@area@34.982,-108.129",
+   "kind": "area",
+   "lines": {
+    "US-0923": [
+     [
+      [
+       -108.117365,
+       34.994386
+      ],
+      [
+       -108.114453,
+       34.994327
+      ],
+      [
+       -108.114457,
+       34.995696
+      ],
+      [
+       -108.108641,
+       34.995588
+      ],
+      [
+       -108.108635,
+       34.992844
+      ]
+     ],
+     [
+      [
+       -108.105725,
+       34.99279
+      ],
+      [
+       -108.105729,
+       34.994163
+      ],
+      [
+       -108.102819,
+       34.994111
+      ]
+     ],
+     [
+      [
+       -108.102822,
+       34.995485
+      ],
+      [
+       -108.108641,
+       34.995588
+      ],
+      [
+       -108.108647,
+       35.002451
+      ],
+      [
+       -108.099477,
+       35.002298
+      ]
+     ]
+    ],
+    "US-12169": [
+     [
+      [
+       -108.099477,
+       35.002298
+      ],
+      [
+       -108.108436,
+       35.002448
+      ],
+      [
+       -108.108401,
+       34.995175
+      ],
+      [
+       -108.117367,
+       34.995305
+      ]
+     ]
+    ]
+   },
+   "lines_read": "2026-10-29",
+   "map_dates": {
+    "US-0923": "downloaded 2026-10-29",
+    "US-12169": "downloaded 2026-10-29",
+    "USGS water": "USGS NHDPlus HR file 2022-09-01 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "masked_out": [
+    "blm",
+    "nps"
+   ],
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-0923": false,
+    "US-12169": true
+   },
+   "refs": [
+    "US-0923",
+    "US-12169"
+   ],
+   "shape": [
+    [
+     -108.10711,
+     35.002408
+    ],
+    [
+     -108.108645,
+     35.002408
+    ],
+    [
+     -108.10859,
+     34.995625
+    ],
+    [
+     -108.114455,
+     34.99567
+    ],
+    [
+     -108.114455,
+     34.995218
+    ],
+    [
+     -108.10859,
+     34.995173
+    ],
+    [
+     -108.10859,
+     34.995534
+    ],
+    [
+     -108.108371,
+     34.99558
+    ],
+    [
+     -108.108426,
+     35.002362
+    ]
+   ],
+   "small": "small overlap: tight fit, check carefully",
+   "status": "merged into one row: US-0923+US-12169@area@34.815,-108.107 (the same not-sure pair, shown once)",
+   "wide_m": 55
+  },
+  {
+   "acres": 43.4,
+   "box": [
+    -107.91758,
+    34.94706,
+    -107.81206,
+    35.00159
+   ],
+   "center": [
+    34.953753,
+    -107.819081
+   ],
+   "found": "2026-10-29",
+   "id": "US-0923+US-12169@area@34.994,-107.810",
+   "kind": "area",
+   "masked_out": [
+    "blm",
+    "nps"
+   ],
+   "passes": [
+    1,
+    1,
+    0
+   ],
+   "refs": [
+    "US-0923",
+    "US-12169"
+   ],
+   "shape": [
+    [
+     -107.81239,
+     35.001142
+    ],
+    [
+     -107.820398,
+     35.001413
+    ],
+    [
+     -107.836632,
+     34.999152
+    ],
+    [
+     -107.853743,
+     35.001594
+    ],
+    [
+     -107.853963,
+     34.987124
+    ],
+    [
+     -107.888954,
+     34.987305
+    ],
+    [
+     -107.889173,
+     34.958365
+    ],
+    [
+     -107.898606,
+     34.958275
+    ],
+    [
+     -107.889173,
+     34.958275
+    ],
+    [
+     -107.888844,
+     34.987305
+    ],
+    [
+     -107.853853,
+     34.987124
+    ],
+    [
+     -107.853634,
+     35.001594
+    ],
+    [
+     -107.836632,
+     34.999152
+    ],
+    [
+     -107.820398,
+     35.001413
+    ],
+    [
+     -107.81261,
+     35.001142
+    ],
+    [
+     -107.812281,
+     35.000418
+    ]
+   ],
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "tier": "very tight: could be map error: check both official maps on the ground",
+   "wide_m": 30
+  },
+  {
+   "acres": 11.7,
+   "box": [
+    -108.11446,
+    34.99517,
+    -108.10711,
+    35.00241
+   ],
+   "center": [
+    34.995444,
+    -108.114181
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "id": "US-0923+US-12169@area@34.995,-108.109",
+   "kind": "area",
+   "lines": {
+    "US-0923": [
+     [
+      [
+       -108.117365,
+       34.994386
+      ],
+      [
+       -108.114453,
+       34.994327
+      ],
+      [
+       -108.114457,
+       34.995696
+      ],
+      [
+       -108.108641,
+       34.995588
+      ],
+      [
+       -108.108635,
+       34.992844
+      ]
+     ],
+     [
+      [
+       -108.105725,
+       34.99279
+      ],
+      [
+       -108.105729,
+       34.994163
+      ],
+      [
+       -108.102819,
+       34.994111
+      ]
+     ],
+     [
+      [
+       -108.102822,
+       34.995485
+      ],
+      [
+       -108.108641,
+       34.995588
+      ],
+      [
+       -108.108647,
+       35.002451
+      ],
+      [
+       -108.099477,
+       35.002298
+      ]
+     ]
+    ],
+    "US-12169": [
+     [
+      [
+       -108.099477,
+       35.002298
+      ],
+      [
+       -108.108436,
+       35.002448
+      ],
+      [
+       -108.108401,
+       34.995175
+      ],
+      [
+       -108.117367,
+       34.995305
+      ]
+     ]
+    ]
+   },
+   "lines_read": "2026-10-29",
+   "map_dates": {
+    "US-0923": "downloaded 2026-10-29",
+    "US-12169": "downloaded 2026-10-29",
+    "USGS water": "USGS NHDPlus HR file 2022-09-01 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "masked_out": [
+    "blm",
+    "nps"
+   ],
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-0923": false,
+    "US-12169": true
+   },
+   "refs": [
+    "US-0923",
+    "US-12169"
+   ],
+   "shape": [
+    [
+     -108.10711,
+     35.002408
+    ],
+    [
+     -108.108645,
+     35.002408
+    ],
+    [
+     -108.10859,
+     34.995625
+    ],
+    [
+     -108.114455,
+     34.99567
+    ],
+    [
+     -108.114455,
+     34.995218
+    ],
+    [
+     -108.10859,
+     34.995173
+    ],
+    [
+     -108.10859,
+     34.995534
+    ],
+    [
+     -108.108371,
+     34.99558
+    ],
+    [
+     -108.108426,
+     35.002362
+    ]
+   ],
+   "small": "small overlap: tight fit, check carefully",
+   "status": "merged into one row: US-0923+US-12169@area@34.815,-108.107 (the same not-sure pair, shown once)",
+   "wide_m": 55
+  },
+  {
+   "acres": 43.4,
+   "box": [
+    -107.91758,
+    34.94706,
+    -107.81206,
+    35.00159
+   ],
+   "center": [
+    34.953753,
+    -107.819081
+   ],
+   "found": "2026-10-29",
+   "id": "US-0923+US-12169@area@34.999,-107.833",
+   "kind": "area",
+   "masked_out": [
+    "blm",
+    "nps"
+   ],
+   "passes": [
+    1,
+    1,
+    0
+   ],
+   "refs": [
+    "US-0923",
+    "US-12169"
+   ],
+   "shape": [
+    [
+     -107.81239,
+     35.001142
+    ],
+    [
+     -107.820398,
+     35.001413
+    ],
+    [
+     -107.836632,
+     34.999152
+    ],
+    [
+     -107.853743,
+     35.001594
+    ],
+    [
+     -107.853963,
+     34.987124
+    ],
+    [
+     -107.888954,
+     34.987305
+    ],
+    [
+     -107.889173,
+     34.958365
+    ],
+    [
+     -107.898606,
+     34.958275
+    ],
+    [
+     -107.889173,
+     34.958275
+    ],
+    [
+     -107.888844,
+     34.987305
+    ],
+    [
+     -107.853853,
+     34.987124
+    ],
+    [
+     -107.853634,
+     35.001594
+    ],
+    [
+     -107.836632,
+     34.999152
+    ],
+    [
+     -107.820398,
+     35.001413
+    ],
+    [
+     -107.81261,
+     35.001142
+    ],
+    [
+     -107.812281,
+     35.000418
+    ]
+   ],
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "tier": "very tight: could be map error: check both official maps on the ground",
+   "wide_m": 30
+  },
+  {
+   "acres": 43.4,
+   "box": [
+    -107.91758,
+    34.94706,
+    -107.81206,
+    35.00159
+   ],
+   "center": [
+    34.953753,
+    -107.819081
+   ],
+   "found": "2026-10-29",
+   "id": "US-0923+US-12169@area@35.002,-107.854",
+   "kind": "area",
+   "masked_out": [
+    "blm",
+    "nps"
+   ],
+   "passes": [
+    1,
+    1,
+    0
+   ],
+   "refs": [
+    "US-0923",
+    "US-12169"
+   ],
+   "shape": [
+    [
+     -107.81239,
+     35.001142
+    ],
+    [
+     -107.820398,
+     35.001413
+    ],
+    [
+     -107.836632,
+     34.999152
+    ],
+    [
+     -107.853743,
+     35.001594
+    ],
+    [
+     -107.853963,
+     34.987124
+    ],
+    [
+     -107.888954,
+     34.987305
+    ],
+    [
+     -107.889173,
+     34.958365
+    ],
+    [
+     -107.898606,
+     34.958275
+    ],
+    [
+     -107.889173,
+     34.958275
+    ],
+    [
+     -107.888844,
+     34.987305
+    ],
+    [
+     -107.853853,
+     34.987124
+    ],
+    [
+     -107.853634,
+     35.001594
+    ],
+    [
+     -107.836632,
+     34.999152
+    ],
+    [
+     -107.820398,
+     35.001413
+    ],
+    [
+     -107.81261,
+     35.001142
+    ],
+    [
+     -107.812281,
+     35.000418
+    ]
+   ],
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "tier": "very tight: could be map error: check both official maps on the ground",
+   "wide_m": 30
+  },
+  {
+   "acres": 0.3,
+   "box": [
+    -108.09944,
+    35.01462,
+    -108.09944,
+    35.0157
+   ],
+   "center": [
+    35.015702,
+    -108.099438
+   ],
+   "found": "2026-10-29",
+   "id": "US-0923+US-12169@area@35.015,-108.099",
+   "kind": "area",
+   "masked_out": [
+    "blm",
+    "nps"
+   ],
+   "passes": [
+    1,
+    1,
+    0
+   ],
+   "refs": [
+    "US-0923",
+    "US-12169"
+   ],
+   "shape": [
+    [
+     -108.099438,
+     35.015702
+    ],
+    [
+     -108.099438,
+     35.014617
+    ]
+   ],
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "tier": "very tight: could be map error: check both official maps on the ground",
+   "wide_m": 10
+  },
+  {
+   "acres": 7.8,
+   "box": [
+    -107.8363,
+    35.11057,
+    -107.82084,
+    35.12206
+   ],
+   "center": [
+    35.122056,
+    -107.831147
+   ],
+   "found": "2026-10-29",
+   "id": "US-0923+US-12169@area@35.117,-107.834",
+   "kind": "area",
+   "masked_out": [
+    "blm",
+    "nps"
+   ],
+   "passes": [
+    1,
+    1,
+    0
+   ],
+   "refs": [
+    "US-0923",
+    "US-12169"
+   ],
+   "shape": [
+    [
+     -107.836303,
+     35.117173
+    ],
+    [
+     -107.836303,
+     35.110661
+    ],
+    [
+     -107.820836,
+     35.110571
+    ],
+    [
+     -107.836303,
+     35.110752
+    ],
+    [
+     -107.836303,
+     35.117082
+    ],
+    [
+     -107.83367,
+     35.117263
+    ],
+    [
+     -107.83356,
+     35.119434
+    ],
+    [
+     -107.831147,
+     35.122056
+    ],
+    [
+     -107.83356,
+     35.119524
+    ],
+    [
+     -107.83367,
+     35.117354
+    ]
+   ],
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "tier": "very tight: could be map error: check both official maps on the ground",
+   "wide_m": 10
+  },
+  {
+   "acres": 7.8,
+   "box": [
+    -107.8363,
+    35.11057,
+    -107.82084,
+    35.12206
+   ],
+   "center": [
+    35.122056,
+    -107.831147
+   ],
+   "found": "2026-10-29",
+   "id": "US-0923+US-12169@area@35.122,-107.831",
+   "kind": "area",
+   "masked_out": [
+    "blm",
+    "nps"
+   ],
+   "passes": [
+    1,
+    1,
+    0
+   ],
+   "refs": [
+    "US-0923",
+    "US-12169"
+   ],
+   "shape": [
+    [
+     -107.836303,
+     35.117173
+    ],
+    [
+     -107.836303,
+     35.110661
+    ],
+    [
+     -107.820836,
+     35.110571
+    ],
+    [
+     -107.836303,
+     35.110752
+    ],
+    [
+     -107.836303,
+     35.117082
+    ],
+    [
+     -107.83367,
+     35.117263
+    ],
+    [
+     -107.83356,
+     35.119434
+    ],
+    [
+     -107.831147,
+     35.122056
+    ],
+    [
+     -107.83356,
+     35.119524
+    ],
+    [
+     -107.83367,
+     35.117354
+    ]
+   ],
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "tier": "very tight: could be map error: check both official maps on the ground",
+   "wide_m": 10
+  },
+  {
+   "acres": 0.5,
+   "box": [
+    -107.9976,
+    34.96971,
+    -107.99266,
+    34.97152
+   ],
+   "center": [
+    34.971516,
+    -107.997598
+   ],
+   "found": "2026-10-29",
+   "id": "US-0923+US-4514@area@34.970,-107.995",
+   "kind": "area",
+   "passes": [
+    1,
+    1,
+    0
+   ],
+   "refs": [
+    "US-0923",
+    "US-4514"
+   ],
+   "shape": [
+    [
+     -107.995625,
+     34.970612
+    ],
+    [
+     -107.995296,
+     34.970431
+    ]
+   ],
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "tier": "very tight: could be map error: check both official maps on the ground",
+   "wide_m": 10
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     34.711186,
+     -107.98918
+    ],
+    "from": "road",
+    "name": "Pie Town Rd",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 50
+   },
+   "box": [
+    -107.99355,
+    34.71,
+    -107.98902,
+    34.71104
+   ],
+   "center": [
+    34.710928,
+    -107.989038
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "ground": [
+    "BLM"
+   ],
+   "id": "US-0923+US-4558@trail@34.710,-107.993",
+   "kind": "trail",
+   "len_m": 393,
+   "line_source": {
+    "US-4558": {
+     "by": "U.S. Forest Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4558.json"
+    }
+   },
+   "map_dates": {
+    "US-0923": "downloaded 2026-10-29",
+    "US-4558": "official line (trails bot)",
+    "USGS water": "USGS NHDPlus HR file 2022-09-01 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "maps": [
+    [
+     "US-0923",
+     "https://www.nps.gov/elma/planyourvisit/maps.htm"
+    ],
+    [
+     "US-4558",
+     "https://www.fs.usda.gov/managing-land/trails/cdt"
+    ]
+   ],
+   "names": {
+    "US-0923": "El Malpais National Monument",
+    "US-4558": "Continental Divide Trail National Scenic Trail"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (BLM)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-0923": false,
+    "US-4558": true
+   },
+   "refs": [
+    "US-0923",
+    "US-4558"
+   ],
+   "shape": [
+    [
+     -107.990468,
+     34.710233
+    ],
+    [
+     -107.99355,
+     34.710004
+    ]
+   ],
+   "status": "merged into one row: US-0923+US-4558@trail@34.934,-107.892",
+   "zone": [
+    [
+     [
+      -107.990518,
+      34.710475
+     ],
+     [
+      -107.993249,
+      34.710294
+     ],
+     [
+      -107.993359,
+      34.710203
+     ]
+    ]
+   ],
+   "zone_acres": 0.62,
+   "zone_read": "2026-10-29",
+   "zone_wide_m": 20.0
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     34.711186,
+     -107.98918
+    ],
+    "from": "road",
+    "name": "Pie Town Rd",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 50
+   },
+   "box": [
+    -107.99355,
+    34.71,
+    -107.98902,
+    34.71104
+   ],
+   "center": [
+    34.710928,
+    -107.989038
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "ground": [
+    "BLM"
+   ],
+   "id": "US-0923+US-4558@trail@34.711,-107.989",
+   "kind": "trail",
+   "len_m": 393,
+   "line_source": {
+    "US-4558": {
+     "by": "U.S. Forest Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4558.json"
+    }
+   },
+   "map_dates": {
+    "US-0923": "downloaded 2026-10-29",
+    "US-4558": "official line (trails bot)",
+    "USGS water": "USGS NHDPlus HR file 2022-09-01 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "maps": [
+    [
+     "US-0923",
+     "https://www.nps.gov/elma/planyourvisit/maps.htm"
+    ],
+    [
+     "US-4558",
+     "https://www.fs.usda.gov/managing-land/trails/cdt"
+    ]
+   ],
+   "names": {
+    "US-0923": "El Malpais National Monument",
+    "US-4558": "Continental Divide Trail National Scenic Trail"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (BLM)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-0923": false,
+    "US-4558": true
+   },
+   "refs": [
+    "US-0923",
+    "US-4558"
+   ],
+   "shape": [
+    [
+     -107.990468,
+     34.710233
+    ],
+    [
+     -107.99355,
+     34.710004
+    ]
+   ],
+   "status": "dropped: the same stretch twice (copy of US-0923+US-4558@trail@34.710,-107.993)"
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     34.939502,
+     -107.827327
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 55
+   },
+   "box": [
+    -107.84068,
+    34.93216,
+    -107.83578,
+    34.93696
+   ],
+   "center": [
+    34.934589,
+    -107.8383
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "ground": [
+    "BLM"
+   ],
+   "id": "US-0923+US-4558@trail@34.929,-107.842",
+   "kind": "trail",
+   "len_m": 697,
+   "line_source": {
+    "US-4558": {
+     "by": "U.S. Forest Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4558.json"
+    }
+   },
+   "map_dates": {
+    "US-0923": "downloaded 2026-10-29",
+    "US-4558": "official line (trails bot)",
+    "USGS water": "USGS NHDPlus HR file 2022-09-01 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "maps": [
+    [
+     "US-0923",
+     "https://www.nps.gov/elma/planyourvisit/maps.htm"
+    ],
+    [
+     "US-4558",
+     "https://www.fs.usda.gov/managing-land/trails/cdt"
+    ]
+   ],
+   "names": {
+    "US-0923": "El Malpais National Monument",
+    "US-4558": "Continental Divide Trail National Scenic Trail"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (BLM)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-0923": false,
+    "US-4558": true
+   },
+   "refs": [
+    "US-0923",
+    "US-4558"
+   ],
+   "shape": [
+    [
+     -107.840678,
+     34.932156
+    ],
+    [
+     -107.84059,
+     34.932419
+    ],
+    [
+     -107.840513,
+     34.932509
+    ],
+    [
+     -107.83578,
+     34.936961
+    ]
+   ],
+   "status": "merged into one row: US-0923+US-4558@trail@34.934,-107.892",
+   "zone": [
+    [
+     [
+      -107.83605,
+      34.937073
+     ],
+     [
+      -107.840707,
+      34.932732
+     ],
+     [
+      -107.840981,
+      34.932189
+     ],
+     [
+      -107.840872,
+      34.932416
+     ],
+     [
+      -107.840653,
+      34.932596
+     ],
+     [
+      -107.840433,
+      34.932596
+     ],
+     [
+      -107.840379,
+      34.932461
+     ],
+     [
+      -107.838461,
+      34.93436
+     ],
+     [
+      -107.837749,
+      34.935355
+     ],
+     [
+      -107.83605,
+      34.936757
+     ]
+    ]
+   ],
+   "zone_acres": 4.85,
+   "zone_read": "2026-10-29",
+   "zone_wide_m": 43.9
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     34.941749,
+     -107.937558
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
+   "box": [
+    -108.13969,
+    34.71,
+    -107.80494,
+    35.00052
+   ],
+   "center": [
+    34.933953,
+    -107.892348
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "ground": [
+    "Park Service"
+   ],
+   "id": "US-0923+US-4558@trail@34.934,-107.892",
+   "kind": "trail",
+   "len_m": 32309,
+   "len_main": 12136,
+   "line_source": {
+    "US-4558": {
+     "by": "U.S. Forest Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4558.json"
+    }
+   },
+   "map_dates": {
+    "US-0923": "downloaded 2026-10-29",
+    "US-4558": "official line (trails bot)",
+    "USGS water": "USGS NHDPlus HR file 2022-09-01 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "maps": [
+    [
+     "US-0923",
+     "https://www.nps.gov/elma/planyourvisit/maps.htm"
+    ],
+    [
+     "US-4558",
+     "https://www.fs.usda.gov/managing-land/trails/cdt"
+    ]
+   ],
+   "names": {
+    "US-0923": "El Malpais National Monument",
+    "US-4558": "Continental Divide Trail National Scenic Trail"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (Park Service)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins": [
+    {
+     "at": [
+      34.711186,
+      -107.98918
+     ],
+     "from": "road",
+     "name": "Pie Town Rd",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 50
+    },
+    {
+     "at": [
+      34.711186,
+      -107.98918
+     ],
+     "from": "road",
+     "name": "Pie Town Rd",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 50
+    },
+    {
+     "at": [
+      34.939502,
+      -107.827327
+     ],
+     "from": "road",
+     "name": "public road",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 55
+    }
+   ],
+   "pins_inside": {
+    "US-0923": false,
+    "US-4558": true
+   },
+   "refs": [
+    "US-0923",
+    "US-4558"
+   ],
+   "shape": [
+    [
+     -107.94751,
+     34.940714
+    ],
+    [
+     -107.944519,
+     34.939561
+    ],
+    [
+     -107.942547,
+     34.941003
+    ],
+    [
+     -107.942021,
+     34.941302
+    ],
+    [
+     -107.938076,
+     34.941639
+    ],
+    [
+     -107.937572,
+     34.94139
+    ],
+    [
+     -107.935556,
+     34.939242
+    ],
+    [
+     -107.935326,
+     34.939414
+    ],
+    [
+     -107.934757,
+     34.942098
+    ],
+    [
+     -107.934428,
+     34.942342
+    ],
+    [
+     -107.931908,
+     34.941684
+    ],
+    [
+     -107.931272,
+     34.941573
+    ],
+    [
+     -107.915582,
+     34.942961
+    ],
+    [
+     -107.914936,
+     34.942902
+    ],
+    [
+     -107.911199,
+     34.941849
+    ],
+    [
+     -107.910597,
+     34.941632
+    ],
+    [
+     -107.906367,
+     34.938207
+    ],
+    [
+     -107.905798,
+     34.938439
+    ],
+    [
+     -107.902916,
+     34.939742
+    ],
+    [
+     -107.902291,
+     34.939791
+    ],
+    [
+     -107.900976,
+     34.939595
+    ],
+    [
+     -107.900418,
+     34.939346
+    ],
+    [
+     -107.895191,
+     34.93522
+    ],
+    [
+     -107.871448,
+     34.924661
+    ],
+    [
+     -107.863416,
+     34.919041
+    ],
+    [
+     -107.863285,
+     34.918627
+    ],
+    [
+     -107.863866,
+     34.917648
+    ],
+    [
+     -107.864118,
+     34.917157
+    ],
+    [
+     -107.863416,
+     34.915618
+    ],
+    [
+     -107.863011,
+     34.915231
+    ],
+    [
+     -107.860096,
+     34.91394
+    ],
+    [
+     -107.859713,
+     34.913549
+    ],
+    [
+     -107.859307,
+     34.912507
+    ],
+    [
+     -107.859242,
+     34.911982
+    ],
+    [
+     -107.862266,
+     34.902525
+    ],
+    [
+     -107.862069,
+     34.902014
+    ],
+    [
+     -107.861137,
+     34.899976
+    ],
+    [
+     -107.860874,
+     34.899495
+    ],
+    [
+     -107.859023,
+     34.898921
+    ],
+    [
+     -107.85865,
+     34.89914
+    ],
+    [
+     -107.858015,
+     34.900684
+    ]
+   ],
+   "status": "candidate",
+   "stretches": 7,
+   "strip_wide_m": 93.9,
+   "zone": [
+    [
+     [
+      -107.947214,
+      34.940899
+     ],
+     [
+      -107.947159,
+      34.940266
+     ],
+     [
+      -107.944641,
+      34.939271
+     ],
+     [
+      -107.944258,
+      34.939317
+     ],
+     [
+      -107.942397,
+      34.940718
+     ],
+     [
+      -107.94185,
+      34.941035
+     ],
+     [
+      -107.938128,
+      34.941351
+     ],
+     [
+      -107.937581,
+      34.94099
+     ],
+     [
+      -107.935938,
+      34.939181
+     ],
+     [
+      -107.935501,
+      34.938955
+     ],
+     [
+      -107.935282,
+      34.939
+     ],
+     [
+      -107.934953,
+      34.939362
+     ],
+     [
+      -107.934461,
+      34.941894
+     ],
+     [
+      -107.934351,
+      34.941985
+     ],
+     [
+      -107.933968,
+      34.941939
+     ],
+     [
+      -107.932052,
+      34.941397
+     ],
+     [
+      -107.931231,
+      34.941261
+     ],
+     [
+      -107.916891,
+      34.942572
+     ],
+     [
+      -107.915303,
+      34.942663
+     ],
+     [
+      -107.91087,
+      34.941442
+     ],
+     [
+      -107.9066,
+      34.938005
+     ],
+     [
+      -107.906327,
+      34.937915
+     ],
+     [
+      -107.905451,
+      34.938231
+     ],
+     [
+      -107.902824,
+      34.939452
+     ],
+     [
+      -107.902167,
+      34.939498
+     ],
+     [
+      -107.901072,
+      34.939317
+     ],
+     [
+      -107.900744,
+      34.939181
+     ],
+     [
+      -107.896091,
+      34.935518
+     ],
+     [
+      -107.895106,
+      34.93484
+     ],
+     [
+      -107.871625,
+      34.92444
+     ],
+     [
+      -107.863688,
+      34.918878
+     ],
+     [
+      -107.863633,
+      34.918561
+     ],
+     [
+      -107.8644,
+      34.917295
+     ],
+     [
+      -107.8644,
+      34.916979
+     ],
+     [
+      -107.863798,
+      34.915667
+     ],
+     [
+      -107.86325,
+      34.915034
+     ],
+     [
+      -107.860295,
+      34.913723
+     ],
+     [
+      -107.859966,
+      34.913406
+     ],
+     [
+      -107.859583,
+      34.912457
+     ],
+     [
+      -107.859528,
+      34.912005
+     ],
+     [
+      -107.862539,
+      34.90269
+     ],
+     [
+      -107.862539,
+      34.902328
+     ],
+     [
+      -107.86117,
+      34.899343
+     ],
+     [
+      -107.860678,
+      34.899117
+     ],
+     [
+      -107.859036,
+      34.898665
+     ],
+     [
+      -107.858817,
+      34.899434
+     ],
+     [
+      -107.85816,
+      34.900519
+     ],
+     [
+      -107.85816,
+      34.900881
+     ],
+     [
+      -107.858324,
+      34.900745
+     ],
+     [
+      -107.858817,
+      34.899434
+     ],
+     [
+      -107.859036,
+      34.899208
+     ],
+     [
+      -107.860568,
+      34.89966
+     ],
+     [
+      -107.860787,
+      34.899976
+     ],
+     [
+      -107.861718,
+      34.902011
+     ],
+     [
+      -107.861882,
+      34.902599
+     ],
+     [
+      -107.858871,
+      34.911869
+     ],
+     [
+      -107.858926,
+      34.912502
+     ],
+     [
+      -107.859364,
+      34.913587
+     ],
+     [
+      -107.859911,
+      34.914175
+     ],
+     [
+      -107.862539,
+      34.915306
+     ],
+     [
+      -107.863086,
+      34.915713
+     ],
+     [
+      -107.863743,
+      34.917114
+     ],
+     [
+      -107.862977,
+      34.918426
+     ],
+     [
+      -107.862922,
+      34.918697
+     ],
+     [
+      -107.863086,
+      34.919149
+     ],
+     [
+      -107.871242,
+      34.924892
+     ],
+     [
+      -107.894723,
+      34.935292
+     ],
+     [
+      -107.895216,
+      34.935609
+     ],
+     [
+      -107.900251,
+      34.939588
+     ],
+     [
+      -107.900908,
+      34.939859
+     ],
+     [
+      -107.902112,
+      34.94004
+     ],
+     [
+      -107.902933,
+      34.939995
+     ],
+     [
+      -107.906272,
+      34.938503
+     ],
+     [
+      -107.910377,
+      34.941849
+     ],
+     [
+      -107.912731,
+      34.942572
+     ],
+     [
+      -107.914865,
+      34.94316
+     ],
+     [
+      -107.915249,
+      34.943205
+     ],
+     [
+      -107.916398,
+      34.94316
+     ],
+     [
+      -107.931231,
+      34.941804
+     ],
+     [
+      -107.934023,
+      34.942527
+     ],
+     [
+      -107.934406,
+      34.942572
+     ],
+     [
+      -107.934625,
+      34.942527
+     ],
+     [
+      -107.935063,
+      34.94212
+     ],
+     [
+      -107.935501,
+      34.939904
+     ],
+     [
+      -107.93561,
+      34.939769
+     ],
+     [
+      -107.937362,
+      34.941623
+     ],
+     [
+      -107.938073,
+      34.941894
+     ],
+     [
+      -107.941905,
+      34.941578
+     ],
+     [
+      -107.942233,
+      34.941487
+     ],
+     [
+      -107.942726,
+      34.941216
+     ],
+     [
+      -107.944532,
+      34.939859
+     ]
+    ]
+   ],
+   "zone_acres": 189.05,
+   "zone_read": "2026-10-29",
+   "zone_wide_m": 93.9
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     34.957566,
+     -107.818175
+    ],
+    "from": "road",
+    "name": "Sandstone Bluff Rd",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
+   "box": [
+    -107.82753,
+    34.93937,
+    -107.82322,
+    34.94286
+   ],
+   "center": [
+    34.940558,
+    -107.824766
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "ground": [
+    "Park Service"
+   ],
+   "id": "US-0923+US-4558@trail@34.961,-107.816",
+   "kind": "trail",
+   "len_m": 585,
+   "line_source": {
+    "US-4558": {
+     "by": "U.S. Forest Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4558.json"
+    }
+   },
+   "map_dates": {
+    "US-0923": "downloaded 2026-10-29",
+    "US-4558": "official line (trails bot)",
+    "USGS water": "USGS NHDPlus HR file 2022-09-01 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "maps": [
+    [
+     "US-0923",
+     "https://www.nps.gov/elma/planyourvisit/maps.htm"
+    ],
+    [
+     "US-4558",
+     "https://www.fs.usda.gov/managing-land/trails/cdt"
+    ]
+   ],
+   "names": {
+    "US-0923": "El Malpais National Monument",
+    "US-4558": "Continental Divide Trail National Scenic Trail"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (Park Service)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-0923": false,
+    "US-4558": true
+   },
+   "refs": [
+    "US-0923",
+    "US-4558"
+   ],
+   "shape": [
+    [
+     -107.827529,
+     34.939371
+    ],
+    [
+     -107.826094,
+     34.939739
+    ],
+    [
+     -107.823836,
+     34.94113
+    ],
+    [
+     -107.823266,
+     34.942713
+    ]
+   ],
+   "status": "merged into one row: US-0923+US-4558@trail@34.934,-107.892",
+   "zone": [
+    [
+     [
+      -107.823503,
+      34.942837
+     ],
+     [
+      -107.824051,
+      34.9413
+     ],
+     [
+      -107.826242,
+      34.939943
+     ],
+     [
+      -107.827338,
+      34.939672
+     ],
+     [
+      -107.827338,
+      34.939491
+     ],
+     [
+      -107.826188,
+      34.939763
+     ],
+     [
+      -107.825201,
+      34.940169
+     ],
+     [
+      -107.824325,
+      34.940667
+     ],
+     [
+      -107.823996,
+      34.941074
+     ],
+     [
+      -107.823777,
+      34.941526
+     ]
+    ]
+   ],
+   "zone_acres": 3.69,
+   "zone_read": "2026-10-29",
+   "zone_wide_m": 50.0
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     34.987779,
+     -108.113222
+    ],
+    "from": "road",
+    "name": "Cibola County 42",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
+   "box": [
+    -108.13969,
+    34.96386,
+    -108.09537,
+    34.98795
+   ],
+   "center": [
+    34.981888,
+    -108.122149
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "ground": [
+    "Park Service"
+   ],
+   "id": "US-0923+US-4558@trail@34.971,-108.138",
+   "kind": "trail",
+   "len_m": 5469,
+   "line_source": {
+    "US-4558": {
+     "by": "U.S. Forest Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4558.json"
+    }
+   },
+   "map_dates": {
+    "US-0923": "downloaded 2026-10-29",
+    "US-4558": "official line (trails bot)",
+    "USGS water": "saved copy of the USGS map, read 2026-10-29"
+   },
+   "maps": [
+    [
+     "US-0923",
+     "https://www.nps.gov/elma/planyourvisit/maps.htm"
+    ],
+    [
+     "US-4558",
+     "https://www.fs.usda.gov/managing-land/trails/cdt"
+    ]
+   ],
+   "names": {
+    "US-0923": "El Malpais National Monument",
+    "US-4558": "Continental Divide Trail National Scenic Trail"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (Park Service)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-0923": false,
+    "US-4558": true
+   },
+   "refs": [
+    "US-0923",
+    "US-4558"
+   ],
+   "shape": [
+    [
+     -108.139688,
+     34.963861
+    ],
+    [
+     -108.138833,
+     34.968564
+    ],
+    [
+     -108.136246,
+     34.973809
+    ],
+    [
+     -108.13607,
+     34.973974
+    ],
+    [
+     -108.131235,
+     34.97799
+    ],
+    [
+     -108.121006,
+     34.982378
+    ],
+    [
+     -108.120579,
+     34.982668
+    ],
+    [
+     -108.113847,
+     34.987651
+    ],
+    [
+     -108.113595,
+     34.987694
+    ],
+    [
+     -108.100241,
+     34.986439
+    ],
+    [
+     -108.095362,
+     34.987954
+    ]
+   ],
+   "status": "merged into one row: US-0923+US-4558@trail@34.934,-107.892",
+   "zone": [
+    [
+     [
+      -108.117188,
+      34.985531
+     ],
+     [
+      -108.116201,
+      34.985486
+     ],
+     [
+      -108.113625,
+      34.987385
+     ],
+     [
+      -108.109185,
+      34.986978
+     ],
+     [
+      -108.108363,
+      34.98743
+     ],
+     [
+      -108.108308,
+      34.987204
+     ],
+     [
+      -108.108801,
+      34.986933
+     ],
+     [
+      -108.100689,
+      34.986164
+     ],
+     [
+      -108.100031,
+      34.986164
+     ],
+     [
+      -108.095207,
+      34.987656
+     ],
+     [
+      -108.095043,
+      34.987792
+     ],
+     [
+      -108.096742,
+      34.987792
+     ],
+     [
+      -108.099976,
+      34.986752
+     ],
+     [
+      -108.100579,
+      34.986706
+     ],
+     [
+      -108.111707,
+      34.987792
+     ],
+     [
+      -108.11379,
+      34.987927
+     ],
+     [
+      -108.114064,
+      34.987837
+     ]
+    ],
+    [
+     [
+      -108.132591,
+      34.977211
+     ],
+     [
+      -108.136593,
+      34.973819
+     ],
+     [
+      -108.139114,
+      34.968709
+     ],
+     [
+      -108.13906,
+      34.968619
+     ],
+     [
+      -108.139169,
+      34.968483
+     ],
+     [
+      -108.139608,
+      34.965951
+     ],
+     [
+      -108.139443,
+      34.965906
+     ],
+     [
+      -108.139334,
+      34.963781
+     ],
+     [
+      -108.138511,
+      34.968438
+     ],
+     [
+      -108.136209,
+      34.973141
+     ],
+     [
+      -108.135771,
+      34.973819
+     ],
+     [
+      -108.133797,
+      34.975492
+     ],
+     [
+      -108.134017,
+      34.975583
+     ],
+     [
+      -108.135387,
+      34.974362
+     ],
+     [
+      -108.135387,
+      34.974769
+     ],
+     [
+      -108.133797,
+      34.976171
+     ],
+     [
+      -108.132865,
+      34.976804
+     ],
+     [
+      -108.132537,
+      34.97712
+     ]
+    ],
+    [
+     [
+      -108.120422,
+      34.982411
+     ],
+     [
+      -108.120532,
+      34.982456
+     ],
+     [
+      -108.120916,
+      34.982185
+     ],
+     [
+      -108.121628,
+      34.982094
+     ],
+     [
+      -108.122231,
+      34.981687
+     ],
+     [
+      -108.123328,
+      34.981506
+     ],
+     [
+      -108.123985,
+      34.981145
+     ],
+     [
+      -108.124972,
+      34.980828
+     ],
+     [
+      -108.125685,
+      34.980421
+     ],
+     [
+      -108.126233,
+      34.980421
+     ],
+     [
+      -108.131331,
+      34.978251
+     ],
+     [
+      -108.132372,
+      34.977346
+     ],
+     [
+      -108.131276,
+      34.978115
+     ],
+     [
+      -108.130782,
+      34.978341
+     ],
+     [
+      -108.130782,
+      34.978025
+     ],
+     [
+      -108.131714,
+      34.977437
+     ],
+     [
+      -108.13303,
+      34.976261
+     ],
+     [
+      -108.133743,
+      34.975809
+     ],
+     [
+      -108.133743,
+      34.975718
+     ],
+     [
+      -108.133578,
+      34.975628
+     ],
+     [
+      -108.131002,
+      34.977753
+     ],
+     [
+      -108.120806,
+      34.982094
+     ]
+    ],
+    [
+     [
+      -108.116421,
+      34.985305
+     ],
+     [
+      -108.117462,
+      34.985305
+     ],
+     [
+      -108.118833,
+      34.98431
+     ],
+     [
+      -108.118065,
+      34.984807
+     ],
+     [
+      -108.117462,
+      34.985033
+     ],
+     [
+      -108.117353,
+      34.984988
+     ],
+     [
+      -108.117353,
+      34.984762
+     ],
+     [
+      -108.11949,
+      34.983632
+     ],
+     [
+      -108.119655,
+      34.983496
+     ],
+     [
+      -108.120258,
+      34.982546
+     ],
+     [
+      -108.120148,
+      34.982546
+     ]
+    ],
+    [
+     [
+      -108.120039,
+      34.983406
+     ],
+     [
+      -108.121135,
+      34.982592
+     ],
+     [
+      -108.122889,
+      34.981823
+     ],
+     [
+      -108.122341,
+      34.981913
+     ],
+     [
+      -108.121738,
+      34.98232
+     ],
+     [
+      -108.121025,
+      34.982456
+     ],
+     [
+      -108.120696,
+      34.982727
+     ],
+     [
+      -108.120367,
+      34.982863
+     ]
+    ]
+   ],
+   "zone_acres": 74.61,
+   "zone_read": "2026-10-29",
+   "zone_wide_m": 70.0
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     34.999807,
+     -108.046095
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
+   "box": [
+    -108.04691,
+    34.95846,
+    -107.98866,
+    35.00052
+   ],
+   "center": [
+    34.998024,
+    -108.043363
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "ground": [
+    "Park Service"
+   ],
+   "id": "US-0923+US-4558@trail@34.978,-108.018",
+   "kind": "trail",
+   "len_m": 7844,
+   "line_source": {
+    "US-4558": {
+     "by": "U.S. Forest Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4558.json"
+    }
+   },
+   "map_dates": {
+    "US-0923": "downloaded 2026-10-29",
+    "US-4558": "official line (trails bot)",
+    "USGS water": "saved copy of the USGS map, read 2026-10-29"
+   },
+   "maps": [
+    [
+     "US-0923",
+     "https://www.nps.gov/elma/planyourvisit/maps.htm"
+    ],
+    [
+     "US-4558",
+     "https://www.fs.usda.gov/managing-land/trails/cdt"
+    ]
+   ],
+   "names": {
+    "US-0923": "El Malpais National Monument",
+    "US-4558": "Continental Divide Trail National Scenic Trail"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (Park Service)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-0923": false,
+    "US-4558": true
+   },
+   "refs": [
+    "US-0923",
+    "US-4558"
+   ],
+   "shape": [
+    [
+     -108.046908,
+     35.000522
+    ],
+    [
+     -108.039813,
+     34.995523
+    ]
+   ],
+   "status": "merged into one row: US-0923+US-4558@trail@34.934,-107.892",
+   "zone": [
+    [
+     [
+      -108.046828,
+      35.000317
+     ],
+     [
+      -108.046773,
+      35.000045
+     ],
+     [
+      -108.039976,
+      34.995252
+     ],
+     [
+      -108.039811,
+      34.995207
+     ]
+    ]
+   ],
+   "zone_acres": 3.36,
+   "zone_read": "2026-10-29",
+   "zone_wide_m": 22.0
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     34.987779,
+     -108.113222
+    ],
+    "from": "road",
+    "name": "Cibola County 42",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
+   "box": [
+    -108.13969,
+    34.96386,
+    -108.09537,
+    34.98795
+   ],
+   "center": [
+    34.981888,
+    -108.122149
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "ground": [
+    "Park Service"
+   ],
+   "id": "US-0923+US-4558@trail@34.984,-108.119",
+   "kind": "trail",
+   "len_m": 5469,
+   "line_source": {
+    "US-4558": {
+     "by": "U.S. Forest Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4558.json"
+    }
+   },
+   "map_dates": {
+    "US-0923": "downloaded 2026-10-29",
+    "US-4558": "official line (trails bot)",
+    "USGS water": "saved copy of the USGS map, read 2026-10-29"
+   },
+   "maps": [
+    [
+     "US-0923",
+     "https://www.nps.gov/elma/planyourvisit/maps.htm"
+    ],
+    [
+     "US-4558",
+     "https://www.fs.usda.gov/managing-land/trails/cdt"
+    ]
+   ],
+   "names": {
+    "US-0923": "El Malpais National Monument",
+    "US-4558": "Continental Divide Trail National Scenic Trail"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (Park Service)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-0923": false,
+    "US-4558": true
+   },
+   "refs": [
+    "US-0923",
+    "US-4558"
+   ],
+   "shape": [
+    [
+     -108.139688,
+     34.963861
+    ],
+    [
+     -108.138833,
+     34.968564
+    ],
+    [
+     -108.136246,
+     34.973809
+    ],
+    [
+     -108.13607,
+     34.973974
+    ],
+    [
+     -108.131235,
+     34.97799
+    ],
+    [
+     -108.121006,
+     34.982378
+    ],
+    [
+     -108.120579,
+     34.982668
+    ],
+    [
+     -108.113847,
+     34.987651
+    ],
+    [
+     -108.113595,
+     34.987694
+    ],
+    [
+     -108.100241,
+     34.986439
+    ],
+    [
+     -108.095362,
+     34.987954
+    ]
+   ],
+   "status": "dropped: the same stretch twice (copy of US-0923+US-4558@trail@34.971,-108.138)"
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     34.976118,
+     -107.807758
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
+   "box": [
+    -107.82178,
+    34.94685,
+    -107.80494,
+    34.99094
+   ],
+   "center": [
+    34.968884,
+    -107.812695
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "ground": [
+    "BLM"
+   ],
+   "id": "US-0923+US-4558@trail@34.989,-107.807",
+   "kind": "trail",
+   "len_m": 5185,
+   "line_source": {
+    "US-4558": {
+     "by": "U.S. Forest Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4558.json"
+    }
+   },
+   "map_dates": {
+    "US-0923": "downloaded 2026-10-29",
+    "US-4558": "official line (trails bot)",
+    "USGS water": "USGS NHDPlus HR file 2022-09-01 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "maps": [
+    [
+     "US-0923",
+     "https://www.nps.gov/elma/planyourvisit/maps.htm"
+    ],
+    [
+     "US-4558",
+     "https://www.fs.usda.gov/managing-land/trails/cdt"
+    ]
+   ],
+   "names": {
+    "US-0923": "El Malpais National Monument",
+    "US-4558": "Continental Divide Trail National Scenic Trail"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (BLM)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-0923": false,
+    "US-4558": true
+   },
+   "refs": [
+    "US-0923",
+    "US-4558"
+   ],
+   "shape": [
+    [
+     -107.821781,
+     34.946852
+    ],
+    [
+     -107.817013,
+     34.960072
+    ],
+    [
+     -107.812288,
+     34.969724
+    ],
+    [
+     -107.812069,
+     34.97014
+    ],
+    [
+     -107.804943,
+     34.98059
+    ],
+    [
+     -107.805612,
+     34.985996
+    ],
+    [
+     -107.805678,
+     34.986211
+    ],
+    [
+     -107.807848,
+     34.989878
+    ]
+   ],
+   "status": "merged into one row: US-0923+US-4558@trail@34.934,-107.892",
+   "zone": [
+    [
+     [
+      -107.808105,
+      34.989877
+     ],
+     [
+      -107.808105,
+      34.989696
+     ],
+     [
+      -107.805912,
+      34.985989
+     ],
+     [
+      -107.805254,
+      34.980608
+     ],
+     [
+      -107.812106,
+      34.970614
+     ],
+     [
+      -107.812654,
+      34.969665
+     ],
+     [
+      -107.817313,
+      34.960169
+     ],
+     [
+      -107.822027,
+      34.947055
+     ],
+     [
+      -107.821862,
+      34.947055
+     ],
+     [
+      -107.821204,
+      34.948186
+     ],
+     [
+      -107.820547,
+      34.950356
+     ],
+     [
+      -107.819122,
+      34.953522
+     ],
+     [
+      -107.817477,
+      34.958541
+     ],
+     [
+      -107.817751,
+      34.958586
+     ],
+     [
+      -107.817751,
+      34.958767
+     ],
+     [
+      -107.814353,
+      34.965731
+     ],
+     [
+      -107.812873,
+      34.968986
+     ],
+     [
+      -107.811777,
+      34.970886
+     ],
+     [
+      -107.810462,
+      34.97283
+     ],
+     [
+      -107.806954,
+      34.977035
+     ],
+     [
+      -107.806351,
+      34.97794
+     ],
+     [
+      -107.805474,
+      34.979477
+     ],
+     [
+      -107.804926,
+      34.980924
+     ],
+     [
+      -107.804761,
+      34.981602
+     ],
+     [
+      -107.804871,
+      34.983095
+     ],
+     [
+      -107.805857,
+      34.98626
+     ],
+     [
+      -107.80657,
+      34.987571
+     ]
+    ]
+   ],
+   "zone_acres": 41.16,
+   "zone_read": "2026-10-29",
+   "zone_wide_m": 70.0
+  },
+  {
+   "acres": 0.1,
+   "box": [
+    -108.23617,
+    33.22136,
+    -108.23617,
+    33.22163
+   ],
+   "center": [
+    33.221632,
+    -108.236171
+   ],
+   "found": "2026-10-29",
+   "id": "US-0937+US-4515@area@33.222,-108.236",
+   "kind": "area",
+   "passes": [
+    1,
+    1,
+    0
+   ],
+   "refs": [
+    "US-0937",
+    "US-4515"
+   ],
+   "shape": [
+    [
+     -108.236171,
+     33.221632
+    ],
+    [
+     -108.236171,
+     33.221361
+    ]
+   ],
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "tier": "very tight: could be map error: check both official maps on the ground",
+   "wide_m": 10
+  },
+  {
+   "acres": 0.3,
+   "box": [
+    -108.2409,
+    33.22353,
+    -108.23982,
+    33.22353
+   ],
+   "center": [
+    33.223532,
+    -108.240896
+   ],
+   "found": "2026-10-29",
+   "id": "US-0937+US-4515@area@33.224,-108.241",
+   "kind": "area",
+   "passes": [
+    1,
+    1,
+    0
+   ],
+   "refs": [
+    "US-0937",
+    "US-4515"
+   ],
+   "shape": [
+    [
+     -108.240896,
+     33.223532
+    ],
+    [
+     -108.239822,
+     33.223532
+    ]
+   ],
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "tier": "very tight: could be map error: check both official maps on the ground",
+   "wide_m": 10
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     33.223287,
+     -108.2791
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 365
+   },
+   "acres": 87.4,
+   "box": [
+    -108.28147,
+    33.2207,
+    -108.26622,
+    33.23526
+   ],
+   "center": [
+    33.23436,
+    -108.28034
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "ground": [
+    "Forest Service",
+    "Park Service"
+   ],
+   "id": "US-0937+US-4515@area@33.234,-108.280",
+   "info": {
+    "water_pct": 0
+   },
+   "kind": "area",
+   "lines": {
+    "US-0937": [
+     [
+      [
+       -108.265566,
+       33.222911
+      ],
+      [
+       -108.265983,
+       33.219946
+      ],
+      [
+       -108.280718,
+       33.22083
+      ],
+      [
+       -108.2809,
+       33.231573
+      ],
+      [
+       -108.281515,
+       33.235269
+      ],
+      [
+       -108.266295,
+       33.2344
+      ],
+      [
+       -108.265632,
+       33.230699
+      ],
+      [
+       -108.265499,
+       33.223386
+      ],
+      [
+       -108.265566,
+       33.222911
+      ]
+     ]
+    ],
+    "US-4515": [
+     [
+      [
+       -108.279129,
+       33.226802
+      ],
+      [
+       -108.279035,
+       33.219527
+      ],
+      [
+       -108.265637,
+       33.219654
+      ],
+      [
+       -108.265557,
+       33.223364
+      ],
+      [
+       -108.265703,
+       33.230685
+      ],
+      [
+       -108.266063,
+       33.234155
+      ],
+      [
+       -108.279433,
+       33.233978
+      ],
+      [
+       -108.279176,
+       33.230433
+      ],
+      [
+       -108.279129,
+       33.226802
+      ]
+     ]
+    ]
+   },
+   "lines_read": "2026-10-29",
+   "map_dates": {
+    "US-0937": "downloaded 2026-10-29",
+    "US-4515": "downloaded 2026-10-29",
+    "USGS water": "saved copy of the USGS map, read 2026-10-29"
+   },
+   "maps": [
+    [
+     "US-0937",
+     "https://www.nps.gov/gicl/planyourvisit/maps.htm"
+    ],
+    [
+     "US-4515",
+     "https://www.fs.usda.gov/gila"
+    ]
+   ],
+   "mixed_owners": [
+    "FED:NPS",
+    "FED:USFS"
+   ],
+   "names": {
+    "US-0937": "Gila Cliff Dwellings National Monument",
+    "US-4515": "Gila National Forest"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (Forest Service + Park Service)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-0937": true,
+    "US-4515": true
+   },
+   "refs": [
+    "US-0937",
+    "US-4515"
+   ],
+   "shape": [
+    [
+     -108.266272,
+     33.23436
+    ],
+    [
+     -108.281467,
+     33.235265
+    ],
+    [
+     -108.280877,
+     33.231693
+    ],
+    [
+     -108.280716,
+     33.220795
+    ],
+    [
+     -108.279051,
+     33.220704
+    ],
+    [
+     -108.279212,
+     33.230743
+    ],
+    [
+     -108.279481,
+     33.233953
+    ],
+    [
+     -108.266218,
+     33.23418
+    ]
+   ],
+   "status": "candidate",
+   "water_checked": "2026-10-29",
+   "wide_m": 185
   },
   {
    "access": null,
@@ -440,6 +5332,6437 @@
     ]
    ],
    "status": "candidate"
+  },
+  {
+   "acres": 12.6,
+   "box": [
+    -107.97897,
+    34.9583,
+    -107.94182,
+    34.95848
+   ],
+   "center": [
+    34.958482,
+    -107.978973
+   ],
+   "found": "2026-10-29",
+   "id": "US-12169+US-4514@area@34.958,-107.979",
+   "kind": "area",
+   "masked_out": [
+    "blm",
+    "usfs"
+   ],
+   "passes": [
+    1,
+    1,
+    0
+   ],
+   "refs": [
+    "US-12169",
+    "US-4514"
+   ],
+   "shape": [
+    [
+     -107.978973,
+     34.958482
+    ],
+    [
+     -107.941816,
+     34.958301
+    ]
+   ],
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "tier": "very tight: could be map error: check both official maps on the ground",
+   "wide_m": 10
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     35.304817,
+     -108.152777
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
+   "acres": 1.5,
+   "box": [
+    -108.15327,
+    35.30386,
+    -108.15278,
+    35.30657
+   ],
+   "center": [
+    35.304262,
+    -108.152999
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "ground": [
+    "Forest Service",
+    "state"
+   ],
+   "id": "US-2686+US-4514@area@35.305,-108.153",
+   "info": {
+    "water_pct": 0
+   },
+   "kind": "area",
+   "lines": {
+    "US-2686": [
+     [
+      [
+       -108.145592,
+       35.303871
+      ],
+      [
+       -108.153321,
+       35.303885
+      ],
+      [
+       -108.15267,
+       35.306476
+      ],
+      [
+       -108.14279,
+       35.306408
+      ]
+     ],
+     [
+      [
+       -108.143928,
+       35.303418
+      ],
+      [
+       -108.152829,
+       35.303384
+      ],
+      [
+       -108.152781,
+       35.306601
+      ],
+      [
+       -108.141111,
+       35.306542
+      ]
+     ]
+    ],
+    "US-4514": [
+     [
+      [
+       -108.158787,
+       35.306491
+      ],
+      [
+       -108.152781,
+       35.306601
+      ],
+      [
+       -108.152888,
+       35.299836
+      ]
+     ]
+    ]
+   },
+   "lines_read": "2026-10-29",
+   "list": "Very tight (members only)",
+   "map_dates": {
+    "US-2686": "downloaded 2026-10-29",
+    "US-4514": "downloaded 2026-10-29",
+    "USGS water": "USGS NHDPlus HR file 2022-09-01 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "maps": [
+    [
+     "US-2686",
+     "https://www.emnrd.nm.gov/spd/find-a-park/bluewater-lake-state-park/"
+    ],
+    [
+     "US-4514",
+     "https://www.fs.usda.gov/cibola"
+    ]
+   ],
+   "mixed_owners": [
+    "FED:USFS",
+    "STATE"
+   ],
+   "names": {
+    "US-2686": "Bluewater State Park",
+    "US-4514": "Cibola National Forest"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (Forest Service + state)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-2686": true,
+    "US-4514": true
+   },
+   "refs": [
+    "US-2686",
+    "US-4514"
+   ],
+   "shape": [
+    [
+     -108.152779,
+     35.306568
+    ],
+    [
+     -108.152779,
+     35.305709
+    ],
+    [
+     -108.153274,
+     35.303855
+    ],
+    [
+     -108.152834,
+     35.303855
+    ]
+   ],
+   "status": "very tight: could be map error: check both official maps on the ground",
+   "tier": "very tight: could be map error: check both official maps on the ground",
+   "water_checked": "2026-10-29",
+   "wide_m": 35
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     35.000715,
+     -108.046775
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
+   "box": [
+    -108.0471,
+    34.99357,
+    -108.03727,
+    35.00066
+   ],
+   "center": [
+    34.997127,
+    -108.04209
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "ground": [
+    "Forest Service"
+   ],
+   "id": "US-4514+US-4558@trail@35.000,-108.046",
+   "kind": "trail",
+   "len_m": 1199,
+   "line_source": {
+    "US-4558": {
+     "by": "U.S. Forest Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4558.json"
+    }
+   },
+   "map_dates": {
+    "US-4514": "downloaded 2026-10-29",
+    "US-4558": "official line (trails bot)"
+   },
+   "maps": [
+    [
+     "US-4514",
+     "https://www.fs.usda.gov/cibola"
+    ],
+    [
+     "US-4558",
+     "https://www.fs.usda.gov/managing-land/trails/cdt"
+    ]
+   ],
+   "names": {
+    "US-4514": "Cibola National Forest",
+    "US-4558": "Continental Divide Trail National Scenic Trail"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (Forest Service)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-4514": true,
+    "US-4558": true
+   },
+   "refs": [
+    "US-4514",
+    "US-4558"
+   ],
+   "shape": [
+    [
+     -108.047102,
+     35.000656
+    ],
+    [
+     -108.037288,
+     34.993744
+    ],
+    [
+     -108.037266,
+     34.993708
+    ],
+    [
+     -108.037266,
+     34.99357
+    ]
+   ],
+   "status": "merged into one row: US-4514+US-4558@trail@35.300,-107.578",
+   "zone": [
+    [
+     [
+      -108.046798,
+      35.000818
+     ],
+     [
+      -108.046798,
+      35.000637
+     ],
+     [
+      -108.044112,
+      34.998829
+     ],
+     [
+      -108.036929,
+      34.993674
+     ],
+     [
+      -108.036929,
+      34.993809
+     ],
+     [
+      -108.037094,
+      34.99399
+     ]
+    ]
+   ],
+   "zone_acres": 4.68,
+   "zone_read": "2026-10-29",
+   "zone_wide_m": 22.0
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     35.525577,
+     -107.382879
+    ],
+    "from": "road",
+    "name": "BLM Rd 1103",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
+   "box": [
+    -108.0471,
+    34.99357,
+    -107.38337,
+    35.52332
+   ],
+   "center": [
+    35.299534,
+    -107.578972
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "ground": [
+    "Forest Service"
+   ],
+   "id": "US-4514+US-4558@trail@35.300,-107.578",
+   "kind": "trail",
+   "len_m": 70133,
+   "len_main": 68934,
+   "line_source": {
+    "US-4558": {
+     "by": "U.S. Forest Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4558.json"
+    }
+   },
+   "map_dates": {
+    "US-4514": "downloaded 2026-10-29",
+    "US-4558": "official line (trails bot)"
+   },
+   "maps": [
+    [
+     "US-4514",
+     "https://www.fs.usda.gov/cibola"
+    ],
+    [
+     "US-4558",
+     "https://www.fs.usda.gov/managing-land/trails/cdt"
+    ]
+   ],
+   "names": {
+    "US-4514": "Cibola National Forest",
+    "US-4558": "Continental Divide Trail National Scenic Trail"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (Forest Service)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins": [
+    {
+     "at": [
+      35.525577,
+      -107.382879
+     ],
+     "from": "road",
+     "name": "BLM Rd 1103",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 0
+    },
+    {
+     "at": [
+      35.000715,
+      -108.046775
+     ],
+     "from": "road",
+     "name": "public road",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 0
+    }
+   ],
+   "pins_inside": {
+    "US-4514": true,
+    "US-4558": true
+   },
+   "refs": [
+    "US-4514",
+    "US-4558"
+   ],
+   "shape": [
+    [
+     -107.783731,
+     35.188645
+    ],
+    [
+     -107.776444,
+     35.190248
+    ],
+    [
+     -107.772757,
+     35.190879
+    ],
+    [
+     -107.771535,
+     35.190411
+    ],
+    [
+     -107.768442,
+     35.189536
+    ],
+    [
+     -107.764864,
+     35.190558
+    ],
+    [
+     -107.761166,
+     35.190076
+    ],
+    [
+     -107.761826,
+     35.188385
+    ],
+    [
+     -107.764468,
+     35.186181
+    ],
+    [
+     -107.766581,
+     35.183685
+    ],
+    [
+     -107.768023,
+     35.18082
+    ],
+    [
+     -107.768034,
+     35.178573
+    ],
+    [
+     -107.764391,
+     35.178263
+    ],
+    [
+     -107.760891,
+     35.179267
+    ],
+    [
+     -107.757115,
+     35.179294
+    ],
+    [
+     -107.753604,
+     35.178546
+    ],
+    [
+     -107.750389,
+     35.176906
+    ],
+    [
+     -107.747098,
+     35.176138
+    ],
+    [
+     -107.743532,
+     35.176565
+    ],
+    [
+     -107.739987,
+     35.177289
+    ],
+    [
+     -107.732987,
+     35.179565
+    ],
+    [
+     -107.725656,
+     35.178121
+    ],
+    [
+     -107.721935,
+     35.178028
+    ],
+    [
+     -107.718358,
+     35.177438
+    ],
+    [
+     -107.714879,
+     35.176472
+    ],
+    [
+     -107.711357,
+     35.177481
+    ],
+    [
+     -107.707636,
+     35.176945
+    ],
+    [
+     -107.705061,
+     35.178491
+    ],
+    [
+     -107.702562,
+     35.180583
+    ],
+    [
+     -107.699271,
+     35.181905
+    ],
+    [
+     -107.696662,
+     35.184155
+    ],
+    [
+     -107.693349,
+     35.185557
+    ],
+    [
+     -107.686447,
+     35.188051
+    ],
+    [
+     -107.683046,
+     35.189339
+    ],
+    [
+     -107.681318,
+     35.192093
+    ],
+    [
+     -107.679028,
+     35.194501
+    ],
+    [
+     -107.67566,
+     35.195254
+    ],
+    [
+     -107.672809,
+     35.197266
+    ],
+    [
+     -107.66998,
+     35.19931
+    ],
+    [
+     -107.668934,
+     35.202138
+    ],
+    [
+     -107.666744,
+     35.204664
+    ],
+    [
+     -107.66627,
+     35.207748
+    ],
+    [
+     -107.664289,
+     35.210246
+    ],
+    [
+     -107.660855,
+     35.211553
+    ],
+    [
+     -107.658664,
+     35.21364
+    ],
+    [
+     -107.656408,
+     35.215552
+    ],
+    [
+     -107.656066,
+     35.218566
+    ],
+    [
+     -107.656837,
+     35.220174
+    ],
+    [
+     -107.656815,
+     35.222611
+    ],
+    [
+     -107.65305,
+     35.22257
+    ],
+    [
+     -107.649341,
+     35.222833
+    ],
+    [
+     -107.646567,
+     35.224476
+    ],
+    [
+     -107.643518,
+     35.225871
+    ],
+    [
+     -107.642813,
+     35.227922
+    ],
+    [
+     -107.640293,
+     35.230249
+    ],
+    [
+     -107.640425,
+     35.232672
+    ],
+    [
+     -107.637926,
+     35.234748
+    ],
+    [
+     -107.634789,
+     35.236486
+    ],
+    [
+     -107.638146,
+     35.237798
+    ],
+    [
+     -107.640051,
+     35.240472
+    ],
+    [
+     -107.64004,
+     35.243125
+    ],
+    [
+     -107.636011,
+     35.248374
+    ],
+    [
+     -107.634382,
+     35.251151
+    ],
+    [
+     -107.634018,
+     35.254108
+    ],
+    [
+     -107.630859,
+     35.254646
+    ],
+    [
+     -107.63032,
+     35.256814
+    ],
+    [
+     -107.630969,
+     35.259808
+    ],
+    [
+     -107.629571,
+     35.262695
+    ],
+    [
+     -107.630353,
+     35.265614
+    ],
+    [
+     -107.631454,
+     35.268542
+    ],
+    [
+     -107.630199,
+     35.268994
+    ],
+    [
+     -107.629153,
+     35.268148
+    ],
+    [
+     -107.628394,
+     35.271183
+    ],
+    [
+     -107.626148,
+     35.273685
+    ],
+    [
+     -107.622604,
+     35.274739
+    ],
+    [
+     -107.619004,
+     35.275454
+    ],
+    [
+     -107.615251,
+     35.275094
+    ],
+    [
+     -107.612884,
+     35.276631
+    ],
+    [
+     -107.612972,
+     35.279263
+    ],
+    [
+     -107.606632,
+     35.278002
+    ],
+    [
+     -107.603517,
+     35.279417
+    ],
+    [
+     -107.601789,
+     35.277059
+    ],
+    [
+     -107.599356,
+     35.274931
+    ],
+    [
+     -107.597496,
+     35.275209
+    ],
+    [
+     -107.596538,
+     35.277997
+    ],
+    [
+     -107.593346,
+     35.278933
+    ],
+    [
+     -107.590319,
+     35.280613
+    ],
+    [
+     -107.587853,
+     35.281133
+    ],
+    [
+     -107.587655,
+     35.284226
+    ],
+    [
+     -107.586719,
+     35.287122
+    ],
+    [
+     -107.583648,
+     35.288818
+    ],
+    [
+     -107.581282,
+     35.291006
+    ],
+    [
+     -107.582239,
+     35.293851
+    ],
+    [
+     -107.582526,
+     35.296826
+    ],
+    [
+     -107.580302,
+     35.299053
+    ],
+    [
+     -107.576714,
+     35.299456
+    ],
+    [
+     -107.574996,
+     35.302047
+    ],
+    [
+     -107.576273,
+     35.31128
+    ],
+    [
+     -107.575613,
+     35.317464
+    ],
+    [
+     -107.574402,
+     35.320347
+    ],
+    [
+     -107.573753,
+     35.326399
+    ],
+    [
+     -107.572355,
+     35.329266
+    ],
+    [
+     -107.570362,
+     35.330349
+    ],
+    [
+     -107.572035,
+     35.333028
+    ],
+    [
+     -107.570858,
+     35.335757
+    ],
+    [
+     -107.568161,
+     35.337928
+    ],
+    [
+     -107.565497,
+     35.340123
+    ],
+    [
+     -107.56553,
+     35.342802
+    ],
+    [
+     -107.560599,
+     35.347482
+    ],
+    [
+     -107.558276,
+     35.349895
+    ],
+    [
+     -107.557087,
+     35.35285
+    ],
+    [
+     -107.555381,
+     35.35559
+    ],
+    [
+     -107.554765,
+     35.358346
+    ],
+    [
+     -107.554743,
+     35.361373
+    ],
+    [
+     -107.552728,
+     35.363849
+    ],
+    [
+     -107.539321,
+     35.374758
+    ],
+    [
+     -107.536305,
+     35.376605
+    ],
+    [
+     -107.5298,
+     35.379766
+    ],
+    [
+     -107.528567,
+     35.382619
+    ],
+    [
+     -107.523503,
+     35.387225
+    ],
+    [
+     -107.520366,
+     35.388916
+    ],
+    [
+     -107.513872,
+     35.392093
+    ],
+    [
+     -107.511472,
+     35.394433
+    ],
+    [
+     -107.509326,
+     35.396983
+    ],
+    [
+     -107.507278,
+     35.399585
+    ],
+    [
+     -107.502567,
+     35.408043
+    ],
+    [
+     -107.500949,
+     35.410831
+    ],
+    [
+     -107.498252,
+     35.413004
+    ],
+    [
+     -107.495214,
+     35.41481
+    ],
+    [
+     -107.491978,
+     35.416425
+    ],
+    [
+     -107.488819,
+     35.41808
+    ],
+    [
+     -107.487971,
+     35.421116
+    ],
+    [
+     -107.484625,
+     35.421487
+    ],
+    [
+     -107.481444,
+     35.422518
+    ],
+    [
+     -107.478714,
+     35.424512
+    ],
+    [
+     -107.475005,
+     35.425188
+    ],
+    [
+     -107.471592,
+     35.426402
+    ],
+    [
+     -107.465263,
+     35.4298
+    ],
+    [
+     -107.462071,
+     35.431046
+    ],
+    [
+     -107.460012,
+     35.432147
+    ],
+    [
+     -107.457932,
+     35.438114
+    ],
+    [
+     -107.454729,
+     35.439403
+    ],
+    [
+     -107.45114,
+     35.440386
+    ],
+    [
+     -107.44819,
+     35.442247
+    ],
+    [
+     -107.442654,
+     35.446463
+    ],
+    [
+     -107.439759,
+     35.448385
+    ],
+    [
+     -107.436082,
+     35.449147
+    ],
+    [
+     -107.433297,
+     35.450881
+    ],
+    [
+     -107.429632,
+     35.451636
+    ],
+    [
+     -107.4271,
+     35.453563
+    ],
+    [
+     -107.421982,
+     35.461849
+    ],
+    [
+     -107.420804,
+     35.464763
+    ],
+    [
+     -107.420077,
+     35.467804
+    ],
+    [
+     -107.419142,
+     35.470791
+    ],
+    [
+     -107.403654,
+     35.499055
+    ],
+    [
+     -107.401177,
+     35.501237
+    ],
+    [
+     -107.398029,
+     35.502973
+    ],
+    [
+     -107.394452,
+     35.503647
+    ],
+    [
+     -107.391656,
+     35.505605
+    ],
+    [
+     -107.391018,
+     35.504208
+    ],
+    [
+     -107.385459,
+     35.508424
+    ],
+    [
+     -107.384193,
+     35.511029
+    ],
+    [
+     -107.384611,
+     35.517215
+    ],
+    [
+     -107.384094,
+     35.520271
+    ],
+    [
+     -107.383367,
+     35.523319
+    ]
+   ],
+   "status": "candidate",
+   "stretches": 2,
+   "strip_wide_m": 85.9,
+   "zone": [
+    [
+     [
+      -107.383149,
+      35.523523
+     ],
+     [
+      -107.383479,
+      35.523523
+     ],
+     [
+      -107.383699,
+      35.523297
+     ],
+     [
+      -107.384414,
+      35.520313
+     ],
+     [
+      -107.384909,
+      35.517374
+     ],
+     [
+      -107.384524,
+      35.510953
+     ],
+     [
+      -107.38568,
+      35.508601
+     ],
+     [
+      -107.39085,
+      35.504667
+     ],
+     [
+      -107.391345,
+      35.505707
+     ],
+     [
+      -107.39162,
+      35.505843
+     ],
+     [
+      -107.39206,
+      35.505662
+     ],
+     [
+      -107.394646,
+      35.503853
+     ],
+     [
+      -107.398221,
+      35.503175
+     ],
+     [
+      -107.401356,
+      35.501457
+     ],
+     [
+      -107.403942,
+      35.499151
+     ],
+     [
+      -107.419453,
+      35.470844
+     ],
+     [
+      -107.420388,
+      35.467859
+     ],
+     [
+      -107.421048,
+      35.464875
+     ],
+     [
+      -107.422259,
+      35.461891
+     ],
+     [
+      -107.427264,
+      35.453796
+     ],
+     [
+      -107.429794,
+      35.451852
+     ],
+     [
+      -107.43337,
+      35.451129
+     ],
+     [
+      -107.436175,
+      35.449365
+     ],
+     [
+      -107.439916,
+      35.448596
+     ],
+     [
+      -107.443051,
+      35.446516
+     ],
+     [
+      -107.448331,
+      35.442447
+     ],
+     [
+      -107.451302,
+      35.440593
+     ],
+     [
+      -107.454712,
+      35.439688
+     ],
+     [
+      -107.458013,
+      35.438377
+     ],
+     [
+      -107.458178,
+      35.438241
+     ],
+     [
+      -107.460213,
+      35.432408
+     ],
+     [
+      -107.460323,
+      35.432272
+     ],
+     [
+      -107.462248,
+      35.431232
+     ],
+     [
+      -107.465438,
+      35.430011
+     ],
+     [
+      -107.471929,
+      35.42653
+     ],
+     [
+      -107.475119,
+      35.425399
+     ],
+     [
+      -107.47886,
+      35.424721
+     ],
+     [
+      -107.48117,
+      35.423003
+     ],
+     [
+      -107.481775,
+      35.422641
+     ],
+     [
+      -107.484635,
+      35.421736
+     ],
+     [
+      -107.488101,
+      35.421329
+     ],
+     [
+      -107.488321,
+      35.421013
+     ],
+     [
+      -107.489036,
+      35.4183
+     ],
+     [
+      -107.489256,
+      35.418119
+     ],
+     [
+      -107.492006,
+      35.416672
+     ],
+     [
+      -107.495527,
+      35.414954
+     ],
+     [
+      -107.498332,
+      35.413281
+     ],
+     [
+      -107.501137,
+      35.41102
+     ],
+     [
+      -107.502842,
+      35.408171
+     ],
+     [
+      -107.507573,
+      35.399625
+     ],
+     [
+      -107.509553,
+      35.397092
+     ],
+     [
+      -107.511423,
+      35.394877
+     ],
+     [
+      -107.513899,
+      35.392435
+     ],
+     [
+      -107.514339,
+      35.392118
+     ],
+     [
+      -107.520444,
+      35.389179
+     ],
+     [
+      -107.523745,
+      35.38737
+     ],
+     [
+      -107.528805,
+      35.382758
+     ],
+     [
+      -107.53007,
+      35.379909
+     ],
+     [
+      -107.536286,
+      35.376925
+     ],
+     [
+      -107.539477,
+      35.37498
+     ],
+     [
+      -107.552953,
+      35.364038
+     ],
+     [
+      -107.554933,
+      35.361596
+     ],
+     [
+      -107.555043,
+      35.36137
+     ],
+     [
+      -107.555043,
+      35.35834
+     ],
+     [
+      -107.555648,
+      35.355672
+     ],
+     [
+      -107.557409,
+      35.352869
+     ],
+     [
+      -107.558619,
+      35.349884
+     ],
+     [
+      -107.560984,
+      35.347442
+     ],
+     [
+      -107.565769,
+      35.342966
+     ],
+     [
+      -107.565824,
+      35.340207
+     ],
+     [
+      -107.57116,
+      35.335821
+     ],
+     [
+      -107.572315,
+      35.333153
+     ],
+     [
+      -107.572315,
+      35.332882
+     ],
+     [
+      -107.570775,
+      35.33044
+     ],
+     [
+      -107.572535,
+      35.329491
+     ],
+     [
+      -107.574075,
+      35.326416
+     ],
+     [
+      -107.57468,
+      35.320356
+     ],
+     [
+      -107.575891,
+      35.317598
+     ],
+     [
+      -107.575836,
+      35.317508
+     ],
+     [
+      -107.575946,
+      35.317417
+     ],
+     [
+      -107.576551,
+      35.311765
+     ],
+     [
+      -107.576551,
+      35.31086
+     ],
+     [
+      -107.575285,
+      35.302088
+     ],
+     [
+      -107.576771,
+      35.299827
+     ],
+     [
+      -107.576936,
+      35.299691
+     ],
+     [
+      -107.580236,
+      35.29933
+     ],
+     [
+      -107.580456,
+      35.299239
+     ],
+     [
+      -107.582766,
+      35.296978
+     ],
+     [
+      -107.582821,
+      35.296436
+     ],
+     [
+      -107.582546,
+      35.293768
+     ],
+     [
+      -107.581611,
+      35.291055
+     ],
+     [
+      -107.583866,
+      35.288975
+     ],
+     [
+      -107.586562,
+      35.287528
+     ],
+     [
+      -107.587057,
+      35.287121
+     ],
+     [
+      -107.587992,
+      35.284136
+     ],
+     [
+      -107.588157,
+      35.281333
+     ],
+     [
+      -107.590467,
+      35.280835
+     ],
+     [
+      -107.593327,
+      35.279207
+     ],
+     [
+      -107.596683,
+      35.278213
+     ],
+     [
+      -107.596903,
+      35.277896
+     ],
+     [
+      -107.597728,
+      35.275454
+     ],
+     [
+      -107.598883,
+      35.275228
+     ],
+     [
+      -107.599213,
+      35.275228
+     ],
+     [
+      -107.601523,
+      35.277218
+     ],
+     [
+      -107.603174,
+      35.279524
+     ],
+     [
+      -107.603339,
+      35.279614
+     ],
+     [
+      -107.603669,
+      35.279614
+     ],
+     [
+      -107.606639,
+      35.278258
+     ],
+     [
+      -107.612855,
+      35.279524
+     ],
+     [
+      -107.61313,
+      35.279479
+     ],
+     [
+      -107.613295,
+      35.279253
+     ],
+     [
+      -107.613185,
+      35.276766
+     ],
+     [
+      -107.61522,
+      35.275409
+     ],
+     [
+      -107.61566,
+      35.275364
+     ],
+     [
+      -107.61852,
+      35.27568
+     ],
+     [
+      -107.61918,
+      35.27568
+     ],
+     [
+      -107.622646,
+      35.275002
+     ],
+     [
+      -107.626111,
+      35.273962
+     ],
+     [
+      -107.626441,
+      35.273781
+     ],
+     [
+      -107.628641,
+      35.271339
+     ],
+     [
+      -107.629301,
+      35.268717
+     ],
+     [
+      -107.629356,
+      35.268672
+     ],
+     [
+      -107.630017,
+      35.269214
+     ],
+     [
+      -107.630182,
+      35.269259
+     ],
+     [
+      -107.631502,
+      35.268807
+     ],
+     [
+      -107.631722,
+      35.268672
+     ],
+     [
+      -107.631777,
+      35.268536
+     ],
+     [
+      -107.630622,
+      35.265506
+     ],
+     [
+      -107.629907,
+      35.262838
+     ],
+     [
+      -107.629962,
+      35.262522
+     ],
+     [
+      -107.631282,
+      35.259763
+     ],
+     [
+      -107.630622,
+      35.256869
+     ],
+     [
+      -107.631062,
+      35.25497
+     ],
+     [
+      -107.631172,
+      35.254835
+     ],
+     [
+      -107.633977,
+      35.254382
+     ],
+     [
+      -107.634252,
+      35.254202
+     ],
+     [
+      -107.634362,
+      35.253975
+     ],
+     [
+      -107.634692,
+      35.251172
+     ],
+     [
+      -107.636342,
+      35.248368
+     ],
+     [
+      -107.640358,
+      35.243123
+     ],
+     [
+      -107.640303,
+      35.240274
+     ],
+     [
+      -107.638432,
+      35.237652
+     ],
+     [
+      -107.638267,
+      35.237516
+     ],
+     [
+      -107.635462,
+      35.236431
+     ],
+     [
+      -107.638157,
+      35.234938
+     ],
+     [
+      -107.640633,
+      35.232858
+     ],
+     [
+      -107.640743,
+      35.232632
+     ],
+     [
+      -107.640633,
+      35.230326
+     ],
+     [
+      -107.643053,
+      35.228065
+     ],
+     [
+      -107.643823,
+      35.225985
+     ],
+     [
+      -107.646738,
+      35.224674
+     ],
+     [
+      -107.649544,
+      35.223046
+     ],
+     [
+      -107.652734,
+      35.22282
+     ],
+     [
+      -107.656804,
+      35.222865
+     ],
+     [
+      -107.657079,
+      35.222729
+     ],
+     [
+      -107.657135,
+      35.220062
+     ],
+     [
+      -107.656364,
+      35.218479
+     ],
+     [
+      -107.656694,
+      35.215675
+     ],
+     [
+      -107.658895,
+      35.213821
+     ],
+     [
+      -107.65895,
+      35.213686
+     ],
+     [
+      -107.66104,
+      35.211741
+     ],
+     [
+      -107.664395,
+      35.210475
+     ],
+     [
+      -107.664505,
+      35.21034
+     ],
+     [
+      -107.66456,
+      35.210385
+     ],
+     [
+      -107.666541,
+      35.207853
+     ],
+     [
+      -107.666486,
+      35.207807
+     ],
+     [
+      -107.666596,
+      35.207717
+     ],
+     [
+      -107.667036,
+      35.204687
+     ],
+     [
+      -107.669181,
+      35.202291
+     ],
+     [
+      -107.670226,
+      35.199442
+     ],
+     [
+      -107.675782,
+      35.195463
+     ],
+     [
+      -107.678972,
+      35.194784
+     ],
+     [
+      -107.679247,
+      35.194649
+     ],
+     [
+      -107.681557,
+      35.192252
+     ],
+     [
+      -107.683317,
+      35.189494
+     ],
+     [
+      -107.687608,
+      35.187866
+     ],
+     [
+      -107.693494,
+      35.185786
+     ],
+     [
+      -107.696794,
+      35.184384
+     ],
+     [
+      -107.699489,
+      35.182078
+     ],
+     [
+      -107.70268,
+      35.180812
+     ],
+     [
+      -107.702735,
+      35.180721
+     ],
+     [
+      -107.70279,
+      35.180767
+     ],
+     [
+      -107.705485,
+      35.178506
+     ],
+     [
+      -107.707685,
+      35.177194
+     ],
+     [
+      -107.711315,
+      35.177737
+     ],
+     [
+      -107.714946,
+      35.176742
+     ],
+     [
+      -107.718466,
+      35.177737
+     ],
+     [
+      -107.721767,
+      35.17828
+     ],
+     [
+      -107.725672,
+      35.17837
+     ],
+     [
+      -107.732823,
+      35.179817
+     ],
+     [
+      -107.733098,
+      35.179817
+     ],
+     [
+      -107.740084,
+      35.177511
+     ],
+     [
+      -107.743604,
+      35.176787
+     ],
+     [
+      -107.746959,
+      35.17638
+     ],
+     [
+      -107.75015,
+      35.177104
+     ],
+     [
+      -107.752955,
+      35.178551
+     ],
+     [
+      -107.753615,
+      35.178822
+     ],
+     [
+      -107.757026,
+      35.179546
+     ],
+     [
+      -107.759721,
+      35.179546
+     ],
+     [
+      -107.760931,
+      35.179455
+     ],
+     [
+      -107.760986,
+      35.1795
+     ],
+     [
+      -107.764396,
+      35.178506
+     ],
+     [
+      -107.767642,
+      35.178777
+     ],
+     [
+      -107.767697,
+      35.180721
+     ],
+     [
+      -107.766322,
+      35.18348
+     ],
+     [
+      -107.764231,
+      35.185967
+     ],
+     [
+      -107.761481,
+      35.188273
+     ],
+     [
+      -107.760821,
+      35.189946
+     ],
+     [
+      -107.760876,
+      35.190172
+     ],
+     [
+      -107.761206,
+      35.190353
+     ],
+     [
+      -107.764946,
+      35.190805
+     ],
+     [
+      -107.768467,
+      35.18981
+     ],
+     [
+      -107.771382,
+      35.190624
+     ],
+     [
+      -107.772592,
+      35.191122
+     ],
+     [
+      -107.772922,
+      35.191122
+     ],
+     [
+      -107.776113,
+      35.190579
+     ],
+     [
+      -107.783483,
+      35.188951
+     ],
+     [
+      -107.783483,
+      35.188363
+     ],
+     [
+      -107.776498,
+      35.189946
+     ],
+     [
+      -107.772812,
+      35.190579
+     ],
+     [
+      -107.771657,
+      35.190127
+     ],
+     [
+      -107.768412,
+      35.189222
+     ],
+     [
+      -107.764836,
+      35.190263
+     ],
+     [
+      -107.761646,
+      35.189856
+     ],
+     [
+      -107.761591,
+      35.18972
+     ],
+     [
+      -107.762086,
+      35.188499
+     ],
+     [
+      -107.764726,
+      35.186328
+     ],
+     [
+      -107.766927,
+      35.183661
+     ],
+     [
+      -107.768302,
+      35.180947
+     ],
+     [
+      -107.768247,
+      35.180857
+     ],
+     [
+      -107.768357,
+      35.180767
+     ],
+     [
+      -107.768357,
+      35.178551
+     ],
+     [
+      -107.768302,
+      35.178415
+     ],
+     [
+      -107.768027,
+      35.17828
+     ],
+     [
+      -107.764231,
+      35.177963
+     ],
+     [
+      -107.760876,
+      35.178958
+     ],
+     [
+      -107.757081,
+      35.179003
+     ],
+     [
+      -107.753725,
+      35.17828
+     ],
+     [
+      -107.75048,
+      35.176606
+     ],
+     [
+      -107.747399,
+      35.175883
+     ],
+     [
+      -107.746904,
+      35.175838
+     ],
+     [
+      -107.743494,
+      35.176245
+     ],
+     [
+      -107.739754,
+      35.177013
+     ],
+     [
+      -107.733043,
+      35.179229
+     ],
+     [
+      -107.732713,
+      35.179229
+     ],
+     [
+      -107.725782,
+      35.177827
+     ],
+     [
+      -107.725672,
+      35.177873
+     ],
+     [
+      -107.724682,
+      35.177782
+     ],
+     [
+      -107.721877,
+      35.177737
+     ],
+     [
+      -107.718576,
+      35.177194
+     ],
+     [
+      -107.714836,
+      35.176154
+     ],
+     [
+      -107.71126,
+      35.177194
+     ],
+     [
+      -107.70763,
+      35.176652
+     ],
+     [
+      -107.707245,
+      35.176787
+     ],
+     [
+      -107.704825,
+      35.178234
+     ],
+     [
+      -107.702239,
+      35.180405
+     ],
+     [
+      -107.699104,
+      35.181626
+     ],
+     [
+      -107.696409,
+      35.183932
+     ],
+     [
+      -107.692833,
+      35.185424
+     ],
+     [
+      -107.686838,
+      35.187549
+     ],
+     [
+      -107.682932,
+      35.189042
+     ],
+     [
+      -107.682712,
+      35.189177
+     ],
+     [
+      -107.681007,
+      35.191936
+     ],
+     [
+      -107.678807,
+      35.194242
+     ],
+     [
+      -107.675397,
+      35.19501
+     ],
+     [
+      -107.669731,
+      35.19908
+     ],
+     [
+      -107.669566,
+      35.199306
+     ],
+     [
+      -107.668631,
+      35.201974
+     ],
+     [
+      -107.666376,
+      35.204597
+     ],
+     [
+      -107.665935,
+      35.207626
+     ],
+     [
+      -107.664065,
+      35.209978
+     ],
+     [
+      -107.660655,
+      35.211289
+     ],
+     [
+      -107.65873,
+      35.213143
+     ],
+     [
+      -107.656034,
+      35.215494
+     ],
+     [
+      -107.655704,
+      35.218524
+     ],
+     [
+      -107.656474,
+      35.220152
+     ],
+     [
+      -107.656474,
+      35.222277
+     ],
+     [
+      -107.652734,
+      35.222277
+     ],
+     [
+      -107.649269,
+      35.222549
+     ],
+     [
+      -107.648994,
+      35.222639
+     ],
+     [
+      -107.646243,
+      35.224312
+     ],
+     [
+      -107.643328,
+      35.225623
+     ],
+     [
+      -107.643108,
+      35.225895
+     ],
+     [
+      -107.642503,
+      35.227749
+     ],
+     [
+      -107.639973,
+      35.2301
+     ],
+     [
+      -107.639918,
+      35.230371
+     ],
+     [
+      -107.640083,
+      35.232542
+     ],
+     [
+      -107.637662,
+      35.234531
+     ],
+     [
+      -107.634692,
+      35.236159
+     ],
+     [
+      -107.634472,
+      35.23634
+     ],
+     [
+      -107.634417,
+      35.236476
+     ],
+     [
+      -107.634582,
+      35.236702
+     ],
+     [
+      -107.637772,
+      35.237923
+     ],
+     [
+      -107.638047,
+      35.238194
+     ],
+     [
+      -107.639698,
+      35.2405
+     ],
+     [
+      -107.639698,
+      35.242987
+     ],
+     [
+      -107.635682,
+      35.248188
+     ],
+     [
+      -107.634032,
+      35.250991
+     ],
+     [
+      -107.634087,
+      35.251036
+     ],
+     [
+      -107.633977,
+      35.251308
+     ]
+    ]
+   ],
+   "zone_acres": 1036.66,
+   "zone_read": "2026-10-29",
+   "zone_wide_m": 85.9
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     32.789547,
+     -108.49329
+    ],
+    "from": "road",
+    "name": "Saddlerock Canyon Rd",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
+   "box": [
+    -108.55188,
+    32.39946,
+    -108.42763,
+    32.78874
+   ],
+   "center": [
+    32.411151,
+    -108.535625
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "ground": [
+    "Forest Service"
+   ],
+   "id": "US-4515+US-4558@trail@32.411,-108.536",
+   "kind": "trail",
+   "len_m": 70151,
+   "line_source": {
+    "US-4558": {
+     "by": "U.S. Forest Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4558.json"
+    }
+   },
+   "map_dates": {
+    "US-4515": "downloaded 2026-10-29",
+    "US-4558": "official line (trails bot)"
+   },
+   "maps": [
+    [
+     "US-4515",
+     "https://www.fs.usda.gov/gila"
+    ],
+    [
+     "US-4558",
+     "https://www.fs.usda.gov/managing-land/trails/cdt"
+    ]
+   ],
+   "names": {
+    "US-4515": "Gila National Forest",
+    "US-4558": "Continental Divide Trail National Scenic Trail"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (Forest Service)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-4515": true,
+    "US-4558": true
+   },
+   "refs": [
+    "US-4515",
+    "US-4558"
+   ],
+   "shape": [
+    [
+     -108.551883,
+     32.399454
+    ],
+    [
+     -108.55085,
+     32.399689
+    ],
+    [
+     -108.550659,
+     32.399753
+    ],
+    [
+     -108.550042,
+     32.402052
+    ],
+    [
+     -108.549935,
+     32.402194
+    ],
+    [
+     -108.545328,
+     32.405127
+    ],
+    [
+     -108.542083,
+     32.408941
+    ],
+    [
+     -108.537518,
+     32.41089
+    ],
+    [
+     -108.532251,
+     32.411593
+    ],
+    [
+     -108.53207,
+     32.411661
+    ],
+    [
+     -108.527037,
+     32.416355
+    ],
+    [
+     -108.526771,
+     32.41663
+    ],
+    [
+     -108.525047,
+     32.419757
+    ],
+    [
+     -108.524877,
+     32.41983
+    ],
+    [
+     -108.521269,
+     32.42009
+    ],
+    [
+     -108.522153,
+     32.422513
+    ]
+   ],
+   "status": "merged into one row: US-4515+US-4558@trail@32.858,-108.303",
+   "zone": [
+    [
+     [
+      -108.521839,
+      32.422628
+     ],
+     [
+      -108.522265,
+      32.422221
+     ],
+     [
+      -108.522319,
+      32.42204
+     ],
+     [
+      -108.521679,
+      32.420367
+     ],
+     [
+      -108.521839,
+      32.420276
+     ],
+     [
+      -108.524878,
+      32.420095
+     ],
+     [
+      -108.525197,
+      32.41996
+     ],
+     [
+      -108.525411,
+      32.419734
+     ],
+     [
+      -108.52701,
+      32.416749
+     ],
+     [
+      -108.532288,
+      32.41182
+     ],
+     [
+      -108.537566,
+      32.411142
+     ],
+     [
+      -108.542151,
+      32.409198
+     ],
+     [
+      -108.542417,
+      32.408972
+     ],
+     [
+      -108.545509,
+      32.405309
+     ],
+     [
+      -108.550201,
+      32.402325
+     ],
+     [
+      -108.550361,
+      32.402053
+     ],
+     [
+      -108.550894,
+      32.399973
+     ],
+     [
+      -108.551054,
+      32.399883
+     ],
+     [
+      -108.55196,
+      32.399702
+     ],
+     [
+      -108.550307,
+      32.399702
+     ],
+     [
+      -108.549721,
+      32.401918
+     ],
+     [
+      -108.544976,
+      32.404992
+     ],
+     [
+      -108.541777,
+      32.408746
+     ],
+     [
+      -108.537459,
+      32.4106
+     ],
+     [
+      -108.532554,
+      32.411233
+     ],
+     [
+      -108.531915,
+      32.411368
+     ],
+     [
+      -108.526477,
+      32.416433
+     ],
+     [
+      -108.524931,
+      32.419282
+     ],
+     [
+      -108.524718,
+      32.419553
+     ],
+     [
+      -108.521199,
+      32.419779
+     ],
+     [
+      -108.520986,
+      32.419915
+     ],
+     [
+      -108.520986,
+      32.420367
+     ]
+    ]
+   ],
+   "zone_acres": 65.51,
+   "zone_read": "2026-10-29",
+   "zone_wide_m": 82.0
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     33.886979,
+     -108.459796
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
+   "box": [
+    -108.55188,
+    32.39946,
+    -107.79349,
+    34.22608
+   ],
+   "center": [
+    32.860788,
+    -108.298288
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "ground": [
+    "Forest Service"
+   ],
+   "id": "US-4515+US-4558@trail@32.858,-108.303",
+   "kind": "trail",
+   "len_m": 364005,
+   "len_main": 245949,
+   "line_source": {
+    "US-4558": {
+     "by": "U.S. Forest Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4558.json"
+    }
+   },
+   "map_dates": {
+    "US-4515": "downloaded 2026-10-29",
+    "US-4558": "official line (trails bot)"
+   },
+   "maps": [
+    [
+     "US-4515",
+     "https://www.fs.usda.gov/gila"
+    ],
+    [
+     "US-4558",
+     "https://www.fs.usda.gov/managing-land/trails/cdt"
+    ]
+   ],
+   "names": {
+    "US-4515": "Gila National Forest",
+    "US-4558": "Continental Divide Trail National Scenic Trail"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (Forest Service)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins": [
+    {
+     "at": [
+      33.886979,
+      -108.459796
+     ],
+     "from": "road",
+     "name": "public road",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 0
+    },
+    {
+     "at": [
+      32.789547,
+      -108.49329
+     ],
+     "from": "road",
+     "name": "Saddlerock Canyon Rd",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 0
+    },
+    {
+     "at": [
+      34.225581,
+      -108.390028
+     ],
+     "from": "road",
+     "name": "public road",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 0
+    }
+   ],
+   "pins_inside": {
+    "US-4515": true,
+    "US-4558": true
+   },
+   "refs": [
+    "US-4515",
+    "US-4558"
+   ],
+   "shape": [
+    [
+     -108.342348,
+     32.826632
+    ],
+    [
+     -108.343578,
+     32.830191
+    ],
+    [
+     -108.342936,
+     32.830143
+    ],
+    [
+     -108.341931,
+     32.829904
+    ],
+    [
+     -108.340915,
+     32.830279
+    ],
+    [
+     -108.340583,
+     32.830896
+    ],
+    [
+     -108.341353,
+     32.832639
+    ],
+    [
+     -108.341054,
+     32.833478
+    ],
+    [
+     -108.339075,
+     32.836793
+    ],
+    [
+     -108.338455,
+     32.837505
+    ],
+    [
+     -108.337439,
+     32.837853
+    ],
+    [
+     -108.336648,
+     32.837265
+    ],
+    [
+     -108.335119,
+     32.835933
+    ],
+    [
+     -108.334776,
+     32.836286
+    ],
+    [
+     -108.334006,
+     32.836372
+    ],
+    [
+     -108.3319,
+     32.835834
+    ],
+    [
+     -108.33082,
+     32.835834
+    ],
+    [
+     -108.325387,
+     32.836449
+    ],
+    [
+     -108.324435,
+     32.838061
+    ],
+    [
+     -108.319751,
+     32.840507
+    ],
+    [
+     -108.318896,
+     32.841041
+    ],
+    [
+     -108.318586,
+     32.84289
+    ],
+    [
+     -108.318682,
+     32.843788
+    ],
+    [
+     -108.319527,
+     32.845511
+    ],
+    [
+     -108.319527,
+     32.846221
+    ],
+    [
+     -108.316457,
+     32.847256
+    ],
+    [
+     -108.315516,
+     32.847672
+    ],
+    [
+     -108.313121,
+     32.851844
+    ],
+    [
+     -108.312265,
+     32.852221
+    ],
+    [
+     -108.311175,
+     32.852307
+    ],
+    [
+     -108.310308,
+     32.852596
+    ],
+    [
+     -108.310191,
+     32.853528
+    ],
+    [
+     -108.30987,
+     32.854383
+    ],
+    [
+     -108.30848,
+     32.855814
+    ],
+    [
+     -108.307688,
+     32.856424
+    ],
+    [
+     -108.302619,
+     32.858197
+    ],
+    [
+     -108.301946,
+     32.858877
+    ],
+    [
+     -108.300865,
+     32.86051
+    ],
+    [
+     -108.298705,
+     32.860865
+    ],
+    [
+     -108.297754,
+     32.860487
+    ],
+    [
+     -108.296823,
+     32.859976
+    ],
+    [
+     -108.295893,
+     32.859506
+    ],
+    [
+     -108.29369,
+     32.859648
+    ],
+    [
+     -108.293091,
+     32.860281
+    ],
+    [
+     -108.292685,
+     32.861145
+    ],
+    [
+     -108.292171,
+     32.861911
+    ],
+    [
+     -108.290097,
+     32.862513
+    ],
+    [
+     -108.290471,
+     32.863105
+    ],
+    [
+     -108.29123,
+     32.863779
+    ],
+    [
+     -108.291797,
+     32.864498
+    ],
+    [
+     -108.291519,
+     32.865402
+    ],
+    [
+     -108.291508,
+     32.866162
+    ],
+    [
+     -108.295839,
+     32.866815
+    ],
+    [
+     -108.296652,
+     32.867342
+    ],
+    [
+     -108.299219,
+     32.870372
+    ],
+    [
+     -108.299347,
+     32.871269
+    ],
+    [
+     -108.29939,
+     32.874064
+    ],
+    [
+     -108.298994,
+     32.874846
+    ],
+    [
+     -108.298171,
+     32.875473
+    ],
+    [
+     -108.297133,
+     32.875583
+    ],
+    [
+     -108.296032,
+     32.875552
+    ],
+    [
+     -108.295005,
+     32.875588
+    ],
+    [
+     -108.294855,
+     32.877451
+    ],
+    [
+     -108.294214,
+     32.877917
+    ],
+    [
+     -108.286578,
+     32.878633
+    ],
+    [
+     -108.285616,
+     32.878995
+    ],
+    [
+     -108.283894,
+     32.880171
+    ],
+    [
+     -108.282974,
+     32.880621
+    ],
+    [
+     -108.282097,
+     32.880453
+    ],
+    [
+     -108.281819,
+     32.879929
+    ],
+    [
+     -108.279103,
+     32.882857
+    ],
+    [
+     -108.278119,
+     32.882787
+    ],
+    [
+     -108.276012,
+     32.882258
+    ],
+    [
+     -108.274997,
+     32.882208
+    ],
+    [
+     -108.273093,
+     32.883148
+    ],
+    [
+     -108.272184,
+     32.883261
+    ],
+    [
+     -108.271585,
+     32.883144
+    ],
+    [
+     -108.270976,
+     32.885891
+    ],
+    [
+     -108.270163,
+     32.885979
+    ],
+    [
+     -108.269093,
+     32.885726
+    ],
+    [
+     -108.267361,
+     32.886856
+    ],
+    [
+     -108.266944,
+     32.887673
+    ],
+    [
+     -108.266687,
+     32.888577
+    ],
+    [
+     -108.266313,
+     32.889386
+    ],
+    [
+     -108.262089,
+     32.890406
+    ],
+    [
+     -108.261158,
+     32.890338
+    ],
+    [
+     -108.260506,
+     32.889578
+    ],
+    [
+     -108.260442,
+     32.888728
+    ],
+    [
+     -108.261533,
+     32.885124
+    ],
+    [
+     -108.261415,
+     32.884274
+    ],
+    [
+     -108.26026,
+     32.882692
+    ],
+    [
+     -108.259351,
+     32.882237
+    ],
+    [
+     -108.258324,
+     32.881907
+    ],
+    [
+     -108.257244,
+     32.881756
+    ],
+    [
+     -108.256186,
+     32.881767
+    ],
+    [
+     -108.252913,
+     32.884263
+    ],
+    [
+     -108.252133,
+     32.884333
+    ],
+    [
+     -108.251427,
+     32.883616
+    ],
+    [
+     -108.250507,
+     32.883171
+    ],
+    [
+     -108.24839,
+     32.88266
+    ],
+    [
+     -108.247363,
+     32.882391
+    ],
+    [
+     -108.248005,
+     32.881638
+    ],
+    [
+     -108.314158,
+     32.822372
+    ],
+    [
+     -108.315196,
+     32.822673
+    ],
+    [
+     -108.320617,
+     32.823385
+    ],
+    [
+     -108.321698,
+     32.823263
+    ],
+    [
+     -108.326007,
+     32.82256
+    ],
+    [
+     -108.327098,
+     32.822531
+    ],
+    [
+     -108.33036,
+     32.822904
+    ],
+    [
+     -108.331429,
+     32.822915
+    ],
+    [
+     -108.333429,
+     32.822135
+    ],
+    [
+     -108.334306,
+     32.822015
+    ],
+    [
+     -108.335215,
+     32.823704
+    ],
+    [
+     -108.335878,
+     32.824274
+    ],
+    [
+     -108.339193,
+     32.824206
+    ],
+    [
+     -108.340081,
+     32.824649
+    ],
+    [
+     -108.341695,
+     32.825917
+    ]
+   ],
+   "status": "candidate",
+   "stretches": 3,
+   "strip_wide_m": 85.9,
+   "zone": [
+    [
+     [
+      -108.247054,
+      32.882523
+     ],
+     [
+      -108.247161,
+      32.882613
+     ],
+     [
+      -108.248505,
+      32.882975
+     ],
+     [
+      -108.250332,
+      32.883382
+     ],
+     [
+      -108.251085,
+      32.883744
+     ],
+     [
+      -108.251837,
+      32.884467
+     ],
+     [
+      -108.252106,
+      32.884603
+     ],
+     [
+      -108.252912,
+      32.884512
+     ],
+     [
+      -108.253127,
+      32.884422
+     ],
+     [
+      -108.256245,
+      32.882025
+     ],
+     [
+      -108.257481,
+      32.882025
+     ],
+     [
+      -108.258126,
+      32.882116
+     ],
+     [
+      -108.259147,
+      32.882432
+     ],
+     [
+      -108.259792,
+      32.882749
+     ],
+     [
+      -108.260114,
+      32.882975
+     ],
+     [
+      -108.261082,
+      32.884331
+     ],
+     [
+      -108.261189,
+      32.88501
+     ],
+     [
+      -108.260114,
+      32.888537
+     ],
+     [
+      -108.260114,
+      32.889351
+     ],
+     [
+      -108.260222,
+      32.889758
+     ],
+     [
+      -108.260867,
+      32.890481
+     ],
+     [
+      -108.261297,
+      32.890617
+     ],
+     [
+      -108.262157,
+      32.890662
+     ],
+     [
+      -108.266457,
+      32.889577
+     ],
+     [
+      -108.26694,
+      32.888763
+     ],
+     [
+      -108.267155,
+      32.887904
+     ],
+     [
+      -108.267639,
+      32.886954
+     ],
+     [
+      -108.26909,
+      32.886005
+     ],
+     [
+      -108.270058,
+      32.886231
+     ],
+     [
+      -108.270971,
+      32.88614
+     ],
+     [
+      -108.27124,
+      32.886005
+     ],
+     [
+      -108.271831,
+      32.883472
+     ],
+     [
+      -108.272261,
+      32.883518
+     ],
+     [
+      -108.273014,
+      32.883427
+     ],
+     [
+      -108.275002,
+      32.882478
+     ],
+     [
+      -108.275809,
+      32.882478
+     ],
+     [
+      -108.277905,
+      32.88302
+     ],
+     [
+      -108.279087,
+      32.883111
+     ],
+     [
+      -108.279517,
+      32.882839
+     ],
+     [
+      -108.281721,
+      32.880443
+     ],
+     [
+      -108.281774,
+      32.880578
+     ],
+     [
+      -108.281989,
+      32.880714
+     ],
+     [
+      -108.282688,
+      32.88085
+     ],
+     [
+      -108.283118,
+      32.88085
+     ],
+     [
+      -108.284193,
+      32.880307
+     ],
+     [
+      -108.285805,
+      32.879177
+     ],
+     [
+      -108.286612,
+      32.87886
+     ],
+     [
+      -108.294351,
+      32.878137
+     ],
+     [
+      -108.294942,
+      32.87773
+     ],
+     [
+      -108.295157,
+      32.877458
+     ],
+     [
+      -108.295319,
+      32.87583
+     ],
+     [
+      -108.297307,
+      32.87583
+     ],
+     [
+      -108.298329,
+      32.875695
+     ],
+     [
+      -108.299242,
+      32.874971
+     ],
+     [
+      -108.299672,
+      32.874157
+     ],
+     [
+      -108.299672,
+      32.871489
+     ],
+     [
+      -108.299511,
+      32.870314
+     ],
+     [
+      -108.299242,
+      32.869907
+     ],
+     [
+      -108.296985,
+      32.867239
+     ],
+     [
+      -108.296017,
+      32.866561
+     ],
+     [
+      -108.29204,
+      32.865973
+     ],
+     [
+      -108.291825,
+      32.865882
+     ],
+     [
+      -108.291825,
+      32.865294
+     ],
+     [
+      -108.292094,
+      32.864526
+     ],
+     [
+      -108.29204,
+      32.864345
+     ],
+     [
+      -108.291449,
+      32.863576
+     ],
+     [
+      -108.290804,
+      32.863034
+     ],
+     [
+      -108.290535,
+      32.862672
+     ],
+     [
+      -108.292309,
+      32.862129
+     ],
+     [
+      -108.2929,
+      32.86136
+     ],
+     [
+      -108.293384,
+      32.86032
+     ],
+     [
+      -108.293868,
+      32.859868
+     ],
+     [
+      -108.295802,
+      32.859778
+     ],
+     [
+      -108.297469,
+      32.860682
+     ],
+     [
+      -108.298651,
+      32.861134
+     ],
+     [
+      -108.300908,
+      32.860773
+     ],
+     [
+      -108.301231,
+      32.860501
+     ],
+     [
+      -108.302198,
+      32.858964
+     ],
+     [
+      -108.302736,
+      32.858421
+     ],
+     [
+      -108.307896,
+      32.856612
+     ],
+     [
+      -108.308809,
+      32.855889
+     ],
+     [
+      -108.310045,
+      32.854623
+     ],
+     [
+      -108.310475,
+      32.853628
+     ],
+     [
+      -108.310583,
+      32.852814
+     ],
+     [
+      -108.311228,
+      32.852543
+     ],
+     [
+      -108.312142,
+      32.852498
+     ],
+     [
+      -108.312303,
+      32.852407
+     ],
+     [
+      -108.31241,
+      32.852452
+     ],
+     [
+      -108.313431,
+      32.85191
+     ],
+     [
+      -108.315689,
+      32.847931
+     ],
+     [
+      -108.31585,
+      32.847795
+     ],
+     [
+      -108.316764,
+      32.847388
+     ],
+     [
+      -108.319559,
+      32.846484
+     ],
+     [
+      -108.319774,
+      32.846348
+     ],
+     [
+      -108.319827,
+      32.845489
+     ],
+     [
+      -108.319021,
+      32.843861
+     ],
+     [
+      -108.31886,
+      32.842866
+     ],
+     [
+      -108.319182,
+      32.841193
+     ],
+     [
+      -108.320042,
+      32.840605
+     ],
+     [
+      -108.324718,
+      32.838163
+     ],
+     [
+      -108.325578,
+      32.836671
+     ],
+     [
+      -108.33063,
+      32.836083
+     ],
+     [
+      -108.33192,
+      32.836083
+     ],
+     [
+      -108.333909,
+      32.836626
+     ],
+     [
+      -108.334769,
+      32.836535
+     ],
+     [
+      -108.335145,
+      32.836355
+     ],
+     [
+      -108.336489,
+      32.83753
+     ],
+     [
+      -108.337241,
+      32.838073
+     ],
+     [
+      -108.337403,
+      32.838118
+     ],
+     [
+      -108.338585,
+      32.837711
+     ],
+     [
+      -108.339284,
+      32.836988
+     ],
+     [
+      -108.341326,
+      32.833596
+     ],
+     [
+      -108.341649,
+      32.832737
+     ],
+     [
+      -108.341649,
+      32.832511
+     ],
+     [
+      -108.340896,
+      32.830883
+     ],
+     [
+      -108.341111,
+      32.830476
+     ],
+     [
+      -108.341917,
+      32.83016
+     ],
+     [
+      -108.342777,
+      32.830386
+     ],
+     [
+      -108.34353,
+      32.830431
+     ],
+     [
+      -108.343691,
+      32.830386
+     ],
+     [
+      -108.343852,
+      32.83016
+     ],
+     [
+      -108.34267,
+      32.826587
+     ],
+     [
+      -108.342562,
+      32.826452
+     ],
+     [
+      -108.342294,
+      32.826316
+     ],
+     [
+      -108.342132,
+      32.826361
+     ],
+     [
+      -108.341971,
+      32.826587
+     ],
+     [
+      -108.3431,
+      32.829798
+     ],
+     [
+      -108.342831,
+      32.829843
+     ],
+     [
+      -108.34224,
+      32.829662
+     ],
+     [
+      -108.341756,
+      32.829617
+     ],
+     [
+      -108.340789,
+      32.829979
+     ],
+     [
+      -108.340574,
+      32.83016
+     ],
+     [
+      -108.340251,
+      32.830747
+     ],
+     [
+      -108.340251,
+      32.831019
+     ],
+     [
+      -108.341004,
+      32.832601
+     ],
+     [
+      -108.340789,
+      32.833234
+     ],
+     [
+      -108.3388,
+      32.836581
+     ],
+     [
+      -108.338209,
+      32.837259
+     ],
+     [
+      -108.337618,
+      32.837485
+     ],
+     [
+      -108.337349,
+      32.83744
+     ],
+     [
+      -108.33536,
+      32.835722
+     ],
+     [
+      -108.335091,
+      32.835631
+     ],
+     [
+      -108.334823,
+      32.835722
+     ],
+     [
+      -108.3345,
+      32.836038
+     ],
+     [
+      -108.33407,
+      32.836083
+     ],
+     [
+      -108.331974,
+      32.835541
+     ],
+     [
+      -108.330577,
+      32.835541
+     ],
+     [
+      -108.325363,
+      32.836128
+     ],
+     [
+      -108.325041,
+      32.836309
+     ],
+     [
+      -108.324235,
+      32.837756
+     ],
+     [
+      -108.32402,
+      32.837937
+     ],
+     [
+      -108.319612,
+      32.840243
+     ],
+     [
+      -108.319505,
+      32.840243
+     ],
+     [
+      -108.318591,
+      32.840876
+     ],
+     [
+      -108.318215,
+      32.842956
+     ],
+     [
+      -108.318376,
+      32.843951
+     ],
+     [
+      -108.319182,
+      32.845489
+     ],
+     [
+      -108.319182,
+      32.845986
+     ],
+     [
+      -108.319075,
+      32.846077
+     ],
+     [
+      -108.31628,
+      32.846981
+     ],
+     [
+      -108.315366,
+      32.847388
+     ],
+     [
+      -108.315151,
+      32.847569
+     ],
+     [
+      -108.312894,
+      32.851548
+     ],
+     [
+      -108.312249,
+      32.85191
+     ],
+     [
+      -108.31112,
+      32.852
+     ],
+     [
+      -108.310368,
+      32.852226
+     ],
+     [
+      -108.309992,
+      32.852452
+     ],
+     [
+      -108.309884,
+      32.853357
+     ],
+     [
+      -108.309562,
+      32.854216
+     ],
+     [
+      -108.308487,
+      32.855346
+     ],
+     [
+      -108.307627,
+      32.85607
+     ],
+     [
+      -108.307036,
+      32.856341
+     ],
+     [
+      -108.302521,
+      32.857879
+     ],
+     [
+      -108.301607,
+      32.858738
+     ],
+     [
+      -108.300586,
+      32.860275
+     ],
+     [
+      -108.298651,
+      32.860547
+     ],
+     [
+      -108.297845,
+      32.86023
+     ],
+     [
+      -108.29677,
+      32.859597
+     ],
+     [
+      -108.295856,
+      32.85919
+     ],
+     [
+      -108.29376,
+      32.859326
+     ],
+     [
+      -108.293384,
+      32.859461
+     ],
+     [
+      -108.292739,
+      32.86014
+     ],
+     [
+      -108.292416,
+      32.860953
+     ],
+     [
+      -108.291879,
+      32.861677
+     ],
+     [
+      -108.289944,
+      32.86222
+     ],
+     [
+      -108.289783,
+      32.862355
+     ],
+     [
+      -108.289729,
+      32.862491
+     ],
+     [
+      -108.290105,
+      32.863169
+     ],
+     [
+      -108.291019,
+      32.863983
+     ],
+     [
+      -108.291395,
+      32.864481
+     ],
+     [
+      -108.29118,
+      32.865249
+     ],
+     [
+      -108.291234,
+      32.866289
+     ],
+     [
+      -108.291449,
+      32.866425
+     ],
+     [
+      -108.295695,
+      32.867058
+     ],
+     [
+      -108.296501,
+      32.867601
+     ],
+     [
+      -108.298759,
+      32.870269
+     ],
+     [
+      -108.29892,
+      32.870585
+     ],
+     [
+      -108.299027,
+      32.871535
+     ],
+     [
+      -108.299027,
+      32.874022
+     ],
+     [
+      -108.298705,
+      32.874655
+     ],
+     [
+      -108.298006,
+      32.875197
+     ],
+     [
+      -108.297307,
+      32.875288
+     ],
+     [
+      -108.295749,
+      32.875243
+     ],
+     [
+      -108.294835,
+      32.875333
+     ],
+     [
+      -108.29462,
+      32.87565
+     ],
+     [
+      -108.294512,
+      32.877277
+     ],
+     [
+      -108.294136,
+      32.877594
+     ],
+     [
+      -108.293706,
+      32.877684
+     ],
+     [
+      -108.286343,
+      32.878363
+     ],
+     [
+      -108.285268,
+      32.878815
+     ],
+     [
+      -108.283871,
+      32.87981
+     ],
+     [
+      -108.282903,
+      32.880307
+     ],
+     [
+      -108.282366,
+      32.880217
+     ],
+     [
+      -108.282151,
+      32.879855
+     ],
+     [
+      -108.281936,
+      32.879674
+     ],
+     [
+      -108.281613,
+      32.879674
+     ],
+     [
+      -108.278872,
+      32.882568
+     ],
+     [
+      -108.278227,
+      32.882523
+     ],
+     [
+      -108.275862,
+      32.881935
+     ],
+     [
+      -108.274787,
+      32.881935
+     ],
+     [
+      -108.272906,
+      32.882884
+     ],
+     [
+      -108.272207,
+      32.882975
+     ],
+     [
+      -108.271616,
+      32.882839
+     ],
+     [
+      -108.271401,
+      32.882884
+     ],
+     [
+      -108.271186,
+      32.883201
+     ],
+     [
+      -108.270649,
+      32.885643
+     ],
+     [
+      -108.270111,
+      32.885688
+     ],
+     [
+      -108.26909,
+      32.885417
+     ],
+     [
+      -108.268821,
+      32.885507
+     ],
+     [
+      -108.267155,
+      32.886592
+     ],
+     [
+      -108.266618,
+      32.887497
+     ],
+     [
+      -108.266403,
+      32.888356
+     ],
+     [
+      -108.266134,
+      32.888989
+     ],
+     [
+      -108.265973,
+      32.88917
+     ],
+     [
+      -108.262049,
+      32.890119
+     ],
+     [
+      -108.261351,
+      32.890074
+     ],
+     [
+      -108.260867,
+      32.889577
+     ],
+     [
+      -108.260759,
+      32.889351
+     ],
+     [
+      -108.260759,
+      32.888582
+     ],
+     [
+      -108.261834,
+      32.884965
+     ],
+     [
+      -108.261673,
+      32.884105
+     ],
+     [
+      -108.260598,
+      32.882613
+     ],
+     [
+      -108.260329,
+      32.882387
+     ],
+     [
+      -108.259254,
+      32.88189
+     ],
+     [
+      -108.258395,
+      32.881618
+     ],
+     [
+      -108.257535,
+      32.881483
+     ],
+     [
+      -108.256137,
+      32.881483
+     ],
+     [
+      -108.255922,
+      32.881528
+     ],
+     [
+      -108.253127,
+      32.883698
+     ],
+     [
+      -108.25259,
+      32.884015
+     ],
+     [
+      -108.252214,
+      32.884015
+     ],
+     [
+      -108.251569,
+      32.883337
+     ],
+     [
+      -108.250709,
+      32.88293
+     ],
+     [
+      -108.24786,
+      32.882206
+     ],
+     [
+      -108.248075,
+      32.881935
+     ],
+     [
+      -108.24872,
+      32.881347
+     ],
+     [
+      -108.248666,
+      32.881257
+     ],
+     [
+      -108.247968,
+      32.881257
+     ],
+     [
+      -108.247699,
+      32.881437
+     ],
+     [
+      -108.247054,
+      32.882206
+     ]
+    ],
+    [
+     [
+      -108.269413,
+      32.862807
+     ],
+     [
+      -108.297791,
+      32.837395
+     ],
+     [
+      -108.296931,
+      32.837349
+     ],
+     [
+      -108.269466,
+      32.861948
+     ]
+    ],
+    [
+     [
+      -108.341971,
+      32.825909
+     ],
+     [
+      -108.341864,
+      32.825683
+     ],
+     [
+      -108.340412,
+      32.824507
+     ],
+     [
+      -108.339337,
+      32.823965
+     ],
+     [
+      -108.335951,
+      32.823965
+     ],
+     [
+      -108.335414,
+      32.823467
+     ],
+     [
+      -108.334608,
+      32.821885
+     ],
+     [
+      -108.334285,
+      32.821704
+     ],
+     [
+      -108.333049,
+      32.82193
+     ],
+     [
+      -108.331383,
+      32.822608
+     ],
+     [
+      -108.330147,
+      32.822608
+     ],
+     [
+      -108.327298,
+      32.822246
+     ],
+     [
+      -108.325954,
+      32.822246
+     ],
+     [
+      -108.322031,
+      32.822925
+     ],
+     [
+      -108.32058,
+      32.823106
+     ],
+     [
+      -108.31671,
+      32.822563
+     ],
+     [
+      -108.313324,
+      32.822653
+     ],
+     [
+      -108.310207,
+      32.825457
+     ],
+     [
+      -108.310422,
+      32.825502
+     ],
+     [
+      -108.310422,
+      32.826045
+     ],
+     [
+      -108.314238,
+      32.822653
+     ],
+     [
+      -108.315044,
+      32.822925
+     ],
+     [
+      -108.320634,
+      32.823648
+     ],
+     [
+      -108.322407,
+      32.823422
+     ],
+     [
+      -108.326062,
+      32.822789
+     ],
+     [
+      -108.327298,
+      32.822789
+     ],
+     [
+      -108.330147,
+      32.823151
+     ],
+     [
+      -108.331544,
+      32.823151
+     ],
+     [
+      -108.33321,
+      32.822472
+     ],
+     [
+      -108.33407,
+      32.822292
+     ],
+     [
+      -108.33493,
+      32.823874
+     ],
+     [
+      -108.335629,
+      32.824462
+     ],
+     [
+      -108.339123,
+      32.824462
+     ],
+     [
+      -108.339821,
+      32.824824
+     ],
+     [
+      -108.341487,
+      32.826135
+     ],
+     [
+      -108.34181,
+      32.826135
+     ]
+    ],
+    [
+     [
+      -108.303918,
+      32.831878
+     ],
+     [
+      -108.305799,
+      32.830205
+     ],
+     [
+      -108.304886,
+      32.830205
+     ],
+     [
+      -108.303918,
+      32.831109
+     ]
+    ]
+   ],
+   "zone_acres": 384.44,
+   "zone_read": "2026-10-29",
+   "zone_wide_m": 85.9
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     34.225581,
+     -108.390028
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
+   "box": [
+    -108.4503,
+    33.90842,
+    -108.35245,
+    34.22608
+   ],
+   "center": [
+    34.046462,
+    -108.386085
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "ground": [
+    "Forest Service"
+   ],
+   "id": "US-4515+US-4558@trail@34.047,-108.386",
+   "kind": "trail",
+   "len_m": 47905,
+   "line_source": {
+    "US-4558": {
+     "by": "U.S. Forest Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4558.json"
+    }
+   },
+   "map_dates": {
+    "US-4515": "downloaded 2026-10-29",
+    "US-4558": "official line (trails bot)"
+   },
+   "maps": [
+    [
+     "US-4515",
+     "https://www.fs.usda.gov/gila"
+    ],
+    [
+     "US-4558",
+     "https://www.fs.usda.gov/managing-land/trails/cdt"
+    ]
+   ],
+   "names": {
+    "US-4515": "Gila National Forest",
+    "US-4558": "Continental Divide Trail National Scenic Trail"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (Forest Service)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-4515": true,
+    "US-4558": true
+   },
+   "refs": [
+    "US-4515",
+    "US-4558"
+   ],
+   "shape": [
+    [
+     -108.450298,
+     33.908417
+    ],
+    [
+     -108.449799,
+     33.910526
+    ],
+    [
+     -108.448346,
+     33.912256
+    ],
+    [
+     -108.447901,
+     33.914143
+    ],
+    [
+     -108.446231,
+     33.915751
+    ],
+    [
+     -108.446286,
+     33.920058
+    ],
+    [
+     -108.443846,
+     33.920427
+    ],
+    [
+     -108.431104,
+     33.921871
+    ],
+    [
+     -108.429456,
+     33.923165
+    ],
+    [
+     -108.427515,
+     33.924426
+    ],
+    [
+     -108.425595,
+     33.925814
+    ],
+    [
+     -108.422212,
+     33.929057
+    ],
+    [
+     -108.418569,
+     33.931555
+    ],
+    [
+     -108.418991,
+     33.933685
+    ],
+    [
+     -108.417799,
+     33.935457
+    ],
+    [
+     -108.4146,
+     33.938824
+    ],
+    [
+     -108.414253,
+     33.940904
+    ],
+    [
+     -108.414144,
+     33.943054
+    ],
+    [
+     -108.414318,
+     33.945148
+    ],
+    [
+     -108.415597,
+     33.946995
+    ],
+    [
+     -108.413841,
+     33.964119
+    ],
+    [
+     -108.413418,
+     33.966231
+    ],
+    [
+     -108.412691,
+     33.968304
+    ],
+    [
+     -108.412756,
+     33.970382
+    ],
+    [
+     -108.416031,
+     33.980769
+    ],
+    [
+     -108.416823,
+     33.982776
+    ],
+    [
+     -108.416812,
+     33.98449
+    ],
+    [
+     -108.416888,
+     33.986633
+    ],
+    [
+     -108.417126,
+     33.990938
+    ],
+    [
+     -108.418297,
+     33.992788
+    ],
+    [
+     -108.419805,
+     33.994542
+    ],
+    [
+     -108.41923,
+     33.99624
+    ],
+    [
+     -108.411943,
+     33.998402
+    ],
+    [
+     -108.409817,
+     33.999301
+    ],
+    [
+     -108.409622,
+     34.003606
+    ],
+    [
+     -108.408147,
+     34.004897
+    ],
+    [
+     -108.40612,
+     34.005921
+    ],
+    [
+     -108.405198,
+     34.007854
+    ],
+    [
+     -108.402736,
+     34.008386
+    ],
+    [
+     -108.395026,
+     34.008946
+    ],
+    [
+     -108.392489,
+     34.008754
+    ],
+    [
+     -108.389995,
+     34.008494
+    ],
+    [
+     -108.387479,
+     34.009003
+    ],
+    [
+     -108.386687,
+     34.010355
+    ],
+    [
+     -108.387381,
+     34.012428
+    ],
+    [
+     -108.388607,
+     34.014169
+    ],
+    [
+     -108.388314,
+     34.016161
+    ],
+    [
+     -108.387121,
+     34.020346
+    ],
+    [
+     -108.387327,
+     34.022139
+    ],
+    [
+     -108.385104,
+     34.022996
+    ],
+    [
+     -108.377394,
+     34.023181
+    ],
+    [
+     -108.375182,
+     34.024
+    ],
+    [
+     -108.369434,
+     34.028332
+    ],
+    [
+     -108.367591,
+     34.029833
+    ],
+    [
+     -108.365888,
+     34.031452
+    ],
+    [
+     -108.364858,
+     34.033123
+    ],
+    [
+     -108.364479,
+     34.034438
+    ],
+    [
+     -108.366203,
+     34.036032
+    ],
+    [
+     -108.364305,
+     34.037353
+    ],
+    [
+     -108.363416,
+     34.039202
+    ],
+    [
+     -108.364891,
+     34.039955
+    ],
+    [
+     -108.367472,
+     34.039817
+    ],
+    [
+     -108.369836,
+     34.040652
+    ],
+    [
+     -108.372189,
+     34.041551
+    ],
+    [
+     -108.374119,
+     34.045535
+    ],
+    [
+     -108.376342,
+     34.045187
+    ],
+    [
+     -108.378392,
+     34.046026
+    ],
+    [
+     -108.380452,
+     34.04679
+    ],
+    [
+     -108.382805,
+     34.045938
+    ],
+    [
+     -108.385234,
+     34.045919
+    ],
+    [
+     -108.385397,
+     34.047084
+    ],
+    [
+     -108.383846,
+     34.048761
+    ],
+    [
+     -108.381981,
+     34.055017
+    ],
+    [
+     -108.380213,
+     34.056455
+    ],
+    [
+     -108.378099,
+     34.057699
+    ],
+    [
+     -108.376722,
+     34.059193
+    ],
+    [
+     -108.377578,
+     34.063439
+    ],
+    [
+     -108.377535,
+     34.06556
+    ],
+    [
+     -108.377069,
+     34.067681
+    ],
+    [
+     -108.377752,
+     34.069725
+    ],
+    [
+     -108.378587,
+     34.071757
+    ],
+    [
+     -108.378619,
+     34.073835
+    ],
+    [
+     -108.37683,
+     34.075278
+    ],
+    [
+     -108.374781,
+     34.076584
+    ],
+    [
+     -108.373111,
+     34.078059
+    ],
+    [
+     -108.372948,
+     34.080204
+    ],
+    [
+     -108.373046,
+     34.082318
+    ],
+    [
+     -108.373935,
+     34.084339
+    ],
+    [
+     -108.372395,
+     34.085759
+    ],
+    [
+     -108.373262,
+     34.087457
+    ],
+    [
+     -108.366019,
+     34.093589
+    ],
+    [
+     -108.365498,
+     34.095642
+    ],
+    [
+     -108.363243,
+     34.110566
+    ],
+    [
+     -108.363373,
+     34.112696
+    ],
+    [
+     -108.363806,
+     34.114821
+    ],
+    [
+     -108.365227,
+     34.116623
+    ],
+    [
+     -108.365878,
+     34.118656
+    ],
+    [
+     -108.366181,
+     34.12079
+    ],
+    [
+     -108.366398,
+     34.12292
+    ],
+    [
+     -108.363253,
+     34.133336
+    ],
+    [
+     -108.362397,
+     34.135357
+    ],
+    [
+     -108.360922,
+     34.137067
+    ],
+    [
+     -108.353006,
+     34.142595
+    ],
+    [
+     -108.352496,
+     34.144559
+    ],
+    [
+     -108.352453,
+     34.146712
+    ],
+    [
+     -108.353266,
+     34.14869
+    ],
+    [
+     -108.355554,
+     34.149527
+    ],
+    [
+     -108.356335,
+     34.151238
+    ],
+    [
+     -108.356465,
+     34.155543
+    ],
+    [
+     -108.356975,
+     34.157413
+    ],
+    [
+     -108.359469,
+     34.15798
+    ],
+    [
+     -108.361258,
+     34.159486
+    ],
+    [
+     -108.362961,
+     34.161098
+    ],
+    [
+     -108.364967,
+     34.162228
+    ],
+    [
+     -108.366669,
+     34.163088
+    ],
+    [
+     -108.366734,
+     34.165238
+    ],
+    [
+     -108.369012,
+     34.166246
+    ],
+    [
+     -108.368795,
+     34.168285
+    ],
+    [
+     -108.369055,
+     34.17032
+    ],
+    [
+     -108.371104,
+     34.171564
+    ],
+    [
+     -108.373317,
+     34.172674
+    ],
+    [
+     -108.375464,
+     34.173807
+    ],
+    [
+     -108.376299,
+     34.175606
+    ],
+    [
+     -108.378023,
+     34.177067
+    ],
+    [
+     -108.379216,
+     34.178975
+    ],
+    [
+     -108.381168,
+     34.180248
+    ],
+    [
+     -108.383488,
+     34.181211
+    ],
+    [
+     -108.385147,
+     34.182642
+    ],
+    [
+     -108.388303,
+     34.190825
+    ],
+    [
+     -108.390136,
+     34.191998
+    ],
+    [
+     -108.392597,
+     34.192638
+    ],
+    [
+     -108.394603,
+     34.193782
+    ],
+    [
+     -108.39597,
+     34.195616
+    ],
+    [
+     -108.397087,
+     34.197499
+    ],
+    [
+     -108.396891,
+     34.199647
+    ],
+    [
+     -108.397097,
+     34.201759
+    ],
+    [
+     -108.397867,
+     34.203823
+    ],
+    [
+     -108.396783,
+     34.205711
+    ],
+    [
+     -108.396132,
+     34.207752
+    ],
+    [
+     -108.394896,
+     34.216285
+    ],
+    [
+     -108.393768,
+     34.218139
+    ],
+    [
+     -108.392261,
+     34.219864
+    ],
+    [
+     -108.390146,
+     34.226075
+    ]
+   ],
+   "status": "merged into one row: US-4515+US-4558@trail@32.858,-108.303",
+   "zone": [
+    [
+     [
+      -108.390142,
+      34.226329
+     ],
+     [
+      -108.390413,
+      34.226193
+     ],
+     [
+      -108.392528,
+      34.219953
+     ],
+     [
+      -108.393992,
+      34.218325
+     ],
+     [
+      -108.395184,
+      34.216381
+     ],
+     [
+      -108.39513,
+      34.216335
+     ],
+     [
+      -108.395239,
+      34.216155
+     ],
+     [
+      -108.396432,
+      34.207699
+     ],
+     [
+      -108.397082,
+      34.205709
+     ],
+     [
+      -108.398167,
+      34.20381
+     ],
+     [
+      -108.397353,
+      34.201504
+     ],
+     [
+      -108.397191,
+      34.199831
+     ],
+     [
+      -108.397407,
+      34.19757
+     ],
+     [
+      -108.397353,
+      34.197298
+     ],
+     [
+      -108.396215,
+      34.195399
+     ],
+     [
+      -108.394968,
+      34.193726
+     ],
+     [
+      -108.394642,
+      34.193455
+     ],
+     [
+      -108.392636,
+      34.192324
+     ],
+     [
+      -108.39025,
+      34.191736
+     ],
+     [
+      -108.388569,
+      34.190651
+     ],
+     [
+      -108.38537,
+      34.182421
+     ],
+     [
+      -108.383744,
+      34.18102
+     ],
+     [
+      -108.381358,
+      34.180025
+     ],
+     [
+      -108.379352,
+      34.178668
+     ],
+     [
+      -108.378322,
+      34.17695
+     ],
+     [
+      -108.376532,
+      34.175413
+     ],
+     [
+      -108.375828,
+      34.17383
+     ],
+     [
+      -108.375556,
+      34.173513
+     ],
+     [
+      -108.371273,
+      34.171343
+     ],
+     [
+      -108.369321,
+      34.170122
+     ],
+     [
+      -108.369104,
+      34.168539
+     ],
+     [
+      -108.369104,
+      34.167861
+     ],
+     [
+      -108.369321,
+      34.166233
+     ],
+     [
+      -108.36905,
+      34.165917
+     ],
+     [
+      -108.367423,
+      34.165238
+     ],
+     [
+      -108.367044,
+      34.165012
+     ],
+     [
+      -108.36699,
+      34.163068
+     ],
+     [
+      -108.366881,
+      34.163023
+     ],
+     [
+      -108.366827,
+      34.162842
+     ],
+     [
+      -108.365092,
+      34.161983
+     ],
+     [
+      -108.363303,
+      34.160988
+     ],
+     [
+      -108.36173,
+      34.159496
+     ],
+     [
+      -108.359616,
+      34.157732
+     ],
+     [
+      -108.357392,
+      34.157235
+     ],
+     [
+      -108.357176,
+      34.157099
+     ],
+     [
+      -108.356742,
+      34.155516
+     ],
+     [
+      -108.356688,
+      34.152261
+     ],
+     [
+      -108.356579,
+      34.151175
+     ],
+     [
+      -108.356633,
+      34.15113
+     ],
+     [
+      -108.35582,
+      34.149412
+     ],
+     [
+      -108.355603,
+      34.149231
+     ],
+     [
+      -108.353922,
+      34.148643
+     ],
+     [
+      -108.353434,
+      34.148372
+     ],
+     [
+      -108.352729,
+      34.146654
+     ],
+     [
+      -108.352784,
+      34.144483
+     ],
+     [
+      -108.353272,
+      34.14272
+     ],
+     [
+      -108.361296,
+      34.137067
+     ],
+     [
+      -108.362652,
+      34.135485
+     ],
+     [
+      -108.363519,
+      34.133495
+     ],
+     [
+      -108.366664,
+      34.123095
+     ],
+     [
+      -108.366556,
+      34.121286
+     ],
+     [
+      -108.366176,
+      34.118573
+     ],
+     [
+      -108.365526,
+      34.116538
+     ],
+     [
+      -108.364062,
+      34.114684
+     ],
+     [
+      -108.363628,
+      34.112468
+     ],
+     [
+      -108.363519,
+      34.11066
+     ],
+     [
+      -108.365688,
+      34.096144
+     ],
+     [
+      -108.366285,
+      34.093703
+     ],
+     [
+      -108.372629,
+      34.088367
+     ],
+     [
+      -108.373496,
+      34.087553
+     ],
+     [
+      -108.37355,
+      34.087327
+     ],
+     [
+      -108.372737,
+      34.085789
+     ],
+     [
+      -108.374147,
+      34.084523
+     ],
+     [
+      -108.374201,
+      34.084161
+     ],
+     [
+      -108.373333,
+      34.082262
+     ],
+     [
+      -108.373225,
+      34.080047
+     ],
+     [
+      -108.373388,
+      34.078193
+     ],
+     [
+      -108.375068,
+      34.0767
+     ],
+     [
+      -108.376966,
+      34.075525
+     ],
+     [
+      -108.378864,
+      34.073942
+     ],
+     [
+      -108.378918,
+      34.073806
+     ],
+     [
+      -108.378918,
+      34.071772
+     ],
+     [
+      -108.37881,
+      34.071681
+     ],
+     [
+      -108.378864,
+      34.071591
+     ],
+     [
+      -108.377942,
+      34.06942
+     ],
+     [
+      -108.3774,
+      34.067747
+     ],
+     [
+      -108.3774,
+      34.067431
+     ],
+     [
+      -108.377834,
+      34.065622
+     ],
+     [
+      -108.377888,
+      34.063361
+     ],
+     [
+      -108.37702,
+      34.059246
+     ],
+     [
+      -108.378484,
+      34.057754
+     ],
+     [
+      -108.380382,
+      34.056669
+     ],
+     [
+      -108.382226,
+      34.055131
+     ],
+     [
+      -108.384123,
+      34.048846
+     ],
+     [
+      -108.385696,
+      34.047082
+     ],
+     [
+      -108.385533,
+      34.045861
+     ],
+     [
+      -108.38537,
+      34.04568
+     ],
+     [
+      -108.385208,
+      34.045635
+     ],
+     [
+      -108.382768,
+      34.045635
+     ],
+     [
+      -108.380545,
+      34.046449
+     ],
+     [
+      -108.380328,
+      34.046449
+     ],
+     [
+      -108.376478,
+      34.044912
+     ],
+     [
+      -108.376044,
+      34.044912
+     ],
+     [
+      -108.374309,
+      34.045183
+     ],
+     [
+      -108.372574,
+      34.041611
+     ],
+     [
+      -108.372249,
+      34.041249
+     ],
+     [
+      -108.367586,
+      34.039531
+     ],
+     [
+      -108.364929,
+      34.039666
+     ],
+     [
+      -108.363791,
+      34.039033
+     ],
+     [
+      -108.36455,
+      34.037496
+     ],
+     [
+      -108.366339,
+      34.036275
+     ],
+     [
+      -108.366502,
+      34.036004
+     ],
+     [
+      -108.366339,
+      34.035732
+     ],
+     [
+      -108.364821,
+      34.034331
+     ],
+     [
+      -108.365092,
+      34.033245
+     ],
+     [
+      -108.366068,
+      34.031663
+     ],
+     [
+      -108.367694,
+      34.03008
+     ],
+     [
+      -108.369755,
+      34.028407
+     ],
+     [
+      -108.37534,
+      34.024202
+     ],
+     [
+      -108.3774,
+      34.023433
+     ],
+     [
+      -108.385099,
+      34.023252
+     ],
+     [
+      -108.387051,
+      34.022529
+     ],
+     [
+      -108.387594,
+      34.022257
+     ],
+     [
+      -108.387648,
+      34.022031
+     ],
+     [
+      -108.387431,
+      34.020268
+     ],
+     [
+      -108.388624,
+      34.016243
+     ],
+     [
+      -108.388895,
+      34.014434
+     ],
+     [
+      -108.388841,
+      34.013982
+     ],
+     [
+      -108.387594,
+      34.012219
+     ],
+     [
+      -108.386997,
+      34.01041
+     ],
+     [
+      -108.387702,
+      34.009189
+     ],
+     [
+      -108.389925,
+      34.008737
+     ],
+     [
+      -108.392311,
+      34.009008
+     ],
+     [
+      -108.395347,
+      34.009189
+     ],
+     [
+      -108.402775,
+      34.008646
+     ],
+     [
+      -108.40527,
+      34.008104
+     ],
+     [
+      -108.405541,
+      34.007832
+     ],
+     [
+      -108.4063,
+      34.006159
+     ],
+     [
+      -108.408306,
+      34.005119
+     ],
+     [
+      -108.409878,
+      34.003718
+     ],
+     [
+      -108.410149,
+      33.999422
+     ],
+     [
+      -108.41221,
+      33.998563
+     ],
+     [
+      -108.419313,
+      33.996483
+     ],
+     [
+      -108.41953,
+      33.996302
+     ],
+     [
+      -108.420126,
+      33.994538
+     ],
+     [
+      -108.419801,
+      33.994041
+     ],
+     [
+      -108.418554,
+      33.992639
+     ],
+     [
+      -108.417415,
+      33.99083
+     ],
+     [
+      -108.41709,
+      33.984545
+     ],
+     [
+      -108.417144,
+      33.982736
+     ],
+     [
+      -108.416168,
+      33.980249
+     ],
+     [
+      -108.413023,
+      33.97012
+     ],
+     [
+      -108.412969,
+      33.968311
+     ],
+     [
+      -108.413728,
+      33.966277
+     ],
+     [
+      -108.414162,
+      33.964151
+     ],
+     [
+      -108.415897,
+      33.947285
+     ],
+     [
+      -108.415843,
+      33.946787
+     ],
+     [
+      -108.414596,
+      33.945024
+     ],
+     [
+      -108.414433,
+      33.942763
+     ],
+     [
+      -108.414541,
+      33.940819
+     ],
+     [
+      -108.414867,
+      33.938919
+     ],
+     [
+      -108.418011,
+      33.935664
+     ],
+     [
+      -108.419259,
+      33.93381
+     ],
+     [
+      -108.419313,
+      33.933629
+     ],
+     [
+      -108.418879,
+      33.931684
+     ],
+     [
+      -108.422295,
+      33.929333
+     ],
+     [
+      -108.426036,
+      33.925806
+     ],
+     [
+      -108.427934,
+      33.924449
+     ],
+     [
+      -108.429506,
+      33.923455
+     ],
+     [
+      -108.431241,
+      33.922098
+     ],
+     [
+      -108.443875,
+      33.920696
+     ],
+     [
+      -108.446206,
+      33.920335
+     ],
+     [
+      -108.446532,
+      33.920154
+     ],
+     [
+      -108.446532,
+      33.915813
+     ],
+     [
+      -108.448212,
+      33.914185
+     ],
+     [
+      -108.448646,
+      33.912286
+     ],
+     [
+      -108.45011,
+      33.910567
+     ],
+     [
+      -108.450544,
+      33.908668
+     ],
+     [
+      -108.449839,
+      33.908713
+     ],
+     [
+      -108.449514,
+      33.910296
+     ],
+     [
+      -108.44805,
+      33.91206
+     ],
+     [
+      -108.447616,
+      33.913913
+     ],
+     [
+      -108.445935,
+      33.915541
+     ],
+     [
+      -108.445881,
+      33.919837
+     ],
+     [
+      -108.443007,
+      33.920244
+     ],
+     [
+      -108.430916,
+      33.921601
+     ],
+     [
+      -108.429344,
+      33.922867
+     ],
+     [
+      -108.427066,
+      33.924314
+     ],
+     [
+      -108.425277,
+      33.925625
+     ],
+     [
+      -108.422295,
+      33.928519
+     ],
+     [
+      -108.421644,
+      33.929062
+     ],
+     [
+      -108.418337,
+      33.931323
+     ],
+     [
+      -108.418228,
+      33.93173
+     ],
+     [
+      -108.418608,
+      33.933674
+     ],
+     [
+      -108.417578,
+      33.935211
+     ],
+     [
+      -108.414379,
+      33.938558
+     ],
+     [
+      -108.414216,
+      33.938874
+     ],
+     [
+      -108.413891,
+      33.940819
+     ],
+     [
+      -108.413782,
+      33.942808
+     ],
+     [
+      -108.413945,
+      33.94516
+     ],
+     [
+      -108.415192,
+      33.946923
+     ],
+     [
+      -108.415246,
+      33.94724
+     ],
+     [
+      -108.413511,
+      33.964106
+     ],
+     [
+      -108.413132,
+      33.966005
+     ],
+     [
+      -108.412318,
+      33.968266
+     ],
+     [
+      -108.412372,
+      33.97012
+     ],
+     [
+      -108.412644,
+      33.971251
+     ],
+     [
+      -108.415626,
+      33.980701
+     ],
+     [
+      -108.416493,
+      33.982781
+     ],
+     [
+      -108.416439,
+      33.984545
+     ],
+     [
+      -108.416764,
+      33.990921
+     ],
+     [
+      -108.417903,
+      33.99282
+     ],
+     [
+      -108.419421,
+      33.994538
+     ],
+     [
+      -108.418933,
+      33.995985
+     ],
+     [
+      -108.411939,
+      33.998065
+     ],
+     [
+      -108.409661,
+      33.999015
+     ],
+     [
+      -108.409445,
+      33.999286
+     ],
+     [
+      -108.409282,
+      34.003446
+     ],
+     [
+      -108.407818,
+      34.004712
+     ],
+     [
+      -108.405812,
+      34.005752
+     ],
+     [
+      -108.404998,
+      34.007516
+     ],
+     [
+      -108.404782,
+      34.007652
+     ],
+     [
+      -108.402721,
+      34.008104
+     ],
+     [
+      -108.395347,
+      34.008646
+     ],
+     [
+      -108.392853,
+      34.008511
+     ],
+     [
+      -108.389871,
+      34.008194
+     ],
+     [
+      -108.387268,
+      34.008737
+     ],
+     [
+      -108.386346,
+      34.010229
+     ],
+     [
+      -108.386346,
+      34.010455
+     ],
+     [
+      -108.386997,
+      34.012445
+     ],
+     [
+      -108.388136,
+      34.014027
+     ],
+     [
+      -108.388244,
+      34.014389
+     ],
+     [
+      -108.387973,
+      34.016153
+     ],
+     [
+      -108.38678,
+      34.020222
+     ],
+     [
+      -108.386943,
+      34.021941
+     ],
+     [
+      -108.384991,
+      34.022709
+     ],
+     [
+      -108.378213,
+      34.022845
+     ],
+     [
+      -108.377292,
+      34.022935
+     ],
+     [
+      -108.377237,
+      34.02289
+     ],
+     [
+      -108.374797,
+      34.02384
+     ],
+     [
+      -108.369213,
+      34.028045
+     ],
+     [
+      -108.367152,
+      34.029764
+     ],
+     [
+      -108.365526,
+      34.031346
+     ],
+     [
+      -108.364495,
+      34.033019
+     ],
+     [
+      -108.364116,
+      34.034421
+     ],
+     [
+      -108.364279,
+      34.034692
+     ],
+     [
+      -108.365688,
+      34.036004
+     ],
+     [
+      -108.363953,
+      34.037225
+     ],
+     [
+      -108.363031,
+      34.039169
+     ],
+     [
+      -108.363194,
+      34.039395
+     ],
+     [
+      -108.364712,
+      34.040164
+     ],
+     [
+      -108.3652,
+      34.040209
+     ],
+     [
+      -108.367478,
+      34.040073
+     ],
+     [
+      -108.371869,
+      34.041701
+     ],
+     [
+      -108.373767,
+      34.045635
+     ],
+     [
+      -108.37393,
+      34.045726
+     ],
+     [
+      -108.374309,
+      34.045771
+     ],
+     [
+      -108.376316,
+      34.045454
+     ],
+     [
+      -108.378213,
+      34.046268
+     ],
+     [
+      -108.380274,
+      34.047037
+     ],
+     [
+      -108.380545,
+      34.047037
+     ],
+     [
+      -108.382876,
+      34.046178
+     ],
+     [
+      -108.384882,
+      34.046178
+     ],
+     [
+      -108.385045,
+      34.046992
+     ],
+     [
+      -108.383473,
+      34.04871
+     ],
+     [
+      -108.381683,
+      34.05486
+     ],
+     [
+      -108.379786,
+      34.056352
+     ],
+     [
+      -108.377942,
+      34.057392
+     ],
+     [
+      -108.37637,
+      34.059156
+     ],
+     [
+      -108.377237,
+      34.063406
+     ],
+     [
+      -108.377183,
+      34.065577
+     ],
+     [
+      -108.376695,
+      34.067657
+     ],
+     [
+      -108.377346,
+      34.069646
+     ],
+     [
+      -108.378268,
+      34.071817
+     ],
+     [
+      -108.378268,
+      34.073716
+     ],
+     [
+      -108.376641,
+      34.075027
+     ],
+     [
+      -108.374526,
+      34.076339
+     ],
+     [
+      -108.373279,
+      34.077424
+     ],
+     [
+      -108.372737,
+      34.078012
+     ],
+     [
+      -108.372574,
+      34.080092
+     ],
+     [
+      -108.372737,
+      34.082353
+     ],
+     [
+      -108.372683,
+      34.082398
+     ],
+     [
+      -108.373442,
+      34.084026
+     ],
+     [
+      -108.373496,
+      34.084297
+     ],
+     [
+      -108.372195,
+      34.085473
+     ],
+     [
+      -108.372032,
+      34.085744
+     ],
+     [
+      -108.372845,
+      34.087372
+     ],
+     [
+      -108.365688,
+      34.093431
+     ],
+     [
+      -108.365092,
+      34.095783
+     ],
+     [
+      -108.362869,
+      34.110705
+     ],
+     [
+      -108.362977,
+      34.112514
+     ],
+     [
+      -108.363411,
+      34.114774
+     ],
+     [
+      -108.364929,
+      34.116764
+     ],
+     [
+      -108.365526,
+      34.118618
+     ],
+     [
+      -108.365851,
+      34.120834
+     ],
+     [
+      -108.366014,
+      34.123004
+     ],
+     [
+      -108.362977,
+      34.133088
+     ],
+     [
+      -108.36211,
+      34.135168
+     ],
+     [
+      -108.360754,
+      34.136751
+     ],
+     [
+      -108.352675,
+      34.142448
+     ]
+    ]
+   ],
+   "zone_acres": 741.57,
+   "zone_read": "2026-10-29",
+   "zone_wide_m": 78.0
+  },
+  {
+   "acres": 23.6,
+   "box": [
+    -106.92918,
+    32.34597,
+    -106.87068,
+    32.39445
+   ],
+   "center": [
+    32.356555,
+    -106.915776
+   ],
+   "found": "2026-10-29",
+   "id": "US-4551+US-4552@area@32.357,-106.916",
+   "kind": "area",
+   "masked_out": [
+    "blm"
+   ],
+   "passes": [
+    1,
+    1,
+    0
+   ],
+   "refs": [
+    "US-4551",
+    "US-4552"
+   ],
+   "shape": [
+    [
+     -106.913117,
+     32.355379
+    ],
+    [
+     -106.912798,
+     32.355289
+    ],
+    [
+     -106.912373,
+     32.354656
+    ],
+    [
+     -106.911415,
+     32.354203
+    ],
+    [
+     -106.911309,
+     32.353661
+    ],
+    [
+     -106.910033,
+     32.353118
+    ],
+    [
+     -106.909394,
+     32.353299
+    ],
+    [
+     -106.903332,
+     32.348596
+    ],
+    [
+     -106.901418,
+     32.348958
+    ],
+    [
+     -106.90046,
+     32.349501
+    ],
+    [
+     -106.899503,
+     32.348687
+    ],
+    [
+     -106.898227,
+     32.348687
+    ],
+    [
+     -106.897908,
+     32.34932
+    ],
+    [
+     -106.897482,
+     32.349591
+    ],
+    [
+     -106.895355,
+     32.349953
+    ],
+    [
+     -106.894292,
+     32.349862
+    ],
+    [
+     -106.892483,
+     32.350767
+    ],
+    [
+     -106.879295,
+     32.350948
+    ],
+    [
+     -106.879189,
+     32.347963
+    ],
+    [
+     -106.875892,
+     32.347511
+    ],
+    [
+     -106.874403,
+     32.346788
+    ],
+    [
+     -106.874722,
+     32.346064
+    ],
+    [
+     -106.87068,
+     32.345974
+    ],
+    [
+     -106.874615,
+     32.346064
+    ],
+    [
+     -106.874403,
+     32.346788
+    ],
+    [
+     -106.876211,
+     32.347602
+    ],
+    [
+     -106.878976,
+     32.347963
+    ],
+    [
+     -106.879189,
+     32.350948
+    ],
+    [
+     -106.892483,
+     32.350767
+    ],
+    [
+     -106.894292,
+     32.349862
+    ],
+    [
+     -106.895355,
+     32.349953
+    ],
+    [
+     -106.897801,
+     32.349501
+    ],
+    [
+     -106.898333,
+     32.348687
+    ],
+    [
+     -106.899503,
+     32.348687
+    ],
+    [
+     -106.90046,
+     32.349501
+    ],
+    [
+     -106.901418,
+     32.348958
+    ],
+    [
+     -106.903332,
+     32.348596
+    ],
+    [
+     -106.909394,
+     32.353299
+    ],
+    [
+     -106.910033,
+     32.353118
+    ],
+    [
+     -106.911096,
+     32.35357
+    ],
+    [
+     -106.911415,
+     32.354294
+    ],
+    [
+     -106.912373,
+     32.354656
+    ],
+    [
+     -106.912798,
+     32.355289
+    ]
+   ],
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "tier": "very tight: could be map error: check both official maps on the ground",
+   "wide_m": 18
   },
   {
    "access": null,
