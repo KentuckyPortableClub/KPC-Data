@@ -781,7 +781,12 @@ def run_area(area, state, web, lists, ky):
         if old and old.get('ver', 1) >= VER and old.get('checked', '') >= time.strftime('%Y-%m-%d', time.gmtime(time.time() - REFRESH_DAYS * 86400)):
             fresh += 1; STAT['skipped_fresh'] += 1; continue
         S = seeds(ref, parks, web, ky if area == 'US-KY' else {})
-        try: D['parks'][ref] = one_park(ref, S, lists, area); D['parks'][ref]['ver'] = VER
+        try:
+            D['parks'][ref] = one_park(ref, S, lists, area); D['parks'][ref]['ver'] = VER
+            nm, om = D['parks'][ref].get('map') or {}, (old or {}).get('map') or {}
+            if not nm.get('url') and om.get('url') and re.search(r'(?:^|[(;:] )rest https?://', str(nm.get('status') or '')):   # tune Oct 29: kept on rest (no VER bump)
+                D['parks'][ref]['map'] = dict(om, kept=f"{TODAY}: kept the last good map: the host was resting (our strikes), not a dead link")   # tune Oct 29 (WI 294 -> 113: dnrmaps.wi.gov rested after 3 strikes)
+                STAT['kept_on_rest'] = STAT.get('kept_on_rest', 0) + 1
         except Exception as e:  # noqa: BLE001
             D['parks'][ref] = {'n': S['name'], 'checked': TODAY, 'map': {'url': '', 'status': 'bot error: ' + str(e)[:80]}, 'rules': None, 'notes': []}
             STAT['errors'] += 1
