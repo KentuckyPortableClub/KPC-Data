@@ -212,6 +212,7 @@ CLOSE_RX = re.compile(r"\b(clos(?:ed|ure|ures|ing|es)|ferm(?:é|ée|és|ées|etu
 NEG_RX = re.compile(r"\b(not closed|no closures?|is not|are not|reopen(?:ed|s|ing)?|re-?open(?:ed)?|now open|remains? open|has been lifted|lifted|rescinded|"
                     r"is open|are open|back open|has reopened|have reopened|closed captioning|no longer closed|rouvert|réouvert|réouverture|will close (?:at|on|friday|monday|tuesday|wednesday|thursday|saturday|sunday|daily))\b", re.I)
 HOURS_RX = re.compile(r"\b(is|are)\s+open\b[^.]*\b(a\.?m\.?|p\.?m\.?)|\bopen (from|daily|year[- ]round)\b|\bgates? (close|closes|closed) at\b|\bclosed (on )?(mondays?|tuesdays?|wednesdays?|thursdays?|fridays?)\b(?![^.]*\b(for|due|until|through)\b)|\b(daylight|dawn|sunrise) to (dark|dusk|sunset)\b|\bhours\b[^.]*\b\d\s*(a\.?m|p\.?m)", re.I)
+HUNT_ONLY_RX = re.compile(r"\b(?:clos(?:e|ed|es|ure))\s+(?:to|for)\s+(?:all\s+)?(?:[a-z-]+\s+(?:and\s+)?){0,3}hunting\b|\b(?:public\s+)?hunting\s+(?:is\s+)?closed\b", re.I)   # Oct 29 Brandon: closed to (some) HUNTING only
 HUNT_RX = re.compile(r"quota hunt|drawn (hunters?|permit|applicants?)|managed (deer |elk |turkey )?hunts?|controlled hunt|youth(-only)? hunt|except (drawn|permitted|quota|selected) hunters?|closed to all other (public )?use|closed to (non-hunters|the general public|all users? except)|hunters? (with|holding) [^.]{0,40}permits? only|lottery hunt", re.I)
 STANDING_RX = re.compile(r"\b(is|are|shall be|will be)\s+(?:strictly\s+|also\s+)?(prohibited|not (?:allowed|permitted)|unlawful|illegal|forbidden)\b|\bshall not\b|\bmust not\b|\bunlicensed vehicles?\b|\bgroups? (?:of more than|over|larger than) \w+\b|\bdischarg\w* (?:a |of )?firearms?\b|\bsteep banks\b|\bnot permitted\b|\bno (?:camping|fires?|campfires?|alcohol|pets|dogs|swimming|glass)\b(?![^.]*\bclos)", re.I)
 SEASON_RULE = re.compile(r"\b(season|seasons)\b[^.]{0,60}\b(open|closed)\b|\bclosed to (?:modern gun |archery |muzzleloader |crossbow |firearms? )?(?:deer |turkey |rabbit |squirrel |quail |dove |waterfowl |small game |elk |bear )?(?:hunting|trapping)\b(?! and)", re.I)
@@ -287,6 +288,10 @@ def classify(sent, ctx=None):
     low = s.lower()
     has_close = bool(CLOSE_RX.search(s))
     lang = 'fr' if FR_RX.search(s) and not re.search(r'\bclosed?\b', low) else 'en'
+    if re.match(r'^\(', s) or re.search(r'\bclosed[- ]canopy\b|\bclosed map\b|\(pdf\)', low):   # Oct 29 (Brandon's list check): a fragment / a woods description / a link label
+        return {'skip': 'a fragment, a description or a link label, not a closure'}
+    if HUNT_ONLY_RX.search(s) and not re.search(r'\b(public (?:access|use)|all access|no entry|all entry|entering|visitors|closed to the public|closed to unauthorized)\b', low):
+        return {'skip': "closed to hunting only: the land stays open (Brandon Oct 29 10:17 AM: drop hunting ones)"}
     if re.search(r'[“”"]|\bsigns?\b (define|are erected|mark)|^prohibited activities|regulations (are|is) representative', low) and not re.search(r'\bis closed\b|\bare closed\b', low):
         return {'skip': 'a sentence about signs or rules in general, not a closure'}
     if ' | ' in s or s.count('|') >= 2 or len(s.split()) < 4 and not ctx.get('hunt_page'):
@@ -1416,6 +1421,7 @@ def card_line(it):
     if c == 'seasonal': return f'📅 SEASONAL: {it.get("what") or ""}{when}: {q} ({ag})'
     k = it.get('note_kind')
     return {'permit': f'🎫 Permit needed: {q} ({ag})', 'vehicles': f'🚗 Closed to vehicles, open on foot: {q} ({ag})',
+            'closed': f'ℹ️ Part closed ({it.get("what") or "part"}){when}: {q} ({ag})',
             'land': f'ℹ️ May not be public land now: {q} ({ag})', 'season': f'🦌 Hunting season: {q} ({ag})', 'quota': f'🦌 Quota hunt: {q} ({ag})'}.get(k, f'ℹ️ Note: {q} ({ag})')
 
 
@@ -1448,6 +1454,8 @@ def build_item(sid, agency, ref, cl, sent, row, area, first_seen):
           'kind': KIND_LABEL[cl['class']], 'call': 'KPC BOT',
           'expires': (to + dt.timedelta(days=1)).isoformat() if to else (TODAY + dt.timedelta(days=7)).isoformat()}
     if cl['class'] == 'note': it['note_kind'] = cl.get('note_kind', 'caution')
+    if cl['class'] in ('part', 'hunt', 'seasonal'):   # Brandon Oct 29 10:17 AM: only a WHOLE park closed gets the closure line; a closed piece / tract / season = a NOTE
+        it['closed_class'] = cl['class']; it['class'] = 'note'; it['note_kind'] = 'closed'; it['kind'] = KIND_LABEL['note']
     if row.get('details_fr'): it['details_fr'] = f'"{row["details_fr"]}"'
     if cl['flags'].get('emergency') and cl['class'] in ('whole', 'part'): it['as_of'] = NOW                               # G10
     if frm and frm > TODAY: it['upcoming'] = True; it['show_from'] = (frm - dt.timedelta(days=UPCOMING_DAYS)).isoformat()   # D9
@@ -1570,14 +1578,15 @@ def process_area(K, area, state, review):
             items += [it for it in prev_items.values() if it['src'] == sid]
             srcs[sid] = {**(prev_src.get(sid) or {}), 'ok': (prev_src.get(sid) or {}).get('ok', False), 'why': 'not reached this run (out of time)'}
     items = drop_title_twins(merge_items(items))
-    plugd = [(it['ref'], it.get('from')) for it in items if str(it.get('src', '')).endswith('-hunt-plug') and it.get('class') == 'hunt' and it.get('from')]
+    cls = lambda it: it.get('closed_class') or it.get('class')
+    plugd = [(it['ref'], it.get('from')) for it in items if str(it.get('src', '')).endswith('-hunt-plug') and cls(it) == 'hunt' and it.get('from')]
     def _twin(it):
-        if str(it.get('src', '')).endswith('-hunt-plug') or it.get('class') != 'hunt' or not it.get('from'): return False
+        if str(it.get('src', '')).endswith('-hunt-plug') or cls(it) != 'hunt' or not it.get('from'): return False
         return any(r == it['ref'] and abs((dt.date.fromisoformat(f) - dt.date.fromisoformat(it['from'])).days) <= 1 for r, f in plugd)
     items = [it for it in items if not _twin(it)]   # one hunt closure per park and date: the plug's (table dates) wins
     lst = [(it['ref'], it.get('from'), it.get('to') or it.get('from')) for it in items if str(it.get('src', '')).endswith('-hunt-plug') and it.get('from')]
     def _ruled(it):   # Brandon Oct 29 9:25 AM (checked list): a quota hunt is a NOTE unless the list says otherwise; another source's 'closed for the quota hunt' line on the same park and dates gives way
-        if str(it.get('src', '')).endswith('-hunt-plug') or it.get('class') != 'hunt' or not it.get('from'): return False
+        if str(it.get('src', '')).endswith('-hunt-plug') or cls(it) != 'hunt' or not it.get('from'): return False
         if not re.search(r'quota|drawn|day before', str(it.get('details') or ''), re.I): return False
         f, t = dt.date.fromisoformat(it['from']), dt.date.fromisoformat(it.get('to') or it['from'])
         return any(r == it['ref'] and dt.date.fromisoformat(a_) - dt.timedelta(days=1) <= t and f <= dt.date.fromisoformat(b_) + dt.timedelta(days=1) for r, a_, b_ in lst)
@@ -1771,6 +1780,11 @@ def write_review(state, review):
 # ======================================================================================= self test (no web)
 SELFTEST = [  # (sentence, context, expected class, expected note_kind or what-contains, expected dates)
     ('Big South Fork NRRA has announced the temporary closure of the historic Blue Heron Tipple Bridge, effective immediately in the interest of visitor safety.', {'names': ['Big South Fork'], 'park': 'Big South Fork National River and Recreation Area'}, 'part', 'bridge', None),   # Oct 29 HQ: a named bridge = PART
+    ('Sauerheber Unit is closed to rabbit and quail hunting.', {'names': ['Sloughs WMA']}, None, None, None),   # Brandon Oct 29 10:17 AM: hunting only = dropped
+    ('The following portions of the lake are closed to all waterfowl hunting:', {'names': ['Grayson Lake State Park']}, None, None, None),
+    ('Public hunting closed when floodwaters prevent safe entry to blinds by wheeled vehicles.', {'names': ['Boatwright WMA']}, None, None, None),
+    ('property is a mixture of closed canopy forest and', {'names': ['Hoskins WMA']}, None, None, None),
+    ('Temporary Closed Map (PDF)', {'names': ['University of the Cumberlands']}, None, None, None),
     ('This WMA is closed to the public during quota fox hunting field trials.', {'names': ['Clay WMA'], 'park': 'Clay WMA'}, 'note', 'caution', None),   # Oct 29 HQ: no dates = a note
     ("Big Basin Redwoods State Park is closed to all access until further notice.", {'park': 'Big Basin Redwoods State Park'}, 'whole', None, (None, None)),
     ("Roads 995E and 955B are temporarily closed.", {'names': ["John's Mountain WMA"]}, 'part', 'roads 995e', (None, None)),
@@ -1812,7 +1826,7 @@ SELFTEST = [  # (sentence, context, expected class, expected note_kind or what-c
     ("Hematite Lake and Honker Lake closed to fishing and boating", {}, 'note', 'rules', (None, None)),
     ("Ballard WMA | Deer quota hunt | Nov 7-8", {'updated': dt.date(2026, 10, 20), 'hunt_page': True}, 'hunt', None, (dt.date(2026, 11, 7), dt.date(2026, 11, 8))),
     # KDFWR property-page wording (HQ Oct 28; season year assumed, 'Nov. 15-Jan. 15' spans the year)
-    ("The area is closed to all other hunting Nov. 7-8 for the quota deer hunt.", {'hunt_page': True}, 'hunt', None, (dt.date(SEASON_YEAR, 11, 7), dt.date(SEASON_YEAR, 11, 8))),
+    ("The area is closed to all other hunting Nov. 7-8 for the quota deer hunt.", {'hunt_page': True}, None, None, None),   # Brandon Oct 29 10:17 AM: closed to hunting only = dropped
     ("Sauerheber Unit closed to all public access Nov. 1 - Mar. 15 except for quota hunters.", {'hunt_page': True}, 'hunt', 'sauerheber unit', (dt.date(SEASON_YEAR, 11, 1), dt.date(SEASON_YEAR + 1, 3, 15))),
     ("The WMA is closed to everyone except drawn hunters November 21-24.", {'hunt_page': True}, 'hunt', None, (dt.date(SEASON_YEAR, 11, 21), dt.date(SEASON_YEAR, 11, 24))),
     ("Closed to all public access Nov. 15-Jan. 15 except waterfowl hunters with a drawn permit.", {'hunt_page': True}, 'hunt', None, (dt.date(SEASON_YEAR, 11, 15), dt.date(SEASON_YEAR + 1, 1, 15))),
