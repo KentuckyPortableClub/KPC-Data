@@ -1236,6 +1236,7 @@ def process_area(K, area, state, review):
         if how == 'hunt-page' and TEST and not any(it.get('class') == 'hunt' and it['id'] in now_ids for it in items):
             m = re.search(r'closed|quota|drawn', page_txt, re.I)
             srcs[sid]['debug'] = ('…' + page_txt[max(0, m.start() - 200):m.start() + 200].replace('\n', ' ') + '…') if m else ('page text %d chars, no closed / quota word' % len(page_txt))
+            if sid in ('ky-fw-quota', 'ky-fw-public-land'): srcs[sid]['debug_full'] = page_txt[:9000]   # Oct 28 night: the whole quota page as the reader saw it (HQ: 'get the real table')
     if stopped:                                                                      # out of time: sources not reached keep their old items
         for sid in {it['src'] for it in prev_items.values()} - set(srcs):
             items += [it for it in prev_items.values() if it['src'] == sid]
