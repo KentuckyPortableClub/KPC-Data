@@ -1,12 +1,12 @@
 # Waiting room REPLAY TEST
-Run 2026-10-29 10:00Z: **FAIL** (22 of 23 cases right). Every real bad output must be HELD (or, closures, have its bad rows taken out); every good output must PASS.
+Run 2026-10-29 11:31Z: **PASS** (23 of 23 cases right). Every real bad output must be HELD (or, closures, have its bad rows taken out); every good output must PASS.
 
 | result | case | expect | what the checker said |
 |---|---|---|---|
 | ok | ACCESS: 178 far points (NY, Oct 28 15:57, the tuned run that still kept on-land far points) | HOLD | HOLD: F-A1 47 points over 100 km from their park pin (not a line park), e.g. US-10284 376 km, US-10284 377 km, US-10284 377 km |
 | ok | ACCESS: a timed-out layer shrinks a state (simulated: 70% of NY parks dropped) | HOLD | HOLD: F-A2 points 3164 -> 1383 (more than 40% gone) |
 | ok | FED CAMPS: office-address rows + ids in two state files (GA + SC before the Oct 29 sweep) | HOLD | HOLD: F-C2 8 of 101 pins outside GA, e.g. Broyles; F-C3 13 campground ids are also in another state file: US-AL.json 1, US-FL.json 1, US-SC.json 11 / HOLD: F-C3 11 campground ids are also in another state file: US-GA.json 11 |
-| ok | POTA LIST: a short answer would retire parks (simulated: 3% fewer parks) | HOLD | HOLD: F-P1 POTA parks 79,853 -> 77,457 (more than 1% or 5 gone): needs a second read |
+| ok | POTA LIST: a short answer would retire parks (simulated: 3% fewer parks) | HOLD | HOLD: F-P1 POTA parks 79,866 -> 77,470 (more than 1% or 5 gone): needs a second read |
 | ok | 2-FER LINE CHECK: READY with rows not checked (Michigan water lesson, simulated) | HOLD | HOLD: F-S1 status READY with 1 rows STORE NOT READ / not checked (must be STOPPED); no live copy: first time this file is published; F-S1 1 rows where a map did not a |
 | ok | DOCS: 83 WV parks on one rules page (Oct 28 11:27) | HOLD | HOLD: F-D1 one map page on 82 of 172 parks: https://wvdnr.gov/lands-waters/stream-access-points/; F-D2 1 map links on a banned host (fire news / map pins / social), e |
 | ok | DOCS: VA maps on inciweb (Oct 28 15:08) | HOLD | HOLD: F-D1 one map page on 26 of 184 parks: https://inciweb.wildfire.gov/; F-D2 27 map links on a banned host (fire news / map pins / social), e.g. https://www.google |
@@ -24,5 +24,5 @@ Run 2026-10-29 10:00Z: **FAIL** (22 of 23 cases right). Every real bad output mu
 | ok | 2-FERS: live 'same land' wrong joins (NY sister-name state forests 'Lost Nation (St. Lawrence)' + '(Allegany)', 377 km; Robert Moses x2, 503 km) | HOLD | HOLD: F-S2 10 same-land rows with pins 30+ km apart (wrong joins), e.g. US-10284+US-5398 377 km (sister names), US-12778+US-5342 103 km (sister names), US-2128+US-437 |
 | ok | GOOD: Kentucky 2-fers (live) | PASS | PASS:  |
 | ok | GOOD: Canada key, Ontario (live) | PASS | PASS:  |
-| **MISS** | GOOD: Kentucky federal campgrounds (live, after the Oct 29 sweep) | PASS | HOLD: F-K known Kentucky federal camps missing within 2 km: Wilderness Road Campground |
+| ok | GOOD: Kentucky federal campgrounds (live, after the Oct 29 sweep) | PASS | PASS:  |
 | ok | GOOD: NY access after the 100 km fix (Oct 29 02:27 vs the run before) | PASS | PASS:  |
