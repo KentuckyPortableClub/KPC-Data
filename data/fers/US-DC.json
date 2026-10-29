@@ -1,13 +1,1470 @@
 {
  "about": "Spots where the boundaries of two or more POTA parks may overlap, by the 2-FER RULES FOR THE WHOLE WORLD (Brandon Oct 27, notes/mapping.md): the park = where its designation legally applies (national forests + grasslands = Forest Service-OWNED land only, never proclamation lines); public land open to the public; layered = real, side by side = not (ownership step: PAD-US / CPCAD at the spot, read at up to 5 points of the patch; no public owner there = not sure); a patch 50 yards across in every park ('small' = 50-100 yards; 25-50 yards = the separate 'very tight' list, members only; under 25 = not kept); line-only trails / rivers by POTA's 100-ft rule from the line or the river EDGE (USGS NHD); pins never count. Status: 'candidate' = all checks passed; 'not sure: …' and 'water only: boat or kayak' are separate lists, never the main one; n-fers up to 9; 'Same land, two park numbers' (two numbers on one official outline) is shown with that label; 'dropped: …' says why. Every decided spot shows 'checked' + 'map_dates'. Parks with no official boundary: missing-<region>.json. HIDDEN, not reviewed: passes [saved, fresh, finest] must all be 1 and status 'candidate' before a person looks. Wording when shown (house rule, Oct 27): '⚠️ Parks' boundaries may overlap here, but we can't confirm it. Check both official boundary maps and make your own call before you count it.' Tool pages carry the FULL notice from .claude/notes/notices.md.",
- "pass1": "2026-10-28",
- "pass2": "2026-10-28",
+ "pass1": "2026-10-29",
+ "pass2": "2026-10-29",
  "pass3": "2026-10-29",
  "pass5": "2026-10-29",
  "spots": [
   {
+   "acres": 0.6,
+   "box": [
+    -77.04111,
+    38.88985,
+    -77.03949,
+    38.89039
+   ],
+   "center": [
+    38.890391,
+    -77.041108
+   ],
+   "found": "2026-10-29",
+   "id": "US-0653+US-0796@area@38.890,-77.041",
+   "kind": "area",
+   "passes": [
+    1,
+    1,
+    0
+   ],
+   "refs": [
+    "US-0653",
+    "US-0796"
+   ],
+   "shape": [
+    [
+     -77.041108,
+     38.890391
+    ],
+    [
+     -77.041108,
+     38.889848
+    ],
+    [
+     -77.040993,
+     38.890391
+    ],
+    [
+     -77.039608,
+     38.890391
+    ],
+    [
+     -77.039492,
+     38.890119
+    ],
+    [
+     -77.039492,
+     38.890391
+    ]
+   ],
+   "status": "dropped in pass 3",
+   "tier": "very tight: could be map error: check both official maps on the ground",
+   "wide_m": 10
+  },
+  {
+   "box": [
+    -77.04601,
+    38.88983,
+    -77.04064,
+    38.89182
+   ],
+   "center": [
+    38.890912,
+    -77.044738
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "id": "US-0653+US-4567@river@38.891,-77.044",
+   "kind": "river",
+   "len_m": 1168,
+   "map_dates": {
+    "US-0653": "downloaded 2026-10-29",
+    "US-4567": "official line (trails bot)",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "names": {
+    "US-0653": "Constitution Gardens National Park",
+    "US-4567": "Captain John Smith Chesapeake National Historic Trail"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go",
+    "restricted access (PAD-US): check the agency rules"
+   ],
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-0653": true,
+    "US-4567": true
+   },
+   "refs": [
+    "US-0653",
+    "US-4567"
+   ],
+   "shape": [
+    [
+     -77.040641,
+     38.891319
+    ],
+    [
+     -77.04093,
+     38.891635
+    ],
+    [
+     -77.041334,
+     38.891816
+    ],
+    [
+     -77.042372,
+     38.891816
+    ],
+    [
+     -77.042776,
+     38.89159
+    ],
+    [
+     -77.043296,
+     38.891771
+    ],
+    [
+     -77.043988,
+     38.891771
+    ],
+    [
+     -77.044854,
+     38.891093
+    ],
+    [
+     -77.044912,
+     38.89046
+    ],
+    [
+     -77.044335,
+     38.890098
+    ],
+    [
+     -77.043815,
+     38.890098
+    ],
+    [
+     -77.043238,
+     38.89046
+    ],
+    [
+     -77.042546,
+     38.890188
+    ],
+    [
+     -77.041218,
+     38.890279
+    ],
+    [
+     -77.040641,
+     38.890686
+    ]
+   ],
+   "status": "not sure: water not checked (the USGS water map did not answer for this river bank): run again",
+   "water_route": true,
+   "water_unchecked": true
+  },
+  {
+   "box": [
+    -77.05254,
+    38.9331,
+    -77.03666,
+    38.98714
+   ],
+   "center": [
+    38.985418,
+    -77.047285
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "id": "US-0656+US-4567@river@38.962,-77.046",
+   "kind": "river",
+   "len_m": 28995,
+   "map_dates": {
+    "US-0656": "downloaded 2026-10-29",
+    "US-4567": "official line (trails bot)",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "names": {
+    "US-0656": "Rock Creek Park",
+    "US-4567": "Captain John Smith Chesapeake National Historic Trail"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go",
+    "restricted access (PAD-US): check the agency rules"
+   ],
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-0656": true,
+    "US-4567": true
+   },
+   "refs": [
+    "US-0656",
+    "US-4567"
+   ],
+   "shape": [
+    [
+     -77.03666,
+     38.964933
+    ],
+    [
+     -77.037636,
+     38.964029
+    ],
+    [
+     -77.03845,
+     38.963215
+    ],
+    [
+     -77.03972,
+     38.96231
+    ],
+    [
+     -77.041568,
+     38.961722
+    ],
+    [
+     -77.041678,
+     38.960999
+    ],
+    [
+     -77.040644,
+     38.960049
+    ],
+    [
+     -77.040644,
+     38.9591
+    ],
+    [
+     -77.041106,
+     38.958422
+    ],
+    [
+     -77.041909,
+     38.958105
+    ],
+    [
+     -77.042082,
+     38.957879
+    ],
+    [
+     -77.04203,
+     38.957608
+    ],
+    [
+     -77.04214,
+     38.956206
+    ],
+    [
+     -77.041909,
+     38.954533
+    ],
+    [
+     -77.042544,
+     38.954171
+    ],
+    [
+     -77.044681,
+     38.951865
+    ],
+    [
+     -77.045086,
+     38.95087
+    ],
+    [
+     -77.04642,
+     38.950011
+    ],
+    [
+     -77.046708,
+     38.949106
+    ],
+    [
+     -77.045727,
+     38.94784
+    ],
+    [
+     -77.045207,
+     38.948021
+    ],
+    [
+     -77.044745,
+     38.9487
+    ],
+    [
+     -77.043988,
+     38.948473
+    ],
+    [
+     -77.043879,
+     38.947931
+    ],
+    [
+     -77.045143,
+     38.94671
+    ],
+    [
+     -77.045958,
+     38.945308
+    ],
+    [
+     -77.047806,
+     38.945534
+    ],
+    [
+     -77.049249,
+     38.944087
+    ],
+    [
+     -77.049885,
+     38.943364
+    ],
+    [
+     -77.050688,
+     38.942188
+    ],
+    [
+     -77.050976,
+     38.940334
+    ],
+    [
+     -77.051508,
+     38.939204
+    ],
+    [
+     -77.0519,
+     38.937847
+    ],
+    [
+     -77.050225,
+     38.937259
+    ],
+    [
+     -77.048037,
+     38.937304
+    ],
+    [
+     -77.047684,
+     38.93536
+    ],
+    [
+     -77.045836,
+     38.935903
+    ],
+    [
+     -77.041216,
+     38.936355
+    ],
+    [
+     -77.039432,
+     38.937124
+    ],
+    [
+     -77.038277,
+     38.937666
+    ],
+    [
+     -77.040234,
+     38.936807
+    ],
+    [
+     -77.042435,
+     38.936174
+    ],
+    [
+     -77.045034,
+     38.936084
+    ],
+    [
+     -77.047401,
+     38.935179
+    ],
+    [
+     -77.048666,
+     38.93423
+    ],
+    [
+     -77.049249,
+     38.933687
+    ],
+    [
+     -77.050457,
+     38.933099
+    ],
+    [
+     -77.049833,
+     38.933099
+    ],
+    [
+     -77.04907,
+     38.933461
+    ],
+    [
+     -77.048377,
+     38.934094
+    ],
+    [
+     -77.046241,
+     38.93545
+    ],
+    [
+     -77.042833,
+     38.935812
+    ],
+    [
+     -77.040927,
+     38.935993
+    ],
+    [
+     -77.038739,
+     38.936897
+    ],
+    [
+     -77.037988,
+     38.937847
+    ],
+    [
+     -77.038508,
+     38.937983
+    ],
+    [
+     -77.040523,
+     38.937169
+    ],
+    [
+     -77.042666,
+     38.936536
+    ],
+    [
+     -77.045669,
+     38.9364
+    ],
+    [
+     -77.046362,
+     38.936129
+    ],
+    [
+     -77.047401,
+     38.936084
+    ],
+    [
+     -77.047863,
+     38.937531
+    ],
+    [
+     -77.050052,
+     38.937485
+    ],
+    [
+     -77.051612,
+     38.938073
+    ],
+    [
+     -77.051207,
+     38.939384
+    ],
+    [
+     -77.050867,
+     38.941012
+    ],
+    [
+     -77.049359,
+     38.943183
+    ],
+    [
+     -77.048094,
+     38.944539
+    ],
+    [
+     -77.04728,
+     38.945353
+    ],
+    [
+     -77.045779,
+     38.945082
+    ],
+    [
+     -77.044855,
+     38.946574
+    ],
+    [
+     -77.04359,
+     38.947795
+    ],
+    [
+     -77.043988,
+     38.948835
+    ],
+    [
+     -77.045034,
+     38.94888
+    ],
+    [
+     -77.045548,
+     38.948112
+    ],
+    [
+     -77.04642,
+     38.949242
+    ],
+    [
+     -77.04445,
+     38.951187
+    ],
+    [
+     -77.044052,
+     38.952317
+    ],
+    [
+     -77.04162,
+     38.954397
+    ],
+    [
+     -77.041799,
+     38.95607
+    ],
+    [
+     -77.040818,
+     38.958286
+    ],
+    [
+     -77.040234,
+     38.9591
+    ],
+    [
+     -77.040003,
+     38.959778
+    ],
+    [
+     -77.041337,
+     38.960456
+    ],
+    [
+     -77.041216,
+     38.961496
+    ],
+    [
+     -77.039143,
+     38.962446
+    ],
+    [
+     -77.038277,
+     38.962989
+    ],
+    [
+     -77.037295,
+     38.963893
+    ],
+    [
+     -77.03666,
+     38.964119
+    ]
+   ],
+   "status": "not sure: water not checked (the USGS water map did not answer for this river bank): run again",
+   "water_route": true,
+   "water_unchecked": true
+  },
+  {
+   "box": [
+    -77.04479,
+    38.88221,
+    -77.04116,
+    38.8847
+   ],
+   "center": [
+    38.883524,
+    -77.042829
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "id": "US-0776+US-4567@river@38.883,-77.043",
+   "kind": "river",
+   "len_m": 482,
+   "map_dates": {
+    "US-0776": "downloaded 2026-10-29",
+    "US-4567": "official line (trails bot)",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "names": {
+    "US-0776": "Franklin Delano Roosevelt National Memorial",
+    "US-4567": "Captain John Smith Chesapeake National Historic Trail"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go",
+    "restricted access (PAD-US): check the agency rules"
+   ],
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-0776": true,
+    "US-4567": true
+   },
+   "refs": [
+    "US-0776",
+    "US-4567"
+   ],
+   "shape": [
+    [
+     -77.04479,
+     38.8847
+    ],
+    [
+     -77.044502,
+     38.884293
+    ],
+    [
+     -77.043809,
+     38.883795
+    ],
+    [
+     -77.041905,
+     38.883072
+    ],
+    [
+     -77.041617,
+     38.882801
+    ],
+    [
+     -77.041386,
+     38.882213
+    ],
+    [
+     -77.041444,
+     38.882394
+    ],
+    [
+     -77.041155,
+     38.882529
+    ],
+    [
+     -77.041328,
+     38.882936
+    ],
+    [
+     -77.041675,
+     38.883253
+    ],
+    [
+     -77.04329,
+     38.883841
+    ],
+    [
+     -77.04404,
+     38.884293
+    ],
+    [
+     -77.044213,
+     38.884202
+    ]
+   ],
+   "status": "not sure: water not checked (the USGS water map did not answer for this river bank): run again",
+   "water_route": true,
+   "water_unchecked": true
+  },
+  {
+   "box": [
+    -77.08545,
+    38.85075,
+    -77.00985,
+    38.92518
+   ],
+   "center": [
+    38.887961,
+    -77.047649
+   ],
+   "found": "2026-10-29",
+   "id": "US-0780+US-4567@river@38.888,-77.047",
+   "kind": "river",
+   "len_m": 0,
+   "passes": [
+    1,
+    1,
+    0
+   ],
+   "refs": [
+    "US-0780",
+    "US-4567"
+   ],
+   "shape": [
+    [
+     -77.08544578465101,
+     38.85074616275074
+    ],
+    [
+     -77.0098531824698,
+     38.92517595637311
+    ]
+   ],
+   "status": "dropped in pass 3",
+   "water_route": true,
+   "water_unchecked": true
+  },
+  {
+   "box": [
+    -77.08825,
+    38.85147,
+    -77.01207,
+    38.92699
+   ],
+   "center": [
+    38.889228,
+    -77.050103
+   ],
+   "found": "2026-10-29",
+   "id": "US-0783+US-4567@river@38.889,-77.050",
+   "kind": "river",
+   "len_m": 0,
+   "passes": [
+    1,
+    1,
+    0
+   ],
+   "refs": [
+    "US-0783",
+    "US-4567"
+   ],
+   "shape": [
+    [
+     -77.08824579712838,
+     38.85147091667119
+    ],
+    [
+     -77.01207477967262,
+     38.92698595637311
+    ]
+   ],
+   "status": "dropped in pass 3",
+   "water_route": true,
+   "water_unchecked": true
+  },
+  {
+   "box": [
+    -77.05477,
+    38.87616,
+    -77.0501,
+    38.88081
+   ],
+   "center": [
+    38.87878,
+    -77.051946
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "id": "US-0784+US-4567@river@38.879,-77.052",
+   "kind": "river",
+   "len_m": 831,
+   "map_dates": {
+    "US-0784": "downloaded 2026-10-29",
+    "US-4567": "official line (trails bot)",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "names": {
+    "US-0784": "Lyndon Baines Johnson Memorial Grove on the Potomac National Memorial",
+    "US-4567": "Captain John Smith Chesapeake National Historic Trail"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go",
+    "restricted access (PAD-US): check the agency rules"
+   ],
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-0784": true,
+    "US-4567": true
+   },
+   "refs": [
+    "US-0784",
+    "US-4567"
+   ],
+   "shape": [
+    [
+     -77.054774,
+     38.880815
+    ],
+    [
+     -77.054716,
+     38.880498
+    ],
+    [
+     -77.053504,
+     38.879684
+    ],
+    [
+     -77.053389,
+     38.879775
+    ],
+    [
+     -77.052581,
+     38.879277
+    ],
+    [
+     -77.051831,
+     38.878192
+    ],
+    [
+     -77.050966,
+     38.877333
+    ],
+    [
+     -77.050331,
+     38.876157
+    ],
+    [
+     -77.0501,
+     38.876202
+    ],
+    [
+     -77.050331,
+     38.876926
+    ],
+    [
+     -77.050677,
+     38.877468
+    ],
+    [
+     -77.051716,
+     38.878463
+    ],
+    [
+     -77.051831,
+     38.878825
+    ],
+    [
+     -77.052985,
+     38.87991
+    ],
+    [
+     -77.053389,
+     38.880001
+    ]
+   ],
+   "status": "not sure: water not checked (the USGS water map did not answer for this river bank): run again",
+   "water_route": true,
+   "water_unchecked": true
+  },
+  {
+   "box": [
+    -77.0448,
+    38.885,
+    -77.04284,
+    38.88663
+   ],
+   "center": [
+    38.886177,
+    -77.043993
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "id": "US-0785+US-4567@river@38.886,-77.044",
+   "kind": "river",
+   "len_m": 208,
+   "map_dates": {
+    "US-0785": "downloaded 2026-10-29",
+    "US-4567": "official line (trails bot)",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "names": {
+    "US-0785": "Martin Luther King Jr. National Memorial",
+    "US-4567": "Captain John Smith Chesapeake National Historic Trail"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go",
+    "restricted access (PAD-US): check the agency rules"
+   ],
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-0785": true,
+    "US-4567": true
+   },
+   "refs": [
+    "US-0785",
+    "US-4567"
+   ],
+   "shape": [
+    [
+     -77.042839,
+     38.886629
+    ],
+    [
+     -77.043705,
+     38.886493
+    ],
+    [
+     -77.04457,
+     38.88595
+    ],
+    [
+     -77.044801,
+     38.885634
+    ],
+    [
+     -77.044801,
+     38.885001
+    ],
+    [
+     -77.044628,
+     38.885634
+    ],
+    [
+     -77.044109,
+     38.886041
+    ]
+   ],
+   "status": "not sure: water not checked (the USGS water map did not answer for this river bank): run again",
+   "water_route": true,
+   "water_unchecked": true
+  },
+  {
+   "box": [
+    -77.06654,
+    38.89017,
+    -77.05903,
+    38.89989
+   ],
+   "center": [
+    38.896005,
+    -77.059843
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "id": "US-0791+US-4567@river@38.895,-77.063",
+   "kind": "river",
+   "len_m": 3773,
+   "map_dates": {
+    "US-0791": "downloaded 2026-10-29",
+    "US-4567": "official line (trails bot)",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "names": {
+    "US-0791": "Theodore Roosevelt Island National Memorial",
+    "US-4567": "Captain John Smith Chesapeake National Historic Trail"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go",
+    "restricted access (PAD-US): check the agency rules"
+   ],
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-0791": true,
+    "US-4567": true
+   },
+   "refs": [
+    "US-0791",
+    "US-4567"
+   ],
+   "shape": [
+    [
+     -77.06648,
+     38.899713
+    ],
+    [
+     -77.066537,
+     38.899487
+    ],
+    [
+     -77.066364,
+     38.899397
+    ],
+    [
+     -77.066537,
+     38.899125
+    ],
+    [
+     -77.06648,
+     38.898583
+    ],
+    [
+     -77.065787,
+     38.89691
+    ],
+    [
+     -77.064575,
+     38.895417
+    ],
+    [
+     -77.064229,
+     38.895146
+    ],
+    [
+     -77.062729,
+     38.892523
+    ],
+    [
+     -77.062498,
+     38.892388
+    ],
+    [
+     -77.062094,
+     38.891212
+    ],
+    [
+     -77.061574,
+     38.890941
+    ],
+    [
+     -77.061286,
+     38.890986
+    ],
+    [
+     -77.060478,
+     38.892071
+    ],
+    [
+     -77.060478,
+     38.892342
+    ],
+    [
+     -77.060074,
+     38.892569
+    ],
+    [
+     -77.059843,
+     38.892478
+    ],
+    [
+     -77.059843,
+     38.892614
+    ],
+    [
+     -77.059439,
+     38.892885
+    ],
+    [
+     -77.059728,
+     38.893654
+    ],
+    [
+     -77.059612,
+     38.894061
+    ],
+    [
+     -77.059843,
+     38.89596
+    ],
+    [
+     -77.059843,
+     38.897181
+    ],
+    [
+     -77.060189,
+     38.898085
+    ],
+    [
+     -77.06094,
+     38.89899
+    ],
+    [
+     -77.061632,
+     38.899397
+    ],
+    [
+     -77.061921,
+     38.899397
+    ],
+    [
+     -77.062844,
+     38.899713
+    ],
+    [
+     -77.062959,
+     38.899894
+    ],
+    [
+     -77.063306,
+     38.899804
+    ],
+    [
+     -77.06371,
+     38.899849
+    ],
+    [
+     -77.063883,
+     38.899713
+    ],
+    [
+     -77.06521,
+     38.899804
+    ]
+   ],
+   "status": "not sure: water not checked (the USGS water map did not answer for this river bank): run again",
+   "water_route": true,
+   "water_unchecked": true
+  },
+  {
+   "box": [
+    -77.03995,
+    38.87998,
+    -77.03331,
+    38.88256
+   ],
+   "center": [
+    38.881742,
+    -77.037698
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "id": "US-0792+US-4567@river@38.881,-77.037",
+   "kind": "river",
+   "len_m": 899,
+   "map_dates": {
+    "US-0792": "downloaded 2026-10-29",
+    "US-4567": "official line (trails bot)",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "names": {
+    "US-0792": "Thomas Jefferson National Memorial",
+    "US-4567": "Captain John Smith Chesapeake National Historic Trail"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go",
+    "restricted access (PAD-US): check the agency rules"
+   ],
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-0792": true,
+    "US-4567": true
+   },
+   "refs": [
+    "US-0792",
+    "US-4567"
+   ],
+   "shape": [
+    [
+     -77.033313,
+     38.882556
+    ],
+    [
+     -77.033832,
+     38.882466
+    ],
+    [
+     -77.034698,
+     38.881878
+    ],
+    [
+     -77.035909,
+     38.882013
+    ],
+    [
+     -77.036371,
+     38.882194
+    ],
+    [
+     -77.037467,
+     38.882013
+    ],
+    [
+     -77.037756,
+     38.881787
+    ],
+    [
+     -77.038044,
+     38.880612
+    ],
+    [
+     -77.038506,
+     38.88034
+    ],
+    [
+     -77.039602,
+     38.880295
+    ],
+    [
+     -77.039948,
+     38.880069
+    ],
+    [
+     -77.03966,
+     38.879979
+    ],
+    [
+     -77.03839,
+     38.880114
+    ],
+    [
+     -77.038044,
+     38.88025
+    ],
+    [
+     -77.037698,
+     38.880566
+    ],
+    [
+     -77.037525,
+     38.881561
+    ],
+    [
+     -77.037294,
+     38.881787
+    ],
+    [
+     -77.036948,
+     38.881787
+    ],
+    [
+     -77.036429,
+     38.881968
+    ],
+    [
+     -77.035275,
+     38.881652
+    ],
+    [
+     -77.034525,
+     38.881652
+    ],
+    [
+     -77.033428,
+     38.88233
+    ]
+   ],
+   "status": "not sure: water not checked (the USGS water map did not answer for this river bank): run again",
+   "water_route": true,
+   "water_unchecked": true
+  },
+  {
+   "box": [
+    -77.08555,
+    38.85356,
+    -77.0096,
+    38.92827
+   ],
+   "center": [
+    38.89087,
+    -77.047517
+   ],
+   "found": "2026-10-29",
+   "id": "US-0793+US-4567@river@38.891,-77.047",
+   "kind": "river",
+   "len_m": 0,
+   "passes": [
+    1,
+    1,
+    0
+   ],
+   "refs": [
+    "US-0793",
+    "US-4567"
+   ],
+   "shape": [
+    [
+     -77.08554581335989,
+     38.85356485123085
+    ],
+    [
+     -77.00960383711369,
+     38.92826595637311
+    ]
+   ],
+   "status": "dropped in pass 3",
+   "water_route": true,
+   "water_unchecked": true
+  },
+  {
+   "box": [
+    -77.03899,
+    38.88264,
+    -77.03195,
+    38.88815
+   ],
+   "center": [
+    38.885167,
+    -77.036219
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "id": "US-0794+US-4567@river@38.887,-77.035",
+   "kind": "river",
+   "len_m": 1212,
+   "map_dates": {
+    "US-0794": "downloaded 2026-10-29",
+    "US-4567": "official line (trails bot)",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "names": {
+    "US-0794": "Washington Monument National Memorial",
+    "US-4567": "Captain John Smith Chesapeake National Historic Trail"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go",
+    "restricted access (PAD-US): check the agency rules"
+   ],
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-0794": true,
+    "US-4567": true
+   },
+   "refs": [
+    "US-0794",
+    "US-4567"
+   ],
+   "shape": [
+    [
+     -77.038989,
+     38.888152
+    ],
+    [
+     -77.0387,
+     38.888016
+    ],
+    [
+     -77.038642,
+     38.887835
+    ],
+    [
+     -77.037719,
+     38.887473
+    ],
+    [
+     -77.037719,
+     38.887202
+    ],
+    [
+     -77.038008,
+     38.887021
+    ],
+    [
+     -77.038065,
+     38.88684
+    ],
+    [
+     -77.036969,
+     38.886072
+    ],
+    [
+     -77.036565,
+     38.885212
+    ],
+    [
+     -77.036219,
+     38.884986
+    ],
+    [
+     -77.035122,
+     38.884986
+    ],
+    [
+     -77.034372,
+     38.884715
+    ],
+    [
+     -77.033622,
+     38.884082
+    ],
+    [
+     -77.033045,
+     38.882997
+    ],
+    [
+     -77.032237,
+     38.882635
+    ],
+    [
+     -77.031949,
+     38.882906
+    ],
+    [
+     -77.032237,
+     38.882906
+    ],
+    [
+     -77.032757,
+     38.883132
+    ],
+    [
+     -77.033334,
+     38.884218
+    ],
+    [
+     -77.034199,
+     38.884941
+    ],
+    [
+     -77.034719,
+     38.885167
+    ],
+    [
+     -77.036046,
+     38.885212
+    ],
+    [
+     -77.036277,
+     38.885348
+    ],
+    [
+     -77.03668,
+     38.886207
+    ],
+    [
+     -77.037315,
+     38.88675
+    ],
+    [
+     -77.037661,
+     38.886885
+    ],
+    [
+     -77.037373,
+     38.887202
+    ],
+    [
+     -77.037431,
+     38.887609
+    ],
+    [
+     -77.037835,
+     38.88788
+    ],
+    [
+     -77.038642,
+     38.888152
+    ]
+   ],
+   "status": "not sure: water not checked (the USGS water map did not answer for this river bank): run again",
+   "water_route": true,
+   "water_unchecked": true
+  },
+  {
    "access": null,
-   "access_pin": null,
+   "access_pin": {
+    "at": [
+     38.896308,
+     -77.033425
+    ],
+    "from": "road",
+    "name": "Alexander Hamilton Pl NW",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 5
+   },
    "box": [
     -77.04119,
     38.88773,
@@ -19,7 +1476,7 @@
     -77.040352
    ],
    "checked": "2026-10-29",
-   "found": "2026-10-28",
+   "found": "2026-10-29",
    "id": "US-0795+US-0796@same land@38.890,-77.040",
    "kind": "same land",
    "label": "Same land, two park numbers",
@@ -67,6 +1524,840 @@
     ]
    ],
    "status": "candidate"
+  },
+  {
+   "box": [
+    -77.07055,
+    38.85874,
+    -76.99506,
+    38.93317
+   ],
+   "center": [
+    38.895951,
+    -77.032745
+   ],
+   "found": "2026-10-29",
+   "id": "US-0795+US-4567@river@38.896,-77.033",
+   "kind": "river",
+   "len_m": 0,
+   "passes": [
+    1,
+    1,
+    0
+   ],
+   "refs": [
+    "US-0795",
+    "US-4567"
+   ],
+   "shape": [
+    [
+     -77.07054586245255,
+     38.85873616275074
+    ],
+    [
+     -76.9950601884574,
+     38.93316595637311
+    ]
+   ],
+   "status": "dropped in pass 3",
+   "water_route": true,
+   "water_unchecked": true
+  },
+  {
+   "box": [
+    -77.04114,
+    38.88769,
+    -77.03998,
+    38.89041
+   ],
+   "center": [
+    38.890359,
+    -77.041137
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "id": "US-0796+US-4567@river@38.892,-77.037",
+   "kind": "river",
+   "len_m": 190,
+   "map_dates": {
+    "US-0796": "downloaded 2026-10-29",
+    "US-4567": "official line (trails bot)",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "names": {
+    "US-0796": "World War II National Memorial",
+    "US-4567": "Captain John Smith Chesapeake National Historic Trail"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go",
+    "restricted access (PAD-US): check the agency rules"
+   ],
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-0796": true,
+    "US-4567": true
+   },
+   "refs": [
+    "US-0796",
+    "US-4567"
+   ],
+   "shape": [
+    [
+     -77.041137,
+     38.889907
+    ],
+    [
+     -77.041021,
+     38.889862
+    ],
+    [
+     -77.040964,
+     38.888867
+    ],
+    [
+     -77.040733,
+     38.889093
+    ],
+    [
+     -77.04079,
+     38.889772
+    ]
+   ],
+   "status": "not sure: water not checked (the USGS water map did not answer for this river bank): run again",
+   "water_route": true,
+   "water_unchecked": true
+  },
+  {
+   "box": [
+    -77.06157,
+    38.87384,
+    -76.98699,
+    38.94782
+   ],
+   "center": [
+    38.910782,
+    -77.024219
+   ],
+   "found": "2026-10-29",
+   "id": "US-0805+US-4567@river@38.911,-77.024",
+   "kind": "river",
+   "len_m": 0,
+   "passes": [
+    1,
+    1,
+    0
+   ],
+   "refs": [
+    "US-0805",
+    "US-4567"
+   ],
+   "shape": [
+    [
+     -77.06156600790145,
+     38.87383834861721
+    ],
+    [
+     -76.98698804606806,
+     38.947815956373105
+    ]
+   ],
+   "status": "dropped in pass 3",
+   "water_route": true,
+   "water_unchecked": true
+  },
+  {
+   "box": [
+    -77.06351,
+    38.85954,
+    -76.98825,
+    38.9337
+   ],
+   "center": [
+    38.896571,
+    -77.02582
+   ],
+   "found": "2026-10-29",
+   "id": "US-0814+US-4567@river@38.897,-77.026",
+   "kind": "river",
+   "len_m": 0,
+   "passes": [
+    1,
+    1,
+    0
+   ],
+   "refs": [
+    "US-0814",
+    "US-4567"
+   ],
+   "shape": [
+    [
+     -77.06350586927873,
+     38.859537474270624
+    ],
+    [
+     -76.98825029654611,
+     38.93369595637311
+    ]
+   ],
+   "status": "dropped in pass 3",
+   "water_route": true,
+   "water_unchecked": true
+  },
+  {
+   "box": [
+    -77.02325,
+    38.82457,
+    -76.94687,
+    38.90099
+   ],
+   "center": [
+    38.862776,
+    -76.985001
+   ],
+   "found": "2026-10-29",
+   "id": "US-0825+US-4567@river@38.863,-76.985",
+   "kind": "river",
+   "len_m": 0,
+   "passes": [
+    1,
+    1,
+    0
+   ],
+   "refs": [
+    "US-0825",
+    "US-4567"
+   ],
+   "shape": [
+    [
+     -77.02324553940822,
+     38.82456654493823
+    ],
+    [
+     -76.94687213581273,
+     38.900985956373106
+    ]
+   ],
+   "status": "dropped in pass 3",
+   "water_route": true,
+   "water_unchecked": true
+  },
+  {
+   "box": [
+    -77.06824,
+    38.87114,
+    -76.99366,
+    38.94512
+   ],
+   "center": [
+    38.908082,
+    -77.030891
+   ],
+   "found": "2026-10-29",
+   "id": "US-0848+US-4567@river@38.908,-77.031",
+   "kind": "river",
+   "len_m": 0,
+   "passes": [
+    1,
+    1,
+    0
+   ],
+   "refs": [
+    "US-0848",
+    "US-4567"
+   ],
+   "shape": [
+    [
+     -77.06823598145704,
+     38.871138348617215
+    ],
+    [
+     -76.99366086680573,
+     38.94511595637311
+    ]
+   ],
+   "status": "dropped in pass 3",
+   "water_route": true,
+   "water_unchecked": true
+  },
+  {
+   "box": [
+    -77.07056,
+    38.85431,
+    -76.97822,
+    38.93363
+   ],
+   "center": [
+    38.893969,
+    -77.024331
+   ],
+   "found": "2026-10-29",
+   "id": "US-0853+US-4567@river@38.894,-77.024",
+   "kind": "river",
+   "len_m": 0,
+   "passes": [
+    1,
+    1,
+    0
+   ],
+   "refs": [
+    "US-0853",
+    "US-4567"
+   ],
+   "shape": [
+    [
+     -77.07055584329179,
+     38.85431255539277
+    ],
+    [
+     -76.97822118216423,
+     38.933625956373106
+    ]
+   ],
+   "status": "dropped in pass 3",
+   "water_route": true,
+   "water_unchecked": true
+  },
+  {
+   "box": [
+    -76.95019,
+    38.91522,
+    -76.94615,
+    38.91703
+   ],
+   "center": [
+    38.916671,
+    -76.950014
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "id": "US-13543+US-4567@river@38.912,-76.961",
+   "kind": "river",
+   "len_m": 167,
+   "map_dates": {
+    "US-13543": "downloaded 2026-10-29",
+    "US-4567": "official line (trails bot)"
+   },
+   "names": {
+    "US-13543": "US National Arboretum Botanical Gardens",
+    "US-4567": "Captain John Smith Chesapeake National Historic Trail"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-13543": false,
+    "US-4567": true
+   },
+   "refs": [
+    "US-13543",
+    "US-4567"
+   ],
+   "shape": [
+    [
+     -76.946147,
+     38.915631
+    ],
+    [
+     -76.947186,
+     38.915314
+    ],
+    [
+     -76.95013,
+     38.915224
+    ],
+    [
+     -76.947417,
+     38.915224
+    ],
+    [
+     -76.946897,
+     38.915314
+    ]
+   ],
+   "status": "not sure: water not checked (the USGS water map did not answer for this river bank): run again",
+   "water_route": true,
+   "water_unchecked": true
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     38.911071,
+     -76.954981
+    ],
+    "from": "road",
+    "name": "Hicky Hill Rd NE",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 143
+   },
+   "box": [
+    -76.95496,
+    38.91046,
+    -76.95443,
+    38.91192
+   ],
+   "center": [
+    38.910482,
+    -76.95495
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "ground": [
+    "federal"
+   ],
+   "id": "US-13543+US-4567@trail@38.910,-76.955",
+   "kind": "trail",
+   "len_m": 163,
+   "line_source": {
+    "US-4567": {
+     "by": "National Park Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4567.json",
+     "note": "approximate line (national historic trail, about 1:100,000)"
+    }
+   },
+   "map_dates": {
+    "US-13543": "downloaded 2026-10-29",
+    "US-4567": "official line (trails bot)"
+   },
+   "maps": [
+    [
+     "US-13543",
+     "https://www.usna.usda.gov/visit/rules-and-guidelines/"
+    ],
+    [
+     "US-4567",
+     "https://www.nps.gov/cajo/planyourvisit/upload/2024_993-082-DOI-NPS-CAJO-Unigrid-508-2.pdf"
+    ]
+   ],
+   "names": {
+    "US-13543": "US National Arboretum Botanical Gardens",
+    "US-4567": "Captain John Smith Chesapeake National Historic Trail"
+   },
+   "note": "approximate line: Captain John Smith Chesapeake National Historic Trail",
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (federal)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-13543": false,
+    "US-4567": true
+   },
+   "refs": [
+    "US-13543",
+    "US-4567"
+   ],
+   "shape": [
+    [
+     -76.954926,
+     38.910547
+    ],
+    [
+     -76.954919,
+     38.910569
+    ],
+    [
+     -76.954911,
+     38.910591
+    ],
+    [
+     -76.954903,
+     38.910613
+    ],
+    [
+     -76.954895,
+     38.910635
+    ],
+    [
+     -76.954887,
+     38.910656
+    ],
+    [
+     -76.954879,
+     38.910678
+    ],
+    [
+     -76.954871,
+     38.9107
+    ],
+    [
+     -76.954863,
+     38.910722
+    ],
+    [
+     -76.954855,
+     38.910743
+    ],
+    [
+     -76.954847,
+     38.910765
+    ],
+    [
+     -76.954839,
+     38.910787
+    ],
+    [
+     -76.954831,
+     38.910809
+    ],
+    [
+     -76.954823,
+     38.910831
+    ],
+    [
+     -76.954815,
+     38.910852
+    ],
+    [
+     -76.954807,
+     38.910874
+    ],
+    [
+     -76.954799,
+     38.910896
+    ],
+    [
+     -76.954792,
+     38.910918
+    ],
+    [
+     -76.954784,
+     38.91094
+    ],
+    [
+     -76.954776,
+     38.910961
+    ],
+    [
+     -76.954768,
+     38.910983
+    ],
+    [
+     -76.95476,
+     38.911005
+    ],
+    [
+     -76.954752,
+     38.911027
+    ],
+    [
+     -76.954744,
+     38.911049
+    ],
+    [
+     -76.954736,
+     38.91107
+    ],
+    [
+     -76.954728,
+     38.911092
+    ],
+    [
+     -76.95472,
+     38.911114
+    ],
+    [
+     -76.954712,
+     38.911136
+    ],
+    [
+     -76.954704,
+     38.911158
+    ],
+    [
+     -76.954696,
+     38.911179
+    ],
+    [
+     -76.954688,
+     38.911201
+    ],
+    [
+     -76.95468,
+     38.911223
+    ],
+    [
+     -76.954672,
+     38.911245
+    ],
+    [
+     -76.954665,
+     38.911267
+    ],
+    [
+     -76.954657,
+     38.911288
+    ],
+    [
+     -76.954649,
+     38.91131
+    ],
+    [
+     -76.954641,
+     38.911332
+    ],
+    [
+     -76.954633,
+     38.911354
+    ],
+    [
+     -76.954625,
+     38.911376
+    ],
+    [
+     -76.954617,
+     38.911397
+    ],
+    [
+     -76.954609,
+     38.911419
+    ],
+    [
+     -76.954601,
+     38.911441
+    ],
+    [
+     -76.954593,
+     38.911463
+    ],
+    [
+     -76.954585,
+     38.911484
+    ],
+    [
+     -76.954577,
+     38.911506
+    ],
+    [
+     -76.954569,
+     38.911528
+    ],
+    [
+     -76.954561,
+     38.91155
+    ],
+    [
+     -76.954553,
+     38.911572
+    ],
+    [
+     -76.954545,
+     38.911593
+    ],
+    [
+     -76.954538,
+     38.911615
+    ],
+    [
+     -76.95453,
+     38.911637
+    ],
+    [
+     -76.954522,
+     38.911659
+    ],
+    [
+     -76.954514,
+     38.911681
+    ],
+    [
+     -76.954506,
+     38.911702
+    ],
+    [
+     -76.954498,
+     38.911724
+    ],
+    [
+     -76.95449,
+     38.911746
+    ],
+    [
+     -76.954482,
+     38.911768
+    ],
+    [
+     -76.954474,
+     38.91179
+    ],
+    [
+     -76.954466,
+     38.911811
+    ],
+    [
+     -76.954458,
+     38.911833
+    ],
+    [
+     -76.95445,
+     38.911855
+    ],
+    [
+     -76.954442,
+     38.911877
+    ],
+    [
+     -76.954434,
+     38.911899
+    ],
+    [
+     -76.954426,
+     38.91192
+    ]
+   ],
+   "status": "merged into one row: US-13543+US-4567@trail@38.915,-76.947",
+   "zone": [],
+   "zone_acres": 0.15,
+   "zone_read": "2026-10-29",
+   "zone_wide_m": 10.0
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     38.911053,
+     -76.954979
+    ],
+    "from": "road",
+    "name": "Hicky Hill Rd NE",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 146
+   },
+   "box": [
+    -76.95496,
+    38.91046,
+    -76.94566,
+    38.91552
+   ],
+   "center": [
+    38.91524,
+    -76.947031
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "ground": [
+    "federal"
+   ],
+   "id": "US-13543+US-4567@trail@38.915,-76.947",
+   "kind": "trail",
+   "len_m": 394,
+   "len_main": 231,
+   "line_source": {
+    "US-4567": {
+     "by": "National Park Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4567.json",
+     "note": "approximate line (national historic trail, about 1:100,000)"
+    }
+   },
+   "map_dates": {
+    "US-13543": "downloaded 2026-10-29",
+    "US-4567": "official line (trails bot)"
+   },
+   "maps": [
+    [
+     "US-13543",
+     "https://www.usna.usda.gov/visit/rules-and-guidelines/"
+    ],
+    [
+     "US-4567",
+     "https://www.nps.gov/cajo/planyourvisit/upload/2024_993-082-DOI-NPS-CAJO-Unigrid-508-2.pdf"
+    ]
+   ],
+   "names": {
+    "US-13543": "US National Arboretum Botanical Gardens",
+    "US-4567": "Captain John Smith Chesapeake National Historic Trail"
+   },
+   "note": "approximate line: Captain John Smith Chesapeake National Historic Trail",
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (federal)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins": [
+    {
+     "at": [
+      38.911071,
+      -76.954981
+     ],
+     "from": "road",
+     "name": "Hicky Hill Rd NE",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 143
+    },
+    {
+     "at": [
+      38.911053,
+      -76.954979
+     ],
+     "from": "road",
+     "name": "Hicky Hill Rd NE",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 146
+    }
+   ],
+   "pins_inside": {
+    "US-13543": false,
+    "US-4567": true
+   },
+   "refs": [
+    "US-13543",
+    "US-4567"
+   ],
+   "shape": [
+    [
+     -76.948319,
+     38.914975
+    ],
+    [
+     -76.945773,
+     38.9155
+    ]
+   ],
+   "status": "candidate",
+   "stretches": 2,
+   "strip_wide_m": 20.0,
+   "zone": [
+    [
+     [
+      -76.945811,
+      38.915723
+     ],
+     [
+      -76.946965,
+      38.915362
+     ],
+     [
+      -76.948351,
+      38.915226
+     ],
+     [
+      -76.947254,
+      38.915226
+     ]
+    ]
+   ],
+   "zone_acres": 0.61,
+   "zone_read": "2026-10-29",
+   "zone_wide_m": 20.0
   }
  ],
  "st": "US-DC"

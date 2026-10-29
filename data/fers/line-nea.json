@@ -1,0 +1,112 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "nea",
+ "states": [
+  "US-PA",
+  "US-NJ",
+  "US-DE",
+  "US-MD",
+  "US-DC"
+ ],
+ "since": "2026-10-29",
+ "date": "2026-10-29 02:45 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
+ "known_answers": "18/18 on 2026-10-29",
+ "missing_check": {
+  "FOUND": 178,
+  "DROPPED": 757,
+  "NEVER LOOKED AT": 5559
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-29",
+   "pairs tested": 2226,
+   "pairs whose boxes touch": 2226
+  },
+  "pass2": {
+   "agree with the pass before": 1135,
+   "date": "2026-10-29",
+   "pairs tested": 470
+  },
+  "pass3": {
+   "agree with the pass before": 540,
+   "date": "2026-10-29",
+   "pairs tested": 453
+  },
+  "pass5": {
+   "checked": 145,
+   "date": "2026-10-29",
+   "pairs tested": 0,
+   "still not checked": 8
+  }
+ },
+ "files": {
+  "US-PA": "data/fers/US-PA.json",
+  "US-NJ": "data/fers/US-NJ.json",
+  "US-DE": "data/fers/US-DE.json",
+  "US-MD": "data/fers/US-MD.json",
+  "US-DC": "data/fers/US-DC.json"
+ },
+ "US-PA": {
+  "rows": 653,
+  "live": 73,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "water not checked": 6
+  },
+  "dropped": 429,
+  "merged": 145
+ },
+ "water_weak": {
+  "US-PA": 6,
+  "US-DE": 43,
+  "US-MD": 31,
+  "US-DC": 10
+ },
+ "US-NJ": {
+  "rows": 170,
+  "live": 31,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 86,
+  "merged": 53
+ },
+ "US-DE": {
+  "rows": 272,
+  "live": 36,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "no public owner on the ownership map": 3,
+   "water not checked": 43
+  },
+  "dropped": 105,
+  "merged": 85
+ },
+ "US-MD": {
+  "rows": 263,
+  "live": 48,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "water not checked": 31,
+   "no public owner on the ownership map": 1
+  },
+  "dropped": 112,
+  "merged": 71
+ },
+ "US-DC": {
+  "rows": 23,
+  "live": 2,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "water not checked": 10
+  },
+  "dropped": 10,
+  "merged": 1
+ }
+}
