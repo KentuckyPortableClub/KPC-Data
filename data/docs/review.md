@@ -5,9 +5,9 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 
 | area | parks | map ok | found by the bot | names the park | date on the map | posted only | date unknown | no map | rules ok | needs browser | handover notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| US-KY | 193 | 148 | 6 | 142 | 41 | 100 | 7 | 45 | 20 | 0 | 0 |
+| US-KY | 193 | 150 | 6 | 144 | 41 | 100 | 9 | 43 | 21 | 0 | 0 |
 | US-TN | 277 | 25 | 12 | 24 | 1 | 16 | 8 | 252 | 26 | 175 | 0 |
-| US-NC | 253 | 122 | 81 | 108 | 76 | 37 | 9 | 131 | 55 | 2 | 0 |
+| US-NC | 253 | 119 | 78 | 108 | 76 | 34 | 9 | 134 | 55 | 5 | 0 |
 | US-VA | 184 | 111 | 70 | 106 | 26 | 72 | 13 | 73 | 51 | 0 | 0 |
 | US-WV | 172 | 135 | 55 | 120 | 7 | 120 | 8 | 37 | 35 | 1 | 0 |
 | US-GA | 237 | 140 | 94 | 124 | 16 | 83 | 41 | 97 | 51 | 59 | 0 |
@@ -62,18 +62,18 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-1256 | Fort Boonesborough State Park | https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map44579b | pdf ✓name · combined map: covers 3 units · same government (kentuckytourism.com) | 2025 (the PDF file's own stamp (may be the print da) · posted May 20, 2026 | https://parks.ky.gov/park-rules ✗ |  |
 | US-1275 | Buckhorn Lake State Park | https://www.kentuckytourism.com/media/docs/default-source/listing-documents/map58f2dd46-f5 | pdf ✓name · combined map: covers 2 units · same government (kentuckytourism.com) | 2026 (the PDF file's own stamp (may be the print da) · posted Oct 02, 2026 | https://parks.ky.gov/park-rules ✗ |  |
 | US-1258 | Grayson Lake State Park | https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map0b6523 | pdf ✓name · combined map: covers 2 units · same government (kentuckytourism.com) | 2022 (file stamp 2022 (older than the posting 2026 ) · posted May 20, 2026 | https://parks.ky.gov/park-rules ✗ |  |
-| US-1255 | Fishtrap Lake Wildlife Management Area | https://fw.ky.gov/More/Documents/FishtrapLakeWMA_All.pdf | pdf ✓name · linked from the agency page (fw.ky.gov) | date unknown (date unknown, checked 2026-10-29) · posted May 06, 2026 |  ✗ |  |
-| US-10131 | Gabbard Branch Wildlife Management Area | https://fw.ky.gov/More/Documents/GabbardBranchWMA_All.pdf | pdf ✓name · linked from the agency page (fw.ky.gov) | date unknown (date unknown, checked 2026-10-29) · posted Mar 28, 2023 |  ✗ |  |
+| US-12083 | University of the Cumberlands Wildlife M | https://fw.ky.gov/More/Documents/University%20of%20the%20Cumberlands%20WMAAll.pdf | pdf ✓name · same government (fw.ky.gov) | date unknown (date unknown, checked 2026-10-29) · posted Dec 13, 2024 |  ✗ |  |
+| US-10128 | Ferguson Creek Wildlife Management Area | https://fw.ky.gov/More/Documents/FergusonCreekWMA_All.pdf | pdf ✓name · linked from the agency page (fw.ky.gov) | date unknown (date unknown, checked 2026-10-29) · posted Mar 28, 2023 |  ✗ |  |
+| US-3818 | Jones-Keeney Wildlife Management Area | https://fw.ky.gov/More/Documents/Jones-KeeneyWMA_All.pdf | pdf ✓name · combined map: covers 2 units · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Jan 31, 2017 | https://fw.ky.gov/Hunt/Pages/Public-Hunting-Areas.aspx ✗ |  |
+| US-3793 | Ballard Wildlife Management Area | https://fw.ky.gov/More/Documents/BallardWMA_All.pdf | pdf ✓name · linked from the agency page (fw.ky.gov) | date unknown (date unknown, checked 2026-10-29) · posted Sep 21, 2022 |  ✗ |  |
+| US-10140 | Kentucky Lake Wildlife Management Area | https://fw.ky.gov/More/Documents/KentuckyLakeWMA_ALL.pdf | pdf ✓name · linked from the agency page (fw.ky.gov) | date unknown (date unknown, checked 2026-10-29) · posted Nov 22, 2016 |  ✗ |  |
+| US-10148 | Mud Camp Creek Wildlife Management Area | https://fw.ky.gov/More/Documents/MudCreekCampWMA_All.pdf | pdf ✓name · linked from the agency page (fw.ky.gov) | date unknown (date unknown, checked 2026-10-29) · posted Nov 18, 2016 |  ✗ |  |
 | US-3819 | Kaler Bottoms Wildlife Management Area | https://fw.ky.gov/More/Documents/KalerBottomsWMA_All.pdf | pdf ✓name · linked from the agency page (fw.ky.gov) | date unknown (date unknown, checked 2026-10-29) · posted Jan 16, 2018 |  ✗ |  |
-| US-3794 | Beaver Creek Wildlife Management Area | https://fw.ky.gov/More/Documents/BeaverCreekWMA_ALL.pdf | pdf ✓name · linked from the agency page (fw.ky.gov) | date unknown (date unknown, checked 2026-10-29) · posted Nov 09, 2018 |  ✗ |  |
-| US-10141 | Kentucky Ridge Wildlife Management Area | https://fw.ky.gov/More/Documents/KentuckyRidgeForestWMA_ALL.pdf | pdf ✓name · linked from the agency page (fw.ky.gov) | date unknown (date unknown, checked 2026-10-29) · posted Mar 27, 2020 |  ✗ |  |
-| US-10153 | Old Trace Creek Wildlife Management Area | https://fw.ky.gov/More/Documents/Old_Trace_Creek_WMA_all.pdf | pdf ✓name · linked from the agency page (fw.ky.gov) | date unknown (date unknown, checked 2026-10-29) · posted Mar 23, 2022 |  ✗ |  |
-| US-3820 | Kentucky River Wildlife Management Area | https://fw.ky.gov/More/Documents/KentuckyRiverWMA_All.pdf | pdf ✓name · linked from the agency page (fw.ky.gov) | date unknown (date unknown, checked 2026-10-29) · posted May 18, 2018 |  ✗ |  |
-| US-3806 | Dennis-Gray Wildlife Management Area | https://fw.ky.gov/More/Documents/Dennis-GrayWMA_ALL.pdf | pdf ✓name · combined map: covers 3 units · linked from the agency page (fw.ky.gov) | 2016: check it is still current (printed on the map) · posted Nov 10, 2016 |  ✗ |  |
-| US-10159 | Redbird Wildlife Management Area | https://fw.ky.gov/More/Documents/RedbirdWMA_ALL.pdf | pdf ✓name · linked from the agency page (fw.ky.gov) | date unknown (date unknown, checked 2026-10-29) · posted Sep 03, 2026 |  ✗ |  |
-| US-11274 | Horse Mill Branch Wildlife Management Ar | https://fw.ky.gov/More/Documents/Horse_Mill_branch_WMAmap_ALL.pdf | pdf ✓name · linked from the agency page (fw.ky.gov) | date unknown (date unknown, checked 2026-10-29) · posted Apr 01, 2024 |  ✗ |  |
-| US-3832 | Stone Mountain Wildlife Management Area | https://fw.ky.gov/More/Documents/StoneMountainWMAandStateNaturalArea_ALL.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted May 02, 2019 | https://fw.ky.gov/Hunt/Pages/Public-Hunting-Areas.aspx ✗ |  |
-| US-3834 | Tradewater Wildlife Management Area | https://fw.ky.gov/More/Documents/PennyrileStateForestandTradewaterWMA_ALL.pdf | pdf ✓name · linked from the agency page (fw.ky.gov) | date unknown (date unknown, checked 2026-10-29) · posted Feb 13, 2024 |  ✗ |  |
+| US-3805 | Curtis Gates Lloyd Wildlife Management A | https://fw.ky.gov/More/Documents/CurtisGatesLloydWMA_ALL.pdf | pdf ✓name · linked from the agency page (fw.ky.gov) | date unknown (date unknown, checked 2026-10-29) · posted Jun 21, 2022 |  ✗ |  |
+| US-9756 | Decker Wildlife Management Area | https://fw.ky.gov/More/Documents/DeckerWMAmap_ALL.pdf | pdf ✓name · linked from the agency page (fw.ky.gov) | date unknown (date unknown, checked 2026-10-29) · posted Oct 04, 2023 |  ✗ |  |
+| US-10158 | Pioneer Weapons Wildlife Management Area | https://fw.ky.gov/More/Documents/PioneerWeaponsWMA_ALL.pdf | pdf ✓name · linked from the agency page (fw.ky.gov) | date unknown (date unknown, checked 2026-10-29) · posted Dec 03, 2018 |  ✗ |  |
+| US-10167 | Simon Kenton Wildlife Management Area | https://fw.ky.gov/More/Documents/SimonKentonWMA_all.pdf | pdf ✓name · linked from the agency page (fw.ky.gov) | date unknown (date unknown, checked 2026-10-29) · posted Apr 12, 2019 |  ✗ |  |
+| US-3831 | South Shore Wildlife Management Area | https://fw.ky.gov/More/Documents/SouthShoreWMA_ALL.pdf | pdf ✓name · combined map: covers 2 units · the agency site | 2016: check it is still current (printed on the map) · posted Nov 18, 2016 | https://fw.ky.gov/Hunt/Pages/Public-Hunting-Areas.aspx ✗ |  |
 | US-10173 | Kentucky Horse Park | https://kyhorsepark.com/park-information/park-maps/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — |  ✗ | operated by the Commonwealth of Kentucky |
 | US-3792 | Land Between the Lakes National Recreati | https://www.landbetweenthelakes.us/help-center/lbl-maps/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — |  ✗ |  |
 | US-1264 | Levi Jackson Wilderness Road State Park | https://levijacksonpark.com/maps-policies/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://levijacksonpark.com/maps-policies/ ✓ |  |
@@ -89,9 +89,9 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-7708 | Mill Springs Battlefield National Monume | https://www.nps.gov/misp/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted April 12, 2025 | https://www.nps.gov/misp/learn/management/lawsandpolicies.htm ✓ |  |
 | US-4526 | George Washington & Jefferson National F | https://www.fs.usda.gov/r08/gwj/maps-guides/motor-vehicle-use-map | page · forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted October 22, 2026 | https://www.fs.usda.gov/r08/gwj ✓ |  |
 | US-10104 | Red River National Wild and Scenic River | https://www.fs.usda.gov/r08/danielboone/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted October 5, 2026 | https://www.fs.usda.gov/r08/danielboone ✓ |  |
+| US-7954 | Blackacre State Nature Preserve | https://visitblackacre.org/nature-preserve/ | page ✓name · linked from the agency page (visitblacka | date unknown (date unknown, checked 2026-10-29) · posted — | https://visitblackacre.org/rules-for-kentucky-nature-preserves/ ✓ |  |
 
-### US-KY no map yet (45): the reason
-- US-10102 Pine Mountain State Trail: no working map link (tried: rest https://parks.ky.gov/parks/find-a-park/pine-mountain-state-scenic-trai)
+### US-KY no map yet (43): the reason
 - US-10103 The Cumberland River Wilderness Area: no map link on file and none on the park page
 - US-10105 The Green National Wild and Scenic River: no working map link (tried: HTTP 404 https://www.nps.gov/maca/planyourvisit/upload/Backcountry-Map-and-Guid)
 - US-10106 The Rockcastle National Wild and Scenic River: opened, a statewide map viewer, not this park's map (chat 8 F2) (needs browser: map page on the browser list (a download button may hide the file))
@@ -125,12 +125,13 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - US-3817 John C. Williams Wildlife Management Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://fw.ky.gov/More/Documents/JohnCWilliamsWMA_ALL.pdf)
 - US-3829 R. F. Tarter Wildlife Management Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://fw.ky.gov/More/Documents/RFTarterWMA_ALL.pdf)
 - US-4484 Daniel Boone National Forest: opened, a statewide map viewer, not this park's map (chat 8 F2) (needs browser: map page on the browser list (a download button may hide the file))
-- US-7954 Blackacre State Nature Preserve: no working map link (tried: HTTP 202 https://visitblackacre.org/nature-preserve/)
 - US-7955 Six Mile Island State Nature Preserve: no map link on file and none on the park page
 - US-7956 Beargrass Creek State Nature Preserve: no map link on file and none on the park page
 - US-7957 Hall-Hill/Vernon-Douglas State Nature Preserv: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://eec.ky.gov/Nature-Preserves/Brochures/VernonDouglasBrochure_bw)
 - US-7958 Kentucky River Palisades/Tom Dorman State Nat: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://eec.ky.gov/Nature-Preserves/Brochures/TomDormanBrochure_bw.pdf)
 - US-7960 Crooked Creek State Nature Preserve: no map link on file and none on the park page
+- US-7961 Jesse Stuart State Nature Preserve: no map link on file and none on the park page
+- US-7962 Little South Fork State Natural Area: no map link on file and none on the park page
 
 ### Kentucky FINDER check (seed hidden, 25 parks): the bot found the SAME map as the hand-checked answer for 13, another official map for 3, none for 9
 - US-0019 Cumberland Gap National Historical Park: answer https://www.nps.gov/cuga/planyourvisit/upload/CUGAmap1-3.pdf | bot https://www.nps.gov/cuga/planyourvisit/upload/CUGAmap1-3.pdf → same
@@ -291,23 +292,23 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-0797 | Wright Brothers National Memorial | https://www.nps.gov/wrbr/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted March 7, 2016 | https://www.nps.gov/wrbr/learn/management/lawsandpolicies.htm ✓ |  |
 | US-0706 | Moores Creek National Battlefield | https://www.nps.gov/mocr/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted May 20, 2026 | https://www.nps.gov/mocr/learn/management/lawsandpolicies.htm ✓ |  |
 | US-6855 | Tryon Palace State Historic Site | https://www.tryonpalace.org/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — |  ✗ |  |
-| US-4508 | Croatan National Forest | https://www.fs.usda.gov/r08/northcarolina/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted October 5, 2026 | https://www.fs.usda.gov/r08/northcarolina ✓ |  |
-| US-11020 | Middle Prong Wilderness Area | https://www.fs.usda.gov/r08/northcarolina/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted October 5, 2026 | https://www.fs.usda.gov/r08/northcarolina ✓ |  |
-| US-4511 | Uwharrie National Forest | https://www.fs.usda.gov/r08/northcarolina/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted October 5, 2026 | https://www.fs.usda.gov/r08/northcarolina ✓ |  |
-| US-4510 | Pisgah National Forest | https://www.fs.usda.gov/r08/northcarolina/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted October 5, 2026 | https://www.fs.usda.gov/r08/northcarolina ✓ |  |
-| US-11271 | Joyce Kilmer-Slickrock Wilderness Area | https://www.fs.usda.gov/r08/northcarolina/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted October 5, 2026 | https://www.fs.usda.gov/r08/northcarolina ✓ |  |
-| US-10262 | Linville Gorge Wilderness Area | https://www.fs.usda.gov/r08/northcarolina/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted October 5, 2026 | https://www.fs.usda.gov/r08/northcarolina ✓ |  |
-| US-4509 | Nantahala National Forest | https://www.fs.usda.gov/r08/northcarolina/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted October 5, 2026 | https://www.fs.usda.gov/r08/northcarolina ✓ |  |
-| US-10260 | Birkhead Mountains Wilderness Area | https://www.fs.usda.gov/r08/northcarolina/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted October 5, 2026 | https://www.fs.usda.gov/r08/northcarolina ✓ |  |
-| US-11019 | Shining Rock Wilderness Area | https://www.fs.usda.gov/r08/northcarolina/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted October 5, 2026 | https://www.fs.usda.gov/r08/northcarolina ✓ |  |
-| US-10397 | Southern Nantahala Wilderness Area | https://www.fs.usda.gov/r08/northcarolina/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted October 5, 2026 | https://www.fs.usda.gov/r08/northcarolina ✓ |  |
+| US-4508 | Croatan National Forest | https://www.fs.usda.gov/r08/northcarolina/maps-guides | page · forest map only; forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted October 5, 2026 | https://www.fs.usda.gov/r08/northcarolina ✓ |  |
+| US-11271 | Joyce Kilmer-Slickrock Wilderness Area | https://www.fs.usda.gov/r08/northcarolina/maps-guides | page · forest map only; forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted October 5, 2026 | https://www.fs.usda.gov/r08/northcarolina ✓ |  |
+| US-4511 | Uwharrie National Forest | https://www.fs.usda.gov/r08/northcarolina/maps-guides | page · forest map only; forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted October 5, 2026 | https://www.fs.usda.gov/r08/northcarolina ✓ |  |
+| US-11020 | Middle Prong Wilderness Area | https://www.fs.usda.gov/r08/northcarolina/maps-guides | page · forest map only; forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted October 5, 2026 | https://www.fs.usda.gov/r08/northcarolina ✓ |  |
+| US-11019 | Shining Rock Wilderness Area | https://www.fs.usda.gov/r08/northcarolina/maps-guides | page · forest map only; forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted October 5, 2026 | https://www.fs.usda.gov/r08/northcarolina ✓ |  |
+| US-4510 | Pisgah National Forest | https://www.fs.usda.gov/r08/northcarolina/maps-guides | page · forest map only; forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted October 5, 2026 | https://www.fs.usda.gov/r08/northcarolina ✓ |  |
+| US-4509 | Nantahala National Forest | https://www.fs.usda.gov/r08/northcarolina/maps-guides | page · forest map only; forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted October 5, 2026 | https://www.fs.usda.gov/r08/northcarolina ✓ |  |
 
-### US-NC no map yet (131): the reason
+### US-NC no map yet (134): the reason
 - US-10259 NC Vietnam Veteran's Memorial Historic Site: no map link on file and none on the park page
+- US-10260 Birkhead Mountains Wilderness Area: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10262 Linville Gorge Wilderness Area: no map link on file and none on the park page (needs browser: host on the browser list)
 - US-10263 Bonner House Historic Site: no map link on file and none on the park page
 - US-10388 Palmer Marsh House Historic Site: no map link on file and none on the park page
 - US-10389 Hiwassee Dam Recreation Park: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
-- US-10398 Chatuge Dam Trail Recreation Park: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://tennesseerivervalleygeotourism.org/map)
+- US-10397 Southern Nantahala Wilderness Area: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10398 Chatuge Dam Trail Recreation Park: no map link on file and none on the park page
 - US-10406 Lake Rim Fishing & Boating Multiple Use Area: no map link on file and none on the park page
 - US-10511 Jessups Mill Pond State Game Land: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.lake-link.com/map-viewer/?CFID=236990389&CFTOKEN=c9d5bc95c; opened, a page that does not name this park (a generic agency page is not its map) https://www.lake-link.com/lake-maps/?CFID=236990389&CFTOKEN=c9d5bc95ca)
 - US-11238 Micken's Branch Multiple Use Area: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://snoflo.org/map)
@@ -340,9 +341,6 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - US-3869 Three Top Mountain State Game Land: no working map link (tried: HTTP 404 https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Mountain/T)
 - US-3871 White Pines State Nature Preserve: no map link on file and none on the park page
 - US-4852 Bladen Lakes State Forest: no map link on file and none on the park page
-- US-4853 Clemmons Educational State Forest: no map link on file and none on the park page
-- US-4854 DuPont State Recreational Forest State Forest: no map link on file and none on the park page
-- US-4855 Headwaters State Forest: no map link on file and none on the park page
 
 ## US-VA sample (random 12 per agency group, seed 28)
 | ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
@@ -2818,10 +2816,11 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - US-0446 Funk WPA Wetland Management District: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.fws.gov/refuge/rainwater-basin-wetland-management-district)
 
 ## robots.txt said no (hosts we did not read)
-- embed.widencdn.net: 3 addresses (User-agent: Twitterbot | Disallow: | User-agent: * | Allow: /img/3shape/ | Allow: /pdf/*/3shape/ | A)
-- p.widencdn.net: 65 addresses (User-agent: Twitterbot | Disallow: | User-agent: * | Disallow: /)
-- widnr.widen.net: 38 addresses (User-agent: Twitterbot | Disallow: | User-agent: * | Allow: /content/ | Allow: /view/ | Disallow: /)
-- www.pacodeandbulletin.gov: 197 addresses (User-agent: Googlebot | Disallow: /Display/pabull | Disallow: /Display/pacode | Allow: / | User-agen)
+- doifwsnextprod.prod.acquia-sites.com: 10 addresses (User-agent: * | Disallow: /)
+- eec.ky.gov: 1 addresses (﻿<begin content> | User-Agent: * | Disallow: /_Layouts/ | Disallow: /SiteAssets/ | Disallow: /Lists/)
+- usfs-public.app.box.com: 3 addresses (User-agent: Twitterbot | Disallow: / | Allow: /representation  # Twitter needs to be able to display)
+- www.google.com: 6 addresses (User-agent: * | User-agent: Yandex | Disallow: /search | Allow: /search/about | Allow: /search/howse)
+- www.hmdb.org: 1 addresses (User-agent: * | Sitemap: https://www.hmdb.org/sitemap.asp | Crawl-delay: 0.1 | Disallow: /PhotoFullS)
 
 ## hosts resting a day (three strikes)
 - apps.dnr.wi.gov
@@ -2830,10 +2829,12 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - fhwaapps.fhwa.dot.gov
 - in.gov
 - iowaculture.gov
+- legacy.fws.gov
 - map.co.door.wi.us
 - mip.agri.arkansas.gov
 - mobile-maps-files.dnr.state.mn.us
 - sojournertruthstatepark.info
+- tennesseerivervalleygeotourism.org
 - www.agfc
 - www.baysmountain.com
 - www.cgcounty.org
@@ -2843,5 +2844,6 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - www.mass-trails.org
 - www.mdwfp.com
 - www.sos.mo.gov
+- www.tn.gov
 - www.usna.usda.gov
 - www.wildlifesouth.com
