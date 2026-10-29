@@ -73,7 +73,7 @@
      50.683
     ]
    ],
-   "status": "candidate"
+   "status": "dropped: two park numbers joined to one record by name, pins 18 km apart and not both inside it (a wrong join in the key)"
   },
   {
    "acres": 93.1,
@@ -117,7 +117,7 @@
      50.771203
     ]
    ],
-   "status": "waiting for pass 2",
+   "status": "not sure: the official outline of Parkland Wildlife Management Area could not be read in pass 2 (the next run tries again)",
    "wide_m": 220
   },
   {
@@ -162,7 +162,7 @@
      50.771203
     ]
    ],
-   "status": "waiting for pass 2",
+   "status": "not sure: the official outline of Parkland Wildlife Management Area could not be read in pass 2 (the next run tries again)",
    "wide_m": 220
   },
   {
@@ -180,6 +180,9 @@
    "checked": "2026-10-29",
    "found": "2026-10-29",
    "id": "CA-0108+CA-2395@area@57.105,-92.544",
+   "info": {
+    "water_pct": 17
+   },
    "kind": "area",
    "lines": {
     "CA-0108": [
@@ -336,7 +339,8 @@
    "lines_read": "2026-10-29",
    "map_dates": {
     "CA-0108": "downloaded 2026-10-29",
-    "CA-2395": "downloaded 2026-10-29"
+    "CA-2395": "downloaded 2026-10-29",
+    "water": "NRCan NHN file 2026-10-29 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
    },
    "names": {
     "CA-0108": "Wapusk National Park",
@@ -398,7 +402,7 @@
     ]
    ],
    "small": "small overlap: tight fit, check carefully",
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 55
   },
@@ -31558,7 +31562,7 @@
      53.947266
     ]
    ],
-   "status": "waiting for pass 2",
+   "status": "merged into one row: CA-0534+CA-2522@area@53.982,-100.954 (the same not-sure pair, shown once)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -31592,7 +31596,7 @@
      53.94799
     ]
    ],
-   "status": "waiting for pass 2",
+   "status": "merged into one row: CA-0534+CA-2522@area@53.982,-100.954 (the same not-sure pair, shown once)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -31626,7 +31630,7 @@
      53.947628
     ]
    ],
-   "status": "waiting for pass 2",
+   "status": "merged into one row: CA-0534+CA-2522@area@53.982,-100.954 (the same not-sure pair, shown once)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -31660,7 +31664,7 @@
      53.961917
     ]
    ],
-   "status": "waiting for pass 2",
+   "status": "merged into one row: CA-0534+CA-2522@area@53.982,-100.954 (the same not-sure pair, shown once)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -31694,7 +31698,7 @@
      53.973312
     ]
    ],
-   "status": "waiting for pass 2",
+   "status": "merged into one row: CA-0534+CA-2522@area@53.982,-100.954 (the same not-sure pair, shown once)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -31728,7 +31732,7 @@
      53.972951
     ]
    ],
-   "status": "waiting for pass 2",
+   "status": "merged into one row: CA-0534+CA-2522@area@53.982,-100.954 (the same not-sure pair, shown once)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -31762,7 +31766,7 @@
      53.972589
     ]
    ],
-   "status": "waiting for pass 2",
+   "status": "merged into one row: CA-0534+CA-2522@area@53.982,-100.954 (the same not-sure pair, shown once)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -31796,7 +31800,7 @@
      53.974036
     ]
    ],
-   "status": "waiting for pass 2",
+   "status": "merged into one row: CA-0534+CA-2522@area@53.982,-100.954 (the same not-sure pair, shown once)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -31830,17 +31834,17 @@
      53.973674
     ]
    ],
-   "status": "waiting for pass 2",
+   "status": "merged into one row: CA-0534+CA-2522@area@53.982,-100.954 (the same not-sure pair, shown once)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
   {
    "acres": 15.0,
    "box": [
-    -100.99235,
-    53.97422,
-    -100.95388,
-    53.98236
+    -101.09126,
+    53.94727,
+    -100.93557,
+    53.98688
    ],
    "center": [
     53.982356,
@@ -31854,6 +31858,7 @@
     0,
     0
    ],
+   "places": 20,
    "refs": [
     "CA-0534",
     "CA-2522"
@@ -31876,7 +31881,7 @@
      53.97693
     ]
    ],
-   "status": "waiting for pass 2",
+   "status": "not sure: the official outline of Tom Lamb Wildlife Management Area could not be read in pass 2 (the next run tries again)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -31910,7 +31915,7 @@
      53.983441
     ]
    ],
-   "status": "waiting for pass 2",
+   "status": "merged into one row: CA-0534+CA-2522@area@53.982,-100.954 (the same not-sure pair, shown once)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -31944,7 +31949,7 @@
      53.98308
     ]
    ],
-   "status": "waiting for pass 2",
+   "status": "merged into one row: CA-0534+CA-2522@area@53.982,-100.954 (the same not-sure pair, shown once)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -31978,7 +31983,7 @@
      53.982718
     ]
    ],
-   "status": "waiting for pass 2",
+   "status": "merged into one row: CA-0534+CA-2522@area@53.982,-100.954 (the same not-sure pair, shown once)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -32012,7 +32017,7 @@
      53.984165
     ]
    ],
-   "status": "waiting for pass 2",
+   "status": "merged into one row: CA-0534+CA-2522@area@53.982,-100.954 (the same not-sure pair, shown once)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -32046,7 +32051,7 @@
      53.983803
     ]
    ],
-   "status": "waiting for pass 2",
+   "status": "merged into one row: CA-0534+CA-2522@area@53.982,-100.954 (the same not-sure pair, shown once)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -32080,7 +32085,7 @@
      53.98525
     ]
    ],
-   "status": "waiting for pass 2",
+   "status": "merged into one row: CA-0534+CA-2522@area@53.982,-100.954 (the same not-sure pair, shown once)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -32114,7 +32119,7 @@
      53.984527
     ]
    ],
-   "status": "waiting for pass 2",
+   "status": "merged into one row: CA-0534+CA-2522@area@53.982,-100.954 (the same not-sure pair, shown once)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -32148,7 +32153,7 @@
      53.985974
     ]
    ],
-   "status": "waiting for pass 2",
+   "status": "merged into one row: CA-0534+CA-2522@area@53.982,-100.954 (the same not-sure pair, shown once)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -32182,7 +32187,7 @@
      53.985612
     ]
    ],
-   "status": "waiting for pass 2",
+   "status": "merged into one row: CA-0534+CA-2522@area@53.982,-100.954 (the same not-sure pair, shown once)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -32216,7 +32221,7 @@
      53.986878
     ]
    ],
-   "status": "waiting for pass 2",
+   "status": "merged into one row: CA-0534+CA-2522@area@53.982,-100.954 (the same not-sure pair, shown once)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -33479,16 +33484,16 @@
      51.528524
     ]
    ],
-   "status": "waiting for pass 2",
+   "status": "merged into one row: CA-0541+CA-2460@area@51.617,-97.083 (the same not-sure pair, shown once)",
    "wide_m": 4490
   },
   {
    "acres": 24946.0,
    "box": [
     -97.24848,
-    51.5439,
-    -97.01002,
-    51.75154
+    51.42054,
+    -97.00395,
+    51.82353
    ],
    "center": [
     51.61679,
@@ -33502,6 +33507,7 @@
     0,
     0
    ],
+   "places": 4,
    "refs": [
     "CA-0541",
     "CA-2460"
@@ -34572,7 +34578,7 @@
      51.750276
     ]
    ],
-   "status": "waiting for pass 2",
+   "status": "not sure: the official outline of Moose Creek Wildlife Management Area could not be read in pass 2 (the next run tries again)",
    "wide_m": 5019
   },
   {
@@ -34657,7 +34663,7 @@
      51.730017
     ]
    ],
-   "status": "waiting for pass 2",
+   "status": "merged into one row: CA-0541+CA-2460@area@51.617,-97.083 (the same not-sure pair, shown once)",
    "wide_m": 212
   },
   {
@@ -34806,7 +34812,7 @@
      51.813581
     ]
    ],
-   "status": "waiting for pass 2",
+   "status": "merged into one row: CA-0541+CA-2460@area@51.617,-97.083 (the same not-sure pair, shown once)",
    "wide_m": 1660
   },
   {
@@ -34824,6 +34830,9 @@
    "checked": "2026-10-29",
    "found": "2026-10-29",
    "id": "CA-0545+CA-2474@area@54.497,-101.353",
+   "info": {
+    "water_pct": 3
+   },
    "kind": "area",
    "lines": {
     "CA-2474": [
@@ -34878,7 +34887,8 @@
    "lines_read": "2026-10-29",
    "map_dates": {
     "CA-0545": "downloaded 2026-10-29",
-    "CA-2474": "downloaded 2026-10-29"
+    "CA-2474": "downloaded 2026-10-29",
+    "water": "NRCan NHN file 2026-10-29 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
    },
    "names": {
     "CA-0545": "Grass River Provincial Park",
@@ -34942,7 +34952,7 @@
      54.486851
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 3445
   },
@@ -35779,7 +35789,7 @@
      50.53576
     ]
    ],
-   "status": "candidate",
+   "status": "dropped: two park numbers joined to one record by name, pins 236 km apart and not both inside it (a wrong join in the key)",
    "stretches": 2
   },
   {
@@ -36246,7 +36256,7 @@
      50.983924
     ]
    ],
-   "status": "waiting for pass 2",
+   "status": "not sure: the official outline of Dog Lake Wildlife Management Area, Maple Lake Wildlife Management Area could not be read in pass 2 (the next run tries again)",
    "wide_m": 428
   },
   {
@@ -36435,7 +36445,7 @@
      51.14179
     ]
    ],
-   "status": "candidate",
+   "status": "dropped: two park numbers joined to one record by name, pins 95 km apart and not both inside it (a wrong join in the key)",
    "stretches": 2
   },
   {
@@ -37964,7 +37974,7 @@
      51.22977
     ]
    ],
-   "status": "candidate",
+   "status": "dropped: two park numbers joined to one record by name, pins 375 km apart and not both inside it (a wrong join in the key)",
    "stretches": 2
   },
   {
@@ -38650,7 +38660,7 @@
      49.221467
     ]
    ],
-   "status": "waiting for pass 2",
+   "status": "not sure: the official outline of Pembina Valley Wildlife Management Area, Westlake Wildlife Management Area could not be read in pass 2 (the next run tries again)",
    "wide_m": 140
   },
   {
@@ -38915,7 +38925,7 @@
      53.640893
     ]
    ],
-   "status": "waiting for pass 2",
+   "status": "not sure: the official outline of Tom Lamb Wildlife Management Area could not be read in pass 2 (the next run tries again)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 20
   },
@@ -39184,7 +39194,7 @@
      51.22977
     ]
    ],
-   "status": "candidate",
+   "status": "dropped: two park numbers joined to one record by name, pins 313 km apart and not both inside it (a wrong join in the key)",
    "stretches": 2
   },
   {
