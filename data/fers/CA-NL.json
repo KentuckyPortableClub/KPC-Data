@@ -6,6 +6,15 @@
  "pass5": "2026-10-29",
  "spots": [
   {
+   "access": null,
+   "access_pin": {
+    "at": [
+     48.580783,
+     -53.819009
+    ],
+    "from": "none (no road source yet)",
+    "note": "no road map read for this country yet: the pin is the middle of the spot"
+   },
    "acres": 0.6,
    "box": [
     -53.81948,
@@ -19,7 +28,13 @@
    ],
    "checked": "2026-10-29",
    "found": "2026-10-29",
+   "ground": [
+    "canada"
+   ],
    "id": "CA-0097+CA-4546@area@48.581,-53.819",
+   "info": {
+    "water_pct": 0
+   },
    "kind": "area",
    "lines": {
     "CA-0097": [
@@ -182,10 +197,22 @@
     ]
    },
    "lines_read": "2026-10-29",
+   "list": "Very tight (members only)",
    "map_dates": {
     "CA-0097": "downloaded 2026-10-29",
-    "CA-4546": "downloaded 2026-10-29"
+    "CA-4546": "downloaded 2026-10-29",
+    "water": "NRCan NHN file 2026-10-29 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
    },
+   "maps": [
+    [
+     "CA-0097",
+     "https://parks.canada.ca/pn-np/nl/terranova"
+    ],
+    [
+     "CA-4546",
+     "https://www.dfo-mpo.gc.ca/oceans/mpa-zpm/eastport/index-eng.html?wbdisable=true"
+    ]
+   ],
    "names": {
     "CA-0097": "Terra Nova National Park",
     "CA-4546": "Eastport Round Island Marine Protected Area"
@@ -193,6 +220,7 @@
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
+   "ownership": "public land (canada)",
    "passes": [
     1,
     1,
@@ -228,12 +256,22 @@
      48.580783
     ]
    ],
-   "status": "merged into one row: CA-0097+CA-4546@area@48.581,-53.822 (the same not-sure pair, shown once)",
+   "status": "merged into one row: CA-0097+CA-4546@area@48.581,-53.822",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 31
   },
   {
+   "access": null,
+   "access_pin": {
+    "at": [
+     48.581461,
+     -53.82315
+    ],
+    "from": "none (no road source yet)",
+    "note": "no road map read for this country yet: the pin is the middle of the spot"
+   },
    "acres": 4.5,
+   "acres_all": 5.1,
    "box": [
     -53.82383,
     48.57979,
@@ -246,6 +284,9 @@
    ],
    "checked": "2026-10-29",
    "found": "2026-10-29",
+   "ground": [
+    "canada"
+   ],
    "id": "CA-0097+CA-4546@area@48.581,-53.822",
    "info": {
     "water_pct": 0
@@ -563,6 +604,16 @@
     "CA-4546": "downloaded 2026-10-29",
     "water": "NRCan NHN file 2026-10-29 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
    },
+   "maps": [
+    [
+     "CA-0097",
+     "https://parks.canada.ca/pn-np/nl/terranova"
+    ],
+    [
+     "CA-4546",
+     "https://www.dfo-mpo.gc.ca/oceans/mpa-zpm/eastport/index-eng.html?wbdisable=true"
+    ]
+   ],
    "names": {
     "CA-0097": "Terra Nova National Park",
     "CA-4546": "Eastport Round Island Marine Protected Area"
@@ -570,16 +621,18 @@
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
+   "ownership": "public land (canada)",
    "passes": [
     1,
     1,
     1
    ],
+   "patches": 2,
+   "pins": [],
    "pins_inside": {
     "CA-0097": true,
     "CA-4546": false
    },
-   "places": 2,
    "refs": [
     "CA-0097",
     "CA-4546"
@@ -1317,7 +1370,7 @@
      48.58828
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 30
   },
@@ -1751,7 +1804,7 @@
      48.650591
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -1957,7 +2010,7 @@
      49.764698
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -2163,7 +2216,7 @@
      49.764698
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -2369,7 +2422,7 @@
      49.764698
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -2575,7 +2628,7 @@
      49.764698
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -2653,7 +2706,7 @@
      49.795627
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -2715,7 +2768,7 @@
      49.827732
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -2777,7 +2830,7 @@
      49.833339
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -2823,7 +2876,7 @@
      49.848623
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -2885,7 +2938,7 @@
      49.869514
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
   },
@@ -2919,370 +2972,9 @@
      49.898002
     ]
    ],
-   "status": "dropped in pass 3",
+   "status": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
-  },
-  {
-   "access": null,
-   "access_pin": {
-    "at": [
-     48.623833,
-     -57.707778
-    ],
-    "from": "none (no road source yet)",
-    "note": "no road map read for this country yet: the pin is the middle of the spot"
-   },
-   "box": [
-    -57.978,
-    48.496,
-    -57.331,
-    48.766
-   ],
-   "center": [
-    48.623833,
-    -57.707778
-   ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
-   "id": "CA-4555+CA-4556@same land@48.624,-57.708",
-   "kind": "same land",
-   "label": "Same land, two park numbers",
-   "len_m": 0,
-   "maps": [
-    [
-     "CA-4555",
-     "https://www.gov.nl.ca/ecc/natural-areas/wer/r-lgle/"
-    ],
-    [
-     "CA-4556",
-     "https://www.gov.nl.ca/ffa/wildlife/wildlife-reserves/"
-    ]
-   ],
-   "names": {
-    "CA-4555": "Little Grand Lake Provisional Ecological Reserve",
-    "CA-4556": "Little Grand Lake  Reserve Wildlife Reserve"
-   },
-   "note": "both park numbers are joined to the same official outline (Little Grand Lake Provisional Ecological Reserve); POTA lists them separately: check POTA's current list",
-   "owner_here": "state land (from the outline both numbers are joined to)",
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins": [],
-   "refs": [
-    "CA-4555",
-    "CA-4556"
-   ],
-   "shape": [
-    [
-     -57.468,
-     48.69
-    ],
-    [
-     -57.331,
-     48.66
-    ],
-    [
-     -57.399,
-     48.574
-    ],
-    [
-     -57.524,
-     48.496
-    ],
-    [
-     -57.84,
-     48.516
-    ],
-    [
-     -57.951,
-     48.551
-    ],
-    [
-     -57.953,
-     48.53
-    ],
-    [
-     -57.978,
-     48.574
-    ],
-    [
-     -57.947,
-     48.63
-    ],
-    [
-     -57.976,
-     48.654
-    ],
-    [
-     -57.947,
-     48.63
-    ],
-    [
-     -57.756,
-     48.678
-    ],
-    [
-     -57.786,
-     48.656
-    ],
-    [
-     -57.687,
-     48.614
-    ],
-    [
-     -57.621,
-     48.624
-    ],
-    [
-     -57.56,
-     48.696
-    ],
-    [
-     -57.548,
-     48.766
-    ],
-    [
-     -57.468,
-     48.69
-    ]
-   ],
-   "status": "dropped: two park numbers joined to one record by name, pins 20 km apart and not both inside it (a wrong join in the key)",
-   "stretches": 3
-  },
-  {
-   "box": [
-    -57.978,
-    48.496,
-    -57.331,
-    48.766
-   ],
-   "center": [
-    48.623833,
-    -57.707778
-   ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
-   "id": "CA-4555+CA-4556@same land@48.624,-57.708",
-   "kind": "same land",
-   "label": "Same land, two park numbers",
-   "maps": [
-    [
-     "CA-4555",
-     "https://www.gov.nl.ca/ecc/natural-areas/wer/r-lgle/"
-    ],
-    [
-     "CA-4556",
-     "https://www.gov.nl.ca/ffa/wildlife/wildlife-reserves/"
-    ]
-   ],
-   "names": {
-    "CA-4555": "Little Grand Lake Provisional Ecological Reserve",
-    "CA-4556": "Little Grand Lake  Reserve Wildlife Reserve"
-   },
-   "note": "both park numbers are joined to the same official outline (Little Grand Lake Provisional Ecological Reserve); POTA lists them separately: check POTA's current list",
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "refs": [
-    "CA-4555",
-    "CA-4556"
-   ],
-   "shape": [
-    [
-     -57.468,
-     48.69
-    ],
-    [
-     -57.331,
-     48.66
-    ],
-    [
-     -57.399,
-     48.574
-    ],
-    [
-     -57.524,
-     48.496
-    ],
-    [
-     -57.84,
-     48.516
-    ],
-    [
-     -57.951,
-     48.551
-    ],
-    [
-     -57.953,
-     48.53
-    ],
-    [
-     -57.978,
-     48.574
-    ],
-    [
-     -57.947,
-     48.63
-    ],
-    [
-     -57.976,
-     48.654
-    ],
-    [
-     -57.947,
-     48.63
-    ],
-    [
-     -57.756,
-     48.678
-    ],
-    [
-     -57.786,
-     48.656
-    ],
-    [
-     -57.687,
-     48.614
-    ],
-    [
-     -57.621,
-     48.624
-    ],
-    [
-     -57.56,
-     48.696
-    ],
-    [
-     -57.548,
-     48.766
-    ],
-    [
-     -57.468,
-     48.69
-    ]
-   ],
-   "status": "merged into one row: CA-4555+CA-4556@same land@48.624,-57.708"
-  },
-  {
-   "box": [
-    -57.978,
-    48.496,
-    -57.331,
-    48.766
-   ],
-   "center": [
-    48.623833,
-    -57.707778
-   ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
-   "id": "CA-4555+CA-4556@same land@48.624,-57.708",
-   "kind": "same land",
-   "label": "Same land, two park numbers",
-   "maps": [
-    [
-     "CA-4555",
-     "https://www.gov.nl.ca/ecc/natural-areas/wer/r-lgle/"
-    ],
-    [
-     "CA-4556",
-     "https://www.gov.nl.ca/ffa/wildlife/wildlife-reserves/"
-    ]
-   ],
-   "names": {
-    "CA-4555": "Little Grand Lake Provisional Ecological Reserve",
-    "CA-4556": "Little Grand Lake  Reserve Wildlife Reserve"
-   },
-   "note": "both park numbers are joined to the same official outline (Little Grand Lake Provisional Ecological Reserve); POTA lists them separately: check POTA's current list",
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "refs": [
-    "CA-4555",
-    "CA-4556"
-   ],
-   "shape": [
-    [
-     -57.468,
-     48.69
-    ],
-    [
-     -57.331,
-     48.66
-    ],
-    [
-     -57.399,
-     48.574
-    ],
-    [
-     -57.524,
-     48.496
-    ],
-    [
-     -57.84,
-     48.516
-    ],
-    [
-     -57.951,
-     48.551
-    ],
-    [
-     -57.953,
-     48.53
-    ],
-    [
-     -57.978,
-     48.574
-    ],
-    [
-     -57.947,
-     48.63
-    ],
-    [
-     -57.976,
-     48.654
-    ],
-    [
-     -57.947,
-     48.63
-    ],
-    [
-     -57.756,
-     48.678
-    ],
-    [
-     -57.786,
-     48.656
-    ],
-    [
-     -57.687,
-     48.614
-    ],
-    [
-     -57.621,
-     48.624
-    ],
-    [
-     -57.56,
-     48.696
-    ],
-    [
-     -57.548,
-     48.766
-    ],
-    [
-     -57.468,
-     48.69
-    ]
-   ],
-   "status": "merged into one row: CA-4555+CA-4556@same land@48.624,-57.708"
   }
  ],
  "st": "CA-NL"
