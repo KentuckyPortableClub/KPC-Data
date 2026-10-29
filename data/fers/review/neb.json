@@ -9,30 +9,6 @@
  "rows": [
   {
    "area": "neb",
-   "state": "US-NY",
-   "refs": [
-    "US-8096",
-    "US-8097"
-   ],
-   "names": {
-    "US-8096": "South Hill (Oneida County) State Forest",
-    "US-8097": "South Hill (Delaware and Otsego County) State Forest"
-   },
-   "what": "water map weak here (fix later: a better water source)",
-   "kind": "area",
-   "size": "2427.6 ac",
-   "sort": 2427.6,
-   "reason": "water not checked (the USGS water map did not answer): run pass 5",
-   "id": "US-8096+US-8097@area@42.356,-75.460",
-   "sources": {
-    "US-8096": "downloaded 2026-10-29",
-    "US-8097": "downloaded 2026-10-29",
-    "USGS water": "USGS NHDPlus HR file 2023-07-13 (the same NHDPlus HR water, from USGS's download files)"
-   },
-   "checked": "2026-10-29"
-  },
-  {
-   "area": "neb",
    "state": "",
    "refs": [
     "US-2149",
@@ -5048,6 +5024,28 @@
    "id": "US-9124+US-9132@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
+   },
+   "checked": "2026-10-29"
+  },
+  {
+   "area": "neb",
+   "state": "US-RI",
+   "refs": [
+    "US-2869",
+    "US-7971"
+   ],
+   "names": {
+    "US-2869": "Blackstone River State Park",
+    "US-7971": "Blackstone River Valley National Historical Park"
+   },
+   "what": "water only (boat spot): is there really no land?",
+   "kind": "area",
+   "size": "10.3 ac",
+   "sort": 10.3,
+   "reason": "water only: boat or kayak",
+   "id": "US-2869+US-7971@area@channel@41.940,-71.440",
+   "sources": {
+    "USGS water": "USGS NHDPlus HR file 2023-07-13 (the same NHDPlus HR water, from USGS's download files)"
    },
    "checked": "2026-10-29"
   },

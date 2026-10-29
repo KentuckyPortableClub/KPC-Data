@@ -14241,6 +14241,133 @@
    "status": "dropped in pass 3",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 10
+  },
+  {
+   "acres": 10.3,
+   "box": [
+    -71.44471,
+    41.92705,
+    -71.43088,
+    41.94324
+   ],
+   "center": [
+    41.940205,
+    -71.439805
+   ],
+   "channel_of": "US-2869+US-7971@area@41.941,-71.440",
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "id": "US-2869+US-7971@area@channel@41.940,-71.440",
+   "kind": "area",
+   "list": "🚤 Water only: boat or kayak",
+   "map_dates": {
+    "USGS water": "USGS NHDPlus HR file 2023-07-13 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "maps": [
+    [
+     "US-2869",
+     "https://tourblackstone.com/blackstone-river-state-park/"
+    ],
+    [
+     "US-7971",
+     "https://www.nps.gov/blrv/planyourvisit/maps.htm"
+    ]
+   ],
+   "names": {
+    "US-2869": "Blackstone River State Park",
+    "US-7971": "Blackstone River Valley National Historical Park"
+   },
+   "note": "the river channel between the banks: inside both parks' outlines, but not on the Park Service's own land tracts (Land Resources Division; PAD-US fee records when it does not answer) (ruling Oct 28: a boat spot, never dropped)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "refs": [
+    "US-2869",
+    "US-7971"
+   ],
+   "shape": [
+    [
+     -71.434007,
+     41.937038
+    ],
+    [
+     -71.433464,
+     41.935184
+    ],
+    [
+     -71.432921,
+     41.931611
+    ],
+    [
+     -71.432679,
+     41.931159
+    ],
+    [
+     -71.432075,
+     41.930526
+    ],
+    [
+     -71.432015,
+     41.929938
+    ],
+    [
+     -71.431713,
+     41.929667
+    ],
+    [
+     -71.431592,
+     41.929034
+    ],
+    [
+     -71.431894,
+     41.928672
+    ],
+    [
+     -71.431894,
+     41.928356
+    ],
+    [
+     -71.431592,
+     41.927723
+    ],
+    [
+     -71.431653,
+     41.927225
+    ],
+    [
+     -71.431472,
+     41.92709
+    ],
+    [
+     -71.431472,
+     41.92935
+    ],
+    [
+     -71.431773,
+     41.929803
+    ],
+    [
+     -71.431894,
+     41.930617
+    ],
+    [
+     -71.432377,
+     41.931069
+    ],
+    [
+     -71.432921,
+     41.932154
+    ],
+    [
+     -71.433524,
+     41.935952
+    ]
+   ],
+   "status": "water only: boat or kayak",
+   "tier": "very tight: could be map error: check both official maps on the ground",
+   "wide_m": 43.9
   }
  ],
  "st": "US-RI"
