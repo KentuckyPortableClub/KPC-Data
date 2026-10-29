@@ -5,7 +5,7 @@
    "parks": 561,
    "checked": 561,
    "left": 0,
-   "updated": "2026-10-28"
+   "updated": "2026-10-29"
   },
   "US-FL": {
    "status": "done",
@@ -75,21 +75,21 @@
    "parks": 155,
    "checked": 155,
    "left": 0,
-   "updated": "2026-10-28"
+   "updated": "2026-10-29"
   },
   "US-IN": {
    "status": "done",
    "parks": 229,
    "checked": 229,
    "left": 0,
-   "updated": "2026-10-28"
+   "updated": "2026-10-29"
   },
   "US-IL": {
    "status": "done",
    "parks": 219,
    "checked": 219,
    "left": 0,
-   "updated": "2026-10-28"
+   "updated": "2026-10-29"
   },
   "US-WI": {
    "status": "done",
@@ -254,7 +254,6 @@
   }
  },
  "hosts": {
-  "www5.swfwmd.state.fl.us": 1793262436.7233734,
   "legacy.fws.gov": 1793264444.9435768,
   "parks.ky.gov": 1793267495.7892177,
   "www.tn.gov": 1793267801.512577,
@@ -282,27 +281,27 @@
  "last": {
   "when": "2026-10-29",
   "areas": [
-   "US-GA",
-   "US-AL",
-   "US-SC",
    "US-FL",
    "US-MS",
    "US-IN",
    "US-IL",
-   "US-MO"
+   "US-MO",
+   "US-WI",
+   "US-MN",
+   "US-IA"
   ],
   "stat": {
-   "requests": 1597,
-   "parks": 742,
-   "maps_ok": 259,
-   "maps_found": 205,
-   "dates": 33,
-   "rules": 231,
-   "browser": 55,
-   "robots": 46,
+   "requests": 1367,
+   "parks": 722,
+   "maps_ok": 270,
+   "maps_found": 246,
+   "dates": 35,
+   "rules": 265,
+   "browser": 356,
+   "robots": 14,
    "strikes": 0,
    "errors": 0,
-   "skipped_fresh": 230
+   "skipped_fresh": 413
   }
  }
 }

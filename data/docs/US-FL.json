@@ -943,7 +943,9 @@
    "agency": "Florida State Parks (DEP)",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
    "needs_browser": "host on the browser list",
    "ver": 6
   },
@@ -965,7 +967,9 @@
    "agency": "Florida State Parks (DEP)",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
    "needs_browser": "host on the browser list",
    "ver": 6
   },
@@ -1292,7 +1296,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-10550": {
    "n": "Scanlon State Conservation Area",
@@ -2304,7 +2309,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-12097": {
    "n": "Hickory Hammock Wildlife Management Area",
@@ -2925,7 +2931,9 @@
    "agency": "Florida water management district",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
    "ver": 6
   },
@@ -2935,9 +2943,17 @@
    "page": "https://www.swfwmd.state.fl.us/recreation/deep-creek-preserve",
    "checked": "2026-10-29",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.arcgis.com/apps/webappviewer/index.html?id=da3616e735ee42e9ae2e4d74563a0f4a&extent=-9132268.4476%2C3130023.5905%2C-9128969.7121%2C3132178.1592%2C102100",
+    "status": "opened, a statewide map viewer, not this park's map (chat 8 F2)",
+    "kind": "viewer (statewide)",
+    "date": null,
+    "date_how": "",
+    "how": "the page in a browser ('View Interactive Map of Area »')",
+    "page": "https://www.swfwmd.state.fl.us/recreation/deep-creek-preserve",
+    "posted": "",
+    "posted_how": "",
+    "checked": "2026-10-29",
+    "via": "off the government, not linked by the agency"
    },
    "rules": {
     "url": "",
@@ -2949,7 +2965,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-13011": {
    "n": "Shoal River Headwaters State Park",
@@ -2971,7 +2988,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1829": {
    "n": "Alafia River State Park",
@@ -2993,7 +3011,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1830": {
    "n": "Alfred B.Maclay Gardens State Park",
@@ -3015,7 +3034,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1831": {
    "n": "Amelia Island State Park",
@@ -3037,7 +3057,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1832": {
    "n": "Anastasia State Park",
@@ -3059,7 +3080,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1833": {
    "n": "Avalon State Park",
@@ -3081,7 +3103,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1834": {
    "n": "Bahia Honda State Park",
@@ -3103,7 +3126,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1835": {
    "n": "Bald Point State Park",
@@ -3125,7 +3149,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1836": {
    "n": "Barnacle State Park",
@@ -3147,7 +3172,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1837": {
    "n": "Big Lagoon State Park",
@@ -3169,7 +3195,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1838": {
    "n": "Big Shoals State Park",
@@ -3191,7 +3218,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1839": {
    "n": "Big Talbot Island State Park",
@@ -3213,7 +3241,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1840": {
    "n": "Bill Baggs Cape Florida State Park",
@@ -3235,7 +3264,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1841": {
    "n": "Blackwater River State Park",
@@ -3257,7 +3287,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1842": {
    "n": "Blue Spring State Park",
@@ -3279,7 +3310,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1843": {
    "n": "Bulow Creek State Park",
@@ -3301,7 +3333,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1844": {
    "n": "Caladesi Island State Park",
@@ -3323,7 +3356,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1845": {
    "n": "Camp Helen State Park",
@@ -3345,7 +3379,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1846": {
    "n": "Cayo Costa State Park",
@@ -3367,7 +3402,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1847": {
    "n": "Collier-Seminole State Park",
@@ -3405,7 +3441,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1848": {
    "n": "Colt Creek State Park",
@@ -3443,7 +3480,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1849": {
    "n": "Constitution Convention Museum State Park",
@@ -3465,7 +3503,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1850": {
    "n": "Crystal River Archaeological State Park",
@@ -3487,7 +3526,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1851": {
    "n": "Curry Hammock State Park",
@@ -3509,7 +3549,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1852": {
    "n": "Dagny Johnson Key Largo Hammock Botanical State Park",
@@ -3531,7 +3572,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1853": {
    "n": "De Leon Springs State Park",
@@ -3553,7 +3595,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1854": {
    "n": "Deer Lake State Park",
@@ -3575,7 +3618,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1855": {
    "n": "Delnor-Wiggins Pass State Park",
@@ -3597,7 +3641,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1856": {
    "n": "Devil's Millhopper Geological State Park",
@@ -3619,7 +3664,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1857": {
    "n": "Don Pedro Island State Park",
@@ -3641,7 +3687,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1858": {
    "n": "Dr. Von D. Mizell-Eula Johnson State Park",
@@ -3663,7 +3710,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1859": {
    "n": "Dunns Creek State Park",
@@ -3685,7 +3733,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1860": {
    "n": "Econfina River State Park",
@@ -3707,7 +3756,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1861": {
    "n": "Eden Gardens State Park",
@@ -3729,7 +3779,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1862": {
    "n": "Edward Ball Wakulla Springs State Park",
@@ -3751,7 +3802,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1863": {
    "n": "Egmont Key State Park",
@@ -3773,7 +3825,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1864": {
    "n": "Falling Waters State Park",
@@ -3795,7 +3848,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1865": {
    "n": "Fanning Springs State Park",
@@ -3817,7 +3871,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1866": {
    "n": "Faver-Dykes State Park",
@@ -3839,7 +3894,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1867": {
    "n": "Florida Caverns State Park",
@@ -3861,7 +3917,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1868": {
    "n": "Forest Capital Museum State Park",
@@ -3883,7 +3940,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1869": {
    "n": "Fort Clinch State Park",
@@ -3905,7 +3963,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1870": {
    "n": "Fort Cooper State Park",
@@ -3927,7 +3986,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1871": {
    "n": "Fort George Island Cultural State Park",
@@ -3949,7 +4009,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1872": {
    "n": "Fort Pierce Inlet State Park",
@@ -3971,7 +4032,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1873": {
    "n": "Fred Gannon Rocky Bayou State Park",
@@ -4009,7 +4071,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1874": {
    "n": "Gasparilla Island State Park",
@@ -4031,7 +4094,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1875": {
    "n": "Grayton Beach State Park",
@@ -4053,7 +4117,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1876": {
    "n": "Henderson Beach State Park",
@@ -4075,7 +4140,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1877": {
    "n": "Highlands Hammock State Park",
@@ -4097,7 +4163,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1878": {
    "n": "Hillsborough River State Park",
@@ -4119,7 +4186,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1879": {
    "n": "Homosassa Springs Wildlife State Park",
@@ -4141,7 +4209,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1880": {
    "n": "Honeymoon Island State Park",
@@ -4179,7 +4248,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1881": {
    "n": "Hontoon Island State Park",
@@ -4201,7 +4271,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1882": {
    "n": "Hugh Taylor Birch State Park",
@@ -4223,7 +4294,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1883": {
    "n": "Ichetucknee Springs State Park",
@@ -4245,7 +4317,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1884": {
    "n": "John D. MacArthur Beach State Park",
@@ -4267,7 +4340,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1885": {
    "n": "John Gorrie Museum State Park",
@@ -4289,7 +4363,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1886": {
    "n": "John Pennekamp Coral Reef State Park",
@@ -4311,7 +4386,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1887": {
    "n": "Jonathan Dickinson State Park",
@@ -4349,7 +4425,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1888": {
    "n": "Lafayette Blue Springs State Park",
@@ -4371,7 +4448,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1889": {
    "n": "Lake Griffin State Park",
@@ -4393,7 +4471,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1890": {
    "n": "Lake Jackson Mounds Archaeological State Park",
@@ -4415,7 +4494,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1891": {
    "n": "Lake June-in-Winter Scrub State Park",
@@ -4437,7 +4517,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1892": {
    "n": "Lake Kissimmee State Park",
@@ -4459,7 +4540,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1893": {
    "n": "Lake Louisa State Park",
@@ -4497,7 +4579,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1894": {
    "n": "Lake Manatee State Park",
@@ -4519,7 +4602,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1895": {
    "n": "Lake Talquin State Park",
@@ -4541,7 +4625,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1896": {
    "n": "Letchworth-Love Mounds State Park",
@@ -4563,7 +4648,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1897": {
    "n": "Lignumvitae Key Botanical State Park",
@@ -4585,7 +4671,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1898": {
    "n": "Little Manatee River State Park",
@@ -4607,7 +4694,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1899": {
    "n": "Long Key State Park",
@@ -4629,7 +4717,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1900": {
    "n": "Lovers Key State Park",
@@ -4651,7 +4740,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1901": {
    "n": "Manatee Springs State Park",
@@ -4673,7 +4763,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1902": {
    "n": "Mike Roess Gold Head Branch State Park",
@@ -4695,7 +4786,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1903": {
    "n": "Mound Key Archaeological State Park",
@@ -4717,7 +4809,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1904": {
    "n": "Myakka River State Park",
@@ -4739,7 +4832,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1905": {
    "n": "North Peninsula State Park",
@@ -4761,7 +4855,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1906": {
    "n": "O'Leno State Park",
@@ -4783,7 +4878,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1907": {
    "n": "Ochlockonee River State Park",
@@ -4805,7 +4901,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1908": {
    "n": "Oleta River State Park",
@@ -4827,7 +4924,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1909": {
    "n": "Oscar Scherer State Park",
@@ -4865,7 +4963,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1910": {
    "n": "Perdido Key State Park",
@@ -4887,7 +4986,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1911": {
    "n": "Ponce De Leon Springs State Park",
@@ -4909,7 +5009,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1912": {
    "n": "Rainbow Springs State Park",
@@ -4931,7 +5032,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1913": {
    "n": "Ravine Gardens State Park",
@@ -4953,7 +5055,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1914": {
    "n": "Sebastian Inlet State Park",
@@ -4975,7 +5078,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1915": {
    "n": "Silver Springs State Park",
@@ -5018,7 +5122,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1917": {
    "n": "St. Andrews State Park",
@@ -5040,7 +5145,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1918": {
    "n": "St. Joseph Peninsula State Park",
@@ -5062,7 +5168,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1919": {
    "n": "Stephen Foster Folk Culture Center State Park",
@@ -5084,7 +5191,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1920": {
    "n": "Stump Pass Beach State Park",
@@ -5106,7 +5214,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1921": {
    "n": "Suwannee River State Park",
@@ -5128,7 +5237,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1922": {
    "n": "Three Rivers State Park",
@@ -5150,7 +5260,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1923": {
    "n": "Tomoka State Park",
@@ -5172,7 +5283,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1924": {
    "n": "Torreya State Park",
@@ -5194,7 +5306,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1925": {
    "n": "Troy Spring State Park",
@@ -5216,7 +5329,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1926": {
    "n": "Washington Oaks Gardens State Park",
@@ -5238,7 +5352,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1927": {
    "n": "Wekiwa Springs State Park",
@@ -5260,7 +5375,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1928": {
    "n": "Werner-Boyce Salt Springs State Park",
@@ -5298,7 +5414,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1929": {
    "n": "Wes Skiles Peacock Springs State Park",
@@ -5320,7 +5437,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-1930": {
    "n": "Windley Key Fossil Reef Geological State Park",
@@ -5342,7 +5460,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3604": {
    "n": "Addison Blockhouse State Park",
@@ -5364,7 +5483,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3605": {
    "n": "Allen David Broussard Catfish Creek Preserve State Park",
@@ -5386,7 +5506,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3606": {
    "n": "Anclote Key Preserve State Park",
@@ -5408,7 +5529,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3607": {
    "n": "Beker-Wingate Creek State Park",
@@ -5430,7 +5552,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3608": {
    "n": "Blackwater Heritage State Trail",
@@ -5452,7 +5575,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3609": {
    "n": "Bulow Plantation Ruins State Park",
@@ -5474,7 +5598,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3610": {
    "n": "Cedar Key Museum State Park",
@@ -5496,7 +5621,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3611": {
    "n": "Cedar Key Scrub Reserve State Conservation Area",
@@ -5518,7 +5644,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3612": {
    "n": "Charlotte Harbor Preserve State Park",
@@ -5540,7 +5667,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3613": {
    "n": "Cockroach Bay Preserve State Park",
@@ -5562,7 +5690,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3614": {
    "n": "Crystal River Preserve State Park",
@@ -5584,7 +5713,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3615": {
    "n": "Dade Battlefield State Park",
@@ -5606,7 +5736,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3616": {
    "n": "Dudley Farm State Park",
@@ -5628,7 +5759,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3617": {
    "n": "Estero Bay Preserve State Park",
@@ -5666,7 +5798,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3618": {
    "n": "Fakahatchee Strand Preserve State Park",
@@ -5688,7 +5821,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3619": {
    "n": "Fernandina Plaza State Historic Site",
@@ -5710,7 +5844,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3620": {
    "n": "Florida Keys Overseas Heritage Trail State Park",
@@ -5732,7 +5867,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3621": {
    "n": "Fort Foster State Historic Site",
@@ -5754,7 +5890,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3622": {
    "n": "Fort Mose State Park",
@@ -5776,7 +5913,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3623": {
    "n": "Fort Zachary Taylor State Park",
@@ -5798,7 +5936,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3624": {
    "n": "Gainesville-Hawthorne State Trail",
@@ -5820,7 +5959,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3625": {
    "n": "Gamble Plantation State Park",
@@ -5842,7 +5982,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3626": {
    "n": "Gamble Rogers Memorial State Recreation Area",
@@ -5864,7 +6005,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3627": {
    "n": "General James A. Van Fleet State Trail",
@@ -5902,7 +6044,8 @@
      "via": "same government (floridadep.gov)"
     }
    ],
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3628": {
    "n": "George Crady Bridge Fishing Pier State Park",
@@ -5924,7 +6067,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3629": {
    "n": "Haw Creek Preserve State Park",
@@ -5946,7 +6090,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3630": {
    "n": "Indian Key State Park",
@@ -5968,7 +6113,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3631": {
    "n": "Indian River Lagoon State Park",
@@ -5990,7 +6136,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3632": {
    "n": "Kissimmee Prairie Preserve State Park",
@@ -6012,7 +6159,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3633": {
    "n": "Koreshan State Historic Site",
@@ -6044,7 +6192,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3634": {
    "n": "Lower Wekiva River Preserve State Park",
@@ -6066,7 +6215,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3635": {
    "n": "Madira Bickel Mound State Historic Site",
@@ -6088,7 +6238,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3636": {
    "n": "Madison Blue Spring State Park",
@@ -6110,7 +6261,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3637": {
    "n": "Marjorie Harris Carr Cross State Park",
@@ -6132,7 +6284,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3638": {
    "n": "Marjorie Kinnan Rawlings State Park",
@@ -6154,7 +6307,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3639": {
    "n": "Natural Bridge Battlefield State Park",
@@ -6176,7 +6330,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3640": {
    "n": "Nature Coast State Trail",
@@ -6198,7 +6353,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3641": {
    "n": "Okeechobee Battlefield State Park",
@@ -6220,7 +6376,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3642": {
    "n": "Olustee Battlefield State Park",
@@ -6242,7 +6399,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3643": {
    "n": "Orman House State Park",
@@ -6264,7 +6422,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3644": {
    "n": "Palatka-St. Augustine State Trail",
@@ -6286,7 +6445,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3645": {
    "n": "Palatka-to-Lake Butler State Trail",
@@ -6308,7 +6468,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3646": {
    "n": "Paynes Creek State Park",
@@ -6330,7 +6491,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3647": {
    "n": "Paynes Prairie Preserve State Park",
@@ -6352,7 +6514,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3648": {
    "n": "Pumpkin Hill Creek Preserve State Park",
@@ -6374,7 +6537,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3649": {
    "n": "River Rise Preserve State Park",
@@ -6396,7 +6560,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3650": {
    "n": "Rock Springs Run State Park",
@@ -6418,7 +6583,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3651": {
    "n": "San Felasco Hammock Preserve State Park",
@@ -6440,7 +6606,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3652": {
    "n": "San Marcos de Apalache State Park",
@@ -6462,7 +6629,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3653": {
    "n": "San Pedro Underwater Archaeological Preserve State Park",
@@ -6484,7 +6652,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3654": {
    "n": "Savannas Preserve State Park",
@@ -6522,7 +6691,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3655": {
    "n": "Seabranch Preserve State Park",
@@ -6544,7 +6714,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3656": {
    "n": "Beker - South Fork State Park",
@@ -6566,7 +6737,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3657": {
    "n": "St. Lucie Inlet Preserve State Park",
@@ -6588,7 +6760,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3658": {
    "n": "Ney Landrum State Park",
@@ -6610,7 +6783,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3659": {
    "n": "St. Sebastian River Preserve State Park",
@@ -6632,7 +6806,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3660": {
    "n": "Suwannee River Wilderness State Trail",
@@ -6654,7 +6829,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3661": {
    "n": "Tallahassee-St. Marks Historic Railroad State Trail",
@@ -6676,7 +6852,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3662": {
    "n": "Tarkiln Bayou Preserve State Park",
@@ -6698,7 +6875,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3663": {
    "n": "Terra Ceia Preserve State Park",
@@ -6720,7 +6898,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3664": {
    "n": "Topsail Hill Preserve State Park",
@@ -6742,7 +6921,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3665": {
    "n": "Waccasassa Bay Preserve State Park",
@@ -6764,7 +6944,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3666": {
    "n": "Weeki Wachee Springs State Park",
@@ -6786,7 +6967,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3667": {
    "n": "Withlacoochee State Trail",
@@ -6808,7 +6990,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3668": {
    "n": "Ybor City Museum State Park",
@@ -6830,7 +7013,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3669": {
    "n": "Yellow Bluff Fort State Park",
@@ -6852,7 +7036,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3670": {
    "n": "Yellow River Marsh Preserve State Park",
@@ -6874,7 +7059,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-3671": {
    "n": "Yulee Sugar Mill Ruins State Park",
@@ -6896,7 +7082,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-4470": {
    "n": "Apalachicola National Forest",
@@ -6904,9 +7091,18 @@
    "page": "https://www.fs.usda.gov/recarea/florida/recarea/?recid=83574",
    "checked": "2026-10-29",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.fs.usda.gov/r08/florida/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-29",
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/recarea/florida/recarea/?recid=83574",
+    "posted": "December 16, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-10-29",
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/florida",
@@ -6918,7 +7114,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-4471": {
    "n": "Ocala National Forest",
@@ -6926,19 +7123,18 @@
    "page": "https://www.fs.usda.gov/recarea/florida/recarea/?recid=83528",
    "checked": "2026-10-29",
    "map": {
-    "url": "https://www.fs.usda.gov/r08/florida",
+    "url": "https://www.fs.usda.gov/r08/florida/maps-guides",
     "status": "ok",
     "kind": "page",
     "date": null,
     "date_how": "date unknown, checked 2026-10-29",
-    "how": "on file (parkinfo-web / Kentucky answer key)",
-    "posted": "",
-    "posted_how": "",
-    "names_park": true,
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/r08/florida",
+    "posted": "December 16, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-29",
-    "covers": 0,
     "via": "the agency site",
-    "date_label": "date unknown"
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/florida",
@@ -6950,7 +7146,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "map page on the browser list (a download button may hide the file)",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-4472": {
    "n": "Osceola National Forest",
@@ -6958,9 +7155,18 @@
    "page": "https://www.fs.usda.gov/recarea/florida/recarea/?recid=83529",
    "checked": "2026-10-29",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.fs.usda.gov/r08/florida/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-29",
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/recarea/florida/recarea/?recid=83529",
+    "posted": "December 16, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-10-29",
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/florida",
@@ -6972,7 +7178,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-4559": {
    "n": "Florida Trail National Scenic Trail",
@@ -7010,7 +7217,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-4612": {
    "n": "Belmore State Forest",
@@ -7858,7 +8066,9 @@
    "agency": "Florida water management district",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
    "ver": 6
   },
@@ -7880,7 +8090,9 @@
    "agency": "Florida water management district",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
    "ver": 6
   },
@@ -7902,7 +8114,9 @@
    "agency": "Florida water management district",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
    "ver": 6
   },
@@ -8180,7 +8394,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-6285": {
    "n": "Peace River State Forest",
@@ -12338,18 +12553,18 @@
    "n": "Alapahoochee State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/alapahoochee-10/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Alapahoochee.jpg",
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -12363,24 +12578,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8676": {
    "n": "Cabbage Creek State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/cabbage-creek-33/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Cabbage-Creek.jpg",
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -12394,24 +12609,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8677": {
    "n": "Christian State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/christian-47/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Christian-01.jpg",
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -12425,17 +12640,27 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8678": {
    "n": "Cuba Bay State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/cuba-bay-48/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
-    "url": "",
-    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Cuba-Bay-Ma; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://map.mysuwanneeriver.com/wp-content/uploads/2021/07/map-legend.)",
-    "how": "a link on the park's page ('Cuba Bay Map')"
+    "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Cuba-Bay-Map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-29",
+    "how": "a link on the park's page ('Cuba Bay Map')",
+    "posted": "2021-09",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": "file",
+    "checked": "2026-10-29",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "",
@@ -12446,54 +12671,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_tried": [
-    {
-     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Cuba-Bay-Map.pdf",
-     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "",
-     "how": "a link on the park's page ('Cuba Bay Map')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "covers": 0,
-     "via": "the agency site"
-    },
-    {
-     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/07/map-legend.pdf",
-     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-     "kind": "pdf",
-     "date": "2021-10-20",
-     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-     "how": "a link on the park's page ('Map Legend')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "covers": 0,
-     "via": "the agency site"
-    }
-   ],
-   "ver": 5
+   "ver": 6
   },
   "US-8679": {
    "n": "Devil's Hammock State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/devils-hammock-51/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Devils-Hammock-01.jpg",
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
     "names_park": false,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -12509,24 +12704,24 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8680": {
    "n": "Bell Springs State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/bell-springs-22/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Bell-Springs-02.jpg",
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -12540,24 +12735,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8681": {
    "n": "Falmouth Spring State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/falmouth-spring-65/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Falmouth-Springs-02.jpg",
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
     "names_park": false,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -12571,24 +12766,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8682": {
    "n": "Allardt State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/allardt-12/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Allardt.jpg",
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -12602,24 +12797,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8683": {
    "n": "Log Landing State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/log-landing-122/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Guaranto.jpg",
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
     "names_park": false,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -12633,24 +12828,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8684": {
    "n": "Grady State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/grady/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Grady-1.jpg",
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -12664,24 +12859,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8685": {
    "n": "Holton Creek State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/holton-creek/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Holton-Creek-1-scaled.jpg",
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -12695,13 +12890,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8686": {
    "n": "Bay Creek State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/bay-creek-21/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -12718,24 +12913,24 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 5
+   "ver": 6
   },
   "US-8687": {
    "n": "Jennings Bluff State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/jennings-bluff/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Jennings-Bluff-04.jpg",
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -12749,24 +12944,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8688": {
    "n": "Lindsey State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/lindsey-116/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Lindsey-1.jpg",
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -12780,24 +12975,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8689": {
    "n": "Little Creek, McAlpin Landing State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/little-creek-118/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Little-Creek.jpg",
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
     "names_park": false,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -12811,24 +13006,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8690": {
    "n": "Mallory Swamp State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/mallory-swamp-125/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/SUA-Standard-Conditions-ATV.pdf",
     "status": "ok",
     "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('SUA-Standard-Conditions---ATV')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 1,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -12842,24 +13037,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8691": {
    "n": "Mattair Springs State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/mattair-springs/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Mattair-Springs-01.jpg",
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -12873,24 +13068,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8692": {
    "n": "Lamont, Mt. Gilead State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/lamont-110/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Lamont-1.jpg",
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
     "names_park": false,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -12904,24 +13099,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8693": {
    "n": "Mud Swamp State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/mud-swamp-139/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Mud-Swamp-1.jpg",
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -12935,24 +13130,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8694": {
    "n": "Natural Well Branch State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/natural-well-branch-140/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Natural-Well-Branch.jpg",
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -12966,24 +13161,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8695": {
    "n": "Peacock Slough State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/peacock-slough-153/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Peacock-Slough-1.jpg",
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -12997,24 +13192,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8696": {
    "n": "Purvis Landing, Otter Springs, Shingle Lndg State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/purvis-landing-158/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Otter-Springs-Purvis-Landing-Shingle-Landing.jpg",
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -13028,13 +13223,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8697": {
    "n": "R.O Ranch State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/ro-ranch-162/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -13051,24 +13246,24 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 5
+   "ver": 6
   },
   "US-8698": {
    "n": "Ruth-Springs State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/ruth-springs/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Ruth-Springs.jpg",
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -13082,24 +13277,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8699": {
    "n": "Sandlin Bay State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/sandlin-bay-168/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Sandlin-Bay-1.jpg",
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -13113,24 +13308,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8700": {
    "n": "Santa Fe Swamp State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/santa-fe-swamp/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Santa-Fe-Swamp.jpg",
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -13144,24 +13339,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8701": {
    "n": "Shelly, Duck Pond, Hartsfield State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/shelly-181/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Shelly.jpg",
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
     "names_park": false,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -13175,24 +13370,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8702": {
    "n": "Sneads Lake State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/sneads-lake-184/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Sneads-Smokehouse-Lake.jpg",
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -13206,24 +13401,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8703": {
    "n": "Steinhatchee Falls State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/steinhatchee-falls/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Steinhatchee-Falls-02.jpg",
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -13237,24 +13432,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8704": {
    "n": "Steinhatchee Springs State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/steinhatchee-springs-190/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Steinhatchee-Springs-04.jpg",
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -13268,24 +13463,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8705": {
    "n": "Stephen Foster State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/stephen-foster-state-park-192/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Stephen-Foster.jpg",
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -13299,24 +13494,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8706": {
    "n": "Sunnyvale State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/sunnyvale/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Sunnyvale.jpg",
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -13330,24 +13525,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8707": {
    "n": "Sugar Creek State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/sugar-creek-195/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Sugar-Creek.jpg",
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -13361,24 +13556,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8708": {
    "n": "Swift Creek State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/swift-creek-217/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Swift-Creek.jpg",
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -13392,24 +13587,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8709": {
    "n": "Turner Bridge State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/turner-bridge-222/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Turner-Bridge.jpg",
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -13423,24 +13618,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8710": {
    "n": "Osteen State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/osteen-149/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Osteen-Tyree.jpg",
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -13454,13 +13649,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8711": {
    "n": "Owens Spring, Walker, Adams State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/owens-spring-152/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Adams-Tract; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://map.mysuwanneeriver.com/wp-content/uploads/2021/07/map-legend.)",
@@ -13486,7 +13681,7 @@
      "posted": "",
      "posted_how": "",
      "names_park": false,
-     "checked": "2026-10-28",
+     "checked": "2026-10-29",
      "covers": 0,
      "via": "the agency site"
     },
@@ -13500,29 +13695,29 @@
      "posted": "",
      "posted_how": "",
      "names_park": false,
-     "checked": "2026-10-28",
+     "checked": "2026-10-29",
      "covers": 0,
      "via": "the agency site"
     }
    ],
-   "ver": 5
+   "ver": 6
   },
   "US-8712": {
    "n": "White Springs, Little Shoals, Gar Pond State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/white-springs-235/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/White-Springs-02.jpg",
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
     "names_park": false,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -13536,24 +13731,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8713": {
    "n": "Withlacoochee Hills State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/withlacoochee-hills-237/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Deese.jpg",
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
     "names_park": false,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -13567,24 +13762,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8714": {
    "n": "Withlacoochee Quail Farms State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/withlacoochee-quail-farms-238/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Withlacoochee-Quail-Farms-02-1.jpg",
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -13598,24 +13793,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8715": {
    "n": "Seven Bridges State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/seven-bridges-179/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Seven-Bridges.jpg",
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -13629,24 +13824,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8716": {
    "n": "Woods Ferry State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://map.mysuwanneeriver.com/tracts/woods-ferry-243/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Woods-Ferry-02.jpg",
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('')",
     "posted": "2021-09",
     "posted_how": "posted: the upload folder in the address",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -13660,13 +13855,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8717": {
    "n": "Allapattah Flats State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://www.sfwmd.gov/recreation-site/allapattah-flats",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.sfwmd.gov/sites/default/files/documents/equestrian_trail_m; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.sfwmd.gov/sites/default/files/documents/trailguide_allapat)",
@@ -13695,7 +13890,7 @@
      "posted": "",
      "posted_how": "",
      "names_park": false,
-     "checked": "2026-10-28",
+     "checked": "2026-10-29",
      "covers": 0,
      "via": "the agency site"
     },
@@ -13709,29 +13904,29 @@
      "posted": "",
      "posted_how": "",
      "names_park": false,
-     "checked": "2026-10-28",
+     "checked": "2026-10-29",
      "covers": 0,
      "via": "the agency site"
     }
    ],
-   "ver": 5
+   "ver": 6
   },
   "US-8718": {
    "n": "Lakeside Ranch State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://www.sfwmd.gov/recreation-site/lakeside-ranch",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://www.sfwmd.gov/sites/default/files/Lakeside_Ranch_Map.jpg",
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('Recreation Area Map')",
     "posted": "Apr 04, 2025",
     "posted_how": "posted: the server's file date",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -13746,24 +13941,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8719": {
    "n": "Horse Creek State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://www.sfwmd.gov/recreation-site/lake-marion-creek-wildlife-management-area-baltic-road-horse-creek-huckleberry-0",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://www.sfwmd.gov/sites/default/files/documents/Lake_Marion_Creek_Map.jpg",
     "status": "ok",
     "kind": "image",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('Recreation Area Map')",
     "posted": "Apr 09, 2025",
     "posted_how": "posted: the server's file date",
     "names_park": false,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -13780,13 +13975,13 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8720": {
    "n": "Frog Pond State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://www.sfwmd.gov/recreation-site/southern-glades-wildlife-and-environmental-area-and-frog-pond-wildlife-management",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -13803,17 +13998,27 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 5
+   "ver": 6
   },
   "US-8721": {
    "n": "Taylor Creek State Conservation Area",
    "t": "State Conservation Area",
    "page": "https://www.sfwmd.gov/recreation-site/taylor-creek-stormwater-treatment-area-sta",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
-    "url": "",
-    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.sfwmd.gov/sites/default/files/documents/taylor_creek_proje; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.sfwmd.gov/sites/default/files/documents/trailguide_taylor_)",
-    "how": "a link on the park's page ('Project Map [PDF]')"
+    "url": "https://www.sfwmd.gov/sites/default/files/documents/taylor_creek_project_map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-29",
+    "how": "a link on the park's page ('Project Map [PDF]')",
+    "posted": "Jan 20, 2017",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-29",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
    },
    "rules": {
     "url": "https://www.sfwmd.gov/doing-business-with-us/rules",
@@ -13825,54 +14030,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_tried": [
-    {
-     "url": "https://www.sfwmd.gov/sites/default/files/documents/taylor_creek_project_map.pdf",
-     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "",
-     "how": "a link on the park's page ('Project Map [PDF]')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "covers": 0,
-     "via": "the agency site"
-    },
-    {
-     "url": "https://www.sfwmd.gov/sites/default/files/documents/trailguide_taylor_creek.pdf",
-     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "",
-     "how": "a link on the park's page ('Trail Guide and Map – Taylor Creek Stormwater Treatment Area [PDF]')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "covers": 0,
-     "via": "the agency site"
-    }
-   ],
-   "ver": 5
+   "ver": 6
   }
  },
  "read": "2026-10-29",
  "counts": {
   "parks": 460,
-  "map ok": 161,
-  "map found by the bot": 144,
+  "map ok": 165,
+  "map found by the bot": 149,
   "date on the map": 19,
-  "posted date only": 117,
-  "date unknown": 25,
-  "no map": 299,
+  "posted date only": 122,
+  "date unknown": 24,
+  "no map": 295,
   "rules ok": 63,
-  "needs browser": 200,
+  "needs browser": 22,
   "handover hints": 0,
   "runs hints": 26,
   "host resting / robots": 0,
-  "map names the park": 142,
+  "map names the park": 143,
   "region overview only": 0
  }
 }
