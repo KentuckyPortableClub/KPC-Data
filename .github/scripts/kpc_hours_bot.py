@@ -33,7 +33,7 @@ LINKS = pathlib.Path(os.environ.get('LINKS') or 'links')
 T0 = time.time(); LIMIT = float(os.environ.get('MINUTES') or 55) * 60
 REFRESH_DAYS = int(os.environ.get('REFRESH_DAYS') or 90)
 TODAY = time.strftime('%Y-%m-%d')
-VER = 10   # Oct 28 11:30 PM (Brandon ruling 'Season'): a line with no day and no time ('Open year-round', 'seasonal') goes to `season`, `hours` keeps only lines with a day or a time; a park whose pages print no hours says so (`hours_note`); VER 9 = Oct 28 night: PDF line-break hyphens joined, '9 to 5' after open/daily/hours, 'Open dawn to dusk' + 'Hiking … sunrise to sunset' count; VER 8 = Oct 28 night: the gate counts only key rows whose wording is on a page we read; VER 7 = Oct 28 11 AM: whole-PDF read when a slice is unreadable, browser read for script pages, '24/7', agency-wide key rows left out of the gate; VER 6 = Oct 28 10:15 AM (regrade 3): headings ending ':' dropped, no statewide licence prices / nationwide notices / legal text, campground hours apart, days need a time; VER 5 =: debug text for gate misses; VER 4 =: the page-list unpack fix; VER 3 was the 6:40 AM (chat 11's grade + regrade): schedule / labelled rows count; questions, events, '$N million' never; attraction hours labelled
+VER = 11   # Oct 29 (Fable's v10 grade, 75%): a season line needs a season word (year-round / seasonal / open from <month> / closed <month>), 'weekday(s)' alone is not a day, attraction hours (beach, range, pool, museum...) carry scope 'attraction'; VER 10 = Oct 28 11:30 PM (Brandon ruling 'Season'): a line with no day and no time ('Open year-round', 'seasonal') goes to `season`, `hours` keeps only lines with a day or a time; a park whose pages print no hours says so (`hours_note`); VER 9 = Oct 28 night: PDF line-break hyphens joined, '9 to 5' after open/daily/hours, 'Open dawn to dusk' + 'Hiking … sunrise to sunset' count; VER 8 = Oct 28 night: the gate counts only key rows whose wording is on a page we read; VER 7 = Oct 28 11 AM: whole-PDF read when a slice is unreadable, browser read for script pages, '24/7', agency-wide key rows left out of the gate; VER 6 = Oct 28 10:15 AM (regrade 3): headings ending ':' dropped, no statewide licence prices / nationwide notices / legal text, campground hours apart, days need a time; VER 5 =: debug text for gate misses; VER 4 =: the page-list unpack fix; VER 3 was the 6:40 AM (chat 11's grade + regrade): schedule / labelled rows count; questions, events, '$N million' never; attraction hours labelled
 QUEUE = T.QUEUE
 STAT = {'parks': 0, 'pages_read': 0, 'hours': 0, 'fees': 0, 'permits': 0, 'none': 0, 'no_page': 0, 'skipped_fresh': 0, 'errors': 0}
 
@@ -61,6 +61,9 @@ def clean(s): return ' '.join(s.split())[:MAXLEN]
 ABBR = re.compile(r'\b(jan|feb|mar|apr|jun|jul|aug|sept?|oct|nov|dec|mon|tues?|wed|thurs?|fri|sat|sun|u\.s|st|mt|ft|dr|mr|mrs|ms|no|vs|etc|approx|inc|co|ave|rd|hwy|rte)\.(?=\s)', re.I)
 SUBJECT = re.compile(r'\b(hiking|hikers|walking|access|open|memorial|building|birthplace|homestead|park|parks|area|areas|refuge|forest|preserve|reserve|sanctuary|site|grounds|trails?|gates?|day[- ]use|visitors?|public|property|lands?|wma|lake|beach|campground|office|visitor cent(?:er|re)|museum|building|lodge|center|centre|headquarters|range|hatchery|cave|tours?|we|it)\b', re.I)
 OFFICE = re.compile(r'office|headquarters|visitor cent|business hours|call|phone', re.I)
+SEASONWORD = re.compile(r'year[- ]round|all year|seasonal(?:ly)?|\bseason\b|(?:open|closed?|opens|closes)\b[^.]{0,30}\b(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\b|\b(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\.?\s*(?:\d{1,2}\s*)?(?:-|–|to|through|thru)\s*(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)|memorial day|labor day|summer|winter|spring|fall|autumn', re.I)   # v11 (Fable a)
+WEEKDAY_ONLY = re.compile(r'\bweekdays?\b', re.I)
+ATTRACT = re.compile(r'\bbeach(?:es)?\b|swim(?:ming)? (?:area|beach)|\bpool\b|(?:shooting|archery|rifle|target) range|\brange hours\b|\bmuseum\b|nature cent(?:er|re)|visitor cent(?:er|re)|\bmarina\b|golf|mini(?:ature)? golf|\bcave tours?\b|splash ?pad|gift shop|\bstables?\b|\bboat rentals?\b', re.I)   # v11 (Fable c)
 BUILDING = re.compile(r'memorial building|memorial|museum|visitor cent(?:er|re)|lodge|cabin|tour|cave tours?|house|mansion|gift shop|restaurant|pool|marina|gallery|exhibit|planetarium|center|centre', re.I)
 HUNTSEASON = re.compile(r'season|hunting|hunters|quota|shooting hours|legal (?:shooting|hunting)|dove|deer|turkey|waterfowl|grouse|quail|squirrel', re.I)
 SCHEDULE = re.compile(r'^\s*(?:open|hours|' + DAYS + r'(?:\s*(?:-|–|to|through|thru)\s*' + DAYS + r')?|daily|every day|year[- ]round|seven days a week|7 days a week|summer|winter|spring|fall|' + TIME + r')\b', re.I)
@@ -121,7 +124,9 @@ def facts_in(text, park_name='', url=''):
             elif OFFICE.search(sen) and not re.search(r'\b(park|area|refuge|forest|grounds|gates?|trails?|day[- ]use)\b', sen, re.I): put('office_hours', sen)
             elif HOURS_BAD.search(sen): continue
             elif BUILDING.search(sen) and not re.search(r'\b(park|area|refuge|forest|grounds|gates?|trails?|day[- ]use|preserve|sanctuary|property|lands?)\b', sen, re.I): put('attraction_hours', sen)   # 'The Memorial Building closes at 4:30 pm' is that building's time
-            elif not CLOCK.search(sen) and not DAYWORD.search(sen): put('season', sen)   # v10 (Brandon 'Season'): 'Open year-round' = a season fact, not hours
+            elif ATTRACT.search(sen) and not re.match(r'(?i)^(?:the )?(?:park|area|grounds|gates?|refuge|forest|preserve|property|day[- ]use)\b', sen): put('attraction_hours', sen)   # v11 (Fable c): 'Beach hours 10-6' is the beach's time, not park hours
+            elif not CLOCK.search(sen) and (not DAYWORD.search(sen) or not DAYWORD.search(WEEKDAY_ONLY.sub('', sen))):   # v10 (Brandon 'Season') + v11: 'weekday' alone is not a day
+                if SEASONWORD.search(sen): put('season', sen)   # v11 (Fable a): a season line needs a season word; 'Hiking A 9.2-mile trail is open…' is dropped
             else: put('hours', sen)
         if FEE_RX.search(sen):
             if not has_subject or MILLION.search(sen): continue
@@ -162,6 +167,7 @@ def one_park(ref, park, web, docs, ky):
             for s in f[k]:
                 row = {'line': s, 'url': u, 'read': TODAY}
                 if tour: row['src_note'] = 'tourism site (state government), not the park agency'
+                if k == 'attraction_hours': row['scope'] = 'attraction'   # v11 (Fable c): a card says 'Beach: 10 am-6 pm', never park hours
                 if len(r[k]) < 6: r[k].append(row)
         if r['hours'] and r['fees']: break
     for k in ('hours', 'fees', 'permits', 'office_hours', 'attraction_fees', 'attraction_hours', 'campground_hours', 'hunting_hours', 'other_fees', 'season'):

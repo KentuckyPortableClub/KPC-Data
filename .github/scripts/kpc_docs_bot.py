@@ -36,7 +36,7 @@ UA = 'KPC park documents (https://kentuckyportableclub.github.io/KPC-Links/; ham
 GAP = 2.0
 STRIKES_OUT = 3
 REFRESH_DAYS = 30
-VER = 6   # Oct 29 (Fable's notes, Opus): a raster map PDF (under 300 characters of text) is judged by its FILE NAME, a readable PDF that does not name the park gets the file-name test before it is thrown out ('TeterCreekLakeFinal11x17_300dpi.pdf'), agency-wide rules pages kept but labelled rules_scope 'agency', court-rules / policies-and-links / admincode / stamp-art pages never rules, COUNT line + a >15% map drop keeps the saved copy; v5 = Oct 28 noon: chat 11's chunks 1-3 grade (shared rules pages, inciweb / Google pins / error maps, forest-level maps) + KY regrade 3 (USDA OIG, forest home pages). v4 = Oct 28 6:34 AM: Brandon's 8 rulings DOC-3..DOC-11 (campground / combined / overview / dates / hunting / Avenza / same age); v3 = chat 8 F1-F10 + chat 11's grade. Records made by an older rule set are read again
+VER = 7   # Oct 29 (chat 11's NE/MW grade): a map viewer deep-linked by the area's own ID counts as naming the park (names_park 'link'); VER 6 = Oct 29 (Fable's notes, Opus): a raster map PDF (under 300 characters of text) is judged by its FILE NAME, a readable PDF that does not name the park gets the file-name test before it is thrown out ('TeterCreekLakeFinal11x17_300dpi.pdf'), agency-wide rules pages kept but labelled rules_scope 'agency', court-rules / policies-and-links / admincode / stamp-art pages never rules, COUNT line + a >15% map drop keeps the saved copy; v5 = Oct 28 noon: chat 11's chunks 1-3 grade (shared rules pages, inciweb / Google pins / error maps, forest-level maps) + KY regrade 3 (USDA OIG, forest home pages). v4 = Oct 28 6:34 AM: Brandon's 8 rulings DOC-3..DOC-11 (campground / combined / overview / dates / hunting / Avenza / same age); v3 = chat 8 F1-F10 + chat 11's grade. Records made by an older rule set are read again
 PDF_FIRST = 400_000
 PDF_MAX = 2_000_000
 TODAY = time.strftime('%Y-%m-%d')
@@ -369,6 +369,8 @@ def check_url(u, want_text=True, name=''):
         m = re.search(r'(?:last updated|page last updated|updated|last modified|date modified)\s*[:\-]?\s*((?:' + MONTHS + r')\.?\s+\d{1,2},?\s+(?:19|20)\d\d|(?:19|20)\d\d-\d\d-\d\d|\d{1,2}/\d{1,2}/(?:19|20)\d\d)', txt, re.I)
         if m and plausible(re.search(r'(?:19|20)\d\d', m.group(1)).group()): r['posted'], r['posted_how'] = m.group(1), "page last updated (the page's own line, not the map's date; chat 8 F4)"
         r['names_park'] = names_park(name, txt) if name else None
+        if name and not r['names_park'] and names_park(name, link_id_words(u)):   # v7 (chat 11, Oct 29): a viewer deep-linked by the area's own ID ('Viewer=Public_Access_Lands&ID=CYLON WILDLIFE AREA') IS that area's map
+            r['names_park'] = 'link'; r['status_note'] = 'ok (park named in the link: an ID-addressed map viewer)'
         if name and r['names_park'] is False and len(txt) > 300: r['status'] = 'opened, a page that does not name this park (a generic agency page is not its map)'; return r
         if len(txt) < 300 and re.search(r'enable javascript|loading|<app-root|ng-app|__NEXT_DATA__|data-reactroot', html, re.I): r['shell'] = True
     if not r['posted']:
@@ -392,6 +394,17 @@ def covers(txt, name):
     for c in AREA_NAMES:
         if len(c) >= 6 and c in t: n += 1
     return n
+
+
+def link_id_words(u):
+    """v7: the VALUES of the link's ID / name / unit / area / property query parts, as words ('' when none)."""
+    try: q = urllib.parse.parse_qsl(urllib.parse.urlparse(html_unescape(u)).query)
+    except Exception: return ''
+    return ' '.join(v.replace('_', ' ').replace('+', ' ') for k, v in q if k.lower() in ('id', 'name', 'unit', 'unitname', 'area', 'areaname', 'property', 'site', 'park', 'parkname', 'propname') and len(v) > 3)
+
+
+def html_unescape(u):
+    return u.replace('&amp;', '&')
 
 
 def file_words(u):
