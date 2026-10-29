@@ -154,7 +154,7 @@ def c_access(path, new, live, ctx):
             n_new += 1
             if abs(q[0]) < .01 and abs(q[1]) < .01: outside += 1; continue
             if v[5] is not None and not line and km(v[5], v[6], q[0], q[1]) > K.get('far_km', 100): far.append((ref, round(km(v[5], v[6], q[0], q[1]))))
-            elif not ca and not in_state(st, q[0], q[1], .3): outside += 1   # Canada: no province outlines on file; the 100 km pin test still runs
+            elif not ca and not (v[5] is not None and km(v[5], v[6], q[0], q[1]) <= 5) and not ((pin_of(ref) or (0, 0, '', ''))[3] == 'multi') and not in_state(st, q[0], q[1], .3): outside += 1   # Canada: no province outlines; tune Oct 29: a point within 5 km of its own park pin, or on a multi-state park, is never 'outside'
     n_old = sum(len(v) for v in ((live or {}).get('parks') or {}).values())
     if far: holds.append(f'F-A1 {len(far)} points over {K.get("far_km", 100)} km from their park pin (not a line park), e.g. ' + ', '.join(f'{r} {k} km' for r, k in far[:3]))
     if drop(n_old, n_new, .6, 20): holds.append(f'F-A2 points {n_old} -> {n_new} (more than 40% gone)')
