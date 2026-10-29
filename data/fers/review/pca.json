@@ -9,52 +9,6 @@
    "area": "pca",
    "state": "US-CA",
    "refs": [
-    "US-4460",
-    "US-4539"
-   ],
-   "names": {
-    "US-4460": "Mendocino National Forest",
-    "US-4539": "Berryessa Snow Mountain National Monument"
-   },
-   "what": "not sure",
-   "kind": "area",
-   "size": "144978.7 ac",
-   "sort": 144978.7,
-   "reason": "the outlines overlap, but the BLM surface management map / Forest Service ownership map (Basic Ownership, 2015 data) does not show this patch as the agency's land (that map may be out of date): check the official map; PAD-US cross-check",
-   "id": "US-4460+US-4539@area@39.473,-122.807",
-   "sources": {
-    "US-4460": "downloaded 2026-10-29",
-    "US-4539": "downloaded 2026-10-29"
-   },
-   "checked": "2026-10-29"
-  },
-  {
-   "area": "pca",
-   "state": "US-CA",
-   "refs": [
-    "US-4463",
-    "US-4545"
-   ],
-   "names": {
-    "US-4463": "San Bernardino National Forest",
-    "US-4545": "Sand to Snow National Monument"
-   },
-   "what": "not sure",
-   "kind": "area",
-   "size": "69995.0 ac",
-   "sort": 69995.0,
-   "reason": "the outlines overlap, but the BLM surface management map / Forest Service ownership map (Basic Ownership, 2015 data) does not show this patch as the agency's land (that map may be out of date): check the official map; PAD-US cross-check",
-   "id": "US-4463+US-4545@area@34.102,-116.775",
-   "sources": {
-    "US-4463": "downloaded 2026-10-29",
-    "US-4545": "downloaded 2026-10-29"
-   },
-   "checked": "2026-10-29"
-  },
-  {
-   "area": "pca",
-   "state": "US-CA",
-   "refs": [
     "US-0649",
     "US-4465"
    ],
@@ -278,29 +232,6 @@
     "US-0058": "downloaded 2026-10-29",
     "US-1188": "downloaded 2026-10-29",
     "USGS water": "USGS NHDPlus HR file 2022-04-19 (the same NHDPlus HR water, from USGS's download files)"
-   },
-   "checked": "2026-10-29"
-  },
-  {
-   "area": "pca",
-   "state": "US-CA",
-   "refs": [
-    "US-1197",
-    "US-7379"
-   ],
-   "names": {
-    "US-1197": "Sinkyone Wilderness State Park",
-    "US-7379": "King Range National Conservation Area"
-   },
-   "what": "not sure",
-   "kind": "area",
-   "size": "521.1 ac",
-   "sort": 521.1,
-   "reason": "the outlines overlap, but the BLM surface management map does not show this patch as the agency's land (that map may be out of date): check the official map; PAD-US cross-check",
-   "id": "US-1197+US-7379@area@39.964,-123.975",
-   "sources": {
-    "US-1197": "downloaded 2026-10-29",
-    "US-7379": "downloaded 2026-10-29"
    },
    "checked": "2026-10-29"
   },
@@ -1057,16 +988,16 @@
     "US-1126": "Anza Borrego Desert State Park",
     "US-4454": "Cleveland National Forest"
    },
-   "what": "water map weak here (fix later: a better water source)",
+   "what": "more than one owner on the patch (all public): live, look later",
    "kind": "area",
    "size": "55.2 ac",
    "sort": 55.2,
-   "reason": "water not checked (the USGS water map did not answer): run pass 5 \u00b7 ['FED:USFS', 'STATE']",
+   "reason": "candidate \u00b7 ['FED:USFS', 'STATE']",
    "id": "US-1126+US-4454@area@33.363,-116.580",
    "sources": {
     "US-1126": "downloaded 2026-10-29",
     "US-4454": "downloaded 2026-10-29",
-    "USGS water": "USGS NHDPlus HR file 2022-09-13 (the same NHDPlus HR water, from USGS's download files)"
+    "USGS water": "saved copy of the USGS map, read 2026-10-29"
    },
    "checked": "2026-10-29"
   },
@@ -2201,7 +2132,7 @@
    "kind": "pair",
    "size": "22 same-day activations",
    "sort": 22.0,
-   "reason": "not sure: the outlines overlap, but the BLM surface management map / Forest Service ownership map (Basic Ownership, 2015 data) does not show this patch as the agency's land (that map may be out of dat",
+   "reason": "dropped: inside the federal boundary, but the BLM surface management map / Forest Service ownership map (Basic Ownership, 2015 data) shows this patch is not the agency's own land (state or other land ",
    "id": "US-4463+US-4545@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (22x, POTA history)"
@@ -2987,29 +2918,6 @@
   },
   {
    "area": "pca",
-   "state": "US-CA",
-   "refs": [
-    "US-0650",
-    "US-4543"
-   ],
-   "names": {
-    "US-0650": "Mojave Preserve National Conservation Area",
-    "US-4543": "Mojave Trails National Monument"
-   },
-   "what": "not sure",
-   "kind": "area",
-   "size": "15.9 ac",
-   "sort": 15.9,
-   "reason": "the outlines overlap, but the BLM surface management map / the Park Service's own land tracts (Land Resources Division; PAD-US fee records when it does not answer) does not show this patch as the agency's land (that map may be out of date): check the official map; PAD-US cross-check",
-   "id": "US-0650+US-4543@area@34.919,-115.005",
-   "sources": {
-    "US-0650": "downloaded 2026-10-29",
-    "US-4543": "downloaded 2026-10-29"
-   },
-   "checked": "2026-10-29"
-  },
-  {
-   "area": "pca",
    "state": "",
    "refs": [
     "US-0647",
@@ -3115,7 +3023,7 @@
    "kind": "pair",
    "size": "15 same-day activations",
    "sort": 15.0,
-   "reason": "not sure: the outlines overlap, but the BLM surface management map / Forest Service ownership map (Basic Ownership, 2015 data) does not show this patch as the agency's land (that map may be out of dat",
+   "reason": "dropped: inside the federal boundary, but the BLM surface management map / Forest Service ownership map (Basic Ownership, 2015 data) shows this patch is not the agency's own land (state or other land ",
    "id": "US-4460+US-4539@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (15x, POTA history)"
@@ -5096,29 +5004,6 @@
   },
   {
    "area": "pca",
-   "state": "US-CA",
-   "refs": [
-    "US-0175",
-    "US-12114"
-   ],
-   "names": {
-    "US-0175": "Cibola National Wildlife Refuge",
-    "US-12114": "Chuckwalla National Monument"
-   },
-   "what": "not sure",
-   "kind": "area",
-   "size": "7.1 ac",
-   "sort": 7.1,
-   "reason": "the outlines overlap, but the BLM surface management map does not show this patch as the agency's land (that map may be out of date): check the official map; PAD-US cross-check",
-   "id": "US-0175+US-12114@area@33.327,-114.730",
-   "sources": {
-    "US-0175": "downloaded 2026-10-29",
-    "US-12114": "downloaded 2026-10-29"
-   },
-   "checked": "2026-10-29"
-  },
-  {
-   "area": "pca",
    "state": "",
    "refs": [
     "US-0041",
@@ -5323,29 +5208,6 @@
    "id": "US-4463+US-4544@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (7x, POTA history)"
-   },
-   "checked": "2026-10-29"
-  },
-  {
-   "area": "pca",
-   "state": "US-CA",
-   "refs": [
-    "US-1172",
-    "US-4540"
-   ],
-   "names": {
-    "US-1172": "Mendocino Headlands State Park",
-    "US-4540": "California Coastal National Monument"
-   },
-   "what": "not sure",
-   "kind": "area",
-   "size": "6.3 ac",
-   "sort": 6.3,
-   "reason": "the outlines overlap, but the BLM surface management map does not show this patch as the agency's land (that map may be out of date): check the official map; PAD-US cross-check",
-   "id": "US-1172+US-4540@area@39.307,-123.812",
-   "sources": {
-    "US-1172": "downloaded 2026-10-29",
-    "US-4540": "downloaded 2026-10-29"
    },
    "checked": "2026-10-29"
   },
@@ -6081,29 +5943,6 @@
    "area": "pca",
    "state": "US-CA",
    "refs": [
-    "US-0041",
-    "US-4545"
-   ],
-   "names": {
-    "US-0041": "Joshua Tree National Park",
-    "US-4545": "Sand to Snow National Monument"
-   },
-   "what": "not sure",
-   "kind": "area",
-   "size": "1.3 ac",
-   "sort": 1.3,
-   "reason": "the outlines overlap, but the BLM surface management map / the Park Service's own land tracts (Land Resources Division; PAD-US fee records when it does not answer) does not show this patch as the agency's land (that map may be out of date): check the official map; PAD-US cross-check",
-   "id": "US-0041+US-4545@area@33.973,-116.446",
-   "sources": {
-    "US-0041": "downloaded 2026-10-29",
-    "US-4545": "downloaded 2026-10-29"
-   },
-   "checked": "2026-10-29"
-  },
-  {
-   "area": "pca",
-   "state": "US-CA",
-   "refs": [
     "US-0639",
     "US-1153"
    ],
@@ -6120,52 +5959,6 @@
    "sources": {
     "US-0639": "downloaded 2026-10-29",
     "US-1153": "downloaded 2026-10-29"
-   },
-   "checked": "2026-10-29"
-  },
-  {
-   "area": "pca",
-   "state": "US-CA",
-   "refs": [
-    "US-1168",
-    "US-4540"
-   ],
-   "names": {
-    "US-1168": "MacKerricher State Park",
-    "US-4540": "California Coastal National Monument"
-   },
-   "what": "not sure",
-   "kind": "area",
-   "size": "1.0 ac",
-   "sort": 1.0,
-   "reason": "the outlines overlap, but the BLM surface management map does not show this patch as the agency's land (that map may be out of date): check the official map; PAD-US cross-check",
-   "id": "US-1168+US-4540@area@39.471,-123.809",
-   "sources": {
-    "US-1168": "downloaded 2026-10-29",
-    "US-4540": "downloaded 2026-10-29"
-   },
-   "checked": "2026-10-29"
-  },
-  {
-   "area": "pca",
-   "state": "US-CA",
-   "refs": [
-    "US-1192",
-    "US-4540"
-   ],
-   "names": {
-    "US-1192": "Russian Gulch State Park",
-    "US-4540": "California Coastal National Monument"
-   },
-   "what": "not sure",
-   "kind": "area",
-   "size": "1.0 ac",
-   "sort": 1.0,
-   "reason": "the outlines overlap, but the BLM surface management map does not show this patch as the agency's land (that map may be out of date): check the official map; PAD-US cross-check",
-   "id": "US-1192+US-4540@area@39.329,-123.813",
-   "sources": {
-    "US-1192": "downloaded 2026-10-29",
-    "US-4540": "downloaded 2026-10-29"
    },
    "checked": "2026-10-29"
   }
