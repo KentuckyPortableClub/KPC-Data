@@ -2,11 +2,11 @@
  "about": "Park truth checker: official acreage vs our outline, handover hints, second-witness score. Review lists only: nothing here changes a key or a card.",
  "area": "US-IL",
  "counts": {
-  "agree": 32,
+  "agree": 27,
   "handover_hints": 15,
   "no_page": 1,
   "no_size": 40,
-  "off": 65,
+  "off": 70,
   "ours_unknown": 3,
   "parks": 219,
   "retired": 0,
@@ -192,7 +192,7 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-0281": {
@@ -349,7 +349,7 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-0282": {
@@ -478,7 +478,7 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-0283": {
@@ -571,7 +571,7 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-0284": {
@@ -685,22 +685,23 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 12,
+   "ver": 13,
    "verdict": "agree"
   },
   "US-0285": {
+   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Meredosia National Wildlife Refuge",
    "official": {
-    "acres": 13000.0,
-    "as": "13,000 acres",
-    "clean": false,
-    "line": "ldlife Refuge, Chautauqua National Wildlife Refuge and Meredosia National Wildlife Refuge. The complex totals 13,000 acres of backwater lakes, bottomland forests, floodplain wetlands and upland habitats. Our Mission The mission of t",
+    "acres": 2350.0,
+    "as": "2,350 acres",
+    "clean": true,
+    "line": "th varying habitat types. Management Units The Island Meredosia Island Unit is the largest management unit at 2,350 acres in size and is a mosaic of habitat types with seasonal wetlands, bottomland forest and scrub-shrub habitat. T",
     "read": "2026-10-29",
-    "sent": "The complex totals 13,000 acres of backwater lakes, bottomland forests, floodplain wetlands and upland habitats.",
+    "sent": "Meredosia Island Unit is the largest management unit at 2,350 acres in size and is a mosaic of habitat types with seasonal wetlands, bottomland forest and scrub-shrub habitat.",
     "url": "https://www.fws.gov/refuge/meredosia/about-us",
-    "why": "part (a lake, a purchase, a campground…)"
+    "why": "clean total; the agency's pages disagree: another of its pages says 13,000 acres (that one matches our outline)"
    },
    "ours": {
     "acres": 11537,
@@ -752,13 +753,13 @@
      "why": "FWS refuge about page"
     }
    ],
-   "pct": 11,
+   "pct": 391,
    "same_agency": false,
-   "score": 8,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 0,
     "source": 2
    },
    "sizes": [
@@ -836,8 +837,8 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 12,
-   "verdict": "agree"
+   "ver": 13,
+   "verdict": "off"
   },
   "US-0286": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
@@ -988,7 +989,7 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-0287": {
@@ -1083,7 +1084,7 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-0376": {
@@ -1230,7 +1231,7 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-0523": {
@@ -1315,7 +1316,7 @@
     }
    ],
    "t": "State Nature Preserve",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-0526": {
@@ -1362,7 +1363,7 @@
    },
    "sizes": [],
    "t": "State Nature Preserve",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   },
   "US-0571": {
@@ -1408,7 +1409,7 @@
    },
    "sizes": [],
    "t": "State Historic Site",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   },
   "US-0841": {
@@ -1464,7 +1465,7 @@
    },
    "sizes": [],
    "t": "National Historic Site",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   },
   "US-0978": {
@@ -1564,7 +1565,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "agree"
   },
   "US-0979": {
@@ -1650,7 +1651,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-0980": {
@@ -1660,7 +1661,7 @@
    "ours": null,
    "score": null,
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no outline"
   },
   "US-0981": {
@@ -1747,7 +1748,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-0982": {
@@ -1833,7 +1834,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-0983": {
@@ -1879,22 +1880,23 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   },
   "US-0984": {
+   "cause": "our union: one of our pieces alone matches the agency (double count?)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Castle Rock State Park",
    "official": {
-    "acres": 4160.0,
-    "as": "4,160 acre",
-    "clean": false,
-    "line": "by sandbars formed by waves at the mouth of the river, creating a sluggish, marshy habitat.&lt;/p>\\n&lt;p>The 4,160-acre park, consisting of two separate areas (North Unit and South Unit), offers ample opportunities for swimming,",
+    "acres": 2000.0,
+    "as": "2,000 acres",
+    "clean": true,
+    "line": "uisition by the State of Illinois started in 1970. At the present time, Castle Rock consists of approximately 2,000 acres, 710 of which are designated as an Illinois Nature Preserve. The site was dedicated as a state park in 1978.",
     "read": "2026-10-29",
-    "sent": "idges are crowned by black oak forests with an open, savanna-like appearance.&nbsp;For much of the year, a stream known as Dead River is&nbsp;blocked by sandbars formed by waves at the mouth of the river, creating a sluggish, marshy habitat.&lt;/p>\\n&lt;p>The 4,160-acre park, consisting of two separ",
-    "url": "https://dnr.illinois.gov/parks/park.castlerock.html",
-    "why": "part (a lake, a purchase, a campground…)"
+    "sent": "At the present time, Castle Rock consists of approximately 2,000 acres, 710 of which are designated as an Illinois Nature Preserve.",
+    "url": "https://dnr.illinois.gov/parks/about/park.castlerock.html",
+    "why": "clean total; the agency's pages disagree: another of its pages says 4,160 acre (that one matches our outline)"
    },
    "ours": {
     "acres": 4015,
@@ -1940,13 +1942,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 3,
+   "pct": 101,
    "same_agency": false,
-   "score": 7,
+   "score": 5,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 2,
+    "size": 0,
     "source": 2
    },
    "sizes": [
@@ -1997,8 +1999,8 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
-   "verdict": "agree"
+   "ver": 13,
+   "verdict": "off"
   },
   "US-0985": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
@@ -2106,7 +2108,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-0986": {
@@ -2242,7 +2244,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-0987": {
@@ -2310,7 +2312,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-0988": {
@@ -2396,7 +2398,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-0989": {
@@ -2458,7 +2460,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-0990": {
@@ -2468,22 +2470,23 @@
    "ours": null,
    "score": null,
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no outline"
   },
   "US-0991": {
+   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Eldon Hazlet State Park",
    "official": {
-    "acres": 4160.0,
-    "as": "4,160 acre",
-    "clean": false,
-    "line": "by sandbars formed by waves at the mouth of the river, creating a sluggish, marshy habitat.&lt;/p>\\n&lt;p>The 4,160-acre park, consisting of two separate areas (North Unit and South Unit), offers ample opportunities for swimming,",
+    "acres": 3000.0,
+    "as": "3,000 acre",
+    "clean": true,
+    "line": "inois state park system to be located on the largest man-made lake in Illinois. Eldon Hazlet State Park is a 3,000-acre site on the west Shore of Carlyle Lake, a Kaskaskia River impoundment. The site is located 3 miles north of",
     "read": "2026-10-29",
-    "sent": "idges are crowned by black oak forests with an open, savanna-like appearance.&nbsp;For much of the year, a stream known as Dead River is&nbsp;blocked by sandbars formed by waves at the mouth of the river, creating a sluggish, marshy habitat.&lt;/p>\\n&lt;p>The 4,160-acre park, consisting of two separ",
-    "url": "https://dnr.illinois.gov/parks/park.eldonhazlet.html",
-    "why": "part (a lake, a purchase, a campground…)"
+    "sent": "Eldon Hazlet State Park is a 3,000-acre site on the",
+    "url": "https://dnr.illinois.gov/content/dam/soi/en/web/dnr/publications/documents/00000099.pdf",
+    "why": "clean total; the agency's pages disagree: another of its pages says 4,160 acre (that one matches our outline)"
    },
    "ours": {
     "acres": 4272,
@@ -2541,13 +2544,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 3,
+   "pct": 42,
    "same_agency": false,
-   "score": 8,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 0,
     "source": 2
    },
    "sizes": [
@@ -2625,8 +2628,8 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
-   "verdict": "agree"
+   "ver": 13,
+   "verdict": "off"
   },
   "US-0992": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
@@ -2707,7 +2710,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-0993": {
@@ -2793,7 +2796,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-0994": {
@@ -2889,7 +2892,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-0995": {
@@ -2966,7 +2969,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-0996": {
@@ -3039,7 +3042,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-0997": {
@@ -3110,7 +3113,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "agree"
   },
   "US-0998": {
@@ -3190,7 +3193,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "agree"
   },
   "US-0999": {
@@ -3272,7 +3275,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-1000": {
@@ -3404,7 +3407,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-1001": {
@@ -3494,7 +3497,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-1002": {
@@ -3577,7 +3580,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-1003": {
@@ -3659,7 +3662,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-1004": {
@@ -3753,7 +3756,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-1005": {
@@ -3839,7 +3842,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-1006": {
@@ -3921,7 +3924,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-1007": {
@@ -4003,7 +4006,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-1008": {
@@ -4103,7 +4106,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-1009": {
@@ -4204,7 +4207,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-10090": {
@@ -4285,7 +4288,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-10091": {
@@ -4369,7 +4372,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-10093": {
@@ -4445,7 +4448,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-10094": {
@@ -4536,7 +4539,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-10095": {
@@ -4642,7 +4645,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-1010": {
@@ -4731,7 +4734,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "agree"
   },
   "US-10100": {
@@ -4823,7 +4826,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "agree"
   },
   "US-1012": {
@@ -4923,7 +4926,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-1013": {
@@ -4931,14 +4934,14 @@
    "handover": [],
    "n": "Morrison-Rockwood State Park",
    "official": {
-    "acres": 1150.0,
-    "as": "1,150 acres",
-    "clean": false,
-    "line": "l- nut trees. History Located north of Morrison in Whiteside County, Mor- rison-Rockwood State Park comprises 1,150 acres. It was established in 1971 and is named for the city of Morrison and a combination of nearby Rock Creek and",
+    "acres": 1164.0,
+    "as": "1,164 acres",
+    "clean": true,
+    "line": "aris Illinois Beach State Park Page Content Page Content History Morrison-Rockwood State Park is comprised of 1,164 acres, located north of Morrison in Whiteside County. It was established in 1971 and officially opened for day use",
     "read": "2026-10-29",
-    "sent": "rison-Rockwood State Park comprises 1,150 acres.",
-    "url": "https://dnr.illinois.gov/content/dam/soi/en/web/dnr/publications/documents/00000769.pdf",
-    "why": "a map label (no sentence)"
+    "sent": "Morrison-Rockwood State Park is comprised of 1,164 acres, located north of Morrison in Whiteside County.",
+    "url": "https://dnr.illinois.gov/parks/about/park.morrisonrockwood.html",
+    "why": "clean total"
    },
    "ours": {
     "acres": 1147,
@@ -4978,7 +4981,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 0,
+   "pct": 1,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -5017,7 +5020,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "agree"
   },
   "US-1014": {
@@ -5122,7 +5125,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-1015": {
@@ -5190,7 +5193,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-1016": {
@@ -5261,7 +5264,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-1017": {
@@ -5366,7 +5369,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-1018": {
@@ -5471,7 +5474,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-1019": {
@@ -5566,7 +5569,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-1020": {
@@ -5702,7 +5705,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-1021": {
@@ -5777,7 +5780,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "agree"
   },
   "US-1022": {
@@ -5838,7 +5841,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "agree"
   },
   "US-1023": {
@@ -5933,7 +5936,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-1024": {
@@ -6049,7 +6052,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "agree"
   },
   "US-10241": {
@@ -6095,7 +6098,7 @@
    },
    "sizes": [],
    "t": "State Historic Site",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   },
   "US-1026": {
@@ -6185,7 +6188,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-1027": {
@@ -6270,7 +6273,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-1028": {
@@ -6387,7 +6390,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-1029": {
@@ -6526,7 +6529,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "agree"
   },
   "US-1030": {
@@ -6640,7 +6643,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-1031": {
@@ -6728,7 +6731,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-1032": {
@@ -6790,7 +6793,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-1033": {
@@ -6924,7 +6927,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-10391": {
@@ -6934,7 +6937,7 @@
    "ours": null,
    "score": null,
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no outline"
   },
   "US-10623": {
@@ -6980,7 +6983,7 @@
    },
    "sizes": [],
    "t": "State Historic Site",
-   "ver": 12,
+   "ver": 13,
    "verdict": "ours unknown"
   },
   "US-10660": {
@@ -7077,7 +7080,7 @@
     }
    ],
    "t": "State Trail",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-10661": {
@@ -7087,7 +7090,7 @@
    "ours": null,
    "score": null,
    "t": "USFS Recreation Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no outline"
   },
   "US-10662": {
@@ -7178,7 +7181,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-10664": {
@@ -7230,7 +7233,7 @@
     }
    ],
    "t": "State Game Land",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-10666": {
@@ -7277,7 +7280,7 @@
    },
    "sizes": [],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   },
   "US-10729": {
@@ -7324,7 +7327,7 @@
    },
    "sizes": [],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   },
   "US-10777": {
@@ -7387,7 +7390,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-10786": {
@@ -7434,7 +7437,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   },
   "US-10787": {
@@ -7475,7 +7478,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   },
   "US-10788": {
@@ -7485,7 +7488,7 @@
    "ours": null,
    "score": null,
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no outline"
   },
   "US-10852": {
@@ -7564,7 +7567,7 @@
     }
    ],
    "t": "State Nature Preserve",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-11043": {
@@ -7681,7 +7684,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-11144": {
@@ -7727,7 +7730,7 @@
    },
    "sizes": [],
    "t": "State Historic Site",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   },
   "US-11236": {
@@ -7773,7 +7776,7 @@
    },
    "sizes": [],
    "t": "State Historic Site",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   },
   "US-11351": {
@@ -7814,7 +7817,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   },
   "US-11716": {
@@ -7905,7 +7908,7 @@
     }
    ],
    "t": "State Nature Preserve",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-11781": {
@@ -7957,7 +7960,7 @@
    },
    "sizes": [],
    "t": "State Historic Site",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   },
   "US-11793": {
@@ -8036,7 +8039,7 @@
     }
    ],
    "t": "State Nature Preserve",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-11844": {
@@ -8118,7 +8121,7 @@
     }
    ],
    "t": "State Nature Preserve",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-11959": {
@@ -8164,7 +8167,7 @@
    },
    "sizes": [],
    "t": "Historic Site",
-   "ver": 12,
+   "ver": 13,
    "verdict": "ours unknown"
   },
   "US-12080": {
@@ -8210,7 +8213,7 @@
    },
    "sizes": [],
    "t": "State Historic Site",
-   "ver": 12,
+   "ver": 13,
    "verdict": "ours unknown"
   },
   "US-12110": {
@@ -8301,7 +8304,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-12184": {
@@ -8379,7 +8382,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-12217": {
@@ -8452,7 +8455,7 @@
     }
    ],
    "t": "State Natural Reserve",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-12314": {
@@ -8541,11 +8544,11 @@
      "line": ", 2000 - The refuge was formally authorized. May 25, 2016 - The refuge was established with the donation of a 66-acre parcel of land from the Friends of the Kankakee. You are exiting the U.S. Fish and Wildlife Service website Y",
      "total_like": false,
      "url": "https://www.fws.gov/refuge/kankakee-and-conservation-area/about-us",
-     "why": "part (a lake, a purchase, a campground…)"
+     "why": "history"
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-12327": {
@@ -8624,7 +8627,7 @@
     }
    ],
    "t": "State Nature Preserve",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-12329": {
@@ -8703,7 +8706,7 @@
     }
    ],
    "t": "State Nature Preserve",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-12332": {
@@ -8776,7 +8779,7 @@
     }
    ],
    "t": "State Nature Preserve",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-12336": {
@@ -8828,7 +8831,7 @@
    },
    "sizes": [],
    "t": "State Historic Site",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   },
   "US-12366": {
@@ -8907,7 +8910,7 @@
     }
    ],
    "t": "State Nature Preserve",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-12367": {
@@ -8965,7 +8968,7 @@
     }
    ],
    "t": "State Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-12368": {
@@ -9043,7 +9046,7 @@
     }
    ],
    "t": "State Nature Preserve",
-   "ver": 12,
+   "ver": 13,
    "verdict": "agree"
   },
   "US-12374": {
@@ -9090,7 +9093,7 @@
    },
    "sizes": [],
    "t": "State Natural Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   },
   "US-12387": {
@@ -9173,7 +9176,7 @@
     }
    ],
    "t": "State Reserve",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-12596": {
@@ -9252,7 +9255,7 @@
     }
    ],
    "t": "State Nature Preserve",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-12601": {
@@ -9383,7 +9386,7 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-12617": {
@@ -9429,7 +9432,7 @@
    },
    "sizes": [],
    "t": "State Historic Site",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   },
   "US-12627": {
@@ -9476,7 +9479,7 @@
    },
    "sizes": [],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   },
   "US-12640": {
@@ -9486,7 +9489,7 @@
    "ours": null,
    "score": null,
    "t": "State Recreation Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no outline"
   },
   "US-12641": {
@@ -9532,7 +9535,7 @@
    },
    "sizes": [],
    "t": "State Historic Site",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   },
   "US-13298": {
@@ -9542,7 +9545,7 @@
    "ours": null,
    "score": null,
    "t": "State Recreation Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no outline"
   },
   "US-13310": {
@@ -9627,7 +9630,7 @@
     }
    ],
    "t": "National Preserve",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-13353": {
@@ -9674,7 +9677,7 @@
    },
    "sizes": [],
    "t": "Habitat Protection Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   },
   "US-13512": {
@@ -9721,7 +9724,7 @@
    },
    "sizes": [],
    "t": "State Recreation Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   },
   "US-3791": {
@@ -9731,7 +9734,7 @@
    "ours": null,
    "score": null,
    "t": "National Historic Trail",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no outline"
   },
   "US-4092": {
@@ -9831,7 +9834,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "agree"
   },
   "US-4093": {
@@ -9977,7 +9980,7 @@
     }
    ],
    "t": "State Recreation Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "agree"
   },
   "US-4094": {
@@ -10100,7 +10103,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-4095": {
@@ -10191,7 +10194,7 @@
     }
    ],
    "t": "State Recreation Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-4096": {
@@ -10288,7 +10291,7 @@
     }
    ],
    "t": "State Recreation Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-4097": {
@@ -10419,7 +10422,7 @@
     }
    ],
    "t": "State Recreation Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-4098": {
@@ -10503,7 +10506,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "agree"
   },
   "US-4099": {
@@ -10617,7 +10620,7 @@
     }
    ],
    "t": "State Recreation Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-4100": {
@@ -10694,7 +10697,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-4101": {
@@ -10808,7 +10811,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-4102": {
@@ -10894,7 +10897,7 @@
     }
    ],
    "t": "State Recreation Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-4103": {
@@ -10999,7 +11002,7 @@
     }
    ],
    "t": "State Recreation Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-4104": {
@@ -11104,7 +11107,7 @@
     }
    ],
    "t": "State Recreation Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-4105": {
@@ -11114,7 +11117,7 @@
    "ours": null,
    "score": null,
    "t": "State Recreation Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no outline"
   },
   "US-4106": {
@@ -11228,7 +11231,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "agree"
   },
   "US-4107": {
@@ -11326,7 +11329,7 @@
     }
    ],
    "t": "State Recreation Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "agree"
   },
   "US-4108": {
@@ -11419,7 +11422,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-4109": {
@@ -11476,7 +11479,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-4110": {
@@ -11576,7 +11579,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-4111": {
@@ -11642,7 +11645,7 @@
     }
    ],
    "t": "State Nature Preserve",
-   "ver": 12,
+   "ver": 13,
    "verdict": "agree"
   },
   "US-4112": {
@@ -11785,7 +11788,7 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-4113": {
@@ -11848,7 +11851,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-4114": {
@@ -11994,7 +11997,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "agree"
   },
   "US-4115": {
@@ -12094,7 +12097,7 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-4116": {
@@ -12171,7 +12174,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-4117": {
@@ -12268,7 +12271,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "agree"
   },
   "US-4118": {
@@ -12278,7 +12281,7 @@
    "ours": null,
    "score": null,
    "t": "State Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no outline"
   },
   "US-4119": {
@@ -12330,7 +12333,7 @@
    },
    "sizes": [],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   },
   "US-4120": {
@@ -12445,7 +12448,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-4121": {
@@ -12492,7 +12495,7 @@
    },
    "sizes": [],
    "t": "Wildlife Management Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   },
   "US-4122": {
@@ -12560,7 +12563,7 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-4123": {
@@ -12675,7 +12678,7 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-4124": {
@@ -12792,7 +12795,7 @@
     }
    ],
    "t": "State Nature Preserve",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-4125": {
@@ -12871,7 +12874,7 @@
     }
    ],
    "t": "State Nature Preserve",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-4126": {
@@ -12953,7 +12956,7 @@
     }
    ],
    "t": "State Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-4127": {
@@ -13000,7 +13003,7 @@
    },
    "sizes": [],
    "t": "State Natural Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   },
   "US-4128": {
@@ -13097,7 +13100,7 @@
     }
    ],
    "t": "State Conservation Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-4129": {
@@ -13202,7 +13205,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-4130": {
@@ -13334,7 +13337,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-4131": {
@@ -13435,7 +13438,7 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-4132": {
@@ -13546,7 +13549,7 @@
     }
    ],
    "t": "State Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-4133": {
@@ -13655,7 +13658,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-4134": {
@@ -13757,7 +13760,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-4135": {
@@ -13804,7 +13807,7 @@
    },
    "sizes": [],
    "t": "State Natural Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   },
   "US-4136": {
@@ -13912,22 +13915,23 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-4137": {
+   "cause": "our union: one of our pieces alone matches the agency (double count?)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Lowden-Miller State Forest",
    "official": {
-    "acres": 4160.0,
-    "as": "4,160 acre",
-    "clean": false,
-    "line": "by sandbars formed by waves at the mouth of the river, creating a sluggish, marshy habitat.&lt;/p>\\n&lt;p>The 4,160-acre park, consisting of two separate areas (North Unit and South Unit), offers ample opportunities for swimming,",
+    "acres": 2291.0,
+    "as": "2,291 acres",
+    "clean": true,
+    "line": "and preserving its beauty for future generations. Named for the family, Lowden-Miller State Forest now totals 2,291 acres. It is located across the Rock River from another DNR property, Castle Rock Sate Park, which oversees its dai",
     "read": "2026-10-29",
-    "sent": "idges are crowned by black oak forests with an open, savanna-like appearance.&nbsp;For much of the year, a stream known as Dead River is&nbsp;blocked by sandbars formed by waves at the mouth of the river, creating a sluggish, marshy habitat.&lt;/p>\\n&lt;p>The 4,160-acre park, consisting of two separ",
-    "url": "https://dnr.illinois.gov/parks/park.lowdenmiller.html",
-    "why": "part (a lake, a purchase, a campground…)"
+    "sent": "Named for the family, Lowden-Miller State Forest now totals 2,291 acres.",
+    "url": "https://dnr.illinois.gov/parks/about/park.lowdenmiller.html",
+    "why": "clean total; the agency's pages disagree: another of its pages says 4,160 acre (that one matches our outline)"
    },
    "ours": {
     "acres": 4692,
@@ -13973,13 +13977,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 13,
+   "pct": 105,
    "same_agency": false,
-   "score": 8,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 0,
     "source": 2
    },
    "sizes": [
@@ -14039,8 +14043,8 @@
     }
    ],
    "t": "State Forest",
-   "ver": 12,
-   "verdict": "agree"
+   "ver": 13,
+   "verdict": "off"
   },
   "US-4138": {
    "checked": "2026-10-29",
@@ -14086,7 +14090,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   },
   "US-4139": {
@@ -14127,7 +14131,7 @@
    },
    "sizes": [],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   },
   "US-4140": {
@@ -14263,7 +14267,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-4141": {
@@ -14354,7 +14358,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-4142": {
@@ -14469,7 +14473,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-4143": {
@@ -14564,7 +14568,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "agree"
   },
   "US-4144": {
@@ -14646,7 +14650,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-4145": {
@@ -14697,7 +14701,7 @@
    "pct": null,
    "sizes": [],
    "t": "State Nature Preserve",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no official page on file"
   },
   "US-4146": {
@@ -14833,7 +14837,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-4147": {
@@ -14932,7 +14936,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-4148": {
@@ -14979,7 +14983,7 @@
    },
    "sizes": [],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   },
   "US-4149": {
@@ -15084,22 +15088,23 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-4150": {
+   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Ray Norbut State Fish and Wildlife Area",
    "official": {
-    "acres": 4160.0,
-    "as": "4,160 acre",
-    "clean": false,
-    "line": "by sandbars formed by waves at the mouth of the river, creating a sluggish, marshy habitat.&lt;/p>\\n&lt;p>The 4,160-acre park, consisting of two separate areas (North Unit and South Unit), offers ample opportunities for swimming,",
+    "acres": 1140.0,
+    "as": "1,140 acre",
+    "clean": true,
+    "line": "Notification Park Closure Park Closure Page Content Page Content Ray Norbut State Fish and Wildlife Area is a 1,140-acre mosaic of bottomlands, woodlands, wetlands, open fields, steep hills, rocky ravines, hollows, brushy draws an",
     "read": "2026-10-29",
-    "sent": "idges are crowned by black oak forests with an open, savanna-like appearance.&nbsp;For much of the year, a stream known as Dead River is&nbsp;blocked by sandbars formed by waves at the mouth of the river, creating a sluggish, marshy habitat.&lt;/p>\\n&lt;p>The 4,160-acre park, consisting of two separ",
+    "sent": "Ray Norbut State Fish and Wildlife Area is a 1,140-acre mosaic of bottomlands, woodlands, wetlands, open fields, steep hills, rocky ravines, hollows, brushy draws and bluffs.",
     "url": "https://dnr.illinois.gov/parks/park.raynorbut.html",
-    "why": "part (a lake, a purchase, a campground…)"
+    "why": "clean total; the agency's pages disagree: another of its pages says 4,160 acre (that one matches our outline)"
    },
    "ours": {
     "acres": 3606,
@@ -15147,13 +15152,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 13,
+   "pct": 216,
    "same_agency": false,
-   "score": 8,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 0,
     "source": 2
    },
    "sizes": [
@@ -15186,8 +15191,8 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
-   "verdict": "agree"
+   "ver": 13,
+   "verdict": "off"
   },
   "US-4151": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
@@ -15318,7 +15323,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-4152": {
@@ -15386,7 +15391,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-4153": {
@@ -15396,7 +15401,7 @@
    "ours": null,
    "score": null,
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no outline"
   },
   "US-4154": {
@@ -15406,7 +15411,7 @@
    "ours": null,
    "score": null,
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no outline"
   },
   "US-4155": {
@@ -15519,7 +15524,7 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-4156": {
@@ -15666,7 +15671,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-4157": {
@@ -15741,7 +15746,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 12,
+   "ver": 13,
    "verdict": "agree"
   },
   "US-4158": {
@@ -15788,7 +15793,7 @@
    },
    "sizes": [],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   },
   "US-4159": {
@@ -15922,7 +15927,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "agree"
   },
   "US-4160": {
@@ -16051,7 +16056,7 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-4236": {
@@ -16061,7 +16066,7 @@
    "ours": null,
    "score": null,
    "t": "National Wildlife Refuge",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no outline"
   },
   "US-4482": {
@@ -16126,7 +16131,7 @@
    },
    "sizes": [],
    "t": "National Forest",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   },
   "US-4572": {
@@ -16136,7 +16141,7 @@
    "ours": null,
    "score": null,
    "t": "National Historic Trail",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no outline"
   },
   "US-4573": {
@@ -16146,7 +16151,7 @@
    "ours": null,
    "score": null,
    "t": "National Historic Trail",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no outline"
   },
   "US-7256": {
@@ -16193,7 +16198,7 @@
    },
    "sizes": [],
    "t": "National Grassland",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   },
   "US-7257": {
@@ -16298,7 +16303,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-7258": {
@@ -16344,7 +16349,7 @@
    },
    "sizes": [],
    "t": "State Historic Site",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   },
   "US-7259": {
@@ -16390,7 +16395,7 @@
    },
    "sizes": [],
    "t": "State Historic Site",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   },
   "US-7367": {
@@ -16436,7 +16441,7 @@
    },
    "sizes": [],
    "t": "National Historic Site",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   },
   "US-7368": {
@@ -16503,7 +16508,7 @@
     }
    ],
    "t": "State Historic Site",
-   "ver": 12,
+   "ver": 13,
    "verdict": "agree"
   },
   "US-7371": {
@@ -16639,7 +16644,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-7372": {
@@ -16685,7 +16690,7 @@
    },
    "sizes": [],
    "t": "State Historic Site",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   },
   "US-7373": {
@@ -16731,7 +16736,7 @@
    },
    "sizes": [],
    "t": "State Historic Site",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   },
   "US-7638": {
@@ -16854,7 +16859,7 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-7839": {
@@ -16920,7 +16925,7 @@
     }
    ],
    "t": "State Nature Preserve",
-   "ver": 12,
+   "ver": 13,
    "verdict": "agree"
   },
   "US-7853": {
@@ -17005,7 +17010,7 @@
     }
    ],
    "t": "State Nature Preserve",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-7871": {
@@ -17071,7 +17076,7 @@
     }
    ],
    "t": "State Nature Preserve",
-   "ver": 12,
+   "ver": 13,
    "verdict": "agree"
   },
   "US-7872": {
@@ -17168,7 +17173,7 @@
     }
    ],
    "t": "State Nature Preserve",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-7917": {
@@ -17240,7 +17245,7 @@
    },
    "sizes": [],
    "t": "National Monument",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   },
   "US-8267": {
@@ -17306,7 +17311,7 @@
     }
    ],
    "t": "State Recreation Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "agree"
   },
   "US-8294": {
@@ -17352,7 +17357,7 @@
    },
    "sizes": [],
    "t": "State Historic Site",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   },
   "US-8306": {
@@ -17432,7 +17437,7 @@
     }
    ],
    "t": "State Historic Site",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-8320": {
@@ -17478,7 +17483,7 @@
    },
    "sizes": [],
    "t": "State Historic Site",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   },
   "US-8378": {
@@ -17619,7 +17624,7 @@
     }
    ],
    "t": "State Wildlife Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-8379": {
@@ -17666,7 +17671,7 @@
    },
    "sizes": [],
    "t": "State Forest",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   },
   "US-8380": {
@@ -17784,7 +17789,7 @@
     }
    ],
    "t": "State Recreation Area",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-9802": {
@@ -17846,7 +17851,7 @@
     }
    ],
    "t": "Historic Site",
-   "ver": 12,
+   "ver": 13,
    "verdict": "off"
   },
   "US-9893": {
@@ -17908,7 +17913,7 @@
     }
    ],
    "t": "State Trail",
-   "ver": 12,
+   "ver": 13,
    "verdict": "unsure"
   },
   "US-9989": {
@@ -17960,7 +17965,7 @@
    },
    "sizes": [],
    "t": "State Historic Site",
-   "ver": 12,
+   "ver": 13,
    "verdict": "no size on page"
   }
  },

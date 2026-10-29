@@ -9,14 +9,14 @@ Source file: `data/truth/US-IL.json`
  "handover": [],
  "n": "Morrison-Rockwood State Park",
  "official": {
-  "acres": 1150.0,
-  "as": "1,150 acres",
-  "clean": false,
-  "line": "l- nut trees. History Located north of Morrison in Whiteside County, Mor- rison-Rockwood State Park comprises 1,150 acres. It was established in 1971 and is named for the city of Morrison and a combination of nearby Rock Creek and",
+  "acres": 1164.0,
+  "as": "1,164 acres",
+  "clean": true,
+  "line": "aris Illinois Beach State Park Page Content Page Content History Morrison-Rockwood State Park is comprised of 1,164 acres, located north of Morrison in Whiteside County. It was established in 1971 and officially opened for day use",
   "read": "2026-10-29",
-  "sent": "rison-Rockwood State Park comprises 1,150 acres.",
-  "url": "https://dnr.illinois.gov/content/dam/soi/en/web/dnr/publications/documents/00000769.pdf",
-  "why": "a map label (no sentence)"
+  "sent": "Morrison-Rockwood State Park is comprised of 1,164 acres, located north of Morrison in Whiteside County.",
+  "url": "https://dnr.illinois.gov/parks/about/park.morrisonrockwood.html",
+  "why": "clean total"
  },
  "ours": {
   "acres": 1147,
@@ -34,7 +34,7 @@ Source file: `data/truth/US-IL.json`
   "unknown_pieces": 0
  },
  "owner_now": null,
- "pct": 0,
+ "pct": 1,
  "same_agency": false,
  "score": 8,
  "t": "State Park",
@@ -235,18 +235,19 @@ Source file: `data/truth/US-IL.json`
 ## US-4137 Lowden-Miller State Forest
 ```json
 {
+ "cause": "our union: one of our pieces alone matches the agency (double count?)",
  "checked": "2026-10-29",
  "handover": [],
  "n": "Lowden-Miller State Forest",
  "official": {
-  "acres": 4160.0,
-  "as": "4,160 acre",
-  "clean": false,
-  "line": "by sandbars formed by waves at the mouth of the river, creating a sluggish, marshy habitat.&lt;/p>\\n&lt;p>The 4,160-acre park, consisting of two separate areas (North Unit and South Unit), offers ample opportunities for swimming,",
+  "acres": 2291.0,
+  "as": "2,291 acres",
+  "clean": true,
+  "line": "and preserving its beauty for future generations. Named for the family, Lowden-Miller State Forest now totals 2,291 acres. It is located across the Rock River from another DNR property, Castle Rock Sate Park, which oversees its dai",
   "read": "2026-10-29",
-  "sent": "idges are crowned by black oak forests with an open, savanna-like appearance.&nbsp;For much of the year, a stream known as Dead River is&nbsp;blocked by sandbars formed by waves at the mouth of the river, creating a sluggish, marshy habitat.&lt;/p>\\n&lt;p>The 4,160-acre park, consisting of two separ",
-  "url": "https://dnr.illinois.gov/parks/park.lowdenmiller.html",
-  "why": "part (a lake, a purchase, a campground…)"
+  "sent": "Named for the family, Lowden-Miller State Forest now totals 2,291 acres.",
+  "url": "https://dnr.illinois.gov/parks/about/park.lowdenmiller.html",
+  "why": "clean total; the agency's pages disagree: another of its pages says 4,160 acre (that one matches our outline)"
  },
  "ours": {
   "acres": 4692,
@@ -270,29 +271,30 @@ Source file: `data/truth/US-IL.json`
   "unknown_pieces": 0
  },
  "owner_now": null,
- "pct": 13,
+ "pct": 105,
  "same_agency": false,
- "score": 8,
+ "score": 6,
  "t": "State Forest",
- "verdict": "agree"
+ "verdict": "off"
 }
 ```
 
 ## US-0285 Meredosia National Wildlife Refuge
 ```json
 {
+ "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
  "checked": "2026-10-29",
  "handover": [],
  "n": "Meredosia National Wildlife Refuge",
  "official": {
-  "acres": 13000.0,
-  "as": "13,000 acres",
-  "clean": false,
-  "line": "ldlife Refuge, Chautauqua National Wildlife Refuge and Meredosia National Wildlife Refuge. The complex totals 13,000 acres of backwater lakes, bottomland forests, floodplain wetlands and upland habitats. Our Mission The mission of t",
+  "acres": 2350.0,
+  "as": "2,350 acres",
+  "clean": true,
+  "line": "th varying habitat types. Management Units The Island Meredosia Island Unit is the largest management unit at 2,350 acres in size and is a mosaic of habitat types with seasonal wetlands, bottomland forest and scrub-shrub habitat. T",
   "read": "2026-10-29",
-  "sent": "The complex totals 13,000 acres of backwater lakes, bottomland forests, floodplain wetlands and upland habitats.",
+  "sent": "Meredosia Island Unit is the largest management unit at 2,350 acres in size and is a mosaic of habitat types with seasonal wetlands, bottomland forest and scrub-shrub habitat.",
   "url": "https://www.fws.gov/refuge/meredosia/about-us",
-  "why": "part (a lake, a purchase, a campground…)"
+  "why": "clean total; the agency's pages disagree: another of its pages says 13,000 acres (that one matches our outline)"
  },
  "ours": {
   "acres": 11537,
@@ -322,11 +324,11 @@ Source file: `data/truth/US-IL.json`
   "unknown_pieces": 0
  },
  "owner_now": null,
- "pct": 11,
+ "pct": 391,
  "same_agency": false,
- "score": 8,
+ "score": 6,
  "t": "National Wildlife Refuge",
- "verdict": "agree"
+ "verdict": "off"
 }
 ```
 
