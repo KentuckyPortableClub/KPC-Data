@@ -37,6 +37,13 @@
    "ski_areas_for_HQ": 0,
    "ski_labelled": 8,
    "ski_ruling": "HQ 11:57 AM (Brandon 11:56 'Probably access points'): ski areas stay, labelled 'Nearby public access, not the park's own' + 'ski area: parking may be seasonal or paid'"
+  },
+  "v3c": {
+   "made": "2026-10-29 chat 9: chat 11 PASS (v3b) + optional tidy",
+   "dropped_road_numbers_and_bare_outside_areas": 36,
+   "points": 1826,
+   "parks": 439,
+   "status": "PASS by chat 11 (v3b); HOLD for the mass dump (freeze, HQ 12:58)"
   }
  },
  "ky_camps": [
@@ -780,22 +787,6 @@
     }
    ]
   },
-  "US-0278": {
-   "n": "Kootenai National Wildlife Refuge",
-   "st": "ID",
-   "outline": true,
-   "pts": [
-    {
-     "rule": "ridb-facility-name",
-     "la": 48.784706,
-     "lo": -116.383106,
-     "label": "Facility: Lower Kootenai River Area (nearby, outside the park line)",
-     "src": "RIDB facility 265501 (rec area Idaho Panhandle National Forests)",
-     "where": "outside",
-     "km": 4.98
-    }
-   ]
-  },
   "US-0559": {
    "n": "Ouray National Wildlife Refuge",
    "st": "UT",
@@ -868,15 +859,6 @@
      "src": "RIDB facility 234132 (rec area Monongahela National Forest)",
      "where": "inside",
      "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 38.882294,
-     "lo": -79.507211,
-     "label": "Facility: Spruce Knob-Seneca Rocks National Recreation Area (nearby, outside the park line)",
-     "src": "RIDB facility 239750 (rec area Monongahela National Forest)",
-     "where": "outside",
-     "km": 0.97
     },
     {
      "rule": "ridb-recarea-name",
@@ -6849,195 +6831,6 @@
     },
     {
      "rule": "ridb-recarea-name",
-     "la": 40.70366667,
-     "lo": -105.58505,
-     "label": "Facility: Sevenmile Road (#225)",
-     "src": "RIDB facility 248814 (rec area Arapaho & Roosevelt National Forests Pawnee NG)",
-     "where": "inside",
-     "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 40.651423,
-     "lo": -105.655431,
-     "label": "Facility: Black Hollow Road (#142, #142A-G)",
-     "src": "RIDB facility 248838 (rec area Arapaho & Roosevelt National Forests Pawnee NG)",
-     "where": "inside",
-     "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 40.828328,
-     "lo": -105.724939,
-     "label": "Facility: South Pearl Road (#178)",
-     "src": "RIDB facility 248839 (rec area Arapaho & Roosevelt National Forests Pawnee NG)",
-     "where": "inside",
-     "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 40.805958,
-     "lo": -105.772522,
-     "label": "Facility: Roaring Creek Road (#173)",
-     "src": "RIDB facility 248840 (rec area Arapaho & Roosevelt National Forests Pawnee NG)",
-     "where": "inside",
-     "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 40.817822,
-     "lo": -105.835017,
-     "label": "Facility: Jimmy Creek Road (#303)",
-     "src": "RIDB facility 248841 (rec area Arapaho & Roosevelt National Forests Pawnee NG)",
-     "where": "inside",
-     "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 40.76289,
-     "lo": -105.612557,
-     "label": "Facility: Bald Mountain Road (#517)",
-     "src": "RIDB facility 248842 (rec area Arapaho & Roosevelt National Forests Pawnee NG)",
-     "where": "inside",
-     "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 40.80971667,
-     "lo": -105.67526667,
-     "label": "Facility: Killpecker Road (#300)",
-     "src": "RIDB facility 248844 (rec area Arapaho & Roosevelt National Forests Pawnee NG)",
-     "where": "inside",
-     "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 40.659989,
-     "lo": -105.626311,
-     "label": "Facility: Cheyenne Ridge Road (#139A,B,D)",
-     "src": "RIDB facility 248845 (rec area Arapaho & Roosevelt National Forests Pawnee NG)",
-     "where": "inside",
-     "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 40.610535,
-     "lo": -105.851031,
-     "label": "Facility: Greenridge Road (#177, #319)",
-     "src": "RIDB facility 248847 (rec area Arapaho & Roosevelt National Forests Pawnee NG)",
-     "where": "inside",
-     "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 40.814822,
-     "lo": -105.80253,
-     "label": "Facility: Sand Creek Road (#336)",
-     "src": "RIDB facility 248848 (rec area Arapaho & Roosevelt National Forests Pawnee NG)",
-     "where": "inside",
-     "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 40.581595,
-     "lo": -105.469083,
-     "label": "Facility: West White Pine Road (#100)",
-     "src": "RIDB facility 248851 (rec area Arapaho & Roosevelt National Forests Pawnee NG)",
-     "where": "inside",
-     "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 40.795385,
-     "lo": -105.771975,
-     "label": "Facility: Nunn Creek Road (#318)",
-     "src": "RIDB facility 248852 (rec area Arapaho & Roosevelt National Forests Pawnee NG)",
-     "where": "inside",
-     "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 40.852137,
-     "lo": -105.529201,
-     "label": "Facility: Chicken Park Road (#181, #181A-D)",
-     "src": "RIDB facility 248853 (rec area Arapaho & Roosevelt National Forests Pawnee NG)",
-     "where": "inside",
-     "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 40.929784,
-     "lo": -105.575969,
-     "label": "Facility: Deadhorse Mountain (#182, #314, #315, #315B)",
-     "src": "RIDB facility 248854 (rec area Arapaho & Roosevelt National Forests Pawnee NG)",
-     "where": "edge",
-     "km": 0.02
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 40.932795,
-     "lo": -105.643606,
-     "label": "Facility: Acme Creek Road (#219)",
-     "src": "RIDB facility 248855 (rec area Arapaho & Roosevelt National Forests Pawnee NG)",
-     "where": "inside",
-     "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 40.57105,
-     "lo": -105.34823333,
-     "label": "Facility: Moody Hill Road (#513)",
-     "src": "RIDB facility 248856 (rec area Arapaho & Roosevelt National Forests Pawnee NG)",
-     "where": "inside",
-     "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 40.552137,
-     "lo": -105.420857,
-     "label": "Facility: Crystal Mountain Road (#344)",
-     "src": "RIDB facility 248878 (rec area Arapaho & Roosevelt National Forests Pawnee NG)",
-     "where": "inside",
-     "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 40.55788,
-     "lo": -105.46828,
-     "label": "Facility: Ballard Road (#129, #129A,B)",
-     "src": "RIDB facility 248880 (rec area Arapaho & Roosevelt National Forests Pawnee NG)",
-     "where": "inside",
-     "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 40.577552,
-     "lo": -105.513309,
-     "label": "Facility: Hurley Road (#352, #352A)",
-     "src": "RIDB facility 248881 (rec area Arapaho & Roosevelt National Forests Pawnee NG)",
-     "where": "inside",
-     "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 40.578714,
-     "lo": -105.505073,
-     "label": "Facility: Greer Road (#154, #154A-C)",
-     "src": "RIDB facility 248883 (rec area Arapaho & Roosevelt National Forests Pawnee NG)",
-     "where": "inside",
-     "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 40.732279,
-     "lo": -105.599827,
-     "label": "Facility: Swamp Creek Road (#171, #171A-L)",
-     "src": "RIDB facility 248885 (rec area Arapaho & Roosevelt National Forests Pawnee NG)",
-     "where": "inside",
-     "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
      "la": 40.6963011,
      "lo": -105.2730393,
      "label": "Facility: Cache la Poudre North Park Scenic Byway",
@@ -7243,69 +7036,6 @@
      "src": "RIDB facility 259373 (rec area White River National Forest)",
      "where": "outside",
      "km": 4.49
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 39.3602173,
-     "lo": -107.0434106,
-     "label": "Facility: Basalt Area (nearby, outside the park line)",
-     "src": "RIDB facility 259389 (rec area White River National Forest)",
-     "where": "outside",
-     "km": 2.13
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 39.652297,
-     "lo": -106.827284,
-     "label": "Facility: Eagle Area (nearby, outside the park line)",
-     "src": "RIDB facility 259435 (rec area White River National Forest)",
-     "where": "outside",
-     "km": 0.11
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 39.334829,
-     "lo": -106.988983,
-     "label": "Facility: Snowmass Area (nearby, outside the park line)",
-     "src": "RIDB facility 259436 (rec area White River National Forest)",
-     "where": "outside",
-     "km": 1.37
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 39.285685,
-     "lo": -106.969414,
-     "label": "Facility: Old Snowmass Area (nearby, outside the park line)",
-     "src": "RIDB facility 259489 (rec area White River National Forest)",
-     "where": "outside",
-     "km": 4.09
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 39.3944078,
-     "lo": -107.2314765,
-     "label": "Facility: Carbondale Area (nearby, outside the park line)",
-     "src": "RIDB facility 259493 (rec area White River National Forest)",
-     "where": "outside",
-     "km": 1.65
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 39.4009026,
-     "lo": -107.1087789,
-     "label": "Facility: El Jebel Area (nearby, outside the park line)",
-     "src": "RIDB facility 259502 (rec area White River National Forest)",
-     "where": "outside",
-     "km": 0.7
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 39.275587,
-     "lo": -106.888046,
-     "label": "Facility: Woody Creek Area (nearby, outside the park line)",
-     "src": "RIDB facility 259525 (rec area White River National Forest)",
-     "where": "outside",
-     "km": 2.49
     },
     {
      "rule": "ridb-recarea-name",
@@ -10676,15 +10406,6 @@
     },
     {
      "rule": "ridb-recarea-name",
-     "la": 34.251007,
-     "lo": -117.171859,
-     "label": "Facility: Lake Arrowhead - Green Valley Lake Recreation Area (nearby, outside the park line)",
-     "src": "RIDB facility 249691 (rec area San Bernardino National Forest)",
-     "where": "outside",
-     "km": 1.56
-    },
-    {
-     "rule": "ridb-recarea-name",
      "la": 34.25663,
      "lo": -116.7484,
      "label": "Facility: Arrastre Recreational Shooting Site 1",
@@ -13121,22 +12842,6 @@
      "src": "RIDB facility 251720 (rec area Nez Perce-Clearwater National Forests)",
      "where": "inside",
      "km": 0.0
-    }
-   ]
-  },
-  "US-4477": {
-   "n": "Idaho Panhandle National Forest",
-   "st": "WA",
-   "outline": true,
-   "pts": [
-    {
-     "rule": "ridb-recarea-name",
-     "la": 48.206967,
-     "lo": -116.511827,
-     "label": "Facility: Pend Oreille Lake Area (nearby, outside the park line)",
-     "src": "RIDB facility 265497 (rec area Idaho Panhandle National Forests)",
-     "where": "outside",
-     "km": 0.97
     }
    ]
   },
@@ -15759,15 +15464,6 @@
      "src": "RIDB facility 240571 (rec area Cherokee National Forest)",
      "where": "inside",
      "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 35.265007,
-     "lo": -84.328396,
-     "label": "Facility: Coker Creek Area (nearby, outside the park line)",
-     "src": "RIDB facility 240580 (rec area Cherokee National Forest)",
-     "where": "outside",
-     "km": 0.15
     },
     {
      "rule": "ridb-recarea-name",
@@ -19042,15 +18738,6 @@
     },
     {
      "rule": "ridb-recarea-name",
-     "la": 34.15065953,
-     "lo": -93.71336315,
-     "label": "Facility: Dam Area (nearby, outside the park line)",
-     "src": "RIDB facility 247838 (rec area Lake Greeson)",
-     "where": "outside",
-     "km": 0.18
-    },
-    {
-     "rule": "ridb-recarea-name",
      "la": 34.23920573,
      "lo": -93.76549457,
      "label": "Facility: Self Creek",
@@ -19341,15 +19028,6 @@
     },
     {
      "rule": "ridb-recarea-name",
-     "la": 39.20930585,
-     "lo": -96.96039226,
-     "label": "Facility: Fort Riley Recreation Area (nearby, outside the park line)",
-     "src": "RIDB facility 248008 (rec area Milford Lake)",
-     "where": "outside",
-     "km": 0.29
-    },
-    {
-     "rule": "ridb-recarea-name",
      "la": 39.21600593,
      "lo": -96.97267677,
      "label": "Facility: Timber Creek (nearby, outside the park line)",
@@ -19619,22 +19297,6 @@
      "src": "RIDB facility 202060 (rec area Gila Box Riparian National Conservation Area)",
      "where": "inside",
      "km": 0.0
-    }
-   ]
-  },
-  "US-8389": {
-   "n": "Lake Dennison State Recreation Area",
-   "st": "MA",
-   "outline": true,
-   "pts": [
-    {
-     "rule": "ridb-facility-name",
-     "la": 42.651526,
-     "lo": -72.086552,
-     "label": "Facility: Lake Dennison Recreation Area (nearby, outside the park line)",
-     "src": "RIDB facility 248071 (rec area Birch Hill Dam)",
-     "where": "outside",
-     "km": 0.27
     }
    ]
   },
