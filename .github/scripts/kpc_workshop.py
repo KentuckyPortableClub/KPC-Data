@@ -77,7 +77,7 @@ def main():
                 remaining = (LIMIT - (time.time() - T0)) / 60
                 if remaining < 3: break
                 before = json.dumps(((load(f'{FOLDER[bot]}/state.json', {}).get('areas') or {}).get(area) or {}), sort_keys=True)
-                res = run_bot(bot, area, min(CHUNK, remaining), TEST and area == 'US-KY')
+                res = run_bot(bot, area, min(CHUNK, remaining), TEST and (area == 'US-KY' or bool(want)))   # a named area runs its gate too (truth v8 has one per area)
                 if res: gates[bot] = res
                 tries += 1
                 if status_of(bot, area) == 'done' or want: break   # named areas: one pass each, no loops
