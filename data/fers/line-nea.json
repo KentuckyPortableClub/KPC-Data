@@ -9,10 +9,16 @@
   "US-DC"
  ],
  "since": "2026-10-29",
- "date": "2026-10-29 02:45 UTC",
- "verdict": "READY FOR CHAT 8",
- "why": [],
- "known_answers": "18/18 on 2026-10-29",
+ "date": "2026-10-29 03:30 UTC",
+ "verdict": "STOPPED",
+ "why": [
+  "Kentucky known-answers test not passing (18/19 on 2026-10-29)",
+  "water not checked: US-PA: 6 rows (the USGS water map / files had no answer there): never READY with one",
+  "water not checked: US-DE: 43 rows (the USGS water map / files had no answer there): never READY with one",
+  "water not checked: US-MD: 31 rows (the USGS water map / files had no answer there): never READY with one",
+  "water not checked: US-DC: 10 rows (the USGS water map / files had no answer there): never READY with one"
+ ],
+ "known_answers": "18/19 on 2026-10-29",
  "missing_check": {
   "FOUND": 178,
   "DROPPED": 757,
