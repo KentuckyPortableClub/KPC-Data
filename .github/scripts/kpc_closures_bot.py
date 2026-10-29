@@ -546,6 +546,7 @@ SAMPLE_WMA = """<h1>Clay WMA</h1><p>The area is closed to all other hunting Nov.
 
 LAST_HTML = {}
 BROWSER_LOG = []
+CHILDREN = {}      # landing page url -> the sub-pages it led to (listed on the source as 'children')
 
 
 def safe_url(u):
@@ -842,7 +843,7 @@ def page_rows(body, url, refs=None, home=None, hunt=False):
     return rows
 
 
-def src_page(url, refs=None, pdfs=True, home=None, hunt=False):
+def src_page(url, refs=None, pdfs=True, home=None, hunt=False, depth=0):
     ok, kind, body, st = read(url, pdf=url.lower().split('?')[0].endswith('.pdf'))
     if not ok: raise RuntimeError(st)
     if kind == 'html' and not OFFLINE and len(page_text(body)) < 400:                     # a script-built page (fw.ky.gov quota hunts)
@@ -862,6 +863,23 @@ def src_page(url, refs=None, pdfs=True, home=None, hunt=False):
             LAST_HTML[url] = bt
             body = bt
     rows = page_rows(body, url, refs, home, hunt)
+    if hunt and kind == 'html' and not OFFLINE and depth == 0 and not late():        # a hunt LANDING page: the tables sit on the species sub-pages
+        host = M.host(url); kids, seen = [], set()
+        for u, txt in links_in(body, url):
+            if len(kids) >= 8: break
+            lu = u.split('#')[0]
+            if M.host(u) != host or lu in seen or lu.split('?')[0] == url.split('?')[0] or lu.lower().split('?')[0].endswith('.pdf'): continue
+            if re.fullmatch(r'\s*(deer|dove|waterfowl|sandhill crane|pheasant|elk|turkey|quota hunts?|quota hunt (dates|info|information))\s*', txt, re.I) or 'quota' in lu.lower():
+                seen.add(lu); kids.append((lu, txt))
+        for u, txt in kids:
+            if late(): break
+            try:
+                sub = src_page(u, refs, pdfs=False, home=home, hunt=True, depth=1)
+                for r in sub: r['child'] = u
+                rows += sub
+                CHILDREN.setdefault(url, []).append({'url': u, 'text': txt[:40], 'rows': len(sub)})
+            except Exception as e:  # noqa: BLE001
+                CHILDREN.setdefault(url, []).append({'url': u, 'text': txt[:40], 'error': str(e)[:80]})
     if kind == 'html' and pdfs and not late():                        # CL-7: a PDF closure list linked from the page, by range
         n = 0
         for u, txt in links_in(body, url):
@@ -995,6 +1013,13 @@ def rows_of(sid, agency, url, kind, how, refs, area, parks, home=None):
     if how == 'fs-alerts': return src_fs_alerts(url, refs, home)
     if how == 'links': return src_links(url, refs)
     if how == 'hunt-page': return src_page(url, refs, home=home, hunt=True)
+    if how == 'fws':                                                        # the refuge HOME page carries the alerts banner; '/visit-us' is often 404
+        home_u = re.sub(r'/visit-us/?$', '', url)
+        rows = src_page(home_u, refs, pdfs=False, home=home)
+        if not late():
+            try: rows += src_page(url, refs, pdfs=False, home=home)
+            except Exception: pass  # noqa: BLE001   (kept only when it opens)
+        return rows
     if how == 'parks-canada':
         rows = src_page(url, refs, pdfs=False, home=home)
         if area in FRENCH_AREAS and not late():                                  # G9 / CL-6: French kept beside the English
@@ -1131,7 +1156,7 @@ def build_item(sid, agency, ref, cl, sent, row, area, first_seen):
     if cl.get('hunt_item') and frm: iid = f'sc-ky-fw-wma-{ref}-{frm.isoformat()}' if sid.startswith('ky-') else f'sc-{sid}-hunt-{ref}-{frm.isoformat()}'
     it = {'id': iid, 'ref': ref, 'area': area, 'src': sid, 'agency': agency, 'class': cl['class'],
           'what': what[:90], 'details': f'"{sent.strip()}"', 'from': frm.isoformat() if frm else None, 'to': to.isoformat() if to else None,
-          'updated': upd.isoformat() if upd else None, 'stale': stale, 'link': row.get('link') or '', 'link2': '',
+          'updated': upd.isoformat() if upd else None, 'stale': stale, 'link': row.get('child') or row.get('link') or '', 'link2': '',
           'seen': (first_seen or TODAY).isoformat(), 'confirmed': 1, 'lang': cl.get('lang', 'en'),
           'kind': KIND_LABEL[cl['class']], 'call': 'KPC BOT',
           'expires': (to + dt.timedelta(days=1)).isoformat() if to else (TODAY + dt.timedelta(days=7)).isoformat()}
@@ -1231,7 +1256,9 @@ def process_area(K, area, state, review):
                 oit.update({'taken_down': TODAY.isoformat(), 'kind': 'Park notice', 'stale': 'notice taken down: check the agency page',
                             'expires': (TODAY + dt.timedelta(days=TAKEN_DOWN_DAYS)).isoformat(), 'label': f'ℹ️ Notice taken down: check the agency page ({oit.get("agency", "")}; was: {oit.get("details", "")[:160]})'})
             items.append(oit)
+        if CHILDREN.get(url): srcs.setdefault(sid, {})
         srcs[sid] = {'agency': agency, 'url': url, 'kind': kind, 'ok': True, 'rows': len(rows), 'n': n, 'n_prev': ps.get('n', 0), 'out_of_state': out_state,
+                     **({'children': CHILDREN[url]} if CHILDREN.get(url) else {}),
                      'unmatched': sorted(set(unmatched))[:25], 'last_ok': TODAY.isoformat(), 'fails': 0}
         if how == 'hunt-page' and TEST and not any(it.get('class') == 'hunt' and it['id'] in now_ids for it in items):
             m = re.search(r'closed|quota|drawn', page_txt, re.I)
@@ -1528,11 +1555,16 @@ def selftest():
     print(('ok   ' if ok else 'FAIL ') + f"ended: to={cl and cl.get('to')} < today = not shown"); bad += not ok
     a = {'ref': 'R', 'details': '"Cliffside Trail #519 Closure"', 'title': ''}; b = {'ref': 'R', 'details': '"Cliffside Trail #519 is closed between Noes and Sawyer ramps."', 'title': 'Cliffside Trail #519 Closure'}
     ok = drop_title_twins([a, b]) == [b]; print(('ok   ' if ok else 'FAIL ') + 'title-only twin merged'); bad += not ok
+    land = '<p>Click below to navigate to the species you are interested in:</p><a href="/Hunt/Pages/Deer-Quota-Hunts.aspx">DEER</a> <a href="/Hunt/Pages/Dove.aspx">DOVE</a> <a href="https://fw.ky.gov/Hunt/Pages/Waterfowl-Quota.aspx">WATERFOWL</a> <a href="https://other.gov/x">DEER</a> <a href="/Hunt/Pages/Quota-Hunts.aspx">Quota Hunts</a> <a href="/Home">Home</a>'
+    picks = [u for u, t in links_in(land, 'https://fw.ky.gov/Hunt/Pages/Quota-Hunts.aspx') if Manners.host(u) == 'fw.ky.gov' and u.split('?')[0] != 'https://fw.ky.gov/Hunt/Pages/Quota-Hunts.aspx'
+             and (re.fullmatch(r'\s*(deer|dove|waterfowl|sandhill crane|pheasant|elk|turkey|quota hunts?)\s*', t, re.I) or 'quota' in u.lower())]
+    ok = picks == ['https://fw.ky.gov/Hunt/Pages/Deer-Quota-Hunts.aspx', 'https://fw.ky.gov/Hunt/Pages/Dove.aspx', 'https://fw.ky.gov/Hunt/Pages/Waterfowl-Quota.aspx']
+    print(('ok   ' if ok else 'FAIL ') + f'landing-page children: {len(picks)} same-host species links (other host + Home left out)'); bad += not ok
     # the object of the Marben sentence
     cl = classify('Lake Margery at Marben PFA is currently closed to all access', {'names': ['Cybel WMA', 'Marben PFA']})
     ok = cl and cl['class'] == 'part' and cl['what'].lower().startswith('lake margery')
     print(('ok   ' if ok else 'FAIL ') + f"object: {cl and cl.get('what')} ({cl and cl.get('class')})"); bad += not ok
-    print(f'SELFTEST {"PASS" if not bad else "FAIL"}: {len(SELFTEST) + len(tests) + 7 - bad} of {len(SELFTEST) + len(tests) + 7}')
+    print(f'SELFTEST {"PASS" if not bad else "FAIL"}: {len(SELFTEST) + len(tests) + 8 - bad} of {len(SELFTEST) + len(tests) + 8}')
     return bad == 0
 
 
