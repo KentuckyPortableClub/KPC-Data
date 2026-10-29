@@ -243,15 +243,15 @@
   "US-WV": {
    "checked": 172,
    "counts": {
-    "agree": 1,
+    "agree": 16,
     "handover_hints": 0,
     "no_page": 0,
-    "no_size": 37,
-    "off": 20,
+    "no_size": 38,
+    "off": 5,
     "ours_unknown": 0,
     "parks": 172,
     "retired": 0,
-    "unsure": 102,
+    "unsure": 101,
     "weak": 2,
     "with_outline": 160
    },
@@ -281,30 +281,30 @@
  },
  "last": {
   "areas": [
-   "US-SC"
+   "US-WV"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "browser": 64,
+   "browser": 1,
    "errors": 0,
-   "requests": 325,
-   "rested": 5,
-   "robots": 1,
-   "strikes": 1
+   "requests": 420,
+   "rested": 26,
+   "robots": 0,
+   "strikes": 0
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 4,
-   "no_size": 129,
-   "ours_unknown": 2,
-   "pages_read": 248,
-   "parks": 167,
+   "handover_hints": 0,
+   "no_size": 38,
+   "ours_unknown": 0,
+   "pages_read": 392,
+   "parks": 172,
    "retired": 0,
    "size_agree": 16,
-   "size_off": 7,
-   "size_unsure": 5,
+   "size_off": 5,
+   "size_unsure": 101,
    "skipped_fresh": 0,
-   "with_outline": 159
+   "with_outline": 160
   },
   "when": "2026-10-29"
  },
@@ -382,9 +382,9 @@
  },
  "proven": "2026-10-29",
  "test": {
-  "area": "US-SC",
+  "area": "US-WV",
   "result": "PASS",
   "when": "2026-10-29",
-  "why": "US-SC: 7 off rows, no shared numbers / agency pages / part sentences / one-state cross-state compares"
+  "why": "US-WV: 5 off rows, no shared numbers / agency pages / part sentences / one-state cross-state compares"
  }
 }

@@ -36,25 +36,28 @@ Source file: `data/truth/US-WV.json`
 ## US-7002 Lewis Wetzel Wildlife Management Area
 ```json
 {
- "cause": "no total-looking sentence: numbers found were parts or other units",
+ "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
  "checked": "2026-10-29",
  "handover": [],
  "n": "Lewis Wetzel Wildlife Management Area",
  "official": null,
  "ours": {
-  "acres": 26969,
+  "acres": 13490,
+  "dissolved": {
+   "after": 13490,
+   "before": 26969,
+   "copies": 1,
+   "parts": 0,
+   "records": 2,
+   "tracts": 1
+  },
   "manager": "",
+  "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 26969 -> 13490 acres",
   "pieces": [
    [
     273168,
     "Lewis Wetzel Wildlife Management Area",
     13490,
-    "name"
-   ],
-   [
-    "sgwva82",
-    "Lewis Wetzel Wildlife Management Area",
-    13479,
     "name"
    ]
   ],
@@ -64,6 +67,7 @@ Source file: `data/truth/US-WV.json`
  },
  "owner_now": null,
  "pct": null,
+ "same_agency": false,
  "score": 7,
  "t": "Wildlife Management Area",
  "verdict": "unsure"
@@ -73,7 +77,7 @@ Source file: `data/truth/US-WV.json`
 ## US-1817 Moncove Lake State Park
 ```json
 {
- "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+ "cause": "agency bigger: our outline may miss a tract",
  "checked": "2026-10-29",
  "handover": [],
  "n": "Moncove Lake State Park",
@@ -83,23 +87,27 @@ Source file: `data/truth/US-WV.json`
   "clean": false,
   "line": "w Home » Explore Parks » Moncove Lake State Park Moncove Lake State Park Hidden among the hills is a peaceful 250-acre park with a 500-acre wildlife management area. Moncove Lake State Park resides on the southeastern edge of We",
   "read": "2026-10-29",
+  "sent": "Hidden among the hills is a peaceful 250-acre park with a 500-acre wildlife management area.",
   "url": "https://wvstateparks.com/park/moncove-lake-state-park/",
   "why": "total-looking"
  },
  "ours": {
-  "acres": 295,
+  "acres": 171,
+  "dissolved": {
+   "after": 171,
+   "before": 295,
+   "copies": 1,
+   "parts": 0,
+   "records": 3,
+   "tracts": 2
+  },
   "manager": "",
+  "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 295 -> 171 acres",
   "pieces": [
    [
     273238,
     "Moncove Lake State Park",
     125,
-    "name"
-   ],
-   [
-    "sgwvc32",
-    "Moncove Lake State Park",
-    124,
     "name"
    ],
    [
@@ -114,7 +122,7 @@ Source file: `data/truth/US-WV.json`
   "unknown_pieces": 0
  },
  "owner_now": null,
- "pct": 18,
+ "pct": 32,
  "same_agency": false,
  "score": 6,
  "t": "State Park",
@@ -125,26 +133,20 @@ Source file: `data/truth/US-WV.json`
 ## US-12045 Sandy Creek Wildlife Management Area
 ```json
 {
- "cause": "a number 20 parks share from one page (10 ac): an agency total, not this park",
+ "cause": "no total-looking sentence: numbers found were parts or other units",
  "checked": "2026-10-29",
  "handover": [],
  "n": "Sandy Creek Wildlife Management Area",
- "note": "the agency figure may cover several states; our outline may be this state's share only",
  "official": null,
  "ours": {
-  "acres": 4684,
+  "acres": 2420,
+  "family_fold": "layers {'padus': 2420, 'sgwva': 2264}: one land in 2 layers, the padus copy used (2,264 ac of copies not added)",
   "manager": "",
   "pieces": [
    [
     273187,
     "Sandy Creek Wildlife Management Area",
     2420,
-    "name"
-   ],
-   [
-    "sgwva117",
-    "Sandy Creek Wildlife Management Area",
-    2264,
     "name"
    ]
   ],
@@ -154,7 +156,6 @@ Source file: `data/truth/US-WV.json`
  },
  "owner_now": null,
  "pct": null,
- "same_agency": false,
  "score": 7,
  "t": "Wildlife Management Area",
  "verdict": "unsure"
@@ -164,7 +165,6 @@ Source file: `data/truth/US-WV.json`
 ## US-1798 Babcock State Park
 ```json
 {
- "cause": "our union: one of our pieces alone matches the agency (double count?)",
  "checked": "2026-10-29",
  "handover": [],
  "n": "Babcock State Park",
@@ -174,24 +174,28 @@ Source file: `data/truth/US-WV.json`
   "clean": false,
   "line": "» Babcock State Park Babcock State Park One of West Virginia’s most iconic locations, Babcock State Park has 4,127 acres of stunning scenery. Located 20 miles southeast of the New River Gorge Bridge, the park is known for the Glad",
   "read": "2026-10-29",
+  "sent": "One of West Virginia’s most iconic locations, Babcock State Park has 4,127 acres of stunning scenery.",
   "url": "https://wvstateparks.com/park/babcock-state-park/",
   "why": "total-looking"
  },
  "ours": {
-  "acres": 8120,
+  "acres": 4062,
+  "dissolved": {
+   "after": 4062,
+   "before": 8120,
+   "copies": 1,
+   "parts": 0,
+   "records": 2,
+   "tracts": 1
+  },
   "manager": "",
+  "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 8120 -> 4062 acres",
   "pieces": [
    [
     273219,
     "Babcock State Park",
     4062,
     "name"
-   ],
-   [
-    "sgwvc21",
-    "Babcock State Park",
-    4058,
-    "name"
    ]
   ],
   "pin": "inside",
@@ -199,45 +203,47 @@ Source file: `data/truth/US-WV.json`
   "unknown_pieces": 0
  },
  "owner_now": null,
- "pct": 97,
+ "pct": 2,
  "same_agency": false,
- "score": 6,
+ "score": 8,
  "t": "State Park",
- "verdict": "off"
+ "verdict": "agree"
 }
 ```
 
 ## US-5589 Seneca State Forest
 ```json
 {
- "cause": "the agency figure may cover several states; our outline may be this state's share only",
  "checked": "2026-10-29",
  "handover": [],
  "n": "Seneca State Forest",
- "note": "the agency figure may cover several states; our outline may be this state's share only",
  "official": {
   "acres": 12884.0,
   "as": "12,884 acres",
   "clean": false,
   "line": "Virginia's state forests, Seneca is located in rugged Pocahontas County bordering the Greenbrier River. With 12,884 acres of lush woodlands to explore, the forest offers a variety of recreational opportunities, including boating in",
   "read": "2026-10-29",
+  "sent": "With 12,884 acres of lush woodlands to explore, the forest offers a variety of recreational opportunities, including boating in Seneca Lake and hiking or biking 23 miles of trails.",
   "url": "https://wvstateparks.com/park/seneca-state-forest/",
   "why": "total-looking"
  },
  "ours": {
-  "acres": 25703,
+  "acres": 12858,
+  "dissolved": {
+   "after": 12858,
+   "before": 25703,
+   "copies": 1,
+   "parts": 0,
+   "records": 2,
+   "tracts": 1
+  },
   "manager": "",
+  "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 25703 -> 12858 acres",
   "pieces": [
    [
     "sgwvb5",
     "Seneca State Forest",
     12858,
-    "name"
-   ],
-   [
-    273138,
-    "Seneca State Forest",
-    12845,
     "name"
    ]
   ],
@@ -246,36 +252,38 @@ Source file: `data/truth/US-WV.json`
   "unknown_pieces": 0
  },
  "owner_now": null,
- "pct": 99,
+ "pct": 0,
  "same_agency": false,
- "score": 7,
+ "score": 8,
  "t": "State Forest",
- "verdict": "unsure"
+ "verdict": "agree"
 }
 ```
 
 ## US-5585 Coopers Rock State Forest
 ```json
 {
- "cause": "no total-looking sentence: numbers found were parts or other units",
  "checked": "2026-10-29",
  "handover": [],
  "n": "Coopers Rock State Forest",
  "official": null,
  "ours": {
-  "acres": 26107,
+  "acres": 13057,
+  "dissolved": {
+   "after": 13057,
+   "before": 26107,
+   "copies": 1,
+   "parts": 0,
+   "records": 2,
+   "tracts": 1
+  },
   "manager": "",
+  "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 26107 -> 13057 acres",
   "pieces": [
    [
     273134,
     "Coopers Rock State Forest",
     13057,
-    "name"
-   ],
-   [
-    "sgwvb1",
-    "Coopers Rock State Forest",
-    13050,
     "name"
    ]
   ],
@@ -287,7 +295,7 @@ Source file: `data/truth/US-WV.json`
  "pct": null,
  "score": 7,
  "t": "State Forest",
- "verdict": "unsure"
+ "verdict": "no size on page"
 }
 ```
 
@@ -299,17 +307,20 @@ Source file: `data/truth/US-WV.json`
  "n": "Audra State Park",
  "official": null,
  "ours": {
-  "acres": 688,
+  "acres": 344,
+  "dissolved": {
+   "after": 344,
+   "before": 688,
+   "copies": 1,
+   "parts": 0,
+   "records": 2,
+   "tracts": 1
+  },
   "manager": "",
+  "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 688 -> 344 acres",
   "pieces": [
    [
     273218,
-    "Audra State Park",
-    344,
-    "name"
-   ],
-   [
-    "sgwvc35",
     "Audra State Park",
     344,
     "name"
@@ -330,25 +341,28 @@ Source file: `data/truth/US-WV.json`
 ## US-7062 Ritchie Mines Wildlife Management Area
 ```json
 {
- "cause": "no total-looking sentence: numbers found were parts or other units",
+ "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
  "checked": "2026-10-29",
  "handover": [],
  "n": "Ritchie Mines Wildlife Management Area",
  "official": null,
  "ours": {
-  "acres": 13513,
+  "acres": 6774,
+  "dissolved": {
+   "after": 6774,
+   "before": 13513,
+   "copies": 1,
+   "parts": 0,
+   "records": 2,
+   "tracts": 1
+  },
   "manager": "",
+  "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 13513 -> 6774 acres",
   "pieces": [
    [
     "sgwva77",
     "Ritchie Mines Wildlife Management Area",
     6774,
-    "name"
-   ],
-   [
-    273184,
-    "Ritchie Mines Wildlife Management Area",
-    6739,
     "name"
    ]
   ],
@@ -358,6 +372,7 @@ Source file: `data/truth/US-WV.json`
  },
  "owner_now": null,
  "pct": null,
+ "same_agency": false,
  "score": 7,
  "t": "Wildlife Management Area",
  "verdict": "unsure"
@@ -367,26 +382,28 @@ Source file: `data/truth/US-WV.json`
 ## US-12032 Burning Springs Wildlife Management Area
 ```json
 {
- "cause": "a number 20 parks share from one page (10 ac): an agency total, not this park",
+ "cause": "a number 16 parks share from one page (217 ac): an agency total, not this park",
  "checked": "2026-10-29",
  "handover": [],
  "n": "Burning Springs Wildlife Management Area",
- "note": "the agency figure may cover several states; our outline may be this state's share only",
  "official": null,
  "ours": {
-  "acres": 4407,
+  "acres": 2209,
+  "dissolved": {
+   "after": 2209,
+   "before": 4407,
+   "copies": 1,
+   "parts": 0,
+   "records": 2,
+   "tracts": 1
+  },
   "manager": "",
+  "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 4407 -> 2209 acres",
   "pieces": [
    [
     273148,
     "Burning Springs Wildlife Management Area",
     2209,
-    "name"
-   ],
-   [
-    "sgwva115",
-    "Burning Springs Wildlife Management Area",
-    2198,
     "name"
    ]
   ],
@@ -411,8 +428,17 @@ Source file: `data/truth/US-WV.json`
  "n": "Fairfax Stone State Park",
  "official": null,
  "ours": {
-  "acres": 13,
+  "acres": 9,
+  "dissolved": {
+   "after": 9,
+   "before": 13,
+   "copies": 1,
+   "parts": 0,
+   "records": 4,
+   "tracts": 3
+  },
   "manager": "",
+  "note": "4 joined records = 3 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 13 -> 9 acres",
   "pieces": [
    [
     57469,
@@ -422,12 +448,6 @@ Source file: `data/truth/US-WV.json`
    ],
    [
     273233,
-    "Fairfax Stone State Park",
-    4,
-    "name"
-   ],
-   [
-    "sgwvc4",
     "Fairfax Stone State Park",
     4,
     "name"
@@ -454,23 +474,26 @@ Source file: `data/truth/US-WV.json`
 ## US-7038 Horse Creek Lake Wildlife Management Area
 ```json
 {
- "cause": "no total-looking sentence: numbers found were parts or other units",
+ "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
  "checked": "2026-10-29",
  "handover": [],
  "n": "Horse Creek Lake Wildlife Management Area",
  "official": null,
  "ours": {
-  "acres": 94,
+  "acres": 47,
+  "dissolved": {
+   "after": 47,
+   "before": 94,
+   "copies": 1,
+   "parts": 0,
+   "records": 2,
+   "tracts": 1
+  },
   "manager": "",
+  "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 94 -> 47 acres",
   "pieces": [
    [
     272123,
-    "Horse Creek Wildlife Management Area",
-    47,
-    "name"
-   ],
-   [
-    "sgwva32",
     "Horse Creek Wildlife Management Area",
     47,
     "name"
@@ -482,6 +505,7 @@ Source file: `data/truth/US-WV.json`
  },
  "owner_now": null,
  "pct": null,
+ "same_agency": false,
  "score": 7,
  "t": "Wildlife Management Area",
  "verdict": "unsure"

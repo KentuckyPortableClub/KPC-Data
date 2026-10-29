@@ -8,7 +8,7 @@ Updated 2026-10-29. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 | US-TN | 277 | 254 | 2 | **7** | 4 | 237 | 2 | 3 | 0 | 10 |
 | US-NC | 253 | 219 | 38 | **10** | 24 | 146 | 0 | 18 | 0 | 8 |
 | US-VA | 184 | 156 | 65 | **16** | 35 | 40 | 0 | 16 | 0 | 4 |
-| US-WV | 172 | 160 | 1 | **20** | 102 | 37 | 0 | 0 | 0 | 2 |
+| US-WV | 172 | 160 | 16 | **5** | 101 | 38 | 0 | 0 | 0 | 2 |
 | US-GA | 237 | 220 | 129 | **45** | 20 | 26 | 0 | 10 | 0 | 4 |
 | US-AL | 155 | 126 | 26 | **18** | 12 | 63 | 4 | 4 | 0 | 10 |
 | US-SC | 167 | 159 | 16 | **7** | 5 | 126 | 2 | 4 | 0 | 4 |
@@ -231,94 +231,79 @@ Updated 2026-10-29. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 
 ## US-WV
 
-**Agree:** 1 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 1 agree (second agency).
+**Agree:** 16 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 16 agree (second agency).
 
 **Size more than 15% off (our outline vs the agency):**
 
-- US-9914 Elk Fork Lake Wildlife Management Area: ours 2,837 ac vs agency 209 acres (= 209 ac; 1257% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [wvdnr.gov](https://wvdnr.gov/elk-fork-lake/) · “d it. Here’s a few reasons why you should visit Elk Fork Lake. Elk Fork Lake at a Glance Open: All year Size: 209 acres Game Fish: Channel catfish, largemouth b”
-- US-1807 Carnifex Ferry Battlefield State Park: ours 584 ac vs agency 156 acre (= 156 ac; 274% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [wvstateparks.com](https://wvstateparks.com/park/carnifex-ferry-battlefield-state-park/) · “y Battlefield State Park Carnifex Ferry Battlefield State Park Set on the rim of the Gauley River Canyon, the 156-acre Carnifex Ferry Battlefield State Park is ”
-- US-1816 Lost River State Park: ours 8,188 ac vs agency 3,934 acres (= 3,934 ac; 108% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [wvstateparks.com](https://wvstateparks.com/park/lost-river-state-park/) · “handle, Lost River State Park provides cabin lodging and an abundance of outdoor recreation. The park’s quiet 3,934 acres of woods provide a secluded getaway fo”
-- US-1827 Watoga State Park: ours 20,419 ac vs agency 10,100 acres (= 10,100 ac; 102% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [wvstateparks.com](https://wvstateparks.com/park/watoga-state-park/) · “State Park Located in the mountains of Pocahontas County, Watoga State Park is West Virginia’s largest. With 10,100 acres of land, Watoga offers many recreation”
-- US-1828 Watters Smith Memorial State Park: ours 1,074 ac vs agency 532 acre (= 532 ac; 102% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [wvstateparks.com](https://wvstateparks.com/park/watters-smith-memorial-state-park/) · “West Virginia and the pioneer spirit of Watters Smith are both preserved in the homestead restoration at this 532-acre historical park. This historical park, lo”
-- US-1814 Holly River State Park: ours 16,250 ac vs agency 8,101 acres (= 8,101 ac; 101% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [wvstateparks.com](https://wvstateparks.com/park/holly-river-state-park/) · “Gift Cards 1-833-WV-PARKS Book Now Home » Explore Parks » Holly River State Park Holly River State Park With 8,101 acres, Holly River is West Virginia's second ”
-- US-5587 Kanawha State Forest: ours 18,721 ac vs agency 9,300 acres (= 9,300 ac; 101% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [wvstateparks.com](https://wvstateparks.com/park/kanawha-state-forest/) · “ed seven miles from Charleston, Kanawha State Forest is a paradise for outdoor enthusiasts. The forest covers 9,300 acres with more than 60 miles of hiking and ”
-- US-1798 Babcock State Park: ours 8,120 ac vs agency 4,127 acres (= 4,127 ac; 97% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [wvstateparks.com](https://wvstateparks.com/park/babcock-state-park/) · “» Babcock State Park Babcock State Park One of West Virginia’s most iconic locations, Babcock State Park has 4,127 acres of stunning scenery. Located 20 miles s”
-- US-1815 Little Beaver State Park: ours 1,103 ac vs agency 562 acres (= 562 ac; 96% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [wvstateparks.com](https://wvstateparks.com/park/little-beaver-state-park/) · “t Cards 1-833-WV-PARKS Book Now Home » Explore Parks » Little Beaver State Park Little Beaver State Park With 562 acres, Little Beaver State Park offers family ”
-- US-0629 Tomlinson Run State Park: ours 2,721 ac vs agency 1,398 acres (= 1,398 ac; 95% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [wvstateparks.com](https://wvstateparks.com/park/tomlinson-run-state-park/) · “inson Run State Park sits along the Ohio River at the top of West Virginia's Northern Panhandle. The park has 1,398 acres and is divided into two sections: a wi”
-- US-1799 Beartown State Park: ours 214 ac vs agency 110 acre (= 110 ac; 95% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [wvstateparks.com](https://wvstateparks.com/park/beartown-state-park/) · “que pathways and rocky views are in your future with a visit to Beartown State Park. Beartown State Park is a 110-acre natural area located on the eastern summi”
-- US-1822 Stonewall Resort State Park: ours 3,685 ac vs agency 1,900 acres (= 1,900 ac; 94% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [wvstateparks.com](https://wvstateparks.com/park/stonewall-resort-state-park/) · “arks » Stonewall Resort State Park Stonewall Resort State Park Just three miles off I-79 and extending across 1,900 acres, Stonewall Resort State Park offers a ”
-- US-5588 Kumbrabow State Forest: ours 18,310 ac vs agency 9,474 acres (= 9,474 ac; 93% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [wvstateparks.com](https://wvstateparks.com/park/kumbrabow-state-forest/) · “sits on top of Rich Mountain along the Western edge of the Allegheny Highlands in Randolph County. Made up of 9,474 acres at an elevation of more than 3,000 fee”
-- US-0631 Cathedral State Park: ours 254 ac vs agency 133 acre (= 133 ac; 91% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [wvstateparks.com](https://wvstateparks.com/park/cathedral-state-park/) · “ns one of the largest stands of virgin hemlock in West Virginia. Designated a National Natural Landmark, this 133-acre park offers sanctuary for these ancient t”
-- US-5586 Greenbrier State Forest: ours 9,680 ac vs agency 5,100 acres (= 5,100 ac; 90% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [wvstateparks.com](https://wvstateparks.com/park/greenbrier-state-forest/) · “1-833-WV-PARKS Book Now Home » Explore Parks » Greenbrier State Forest Greenbrier State Forest Covering over 5,100 acres in southeastern West Virginia, Greenbri”
-- US-5584 Camp Creek State Park and Forest State Park: ours 1,118 ac vs agency 6,000 acres (= 6,000 ac; 81% off) · cause: agency bigger: our outline may miss a tract · [wvstateparks.com](https://wvstateparks.com/park/camp-creek-state-park/) · “And Forest Camp Creek State Park and Forest is known for beautiful waterfalls and great camping. With nearly 6,000 acres of lush forest, 35 miles of trails and ”
-- US-0607 Canaan Valley National Wildlife Refuge: ours 33,946 ac vs agency 18,986 acres (= 18,986 ac; 79% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [www.fws.gov](https://www.fws.gov/refuge/canaan_valley/) · “ey National Wildlife Refuge, established in 1994, is the nation&#x27;s 500th refuge and currently encompasses 18,986 acres. Its unique high-elevation climate su”
-- US-1813 Hawks Nest State Park: ours 414 ac vs agency 270 acre (= 270 ac; 53% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [wvstateparks.com](https://wvstateparks.com/park/hawks-nest-state-park/) · “ate Park Hawks Nest State Park Nestled in the heart of whitewater rafting country, Hawks Nest State Park is a 270-acre recreational area with a nature museum, j”
+- US-5584 Camp Creek State Park and Forest State Park: ours 559 ac vs agency 6,000 acres (= 6,000 ac; 91% off) · cause: agency bigger: our outline may miss a tract · [wvstateparks.com](https://wvstateparks.com/park/camp-creek-state-park/) · “And Forest Camp Creek State Park and Forest is known for beautiful waterfalls and great camping. With nearly 6,000 acres of lush forest, 35 miles of trails and ”
+- US-1807 Carnifex Ferry Battlefield State Park: ours 292 ac vs agency 156 acre (= 156 ac; 87% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [wvstateparks.com](https://wvstateparks.com/park/carnifex-ferry-battlefield-state-park/) · “y Battlefield State Park Carnifex Ferry Battlefield State Park Set on the rim of the Gauley River Canyon, the 156-acre Carnifex Ferry Battlefield State Park is ”
+- US-1817 Moncove Lake State Park: ours 171 ac vs agency 250 acre (= 250 ac; 32% off) · cause: agency bigger: our outline may miss a tract · [wvstateparks.com](https://wvstateparks.com/park/moncove-lake-state-park/) · “w Home » Explore Parks » Moncove Lake State Park Moncove Lake State Park Hidden among the hills is a peaceful 250-acre park with a 500-acre wildlife management ”
 - US-0696 New River Gorge National Park: ours 52,890 ac vs agency 70,000 acres (= 70,000 ac; 24% off) · cause: agency bigger: our outline may miss a tract · [www.nps.gov](https://www.nps.gov/neri/index.htm) · “rd through deep canyons, the New River is among the oldest rivers on the continent. The park encompasses over 70,000 acres of land along the New River, is rich ”
-- US-1817 Moncove Lake State Park: ours 295 ac vs agency 250 acre (= 250 ac; 18% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [wvstateparks.com](https://wvstateparks.com/park/moncove-lake-state-park/) · “w Home » Explore Parks » Moncove Lake State Park Moncove Lake State Park Hidden among the hills is a peaceful 250-acre park with a 500-acre wildlife management ”
+- US-1813 Hawks Nest State Park: ours 207 ac vs agency 270 acre (= 270 ac; 23% off) · cause: agency bigger: our outline may miss a tract · [wvstateparks.com](https://wvstateparks.com/park/hawks-nest-state-park/) · “ate Park Hawks Nest State Park Nestled in the heart of whitewater rafting country, Hawks Nest State Park is a 270-acre recreational area with a nature museum, j”
 
 **Unsure (no clean total found; the nearest number is only a guess):**
 
-- US-0608 Ohio River Islands National Wildlife Refuge: ours 5,468 ac · cause: the agency figure may cover several states; our outline may be this state's share only · [www.fws.gov](https://www.fws.gov/refuge/ohio-river-islands/about-us)
-- US-12031 Big South Wildlife Management Area: ours 5,171 ac · cause: a number 20 parks share from one page (10 ac): an agency total, not this park
-- US-12032 Burning Springs Wildlife Management Area: ours 4,407 ac · cause: a number 20 parks share from one page (10 ac): an agency total, not this park
-- US-12033 Cheat Canyon Wildlife Management Area: ours 7,610 ac · cause: a number 20 parks share from one page (10 ac): an agency total, not this park
-- US-12034 Daniels Ridge Wildlife Management Area: ours 6,755 ac · cause: a number 20 parks share from one page (10 ac): an agency total, not this park
-- US-12035 Dents Run Wildlife Management Area: ours 2,521 ac · cause: a number 20 parks share from one page (10 ac): an agency total, not this park
-- US-12036 Fairfax Pond-Rehe Wildlife Management Area: ours 1,262 ac · cause: a number 20 parks share from one page (10 ac): an agency total, not this park
-- US-12037 Federal Ridge Wildlife Management Area: ours 2,270 ac · cause: a number 20 parks share from one page (10 ac): an agency total, not this park
-- US-12039 Little Canaan Wildlife Management Area: ours 6,143 ac · cause: a number 20 parks share from one page (10 ac): an agency total, not this park
-- US-12040 Little Kanawha River Wildlife Management Area: ours 16,625 ac · cause: a number 20 parks share from one page (10 ac): an agency total, not this park
-- US-12041 Lost River Wildlife Management Area: ours 112 ac · cause: a number 20 parks share from one page (10 ac): an agency total, not this park
-- US-12042 Lynn Camp Wildlife Management Area: ours 4,075 ac · cause: a number 20 parks share from one page (10 ac): an agency total, not this park
-- US-12043 McCausland Wildlife Management Area: ours 1,203 ac · cause: a number 20 parks share from one page (10 ac): an agency total, not this park
-- US-12044 Panther Wildlife Management Area: ours 23,046 ac · cause: a number 20 parks share from one page (10 ac): an agency total, not this park
-- US-12045 Sandy Creek Wildlife Management Area: ours 4,684 ac · cause: a number 20 parks share from one page (10 ac): an agency total, not this park
-- US-12046 Sideling Hill Wildlife Management Area: ours 4,833 ac · cause: a number 20 parks share from one page (10 ac): an agency total, not this park
-- US-12047 Spring Run Wildlife Management Area: ours 290 ac · cause: a number 20 parks share from one page (10 ac): an agency total, not this park
-- US-12048 Toll Gate Wildlife Management Area: ours 1,882 ac · cause: a number 20 parks share from one page (10 ac): an agency total, not this park
-- US-12049 Walker Creek Wildlife Management Area: ours 6,358 ac · cause: a number 20 parks share from one page (10 ac): an agency total, not this park
-- US-12050 White Horse Mountain Wildlife Management Area: ours 3,530 ac · cause: a number 20 parks share from one page (10 ac): an agency total, not this park
-- US-1804 Bluestone State Park: ours 25,265 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-1826 Valley Falls State Park: ours 2,379 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-5585 Coopers Rock State Forest: ours 26,107 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-5589 Seneca State Forest: ours 25,703 ac · cause: the agency figure may cover several states; our outline may be this state's share only · [wvstateparks.com](https://wvstateparks.com/park/seneca-state-forest/)
-- US-6993 Bear Rock Lakes Wildlife Management Area: ours 474 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-6994 Burches Run Wildlife Management Area: ours 86 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-6995 Castlemans Run Lake Wildlife Management Area: ours 1,683 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-6996 Cecil H. Underwood Wildlife Management Area: ours 6,691 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-6997 Center Branch Wildlife Management Area: ours 1,887 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-6998 Cross Creek Wildlife Management Area: ours 4,027 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-6999 Dunkard Fork Wildlife Management Area: ours 950 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-7000 Hillcrest Wildlife Management Area: ours 4,414 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-7001 Lantz Farm and Nature Preserve Wildlife Management Area: ours 1,052 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-7002 Lewis Wetzel Wildlife Management Area: ours 26,969 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-7003 Little Indian Creek Wildlife Management Area: ours 2,074 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-7004 Pedlar Wildlife Management Area: ours 1,526 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-7005 Pleasant Creek Wildlife Management Area: ours 5,555 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-7006 Pruntytown State Farm Wildlife Management Area: ours 3,207 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-7007 Snake Hill Wildlife Management Area: ours 5,916 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-7008 Teter Creek Wildlife Management Area: ours 282 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-7009 Upper Deckers Creek Wildlife Management Area: ours 112 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-7010 Allegheny Wildlife Management Area: ours 13,912 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-7011 Edwards Run Wildlife Management Area: ours 792 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-7012 Fort Mill Ridge Wildlife Management Area: ours 459 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-7013 Nathaniel Mountain Wildlife Management Area: ours 22,269 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-7014 Shannondale Springs Wildlife Management Area: ours 3,216 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-7015 Short Mountain Wildlife Management Area: ours 16,423 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-7016 Sleepy Creek Wildlife Management Area: ours 44,479 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-7017 South Branch Wildlife Management Area: ours 2,562 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-7018 Thorn Creek Wildlife Management Area: ours 1,335 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-7019 Warden Lake Wildlife Management Area: ours 234 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-7020 Widmeyer Wildlife Management Area: ours 872 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-7021 Becky Creek Wildlife Management Area: ours 3,806 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-7022 Big Ditch Wildlife Management Area: ours 710 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-7023 Burnsville Lake Wildlife Management Area: ours 26,526 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-7024 Elk River Wildlife Management Area: ours 39,513 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-7025 Handley Wildlife Management Area: ours 1,553 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-7026 Huttonsville State Farm Wildlife Management Area: ours 5,609 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-7027 Slatyfork Wildlife Management Area: ours 161 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-7028 Smoke Camp Wildlife Management Area: ours 568 ac · cause: no total-looking sentence: numbers found were parts or other units
-- … 42 more in US-WV.json
+- US-0608 Ohio River Islands National Wildlife Refuge: ours 2,734 ac · cause: whole park compared (POTA lists it in 1 states: {'US-WV': 2734}) · [www.fws.gov](https://www.fws.gov/refuge/ohio-river-islands/about-us)
+- US-12031 Big South Wildlife Management Area: ours 5,171 ac · cause: a number 16 parks share from one page (217 ac): an agency total, not this park
+- US-12032 Burning Springs Wildlife Management Area: ours 2,209 ac · cause: a number 16 parks share from one page (217 ac): an agency total, not this park
+- US-12033 Cheat Canyon Wildlife Management Area: ours 3,806 ac · cause: a number 16 parks share from one page (217 ac): an agency total, not this park
+- US-12034 Daniels Ridge Wildlife Management Area: ours 3,379 ac · cause: a number 16 parks share from one page (217 ac): an agency total, not this park
+- US-12035 Dents Run Wildlife Management Area: ours 1,261 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-12036 Fairfax Pond-Rehe Wildlife Management Area: ours 631 ac · cause: a number 16 parks share from one page (217 ac): an agency total, not this park
+- US-12037 Federal Ridge Wildlife Management Area: ours 1,146 ac · cause: a number 16 parks share from one page (217 ac): an agency total, not this park
+- US-12038 Fox Forest Wildlife Management Area: ours 123 ac · cause: a number 16 parks share from one page (217 ac): an agency total, not this park
+- US-12039 Little Canaan Wildlife Management Area: ours 3,072 ac · cause: a number 16 parks share from one page (217 ac): an agency total, not this park
+- US-12040 Little Kanawha River Wildlife Management Area: ours 8,359 ac · cause: a number 16 parks share from one page (217 ac): an agency total, not this park
+- US-12041 Lost River Wildlife Management Area: ours 56 ac · cause: a number 16 parks share from one page (217 ac): an agency total, not this park
+- US-12042 Lynn Camp Wildlife Management Area: ours 2,067 ac · cause: a number 16 parks share from one page (217 ac): an agency total, not this park
+- US-12043 McCausland Wildlife Management Area: ours 610 ac · cause: a number 16 parks share from one page (217 ac): an agency total, not this park
+- US-12044 Panther Wildlife Management Area: ours 11,527 ac · cause: a number 16 parks share from one page (217 ac): an agency total, not this park
+- US-12045 Sandy Creek Wildlife Management Area: ours 2,420 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-12046 Sideling Hill Wildlife Management Area: ours 2,418 ac · cause: a number 16 parks share from one page (217 ac): an agency total, not this park
+- US-12047 Spring Run Wildlife Management Area: ours 145 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-12048 Toll Gate Wildlife Management Area: ours 944 ac · cause: a number 16 parks share from one page (217 ac): an agency total, not this park
+- US-12049 Walker Creek Wildlife Management Area: ours 3,221 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-12050 White Horse Mountain Wildlife Management Area: ours 1,765 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-1804 Bluestone State Park: ours 24,152 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-1826 Valley Falls State Park: ours 1,190 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-6993 Bear Rock Lakes Wildlife Management Area: ours 237 ac · cause: a number 76 parks share from one page (1,400,000 ac): an agency total, not this park
+- US-6994 Burches Run Wildlife Management Area: ours 43 ac · cause: a number 76 parks share from one page (1,400,000 ac): an agency total, not this park
+- US-6995 Castlemans Run Lake Wildlife Management Area: ours 842 ac · cause: a number 76 parks share from one page (1,400,000 ac): an agency total, not this park
+- US-6996 Cecil H. Underwood Wildlife Management Area: ours 3,347 ac · cause: a number 76 parks share from one page (1,400,000 ac): an agency total, not this park
+- US-6997 Center Branch Wildlife Management Area: ours 944 ac · cause: a number 76 parks share from one page (1,400,000 ac): an agency total, not this park
+- US-6998 Cross Creek Wildlife Management Area: ours 2,014 ac · cause: a number 76 parks share from one page (1,400,000 ac): an agency total, not this park
+- US-6999 Dunkard Fork Wildlife Management Area: ours 475 ac · cause: a number 76 parks share from one page (1,400,000 ac): an agency total, not this park
+- US-7000 Hillcrest Wildlife Management Area: ours 2,208 ac · cause: a number 76 parks share from one page (1,400,000 ac): an agency total, not this park
+- US-7001 Lantz Farm and Nature Preserve Wildlife Management Area: ours 526 ac · cause: a number 76 parks share from one page (1,400,000 ac): an agency total, not this park
+- US-7002 Lewis Wetzel Wildlife Management Area: ours 13,490 ac · cause: a number 76 parks share from one page (1,400,000 ac): an agency total, not this park
+- US-7003 Little Indian Creek Wildlife Management Area: ours 1,043 ac · cause: a number 76 parks share from one page (1,400,000 ac): an agency total, not this park
+- US-7004 Pedlar Wildlife Management Area: ours 763 ac · cause: a number 76 parks share from one page (1,400,000 ac): an agency total, not this park
+- US-7005 Pleasant Creek Wildlife Management Area: ours 2,786 ac · cause: a number 76 parks share from one page (1,400,000 ac): an agency total, not this park
+- US-7006 Pruntytown State Farm Wildlife Management Area: ours 1,604 ac · cause: a number 76 parks share from one page (1,400,000 ac): an agency total, not this park
+- US-7007 Snake Hill Wildlife Management Area: ours 2,959 ac · cause: a number 76 parks share from one page (1,400,000 ac): an agency total, not this park
+- US-7008 Teter Creek Wildlife Management Area: ours 141 ac · cause: a number 76 parks share from one page (1,400,000 ac): an agency total, not this park
+- US-7009 Upper Deckers Creek Wildlife Management Area: ours 56 ac · cause: a number 76 parks share from one page (1,400,000 ac): an agency total, not this park
+- US-7010 Allegheny Wildlife Management Area: ours 7,046 ac · cause: a number 76 parks share from one page (1,400,000 ac): an agency total, not this park
+- US-7011 Edwards Run Wildlife Management Area: ours 396 ac · cause: a number 76 parks share from one page (1,400,000 ac): an agency total, not this park
+- US-7012 Fort Mill Ridge Wildlife Management Area: ours 232 ac · cause: a number 76 parks share from one page (1,400,000 ac): an agency total, not this park
+- US-7013 Nathaniel Mountain Wildlife Management Area: ours 11,135 ac · cause: a number 76 parks share from one page (1,400,000 ac): an agency total, not this park
+- US-7014 Shannondale Springs Wildlife Management Area: ours 1,640 ac · cause: a number 76 parks share from one page (1,400,000 ac): an agency total, not this park
+- US-7015 Short Mountain Wildlife Management Area: ours 8,246 ac · cause: a number 76 parks share from one page (1,400,000 ac): an agency total, not this park
+- US-7016 Sleepy Creek Wildlife Management Area: ours 22,247 ac · cause: a number 76 parks share from one page (1,400,000 ac): an agency total, not this park
+- US-7017 South Branch Wildlife Management Area: ours 1,298 ac · cause: a number 76 parks share from one page (1,400,000 ac): an agency total, not this park
+- US-7018 Thorn Creek Wildlife Management Area: ours 764 ac · cause: a number 76 parks share from one page (1,400,000 ac): an agency total, not this park
+- US-7019 Warden Lake Wildlife Management Area: ours 117 ac · cause: a number 76 parks share from one page (1,400,000 ac): an agency total, not this park
+- US-7020 Widmeyer Wildlife Management Area: ours 436 ac · cause: a number 76 parks share from one page (1,400,000 ac): an agency total, not this park
+- US-7021 Becky Creek Wildlife Management Area: ours 1,904 ac · cause: a number 76 parks share from one page (1,400,000 ac): an agency total, not this park
+- US-7022 Big Ditch Wildlife Management Area: ours 355 ac · cause: a number 76 parks share from one page (1,400,000 ac): an agency total, not this park
+- US-7023 Burnsville Lake Wildlife Management Area: ours 13,268 ac · cause: a number 76 parks share from one page (1,400,000 ac): an agency total, not this park
+- US-7024 Elk River Wildlife Management Area: ours 19,850 ac · cause: a number 76 parks share from one page (1,400,000 ac): an agency total, not this park
+- US-7025 Handley Wildlife Management Area: ours 777 ac · cause: a number 76 parks share from one page (1,400,000 ac): an agency total, not this park
+- US-7026 Huttonsville State Farm Wildlife Management Area: ours 2,805 ac · cause: a number 76 parks share from one page (1,400,000 ac): an agency total, not this park
+- US-7027 Slatyfork Wildlife Management Area: ours 99 ac · cause: a number 76 parks share from one page (1,400,000 ac): an agency total, not this park
+- US-7028 Smoke Camp Wildlife Management Area: ours 285 ac · cause: a number 76 parks share from one page (1,400,000 ac): an agency total, not this park
+- US-7029 Stonecoal Lake Wildlife Management Area: ours 3,080 ac · cause: a number 76 parks share from one page (1,400,000 ac): an agency total, not this park
+- … 41 more in US-WV.json
 
 ## US-GA
 
@@ -854,4 +839,4 @@ You · [www.fws.gov](https://www.fws.gov/refuge/chassahowitzka/about-us)
 
 ## Kentucky test gate
 
-- 2026-10-29: **PASS** · US-SC: 7 off rows, no shared numbers / agency pages / part sentences / one-state cross-state compares
+- 2026-10-29: **PASS** · US-WV: 5 off rows, no shared numbers / agency pages / part sentences / one-state cross-state compares
