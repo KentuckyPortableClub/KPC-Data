@@ -5,13 +5,13 @@
   "US-MI"
  ],
  "since": "2026-10-29",
- "date": "2026-10-29 04:48 UTC",
+ "date": "2026-10-29 05:52 UTC",
  "verdict": "READY FOR CHAT 8",
  "why": [],
  "known_answers": "19/19 on 2026-10-29",
  "missing_check": {
-  "FOUND": 81,
-  "DROPPED": 216,
+  "FOUND": 79,
+  "DROPPED": 218,
   "NEVER LOOKED AT": 4081
  },
  "report": {
@@ -26,9 +26,9 @@
    "pairs tested": 115
   },
   "pass3": {
-   "agree with the pass before": 308,
+   "agree with the pass before": 0,
    "date": "2026-10-29",
-   "pairs tested": 115
+   "pairs tested": 0
   },
   "pass5": {
    "checked": 37,
@@ -42,14 +42,14 @@
  },
  "US-MI": {
   "rows": 412,
-  "live": 92,
+  "live": 90,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "the outlines overlap, but the PAD-US state fee records does": 1,
    "no public owner on the ownership map": 8
   },
-  "dropped": 136,
+  "dropped": 138,
   "merged": 175
  },
  "states_ready": [
