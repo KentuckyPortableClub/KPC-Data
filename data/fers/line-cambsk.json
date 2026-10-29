@@ -1,0 +1,80 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "cambsk",
+ "states": [
+  "CA-MB",
+  "CA-SK"
+ ],
+ "since": "2026-10-29",
+ "date": "2026-10-29 05:02 UTC",
+ "verdict": "STOPPED",
+ "why": [
+  "CA-MB: 29 rows still waiting for a pass (out of time: run the worker again)",
+  "water not checked: CA-MB: 2 rows (the USGS water map / files had no answer there): never READY with one",
+  "water not checked: CA-SK: 10 rows (the USGS water map / files had no answer there): never READY with one"
+ ],
+ "known_answers": "19/19 on 2026-10-29",
+ "missing_check": {
+  "FOUND": 0,
+  "DROPPED": 8,
+  "NEVER LOOKED AT": 0
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-29",
+   "pairs tested": 101,
+   "pairs whose boxes touch": 101
+  },
+  "pass2": {
+   "agree with the pass before": 0,
+   "date": "2026-10-29",
+   "pairs tested": 0
+  },
+  "pass3": {
+   "agree with the pass before": 26,
+   "date": "2026-10-29",
+   "pairs tested": 37
+  },
+  "pass5": {
+   "checked": 12,
+   "date": "2026-10-29",
+   "pairs tested": 0,
+   "still not checked": 12
+  }
+ },
+ "files": {
+  "CA-MB": "data/fers/CA-MB.json",
+  "CA-SK": "data/fers/CA-SK.json"
+ },
+ "CA-MB": {
+  "rows": 114,
+  "live": 16,
+  "waiting": 29,
+  "unfinished": 0,
+  "not_sure": {
+   "water not checked": 2
+  },
+  "dropped": 51,
+  "merged": 16
+ },
+ "water_weak": {
+  "CA-MB": 2,
+  "CA-SK": 10
+ },
+ "CA-SK": {
+  "rows": 62,
+  "live": 23,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "water not checked": 10
+  },
+  "dropped": 21,
+  "merged": 8
+ },
+ "states_ready": [],
+ "states_held": [
+  "CA-MB",
+  "CA-SK"
+ ]
+}
