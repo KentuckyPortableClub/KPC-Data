@@ -13,7 +13,9 @@ import re, time, urllib.error, urllib.parse, urllib.request, urllib.robotparser
 
 SITE = 'https://kentuckyportableclub.github.io/KPC-Links/'
 ARCGIS_API = re.compile(r'/(rest/services|sharing/rest)/', re.I)
-# Oct 29 5:38 AM (Brandon: 'I never said yes to that'): NO keyed-API exception; robots.txt is obeyed everywhere except ArcGIS REST.
+# Oct 29 9:34 + 9:37 AM (Brandon, CLAUDE.md 'KEYED GOVERNMENT APIS'): the API key is permission for ONLY these two documented API
+# paths (never their web pages), well under their rate limits; robots.txt is obeyed everywhere else (ArcGIS REST as before).
+KEYED_API = {'ridb.recreation.gov': '/api/', 'developer.nps.gov': '/api/'}
 
 
 class Manners:
@@ -34,6 +36,9 @@ class Manners:
         h = self.host(u)
         if ARCGIS_API.search(urllib.parse.urlparse(u).path or ''):
             self.stat['arcgis_exempt'] += 1; return True      # HQ Oct 27 10:57 PM: documented REST API paths only
+        pp = urllib.parse.urlparse(u)
+        if KEYED_API.get(h) and (pp.path or '').startswith(KEYED_API[h]):
+            self.stat['keyed_api'] = self.stat.get('keyed_api', 0) + 1; return True   # Brandon Oct 29 9:34 AM: key = permission, /api/ only
         if h not in self.robots:
             rp = urllib.robotparser.RobotFileParser()
             try:

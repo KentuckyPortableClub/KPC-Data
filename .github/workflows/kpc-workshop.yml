@@ -31,6 +31,9 @@ on:
       browser:
         description: 'yes = headless-browser pass for pages that hide their facts behind scripts (parks.ky.gov, home.nps.gov, KDFWR)'
         default: 'yes'
+      keyed_once:
+        description: "yes = the ONE keyed fill (Brandon Oct 29 9:34 AM): campinfo US-KY federal rows from Recreation.gov's API, ONLY empty fields, into data/waiting/in (chat 11 grades, a person releases). Never on the schedule."
+        default: ''
   schedule:
     - cron: '17 9 * * 0'
 permissions:
@@ -86,13 +89,39 @@ jobs:
           TEST: ${{ inputs.test == 'yes' && '1' || '0' }}
           BROWSER: ${{ (inputs.browser || 'yes') == 'yes' && '1' || '0' }}
           LINKS: ../links
-          NPS_API_KEY: ${{ secrets.NPS_API_KEY }}
-          RIDB_API_KEY: ${{ secrets.RIDB_API_KEY }}
+          NPS_API_KEY: ${{ inputs.keyed_once == 'yes' && secrets.NPS_API_KEY || '' }}     # Oct 29 (Brandon 9:34 AM): no recurring keyed calls here
+          RIDB_API_KEY: ${{ inputs.keyed_once == 'yes' && secrets.RIDB_API_KEY || '' }}
           FCC_BDC_USERNAME: ${{ secrets.FCC_BDC_USERNAME }}
           FCC_BDC_TOKEN: ${{ secrets.FCC_BDC_TOKEN }}
         run: |
           cd kpcdata
           python3 .github/scripts/kpc_workshop.py | tee /tmp/workshop.log || true
+          if [ "${{ inputs.keyed_once }}" = yes ] && [ -f data/campinfo/US-KY.json ]; then   # ONE keyed fill: only empty fields, to the waiting room, live file untouched
+            git show HEAD:data/campinfo/US-KY.json > /tmp/live.json 2>/dev/null || cp data/campinfo/US-KY.json /tmp/live.json
+            python3 - <<'PY' || true
+          import json, os
+          old = json.load(open('/tmp/live.json')); new = json.load(open('data/campinfo/US-KY.json'))
+          def empty(v): return v is None or v == '' or v == [] or v == {} or (isinstance(v, dict) and all(empty(x) for x in v.values()))
+          def fill(o, n):
+              if isinstance(o, dict) and isinstance(n, dict):
+                  for k, v in n.items():
+                      if k not in o or empty(o[k]): o[k] = v
+                      elif isinstance(o[k], dict): fill(o[k], v)
+              return o
+          n_f = 0
+          for cid, row in (new.get('camps') or {}).items():
+              if row.get('list') != 'campfed': continue
+              o = (old.get('camps') or {}).get(cid)
+              if o is None: continue                       # only rows we already have
+              before = json.dumps(o, sort_keys=True); fill(o, row); n_f += json.dumps(o, sort_keys=True) != before
+          old['keyed_fill'] = {'date': os.popen('date -u +%F').read().strip(), 'rows_changed': n_f, 'source': 'Recreation.gov / National Park Service data', 'rule': 'only empty fields, once (Brandon Oct 29 9:34 AM)'}
+          os.makedirs('data/waiting/in/data/campinfo', exist_ok=True)
+          json.dump(old, open('data/waiting/in/data/campinfo/US-KY.json', 'w'), indent=1, ensure_ascii=False)
+          print(f'::notice title=Keyed fill::{n_f} KY federal campground rows filled (empty fields only): waiting in data/waiting/in/ for chat 11; the live file is unchanged')
+          PY
+            cp /tmp/live.json data/campinfo/US-KY.json
+            bash ../links/.github/scripts/kpc_push_data.sh . "keyed fill: KY federal campgrounds (waiting)" data/waiting || true
+          fi
           grep -o '^LEFT=[0-9]*' /tmp/workshop.log | tail -1 >> "$GITHUB_ENV"
           grep -o '^GATE=[A-Z]*' /tmp/workshop.log | tail -1 >> "$GITHUB_ENV"
           bash ../links/.github/scripts/kpc_push_data.sh . "workshop: status" data/status data/truth data/hours data/campinfo || true

@@ -78,7 +78,7 @@ jobs:
           MINUTES: ${{ inputs.minutes || 55 }}
           LINKS: ../links
           NPS_API_KEY: ${{ secrets.NPS_API_KEY }}
-          RIDB_API_KEY: ${{ secrets.RIDB_API_KEY }}
+          # RIDB key removed Oct 29 (Brandon 9:34 AM): Recreation.gov has no closure notices; the only recurring keyed call is NPS alerts for Kentucky
           BROWSER: ${{ (inputs.browser || 'yes') == 'yes' && '1' || '0' }}
         run: |
           cd kpcdata
