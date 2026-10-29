@@ -195,7 +195,12 @@ def run_area(area, state, web, docs_all, ky):
         try:
             new = one_park(ref, parks[ref], web, docs, ky if area == 'US-KY' else {})
             if old and old.get('status') == 'ok' and not any(p.get('status') == 'ok' for p in new.get('pages') or []):
-                old['last_read_failed'] = TODAY; old['ver'] = VER; new = old   # every page failed (403 / rest): keep what we knew
+                old['last_read_failed'] = TODAY; old['ver'] = VER
+                keep, moved = [], list(old.get('season') or [])   # Oct 29 (Fable 4b): a KEPT record follows today's 'Season' rule too (US-3782)
+                for h in old.get('hours') or []:
+                    (keep if (CLOCK.search(h.get('line', '')) or DAYWORD.search(h.get('line', ''))) else moved).append(h)
+                old['hours'], old['season'] = keep, moved
+                new = old   # every page failed (403 / rest): keep what we knew
             D['parks'][ref] = new
         except Exception as e:  # noqa: BLE001
             STAT['errors'] += 1; D['parks'][ref] = {'n': parks[ref]['n'], 'status': 'bot error: ' + str(e)[:80], 'checked': TODAY, 'ver': VER, 'hours': [], 'fees': [], 'permits': []}
