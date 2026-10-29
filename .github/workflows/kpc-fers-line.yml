@@ -114,7 +114,9 @@ jobs:
       - name: USGS water from the bulk files BEFORE the line (tiles under last run's rows; Fable Oct 28 10:34 PM)
         continue-on-error: true
         timeout-minutes: 120
-        run: STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 .github/scripts/kpc_water_bulk.py || true
+        run: |
+          STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 .github/scripts/kpc_water_bulk.py || true
+          pip install -q pyshp 2>/dev/null || true; STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 .github/scripts/kpc_water_ca.py || true
       - name: Passes 1 + 2
         continue-on-error: true
         timeout-minutes: 275
@@ -127,7 +129,9 @@ jobs:
       - name: USGS water from the BULK FILES up front (HU4 files on USGS's Amazon storage, never the live map; HQ Oct 28 6:57 PM)
         continue-on-error: true
         timeout-minutes: 120
-        run: STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 .github/scripts/kpc_water_bulk.py || true
+        run: |
+          STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 .github/scripts/kpc_water_bulk.py || true
+          pip install -q pyshp 2>/dev/null || true; STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 .github/scripts/kpc_water_ca.py || true
       - name: Bundle up (a lost bundle = a red run)
         if: always()
         run: |
@@ -182,7 +186,9 @@ jobs:
       - name: USGS water from the bulk files (tiles under the spots with no saved copy; chat 8's first backup)
         continue-on-error: true
         timeout-minutes: 90
-        run: STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 .github/scripts/kpc_water_bulk.py || true
+        run: |
+          STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 .github/scripts/kpc_water_bulk.py || true
+          pip install -q pyshp 2>/dev/null || true; STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 .github/scripts/kpc_water_ca.py || true
       - name: Passes 3 + 5
         continue-on-error: true
         timeout-minutes: 320

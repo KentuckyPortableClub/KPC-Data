@@ -67,7 +67,7 @@ jobs:
       N: ${{ needs.plan.outputs.n }}
     steps:
       - run: |
-          A=$(python3 -c "import json,os; L=json.loads(os.environ['LINES']); n=int(os.environ['N']); print('; '.join(f\"{l['states']}|{l['tag']}\" for l in L[n:n + 3] if any(s.startswith('US-') for s in l['states'].split())))")
+          A=$(python3 -c "import json,os; L=json.loads(os.environ['LINES']); n=int(os.environ['N']); print('; '.join(f\"{l['states']}|{l['tag']}\" for l in L[n:n + 3] if any(s.startswith(('US-', 'CA-')) for s in l['states'].split())))")
           if [ -n "$A" ]; then gh workflow run kpc-fers-water.yml -R "${{ github.repository }}" -f "areas=$A" && echo "::notice title=2-fer lines::water tiles ahead for: $A"; else echo "nothing waiting"; fi
   line:
     needs: plan

@@ -25,14 +25,15 @@ jobs:
           import json, os, re
           R = {'southeast': 'US-TN US-NC US-VA US-WV US-GA US-AL US-SC US-FL US-MS', 'midwest': 'US-IN US-IL US-MO US-WI US-MN US-IA US-ND US-SD',
                'northeast': 'US-PA US-NY US-NJ US-CT US-RI US-MA US-VT US-NH US-ME US-MD US-DE US-DC', 'southcentral': 'US-AR US-LA US-OK US-TX US-KS US-NE',
-               'mountain': 'US-CO US-WY US-ID US-MT US-NV US-AZ US-NM', 'pacific': 'US-CA US-OR US-WA US-AK US-HI'}
+               'mountain': 'US-CO US-WY US-ID US-MT US-NV US-AZ US-NM', 'pacific': 'US-CA US-OR US-WA US-AK US-HI',
+               'canadaeast': 'CA-ON CA-QC CA-NB CA-NS CA-PE CA-NL', 'canadawest': 'CA-MB CA-SK CA-AB CA-BC CA-YT CA-NT CA-NU'}
           out = []
           for e in [x.strip() for x in os.environ['AREAS'].split(';') if x.strip()]:
               e = e.split('@')[0].strip()
               if '|' in e: st, tag = [x.strip() for x in e.split('|', 1)]
               elif e.lower() in R: st, tag = R[e.lower()], e.lower()
               else: continue
-              st = ' '.join(x for x in st.upper().split() if x.startswith('US-'))   # USGS water covers the US only
+              st = ' '.join(x for x in st.upper().split() if x.startswith(('US-', 'CA-')))   # US = USGS files, Canada = NRCan NHN files
               if st: out.append({'states': st, 'tag': re.sub(r'[^a-z0-9-]', '', tag.lower())})
           print('lines=' + json.dumps(out or [{'states': '', 'tag': 'none'}]))
           print('::notice title=2-fer water ahead::' + ('; '.join(f"{o['states']} ({o['tag']})" for o in out) or 'nothing to fetch'))
@@ -69,6 +70,7 @@ jobs:
           gh release download fers-bundles -R "$REPO" -p "$WATER_ASSET" -D . --clobber 2>/dev/null && tar xzf "$WATER_ASSET" bundle/water 2>/dev/null || true
           N0=$(ls bundle/water | wc -l)
           STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 links/.github/scripts/kpc_water_bulk.py || true
+          pip install -q pyshp 2>/dev/null || true; STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 links/.github/scripts/kpc_water_ca.py || true
           REPORT=1 STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 links/.github/scripts/kpc_water_bulk.py || true
           N1=$(ls bundle/water | wc -l)
           if [ "$N1" -gt "$N0" ]; then
