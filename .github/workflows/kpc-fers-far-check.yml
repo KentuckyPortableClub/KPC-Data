@@ -1,0 +1,28 @@
+name: KPC 2-fer far-spot hold + parcel check (by hand, temporary)
+# Oct 29 2026 (chat 2; Brandon 8:07 AM: 'check make sure parcels are correct ... does it overlap in a spot somewhere? if so yes'):
+# holds live rows whose spot is 100+ km from a state-level park's pin, then asks the official map whether that park's own
+# record holds the spot: yes = released (live again), no = kept on hold with the reason. Never fails. Deleted after use.
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          persist-credentials: false
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - name: Hold + check
+        continue-on-error: true
+        run: |
+          python3 .github/scripts/kpc_fers_far_hold.py kpcdata/data/fers kpcdata/data/parkinfo || true
+          python3 .github/scripts/kpc_fers_far_check.py kpcdata/data/fers . || true
+      - name: Save
+        continue-on-error: true
+        run: bash .github/scripts/kpc_push_data.sh kpcdata '2-fer far-spot hold + parcel check (official records asked)' data/fers || true
