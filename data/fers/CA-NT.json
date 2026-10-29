@@ -1244,6 +1244,9 @@
    "checked": "2026-10-29",
    "found": "2026-10-29",
    "id": "CA-4332+CA-4344@area@69.445,-135.541",
+   "info": {
+    "water_pct": 0
+   },
    "kind": "area",
    "lines": {
     "CA-4332": [
@@ -6306,7 +6309,8 @@
    "lines_read": "2026-10-29",
    "map_dates": {
     "CA-4332": "downloaded 2026-10-29",
-    "CA-4344": "downloaded 2026-10-29"
+    "CA-4344": "downloaded 2026-10-29",
+    "water": "NRCan NHN file 2026-10-29 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
    },
    "names": {
     "CA-4332": "Kendall Island Migratory Bird Sanctuary",
@@ -6467,7 +6471,7 @@
      69.454935
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 1211
   },

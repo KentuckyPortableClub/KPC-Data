@@ -1186,6 +1186,9 @@
    "checked": "2026-10-29",
    "found": "2026-10-29",
    "id": "CA-0070+CA-0127@area@75.756,-101.185",
+   "info": {
+    "water_pct": 0
+   },
    "kind": "area",
    "lines": {
     "CA-0070": [
@@ -1268,9 +1271,11 @@
     ]
    },
    "lines_read": "2026-10-29",
+   "list": "Very tight (members only)",
    "map_dates": {
     "CA-0070": "downloaded 2026-10-29",
-    "CA-0127": "downloaded 2026-10-29"
+    "CA-0127": "downloaded 2026-10-29",
+    "water": "NRCan NHN file 2026-10-29 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
    },
    "names": {
     "CA-0070": "Polar Bear Pass National Wildlife Area",
@@ -1323,7 +1328,7 @@
      75.766517
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "very tight: could be map error: check both official maps on the ground",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "water_checked": "2026-10-29",
    "wide_m": 39
@@ -1915,6 +1920,9 @@
    "checked": "2026-10-29",
    "found": "2026-10-29",
    "id": "CA-0091+CA-4569@area@73.453,-80.033",
+   "info": {
+    "water_pct": 2
+   },
    "kind": "area",
    "lines": {
     "CA-0091": [
@@ -67327,7 +67335,8 @@
    "lines_read": "2026-10-29",
    "map_dates": {
     "CA-0091": "downloaded 2026-10-29",
-    "CA-4569": "downloaded 2026-10-29"
+    "CA-4569": "downloaded 2026-10-29",
+    "water": "NRCan NHN file 2026-10-29 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
    },
    "names": {
     "CA-0091": "Sirmilik National Park",
@@ -68079,7 +68088,7 @@
      73.639739
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 14145
   },
@@ -112816,6 +112825,9 @@
    "checked": "2026-10-29",
    "found": "2026-10-29",
    "id": "CA-0091+CA-4594@area@73.383,-83.641",
+   "info": {
+    "water_pct": 3
+   },
    "kind": "area",
    "lines": {
     "CA-0091": [
@@ -167382,7 +167394,8 @@
    "lines_read": "2026-10-29",
    "map_dates": {
     "CA-0091": "downloaded 2026-10-29",
-    "CA-4594": "downloaded 2026-10-29"
+    "CA-4594": "downloaded 2026-10-29",
+    "water": "NRCan NHN file 2026-10-29 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
    },
    "names": {
     "CA-0091": "Sirmilik National Park",
@@ -167683,7 +167696,7 @@
      73.494852
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 141
   },
@@ -258616,6 +258629,9 @@
    "checked": "2026-10-29",
    "found": "2026-10-29",
    "id": "CA-4569+CA-4594@area@73.348,-76.870",
+   "info": {
+    "water_pct": 0
+   },
    "kind": "area",
    "lines": {
     "CA-4569": [
@@ -309474,7 +309490,8 @@
    "lines_read": "2026-10-29",
    "map_dates": {
     "CA-4569": "downloaded 2026-10-29",
-    "CA-4594": "downloaded 2026-10-29"
+    "CA-4594": "downloaded 2026-10-29",
+    "water": "NRCan NHN file 2026-10-29 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
    },
    "names": {
     "CA-4569": "Bylot Island Migratory Bird Sanctuary",
@@ -310462,7 +310479,7 @@
      73.798343
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 3689
   },
