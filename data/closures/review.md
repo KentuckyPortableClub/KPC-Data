@@ -1,17 +1,17 @@
 # Closures super-bot: review (2026-10-29; RULE SHEET D; compared quietly, nothing on cards until GO)
 
-Run: 2026-10-29T00:08Z · requests 95 · pages 73 · PDFs 17 · sentences read 166 · unmatched 4 · look-alikes skipped 56 · sources failed 1
+Run: 2026-10-29T00:35Z · requests 103 · pages 81 · PDFs 17 · sentences read 166 · unmatched 4 · look-alikes skipped 56 · sources failed 1
 
 ## Kentucky gate: **FAIL** — 7 of 32 of Kentucky's own reader's items found here on the same park (21%); 21 only here
 
 ## Sources that failed this run
 
-- US-KY ky-parks-api: rest (https://parks.ky.gov/api/default/alerts?$top=100)
+- US-KY ky-parks-api: rest (host resting after an earlier strike; last items kept) (https://parks.ky.gov/api/default/alerts?$top=100)
 
-## US-KY (done, read 2026-10-29T00:08)
+## US-KY (done, read 2026-10-29T00:35)
 whole 1 · part 11 · hunt 0 · seasonal 0 · note 14 · taken_down 0 · 0 banners
 
-Sources that failed (last items kept): ky-parks-api (rest)
+Sources that failed (last items kept): ky-parks-api (rest (host resting after an earlier strike; last items kept))
 
 Skipped quietly (a secret is missing): ridb (D-R8: RIDB carries no closure text (names and poin)
 

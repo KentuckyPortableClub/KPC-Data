@@ -12,7 +12,7 @@
    },
    "failed": 2,
    "items": 26,
-   "read": "2026-10-29T00:08Z",
+   "read": "2026-10-29T00:35Z",
    "sources": 72,
    "status": "done"
   }
@@ -33,28 +33,28 @@
     "area": "US-KY",
     "src": "ky-parks-api",
     "url": "https://parks.ky.gov/api/default/alerts?$top=100",
-    "why": "rest"
+    "why": "rest (host resting after an earlier strike; last items kept)"
    }
   ],
   "manners": {
    "arcgis_exempt": 0,
    "errors": 0,
-   "requests": 94,
+   "requests": 102,
    "rested": 1,
    "robots": 0,
    "strikes": 0
   },
   "stat": {
    "items": 0,
-   "pages": 73,
+   "pages": 81,
    "pdfs": 17,
-   "requests": 95,
+   "requests": 103,
    "sentences": 166,
    "sources_failed": 1,
    "unmatched": 4,
    "unreadable": 56
   },
-  "when": "2026-10-29T00:08Z"
+  "when": "2026-10-29T00:35Z"
  },
  "test": {
   "matched": 7,
