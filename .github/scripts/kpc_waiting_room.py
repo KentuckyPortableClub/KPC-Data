@@ -75,8 +75,31 @@ def parks(st):
     """POTA park pins for a state: [name, ?, type, ..., lat, lon] rows from data/parkinfo (the shared park list, not a bot's own)."""
     if st not in _PARKS:
         _PARKS[st] = (load(DATA / 'data' / 'parkinfo' / f'US-{st}.json', {}) or load(LINKS / 'data' / 'parkinfo' / f'US-{st}.json', {}) or {}).get('parks')
+        if not _PARKS[st] and st == 'KY':   # Kentucky's pins live in the site's own park data (KPC-Links kpc-ky-data.json)
+            _PARKS[st] = {x['c']: [x.get('n', ''), x.get('web') or '', x.get('t', ''), None, None, x.get('la'), x.get('lo')] for x in (load(LINKS / 'kpc-ky-data.json', {}) or {}).get('parks', []) if x.get('c')}
     if not _PARKS[st]: raise Unsure(f'no park list for {st} (data/parkinfo/US-{st}.json)')
     return _PARKS[st]
+
+
+_ALLPINS = None
+def pin_of(ref):
+    """A park's pin from any state's park list (same-land pairs can cross a state line). -> (lat, lon) or None."""
+    global _ALLPINS
+    if _ALLPINS is None:
+        _ALLPINS = {}
+        for f in glob.glob(str(DATA / 'data' / 'parkinfo' / 'US-*.json')) + glob.glob(str(LINKS / 'data' / 'parkinfo' / 'US-*.json')):
+            st_f = pathlib.Path(f).stem
+            for r, v in ((load(f, {}) or {}).get('parks') or {}).items():
+                if len(v) > 6 and v[5] is not None:
+                    if r in _ALLPINS and _ALLPINS[r][3] != st_f: _ALLPINS[r] = (*_ALLPINS[r][:2], _ALLPINS[r][2], 'multi')
+                    else: _ALLPINS.setdefault(r, (v[5], v[6], f'{v[0]} {v[2] or ""}', st_f))
+        for x in (load(LINKS / 'kpc-ky-data.json', {}) or {}).get('parks', []):
+            if x.get('c') and x.get('la') is not None: _ALLPINS.setdefault(x['c'], (x['la'], x['lo'], f"{x.get('n', '')} {x.get('t', '')}", 'US-KY'))
+    return _ALLPINS.get(ref)
+
+
+BIG_RX = re.compile(r'national forest|national grassland|wilderness|national recreation area|national park\b|national monument|' + LINE_RX.pattern, re.I)   # NOT state forests (NY's sister-name forests are small)
+SISTER = re.compile(r'^\s*(.+?)\s*\(([^)]*)\)')
 
 
 _SHAPES = None
@@ -363,6 +386,23 @@ def c_fers(path, new, live, ctx):
     if ons >= 5 and abs(ns - ons) / ons > .3: holds.append(f'F-2 NOT SURE {ons} -> {ns} (over 30% change)')
     for p in ('pass1', 'pass2', 'pass3'):
         if not new.get(p): holds.append(f'F-2 {p} missing: the 2-fer passes did not all run')
+    # F-S2 (Fable review): a LIVE 'same land, two park numbers' row whose two pins are 30+ km apart is a wrong join; a missing pin = hold (fail closed)
+    far, nopin = [], []
+    for s in S:
+        if s.get('kind') != 'same land' or not str(s.get('status', '')).startswith(('candidate', 'merged into')): continue
+        pins = [pin_of(r) for r in (s.get('refs') or [])]
+        if any(pp is None for pp in pins): nopin.append(s.get('id')); continue
+        d = max((km(a[0], a[1], b[0], b[1]) for i, a in enumerate(pins) for b in pins[i + 1:]), default=0)
+        sis = [SISTER.match(pp[2]) for pp in pins]
+        sister = all(sis) and len({m.group(1).lower() for m in sis}) == 1 and len({m.group(2).lower() for m in sis}) > 1   # 'Lost Nation (St. Lawrence County)' + '(Allegany County)'
+        big = any(pp[3] == 'multi' or BIG_RX.search(pp[2]) for pp in pins)   # one pin for a huge / multi-state / line park (GW & Jefferson NF)
+        if d > 30 and (sister or not big or d > 300): far.append(f"{'+'.join(s.get('refs') or [])} {d:.0f} km" + (' (sister names)' if sister else ''))
+    if far: holds.append(f'F-S2 {len(far)} same-land rows with pins 30+ km apart (wrong joins), e.g. ' + ', '.join(far[:3]))
+    if nopin: holds.append(f'F-4 unsure: {len(nopin)} same-land rows with a park pin missing, e.g. {nopin[0]}')
+    # first file for an area: a near-empty file must not pass just because there is nothing to compare with
+    if live is None:
+        st = st_of(path); ok_n = ((load(DATA / 'data' / 'us-key' / f'US-{st}.json', {}) or {}).get('counts') or {}).get('matched') or 0
+        if ok_n >= 50 and len(S) < ok_n / 50: holds.append(f'F-2 near-empty first file: {len(S)} rows for a state with {ok_n} outlined parks')
     # F-K by a STABLE key (Fable note c): the PAIR of park numbers (never the spot id, which changes when an outline changes). Live =
     # candidate / very tight / water only / merged into another row. Pairs come from the hand files, never from the 2-fer bot's own gate.
     live_rows = [set(s.get('refs') or []) for s in S if str(s.get('status', '')).startswith(('candidate', 'very tight', 'water only', 'merged into'))]
@@ -451,7 +491,7 @@ NEVER_WAIT = {'closures'}   # F-3 (+ spots, weather, band alerts and a NEW park'
 
 
 def kind_of(path):
-    p = str(path).replace('\\', '/')
+    p = re.sub(r'\.gz$', '', str(path).replace('\\', '/'))   # a gzipped bot file is judged like its .json
     for rx, k, fn in ROUTES:
         if re.match(rx, p): return k, fn
     return None, None
@@ -467,7 +507,7 @@ def judge(path, new, live, ctx):
         if kind == 'closures':
             out, gone = closures_filter(path, new, live)
             if out is None: res.update(verdict='HOLD', why=gone); return res
-            res.update(verdict='LIVE-FILTERED' if gone else 'PASS', notes=gone, out=out); return res
+            res.update(verdict='LIVE-FILTERED' if gone else 'PASS', notes=gone, out=out if gone else None); return res
         if live is None: res['notes'].append('no live copy: first time this file is published')
         holds, notes = fn(path, new, live, ctx)
         h2, _ = c_status(path, new, live, ctx) if kind != 'status' else ([], [])
@@ -485,14 +525,14 @@ def look_line(r): return f"- FROM WAITING ROOM ({TODAY}): {r['kind']} {r['path']
 
 def mode_check(promote):
     on = promote and os.environ.get('WAITING_ON') == '1'
-    files = sorted(p for p in (W / 'in').rglob('*.json')) if (W / 'in').exists() else []
+    files = sorted(p for p in (W / 'in').rglob('*') if p.is_file() and re.search(r'\.json(\.gz)?$', p.name)) if (W / 'in').exists() else []   # Fable b: .json.gz too (never a silent stall)
     batch = {str(p.relative_to(W / 'in')): load(p) for p in files}
     ctx = {'set': batch}
     out = []
     for rel, new in batch.items():
         r = judge(rel, new, load(DATA / rel), ctx); out.append(r)
         if on and r['verdict'] in ('PASS', 'LIVE-FILTERED'):
-            promote_file(rel, r.get('out', new))
+            promote_file(rel, r.get('out'), raw=(W / 'in' / rel))
             (W / 'in' / rel).unlink()
     held = [r for r in out if r['verdict'] == 'HOLD']
     rep = {'checked': dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%dT%H:%MZ'), 'switched_on': on, 'results': [{k: v for k, v in r.items() if k != 'out'} for r in out]}
@@ -509,12 +549,18 @@ def mode_check(promote):
     print(f'::notice title=Waiting room::{len(out)} files: {sum(r["verdict"] != "HOLD" for r in out)} pass, {len(held)} held' + ('' if on else ' (NOT switched on: nothing promoted)'))
 
 
-def promote_file(rel, content):
+def promote_file(rel, content=None, raw=None):
+    """Fable c: the file goes live EXACTLY as the bot wrote it (its own bytes: indent, gzip), so git sees only real changes. Only a
+    closures file with rows taken out is rewritten (indented, like the bot writes it)."""
     live = DATA / rel; prev = W / 'previous' / rel
     prev.parent.mkdir(parents=True, exist_ok=True)
     if live.exists(): shutil.copy2(live, prev)
     live.parent.mkdir(parents=True, exist_ok=True)
-    json.dump(content, open(live, 'w', encoding='utf-8'), separators=(',', ':'), ensure_ascii=False)
+    if content is None and raw is not None: shutil.copy2(raw, live); return
+    if str(rel).endswith('.gz'):
+        import gzip
+        with gzip.open(live, 'wt', encoding='utf-8') as fh: json.dump(content, fh, indent=1, ensure_ascii=False)
+    else: json.dump(content, open(live, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
 
 
 def mode_undo(rel):
@@ -545,7 +591,7 @@ def mode_undo_bot(bot, area=''):
 def mode_release(rel):
     src = W / 'in' / rel
     if not src.exists(): print(f'::notice title=Waiting room release::nothing held at {rel}'); return
-    promote_file(rel, load(src)); src.unlink()
+    promote_file(rel, None, raw=src); src.unlink()
     print(f'::notice title=Waiting room release::{rel} released by a person (previous copy kept for undo)')
 
 

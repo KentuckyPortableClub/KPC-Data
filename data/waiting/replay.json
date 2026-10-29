@@ -253,6 +253,19 @@
    "catch": "F-K known 2-fer missing"
   },
   {
+   "name": "2-FERS: live 'same land' wrong joins (NY sister-name state forests 'Lost Nation (St. Lawrence)' + '(Allegany)', 377 km; Robert Moses x2, 503 km)",
+   "repo": "data",
+   "files": [
+    {
+     "path": "data/fers/US-NY.json",
+     "new": "live",
+     "live": "live"
+    }
+   ],
+   "expect": "HOLD",
+   "catch": "F-S2"
+  },
+  {
    "name": "GOOD: Kentucky 2-fers (live)",
    "repo": "data",
    "files": [
