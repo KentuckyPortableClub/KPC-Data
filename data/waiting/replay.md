@@ -1,5 +1,5 @@
 # Waiting room REPLAY TEST
-Run 2026-10-29 11:31Z: **PASS** (23 of 23 cases right). Every real bad output must be HELD (or, closures, have its bad rows taken out); every good output must PASS.
+Run 2026-10-29 12:14Z: **PASS** (34 of 34 cases right). Every real bad output must be HELD (or, closures, have its bad rows taken out); every good output must PASS.
 
 | result | case | expect | what the checker said |
 |---|---|---|---|
@@ -20,9 +20,20 @@ Run 2026-10-29 11:31Z: **PASS** (23 of 23 cases right). Every real bad output mu
 | ok | INTAKE: a read error as REJECT + Czech READY on a credit line (Oct 28 07:22) | HOLD | HOLD: F-K known answer: "USACE reservoirs (Army Corps of Engineer" is water surfaces only (rule B6), never READY; F-N1 "SCDNR managed lands (public viewer) on C": a r |
 | ok | CANADA KEY: retired CA-2156 still outlined (Oct 28 01:49) | HOLD | HOLD: F-O3 retired parks still outlined: CA-2156 / HOLD: F-O3 retired parks still in the outline index: CA-2045, CA-2156, CA-2160, CA-2161, CA-2266 |
 | ok | DOCS: map / rules links that answer an error (simulated: 3 parks pointing at pages that do not exist) | HOLD | HOLD: F-D3 3 of 3 re-tested links dead, e.g. https://www.nps.gov/kpc-replay-dead-link-2.htm; no live copy: first time this file is published |
-| ok | 2-FERS: a known pair dropped (simulated: Mammoth Cave x Green River removed from the live KY file) | HOLD | HOLD: F-K known 2-fer missing: US-0050 + US-10105 |
-| ok | 2-FERS: live 'same land' wrong joins (NY sister-name state forests 'Lost Nation (St. Lawrence)' + '(Allegany)', 377 km; Robert Moses x2, 503 km) | HOLD | HOLD: F-S2 10 same-land rows with pins 30+ km apart (wrong joins), e.g. US-10284+US-5398 377 km (sister names), US-12778+US-5342 103 km (sister names), US-2128+US-437 |
+| ok | 2-FERS: a known pair dropped (simulated: Mammoth Cave x Green River removed from the live KY file) | HOLD | HOLD: F-K known 2-fer missing: US-0050+US-10105@area@37.17,-86.15; F-K known 2-fer missing: US-0050 + US-10105 |
+| ok | 2-FERS: live 'same land' wrong joins (NY sister-name state forests 'Lost Nation (St. Lawrence)' + '(Allegany)', 377 km; Robert Moses x2, 503 km) | HOLD | HOLD: F-S3 3 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-2028+US-2061+US-4374 500 km, US-2028+US-4374 500 km, US-2061+US-4374 500 km; F-S2  |
 | ok | GOOD: Kentucky 2-fers (live) | PASS | PASS:  |
 | ok | GOOD: Canada key, Ontario (live) | PASS | PASS:  |
 | ok | GOOD: Kentucky federal campgrounds (live, after the Oct 29 sweep) | PASS | PASS:  |
 | ok | GOOD: NY access after the 100 km fix (Oct 29 02:27 vs the run before) | PASS | PASS:  |
+| ok | ATTACK A1 (chat 8): Ohio 2-fers, every candidate pair wrong, same count | HOLD | HOLD: F-2 only 0 of 25 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-S3 4 live rows whose two park pins are  |
+| ok | ATTACK A1 (chat 8): Indiana 2-fers, pairs rotated | HOLD | HOLD: F-2 only 1 of 51 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-S3 27 live rows whose two park pins are |
+| ok | ATTACK A2 (chat 8): Ohio outline key, outlines shuffled to other parks | HOLD | HOLD: F-O2 263 of 270 outlines carry a layer name that shares no word with the park (97%; live 4/270): outlines swapped to other parks? |
+| ok | ATTACK A3 (chat 8): Illinois 2-fers + 20% fake far-apart area rows | HOLD | HOLD: F-2 candidates 12 -> 27 (over 30% change); F-S3 9 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-0282+US-10094 313 km, US-0987+US-4159 4 |
+| ok | ATTACK A4 (chat 8): New Mexico 2-fers wiped (2 candidates) | HOLD | HOLD: F-2 only 0 of 4 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 every row gone (live had 12) |
+| ok | ATTACK A5 (chat 8): a .gz twin of live Wisconsin 2-fers with 18% of the rows | HOLD | HOLD: F-4 data/fers/US-WI.json.gz replaces live data/fers/US-WI.json (other format) with 67 rows for 374 (over 10% fewer) |
+| ok | ATTACK A6 (chat 8): status PART READY FOR CHAT 8 with 40 unchecked rows | HOLD | HOLD: F-S1 status PART READY FOR CHAT 8 with 40 rows STORE NOT READ / not checked (must be STOPPED) |
+| ok | ATTACK A7 (chat 8): truthy pass flags, no pass record on any row | HOLD | HOLD: F-2 pass1 is not a run date (True): the bot's own field, not trusted; F-2 pass2 is not a run date (True): the bot's own field, not trusted; F-2 pass3 is not a r |
+| ok | GOOD B1 (chat 8): Kentucky closures naming the Indiana bat, Washington County, the Virginia state line, West Virginia hunters | PASS | PASS:  |
+| ok | GOOD B1b (chat 8): the same rows with no park number (word test) | PASS | PASS:  |
+| ok | GOOD: Ohio 2-fers unchanged (chat 8 baseline) | PASS | PASS:  |
