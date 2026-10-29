@@ -1,0 +1,126 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "southcentral",
+ "states": [
+  "US-AR",
+  "US-LA",
+  "US-OK",
+  "US-TX",
+  "US-KS",
+  "US-NE"
+ ],
+ "since": "2026-10-28",
+ "date": "2026-10-29 04:13 UTC",
+ "verdict": "PART READY FOR CHAT 8",
+ "why": [
+  "US-AR: 48 rows still waiting for a pass (out of time: run the worker again)",
+  "US-LA: 12 rows still waiting for a pass (out of time: run the worker again)",
+  "US-OK: 84 rows still waiting for a pass (out of time: run the worker again)",
+  "US-TX: 50 rows still waiting for a pass (out of time: run the worker again)",
+  "US-NE: 11 rows still waiting for a pass (out of time: run the worker again)"
+ ],
+ "known_answers": "18/18 on 2026-10-28",
+ "missing_check": {
+  "FOUND": 44,
+  "DROPPED": 282,
+  "NEVER LOOKED AT": 9112
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-28",
+   "pairs tested": 384,
+   "pairs whose boxes touch": 384
+  },
+  "pass2": {
+   "agree with the pass before": 445,
+   "date": "2026-10-28",
+   "pairs tested": 157
+  },
+  "pass3": {
+   "agree with the pass before": 244,
+   "date": "2026-10-28",
+   "pairs tested": 150
+  },
+  "pass5": {
+   "checked": 15,
+   "date": "2026-10-29",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-AR": "data/fers/US-AR.json",
+  "US-LA": "data/fers/US-LA.json",
+  "US-OK": "data/fers/US-OK.json",
+  "US-TX": "data/fers/US-TX.json",
+  "US-KS": "data/fers/US-KS.json",
+  "US-NE": "data/fers/US-NE.json"
+ },
+ "US-AR": {
+  "rows": 146,
+  "live": 2,
+  "waiting": 48,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 95,
+  "merged": 1
+ },
+ "US-LA": {
+  "rows": 42,
+  "live": 0,
+  "waiting": 12,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 30,
+  "merged": 0
+ },
+ "US-OK": {
+  "rows": 170,
+  "live": 2,
+  "waiting": 84,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 80,
+  "merged": 4
+ },
+ "US-TX": {
+  "rows": 152,
+  "live": 7,
+  "waiting": 50,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 63,
+  "merged": 32
+ },
+ "US-KS": {
+  "rows": 62,
+  "live": 25,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "the ownership map shows more than one owner across the spot": 1,
+   "no public owner on the ownership map": 1
+  },
+  "dropped": 7,
+  "merged": 28
+ },
+ "US-NE": {
+  "rows": 51,
+  "live": 10,
+  "waiting": 11,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 6,
+  "merged": 24
+ },
+ "states_ready": [
+  "US-KS"
+ ],
+ "states_held": [
+  "US-AR",
+  "US-LA",
+  "US-NE",
+  "US-OK",
+  "US-TX"
+ ]
+}
