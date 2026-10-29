@@ -6,12 +6,10 @@
   "CA-BC"
  ],
  "since": "2026-10-29",
- "date": "2026-10-29 05:04 UTC",
- "verdict": "STOPPED",
+ "date": "2026-10-29 06:12 UTC",
+ "verdict": "PART READY FOR CHAT 8",
  "why": [
-  "water not checked: CA-AB: 32 rows (the USGS water map / files had no answer there): never READY with one",
-  "CA-BC: 7 rows still waiting for a pass (out of time: run the worker again)",
-  "water not checked: CA-BC: 23 rows (the USGS water map / files had no answer there): never READY with one"
+  "water not checked: CA-BC: 9 rows (the USGS water map / files had no answer there): never READY with one"
  ],
  "known_answers": "19/19 on 2026-10-29",
  "missing_check": {
@@ -31,15 +29,15 @@
    "pairs tested": 0
   },
   "pass3": {
-   "agree with the pass before": 350,
+   "agree with the pass before": 0,
    "date": "2026-10-29",
-   "pairs tested": 286
+   "pairs tested": 0
   },
   "pass5": {
-   "checked": 63,
+   "checked": 59,
    "date": "2026-10-29",
    "pairs tested": 0,
-   "still not checked": 59
+   "still not checked": 9
   }
  },
  "files": {
@@ -48,33 +46,37 @@
  },
  "CA-AB": {
   "rows": 836,
-  "live": 15,
+  "live": 41,
   "waiting": 0,
   "unfinished": 0,
-  "not_sure": {
-   "water not checked": 32
-  },
-  "dropped": 521,
-  "merged": 268
- },
- "water_weak": {
-  "CA-AB": 32,
-  "CA-BC": 23
+  "not_sure": {},
+  "dropped": 524,
+  "merged": 271
  },
  "CA-BC": {
   "rows": 668,
-  "live": 52,
-  "waiting": 7,
+  "live": 59,
+  "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "water not checked": 23
+   "water not checked": 9,
+   "the official outline of Twin Falls Tea House National Histor": 1,
+   "the official outline of Ruckle Provincial Park could not be": 1,
+   "the official outline of Stewart Farm Historic Site could not": 1,
+   "the official outline of Fort Langley National Historic Site": 1,
+   "the official outline of Rathtrevor Beach Provincial Park cou": 1,
+   "the official outline of Fisgard Lighthouse National Historic": 1
   },
-  "dropped": 516,
-  "merged": 70
+  "dropped": 523,
+  "merged": 71
  },
- "states_ready": [],
+ "water_weak": {
+  "CA-BC": 9
+ },
+ "states_ready": [
+  "CA-AB"
+ ],
  "states_held": [
-  "CA-AB",
   "CA-BC"
  ]
 }

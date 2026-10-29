@@ -28,8 +28,8 @@
   "date": "2026-10-29",
   "left out": {
    "Kentucky (own list)": "all (ky-overlaps.geojson)",
-   "approximate": 422,
-   "no outline": 3600,
+   "approximate": 424,
+   "no outline": 3557,
    "no pin": 0,
    "pin well outside": 0
   },
@@ -45,19 +45,19 @@
   "with official lines": 3
  },
  "pass3": {
-  "agree with the pass before": 350,
+  "agree with the pass before": 0,
   "cell_m": 5.0,
   "date": "2026-10-29",
   "left out": {
    "Kentucky (own list)": "all (ky-overlaps.geojson)",
-   "approximate": 422,
-   "no outline": 3600,
+   "approximate": 424,
+   "no outline": 3557,
    "no pin": 0,
    "pin well outside": 0
   },
-  "new here only (not counted)": 345,
+  "new here only (not counted)": 0,
   "official parks": 1513,
-  "pairs tested": 286,
+  "pairs tested": 0,
   "parks whose outline could not be read": 0,
   "parks with a saved copy only (no fresh download possible)": 0,
   "pass": 3,
@@ -68,12 +68,12 @@
  },
  "pass5": {
   "cell_m": 5.0,
-  "checked": 63,
+  "checked": 59,
   "date": "2026-10-29",
   "left out": {
    "Kentucky (own list)": "all (ky-overlaps.geojson)",
-   "approximate": 422,
-   "no outline": 3600,
+   "approximate": 424,
+   "no outline": 3557,
    "no pin": 0,
    "pin well outside": 0
   },
@@ -83,38 +83,39 @@
   "problems": [
    "W&S river corridors joined as area parks: 15"
   ],
-  "re-checked at the end": 59,
+  "re-checked at the end": 9,
   "river channels listed as water only (boat spots)": 0,
+  "same land dropped: wrong join": 10,
   "spots given their boundary lines": 339,
-  "still not checked": 59,
+  "still not checked": 9,
   "trail stretches given their true zone": 4,
-  "water only": 0,
+  "water only": 1,
   "water retries (won / tries)": "0 / 0",
   "with official lines": 3
  },
  "per state": {
   "CA-AB": {
-   "candidates": 12,
+   "candidates": 37,
    "candidates (saved outline only)": 0,
    "lines": 30,
    "n-fers": 24,
-   "not sure": 32,
+   "not sure": 0,
    "pass1": 836,
    "pass2": 806,
    "spots": 836,
    "very tight": 3,
-   "water only": 0
+   "water only": 1
   },
   "CA-BC": {
-   "candidates": 51,
+   "candidates": 53,
    "candidates (saved outline only)": 0,
    "lines": 98,
    "n-fers": 2,
-   "not sure": 23,
+   "not sure": 15,
    "pass1": 668,
    "pass2": 607,
    "spots": 668,
-   "very tight": 1,
+   "very tight": 6,
    "water only": 0
   }
  }
