@@ -1,5 +1,5 @@
 # Waiting room REPLAY TEST
-Run 2026-10-29 09:58Z: **PASS** (23 of 23 cases right). Every real bad output must be HELD (or, closures, have its bad rows taken out); every good output must PASS.
+Run 2026-10-29 10:00Z: **FAIL** (22 of 23 cases right). Every real bad output must be HELD (or, closures, have its bad rows taken out); every good output must PASS.
 
 | result | case | expect | what the checker said |
 |---|---|---|---|
@@ -19,10 +19,10 @@ Run 2026-10-29 09:58Z: **PASS** (23 of 23 cases right). Every real bad output mu
 | ok | TRUTH: WV statewide '1.4 million acres' on 76 WMAs (Oct 28 21:48) | HOLD | HOLD: F-R1 76 parks OFF on one number from one page (1,400,000.0 ac, https://wvdnr.gov/lands-waters/wildlife-management-areas/); F-R2 76 OFF rows share the size 1,400 |
 | ok | INTAKE: a read error as REJECT + Czech READY on a credit line (Oct 28 07:22) | HOLD | HOLD: F-K known answer: "USACE reservoirs (Army Corps of Engineer" is water surfaces only (rule B6), never READY; F-N1 "SCDNR managed lands (public viewer) on C": a r |
 | ok | CANADA KEY: retired CA-2156 still outlined (Oct 28 01:49) | HOLD | HOLD: F-O3 retired parks still outlined: CA-2156 / HOLD: F-O3 retired parks still in the outline index: CA-2045, CA-2156, CA-2160, CA-2161, CA-2266 |
-| ok | DOCS: map / rules links that answer an error (simulated: 3 parks pointing at pages that do not exist) | HOLD | HOLD: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits; no live copy: first time this file is published |
+| ok | DOCS: map / rules links that answer an error (simulated: 3 parks pointing at pages that do not exist) | HOLD | HOLD: F-D3 3 of 3 re-tested links dead, e.g. https://www.nps.gov/kpc-replay-dead-link-2.htm; no live copy: first time this file is published |
 | ok | 2-FERS: a known pair dropped (simulated: Mammoth Cave x Green River removed from the live KY file) | HOLD | HOLD: F-K known 2-fer missing: US-0050 + US-10105 |
 | ok | 2-FERS: live 'same land' wrong joins (NY sister-name state forests 'Lost Nation (St. Lawrence)' + '(Allegany)', 377 km; Robert Moses x2, 503 km) | HOLD | HOLD: F-S2 10 same-land rows with pins 30+ km apart (wrong joins), e.g. US-10284+US-5398 377 km (sister names), US-12778+US-5342 103 km (sister names), US-2128+US-437 |
 | ok | GOOD: Kentucky 2-fers (live) | PASS | PASS:  |
 | ok | GOOD: Canada key, Ontario (live) | PASS | PASS:  |
-| ok | GOOD: Kentucky federal campgrounds (live, after the Oct 29 sweep) | PASS | PASS:  |
+| **MISS** | GOOD: Kentucky federal campgrounds (live, after the Oct 29 sweep) | PASS | HOLD: F-K known Kentucky federal camps missing within 2 km: Wilderness Road Campground |
 | ok | GOOD: NY access after the 100 km fix (Oct 29 02:27 vs the run before) | PASS | PASS:  |
