@@ -6,78 +6,73 @@
   "CA-BC"
  ],
  "since": "2026-10-29",
- "date": "2026-10-29 10:13 UTC",
- "verdict": "STOPPED",
+ "date": "2026-10-29 19:24 UTC",
+ "verdict": "PART READY FOR CHAT 8",
  "why": [
-  "CA-AB: 1 live 'same land' rows with pins over 30 km apart (a wrong join in the key): CA-1182+CA-3063@same land@55.505,-115.594",
-  "water not checked: CA-BC: 9 rows (the USGS water map / files had no answer there): never READY with one",
-  "CA-BC: 4 live 'same land' rows with pins over 30 km apart (a wrong join in the key): CA-0733+CA-3913@same land@58.128,-124.419 CA-3192+CA-3194@same land@55.057,-126.512 CA-3735+CA-3736@same land@59.472,-125.905 CA-3873+CA-3874@same land@59.188,-133.282"
+  "water not checked: CA-BC: 13 rows (the USGS water map / files had no answer there): never READY with one"
  ],
  "known_answers": "19/19 on 2026-10-29",
  "missing_check": {
   "FOUND": 0,
-  "DROPPED": 25,
+  "DROPPED": 33,
   "NEVER LOOKED AT": 0
  },
  "report": {
   "pass1": {
    "date": "2026-10-29",
-   "pairs tested": 773,
-   "pairs whose boxes touch": 773
+   "pairs tested": 806,
+   "pairs whose boxes touch": 806
   },
   "pass2": {
-   "agree with the pass before": 0,
+   "agree with the pass before": 1013,
    "date": "2026-10-29",
-   "pairs tested": 0
+   "pairs tested": 317
   },
   "pass3": {
-   "agree with the pass before": 0,
+   "agree with the pass before": 263,
    "date": "2026-10-29",
-   "pairs tested": 0
+   "pairs tested": 303
   },
   "pass5": {
-   "checked": 55,
+   "checked": 61,
    "date": "2026-10-29",
    "pairs tested": 0,
-   "still not checked": 9
+   "still not checked": 14
   }
  },
  "files": {
-  "CA-AB": "data/fers/CA-AB.json.gz",
+  "CA-AB": "data/fers/CA-AB.json",
   "CA-BC": "data/fers/CA-BC.json"
  },
  "CA-AB": {
-  "rows": 836,
-  "live": 41,
-  "waiting": 0,
-  "unfinished": 0,
-  "not_sure": {},
-  "dropped": 524,
-  "merged": 271
- },
- "CA-BC": {
-  "rows": 668,
-  "live": 59,
+  "rows": 520,
+  "live": 38,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "water not checked": 9,
-   "the official outline of Twin Falls Tea House National Histor": 1,
-   "the official outline of Ruckle Provincial Park could not be": 1,
-   "the official outline of Stewart Farm Historic Site could not": 1,
-   "the official outline of Fort Langley National Historic Site": 1,
-   "the official outline of Rathtrevor Beach Provincial Park cou": 1,
-   "the official outline of Fisgard Lighthouse National Historic": 1
+   "no public owner on the ownership map": 2
   },
-  "dropped": 523,
-  "merged": 71
+  "dropped": 313,
+  "merged": 167
+ },
+ "CA-BC": {
+  "rows": 643,
+  "live": 45,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "water not checked": 13
+  },
+  "dropped": 527,
+  "merged": 58
  },
  "water_weak": {
-  "CA-BC": 9
+  "CA-BC": 13
  },
- "states_ready": [],
+ "states_ready": [
+  "CA-AB"
+ ],
  "states_held": [
-  "CA-AB",
   "CA-BC"
  ]
 }
