@@ -1368,6 +1368,14 @@ def in_state(row, area, sid):
     return not others or cx['state'] in text
 
 
+def nm_clean(n):
+    """Oct 29 tune (55 unmatched KDFWR headings): 'BALLARD WMA -\u200b Ballard County' -> 'Ballard WMA'; zero-width spaces, a trailing
+    ' - <name> County / Counties' and a trailing '|' never block a name match."""
+    n = re.sub(r'[\u200b\u200c\u200d\ufeff]', '', str(n or ''))
+    n = re.sub(r'\s*[-–]\s*[^-–]*\bcount(?:y|ies)\b.*$', '', n, flags=re.I).strip(' |:')
+    return n.title() if n.isupper() else n
+
+
 def tie(K, row, parks, area, sid=''):
     """-> (refs, part_from_name). Pinned refs win (the agency's own tie); else the name / heading; else the text; two parks or
     none = unmatched (Sheet A rule 4; Sheet A ex. 8 'Hickory Run')."""
@@ -1384,7 +1392,7 @@ def tie(K, row, parks, area, sid=''):
         _, part = unit_split(str(row['name']))
         hits = match(K, row, parks, st)
         return (hits if len(hits) == 1 else ([] if len(hits) > 1 else hits)), part
-    names = row.get('names') or []
+    names = [nm_clean(n) for n in (row.get('names') or [])]
     sent = row.get('sent') or row.get('text') or ''
     if names:
         cand = {}

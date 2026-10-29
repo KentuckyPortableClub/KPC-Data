@@ -274,7 +274,9 @@ def c_docs(path, new, live, ctx):
     banned = re.compile(known('docs').get('banned_hosts') or r'inciweb|google\.[a-z.]+/maps|maps\.app\.goo\.gl|goo\.gl/maps|facebook\.com', re.I)
     for kind in ('map', 'rules'):
         urls = [((r.get(kind) or {}).get('url')) for r in P.values()]
-        for u, k in share(urls, len(P)): holds.append(f'F-D1 one {kind} page on {k} of {len(P)} parks: {u[:80]}')
+        agency = lambda d: (d or {}).get('rules_scope') == 'agency' or 'agency-wide' in str((d or {}).get('how') or '') or 'agency-wide' in str((d or {}).get('status_note') or '')
+        shared = [((r.get(kind) or {}).get('url')) for r in P.values() if not (kind == 'rules' and agency(r.get(kind)))]   # tune Oct 29: an agency-wide rules page LABELLED so (docs v6 rule) is allowed on many parks
+        for u, k in share(shared, len(P)): holds.append(f'F-D1 one {kind} page on {k} of {len(P)} parks: {u[:80]}')
         bad = [u for u in urls if u and banned.search(u)]
         if bad: holds.append(f'F-D2 {len(bad)} {kind} links on a banned host (fire news / map pins / social), e.g. {bad[0][:70]}')
     kept = [(r.get(k) or {}).get('url') for r in P.values() for k in ('map', 'rules')]
