@@ -3,16 +3,16 @@
  "areas": {
   "US-KY": {
    "counts": {
-    "hunt": 32,
-    "note": 52,
-    "part": 21,
+    "hunt": 16,
+    "note": 23,
+    "part": 18,
     "seasonal": 0,
-    "taken_down": 7,
+    "taken_down": 0,
     "whole": 3
    },
    "failed": 2,
-   "items": 115,
-   "read": "2026-10-29T01:59Z",
+   "items": 60,
+   "read": "2026-10-29T02:29Z",
    "sources": 72,
    "status": "done"
   }
@@ -52,31 +52,35 @@
    "sentences": 399,
    "sources_failed": 1,
    "unmatched": 131,
-   "unreadable": 198
+   "unreadable": 290
   },
-  "when": "2026-10-29T01:59Z"
+  "when": "2026-10-29T02:29Z"
  },
  "test": {
-  "matched": 19,
-  "only_here": 88,
+  "matched": 15,
+  "only_here": 43,
   "only_there": [
    "pa-fs-tornado-damaged-area-closure-london-pulaski-counties-US-11181",
    "pa-fs-red-river-gorge-suspension-bridge-impassable-US-11181",
    "pa-fs-hawk-creek-sinking-creek-trail-bridges-impassable-US-11181",
+   "hc-US-4687-2026-11-07",
+   "hc-US-3834-2026-11-07",
    "hc-US-3831-2026-11-15",
    "hc-US-3820-2026-11-07",
+   "hc-US-3816-2026-12-05",
    "hc-US-3816-2026-11-07",
    "hc-US-3809-2026-12-05",
    "hc-US-3809-2026-11-07",
+   "hc-US-3806-2026-11-07",
    "hc-US-3797-2026-10-15",
    "hc-US-3794-2026-11-07",
    "hc-US-3793-2026-11-07",
-   "hc-US-3793-2026-10-15",
+   "hc-US-1255-2026-11-21",
    "pa-nps-B489F041-FD1B-40F2-992D-9D36C841B7E5-US-7951"
   ],
   "own": 32,
   "result": "FAIL",
   "when": "2026-10-29",
-  "why": "19 of 32 of Kentucky's own reader's items found here on the same park (59%); 88 only here"
+  "why": "15 of 32 of Kentucky's own reader's items found here on the same park (46%); 43 only here"
  }
 }
