@@ -1,0 +1,44 @@
+# TEMP PROBE (chat 2, Oct 28 2026; chat 8 KPC_OwnLandLayers_Rivers_desk.md section 2): do the agencies' own land layers include the
+# water inside their units? HIT / NO HIT at water points. Never fails; deleted after reading.
+name: Probe own-land layers at water (temp)
+on: { workflow_dispatch: {} }
+permissions: { contents: read }
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    continue-on-error: true
+    steps:
+      - run: |
+          python3 - <<'PY'
+          import json, urllib.request, urllib.parse
+          UA = {'User-Agent': 'KPC probe (kentuckyportableclub.github.io)'}
+          def J(u, p=None):
+              try:
+                  with urllib.request.urlopen(urllib.request.Request(u + ('?' + urllib.parse.urlencode(p) if p else ''), headers=UA), timeout=60) as r: return json.loads(r.read())
+              except Exception as e: return {'error': str(e)[:120]}
+          NPS = 'https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/1'
+          FSBO = 'https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0'
+          FWS = 'https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest/FeatureServer/1'
+          OH = 'https://gis.ohiodnr.gov/arcgis/rest/services/OIT_Services/'
+          out = []
+          def hit(name, u, lon, lat):
+              q = J(u + '/query', {'geometry': f'{lon},{lat}', 'geometryType': 'esriGeometryPoint', 'inSR': 4326, 'spatialRel': 'esriSpatialRelIntersects', 'outFields': '*', 'returnGeometry': 'false', 'f': 'json'})
+              if 'error' in q: out.append(f'{name}: ERROR {str(q["error"])[:80]}'); return
+              fs = q.get('features') or []
+              out.append(f"{name}: {'HIT ' + json.dumps({k: v for k, v in (fs[0].get('attributes') or {}).items() if k.lower() in ('alpha_tract','estate','status','interest','owner','ownerclassification','inttype1','orgname','unit_name','name','site_name','propname','type','ownership','manager')})[:160] if fs else 'NO HIT'}")
+          for nm, lo, la in (('NPS Green River MACA a', -86.1305, 37.1856), ('NPS Green River MACA b', -86.1505, 37.1863), ('NPS Green River MACA c', -86.2050, 37.1985), ('NPS New River Gorge', -81.0780, 37.9250), ('NPS Big South Fork', -84.6930, 36.4950)): hit(nm, NPS, lo, la)
+          for nm, lo, la in (('FS Red River gorge', -83.6300, 37.8200), ('FS Cumberland River in DBNF', -84.3200, 36.8400)): hit(nm, FSBO, lo, la)
+          m = J('https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest/FeatureServer', {'f': 'json'}); out.append('FWS interest layers: ' + str([(l.get('id'), l.get('name')) for l in m.get('layers') or []])[:300] + str(m.get('error', '')))
+          for nm, lo, la in (('FWS Ohio River Islands channel', -81.7000, 39.3300), ('FWS Detroit River', -83.1400, 42.1200)):
+              for lid in (0, 1): hit(f'{nm} (layer {lid})', FWS[:-2] + f'/{lid}', lo, la)
+          s = J(OH, {'f': 'json'}); names = [x['name'] for x in s.get('services') or []]; out.append('ODNR services: ' + str([n for n in names if 'Land' in n])[:400] + str(s.get('error', '')))
+          for svc in [n for n in names if 'Land' in n][:6]:
+              for kind in ('FeatureServer', 'MapServer'):
+                  mm = J(f'https://gis.ohiodnr.gov/arcgis/rest/services/{svc}/{kind}', {'f': 'json'})
+                  if 'error' in mm: continue
+                  lays = [(l['id'], l['name']) for l in mm.get('layers') or []]; out.append(f'{svc}/{kind}: {lays[:12]}')
+                  for lid, ln in lays[:10]: hit(f'Mosquito Lake in {svc}/{lid} {ln}', f'https://gis.ohiodnr.gov/arcgis/rest/services/{svc}/{kind}/{lid}', -80.7600, 41.3000)
+                  break
+          for o in out: print('::notice title=own land at water::' + o[:900])
+          PY
