@@ -720,9 +720,18 @@
    "page": "https://www.fs.usda.gov/recarea/nfsnc/recreation/hiking/recarea/?recid=49146&actid=51",
    "checked": "2026-10-29",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.fs.usda.gov/r08/northcarolina/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-29",
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/recarea/nfsnc/recreation/hiking/recarea/?recid=49146&actid=51",
+    "posted": "October 5, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-10-29",
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/northcarolina",
@@ -735,7 +744,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-10-29"
   },
   "US-10262": {
    "n": "Linville Gorge Wilderness Area",
@@ -743,9 +753,18 @@
    "page": "https://www.fs.usda.gov/recarea/nfsnc/null/recarea/?recid=48974&actid=37",
    "checked": "2026-10-29",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.fs.usda.gov/r08/northcarolina/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-29",
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/recarea/nfsnc/null/recarea/?recid=48974&actid=37",
+    "posted": "October 5, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-10-29",
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/northcarolina",
@@ -758,7 +777,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-10-29"
   },
   "US-10263": {
    "n": "Bonner House Historic Site",
@@ -820,7 +840,9 @@
    "agency": "Tennessee Valley Authority",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
    "ver": 7
   },
@@ -830,9 +852,18 @@
    "page": "https://www.fs.usda.gov/detail/nfsnc/specialplaces/?cid=fseprd561556",
    "checked": "2026-10-29",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.fs.usda.gov/r08/northcarolina/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-29",
+    "how": "the page in a browser ('Maps and Guides')",
+    "page": "https://www.fs.usda.gov/detail/nfsnc/specialplaces/?cid=fseprd561556",
+    "posted": "October 5, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-10-29",
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/northcarolina",
@@ -845,7 +876,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-10-29"
   },
   "US-10398": {
    "n": "Chatuge Dam Trail Recreation Park",
@@ -894,7 +926,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 6,
+   "ver": 7,
    "browser_checked": "2026-10-29"
   },
   "US-10406": {
@@ -916,7 +948,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-10511": {
    "n": "Jessups Mill Pond State Game Land",
@@ -925,7 +957,7 @@
    "checked": "2026-10-29",
    "map": {
     "url": "",
-    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.lake-link.com/map-viewer/?CFID=236990389&CFTOKEN=c9d5bc95c; opened, a page that does not name this park (a generic agency page is not its map) https://www.lake-link.com/lake-maps/?CFID=236990389&CFTOKEN=c9d5bc95ca)",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.lake-link.com/map-viewer/?CFID=237552896&CFTOKEN=43b88375a; opened, a page that does not name this park (a generic agency page is not its map) https://www.lake-link.com/lake-maps/?CFID=237552896&CFTOKEN=43b88375a0)",
     "how": "a link on the park's page ('Map Viewer App For Windows')"
    },
    "rules": {
@@ -939,7 +971,7 @@
    "notes": [],
    "map_tried": [
     {
-     "url": "https://www.lake-link.com/map-viewer/?CFID=236990389&CFTOKEN=c9d5bc95ca04a8ed-3DD552F8-ECB1-DB85-4A05CF10D878E164",
+     "url": "https://www.lake-link.com/map-viewer/?CFID=237552896&CFTOKEN=43b88375a067e4dd-4E17A264-ECEA-C8D1-7DBD2487368140FC",
      "status": "opened, a page that does not name this park (a generic agency page is not its map)",
      "kind": "page",
      "date": null,
@@ -953,7 +985,7 @@
      "via": "the agency site"
     },
     {
-     "url": "https://www.lake-link.com/lake-maps/?CFID=236990389&CFTOKEN=c9d5bc95ca04a8ed-3DD552F8-ECB1-DB85-4A05CF10D878E164",
+     "url": "https://www.lake-link.com/lake-maps/?CFID=237552896&CFTOKEN=43b88375a067e4dd-4E17A264-ECEA-C8D1-7DBD2487368140FC",
      "status": "opened, a page that does not name this park (a generic agency page is not its map)",
      "kind": "page",
      "date": null,
@@ -967,7 +999,7 @@
      "via": "the agency site"
     }
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-11019": {
    "n": "Shining Rock Wilderness Area",
@@ -986,7 +1018,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-29",
     "via": "the agency site",
-    "kind_note": "forest map only; forest map only"
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/northcarolina",
@@ -999,7 +1031,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6,
+   "ver": 7,
    "browser_checked": "2026-10-29"
   },
   "US-11020": {
@@ -1019,7 +1051,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-29",
     "via": "the agency site",
-    "kind_note": "forest map only; forest map only"
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/northcarolina",
@@ -1032,7 +1064,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6,
+   "ver": 7,
    "browser_checked": "2026-10-29"
   },
   "US-11238": {
@@ -1070,7 +1102,7 @@
      "via": "the agency site"
     }
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-11271": {
    "n": "Joyce Kilmer-Slickrock Wilderness Area",
@@ -1089,7 +1121,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-29",
     "via": "the agency site",
-    "kind_note": "forest map only; forest map only"
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/northcarolina",
@@ -1102,7 +1134,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6,
+   "ver": 7,
    "browser_checked": "2026-10-29"
   },
   "US-11375": {
@@ -1124,7 +1156,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-11856": {
    "n": "Fonta-Flora State Trail",
@@ -1155,7 +1187,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-12119": {
    "n": "Moses H. Cone National Park",
@@ -1192,7 +1224,7 @@
      "via": "the agency site"
     }
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-12175": {
    "n": "Vance State Game Land",
@@ -1213,7 +1245,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-12320": {
    "n": "Yadkin River State Trail",
@@ -1245,7 +1277,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-12371": {
    "n": "Julian Price National Park",
@@ -1282,7 +1314,7 @@
      "via": "the agency site"
     }
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-12414": {
    "n": "Doughton Recreation Park",
@@ -1319,7 +1351,7 @@
      "via": "the agency site"
     }
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-12662": {
    "n": "Harmon Den Wildlife Management Area",
@@ -1340,7 +1372,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-12717": {
    "n": "Deep River State Trail",
@@ -1372,7 +1404,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-13002": {
    "n": "Dan River State Trail",
@@ -1404,7 +1436,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-2721": {
    "n": "Bay Tree Lake State Park",
@@ -1426,7 +1458,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6,
+   "ver": 7,
    "browser_checked": "2026-10-29"
   },
   "US-2722": {
@@ -1459,7 +1491,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-2723": {
    "n": "Carvers Creek State Park",
@@ -1490,7 +1522,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-2724": {
    "n": "Chimney Rock State Park",
@@ -1522,7 +1554,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-2725": {
    "n": "Cliffs of the Neuse State Park",
@@ -1553,7 +1585,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-2726": {
    "n": "Crowders Mountain State Park",
@@ -1585,7 +1617,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-2727": {
    "n": "Dismal Swamp State Park",
@@ -1616,7 +1648,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-2728": {
    "n": "Elk Knob State Park",
@@ -1647,7 +1679,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-2729": {
    "n": "Eno River State Park",
@@ -1694,7 +1726,7 @@
      "via": "the agency site"
     }
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-2730": {
    "n": "Fort Macon State Park",
@@ -1725,7 +1757,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-2731": {
    "n": "Goose Creek State Park",
@@ -1756,7 +1788,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-2732": {
    "n": "Gorges State Park",
@@ -1788,7 +1820,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-2733": {
    "n": "Grandfather Mountain State Park",
@@ -1822,7 +1854,7 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-2734": {
    "n": "Hammocks Beach State Park",
@@ -1853,7 +1885,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-2735": {
    "n": "Hanging Rock State Park",
@@ -1885,7 +1917,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-2737": {
    "n": "Jockey's Ridge State Park",
@@ -1917,7 +1949,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-2738": {
    "n": "Jones Lake State Park",
@@ -1948,7 +1980,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-2739": {
    "n": "Lake James State Park",
@@ -1979,7 +2011,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-2740": {
    "n": "Lake Norman State Park",
@@ -2030,7 +2062,7 @@
      "via": "the agency site"
     }
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-2741": {
    "n": "Lake Waccamaw State Park",
@@ -2062,7 +2094,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-2742": {
    "n": "Lumber River State Park",
@@ -2093,7 +2125,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-2743": {
    "n": "Mayo River State Park",
@@ -2130,7 +2162,7 @@
      "via": "the agency site"
     }
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-2744": {
    "n": "Medoc Mountain State Park",
@@ -2162,7 +2194,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-2745": {
    "n": "Merchants Millpond State Park",
@@ -2193,7 +2225,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-2746": {
    "n": "Morrow Mountain State Park",
@@ -2241,7 +2273,7 @@
      "via": "the agency site"
     }
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-2747": {
    "n": "Mount Mitchell State Park",
@@ -2275,7 +2307,7 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-2748": {
    "n": "New River State Park",
@@ -2307,7 +2339,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-2749": {
    "n": "Pettigrew State Park",
@@ -2339,7 +2371,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-2750": {
    "n": "Pilot Mountain State Park",
@@ -2373,7 +2405,7 @@
    "handover": [],
    "notes": [],
    "card_note": "Campground map: the agency has no park map.",
-   "ver": 6
+   "ver": 7
   },
   "US-2751": {
    "n": "Raven Rock State Park",
@@ -2404,7 +2436,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-2752": {
    "n": "Singletary Lake State Park",
@@ -2424,10 +2456,11 @@
    "agency": "",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
    "needs_browser": "host on the browser list",
-   "ver": 6,
-   "browser_checked": "2026-10-29"
+   "ver": 7
   },
   "US-2753": {
    "n": "South Mountains State Park",
@@ -2461,7 +2494,7 @@
    "handover": [],
    "notes": [],
    "card_note": "Campground map: the agency has no park map.",
-   "ver": 6
+   "ver": 7
   },
   "US-2754": {
    "n": "Stone Mountain State Park",
@@ -2493,7 +2526,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-2755": {
    "n": "William B. Umstead State Park",
@@ -2543,7 +2576,7 @@
     }
    ],
    "card_note": "Campground map: the agency has no park map.",
-   "ver": 6
+   "ver": 7
   },
   "US-3378": {
    "n": "Blue Ridge National Parkway",
@@ -2574,7 +2607,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-3791": {
    "n": "Trail of Tears National Historic Trail",
@@ -2605,7 +2638,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-3841": {
    "n": "Falls Lake State Recreation Area",
@@ -2637,7 +2670,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-3842": {
    "n": "Fort Fisher State Recreation Area",
@@ -2668,7 +2701,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-3843": {
    "n": "Haw River at Iron Ore Access Belt State Park",
@@ -2699,7 +2732,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-3844": {
    "n": "Jordan Lake State Recreation Area",
@@ -2730,7 +2763,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-3845": {
    "n": "Kerr Lake State Recreation Area",
@@ -2761,7 +2794,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-3846": {
    "n": "Mount Jefferson Natural State Conservation Area",
@@ -2798,7 +2831,7 @@
      "via": "the agency site"
     }
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-3847": {
    "n": "Occoneechee Mountain Natural State Conservation Area",
@@ -2829,7 +2862,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-3848": {
    "n": "Weymouth Woods-Sandhills State Nature Preserve",
@@ -2861,7 +2894,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-3849": {
    "n": "Bald Head Woods Reserve State Conservation Area",
@@ -2870,7 +2903,7 @@
    "checked": "2026-10-29",
    "map": {
     "url": "",
-    "status": "no working map link (tried: opened, a government data / policies page, not this park's map (chat 11 regrade 2) https://www.google.com/maps?q=Bald+Head+Woods+700+Federal+Rd+Bald+Head; opened, a government data / policies page, not this park's map (chat 11 regrade 2) https://www.google.com/maps?q=Zeke's+Island+Coastal+Reserve+Zekes+Isla)",
+    "status": "no working map link (tried: opened, a government data / policies page, not this park's map (chat 11 regrade 2) https://www.google.com/maps?q=Bald+Head+Woods+700+Federal+Rd+Bald+Head; opened, a government data / policies page, not this park's map (chat 11 regrade 2) https://www.google.com/maps?q=Wrightsville+Beach+Park+1+Bob+Sawyer+Dr+)",
     "how": "a link on the park's page ('')"
    },
    "rules": {
@@ -2898,12 +2931,12 @@
      "via": "off the government, not linked by the agency"
     },
     {
-     "url": "https://www.google.com/maps?q=Zeke's+Island+Coastal+Reserve+Zekes+Island+Reserve+Southport+NC",
+     "url": "https://www.google.com/maps?q=Wrightsville+Beach+Park+1+Bob+Sawyer+Dr+Wrightsville+Beach+NC",
      "status": "opened, a government data / policies page, not this park's map (chat 11 regrade 2)",
      "kind": "denied page",
      "date": null,
      "date_how": "",
-     "how": "a link on the park's page ('Southport')",
+     "how": "a link on the park's page ('Wrightsville Beach')",
      "posted": "",
      "posted_how": "",
      "names_park": null,
@@ -2912,7 +2945,7 @@
      "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-3850": {
    "n": "Bird Island Reserve State Conservation Area",
@@ -2933,7 +2966,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-3851": {
    "n": "Brumley Forest State Nature Preserve",
@@ -2954,7 +2987,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-3852": {
    "n": "Buxton Woods State Reserve",
@@ -3007,7 +3040,7 @@
      "via": "the agency site"
     }
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-3853": {
    "n": "Emily and Richardson Preyer Buckridge State Reserve",
@@ -3028,7 +3061,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-3854": {
    "n": "Flower Hill State Nature Preserve",
@@ -3049,7 +3082,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-3857": {
    "n": "Horton Grove State Nature Preserve",
@@ -3070,7 +3103,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-3859": {
    "n": "Johnston Mill State Nature Preserve",
@@ -3091,7 +3124,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-3860": {
    "n": "Kitty Hawk Woods State Preserve",
@@ -3123,7 +3156,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-3861": {
    "n": "Little River Natural State Conservation Area",
@@ -3162,7 +3195,7 @@
      "via": "the agency site"
     }
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-3862": {
    "n": "Nags Head Woods Ecological State Preserve",
@@ -3199,7 +3232,7 @@
      "via": "the agency site"
     }
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-3863": {
    "n": "Palmetto-Peartree State Preserve",
@@ -3220,7 +3253,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-3864": {
    "n": "Permuda Island State Reserve",
@@ -3268,7 +3301,7 @@
      "via": "the agency site"
     }
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-3865": {
    "n": "Roanoke Island Marshes State Game Land",
@@ -3305,7 +3338,7 @@
      "via": "the agency site"
     }
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-3866": {
    "n": "Ward State Nature Preserve",
@@ -3326,7 +3359,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-3867": {
    "n": "Swift Creek Bluffs State Nature Preserve",
@@ -3347,7 +3380,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-3868": {
    "n": "Theodore Roosevelt State Conservation Area",
@@ -3356,7 +3389,7 @@
    "checked": "2026-10-29",
    "map": {
     "url": "",
-    "status": "no working map link (tried: opened, a government data / policies page, not this park's map (chat 11 regrade 2) https://www.google.com/maps?q=Theodore+Roosevelt+Natural+Area+1+Roosev; opened, a government data / policies page, not this park's map (chat 11 regrade 2) https://www.google.com/maps?q=New+Bern+Battlefield+Park+300,+Battlefie)",
+    "status": "no working map link (tried: opened, a government data / policies page, not this park's map (chat 11 regrade 2) https://www.google.com/maps?q=Theodore+Roosevelt+Natural+Area+1+Roosev)",
     "how": "a link on the park's page ('')"
    },
    "rules": {
@@ -3382,23 +3415,9 @@
      "checked": "2026-10-29",
      "covers": 0,
      "via": "off the government, not linked by the agency"
-    },
-    {
-     "url": "https://www.google.com/maps?q=New+Bern+Battlefield+Park+300,+Battlefield+Trail+New+Bern+NC",
-     "status": "opened, a government data / policies page, not this park's map (chat 11 regrade 2)",
-     "kind": "denied page",
-     "date": null,
-     "date_how": "",
-     "how": "a link on the park's page ('New Bern')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": null,
-     "checked": "2026-10-29",
-     "covers": 0,
-     "via": "off the government, not linked by the agency"
     }
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-3869": {
    "n": "Three Top Mountain State Game Land",
@@ -3435,7 +3454,7 @@
      "via": "linked from the agency page (ncwildlife.org)"
     }
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-3870": {
    "n": "Van Swamp State Game Land",
@@ -3467,7 +3486,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-3871": {
    "n": "White Pines State Nature Preserve",
@@ -3488,7 +3507,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-4508": {
    "n": "Croatan National Forest",
@@ -3507,7 +3526,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-29",
     "via": "the agency site",
-    "kind_note": "forest map only; forest map only"
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/northcarolina",
@@ -3520,7 +3539,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6,
+   "ver": 7,
    "browser_checked": "2026-10-29"
   },
   "US-4509": {
@@ -3540,7 +3559,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-29",
     "via": "the agency site",
-    "kind_note": "forest map only; forest map only"
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/northcarolina",
@@ -3553,7 +3572,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6,
+   "ver": 7,
    "browser_checked": "2026-10-29"
   },
   "US-4510": {
@@ -3573,7 +3592,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-29",
     "via": "the agency site",
-    "kind_note": "forest map only; forest map only"
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/northcarolina",
@@ -3586,7 +3605,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6,
+   "ver": 7,
    "browser_checked": "2026-10-29"
   },
   "US-4511": {
@@ -3606,7 +3625,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-29",
     "via": "the agency site",
-    "kind_note": "forest map only; forest map only"
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r08/northcarolina",
@@ -3619,7 +3638,7 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 6,
+   "ver": 7,
    "browser_checked": "2026-10-29"
   },
   "US-4556": {
@@ -3653,7 +3672,7 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-4577": {
    "n": "Overmountain Victory National Historic Trail",
@@ -3684,7 +3703,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-4852": {
    "n": "Bladen Lakes State Forest",
@@ -3705,7 +3724,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-4853": {
    "n": "Clemmons Educational State Forest",
@@ -3726,7 +3745,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-4854": {
    "n": "DuPont State Recreational Forest State Forest",
@@ -3747,7 +3766,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-4855": {
    "n": "Headwaters State Forest",
@@ -3768,7 +3787,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-4856": {
    "n": "Holmes Educational State Forest",
@@ -3789,7 +3808,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-4857": {
    "n": "Jordan Lake Educational State Forest",
@@ -3810,7 +3829,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-4858": {
    "n": "Mountain Island Educational State Forest",
@@ -3841,7 +3860,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-4859": {
    "n": "Rendezvous Mountain State Park",
@@ -3878,7 +3897,7 @@
      "via": "the agency site"
     }
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-4860": {
    "n": "Turnbull Creek Educational State Forest",
@@ -3899,7 +3918,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-4861": {
    "n": "Tuttle Educational State Forest",
@@ -3936,7 +3955,7 @@
      "via": "linked from the agency page (ncagr.gov)"
     }
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6830": {
    "n": "Alamance Battleground State Historic Site",
@@ -3957,7 +3976,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6831": {
    "n": "Battleship North Carolina State Historic Site",
@@ -3977,10 +3996,8 @@
    "agency": "",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: HTTP 202"
-   ],
-   "ver": 6
+   "notes": [],
+   "ver": 7
   },
   "US-6832": {
    "n": "Bennett Place State Historic Site",
@@ -4001,7 +4018,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6833": {
    "n": "Bentonville Battlefield State Historic Site",
@@ -4022,7 +4039,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6834": {
    "n": "Brunswick Town/Ft. Anderson State Historic Site",
@@ -4043,7 +4060,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6835": {
    "n": "Charles B Aycock Birthplace State Historic Site",
@@ -4064,7 +4081,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6836": {
    "n": "Charlotte Hawkins Brown Museum State Historic Site",
@@ -4085,7 +4102,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6837": {
    "n": "CSS Neuse Civil War Interpretive Center State Historic Site",
@@ -4106,7 +4123,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6838": {
    "n": "Duke Homestead State Historic Site",
@@ -4127,7 +4144,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6839": {
    "n": "Fort Dobbs State Historic Site",
@@ -4148,7 +4165,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6840": {
    "n": "Fort Fisher State Historic Site",
@@ -4169,7 +4186,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6841": {
    "n": "Historic Bath State Historic Site",
@@ -4190,7 +4207,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6842": {
    "n": "Historic Edenton State Historic Site",
@@ -4211,7 +4228,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6843": {
    "n": "Historic Halifax State Historic Site",
@@ -4232,7 +4249,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6844": {
    "n": "Historic Stagville State Historic Site",
@@ -4253,7 +4270,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6845": {
    "n": "Horne Creek Living Historical Farm State Historic Site",
@@ -4274,7 +4291,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6846": {
    "n": "House in the Horseshoe State Historic Site",
@@ -4295,7 +4312,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6847": {
    "n": "NC Transportation Museum State Historic Site",
@@ -4332,7 +4349,7 @@
      "via": "the agency site"
     }
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6848": {
    "n": "President James K. Polk State Historic Site",
@@ -4353,7 +4370,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6849": {
    "n": "Reed Gold Mine State Historic Site",
@@ -4374,7 +4391,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6850": {
    "n": "Roanoke Island Festival Park State Historic Site",
@@ -4395,7 +4412,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6851": {
    "n": "Somerset Place State Historic Site",
@@ -4416,7 +4433,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6852": {
    "n": "State Capitol State Historic Site",
@@ -4437,7 +4454,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6853": {
    "n": "Thomas Wolfe Memorial State Historic Site",
@@ -4460,7 +4477,7 @@
    "notes": [
     "park page: rest"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6854": {
    "n": "Town Creek Indian Mound State Historic Site",
@@ -4481,7 +4498,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6855": {
    "n": "Tryon Palace State Historic Site",
@@ -4512,7 +4529,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6856": {
    "n": "Zebulon B. Vance Birthplace State Historic Site",
@@ -4533,7 +4550,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6877": {
    "n": "Yadkin River State Game Land",
@@ -4556,7 +4573,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6878": {
    "n": "Alligator River State Game Land",
@@ -4588,7 +4605,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6879": {
    "n": "Angola Bay State Game Land",
@@ -4620,7 +4637,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6880": {
    "n": "Bachelor Bay State Game Land",
@@ -4652,7 +4669,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6881": {
    "n": "Bertie County State Game Land",
@@ -4684,7 +4701,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6882": {
    "n": "Bladen Lakes State Game Land",
@@ -4707,7 +4724,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6883": {
    "n": "Brinkleyville State Game Land",
@@ -4730,7 +4747,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6884": {
    "n": "Buckhorn State Game Land",
@@ -4753,7 +4770,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6885": {
    "n": "Buckridge State Game Land",
@@ -4785,7 +4802,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6886": {
    "n": "Buffalo Cove State Game Land",
@@ -4808,7 +4825,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6887": {
    "n": "Bullard & Branch Hunting Preserve State Game Land",
@@ -4839,7 +4856,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6888": {
    "n": "Butner-Falls of the Neuse State Game Land",
@@ -4862,7 +4879,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6889": {
    "n": "Buxton Woods State Game Land",
@@ -4893,7 +4910,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6890": {
    "n": "Cape Fear River Wetlands State Game Land",
@@ -4925,7 +4942,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6891": {
    "n": "Carteret County State Game Land",
@@ -4957,7 +4974,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6892": {
    "n": "Chatham State Game Land",
@@ -4994,7 +5011,7 @@
      "via": "third-party host, linked by the agency (store.avenza.com)"
     }
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6893": {
    "n": "Chowan State Game Land",
@@ -5017,7 +5034,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6894": {
    "n": "Chowan Swamp State Game Land",
@@ -5040,7 +5057,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6895": {
    "n": "Cold Mountain State Game Land",
@@ -5063,7 +5080,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6896": {
    "n": "Columbus County State Game Land",
@@ -5095,7 +5112,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6897": {
    "n": "Croatan State Game Land",
@@ -5132,7 +5149,7 @@
      "via": "the agency site"
     }
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6898": {
    "n": "Currituck Banks State Game Land",
@@ -5164,7 +5181,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6899": {
    "n": "Dan River State Game Land",
@@ -5187,7 +5204,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6900": {
    "n": "Dare State Game Land",
@@ -5218,7 +5235,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6901": {
    "n": "Dover Bay State Game Land",
@@ -5249,7 +5266,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6902": {
    "n": "Dupont State Game Land",
@@ -5270,7 +5287,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6903": {
    "n": "Elk Knob State Game Land",
@@ -5293,7 +5310,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6904": {
    "n": "Embro State Game Land",
@@ -5316,7 +5333,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6905": {
    "n": "Goose Creek State Game Land",
@@ -5347,7 +5364,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6906": {
    "n": "Green River State Game Land",
@@ -5370,7 +5387,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6907": {
    "n": "Green Swamp State Game Land",
@@ -5402,7 +5419,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6908": {
    "n": "Gull Rock State Game Land",
@@ -5434,7 +5451,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6909": {
    "n": "Harris State Game Land",
@@ -5457,7 +5474,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6910": {
    "n": "Headwaters State Game Land",
@@ -5478,7 +5495,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6911": {
    "n": "Hill Farm State Game Land",
@@ -5515,7 +5532,7 @@
      "via": "third-party host, linked by the agency (store.avenza.com)"
     }
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6912": {
    "n": "Holly Shelter State Game Land",
@@ -5547,7 +5564,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6913": {
    "n": "Hyco State Game Land",
@@ -5570,7 +5587,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6914": {
    "n": "J Morgan Futch State Game Land",
@@ -5602,7 +5619,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6915": {
    "n": "Johns River State Game Land",
@@ -5625,7 +5642,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6916": {
    "n": "Jordan State Game Land",
@@ -5648,7 +5665,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6917": {
    "n": "Juniper Creek State Game Land",
@@ -5680,7 +5697,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6918": {
    "n": "Kerr Scott State Game Land",
@@ -5703,7 +5720,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6919": {
    "n": "Lantern Acres State Game Land",
@@ -5735,7 +5752,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6920": {
    "n": "Lee State Game Land",
@@ -5758,7 +5775,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6922": {
    "n": "Linwood State Game Land",
@@ -5781,7 +5798,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6923": {
    "n": "Lower Fishing Creek State Game Land",
@@ -5804,7 +5821,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6924": {
    "n": "Lower Roanoke River State Game Land",
@@ -5836,7 +5853,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6925": {
    "n": "Mayo State Game Land",
@@ -5859,7 +5876,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6926": {
    "n": "Mitchell River State Game Land",
@@ -5890,7 +5907,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6927": {
    "n": "Nantahala State Game Land",
@@ -5921,7 +5938,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6928": {
    "n": "Needmore State Game Land",
@@ -5944,7 +5961,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6929": {
    "n": "Neuse River State Game Land",
@@ -5975,7 +5992,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6930": {
    "n": "New Lake State Game Land",
@@ -6007,7 +6024,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6931": {
    "n": "Nicholson Creek State Game Land",
@@ -6030,7 +6047,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6932": {
    "n": "North River State Game Land",
@@ -6062,7 +6079,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6933": {
    "n": "Northwest River Marsh State Game Land",
@@ -6094,7 +6111,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6934": {
    "n": "Pee Dee River State Game Land",
@@ -6115,7 +6132,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6935": {
    "n": "Perkins State Game Land",
@@ -6138,7 +6155,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6936": {
    "n": "Pisgah State Game Land",
@@ -6161,7 +6178,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6937": {
    "n": "Pisgah WRC State Game Land",
@@ -6184,7 +6201,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6938": {
    "n": "Pond Mountain State Game Land",
@@ -6221,7 +6238,7 @@
      "via": "linked from the agency page (ncwildlife.org)"
     }
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6939": {
    "n": "Pungo River State Game Land",
@@ -6252,7 +6269,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6940": {
    "n": "R Wayne Bailey-Caswell State Game Land",
@@ -6275,7 +6292,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6941": {
    "n": "Little Fork Forest State Game Land",
@@ -6296,7 +6313,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6942": {
    "n": "Rhodes Pond State Game Land",
@@ -6328,7 +6345,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6944": {
    "n": "Rockfish Creek State Game Land",
@@ -6359,7 +6376,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6945": {
    "n": "Rocky Run State Game Land",
@@ -6390,7 +6407,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6946": {
    "n": "Sampson State Game Land",
@@ -6421,7 +6438,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6947": {
    "n": "Sandhills State Game Land",
@@ -6444,7 +6461,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6948": {
    "n": "Sandy Creek State Game Land",
@@ -6467,7 +6484,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6949": {
    "n": "Sandy Mush State Game Land",
@@ -6479,14 +6496,18 @@
     "status": "no map link on file and none on the park page",
     "how": ""
    },
-   "rules": null,
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
    "agency": "",
    "runs": [],
    "handover": [],
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6950": {
    "n": "Second Creek State Game Land",
@@ -6509,7 +6530,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6951": {
    "n": "Shocco Creek State Game Land",
@@ -6532,7 +6553,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6952": {
    "n": "South Mountains State Game Land",
@@ -6555,7 +6576,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6953": {
    "n": "Stones Creek State Game Land",
@@ -6587,7 +6608,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6954": {
    "n": "Suggs Mill Pond State Game Land",
@@ -6619,7 +6640,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6955": {
    "n": "Sutton Lake State Game Land",
@@ -6651,7 +6672,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6956": {
    "n": "Tar River State Game Land",
@@ -6674,7 +6695,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6957": {
    "n": "Texas Plantation State Game Land",
@@ -6706,7 +6727,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6958": {
    "n": "Thurmond Chatham State Game Land",
@@ -6745,7 +6766,7 @@
      "via": "the agency site"
     }
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6959": {
    "n": "Tillery State Game Land",
@@ -6768,7 +6789,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6960": {
    "n": "Toxaway State Game Land",
@@ -6791,7 +6812,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6961": {
    "n": "Upper Roanoke River State Game Land",
@@ -6814,7 +6835,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6962": {
    "n": "Uwharrie State Game Land",
@@ -6837,7 +6858,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6963": {
    "n": "Nutbush Wildlife Management Area",
@@ -6860,7 +6881,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6964": {
    "n": "Voice of America State Game Land",
@@ -6891,7 +6912,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6965": {
    "n": "White Oak River State Game Land",
@@ -6923,7 +6944,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6966": {
    "n": "Whitehall Plantation State Game Land",
@@ -6954,7 +6975,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6967": {
    "n": "William H Silver State Game Land",
@@ -6977,7 +6998,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-8005": {
    "n": "Fontana TVA Dam National Recreation Area",
@@ -7001,7 +7022,7 @@
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 6
+   "ver": 7
   },
   "US-8006": {
    "n": "Rachel Carson State Reserve",
@@ -7032,7 +7053,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8007": {
    "n": "Edenton National Fish Hatchery",
@@ -7053,7 +7074,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8008": {
    "n": "Armstrong State Fish Hatchery",
@@ -7076,7 +7097,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-8009": {
    "n": "Marion State Fish Hatchery",
@@ -7099,7 +7120,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-8010": {
    "n": "McKinney Lake State Fish Hatchery",
@@ -7120,7 +7141,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8011": {
    "n": "Bobby N. Setzer State Fish Hatchery",
@@ -7171,7 +7192,7 @@
      "via": "linked from the agency page (ncpaws.org)"
     }
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-8012": {
    "n": "Table Rock State Fish Hatchery",
@@ -7194,7 +7215,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-8013": {
    "n": "Watha State Fish Hatchery",
@@ -7217,7 +7238,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-8226": {
    "n": "Upchurch Lake State Fishing Lake",
@@ -7238,7 +7259,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8313": {
    "n": "Mountains to Sea State Trail",
@@ -7269,10 +7290,8 @@
    "agency": "",
    "runs": [],
    "handover": [],
-   "notes": [
-    "park page: HTTP 202"
-   ],
-   "ver": 6
+   "notes": [],
+   "ver": 7
   },
   "US-9372": {
    "n": "Governor Caswell Memorial State Historic Site",
@@ -7293,7 +7312,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-9758": {
    "n": "Chattooga National Wild and Scenic River",
@@ -7324,20 +7343,20 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   }
  },
  "read": "2026-10-29",
  "counts": {
   "parks": 253,
-  "map ok": 119,
-  "map found by the bot": 78,
+  "map ok": 122,
+  "map found by the bot": 81,
   "date on the map": 76,
-  "posted date only": 34,
+  "posted date only": 37,
   "date unknown": 9,
-  "no map": 134,
+  "no map": 131,
   "rules ok": 55,
-  "needs browser": 5,
+  "needs browser": 3,
   "handover hints": 0,
   "runs hints": 5,
   "host resting / robots": 0,

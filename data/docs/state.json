@@ -253,7 +253,6 @@
   }
  },
  "hosts": {
-  "www.baysmountain.com": 1793282536.0758147,
   "www.wildlifesouth.com": 1793289030.942602,
   "www.mdwfp.com": 1793292164.6644764,
   "www.in.gov": 1793292908.0953734,
@@ -276,32 +275,34 @@
   "dnr.wi.gov": 1793353795.6671379,
   "legacy.fws.gov": 1793362944.7849255,
   "www.tn.gov": 1793365737.419028,
-  "tennesseerivervalleygeotourism.org": 1793366218.1591492
+  "tennesseerivervalleygeotourism.org": 1793366218.1591492,
+  "wolfememorial.com": 1793366796.4594877,
+  "www.virginiastateparks.gov": 1793367635.065476
  },
  "last": {
   "when": "2026-10-29",
   "areas": [
-   "US-KY",
-   "US-TN",
    "US-NC",
    "US-VA",
    "US-WV",
    "US-GA",
    "US-AL",
-   "US-SC"
+   "US-SC",
+   "US-FL",
+   "US-MS"
   ],
   "stat": {
-   "requests": 996,
-   "parks": 497,
-   "maps_ok": 216,
-   "maps_found": 46,
-   "dates": 44,
-   "rules": 158,
-   "browser": 77,
-   "robots": 21,
-   "strikes": 9,
+   "requests": 1761,
+   "parks": 637,
+   "maps_ok": 420,
+   "maps_found": 240,
+   "dates": 109,
+   "rules": 335,
+   "browser": 56,
+   "robots": 2,
+   "strikes": 6,
    "errors": 3,
-   "skipped_fresh": 0
+   "skipped_fresh": 27
   }
  }
 }
