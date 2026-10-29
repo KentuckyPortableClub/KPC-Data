@@ -31,7 +31,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-0456": {
    "n": "Wallkill River National Wildlife Refuge",
@@ -78,7 +78,7 @@
      "via": "the agency site"
     }
    ],
-   "ver": 5
+   "ver": 6
   },
   "US-0472": {
    "n": "Amagansett National Wildlife Refuge",
@@ -109,7 +109,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-0473": {
    "n": "Conscience Point National Wildlife Refuge",
@@ -142,7 +142,7 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-0474": {
    "n": "Elizabeth A. Morton National Wildlife Refuge",
@@ -173,7 +173,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-0475": {
    "n": "Iroquois National Wildlife Refuge",
@@ -220,7 +220,7 @@
      "via": "the agency site"
     }
    ],
-   "ver": 5
+   "ver": 6
   },
   "US-0476": {
    "n": "Montezuma National Wildlife Refuge",
@@ -251,7 +251,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-0477": {
    "n": "Congressman Lester Wolff Oyster Bay National Wildlife Refuge",
@@ -284,7 +284,7 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-0478": {
    "n": "Seatuck National Wildlife Refuge",
@@ -315,7 +315,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-0479": {
    "n": "Shawangunk Grasslands National Wildlife Refuge",
@@ -337,16 +337,12 @@
     "via": "the agency site",
     "date_label": "date unknown"
    },
-   "rules": {
-    "url": "https://www.fws.gov/refuge/shawangunk-grasslands/visit-us/rules-policies",
-    "how": "FWS rules page (pattern + opened)",
-    "status": "ok"
-   },
+   "rules": null,
    "agency": "U.S. Fish and Wildlife Service",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-0480": {
    "n": "Target Rock National Wildlife Refuge",
@@ -466,7 +462,8 @@
    "rules": {
     "url": "https://www.nps.gov/gate/learn/management/lawsandpolicies.htm",
     "how": "NPS rules page (pattern + opened)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "National Park Service",
    "runs": [],
@@ -21439,7 +21436,8 @@
    "rules": {
     "url": "https://parks.ny.gov/camping/things-to-know",
     "how": "a link on the park's page ('Reservation Info Rules')",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (parks.ny.gov)",
    "runs": [
@@ -21599,7 +21597,8 @@
    "rules": {
     "url": "https://parks.ny.gov/camping/things-to-know",
     "how": "a link on the park's page ('Reservation Info Rules')",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (parks.ny.gov)",
    "runs": [],
@@ -21620,7 +21619,8 @@
    "rules": {
     "url": "https://parks.ny.gov/camping/things-to-know",
     "how": "a link on the park's page ('Reservation Info Rules')",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (parks.ny.gov)",
    "runs": [],
@@ -21641,7 +21641,8 @@
    "rules": {
     "url": "https://parks.ny.gov/camping/things-to-know",
     "how": "a link on the park's page ('Reservation Info Rules')",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (parks.ny.gov)",
    "runs": [],
@@ -21848,7 +21849,8 @@
    "rules": {
     "url": "https://parks.ny.gov/camping/things-to-know",
     "how": "a link on the park's page ('Reservation Info Rules')",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (parks.ny.gov)",
    "runs": [
@@ -21871,7 +21873,8 @@
    "rules": {
     "url": "https://parks.ny.gov/camping/things-to-know",
     "how": "a link on the park's page ('Reservation Info Rules')",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (parks.ny.gov)",
    "runs": [],
@@ -21892,7 +21895,8 @@
    "rules": {
     "url": "https://parks.ny.gov/camping/things-to-know",
     "how": "a link on the park's page ('Reservation Info Rules')",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (parks.ny.gov)",
    "runs": [],
@@ -21913,7 +21917,8 @@
    "rules": {
     "url": "https://parks.ny.gov/camping/things-to-know",
     "how": "a link on the park's page ('Reservation Info Rules')",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (parks.ny.gov)",
    "runs": [],
@@ -22288,7 +22293,8 @@
    "rules": {
     "url": "https://www.nps.gov/gate/learn/management/lawsandpolicies.htm",
     "how": "NPS rules page (pattern + opened)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "National Park Service",
    "runs": [],
@@ -22319,7 +22325,8 @@
    "rules": {
     "url": "https://www.nps.gov/gate/learn/management/lawsandpolicies.htm",
     "how": "NPS rules page (pattern + opened)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "National Park Service",
    "runs": [],
@@ -22350,7 +22357,8 @@
    "rules": {
     "url": "https://www.nps.gov/gate/learn/management/lawsandpolicies.htm",
     "how": "NPS rules page (pattern + opened)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "National Park Service",
    "runs": [],
@@ -22381,7 +22389,8 @@
    "rules": {
     "url": "https://www.nps.gov/gate/learn/management/lawsandpolicies.htm",
     "how": "NPS rules page (pattern + opened)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "National Park Service",
    "runs": [],
@@ -22412,7 +22421,8 @@
    "rules": {
     "url": "https://www.nps.gov/gate/learn/management/lawsandpolicies.htm",
     "how": "NPS rules page (pattern + opened)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "National Park Service",
    "runs": [],
@@ -22443,7 +22453,8 @@
    "rules": {
     "url": "https://www.nps.gov/gate/learn/management/lawsandpolicies.htm",
     "how": "NPS rules page (pattern + opened)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "National Park Service",
    "runs": [],
@@ -22474,7 +22485,8 @@
    "rules": {
     "url": "https://www.nps.gov/gate/learn/management/lawsandpolicies.htm",
     "how": "NPS rules page (pattern + opened)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "National Park Service",
    "runs": [],
@@ -22505,7 +22517,8 @@
    "rules": {
     "url": "https://www.nps.gov/gate/learn/management/lawsandpolicies.htm",
     "how": "NPS rules page (pattern + opened)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "National Park Service",
    "runs": [],
@@ -22536,7 +22549,8 @@
    "rules": {
     "url": "https://www.nps.gov/gate/learn/management/lawsandpolicies.htm",
     "how": "NPS rules page (pattern + opened)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "National Park Service",
    "runs": [
@@ -22559,7 +22573,8 @@
    "rules": {
     "url": "https://www.nps.gov/gate/learn/management/lawsandpolicies.htm",
     "how": "NPS rules page (pattern + opened)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "National Park Service",
    "runs": [],
@@ -23018,7 +23033,8 @@
    "rules": {
     "url": "https://parks.ny.gov/camping/things-to-know",
     "how": "a link on the park's page ('Reservation Info Rules')",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (parks.ny.gov)",
    "runs": [],
@@ -23127,7 +23143,8 @@
    "rules": {
     "url": "https://parks.ny.gov/camping/things-to-know",
     "how": "a link on the park's page ('Reservation Info Rules')",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (parks.ny.gov)",
    "runs": [],
@@ -23291,7 +23308,8 @@
    "rules": {
     "url": "https://parks.ny.gov/camping/things-to-know",
     "how": "a link on the park's page ('Reservation Info Rules')",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (parks.ny.gov)",
    "runs": [
@@ -26975,7 +26993,8 @@
    "rules": {
     "url": "https://parks.ny.gov/camping/things-to-know",
     "how": "a link on the park's page ('Reservation Info Rules')",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (parks.ny.gov)",
    "runs": [],
@@ -26993,7 +27012,7 @@
   "posted date only": 348,
   "date unknown": 14,
   "no map": 291,
-  "rules ok": 68,
+  "rules ok": 67,
   "needs browser": 0,
   "handover hints": 0,
   "runs hints": 162,
