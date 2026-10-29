@@ -13,12 +13,15 @@
   "US-MS"
  ],
  "since": "2026-10-28",
- "date": "2026-10-29 02:18 UTC",
+ "date": "2026-10-29 03:54 UTC",
  "verdict": "STOPPED",
  "why": [
+  "Kentucky known-answers test not passing (18/19 on 2026-10-29)",
+  "water not checked: US-TN: 1 rows (the USGS water map / files had no answer there): never READY with one",
+  "water not checked: US-VA: 13 rows (the USGS water map / files had no answer there): never READY with one",
   "US-MS: 24 rows still waiting for a pass (out of time: run the worker again)"
  ],
- "known_answers": "18/18 on 2026-10-29",
+ "known_answers": "18/19 on 2026-10-29",
  "missing_check": {
   "FOUND": 523,
   "DROPPED": 1547,
@@ -59,8 +62,8 @@
   "US-MS": "data/fers/US-MS.json"
  },
  "US-TN": {
-  "rows": 687,
-  "live": 81,
+  "rows": 688,
+  "live": 82,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
@@ -91,8 +94,8 @@
   "merged": 210
  },
  "US-VA": {
-  "rows": 143,
-  "live": 42,
+  "rows": 144,
+  "live": 43,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
@@ -168,5 +171,17 @@
   },
   "dropped": 31,
   "merged": 30
- }
+ },
+ "states_ready": [],
+ "states_held": [
+  "US-TN",
+  "US-NC",
+  "US-VA",
+  "US-WV",
+  "US-GA",
+  "US-AL",
+  "US-SC",
+  "US-FL",
+  "US-MS"
+ ]
 }

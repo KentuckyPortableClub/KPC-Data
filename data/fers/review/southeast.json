@@ -39,6 +39,28 @@
   },
   {
    "area": "southeast",
+   "state": "US-VA",
+   "refs": [
+    "US-0561",
+    "US-0671"
+   ],
+   "names": {
+    "US-0561": "Chincoteague National Wildlife Refuge",
+    "US-0671": "Assateague Island National Seashore"
+   },
+   "what": "water only (boat spot): is there really no land?",
+   "kind": "area",
+   "size": "1264.8 ac",
+   "sort": 1264.8,
+   "reason": "water only: boat or kayak",
+   "id": "US-0561+US-0671@area@channel@37.908,-75.341",
+   "sources": {
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-10-29"
+  },
+  {
+   "area": "southeast",
    "state": "",
    "refs": [
     "US-3627",
@@ -11894,6 +11916,28 @@
    "id": "US-6877+US-6935@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (28x, POTA history)"
+   },
+   "checked": "2026-10-29"
+  },
+  {
+   "area": "southeast",
+   "state": "US-TN",
+   "refs": [
+    "US-0685",
+    "US-3931"
+   ],
+   "names": {
+    "US-0685": "Obed National Wild and Scenic River",
+    "US-3931": "Catoosa Wildlife Management Area"
+   },
+   "what": "water only (boat spot): is there really no land?",
+   "kind": "area",
+   "size": "27.2 ac",
+   "sort": 27.2,
+   "reason": "water only: boat or kayak",
+   "id": "US-0685+US-3931@area@channel@36.079,-84.765",
+   "sources": {
+    "USGS water": "saved copy of the USGS map, read 2026-10-28"
    },
    "checked": "2026-10-29"
   },
