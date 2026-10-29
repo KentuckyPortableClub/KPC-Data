@@ -50,13 +50,13 @@
   "date": "2026-10-29",
   "left out": {
    "Kentucky (own list)": "all (ky-overlaps.geojson)",
-   "approximate": 422,
-   "no outline": 3600,
+   "approximate": 423,
+   "no outline": 3554,
    "no pin": 0,
    "pin well outside": 0
   },
   "new here only (not counted)": 0,
-  "official parks": 1918,
+  "official parks": 1923,
   "pairs tested": 0,
   "parks whose outline could not be read": 0,
   "parks with a saved copy only (no fresh download possible)": 0,
@@ -72,17 +72,19 @@
   "date": "2026-10-29",
   "left out": {
    "Kentucky (own list)": "all (ky-overlaps.geojson)",
-   "approximate": 422,
-   "no outline": 3600,
+   "approximate": 423,
+   "no outline": 3554,
    "no pin": 0,
    "pin well outside": 0
   },
-  "official parks": 1918,
+  "official parks": 1923,
   "pairs tested": 0,
   "pass": 5,
   "problems": [
    "W&S river corridors joined as area parks: 15"
   ],
+  "river channels listed as water only (boat spots)": 18,
+  "same land dropped: wrong join": 3,
   "spots given their boundary lines": 723,
   "still not checked": 0,
   "trail stretches given their true zone": 213,
@@ -104,7 +106,7 @@
    "water only": 1
   },
   "US-IL": {
-   "candidates": 13,
+   "candidates": 12,
    "candidates (saved outline only)": 0,
    "lines": 17,
    "n-fers": 0,
@@ -121,23 +123,23 @@
    "lines": 5,
    "n-fers": 26,
    "not sure": 3,
-   "pass1": 234,
-   "pass2": 209,
-   "spots": 234,
+   "pass1": 235,
+   "pass2": 210,
+   "spots": 235,
    "very tight": 9,
-   "water only": 0
+   "water only": 1
   },
   "US-MN": {
-   "candidates": 104,
+   "candidates": 103,
    "candidates (saved outline only)": 0,
    "lines": 309,
    "n-fers": 37,
    "not sure": 9,
-   "pass1": 858,
-   "pass2": 800,
-   "spots": 858,
+   "pass1": 869,
+   "pass2": 811,
+   "spots": 869,
    "very tight": 11,
-   "water only": 1
+   "water only": 12
   },
   "US-MO": {
    "candidates": 36,
@@ -176,16 +178,16 @@
    "water only": 1
   },
   "US-WI": {
-   "candidates": 28,
+   "candidates": 27,
    "candidates (saved outline only)": 0,
    "lines": 15,
    "n-fers": 6,
    "not sure": 8,
-   "pass1": 368,
-   "pass2": 332,
-   "spots": 368,
+   "pass1": 374,
+   "pass2": 338,
+   "spots": 374,
    "very tight": 2,
-   "water only": 1
+   "water only": 7
   }
  }
 }

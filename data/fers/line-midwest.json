@@ -12,13 +12,13 @@
   "US-SD"
  ],
  "since": "2026-10-28",
- "date": "2026-10-29 00:10 UTC",
+ "date": "2026-10-29 07:27 UTC",
  "verdict": "READY FOR CHAT 8",
  "why": [],
- "known_answers": "18/18 on 2026-10-28",
+ "known_answers": "19/19 on 2026-10-29",
  "missing_check": {
-  "FOUND": 301,
-  "DROPPED": 1071,
+  "FOUND": 300,
+  "DROPPED": 1072,
   "NEVER LOOKED AT": 11762
  },
  "report": {
@@ -44,9 +44,19 @@
    "still not checked": 0
   }
  },
+ "files": {
+  "US-IN": "data/fers/US-IN.json",
+  "US-IL": "data/fers/US-IL.json",
+  "US-MO": "data/fers/US-MO.json",
+  "US-WI": "data/fers/US-WI.json",
+  "US-MN": "data/fers/US-MN.json",
+  "US-IA": "data/fers/US-IA.json",
+  "US-ND": "data/fers/US-ND.json",
+  "US-SD": "data/fers/US-SD.json"
+ },
  "US-IN": {
-  "rows": 234,
-  "live": 60,
+  "rows": 235,
+  "live": 61,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
@@ -58,14 +68,14 @@
  },
  "US-IL": {
   "rows": 104,
-  "live": 21,
+  "live": 20,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "the ownership map shows more than one owner across the spot": 3,
    "no public owner on the ownership map": 1
   },
-  "dropped": 61,
+  "dropped": 62,
   "merged": 18
  },
  "US-MO": {
@@ -82,20 +92,20 @@
   "merged": 116
  },
  "US-WI": {
-  "rows": 368,
-  "live": 31,
+  "rows": 374,
+  "live": 36,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "the outlines overlap, but the PAD-US Park Service fee record": 7,
    "no public owner on the ownership map": 1
   },
-  "dropped": 262,
+  "dropped": 263,
   "merged": 67
  },
  "US-MN": {
-  "rows": 858,
-  "live": 116,
+  "rows": 869,
+  "live": 126,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
@@ -103,7 +113,7 @@
    "no public owner on the ownership map": 4,
    "the outlines overlap, but the Forest Service ownership map": 4
   },
-  "dropped": 363,
+  "dropped": 364,
   "merged": 370
  },
  "US-IA": {
@@ -134,5 +144,16 @@
   "not_sure": {},
   "dropped": 29,
   "merged": 9
- }
+ },
+ "states_ready": [
+  "US-IN",
+  "US-IL",
+  "US-MO",
+  "US-WI",
+  "US-MN",
+  "US-IA",
+  "US-ND",
+  "US-SD"
+ ],
+ "states_held": []
 }
