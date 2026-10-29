@@ -2,14 +2,14 @@
  "about": "Hours, fees and permits as the agency's own sentences (hours / fees / permits bot). Facts only; nothing reaches a card until Brandon's GO.",
  "area": "US-KY",
  "counts": {
-  "parks": 193,
-  "hours": 45,
   "fees": 8,
-  "permits": 8,
-  "nothing": 140,
+  "hours": 41,
+  "hours_lines": 76,
   "no_page": 0,
+  "nothing": 143,
+  "parks": 193,
+  "permits": 8,
   "season": 24,
-  "hours_lines": 83,
   "season_lines": 27
  },
  "parks": {
@@ -68,7 +68,7 @@
    "season": [],
    "status": "nothing found",
    "t": "National / NPS",
-   "ver": 10
+   "ver": 11
   },
   "US-0050": {
    "attraction_fees": [],
@@ -120,13 +120,20 @@
    "season": [],
    "status": "nothing found",
    "t": "National Park",
-   "ver": 10
+   "ver": 11
   },
   "US-0295": {
    "attraction_fees": [],
    "attraction_hours": [],
    "campground_hours": [],
    "checked": "2026-10-29",
+   "debug": [
+    {
+     "kind": "page",
+     "text": "to the refuge may mark their boundary with blue paint hash marks and no trespassing signs. Trespassing on posted or unmarked private property is a violation of Kentucky state law. The Refuge is only open to the public from sunrise to sunset, with the exception of permitted hunting seasons. There is no camping allowed on the Refuge; campfires are also not permitted Refuge signs define refuge boundaries. “Area closed” signs are erected to minimize disturbance to wildlife and for public safety. Pets on a leash are permitted. Bicycling is permitted on established roads. Horseback riding is permitted on established roadways or trails. Firearms are permitted on the refuge in accordance with state and local law. Searching for and removal of objects of antiquity is prohibited. Disturbing or feedi",
+     "url": "https://www.fws.gov/locations/clarks-river-national-wildlife-refuge/rules-and-policies"
+    }
+   ],
    "fees": [],
    "hours": [
     {
@@ -150,9 +157,14 @@
      "line": "Hunters, with the exception of hunting Racoon, opossum, and bullfrog, access to the refuge is two hours before sunrise - two hours after sunset.",
      "read": "2026-10-29",
      "url": "https://www.fws.gov/refuge/clarks-river"
+    },
+    {
+     "line": "The Refuge is only open to the public from sunrise to sunset, with the exception of permitted hunting seasons.",
+     "read": "2026-10-29",
+     "url": "https://www.fws.gov/locations/clarks-river-national-wildlife-refuge/rules-and-policies"
     }
    ],
-   "key_on_page": "https://www.fws.gov/refuge/clarks-river",
+   "key_on_page": "https://www.fws.gov/locations/clarks-river-national-wildlife-refuge/rules-and-policies",
    "n": "Clarks River National Wildlife Refuge",
    "office_hours": [
     {
@@ -179,8 +191,8 @@
      "why": "official map (Kentucky answer key)"
     },
     {
-     "status": "HTTP 404",
-     "url": "https://www.fws.gov/refuge/clarks-river/visit-us/rules-policies",
+     "status": "ok",
+     "url": "https://www.fws.gov/locations/clarks-river-national-wildlife-refuge/rules-and-policies",
      "why": "rules page (documents bot)"
     },
     {
@@ -193,7 +205,7 @@
    "season": [],
    "status": "ok",
    "t": "National / NPS",
-   "ver": 10
+   "ver": 11
   },
   "US-0538": {
    "attraction_fees": [],
@@ -235,8 +247,8 @@
      "why": "official map (Kentucky answer key)"
     },
     {
-     "status": "HTTP 404",
-     "url": "https://www.fws.gov/refuge/reelfoot/visit-us/rules-policies",
+     "status": "ok",
+     "url": "https://www.fws.gov/policies",
      "why": "rules page (documents bot)"
     },
     {
@@ -249,7 +261,7 @@
    "season": [],
    "status": "ok",
    "t": "National / NPS",
-   "ver": 10
+   "ver": 11
   },
   "US-0608": {
    "attraction_fees": [],
@@ -312,7 +324,7 @@
    "season": [],
    "status": "ok",
    "t": "National / NPS",
-   "ver": 10
+   "ver": 11
   },
   "US-0686": {
    "attraction_fees": [],
@@ -364,7 +376,7 @@
    "season": [],
    "status": "nothing found",
    "t": "National Recreation Area",
-   "ver": 10
+   "ver": 11
   },
   "US-0703": {
    "attraction_fees": [],
@@ -416,7 +428,7 @@
    "season": [],
    "status": "nothing found",
    "t": "National / NPS",
-   "ver": 10
+   "ver": 11
   },
   "US-0724": {
    "attraction_fees": [],
@@ -424,6 +436,7 @@
     {
      "line": "The Memorial Building closes at 4:30 pm eastern time.",
      "read": "2026-10-29",
+     "scope": "attraction",
      "url": "https://www.nps.gov/abli/planyourvisit/basicinfo.htm"
     }
    ],
@@ -474,7 +487,7 @@
    "season": [],
    "status": "nothing found",
    "t": "National / NPS",
-   "ver": 10
+   "ver": 11
   },
   "US-10098": {
    "attraction_fees": [],
@@ -519,7 +532,7 @@
    "season": [],
    "status": "nothing found",
    "t": "National / NPS",
-   "ver": 10
+   "ver": 11
   },
   "US-10099": {
    "attraction_fees": [],
@@ -555,7 +568,7 @@
    "season": [],
    "status": "ok",
    "t": "Fish Hatchery",
-   "ver": 10
+   "ver": 11
   },
   "US-10102": {
    "attraction_fees": [],
@@ -589,7 +602,7 @@
    "season": [],
    "status": "no page opened",
    "t": "Trail",
-   "ver": 10
+   "ver": 11
   },
   "US-10103": {
    "attraction_fees": [],
@@ -614,7 +627,7 @@
    "season": [],
    "status": "nothing found",
    "t": "River / Wilderness",
-   "ver": 10
+   "ver": 11
   },
   "US-10104": {
    "attraction_fees": [],
@@ -649,7 +662,7 @@
    "season": [],
    "status": "nothing found",
    "t": "National / NPS",
-   "ver": 10
+   "ver": 11
   },
   "US-10105": {
    "attraction_fees": [],
@@ -679,7 +692,7 @@
    "season": [],
    "status": "nothing found",
    "t": "National / NPS",
-   "ver": 10
+   "ver": 11
   },
   "US-10106": {
    "attraction_fees": [],
@@ -704,7 +717,7 @@
    "season": [],
    "status": "nothing found",
    "t": "National / NPS",
-   "ver": 10
+   "ver": 11
   },
   "US-10107": {
    "attraction_fees": [],
@@ -729,7 +742,7 @@
    "season": [],
    "status": "nothing found",
    "t": "National / NPS",
-   "ver": 10
+   "ver": 11
   },
   "US-10111": {
    "attraction_fees": [],
@@ -754,7 +767,7 @@
    "season": [],
    "status": "nothing found",
    "t": "National / NPS",
-   "ver": 10
+   "ver": 11
   },
   "US-10112": {
    "attraction_fees": [],
@@ -779,7 +792,7 @@
    "season": [],
    "status": "nothing found",
    "t": "National / NPS",
-   "ver": 10
+   "ver": 11
   },
   "US-10121": {
    "attraction_fees": [],
@@ -809,7 +822,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-10124": {
    "attraction_fees": [],
@@ -845,7 +858,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-10128": {
    "attraction_fees": [],
@@ -875,7 +888,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-10131": {
    "attraction_fees": [],
@@ -905,7 +918,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-10137": {
    "attraction_fees": [],
@@ -935,7 +948,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-10138": {
    "attraction_fees": [],
@@ -965,7 +978,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-10139": {
    "attraction_fees": [],
@@ -990,7 +1003,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-10140": {
    "attraction_fees": [],
@@ -1020,7 +1033,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-10141": {
    "attraction_fees": [],
@@ -1055,7 +1068,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-10145": {
    "attraction_fees": [],
@@ -1085,7 +1098,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-10146": {
    "attraction_fees": [],
@@ -1115,7 +1128,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-10148": {
    "attraction_fees": [],
@@ -1145,7 +1158,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-10153": {
    "attraction_fees": [],
@@ -1175,7 +1188,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-10155": {
    "attraction_fees": [],
@@ -1205,7 +1218,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-10157": {
    "attraction_fees": [],
@@ -1235,7 +1248,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-10158": {
    "attraction_fees": [],
@@ -1265,7 +1278,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-10159": {
    "attraction_fees": [],
@@ -1295,7 +1308,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-10160": {
    "attraction_fees": [],
@@ -1331,7 +1344,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-10161": {
    "attraction_fees": [],
@@ -1361,7 +1374,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-10162": {
    "attraction_fees": [],
@@ -1391,7 +1404,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-10164": {
    "attraction_fees": [],
@@ -1421,7 +1434,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-10166": {
    "attraction_fees": [],
@@ -1451,7 +1464,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-10167": {
    "attraction_fees": [],
@@ -1481,7 +1494,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-10168": {
    "attraction_fees": [],
@@ -1511,7 +1524,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-10170": {
    "attraction_fees": [],
@@ -1536,7 +1549,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-10171": {
    "attraction_fees": [],
@@ -1561,7 +1574,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-10172": {
    "attraction_fees": [],
@@ -1595,7 +1608,7 @@
    "season": [],
    "status": "no page opened",
    "t": "Other",
-   "ver": 10
+   "ver": 11
   },
   "US-10173": {
    "attraction_fees": [
@@ -1665,7 +1678,7 @@
    "season": [],
    "status": "ok",
    "t": "State Facility",
-   "ver": 10
+   "ver": 11
   },
   "US-11181": {
    "attraction_fees": [],
@@ -1677,6 +1690,11 @@
      "kind": "page",
      "text": "in late spring/early summer. Safety First: This trail is known for its mud and wet conditions, at least at the lower end near the state park. Hiking boots are recommended to provide traction and keep feet dry. There are small cliffs near the top of the trail near KY 15. Off the trail, encountering cliff is a distinct possibility and care should be taken to watch footing especially near cliffs. Both timber rattlesnakes (uncommon) and copperheads are poisonous snakes in the area. Mosquitoes and black flies are frequently encountered during summer. Poison ivy is abundant in a few areas along the trail. Long pants are recommended. Branches and logs may be encountered across the trail in places. Even though the areas along the creek are cool, summers tend to be warm and humid and the climb out",
      "url": "https://www.fs.usda.gov/wildflowers/regions/southern/SheltoweeTrace/index.shtml"
+    },
+    {
+     "kind": "page",
+     "text": "on Know Before You Go Enjoy the Outdoors Your national forests and grasslands provide a natural arena for a wide variety of fun and exciting outdoor activities. Some sites require a modest recreation fee to help provide the services and facilities at the site. To help you get the most of our your experience, read these helpful tips: Camping Driving Electric Bicycle Use Fishing Hiking Hunting Mountain biking Off-highway vehicle touring Recreation Fees and Passes Responsible recreation Shooting Tree-cutting Unmanned Aircraft Systems, or Drones Wildflowers Wildlife photography Stay Safe The beauty and peacefulness of the forest may make you feel carefree, but you must remain vigilant for potentially dangerous situations. Caves Crime Food If you get lost Mines Safety Smoke/fire Sun Safety Tick",
+     "url": "https://www.fs.usda.gov/visit/know-before-you-go"
     }
    ],
    "fees": [],
@@ -1698,8 +1716,8 @@
      "why": "official map (Kentucky answer key)"
     },
     {
-     "status": "HTTP 404",
-     "url": "https://www.fs.usda.gov/wildflowers/alerts-notices",
+     "status": "ok",
+     "url": "https://www.fs.usda.gov/visit/know-before-you-go",
      "why": "rules page (documents bot)"
     }
    ],
@@ -1707,7 +1725,7 @@
    "season": [],
    "status": "nothing found",
    "t": "Trail",
-   "ver": 10
+   "ver": 11
   },
   "US-11274": {
    "attraction_fees": [],
@@ -1737,7 +1755,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-12079": {
    "attraction_fees": [],
@@ -1771,7 +1789,7 @@
    "season": [],
    "status": "no page opened",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-12083": {
    "attraction_fees": [],
@@ -1806,7 +1824,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-1251": {
    "attraction_fees": [],
@@ -1876,7 +1894,7 @@
    ],
    "status": "ok",
    "t": "State Park",
-   "ver": 10
+   "ver": 11
   },
   "US-1252": {
    "attraction_fees": [],
@@ -1934,7 +1952,7 @@
    "season": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 10
+   "ver": 11
   },
   "US-1253": {
    "attraction_fees": [],
@@ -1993,7 +2011,7 @@
    ],
    "status": "ok",
    "t": "Trail",
-   "ver": 10
+   "ver": 11
   },
   "US-1254": {
    "attraction_fees": [],
@@ -2088,7 +2106,7 @@
    ],
    "status": "ok",
    "t": "State Park",
-   "ver": 10
+   "ver": 11
   },
   "US-1255": {
    "attraction_fees": [],
@@ -2118,7 +2136,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-1256": {
    "attraction_fees": [],
@@ -2126,6 +2144,7 @@
     {
      "line": "Open Memorial Day to Labor Day, Saturdays Only from 10:00 am - 4:00 pm with the last tour starting at 3:00 pm.",
      "read": "2026-10-29",
+     "scope": "attraction",
      "url": "https://parks.ky.gov/parks/find-a-park/fort-boonesborough-state-park-7811"
     }
    ],
@@ -2193,7 +2212,7 @@
    ],
    "status": "ok",
    "t": "State Park",
-   "ver": 10
+   "ver": 11
   },
   "US-1257": {
    "attraction_fees": [],
@@ -2233,7 +2252,7 @@
    "season": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 10
+   "ver": 11
   },
   "US-1258": {
    "attraction_fees": [],
@@ -2241,6 +2260,7 @@
     {
      "line": "Marina open year-round;",
      "read": "2026-10-29",
+     "scope": "attraction",
      "url": "https://parks.ky.gov/olive-hill/parks/recreation/grayson-lake-state-park"
     }
    ],
@@ -2274,7 +2294,7 @@
    "season": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 10
+   "ver": 11
   },
   "US-1259": {
    "attraction_fees": [],
@@ -2320,7 +2340,7 @@
    ],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 10
+   "ver": 11
   },
   "US-1260": {
    "attraction_fees": [
@@ -2385,7 +2405,7 @@
    ],
    "status": "ok",
    "t": "State Park",
-   "ver": 10
+   "ver": 11
   },
   "US-1261": {
    "attraction_fees": [],
@@ -2420,7 +2440,7 @@
    "season": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 10
+   "ver": 11
   },
   "US-1262": {
    "attraction_fees": [],
@@ -2461,21 +2481,23 @@
    ],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 10
+   "ver": 11
   },
   "US-1263": {
    "attraction_fees": [],
-   "attraction_hours": [],
-   "campground_hours": [],
-   "checked": "2026-10-29",
-   "fees": [],
-   "hours": [
+   "attraction_hours": [
     {
      "line": "Beach hours: 10 am-6 pm.",
      "read": "2026-10-29",
+     "scope": "attraction",
      "url": "https://parks.ky.gov/explore/lake-malone-state-park-7818"
     }
    ],
+   "campground_hours": [],
+   "checked": "2026-10-29",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
    "hunting_hours": [],
    "n": "Lake Malone State Park",
    "office_hours": [],
@@ -2504,9 +2526,9 @@
    ],
    "permits": [],
    "season": [],
-   "status": "ok",
+   "status": "nothing found",
    "t": "State Park",
-   "ver": 10
+   "ver": 11
   },
   "US-1264": {
    "attraction_fees": [],
@@ -2546,7 +2568,7 @@
    "season": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 10
+   "ver": 11
   },
   "US-1265": {
    "attraction_fees": [],
@@ -2598,7 +2620,7 @@
    "season": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 10
+   "ver": 11
   },
   "US-1266": {
    "attraction_fees": [],
@@ -2649,7 +2671,7 @@
    ],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 10
+   "ver": 11
   },
   "US-1267": {
    "attraction_fees": [],
@@ -2657,6 +2679,7 @@
     {
      "line": "Tour Information Tours are limited to 25 persons and are available hourly from 9:00 am to 4:00 pm, Wednesday through Sunday during winter hours (January 2 - March 15).",
      "read": "2026-10-29",
+     "scope": "attraction",
      "url": "https://parks.ky.gov/explore/my-old-kentucky-home-state-park-7821"
     }
    ],
@@ -2707,7 +2730,7 @@
    ],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 10
+   "ver": 11
   },
   "US-1268": {
    "attraction_fees": [],
@@ -2753,7 +2776,7 @@
    ],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 10
+   "ver": 11
   },
   "US-1269": {
    "attraction_fees": [],
@@ -2810,7 +2833,7 @@
    "season": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 10
+   "ver": 11
   },
   "US-1270": {
    "attraction_fees": [],
@@ -2856,7 +2879,7 @@
    ],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 10
+   "ver": 11
   },
   "US-1271": {
    "attraction_fees": [],
@@ -2896,7 +2919,7 @@
    "season": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 10
+   "ver": 11
   },
   "US-1272": {
    "attraction_fees": [],
@@ -2942,7 +2965,7 @@
    ],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 10
+   "ver": 11
   },
   "US-1273": {
    "attraction_fees": [],
@@ -2988,7 +3011,7 @@
    ],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 10
+   "ver": 11
   },
   "US-1274": {
    "attraction_fees": [],
@@ -3044,7 +3067,7 @@
    "season": [],
    "status": "ok",
    "t": "State Park",
-   "ver": 10
+   "ver": 11
   },
   "US-1275": {
    "attraction_fees": [],
@@ -3084,7 +3107,7 @@
    "season": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 10
+   "ver": 11
   },
   "US-12752": {
    "attraction_fees": [],
@@ -3102,14 +3125,14 @@
     {
      "status": "ok",
      "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Rush-Island-Bottoms.aspx",
-     "why": "the park's page (Kentucky answer key)"
+     "why": "hours page (Kentucky hours answer key)"
     }
    ],
    "permits": [],
    "season": [],
    "status": "nothing found",
    "t": "Nature Preserve",
-   "ver": 10
+   "ver": 11
   },
   "US-1276": {
    "attraction_fees": [],
@@ -3153,10 +3176,10 @@
     }
    ],
    "permits": [],
+   "season": [],
    "status": "ok",
    "t": "State Park",
-   "ver": 10,
-   "season": []
+   "ver": 11
   },
   "US-1277": {
    "attraction_fees": [],
@@ -3208,7 +3231,7 @@
    ],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 10
+   "ver": 11
   },
   "US-1278": {
    "attraction_fees": [],
@@ -3253,7 +3276,7 @@
    "season": [],
    "status": "ok",
    "t": "State Park",
-   "ver": 10
+   "ver": 11
   },
   "US-1279": {
    "attraction_fees": [],
@@ -3309,7 +3332,7 @@
    ],
    "status": "ok",
    "t": "State Park",
-   "ver": 10
+   "ver": 11
   },
   "US-1280": {
    "attraction_fees": [
@@ -3360,10 +3383,10 @@
     }
    ],
    "permits": [],
+   "season": [],
    "status": "ok",
    "t": "State Park",
-   "ver": 10,
-   "season": []
+   "ver": 11
   },
   "US-1281": {
    "attraction_fees": [],
@@ -3371,6 +3394,7 @@
     {
      "line": "Open Memorial Day-Labor Day, Tuesday through Saturday 8 am to 4 pm.",
      "read": "2026-10-29",
+     "scope": "attraction",
      "url": "https://parks.ky.gov/explore/jenny-wiley-state-resort-park-7791"
     }
    ],
@@ -3409,7 +3433,7 @@
    "season": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 10
+   "ver": 11
   },
   "US-1282": {
    "attraction_fees": [],
@@ -3455,7 +3479,7 @@
    ],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 10
+   "ver": 11
   },
   "US-1283": {
    "attraction_fees": [],
@@ -3501,7 +3525,7 @@
    "season": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 10
+   "ver": 11
   },
   "US-1284": {
    "attraction_fees": [],
@@ -3541,7 +3565,7 @@
    "season": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 10
+   "ver": 11
   },
   "US-1285": {
    "attraction_fees": [
@@ -3555,6 +3579,7 @@
     {
      "line": "Subject to change: -Closed weekdays beginning 8/11/2025 *Saturday Open 10:00 AM-5:00 PM *Sunday Open 10:00 AM-5:00 PM Reservations Online Contact Us Subscribe Kentucky Tourism View the Official Site for KY Tourism FAQs Gift Cards Photo & Dr",
      "read": "2026-10-29",
+     "scope": "attraction",
      "url": "https://parks.ky.gov/explore/lake-cumberland-state-resort-park-7795"
     }
    ],
@@ -3599,7 +3624,7 @@
    "season": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 10
+   "ver": 11
   },
   "US-1286": {
    "attraction_fees": [],
@@ -3645,21 +3670,23 @@
    "season": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 10
+   "ver": 11
   },
   "US-1287": {
    "attraction_fees": [],
-   "attraction_hours": [],
-   "campground_hours": [],
-   "checked": "2026-10-29",
-   "fees": [],
-   "hours": [
+   "attraction_hours": [
     {
      "line": "Beach open from 10am to 6pm.",
      "read": "2026-10-29",
+     "scope": "attraction",
      "url": "https://parks.ky.gov/parks/find-a-park/pennyrile-forest-state-resort-park-7798"
     }
    ],
+   "campground_hours": [],
+   "checked": "2026-10-29",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours (season only)",
    "hunting_hours": [
     {
      "line": "Boating (canoes, kayaks, pedal boats): Visit the boat dock to rent pedal boats, rowboats, canoes, and kayaks ($)(open seasonally).",
@@ -3700,9 +3727,9 @@
      "url": "https://parks.ky.gov/parks/find-a-park/pennyrile-forest-state-resort-park-7798"
     }
    ],
-   "status": "ok",
+   "status": "nothing found",
    "t": "State Park",
-   "ver": 10
+   "ver": 11
   },
   "US-1288": {
    "attraction_fees": [],
@@ -3710,6 +3737,7 @@
     {
      "line": "Hours: Sunday - Saturday 10am - 8pm, Memorial Day to Labor Day.",
      "read": "2026-10-29",
+     "scope": "attraction",
      "url": "https://parks.ky.gov/pineville/parks/resort/pine-mountain-state-resort-park"
     }
    ],
@@ -3749,7 +3777,7 @@
    ],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 10
+   "ver": 11
   },
   "US-1289": {
    "attraction_fees": [],
@@ -3795,7 +3823,7 @@
    "season": [],
    "status": "nothing found",
    "t": "State Park",
-   "ver": 10
+   "ver": 11
   },
   "US-12971": {
    "attraction_fees": [],
@@ -3826,7 +3854,7 @@
    ],
    "status": "nothing found",
    "t": "Nature Preserve",
-   "ver": 10
+   "ver": 11
   },
   "US-12972": {
    "attraction_fees": [],
@@ -3862,7 +3890,7 @@
    ],
    "status": "nothing found",
    "t": "Nature Preserve",
-   "ver": 10
+   "ver": 11
   },
   "US-12974": {
    "attraction_fees": [],
@@ -3897,7 +3925,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-13598": {
    "attraction_fees": [],
@@ -3929,7 +3957,7 @@
    "season": [],
    "status": "nothing found",
    "t": "State Fishing Lake",
-   "ver": 10
+   "ver": 11
   },
   "US-13599": {
    "attraction_fees": [],
@@ -3961,7 +3989,7 @@
    "season": [],
    "status": "nothing found",
    "t": "State Fishing Lake",
-   "ver": 10
+   "ver": 11
   },
   "US-13600": {
    "attraction_fees": [],
@@ -3993,7 +4021,7 @@
    "season": [],
    "status": "nothing found",
    "t": "State Fishing Lake",
-   "ver": 10
+   "ver": 11
   },
   "US-13601": {
    "attraction_fees": [],
@@ -4025,7 +4053,7 @@
    "season": [],
    "status": "nothing found",
    "t": "State Fishing Lake",
-   "ver": 10
+   "ver": 11
   },
   "US-13606": {
    "attraction_fees": [],
@@ -4057,7 +4085,7 @@
    "season": [],
    "status": "nothing found",
    "t": "State Fishing Lake",
-   "ver": 10
+   "ver": 11
   },
   "US-13607": {
    "attraction_fees": [],
@@ -4089,7 +4117,7 @@
    "season": [],
    "status": "nothing found",
    "t": "State Fishing Lake",
-   "ver": 10
+   "ver": 11
   },
   "US-3779": {
    "attraction_fees": [],
@@ -4164,7 +4192,7 @@
    ],
    "status": "ok",
    "t": "Other",
-   "ver": 10
+   "ver": 11
   },
   "US-3781": {
    "attraction_fees": [],
@@ -4243,7 +4271,7 @@
    ],
    "status": "ok",
    "t": "State Park",
-   "ver": 10
+   "ver": 11
   },
   "US-3782": {
    "attraction_fees": [],
@@ -4287,16 +4315,16 @@
     }
    ],
    "permits": [],
-   "status": "ok",
-   "t": "Other",
-   "ver": 10,
    "season": [
     {
      "line": "The area is open year-round.",
      "read": "2026-10-28",
      "url": "https://parks.ky.gov/barbourville/parks/historic/dr-thomas-walker-state-historic-site"
     }
-   ]
+   ],
+   "status": "ok",
+   "t": "Other",
+   "ver": 11
   },
   "US-3783": {
    "attraction_fees": [],
@@ -4354,7 +4382,7 @@
    "season": [],
    "status": "nothing found",
    "t": "Other",
-   "ver": 10
+   "ver": 11
   },
   "US-3784": {
    "attraction_fees": [],
@@ -4413,7 +4441,7 @@
    "season": [],
    "status": "ok",
    "t": "Other",
-   "ver": 10
+   "ver": 11
   },
   "US-3785": {
    "attraction_fees": [],
@@ -4471,7 +4499,7 @@
    "season": [],
    "status": "no page opened",
    "t": "Other",
-   "ver": 10
+   "ver": 11
   },
   "US-3786": {
    "attraction_fees": [],
@@ -4479,6 +4507,7 @@
     {
      "line": "Tour Times: Wednesday - Saturday Tours times: 10 am, 11:30 am, 1 pm, 2:30 pm, 4 pm.",
      "read": "2026-10-29",
+     "scope": "attraction",
      "url": "https://parks.ky.gov/lexington/parks/historic/waveland-state-historic-site"
     }
    ],
@@ -4517,7 +4546,7 @@
    "season": [],
    "status": "ok",
    "t": "Other",
-   "ver": 10
+   "ver": 11
   },
   "US-3787": {
    "attraction_fees": [],
@@ -4525,6 +4554,7 @@
     {
      "line": "Self-guided tours: 11am – 3pm",
      "read": "2026-10-29",
+     "scope": "attraction",
      "url": "https://whitehall.eku.edu"
     }
    ],
@@ -4548,7 +4578,7 @@
    "season": [],
    "status": "nothing found",
    "t": "Other",
-   "ver": 10
+   "ver": 11
   },
   "US-3788": {
    "attraction_fees": [
@@ -4611,7 +4641,7 @@
    "season": [],
    "status": "nothing found",
    "t": "Other",
-   "ver": 10
+   "ver": 11
   },
   "US-3789": {
    "attraction_fees": [],
@@ -4636,7 +4666,7 @@
    "season": [],
    "status": "nothing found",
    "t": "Other",
-   "ver": 10
+   "ver": 11
   },
   "US-3790": {
    "attraction_fees": [],
@@ -4666,7 +4696,7 @@
    "season": [],
    "status": "nothing found",
    "t": "National / NPS",
-   "ver": 10
+   "ver": 11
   },
   "US-3791": {
    "attraction_fees": [],
@@ -4694,7 +4724,7 @@
     {
      "status": "ok",
      "url": "https://www.nps.gov/trte/planyourvisit/upload/National-Park-Service-Trail-of-Tears-Map-508.pdf",
-     "why": "official map (parkinfo-web)"
+     "why": "official map (documents bot)"
     },
     {
      "status": "ok",
@@ -4706,7 +4736,7 @@
    "season": [],
    "status": "nothing found",
    "t": "National / NPS",
-   "ver": 10
+   "ver": 11
   },
   "US-3792": {
    "attraction_fees": [],
@@ -4754,18 +4784,13 @@
      "status": "ok",
      "url": "https://landbetweenthelakes.us/",
      "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "HTTP 403",
-     "url": "https://www.usda.gov/about-usda/policies-and-links",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "season": [],
    "status": "ok",
    "t": "National Recreation Area",
-   "ver": 10
+   "ver": 11
   },
   "US-3793": {
    "attraction_fees": [],
@@ -4801,7 +4826,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3794": {
    "attraction_fees": [],
@@ -4831,7 +4856,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3795": {
    "attraction_fees": [],
@@ -4866,7 +4891,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3796": {
    "attraction_fees": [],
@@ -4896,7 +4921,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3797": {
    "attraction_fees": [],
@@ -4926,7 +4951,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3798": {
    "attraction_fees": [],
@@ -4956,7 +4981,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3799": {
    "attraction_fees": [],
@@ -4986,7 +5011,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3800": {
    "attraction_fees": [],
@@ -5016,7 +5041,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3801": {
    "attraction_fees": [],
@@ -5046,7 +5071,7 @@
    "season": [],
    "status": "nothing found",
    "t": "River / Wilderness",
-   "ver": 10
+   "ver": 11
   },
   "US-3802": {
    "attraction_fees": [],
@@ -5089,7 +5114,7 @@
    "season": [],
    "status": "ok",
    "t": "Sanctuary",
-   "ver": 10
+   "ver": 11
   },
   "US-3803": {
    "attraction_fees": [],
@@ -5124,7 +5149,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3804": {
    "attraction_fees": [],
@@ -5159,22 +5184,24 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3805": {
    "attraction_fees": [],
-   "attraction_hours": [],
+   "attraction_hours": [
+    {
+     "line": "Public Archery range open during daylight hours.",
+     "read": "2026-10-29",
+     "scope": "attraction",
+     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=153"
+    }
+   ],
    "campground_hours": [],
    "checked": "2026-10-29",
    "fees": [],
    "hours": [
     {
      "line": "no shotshells or pistols allowed) located off Wildlife Road: closed Monday, open Tuesday - Saturday 9:00 AM-sunset & Sundays noon-sunset.",
-     "read": "2026-10-29",
-     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=153"
-    },
-    {
-     "line": "Public Archery range open during daylight hours.",
      "read": "2026-10-29",
      "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=153"
     },
@@ -5215,7 +5242,7 @@
    "season": [],
    "status": "ok",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3806": {
    "attraction_fees": [],
@@ -5245,7 +5272,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3807": {
    "attraction_fees": [],
@@ -5275,7 +5302,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3808": {
    "attraction_fees": [],
@@ -5305,7 +5332,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3809": {
    "attraction_fees": [],
@@ -5335,7 +5362,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3810": {
    "attraction_fees": [],
@@ -5370,7 +5397,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3811": {
    "attraction_fees": [],
@@ -5400,7 +5427,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3812": {
    "attraction_fees": [],
@@ -5430,7 +5457,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3813": {
    "attraction_fees": [],
@@ -5507,7 +5534,7 @@
    "season": [],
    "status": "ok",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3814": {
    "attraction_fees": [],
@@ -5536,7 +5563,7 @@
    "season": [],
    "status": "no page opened",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3815": {
    "attraction_fees": [],
@@ -5587,7 +5614,7 @@
    "season": [],
    "status": "ok",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3816": {
    "attraction_fees": [],
@@ -5628,7 +5655,7 @@
    "season": [],
    "status": "ok",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3817": {
    "attraction_fees": [],
@@ -5658,7 +5685,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3818": {
    "attraction_fees": [],
@@ -5693,7 +5720,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3819": {
    "attraction_fees": [],
@@ -5728,7 +5755,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3820": {
    "attraction_fees": [],
@@ -5758,7 +5785,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3821": {
    "attraction_fees": [],
@@ -5788,7 +5815,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3822": {
    "attraction_fees": [],
@@ -5818,7 +5845,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3823": {
    "attraction_fees": [],
@@ -5848,7 +5875,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3824": {
    "attraction_fees": [],
@@ -5878,22 +5905,24 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3825": {
    "attraction_fees": [],
-   "attraction_hours": [],
+   "attraction_hours": [
+    {
+     "line": "Archery ranges (10-60 yard static range and 30-station woodland course) open daily 9:00 AM-sunset.",
+     "read": "2026-10-29",
+     "scope": "attraction",
+     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=15"
+    }
+   ],
    "campground_hours": [],
    "checked": "2026-10-29",
    "fees": [],
    "hours": [
     {
      "line": "no shotshells or pistols allowed) closed Monday, open Tuesday-Saturday 9:00 AM-sunset & Sundays noon-sunset.",
-     "read": "2026-10-29",
-     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=15"
-    },
-    {
-     "line": "Archery ranges (10-60 yard static range and 30-station woodland course) open daily 9:00 AM-sunset.",
      "read": "2026-10-29",
      "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=15"
     },
@@ -5940,7 +5969,7 @@
    "season": [],
    "status": "ok",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3826": {
    "attraction_fees": [],
@@ -5970,7 +5999,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3827": {
    "attraction_fees": [],
@@ -6000,7 +6029,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3828": {
    "attraction_fees": [],
@@ -6058,7 +6087,7 @@
    "season": [],
    "status": "ok",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3829": {
    "attraction_fees": [],
@@ -6088,7 +6117,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3830": {
    "attraction_fees": [],
@@ -6118,7 +6147,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3831": {
    "attraction_fees": [],
@@ -6148,7 +6177,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3832": {
    "attraction_fees": [],
@@ -6178,7 +6207,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3833": {
    "attraction_fees": [],
@@ -6208,7 +6237,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3834": {
    "attraction_fees": [],
@@ -6238,7 +6267,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3835": {
    "attraction_fees": [],
@@ -6268,7 +6297,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3836": {
    "attraction_fees": [],
@@ -6319,21 +6348,23 @@
    "season": [],
    "status": "ok",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3837": {
    "attraction_fees": [],
-   "attraction_hours": [],
-   "campground_hours": [],
-   "checked": "2026-10-29",
-   "fees": [],
-   "hours": [
+   "attraction_hours": [
     {
      "line": "Archery range (mobility-impaired accessible) with 10-50 yard targets open daily during daylight hours, wildlife viewing areas (Tupelo Swamp) , the fishing pier at \"Disabled Access Pond\" is handicap assessable.",
      "read": "2026-10-29",
+     "scope": "attraction",
      "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=137"
     }
    ],
+   "campground_hours": [],
+   "checked": "2026-10-29",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
    "hunting_hours": [],
    "n": "West Kentucky Wildlife Management Area",
    "office_hours": [],
@@ -6360,7 +6391,7 @@
    "season": [],
    "status": "ok",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3838": {
    "attraction_fees": [],
@@ -6390,7 +6421,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3839": {
    "attraction_fees": [],
@@ -6420,7 +6451,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-3840": {
    "attraction_fees": [],
@@ -6450,7 +6481,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-4484": {
    "attraction_fees": [],
@@ -6480,7 +6511,7 @@
    "season": [],
    "status": "nothing found",
    "t": "National Forest",
-   "ver": 10
+   "ver": 11
   },
   "US-4526": {
    "attraction_fees": [],
@@ -6515,7 +6546,7 @@
    "season": [],
    "status": "nothing found",
    "t": "National Forest",
-   "ver": 10
+   "ver": 11
   },
   "US-4572": {
    "attraction_fees": [],
@@ -6556,7 +6587,7 @@
    "season": [],
    "status": "ok",
    "t": "National / NPS",
-   "ver": 10
+   "ver": 11
   },
   "US-4687": {
    "attraction_fees": [],
@@ -6591,7 +6622,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   },
   "US-4688": {
    "attraction_fees": [],
@@ -6626,7 +6657,7 @@
    "season": [],
    "status": "nothing found",
    "t": "State Forest",
-   "ver": 10
+   "ver": 11
   },
   "US-4689": {
    "attraction_fees": [],
@@ -6661,7 +6692,7 @@
    "season": [],
    "status": "nothing found",
    "t": "State Forest",
-   "ver": 10
+   "ver": 11
   },
   "US-4690": {
    "attraction_fees": [],
@@ -6703,21 +6734,23 @@
    "season": [],
    "status": "nothing found",
    "t": "State Forest",
-   "ver": 10
+   "ver": 11
   },
   "US-4692": {
    "attraction_fees": [],
-   "attraction_hours": [],
-   "campground_hours": [],
-   "checked": "2026-10-29",
-   "fees": [],
-   "hours": [
+   "attraction_hours": [
     {
      "line": "Beach open from 10am to 6pm.",
      "read": "2026-10-29",
+     "scope": "attraction",
      "url": "https://parks.ky.gov/dawson-springs/parks/resort/pennyrile-forest-state-resort-park"
     }
    ],
+   "campground_hours": [],
+   "checked": "2026-10-29",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours (season only)",
    "hunting_hours": [
     {
      "line": "Boating (canoes, kayaks, pedal boats): Visit the boat dock to rent pedal boats, rowboats, canoes, and kayaks ($)(open seasonally).",
@@ -6753,9 +6786,9 @@
      "url": "https://parks.ky.gov/dawson-springs/parks/resort/pennyrile-forest-state-resort-park"
     }
    ],
-   "status": "ok",
+   "status": "nothing found",
    "t": "State Forest",
-   "ver": 10
+   "ver": 11
   },
   "US-4693": {
    "attraction_fees": [],
@@ -6785,7 +6818,7 @@
    "season": [],
    "status": "nothing found",
    "t": "State Forest",
-   "ver": 10
+   "ver": 11
   },
   "US-7708": {
    "attraction_fees": [],
@@ -6849,7 +6882,7 @@
    "season": [],
    "status": "ok",
    "t": "National / NPS",
-   "ver": 10
+   "ver": 11
   },
   "US-7890": {
    "attraction_fees": [],
@@ -6895,7 +6928,7 @@
    "season": [],
    "status": "ok",
    "t": "Other",
-   "ver": 10
+   "ver": 11
   },
   "US-7950": {
    "attraction_fees": [],
@@ -6958,7 +6991,7 @@
    "season": [],
    "status": "ok",
    "t": "National / NPS",
-   "ver": 10
+   "ver": 11
   },
   "US-7951": {
    "attraction_fees": [],
@@ -7017,7 +7050,7 @@
    "season": [],
    "status": "nothing found",
    "t": "State Forest",
-   "ver": 10
+   "ver": 11
   },
   "US-7952": {
    "attraction_fees": [],
@@ -7047,7 +7080,7 @@
    "season": [],
    "status": "nothing found",
    "t": "State Forest",
-   "ver": 10
+   "ver": 11
   },
   "US-7953": {
    "attraction_fees": [],
@@ -7090,7 +7123,7 @@
    "season": [],
    "status": "ok",
    "t": "Nature Preserve",
-   "ver": 10
+   "ver": 11
   },
   "US-7954": {
    "attraction_fees": [],
@@ -7098,6 +7131,7 @@
     {
      "line": "The Visitors Center is open on Sundays from 1 pm to 5 pm year round.",
      "read": "2026-10-29",
+     "scope": "attraction",
      "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Blackacre.aspx"
     }
    ],
@@ -7109,11 +7143,6 @@
      "line": "The preserve and homestead are open on weekdays from 3 pm to dusk and on weekends from dawn to dusk.",
      "read": "2026-10-29",
      "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Blackacre.aspx"
-    },
-    {
-     "line": "Preserves are open sunrise to sunset (and closed for private events).",
-     "read": "2026-10-29",
-     "url": "https://visitblackacre.org/rules-for-kentucky-nature-preserves/"
     }
    ],
    "hunting_hours": [],
@@ -7126,18 +7155,13 @@
      "status": "ok",
      "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Blackacre.aspx",
      "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://visitblackacre.org/rules-for-kentucky-nature-preserves/",
-     "why": "rules page (documents bot)"
     }
    ],
    "permits": [],
    "season": [],
    "status": "ok",
    "t": "Nature Preserve",
-   "ver": 10
+   "ver": 11
   },
   "US-7955": {
    "attraction_fees": [],
@@ -7162,7 +7186,7 @@
    "season": [],
    "status": "nothing found",
    "t": "Nature Preserve",
-   "ver": 10
+   "ver": 11
   },
   "US-7956": {
    "attraction_fees": [],
@@ -7194,7 +7218,7 @@
    "season": [],
    "status": "nothing found",
    "t": "Nature Preserve",
-   "ver": 10
+   "ver": 11
   },
   "US-7957": {
    "attraction_fees": [],
@@ -7242,7 +7266,7 @@
    "season": [],
    "status": "ok",
    "t": "Nature Preserve",
-   "ver": 10
+   "ver": 11
   },
   "US-7958": {
    "attraction_fees": [],
@@ -7288,7 +7312,7 @@
    "season": [],
    "status": "ok",
    "t": "Nature Preserve",
-   "ver": 10
+   "ver": 11
   },
   "US-7959": {
    "attraction_fees": [],
@@ -7331,7 +7355,7 @@
    "season": [],
    "status": "ok",
    "t": "Nature Preserve",
-   "ver": 10
+   "ver": 11
   },
   "US-7960": {
    "attraction_fees": [],
@@ -7363,7 +7387,7 @@
    "season": [],
    "status": "nothing found",
    "t": "Nature Preserve",
-   "ver": 10
+   "ver": 11
   },
   "US-7961": {
    "attraction_fees": [],
@@ -7395,7 +7419,7 @@
    "season": [],
    "status": "nothing found",
    "t": "Nature Preserve",
-   "ver": 10
+   "ver": 11
   },
   "US-7962": {
    "attraction_fees": [],
@@ -7413,14 +7437,14 @@
     {
      "status": "ok",
      "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Burnett-WWCA.aspx",
-     "why": "the park's page (Kentucky answer key)"
+     "why": "hours page (Kentucky hours answer key)"
     }
    ],
    "permits": [],
    "season": [],
    "status": "nothing found",
    "t": "Nature Preserve",
-   "ver": 10
+   "ver": 11
   },
   "US-7963": {
    "attraction_fees": [],
@@ -7468,7 +7492,7 @@
    "season": [],
    "status": "ok",
    "t": "Nature Preserve",
-   "ver": 10
+   "ver": 11
   },
   "US-7964": {
    "attraction_fees": [],
@@ -7493,7 +7517,7 @@
    "season": [],
    "status": "nothing found",
    "t": "Nature Preserve",
-   "ver": 10
+   "ver": 11
   },
   "US-7965": {
    "attraction_fees": [],
@@ -7541,7 +7565,7 @@
    "season": [],
    "status": "ok",
    "t": "Nature Preserve",
-   "ver": 10
+   "ver": 11
   },
   "US-7966": {
    "attraction_fees": [],
@@ -7589,7 +7613,7 @@
    "season": [],
    "status": "ok",
    "t": "Nature Preserve",
-   "ver": 10
+   "ver": 11
   },
   "US-7967": {
    "attraction_fees": [],
@@ -7635,7 +7659,7 @@
    "season": [],
    "status": "ok",
    "t": "Nature Preserve",
-   "ver": 10
+   "ver": 11
   },
   "US-7968": {
    "attraction_fees": [],
@@ -7666,7 +7690,7 @@
    "season": [],
    "status": "ok",
    "t": "Nature Preserve",
-   "ver": 10
+   "ver": 11
   },
   "US-7970": {
    "attraction_fees": [],
@@ -7691,7 +7715,7 @@
    "season": [],
    "status": "nothing found",
    "t": "Nature Preserve",
-   "ver": 10
+   "ver": 11
   },
   "US-8144": {
    "attraction_fees": [],
@@ -7756,7 +7780,7 @@
    "season": [],
    "status": "ok",
    "t": "Recreation Area",
-   "ver": 10
+   "ver": 11
   },
   "US-9756": {
    "attraction_fees": [],
@@ -7786,7 +7810,7 @@
    "season": [],
    "status": "nothing found",
    "t": "WMA",
-   "ver": 10
+   "ver": 11
   }
  },
  "read": "2026-10-29"

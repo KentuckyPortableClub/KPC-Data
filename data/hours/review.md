@@ -4,7 +4,7 @@ Updated 2026-10-29. Every line is the agency's own sentence (H2). Refresh every 
 
 | area | parks | hours | fees | permits | nothing found | no page |
 |---|---|---|---|---|---|---|
-| US-KY | 193 | 46 | 8 | 8 | 140 | 0 |
+| US-KY | 193 | 41 | 8 | 8 | 143 | 0 |
 
 ## US-KY: 12-park sample for chat 8
 
@@ -13,6 +13,7 @@ Updated 2026-10-29. Every line is the agency's own sentence (H2). Refresh every 
   - Hours: “Monday - Friday: 7:30 am - 4 pm.” · [www.fws.gov](https://www.fws.gov/refuge/clarks-river)
   - Office hours: “The office is open Monday – Friday from 7:30 am until 4 pm.” · [www.fws.gov](https://www.fws.gov/refuge/clarks-river)
   - Hunting hours: “Hunters, with the exception of hunting Racoon, opossum, and bullfrog, access to the refuge is two hours before sunrise - two hours after sunset.” · [www.fws.gov](https://www.fws.gov/refuge/clarks-river)
+  - Hunting hours: “The Refuge is only open to the public from sunrise to sunset, with the exception of permitted hunting seasons.” · [www.fws.gov](https://www.fws.gov/locations/clarks-river-national-wildlife-refuge/rules-and-policies)
 - **US-0538 Reelfoot National Wildlife Refuge**
   - Hours: “8 am - 4 pm.” · [www.fws.gov](https://www.fws.gov/refuge/reelfoot/)
   - Office hours: “Visitor Center Hours: Monday - Saturday 8 am -4 pm.” · [www.fws.gov](https://www.fws.gov/refuge/reelfoot/)
@@ -38,12 +39,15 @@ Updated 2026-10-29. Every line is the agency's own sentence (H2). Refresh every 
 - **US-1260 John James Audubon State Park**
   - Hours: “Grounds are open from dawn to dusk but may be closed periodically due to floodwaters.” · [parks.ky.gov](https://parks.ky.gov/parks/find-a-park/john-james-audubon-state-park-7815)
   - Attraction fee: “Rates Audubon Museum admission is as follows: - Adults (18+): $10.00 - Seniors (60+): $8.00 - Military Rate: $8.00 - Children/Students (6-17 & with college ID): $6.00 - Children (5 and under): $0.00 - Families (2 adults, 2 children): $25.00” · [parks.ky.gov](https://parks.ky.gov/parks/find-a-park/john-james-audubon-state-park-7815)
-- **US-1263 Lake Malone State Park**
-  - Hours: “Beach hours: 10 am-6 pm.” · [parks.ky.gov](https://parks.ky.gov/explore/lake-malone-state-park-7818)
 - **US-1274 Blue Licks Battlefield State Park**
   - Hours: “Hours: March 16 - October 31 9 am to 5 pm.” · [parks.ky.gov](https://parks.ky.gov/parks/find-a-park/blue-licks-battlefield-state-resort-park-7782)
   - Hours: “9 am to 3:30 pm.” · [parks.ky.gov](https://parks.ky.gov/parks/find-a-park/blue-licks-battlefield-state-resort-park-7782)
   - Hunting hours: “The mini-golf course is open seasonally and dependent upon weather.” · [parks.ky.gov](https://parks.ky.gov/parks/find-a-park/blue-licks-battlefield-state-resort-park-7782)
+- **US-1276 Carter Caves State Park**
+  - Hours: “The park is open year-round, and classes can visit any weekday from Labor Day to Memorial Day.” · [parks.ky.gov](https://parks.ky.gov/parks/find-a-park/carter-caves-state-resort-park-7785)
+  - Hours: “Area open during daylight hours only.” · [parks.ky.gov](https://parks.ky.gov/parks/find-a-park/carter-caves-state-resort-park-7785)
+  - Fees: “Fees: Adults $5, Children $4, Mondays $3 for all.” · [parks.ky.gov](https://parks.ky.gov/parks/find-a-park/carter-caves-state-resort-park-7785)
+  - Fees: “Fees: $6 for Adults, $5 for Children, $4 for Campers and Mondays: $3 for all.” · [parks.ky.gov](https://parks.ky.gov/parks/find-a-park/carter-caves-state-resort-park-7785)
 
 ## Kentucky test gate (H4)
 

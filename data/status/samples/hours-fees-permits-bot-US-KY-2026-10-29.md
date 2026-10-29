@@ -2,36 +2,45 @@
 
 Source file: `data/hours/US-KY.json`
 
-## US-1279 General Butler State Park
+## US-1260 John James Audubon State Park
 ```json
 {
- "attraction_fees": [],
+ "attraction_fees": [
+  {
+   "line": "Rates Audubon Museum admission is as follows: - Adults (18+): $10.00 - Seniors (60+): $8.00 - Military Rate: $8.00 - Children/Students (6-17 & with college ID): $6.00 - Children (5 and under): $0.00 - Families (2 adults, 2 children): $25.00",
+   "read": "2026-10-29",
+   "url": "https://parks.ky.gov/parks/find-a-park/john-james-audubon-state-park-7815"
+  }
+ ],
  "attraction_hours": [],
  "campground_hours": [],
  "checked": "2026-10-29",
+ "debug": [
+  {
+   "kind": "pdf",
+   "text": "Parking W arbler Road (0.7 mi) TH TH TH TH TH TH JOHN JAMES AUDUBON STATE PARK To Evansville (6 mi.) KENTUCKY STATE PARKS “the nation’s finest” To I-69 (6 mi.) TH Woodpecker(0.4 mi) KY Coffeetree(0.4 mi) Wilderness Lake (1 mi) SCALE 0 500 1500 FEET1000 TH TH Tennis 9 1 2 3 4 5 6 7 8 Campground Pro Shop Park Office RR Museum W atson Lane Green River Road King Benson Backcountry (1.6 mi) Eagle Glen Pet (0.9 mi) Museum (0.25 mi) RR Scenic Overlook (0.22 mi) No access Boat Slips BoatDock 41 41 41 JOHN JAMES AUDUBON ST ATE PARK NATURE PRESERVE Stratman Road JOHN JAMES AUDUBON ST ATE PARK WETLANDS (See Reverse Side) W olf Hills Road Deer Ridge (0.3 mi) (0.3 mi) Pawpaw Valley (0.23 mi) RR RR Road Trail Paved trail Building Playground Picnic shelter Campgrouund Restroom",
+   "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map50475013-f17e-4081-963b-98164c6a6fca.pdf?sfvrsn=f8b3bb8f_2"
+  }
+ ],
  "fees": [],
  "hours": [
   {
-   "line": "Open 11 am - 7 pm.",
+   "line": "Grounds are open from dawn to dusk but may be closed periodically due to floodwaters.",
    "read": "2026-10-29",
-   "url": "https://parks.ky.gov/parks/find-a-park/general-butler-state-resort-park-7789"
-  },
-  {
-   "line": "Sunday - Thursday, 11a.m.",
-   "read": "2026-10-29",
-   "url": "https://parks.ky.gov/parks/find-a-park/general-butler-state-resort-park-7789"
+   "url": "https://parks.ky.gov/parks/find-a-park/john-james-audubon-state-park-7815"
   }
  ],
  "hunting_hours": [],
- "n": "General Butler State Park",
+ "key_on_page": "https://parks.ky.gov/henderson/parks/historic/john-james-audubon-state-park",
+ "n": "John James Audubon State Park",
  "office_hours": [],
  "other_fees": [],
  "permits": [],
  "season": [
   {
-   "line": "Boating The lake is open year-round for non-motorized personal boats.",
+   "line": "Pickleball Four pickleball courts located by the picnic shelter open year-round.",
    "read": "2026-10-29",
-   "url": "https://parks.ky.gov/parks/find-a-park/general-butler-state-resort-park-7789"
+   "url": "https://parks.ky.gov/parks/find-a-park/john-james-audubon-state-park-7815"
   }
  ],
  "status": "ok",
@@ -39,67 +48,32 @@ Source file: `data/hours/US-KY.json`
 }
 ```
 
-## US-7890 Isaac Shelby Cemetery State Historic Site
+## US-3837 West Kentucky Wildlife Management Area
 ```json
 {
  "attraction_fees": [],
- "attraction_hours": [],
+ "attraction_hours": [
+  {
+   "line": "Archery range (mobility-impaired accessible) with 10-50 yard targets open daily during daylight hours, wildlife viewing areas (Tupelo Swamp) , the fishing pier at \"Disabled Access Pond\" is handicap assessable.",
+   "read": "2026-10-29",
+   "scope": "attraction",
+   "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=137"
+  }
+ ],
  "campground_hours": [],
  "checked": "2026-10-29",
  "fees": [],
- "hours": [
-  {
-   "line": "Gate closes at 5 pm",
-   "read": "2026-10-29",
-   "src_note": "tourism site (state government), not the park agency",
-   "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map6c67554c-de88-4d6a-b7a4-3a6821c26376.pdf?sfvrsn=2878dd15_2"
-  }
- ],
+ "hours": [],
+ "hours_note": "the agency pages we read print no hours",
  "hunting_hours": [],
- "n": "Isaac Shelby Cemetery State Historic Site",
- "office_hours": [],
- "other_fees": [],
- "permits": [],
- "season": [],
- "status": "ok",
- "t": "Other"
-}
-```
-
-## US-3836 Veterans Memorial Wildlife Management Area
-```json
-{
- "attraction_fees": [],
- "attraction_hours": [],
- "campground_hours": [],
- "checked": "2026-10-29",
- "fees": [],
- "hours": [
-  {
-   "line": "Wednesday - Saturday: 10 am - 7 pm.",
-   "read": "2026-10-29",
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9202"
-  },
-  {
-   "line": "Sunday: 1 pm - 5 pm.",
-   "read": "2026-10-29",
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9202"
-  },
-  {
-   "line": "Wednesday - Saturday: 10 am - 5 pm.",
-   "read": "2026-10-29",
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9202"
-  }
- ],
- "hunting_hours": [],
- "n": "Veterans Memorial Wildlife Management Area",
+ "n": "West Kentucky Wildlife Management Area",
  "office_hours": [],
  "other_fees": [],
  "permits": [
   {
    "line": "An annual or one-day shooting range permit is now required to use firearms and archery equipment on any department managed, l​eased or affiliated shooting range.",
    "read": "2026-10-29",
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9202"
+   "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=137"
   }
  ],
  "season": [],
@@ -108,74 +82,42 @@ Source file: `data/hours/US-KY.json`
 }
 ```
 
-## US-7953 Metropolis Lake State Nature Preserve
+## US-3782 Dr. Thomas Walker State Historic Site
 ```json
 {
  "attraction_fees": [],
  "attraction_hours": [],
  "campground_hours": [],
- "checked": "2026-10-29",
- "debug": [
-  {
-   "kind": "page",
-   "text": "abinet Skip to main navigation Skip to main content Ky. gov An Official Website of the Commonwealth of Kentucky Kentucky Energy and Environment Cabinet Facebook Twitter Youtube About Careers Calendar Open Records Contact Page Image Metropolis Lake State Nature Preserve Fishing/Paddling/Outdoor Recreation Metropolis Lake State Nature Preserve Main Content ​​​Attention: A fish consumption ad​visory has been issued for Metropolis Lake by ​the Kentucky Departments for Environmental Protection, Public Health and Fish and Wildlife Resources ( Read Full Advisory ). About Metropolis Lake State Nature Prese​rve​ Dedicated Aug. 10, 1984, Metropolis Lake State Nature Preserve is a 123-acre tract in McCracken County. This preserve contains the 50-acre Metropolis Lake, one of only a few natural lakes i",
-   "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Metropolis-Lake.aspx"
-  }
- ],
+ "checked": "2026-10-28",
  "fees": [],
- "hours": [
-  {
-   "line": "Preserves are open sunrise to sunset.",
-   "read": "2026-10-29",
-   "url": "https://eec.ky.gov/Nature-Preserves/Brochures/MetropolisLakeBrochure_bw.pdf"
-  }
- ],
- "hunting_hours": [],
- "key_on_page": "https://eec.ky.gov/Nature-Preserves/Brochures/MetropolisLakeBrochure_bw.pdf",
- "n": "Metropolis Lake State Nature Preserve",
- "office_hours": [],
- "other_fees": [],
- "permits": [],
- "season": [],
- "status": "ok",
- "t": "Nature Preserve"
-}
-```
-
-## US-1274 Blue Licks Battlefield State Park
-```json
-{
- "attraction_fees": [],
- "attraction_hours": [],
- "campground_hours": [],
- "checked": "2026-10-29",
- "fees": [],
- "hours": [
-  {
-   "line": "Hours: March 16 - October 31 9 am to 5 pm.",
-   "read": "2026-10-29",
-   "url": "https://parks.ky.gov/parks/find-a-park/blue-licks-battlefield-state-resort-park-7782"
-  },
-  {
-   "line": "9 am to 3:30 pm.",
-   "read": "2026-10-29",
-   "url": "https://parks.ky.gov/parks/find-a-park/blue-licks-battlefield-state-resort-park-7782"
-  }
- ],
+ "hours": [],
  "hunting_hours": [
   {
-   "line": "The mini-golf course is open seasonally and dependent upon weather.",
-   "read": "2026-10-29",
-   "url": "https://parks.ky.gov/parks/find-a-park/blue-licks-battlefield-state-resort-park-7782"
+   "line": "The park is open year round, daylight to dark, but our gift shop hours vary by season.",
+   "read": "2026-10-28",
+   "url": "https://parks.ky.gov/barbourville/parks/historic/dr-thomas-walker-state-historic-site"
   }
  ],
- "n": "Blue Licks Battlefield State Park",
+ "last_read_failed": "2026-10-29",
+ "n": "Dr. Thomas Walker State Historic Site",
  "office_hours": [],
- "other_fees": [],
+ "other_fees": [
+  {
+   "line": "Tours The cabin and surrounding grounds can be toured free of charge.",
+   "read": "2026-10-28",
+   "url": "https://parks.ky.gov/barbourville/parks/historic/dr-thomas-walker-state-historic-site"
+  }
+ ],
  "permits": [],
- "season": [],
+ "season": [
+  {
+   "line": "The area is open year-round.",
+   "read": "2026-10-28",
+   "url": "https://parks.ky.gov/barbourville/parks/historic/dr-thomas-walker-state-historic-site"
+  }
+ ],
  "status": "ok",
- "t": "State Park"
+ "t": "Other"
 }
 ```
 
@@ -256,47 +198,101 @@ Source file: `data/hours/US-KY.json`
  "office_hours": [],
  "other_fees": [],
  "permits": [],
+ "season": [],
  "status": "ok",
  "t": "State Park"
 }
 ```
 
-## US-7957 Hall-Hill/Vernon-Douglas State Nature Preserve
+## US-1274 Blue Licks Battlefield State Park
 ```json
 {
  "attraction_fees": [],
  "attraction_hours": [],
  "campground_hours": [],
  "checked": "2026-10-29",
- "debug": [
-  {
-   "kind": "page",
-   "text": "abinet Skip to main navigation Skip to main content Ky. gov An Official Website of the Commonwealth of Kentucky Kentucky Energy and Environment Cabinet Facebook Twitter Youtube About Careers Calendar Open Records Contact Page Image Hall Hill/Vernon-Douglas State Nature Preserve Hiking Trails Hall Hill/Vernon-Douglas State Nature Preserve Main Content ​​​Abou​t Vernon-Douglas State Nature Preserve​ Dedicated August 12, 1992, Vernon-Douglas State Nature Preserve is located within a rugged, steep, forested section of Hardin County. This 730-acre preserve protects one of the most mature second-growth forests in the Knobs physiographic region. Hall Hollow, a north-facing valley in the preserve, supports a rich array of spring wildflowers. A trail system passes through the valley bottom to the d",
-   "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Vernon-Douglas.aspx"
-  }
- ],
  "fees": [],
  "hours": [
   {
-   "line": "sunrise to sunset 365 days a year.",
+   "line": "Hours: March 16 - October 31 9 am to 5 pm.",
    "read": "2026-10-29",
-   "url": "https://eec.ky.gov/Nature-Preserves/Brochures/VernonDouglasBrochure_bw.pdf"
+   "url": "https://parks.ky.gov/parks/find-a-park/blue-licks-battlefield-state-resort-park-7782"
   },
   {
-   "line": "Preserves are open sunrise to sunset.",
+   "line": "9 am to 3:30 pm.",
    "read": "2026-10-29",
-   "url": "https://eec.ky.gov/Nature-Preserves/Brochures/VernonDouglasBrochure_bw.pdf"
+   "url": "https://parks.ky.gov/parks/find-a-park/blue-licks-battlefield-state-resort-park-7782"
   }
  ],
- "hunting_hours": [],
- "key_on_page": "https://eec.ky.gov/Nature-Preserves/Brochures/VernonDouglasBrochure_bw.pdf",
- "n": "Hall-Hill/Vernon-Douglas State Nature Preserve",
+ "hunting_hours": [
+  {
+   "line": "The mini-golf course is open seasonally and dependent upon weather.",
+   "read": "2026-10-29",
+   "url": "https://parks.ky.gov/parks/find-a-park/blue-licks-battlefield-state-resort-park-7782"
+  }
+ ],
+ "n": "Blue Licks Battlefield State Park",
  "office_hours": [],
  "other_fees": [],
  "permits": [],
  "season": [],
  "status": "ok",
- "t": "Nature Preserve"
+ "t": "State Park"
+}
+```
+
+## US-3825 Miller Welch Wildlife Management Area
+```json
+{
+ "attraction_fees": [],
+ "attraction_hours": [
+  {
+   "line": "Archery ranges (10-60 yard static range and 30-station woodland course) open daily 9:00 AM-sunset.",
+   "read": "2026-10-29",
+   "scope": "attraction",
+   "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=15"
+  }
+ ],
+ "campground_hours": [],
+ "checked": "2026-10-29",
+ "fees": [],
+ "hours": [
+  {
+   "line": "no shotshells or pistols allowed) closed Monday, open Tuesday-Saturday 9:00 AM-sunset & Sundays noon-sunset.",
+   "read": "2026-10-29",
+   "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=15"
+  },
+  {
+   "line": "open Tuesday--Saturday 9:00 AM-sunset & Sundays",
+   "read": "2026-10-29",
+   "url": "https://fw.ky.gov/More/Documents/MillerWelch-CentralKentuckyWMA_ALL.pdf"
+  },
+  {
+   "line": "woodland course) open daily 9:00 AM-sunset.",
+   "read": "2026-10-29",
+   "url": "https://fw.ky.gov/More/Documents/MillerWelch-CentralKentuckyWMA_ALL.pdf"
+  }
+ ],
+ "hunting_hours": [
+  {
+   "line": "Trap and skeet shooting facilities are operated by local clubs and open to the public seasonally for nominal fees.",
+   "read": "2026-10-29",
+   "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=15"
+  }
+ ],
+ "n": "Miller Welch Wildlife Management Area",
+ "office_hours": [],
+ "other_fees": [],
+ "permits": [
+  {
+   "line": "An annual or one-day shooting range permit is now required to use firearms and archery equipment on any department managed, l​eased or affiliated shooting range.",
+   "read": "2026-10-29",
+   "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=15"
+  }
+ ],
+ "season": [],
+ "status": "ok",
+ "t": "WMA"
 }
 ```
 
@@ -337,112 +333,7 @@ Source file: `data/hours/US-KY.json`
 }
 ```
 
-## US-3828 Peabody Wildlife Management Area
-```json
-{
- "attraction_fees": [],
- "attraction_hours": [],
- "campground_hours": [],
- "checked": "2026-10-29",
- "fees": [
-  {
-   "line": "1-Day Shooting Range Permit (At any KDFWR-managed, leased or affiliated shooting range) $5.29",
-   "read": "2026-10-29",
-   "url": "https://fw.ky.gov/licenses/pages/fees.aspx"
-  },
-  {
-   "line": "Peabody WMA User Permit $15.86",
-   "read": "2026-10-29",
-   "url": "https://fw.ky.gov/licenses/pages/fees.aspx"
-  }
- ],
- "hours": [
-  {
-   "line": "no shotshells or pistols allowed) open Tuesday - Saturday 9:00 AM - Sunset & Sundays Noon - Sunset.",
-   "read": "2026-10-29",
-   "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=229"
-  }
- ],
- "hunting_hours": [],
- "n": "Peabody Wildlife Management Area",
- "office_hours": [],
- "other_fees": [
-  {
-   "line": "Kentucky Wild Membership (Includes a membership kit & the opportunity to go out in the field with our biologists!) Membership options range from $25 - $1,000",
-   "read": "2026-10-29",
-   "url": "https://fw.ky.gov/licenses/pages/fees.aspx"
-  }
- ],
- "permits": [
-  {
-   "line": "Any person age 16 and older entering the area must obtain and carry a Peabody WMA user permit.",
-   "read": "2026-10-29",
-   "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=229"
-  }
- ],
- "season": [],
- "status": "ok",
- "t": "WMA"
-}
-```
-
-## US-3779 Big Bone Lick State Historic Site
-```json
-{
- "attraction_fees": [],
- "attraction_hours": [],
- "campground_hours": [
-  {
-   "line": "Swimming Pool - CLOSED UNTIL FURTHER NOTICE The seasonal swimming pool at the campground is for campground guests only.",
-   "read": "2026-10-29",
-   "url": "https://parks.ky.gov/parks/find-a-park/big-bone-lick-state-historic-site-7807"
-  }
- ],
- "checked": "2026-10-29",
- "debug": [
-  {
-   "kind": "pdf",
-   "text": "Service road Trail Trailhead Building Storm shelter Campground Park area Playground Picnic area Picnic shelter Restroom Bath house Bison viewing Tennis court Basketball court TH RR N SCALE 500 0 1000 FEET500",
-   "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map8929d877-a36c-45e6-a250-e218cc865fb7.pdf?sfvrsn=77032b6c_2"
-  }
- ],
- "fees": [],
- "hours": [
-  {
-   "line": "Mid-March through mid-November - Open Daily, 9 am to 4 pm.",
-   "read": "2026-10-29",
-   "url": "https://parks.ky.gov/parks/find-a-park/big-bone-lick-state-historic-site-7807"
-  },
-  {
-   "line": "Mid-November through mid-March - Open Thursday through Sunday, 10 am to 3 pm.",
-   "read": "2026-10-29",
-   "url": "https://parks.ky.gov/parks/find-a-park/big-bone-lick-state-historic-site-7807"
-  },
-  {
-   "line": "The trail is open daily from dawn to dusk.",
-   "read": "2026-10-29",
-   "url": "https://parks.ky.gov/parks/find-a-park/big-bone-lick-state-historic-site-7807"
-  }
- ],
- "hunting_hours": [],
- "key_on_page": "https://parks.ky.gov/union/parks/historic/big-bone-lick-state-historic-site",
- "n": "Big Bone Lick State Historic Site",
- "office_hours": [],
- "other_fees": [],
- "permits": [],
- "season": [
-  {
-   "line": "Open year-round.",
-   "read": "2026-10-29",
-   "url": "https://parks.ky.gov/parks/find-a-park/big-bone-lick-state-historic-site-7807"
-  }
- ],
- "status": "ok",
- "t": "Other"
-}
-```
-
-## US-7965 Brigadoon State Nature Preserve
+## US-7953 Metropolis Lake State Nature Preserve
 ```json
 {
  "attraction_fees": [],
@@ -452,31 +343,142 @@ Source file: `data/hours/US-KY.json`
  "debug": [
   {
    "kind": "page",
-   "text": "abinet Skip to main navigation Skip to main content Ky. gov An Official Website of the Commonwealth of Kentucky Kentucky Energy and Environment Cabinet Facebook Twitter Youtube About Careers Calendar Open Records Contact Page Image Brigadoon State Nature Preserve Hiking Trails Brigadoon State Nature Preserve Main Content ​​​​About ​​Brigadoon State Nature Prese​​rve Brigadoon State Nature Preserve, located in Barren County adjacent to Barren River Lake, is 95 acres of mostly mature forest. It was dedicated into the preserve system on March 14, 1985. An additional 88 acres were dedicated on June 12, 2001 and a very small tract was dedicated on December 9, 2010. Today a total of 187 acres are protected. The rich woodlands contain an impressive array of spring wildflowers including several sp",
-   "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Brigadoon.aspx"
+   "text": "abinet Skip to main navigation Skip to main content Ky. gov An Official Website of the Commonwealth of Kentucky Kentucky Energy and Environment Cabinet Facebook Twitter Youtube About Careers Calendar Open Records Contact Page Image Metropolis Lake State Nature Preserve Fishing/Paddling/Outdoor Recreation Metropolis Lake State Nature Preserve Main Content ​​​Attention: A fish consumption ad​visory has been issued for Metropolis Lake by ​the Kentucky Departments for Environmental Protection, Public Health and Fish and Wildlife Resources ( Read Full Advisory ). About Metropolis Lake State Nature Prese​rve​ Dedicated Aug. 10, 1984, Metropolis Lake State Nature Preserve is a 123-acre tract in McCracken County. This preserve contains the 50-acre Metropolis Lake, one of only a few natural lakes i",
+   "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Metropolis-Lake.aspx"
   }
  ],
  "fees": [],
  "hours": [
   {
-   "line": "The preserve is open to foot trafﬁc from sunrise to sunset.",
-   "read": "2026-10-29",
-   "url": "https://eec.ky.gov/Nature-Preserves/Brochures/BrigadoonBrochure_bw.pdf"
-  },
-  {
    "line": "Preserves are open sunrise to sunset.",
    "read": "2026-10-29",
-   "url": "https://eec.ky.gov/Nature-Preserves/Brochures/BrigadoonBrochure_bw.pdf"
+   "url": "https://eec.ky.gov/Nature-Preserves/Brochures/MetropolisLakeBrochure_bw.pdf"
   }
  ],
  "hunting_hours": [],
- "key_on_page": "https://eec.ky.gov/Nature-Preserves/Brochures/BrigadoonBrochure_bw.pdf",
- "n": "Brigadoon State Nature Preserve",
+ "key_on_page": "https://eec.ky.gov/Nature-Preserves/Brochures/MetropolisLakeBrochure_bw.pdf",
+ "n": "Metropolis Lake State Nature Preserve",
  "office_hours": [],
  "other_fees": [],
  "permits": [],
  "season": [],
  "status": "ok",
  "t": "Nature Preserve"
+}
+```
+
+## US-1280 Greenbo Lake State Park
+```json
+{
+ "attraction_fees": [
+  {
+   "line": "***Hours Through October 31st*** Marina Store Hours Sunday 9:00 AM - 4:00 PM Monday 9:00 AM - 4:00 PM Tuesday 9:00 AM - 4:00 PM Wednesday 9:00 AM - 4:00 PM Thursday 9:00 AM - 4:00 PM Friday 9:00 AM - 6:00 PM Saturday 9:00 AM - 6:00 PM ***Ho",
+   "read": "2026-10-28",
+   "url": "https://parks.ky.gov/explore/greenbo-lake-state-resort-park-7790"
+  }
+ ],
+ "attraction_hours": [],
+ "campground_hours": [],
+ "checked": "2026-10-28",
+ "fees": [
+  {
+   "line": "Daily fee of $12.",
+   "read": "2026-10-28",
+   "url": "https://parks.ky.gov/explore/greenbo-lake-state-resort-park-7790"
+  }
+ ],
+ "hours": [
+  {
+   "line": "Scuba Refuge The 10-acre scuba refuge allows divers to use the lake from May through November and other designated times from 10 am to 6 pm.",
+   "read": "2026-10-28",
+   "url": "https://parks.ky.gov/explore/greenbo-lake-state-resort-park-7790"
+  }
+ ],
+ "hunting_hours": [
+  {
+   "line": "***Hours Through October 31st*** Marina Store Hours Sunday 9:00 AM - 4:00 PM Monday 9:00 AM - 4:00 PM Tuesday 9:00 AM - 4:00 PM Wednesday 9:00 AM - 4:00 PM Thursday 9:00 AM - 4:00 PM Friday 9:00 AM - 6:00 PM Saturday 9:00 AM - 6:00 PM ***Ho",
+   "read": "2026-10-28",
+   "url": "https://parks.ky.gov/explore/greenbo-lake-state-resort-park-7790"
+  },
+  {
+   "line": "Both the Lodge and Community Pool are Open Seasonally, Memorial Day through Labor Day.",
+   "read": "2026-10-28",
+   "url": "https://parks.ky.gov/explore/greenbo-lake-state-resort-park-7790"
+  }
+ ],
+ "last_read_failed": "2026-10-29",
+ "n": "Greenbo Lake State Park",
+ "office_hours": [],
+ "other_fees": [],
+ "permits": [],
+ "season": [],
+ "status": "ok",
+ "t": "State Park"
+}
+```
+
+## US-3802 Clyde E Buckley Sanctuary
+```json
+{
+ "attraction_fees": [],
+ "attraction_hours": [],
+ "campground_hours": [],
+ "checked": "2026-10-29",
+ "fees": [
+  {
+   "line": "Trail Hours: Tuesday – Sunday, 9:00 AM – 7:00 PM (seasonal updates apply) Entry Fee: $8 per car (payable onsite via cash, check, or Venmo – see QR code in the parking area).",
+   "read": "2026-10-29",
+   "url": "https://bggreensource.org/buckley/"
+  }
+ ],
+ "hours": [],
+ "hours_note": "the agency pages we read print no hours",
+ "hunting_hours": [
+  {
+   "line": "Trail Hours: Tuesday – Sunday, 9:00 AM – 7:00 PM (seasonal updates apply) Entry Fee: $8 per car (payable onsite via cash, check, or Venmo – see QR code in the parking area).",
+   "read": "2026-10-29",
+   "url": "https://bggreensource.org/buckley/"
+  }
+ ],
+ "key_on_page": "https://bggreensource.org/buckley/",
+ "n": "Clyde E Buckley Sanctuary",
+ "office_hours": [],
+ "other_fees": [],
+ "permits": [],
+ "season": [],
+ "status": "ok",
+ "t": "Sanctuary"
+}
+```
+
+## US-3816 John A. Kleber Wildlife Management Area
+```json
+{
+ "attraction_fees": [],
+ "attraction_hours": [],
+ "campground_hours": [],
+ "checked": "2026-10-29",
+ "fees": [],
+ "hours": [
+  {
+   "line": "no shotshells or pistols allowed) and Pistol Pit open Tuesday-Saturday 9:00 AM-sunset & Sundays noon-sunset.",
+   "read": "2026-10-29",
+   "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=14"
+  }
+ ],
+ "hunting_hours": [],
+ "n": "John A. Kleber Wildlife Management Area",
+ "office_hours": [],
+ "other_fees": [],
+ "permits": [
+  {
+   "line": "An annual or one-day shooting range permit is now required to use firearms and archery equipment on any department managed, l​eased or affiliated shooting range.",
+   "read": "2026-10-29",
+   "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=14"
+  }
+ ],
+ "season": [],
+ "status": "ok",
+ "t": "WMA"
 }
 ```
