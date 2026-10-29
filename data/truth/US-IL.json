@@ -2,21 +2,21 @@
  "about": "Park truth checker: official acreage vs our outline, handover hints, second-witness score. Review lists only: nothing here changes a key or a card.",
  "area": "US-IL",
  "counts": {
-  "agree": 74,
+  "agree": 91,
   "handover_hints": 15,
   "no_page": 1,
   "no_size": 40,
-  "off": 43,
+  "off": 31,
   "ours_unknown": 3,
   "parks": 219,
   "retired": 0,
-  "unsure": 43,
-  "weak": 8,
+  "unsure": 38,
+  "weak": 7,
   "with_outline": 204
  },
  "parks": {
   "US-0272": {
-   "cause": "agency bigger: our outline may miss a tract",
+   "cause": "whole park compared (POTA lists it in 2 states: {'US-IA': 11861, 'US-IL': 1400})",
    "checked": "2026-10-29",
    "handover": [
     {
@@ -37,21 +37,21 @@
     }
    ],
    "n": "Port Louisa National Wildlife Refuge",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-IA': 16275, 'US-IL': 1400})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-IA': 11861, 'US-IL': 1400})",
    "official": {
-    "acres": 24149.0,
-    "as": "24,149 acre",
+    "acres": 10000.0,
+    "as": "10,000 acres",
     "clean": false,
-    "line": "Activities Trails Rules & Policies Get Involved News Species Map https://www.facebook.com/PortLouisaNWR/ The 24,149 acre Port Louisa National Wildlife Refuge was established for the protection of migratory birds and other wildlife",
+    "line": "in Tama, Benton and Iowa counties. Within the project area, the U.S. Fish and Wildlife Service owns more than 10,000 acres, which are part of Port Louisa National Wildlife Refuge. These lands are managed by the Iowa Department of Na",
     "read": "2026-10-29",
-    "sent": "The 24,149 acre Port Louisa National Wildlife Refuge was established for the protection of migratory birds and other wildlife.",
-    "url": "https://www.fws.gov/refuge/port-louisa",
+    "sent": "Fish and Wildlife Service owns more than 10,000 acres, which are part of Port Louisa National Wildlife Refuge.",
+    "url": "https://www.fws.gov/refuge/port-louisa/about-us",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 17675,
+    "acres": 13261,
     "acres_by_state": {
-     "US-IA": 16275,
+     "US-IA": 11861,
      "US-IL": 1400
     },
     "manager": "",
@@ -109,13 +109,13 @@
      "why": "FWS refuge about page"
     }
    ],
-   "pct": 27,
+   "pct": 33,
    "same_agency": false,
-   "score": 4,
+   "score": 5,
    "score_parts": {
     "name": 2,
     "pin": 0,
-    "size": 0,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -193,33 +193,41 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 14,
-   "verdict": "off"
+   "ver": 15,
+   "verdict": "unsure"
   },
   "US-0281": {
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 992 acre, no total words near it)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Chautauqua National Wildlife Refuge",
    "official": {
-    "acres": 13000.0,
-    "as": "13,000 acres",
+    "acres": 992.0,
+    "as": "992 acre",
     "clean": false,
-    "line": "west central Illinois, and consists of three refuges: Emiquon, Chautauqua and Meredosia. This complex totals 13,000 acres of backwater lakes, bottomland forests, floodplain wetlands and upland habitats and provides habitat for 60%",
+    "line": "Illinois. The Cameron-Billsbach Division is divided into two units on either side of the Illinois River. The 992-acre Cameron Unit is located on the west side of the Illinois River and is composed of bottomland forest, old fiel",
     "read": "2026-10-29",
-    "sent": "This complex totals 13,000 acres of backwater lakes, bottomland forests, floodplain wetlands and upland habitats and provides habitat for 60% to 70% of the waterfowl that migrate along the Illinois River.",
+    "sent": "The 992-acre Cameron Unit is located on the west side of the Illinois River and is composed of bottomland forest, old fields and backwater habitat located at Weis and Meridian lakes.",
     "url": "https://www.fws.gov/refuge/chautauqua/about-us",
-    "why": "part (a lake, a purchase, a campground…)"
+    "why": "no total words near it"
    },
    "ours": {
-    "acres": 13075,
+    "acres": 6625,
     "dissolved": {
      "after": 13075,
      "before": 19699,
      "copies": 1,
+     "families": {
+      "padus": 6625,
+      "sgila": 6450
+     },
+     "family_fold": 6450,
+     "family_used": "padus",
      "parts": 0,
      "records": 3,
      "tracts": 2
     },
+    "family_fold": "layers {'padus': 6625, 'sgila': 6450}: one land in 2 layers, the padus copy used (6,450 ac of copies not added)",
     "manager": "",
     "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 19699 -> 13075 acres",
     "pieces": [
@@ -227,12 +235,6 @@
       4649,
       "Chautauqua National Wildlife Refuge",
       6625,
-      "name"
-     ],
-     [
-      "sgila1217",
-      "Chautauqua National Wildlife Refuge",
-      6450,
       "name"
      ]
     ],
@@ -269,13 +271,13 @@
      "why": "FWS refuge about page"
     }
    ],
-   "pct": 1,
+   "pct": 568,
    "same_agency": false,
-   "score": 8,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -353,34 +355,40 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 14,
-   "verdict": "agree"
+   "ver": 15,
+   "verdict": "unsure"
   },
   "US-0282": {
-   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Crab Orchard National Wildlife Refuge",
    "official": {
-    "acres": 4050.0,
-    "as": "4,050 acre",
+    "acres": 44000.0,
+    "as": "44,000 acres",
     "clean": false,
-    "line": "anaged for four primary purposes: wildlife conservation, agriculture, industry, and recreation. It includes a 4,050-acre congressionally designated wilderness area and has seen annual visitation exceeding one million people since",
+    "line": "Outdoors Pass About Crab Orchard National Wildlife Refuge was established on August 5, 1947, and consists of 44,000 acres featuring habitats such as upland forests, wetlands, and lakes. The refuge is managed for four primary purpos",
     "read": "2026-10-29",
-    "sent": "It includes a 4,050-acre congressionally designated wilderness area and has seen annual visitation exceeding one million people since 1956.",
+    "sent": "Crab Orchard National Wildlife Refuge was established on August 5, 1947, and consists of 44,000 acres featuring habitats such as upland forests, wetlands, and lakes.",
     "url": "https://www.fws.gov/refuge/crab-orchard",
-    "why": "total-looking"
+    "why": "history"
    },
    "ours": {
-    "acres": 89802,
+    "acres": 45487,
     "dissolved": {
      "after": 89802,
      "before": 135262,
      "copies": 1,
+     "families": {
+      "padus": 45487,
+      "sgila": 44315
+     },
+     "family_fold": 44315,
+     "family_used": "padus",
      "parts": 0,
      "records": 3,
      "tracts": 2
     },
+    "family_fold": "layers {'padus': 45487, 'sgila': 44315}: one land in 2 layers, the padus copy used (44,315 ac of copies not added)",
     "manager": "",
     "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 135262 -> 89802 acres",
     "pieces": [
@@ -388,12 +396,6 @@
       4686,
       "Crab Orchard National Wildlife Refuge",
       45487,
-      "name"
-     ],
-     [
-      "sgila1216",
-      "Crab Orchard National Wildlife Refuge",
-      44315,
       "name"
      ]
     ],
@@ -420,13 +422,13 @@
      "why": "FWS refuge about page"
     }
    ],
-   "pct": 2117,
+   "pct": 3,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -455,7 +457,7 @@
      "line": "nds within the refuge have been divided into an open area and a restricted area. The restricted area contains 21,000 acres and is only open to public hunting by special permit. The open area contains 23,000 acres where public huntin",
      "total_like": false,
      "url": "https://www.fws.gov/locations/crab-orchard-national-wildlife-refuge/rules-and-policies",
-     "why": "a page of another unit; the sentence does not name this park"
+     "why": "part (a lake, a purchase, a campground…)"
     },
     {
      "acres": 23000.0,
@@ -486,8 +488,8 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 14,
-   "verdict": "off"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-0283": {
    "checked": "2026-10-29",
@@ -576,7 +578,7 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-0284": {
@@ -687,34 +689,40 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-0285": {
-   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Meredosia National Wildlife Refuge",
    "official": {
-    "acres": 2350.0,
-    "as": "2,350 acres",
-    "clean": true,
-    "line": "th varying habitat types. Management Units The Island Meredosia Island Unit is the largest management unit at 2,350 acres in size and is a mosaic of habitat types with seasonal wetlands, bottomland forest and scrub-shrub habitat. T",
+    "acres": 3645.0,
+    "as": "3,645 acres",
+    "clean": false,
+    "line": "ibrary Species Map https://www.facebook.com/IllinoisRiverNWFR/ About Us Meredosia National Wildlife Refuge is 3,645 acres and is located in an area that was historically known for its ability to sustain fish and wildlife along the",
     "read": "2026-10-29",
-    "sent": "Meredosia Island Unit is the largest management unit at 2,350 acres in size and is a mosaic of habitat types with seasonal wetlands, bottomland forest and scrub-shrub habitat.",
+    "sent": "Meredosia National Wildlife Refuge is 3,645 acres and is located in an area that was historically known for its ability to sustain fish and wildlife along the east side of the Illinois River in Morgan and Cass counties, near the town of Meredosia, Illinois.",
     "url": "https://www.fws.gov/refuge/meredosia/about-us",
-    "why": "clean total"
+    "why": "total-looking"
    },
    "ours": {
-    "acres": 7839,
+    "acres": 4141,
     "dissolved": {
      "after": 7839,
      "before": 11537,
      "copies": 1,
+     "families": {
+      "padus": 3698,
+      "sgila": 4141
+     },
+     "family_fold": 3698,
+     "family_used": "sgila",
      "parts": 0,
      "records": 3,
      "tracts": 2
     },
+    "family_fold": "layers {'sgila': 4141, 'padus': 3698}: one land in 2 layers, the sgila copy used (3,698 ac of copies not added)",
     "manager": "",
     "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 11537 -> 7839 acres",
     "pieces": [
@@ -722,12 +730,6 @@
       "sgila1487",
       "Meredosia National Wildlife Refuge",
       4141,
-      "name"
-     ],
-     [
-      4109,
-      "Meredosia National Wildlife Refuge",
-      3698,
       "name"
      ]
     ],
@@ -759,13 +761,13 @@
      "why": "FWS refuge about page"
     }
    ],
-   "pct": 234,
+   "pct": 14,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -843,8 +845,8 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 14,
-   "verdict": "off"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-0286": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
@@ -862,15 +864,22 @@
     "why": "total-looking"
    },
    "ours": {
-    "acres": 13812,
+    "acres": 7632,
     "dissolved": {
      "after": 13812,
      "before": 19990,
      "copies": 1,
+     "families": {
+      "padus": 6180,
+      "sgila": 7632
+     },
+     "family_fold": 6180,
+     "family_used": "sgila",
      "parts": 0,
      "records": 3,
      "tracts": 2
     },
+    "family_fold": "layers {'sgila': 7632, 'padus': 6180}: one land in 2 layers, the sgila copy used (6,180 ac of copies not added)",
     "manager": "",
     "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 19990 -> 13812 acres",
     "pieces": [
@@ -878,12 +887,6 @@
       "sgila1221",
       "Middle Mississippi River National Wildlife Refuge",
       7632,
-      "name"
-     ],
-     [
-      5071,
-      "Middle Mississippi River National Wildlife Refuge",
-      6180,
       "name"
      ]
     ],
@@ -915,7 +918,7 @@
      "why": "FWS refuge about page"
     }
    ],
-   "pct": 423,
+   "pct": 189,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -999,7 +1002,7 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-0287": {
@@ -1027,15 +1030,22 @@
     "why": "total-looking"
    },
    "ours": {
-    "acres": 6817,
+    "acres": 5946,
     "dissolved": {
      "after": 6817,
      "before": 7700,
      "copies": 1,
+     "families": {
+      "padus": 871,
+      "sgila": 5946
+     },
+     "family_fold": 871,
+     "family_used": "sgila",
      "parts": 0,
      "records": 5,
      "tracts": 4
     },
+    "family_fold": "layers {'sgila': 5946, 'padus': 871}: one land in 2 layers, the sgila copy used (871 ac of copies not added)",
     "manager": "",
     "note": "5 joined records = 4 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 7700 -> 6817 acres",
     "pieces": [
@@ -1056,12 +1066,6 @@
       "Two Rivers National Wildlife Refuge",
       889,
       "name"
-     ],
-     [
-      5378,
-      "Two Rivers National Wildlife Refuge",
-      871,
-      "name"
      ]
     ],
     "pin": "just outside",
@@ -1076,7 +1080,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 26,
+   "pct": 36,
    "same_agency": false,
    "score": 5,
    "score_parts": {
@@ -1097,7 +1101,7 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-0376": {
@@ -1244,7 +1248,7 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-0523": {
@@ -1263,15 +1267,22 @@
     "why": "total-looking"
    },
    "ours": {
-    "acres": 219,
+    "acres": 143,
     "dissolved": {
      "after": 219,
      "before": 362,
      "copies": 1,
+     "families": {
+      "padus": 143,
+      "sgilb": 76
+     },
+     "family_fold": 76,
+     "family_used": "padus",
      "parts": 0,
      "records": 3,
      "tracts": 2
     },
+    "family_fold": "layers {'padus': 143, 'sgilb': 76}: one land in 2 layers, the padus copy used (76 ac of copies not added)",
     "manager": "",
     "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 362 -> 219 acres",
     "pieces": [
@@ -1280,12 +1291,6 @@
       "Rock Cave State Natural Area",
       143,
       "name"
-     ],
-     [
-      "sgilb381",
-      "Rock Cave Nature Preserve Buffer",
-      76,
-      "words"
      ]
     ],
     "pin": "just outside",
@@ -1306,7 +1311,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 284,
+   "pct": 151,
    "same_agency": false,
    "score": 5,
    "score_parts": {
@@ -1327,7 +1332,7 @@
     }
    ],
    "t": "State Nature Preserve",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-0526": {
@@ -1382,7 +1387,7 @@
    },
    "sizes": [],
    "t": "State Nature Preserve",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-0571": {
@@ -1428,7 +1433,7 @@
    },
    "sizes": [],
    "t": "State Historic Site",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-0841": {
@@ -1485,37 +1490,24 @@
    },
    "sizes": [],
    "t": "National Historic Site",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-0978": {
+   "cause": "no total-looking sentence: numbers found were parts or other units",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Apple River Canyon State Park",
-   "official": {
-    "acres": 4160.0,
-    "as": "4,160 acre",
-    "clean": false,
-    "line": "by sandbars formed by waves at the mouth of the river, creating a sluggish, marshy habitat.&lt;/p>\\n&lt;p>The 4,160-acre park, consisting of two separate areas (North Unit and South Unit), offers ample opportunities for swimming,",
-    "read": "2026-10-29",
-    "sent": "idges are crowned by black oak forests with an open, savanna-like appearance.&nbsp;For much of the year, a stream known as Dead River is&nbsp;blocked by sandbars formed by waves at the mouth of the river, creating a sluggish, marshy habitat.&lt;/p>\\n&lt;p>The 4,160-acre park, consisting of two separ",
-    "url": "https://dnr.illinois.gov/parks/park.adelinejaygeo-karisillinoisbeach.html",
-    "why": "part (a lake, a purchase, a campground…)"
-   },
+   "official": null,
    "ours": {
-    "acres": 3961,
+    "acres": 2030,
+    "family_fold": "layers {'sgila': 2030, 'padus': 1931}: one land in 2 layers, the sgila copy used (1,931 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
       "sgila2162",
       "Apple River Canyon State Park",
       2030,
-      "name"
-     ],
-     [
-      70840,
-      "Apple River Canyon State Park",
-      1931,
       "name"
      ]
     ],
@@ -1547,13 +1539,12 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 5,
-   "same_agency": false,
-   "score": 7,
+   "pct": null,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 2,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -1586,8 +1577,8 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
-   "verdict": "agree"
+   "ver": 15,
+   "verdict": "unsure"
   },
   "US-0979": {
    "checked": "2026-10-29",
@@ -1685,7 +1676,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-0980": {
@@ -1695,7 +1686,7 @@
    "ours": null,
    "score": null,
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-0981": {
@@ -1785,11 +1776,10 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-0982": {
-   "cause": "no total-looking sentence: numbers found were parts or other units",
    "checked": "2026-10-29",
    "handover": [
     {
@@ -1802,21 +1792,25 @@
     }
    ],
    "n": "Buffalo Rock State Park",
-   "official": null,
+   "official": {
+    "acres": 298.0,
+    "as": "298 acre",
+    "clean": false,
+    "line": "nt, sweeping view of the Illinois River. Located approximately 3 miles west of Ottawa in LaSalle County, this 298-acre park has long been a favorite picnic area, as well as a nature lovers’ delight. The area of Buffalo Rock was",
+    "read": "2026-10-29",
+    "sent": "Located approximately 3 miles west of Ottawa in LaSalle County, this 298-acre park has long been a favorite picnic area, as well as a nature lovers’ delight.",
+    "url": "https://dnr.illinois.gov/parks/park.buffalorock.html",
+    "why": "part (a lake, a purchase, a campground…)"
+   },
    "ours": {
-    "acres": 554,
+    "acres": 295,
+    "family_fold": "layers {'padus': 295, 'sgila': 259}: one land in 2 layers, the padus copy used (259 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
       71086,
       "Buffalo Rock State Park",
       295,
-      "name"
-     ],
-     [
-      "sgila1435",
-      "Buffalo Rock State Park",
-      259,
       "name"
      ]
     ],
@@ -1843,12 +1837,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 1,
+   "same_agency": false,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -1872,8 +1867,8 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
-   "verdict": "unsure"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-0983": {
    "checked": "2026-10-29",
@@ -1918,7 +1913,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-0984": {
@@ -2040,7 +2035,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-0985": {
@@ -2162,7 +2157,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-0986": {
@@ -2172,19 +2167,14 @@
    "n": "Chain-O-Lakes State Park",
    "official": null,
    "ours": {
-    "acres": 10516,
+    "acres": 5392,
+    "family_fold": "layers {'sgila': 5392, 'padus': 5124}: one land in 2 layers, the sgila copy used (5,124 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
       "sgila1565",
       "Chain O' Lakes State Park",
       5392,
-      "name"
-     ],
-     [
-      158046,
-      "Chain O'Lakes State Park",
-      5124,
       "name"
      ]
     ],
@@ -2299,7 +2289,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-0987": {
@@ -2371,7 +2361,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-0988": {
@@ -2461,7 +2451,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-0989": {
@@ -2524,7 +2514,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-0990": {
@@ -2534,11 +2524,11 @@
    "ours": null,
    "score": null,
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-0991": {
-   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+   "cause": "agency bigger: our outline may miss a tract",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Eldon Hazlet State Park",
@@ -2550,18 +2540,25 @@
     "read": "2026-10-29",
     "sent": "Eldon Hazlet State Park is a 3,000-acre site on the",
     "url": "https://dnr.illinois.gov/content/dam/soi/en/web/dnr/publications/documents/00000099.pdf",
-    "why": "clean total; the agency's pages disagree: another of its pages says 4,160 acre (that one matches our outline)"
+    "why": "clean total"
    },
    "ours": {
-    "acres": 4165,
+    "acres": 2454,
     "dissolved": {
      "after": 4165,
      "before": 4272,
      "copies": 1,
+     "families": {
+      "padus": 2454,
+      "sgila": 1711
+     },
+     "family_fold": 1711,
+     "family_used": "padus",
      "parts": 0,
      "records": 4,
      "tracts": 3
     },
+    "family_fold": "layers {'padus': 2454, 'sgila': 1711}: one land in 2 layers, the padus copy used (1,711 ac of copies not added)",
     "manager": "",
     "note": "4 joined records = 3 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 4272 -> 4165 acres",
     "pieces": [
@@ -2569,12 +2566,6 @@
       70903,
       "Eldon Hazlet",
       2347,
-      "name"
-     ],
-     [
-      "sgila1444",
-      "Eldon Hazlet State Recreation Area",
-      1711,
       "name"
      ],
      [
@@ -2612,7 +2603,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 39,
+   "pct": 18,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -2696,7 +2687,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-0992": {
@@ -2781,7 +2772,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-0993": {
@@ -2880,7 +2871,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-0994": {
@@ -2980,29 +2971,32 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-0995": {
-   "cause": "no total-looking sentence: numbers found were parts or other units",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Gebhard Woods State Park",
-   "official": null,
+   "official": {
+    "acres": 30.0,
+    "as": "30 acre",
+    "clean": false,
+    "line": "for more information. Hikers, campers, picnickers and canoeists frequent Gebhard Woods State Park, making the 30-acre site one of Illinois’ most popular state parks. Located in Morris, this picturesque park is bordered on the s",
+    "read": "2026-10-29",
+    "sent": "Hikers, campers, picnickers and canoeists frequent Gebhard Woods State Park, making the 30-acre site one of Illinois’ most popular state parks.",
+    "url": "https://dnr.illinois.gov/parks/park.gebhardwoods.html",
+    "why": "part (a lake, a purchase, a campground…)"
+   },
    "ours": {
-    "acres": 64,
+    "acres": 33,
+    "family_fold": "layers {'sgila': 33, 'padus': 31}: one land in 2 layers, the sgila copy used (31 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
       "sgila1040",
       "Gebhard Woods State Park",
       33,
-      "name"
-     ],
-     [
-      157616,
-      "Gebhard Woods State Park",
-      31,
       "name"
      ]
     ],
@@ -3029,12 +3023,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 10,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -3058,29 +3053,32 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
-   "verdict": "unsure"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-0996": {
-   "cause": "no total-looking sentence: numbers found were parts or other units",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Giant City State Park",
-   "official": null,
+   "official": {
+    "acres": 4160.0,
+    "as": "4,160 acre",
+    "clean": false,
+    "line": "by sandbars formed by waves at the mouth of the river, creating a sluggish, marshy habitat.&lt;/p>\\n&lt;p>The 4,160-acre park, consisting of two separate areas (North Unit and South Unit), offers ample opportunities for swimming,",
+    "read": "2026-10-29",
+    "sent": "idges are crowned by black oak forests with an open, savanna-like appearance.&nbsp;For much of the year, a stream known as Dead River is&nbsp;blocked by sandbars formed by waves at the mouth of the river, creating a sluggish, marshy habitat.&lt;/p>\\n&lt;p>The 4,160-acre park, consisting of two separ",
+    "url": "https://dnr.illinois.gov/parks/park.giantcity.html",
+    "why": "part (a lake, a purchase, a campground…)"
+   },
    "ours": {
-    "acres": 6362,
+    "acres": 4228,
+    "family_fold": "layers {'sgila': 4228, 'padus': 2134}: one land in 2 layers, the sgila copy used (2,134 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
       "sgila1189",
       "Giant City State Park",
       4228,
-      "name"
-     ],
-     [
-      70809,
-      "Giant City State Park",
-      2134,
       "name"
      ]
     ],
@@ -3112,12 +3110,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 2,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -3132,8 +3131,8 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
-   "verdict": "unsure"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-0997": {
    "checked": "2026-10-29",
@@ -3204,7 +3203,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-0998": {
@@ -3285,29 +3284,32 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-0999": {
-   "cause": "no total-looking sentence: numbers found were parts or other units",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Illini State Park",
-   "official": null,
+   "official": {
+    "acres": 510.0,
+    "as": "510 acre",
+    "clean": false,
+    "line": "nse of history not found in many other parks. Named for the native Americans who once inhabited the area, the 510-acre Illini State Park is located south of the Illinois River between Marseilles and U.S. Route 6. In the mid-1920",
+    "read": "2026-10-29",
+    "sent": "Named for the native Americans who once inhabited the area, the 510-acre Illini State Park is located south of the Illinois River between Marseilles and U.S.",
+    "url": "https://dnr.illinois.gov/parks/park.illini.html",
+    "why": "history"
+   },
    "ours": {
-    "acres": 631,
+    "acres": 472,
+    "family_fold": "layers {'sgila': 472, 'padus': 159}: one land in 2 layers, the sgila copy used (159 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
       "sgila1432",
       "Illini State Park",
       472,
-      "name"
-     ],
-     [
-      158081,
-      "Illini State Park",
-      159,
       "name"
      ]
     ],
@@ -3339,12 +3341,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 7,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -3368,33 +3371,41 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
-   "verdict": "unsure"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-1000": {
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 1 million acres, a statewide / agency-wide total (over a million acres) on a park that is not a big federal unit)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Illinois Beach State Park",
    "official": {
-    "acres": 4160.0,
-    "as": "4,160 acre",
+    "acres": 1000000.0,
+    "as": "1 million acres",
     "clean": false,
-    "line": "by sandbars formed by waves at the mouth of the river, creating a sluggish, marshy habitat.&lt;/p>\\n&lt;p>The 4,160-acre park, consisting of two separate areas (North Unit and South Unit), offers ample opportunities for swimming,",
+    "line": "ring designs of levees and levee modifications under the IDNR's regulatory oversight protecting approximately 1 million acres of agricultural land valued at $5.6 billion and $543 million in annual commodities. Regulates construction in",
     "read": "2026-10-29",
-    "sent": "idges are crowned by black oak forests with an open, savanna-like appearance.&nbsp;For much of the year, a stream known as Dead River is&nbsp;blocked by sandbars formed by waves at the mouth of the river, creating a sluggish, marshy habitat.&lt;/p>\\n&lt;p>The 4,160-acre park, consisting of two separ",
-    "url": "https://dnr.illinois.gov/parks/park.adelinejaygeo-karisillinoisbeach.html",
-    "why": "part (a lake, a purchase, a campground…)"
+    "sent": "Protects 4.4 million acres of land by ensuring the sufficiency of engineering designs of levees and levee modifications under the IDNR's regulatory oversight protecting approximately 1 million acres of agricultural land valued at $5.6 billion and $543 million in annual commodities.",
+    "url": "https://dnr.illinois.gov/about/didyouknow.html",
+    "why": "a statewide / agency-wide total (over a million acres) on a park that is not a big federal unit"
    },
    "ours": {
-    "acres": 4141,
+    "acres": 3186,
     "dissolved": {
      "after": 4141,
      "before": 7340,
      "copies": 0,
+     "families": {
+      "padus": 3186,
+      "sgilb": 955
+     },
+     "family_fold": 955,
+     "family_used": "padus",
      "parts": 2,
      "records": 4,
      "tracts": 2
     },
+    "family_fold": "layers {'padus': 3186, 'sgilb': 955}: one land in 2 layers, the padus copy used (955 ac of copies not added)",
     "manager": "",
     "note": "4 joined records = 2 tracts: 0 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 7340 -> 4141 acres",
     "pieces": [
@@ -3403,12 +3414,6 @@
       "Adeline Jay Geo-Karis Illinois Beach State Park",
       3186,
       "reviewed"
-     ],
-     [
-      "sgilb180",
-      "Illinois Beach State Park Nature Preserve",
-      955,
-      "name"
      ]
     ],
     "pin": "inside",
@@ -3449,13 +3454,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 0,
+   "pct": 100,
    "same_agency": false,
-   "score": 8,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -3482,9 +3487,9 @@
      "as": "4.4 million acres",
      "clean": false,
      "line": "ville, Rend and Kinkaid reservoirs, supporting more than $10 billion in downstate economic activity. Protects 4.4 million acres of land by ensuring the sufficiency of engineering designs of levees and levee modifications under the IDNR's",
-     "total_like": true,
+     "total_like": false,
      "url": "https://dnr.illinois.gov/about/didyouknow.html",
-     "why": "total-looking"
+     "why": "a statewide / agency-wide total (over a million acres) on a park that is not a big federal unit"
     },
     {
      "acres": 1000000.0,
@@ -3493,7 +3498,7 @@
      "line": "ring designs of levees and levee modifications under the IDNR's regulatory oversight protecting approximately 1 million acres of agricultural land valued at $5.6 billion and $543 million in annual commodities. Regulates construction in",
      "total_like": false,
      "url": "https://dnr.illinois.gov/about/didyouknow.html",
-     "why": "no total words near it"
+     "why": "a statewide / agency-wide total (over a million acres) on a park that is not a big federal unit"
     },
     {
      "acres": 4160.0,
@@ -3506,8 +3511,8 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
-   "verdict": "agree"
+   "ver": 15,
+   "verdict": "unsure"
   },
   "US-1001": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 3,432 acre, no total words near it)",
@@ -3597,7 +3602,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-1002": {
@@ -3682,7 +3687,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-1003": {
@@ -3767,7 +3772,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-1004": {
@@ -3864,7 +3869,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-1005": {
@@ -3963,7 +3968,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-1006": {
@@ -4048,7 +4053,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-1007": {
@@ -4133,7 +4138,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-1008": {
@@ -4236,38 +4241,32 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-1009": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Matthiessen State Park",
    "official": {
-    "acres": 1938.0,
-    "as": "1,938 acres",
+    "acres": 4160.0,
+    "as": "4,160 acre",
     "clean": false,
-    "line": "a public park. In 1943, the state renamed the park in honor of Matthiessen. Since then, the park has grown to 1,938 acres and includes much of the significant natural land along the main dell, some former prairie land, and some for",
+    "line": "by sandbars formed by waves at the mouth of the river, creating a sluggish, marshy habitat.&lt;/p>\\n&lt;p>The 4,160-acre park, consisting of two separate areas (North Unit and South Unit), offers ample opportunities for swimming,",
     "read": "2026-10-29",
-    "sent": "Since then, the park has grown to 1,938 acres and includes much of the significant natural land along the main dell, some former prairie land, and some forest land south of the original park.",
-    "url": "https://dnr.illinois.gov/parks/about/park.matthiessen.html",
-    "why": "total-looking"
+    "sent": "idges are crowned by black oak forests with an open, savanna-like appearance.&nbsp;For much of the year, a stream known as Dead River is&nbsp;blocked by sandbars formed by waves at the mouth of the river, creating a sluggish, marshy habitat.&lt;/p>\\n&lt;p>The 4,160-acre park, consisting of two separ",
+    "url": "https://dnr.illinois.gov/parks/park.matthiessen.html",
+    "why": "part (a lake, a purchase, a campground…)"
    },
    "ours": {
-    "acres": 6241,
+    "acres": 4326,
+    "family_fold": "layers {'sgila': 4326, 'padus': 1915}: one land in 2 layers, the sgila copy used (1,915 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
       "sgila1434",
       "Matthiessen State Park",
       4326,
-      "name"
-     ],
-     [
-      70898,
-      "Matthiessen State Park",
-      1915,
       "name"
      ]
     ],
@@ -4299,13 +4298,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 222,
+   "pct": 4,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -4338,8 +4337,8 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
-   "verdict": "off"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-10090": {
    "cause": "agency bigger: our outline may miss a tract",
@@ -4420,25 +4419,40 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-10091": {
-   "cause": "no total-looking sentence: numbers found were parts or other units",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Powerton Lake State Fish and Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 1426.0,
+    "as": "1,426 acre",
+    "clean": false,
+    "line": "e Content Page Content The actual link for this page is - Powerton Lake Approximately 60% of Powerton Lake, a 1,426 acre cooling reservoir, is open to waterfowl hunting. The remaining is a waterfowl rest area. Active habitat manag",
+    "read": "2026-10-29",
+    "sent": "Approximately 60% of Powerton Lake, a 1,426 acre cooling reservoir, is open to waterfowl hunting.",
+    "url": "https://dnr.illinois.gov/parks/park.powerton-lake.html",
+    "why": "part (a lake, a purchase, a campground…)"
+   },
    "ours": {
-    "acres": 3163,
+    "acres": 1618,
     "dissolved": {
      "after": 3163,
      "before": 3237,
      "copies": 1,
+     "families": {
+      "padus": 1545,
+      "sgila": 1618
+     },
+     "family_fold": 1545,
+     "family_used": "sgila",
      "parts": 0,
      "records": 4,
      "tracts": 3
     },
+    "family_fold": "layers {'sgila': 1618, 'padus': 1545}: one land in 2 layers, the sgila copy used (1,545 ac of copies not added)",
     "manager": "",
     "note": "4 joined records = 3 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 3237 -> 3163 acres",
     "pieces": [
@@ -4446,18 +4460,6 @@
       "sgila1010",
       "Powerton Lake State Fish and Wildlife Area",
       1618,
-      "name"
-     ],
-     [
-      70876,
-      "Powerton lake State Fish and Wildlife Area",
-      1471,
-      "name"
-     ],
-     [
-      71079,
-      "Powerton Lake State Fish and Wildlife Area",
-      74,
       "name"
      ]
     ],
@@ -4479,12 +4481,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 13,
+   "same_agency": false,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -4508,8 +4511,8 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
-   "verdict": "unsure"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-10093": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
@@ -4585,7 +4588,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-10094": {
@@ -4604,7 +4607,8 @@
     "why": "total-looking"
    },
    "ours": {
-    "acres": 3159,
+    "acres": 2123,
+    "family_fold": "layers {'padus': 2123, 'sgila': 1036}: one land in 2 layers, the padus copy used (1,036 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
@@ -4612,12 +4616,6 @@
       "Spring Lake",
       2123,
       "name (designation code ignored)"
-     ],
-     [
-      "sgila3317",
-      "Spring Lake State Fish and Wildlife Area",
-      1036,
-      "name"
      ]
     ],
     "pin": "just outside",
@@ -4638,7 +4636,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 400,
+   "pct": 236,
    "same_agency": false,
    "score": 5,
    "score_parts": {
@@ -4677,7 +4675,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-10095": {
@@ -4696,7 +4694,8 @@
     "why": "total-looking"
    },
    "ours": {
-    "acres": 9549,
+    "acres": 8814,
+    "family_fold": "layers {'sgila': 8814, 'padus': 735}: one land in 2 layers, the sgila copy used (735 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
@@ -4709,12 +4708,6 @@
       "sgila994",
       "Woodford State Fish and Wildlife Area",
       1131,
-      "name"
-     ],
-     [
-      71084,
-      "Woodford State Fish and Wildlife Area",
-      735,
       "name"
      ]
     ],
@@ -4736,7 +4729,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 229,
+   "pct": 204,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -4784,7 +4777,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-1010": {
@@ -4874,7 +4867,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-10100": {
@@ -4970,11 +4963,11 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-1012": {
-   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+   "cause": "agency bigger: our outline may miss a tract",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Moraine Hills State Park",
@@ -4989,19 +4982,14 @@
     "why": "total-looking"
    },
    "ours": {
-    "acres": 3484,
+    "acres": 1865,
+    "family_fold": "layers {'sgila': 1865, 'padus': 1619}: one land in 2 layers, the sgila copy used (1,619 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
       "sgila1051",
       "Moraine Hills State Park",
       1865,
-      "name"
-     ],
-     [
-      158180,
-      "Morraine Hills State Park",
-      1619,
       "name"
      ]
     ],
@@ -5023,7 +5011,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 58,
+   "pct": 15,
    "same_agency": false,
    "score": 5,
    "score_parts": {
@@ -5071,7 +5059,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-1013": {
@@ -5166,7 +5154,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-1014": {
@@ -5274,7 +5262,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-1015": {
@@ -5343,7 +5331,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-1016": {
@@ -5415,7 +5403,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-1017": {
@@ -5523,7 +5511,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-1018": {
@@ -5631,29 +5619,32 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-1019": {
-   "cause": "no total-looking sentence: numbers found were parts or other units",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Rock Cut State Park",
-   "official": null,
+   "official": {
+    "acres": 3254.0,
+    "as": "3,254 acres",
+    "clean": false,
+    "line": "an area of rolling plains, interesting history, and a wide variety of recreational opportunities. Rock Cut's 3,254 acres include two lakes: Pierce Lake, with 162 acres, and Olson Lake, with 50 acres, offering a retreat for people",
+    "read": "2026-10-29",
+    "sent": "Rock Cut's 3,254 acres include two lakes: Pierce Lake, with 162 acres, and Olson Lake, with 50 acres, offering a retreat for people wanting to fish, ice fish, or ice skate.",
+    "url": "https://dnr.illinois.gov/parks/park.rockcut.html",
+    "why": "part (a lake, a purchase, a campground…)"
+   },
    "ours": {
-    "acres": 6083,
+    "acres": 3080,
+    "family_fold": "layers {'padus': 3080, 'sgila': 3003}: one land in 2 layers, the padus copy used (3,003 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
       158079,
       "Rock Cut State Park",
       3080,
-      "name"
-     ],
-     [
-      "sgila974",
-      "Rock Cut State Park",
-      3003,
       "name"
      ]
     ],
@@ -5680,12 +5671,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 5,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -5727,8 +5719,8 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
-   "verdict": "unsure"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-1020": {
    "checked": "2026-10-29",
@@ -5876,7 +5868,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-1021": {
@@ -5952,7 +5944,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-1022": {
@@ -6013,7 +6005,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-1023": {
@@ -6032,19 +6024,14 @@
    "n": "Siloam Springs State Park",
    "official": null,
    "ours": {
-    "acres": 11887,
+    "acres": 6033,
+    "family_fold": "layers {'sgila': 6033, 'padus': 5854}: one land in 2 layers, the sgila copy used (5,854 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
       "sgila1569",
       "Siloam Springs State Park",
       6033,
-      "name"
-     ],
-     [
-      70901,
-      "Siloam Springs State Park",
-      5854,
       "name"
      ]
     ],
@@ -6109,7 +6096,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-1024": {
@@ -6226,7 +6213,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-10241": {
@@ -6272,7 +6259,7 @@
    },
    "sizes": [],
    "t": "State Historic Site",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-1026": {
@@ -6363,7 +6350,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-1027": {
@@ -6390,19 +6377,14 @@
    "n": "Starved Rock State Park",
    "official": null,
    "ours": {
-    "acres": 6169,
+    "acres": 3246,
+    "family_fold": "layers {'padus': 3246, 'sgila': 2923}: one land in 2 layers, the padus copy used (2,923 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
       71057,
       "Starved Rock State Park",
       3246,
-      "name"
-     ],
-     [
-      "sgila1503",
-      "Starved Rock State Park",
-      2923,
       "name"
      ]
     ],
@@ -6449,7 +6431,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-1028": {
@@ -6567,7 +6549,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-1029": {
@@ -6707,7 +6689,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-1030": {
@@ -6824,7 +6806,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-1031": {
@@ -6914,7 +6896,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-1032": {
@@ -6977,7 +6959,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-1033": {
@@ -7115,7 +7097,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-10391": {
@@ -7125,7 +7107,7 @@
    "ours": null,
    "score": null,
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-10623": {
@@ -7164,38 +7146,33 @@
    },
    "sizes": [],
    "t": "State Historic Site",
-   "ver": 14,
+   "ver": 15,
    "verdict": "ours unknown"
   },
   "US-10660": {
-   "cause": "agency bigger: our outline may miss a tract",
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 1 million acres, a statewide / agency-wide total (over a million acres) on a park that is not a big federal unit)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Illinois and Michigan Canal State Trail",
    "official": {
-    "acres": 4400000.0,
-    "as": "4.4 million acres",
+    "acres": 1000000.0,
+    "as": "1 million acres",
     "clean": false,
-    "line": "ville, Rend and Kinkaid reservoirs, supporting more than $10 billion in downstate economic activity. Protects 4.4 million acres of land by ensuring the sufficiency of engineering designs of levees and levee modifications under the IDNR's",
+    "line": "ring designs of levees and levee modifications under the IDNR's regulatory oversight protecting approximately 1 million acres of agricultural land valued at $5.6 billion and $543 million in annual commodities. Regulates construction in",
     "read": "2026-10-29",
     "sent": "Protects 4.4 million acres of land by ensuring the sufficiency of engineering designs of levees and levee modifications under the IDNR's regulatory oversight protecting approximately 1 million acres of agricultural land valued at $5.6 billion and $543 million in annual commodities.",
     "url": "https://dnr.illinois.gov/about/didyouknow.html",
-    "why": "total-looking"
+    "why": "a statewide / agency-wide total (over a million acres) on a park that is not a big federal unit"
    },
    "ours": {
-    "acres": 1739,
+    "acres": 1421,
+    "family_fold": "layers {'sgila': 1421, 'padus': 318}: one land in 2 layers, the sgila copy used (318 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
       "sgila1048",
       "Illinois and Michigan Canal State Trail",
       1421,
-      "name"
-     ],
-     [
-      71113,
-      "Illinois and Michigan Canal State Trail",
-      318,
       "name"
      ]
     ],
@@ -7234,11 +7211,11 @@
    ],
    "pct": 100,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -7256,9 +7233,9 @@
      "as": "4.4 million acres",
      "clean": false,
      "line": "ville, Rend and Kinkaid reservoirs, supporting more than $10 billion in downstate economic activity. Protects 4.4 million acres of land by ensuring the sufficiency of engineering designs of levees and levee modifications under the IDNR's",
-     "total_like": true,
+     "total_like": false,
      "url": "https://dnr.illinois.gov/about/didyouknow.html",
-     "why": "total-looking"
+     "why": "a statewide / agency-wide total (over a million acres) on a park that is not a big federal unit"
     },
     {
      "acres": 1000000.0,
@@ -7267,12 +7244,12 @@
      "line": "ring designs of levees and levee modifications under the IDNR's regulatory oversight protecting approximately 1 million acres of agricultural land valued at $5.6 billion and $543 million in annual commodities. Regulates construction in",
      "total_like": false,
      "url": "https://dnr.illinois.gov/about/didyouknow.html",
-     "why": "no total words near it"
+     "why": "a statewide / agency-wide total (over a million acres) on a park that is not a big federal unit"
     }
    ],
    "t": "State Trail",
-   "ver": 14,
-   "verdict": "off"
+   "ver": 15,
+   "verdict": "unsure"
   },
   "US-10661": {
    "checked": "2026-10-29",
@@ -7281,7 +7258,7 @@
    "ours": null,
    "score": null,
    "t": "USFS Recreation Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-10662": {
@@ -7376,7 +7353,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-10664": {
@@ -7428,7 +7405,7 @@
     }
    ],
    "t": "State Game Land",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-10666": {
@@ -7478,7 +7455,7 @@
    },
    "sizes": [],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-10729": {
@@ -7487,7 +7464,8 @@
    "n": "Pekin Lake State Fish and Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 2514,
+    "acres": 1419,
+    "family_fold": "layers {'sgila': 1419, 'padus': 1095}: one land in 2 layers, the sgila copy used (1,095 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
@@ -7495,12 +7473,6 @@
       "Pekin Lake State Fish and Wildlife Area",
       1419,
       "name"
-     ],
-     [
-      157622,
-      "Pekin Lake",
-      1095,
-      "name (designation code ignored)"
      ]
     ],
     "pin": "inside",
@@ -7525,7 +7497,7 @@
    },
    "sizes": [],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-10777": {
@@ -7535,19 +7507,14 @@
    "n": "Fort Defiance State Park",
    "official": null,
    "ours": {
-    "acres": 143,
+    "acres": 79,
+    "family_fold": "layers {'sgila': 79, 'padus': 64}: one land in 2 layers, the sgila copy used (64 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
       "sgila1366",
       "Fort Defiance State Park",
       79,
-      "name"
-     ],
-     [
-      157615,
-      "Fort Defiance Park",
-      64,
       "name"
      ]
     ],
@@ -7589,7 +7556,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-10786": {
@@ -7598,19 +7565,14 @@
    "n": "Siloam Springs Buckhorn Unit State Park",
    "official": null,
    "ours": {
-    "acres": 11887,
+    "acres": 6033,
+    "family_fold": "layers {'sgila': 6033, 'padus': 5854}: one land in 2 layers, the sgila copy used (5,854 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
       "sgila1569",
       "Siloam Springs State Park",
       6033,
-      "words"
-     ],
-     [
-      70901,
-      "Siloam Springs State Park",
-      5854,
       "words"
      ]
     ],
@@ -7641,7 +7603,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-10787": {
@@ -7687,7 +7649,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-10788": {
@@ -7697,7 +7659,7 @@
    "ours": null,
    "score": null,
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-10852": {
@@ -7716,25 +7678,14 @@
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 327,
+    "acres": 158,
+    "family_fold": "layers {'sgila': 158, 'padus': 102, 'sgilb': 67}: one land in 3 layers, the sgila copy used (169 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
       "sgila973",
       "Rockton Bog State Natural Area",
       158,
-      "name"
-     ],
-     [
-      70835,
-      "Rockton Bog State Natural Area",
-      102,
-      "name"
-     ],
-     [
-      "sgilb428",
-      "Rockton Bog Nature Preserve",
-      67,
       "name"
      ]
     ],
@@ -7756,7 +7707,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 388,
+   "pct": 136,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -7777,7 +7728,7 @@
     }
    ],
    "t": "State Nature Preserve",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-11043": {
@@ -7895,7 +7846,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-11144": {
@@ -7941,7 +7892,7 @@
    },
    "sizes": [],
    "t": "State Historic Site",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-11236": {
@@ -7987,7 +7938,7 @@
    },
    "sizes": [],
    "t": "State Historic Site",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-11351": {
@@ -8028,11 +7979,10 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-11716": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Long Run Seep State Nature Preserve",
@@ -8047,24 +7997,25 @@
     "why": "total-looking"
    },
    "ours": {
-    "acres": 161,
+    "acres": 81,
     "dissolved": {
      "after": 161,
      "before": 241,
      "copies": 1,
+     "families": {
+      "padus": 80,
+      "sgilb": 81
+     },
+     "family_fold": 80,
+     "family_used": "sgilb",
      "parts": 0,
      "records": 5,
      "tracts": 4
     },
+    "family_fold": "layers {'padus': 80, 'sgilb': 81}: one land in 2 layers, the sgilb copy used (80 ac of copies not added)",
     "manager": "",
     "note": "5 joined records = 4 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 241 -> 161 acres",
     "pieces": [
-     [
-      71053,
-      "Long Run Seep State Natural Area",
-      80,
-      "name"
-     ],
      [
       "sgilb36",
       "Long Run Seep Nature Preserve",
@@ -8102,13 +8053,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 102,
+   "pct": 2,
    "same_agency": false,
-   "score": 5,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -8123,8 +8074,8 @@
     }
    ],
    "t": "State Nature Preserve",
-   "ver": 14,
-   "verdict": "off"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-11781": {
    "checked": "2026-10-29",
@@ -8132,7 +8083,8 @@
    "n": "Bishop Hill State Historic Site",
    "official": null,
    "ours": {
-    "acres": 17,
+    "acres": 10,
+    "family_fold": "layers {'sgila': 10, 'padus': 7}: one land in 2 layers, the sgila copy used (7 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
@@ -8140,12 +8092,6 @@
       "Bishop Hill State Historic Site",
       10,
       "name"
-     ],
-     [
-      70954,
-      "Bishop Hill Park",
-      7,
-      "name (designation code ignored)"
      ]
     ],
     "pin": "inside",
@@ -8175,11 +8121,10 @@
    },
    "sizes": [],
    "t": "State Historic Site",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-11793": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 412.7 acres, no total words near it)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Revis Spring Hill Prairie State Nature Preserve",
@@ -8194,15 +8139,22 @@
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 479,
+    "acres": 423,
     "dissolved": {
      "after": 479,
      "before": 902,
      "copies": 1,
+     "families": {
+      "padus": 423,
+      "sgilb": 56
+     },
+     "family_fold": 56,
+     "family_used": "padus",
      "parts": 0,
      "records": 3,
      "tracts": 2
     },
+    "family_fold": "layers {'padus': 423, 'sgilb': 56}: one land in 2 layers, the padus copy used (56 ac of copies not added)",
     "manager": "",
     "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 902 -> 479 acres",
     "pieces": [
@@ -8210,12 +8162,6 @@
       70833,
       "Revis Hill Prairie State Natural Area",
       423,
-      "words"
-     ],
-     [
-      "sgilb615",
-      "Revis Hill Prairie Nature Preserve",
-      56,
       "words"
      ]
     ],
@@ -8237,13 +8183,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 16,
+   "pct": 2,
    "same_agency": false,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 1,
     "pin": 1,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -8258,8 +8204,8 @@
     }
    ],
    "t": "State Nature Preserve",
-   "ver": 14,
-   "verdict": "unsure"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-11844": {
    "checked": "2026-10-29",
@@ -8343,7 +8289,7 @@
     }
    ],
    "t": "State Nature Preserve",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-11959": {
@@ -8382,7 +8328,7 @@
    },
    "sizes": [],
    "t": "Historic Site",
-   "ver": 14,
+   "ver": 15,
    "verdict": "ours unknown"
   },
   "US-12080": {
@@ -8421,7 +8367,7 @@
    },
    "sizes": [],
    "t": "State Historic Site",
-   "ver": 14,
+   "ver": 15,
    "verdict": "ours unknown"
   },
   "US-12110": {
@@ -8513,25 +8459,40 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-12184": {
-   "cause": "no total-looking sentence: numbers found were parts or other units",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Heidecke Lake State Fish and Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 1300.0,
+    "as": "1,300 acres",
+    "clean": false,
+    "line": "r the Collins Power Plant, which now is owned and operated by Midwest Generation. The lake provides more than 1,300 acres of prime fishing opportunities. Heidecke Lake Closing Policy : If wind speeds are forecast to be 25mph or abo",
+    "read": "2026-10-29",
+    "sent": "The lake provides more than 1,300 acres of prime fishing opportunities.",
+    "url": "https://dnr.illinois.gov/parks/park.heideckelake.html",
+    "why": "part (a lake, a purchase, a campground…)"
+   },
    "ours": {
-    "acres": 2258,
+    "acres": 1419,
     "dissolved": {
      "after": 2258,
      "before": 3097,
      "copies": 1,
+     "families": {
+      "padus": 839,
+      "sgila": 1419
+     },
+     "family_fold": 839,
+     "family_used": "sgila",
      "parts": 0,
      "records": 3,
      "tracts": 2
     },
+    "family_fold": "layers {'sgila': 1419, 'padus': 839}: one land in 2 layers, the sgila copy used (839 ac of copies not added)",
     "manager": "",
     "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 3097 -> 2258 acres",
     "pieces": [
@@ -8539,12 +8500,6 @@
       "sgila1053",
       "Heidecke Lake State Fish and Wildlife Area",
       1419,
-      "name"
-     ],
-     [
-      71069,
-      "Heidecke Lake State Fish and Wildlife Area",
-      839,
       "name"
      ]
     ],
@@ -8566,12 +8521,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 9,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -8595,11 +8551,10 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
-   "verdict": "unsure"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-12217": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Sandy Ford State Natural Reserve",
@@ -8614,19 +8569,14 @@
     "why": "total-looking"
    },
    "ours": {
-    "acres": 400,
+    "acres": 203,
+    "family_fold": "layers {'padus': 203, 'sgila': 197}: one land in 2 layers, the padus copy used (197 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
       70783,
       "Sandy Ford State Natural Area",
       203,
-      "name"
-     ],
-     [
-      "sgila1425",
-      "Sandy Ford State Natural Area",
-      197,
       "name"
      ]
     ],
@@ -8648,13 +8598,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 100,
+   "pct": 2,
    "same_agency": false,
-   "score": 5,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -8669,8 +8619,8 @@
     }
    ],
    "t": "State Natural Reserve",
-   "ver": 14,
-   "verdict": "off"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-12314": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
@@ -8766,11 +8716,11 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-12327": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
+   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Brown Barrens State Nature Preserve",
@@ -8785,15 +8735,22 @@
     "why": "total-looking"
    },
    "ours": {
-    "acres": 62,
+    "acres": 34,
     "dissolved": {
      "after": 62,
      "before": 90,
      "copies": 1,
+     "families": {
+      "padus": 34,
+      "sgila": 28
+     },
+     "family_fold": 28,
+     "family_used": "padus",
      "parts": 0,
      "records": 3,
      "tracts": 2
     },
+    "family_fold": "layers {'padus': 34, 'sgila': 28}: one land in 2 layers, the padus copy used (28 ac of copies not added)",
     "manager": "",
     "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 90 -> 62 acres",
     "pieces": [
@@ -8801,12 +8758,6 @@
       70795,
       "Brown Barrens Nature Preserve",
       34,
-      "name"
-     ],
-     [
-      "sgila1492",
-      "Brown Barrens State Natural Area",
-      28,
       "name"
      ]
     ],
@@ -8828,7 +8779,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 115,
+   "pct": 18,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -8849,11 +8800,10 @@
     }
    ],
    "t": "State Nature Preserve",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-12329": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 40.72 acres, no total words near it)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Berryville Shale Glade State Nature Preserve",
@@ -8868,15 +8818,22 @@
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 75,
+    "acres": 41,
     "dissolved": {
      "after": 75,
      "before": 116,
      "copies": 1,
+     "families": {
+      "padus": 34,
+      "sgila": 41
+     },
+     "family_fold": 34,
+     "family_used": "sgila",
      "parts": 0,
      "records": 3,
      "tracts": 2
     },
+    "family_fold": "layers {'sgila': 41, 'padus': 34}: one land in 2 layers, the sgila copy used (34 ac of copies not added)",
     "manager": "",
     "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 116 -> 75 acres",
     "pieces": [
@@ -8884,12 +8841,6 @@
       "sgila1497",
       "Berryville Shale Glade State Natural Area",
       41,
-      "name"
-     ],
-     [
-      70794,
-      "Berryville Shale Glade Nature Preserve",
-      34,
       "name"
      ]
     ],
@@ -8911,13 +8862,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 84,
+   "pct": 1,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -8932,8 +8883,8 @@
     }
    ],
    "t": "State Nature Preserve",
-   "ver": 14,
-   "verdict": "unsure"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-12332": {
    "checked": "2026-10-29",
@@ -9008,7 +8959,7 @@
     }
    ],
    "t": "State Nature Preserve",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-12336": {
@@ -9063,11 +9014,10 @@
    },
    "sizes": [],
    "t": "State Historic Site",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-12366": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 40 acres, no total words near it)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "McMaster Woods State Nature Preserve",
@@ -9082,15 +9032,22 @@
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 85,
+    "acres": 44,
     "dissolved": {
      "after": 85,
      "before": 126,
      "copies": 1,
+     "families": {
+      "padus": 44,
+      "sgila": 41
+     },
+     "family_fold": 41,
+     "family_used": "padus",
      "parts": 0,
      "records": 3,
      "tracts": 2
     },
+    "family_fold": "layers {'padus': 44, 'sgila': 41}: one land in 2 layers, the padus copy used (41 ac of copies not added)",
     "manager": "",
     "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 126 -> 85 acres",
     "pieces": [
@@ -9098,12 +9055,6 @@
       77283,
       "McMaster Woods",
       44,
-      "name"
-     ],
-     [
-      "sgila1146",
-      "McMaster Woods",
-      41,
       "name"
      ]
     ],
@@ -9125,13 +9076,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 112,
+   "pct": 10,
    "same_agency": false,
-   "score": 7,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -9146,8 +9097,8 @@
     }
    ],
    "t": "State Nature Preserve",
-   "ver": 14,
-   "verdict": "unsure"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-12367": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
@@ -9212,7 +9163,7 @@
     }
    ],
    "t": "State Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-12368": {
@@ -9291,7 +9242,7 @@
     }
    ],
    "t": "State Nature Preserve",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-12374": {
@@ -9346,7 +9297,7 @@
    },
    "sizes": [],
    "t": "State Natural Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-12387": {
@@ -9431,7 +9382,7 @@
     }
    ],
    "t": "State Reserve",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-12596": {
@@ -9508,7 +9459,7 @@
     }
    ],
    "t": "State Nature Preserve",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-12601": {
@@ -9642,7 +9593,7 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-12617": {
@@ -9688,7 +9639,7 @@
    },
    "sizes": [],
    "t": "State Historic Site",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-12627": {
@@ -9697,19 +9648,14 @@
    "n": "Rice Lake State Fish and Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 13912,
+    "acres": 7115,
+    "family_fold": "layers {'padus': 7115, 'sgila': 6797}: one land in 2 layers, the padus copy used (6,797 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
       70879,
       "Rice Lake State Fish and Wildlife Area",
       7115,
-      "name"
-     ],
-     [
-      "sgila1615",
-      "Rice Lake State Fish and Wildlife Area",
-      6797,
       "name"
      ]
     ],
@@ -9735,7 +9681,7 @@
    },
    "sizes": [],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-12640": {
@@ -9745,7 +9691,7 @@
    "ours": null,
    "score": null,
    "t": "State Recreation Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-12641": {
@@ -9791,7 +9737,7 @@
    },
    "sizes": [],
    "t": "State Historic Site",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-13298": {
@@ -9801,11 +9747,11 @@
    "ours": null,
    "score": null,
    "t": "State Recreation Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-13310": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
+   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Foley Sand Prairie National Preserve",
@@ -9820,15 +9766,23 @@
     "why": "total-looking"
    },
    "ours": {
-    "acres": 343,
+    "acres": 314,
     "dissolved": {
      "after": 343,
      "before": 357,
      "copies": 1,
+     "families": {
+      "padus": 14,
+      "sgila": 314,
+      "sgilb": 15
+     },
+     "family_fold": 29,
+     "family_used": "sgila",
      "parts": 0,
      "records": 4,
      "tracts": 3
     },
+    "family_fold": "layers {'sgila': 314, 'sgilb': 15, 'padus': 14}: one land in 3 layers, the sgila copy used (29 ac of copies not added)",
     "manager": "",
     "note": "4 joined records = 3 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 357 -> 343 acres",
     "pieces": [
@@ -9837,18 +9791,6 @@
       "Sand Prairie State Habitat Area",
       314,
       "words"
-     ],
-     [
-      "sgilb475",
-      "Foley Sand Prairie Nature Preserve",
-      15,
-      "name"
-     ],
-     [
-      70805,
-      "Foley Sand Prairie State Natural Area",
-      14,
-      "name"
      ]
     ],
     "pin": "just outside",
@@ -9869,7 +9811,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 2157,
+   "pct": 1966,
    "same_agency": false,
    "score": 4,
    "score_parts": {
@@ -9890,7 +9832,7 @@
     }
    ],
    "t": "National Preserve",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-13353": {
@@ -9940,7 +9882,7 @@
    },
    "sizes": [],
    "t": "Habitat Protection Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-13512": {
@@ -9995,7 +9937,7 @@
    },
    "sizes": [],
    "t": "State Recreation Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-3791": {
@@ -10005,7 +9947,7 @@
    "ours": null,
    "score": null,
    "t": "National Historic Trail",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-4092": {
@@ -10013,29 +9955,24 @@
    "handover": [],
    "n": "Salem Unit of Apple River Canyon State Park",
    "official": {
-    "acres": 4160.0,
-    "as": "4,160 acre",
+    "acres": 1907.0,
+    "as": "1,907 acres",
     "clean": false,
-    "line": "by sandbars formed by waves at the mouth of the river, creating a sluggish, marshy habitat.&lt;/p>\\n&lt;p>The 4,160-acre park, consisting of two separate areas (North Unit and South Unit), offers ample opportunities for swimming,",
+    "line": "waters of the Apple River. The park was established by the State of Illinois in 1932, and today consisting of 1,907 acres. Several other sites within Jo Daviess County are managed as part of the Apple River Canyon State Park Comple",
     "read": "2026-10-29",
-    "sent": "idges are crowned by black oak forests with an open, savanna-like appearance.&nbsp;For much of the year, a stream known as Dead River is&nbsp;blocked by sandbars formed by waves at the mouth of the river, creating a sluggish, marshy habitat.&lt;/p>\\n&lt;p>The 4,160-acre park, consisting of two separ",
+    "sent": "The park was established by the State of Illinois in 1932, and today consisting of 1,907 acres.",
     "url": "https://dnr.illinois.gov/parks/park.applerivercanyon.html",
-    "why": "part (a lake, a purchase, a campground…)"
+    "why": "history"
    },
    "ours": {
-    "acres": 3961,
+    "acres": 2030,
+    "family_fold": "layers {'sgila': 2030, 'padus': 1931}: one land in 2 layers, the sgila copy used (1,931 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
       "sgila2162",
       "Apple River Canyon State Park",
       2030,
-      "words"
-     ],
-     [
-      70840,
-      "Apple River Canyon State Park",
-      1931,
       "words"
      ]
     ],
@@ -10067,7 +10004,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 5,
+   "pct": 6,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -10106,7 +10043,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-4093": {
@@ -10247,13 +10184,13 @@
      "as": "3,000 acres",
      "clean": false,
      "line": "the State of Illinois DNR-LANDS-25046 • 12/24 • web s Clinton Lake STATE RECREATION AREA Hunting More than 3,000 acres are open to hunting at Clinton Lake. All hunters must obtain a windshield card online at dnr.illinois.gov. F",
-     "total_like": true,
+     "total_like": false,
      "url": "https://dnr.illinois.gov/content/dam/soi/en/web/dnr/publications/documents/00000092.pdf",
-     "why": "total-looking"
+     "why": "part (a lake, a purchase, a campground…)"
     }
    ],
    "t": "State Recreation Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-4094": {
@@ -10377,7 +10314,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-4095": {
@@ -10471,7 +10408,7 @@
     }
    ],
    "t": "State Recreation Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-4096": {
@@ -10569,7 +10506,7 @@
     }
    ],
    "t": "State Recreation Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-4097": {
@@ -10697,7 +10634,7 @@
     }
    ],
    "t": "State Recreation Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-4098": {
@@ -10782,7 +10719,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-4099": {
@@ -10899,7 +10836,7 @@
     }
    ],
    "t": "State Recreation Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-4100": {
@@ -10989,23 +10926,23 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-4101": {
-   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 276 acres, no total words near it)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Pyramid State Park",
    "official": {
-    "acres": 924.0,
-    "as": "924 acres",
+    "acres": 276.0,
+    "as": "276 acres",
     "clean": false,
-    "line": "tate Recreation Area consists of forested hills, lakes and ponds. Southern Illinois University owned and used 924 acres of the site for research, transferring the land to the state in 1968 for a State Recreation Area. Additional",
+    "line": "a coal mine that once existed here. More than 500 acres of water form lakes varying in size from 0.1 acres to 276 acres offer outstanding fishing opportunities. The largest lake on the property, known as Super Lake, is located on",
     "read": "2026-10-29",
-    "sent": "Southern Illinois University owned and used 924 acres of the site for research, transferring the land to the state in 1968 for a State Recreation Area.",
+    "sent": "More than 500 acres of water form lakes varying in size from 0.1 acres to 276 acres offer outstanding fishing opportunities.",
     "url": "https://dnr.illinois.gov/parks/park.pyramid.html",
-    "why": "total-looking"
+    "why": "no total words near it"
    },
    "ours": {
     "acres": 19000,
@@ -11039,6 +10976,11 @@
      "why": "the park's page (data/parkinfo)"
     },
     {
+     "status": "ok",
+     "url": "https://dnr.illinois.gov/parks/about/park.pyramid.html",
+     "why": "about / history page of the park's site"
+    },
+    {
      "status": "ok, no readable text",
      "url": "https://dnr.illinois.gov/content/dam/soi/en/web/dnr/publications/documents/00000035.pdf",
      "why": "official map (documents bot)"
@@ -11050,13 +10992,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 1956,
+   "pct": 6784,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -11074,9 +11016,9 @@
      "as": "924 acres",
      "clean": false,
      "line": "tate Recreation Area consists of forested hills, lakes and ponds. Southern Illinois University owned and used 924 acres of the site for research, transferring the land to the state in 1968 for a State Recreation Area. Additional",
-     "total_like": true,
+     "total_like": false,
      "url": "https://dnr.illinois.gov/parks/park.pyramid.html",
-     "why": "total-looking"
+     "why": "part (a lake, a purchase, a campground…)"
     },
     {
      "acres": 520.0,
@@ -11107,29 +11049,32 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
-   "verdict": "off"
+   "ver": 15,
+   "verdict": "unsure"
   },
   "US-4102": {
-   "cause": "no total-looking sentence: numbers found were parts or other units",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Randolph County State Recreation Area",
-   "official": null,
+   "official": {
+    "acres": 1101.0,
+    "as": "1,101 acres",
+    "clean": false,
+    "line": "al activities. Fishing, hiking, picnicking, boating, hunting and camping are just a few of the choices on the 1,101 acres at the site. Located five miles northeast of Chester, Randolph County SRA lies in the rolling hill country of",
+    "read": "2026-10-29",
+    "sent": "Fishing, hiking, picnicking, boating, hunting and camping are just a few of the choices on the 1,101 acres at the site.",
+    "url": "https://dnr.illinois.gov/parks/park.randolphcounty.html",
+    "why": "part (a lake, a purchase, a campground…)"
+   },
    "ours": {
-    "acres": 2220,
+    "acres": 1138,
+    "family_fold": "layers {'padus': 1138, 'sgila': 1082}: one land in 2 layers, the padus copy used (1,082 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
       70781,
       "Randolph County State Recreation Area",
       1138,
-      "name"
-     ],
-     [
-      "sgila1462",
-      "Randolph County State Recreation Area",
-      1082,
       "name"
      ]
     ],
@@ -11156,12 +11101,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 3,
+   "same_agency": false,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -11194,8 +11140,8 @@
     }
    ],
    "t": "State Recreation Area",
-   "ver": 14,
-   "verdict": "unsure"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-4103": {
    "checked": "2026-10-29",
@@ -11302,7 +11248,7 @@
     }
    ],
    "t": "State Recreation Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-4104": {
@@ -11410,7 +11356,7 @@
     }
    ],
    "t": "State Recreation Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-4105": {
@@ -11420,7 +11366,7 @@
    "ours": null,
    "score": null,
    "t": "State Recreation Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-4106": {
@@ -11533,7 +11479,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-4107": {
@@ -11632,7 +11578,7 @@
     }
    ],
    "t": "State Recreation Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-4108": {
@@ -11722,7 +11668,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-4109": {
@@ -11780,7 +11726,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-4110": {
@@ -11883,7 +11829,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-4111": {
@@ -11950,44 +11896,32 @@
     }
    ],
    "t": "State Nature Preserve",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-4112": {
-   "cause": "agency bigger: our outline may miss a tract",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Cache River State Natural Area",
    "official": {
-    "acres": 60000.0,
-    "as": "60,000 acre",
+    "acres": 18047.0,
+    "as": "18,047 acres",
     "clean": false,
-    "line": "rative effort called the Cache River Wetlands Joint Venture Partnership is working to protect and restore a 60,000-acre wetland corridor along 50 miles of the Cache River. Partners include the Illinois Department of Natural Reso",
+    "line": "of International Importance, only the 19th wetland in the United States to receive the distinction. Totaling 18,047 acres in Johnson, Massac and Pulaski counties, Cache River State Natural Area is composed of three distinct managem",
     "read": "2026-10-29",
-    "sent": "60,000-acre wetland corridor along 50 miles of the Cache River.",
-    "url": "https://dnr.illinois.gov/content/dam/soi/en/web/dnr/publications/documents/00000050.pdf",
-    "why": "total-looking"
+    "sent": "Totaling 18,047 acres in Johnson, Massac and Pulaski counties, Cache River State Natural Area is composed of three distinct management units - Little Black Slough, Lower Cache River Swamps and Glass Hill.",
+    "url": "https://dnr.illinois.gov/parks/park.cacheriver.html",
+    "why": "history"
    },
    "ours": {
-    "acres": 32995,
+    "acres": 17996,
+    "family_fold": "layers {'sgila': 17996, 'padus': 14999}: one land in 2 layers, the sgila copy used (14,999 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
       "sgila1177",
       "Cache River State Natural Area",
       17996,
-      "name"
-     ],
-     [
-      70758,
-      "Cache River State Natural Area",
-      11939,
-      "name"
-     ],
-     [
-      70759,
-      "Cache River State Natural Area",
-      3060,
       "name"
      ]
     ],
@@ -12019,13 +11953,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 45,
+   "pct": 0,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -12094,8 +12028,8 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 14,
-   "verdict": "off"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-4113": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
@@ -12161,37 +12095,33 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-4114": {
+   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Carlyle Lake State Fish and Wildlife Area",
    "official": {
-    "acres": 9500.0,
-    "as": "9,500 acres",
+    "acres": 2500.0,
+    "as": "2,500 acre",
     "clean": false,
-    "line": "tude of nature as visitors birdwatch, fish and hunt. The federal lease land and state property provide almost 9,500 acres of wildlife habitat. The Fish and Wildlife Area is blessed with habitat diversity: approximately 2,000 acres",
+    "line": "Cox's Bridge, Hitogi Access Area, or parking lots at Subimpoundments 1, 2 or 3. Eastside Management Area The 2,500-acre area located on the east side of the Kaskaskia River provides opportunities for waterfowl, upland and forest",
     "read": "2026-10-29",
-    "sent": "The federal lease land and state property provide almost 9,500 acres of wildlife habitat.",
-    "url": "https://dnr.illinois.gov/parks/park.carlylelake.html",
-    "why": "part (a lake, a purchase, a campground…)"
+    "sent": "The 2,500-acre area located on the east side of the Kaskaskia River provides opportunities for waterfowl, upland and forest game hunters.",
+    "url": "https://dnr.illinois.gov/parks/about/park.carlylelake.html",
+    "why": "total-looking"
    },
    "ours": {
-    "acres": 8580,
+    "acres": 7329,
+    "family_fold": "layers {'sgila': 7329, 'padus': 1251}: one land in 2 layers, the sgila copy used (1,251 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
       "sgila1445",
       "Carlyle Lake State Fish and Wildlife Area",
       6410,
-      "name"
-     ],
-     [
-      71064,
-      "Carlyle Lake State Fish and Wildlife Area",
-      1251,
       "name"
      ],
      [
@@ -12224,13 +12154,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 10,
+   "pct": 193,
    "same_agency": false,
-   "score": 7,
+   "score": 5,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 2,
+    "size": 0,
     "source": 2
    },
    "sizes": [
@@ -12308,8 +12238,8 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
-   "verdict": "agree"
+   "ver": 15,
+   "verdict": "off"
   },
   "US-4115": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
@@ -12327,15 +12257,22 @@
     "why": "total-looking"
    },
    "ours": {
-    "acres": 1087,
+    "acres": 849,
     "dissolved": {
      "after": 1087,
      "before": 1933,
      "copies": 1,
+     "families": {
+      "padus": 849,
+      "sgilb": 238
+     },
+     "family_fold": 238,
+     "family_used": "padus",
      "parts": 0,
      "records": 5,
      "tracts": 4
     },
+    "family_fold": "layers {'padus': 849, 'sgilb': 238}: one land in 2 layers, the padus copy used (238 ac of copies not added)",
     "manager": "",
     "note": "5 joined records = 4 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1933 -> 1087 acres",
     "pieces": [
@@ -12344,24 +12281,6 @@
       "Cedar Glen State Natural Area",
       849,
       "name"
-     ],
-     [
-      "sgilb697",
-      "Cedar Glen Nature Preserve Buffer",
-      122,
-      "words"
-     ],
-     [
-      "sgilb696",
-      "Cedar Glen Nature Preserve",
-      66,
-      "name"
-     ],
-     [
-      "sgilb699",
-      "Cedar Glen Nature Preserve Addition",
-      50,
-      "words"
      ]
     ],
     "pin": "just outside",
@@ -12382,7 +12301,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 89,
+   "pct": 48,
    "same_agency": false,
    "score": 5,
    "score_parts": {
@@ -12412,7 +12331,7 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-4116": {
@@ -12492,7 +12411,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-4117": {
@@ -12510,7 +12429,8 @@
     "why": "part (a lake, a purchase, a campground…)"
    },
    "ours": {
-    "acres": 4589,
+    "acres": 4053,
+    "family_fold": "layers {'sgila': 4053, 'padus': 536}: one land in 2 layers, the sgila copy used (536 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
@@ -12523,12 +12443,6 @@
       "sgila1452",
       "Coffeen Lake State Fish and Wildlife Area",
       612,
-      "name"
-     ],
-     [
-      71065,
-      "Coffeen Lake State Fish and Wildlife Area",
-      536,
       "name"
      ]
     ],
@@ -12560,7 +12474,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 10,
+   "pct": 3,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -12590,7 +12504,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-4118": {
@@ -12600,7 +12514,7 @@
    "ours": null,
    "score": null,
    "t": "State Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-4119": {
@@ -12655,7 +12569,7 @@
    },
    "sizes": [],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-4120": {
@@ -12783,7 +12697,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-4121": {
@@ -12792,19 +12706,14 @@
    "n": "Devil's Island Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 4060,
+    "acres": 2557,
+    "family_fold": "layers {'sgila': 2557, 'padus': 1503}: one land in 2 layers, the sgila copy used (1,503 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
       "sgila2158",
       "Devil's Island Wildlife Management Area",
       2557,
-      "name"
-     ],
-     [
-      71066,
-      "Devil's Island tate Fish and Wildlife Area",
-      1503,
       "name"
      ]
     ],
@@ -12830,7 +12739,7 @@
    },
    "sizes": [],
    "t": "Wildlife Management Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-4122": {
@@ -12902,11 +12811,10 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-4123": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Franklin Creek State Natural Area",
@@ -12921,15 +12829,22 @@
     "why": "clean total"
    },
    "ours": {
-    "acres": 1072,
+    "acres": 930,
     "dissolved": {
      "after": 1072,
      "before": 2003,
      "copies": 0,
+     "families": {
+      "sgila": 930,
+      "sgilb": 142
+     },
+     "family_fold": 142,
+     "family_used": "sgila",
      "parts": 3,
      "records": 6,
      "tracts": 3
     },
+    "family_fold": "layers {'sgila': 930, 'sgilb': 142}: one land in 2 layers, the sgila copy used (142 ac of copies not added)",
     "manager": "",
     "note": "6 joined records = 3 tracts: 0 copies of a tract (same acres, another layer) and 3 fee tracts under a designation record folded; summed 2003 -> 1072 acres",
     "pieces": [
@@ -12937,18 +12852,6 @@
       "sgila1587",
       "Franklin Creek State Natural Area",
       930,
-      "name"
-     ],
-     [
-      "sgilb854",
-      "Franklin Creek Nature Preserve Addition #2",
-      96,
-      "words"
-     ],
-     [
-      "sgilb849",
-      "Franklin Creek Nature Preserve Addition",
-      46,
       "name"
      ]
     ],
@@ -12970,13 +12873,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 22,
+   "pct": 5,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -13009,8 +12912,8 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 14,
-   "verdict": "off"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-4124": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
@@ -13025,18 +12928,25 @@
     "read": "2026-10-29",
     "sent": "Fults Hill Prairie Nature Preserve consists of 532 acres of uplands and includes woodland, prairie and glade communities.",
     "url": "https://dnr.illinois.gov/parks/park.fultshillprairie.html",
-    "why": "clean total"
+    "why": "clean total; the agency's pages disagree: another of its pages says 800 acre (that one matches our outline)"
    },
    "ours": {
-    "acres": 1238,
+    "acres": 810,
     "dissolved": {
      "after": 1238,
      "before": 2048,
      "copies": 1,
+     "families": {
+      "padus": 810,
+      "sgilb": 428
+     },
+     "family_fold": 428,
+     "family_used": "padus",
      "parts": 0,
      "records": 4,
      "tracts": 3
     },
+    "family_fold": "layers {'padus': 810, 'sgilb': 428}: one land in 2 layers, the padus copy used (428 ac of copies not added)",
     "manager": "",
     "note": "4 joined records = 3 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 2048 -> 1238 acres",
     "pieces": [
@@ -13044,18 +12954,6 @@
       70806,
       "Fults Hill Prairie State Natural Area",
       810,
-      "name"
-     ],
-     [
-      "sgilb591",
-      "Fults Hill Prairie Nature Preserve",
-      316,
-      "name"
-     ],
-     [
-      "sgilb592",
-      "Fults Hill Prairie Nature Preserve Addition",
-      112,
       "name"
      ]
     ],
@@ -13082,7 +12980,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 133,
+   "pct": 52,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -13130,7 +13028,7 @@
     }
    ],
    "t": "State Nature Preserve",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-4125": {
@@ -13206,7 +13104,7 @@
     }
    ],
    "t": "State Nature Preserve",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-4126": {
@@ -13291,7 +13189,7 @@
     }
    ],
    "t": "State Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-4127": {
@@ -13346,7 +13244,7 @@
    },
    "sizes": [],
    "t": "State Natural Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-4128": {
@@ -13445,7 +13343,7 @@
     }
    ],
    "t": "State Conservation Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-4129": {
@@ -13553,7 +13451,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-4130": {
@@ -13689,7 +13587,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-4131": {
@@ -13787,9 +13685,9 @@
      "as": "4.4 million acres",
      "clean": false,
      "line": "ville, Rend and Kinkaid reservoirs, supporting more than $10 billion in downstate economic activity. Protects 4.4 million acres of land by ensuring the sufficiency of engineering designs of levees and levee modifications under the IDNR's",
-     "total_like": true,
+     "total_like": false,
      "url": "https://dnr.illinois.gov/about/didyouknow.html",
-     "why": "total-looking"
+     "why": "a statewide / agency-wide total (over a million acres) on a park that is not a big federal unit"
     },
     {
      "acres": 1000000.0,
@@ -13798,11 +13696,11 @@
      "line": "ring designs of levees and levee modifications under the IDNR's regulatory oversight protecting approximately 1 million acres of agricultural land valued at $5.6 billion and $543 million in annual commodities. Regulates construction in",
      "total_like": false,
      "url": "https://dnr.illinois.gov/about/didyouknow.html",
-     "why": "no total words near it"
+     "why": "a statewide / agency-wide total (over a million acres) on a park that is not a big federal unit"
     }
    ],
    "t": "State Natural Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-4132": {
@@ -13821,19 +13719,14 @@
     "why": "total-looking"
    },
    "ours": {
-    "acres": 5723,
+    "acres": 2946,
+    "family_fold": "layers {'padus': 2946, 'sgila': 2777}: one land in 2 layers, the padus copy used (2,777 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
       70863,
       "Iroquois County State Fish and Wildlife Area",
       2842,
-      "name"
-     ],
-     [
-      "sgila1436",
-      "Iroquois County State Fish and Wildlife Area",
-      2777,
       "name"
      ],
      [
@@ -13866,7 +13759,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 186,
+   "pct": 47,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -13914,7 +13807,7 @@
     }
    ],
    "t": "State Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-4133": {
@@ -14026,7 +13919,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-4134": {
@@ -14126,7 +14019,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-4135": {
@@ -14176,7 +14069,7 @@
    },
    "sizes": [],
    "t": "State Natural Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-4136": {
@@ -14285,7 +14178,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-4137": {
@@ -14416,7 +14309,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-4138": {
@@ -14466,7 +14359,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-4139": {
@@ -14507,7 +14400,7 @@
    },
    "sizes": [],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-4140": {
@@ -14646,11 +14539,10 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-4141": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Mautino State Fish and Wildlife Area",
@@ -14665,19 +14557,14 @@
     "why": "clean total"
    },
    "ours": {
-    "acres": 1805,
+    "acres": 913,
+    "family_fold": "layers {'padus': 913, 'sgila': 892}: one land in 2 layers, the padus copy used (892 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
       70869,
       "Mautino State Fish and Wildlife Area",
       913,
-      "name"
-     ],
-     [
-      "sgila1689",
-      "Mautino State Fish and Wildlife Area",
-      892,
       "name"
      ]
     ],
@@ -14699,13 +14586,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 101,
+   "pct": 1,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -14738,8 +14625,8 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
-   "verdict": "off"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-4142": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
@@ -14757,15 +14644,22 @@
     "why": "total-looking"
    },
    "ours": {
-    "acres": 5855,
+    "acres": 3039,
     "dissolved": {
      "after": 5855,
      "before": 8671,
      "copies": 1,
+     "families": {
+      "padus": 2816,
+      "sgila": 3039
+     },
+     "family_fold": 2816,
+     "family_used": "sgila",
      "parts": 0,
      "records": 3,
      "tracts": 2
     },
+    "family_fold": "layers {'sgila': 3039, 'padus': 2816}: one land in 2 layers, the sgila copy used (2,816 ac of copies not added)",
     "manager": "",
     "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 8671 -> 5855 acres",
     "pieces": [
@@ -14773,12 +14667,6 @@
       "sgila1052",
       "Mazonia-Braidwood State Fish and Wildlife Area",
       3039,
-      "name"
-     ],
-     [
-      71073,
-      "Mazonia-Braidwood State Fish and Wildlife Area",
-      2816,
       "name"
      ]
     ],
@@ -14800,7 +14688,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 476,
+   "pct": 199,
    "same_agency": false,
    "score": 5,
    "score_parts": {
@@ -14857,7 +14745,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-4143": {
@@ -14947,7 +14835,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-4144": {
@@ -15032,7 +14920,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-4145": {
@@ -15041,15 +14929,22 @@
    "n": "Miller-Anderson Woods State Nature Preserve",
    "official": null,
    "ours": {
-    "acres": 857,
+    "acres": 509,
     "dissolved": {
      "after": 857,
      "before": 1364,
      "copies": 1,
+     "families": {
+      "sgila": 509,
+      "sgilb": 348
+     },
+     "family_fold": 348,
+     "family_used": "sgila",
      "parts": 0,
      "records": 5,
      "tracts": 4
     },
+    "family_fold": "layers {'sgila': 509, 'sgilb': 348}: one land in 2 layers, the sgila copy used (348 ac of copies not added)",
     "manager": "",
     "note": "5 joined records = 4 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1364 -> 857 acres",
     "pieces": [
@@ -15057,24 +14952,6 @@
       "sgila1592",
       "Miller-Anderson Woods State Natural Area",
       509,
-      "name"
-     ],
-     [
-      "sgilb858",
-      "Miller-Anderson Woods Nature Preserve",
-      260,
-      "name"
-     ],
-     [
-      "sgilb856",
-      "Miller-Anderson Woods Nature Preserve Buffer",
-      80,
-      "name"
-     ],
-     [
-      "sgilb857",
-      "Miller-Anderson Woods Nature Preserve Addition",
-      8,
       "name"
      ]
     ],
@@ -15086,7 +14963,7 @@
    "pct": null,
    "sizes": [],
    "t": "State Nature Preserve",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no official page on file"
   },
   "US-4146": {
@@ -15213,7 +15090,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-4147": {
@@ -15313,7 +15190,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-4148": {
@@ -15368,11 +15245,10 @@
    },
    "sizes": [],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-4149": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Piney Creek Ravine State Natural Area",
@@ -15387,37 +15263,14 @@
     "why": "clean total"
    },
    "ours": {
-    "acres": 615,
+    "acres": 208,
+    "family_fold": "layers {'sgila': 208, 'padus': 202, 'sgilb': 205}: one land in 3 layers, the sgila copy used (407 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
       "sgila1460",
       "Piney Creek Ravine State Natural Area",
       208,
-      "name"
-     ],
-     [
-      70830,
-      "Piney Creek Ravine State Natural Area",
-      193,
-      "name"
-     ],
-     [
-      "sgilb809",
-      "Piney Creek Ravine Nature Preserve",
-      142,
-      "name"
-     ],
-     [
-      "sgilb808",
-      "Piney Creek Ravine Nature Preserve Buffer",
-      63,
-      "name"
-     ],
-     [
-      71041,
-      "Piney Creek Ravine State Natural Area",
-      9,
       "name"
      ]
     ],
@@ -15444,13 +15297,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 211,
+   "pct": 5,
    "same_agency": false,
-   "score": 5,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -15474,8 +15327,8 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 14,
-   "verdict": "off"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-4150": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
@@ -15575,7 +15428,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-4151": {
@@ -15710,38 +15563,24 @@
     }
    ],
    "t": "State Forest",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-4152": {
-   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Sanganois State Fish and Wildlife Area",
-   "official": {
-    "acres": 500.0,
-    "as": "500 acres",
-    "clean": false,
-    "line": "d largely of willow, maple and cottonwood. There are approximately 60 waterfowl blind sites and approximately 500 acres that are open to walk-in hunting. Active habitat management will be occurring throughout the year on the site",
-    "read": "2026-10-29",
-    "sent": "There are approximately 60 waterfowl blind sites and approximately 500 acres that are open to walk-in hunting.",
-    "url": "https://huntillinois.org/sites/sanganois-sfwa",
-    "why": "total-looking"
-   },
+   "official": null,
    "ours": {
-    "acres": 23047,
+    "acres": 11897,
+    "family_fold": "layers {'sgila': 11897, 'padus': 11150}: one land in 2 layers, the sgila copy used (11,150 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
       "sgila1561",
       "Sanganois State Fish and Wildlife Area",
       11897,
-      "name"
-     ],
-     [
-      70882,
-      "Sanganois State Fish and Wildlife Area",
-      11150,
       "name"
      ]
     ],
@@ -15757,13 +15596,12 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 4509,
-   "same_agency": false,
-   "score": 6,
+   "pct": null,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -15772,14 +15610,14 @@
      "as": "500 acres",
      "clean": false,
      "line": "d largely of willow, maple and cottonwood. There are approximately 60 waterfowl blind sites and approximately 500 acres that are open to walk-in hunting. Active habitat management will be occurring throughout the year on the site",
-     "total_like": true,
+     "total_like": false,
      "url": "https://huntillinois.org/sites/sanganois-sfwa",
-     "why": "total-looking"
+     "why": "part (a lake, a purchase, a campground…)"
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
-   "verdict": "off"
+   "ver": 15,
+   "verdict": "unsure"
   },
   "US-4153": {
    "checked": "2026-10-29",
@@ -15788,7 +15626,7 @@
    "ours": null,
    "score": null,
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-4154": {
@@ -15798,7 +15636,7 @@
    "ours": null,
    "score": null,
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-4155": {
@@ -15913,7 +15751,7 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-4156": {
@@ -16057,7 +15895,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-4157": {
@@ -16133,7 +15971,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-4158": {
@@ -16142,19 +15980,14 @@
    "n": "Turkey Bluffs State Fish and Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 4639,
+    "acres": 2355,
+    "family_fold": "layers {'sgila': 2355, 'padus': 2284}: one land in 2 layers, the sgila copy used (2,284 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
       "sgila1463",
       "Turkey Bluffs State Fish and Wildlife Area",
       2355,
-      "name"
-     ],
-     [
-      70885,
-      "Turkey Bluffs State Fish and Wildlife Area",
-      2284,
       "name"
      ]
     ],
@@ -16180,7 +16013,7 @@
    },
    "sizes": [],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-4159": {
@@ -16315,7 +16148,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-4160": {
@@ -16350,7 +16183,8 @@
    "n": "Volo Bog State Natural Area",
    "official": null,
    "ours": {
-    "acres": 2161,
+    "acres": 1184,
+    "family_fold": "layers {'sgila': 1184, 'padus': 796, 'sgilb': 181}: one land in 3 layers, the sgila copy used (977 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
@@ -16358,30 +16192,6 @@
       "Volo Bog State Natural Area",
       1184,
       "name"
-     ],
-     [
-      158045,
-      "Volo Bog",
-      796,
-      "name"
-     ],
-     [
-      "sgilb157",
-      "Volo Bog Nature Preserve Addition",
-      114,
-      "words"
-     ],
-     [
-      "sgilb156",
-      "Volo Bog Nature Preserve",
-      48,
-      "name"
-     ],
-     [
-      "sgilb147",
-      "Volo Bog Nature Preserve Buffer Addition",
-      19,
-      "words"
      ]
     ],
     "pin": "inside",
@@ -16445,7 +16255,7 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-4236": {
@@ -16455,7 +16265,7 @@
    "ours": null,
    "score": null,
    "t": "National Wildlife Refuge",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-4482": {
@@ -16465,15 +16275,10 @@
    "n": "Shawnee National Forest",
    "official": null,
    "ours": {
-    "acres": 567007,
+    "acres": 285589,
+    "family_fold": "layers {'padus': 281418, 'sgila': 285589}: one land in 2 layers, the sgila copy used (281,418 ac of copies not added)",
     "manager": "",
     "pieces": [
-     [
-      3079,
-      "Shawnee National Forest",
-      273706,
-      "name"
-     ],
      [
       "sgila1712",
       "Shawnee National Forest",
@@ -16484,12 +16289,6 @@
       "sgila1671",
       "Shawnee National Forest",
       121690,
-      "name"
-     ],
-     [
-      3080,
-      "Shawnee Purchase Unit",
-      7712,
       "name"
      ]
     ],
@@ -16520,7 +16319,7 @@
    },
    "sizes": [],
    "t": "National Forest",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-4572": {
@@ -16530,7 +16329,7 @@
    "ours": null,
    "score": null,
    "t": "National Historic Trail",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-4573": {
@@ -16540,7 +16339,7 @@
    "ours": null,
    "score": null,
    "t": "National Historic Trail",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-7256": {
@@ -16587,38 +16386,32 @@
    },
    "sizes": [],
    "t": "National Grassland",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7257": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 524 acres, no total words near it)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Saline County State Fish and Wildlife Area",
    "official": {
-    "acres": 524.0,
-    "as": "524 acres",
+    "acres": 1270.0,
+    "as": "1,270 acres",
     "clean": false,
-    "line": "prings and wells are not visible today, the area primarily is a recreational site. The initial acquisition of 524 acres of land was made in 1959 by the state of Illinois, and the total acreage now totals 1,270 acres, including a",
+    "line": "acquisition of 524 acres of land was made in 1959 by the state of Illinois, and the total acreage now totals 1,270 acres, including a beautiful 105-acre lake. History and Directions ​ Youtube XF Path Youtube XF Path Park Closures",
     "read": "2026-10-29",
     "sent": "The initial acquisition of 524 acres of land was made in 1959 by the state of Illinois, and the total acreage now totals 1,270 acres, including a beautiful 105-acre lake.",
     "url": "https://dnr.illinois.gov/parks/park.salinecounty.html",
-    "why": "no total words near it"
+    "why": "part (a lake, a purchase, a campground…)"
    },
    "ours": {
-    "acres": 2582,
+    "acres": 1309,
+    "family_fold": "layers {'sgila': 1309, 'padus': 1273}: one land in 2 layers, the sgila copy used (1,273 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
       "sgila1596",
       "Saline County State Conservation Area",
       1309,
-      "reviewed"
-     ],
-     [
-      70748,
-      "Saline County State Conservation Area",
-      1273,
       "reviewed"
      ]
     ],
@@ -16645,13 +16438,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 393,
+   "pct": 3,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -16693,8 +16486,8 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
-   "verdict": "unsure"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-7258": {
    "checked": "2026-10-29",
@@ -16739,7 +16532,7 @@
    },
    "sizes": [],
    "t": "State Historic Site",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7259": {
@@ -16785,7 +16578,7 @@
    },
    "sizes": [],
    "t": "State Historic Site",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7367": {
@@ -16831,7 +16624,7 @@
    },
    "sizes": [],
    "t": "National Historic Site",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7368": {
@@ -16902,7 +16695,7 @@
     }
    ],
    "t": "State Historic Site",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-7371": {
@@ -17051,7 +16844,7 @@
     }
    ],
    "t": "State Fish and Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-7372": {
@@ -17097,7 +16890,7 @@
    },
    "sizes": [],
    "t": "State Historic Site",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7373": {
@@ -17143,7 +16936,7 @@
    },
    "sizes": [],
    "t": "State Historic Site",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7638": {
@@ -17162,15 +16955,22 @@
     "why": "total-looking"
    },
    "ours": {
-    "acres": 4845,
+    "acres": 3208,
     "dissolved": {
      "after": 4845,
      "before": 8026,
      "copies": 1,
+     "families": {
+      "sgila": 3208,
+      "sgilb": 1637
+     },
+     "family_fold": 1637,
+     "family_used": "sgila",
      "parts": 0,
      "records": 5,
      "tracts": 4
     },
+    "family_fold": "layers {'sgila': 3208, 'sgilb': 1637}: one land in 2 layers, the sgila copy used (1,637 ac of copies not added)",
     "manager": "",
     "note": "5 joined records = 4 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 8026 -> 4845 acres",
     "pieces": [
@@ -17178,24 +16978,6 @@
       "sgila1039",
       "Goose Lake Prairie State Natural Area",
       3208,
-      "name"
-     ],
-     [
-      "sgilb253",
-      "Goose Lake Prairie Nature Preserve",
-      1522,
-      "name"
-     ],
-     [
-      "sgilb255",
-      "Goose Lake Prairie Nature Preserve Buffer",
-      91,
-      "name"
-     ],
-     [
-      "sgilb254",
-      "Goose Lake Prairie Nature Preserve Addition",
-      24,
       "name"
      ]
     ],
@@ -17222,7 +17004,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 384,
+   "pct": 221,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -17270,7 +17052,7 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-7839": {
@@ -17337,7 +17119,7 @@
     }
    ],
    "t": "State Nature Preserve",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-7853": {
@@ -17413,7 +17195,7 @@
     }
    ],
    "t": "State Nature Preserve",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-7871": {
@@ -17480,7 +17262,7 @@
     }
    ],
    "t": "State Nature Preserve",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-7872": {
@@ -17499,15 +17281,22 @@
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 558,
+    "acres": 386,
     "dissolved": {
      "after": 558,
      "before": 944,
      "copies": 1,
+     "families": {
+      "padus": 386,
+      "sgilb": 172
+     },
+     "family_fold": 172,
+     "family_used": "padus",
      "parts": 0,
      "records": 6,
      "tracts": 5
     },
+    "family_fold": "layers {'padus': 386, 'sgilb': 172}: one land in 2 layers, the padus copy used (172 ac of copies not added)",
     "manager": "",
     "note": "6 joined records = 5 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 944 -> 558 acres",
     "pieces": [
@@ -17515,30 +17304,6 @@
       70786,
       "Stemler Cave Woods State Natural Area",
       386,
-      "name"
-     ],
-     [
-      "sgilb598",
-      "Stemler Cave Woods Nature Preserve",
-      100,
-      "name"
-     ],
-     [
-      "sgilb551",
-      "Stemler Cave Woods Nature Preserve Addition #2",
-      56,
-      "words"
-     ],
-     [
-      "sgilb552",
-      "Stemler Cave Woods Nature Preserve Addition #1",
-      15,
-      "words"
-     ],
-     [
-      "sgilb550",
-      "Stemler Cave Nature Preserve",
-      1,
       "name"
      ]
     ],
@@ -17560,7 +17325,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 186,
+   "pct": 98,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -17581,7 +17346,7 @@
     }
    ],
    "t": "State Nature Preserve",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-7917": {
@@ -17648,7 +17413,7 @@
    },
    "sizes": [],
    "t": "National Monument",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-8267": {
@@ -17715,7 +17480,7 @@
     }
    ],
    "t": "State Recreation Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-8294": {
@@ -17761,7 +17526,7 @@
    },
    "sizes": [],
    "t": "State Historic Site",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-8306": {
@@ -17788,7 +17553,8 @@
    "n": "Lincoln's New Salem State Historic Site",
    "official": null,
    "ours": {
-    "acres": 1146,
+    "acres": 586,
+    "family_fold": "layers {'sgila': 586, 'padus': 560}: one land in 2 layers, the sgila copy used (560 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
@@ -17796,12 +17562,6 @@
       "Lincoln's New Salem State Historic Site",
       586,
       "name"
-     ],
-     [
-      157617,
-      "Lincolns New Salem State Park",
-      560,
-      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -17841,7 +17601,7 @@
     }
    ],
    "t": "State Historic Site",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-8320": {
@@ -17887,7 +17647,7 @@
    },
    "sizes": [],
    "t": "State Historic Site",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-8378": {
@@ -18031,7 +17791,7 @@
     }
    ],
    "t": "State Wildlife Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-8379": {
@@ -18086,7 +17846,7 @@
    },
    "sizes": [],
    "t": "State Forest",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-8380": {
@@ -18207,7 +17967,7 @@
     }
    ],
    "t": "State Recreation Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-9802": {
@@ -18269,7 +18029,7 @@
     }
    ],
    "t": "Historic Site",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-9893": {
@@ -18332,7 +18092,7 @@
     }
    ],
    "t": "State Trail",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-9989": {
@@ -18341,19 +18101,14 @@
    "n": "Lewis and Clark Memorial State Historic Site",
    "official": null,
    "ours": {
-    "acres": 1648,
+    "acres": 1086,
+    "family_fold": "layers {'sgila': 1086, 'padus': 562}: one land in 2 layers, the sgila copy used (562 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
       "sgila1418",
       "Lewis and Clark State Historic Site",
       1086,
-      "name"
-     ],
-     [
-      157067,
-      "Lewis & Clark State Historic Site",
-      562,
       "name"
      ]
     ],
@@ -18384,7 +18139,7 @@
    },
    "sizes": [],
    "t": "State Historic Site",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   }
  },

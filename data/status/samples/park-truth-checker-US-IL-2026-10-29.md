@@ -57,34 +57,32 @@ Source file: `data/truth/US-IL.json`
   "read": "2026-10-29",
   "sent": "Fults Hill Prairie Nature Preserve consists of 532 acres of uplands and includes woodland, prairie and glade communities.",
   "url": "https://dnr.illinois.gov/parks/park.fultshillprairie.html",
-  "why": "clean total"
+  "why": "clean total; the agency's pages disagree: another of its pages says 800 acre (that one matches our outline)"
  },
  "ours": {
-  "acres": 2048,
+  "acres": 810,
+  "dissolved": {
+   "after": 1238,
+   "before": 2048,
+   "copies": 1,
+   "families": {
+    "padus": 810,
+    "sgilb": 428
+   },
+   "family_fold": 428,
+   "family_used": "padus",
+   "parts": 0,
+   "records": 4,
+   "tracts": 3
+  },
+  "family_fold": "layers {'padus': 810, 'sgilb': 428}: one land in 2 layers, the padus copy used (428 ac of copies not added)",
   "manager": "",
+  "note": "4 joined records = 3 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 2048 -> 1238 acres",
   "pieces": [
    [
     70806,
     "Fults Hill Prairie State Natural Area",
     810,
-    "name"
-   ],
-   [
-    "sgila1105",
-    "Fults Hill Prairie State Natural Area",
-    810,
-    "name"
-   ],
-   [
-    "sgilb591",
-    "Fults Hill Prairie Nature Preserve",
-    316,
-    "name"
-   ],
-   [
-    "sgilb592",
-    "Fults Hill Prairie Nature Preserve Addition",
-    112,
     "name"
    ]
   ],
@@ -93,7 +91,7 @@ Source file: `data/truth/US-IL.json`
   "unknown_pieces": 0
  },
  "owner_now": null,
- "pct": 285,
+ "pct": 52,
  "same_agency": false,
  "score": 6,
  "t": "State Nature Preserve",
@@ -134,37 +132,43 @@ Source file: `data/truth/US-IL.json`
 ## US-10091 Powerton Lake State Fish and Wildlife Area
 ```json
 {
- "cause": "no total-looking sentence: numbers found were parts or other units",
  "checked": "2026-10-29",
  "handover": [],
  "n": "Powerton Lake State Fish and Wildlife Area",
- "official": null,
+ "official": {
+  "acres": 1426.0,
+  "as": "1,426 acre",
+  "clean": false,
+  "line": "e Content Page Content The actual link for this page is - Powerton Lake Approximately 60% of Powerton Lake, a 1,426 acre cooling reservoir, is open to waterfowl hunting. The remaining is a waterfowl rest area. Active habitat manag",
+  "read": "2026-10-29",
+  "sent": "Approximately 60% of Powerton Lake, a 1,426 acre cooling reservoir, is open to waterfowl hunting.",
+  "url": "https://dnr.illinois.gov/parks/park.powerton-lake.html",
+  "why": "part (a lake, a purchase, a campground…)"
+ },
  "ours": {
-  "acres": 3237,
+  "acres": 1618,
+  "dissolved": {
+   "after": 3163,
+   "before": 3237,
+   "copies": 1,
+   "families": {
+    "padus": 1545,
+    "sgila": 1618
+   },
+   "family_fold": 1545,
+   "family_used": "sgila",
+   "parts": 0,
+   "records": 4,
+   "tracts": 3
+  },
+  "family_fold": "layers {'sgila': 1618, 'padus': 1545}: one land in 2 layers, the sgila copy used (1,545 ac of copies not added)",
   "manager": "",
+  "note": "4 joined records = 3 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 3237 -> 3163 acres",
   "pieces": [
    [
     "sgila1010",
     "Powerton Lake State Fish and Wildlife Area",
     1618,
-    "name"
-   ],
-   [
-    70876,
-    "Powerton lake State Fish and Wildlife Area",
-    1471,
-    "name"
-   ],
-   [
-    71079,
-    "Powerton Lake State Fish and Wildlife Area",
-    74,
-    "name"
-   ],
-   [
-    "sgila998",
-    "Powerton Lake State Fish and Wildlife Area",
-    74,
     "name"
    ]
   ],
@@ -173,10 +177,11 @@ Source file: `data/truth/US-IL.json`
   "unknown_pieces": 0
  },
  "owner_now": null,
- "pct": null,
- "score": 6,
+ "pct": 13,
+ "same_agency": false,
+ "score": 7,
  "t": "State Fish and Wildlife Area",
- "verdict": "unsure"
+ "verdict": "agree"
 }
 ```
 
@@ -235,7 +240,6 @@ Source file: `data/truth/US-IL.json`
 ## US-4137 Lowden-Miller State Forest
 ```json
 {
- "cause": "our union: one of our pieces alone matches the agency (double count?)",
  "checked": "2026-10-29",
  "handover": [],
  "n": "Lowden-Miller State Forest",
@@ -247,23 +251,26 @@ Source file: `data/truth/US-IL.json`
   "read": "2026-10-29",
   "sent": "Named for the family, Lowden-Miller State Forest now totals 2,291 acres.",
   "url": "https://dnr.illinois.gov/parks/about/park.lowdenmiller.html",
-  "why": "clean total; the agency's pages disagree: another of its pages says 4,160 acre (that one matches our outline)"
+  "why": "clean total"
  },
  "ours": {
-  "acres": 4692,
+  "acres": 2347,
+  "dissolved": {
+   "after": 2347,
+   "before": 4692,
+   "copies": 1,
+   "parts": 0,
+   "records": 2,
+   "tracts": 1
+  },
   "manager": "",
+  "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 4692 -> 2347 acres",
   "pieces": [
    [
     70753,
     "Lowden-Miller State Forest",
     2347,
     "name"
-   ],
-   [
-    "sgila991",
-    "Lowden-Miller State Forest",
-    2345,
-    "name"
    ]
   ],
   "pin": "inside",
@@ -271,51 +278,54 @@ Source file: `data/truth/US-IL.json`
   "unknown_pieces": 0
  },
  "owner_now": null,
- "pct": 105,
+ "pct": 2,
  "same_agency": false,
- "score": 6,
+ "score": 8,
  "t": "State Forest",
- "verdict": "off"
+ "verdict": "agree"
 }
 ```
 
 ## US-0285 Meredosia National Wildlife Refuge
 ```json
 {
- "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
  "checked": "2026-10-29",
  "handover": [],
  "n": "Meredosia National Wildlife Refuge",
  "official": {
-  "acres": 2350.0,
-  "as": "2,350 acres",
-  "clean": true,
-  "line": "th varying habitat types. Management Units The Island Meredosia Island Unit is the largest management unit at 2,350 acres in size and is a mosaic of habitat types with seasonal wetlands, bottomland forest and scrub-shrub habitat. T",
+  "acres": 3645.0,
+  "as": "3,645 acres",
+  "clean": false,
+  "line": "ibrary Species Map https://www.facebook.com/IllinoisRiverNWFR/ About Us Meredosia National Wildlife Refuge is 3,645 acres and is located in an area that was historically known for its ability to sustain fish and wildlife along the",
   "read": "2026-10-29",
-  "sent": "Meredosia Island Unit is the largest management unit at 2,350 acres in size and is a mosaic of habitat types with seasonal wetlands, bottomland forest and scrub-shrub habitat.",
+  "sent": "Meredosia National Wildlife Refuge is 3,645 acres and is located in an area that was historically known for its ability to sustain fish and wildlife along the east side of the Illinois River in Morgan and Cass counties, near the town of Meredosia, Illinois.",
   "url": "https://www.fws.gov/refuge/meredosia/about-us",
-  "why": "clean total; the agency's pages disagree: another of its pages says 13,000 acres (that one matches our outline)"
+  "why": "total-looking"
  },
  "ours": {
-  "acres": 11537,
+  "acres": 4141,
+  "dissolved": {
+   "after": 7839,
+   "before": 11537,
+   "copies": 1,
+   "families": {
+    "padus": 3698,
+    "sgila": 4141
+   },
+   "family_fold": 3698,
+   "family_used": "sgila",
+   "parts": 0,
+   "records": 3,
+   "tracts": 2
+  },
+  "family_fold": "layers {'sgila': 4141, 'padus': 3698}: one land in 2 layers, the sgila copy used (3,698 ac of copies not added)",
   "manager": "",
+  "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 11537 -> 7839 acres",
   "pieces": [
    [
     "sgila1487",
     "Meredosia National Wildlife Refuge",
     4141,
-    "name"
-   ],
-   [
-    4109,
-    "Meredosia National Wildlife Refuge",
-    3698,
-    "name"
-   ],
-   [
-    5066,
-    "Meredosia National Wildlife Refuge",
-    3698,
     "name"
    ]
   ],
@@ -324,11 +334,11 @@ Source file: `data/truth/US-IL.json`
   "unknown_pieces": 0
  },
  "owner_now": null,
- "pct": 391,
+ "pct": 14,
  "same_agency": false,
- "score": 6,
+ "score": 8,
  "t": "National Wildlife Refuge",
- "verdict": "off"
+ "verdict": "agree"
 }
 ```
 
@@ -365,7 +375,6 @@ Source file: `data/truth/US-IL.json`
 ## US-4149 Piney Creek Ravine State Natural Area
 ```json
 {
- "cause": "our union: one of our pieces alone matches the agency (double count?)",
  "checked": "2026-10-29",
  "handover": [],
  "n": "Piney Creek Ravine State Natural Area",
@@ -380,37 +389,14 @@ Source file: `data/truth/US-IL.json`
   "why": "clean total"
  },
  "ours": {
-  "acres": 615,
+  "acres": 208,
+  "family_fold": "layers {'sgila': 208, 'padus': 202, 'sgilb': 205}: one land in 3 layers, the sgila copy used (407 ac of copies not added)",
   "manager": "",
   "pieces": [
    [
     "sgila1460",
     "Piney Creek Ravine State Natural Area",
     208,
-    "name"
-   ],
-   [
-    70830,
-    "Piney Creek Ravine State Natural Area",
-    193,
-    "name"
-   ],
-   [
-    "sgilb809",
-    "Piney Creek Ravine Nature Preserve",
-    142,
-    "name"
-   ],
-   [
-    "sgilb808",
-    "Piney Creek Ravine Nature Preserve Buffer",
-    63,
-    "name"
-   ],
-   [
-    71041,
-    "Piney Creek Ravine State Natural Area",
-    9,
     "name"
    ]
   ],
@@ -419,11 +405,11 @@ Source file: `data/truth/US-IL.json`
   "unknown_pieces": 0
  },
  "owner_now": null,
- "pct": 211,
+ "pct": 5,
  "same_agency": false,
- "score": 5,
+ "score": 7,
  "t": "State Natural Area",
- "verdict": "off"
+ "verdict": "agree"
 }
 ```
 
@@ -445,19 +431,14 @@ Source file: `data/truth/US-IL.json`
  "n": "Siloam Springs State Park",
  "official": null,
  "ours": {
-  "acres": 11887,
+  "acres": 6033,
+  "family_fold": "layers {'sgila': 6033, 'padus': 5854}: one land in 2 layers, the sgila copy used (5,854 ac of copies not added)",
   "manager": "",
   "pieces": [
    [
     "sgila1569",
     "Siloam Springs State Park",
     6033,
-    "name"
-   ],
-   [
-    70901,
-    "Siloam Springs State Park",
-    5854,
     "name"
    ]
   ],
@@ -476,7 +457,6 @@ Source file: `data/truth/US-IL.json`
 ## US-1017 Ramsey Lake State Park
 ```json
 {
- "cause": "our union: one of our pieces alone matches the agency (double count?)",
  "checked": "2026-10-29",
  "handover": [],
  "n": "Ramsey Lake State Park",
@@ -491,20 +471,23 @@ Source file: `data/truth/US-IL.json`
   "why": "total-looking"
  },
  "ours": {
-  "acres": 3518,
+  "acres": 1759,
+  "dissolved": {
+   "after": 1759,
+   "before": 3518,
+   "copies": 1,
+   "parts": 0,
+   "records": 2,
+   "tracts": 1
+  },
   "manager": "",
+  "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 3518 -> 1759 acres",
   "pieces": [
    [
     70844,
     "Ramsey Lake State Recreation Area",
     1759,
     "name"
-   ],
-   [
-    "sgila1152",
-    "Ramsey Lake State Recreation Area",
-    1759,
-    "name"
    ]
   ],
   "pin": "inside",
@@ -512,51 +495,47 @@ Source file: `data/truth/US-IL.json`
   "unknown_pieces": 0
  },
  "owner_now": null,
- "pct": 78,
+ "pct": 11,
  "same_agency": false,
- "score": 6,
+ "score": 8,
  "t": "State Park",
- "verdict": "off"
+ "verdict": "agree"
 }
 ```
 
 ## US-0283 Cypress Creek National Wildlife Refuge
 ```json
 {
- "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
  "checked": "2026-10-29",
  "handover": [],
  "n": "Cypress Creek National Wildlife Refuge",
  "official": {
-  "acres": 35000.0,
-  "as": "35,000 acres",
-  "clean": true,
-  "line": "ized on June 26, 1990 under the Emergency Wetland Resources Act of 1986. The refuge will eventually encompass 35,000 acres. Management emphasis is placed on acquiring land, restoring habitat and providing opportunities for the publi",
+  "acres": 15676.0,
+  "as": "15,676 acres",
+  "clean": false,
+  "line": "s during a furbearer hunting season. Closed Areas A variety of wildlife dependent activities are permitted on 15,676 acres of the Cypress Creek National Wildlife Refuge. However, there are two areas closed to public access: Bellrose",
   "read": "2026-10-29",
-  "sent": "The refuge will eventually encompass 35,000 acres.",
-  "url": "https://www.fws.gov/refuge/cypress-creek/about-us",
-  "why": "clean total"
+  "sent": "A variety of wildlife dependent activities are permitted on 15,676 acres of the Cypress Creek National Wildlife Refuge.",
+  "url": "https://www.fws.gov/refuge/cypress-creek/visit-us/rules-policies",
+  "why": "total-looking"
  },
  "ours": {
-  "acres": 50025,
+  "acres": 16728,
+  "dissolved": {
+   "after": 16728,
+   "before": 50025,
+   "copies": 2,
+   "parts": 0,
+   "records": 3,
+   "tracts": 1
+  },
   "manager": "",
+  "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 50025 -> 16728 acres",
   "pieces": [
    [
     3760,
     "Cypress Creek National Wildlife Refuge",
     16728,
-    "name"
-   ],
-   [
-    4699,
-    "Cypress Creek National Wildlife Refuge",
-    16715,
-    "name"
-   ],
-   [
-    "sgila3332",
-    "Cypress Creek National Wildlife Refuge",
-    16582,
     "name"
    ]
   ],
@@ -565,10 +544,10 @@ Source file: `data/truth/US-IL.json`
   "unknown_pieces": 0
  },
  "owner_now": null,
- "pct": 43,
+ "pct": 7,
  "same_agency": false,
- "score": 6,
+ "score": 8,
  "t": "National Wildlife Refuge",
- "verdict": "off"
+ "verdict": "agree"
 }
 ```
