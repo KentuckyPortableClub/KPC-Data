@@ -2219,8 +2219,9 @@
      45.636687
     ]
    ],
-   "status": "not sure: water not checked (no Canadian water map read yet)",
+   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
    "tier": "very tight: could be map error: check both official maps on the ground",
+   "water_checked": "2026-10-29",
    "wide_m": 45
   },
   {
@@ -4461,8 +4462,9 @@
      45.636687
     ]
    ],
-   "status": "not sure: water not checked (no Canadian water map read yet)",
+   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
    "tier": "very tight: could be map error: check both official maps on the ground",
+   "water_checked": "2026-10-29",
    "wide_m": 45
   },
   {
@@ -5433,317 +5435,6 @@
    "refs": [
     "CA-0073",
     "CA-1238"
-   ],
-   "shape": [
-    [
-     -66.365583,
-     45.960199
-    ],
-    [
-     -66.369587,
-     45.958752
-    ]
-   ],
-   "status": "dropped in pass 3",
-   "tier": "very tight: could be map error: check both official maps on the ground",
-   "wide_m": 10
-  },
-  {
-   "acres": 6.7,
-   "box": [
-    -66.3691,
-    45.9573,
-    -66.36574,
-    45.95983
-   ],
-   "center": [
-    45.959466,
-    -66.366516
-   ],
-   "found": "2026-10-29",
-   "id": "CA-0073+CA-2022+CA-6539@area@45.959,-66.367",
-   "kind": "area",
-   "passes": [
-    1,
-    0,
-    0
-   ],
-   "refs": [
-    "CA-0073",
-    "CA-2022",
-    "CA-6539"
-   ],
-   "shape": [
-    [
-     -66.36574,
-     45.959827
-    ],
-    [
-     -66.367032,
-     45.959647
-    ],
-    [
-     -66.3691,
-     45.957295
-    ],
-    [
-     -66.367549,
-     45.957838
-    ]
-   ],
-   "small": "small overlap: tight fit, check carefully",
-   "status": "dropped in pass 2 (an outline could not be downloaded)",
-   "wide_m": 68
-  },
-  {
-   "acres": 15.5,
-   "box": [
-    -66.38276,
-    45.90585,
-    -66.34169,
-    45.93433
-   ],
-   "center": [
-    45.934334,
-    -66.341691
-   ],
-   "found": "2026-10-29",
-   "id": "CA-0073+CA-2022@area@45.910,-66.376",
-   "kind": "area",
-   "passes": [
-    1,
-    1,
-    0
-   ],
-   "refs": [
-    "CA-0073",
-    "CA-2022"
-   ],
-   "shape": [
-    [
-     -66.341691,
-     45.934334
-    ],
-    [
-     -66.351635,
-     45.922848
-    ],
-    [
-     -66.352023,
-     45.92312
-    ],
-    [
-     -66.353056,
-     45.922577
-    ],
-    [
-     -66.354218,
-     45.923391
-    ],
-    [
-     -66.354735,
-     45.92312
-    ],
-    [
-     -66.355122,
-     45.923572
-    ],
-    [
-     -66.356155,
-     45.923934
-    ],
-    [
-     -66.356285,
-     45.924567
-    ],
-    [
-     -66.356672,
-     45.924476
-    ],
-    [
-     -66.35693,
-     45.925019
-    ],
-    [
-     -66.358351,
-     45.92529
-    ],
-    [
-     -66.374623,
-     45.906389
-    ],
-    [
-     -66.37514,
-     45.906298
-    ],
-    [
-     -66.374882,
-     45.905846
-    ],
-    [
-     -66.375011,
-     45.906208
-    ],
-    [
-     -66.37359,
-     45.907564
-    ],
-    [
-     -66.358351,
-     45.9252
-    ],
-    [
-     -66.357189,
-     45.925109
-    ],
-    [
-     -66.356801,
-     45.924476
-    ],
-    [
-     -66.356285,
-     45.924476
-    ],
-    [
-     -66.356155,
-     45.923843
-    ],
-    [
-     -66.355251,
-     45.923572
-    ],
-    [
-     -66.354864,
-     45.923029
-    ],
-    [
-     -66.354218,
-     45.923391
-    ],
-    [
-     -66.353056,
-     45.922577
-    ],
-    [
-     -66.352023,
-     45.92312
-    ],
-    [
-     -66.351764,
-     45.922848
-    ],
-    [
-     -66.352668,
-     45.922487
-    ],
-    [
-     -66.35241,
-     45.921944
-    ]
-   ],
-   "status": "dropped in pass 3",
-   "tier": "very tight: could be map error: check both official maps on the ground",
-   "wide_m": 10
-  },
-  {
-   "acres": 2.1,
-   "box": [
-    -66.39064,
-    45.9507,
-    -66.37927,
-    45.95504
-   ],
-   "center": [
-    45.955044,
-    -66.379273
-   ],
-   "found": "2026-10-29",
-   "id": "CA-0073+CA-2022@area@45.951,-66.391",
-   "kind": "area",
-   "passes": [
-    1,
-    1,
-    0
-   ],
-   "refs": [
-    "CA-0073",
-    "CA-2022"
-   ],
-   "shape": [
-    [
-     -66.379273,
-     45.955044
-    ],
-    [
-     -66.381597,
-     45.95414
-    ]
-   ],
-   "status": "dropped in pass 3",
-   "tier": "very tight: could be map error: check both official maps on the ground",
-   "wide_m": 10
-  },
-  {
-   "acres": 0.5,
-   "box": [
-    -66.3754,
-    45.95649,
-    -66.37333,
-    45.9574
-   ],
-   "center": [
-    45.957395,
-    -66.373332
-   ],
-   "found": "2026-10-29",
-   "id": "CA-0073+CA-2022@area@45.957,-66.373",
-   "kind": "area",
-   "passes": [
-    1,
-    1,
-    0
-   ],
-   "refs": [
-    "CA-0073",
-    "CA-2022"
-   ],
-   "shape": [
-    [
-     -66.373332,
-     45.957395
-    ],
-    [
-     -66.375398,
-     45.956491
-    ]
-   ],
-   "status": "dropped in pass 3",
-   "tier": "very tight: could be map error: check both official maps on the ground",
-   "wide_m": 10
-  },
-  {
-   "acres": 1.1,
-   "box": [
-    -66.36959,
-    45.95875,
-    -66.36558,
-    45.9602
-   ],
-   "center": [
-    45.960199,
-    -66.365712
-   ],
-   "found": "2026-10-29",
-   "id": "CA-0073+CA-2022@area@45.959,-66.367",
-   "kind": "area",
-   "passes": [
-    1,
-    1,
-    0
-   ],
-   "refs": [
-    "CA-0073",
-    "CA-2022"
    ],
    "shape": [
     [
@@ -13656,7 +13347,8 @@
      44.660563
     ]
    ],
-   "status": "not sure: water not checked (no Canadian water map read yet)",
+   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "water_checked": "2026-10-29",
    "wide_m": 589
   },
   {
@@ -18162,145 +17854,6 @@
    ],
    "status": "waiting for pass 2",
    "wide_m": 1802
-  },
-  {
-   "access": null,
-   "access_pin": null,
-   "box": [
-    -63.389,
-    49.301,
-    -63.24,
-    49.354
-   ],
-   "center": [
-    49.329522,
-    -63.297217
-   ],
-   "checked": "2026-10-29",
-   "found": "2026-10-29",
-   "id": "CA-1238+CA-2022@same land@49.330,-63.297",
-   "kind": "same land",
-   "label": "Same land, two park numbers",
-   "maps": [
-    [
-     "CA-1238",
-     "https://www2.gnb.ca/content/gnb/en/departments/erd/forestry-conservation/content/ProtectedNaturalAreas/Class2.html"
-    ],
-    [
-     "CA-2022",
-     ""
-    ]
-   ],
-   "names": {
-    "CA-1238": "Grand Lake Nature Reserve",
-    "CA-2022": "Grand-Lac-Sale Ecological Reserve"
-   },
-   "note": "both park numbers are joined to the same official outline (Grand Lake); POTA lists them separately: check POTA's current list",
-   "owner_here": "state land (from the outline both numbers are joined to)",
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "refs": [
-    "CA-1238",
-    "CA-2022"
-   ],
-   "shape": [
-    [
-     -63.367,
-     49.354
-    ],
-    [
-     -63.325,
-     49.344
-    ],
-    [
-     -63.289,
-     49.348
-    ],
-    [
-     -63.281,
-     49.341
-    ],
-    [
-     -63.277,
-     49.342
-    ],
-    [
-     -63.274,
-     49.334
-    ],
-    [
-     -63.268,
-     49.331
-    ],
-    [
-     -63.25,
-     49.327
-    ],
-    [
-     -63.24,
-     49.33
-    ],
-    [
-     -63.248,
-     49.324
-    ],
-    [
-     -63.246,
-     49.321
-    ],
-    [
-     -63.265,
-     49.308
-    ],
-    [
-     -63.265,
-     49.301
-    ],
-    [
-     -63.27,
-     49.302
-    ],
-    [
-     -63.279,
-     49.309
-    ],
-    [
-     -63.279,
-     49.314
-    ],
-    [
-     -63.292,
-     49.323
-    ],
-    [
-     -63.308,
-     49.326
-    ],
-    [
-     -63.333,
-     49.322
-    ],
-    [
-     -63.349,
-     49.332
-    ],
-    [
-     -63.375,
-     49.339
-    ],
-    [
-     -63.389,
-     49.353
-    ],
-    [
-     -63.367,
-     49.354
-    ]
-   ],
-   "status": "candidate"
   },
   {
    "box": [
@@ -26729,7 +26282,8 @@
      45.441086
     ]
    ],
-   "status": "not sure: water not checked (no Canadian water map read yet)",
+   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "water_checked": "2026-10-29",
    "wide_m": 125
   },
   {
