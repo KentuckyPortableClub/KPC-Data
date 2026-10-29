@@ -1447,6 +1447,7 @@ def build_item(sid, agency, ref, cl, sent, row, area, first_seen):
     key = slug((what + ' ' + sent)[:70], 48)
     iid = f'sc-{sid}-{key}-{ref}'
     if cl.get('hunt_item') and frm: iid = f'sc-ky-fw-wma-{ref}-{frm.isoformat()}' if sid.startswith('ky-') else f'sc-{sid}-hunt-{ref}-{frm.isoformat()}'
+    elif sid.endswith('-hunt-plug') and frm: iid = f'{iid}-{frm.isoformat()}'   # Oct 29 (chat 11): one id per hunt date (10 list notes shared an id)
     it = {'id': iid, 'ref': ref, 'area': area, 'src': sid, 'agency': agency, 'class': cl['class'],
           'what': what[:90], 'details': f'"{sent.strip()}"', 'from': frm.isoformat() if frm else None, 'to': to.isoformat() if to else None,
           'updated': upd.isoformat() if upd else None, 'stale': stale, 'link': row.get('child') or row.get('link') or '', 'link2': '',
@@ -1591,6 +1592,10 @@ def process_area(K, area, state, review):
         f, t = dt.date.fromisoformat(it['from']), dt.date.fromisoformat(it.get('to') or it['from'])
         return any(r == it['ref'] and dt.date.fromisoformat(a_) - dt.timedelta(days=1) <= t and f <= dt.date.fromisoformat(b_) + dt.timedelta(days=1) for r, a_, b_ in lst)
     items = [it for it in items if not _ruled(it)]
+    seen_ids = {}
+    for it in items:   # never two items with one id (a card / the waiting room key on it): the second gets its date or a number
+        n = seen_ids.get(it['id'], 0); seen_ids[it['id']] = n + 1
+        if n: it['id'] = f"{it['id']}-{it.get('from') or n}"
     banners = mass_banners(items, area)
     D = {'area': area, 'read': NOW, 'ver': VER, 'about': 'Closures super-bot (RULE SHEET D). details = the agency\'s own sentence. Nothing here is on a card until Brandon\'s GO (CL-5).',
          'sources': srcs, 'items': sorted(items, key=lambda x: (x['ref'], x['id'])), 'banners': banners,
