@@ -1,4 +1,4 @@
-# Scoreboard check (2026-10-28)
+# Scoreboard check (2026-10-29)
 
 Bot counts (data/us-key, data/ca-key tonight) next to chat 8's hand counts (KPC_Scoreboard_NA.csv, Oct 27 night).
 A difference is not an error by itself: the keys move nightly, retired parks are left out here, and chat 8 sorted BLM areas by name.
@@ -21,8 +21,8 @@ A difference is not an error by itself: the keys move nightly, retired parks are
 | US-ID | pin_only | 77 | 77 | 0 |
 | US-ID | line | 11 | 13 | -2 |
 | US-MS | total | 155 | 155 | 0 |
-| US-MS | with_outline | 89 | 89 | 0 |
-| US-MS | missing | 63 | 63 | 0 |
+| US-MS | with_outline | 91 | 89 | +2 |
+| US-MS | missing | 61 | 63 | -2 |
 | US-MS | pin_only | 3 | 3 | 0 |
 | US-MS | line | 0 | 0 | 0 |
 | US-OH | total | 276 | 276 | 0 |
@@ -36,6 +36,6 @@ A difference is not an error by itself: the keys move nightly, retired parks are
 | US-TN | pin_only | 2 | 2 | 0 |
 | US-TN | line | 6 | 6 | 0 |
 
-Columns that differ: 9.
+Columns that differ: 11.
 
 Known reasons for a small difference elsewhere: parks POTA retired since Oct 27 (links data/retired-refs.json) are left out of the bot counts (Oct 28: WY -4, QC -1); the keys are rebuilt nightly.
