@@ -1,0 +1,22 @@
+{
+ "checked": "2026-10-29T12:46Z",
+ "switched_on": true,
+ "results": [
+  {
+   "path": "data/access/US-OH.json",
+   "kind": "access",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/access/index.json",
+   "kind": "info",
+   "why": [],
+   "notes": [
+    "the access index: passes when it reads as JSON"
+   ],
+   "verdict": "PASS"
+  }
+ ]
+}
