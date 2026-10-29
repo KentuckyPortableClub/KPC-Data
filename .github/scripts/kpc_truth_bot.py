@@ -410,6 +410,8 @@ def ours_key(rec):
         if sum(tot.values()) > tot[big] * 1.05:
             dis = dict(dis, families={f: round(v) for f, v in tot.items()}, family_used=big, family_fold=round(sum(tot.values()) - tot[big]))
             kept = fams[big]; acres = tot[big]
+    if isinstance(rec.get('ac'), (int, float)) and rec['ac'] > 0 and abs(rec['ac'] - acres) > .05 * max(acres, 1):   # chat 2 Oct 29 7:35 AM: the key's own union acreage (one family's land counted once) wins
+        dis = dict(dis, key_union=rec['ac'], summed=round(acres)); acres = rec['ac']
     far = rec.get('far')
     pin = 'inside' if not far else 'just outside' if far == 'edge' else 'well outside' if far in ('well outside', 'outside') else str(far)
     srcs = sorted({str(p[3]).split('·')[-1].strip() for p in pieces if '·' in str(p[3])}) or (['USGS PAD-US'] if any(isinstance(p[0], int) for p in pieces) else [])
