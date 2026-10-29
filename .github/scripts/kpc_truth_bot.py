@@ -106,6 +106,10 @@ KINDW = re.compile(r'\b(state|national|provincial|park|parks|forest|wildlife|man
 OTHER_CORES = set()
 DESIG = {}         # {'state': bool, 'national': bool} of the park being read (T4: a State wild river is not the National river of the same name)
 SHARED = {}        # url -> how many parks of the area call it their own page (v8: 3+ = an index page, never one park's size)
+WRONG_PAGE = {   # Oct 29 (Fable, chat 8 regrade (3)): the site's link for these parks is another unit's page; the Park Detective finds the own page
+    'US-12752': r'Rush-Island-Bottoms',   # Green River SNA: Rush Island Bottoms is ONE of its three units (the bot read 440 ac for the whole SNA)
+    'US-7962': r'Burnett-WWCA',           # Little South Fork SNA: Burnett WWCA is a different area (3,145 ac)
+}
 REF_STATES = {}    # ref -> [areas] for parks POTA lists in several states (v8: compare the WHOLE park)
 OURS_WHOLE = {}    # ref -> acres summed over every state's key (v8)
 MULTI = {}         # {'area', 'state' (full name), 'ky' (bool)}: set per area   # the other parks of the area (core names), set per area: a sentence naming another park is not this park's size
@@ -465,7 +469,8 @@ def candidate_pages(ref, park, web, docs, ky):
         if not u.startswith('http') or BAD_PAGE.search(u): return
         if u not in [x[0] for x in out]: out.append((u, why))
     k = ky.get(ref) or {}
-    add(k.get('web'), "the park's page (Kentucky answer key)")
+    if not re.search(WRONG_PAGE.get(ref, '$^'), str(k.get('web') or ''), re.I):   # Oct 29 (Fable / chat 8 (3)): a site link that is ANOTHER unit's page is not read
+        add(k.get('web'), "the park's page (Kentucky answer key)")
     add(park.get('web'), "the park's page (data/parkinfo)")
     d = (docs.get(ref) or {})
     add((d.get('page') or ''), "the park's page (documents bot)")
