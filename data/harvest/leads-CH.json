@@ -1,24 +1,56 @@
 {
  "about": "World harvester leads for Switzerland (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "CH",
- "date": "2026-10-28",
+ "date": "2026-10-29",
  "status": "done",
  "steps_done": [
   "known",
   "servers",
   "wfs",
-  "orgs",
-  "catalogs",
-  "downloads",
-  "search",
-  "eea"
+  "orgs"
  ],
  "bands": {
   "A": 0,
   "B": 0,
   "C": 0
  },
+ "failures": [
+  {
+   "catalog": "https://opendata.swiss",
+   "keyword": "Nationalpark",
+   "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+   "catalog": "https://opendata.swiss",
+   "keyword": "Naturpark",
+   "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+   "catalog": "https://opendata.swiss",
+   "keyword": "Pärke",
+   "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+   "catalog": "https://opendata.swiss",
+   "keyword": "Schutzgebiet",
+   "error": "Expecting value: line 1 column 1 (char 0)"
+  }
+ ],
+ "rejected_orgs": [],
  "known_good_found": [],
- "known_good_missed": [],
+ "known_good_missed": [
+  "https://data.geo.admin.ch/api/stac/v0.9/collections/ch.bafu.schutzgebiete-paerke_nationaler_bedeutung"
+ ],
+ "known_log": [
+  {
+   "step": "known",
+   "what": "https://data.geo.admin.ch/api/stac/v0.9/collections/ch.bafu.schutzgebiete-paerke_nationaler_bedeutung: 0 feature types, 0 look like park layers"
+  },
+  {
+   "step": "known",
+   "what": "https://data.geo.admin.ch/api/stac/v0.9/collections/ch.bafu.schutzgebiete-paerke_nationaler_bedeutung",
+   "found": false
+  }
+ ],
  "leads": {}
 }
