@@ -9,11 +9,11 @@
  },
  "about": "MISSING CHECK (chat 2, Oct 27 2026; HQ 3:46 PM, Brandon: 'chat 8 can't verify what's missing'). For each area of a 2-fer run, every See kpc_fers_expected.py. Chat 8 reviews DROPPED + NEVER LOOKED AT.",
  "area": "ky",
- "date": "2026-10-28",
+ "date": "2026-10-29",
  "pass": true,
  "counts": {
-  "FOUND": 83,
-  "DROPPED": 86,
+  "FOUND": 82,
+  "DROPPED": 87,
   "NEVER LOOKED AT": 262
  },
  "FOUND": [
@@ -27,17 +27,6 @@
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
    "row": "US-0019+US-10164@area@36.659,-83.582"
-  },
-  {
-   "refs": [
-    "US-0050",
-    "US-10105"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (295x, POTA history)",
-    "old guide (Oct 13 Kentucky 2-fers guide)"
-   ],
-   "row": "US-0050+US-10105@area@37.171,-86.156"
   },
   {
    "refs": [
@@ -953,6 +942,18 @@
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0050",
+    "US-10105"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (295x, POTA history)",
+    "old guide (Oct 13 Kentucky 2-fers guide)"
+   ],
+   "reason": "not sure: the outlines overlap, but the the Park Service's own land tracts (Land Resources Division; PAD-US fee records when it does not answer) does not show this patch as the agency's land (that map",
+   "rule": "rule 7 (NOT SURE is kept out)"
   },
   {
    "refs": [

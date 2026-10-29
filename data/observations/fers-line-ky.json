@@ -2,6 +2,16 @@
  "about": "OBSERVATIONS LOG (kpc_map_observations.py; MAP DATA RULE SHEET, notes/mapping.md): what the map bots saw that is worth a human look. Chat 8 reviews; nothing changes because of this file. Items drop off 90 days after they were last seen.",
  "items": [
   {
+   "first": "2026-10-29",
+   "kind": "possible overlap",
+   "last": "2026-10-29",
+   "name": "Mammoth Cave National Park + The Green National Wild and Scenic River",
+   "place": "US-KY",
+   "ref": "US-0050+US-10105",
+   "run": "2-fer line ky",
+   "what": "not sure: the outlines overlap, but the the Park Service's o (hidden; chat 8 checks both official maps)"
+  },
+  {
    "first": "2026-10-28",
    "kind": "possible overlap",
    "last": "2026-10-28",
@@ -1533,9 +1543,11 @@
   }
  ],
  "last_run": {
-  "counts": {},
-  "date": "2026-10-28",
-  "new": 153,
+  "counts": {
+   "possible overlap": 1
+  },
+  "date": "2026-10-29",
+  "new": 1,
   "run": "2-fer line ky"
  }
 }

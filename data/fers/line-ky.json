@@ -5,45 +5,46 @@
   "US-KY"
  ],
  "since": "2026-10-28",
- "date": "2026-10-28 19:07 UTC",
+ "date": "2026-10-29 00:32 UTC",
  "verdict": "READY FOR CHAT 8",
  "why": [],
- "known_answers": "18/18 on 2026-10-28",
+ "known_answers": "18/18 on 2026-10-29",
  "missing_check": {
-  "FOUND": 83,
-  "DROPPED": 86,
+  "FOUND": 82,
+  "DROPPED": 87,
   "NEVER LOOKED AT": 262
  },
  "report": {
   "pass1": {
    "date": "2026-10-28",
-   "pairs tested": 555,
-   "pairs whose boxes touch": 555
+   "pairs tested": 120,
+   "pairs whose boxes touch": 120
   },
   "pass2": {
-   "agree with the pass before": 368,
+   "agree with the pass before": 39,
    "date": "2026-10-28",
-   "pairs tested": 104
+   "pairs tested": 24
   },
   "pass3": {
-   "agree with the pass before": 288,
-   "date": "2026-10-28",
-   "pairs tested": 101
+   "agree with the pass before": 32,
+   "date": "2026-10-29",
+   "pairs tested": 22
   },
   "pass5": {
-   "checked": 25,
-   "date": "2026-10-28",
+   "checked": 24,
+   "date": "2026-10-29",
    "pairs tested": 0,
    "still not checked": 0
   }
  },
  "US-KY": {
   "rows": 426,
-  "live": 69,
+  "live": 68,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "the ownership map shows more than one owner across the spot": 4,
+   "the outlines overlap, but the the Park Service's own land tr": 1,
    "no public owner on the ownership map": 1,
    "no public owner on PAD-US at the spot, and KDFWR's own page": 1,
    "the outlines overlap, but the Forest Service ownership map": 2

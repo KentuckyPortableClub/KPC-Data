@@ -9,18 +9,20 @@
    "no pin": 0,
    "pin well outside": 0
   },
-  "missing boundary": 1,
   "official parks": 199,
-  "pairs tested": 555,
-  "pairs whose boxes touch": 555,
-  "parks done by the box test": 0,
+  "pairs tested": 120,
+  "pairs whose boxes touch": 120,
+  "parks done by the box test": 163,
   "parks whose outline could not be read": 0,
   "pass": 1,
-  "problems": [],
+  "problems": [
+   "looked file: small batch: the whole-area look-list is kept as it was",
+   "missing list: small batch: the missing-boundary list is kept as it was"
+  ],
   "with official lines": 11
  },
  "pass2": {
-  "agree with the pass before": 368,
+  "agree with the pass before": 39,
   "cell_m": 10.0,
   "date": "2026-10-28",
   "left out": {
@@ -29,30 +31,30 @@
    "no pin": 0,
    "pin well outside": 0
   },
-  "new here only (not counted)": 178,
+  "new here only (not counted)": 81,
   "official parks": 199,
-  "pairs tested": 104,
+  "pairs tested": 24,
   "parks whose outline could not be read": 0,
-  "parks with a saved copy only (no fresh download possible)": 2,
+  "parks with a saved copy only (no fresh download possible)": 0,
   "pass": 2,
   "problems": [],
   "with official lines": 11
  },
  "pass3": {
-  "agree with the pass before": 288,
+  "agree with the pass before": 32,
   "cell_m": 5.0,
-  "date": "2026-10-28",
+  "date": "2026-10-29",
   "left out": {
    "approximate": 0,
    "no outline": 4,
    "no pin": 0,
    "pin well outside": 0
   },
-  "new here only (not counted)": 152,
+  "new here only (not counted)": 64,
   "official parks": 199,
-  "pairs tested": 101,
+  "pairs tested": 22,
   "parks whose outline could not be read": 0,
-  "parks with a saved copy only (no fresh download possible)": 2,
+  "parks with a saved copy only (no fresh download possible)": 0,
   "pass": 3,
   "problems": [],
   "with official lines": 11
@@ -76,8 +78,8 @@
  },
  "pass5": {
   "cell_m": 5.0,
-  "checked": 25,
-  "date": "2026-10-28",
+  "checked": 24,
+  "date": "2026-10-29",
   "left out": {
    "approximate": 0,
    "no outline": 4,
@@ -97,11 +99,11 @@
  },
  "per state": {
   "US-KY": {
-   "candidates": 64,
+   "candidates": 63,
    "candidates (saved outline only)": 1,
    "lines": 222,
    "n-fers": 20,
-   "not sure": 8,
+   "not sure": 9,
    "pass1": 426,
    "pass2": 370,
    "spots": 426,

@@ -1,10 +1,33 @@
 {
  "area": "ky",
- "date": "2026-10-28",
+ "date": "2026-10-29",
  "states": [
   "US-KY"
  ],
  "rows": [
+  {
+   "area": "ky",
+   "state": "US-KY",
+   "refs": [
+    "US-0050",
+    "US-10105"
+   ],
+   "names": {
+    "US-0050": "Mammoth Cave National Park",
+    "US-10105": "The Green National Wild and Scenic River"
+   },
+   "what": "not sure",
+   "kind": "area",
+   "size": "6852.4 ac",
+   "sort": 6852.4,
+   "reason": "the outlines overlap, but the the Park Service's own land tracts (Land Resources Division; PAD-US fee records when it does not answer) does not show this patch as the agency's land (that map may be out of date): check the official map; PAD-US cross-check",
+   "id": "US-0050+US-10105@area@37.171,-86.155",
+   "sources": {
+    "US-0050": "read live from the agency 2026-10-29",
+    "US-10105": "read live from the agency 2026-10-29 \u00b7 https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_Wild_RIvers_Corridors_WM_gdb/FeatureServer/0 (item efefe7342aa4460aaf8697e17deb4146, read 2026-10-29)"
+   },
+   "checked": "2026-10-29"
+  },
   {
    "area": "ky",
    "state": "US-KY",
@@ -27,6 +50,25 @@
     "US-4484": "read live from the agency 2026-10-28"
    },
    "checked": "2026-10-28"
+  },
+  {
+   "area": "ky",
+   "state": "",
+   "refs": [
+    "US-0050",
+    "US-10105"
+   ],
+   "names": {},
+   "what": "POTA history says people activate these together, our outlines say no",
+   "kind": "pair",
+   "size": "295 same-day activations",
+   "sort": 295.0,
+   "reason": "not sure: the outlines overlap, but the the Park Service's own land tracts (Land Resources Division; PAD-US fee records when it does not answer) does not show this patch as the agency's land (that map",
+   "id": "US-0050+US-10105@pota",
+   "sources": {
+    "POTA history": "activated together by the same call on the same day (295x, POTA history) / old guide (Oct 13 Kentucky 2-fers guide)"
+   },
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -128,7 +170,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (60x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -147,7 +189,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (54x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -166,7 +208,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (48x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -185,7 +227,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (47x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -204,7 +246,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (45x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -223,7 +265,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (40x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -242,7 +284,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (37x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -261,7 +303,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (33x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -280,7 +322,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (30x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -298,9 +340,9 @@
    "id": "US-10102+US-10112@trail@37.104,-82.760",
    "sources": {
     "US-10102": "official line (trails bot)",
-    "US-10112": "read live from the agency 2026-10-28 \u00b7 https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_Wild_RIvers_Corridors_WM_gdb/FeatureServer/0 (item efefe7342aa4460aaf8697e17deb4146, read 2026-10-28)"
+    "US-10112": "read live from the agency 2026-10-29 \u00b7 https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_Wild_RIvers_Corridors_WM_gdb/FeatureServer/0 (item efefe7342aa4460aaf8697e17deb4146, read 2026-10-29)"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -319,7 +361,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (22x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -338,7 +380,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (21x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -357,7 +399,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (21x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -376,7 +418,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (19x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -395,7 +437,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (18x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -414,7 +456,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (18x, POTA history) / old guide (Oct 13 Kentucky 2-fers guide)"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -433,7 +475,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (18x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -472,7 +514,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (17x, POTA history) / old guide (Oct 13 Kentucky 2-fers guide)"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -491,7 +533,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (17x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -510,7 +552,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (17x, POTA history) / old guide (Oct 13 Kentucky 2-fers guide)"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -529,7 +571,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (16x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -548,7 +590,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (15x, POTA history) / outlines come within 86 m of each other"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -567,7 +609,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (15x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -586,7 +628,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (14x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -605,7 +647,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (13x, POTA history) / hand list (ky-trail-parks.json) / old guide (Oct 13 Kentucky 2-fers guide)"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -624,7 +666,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (13x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -643,7 +685,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (12x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -662,7 +704,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (12x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -681,7 +723,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (12x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -700,7 +742,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (12x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -719,7 +761,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (11x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -738,7 +780,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (11x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -757,7 +799,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (11x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -776,7 +818,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (11x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -795,7 +837,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (11x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -814,7 +856,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (10x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -833,7 +875,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (10x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -852,7 +894,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (10x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -871,7 +913,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (9x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -890,7 +932,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (9x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -909,7 +951,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (9x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -928,7 +970,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (9x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -947,7 +989,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (9x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -966,7 +1008,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (8x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -985,7 +1027,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (8x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1004,7 +1046,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (8x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1023,7 +1065,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (8x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1042,7 +1084,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (8x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1061,7 +1103,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (7x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1080,7 +1122,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (7x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1099,7 +1141,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (7x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1118,7 +1160,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (6x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1137,7 +1179,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (6x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1156,7 +1198,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (6x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1175,7 +1217,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (6x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1194,7 +1236,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (5x, POTA history) / old guide (Oct 13 Kentucky 2-fers guide)"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1213,7 +1255,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (5x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1232,7 +1274,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (5x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1251,7 +1293,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (4x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1270,7 +1312,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (4x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1289,7 +1331,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (4x, POTA history) / old guide (Oct 13 Kentucky 2-fers guide)"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1331,7 +1373,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (3x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1350,7 +1392,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (3x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1369,7 +1411,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (3x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1388,7 +1430,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (3x, POTA history) / outlines come within 28 m of each other"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1407,7 +1449,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (3x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1426,7 +1468,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (3x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1445,7 +1487,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (3x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1464,7 +1506,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (3x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1503,7 +1545,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (2x, POTA history)"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1522,7 +1564,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (2x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1541,7 +1583,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (2x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1560,7 +1602,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (2x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1579,7 +1621,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (2x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1598,7 +1640,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (2x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1617,7 +1659,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (2x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1636,7 +1678,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (2x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1655,7 +1697,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (2x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1674,7 +1716,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (1x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1693,7 +1735,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (1x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1712,7 +1754,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (1x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1731,7 +1773,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (1x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1750,7 +1792,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (1x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1769,7 +1811,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (1x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1788,7 +1830,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (1x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1807,7 +1849,7 @@
    "sources": {
     "POTA history": "activated together by the same call on the same day (1x, POTA history) / outlines about 0 m apart"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   }
  ]
 }
