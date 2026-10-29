@@ -15,7 +15,7 @@ Updated 2026-10-29. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 | US-FL | 460 | 440 | 75 | **54** | 31 | 278 | 2 | 16 | 0 | 17 |
 | US-MS | 155 | 89 | 1 | **5** | 7 | 76 | 0 | 4 | 0 | 14 |
 | US-IN | 229 | 208 | 6 | **9** | 5 | 187 | 1 | 1 | 0 | 13 |
-| US-IL | 219 | 204 | 27 | **70** | 63 | 40 | 3 | 15 | 0 | 8 |
+| US-IL | 219 | 204 | 74 | **43** | 43 | 40 | 3 | 15 | 0 | 8 |
 | US-MO | 561 | 545 | 73 | **130** | 242 | 92 | 8 | 15 | 0 | 18 |
 
 ## US-KY
@@ -1065,4 +1065,4 @@ You · [www.fws.gov](https://www.fws.gov/refuge/chassahowitzka/about-us)
 
 ## Kentucky test gate
 
-- 2026-10-29: **PASS** · US-VA: 32 off rows, no shared numbers / agency pages / part sentences / one-state cross-state compares
+- 2026-10-29: **FAIL** · US-IL: known sentence wrong (total 15251): Kentucky Ridge State Forest consists of 15,251 acr · known sentence wrong (total 1029): Big Oak Tree State Park covers 1,029 acres along B · US-10660: an agency-wide page https://dnr.illinois.gov/about/didyouknow.html

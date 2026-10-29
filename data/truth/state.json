@@ -63,21 +63,21 @@
   "US-IL": {
    "checked": 219,
    "counts": {
-    "agree": 27,
+    "agree": 74,
     "handover_hints": 15,
     "no_page": 1,
     "no_size": 40,
-    "off": 70,
+    "off": 43,
     "ours_unknown": 3,
     "parks": 219,
     "retired": 0,
-    "unsure": 63,
+    "unsure": 43,
     "weak": 8,
     "with_outline": 204
    },
    "left": 0,
    "parks": 219,
-   "status": "done",
+   "status": "failed",
    "updated": "2026-10-29"
   },
   "US-IN": {
@@ -281,29 +281,29 @@
  },
  "last": {
   "areas": [
-   "US-VA"
+   "US-IL"
   ],
   "manners": {
    "arcgis_exempt": 0,
    "errors": 0,
-   "requests": 5,
-   "rested": 28,
-   "robots": 1,
+   "requests": 0,
+   "rested": 4,
+   "robots": 0,
    "strikes": 0
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 16,
-   "no_size": 16,
+   "handover_hints": 15,
+   "no_size": 2,
    "ours_unknown": 0,
    "pages_read": 0,
-   "parks": 27,
+   "parks": 2,
    "retired": 0,
    "size_agree": 0,
-   "size_off": 1,
-   "size_unsure": 10,
-   "skipped_fresh": 157,
-   "with_outline": 27
+   "size_off": 0,
+   "size_unsure": 0,
+   "skipped_fresh": 217,
+   "with_outline": 2
   },
   "when": "2026-10-29"
  },
@@ -381,9 +381,9 @@
  },
  "proven": "2026-10-29",
  "test": {
-  "area": "US-VA",
-  "result": "PASS",
+  "area": "US-IL",
+  "result": "FAIL",
   "when": "2026-10-29",
-  "why": "US-VA: 32 off rows, no shared numbers / agency pages / part sentences / one-state cross-state compares"
+  "why": "US-IL: known sentence wrong (total 15251): Kentucky Ridge State Forest consists of 15,251 acr · known sentence wrong (total 1029): Big Oak Tree State Park covers 1,029 acres along B · US-10660: an agency-wide page https://dnr.illinois.gov/about/didyouknow.html"
  }
 }
