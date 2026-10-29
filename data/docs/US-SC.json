@@ -6,18 +6,18 @@
    "n": "Congaree National Park",
    "t": "National Park",
    "page": "https://www.nps.gov/cong/index.htm",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://www.nps.gov/cong/planyourvisit/maps.htm",
     "status": "ok",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "June 5, 2024",
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -31,24 +31,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-0265": {
    "n": "Pinckney Island National Wildlife Refuge",
    "t": "National Wildlife Refuge",
    "page": "https://www.fws.gov/refuge/pinckney_island/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://www.fws.gov/refuge/pinckney-island/map",
     "status": "ok",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('Map')",
     "posted": "",
     "posted_how": "",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -62,24 +62,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-0518": {
    "n": "Cape Romain National Wildlife Refuge",
    "t": "National Wildlife Refuge",
    "page": "https://www.fws.gov/refuge/cape_romain/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://www.fws.gov/refuge/cape-romain/map",
     "status": "ok",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('Map')",
     "posted": "",
     "posted_how": "",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -93,71 +93,75 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-0519": {
    "n": "Carolina Sandhills National Wildlife Refuge",
    "t": "National Wildlife Refuge",
    "page": "https://www.fws.gov/refuge/carolina_sandhills/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.fws.gov/refuge/carolina-sandhills/map",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": true,
-    "checked": "2026-10-28",
-    "covers": 0,
-    "via": "the agency site",
-    "date_label": "date unknown"
+    "url": "",
+    "status": "no working map link (tried: robots https://doifwsnextprod.prod.acquia-sites.com/sites/default/files/docum; robots https://doifwsnextprod.prod.acquia-sites.com/sites/default/files/docum)",
+    "how": "a link on the park's page ('Download Map')"
    },
    "rules": {
-    "url": "https://www.fws.gov/refuge/carolina-sandhills/visit-us/rules-policies",
-    "how": "a link on the park's page ('Rules Policies')",
+    "url": "https://www.fws.gov/locations/carolina-sandhills-national-wildlife-refuge/rules-and-policies",
+    "how": "a link on the park's page ('Rules and Policies')",
     "status": "ok"
    },
    "agency": "U.S. Fish and Wildlife Service",
    "runs": [],
    "handover": [],
    "notes": [],
-   "map_also": [
+   "map_tried": [
     {
-     "url": "https://www.fws.gov/media/carolina-sandhills-national-wildlife-refuge-map",
-     "status": "ok",
-     "kind": "page",
+     "url": "https://doifwsnextprod.prod.acquia-sites.com/sites/default/files/documents/Carolina%20Sandhills%20Refuge%20Map.pdf",
+     "status": "robots",
+     "kind": "",
      "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Carolina Sandhills National Wildlife Refuge Map')",
+     "date_how": "",
+     "how": "a link on the park's page ('Download Map')",
      "posted": "",
      "posted_how": "",
-     "names_park": true,
-     "checked": "2026-10-28",
+     "names_park": null,
+     "checked": "2026-10-29",
      "covers": 0,
-     "via": "the agency site"
+     "via": "linked from the agency page (doifwsnextprod.prod.acquia-sites.com)"
+    },
+    {
+     "url": "https://doifwsnextprod.prod.acquia-sites.com/sites/default/files/documents/CarolinaSandhillsGeneralBrochure2019-508.pdf",
+     "status": "robots",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('general brochure')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-29",
+     "covers": 0,
+     "via": "linked from the agency page (doifwsnextprod.prod.acquia-sites.com)"
     }
    ],
-   "ver": 5
+   "ver": 6
   },
   "US-0520": {
    "n": "Ernest F. Hollings ACE Basin National Wildlife Refuge",
    "t": "National Wildlife Refuge",
    "page": "https://www.fws.gov/refuge/ernest-f-hollings-ace-basin",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://www.fws.gov/refuge/ernest-f-hollings-ace-basin/map",
     "status": "ok",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('Map')",
     "posted": "",
     "posted_how": "",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -171,25 +175,26 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-0521": {
    "n": "Santee National Wildlife Refuge",
    "t": "National Wildlife Refuge",
    "page": "https://www.fws.gov/refuge/santee",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.fws.gov/refuge/santee/map",
+    "url": "https://www.fws.gov/sites/default/files/documents/2024-03/santee-map-tearsheet-2024_508.pdf",
     "status": "ok",
-    "kind": "page",
+    "kind": "pdf",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": true,
-    "checked": "2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
+    "how": "a link on the park's page ('Santee National Wildlife Refuge Map and Tearsheet') -> the page's 'santee-map-tearsheet-2024_508.pdf' file",
+    "posted": "2024-03",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": "file",
+    "checked": "2026-10-29",
     "covers": 0,
+    "page": "https://www.fws.gov/media/santee-national-wildlife-refuge-map-and-tearsheet",
     "via": "the agency site",
     "date_label": "date unknown"
    },
@@ -204,38 +209,38 @@
    "notes": [],
    "map_also": [
     {
-     "url": "https://www.fws.gov/media/santee-national-wildlife-refuge-map-and-tearsheet",
+     "url": "https://www.fws.gov/refuge/santee/map",
      "status": "ok",
      "kind": "page",
      "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
-     "how": "a link on the park's page ('Santee National Wildlife Refuge Map and Tearsheet')",
+     "date_how": "date unknown, checked 2026-10-29",
+     "how": "a link on the park's page ('Map')",
      "posted": "",
      "posted_how": "",
      "names_park": true,
-     "checked": "2026-10-28",
+     "checked": "2026-10-29",
      "covers": 0,
      "via": "the agency site"
     }
    ],
-   "ver": 5
+   "ver": 6
   },
   "US-0522": {
    "n": "Savannah National Wildlife Refuge",
    "t": "National Wildlife Refuge",
    "page": "https://www.fws.gov/refuge/savannah/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://www.fws.gov/media/savannah-nwr-full-and-trail-maps",
     "status": "ok",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "",
     "posted_how": "",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -255,12 +260,12 @@
      "status": "ok",
      "kind": "page",
      "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
+     "date_how": "date unknown, checked 2026-10-29",
      "how": "a link on the park's page ('Map')",
      "posted": "",
      "posted_how": "",
      "names_park": true,
-     "checked": "2026-10-28",
+     "checked": "2026-10-29",
      "covers": 0,
      "via": "the agency site"
     },
@@ -269,34 +274,34 @@
      "status": "ok",
      "kind": "page",
      "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
+     "date_how": "date unknown, checked 2026-10-29",
      "how": "a link on the park's page ('Refuge Brochure Map')",
      "posted": "",
      "posted_how": "",
      "names_park": true,
-     "checked": "2026-10-28",
+     "checked": "2026-10-29",
      "covers": 0,
      "via": "the agency site"
     }
    ],
-   "ver": 5
+   "ver": 6
   },
   "US-0524": {
    "n": "Waccamaw National Wildlife Refuge",
    "t": "National Wildlife Refuge",
    "page": "https://www.fws.gov/refuge/waccamaw",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://www.fws.gov/refuge/waccamaw/map",
     "status": "ok",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('Map')",
     "posted": "",
     "posted_how": "",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -310,24 +315,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-0702": {
    "n": "Cowpens National Battlefield",
    "t": "National Battlefield",
    "page": "https://www.nps.gov/cowp/index.htm",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://www.nps.gov/cowp/planyourvisit/maps.htm",
     "status": "ok",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "March 7, 2016",
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -341,24 +346,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-0720": {
    "n": "Kings Mountain National Military Park",
    "t": "National Military Park",
    "page": "https://www.nps.gov/kimo/index.htm",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://www.nps.gov/kimo/planyourvisit/maps.htm",
     "status": "ok",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "March 7, 2016",
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -372,24 +377,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-0806": {
    "n": "Charles Pinckney National Historic Site",
    "t": "National Historic Site",
    "page": "https://www.nps.gov/chpi/index.htm",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://www.nps.gov/chpi/planyourvisit/maps.htm",
     "status": "ok",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "July 16, 2021",
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -403,24 +408,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-0852": {
    "n": "Ninety Six National Historic Site",
    "t": "National Historic Site",
    "page": "https://www.nps.gov/nisi/index.htm",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://www.nps.gov/nisi/planyourvisit/maps.htm",
     "status": "ok",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "March 7, 2016",
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -434,24 +439,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-0932": {
    "n": "Fort Sumter and Fort Moultrie National Historic Site",
    "t": "National Historic Site",
    "page": "https://www.nps.gov/fosu/contacts.htm",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://www.nps.gov/fosu/planyourvisit/maps.htm",
     "status": "ok",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "May 12, 2023",
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -465,13 +470,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-10414": {
    "n": "Wateree Heritage Preserve",
    "t": "Heritage Preserve",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/900",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -480,19 +485,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-10415": {
    "n": "Landsford Canal Forest Legacy Area Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/671",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -501,19 +507,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-10465": {
    "n": "Shealy's Pond Heritage Preserve",
    "t": "Heritage Preserve",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/74",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -522,19 +529,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-10467": {
    "n": "James Ross Wildlife Reservation Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/672",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -543,19 +551,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-10468": {
    "n": "McConnells Tract Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/673",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -564,19 +573,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-10470": {
    "n": "Hanging Rock Battleground State Historical Park",
    "t": "State Historical Park",
    "page": "https://www.alltrails.com/trail/us/south-carolina/hanging-rock-battleground",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -592,14 +602,14 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 5,
-   "browser_checked": "2026-10-28"
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-10622": {
    "n": "Fish Dam Ford Heritage Preserve",
    "t": "Heritage Preserve",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/MapsDirect/32",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -608,19 +618,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-10782": {
    "n": "Lake John D. Long State Fishing Lake",
    "t": "State Fishing Lake",
    "page": "https://www.dnr.sc.gov/lakes/state/johndlong/index.html",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.dnr.sc.gov/lakes/state/johndlong/jdlongdoqq.pdf; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.dnr.sc.gov/lakes/state/johndlong/jdlongmap.pdf)",
@@ -646,7 +657,7 @@
      "posted": "",
      "posted_how": "",
      "names_park": false,
-     "checked": "2026-10-28",
+     "checked": "2026-10-29",
      "covers": 0,
      "via": "the agency site"
     },
@@ -660,18 +671,18 @@
      "posted": "",
      "posted_how": "",
      "names_park": false,
-     "checked": "2026-10-28",
+     "checked": "2026-10-29",
      "covers": 0,
      "via": "the agency site"
     }
    ],
-   "ver": 5
+   "ver": 6
   },
   "US-11995": {
    "n": "Fort Frederick Heritage Preserve",
    "t": "Heritage Preserve",
    "page": "https://www.beaufortsc.org/listing/fort-frederick-heritage-preserve/254/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -686,13 +697,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-12107": {
    "n": "Lake Cherokee State Fishing Lake",
    "t": "State Fishing Lake",
    "page": "https://www.dnr.sc.gov/lakes/state/cherokee/index.html",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.dnr.sc.gov/lakes/state/cherokee/cherokeedoqq.pdf; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.dnr.sc.gov/lakes/state/cherokee/cherokeemap.pdf)",
@@ -718,7 +729,7 @@
      "posted": "",
      "posted_how": "",
      "names_park": false,
-     "checked": "2026-10-28",
+     "checked": "2026-10-29",
      "covers": 0,
      "via": "the agency site"
     },
@@ -732,18 +743,18 @@
      "posted": "",
      "posted_how": "",
      "names_park": false,
-     "checked": "2026-10-28",
+     "checked": "2026-10-29",
      "covers": 0,
      "via": "the agency site"
     }
    ],
-   "ver": 5
+   "ver": 6
   },
   "US-12108": {
    "n": "Lake Thicketty State Fishing Lake",
    "t": "State Fishing Lake",
    "page": "https://www.dnr.sc.gov/lakes/state/thicketty/index.html",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.dnr.sc.gov/lakes/state/thicketty/thickettydoqq.pdf; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.dnr.sc.gov/lakes/state/thicketty/thickettymap.pdf)",
@@ -769,7 +780,7 @@
      "posted": "",
      "posted_how": "",
      "names_park": false,
-     "checked": "2026-10-28",
+     "checked": "2026-10-29",
      "covers": 0,
      "via": "the agency site"
     },
@@ -783,18 +794,18 @@
      "posted": "",
      "posted_how": "",
      "names_park": false,
-     "checked": "2026-10-28",
+     "checked": "2026-10-29",
      "covers": 0,
      "via": "the agency site"
     }
    ],
-   "ver": 5
+   "ver": 6
   },
   "US-12589": {
    "n": "Beaverdam Creek Waterfowl Management Area Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://public-lands-scdnr.hub.arcgis.com/pages/beaverdam-creek-waterfowl-management-area",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -809,13 +820,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-13016": {
    "n": "Pine Island State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/pine-island",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -830,13 +841,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-13198": {
    "n": "Black River State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/black-river",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -851,13 +862,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-13257": {
    "n": "Coosawhatchie Heritage Preserve",
    "t": "Heritage Preserve",
    "page": "https://public-lands-scdnr.hub.arcgis.com/pages/coosawhatchie-hp-wma",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -872,13 +883,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-2882": {
    "n": "Aiken State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/aiken",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -893,13 +904,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-2883": {
    "n": "Andrew Jackson State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/andrew-jackson",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -914,13 +925,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-2884": {
    "n": "Baker Creek State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/baker-creek",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -935,13 +946,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-2885": {
    "n": "Barnwell State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/barnwell",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -956,13 +967,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-2886": {
    "n": "Caesar's Head State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/caesars-head?gclid=CjwKCAjw9suYBhBIEiwA7iMhNAzGA7Zyg0DxfAie5Vl2JlXL6t-f7_ZbAp4-yzlFY3i4yGnXOpRY0RoCeYsQAvD_BwE",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -977,13 +988,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-2887": {
    "n": "Calhoun Falls State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/calhoun-falls",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -998,13 +1009,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-2888": {
    "n": "Cheraw State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/cheraw",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -1019,13 +1030,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-2889": {
    "n": "Chester State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/chester",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -1040,13 +1051,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-2890": {
    "n": "Colleton State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/colleton",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -1061,17 +1072,17 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-2891": {
    "n": "Croft State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/croft",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no working map link (tried: robots https://embed.widencdn.net/pdf/plus/scprt/sohstjfuoz/CroftTrailMap.pdf)",
+    "how": "a link on the park's page ('The trail map can be found here.')"
    },
    "rules": {
     "url": "",
@@ -1082,13 +1093,29 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "map_tried": [
+    {
+     "url": "https://embed.widencdn.net/pdf/plus/scprt/sohstjfuoz/CroftTrailMap.pdf?u=sgt8lu",
+     "status": "robots",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('The trail map can be found here.')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-29",
+     "covers": 0,
+     "via": "linked from the agency page (embed.widencdn.net)"
+    }
+   ],
+   "ver": 6
   },
   "US-2892": {
    "n": "Devil's Fork State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/devils-fork",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -1103,13 +1130,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-2893": {
    "n": "Dreher Island State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/dreher-island",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -1124,13 +1151,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-2894": {
    "n": "Edisto Beach State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/edisto-beach?gclid=CjwKCAjw9suYBhBIEiwA7iMhNN_FRu-xYosbERrkV81b55GXcG7X9DYg5CULFdNEqdnuAPlIAqrQNRoCbRUQAvD_BwE",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -1145,13 +1172,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-2895": {
    "n": "Givhans Ferry State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/givhans-ferry",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -1166,13 +1193,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-2896": {
    "n": "Goodale State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/goodale",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -1187,13 +1214,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-2897": {
    "n": "Hamilton Branch State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/hamilton-branch",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -1208,13 +1235,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-2898": {
    "n": "Hickory Knob Resort State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/hickory-knob?gclid=CjwKCAjw9suYBhBIEiwA7iMhNDWZLlt-h_kfdJ0fxZfN2AJC-TGMcKrIYaGyC4Qy_l2w_vyKwqLeCRoCMzcQAvD_BwE",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -1229,13 +1256,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-2899": {
    "n": "Hunting Island State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/hunting-island",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -1250,13 +1277,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-2900": {
    "n": "Huntington Beach State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/huntington-beach",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -1271,13 +1298,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-2901": {
    "n": "Jones Gap State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/jones-gap",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -1292,13 +1319,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-2902": {
    "n": "Kings Mountain State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/kings-mountain",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://southcarolinaparks.com/maps-and-brochures)",
@@ -1324,18 +1351,18 @@
      "posted": "",
      "posted_how": "",
      "names_park": false,
-     "checked": "2026-10-28",
+     "checked": "2026-10-29",
      "covers": 0,
      "via": "the agency site"
     }
    ],
-   "ver": 5
+   "ver": 6
   },
   "US-2903": {
    "n": "Lake Warren State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/lake-warren",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -1350,13 +1377,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-2904": {
    "n": "Landsford Canal State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/landsford-canal",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -1371,24 +1398,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-2905": {
    "n": "Lee State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/lee",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://southcarolinaparks.com/lee/maps-and-brochures",
     "status": "ok",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "",
     "posted_how": "",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -1402,13 +1429,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-2906": {
    "n": "Little Pee Dee State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/little-pee-dee",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -1423,13 +1450,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-2907": {
    "n": "Myrtle Beach State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/myrtle-beach",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -1444,13 +1471,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-2908": {
    "n": "Oconee State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/oconee",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -1465,13 +1492,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-2909": {
    "n": "Paris Mountain State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/paris-mountain",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -1486,13 +1513,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-2910": {
    "n": "Poinsett State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/poinsett",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -1507,13 +1534,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-2911": {
    "n": "Sadlers Creek State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/sadlers-creek",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -1528,13 +1555,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-2912": {
    "n": "Santee State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/santee",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -1549,13 +1576,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-2913": {
    "n": "Sesquicentennial State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/sesqui",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://southcarolinaparks.com/files/State%20Parks%20Files/Sesqui/MapSesquicentennial.pdf",
     "status": "ok",
@@ -1565,8 +1592,8 @@
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "Jul 28, 2017",
     "posted_how": "posted: the server's file date",
-    "names_park": true,
-    "checked": "2026-10-28",
+    "names_park": "file",
+    "checked": "2026-10-29",
     "covers": 1,
     "via": "the agency site",
     "date_label": "2005: check it is still current"
@@ -1580,13 +1607,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-2914": {
    "n": "Table Rock State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/table-rock",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -1601,13 +1628,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-2915": {
    "n": "Woods Bay State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/woods-bay",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -1622,13 +1649,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3872": {
    "n": "Charles Towne Landing State Historic Site",
    "t": "State Historic Site",
    "page": "https://southcarolinaparks.com/charles-towne-landing",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -1643,13 +1670,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3873": {
    "n": "Colonial Dorchester State Historic Site",
    "t": "State Historic Site",
    "page": "https://southcarolinaparks.com/colonial-dorchester",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no working map link (tried: robots https://embed.widencdn.net/pdf/plus/scprt/1b2dm2dbko/CDMap_2017.pdf?u=)",
@@ -1675,18 +1702,18 @@
      "posted": "",
      "posted_how": "",
      "names_park": null,
-     "checked": "2026-10-28",
+     "checked": "2026-10-29",
      "covers": 0,
      "via": "on file, checked by a person or the link harvester (embed.widencdn.net)"
     }
    ],
-   "ver": 5
+   "ver": 6
   },
   "US-3874": {
    "n": "H. Cooper Black Jr. Memorial State Recreation Area",
    "t": "State Recreation Area",
    "page": "https://southcarolinaparks.com/h-cooper-black",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -1701,13 +1728,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3876": {
    "n": "Hampton Plantation State Historic Site",
    "t": "State Historic Site",
    "page": "https://southcarolinaparks.com/hampton",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -1722,13 +1749,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3877": {
    "n": "Keowee-Toxaway State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/keowee-toxaway",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -1743,13 +1770,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3878": {
    "n": "Lake Greenwood State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/lake-greenwood",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -1764,13 +1791,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3879": {
    "n": "Lake Hartwell State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/lake-hartwell",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -1785,13 +1812,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3880": {
    "n": "Lake Wateree State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/lake-wateree",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -1806,13 +1833,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3881": {
    "n": "Battle of Musgrove Mill State Historic Site",
    "t": "State Historic Site",
    "page": "https://southcarolinaparks.com/musgrove-mill",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -1827,13 +1854,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3882": {
    "n": "Oconee Station State Historic Site",
    "t": "State Historic Site",
    "page": "https://southcarolinaparks.com/oconee-station",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -1848,13 +1875,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3883": {
    "n": "Redcliffe Plantation State Historic Site",
    "t": "State Historic Site",
    "page": "https://southcarolinaparks.com/redcliffe",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -1869,13 +1896,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3884": {
    "n": "Battle of Rivers Bridge State Historic Site",
    "t": "State Historic Site",
    "page": "https://southcarolinaparks.com/rivers-bridge",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -1890,13 +1917,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3885": {
    "n": "Rose Hill Plantation State Historic Site",
    "t": "State Historic Site",
    "page": "https://southcarolinaparks.com/rose-hill",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -1911,13 +1938,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3886": {
    "n": "Aiken Gopher Tortoise Heritage Preserve",
    "t": "Heritage Preserve",
    "page": "https://www.sctrails.net/trails/trail/aiken-gopher-tortoise-heritage-preserve",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -1932,13 +1959,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3887": {
    "n": "Bear Island Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/56",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -1947,19 +1974,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3888": {
    "n": "Bonneau Ferry Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www.dnr.sc.gov/lakes/state/bonneauferry/index.html",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.dnr.sc.gov/lakes/state/bonneauferry/bonneauferrydoqq.pdf; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.dnr.sc.gov/lakes/state/bonneauferry/bonneauferrymap.pdf)",
@@ -1985,7 +2013,7 @@
      "posted": "",
      "posted_how": "",
      "names_park": false,
-     "checked": "2026-10-28",
+     "checked": "2026-10-29",
      "covers": 0,
      "via": "the agency site"
     },
@@ -1999,18 +2027,18 @@
      "posted": "",
      "posted_how": "",
      "names_park": false,
-     "checked": "2026-10-28",
+     "checked": "2026-10-29",
      "covers": 0,
      "via": "the agency site"
     }
    ],
-   "ver": 5
+   "ver": 6
   },
   "US-3889": {
    "n": "Botany Bay Plantation Heritage Preserve",
    "t": "Heritage Preserve",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/57",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -2019,19 +2047,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3890": {
    "n": "Buzzard Roost Heritage Preserve",
    "t": "Heritage Preserve",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/7",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -2040,19 +2069,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3891": {
    "n": "Campbells Crossroads and Angelus Tracts Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/674",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -2061,19 +2091,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3892": {
    "n": "Chestnut Ridge Heritage Preserve",
    "t": "Heritage Preserve",
    "page": "https://www.sctrails.net/trails/trail/chestnut-ridge-heritage-preserve",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -2088,13 +2119,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3893": {
    "n": "Cliff Pitts Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/737",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -2103,19 +2134,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3894": {
    "n": "Draper Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/125",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -2124,19 +2156,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3895": {
    "n": "Eastatoe Creek Heritage Preserve",
    "t": "Heritage Preserve",
    "page": "https://www.sctrails.net/trails/trail/eastatoe-creek-heritage-preserve",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -2151,13 +2184,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3896": {
    "n": "Edisto River Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/59",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -2166,19 +2199,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3897": {
    "n": "Fant's Grove Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/174",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -2187,19 +2221,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3898": {
    "n": "Forty Acre Rock Heritage Preserve",
    "t": "Heritage Preserve",
    "page": "http://www.wildlifesouth.com/Locations/SouthCarolina/40AcreRock.html",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -2216,13 +2251,13 @@
    "notes": [
     "park page: rest"
    ],
-   "ver": 5
+   "ver": 6
   },
   "US-3899": {
    "n": "Great Pee Dee River Heritage Preserve",
    "t": "Heritage Preserve",
    "page": "https://www.dnr.sc.gov/water/river/scenic/greatpeedee.html",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.dnr.sc.gov/water/river/maps.html)",
@@ -2231,7 +2266,8 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
@@ -2248,18 +2284,18 @@
      "posted": "",
      "posted_how": "",
      "names_park": false,
-     "checked": "2026-10-28",
+     "checked": "2026-10-29",
      "covers": 0,
      "via": "the agency site"
     }
    ],
-   "ver": 5
+   "ver": 6
   },
   "US-3900": {
    "n": "Hamilton Ridge Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/186",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -2268,19 +2304,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3901": {
    "n": "Hickory Top Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/181",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -2289,19 +2326,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3902": {
    "n": "James L. Mason Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/19",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -2310,19 +2348,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3903": {
    "n": "Lewis Ocean Bay Heritage Preserve",
    "t": "Heritage Preserve",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/104",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -2331,19 +2370,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3904": {
    "n": "Longleaf Pine Heritage Preserve",
    "t": "Heritage Preserve",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/44",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -2352,19 +2392,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3905": {
    "n": "Marsh Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/23",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -2373,19 +2414,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3906": {
    "n": "Old Island Heritage Preserve",
    "t": "Heritage Preserve",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/123",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -2394,19 +2436,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3907": {
    "n": "Pee Dee Station Site Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/180",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -2415,19 +2458,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3908": {
    "n": "Samworth Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/63",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -2436,19 +2480,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3909": {
    "n": "Santee Cooper Tract Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/690",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -2457,19 +2502,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3910": {
    "n": "Santee Cooper Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://public-lands-scdnr.hub.arcgis.com/pages/santee-cooper-wma",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -2484,13 +2530,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3911": {
    "n": "Stevens Creek Heritage Preserve",
    "t": "Heritage Preserve",
    "page": "https://www.sctrails.net/trails/trail/stevens-creek-heritage-preserve",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -2505,13 +2551,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3912": {
    "n": "Thurmond Tract Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/54",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -2520,19 +2566,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3913": {
    "n": "Tillman Sand Ridge Heritage Preserve",
    "t": "Heritage Preserve",
    "page": "https://public-lands-scdnr.hub.arcgis.com/pages/tillman-sand-ridge-hp-wma",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -2547,13 +2594,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3914": {
    "n": "Cathedral Bay Heritage Preserve",
    "t": "Heritage Preserve",
    "page": "https://public-lands-scdnr.hub.arcgis.com/pages/cathedral-bay-hp",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -2568,13 +2615,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3916": {
    "n": "Congaree Bluffs Heritage Preserve",
    "t": "Heritage Preserve",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/101",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -2583,19 +2630,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3917": {
    "n": "Little Pee Dee Bay Heritage Preserve",
    "t": "Heritage Preserve",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/43",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -2604,19 +2652,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3918": {
    "n": "Savage Bay Heritage Preserve",
    "t": "Heritage Preserve",
    "page": "https://public-lands-scdnr.hub.arcgis.com/pages/savage-bay-hp",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -2631,13 +2680,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3919": {
    "n": "Congaree Creek Heritage Preserve",
    "t": "Heritage Preserve",
    "page": "https://discoversouthcarolina.com/articles/discover-the-history-and-beauty-of-congaree-creek-heritage-preserve",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -2652,13 +2701,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-3921": {
    "n": "Pacolet River Heritage Preserve",
    "t": "Heritage Preserve",
    "page": "https://www.sctrails.net/trails/trail/pacolet-river-heritage-preserve",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -2673,24 +2722,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-4522": {
    "n": "Francis Marion National Forest",
    "t": "National Forest",
    "page": "https://www.fs.usda.gov/detail/scnfs/home/?cid=fsbdev3_037393",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://www.fs.usda.gov/r08/francismarionsumter/maps-guides",
     "status": "ok",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "the page in a browser ('Visitor Maps and Guides')",
     "page": "https://www.fs.usda.gov/r08/francismarionsumter",
     "posted": "November 6, 2025",
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "via": "the agency site",
     "kind_note": "forest map only"
    },
@@ -2704,25 +2753,25 @@
    "handover": [],
    "notes": [],
    "needs_browser": "map page on the browser list (a download button may hide the file)",
-   "ver": 5,
-   "browser_checked": "2026-10-28"
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-4523": {
    "n": "Sumter National Forest",
    "t": "National Forest",
    "page": "https://www.fs.usda.gov/detail/scnfs/home/?cid=fsbdev3_037376",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://www.fs.usda.gov/r08/francismarionsumter/maps-guides",
     "status": "ok",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "the page in a browser ('Visitor Maps and Guides')",
     "page": "https://www.fs.usda.gov/detail/scnfs/home/?cid=fsbdev3_037376",
     "posted": "November 6, 2025",
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "via": "the agency site",
     "kind_note": "forest map only"
    },
@@ -2736,25 +2785,25 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 5,
-   "browser_checked": "2026-10-28"
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-4554": {
    "n": "Reconstruction Era National Monument",
    "t": "National Monument",
    "page": "https://www.doi.gov/photos/reconstruction-era-national-monument",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://www.nps.gov/reer/planyourvisit/maps.htm",
     "status": "ok",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "March 12, 2024",
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "linked from the agency page (nps.gov)",
     "date_label": "date unknown"
@@ -2776,34 +2825,34 @@
      "status": "ok",
      "kind": "page",
      "date": null,
-     "date_how": "date unknown, checked 2026-10-28",
+     "date_how": "date unknown, checked 2026-10-29",
      "how": "a link on the park's page ('Dr. Carter G. Woodson Home National Historic Site')",
      "posted": "October 6, 2026",
      "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
      "names_park": true,
-     "checked": "2026-10-28",
+     "checked": "2026-10-29",
      "covers": 0,
      "via": "government host (nps.gov)"
     }
    ],
-   "ver": 5
+   "ver": 6
   },
   "US-4577": {
    "n": "Overmountain Victory National Historic Trail",
    "t": "National Historic Trail",
    "page": "https://www.nps.gov/ovvi/index.htm",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://www.nps.gov/ovvi/planyourvisit/maps.htm",
     "status": "ok",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "on file (parkinfo-web / Kentucky answer key)",
     "posted": "November 4, 2024",
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -2817,27 +2866,17 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-5485": {
    "n": "Harbison State Forest",
    "t": "State Forest",
    "page": "https://www.scfc.gov/state-forests/harbison-state-forest/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.scfc.gov/wp-content/uploads/2021/06/hsfcanoelaning.pdf",
-    "status": "ok",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
-    "how": "a link on the park's page ('View/download an 8.5″ x 11″ (portrait view) map of Harbison’s canoe landing')",
-    "posted": "2021-06",
-    "posted_how": "posted: the upload folder in the address",
-    "names_park": true,
-    "checked": "2026-10-28",
-    "covers": 1,
-    "via": "the agency site",
-    "date_label": "date unknown"
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -2847,18 +2886,20 @@
    "agency": "government agency (scfc.gov)",
    "runs": [],
    "handover": [],
-   "notes": [],
-   "ver": 5
+   "notes": [
+    "park page: HTTP 202"
+   ],
+   "ver": 6
   },
   "US-5486": {
    "n": "Manchester State Forest",
    "t": "State Forest",
    "page": "https://www.scfc.gov/state-forests/manchester-state-forest/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
-    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.scfc.gov/wp-content/uploads/2021/06/trailmap-manchester.pd)",
-    "how": "a link on the park's page ('View/download Manchester State Forest’s all-trails map, which includes the horse')"
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -2868,34 +2909,20 @@
    "agency": "government agency (scfc.gov)",
    "runs": [],
    "handover": [],
-   "notes": [],
-   "map_tried": [
-    {
-     "url": "https://www.scfc.gov/wp-content/uploads/2021/06/trailmap-manchester.pdf",
-     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "",
-     "how": "a link on the park's page ('View/download Manchester State Forest’s all-trails map, which includes the horse')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "covers": 0,
-     "via": "the agency site"
-    }
+   "notes": [
+    "park page: HTTP 202"
    ],
-   "ver": 5
+   "ver": 6
   },
   "US-5487": {
    "n": "Poe Creek State Forest",
    "t": "State Forest",
    "page": "https://www.scfc.gov/state-forests/poe-creek-state-forest/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
-    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.scfc.gov/wp-content/uploads/2024/01/WMA-PoeCreekStateFores; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.scfc.gov/wp-content/uploads/2024/01/WMA-PiedmontForestryCe)",
-    "how": "a link on the park's page ('View/download the Poe Creek State Forest WMA map')"
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -2903,53 +2930,22 @@
     "status": "not found"
    },
    "agency": "government agency (scfc.gov)",
-   "runs": [
-    "managed by the SC Forestry Commission",
-    "now managed by Pickens County"
-   ],
+   "runs": [],
    "handover": [],
-   "notes": [],
-   "map_tried": [
-    {
-     "url": "https://www.scfc.gov/wp-content/uploads/2024/01/WMA-PoeCreekStateForest.pdf",
-     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "",
-     "how": "a link on the park's page ('View/download the Poe Creek State Forest WMA map')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "covers": 0,
-     "via": "the agency site"
-    },
-    {
-     "url": "https://www.scfc.gov/wp-content/uploads/2024/01/WMA-PiedmontForestryCenter.pdf",
-     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "",
-     "how": "a link on the park's page ('View/download the Piedmont Forestry Center (at Poe Creek State Forest) WMA map')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "covers": 0,
-     "via": "the agency site"
-    }
+   "notes": [
+    "park page: HTTP 202"
    ],
-   "ver": 5
+   "ver": 6
   },
   "US-5488": {
    "n": "Sand Hills State Forest",
    "t": "State Forest",
    "page": "https://www.scfc.gov/state-forests/sand-hills-state-forest/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
-    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.scfc.gov/wp-content/uploads/2021/06/wma-sandhills.pdf; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.scfc.gov/wp-content/uploads/2021/06/shsfmap.pdf)",
-    "how": "a link on the park's page ('View/download the Sand Hills State Forest WMA map')"
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -2959,48 +2955,20 @@
    "agency": "government agency (scfc.gov)",
    "runs": [],
    "handover": [],
-   "notes": [],
-   "map_tried": [
-    {
-     "url": "https://www.scfc.gov/wp-content/uploads/2021/06/wma-sandhills.pdf",
-     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "",
-     "how": "a link on the park's page ('View/download the Sand Hills State Forest WMA map')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "covers": 0,
-     "via": "the agency site"
-    },
-    {
-     "url": "https://www.scfc.gov/wp-content/uploads/2021/06/shsfmap.pdf",
-     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "",
-     "how": "a link on the park's page ('View/download the official Sand Hills State Forest map')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "covers": 0,
-     "via": "the agency site"
-    }
+   "notes": [
+    "park page: HTTP 202"
    ],
-   "ver": 5
+   "ver": 6
   },
   "US-5489": {
    "n": "Wee Tee State Forest",
    "t": "State Forest",
    "page": "https://www.scfc.gov/state-forests/wee-tee-state-forest/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
-    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.scfc.gov/wp-content/uploads/2026/10/WeeTeeWMAMap.pdf; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.dnr.sc.gov/wma/maps/wmamap9.pdf)",
-    "how": "a link on the park's page ('Wee Tee WMA map (with canoe/kayak landings')"
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -3010,44 +2978,16 @@
    "agency": "government agency (scfc.gov)",
    "runs": [],
    "handover": [],
-   "notes": [],
-   "map_tried": [
-    {
-     "url": "https://www.scfc.gov/wp-content/uploads/2026/10/WeeTeeWMAMap.pdf",
-     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "",
-     "how": "a link on the park's page ('Wee Tee WMA map (with canoe/kayak landings')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "covers": 0,
-     "via": "the agency site"
-    },
-    {
-     "url": "https://www.dnr.sc.gov/wma/maps/wmamap9.pdf",
-     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
-     "kind": "pdf",
-     "date": null,
-     "date_how": "",
-     "how": "a link on the park's page ('S')",
-     "posted": "",
-     "posted_how": "",
-     "names_park": false,
-     "checked": "2026-10-28",
-     "covers": 0,
-     "via": "linked from the agency page (dnr.sc.gov)"
-    }
+   "notes": [
+    "park page: HTTP 202"
    ],
-   "ver": 5
+   "ver": 6
   },
   "US-8145": {
    "n": "McCalla Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/899",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -3056,19 +2996,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8146": {
    "n": "Ditch Pond Heritage Preserve",
    "t": "Heritage Preserve",
    "page": "https://public-lands-scdnr.hub.arcgis.com/pages/ditch-pond-hp-wma",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -3083,13 +3024,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8147": {
    "n": "Altamaha Towne Heritage Preserve",
    "t": "Heritage Preserve",
    "page": "https://www.alltrails.com/trail/us/south-carolina/altamaha-town-heritage-preserve--2",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -3105,14 +3046,14 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 5,
-   "browser_checked": "2026-10-28"
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-8148": {
    "n": "Lighthouse Inlet Heritage Preserve",
    "t": "Heritage Preserve",
    "page": "https://www.ccprc.com/3149/Lighthouse-Inlet-Heritage-Preserve",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://assets.simpleviewinc.com/sv-charleston/image/upload/v1/cms_res; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://assets.simpleviewinc.com/sv-charleston/image/upload/v1/cms_res)",
@@ -3138,7 +3079,7 @@
      "posted": "",
      "posted_how": "",
      "names_park": false,
-     "checked": "2026-10-28",
+     "checked": "2026-10-29",
      "covers": 0,
      "via": "linked from the agency page (assets.simpleviewinc.com)"
     },
@@ -3152,18 +3093,18 @@
      "posted": "",
      "posted_how": "",
      "names_park": false,
-     "checked": "2026-10-28",
+     "checked": "2026-10-29",
      "covers": 0,
      "via": "linked from the agency page (assets.simpleviewinc.com)"
     }
    ],
-   "ver": 5
+   "ver": 6
   },
   "US-8149": {
    "n": "Oak Lea Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://public-lands-scdnr.hub.arcgis.com/pages/oak-lea-wma",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -3178,13 +3119,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8150": {
    "n": "Bald Rock Heritage Preserve",
    "t": "Heritage Preserve",
    "page": "https://public-lands-scdnr.hub.arcgis.com/pages/bald-rock-hp",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -3199,13 +3140,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8151": {
    "n": "Woodbury Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://public-lands-scdnr.hub.arcgis.com/pages/woodbury-wma",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -3220,13 +3161,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8152": {
    "n": "Glassy Mountain Heritage Preserve",
    "t": "Heritage Preserve",
    "page": "https://www.sctrails.net/trails/trail/glassy-mountain",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -3241,13 +3182,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8153": {
    "n": "Herbert Kirsh Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://public-lands-scdnr.hub.arcgis.com/pages/herbert-kirsch-wildlife-conservation-area",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -3262,13 +3203,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-8154": {
    "n": "Worth Mountain Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www.yorkcountygov.com/888/Worth-Mountain",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://www.yorkcountysc.gov/DocumentCenter/View/7835/Allison-Creek-Park-2023-Map-PDF",
     "status": "HTTP 403",
@@ -3279,7 +3220,7 @@
     "page": "https://www.yorkcountygov.com/888/Worth-Mountain",
     "posted": "",
     "posted_how": "",
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "via": "linked from the agency page (yorkcountysc.gov)"
    },
    "rules": {
@@ -3292,14 +3233,14 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 5,
-   "browser_checked": "2026-10-28"
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-9192": {
    "n": "Henderson Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www.sctrails.net/trails/trail/henderson-heritage-preserve",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -3314,13 +3255,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-9193": {
    "n": "Janet Harrison Pond Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/676",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -3329,19 +3270,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-9195": {
    "n": "South Bluff Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www.sctrails.net/trails/trail/south-bluff-heritage-preserve",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -3356,13 +3298,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-9197": {
    "n": "Victoria Bluff Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www.sctrails.net/trails/trail/victoria-bluff-heritage-preserve",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -3377,13 +3319,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-9198": {
    "n": "Childsbury Towne Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://public-lands-scdnr.hub.arcgis.com/pages/childsbury-towne-hp",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -3398,24 +3340,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-9199": {
    "n": "Hatchery Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www.berkeleyoutdoorlife.com/the-hatchery-blueway",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://maphub.net/BerkeleyOutdoorLife/berkeley-blueways",
     "status": "ok",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('Blueways MAP')",
     "posted": "",
     "posted_how": "",
     "names_park": false,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "linked from the agency page (maphub.net)",
     "date_label": "date unknown"
@@ -3429,13 +3371,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-9200": {
    "n": "Dungannon Plantation Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://public-lands-scdnr.hub.arcgis.com/pages/dungannon-plantation-hp-wma",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -3450,13 +3392,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-9201": {
    "n": "Fort Lamar Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www.sctrails.net/trails/trail/fort-lamar-heritage-preserve",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -3471,13 +3413,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-9202": {
    "n": "Santee Coastal Reserve Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://public-lands-scdnr.hub.arcgis.com/pages/santee-coastal-reserve-wma",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -3492,13 +3434,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-9203": {
    "n": "Palmetto State Trail",
    "t": "State Trail",
    "page": "https://palmettoconservation.org/palmetto-trail/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -3515,13 +3457,13 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 5
+   "ver": 6
   },
   "US-9204": {
    "n": "McBee Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/24",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -3530,19 +3472,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-9205": {
    "n": "Bennett's Bay Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://public-lands-scdnr.hub.arcgis.com/pages/bennetts-bay-hp",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -3557,13 +3500,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-9206": {
    "n": "Donnelley Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://southcarolinalowcountry.com/colleton-countys-donnelley-wildlife-management-area/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://southcarolinalowcountry.com/things-to-do/maps/)",
@@ -3589,18 +3532,18 @@
      "posted": "",
      "posted_how": "",
      "names_park": false,
-     "checked": "2026-10-28",
+     "checked": "2026-10-29",
      "covers": 0,
      "via": "the agency site"
     }
    ],
-   "ver": 5
+   "ver": 6
   },
   "US-9207": {
    "n": "Segars-McKinnon Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/48",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -3609,19 +3552,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-9208": {
    "n": "Santee-Delta Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://public-lands-scdnr.hub.arcgis.com/pages/santee-delta-wma",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -3636,13 +3580,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-9209": {
    "n": "Ashmore Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/1",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -3651,19 +3595,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-9210": {
    "n": "Bunched Arrowhead Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/6",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -3672,19 +3617,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-9211": {
    "n": "Eva Russell Chandler Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www.sctrails.net/trails/trail/eva-russell-chandler",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -3699,13 +3645,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-9212": {
    "n": "Tall Pines Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/766",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -3714,19 +3660,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-9213": {
    "n": "Watson-Cooper Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/18",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -3735,19 +3682,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-9214": {
    "n": "Palachucola Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/665",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -3756,19 +3704,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-9215": {
    "n": "Webb Wildlife Center Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/108",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -3777,19 +3726,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-9216": {
    "n": "Cartwheel Bay Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www.alltrails.com/trail/us/south-carolina/cartwheel-bay-heritage-preserve-trail",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -3805,14 +3755,14 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 5,
-   "browser_checked": "2026-10-28"
+   "ver": 6,
+   "browser_checked": "2026-10-29"
   },
   "US-9217": {
    "n": "Waccamaw River Heritage Preserve",
    "t": "Heritage Preserve",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/106",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -3821,19 +3771,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-9218": {
    "n": "Liberty Hill Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/889",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -3842,19 +3793,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-9219": {
    "n": "Belfast Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/65",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -3863,19 +3815,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-9220": {
    "n": "Clinton Reservoir Tract Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/112",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -3884,19 +3837,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-9221": {
    "n": "Gray Court Tract Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/52",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -3905,19 +3859,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-9222": {
    "n": "Lynchburg Savanna Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://public-lands-scdnr.hub.arcgis.com/pages/lynchburg-savanna-hp-wma",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -3932,13 +3887,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-9223": {
    "n": "Peachtree Rock Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/peachtree-rock-heritage-preserve/",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://www.nature.org/content/dam/tnc/nature/en/documents/peachtree-trail-map-south-carolina.pdf",
     "status": "ok",
@@ -3949,7 +3904,7 @@
     "posted": "Jun 14, 2023",
     "posted_how": "posted: the server's file date",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 1,
     "via": "the agency site",
     "date_label": "2023"
@@ -3963,13 +3918,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-9224": {
    "n": "Lake Wallace Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/148",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -3978,19 +3933,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-9225": {
    "n": "Brasstown Creek Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://public-lands-scdnr.hub.arcgis.com/pages/brasstown-creek-hp-wma",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -4005,24 +3961,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-9226": {
    "n": "Jocassee Gorges Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www.dnr.sc.gov/managed/wild/jocassee/index.htm",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://www.dnr.sc.gov/managed/wild/jocassee/map.htm",
     "status": "ok",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('Map')",
     "posted": "",
     "posted_how": "",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "the agency site",
     "date_label": "date unknown"
@@ -4030,19 +3986,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-9227": {
    "n": "Nine Times Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www.sctrails.net/trails/trail/nine-times-preserve",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -4057,13 +4014,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-9228": {
    "n": "Peters Creek Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www.sctrails.net/trails/trail/peters-creek-heritage-preserve",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -4078,13 +4035,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-9229": {
    "n": "Wild Turkey Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://www2.dnr.sc.gov/ManagedLands/ManagedLand/ManagedLand/116",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -4093,19 +4050,20 @@
    "rules": {
     "url": "https://www.dnr.sc.gov/regulations.html",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "ok"
+    "status": "ok",
+    "rules_scope": "agency"
    },
    "agency": "government agency (dnr.sc.gov)",
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-9230": {
    "n": "Rock Hill Blackjacks Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://public-lands-scdnr.hub.arcgis.com/pages/rock-hill-blackjacks-hp-wma",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -4120,24 +4078,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-9758": {
    "n": "Chattooga National Wild and Scenic River",
    "t": "National Wild and Scenic River",
    "page": "https://www.rivers.gov/rivers/river/chattooga",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "https://www.fws.gov/rivers/map",
     "status": "ok",
     "kind": "page",
     "date": null,
-    "date_how": "date unknown, checked 2026-10-28",
+    "date_how": "date unknown, checked 2026-10-29",
     "how": "a link on the park's page ('System-wide Map')",
     "posted": "",
     "posted_how": "",
     "names_park": true,
-    "checked": "2026-10-28",
+    "checked": "2026-10-29",
     "covers": 0,
     "via": "linked from the agency page (fws.gov)",
     "date_label": "date unknown"
@@ -4151,13 +4109,13 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   },
   "US-9759": {
    "n": "May Forest State Park",
    "t": "State Park",
    "page": "https://southcarolinaparks.com/may-forest",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "map": {
     "url": "",
     "status": "no map link on file and none on the park page",
@@ -4172,24 +4130,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 5
+   "ver": 6
   }
  },
- "read": "2026-10-28",
+ "read": "2026-10-29",
  "counts": {
   "parks": 167,
-  "map ok": 24,
-  "map found by the bot": 13,
+  "map ok": 22,
+  "map found by the bot": 11,
   "date on the map": 2,
   "posted date only": 11,
-  "date unknown": 11,
-  "no map": 143,
+  "date unknown": 9,
+  "no map": 145,
   "rules ok": 67,
   "needs browser": 0,
   "handover hints": 0,
-  "runs hints": 2,
+  "runs hints": 1,
   "host resting / robots": 0,
-  "map names the park": 21,
+  "map names the park": 19,
   "region overview only": 0
  }
 }
