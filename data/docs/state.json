@@ -183,10 +183,38 @@
    "updated": "2026-10-29"
   },
   "US-ME": {
-   "status": "partial",
+   "status": "done",
    "parks": 148,
-   "checked": 31,
-   "left": 117,
+   "checked": 148,
+   "left": 0,
+   "updated": "2026-10-29"
+  },
+  "US-MD": {
+   "status": "done",
+   "parks": 186,
+   "checked": 186,
+   "left": 0,
+   "updated": "2026-10-29"
+  },
+  "US-DE": {
+   "status": "done",
+   "parks": 89,
+   "checked": 89,
+   "left": 0,
+   "updated": "2026-10-29"
+  },
+  "US-DC": {
+   "status": "done",
+   "parks": 35,
+   "checked": 35,
+   "left": 0,
+   "updated": "2026-10-29"
+  },
+  "US-AR": {
+   "status": "done",
+   "parks": 306,
+   "checked": 306,
+   "left": 0,
    "updated": "2026-10-29"
   }
  },
@@ -210,32 +238,36 @@
   "www.cgcounty.org": 1793316859.6578937,
   "www.lclt.org": 1793322015.230936,
   "sojournertruthstatepark.info": 1793325011.1974332,
-  "www.mass-trails.org": 1793326495.1067936
+  "www.mass-trails.org": 1793326495.1067936,
+  "www.usna.usda.gov": 1793332248.1578314,
+  "fhwaapps.fhwa.dot.gov": 1793332633.3492808,
+  "www.agfc": 1793332866.3907526,
+  "mip.agri.arkansas.gov": 1793332986.7646573
  },
  "last": {
   "when": "2026-10-29",
   "areas": [
-   "US-MA",
-   "US-VT",
-   "US-NH",
    "US-ME",
    "US-MD",
    "US-DE",
    "US-DC",
-   "US-AR"
+   "US-AR",
+   "US-LA",
+   "US-OK",
+   "US-TX"
   ],
   "stat": {
-   "requests": 1532,
-   "parks": 753,
-   "maps_ok": 371,
-   "maps_found": 349,
-   "dates": 6,
-   "rules": 226,
-   "browser": 498,
-   "robots": 4,
-   "strikes": 3,
-   "errors": 3,
-   "skipped_fresh": 14
+   "requests": 1479,
+   "parks": 733,
+   "maps_ok": 206,
+   "maps_found": 139,
+   "dates": 16,
+   "rules": 168,
+   "browser": 102,
+   "robots": 3,
+   "strikes": 12,
+   "errors": 9,
+   "skipped_fresh": 31
   }
  }
 }
