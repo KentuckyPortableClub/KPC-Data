@@ -103,22 +103,22 @@
   "US-KY": {
    "checked": 193,
    "counts": {
-    "agree": 99,
-    "handover_hints": 7,
+    "agree": 109,
+    "handover_hints": 5,
     "no_page": 0,
-    "no_size": 73,
-    "off": 8,
+    "no_size": 66,
+    "off": 5,
     "ours_unknown": 0,
     "parks": 193,
     "retired": 0,
     "unsure": 9,
-    "weak": 29,
+    "weak": 26,
     "with_outline": 189
    },
    "left": 0,
    "parks": 193,
-   "status": "done",
-   "updated": "2026-10-28"
+   "status": "failed",
+   "updated": "2026-10-29"
   },
   "US-MO": {
    "checked": 561,
@@ -282,29 +282,29 @@
  },
  "last": {
   "areas": [
-   "US-IL"
+   "US-KY"
   ],
   "manners": {
    "arcgis_exempt": 0,
    "errors": 0,
-   "requests": 546,
-   "rested": 4,
+   "requests": 540,
+   "rested": 11,
    "robots": 0,
    "strikes": 1
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 15,
-   "no_size": 40,
-   "ours_unknown": 3,
-   "pages_read": 499,
-   "parks": 219,
+   "handover_hints": 5,
+   "no_size": 66,
+   "ours_unknown": 0,
+   "pages_read": 378,
+   "parks": 193,
    "retired": 0,
-   "size_agree": 32,
-   "size_off": 76,
-   "size_unsure": 53,
+   "size_agree": 109,
+   "size_off": 5,
+   "size_unsure": 9,
    "skipped_fresh": 0,
-   "with_outline": 204
+   "with_outline": 189
   },
   "when": "2026-10-29"
  },
@@ -316,12 +316,12 @@
   },
   "https://fw.ky.gov/News/Pages/All-News.aspx": {
    "links": 0,
-   "read": "2026-10-28",
+   "read": "2026-10-29",
    "status": "HTTP 404"
   },
   "https://fw.ky.gov/News/Pages/default.aspx": {
    "links": 78,
-   "read": "2026-10-28",
+   "read": "2026-10-29",
    "status": "ok"
   },
   "https://georgiawildlife.com/news": {
@@ -331,7 +331,7 @@
   },
   "https://kentuckytourism.com/industry/news": {
    "links": 0,
-   "read": "2026-10-28",
+   "read": "2026-10-29",
    "status": "HTTP 404"
   },
   "https://mdc.mo.gov/newsroom": {
@@ -341,7 +341,7 @@
   },
   "https://parks.ky.gov/news": {
    "links": 0,
-   "read": "2026-10-28",
+   "read": "2026-10-29",
    "status": "HTTP 404"
   },
   "https://tnstateparks.com/about/news": {
@@ -382,7 +382,7 @@
  },
  "proven": "2026-10-29",
  "test": {
-  "result": "PASS",
+  "result": "FAIL",
   "rows": [
    {
     "ok": true,
@@ -409,11 +409,11 @@
     "ref": "US-0703+US-3790"
    },
    {
-    "ok": true,
+    "ok": false,
     "ref": "US-10098"
    },
    {
-    "ok": true,
+    "ok": false,
     "ref": "US-4689"
    },
    {
@@ -426,6 +426,6 @@
    }
   ],
   "when": "2026-10-29",
-  "why": "US-1264 ok (Levi Jackson OFF (722 vs ~896) + a hint naming the City of London; verdict off, agency 896 acres) · US-8144 ok (Otter Creek: a hint naming Meade; verdict agree, agency 2,261 acre) · US-10105 ok (Green WSR: official page is not Mammoth Cave's (/maca/); verdict no size on page, agency None) · US-10104 ok (Red River WSR: official acres is not 879 (the \"708, 879\" parse); verdict unsure, agency 708,000 acres) · US-0295 ok (Clarks River NWR: official acres is not the 73,962 land grant; verdict unsure, agency 6 million acres) · US-0703+US-3790 ok (Fort Donelson and Fort Heiman do not share one official page; verdict off, agency 1007 acres) · US-10098 ok (Green River NWR OFF (clean 9,500 vs ours); verdict off, agency 9,500 acres) · US-4689 ok (Kentucky Ridge SF OFF (15,251 vs 11,736 = 23%); verdict off, agency 15,251 acres) · US-3800 ok (Cedar Creek Lake WMA OFF (ours 2,390 vs 796); verdict off, agency 796 acres) · US-0050 ok (Mammoth Cave OFF with cause 'boundary vs owned'; verdict off, agency 52,830 acres)"
+  "why": "US-1264 ok (Levi Jackson OFF (722 vs ~896) + a hint naming the City of London; verdict off, agency 896 acres) · US-8144 ok (Otter Creek: a hint naming Meade; verdict agree, agency 2,221 acres) · US-10105 ok (Green WSR: official page is not Mammoth Cave's (/maca/); verdict no size on page, agency None) · US-10104 ok (Red River WSR: official acres is not 879 (the \"708, 879\" parse); verdict unsure, agency 708,000 acres) · US-0295 ok (Clarks River NWR: official acres is not the 73,962 land grant; verdict no size on page, agency None) · US-0703+US-3790 ok (Fort Donelson and Fort Heiman do not share one official page; verdict off, agency 1007 acres) · US-10098 MISS (Green River NWR OFF (clean 9,500 vs ours); verdict no size on page, agency None) · US-4689 MISS (Kentucky Ridge SF OFF (15,251 vs 11,736 = 23%); verdict agree, agency 11,794 acres) · US-3800 ok (Cedar Creek Lake WMA OFF (ours 2,390 vs 796); verdict off, agency 796 acres) · US-0050 ok (Mammoth Cave OFF with cause 'boundary vs owned'; verdict off, agency 52,830 acres)"
  }
 }
