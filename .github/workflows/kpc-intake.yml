@@ -67,6 +67,13 @@ jobs:
               if not u: continue
               p = s.get(u) or {}
               if not p.get('probed') or p.get('sig') != sig(r) or p.get('retry') or old(p['probed']): n += 1
+          import glob   # Oct 29: A-band harvester leads not in the queue yet count too (the bot feeds them in, 40 a night)
+          def key(u): return re.sub(r'/(?:featureserver|mapserver)(?:/\d+)?$', '', strip(u).lower())
+          have = {key(r.get('url')) for r in q if r.get('url')}
+          for f in glob.glob('data/harvest/leads-*.json'):
+              try: L = json.load(open(f)).get('leads') or {}
+              except Exception: L = {}
+              n += sum(1 for v in (L.values() if isinstance(L, dict) else []) if isinstance(v, dict) and v.get('band') == 'A' and v.get('url') and key(v['url']) not in have)
           print(n)
           PY
           )

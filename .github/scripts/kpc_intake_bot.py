@@ -272,6 +272,32 @@ def jget(url, budget):
 def strip_query(u): return re.sub(r'\?.*$', '', (u or '').strip()).rstrip('/')
 
 
+def lead_key(u):
+    """The harvester's lead key: lower case, no query, no '/FeatureServer[/N]' or '/MapServer[/N]' tail."""
+    return re.sub(r'/(?:featureserver|mapserver)(?:/\d+)?$', '', strip_query(u).lower())
+
+
+FEED_MAX = int(os.environ.get('FEED_MAX') or 40)   # new harvester rows probed per night (a 162-row GB batch must not run 3 h)
+
+
+def feed_from_harvester(queue_doc):
+    """Fable's note (Oct 29): every A-band lead of the world harvester that is not in the queue yet becomes a queue row
+    (from: harvester); B-band only when chat 8 asks. Returns the number added."""
+    import glob as _g
+    rows = queue_doc.setdefault('rows', [])
+    have = {lead_key(r.get('url')) for r in rows if r.get('url')}
+    added = 0
+    for f in sorted(_g.glob('data/harvest/leads-*.json')):
+        L = (load(f, {}) or {}).get('leads') or {}
+        for k, v in (L.items() if isinstance(L, dict) else []):
+            if not isinstance(v, dict) or v.get('band') != 'A' or not v.get('url'): continue
+            if lead_key(v['url']) in have or lead_key(k) in have: continue
+            rows.append({'url': v['url'], 'area': v.get('cc') or '', 'cc': v.get('cc') or '', 'title': v.get('title') or '', 'publisher': v.get('publisher') or '',
+                         'licence': (v.get('licence') or '')[:300], 'from': 'harvester', 'added': TODAY, 'expect': None})
+            have.add(lead_key(v['url'])); added += 1
+    return added
+
+
 def probe_rest_layer(lu, budget):
     """ArcGIS REST layer: fields, geometry, name field, extent, counts, last edit, item id."""
     j, st = jget(lu + '?f=json', budget)
@@ -684,7 +710,10 @@ def main():
     ready = load(OUT / 'ready.json', {'about': 'Layer intake results: one row per probed layer (metadata and counts only, never geometry). approved: null until chat 9 sets true; the nightly key rebuild reads approved rows later. Written by kpc_intake_bot.py.',
                                        'read': ['data/intake/queue.json', 'data/us-key/layers.json', 'data/ca-key/layers.json', 'KPC-Links data/state-gis.json', 'data/harvest/countries.json', 'data/parkinfo', 'data/us-key', 'data/ca-key', 'data/world-key', 'KPC-Links data/ky-answer-key.json'], 'rows': []})
     M = Manners('layer intake line (probes map-layer leads: metadata and counts only)', state.get('hosts'))
-    queue = load(QUEUE_FILE, {}).get('rows') or []
+    qdoc = load(QUEUE_FILE, {}) or {}
+    fed = feed_from_harvester(qdoc) if os.environ.get('FEED', '1') != '0' and not TEST else 0
+    if fed: save(QUEUE_FILE, qdoc)
+    queue = qdoc.get('rows') or []
     want = [strip_query(u) for u in (os.environ.get('ROWS') or '').split() if u.strip()]
     old = {r['url']: r for r in ready.get('rows') or [] if isinstance(r, dict) and r.get('url')}
     known, hosts = known_layers(); trusted, govwords = trusted_orgs(); miss_cache = {}
@@ -699,6 +728,10 @@ def main():
         fresh = prev.get('probed') and days_ago(prev['probed']) < REFRESH_DAYS and prev.get('sig') == sig(row) and not prev.get('retry') and not stale_fail and 'RETRY' not in (prev.get('verdicts') or [])
         if fresh and not want: STAT['skipped_fresh'] += 1; continue
         todo.append(row)
+    hv = [r for r in todo if r.get('from') == 'harvester']
+    today_h = sum(1 for r in queue if r.get('from') == 'harvester' and (state['rows'].get(strip_query(r.get('url'))) or {}).get('probed') == TODAY)
+    cap = max(0, FEED_MAX - today_h)                                    # FEED_MAX per NIGHT, whatever the number of chunks
+    if len(hv) > cap: todo = [r for r in todo if r.get('from') != 'harvester'] + hv[:cap]   # the rest wait for the next nights
     notice(f'{len(todo)} queue rows to probe ({STAT["skipped_fresh"]} probed within {REFRESH_DAYS} days skipped; {len(known)} layers already read)')
     done = 0
     for row in todo:
@@ -751,6 +784,7 @@ def main():
     state['hosts'] = M.resting(); state['last_run'] = TODAY; state['stat'] = STAT; state['manners'] = M.stat
     left = sum(1 for row in queue if strip_query(row.get('url')) and not (state['rows'].get(strip_query(row.get('url'))) or {}).get('probed') or (state['rows'].get(strip_query(row.get('url'))) or {}).get('retry'))
     save(OUT / 'state.json', state)
+    notice(f"COUNT: queue rows {len(queue)} (+{fed} fed from the harvester tonight) / probed tonight {done} / READY {STAT.get('ready', 0)} / RETRY {STAT.get('retry', 0)} / REJECT {STAT.get('reject', 0)}")
     notice(f'probed {done} rows this run: ' + ' · '.join(f'{v} {counts[v]}' for v in ORDER) + f' (whole list); did not open {STAT["did_not_open"]}; manners {M.stat}')
     if TEST or STAT['tests_ok'] or STAT['tests_miss']:
         tests = [r for r in ready['rows'] if r.get('test')]
