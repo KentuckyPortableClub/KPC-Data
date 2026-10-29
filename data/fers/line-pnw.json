@@ -6,12 +6,9 @@
   "US-WA"
  ],
  "since": "2026-10-29",
- "date": "2026-10-29 16:01 UTC",
- "verdict": "STOPPED",
- "why": [
-  "water not checked: US-OR: 6 rows (the USGS water map / files had no answer there): never READY with one",
-  "water not checked: US-WA: 3 rows (the USGS water map / files had no answer there): never READY with one"
- ],
+ "date": "2026-10-29 20:31 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
  "known_answers": "19/19 on 2026-10-29",
  "missing_check": {
   "FOUND": 106,
@@ -30,15 +27,15 @@
    "pairs tested": 337
   },
   "pass3": {
-   "agree with the pass before": 794,
+   "agree with the pass before": 0,
    "date": "2026-10-29",
-   "pairs tested": 326
+   "pairs tested": 0
   },
   "pass5": {
-   "checked": 103,
+   "checked": 99,
    "date": "2026-10-29",
    "pairs tested": 0,
-   "still not checked": 9
+   "still not checked": -2
   }
  },
  "files": {
@@ -47,12 +44,11 @@
  },
  "US-OR": {
   "rows": 1064,
-  "live": 78,
+  "live": 84,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "the agency ownership map did not answer": 31,
-   "water not checked": 6,
    "this spot is 184 km from Irrigon State Fish Hatchery's POTA": 1,
    "no public owner on the ownership map": 1,
    "low-confidence outline for Whychus Creek National Wild and S": 1
@@ -60,24 +56,18 @@
   "dropped": 715,
   "merged": 231
  },
- "water_weak": {
-  "US-OR": 6,
-  "US-WA": 3
- },
  "US-WA": {
   "rows": 926,
-  "live": 50,
+  "live": 53,
   "waiting": 0,
   "unfinished": 0,
-  "not_sure": {
-   "water not checked": 3
-  },
+  "not_sure": {},
   "dropped": 567,
   "merged": 306
  },
- "states_ready": [],
- "states_held": [
+ "states_ready": [
   "US-OR",
   "US-WA"
- ]
+ ],
+ "states_held": []
 }

@@ -130,30 +130,6 @@
    "area": "pnw",
    "state": "US-OR",
    "refs": [
-    "US-10760",
-    "US-4383"
-   ],
-   "names": {
-    "US-10760": "Wild Rogue BLM Wilderness Area",
-    "US-4383": "Rogue River-Siskiyou National Forest"
-   },
-   "what": "water map weak here (fix later: a better water source)",
-   "kind": "area",
-   "size": "27111.1 ac",
-   "sort": 27111.1,
-   "reason": "water not checked (the USGS water map did not answer): run pass 5",
-   "id": "US-10760+US-4383@area@42.673,-123.947",
-   "sources": {
-    "US-10760": "downloaded 2026-10-29",
-    "US-4383": "downloaded 2026-10-29",
-    "USGS water": "USGS NHDPlus HR file 2022-04-19 (the same NHDPlus HR water, from USGS's download files)"
-   },
-   "checked": "2026-10-29"
-  },
-  {
-   "area": "pnw",
-   "state": "US-OR",
-   "refs": [
     "US-4378",
     "US-9985"
    ],
@@ -261,11 +237,11 @@
     "US-0056": "Olympic National Park",
     "US-4532": "Olympic National Forest"
    },
-   "what": "water map weak here (fix later: a better water source)",
+   "what": "more than one owner on the patch (all public): live, look later",
    "kind": "area",
    "size": "5759.2 ac",
    "sort": 5759.2,
-   "reason": "water not checked (the USGS water map did not answer): run pass 5 \u00b7 ['FED:NPS', 'FED:USFS']",
+   "reason": "candidate \u00b7 ['FED:NPS', 'FED:USFS']",
    "id": "US-0056+US-4532@area@47.880,-123.160",
    "sources": {
     "US-0056": "downloaded 2026-10-29",
@@ -515,11 +491,11 @@
     "US-10011": "OC&E Woods Line State Trail",
     "US-4379": "Fremont-Winema National Forest"
    },
-   "what": "water map weak here (fix later: a better water source)",
+   "what": "more than one owner on the patch (all public): live, look later",
    "kind": "area",
    "size": "219.4 ac",
    "sort": 219.4,
-   "reason": "water not checked (the USGS water map did not answer): run pass 5 \u00b7 ['FED:USFS', 'STATE']",
+   "reason": "candidate \u00b7 ['FED:USFS', 'STATE']",
    "id": "US-10011+US-4379@area@42.425,-121.553",
    "sources": {
     "US-10011": "downloaded 2026-10-29",
@@ -583,16 +559,16 @@
     "US-0052": "Mount Rainier National Park",
     "US-4530": "Mount Baker-Snoqualmie National Forest"
    },
-   "what": "water map weak here (fix later: a better water source)",
+   "what": "more than one owner on the patch (all public): live, look later",
    "kind": "area",
    "size": "165.3 ac",
    "sort": 165.3,
-   "reason": "water not checked (the USGS water map did not answer): run pass 5 \u00b7 ['FED:NPS', 'FED:USFS']",
+   "reason": "candidate \u00b7 ['FED:NPS', 'FED:USFS']",
    "id": "US-0052+US-4530@area@46.917,-121.506",
    "sources": {
     "US-0052": "downloaded 2026-10-29",
     "US-4530": "downloaded 2026-10-29",
-    "USGS water": "USGS NHDPlus HR file 2022-04-19 (the same NHDPlus HR water, from USGS's download files)"
+    "USGS water": "saved copy of the USGS map, read 2026-10-29"
    },
    "checked": "2026-10-29"
   },
@@ -1204,11 +1180,11 @@
     "US-4378": "Deschutes National Forest",
     "US-5458": "Gilchrist State Forest"
    },
-   "what": "water map weak here (fix later: a better water source)",
+   "what": "more than one owner on the patch (all public): live, look later",
    "kind": "area",
    "size": "51.1 ac",
    "sort": 51.1,
-   "reason": "water not checked (the USGS water map did not answer): run pass 5 \u00b7 ['FED:USFS', 'STATE']",
+   "reason": "candidate \u00b7 ['FED:USFS', 'STATE']",
    "id": "US-4378+US-5458@area@43.451,-121.354",
    "sources": {
     "US-4378": "downloaded 2026-10-29",
@@ -1930,11 +1906,11 @@
     "US-0584": "Little Pend Oreille National Wildlife Refuge",
     "US-4528": "Colville National Forest"
    },
-   "what": "water map weak here (fix later: a better water source)",
+   "what": "more than one owner on the patch (all public): live, look later",
    "kind": "area",
    "size": "29.7 ac",
    "sort": 29.7,
-   "reason": "water not checked (the USGS water map did not answer): run pass 5 \u00b7 ['FED:FWS', 'FED:USFS']",
+   "reason": "candidate \u00b7 ['FED:FWS', 'FED:USFS']",
    "id": "US-0584+US-4528@area@48.416,-117.671",
    "sources": {
     "US-0584": "downloaded 2026-10-29",
@@ -2135,11 +2111,11 @@
     "US-0953": "Oregon Caves National Monument",
     "US-4383": "Rogue River-Siskiyou National Forest"
    },
-   "what": "water map weak here (fix later: a better water source)",
+   "what": "more than one owner on the patch (all public): live, look later",
    "kind": "area",
    "size": "25.6 ac",
    "sort": 25.6,
-   "reason": "water not checked (the USGS water map did not answer): run pass 5 \u00b7 ['FED:NPS', 'FED:USFS']",
+   "reason": "candidate \u00b7 ['FED:NPS', 'FED:USFS']",
    "id": "US-0953+US-4383@area@42.120,-123.426",
    "sources": {
     "US-0953": "downloaded 2026-10-29",
@@ -5278,11 +5254,11 @@
     "US-0731": "Columbia River Gorge National Forest",
     "US-4381": "Mount Hood National Forest"
    },
-   "what": "water map weak here (fix later: a better water source)",
+   "what": "more than one owner on the patch (all public): live, look later",
    "kind": "area",
    "size": "7.7 ac",
    "sort": 7.7,
-   "reason": "water not checked (the USGS water map did not answer): run pass 5 \u00b7 ['FED:USFS', 'LOCAL']",
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:USFS', 'LOCAL']",
    "id": "US-0731+US-4381@area@45.538,-122.205",
    "sources": {
     "US-0731": "downloaded 2026-10-29",
@@ -6379,11 +6355,11 @@
     "US-0505": "Oregon Islands National Wildlife Refuge",
     "US-4384": "Siuslaw National Forest"
    },
-   "what": "water map weak here (fix later: a better water source)",
+   "what": "more than one owner on the patch (all public): live, look later",
    "kind": "area",
    "size": "1.8 ac",
    "sort": 1.8,
-   "reason": "water not checked (the USGS water map did not answer): run pass 5 \u00b7 ['FED:FWS', 'FED:USFS']",
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:FWS', 'FED:USFS']",
    "id": "US-0505+US-4384@area@44.136,-124.128",
    "sources": {
     "US-0505": "downloaded 2026-10-29",
