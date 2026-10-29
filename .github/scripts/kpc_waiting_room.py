@@ -363,9 +363,28 @@ def c_fers(path, new, live, ctx):
     if ons >= 5 and abs(ns - ons) / ons > .3: holds.append(f'F-2 NOT SURE {ons} -> {ns} (over 30% change)')
     for p in ('pass1', 'pass2', 'pass3'):
         if not new.get(p): holds.append(f'F-2 {p} missing: the 2-fer passes did not all run')
-    for k in (known('fers').get(st_of(path) and f'US-{st_of(path)}') or []):
-        if k not in cand: holds.append(f'F-K known 2-fer missing: {k}')
+    # F-K by a STABLE key (Fable note c): the PAIR of park numbers (never the spot id, which changes when an outline changes). Live =
+    # candidate / very tight / water only / merged into another row. Pairs come from the hand files, never from the 2-fer bot's own gate.
+    live_rows = [set(s.get('refs') or []) for s in S if str(s.get('status', '')).startswith(('candidate', 'very tight', 'water only', 'merged into'))]
+    for pair, line in known_pairs(st_of(path)):
+        ok = any(set(pair) <= rs for rs in live_rows)
+        if not ok and line and len(pair) > 2:   # a 3-park entry also passes when each trail x park pair is live (Fort Donelson + Fort Heiman = one shore)
+            ok = all(any({line, o} <= rs for rs in live_rows) for o in pair if o != line)
+        if not ok: holds.append(f"F-K known 2-fer missing: {' + '.join(pair)}")
     return holds, notes
+
+
+def known_pairs(st):
+    K = known('fers').get(f'US-{st}') or {}
+    pairs = [(list(p), None) for p in (K.get('pairs') or [])]
+    if K.get('from_trail_file'):   # KPC-Links ky-trail-parks.json: the hand-checked river-bank / trail-inside pairs (the same rule chat 2 uses)
+        tp = load(LINKS / 'ky-trail-parks.json', {}) or {}
+        for key in ('lewis', 'tears'):
+            t = tp.get(key) or {}
+            for pk in t.get('parks') or []:
+                if re.search(r'within 100 ft of the water|of (the )?(trail|route).*inside|mi of trail inside', pk.get('how') or '', re.I):
+                    pairs.append((sorted(set([t.get('ref')] + (pk.get('refs') or []))), t.get('ref')))
+    return [(p, l) for p, l in pairs if all(p)]
 
 
 def c_pota(path, new, live, ctx):
@@ -379,8 +398,10 @@ def c_status(path, new, live, ctx):
     """Any file with a READY status must have no 'not checked / no answer' rows (Michigan water lesson)."""
     txt = json.dumps(new).lower()
     st = str(new.get('status') or new.get('verdict') or '').upper()
-    n = len(re.findall(r'not checked|no answer|unanswered|did not answer', txt))
-    return ([f'F-S1 status READY with {n} rows not checked / unanswered (must be STOPPED)'] if st == 'READY' and n else []), []
+    n = len(re.findall(r'store not read|not checked', txt)); r = len(re.findall(r'no answer|unanswered|did not answer|map not answered', txt))
+    holds = [f'F-S1 status READY with {n} rows STORE NOT READ / not checked (must be STOPPED)'] if st == 'READY' and n else []
+    notes = [f'F-S1 {r} rows where a map did not answer: review, not a stop (aligned with the 2-fer line checker, Fable note d)'] if st == 'READY' and r else []
+    return holds, notes
 
 
 # ---- closures: NEVER WAIT (F-3): rows that break a reject rule are taken out; an empty / garbled file holds (old one stays, 'as of')
@@ -477,6 +498,8 @@ def mode_check(promote):
     rep = {'checked': dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%dT%H:%MZ'), 'switched_on': on, 'results': [{k: v for k, v in r.items() if k != 'out'} for r in out]}
     W.mkdir(parents=True, exist_ok=True)
     json.dump(rep, open(W / 'verdicts.json', 'w'), indent=1, ensure_ascii=False)
+    with open(W / 'verdicts.jsonl', 'a', encoding='utf-8') as fh:   # Fable note b: one line per verdict, kept, so thresholds can be tuned from a month of data
+        for r in out: fh.write(json.dumps({'date': rep['checked'], 'kind': r['kind'], 'path': r['path'], 'verdict': r['verdict'], 'why': r['why'][:4], 'notes': r['notes'][:3]}, ensure_ascii=False) + '\n')
     json.dump({'ok': rep['checked']}, open(W / 'heartbeat.json', 'w'))
     if held:
         inbox = DATA / 'data' / 'status' / 'inbox-checkers.md'
@@ -550,6 +573,9 @@ def transform(d, how):
     elif op == 'spread_fee':            # copy one park's fee line onto N parks (statewide price lesson)
         P = d['parks']; src = next(r['fees'][0] for r in P.values() if r.get('fees'))
         for r in list(P.values())[:int(arg)]: r['fees'] = [dict(src)]
+    elif op == 'drop_spot':             # 'drop_spot:US-0050+US-10105': every 2-fer row holding both parks removed
+        want = set(arg.split('+'))
+        d['spots'] = [s for s in d.get('spots') or [] if not (isinstance(s, dict) and want <= set(s.get('refs') or []))]
     elif op == 'set':                   # 'set:{"status":"READY","rows":[...]}'
         d = json.loads(arg)
     return d

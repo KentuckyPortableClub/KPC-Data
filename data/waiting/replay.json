@@ -225,6 +225,34 @@
    "catch": "F-O3"
   },
   {
+   "name": "DOCS: map / rules links that answer an error (simulated: 3 parks pointing at pages that do not exist)",
+   "repo": "data",
+   "files": [
+    {
+     "path": "data/docs/US-ZZ.json",
+     "new": "live",
+     "live": "none",
+     "transform": "set:{\"area\": \"US-ZZ\", \"parks\": {\"US-9991\": {\"map\": {\"url\": \"https://www.fs.usda.gov/kpc-replay-dead-link-1.pdf\"}, \"rules\": {\"url\": \"https://www.nps.gov/kpc-replay-dead-link-2.htm\"}}, \"US-9992\": {\"map\": {\"url\": \"https://www.fws.gov/kpc-replay-dead-link-3.pdf\"}}}}"
+    }
+   ],
+   "expect": "HOLD",
+   "catch": "F-D3|unsure"
+  },
+  {
+   "name": "2-FERS: a known pair dropped (simulated: Mammoth Cave x Green River removed from the live KY file)",
+   "repo": "data",
+   "files": [
+    {
+     "path": "data/fers/US-KY.json",
+     "new": "live",
+     "live": "live",
+     "transform": "drop_spot:US-0050+US-10105"
+    }
+   ],
+   "expect": "HOLD",
+   "catch": "F-K known 2-fer missing"
+  },
+  {
    "name": "GOOD: Kentucky 2-fers (live)",
    "repo": "data",
    "files": [
