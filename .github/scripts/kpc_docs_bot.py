@@ -36,7 +36,7 @@ UA = 'KPC park documents (https://kentuckyportableclub.github.io/KPC-Links/; ham
 GAP = 2.0
 STRIKES_OUT = 3
 REFRESH_DAYS = 30
-VER = 5   # Oct 28 noon: chat 11's chunks 1-3 grade (shared rules pages, inciweb / Google pins / error maps, forest-level maps) + KY regrade 3 (USDA OIG, forest home pages). v4 = Oct 28 6:34 AM: Brandon's 8 rulings DOC-3..DOC-11 (campground / combined / overview / dates / hunting / Avenza / same age); v3 = chat 8 F1-F10 + chat 11's grade. Records made by an older rule set are read again
+VER = 6   # Oct 29 (Fable's notes, Opus): a raster map PDF (under 300 characters of text) is judged by its FILE NAME, a readable PDF that does not name the park gets the file-name test before it is thrown out ('TeterCreekLakeFinal11x17_300dpi.pdf'), agency-wide rules pages kept but labelled rules_scope 'agency', court-rules / policies-and-links / admincode / stamp-art pages never rules, COUNT line + a >15% map drop keeps the saved copy; v5 = Oct 28 noon: chat 11's chunks 1-3 grade (shared rules pages, inciweb / Google pins / error maps, forest-level maps) + KY regrade 3 (USDA OIG, forest home pages). v4 = Oct 28 6:34 AM: Brandon's 8 rulings DOC-3..DOC-11 (campground / combined / overview / dates / hunting / Avenza / same age); v3 = chat 8 F1-F10 + chat 11's grade. Records made by an older rule set are read again
 PDF_FIRST = 400_000
 PDF_MAX = 2_000_000
 TODAY = time.strftime('%Y-%m-%d')
@@ -66,7 +66,7 @@ VIEWER = re.compile(r'gis\.myfwc\.com|recreationmap|/apps/|webappviewer|experien
 PLANW = re.compile(r'\bdraft\b|\bplans?\b|proposed|concept|master ?plan|management plan|environmental assessment', re.I)   # chat 8 F3: not the visitor map
 NOTRULES = re.compile(r'air-?quality|laws-regulations|/library|privacy|accessibility|foia|/regulations/pages/default|environmental-protection|water-quality|permitting', re.I)   # chat 11 fix 2
 # Oct 28 (chat 11 regrade 2): whole-government policy pages and an agency's data / GIS pages are never a park's rules or map
-DENY = re.compile(r'inciweb|google\.[a-z.]+/maps|maps\.google|goo\.gl/maps|oversight\.gov|usdaoig|/oig/|kentucky\.gov/policies|/policies/pages/default|eec\.ky\.gov/energy|eec\.ky\.gov/environmental-protection|/data-maps/|/gis/pages/default|fs\.usda\.gov/visit/maps/?$|fs\.usda\.gov/maps/?$|/site-policies|/web-policies', re.I)
+DENY = re.compile(r'court-rules|policies-and-links|admincode|admin-code|stamp-art|art-contest|inciweb|google\.[a-z.]+/maps|maps\.google|goo\.gl/maps|oversight\.gov|usdaoig|/oig/|kentucky\.gov/policies|/policies/pages/default|eec\.ky\.gov/energy|eec\.ky\.gov/environmental-protection|/data-maps/|/gis/pages/default|fs\.usda\.gov/visit/maps/?$|fs\.usda\.gov/maps/?$|/site-policies|/web-policies', re.I)
 RULEWORD = re.compile(r'\brules?\b|regulations?|policies|laws? (and|&) policies|compendium|permits?|know before you go|r[èe]glements?|hunting (and|&) fishing regulations|park rules|ordinance', re.I)
 ORG = r'(?:the )?(?:(?:City|County|Town|Village|Commonwealth|State|Parish|Municipality|Township) of [A-Z][\w.\'-]+(?: [A-Z][\w.\'-]+){0,2}|[A-Z][\w.&\'-]*(?: (?:of|and|&|for|the)| [A-Z][\w.&\'-]*){0,6}(?: (?:County|City|Fiscal Court|Parks(?: (?:and|&) Recreation)?|Department|Dept\.?|Division|Office|Service|Commission|Agency|District|Authority|Foundation|Trust|Conservancy|Corporation|Tribe|Nation|Township|Town|Village|Government|Board|Council|State)))\b'
 HANDOVER = re.compile(r'((?:transferred|handed (?:over )?to|turned over|conveyed|now (?:managed|operated|owned|run)|will be (?:managed|operated|run)|no longer (?:managed|operated|owned|run)|took over|taken over|assumed (?:management|ownership)|as of (?:19|20)\d\d)[^.;]{0,60}?(?:to |by |from )?' + ORG + r'[^.;]{0,80}?(?:(?:19|20)\d\d|\bnow\b)[^.;]{0,40}[.;]|(?:in |since |as of )(?:20\d\d)[^.;]{0,80}?(?:transferred|handed (?:over )?to|turned over|now (?:managed|operated|owned|run) by|took over|taken over)[^.;]{0,80}?' + ORG + r'[^.;]{0,40}[.;])')
@@ -345,6 +345,11 @@ def check_url(u, want_text=True, name=''):
         cy = COPYR.search(txt)
         if cy: r['copyright'] = cy.group(1)   # kept apart: a template / base-map year, never the map date
         r['names_park'] = names_park(name, txt) if name else None
+        if name and len(txt.strip()) < 300:                       # v6: a RASTER map (the name is in the picture): judge it by the file name only
+            r['names_park'] = 'file' if names_park(name, file_words(final or u)) else None
+            if r['names_park']: r['status_note'] = 'ok (park named in the file name; raster map)'
+        elif name and r['names_park'] is False and names_park(name, file_words(final or u)):
+            r['names_park'] = 'file'; r['status_note'] = 'ok (park named in the file name)'
         if OVERVIEW.search(txt[:3000]) and not r['names_park']: r['kind'] = 'region overview'
         if name and r['names_park'] is False and len(txt.strip()) > 80 and r['kind'] == 'pdf':
             r['status'] = 'opened, a readable map that does not name this park (chat 8 F2: another unit / several units)'; return r
@@ -387,6 +392,13 @@ def covers(txt, name):
     for c in AREA_NAMES:
         if len(c) >= 6 and c in t: n += 1
     return n
+
+
+def file_words(u):
+    """'TeterCreekLakeFinal11x17_300dpi.pdf' -> 'Teter Creek Lake Final 11x17 300dpi' (the park name is in the file name of raster maps)."""
+    b = urllib.parse.unquote(str(u).split('?')[0].rsplit('/', 1)[-1]).rsplit('.', 1)[0]
+    b = re.sub(r'(?<=[a-z])(?=[A-Z])|(?<=[A-Za-z])(?=\d)|(?<=\d)(?=[A-Za-z])', ' ', b)
+    return ' '.join(re.sub(r'[_\-+.]+', ' ', b).split())
 
 
 def names_park(name, txt):
@@ -491,6 +503,9 @@ def who_runs(texts, agency_name, park=''):
     return hints[:3], hand[:2]
 
 
+AGENCYWIDE = set()
+
+
 def rules_for(fam, urls, pg_rules, lists_entry):
     """Candidate rules pages in order; the first that OPENS is kept. Federal patterns first, then the page's own links, then the
     agency-wide rules page from lists.json."""
@@ -500,6 +515,7 @@ def rules_for(fam, urls, pg_rules, lists_entry):
     if fam == 'usace': cands.append((USACE_RULES, 'Corps lakes: 36 CFR Part 327 (one national rule book) + the lake page'))
     cands += [(u, f"a link on the park's page ('{t}')") for s, u, t in pg_rules[:3]]
     if lists_entry and lists_entry.get('rules'): cands.append((lists_entry['rules'], 'the agency-wide rules page (chat 8 survey)'))
+    AGENCYWIDE.clear(); AGENCYWIDE.update({lists_entry['rules']} if lists_entry and lists_entry.get('rules') else set())
     seen = set()
     cands = [(u, how) for u, how in cands if not DENY.search(u) and not FORESTHOME.search(u)]   # Oct 28 (chat 11): never a whole-government policies page, never a forest's home page
     for u, how in cands:
@@ -508,7 +524,9 @@ def rules_for(fam, urls, pg_rules, lists_entry):
         st, hd, body, final = get(u, head=False)
         if st in (200, 206):
             if DENY.search(final or ''): continue   # a redirect onto a site-policies page is not the rules
-            return {'url': final or u, 'how': how, 'status': 'ok'}
+            out = {'url': final or u, 'how': how, 'status': 'ok'}
+            if u in AGENCYWIDE or 'agency-wide' in how: out['rules_scope'] = 'agency'   # v6 (Fable): an agency-wide rules page is kept, labelled
+            return out
         if st in ('rest', 'robots'): return {'url': u, 'how': how, 'status': 'rules page not read (the site is resting: next run)' if st == 'rest' else str(st)}
     return {'url': cands[0][0] if cands else '', 'how': cands[0][1] if cands else '', 'status': 'not found' if not cands else 'did not open'}
 
@@ -759,7 +777,16 @@ def run_area(area, state, web, lists, ky):
         browser_pass(area, D, parks, max(60, LIMIT - (time.time() - T0) - 60))
     shared_pass(D, lists.get(area, {}))
     if area == 'US-KY' and not late(): ky_finder_check(D, parks, ky, web)
+    shared_scope(D)
+    before = (load(f, {}) or {}).get('counts') or {}
     D['read'] = TODAY; D['counts'] = counts(D)
+    b_maps, b_rules = before.get('map ok'), before.get('rules ok')
+    notice(f"{area} COUNT: maps with a link {b_maps if b_maps is not None else '?'} -> {D['counts']['map ok']}, rules {b_rules if b_rules is not None else '?'} -> {D['counts']['rules ok']}, maps named by file name {sum(1 for r in D['parks'].values() if (r.get('map') or {}).get('names_park') == 'file')}")
+    if b_maps and b_maps >= 20 and D['counts']['map ok'] < .85 * b_maps:   # v6 (Fable d): a map drop over 15% keeps the saved copy; the new one waits beside it
+        save(OUT / 'held' / f'{area}.json', D)
+        notice(f"{area} GATE FAIL: maps {b_maps} -> {D['counts']['map ok']} (over 15% fewer): the saved copy is kept, the new file is in data/docs/held/")
+        state['areas'][area] = {'status': 'failed', 'parks': len(parks), 'updated': TODAY, 'why': f'maps {b_maps} -> {D["counts"]["map ok"]}'}
+        return
     save(f, D)
     left = sum(1 for r in parks if r not in D['parks'])
     state['areas'][area] = {'status': 'done' if left == 0 else 'partial', 'parks': len(parks), 'checked': len(D['parks']), 'left': left, 'updated': TODAY}
@@ -808,6 +835,15 @@ def ky_finder_check(D, parks, ky, web):
         out['rows'].append({'ref': r, 'n': parks[r][0], 'answer': want, 'bot': found, 'verdict': k})
     D['finder_check'] = out
     notice(f"Kentucky finder check (seed hidden): same map {out['same']}, another map {out['other_map']}, none {out['none']} of {out['sample']}")
+
+
+def shared_scope(D):
+    """v6: a rules page used by 10+ parks of the area is the agency's page: labelled rules_scope 'agency' (kept, never 'the park's own rules')."""
+    from collections import Counter
+    c = Counter((r.get('rules') or {}).get('url') for r in D['parks'].values() if (r.get('rules') or {}).get('status') == 'ok')
+    for r in D['parks'].values():
+        ru = r.get('rules') or {}
+        if ru.get('url') and c[ru['url']] >= 10: ru['rules_scope'] = 'agency'
 
 
 def counts(D):
