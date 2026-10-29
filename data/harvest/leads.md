@@ -160,22 +160,38 @@ access constraints t | 2024-10-18 | https://services.arcgis.com/JJzESW51TqeY9uat
 {
  "date": "2026-10-29",
  "stats": {
-  "requests": 252,
+  "requests": 56,
   "hits": 0,
-  "leads": 6,
+  "leads": 8,
   "already_read": 0,
-  "skipped": 0,
-  "not_official": 84,
-  "robots": 0,
-  "strikes": 0,
-  "errors": 4
+  "skipped": 2,
+  "not_official": 85,
+  "robots": 39,
+  "strikes": 13,
+  "errors": 50,
+  "retried_json": 5
  },
  "countries": [
-  "NL done: 7 leads (A 3), known-good found 2 of 2"
+  "NL done: 13 leads (A 3), known-good found 2 of 2"
  ],
- "dead_servers": [],
- "robots_refused": {},
- "robots_said": {},
+ "dead_servers": [
+  "geodata.nationaalgeoregister.nl",
+  "geoservices.portaalnatuurenlandschap.nl",
+  "ogc-geoservices.bij12.nl",
+  "servicespub.risicokaart.nl"
+ ],
+ "robots_refused": {
+  "geoservices.zuid-holland.nl": 7,
+  "kaartportaal.drenthe.nl": 20,
+  "services.geodataoverijssel.nl": 6,
+  "services.geodata-utrecht.nl": 6
+ },
+ "robots_said": {
+  "geoservices.zuid-holland.nl": "User-agent: Geocortex | Disallow: | User-agent: * | Disallow: /",
+  "kaartportaal.drenthe.nl": "User-Agent: * | Disallow: / | User-Agent: MS Search 6.0 Robot | Disallow: /",
+  "services.geodataoverijssel.nl": "User-agent: * | Disallow: /",
+  "services.geodata-utrecht.nl": "User-agent: * | Disallow: /"
+ },
  "robots_exempted_hosts (HQ ruling Oct 27: ArcGIS REST API paths only)": {}
 }
 ```
