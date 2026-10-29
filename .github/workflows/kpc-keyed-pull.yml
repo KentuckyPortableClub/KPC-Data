@@ -1,0 +1,31 @@
+name: KPC one-time keyed pull (temporary, chat 9)
+# Oct 29 (HQ 9:50 AM GO; Brandon 9:49 AM): ONE pull of missing parking points from ONLY ridb.recreation.gov/api/* and
+# developer.nps.gov/api/* (kpc_manners). Writes a HOLD file only (data/access-leads/keyed-pull-hold.json, never live).
+# By hand only, no schedule, never fails. DELETE this file + the script after the run.
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: kpc-keyed-pull
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v5
+      - run: python3 .github/scripts/kpc_keyed_pull.py || true
+        continue-on-error: true
+        env:
+          NPS_API_KEY: ${{ secrets.NPS_API_KEY }}
+          RIDB_API_KEY: ${{ secrets.RIDB_API_KEY }}
+      - name: Save
+        continue-on-error: true
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/access-leads/keyed-pull-hold.json data/access-leads/keyed-pull-raw.json.gz 2>/dev/null || exit 0
+          git diff --cached --quiet && exit 0
+          git commit -qm 'One-time keyed pull: HOLD file (not live)'
+          for i in 1 2 3; do git pull -q --rebase --autostash && git push -q && exit 0; sleep $((i*8)); done
+          true
