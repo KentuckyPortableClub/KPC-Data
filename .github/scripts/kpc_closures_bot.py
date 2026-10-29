@@ -264,6 +264,15 @@ def classify(sent, ctx=None):
     if STANDING_RX.search(s) and not re.search(r'\b(is|are|remains?|will be|has been)\s+(?:temporarily\s+)?clos', low) and not ctx.get('hunt_page') \
             and not re.search(r'\b(entering|entry|enter|occupying|access(?:ing)?|going (?:into|onto)|being (?:in|on|upon)|presence)\b', low) and not RULES_RX.search(s):   # CL-3: camping / fire orders stay a note
         return {'skip': 'a standing rule (prohibited / not permitted / shall not): never a closure or a note (chat 11 regrade)'}
+    _dated = bool(D1.search(s) or DNUM.search(s))
+    if re.search(r'\b(free|no permit (?:is )?(?:needed|required)|no fee|fees? (?:is|are)|permit fee)\b', low) and not re.search(r'\bclos', low):
+        return {'skip': "a fee / permit note ('Youth under 16 - Free, no permit needed'), not a closure (chat 11 round 8)"}
+    if re.search(r'\bclosed (?:on |for )?(?:all |most )?(?:federal |state |major |legal )?holidays\b|\bclosed (?:on )?(?:weekends|sundays|mondays|saturdays)\b', low) and not _dated:
+        return {'skip': 'standing hours (closed on holidays / weekends), park info not a closure (chat 11 round 8)'}
+    if re.search(r'\bprohibitions\b', low) and not _dated and not re.search(r'\b(is|are) (?:temporarily )?closed\b', low):
+        return {'skip': "a standing prohibitions order ('Camping Prohibitions'), not a dated closure (chat 11 round 8)"}
+    if (re.match(r'^\s*[•·▪*]', s) and not re.search(r'\bclos', low)) or re.match(r'(?i)^\s*following\b', s) or (len(s) < 25 and not _dated):
+        return {'skip': 'a fragment (a bullet, a "following…" tail or under 25 characters) (chat 11 round 8)'}
     s = re.sub(r'^(?:currently|at this time|at present|presently|please note|note|effective immediately|until further notice|as of now|today)\s*[,:]?\s+', '', s, flags=re.I)
     low = s.lower()
     if re.match(r'^(?:the|this|that|these|those|said)?\s*(?:trail|road|area|bridge|campground|ramp|gate|lake|loop|section|unit|boardwalk|site|route|path)s?\b', low) and ctx.get('head'):
@@ -463,7 +472,8 @@ VERB = re.compile(r"\b(is|are|was|were|will|has|have|be|remains?|closed|open|ple
 
 def html_lines(html):
     """Visible text as lines; headings keep a '# ' mark so a notice's heading (the park name) can be told from its text."""
-    t = re.sub(r'(?is)<(script|style|noscript|svg|nav|header|footer|form)\b.*?</\1>', ' ', html)
+    t = re.sub(r'(?is)<(script|style|noscript|svg|nav|header|footer)\b.*?</\1>', ' ', html)
+    t = re.sub(r'(?is)<form\b[^>]*>(.*?)</form>', lambda m: ' ' if len(m.group(1)) < 4000 else m.group(1), t)   # round 9: ASP.NET pages wrap the WHOLE page in one <form> (KDFWR WMA pages read 0 rows); only small forms (search boxes) go
     t = re.sub(r'(?is)<(h[1-6])\b[^>]*>(.*?)</\1>', lambda m: '\n# ' + re.sub(r'<[^>]+>', ' ', m.group(2)) + '\n', t)
     t = re.sub(r'(?is)<(?:strong|b)\b[^>]*>(.{3,120}?)</(?:strong|b)>\s*(?:<br\s*/?>|</p>|</div>|:)', lambda m: '\n# ' + m.group(1) + '\n', t)
     t = re.sub(r'(?i)</t[dh]>', ' | ', t)                                               # a table row stays ONE line (quota-hunt tables)
@@ -547,10 +557,7 @@ SAMPLE_WMA = """<h1>Clay WMA</h1><p>The area is closed to all other hunting Nov.
 LAST_HTML = {}
 BROWSER_LOG = []
 CHILDREN = {}      # landing page url -> the sub-pages it led to (listed on the source as 'children')
-KDFWR_QUOTA_PAGES = [   # round 8: tried when the landing page's tiles hide their addresses (a 404 costs nothing: not a strike)
-    'https://fw.ky.gov/Hunt/Pages/Deer-Quota-Hunts.aspx', 'https://fw.ky.gov/Hunt/Pages/Quota-Deer-Hunts.aspx', 'https://fw.ky.gov/Hunt/Pages/Deer-Quota-Hunt.aspx',
-    'https://fw.ky.gov/Hunt/Pages/Dove-Quota-Hunts.aspx', 'https://fw.ky.gov/Hunt/Pages/Sandhill-Crane-Quota-Hunts.aspx', 'https://fw.ky.gov/Hunt/Pages/Pheasant-Quota-Hunts.aspx',
-    'https://fw.ky.gov/Hunt/Pages/Waterfowl-Quota-Hunts.aspx', 'https://fw.ky.gov/Hunt/Pages/Quota-Hunt-Dates.aspx']
+KDFWR_QUOTA_PAGES = ['https://fw.ky.gov/Hunt/Pages/Waterfowl-Quota-Hunts.aspx']   # round 9: round 8's guessed addresses were all 404; the deer closures are on the WMA pages themselves
 LINKS_DEBUG = {}   # TEST=1: every same-host link of a hunt landing page
 ROWS_DEBUG = {}    # TEST=1: the first 5 parsed rows of each child page + what the matcher said
 
@@ -1078,6 +1085,18 @@ def area_ctx(area):
     return AREA_CTX[area]
 
 
+NO_PARK = [   # round 9 (chat 11 round 8): KDFWR alerts about places POTA does not number: kept OUT of park items (never guessed onto a park), named in the review
+    (r'\baj jolly|a\.\s?j\.\s?jolly', 'no POTA park: A.J. Jolly Lake is a Campbell County park lake'),
+    (r'\bsympson lake', 'no POTA park: Sympson Lake is a KDFWR lake (Nelson County)'),
+    (r'\bwest point boat ramp', 'no POTA park: the West Point ramp is a KDFWR Ohio River ramp'),
+    (r'\blaurel bridge boat ramp|\blaurel river lake\b', 'not tied: Laurel River Lake lies inside Daniel Boone NF (US-4484) but is not its own park; the ramp\'s land owner is not known here (NOT SURE = kept out)'),
+]
+
+
+def why_no_park(t):
+    return next((w for rx, w in NO_PARK if re.search(rx, str(t), re.I)), '')
+
+
 def in_state(row, area, sid):
     """Rule (HQ Oct 28): a multi-state forest's notice counts for this area only when it names this state, one of its counties,
     one of the unit's ranger districts here, or ties to a park here; a notice naming another state is dropped. Single-state units
@@ -1087,6 +1106,10 @@ def in_state(row, area, sid):
     slug_ = sid.split('-', 1)[1] if sid.startswith('fs-') else (sid.split('-fs-', 1)[1] if '-fs-' in sid else '')
     multi = slug_ and len(fs_states().get(slug_, set())) > 1
     others = {m.group(1).lower() for m in STATE_RX.finditer(text)} - {cx['state']}
+    raw = (row.get('head') or '') + ' ' + (row.get('title') or '') + ' ' + (row.get('sent') or row.get('text') or '')
+    for m in re.finditer(r'\b(?:County|Co\.|City|Parish|Township)\s*,\s*([A-Z]{2})\b|,\s*([A-Z]{2})\s*[)\]]', raw):   # round 9: 'Bath County, VA' (Bolar Mountain was filed under KY)
+        ab = m.group(1) or m.group(2)
+        if ab in STATE_NAMES and STATE_NAMES[ab].lower() != cx['state']: others.add(STATE_NAMES[ab].lower())
     if 'west virginia' in others and 'virginia' in others and cx['state'] != 'west virginia': pass
     if 'virginia' in others and 'west virginia' in text and cx['state'] == 'west virginia': others.discard('virginia')
     if multi:
@@ -1461,7 +1484,7 @@ def write_review(state, review):
         oos = sum(v.get('out_of_state') or 0 for v in (D.get('sources') or {}).values())
         if oos: L += [f'Dropped as another state\'s place (multi-state forest): {oos} notices', '']
         um = [(s, u) for s, v in (D.get('sources') or {}).items() for u in (v.get('unmatched') or [])]
-        if um: L += ['Unmatched (two parks or none; for chat 8): ' + '; '.join(f'{u} [{s}]' for s, u in um[:30]), '']
+        if um: L += ['Unmatched (two parks or none; for chat 8): ' + '; '.join(f'{u} [{s}]' + (f' = {why_no_park(u)}' if why_no_park(u) else '') for s, u in um[:30]), '']
         own = ky_own_items() if area == 'US-KY' else uc_by_area.get(area)
         if own is not None:
             who = "Kentucky's own reader (kpc_park_alerts.py + hc-)" if area == 'US-KY' else 'data/alerts/us-parks.json (uc- items)'
@@ -1532,6 +1555,13 @@ SELFTEST = [  # (sentence, context, expected class, expected note_kind or what-c
     ("Closed to modern gun deer hunting except for the quota hunt.", {'hunt_page': True}, None, None, None),
     ("Camping in violation of posted signs is prohibited.", {}, None, None, None),
     ("Entry into areas closed for protection of threatened and endangered species at Cave Run Lake and Laurel River Lake is prohibited.", {}, None, None, None),
+    # round 9 (chat 11 round 8 junk): never items
+    ("Youth Under 16 - Free, no permit needed", {}, None, None, None),
+    ("We are closed for all Federal Holidays.", {}, None, None, None),
+    ("Laurel River Lake and Lake Cumberland Camping Prohibitions. 1) Camping within 300 feet of the high water line is prohibited.", {}, None, None, None),
+    ("• If transportation to and from blinds is provided by KDFWR (times of high water), each hunter must", {'hunt_page': True}, None, None, None),
+    ("following waterfowl season", {'hunt_page': True}, None, None, None),
+    ("The huntable portion of Lloyd WMA will be closed to all access Nov. 14-21, except for hunters drawn for and participating in the deer quota hunt.", {'hunt_page': True}, 'hunt', None, (dt.date(SEASON_YEAR, 11, 14), dt.date(SEASON_YEAR, 11, 21))),
     ("Currently, the trail is closed between the two trailheads.", {'head': 'Cliffside Trail #519 Closure'}, 'part', 'cliffside trail #519', (None, None)),
     ("This road is closed for culvert repair.", {'head': 'Road 214 Temporary Closure'}, 'part', 'road 214', (None, None)),
     ("Ballard WMA | Nov. 7-8 | 50 permits |", {'hunt_page': True}, 'hunt', None, (dt.date(SEASON_YEAR, 11, 7), dt.date(SEASON_YEAR, 11, 8))),
@@ -1578,6 +1608,7 @@ def selftest():
                      ({'home': ['US-4526'], 'head': 'Clinch Ranger District road closure', 'sent': 'Forest Road 2097 on the Clinch Ranger District is closed.'}, ['US-4526']),
                      ({'home': ['US-4526'], 'head': 'Pine Mountain', 'sent': 'The Pine Mountain trailhead in Letcher County, Kentucky is closed.'}, ['US-4526']),
                      ({'home': ['US-4526'], 'head': 'Bolar Mountain Recreation Area - Twin Ridge Road Closure', 'sent': 'Twin Ridge Road near Bolar Mountain in Bath County, Virginia is closed until about 9/21/2026.'}, ['OUT-OF-STATE']),
+                     ({'home': ['US-4526'], 'head': 'Bolar Mountain Recreation Area - Twin Ridge Road Closure', 'sent': 'Twin Ridge Road, just beyond the turn off for the beach facility at Bolar Mountain Recreation Area (Bath County, VA) will be temporarily closed to motor vehicles until approximately 9/21/2026.'}, ['OUT-OF-STATE']),
                      ({'home': ['US-4484'], 'head': 'Tornado Damaged Area Closure', 'sent': 'This closure includes a portion of the Sheltowee Trace National Recreation Trail.'}, ['US-4484', 'US-11181'])]:
         refs, _ = tie(K, row, pk, 'US-KY', 'fs-gwj')
         ok = refs == exp
@@ -1592,6 +1623,9 @@ def selftest():
              and ((len(_zw(t)) <= 40 and re.search(r'\b(deer|dove|waterfowl|crane|pheasant|elk|turkey|quota)\b', _zw(t).lower())) or 'quota' in u.lower())]
     ok = picks == ['https://fw.ky.gov/Hunt/Pages/Deer-Quota-Hunts.aspx', 'https://fw.ky.gov/Hunt/Pages/Dove.aspx', 'https://fw.ky.gov/Hunt/Pages/Waterfowl-Quota.aspx']
     print(('ok   ' if ok else 'FAIL ') + f'landing-page children: {len(picks)} same-host species links (other host + Home left out)'); bad += not ok
+    aspx = '<html><body><form id="aspnetForm" action="detail.aspx">' + '<div class="pad">x</div>' * 300 + '<h1>Lloyd WMA</h1><p>Exceptions: The huntable portion of Lloyd WMA will be closed to all access Nov. 14-21, except for hunters drawn for and participating in the deer quota hunt.</p></form></body></html>'
+    hr = [r for r in page_rows(aspx, 'https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=153', ['US-3805'], None, True) if 'Nov. 14-21' in r['sent']]
+    ok = bool(hr); print(('ok   ' if ok else 'FAIL ') + 'an ASP.NET page wrapped in one <form> is still read (KDFWR WMA pages)'); bad += not ok
     # the object of the Marben sentence
     cl = classify('Lake Margery at Marben PFA is currently closed to all access', {'names': ['Cybel WMA', 'Marben PFA']})
     ok = cl and cl['class'] == 'part' and cl['what'].lower().startswith('lake margery')
