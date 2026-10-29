@@ -5,10 +5,10 @@
   "CA-ON"
  ],
  "since": "2026-10-29",
- "date": "2026-10-29 06:01 UTC",
+ "date": "2026-10-29 06:24 UTC",
  "verdict": "STOPPED",
  "why": [
-  "water not checked: CA-ON: 3 rows (the USGS water map / files had no answer there): never READY with one"
+  "water not checked: CA-ON: 4 rows (the USGS water map / files had no answer there): never READY with one"
  ],
  "known_answers": "19/19 on 2026-10-29",
  "missing_check": {
@@ -33,10 +33,10 @@
    "pairs tested": 0
   },
   "pass5": {
-   "checked": 28,
+   "checked": 22,
    "date": "2026-10-29",
    "pairs tested": 0,
-   "still not checked": 3
+   "still not checked": 4
   }
  },
  "files": {
@@ -44,18 +44,18 @@
  },
  "CA-ON": {
   "rows": 1027,
-  "live": 113,
+  "live": 112,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "water not checked": 3,
+   "water not checked": 4,
    "no public owner on the ownership map": 30
   },
   "dropped": 742,
   "merged": 139
  },
  "water_weak": {
-  "CA-ON": 3
+  "CA-ON": 4
  },
  "states_ready": [],
  "states_held": [

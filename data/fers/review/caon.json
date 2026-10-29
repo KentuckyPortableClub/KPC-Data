@@ -568,6 +568,30 @@
    "area": "caon",
    "state": "CA-ON",
    "refs": [
+    "CA-0050",
+    "CA-1479"
+   ],
+   "names": {
+    "CA-0050": "Lake Superior National Marine Area",
+    "CA-1479": "Lake Superior North Shore Conservation Reserve"
+   },
+   "what": "water map weak here (fix later: a better water source)",
+   "kind": "area",
+   "size": "29.3 ac",
+   "sort": 29.3,
+   "reason": "water not checked (the USGS water map did not answer): run pass 5",
+   "id": "CA-0050+CA-1479@area@48.752,-87.217",
+   "sources": {
+    "CA-0050": "downloaded 2026-10-29",
+    "CA-1479": "downloaded 2026-10-29",
+    "water": "NRCan NHN file 2026-10-29 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
+   },
+   "checked": "2026-10-29"
+  },
+  {
+   "area": "caon",
+   "state": "CA-ON",
+   "refs": [
     "CA-0094",
     "CA-6003"
    ],
