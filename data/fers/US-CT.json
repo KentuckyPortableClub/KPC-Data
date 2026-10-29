@@ -64512,6 +64512,9 @@
    "checked": "2026-10-29",
    "found": "2026-10-29",
    "id": "US-6872+US-7534@area@41.634,-72.096",
+   "info": {
+    "water_pct": 2
+   },
    "kind": "area",
    "lines": {
     "US-6872": [
@@ -65060,7 +65063,8 @@
    "lines_read": "2026-10-29",
    "map_dates": {
     "US-6872": "downloaded 2026-10-29",
-    "US-7534": "downloaded 2026-10-29"
+    "US-7534": "downloaded 2026-10-29",
+    "USGS water": "USGS NHDPlus HR file 2023-07-13 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-6872": "Salt Rock State Forest",
@@ -65200,7 +65204,7 @@
      41.643154
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 163
   },

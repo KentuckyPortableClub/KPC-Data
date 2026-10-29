@@ -7,16 +7,13 @@
   "US-RI"
  ],
  "since": "2026-10-29",
- "date": "2026-10-29 03:50 UTC",
- "verdict": "STOPPED",
- "why": [
-  "Kentucky known-answers test not passing (18/19 on 2026-10-29)",
-  "water not checked: US-CT: 1 rows (the USGS water map / files had no answer there): never READY with one"
- ],
- "known_answers": "18/19 on 2026-10-29",
+ "date": "2026-10-29 04:06 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
+ "known_answers": "19/19 on 2026-10-29",
  "missing_check": {
-  "FOUND": 67,
-  "DROPPED": 503,
+  "FOUND": 68,
+  "DROPPED": 502,
   "NEVER LOOKED AT": 3700
  },
  "report": {
@@ -39,7 +36,7 @@
    "checked": 73,
    "date": "2026-10-29",
    "pairs tested": 0,
-   "still not checked": 1
+   "still not checked": 0
   }
  },
  "files": {
@@ -60,17 +57,12 @@
  },
  "US-CT": {
   "rows": 74,
-  "live": 33,
+  "live": 34,
   "waiting": 0,
   "unfinished": 0,
-  "not_sure": {
-   "water not checked": 1
-  },
+  "not_sure": {},
   "dropped": 25,
   "merged": 15
- },
- "water_weak": {
-  "US-CT": 1
  },
  "US-RI": {
   "rows": 29,
@@ -81,10 +73,10 @@
   "dropped": 21,
   "merged": 2
  },
- "states_ready": [],
- "states_held": [
+ "states_ready": [
   "US-NY",
   "US-CT",
   "US-RI"
- ]
+ ],
+ "states_held": []
 }
