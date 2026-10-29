@@ -40,5 +40,6 @@ jobs:
                   lays = [(l['id'], l['name']) for l in mm.get('layers') or []]; out.append(f'{svc}/{kind}: {lays[:12]}')
                   for lid, ln in lays[:10]: hit(f'Mosquito Lake in {svc}/{lid} {ln}', f'https://gis.ohiodnr.gov/arcgis/rest/services/{svc}/{kind}/{lid}', -80.7600, 41.3000)
                   break
-          for o in out: print('::notice title=own land at water::' + o[:900])
+          txt = ' || '.join(out)
+          for k in range(0, min(len(txt), 9 * 3800), 3800): print('::notice title=own land at water ' + str(k // 3800 + 1) + '::' + txt[k:k + 3800])
           PY
