@@ -183,7 +183,9 @@ def c_campfed(path, new, live, ctx, state_file=True):
         hand = [g for p in (load(LINKS / 'kpc-campgrounds.json', {}) or {}).get('parks', []) for g in p.get('campgrounds', [])
                 if 'recreation.gov' in (g.get('reserve', '') + g.get('source', '')) and g.get('la') and g.get('lo')]
         if not hand: raise Unsure('no Kentucky hand camps to compare (KPC-Links kpc-campgrounds.json)')
-        pool = camps + ((ctx['set'].get('data/campfed/US-TN.json') or load(DATA / 'data/campfed/US-TN.json', {}) or {}).get('camps') or [])
+        pool = list(camps)   # Kentucky's hand camps can sit just over a line (Wilderness Road CG at Cumberland Gap = a Virginia pin): the neighbour states' files count too
+        for nb in ('TN', 'VA', 'WV', 'OH', 'IN', 'IL', 'MO'):
+            pool += ((ctx['set'].get(f'data/campfed/US-{nb}.json') or load(LINKS / f'data/campfed/US-{nb}.json', {}) or load(DATA / f'data/campfed/US-{nb}.json', {}) or {}).get('camps') or [])
         miss = sorted({g['name'] for g in hand if not any(km(g['la'], g['lo'], c[2], c[3]) <= 2 for c in pool if c[2] is not None)})
         if miss: holds.append('F-K known Kentucky federal camps missing within 2 km: ' + ', '.join(miss[:5]))
     return holds, notes

@@ -414,7 +414,7 @@ def ours_key(rec):
 # ---- official pages
 NPS_UNIT = re.compile(r'nps\.gov/([a-z]{4})(?:/|$)')
 FWS_UNIT = re.compile(r'fws\.gov/refuge/([a-z0-9-]+)')
-BAD_PAGE = re.compile(r'pota\.app|wikipedia|facebook|google|tripadvisor|yelp|alltrails|recreation\.gov/camping', re.I)
+BAD_PAGE = re.compile(r'pota\.app|wikipedia|facebook|google|tripadvisor|yelp|alltrails|recreation\.gov/camping|/didyouknow|/mission(?:\.html?)?$', re.I)   # Oct 29: IL 'did you know' / mission pages are agency-wide, never a park's size page
 
 
 NPS_GENERIC = {'aboutus', 'subjects', 'learn', 'planyourvisit', 'index', 'articles', 'media', 'orgs', 'places', 'people', 'stories'}
@@ -979,7 +979,7 @@ def area_test(area, D):
         u = r['official'].get('url', '')
         if re.search(r'/mission|didyouknow|/wildlife-management-areas/?$|/state-forests/?$', u) or (SHARED.get(u, 0) >= 3): bad.append(f'{ref}: an agency-wide page {u[:60]}')
         ln = (r['official'].get('sent') or r['official'].get('line', '')).lower(); mm = re.search(r'\d[\d,.]*\s*(?:million\s*)?[- ]?(?:acres?|hectares?)', ln)   # v10: the SENTENCE, not the 220-char window (the window carried 'picnicking, camping' from the next sentence)
-        if mm and (HARD_PART.search(ln) or NEAR_PART.search(ln[max(0, mm.start() - 45):mm.end() + 45])): bad.append(f"{ref}: a part sentence: {r['official'].get('line', '')[:80]}")
+        if mm and not re.search(r'(?:park size|total area|land area|acreage|size)\s*[:=]?\s*$', ln[max(0, mm.start() - 22):mm.start()]) and (HARD_PART.search(ln) or NEAR_PART.search(ln[max(0, mm.start() - 45):mm.end() + 45])): bad.append(f"{ref}: a part sentence: {r['official'].get('line', '')[:80]}")
     for ref, r in D['parks'].items():
         if len(REF_STATES.get(ref) or []) > 1 and r.get('verdict') == 'off' and not (r.get('ours') or {}).get('whole_park'): bad.append(f'{ref}: cross-state park compared one state only')
     res = 'PASS' if not bad else 'FAIL'
