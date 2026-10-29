@@ -34,7 +34,9 @@
    "dropped_guard_station": 10,
    "points": 1862,
    "parks": 442,
-   "ski_areas_for_HQ": 14
+   "ski_areas_for_HQ": 0,
+   "ski_labelled": 8,
+   "ski_ruling": "HQ 11:57 AM (Brandon 11:56 'Probably access points'): ski areas stay, labelled 'Nearby public access, not the park's own' + 'ski area: parking may be seasonal or paid'"
   }
  },
  "ky_camps": [
@@ -5839,7 +5841,7 @@
      "rule": "ridb-recarea-name",
      "la": 37.69298,
      "lo": -112.849389,
-     "label": "Facility: Brian Head Ski Resort (nearby, outside the park line)",
+     "label": "Facility: Brian Head Ski Resort (Nearby public access, not the park's own; ski area: parking may be seasonal or paid)",
      "src": "RIDB facility 245380 (rec area Dixie National Forest)",
      "where": "outside",
      "km": 0.6
@@ -7237,7 +7239,7 @@
      "rule": "ridb-recarea-name",
      "la": 39.605781,
      "lo": -106.943809,
-     "label": "Facility: Keystone Ski Resort (nearby, outside the park line)",
+     "label": "Facility: Keystone Ski Resort (Nearby public access, not the park's own; ski area: parking may be seasonal or paid)",
      "src": "RIDB facility 259373 (rec area White River National Forest)",
      "where": "outside",
      "km": 4.49
@@ -10739,7 +10741,7 @@
      "rule": "ridb-recarea-name",
      "la": 34.22633,
      "lo": -117.034853,
-     "label": "Facility: Rim Nordic Ski Area",
+     "label": "Facility: Rim Nordic Ski Area (Nearby public access, not the park's own; ski area: parking may be seasonal or paid)",
      "src": "RIDB facility 249707 (rec area San Bernardino National Forest)",
      "where": "inside",
      "km": 0.0
@@ -12475,7 +12477,7 @@
      "rule": "ridb-recarea-name",
      "la": 38.189415,
      "lo": -119.965958,
-     "label": "Facility: Crabtree Cross-Country Ski Trailhead",
+     "label": "Facility: Crabtree Cross-Country Ski Trailhead (Nearby public access, not the park's own; ski area: parking may be seasonal or paid)",
      "src": "RIDB facility 251811 (rec area Stanislaus National Forest)",
      "where": "inside",
      "km": 0.0
@@ -12520,7 +12522,7 @@
      "rule": "ridb-recarea-name",
      "la": 38.192125,
      "lo": -119.962071,
-     "label": "Facility: Gooseberry Cross-Country Ski Trailhead",
+     "label": "Facility: Gooseberry Cross-Country Ski Trailhead (Nearby public access, not the park's own; ski area: parking may be seasonal or paid)",
      "src": "RIDB facility 251817 (rec area Stanislaus National Forest)",
      "where": "inside",
      "km": 0.0
@@ -12775,7 +12777,7 @@
      "rule": "ridb-recarea-name",
      "la": 43.9624,
      "lo": -115.62811,
-     "label": "Facility: Whoop Um Up Park N' Ski",
+     "label": "Facility: Whoop Um Up Park N' Ski (Nearby public access, not the park's own; ski area: parking may be seasonal or paid)",
      "src": "RIDB facility 238091 (rec area Boise National Forest)",
      "where": "inside",
      "km": 0.0
@@ -13339,7 +13341,7 @@
      "rule": "ridb-recarea-name",
      "la": 43.661259,
      "lo": -114.40411,
-     "label": "Facility: Bald Mountain Ski Resort",
+     "label": "Facility: Bald Mountain Ski Resort (Nearby public access, not the park's own; ski area: parking may be seasonal or paid)",
      "src": "RIDB facility 245219 (rec area Sawtooth National Forest)",
      "where": "inside",
      "km": 0.0
@@ -14668,7 +14670,7 @@
      "rule": "ridb-recarea-name",
      "la": 44.26347029,
      "lo": -71.24103761,
-     "label": "Facility: Wildcat Mountain Ski Resort",
+     "label": "Facility: Wildcat Mountain Ski Resort (Nearby public access, not the park's own; ski area: parking may be seasonal or paid)",
      "src": "RIDB facility 239406 (rec area White Mountain National Forest)",
      "where": "inside",
      "km": 0.0
