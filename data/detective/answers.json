@@ -8,17 +8,18 @@
    "finds": [
     {
      "acres": 139,
-     "date": "2026-10-28",
+     "date": "2026-10-29",
      "fact": "polygon under the pin in a layer we read: \"Green River State Natural Area (Rush Island Bottoms)\", 139 ac",
      "kind": "attributes",
      "line": "MA_ID=768.0; MANAME=Green River State Natural Area (Rush Island Bottoms); UNIT_TYPE=State Natural Area; MA_OWNER=Office of Kentucky Nature Preserves; MNG_INST=Office of Kentucky Nature Preserves; ACRES=139.25; PUB_ACCESS=Open; Webpage=https",
+     "note": "a different unit of the same natural area",
      "poly": "Green River State Natural Area (Rush Island Bottoms)",
      "role": "context",
      "step": "1 our layers",
      "url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Natural_Areas_WGS84WM/MapServer/0"
     },
     {
-     "date": "2026-10-28",
+     "date": "2026-10-29",
      "fact": "tract: Davis Bend is one of several sites the KHLCF protects along the Green River in Hart, Green, and Taylor Counties.",
      "line": "Davis Bend is one of several sites the KHLCF protects along the Green River in Hart, Green, and Taylor Counties.",
      "role": "context",
@@ -27,10 +28,10 @@
     }
    ],
    "id": "q1-boiling-springs-tract",
-   "not found": "context only: tried steps 1, 2, 3, 4, 5, 6",
+   "not found": "context only: tried steps 1, 2, 3, 6",
    "note": "the KHLCF Timber Lane 115.75-acre tract: is it part of the preserve?",
    "park": "Green River State Natural Area (Boiling Springs unit)",
-   "read": "2026-10-28",
+   "read": "2026-10-29",
    "ref": "US-12752",
    "result": "PARTLY",
    "tried": [
@@ -85,38 +86,31 @@
     {
      "result": "opened, nothing matched",
      "step": 2,
-     "url": "https://eec.ky.gov/Documents/EEC%20Title%20VI%20Report.pdf",
-     "what": "document: Civil Rights/Derecho Civiles"
+     "url": "https://eec.ky.gov/Nature-Preserves/biodiversity/Pages/Species-and-Natural-Community-Reports.aspx",
+     "what": "document: Species Natural Community Reports"
     },
     {
      "result": "opened, nothing matched",
      "step": 2,
-     "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Archived-Regulation-History.aspx",
-     "what": "document: Archived Regulation History"
+     "url": "https://eec.ky.gov/Nature-Preserves/conserving_natural_areas/KHLCF/Pages/heritage-land-conservation-fund.aspx",
+     "what": "document: KHLCF"
     },
     {
      "result": "opened, nothing matched",
      "step": 2,
-     "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Permit-Required-Reporting.aspx",
-     "what": "document: Permit Required Reporting"
+     "url": "https://eec.ky.gov/Nature-Preserves/Pages/archive.aspx",
+     "what": "document: Archived Reports and Publications"
     },
     {
-     "result": "did not open",
+     "result": "did not open (400); second try opened",
      "step": 3,
      "url": "https://hub.arcgis.com/api/v3/datasets?q=boiling%20green%20river%20springs%20Kentucky",
      "what": "open-data search"
     },
     {
-     "result": "did not open",
-     "step": 4,
-     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "what": "PAD-US point query"
-    },
-    {
-     "result": "did not open (HTTP 403)",
-     "step": 5,
-     "url": "https://qpublic.schneidercorp.com/Application.aspx?AppID=1076&LayerID=25407&PageTypeID=2&PageID=10457",
-     "what": "parcel site (robots + terms checked)"
+     "step": 3,
+     "url": "https://www.arcgis.com/sharing/rest/search?q=boiling%20green%20river%20springs%20Kentucky",
+     "what": "open-data search (second try, ArcGIS Online)"
     },
     {
      "result": "opened, nothing matched",
@@ -125,39 +119,65 @@
      "what": "news releases"
     },
     {
-     "result": "did not open (HTTP 404)",
-     "step": 6,
-     "url": "https://fw.ky.gov/News/Pages/All-News.aspx",
-     "what": "news releases"
+     "result": "skipped: not about parks",
+     "step": 2,
+     "url": "",
+     "what": "39 document link(s) not followed"
     }
    ],
-   "ver": 3,
+   "ver": 4,
    "what": "tract"
   },
   "q2-boiling-springs-acreage": {
-   "answer": null,
+   "answer": {
+    "acres": 440.0,
+    "date": "2026-10-29",
+    "fact": "agency page size: 440 acres (labelled size row)",
+    "line": "e hiking trails as well and canoe access. Access Type: Open to Public County: Hart Region: Green River Region Size: 440 Owner: ​Office of Kentucky Nature Preserves Manager: Nature Preseve Manager ​Office of Kentucky Nature Preserv",
+    "role": "answer",
+    "step": "2 agency page",
+    "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Rush-Island-Bottoms.aspx"
+   },
    "area": "US-KY",
    "by": "HQ (Brandon test case)",
    "finds": [
     {
      "acres": 139,
-     "date": "2026-10-28",
+     "date": "2026-10-29",
      "fact": "polygon under or near the pin in a layer we read: \"Green River State Natural Area (Rush Island Bottoms)\", 139 ac",
      "kind": "attributes",
      "line": "MA_ID=768.0; MANAME=Green River State Natural Area (Rush Island Bottoms); UNIT_TYPE=State Natural Area; MA_OWNER=Office of Kentucky Nature Preserves; MNG_INST=Office of Kentucky Nature Preserves; ACRES=139.25; PUB_ACCESS=Open; Webpage=https",
+     "note": "a different unit of the same natural area",
      "poly": "Green River State Natural Area (Rush Island Bottoms)",
      "role": "context",
      "step": "1 our layers",
      "url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Natural_Areas_WGS84WM/MapServer/0"
+    },
+    {
+     "acres": 440.0,
+     "date": "2026-10-29",
+     "fact": "agency page size: 440 acres (labelled size row)",
+     "line": "e hiking trails as well and canoe access. Access Type: Open to Public County: Hart Region: Green River Region Size: 440 Owner: ​Office of Kentucky Nature Preserves Manager: Nature Preseve Manager ​Office of Kentucky Nature Preserv",
+     "role": "answer",
+     "step": "2 agency page",
+     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Rush-Island-Bottoms.aspx"
+    },
+    {
+     "acres": 200.0,
+     "date": "2026-10-29",
+     "fact": "agency page size: 200 acres (total-looking)",
+     "line": "Washington, DC, based nonprofit, has worked with the Hart County Historical Society to protect an additional 200 acres in the area. Access: Due to limited access the site is not currently open to the public except by boat. Paddl",
+     "role": "answer",
+     "step": "2 agency page",
+     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Rush-Island-Bottoms.aspx"
     }
    ],
    "id": "q2-boiling-springs-acreage",
-   "not found": "context only: tried steps 1, 2, 3, 4, 5, 6",
    "note": "Boiling Springs unit size (the OKNP page says 440 acres?)",
    "park": "Green River State Natural Area (Boiling Springs unit)",
-   "read": "2026-10-28",
+   "read": "2026-10-29",
    "ref": "US-12752",
-   "result": "PARTLY",
+   "result": "ANSWERED",
    "tried": [
     {
      "result": "nothing matched",
@@ -190,74 +210,14 @@
      "what": "agency park page"
     },
     {
-     "result": "did not open (rest)",
+     "result": "skipped: not about parks",
      "step": 2,
-     "url": "https://heritageland.ky.gov/Pages/default.aspx",
-     "what": "KHLCF land-acquisition annual reports (Kentucky Heritage Land Conservation Fund)"
-    },
-    {
-     "result": "opened, nothing matched",
-     "step": 2,
-     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/default.aspx",
-     "what": "OKNP nature preserve pages (Office of Kentucky Nature Preserves)"
-    },
-    {
-     "result": "opened, nothing matched",
-     "step": 2,
-     "url": "https://eec.ky.gov/Nature-Preserves/Pages/default.aspx",
-     "what": "KNP KHLCF annual reports (eec.ky.gov)"
-    },
-    {
-     "result": "opened, nothing matched",
-     "step": 2,
-     "url": "https://eec.ky.gov/Documents/EEC%20Title%20VI%20Report.pdf",
-     "what": "document: Civil Rights/Derecho Civiles"
-    },
-    {
-     "result": "opened, nothing matched",
-     "step": 2,
-     "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Archived-Regulation-History.aspx",
-     "what": "document: Archived Regulation History"
-    },
-    {
-     "result": "opened, nothing matched",
-     "step": 2,
-     "url": "https://eec.ky.gov/Environmental-Protection/Air/Pages/Permit-Required-Reporting.aspx",
-     "what": "document: Permit Required Reporting"
-    },
-    {
-     "result": "did not open",
-     "step": 3,
-     "url": "https://hub.arcgis.com/api/v3/datasets?q=boiling%20green%20river%20springs%20Kentucky",
-     "what": "open-data search"
-    },
-    {
-     "result": "did not open",
-     "step": 4,
-     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "what": "PAD-US point query"
-    },
-    {
-     "result": "did not open (HTTP 403)",
-     "step": 5,
-     "url": "https://qpublic.schneidercorp.com/Application.aspx?AppID=1076&LayerID=25407&PageTypeID=2&PageID=10457",
-     "what": "parcel site (robots + terms checked)"
-    },
-    {
-     "result": "opened, nothing matched",
-     "step": 6,
-     "url": "https://fw.ky.gov/News/Pages/default.aspx",
-     "what": "news releases"
-    },
-    {
-     "result": "did not open (HTTP 404)",
-     "step": 6,
-     "url": "https://fw.ky.gov/News/Pages/All-News.aspx",
-     "what": "news releases"
+     "url": "",
+     "what": "13 document link(s) not followed"
     }
    ],
    "units": {
-    "agency_line": "",
+    "agency_line": "e hiking trails as well and canoe access. Access Type: Open to Public County: Hart Region: Green River Region Size: 440 Owner: ​Office of Kentucky Nature Preserves Manager: Nature Preseve Manager ​Office of Kentucky Nature Preserv",
     "agency_url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Rush-Island-Bottoms.aspx",
     "our_acres": 139,
     "pieces": [
@@ -266,9 +226,9 @@
       139
      ]
     ],
-    "summary": "our outline holds 139 ac in 1 piece(s) vs the agency: no size sentence found on the agency page https://eec.ky.gov/Nature-Preserves/Locations/Pages/Rush-Island-Bottoms.aspx (opened, nothing matched)"
+    "summary": "our outline holds 139 ac in 1 piece(s) vs the agency's \"e hiking trails as well and canoe access. Access Type: Open to Public County: Hart Region: Green River Region Size: 440 \" (https://eec.ky.gov/Nature-Preserves/Locations/Pages/Rush-Island-Bottoms.aspx)"
    },
-   "ver": 3,
+   "ver": 4,
    "what": "acreage"
   }
  }

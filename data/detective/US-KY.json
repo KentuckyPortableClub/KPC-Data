@@ -60,7 +60,7 @@
    "la": 38.1777,
    "lo": -84.9231,
    "n": "Salato Wildlife Refuge",
-   "read": "2026-10-28",
+   "read": "2026-10-29",
    "requests": 6,
    "sure": "YES",
    "t": "Other",
@@ -73,7 +73,7 @@
     "hub search",
     "PAD-US point"
    ],
-   "ver": 3,
+   "ver": 4,
    "verdict": "padus",
    "why": "PAD-US record matches the name under the pin (fee / designation): chat 2 checks the manager and type"
   },
@@ -111,7 +111,7 @@
    "la": 36.8532,
    "lo": -87.4701,
    "n": "Trail of Tears National Historic Trail",
-   "read": "2026-10-28",
+   "read": "2026-10-29",
    "requests": 7,
    "sure": "check",
    "t": "National / NPS",
@@ -124,7 +124,7 @@
     "hub search",
     "PAD-US point"
    ],
-   "ver": 3,
+   "ver": 4,
    "verdict": "mismatch",
    "why": "a polygon under the pin shares the park name: likely a name mismatch in our matcher"
   },
@@ -136,7 +136,7 @@
    "la": 41.2646,
    "lo": -95.9246,
    "n": "Lewis and Clark National Historic Trail",
-   "read": "2026-10-28",
+   "read": "2026-10-29",
    "requests": 6,
    "sure": "no",
    "t": "National / NPS",
@@ -149,11 +149,11 @@
     "hub search",
     "PAD-US point"
    ],
-   "ver": 3,
+   "ver": 4,
    "verdict": "nothing",
    "why": "no official layer found; tried: read-layer Kentucky State Parks boundaries (kygisserver), read-layer Kentucky public hunting areas / WMAs (kygisserver), read-layer Kentucky state nature preserves (kygisserver), read-layer Kentucky natural areas (kygisserver), agency server kygisserver.ky.gov, hub search, PAD-US point"
   }
  },
- "read": "2026-10-28",
- "ver": 3
+ "read": "2026-10-29",
+ "ver": 4
 }
