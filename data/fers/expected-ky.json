@@ -12,9 +12,9 @@
  "date": "2026-10-29",
  "pass": true,
  "counts": {
-  "FOUND": 83,
-  "DROPPED": 83,
-  "NEVER LOOKED AT": 265
+  "FOUND": 88,
+  "DROPPED": 77,
+  "NEVER LOOKED AT": 266
  },
  "FOUND": [
   {
@@ -94,6 +94,17 @@
     "activated together by the same call on the same day (8x, POTA history)"
    ],
    "row": "US-10098+US-4572@river@37.887,-87.448"
+  },
+  {
+   "refs": [
+    "US-10098",
+    "US-7951"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (17x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "row": "US-10098+US-7951@area@37.883,-87.471"
   },
   {
    "refs": [
@@ -340,6 +351,17 @@
   },
   {
    "refs": [
+    "US-10139",
+    "US-7966"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (18x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "row": "US-10139+US-7966@area@37.100,-82.747"
+  },
+  {
+   "refs": [
     "US-10140",
     "US-3790"
    ],
@@ -572,7 +594,18 @@
     "hand list (ky-trail-parks.json)",
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
-   "row": "US-1260+US-4572@river@37.898,-87.552"
+   "row": "US-1260+US-4572@river@37.898,-87.553"
+  },
+  {
+   "refs": [
+    "US-1275",
+    "US-4484"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "row": "US-1275+US-4484@area@37.313,-83.446"
   },
   {
    "refs": [
@@ -627,7 +660,7 @@
     "hand list (ky-trail-parks.json)",
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
-   "row": "US-1282+US-3791@river@36.788,-88.143"
+   "row": "US-1282+US-3791@river@36.779,-88.139"
   },
   {
    "refs": [
@@ -651,7 +684,7 @@
     "hand list (ky-trail-parks.json)",
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
-   "row": "US-3791+US-3792@river@36.743,-88.081"
+   "row": "US-3791+US-3792@river@36.982,-88.199"
   },
   {
    "refs": [
@@ -729,7 +762,7 @@
    "why_expected": [
     "activated together by the same call on the same day (8x, POTA history)"
    ],
-   "row": "US-3791+US-3827@river@36.590,-89.119"
+   "row": "US-3791+US-3827@river@36.590,-89.131"
   },
   {
    "refs": [
@@ -740,7 +773,7 @@
     "activated together by the same call on the same day (9x, POTA history)",
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
-   "row": "US-3791+US-3837+US-4572@river@37.176,-88.809"
+   "row": "US-3791+US-3837+US-4572@river@37.176,-88.808"
   },
   {
    "refs": [
@@ -751,7 +784,7 @@
    "why_expected": [
     "hand list (ky-trail-parks.json)"
    ],
-   "row": "US-3791+US-3837+US-4572@river@37.176,-88.809"
+   "row": "US-3791+US-3837+US-4572@river@37.176,-88.808"
   },
   {
    "refs": [
@@ -782,7 +815,7 @@
    "why_expected": [
     "activated together by the same call on the same day (16x, POTA history)"
    ],
-   "row": "US-3791+US-4572+US-7953@river@37.147,-88.767"
+   "row": "US-3791+US-4572+US-7953@river@37.151,-88.770"
   },
   {
    "refs": [
@@ -816,7 +849,7 @@
     "hand list (ky-trail-parks.json)",
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
-   "row": "US-3796+US-4572@river@37.525,-88.063"
+   "row": "US-3796+US-4572@river@37.486,-88.061"
   },
   {
    "refs": [
@@ -850,17 +883,7 @@
     "hand list (ky-trail-parks.json)",
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
-   "row": "US-3830+US-4572@river@37.782,-87.904"
-  },
-  {
-   "refs": [
-    "US-3831",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (5x, POTA history)"
-   ],
-   "row": "US-3831+US-4572@river@38.738,-82.942"
+   "row": "US-3830+US-4572@river@37.782,-87.903"
   },
   {
    "refs": [
@@ -871,7 +894,7 @@
     "activated together by the same call on the same day (11x, POTA history)",
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
-   "row": "US-3791+US-3837+US-4572@river@37.176,-88.809"
+   "row": "US-3791+US-3837+US-4572@river@37.176,-88.808"
   },
   {
    "refs": [
@@ -882,7 +905,39 @@
     "hand list (ky-trail-parks.json)",
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
-   "row": "US-3840+US-4572@river@37.884,-86.585"
+   "row": "US-3840+US-4572@river@37.884,-86.582"
+  },
+  {
+   "refs": [
+    "US-4484",
+    "US-7962"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (3x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "row": "US-4484+US-7962@area@36.668,-84.698"
+  },
+  {
+   "refs": [
+    "US-4484",
+    "US-7970"
+   ],
+   "why_expected": [
+    "old guide (Oct 13 Kentucky 2-fers guide)"
+   ],
+   "row": "US-4484+US-7970@area@37.103,-84.224"
+  },
+  {
+   "refs": [
+    "US-4526",
+    "US-7966"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (11x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "row": "US-4526+US-7966@area@37.100,-82.747"
   },
   {
    "refs": [
@@ -904,7 +959,7 @@
    "why_expected": [
     "activated together by the same call on the same day (16x, POTA history)"
    ],
-   "row": "US-3791+US-4572+US-7953@river@37.147,-88.767"
+   "row": "US-3791+US-4572+US-7953@river@37.151,-88.770"
   },
   {
    "refs": [
@@ -938,7 +993,7 @@
     "hand list (ky-trail-parks.json)",
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
-   "row": "US-4572+US-8144@river@37.952,-86.033"
+   "row": "US-4572+US-8144@river@37.958,-86.029"
   }
  ],
  "DROPPED": [
@@ -1049,18 +1104,6 @@
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
-  },
-  {
-   "refs": [
-    "US-10098",
-    "US-7951"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (17x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "reason": "dropped: side by side, not layered: Green River National Wildlife Refuge is Fish and Wildlife Service land, the ground here is state",
-   "rule": "rule 14 (ownership: side by side, not layered)"
   },
   {
    "refs": [
@@ -1181,18 +1224,6 @@
    ],
    "reason": "dropped in pass 2",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
-  },
-  {
-   "refs": [
-    "US-10139",
-    "US-7966"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (18x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "reason": "dropped: private land at the spot (ownership map): counts only for its own park number, never a 2-fer",
-   "rule": "rule 2 + B-G2 (private land counts only for its own number)"
   },
   {
    "refs": [
@@ -1445,18 +1476,6 @@
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
-  },
-  {
-   "refs": [
-    "US-1275",
-    "US-4484"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (2x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "reason": "dropped: side by side, not layered: Buckhorn Lake State Park is state land, the ground here is Forest Service",
-   "rule": "rule 14 (ownership: side by side, not layered)"
   },
   {
    "refs": [
@@ -1881,18 +1900,6 @@
   {
    "refs": [
     "US-4484",
-    "US-7962"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (3x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "reason": "dropped in pass 3",
-   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
-  },
-  {
-   "refs": [
-    "US-4484",
     "US-7963"
    ],
    "why_expected": [
@@ -1913,29 +1920,6 @@
    ],
    "reason": "dropped in pass 2",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
-  },
-  {
-   "refs": [
-    "US-4484",
-    "US-7970"
-   ],
-   "why_expected": [
-    "old guide (Oct 13 Kentucky 2-fers guide)"
-   ],
-   "reason": "dropped: side by side, not layered: Sinking Creek State Natural Area is state land, the ground here is Forest Service",
-   "rule": "rule 14 (ownership: side by side, not layered)"
-  },
-  {
-   "refs": [
-    "US-4526",
-    "US-7966"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (11x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "reason": "dropped: private land at the spot (ownership map): counts only for its own park number, never a 2-fer",
-   "rule": "rule 2 + B-G2 (private land counts only for its own number)"
   }
  ],
  "NEVER LOOKED AT": [
@@ -4367,6 +4351,16 @@
    ],
    "why_expected": [
     "activated together by the same call on the same day (4x, POTA history)"
+   ],
+   "reason": "US-4572: no official boundary"
+  },
+  {
+   "refs": [
+    "US-3831",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (5x, POTA history)"
    ],
    "reason": "US-4572: no official boundary"
   },

@@ -5,35 +5,35 @@
   "US-KY"
  ],
  "since": "2026-10-29",
- "date": "2026-10-29 02:07 UTC",
+ "date": "2026-10-29 02:26 UTC",
  "verdict": "STOPPED",
  "why": [
   "Kentucky known-answers test not passing (18/19 on 2026-10-29)"
  ],
  "known_answers": "18/19 on 2026-10-29",
  "missing_check": {
-  "FOUND": 83,
-  "DROPPED": 83,
-  "NEVER LOOKED AT": 265
+  "FOUND": 88,
+  "DROPPED": 77,
+  "NEVER LOOKED AT": 266
  },
  "report": {
   "pass1": {
    "date": "2026-10-29",
-   "pairs tested": 51,
-   "pairs whose boxes touch": 51
+   "pairs tested": 555,
+   "pairs whose boxes touch": 555
   },
   "pass2": {
-   "agree with the pass before": 20,
+   "agree with the pass before": 353,
    "date": "2026-10-29",
-   "pairs tested": 7
+   "pairs tested": 101
   },
   "pass3": {
-   "agree with the pass before": 16,
+   "agree with the pass before": 273,
    "date": "2026-10-29",
-   "pairs tested": 7
+   "pairs tested": 98
   },
   "pass5": {
-   "checked": 29,
+   "checked": 35,
    "date": "2026-10-29",
    "pairs tested": 0,
    "still not checked": 0
@@ -43,8 +43,8 @@
   "US-KY": "data/fers/US-KY.json"
  },
  "US-KY": {
-  "rows": 423,
-  "live": 71,
+  "rows": 413,
+  "live": 82,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
@@ -52,7 +52,7 @@
    "no public owner on PAD-US at the spot, and KDFWR's own page": 1,
    "the outlines overlap, but the Forest Service ownership map": 2
   },
-  "dropped": 213,
-  "merged": 135
+  "dropped": 190,
+  "merged": 137
  }
 }

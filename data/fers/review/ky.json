@@ -23,10 +23,32 @@
    "reason": "the outlines overlap, but the Forest Service ownership map (Basic Ownership, 2015 data) does not show this patch as the agency's land (that map may be out of date): check the official map; PAD-US cross-check",
    "id": "US-12079+US-4484@area@37.329,-83.782",
    "sources": {
-    "US-12079": "read live from the agency 2026-10-28",
-    "US-4484": "read live from the agency 2026-10-28"
+    "US-12079": "read live from the agency 2026-10-29",
+    "US-4484": "read live from the agency 2026-10-29"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
+  },
+  {
+   "area": "ky",
+   "state": "US-KY",
+   "refs": [
+    "US-0050",
+    "US-10105"
+   ],
+   "names": {
+    "US-0050": "Mammoth Cave National Park",
+    "US-10105": "The Green National Wild and Scenic River"
+   },
+   "what": "water only (boat spot): is there really no land?",
+   "kind": "area",
+   "size": "479.6 ac",
+   "sort": 479.6,
+   "reason": "water only: boat or kayak",
+   "id": "US-0050+US-10105@area@channel@37.220,-86.062",
+   "sources": {
+    "USGS water": "saved copy of the USGS map, read 2026-10-28"
+   },
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -49,7 +71,101 @@
     "US-3791": "official line (trails bot)",
     "US-4572": "official line (trails bot)"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
+  },
+  {
+   "area": "ky",
+   "state": "US-KY",
+   "refs": [
+    "US-0019",
+    "US-10164"
+   ],
+   "names": {
+    "US-0019": "Cumberland Gap National Historical Park",
+    "US-10164": "Shillalah Creek Wildlife Management Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "180.6 ac",
+   "sort": 180.6,
+   "reason": "candidate \u00b7 ['FED:NPS', 'STATE']",
+   "id": "US-0019+US-10164@area@36.675,-83.534",
+   "sources": {
+    "US-0019": "read live from the agency 2026-10-29",
+    "US-10164": "read live from the agency 2026-10-29",
+    "USGS water": "saved copy of the USGS map, read 2026-10-28"
+   },
+   "checked": "2026-10-29"
+  },
+  {
+   "area": "ky",
+   "state": "US-KY",
+   "refs": [
+    "US-10103",
+    "US-4484"
+   ],
+   "names": {
+    "US-10103": "The Cumberland River Wilderness Area",
+    "US-4484": "Daniel Boone National Forest"
+   },
+   "what": "water only (boat spot): is there really no land?",
+   "kind": "area",
+   "size": "81.9 ac",
+   "sort": 81.9,
+   "reason": "water only: boat or kayak",
+   "id": "US-10103+US-4484@area@channel@36.758,-84.289",
+   "sources": {
+    "USGS water": "saved copy of the USGS map, read 2026-10-28"
+   },
+   "checked": "2026-10-29"
+  },
+  {
+   "area": "ky",
+   "state": "US-KY",
+   "refs": [
+    "US-10140",
+    "US-3790"
+   ],
+   "names": {
+    "US-10140": "Kentucky Lake Wildlife Management Area",
+    "US-3790": "Fort Heiman National Battlefield"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "79.4 ac",
+   "sort": 79.4,
+   "reason": "candidate (saved outline only) \u00b7 ['FED:NPS', 'FED:TVA']",
+   "id": "US-10140+US-3790@area@36.509,-88.057",
+   "sources": {
+    "US-10140": "read live from the agency 2026-10-29",
+    "US-3790": "Kentucky file copy (live layer did not answer or has no live source)",
+    "USGS water": "saved copy of the USGS map, read 2026-10-28"
+   },
+   "checked": "2026-10-29"
+  },
+  {
+   "area": "ky",
+   "state": "US-KY",
+   "refs": [
+    "US-0703",
+    "US-10140"
+   ],
+   "names": {
+    "US-0703": "Fort Donelson National Battlefield",
+    "US-10140": "Kentucky Lake Wildlife Management Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "79.3 ac",
+   "sort": 79.3,
+   "reason": "candidate \u00b7 ['FED:NPS', 'FED:TVA']",
+   "id": "US-0703+US-10140@area@36.509,-88.057",
+   "sources": {
+    "US-0703": "read live from the agency 2026-10-29",
+    "US-10140": "read live from the agency 2026-10-29",
+    "USGS water": "saved copy of the USGS map, read 2026-10-28"
+   },
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -67,6 +183,28 @@
    "id": "US-1287+US-4692@pota",
    "sources": {
     "POTA history": "activated together by the same call on the same day (60x, POTA history) / outlines about 0 m apart"
+   },
+   "checked": "2026-10-29"
+  },
+  {
+   "area": "ky",
+   "state": "US-KY",
+   "refs": [
+    "US-10106",
+    "US-4484"
+   ],
+   "names": {
+    "US-10106": "The Rockcastle National Wild and Scenic River",
+    "US-4484": "Daniel Boone National Forest"
+   },
+   "what": "water only (boat spot): is there really no land?",
+   "kind": "area",
+   "size": "55.8 ac",
+   "sort": 55.8,
+   "reason": "water only: boat or kayak",
+   "id": "US-10106+US-4484@area@channel@37.165,-84.294",
+   "sources": {
+    "USGS water": "saved copy of the USGS map, read 2026-10-28"
    },
    "checked": "2026-10-29"
   },
@@ -253,11 +391,57 @@
    "kind": "trail",
    "size": "1168 yd of line",
    "sort": 26.7,
-   "reason": "no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "reason": "no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
    "id": "US-10102+US-10112@trail@37.104,-82.760",
    "sources": {
     "US-10102": "official line (trails bot)",
     "US-10112": "read live from the agency 2026-10-29 \u00b7 https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_Wild_RIvers_Corridors_WM_gdb/FeatureServer/0 (item efefe7342aa4460aaf8697e17deb4146, read 2026-10-29)"
+   },
+   "checked": "2026-10-29"
+  },
+  {
+   "area": "ky",
+   "state": "US-KY",
+   "refs": [
+    "US-10160",
+    "US-4484"
+   ],
+   "names": {
+    "US-10160": "Rockcastle River Wildlife Management Area",
+    "US-4484": "Daniel Boone National Forest"
+   },
+   "what": "water only (boat spot): is there really no land?",
+   "kind": "area",
+   "size": "22.9 ac",
+   "sort": 22.9,
+   "reason": "water only: boat or kayak",
+   "id": "US-10160+US-4484@area@channel@37.099,-84.334",
+   "sources": {
+    "USGS water": "saved copy of the USGS map, read 2026-10-28"
+   },
+   "checked": "2026-10-29"
+  },
+  {
+   "area": "ky",
+   "state": "US-KY",
+   "refs": [
+    "US-10160",
+    "US-4484"
+   ],
+   "names": {
+    "US-10160": "Rockcastle River Wildlife Management Area",
+    "US-4484": "Daniel Boone National Forest"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "22.1 ac",
+   "sort": 22.1,
+   "reason": "candidate \u00b7 ['FED:USFS', 'STATE']",
+   "id": "US-10160+US-4484@area@37.109,-84.308",
+   "sources": {
+    "US-10160": "read live from the agency 2026-10-29",
+    "US-4484": "read live from the agency 2026-10-29",
+    "USGS water": "saved copy of the USGS map, read 2026-10-28"
    },
    "checked": "2026-10-29"
   },
@@ -353,6 +537,30 @@
    "id": "US-3809+US-3816@pota",
    "sources": {
     "POTA history": "activated together by the same call on the same day (21x, POTA history) / outlines about 574 m apart"
+   },
+   "checked": "2026-10-29"
+  },
+  {
+   "area": "ky",
+   "state": "US-KY",
+   "refs": [
+    "US-4484",
+    "US-7962"
+   ],
+   "names": {
+    "US-4484": "Daniel Boone National Forest",
+    "US-7962": "Little South Fork State Natural Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "20.9 ac",
+   "sort": 20.9,
+   "reason": "candidate \u00b7 ['FED:USFS', 'STATE']",
+   "id": "US-4484+US-7962@area@36.668,-84.698",
+   "sources": {
+    "US-4484": "read live from the agency 2026-10-29",
+    "US-7962": "read live from the agency 2026-10-29",
+    "USGS water": "saved copy of the USGS map, read 2026-10-28"
    },
    "checked": "2026-10-29"
   },
@@ -472,25 +680,6 @@
   },
   {
    "area": "ky",
-   "state": "",
-   "refs": [
-    "US-10139",
-    "US-7966"
-   ],
-   "names": {},
-   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
-   "kind": "pair",
-   "size": "18 same-day activations",
-   "sort": 18.0,
-   "reason": "dropped: private land at the spot (ownership map): counts only for its own park number, never a 2-fer",
-   "id": "US-10139+US-7966@pota",
-   "sources": {
-    "POTA history": "activated together by the same call on the same day (18x, POTA history) / outlines about 0 m apart"
-   },
-   "checked": "2026-10-29"
-  },
-  {
-   "area": "ky",
    "state": "US-KY",
    "refs": [
     "US-10128",
@@ -501,13 +690,13 @@
    "kind": "river",
    "size": "768 yd of line",
    "sort": 17.6,
-   "reason": "no public owner on PAD-US at the spot, and KDFWR's own page names no owner for Ferguson Creek Wildlife Management Area (a person adds it to data/ky-wma-owners.json)",
-   "id": "US-10128+US-4572@river@37.150,-88.371",
+   "reason": "no public owner on PAD-US at the spot, and KDFWR's own page names no owner for Ferguson Creek Wildlife Management Area (a person adds it to data/ky-wma-owners.json) \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
+   "id": "US-10128+US-4572@river@37.150,-88.372",
    "sources": {
-    "US-10128": "read live from the agency 2026-10-28",
+    "US-10128": "read live from the agency 2026-10-29",
     "US-4572": "official line (trails bot)"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -525,25 +714,6 @@
    "id": "US-0686+US-10107@pota",
    "sources": {
     "POTA history": "activated together by the same call on the same day (17x, POTA history) / old guide (Oct 13 Kentucky 2-fers guide)"
-   },
-   "checked": "2026-10-29"
-  },
-  {
-   "area": "ky",
-   "state": "",
-   "refs": [
-    "US-10098",
-    "US-7951"
-   ],
-   "names": {},
-   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
-   "kind": "pair",
-   "size": "17 same-day activations",
-   "sort": 17.0,
-   "reason": "dropped: side by side, not layered: Green River National Wildlife Refuge is Fish and Wildlife Service land, the ground here is state",
-   "id": "US-10098+US-7951@pota",
-   "sources": {
-    "POTA history": "activated together by the same call on the same day (17x, POTA history) / outlines about 0 m apart"
    },
    "checked": "2026-10-29"
   },
@@ -855,25 +1025,6 @@
    "area": "ky",
    "state": "",
    "refs": [
-    "US-4526",
-    "US-7966"
-   ],
-   "names": {},
-   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
-   "kind": "pair",
-   "size": "11 same-day activations",
-   "sort": 11.0,
-   "reason": "dropped: private land at the spot (ownership map): counts only for its own park number, never a 2-fer",
-   "id": "US-4526+US-7966@pota",
-   "sources": {
-    "POTA history": "activated together by the same call on the same day (11x, POTA history) / outlines about 0 m apart"
-   },
-   "checked": "2026-10-29"
-  },
-  {
-   "area": "ky",
-   "state": "",
-   "refs": [
     "US-0295",
     "US-1283"
    ],
@@ -1038,6 +1189,30 @@
    "id": "US-10112+US-4526@pota",
    "sources": {
     "POTA history": "activated together by the same call on the same day (9x, POTA history) / outlines about 328 m apart"
+   },
+   "checked": "2026-10-29"
+  },
+  {
+   "area": "ky",
+   "state": "US-KY",
+   "refs": [
+    "US-10168",
+    "US-4484"
+   ],
+   "names": {
+    "US-10168": "Sunny Brook Wildlife Management Area",
+    "US-4484": "Daniel Boone National Forest"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "8.6 ac",
+   "sort": 8.6,
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:USFS', 'STATE']",
+   "id": "US-10168+US-4484@area@38.223,-83.374",
+   "sources": {
+    "US-10168": "read live from the agency 2026-10-29",
+    "US-4484": "read live from the agency 2026-10-29",
+    "USGS water": "saved copy of the USGS map, read 2026-10-28"
    },
    "checked": "2026-10-29"
   },
@@ -1347,6 +1522,28 @@
   },
   {
    "area": "ky",
+   "state": "US-KY",
+   "refs": [
+    "US-10168",
+    "US-4484"
+   ],
+   "names": {
+    "US-10168": "Sunny Brook Wildlife Management Area",
+    "US-4484": "Daniel Boone National Forest"
+   },
+   "what": "water only (boat spot): is there really no land?",
+   "kind": "area",
+   "size": "4.5 ac",
+   "sort": 4.5,
+   "reason": "water only: boat or kayak",
+   "id": "US-10168+US-4484@area@channel@38.224,-83.381",
+   "sources": {
+    "USGS water": "saved copy of the USGS map, read 2026-10-28"
+   },
+   "checked": "2026-10-29"
+  },
+  {
+   "area": "ky",
    "state": "",
    "refs": [
     "US-0686",
@@ -1420,10 +1617,34 @@
    "reason": "the outlines overlap, but the Forest Service ownership map (Basic Ownership, 2015 data) does not show this patch as the agency's land (that map may be out of date): check the official map; PAD-US cross-check",
    "id": "US-4484+US-4688@area@36.946,-83.171",
    "sources": {
-    "US-4484": "read live from the agency 2026-10-28",
-    "US-4688": "read live from the agency 2026-10-28"
+    "US-4484": "read live from the agency 2026-10-29",
+    "US-4688": "read live from the agency 2026-10-29"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
+  },
+  {
+   "area": "ky",
+   "state": "US-KY",
+   "refs": [
+    "US-10162",
+    "US-4484"
+   ],
+   "names": {
+    "US-10162": "Ross Creek Wildlife Management Area",
+    "US-4484": "Daniel Boone National Forest"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "3.3 ac",
+   "sort": 3.3,
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:USFS', 'STATE']",
+   "id": "US-10162+US-4484@area@37.594,-83.855",
+   "sources": {
+    "US-10162": "read live from the agency 2026-10-29",
+    "US-4484": "read live from the agency 2026-10-29",
+    "USGS water": "saved copy of the USGS map, read 2026-10-28"
+   },
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -1560,20 +1781,72 @@
   },
   {
    "area": "ky",
-   "state": "",
+   "state": "US-KY",
    "refs": [
     "US-4484",
-    "US-7962"
+    "US-7970"
    ],
-   "names": {},
-   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
-   "kind": "pair",
-   "size": "3 same-day activations",
-   "sort": 3.0,
-   "reason": "dropped in pass 3",
-   "id": "US-4484+US-7962@pota",
+   "names": {
+    "US-4484": "Daniel Boone National Forest",
+    "US-7970": "Sinking Creek State Natural Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "2.9 ac",
+   "sort": 2.9,
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:USFS', 'STATE']",
+   "id": "US-4484+US-7970@area@37.109,-84.239",
    "sources": {
-    "POTA history": "activated together by the same call on the same day (3x, POTA history) / outlines about 0 m apart"
+    "US-4484": "read live from the agency 2026-10-29",
+    "US-7970": "read live from the agency 2026-10-29",
+    "USGS water": "saved copy of the USGS map, read 2026-10-28"
+   },
+   "checked": "2026-10-29"
+  },
+  {
+   "area": "ky",
+   "state": "US-KY",
+   "refs": [
+    "US-10098",
+    "US-7951"
+   ],
+   "names": {
+    "US-10098": "Green River National Wildlife Refuge",
+    "US-7951": "Green River State Forest"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "2.8 ac",
+   "sort": 2.8,
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:FWS', 'STATE']",
+   "id": "US-10098+US-7951@area@37.883,-87.471",
+   "sources": {
+    "US-10098": "read live from the agency 2026-10-29",
+    "US-7951": "read live from the agency 2026-10-29"
+   },
+   "checked": "2026-10-29"
+  },
+  {
+   "area": "ky",
+   "state": "US-KY",
+   "refs": [
+    "US-1281",
+    "US-4687"
+   ],
+   "names": {
+    "US-1281": "Jenny Wiley State Park",
+    "US-4687": "Dewey Lake Wildlife Management Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "2.7 ac",
+   "sort": 2.7,
+   "reason": "candidate \u00b7 ['FED:USACE', 'STATE']",
+   "id": "US-1281+US-4687@area@37.707,-82.731",
+   "sources": {
+    "US-1281": "read live from the agency 2026-10-29",
+    "US-4687": "read live from the agency 2026-10-29",
+    "USGS water": "saved copy of the USGS map, read 2026-10-28"
    },
    "checked": "2026-10-29"
   },
@@ -1648,25 +1921,6 @@
    "sort": 2.0,
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "id": "US-10153+US-4484@pota",
-   "sources": {
-    "POTA history": "activated together by the same call on the same day (2x, POTA history) / outlines about 0 m apart"
-   },
-   "checked": "2026-10-29"
-  },
-  {
-   "area": "ky",
-   "state": "",
-   "refs": [
-    "US-1275",
-    "US-4484"
-   ],
-   "names": {},
-   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
-   "kind": "pair",
-   "size": "2 same-day activations",
-   "sort": 2.0,
-   "reason": "dropped: side by side, not layered: Buckhorn Lake State Park is state land, the ground here is Forest Service",
-   "id": "US-1275+US-4484@pota",
    "sources": {
     "POTA history": "activated together by the same call on the same day (2x, POTA history) / outlines about 0 m apart"
    },
@@ -1783,6 +2037,28 @@
    "id": "US-11274+US-4484@pota",
    "sources": {
     "POTA history": "activated together by the same call on the same day (2x, POTA history) / outlines about 968 m apart"
+   },
+   "checked": "2026-10-29"
+  },
+  {
+   "area": "ky",
+   "state": "US-KY",
+   "refs": [
+    "US-4484",
+    "US-7970"
+   ],
+   "names": {
+    "US-4484": "Daniel Boone National Forest",
+    "US-7970": "Sinking Creek State Natural Area"
+   },
+   "what": "water only (boat spot): is there really no land?",
+   "kind": "area",
+   "size": "1.0 ac",
+   "sort": 1.0,
+   "reason": "water only: boat or kayak",
+   "id": "US-4484+US-7970@area@channel@37.102,-84.231",
+   "sources": {
+    "USGS water": "saved copy of the USGS map, read 2026-10-28"
    },
    "checked": "2026-10-29"
   },
@@ -1954,6 +2230,77 @@
    "id": "US-3820+US-4484@pota",
    "sources": {
     "POTA history": "activated together by the same call on the same day (1x, POTA history) / outlines about 566 m apart"
+   },
+   "checked": "2026-10-29"
+  },
+  {
+   "area": "ky",
+   "state": "US-KY",
+   "refs": [
+    "US-10139",
+    "US-7966"
+   ],
+   "names": {
+    "US-10139": "Jefferson National Forest Wildlife Management Area",
+    "US-7966": "Bad Branch State Nature Preserve"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "0.8 ac",
+   "sort": 0.8,
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:USFS', 'STATE']",
+   "id": "US-10139+US-7966@area@37.100,-82.747",
+   "sources": {
+    "US-10139": "read live from the agency 2026-10-29",
+    "US-7966": "read live from the agency 2026-10-29",
+    "USGS water": "saved copy of the USGS map, read 2026-10-28"
+   },
+   "checked": "2026-10-29"
+  },
+  {
+   "area": "ky",
+   "state": "US-KY",
+   "refs": [
+    "US-4526",
+    "US-7966"
+   ],
+   "names": {
+    "US-4526": "George Washington & Jefferson National Forest",
+    "US-7966": "Bad Branch State Nature Preserve"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "0.8 ac",
+   "sort": 0.8,
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:USFS', 'STATE']",
+   "id": "US-4526+US-7966@area@37.100,-82.747",
+   "sources": {
+    "US-4526": "read live from the agency 2026-10-29",
+    "US-7966": "read live from the agency 2026-10-29",
+    "USGS water": "saved copy of the USGS map, read 2026-10-28"
+   },
+   "checked": "2026-10-29"
+  },
+  {
+   "area": "ky",
+   "state": "US-KY",
+   "refs": [
+    "US-1275",
+    "US-4484"
+   ],
+   "names": {
+    "US-1275": "Buckhorn Lake State Park",
+    "US-4484": "Daniel Boone National Forest"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "0.7 ac",
+   "sort": 0.7,
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:DOD', 'FED:USFS']",
+   "id": "US-1275+US-4484@area@37.313,-83.446",
+   "sources": {
+    "US-1275": "read live from the agency 2026-10-29",
+    "US-4484": "read live from the agency 2026-10-29"
    },
    "checked": "2026-10-29"
   }
