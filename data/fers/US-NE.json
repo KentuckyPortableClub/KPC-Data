@@ -2,10 +2,21 @@
  "about": "Spots where the boundaries of two or more POTA parks may overlap, by the 2-FER RULES FOR THE WHOLE WORLD (Brandon Oct 27, notes/mapping.md): the park = where its designation legally applies (national forests + grasslands = Forest Service-OWNED land only, never proclamation lines); public land open to the public; layered = real, side by side = not (ownership step: PAD-US / CPCAD at the spot, read at up to 5 points of the patch; no public owner there = not sure); a patch 50 yards across in every park ('small' = 50-100 yards; 25-50 yards = the separate 'very tight' list, members only; under 25 = not kept); line-only trails / rivers by POTA's 100-ft rule from the line or the river EDGE (USGS NHD); pins never count. Status: 'candidate' = all checks passed; 'not sure: …' and 'water only: boat or kayak' are separate lists, never the main one; n-fers up to 9; 'Same land, two park numbers' (two numbers on one official outline) is shown with that label; 'dropped: …' says why. Every decided spot shows 'checked' + 'map_dates'. Parks with no official boundary: missing-<region>.json. HIDDEN, not reviewed: passes [saved, fresh, finest] must all be 1 and status 'candidate' before a person looks. Wording when shown (house rule, Oct 27): '⚠️ Parks' boundaries may overlap here, but we can't confirm it. Check both official boundary maps and make your own call before you count it.' Tool pages carry the FULL notice from .claude/notes/notices.md.",
  "pass1": "2026-10-28",
  "pass2": "2026-10-28",
- "pass3": "2026-10-28",
+ "pass3": "2026-10-29",
  "pass5": "2026-10-29",
  "spots": [
   {
+   "access": null,
+   "access_pin": {
+    "at": [
+     42.902448,
+     -100.472867
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
    "acres": 794.6,
    "box": [
     -100.50669,
@@ -17,8 +28,15 @@
     42.90162,
     -100.478244
    ],
+   "checked": "2026-10-29",
    "found": "2026-10-28",
+   "ground": [
+    "Fish and Wildlife Service"
+   ],
    "id": "US-0443+US-5622@area@42.902,-100.478",
+   "info": {
+    "water_pct": 14
+   },
    "kind": "area",
    "lines": {
     "US-0443": [
@@ -1479,14 +1497,39 @@
     ]
    },
    "lines_read": "2026-10-29",
-   "masked_out": [
-    "nps"
+   "map_dates": {
+    "US-0443": "downloaded 2026-10-29",
+    "US-5622": "downloaded 2026-10-29",
+    "USGS water": "USGS NHDPlus HR file 2021-05-17 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "maps": [
+    [
+     "US-0443",
+     "https://www.fws.gov/refuge/fort_niobrara/"
+    ],
+    [
+     "US-5622",
+     "https://www.nps.gov/niob/index.htm"
+    ]
    ],
+   "names": {
+    "US-0443": "Fort Niobrara National Wildlife Refuge",
+    "US-5622": "Niobrara National Wild and Scenic River"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go",
+    "restricted access (PAD-US): check the agency rules"
+   ],
+   "ownership": "public land (Fish and Wildlife Service)",
    "passes": [
     1,
     1,
-    0
+    1
    ],
+   "pins_inside": {
+    "US-0443": true,
+    "US-5622": true
+   },
    "refs": [
     "US-0443",
     "US-5622"
@@ -2241,7 +2284,8 @@
      42.907546
     ]
    ],
-   "status": "waiting for pass 3",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 575
   },
   {
@@ -2510,7 +2554,25 @@
    "wide_m": 10
   },
   {
+   "access": [
+    41.947185,
+    -103.49029,
+    "Boat ramp / launch (Nebraska Game and Parks Commission)",
+    "US-5655",
+    197
+   ],
+   "access_pin": {
+    "at": [
+     41.947829,
+     -103.50448
+    ],
+    "from": "road",
+    "name": "Galley Rd",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
    "acres": 89.2,
+   "acres_all": 178.4,
    "box": [
     -103.51964,
     41.92358,
@@ -2521,8 +2583,17 @@
     41.947002,
     -103.492653
    ],
+   "checked": "2026-10-29",
    "found": "2026-10-28",
+   "ground": [
+    "Fish and Wildlife Service",
+    "state",
+    "usbr"
+   ],
    "id": "US-0445+US-5655@area@41.946,-103.519",
+   "info": {
+    "water_pct": 59
+   },
    "kind": "area",
    "lines": {
     "US-0445": [
@@ -6671,11 +6742,67 @@
     ]
    },
    "lines_read": "2026-10-29",
+   "map_dates": {
+    "US-0445": "downloaded 2026-10-29",
+    "US-5655": "downloaded 2026-10-29",
+    "USGS water": "saved copy of the USGS map, read 2026-10-28"
+   },
+   "maps": [
+    [
+     "US-0445",
+     "https://www.fws.gov/refuge/north_platte/"
+    ],
+    [
+     "US-5655",
+     "http://outdoornebraska.gov/lakeminatare/"
+    ]
+   ],
+   "mixed_owners": [
+    "FED:FWS",
+    "FED:USBR",
+    "STATE"
+   ],
+   "names": {
+    "US-0445": "North Platte National Wildlife Refuge",
+    "US-5655": "Lake Minatare State Recreation Area"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go",
+    "restricted access (PAD-US): check the agency rules"
+   ],
+   "ownership": "public land (Fish and Wildlife Service + state + usbr)",
    "passes": [
     1,
     1,
-    0
+    1
    ],
+   "patches": 2,
+   "pins": [
+    {
+     "at": [
+      41.947829,
+      -103.50448
+     ],
+     "from": "road",
+     "name": "Galley Rd",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 0
+    },
+    {
+     "at": [
+      41.947829,
+      -103.50448
+     ],
+     "from": "road",
+     "name": "Galley Rd",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 0
+    }
+   ],
+   "pins_inside": {
+    "US-0445": true,
+    "US-5655": true
+   },
    "refs": [
     "US-0445",
     "US-5655"
@@ -6922,10 +7049,28 @@
      41.944605
     ]
    ],
-   "status": "waiting for pass 3",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 141
   },
   {
+   "access": [
+    41.947185,
+    -103.49029,
+    "Boat ramp / launch (Nebraska Game and Parks Commission)",
+    "US-5655",
+    197
+   ],
+   "access_pin": {
+    "at": [
+     41.947829,
+     -103.50448
+    ],
+    "from": "road",
+    "name": "Galley Rd",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
    "acres": 89.2,
    "box": [
     -103.51964,
@@ -6937,8 +7082,17 @@
     41.947002,
     -103.492653
    ],
+   "checked": "2026-10-29",
    "found": "2026-10-28",
+   "ground": [
+    "Fish and Wildlife Service",
+    "state",
+    "usbr"
+   ],
    "id": "US-0445+US-5655@area@41.948,-103.499",
+   "info": {
+    "water_pct": 59
+   },
    "kind": "area",
    "lines": {
     "US-0445": [
@@ -11087,11 +11241,44 @@
     ]
    },
    "lines_read": "2026-10-29",
+   "map_dates": {
+    "US-0445": "downloaded 2026-10-29",
+    "US-5655": "downloaded 2026-10-29",
+    "USGS water": "saved copy of the USGS map, read 2026-10-28"
+   },
+   "maps": [
+    [
+     "US-0445",
+     "https://www.fws.gov/refuge/north_platte/"
+    ],
+    [
+     "US-5655",
+     "http://outdoornebraska.gov/lakeminatare/"
+    ]
+   ],
+   "mixed_owners": [
+    "FED:FWS",
+    "FED:USBR",
+    "STATE"
+   ],
+   "names": {
+    "US-0445": "North Platte National Wildlife Refuge",
+    "US-5655": "Lake Minatare State Recreation Area"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go",
+    "restricted access (PAD-US): check the agency rules"
+   ],
+   "ownership": "public land (Fish and Wildlife Service + state + usbr)",
    "passes": [
     1,
     1,
-    0
+    1
    ],
+   "pins_inside": {
+    "US-0445": true,
+    "US-5655": true
+   },
    "refs": [
     "US-0445",
     "US-5655"
@@ -11338,7 +11525,7 @@
      41.944605
     ]
    ],
-   "status": "waiting for pass 3",
+   "status": "merged into one row: US-0445+US-5655@area@41.946,-103.519",
    "wide_m": 141
   },
   {
@@ -12558,7 +12745,25 @@
    "wide_m": 10
   },
   {
+   "access": [
+    41.947185,
+    -103.49029,
+    "Boat ramp / launch (Nebraska Game and Parks Commission)",
+    "US-5655",
+    197
+   ],
+   "access_pin": {
+    "at": [
+     41.947829,
+     -103.50448
+    ],
+    "from": "road",
+    "name": "Galley Rd",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
    "acres": 89.2,
+   "acres_all": 178.4,
    "box": [
     -103.51964,
     41.92358,
@@ -12569,8 +12774,17 @@
     41.947002,
     -103.492653
    ],
+   "checked": "2026-10-29",
    "found": "2026-10-28",
+   "ground": [
+    "Fish and Wildlife Service",
+    "state",
+    "usbr"
+   ],
    "id": "US-13433+US-5655@area@41.946,-103.519",
+   "info": {
+    "water_pct": 59
+   },
    "kind": "area",
    "lines": {
     "US-13433": [
@@ -16719,11 +16933,67 @@
     ]
    },
    "lines_read": "2026-10-29",
+   "map_dates": {
+    "US-13433": "downloaded 2026-10-29",
+    "US-5655": "downloaded 2026-10-29",
+    "USGS water": "saved copy of the USGS map, read 2026-10-28"
+   },
+   "maps": [
+    [
+     "US-13433",
+     "https://www.fws.gov/refuge/north-platte/map"
+    ],
+    [
+     "US-5655",
+     "http://outdoornebraska.gov/lakeminatare/"
+    ]
+   ],
+   "mixed_owners": [
+    "FED:FWS",
+    "FED:USBR",
+    "STATE"
+   ],
+   "names": {
+    "US-13433": "North Platte National Wildlife Refuge",
+    "US-5655": "Lake Minatare State Recreation Area"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go",
+    "restricted access (PAD-US): check the agency rules"
+   ],
+   "ownership": "public land (Fish and Wildlife Service + state + usbr)",
    "passes": [
     1,
     1,
-    0
+    1
    ],
+   "patches": 2,
+   "pins": [
+    {
+     "at": [
+      41.947829,
+      -103.50448
+     ],
+     "from": "road",
+     "name": "Galley Rd",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 0
+    },
+    {
+     "at": [
+      41.947829,
+      -103.50448
+     ],
+     "from": "road",
+     "name": "Galley Rd",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 0
+    }
+   ],
+   "pins_inside": {
+    "US-13433": true,
+    "US-5655": true
+   },
    "refs": [
     "US-13433",
     "US-5655"
@@ -16970,10 +17240,28 @@
      41.944605
     ]
    ],
-   "status": "waiting for pass 3",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 141
   },
   {
+   "access": [
+    41.947185,
+    -103.49029,
+    "Boat ramp / launch (Nebraska Game and Parks Commission)",
+    "US-5655",
+    197
+   ],
+   "access_pin": {
+    "at": [
+     41.947829,
+     -103.50448
+    ],
+    "from": "road",
+    "name": "Galley Rd",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
    "acres": 89.2,
    "box": [
     -103.51964,
@@ -16985,8 +17273,17 @@
     41.947002,
     -103.492653
    ],
+   "checked": "2026-10-29",
    "found": "2026-10-28",
+   "ground": [
+    "Fish and Wildlife Service",
+    "state",
+    "usbr"
+   ],
    "id": "US-13433+US-5655@area@41.948,-103.499",
+   "info": {
+    "water_pct": 59
+   },
    "kind": "area",
    "lines": {
     "US-13433": [
@@ -21135,11 +21432,44 @@
     ]
    },
    "lines_read": "2026-10-29",
+   "map_dates": {
+    "US-13433": "downloaded 2026-10-29",
+    "US-5655": "downloaded 2026-10-29",
+    "USGS water": "saved copy of the USGS map, read 2026-10-28"
+   },
+   "maps": [
+    [
+     "US-13433",
+     "https://www.fws.gov/refuge/north-platte/map"
+    ],
+    [
+     "US-5655",
+     "http://outdoornebraska.gov/lakeminatare/"
+    ]
+   ],
+   "mixed_owners": [
+    "FED:FWS",
+    "FED:USBR",
+    "STATE"
+   ],
+   "names": {
+    "US-13433": "North Platte National Wildlife Refuge",
+    "US-5655": "Lake Minatare State Recreation Area"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go",
+    "restricted access (PAD-US): check the agency rules"
+   ],
+   "ownership": "public land (Fish and Wildlife Service + state + usbr)",
    "passes": [
     1,
     1,
-    0
+    1
    ],
+   "pins_inside": {
+    "US-13433": true,
+    "US-5655": true
+   },
    "refs": [
     "US-13433",
     "US-5655"
@@ -21386,7 +21716,7 @@
      41.944605
     ]
    ],
-   "status": "waiting for pass 3",
+   "status": "merged into one row: US-13433+US-5655@area@41.946,-103.519",
    "wide_m": 141
   },
   {
@@ -22255,6 +22585,23 @@
    "wide_m": 10
   },
   {
+   "access": [
+    42.715601,
+    -103.037469,
+    "Parking (NGPC; also covers WMAs)",
+    "US-2613",
+    628
+   ],
+   "access_pin": {
+    "at": [
+     42.712916,
+     -103.007494
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
    "acres": 23.4,
    "box": [
     -103.03238,
@@ -22266,8 +22613,16 @@
     42.719732,
     -103.032201
    ],
+   "checked": "2026-10-29",
    "found": "2026-10-28",
+   "ground": [
+    "Forest Service",
+    "state"
+   ],
    "id": "US-2613+US-3371@area@42.707,-103.027",
+   "info": {
+    "water_pct": 0
+   },
    "kind": "area",
    "lines": {
     "US-2613": [
@@ -22504,11 +22859,44 @@
     ]
    },
    "lines_read": "2026-10-29",
+   "list": "Very tight (members only)",
+   "map_dates": {
+    "US-2613": "downloaded 2026-10-29",
+    "US-3371": "downloaded 2026-10-29",
+    "USGS water": "USGS NHDPlus HR file 2021-05-17 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "maps": [
+    [
+     "US-2613",
+     "http://outdoornebraska.gov/chadron/"
+    ],
+    [
+     "US-3371",
+     "https://www.fs.usda.gov/detail/nebraska"
+    ]
+   ],
+   "mixed_owners": [
+    "FED:USFS",
+    "STATE"
+   ],
+   "names": {
+    "US-2613": "Chadron State Park",
+    "US-3371": "Nebraska National Forest"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go",
+    "restricted access (PAD-US): check the agency rules"
+   ],
+   "ownership": "public land (Forest Service + state)",
    "passes": [
     1,
     1,
-    0
+    1
    ],
+   "pins_inside": {
+    "US-2613": true,
+    "US-3371": true
+   },
    "refs": [
     "US-2613",
     "US-3371"
@@ -22543,24 +22931,50 @@
      42.719868
     ]
    ],
-   "status": "waiting for pass 3",
+   "status": "merged into one row: US-2613+US-3371@area@42.713,-103.008",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 35
   },
   {
+   "access": [
+    42.710734,
+    -103.010279,
+    "Parking (NGPC; also covers WMAs)",
+    "US-2613",
+    277
+   ],
+   "access_pin": {
+    "at": [
+     42.71296,
+     -103.007499
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
    "acres": 2.5,
+   "acres_all": 25.9,
    "box": [
-    -103.00879,
-    42.71146,
+    -103.03238,
+    42.70192,
     -103.00751,
-    42.71295
+    42.72005
    ],
    "center": [
     42.712588,
     -103.007995
    ],
+   "checked": "2026-10-29",
    "found": "2026-10-28",
+   "ground": [
+    "Forest Service",
+    "state"
+   ],
    "id": "US-2613+US-3371@area@42.713,-103.008",
+   "info": {
+    "water_pct": 0
+   },
    "kind": "area",
    "lines": {
     "US-2613": [
@@ -22592,6 +23006,112 @@
      ],
      [
       [
+       -103.007578,
+       42.709888
+      ],
+      [
+       -103.00714,
+       42.709181
+      ],
+      [
+       -103.007609,
+       42.709178
+      ],
+      [
+       -103.00714,
+       42.709181
+      ],
+      [
+       -103.006751,
+       42.708532
+      ],
+      [
+       -103.006726,
+       42.708533
+      ],
+      [
+       -103.006432,
+       42.70807
+      ],
+      [
+       -103.006535,
+       42.707491
+      ],
+      [
+       -103.007654,
+       42.707426
+      ],
+      [
+       -103.007656,
+       42.698334
+      ]
+     ],
+     [
+      [
+       -103.027433,
+       42.698226
+      ],
+      [
+       -103.02743,
+       42.712767
+      ],
+      [
+       -103.032351,
+       42.71271
+      ],
+      [
+       -103.032427,
+       42.719956
+      ],
+      [
+       -103.012658,
+       42.720053
+      ],
+      [
+       -103.012603,
+       42.716425
+      ],
+      [
+       -103.011138,
+       42.716437
+      ],
+      [
+       -103.011054,
+       42.715775
+      ],
+      [
+       -103.010832,
+       42.715135
+      ],
+      [
+       -103.010503,
+       42.714441
+      ],
+      [
+       -103.007578,
+       42.709888
+      ]
+     ],
+     [
+      [
+       -103.007644,
+       42.707427
+      ],
+      [
+       -103.007644,
+       42.698327
+      ]
+     ],
+     [
+      [
+       -103.02742,
+       42.698218
+      ],
+      [
+       -103.02742,
+       42.71276
+      ],
+      [
        -103.022392,
        42.712847
       ],
@@ -22602,9 +23122,133 @@
       [
        -103.007577,
        42.709896
+      ],
+      [
+       -103.007644,
+       42.708412
+      ],
+      [
+       -103.007644,
+       42.707427
       ]
      ],
      [
+      [
+       -103.02258,
+       42.719894
+      ],
+      [
+       -103.022392,
+       42.712847
+      ],
+      [
+       -103.032341,
+       42.712703
+      ],
+      [
+       -103.032417,
+       42.719949
+      ],
+      [
+       -103.022583,
+       42.720007
+      ],
+      [
+       -103.02258,
+       42.719894
+      ]
+     ],
+     [
+      [
+       -103.006572,
+       42.707717
+      ],
+      [
+       -103.007644,
+       42.707653
+      ],
+      [
+       -103.00761,
+       42.709171
+      ],
+      [
+       -103.00713,
+       42.709174
+      ],
+      [
+       -103.006501,
+       42.708113
+      ],
+      [
+       -103.006572,
+       42.707717
+      ]
+     ],
+     [
+      [
+       -103.007577,
+       42.709896
+      ],
+      [
+       -103.00713,
+       42.709174
+      ],
+      [
+       -103.00761,
+       42.709171
+      ],
+      [
+       -103.007577,
+       42.709896
+      ]
+     ],
+     [
+      [
+       -103.007634,
+       42.707646
+      ],
+      [
+       -103.007634,
+       42.69832
+      ]
+     ],
+     [
+      [
+       -103.02741,
+       42.698211
+      ],
+      [
+       -103.02741,
+       42.712753
+      ],
+      [
+       -103.032331,
+       42.712696
+      ],
+      [
+       -103.032407,
+       42.719942
+      ],
+      [
+       -103.012638,
+       42.720039
+      ],
+      [
+       -103.012583,
+       42.716411
+      ],
+      [
+       -103.011118,
+       42.716423
+      ],
+      [
+       -103.011034,
+       42.715761
+      ],
+      [
+       -103.010812,
+       42.715121
+      ],
       [
        -103.010483,
        42.714427
@@ -22616,9 +23260,63 @@
       [
        -103.006491,
        42.708106
+      ],
+      [
+       -103.006562,
+       42.70771
+      ],
+      [
+       -103.007634,
+       42.707646
       ]
      ],
      [
+      [
+       -103.007634,
+       42.707646
+      ],
+      [
+       -103.007634,
+       42.69832
+      ]
+     ],
+     [
+      [
+       -103.02741,
+       42.698211
+      ],
+      [
+       -103.02741,
+       42.712753
+      ],
+      [
+       -103.032331,
+       42.712696
+      ],
+      [
+       -103.032407,
+       42.719942
+      ],
+      [
+       -103.012638,
+       42.720039
+      ],
+      [
+       -103.012583,
+       42.716411
+      ],
+      [
+       -103.011118,
+       42.716423
+      ],
+      [
+       -103.011034,
+       42.715761
+      ],
+      [
+       -103.010812,
+       42.715121
+      ],
       [
        -103.010483,
        42.714427
@@ -22630,9 +23328,63 @@
       [
        -103.006491,
        42.708106
+      ],
+      [
+       -103.006562,
+       42.70771
+      ],
+      [
+       -103.007634,
+       42.707646
       ]
      ],
      [
+      [
+       -103.007644,
+       42.707653
+      ],
+      [
+       -103.007644,
+       42.698327
+      ]
+     ],
+     [
+      [
+       -103.02742,
+       42.698218
+      ],
+      [
+       -103.02742,
+       42.71276
+      ],
+      [
+       -103.032341,
+       42.712703
+      ],
+      [
+       -103.032417,
+       42.719949
+      ],
+      [
+       -103.012648,
+       42.720046
+      ],
+      [
+       -103.012593,
+       42.716418
+      ],
+      [
+       -103.011128,
+       42.71643
+      ],
+      [
+       -103.011044,
+       42.715768
+      ],
+      [
+       -103.010822,
+       42.715128
+      ],
       [
        -103.010493,
        42.714434
@@ -22644,6 +23396,14 @@
       [
        -103.006501,
        42.708113
+      ],
+      [
+       -103.006572,
+       42.707717
+      ],
+      [
+       -103.007644,
+       42.707653
       ]
      ]
     ],
@@ -22676,16 +23436,131 @@
       [
        -103.010491,
        42.715131
+      ],
+      [
+       -103.010655,
+       42.715637
+      ],
+      [
+       -103.010762,
+       42.71627
+      ],
+      [
+       -103.007609,
+       42.716262
+      ],
+      [
+       -103.007572,
+       42.722832
+      ]
+     ],
+     [
+      [
+       -103.012791,
+       42.722571
+      ],
+      [
+       -103.012902,
+       42.719874
+      ],
+      [
+       -103.032059,
+       42.719913
+      ],
+      [
+       -103.032053,
+       42.72351
+      ]
+     ],
+     [
+      [
+       -103.041895,
+       42.719931
+      ],
+      [
+       -103.032059,
+       42.719913
+      ],
+      [
+       -103.032073,
+       42.712717
+      ],
+      [
+       -103.027158,
+       42.712716
+      ],
+      [
+       -103.02695,
+       42.701939
+      ],
+      [
+       -103.046527,
+       42.701903
       ]
      ]
     ]
    },
    "lines_read": "2026-10-29",
+   "map_dates": {
+    "US-2613": "downloaded 2026-10-29",
+    "US-3371": "downloaded 2026-10-29",
+    "USGS water": "USGS NHDPlus HR file 2021-05-17 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "maps": [
+    [
+     "US-2613",
+     "http://outdoornebraska.gov/chadron/"
+    ],
+    [
+     "US-3371",
+     "https://www.fs.usda.gov/detail/nebraska"
+    ]
+   ],
+   "mixed_owners": [
+    "FED:USFS",
+    "STATE"
+   ],
+   "names": {
+    "US-2613": "Chadron State Park",
+    "US-3371": "Nebraska National Forest"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go",
+    "restricted access (PAD-US): check the agency rules"
+   ],
+   "ownership": "public land (Forest Service + state)",
    "passes": [
     1,
     1,
-    0
+    1
    ],
+   "patches": 2,
+   "pins": [
+    {
+     "at": [
+      42.71296,
+      -103.007499
+     ],
+     "from": "road",
+     "name": "public road",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 0
+    },
+    {
+     "at": [
+      42.712916,
+      -103.007494
+     ],
+     "from": "road",
+     "name": "public road",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 0
+    }
+   ],
+   "pins_inside": {
+    "US-2613": true,
+    "US-3371": true
+   },
    "refs": [
     "US-2613",
     "US-3371"
@@ -22705,7 +23580,8 @@
     ]
    ],
    "small": "small overlap: tight fit, check carefully",
-   "status": "waiting for pass 3",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 75
   },
   {
@@ -23630,6 +24506,23 @@
    "status": "merged into one row: US-2617+US-5628@same land@40.661,-98.995"
   },
   {
+   "access": [
+    42.664174,
+    -103.550602,
+    "Parking (NGPC; also covers WMAs)",
+    "US-2618",
+    1687
+   ],
+   "access_pin": {
+    "at": [
+     42.69708,
+     -103.568861
+    ],
+    "from": "road",
+    "name": "Soldier Creek Rd",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
    "acres": 62.7,
    "box": [
     -103.56923,
@@ -23641,8 +24534,16 @@
     42.671252,
     -103.568859
    ],
+   "checked": "2026-10-29",
    "found": "2026-10-28",
+   "ground": [
+    "Forest Service",
+    "state"
+   ],
    "id": "US-2618+US-3371@area@42.706,-103.569",
+   "info": {
+    "water_pct": 0
+   },
    "kind": "area",
    "lines": {
     "US-2618": [
@@ -23831,11 +24732,43 @@
     ]
    },
    "lines_read": "2026-10-29",
+   "map_dates": {
+    "US-2618": "downloaded 2026-10-29",
+    "US-3371": "downloaded 2026-10-29",
+    "USGS water": "USGS NHDPlus HR file 2021-05-17 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "maps": [
+    [
+     "US-2618",
+     "http://outdoornebraska.gov/fortrobinson/"
+    ],
+    [
+     "US-3371",
+     "https://www.fs.usda.gov/detail/nebraska"
+    ]
+   ],
+   "mixed_owners": [
+    "FED:USFS",
+    "STATE"
+   ],
+   "names": {
+    "US-2618": "Fort Robinson State Park",
+    "US-3371": "Nebraska National Forest"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go",
+    "restricted access (PAD-US): check the agency rules"
+   ],
+   "ownership": "public land (Forest Service + state)",
    "passes": [
     1,
     1,
-    0
+    1
    ],
+   "pins_inside": {
+    "US-2618": true,
+    "US-3371": true
+   },
    "refs": [
     "US-2618",
     "US-3371"
@@ -23867,10 +24800,28 @@
     ]
    ],
    "small": "small overlap: tight fit, check carefully",
-   "status": "waiting for pass 3",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 55
   },
   {
+   "access": [
+    42.7481,
+    -98.061086,
+    "Boat ramp / launch (Nebraska Game and Parks Commission)",
+    "US-2620",
+    649
+   ],
+   "access_pin": {
+    "at": [
+     42.757789,
+     -98.037098
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 5
+   },
    "acres": 563.3,
    "box": [
     -98.06201,
@@ -23882,8 +24833,16 @@
     42.743125,
     -98.056873
    ],
+   "checked": "2026-10-29",
    "found": "2026-10-28",
+   "ground": [
+    "state",
+    "unk"
+   ],
    "id": "US-2620+US-9360@area@42.743,-98.057",
+   "info": {
+    "water_pct": 31
+   },
    "kind": "area",
    "lines": {
     "US-2620": [
@@ -26632,11 +27591,43 @@
     ]
    },
    "lines_read": "2026-10-29",
+   "map_dates": {
+    "US-2620": "downloaded 2026-10-29",
+    "US-9360": "downloaded 2026-10-29",
+    "USGS water": "USGS NHDPlus HR file 2021-05-17 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "maps": [
+    [
+     "US-2620",
+     "http://outdoornebraska.gov/niobrara/"
+    ],
+    [
+     "US-9360",
+     "http://outdoornebraska.gov/lewisandclark/"
+    ]
+   ],
+   "mixed_owners": [
+    "STATE",
+    "UNK"
+   ],
+   "names": {
+    "US-2620": "Niobrara State Park",
+    "US-9360": "Lewis and Clark Lake State Recreation Area"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go",
+    "restricted access (PAD-US): check the agency rules"
+   ],
+   "ownership": "public land (state + unk)",
    "passes": [
     1,
     1,
-    0
+    1
    ],
+   "pins_inside": {
+    "US-2620": true,
+    "US-9360": true
+   },
    "refs": [
     "US-2620",
     "US-9360"
@@ -26895,7 +27886,8 @@
      42.768674
     ]
    ],
-   "status": "waiting for pass 3",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 753
   },
   {
@@ -27474,19 +28466,45 @@
    "status": "merged into one row: US-2623+US-9366@same land@40.111,-97.065"
   },
   {
-   "acres": 263.9,
+   "access": [
+    42.890054,
+    -100.315467,
+    "Boat ramp / launch (NGPC; also covers WMAs)",
+    "US-2624",
+    413
+   ],
+   "access_pin": {
+    "at": [
+     42.892885,
+     -100.307362
+    ],
+    "from": "parking / access point",
+    "name": "Boat ramp / launch (NGPC; also covers WMAs)",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
+   "acres": 53.7,
    "box": [
-    -100.32458,
-    42.8822,
-    -100.30582,
+    -100.32323,
+    42.88975,
+    -100.30588,
     42.895
    ],
    "center": [
-    42.89034,
-    -100.309557
+    42.892646,
+    -100.31912
    ],
+   "checked": "2026-10-29",
    "found": "2026-10-28",
+   "ground": [
+    "Park Service",
+    "state"
+   ],
    "id": "US-2624+US-5622@area@42.890,-100.310",
+   "info": {
+    "cut_ac": 129.0,
+    "water_pct": 33
+   },
    "kind": "area",
    "lines": {
     "US-2624": [
@@ -27558,88 +28576,6 @@
       [
        -100.321527,
        42.894233
-      ]
-     ],
-     [
-      [
-       -100.316924,
-       42.88221
-      ],
-      [
-       -100.316852,
-       42.882161
-      ],
-      [
-       -100.320438,
-       42.882215
-      ],
-      [
-       -100.320441,
-       42.882303
-      ],
-      [
-       -100.316924,
-       42.88221
-      ]
-     ],
-     [
-      [
-       -100.313202,
-       42.887788
-      ],
-      [
-       -100.309634,
-       42.887611
-      ],
-      [
-       -100.305986,
-       42.887801
-      ],
-      [
-       -100.305987,
-       42.887716
-      ],
-      [
-       -100.309642,
-       42.887525
-      ],
-      [
-       -100.313236,
-       42.88766
-      ],
-      [
-       -100.315547,
-       42.885819
-      ],
-      [
-       -100.315667,
-       42.885818
-      ],
-      [
-       -100.315617,
-       42.885959
-      ],
-      [
-       -100.313202,
-       42.887788
-      ]
-     ],
-     [
-      [
-       -100.324621,
-       42.883094
-      ],
-      [
-       -100.324359,
-       42.887851
-      ],
-      [
-       -100.324304,
-       42.887852
-      ],
-      [
-       -100.324621,
-       42.883094
       ]
      ],
      [
@@ -27726,43 +28662,9 @@
       [
        -100.305849,
        42.887302
-      ],
-      [
-       -100.313512,
-       42.887793
-      ],
-      [
-       -100.313576,
-       42.88731
-      ],
-      [
-       -100.315514,
-       42.885936
-      ],
-      [
-       -100.316884,
-       42.885923
-      ],
-      [
-       -100.316827,
-       42.882309
-      ],
-      [
-       -100.320469,
-       42.882324
-      ],
-      [
-       -100.320584,
-       42.883483
-      ],
-      [
-       -100.324596,
-       42.88318
-      ],
-      [
-       -100.324377,
-       42.886949
-      ],
+      ]
+     ],
+     [
       [
        -100.316876,
        42.887106
@@ -27932,43 +28834,9 @@
       [
        -100.305849,
        42.887302
-      ],
-      [
-       -100.313512,
-       42.887793
-      ],
-      [
-       -100.313576,
-       42.88731
-      ],
-      [
-       -100.315514,
-       42.885936
-      ],
-      [
-       -100.316884,
-       42.885923
-      ],
-      [
-       -100.316827,
-       42.882309
-      ],
-      [
-       -100.320469,
-       42.882324
-      ],
-      [
-       -100.320584,
-       42.883483
-      ],
-      [
-       -100.324596,
-       42.88318
-      ],
-      [
-       -100.324377,
-       42.886949
-      ],
+      ]
+     ],
+     [
       [
        -100.316876,
        42.887106
@@ -28138,43 +29006,9 @@
       [
        -100.305858,
        42.887309
-      ],
-      [
-       -100.313521,
-       42.8878
-      ],
-      [
-       -100.313585,
-       42.887317
-      ],
-      [
-       -100.315523,
-       42.885943
-      ],
-      [
-       -100.316893,
-       42.88593
-      ],
-      [
-       -100.316836,
-       42.882316
-      ],
-      [
-       -100.320479,
-       42.882331
-      ],
-      [
-       -100.320593,
-       42.88349
-      ],
-      [
-       -100.324606,
-       42.883187
-      ],
-      [
-       -100.324386,
-       42.886956
-      ],
+      ]
+     ],
+     [
       [
        -100.316886,
        42.887113
@@ -28264,34 +29098,6 @@
     "US-5622": [
      [
       [
-       -100.296829,
-       42.888298
-      ],
-      [
-       -100.309634,
-       42.887611
-      ],
-      [
-       -100.313202,
-       42.887788
-      ],
-      [
-       -100.315617,
-       42.885959
-      ],
-      [
-       -100.316083,
-       42.884658
-      ],
-      [
-       -100.316817,
-       42.882975
-      ],
-      [
-       -100.316898,
-       42.882209
-      ],
-      [
        -100.324666,
        42.882415
       ],
@@ -28306,131 +29112,152 @@
       [
        -100.326104,
        42.891196
-      ],
-      [
-       -100.326986,
-       42.891735
       ]
      ]
     ]
    },
    "lines_read": "2026-10-29",
-   "masked_out": [
-    "nps"
+   "map_dates": {
+    "US-2624": "downloaded 2026-10-29",
+    "US-5622": "downloaded 2026-10-29",
+    "USGS water": "USGS NHDPlus HR file 2021-05-17 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "maps": [
+    [
+     "US-2624",
+     "http://outdoornebraska.gov/smithfalls/"
+    ],
+    [
+     "US-5622",
+     "https://www.nps.gov/niob/index.htm"
+    ]
    ],
+   "mixed_owners": [
+    "FED:NPS",
+    "STATE"
+   ],
+   "names": {
+    "US-2624": "Smith Falls State Park",
+    "US-5622": "Niobrara National Wild and Scenic River"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go",
+    "restricted access (PAD-US): check the agency rules"
+   ],
+   "ownership": "public land (Park Service + state)",
    "passes": [
     1,
     1,
-    0
+    1
    ],
+   "pins_inside": {
+    "US-2624": true,
+    "US-5622": true
+   },
    "refs": [
     "US-2624",
     "US-5622"
    ],
    "shape": [
     [
-     -100.324576,
-     42.88306
+     -100.323227,
+     42.894048
     ],
     [
-     -100.324269,
-     42.883196
+     -100.323166,
+     42.89328
     ],
     [
-     -100.320591,
-     42.883467
+     -100.322369,
+     42.892375
     ],
     [
-     -100.320469,
-     42.882291
+     -100.321082,
+     42.891516
     ],
     [
-     -100.316852,
-     42.882201
+     -100.31863,
+     42.890883
     ],
     [
-     -100.317833,
-     42.882246
+     -100.316055,
+     42.890431
     ],
     [
-     -100.316852,
-     42.882291
+     -100.315932,
+     42.890159
     ],
     [
-     -100.316852,
-     42.885864
+     -100.315442,
+     42.889933
     ],
     [
-     -100.315687,
-     42.885909
+     -100.313358,
+     42.889752
     ],
     [
-     -100.315626,
-     42.885773
+     -100.31017,
+     42.890386
     ],
     [
-     -100.315564,
-     42.885954
+     -100.309373,
+     42.890657
     ],
     [
-     -100.313174,
-     42.887763
+     -100.307718,
+     42.891697
     ],
     [
-     -100.30925,
-     42.887582
+     -100.30735,
+     42.892149
     ],
     [
-     -100.305817,
-     42.887808
+     -100.306246,
+     42.893053
+    ],
+    [
+     -100.305879,
+     42.893144
     ],
     [
      -100.305879,
      42.89346
     ],
     [
-     -100.306798,
-     42.893325
+     -100.306614,
+     42.89337
     ],
     [
-     -100.307411,
-     42.893008
+     -100.307043,
+     42.893189
     ],
     [
-     -100.308576,
-     42.893596
+     -100.308208,
+     42.891833
     ],
     [
-     -100.309311,
-     42.89328
+     -100.308882,
+     42.891426
     ],
     [
-     -100.310292,
-     42.893144
+     -100.311518,
+     42.890566
     ],
     [
-     -100.310967,
-     42.892873
+     -100.311702,
+     42.890612
     ],
     [
-     -100.31207,
-     42.892737
+     -100.312622,
+     42.890295
     ],
     [
-     -100.312193,
-     42.892918
-    ],
-    [
-     -100.312438,
-     42.892918
-    ],
-    [
-     -100.313848,
-     42.893596
+     -100.313787,
+     42.890205
     ],
     [
      -100.316974,
-     42.894365
+     42.890793
     ],
     [
      -100.317036,
@@ -28455,70 +29282,11 @@
     [
      -100.322676,
      42.894998
-    ],
-    [
-     -100.323166,
-     42.894229
-    ],
-    [
-     -100.323227,
-     42.893551
-    ],
-    [
-     -100.322921,
-     42.892918
-    ],
-    [
-     -100.322369,
-     42.892375
-    ],
-    [
-     -100.320836,
-     42.891426
-    ],
-    [
-     -100.3182,
-     42.890793
-    ],
-    [
-     -100.316055,
-     42.890431
-    ],
-    [
-     -100.315932,
-     42.89034
-    ],
-    [
-     -100.315932,
-     42.889843
-    ],
-    [
-     -100.316177,
-     42.889391
-    ],
-    [
-     -100.316668,
-     42.8893
-    ],
-    [
-     -100.316913,
-     42.888893
-    ],
-    [
-     -100.316913,
-     42.887085
-    ],
-    [
-     -100.324269,
-     42.886949
-    ],
-    [
-     -100.324331,
-     42.887808
     ]
    ],
-   "status": "waiting for pass 3",
-   "wide_m": 607
+   "status": "candidate",
+   "water_checked": "2026-10-29",
+   "wide_m": 345
   },
   {
    "access": null,
@@ -28592,9 +29360,26 @@
      42.83583
     ]
    ],
-   "status": "candidate"
+   "status": "dropped: two park numbers joined to one record by name, pins 50 km apart and not both inside it (a wrong join in the key)"
   },
   {
+   "access": [
+    42.62923,
+    -100.88588,
+    "Boat ramp / launch (Nebraska Game and Parks Commission)",
+    "US-5631",
+    825
+   ],
+   "access_pin": {
+    "at": [
+     42.636206,
+     -100.91377
+    ],
+    "from": "road",
+    "name": "Powderhorn Trl",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
    "acres": 273.8,
    "box": [
     -100.92786,
@@ -28606,8 +29391,16 @@
     42.629734,
     -100.895929
    ],
+   "checked": "2026-10-29",
    "found": "2026-10-28",
+   "ground": [
+    "Forest Service",
+    "usbr"
+   ],
    "id": "US-3372+US-5631@area@42.634,-100.918",
+   "info": {
+    "water_pct": 86
+   },
    "kind": "area",
    "lines": {
     "US-3372": [
@@ -29400,11 +30193,42 @@
     ]
    },
    "lines_read": "2026-10-29",
+   "map_dates": {
+    "US-3372": "downloaded 2026-10-29",
+    "US-5631": "downloaded 2026-10-29",
+    "USGS water": "USGS NHDPlus HR file 2021-05-17 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "maps": [
+    [
+     "US-3372",
+     "https://www.fs.usda.gov/recarea/nebraska/recarea/?recid=30324"
+    ],
+    [
+     "US-5631",
+     "http://outdoornebraska.gov/merrittreservoir/"
+    ]
+   ],
+   "mixed_owners": [
+    "FED:USBR",
+    "FED:USFS"
+   ],
+   "names": {
+    "US-3372": "Samuel R McKelvie National Forest",
+    "US-5631": "Merritt Reservoir State Recreation Area"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (Forest Service + usbr)",
    "passes": [
     1,
     1,
-    0
+    1
    ],
+   "pins_inside": {
+    "US-3372": true,
+    "US-5631": true
+   },
    "refs": [
     "US-3372",
     "US-5631"
@@ -29795,7 +30619,8 @@
      42.634118
     ]
    ],
-   "status": "waiting for pass 3",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 448
   }
  ],

@@ -2,10 +2,21 @@
  "about": "Spots where the boundaries of two or more POTA parks may overlap, by the 2-FER RULES FOR THE WHOLE WORLD (Brandon Oct 27, notes/mapping.md): the park = where its designation legally applies (national forests + grasslands = Forest Service-OWNED land only, never proclamation lines); public land open to the public; layered = real, side by side = not (ownership step: PAD-US / CPCAD at the spot, read at up to 5 points of the patch; no public owner there = not sure); a patch 50 yards across in every park ('small' = 50-100 yards; 25-50 yards = the separate 'very tight' list, members only; under 25 = not kept); line-only trails / rivers by POTA's 100-ft rule from the line or the river EDGE (USGS NHD); pins never count. Status: 'candidate' = all checks passed; 'not sure: …' and 'water only: boat or kayak' are separate lists, never the main one; n-fers up to 9; 'Same land, two park numbers' (two numbers on one official outline) is shown with that label; 'dropped: …' says why. Every decided spot shows 'checked' + 'map_dates'. Parks with no official boundary: missing-<region>.json. HIDDEN, not reviewed: passes [saved, fresh, finest] must all be 1 and status 'candidate' before a person looks. Wording when shown (house rule, Oct 27): '⚠️ Parks' boundaries may overlap here, but we can't confirm it. Check both official boundary maps and make your own call before you count it.' Tool pages carry the FULL notice from .claude/notes/notices.md.",
  "pass1": "2026-10-28",
  "pass2": "2026-10-28",
- "pass3": "2026-10-28",
+ "pass3": "2026-10-29",
  "pass5": "2026-10-29",
  "spots": [
   {
+   "access": null,
+   "access_pin": {
+    "at": [
+     30.497685,
+     -91.71662
+    ],
+    "from": "road",
+    "name": "Little Alabama Rd",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
    "acres": 15711.4,
    "box": [
     -91.72082,
@@ -17,8 +28,15 @@
     30.483833,
     -91.697847
    ],
+   "checked": "2026-10-29",
    "found": "2026-10-28",
+   "ground": [
+    "federal"
+   ],
    "id": "US-0296+US-4082@area@30.483,-91.698",
+   "info": {
+    "water_pct": 1
+   },
    "kind": "area",
    "lines": {
     "US-0296": [
@@ -9999,11 +10017,39 @@
     ]
    },
    "lines_read": "2026-10-29",
+   "map_dates": {
+    "US-0296": "downloaded 2026-10-29",
+    "US-4082": "downloaded 2026-10-29",
+    "USGS water": "USGS NHDPlus HR file 2021-05-17 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "maps": [
+    [
+     "US-0296",
+     "https://www.fws.gov/refuge/atchafalaya"
+    ],
+    [
+     "US-4082",
+     "https://www.wlf.louisiana.gov/page/sherburne"
+    ]
+   ],
+   "names": {
+    "US-0296": "Atchafalaya National Wildlife Refuge",
+    "US-4082": "Sherburne Wildlife Management Area"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go",
+    "restricted access (PAD-US): check the agency rules"
+   ],
+   "ownership": "public land (federal)",
    "passes": [
     1,
     1,
-    0
+    1
    ],
+   "pins_inside": {
+    "US-0296": false,
+    "US-4082": true
+   },
    "refs": [
     "US-0296",
     "US-4082"
@@ -10670,10 +10716,22 @@
      30.497714
     ]
    ],
-   "status": "waiting for pass 3",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 3042
   },
   {
+   "access": null,
+   "access_pin": {
+    "at": [
+     30.99099,
+     -92.370989
+    ],
+    "from": "road",
+    "name": "Hubbard Brake Rd",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 66
+   },
    "acres": 1.6,
    "box": [
     -92.37383,
@@ -10685,7 +10743,12 @@
     30.992966,
     -92.37184
    ],
+   "checked": "2026-10-29",
    "found": "2026-10-28",
+   "ground": [
+    "Fish and Wildlife Service",
+    "state"
+   ],
    "id": "US-0297+US-0312@area@30.993,-92.372",
    "kind": "area",
    "lines": {
@@ -10945,11 +11008,43 @@
     ]
    },
    "lines_read": "2026-10-29",
+   "list": "Very tight (members only)",
+   "map_dates": {
+    "US-0297": "downloaded 2026-10-29",
+    "US-0312": "downloaded 2026-10-29"
+   },
+   "maps": [
+    [
+     "US-0297",
+     "https://www.fws.gov/refuge/bayou-cocodrie"
+    ],
+    [
+     "US-0312",
+     "https://www.fws.gov/refuge/lake-ophelia"
+    ]
+   ],
+   "mixed_owners": [
+    "FED:FWS",
+    "STATE"
+   ],
+   "names": {
+    "US-0297": "Bayou Cocodrie National Wildlife Refuge",
+    "US-0312": "Lake Ophelia National Wildlife Refuge"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go",
+    "restricted access (PAD-US): check the agency rules"
+   ],
+   "ownership": "public land (Fish and Wildlife Service + state)",
    "passes": [
     1,
     1,
-    0
+    1
    ],
+   "pins_inside": {
+    "US-0297": false,
+    "US-0312": false
+   },
    "refs": [
     "US-0297",
     "US-0312"
@@ -10992,12 +11087,14 @@
      30.992875
     ]
    ],
-   "status": "waiting for pass 3",
+   "status": "very tight: could be map error: check both official maps on the ground",
    "tier": "very tight: could be map error: check both official maps on the ground",
+   "water_checked": "2026-10-29",
    "wide_m": 25
   },
   {
    "acres": 4.7,
+   "acres_all": 9.4,
    "box": [
     -92.37818,
     30.99523,
@@ -11008,8 +11105,12 @@
     31.000155,
     -92.37708
    ],
+   "checked": "2026-10-29",
    "found": "2026-10-28",
    "id": "US-0297+US-0312@area@30.996,-92.374",
+   "info": {
+    "water_pct": 86
+   },
    "kind": "area",
    "lines": {
     "US-0297": [
@@ -11562,11 +11663,27 @@
     ]
    },
    "lines_read": "2026-10-29",
+   "list": "🚤 Water only: boat or kayak",
+   "map_dates": {
+    "US-0297": "downloaded 2026-10-29",
+    "US-0312": "downloaded 2026-10-29",
+    "USGS water": "USGS NHDPlus HR file 2021-05-17 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go",
+    "restricted access (PAD-US): check the agency rules"
+   ],
    "passes": [
     1,
     1,
-    0
+    1
    ],
+   "patches": 2,
+   "pins": [],
+   "pins_inside": {
+    "US-0297": false,
+    "US-0312": false
+   },
    "refs": [
     "US-0297",
     "US-0312"
@@ -11629,7 +11746,7 @@
      30.996312
     ]
    ],
-   "status": "waiting for pass 3",
+   "status": "water only: boat or kayak",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 37
   },
@@ -11645,8 +11762,12 @@
     31.000155,
     -92.37708
    ],
+   "checked": "2026-10-29",
    "found": "2026-10-28",
    "id": "US-0297+US-0312@area@31.000,-92.377",
+   "info": {
+    "water_pct": 86
+   },
    "kind": "area",
    "lines": {
     "US-0297": [
@@ -12199,11 +12320,25 @@
     ]
    },
    "lines_read": "2026-10-29",
+   "list": "🚤 Water only: boat or kayak",
+   "map_dates": {
+    "US-0297": "downloaded 2026-10-29",
+    "US-0312": "downloaded 2026-10-29",
+    "USGS water": "USGS NHDPlus HR file 2021-05-17 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go",
+    "restricted access (PAD-US): check the agency rules"
+   ],
    "passes": [
     1,
     1,
-    0
+    1
    ],
+   "pins_inside": {
+    "US-0297": false,
+    "US-0312": false
+   },
    "refs": [
     "US-0297",
     "US-0312"
@@ -12266,7 +12401,7 @@
      30.996312
     ]
    ],
-   "status": "waiting for pass 3",
+   "status": "merged into one row: US-0297+US-0312@area@30.996,-92.374",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 37
   },
@@ -12638,10 +12773,28 @@
    "wide_m": 20
   },
   {
+   "access": [
+    30.25623,
+    -89.67976,
+    "Boat ramp / launch (Louisiana Dept. of Wildlife & Fisheries; secondary)",
+    "US-4071",
+    19523
+   ],
+   "access_pin": {
+    "at": [
+     30.430805,
+     -89.704474
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 15
+   },
    "acres": 5.2,
+   "acres_all": 10.8,
    "box": [
-    -89.7144,
-    30.43066,
+    -89.72929,
+    30.43053,
     -89.70445,
     30.43084
    ],
@@ -12649,7 +12802,12 @@
     30.430753,
     -89.710542
    ],
+   "checked": "2026-10-29",
    "found": "2026-10-28",
+   "ground": [
+    "federal",
+    "state"
+   ],
    "id": "US-0302+US-4071@area@30.431,-89.714",
    "kind": "area",
    "lines": {
@@ -12694,6 +12852,42 @@
       [
        -89.721281,
        30.430631
+      ],
+      [
+       -89.721229,
+       30.434255
+      ]
+     ],
+     [
+      [
+       -89.725405,
+       30.43424
+      ],
+      [
+       -89.725439,
+       30.430603
+      ],
+      [
+       -89.729616,
+       30.430575
+      ],
+      [
+       -89.729486,
+       30.419698
+      ]
+     ],
+     [
+      [
+       -89.733471,
+       30.43054
+      ],
+      [
+       -89.729626,
+       30.430581
+      ],
+      [
+       -89.733474,
+       30.430554
       ]
      ],
      [
@@ -12736,12 +12930,52 @@
       [
        -89.721275,
        30.430623
+      ],
+      [
+       -89.721224,
+       30.434248
+      ]
+     ],
+     [
+      [
+       -89.725399,
+       30.434233
+      ],
+      [
+       -89.725434,
+       30.430596
+      ],
+      [
+       -89.729611,
+       30.430567
+      ],
+      [
+       -89.729481,
+       30.419691
+      ]
+     ],
+     [
+      [
+       -89.733465,
+       30.430533
+      ],
+      [
+       -89.729621,
+       30.430573
+      ],
+      [
+       -89.733469,
+       30.430547
       ]
      ]
     ],
     "US-4071": [
      [
       [
+       -89.72939,
+       30.416598
+      ],
+      [
        -89.729335,
        30.430758
       ],
@@ -12756,6 +12990,10 @@
      ],
      [
       [
+       -89.72939,
+       30.416598
+      ],
+      [
        -89.729335,
        30.430758
       ],
@@ -12770,6 +13008,10 @@
      ],
      [
       [
+       -89.72939,
+       30.416598
+      ],
+      [
        -89.729335,
        30.430758
       ],
@@ -12783,6 +13025,10 @@
       ]
      ],
      [
+      [
+       -89.72939,
+       30.416598
+      ],
       [
        -89.729335,
        30.430758
@@ -12799,11 +13045,76 @@
     ]
    },
    "lines_read": "2026-10-29",
+   "list": "Very tight (members only)",
+   "map_dates": {
+    "US-0302": "downloaded 2026-10-29",
+    "US-4071": "downloaded 2026-10-29"
+   },
+   "maps": [
+    [
+     "US-0302",
+     "https://www.fws.gov/refuge/bogue-chitto"
+    ],
+    [
+     "US-4071",
+     "https://www.wlf.louisiana.gov/page/pearl-river"
+    ]
+   ],
+   "mixed_owners": [
+    "FED",
+    "STAT"
+   ],
+   "names": {
+    "US-0302": "Bogue Chitto National Wildlife Refuge",
+    "US-4071": "Pearl River Wildlife Management Area"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go",
+    "restricted access (PAD-US): check the agency rules"
+   ],
+   "ownership": "public land (federal + state)",
    "passes": [
     1,
     1,
-    0
+    1
    ],
+   "patches": 3,
+   "pins": [
+    {
+     "at": [
+      30.430805,
+      -89.704474
+     ],
+     "from": "road",
+     "name": "public road",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 15
+    },
+    {
+     "at": [
+      30.43081,
+      -89.704468
+     ],
+     "from": "road",
+     "name": "public road",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 15
+    },
+    {
+     "at": [
+      30.430715,
+      -89.714363
+     ],
+     "from": "road",
+     "name": "I- 59",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 25
+    }
+   ],
+   "pins_inside": {
+    "US-0302": false,
+    "US-4071": true
+   },
    "refs": [
     "US-0302",
     "US-4071"
@@ -12826,11 +13137,29 @@
      30.430799
     ]
    ],
-   "status": "waiting for pass 3",
+   "status": "very tight: could be map error: check both official maps on the ground",
    "tier": "very tight: could be map error: check both official maps on the ground",
+   "water_checked": "2026-10-29",
    "wide_m": 25
   },
   {
+   "access": [
+    30.25623,
+    -89.67976,
+    "Boat ramp / launch (Louisiana Dept. of Wildlife & Fisheries; secondary)",
+    "US-4071",
+    19698
+   ],
+   "access_pin": {
+    "at": [
+     30.43081,
+     -89.704468
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 15
+   },
    "acres": 3.0,
    "box": [
     -89.72127,
@@ -12842,7 +13171,12 @@
     30.430708,
     -89.721167
    ],
+   "checked": "2026-10-29",
    "found": "2026-10-28",
+   "ground": [
+    "federal",
+    "state"
+   ],
    "id": "US-0302+US-4071@area@30.431,-89.721",
    "kind": "area",
    "lines": {
@@ -12920,11 +13254,43 @@
     ]
    },
    "lines_read": "2026-10-29",
+   "list": "Very tight (members only)",
+   "map_dates": {
+    "US-0302": "downloaded 2026-10-29",
+    "US-4071": "downloaded 2026-10-29"
+   },
+   "maps": [
+    [
+     "US-0302",
+     "https://www.fws.gov/refuge/bogue-chitto"
+    ],
+    [
+     "US-4071",
+     "https://www.wlf.louisiana.gov/page/pearl-river"
+    ]
+   ],
+   "mixed_owners": [
+    "FED",
+    "STAT"
+   ],
+   "names": {
+    "US-0302": "Bogue Chitto National Wildlife Refuge",
+    "US-4071": "Pearl River Wildlife Management Area"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go",
+    "restricted access (PAD-US): check the agency rules"
+   ],
+   "ownership": "public land (federal + state)",
    "passes": [
     1,
     1,
-    0
+    1
    ],
+   "pins_inside": {
+    "US-0302": false,
+    "US-4071": true
+   },
    "refs": [
     "US-0302",
     "US-4071"
@@ -12947,11 +13313,28 @@
      30.430799
     ]
    ],
-   "status": "waiting for pass 3",
+   "status": "merged into one row: US-0302+US-4071@area@30.431,-89.714",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 25
   },
   {
+   "access": [
+    30.25623,
+    -89.67976,
+    "Boat ramp / launch (Louisiana Dept. of Wildlife & Fisheries; secondary)",
+    "US-4071",
+    19863
+   ],
+   "access_pin": {
+    "at": [
+     30.430715,
+     -89.714363
+    ],
+    "from": "road",
+    "name": "I- 59",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 25
+   },
    "acres": 2.6,
    "box": [
     -89.72929,
@@ -12963,7 +13346,12 @@
     30.430663,
     -89.729188
    ],
+   "checked": "2026-10-29",
    "found": "2026-10-28",
+   "ground": [
+    "federal",
+    "state"
+   ],
    "id": "US-0302+US-4071@area@30.431,-89.729",
    "kind": "area",
    "lines": {
@@ -13093,11 +13481,43 @@
     ]
    },
    "lines_read": "2026-10-29",
+   "list": "Very tight (members only)",
+   "map_dates": {
+    "US-0302": "downloaded 2026-10-29",
+    "US-4071": "downloaded 2026-10-29"
+   },
+   "maps": [
+    [
+     "US-0302",
+     "https://www.fws.gov/refuge/bogue-chitto"
+    ],
+    [
+     "US-4071",
+     "https://www.wlf.louisiana.gov/page/pearl-river"
+    ]
+   ],
+   "mixed_owners": [
+    "FED",
+    "STAT"
+   ],
+   "names": {
+    "US-0302": "Bogue Chitto National Wildlife Refuge",
+    "US-4071": "Pearl River Wildlife Management Area"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go",
+    "restricted access (PAD-US): check the agency rules"
+   ],
+   "ownership": "public land (federal + state)",
    "passes": [
     1,
     1,
-    0
+    1
    ],
+   "pins_inside": {
+    "US-0302": false,
+    "US-4071": true
+   },
    "refs": [
     "US-0302",
     "US-4071"
@@ -13120,7 +13540,7 @@
      30.430753
     ]
    ],
-   "status": "waiting for pass 3",
+   "status": "merged into one row: US-0302+US-4071@area@30.431,-89.714",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 25
   },
@@ -13571,6 +13991,17 @@
    "wide_m": 10
   },
   {
+   "access": null,
+   "access_pin": {
+    "at": [
+     31.44993,
+     -92.335238
+    ],
+    "from": "road",
+    "name": "Clearcreek Rd",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 165
+   },
    "acres": 19.1,
    "box": [
     -92.33532,
@@ -13582,7 +14013,12 @@
     31.424324,
     -92.33116
    ],
+   "checked": "2026-10-29",
    "found": "2026-10-28",
+   "ground": [
+    "Forest Service",
+    "state"
+   ],
    "id": "US-10456+US-4486@area@31.424,-92.335",
    "kind": "area",
    "lines": {
@@ -13644,11 +14080,42 @@
     ]
    },
    "lines_read": "2026-10-29",
+   "list": "Very tight (members only)",
+   "map_dates": {
+    "US-10456": "downloaded 2026-10-29",
+    "US-4486": "downloaded 2026-10-29"
+   },
+   "maps": [
+    [
+     "US-10456",
+     "https://www.wlf.louisiana.gov/page/esler-field"
+    ],
+    [
+     "US-4486",
+     "https://www.fs.usda.gov/kisatchie"
+    ]
+   ],
+   "mixed_owners": [
+    "FED:USFS",
+    "STATE"
+   ],
+   "names": {
+    "US-10456": "Esler Field Wildlife Management Area",
+    "US-4486": "Kisatchie National Forest"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (Forest Service + state)",
    "passes": [
     1,
     1,
-    0
+    1
    ],
+   "pins_inside": {
+    "US-10456": true,
+    "US-4486": true
+   },
    "refs": [
     "US-10456",
     "US-4486"
@@ -13691,8 +14158,9 @@
      31.449918
     ]
    ],
-   "status": "waiting for pass 3",
+   "status": "very tight: could be map error: check both official maps on the ground",
    "tier": "very tight: could be map error: check both official maps on the ground",
+   "water_checked": "2026-10-29",
    "wide_m": 27
   },
   {
@@ -13734,6 +14202,17 @@
    "wide_m": 10
   },
   {
+   "access": null,
+   "access_pin": {
+    "at": [
+     31.036089,
+     -93.235372
+    ],
+    "from": "road",
+    "name": "McManus Rd",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 80
+   },
    "acres": 3.2,
    "box": [
     -93.23539,
@@ -13745,7 +14224,11 @@
     31.036214,
     -93.235235
    ],
+   "checked": "2026-10-29",
    "found": "2026-10-28",
+   "ground": [
+    "Forest Service"
+   ],
    "id": "US-10563+US-4486@area@31.036,-93.235",
    "kind": "area",
    "lines": {
@@ -13797,11 +14280,38 @@
     ]
    },
    "lines_read": "2026-10-29",
+   "list": "Very tight (members only)",
+   "map_dates": {
+    "US-10563": "downloaded 2026-10-29",
+    "US-4486": "downloaded 2026-10-29"
+   },
+   "maps": [
+    [
+     "US-10563",
+     "https://www.wlf.louisiana.gov/page/fort-johnson-vernon"
+    ],
+    [
+     "US-4486",
+     "https://www.fs.usda.gov/kisatchie"
+    ]
+   ],
+   "names": {
+    "US-10563": "Fort Johnson-Vernon Wildlife Management Area",
+    "US-4486": "Kisatchie National Forest"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (Forest Service)",
    "passes": [
     1,
     1,
-    0
+    1
    ],
+   "pins_inside": {
+    "US-10563": true,
+    "US-4486": true
+   },
    "refs": [
     "US-10563",
     "US-4486"
@@ -13824,14 +14334,26 @@
      31.03635
     ]
    ],
-   "status": "waiting for pass 3",
+   "status": "merged into one row: US-10563+US-4486@area@31.043,-93.150",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 35
   },
   {
+   "access": null,
+   "access_pin": {
+    "at": [
+     31.073428,
+     -93.051469
+    ],
+    "from": "road",
+    "name": "Dugout Rd",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
    "acres": 40555.2,
+   "acres_all": 40558.4,
    "box": [
-    -93.2128,
+    -93.23539,
     31.00311,
     -92.8678,
     31.07352
@@ -13840,8 +14362,16 @@
     31.043088,
     -93.150208
    ],
+   "checked": "2026-10-29",
    "found": "2026-10-28",
+   "ground": [
+    "Forest Service"
+   ],
    "id": "US-10563+US-4486@area@31.043,-93.150",
+   "info": {
+    "cut_ac": 0.5,
+    "water_pct": 0
+   },
    "kind": "area",
    "lines": {
     "US-10563": [
@@ -14905,11 +15435,51 @@
       [
        -93.214484,
        31.017946
+      ],
+      [
+       -93.218464,
+       31.018019
+      ],
+      [
+       -93.218475,
+       31.029004
+      ],
+      [
+       -93.218568,
+       31.036297
+      ],
+      [
+       -93.222778,
+       31.036294
+      ],
+      [
+       -93.235406,
+       31.036122
+      ],
+      [
+       -93.23546,
+       31.043453
+      ],
+      [
+       -93.235398,
+       31.058162
+      ],
+      [
+       -93.235643,
+       31.072612
+      ],
+      [
+       -93.235651,
+       31.0945
       ]
      ]
     ],
     "US-4486": [
      [
+      [
+       -93.218201,
+       30.999848
+      ],
       [
        -93.218435,
        31.007091
@@ -15577,6 +16147,40 @@
       [
        -93.184489,
        31.000197
+      ]
+     ],
+     [
+      [
+       -93.235419,
+       31.035087
+      ],
+      [
+       -93.235426,
+       31.036378
+      ],
+      [
+       -93.231285,
+       31.036372
+      ],
+      [
+       -93.231194,
+       31.032606
+      ],
+      [
+       -93.234125,
+       31.032581
+      ],
+      [
+       -93.234117,
+       31.033972
+      ],
+      [
+       -93.235415,
+       31.033437
+      ],
+      [
+       -93.235419,
+       31.035087
       ]
      ],
      [
@@ -15603,6 +16207,10 @@
      ],
      [
       [
+       -93.218201,
+       30.999848
+      ],
+      [
        -93.218435,
        31.007091
       ],
@@ -16269,6 +16877,40 @@
       [
        -93.184489,
        31.000197
+      ]
+     ],
+     [
+      [
+       -93.235419,
+       31.035087
+      ],
+      [
+       -93.235426,
+       31.036378
+      ],
+      [
+       -93.231285,
+       31.036372
+      ],
+      [
+       -93.231194,
+       31.032606
+      ],
+      [
+       -93.234125,
+       31.032581
+      ],
+      [
+       -93.234117,
+       31.033972
+      ],
+      [
+       -93.235415,
+       31.033437
+      ],
+      [
+       -93.235419,
+       31.035087
       ]
      ],
      [
@@ -16296,11 +16938,61 @@
     ]
    },
    "lines_read": "2026-10-29",
+   "map_dates": {
+    "US-10563": "downloaded 2026-10-29",
+    "US-4486": "downloaded 2026-10-29",
+    "USGS water": "USGS NHDPlus HR file 2021-05-17 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "maps": [
+    [
+     "US-10563",
+     "https://www.wlf.louisiana.gov/page/fort-johnson-vernon"
+    ],
+    [
+     "US-4486",
+     "https://www.fs.usda.gov/kisatchie"
+    ]
+   ],
+   "names": {
+    "US-10563": "Fort Johnson-Vernon Wildlife Management Area",
+    "US-4486": "Kisatchie National Forest"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (Forest Service)",
    "passes": [
     1,
     1,
-    0
+    1
    ],
+   "patches": 2,
+   "pins": [
+    {
+     "at": [
+      31.036089,
+      -93.235372
+     ],
+     "from": "road",
+     "name": "McManus Rd",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 80
+    },
+    {
+     "at": [
+      31.073428,
+      -93.051469
+     ],
+     "from": "road",
+     "name": "Dugout Rd",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 0
+    }
+   ],
+   "pins_inside": {
+    "US-10563": true,
+    "US-4486": true
+   },
    "refs": [
     "US-10563",
     "US-4486"
@@ -16663,7 +17355,8 @@
      31.045576
     ]
    ],
-   "status": "waiting for pass 3",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 6585
   },
   {
@@ -16701,6 +17394,23 @@
    "wide_m": 20
   },
   {
+   "access": [
+    32.90156,
+    -91.84339,
+    "Check station (Louisiana Dept. of Wildlife & Fisheries; secondary)",
+    "US-4047",
+    1080
+   ],
+   "access_pin": {
+    "at": [
+     32.905571,
+     -91.832605
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
    "acres": 10.2,
    "box": [
     -91.83855,
@@ -16712,8 +17422,15 @@
     32.905199,
     -91.832668
    ],
+   "checked": "2026-10-29",
    "found": "2026-10-28",
+   "ground": [
+    "state"
+   ],
    "id": "US-2358+US-4047@area@32.905,-91.834",
+   "info": {
+    "water_pct": 6
+   },
    "kind": "area",
    "lines": {
     "US-2358": [
@@ -16938,11 +17655,38 @@
     ]
    },
    "lines_read": "2026-10-29",
+   "map_dates": {
+    "US-2358": "downloaded 2026-10-29",
+    "US-4047": "downloaded 2026-10-29",
+    "USGS water": "USGS NHDPlus HR file 2021-05-17 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "maps": [
+    [
+     "US-2358",
+     "https://www.lastateparks.com/parks-preserves/chemin-a-haut-state-park"
+    ],
+    [
+     "US-4047",
+     "https://www.wlf.louisiana.gov/page/ben-lilly-conservation-area"
+    ]
+   ],
+   "names": {
+    "US-2358": "Chemin-A-Haut State Park",
+    "US-4047": "Ben Lilly Conservation Area"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (state)",
    "passes": [
     1,
     1,
-    0
+    1
    ],
+   "pins_inside": {
+    "US-2358": true,
+    "US-4047": true
+   },
    "refs": [
     "US-2358",
     "US-4047"
@@ -16969,7 +17713,8 @@
      32.905606
     ]
    ],
-   "status": "waiting for pass 3",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 95
   },
   {
@@ -17011,6 +17756,21 @@
    "wide_m": 10
   },
   {
+   "access": [
+    31.480806,
+    -92.19854,
+    "Boat ramp / launch (Louisiana Dept. of Wildlife & Fisheries; secondary)",
+    "US-4065",
+    3810
+   ],
+   "access_pin": {
+    "at": [
+     31.468223,
+     -92.161187
+    ],
+    "from": "none",
+    "note": "no public road, parking or path within about 1.5 km: the pin is the middle of the spot"
+   },
    "acres": 0.4,
    "box": [
     -92.16129,
@@ -17022,7 +17782,11 @@
     31.468223,
     -92.161187
    ],
+   "checked": "2026-10-29",
    "found": "2026-10-28",
+   "ground": [
+    "state"
+   ],
    "id": "US-4056+US-4065@area@31.468,-92.161",
    "kind": "area",
    "lines": {
@@ -17154,11 +17918,39 @@
     ]
    },
    "lines_read": "2026-10-29",
+   "list": "Very tight (members only)",
+   "map_dates": {
+    "US-4056": "downloaded 2026-10-29",
+    "US-4065": "downloaded 2026-10-29"
+   },
+   "maps": [
+    [
+     "US-4056",
+     "https://www.wlf.louisiana.gov/page/dewey-w-wills"
+    ],
+    [
+     "US-4065",
+     "https://www.wlf.louisiana.gov/page/little-river"
+    ]
+   ],
+   "names": {
+    "US-4056": "Dewey Wills Wildlife Management Area",
+    "US-4065": "Little River Wildlife Management Area"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go",
+    "restricted access (PAD-US): check the agency rules"
+   ],
+   "ownership": "public land (state)",
    "passes": [
     1,
     1,
-    0
+    1
    ],
+   "pins_inside": {
+    "US-4056": true,
+    "US-4065": true
+   },
    "refs": [
     "US-4056",
     "US-4065"
@@ -17181,8 +17973,9 @@
      31.468313
     ]
    ],
-   "status": "waiting for pass 3",
+   "status": "very tight: could be map error: check both official maps on the ground",
    "tier": "very tight: could be map error: check both official maps on the ground",
+   "water_checked": "2026-10-29",
    "wide_m": 25
   },
   {

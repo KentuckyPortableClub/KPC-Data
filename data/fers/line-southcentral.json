@@ -10,19 +10,13 @@
   "US-NE"
  ],
  "since": "2026-10-28",
- "date": "2026-10-29 04:13 UTC",
- "verdict": "PART READY FOR CHAT 8",
- "why": [
-  "US-AR: 48 rows still waiting for a pass (out of time: run the worker again)",
-  "US-LA: 12 rows still waiting for a pass (out of time: run the worker again)",
-  "US-OK: 84 rows still waiting for a pass (out of time: run the worker again)",
-  "US-TX: 50 rows still waiting for a pass (out of time: run the worker again)",
-  "US-NE: 11 rows still waiting for a pass (out of time: run the worker again)"
- ],
- "known_answers": "18/18 on 2026-10-28",
+ "date": "2026-10-29 07:18 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
+ "known_answers": "19/19 on 2026-10-29",
  "missing_check": {
-  "FOUND": 44,
-  "DROPPED": 282,
+  "FOUND": 120,
+  "DROPPED": 206,
   "NEVER LOOKED AT": 9112
  },
  "report": {
@@ -37,12 +31,12 @@
    "pairs tested": 157
   },
   "pass3": {
-   "agree with the pass before": 244,
-   "date": "2026-10-28",
-   "pairs tested": 150
+   "agree with the pass before": 170,
+   "date": "2026-10-29",
+   "pairs tested": 75
   },
   "pass5": {
-   "checked": 15,
+   "checked": 78,
    "date": "2026-10-29",
    "pairs tested": 0,
    "still not checked": 0
@@ -58,69 +52,87 @@
  },
  "US-AR": {
   "rows": 146,
-  "live": 2,
-  "waiting": 48,
+  "live": 17,
+  "waiting": 0,
   "unfinished": 0,
   "not_sure": {},
   "dropped": 95,
-  "merged": 1
+  "merged": 34
  },
  "US-LA": {
   "rows": 42,
-  "live": 0,
-  "waiting": 12,
+  "live": 8,
+  "waiting": 0,
   "unfinished": 0,
   "not_sure": {},
   "dropped": 30,
-  "merged": 0
+  "merged": 4
  },
  "US-OK": {
   "rows": 170,
-  "live": 2,
-  "waiting": 84,
+  "live": 41,
+  "waiting": 0,
   "unfinished": 0,
-  "not_sure": {},
-  "dropped": 80,
-  "merged": 4
+  "not_sure": {
+   "no public owner on the ownership map": 3
+  },
+  "dropped": 81,
+  "merged": 45
  },
  "US-TX": {
   "rows": 152,
-  "live": 7,
-  "waiting": 50,
+  "live": 13,
+  "waiting": 0,
   "unfinished": 0,
-  "not_sure": {},
-  "dropped": 63,
-  "merged": 32
+  "not_sure": {
+   "the official outline of Black Gap Wildlife Management Area c": 2,
+   "the official outline of Matagorda Island Wildlife Management": 1,
+   "the official outline of Lower Rio Grande Valley National Wil": 3,
+   "the official outline of J.D. Murphree Wildlife Management Ar": 1,
+   "the official outline of Nannie M. Stringfellow Wildlife Mana": 1,
+   "the official outline of Sam Houston National Forest Wildlife": 1,
+   "the official outline of Caddo Lake Wildlife Management Area": 1,
+   "the official outline of James E. Daughtrey Wildlife Manageme": 1,
+   "the official outline of Sam Houston National Forest could no": 1,
+   "the official outline of Angelina-Neches/Dam B Wildlife Manag": 1,
+   "the outlines overlap, but the Forest Service ownership map": 1,
+   "the official outline of Alazan Bayou Wildlife Management Are": 2,
+   "the official outline of Bannister Wildlife Management Area c": 1,
+   "the official outline of Alabama Creek Wildlife Management Ar": 1,
+   "the official outline of Moore Plantation Wildlife Management": 1,
+   "the official outline of North Toledo Bend Wildlife Managemen": 1
+  },
+  "dropped": 64,
+  "merged": 55
  },
  "US-KS": {
   "rows": 62,
-  "live": 25,
+  "live": 23,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "the ownership map shows more than one owner across the spot": 1,
    "no public owner on the ownership map": 1
   },
-  "dropped": 7,
+  "dropped": 9,
   "merged": 28
  },
  "US-NE": {
   "rows": 51,
-  "live": 10,
-  "waiting": 11,
+  "live": 17,
+  "waiting": 0,
   "unfinished": 0,
   "not_sure": {},
-  "dropped": 6,
-  "merged": 24
+  "dropped": 7,
+  "merged": 27
  },
  "states_ready": [
-  "US-KS"
- ],
- "states_held": [
   "US-AR",
   "US-LA",
-  "US-NE",
   "US-OK",
-  "US-TX"
- ]
+  "US-TX",
+  "US-KS",
+  "US-NE"
+ ],
+ "states_held": []
 }
