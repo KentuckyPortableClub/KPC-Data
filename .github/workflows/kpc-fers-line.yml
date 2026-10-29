@@ -111,6 +111,10 @@ jobs:
         env:
           PAIR_MINUTES: '60'
         run: python3 .github/scripts/kpc_pota_pairs.py || true
+      - name: USGS water from the bulk files BEFORE the line (tiles under last run's rows; Fable Oct 28 10:34 PM)
+        continue-on-error: true
+        timeout-minutes: 120
+        run: STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 .github/scripts/kpc_water_bulk.py || true
       - name: Passes 1 + 2
         continue-on-error: true
         timeout-minutes: 275
@@ -191,6 +195,9 @@ jobs:
           fi
           PASS=3 MINUTES=$(( M * 4 / 5 )) python3 .github/scripts/kpc_fers.py || true
           PASS=5 MINUTES=$(( M / 3 )) python3 .github/scripts/kpc_fers.py || true
+      - name: Water report per state (tiles needed / saved / rows not checked; a 'not checked' row with every tile saved = the store was not read)
+        continue-on-error: true
+        run: REPORT=1 STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 .github/scripts/kpc_water_bulk.py || true
       - name: Bundle up (a lost bundle = a red run)
         if: always()
         run: |
