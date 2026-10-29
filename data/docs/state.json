@@ -96,7 +96,7 @@
    "parks": 348,
    "checked": 348,
    "left": 0,
-   "updated": "2026-10-28"
+   "updated": "2026-10-29"
   },
   "US-MN": {
    "status": "done",
@@ -254,7 +254,6 @@
   }
  },
  "hosts": {
-  "legacy.fws.gov": 1793264444.9435768,
   "parks.ky.gov": 1793267495.7892177,
   "www.tn.gov": 1793267801.512577,
   "wolfememorial.com": 1793268984.2034903,
@@ -281,27 +280,27 @@
  "last": {
   "when": "2026-10-29",
   "areas": [
-   "US-FL",
-   "US-MS",
-   "US-IN",
-   "US-IL",
    "US-MO",
    "US-WI",
    "US-MN",
-   "US-IA"
+   "US-IA",
+   "US-ND",
+   "US-SD",
+   "US-PA",
+   "US-NY"
   ],
   "stat": {
-   "requests": 1367,
-   "parks": 722,
-   "maps_ok": 270,
-   "maps_found": 246,
-   "dates": 35,
-   "rules": 265,
-   "browser": 356,
-   "robots": 14,
+   "requests": 1530,
+   "parks": 498,
+   "maps_ok": 458,
+   "maps_found": 448,
+   "dates": 209,
+   "rules": 25,
+   "browser": 9,
+   "robots": 0,
    "strikes": 0,
    "errors": 0,
-   "skipped_fresh": 413
+   "skipped_fresh": 72
   }
  }
 }
