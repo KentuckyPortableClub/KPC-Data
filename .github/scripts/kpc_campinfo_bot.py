@@ -480,6 +480,7 @@ def ridb(path, q=None):
     u = RIDB + path + ('?' + urllib.parse.urlencode(q) if q else '')
     st, hd, body, final = M.get(u, accept='application/json')
     STAT['ridb_calls'] += 1
+    if st == 'robots': return 'RIDB API refused by its robots.txt (house rule: robots obeyed except ArcGIS REST; a ruling is needed before the RIDB key can be used)', None, u   # chat 11: say WHICH step is missing
     if st not in (200, 206): return status_text(st), None, u
     try: return 'ok', json.loads(body.decode('utf-8', 'replace')), u
     except Exception as e: return 'bad json: ' + str(e)[:40], None, u  # noqa: BLE001
