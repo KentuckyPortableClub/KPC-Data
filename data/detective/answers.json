@@ -1,6 +1,248 @@
 {
  "about": "PARK DETECTIVE answers (review only, never a key): per question id the answer (fact, quoted line, url, date read, source step) or not found + what was tried. Unanswered -> chats 8 / 11 -> Brandon.",
  "answers": {
+  "q-green-river-sna-own-page": {
+   "answer": {
+    "acres": 440.0,
+    "date": "2026-10-29",
+    "fact": "agency page size: 440 acres (labelled size row)",
+    "line": "e hiking trails as well and canoe access. Access Type: Open to Public County: Hart Region: Green River Region Size: 440 Owner: ​Office of Kentucky Nature Preserves Manager: Nature Preseve Manager ​Office of Kentucky Nature Preserv",
+    "role": "answer",
+    "step": "2 agency page",
+    "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Rush-Island-Bottoms.aspx"
+   },
+   "area": "US-KY",
+   "by": "chat 10 (Fable item 2)",
+   "finds": [
+    {
+     "acres": 139,
+     "date": "2026-10-29",
+     "fact": "polygon under or near the pin in a layer we read: \"Green River State Natural Area (Rush Island Bottoms)\", 139 ac",
+     "kind": "attributes",
+     "line": "MA_ID=768.0; MANAME=Green River State Natural Area (Rush Island Bottoms); UNIT_TYPE=State Natural Area; MA_OWNER=Office of Kentucky Nature Preserves; MNG_INST=Office of Kentucky Nature Preserves; ACRES=139.25; PUB_ACCESS=Open; Webpage=https",
+     "note": "",
+     "poly": "Green River State Natural Area (Rush Island Bottoms)",
+     "role": "context",
+     "step": "1 our layers",
+     "url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Natural_Areas_WGS84WM/MapServer/0"
+    },
+    {
+     "date": "2026-10-29",
+     "fact": "PAD-US record under the pin: \"Green River State Natural Area (Rush Island Bottoms)\" managed by SDC, owner SDC, 139 acres",
+     "kind": "attributes",
+     "line": "Unit_Nm=Green River State Natural Area (Rush Island Bottoms); Mang_Name=SDC; Own_Name=SDC; Own_Type=STAT; Des_Tp=SCA; GIS_Acres=139; Category=Fee",
+     "role": "context",
+     "step": "4 PAD-US",
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+    },
+    {
+     "acres": 440.0,
+     "date": "2026-10-29",
+     "fact": "agency page size: 440 acres (labelled size row)",
+     "line": "e hiking trails as well and canoe access. Access Type: Open to Public County: Hart Region: Green River Region Size: 440 Owner: ​Office of Kentucky Nature Preserves Manager: Nature Preseve Manager ​Office of Kentucky Nature Preserv",
+     "role": "answer",
+     "step": "2 agency page",
+     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Rush-Island-Bottoms.aspx"
+    },
+    {
+     "acres": 200.0,
+     "date": "2026-10-29",
+     "fact": "agency page size: 200 acres (total-looking)",
+     "line": "Washington, DC, based nonprofit, has worked with the Hart County Historical Society to protect an additional 200 acres in the area. Access: Due to limited access the site is not currently open to the public except by boat. Paddl",
+     "role": "answer",
+     "step": "2 agency page",
+     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Rush-Island-Bottoms.aspx"
+    }
+   ],
+   "id": "q-green-river-sna-own-page",
+   "note": "the park's OWN Office of Kentucky Nature Preserves page and its total acreage over all three units (Davis Bend, Rush Island Bottoms, Boiling Springs); the site links Rush Island Bottoms' page only",
+   "park": "Green River State Natural Area",
+   "read": "2026-10-29",
+   "ref": "US-12752",
+   "result": "ANSWERED",
+   "tried": [
+    {
+     "result": "nothing matched",
+     "step": 1,
+     "url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8",
+     "what": "point query at the pin + within 2000 m"
+    },
+    {
+     "result": "nothing matched",
+     "step": 1,
+     "url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_Public_Hunting_Areas_WGS84WM/MapServer/1",
+     "what": "point query at the pin + within 2000 m"
+    },
+    {
+     "result": "nothing matched",
+     "step": 1,
+     "url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0",
+     "what": "point query at the pin + within 2000 m"
+    },
+    {
+     "result": "1 named polygon(s) of 1",
+     "step": 1,
+     "url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Natural_Areas_WGS84WM/MapServer/0",
+     "what": "point query at the pin + within 2000 m"
+    },
+    {
+     "result": "did not open (400); second try opened",
+     "step": 3,
+     "url": "https://hub.arcgis.com/api/v3/datasets?q=green%20river%20Kentucky",
+     "what": "open-data search"
+    },
+    {
+     "result": "6 dataset(s), none official",
+     "step": 3,
+     "url": "https://www.arcgis.com/sharing/rest/search?q=green%20river%20Kentucky",
+     "what": "open-data search (second try, ArcGIS Online)"
+    },
+    {
+     "result": "1 record(s)",
+     "step": 4,
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "what": "PAD-US point query"
+    },
+    {
+     "result": "opened, nothing matched",
+     "step": 2,
+     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Rush-Island-Bottoms.aspx",
+     "what": "agency park page"
+    },
+    {
+     "result": "skipped: not about parks",
+     "step": 2,
+     "url": "",
+     "what": "13 document link(s) not followed"
+    }
+   ],
+   "units": {
+    "agency_line": "e hiking trails as well and canoe access. Access Type: Open to Public County: Hart Region: Green River Region Size: 440 Owner: ​Office of Kentucky Nature Preserves Manager: Nature Preseve Manager ​Office of Kentucky Nature Preserv",
+    "agency_url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Rush-Island-Bottoms.aspx",
+    "our_acres": 139,
+    "pieces": [
+     [
+      "Green River State Natural Area (Rush Island Bottoms)",
+      139
+     ]
+    ],
+    "summary": "our outline holds 139 ac in 1 piece(s) vs the agency's \"e hiking trails as well and canoe access. Access Type: Open to Public County: Hart Region: Green River Region Size: 440 \" (https://eec.ky.gov/Nature-Preserves/Locations/Pages/Rush-Island-Bottoms.aspx)"
+   },
+   "ver": 5,
+   "what": "acreage"
+  },
+  "q-little-south-fork-sna-own-page": {
+   "answer": {
+    "acres": 3145.4,
+    "date": "2026-10-29",
+    "fact": "agency page size: 3145.42 acres (labelled size row)",
+    "line": "restoration and access issues are completed. Access Type: Open to Public County: Wayne Region: Eastern Region Size: 3145.42 Owner: Office of Kentucky Nature Preserves Manager: Nature Preseve Manager ​Office of Kentucky Nature Preserve",
+    "role": "answer",
+    "step": "2 agency page",
+    "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Burnett-WWCA.aspx"
+   },
+   "area": "US-KY",
+   "by": "chat 10 (Fable item 2)",
+   "finds": [
+    {
+     "acres": 2231,
+     "date": "2026-10-29",
+     "fact": "polygon under or near the pin in a layer we read: \"Little South Fork State Natural Area (Steele Hollow SNA)\", 2231 ac",
+     "kind": "attributes",
+     "line": "MA_ID=654.0; MANAME=Little South Fork State Natural Area (Steele Hollow SNA); UNIT_TYPE=State Natural Area; MA_OWNER=Office of Kentucky Nature Preserves; MNG_INST=Office of Kentucky Nature Preserves; ACRES=2231.36; PUB_ACCESS=Open; Webpage=",
+     "note": "",
+     "poly": "Little South Fork State Natural Area (Steele Hollow SNA)",
+     "role": "context",
+     "step": "1 our layers",
+     "url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Natural_Areas_WGS84WM/MapServer/0"
+    },
+    {
+     "acres": 3145.4,
+     "date": "2026-10-29",
+     "fact": "agency page size: 3145.42 acres (labelled size row)",
+     "line": "restoration and access issues are completed. Access Type: Open to Public County: Wayne Region: Eastern Region Size: 3145.42 Owner: Office of Kentucky Nature Preserves Manager: Nature Preseve Manager ​Office of Kentucky Nature Preserve",
+     "role": "answer",
+     "step": "2 agency page",
+     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Burnett-WWCA.aspx"
+    }
+   ],
+   "id": "q-little-south-fork-sna-own-page",
+   "note": "the park's OWN Office of Kentucky Nature Preserves page and its acreage; the site links the Burnett WWCA page, a different area",
+   "park": "Little South Fork State Natural Area",
+   "read": "2026-10-29",
+   "ref": "US-7962",
+   "result": "ANSWERED",
+   "tried": [
+    {
+     "result": "nothing matched",
+     "step": 1,
+     "url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8",
+     "what": "point query at the pin + within 2000 m"
+    },
+    {
+     "result": "opened, nothing matched the name",
+     "step": 1,
+     "url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_Public_Hunting_Areas_WGS84WM/MapServer/1",
+     "what": "point query at the pin + within 2000 m"
+    },
+    {
+     "result": "nothing matched",
+     "step": 1,
+     "url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0",
+     "what": "point query at the pin + within 2000 m"
+    },
+    {
+     "result": "1 named polygon(s) of 1",
+     "step": 1,
+     "url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Natural_Areas_WGS84WM/MapServer/0",
+     "what": "point query at the pin + within 2000 m"
+    },
+    {
+     "result": "did not open (400); second try opened",
+     "step": 3,
+     "url": "https://hub.arcgis.com/api/v3/datasets?q=fork%20little%20south%20Kentucky",
+     "what": "open-data search"
+    },
+    {
+     "result": "4 dataset(s), none official",
+     "step": 3,
+     "url": "https://www.arcgis.com/sharing/rest/search?q=fork%20little%20south%20Kentucky",
+     "what": "open-data search (second try, ArcGIS Online)"
+    },
+    {
+     "result": "nothing under the pin",
+     "step": 4,
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "what": "PAD-US point query"
+    },
+    {
+     "result": "opened, nothing matched",
+     "step": 2,
+     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Burnett-WWCA.aspx",
+     "what": "agency park page"
+    },
+    {
+     "result": "skipped: not about parks",
+     "step": 2,
+     "url": "",
+     "what": "13 document link(s) not followed"
+    }
+   ],
+   "units": {
+    "agency_line": "restoration and access issues are completed. Access Type: Open to Public County: Wayne Region: Eastern Region Size: 3145.42 Owner: Office of Kentucky Nature Preserves Manager: Nature Preseve Manager ​Office of Kentucky Nature Preserve",
+    "agency_url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Burnett-WWCA.aspx",
+    "our_acres": 2231,
+    "pieces": [
+     [
+      "Little South Fork State Natural Area (Steele Hollow SNA)",
+      2231
+     ]
+    ],
+    "summary": "our outline holds 2231 ac in 1 piece(s) vs the agency's \"restoration and access issues are completed. Access Type: Open to Public County: Wayne Region: Eastern Region Size: 3145\" (https://eec.ky.gov/Nature-Preserves/Locations/Pages/Burnett-WWCA.aspx)"
+   },
+   "ver": 5,
+   "what": "acreage"
+  },
   "q1-boiling-springs-tract": {
    "answer": null,
    "area": "US-KY",
@@ -20,7 +262,16 @@
     },
     {
      "date": "2026-10-29",
-     "fact": "tract: Davis Bend is one of several sites the KHLCF protects along the Green River in Hart, Green, and Taylor Counties.",
+     "fact": "PAD-US record under the pin: \"Green River State Natural Area (Rush Island Bottoms)\" managed by SDC, owner SDC, 139 acres",
+     "kind": "attributes",
+     "line": "Unit_Nm=Green River State Natural Area (Rush Island Bottoms); Mang_Name=SDC; Own_Name=SDC; Own_Type=STAT; Des_Tp=SCA; GIS_Acres=139; Category=Fee",
+     "role": "context",
+     "step": "4 PAD-US",
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+    },
+    {
+     "date": "2026-10-29",
+     "fact": "other site (context, not this tract): Davis Bend is one of several sites the KHLCF protects along the Green River in Hart, Green, and Taylor Counties.",
      "line": "Davis Bend is one of several sites the KHLCF protects along the Green River in Hart, Green, and Taylor Counties.",
      "role": "context",
      "step": "2 agency page",
@@ -28,7 +279,7 @@
     }
    ],
    "id": "q1-boiling-springs-tract",
-   "not found": "context only: tried steps 1, 2, 3, 6",
+   "not found": "context only: tried steps 1, 2, 3, 4, 6",
    "note": "the KHLCF Timber Lane 115.75-acre tract: is it part of the preserve?",
    "park": "Green River State Natural Area (Boiling Springs unit)",
    "read": "2026-10-29",
@@ -58,6 +309,23 @@
      "step": 1,
      "url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Natural_Areas_WGS84WM/MapServer/0",
      "what": "point query at the pin"
+    },
+    {
+     "result": "did not open (400); second try opened",
+     "step": 3,
+     "url": "https://hub.arcgis.com/api/v3/datasets?q=boiling%20green%20river%20springs%20Kentucky",
+     "what": "open-data search"
+    },
+    {
+     "step": 3,
+     "url": "https://www.arcgis.com/sharing/rest/search?q=boiling%20green%20river%20springs%20Kentucky",
+     "what": "open-data search (second try, ArcGIS Online)"
+    },
+    {
+     "result": "1 record(s)",
+     "step": 4,
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "what": "PAD-US point query"
     },
     {
      "result": "opened, 1 matching line(s)",
@@ -97,23 +365,6 @@
     },
     {
      "result": "opened, nothing matched",
-     "step": 2,
-     "url": "https://eec.ky.gov/Nature-Preserves/Pages/archive.aspx",
-     "what": "document: Archived Reports and Publications"
-    },
-    {
-     "result": "did not open (400); second try opened",
-     "step": 3,
-     "url": "https://hub.arcgis.com/api/v3/datasets?q=boiling%20green%20river%20springs%20Kentucky",
-     "what": "open-data search"
-    },
-    {
-     "step": 3,
-     "url": "https://www.arcgis.com/sharing/rest/search?q=boiling%20green%20river%20springs%20Kentucky",
-     "what": "open-data search (second try, ArcGIS Online)"
-    },
-    {
-     "result": "opened, nothing matched",
      "step": 6,
      "url": "https://fw.ky.gov/News/Pages/default.aspx",
      "what": "news releases"
@@ -125,7 +376,7 @@
      "what": "39 document link(s) not followed"
     }
    ],
-   "ver": 4,
+   "ver": 5,
    "what": "tract"
   },
   "q2-boiling-springs-acreage": {
@@ -152,6 +403,15 @@
      "role": "context",
      "step": "1 our layers",
      "url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Natural_Areas_WGS84WM/MapServer/0"
+    },
+    {
+     "date": "2026-10-29",
+     "fact": "PAD-US record under the pin: \"Green River State Natural Area (Rush Island Bottoms)\" managed by SDC, owner SDC, 139 acres",
+     "kind": "attributes",
+     "line": "Unit_Nm=Green River State Natural Area (Rush Island Bottoms); Mang_Name=SDC; Own_Name=SDC; Own_Type=STAT; Des_Tp=SCA; GIS_Acres=139; Category=Fee",
+     "role": "context",
+     "step": "4 PAD-US",
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
     },
     {
      "acres": 440.0,
@@ -204,6 +464,23 @@
      "what": "point query at the pin + within 2000 m"
     },
     {
+     "result": "did not open (400); second try opened",
+     "step": 3,
+     "url": "https://hub.arcgis.com/api/v3/datasets?q=boiling%20green%20river%20springs%20Kentucky",
+     "what": "open-data search"
+    },
+    {
+     "step": 3,
+     "url": "https://www.arcgis.com/sharing/rest/search?q=boiling%20green%20river%20springs%20Kentucky",
+     "what": "open-data search (second try, ArcGIS Online)"
+    },
+    {
+     "result": "1 record(s)",
+     "step": 4,
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "what": "PAD-US point query"
+    },
+    {
      "result": "opened, nothing matched",
      "step": 2,
      "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Rush-Island-Bottoms.aspx",
@@ -228,7 +505,7 @@
     ],
     "summary": "our outline holds 139 ac in 1 piece(s) vs the agency's \"e hiking trails as well and canoe access. Access Type: Open to Public County: Hart Region: Green River Region Size: 440 \" (https://eec.ky.gov/Nature-Preserves/Locations/Pages/Rush-Island-Bottoms.aspx)"
    },
-   "ver": 4,
+   "ver": 5,
    "what": "acreage"
   }
  }
