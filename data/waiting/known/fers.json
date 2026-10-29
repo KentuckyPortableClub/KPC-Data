@@ -1,5 +1,5 @@
 {
- "about": "Known 2-fers that must stay LIVE, per area, keyed by the PAIR of park numbers (stable when an outline changes). from_trail_file = the hand-checked river / trail pairs in KPC-Links ky-trail-parks.json.",
+ "about": "Known 2-fers that must stay LIVE, per area, keyed by the PAIR of park numbers (stable when an outline changes). from_trail_file = the hand-checked river / trail pairs in KPC-Links ky-trail-parks.json. G2 (Brandon Oct 29 6:50 AM): 'keys' = park numbers + kind + location rounded to 0.01 degree; the old spot id is kept as an alias.",
  "US-KY": {
   "pairs": [
    [
@@ -10,6 +10,148 @@
   "pairs_why": [
    "Mammoth Cave x Green River Wild River: Brandon activates it in person (Oct 28 8:35 PM)"
   ],
-  "from_trail_file": true
+  "from_trail_file": true,
+  "keys": [
+   {
+    "key": "US-0050+US-10105@area@37.17,-86.15",
+    "alias_ids": [
+     "US-0050+US-10105@area@37.171,-86.155"
+    ],
+    "why": "hand-checked pair (ky-trail-parks.json / Brandon activates it)"
+   },
+   {
+    "key": "US-3791+US-3793+US-4572@river@37.14,-89.09",
+    "alias_ids": [
+     "US-3791+US-3793+US-4572@river@37.145,-89.081"
+    ],
+    "why": "hand-checked pair (ky-trail-parks.json / Brandon activates it)"
+   },
+   {
+    "key": "US-3796+US-4572@river@37.49,-88.06",
+    "alias_ids": [
+     "US-3796+US-4572@river@37.486,-88.061"
+    ],
+    "why": "hand-checked pair (ky-trail-parks.json / Brandon activates it)"
+   },
+   {
+    "key": "US-3791+US-3837+US-4572@river@37.18,-88.81",
+    "alias_ids": [
+     "US-3791+US-3837+US-4572@river@37.176,-88.808"
+    ],
+    "why": "hand-checked pair (ky-trail-parks.json / Brandon activates it)"
+   },
+   {
+    "key": "US-3791+US-3797+US-4572@river@37.01,-89.14",
+    "alias_ids": [
+     "US-3791+US-3797+US-4572@river@37.013,-89.145"
+    ],
+    "why": "hand-checked pair (ky-trail-parks.json / Brandon activates it)"
+   },
+   {
+    "key": "US-4572+US-8144@river@37.96,-86.03",
+    "alias_ids": [
+     "US-4572+US-8144@river@37.958,-86.029"
+    ],
+    "why": "hand-checked pair (ky-trail-parks.json / Brandon activates it)"
+   },
+   {
+    "key": "US-3830+US-4572@river@37.78,-87.90",
+    "alias_ids": [
+     "US-3830+US-4572@river@37.782,-87.903"
+    ],
+    "why": "hand-checked pair (ky-trail-parks.json / Brandon activates it)"
+   },
+   {
+    "key": "US-3840+US-4572@river@37.88,-86.58",
+    "alias_ids": [
+     "US-3840+US-4572@river@37.884,-86.582"
+    ],
+    "why": "hand-checked pair (ky-trail-parks.json / Brandon activates it)"
+   },
+   {
+    "key": "US-4572+US-7955@river@38.31,-85.67",
+    "alias_ids": [
+     "US-4572+US-7955@river@38.310,-85.665"
+    ],
+    "why": "hand-checked pair (ky-trail-parks.json / Brandon activates it)"
+   },
+   {
+    "key": "US-4572+US-7951@river@37.90,-87.47",
+    "alias_ids": [
+     "US-4572+US-7951@river@37.900,-87.466"
+    ],
+    "why": "hand-checked pair (ky-trail-parks.json / Brandon activates it)"
+   },
+   {
+    "key": "US-1260+US-4572@river@37.90,-87.55",
+    "alias_ids": [
+     "US-1260+US-4572@river@37.898,-87.553"
+    ],
+    "why": "hand-checked pair (ky-trail-parks.json / Brandon activates it)"
+   },
+   {
+    "key": "US-0608+US-4572@trail@38.68,-83.58",
+    "alias_ids": [
+     "US-0608+US-4572@trail@38.684,-83.577"
+    ],
+    "why": "hand-checked pair (ky-trail-parks.json / Brandon activates it)"
+   },
+   {
+    "key": "US-3791+US-3793+US-4572@river@37.17,-89.07",
+    "alias_ids": [
+     "US-3791+US-3793+US-4572@river@37.167,-89.073"
+    ],
+    "why": "hand-checked pair (ky-trail-parks.json / Brandon activates it)"
+   },
+   {
+    "key": "US-3791+US-3797+US-4572@river@37.07,-89.15",
+    "alias_ids": [
+     "US-3791+US-3797+US-4572@river@37.075,-89.151"
+    ],
+    "why": "hand-checked pair (ky-trail-parks.json / Brandon activates it)"
+   },
+   {
+    "key": "US-3791+US-3792@river@36.97,-88.21",
+    "alias_ids": [
+     "US-3791+US-3792@river@36.982,-88.199"
+    ],
+    "why": "hand-checked pair (ky-trail-parks.json / Brandon activates it)"
+   },
+   {
+    "key": "US-3791+US-3808@river@36.80,-89.11",
+    "alias_ids": [
+     "US-3791+US-3808@river@36.797,-89.113"
+    ],
+    "why": "hand-checked pair (ky-trail-parks.json / Brandon activates it)"
+   },
+   {
+    "key": "US-1282+US-3791@river@36.79,-88.15",
+    "alias_ids": [
+     "US-1282+US-3791@river@36.779,-88.139"
+    ],
+    "why": "hand-checked pair (ky-trail-parks.json / Brandon activates it)"
+   },
+   {
+    "key": "US-10140+US-3791@river@36.53,-88.05",
+    "alias_ids": [
+     "US-10140+US-3791@river@36.548,-88.062"
+    ],
+    "why": "hand-checked pair (ky-trail-parks.json / Brandon activates it)"
+   },
+   {
+    "key": "US-1283+US-3791@river@37.00,-88.28",
+    "alias_ids": [
+     "US-1283+US-3791@river@37.000,-88.282"
+    ],
+    "why": "hand-checked pair (ky-trail-parks.json / Brandon activates it)"
+   },
+   {
+    "key": "US-3791+US-3823@river@37.37,-88.44",
+    "alias_ids": [
+     "US-3791+US-3823@river@37.368,-88.444"
+    ],
+    "why": "hand-checked pair (ky-trail-parks.json / Brandon activates it)"
+   }
+  ]
  }
 }

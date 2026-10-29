@@ -408,12 +408,24 @@ def c_fers(path, new, live, ctx):
     # F-K by a STABLE key (Fable note c): the PAIR of park numbers (never the spot id, which changes when an outline changes). Live =
     # candidate / very tight / water only / merged into another row. Pairs come from the hand files, never from the 2-fer bot's own gate.
     live_rows = [set(s.get('refs') or []) for s in S if str(s.get('status', '')).startswith(('candidate', 'very tight', 'water only', 'merged into'))]
+    keys_live = {spot_key(s) for s in S if str(s.get('status', '')).startswith(('candidate', 'very tight', 'water only', 'merged into'))}
+    ids_live = {s.get('id') for s in S if str(s.get('status', '')).startswith(('candidate', 'very tight', 'water only', 'merged into'))}
+    for k in (known('fers').get(f'US-{st_of(path)}') or {}).get('keys') or []:   # G2 (Brandon Oct 29 6:50 AM)
+        if k.get('key') not in keys_live and not (set(k.get('alias_ids') or []) & ids_live): holds.append(f"F-K known 2-fer missing: {k.get('key')}")
     for pair, line in known_pairs(st_of(path)):
         ok = any(set(pair) <= rs for rs in live_rows)
         if not ok and line and len(pair) > 2:   # a 3-park entry also passes when each trail x park pair is live (Fort Donelson + Fort Heiman = one shore)
             ok = all(any({line, o} <= rs for rs in live_rows) for o in pair if o != line)
         if not ok: holds.append(f"F-K known 2-fer missing: {' + '.join(pair)}")
     return holds, notes
+
+
+def spot_key(s):
+    """G2 (Brandon Oct 29 6:50 AM): a 2-fer's STABLE key = its park numbers (sorted) + kind + center rounded to 0.01 degree (~1 km);
+    the bot's spot id changes when an outline changes, so the old id is kept only as an alias."""
+    c = s.get('center') or [None, None]
+    loc = f'{round(c[0], 2):.2f},{round(c[1], 2):.2f}' if c[0] is not None else '?'
+    return '+'.join(sorted(s.get('refs') or [])) + '@' + str(s.get('kind') or '') + '@' + loc
 
 
 def known_pairs(st):
@@ -467,6 +479,8 @@ def closures_filter(path, new, live):
         if not why and k in seen: why = 'a duplicate'
         if why: gone.append(f'{it.get("ref")}: {why}: {d[:60]}'); continue
         seen.add(k); keep.append(it)
+    if items and len(gone) > len(items) / 3:   # G4 (Brandon Oct 29 6:50 AM): many bad rows = something is wrong with the read: hold the whole file
+        return None, [f'F-3 {len(gone)} of {len(items)} closure rows break a reject rule (over a third): the whole file is held, the old one stays, stamped "as of"'] + gone[:5]
     out = dict(new); out['items'] = keep
     return out, gone
 
