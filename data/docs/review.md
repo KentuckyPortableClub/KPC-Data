@@ -19,7 +19,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-IL | 219 | 99 | 93 | 30 | 5 | 80 | 14 | 120 | 166 | 0 | 0 |
 | US-MO | 561 | 513 | 499 | 498 | 241 | 199 | 73 | 48 | 27 | 2 | 0 |
 | US-WI | 348 | 294 | 287 | 113 | 0 | 4 | 290 | 53 | 43 | 0 | 0 |
-| US-MN | 298 | 29 | 21 | 26 | 1 | 10 | 18 | 269 | 33 | 0 | 0 |
+| US-MN | 298 | 42 | 33 | 39 | 1 | 24 | 17 | 256 | 29 | 0 | 0 |
 | US-IA | 181 | 82 | 77 | 12 | 6 | 50 | 26 | 99 | 124 | 0 | 0 |
 | US-ND | 155 | 33 | 28 | 29 | 1 | 8 | 24 | 122 | 32 | 0 | 0 |
 | US-SD | 120 | 31 | 25 | 25 | 10 | 14 | 7 | 89 | 21 | 0 | 0 |
@@ -1327,30 +1327,41 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 ## US-MN sample (random 12 per agency group, seed 28)
 | ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
 |---|---|---|---|---|---|---|
-| US-0357 | Crane Meadows National Wildlife Refuge | https://www.fws.gov/refuge/crane-meadows/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/crane-meadows/visit-us/rules-policies ✓ |  |
-| US-0358 | Detroit Lakes Wetland Management Distric | https://www.fws.gov/refuge/detroit-lakes-wetland-management-district/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/detroit-lakes-wetland-management-district/v ✓ |  |
-| US-0359 | Fergus Falls Wetland Management District | https://www.fws.gov/refuge/fergus-falls-wetland-management-district/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/fergus-falls-wetland-management-district/vi ✓ |  |
-| US-0361 | Hamden Slough National Wildlife Refuge | https://www.fws.gov/refuge/hamden-slough/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/hamden-slough/visit-us/rules-policies ✓ |  |
-| US-0356 | Big Stone Wetland Management District | https://www.fws.gov/refuge/big-stone-wetland-management-district/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/big-stone-wetland-management-district/visit ✓ |  |
-| US-0365 | Minnesota Valley Wetland Management Dist | https://www.fws.gov/refuge/minnesota-valley-wetland-management-district/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/minnesota-valley-wetland-management-distric ✓ |  |
-| US-0370 | Sherburne National Wildlife Refuge | https://www.fws.gov/refuge/sherburne/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/sherburne/visit-us/rules-policies ✓ | managed by the U.S. Fish and Wildlife Service |
-| US-0360 | Glacial Ridge National Wildlife Refuge | https://www.fws.gov/refuge/glacial-ridge/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/glacial-ridge/visit-us/rules-policies ✓ |  |
-| US-4236 | Upper Mississippi River National Wildlif | https://www.fws.gov/refuge/upper-mississippi-river/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/upper-mississippi-river/visit-us/rules-poli ✓ |  |
-| US-0368 | Rice Lake National Wildlife Refuge | https://www.fws.gov/refuge/rice-lake/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/rice-lake/visit-us/rules-policies ✓ |  |
-| US-0369 | Rydell National Wildlife Refuge | https://www.fws.gov/refuge/rydell/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/rydell/visit-us/rules-policies ✓ |  |
-| US-0366 | Morris Wetland Management District | https://www.fws.gov/refuge/morris-wetland-management-district/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted — | https://www.fws.gov/refuge/morris-wetland-management-district/visit-us ✓ |  |
+| US-0357 | Crane Meadows National Wildlife Refuge | https://www.fws.gov/sites/default/files/documents/crane-meadows-nwr-public-use-brochure_on | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Mar 08, 2023 | https://www.fws.gov/refuge/crane-meadows/visit-us/rules-policies ✓ |  |
+| US-0358 | Detroit Lakes Wetland Management Distric | https://www.fws.gov/refuge/detroit-lakes-wetland-management-district/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/detroit-lakes-wetland-management-district/v ✓ |  |
+| US-0359 | Fergus Falls Wetland Management District | https://www.fws.gov/refuge/fergus-falls-wetland-management-district/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/fergus-falls-wetland-management-district/vi ✓ |  |
+| US-0361 | Hamden Slough National Wildlife Refuge | https://www.fws.gov/refuge/hamden-slough/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/hamden-slough/visit-us/rules-policies ✓ |  |
+| US-0356 | Big Stone Wetland Management District | https://www.fws.gov/refuge/big-stone-wetland-management-district/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/big-stone-wetland-management-district/visit ✓ |  |
+| US-0365 | Minnesota Valley Wetland Management Dist | https://www.fws.gov/refuge/minnesota-valley-wetland-management-district/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/minnesota-valley-wetland-management-distric ✓ |  |
+| US-0370 | Sherburne National Wildlife Refuge | https://www.fws.gov/refuge/sherburne/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/sherburne/visit-us/rules-policies ✓ | managed by the U.S. Fish and Wildlife Service |
+| US-0360 | Glacial Ridge National Wildlife Refuge | https://www.fws.gov/refuge/glacial-ridge/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/glacial-ridge/visit-us/rules-policies ✓ |  |
+| US-4236 | Upper Mississippi River National Wildlif | https://www.fws.gov/refuge/upper-mississippi-river/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/upper-mississippi-river/visit-us/rules-poli ✓ |  |
+| US-0368 | Rice Lake National Wildlife Refuge | https://www.fws.gov/refuge/rice-lake/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/rice-lake/visit-us/rules-policies ✓ |  |
+| US-0369 | Rydell National Wildlife Refuge | https://www.fws.gov/refuge/rydell/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/rydell/visit-us/rules-policies ✓ |  |
+| US-0366 | Morris Wetland Management District | https://www.fws.gov/refuge/morris-wetland-management-district/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/morris-wetland-management-district/visit-us ✓ |  |
+| US-8095 | Gitchi Gami State Trail | https://files.dnr.state.mn.us/maps/state_trails/gitchi_gami.pdf | pdf ✓name · linked from the agency page (files.dnr.s | date unknown (date unknown, checked 2026-10-29) · posted Jun 16, 2026 |  ✗ |  |
+| US-9389 | Central Lakes State Trail | https://files.dnr.state.mn.us/maps/state_trails/central_lakes.pdf | pdf ✓name · linked from the agency page (files.dnr.s | date unknown (date unknown, checked 2026-10-29) · posted May 11, 2026 |  ✗ |  |
+| US-9383 | Goodhue-Pioneer State Trail | https://files.dnr.state.mn.us/maps/state_trails/goodhue_pioneer.pdf | pdf ✓name · linked from the agency page (files.dnr.s | date unknown (date unknown, checked 2026-10-29) · posted May 12, 2026 |  ✗ |  |
+| US-9373 | Paul Bunyan State Trail | https://files.dnr.state.mn.us/maps/state_trails/paul_bunyan_n_heartland.pdf | pdf ✓name · linked from the agency page (files.dnr.s | date unknown (date unknown, checked 2026-10-29) · posted Jul 09, 2026 |  ✗ |  |
+| US-9386 | Browns Creek State Trail | https://files.dnr.state.mn.us/maps/state_trails/browns_creek.pdf | pdf ✓name · linked from the agency page (files.dnr.s | date unknown (date unknown, checked 2026-10-29) · posted May 12, 2026 |  ✗ |  |
+| US-11152 | Heartland State Trail | https://files.dnr.state.mn.us/maps/state_trails/paul_bunyan_n_heartland.pdf | pdf ✓name · linked from the agency page (files.dnr.s | date unknown (date unknown, checked 2026-10-29) · posted Jul 09, 2026 |  ✗ |  |
+| US-9378 | Casey Jones State Trail | https://files.dnr.state.mn.us/maps/state_trails/casey_jones.pdf | pdf ✓name · linked from the agency page (files.dnr.s | date unknown (date unknown, checked 2026-10-29) · posted May 11, 2026 |  ✗ |  |
 | US-6465 | Greenleaf State Recreation Area | https://files.dnr.state.mn.us/maps/state_parks/sra00310.pdf | pdf ✓name · linked from the agency page (files.dnr.s | 2024 (the PDF file's own stamp (may be the print da) · posted Aug 28, 2024 |  ✗ |  |
-| US-0939 | Grand Portage National Monument | https://www.nps.gov/grpo/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted July 22, 2025 | https://www.nps.gov/grpo/learn/management/lawsandpolicies.htm ✓ |  |
-| US-4239 | North Country Trail National Scenic Trai | https://www.nps.gov/noco/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted September 23, 2025 | https://www.nps.gov/noco/learn/management/lawsandpolicies.htm ✓ |  |
-| US-4801 | Grand Portage State Forest | https://www.nps.gov/grpo/planyourvisit/maps.htm | page ✓name · linked from the agency page (nps.gov) | date unknown (date unknown, checked 2026-10-28) · posted July 22, 2025 |  ✗ |  |
-| US-0067 | Voyageurs National Park | https://www.nps.gov/voya/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted August 24, 2026 | https://www.nps.gov/voya/learn/management/lawsandpolicies.htm ✓ |  |
-| US-0957 | Pipestone National Monument | https://www.nps.gov/pipe/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-28) · posted July 12, 2021 | https://www.nps.gov/pipe/learn/management/lawsandpolicies.htm ✓ |  |
-| US-2489 | Grand Portage State Park | https://www.nps.gov/grpo/planyourvisit/maps.htm | page ✓name · linked from the agency page (nps.gov) | date unknown (date unknown, checked 2026-10-28) · posted July 22, 2025 |  ✗ |  |
-| US-11904 | Migizi National Recreation Trail | https://www.fs.usda.gov/r09/chippewa/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-28) · posted March 19, 2026 | https://www.fs.usda.gov/r09/chippewa ✓ |  |
-| US-4491 | Superior National Forest | https://www.fs.usda.gov/r09/superior/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-28) · posted May 20, 2026 | https://www.fs.usda.gov/r09/superior ✓ |  |
-| US-4490 | Chippewa National Forest | https://www.fs.usda.gov/r09/chippewa/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-28) · posted March 19, 2026 | https://www.fs.usda.gov/r09/chippewa ✓ |  |
+| US-9382 | Great River Ridge State Trail | https://files.dnr.state.mn.us/maps/state_trails/great_river_ridge.pdf | pdf ✓name · linked from the agency page (files.dnr.s | date unknown (date unknown, checked 2026-10-29) · posted May 12, 2026 |  ✗ |  |
+| US-9377 | Blazing Star State Trail | https://files.dnr.state.mn.us/maps/state_trails/blazing_star.pdf | pdf ✓name · linked from the agency page (files.dnr.s | date unknown (date unknown, checked 2026-10-29) · posted Sep 16, 2026 |  ✗ |  |
+| US-9387 | Luce Line State Trail | https://files.dnr.state.mn.us/maps/state_trails/luce_line.pdf | pdf ✓name · linked from the agency page (files.dnr.s | date unknown (date unknown, checked 2026-10-29) · posted May 12, 2026 |  ✗ |  |
+| US-9381 | Douglas State Trail | https://files.dnr.state.mn.us/maps/state_trails/douglas.pdf | pdf ✓name · linked from the agency page (files.dnr.s | date unknown (date unknown, checked 2026-10-29) · posted May 12, 2026 |  ✗ |  |
+| US-4801 | Grand Portage State Forest | https://www.nps.gov/grpo/planyourvisit/maps.htm | page ✓name · linked from the agency page (nps.gov) | date unknown (date unknown, checked 2026-10-29) · posted July 22, 2025 |  ✗ |  |
+| US-0939 | Grand Portage National Monument | https://www.nps.gov/grpo/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted July 22, 2025 | https://www.nps.gov/grpo/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4239 | North Country Trail National Scenic Trai | https://www.nps.gov/noco/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted September 23, 2025 | https://www.nps.gov/noco/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0957 | Pipestone National Monument | https://www.nps.gov/pipe/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted July 12, 2021 | https://www.nps.gov/pipe/learn/management/lawsandpolicies.htm ✓ |  |
+| US-2489 | Grand Portage State Park | https://www.nps.gov/grpo/planyourvisit/maps.htm | page ✓name · linked from the agency page (nps.gov) | date unknown (date unknown, checked 2026-10-29) · posted July 22, 2025 |  ✗ |  |
+| US-0067 | Voyageurs National Park | https://www.nps.gov/voya/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted August 24, 2026 | https://www.nps.gov/voya/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4491 | Superior National Forest | https://www.fs.usda.gov/r09/superior/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted May 20, 2026 | https://www.fs.usda.gov/r09/superior ✓ |  |
+| US-4490 | Chippewa National Forest | https://www.fs.usda.gov/r09/chippewa/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted March 19, 2026 | https://www.fs.usda.gov/r09/chippewa ✓ |  |
+| US-11904 | Migizi National Recreation Trail | https://www.fs.usda.gov/r09/chippewa/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted March 19, 2026 | https://www.fs.usda.gov/r09/chippewa ✓ |  |
 
-### US-MN no map yet (269): the reason
+### US-MN no map yet (256): the reason
 - US-0673 Saint Croix National Wild and Scenic River: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.nps.gov/sacn/planyourvisit/upload/Section-1_Namekagon_Name; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.nps.gov/sacn/planyourvisit/upload/Section-2_Namekagon_Hayw)
 - US-10278 Inspiration Peak State Wayside State Natural : no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.dnr.state.mn.us/contact/locator.html; robots https://www.dnr.state.mn.us/maps/compass.html)
 - US-10306 Paul Hugo Farms WMA Wildlife Management Area: no map link on file and none on the park page
@@ -1372,9 +1383,8 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - US-11147 Jensen Memorial WMA Wildlife Management Area: no map link on file and none on the park page
 - US-11148 Hardwood Creek WMA Wildlife Management Area: no map link on file and none on the park page
 - US-11150 CJ Ramstad North Shore State Trail: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.dnr.state.mn.us/snowmobiling/interactive_map/index.html; opened, a page that does not name this park (a generic agency page is not its map) https://www.dnr.state.mn.us/contact/locator.html)
-- US-11151 Cuyuna Lakes State Trail: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://files.dnr.state.mn.us/maps/state_parks/sra00302.pdf; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://mobile-maps-files.dnr.state.mn.us/file/State_Parks/Cuyuna%20Co)
-- US-11152 Heartland State Trail: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://files.dnr.state.mn.us/maps/state_trails/paul_bunyan_n_heartlan; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://mobile-maps-files.dnr.state.mn.us/file/State_Trails/Paul%20Bun)
-- US-11153 Matthew Lourey State Trail: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://files.dnr.state.mn.us/maps/state_trails/paul_bunyan_n_heartlan; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://mobile-maps-files.dnr.state.mn.us/file/State_Trails/Paul%20Bun)
+- US-11151 Cuyuna Lakes State Trail: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://files.dnr.state.mn.us/maps/state_parks/sra00302.pdf; rest https://mobile-maps-files.dnr.state.mn.us/file/State_Parks/Cuyuna%20Co)
+- US-11153 Matthew Lourey State Trail: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://files.dnr.state.mn.us/maps/state_trails/paul_bunyan_n_heartlan; rest https://mobile-maps-files.dnr.state.mn.us/file/State_Trails/Paul%20Bun)
 - US-11154 Taconite State Trail: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.dnr.state.mn.us/snowmobiling/interactive_map/index.html; opened, a page that does not name this park (a generic agency page is not its map) https://www.dnr.state.mn.us/contact/locator.html)
 - US-11698 Seminary Fen SNA State Sanctuary: no map link on file and none on the park page
 - US-11699 Savage FEN SNA State Sanctuary: no map link on file and none on the park page
@@ -1391,6 +1401,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - US-11974 Robert and Marilyn Burman Wildlife Management: no map link on file and none on the park page
 - US-11980 Bethel Wildlife Management Area: no map link on file and none on the park page
 - US-11983 Keystone Wildlife Management Area: no map link on file and none on the park page
+- US-12058 Gordie Mikkelson Wildlife Management Area: no map link on file and none on the park page
 
 ## US-IA sample (random 12 per agency group, seed 28)
 | ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
@@ -2806,16 +2817,24 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 ### US-NE no map yet (1): the reason
 - US-0446 Funk WPA Wetland Management District: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.fws.gov/refuge/rainwater-basin-wetland-management-district)
 
+## robots.txt said no (hosts we did not read)
+- embed.widencdn.net: 3 addresses (User-agent: Twitterbot | Disallow: | User-agent: * | Allow: /img/3shape/ | Allow: /pdf/*/3shape/ | A)
+- images.dnr.state.mn.us: 1 addresses (User-agent: * | Disallow: /)
+- p.widencdn.net: 65 addresses (User-agent: Twitterbot | Disallow: | User-agent: * | Disallow: /)
+- widnr.widen.net: 38 addresses (User-agent: Twitterbot | Disallow: | User-agent: * | Allow: /content/ | Allow: /view/ | Disallow: /)
+- www.dnr.state.mn.us: 167 addresses (Sitemap: https://www.dnr.state.mn.us/sitemap.xml | Sitemap: https://www.dnr.state.mn.us/sitemap-stat)
+
 ## hosts resting a day (three strikes)
+- apps.dnr.wi.gov
+- dnr.wi.gov
+- dnrmaps.wi.gov
 - fhwaapps.fhwa.dot.gov
 - in.gov
 - iowaculture.gov
 - map.co.door.wi.us
 - mip.agri.arkansas.gov
 - mobile-maps-files.dnr.state.mn.us
-- parks.ky.gov
 - sojournertruthstatepark.info
-- wolfememorial.com
 - www.agfc
 - www.baysmountain.com
 - www.cgcounty.org
@@ -2825,7 +2844,6 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - www.mass-trails.org
 - www.mdwfp.com
 - www.sos.mo.gov
-- www.tn.gov
 - www.usna.usda.gov
 - www.virginiastateparks.gov
 - www.wildlifesouth.com

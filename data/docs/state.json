@@ -92,25 +92,23 @@
    "updated": "2026-10-29"
   },
   "US-WI": {
-   "status": "done",
+   "status": "failed",
    "parks": 348,
-   "checked": 348,
-   "left": 0,
-   "updated": "2026-10-29"
+   "updated": "2026-10-29",
+   "why": "maps 294 -> 113"
   },
   "US-MN": {
    "status": "done",
    "parks": 298,
    "checked": 298,
    "left": 0,
-   "updated": "2026-10-28"
+   "updated": "2026-10-29"
   },
   "US-IA": {
-   "status": "done",
+   "status": "failed",
    "parks": 181,
-   "checked": 181,
-   "left": 0,
-   "updated": "2026-10-28"
+   "updated": "2026-10-29",
+   "why": "maps 82 -> 14"
   },
   "US-ND": {
    "status": "done",
@@ -254,9 +252,6 @@
   }
  },
  "hosts": {
-  "parks.ky.gov": 1793267495.7892177,
-  "www.tn.gov": 1793267801.512577,
-  "wolfememorial.com": 1793268984.2034903,
   "www.virginiastateparks.gov": 1793269856.6741216,
   "www.baysmountain.com": 1793282536.0758147,
   "www.wildlifesouth.com": 1793289030.942602,
@@ -275,32 +270,35 @@
   "www.usna.usda.gov": 1793332248.1578314,
   "fhwaapps.fhwa.dot.gov": 1793332633.3492808,
   "www.agfc": 1793332866.3907526,
-  "mip.agri.arkansas.gov": 1793332986.7646573
+  "mip.agri.arkansas.gov": 1793332986.7646573,
+  "dnrmaps.wi.gov": 1793353106.949125,
+  "apps.dnr.wi.gov": 1793353387.1758375,
+  "dnr.wi.gov": 1793353795.6671379
  },
  "last": {
   "when": "2026-10-29",
   "areas": [
-   "US-MO",
    "US-WI",
    "US-MN",
    "US-IA",
    "US-ND",
    "US-SD",
    "US-PA",
-   "US-NY"
+   "US-NY",
+   "US-NJ"
   ],
   "stat": {
-   "requests": 1530,
-   "parks": 498,
-   "maps_ok": 458,
-   "maps_found": 448,
-   "dates": 209,
-   "rules": 25,
-   "browser": 9,
-   "robots": 0,
-   "strikes": 0,
-   "errors": 0,
-   "skipped_fresh": 72
+   "requests": 1503,
+   "parks": 818,
+   "maps_ok": 164,
+   "maps_found": 143,
+   "dates": 1,
+   "rules": 436,
+   "browser": 11,
+   "robots": 274,
+   "strikes": 9,
+   "errors": 9,
+   "skipped_fresh": 9
   }
  }
 }
