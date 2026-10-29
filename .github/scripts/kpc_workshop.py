@@ -14,6 +14,7 @@ import json, os, pathlib, subprocess, sys, time
 T0 = time.time(); LIMIT = float(os.environ.get('MINUTES') or 300) * 60
 CHUNK = float(os.environ.get('CHUNK') or 55)
 BOTS = (os.environ.get('BOTS') or 'truth hours campinfo').split()
+KY_ONLY = {'hours', 'campinfo'}   # SCOPE Oct 29 8:33 AM: outside Kentucky only boundaries / documents / 2-fers / access / trails
 TEST = os.environ.get('TEST') == '1'
 PUSH = os.environ.get('PUSH', '1') != '0'
 LINKS = os.environ.get('LINKS') or '../links'
@@ -30,7 +31,7 @@ def load(p, d):
     try: return json.load(open(p, encoding='utf-8'))
     except Exception: return d  # noqa: BLE001
 def status_of(bot, area): return ((load(f'{FOLDER[bot]}/state.json', {}).get('areas') or {}).get(area) or {}).get('status')
-def left_areas(): return [a for a in QUEUE if any(status_of(b, a) not in ('done', 'failed') for b in BOTS if b in SCRIPT)]   # a FAILED batch waits for a fix, never queues onward
+def left_areas(): return [a for a in QUEUE if any(status_of(b, a) not in ('done', 'failed') for b in BOTS if b in SCRIPT and (b not in KY_ONLY or a == 'US-KY'))]   # a FAILED batch waits for a fix, never queues onward
 
 
 def run_bot(bot, area, minutes, test):
@@ -72,6 +73,7 @@ def main():
             remaining = (LIMIT - (time.time() - T0)) / 60
             if remaining < 3: break
             if not want and status_of(bot, area) in ('done', 'failed'): continue
+            if bot in KY_ONLY and area != 'US-KY': continue   # Oct 29 8:33 AM SCOPE (Brandon): hours / fees / camping are Kentucky only
             tries = 0
             while True:
                 remaining = (LIMIT - (time.time() - T0)) / 60

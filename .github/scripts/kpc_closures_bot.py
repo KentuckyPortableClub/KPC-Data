@@ -77,6 +77,8 @@ QUEUE = ['US-KY',
          'US-CO', 'US-WY', 'US-ID', 'US-MT', 'US-NV', 'US-AZ', 'US-NM', 'US-UT',
          'US-CA', 'US-OR', 'US-WA', 'US-AK', 'US-HI',
          'CA-ON', 'CA-QC', 'CA-NB', 'CA-NS', 'CA-PE', 'CA-NL', 'CA-MB', 'CA-SK', 'CA-AB', 'CA-BC', 'CA-YT', 'CA-NT', 'CA-NU']
+QUEUE_ALL = QUEUE
+QUEUE = ['US-KY']   # Oct 29 8:33 AM SCOPE (Brandon: 'things are getting too complicated'): closures are KENTUCKY ONLY; the other areas stay listed above for later
 FRENCH_AREAS = {'CA-QC', 'CA-NB'}     # G9 / CL-6: French kept beside the English
 M = None
 STAT = {'requests': 0, 'pages': 0, 'pdfs': 0, 'sentences': 0, 'items': 0, 'unmatched': 0, 'unreadable': 0, 'sources_failed': 0}
