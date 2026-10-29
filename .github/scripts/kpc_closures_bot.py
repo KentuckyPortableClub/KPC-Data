@@ -1571,6 +1571,13 @@ def process_area(K, area, state, review):
         if str(it.get('src', '')).endswith('-hunt-plug') or it.get('class') != 'hunt' or not it.get('from'): return False
         return any(r == it['ref'] and abs((dt.date.fromisoformat(f) - dt.date.fromisoformat(it['from'])).days) <= 1 for r, f in plugd)
     items = [it for it in items if not _twin(it)]   # one hunt closure per park and date: the plug's (table dates) wins
+    lst = [(it['ref'], it.get('from'), it.get('to') or it.get('from')) for it in items if str(it.get('src', '')).endswith('-hunt-plug') and it.get('from')]
+    def _ruled(it):   # Brandon Oct 29 9:25 AM (checked list): a quota hunt is a NOTE unless the list says otherwise; another source's 'closed for the quota hunt' line on the same park and dates gives way
+        if str(it.get('src', '')).endswith('-hunt-plug') or it.get('class') != 'hunt' or not it.get('from'): return False
+        if not re.search(r'quota|drawn|day before', str(it.get('details') or ''), re.I): return False
+        f, t = dt.date.fromisoformat(it['from']), dt.date.fromisoformat(it.get('to') or it['from'])
+        return any(r == it['ref'] and dt.date.fromisoformat(a_) - dt.timedelta(days=1) <= t and f <= dt.date.fromisoformat(b_) + dt.timedelta(days=1) for r, a_, b_ in lst)
+    items = [it for it in items if not _ruled(it)]
     banners = mass_banners(items, area)
     D = {'area': area, 'read': NOW, 'ver': VER, 'about': 'Closures super-bot (RULE SHEET D). details = the agency\'s own sentence. Nothing here is on a card until Brandon\'s GO (CL-5).',
          'sources': srcs, 'items': sorted(items, key=lambda x: (x['ref'], x['id'])), 'banners': banners,
