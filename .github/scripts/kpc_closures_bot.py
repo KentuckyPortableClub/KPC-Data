@@ -547,6 +547,10 @@ SAMPLE_WMA = """<h1>Clay WMA</h1><p>The area is closed to all other hunting Nov.
 LAST_HTML = {}
 BROWSER_LOG = []
 CHILDREN = {}      # landing page url -> the sub-pages it led to (listed on the source as 'children')
+KDFWR_QUOTA_PAGES = [   # round 8: tried when the landing page's tiles hide their addresses (a 404 costs nothing: not a strike)
+    'https://fw.ky.gov/Hunt/Pages/Deer-Quota-Hunts.aspx', 'https://fw.ky.gov/Hunt/Pages/Quota-Deer-Hunts.aspx', 'https://fw.ky.gov/Hunt/Pages/Deer-Quota-Hunt.aspx',
+    'https://fw.ky.gov/Hunt/Pages/Dove-Quota-Hunts.aspx', 'https://fw.ky.gov/Hunt/Pages/Sandhill-Crane-Quota-Hunts.aspx', 'https://fw.ky.gov/Hunt/Pages/Pheasant-Quota-Hunts.aspx',
+    'https://fw.ky.gov/Hunt/Pages/Waterfowl-Quota-Hunts.aspx', 'https://fw.ky.gov/Hunt/Pages/Quota-Hunt-Dates.aspx']
 LINKS_DEBUG = {}   # TEST=1: every same-host link of a hunt landing page
 ROWS_DEBUG = {}    # TEST=1: the first 5 parsed rows of each child page + what the matcher said
 
@@ -871,9 +875,17 @@ def src_page(url, refs=None, pdfs=True, home=None, hunt=False, depth=0):
     if hunt and kind == 'html' and not OFFLINE and depth == 0 and not late():        # a hunt LANDING page: the tables sit on the species sub-pages
         host = M.host(url); kids, seen = [], set()
         all_links = links_in(body, url)
-        if TEST: LINKS_DEBUG[url] = [{'text': _zw(t)[:50], 'url': u[:160]} for u, t in all_links if M.host(u) == host][:60]
+        # round 8 (Oct 29): KDFWR's species tiles are not plain <a> links (round 7 followed 7 pages, none with a hunt table), so also
+        # harvest every 'quota' page address written anywhere in the HTML (scripts, web parts, data-href), then the known KDFWR species pages
+        for m in re.finditer(r'(?i)(?:https?://[\w.-]+)?/[\w\-/]*quota[\w\-]*\.aspx', body or ''):
+            u = urllib.parse.urljoin(url, m.group(0))
+            if M.host(u) == host and all(u.split('#')[0] != v.split('#')[0] for v, _ in all_links): all_links.append((u, 'quota page (from the html)'))
+        if 'fw.ky.gov' in host:
+            for u in KDFWR_QUOTA_PAGES:
+                if all(u.lower() != v.split('#')[0].lower() for v, _ in all_links): all_links.append((u, 'quota page (known address)'))
+        if TEST: LINKS_DEBUG[url] = [{'text': _zw(t)[:40], 'url': u[:120]} for u, t in all_links if M.host(u) == host and not u.lower().split('?')[0].endswith('.pdf')][:160]
         for u, txt in all_links:
-            if len(kids) >= 8: break
+            if len(kids) >= 12: break
             lu = u.split('#')[0]
             if M.host(u) != host or lu in seen or lu.split('?')[0] == url.split('?')[0] or lu.lower().split('?')[0].endswith('.pdf'): continue
             t = _zw(txt).lower(); pl = urllib.parse.urlparse(lu).path.lower()
