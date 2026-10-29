@@ -48,7 +48,7 @@ REFRESH_DAYS = int(os.environ.get('REFRESH_DAYS') or 7)
 TOL = 0.15
 PDF_FIRST = 400_000
 TODAY = time.strftime('%Y-%m-%d')
-VER = 7   # Oct 28 (chat 11's KY grade): '708, 879' parse + summed lakes, other-unit pages, history words + stale years, unsure carries a cause, own-page handover hints, quoted URLs, 10-row gate, same-agency label
+VER = 8   # Oct 28 (chat 11's KY grade): '708, 879' parse + summed lakes, other-unit pages, history words + stale years, unsure carries a cause, own-page handover hints, quoted URLs, 10-row gate, same-agency label
 QUEUE = ['US-KY',
          'US-TN', 'US-NC', 'US-VA', 'US-WV', 'US-GA', 'US-AL', 'US-SC', 'US-FL', 'US-MS',
          'US-IN', 'US-IL', 'US-MO', 'US-WI', 'US-MN', 'US-IA', 'US-ND', 'US-SD',
@@ -82,7 +82,7 @@ PART = re.compile(r'\blake\b.*\bacre|acre[- ]lake|reservoir|pond|campground|camp
                   r'included in the|part of the \d|within the \d|lies within|is part of|portion of the \d|complex|together with', re.I)
 NOTTOTAL = re.compile(HISTORY.pattern + '|' + PART.pattern, re.I)   # kept for readers of the old name
 # HARD parts: never a park total, even in a sentence that names the park (a lake, water, habitat, acre-feet, a campground)
-HARD_PART = re.compile(r'acre[- ]lake|\blake\b[^.]{0,30}\bacres?\b|acres? (?:of|in) (?:water|lakes?|ponds?|wetlands?|crops?|timber|hunting|fields?|habitat|\w+ habitat|wilderness|forest lands?|national forest)|per acre|acre[- ]?feet|impoundment|campground|campsite|parking|picnic|golf|cemetery|food plots?|moist[- ]soil|\bconserve\b', re.I)
+HARD_PART = re.compile(r'within the park|\bplots?\b|adjacent|surrounding|in the middle of|\bfarm\b|statewide|across the state|state[- ]wide|preserve system|natural area preserves|manages (?:more than |over |about |nearly )?[\d,.]+ (?:million )?acres|acres? of public land|acres? (?:of )?(?:state|public) (?:land|lands|forests?|parks?) (?:statewide|across)|acre[- ]lake|\blake\b[^.]{0,30}\bacres?\b|acres? (?:of|in) (?:water|lakes?|ponds?|wetlands?|crops?|timber|hunting|fields?|habitat|\w+ habitat|wilderness|forest lands?|national forest)|per acre|acre[- ]?feet|impoundment|campground|campsite|parking|picnic|golf|cemetery|food plots?|moist[- ]soil|\bconserve\b', re.I)
 # candidates never chosen as the official number (history, another unit, a page of another unit, a summed part)
 EXCLUDED = ('history', 'part of a sum', 'another park / unit named in the sentence', "a page of another unit; the sentence does not name this park",
             'a national unit on a state park page', 'a state unit on a national park page', 'part (a lake, a purchase, a campground…)', 'a map label (no sentence)')   # Oct 28 regrade 2: a lake or a map label is never the guess shown
@@ -100,6 +100,9 @@ NEWNAME = re.compile(r'\b((?:renamed|formerly (?:known as|called)|now (?:known a
 KINDW = re.compile(r'\b(state|national|provincial|park|parks|forest|wildlife|management|area|areas|recreation|recreational|conservation|nature|natural|preserve|reserve|refuge|historic|historical|site|game|land|lands|wma|sp|sra|sf|nwr|trail|the|of|and|at|county|city|regional|unit|access|public|fishing|lake|hunting|outdoor|memorial|monument|wilderness|road)\b')
 OTHER_CORES = set()
 DESIG = {}         # {'state': bool, 'national': bool} of the park being read (T4: a State wild river is not the National river of the same name)
+SHARED = {}        # url -> how many parks of the area call it their own page (v8: 3+ = an index page, never one park's size)
+REF_STATES = {}    # ref -> [areas] for parks POTA lists in several states (v8: compare the WHOLE park)
+OURS_WHOLE = {}    # ref -> acres summed over every state's key (v8)
 MULTI = {}         # {'area', 'state' (full name), 'ky' (bool)}: set per area   # the other parks of the area (core names), set per area: a sentence naming another park is not this park's size
 STATES_RX = re.compile(r'\b(alabama|alaska|arizona|arkansas|california|colorado|connecticut|delaware|florida|georgia|hawaii|idaho|illinois|indiana|iowa|kansas|kentucky|louisiana|maine|maryland|massachusetts|michigan|minnesota|mississippi|missouri|montana|nebraska|nevada|new hampshire|new jersey|new mexico|new york|north carolina|north dakota|ohio|oklahoma|oregon|pennsylvania|rhode island|south carolina|south dakota|tennessee|texas|utah|vermont|virginia|washington|west virginia|wisconsin|wyoming)\b', re.I)
 SOFT404 = re.compile(r'page not found|404 error|error 404|the page you (?:requested|are looking for)|no longer available|has been (?:moved|removed)|sign in to continue|log ?in required|access denied', re.I)
@@ -600,6 +603,7 @@ def one_park(ref, park, ours, web, docs, ky, retired, bs):
     if ref in retired:
         r['retired'] = retired[ref]; STAT['retired'] += 1
     pages = candidate_pages(ref, park, web, docs, ky)
+    pages = [(u, why, other or SHARED.get(u, 0) >= 3) for u, why, other in pages]   # v8: an agency INDEX page (the 'own page' of 3+ parks) counts only sentences that name this park
     DESIG.clear(); DESIG.update({'state': bool(re.search(r'\bstate\b', park['n'] + ' ' + park.get('t', ''), re.I)), 'national': bool(re.search(r'\bnational\b', park['n'] + ' ' + park.get('t', ''), re.I))})
     if not pages: r['verdict'] = 'no official page on file'; return r
     found = []; mg = (ours or {}).get('manager') or ''
@@ -631,6 +635,7 @@ def one_park(ref, park, ours, web, docs, ky, retired, bs):
     elif v == 'off' and chosen and re.search(r'national (forest|park|refuge|river|recreation|trail|seashore|lakeshore|monument|battlefield)', park.get('t', '') + ' ' + park['n'], re.I) and MULTI.get('ky') and abs(chosen['acres']) > 1.8 * (ours['acres'] or 1):
         v = 'unsure'; r['note'] = 'federal unit: the Kentucky key holds only the Kentucky piece; the agency figure is the whole unit'
     if ours and ours.get('unknown_pieces') and not ours.get('acres'): v = 'ours unknown'
+    if ours and ours.get('whole_park'): r['note'] = f"whole park compared (POTA lists it in {len(ours.get('acres_by_state') or {})} states: {ours.get('acres_by_state')})"
     r['verdict'] = v; r['pct'] = pct
     if chosen:
         r['official'] = {'acres': chosen['acres'], 'as': chosen['as'], 'line': chosen['line'], 'url': chosen['url'], 'read': TODAY, 'clean': chosen['clean'], 'why': chosen['why']}
@@ -684,12 +689,22 @@ def run_area(area, state, web, docs_all, ky, ak, retired, bscore, news):
     parks_by_core = {core(p['n']): ref for ref, p in parks.items()}
     OTHER_CORES.clear(); OTHER_CORES.update(parks_by_core)
     MULTI.clear(); MULTI.update({'area': area, 'state': STATE_NAMES.get(area[3:], 'zzz'), 'ky': area == 'US-KY'})
+    SHARED.clear()
+    for ref, p in parks.items():
+        for u in {p.get('web') or '', (web.get(ref) or {}).get('web') or '', (docs.get(ref) or {}).get('page') or ''}:
+            if u.startswith('http'): SHARED[u] = SHARED.get(u, 0) + 1
     for ref in sorted(parks):
         if late(): break
         old = D['parks'].get(ref)
         if old and old.get('ver', 0) >= VER and old.get('checked', '') >= fresh_cut: fresh += 1; STAT['skipped_fresh'] += 1; continue
         park = parks[ref]
         ours = ours_ky(ref, park, ak) if area == 'US-KY' else ours_key(key.get(ref) or {})
+        if ours and len(REF_STATES.get(ref) or []) > 1:   # v8: a park POTA lists in several states (Smokies, Big South Fork, Chickamauga): compare the WHOLE park
+            whole = 0; parts = {}
+            for a2 in REF_STATES[ref]:
+                o2 = ours_ky(ref, park, ak) if a2 == 'US-KY' else ours_key((load(f'data/{"us" if a2.startswith("US") else "ca"}-key/{a2}.json', {}).get('parks') or {}).get(ref) or {})
+                if o2 and o2.get('acres'): whole += o2['acres']; parts[a2] = o2['acres']
+            if whole and whole > (ours.get('acres') or 0): ours = dict(ours, acres=round(whole), acres_by_state=parts, whole_park=True)
         STAT['parks'] += 1
         if not ours:
             D['parks'][ref] = {'n': park['n'], 't': park.get('t', ''), 'ours': None, 'verdict': 'no outline', 'checked': TODAY, 'ver': VER, 'handover': [], 'score': None}
@@ -715,6 +730,17 @@ def run_area(area, state, web, docs_all, ky, ak, retired, bscore, news):
                     D['parks'][ref].setdefault('handover', []).extend(hs)
         except Exception as e:  # noqa: BLE001
             STAT['errors'] += 1; notice(f'{area}: news read failed: {str(e)[:100]}')
+    shared_nums = {}
+    for ref, r in D['parks'].items():
+        of = r.get('official') or {}
+        if r.get('verdict') in ('off', 'unsure') and of.get('acres'): shared_nums.setdefault((of['acres'], of.get('url', '')), []).append(ref)
+    for (acres, url), refs in shared_nums.items():
+        if len(refs) < 3: continue
+        for ref in refs:   # v8 (chat 11, WV/VA): the statewide '1.4 million acres' / a system total taken as every park's size
+            r = D['parks'][ref]
+            if r.get('verdict') == 'off': STAT['size_off'] -= 1; STAT['size_unsure'] += 1
+            r['verdict'] = 'unsure'; r['pct'] = None; r['cause'] = f'a number {len(refs)} parks share from one page ({acres:,.0f} ac): an agency total, not this park'
+            r['official'] = None
     for ref, r in D['parks'].items():
         seen = set(); hs = []
         for h in r.get('handover') or []:
@@ -723,6 +749,9 @@ def run_area(area, state, web, docs_all, ky, ak, retired, bscore, news):
         r['handover'] = hs[:8]
     STAT['handover_hints'] += sum(1 for r in D['parks'].values() if r.get('handover'))
     D['read'] = TODAY; D['counts'] = counts(D)
+    if os.environ.get('TEST') == '1' and area != 'US-KY':
+        res, why = area_test(area, D); state['test'] = {'when': TODAY, 'result': res, 'why': why, 'area': area}
+        notice(f'{area} TEST {res}: {why[:600]}'); print('TEST=' + res)
     save(f, D)
     write_checklist(area, D)
     left = sum(1 for r in parks if r not in D['parks'])
@@ -824,6 +853,25 @@ KNOWN_ANSWERS = [   # R6 + chat 11's grade (Oct 28): the Kentucky gate; PASS onl
 ]
 
 
+def area_test(area, D):
+    """v8 generic gate for any area (chat 11's WV / VA / TN / IL grades): no 'off' row may use a number 3+ parks share, a mission /
+    about / index page, or a part sentence; cross-state parks carry the whole-park note. Returns (PASS/FAIL, why)."""
+    bad = []
+    offs = [(ref, r) for ref, r in D['parks'].items() if r.get('verdict') == 'off' and r.get('official')]
+    byn = {}
+    for ref, r in offs: byn.setdefault((r['official']['acres'], r['official'].get('url')), []).append(ref)
+    for k, refs in byn.items():
+        if len(refs) >= 3: bad.append(f'{len(refs)} parks share {k[0]:,.0f} ac from {k[1][:60]}')
+    for ref, r in offs:
+        u = r['official'].get('url', '')
+        if re.search(r'/mission|/about(?:-us)?/?$|didyouknow|/wildlife-management-areas/?$|/state-forests/?$', u): bad.append(f'{ref}: an agency-wide page {u[:60]}')
+        if HARD_PART.search(re.sub(r'[^a-z0-9 ]', ' ', core(r['official'].get('line', '')))): bad.append(f"{ref}: a part sentence: {r['official'].get('line', '')[:80]}")
+    for ref, r in D['parks'].items():
+        if len(REF_STATES.get(ref) or []) > 1 and r.get('verdict') == 'off' and not (r.get('ours') or {}).get('whole_park'): bad.append(f'{ref}: cross-state park compared one state only')
+    res = 'PASS' if not bad else 'FAIL'
+    return res, (f'{area}: {len(offs)} off rows, no shared numbers / agency pages / part sentences / one-state cross-state compares' if not bad else f'{area}: ' + ' · '.join(bad[:8]))
+
+
 def ky_test(state):
     """The Kentucky gate: every KNOWN_ANSWERS row must pass (fix 8)."""
     D = load(OUT / 'US-KY.json', {'parks': {}})
@@ -856,6 +904,12 @@ def main():
     retired = {r: v.get('d', '') for r, v in (load(LINKS / 'data/retired-refs.json', {}).get('refs') or {}).items()}
     bscore = (load('data/boundary-score.json', {}) or load(LINKS / 'data/boundary-score.json', {})).get('parks') or {}
     news = load(OUT / 'news-sources.json', {}).get('sources') or []
+    import glob as _g
+    for f in _g.glob('data/parkinfo/US-*.json') + _g.glob(str(LINKS / 'data/parkinfo/US-*.json')):
+        a2 = 'US-' + f[-7:-5]
+        for ref in (load(f, {}).get('parks') or {}): REF_STATES.setdefault(ref, [])
+        for ref in (load(f, {}).get('parks') or {}):
+            if a2 not in REF_STATES[ref]: REF_STATES[ref].append(a2)
     for area in areas:
         if late(): break
         run_area(area, state, web, docs_all, kyd, ak, retired, bscore, news)
