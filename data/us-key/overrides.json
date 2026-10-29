@@ -1,5 +1,5 @@
 {
- "note": "Reviewed by hand. join = official land names (or PAD-US object ids) that ARE this park; no = pieces that are not; site = no outline of its own. kpc_us_key.py follows this on every rerun. · Oct 27 (boundary review #3 + #10): 'fp' = {PAD-US id: [name, acres]} so a hand join survives a new PAD-US version (ids change); 'when' = the day of the hand decision (add it with every new one).",
+ "note": "Reviewed by hand. join = official land names (or PAD-US object ids) that ARE this park; no = pieces that are not; site = no outline of its own. kpc_us_key.py follows this on every rerun. · Oct 27 (boundary review #3 + #10): 'fp' = {PAD-US id: [name, acres]} so a hand join survives a new PAD-US version (ids change); 'when' = the day of the hand decision (add it with every new one). · Oct 29: 'alias' = another name the official layer uses; it joins ONLY when the POTA pin is inside that record (sure-match test).",
  "parks": {
   "US-0952": {
    "join": [
@@ -5604,7 +5604,7 @@
    "join": [
     "2441"
    ],
-   "why": "the closest official land; bigger or a different shape than the park (hand review Oct 22 (waiting list))",
+   "why": "the closest official land; bigger or a different shape than the park (hand review Oct 22 (waiting list)) · Oct 29 6:05 AM: the 22,147-ac 'Bluestone Recreation Area' record is not the Bluestone National Scenic River (chat 8); the river's own record + line stay",
    "approx": true,
    "fp": {
     "2441": [
@@ -5612,7 +5612,11 @@
      22147
     ]
    },
-   "when": "2026-10-22"
+   "when": "2026-10-29",
+   "no": [
+    "2441",
+    "Bluestone Recreation Area"
+   ]
   },
   "US-10795": {
    "none": true,
@@ -6130,6 +6134,735 @@
    ],
    "why": "reviewed: PAD-US 'Land Between the Lakes Other' = the Forest Service's own fee land for LBL (Own/Mang USFS; Basic Ownership names it 'Land Between the Lakes National Recreation Area'); HQ Oct 28: LBL gets its official Forest Service outline, not a low-confidence join",
    "when": "2026-10-28"
+  },
+  "US-7234": {
+   "alias": [
+    "Harding Lake State Recreation Area"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Harding Lake State Recreation Area'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-11025": {
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Uchee Creek Confluence'; joins only with the POTA pin inside · Oct 29: alias taken back: held: chat 8 asks a person to check (is the tract the whole area?)",
+   "when": "2026-10-29",
+   "alias_held": [
+    "Uchee Creek Confluence"
+   ]
+  },
+  "US-11027": {
+   "alias": [
+    "Big Canoe Creek"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Big Canoe Creek'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-12740": {
+   "alias": [
+    "Hinds Road Outcrop"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Hinds Road Outcrop'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-9880": {
+   "alias": [
+    "Crow Creek Refuge"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Crow Creek Refuge'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-11870": {
+   "alias": [
+    "Wilhelmina Lake"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Wilhelmina Lake'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-13556": {
+   "alias": [
+    "June Lake - Lafayette"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'June Lake - Lafayette'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-6875": {
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Preserve State Forest'; joins only with the POTA pin inside · Oct 29: alias taken back: a town / land trust parcel (chat 8)",
+   "when": "2026-10-29",
+   "alias_held": [
+    "Preserve State Forest"
+   ]
+  },
+  "US-7547": {
+   "alias": [
+    "Captain Comer Memorial"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Captain Comer Memorial'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-10920": {
+   "alias": [
+    "KAWAINUI MARSH WILDLIFE SANCTUARY"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'KAWAINUI MARSH WILDLIFE SANCTUARY'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-6410": {
+   "alias": [
+    "IAO VALLEY STATE MONUMENT"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'IAO VALLEY STATE MONUMENT'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-6426": {
+   "alias": [
+    "IOLANI PALACE STATE MONUMENT"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'IOLANI PALACE STATE MONUMENT'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-6431": {
+   "alias": [
+    "ROYAL MAUSOLEUM STATE MONUMENT"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'ROYAL MAUSOLEUM STATE MONUMENT'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-0280": {
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Oxford Slough'; joins only with the POTA pin inside · Oct 29: alias taken back: Wetland Management District vs a waterfowl production area (chat 8) · Oct 29 1 AM: chat 2 + chat 8 agree (POTA's own link + the official layer; joins only with the pin inside)",
+   "when": "2026-10-29",
+   "alias": [
+    "Oxford Slough Waterfowl Production Area",
+    "OXFORD SLOUGH WATERFOWL PRODUCTION AREA"
+   ]
+  },
+  "US-0980": {
+   "alias": [
+    "Beall Woods Land and Water Reserve"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Beall Woods Land and Water Reserve'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-6666": {
+   "alias": [
+    "Edger Waterfowl Production Area"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Edger Waterfowl Production Area'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-6713": {
+   "alias": [
+    "Kinney Waterfowl Production Area"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Kinney Waterfowl Production Area'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-6726": {
+   "alias": [
+    "Malan Waterfowl Production Area"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Malan Waterfowl Production Area'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-6779": {
+   "alias": [
+    "Schlee Waterfowl Production Area"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Schlee Waterfowl Production Area'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-6780": {
+   "alias": [
+    "Schoonover Waterfowl Production Area"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Schoonover Waterfowl Production Area'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-6796": {
+   "alias": [
+    "Tobico Marsh Unit of Bay City State Park"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Tobico Marsh Unit of Bay City State Park'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-12378": {
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Whitewater WMA: Main Branch Unit'; joins only with the POTA pin inside · Oct 29: alias taken back: held: one unit of a many-unit WMA (chat 8 check) · Oct 29 1 AM: chat 2 + chat 8 agree: the outline = ALL the 'Whitewater WMA: …' units of the DNR layer",
+   "when": "2026-10-29",
+   "alias_all": [
+    "Whitewater WMA"
+   ]
+  },
+  "US-13545": {
+   "alias": [
+    "Horseshoe Bay WMA"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Horseshoe Bay WMA'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-10527": {
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Judith Landing State Park'; joins only with the POTA pin inside · Oct 29: alias taken back: BLM site vs the state park (chat 8)",
+   "when": "2026-10-29",
+   "alias_held": [
+    "Judith Landing State Park"
+   ]
+  },
+  "US-12371": {
+   "alias": [
+    "Julian Price Park Wetlands Registered Heritage Area"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Julian Price Park Wetlands Registered Heritage Area'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-3861": {
+   "alias": [
+    "Durham County - Little River Park",
+    "Little River Regional Park"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Durham County - Little River Park'; joins only with the POTA pin inside · Oct 29 1 AM: chat 2 + chat 8 agree (POTA's own link + the official layer; joins only with the pin inside)",
+   "when": "2026-10-29"
+  },
+  "US-12372": {
+   "alias": [
+    "Cave Rock Lake Tahoe-Nevada State Park"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Cave Rock Lake Tahoe-Nevada State Park'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-11715": {
+   "alias": [
+    "Lower Illinois"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Lower Illinois'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-12881": {
+   "alias": [
+    "Diamond Craters"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Diamond Craters'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-10547": {
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Silver Spring Lake Fishing Access'; joins only with the POTA pin inside · Oct 29: alias taken back: held: a fishing access may be only a corner (chat 8 check) · Oct 29 1 AM: chat 2 + chat 8 agree (POTA's own link + the official layer; joins only with the pin inside)",
+   "when": "2026-10-29",
+   "alias": [
+    "Silver Spring Lake Fishing Access"
+   ]
+  },
+  "US-7723": {
+   "alias": [
+    "Rome Point"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Rome Point'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-11652": {
+   "alias": [
+    "Burbank"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Burbank'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-5913": {
+   "alias": [
+    "Rail Trail"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Rail Trail'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-5926": {
+   "alias": [
+    "Fort Douglas"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Fort Douglas'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-5992": {
+   "alias": [
+    "Big Creek"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Big Creek'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-12317": {
+   "alias": [
+    "Rocky Lake"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Rocky Lake'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-13383": {
+   "alias": [
+    "Big Eddy"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Big Eddy'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-13384": {
+   "alias": [
+    "Jonker"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Jonker'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-13392": {
+   "alias": [
+    "Massey Bar"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Massey Bar'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-13393": {
+   "alias": [
+    "Woodland Bar"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Woodland Bar'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-13394": {
+   "alias": [
+    "Three Mile"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Three Mile'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-13395": {
+   "alias": [
+    "County Line"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'County Line'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-13396": {
+   "alias": [
+    "Steel Bridge"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Steel Bridge'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-13399": {
+   "alias": [
+    "Hand"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Hand'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-13400": {
+   "alias": [
+    "Puget Island"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Puget Island'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-13401": {
+   "alias": [
+    "Deep River"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Deep River'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-13402": {
+   "alias": [
+    "Highway 4"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Highway 4'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-5573": {
+   "alias": [
+    "Teanaway Com Forest"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Teanaway Com Forest'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-10799": {
+   "alias": [
+    "Ellis"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Ellis'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-12719": {
+   "alias": [
+    "Newton Lakes"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Newton Lakes'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-6212": {
+   "alias": [
+    "Whiskey Basin"
+   ],
+   "why": "alias from chat 8's name-mismatch list (Oct 29): the official layer calls it 'Whiskey Basin'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-1072": {
+   "no": [
+    "Bull Shoals Recreation Area"
+   ],
+   "why": "Oct 29 (chat 2 review of joins 10x+ bigger than the real match): not 'Bull Shoals Recreation Area': the Corps lake around the park, not the state park",
+   "when": "2026-10-29"
+  },
+  "US-1091": {
+   "no": [
+    "Dardanelle Recreation Area"
+   ],
+   "why": "Oct 29 (chat 2 review of joins 10x+ bigger than the real match): not 'Dardanelle Recreation Area': the Corps lake around the park, not the state park",
+   "when": "2026-10-29"
+  },
+  "US-3563": {
+   "no": [
+    "Santa Monica Mountains National Recreation Area"
+   ],
+   "why": "Oct 29 (chat 2 review of joins 10x+ bigger than the real match): not 'Santa Monica Mountains National Recreation Area': a different, much bigger federal area",
+   "when": "2026-10-29"
+  },
+  "US-6390": {
+   "no": [
+    "South Mountain State Park",
+    "South Mountain Sp"
+   ],
+   "why": "Oct 29 (chat 2 review of joins 10x+ bigger than the real match): not 'South Mountain State Park': a different Maryland state park (the battlefield is its own park)",
+   "when": "2026-10-29"
+  },
+  "US-2764": {
+   "no": [
+    "Sakakawea Recreation Area"
+   ],
+   "why": "Oct 29 (chat 2 review of joins 10x+ bigger than the real match): not 'Sakakawea Recreation Area': the whole Corps lake (478,000 ac), not the state park",
+   "when": "2026-10-29"
+  },
+  "US-3879": {
+   "no": [
+    "Hartwell Recreation Area"
+   ],
+   "why": "Oct 29 (chat 2 review of joins 10x+ bigger than the real match): not 'Hartwell Recreation Area': the Corps lake around the park, not the state park",
+   "when": "2026-10-29"
+  },
+  "US-4923": {
+   "no": [
+    "Pine River State Forest"
+   ],
+   "why": "Oct 29 (chat 2 review of joins 10x+ bigger than the real match): not 'Pine River State Forest': a different state forest (Little Pine River is its own)",
+   "when": "2026-10-29"
+  },
+  "US-9208": {
+   "no": [
+    "Santee Coastal Reserve Wildlife Management Area",
+    "Santee Coastal Reserve WMA"
+   ],
+   "why": "Oct 29 (chat 2 review of joins 10x+ bigger than the real match): not 'Santee Coastal Reserve Wildlife Management Area': a different WMA",
+   "when": "2026-10-29"
+  },
+  "US-11718": {
+   "no": [
+    "Bear River Divide"
+   ],
+   "why": "Oct 29 (chat 2 review of joins 10x+ bigger than the real match): not 'Bear River Divide': a different, much bigger area (229,000 ac)",
+   "when": "2026-10-29"
+  },
+  "US-1039": {
+   "alias": [
+    "DeSoto State Park"
+   ],
+   "why": "alias from the no-boundary hunt (Oct 29): the official layer calls it 'DeSoto State Park' and the POTA pin is inside it; joins only with the pin inside",
+   "when": "2026-10-29"
+  },
+  "US-1174": {
+   "alias": [
+    "Montaña de Oro State Park"
+   ],
+   "why": "alias from the no-boundary hunt (Oct 29): the official layer calls it 'Montaña de Oro State Park' and the POTA pin is inside it; joins only with the pin inside",
+   "when": "2026-10-29"
+  },
+  "US-7693": {
+   "alias": [
+    "Hanauma Bay Nature Preserve"
+   ],
+   "why": "alias from the no-boundary hunt (Oct 29): the official layer calls it 'Hanauma Bay Nature Preserve' and the POTA pin is inside it; joins only with the pin inside",
+   "when": "2026-10-29"
+  },
+  "US-11877": {
+   "alias": [
+    "Lasoya Wildlife Management Area"
+   ],
+   "why": "alias from the no-boundary hunt (Oct 29): the official layer calls it 'Lasoya Wildlife Management Area' and the POTA pin is inside it; joins only with the pin inside",
+   "when": "2026-10-29"
+  },
+  "US-10431": {
+   "alias": [
+    "Cabinet Gorge Hatchery"
+   ],
+   "why": "alias from the no-boundary hunt (Oct 29): the official layer calls it 'Cabinet Gorge Hatchery' and the POTA pin is inside it; joins only with the pin inside",
+   "when": "2026-10-29"
+  },
+  "US-11089": {
+   "alias": [
+    "Ted Trueblood Wildlife Habitat Area"
+   ],
+   "why": "alias from the no-boundary hunt (Oct 29): the official layer calls it 'Ted Trueblood Wildlife Habitat Area' and the POTA pin is inside it; joins only with the pin inside",
+   "when": "2026-10-29"
+  },
+  "US-2236": {
+   "alias": [
+    "Hells Gate State Park"
+   ],
+   "why": "alias from the no-boundary hunt (Oct 29): the official layer calls it 'Hells Gate State Park' and the POTA pin is inside it; joins only with the pin inside",
+   "when": "2026-10-29"
+  },
+  "US-2238": {
+   "alias": [
+    "Heyburn State Park"
+   ],
+   "why": "alias from the no-boundary hunt (Oct 29): the official layer calls it 'Heyburn State Park' and the POTA pin is inside it; joins only with the pin inside",
+   "when": "2026-10-29"
+  },
+  "US-8459": {
+   "alias": [
+    "Earle R. Kelly (Dresden Bog) Wildlife Management Area"
+   ],
+   "why": "alias from the no-boundary hunt (Oct 29): the official layer calls it 'Earle R. Kelly (Dresden Bog) Wildlife Management Area' and the POTA pin is inside it; joins only with the pin inside",
+   "when": "2026-10-29"
+  },
+  "US-3348": {
+   "alias": [
+    "Felix Valle House State Historic Site"
+   ],
+   "why": "alias from the no-boundary hunt (Oct 29): the official layer calls it 'Felix Valle House State Historic Site' and the POTA pin is inside it; joins only with the pin inside",
+   "when": "2026-10-29"
+  },
+  "US-4036": {
+   "alias": [
+    "Walnut Creek Recreation Area"
+   ],
+   "why": "alias from the no-boundary hunt (Oct 29): the official layer calls it 'Walnut Creek Recreation Area' and the POTA pin is inside it; joins only with the pin inside",
+   "when": "2026-10-29"
+  },
+  "US-5656": {
+   "alias": [
+    "Flanagan Lake & Recreation Area"
+   ],
+   "why": "alias from the no-boundary hunt (Oct 29): the official layer calls it 'Flanagan Lake & Recreation Area' and the POTA pin is inside it; joins only with the pin inside",
+   "when": "2026-10-29"
+  },
+  "US-11823": {
+   "alias": [
+    "Coronado Historic Site"
+   ],
+   "why": "alias from the no-boundary hunt (Oct 29): the official layer calls it 'Coronado Historic Site' and the POTA pin is inside it; joins only with the pin inside",
+   "when": "2026-10-29"
+  },
+  "US-12373": {
+   "alias": [
+    "Lake Tahoe-Nevada State Park (Sand Harbor)"
+   ],
+   "why": "alias from the no-boundary hunt (Oct 29): the official layer calls it 'Lake Tahoe-Nevada State Park (Sand Harbor)' and the POTA pin is inside it; joins only with the pin inside",
+   "when": "2026-10-29"
+  },
+  "US-11222": {
+   "alias": [
+    "Stinchcomb Wildlife Refuge"
+   ],
+   "why": "alias from the no-boundary hunt (Oct 29): the official layer calls it 'Stinchcomb Wildlife Refuge' and the POTA pin is inside it; joins only with the pin inside",
+   "when": "2026-10-29"
+  },
+  "US-0621": {
+   "alias": [
+    "Todd Nature Reserve"
+   ],
+   "why": "alias from the no-boundary hunt (Oct 29): the official layer calls it 'Todd Nature Reserve' and the POTA pin is inside it; joins only with the pin inside",
+   "when": "2026-10-29"
+  },
+  "US-0622": {
+   "alias": [
+    "Bear Run Nature Reserve"
+   ],
+   "why": "alias from the no-boundary hunt (Oct 29): the official layer calls it 'Bear Run Nature Reserve' and the POTA pin is inside it; joins only with the pin inside",
+   "when": "2026-10-29"
+  },
+  "US-0623": {
+   "alias": [
+    "Powdermill Nature Reserve"
+   ],
+   "why": "alias from the no-boundary hunt (Oct 29): the official layer calls it 'Powdermill Nature Reserve' and the POTA pin is inside it; joins only with the pin inside",
+   "when": "2026-10-29"
+  },
+  "US-10376": {
+   "alias": [
+    "Lebeau Recreation Area"
+   ],
+   "why": "alias from the no-boundary hunt (Oct 29): the official layer calls it 'Lebeau Recreation Area' and the POTA pin is inside it; joins only with the pin inside",
+   "when": "2026-10-29"
+  },
+  "US-7577": {
+   "alias": [
+    "Charlotte Anne Finnell Neal Wildlife Management Area"
+   ],
+   "why": "alias from the no-boundary hunt (Oct 29): the official layer calls it 'Charlotte Anne Finnell Neal Wildlife Management Area' and the POTA pin is inside it; joins only with the pin inside",
+   "when": "2026-10-29"
+  },
+  "US-4419": {
+   "alias": [
+    "I.D. FairChild State Forest"
+   ],
+   "why": "alias from the no-boundary hunt (Oct 29): the official layer calls it 'I.D. FairChild State Forest' and the POTA pin is inside it; joins only with the pin inside",
+   "when": "2026-10-29"
+  },
+  "US-3140": {
+   "alias": [
+    "Sandbar State Park"
+   ],
+   "why": "alias from the no-boundary hunt (Oct 29): the official layer calls it 'Sandbar State Park' and the POTA pin is inside it; joins only with the pin inside",
+   "when": "2026-10-29"
+  },
+  "US-3454": {
+   "alias": [
+    "La Purísima Mission SHP"
+   ],
+   "why": "alias from the no-boundary hunt's LIKELY list (Oct 29): only spelling / accents differ ('La Purísima Mission SHP'); joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-6454": {
+   "alias": [
+    "El Capitán State Beach"
+   ],
+   "why": "alias from the no-boundary hunt's LIKELY list (Oct 29): only spelling / accents differ ('El Capitán State Beach'); joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-6424": {
+   "alias": [
+    "PAULAULA STATE HISTORIC SITE"
+   ],
+   "why": "alias from the no-boundary hunt's LIKELY list (Oct 29): only spelling / accents differ ('PAULAULA STATE HISTORIC SITE'); joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-8449": {
+   "alias": [
+    "Little Ossipee River Wildlife Management Area"
+   ],
+   "why": "alias from the no-boundary hunt's LIKELY list (Oct 29): only spelling / accents differ ('Little Ossipee River Wildlife Management Area'); joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-2576": {
+   "alias": [
+    "Greycliff Prairie Dog Town State Park"
+   ],
+   "why": "alias from the no-boundary hunt's LIKELY list (Oct 29): only spelling / accents differ ('Greycliff Prairie Dog Town State Park'); joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-11849": {
+   "alias": [
+    "Wantastiquet Mountain Natural Area"
+   ],
+   "why": "alias from the no-boundary hunt's LIKELY list (Oct 29): only spelling / accents differ ('Wantastiquet Mountain Natural Area'); joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-9150": {
+   "alias": [
+    "Saddle Mountain",
+    "Saddle Mountain State Natural Area"
+   ],
+   "why": "alias from the no-boundary hunt's LIKELY list (Oct 29): only spelling / accents differ ('Saddle Mountain State Natural Area'); joins only with the POTA pin inside · Oct 29 5:20 AM: clue search, chat 2 + chat 8 agree (the state layer's own name within 3 km; joins only with the POTA pin inside)",
+   "when": "2026-10-29"
+  },
+  "US-10363": {
+   "alias": [
+    "Degrey Recreation Area"
+   ],
+   "why": "alias from the no-boundary hunt's LIKELY list (Oct 29): only spelling / accents differ ('Degrey Recreation Area'); joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-6468": {
+   "alias": [
+    "IRON RANGE OFF HWY VEH"
+   ],
+   "why": "alias from the no-boundary hunt's LIKELY list (Oct 29): only spelling / accents differ ('IRON RANGE OFF HWY VEH'); joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-9652": {
+   "alias": [
+    "Granada State Wildlife Area"
+   ],
+   "why": "alias, chat 2 + chat 8 agree (Oct 29): the official layer calls it 'Granada State Wildlife Area'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-9334": {
+   "alias": [
+    "TEAL BASINS WPA"
+   ],
+   "why": "alias, chat 2 + chat 8 agree (Oct 29): the official layer calls it 'TEAL BASINS WPA'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-13236": {
+   "alias": [
+    "Rockdale Highlands WMA"
+   ],
+   "why": "alias, chat 2 + chat 8 agree (Oct 29): the official layer calls it 'Rockdale Highlands WMA'; joins only with the POTA pin inside",
+   "when": "2026-10-29"
+  },
+  "US-8287": {
+   "alias": [
+    "Capital Park",
+    "CAPITAL PARK"
+   ],
+   "why": " · Oct 29 1 AM: chat 2 + chat 8 agree (POTA's own link + the official layer; joins only with the pin inside)",
+   "when": "2026-10-29"
+  },
+  "US-5564": {
+   "alias": [
+    "State Tree Nursery"
+   ],
+   "why": " · Oct 29 1 AM: chat 2 + chat 8 agree (POTA's own link + the official layer; joins only with the pin inside)",
+   "when": "2026-10-29"
+  },
+  "US-12426": {
+   "alias": [
+    "Hog Lake"
+   ],
+   "why": "Oct 29 5:20 AM: clue search, chat 2 + chat 8 agree (the state layer's own name within 3 km; joins only with the POTA pin inside)",
+   "when": "2026-10-29"
+  },
+  "US-2445": {
+   "alias": [
+    "Lynn Shore Reservation"
+   ],
+   "why": "Oct 29 5:20 AM: clue search, chat 2 + chat 8 agree (the state layer's own name within 3 km; joins only with the POTA pin inside)",
+   "when": "2026-10-29"
+  },
+  "US-5932": {
+   "alias": [
+    "Jordan River OHV"
+   ],
+   "why": "Oct 29 5:20 AM: clue search, chat 2 + chat 8 agree (the state layer's own name within 3 km; joins only with the POTA pin inside)",
+   "when": "2026-10-29"
+  },
+  "US-8128": {
+   "alias": [
+    "Lake Vincent"
+   ],
+   "why": "Oct 29 5:20 AM: clue search, chat 2 + chat 8 agree (the state layer's own name within 3 km; joins only with the POTA pin inside)",
+   "when": "2026-10-29"
+  },
+  "US-6647": {
+   "alias": [
+    "Conners Marsh Flooding State Wildlife Management Area"
+   ],
+   "why": "Oct 29 5:20 AM: clue search, chat 2 + chat 8 agree (the state layer's own name within 3 km; joins only with the POTA pin inside)",
+   "when": "2026-10-29"
+  },
+  "US-6281": {
+   "no": [
+    "Loxahatchee River Park",
+    "fnl1808"
+   ],
+   "why": "Oct 29 5:50 AM (chat 8 missing pairs): the 1-acre county 'Loxahatchee River Park' is not the Wild and Scenic River; the river's own official line (data/trails) is used instead",
+   "when": "2026-10-29"
+  },
+  "US-1804": {
+   "no": [
+    "2441",
+    "Bluestone Recreation Area"
+   ],
+   "why": "Oct 29 6:05 AM: the 22,147-ac 'Bluestone Recreation Area' record is not Bluestone State Park (overlaps bigger than the 2,155-ac park, chat 8)",
+   "when": "2026-10-29"
   }
  }
 }
