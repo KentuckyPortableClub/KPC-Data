@@ -1,2605 +1,2267 @@
 {
- "about": "Spots where the boundaries of two or more POTA parks may overlap (official outlines only; land spots 50 yards across, 'small' = 50-100 yards; trails and rivers by POTA's 100-ft rule). HIDDEN, not reviewed: passes [saved, fresh, finest] must all be 1 and status 'candidate' before a person looks. Wording when shown (house rule, Oct 26 5:45 PM): '⚠️ Possible POTA overlap only. We think these POTA parks' boundaries may overlap here, but we can't confirm it. Check both official boundary maps and make your own call before you count it.' Tool pages carry the FULL notice from CLAUDE.md.",
- "pass1": "2026-10-26",
- "pass2": "2026-10-26",
- "pass3": "2026-10-27",
+ "about": "Spots where the boundaries of two or more POTA parks may overlap, by the 2-FER RULES FOR THE WHOLE WORLD (Brandon Oct 27, notes/mapping.md): the park = where its designation legally applies (national forests + grasslands = Forest Service-OWNED land only, never proclamation lines); public land open to the public; layered = real, side by side = not (ownership step: PAD-US / CPCAD at the spot, read at up to 5 points of the patch; no public owner there = not sure); a patch 50 yards across in every park ('small' = 50-100 yards; 25-50 yards = the separate 'very tight' list, members only; under 25 = not kept); line-only trails / rivers by POTA's 100-ft rule from the line or the river EDGE (USGS NHD); pins never count. Status: 'candidate' = all checks passed; 'not sure: …' and 'water only: boat or kayak' are separate lists, never the main one; n-fers up to 9; 'Same land, two park numbers' (two numbers on one official outline) is shown with that label; 'dropped: …' says why. Every decided spot shows 'checked' + 'map_dates'. Parks with no official boundary: missing-<region>.json. HIDDEN, not reviewed: passes [saved, fresh, finest] must all be 1 and status 'candidate' before a person looks. Wording when shown (house rule, Oct 27): '⚠️ Parks' boundaries may overlap here, but we can't confirm it. Check both official boundary maps and make your own call before you count it.' Tool pages carry the FULL notice from .claude/notes/notices.md.",
+ "pass1": "2026-10-28",
+ "pass2": "2026-10-28",
+ "pass3": "2026-10-29",
+ "pass5": "2026-10-29",
  "spots": [
   {
    "access": [
-    44.704298,
-    -71.051242,
-    "Parking (mixed ownership)",
-    "US-2679",
-    2421
+    43.69241,
+    -71.076903,
+    "Boat ramp / launch (mixed ownership)",
+    "US-4944",
+    2345
    ],
    "access_pin": {
     "at": [
-     44.728309,
-     -71.035713
+     43.669654,
+     -71.07331
     ],
     "from": "road",
     "name": "public road",
     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 0
+    "walk_m": 59
    },
-   "acres": 243.4,
    "box": [
-    -71.05172,
-    44.71338,
-    -71.03464,
-    44.73368
+    -71.082,
+    43.66744,
+    -71.07335,
+    43.67498
    ],
    "center": [
-    44.725046,
-    -71.041472
+    43.671222,
+    -71.078069
    ],
-   "found": "2026-10-26",
-   "id": "US-0450+US-2679@area@44.725,-71.041",
-   "kind": "area",
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-4923+US-4944@same land@43.671,-71.078",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "len_m": 0,
    "maps": [
     [
-     "US-0450",
-     "https://www.fws.gov/refuge/umbagog"
+     "US-4923",
+     "https://www.nh.gov/nhdfl/"
     ],
     [
-     "US-2679",
-     "https://www.nhstateparks.org/find-parks-trails/umbagog-lake-state-park"
+     "US-4944",
+     "https://www.nh.gov/nhdfl/"
     ]
    ],
    "names": {
-    "US-0450": "Lake Umbagog National Wildlife Refuge",
-    "US-2679": "Umbagog Lake State Park"
+    "US-4923": "Little Pine River State Forest",
+    "US-4944": "Pine River State Forest"
    },
+   "note": "both park numbers are joined to the same official outline (Pine River State Forest); POTA lists them separately: check POTA's current list",
+   "owner_here": "state land (from the outline both numbers are joined to)",
    "passes": [
     1,
     1,
     1
    ],
-   "pins_inside": {
-    "US-0450": true,
-    "US-2679": true
-   },
+   "pins": [],
    "refs": [
-    "US-0450",
-    "US-2679"
+    "US-4923",
+    "US-4944"
    ],
    "shape": [
     [
-     -71.03616,
-     44.733683
+     -71.07776,
+     43.67364
     ],
     [
-     -71.035907,
-     44.729703
+     -71.07352,
+     43.67019
     ],
     [
-     -71.051716,
-     44.729025
+     -71.07335,
+     43.66958
     ],
     [
-     -71.04729,
-     44.726267
+     -71.07581,
+     43.66744
     ],
     [
-     -71.047796,
-     44.720479
+     -71.07954,
+     43.66854
     ],
     [
-     -71.035211,
-     44.721021
+     -71.07988,
+     43.67001
     ],
     [
-     -71.034642,
-     44.713379
+     -71.082,
+     43.67028
+    ],
+    [
+     -71.08125,
+     43.67392
+    ],
+    [
+     -71.07982,
+     43.67498
+    ],
+    [
+     -71.07776,
+     43.67364
     ]
    ],
    "status": "candidate",
-   "wide_m": 948
+   "stretches": 11
   },
   {
-   "access": [
-    44.704298,
-    -71.051242,
-    "Parking (mixed ownership)",
-    "US-2679",
-    7566
-   ],
-   "access_pin": {
-    "at": [
-     44.784469,
-     -71.106774
-    ],
-    "from": "road",
-    "name": "Mountain Pond Rd",
-    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 0
-   },
-   "acres": 2130.3,
    "box": [
-    -71.11249,
-    44.73463,
-    -71.0569,
-    44.78464
+    -71.082,
+    43.66744,
+    -71.07335,
+    43.67498
    ],
    "center": [
-    44.77144,
-    -71.069676
+    43.671222,
+    -71.078069
    ],
-   "found": "2026-10-26",
-   "id": "US-0450+US-2679@area@44.771,-71.070",
-   "kind": "area",
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-4923+US-4944@same land@43.671,-71.078",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
    "maps": [
     [
-     "US-0450",
-     "https://www.fws.gov/refuge/umbagog"
+     "US-4923",
+     "https://www.nh.gov/nhdfl/"
     ],
     [
-     "US-2679",
-     "https://www.nhstateparks.org/find-parks-trails/umbagog-lake-state-park"
+     "US-4944",
+     "https://www.nh.gov/nhdfl/"
     ]
    ],
    "names": {
-    "US-0450": "Lake Umbagog National Wildlife Refuge",
-    "US-2679": "Umbagog Lake State Park"
+    "US-4923": "Little Pine River State Forest",
+    "US-4944": "Pine River State Forest"
    },
+   "note": "both park numbers are joined to the same official outline (Pine River State Forest); POTA lists them separately: check POTA's current list",
    "passes": [
     1,
     1,
     1
    ],
-   "pins_inside": {
-    "US-0450": true,
-    "US-2679": true
-   },
    "refs": [
-    "US-0450",
-    "US-2679"
+    "US-4923",
+    "US-4944"
    ],
    "shape": [
     [
-     -71.112424,
-     44.784327
+     -71.07776,
+     43.67364
     ],
     [
-     -71.111855,
-     44.773068
+     -71.07352,
+     43.67019
     ],
     [
-     -71.10901,
-     44.750866
+     -71.07335,
+     43.66958
     ],
     [
-     -71.097564,
-     44.734632
+     -71.07581,
+     43.66744
     ],
     [
-     -71.088647,
-     44.735265
+     -71.07954,
+     43.66854
     ],
     [
-     -71.088837,
-     44.737933
+     -71.07988,
+     43.67001
     ],
     [
-     -71.091177,
-     44.743857
+     -71.082,
+     43.67028
     ],
     [
-     -71.091619,
-     44.746434
+     -71.08125,
+     43.67392
     ],
     [
-     -71.093264,
-     44.748469
+     -71.07982,
+     43.67498
     ],
     [
-     -71.093643,
-     44.753669
-    ],
-    [
-     -71.09554,
-     44.758281
-    ],
-    [
-     -71.096109,
-     44.761899
-    ],
-    [
-     -71.096172,
-     44.764386
-    ],
-    [
-     -71.098006,
-     44.769631
-    ],
-    [
-     -71.100662,
-     44.772073
-    ],
-    [
-     -71.099967,
-     44.774289
-    ],
-    [
-     -71.097247,
-     44.774786
-    ],
-    [
-     -71.09554,
-     44.775691
-    ],
-    [
-     -71.094149,
-     44.776912
-    ],
-    [
-     -71.09086,
-     44.774515
-    ],
-    [
-     -71.087003,
-     44.773701
-    ],
-    [
-     -71.085043,
-     44.774244
-    ],
-    [
-     -71.081628,
-     44.770581
-    ],
-    [
-     -71.080363,
-     44.768817
-    ],
-    [
-     -71.076506,
-     44.766149
-    ],
-    [
-     -71.074419,
-     44.764069
-    ],
-    [
-     -71.070372,
-     44.763889
-    ],
-    [
-     -71.067589,
-     44.761221
-    ],
-    [
-     -71.064996,
-     44.758824
-    ],
-    [
-     -71.059115,
-     44.753307
-    ],
-    [
-     -71.065313,
-     44.760181
-    ],
-    [
-     -71.057281,
-     44.762577
-    ],
-    [
-     -71.058167,
-     44.776957
-    ],
-    [
-     -71.071194,
-     44.779353
-    ],
-    [
-     -71.067463,
-     44.779806
-    ],
-    [
-     -71.063542,
-     44.779806
-    ],
-    [
-     -71.059811,
-     44.779263
-    ],
-    [
-     -71.062657,
-     44.780212
-    ],
-    [
-     -71.064933,
-     44.779399
-    ],
-    [
-     -71.073217,
-     44.778313
-    ],
-    [
-     -71.079541,
-     44.779037
-    ],
-    [
-     -71.080679,
-     44.778901
-    ],
-    [
-     -71.083082,
-     44.777725
-    ],
-    [
-     -71.084979,
-     44.774877
-    ],
-    [
-     -71.086624,
-     44.773972
-    ],
-    [
-     -71.090608,
-     44.774696
-    ],
-    [
-     -71.093959,
-     44.777138
-    ],
-    [
-     -71.095793,
-     44.776505
-    ],
-    [
-     -71.0975,
-     44.775012
-    ],
-    [
-     -71.100409,
-     44.774831
-    ],
-    [
-     -71.100283,
-     44.776595
-    ],
-    [
-     -71.101611,
-     44.77863
-    ],
-    [
-     -71.102054,
-     44.781659
-    ],
-    [
-     -71.102054,
-     44.783242
-    ],
-    [
-     -71.111033,
-     44.784282
+     -71.07776,
+     43.67364
     ]
    ],
-   "status": "candidate",
-   "wide_m": 1588
+   "status": "merged into one row: US-4923+US-4944@same land@43.671,-71.078"
+  },
+  {
+   "box": [
+    -71.082,
+    43.66744,
+    -71.07335,
+    43.67498
+   ],
+   "center": [
+    43.671222,
+    -71.078069
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-4923+US-4944@same land@43.671,-71.078",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "maps": [
+    [
+     "US-4923",
+     "https://www.nh.gov/nhdfl/"
+    ],
+    [
+     "US-4944",
+     "https://www.nh.gov/nhdfl/"
+    ]
+   ],
+   "names": {
+    "US-4923": "Little Pine River State Forest",
+    "US-4944": "Pine River State Forest"
+   },
+   "note": "both park numbers are joined to the same official outline (Pine River State Forest); POTA lists them separately: check POTA's current list",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "refs": [
+    "US-4923",
+    "US-4944"
+   ],
+   "shape": [
+    [
+     -71.07776,
+     43.67364
+    ],
+    [
+     -71.07352,
+     43.67019
+    ],
+    [
+     -71.07335,
+     43.66958
+    ],
+    [
+     -71.07581,
+     43.66744
+    ],
+    [
+     -71.07954,
+     43.66854
+    ],
+    [
+     -71.07988,
+     43.67001
+    ],
+    [
+     -71.082,
+     43.67028
+    ],
+    [
+     -71.08125,
+     43.67392
+    ],
+    [
+     -71.07982,
+     43.67498
+    ],
+    [
+     -71.07776,
+     43.67364
+    ]
+   ],
+   "status": "merged into one row: US-4923+US-4944@same land@43.671,-71.078"
+  },
+  {
+   "box": [
+    -71.082,
+    43.66744,
+    -71.07335,
+    43.67498
+   ],
+   "center": [
+    43.671222,
+    -71.078069
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-4923+US-4944@same land@43.671,-71.078",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "maps": [
+    [
+     "US-4923",
+     "https://www.nh.gov/nhdfl/"
+    ],
+    [
+     "US-4944",
+     "https://www.nh.gov/nhdfl/"
+    ]
+   ],
+   "names": {
+    "US-4923": "Little Pine River State Forest",
+    "US-4944": "Pine River State Forest"
+   },
+   "note": "both park numbers are joined to the same official outline (Little Pine River State Forest); POTA lists them separately: check POTA's current list",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "refs": [
+    "US-4923",
+    "US-4944"
+   ],
+   "shape": [
+    [
+     -71.07776,
+     43.67364
+    ],
+    [
+     -71.07352,
+     43.67019
+    ],
+    [
+     -71.07335,
+     43.66958
+    ],
+    [
+     -71.07581,
+     43.66744
+    ],
+    [
+     -71.07954,
+     43.66854
+    ],
+    [
+     -71.07988,
+     43.67001
+    ],
+    [
+     -71.082,
+     43.67028
+    ],
+    [
+     -71.08125,
+     43.67392
+    ],
+    [
+     -71.07982,
+     43.67498
+    ],
+    [
+     -71.07776,
+     43.67364
+    ]
+   ],
+   "status": "merged into one row: US-4923+US-4944@same land@43.671,-71.078"
+  },
+  {
+   "box": [
+    -71.082,
+    43.66744,
+    -71.07335,
+    43.67498
+   ],
+   "center": [
+    43.671222,
+    -71.078069
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-4923+US-4944@same land@43.671,-71.078",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "maps": [
+    [
+     "US-4923",
+     "https://www.nh.gov/nhdfl/"
+    ],
+    [
+     "US-4944",
+     "https://www.nh.gov/nhdfl/"
+    ]
+   ],
+   "names": {
+    "US-4923": "Little Pine River State Forest",
+    "US-4944": "Pine River State Forest"
+   },
+   "note": "both park numbers are joined to the same official outline (Little Pine River State Forest); POTA lists them separately: check POTA's current list",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "refs": [
+    "US-4923",
+    "US-4944"
+   ],
+   "shape": [
+    [
+     -71.07776,
+     43.67364
+    ],
+    [
+     -71.07352,
+     43.67019
+    ],
+    [
+     -71.07335,
+     43.66958
+    ],
+    [
+     -71.07581,
+     43.66744
+    ],
+    [
+     -71.07954,
+     43.66854
+    ],
+    [
+     -71.07988,
+     43.67001
+    ],
+    [
+     -71.082,
+     43.67028
+    ],
+    [
+     -71.08125,
+     43.67392
+    ],
+    [
+     -71.07982,
+     43.67498
+    ],
+    [
+     -71.07776,
+     43.67364
+    ]
+   ],
+   "status": "merged into one row: US-4923+US-4944@same land@43.671,-71.078"
+  },
+  {
+   "box": [
+    -71.082,
+    43.66744,
+    -71.07335,
+    43.67498
+   ],
+   "center": [
+    43.671222,
+    -71.078069
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-4923+US-4944@same land@43.671,-71.078",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "maps": [
+    [
+     "US-4923",
+     "https://www.nh.gov/nhdfl/"
+    ],
+    [
+     "US-4944",
+     "https://www.nh.gov/nhdfl/"
+    ]
+   ],
+   "names": {
+    "US-4923": "Little Pine River State Forest",
+    "US-4944": "Pine River State Forest"
+   },
+   "note": "both park numbers are joined to the same official outline (Pine River State Forest); POTA lists them separately: check POTA's current list",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "refs": [
+    "US-4923",
+    "US-4944"
+   ],
+   "shape": [
+    [
+     -71.07776,
+     43.67364
+    ],
+    [
+     -71.07352,
+     43.67019
+    ],
+    [
+     -71.07335,
+     43.66958
+    ],
+    [
+     -71.07581,
+     43.66744
+    ],
+    [
+     -71.07954,
+     43.66854
+    ],
+    [
+     -71.07988,
+     43.67001
+    ],
+    [
+     -71.082,
+     43.67028
+    ],
+    [
+     -71.08125,
+     43.67392
+    ],
+    [
+     -71.07982,
+     43.67498
+    ],
+    [
+     -71.07776,
+     43.67364
+    ]
+   ],
+   "status": "merged into one row: US-4923+US-4944@same land@43.671,-71.078"
+  },
+  {
+   "box": [
+    -71.082,
+    43.66744,
+    -71.07335,
+    43.67498
+   ],
+   "center": [
+    43.671222,
+    -71.078069
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-4923+US-4944@same land@43.671,-71.078",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "maps": [
+    [
+     "US-4923",
+     "https://www.nh.gov/nhdfl/"
+    ],
+    [
+     "US-4944",
+     "https://www.nh.gov/nhdfl/"
+    ]
+   ],
+   "names": {
+    "US-4923": "Little Pine River State Forest",
+    "US-4944": "Pine River State Forest"
+   },
+   "note": "both park numbers are joined to the same official outline (Pine River State Forest); POTA lists them separately: check POTA's current list",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "refs": [
+    "US-4923",
+    "US-4944"
+   ],
+   "shape": [
+    [
+     -71.07776,
+     43.67364
+    ],
+    [
+     -71.07352,
+     43.67019
+    ],
+    [
+     -71.07335,
+     43.66958
+    ],
+    [
+     -71.07581,
+     43.66744
+    ],
+    [
+     -71.07954,
+     43.66854
+    ],
+    [
+     -71.07988,
+     43.67001
+    ],
+    [
+     -71.082,
+     43.67028
+    ],
+    [
+     -71.08125,
+     43.67392
+    ],
+    [
+     -71.07982,
+     43.67498
+    ],
+    [
+     -71.07776,
+     43.67364
+    ]
+   ],
+   "status": "merged into one row: US-4923+US-4944@same land@43.671,-71.078"
+  },
+  {
+   "box": [
+    -71.082,
+    43.66744,
+    -71.07335,
+    43.67498
+   ],
+   "center": [
+    43.671222,
+    -71.078069
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-4923+US-4944@same land@43.671,-71.078",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "maps": [
+    [
+     "US-4923",
+     "https://www.nh.gov/nhdfl/"
+    ],
+    [
+     "US-4944",
+     "https://www.nh.gov/nhdfl/"
+    ]
+   ],
+   "names": {
+    "US-4923": "Little Pine River State Forest",
+    "US-4944": "Pine River State Forest"
+   },
+   "note": "both park numbers are joined to the same official outline (Pine River State Forest); POTA lists them separately: check POTA's current list",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "refs": [
+    "US-4923",
+    "US-4944"
+   ],
+   "shape": [
+    [
+     -71.07776,
+     43.67364
+    ],
+    [
+     -71.07352,
+     43.67019
+    ],
+    [
+     -71.07335,
+     43.66958
+    ],
+    [
+     -71.07581,
+     43.66744
+    ],
+    [
+     -71.07954,
+     43.66854
+    ],
+    [
+     -71.07988,
+     43.67001
+    ],
+    [
+     -71.082,
+     43.67028
+    ],
+    [
+     -71.08125,
+     43.67392
+    ],
+    [
+     -71.07982,
+     43.67498
+    ],
+    [
+     -71.07776,
+     43.67364
+    ]
+   ],
+   "status": "merged into one row: US-4923+US-4944@same land@43.671,-71.078"
+  },
+  {
+   "box": [
+    -71.082,
+    43.66744,
+    -71.07335,
+    43.67498
+   ],
+   "center": [
+    43.671222,
+    -71.078069
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-4923+US-4944@same land@43.671,-71.078",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "maps": [
+    [
+     "US-4923",
+     "https://www.nh.gov/nhdfl/"
+    ],
+    [
+     "US-4944",
+     "https://www.nh.gov/nhdfl/"
+    ]
+   ],
+   "names": {
+    "US-4923": "Little Pine River State Forest",
+    "US-4944": "Pine River State Forest"
+   },
+   "note": "both park numbers are joined to the same official outline (Little Pine River State Forest); POTA lists them separately: check POTA's current list",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "refs": [
+    "US-4923",
+    "US-4944"
+   ],
+   "shape": [
+    [
+     -71.07776,
+     43.67364
+    ],
+    [
+     -71.07352,
+     43.67019
+    ],
+    [
+     -71.07335,
+     43.66958
+    ],
+    [
+     -71.07581,
+     43.66744
+    ],
+    [
+     -71.07954,
+     43.66854
+    ],
+    [
+     -71.07988,
+     43.67001
+    ],
+    [
+     -71.082,
+     43.67028
+    ],
+    [
+     -71.08125,
+     43.67392
+    ],
+    [
+     -71.07982,
+     43.67498
+    ],
+    [
+     -71.07776,
+     43.67364
+    ]
+   ],
+   "status": "merged into one row: US-4923+US-4944@same land@43.671,-71.078"
+  },
+  {
+   "box": [
+    -71.082,
+    43.66744,
+    -71.07335,
+    43.67498
+   ],
+   "center": [
+    43.671222,
+    -71.078069
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-4923+US-4944@same land@43.671,-71.078",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "maps": [
+    [
+     "US-4923",
+     "https://www.nh.gov/nhdfl/"
+    ],
+    [
+     "US-4944",
+     "https://www.nh.gov/nhdfl/"
+    ]
+   ],
+   "names": {
+    "US-4923": "Little Pine River State Forest",
+    "US-4944": "Pine River State Forest"
+   },
+   "note": "both park numbers are joined to the same official outline (Pine River State Forest); POTA lists them separately: check POTA's current list",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "refs": [
+    "US-4923",
+    "US-4944"
+   ],
+   "shape": [
+    [
+     -71.07776,
+     43.67364
+    ],
+    [
+     -71.07352,
+     43.67019
+    ],
+    [
+     -71.07335,
+     43.66958
+    ],
+    [
+     -71.07581,
+     43.66744
+    ],
+    [
+     -71.07954,
+     43.66854
+    ],
+    [
+     -71.07988,
+     43.67001
+    ],
+    [
+     -71.082,
+     43.67028
+    ],
+    [
+     -71.08125,
+     43.67392
+    ],
+    [
+     -71.07982,
+     43.67498
+    ],
+    [
+     -71.07776,
+     43.67364
+    ]
+   ],
+   "status": "merged into one row: US-4923+US-4944@same land@43.671,-71.078"
+  },
+  {
+   "box": [
+    -71.082,
+    43.66744,
+    -71.07335,
+    43.67498
+   ],
+   "center": [
+    43.671222,
+    -71.078069
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-4923+US-4944@same land@43.671,-71.078",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "maps": [
+    [
+     "US-4923",
+     "https://www.nh.gov/nhdfl/"
+    ],
+    [
+     "US-4944",
+     "https://www.nh.gov/nhdfl/"
+    ]
+   ],
+   "names": {
+    "US-4923": "Little Pine River State Forest",
+    "US-4944": "Pine River State Forest"
+   },
+   "note": "both park numbers are joined to the same official outline (Pine River State Forest); POTA lists them separately: check POTA's current list",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "refs": [
+    "US-4923",
+    "US-4944"
+   ],
+   "shape": [
+    [
+     -71.07776,
+     43.67364
+    ],
+    [
+     -71.07352,
+     43.67019
+    ],
+    [
+     -71.07335,
+     43.66958
+    ],
+    [
+     -71.07581,
+     43.66744
+    ],
+    [
+     -71.07954,
+     43.66854
+    ],
+    [
+     -71.07988,
+     43.67001
+    ],
+    [
+     -71.082,
+     43.67028
+    ],
+    [
+     -71.08125,
+     43.67392
+    ],
+    [
+     -71.07982,
+     43.67498
+    ],
+    [
+     -71.07776,
+     43.67364
+    ]
+   ],
+   "status": "merged into one row: US-4923+US-4944@same land@43.671,-71.078"
   },
   {
    "access": [
-    44.857402,
-    -71.053093,
+    42.784603,
+    -71.763224,
     "Boat ramp / launch (mixed ownership)",
-    "US-4876",
-    161
+    "US-4952",
+    579
    ],
    "access_pin": {
     "at": [
-     44.857151,
-     -71.052217
-    ],
-    "from": "parking / access point",
-    "name": "Boat ramp / launch (mixed ownership)",
-    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 71
-   },
-   "acres": 13.4,
-   "box": [
-    -71.05461,
-    44.85402,
-    -71.05011,
-    44.85791
-   ],
-   "center": [
-    44.856776,
-    -71.051254
-   ],
-   "found": "2026-10-26",
-   "id": "US-0450+US-4876@area@44.856,-71.051",
-   "kind": "area",
-   "maps": [
-    [
-     "US-0450",
-     "https://www.fws.gov/refuge/umbagog"
-    ],
-    [
-     "US-4876",
-     "https://www.nh.gov/nhdfl/"
-    ]
-   ],
-   "names": {
-    "US-0450": "Lake Umbagog National Wildlife Refuge",
-    "US-4876": "Big Island State Forest"
-   },
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-0450": true,
-    "US-4876": true
-   },
-   "refs": [
-    "US-0450",
-    "US-4876"
-   ],
-   "shape": [
-    [
-     -71.050366,
-     44.857681
-    ],
-    [
-     -71.050937,
-     44.857907
-    ],
-    [
-     -71.05157,
-     44.857816
-    ],
-    [
-     -71.052331,
-     44.857048
-    ],
-    [
-     -71.053091,
-     44.855782
-    ],
-    [
-     -71.054295,
-     44.854832
-    ],
-    [
-     -71.054548,
-     44.85447
-    ],
-    [
-     -71.054612,
-     44.854018
-    ],
-    [
-     -71.053915,
-     44.854063
-    ],
-    [
-     -71.053915,
-     44.854696
-    ],
-    [
-     -71.053408,
-     44.855103
-    ],
-    [
-     -71.052267,
-     44.855284
-    ],
-    [
-     -71.05138,
-     44.855601
-    ],
-    [
-     -71.050176,
-     44.85655
-    ],
-    [
-     -71.050113,
-     44.857409
-    ]
-   ],
-   "status": "candidate",
-   "wide_m": 172
-  },
-  {
-   "acres": 243.4,
-   "box": [
-    -71.42647,
-    44.14281,
-    -71.35068,
-    44.21498
-   ],
-   "center": [
-    44.143667,
-    -71.383064
-   ],
-   "found": "2026-10-26",
-   "id": "US-2647+US-4512@area@44.144,-71.383",
-   "kind": "area",
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-2647": true,
-    "US-4512": false
-   },
-   "refs": [
-    "US-2647",
-    "US-4512"
-   ],
-   "shape": [
-    [
-     -71.426466,
-     44.210907
-    ],
-    [
-     -71.413126,
-     44.167452
-    ],
-    [
-     -71.387135,
-     44.155197
-    ],
-    [
-     -71.385131,
-     44.148369
-    ],
-    [
-     -71.394275,
-     44.146877
-    ],
-    [
-     -71.394024,
-     44.145701
-    ],
-    [
-     -71.384755,
-     44.146968
-    ],
-    [
-     -71.383503,
-     44.142853
-    ],
-    [
-     -71.38225,
-     44.143079
-    ],
-    [
-     -71.382062,
-     44.142807
-    ],
-    [
-     -71.371541,
-     44.144797
-    ],
-    [
-     -71.371728,
-     44.145023
-    ],
-    [
-     -71.382187,
-     44.143124
-    ],
-    [
-     -71.383503,
-     44.147284
-    ],
-    [
-     -71.392834,
-     44.146018
-    ],
-    [
-     -71.393148,
-     44.147058
-    ],
-    [
-     -71.383941,
-     44.148505
-    ],
-    [
-     -71.386008,
-     44.155695
-    ],
-    [
-     -71.412375,
-     44.167723
-    ],
-    [
-     -71.425903,
-     44.210816
-    ],
-    [
-     -71.416821,
-     44.212082
-    ],
-    [
-     -71.407239,
-     44.213168
-    ],
-    [
-     -71.407364,
-     44.213303
-    ],
-    [
-     -71.415757,
-     44.212173
-    ]
-   ],
-   "status": "dropped: a pin is outside its own outline",
-   "wide_m": 114
-  },
-  {
-   "acres": 401.5,
-   "box": [
-    -71.71572,
-    44.0872,
-    -71.66058,
-    44.19758
-   ],
-   "center": [
-    44.126404,
-    -71.690376
-   ],
-   "found": "2026-10-26",
-   "id": "US-2653+US-4512@area@44.126,-71.688",
-   "kind": "area",
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-2653": true,
-    "US-4512": false
-   },
-   "refs": [
-    "US-2653",
-    "US-4512"
-   ],
-   "shape": [
-    [
-     -71.702956,
-     44.197578
-    ],
-    [
-     -71.702518,
-     44.197261
-    ],
-    [
-     -71.702455,
-     44.196447
-    ],
-    [
-     -71.699388,
-     44.19595
-    ],
-    [
-     -71.698011,
-     44.19491
-    ],
-    [
-     -71.696008,
-     44.195362
-    ],
-    [
-     -71.694819,
-     44.194096
-    ],
-    [
-     -71.696822,
-     44.187449
-    ],
-    [
-     -71.687309,
-     44.184736
-    ],
-    [
-     -71.678296,
-     44.178631
-    ],
-    [
-     -71.679923,
-     44.174155
-    ],
-    [
-     -71.67911,
-     44.172572
-    ],
-    [
-     -71.677357,
-     44.171487
-    ],
-    [
-     -71.673352,
-     44.170808
-    ],
-    [
-     -71.672162,
-     44.169633
-    ],
-    [
-     -71.663713,
-     44.16597
-    ],
-    [
-     -71.662837,
-     44.164794
-    ],
-    [
-     -71.662524,
-     44.163754
-    ],
-    [
-     -71.660897,
-     44.162036
-    ],
-    [
-     -71.663338,
-     44.159052
-    ],
-    [
-     -71.664527,
-     44.157062
-    ],
-    [
-     -71.665653,
-     44.155298
-    ],
-    [
-     -71.666404,
-     44.15453
-    ],
-    [
-     -71.667343,
-     44.153444
-    ],
-    [
-     -71.66872,
-     44.150777
-    ],
-    [
-     -71.671599,
-     44.140919
-    ],
-    [
-     -71.673414,
-     44.14119
-    ],
-    [
-     -71.676606,
-     44.135221
-    ],
-    [
-     -71.680236,
-     44.128077
-    ],
-    [
-     -71.669033,
-     44.124007
-    ],
-    [
-     -71.673602,
-     44.112838
-    ],
-    [
-     -71.665966,
-     44.103433
-    ],
-    [
-     -71.674541,
-     44.087199
-    ],
-    [
-     -71.665528,
-     44.104201
-    ],
-    [
-     -71.674353,
-     44.11329
-    ],
-    [
-     -71.680174,
-     44.128077
-    ],
-    [
-     -71.673101,
-     44.141371
-    ],
-    [
-     -71.671349,
-     44.140919
-    ],
-    [
-     -71.668094,
-     44.149149
-    ],
-    [
-     -71.668157,
-     44.151771
-    ],
-    [
-     -71.667656,
-     44.15254
-    ],
-    [
-     -71.666905,
-     44.153264
-    ],
-    [
-     -71.665904,
-     44.154439
-    ],
-    [
-     -71.66534,
-     44.155027
-    ],
-    [
-     -71.663963,
-     44.156972
-    ],
-    [
-     -71.6634,
-     44.158373
-    ],
-    [
-     -71.660897,
-     44.15982
-    ],
-    [
-     -71.662211,
-     44.163257
-    ],
-    [
-     -71.663275,
-     44.165834
-    ],
-    [
-     -71.663651,
-     44.166241
-    ],
-    [
-     -71.672538,
-     44.170266
-    ],
-    [
-     -71.674478,
-     44.17117
-    ],
-    [
-     -71.677107,
-     44.172301
-    ],
-    [
-     -71.677921,
-     44.17212
-    ],
-    [
-     -71.679548,
-     44.173838
-    ],
-    [
-     -71.678108,
-     44.178541
-    ],
-    [
-     -71.68856,
-     44.181525
-    ],
-    [
-     -71.687809,
-     44.183605
-    ],
-    [
-     -71.686996,
-     44.184736
-    ],
-    [
-     -71.695007,
-     44.190479
-    ],
-    [
-     -71.69388,
-     44.193599
-    ],
-    [
-     -71.695007,
-     44.194322
-    ],
-    [
-     -71.696008,
-     44.195362
-    ],
-    [
-     -71.697823,
-     44.194955
-    ],
-    [
-     -71.698574,
-     44.195453
-    ],
-    [
-     -71.699388,
-     44.195995
-    ],
-    [
-     -71.702392,
-     44.196447
-    ],
-    [
-     -71.702768,
-     44.197352
-    ]
-   ],
-   "status": "dropped: a pin is outside its own outline",
-   "wide_m": 322
-  },
-  {
-   "acres": 100.7,
-   "box": [
-    -71.28137,
-    44.4565,
-    -71.26985,
-    44.46188
-   ],
-   "center": [
-    44.459214,
-    -71.276015
-   ],
-   "found": "2026-10-26",
-   "id": "US-2657+US-4512@area@44.459,-71.276",
-   "kind": "area",
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-2657": false,
-    "US-4512": false
-   },
-   "refs": [
-    "US-2657",
-    "US-4512"
-   ],
-   "shape": [
-    [
-     -71.269847,
-     44.461882
-    ],
-    [
-     -71.278659,
-     44.461792
-    ],
-    [
-     -71.281366,
-     44.456501
-    ],
-    [
-     -71.272616,
-     44.456682
-    ]
-   ],
-   "status": "dropped: a pin is outside its own outline",
-   "wide_m": 584
-  },
-  {
-   "access": [
-    43.324217,
-    -72.06451,
-    "Trailhead (statewide)",
-    "US-2666",
-    4431
-   ],
-   "access_pin": {
-    "at": [
-     43.314065,
-     -72.037466
+     42.803846,
+     -71.772621
     ],
     "from": "road",
-    "name": "Old Post Rd",
-    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 444
-   },
-   "acres": 510.1,
-   "box": [
-    -72.07544,
-    43.26296,
-    -72.03737,
-    43.3141
-   ],
-   "center": [
-    43.2843,
-    -72.069336
-   ],
-   "found": "2026-10-26",
-   "id": "US-2666+US-2673@area@43.284,-72.069",
-   "kind": "area",
-   "maps": [
-    [
-     "US-2666",
-     "https://www.nhstateparks.org/find-parks-trails/mt-sunapee-state-park"
-    ],
-    [
-     "US-2673",
-     "https://www.nhstateparks.org/find-parks-trails/pillsbury-state-park"
-    ]
-   ],
-   "names": {
-    "US-2666": "Mount Sunapee State Park",
-    "US-2673": "Pillsbury State Park"
-   },
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-2666": true,
-    "US-2673": true
-   },
-   "refs": [
-    "US-2666",
-    "US-2673"
-   ],
-   "shape": [
-    [
-     -72.037497,
-     43.314099
-    ],
-    [
-     -72.051565,
-     43.313601
-    ],
-    [
-     -72.055946,
-     43.304784
-    ],
-    [
-     -72.06224,
-     43.304919
-    ],
-    [
-     -72.062364,
-     43.304603
-    ],
-    [
-     -72.063783,
-     43.304648
-    ],
-    [
-     -72.064709,
-     43.304558
-    ],
-    [
-     -72.064955,
-     43.309306
-    ],
-    [
-     -72.065449,
-     43.309758
-    ],
-    [
-     -72.065634,
-     43.310481
-    ],
-    [
-     -72.06693,
-     43.312742
-    ],
-    [
-     -72.073779,
-     43.31116
-    ],
-    [
-     -72.068226,
-     43.309667
-    ],
-    [
-     -72.069645,
-     43.30718
-    ],
-    [
-     -72.067855,
-     43.299538
-    ],
-    [
-     -72.067547,
-     43.296735
-    ],
-    [
-     -72.067609,
-     43.296328
-    ],
-    [
-     -72.069707,
-     43.292575
-    ],
-    [
-     -72.070077,
-     43.292123
-    ],
-    [
-     -72.069953,
-     43.289726
-    ],
-    [
-     -72.068966,
-     43.287827
-    ],
-    [
-     -72.073409,
-     43.287872
-    ],
-    [
-     -72.074149,
-     43.286606
-    ],
-    [
-     -72.074026,
-     43.286018
-    ],
-    [
-     -72.075075,
-     43.284074
-    ],
-    [
-     -72.075445,
-     43.284029
-    ],
-    [
-     -72.074211,
-     43.283983
-    ],
-    [
-     -72.074088,
-     43.283893
-    ],
-    [
-     -72.066806,
-     43.262957
-    ],
-    [
-     -72.066745,
-     43.265082
-    ],
-    [
-     -72.066868,
-     43.266032
-    ],
-    [
-     -72.068843,
-     43.269423
-    ],
-    [
-     -72.066189,
-     43.269378
-    ],
-    [
-     -72.068658,
-     43.277472
-    ],
-    [
-     -72.064585,
-     43.28326
-    ],
-    [
-     -72.063783,
-     43.28326
-    ],
-    [
-     -72.061315,
-     43.287691
-    ],
-    [
-     -72.066189,
-     43.287782
-    ],
-    [
-     -72.067485,
-     43.290088
-    ],
-    [
-     -72.067547,
-     43.291716
-    ],
-    [
-     -72.065943,
-     43.293796
-    ],
-    [
-     -72.065079,
-     43.296418
-    ],
-    [
-     -72.061685,
-     43.300488
-    ],
-    [
-     -72.062672,
-     43.303066
-    ],
-    [
-     -72.062364,
-     43.304513
-    ],
-    [
-     -72.06224,
-     43.304603
-    ],
-    [
-     -72.05607,
-     43.304422
-    ],
-    [
-     -72.055514,
-     43.3051
-    ],
-    [
-     -72.05138,
-     43.313511
-    ],
-    [
-     -72.041199,
-     43.313873
-    ],
-    [
-     -72.038175,
-     43.313782
-    ],
-    [
-     -72.037373,
-     43.313873
-    ]
-   ],
-   "status": "candidate",
-   "wide_m": 779
-  },
-  {
-   "acres": 7.9,
-   "box": [
-    -71.30633,
-    44.26772,
-    -71.30225,
-    44.27238
-   ],
-   "center": [
-    44.271383,
-    -71.305452
-   ],
-   "found": "2026-10-26",
-   "id": "US-2667+US-4512@area@44.272,-71.305",
-   "kind": "area",
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-2667": true,
-    "US-4512": false
-   },
-   "refs": [
-    "US-2667",
-    "US-4512"
-   ],
-   "shape": [
-    [
-     -71.302818,
-     44.272378
-    ],
-    [
-     -71.303947,
-     44.272333
-    ],
-    [
-     -71.305076,
-     44.271971
-    ],
-    [
-     -71.306017,
-     44.271248
-    ],
-    [
-     -71.30633,
-     44.27057
-    ],
-    [
-     -71.30633,
-     44.269575
-    ],
-    [
-     -71.305954,
-     44.268851
-    ],
-    [
-     -71.304825,
-     44.268037
-    ],
-    [
-     -71.303696,
-     44.267721
-    ],
-    [
-     -71.303445,
-     44.267721
-    ],
-    [
-     -71.304198,
-     44.267902
-    ],
-    [
-     -71.305264,
-     44.26858
-    ],
-    [
-     -71.305766,
-     44.269394
-    ],
-    [
-     -71.305829,
-     44.270163
-    ],
-    [
-     -71.305452,
-     44.270976
-    ],
-    [
-     -71.304511,
-     44.271745
-    ],
-    [
-     -71.303508,
-     44.272062
-    ],
-    [
-     -71.302253,
-     44.272107
-    ],
-    [
-     -71.302441,
-     44.272333
-    ]
-   ],
-   "small": "small overlap: tight fit, check carefully",
-   "status": "dropped: a pin is outside its own outline",
-   "wide_m": 64
-  },
-  {
-   "acres": 5.1,
-   "box": [
-    -71.85073,
-    43.34663,
-    -71.84579,
-    43.35061
-   ],
-   "center": [
-    43.350251,
-    -71.849986
-   ],
-   "found": "2026-10-26",
-   "id": "US-2676+US-4918@area@43.350,-71.850",
-   "kind": "area",
-   "passes": [
-    1,
-    0,
-    0
-   ],
-   "refs": [
-    "US-2676",
-    "US-4918"
-   ],
-   "shape": [
-    [
-     -71.850727,
-     43.350251
-    ],
-    [
-     -71.848504,
-     43.35007
-    ],
-    [
-     -71.846774,
-     43.346633
-    ],
-    [
-     -71.845786,
-     43.346633
-    ],
-    [
-     -71.847021,
-     43.346995
-    ],
-    [
-     -71.848256,
-     43.35007
-    ],
-    [
-     -71.849245,
-     43.350612
-    ]
-   ],
-   "small": "small overlap: tight fit, check carefully",
-   "status": "dropped in pass 2",
-   "wide_m": 80
-  },
-  {
-   "acres": 19.8,
-   "box": [
-    -71.45929,
-    44.34586,
-    -71.44893,
-    44.35192
-   ],
-   "center": [
-    44.347485,
-    -71.449748
-   ],
-   "found": "2026-10-26",
-   "id": "US-4512+US-4863@area@44.347,-71.450",
-   "kind": "area",
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-4512": false,
-    "US-4863": true
-   },
-   "refs": [
-    "US-4512",
-    "US-4863"
-   ],
-   "shape": [
-    [
-     -71.44981,
-     44.351826
-    ],
-    [
-     -71.450187,
-     44.351781
-    ],
-    [
-     -71.45025,
-     44.351917
-    ],
-    [
-     -71.449371,
-     44.348118
-    ],
-    [
-     -71.449496,
-     44.347983
-    ],
-    [
-     -71.459295,
-     44.346174
-    ],
-    [
-     -71.459232,
-     44.345858
-    ],
-    [
-     -71.448931,
-     44.347124
-    ]
-   ],
-   "status": "dropped: a pin is outside its own outline",
-   "wide_m": 108
-  },
-  {
-   "acres": 56.1,
-   "box": [
-    -71.87444,
-    43.98837,
-    -71.86813,
-    44.00931
-   ],
-   "center": [
-    44.00804,
-    -71.872756
-   ],
-   "found": "2026-10-26",
-   "id": "US-4512+US-4875@area@44.006,-71.873",
-   "kind": "area",
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-4512": false,
-    "US-4875": true
-   },
-   "refs": [
-    "US-4512",
-    "US-4875"
-   ],
-   "shape": [
-    [
-     -71.871882,
-     44.009307
-    ],
-    [
-     -71.873443,
-     44.008628
-    ],
-    [
-     -71.874442,
-     43.994475
-    ],
-    [
-     -71.869259,
-     43.992531
-    ],
-    [
-     -71.870133,
-     43.988868
-    ],
-    [
-     -71.870258,
-     43.988732
-    ],
-    [
-     -71.870945,
-     43.988777
-    ],
-    [
-     -71.871008,
-     43.988506
-    ],
-    [
-     -71.869696,
-     43.98837
-    ],
-    [
-     -71.869571,
-     43.988551
-    ],
-    [
-     -71.869134,
-     43.988506
-    ],
-    [
-     -71.868135,
-     43.99235
-    ],
-    [
-     -71.873443,
-     43.994294
-    ]
-   ],
-   "status": "dropped: a pin is outside its own outline",
-   "wide_m": 128
-  },
-  {
-   "acres": 238.4,
-   "box": [
-    -71.97298,
-    43.91662,
-    -71.9592,
-    43.92978
-   ],
-   "center": [
-    43.92214,
-    -71.964317
-   ],
-   "found": "2026-10-26",
-   "id": "US-4512+US-4959@area@43.922,-71.964",
-   "kind": "area",
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-4512": false,
-    "US-4959": false
-   },
-   "refs": [
-    "US-4512",
-    "US-4959"
-   ],
-   "shape": [
-    [
-     -71.967311,
-     43.929782
-    ],
-    [
-     -71.967934,
-     43.924627
-    ],
-    [
-     -71.968059,
-     43.924582
-    ],
-    [
-     -71.971676,
-     43.926029
-    ],
-    [
-     -71.972299,
-     43.924401
-    ],
-    [
-     -71.972985,
-     43.921597
-    ],
-    [
-     -71.968496,
-     43.92006
-    ],
-    [
-     -71.96862,
-     43.919472
-    ],
-    [
-     -71.966438,
-     43.918794
-    ],
-    [
-     -71.966126,
-     43.918794
-    ],
-    [
-     -71.959204,
-     43.916623
-    ],
-    [
-     -71.959578,
-     43.927385
-    ],
-    [
-     -71.95964,
-     43.926662
-    ],
-    [
-     -71.960576,
-     43.926797
-    ]
-   ],
-   "status": "dropped: a pin is outside its own outline",
-   "wide_m": 797
-  },
-  {
-   "box": [
-    -71.19234,
-    44.17127,
-    -71.19231,
-    44.17135
-   ],
-   "center": [
-    44.17131,
-    -71.19234
-   ],
-   "found": "2026-10-26",
-   "id": "US-4512+US-8015@river@44.171,-71.192",
-   "kind": "river",
-   "len_m": 10,
-   "passes": [
-    1,
-    1,
-    0
-   ],
-   "refs": [
-    "US-4512",
-    "US-8015"
-   ],
-   "shape": [
-    [
-     -71.192305,
-     44.171272
-    ],
-    [
-     -71.19234,
-     44.17131
-    ],
-    [
-     -71.192314,
-     44.171352
-    ]
-   ],
-   "status": "dropped in pass 3"
-  },
-  {
-   "box": [
-    -71.19291,
-    44.19974,
-    -71.1888,
-    44.21104
-   ],
-   "center": [
-    44.20546,
-    -71.190847
-   ],
-   "found": "2026-10-26",
-   "id": "US-4512+US-8015@river@44.204,-71.191",
-   "kind": "river",
-   "len_m": 1441,
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-4512": false,
-    "US-8015": true
-   },
-   "refs": [
-    "US-4512",
-    "US-8015"
-   ],
-   "shape": [
-    [
-     -71.192146,
-     44.199736
-    ],
-    [
-     -71.19201,
-     44.19989
-    ],
-    [
-     -71.192122,
-     44.200054
-    ],
-    [
-     -71.192235,
-     44.200218
-    ],
-    [
-     -71.192347,
-     44.200381
-    ],
-    [
-     -71.19246,
-     44.200545
-    ],
-    [
-     -71.192572,
-     44.200709
-    ],
-    [
-     -71.192685,
-     44.200873
-    ],
-    [
-     -71.192797,
-     44.201036
-    ],
-    [
-     -71.19291,
-     44.2012
-    ],
-    [
-     -71.192754,
-     44.201341
-    ],
-    [
-     -71.192597,
-     44.201483
-    ],
-    [
-     -71.192441,
-     44.201624
-    ],
-    [
-     -71.192284,
-     44.201766
-    ],
-    [
-     -71.192128,
-     44.201907
-    ],
-    [
-     -71.191971,
-     44.202049
-    ],
-    [
-     -71.191815,
-     44.20219
-    ],
-    [
-     -71.191659,
-     44.202331
-    ],
-    [
-     -71.191502,
-     44.202473
-    ],
-    [
-     -71.191346,
-     44.202614
-    ],
-    [
-     -71.191189,
-     44.202756
-    ],
-    [
-     -71.191033,
-     44.202897
-    ],
-    [
-     -71.190876,
-     44.203039
-    ],
-    [
-     -71.19072,
-     44.20318
-    ],
-    [
-     -71.190763,
-     44.203359
-    ],
-    [
-     -71.190806,
-     44.203538
-    ],
-    [
-     -71.190849,
-     44.203717
-    ],
-    [
-     -71.190892,
-     44.203896
-    ],
-    [
-     -71.190935,
-     44.204076
-    ],
-    [
-     -71.190978,
-     44.204255
-    ],
-    [
-     -71.191021,
-     44.204434
-    ],
-    [
-     -71.191064,
-     44.204613
-    ],
-    [
-     -71.191047,
-     44.204791
-    ],
-    [
-     -71.190993,
-     44.20497
-    ],
-    [
-     -71.19094,
-     44.205148
-    ],
-    [
-     -71.190887,
-     44.205326
-    ],
-    [
-     -71.190833,
-     44.205505
-    ],
-    [
-     -71.19078,
-     44.205683
-    ],
-    [
-     -71.190727,
-     44.205861
-    ],
-    [
-     -71.190673,
-     44.20604
-    ],
-    [
-     -71.19062,
-     44.206218
-    ],
-    [
-     -71.190567,
-     44.206396
-    ],
-    [
-     -71.190513,
-     44.206575
-    ],
-    [
-     -71.19046,
-     44.206753
-    ],
-    [
-     -71.190515,
-     44.20692
-    ],
-    [
-     -71.190635,
-     44.20708
-    ],
-    [
-     -71.190755,
-     44.20724
-    ],
-    [
-     -71.190875,
-     44.2074
-    ],
-    [
-     -71.190884,
-     44.207549
-    ],
-    [
-     -71.190707,
-     44.20768
-    ],
-    [
-     -71.19053,
-     44.207811
-    ],
-    [
-     -71.190352,
-     44.207943
-    ],
-    [
-     -71.190175,
-     44.208074
-    ],
-    [
-     -71.189998,
-     44.208205
-    ],
-    [
-     -71.189821,
-     44.208336
-    ],
-    [
-     -71.189644,
-     44.208467
-    ],
-    [
-     -71.189599,
-     44.208638
-    ],
-    [
-     -71.189597,
-     44.208821
-    ],
-    [
-     -71.189596,
-     44.209005
-    ],
-    [
-     -71.189594,
-     44.209188
-    ],
-    [
-     -71.189593,
-     44.209372
-    ],
-    [
-     -71.189591,
-     44.209555
-    ],
-    [
-     -71.189532,
-     44.209725
-    ],
-    [
-     -71.189378,
-     44.209871
-    ],
-    [
-     -71.189224,
-     44.210018
-    ],
-    [
-     -71.18907,
-     44.210164
-    ],
-    [
-     -71.188916,
-     44.21031
-    ],
-    [
-     -71.188844,
-     44.210453
-    ],
-    [
-     -71.189018,
-     44.210583
-    ],
-    [
-     -71.189193,
-     44.210714
-    ],
-    [
-     -71.189368,
-     44.210845
-    ],
-    [
-     -71.189542,
-     44.210975
-    ]
-   ],
-   "status": "dropped: a pin is outside its own outline"
-  },
-  {
-   "box": [
-    -71.21681,
-    44.21227,
-    -71.16099,
-    44.25599
-   ],
-   "center": [
-    44.213182,
-    -71.190248
-   ],
-   "found": "2026-10-26",
-   "id": "US-4512+US-8015@river@44.213,-71.190",
-   "kind": "river",
-   "len_m": 13175,
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-4512": false,
-    "US-8015": true
-   },
-   "refs": [
-    "US-4512",
-    "US-8015"
-   ],
-   "shape": [
-    [
-     -71.19095,
-     44.21425
-    ],
-    [
-     -71.190679,
-     44.214439
-    ],
-    [
-     -71.190408,
-     44.214627
-    ],
-    [
-     -71.190168,
-     44.214822
-    ],
-    [
-     -71.190258,
-     44.215088
-    ],
-    [
-     -71.190348,
-     44.215354
-    ],
-    [
-     -71.190169,
-     44.215564
-    ],
-    [
-     -71.189902,
-     44.215757
-    ],
-    [
-     -71.189634,
-     44.215949
-    ],
-    [
-     -71.189367,
-     44.216142
-    ],
-    [
-     -71.189346,
-     44.216393
-    ],
-    [
-     -71.189408,
-     44.216664
-    ],
-    [
-     -71.18947,
-     44.216935
-    ],
-    [
-     -71.189531,
-     44.217206
-    ],
-    [
-     -71.189593,
-     44.217477
-    ],
-    [
-     -71.189655,
-     44.217747
-    ],
-    [
-     -71.189921,
-     44.217935
-    ],
-    [
-     -71.190206,
-     44.218115
-    ],
-    [
-     -71.190491,
-     44.218295
-    ],
-    [
-     -71.190607,
-     44.21853
-    ],
-    [
-     -71.190603,
-     44.218804
-    ],
-    [
-     -71.190547,
-     44.219067
-    ],
-    [
-     -71.190335,
-     44.219296
-    ],
-    [
-     -71.190124,
-     44.219525
-    ],
-    [
-     -71.189912,
-     44.219755
-    ],
-    [
-     -71.189701,
-     44.219984
-    ],
-    [
-     -71.189661,
-     44.220242
-    ],
-    [
-     -71.189708,
-     44.220515
-    ],
-    [
-     -71.189755,
-     44.220788
-    ],
-    [
-     -71.189802,
-     44.221061
-    ],
-    [
-     -71.189849,
-     44.221334
-    ],
-    [
-     -71.189896,
-     44.221607
-    ],
-    [
-     -71.189786,
-     44.221869
-    ],
-    [
-     -71.189662,
-     44.22213
-    ],
-    [
-     -71.189538,
-     44.22239
-    ],
-    [
-     -71.189414,
-     44.222651
-    ],
-    [
-     -71.189279,
-     44.222907
-    ],
-    [
-     -71.189024,
-     44.223108
-    ],
-    [
-     -71.188769,
-     44.22331
-    ],
-    [
-     -71.188514,
-     44.223511
-    ],
-    [
-     -71.18826,
-     44.223713
-    ],
-    [
-     -71.188005,
-     44.223914
-    ],
-    [
-     -71.18775,
-     44.224116
-    ],
-    [
-     -71.187664,
-     44.224319
-    ],
-    [
-     -71.187917,
-     44.224525
-    ],
-    [
-     -71.188169,
-     44.224731
-    ],
-    [
-     -71.188422,
-     44.224938
-    ],
-    [
-     -71.188675,
-     44.225144
-    ],
-    [
-     -71.188688,
-     44.225375
-    ],
-    [
-     -71.188531,
-     44.225623
-    ],
-    [
-     -71.188374,
-     44.225871
-    ],
-    [
-     -71.188216,
-     44.226119
-    ],
-    [
-     -71.188297,
-     44.226377
-    ],
-    [
-     -71.188426,
-     44.226637
-    ],
-    [
-     -71.188554,
-     44.226897
-    ],
-    [
-     -71.188575,
-     44.227148
-    ],
-    [
-     -71.188381,
-     44.227381
-    ],
-    [
-     -71.188186,
-     44.227614
-    ],
-    [
-     -71.187992,
-     44.227847
-    ],
-    [
-     -71.187798,
-     44.22808
-    ],
-    [
-     -71.187603,
-     44.228313
-    ],
-    [
-     -71.187409,
-     44.228546
-    ],
-    [
-     -71.187215,
-     44.228779
-    ],
-    [
-     -71.18702,
-     44.229012
-    ],
-    [
-     -71.186826,
-     44.229245
-    ]
-   ],
-   "status": "dropped: a pin is outside its own outline"
-  },
-  {
-   "access": null,
-   "access_pin": {
-    "at": [
-     43.541222,
-     -71.757032
-    ],
-    "from": "road",
-    "name": "Cider Rd",
+    "name": "Brown Rd",
     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
     "walk_m": 0
    },
-   "acres": 4.2,
    "box": [
-    -71.75483,
-    43.55098,
-    -71.74888,
-    43.55627
+    -71.77638,
+    42.78393,
+    -71.75738,
+    42.79339
    ],
    "center": [
-    43.555547,
-    -71.749689
+    42.789833,
+    -71.76282
    ],
-   "found": "2026-10-26",
-   "id": "US-4976+US-4981@area@43.556,-71.750",
-   "kind": "area",
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-4952+US-4953@same land@42.790,-71.763",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "len_m": 0,
    "maps": [
     [
-     "US-4976",
+     "US-4952",
      "https://www.nh.gov/nhdfl/"
     ],
     [
-     "US-4981",
-     ""
+     "US-4953",
+     "https://www.nh.gov/nhdfl/"
     ]
    ],
    "names": {
-    "US-4976": "Wade State Forest",
-    "US-4981": "William Thomas State Forest"
+    "US-4952": "Russell State Forest",
+    "US-4953": "Russell-Abbott State Forest"
    },
+   "note": "both park numbers are joined to the same official outline (Russell-Abbott State Forest); POTA lists them separately: check POTA's current list",
+   "owner_here": "state land (from the outline both numbers are joined to)",
    "passes": [
     1,
     1,
     1
    ],
-   "pins_inside": {
-    "US-4976": true,
-    "US-4981": true
-   },
+   "pins": [],
    "refs": [
-    "US-4976",
-    "US-4981"
+    "US-4952",
+    "US-4953"
    ],
    "shape": [
     [
-     -71.749379,
-     43.55627
+     -71.75813,
+     42.79158
     ],
     [
-     -71.750061,
-     43.55618
+     -71.75744,
+     42.7901
     ],
     [
-     -71.750061,
-     43.55523
+     -71.75805,
+     42.78794
     ],
     [
-     -71.749751,
-     43.554733
+     -71.76372,
+     42.78393
     ],
     [
-     -71.749317,
-     43.554416
+     -71.77333,
+     42.78878
     ],
     [
-     -71.749193,
-     43.5541
+     -71.77638,
+     42.79136
     ],
     [
-     -71.749193,
-     43.553014
+     -71.75738,
+     42.79339
     ],
     [
-     -71.749565,
-     43.552246
-    ],
-    [
-     -71.749751,
-     43.552246
-    ],
-    [
-     -71.750123,
-     43.552788
-    ],
-    [
-     -71.754833,
-     43.55098
-    ],
-    [
-     -71.750123,
-     43.552788
-    ],
-    [
-     -71.749627,
-     43.55211
-    ],
-    [
-     -71.749503,
-     43.552517
-    ],
-    [
-     -71.749193,
-     43.552834
-    ],
-    [
-     -71.748884,
-     43.552517
-    ],
-    [
-     -71.749007,
-     43.553647
-    ],
-    [
-     -71.749379,
-     43.554597
+     -71.75813,
+     42.79158
     ]
    ],
-   "small": "small overlap: tight fit, check carefully",
    "status": "candidate",
-   "wide_m": 66
+   "stretches": 17
   },
   {
    "box": [
-    -71.56812,
-    42.66973,
-    -71.56731,
-    42.67001
+    -71.77638,
+    42.78393,
+    -71.75738,
+    42.79339
    ],
    "center": [
-    42.669878,
-    -71.567704
+    42.789833,
+    -71.76282
    ],
-   "found": "2026-10-26",
-   "id": "US-8014+US-8396@river@42.670,-71.567",
-   "kind": "river",
-   "len_m": 73,
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-4952+US-4953@same land@42.790,-71.763",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "maps": [
+    [
+     "US-4952",
+     "https://www.nh.gov/nhdfl/"
+    ],
+    [
+     "US-4953",
+     "https://www.nh.gov/nhdfl/"
+    ]
+   ],
+   "names": {
+    "US-4952": "Russell State Forest",
+    "US-4953": "Russell-Abbott State Forest"
+   },
+   "note": "both park numbers are joined to the same official outline (Russell-Abbott State Forest); POTA lists them separately: check POTA's current list",
    "passes": [
     1,
     1,
     1
    ],
-   "pins_inside": {
-    "US-8014": true,
-    "US-8396": false
-   },
    "refs": [
-    "US-8014",
-    "US-8396"
+    "US-4952",
+    "US-4953"
    ],
    "shape": [
     [
-     -71.568123,
-     42.669734
+     -71.75813,
+     42.79158
     ],
     [
-     -71.568095,
-     42.669744
+     -71.75744,
+     42.7901
     ],
     [
-     -71.568067,
-     42.669753
+     -71.75805,
+     42.78794
     ],
     [
-     -71.568039,
-     42.669763
+     -71.76372,
+     42.78393
     ],
     [
-     -71.568011,
-     42.669773
+     -71.77333,
+     42.78878
     ],
     [
-     -71.567984,
-     42.669782
+     -71.77638,
+     42.79136
     ],
     [
-     -71.567956,
-     42.669792
+     -71.75738,
+     42.79339
     ],
     [
-     -71.567928,
-     42.669801
-    ],
-    [
-     -71.5679,
-     42.669811
-    ],
-    [
-     -71.567872,
-     42.66982
-    ],
-    [
-     -71.567844,
-     42.66983
-    ],
-    [
-     -71.567816,
-     42.669839
-    ],
-    [
-     -71.567788,
-     42.669849
-    ],
-    [
-     -71.56776,
-     42.669859
-    ],
-    [
-     -71.567732,
-     42.669868
-    ],
-    [
-     -71.567704,
-     42.669878
-    ],
-    [
-     -71.567677,
-     42.669887
-    ],
-    [
-     -71.567649,
-     42.669897
-    ],
-    [
-     -71.567621,
-     42.669906
-    ],
-    [
-     -71.567593,
-     42.669916
-    ],
-    [
-     -71.567565,
-     42.669925
-    ],
-    [
-     -71.567537,
-     42.669935
-    ],
-    [
-     -71.567509,
-     42.669944
-    ],
-    [
-     -71.567481,
-     42.669954
-    ],
-    [
-     -71.567453,
-     42.669964
-    ],
-    [
-     -71.567425,
-     42.669973
-    ],
-    [
-     -71.567397,
-     42.669983
-    ],
-    [
-     -71.56737,
-     42.669992
-    ],
-    [
-     -71.567342,
-     42.670002
-    ],
-    [
-     -71.567314,
-     42.670011
+     -71.75813,
+     42.79158
     ]
    ],
-   "status": "dropped: a pin is outside its own outline"
+   "status": "merged into one row: US-4952+US-4953@same land@42.790,-71.763"
+  },
+  {
+   "box": [
+    -71.77638,
+    42.78393,
+    -71.75738,
+    42.79339
+   ],
+   "center": [
+    42.789833,
+    -71.76282
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-4952+US-4953@same land@42.790,-71.763",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "maps": [
+    [
+     "US-4952",
+     "https://www.nh.gov/nhdfl/"
+    ],
+    [
+     "US-4953",
+     "https://www.nh.gov/nhdfl/"
+    ]
+   ],
+   "names": {
+    "US-4952": "Russell State Forest",
+    "US-4953": "Russell-Abbott State Forest"
+   },
+   "note": "both park numbers are joined to the same official outline (Russell-Abbott State Forest); POTA lists them separately: check POTA's current list",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "refs": [
+    "US-4952",
+    "US-4953"
+   ],
+   "shape": [
+    [
+     -71.75813,
+     42.79158
+    ],
+    [
+     -71.75744,
+     42.7901
+    ],
+    [
+     -71.75805,
+     42.78794
+    ],
+    [
+     -71.76372,
+     42.78393
+    ],
+    [
+     -71.77333,
+     42.78878
+    ],
+    [
+     -71.77638,
+     42.79136
+    ],
+    [
+     -71.75738,
+     42.79339
+    ],
+    [
+     -71.75813,
+     42.79158
+    ]
+   ],
+   "status": "merged into one row: US-4952+US-4953@same land@42.790,-71.763"
+  },
+  {
+   "box": [
+    -71.77638,
+    42.78393,
+    -71.75738,
+    42.79339
+   ],
+   "center": [
+    42.789833,
+    -71.76282
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-4952+US-4953@same land@42.790,-71.763",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "maps": [
+    [
+     "US-4952",
+     "https://www.nh.gov/nhdfl/"
+    ],
+    [
+     "US-4953",
+     "https://www.nh.gov/nhdfl/"
+    ]
+   ],
+   "names": {
+    "US-4952": "Russell State Forest",
+    "US-4953": "Russell-Abbott State Forest"
+   },
+   "note": "both park numbers are joined to the same official outline (Russell-Abbott State Forest); POTA lists them separately: check POTA's current list",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "refs": [
+    "US-4952",
+    "US-4953"
+   ],
+   "shape": [
+    [
+     -71.75813,
+     42.79158
+    ],
+    [
+     -71.75744,
+     42.7901
+    ],
+    [
+     -71.75805,
+     42.78794
+    ],
+    [
+     -71.76372,
+     42.78393
+    ],
+    [
+     -71.77333,
+     42.78878
+    ],
+    [
+     -71.77638,
+     42.79136
+    ],
+    [
+     -71.75738,
+     42.79339
+    ],
+    [
+     -71.75813,
+     42.79158
+    ]
+   ],
+   "status": "merged into one row: US-4952+US-4953@same land@42.790,-71.763"
+  },
+  {
+   "box": [
+    -71.77638,
+    42.78393,
+    -71.75738,
+    42.79339
+   ],
+   "center": [
+    42.789833,
+    -71.76282
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-4952+US-4953@same land@42.790,-71.763",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "maps": [
+    [
+     "US-4952",
+     "https://www.nh.gov/nhdfl/"
+    ],
+    [
+     "US-4953",
+     "https://www.nh.gov/nhdfl/"
+    ]
+   ],
+   "names": {
+    "US-4952": "Russell State Forest",
+    "US-4953": "Russell-Abbott State Forest"
+   },
+   "note": "both park numbers are joined to the same official outline (Russell-Abbott State Forest); POTA lists them separately: check POTA's current list",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "refs": [
+    "US-4952",
+    "US-4953"
+   ],
+   "shape": [
+    [
+     -71.75813,
+     42.79158
+    ],
+    [
+     -71.75744,
+     42.7901
+    ],
+    [
+     -71.75805,
+     42.78794
+    ],
+    [
+     -71.76372,
+     42.78393
+    ],
+    [
+     -71.77333,
+     42.78878
+    ],
+    [
+     -71.77638,
+     42.79136
+    ],
+    [
+     -71.75738,
+     42.79339
+    ],
+    [
+     -71.75813,
+     42.79158
+    ]
+   ],
+   "status": "merged into one row: US-4952+US-4953@same land@42.790,-71.763"
+  },
+  {
+   "box": [
+    -71.77638,
+    42.78393,
+    -71.75738,
+    42.79339
+   ],
+   "center": [
+    42.789833,
+    -71.76282
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-4952+US-4953@same land@42.790,-71.763",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "maps": [
+    [
+     "US-4952",
+     "https://www.nh.gov/nhdfl/"
+    ],
+    [
+     "US-4953",
+     "https://www.nh.gov/nhdfl/"
+    ]
+   ],
+   "names": {
+    "US-4952": "Russell State Forest",
+    "US-4953": "Russell-Abbott State Forest"
+   },
+   "note": "both park numbers are joined to the same official outline (Russell State Forest); POTA lists them separately: check POTA's current list",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "refs": [
+    "US-4952",
+    "US-4953"
+   ],
+   "shape": [
+    [
+     -71.75813,
+     42.79158
+    ],
+    [
+     -71.75744,
+     42.7901
+    ],
+    [
+     -71.75805,
+     42.78794
+    ],
+    [
+     -71.76372,
+     42.78393
+    ],
+    [
+     -71.77333,
+     42.78878
+    ],
+    [
+     -71.77638,
+     42.79136
+    ],
+    [
+     -71.75738,
+     42.79339
+    ],
+    [
+     -71.75813,
+     42.79158
+    ]
+   ],
+   "status": "merged into one row: US-4952+US-4953@same land@42.790,-71.763"
+  },
+  {
+   "box": [
+    -71.77638,
+    42.78393,
+    -71.75738,
+    42.79339
+   ],
+   "center": [
+    42.789833,
+    -71.76282
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-4952+US-4953@same land@42.790,-71.763",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "maps": [
+    [
+     "US-4952",
+     "https://www.nh.gov/nhdfl/"
+    ],
+    [
+     "US-4953",
+     "https://www.nh.gov/nhdfl/"
+    ]
+   ],
+   "names": {
+    "US-4952": "Russell State Forest",
+    "US-4953": "Russell-Abbott State Forest"
+   },
+   "note": "both park numbers are joined to the same official outline (Russell State Forest); POTA lists them separately: check POTA's current list",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "refs": [
+    "US-4952",
+    "US-4953"
+   ],
+   "shape": [
+    [
+     -71.75813,
+     42.79158
+    ],
+    [
+     -71.75744,
+     42.7901
+    ],
+    [
+     -71.75805,
+     42.78794
+    ],
+    [
+     -71.76372,
+     42.78393
+    ],
+    [
+     -71.77333,
+     42.78878
+    ],
+    [
+     -71.77638,
+     42.79136
+    ],
+    [
+     -71.75738,
+     42.79339
+    ],
+    [
+     -71.75813,
+     42.79158
+    ]
+   ],
+   "status": "merged into one row: US-4952+US-4953@same land@42.790,-71.763"
+  },
+  {
+   "box": [
+    -71.77638,
+    42.78393,
+    -71.75738,
+    42.79339
+   ],
+   "center": [
+    42.789833,
+    -71.76282
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-4952+US-4953@same land@42.790,-71.763",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "maps": [
+    [
+     "US-4952",
+     "https://www.nh.gov/nhdfl/"
+    ],
+    [
+     "US-4953",
+     "https://www.nh.gov/nhdfl/"
+    ]
+   ],
+   "names": {
+    "US-4952": "Russell State Forest",
+    "US-4953": "Russell-Abbott State Forest"
+   },
+   "note": "both park numbers are joined to the same official outline (Russell-Abbott State Forest); POTA lists them separately: check POTA's current list",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "refs": [
+    "US-4952",
+    "US-4953"
+   ],
+   "shape": [
+    [
+     -71.75813,
+     42.79158
+    ],
+    [
+     -71.75744,
+     42.7901
+    ],
+    [
+     -71.75805,
+     42.78794
+    ],
+    [
+     -71.76372,
+     42.78393
+    ],
+    [
+     -71.77333,
+     42.78878
+    ],
+    [
+     -71.77638,
+     42.79136
+    ],
+    [
+     -71.75738,
+     42.79339
+    ],
+    [
+     -71.75813,
+     42.79158
+    ]
+   ],
+   "status": "merged into one row: US-4952+US-4953@same land@42.790,-71.763"
+  },
+  {
+   "box": [
+    -71.77638,
+    42.78393,
+    -71.75738,
+    42.79339
+   ],
+   "center": [
+    42.789833,
+    -71.76282
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-4952+US-4953@same land@42.790,-71.763",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "maps": [
+    [
+     "US-4952",
+     "https://www.nh.gov/nhdfl/"
+    ],
+    [
+     "US-4953",
+     "https://www.nh.gov/nhdfl/"
+    ]
+   ],
+   "names": {
+    "US-4952": "Russell State Forest",
+    "US-4953": "Russell-Abbott State Forest"
+   },
+   "note": "both park numbers are joined to the same official outline (Russell State Forest); POTA lists them separately: check POTA's current list",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "refs": [
+    "US-4952",
+    "US-4953"
+   ],
+   "shape": [
+    [
+     -71.75813,
+     42.79158
+    ],
+    [
+     -71.75744,
+     42.7901
+    ],
+    [
+     -71.75805,
+     42.78794
+    ],
+    [
+     -71.76372,
+     42.78393
+    ],
+    [
+     -71.77333,
+     42.78878
+    ],
+    [
+     -71.77638,
+     42.79136
+    ],
+    [
+     -71.75738,
+     42.79339
+    ],
+    [
+     -71.75813,
+     42.79158
+    ]
+   ],
+   "status": "merged into one row: US-4952+US-4953@same land@42.790,-71.763"
+  },
+  {
+   "box": [
+    -71.77638,
+    42.78393,
+    -71.75738,
+    42.79339
+   ],
+   "center": [
+    42.789833,
+    -71.76282
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-4952+US-4953@same land@42.790,-71.763",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "maps": [
+    [
+     "US-4952",
+     "https://www.nh.gov/nhdfl/"
+    ],
+    [
+     "US-4953",
+     "https://www.nh.gov/nhdfl/"
+    ]
+   ],
+   "names": {
+    "US-4952": "Russell State Forest",
+    "US-4953": "Russell-Abbott State Forest"
+   },
+   "note": "both park numbers are joined to the same official outline (Russell-Abbott State Forest); POTA lists them separately: check POTA's current list",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "refs": [
+    "US-4952",
+    "US-4953"
+   ],
+   "shape": [
+    [
+     -71.75813,
+     42.79158
+    ],
+    [
+     -71.75744,
+     42.7901
+    ],
+    [
+     -71.75805,
+     42.78794
+    ],
+    [
+     -71.76372,
+     42.78393
+    ],
+    [
+     -71.77333,
+     42.78878
+    ],
+    [
+     -71.77638,
+     42.79136
+    ],
+    [
+     -71.75738,
+     42.79339
+    ],
+    [
+     -71.75813,
+     42.79158
+    ]
+   ],
+   "status": "merged into one row: US-4952+US-4953@same land@42.790,-71.763"
+  },
+  {
+   "box": [
+    -71.77638,
+    42.78393,
+    -71.75738,
+    42.79339
+   ],
+   "center": [
+    42.789833,
+    -71.76282
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-4952+US-4953@same land@42.790,-71.763",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "maps": [
+    [
+     "US-4952",
+     "https://www.nh.gov/nhdfl/"
+    ],
+    [
+     "US-4953",
+     "https://www.nh.gov/nhdfl/"
+    ]
+   ],
+   "names": {
+    "US-4952": "Russell State Forest",
+    "US-4953": "Russell-Abbott State Forest"
+   },
+   "note": "both park numbers are joined to the same official outline (Russell-Abbott State Forest); POTA lists them separately: check POTA's current list",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "refs": [
+    "US-4952",
+    "US-4953"
+   ],
+   "shape": [
+    [
+     -71.75813,
+     42.79158
+    ],
+    [
+     -71.75744,
+     42.7901
+    ],
+    [
+     -71.75805,
+     42.78794
+    ],
+    [
+     -71.76372,
+     42.78393
+    ],
+    [
+     -71.77333,
+     42.78878
+    ],
+    [
+     -71.77638,
+     42.79136
+    ],
+    [
+     -71.75738,
+     42.79339
+    ],
+    [
+     -71.75813,
+     42.79158
+    ]
+   ],
+   "status": "merged into one row: US-4952+US-4953@same land@42.790,-71.763"
+  },
+  {
+   "box": [
+    -71.77638,
+    42.78393,
+    -71.75738,
+    42.79339
+   ],
+   "center": [
+    42.789833,
+    -71.76282
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-4952+US-4953@same land@42.790,-71.763",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "maps": [
+    [
+     "US-4952",
+     "https://www.nh.gov/nhdfl/"
+    ],
+    [
+     "US-4953",
+     "https://www.nh.gov/nhdfl/"
+    ]
+   ],
+   "names": {
+    "US-4952": "Russell State Forest",
+    "US-4953": "Russell-Abbott State Forest"
+   },
+   "note": "both park numbers are joined to the same official outline (Russell-Abbott State Forest); POTA lists them separately: check POTA's current list",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "refs": [
+    "US-4952",
+    "US-4953"
+   ],
+   "shape": [
+    [
+     -71.75813,
+     42.79158
+    ],
+    [
+     -71.75744,
+     42.7901
+    ],
+    [
+     -71.75805,
+     42.78794
+    ],
+    [
+     -71.76372,
+     42.78393
+    ],
+    [
+     -71.77333,
+     42.78878
+    ],
+    [
+     -71.77638,
+     42.79136
+    ],
+    [
+     -71.75738,
+     42.79339
+    ],
+    [
+     -71.75813,
+     42.79158
+    ]
+   ],
+   "status": "merged into one row: US-4952+US-4953@same land@42.790,-71.763"
+  },
+  {
+   "box": [
+    -71.77638,
+    42.78393,
+    -71.75738,
+    42.79339
+   ],
+   "center": [
+    42.789833,
+    -71.76282
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-4952+US-4953@same land@42.790,-71.763",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "maps": [
+    [
+     "US-4952",
+     "https://www.nh.gov/nhdfl/"
+    ],
+    [
+     "US-4953",
+     "https://www.nh.gov/nhdfl/"
+    ]
+   ],
+   "names": {
+    "US-4952": "Russell State Forest",
+    "US-4953": "Russell-Abbott State Forest"
+   },
+   "note": "both park numbers are joined to the same official outline (Russell State Forest); POTA lists them separately: check POTA's current list",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "refs": [
+    "US-4952",
+    "US-4953"
+   ],
+   "shape": [
+    [
+     -71.75813,
+     42.79158
+    ],
+    [
+     -71.75744,
+     42.7901
+    ],
+    [
+     -71.75805,
+     42.78794
+    ],
+    [
+     -71.76372,
+     42.78393
+    ],
+    [
+     -71.77333,
+     42.78878
+    ],
+    [
+     -71.77638,
+     42.79136
+    ],
+    [
+     -71.75738,
+     42.79339
+    ],
+    [
+     -71.75813,
+     42.79158
+    ]
+   ],
+   "status": "merged into one row: US-4952+US-4953@same land@42.790,-71.763"
+  },
+  {
+   "box": [
+    -71.77638,
+    42.78393,
+    -71.75738,
+    42.79339
+   ],
+   "center": [
+    42.789833,
+    -71.76282
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-4952+US-4953@same land@42.790,-71.763",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "maps": [
+    [
+     "US-4952",
+     "https://www.nh.gov/nhdfl/"
+    ],
+    [
+     "US-4953",
+     "https://www.nh.gov/nhdfl/"
+    ]
+   ],
+   "names": {
+    "US-4952": "Russell State Forest",
+    "US-4953": "Russell-Abbott State Forest"
+   },
+   "note": "both park numbers are joined to the same official outline (Russell-Abbott State Forest); POTA lists them separately: check POTA's current list",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "refs": [
+    "US-4952",
+    "US-4953"
+   ],
+   "shape": [
+    [
+     -71.75813,
+     42.79158
+    ],
+    [
+     -71.75744,
+     42.7901
+    ],
+    [
+     -71.75805,
+     42.78794
+    ],
+    [
+     -71.76372,
+     42.78393
+    ],
+    [
+     -71.77333,
+     42.78878
+    ],
+    [
+     -71.77638,
+     42.79136
+    ],
+    [
+     -71.75738,
+     42.79339
+    ],
+    [
+     -71.75813,
+     42.79158
+    ]
+   ],
+   "status": "merged into one row: US-4952+US-4953@same land@42.790,-71.763"
+  },
+  {
+   "box": [
+    -71.77638,
+    42.78393,
+    -71.75738,
+    42.79339
+   ],
+   "center": [
+    42.789833,
+    -71.76282
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-4952+US-4953@same land@42.790,-71.763",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "maps": [
+    [
+     "US-4952",
+     "https://www.nh.gov/nhdfl/"
+    ],
+    [
+     "US-4953",
+     "https://www.nh.gov/nhdfl/"
+    ]
+   ],
+   "names": {
+    "US-4952": "Russell State Forest",
+    "US-4953": "Russell-Abbott State Forest"
+   },
+   "note": "both park numbers are joined to the same official outline (Russell-Abbott State Forest); POTA lists them separately: check POTA's current list",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "refs": [
+    "US-4952",
+    "US-4953"
+   ],
+   "shape": [
+    [
+     -71.75813,
+     42.79158
+    ],
+    [
+     -71.75744,
+     42.7901
+    ],
+    [
+     -71.75805,
+     42.78794
+    ],
+    [
+     -71.76372,
+     42.78393
+    ],
+    [
+     -71.77333,
+     42.78878
+    ],
+    [
+     -71.77638,
+     42.79136
+    ],
+    [
+     -71.75738,
+     42.79339
+    ],
+    [
+     -71.75813,
+     42.79158
+    ]
+   ],
+   "status": "merged into one row: US-4952+US-4953@same land@42.790,-71.763"
+  },
+  {
+   "box": [
+    -71.77638,
+    42.78393,
+    -71.75738,
+    42.79339
+   ],
+   "center": [
+    42.789833,
+    -71.76282
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-4952+US-4953@same land@42.790,-71.763",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "maps": [
+    [
+     "US-4952",
+     "https://www.nh.gov/nhdfl/"
+    ],
+    [
+     "US-4953",
+     "https://www.nh.gov/nhdfl/"
+    ]
+   ],
+   "names": {
+    "US-4952": "Russell State Forest",
+    "US-4953": "Russell-Abbott State Forest"
+   },
+   "note": "both park numbers are joined to the same official outline (Russell-Abbott State Forest); POTA lists them separately: check POTA's current list",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "refs": [
+    "US-4952",
+    "US-4953"
+   ],
+   "shape": [
+    [
+     -71.75813,
+     42.79158
+    ],
+    [
+     -71.75744,
+     42.7901
+    ],
+    [
+     -71.75805,
+     42.78794
+    ],
+    [
+     -71.76372,
+     42.78393
+    ],
+    [
+     -71.77333,
+     42.78878
+    ],
+    [
+     -71.77638,
+     42.79136
+    ],
+    [
+     -71.75738,
+     42.79339
+    ],
+    [
+     -71.75813,
+     42.79158
+    ]
+   ],
+   "status": "merged into one row: US-4952+US-4953@same land@42.790,-71.763"
+  },
+  {
+   "box": [
+    -71.77638,
+    42.78393,
+    -71.75738,
+    42.79339
+   ],
+   "center": [
+    42.789833,
+    -71.76282
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-4952+US-4953@same land@42.790,-71.763",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "maps": [
+    [
+     "US-4952",
+     "https://www.nh.gov/nhdfl/"
+    ],
+    [
+     "US-4953",
+     "https://www.nh.gov/nhdfl/"
+    ]
+   ],
+   "names": {
+    "US-4952": "Russell State Forest",
+    "US-4953": "Russell-Abbott State Forest"
+   },
+   "note": "both park numbers are joined to the same official outline (Russell-Abbott State Forest); POTA lists them separately: check POTA's current list",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "refs": [
+    "US-4952",
+    "US-4953"
+   ],
+   "shape": [
+    [
+     -71.75813,
+     42.79158
+    ],
+    [
+     -71.75744,
+     42.7901
+    ],
+    [
+     -71.75805,
+     42.78794
+    ],
+    [
+     -71.76372,
+     42.78393
+    ],
+    [
+     -71.77333,
+     42.78878
+    ],
+    [
+     -71.77638,
+     42.79136
+    ],
+    [
+     -71.75738,
+     42.79339
+    ],
+    [
+     -71.75813,
+     42.79158
+    ]
+   ],
+   "status": "merged into one row: US-4952+US-4953@same land@42.790,-71.763"
   }
  ],
  "st": "US-NH"

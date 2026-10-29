@@ -1,1584 +1,838 @@
 {
- "about": "Spots where the boundaries of two or more POTA parks may overlap (official outlines only; land spots 50 yards across, 'small' = 50-100 yards; trails and rivers by POTA's 100-ft rule). HIDDEN, not reviewed: passes [saved, fresh, finest] must all be 1 and status 'candidate' before a person looks. Wording when shown (house rule, Oct 26 5:45 PM): '⚠️ Possible POTA overlap only. We think these POTA parks' boundaries may overlap here, but we can't confirm it. Check both official boundary maps and make your own call before you count it.' Tool pages carry the FULL notice from CLAUDE.md.",
- "pass1": "2026-10-26",
- "pass2": "2026-10-26",
- "pass3": "2026-10-27",
+ "about": "Spots where the boundaries of two or more POTA parks may overlap, by the 2-FER RULES FOR THE WHOLE WORLD (Brandon Oct 27, notes/mapping.md): the park = where its designation legally applies (national forests + grasslands = Forest Service-OWNED land only, never proclamation lines); public land open to the public; layered = real, side by side = not (ownership step: PAD-US / CPCAD at the spot, read at up to 5 points of the patch; no public owner there = not sure); a patch 50 yards across in every park ('small' = 50-100 yards; 25-50 yards = the separate 'very tight' list, members only; under 25 = not kept); line-only trails / rivers by POTA's 100-ft rule from the line or the river EDGE (USGS NHD); pins never count. Status: 'candidate' = all checks passed; 'not sure: …' and 'water only: boat or kayak' are separate lists, never the main one; n-fers up to 9; 'Same land, two park numbers' (two numbers on one official outline) is shown with that label; 'dropped: …' says why. Every decided spot shows 'checked' + 'map_dates'. Parks with no official boundary: missing-<region>.json. HIDDEN, not reviewed: passes [saved, fresh, finest] must all be 1 and status 'candidate' before a person looks. Wording when shown (house rule, Oct 27): '⚠️ Parks' boundaries may overlap here, but we can't confirm it. Check both official boundary maps and make your own call before you count it.' Tool pages carry the FULL notice from .claude/notes/notices.md.",
+ "pass1": "2026-10-28",
+ "pass2": "2026-10-28",
+ "pass3": "2026-10-29",
+ "pass5": "2026-10-29",
  "spots": [
   {
-   "acres": 47.6,
    "box": [
-    -78.434,
-    43.11634,
-    -78.41381,
-    43.14094
+    -73.66257,
+    41.24629,
+    -73.65583,
+    41.25296
    ],
    "center": [
-    43.140577,
-    -78.414304
+    41.249707,
+    -73.657818
    ],
-   "found": "2026-10-26",
-   "id": "US-0475+US-8100@area@43.141,-78.414",
-   "kind": "area",
-   "passes": [
-    1,
-    0,
-    0
-   ],
-   "refs": [
-    "US-0475",
-    "US-8100"
-   ],
-   "shape": [
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-10045+US-10046@same land@41.250,-73.658",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "maps": [
     [
-     -78.413812,
-     43.140758
+     "US-10045",
+     "https://parks.ny.gov/historic-sites/jayhertiage/details.aspx"
     ],
     [
-     -78.414551,
-     43.140938
-    ],
-    [
-     -78.415289,
-     43.137683
-    ],
-    [
-     -78.415781,
-     43.137683
-    ],
-    [
-     -78.417751,
-     43.131714
-    ],
-    [
-     -78.418489,
-     43.13099
-    ],
-    [
-     -78.417997,
-     43.130809
-    ],
-    [
-     -78.419474,
-     43.130086
-    ],
-    [
-     -78.431782,
-     43.118691
-    ],
-    [
-     -78.433012,
-     43.116882
-    ],
-    [
-     -78.433997,
-     43.11652
-    ],
-    [
-     -78.432766,
-     43.116882
-    ],
-    [
-     -78.432766,
-     43.11634
-    ],
-    [
-     -78.417504,
-     43.131171
-    ],
-    [
-     -78.417258,
-     43.13298
-    ],
-    [
-     -78.416766,
-     43.132799
-    ],
-    [
-     -78.417012,
-     43.133884
-    ],
-    [
-     -78.41652,
-     43.133523
+     "US-10046",
+     "https://parks.ny.gov/historic-sites/johnjayhomestead/details.aspx"
     ]
    ],
-   "small": "small overlap: tight fit, check carefully",
-   "status": "dropped in pass 2",
-   "wide_m": 88
-  },
-  {
-   "acres": 1.8,
-   "box": [
-    -76.73417,
-    42.99462,
-    -76.73368,
-    42.99589
-   ],
-   "center": [
-    42.994987,
-    -76.733921
-   ],
-   "found": "2026-10-26",
-   "id": "US-0476+US-8299@area@42.995,-76.734",
-   "kind": "area",
-   "passes": [
-    1,
-    0,
-    0
-   ],
-   "refs": [
-    "US-0476",
-    "US-8299"
-   ],
-   "shape": [
-    [
-     -76.734167,
-     42.995891
-    ],
-    [
-     -76.734167,
-     42.994806
-    ],
-    [
-     -76.733675,
-     42.994625
-    ]
-   ],
-   "small": "small overlap: tight fit, check carefully",
-   "status": "dropped in pass 2",
-   "wide_m": 80
-  },
-  {
-   "acres": 3.4,
-   "box": [
-    -76.72827,
-    42.99562,
-    -76.72741,
-    42.99806
-   ],
-   "center": [
-    42.996974,
-    -76.727901
-   ],
-   "found": "2026-10-26",
-   "id": "US-0476+US-8299@area@42.998,-76.728",
-   "kind": "area",
-   "passes": [
-    1,
-    1,
-    0
-   ],
-   "refs": [
-    "US-0476",
-    "US-8299"
-   ],
-   "shape": [
-    [
-     -76.728024,
-     42.998059
-    ],
-    [
-     -76.72827,
-     42.997969
-    ],
-    [
-     -76.728024,
-     42.995618
-    ],
-    [
-     -76.72741,
-     42.995708
-    ]
-   ],
-   "small": "small overlap: tight fit, check carefully",
-   "status": "dropped in pass 3",
-   "wide_m": 60
-  },
-  {
-   "acres": 10.0,
-   "box": [
-    -76.77806,
-    42.99873,
-    -76.77167,
-    43.00407
-   ],
-   "center": [
-    42.999773,
-    -76.773082
-   ],
-   "found": "2026-10-26",
-   "id": "US-0476+US-8299@area@43.001,-76.775",
-   "kind": "area",
+   "names": {
+    "US-10045": "Jay Heritage Center (Jay Estate) State Historic Site",
+    "US-10046": "John Jay Homestead State Historic Site"
+   },
+   "note": "both park numbers are joined to the same official outline (John Jay Homestead State Historic Site); POTA lists them separately: check POTA's current list",
    "passes": [
     1,
     1,
     1
    ],
    "refs": [
-    "US-0476",
-    "US-8299"
+    "US-10045",
+    "US-10046"
    ],
    "shape": [
     [
-     -76.777813,
-     43.004069
+     -73.6571,
+     41.24895
     ],
     [
-     -76.778058,
-     43.003753
+     -73.65847,
+     41.24629
     ],
     [
-     -76.772529,
-     42.998869
+     -73.66257,
+     41.25196
     ],
     [
-     -76.772284,
-     42.998733
+     -73.65583,
+     41.25296
     ],
     [
-     -76.771669,
-     42.998959
+     -73.65584,
+     41.24913
+    ],
+    [
+     -73.6571,
+     41.24895
     ]
    ],
-   "small": "small overlap: tight fit, check carefully",
-   "status": "check: two owners (likely map mistake: two governments cannot own the same ground; a lease would change that)",
-   "wide_m": 64
-  },
-  {
-   "acres": 4.7,
-   "box": [
-    -76.72777,
-    42.99933,
-    -76.7263,
-    43.00331
-   ],
-   "center": [
-    43.002583,
-    -76.727283
-   ],
-   "found": "2026-10-26",
-   "id": "US-0476+US-8299@area@43.003,-76.727",
-   "kind": "area",
-   "passes": [
-    1,
-    0,
-    0
-   ],
-   "refs": [
-    "US-0476",
-    "US-8299"
-   ],
-   "shape": [
-    [
-     -76.727283,
-     43.003307
-    ],
-    [
-     -76.727774,
-     43.002764
-    ],
-    [
-     -76.726299,
-     42.999328
-    ]
-   ],
-   "small": "small overlap: tight fit, check carefully",
-   "status": "dropped in pass 2",
-   "wide_m": 80
-  },
-  {
-   "acres": 6.3,
-   "box": [
-    -76.72236,
-    43.03243,
-    -76.72138,
-    43.03767
-   ],
-   "center": [
-    43.033513,
-    -76.72212
-   ],
-   "found": "2026-10-26",
-   "id": "US-0476+US-8299@area@43.034,-76.722",
-   "kind": "area",
-   "passes": [
-    1,
-    0,
-    0
-   ],
-   "refs": [
-    "US-0476",
-    "US-8299"
-   ],
-   "shape": [
-    [
-     -76.721382,
-     43.037673
-    ],
-    [
-     -76.722365,
-     43.033694
-    ],
-    [
-     -76.72212,
-     43.032428
-    ]
-   ],
-   "small": "small overlap: tight fit, check carefully",
-   "status": "dropped in pass 2",
-   "wide_m": 80
-  },
-  {
-   "acres": 396.5,
-   "box": [
-    -73.87768,
-    40.6361,
-    -73.85655,
-    40.65455
-   ],
-   "center": [
-    40.646861,
-    -73.863771
-   ],
-   "found": "2026-10-26",
-   "id": "US-0680+US-8068@area@40.647,-73.863",
-   "kind": "area",
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "refs": [
-    "US-0680",
-    "US-8068"
-   ],
-   "shape": [
-    [
-     -73.859805,
-     40.654548
-    ],
-    [
-     -73.862942,
-     40.652603
-    ],
-    [
-     -73.870046,
-     40.64876
-    ],
-    [
-     -73.871999,
-     40.647358
-    ],
-    [
-     -73.873124,
-     40.646318
-    ],
-    [
-     -73.872828,
-     40.646092
-    ],
-    [
-     -73.872887,
-     40.646002
-    ],
-    [
-     -73.872473,
-     40.645459
-    ],
-    [
-     -73.87117,
-     40.645188
-    ],
-    [
-     -73.87046,
-     40.644735
-    ],
-    [
-     -73.869987,
-     40.644057
-    ],
-    [
-     -73.869868,
-     40.643108
-    ],
-    [
-     -73.868862,
-     40.64157
-    ],
-    [
-     -73.868684,
-     40.640982
-    ],
-    [
-     -73.867382,
-     40.639852
-    ],
-    [
-     -73.867027,
-     40.639807
-    ],
-    [
-     -73.865251,
-     40.640801
-    ],
-    [
-     -73.864718,
-     40.640937
-    ],
-    [
-     -73.863712,
-     40.641615
-    ],
-    [
-     -73.863061,
-     40.642294
-    ],
-    [
-     -73.86235,
-     40.642655
-    ],
-    [
-     -73.861166,
-     40.642927
-    ],
-    [
-     -73.85939,
-     40.643062
-    ],
-    [
-     -73.856549,
-     40.64365
-    ],
-    [
-     -73.856549,
-     40.644283
-    ],
-    [
-     -73.856904,
-     40.6446
-    ],
-    [
-     -73.857141,
-     40.645368
-    ],
-    [
-     -73.857733,
-     40.646273
-    ],
-    [
-     -73.858088,
-     40.646589
-    ],
-    [
-     -73.85797,
-     40.647177
-    ],
-    [
-     -73.857614,
-     40.647539
-    ],
-    [
-     -73.857555,
-     40.647946
-    ],
-    [
-     -73.8572,
-     40.648534
-    ],
-    [
-     -73.8572,
-     40.649845
-    ],
-    [
-     -73.857319,
-     40.650026
-    ],
-    [
-     -73.857082,
-     40.650297
-    ],
-    [
-     -73.856963,
-     40.650749
-    ],
-    [
-     -73.857319,
-     40.651021
-    ],
-    [
-     -73.857378,
-     40.651292
-    ],
-    [
-     -73.857851,
-     40.651428
-    ],
-    [
-     -73.858266,
-     40.651789
-    ],
-    [
-     -73.858502,
-     40.652287
-    ],
-    [
-     -73.858917,
-     40.652694
-    ],
-    [
-     -73.858976,
-     40.653101
-    ],
-    [
-     -73.85939,
-     40.653643
-    ],
-    [
-     -73.85939,
-     40.65387
-    ],
-    [
-     -73.859686,
-     40.654141
-    ]
-   ],
-   "status": "check: two owners (likely map mistake: two governments cannot own the same ground; a lease would change that)",
-   "wide_m": 963
+   "status": "not sure: low-confidence outline (check the join)"
   },
   {
    "access": [
-    43.261756,
-    -79.062745,
-    "Entrance (NYS OPRHP GIS Bureau; Details field notes e.g. \"No parking)",
-    "US-2054",
-    113
+    42.501216,
+    -78.262989,
+    "Parking: LOST NATION RD PARKING (NYSDEC)",
+    "US-10284",
+    898
    ],
    "access_pin": {
     "at": [
-     43.26181,
-     -79.062744
+     42.521525,
+     -78.270471
     ],
-    "from": "parking / access point",
-    "name": "Entrance (NYS OPRHP GIS Bureau; Details field notes e.g. \"No parking)",
+    "from": "road",
+    "name": "County Line Rd",
     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
     "walk_m": 0
    },
-   "acres": 8.6,
    "box": [
-    -79.06449,
-    43.26176,
-    -79.06178,
-    43.26397
+    -78.28749,
+    42.49914,
+    -78.23419,
+    42.52156
    ],
    "center": [
-    43.26266,
-    -79.063382
+    42.509216,
+    -78.261074
    ],
-   "found": "2026-10-26",
-   "id": "US-10033+US-2054@area@43.263,-79.063",
-   "kind": "area",
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-10284+US-5398@same land@42.509,-78.261",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
    "maps": [
     [
-     "US-10033",
-     "https://parks.ny.gov/historic-sites/oldfortniagara/details.aspx"
+     "US-10284",
+     "https://www.dec.ny.gov/lands/80872.html"
     ],
     [
-     "US-2054",
-     "https://parks.ny.gov/parks/175/details.aspx"
+     "US-5398",
+     "https://www.dec.ny.gov/lands/53423.html"
     ]
    ],
    "names": {
-    "US-10033": "Old Fort Niagara State Historic Site",
-    "US-2054": "Fort Niagara State Park"
+    "US-10284": "Lost Nation (St. Lawrence County) State Forest",
+    "US-5398": "Lost Nation (Allegany County) State Forest"
    },
+   "note": "both park numbers are joined to the same official outline (Lost Nation State Forest); POTA lists them separately: check POTA's current list",
+   "owner_here": "state land (from the outline both numbers are joined to)",
    "passes": [
     1,
     1,
     1
    ],
-   "pins_inside": {
-    "US-10033": true,
-    "US-2054": true
-   },
    "refs": [
-    "US-10033",
-    "US-2054"
+    "US-10284",
+    "US-5398"
    ],
    "shape": [
     [
-     -79.062086,
-     43.263972
+     -78.26372,
+     42.52021
     ],
     [
-     -79.063258,
-     43.263655
+     -78.26368,
+     42.51528
     ],
     [
-     -79.064492,
-     43.263022
+     -78.25429,
+     42.5152
     ],
     [
-     -79.064307,
-     43.262796
+     -78.25433,
+     42.51291
     ],
     [
-     -79.064492,
-     43.262615
+     -78.26376,
+     42.513
     ],
     [
-     -79.064122,
-     43.262118
+     -78.26377,
+     42.51006
     ],
     [
-     -79.062826,
-     43.261756
+     -78.24899,
+     42.50992
     ],
     [
-     -79.061778,
-     43.261801
+     -78.24902,
+     42.50801
     ],
     [
-     -79.062086,
-     43.26257
+     -78.24801,
+     42.508
     ],
     [
-     -79.062456,
-     43.262751
+     -78.24796,
+     42.50968
     ],
     [
-     -79.062518,
-     43.263248
+     -78.23551,
+     42.50971
     ],
     [
-     -79.06221,
-     43.263339
+     -78.23419,
+     42.51079
+    ],
+    [
+     -78.23429,
+     42.50193
+    ],
+    [
+     -78.24912,
+     42.50193
+    ],
+    [
+     -78.24915,
+     42.49992
+    ],
+    [
+     -78.26397,
+     42.49914
+    ],
+    [
+     -78.26392,
+     42.50078
+    ],
+    [
+     -78.268,
+     42.50074
+    ],
+    [
+     -78.26802,
+     42.50203
+    ],
+    [
+     -78.27447,
+     42.50199
+    ],
+    [
+     -78.27449,
+     42.50575
+    ],
+    [
+     -78.28043,
+     42.50546
+    ],
+    [
+     -78.28057,
+     42.50204
+    ],
+    [
+     -78.28737,
+     42.50205
+    ],
+    [
+     -78.28749,
+     42.51306
+    ],
+    [
+     -78.2703,
+     42.51307
+    ],
+    [
+     -78.27053,
+     42.52156
+    ],
+    [
+     -78.25959,
+     42.52154
+    ],
+    [
+     -78.25957,
+     42.52051
+    ],
+    [
+     -78.26372,
+     42.52021
     ]
    ],
-   "status": "candidate",
-   "wide_m": 164
-  },
-  {
-   "acres": 13.0,
-   "box": [
-    -73.85948,
-    41.09853,
-    -73.85566,
-    41.10812
-   ],
-   "center": [
-    41.100158,
-    -73.856856
-   ],
-   "found": "2026-10-26",
-   "id": "US-10040+US-10078@area@41.100,-73.857",
-   "kind": "area",
-   "passes": [
-    1,
-    0,
-    0
-   ],
-   "refs": [
-    "US-10040",
-    "US-10078"
-   ],
-   "shape": [
-    [
-     -73.857094,
-     41.108117
-    ],
-    [
-     -73.85924,
-     41.106127
-    ],
-    [
-     -73.859479,
-     41.105223
-    ],
-    [
-     -73.857333,
-     41.100158
-    ],
-    [
-     -73.855664,
-     41.09853
-    ],
-    [
-     -73.859479,
-     41.105223
-    ]
-   ],
-   "small": "small overlap: tight fit, check carefully",
-   "status": "dropped in pass 2",
-   "wide_m": 88
-  },
-  {
-   "acres": 2.5,
-   "box": [
-    -73.7444,
-    43.20221,
-    -73.74194,
-    43.20293
-   ],
-   "center": [
-    43.202751,
-    -73.743908
-   ],
-   "found": "2026-10-26",
-   "id": "US-10042+US-2110@area@43.203,-73.744",
-   "kind": "area",
-   "passes": [
-    1,
-    0,
-    0
-   ],
-   "refs": [
-    "US-10042",
-    "US-2110"
-   ],
-   "shape": [
-    [
-     -73.744401,
-     43.202932
-    ],
-    [
-     -73.741937,
-     43.202208
-    ]
-   ],
-   "small": "small overlap: tight fit, check carefully",
-   "status": "dropped in pass 2",
-   "wide_m": 80
+   "status": "candidate"
   },
   {
    "access": [
-    43.027549,
-    -74.817486,
-    "Parking: Central Herkimer Home (NYS OPRHP)",
-    "US-8299",
-    582
+    43.74925,
+    -75.312004,
+    "Parking: OTTER CREEK HORSE TRAIL PARKING LOT #3 (NYSDEC)",
+    "US-10295",
+    757
    ],
    "access_pin": {
     "at": [
-     43.029394,
-     -74.822002
+     43.759535,
+     -75.312682
     ],
-    "from": "parking / access point",
-    "name": "Gate: Central Herkimer Home (NYS OPRHP)",
+    "from": "road",
+    "name": "public road",
     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 100
+    "walk_m": 0
    },
-   "acres": 6.2,
    "box": [
-    -74.81459,
-    43.02594,
-    -74.80857,
-    43.02857
+    -75.33732,
+    43.73712,
+    -75.3084,
+    43.75957
    ],
    "center": [
-    43.027256,
-    -74.81035
+    43.750621,
+    -75.321231
    ],
-   "found": "2026-10-26",
-   "id": "US-10043+US-8299@area@43.027,-74.811",
-   "kind": "area",
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-10295+US-5067@same land@43.751,-75.321",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "len_m": 0,
    "maps": [
     [
-     "US-10043",
-     "https://parks.ny.gov/historic-sites/herkimerhome/details.aspx"
+     "US-10295",
+     "https://www.dec.ny.gov/lands/58192.html"
     ],
     [
-     "US-8299",
-     "https://parks.ny.gov/parks/olderiecanal/maps.aspx"
+     "US-5067",
+     "https://www.dec.ny.gov/lands/8035.html"
     ]
    ],
    "names": {
-    "US-10043": "Herkimer Home State Historic Site",
-    "US-8299": "Old Erie Canal State Historical Park"
+    "US-10295": "Independence River Wild State Forest",
+    "US-5067": "Independence River State Forest"
    },
+   "note": "both park numbers are joined to the same official outline (Independence River State Forest); POTA lists them separately: check POTA's current list",
+   "owner_here": "state land (from the outline both numbers are joined to)",
    "passes": [
     1,
     1,
     1
    ],
-   "pins_inside": {
-    "US-10043": true,
-    "US-8299": true
-   },
+   "pins": [],
    "refs": [
-    "US-10043",
-    "US-8299"
+    "US-10295",
+    "US-5067"
    ],
    "shape": [
     [
-     -74.81459,
-     43.028341
+     -75.33732,
+     43.75412
     ],
     [
-     -74.81078,
-     43.02721
+     -75.3298,
+     43.75459
     ],
     [
-     -74.810657,
-     43.02703
+     -75.3295,
+     43.75216
     ],
     [
-     -74.808569,
-     43.025944
+     -75.31882,
+     43.75284
     ],
     [
-     -74.810105,
-     43.027482
+     -75.31912,
+     43.75527
     ],
     [
-     -74.81373,
-     43.028567
+     -75.31466,
+     43.75556
+    ],
+    [
+     -75.31429,
+     43.75944
+    ],
+    [
+     -75.3123,
+     43.75957
+    ],
+    [
+     -75.31081,
+     43.74725
+    ],
+    [
+     -75.30904,
+     43.74737
+    ],
+    [
+     -75.3084,
+     43.73774
+    ],
+    [
+     -75.31987,
+     43.73712
+    ],
+    [
+     -75.32092,
+     43.74651
+    ],
+    [
+     -75.3363,
+     43.74565
+    ],
+    [
+     -75.33732,
+     43.75412
     ]
    ],
-   "small": "small overlap: tight fit, check carefully",
    "status": "candidate",
-   "wide_m": 66
+   "stretches": 2
   },
   {
-   "acres": 18.5,
    "box": [
-    -74.90473,
-    43.91033,
-    -74.8818,
-    43.92353
+    -75.33732,
+    43.73712,
+    -75.3084,
+    43.75957
    ],
    "center": [
-    43.913404,
-    -74.902234
+    43.750621,
+    -75.321231
    ],
-   "found": "2026-10-26",
-   "id": "US-10294+US-10295@area@43.913,-74.902",
-   "kind": "area",
-   "passes": [
-    1,
-    0,
-    0
-   ],
-   "refs": [
-    "US-10294",
-    "US-10295"
-   ],
-   "shape": [
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-10295+US-5067@same land@43.751,-75.321",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "maps": [
     [
-     -74.881804,
-     43.923533
+     "US-10295",
+     "https://www.dec.ny.gov/lands/58192.html"
     ],
     [
-     -74.899494,
-     43.915937
-    ],
-    [
-     -74.902483,
-     43.913585
-    ],
-    [
-     -74.904726,
-     43.91033
-    ],
-    [
-     -74.899494,
-     43.915937
+     "US-5067",
+     "https://www.dec.ny.gov/lands/8035.html"
     ]
    ],
-   "small": "small overlap: tight fit, check carefully",
-   "status": "dropped in pass 2",
-   "wide_m": 80
-  },
-  {
-   "acres": 24.6,
-   "box": [
-    -75.30779,
-    43.70052,
-    -75.30654,
-    43.71897
-   ],
-   "center": [
-    43.71879,
-    -75.307539
-   ],
-   "found": "2026-10-26",
-   "id": "US-10295+US-5232@area@43.719,-75.308",
-   "kind": "area",
+   "names": {
+    "US-10295": "Independence River Wild State Forest",
+    "US-5067": "Independence River State Forest"
+   },
+   "note": "both park numbers are joined to the same official outline (Independence River State Forest); POTA lists them separately: check POTA's current list",
    "passes": [
     1,
-    0,
-    0
+    1,
+    1
    ],
    "refs": [
     "US-10295",
-    "US-5232"
+    "US-5067"
    ],
    "shape": [
     [
-     -75.307787,
-     43.718971
+     -75.33732,
+     43.75412
     ],
     [
-     -75.306545,
-     43.700522
+     -75.3298,
+     43.75459
     ],
     [
-     -75.30729,
-     43.718971
+     -75.3295,
+     43.75216
+    ],
+    [
+     -75.31882,
+     43.75284
+    ],
+    [
+     -75.31912,
+     43.75527
+    ],
+    [
+     -75.31466,
+     43.75556
+    ],
+    [
+     -75.31429,
+     43.75944
+    ],
+    [
+     -75.3123,
+     43.75957
+    ],
+    [
+     -75.31081,
+     43.74725
+    ],
+    [
+     -75.30904,
+     43.74737
+    ],
+    [
+     -75.3084,
+     43.73774
+    ],
+    [
+     -75.31987,
+     43.73712
+    ],
+    [
+     -75.32092,
+     43.74651
+    ],
+    [
+     -75.3363,
+     43.74565
+    ],
+    [
+     -75.33732,
+     43.75412
     ]
    ],
-   "small": "small overlap: tight fit, check carefully",
-   "status": "dropped in pass 2",
-   "wide_m": 80
-  },
-  {
-   "acres": 30.0,
-   "box": [
-    -76.86035,
-    42.35082,
-    -76.8516,
-    42.37017
-   ],
-   "center": [
-    42.363839,
-    -76.857187
-   ],
-   "found": "2026-10-26",
-   "id": "US-12375+US-8102@area@42.364,-76.857",
-   "kind": "area",
-   "passes": [
-    1,
-    0,
-    0
-   ],
-   "refs": [
-    "US-12375",
-    "US-8102"
-   ],
-   "shape": [
-    [
-     -76.860346,
-     42.37017
-    ],
-    [
-     -76.858159,
-     42.366009
-    ],
-    [
-     -76.853056,
-     42.352625
-    ],
-    [
-     -76.851597,
-     42.350816
-    ],
-    [
-     -76.858159,
-     42.366914
-    ]
-   ],
-   "small": "small overlap: tight fit, check carefully",
-   "status": "dropped in pass 2",
-   "wide_m": 80
+   "status": "merged into one row: US-10295+US-5067@same land@43.751,-75.321"
   },
   {
    "access": [
-    42.04659,
-    -77.926342,
-    "Parking (NYSDEC)",
-    "US-9045",
-    426
+    42.076057,
+    -78.970802,
+    "Parking: PIERCE RUN PARKING AREA (NYSDEC)",
+    "US-5249",
+    298406
    ],
    "access_pin": {
     "at": [
-     42.048488,
-     -77.929623
-    ],
-    "from": "road",
-    "name": "Mapes Rd",
-    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 0
-   },
-   "acres": 6.8,
-   "box": [
-    -77.93026,
-    42.04848,
-    -77.92796,
-    42.05612
-   ],
-   "center": [
-    42.049338,
-    -77.929953
-   ],
-   "found": "2026-10-26",
-   "id": "US-12382+US-9045@area@42.049,-77.929",
-   "kind": "area",
-   "maps": [
-    [
-     "US-12382",
-     "https://dec.ny.gov/places/wag-trail"
-    ],
-    [
-     "US-9045",
-     "https://www.dec.ny.gov/outdoor/123169.html"
-    ]
-   ],
-   "names": {
-    "US-12382": "WAG State Trail",
-    "US-9045": "Genesee River Wildlife Management Area"
-   },
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-12382": true,
-    "US-9045": true
-   },
-   "refs": [
-    "US-12382",
-    "US-9045"
-   ],
-   "shape": [
-    [
-     -77.928441,
-     42.056121
-    ],
-    [
-     -77.928683,
-     42.056121
-    ],
-    [
-     -77.928441,
-     42.055398
-    ],
-    [
-     -77.928199,
-     42.053906
-    ],
-    [
-     -77.92832,
-     42.053001
-    ],
-    [
-     -77.928925,
-     42.051916
-    ],
-    [
-     -77.929651,
-     42.051057
-    ],
-    [
-     -77.930255,
-     42.04961
-    ],
-    [
-     -77.930255,
-     42.049158
-    ],
-    [
-     -77.930014,
-     42.048796
-    ],
-    [
-     -77.92959,
-     42.048479
-    ],
-    [
-     -77.928804,
-     42.048479
-    ],
-    [
-     -77.929167,
-     42.048479
-    ],
-    [
-     -77.929469,
-     42.048886
-    ],
-    [
-     -77.929711,
-     42.049519
-    ],
-    [
-     -77.929711,
-     42.050152
-    ],
-    [
-     -77.929469,
-     42.050921
-    ],
-    [
-     -77.928683,
-     42.051825
-    ],
-    [
-     -77.928199,
-     42.052549
-    ],
-    [
-     -77.928017,
-     42.053092
-    ],
-    [
-     -77.927957,
-     42.054086
-    ]
-   ],
-   "small": "small overlap: tight fit, check carefully",
-   "status": "candidate",
-   "wide_m": 60
-  },
-  {
-   "acres": 25.7,
-   "box": [
-    -73.16502,
-    40.74809,
-    -73.15363,
-    40.76527
-   ],
-   "center": [
-    40.753516,
-    -73.156952
-   ],
-   "found": "2026-10-26",
-   "id": "US-2008+US-4519@area@40.754,-73.157",
-   "kind": "area",
-   "passes": [
-    1,
-    0,
-    0
-   ],
-   "refs": [
-    "US-2008",
-    "US-4519"
-   ],
-   "shape": [
-    [
-     -73.165016,
-     40.765273
-    ],
-    [
-     -73.153631,
-     40.74809
-    ],
-    [
-     -73.154106,
-     40.749718
-    ]
-   ],
-   "small": "small overlap: tight fit, check carefully",
-   "status": "dropped in pass 2",
-   "wide_m": 80
-  },
-  {
-   "acres": 6.5,
-   "box": [
-    -73.99078,
-    41.32196,
-    -73.98623,
-    41.32721
-   ],
-   "center": [
-    41.322505,
-    -73.986948
-   ],
-   "found": "2026-10-26",
-   "id": "US-2010+US-7683@area@41.323,-73.987",
-   "kind": "area",
-   "passes": [
-    1,
-    0,
-    0
-   ],
-   "refs": [
-    "US-2010",
-    "US-7683"
-   ],
-   "shape": [
-    [
-     -73.988144,
-     41.327208
-    ],
-    [
-     -73.990776,
-     41.324133
-    ],
-    [
-     -73.986231,
-     41.321962
-    ],
-    [
-     -73.986709,
-     41.322686
-    ],
-    [
-     -73.990537,
-     41.324133
-    ]
-   ],
-   "small": "small overlap: tight fit, check carefully",
-   "status": "dropped in pass 2",
-   "wide_m": 80
-  },
-  {
-   "access": [
-    42.516842,
-    -75.687644,
-    "Parking: Central Bowman Lake (NYS OPRHP)",
-    "US-2017",
-    661
-   ],
-   "access_pin": {
-    "at": [
-     42.52565,
-     -75.690576
+     42.284567,
+     -75.354999
     ],
     "from": "road",
     "name": "public road",
     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
     "walk_m": 0
    },
-   "acres": 130.3,
    "box": [
-    -75.6998,
-    42.51424,
-    -75.69041,
-    42.52564
+    -75.38228,
+    42.26897,
+    -75.32826,
+    42.28528
    ],
    "center": [
-    42.519758,
-    -75.694679
+    42.275485,
+    -75.357863
    ],
-   "found": "2026-10-26",
-   "id": "US-2017+US-5413@area@42.520,-75.695",
-   "kind": "area",
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-12030+US-5249@same land@42.275,-75.358",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
    "maps": [
     [
-     "US-2017",
-     "https://parks.ny.gov/parks/76/"
+     "US-12030",
+     "https://dec.ny.gov/places/pine-hill-state-forest"
     ],
     [
-     "US-5413",
-     "https://www.dec.ny.gov/lands/8165.html"
+     "US-5249",
+     "https://www.dec.ny.gov/lands/68174.html"
     ]
    ],
    "names": {
-    "US-2017": "Bowman Lake State Park",
-    "US-5413": "McDonough State Forest"
+    "US-12030": "Pine Hill (Cattaraugus County) State Forest",
+    "US-5249": "Pine Hill (Delaware County) State Forest"
    },
+   "note": "both park numbers are joined to the same official outline (Pine Hill State Forest); POTA lists them separately: check POTA's current list",
+   "owner_here": "state land (from the outline both numbers are joined to)",
    "passes": [
     1,
     1,
     1
    ],
-   "pins_inside": {
-    "US-2017": true,
-    "US-5413": true
-   },
    "refs": [
-    "US-2017",
-    "US-5413"
+    "US-12030",
+    "US-5249"
    ],
    "shape": [
     [
-     -75.694009,
-     42.525637
+     -75.38228,
+     42.26897
     ],
     [
-     -75.693826,
-     42.521974
+     -75.38187,
+     42.27648
     ],
     [
-     -75.699433,
-     42.521883
+     -75.37853,
+     42.27679
     ],
     [
-     -75.699189,
-     42.519713
+     -75.38132,
+     42.27864
     ],
     [
-     -75.699798,
-     42.519623
+     -75.38167,
+     42.28367
     ],
     [
-     -75.699615,
-     42.517407
+     -75.37629,
+     42.28379
     ],
     [
-     -75.693583,
-     42.517588
+     -75.37631,
+     42.28244
     ],
     [
-     -75.694009,
-     42.514242
+     -75.37028,
+     42.28242
     ],
     [
-     -75.690718,
-     42.514377
+     -75.37057,
+     42.27287
     ],
     [
-     -75.691389,
-     42.522607
+     -75.3649,
+     42.27313
     ],
     [
-     -75.690414,
-     42.525637
+     -75.36477,
+     42.27736
+    ],
+    [
+     -75.3558,
+     42.27786
+    ],
+    [
+     -75.35641,
+     42.28452
+    ],
+    [
+     -75.34268,
+     42.28528
+    ],
+    [
+     -75.34109,
+     42.27278
+    ],
+    [
+     -75.32873,
+     42.27324
+    ],
+    [
+     -75.32826,
+     42.26977
+    ],
+    [
+     -75.33504,
+     42.26951
+    ],
+    [
+     -75.33442,
+     42.2717
+    ],
+    [
+     -75.33625,
+     42.27169
+    ],
+    [
+     -75.33749,
+     42.26942
+    ],
+    [
+     -75.34061,
+     42.26931
+    ],
+    [
+     -75.34087,
+     42.27104
+    ],
+    [
+     -75.38228,
+     42.26897
     ]
    ],
-   "status": "candidate",
-   "wide_m": 500
+   "status": "candidate"
   },
   {
    "access": [
-    42.516553,
-    -75.678802,
-    "Entrance (NYS OPRHP GIS Bureau; Details field notes e.g. \"No parking)",
-    "US-2017",
-    1348
+    42.144543,
+    -77.333748,
+    "Parking: GATE PARKING (NYSDEC)",
+    "US-5342",
+    103425
    ],
    "access_pin": {
     "at": [
-     42.522256,
-     -75.664676
+     42.016839,
+     -76.08908
     ],
     "from": "road",
-    "name": "Franklin Ln",
+    "name": "Crumm Rd",
     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
     "walk_m": 0
    },
-   "acres": 2.4,
    "box": [
-    -75.66482,
-    42.52193,
-    -75.66384,
-    42.5241
+    -76.10633,
+    42.00261,
+    -76.08169,
+    42.01814
    ],
    "center": [
-    42.522245,
-    -75.664271
+    42.01126,
+    -76.096092
    ],
-   "found": "2026-10-26",
-   "id": "US-2017+US-5413@area@42.522,-75.664",
-   "kind": "area",
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-12778+US-5342@same land@42.011,-76.096",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
    "maps": [
     [
-     "US-2017",
-     "https://parks.ny.gov/parks/76/"
+     "US-12778",
+     "https://dec.ny.gov/places/tracy-creek-state-forest-steuben-county"
     ],
     [
-     "US-5413",
-     "https://www.dec.ny.gov/lands/8165.html"
+     "US-5342",
+     "https://www.dec.ny.gov/lands/8102.html"
     ]
    ],
    "names": {
-    "US-2017": "Bowman Lake State Park",
-    "US-5413": "McDonough State Forest"
+    "US-12778": "Tracy Creek (Steuben County) State Forest",
+    "US-5342": "Tracy Creek (Broome County) State Forest"
    },
+   "note": "both park numbers are joined to the same official outline (Tracy Creek State Forest); POTA lists them separately: check POTA's current list",
+   "owner_here": "state land (from the outline both numbers are joined to)",
    "passes": [
     1,
     1,
     1
    ],
-   "pins_inside": {
-    "US-2017": true,
-    "US-5413": true
-   },
    "refs": [
-    "US-2017",
-    "US-5413"
+    "US-12778",
+    "US-5342"
    ],
    "shape": [
     [
-     -75.663845,
-     42.524099
+     -76.10633,
+     42.01393
     ],
     [
-     -75.66482,
-     42.521929
+     -76.1062,
+     42.01209
     ],
     [
-     -75.663906,
-     42.521974
+     -76.0939,
+     42.01225
+    ],
+    [
+     -76.09391,
+     42.01407
+    ],
+    [
+     -76.09383,
+     42.01237
+    ],
+    [
+     -76.09143,
+     42.01238
+    ],
+    [
+     -76.09142,
+     42.01408
+    ],
+    [
+     -76.08922,
+     42.01676
+    ],
+    [
+     -76.08679,
+     42.01794
+    ],
+    [
+     -76.08237,
+     42.01814
+    ],
+    [
+     -76.08169,
+     42.01412
+    ],
+    [
+     -76.08728,
+     42.01424
+    ],
+    [
+     -76.08699,
+     42.01044
+    ],
+    [
+     -76.09386,
+     42.01037
+    ],
+    [
+     -76.09377,
+     42.00657
+    ],
+    [
+     -76.10064,
+     42.00653
+    ],
+    [
+     -76.10061,
+     42.00272
+    ],
+    [
+     -76.10592,
+     42.00261
+    ],
+    [
+     -76.10605,
+     42.00651
+    ],
+    [
+     -76.10264,
+     42.0066
+    ],
+    [
+     -76.10278,
+     42.01085
+    ],
+    [
+     -76.10615,
+     42.00949
+    ],
+    [
+     -76.10633,
+     42.01393
     ]
    ],
-   "small": "small overlap: tight fit, check carefully",
-   "status": "candidate",
-   "wide_m": 70
-  },
-  {
-   "acres": 5.5,
-   "box": [
-    -71.86635,
-    41.06796,
-    -71.86253,
-    41.06959
-   ],
-   "center": [
-    41.068687,
-    -71.863964
-   ],
-   "found": "2026-10-26",
-   "id": "US-2025+US-2109@area@41.069,-71.864",
-   "kind": "area",
-   "passes": [
-    1,
-    0,
-    0
-   ],
-   "refs": [
-    "US-2025",
-    "US-2109"
-   ],
-   "shape": [
-    [
-     -71.866347,
-     41.069591
-    ],
-    [
-     -71.863249,
-     41.067963
-    ],
-    [
-     -71.862534,
-     41.068325
-    ]
-   ],
-   "small": "small overlap: tight fit, check carefully",
-   "status": "dropped in pass 2",
-   "wide_m": 88
+   "status": "candidate"
   },
   {
    "access": [
-    40.623608,
-    -73.278876,
-    "Entrance: Long Island Robert Moses (NYS OPRHP)",
+    44.983688,
+    -74.851006,
+    "Entrance (NYS OPRHP GIS Bureau; Details field notes e.g. \"No parking)",
     "US-2128",
-    2802
+    600
    ],
    "access_pin": {
     "at": [
-     40.62587,
-     -73.31156
+     45.010728,
+     -74.82897
     ],
     "from": "road",
-    "name": "Oak Beach Ave",
+    "name": "public road",
     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 1369
+    "walk_m": 0
    },
-   "acres": 13.7,
    "box": [
-    -73.31381,
-    40.62242,
-    -73.31056,
-    40.62586
+    -74.87338,
+    44.97825,
+    -74.82828,
+    44.99661
    ],
    "center": [
-    40.623504,
-    -73.312036
+    44.987952,
+    -74.855724
    ],
-   "found": "2026-10-26",
-   "id": "US-2028+US-2061+US-2128@area@40.624,-73.312",
-   "kind": "area",
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-2128+US-4374@same land@44.988,-74.856",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
    "maps": [
-    [
-     "US-2028",
-     "https://parks.ny.gov/parks/65/details.aspx"
-    ],
-    [
-     "US-2061",
-     "https://parks.ny.gov/parks/15/details.aspx"
-    ],
     [
      "US-2128",
      "https://parks.ny.gov/parks/robertmoses/details.aspx"
-    ]
-   ],
-   "names": {
-    "US-2028": "Captree State Park",
-    "US-2061": "Gilgo State Park",
-    "US-2128": "Robert Moses (Long Island) State Park"
-   },
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-2028": true,
-    "US-2061": true,
-    "US-2128": true
-   },
-   "refs": [
-    "US-2028",
-    "US-2061",
-    "US-2128"
-   ],
-   "shape": [
-    [
-     -73.311562,
-     40.625856
-    ],
-    [
-     -73.313811,
-     40.623052
-    ],
-    [
-     -73.313338,
-     40.622826
-    ],
-    [
-     -73.311799,
-     40.622419
-    ],
-    [
-     -73.310556,
-     40.622691
-    ]
-   ],
-   "status": "candidate",
-   "wide_m": 208
-  },
-  {
-   "access": [
-    40.623608,
-    -73.278876,
-    "Entrance: Long Island Robert Moses (NYS OPRHP)",
-    "US-4374",
-    2802
-   ],
-   "access_pin": {
-    "at": [
-     40.62587,
-     -73.31156
-    ],
-    "from": "road",
-    "name": "Oak Beach Ave",
-    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 1369
-   },
-   "acres": 13.7,
-   "box": [
-    -73.31381,
-    40.62242,
-    -73.31056,
-    40.62586
-   ],
-   "center": [
-    40.623504,
-    -73.312036
-   ],
-   "found": "2026-10-26",
-   "id": "US-2028+US-2061+US-4374@area@40.624,-73.312",
-   "kind": "area",
-   "maps": [
-    [
-     "US-2028",
-     "https://parks.ny.gov/parks/65/details.aspx"
-    ],
-    [
-     "US-2061",
-     "https://parks.ny.gov/parks/15/details.aspx"
     ],
     [
      "US-4374",
@@ -1586,4912 +840,2520 @@
     ]
    ],
    "names": {
-    "US-2028": "Captree State Park",
-    "US-2061": "Gilgo State Park",
+    "US-2128": "Robert Moses (Long Island) State Park",
     "US-4374": "Robert Moses (Thousand Islands) State Park"
    },
+   "note": "both park numbers are joined to the same official outline (Robert Moses State Park); POTA lists them separately: check POTA's current list",
+   "owner_here": "state land (from the outline both numbers are joined to)",
    "passes": [
     1,
     1,
     1
    ],
-   "pins_inside": {
-    "US-2028": true,
-    "US-2061": true,
-    "US-4374": true
-   },
    "refs": [
-    "US-2028",
-    "US-2061",
-    "US-4374"
-   ],
-   "shape": [
-    [
-     -73.311562,
-     40.625856
-    ],
-    [
-     -73.313811,
-     40.623052
-    ],
-    [
-     -73.311799,
-     40.622419
-    ],
-    [
-     -73.310556,
-     40.622691
-    ]
-   ],
-   "status": "candidate",
-   "wide_m": 208
-  },
-  {
-   "access": [
-    40.623608,
-    -73.278876,
-    "Entrance: Long Island Robert Moses (NYS OPRHP)",
-    "US-2028",
-    2809
-   ],
-   "access_pin": {
-    "at": [
-     40.625865,
-     -73.311585
-    ],
-    "from": "road",
-    "name": "Oak Beach Ave",
-    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 1374
-   },
-   "acres": 18.4,
-   "box": [
-    -73.31496,
-    40.62165,
-    -73.31058,
-    40.6259
-   ],
-   "center": [
-    40.623368,
-    -73.312116
-   ],
-   "found": "2026-10-26",
-   "id": "US-2028+US-2061@area@40.623,-73.312",
-   "kind": "area",
-   "maps": [
-    [
-     "US-2028",
-     "https://parks.ny.gov/parks/65/details.aspx"
-    ],
-    [
-     "US-2061",
-     "https://parks.ny.gov/parks/15/details.aspx"
-    ]
-   ],
-   "names": {
-    "US-2028": "Captree State Park",
-    "US-2061": "Gilgo State Park"
-   },
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-2028": true,
-    "US-2061": true
-   },
-   "refs": [
-    "US-2028",
-    "US-2061"
-   ],
-   "shape": [
-    [
-     -73.311584,
-     40.6259
-    ],
-    [
-     -73.314957,
-     40.621649
-    ],
-    [
-     -73.310577,
-     40.622689
-    ]
-   ],
-   "status": "candidate",
-   "wide_m": 218
-  },
-  {
-   "access": [
-    40.623608,
-    -73.278876,
-    "Entrance: Long Island Robert Moses (NYS OPRHP)",
     "US-2128",
-    1853
-   ],
-   "access_pin": {
-    "at": [
-     40.630955,
-     -73.225019
-    ],
-    "from": "road",
-    "name": "Burma Rd",
-    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 0
-   },
-   "acres": 932.0,
-   "box": [
-    -73.31379,
-    40.62022,
-    -73.22407,
-    40.63203
-   ],
-   "center": [
-    40.624566,
-    -73.300771
-   ],
-   "found": "2026-10-26",
-   "id": "US-2028+US-2128@area@40.624,-73.301",
-   "kind": "area",
-   "maps": [
-    [
-     "US-2028",
-     "https://parks.ny.gov/parks/65/details.aspx"
-    ],
-    [
-     "US-2128",
-     "https://parks.ny.gov/parks/robertmoses/details.aspx"
-    ]
-   ],
-   "names": {
-    "US-2028": "Captree State Park",
-    "US-2128": "Robert Moses (Long Island) State Park"
-   },
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-2028": true,
-    "US-2128": true
-   },
-   "refs": [
-    "US-2028",
-    "US-2128"
-   ],
-   "shape": [
-    [
-     -73.224134,
-     40.631981
-    ],
-    [
-     -73.228394,
-     40.631846
-    ],
-    [
-     -73.234253,
-     40.631846
-    ],
-    [
-     -73.238396,
-     40.630806
-    ],
-    [
-     -73.245438,
-     40.629359
-    ],
-    [
-     -73.252125,
-     40.626736
-    ],
-    [
-     -73.255617,
-     40.625696
-    ],
-    [
-     -73.255913,
-     40.624882
-    ],
-    [
-     -73.258517,
-     40.624294
-    ],
-    [
-     -73.260529,
-     40.624566
-    ],
-    [
-     -73.261594,
-     40.625199
-    ],
-    [
-     -73.263429,
-     40.62538
-    ],
-    [
-     -73.263606,
-     40.625334
-    ],
-    [
-     -73.263784,
-     40.624837
-    ],
-    [
-     -73.264967,
-     40.625018
-    ],
-    [
-     -73.264375,
-     40.625334
-    ],
-    [
-     -73.265026,
-     40.625425
-    ],
-    [
-     -73.265263,
-     40.625063
-    ],
-    [
-     -73.265441,
-     40.625425
-    ],
-    [
-     -73.266032,
-     40.62538
-    ],
-    [
-     -73.265559,
-     40.625108
-    ],
-    [
-     -73.265973,
-     40.624882
-    ],
-    [
-     -73.266979,
-     40.625108
-    ],
-    [
-     -73.266447,
-     40.62547
-    ],
-    [
-     -73.267394,
-     40.625289
-    ],
-    [
-     -73.26982,
-     40.625334
-    ],
-    [
-     -73.272246,
-     40.625108
-    ],
-    [
-     -73.277277,
-     40.625334
-    ],
-    [
-     -73.281537,
-     40.625244
-    ],
-    [
-     -73.284082,
-     40.625289
-    ],
-    [
-     -73.288166,
-     40.62538
-    ],
-    [
-     -73.290414,
-     40.625153
-    ],
-    [
-     -73.294439,
-     40.625877
-    ],
-    [
-     -73.297516,
-     40.627686
-    ],
-    [
-     -73.298048,
-     40.628816
-    ],
-    [
-     -73.298404,
-     40.628952
-    ],
-    [
-     -73.302309,
-     40.628138
-    ],
-    [
-     -73.304795,
-     40.628002
-    ],
-    [
-     -73.308819,
-     40.626962
-    ],
-    [
-     -73.31089,
-     40.6266
-    ],
-    [
-     -73.313021,
-     40.622712
-    ],
-    [
-     -73.309766,
-     40.622169
-    ],
-    [
-     -73.306866,
-     40.620858
-    ],
-    [
-     -73.30657,
-     40.620225
-    ],
-    [
-     -73.306334,
-     40.620586
-    ],
-    [
-     -73.282543,
-     40.620722
-    ],
-    [
-     -73.271299,
-     40.621717
-    ],
-    [
-     -73.258694,
-     40.622802
-    ],
-    [
-     -73.242775,
-     40.624882
-    ],
-    [
-     -73.234549,
-     40.626103
-    ],
-    [
-     -73.224074,
-     40.628364
-    ],
-    [
-     -73.224785,
-     40.630489
-    ],
-    [
-     -73.224785,
-     40.631077
-    ],
-    [
-     -73.224134,
-     40.630896
-    ]
-   ],
-   "status": "candidate",
-   "wide_m": 850
-  },
-  {
-   "access": [
-    40.623608,
-    -73.278876,
-    "Entrance: Long Island Robert Moses (NYS OPRHP)",
-    "US-4374",
-    1853
-   ],
-   "access_pin": {
-    "at": [
-     40.630955,
-     -73.225019
-    ],
-    "from": "road",
-    "name": "Burma Rd",
-    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 0
-   },
-   "acres": 930.9,
-   "box": [
-    -73.31379,
-    40.62023,
-    -73.22408,
-    40.63203
-   ],
-   "center": [
-    40.624569,
-    -73.300771
-   ],
-   "found": "2026-10-26",
-   "id": "US-2028+US-4374@area@40.624,-73.301",
-   "kind": "area",
-   "maps": [
-    [
-     "US-2028",
-     "https://parks.ny.gov/parks/65/details.aspx"
-    ],
-    [
-     "US-4374",
-     "https://parks.ny.gov/parks/51/details.aspx"
-    ]
-   ],
-   "names": {
-    "US-2028": "Captree State Park",
-    "US-4374": "Robert Moses (Thousand Islands) State Park"
-   },
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-2028": true,
-    "US-4374": true
-   },
-   "refs": [
-    "US-2028",
     "US-4374"
    ],
    "shape": [
     [
-     -73.224134,
-     40.631985
+     -74.82828,
+     44.98759
     ],
     [
-     -73.228395,
-     40.631849
+     -74.8288,
+     44.98674
     ],
     [
-     -73.234254,
-     40.631849
+     -74.83594,
+     44.98485
     ],
     [
-     -73.238396,
-     40.630809
+     -74.85719,
+     44.98262
     ],
     [
-     -73.245438,
-     40.629362
+     -74.8628,
+     44.9851
     ],
     [
-     -73.252126,
-     40.62674
+     -74.86436,
+     44.98419
     ],
     [
-     -73.255617,
-     40.625699
+     -74.86619,
+     44.98128
     ],
     [
-     -73.255913,
-     40.624886
+     -74.86933,
+     44.98081
     ],
     [
-     -73.258517,
-     40.624298
+     -74.87047,
+     44.97939
     ],
     [
-     -73.260529,
-     40.624569
+     -74.87164,
+     44.97935
     ],
     [
-     -73.261594,
-     40.625157
+     -74.8718,
+     44.97825
     ],
     [
-     -73.263429,
-     40.625383
+     -74.87338,
+     44.98316
     ],
     [
-     -73.263606,
-     40.625338
+     -74.87234,
+     44.98624
     ],
     [
-     -73.263784,
-     40.62484
+     -74.87062,
+     44.98613
     ],
     [
-     -73.264968,
-     40.625021
+     -74.87113,
+     44.98879
     ],
     [
-     -73.264376,
-     40.625338
+     -74.86972,
+     44.98805
     ],
     [
-     -73.265145,
-     40.625066
+     -74.86825,
+     44.98842
     ],
     [
-     -73.265441,
-     40.625428
+     -74.86536,
+     44.99137
     ],
     [
-     -73.2655,
-     40.625338
+     -74.86341,
+     44.99198
     ],
     [
-     -73.266743,
-     40.624931
+     -74.86298,
+     44.9933
     ],
     [
-     -73.26698,
-     40.625383
+     -74.85942,
+     44.994
     ],
     [
-     -73.26698,
-     40.625473
+     -74.8608,
+     44.9933
     ],
     [
-     -73.268282,
-     40.625383
+     -74.85906,
+     44.99314
     ],
     [
-     -73.271655,
-     40.624976
+     -74.85832,
+     44.99385
     ],
     [
-     -73.276626,
-     40.625112
+     -74.85783,
+     44.99315
     ],
     [
-     -73.277987,
-     40.625247
+     -74.85378,
+     44.99249
     ],
     [
-     -73.283017,
-     40.625428
+     -74.83837,
+     44.99661
     ],
     [
-     -73.286095,
-     40.625247
+     -74.83389,
+     44.9946
     ],
     [
-     -73.28858,
-     40.625202
+     -74.83234,
+     44.99138
     ],
     [
-     -73.292427,
-     40.625383
+     -74.82829,
+     44.98845
     ],
     [
-     -73.296273,
-     40.626694
+     -74.82879,
+     44.9883
     ],
     [
-     -73.297871,
-     40.628232
-    ],
-    [
-     -73.297871,
-     40.629046
-    ],
-    [
-     -73.298404,
-     40.628955
-    ],
-    [
-     -73.30231,
-     40.628141
-    ],
-    [
-     -73.307873,
-     40.627146
-    ],
-    [
-     -73.309411,
-     40.626966
-    ],
-    [
-     -73.31379,
-     40.623032
-    ],
-    [
-     -73.311778,
-     40.622399
-    ],
-    [
-     -73.308819,
-     40.62163
-    ],
-    [
-     -73.306689,
-     40.620273
-    ],
-    [
-     -73.306393,
-     40.620273
-    ],
-    [
-     -73.302724,
-     40.620771
-    ],
-    [
-     -73.276567,
-     40.621132
-    ],
-    [
-     -73.260529,
-     40.622444
-    ],
-    [
-     -73.248457,
-     40.624026
-    ],
-    [
-     -73.239343,
-     40.625609
-    ],
-    [
-     -73.226619,
-     40.627915
-    ],
-    [
-     -73.224134,
-     40.630674
-    ],
-    [
-     -73.225081,
-     40.6309
-    ],
-    [
-     -73.224489,
-     40.63108
+     -74.82828,
+     44.98759
     ]
    ],
-   "status": "candidate",
-   "wide_m": 850
-  },
-  {
-   "access": [
-    43.280099,
-    -76.922488,
-    "Entrance (NYS OPRHP GIS Bureau; Details field notes e.g. \"No parking)",
-    "US-2034",
-    1070
-   ],
-   "access_pin": {
-    "at": [
-     43.290394,
-     -76.90622
-    ],
-    "from": "road",
-    "name": "public road",
-    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 0
-   },
-   "acres": 144.3,
-   "box": [
-    -76.92105,
-    43.26922,
-    -76.90501,
-    43.2907
-   ],
-   "center": [
-    43.270853,
-    -76.918584
-   ],
-   "found": "2026-10-26",
-   "id": "US-2034+US-9082@area@43.271,-76.918",
-   "kind": "area",
-   "maps": [
-    [
-     "US-2034",
-     "https://parks.ny.gov/parks/chimneybluffs"
-    ],
-    [
-     "US-9082",
-     "https://www.dec.ny.gov/outdoor/24441.html"
-    ]
-   ],
-   "names": {
-    "US-2034": "Chimney Bluffs State Park",
-    "US-9082": "Lake Shore Marshes Wildlife Management Area"
-   },
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-2034": true,
-    "US-9082": true
-   },
-   "refs": [
-    "US-2034",
-    "US-9082"
-   ],
-   "shape": [
-    [
-     -76.906244,
-     43.290704
-    ],
-    [
-     -76.906368,
-     43.290659
-    ],
-    [
-     -76.906121,
-     43.287449
-    ],
-    [
-     -76.906059,
-     43.287042
-    ],
-    [
-     -76.905627,
-     43.286363
-    ],
-    [
-     -76.905566,
-     43.28564
-    ],
-    [
-     -76.906306,
-     43.283605
-    ],
-    [
-     -76.906923,
-     43.280892
-    ],
-    [
-     -76.907293,
-     43.276732
-    ],
-    [
-     -76.907725,
-     43.276958
-    ],
-    [
-     -76.90828,
-     43.276596
-    ],
-    [
-     -76.911057,
-     43.278812
-    ],
-    [
-     -76.91192,
-     43.279174
-    ],
-    [
-     -76.912846,
-     43.2794
-    ],
-    [
-     -76.91519,
-     43.279716
-    ],
-    [
-     -76.915314,
-     43.280168
-    ],
-    [
-     -76.917411,
-     43.280123
-    ],
-    [
-     -76.917596,
-     43.279535
-    ],
-    [
-     -76.918275,
-     43.279309
-    ],
-    [
-     -76.919632,
-     43.279264
-    ],
-    [
-     -76.921051,
-     43.277953
-    ],
-    [
-     -76.920681,
-     43.274742
-    ],
-    [
-     -76.920558,
-     43.269225
-    ],
-    [
-     -76.916979,
-     43.269361
-    ],
-    [
-     -76.916918,
-     43.269225
-    ],
-    [
-     -76.91556,
-     43.269271
-    ],
-    [
-     -76.915622,
-     43.269542
-    ],
-    [
-     -76.916116,
-     43.270039
-    ],
-    [
-     -76.916548,
-     43.270899
-    ],
-    [
-     -76.916918,
-     43.273024
-    ],
-    [
-     -76.917041,
-     43.275285
-    ],
-    [
-     -76.91735,
-     43.275827
-    ],
-    [
-     -76.917288,
-     43.276144
-    ],
-    [
-     -76.917967,
-     43.277953
-    ],
-    [
-     -76.917781,
-     43.278721
-    ],
-    [
-     -76.916856,
-     43.279264
-    ],
-    [
-     -76.916609,
-     43.279309
-    ],
-    [
-     -76.915684,
-     43.279128
-    ],
-    [
-     -76.91556,
-     43.27836
-    ],
-    [
-     -76.914141,
-     43.277681
-    ],
-    [
-     -76.913956,
-     43.27732
-    ],
-    [
-     -76.912969,
-     43.276913
-    ],
-    [
-     -76.912722,
-     43.27646
-    ],
-    [
-     -76.911674,
-     43.276325
-    ],
-    [
-     -76.91118,
-     43.276551
-    ],
-    [
-     -76.910316,
-     43.276234
-    ],
-    [
-     -76.909699,
-     43.275782
-    ],
-    [
-     -76.908219,
-     43.276053
-    ],
-    [
-     -76.90754,
-     43.276506
-    ],
-    [
-     -76.907108,
-     43.276099
-    ],
-    [
-     -76.906429,
-     43.275827
-    ],
-    [
-     -76.90717,
-     43.276506
-    ],
-    [
-     -76.907046,
-     43.277591
-    ],
-    [
-     -76.906183,
-     43.277591
-    ],
-    [
-     -76.906183,
-     43.277772
-    ],
-    [
-     -76.905812,
-     43.277862
-    ],
-    [
-     -76.905812,
-     43.280485
-    ],
-    [
-     -76.906059,
-     43.280892
-    ],
-    [
-     -76.906676,
-     43.280756
-    ],
-    [
-     -76.906738,
-     43.280892
-    ],
-    [
-     -76.906491,
-     43.281977
-    ],
-    [
-     -76.906368,
-     43.282113
-    ],
-    [
-     -76.906183,
-     43.282113
-    ],
-    [
-     -76.906059,
-     43.282881
-    ],
-    [
-     -76.906244,
-     43.282927
-    ],
-    [
-     -76.906121,
-     43.283469
-    ],
-    [
-     -76.905319,
-     43.285414
-    ],
-    [
-     -76.905381,
-     43.286228
-    ],
-    [
-     -76.905195,
-     43.286454
-    ],
-    [
-     -76.905195,
-     43.287449
-    ],
-    [
-     -76.905319,
-     43.287675
-    ],
-    [
-     -76.905134,
-     43.28781
-    ],
-    [
-     -76.905195,
-     43.288398
-    ],
-    [
-     -76.90501,
-     43.288624
-    ],
-    [
-     -76.905134,
-     43.288986
-    ],
-    [
-     -76.905319,
-     43.289076
-    ],
-    [
-     -76.905195,
-     43.289393
-    ],
-    [
-     -76.905381,
-     43.2898
-    ],
-    [
-     -76.905936,
-     43.289574
-    ],
-    [
-     -76.906059,
-     43.289619
-    ]
-   ],
-   "status": "candidate",
-   "wide_m": 340
-  },
-  {
-   "access": [
-    43.280099,
-    -76.922488,
-    "Entrance (NYS OPRHP GIS Bureau; Details field notes e.g. \"No parking)",
-    "US-9082",
-    559
-   ],
-   "access_pin": {
-    "at": [
-     43.280176,
-     -76.915786
-    ],
-    "from": "road",
-    "name": "Garner Rd",
-    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 5
-   },
-   "acres": 38.1,
-   "box": [
-    -76.93117,
-    43.27528,
-    -76.9271,
-    43.28098
-   ],
-   "center": [
-    43.279128,
-    -76.929257
-   ],
-   "found": "2026-10-26",
-   "id": "US-2034+US-9082@area@43.279,-76.929",
-   "kind": "area",
-   "maps": [
-    [
-     "US-2034",
-     "https://parks.ny.gov/parks/chimneybluffs"
-    ],
-    [
-     "US-9082",
-     "https://www.dec.ny.gov/outdoor/24441.html"
-    ]
-   ],
-   "names": {
-    "US-2034": "Chimney Bluffs State Park",
-    "US-9082": "Lake Shore Marshes Wildlife Management Area"
-   },
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-2034": true,
-    "US-9082": true
-   },
-   "refs": [
-    "US-2034",
-    "US-9082"
-   ],
-   "shape": [
-    [
-     -76.927591,
-     43.280621
-    ],
-    [
-     -76.927776,
-     43.28044
-    ],
-    [
-     -76.928517,
-     43.280394
-    ],
-    [
-     -76.92938,
-     43.280666
-    ],
-    [
-     -76.929504,
-     43.280982
-    ],
-    [
-     -76.931046,
-     43.279671
-    ],
-    [
-     -76.93117,
-     43.280394
-    ],
-    [
-     -76.930861,
-     43.275285
-    ],
-    [
-     -76.928578,
-     43.27533
-    ],
-    [
-     -76.92827,
-     43.275466
-    ],
-    [
-     -76.927838,
-     43.27637
-    ],
-    [
-     -76.928023,
-     43.276732
-    ],
-    [
-     -76.927591,
-     43.27845
-    ],
-    [
-     -76.927406,
-     43.278631
-    ],
-    [
-     -76.927406,
-     43.279535
-    ],
-    [
-     -76.927098,
-     43.279671
-    ],
-    [
-     -76.927591,
-     43.280123
-    ],
-    [
-     -76.927406,
-     43.280304
-    ]
-   ],
-   "status": "candidate",
-   "wide_m": 300
-  },
-  {
-   "access": [
-    43.280099,
-    -76.922488,
-    "Entrance (NYS OPRHP GIS Bureau; Details field notes e.g. \"No parking)",
-    "US-2034",
-    1070
-   ],
-   "access_pin": {
-    "at": [
-     43.290394,
-     -76.90622
-    ],
-    "from": "road",
-    "name": "public road",
-    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 0
-   },
-   "acres": 144.3,
-   "box": [
-    -76.92105,
-    43.26922,
-    -76.90501,
-    43.2907
-   ],
-   "center": [
-    43.270853,
-    -76.918584
-   ],
-   "found": "2026-10-26",
-   "id": "US-2034+US-9082@area@43.289,-76.906",
-   "kind": "area",
-   "maps": [
-    [
-     "US-2034",
-     "https://parks.ny.gov/parks/chimneybluffs"
-    ],
-    [
-     "US-9082",
-     "https://www.dec.ny.gov/outdoor/24441.html"
-    ]
-   ],
-   "names": {
-    "US-2034": "Chimney Bluffs State Park",
-    "US-9082": "Lake Shore Marshes Wildlife Management Area"
-   },
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-2034": true,
-    "US-9082": true
-   },
-   "refs": [
-    "US-2034",
-    "US-9082"
-   ],
-   "shape": [
-    [
-     -76.906244,
-     43.290704
-    ],
-    [
-     -76.906368,
-     43.290659
-    ],
-    [
-     -76.906121,
-     43.287449
-    ],
-    [
-     -76.906059,
-     43.287042
-    ],
-    [
-     -76.905627,
-     43.286363
-    ],
-    [
-     -76.905566,
-     43.28564
-    ],
-    [
-     -76.906306,
-     43.283605
-    ],
-    [
-     -76.906923,
-     43.280892
-    ],
-    [
-     -76.907293,
-     43.276732
-    ],
-    [
-     -76.907725,
-     43.276958
-    ],
-    [
-     -76.90828,
-     43.276596
-    ],
-    [
-     -76.911057,
-     43.278812
-    ],
-    [
-     -76.91192,
-     43.279174
-    ],
-    [
-     -76.912846,
-     43.2794
-    ],
-    [
-     -76.91519,
-     43.279716
-    ],
-    [
-     -76.915314,
-     43.280168
-    ],
-    [
-     -76.917411,
-     43.280123
-    ],
-    [
-     -76.917596,
-     43.279535
-    ],
-    [
-     -76.918275,
-     43.279309
-    ],
-    [
-     -76.919632,
-     43.279264
-    ],
-    [
-     -76.921051,
-     43.277953
-    ],
-    [
-     -76.920681,
-     43.274742
-    ],
-    [
-     -76.920558,
-     43.269225
-    ],
-    [
-     -76.916979,
-     43.269361
-    ],
-    [
-     -76.916918,
-     43.269225
-    ],
-    [
-     -76.91556,
-     43.269271
-    ],
-    [
-     -76.915622,
-     43.269542
-    ],
-    [
-     -76.916116,
-     43.270039
-    ],
-    [
-     -76.916548,
-     43.270899
-    ],
-    [
-     -76.916918,
-     43.273024
-    ],
-    [
-     -76.917041,
-     43.275285
-    ],
-    [
-     -76.91735,
-     43.275827
-    ],
-    [
-     -76.917288,
-     43.276144
-    ],
-    [
-     -76.917967,
-     43.277953
-    ],
-    [
-     -76.917781,
-     43.278721
-    ],
-    [
-     -76.916856,
-     43.279264
-    ],
-    [
-     -76.916609,
-     43.279309
-    ],
-    [
-     -76.915684,
-     43.279128
-    ],
-    [
-     -76.91556,
-     43.27836
-    ],
-    [
-     -76.914141,
-     43.277681
-    ],
-    [
-     -76.913956,
-     43.27732
-    ],
-    [
-     -76.912969,
-     43.276913
-    ],
-    [
-     -76.912722,
-     43.27646
-    ],
-    [
-     -76.911674,
-     43.276325
-    ],
-    [
-     -76.91118,
-     43.276551
-    ],
-    [
-     -76.910316,
-     43.276234
-    ],
-    [
-     -76.909699,
-     43.275782
-    ],
-    [
-     -76.908219,
-     43.276053
-    ],
-    [
-     -76.90754,
-     43.276506
-    ],
-    [
-     -76.907108,
-     43.276099
-    ],
-    [
-     -76.906429,
-     43.275827
-    ],
-    [
-     -76.90717,
-     43.276506
-    ],
-    [
-     -76.907046,
-     43.277591
-    ],
-    [
-     -76.906183,
-     43.277591
-    ],
-    [
-     -76.906183,
-     43.277772
-    ],
-    [
-     -76.905812,
-     43.277862
-    ],
-    [
-     -76.905812,
-     43.280485
-    ],
-    [
-     -76.906059,
-     43.280892
-    ],
-    [
-     -76.906676,
-     43.280756
-    ],
-    [
-     -76.906738,
-     43.280892
-    ],
-    [
-     -76.906491,
-     43.281977
-    ],
-    [
-     -76.906368,
-     43.282113
-    ],
-    [
-     -76.906183,
-     43.282113
-    ],
-    [
-     -76.906059,
-     43.282881
-    ],
-    [
-     -76.906244,
-     43.282927
-    ],
-    [
-     -76.906121,
-     43.283469
-    ],
-    [
-     -76.905319,
-     43.285414
-    ],
-    [
-     -76.905381,
-     43.286228
-    ],
-    [
-     -76.905195,
-     43.286454
-    ],
-    [
-     -76.905195,
-     43.287449
-    ],
-    [
-     -76.905319,
-     43.287675
-    ],
-    [
-     -76.905134,
-     43.28781
-    ],
-    [
-     -76.905195,
-     43.288398
-    ],
-    [
-     -76.90501,
-     43.288624
-    ],
-    [
-     -76.905134,
-     43.288986
-    ],
-    [
-     -76.905319,
-     43.289076
-    ],
-    [
-     -76.905195,
-     43.289393
-    ],
-    [
-     -76.905381,
-     43.2898
-    ],
-    [
-     -76.905936,
-     43.289574
-    ],
-    [
-     -76.906059,
-     43.289619
-    ]
-   ],
-   "status": "candidate",
-   "wide_m": 340
-  },
-  {
-   "acres": 11.0,
-   "box": [
-    -73.79026,
-    41.43121,
-    -73.78487,
-    41.43329
-   ],
-   "center": [
-    41.432705,
-    -73.78948
-   ],
-   "found": "2026-10-26",
-   "id": "US-2036+US-5151@area@41.433,-73.789",
-   "kind": "area",
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-2036": true,
-    "US-5151": false
-   },
-   "refs": [
-    "US-2036",
-    "US-5151"
-   ],
-   "shape": [
-    [
-     -73.790079,
-     41.433293
-    ],
-    [
-     -73.790259,
-     41.431213
-    ],
-    [
-     -73.78942,
-     41.432253
-    ],
-    [
-     -73.785046,
-     41.43171
-    ],
-    [
-     -73.784866,
-     41.431936
-    ],
-    [
-     -73.785406,
-     41.432434
-    ]
-   ],
-   "status": "dropped: a pin is outside its own outline",
-   "wide_m": 110
-  },
-  {
-   "access": [
-    40.623608,
-    -73.278876,
-    "Entrance: Long Island Robert Moses (NYS OPRHP)",
-    "US-2128",
-    2886
-   ],
-   "access_pin": {
-    "at": [
-     40.626405,
-     -73.314249
-    ],
-    "from": "road",
-    "name": "Oak Beach Ave",
-    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 1270
-   },
-   "acres": 30.5,
-   "box": [
-    -73.31502,
-    40.62242,
-    -73.31059,
-    40.62644
-   ],
-   "center": [
-    40.624453,
-    -73.313012
-   ],
-   "found": "2026-10-26",
-   "id": "US-2061+US-2128@area@40.625,-73.313",
-   "kind": "area",
-   "maps": [
-    [
-     "US-2061",
-     "https://parks.ny.gov/parks/15/details.aspx"
-    ],
-    [
-     "US-2128",
-     "https://parks.ny.gov/parks/robertmoses/details.aspx"
-    ]
-   ],
-   "names": {
-    "US-2061": "Gilgo State Park",
-    "US-2128": "Robert Moses (Long Island) State Park"
-   },
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-2061": true,
-    "US-2128": true
-   },
-   "refs": [
-    "US-2061",
-    "US-2128"
-   ],
-   "shape": [
-    [
-     -73.31461,
-     40.626262
-    ],
-    [
-     -73.315024,
-     40.625719
-    ],
-    [
-     -73.315024,
-     40.624905
-    ],
-    [
-     -73.314787,
-     40.62391
-    ],
-    [
-     -73.314491,
-     40.623458
-    ],
-    [
-     -73.313722,
-     40.622961
-    ],
-    [
-     -73.311769,
-     40.622418
-    ],
-    [
-     -73.310585,
-     40.622689
-    ],
-    [
-     -73.31171,
-     40.626442
-    ],
-    [
-     -73.312893,
-     40.626262
-    ],
-    [
-     -73.313544,
-     40.626035
-    ],
-    [
-     -73.313959,
-     40.626035
-    ],
-    [
-     -73.314077,
-     40.626126
-    ],
-    [
-     -73.313959,
-     40.626397
-    ]
-   ],
-   "status": "candidate",
-   "wide_m": 322
-  },
-  {
-   "access": [
-    40.623608,
-    -73.278876,
-    "Entrance: Long Island Robert Moses (NYS OPRHP)",
-    "US-4374",
-    2886
-   ],
-   "access_pin": {
-    "at": [
-     40.626405,
-     -73.314249
-    ],
-    "from": "road",
-    "name": "Oak Beach Ave",
-    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 1270
-   },
-   "acres": 30.4,
-   "box": [
-    -73.31502,
-    40.62242,
-    -73.31059,
-    40.62644
-   ],
-   "center": [
-    40.624453,
-    -73.313012
-   ],
-   "found": "2026-10-26",
-   "id": "US-2061+US-4374@area@40.625,-73.313",
-   "kind": "area",
-   "maps": [
-    [
-     "US-2061",
-     "https://parks.ny.gov/parks/15/details.aspx"
-    ],
-    [
-     "US-4374",
-     "https://parks.ny.gov/parks/51/details.aspx"
-    ]
-   ],
-   "names": {
-    "US-2061": "Gilgo State Park",
-    "US-4374": "Robert Moses (Thousand Islands) State Park"
-   },
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-2061": true,
-    "US-4374": true
-   },
-   "refs": [
-    "US-2061",
-    "US-4374"
-   ],
-   "shape": [
-    [
-     -73.31461,
-     40.626262
-    ],
-    [
-     -73.315024,
-     40.625719
-    ],
-    [
-     -73.315024,
-     40.624905
-    ],
-    [
-     -73.314787,
-     40.62391
-    ],
-    [
-     -73.314491,
-     40.623458
-    ],
-    [
-     -73.313959,
-     40.623096
-    ],
-    [
-     -73.311769,
-     40.622418
-    ],
-    [
-     -73.310585,
-     40.622689
-    ],
-    [
-     -73.31171,
-     40.626442
-    ],
-    [
-     -73.312893,
-     40.626262
-    ],
-    [
-     -73.313544,
-     40.626035
-    ],
-    [
-     -73.313959,
-     40.626035
-    ],
-    [
-     -73.314077,
-     40.626126
-    ],
-    [
-     -73.313959,
-     40.626397
-    ]
-   ],
-   "status": "candidate",
-   "wide_m": 322
-  },
-  {
-   "acres": 14.0,
-   "box": [
-    -73.9233,
-    41.14652,
-    -73.91805,
-    41.16045
-   ],
-   "center": [
-    41.1505,
-    -73.921867
-   ],
-   "found": "2026-10-26",
-   "id": "US-2078+US-2132@area@41.151,-73.922",
-   "kind": "area",
-   "passes": [
-    1,
-    0,
-    0
-   ],
-   "refs": [
-    "US-2078",
-    "US-2132"
-   ],
-   "shape": [
-    [
-     -73.923298,
-     41.160448
-    ],
-    [
-     -73.918288,
-     41.155745
-    ],
-    [
-     -73.920196,
-     41.155203
-    ],
-    [
-     -73.920435,
-     41.153394
-    ],
-    [
-     -73.921628,
-     41.153756
-    ],
-    [
-     -73.922344,
-     41.151043
-    ],
-    [
-     -73.918288,
-     41.146521
-    ],
-    [
-     -73.922344,
-     41.151043
-    ],
-    [
-     -73.921628,
-     41.153575
-    ],
-    [
-     -73.920196,
-     41.153394
-    ],
-    [
-     -73.920196,
-     41.155022
-    ],
-    [
-     -73.918049,
-     41.155564
-    ],
-    [
-     -73.919481,
-     41.157373
-    ]
-   ],
-   "small": "small overlap: tight fit, check carefully",
-   "status": "dropped in pass 2",
-   "wide_m": 80
-  },
-  {
-   "acres": 10.3,
-   "box": [
-    -73.94525,
-    41.16606,
-    -73.92974,
-    41.17383
-   ],
-   "center": [
-    41.173471,
-    -73.944533
-   ],
-   "found": "2026-10-26",
-   "id": "US-2078+US-2132@area@41.173,-73.945",
-   "kind": "area",
-   "passes": [
-    1,
-    0,
-    0
-   ],
-   "refs": [
-    "US-2078",
-    "US-2132"
-   ],
-   "shape": [
-    [
-     -73.945249,
-     41.173833
-    ],
-    [
-     -73.944771,
-     41.17329
-    ],
-    [
-     -73.940238,
-     41.172928
-    ],
-    [
-     -73.937137,
-     41.171843
-    ],
-    [
-     -73.92974,
-     41.166055
-    ],
-    [
-     -73.937375,
-     41.172024
-    ],
-    [
-     -73.939284,
-     41.172748
-    ]
-   ],
-   "small": "small overlap: tight fit, check carefully",
-   "status": "dropped in pass 2",
-   "wide_m": 80
-  },
-  {
-   "access": [
-    41.368133,
-    -73.945396,
-    "Trailhead: Taconic Hudson Highlands (NYS OPRHP)",
-    "US-5161",
-    760
-   ],
-   "access_pin": {
-    "at": [
-     41.371008,
-     -73.944805
-    ],
-    "from": "road",
-    "name": "Wing and Wing",
-    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 0
-   },
-   "acres": 130.9,
-   "box": [
-    -73.94767,
-    41.36404,
-    -73.93319,
-    41.37145
-   ],
-   "center": [
-    41.366389,
-    -73.936598
-   ],
-   "found": "2026-10-26",
-   "id": "US-2079+US-5161@area@41.366,-73.936",
-   "kind": "area",
-   "maps": [
-    [
-     "US-2079",
-     "https://parks.ny.gov/parks/9/details.aspx"
-    ],
-    [
-     "US-5161",
-     "https://www.dec.ny.gov/lands/34747.html"
-    ]
-   ],
-   "names": {
-    "US-2079": "Hudson Highlands State Park",
-    "US-5161": "Castle Rock Unique Area"
-   },
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-2079": true,
-    "US-5161": true
-   },
-   "refs": [
-    "US-2079",
-    "US-5161"
-   ],
-   "shape": [
-    [
-     -73.946653,
-     41.371454
-    ],
-    [
-     -73.94767,
-     41.369012
-    ],
-    [
-     -73.944737,
-     41.367746
-    ],
-    [
-     -73.945456,
-     41.366435
-    ],
-    [
-     -73.935581,
-     41.364038
-    ],
-    [
-     -73.933366,
-     41.365802
-    ],
-    [
-     -73.933187,
-     41.366073
-    ],
-    [
-     -73.933366,
-     41.366344
-    ],
-    [
-     -73.934025,
-     41.366525
-    ],
-    [
-     -73.933905,
-     41.366842
-    ],
-    [
-     -73.933965,
-     41.367655
-    ],
-    [
-     -73.933606,
-     41.368243
-    ],
-    [
-     -73.933546,
-     41.368695
-    ],
-    [
-     -73.933785,
-     41.369057
-    ],
-    [
-     -73.934384,
-     41.369419
-    ],
-    [
-     -73.935521,
-     41.369781
-    ],
-    [
-     -73.936,
-     41.369464
-    ],
-    [
-     -73.936239,
-     41.369509
-    ],
-    [
-     -73.936538,
-     41.369329
-    ],
-    [
-     -73.936658,
-     41.369012
-    ],
-    [
-     -73.936957,
-     41.368786
-    ],
-    [
-     -73.937615,
-     41.36856
-    ],
-    [
-     -73.937975,
-     41.368153
-    ],
-    [
-     -73.938573,
-     41.367882
-    ],
-    [
-     -73.939231,
-     41.367022
-    ],
-    [
-     -73.939531,
-     41.366842
-    ],
-    [
-     -73.93983,
-     41.367158
-    ],
-    [
-     -73.940069,
-     41.367746
-    ],
-    [
-     -73.93977,
-     41.368153
-    ],
-    [
-     -73.939411,
-     41.368153
-    ],
-    [
-     -73.939531,
-     41.368922
-    ],
-    [
-     -73.939112,
-     41.370278
-    ],
-    [
-     -73.943421,
-     41.371092
-    ],
-    [
-     -73.94366,
-     41.370821
-    ],
-    [
-     -73.944079,
-     41.370956
-    ],
-    [
-     -73.944438,
-     41.370911
-    ]
-   ],
-   "status": "candidate",
-   "wide_m": 446
-  },
-  {
-   "acres": 8.4,
-   "box": [
-    -73.77792,
-    42.3309,
-    -73.77513,
-    42.3394
-   ],
-   "center": [
-    42.331168,
-    -73.775493
-   ],
-   "found": "2026-10-26",
-   "id": "US-2080+US-9124@area@42.332,-73.776",
-   "kind": "area",
-   "passes": [
-    1,
-    1,
-    0
-   ],
-   "refs": [
-    "US-2080",
-    "US-9124"
-   ],
-   "shape": [
-    [
-     -73.777923,
-     42.339398
-    ],
-    [
-     -73.775857,
-     42.331168
-    ],
-    [
-     -73.775493,
-     42.330897
-    ],
-    [
-     -73.775128,
-     42.331168
-    ]
-   ],
-   "small": "small overlap: tight fit, check carefully",
-   "status": "dropped in pass 3",
-   "wide_m": 64
-  },
-  {
-   "acres": 4.7,
-   "box": [
-    -77.88239,
-    42.74008,
-    -77.88092,
-    42.74451
-   ],
-   "center": [
-    42.741704,
-    -77.881775
-   ],
-   "found": "2026-10-26",
-   "id": "US-2096+US-8069@area@42.742,-77.882",
-   "kind": "area",
-   "passes": [
-    1,
-    1,
-    0
-   ],
-   "refs": [
-    "US-2096",
-    "US-8069"
-   ],
-   "shape": [
-    [
-     -77.881165,
-     42.744508
-    ],
-    [
-     -77.882142,
-     42.7408
-    ],
-    [
-     -77.882386,
-     42.741252
-    ],
-    [
-     -77.88202,
-     42.740076
-    ],
-    [
-     -77.88092,
-     42.743875
-    ]
-   ],
-   "small": "small overlap: tight fit, check carefully",
-   "status": "dropped in pass 3",
-   "wide_m": 56
-  },
-  {
-   "access": [
-    43.093359,
-    -77.544946,
-    "Entrance (NYS OPRHP GIS Bureau; Details field notes e.g. \"No parking)",
-    "US-2097",
-    188
-   ],
-   "access_pin": {
-    "at": [
-     43.092475,
-     -77.548229
-    ],
-    "from": "road",
-    "name": "public road",
-    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 0
-   },
-   "acres": 4.8,
-   "box": [
-    -77.54839,
-    43.09125,
-    -77.54445,
-    43.09346
-   ],
-   "center": [
-    43.091744,
-    -77.545685
-   ],
-   "found": "2026-10-26",
-   "id": "US-2097+US-8299@area@43.093,-77.548",
-   "kind": "area",
-   "maps": [
-    [
-     "US-2097",
-     "https://en.wikipedia.org/wiki/Lock_32_State_Canal_Park"
-    ],
-    [
-     "US-8299",
-     "https://parks.ny.gov/parks/olderiecanal/maps.aspx"
-    ]
-   ],
-   "names": {
-    "US-2097": "Lock 32 Canal State Park",
-    "US-8299": "Old Erie Canal State Historical Park"
-   },
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-2097": true,
-    "US-8299": true
-   },
-   "refs": [
-    "US-2097",
-    "US-8299"
-   ],
-   "shape": [
-    [
-     -77.547961,
-     43.093417
-    ],
-    [
-     -77.54833,
-     43.092875
-    ],
-    [
-     -77.548391,
-     43.092513
-    ],
-    [
-     -77.548268,
-     43.092377
-    ],
-    [
-     -77.547592,
-     43.092242
-    ],
-    [
-     -77.545685,
-     43.091473
-    ],
-    [
-     -77.544455,
-     43.091247
-    ],
-    [
-     -77.544578,
-     43.091654
-    ],
-    [
-     -77.547776,
-     43.092649
-    ],
-    [
-     -77.547899,
-     43.092784
-    ],
-    [
-     -77.547715,
-     43.093463
-    ]
-   ],
-   "small": "small overlap: tight fit, check carefully",
-   "status": "candidate",
-   "wide_m": 58
-  },
-  {
-   "acres": 8.5,
-   "box": [
-    -73.94384,
-    41.84662,
-    -73.93274,
-    41.84879
-   ],
-   "center": [
-    41.847708,
-    -73.934673
-   ],
-   "found": "2026-10-26",
-   "id": "US-2101+US-2117@area@41.848,-73.935",
-   "kind": "area",
-   "passes": [
-    1,
-    0,
-    0
-   ],
-   "refs": [
-    "US-2101",
-    "US-2117"
-   ],
-   "shape": [
-    [
-     -73.932744,
-     41.848793
-    ],
-    [
-     -73.937567,
-     41.846622
-    ],
-    [
-     -73.938291,
-     41.846984
-    ],
-    [
-     -73.93805,
-     41.847708
-    ],
-    [
-     -73.943838,
-     41.847346
-    ],
-    [
-     -73.938291,
-     41.847708
-    ],
-    [
-     -73.938291,
-     41.846984
-    ],
-    [
-     -73.937326,
-     41.846622
-    ],
-    [
-     -73.934432,
-     41.847527
-    ]
-   ],
-   "small": "small overlap: tight fit, check carefully",
-   "status": "dropped in pass 2",
-   "wide_m": 80
-  },
-  {
-   "access": [
-    42.178705,
-    -75.422901,
-    "Boat ramp / launch: Central Oquaga Creek (NYS OPRHP)",
-    "US-2118",
-    1100
-   ],
-   "access_pin": {
-    "at": [
-     42.175252,
-     -75.412879
-    ],
-    "from": "road",
-    "name": "Co Hwy 20",
-    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 0
-   },
-   "acres": 121.0,
-   "box": [
-    -75.41906,
-    42.16769,
-    -75.41009,
-    42.17592
-   ],
-   "center": [
-    42.170317,
-    -75.415728
-   ],
-   "found": "2026-10-26",
-   "id": "US-2118+US-5089@area@42.170,-75.416",
-   "kind": "area",
-   "maps": [
-    [
-     "US-2118",
-     "https://parks.ny.gov/parks/27/details.aspx"
-    ],
-    [
-     "US-5089",
-     "https://www.dec.ny.gov/lands/102151.html"
-    ]
-   ],
-   "names": {
-    "US-2118": "Oquaga Creek State Park",
-    "US-5089": "Arctic-China State Forest"
-   },
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-2118": true,
-    "US-5089": true
-   },
-   "refs": [
-    "US-2118",
-    "US-5089"
-   ],
-   "shape": [
-    [
-     -75.418941,
-     42.175924
-    ],
-    [
-     -75.419062,
-     42.167694
-    ],
-    [
-     -75.412092,
-     42.167694
-    ],
-    [
-     -75.410092,
-     42.167785
-    ],
-    [
-     -75.411001,
-     42.168961
-    ],
-    [
-     -75.412092,
-     42.169865
-    ],
-    [
-     -75.412395,
-     42.170408
-    ],
-    [
-     -75.413062,
-     42.173121
-    ],
-    [
-     -75.413183,
-     42.175246
-    ],
-    [
-     -75.412637,
-     42.175246
-    ]
-   ],
-   "status": "candidate",
-   "wide_m": 560
-  },
-  {
-   "acres": 337.6,
-   "box": [
-    -75.44351,
-    42.16751,
-    -75.41902,
-    42.17388
-   ],
-   "center": [
-    42.170763,
-    -75.439022
-   ],
-   "found": "2026-10-26",
-   "id": "US-2118+US-5415@area@42.171,-75.439",
-   "kind": "area",
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-2118": true,
-    "US-5415": false
-   },
-   "refs": [
-    "US-2118",
-    "US-5415"
-   ],
-   "shape": [
-    [
-     -75.443507,
-     42.171124
-    ],
-    [
-     -75.443507,
-     42.170265
-    ],
-    [
-     -75.443022,
-     42.167507
-    ],
-    [
-     -75.433931,
-     42.167688
-    ],
-    [
-     -75.419081,
-     42.167778
-    ],
-    [
-     -75.419021,
-     42.173883
-    ],
-    [
-     -75.440719,
-     42.173883
-    ],
-    [
-     -75.441568,
-     42.173431
-    ],
-    [
-     -75.442477,
-     42.172752
-    ]
-   ],
-   "status": "dropped: a pin is outside its own outline",
-   "wide_m": 700
-  },
-  {
-   "access": [
-    42.095217,
-    -77.203822,
-    "Parking: POND PARKING (NYSDEC)",
-    "US-5411",
-    994
-   ],
-   "access_pin": {
-    "at": [
-     42.107208,
-     -77.217758
-    ],
-    "from": "road",
-    "name": "Vastbinder Rd",
-    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 0
-   },
-   "acres": 702.2,
-   "box": [
-    -77.22918,
-    42.08532,
-    -77.20042,
-    42.10756
-   ],
-   "center": [
-    42.098157,
-    -77.215193
-   ],
-   "found": "2026-10-26",
-   "id": "US-2121+US-5411@area@42.098,-77.215",
-   "kind": "area",
-   "maps": [
-    [
-     "US-2121",
-     "https://en.wikipedia.org/wiki/Pinnacle_State_Park_and_Golf_Course"
-    ],
-    [
-     "US-5411",
-     "https://www.dec.ny.gov/lands/38887.html"
-    ]
-   ],
-   "names": {
-    "US-2121": "Pinnacle State Park",
-    "US-5411": "McCarthy Hill State Forest"
-   },
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-2121": true,
-    "US-5411": true
-   },
-   "refs": [
-    "US-2121",
-    "US-5411"
-   ],
-   "shape": [
-    [
-     -77.218462,
-     42.107156
-    ],
-    [
-     -77.218401,
-     42.10693
-    ],
-    [
-     -77.218825,
-     42.10598
-    ],
-    [
-     -77.219794,
-     42.104895
-    ],
-    [
-     -77.22052,
-     42.104669
-    ],
-    [
-     -77.222154,
-     42.104578
-    ],
-    [
-     -77.222699,
-     42.104352
-    ],
-    [
-     -77.223365,
-     42.103674
-    ],
-    [
-     -77.223426,
-     42.103041
-    ],
-    [
-     -77.223789,
-     42.102498
-    ],
-    [
-     -77.225302,
-     42.101594
-    ],
-    [
-     -77.226513,
-     42.101097
-    ],
-    [
-     -77.22736,
-     42.100509
-    ],
-    [
-     -77.228087,
-     42.100283
-    ],
-    [
-     -77.228087,
-     42.099966
-    ],
-    [
-     -77.228692,
-     42.099876
-    ],
-    [
-     -77.229176,
-     42.09359
-    ],
-    [
-     -77.228087,
-     42.093545
-    ],
-    [
-     -77.227844,
-     42.095716
-    ],
-    [
-     -77.22615,
-     42.095625
-    ],
-    [
-     -77.225907,
-     42.097434
-    ],
-    [
-     -77.223123,
-     42.098338
-    ],
-    [
-     -77.223062,
-     42.098157
-    ],
-    [
-     -77.22276,
-     42.098203
-    ],
-    [
-     -77.22276,
-     42.093455
-    ],
-    [
-     -77.217978,
-     42.093409
-    ],
-    [
-     -77.217675,
-     42.093274
-    ],
-    [
-     -77.217736,
-     42.091782
-    ],
-    [
-     -77.217554,
-     42.091736
-    ],
-    [
-     -77.217554,
-     42.091194
-    ],
-    [
-     -77.217372,
-     42.091284
-    ],
-    [
-     -77.217312,
-     42.091103
-    ],
-    [
-     -77.21713,
-     42.091103
-    ],
-    [
-     -77.21713,
-     42.090651
-    ],
-    [
-     -77.213559,
-     42.090651
-    ],
-    [
-     -77.213256,
-     42.086898
-    ],
-    [
-     -77.211259,
-     42.086988
-    ],
-    [
-     -77.210835,
-     42.085315
-    ],
-    [
-     -77.20684,
-     42.085541
-    ],
-    [
-     -77.20684,
-     42.087124
-    ],
-    [
-     -77.200545,
-     42.08735
-    ],
-    [
-     -77.200545,
-     42.090425
-    ],
-    [
-     -77.200424,
-     42.09047
-    ],
-    [
-     -77.204721,
-     42.090515
-    ],
-    [
-     -77.204842,
-     42.090199
-    ],
-    [
-     -77.207082,
-     42.090199
-    ],
-    [
-     -77.207324,
-     42.090289
-    ],
-    [
-     -77.207385,
-     42.09047
-    ],
-    [
-     -77.207748,
-     42.09047
-    ],
-    [
-     -77.207869,
-     42.090651
-    ],
-    [
-     -77.208051,
-     42.100735
-    ],
-    [
-     -77.205569,
-     42.10078
-    ],
-    [
-     -77.20575,
-     42.103855
-    ],
-    [
-     -77.210714,
-     42.107201
-    ],
-    [
-     -77.210714,
-     42.107563
-    ]
-   ],
-   "status": "candidate",
-   "wide_m": 1150
-  },
-  {
-   "acres": 47.1,
-   "box": [
-    -73.50778,
-    42.04949,
-    -73.4872,
-    42.08675
-   ],
-   "center": [
-    42.086031,
-    -73.507782
-   ],
-   "found": "2026-10-26",
-   "id": "US-2148+US-4709@area@42.086,-73.508",
-   "kind": "area",
-   "passes": [
-    1,
-    0,
-    0
-   ],
-   "refs": [
-    "US-2148",
-    "US-4709"
-   ],
-   "shape": [
-    [
-     -73.507782,
-     42.086755
-    ],
-    [
-     -73.507782,
-     42.084584
-    ],
-    [
-     -73.496886,
-     42.049494
-    ],
-    [
-     -73.4872,
-     42.049494
-    ],
-    [
-     -73.496643,
-     42.049494
-    ],
-    [
-     -73.497128,
-     42.050037
-    ]
-   ],
-   "small": "small overlap: tight fit, check carefully",
-   "status": "dropped in pass 2",
-   "wide_m": 80
-  },
-  {
-   "access": [
-    43.683107,
-    -75.509609,
-    "Parking: Thousand Islands Whetstone Gulf (NYS OPRHP)",
-    "US-2159",
-    2350
-   ],
-   "access_pin": {
-    "at": [
-     43.671554,
-     -75.502013
-    ],
-    "from": "road",
-    "name": "Dec No 9 Rd",
-    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 0
-   },
-   "acres": 37.3,
-   "box": [
-    -75.51635,
-    43.66037,
-    -75.51026,
-    43.66553
-   ],
-   "center": [
-    43.661956,
-    -75.512433
-   ],
-   "found": "2026-10-26",
-   "id": "US-2159+US-5391@area@43.662,-75.513",
-   "kind": "area",
-   "maps": [
-    [
-     "US-2159",
-     "https://parks.ny.gov/parks/whetstonegulf/details.aspx"
-    ],
-    [
-     "US-5391",
-     "https://www.dec.ny.gov/lands/8029.html"
-    ]
-   ],
-   "names": {
-    "US-2159": "Whetstone Gulf State Park",
-    "US-5391": "Lesser Wilderness State Forest"
-   },
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-2159": true,
-    "US-5391": true
-   },
-   "refs": [
-    "US-2159",
-    "US-5391"
-   ],
-   "shape": [
-    [
-     -75.510695,
-     43.665528
-    ],
-    [
-     -75.513613,
-     43.663222
-    ],
-    [
-     -75.516346,
-     43.661685
-    ],
-    [
-     -75.513924,
-     43.660374
-    ],
-    [
-     -75.51026,
-     43.6606
-    ]
-   ],
-   "status": "candidate",
-   "wide_m": 340
-  },
-  {
-   "access": [
-    43.683107,
-    -75.509609,
-    "Parking: Thousand Islands Whetstone Gulf (NYS OPRHP)",
-    "US-2159",
-    1765
-   ],
-   "access_pin": {
-    "at": [
-     43.686477,
-     -75.504484
-    ],
-    "from": "road",
-    "name": "Tabolt Rd",
-    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 0
-   },
-   "acres": 88.7,
-   "box": [
-    -75.50746,
-    43.66449,
-    -75.4956,
-    43.6715
-   ],
-   "center": [
-    43.668332,
-    -75.501317
-   ],
-   "found": "2026-10-26",
-   "id": "US-2159+US-5391@area@43.668,-75.502",
-   "kind": "area",
-   "maps": [
-    [
-     "US-2159",
-     "https://parks.ny.gov/parks/whetstonegulf/details.aspx"
-    ],
-    [
-     "US-5391",
-     "https://www.dec.ny.gov/lands/8029.html"
-    ]
-   ],
-   "names": {
-    "US-2159": "Whetstone Gulf State Park",
-    "US-5391": "Lesser Wilderness State Forest"
-   },
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-2159": true,
-    "US-5391": true
-   },
-   "refs": [
-    "US-2159",
-    "US-5391"
-   ],
-   "shape": [
-    [
-     -75.502062,
-     43.671497
-    ],
-    [
-     -75.503428,
-     43.670231
-    ],
-    [
-     -75.507465,
-     43.66797
-    ],
-    [
-     -75.507093,
-     43.668196
-    ],
-    [
-     -75.499267,
-     43.664488
-    ],
-    [
-     -75.495603,
-     43.668513
-    ]
-   ],
-   "status": "candidate",
-   "wide_m": 531
-  },
-  {
-   "acres": 18.1,
-   "box": [
-    -75.49906,
-    43.69115,
-    -75.47919,
-    43.69639
-   ],
-   "center": [
-    43.694584,
-    -75.486891
-   ],
-   "found": "2026-10-26",
-   "id": "US-2159+US-5391@area@43.695,-75.487",
-   "kind": "area",
-   "passes": [
-    1,
-    0,
-    0
-   ],
-   "refs": [
-    "US-2159",
-    "US-5391"
-   ],
-   "shape": [
-    [
-     -75.479189,
-     43.695488
-    ],
-    [
-     -75.48068,
-     43.696393
-    ],
-    [
-     -75.484406,
-     43.694584
-    ],
-    [
-     -75.487139,
-     43.694765
-    ],
-    [
-     -75.489872,
-     43.693679
-    ],
-    [
-     -75.494095,
-     43.694222
-    ],
-    [
-     -75.49807,
-     43.692775
-    ],
-    [
-     -75.499064,
-     43.691147
-    ],
-    [
-     -75.49807,
-     43.692594
-    ],
-    [
-     -75.494095,
-     43.694041
-    ],
-    [
-     -75.489872,
-     43.693499
-    ],
-    [
-     -75.487387,
-     43.694403
-    ],
-    [
-     -75.484406,
-     43.694403
-    ],
-    [
-     -75.48068,
-     43.696031
-    ]
-   ],
-   "small": "small overlap: tight fit, check carefully",
-   "status": "dropped in pass 2",
-   "wide_m": 80
-  },
-  {
-   "acres": 11.5,
-   "box": [
-    -76.16544,
-    42.39781,
-    -76.16228,
-    42.40993
-   ],
-   "center": [
-    42.407581,
-    -76.162763
-   ],
-   "found": "2026-10-26",
-   "id": "US-5042+US-5416@area@42.408,-76.163",
-   "kind": "area",
-   "passes": [
-    1,
-    0,
-    0
-   ],
-   "refs": [
-    "US-5042",
-    "US-5416"
-   ],
-   "shape": [
-    [
-     -76.162763,
-     42.409933
-    ],
-    [
-     -76.163006,
-     42.407401
-    ],
-    [
-     -76.162276,
-     42.401974
-    ],
-    [
-     -76.165439,
-     42.401432
-    ],
-    [
-     -76.165196,
-     42.397814
-    ],
-    [
-     -76.163249,
-     42.397814
-    ],
-    [
-     -76.165196,
-     42.397995
-    ],
-    [
-     -76.165439,
-     42.401251
-    ],
-    [
-     -76.162276,
-     42.401793
-    ]
-   ],
-   "small": "small overlap: tight fit, check carefully",
-   "status": "dropped in pass 2",
-   "wide_m": 80
-  },
-  {
-   "acres": 5.1,
-   "box": [
-    -76.24127,
-    42.35004,
-    -76.23763,
-    42.36098
-   ],
-   "center": [
-    42.359715,
-    -76.239935
-   ],
-   "found": "2026-10-26",
-   "id": "US-5088+US-5261@area@42.360,-76.240",
-   "kind": "area",
-   "passes": [
-    1,
-    1,
-    0
-   ],
-   "refs": [
-    "US-5088",
-    "US-5261"
-   ],
-   "shape": [
-    [
-     -76.241273,
-     42.360981
-    ],
-    [
-     -76.2403,
-     42.360257
-    ],
-    [
-     -76.240179,
-     42.359353
-    ],
-    [
-     -76.238598,
-     42.35673
-    ],
-    [
-     -76.238963,
-     42.355012
-    ],
-    [
-     -76.237626,
-     42.350942
-    ],
-    [
-     -76.238963,
-     42.350309
-    ],
-    [
-     -76.239084,
-     42.350038
-    ],
-    [
-     -76.237626,
-     42.350942
-    ],
-    [
-     -76.238963,
-     42.355012
-    ],
-    [
-     -76.238598,
-     42.35673
-    ],
-    [
-     -76.239814,
-     42.359082
-    ],
-    [
-     -76.239692,
-     42.359805
-    ]
-   ],
-   "small": "small overlap: tight fit, check carefully",
-   "status": "dropped in pass 3",
-   "wide_m": 56
-  },
-  {
-   "acres": 10.2,
-   "box": [
-    -74.28498,
-    42.36203,
-    -74.27111,
-    42.36637
-   ],
-   "center": [
-    42.362208,
-    -74.284003
-   ],
-   "found": "2026-10-26",
-   "id": "US-5092+US-5305@area@42.362,-74.284",
-   "kind": "area",
-   "passes": [
-    1,
-    0,
-    0
-   ],
-   "refs": [
-    "US-5092",
-    "US-5305"
-   ],
-   "shape": [
-    [
-     -74.271115,
-     42.366368
-    ],
-    [
-     -74.271358,
-     42.364197
-    ],
-    [
-     -74.277437,
-     42.364197
-    ],
-    [
-     -74.277437,
-     42.363474
-    ],
-    [
-     -74.278167,
-     42.363112
-    ],
-    [
-     -74.284975,
-     42.362208
-    ],
-    [
-     -74.283759,
-     42.362027
-    ],
-    [
-     -74.277923,
-     42.363112
-    ],
-    [
-     -74.277194,
-     42.364197
-    ],
-    [
-     -74.271115,
-     42.364197
-    ]
-   ],
-   "small": "small overlap: tight fit, check carefully",
-   "status": "dropped in pass 2",
-   "wide_m": 80
-  },
-  {
-   "acres": 9.2,
-   "box": [
-    -75.83519,
-    43.56171,
-    -75.8228,
-    43.56334
-   ],
-   "center": [
-    43.562258,
-    -75.829493
-   ],
-   "found": "2026-10-26",
-   "id": "US-5103+US-5285@area@43.562,-75.829",
-   "kind": "area",
-   "passes": [
-    1,
-    0,
-    0
-   ],
-   "refs": [
-    "US-5103",
-    "US-5285"
-   ],
-   "shape": [
-    [
-     -75.835195,
-     43.563343
-    ],
-    [
-     -75.830237,
-     43.562981
-    ],
-    [
-     -75.829741,
-     43.562077
-    ],
-    [
-     -75.822798,
-     43.561715
-    ],
-    [
-     -75.829245,
-     43.562438
-    ],
-    [
-     -75.829741,
-     43.562981
-    ]
-   ],
-   "small": "small overlap: tight fit, check carefully",
-   "status": "dropped in pass 2",
-   "wide_m": 80
+   "status": "candidate"
   },
   {
    "access": null,
    "access_pin": {
     "at": [
-     42.306984,
-     -76.69113
+     43.504195,
+     -75.227147
     ],
     "from": "road",
-    "name": "Tudi Rd",
+    "name": "Co Rd 61",
     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
     "walk_m": 0
    },
-   "acres": 108.2,
    "box": [
-    -76.6911,
-    42.30172,
-    -76.67707,
-    42.30729
+    -75.25075,
+    43.48248,
+    -75.21449,
+    43.50423
    ],
    "center": [
-    42.305069,
-    -76.688308
+    43.49463,
+    -75.234007
    ],
-   "found": "2026-10-26",
-   "id": "US-5214+US-9062@area@42.305,-76.687",
-   "kind": "area",
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-5060+US-9141@same land@43.495,-75.234",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "len_m": 0,
    "maps": [
     [
-     "US-5214",
-     "https://www.dec.ny.gov/lands/64153.html"
+     "US-5060",
+     "https://www.dec.ny.gov/lands/8037.html"
     ],
     [
-     "US-9062",
-     "https://www.dec.ny.gov/outdoor/9331.html"
+     "US-9141",
+     "https://www.dec.ny.gov/lands/107763.html"
     ]
    ],
    "names": {
-    "US-5214": "Newfield State Forest",
-    "US-9062": "Connecticut Hill Wildlife Management Area"
+    "US-5060": "Hogsback (Lewis County) State Forest",
+    "US-9141": "Hogsback (Oneida County) State Forest"
    },
+   "note": "both park numbers are joined to the same official outline (Hogsback State Forest); POTA lists them separately: check POTA's current list",
+   "owner_here": "state land (from the outline both numbers are joined to)",
    "passes": [
     1,
     1,
     1
    ],
-   "pins_inside": {
-    "US-5214": true,
-    "US-9062": true
-   },
+   "pins": [],
    "refs": [
-    "US-5214",
-    "US-9062"
+    "US-5060",
+    "US-9141"
    ],
    "shape": [
     [
-     -76.677071,
-     42.304662
+     -75.23764,
+     43.50019
     ],
     [
-     -76.680898,
-     42.307285
+     -75.22717,
+     43.50423
     ],
     [
-     -76.68108,
-     42.307149
+     -75.22694,
+     43.50101
     ],
     [
-     -76.691102,
-     42.307104
+     -75.22257,
+     43.50127
     ],
     [
-     -76.691041,
-     42.302673
+     -75.22268,
+     43.50379
     ],
     [
-     -76.69098,
-     42.302944
+     -75.21575,
+     43.50406
     ],
     [
-     -76.686607,
-     42.303035
+     -75.21449,
+     43.49154
     ],
     [
-     -76.686486,
-     42.303261
+     -75.22069,
+     43.48984
     ],
     [
-     -76.684603,
-     42.30317
+     -75.22087,
+     43.48682
     ],
     [
-     -76.682355,
-     42.301723
+     -75.22328,
+     43.48443
     ],
     [
-     -76.68193,
-     42.303125
+     -75.23152,
+     43.48603
     ],
     [
-     -76.682113,
-     42.303351
+     -75.24388,
+     43.48248
     ],
     [
-     -76.681141,
-     42.304889
+     -75.245,
+     43.48505
     ],
     [
-     -76.681019,
-     42.304934
+     -75.2471,
+     43.48414
     ],
     [
-     -76.680837,
-     42.304798
+     -75.25075,
+     43.4883
     ],
     [
-     -76.680351,
-     42.305476
+     -75.24299,
+     43.4918
     ],
     [
-     -76.67865,
-     42.304301
+     -75.24812,
+     43.4959
     ],
     [
-     -76.679015,
-     42.303577
+     -75.24838,
+     43.50024
     ],
     [
-     -76.67865,
-     42.303306
+     -75.24216,
+     43.49989
+    ],
+    [
+     -75.24187,
+     43.49734
+    ],
+    [
+     -75.23523,
+     43.49767
+    ],
+    [
+     -75.23545,
+     43.50029
+    ],
+    [
+     -75.23764,
+     43.50019
     ]
    ],
    "status": "candidate",
-   "wide_m": 460
+   "stretches": 3
   },
   {
-   "acres": 13.4,
    "box": [
-    -74.42402,
-    41.64061,
-    -74.40984,
-    41.64585
+    -75.25075,
+    43.48248,
+    -75.21449,
+    43.50423
    ],
    "center": [
-    41.641512,
-    -74.419936
+    43.49463,
+    -75.234007
    ],
-   "found": "2026-10-26",
-   "id": "US-5279+US-5293@area@41.642,-74.420",
-   "kind": "area",
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-5060+US-9141@same land@43.495,-75.234",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "maps": [
+    [
+     "US-5060",
+     "https://www.dec.ny.gov/lands/8037.html"
+    ],
+    [
+     "US-9141",
+     "https://www.dec.ny.gov/lands/107763.html"
+    ]
+   ],
+   "names": {
+    "US-5060": "Hogsback (Lewis County) State Forest",
+    "US-9141": "Hogsback (Oneida County) State Forest"
+   },
+   "note": "both park numbers are joined to the same official outline (Hogsback State Forest); POTA lists them separately: check POTA's current list",
    "passes": [
     1,
-    0,
-    0
+    1,
+    1
    ],
    "refs": [
-    "US-5279",
-    "US-5293"
+    "US-5060",
+    "US-9141"
    ],
    "shape": [
     [
-     -74.409838,
-     41.645672
+     -75.23764,
+     43.50019
     ],
     [
-     -74.413925,
-     41.645853
+     -75.22717,
+     43.50423
     ],
     [
-     -74.415608,
-     41.640607
+     -75.22694,
+     43.50101
     ],
     [
-     -74.419455,
-     41.64115
+     -75.22257,
+     43.50127
     ],
     [
-     -74.419695,
-     41.641693
+     -75.22268,
+     43.50379
     ],
     [
-     -74.424023,
-     41.642054
+     -75.21575,
+     43.50406
     ],
     [
-     -74.420417,
-     41.641512
+     -75.21449,
+     43.49154
     ],
     [
-     -74.419695,
-     41.640969
+     -75.22069,
+     43.48984
     ],
     [
-     -74.415368,
-     41.640607
+     -75.22087,
+     43.48682
     ],
     [
-     -74.413925,
-     41.645672
+     -75.22328,
+     43.48443
     ],
     [
-     -74.409838,
-     41.645491
+     -75.23152,
+     43.48603
     ],
     [
-     -74.4108,
-     41.642235
+     -75.24388,
+     43.48248
+    ],
+    [
+     -75.245,
+     43.48505
+    ],
+    [
+     -75.2471,
+     43.48414
+    ],
+    [
+     -75.25075,
+     43.4883
+    ],
+    [
+     -75.24299,
+     43.4918
+    ],
+    [
+     -75.24812,
+     43.4959
+    ],
+    [
+     -75.24838,
+     43.50024
+    ],
+    [
+     -75.24216,
+     43.49989
+    ],
+    [
+     -75.24187,
+     43.49734
+    ],
+    [
+     -75.23523,
+     43.49767
+    ],
+    [
+     -75.23545,
+     43.50029
+    ],
+    [
+     -75.23764,
+     43.50019
     ]
    ],
-   "small": "small overlap: tight fit, check carefully",
-   "status": "dropped in pass 2",
-   "wide_m": 80
+   "status": "merged into one row: US-5060+US-9141@same land@43.495,-75.234"
+  },
+  {
+   "box": [
+    -75.25075,
+    43.48248,
+    -75.21449,
+    43.50423
+   ],
+   "center": [
+    43.49463,
+    -75.234007
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-5060+US-9141@same land@43.495,-75.234",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "maps": [
+    [
+     "US-5060",
+     "https://www.dec.ny.gov/lands/8037.html"
+    ],
+    [
+     "US-9141",
+     "https://www.dec.ny.gov/lands/107763.html"
+    ]
+   ],
+   "names": {
+    "US-5060": "Hogsback (Lewis County) State Forest",
+    "US-9141": "Hogsback (Oneida County) State Forest"
+   },
+   "note": "both park numbers are joined to the same official outline (Hogsback State Forest); POTA lists them separately: check POTA's current list",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "refs": [
+    "US-5060",
+    "US-9141"
+   ],
+   "shape": [
+    [
+     -75.23764,
+     43.50019
+    ],
+    [
+     -75.22717,
+     43.50423
+    ],
+    [
+     -75.22694,
+     43.50101
+    ],
+    [
+     -75.22257,
+     43.50127
+    ],
+    [
+     -75.22268,
+     43.50379
+    ],
+    [
+     -75.21575,
+     43.50406
+    ],
+    [
+     -75.21449,
+     43.49154
+    ],
+    [
+     -75.22069,
+     43.48984
+    ],
+    [
+     -75.22087,
+     43.48682
+    ],
+    [
+     -75.22328,
+     43.48443
+    ],
+    [
+     -75.23152,
+     43.48603
+    ],
+    [
+     -75.24388,
+     43.48248
+    ],
+    [
+     -75.245,
+     43.48505
+    ],
+    [
+     -75.2471,
+     43.48414
+    ],
+    [
+     -75.25075,
+     43.4883
+    ],
+    [
+     -75.24299,
+     43.4918
+    ],
+    [
+     -75.24812,
+     43.4959
+    ],
+    [
+     -75.24838,
+     43.50024
+    ],
+    [
+     -75.24216,
+     43.49989
+    ],
+    [
+     -75.24187,
+     43.49734
+    ],
+    [
+     -75.23523,
+     43.49767
+    ],
+    [
+     -75.23545,
+     43.50029
+    ],
+    [
+     -75.23764,
+     43.50019
+    ]
+   ],
+   "status": "merged into one row: US-5060+US-9141@same land@43.495,-75.234"
   },
   {
    "access": [
-    41.738794,
-    -74.218005,
-    "Parking: Palisades Minnewaska (NYS OPRHP)",
-    "US-5623",
-    3269
+    42.763135,
+    -76.306096,
+    "Parking: CURTIN RD PARKING (NYSDEC)",
+    "US-5106",
+    228
    ],
    "access_pin": {
     "at": [
-     41.734472,
-     -74.175311
+     42.784939,
+     -76.300265
     ],
     "from": "road",
-    "name": "Durmo Rd",
+    "name": "Ridge Rd",
     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 291
+    "walk_m": 0
    },
-   "acres": 60.5,
    "box": [
-    -74.18526,
-    41.73243,
-    -74.17515,
-    41.73817
+    -76.33338,
+    42.73411,
+    -76.27227,
+    42.7852
    ],
    "center": [
-    41.734553,
-    -74.179063
+    42.761952,
+    -76.308388
    ],
-   "found": "2026-10-26",
-   "id": "US-5292+US-5623@area@41.735,-74.180",
-   "kind": "area",
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-5106+US-5107@same land@42.762,-76.308",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
    "maps": [
     [
-     "US-5292",
-     "https://www.dec.ny.gov/lands/103454.html"
+     "US-5106",
+     "https://www.dec.ny.gov/lands/102459.html"
     ],
     [
-     "US-5623",
-     "https://parks.ny.gov/parks/minnewaska"
+     "US-5107",
+     "https://www.dec.ny.gov/lands/34420.html"
     ]
    ],
    "names": {
-    "US-5292": "Shawangunk Multiple Use Area",
-    "US-5623": "Minnewaska State Park Preserve"
+    "US-5106": "Bear Swamp(Otsego County) State Forest",
+    "US-5107": "Bear Swamp(Cayuga County) State Forest"
    },
+   "note": "both park numbers are joined to the same official outline (Bear Swamp State Forest); POTA lists them separately: check POTA's current list",
+   "owner_here": "state land (from the outline both numbers are joined to)",
    "passes": [
     1,
     1,
     1
    ],
-   "pins_inside": {
-    "US-5292": true,
-    "US-5623": true
-   },
    "refs": [
-    "US-5292",
-    "US-5623"
+    "US-5106",
+    "US-5107"
    ],
    "shape": [
     [
-     -74.185262,
-     41.736271
+     -76.333376,
+     42.783489
     ],
     [
-     -74.179002,
-     41.732428
+     -76.319495,
+     42.784199
     ],
     [
-     -74.17515,
-     41.734372
+     -76.317225,
+     42.782092
     ],
     [
-     -74.181831,
-     41.738171
+     -76.314466,
+     42.78239
     ],
     [
-     -74.182493,
-     41.737899
+     -76.313059,
+     42.780532
     ],
     [
-     -74.184299,
-     41.736407
+     -76.310428,
+     42.780559
     ],
     [
-     -74.184781,
-     41.736678
+     -76.31052,
+     42.78461
+    ],
+    [
+     -76.30417,
+     42.78424
+    ],
+    [
+     -76.3042,
+     42.78485
+    ],
+    [
+     -76.291549,
+     42.785198
+    ],
+    [
+     -76.28786,
+     42.781291
+    ],
+    [
+     -76.286336,
+     42.776959
+    ],
+    [
+     -76.293421,
+     42.777041
+    ],
+    [
+     -76.292638,
+     42.76579
+    ],
+    [
+     -76.30584,
+     42.765288
+    ],
+    [
+     -76.305295,
+     42.763412
+    ],
+    [
+     -76.302995,
+     42.7613
+    ],
+    [
+     -76.292681,
+     42.761811
+    ],
+    [
+     -76.292668,
+     42.761178
+    ],
+    [
+     -76.287578,
+     42.761241
+    ],
+    [
+     -76.283687,
+     42.758718
+    ],
+    [
+     -76.282207,
+     42.758741
+    ],
+    [
+     -76.28143,
+     42.756439
+    ],
+    [
+     -76.275269,
+     42.75657
+    ],
+    [
+     -76.27519,
+     42.752731
+    ],
+    [
+     -76.27322,
+     42.75274
+    ],
+    [
+     -76.272266,
+     42.738989
+    ],
+    [
+     -76.276646,
+     42.738899
+    ],
+    [
+     -76.27582,
+     42.73577
+    ],
+    [
+     -76.285798,
+     42.735489
+    ],
+    [
+     -76.285125,
+     42.73421
+    ],
+    [
+     -76.290527,
+     42.73411
+    ],
+    [
+     -76.291047,
+     42.746988
+    ],
+    [
+     -76.295519,
+     42.745478
+    ],
+    [
+     -76.291726,
+     42.741381
+    ],
+    [
+     -76.306286,
+     42.741178
+    ],
+    [
+     -76.306868,
+     42.744271
+    ],
+    [
+     -76.310355,
+     42.743742
+    ],
+    [
+     -76.31055,
+     42.746722
+    ],
+    [
+     -76.319299,
+     42.74641
+    ],
+    [
+     -76.319128,
+     42.741879
+    ],
+    [
+     -76.324927,
+     42.74182
+    ],
+    [
+     -76.325869,
+     42.749308
+    ],
+    [
+     -76.330855,
+     42.749091
+    ],
+    [
+     -76.330959,
+     42.753821
+    ],
+    [
+     -76.329919,
+     42.75383
+    ],
+    [
+     -76.329925,
+     42.754572
+    ],
+    [
+     -76.326285,
+     42.754621
+    ],
+    [
+     -76.32642,
+     42.760862
+    ],
+    [
+     -76.323936,
+     42.76088
+    ],
+    [
+     -76.323967,
+     42.762358
+    ],
+    [
+     -76.321507,
+     42.762381
+    ],
+    [
+     -76.321361,
+     42.758809
+    ],
+    [
+     -76.319109,
+     42.758881
+    ],
+    [
+     -76.318767,
+     42.754938
+    ],
+    [
+     -76.2996,
+     42.755679
+    ],
+    [
+     -76.299728,
+     42.75809
+    ],
+    [
+     -76.301215,
+     42.759591
+    ],
+    [
+     -76.30992,
+     42.75927
+    ],
+    [
+     -76.309119,
+     42.758641
+    ],
+    [
+     -76.309455,
+     42.757741
+    ],
+    [
+     -76.307675,
+     42.757158
+    ],
+    [
+     -76.311236,
+     42.757031
+    ],
+    [
+     -76.311376,
+     42.758632
+    ],
+    [
+     -76.309969,
+     42.758682
+    ],
+    [
+     -76.310006,
+     42.759419
+    ],
+    [
+     -76.311811,
+     42.760848
+    ],
+    [
+     -76.311878,
+     42.764411
+    ],
+    [
+     -76.322645,
+     42.763742
+    ],
+    [
+     -76.322859,
+     42.76646
+    ],
+    [
+     -76.317408,
+     42.766518
+    ],
+    [
+     -76.316289,
+     42.765682
+    ],
+    [
+     -76.317109,
+     42.77431
+    ],
+    [
+     -76.32568,
+     42.774441
+    ],
+    [
+     -76.327105,
+     42.775331
+    ],
+    [
+     -76.32645,
+     42.775861
+    ],
+    [
+     -76.327815,
+     42.77681
+    ],
+    [
+     -76.32713,
+     42.7779
+    ],
+    [
+     -76.328219,
+     42.778551
+    ],
+    [
+     -76.327919,
+     42.779039
+    ],
+    [
+     -76.331235,
+     42.780351
+    ],
+    [
+     -76.331149,
+     42.78145
+    ],
+    [
+     -76.33326,
+     42.782019
     ]
    ],
-   "status": "candidate",
-   "wide_m": 364
+   "status": "candidate"
   },
   {
    "access": [
-    42.77932,
-    -76.035353,
-    "Parking: TINKER FALLS OVERFLOW PARKING LOT (NYSDEC)",
-    "US-5385",
-    991
+    42.858225,
+    -75.302241,
+    "Parking: LITTLE ASSEMBLY AREA (NYSDEC)",
+    "US-5110",
+    633
    ],
    "access_pin": {
     "at": [
-     42.769426,
-     -76.023868
+     42.870153,
+     -75.286443
     ],
     "from": "road",
-    "name": "Shackham Rd",
+    "name": "Murphy Rd",
     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 376
+    "walk_m": 0
    },
-   "acres": 16.7,
    "box": [
-    -76.02952,
-    42.76941,
-    -76.02389,
-    42.78375
+    -75.32165,
+    42.82122,
+    -75.26497,
+    42.87982
    ],
    "center": [
-    42.774115,
-    -76.025484
+    42.853087,
+    -75.298809
    ],
-   "found": "2026-10-26",
-   "id": "US-5385+US-5423@area@42.775,-76.026",
-   "kind": "area",
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-5110+US-5111@same land@42.853,-75.299",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
    "maps": [
     [
-     "US-5385",
-     "https://www.dec.ny.gov/lands/37070.html"
+     "US-5110",
+     "https://www.dec.ny.gov/lands/97915.html"
     ],
     [
-     "US-5423",
-     "https://www.dec.ny.gov/lands/37115.html"
+     "US-5111",
+     "https://www.dec.ny.gov/lands/8255.html"
     ]
    ],
    "names": {
-    "US-5385": "Labrador Hollow Unique Area",
-    "US-5423": "Morgan Hill State Forest"
+    "US-5110": "Beaver Creek(St Lawrence County) State Forest",
+    "US-5111": "Beaver Creek (Madison County) State Forest"
    },
+   "note": "both park numbers are joined to the same official outline (Beaver Creek State Forest); POTA lists them separately: check POTA's current list",
+   "owner_here": "state land (from the outline both numbers are joined to)",
    "passes": [
     1,
     1,
     1
    ],
-   "pins_inside": {
-    "US-5385": true,
-    "US-5423": true
-   },
    "refs": [
-    "US-5385",
-    "US-5423"
+    "US-5110",
+    "US-5111"
    ],
    "shape": [
     [
-     -76.029524,
-     42.783702
+     -75.288521,
+     42.879818
     ],
     [
-     -76.029401,
-     42.78126
+     -75.288736,
+     42.878371
     ],
     [
-     -76.028728,
-     42.778637
+     -75.283938,
+     42.878199
     ],
     [
-     -76.027932,
-     42.776693
+     -75.283228,
+     42.87048
     ],
     [
-     -76.025729,
-     42.773889
+     -75.274858,
+     42.870788
     ],
     [
-     -76.024505,
-     42.771402
+     -75.27454,
+     42.868229
     ],
     [
-     -76.024077,
-     42.769413
+     -75.272616,
+     42.868278
     ],
     [
-     -76.023893,
-     42.769458
+     -75.271728,
+     42.867188
     ],
     [
-     -76.023954,
-     42.770588
+     -75.269167,
+     42.868242
     ],
     [
-     -76.024199,
-     42.771673
+     -75.268676,
+     42.86661
     ],
     [
-     -76.025117,
-     42.774206
+     -75.267077,
+     42.866732
     ],
     [
-     -76.025423,
-     42.774658
+     -75.266881,
+     42.864932
     ],
     [
-     -76.026708,
-     42.775607
+     -75.265356,
+     42.864982
     ],
     [
-     -76.027626,
-     42.776919
+     -75.265068,
+     42.862992
     ],
     [
-     -76.028361,
-     42.778456
+     -75.26497,
+     42.859388
     ],
     [
-     -76.028912,
-     42.780762
+     -75.270655,
+     42.858868
     ],
     [
-     -76.028912,
-     42.783747
+     -75.270416,
+     42.855879
+    ],
+    [
+     -75.269179,
+     42.85597
+    ],
+    [
+     -75.268977,
+     42.851638
+    ],
+    [
+     -75.273039,
+     42.85077
+    ],
+    [
+     -75.27378,
+     42.85138
+    ],
+    [
+     -75.282027,
+     42.851041
+    ],
+    [
+     -75.282241,
+     42.853962
+    ],
+    [
+     -75.28574,
+     42.855228
+    ],
+    [
+     -75.287669,
+     42.857322
+    ],
+    [
+     -75.294715,
+     42.856422
+    ],
+    [
+     -75.294397,
+     42.85379
+    ],
+    [
+     -75.29651,
+     42.853148
+    ],
+    [
+     -75.295971,
+     42.848391
+    ],
+    [
+     -75.302055,
+     42.848138
+    ],
+    [
+     -75.301737,
+     42.846361
+    ],
+    [
+     -75.299421,
+     42.846569
+    ],
+    [
+     -75.29912,
+     42.844652
+    ],
+    [
+     -75.297625,
+     42.844751
+    ],
+    [
+     -75.297491,
+     42.843322
+    ],
+    [
+     -75.30151,
+     42.843092
+    ],
+    [
+     -75.300419,
+     42.830629
+    ],
+    [
+     -75.302576,
+     42.827591
+    ],
+    [
+     -75.302509,
+     42.825149
+    ],
+    [
+     -75.307379,
+     42.825031
+    ],
+    [
+     -75.30798,
+     42.82419
+    ],
+    [
+     -75.311319,
+     42.82481
+    ],
+    [
+     -75.316539,
+     42.821219
+    ],
+    [
+     -75.318548,
+     42.821572
+    ],
+    [
+     -75.318536,
+     42.822992
+    ],
+    [
+     -75.315105,
+     42.82367
+    ],
+    [
+     -75.321336,
+     42.82344
+    ],
+    [
+     -75.321575,
+     42.825832
+    ],
+    [
+     -75.320889,
+     42.825859
+    ],
+    [
+     -75.321208,
+     42.829078
+    ],
+    [
+     -75.31918,
+     42.829169
+    ],
+    [
+     -75.319308,
+     42.830729
+    ],
+    [
+     -75.31728,
+     42.830819
+    ],
+    [
+     -75.31755,
+     42.832709
+    ],
+    [
+     -75.316839,
+     42.83275
+    ],
+    [
+     -75.317881,
+     42.838059
+    ],
+    [
+     -75.313549,
+     42.838221
+    ],
+    [
+     -75.313947,
+     42.844629
+    ],
+    [
+     -75.321416,
+     42.845108
+    ],
+    [
+     -75.321649,
+     42.84736
+    ],
+    [
+     -75.314247,
+     42.84755
+    ],
+    [
+     -75.314131,
+     42.849992
+    ],
+    [
+     -75.31842,
+     42.849779
+    ],
+    [
+     -75.318659,
+     42.852719
+    ],
+    [
+     -75.318769,
+     42.85554
+    ],
+    [
+     -75.314689,
+     42.855839
+    ],
+    [
+     -75.31516,
+     42.85956
+    ],
+    [
+     -75.32005,
+     42.859352
+    ],
+    [
+     -75.320197,
+     42.862029
+    ],
+    [
+     -75.315068,
+     42.8623
+    ],
+    [
+     -75.315369,
+     42.865158
+    ],
+    [
+     -75.312881,
+     42.86524
+    ],
+    [
+     -75.313041,
+     42.866971
+    ],
+    [
+     -75.307447,
+     42.869382
+    ],
+    [
+     -75.304371,
+     42.869612
+    ],
+    [
+     -75.304628,
+     42.867912
+    ],
+    [
+     -75.30317,
+     42.865552
+    ],
+    [
+     -75.302888,
+     42.862508
+    ],
+    [
+     -75.297938,
+     42.862558
+    ],
+    [
+     -75.298091,
+     42.864001
+    ],
+    [
+     -75.294709,
+     42.86514
+    ],
+    [
+     -75.294127,
+     42.867451
+    ],
+    [
+     -75.296241,
+     42.86996
+    ],
+    [
+     -75.29542,
+     42.870001
+    ],
+    [
+     -75.295806,
+     42.874451
+    ],
+    [
+     -75.291535,
+     42.873781
+    ],
+    [
+     -75.289201,
+     42.876119
+    ],
+    [
+     -75.290739,
+     42.877652
+    ],
+    [
+     -75.292081,
+     42.877191
+    ],
+    [
+     -75.293128,
+     42.879551
     ]
    ],
-   "small": "small overlap: tight fit, check carefully",
-   "status": "candidate",
-   "wide_m": 66
+   "status": "candidate"
   },
   {
-   "acres": 1326.5,
+   "access": [
+    43.242365,
+    -74.947151,
+    "Parking: STANLEY ROAD WEST (NYSDEC)",
+    "US-5124",
+    1471
+   ],
+   "access_pin": {
+    "at": [
+     43.263715,
+     -74.94652
+    ],
+    "from": "road",
+    "name": "Co Rd 111",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
    "box": [
-    -75.48148,
-    42.34537,
-    -75.44516,
-    42.37734
+    -74.96004,
+    43.23578,
+    -74.92719,
+    43.26375
    ],
    "center": [
-    42.355904,
-    -75.459702
+    43.255404,
+    -74.94357
    ],
-   "found": "2026-10-26",
-   "id": "US-8096+US-8097@area@42.356,-75.460",
-   "kind": "area",
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-5123+US-5124@same land@43.255,-74.944",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "maps": [
+    [
+     "US-5123",
+     "https://www.dec.ny.gov/lands/104343.html"
+    ],
+    [
+     "US-5124",
+     "https://www.dec.ny.gov/lands/107739.html"
+    ]
+   ],
+   "names": {
+    "US-5123": "Black Creek(Ulster County) State Forest",
+    "US-5124": "Black Creek(Herkimer County) State Forest"
+   },
+   "note": "both park numbers are joined to the same official outline (Black Creek State Forest); POTA lists them separately: check POTA's current list",
+   "owner_here": "state land (from the outline both numbers are joined to)",
    "passes": [
     1,
     1,
     1
    ],
-   "pins_inside": {
-    "US-8096": true,
-    "US-8097": false
-   },
    "refs": [
+    "US-5123",
+    "US-5124"
+   ],
+   "shape": [
+    [
+     -74.94553,
+     43.26307
+    ],
+    [
+     -74.94458,
+     43.26197
+    ],
+    [
+     -74.94276,
+     43.26216
+    ],
+    [
+     -74.9426,
+     43.26055
+    ],
+    [
+     -74.94097,
+     43.26063
+    ],
+    [
+     -74.94089,
+     43.2597
+    ],
+    [
+     -74.94174,
+     43.25931
+    ],
+    [
+     -74.94098,
+     43.25774
+    ],
+    [
+     -74.94164,
+     43.25736
+    ],
+    [
+     -74.93872,
+     43.25646
+    ],
+    [
+     -74.93851,
+     43.25751
+    ],
+    [
+     -74.93985,
+     43.25818
+    ],
+    [
+     -74.93861,
+     43.26097
+    ],
+    [
+     -74.93486,
+     43.25985
+    ],
+    [
+     -74.93381,
+     43.25848
+    ],
+    [
+     -74.93123,
+     43.24769
+    ],
+    [
+     -74.92719,
+     43.24819
+    ],
+    [
+     -74.92738,
+     43.24524
+    ],
+    [
+     -74.9304,
+     43.24492
+    ],
+    [
+     -74.93142,
+     43.24314
+    ],
+    [
+     -74.9352,
+     43.24271
+    ],
+    [
+     -74.9341,
+     43.23713
+    ],
+    [
+     -74.94465,
+     43.23578
+    ],
+    [
+     -74.94766,
+     43.24289
+    ],
+    [
+     -74.95854,
+     43.24181
+    ],
+    [
+     -74.96004,
+     43.24891
+    ],
+    [
+     -74.94313,
+     43.25086
+    ],
+    [
+     -74.94243,
+     43.25016
+    ],
+    [
+     -74.94189,
+     43.25104
+    ],
+    [
+     -74.9372,
+     43.25156
+    ],
+    [
+     -74.93811,
+     43.25507
+    ],
+    [
+     -74.94301,
+     43.25452
+    ],
+    [
+     -74.94395,
+     43.25949
+    ],
+    [
+     -74.94798,
+     43.25907
+    ],
+    [
+     -74.94762,
+     43.25768
+    ],
+    [
+     -74.94574,
+     43.25781
+    ],
+    [
+     -74.94621,
+     43.25694
+    ],
+    [
+     -74.9455,
+     43.25698
+    ],
+    [
+     -74.94536,
+     43.25604
+    ],
+    [
+     -74.95847,
+     43.25476
+    ],
+    [
+     -74.95882,
+     43.25647
+    ],
+    [
+     -74.95559,
+     43.25678
+    ],
+    [
+     -74.95659,
+     43.26206
+    ],
+    [
+     -74.95412,
+     43.26248
+    ],
+    [
+     -74.95415,
+     43.26323
+    ],
+    [
+     -74.94811,
+     43.26329
+    ],
+    [
+     -74.94752,
+     43.26207
+    ],
+    [
+     -74.94646,
+     43.26207
+    ],
+    [
+     -74.94627,
+     43.2607
+    ],
+    [
+     -74.94545,
+     43.26072
+    ],
+    [
+     -74.94656,
+     43.26375
+    ],
+    [
+     -74.94553,
+     43.26307
+    ]
+   ],
+   "status": "candidate"
+  },
+  {
+   "access": [
+    42.239958,
+    -77.403462,
+    "Parking: CAMERON POND PARKING LOT (NYSDEC)",
+    "US-5153",
+    5224
+   ],
+   "access_pin": {
+    "at": [
+     42.20252,
+     -77.378803
+    ],
+    "from": "road",
+    "name": "Pump Station Rd",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
+   "box": [
+    -77.39069,
+    42.18615,
+    -77.36206,
+    42.2026
+   ],
+   "center": [
+    42.196209,
+    -77.379547
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-5153+US-5154@same land@42.196,-77.380",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "len_m": 0,
+   "maps": [
+    [
+     "US-5153",
+     "https://www.dec.ny.gov/lands/38940.html"
+    ],
+    [
+     "US-5154",
+     "https://www.dec.ny.gov/lands/38892.html"
+    ]
+   ],
+   "names": {
+    "US-5153": "Cameron State Forest",
+    "US-5154": "Cameron Mills State Forest"
+   },
+   "note": "both park numbers are joined to the same official outline (Cameron State Forest); POTA lists them separately: check POTA's current list",
+   "owner_here": "state land (from the outline both numbers are joined to)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins": [],
+   "refs": [
+    "US-5153",
+    "US-5154"
+   ],
+   "shape": [
+    [
+     -77.38923,
+     42.20244
+    ],
+    [
+     -77.37235,
+     42.2026
+    ],
+    [
+     -77.37215,
+     42.19785
+    ],
+    [
+     -77.38152,
+     42.19795
+    ],
+    [
+     -77.38147,
+     42.19537
+    ],
+    [
+     -77.37206,
+     42.19527
+    ],
+    [
+     -77.37208,
+     42.19651
+    ],
+    [
+     -77.36554,
+     42.19664
+    ],
+    [
+     -77.36206,
+     42.19264
+    ],
+    [
+     -77.36208,
+     42.19091
+    ],
+    [
+     -77.38171,
+     42.19033
+    ],
+    [
+     -77.3818,
+     42.18615
+    ],
+    [
+     -77.38902,
+     42.19317
+    ],
+    [
+     -77.38914,
+     42.19713
+    ],
+    [
+     -77.39059,
+     42.19707
+    ],
+    [
+     -77.39069,
+     42.19862
+    ],
+    [
+     -77.38913,
+     42.19868
+    ],
+    [
+     -77.38923,
+     42.20244
+    ]
+   ],
+   "status": "candidate",
+   "stretches": 4
+  },
+  {
+   "box": [
+    -77.39069,
+    42.18615,
+    -77.36206,
+    42.2026
+   ],
+   "center": [
+    42.196209,
+    -77.379547
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-5153+US-5154@same land@42.196,-77.380",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "maps": [
+    [
+     "US-5153",
+     "https://www.dec.ny.gov/lands/38940.html"
+    ],
+    [
+     "US-5154",
+     "https://www.dec.ny.gov/lands/38892.html"
+    ]
+   ],
+   "names": {
+    "US-5153": "Cameron State Forest",
+    "US-5154": "Cameron Mills State Forest"
+   },
+   "note": "both park numbers are joined to the same official outline (Cameron State Forest); POTA lists them separately: check POTA's current list",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "refs": [
+    "US-5153",
+    "US-5154"
+   ],
+   "shape": [
+    [
+     -77.38923,
+     42.20244
+    ],
+    [
+     -77.37235,
+     42.2026
+    ],
+    [
+     -77.37215,
+     42.19785
+    ],
+    [
+     -77.38152,
+     42.19795
+    ],
+    [
+     -77.38147,
+     42.19537
+    ],
+    [
+     -77.37206,
+     42.19527
+    ],
+    [
+     -77.37208,
+     42.19651
+    ],
+    [
+     -77.36554,
+     42.19664
+    ],
+    [
+     -77.36206,
+     42.19264
+    ],
+    [
+     -77.36208,
+     42.19091
+    ],
+    [
+     -77.38171,
+     42.19033
+    ],
+    [
+     -77.3818,
+     42.18615
+    ],
+    [
+     -77.38902,
+     42.19317
+    ],
+    [
+     -77.38914,
+     42.19713
+    ],
+    [
+     -77.39059,
+     42.19707
+    ],
+    [
+     -77.39069,
+     42.19862
+    ],
+    [
+     -77.38913,
+     42.19868
+    ],
+    [
+     -77.38923,
+     42.20244
+    ]
+   ],
+   "status": "merged into one row: US-5153+US-5154@same land@42.196,-77.380"
+  },
+  {
+   "box": [
+    -77.39069,
+    42.18615,
+    -77.36206,
+    42.2026
+   ],
+   "center": [
+    42.196209,
+    -77.379547
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-5153+US-5154@same land@42.196,-77.380",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "maps": [
+    [
+     "US-5153",
+     "https://www.dec.ny.gov/lands/38940.html"
+    ],
+    [
+     "US-5154",
+     "https://www.dec.ny.gov/lands/38892.html"
+    ]
+   ],
+   "names": {
+    "US-5153": "Cameron State Forest",
+    "US-5154": "Cameron Mills State Forest"
+   },
+   "note": "both park numbers are joined to the same official outline (Cameron Mills State Forest); POTA lists them separately: check POTA's current list",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "refs": [
+    "US-5153",
+    "US-5154"
+   ],
+   "shape": [
+    [
+     -77.38923,
+     42.20244
+    ],
+    [
+     -77.37235,
+     42.2026
+    ],
+    [
+     -77.37215,
+     42.19785
+    ],
+    [
+     -77.38152,
+     42.19795
+    ],
+    [
+     -77.38147,
+     42.19537
+    ],
+    [
+     -77.37206,
+     42.19527
+    ],
+    [
+     -77.37208,
+     42.19651
+    ],
+    [
+     -77.36554,
+     42.19664
+    ],
+    [
+     -77.36206,
+     42.19264
+    ],
+    [
+     -77.36208,
+     42.19091
+    ],
+    [
+     -77.38171,
+     42.19033
+    ],
+    [
+     -77.3818,
+     42.18615
+    ],
+    [
+     -77.38902,
+     42.19317
+    ],
+    [
+     -77.38914,
+     42.19713
+    ],
+    [
+     -77.39059,
+     42.19707
+    ],
+    [
+     -77.39069,
+     42.19862
+    ],
+    [
+     -77.38913,
+     42.19868
+    ],
+    [
+     -77.38923,
+     42.20244
+    ]
+   ],
+   "status": "merged into one row: US-5153+US-5154@same land@42.196,-77.380"
+  },
+  {
+   "box": [
+    -77.39069,
+    42.18615,
+    -77.36206,
+    42.2026
+   ],
+   "center": [
+    42.196209,
+    -77.379547
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-5153+US-5154@same land@42.196,-77.380",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "maps": [
+    [
+     "US-5153",
+     "https://www.dec.ny.gov/lands/38940.html"
+    ],
+    [
+     "US-5154",
+     "https://www.dec.ny.gov/lands/38892.html"
+    ]
+   ],
+   "names": {
+    "US-5153": "Cameron State Forest",
+    "US-5154": "Cameron Mills State Forest"
+   },
+   "note": "both park numbers are joined to the same official outline (Cameron Mills State Forest); POTA lists them separately: check POTA's current list",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "refs": [
+    "US-5153",
+    "US-5154"
+   ],
+   "shape": [
+    [
+     -77.38923,
+     42.20244
+    ],
+    [
+     -77.37235,
+     42.2026
+    ],
+    [
+     -77.37215,
+     42.19785
+    ],
+    [
+     -77.38152,
+     42.19795
+    ],
+    [
+     -77.38147,
+     42.19537
+    ],
+    [
+     -77.37206,
+     42.19527
+    ],
+    [
+     -77.37208,
+     42.19651
+    ],
+    [
+     -77.36554,
+     42.19664
+    ],
+    [
+     -77.36206,
+     42.19264
+    ],
+    [
+     -77.36208,
+     42.19091
+    ],
+    [
+     -77.38171,
+     42.19033
+    ],
+    [
+     -77.3818,
+     42.18615
+    ],
+    [
+     -77.38902,
+     42.19317
+    ],
+    [
+     -77.38914,
+     42.19713
+    ],
+    [
+     -77.39059,
+     42.19707
+    ],
+    [
+     -77.39069,
+     42.19862
+    ],
+    [
+     -77.38913,
+     42.19868
+    ],
+    [
+     -77.38923,
+     42.20244
+    ]
+   ],
+   "status": "merged into one row: US-5153+US-5154@same land@42.196,-77.380"
+  },
+  {
+   "access": [
+    43.284782,
+    -75.320249,
+    "Parking: KOTARY  ROAD EXTENSION PARKING (NYSDEC)",
     "US-8096",
+    653
+   ],
+   "access_pin": {
+    "at": [
+     43.291435,
+     -75.320896
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
+   "box": [
+    -75.33166,
+    43.28368,
+    -75.31328,
+    43.30169
+   ],
+   "center": [
+    43.290631,
+    -75.321334
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-5304+US-8096@same land@43.291,-75.321",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "maps": [
+    [
+     "US-5304",
+     "https://www.dec.ny.gov/lands/8114.html"
+    ],
+    [
+     "US-8096",
+     "https://www.dec.ny.gov/lands/107850.html"
+    ]
+   ],
+   "names": {
+    "US-5304": "South Hill (Chenango County) State Forest",
+    "US-8096": "South Hill (Oneida County) State Forest"
+   },
+   "note": "both park numbers are joined to the same official outline (South Hill State Forest); POTA lists them separately: check POTA's current list",
+   "owner_here": "state land (from the outline both numbers are joined to)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "refs": [
+    "US-5304",
+    "US-8096"
+   ],
+   "shape": [
+    [
+     -75.32025,
+     43.28368
+    ],
+    [
+     -75.32051,
+     43.28593
+    ],
+    [
+     -75.32975,
+     43.28534
+    ],
+    [
+     -75.33166,
+     43.30127
+    ],
+    [
+     -75.32508,
+     43.30169
+    ],
+    [
+     -75.32469,
+     43.29844
+    ],
+    [
+     -75.31483,
+     43.29907
+    ],
+    [
+     -75.31328,
+     43.28708
+    ],
+    [
+     -75.31733,
+     43.28682
+    ],
+    [
+     -75.31704,
+     43.28394
+    ],
+    [
+     -75.32025,
+     43.28368
+    ]
+   ],
+   "status": "candidate"
+  },
+  {
+   "access": [
+    42.510305,
+    -74.855706,
+    "Parking: A-13 PARKING (NYSDEC)",
+    "US-5304",
+    158
+   ],
+   "access_pin": {
+    "at": [
+     42.517458,
+     -74.851169
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
+   "box": [
+    -74.85978,
+    42.49835,
+    -74.84184,
+    42.52197
+   ],
+   "center": [
+    42.509809,
+    -74.853894
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-5304+US-8097@same land@42.510,-74.854",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "len_m": 0,
+   "maps": [
+    [
+     "US-5304",
+     "https://www.dec.ny.gov/lands/8114.html"
+    ],
+    [
+     "US-8097",
+     "https://www.dec.ny.gov/lands/102498.html"
+    ]
+   ],
+   "names": {
+    "US-5304": "South Hill (Chenango County) State Forest",
+    "US-8097": "South Hill (Delaware and Otsego County) State Forest"
+   },
+   "note": "both park numbers are joined to the same official outline (South Hill State Forest); POTA lists them separately: check POTA's current list",
+   "owner_here": "state land (from the outline both numbers are joined to)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins": [],
+   "refs": [
+    "US-5304",
     "US-8097"
    ],
    "shape": [
     [
-     -75.481479,
-     42.377247
+     -74.85641,
+     42.50042
     ],
     [
-     -75.481357,
-     42.367344
+     -74.8576,
+     42.507
     ],
     [
-     -75.475092,
-     42.367389
+     -74.85602,
+     42.50767
     ],
     [
-     -75.475152,
-     42.369921
+     -74.85671,
+     42.51039
     ],
     [
-     -75.472233,
-     42.370012
+     -74.85826,
+     42.51017
     ],
     [
-     -75.47205,
-     42.362144
+     -74.85898,
+     42.51427
     ],
     [
-     -75.467671,
-     42.362099
+     -74.85676,
+     42.51541
     ],
     [
-     -75.467123,
-     42.350477
+     -74.85778,
+     42.51604
     ],
     [
-     -75.469921,
-     42.35102
+     -74.85922,
+     42.5157
     ],
     [
-     -75.469921,
-     42.353236
+     -74.85978,
+     42.51674
     ],
     [
-     -75.473693,
-     42.353326
+     -74.85368,
+     42.52197
     ],
     [
-     -75.473693,
-     42.349663
+     -74.85279,
+     42.51744
     ],
     [
-     -75.470408,
-     42.349618
+     -74.84936,
+     42.51754
     ],
     [
-     -75.470408,
-     42.34582
-    ],
-    [
-     -75.466819,
-     42.34582
-    ],
-    [
-     -75.464325,
-     42.345594
-    ],
-    [
-     -75.448145,
-     42.345368
-    ],
-    [
-     -75.448388,
-     42.35301
-    ],
-    [
-     -75.446199,
-     42.353055
-    ],
-    [
-     -75.446259,
-     42.354909
-    ],
-    [
-     -75.44924,
-     42.354818
-    ],
-    [
-     -75.449362,
-     42.358029
-    ],
-    [
-     -75.452525,
-     42.357984
-    ],
-    [
-     -75.452768,
-     42.359069
-    ],
-    [
-     -75.45216,
-     42.359205
-    ],
-    [
-     -75.45216,
-     42.361692
-    ],
-    [
-     -75.452038,
-     42.362234
-    ],
-    [
-     -75.448023,
-     42.362279
-    ],
-    [
-     -75.448023,
-     42.363862
-    ],
-    [
-     -75.447172,
-     42.363862
-    ],
-    [
-     -75.44705,
-     42.364043
-    ],
-    [
-     -75.446868,
-     42.363862
-    ],
-    [
-     -75.445164,
-     42.363862
-    ],
-    [
-     -75.445347,
-     42.371007
-    ],
-    [
-     -75.448875,
-     42.370961
-    ],
-    [
-     -75.448936,
-     42.370147
-    ],
-    [
-     -75.455748,
-     42.370012
-    ],
-    [
-     -75.455931,
-     42.363139
-    ],
-    [
-     -75.456174,
-     42.363093
-    ],
-    [
-     -75.456174,
-     42.362641
-    ],
-    [
-     -75.455931,
-     42.362596
-    ],
-    [
-     -75.455931,
-     42.362279
-    ],
-    [
-     -75.457999,
-     42.362234
-    ],
-    [
-     -75.458182,
-     42.370645
-    ],
-    [
-     -75.463839,
-     42.370554
-    ],
-    [
-     -75.463899,
-     42.370102
-    ],
-    [
-     -75.474544,
-     42.370012
-    ],
-    [
-     -75.474909,
-     42.377337
-    ]
-   ],
-   "status": "dropped: a pin is outside its own outline",
-   "wide_m": 1270
-  },
-  {
-   "acres": 523.3,
-   "box": [
-    -74.85974,
-    42.49834,
-    -74.84182,
-    42.52195
-   ],
-   "center": [
-    42.51286,
-    -74.85322
-   ],
-   "found": "2026-10-26",
-   "id": "US-8096+US-8097@area@42.513,-74.853",
-   "kind": "area",
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-8096": true,
-    "US-8097": false
-   },
-   "refs": [
-    "US-8096",
-    "US-8097"
-   ],
-   "shape": [
-    [
-     -74.853646,
-     42.521949
-    ],
-    [
-     -74.859741,
-     42.516703
-    ],
-    [
-     -74.859192,
-     42.515663
-    ],
-    [
-     -74.85773,
-     42.516025
-    ],
-    [
-     -74.856755,
-     42.515392
-    ],
-    [
-     -74.858888,
-     42.514307
-    ],
-    [
-     -74.858949,
-     42.514126
-    ],
-    [
-     -74.858217,
-     42.510147
-    ],
-    [
-     -74.857242,
-     42.510373
-    ],
-    [
-     -74.856694,
-     42.510328
-    ],
-    [
-     -74.855962,
-     42.50775
-    ],
-    [
-     -74.856023,
-     42.507614
-    ],
-    [
-     -74.857547,
-     42.506981
-    ],
-    [
-     -74.85645,
-     42.50056
-    ],
-    [
-     -74.856206,
-     42.499656
-    ],
-    [
-     -74.855597,
-     42.499882
-    ],
-    [
-     -74.855475,
-     42.500199
-    ],
-    [
-     -74.855231,
-     42.500289
-    ],
-    [
-     -74.855048,
-     42.500108
-    ],
-    [
-     -74.849319,
-     42.502505
-    ],
-    [
-     -74.848405,
-     42.498345
-    ],
-    [
-     -74.841823,
-     42.500515
+     -74.84806,
+     42.51112
     ],
     [
      -74.8442,
-     42.512769
+     42.51276
     ],
     [
-     -74.847796,
-     42.511187
+     -74.84184,
+     42.50052
     ],
     [
-     -74.84804,
-     42.511187
+     -74.8485,
+     42.49835
     ],
     [
-     -74.849319,
-     42.517517
+     -74.84929,
+     42.50258
     ],
     [
-     -74.852732,
-     42.517472
+     -74.85623,
+     42.49966
+    ],
+    [
+     -74.85641,
+     42.50042
     ]
    ],
-   "status": "dropped: a pin is outside its own outline",
-   "wide_m": 800
+   "status": "candidate",
+   "stretches": 2
   },
   {
-   "acres": 577.8,
    "box": [
-    -75.33163,
-    43.28367,
-    -75.31326,
-    43.30167
+    -74.85978,
+    42.49835,
+    -74.84184,
+    42.52197
    ],
    "center": [
-    43.295066,
-    -75.32602
+    42.509809,
+    -74.853894
    ],
-   "found": "2026-10-26",
-   "id": "US-8096+US-8097@area@43.292,-75.322",
-   "kind": "area",
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-5304+US-8097@same land@42.510,-74.854",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "maps": [
+    [
+     "US-5304",
+     "https://www.dec.ny.gov/lands/8114.html"
+    ],
+    [
+     "US-8097",
+     "https://www.dec.ny.gov/lands/102498.html"
+    ]
+   ],
+   "names": {
+    "US-5304": "South Hill (Chenango County) State Forest",
+    "US-8097": "South Hill (Delaware and Otsego County) State Forest"
+   },
+   "note": "both park numbers are joined to the same official outline (South Hill State Forest); POTA lists them separately: check POTA's current list",
    "passes": [
     1,
     1,
     1
    ],
-   "pins_inside": {
-    "US-8096": true,
-    "US-8097": false
-   },
    "refs": [
-    "US-8096",
+    "US-5304",
     "US-8097"
    ],
    "shape": [
     [
-     -75.314797,
-     43.299045
+     -74.85641,
+     42.50042
     ],
     [
-     -75.322874,
-     43.298503
+     -74.8576,
+     42.507
     ],
     [
-     -75.322874,
-     43.285751
+     -74.85602,
+     42.50767
     ],
     [
-     -75.320469,
-     43.285887
+     -74.85671,
+     42.51039
     ],
     [
-     -75.320223,
-     43.283671
+     -74.85826,
+     42.51017
     ],
     [
-     -75.317016,
-     43.283942
+     -74.85898,
+     42.51427
     ],
     [
-     -75.317263,
-     43.286791
+     -74.85676,
+     42.51541
     ],
     [
-     -75.313255,
-     43.287063
+     -74.85778,
+     42.51604
     ],
     [
-     -75.313933,
-     43.293167
+     -74.85922,
+     42.5157
+    ],
+    [
+     -74.85978,
+     42.51674
+    ],
+    [
+     -74.85368,
+     42.52197
+    ],
+    [
+     -74.85279,
+     42.51744
+    ],
+    [
+     -74.84936,
+     42.51754
+    ],
+    [
+     -74.84806,
+     42.51112
+    ],
+    [
+     -74.8442,
+     42.51276
+    ],
+    [
+     -74.84184,
+     42.50052
+    ],
+    [
+     -74.8485,
+     42.49835
+    ],
+    [
+     -74.84929,
+     42.50258
+    ],
+    [
+     -74.85623,
+     42.49966
+    ],
+    [
+     -74.85641,
+     42.50042
     ]
    ],
-   "status": "dropped: a pin is outside its own outline",
-   "wide_m": 790
-  },
-  {
-   "acres": 12.7,
-   "box": [
-    -76.92624,
-    43.05882,
-    -76.92279,
-    43.06751
-   ],
-   "center": [
-    43.067325,
-    -76.923038
-   ],
-   "found": "2026-10-26",
-   "id": "US-8299+US-9029@area@43.067,-76.923",
-   "kind": "area",
-   "passes": [
-    1,
-    0,
-    0
-   ],
-   "refs": [
-    "US-8299",
-    "US-9029"
-   ],
-   "shape": [
-    [
-     -76.922792,
-     43.067506
-    ],
-    [
-     -76.92353,
-     43.067144
-    ],
-    [
-     -76.926235,
-     43.059367
-    ],
-    [
-     -76.924267,
-     43.058824
-    ],
-    [
-     -76.923284,
-     43.059367
-    ],
-    [
-     -76.926235,
-     43.059367
-    ]
-   ],
-   "small": "small overlap: tight fit, check carefully",
-   "status": "dropped in pass 2",
-   "wide_m": 80
-  },
-  {
-   "acres": 7.8,
-   "box": [
-    -76.71481,
-    43.01875,
-    -76.71038,
-    43.02743
-   ],
-   "center": [
-    43.020013,
-    -76.71063
-   ],
-   "found": "2026-10-26",
-   "id": "US-8299+US-9083@area@43.020,-76.711",
-   "kind": "area",
-   "passes": [
-    1,
-    0,
-    0
-   ],
-   "refs": [
-    "US-8299",
-    "US-9083"
-   ],
-   "shape": [
-    [
-     -76.714809,
-     43.027429
-    ],
-    [
-     -76.710876,
-     43.020556
-    ],
-    [
-     -76.71063,
-     43.018747
-    ],
-    [
-     -76.710384,
-     43.020194
-    ]
-   ],
-   "small": "small overlap: tight fit, check carefully",
-   "status": "dropped in pass 2",
-   "wide_m": 80
-  },
-  {
-   "access": [
-    43.066492,
-    -76.714843,
-    "Boat ramp / launch (NYSDEC Bureau of Fisheries; all agencies)",
-    "US-9083",
-    2527
-   ],
-   "access_pin": {
-    "at": [
-     43.034458,
-     -76.717828
-    ],
-    "from": "road",
-    "name": "Dwyer Rd",
-    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 134
-   },
-   "acres": 1.7,
-   "box": [
-    -76.71681,
-    43.04331,
-    -76.71423,
-    43.04408
-   ],
-   "center": [
-    43.043669,
-    -76.71638
-   ],
-   "found": "2026-10-26",
-   "id": "US-8299+US-9083@area@43.044,-76.715",
-   "kind": "area",
-   "maps": [
-    [
-     "US-8299",
-     "https://parks.ny.gov/parks/olderiecanal/maps.aspx"
-    ],
-    [
-     "US-9083",
-     "https://www.dec.ny.gov/outdoor/31112.html"
-    ]
-   ],
-   "names": {
-    "US-8299": "Old Erie Canal State Historical Park",
-    "US-9083": "Northern Montezuma Wildlife Management Area"
-   },
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-8299": true,
-    "US-9083": true
-   },
-   "refs": [
-    "US-8299",
-    "US-9083"
-   ],
-   "shape": [
-    [
-     -76.714229,
-     43.044076
-    ],
-    [
-     -76.714598,
-     43.043714
-    ],
-    [
-     -76.714905,
-     43.043759
-    ],
-    [
-     -76.715028,
-     43.043669
-    ],
-    [
-     -76.716688,
-     43.043985
-    ],
-    [
-     -76.716811,
-     43.043488
-    ],
-    [
-     -76.716134,
-     43.043307
-    ],
-    [
-     -76.715827,
-     43.043714
-    ],
-    [
-     -76.715151,
-     43.043578
-    ],
-    [
-     -76.714967,
-     43.043669
-    ],
-    [
-     -76.714536,
-     43.043624
-    ]
-   ],
-   "small": "small overlap: tight fit, check carefully",
-   "status": "candidate",
-   "wide_m": 64
-  },
-  {
-   "acres": 4.6,
-   "box": [
-    -76.68531,
-    43.05999,
-    -76.68039,
-    43.06107
-   ],
-   "center": [
-    43.060348,
-    -76.682849
-   ],
-   "found": "2026-10-26",
-   "id": "US-8299+US-9083@area@43.060,-76.683",
-   "kind": "area",
-   "passes": [
-    1,
-    0,
-    0
-   ],
-   "refs": [
-    "US-8299",
-    "US-9083"
-   ],
-   "shape": [
-    [
-     -76.68039,
-     43.061072
-    ],
-    [
-     -76.685307,
-     43.059986
-    ],
-    [
-     -76.683094,
-     43.059986
-    ]
-   ],
-   "small": "small overlap: tight fit, check carefully",
-   "status": "dropped in pass 2",
-   "wide_m": 80
-  },
-  {
-   "acres": 2.8,
-   "box": [
-    -75.32851,
-    43.16488,
-    -75.3258,
-    43.16615
-   ],
-   "center": [
-    43.16597,
-    -75.327775
-   ],
-   "found": "2026-10-26",
-   "id": "US-8299+US-9097@area@43.166,-75.328",
-   "kind": "area",
-   "passes": [
-    1,
-    0,
-    0
-   ],
-   "refs": [
-    "US-8299",
-    "US-9097"
-   ],
-   "shape": [
-    [
-     -75.328514,
-     43.166151
-    ],
-    [
-     -75.327282,
-     43.165427
-    ],
-    [
-     -75.327775,
-     43.165066
-    ],
-    [
-     -75.325804,
-     43.164885
-    ],
-    [
-     -75.327036,
-     43.165066
-    ],
-    [
-     -75.327529,
-     43.166151
-    ]
-   ],
-   "small": "small overlap: tight fit, check carefully",
-   "status": "dropped in pass 2",
-   "wide_m": 80
-  },
-  {
-   "access": [
-    43.027549,
-    -74.817486,
-    "Parking: Central Herkimer Home (NYS OPRHP)",
-    "US-8299",
-    10626
-   ],
-   "access_pin": {
-    "at": [
-     43.019961,
-     -74.95268
-    ],
-    "from": "road",
-    "name": "Co Rd 212A",
-    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 305
-   },
-   "acres": 29.6,
-   "box": [
-    -74.95356,
-    43.01683,
-    -74.92671,
-    43.02081
-   ],
-   "center": [
-    43.020218,
-    -74.947663
-   ],
-   "found": "2026-10-26",
-   "id": "US-8299+US-9099@area@43.020,-74.951",
-   "kind": "area",
-   "maps": [
-    [
-     "US-8299",
-     "https://parks.ny.gov/parks/olderiecanal/maps.aspx"
-    ],
-    [
-     "US-9099",
-     "https://www.dec.ny.gov/outdoor/49640.html"
-    ]
-   ],
-   "names": {
-    "US-8299": "Old Erie Canal State Historical Park",
-    "US-9099": "Plantation Island Wildlife Management Area"
-   },
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-8299": true,
-    "US-9099": true
-   },
-   "refs": [
-    "US-8299",
-    "US-9099"
-   ],
-   "shape": [
-    [
-     -74.926713,
-     43.020127
-    ],
-    [
-     -74.926836,
-     43.020172
-    ],
-    [
-     -74.927819,
-     43.017459
-    ],
-    [
-     -74.931198,
-     43.017504
-    ],
-    [
-     -74.933348,
-     43.01764
-    ],
-    [
-     -74.933471,
-     43.017459
-    ],
-    [
-     -74.934454,
-     43.01755
-    ],
-    [
-     -74.93857,
-     43.018364
-    ],
-    [
-     -74.938816,
-     43.018635
-    ],
-    [
-     -74.939,
-     43.018499
-    ],
-    [
-     -74.943362,
-     43.019313
-    ],
-    [
-     -74.941888,
-     43.018816
-    ],
-    [
-     -74.933102,
-     43.017052
-    ],
-    [
-     -74.927819,
-     43.016826
-    ]
-   ],
-   "status": "candidate",
-   "wide_m": 102
-  },
-  {
-   "access": [
-    43.027549,
-    -74.817486,
-    "Parking: Central Herkimer Home (NYS OPRHP)",
-    "US-8299",
-    11405
-   ],
-   "access_pin": {
-    "at": [
-     43.019953,
-     -74.952678
-    ],
-    "from": "road",
-    "name": "Co Rd 212A",
-    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 305
-   },
-   "acres": 11.7,
-   "box": [
-    -74.96431,
-    43.01954,
-    -74.95583,
-    43.02044
-   ],
-   "center": [
-    43.020082,
-    -74.957247
-   ],
-   "found": "2026-10-26",
-   "id": "US-8299+US-9099@area@43.020,-74.958",
-   "kind": "area",
-   "maps": [
-    [
-     "US-8299",
-     "https://parks.ny.gov/parks/olderiecanal/maps.aspx"
-    ],
-    [
-     "US-9099",
-     "https://www.dec.ny.gov/outdoor/49640.html"
-    ]
-   ],
-   "names": {
-    "US-8299": "Old Erie Canal State Historical Park",
-    "US-9099": "Plantation Island Wildlife Management Area"
-   },
-   "passes": [
-    1,
-    1,
-    1
-   ],
-   "pins_inside": {
-    "US-8299": true,
-    "US-9099": true
-   },
-   "refs": [
-    "US-8299",
-    "US-9099"
-   ],
-   "shape": [
-    [
-     -74.955834,
-     43.020444
-    ],
-    [
-     -74.964312,
-     43.020127
-    ],
-    [
-     -74.963759,
-     43.020082
-    ],
-    [
-     -74.963759,
-     43.019539
-    ],
-    [
-     -74.956141,
-     43.019811
-    ]
-   ],
-   "small": "small overlap: tight fit, check carefully",
-   "status": "candidate",
-   "wide_m": 80
+   "status": "merged into one row: US-5304+US-8097@same land@42.510,-74.854"
   }
  ],
  "st": "US-NY"

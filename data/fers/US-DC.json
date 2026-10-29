@@ -1,8 +1,73 @@
 {
- "about": "Spots where the boundaries of two or more POTA parks may overlap (official outlines only; land spots 50 yards across, 'small' = 50-100 yards; trails and rivers by POTA's 100-ft rule). HIDDEN, not reviewed: passes [saved, fresh, finest] must all be 1 and status 'candidate' before a person looks. Wording when shown (house rule, Oct 26 5:45 PM): '⚠️ Possible POTA overlap only. We think these POTA parks' boundaries may overlap here, but we can't confirm it. Check both official boundary maps and make your own call before you count it.' Tool pages carry the FULL notice from CLAUDE.md.",
- "pass1": "2026-10-26",
- "pass2": "2026-10-26",
- "pass3": "2026-10-27",
- "spots": [],
+ "about": "Spots where the boundaries of two or more POTA parks may overlap, by the 2-FER RULES FOR THE WHOLE WORLD (Brandon Oct 27, notes/mapping.md): the park = where its designation legally applies (national forests + grasslands = Forest Service-OWNED land only, never proclamation lines); public land open to the public; layered = real, side by side = not (ownership step: PAD-US / CPCAD at the spot, read at up to 5 points of the patch; no public owner there = not sure); a patch 50 yards across in every park ('small' = 50-100 yards; 25-50 yards = the separate 'very tight' list, members only; under 25 = not kept); line-only trails / rivers by POTA's 100-ft rule from the line or the river EDGE (USGS NHD); pins never count. Status: 'candidate' = all checks passed; 'not sure: …' and 'water only: boat or kayak' are separate lists, never the main one; n-fers up to 9; 'Same land, two park numbers' (two numbers on one official outline) is shown with that label; 'dropped: …' says why. Every decided spot shows 'checked' + 'map_dates'. Parks with no official boundary: missing-<region>.json. HIDDEN, not reviewed: passes [saved, fresh, finest] must all be 1 and status 'candidate' before a person looks. Wording when shown (house rule, Oct 27): '⚠️ Parks' boundaries may overlap here, but we can't confirm it. Check both official boundary maps and make your own call before you count it.' Tool pages carry the FULL notice from .claude/notes/notices.md.",
+ "pass1": "2026-10-28",
+ "pass2": "2026-10-28",
+ "pass3": "2026-10-29",
+ "pass5": "2026-10-29",
+ "spots": [
+  {
+   "access": null,
+   "access_pin": null,
+   "box": [
+    -77.04119,
+    38.88773,
+    -77.03957,
+    38.89042
+   ],
+   "center": [
+    38.889512,
+    -77.040352
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-28",
+   "id": "US-0795+US-0796@same land@38.890,-77.040",
+   "kind": "same land",
+   "label": "Same land, two park numbers",
+   "maps": [
+    [
+     "US-0795",
+     "https://www.nps.gov/wwim/planyourvisit/maps.htm"
+    ],
+    [
+     "US-0796",
+     "https://www.nps.gov/wwii/planyourvisit/maps.htm"
+    ]
+   ],
+   "names": {
+    "US-0795": "World War I National Memorial",
+    "US-0796": "World War II National Memorial"
+   },
+   "note": "both park numbers are joined to the same official outline (World War I Memorial); POTA lists them separately: check POTA's current list",
+   "owner_here": "Park Service land (from the outline both numbers are joined to)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "refs": [
+    "US-0795",
+    "US-0796"
+   ],
+   "shape": [
+    [
+     -77.03957,
+     38.88995
+    ],
+    [
+     -77.04108,
+     38.88773
+    ],
+    [
+     -77.04119,
+     38.89042
+    ],
+    [
+     -77.03957,
+     38.88995
+    ]
+   ],
+   "status": "candidate"
+  }
+ ],
  "st": "US-DC"
 }

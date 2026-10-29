@@ -1,0 +1,175 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "northeast",
+ "states": [
+  "US-PA",
+  "US-NY",
+  "US-NJ",
+  "US-CT",
+  "US-RI",
+  "US-MA",
+  "US-VT",
+  "US-NH",
+  "US-ME",
+  "US-MD",
+  "US-DE",
+  "US-DC"
+ ],
+ "since": "2026-10-28",
+ "date": "2026-10-29 01:02 UTC",
+ "verdict": "STOPPED",
+ "why": [
+  "pass1 stopped for time: not every pair was looked at (run the fetcher again with more minutes)",
+  "pass 1 tested 2576 of 11233 pairs whose boxes touch",
+  "US-NJ: pass1 not run in this run (stamp 2026-10-26, run started 2026-10-28)",
+  "water service: US-NJ: 18 rows not checked because the USGS water map did not answer (run the worker again)",
+  "water service: US-DE: 2 rows not checked because the USGS water map did not answer (run the worker again)"
+ ],
+ "known_answers": "18/18 on 2026-10-28",
+ "missing_check": {
+  "FOUND": 112,
+  "DROPPED": 41,
+  "NEVER LOOKED AT": 12556
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-28",
+   "pairs tested": 2576,
+   "pairs whose boxes touch": 11233,
+   "stopped for time": true
+  },
+  "pass2": {
+   "agree with the pass before": 389,
+   "date": "2026-10-28",
+   "pairs tested": 102
+  },
+  "pass3": {
+   "agree with the pass before": 378,
+   "date": "2026-10-29",
+   "pairs tested": 100
+  },
+  "pass5": {
+   "checked": 18,
+   "date": "2026-10-29",
+   "pairs tested": 0,
+   "still not checked": 18
+  }
+ },
+ "US-PA": {
+  "rows": 11,
+  "live": 0,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 11,
+  "merged": 0
+ },
+ "US-NY": {
+  "rows": 20,
+  "live": 12,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "low-confidence outline": 1
+  },
+  "dropped": 0,
+  "merged": 7
+ },
+ "US-NJ": {
+  "rows": 61,
+  "live": 1,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "water not checked": 18
+  },
+  "dropped": 15,
+  "merged": 27
+ },
+ "US-CT": {
+  "rows": 3,
+  "live": 2,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 0,
+  "merged": 1
+ },
+ "US-RI": {
+  "rows": 1,
+  "live": 1,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 0,
+  "merged": 0
+ },
+ "US-MA": {
+  "rows": 149,
+  "live": 2,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 0,
+  "merged": 147
+ },
+ "US-VT": {
+  "rows": 177,
+  "live": 54,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 41,
+  "merged": 82
+ },
+ "US-NH": {
+  "rows": 28,
+  "live": 2,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 0,
+  "merged": 26
+ },
+ "US-ME": {
+  "rows": 206,
+  "live": 36,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "no public owner on the ownership map": 3
+  },
+  "dropped": 67,
+  "merged": 100
+ },
+ "US-MD": {
+  "rows": 53,
+  "live": 11,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 0,
+  "merged": 42
+ },
+ "US-DE": {
+  "rows": 59,
+  "live": 3,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "no public owner on the ownership map": 1,
+   "water not checked": 2
+  },
+  "dropped": 1,
+  "merged": 52
+ },
+ "US-DC": {
+  "rows": 1,
+  "live": 1,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 0,
+  "merged": 0
+ }
+}
