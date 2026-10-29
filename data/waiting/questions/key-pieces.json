@@ -1,7 +1,7 @@
 {
  "about": "RULE SHEET G step 2: held similar-name key pieces, one question each. Chat 11 fills answer (YES / NO) + checked_by + how (the agency map it looked at); chat 2 rechecks and writes overrides.json. 'pins' = POTA pin may be wrong (information only).",
  "built": "2026-10-29 18:26Z",
- "open": 15,
+ "open": 9,
  "questions": [
   {
    "area": "US-CA",
@@ -29,9 +29,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=52998&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-6861",
    "question": "Is this piece part of that park on the agency's own map? YES / NO",
-   "answer": null,
-   "checked_by": "chat 11 (Sonnet), Oct 29",
-   "how": "NOT SURE (chat 11, Oct 29): needs the agency map: name and size alone do not settle it"
+   "answer": "NO",
+   "checked_by": "chat 11 (Sonnet), Oct 29, look-up bot screenshot",
+   "how": "CT DEEP page (seen by look-up bot): Massacoe State Forest = two blocks, 370 ac total, the Massacoe block 73 ac. A 1-ac and a 0-ac record is neither the forest nor its block. Seen via the look-up bot (agency page), not the map lines."
   },
   {
    "area": "US-CT",
@@ -44,9 +44,9 @@
    "record_link": "",
    "pota_link": "https://pota.app/#/park/US-6861",
    "question": "Is this piece part of that park on the agency's own map? YES / NO",
-   "answer": null,
-   "checked_by": "chat 11 (Sonnet), Oct 29",
-   "how": "NOT SURE (chat 11, Oct 29): needs the agency map: name and size alone do not settle it"
+   "answer": "NO",
+   "checked_by": "chat 11 (Sonnet), Oct 29, look-up bot screenshot",
+   "how": "CT DEEP page (seen by look-up bot): Massacoe State Forest = two blocks, 370 ac total, the Massacoe block 73 ac. A 1-ac and a 0-ac record is neither the forest nor its block. Seen via the look-up bot (agency page), not the map lines."
   },
   {
    "area": "US-FL",
@@ -119,9 +119,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=56688&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-4365",
    "question": "Is this piece part of that park on the agency's own map? YES / NO",
-   "answer": null,
-   "checked_by": "chat 11 (Sonnet), Oct 29",
-   "how": "NOT SURE (chat 11, Oct 29): needs the agency map: name and size alone do not settle it"
+   "answer": "NO",
+   "checked_by": "chat 11 (Sonnet), Oct 29, look-up bot screenshot",
+   "how": "MD DNR page: North Point State Battlefield preserves NINE acres in Dundalk; the 80-ac 'North Point Sp' record is a different, larger place (North Point State Park). Seen via the look-up bot (agency page), not the map lines."
   },
   {
    "area": "US-ME",
@@ -164,9 +164,9 @@
    "record_link": "",
    "pota_link": "https://pota.app/#/park/US-13570",
    "question": "Is this piece part of that park on the agency's own map? YES / NO",
-   "answer": null,
-   "checked_by": "chat 11 (Sonnet), Oct 29",
-   "how": "NOT SURE (chat 11, Oct 29): needs the agency map: name and size alone do not settle it"
+   "answer": "YES",
+   "checked_by": "chat 11 (Sonnet), Oct 29, look-up bot screenshot",
+   "how": "Michigan DNR's own map is titled 'Gladwin Field Trial Area and Wildlife/Game Unit of Gladwin State Forest': the field trial area sits in the game unit the record covers. Approximate (I read the title, not the lines). Seen via the look-up bot (agency page), not the map lines."
   },
   {
    "area": "US-MN",
@@ -226,7 +226,7 @@
    "question": "Is this piece part of that park on the agency's own map? YES / NO",
    "answer": "YES",
    "checked_by": "chat 11 (Sonnet), Oct 29",
-   "how": "Frost Farm historic site = Robert Frost Farm. By name, kind and size plus what I know of the place; I could not open the agency map from my session."
+   "how": "Frost Farm historic site = Robert Frost Farm. By name, kind and size plus what I know of the place; I could not open the agency map from my session. Look-up bot saw the agency page (Oct 29 2:30 PM): no boundary lines on it; stays Approximate."
   },
   {
    "area": "US-NH",
@@ -241,7 +241,7 @@
    "question": "Is this piece part of that park on the agency's own map? YES / NO",
    "answer": "YES",
    "checked_by": "chat 11 (Sonnet), Oct 29",
-   "how": "Frost Farm historic site = Robert Frost Farm. By name, kind and size plus what I know of the place; I could not open the agency map from my session."
+   "how": "Frost Farm historic site = Robert Frost Farm. By name, kind and size plus what I know of the place; I could not open the agency map from my session. Look-up bot saw the agency page (Oct 29 2:30 PM): no boundary lines on it; stays Approximate."
   },
   {
    "area": "US-NY",
@@ -270,8 +270,8 @@
    "pota_link": "https://pota.app/#/park/US-8319",
    "question": "Is this piece part of that park on the agency's own map? YES / NO",
    "answer": null,
-   "checked_by": "chat 11 (Sonnet), Oct 29",
-   "how": "NOT SURE (chat 11, Oct 29): needs the agency map: name and size alone do not settle it"
+   "checked_by": "chat 11 (Sonnet)",
+   "how": "NOT SURE (agency page seen by look-up bot Oct 29): njpalisades.org shows a robot challenge screen; nothing read."
   },
   {
    "area": "US-OR",
@@ -359,9 +359,9 @@
    "record_link": "",
    "pota_link": "https://pota.app/#/park/US-7565",
    "question": "Is this piece part of that park on the agency's own map? YES / NO",
-   "answer": null,
-   "checked_by": "chat 11 (Sonnet), Oct 29",
-   "how": "NOT SURE (chat 11, Oct 29): needs the agency map: name and size alone do not settle it"
+   "answer": "YES",
+   "checked_by": "chat 11 (Sonnet), Oct 29, look-up bot screenshot",
+   "how": "TWRA page treats 'AEDC WMA and Woods Reservoir Refuge' as one area (32,000 ac); the 810-ac 'Woods Reservoir Refuge' record is its named refuge part: a real piece. Seen via the look-up bot (agency page), not the map lines."
   },
   {
    "area": "US-TX",
@@ -391,7 +391,7 @@
    "question": "Is this piece part of that park on the agency's own map? YES / NO",
    "answer": "YES",
    "checked_by": "chat 11 (Sonnet), Oct 29",
-   "how": "Midway State Fish Hatchery: same site. By name, kind and size plus what I know of the place; I could not open the agency map from my session."
+   "how": "Midway State Fish Hatchery: same site. By name, kind and size plus what I know of the place; I could not open the agency map from my session. Look-up bot saw the agency page (Oct 29 2:30 PM): no boundary lines on it; stays Approximate."
   },
   {
    "area": "US-UT",
@@ -436,7 +436,7 @@
    "question": "Is this piece part of that park on the agency's own map? YES / NO",
    "answer": "YES",
    "checked_by": "chat 11 (Sonnet), Oct 29",
-   "how": "Stagecoach Inn is inside Camp Floyd/Stagecoach Inn SP: a piece. By name, kind and size plus what I know of the place; I could not open the agency map from my session."
+   "how": "Stagecoach Inn is inside Camp Floyd/Stagecoach Inn SP: a piece. By name, kind and size plus what I know of the place; I could not open the agency map from my session. Look-up bot saw the agency page (Oct 29 2:30 PM): no boundary lines on it; stays Approximate."
   },
   {
    "area": "US-UT",
@@ -451,7 +451,7 @@
    "question": "Is this piece part of that park on the agency's own map? YES / NO",
    "answer": "YES",
    "checked_by": "chat 11 (Sonnet), Oct 29",
-   "how": "Stagecoach Inn is inside Camp Floyd/Stagecoach Inn SP: a piece. By name, kind and size plus what I know of the place; I could not open the agency map from my session."
+   "how": "Stagecoach Inn is inside Camp Floyd/Stagecoach Inn SP: a piece. By name, kind and size plus what I know of the place; I could not open the agency map from my session. Look-up bot saw the agency page (Oct 29 2:30 PM): no boundary lines on it; stays Approximate."
   },
   {
    "area": "US-UT",
@@ -480,8 +480,8 @@
    "pota_link": "https://pota.app/#/park/US-6027",
    "question": "Is this piece part of that park on the agency's own map? YES / NO",
    "answer": null,
-   "checked_by": "chat 11 (Sonnet), Oct 29",
-   "how": "NOT SURE (chat 11, Oct 29): needs the agency map: name and size alone do not settle it"
+   "checked_by": "chat 11 (Sonnet)",
+   "how": "NOT SURE (agency page seen by look-up bot Oct 29): BLM page shows only a point marker, no boundary ('dispersed camping throughout')."
   },
   {
    "area": "US-WA",
@@ -496,7 +496,7 @@
    "question": "Is this piece part of that park on the agency's own map? YES / NO",
    "answer": "YES",
    "checked_by": "chat 11 (Sonnet), Oct 29",
-   "how": "Jackson House State Park Heritage Site: same site, 1 ac. By name, kind and size plus what I know of the place; I could not open the agency map from my session."
+   "how": "Jackson House State Park Heritage Site: same site, 1 ac. By name, kind and size plus what I know of the place; I could not open the agency map from my session. Look-up bot saw the agency page (Oct 29 2:30 PM): no boundary lines on it; stays Approximate."
   },
   {
    "area": "US-WA",
@@ -510,8 +510,8 @@
    "pota_link": "https://pota.app/#/park/US-12545",
    "question": "Is this piece part of that park on the agency's own map? YES / NO",
    "answer": null,
-   "checked_by": "chat 11 (Sonnet), Oct 29",
-   "how": "NOT SURE (chat 11, Oct 29): needs the agency map: name and size alone do not settle it"
+   "checked_by": "chat 11 (Sonnet)",
+   "how": "NOT SURE (agency page seen by look-up bot Oct 29): WDFW page names the unit but gives no acres or boundary; record is named just 'Island' (0 ac)."
   },
   {
    "area": "US-WA",
@@ -525,8 +525,8 @@
    "pota_link": "https://pota.app/#/park/US-12545",
    "question": "Is this piece part of that park on the agency's own map? YES / NO",
    "answer": null,
-   "checked_by": "chat 11 (Sonnet), Oct 29",
-   "how": "NOT SURE (chat 11, Oct 29): needs the agency map: name and size alone do not settle it"
+   "checked_by": "chat 11 (Sonnet)",
+   "how": "NOT SURE (agency page seen by look-up bot Oct 29): WDFW page names the unit but gives no acres or boundary; record is named just 'Island' (0 ac)."
   },
   {
    "area": "US-WA",
@@ -540,8 +540,8 @@
    "pota_link": "https://pota.app/#/park/US-12549",
    "question": "Is this piece part of that park on the agency's own map? YES / NO",
    "answer": null,
-   "checked_by": "chat 11 (Sonnet), Oct 29",
-   "how": "NOT SURE (chat 11, Oct 29): needs the agency map: name and size alone do not settle it"
+   "checked_by": "chat 11 (Sonnet)",
+   "how": "NOT SURE (agency page seen by look-up bot Oct 29): WDFW page names the unit but gives no acres or boundary; record is named just 'Island' (0 ac)."
   },
   {
    "area": "US-WA",
@@ -555,8 +555,8 @@
    "pota_link": "https://pota.app/#/park/US-12549",
    "question": "Is this piece part of that park on the agency's own map? YES / NO",
    "answer": null,
-   "checked_by": "chat 11 (Sonnet), Oct 29",
-   "how": "NOT SURE (chat 11, Oct 29): needs the agency map: name and size alone do not settle it"
+   "checked_by": "chat 11 (Sonnet)",
+   "how": "NOT SURE (agency page seen by look-up bot Oct 29): WDFW page names the unit but gives no acres or boundary; record is named just 'Island' (0 ac)."
   },
   {
    "area": "US-WA",
@@ -571,7 +571,7 @@
    "question": "Is this piece part of that park on the agency's own map? YES / NO",
    "answer": "YES",
    "checked_by": "chat 11 (Sonnet), Oct 29",
-   "how": "Old Ruby State Park Heritage Site: same site. By name, kind and size plus what I know of the place; I could not open the agency map from my session."
+   "how": "Old Ruby State Park Heritage Site: same site. By name, kind and size plus what I know of the place; I could not open the agency map from my session. Look-up bot saw the agency page (Oct 29 2:30 PM): no boundary lines on it; stays Approximate."
   },
   {
    "area": "US-WA",
@@ -586,7 +586,7 @@
    "question": "Is this piece part of that park on the agency's own map? YES / NO",
    "answer": "YES",
    "checked_by": "chat 11 (Sonnet), Oct 29",
-   "how": "Old Ruby State Park Heritage Site: same site. By name, kind and size plus what I know of the place; I could not open the agency map from my session."
+   "how": "Old Ruby State Park Heritage Site: same site. By name, kind and size plus what I know of the place; I could not open the agency map from my session. Look-up bot saw the agency page (Oct 29 2:30 PM): no boundary lines on it; stays Approximate."
   },
   {
    "area": "US-WI",
@@ -599,9 +599,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=272833&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-12068",
    "question": "Is this piece part of that park on the agency's own map? YES / NO",
-   "answer": null,
-   "checked_by": "chat 11 (Sonnet), Oct 29",
-   "how": "NOT SURE (chat 11, Oct 29): needs the agency map: name and size alone do not settle it"
+   "answer": "NO",
+   "checked_by": "chat 11 (Sonnet), Oct 29, look-up bot screenshot",
+   "how": "Wisconsin DNR page: Big Rib River Fishery Area is 952 ac; the record is named 'Rib River Fishery Area' and is 224 ac: different name and size. Seen via the look-up bot (agency page), not the map lines."
   },
   {
    "area": "US-WY",
@@ -615,8 +615,8 @@
    "pota_link": "https://pota.app/#/park/US-10790",
    "question": "Is this piece part of that park on the agency's own map? YES / NO",
    "answer": null,
-   "checked_by": "chat 11 (Sonnet), Oct 29",
-   "how": "NOT SURE (chat 11, Oct 29): needs the agency map: name and size alone do not settle it"
+   "checked_by": "chat 11 (Sonnet)",
+   "how": "NOT SURE (agency page seen by look-up bot Oct 29): WGFD page gives no acres or boundary for Laramie Peak; record is a 0-ac sliver."
   },
   {
    "area": "US-WY",
@@ -630,8 +630,8 @@
    "pota_link": "https://pota.app/#/park/US-12728",
    "question": "Is this piece part of that park on the agency's own map? YES / NO",
    "answer": null,
-   "checked_by": "chat 11 (Sonnet), Oct 29",
-   "how": "NOT SURE (chat 11, Oct 29): needs the agency map: name and size alone do not settle it"
+   "checked_by": "chat 11 (Sonnet)",
+   "how": "NOT SURE (agency page seen by look-up bot Oct 29): WGFD page: 600+ acres; the record is a 0-ac sliver."
   }
  ],
  "pins": [
