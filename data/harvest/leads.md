@@ -160,21 +160,18 @@ access constraints t | 2024-10-18 | https://services.arcgis.com/JJzESW51TqeY9uat
 {
  "date": "2026-10-29",
  "stats": {
-  "requests": 34,
+  "requests": 252,
   "hits": 0,
-  "leads": 3,
+  "leads": 6,
   "already_read": 0,
-  "skipped": 3,
-  "not_official": 172,
+  "skipped": 0,
+  "not_official": 84,
   "robots": 0,
   "strikes": 0,
-  "errors": 5
+  "errors": 4
  },
  "countries": [
-  "PL done: 3 leads (A 0), known-good found 2 of 2",
-  "NL done: 5 leads (A 3), known-good found 0 of 2",
-  "SE done: 6 leads (A 1), known-good found 1 of 2",
-  "AT nothing seeded: not searched: 1 leads (A 0), known-good found 0 of 0"
+  "NL done: 7 leads (A 3), known-good found 2 of 2"
  ],
  "dead_servers": [],
  "robots_refused": {},

@@ -15,50 +15,88 @@
  ],
  "bands": {
   "A": 3,
-  "B": 2,
+  "B": 4,
   "C": 0
  },
- "known_good_found": [],
- "known_good_missed": [
+ "failures": [
+  {
+   "catalog": "https://data.overheid.nl/data",
+   "keyword": "nationaal park",
+   "error": "HTTP 400"
+  },
+  {
+   "catalog": "https://data.overheid.nl/data",
+   "keyword": "natuurgebied",
+   "error": "HTTP 400"
+  },
+  {
+   "catalog": "https://data.overheid.nl/data",
+   "keyword": "natura 2000",
+   "error": "HTTP 400"
+  },
+  {
+   "catalog": "https://data.overheid.nl/data",
+   "keyword": "natuurmonument",
+   "error": "HTTP 400"
+  }
+ ],
+ "rejected_orgs": [
+  [
+   [
+    "?",
+    5
+   ]
+  ],
+  [
+   [
+    "?",
+    17
+   ],
+   [
+    "Esri Nederland",
+    2
+   ]
+  ],
+  [
+   [
+    "?",
+    48
+   ]
+  ],
+  [
+   [
+    "?",
+    11
+   ],
+   [
+    "Gemeente Hilversum",
+    1
+   ]
+  ]
+ ],
+ "known_good_found": [
   "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1",
   "https://api.pdok.nl/rvo/nationale-parken-geharmoniseerd/ogc/v1"
  ],
+ "known_good_missed": [],
  "known_log": [
   {
    "step": "known",
-   "what": "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1: 0 feature types, 0 look like park layers"
+   "what": "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1: 1 OGC API collections, 1 look like park layers"
   },
   {
    "step": "known",
    "what": "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1",
-   "found": false
+   "found": true
   },
   {
    "step": "known",
-   "what": "https://api.pdok.nl/rvo/nationale-parken-geharmoniseerd/ogc/v1: 0 feature types, 0 look like park layers"
-  },
-  {
-   "step": "known",
-   "what": "https://api.pdok.nl/rvo/nationale-parken-geharmoniseerd/ogc/v1",
-   "found": false
-  },
-  {
-   "step": "known",
-   "what": "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1: 0 feature types, 0 look like park layers"
-  },
-  {
-   "step": "known",
-   "what": "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1",
-   "found": false
-  },
-  {
-   "step": "known",
-   "what": "https://api.pdok.nl/rvo/nationale-parken-geharmoniseerd/ogc/v1: 0 feature types, 0 look like park layers"
+   "what": "https://api.pdok.nl/rvo/nationale-parken-geharmoniseerd/ogc/v1: 1 OGC API collections, 1 look like park layers"
   },
   {
    "step": "known",
    "what": "https://api.pdok.nl/rvo/nationale-parken-geharmoniseerd/ogc/v1",
-   "found": false
+   "found": true
   }
  ],
  "leads": {
@@ -1180,6 +1218,60 @@
    "grade": 3,
    "band": "B",
    "note": "filter the layer by the country code (NL); one official layer covers every member state"
+  },
+  "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1": {
+   "url": "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1",
+   "cc": "NL",
+   "title": "OGC API api.pdok.nl",
+   "publisher": "api.pdok.nl",
+   "catalog": "OGC API collections",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-29",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "name": "Nationaal beschermde gebieden",
+     "type": "cdda",
+     "geom": "unknown (OGC API)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    }
+   ],
+   "note": "1 collections listed",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "B",
+   "known_good": true
+  },
+  "https://api.pdok.nl/rvo/nationale-parken-geharmoniseerd/ogc/v1": {
+   "url": "https://api.pdok.nl/rvo/nationale-parken-geharmoniseerd/ogc/v1",
+   "cc": "NL",
+   "title": "OGC API api.pdok.nl",
+   "publisher": "api.pdok.nl",
+   "catalog": "OGC API collections",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-29",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "name": "Protected Sites",
+     "type": "protectedsite",
+     "geom": "unknown (OGC API)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    }
+   ],
+   "note": "1 collections listed",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "B",
+   "known_good": true
   }
  }
 }

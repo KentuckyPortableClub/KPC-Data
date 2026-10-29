@@ -1731,21 +1731,21 @@
    "log": [
     {
      "step": "known",
-     "what": "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1: 0 feature types, 0 look like park layers"
+     "what": "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1: 1 OGC API collections, 1 look like park layers"
     },
     {
      "step": "known",
      "what": "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1",
-     "found": false
+     "found": true
     },
     {
      "step": "known",
-     "what": "https://api.pdok.nl/rvo/nationale-parken-geharmoniseerd/ogc/v1: 0 feature types, 0 look like park layers"
+     "what": "https://api.pdok.nl/rvo/nationale-parken-geharmoniseerd/ogc/v1: 1 OGC API collections, 1 look like park layers"
     },
     {
      "step": "known",
      "what": "https://api.pdok.nl/rvo/nationale-parken-geharmoniseerd/ogc/v1",
-     "found": false
+     "found": true
     },
     {
      "catalog": "https://data.overheid.nl/data",
@@ -1770,80 +1770,54 @@
     {
      "agol": "nationaal park",
      "hits": 5,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       5
+      ]
+     ]
     },
     {
      "agol": "natuurgebied",
      "hits": 19,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       17
+      ],
+      [
+       "Esri Nederland",
+       2
+      ]
+     ]
     },
     {
      "agol": "natura 2000",
      "hits": 50,
-     "read": 2
+     "read": 2,
+     "rejected_orgs": [
+      [
+       "?",
+       48
+      ]
+     ]
     },
     {
      "agol": "natuurmonument",
      "hits": 16,
-     "read": 2
-    },
-    {
-     "step": "known",
-     "what": "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1: 0 feature types, 0 look like park layers"
-    },
-    {
-     "step": "known",
-     "what": "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1",
-     "found": false
-    },
-    {
-     "step": "known",
-     "what": "https://api.pdok.nl/rvo/nationale-parken-geharmoniseerd/ogc/v1: 0 feature types, 0 look like park layers"
-    },
-    {
-     "step": "known",
-     "what": "https://api.pdok.nl/rvo/nationale-parken-geharmoniseerd/ogc/v1",
-     "found": false
-    },
-    {
-     "catalog": "https://data.overheid.nl/data",
-     "keyword": "nationaal park",
-     "error": "HTTP 400"
-    },
-    {
-     "catalog": "https://data.overheid.nl/data",
-     "keyword": "natuurgebied",
-     "error": "HTTP 400"
-    },
-    {
-     "catalog": "https://data.overheid.nl/data",
-     "keyword": "natura 2000",
-     "error": "HTTP 400"
-    },
-    {
-     "catalog": "https://data.overheid.nl/data",
-     "keyword": "natuurmonument",
-     "error": "HTTP 400"
-    },
-    {
-     "agol": "nationaal park",
-     "hits": 5,
-     "read": 0
-    },
-    {
-     "agol": "natuurgebied",
-     "hits": 19,
-     "read": 0
-    },
-    {
-     "agol": "natura 2000",
-     "hits": 50,
-     "read": 0
-    },
-    {
-     "agol": "natuurmonument",
-     "hits": 16,
-     "read": 0
+     "read": 2,
+     "rejected_orgs": [
+      [
+       "?",
+       11
+      ],
+      [
+       "Gemeente Hilversum",
+       1
+      ]
+     ]
     }
    ],
    "steps": [
@@ -4402,21 +4376,18 @@
  "last_run": {
   "date": "2026-10-29",
   "stats": {
-   "requests": 34,
+   "requests": 252,
    "hits": 0,
-   "leads": 3,
+   "leads": 6,
    "already_read": 0,
-   "skipped": 3,
-   "not_official": 172,
+   "skipped": 0,
+   "not_official": 84,
    "robots": 0,
    "strikes": 0,
-   "errors": 5
+   "errors": 4
   },
   "countries": [
-   "PL done: 3 leads (A 0), known-good found 2 of 2",
-   "NL done: 5 leads (A 3), known-good found 0 of 2",
-   "SE done: 6 leads (A 1), known-good found 1 of 2",
-   "AT nothing seeded: not searched: 1 leads (A 0), known-good found 0 of 0"
+   "NL done: 7 leads (A 3), known-good found 2 of 2"
   ],
   "dead_servers": [],
   "robots_refused": {},
