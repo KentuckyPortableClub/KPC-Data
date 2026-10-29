@@ -1,0 +1,83 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "neb",
+ "states": [
+  "US-NY",
+  "US-CT",
+  "US-RI"
+ ],
+ "since": "2026-10-29",
+ "date": "2026-10-29 02:27 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
+ "known_answers": "18/18 on 2026-10-29",
+ "missing_check": {
+  "FOUND": 67,
+  "DROPPED": 503,
+  "NEVER LOOKED AT": 3700
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-29",
+   "pairs tested": 2644,
+   "pairs whose boxes touch": 2644
+  },
+  "pass2": {
+   "agree with the pass before": 379,
+   "date": "2026-10-29",
+   "pairs tested": 221
+  },
+  "pass3": {
+   "agree with the pass before": 122,
+   "date": "2026-10-29",
+   "pairs tested": 217
+  },
+  "pass5": {
+   "checked": 73,
+   "date": "2026-10-29",
+   "pairs tested": 0,
+   "still not checked": 2
+  }
+ },
+ "files": {
+  "US-NY": "data/fers/US-NY.json",
+  "US-CT": "data/fers/US-CT.json",
+  "US-RI": "data/fers/US-RI.json"
+ },
+ "US-NY": {
+  "rows": 324,
+  "live": 58,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "low-confidence outline": 1,
+   "water not checked": 1
+  },
+  "dropped": 234,
+  "merged": 30
+ },
+ "water_weak": {
+  "US-NY": 1,
+  "US-CT": 1
+ },
+ "US-CT": {
+  "rows": 74,
+  "live": 33,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "water not checked": 1
+  },
+  "dropped": 25,
+  "merged": 15
+ },
+ "US-RI": {
+  "rows": 28,
+  "live": 5,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 21,
+  "merged": 2
+ }
+}
