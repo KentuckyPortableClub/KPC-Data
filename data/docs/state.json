@@ -105,24 +105,25 @@
    "updated": "2026-10-29"
   },
   "US-IA": {
-   "status": "failed",
+   "status": "done",
    "parks": 181,
-   "updated": "2026-10-29",
-   "why": "maps 82 -> 14"
+   "checked": 181,
+   "left": 0,
+   "updated": "2026-10-29"
   },
   "US-ND": {
    "status": "done",
    "parks": 155,
    "checked": 155,
    "left": 0,
-   "updated": "2026-10-28"
+   "updated": "2026-10-29"
   },
   "US-SD": {
    "status": "done",
    "parks": 120,
    "checked": 120,
    "left": 0,
-   "updated": "2026-10-28"
+   "updated": "2026-10-29"
   },
   "US-PA": {
    "status": "done",
@@ -252,7 +253,6 @@
   }
  },
  "hosts": {
-  "www.virginiastateparks.gov": 1793269856.6741216,
   "www.baysmountain.com": 1793282536.0758147,
   "www.wildlifesouth.com": 1793289030.942602,
   "www.mdwfp.com": 1793292164.6644764,
@@ -279,25 +279,25 @@
   "when": "2026-10-29",
   "areas": [
    "US-WI",
-   "US-MN",
    "US-IA",
    "US-ND",
    "US-SD",
    "US-PA",
    "US-NY",
-   "US-NJ"
+   "US-NJ",
+   "US-CT"
   ],
   "stat": {
-   "requests": 1503,
-   "parks": 818,
-   "maps_ok": 164,
-   "maps_found": 143,
+   "requests": 1599,
+   "parks": 743,
+   "maps_ok": 272,
+   "maps_found": 248,
    "dates": 1,
-   "rules": 436,
-   "browser": 11,
-   "robots": 274,
-   "strikes": 9,
-   "errors": 9,
+   "rules": 296,
+   "browser": 122,
+   "robots": 111,
+   "strikes": 1,
+   "errors": 1,
    "skipped_fresh": 9
   }
  }

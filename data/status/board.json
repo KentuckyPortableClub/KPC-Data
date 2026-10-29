@@ -26,17 +26,17 @@
    "waiting_on": "chat 8 grades the sample; Brandon GO before any card"
   },
   "layer intake": {
-   "areas": "312 rows left",
-   "last_run": "2026-10-29",
+   "areas": "1 rows left",
+   "last_run": "2026-10-28",
    "made": "data/intake/ready.json + review.md",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/40849662711",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/40702061747",
    "waiting_on": "chat 9 (approve READY rows)"
   },
   "official documents bot": {
    "areas": "",
    "last_run": "2026-10-29",
-   "made": "chunk 1 saved",
+   "made": "chunk 3 saved",
    "result": "green",
    "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/40843742114",
    "waiting_on": "chat 8 grades review.md samples"
@@ -50,11 +50,11 @@
    "waiting_on": "chat 8 grades the sample; chat 2 reads the name-mismatch list; nothing goes in a key by itself"
   },
   "park truth checker": {
-   "areas": "left: 51",
-   "last_run": "2026-10-29",
-   "made": "US-KY: done; {\"agree\": 109, \"handover_hints\": 5, \"no_page\": 0, \"no_size\": 65, \"off\": 6, \"ours_unknown\": 0, \"parks\": 193, \"retired\": 0, \"unsure\": 9, \"weak\": 26, \"with_outline\": 189}",
+   "areas": "left: 63",
+   "last_run": "2026-10-28",
+   "made": "US-KY: failed; {\"agree\": 99, \"handover_hints\": 7, \"no_page\": 0, \"no_size\": 73, \"off\": 7, \"ours_unknown\": 0, \"parks\": 193, \"retired\": 0, \"unsure\": 10, \"weak\": 28, \"with_outline\": 189}",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/40853954260",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/40693435527",
    "waiting_on": "chat 8 grades the sample; Brandon GO before any card"
   }
  },
