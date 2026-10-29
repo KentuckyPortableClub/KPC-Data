@@ -1718,9 +1718,18 @@
    "page": "https://www.fs.usda.gov/recarea/chippewa/recreation/scenicdrivinginfo/recarea/?recid=26700&actid=70",
    "checked": "2026-10-28",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.fs.usda.gov/r09/chippewa/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/recarea/chippewa/recreation/scenicdrivinginfo/recarea/?recid=26700&actid=70",
+    "posted": "March 19, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-10-28",
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r09/chippewa",
@@ -1732,7 +1741,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 5
+   "ver": 5,
+   "browser_checked": "2026-10-28"
   },
   "US-11962": {
    "n": "Manston Marsh Wildlife Management Area",
@@ -7442,9 +7452,18 @@
    "page": "https://www.fs.usda.gov/chippewa",
    "checked": "2026-10-28",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.fs.usda.gov/r09/chippewa/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "the page in a browser ('Get Map')",
+    "page": "https://www.fs.usda.gov/chippewa",
+    "posted": "March 19, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-10-28",
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r09/chippewa",
@@ -7456,7 +7475,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 5
+   "ver": 5,
+   "browser_checked": "2026-10-28"
   },
   "US-4491": {
    "n": "Superior National Forest",
@@ -7464,9 +7484,18 @@
    "page": "https://www.fs.usda.gov/superior",
    "checked": "2026-10-28",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.fs.usda.gov/r09/superior/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "the page in a browser ('Get a Map')",
+    "page": "https://www.fs.usda.gov/superior",
+    "posted": "May 20, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-10-28",
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r09/superior",
@@ -7478,7 +7507,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 5
+   "ver": 5,
+   "browser_checked": "2026-10-28"
   },
   "US-4780": {
    "n": "Badoura State Forest",
@@ -11706,19 +11736,223 @@
     }
    ],
    "ver": 5
+  },
+  "US-9387": {
+   "n": "Luce Line State Trail",
+   "t": "State Trail",
+   "page": "https://www.dnr.state.mn.us/state_trails/luce_line/index.html",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://files.dnr.state.mn.us/maps/state_trails/luce_line.pdf; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://files.dnr.state.mn.us/maps/state_trails/luce_line_winter_bikin)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
+   },
+   "rules": {
+    "url": "https://www.dnr.state.mn.us/state-trails/rules.html",
+    "how": "a link on the park's page ('Rules, uses etiquette')",
+    "status": "ok"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://files.dnr.state.mn.us/maps/state_trails/luce_line.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (files.dnr.state.mn.us)"
+    },
+    {
+     "url": "https://files.dnr.state.mn.us/maps/state_trails/luce_line_winter_biking.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('winter biking map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (files.dnr.state.mn.us)"
+    }
+   ],
+   "ver": 5
+  },
+  "US-9388": {
+   "n": "Glacial Lakes State Trail",
+   "t": "State Trail",
+   "page": "https://www.dnr.state.mn.us/state_trails/glacial_lakes/index.html",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://files.dnr.state.mn.us/maps/state_trails/glacial_lakes.pdf; rest https://mobile-maps-files.dnr.state.mn.us/file/State_Trails/Glacial%20)",
+    "how": "a link on the park's page ('Download map')"
+   },
+   "rules": {
+    "url": "https://www.dnr.state.mn.us/state-trails/rules.html",
+    "how": "a link on the park's page ('Rules, uses etiquette')",
+    "status": "ok"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://files.dnr.state.mn.us/maps/state_trails/glacial_lakes.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Download map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (files.dnr.state.mn.us)"
+    },
+    {
+     "url": "https://mobile-maps-files.dnr.state.mn.us/file/State_Trails/Glacial%20Lakes%20GEO.pdf",
+     "status": "rest",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Download map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (mobile-maps-files.dnr.state.mn.us)"
+    }
+   ],
+   "ver": 5
+  },
+  "US-9389": {
+   "n": "Central Lakes State Trail",
+   "t": "State Trail",
+   "page": "https://www.dnr.state.mn.us/state_trails/central_lakes/index.html",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://files.dnr.state.mn.us/maps/state_trails/central_lakes.pdf; rest https://mobile-maps-files.dnr.state.mn.us/file/State_Trails/Central%20)",
+    "how": "a link on the park's page ('Download map')"
+   },
+   "rules": {
+    "url": "https://www.dnr.state.mn.us/state-trails/rules.html",
+    "how": "a link on the park's page ('Rules, uses etiquette')",
+    "status": "ok"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://files.dnr.state.mn.us/maps/state_trails/central_lakes.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Download map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (files.dnr.state.mn.us)"
+    },
+    {
+     "url": "https://mobile-maps-files.dnr.state.mn.us/file/State_Trails/Central%20Lakes%20GEO.pdf",
+     "status": "rest",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Download map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (mobile-maps-files.dnr.state.mn.us)"
+    }
+   ],
+   "ver": 5
+  },
+  "US-9390": {
+   "n": "Williard Munger State Trail",
+   "t": "State Trail",
+   "page": "https://www.dnr.state.mn.us/state_trails/willard_munger/index.html",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://files.dnr.state.mn.us/maps/state_trails/munger_alex.pdf; rest https://mobile-maps-files.dnr.state.mn.us/file/State_Trails/Munger_Ale)",
+    "how": "a link on the park's page ('Download map')"
+   },
+   "rules": {
+    "url": "https://www.dnr.state.mn.us/state-trails/rules.html",
+    "how": "a link on the park's page ('Rules, uses etiquette')",
+    "status": "ok"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://files.dnr.state.mn.us/maps/state_trails/munger_alex.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Download map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (files.dnr.state.mn.us)"
+    },
+    {
+     "url": "https://mobile-maps-files.dnr.state.mn.us/file/State_Trails/Munger_Alex%20Laveau%20GEO.pdf",
+     "status": "rest",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Download map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (mobile-maps-files.dnr.state.mn.us)"
+    }
+   ],
+   "ver": 5
   }
  },
  "read": "2026-10-28",
  "counts": {
-  "parks": 294,
-  "map ok": 26,
-  "map found by the bot": 18,
+  "parks": 298,
+  "map ok": 29,
+  "map found by the bot": 21,
   "date on the map": 1,
-  "posted date only": 7,
+  "posted date only": 10,
   "date unknown": 18,
-  "no map": 268,
-  "rules ok": 29,
-  "needs browser": 3,
+  "no map": 269,
+  "rules ok": 33,
+  "needs browser": 0,
   "handover hints": 0,
   "runs hints": 2,
   "host resting / robots": 0,

@@ -1,0 +1,5613 @@
+{
+ "area": "US-PA",
+ "about": "Official map + rules page + who runs it, per park (documents bot). Nothing here reaches a card until chat 8 grades it.",
+ "parks": {
+  "US-0027": {
+   "n": "Gettysburg National Military Park",
+   "t": "National Military Park",
+   "page": "https://www.nps.gov/gett/index.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/gett/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "May 14, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/gett/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-0511": {
+   "n": "Erie National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/erie",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.fws.gov/refuge/erie/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/erie/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-0512": {
+   "n": "John Heinz National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/john-heinz-tinicum",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.fws.gov/refuge/john-heinz-tinicum/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/john-heinz-tinicum/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-0608": {
+   "n": "Ohio River Islands National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/ohio_river_islands/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.fws.gov/refuge/ohio-river-islands/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/ohio-river-islands/visit-us/rules-policies",
+    "how": "a link on the park's page ('Rules Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-0619": {
+   "n": "Allegheny National Forest",
+   "t": "National Forest",
+   "page": "https://www.fs.usda.gov/allegheny/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r09/allegheny",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 5
+  },
+  "US-0620": {
+   "n": "Beechwood Farms State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-0621": {
+   "n": "Todd Sanctuary State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "http://www.aswp.org/pages/todd",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.aswp.org/wp-content/uploads/2024/10/Todd-map-2022.pdf; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.aswp.org/wp-content/uploads/2025/11/TNR-map-2025-1.pdf)",
+    "how": "a link on the park's page ('download the Todd Trail Map pdf')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.aswp.org/wp-content/uploads/2024/10/Todd-map-2022.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('download the Todd Trail Map pdf')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://www.aswp.org/wp-content/uploads/2025/11/TNR-map-2025-1.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": "2025-11-19",
+     "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+     "how": "a link on the park's page ('Download the Todd trail map and trail descriptions')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
+  },
+  "US-0622": {
+   "n": "Bear Run State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://waterlandlife.org/land-conservation/explore-our-properties/bear-run-nature-reserve/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://waterlandlife.org/wp-content/uploads/2021/07/2025_Bear-Run-Maps_Andrew-Zadnik.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Bear Run Nature Reserve Map')",
+    "posted": "2021-07",
+    "posted_how": "posted: the upload folder in the address",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 1,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-0623": {
+   "n": "Powdermill State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://carnegiemnh.org/visit-powdermill/",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://carnegiemnh.org/explore/powdermill-hiking-trails-map/",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Hiking Trail Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://carnegiemnh.org/visitor-policies/",
+    "how": "a link on the park's page ('Visitor Policies')",
+    "status": "ok"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-0624": {
+   "n": "Roaring Run State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://www.dcnr.pa.gov/StateForests/FindAForest/Forbes/Pages/Wild_NaturalAreas.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.pa.gov/agencies/dcnr/conservation/geology/digital-base-map; opened, a page that does not name this park (a generic agency page is not its map) https://www.pa.gov/agencies/dcnr/interactive-maps)",
+    "how": "a link on the park's page ('Digital Base Maps')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.pa.gov/agencies/dcnr/conservation/geology/digital-base-maps",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Digital Base Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (pa.gov)"
+    },
+    {
+     "url": "https://www.pa.gov/agencies/dcnr/interactive-maps",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Interactive Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (pa.gov)"
+    }
+   ],
+   "ver": 5
+  },
+  "US-0625": {
+   "n": "Mount Davis State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://www.dcnr.pa.gov/StateForests/FindAForest/Forbes/Pages/Wild_NaturalAreas.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.pa.gov/agencies/dcnr/conservation/geology/digital-base-map; opened, a page that does not name this park (a generic agency page is not its map) https://www.pa.gov/agencies/dcnr/interactive-maps)",
+    "how": "a link on the park's page ('Digital Base Maps')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.pa.gov/agencies/dcnr/conservation/geology/digital-base-maps",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Digital Base Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (pa.gov)"
+    },
+    {
+     "url": "https://www.pa.gov/agencies/dcnr/interactive-maps",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Interactive Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (pa.gov)"
+    }
+   ],
+   "ver": 5
+  },
+  "US-0626": {
+   "n": "Sweet Root State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://www.dcnr.pa.gov/StateForests/FindAForest/Buchanan/Pages/Wild_NaturalAreas.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.pa.gov/agencies/dcnr/conservation/geology/digital-base-map; opened, a page that does not name this park (a generic agency page is not its map) https://www.pa.gov/agencies/dcnr/interactive-maps)",
+    "how": "a link on the park's page ('Digital Base Maps')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.pa.gov/agencies/dcnr/conservation/geology/digital-base-maps",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Digital Base Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (pa.gov)"
+    },
+    {
+     "url": "https://www.pa.gov/agencies/dcnr/interactive-maps",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Interactive Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (pa.gov)"
+    }
+   ],
+   "ver": 5
+  },
+  "US-0627": {
+   "n": "Pine Ridge State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://www.dcnr.pa.gov/StateForests/FindAForest/Buchanan/Pages/Wild_NaturalAreas.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.pa.gov/agencies/dcnr/conservation/geology/digital-base-map; opened, a page that does not name this park (a generic agency page is not its map) https://www.pa.gov/agencies/dcnr/interactive-maps)",
+    "how": "a link on the park's page ('Digital Base Maps')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.pa.gov/agencies/dcnr/conservation/geology/digital-base-maps",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Digital Base Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (pa.gov)"
+    },
+    {
+     "url": "https://www.pa.gov/agencies/dcnr/interactive-maps",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Interactive Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (pa.gov)"
+    }
+   ],
+   "ver": 5
+  },
+  "US-0628": {
+   "n": "Charles F. Lewis State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://www.dcnr.pa.gov/StateForests/FindAForest/Gallitzin/Pages/Wild_NaturalAreas.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.pa.gov/agencies/dcnr/conservation/geology/digital-base-map; opened, a page that does not name this park (a generic agency page is not its map) https://www.pa.gov/agencies/dcnr/interactive-maps)",
+    "how": "a link on the park's page ('Digital Base Maps')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.pa.gov/agencies/dcnr/conservation/geology/digital-base-maps",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Digital Base Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (pa.gov)"
+    },
+    {
+     "url": "https://www.pa.gov/agencies/dcnr/interactive-maps",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Interactive Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (pa.gov)"
+    }
+   ],
+   "ver": 5
+  },
+  "US-0681": {
+   "n": "Upper Delaware National Wild and Scenic River",
+   "t": "National Wild and Scenic River",
+   "page": "https://www.nps.gov/upde/index.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/upde/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Maps')",
+    "posted": "May 13, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/upde/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-0684": {
+   "n": "Lower Delaware National Wild and Scenic River",
+   "t": "National Wild and Scenic River",
+   "page": "https://www.nps.gov/lode/index.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/lode/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "April 1, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/lode/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-0704": {
+   "n": "Fort Necessity National Battlefield",
+   "t": "National Battlefield",
+   "page": "https://www.nps.gov/fone/index.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/fone/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "February 24, 2022",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/fone/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-0733": {
+   "n": "First State National Historical Park",
+   "t": "National Historical Park",
+   "page": "https://www.nps.gov/frst/index.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/frst/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "March 10, 2016",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/frst/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-0738": {
+   "n": "Independence National Historical Park",
+   "t": "National Historical Park",
+   "page": "https://www.nps.gov/inde/index.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/inde/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "September 9, 2021",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/inde/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-0761": {
+   "n": "Valley Forge National Historical Park",
+   "t": "National Historical Park",
+   "page": "https://www.nps.gov/vafo/index.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/vafo/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "September 10, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/vafo/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-0774": {
+   "n": "Flight 93 National Memorial",
+   "t": "National Memorial",
+   "page": "https://www.nps.gov/flni/index.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/flni/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "August 29, 2020",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/flni/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-0781": {
+   "n": "Johnstown Flood National Memorial",
+   "t": "National Memorial",
+   "page": "https://www.nps.gov/jofl/index.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/jofl/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "January 11, 2023",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/jofl/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-0790": {
+   "n": "Thaddeus Kosciuszko National Memorial",
+   "t": "National Memorial",
+   "page": "https://www.nps.gov/thko/index.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/thko/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "May 20, 2021",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/thko/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-0798": {
+   "n": "Allegheny Portage Railroad National Historic Site",
+   "t": "National Historic Site",
+   "page": "https://www.nps.gov/alpo/index.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/alpo/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "January 20, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/alpo/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-0809": {
+   "n": "Edgar Allan Poe National Historic Site",
+   "t": "National Historic Site",
+   "page": "https://www.nps.gov/edal/index.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/edal/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "April 22, 2016",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/edal/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-0810": {
+   "n": "Eisenhower National Historic Site",
+   "t": "National Historic Site",
+   "page": "https://www.nps.gov/eise/index.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/eise/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "May 26, 2023",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/eise/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-0827": {
+   "n": "Friendship Hill National Historic Site",
+   "t": "National Historic Site",
+   "page": "https://www.nps.gov/frhi/index.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/frhi/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "March 9, 2016",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/frhi/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-0834": {
+   "n": "Hopewell Furnace National Historic Site",
+   "t": "National Historic Site",
+   "page": "https://www.nps.gov/hofu/index.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/hofu/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "February 4, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/hofu/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-0864": {
+   "n": "Steamtown National Historic Site",
+   "t": "National Historic Site",
+   "page": "https://www.nps.gov/stea/index.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/stea/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "May 23, 2024",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/stea/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-0898": {
+   "n": "White Clay Creek National Wild and Scenic River",
+   "t": "National Wild and Scenic River",
+   "page": "https://www.nps.gov/articles/000/white-clay-creek-wild-and-scenic-river.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-10802": {
+   "n": "Gloria Dei Church National Historic Site",
+   "t": "National Historic Site",
+   "page": "https://www.nps.gov/glde/index.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/glde/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "March 10, 2016",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/glde/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-11247": {
+   "n": "PA 332 State Game Land",
+   "t": "State Game Land",
+   "page": "https://www.pgc.pa.gov/HuntTrap/StateGameLands/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (pgc.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 5
+  },
+  "US-11824": {
+   "n": "PA 336 State Game Land",
+   "t": "State Game Land",
+   "page": "https://www.pgc.pa.gov/HuntTrap/StateGameLands/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (pgc.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 5
+  },
+  "US-11977": {
+   "n": "PA 339 State Game Land",
+   "t": "State Game Land",
+   "page": "https://www.pgc.pa.gov/HuntTrap/StateGameLands/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (pgc.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 5
+  },
+  "US-12234": {
+   "n": "Allegheny National Wild & Scenic River",
+   "t": "National Wild & Scenic River",
+   "page": "https://www.rivers.gov/rivers/river/allegheny",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.fws.gov/rivers/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('System-wide Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (fws.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (rivers.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-12235": {
+   "n": "Clarion National Wild and Scenic River",
+   "t": "National Wild and Scenic River",
+   "page": "https://www.rivers.gov/carp/river/clarion",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.fws.gov/rivers/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('System-wide Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (fws.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (rivers.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-12664": {
+   "n": "Pine Creek Rail Trail State Trail",
+   "t": "State Trail",
+   "page": "https://elibrary.dcnr.pa.gov/GetDocument?docId=3565889&DocName=D12%20D16%20Tiadaghton%20Tioga%20Pine%20Creek%20Rail%20Trail%20Map%20Brochure.pdf",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (elibrary.dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-13079": {
+   "n": "PA 303 State Game Land",
+   "t": "State Game Land",
+   "page": "https://www.pa.gov/agencies/pgc/huntingandtrapping/where-to-hunt/state-game-lands",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-; opened, a page that does not name this park (a generic agency page is not its map) https://www.pa.gov/agencies/pgc/huntingandtrapping/where-to-hunt/state)",
+    "how": "a link on the park's page ('Download Game Lands Special Use Permit Application')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-and-routes/state%20game%20lands%20special%20use%20application.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Download Game Lands Special Use Permit Application')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://www.pa.gov/agencies/pgc/huntingandtrapping/where-to-hunt/state-game-land-maps",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('State Game Lands Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
+  },
+  "US-13201": {
+   "n": "Laurel Caverns State Park",
+   "t": "State Park",
+   "page": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/laurel-caverns-state-park",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/laurel-caverns-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1327": {
+   "n": "Allegheny Islands State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/AlleghenyIslandsStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.pa.gov/agencies/dcnr/conservation/geology/digital-base-map; opened, a page that does not name this park (a generic agency page is not its map) https://www.pa.gov/agencies/dcnr/interactive-maps)",
+    "how": "a link on the park's page ('Digital Base Maps')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.pa.gov/agencies/dcnr/conservation/geology/digital-base-maps",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Digital Base Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (pa.gov)"
+    },
+    {
+     "url": "https://www.pa.gov/agencies/dcnr/interactive-maps",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Interactive Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (pa.gov)"
+    }
+   ],
+   "ver": 5
+  },
+  "US-1328": {
+   "n": "Archbald Pothole State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/ArchbaldPotholeStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/archbald-pothole-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1329": {
+   "n": "Bald Eagle State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/BaldEagleStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/bald-eagle-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1330": {
+   "n": "Beltzville State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/BeltzvilleStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/beltzville-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1331": {
+   "n": "Bendigo State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/BendigoStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/bendigo-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1332": {
+   "n": "Benjamin Rush State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/BenjaminRushStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/benjamin-rush-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1333": {
+   "n": "Big Pocono State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/BigPoconoStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/big-pocono-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1334": {
+   "n": "Black Moshannon State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/BlackMoshannonStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/black-moshannon-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1335": {
+   "n": "Blue Knob State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/BlueKnobStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/blue-knob-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1336": {
+   "n": "Buchanan's Birthplace State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/BuchanansBirthplaceStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/buchanans-birthplace-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1337": {
+   "n": "Caledonia State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/CaledoniaStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/caledonia-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1338": {
+   "n": "Canoe Creek State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/CanoeCreekStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/canoe-creek-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1339": {
+   "n": "Chapman State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/ChapmanStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/chapman-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1340": {
+   "n": "Cherry Springs State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/CherrySpringsStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/cherry-springs-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1341": {
+   "n": "Clear Creek State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/ClearCreekStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/clear-creek-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1342": {
+   "n": "Codorus State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/CodorusStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/codorus-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1343": {
+   "n": "Colonel Denning State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/ColonelDenningStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/colonel-denning-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1344": {
+   "n": "Colton Point State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/ColtonPointStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/colton-point-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1345": {
+   "n": "Cook Forest State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/CookForestStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/cook-forest-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1346": {
+   "n": "Cowans Gap State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/CowansGapStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/cowans-gap-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1347": {
+   "n": "Delaware Canal State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/DelawareCanalStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/delaware-canal-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1348": {
+   "n": "Denton Hill State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/DentonHillStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/denton-hill-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1349": {
+   "n": "Elk State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/ElkStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/elk-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1350": {
+   "n": "Erie Bluffs State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/ErieBluffsStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/erie-bluffs-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1351": {
+   "n": "Evansburg State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/EvansburgStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/evansburg-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1352": {
+   "n": "Fort Washington State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/FortWashingtonStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://elibrary.dcnr.pa.gov/PDFProvider.ashx?PromptToSave=False&Size=4135995&ViewerMode=2&action=PDFStream&docID=1753400&docName=FOWA_ParkGuide&nativeExt=pdf&overlay=0&revision=0",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2024-05-10",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 6,
+    "via": "same government (elibrary.dcnr.pa.gov)",
+    "kind_note": "combined map: covers 6 units",
+    "date_label": "2024"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1353": {
+   "n": "Fowlers Hollow State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/FowlersHollowStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/fowlers-hollow-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-13538": {
+   "n": "PA 319 State Game Land",
+   "t": "State Game Land",
+   "page": "https://www.pa.gov/agencies/pgc/huntingandtrapping/where-to-hunt/state-game-lands",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-; opened, a page that does not name this park (a generic agency page is not its map) https://www.pa.gov/agencies/pgc/huntingandtrapping/where-to-hunt/state)",
+    "how": "a link on the park's page ('Download Game Lands Special Use Permit Application')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/pgc/documents/habitat-management/sgl-maps-and-routes/state%20game%20lands%20special%20use%20application.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Download Game Lands Special Use Permit Application')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://www.pa.gov/agencies/pgc/huntingandtrapping/where-to-hunt/state-game-land-maps",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('State Game Lands Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 5
+  },
+  "US-1354": {
+   "n": "Frances Slocum State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/FrancesSlocumStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/frances-slocum-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1355": {
+   "n": "French Creek State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/FrenchCreekStatePark/Pages/Maps.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/french-creek-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "on file, checked by a person or the link harvester (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1356": {
+   "n": "Gifford Pinchot State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/GiffordPinchotStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://elibrary.dcnr.pa.gov/PDFProvider.ashx?PromptToSave=False&Size=1854693&ViewerMode=2&action=PDFStream&chksum=&docID=1737648&docName=GIPI_CampgroundMap&nativeExt=pdf&overlay=0&revision=3",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 4,
+    "via": "same government (elibrary.dcnr.pa.gov)",
+    "kind_note": "combined map: covers 4 units",
+    "card_note": "Campground map: the agency has no park map.",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "card_note": "Campground map: the agency has no park map.",
+   "ver": 5
+  },
+  "US-1357": {
+   "n": "Gouldsboro State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/GouldsboroStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/gouldsboro-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1358": {
+   "n": "Greenwood Furnace State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/GreenwoodFurnaceStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/greenwood-furnace-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1359": {
+   "n": "Hickory Run State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/HickoryRunStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/hickory-run-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1360": {
+   "n": "Hillman State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/HillmanStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/hillman-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1361": {
+   "n": "Hills Creek State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/HillsCreekStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/hills-creek-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1362": {
+   "n": "Hyner Run State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/HynerRunStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/hyner-run-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1363": {
+   "n": "Hyner View State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/HynerViewStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/hyner-view-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1364": {
+   "n": "Kettle Creek State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/KettleCreekStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/kettle-creek-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1365": {
+   "n": "Keystone State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/KeystoneStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/keystone-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1366": {
+   "n": "Kinzua Bridge State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/KinzuaBridgeStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/kinzua-bridge-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1367": {
+   "n": "Kooser State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/KooserStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/kooser-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1368": {
+   "n": "Lackawanna State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/LackawannaStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/lackawanna-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1369": {
+   "n": "Laurel Hill State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/LaurelHillStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/laurel-hill-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1370": {
+   "n": "Laurel Mountain State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/LaurelMountainStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/laurel-mountain-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1371": {
+   "n": "Laurel Ridge State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/LaurelRidgeStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/laurel-ridge-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1372": {
+   "n": "Laurel Summit State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/LaurelSummitStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/laurel-summit-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1373": {
+   "n": "Lehigh Gorge State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/LehighGorgeStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/lehigh-gorge-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1374": {
+   "n": "Leonard Harrison State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/LeonardHarrisonStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/leonard-harrison-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1375": {
+   "n": "Linn Run State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/LinnRunStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/linn-run-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1376": {
+   "n": "Little Buffalo State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/LittleBuffaloStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/little-buffalo-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1377": {
+   "n": "Little Pine State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/LittlePineStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/little-pine-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1378": {
+   "n": "Locust Lake State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/LocustLakeStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/locust-lake-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1379": {
+   "n": "Lyman Run State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/LymanRunStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/lyman-run-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1380": {
+   "n": "Marsh Creek State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/MarshCreekStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/marsh-creek-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1381": {
+   "n": "Maurice K Goddard State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/MauriceKGoddardStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/maurice-k-goddard-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1382": {
+   "n": "McCalls Dam State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/McCallsDamStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/mccalls-dam-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1383": {
+   "n": "McConnells Mill State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/McConnellsMillStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/mcconnells-mill-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1384": {
+   "n": "Memorial Lake State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/MemorialLakeStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/memorial-lake-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1385": {
+   "n": "Milton State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/MiltonStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/milton-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1386": {
+   "n": "Mont Alto State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/MontAltoStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/mont-alto-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1387": {
+   "n": "Moraine State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/MoraineStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/moraine-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1388": {
+   "n": "Mt. Pisgah State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/MountPisgahStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/mount-pisgah-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1389": {
+   "n": "Nescopeck State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/NescopeckStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/nescopeck-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1390": {
+   "n": "Neshaminy State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/NeshaminyStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/neshaminy-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1391": {
+   "n": "Nockamixon State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/NockamixonStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/nockamixon-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1392": {
+   "n": "Ohiopyle State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/OhiopyleStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/ohiopyle-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1393": {
+   "n": "Oil Creek State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/OilCreekStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/oil-creek-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1394": {
+   "n": "Ole Bull State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/OleBullStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/ole-bull-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1395": {
+   "n": "Parker Dam State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/ParkerDamStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/parker-dam-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1396": {
+   "n": "Patterson State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/PattersonStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/patterson-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1397": {
+   "n": "Penn-Roosevelt State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/Penn-RooseveltStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/penn-roosevelt-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1398": {
+   "n": "Pine Grove Furnace State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/PineGroveFurnaceStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/pine-grove-furnace-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1399": {
+   "n": "Poe Paddy State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/PoePaddyStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/poe-paddy-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1400": {
+   "n": "Poe Valley State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/PoeValleyStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/poe-valley-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1401": {
+   "n": "Point State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/PointStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/point-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1402": {
+   "n": "Presque Isle State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/PresqueIsleStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/presque-isle-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1403": {
+   "n": "Prince Gallitzin State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/PrinceGallitzinStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/prince-gallitzin-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1404": {
+   "n": "Promised Land State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/PromisedLandStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/promised-land-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1405": {
+   "n": "Prompton State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/PromptonStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/prompton-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1406": {
+   "n": "Prouty Place State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/ProutyPlaceStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://elibrary.dcnr.pa.gov/GetDocument?docId=1736597&DocName=sf-PUd15.pdf",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "",
+    "posted_how": "",
+    "names_park": false,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (elibrary.dcnr.pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (ok)",
+   "ver": 5
+  },
+  "US-1407": {
+   "n": "Pymatuning State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/PymatuningStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/pymatuning-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1408": {
+   "n": "Raymond B Winter State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/RaymondBWinterStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/raymond-b-winter-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1409": {
+   "n": "Raccoon Creek State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/RaccoonCreekStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/raccoon-creek-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [
+    "operated by the National Park Service"
+   ],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1410": {
+   "n": "Ralph Stover State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/RalphStoverStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/ralph-stover-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1411": {
+   "n": "Ravensburg State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/RavensburgStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/ravensburg-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1412": {
+   "n": "Reeds Gap State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/ReedsGapStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/reeds-gap-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1413": {
+   "n": "Ricketts Glen State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/RickettsGlenStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/ricketts-glen-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1414": {
+   "n": "Ridley Creek State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/RidleyCreekStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/ridley-creek-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1415": {
+   "n": "Ryerson Station State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/RyersonStationStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/ryerson-station-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1416": {
+   "n": "S B Elliott State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/SimonBElliottStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/simon-b-elliott-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1417": {
+   "n": "Salt Springs State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/SaltSpringsStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/salt-springs-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1418": {
+   "n": "Samuel S Lewis State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/SamuelSLewisStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/samuel-s-lewis-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1419": {
+   "n": "Sand Bridge State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/SandBridgeStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/sand-bridge-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1420": {
+   "n": "Shawnee State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/ShawneeStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/shawnee-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1421": {
+   "n": "Shikellamy State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/ShikellamyStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/shikellamy-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1422": {
+   "n": "Sinnemahoning State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/SinnemahoningStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/sinnemahoning-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1423": {
+   "n": "Sizerville State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/SizervilleStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/sizerville-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1424": {
+   "n": "Susquehanna State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/SusquehannaStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/susquehanna-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1425": {
+   "n": "Susquehannock State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/SusquehannockStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/susquehannock-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1426": {
+   "n": "Swatara State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/SwataraStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/swatara-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1427": {
+   "n": "Tobyhanna State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/TobyhannaStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/tobyhanna-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1428": {
+   "n": "Trough Creek State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/TroughCreekStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/trough-creek-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1429": {
+   "n": "Tuscarora State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/TuscaroraStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/tuscarora-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1430": {
+   "n": "Tyler State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/TylerStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/tyler-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1431": {
+   "n": "Upper Pine Bottom State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/UpperPineBottomStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.pa.gov/agencies/dcnr/conservation/geology/digital-base-map; opened, a page that does not name this park (a generic agency page is not its map) https://www.pa.gov/agencies/dcnr/interactive-maps)",
+    "how": "a link on the park's page ('Digital Base Maps')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.pa.gov/agencies/dcnr/conservation/geology/digital-base-maps",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Digital Base Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (pa.gov)"
+    },
+    {
+     "url": "https://www.pa.gov/agencies/dcnr/interactive-maps",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Interactive Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (pa.gov)"
+    }
+   ],
+   "ver": 5
+  },
+  "US-1432": {
+   "n": "Warriors' Path State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/WarriorsPathStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/warriors-path-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1433": {
+   "n": "Whipple Dam State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/WhippleDamStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/whipple-dam-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1434": {
+   "n": "Worlds End State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/WorldsEndStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/worlds-end-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-1435": {
+   "n": "Yellow Creek State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/YellowCreekStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/yellow-creek-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-3379": {
+   "n": "Delaware Water Gap National Recreation Area",
+   "t": "National Recreation Area",
+   "page": "https://www.nps.gov/dewa/index.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/dewa/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "July 23, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/dewa/learn/management/compendium.htm",
+    "how": "a link on the park's page ('Park Rules and Regulations')",
+    "status": "ok"
+   },
+   "agency": "National Park Service (NPS)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-4239": {
+   "n": "North Country Trail National Scenic Trail",
+   "t": "National Scenic Trail",
+   "page": "https://www.nps.gov/noco/index.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/noco/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "September 23, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/noco/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-4355": {
+   "n": "Big Spring State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/BigSpringStatePark/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/big-spring-state-park/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-4356": {
+   "n": "Boyd Big Tree State Preserve",
+   "t": "State Preserve",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/BoydBigTreePreserveConservationArea/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/boyd-big-tree-preserve-conservation-area/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-4357": {
+   "n": "Bucktail State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/BucktailStateParkNaturalArea/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/bucktail-state-natural-area/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-4358": {
+   "n": "Jacobsburg Environmental State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/JacobsburgEnvironmentalEducationCenter/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/jacobsburg-environmental-education-center/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-4359": {
+   "n": "Jennings Environmental State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/JenningsEnvironmentalEducationCenter/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/jennings-environmental-education-center/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-4360": {
+   "n": "Joseph E. Ibberson State Conservation Area",
+   "t": "State Conservation Area",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/JosephEIbbersonConservationArea/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/joseph-e-ibberson-conservation-area/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-4361": {
+   "n": "Kings Gap Environmental State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/KingsGapEnvironmentalEducationCenter/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/kings-gap-environmental-education-center/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-4362": {
+   "n": "Nolde Forest Environmental State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/NoldeForestEnvironmentalEducationCenter/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/nolde-forest-environmental-education-center/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-4363": {
+   "n": "Norristown Farm State Park",
+   "t": "State Park",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/NoldeForestEnvironmentalEducationCenter/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/fi)",
+    "how": "a link on the park's page ('Find Park Maps and Guides')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/nolde-forest-environmental-education-center/maps",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Find Park Maps and Guides')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (pa.gov)"
+    }
+   ],
+   "ver": 5
+  },
+  "US-4364": {
+   "n": "Varden Conservation Area",
+   "t": "Conservation Area",
+   "page": "https://www.dcnr.pa.gov/StateParks/FindAPark/VardenConservationArea/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/varden-conservation-area/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find Park Maps and Guides')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-4556": {
+   "n": "Appalachian Trail National Scenic Trail",
+   "t": "National Scenic Trail",
+   "page": "https://www.nps.gov/appa/index.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/appa/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Maps')",
+    "posted": "December 21, 2022",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/appa/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [
+    "is managed by the National Park Service"
+   ],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-4564": {
+   "n": "Potomac Heritage Trail National Scenic Trail",
+   "t": "National Scenic Trail",
+   "page": "https://www.nps.gov/pohe/index.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/pohe/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "September 15, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/pohe/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service (Potomac Heritage National Scenic Trail)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-4567": {
+   "n": "Captain John Smith Chesapeake National Historic Trail",
+   "t": "National Historic Trail",
+   "page": "https://www.nps.gov/cajo/planyourvisit/maps.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/cajo/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Maps')",
+    "posted": "November 14, 2024",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/cajo/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-4572": {
+   "n": "Lewis and Clark National Historic Trail",
+   "t": "National Historic Trail",
+   "page": "https://www.nps.gov/lecl/index.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/lecl/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "August 5, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/lecl/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-4582": {
+   "n": "Washington-Rochambeau Revolutionary Route National Historic Trail",
+   "t": "National Historic Trail",
+   "page": "https://www.nps.gov/waro/index.htm",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.nps.gov/waro/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Trail Map')",
+    "posted": "June 16, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/waro/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-5462": {
+   "n": "Bald Eagle State Forest",
+   "t": "State Forest",
+   "page": "https://www.dcnr.pa.gov/StateForests/FindAForest/BaldEagle/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-forests/find-a-forest/bald-eagle/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find a Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-5463": {
+   "n": "Buchanan State Forest",
+   "t": "State Forest",
+   "page": "https://www.dcnr.pa.gov/StateForests/FindAForest/Buchanan/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.pa.gov/agencies/dcnr/conservation/geology/digital-base-map; opened, a page that does not name this park (a generic agency page is not its map) https://www.pa.gov/agencies/dcnr/interactive-maps)",
+    "how": "a link on the park's page ('Digital Base Maps')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.pa.gov/agencies/dcnr/conservation/geology/digital-base-maps",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Digital Base Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (pa.gov)"
+    },
+    {
+     "url": "https://www.pa.gov/agencies/dcnr/interactive-maps",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Interactive Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-28",
+     "covers": 0,
+     "via": "linked from the agency page (pa.gov)"
+    }
+   ],
+   "ver": 5
+  },
+  "US-5464": {
+   "n": "Clear Creek State Forest",
+   "t": "State Forest",
+   "page": "https://www.dcnr.pa.gov/StateForests/FindAForest/ClearCreek/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-forests/find-a-forest/clear-creek/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find a Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-5465": {
+   "n": "Cornplanter State Forest",
+   "t": "State Forest",
+   "page": "https://www.dcnr.pa.gov/StateForests/FindAForest/Cornplanter/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-forests/find-a-forest/cornplanter/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find a Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-5466": {
+   "n": "Delaware State Forest",
+   "t": "State Forest",
+   "page": "https://www.dcnr.pa.gov/StateForests/FindAForest/Delaware/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-forests/find-a-forest/delaware/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find a Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-5467": {
+   "n": "Elk State Forest",
+   "t": "State Forest",
+   "page": "https://www.dcnr.pa.gov/StateForests/FindAForest/Elk/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-forests/find-a-forest/elk/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find a Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-5468": {
+   "n": "Forbes State Forest",
+   "t": "State Forest",
+   "page": "https://www.dcnr.pa.gov/StateForests/FindAForest/Forbes/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-forests/find-a-forest/forbes/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find a Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-5469": {
+   "n": "Gallitzin State Forest",
+   "t": "State Forest",
+   "page": "https://www.dcnr.pa.gov/StateForests/FindAForest/Gallitzin/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-forests/find-a-forest/gallitzin/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find a Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  },
+  "US-5470": {
+   "n": "Loyalsock State Forest",
+   "t": "State Forest",
+   "page": "https://www.dcnr.pa.gov/StateForests/FindAForest/Loyalsock/Pages/default.aspx",
+   "checked": "2026-10-28",
+   "map": {
+    "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-forests/find-a-forest/loyalsock/maps",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-28",
+    "how": "a link on the park's page ('Find a Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-28",
+    "covers": 0,
+    "via": "linked from the agency page (pa.gov)",
+    "date_label": "date unknown"
+   },
+   "rules": null,
+   "agency": "government agency (dcnr.pa.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 5
+  }
+ },
+ "read": "2026-10-28",
+ "counts": {
+  "parks": 175,
+  "map ok": 156,
+  "map found by the bot": 125,
+  "date on the map": 1,
+  "posted date only": 25,
+  "date unknown": 130,
+  "no map": 19,
+  "rules ok": 29,
+  "needs browser": 5,
+  "handover hints": 0,
+  "runs hints": 2,
+  "host resting / robots": 0,
+  "map names the park": 155,
+  "region overview only": 0
+ }
+}
