@@ -1,15 +1,15 @@
 # Closures super-bot: review (2026-10-29; RULE SHEET D; compared quietly, nothing on cards until GO)
 
-Run: 2026-10-29T02:29Z · requests 105 · pages 82 · PDFs 17 · sentences read 399 · unmatched 131 · look-alikes skipped 290 · sources failed 1
+Run: 2026-10-29T04:34Z · requests 105 · pages 82 · PDFs 17 · sentences read 401 · unmatched 131 · look-alikes skipped 243 · sources failed 1
 
-## Kentucky gate: **FAIL** — 15 of 32 of Kentucky's own reader's items found here on the same park (46%); 43 only here
+## Kentucky gate: **FAIL** — 15 of 32 of Kentucky's own reader's items found here on the same park (46%); 42 only here
 
 ## Sources that failed this run
 
 - US-KY ky-parks-api: rest (host resting after an earlier strike; last items kept) (https://parks.ky.gov/api/default/alerts?$top=100)
 
-## US-KY (done, read 2026-10-29T02:29)
-whole 3 · part 18 · hunt 16 · seasonal 0 · note 23 · taken_down 0 · 0 banners
+## US-KY (done, read 2026-10-29T04:34)
+whole 3 · part 19 · hunt 16 · seasonal 0 · note 21 · taken_down 0 · 0 banners
 
 Sources that failed (last items kept): ky-parks-api (rest (host resting after an earlier strike; last items kept))
 
@@ -19,9 +19,39 @@ KDFWR pages with no hunt item (the real wording, TEST=1): ky-wma-us-10121: …8.
 
 Dropped as another state's place (multi-state forest): 31 notices
 
-Unmatched (two parks or none; for chat 8): AJ Jolly Lake is closed for 2026 due to repairs for all recreational activities [ky-fw-alerts] = no POTA park: A.J. Jolly Lake is a Campbell County park lake; Laurel Bridge Boat Ramp on Laurel River Lake Temporarily Closed [ky-fw-alerts] = not tied: Laurel River Lake lies inside Daniel Boone NF (US-4484) but is not its own park; the ramp's land owner is not known here (NOT SURE = kept out); Sympson Lake will be closed to all boating activity in 2026 [ky-fw-alerts] = no POTA park: Sympson Lake is a KDFWR lake (Nelson County); West Point Boat Ramp Closure [ky-fw-alerts] = no POTA park: the West Point ramp is a KDFWR Ohio River ramp; 1. Cave Run Lake [ky-fw-quota]; ARCHERY SEASON [ky-fw-quota]; BALLARD WMA - Ballard County [ky-fw-quota]; BLIND RESTRICTIONS [ky-fw-quota]; BOATWRIGHT WMA - Ballard Co​unty [ky-fw-quota]; Big Rivers WMA (noon Central to 5 p.m.) in Union County and at the Roberts Tract [ky-fw-quota]; CROSSBOW SEASON [ky-fw-quota]; Clay WMA & Yellowbank WMA [ky-fw-quota]; DOUG TRAVIS WMA - Carlisle & Hickman Counties [ky-fw-quota]; Day of the hunt requirements [ky-fw-quota]; Defined Terms [ky-fw-quota]; JENNY HOLE QUOTA HUNTS: [ky-fw-quota]; LIGHT GOOSE CONSERVATION ORDER SEASON [ky-fw-quota]; MODERN GUN EQUIPMENT [ky-fw-quota]; Public Land Closures [ky-fw-quota]; River along the Illinois shore to [ky-fw-quota]; SHOT SIZE, TYPE, SHOT SHELL LENGTH RESTRICTIONS [ky-fw-quota]; Sandhill Crane Quota Hunts [ky-fw-quota]; Sauerheber, Crenshaw and Duncan II Units [ky-fw-quota]; Special WMA Regulations [ky-fw-quota]; Yea​r-round Wildlife ​Feeding Exemptions: [ky-fw-quota]; are open every Saturday and Sunday in January. [ky-fw-quota]; no more than 4 persons shall occupy a single hunt site at any one time; and [ky-fw-quota]; ​3. West Kentucky WMA [ky-fw-quota]; ​​Waterfowl Zones [ky-fw-quota]; Accessible/ Mobility-Impaired WMA | [ky-fw-public-land]
+Unmatched (two parks or none; for chat 11 to judge):
+- AJ Jolly Lake is closed for 2026 due to repairs for all recreational activities [ky-fw-alerts] = no POTA park: A.J. Jolly Lake is a Campbell County park lake · no park name shares a word
+- Laurel Bridge Boat Ramp on Laurel River Lake Temporarily Closed [ky-fw-alerts] = not tied: Laurel River Lake lies inside Daniel Boone NF (US-4484) but is not its own park; the ramp's land owner is not known here (NOT SURE = kept out) · nearest park name: Ed Mabry-Laurel Gorge Wildlife Management Area (US-3811)
+- Sympson Lake will be closed to all boating activity in 2026 [ky-fw-alerts] = no POTA park: Sympson Lake is a KDFWR lake (Nelson County) · no park name shares a word
+- West Point Boat Ramp Closure [ky-fw-alerts] = no POTA park: the West Point ramp is a KDFWR Ohio River ramp · no park name shares a word
+- 1. Cave Run Lake [ky-fw-quota] · nearest park name: Mammoth Cave National Park (US-0050)
+- ARCHERY SEASON [ky-fw-quota] · no park name shares a word
+- BALLARD WMA - Ballard County [ky-fw-quota] · nearest park name: Ballard Wildlife Management Area (US-3793)
+- BLIND RESTRICTIONS [ky-fw-quota] · no park name shares a word
+- BOATWRIGHT WMA - Ballard Co​unty [ky-fw-quota] · nearest park name: Ballard Wildlife Management Area (US-3793)
+- Big Rivers WMA (noon Central to 5 p.m.) in Union County and at the Roberts Tract [ky-fw-quota] · nearest park name: Big Rivers Wildlife Management Area (US-3796)
+- CROSSBOW SEASON [ky-fw-quota] · no park name shares a word
+- Clay WMA & Yellowbank WMA [ky-fw-quota] · nearest park name: Yellowbank Wildlife Management Area (US-3840)
+- DOUG TRAVIS WMA - Carlisle & Hickman Counties [ky-fw-quota] · nearest park name: Doug Travis Wildlife Management Area (US-3808)
+- Day of the hunt requirements [ky-fw-quota] · no park name shares a word
+- Defined Terms [ky-fw-quota] · no park name shares a word
+- JENNY HOLE QUOTA HUNTS: [ky-fw-quota] · nearest park name: Jenny Wiley State Park (US-1281)
+- LIGHT GOOSE CONSERVATION ORDER SEASON [ky-fw-quota] · no park name shares a word
+- MODERN GUN EQUIPMENT [ky-fw-quota] · no park name shares a word
+- Public Land Closures [ky-fw-quota] · nearest park name: Land Between the Lakes National Recreation Area (US-3792)
+- River along the Illinois shore to [ky-fw-quota] · nearest park name: South Shore Wildlife Management Area (US-3831)
+- SHOT SIZE, TYPE, SHOT SHELL LENGTH RESTRICTIONS [ky-fw-quota] · no park name shares a word
+- Sandhill Crane Quota Hunts [ky-fw-quota] · no park name shares a word
+- Sauerheber, Crenshaw and Duncan II Units [ky-fw-quota] · no park name shares a word
+- Special WMA Regulations [ky-fw-quota] · no park name shares a word
+- Yea​r-round Wildlife ​Feeding Exemptions: [ky-fw-quota] · no park name shares a word
+- are open every Saturday and Sunday in January. [ky-fw-quota] · no park name shares a word
+- no more than 4 persons shall occupy a single hunt site at any one time; and [ky-fw-quota] · no park name shares a word
+- ​3. West Kentucky WMA [ky-fw-quota] · no park name shares a word
+- ​​Waterfowl Zones [ky-fw-quota] · no park name shares a word
+- Accessible/ Mobility-Impaired WMA | [ky-fw-public-land] · no park name shares a word
 
-### Side-by-side vs Kentucky's own reader (kpc_park_alerts.py + hc-): matched 15 · only here 43 · only there 17
+### Side-by-side vs Kentucky's own reader (kpc_park_alerts.py + hc-): matched 15 · only here 42 · only there 17
 
 - ONLY THERE: US-11181 pa-fs-tornado-damaged-area-closure-london-pulaski-counties-US-11181: Tornado Damaged Area Closure in London, Pulaski counties — Entering or occupying any portion of the 
 - ONLY THERE: US-11181 pa-fs-red-river-gorge-suspension-bridge-impassable-US-11181: Red River Gorge Suspension Bridge Impassable — The suspension footbridge near KY 715 in the Red Rive
@@ -53,7 +83,6 @@ Unmatched (two parks or none; for chat 8): AJ Jolly Lake is closed for 2026 due 
 - ONLY HERE: US-10170 [note] "Area is closed to all hunting, except for the fall Zilpo-Twin Knobs Mobility-Impaired Quota Hunt."
 - ONLY HERE: US-10171 [note] "This area is only open during the quota hunt on the second Saturday in December during even-numbere
 - ONLY HERE: US-10171 [note] "Area is closed to all hunting, except for the fall Zilpo-Twin Knobs Mobility-Impaired Quota Hunt."
-- ONLY HERE: US-12083 [note] "No camping, horseback riding, ATV/UTVs, target shooting, wildlife baiting, or commercial guiding ar
 - ONLY HERE: US-12083 [part] "Temporary Closed Map (PDF)"
 - ONLY HERE: US-1258 [note] "Grayson Lake WMA: Camp Webb is closed to all hunting."
 - ONLY HERE: US-1258 [part] "The following portions of the lake are closed to all waterfowl hunting:"
@@ -63,8 +92,9 @@ Unmatched (two parks or none; for chat 8): AJ Jolly Lake is closed for 2026 due 
 - ONLY HERE: US-3792 [part] "Road 172-C is temporarily closed to Jones Creek boat ramp."
 - ONLY HERE: US-3793 [note] "Starting at the northwest city limits of Wickliffe in Ballard County to the middle of the Mississip
 - ONLY HERE: US-3793 [note] "the area west of HWY 473 within the two-mile driving loop is closed to all hunting as marked by sig
-- ONLY HERE: US-3796 [note] "ATVs, horseback riding, and camping are prohibited."
 - ONLY HERE: US-3797 [part] "Public hunting closed when floodwaters prevent safe entry to blinds by wheeled vehicles."
+- ONLY HERE: US-3825 [note] "Certain areas marked by signs are also closed to all hunting."
+- ONLY HERE: US-3828 [hunt] "Sinclair tract contains a waterfowl refuge around Goose Lake that is closed from Oct. 15-March 15."
 
 - US-0050 · ℹ️ Note: "Elevator for Accessible Tour Out of Service." (National Park Service)
 - US-0050 · ℹ️ Note: "The Green River Ferry has temporarily suspended operation due to low water levels." (National Park Service)
