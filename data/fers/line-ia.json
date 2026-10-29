@@ -1,0 +1,56 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "ia",
+ "states": [
+  "US-IA"
+ ],
+ "since": "2026-10-29",
+ "date": "2026-10-29 04:27 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
+ "known_answers": "19/19 on 2026-10-29",
+ "missing_check": {
+  "FOUND": 2,
+  "DROPPED": 5,
+  "NEVER LOOKED AT": 679
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-29",
+   "pairs tested": 7,
+   "pairs whose boxes touch": 7
+  },
+  "pass2": {
+   "agree with the pass before": 2,
+   "date": "2026-10-29",
+   "pairs tested": 2
+  },
+  "pass3": {
+   "agree with the pass before": 2,
+   "date": "2026-10-29",
+   "pairs tested": 2
+  },
+  "pass5": {
+   "checked": 1,
+   "date": "2026-10-29",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-IA": "data/fers/US-IA.json"
+ },
+ "US-IA": {
+  "rows": 2,
+  "live": 2,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 0,
+  "merged": 0
+ },
+ "states_ready": [
+  "US-IA"
+ ],
+ "states_held": []
+}
