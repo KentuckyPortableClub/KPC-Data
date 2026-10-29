@@ -1,0 +1,67 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "pca",
+ "states": [
+  "US-CA"
+ ],
+ "since": "2026-10-29",
+ "date": "2026-10-29 13:09 UTC",
+ "verdict": "STOPPED",
+ "why": [
+  "water not checked: US-CA: 1 rows (the USGS water map / files had no answer there): never READY with one"
+ ],
+ "known_answers": "19/19 on 2026-10-29",
+ "missing_check": {
+  "FOUND": 78,
+  "DROPPED": 235,
+  "NEVER LOOKED AT": 1308
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-29",
+   "pairs tested": 408,
+   "pairs whose boxes touch": 408
+  },
+  "pass2": {
+   "agree with the pass before": 1260,
+   "date": "2026-10-29",
+   "pairs tested": 174
+  },
+  "pass3": {
+   "agree with the pass before": 385,
+   "date": "2026-10-29",
+   "pairs tested": 171
+  },
+  "pass5": {
+   "checked": 84,
+   "date": "2026-10-29",
+   "pairs tested": 0,
+   "still not checked": 1
+  }
+ },
+ "files": {
+  "US-CA": "data/fers/US-CA.json"
+ },
+ "US-CA": {
+  "rows": 1365,
+  "live": 94,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "the outlines overlap, but the BLM surface management map / t": 2,
+   "low-confidence outline for Kern National Wild and Scenic Riv": 1,
+   "the outlines overlap, but the BLM surface management map doe": 5,
+   "water not checked": 1,
+   "the outlines overlap, but the BLM surface management map / F": 2
+  },
+  "dropped": 960,
+  "merged": 300
+ },
+ "water_weak": {
+  "US-CA": 1
+ },
+ "states_ready": [],
+ "states_held": [
+  "US-CA"
+ ]
+}
