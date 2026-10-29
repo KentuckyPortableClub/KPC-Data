@@ -2818,10 +2818,8 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 
 ## robots.txt said no (hosts we did not read)
 - embed.widencdn.net: 3 addresses (User-agent: Twitterbot | Disallow: | User-agent: * | Allow: /img/3shape/ | Allow: /pdf/*/3shape/ | A)
-- images.dnr.state.mn.us: 1 addresses (User-agent: * | Disallow: /)
 - p.widencdn.net: 65 addresses (User-agent: Twitterbot | Disallow: | User-agent: * | Disallow: /)
 - widnr.widen.net: 38 addresses (User-agent: Twitterbot | Disallow: | User-agent: * | Allow: /content/ | Allow: /view/ | Disallow: /)
-- www.dnr.state.mn.us: 109 addresses (Sitemap: https://www.dnr.state.mn.us/sitemap.xml | Sitemap: https://www.dnr.state.mn.us/sitemap-stat)
 
 ## hosts resting a day (three strikes)
 - apps.dnr.wi.gov
