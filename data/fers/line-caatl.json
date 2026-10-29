@@ -8,11 +8,9 @@
   "CA-NL"
  ],
  "since": "2026-10-29",
- "date": "2026-10-29 06:09 UTC",
- "verdict": "PART READY FOR CHAT 8",
- "why": [
-  "water not checked: CA-NB: 2 rows (the USGS water map / files had no answer there): never READY with one"
- ],
+ "date": "2026-10-29 06:27 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
  "known_answers": "19/19 on 2026-10-29",
  "missing_check": {
   "FOUND": 0,
@@ -39,7 +37,7 @@
    "checked": 7,
    "date": "2026-10-29",
    "pairs tested": 0,
-   "still not checked": 2
+   "still not checked": 0
   }
  },
  "files": {
@@ -50,13 +48,12 @@
  },
  "CA-NB": {
   "rows": 641,
-  "live": 24,
+  "live": 26,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "the official outline of New Brunswick #25 Wildlife Managemen": 4,
    "the official outline of McManus Hill Protected Area could no": 2,
-   "water not checked": 2,
    "the official outline of New Brunswick #24 Wildlife Managemen": 16,
    "the official outline of New Brunswick #23 Wildlife Managemen": 11,
    "the official outline of Black River Protected Area could not": 1,
@@ -115,9 +112,6 @@
   },
   "dropped": 100,
   "merged": 211
- },
- "water_weak": {
-  "CA-NB": 2
  },
  "CA-NS": {
   "rows": 402,
@@ -187,11 +181,10 @@
   "merged": 3
  },
  "states_ready": [
+  "CA-NB",
   "CA-NS",
   "CA-PE",
   "CA-NL"
  ],
- "states_held": [
-  "CA-NB"
- ]
+ "states_held": []
 }
