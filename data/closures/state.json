@@ -4,15 +4,15 @@
   "US-KY": {
    "counts": {
     "hunt": 0,
-    "note": 11,
-    "part": 10,
+    "note": 14,
+    "part": 11,
     "seasonal": 0,
     "taken_down": 0,
     "whole": 1
    },
-   "failed": 5,
-   "items": 22,
-   "read": "2026-10-29T00:01Z",
+   "failed": 2,
+   "items": 26,
+   "read": "2026-10-29T00:08Z",
    "sources": 72,
    "status": "done"
   }
@@ -31,24 +31,6 @@
   "failed": [
    {
     "area": "US-KY",
-    "src": "fws-clarks-river",
-    "url": "https://www.fws.gov/refuge/clarks-river/visit-us",
-    "why": "HTTP 404"
-   },
-   {
-    "area": "US-KY",
-    "src": "fws-green-river",
-    "url": "https://www.fws.gov/refuge/green-river/visit-us",
-    "why": "HTTP 404"
-   },
-   {
-    "area": "US-KY",
-    "src": "fws-reelfoot",
-    "url": "https://www.fws.gov/refuge/reelfoot/visit-us",
-    "why": "HTTP 404"
-   },
-   {
-    "area": "US-KY",
     "src": "ky-parks-api",
     "url": "https://parks.ky.gov/api/default/alerts?$top=100",
     "why": "rest"
@@ -57,26 +39,26 @@
   "manners": {
    "arcgis_exempt": 0,
    "errors": 0,
-   "requests": 88,
+   "requests": 94,
    "rested": 1,
    "robots": 0,
    "strikes": 0
   },
   "stat": {
    "items": 0,
-   "pages": 67,
+   "pages": 73,
    "pdfs": 17,
-   "requests": 89,
-   "sentences": 155,
-   "sources_failed": 4,
+   "requests": 95,
+   "sentences": 166,
+   "sources_failed": 1,
    "unmatched": 4,
-   "unreadable": 51
+   "unreadable": 56
   },
-  "when": "2026-10-29T00:01Z"
+  "when": "2026-10-29T00:08Z"
  },
  "test": {
   "matched": 7,
-  "only_here": 17,
+  "only_here": 21,
   "only_there": [
    "hc-US-4687-2026-11-07",
    "hc-US-3837-2026-11-21",
@@ -102,6 +84,6 @@
   "own": 32,
   "result": "FAIL",
   "when": "2026-10-29",
-  "why": "7 of 32 of Kentucky's own reader's items found here on the same park (21%); 17 only here"
+  "why": "7 of 32 of Kentucky's own reader's items found here on the same park (21%); 21 only here"
  }
 }
