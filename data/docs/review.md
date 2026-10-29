@@ -24,7 +24,11 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-ND | 155 | 33 | 28 | 29 | 1 | 8 | 24 | 122 | 32 | 0 | 0 |
 | US-SD | 120 | 31 | 25 | 25 | 10 | 14 | 7 | 89 | 21 | 0 | 0 |
 | US-PA | 494 | 173 | 141 | 171 | 1 | 26 | 146 | 321 | 29 | 0 | 0 |
-| US-NY | 375 | 158 | 131 | 158 | 52 | 94 | 12 | 217 | 51 | 0 | 0 |
+| US-NY | 851 | 560 | 532 | 560 | 198 | 348 | 14 | 291 | 68 | 0 | 0 |
+| US-NJ | 134 | 23 | 10 | 20 | 2 | 11 | 10 | 111 | 15 | 51 | 0 |
+| US-CT | 157 | 20 | 17 | 13 | 0 | 10 | 10 | 137 | 115 | 138 | 0 |
+| US-RI | 61 | 11 | 6 | 11 | 0 | 4 | 7 | 50 | 16 | 0 | 0 |
+| US-MA | 14 | 13 | 7 | 13 | 0 | 5 | 8 | 1 | 14 | 0 | 0 |
 
 ## US-KY sample (random 12 per agency group, seed 28)
 | ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
@@ -1661,43 +1665,44 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
 |---|---|---|---|---|---|---|
 | US-2004 | Amherst State Park | http://www.amherststatepark.org/ASP/pkmap.html | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | http://www.amherststatepark.org/ASP/Dogs.html ✓ |  |
-| US-0473 | Conscience Point National Wildlife Refug | https://www.fws.gov/refuge/conscience-point/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/conscience-point/visit-us/rules-policies ✓ | owned by The Nature Conservancy |
+| US-6532 | Erie Canalway Corridor National Heritage | https://eriecanalway.org/explore/watertrail/guidebook | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — |  ✗ |  |
 | US-0479 | Shawangunk Grasslands National Wildlife  | https://www.fws.gov/refuge/shawangunk-grasslands/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/shawangunk-grasslands/visit-us/rules-polici ✓ |  |
-| US-0481 | Wertheim National Wildlife Refuge | https://www.fws.gov/refuge/wertheim/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/wertheim/visit-us/rules-policies ✓ |  |
+| US-0480 | Target Rock National Wildlife Refuge | https://www.fws.gov/refuge/target-rock/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/target-rock/visit-us/rules-policies ✓ |  |
+| US-0473 | Conscience Point National Wildlife Refug | https://www.fws.gov/refuge/conscience-point/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/conscience-point/visit-us/rules-policies ✓ | owned by The Nature Conservancy |
 | US-0474 | Elizabeth A. Morton National Wildlife Re | https://www.fws.gov/refuge/elizabeth-alexandra-morton/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/elizabeth-alexandra-morton/visit-us/rules-p ✓ |  |
 | US-0472 | Amagansett National Wildlife Refuge | https://www.fws.gov/refuge/amagansett/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/amagansett/visit-us/rules-policies ✓ |  |
 | US-0476 | Montezuma National Wildlife Refuge | https://www.fws.gov/refuge/montezuma/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/montezuma/visit-us/rules-policies ✓ |  |
 | US-0478 | Seatuck National Wildlife Refuge | https://www.fws.gov/refuge/seatuck/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/seatuck/visit-us/rules-policies ✓ |  |
 | US-0475 | Iroquois National Wildlife Refuge | https://www.fws.gov/refuge/iroquois/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/iroquois/visit-us/rules-policies ✓ |  |
 | US-0456 | Wallkill River National Wildlife Refuge | https://www.fws.gov/refuge/wallkill-river/visit-us | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/wallkill-river/visit-us/rules-policies ✓ |  |
-| US-0480 | Target Rock National Wildlife Refuge | https://www.fws.gov/refuge/target-rock/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/target-rock/visit-us/rules-policies ✓ |  |
+| US-0481 | Wertheim National Wildlife Refuge | https://www.fws.gov/refuge/wertheim/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/wertheim/visit-us/rules-policies ✓ |  |
 | US-0477 | Congressman Lester Wolff Oyster Bay Nati | https://www.fws.gov/refuge/congressman-lester-wolff-oyster-bay/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/congressman-lester-wolff-oyster-bay/visit-u ✓ | managed by the U.S. Fish and Wildlife Service |
+| US-4567 | Captain John Smith Chesapeake National H | https://www.nps.gov/cajo/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted November 14, 2024 | https://www.nps.gov/cajo/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0847 | Martin Van Buren National Historic Site | https://www.nps.gov/mava/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted August 15, 2019 | https://www.nps.gov/mava/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0811 | Eleanor Roosevelt National Historic Site | https://www.nps.gov/elro/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted February 26, 2024 | https://www.nps.gov/elro/learn/management/lawsandpolicies.htm ✓ |  |
 | US-0858 | Saint Paul's Church National Historic Si | https://www.nps.gov/sapa/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted March 10, 2016 | https://www.nps.gov/sapa/learn/management/lawsandpolicies.htm ✓ |  |
-| US-0773 | Federal Hall National Memorial | https://www.nps.gov/feha/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted March 9, 2016 | https://www.nps.gov/feha/learn/management/lawsandpolicies.htm ✓ |  |
-| US-0763 | Women's Rights National Historical Park | https://www.nps.gov/wori/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted April 10, 2019 | https://www.nps.gov/wori/learn/management/lawsandpolicies.htm ✓ |  |
-| US-0938 | Governors Island National Monument | https://www.nps.gov/gois/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted March 10, 2016 | https://www.nps.gov/gois/learn/management/lawsandpolicies.htm ✓ |  |
-| US-0777 | General Grant National Memorial | https://www.nps.gov/gegr/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted March 10, 2016 | https://www.nps.gov/gegr/learn/management/lawsandpolicies.htm ✓ |  |
-| US-10084 | Harriet Tubman National Historical Park | https://www.nps.gov/hart/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted July 22, 2022 | https://www.nps.gov/hart/learn/management/lawsandpolicies.htm ✓ |  |
-| US-0062 | Saratoga National Historical Park | https://www.nps.gov/sara/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted January 12, 2025 | https://www.nps.gov/sara/learn/management/lawsandpolicies.htm ✓ |  |
+| US-8086 | Jacob Riis Park National Historic Site | https://www.nps.gov/gate/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted September 2, 2020 | https://www.nps.gov/gate/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0679 | Fire Island National Seashore | https://www.nps.gov/fiis/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted April 2, 2025 | https://www.nps.gov/fiis/learn/management/lawsandpolicies.htm ✓ | managed by the National Park Service |
 | US-0865 | Theodore Roosevelt Birthplace National H | https://www.nps.gov/thrb/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted February 21, 2025 | https://www.nps.gov/thrb/learn/management/lawsandpolicies.htm ✓ |  |
 | US-0778 | Hamilton Grange National Memorial | https://www.nps.gov/hagr/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted March 10, 2016 | https://www.nps.gov/hagr/learn/management/lawsandpolicies.htm ✓ |  |
 | US-0680 | Gateway National Recreation Area | https://www.nps.gov/gate/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted September 2, 2020 | https://www.nps.gov/gate/learn/management/lawsandpolicies.htm ✓ |  |
 | US-0681 | Upper Delaware National Wild and Scenic  | https://www.nps.gov/upde/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted May 13, 2025 | https://www.nps.gov/upde/learn/management/lawsandpolicies.htm ✓ |  |
-| US-4239 | North Country Trail National Scenic Trai | https://www.nps.gov/noco/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted September 23, 2025 | https://www.nps.gov/noco/learn/management/lawsandpolicies.htm ✓ |  |
-| US-5114 | Beaver Flow State Forest | https://dec.ny.gov/sites/default/files/beaverflowsf.pdf | pdf ✓name · combined map: covers 2 units · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Sep 11, 2023 |  ✗ |  |
-| US-5033 | Golden Hill State Forest | https://dec.ny.gov/sites/default/files/goldenhillsf.pdf | pdf ✓name · combined map: covers 2 units · the agency site | 2020: check it is still current (file stamp 2020 (older than the posting 2023 ) · posted Sep 11, 2023 |  ✗ |  |
-| US-5089 | Arctic-China State Forest | https://dec.ny.gov/sites/default/files/acsfmap.pdf | pdf ✓name · combined map: covers 6 units · the agency site | 2022 (the PDF file's own stamp (may be the print da) · posted Sep 11, 2023 |  ✗ |  |
-| US-5105 | Bear Creek State Forest | https://dec.ny.gov/sites/default/files/bearcreekweb.pdf | pdf ✓name · combined map: covers 4 units · the agency site | 2020: check it is still current (file stamp 2020 (older than the posting 2023 ) · posted Sep 11, 2023 |  ✗ |  |
-| US-5007 | Elkdale State Forest | https://dec.ny.gov/sites/default/files/elkdalewebp.pdf | pdf ✓name · combined map: covers 4 units · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Sep 11, 2023 |  ✗ |  |
-| US-5013 | Fall Brook State Forest | https://dec.ny.gov/sites/default/files/mapfallbrooksf.pdf | pdf ✓name · combined map: covers 5 units · the agency site | 2020: check it is still current (file stamp 2020 (older than the posting 2023 ) · posted Sep 11, 2023 |  ✗ |  |
-| US-5115 | Beaver Meadow State Forest | https://dec.ny.gov/sites/default/files/beavermeadowsf.pdf | pdf ✓name · combined map: covers 6 units · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Sep 11, 2023 |  ✗ |  |
-| US-5057 | Hill Higher State Forest | https://dec.ny.gov/sites/default/files/2024-05/hillhighergeoref.pdf | pdf ✓name · combined map: covers 5 units · the agency site | date unknown (date unknown, checked 2026-10-29) · posted 2024-05 |  ✗ |  |
+| US-8083 | Canarsie Pier State Recreation Area | https://www.nps.gov/gate/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted September 2, 2020 | https://www.nps.gov/gate/learn/management/lawsandpolicies.htm ✓ |  |
+| US-8088 | Miller Field State Recreation Area | https://www.nps.gov/gate/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted September 2, 2020 | https://www.nps.gov/gate/learn/management/lawsandpolicies.htm ✓ |  |
+| US-5388 | Lassellsville State Forest | https://dec.ny.gov/sites/default/files/maplassellsville.pdf | pdf ✓name · combined map: covers 2 units · the agency site | 2020: check it is still current (file stamp 2020 (older than the posting 2023 ) · posted Sep 11, 2023 |  ✗ |  |
+| US-9138 | Cranberry Mountain Wildlife Management A | https://dec.ny.gov/sites/default/files/cranmtnmap.pdf | pdf ✓name · combined map: covers 2 units · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Sep 11, 2023 |  ✗ |  |
+| US-9029 | Galen Wildlife Management Area | https://dec.ny.gov/sites/default/files/galenmap.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Sep 11, 2023 |  ✗ |  |
 | US-5059 | Hinckley State Forest | https://dec.ny.gov/sites/default/files/maphinckleysf.pdf | pdf ✓name · combined map: covers 3 units · the agency site | 2020: check it is still current (file stamp 2020 (older than the posting 2023 ) · posted Sep 11, 2023 |  ✗ |  |
-| US-5088 | Andersen Hill State Forest | https://dec.ny.gov/sites/default/files/andersenhillsf.pdf | pdf ✓name · combined map: covers 2 units · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Sep 11, 2023 |  ✗ |  |
-| US-5092 | Ashland Pinnacle State Forest | https://dec.ny.gov/sites/default/files/mapashlandpinnacle.pdf | pdf ✓name · combined map: covers 4 units · the agency site | 2021 (file stamp 2021 (older than the posting 2023 ) · posted Sep 11, 2023 |  ✗ |  |
-| US-5083 | Knapp Station State Forest | https://dec.ny.gov/sites/default/files/knpsta.pdf | pdf ✓name · the agency site | 2022 (the PDF file's own stamp (may be the print da) · posted Sep 11, 2023 |  ✗ |  |
+| US-5090 | Armlin Hill State Forest | https://dec.ny.gov/sites/default/files/mapkeyserkillcomplex.pdf | pdf ✓name · combined map: covers 5 units · the agency site | 2021 (file stamp 2021 (older than the posting 2023 ) · posted Sep 11, 2023 |  ✗ |  |
+| US-9080 | High Tor Wildlife Management Area | https://dec.ny.gov/sites/default/files/hightormap.pdf | pdf ✓name · combined map: covers 3 units · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Sep 11, 2023 |  ✗ |  |
+| US-9103 | Tug Hill Wildlife Management Area | https://dec.ny.gov/sites/default/files/tughillwmamap.pdf | pdf ✓name · combined map: covers 2 units · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Sep 11, 2023 |  ✗ |  |
+| US-5281 | Rural Grove State Forest | https://dec.ny.gov/sites/default/files/mapruralgroveyates.pdf | pdf ✓name · combined map: covers 4 units · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Sep 11, 2023 |  ✗ |  |
+| US-5288 | Sand Flats State Forest | https://dec.ny.gov/sites/default/files/mapsandflats.pdf | pdf ✓name · combined map: covers 4 units · the agency site | 2022 (the PDF file's own stamp (may be the print da) · posted Sep 11, 2023 |  ✗ |  |
+| US-5385 | Labrador Hollow Unique Area | https://dec.ny.gov/sites/default/files/labhunt.pdf | pdf ✓name · combined map: covers 3 units · the agency site | 2010: check it is still current (file stamp 2010 (older than the posting 2023 ) · posted Sep 11, 2023 |  ✗ |  |
+| US-5402 | Lyon Brook State Forest | https://dec.ny.gov/sites/default/files/lyonbrooksf.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Sep 11, 2023 |  ✗ |  |
+| US-5369 | Whippoorwill Corners State Forest | https://dec.ny.gov/sites/default/files/whippoorwill.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Sep 11, 2023 |  ✗ |  |
 
-### US-NY no map yet (217): the reason
+### US-NY no map yet (291): the reason
 - US-10033 Old Fort Niagara State Historic Site: no map link on file and none on the park page
 - US-10034 Bennington Battlefield State Historic Site: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://parks.ny.gov/sites/default/files/BenningtonBattlefieldBenningt; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://parks.ny.gov/sites/default/files/BenningtonBattlefieldBenningt)
 - US-10035 John Brown Farm State Historic Site: no map link on file and none on the park page
@@ -1739,9 +1744,221 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - US-12060 Crystal Lake State Forest: no map link on file and none on the park page
 - US-12061 Hickok Brook Multiple Use Area: no map link on file and none on the park page
 
+## US-NJ sample (random 12 per agency group, seed 28)
+| ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
+|---|---|---|---|---|---|---|
+| US-0452 | Cape May National Wildlife Refuge | https://www.fws.gov/refuge/cape-may/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/cape-may/visit-us/rules-policies ✓ |  |
+| US-0886 | Maurice River National Wild and Scenic R | https://www.fws.gov/rivers/map | page ✓name · linked from the agency page (fws.gov) | date unknown (date unknown, checked 2026-10-29) · posted — |  ✗ |  |
+| US-0453 | Edwin B. Forsythe National Wildlife Refu | https://www.fws.gov/refuge/edwin-b-forsythe/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/edwin-b-forsythe/visit-us/rules-policies ✓ |  |
+| US-0456 | Wallkill River National Wildlife Refuge | https://www.fws.gov/refuge/wallkill-river/visit-us | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/wallkill-river/visit-us/rules-policies ✓ |  |
+| US-0888 | Musconetcong River National Wild and Sce | https://www.fws.gov/rivers/map | page ✓name · linked from the agency page (fws.gov) | date unknown (date unknown, checked 2026-10-29) · posted — |  ✗ |  |
+| US-0454 | Great Swamp National Wildlife Refuge | https://www.fws.gov/refuge/great-swamp/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/great-swamp/visit-us/rules-policies ✓ |  |
+| US-0455 | Supawna Meadows National Wildlife Refuge | https://www.fws.gov/refuge/supawna-meadows/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/supawna-meadows/visit-us/rules-policies ✓ |  |
+| US-6609 | Pinelands Preserve National Conservation | https://www.nj.gov/pinelands/home/maps/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.nj.gov/pinelands/cmp/ ✓ |  |
+| US-12644 | Berkshire Valley Wildlife Management Are | https://www.nj.gov/dep/fgw/pdf/wmamaps/berkshire_valley.pdf | pdf · the agency site | — (date unknown, checked 2026-10-29) · posted Sep 27, 2021 |  ✗ |  |
+| US-12103 | Lockatong Wildlife Management Area | https://www.nj.gov/dep/fgw/pdf/wmamaps/lockatong.pdf | pdf ✓name · the agency site | 2015: check it is still current (the PDF file's own stamp (may be the print da) · posted Jul 28, 2015 |  ✗ |  |
+| US-4998 | Ramapo Mountain State Forest | https://nj.gov/dep/parksandforests/parks/ramapomountainstateforest.html | page · on file, checked by a person or the link | date unknown (date unknown, checked 2026-10-29) · posted — |  ✗ |  |
+| US-7505 | Round Valley State Recreation Area | https://nj.gov/dep/parksandforests/parks/roundvalleyrecreationarea.html | page · on file, checked by a person or the link | date unknown (date unknown, checked 2026-10-29) · posted — |  ✗ |  |
+| US-0746 | Morristown National Historical Park | https://www.nps.gov/morr/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted August 17, 2022 | https://www.nps.gov/morr/learn/management/lawsandpolicies.htm ✓ |  |
+| US-8061 | Ellis Island National Historic Site | https://www.nps.gov/elis/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted March 5, 2025 | https://www.nps.gov/elis/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0751 | Paterson Great Falls National Historical | https://www.nps.gov/pagr/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted January 12, 2024 | https://www.nps.gov/pagr/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4582 | Washington-Rochambeau Revolutionary Rout | https://www.nps.gov/waro/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted June 16, 2026 | https://www.nps.gov/waro/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0680 | Gateway National Recreation Area | https://www.nps.gov/gate/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted September 2, 2020 | https://www.nps.gov/gate/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4556 | Appalachian Trail National Scenic Trail | https://www.nps.gov/appa/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted December 21, 2022 | https://www.nps.gov/appa/learn/management/lawsandpolicies.htm ✓ | is managed by the National Park Service |
+| US-0684 | Lower Delaware National Wild and Scenic  | https://www.nps.gov/lode/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted April 1, 2026 | https://www.nps.gov/lode/learn/management/lawsandpolicies.htm ✓ |  |
+| US-3379 | Delaware Water Gap National Recreation A | https://www.nps.gov/dewa/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted July 23, 2026 | https://www.nps.gov/dewa/learn/management/compendium.htm ✓ |  |
+| US-1615 | Thomas Edison Memorial State Park | https://www.nps.gov/edis/planyourvisit/maps.htm | page ✓name · linked from the agency page (nps.gov) | date unknown (date unknown, checked 2026-10-29) · posted March 9, 2016 |  ✗ |  |
+| US-0759 | Thomas Edison National Historical Park | https://www.nps.gov/edis/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted March 9, 2016 | https://www.nps.gov/edis/learn/management/lawsandpolicies.htm ✓ |  |
+| US-6544 | New Jersey Coastal State Trail | https://www.nps.gov/npgallery/GetAsset/e8a647dd-3641-4f45-bc7f-a2f2d56d2fe3 | pdf ✓name · combined map: covers 8 units · the agency site | 2003: check it is still current (the PDF file's own stamp (may be the print da) · posted — |  ✗ |  |
+
+### US-NJ no map yet (111): the reason
+- US-0180 Twin Lights State Historic Site: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-0677 Great Egg Harbor National Wild and Scenic Riv: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.fws.gov/rivers/map)
+- US-11337 Hamburg Mountain Wildlife Management Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.nj.gov/dep/fgw/pdf/wmamaps/hamburg_mt.pdf) (needs browser: host on the browser list)
+- US-11338 Stow Creek State Park: no working map link (tried: HTTP 404 https://nj.gov/dep/parksandforests/maps/stowcreek-area.pdf) (needs browser: host on the browser list)
+- US-11340 Higbee Beach Wildlife Management Area: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-11863 Butterfly Bogs Wildlife Management Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.nj.gov/dep/fgw/pdf/wmamaps/butterfly_bogs.pdf) (needs browser: host on the browser list)
+- US-11964 Peaslee Wildlife Management Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.nj.gov/dep/fgw/pdf/wmamaps/peaslee.pdf) (needs browser: host on the browser list)
+- US-11965 Glassboro Wildlife Management Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.nj.gov/dep/fgw/pdf/wmamaps/glassboro.pdf) (needs browser: host on the browser list)
+- US-11988 Cohansey River Wildlife Management Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.nj.gov/dep/fgw/pdf/wmamaps/cohansey_river.pdf) (needs browser: host on the browser list)
+- US-11989 Great Bay Boulevard Wildlife Management Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.nj.gov/dep/fgw/pdf/wmamaps/gr_bay_blvd.pdf) (needs browser: host on the browser list)
+- US-11990 Harrisonville Lake Wildlife Management Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.nj.gov/dep/fgw/pdf/wmamaps/harrisonville_lake.pdf) (needs browser: host on the browser list)
+- US-11991 South Branch Wildlife Management Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.nj.gov/dep/fgw/pdf/wmamaps/south_branch_catan.pdf) (needs browser: host on the browser list)
+- US-11992 Whiting State Conservation Area: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-11993 Clarks Pond Wildlife Management Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.nj.gov/dep/fgw/pdf/wmamaps/clarks_pond.pdf) (needs browser: host on the browser list)
+- US-12099 Alexauken Creek Wildlife Management Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.nj.gov/dep/fgw/pdf/wmamaps/alexauken_creek.pdf) (needs browser: host on the browser list)
+- US-12100 Amwell Lake Wildlife Management Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.nj.gov/dep/fgw/pdf/wmamaps/amwell_lake.pdf) (needs browser: host on the browser list)
+- US-12101 Clinton Wildlife Management Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.nj.gov/dep/fgw/pdf/wmamaps/clinton_east.pdf) (needs browser: host on the browser list)
+- US-12102 Ken Lockwood Gorge Wildlife Management Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.nj.gov/dep/fgw/pdf/wmamaps/ken_lockwood_gorge.pdf) (needs browser: host on the browser list)
+- US-12104 Pohatcong Creek Wildlife Management Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.nj.gov/dep/fgw/pdf/wmamaps/pohatcong_creek.pdf) (needs browser: host on the browser list)
+- US-12105 Rockport Wildlife Management Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.nj.gov/dep/fgw/pdf/wmamaps/rockport.pdf) (needs browser: host on the browser list)
+- US-12168 Medford Wildlife Management Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.nj.gov/dep/fgw/pdf/wmamaps/medford.pdf) (needs browser: host on the browser list)
+- US-12645 Flatbrook Roy Wildlife Management Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.nj.gov/dep/fgw/pdf/wmamaps/flatbrook_roy.pdf) (needs browser: host on the browser list)
+- US-13057 Beaver Swamp Wildlife Management Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.nj.gov/dep/fgw/pdf/wmamaps/beaver_swamp_no.pdf) (needs browser: host on the browser list)
+- US-13059 Abbots Meadow Wildlife Management Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.nj.gov/dep/fgw/pdf/wmamaps/abbotts_meadow.pdf) (needs browser: host on the browser list)
+- US-13060 Elmer Lake Wildlife Management Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.nj.gov/dep/fgw/pdf/wmamaps/elmer_lake.pdf) (needs browser: host on the browser list)
+- US-13061 Gum Tree Corner Wildlife Management Area: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-13117 D.O.D. Ponds Wildlife Management Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.nj.gov/dep/fgw/pdf/wmamaps/dod_ponds.pdf) (needs browser: host on the browser list)
+- US-13147 Andalora Wildlife Management Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.nj.gov/dep/fgw/pdf/wmamaps/andaloro.pdf) (needs browser: host on the browser list)
+- US-13148 Baldwin Lake Wildlife Management Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.nj.gov/dep/fgw/pdf/wmamaps/baldwin_lake.pdf) (needs browser: host on the browser list)
+- US-13149 Beaver Brook Wildlife Management Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.nj.gov/dep/fgw/pdf/wmamaps/beaver_brook.pdf) (needs browser: host on the browser list)
+- US-13150 Belvidere Access Wildlife Management Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.nj.gov/dep/fgw/pdf/wmamaps/belvidere-ratzman_access.pdf) (needs browser: host on the browser list)
+- US-13254 Van Nest Refuge Wildlife Management Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.nj.gov/dep/fgw/pdf/wmamaps/van_nest_refuge.pdf) (needs browser: host on the browser list)
+- US-13255 Hancock House Historic Site: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-13256 Menantico Ponds Wildlife Management Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.nj.gov/dep/fgw/pdf/wmamaps/menantico_ponds.pdf) (needs browser: host on the browser list)
+- US-1607 Allaire State Park: no working map link (tried: HTTP 404 https://nj.gov/dep/parksandforests/maps/allaire-area.pdf) (needs browser: host on the browser list)
+- US-1608 Allamuchy Mountain State Park: no working map link (tried: HTTP 404 https://nj.gov/dep/parksandforests/maps/allamuchy-area.pdf)
+- US-1609 Barnegat Lighthouse State Park: no working map link (tried: HTTP 404 https://nj.gov/dep/parksandforests/maps/barnegat-area.pdf)
+- US-1610 Cape May Point State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1611 Cheesequake State Park: no working map link (tried: HTTP 404 https://www.nj.gov/dep/parksandforests/parks/maps/CheesequakeABMaponly) (needs browser: host on the browser list)
+- US-1612 Corson's Inlet State Park: no working map link (tried: HTTP 404 https://nj.gov/dep/parksandforests/maps/corsonsinlet-area.pdf) (needs browser: host on the browser list)
+
+## US-CT sample (random 12 per agency group, seed 28)
+| ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
+|---|---|---|---|---|---|---|
+| US-10075 | Nepaug State Forest | https://portal.ct.gov/-/media/deep/stateparks/maps/boltonnotchpdf.pdf?rev=8ab1d6ad8f244e13 | pdf · the agency site | — (date unknown, checked 2026-10-29) · posted Jun 03, 2020 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ | is maintained by Bolton Conservation Commission |
+| US-10086 | Algonquin State Forest | https://portal.ct.gov/-/media/deep/stateparks/maps/boltonnotchpdf.pdf?rev=8ab1d6ad8f244e13 | pdf · the agency site | — (date unknown, checked 2026-10-29) · posted Jun 03, 2020 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ | is maintained by Bolton Conservation Commission |
+| US-1655 | Campbell Falls State Park | https://portal.ct.gov/deep/state-parks/reserves/campbell-falls-state-park-reserve?archived | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
+| US-7530 | Centennial Watershed State Forest | https://portal.ct.gov/deep/state-parks/forests/centennial-watershed-state-forest | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted July 18, 2016 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
+| US-10092 | Seaside State Park | https://portal.ct.gov/-/media/deep/stateparks/maps/boltonnotchpdf.pdf?rev=8ab1d6ad8f244e13 | pdf · the agency site | — (date unknown, checked 2026-10-29) · posted Jun 03, 2020 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ | is maintained by Bolton Conservation Commission |
+| US-7537 | Natchaug State Forest | https://portal.ct.gov/deep/state-parks/forests/natchaug-state-forest | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
+| US-12777 | Paugnut State Forest | https://portal.ct.gov/deep/state-parks/forests/paugnut-state-forest | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted July 18, 2016 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
+| US-1651 | Bolton Notch State Park | https://portal.ct.gov/deep/state-parks/locate-park-forest/other-state-parks-and-forests | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ | is maintained by Bolton Conservation Commission |
+| US-10961 | Mattatuck State Forest | https://portal.ct.gov/deep/state-parks/forests/mattatuck-state-forest/maps | page · the agency site | — (date unknown, checked 2026-10-29) · posted — | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
+| US-10073 | Whittemore Glen State Park Scenic Reserv | https://portal.ct.gov/-/media/deep/stateparks/maps/boltonnotchpdf.pdf?rev=8ab1d6ad8f244e13 | pdf · the agency site | — (date unknown, checked 2026-10-29) · posted Jun 03, 2020 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ | is maintained by Bolton Conservation Commission |
+| US-6860 | Ferry Landing State Park | https://www.depdata.ct.gov/maps/parksforests/parksmap.htm | page · government host (depdata.ct.gov) | date unknown (date unknown, checked 2026-10-29) · posted — |  ✗ |  |
+| US-13487 | Seth Low Pierrepont State Park | https://portal.ct.gov/deep/state-parks/reserves/seth-low-pierrepont-state-park-reserve?arc | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
+| US-1667 | Fort Trumbull State Park | https://ctparks.com/park-maps | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://ctparks.com/park-policies ✓ |  |
+| US-0228 | Stewart B. Mckinney National Wildlife Re | https://www.fws.gov/refuge/stewart-b-mckinney/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/policies ✓ |  |
+| US-0329 | Silvio O Conte National Wildlife Refuge | https://www.fws.gov/refuge/silvio-o-conte/visit-us | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/silvio-o-conte/visit-us/rules-policies ✓ |  |
+| US-6868 | Pawcatuck River Wildlife Management Area | https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnvz1a4uuPIJLlLdSwSLV5_QP6rsY5t | image · linked from the agency page (blogger.goo | date unknown (date unknown, checked 2026-10-29) · posted — |  ✗ |  |
+| US-4556 | Appalachian Trail National Scenic Trail | https://www.nps.gov/appa/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted December 21, 2022 | https://www.nps.gov/appa/learn/management/lawsandpolicies.htm ✓ | is managed by the National Park Service |
+| US-0873 | Weir Farm National Historic Site | https://www.nps.gov/wefa/planyourvisit/upload/RV-Map.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Dec 26, 2023 | https://www.nps.gov/wefa/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4582 | Washington-Rochambeau Revolutionary Rout | https://www.nps.gov/waro/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted June 16, 2026 | https://www.nps.gov/waro/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4561 | New England Trail National Scenic Trail | https://www.nps.gov/neen/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted November 8, 2023 | https://www.nps.gov/neen/learn/management/lawsandpolicies.htm ✗ |  |
+
+### US-CT no map yet (137): the reason
+- US-0881 Eightmile National Wild and Scenic River: no map link on file and none on the park page
+- US-0882 Farmington National Wild and Scenic River: no map link on file and none on the park page
+- US-10079 Pootatuck State Forest: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10656 Barn Island Wildlife Management Area: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10952 Paugussett State Forest: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10962 Babcock Pond WMA Wildlife Management Area: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-11013 Bishop Swamp WMA Wildlife Management Area: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-11712 Cromwell Meadows WMA Wildlife Management Area: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-12092 Nipmuck State Forest: no working map link (tried: ok https://ctparks.com/parks/nipmuck-state-forest) (needs browser: host on the browser list)
+- US-12459 Housatonic River Southern Fields Wildlife Man: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-12460 Suffield Wildlife Management Area: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-12604 Meshomasic State Forest: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-12620 Old New-Gate Prison & Copper Mine Historical : no map link on file and none on the park page (needs browser: host on the browser list)
+- US-12628 Sessions Woods Wildlife Management Area: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-13483 Humaston Brook State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1645 Above All State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1646 Beaver Brook State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1647 Bennett's Pond State Park: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://ctparks.com/) (needs browser: host on the browser list)
+- US-1648 Bigelow Hollow State Park: no working map link (tried: ok https://ctparks.com/parks/bigelow-hollow-state-park) (needs browser: host on the browser list)
+- US-1649 Black Rock State Park: no working map link (tried: HTTP 403 http://www.nae.usace.army.mil/Portals/74/docs/Recreation/BRL/BRLRecMap) (needs browser: the map link refused a plain reader (HTTP 403))
+- US-1650 Bluff Point State Park: no working map link (tried: ok https://ctparks.com/parks/bluff-point-state-park) (needs browser: host on the browser list)
+- US-1652 Brainard Homestead State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1653 Burr Pond State Park: no working map link (tried: ok https://ctparks.com/parks/burr-pond-state-park) (needs browser: host on the browser list)
+- US-1654 Camp Columbia State Park: no map link on file and none on the park page
+- US-1656 Chatfield Hollow State Park: no working map link (tried: ok https://ctparks.com/parks/chatfield-hollow-state-park) (needs browser: host on the browser list)
+- US-1657 Collis P. Huntington State Park: no working map link (tried: ok https://ctparks.com/parks/cp-huntington-state-park) (needs browser: host on the browser list)
+- US-1658 Connecticut Valley Railroad State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1659 Dart Island State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1660 Day Pond State Park: no working map link (tried: ok https://ctparks.com/parks/day-pond-state-park) (needs browser: host on the browser list)
+- US-1661 Dennis Hill State Park: no working map link (tried: ok https://ctparks.com/parks/dennis-hill-state-park) (needs browser: host on the browser list)
+- US-1662 Devil's Hopyard State Park: no working map link (tried: ok https://ctparks.com/parks/devils-hopyard-state-park) (needs browser: host on the browser list)
+- US-1663 Dinosaur State Park: no working map link (tried: ok https://ctparks.com/parks/dinosaur-state-park) (needs browser: host on the browser list)
+- US-1664 Eagle Landing State Park: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://ctparks.com/) (needs browser: host on the browser list)
+- US-1665 Farm River State Park: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://ctparks.com/) (needs browser: host on the browser list)
+- US-1666 Fort Griswold Battlefield State Park: no working map link (tried: ok https://ctparks.com/parks/fort-griswold-battlefield-state-park) (needs browser: host on the browser list)
+- US-1668 Gardner Lake State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1669 Gay City State Park: no working map link (tried: ok https://ctparks.com/parks/gay-city-state-park) (needs browser: host on the browser list)
+- US-1670 George Dudley Seymour State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1671 George Waldo State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-1672 Gillette Castle State Park: no working map link (tried: ok https://ctparks.com/parks/gillette-castle-state-park) (needs browser: host on the browser list)
+
+## US-RI sample (random 12 per agency group, seed 28)
+| ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
+|---|---|---|---|---|---|---|
+| US-0514 | John H. Chafee National Wildlife Refuge | https://www.fws.gov/refuge/john-h-chafee/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/john-h-chafee/visit-us/rules-policies ✓ |  |
+| US-0516 | Sachuest Point National Wildlife Refuge | https://www.fws.gov/refuge/sachuest-point/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/sachuest-point/visit-us/rules-policies ✓ |  |
+| US-0517 | Trustom Pond National Wildlife Refuge | https://www.fws.gov/sites/default/files/documents/Trustom%20Pond%20NWR%20Trail%20Map.pdf | pdf ✓name · combined map: covers 2 units · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Nov 16, 2021 | https://www.fws.gov/refuge/trustom-pond/visit-us/rules-policies ✓ |  |
+| US-0515 | Ninigret National Wildlife Refuge | https://www.fws.gov/refuge/ninigret/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/ninigret/visit-us/rules-policies ✓ |  |
+| US-0789 | Roger Williams National Memorial | https://www.nps.gov/rowi/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted March 10, 2016 | https://www.nps.gov/rowi/learn/management/lawsandpolicies.htm ✓ |  |
+| US-7971 | Blackstone River Valley National Histori | https://www.nps.gov/blrv/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted February 5, 2024 | https://www.nps.gov/blrv/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4582 | Washington-Rochambeau Revolutionary Rout | https://www.nps.gov/waro/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted June 16, 2026 | https://www.nps.gov/waro/learn/management/lawsandpolicies.htm ✓ |  |
+| US-7508 | Pulaski State Park | https://riparks.ri.gov/parks/pulaski-state-park | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://riparks.ri.gov/campgrounds/camping-policies ✓ |  |
+| US-10547 | Silver Spring State Recreation Area | https://dem.ri.gov/online-services/data-maps | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://dem.ri.gov/natural-resources-bureau/agriculture-and-forest-env ✓ |  |
+| US-5483 | Lincoln Woods State Forest | https://riparks.ri.gov/parks/lincoln-woods-state-park | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://riparks.ri.gov/campgrounds/camping-policies ✓ |  |
+| US-2880 | Snake Den State Park | https://riparks.ri.gov/other-state-lands/snake-dendame-farm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://riparks.ri.gov/campgrounds/camping-policies ✓ |  |
+
+### US-RI no map yet (50): the reason
+- US-0513 Block Island National Wildlife Refuge: no map link on file and none on the park page
+- US-10541 Gull Cove State Recreation Area: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://dem.ri.gov/natural-resources-bureau/fish-wildlife/map-charts; opened, a page that does not name this park (a generic agency page is not its map) https://dem.ri.gov/online-services/data-maps)
+- US-10542 Camp Cronin State Recreation Area: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://dem.ri.gov/natural-resources-bureau/fish-wildlife/map-charts; opened, a page that does not name this park (a generic agency page is not its map) https://dem.ri.gov/online-services/data-maps)
+- US-10543 Patriots Park State Historic Site: no map link on file and none on the park page
+- US-10544 Jerimoth Hill State Recreation Area: no map link on file and none on the park page
+- US-10545 Hillsdale Preserve Management Area: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://dem.ri.gov/online-services/data-maps)
+- US-10546 Eight Rod Farm Wildlife Management Area: no map link on file and none on the park page
+- US-10548 Barber Pond State Recreation Area: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://dem.ri.gov/natural-resources-bureau/fish-wildlife/map-charts; opened, a page that does not name this park (a generic agency page is not its map) https://dem.ri.gov/online-services/data-maps)
+- US-2868 Beavertail State Park: no map link on file and none on the park page
+- US-2869 Blackstone River State Park: no map link on file and none on the park page
+- US-2870 Brenton Point State Park: no map link on file and none on the park page
+- US-2871 Burlingame State Park: no map link on file and none on the park page
+- US-2872 Colt State Park: no map link on file and none on the park page
+- US-2873 Fishermen's Memorial State Park: no map link on file and none on the park page
+- US-2874 Fort Adams State Park: no map link on file and none on the park page
+- US-2875 Fort Wetherill State Park: no map link on file and none on the park page
+- US-2876 Goddard Memorial State Park: no map link on file and none on the park page
+- US-2877 Haines Memorial State Park: no map link on file and none on the park page
+- US-2878 Lincoln Woods State Park: no map link on file and none on the park page
+- US-2879 Rocky Point State Park: no map link on file and none on the park page
+- US-2881 World War II Veterans Memorial State Park: no map link on file and none on the park page
+- US-5482 Wickaboxet Wildlife Management Area: no map link on file and none on the park page
+- US-5484 George Washington Memorial State Forest: no map link on file and none on the park page
+- US-6979 Arcadia Management Area: no map link on file and none on the park page
+- US-6980 Beach Pond Wildlife Management Area: no map link on file and none on the park page
+- US-6981 Great Swamp Wildlife Management Area: no map link on file and none on the park page
+- US-6982 Big River Wildlife Management Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://dem.ri.gov/sites/g/files/xkgbur861/files/programs/maps/mapfile)
+- US-6983 Woody Hill Wildlife Management Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://dem.ri.gov/sites/g/files/xkgbur861/files/programs/naturalresou)
+- US-6984 Black Hut Wildlife Management Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://dem.ri.gov/sites/g/files/xkgbur861/files/programs/naturalresou)
+- US-6985 Round Top Wildlife Management Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://dem.ri.gov/sites/g/files/xkgbur861/files/programs/naturalresou)
+- US-6986 Simmons Mill Wildlife Management Area: no map link on file and none on the park page
+- US-6987 Cocumcussoc State Park: no map link on file and none on the park page
+- US-6988 Grills State Preserve: no map link on file and none on the park page
+- US-6989 Black Farm Wildlife Management Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://dem.ri.gov/sites/g/files/xkgbur861/files/programs/naturalresou)
+- US-6990 Nicholas Farm Wildlife Management Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://dem.ri.gov/sites/g/files/xkgbur861/files/programs/naturalresou)
+- US-6991 Rockville Wildlife Management Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://dem.ri.gov/sites/g/files/xkgbur861/files/programs/naturalresou)
+- US-6992 JL Curran State Park: no map link on file and none on the park page
+- US-7518 Kimball Wildlife Refuge: no map link on file and none on the park page
+- US-7714 Buck Hill Wildlife Management Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://dem.ri.gov/sites/g/files/xkgbur861/files/programs/bnatres/fish)
+- US-7715 Durfee Hill Wildlife Management Area: no map link on file and none on the park page
+
+## US-MA sample (random 12 per agency group, seed 28)
+| ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
+|---|---|---|---|---|---|---|
+| US-0321 | Great Meadows National Wildlife Refuge | https://www.fws.gov/refuge/great-meadows/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/great-meadows/visit-us/rules-policies ✓ |  |
+| US-0327 | Oxbow National Wildlife Refuge | https://www.fws.gov/refuge/oxbow/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/oxbow/visit-us/rules-policies ✓ |  |
+| US-0329 | Silvio O Conte National Wildlife Refuge | https://www.fws.gov/refuge/silvio-o-conte/visit-us | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/silvio-o-conte/visit-us/rules-policies ✓ |  |
+| US-0325 | Nantucket National Wildlife Refuge | https://www.fws.gov/refuge/nantucket/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/nantucket/visit-us/rules-policies ✓ |  |
+| US-0328 | Parker River National Wildlife Refuge | https://www.fws.gov/refuge/parker-river/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/parker-river/visit-us/rules-policies ✓ | managed by the U.S. Fish and Wildlife Service |
+| US-0320 | Assabet River National Wildlife Refuge | https://www.fws.gov/refuge/assabet-river/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/assabet-river/visit-us/rules-policies ✓ |  |
+| US-0322 | Mashpee National Wildlife Refuge | https://www.fws.gov/refuge/mashpee/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/mashpee/visit-us/rules-policies ✓ |  |
+| US-0324 | Monomoy National Wildlife Refuge | https://www.fws.gov/refuge/monomoy/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/monomoy/visit-us/rules-policies ✓ |  |
+| US-0742 | Lowell National Historical Park | https://www.nps.gov/lowe/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted June 29, 2022 | https://www.nps.gov/lowe/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0725 | Adams National Historical Park | https://www.nps.gov/adam/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted March 9, 2016 | https://www.nps.gov/adam/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0672 | Cape Cod National Seashore | https://www.nps.gov/caco/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted January 31, 2018 | https://www.nps.gov/caco/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0728 | Boston National Historical Park | https://www.nps.gov/bost/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted February 19, 2025 | https://www.nps.gov/bost/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0745 | Minute Man National Historical Park | https://www.nps.gov/mima/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted October 8, 2021 | https://www.nps.gov/mima/learn/management/lawsandpolicies.htm ✓ |  |
+
+### US-MA no map yet (1): the reason
+- US-0330 Thatcher Island National Wildlife Refuge: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.fws.gov/refuge/thacher-island/map)
+
 ## robots.txt said no (hosts we did not read)
-- dec.ny.gov: 25 addresses (User-agent: * | Allow: /core/*.css$ | Allow: /core/*.css? | Allow: /core/*.js$ | Allow: /core/*.js? )
-- www.pacodeandbulletin.gov: 306 addresses (User-agent: Googlebot | Disallow: /Display/pabull | Disallow: /Display/pacode | Allow: / | User-agen)
+- dec.ny.gov: 34 addresses (User-agent: * | Allow: /core/*.css$ | Allow: /core/*.css? | Allow: /core/*.js$ | Allow: /core/*.js? )
+- rigov.sharepoint.com: 9 addresses (User-Agent: * | Disallow: /)
 
 ## hosts resting a day (three strikes)
 - in.gov
@@ -1750,6 +1967,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - map.co.door.wi.us
 - mobile-maps-files.dnr.state.mn.us
 - parks.ky.gov
+- sojournertruthstatepark.info
 - wolfememorial.com
 - www.baysmountain.com
 - www.cgcounty.org

@@ -134,10 +134,38 @@
    "updated": "2026-10-29"
   },
   "US-NY": {
-   "status": "partial",
+   "status": "done",
    "parks": 851,
-   "checked": 375,
-   "left": 476,
+   "checked": 851,
+   "left": 0,
+   "updated": "2026-10-29"
+  },
+  "US-NJ": {
+   "status": "done",
+   "parks": 134,
+   "checked": 134,
+   "left": 0,
+   "updated": "2026-10-29"
+  },
+  "US-CT": {
+   "status": "done",
+   "parks": 157,
+   "checked": 157,
+   "left": 0,
+   "updated": "2026-10-29"
+  },
+  "US-RI": {
+   "status": "done",
+   "parks": 61,
+   "checked": 61,
+   "left": 0,
+   "updated": "2026-10-29"
+  },
+  "US-MA": {
+   "status": "partial",
+   "parks": 421,
+   "checked": 14,
+   "left": 407,
    "updated": "2026-10-29"
   }
  },
@@ -159,32 +187,33 @@
   "mobile-maps-files.dnr.state.mn.us": 1793316407.4270828,
   "iowaculture.gov": 1793316751.8942606,
   "www.cgcounty.org": 1793316859.6578937,
-  "www.lclt.org": 1793322015.230936
+  "www.lclt.org": 1793322015.230936,
+  "sojournertruthstatepark.info": 1793325011.1974332
  },
  "last": {
   "when": "2026-10-29",
   "areas": [
-   "US-PA",
    "US-NY",
    "US-NJ",
    "US-CT",
    "US-RI",
    "US-MA",
    "US-VT",
-   "US-NH"
+   "US-NH",
+   "US-ME"
   ],
   "stat": {
-   "requests": 1619,
-   "parks": 694,
-   "maps_ok": 481,
-   "maps_found": 453,
-   "dates": 52,
-   "rules": 348,
-   "browser": 308,
-   "robots": 331,
+   "requests": 2123,
+   "parks": 842,
+   "maps_ok": 470,
+   "maps_found": 442,
+   "dates": 148,
+   "rules": 653,
+   "browser": 65,
+   "robots": 43,
    "strikes": 3,
    "errors": 3,
-   "skipped_fresh": 175
+   "skipped_fresh": 375
   }
  }
 }
