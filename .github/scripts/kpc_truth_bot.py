@@ -48,7 +48,7 @@ REFRESH_DAYS = int(os.environ.get('REFRESH_DAYS') or 7)
 TOL = 0.15
 PDF_FIRST = 400_000
 TODAY = time.strftime('%Y-%m-%d')
-VER = 9   # Oct 28 (chat 11's KY grade): '708, 879' parse + summed lakes, other-unit pages, history words + stale years, unsure carries a cause, own-page handover hints, quoted URLs, 10-row gate, same-agency label
+VER = 10   # Oct 28 (chat 11's KY grade): '708, 879' parse + summed lakes, other-unit pages, history words + stale years, unsure carries a cause, own-page handover hints, quoted URLs, 10-row gate, same-agency label
 QUEUE = ['US-KY',
          'US-TN', 'US-NC', 'US-VA', 'US-WV', 'US-GA', 'US-AL', 'US-SC', 'US-FL', 'US-MS',
          'US-IN', 'US-IL', 'US-MO', 'US-WI', 'US-MN', 'US-IA', 'US-ND', 'US-SD',
@@ -640,7 +640,7 @@ def one_park(ref, park, ours, web, docs, ky, retired, bs):
     if ours and ours.get('whole_park'): r['note'] = f"whole park compared (POTA lists it in {len(ours.get('acres_by_state') or {})} states: {ours.get('acres_by_state')})"
     r['verdict'] = v; r['pct'] = pct
     if chosen:
-        r['official'] = {'acres': chosen['acres'], 'as': chosen['as'], 'line': chosen['line'], 'url': chosen['url'], 'read': TODAY, 'clean': chosen['clean'], 'why': chosen['why']}
+        r['official'] = {'acres': chosen['acres'], 'as': chosen['as'], 'line': chosen['line'], 'sent': chosen.get('sent', ''), 'url': chosen['url'], 'read': TODAY, 'clean': chosen['clean'], 'why': chosen['why']}
         if chosen.get('stale'): r['official']['stale_year'] = chosen['stale']
         r['same_agency'] = same_agency(chosen['url'], ours or {})   # fix 9: KDFWR outline vs a KDFWR page proves our copy, not KDFWR
     # a transfer hint from the land record itself: PAD-US says City / County / private while POTA calls it a state park
@@ -706,7 +706,7 @@ def run_area(area, state, web, docs_all, ky, ak, retired, bscore, news):
             for a2 in REF_STATES[ref]:
                 o2 = ours_ky(ref, park, ak) if a2 == 'US-KY' else ours_key((load(f'data/{"us" if a2.startswith("US") else "ca"}-key/{a2}.json', {}).get('parks') or {}).get(ref) or {})
                 if o2 and o2.get('acres'): whole += o2['acres']; parts[a2] = o2['acres']
-            if whole and whole > (ours.get('acres') or 0): ours = dict(ours, acres=round(whole), acres_by_state=parts, whole_park=True)
+            ours = dict(ours, acres=round(whole) if whole > (ours.get('acres') or 0) else ours.get('acres'), acres_by_state=parts, whole_park=True, states=REF_STATES[ref])   # v10: always marked, even when the other states' keys hold no piece
         STAT['parks'] += 1
         if not ours:
             D['parks'][ref] = {'n': park['n'], 't': park.get('t', ''), 'ours': None, 'verdict': 'no outline', 'checked': TODAY, 'ver': VER, 'handover': [], 'score': None}
@@ -867,7 +867,7 @@ def area_test(area, D):
     for ref, r in offs:
         u = r['official'].get('url', '')
         if re.search(r'/mission|didyouknow|/wildlife-management-areas/?$|/state-forests/?$', u) or (SHARED.get(u, 0) >= 3): bad.append(f'{ref}: an agency-wide page {u[:60]}')
-        ln = r['official'].get('line', '').lower(); mm = re.search(r'\d[\d,.]*\s*(?:million\s*)?[- ]?(?:acres?|hectares?)', ln)
+        ln = (r['official'].get('sent') or r['official'].get('line', '')).lower(); mm = re.search(r'\d[\d,.]*\s*(?:million\s*)?[- ]?(?:acres?|hectares?)', ln)   # v10: the SENTENCE, not the 220-char window (the window carried 'picnicking, camping' from the next sentence)
         if mm and (HARD_PART.search(ln) or NEAR_PART.search(ln[max(0, mm.start() - 45):mm.end() + 45])): bad.append(f"{ref}: a part sentence: {r['official'].get('line', '')[:80]}")
     for ref, r in D['parks'].items():
         if len(REF_STATES.get(ref) or []) > 1 and r.get('verdict') == 'off' and not (r.get('ours') or {}).get('whole_park'): bad.append(f'{ref}: cross-state park compared one state only')
