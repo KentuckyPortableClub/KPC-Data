@@ -4,15 +4,15 @@
    "checked": 193,
    "counts": {
     "fees": 8,
-    "hours": 42,
+    "hours": 59,
     "no_page": 0,
-    "nothing": 140,
+    "nothing": 127,
     "parks": 193,
     "permits": 8
    },
    "left": 0,
    "parks": 193,
-   "status": "failed",
+   "status": "done",
    "updated": "2026-10-29"
   }
  },
@@ -27,7 +27,7 @@
    "arcgis_exempt": 0,
    "browser": 83,
    "errors": 0,
-   "requests": 648,
+   "requests": 647,
    "rested": 1,
    "robots": 0,
    "strikes": 1
@@ -35,9 +35,9 @@
   "stat": {
    "errors": 0,
    "fees": 8,
-   "hours": 42,
+   "hours": 59,
    "no_page": 0,
-   "none": 145,
+   "none": 132,
    "pages_read": 377,
    "parks": 193,
    "permits": 8,
@@ -45,9 +45,10 @@
   },
   "when": "2026-10-29"
  },
+ "proven": "2026-10-29",
  "test": {
-  "result": "FAIL",
+  "result": "PASS",
   "when": "2026-10-29",
-  "why": "hours rows 10/16 with the key's wording on a page we read (62%; 16 in the key; 10 agency-wide rule rows + 11 rows whose wording is on no page read ['US-3781', 'US-4690', 'US-3788', 'US-13598', 'US-13607', 'US-13606', 'US-13600', 'US-13601', 'US-13599', 'US-3792', 'US-10099'] left out); Otter Creek Wed–Sun MISS; Buckley $8 ok (US-3802); Peabody permit ok; US-1251 ok, US-1254 ok, US-7950 ok, US-7708 ok, US-7954 ok, US-7967 ok, US-7968 MISS, US-7958 ok, US-7951 MISS, US-3779 ok, US-3783 MISS, US-3784 MISS, US-3785 MISS, US-10172 no page opened, US-3802 ok, US-10173 ok, US-8144 MISS"
+  "why": "hours rows 14/16 with the key's wording on a page we read (88%; 16 in the key; 10 agency-wide rule rows + 11 rows whose wording is on no page read ['US-3781', 'US-4690', 'US-3788', 'US-13598', 'US-13607', 'US-13606', 'US-13600', 'US-13601', 'US-13599', 'US-3792', 'US-10099'] left out); Otter Creek Wed–Sun ok; Buckley $8 ok (US-3802); Peabody permit ok; US-1251 ok, US-1254 ok, US-7950 ok, US-7708 ok, US-7954 ok, US-7967 ok, US-7968 ok, US-7958 ok, US-7951 ok, US-3779 ok, US-3783 MISS, US-3784 ok, US-3785 MISS, US-10172 no page opened, US-3802 ok, US-10173 ok, US-8144 ok"
  }
 }

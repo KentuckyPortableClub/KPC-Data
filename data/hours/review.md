@@ -4,7 +4,7 @@ Updated 2026-10-29. Every line is the agency's own sentence (H2). Refresh every 
 
 | area | parks | hours | fees | permits | nothing found | no page |
 |---|---|---|---|---|---|---|
-| US-KY | 193 | 42 | 8 | 8 | 140 | 0 |
+| US-KY | 193 | 59 | 8 | 8 | 127 | 0 |
 
 ## US-KY: 12-park sample for chat 8
 
@@ -26,6 +26,7 @@ Updated 2026-10-29. Every line is the agency's own sentence (H2). Refresh every 
   - Hours: “The Kentucky Horse Park will remain open during its regular hours of 9:00 AM – 5:00 PM.” · [www.kyhorsepark.com](https://www.kyhorsepark.com/)
   - Attraction fee: “Kentucky Horse Park (at the Man o’ War Memorial) – FREE Entry!” · [www.kyhorsepark.com](https://www.kyhorsepark.com/)
 - **US-1251 Carr Creek State Park**
+  - Hours: “Status: Open year round.” · [kentuckystateparks.reserveamerica.com](https://kentuckystateparks.reserveamerica.com/camping/carr-creek-state-park/r/campgroundDetails.do?contractCode=KY&parkId=91833)
   - Hours: “Sunday gate closes at 11:00 pm Wednesday thru.” · [kentuckystateparks.reserveamerica.com](https://kentuckystateparks.reserveamerica.com/camping/carr-creek-state-park/r/campgroundDetails.do?contractCode=KY&parkId=91833)
 - **US-1253 Dawkins Line Rail Trail State Park**
   - Hours: “The Dawkins Line Rail Trail is the largest rail-to-trail in the state and is open year-round.” · [parks.ky.gov](https://parks.ky.gov/explore/dawkins-line-rail-trail-7831)
@@ -35,14 +36,16 @@ Updated 2026-10-29. Every line is the agency's own sentence (H2). Refresh every 
   - Hours: “Trails and some access points are subject to close daily at dusk.” · [kentuckystateparks.reserveamerica.com](https://kentuckystateparks.reserveamerica.com/camping/ep-tom-sawyer-state-park/r/campgroundDetails.do?contractCode=KY&parkId=93600)
 - **US-1256 Fort Boonesborough State Park**
   - Hours: “The Fort is open Wednesday-Sunday from 9:00 am - 4:45 pm.” · [parks.ky.gov](https://parks.ky.gov/parks/find-a-park/fort-boonesborough-state-park-7811)
+  - Hours: “Open year-round.” · [parks.ky.gov](https://parks.ky.gov/parks/find-a-park/fort-boonesborough-state-park-7811)
 - **US-1259 Green River Lake State Park**
   - Hours: “Park grounds open year-round.” · [parks.ky.gov](https://parks.ky.gov/explore/green-river-lake-campground-7960)
 - **US-1260 John James Audubon State Park**
   - Hours: “Grounds are open from dawn to dusk but may be closed periodically due to floodwaters.” · [parks.ky.gov](https://parks.ky.gov/parks/find-a-park/john-james-audubon-state-park-7815)
+  - Hours: “Pickleball Four pickleball courts located by the picnic shelter open year-round.” · [parks.ky.gov](https://parks.ky.gov/parks/find-a-park/john-james-audubon-state-park-7815)
   - Attraction fee: “Rates Audubon Museum admission is as follows: - Adults (18+): $10.00 - Seniors (60+): $8.00 - Military Rate: $8.00 - Children/Students (6-17 & with college ID): $6.00 - Children (5 and under): $0.00 - Families (2 adults, 2 children): $25.00” · [parks.ky.gov](https://parks.ky.gov/parks/find-a-park/john-james-audubon-state-park-7815)
 - **US-1262 Kingdom Come State Park**
   - Hours: “Trails are open year-round.” · [parks.ky.gov](https://parks.ky.gov/cumberland/parks/recreation/kingdom-come-state-park)
 
 ## Kentucky test gate (H4)
 
-- 2026-10-29: **FAIL** · hours rows 10/16 with the key's wording on a page we read (62%; 16 in the key; 10 agency-wide rule rows + 11 rows whose wording is on no page read ['US-3781', 'US-4690', 'US-3788', 'US-13598', 'US-13607', 'US-13606', 'US-13600', 'US-13601', 'US-13599', 'US-3792', 'US-10099'] left out); Otter Creek Wed–Sun MISS; Buckley $8 ok (US-3802); Peabody permit ok; US-1251 ok, US-1254 ok, US-7950 ok, US-7708 ok, US-7954 ok, US-7967 ok, US-7968 MISS, US-7958 ok, US-7951 MISS, US-3779 ok, US-3783 MISS, US-3784 MISS, US-3785 MISS, US-10172 no page opened, US-3802 ok, US-10173 ok, US-8144 MISS
+- 2026-10-29: **PASS** · hours rows 14/16 with the key's wording on a page we read (88%; 16 in the key; 10 agency-wide rule rows + 11 rows whose wording is on no page read ['US-3781', 'US-4690', 'US-3788', 'US-13598', 'US-13607', 'US-13606', 'US-13600', 'US-13601', 'US-13599', 'US-3792', 'US-10099'] left out); Otter Creek Wed–Sun ok; Buckley $8 ok (US-3802); Peabody permit ok; US-1251 ok, US-1254 ok, US-7950 ok, US-7708 ok, US-7954 ok, US-7967 ok, US-7968 ok, US-7958 ok, US-7951 ok, US-3779 ok, US-3783 MISS, US-3784 ok, US-3785 MISS, US-10172 no page opened, US-3802 ok, US-10173 ok, US-8144 ok
