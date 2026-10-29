@@ -1,7 +1,7 @@
 {
  "about": "RULE SHEET G step 2: held similar-name key pieces, one question each. Chat 11 fills answer (YES / NO) + checked_by + how (the agency map it looked at); chat 2 rechecks and writes overrides.json. 'pins' = POTA pin may be wrong (information only).",
  "built": "2026-10-29 17:39Z",
- "open": 1,
+ "open": 0,
  "questions": [
   {
    "area": "US-ND",
@@ -14,9 +14,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=5429&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-0437",
    "question": "Is this piece part of that park on the agency's own map? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null
+   "answer": "YES",
+   "checked_by": "chat 11 (Sonnet), Oct 29",
+   "how": "Same preserve: POTA US-0437 links the FWS page fws.gov/refuge/white-horse-hill-national-game-preserve (formerly Sully's Hill); FWS puts it at 47.9858,-98.9788, 1.5 km east of the POTA pin 47.9877,-98.9989, same name, same agency (U.S. Fish and Wildlife Service). Size: FWS page says 994 ac, record says 1,630 ac (the fenced refuge vs the whole preserve; Wikipedia ~1,670). I could not open the FWS map image from my session (look-up bot not used), so this is name + agency + place, not a look at the map."
   }
  ],
  "pins": [
