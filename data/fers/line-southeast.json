@@ -13,19 +13,16 @@
   "US-MS"
  ],
  "since": "2026-10-28",
- "date": "2026-10-29 03:54 UTC",
- "verdict": "STOPPED",
+ "date": "2026-10-29 04:12 UTC",
+ "verdict": "PART READY FOR CHAT 8",
  "why": [
-  "Kentucky known-answers test not passing (18/19 on 2026-10-29)",
-  "water not checked: US-TN: 1 rows (the USGS water map / files had no answer there): never READY with one",
-  "water not checked: US-VA: 13 rows (the USGS water map / files had no answer there): never READY with one",
   "US-MS: 24 rows still waiting for a pass (out of time: run the worker again)"
  ],
- "known_answers": "18/19 on 2026-10-29",
+ "known_answers": "19/19 on 2026-10-29",
  "missing_check": {
-  "FOUND": 523,
-  "DROPPED": 1547,
-  "NEVER LOOKED AT": 14393
+  "FOUND": 530,
+  "DROPPED": 1536,
+  "NEVER LOOKED AT": 14397
  },
  "report": {
   "pass1": {
@@ -47,7 +44,7 @@
    "checked": 414,
    "date": "2026-10-29",
    "pairs tested": 0,
-   "still not checked": 1
+   "still not checked": 0
   }
  },
  "files": {
@@ -63,22 +60,17 @@
  },
  "US-TN": {
   "rows": 688,
-  "live": 82,
+  "live": 83,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "the outlines overlap, but the PAD-US Park Service fee record": 2,
    "the ownership map shows more than one owner across the spot": 1,
    "no public owner on the ownership map": 1,
-   "water not checked": 1,
    "low-confidence outline for Land Between the Lakes National R": 1
   },
   "dropped": 514,
   "merged": 86
- },
- "water_weak": {
-  "US-TN": 1,
-  "US-VA": 13
  },
  "US-NC": {
   "rows": 901,
@@ -94,17 +86,16 @@
   "merged": 210
  },
  "US-VA": {
-  "rows": 144,
-  "live": 43,
+  "rows": 148,
+  "live": 51,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "the ownership map shows more than one owner across the spot": 3,
-   "water not checked": 13,
-   "no public owner on the ownership map": 1
+   "no public owner on the ownership map": 2
   },
   "dropped": 35,
-  "merged": 49
+  "merged": 57
  },
  "US-WV": {
   "rows": 292,
@@ -172,8 +163,7 @@
   "dropped": 31,
   "merged": 30
  },
- "states_ready": [],
- "states_held": [
+ "states_ready": [
   "US-TN",
   "US-NC",
   "US-VA",
@@ -181,7 +171,9 @@
   "US-GA",
   "US-AL",
   "US-SC",
-  "US-FL",
+  "US-FL"
+ ],
+ "states_held": [
   "US-MS"
  ]
 }
