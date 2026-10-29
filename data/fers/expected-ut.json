@@ -12,8 +12,8 @@
  "date": "2026-10-29",
  "pass": true,
  "counts": {
-  "FOUND": 15,
-  "DROPPED": 212,
+  "FOUND": 45,
+  "DROPPED": 182,
   "NEVER LOOKED AT": 2854
  },
  "FOUND": [
@@ -150,6 +150,61 @@
   },
   {
    "refs": [
+    "US-11343",
+    "US-5867"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (3x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "row": "US-11343+US-5867@area@39.114,-110.846"
+  },
+  {
+   "refs": [
+    "US-11346",
+    "US-4397"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "row": "US-11346+US-4397@area@39.094,-111.661"
+  },
+  {
+   "refs": [
+    "US-11646",
+    "US-4397"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "row": "US-11646+US-4397@area@39.942,-111.344"
+  },
+  {
+   "refs": [
+    "US-11648",
+    "US-4396"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "row": "US-11648+US-4396@area@38.769,-112.412"
+  },
+  {
+   "refs": [
+    "US-11738",
+    "US-12618"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "row": "US-11738+US-12618@area@37.770,-112.836"
+  },
+  {
+   "refs": [
     "US-11739",
     "US-6033"
    ],
@@ -158,6 +213,280 @@
     "activated together by the same call on the same day (6x, POTA history)"
    ],
    "row": "US-11739+US-6033@same land@37.777,-113.183"
+  },
+  {
+   "refs": [
+    "US-11742",
+    "US-4395"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (7x, POTA history)"
+   ],
+   "row": "US-11742+US-4395@area@37.757,-112.771"
+  },
+  {
+   "refs": [
+    "US-3067",
+    "US-3095"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (75x, POTA history)"
+   ],
+   "row": "US-3067+US-3095@area@40.482,-111.486"
+  },
+  {
+   "refs": [
+    "US-3071",
+    "US-4396"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (13x, POTA history)"
+   ],
+   "row": "US-3071+US-4396@area@38.574,-112.351"
+  },
+  {
+   "refs": [
+    "US-3073",
+    "US-5864"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "row": "US-3073+US-5864@area@38.567,-110.747"
+  },
+  {
+   "refs": [
+    "US-3073",
+    "US-5867"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "row": "US-3073+US-5867@area@38.576,-110.752"
+  },
+  {
+   "refs": [
+    "US-3096",
+    "US-5779"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (18x, POTA history)"
+   ],
+   "row": "US-3096+US-5779@area@41.418,-112.074"
+  },
+  {
+   "refs": [
+    "US-3096",
+    "US-5971"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (8x, POTA history)"
+   ],
+   "row": "US-3096+US-5971@area@41.337,-112.138"
+  },
+  {
+   "refs": [
+    "US-4395",
+    "US-5821"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "row": "US-4395+US-5821@area@37.475,-113.643"
+  },
+  {
+   "refs": [
+    "US-4395",
+    "US-6006"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "row": "US-4395+US-6006@area@37.648,-112.885"
+  },
+  {
+   "refs": [
+    "US-4395",
+    "US-6065"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "row": "US-4395+US-6065@area@37.241,-113.408"
+  },
+  {
+   "refs": [
+    "US-4395",
+    "US-6066"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (6x, POTA history)"
+   ],
+   "row": "US-4395+US-6066@area@37.420,-113.397"
+  },
+  {
+   "refs": [
+    "US-4398",
+    "US-5838"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "row": "US-4398+US-5838@area@41.656,-111.775"
+  },
+  {
+   "refs": [
+    "US-4398",
+    "US-5933"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (10x, POTA history)"
+   ],
+   "row": "US-4398+US-5933@area@41.624,-111.661"
+  },
+  {
+   "refs": [
+    "US-4398",
+    "US-5941"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (22x, POTA history)"
+   ],
+   "row": "US-4398+US-5941@area@41.857,-111.692"
+  },
+  {
+   "refs": [
+    "US-4398",
+    "US-5947"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (13x, POTA history)"
+   ],
+   "row": "US-4398+US-5947@area@41.351,-111.796"
+  },
+  {
+   "refs": [
+    "US-4398",
+    "US-5963"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "row": "US-4398+US-5963@area@41.637,-112.018"
+  },
+  {
+   "refs": [
+    "US-5846",
+    "US-5849"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "row": "US-5846+US-5849@area@38.491,-110.171"
+  },
+  {
+   "refs": [
+    "US-5849",
+    "US-5859"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "row": "US-5849+US-5859@area@38.423,-110.397"
+  },
+  {
+   "refs": [
+    "US-5858",
+    "US-5867"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "row": "US-5858+US-5867@area@39.138,-110.692"
+  },
+  {
+   "refs": [
+    "US-5867",
+    "US-5896"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "row": "US-5867+US-5896@area@38.553,-110.953"
+  },
+  {
+   "refs": [
+    "US-5872",
+    "US-5893"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "row": "US-5872+US-5893@trail@37.755,-110.922"
+  },
+  {
+   "refs": [
+    "US-5913",
+    "US-5922"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (20x, POTA history)"
+   ],
+   "row": "US-5913+US-5922@trail@40.959,-111.408"
+  },
+  {
+   "refs": [
+    "US-5948",
+    "US-5949"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)",
+    "outlines about 0 m apart"
+   ],
+   "row": "US-5948+US-5949@area@39.896,-111.766"
+  },
+  {
+   "refs": [
+    "US-5967",
+    "US-5968"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (15x, POTA history)"
+   ],
+   "row": "US-5967+US-5968@area@41.139,-112.171"
+  },
+  {
+   "refs": [
+    "US-6012",
+    "US-6018"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "row": "US-6012+US-6018@river@37.142,-112.939"
   },
   {
    "refs": [
@@ -764,8 +1093,8 @@
     "POTA shows one session logged both parks",
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "not sure: the agency ownership map did not answer",
-   "rule": "rule 7 (NOT SURE is kept out)"
+   "reason": "dropped: inside the federal boundary, but the BLM surface management map shows this patch is not the agency's own land (state or other land inside a federal boundary is not an overlap; Brandon Oct 29)",
+   "rule": "see the reason"
   },
   {
    "refs": [
@@ -1075,20 +1404,8 @@
     "activated together by the same call on the same day (1x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "waiting for pass 3",
-   "rule": ""
-  },
-  {
-   "refs": [
-    "US-11343",
-    "US-5867"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (3x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "reason": "dropped in pass 3",
-   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
+   "reason": "not sure: the agency ownership map did not answer",
+   "rule": "rule 7 (NOT SURE is kept out)"
   },
   {
    "refs": [
@@ -1101,18 +1418,6 @@
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
-  },
-  {
-   "refs": [
-    "US-11346",
-    "US-4397"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "reason": "dropped in pass 3",
-   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   },
   {
    "refs": [
@@ -1149,30 +1454,6 @@
    ],
    "reason": "dropped in pass 3",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
-  },
-  {
-   "refs": [
-    "US-11646",
-    "US-4397"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "reason": "waiting for pass 3",
-   "rule": ""
-  },
-  {
-   "refs": [
-    "US-11648",
-    "US-4396"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "reason": "waiting for pass 3",
-   "rule": ""
   },
   {
    "refs": [
@@ -1213,18 +1494,6 @@
   {
    "refs": [
     "US-11738",
-    "US-12618"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (2x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "reason": "dropped in pass 3",
-   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
-  },
-  {
-   "refs": [
-    "US-11738",
     "US-4395"
    ],
    "why_expected": [
@@ -1248,18 +1517,6 @@
   },
   {
    "refs": [
-    "US-11742",
-    "US-4395"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (7x, POTA history)"
-   ],
-   "reason": "waiting for pass 3",
-   "rule": ""
-  },
-  {
-   "refs": [
     "US-12137",
     "US-5768"
    ],
@@ -1267,8 +1524,8 @@
     "POTA shows one session logged both parks",
     "activated together by the same call on the same day (9x, POTA history)"
    ],
-   "reason": "waiting for pass 3",
-   "rule": ""
+   "reason": "not sure: the agency ownership map did not answer",
+   "rule": "rule 7 (NOT SURE is kept out)"
   },
   {
    "refs": [
@@ -1327,20 +1584,8 @@
     "activated together by the same call on the same day (3x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "waiting for pass 3",
-   "rule": ""
-  },
-  {
-   "refs": [
-    "US-3067",
-    "US-3095"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (75x, POTA history)"
-   ],
-   "reason": "waiting for pass 3",
-   "rule": ""
+   "reason": "not sure: the agency ownership map did not answer",
+   "rule": "rule 7 (NOT SURE is kept out)"
   },
   {
    "refs": [
@@ -1380,18 +1625,6 @@
   },
   {
    "refs": [
-    "US-3071",
-    "US-4396"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (13x, POTA history)"
-   ],
-   "reason": "waiting for pass 3",
-   "rule": ""
-  },
-  {
-   "refs": [
     "US-3072",
     "US-4395"
    ],
@@ -1401,30 +1634,6 @@
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
-  },
-  {
-   "refs": [
-    "US-3073",
-    "US-5864"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (3x, POTA history)"
-   ],
-   "reason": "dropped in pass 2",
-   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
-  },
-  {
-   "refs": [
-    "US-3073",
-    "US-5867"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "reason": "dropped in pass 2",
-   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   },
   {
    "refs": [
@@ -1567,8 +1776,8 @@
     "POTA shows one session logged both parks",
     "activated together by the same call on the same day (5x, POTA history)"
    ],
-   "reason": "waiting for pass 3",
-   "rule": ""
+   "reason": "not sure: the agency ownership map did not answer",
+   "rule": "rule 7 (NOT SURE is kept out)"
   },
   {
    "refs": [
@@ -1579,8 +1788,8 @@
     "POTA shows one session logged both parks",
     "activated together by the same call on the same day (15x, POTA history)"
    ],
-   "reason": "waiting for pass 3",
-   "rule": ""
+   "reason": "not sure: the agency ownership map did not answer",
+   "rule": "rule 7 (NOT SURE is kept out)"
   },
   {
    "refs": [
@@ -1681,30 +1890,6 @@
   {
    "refs": [
     "US-3096",
-    "US-5779"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (18x, POTA history)"
-   ],
-   "reason": "waiting for pass 3",
-   "rule": ""
-  },
-  {
-   "refs": [
-    "US-3096",
-    "US-5971"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (8x, POTA history)"
-   ],
-   "reason": "dropped in pass 3",
-   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
-  },
-  {
-   "refs": [
-    "US-3096",
     "US-5973"
    ],
    "why_expected": [
@@ -1735,8 +1920,8 @@
     "POTA shows one session logged both parks",
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "waiting for pass 3",
-   "rule": ""
+   "reason": "dropped: inside the federal boundary, but the BLM surface management map / Forest Service ownership map (Basic Ownership, 2015 data) shows this patch is not the agency's own land (state or other land ",
+   "rule": "see the reason"
   },
   {
    "refs": [
@@ -1749,18 +1934,6 @@
    ],
    "reason": "dropped in pass 3",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
-  },
-  {
-   "refs": [
-    "US-4395",
-    "US-5821"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (2x, POTA history)"
-   ],
-   "reason": "waiting for pass 3",
-   "rule": ""
   },
   {
    "refs": [
@@ -1801,18 +1974,6 @@
   {
    "refs": [
     "US-4395",
-    "US-6006"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (2x, POTA history)"
-   ],
-   "reason": "dropped: side by side, not layered: Dixie National Forest is Forest Service land, the ground here is Park Service",
-   "rule": "rule 14 (ownership: side by side, not layered)"
-  },
-  {
-   "refs": [
-    "US-4395",
     "US-6033"
    ],
    "why_expected": [
@@ -1825,38 +1986,14 @@
   {
    "refs": [
     "US-4395",
-    "US-6065"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (2x, POTA history)"
-   ],
-   "reason": "dropped in pass 3",
-   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
-  },
-  {
-   "refs": [
-    "US-4395",
-    "US-6066"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (6x, POTA history)"
-   ],
-   "reason": "waiting for pass 3",
-   "rule": ""
-  },
-  {
-   "refs": [
-    "US-4395",
     "US-6067"
    ],
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "waiting for pass 3",
-   "rule": ""
+   "reason": "not sure: the agency ownership map did not answer",
+   "rule": "rule 7 (NOT SURE is kept out)"
   },
   {
    "refs": [
@@ -1879,8 +2016,8 @@
     "POTA shows one session logged both parks",
     "activated together by the same call on the same day (5x, POTA history)"
    ],
-   "reason": "waiting for pass 3",
-   "rule": ""
+   "reason": "not sure: the agency ownership map did not answer",
+   "rule": "rule 7 (NOT SURE is kept out)"
   },
   {
    "refs": [
@@ -2005,66 +2142,6 @@
   {
    "refs": [
     "US-4398",
-    "US-5838"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (3x, POTA history)"
-   ],
-   "reason": "dropped in pass 3",
-   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
-  },
-  {
-   "refs": [
-    "US-4398",
-    "US-5933"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (10x, POTA history)"
-   ],
-   "reason": "dropped in pass 3",
-   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
-  },
-  {
-   "refs": [
-    "US-4398",
-    "US-5941"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (22x, POTA history)"
-   ],
-   "reason": "dropped in pass 3",
-   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
-  },
-  {
-   "refs": [
-    "US-4398",
-    "US-5947"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (13x, POTA history)"
-   ],
-   "reason": "dropped in pass 3",
-   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
-  },
-  {
-   "refs": [
-    "US-4398",
-    "US-5963"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (2x, POTA history)"
-   ],
-   "reason": "dropped in pass 3",
-   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
-  },
-  {
-   "refs": [
-    "US-4398",
     "US-5973"
    ],
    "why_expected": [
@@ -2107,8 +2184,8 @@
     "POTA shows one session logged both parks",
     "activated together by the same call on the same day (21x, POTA history)"
    ],
-   "reason": "waiting for pass 3",
-   "rule": ""
+   "reason": "not sure: the agency ownership map did not answer",
+   "rule": "rule 7 (NOT SURE is kept out)"
   },
   {
    "refs": [
@@ -2196,18 +2273,6 @@
   },
   {
    "refs": [
-    "US-5846",
-    "US-5849"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "reason": "dropped in pass 2",
-   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
-  },
-  {
-   "refs": [
     "US-5848",
     "US-5849"
    ],
@@ -2220,18 +2285,6 @@
   },
   {
    "refs": [
-    "US-5849",
-    "US-5859"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "waiting for pass 3",
-   "rule": ""
-  },
-  {
-   "refs": [
     "US-5857",
     "US-5862"
    ],
@@ -2239,8 +2292,8 @@
     "POTA shows one session logged both parks",
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "waiting for pass 3",
-   "rule": ""
+   "reason": "not sure: the agency ownership map did not answer",
+   "rule": "rule 7 (NOT SURE is kept out)"
   },
   {
    "refs": [
@@ -2251,8 +2304,8 @@
     "POTA shows one session logged both parks",
     "activated together by the same call on the same day (4x, POTA history)"
    ],
-   "reason": "waiting for pass 3",
-   "rule": ""
+   "reason": "not sure: the agency ownership map did not answer",
+   "rule": "rule 7 (NOT SURE is kept out)"
   },
   {
    "refs": [
@@ -2265,18 +2318,6 @@
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
-  },
-  {
-   "refs": [
-    "US-5858",
-    "US-5867"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "waiting for pass 3",
-   "rule": ""
   },
   {
    "refs": [
@@ -2298,8 +2339,8 @@
     "POTA shows one session logged both parks",
     "activated together by the same call on the same day (6x, POTA history)"
    ],
-   "reason": "waiting for pass 3",
-   "rule": ""
+   "reason": "not sure: the agency ownership map did not answer",
+   "rule": "rule 7 (NOT SURE is kept out)"
   },
   {
    "refs": [
@@ -2363,18 +2404,6 @@
   {
    "refs": [
     "US-5867",
-    "US-5896"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (2x, POTA history)"
-   ],
-   "reason": "waiting for pass 3",
-   "rule": ""
-  },
-  {
-   "refs": [
-    "US-5867",
     "US-5903"
    ],
    "why_expected": [
@@ -2383,17 +2412,6 @@
    ],
    "reason": "dropped in pass 2",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
-  },
-  {
-   "refs": [
-    "US-5872",
-    "US-5893"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "waiting for pass 3",
-   "rule": ""
   },
   {
    "refs": [
@@ -2450,8 +2468,8 @@
     "POTA shows one session logged both parks",
     "activated together by the same call on the same day (4x, POTA history)"
    ],
-   "reason": "waiting for pass 3",
-   "rule": ""
+   "reason": "dropped: inside the federal boundary, but the BLM surface management map shows this patch is not the agency's own land (state or other land inside a federal boundary is not an overlap; Brandon Oct 29)",
+   "rule": "see the reason"
   },
   {
    "refs": [
@@ -2464,18 +2482,6 @@
    ],
    "reason": "dropped in pass 2",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
-  },
-  {
-   "refs": [
-    "US-5913",
-    "US-5922"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (20x, POTA history)"
-   ],
-   "reason": "waiting for pass 3",
-   "rule": ""
   },
   {
    "refs": [
@@ -2527,30 +2533,6 @@
   },
   {
    "refs": [
-    "US-5948",
-    "US-5949"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)",
-    "outlines about 0 m apart"
-   ],
-   "reason": "dropped in pass 3",
-   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
-  },
-  {
-   "refs": [
-    "US-5967",
-    "US-5968"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (15x, POTA history)"
-   ],
-   "reason": "waiting for pass 3",
-   "rule": ""
-  },
-  {
-   "refs": [
     "US-5967",
     "US-5973"
    ],
@@ -2582,20 +2564,8 @@
     "POTA shows one session logged both parks",
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "waiting for pass 3",
-   "rule": ""
-  },
-  {
-   "refs": [
-    "US-6012",
-    "US-6018"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "waiting for pass 3",
-   "rule": ""
+   "reason": "dropped: inside the federal boundary, but the BLM surface management map shows this patch is not the agency's own land (state or other land inside a federal boundary is not an overlap; Brandon Oct 29)",
+   "rule": "see the reason"
   },
   {
    "refs": [

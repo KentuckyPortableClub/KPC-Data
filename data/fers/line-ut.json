@@ -5,16 +5,15 @@
   "US-UT"
  ],
  "since": "2026-10-28",
- "date": "2026-10-29 00:56 UTC",
+ "date": "2026-10-29 18:14 UTC",
  "verdict": "STOPPED",
  "why": [
-  "US-UT: 150 rows still waiting for a pass (out of time: run the worker again)",
-  "water service: US-UT: 1 rows not checked because the USGS water map did not answer (run the worker again)"
+  "water not checked: US-UT: 1 rows (the USGS water map / files had no answer there): never READY with one"
  ],
- "known_answers": "18/18 on 2026-10-28",
+ "known_answers": "19/19 on 2026-10-29",
  "missing_check": {
-  "FOUND": 15,
-  "DROPPED": 212,
+  "FOUND": 45,
+  "DROPPED": 182,
   "NEVER LOOKED AT": 2854
  },
  "report": {
@@ -29,29 +28,39 @@
    "pairs tested": 299
   },
   "pass3": {
-   "agree with the pass before": 291,
-   "date": "2026-10-28",
-   "pairs tested": 281
+   "agree with the pass before": 148,
+   "date": "2026-10-29",
+   "pairs tested": 93
   },
   "pass5": {
-   "checked": 20,
-   "date": "2026-10-28",
+   "checked": 45,
+   "date": "2026-10-29",
    "pairs tested": 0,
    "still not checked": 1
   }
  },
+ "files": {
+  "US-UT": "data/fers/US-UT.json"
+ },
  "US-UT": {
   "rows": 1022,
-  "live": 49,
-  "waiting": 150,
+  "live": 76,
+  "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "the agency ownership map did not answer": 22,
-   "no public owner on the ownership map": 2,
-   "the ownership map shows more than one owner across the spot": 1,
+   "the agency ownership map did not answer": 67,
+   "no public owner on the ownership map": 3,
+   "this spot is 217 km from Salt Creek State Waterfowl Manageme": 1,
    "water not checked": 1
   },
-  "dropped": 717,
-  "merged": 80
- }
+  "dropped": 739,
+  "merged": 135
+ },
+ "water_weak": {
+  "US-UT": 1
+ },
+ "states_ready": [],
+ "states_held": [
+  "US-UT"
+ ]
 }
