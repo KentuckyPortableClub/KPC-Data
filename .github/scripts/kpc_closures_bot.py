@@ -1093,7 +1093,7 @@ def sources_for(area):
         firsts[x[2] or x[0]] = x
     out = list(firsts.values())
     pl = plug_for(area)
-    if pl and pl.get('url'): out.append((f'{area.lower()}-hunt-plug', pl.get('agency') or 'state agency', pl['url'], 'feed', 'quota-plug', 'state', [], []))   # ONE HUNT PLUG PER STATE
+    if pl and (pl.get('url') or list(HUNT_LISTS.glob(f'{area}-*.json'))): out.append((f'{area.lower()}-hunt-plug', pl.get('agency') or 'state agency', pl.get('url') or f'hunt-list:{area}', 'feed', 'quota-plug', 'state', [], []))   # ONE HUNT PLUG PER STATE
     return out
 
 
@@ -1135,11 +1135,52 @@ def plug_refs(name, parks):
     return refs, miss
 
 
+HUNT_LISTS = pathlib.Path('data/closures/hunt-lists')
+
+
+def hand_list(area, pl):
+    """Brandon (Oct 29 12:08 AM): 'the guide is written once a year and does not change: I'll make a list that is the rule for KY till
+    it expires end of February, till the next guide comes out.' Every state works the same way. A list = data/closures/hunt-lists/
+    <area>-<season>.json written by chat 8 from the state's yearly guide and CHECKED by Brandon ('checked_by' set). Rows:
+    {ref, name, from, to, kind: 'closed' | 'note', what, page}. -> rows for the reader, or None when there is no checked, unexpired list."""
+    files = sorted(HUNT_LISTS.glob(f'{area}-*.json'))
+    L = None
+    for f in reversed(files):
+        d = load(f, {}) or {}
+        if d.get('checked_by') and str(d.get('expires') or '9999') >= TODAY.isoformat(): L = (f, d); break
+    log = PLUG_LOG.setdefault(area, {'rows': 0, 'closures': 0, 'notes': 0, 'unmatched': [], 'no_page': [], 'evidence': {}})
+    if not L:
+        if files: log['list'] = f'{files[-1].name}: not checked yet or expired (not used)'
+        return None
+    f, d = L
+    log['list'] = f"{f.name} (season {d.get('season')}, checked by {d.get('checked_by')}, expires {d.get('expires')})"
+    rows = []
+    for r in d.get('rows') or []:
+        try: frm = dt.date.fromisoformat(r['from']); to = dt.date.fromisoformat(r.get('to') or r['from'])
+        except Exception: log['unmatched'].append(f"bad dates: {r}"[:120]); continue  # noqa: BLE001
+        if not r.get('ref'): log['unmatched'].append(str(r.get('name'))[:80]); continue
+        log['rows'] += 1
+        closed = (r.get('kind') or 'closed') == 'closed'
+        what = r.get('what') or 'deer quota hunt'
+        sent = (f"{r.get('dates') or frm.strftime('%b %-d')}: closed to everyone except drawn hunters (and one helper each) for the {what} ({r.get('name') or ''})" if closed
+                else f"{r.get('dates') or frm.strftime('%b %-d')}: {what} for drawn hunters ({r.get('name') or ''}); the area stays open")
+        cl = {'from': frm, 'to': to, 'dates_clear': True, 'flags': {'emergency': False, 'longterm': False, 'annually': False}, 'lang': 'en',
+              **({'class': 'hunt', 'what': 'closed to non-hunters', 'hunt_item': True} if closed else {'class': 'note', 'note_kind': 'season', 'what': 'quota hunt dates (the area stays open)'})}
+        log['closures' if closed else 'notes'] += 1
+        rows.append({'name': None, 'names': [r.get('name') or ''], 'head': r.get('name') or '', 'refs': [r['ref']], 'home': [], 'title': f"{r.get('name') or ''}: {what}",
+                     'text': sent, 'sent': sent, 'end': None, 'at': None, 'link': r.get('page') or d.get('source') or pl.get('people_page') or pl.get('url'),
+                     'date': None, 'year': SEASON_YEAR, 'hunt_page': True, 'plug_cl': cl})
+    notice(f"{area} HUNT LIST COUNT: {log['list']}: rows {log['rows']}, closures {log['closures']}, notes {log['notes']}, problems {len(log['unmatched'])}")
+    return rows
+
+
 def src_quota_plug(area, pl, parks):
     """ONE HUNT PLUG PER STATE, kind 'quota-table-pdf' (Fable, Oct 29): the guide's table gives the DATES, the area's own page gives
     the RULE. Table row + a closing sentence on the area page = a hunt closure ('closed to everyone except drawn hunters'); a row
     whose page has no closing sentence = a note (the area stays open). Never a date the guide does not print."""
-    if pl.get('kind') != 'quota-table-pdf': raise RuntimeError(f"hunt plug kind {pl.get('kind')!r} not built yet")
+    lst = hand_list(area, pl)
+    if lst is not None: return lst          # Brandon Oct 29 12:08 AM: the state's CHECKED list (from its yearly guide) is the rule until it expires
+    if pl.get('kind') != 'quota-table-pdf': raise RuntimeError(f"hunt plug kind {pl.get('kind')!r}: no checked list yet (chat 8 makes it, Brandon checks)")
     st, hd, body, final = M.get(safe_url(pl['url']))
     STAT['requests'] += 1
     if st not in (200, 206): raise RuntimeError(f'HTTP {st}' if isinstance(st, int) else str(st))

@@ -134,7 +134,7 @@
    ]
   }
  },
- "hunt_plugs_about": "ONE HUNT PLUG PER STATE (Brandon Oct 28 9:00 PM: 'that won't work for every state'). A plug says where that state prints its per-area hunt dates and how to read them. kind 'quota-table-pdf' = a guide table (one row per area: number, area, dates) + the area's OWN page sentence that says it closes during the quota hunt (Fable Oct 29): table dates + closing sentence = a closure; a row whose area page has no closing sentence = a note (the area stays open). A state with NO plug gets NO invented closures: its cards show the state's hunting seasons + 'check <agency> for area closures' (fallback). New states come from chat 8's KPC_HuntClosureSources_desk.md; nothing new is shown without Brandon's GO.",
+ "hunt_plugs_about": "ONE HUNT PLUG PER STATE (Brandon Oct 28 9:00 PM: 'that won't work for every state'). A plug says where that state prints its per-area hunt dates and how to read them. kind 'quota-table-pdf' = a guide table (one row per area: number, area, dates) + the area's OWN page sentence that says it closes during the quota hunt (Fable Oct 29): table dates + closing sentence = a closure; a row whose area page has no closing sentence = a note (the area stays open). A state with NO plug gets NO invented closures: its cards show the state's hunting seasons + 'check <agency> for area closures' (fallback). New states come from chat 8's KPC_HuntClosureSources_desk.md; nothing new is shown without Brandon's GO. Oct 29 12:08 AM (Brandon): every state's guide is written once a year, so each plug's rule is a CHECKED LIST per season (data/closures/hunt-lists/<area>-<season>.json, see README there): chat 8 makes it from the guide, Brandon checks it, it expires at the season's end; the bot uses ONLY a checked, unexpired list (Kentucky's PDF reader stays as the fallback until its list is checked).",
  "hunt_plugs": {
   "US-KY": {
    "kind": "quota-table-pdf",
@@ -157,7 +157,16 @@
      "US-4484"
     ]
    },
-   "grey_area": "G-H1 (for Brandon / chat 8): a WMA page that only says a deer SEASON is closed during the quota hunt ('Closed to archery/crossbow deer season during department-administered quota hunts') is filed as a NOTE (the area stays open), not 'closed to everyone'. The Oct 25 hand list files those WMAs as closed to everyone: rule which is right."
+   "grey_area": "G-H1 (for Brandon / chat 8): a WMA page that only says a deer SEASON is closed during the quota hunt ('Closed to archery/crossbow deer season during department-administered quota hunts') is filed as a NOTE (the area stays open), not 'closed to everyone'. The Oct 25 hand list files those WMAs as closed to everyone: rule which is right.",
+   "list": "data/closures/hunt-lists/US-KY-2026-27.json (chat 8 makes it from the guide, Brandon checks; the rule until 2027-02-28)",
+   "list_expires": "2027-02-28"
+  },
+  "US-TN": {
+   "kind": "hand-list",
+   "agency": "Tennessee Wildlife Resources Agency (TWRA)",
+   "people_page": "https://www.tn.gov/twra/hunting.html",
+   "list": "data/closures/hunt-lists/US-TN-2026-27.json (NEXT: chat 8 makes it from TWRA's 2026-27 hunting guide, Brandon checks)",
+   "list_expires": "2027-02-28"
   }
  }
 }
