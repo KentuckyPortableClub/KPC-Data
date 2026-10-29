@@ -1,0 +1,75 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "mtidmt",
+ "states": [
+  "US-ID",
+  "US-MT"
+ ],
+ "since": "2026-10-29",
+ "date": "2026-10-29 06:50 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
+ "known_answers": "19/19 on 2026-10-29",
+ "missing_check": {
+  "FOUND": 53,
+  "DROPPED": 133,
+  "NEVER LOOKED AT": 2444
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-29",
+   "pairs tested": 732,
+   "pairs whose boxes touch": 732
+  },
+  "pass2": {
+   "agree with the pass before": 1850,
+   "date": "2026-10-29",
+   "pairs tested": 172
+  },
+  "pass3": {
+   "agree with the pass before": 612,
+   "date": "2026-10-29",
+   "pairs tested": 166
+  },
+  "pass5": {
+   "checked": 43,
+   "date": "2026-10-29",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-ID": "data/fers/US-ID.json",
+  "US-MT": "data/fers/US-MT.json"
+ },
+ "US-ID": {
+  "rows": 1220,
+  "live": 49,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "the agency ownership map did not answer": 16,
+   "no public owner on the ownership map": 1
+  },
+  "dropped": 932,
+  "merged": 222
+ },
+ "US-MT": {
+  "rows": 944,
+  "live": 30,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "low-confidence outline for Flathead National Wild and Scenic": 3,
+   "the agency ownership map did not answer": 2,
+   "no public owner on the ownership map": 2
+  },
+  "dropped": 702,
+  "merged": 205
+ },
+ "states_ready": [
+  "US-ID",
+  "US-MT"
+ ],
+ "states_held": []
+}
