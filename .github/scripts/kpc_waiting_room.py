@@ -1,0 +1,598 @@
+#!/usr/bin/env python3
+"""THE WAITING ROOM checker (RULE SHEET F, KPC-Links .claude/notes/mapping.md). Built Oct 28 2026 night (Opus, chat 10) from
+chat 11's KPC_WaitingRoom_Checks_desk.md + HQ's 12:38 PM item. NOT SWITCHED ON: no bot writes to data/waiting/in/ yet and the
+workflow has no schedule. Brandon's GO switches it on, bot by bot.
+
+WHAT IT DOES. A bot that saves a CHANGED data file puts it in data/waiting/in/<live path>. This checker compares that NEW file with
+the LIVE one (and with other bots' data + the permanent known answers in data/waiting/known/), and per file says:
+  PASS          -> it goes live at once (the replaced live copy is kept in data/waiting/previous/<path> for UNDO)
+  HOLD          -> the new file waits in data/waiting/in/, the live file stays as it was, ONE 'please look' line for chat 11
+  LIVE-FILTERED -> closures only (they NEVER wait, F-3): the file goes live with the rows that break a reject rule taken out
+BUILT RIGHT (Brandon): (a) INDEPENDENT: imports no bot code and never reads a bot's own gate / READY / 'test' fields; (b) a check
+that cannot run, an unknown kind of file, or any error = HOLD, never pass; (c) the REPLAY TEST (data/waiting/replay.json: the real
+bad outputs from git history + 3 good outputs) must come back 100% right before it is switched on; (e) a held file never blocks
+another file; (f) its own failure = nothing is promoted (everything waits) + one line to chat 11; no email (the workflow only goes
+red when the checker has not run successfully for a whole day).
+
+Use:  kpc_waiting_room.py check   [--promote]        every file under data/waiting/in/ (promote only when WAITING_ON=1)
+      kpc_waiting_room.py replay                     the replay test; prints REPLAY=PASS|FAIL and writes data/waiting/replay.md
+      kpc_waiting_room.py undo    <live path>        put back the previous good copy of one file (one bot / one state)
+      kpc_waiting_room.py undo-bot <bot> [<area>]    every file of one bot (optionally one area, e.g. US-KY)
+      kpc_waiting_room.py release <live path>        a person approved a held file: it goes live (previous copy kept)
+Env: DATA (KPC-Data checkout, default .) · LINKS (KPC-Links checkout, default ../links) · NET=1 (link re-tests may use the
+     network) · WAITING_ON=1 (promotion allowed; unset = report only)."""
+import copy, datetime as dt, glob, json, math, os, pathlib, random, re, shutil, subprocess, sys, time, urllib.request
+
+DATA = pathlib.Path(os.environ.get('DATA') or '.')
+LINKS = pathlib.Path(os.environ.get('LINKS') or '../links')
+W = DATA / 'data' / 'waiting'
+TODAY = dt.date.today()
+NET = os.environ.get('NET') == '1'
+UA = 'KPC waiting-room checker (https://kentuckyportableclub.github.io/KPC-Links/; ham radio club; 1 request per 2 s per host)'
+LINE_RX = re.compile(r'trail|river|parkway|byway|scenic|greenway|canal|route|corridor', re.I)   # F-2: line parks (POTA's 100-ft rule)
+TOLLFREE = re.compile(r'^\D*1?\D*8(00|33|44|55|66|77|88)\D')
+STATE_NAMES = {'AL': 'Alabama', 'AK': 'Alaska', 'AZ': 'Arizona', 'AR': 'Arkansas', 'CA': 'California', 'CO': 'Colorado', 'CT': 'Connecticut',
+               'DE': 'Delaware', 'DC': 'District of Columbia', 'FL': 'Florida', 'GA': 'Georgia', 'HI': 'Hawaii', 'ID': 'Idaho', 'IL': 'Illinois',
+               'IN': 'Indiana', 'IA': 'Iowa', 'KS': 'Kansas', 'KY': 'Kentucky', 'LA': 'Louisiana', 'ME': 'Maine', 'MD': 'Maryland',
+               'MA': 'Massachusetts', 'MI': 'Michigan', 'MN': 'Minnesota', 'MS': 'Mississippi', 'MO': 'Missouri', 'MT': 'Montana', 'NE': 'Nebraska',
+               'NV': 'Nevada', 'NH': 'New Hampshire', 'NJ': 'New Jersey', 'NM': 'New Mexico', 'NY': 'New York', 'NC': 'North Carolina',
+               'ND': 'North Dakota', 'OH': 'Ohio', 'OK': 'Oklahoma', 'OR': 'Oregon', 'PA': 'Pennsylvania', 'RI': 'Rhode Island',
+               'SC': 'South Carolina', 'SD': 'South Dakota', 'TN': 'Tennessee', 'TX': 'Texas', 'UT': 'Utah', 'VT': 'Vermont', 'VA': 'Virginia',
+               'WA': 'Washington', 'WV': 'West Virginia', 'WI': 'Wisconsin', 'WY': 'Wyoming'}
+
+
+class Unsure(Exception):
+    """A check that could not run: the file HOLDS (F-4: unsure = hold)."""
+
+
+# ------------------------------------------------------------------------------------------------ small helpers
+def load(p, d=None):
+    try:
+        p = pathlib.Path(p)
+        if str(p).endswith('.gz'):
+            import gzip
+            with gzip.open(p, 'rt', encoding='utf-8') as fh: return json.load(fh)
+        return json.load(open(p, encoding='utf-8'))
+    except Exception: return d  # noqa: BLE001
+
+
+def km(a, b, c, d):
+    r = math.radians
+    x = math.sin(r(c - a) / 2) ** 2 + math.cos(r(a)) * math.cos(r(c)) * math.sin(r(d - b) / 2) ** 2
+    return 12742 * math.asin(math.sqrt(min(1, x)))
+
+
+def known(kind): return load(W / 'known' / f'{kind}.json', {}) or {}
+
+
+def st_of(path):
+    m = re.search(r'(?:US-)?([A-Z]{2})\.json', pathlib.Path(path).name)
+    return m.group(1) if m else ''
+
+
+_PARKS = {}
+def parks(st):
+    """POTA park pins for a state: [name, ?, type, ..., lat, lon] rows from data/parkinfo (the shared park list, not a bot's own)."""
+    if st not in _PARKS:
+        _PARKS[st] = (load(DATA / 'data' / 'parkinfo' / f'US-{st}.json', {}) or load(LINKS / 'data' / 'parkinfo' / f'US-{st}.json', {}) or {}).get('parks')
+    if not _PARKS[st]: raise Unsure(f'no park list for {st} (data/parkinfo/US-{st}.json)')
+    return _PARKS[st]
+
+
+_SHAPES = None
+def inside(x, y, ring):
+    c = False; j = len(ring) - 1
+    for i in range(len(ring)):
+        xi, yi = ring[i][0], ring[i][1]; xj, yj = ring[j][0], ring[j][1]
+        if (yi > y) != (yj > y) and x < (xj - xi) * (y - yi) / ((yj - yi) or 1e-12) + xi: c = not c
+        j = i
+    return c
+
+
+def in_state(st, la, lo, slack=.05):
+    global _SHAPES
+    if _SHAPES is None:
+        _SHAPES = {b['a']: [pl[0] for pl in b['p']] for b in (load(LINKS / 'kpc-us-states.json', []) or [])}
+    rings = _SHAPES.get(st)
+    if not rings: raise Unsure(f'no state outline for {st} (KPC-Links kpc-us-states.json)')
+    return any(inside(lo + dx, la + dy, r) for dx, dy in ((0, 0), (slack, 0), (-slack, 0), (0, slack), (0, -slack)) for r in rings)
+
+
+def drop(old_n, new_n, frac, floor=10):
+    """True when new_n fell below frac of old_n (and the old file was big enough to judge)."""
+    return old_n >= floor and new_n < frac * old_n
+
+
+def share(urls, n_parks, cap=20, pct=.10):
+    """URLs used by more than `cap` parks, or more than pct of a state's parks (when it has 30+): one page for many parks."""
+    from collections import Counter
+    c = Counter(u for u in urls if u)
+    lim = min(cap, max(3, int(pct * n_parks))) if n_parks >= 30 else cap
+    return [(u, k) for u, k in c.most_common() if k > lim]
+
+
+# ------------------------------------------------------------------------------------------------ the checks, one per kind of file
+# each: (path, new, live, ctx) -> (holds [reasons], notes [info]); raise Unsure when it cannot judge. ctx['set'] = {path: new} of the batch.
+
+def c_access(path, new, live, ctx):
+    st = st_of(path); P = parks(st); K = known('access')
+    holds, notes = [], []
+    far, outside, unknown, n_new = [], 0, 0, 0
+    for ref, pts in (new.get('parks') or {}).items():
+        v = P.get(ref)
+        if not v: unknown += len(pts); continue
+        line = bool(LINE_RX.search(f'{v[0]} {v[2] or ""}'))
+        for q in pts:
+            n_new += 1
+            if abs(q[0]) < .01 and abs(q[1]) < .01: outside += 1; continue
+            if v[5] is not None and not line and km(v[5], v[6], q[0], q[1]) > K.get('far_km', 100): far.append((ref, round(km(v[5], v[6], q[0], q[1]))))
+            elif not in_state(st, q[0], q[1], .3): outside += 1
+    n_old = sum(len(v) for v in ((live or {}).get('parks') or {}).values())
+    if far: holds.append(f'F-A1 {len(far)} points over {K.get("far_km", 100)} km from their park pin (not a line park), e.g. ' + ', '.join(f'{r} {k} km' for r, k in far[:3]))
+    if drop(n_old, n_new, .6, 20): holds.append(f'F-A2 points {n_old} -> {n_new} (more than 40% gone)')
+    if n_new and outside / n_new > .01: holds.append(f'F-A3 {outside} of {n_new} points at 0,0 or outside the state')
+    if n_new and unknown / max(1, n_new) > .02: holds.append(f'F-A4 {unknown} points on park numbers not in the park list')
+    for ref, mn in ((K.get('keep') or {}).get(pathlib.Path(path).name) or {}).items():
+        if len((new.get('parks') or {}).get(ref) or []) < mn: holds.append(f'F-K known answer: {ref} must keep {mn}+ points')
+    return holds, notes
+
+
+def c_campfed(path, new, live, ctx, state_file=True):
+    st = st_of(path); holds, notes = [], []
+    camps = new.get('camps') or []
+    old = (live or {}).get('camps') or []
+    if drop(len(old), len(camps), .7): holds.append(f'F-C1 campgrounds {len(old)} -> {len(camps)} (more than 30% gone)')
+    out = [c for c in camps if c[2] is not None and not in_state(st, c[2], c[3])]
+    if camps and len(out) / len(camps) > .01: holds.append(f'F-C2 {len(out)} of {len(camps)} pins outside {st}, e.g. {out[0][1]}')
+    if state_file:   # F-C3: one campground, one state file: the batch's files + every other live file of the same folder
+        folder = pathlib.Path(path).parent
+        others = {}
+        for f in glob.glob(str(LINKS / folder / 'US-*.json')) + glob.glob(str(DATA / folder / 'US-*.json')):   # KPC-Links first: campfed / campstate are written there
+            nm = pathlib.Path(f).name
+            if nm == pathlib.Path(path).name or nm in others: continue
+            others[nm] = {c[0] for c in ((ctx['set'].get(str(folder / nm)) or load(f, {}) or {}).get('camps') or [])}
+        mine = {c[0] for c in camps}
+        dup = {nm: len(mine & ids) for nm, ids in others.items() if mine & ids}
+        if dup: holds.append(f'F-C3 {sum(dup.values())} campground ids are also in another state file: ' + ', '.join(f'{k} {v}' for k, v in sorted(dup.items())[:5]))
+    ids = [c[0] for c in camps]
+    if len(ids) != len(set(ids)): holds.append(f'F-C4 {len(ids) - len(set(ids))} campground ids twice in the file')
+    if st == 'KY' and folder_is(path, 'campfed'):   # F-K: the hand-checked Kentucky Recreation.gov camps (KPC-Links kpc-campgrounds.json)
+        hand = [g for p in (load(LINKS / 'kpc-campgrounds.json', {}) or {}).get('parks', []) for g in p.get('campgrounds', [])
+                if 'recreation.gov' in (g.get('reserve', '') + g.get('source', '')) and g.get('la') and g.get('lo')]
+        if not hand: raise Unsure('no Kentucky hand camps to compare (KPC-Links kpc-campgrounds.json)')
+        pool = camps + ((ctx['set'].get('data/campfed/US-TN.json') or load(DATA / 'data/campfed/US-TN.json', {}) or {}).get('camps') or [])
+        miss = sorted({g['name'] for g in hand if not any(km(g['la'], g['lo'], c[2], c[3]) <= 2 for c in pool if c[2] is not None)})
+        if miss: holds.append('F-K known Kentucky federal camps missing within 2 km: ' + ', '.join(miss[:5]))
+    return holds, notes
+
+
+def folder_is(path, name): return f'/{name}/' in '/' + str(path).replace('\\', '/')
+
+
+def c_campstate(path, new, live, ctx): return c_campfed(path, new, live, ctx, state_file=False)
+
+
+def c_campinfo(path, new, live, ctx):
+    from collections import Counter
+    holds, notes = [], []
+    camps = list((new.get('camps') or {}).values())
+    rv = [(c.get('name'), c.get('rv_max_ft')) for c in camps if isinstance(c.get('rv_max_ft'), (int, float)) and not 10 <= c['rv_max_ft'] <= 100]
+    if rv: holds.append(f'F-I1 {len(rv)} RV lengths outside 10-100 ft, e.g. {rv[0][0]} {rv[0][1]} ft')
+    tot = Counter()
+    for c in camps:
+        s = c.get('sites'); t = s.get('total') if isinstance(s, dict) else s
+        if isinstance(t, (int, float)):
+            if not 1 <= t <= 1000: holds.append(f"F-I2 {c.get('name')} {t} sites (outside 1-1,000)")
+            tot[(c.get('agency'), t)] += 1
+    same = [(k, n) for k, n in tot.items() if n > 3]
+    if same: holds.append(f'F-I3 the same site count on {same[0][1]} camps of one agency ({same[0][0][0]}: {same[0][0][1]}): copied from a shared page?')
+    ph = [c.get('name') for c in camps if c.get('phone') and TOLLFREE.match(str(c['phone']))]
+    if ph: holds.append(f'F-I4 {len(ph)} toll-free reservation numbers kept as a camp phone, e.g. {ph[0]}')
+    fee = [c.get('name') for c in camps if re.search(r'million|renovat|\bgrant\b', json.dumps(c.get('fees') or ''), re.I)]
+    if fee: holds.append(f'F-I5 {len(fee)} fees that read like news / money totals, e.g. {fee[0]}')
+    return holds, notes
+
+
+def coords(g):
+    if not g: return []
+    t, c = g.get('type'), g.get('coordinates') or []
+    if t == 'LineString': return c
+    if t == 'MultiLineString': return [p for l in c for p in l]
+    if t == 'GeometryCollection': return [p for gg in g.get('geometries') or [] for p in coords(gg)]
+    return []
+
+
+def length_km(g):
+    t, c = (g or {}).get('type'), (g or {}).get('coordinates') or []
+    lines = [c] if t == 'LineString' else c if t == 'MultiLineString' else []
+    return sum(km(a[1], a[0], b[1], b[0]) for l in lines for a, b in zip(l, l[1:]))
+
+
+def c_trails(path, new, live, ctx):
+    holds, notes = [], []
+    pn, po = coords(new.get('geometry')), coords((live or {}).get('geometry'))
+    if not pn: holds.append('F-T1 the line has no points')
+    if po and len(pn) < .5 * len(po): holds.append(f'F-T2 points {len(po)} -> {len(pn)} (under half the saved line)')
+    ln, lo = length_km(new.get('geometry')), length_km((live or {}).get('geometry'))
+    if lo > 1 and not (.75 * lo <= ln <= 1.5 * lo): holds.append(f'F-T3 length {lo:.0f} -> {ln:.0f} km (outside -25% / +50%)')
+    return holds, notes
+
+
+def retest(urls, n=20):
+    """Re-test up to n kept links (GET, 2 s per host). -> (tested, dead [url]). No network = Unsure (hold)."""
+    if not NET: raise Unsure('link re-test needs the network (NET=1): not run, so the file waits')
+    urls = sorted(set(u for u in urls if u and u.startswith('http')))
+    random.Random(str(TODAY)).shuffle(urls)
+    last, dead, tested = {}, [], 0
+    for u in urls[:n]:
+        h = u.split('/')[2]
+        w = 2 - (time.time() - last.get(h, 0))
+        if w > 0: time.sleep(w)
+        last[h] = time.time()
+        try:
+            with urllib.request.urlopen(urllib.request.Request(u, headers={'User-Agent': UA}), timeout=30) as r: ok = r.status < 400
+        except Exception as e:  # noqa: BLE001
+            ok = getattr(e, 'code', 0) in (401, 403, 405, 429)   # alive, just not for bots
+        tested += 1
+        if not ok: dead.append(u)
+    return tested, dead
+
+
+def c_docs(path, new, live, ctx):
+    holds, notes = [], []
+    P = new.get('parks') or {}
+    banned = re.compile(known('docs').get('banned_hosts') or r'inciweb|google\.[a-z.]+/maps|maps\.app\.goo\.gl|goo\.gl/maps|facebook\.com', re.I)
+    for kind in ('map', 'rules'):
+        urls = [((r.get(kind) or {}).get('url')) for r in P.values()]
+        for u, k in share(urls, len(P)): holds.append(f'F-D1 one {kind} page on {k} of {len(P)} parks: {u[:80]}')
+        bad = [u for u in urls if u and banned.search(u)]
+        if bad: holds.append(f'F-D2 {len(bad)} {kind} links on a banned host (fire news / map pins / social), e.g. {bad[0][:70]}')
+    kept = [(r.get(k) or {}).get('url') for r in P.values() for k in ('map', 'rules')]
+    try:
+        tested, dead = retest(kept)
+        if tested and (len(dead) / tested > .03 and len(dead) >= 2): holds.append(f'F-D3 {len(dead)} of {tested} re-tested links dead, e.g. {dead[0][:70]}')
+    except Unsure as e: holds.append(f'F-4 unsure: {e}')   # keep the other reasons too
+    return holds, notes
+
+
+def c_hours(path, new, live, ctx):
+    from collections import Counter
+    holds, notes = [], []
+    P = new.get('parks') or {}
+    for kind in ('fees', 'hours', 'permits'):
+        lines = [re.sub(r'\W+', ' ', (x.get('line') or '')).strip().lower() for r in P.values() for x in (r.get(kind) or [])]
+        per = Counter()
+        for r in P.values():
+            for t in {re.sub(r'\W+', ' ', (x.get('line') or '')).strip().lower() for x in (r.get(kind) or [])}: per[t] += 1
+        lim = min(20, max(3, int(.1 * len(P)))) if len(P) >= 30 else 20
+        wide = [(t, n) for t, n in per.items() if n > lim]
+        if wide: holds.append(f'F-H1 the same {kind} line on {wide[0][1]} parks (statewide / agency-wide text?): "{wide[0][0][:70]}"')
+        if kind == 'fees':
+            big = [l for l in lines if re.search(r'million', l) or any(float(m.replace(',', '')) > 500 for m in re.findall(r'\$\s?(\d[\d,]*(?:\.\d+)?)', l) if m.replace(',', '').replace('.', '').isdigit())]
+            if big: holds.append(f'F-H2 {len(big)} fee lines over $500 or in millions, e.g. "{big[0][:70]}"')
+        if kind == 'hours':
+            notime = [l for l in lines if not re.search(r'\d\s*(?:a\.?m|p\.?m)|\b\d{1,2}(:\d\d)?\s*(?:-|to|–)\s*\d|sunrise|sunset|dawn|dusk|24 hours|24/7|closed', l)]
+            if lines and len(notime) / len(lines) > .2: holds.append(f'F-H3 {len(notime)} of {len(lines)} hours lines have no time, e.g. "{notime[0][:60]}"')
+        heads = [l for r in P.values() for x in (r.get(kind) or []) for l in [x.get('line') or ''] if l.strip().endswith(':')]
+        if heads: holds.append(f'F-H4 {len(heads)} {kind} lines are headings ending ":"')
+    for ref, rule in (known('hours').get(st_of(path)) or {}).items():
+        txt = json.dumps((P.get(ref) or {}).get(rule['field']) or '')
+        if rule.get('never') and re.search(rule['never'], txt, re.I): holds.append(f"F-K known answer: {ref} {rule['field']} must never match '{rule['never']}'")
+    return holds, notes
+
+
+def c_truth(path, new, live, ctx):
+    from collections import Counter
+    holds, notes = [], []
+    P = new.get('parks') or {}
+    offs = [(ref, r) for ref, r in P.items() if r.get('verdict') == 'off' and r.get('official')]
+    byn = Counter((r['official'].get('acres'), r['official'].get('url')) for _, r in offs)
+    sh = [(k, n) for k, n in byn.items() if n >= 3]
+    if sh: holds.append(f'F-R1 {sh[0][1]} parks OFF on one number from one page ({sh[0][0][0]:,} ac, {str(sh[0][0][1])[:60]})')
+    byv = Counter(r['official'].get('acres') for _, r in offs)
+    shv = [(a, n) for a, n in byv.items() if n >= 5]
+    if shv: holds.append(f'F-R2 {shv[0][1]} OFF rows share the size {shv[0][0]:,} ac')
+    K = known('truth')
+    for a in (K.get('never_acres') or {}).get(st_of(path), []):
+        hit = [ref for ref, r in offs if r['official'].get('acres') == a]
+        if hit: holds.append(f'F-K known answer: {a:,} ac is never one park\'s size ({len(hit)} rows)')
+    for ref, rule in (K.get('rows') or {}).get(st_of(path), {}).items():
+        r = P.get(ref) or {}; o = r.get('official') or {}
+        ok = True
+        if rule.get('verdict') and r.get('verdict') != rule['verdict']: ok = False
+        if rule.get('acres_near') and not (o.get('acres') and abs(o['acres'] - rule['acres_near']) <= rule.get('tol', 60)): ok = False
+        if rule.get('acres_not') is not None and o.get('acres') == rule['acres_not']: ok = False
+        if not ok: holds.append(f"F-K known answer {ref}: {rule.get('what')} (now verdict {r.get('verdict')}, {o.get('acres')} ac)")
+    n_size = sum(1 for r in P.values() if r.get('verdict') in ('off', 'agree'))
+    if n_size >= 20 and len(offs) / n_size > .5: holds.append(f'F-R3 {len(offs)} of {n_size} sized parks are OFF (over half: a reading problem?)')
+    return holds, notes
+
+
+def c_leads(path, new, live, ctx):
+    n, o = len(new.get('leads') or []), len((live or {}).get('leads') or [])
+    holds = []
+    if o and (n == 0 or n < .5 * o): holds.append(f'F-L1 leads {o} -> {n} (wiped or under half)')
+    return holds, []
+
+
+def has_outline(r): return bool((r or {}).get('m') or (r or {}).get('c'))
+
+
+def c_key(path, new, live, ctx):
+    holds, notes = [], []
+    retired = set(((load(LINKS / 'data' / 'retired-refs.json', {}) or {}).get('refs') or {}) if isinstance((load(LINKS / 'data' / 'retired-refs.json', {}) or {}).get('refs'), (dict, list)) else [])
+    retired |= set(known('key').get('never_outlined') or [])
+    if pathlib.Path(path).name == 'refs.json':
+        txt = json.dumps(new)
+        bad = sorted(r for r in retired if f'"{r}"' in txt)
+        if bad: holds.append(f'F-O3 retired parks still in the outline index: {", ".join(bad[:5])}')
+        return holds, notes
+    P, O = new.get('parks') or {}, (live or {}).get('parks') or {}
+    n_new, n_old = sum(has_outline(r) for r in P.values()), sum(has_outline(r) for r in O.values())
+    if n_old >= 20 and n_new < .99 * n_old: holds.append(f'F-O1 outlines {n_old} -> {n_new} (more than 1% lost)')
+    bad = sorted(r for r in P if r in retired and has_outline(P[r]))
+    if bad: holds.append(f'F-O3 retired parks still outlined: {", ".join(bad[:5])}')
+    for name in known('key').get('keep_names') or []:
+        hit = [r for r in P.values() if name.lower() in str(r.get('n', '')).lower()]
+        if hit and not any(has_outline(r) for r in hit): holds.append(f'F-K known answer: {name} must keep its outline')
+    return holds, notes
+
+
+def c_intake(path, new, live, ctx):
+    holds = []
+    K = known('intake')
+    for r in new.get('rows') or []:
+        v = str(r.get('verdict') or r.get('status') or '').upper(); why = str(r.get('why') or '').lower(); t = (r.get('title') or r.get('url') or '')[:40]
+        if v == 'REJECT' and re.search(r'did not open|error|timed? ?out|invalid url', why): holds.append(f'F-N1 "{t}": a read error must be RETRY, never REJECT')
+        if v == 'READY' and re.search(r'credit|copyright', why) and not re.search(r'licen[cs]e|open data|cc[- ]by|public domain|ogl', why): holds.append(f'F-N2 "{t}": READY on a credit / copyright line only')
+        for k in K.get('never_ready') or []:
+            if v == 'READY' and re.search(k['rx'], json.dumps(r), re.I): holds.append(f'F-K known answer: "{t}" is {k["why"]}, never READY')
+    return holds, []
+
+
+def c_fers(path, new, live, ctx):
+    holds, notes = [], []
+    S = [s for s in (new.get('spots') or []) if isinstance(s, dict)]
+    O = [s for s in ((live or {}).get('spots') or []) if isinstance(s, dict)]
+    cand = {s['id'] for s in S if str(s.get('status', '')).startswith('candidate')}
+    oc = {s['id'] for s in O if str(s.get('status', '')).startswith('candidate')}
+    if len(oc) >= 10 and abs(len(cand) - len(oc)) / len(oc) > .3: holds.append(f'F-2 candidates {len(oc)} -> {len(cand)} (over 30% change)')
+    ns = sum(1 for s in S if str(s.get('status', '')).startswith('not sure')); ons = sum(1 for s in O if str(s.get('status', '')).startswith('not sure'))
+    if ons >= 5 and abs(ns - ons) / ons > .3: holds.append(f'F-2 NOT SURE {ons} -> {ns} (over 30% change)')
+    for p in ('pass1', 'pass2', 'pass3'):
+        if not new.get(p): holds.append(f'F-2 {p} missing: the 2-fer passes did not all run')
+    for k in (known('fers').get(st_of(path) and f'US-{st_of(path)}') or []):
+        if k not in cand: holds.append(f'F-K known 2-fer missing: {k}')
+    return holds, notes
+
+
+def c_pota(path, new, live, ctx):
+    n, o = new.get('parks') or 0, (live or {}).get('parks') or 0
+    holds = []
+    if o and (o - n > max(5, .01 * o)): holds.append(f'F-P1 POTA parks {o:,} -> {n:,} (more than 1% or 5 gone): needs a second read')
+    return holds, []
+
+
+def c_status(path, new, live, ctx):
+    """Any file with a READY status must have no 'not checked / no answer' rows (Michigan water lesson)."""
+    txt = json.dumps(new).lower()
+    st = str(new.get('status') or new.get('verdict') or '').upper()
+    n = len(re.findall(r'not checked|no answer|unanswered|did not answer', txt))
+    return ([f'F-S1 status READY with {n} rows not checked / unanswered (must be STOPPED)'] if st == 'READY' and n else []), []
+
+
+# ---- closures: NEVER WAIT (F-3): rows that break a reject rule are taken out; an empty / garbled file holds (old one stays, 'as of')
+RES_ROW = re.compile(r'\|\s*(?:\d+(?:\.\d+)?\s*%|1\s*:\s*\d)|(?:\|\s*(?:\d+(?:\.\d+)?|-|NA)\s*){3}')
+def closures_filter(path, new, live):
+    st = st_of(path); items = new.get('items')
+    if not isinstance(items, list): return None, ['F-3 garbled closures file (no items list): the old one stays, stamped "as of"']
+    if not items and len((live or {}).get('items') or []) >= 5: return None, [f'F-3 empty closures file (live had {len((live or {}).get("items"))}): the old one stays, stamped "as of"']
+    keep, gone, seen = [], [], set()
+    for it in items:
+        d = str(it.get('details') or ''); low = d.lower(); why = ''
+        if it.get('to') and str(it['to']) < TODAY.isoformat(): why = 'ended'
+        elif RES_ROW.search(d): why = 'a results table row'
+        elif re.search(r'\bfree\b|no permit needed|federal holidays|prohibitions\b', low) and not it.get('from'): why = 'a fee / hours / standing note'
+        elif re.search(r'\b(?:is|are) prohibited\b|in violation of', low) and not it.get('from') and not it.get('to') and it.get('class') in ('note', None): why = 'a standing rule'
+        else:
+            for ab, nm in STATE_NAMES.items():
+                if ab != st and (re.search(rf'\b(?:County|Co\.|City|Parish),?\s+{ab}\b|,\s*{ab}\s*\)', d) or (nm.lower() in low and not (nm == 'Virginia' and 'west virginia' in low and st == 'WV'))):
+                    if STATE_NAMES.get(st, '').lower() not in low: why = f'another state ({ab})'; break
+        k = (it.get('ref'), re.sub(r'\W+', ' ', low).strip())
+        if not why and k in seen: why = 'a duplicate'
+        if why: gone.append(f'{it.get("ref")}: {why}: {d[:60]}'); continue
+        seen.add(k); keep.append(it)
+    out = dict(new); out['items'] = keep
+    return out, gone
+
+
+# ------------------------------------------------------------------------------------------------ routing (unknown kind = HOLD)
+ROUTES = [
+    (r'^data/access/[^/]+\.json$', 'access', c_access),
+    (r'^data/campfed/US-[A-Z]{2}\.json$', 'campfed', c_campfed),
+    (r'^data/campstate/US-[A-Z]{2}\.json$', 'campstate', c_campstate),
+    (r'^data/campinfo/US-[A-Z]{2}\.json$', 'campinfo', c_campinfo),
+    (r'^data/trails/[^/]+\.json$', 'trails', c_trails),
+    (r'^data/docs/US-[A-Z]{2}\.json$', 'docs', c_docs),
+    (r'^data/hours/US-[A-Z]{2}\.json$', 'hours', c_hours),
+    (r'^data/truth/US-[A-Z]{2}\.json$', 'truth', c_truth),
+    (r'^data/access-leads/[^/]+\.json$', 'leads', c_leads),
+    (r'^data/(?:us|ca)-key/[^/]+\.json$', 'key', c_key),
+    (r'^data/intake/ready\.json$', 'intake', c_intake),
+    (r'^data/fers/US-[A-Z]{2}\.json$', 'fers', c_fers),
+    (r'^data/pota/index\.json$', 'pota', c_pota),
+    (r'^data/closures/(?:US|CA)-[A-Z]{2}\.json$', 'closures', None),
+    (r'^data/review/[^/]+\.json$', 'status', c_status),
+]
+NEVER_WAIT = {'closures'}   # F-3 (+ spots, weather, band alerts and a NEW park's pin + name, which never pass through here)
+
+
+def kind_of(path):
+    p = str(path).replace('\\', '/')
+    for rx, k, fn in ROUTES:
+        if re.match(rx, p): return k, fn
+    return None, None
+
+
+def judge(path, new, live, ctx):
+    """-> {'path','kind','verdict': PASS|HOLD|LIVE-FILTERED,'why': [..],'notes': [..], 'out': file to publish (closures)}"""
+    kind, fn = kind_of(path)
+    res = {'path': str(path), 'kind': kind or 'unknown', 'why': [], 'notes': []}
+    try:
+        if new is None: raise Unsure('the new file does not read as JSON')
+        if kind is None: raise Unsure('no check written for this kind of file (fail closed)')
+        if kind == 'closures':
+            out, gone = closures_filter(path, new, live)
+            if out is None: res.update(verdict='HOLD', why=gone); return res
+            res.update(verdict='LIVE-FILTERED' if gone else 'PASS', notes=gone, out=out); return res
+        if live is None: res['notes'].append('no live copy: first time this file is published')
+        holds, notes = fn(path, new, live, ctx)
+        h2, _ = c_status(path, new, live, ctx) if kind != 'status' else ([], [])
+        holds += h2
+        res.update(verdict='HOLD' if holds else 'PASS', why=holds, notes=res['notes'] + notes)
+    except Unsure as e: res.update(verdict='HOLD', why=[f'F-4 unsure: {e}'])
+    except Exception as e:  # noqa: BLE001  (own error = hold, fail closed)
+        res.update(verdict='HOLD', why=[f'F-4 checker error: {type(e).__name__}: {str(e)[:160]}'])
+    return res
+
+
+# ------------------------------------------------------------------------------------------------ modes
+def look_line(r): return f"- FROM WAITING ROOM ({TODAY}): {r['kind']} {r['path']} held: {' · '.join(r['why'])[:600]}"
+
+
+def mode_check(promote):
+    on = promote and os.environ.get('WAITING_ON') == '1'
+    files = sorted(p for p in (W / 'in').rglob('*.json')) if (W / 'in').exists() else []
+    batch = {str(p.relative_to(W / 'in')): load(p) for p in files}
+    ctx = {'set': batch}
+    out = []
+    for rel, new in batch.items():
+        r = judge(rel, new, load(DATA / rel), ctx); out.append(r)
+        if on and r['verdict'] in ('PASS', 'LIVE-FILTERED'):
+            promote_file(rel, r.get('out', new))
+            (W / 'in' / rel).unlink()
+    held = [r for r in out if r['verdict'] == 'HOLD']
+    rep = {'checked': dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%dT%H:%MZ'), 'switched_on': on, 'results': [{k: v for k, v in r.items() if k != 'out'} for r in out]}
+    W.mkdir(parents=True, exist_ok=True)
+    json.dump(rep, open(W / 'verdicts.json', 'w'), indent=1, ensure_ascii=False)
+    json.dump({'ok': rep['checked']}, open(W / 'heartbeat.json', 'w'))
+    if held:
+        inbox = DATA / 'data' / 'status' / 'inbox-checkers.md'
+        old = inbox.read_text(encoding='utf-8') if inbox.exists() else ''
+        new_lines = [look_line(r) for r in held if look_line(r).split(' held: ')[0] not in old]
+        if new_lines: inbox.write_text(old.rstrip('\n') + '\n' + '\n'.join(new_lines) + '\n', encoding='utf-8')
+    print(f'::notice title=Waiting room::{len(out)} files: {sum(r["verdict"] != "HOLD" for r in out)} pass, {len(held)} held' + ('' if on else ' (NOT switched on: nothing promoted)'))
+
+
+def promote_file(rel, content):
+    live = DATA / rel; prev = W / 'previous' / rel
+    prev.parent.mkdir(parents=True, exist_ok=True)
+    if live.exists(): shutil.copy2(live, prev)
+    live.parent.mkdir(parents=True, exist_ok=True)
+    json.dump(content, open(live, 'w', encoding='utf-8'), separators=(',', ':'), ensure_ascii=False)
+
+
+def mode_undo(rel):
+    live, prev = DATA / rel, W / 'previous' / rel
+    if not prev.exists(): print(f'::notice title=Waiting room undo::no previous copy of {rel}'); return False
+    tmp = live.read_bytes() if live.exists() else None
+    shutil.copy2(prev, live)
+    if tmp is not None: prev.write_bytes(tmp)     # the copy we replaced becomes 'previous' (undo of the undo)
+    print(f'::notice title=Waiting room undo::{rel} put back to the previous good copy'); return True
+
+
+BOT_FOLDERS = {'access': 'data/access', 'campfed': 'data/campfed', 'campstate': 'data/campstate', 'campinfo': 'data/campinfo', 'trails': 'data/trails',
+               'docs': 'data/docs', 'hours': 'data/hours', 'truth': 'data/truth', 'leads': 'data/access-leads', 'us-key': 'data/us-key', 'ca-key': 'data/ca-key',
+               'intake': 'data/intake', 'fers': 'data/fers', 'pota': 'data/pota', 'closures': 'data/closures'}
+
+
+def mode_undo_bot(bot, area=''):
+    folder = BOT_FOLDERS.get(bot)
+    if not folder: print(f'::notice title=Waiting room undo::unknown bot {bot} (one of {", ".join(BOT_FOLDERS)})'); return
+    n = 0
+    for p in sorted((W / 'previous' / folder).rglob('*.json')) if (W / 'previous' / folder).exists() else []:
+        rel = str(p.relative_to(W / 'previous'))
+        if area and area not in pathlib.Path(rel).name: continue
+        n += mode_undo(rel)
+    print(f'::notice title=Waiting room undo::{bot} {area or "all areas"}: {n} files put back')
+
+
+def mode_release(rel):
+    src = W / 'in' / rel
+    if not src.exists(): print(f'::notice title=Waiting room release::nothing held at {rel}'); return
+    promote_file(rel, load(src)); src.unlink()
+    print(f'::notice title=Waiting room release::{rel} released by a person (previous copy kept for undo)')
+
+
+# ---- the REPLAY TEST (F-6): real bad outputs from git history must ALL hold; the good outputs must ALL pass
+def git_json(repo, sha, path):
+    base = DATA if repo == 'data' else LINKS
+    if sha in ('live', 'HEAD', None): return load(base / path)
+    p = subprocess.run(['git', '-C', str(base), 'show', f'{sha}:{path}'], capture_output=True)
+    if p.returncode != 0: raise Unsure(f'{repo} {sha}:{path} not in the git history (needs fetch-depth 0)')
+    try: return json.loads(p.stdout.decode('utf-8'))
+    except Exception: import gzip; return json.loads(gzip.decompress(p.stdout).decode('utf-8'))  # noqa: E401
+
+
+def transform(d, how):
+    d = copy.deepcopy(d)
+    op, _, arg = how.partition(':')
+    if op == 'shrink':
+        f = float(arg)
+        for k in ('parks', 'camps', 'leads', 'items', 'spots'):
+            v = d.get(k)
+            if isinstance(v, dict): d[k] = dict(list(v.items())[:int(len(v) * f)])
+            elif isinstance(v, list): d[k] = v[:int(len(v) * f)]
+    elif op == 'count':                 # pota index: 'count:0.97'
+        d['parks'] = int((d.get('parks') or 0) * float(arg))
+    elif op == 'spread_fee':            # copy one park's fee line onto N parks (statewide price lesson)
+        P = d['parks']; src = next(r['fees'][0] for r in P.values() if r.get('fees'))
+        for r in list(P.values())[:int(arg)]: r['fees'] = [dict(src)]
+    elif op == 'set':                   # 'set:{"status":"READY","rows":[...]}'
+        d = json.loads(arg)
+    return d
+
+
+def mode_replay():
+    cases = (load(W / 'replay.json', {}) or {}).get('cases') or []
+    if not cases: print('REPLAY=FAIL (no cases)'); return False
+    rows, ok_all = [], True
+    for c in cases:
+        try:
+            batch, live = {}, {}
+            for f in c['files']:
+                new = git_json(c['repo'], f['new'], f['path'])
+                if f.get('transform'): new = transform(new, f['transform'])
+                batch[f['path']] = new
+                live[f['path']] = git_json(c['repo'], f.get('live', 'live'), f['path']) if f.get('live') != 'none' else None
+            ctx = {'set': batch}
+            res = [judge(p, n, live[p], ctx) for p, n in batch.items()]
+        except Exception as e:  # noqa: BLE001
+            res = [{'path': '?', 'verdict': 'HOLD', 'why': [f'case could not load: {e}'], 'notes': []}]
+        caught = any(r['verdict'] in ('HOLD', 'LIVE-FILTERED') and (not c.get('catch') or re.search(c['catch'], ' '.join(r['why'] + r['notes']), re.I)) for r in res)
+        passed = all(r['verdict'] == 'PASS' for r in res)
+        good = caught if c['expect'] == 'HOLD' else passed
+        ok_all &= good
+        rows.append(f"| {'ok' if good else '**MISS**'} | {c['name']} | {c['expect']} | " + ' / '.join(f"{r['verdict']}: {('; '.join(r['why'] + r['notes']))[:160]}" for r in res) + ' |')
+    md = ['# Waiting room REPLAY TEST', f'Run {dt.datetime.now(dt.timezone.utc):%Y-%m-%d %H:%MZ}: **{"PASS" if ok_all else "FAIL"}** ({sum(r.startswith("| ok") for r in rows)} of {len(rows)} cases right). '
+          'Every real bad output must be HELD (or, closures, have its bad rows taken out); every good output must PASS.', '',
+          '| result | case | expect | what the checker said |', '|---|---|---|---|'] + rows
+    W.mkdir(parents=True, exist_ok=True)
+    (W / 'replay.md').write_text('\n'.join(md) + '\n', encoding='utf-8')
+    print('\n'.join(rows)); print('REPLAY=' + ('PASS' if ok_all else 'FAIL'))
+    print(f'::notice title=Waiting room replay::{"PASS" if ok_all else "FAIL"}: {sum(r.startswith("| ok") for r in rows)} of {len(rows)} cases right')
+    return ok_all
+
+
+if __name__ == '__main__':
+    a = sys.argv[1:] or ['check']
+    try:
+        if a[0] == 'check': mode_check('--promote' in a)
+        elif a[0] == 'replay': mode_replay()
+        elif a[0] == 'undo': mode_undo(a[1])
+        elif a[0] == 'undo-bot': mode_undo_bot(a[1], a[2] if len(a) > 2 else '')
+        elif a[0] == 'release': mode_release(a[1])
+        else: print(__doc__)
+    except Exception as e:  # noqa: BLE001  (fail closed: nothing was promoted; one line for chat 11)
+        print(f'::notice title=Waiting room::checker stopped ({type(e).__name__}: {str(e)[:200]}): nothing promoted, everything waits')
+    sys.exit(0)

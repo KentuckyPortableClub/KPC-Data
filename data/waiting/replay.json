@@ -1,0 +1,280 @@
+{
+ "about": "REPLAY TEST (Rule Sheet F, F-6): the real bad outputs we had (git history; 'simulated' = a live file changed the way the real flaw changed it) must ALL be HELD (closures: bad rows taken out), the good outputs must ALL PASS, before the waiting room is switched on. A new flaw = a new case here.",
+ "cases": [
+  {
+   "name": "ACCESS: 178 far points (NY, Oct 28 15:57, the tuned run that still kept on-land far points)",
+   "repo": "data",
+   "files": [
+    {
+     "path": "data/access/US-NY.json",
+     "new": "2c6610ba",
+     "live": "fc3bf234"
+    }
+   ],
+   "expect": "HOLD",
+   "catch": "F-A1"
+  },
+  {
+   "name": "ACCESS: a timed-out layer shrinks a state (simulated: 70% of NY parks dropped)",
+   "repo": "data",
+   "files": [
+    {
+     "path": "data/access/US-NY.json",
+     "new": "1600e869",
+     "live": "1600e869",
+     "transform": "shrink:0.3"
+    }
+   ],
+   "expect": "HOLD",
+   "catch": "F-A2"
+  },
+  {
+   "name": "FED CAMPS: office-address rows + ids in two state files (GA + SC before the Oct 29 sweep)",
+   "repo": "links",
+   "files": [
+    {
+     "path": "data/campfed/US-GA.json",
+     "new": "54a2a9410",
+     "live": "54a2a9410"
+    },
+    {
+     "path": "data/campfed/US-SC.json",
+     "new": "54a2a9410",
+     "live": "54a2a9410"
+    }
+   ],
+   "expect": "HOLD",
+   "catch": "F-C2|F-C3"
+  },
+  {
+   "name": "POTA LIST: a short answer would retire parks (simulated: 3% fewer parks)",
+   "repo": "data",
+   "files": [
+    {
+     "path": "data/pota/index.json",
+     "new": "live",
+     "live": "live",
+     "transform": "count:0.97"
+    }
+   ],
+   "expect": "HOLD",
+   "catch": "F-P1"
+  },
+  {
+   "name": "2-FER LINE CHECK: READY with rows not checked (Michigan water lesson, simulated)",
+   "repo": "data",
+   "files": [
+    {
+     "path": "data/review/mi-water-test.json",
+     "new": "live",
+     "live": "none",
+     "transform": "set:{\"status\": \"READY\", \"rows\": [{\"test\": \"Detroit River\", \"result\": \"no answer\"}, {\"test\": \"St. Clair\", \"result\": \"not checked\"}]}"
+    }
+   ],
+   "expect": "HOLD",
+   "catch": "F-S1"
+  },
+  {
+   "name": "DOCS: 83 WV parks on one rules page (Oct 28 11:27)",
+   "repo": "data",
+   "files": [
+    {
+     "path": "data/docs/US-WV.json",
+     "new": "7a2f9ae1",
+     "live": "7a2f9ae1"
+    }
+   ],
+   "expect": "HOLD",
+   "catch": "F-D1"
+  },
+  {
+   "name": "DOCS: VA maps on inciweb (Oct 28 15:08)",
+   "repo": "data",
+   "files": [
+    {
+     "path": "data/docs/US-VA.json",
+     "new": "cac42d02",
+     "live": "cac42d02"
+    }
+   ],
+   "expect": "HOLD",
+   "catch": "F-D2"
+  },
+  {
+   "name": "CLOSURES: standing rules, a Virginia row under KY, fee notes, results rows (round 8, Oct 29 01:14): bad rows taken out",
+   "repo": "data",
+   "files": [
+    {
+     "path": "data/closures/US-KY.json",
+     "new": "c26e147c",
+     "live": "0a802972"
+    }
+   ],
+   "expect": "HOLD",
+   "catch": "another state|fee|results|standing"
+  },
+  {
+   "name": "HOURS: one statewide fee line on 25 parks (simulated from the live KY file)",
+   "repo": "data",
+   "files": [
+    {
+     "path": "data/hours/US-KY.json",
+     "new": "live",
+     "live": "live",
+     "transform": "spread_fee:25"
+    }
+   ],
+   "expect": "HOLD",
+   "catch": "F-H1"
+  },
+  {
+   "name": "PARKING EXPLORER: a server did not answer and a state lost its leads (simulated: MN wiped)",
+   "repo": "data",
+   "files": [
+    {
+     "path": "data/access-leads/MN.json",
+     "new": "live",
+     "live": "live",
+     "transform": "shrink:0"
+    }
+   ],
+   "expect": "HOLD",
+   "catch": "F-L1"
+  },
+  {
+   "name": "CAMPGROUND INFO: elevation as RV length (675 / 980 ft) (Oct 28 07:29)",
+   "repo": "data",
+   "files": [
+    {
+     "path": "data/campinfo/US-KY.json",
+     "new": "b7b5835e",
+     "live": "b7b5835e"
+    }
+   ],
+   "expect": "HOLD",
+   "catch": "F-I1"
+  },
+  {
+   "name": "CAMPGROUND INFO: the 877 reservation line as a camp phone (Oct 28 10:47)",
+   "repo": "data",
+   "files": [
+    {
+     "path": "data/campinfo/US-KY.json",
+     "new": "c5b9e438",
+     "live": "c5b9e438"
+    }
+   ],
+   "expect": "HOLD",
+   "catch": "F-I4"
+  },
+  {
+   "name": "CAMPGROUND INFO: '$5 Million Renovation' as a fee (Oct 28 15:28)",
+   "repo": "data",
+   "files": [
+    {
+     "path": "data/campinfo/US-KY.json",
+     "new": "d6769172",
+     "live": "d6769172"
+    }
+   ],
+   "expect": "HOLD",
+   "catch": "F-I5"
+  },
+  {
+   "name": "TRUTH: WV statewide '1.4 million acres' on 76 WMAs (Oct 28 21:48)",
+   "repo": "data",
+   "files": [
+    {
+     "path": "data/truth/US-WV.json",
+     "new": "fdd67e55",
+     "live": "fdd67e55"
+    }
+   ],
+   "expect": "HOLD",
+   "catch": "F-R1|1,400,000"
+  },
+  {
+   "name": "INTAKE: a read error as REJECT + Czech READY on a credit line (Oct 28 07:22)",
+   "repo": "data",
+   "files": [
+    {
+     "path": "data/intake/ready.json",
+     "new": "547d47e1",
+     "live": "547d47e1"
+    }
+   ],
+   "expect": "HOLD",
+   "catch": "F-N1|F-N2"
+  },
+  {
+   "name": "CANADA KEY: retired CA-2156 still outlined (Oct 28 01:49)",
+   "repo": "data",
+   "files": [
+    {
+     "path": "data/ca-key/CA-QC.json",
+     "new": "fc3bf234",
+     "live": "fc3bf234"
+    },
+    {
+     "path": "data/ca-key/refs.json",
+     "new": "fc3bf234",
+     "live": "fc3bf234"
+    }
+   ],
+   "expect": "HOLD",
+   "catch": "F-O3"
+  },
+  {
+   "name": "GOOD: Kentucky 2-fers (live)",
+   "repo": "data",
+   "files": [
+    {
+     "path": "data/fers/US-KY.json",
+     "new": "live",
+     "live": "live"
+    }
+   ],
+   "expect": "PASS",
+   "catch": ""
+  },
+  {
+   "name": "GOOD: Canada key, Ontario (live)",
+   "repo": "data",
+   "files": [
+    {
+     "path": "data/ca-key/CA-ON.json",
+     "new": "live",
+     "live": "live"
+    }
+   ],
+   "expect": "PASS",
+   "catch": ""
+  },
+  {
+   "name": "GOOD: Kentucky federal campgrounds (live, after the Oct 29 sweep)",
+   "repo": "links",
+   "files": [
+    {
+     "path": "data/campfed/US-KY.json",
+     "new": "live",
+     "live": "live"
+    }
+   ],
+   "expect": "PASS",
+   "catch": ""
+  },
+  {
+   "name": "GOOD: NY access after the 100 km fix (Oct 29 02:27 vs the run before)",
+   "repo": "data",
+   "files": [
+    {
+     "path": "data/access/US-NY.json",
+     "new": "1600e869",
+     "live": "2c6610ba"
+    }
+   ],
+   "expect": "PASS",
+   "catch": ""
+  }
+ ]
+}

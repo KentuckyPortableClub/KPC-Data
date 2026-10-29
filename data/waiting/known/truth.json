@@ -1,0 +1,49 @@
+{
+ "about": "Permanent known answers for the truth checker (F-K).",
+ "never_acres": {
+  "WV": [
+   1400000
+  ],
+  "VA": [
+   66000
+  ]
+ },
+ "rows": {
+  "KY": {
+   "US-1264": {
+    "what": "Levi Jackson OFF near 896 ac",
+    "verdict": "off",
+    "acres_near": 896
+   },
+   "US-3800": {
+    "what": "Cedar Creek Lake WMA OFF at 796 ac",
+    "verdict": "off",
+    "acres_near": 796,
+    "tol": 5
+   },
+   "US-10104": {
+    "what": "Red River WSR is never 879 ac (the \"708, 879\" parse)",
+    "acres_not": 879
+   },
+   "US-0295": {
+    "what": "Clarks River NWR is never the 73,962 land grant",
+    "acres_not": 73962
+   }
+  },
+  "IL": {
+   "US-4120": {
+    "what": "Des Plaines is never 24,621 ac (a street number)",
+    "acres_not": 24621
+   }
+  },
+  "VA": {
+   "US-0844": {
+    "what": "Maggie Walker is never 1,978 ac (a year)",
+    "acres_not": 1978
+   }
+  }
+ },
+ "flaws": [
+  "Oct 28: WV statewide '1.4 million acres' on 76 WMAs; VA 66,000 preserves total; IL street number 24621; VA year 1978"
+ ]
+}
