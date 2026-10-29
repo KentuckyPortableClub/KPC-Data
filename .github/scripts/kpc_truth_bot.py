@@ -48,7 +48,7 @@ REFRESH_DAYS = int(os.environ.get('REFRESH_DAYS') or 7)
 TOL = 0.15
 PDF_FIRST = 400_000
 TODAY = time.strftime('%Y-%m-%d')
-VER = 11   # Oct 28 (chat 11's KY grade): '708, 879' parse + summed lakes, other-unit pages, history words + stale years, unsure carries a cause, own-page handover hints, quoted URLs, 10-row gate, same-agency label
+VER = 12   # Oct 28 (chat 11's KY grade): '708, 879' parse + summed lakes, other-unit pages, history words + stale years, unsure carries a cause, own-page handover hints, quoted URLs, 10-row gate, same-agency label
 QUEUE = ['US-KY',
          'US-TN', 'US-NC', 'US-VA', 'US-WV', 'US-GA', 'US-AL', 'US-SC', 'US-FL', 'US-MS',
          'US-IN', 'US-IL', 'US-MO', 'US-WI', 'US-MN', 'US-IA', 'US-ND', 'US-SD',
@@ -69,7 +69,7 @@ NUM = r'(\d{1,3}(?:,\s?\d{3}(?!\d))+(?:\.\d+)?|\d+(?:\.\d+)?(?:\s*million)?)'
 UNIT = r'(acres?\b|ac\b|hectares?\b|\bha\b|square\s+(?:miles?|kilomet(?:er|re)s?)|sq\.?\s*(?:mi|km)\b|km\s*²|km2\b|mi\s*²)'
 SIZE = re.compile(r'(?<![\d.,])' + NUM + r'\s*[-–\s]?\s*' + UNIT, re.I)
 SIZE2 = re.compile(r'\b(?:acreage|area|size|total area|land area|park area)\s*[:=]\s*(?<![\d.,])' + NUM + r'\s*' + UNIT + '?', re.I)   # v11: a bare number needs the ':' ('Wildlife Area 24621 North River Road', '/inpc/area1boone…' were read as acres)
-STREET = re.compile(r'^\s*(?:[NSEW]\.?\s+|North |South |East |West )?(?:[A-Z][\w.]*\s+){0,3}(?:Rd|Road|Hwy|Highway|St|Street|Lane|Ln|Drive|Dr|Pike|Ave|Avenue|Blvd|Route|Rte|Way|Parkway|Pkwy|Trail Rd)\b\.?', re.I)
+STREET = re.compile(r'^\s*(?:[NSEW]\.?\s+|North |South |East |West )?(?:[A-Z][\w.]*\s+){0,3}(?:Rd|Road|Hwy|Highway|St|Street|Lane|Ln|Drive|Dr|Pike|Ave|Avenue|Blvd|Route|Rte|Way|Parkway|Pkwy)\b\.?')   # v12: case-sensitive (capitalised street names only)
 DATE_BEFORE = re.compile(r'(?:\b(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\.?\s+\d{1,2},?\s*|\b(?:in|since|established|founded|dedicated|designated|from|until|by|of|year)\s+|\d{1,2}/\d{1,2}/|,\s*)$', re.I)
 # 'two lakes of 40 and 60 acres' / '21.2 and 13.8 acre lakes': one candidate with the SUM; the parts are not totals
 PNUM = r'\d[\d,]*(?:\.\d+)?'
@@ -200,7 +200,7 @@ def sizes_in(text, name, other_unit=False, is_pdf=False):
             n, unit = m.group(1), (m.group(2) or 'acres')
             a = to_acres(n, unit)
             if a is None or a < 0.5 or a > 50_000_000: continue
-            if STREET.match(text[m.end():m.end() + 40]) and not re.search(r'acre|hectare', text[m.end():m.end() + 12], re.I): continue   # v11: a street number ('24621 North River Road')
+            if not m.group(2) and STREET.match(text[m.end():m.end() + 40]): continue   # v11: a street number ('24621 North River Road')
             if re.fullmatch(r'1[7-9]\d\d|20\d\d', n.strip()) and DATE_BEFORE.search(text[max(0, m.start() - 30):m.start()]): continue   # v11: a YEAR ('November 10, 1978 Acre…', 'in 1978 acres were…')
             s = max(0, m.start() - 110); e = min(len(text), m.end() + 110)
             line = ' '.join(text[s:e].split())
@@ -217,7 +217,10 @@ def sizes_in(text, name, other_unit=False, is_pdf=False):
             looks = bool(TOTALWORD.search(near)) or any(w in near for w in cn) or label
             if is_pdf and not (label or (name_in and len(sent.split()) >= 6)): looks = False; why = 'a map label (no sentence)'   # Cumberland Gap '15 acres', Taylorsville '248': labels on a map PDF
             if any(a0 <= m.start() < b0 for a0, b0 in sums): looks = False; why = 'part of a sum'
-            if HISTORY.search(sl) or OLD_YEAR.search(left_of(text, m.start())): looks = False; why = 'history'
+            hist_hits = [h for h in HISTORY.finditer(sl) if not (re.match(r'(?:established|founded|created|designated|dedicated|opened|acquired|purchased)', h.group(0), re.I)
+                         and re.search(r'\b(?:consists of|comprises|encompasses|covers|totals?|contains|includes|is|spans)\s+(?:about |approximately |nearly |over |more than |some )?$', text[max(0, m.start() - 40):m.start()], re.I)
+                         and h.start() > sl.find(n.strip().lower()) >= 0)]   # v12: 'consists of 15,251 acres and was acquired by lease in 1930' = today's size; the year is the lease's
+            if hist_hits or OLD_YEAR.search(left_of(text, m.start())): looks = False; why = 'history'
             if a < 5 and not label and not re.search(r'\b(?:is|covers|encompasses|consists of|comprises|totals?|protects)\s+(?:an?\s+|about\s+|approximately\s+|nearly\s+|just\s+)?' + re.escape(n.strip()), sl): looks = False; why = why or 'a tiny number without size wording'   # v11: Ozark Hills '1 acres' fragment
             hard = (bool(HARD_PART.search(strip_name(sl))) or bool(NEAR_PART.search(strip_name(text[max(0, m.start() - 45):m.end() + 45].lower())))) and not label; soft = bool(PART.search(strip_name(sl))) and not label   # the SAME sentence, not the neighbour's
             clean = bool(looks and not why and (label or ((name_in or own_subject) and CLEAN.search(sl))) and not hard)
@@ -429,6 +432,7 @@ def candidate_pages(ref, park, web, docs, ky):
         add(f"https://www.nps.gov/{own['nps']}/learn/news/newsreleases.htm", 'NPS news releases')
     if own.get('fws'):
         add(f"https://www.fws.gov/refuge/{own['fws']}/about-us", 'FWS refuge about page')
+        add(f"https://www.fws.gov/refuge/{own['fws']}", 'FWS refuge home page (v12: the about / visit pages 404 since Oct 29)')
     OWN.clear(); OWN.update(own); OWN['core'] = name_core6(park['n'])
     return [(u, why, is_other_unit(u, own)) for u, why in out[:6]]
 
@@ -867,6 +871,9 @@ SIZE_CASES = [   # v11 (chat 11, Oct 28 9 PM): real sentences from the VA / IL g
     ('Culpeper Battlefields State Park', "Culpeper Battlefields State Park is Virginia's 43rd state park. This park will enable visitors to experience more than 2,500 acres of historic battlefield land.", 'not_total', 2500),
     ('Maggie L. Walker National Historic Site', 'The site was dedicated in 1978 and the house opened to the public in 1985.', 'none', 1978),
     ('Castle Rock State Park', 'At the present time, Castle Rock consists of approximately 2,000 acres, 710 of which are designated as an Illinois Nature Preserve.', 'total', 2000),
+    ('Kentucky Ridge State Forest', 'Kentucky Ridge State Forest consists of 15,251 acres and was acquired by lease in 1930, as part of the Land Use and Resettlement Program.', 'total', 15251),
+    ('Big Oak Tree State Park', 'Big Oak Tree State Park covers 1,029 acres along Big Oak Road in Mississippi County.', 'total', 1029),
+    ('Reelfoot National Wildlife Refuge', 'The refuge was established in 1941 as a 10,428-acre refuge.', 'not_total', 10428),
 ]
 
 
