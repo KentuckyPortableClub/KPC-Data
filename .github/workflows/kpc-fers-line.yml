@@ -254,6 +254,7 @@ jobs:
           SINCE=$(cat data/fers/.since-$RUN_TAG 2>/dev/null || date -u -d '-36 hours' +%F)
           if [ "$REGION" = ky ]; then python3 .github/scripts/kpc_fers_known.py || true; AREA=ky python3 .github/scripts/kpc_fers_expected.py || true
           else python3 .github/scripts/kpc_fers_expected.py || true; fi
+          case " $STATES" in *" CA-"*) CANADA=1 python3 .github/scripts/kpc_fers_known.py || true;; esac   # Canada's known answers (chat 8, reported only for now)
           TAG=$RUN_TAG SINCE=$SINCE python3 .github/scripts/kpc_fers_line_check.py || true
           # Oct 28 (HQ 5:55 PM): this area's rows of the one big 'needs a human look' list (data/fers/review/<tag>.json)
           TAG=$RUN_TAG STATES="$STATES" DATA=data/fers OUT=data/fers python3 .github/scripts/kpc_fers_review.py || true
