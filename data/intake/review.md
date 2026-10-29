@@ -1,17 +1,215 @@
-# Layer intake review (2026-10-28)
+# Layer intake review (2026-10-29)
 
 Every lead in data/intake/queue.json, probed politely (metadata and counts only, never geometry). Chat 9 approves a READY row by setting `approved: true` in ready.json; the nightly key rebuild reads approved rows later. LIVE-ONLY = read live, never stored. ASK = the publisher must be asked (nothing stated, or hosted for an agency). WATER-ONLY = lakes / reservoirs: for the 2-fer owner step only, never a park outline. RETRY = the probe did not open (error, rest, robots, 403): probed again next run, three failures → chat 9 checks the url. Terms are read on the publisher's OWN item page first (the Nevada lesson).
 
 | verdict | rows |
 |---|---|
-| READY | 1 |
-| WATER-ONLY | 1 |
+| READY | 21 |
+| WATER-ONLY | 3 |
 | LIVE-ONLY | 1 |
-| ASK-THE-PUBLISHER | 2 |
-| RETRY | 2 |
-| REJECT | 4 |
+| ASK-THE-PUBLISHER | 10 |
+| RETRY | 61 |
+| REJECT | 42 |
 
-## READY (1)
+## READY (21)
+
+### Public/Indexes  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Indexes/MapServer/0
+- WHY: official, credit terms, named polygons; closes 56 (name + pin 8, pin only 48): a pin inside a designation polygon is not a sure match
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST &#169 State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Indexes/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field MAP_NAME · 455 records · sample HANLETH / ROGER / ALBINA
+- closes: 56 of 57 tested missing parks (by name 8, pin only 48; 57 of the area's 2871 missing parks lie in the layer's extent)
+  - AU-10758 Pardoe Northdown Conservation Area → polygon "DEVONPORT"
+  - AU-11291 Great Lake Water Management Area → polygon "MIENA"
+  - AU-11292 Arthurs Lake - Water Management Area → polygon "WIHAREJA"
+  - AU-11293 Romaine Reservoir - Water Management Area → polygon "BURNIE"
+  - AU-11294 Lake Sorell - Water Management Area → polygon "INTERLAKEN"
+  - AU-11295 Lake Crescent - Water Management Area → polygon "INTERLAKEN"
+  - AU-11296 Curries River Reservoir - Water Management Area → polygon "BELL BAY"
+  - AU-11297 Brandy Pond - Water Management Area → polygon "BEACONSFIELD"
+  - AU-11298 Bruins Pond - Water Management Area → polygon "BEACONSFIELD"
+  - AU-11299 Four Springs Lake - Water Management Area → polygon "BRIDGENORTH"
+  - AU-11300 Brushy Lagoon - Water Management Area → polygon "PARKHAM"
+  - AU-11301 Lake Trevallyn - Water Management Area → polygon "LAUNCESTON"
+  - AU-11302 Risdon Brook Reservoir - Water Management Area → polygon "RICHMOND"
+  - AU-11303 Waterworks Reservoirs - Water Management Area → polygon "TAROONA"
+  - AU-11304 Pipe Clay Lagoon - Water Management Area → polygon "CREMORNE"
+  - AU-11305 Gordons Reservoir Water Management Area → polygon "SORELL"
+  - AU-11306 Lake Pedder - Water Management Area → polygon "SOLITARY"
+  - AU-11307 Lake Gordon Water Management Area → polygon "WINGS"
+  - AU-11308 Tooms Lake - Water Management Area → polygon "TOOMS"
+  - AU-11309 Lake Leake - Water Management Area → polygon "LEAKE"
+  - AU-11310 Craigbourne Lake Water Management Area → polygon "BAINS"
+  - AU-11311 Woods Lake Water Management Area → polygon "PENNY"
+  - AU-11312 Pet Dam - Water Management Area → polygon "STOWPORT"
+  - AU-1769 King Island Conservation Reserve → polygon "NARACOOPA"
+  - AU-8678 Seven Mile Beach - State Beach → polygon "CARLTON"
+
+### Public/CadastreParcels  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreParcels/MapServer/0
+- WHY: official, credit terms, named polygons; closes 37 (name + pin 2, pin only 35): a pin inside a designation polygon is not a sure match
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST &#169 State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreParcels/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field PROP_NAME · 439979 records · sample None / None / None
+- closes: 37 of 60 tested missing parks (by name 2, pin only 35; 76 of the area's 2871 missing parks lie in the layer's extent)
+  - AU-0579 Kent Group National Park → polygon "DEAL ISLAND"
+  - AU-10758 Pardoe Northdown Conservation Area → polygon ""
+  - AU-11291 Great Lake Water Management Area → polygon ""
+  - AU-11292 Arthurs Lake - Water Management Area → polygon ""
+  - AU-11293 Romaine Reservoir - Water Management Area → polygon "ROMAINE RESERVE"
+  - AU-11294 Lake Sorell - Water Management Area → polygon ""
+  - AU-11295 Lake Crescent - Water Management Area → polygon ""
+  - AU-11296 Curries River Reservoir - Water Management Area → polygon ""
+  - AU-11297 Brandy Pond - Water Management Area → polygon ""
+  - AU-11298 Bruins Pond - Water Management Area → polygon ""
+  - AU-11299 Four Springs Lake - Water Management Area → polygon ""
+  - AU-11300 Brushy Lagoon - Water Management Area → polygon ""
+  - AU-11301 Lake Trevallyn - Water Management Area → polygon ""
+  - AU-11302 Risdon Brook Reservoir - Water Management Area → polygon ""
+  - AU-11303 Waterworks Reservoirs - Water Management Area → polygon "RIDGEWAY PARK"
+  - AU-11305 Gordons Reservoir Water Management Area → polygon ""
+  - AU-11306 Lake Pedder - Water Management Area → polygon ""
+  - AU-11307 Lake Gordon Water Management Area → polygon ""
+  - AU-11308 Tooms Lake - Water Management Area → polygon ""
+  - AU-11309 Lake Leake - Water Management Area → polygon ""
+  - AU-11310 Craigbourne Lake Water Management Area → polygon ""
+  - AU-11311 Woods Lake Water Management Area → polygon ""
+  - AU-11312 Pet Dam - Water Management Area → polygon "RIDGLEY WATER TREATMENT PLANT"
+  - AU-1769 King Island Conservation Reserve → polygon ""
+  - AU-8678 Seven Mile Beach - State Beach → polygon ""
+
+### Public/Planning  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Planning/MapServer/1
+- WHY: official, credit terms, named polygons; closes 37 (name + pin 2, pin only 35): a pin inside a designation polygon is not a sure match
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST &#169 State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Planning/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field PROP_NAME · 439979 records · sample None / None / None
+- closes: 37 of 60 tested missing parks (by name 2, pin only 35; 76 of the area's 2871 missing parks lie in the layer's extent)
+  - AU-0579 Kent Group National Park → polygon "DEAL ISLAND"
+  - AU-10758 Pardoe Northdown Conservation Area → polygon ""
+  - AU-11291 Great Lake Water Management Area → polygon ""
+  - AU-11292 Arthurs Lake - Water Management Area → polygon ""
+  - AU-11293 Romaine Reservoir - Water Management Area → polygon "ROMAINE RESERVE"
+  - AU-11294 Lake Sorell - Water Management Area → polygon ""
+  - AU-11295 Lake Crescent - Water Management Area → polygon ""
+  - AU-11296 Curries River Reservoir - Water Management Area → polygon ""
+  - AU-11297 Brandy Pond - Water Management Area → polygon ""
+  - AU-11298 Bruins Pond - Water Management Area → polygon ""
+  - AU-11299 Four Springs Lake - Water Management Area → polygon ""
+  - AU-11300 Brushy Lagoon - Water Management Area → polygon ""
+  - AU-11301 Lake Trevallyn - Water Management Area → polygon ""
+  - AU-11302 Risdon Brook Reservoir - Water Management Area → polygon ""
+  - AU-11303 Waterworks Reservoirs - Water Management Area → polygon "RIDGEWAY PARK"
+  - AU-11305 Gordons Reservoir Water Management Area → polygon ""
+  - AU-11306 Lake Pedder - Water Management Area → polygon ""
+  - AU-11307 Lake Gordon Water Management Area → polygon ""
+  - AU-11308 Tooms Lake - Water Management Area → polygon ""
+  - AU-11309 Lake Leake - Water Management Area → polygon ""
+  - AU-11310 Craigbourne Lake Water Management Area → polygon ""
+  - AU-11311 Woods Lake Water Management Area → polygon ""
+  - AU-11312 Pet Dam - Water Management Area → polygon "RIDGLEY WATER TREATMENT PLANT"
+  - AU-1769 King Island Conservation Reserve → polygon ""
+  - AU-8678 Seven Mile Beach - State Beach → polygon ""
+
+### Public/PlanningOnline  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PlanningOnline/MapServer/2
+- WHY: official, credit terms, named polygons; closes 37 (name + pin 0, pin only 37): a pin inside a designation polygon is not a sure match
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST &#169 State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PlanningOnline/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field FEAT_NAME · 439979 records · sample None / None / None
+- closes: 37 of 60 tested missing parks (by name 0, pin only 37; 76 of the area's 2871 missing parks lie in the layer's extent)
+  - AU-0579 Kent Group National Park → polygon ""
+  - AU-10758 Pardoe Northdown Conservation Area → polygon ""
+  - AU-11291 Great Lake Water Management Area → polygon ""
+  - AU-11292 Arthurs Lake - Water Management Area → polygon ""
+  - AU-11293 Romaine Reservoir - Water Management Area → polygon "Burnie"
+  - AU-11294 Lake Sorell - Water Management Area → polygon ""
+  - AU-11295 Lake Crescent - Water Management Area → polygon ""
+  - AU-11296 Curries River Reservoir - Water Management Area → polygon ""
+  - AU-11297 Brandy Pond - Water Management Area → polygon ""
+  - AU-11298 Bruins Pond - Water Management Area → polygon ""
+  - AU-11299 Four Springs Lake - Water Management Area → polygon ""
+  - AU-11300 Brushy Lagoon - Water Management Area → polygon ""
+  - AU-11301 Lake Trevallyn - Water Management Area → polygon ""
+  - AU-11302 Risdon Brook Reservoir - Water Management Area → polygon ""
+  - AU-11303 Waterworks Reservoirs - Water Management Area → polygon "Hobart"
+  - AU-11305 Gordons Reservoir Water Management Area → polygon ""
+  - AU-11306 Lake Pedder - Water Management Area → polygon ""
+  - AU-11307 Lake Gordon Water Management Area → polygon ""
+  - AU-11308 Tooms Lake - Water Management Area → polygon "Northern Midlands"
+  - AU-11309 Lake Leake - Water Management Area → polygon ""
+  - AU-11310 Craigbourne Lake Water Management Area → polygon ""
+  - AU-11311 Woods Lake Water Management Area → polygon ""
+  - AU-11312 Pet Dam - Water Management Area → polygon ""
+  - AU-1769 King Island Conservation Reserve → polygon ""
+  - AU-8678 Seven Mile Beach - State Beach → polygon ""
+
+### Public/ABS_2011  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer/0
+- WHY: official, credit terms, named polygons; closes 33 (name + pin 0, pin only 33): a pin inside a designation polygon is not a sure match
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field SA4_NAME · 4 records · sample Hobart / Launceston and North East / South East
+- closes: 33 of 60 tested missing parks (by name 0, pin only 33; 76 of the area's 2871 missing parks lie in the layer's extent)
+  - AU-0579 Kent Group National Park → polygon "Launceston and North East"
+  - AU-11291 Great Lake Water Management Area → polygon "South East"
+  - AU-11292 Arthurs Lake - Water Management Area → polygon "South East"
+  - AU-11293 Romaine Reservoir - Water Management Area → polygon "West and North West"
+  - AU-11294 Lake Sorell - Water Management Area → polygon "South East"
+  - AU-11295 Lake Crescent - Water Management Area → polygon "South East"
+  - AU-11296 Curries River Reservoir - Water Management Area → polygon "Launceston and North East"
+  - AU-11297 Brandy Pond - Water Management Area → polygon "Launceston and North East"
+  - AU-11298 Bruins Pond - Water Management Area → polygon "Launceston and North East"
+  - AU-11299 Four Springs Lake - Water Management Area → polygon "Launceston and North East"
+  - AU-11300 Brushy Lagoon - Water Management Area → polygon "Launceston and North East"
+  - AU-11301 Lake Trevallyn - Water Management Area → polygon "Launceston and North East"
+  - AU-11302 Risdon Brook Reservoir - Water Management Area → polygon "Hobart"
+  - AU-11303 Waterworks Reservoirs - Water Management Area → polygon "Hobart"
+  - AU-11305 Gordons Reservoir Water Management Area → polygon "Hobart"
+  - AU-11306 Lake Pedder - Water Management Area → polygon "South East"
+  - AU-11307 Lake Gordon Water Management Area → polygon "South East"
+  - AU-11308 Tooms Lake - Water Management Area → polygon "Launceston and North East"
+  - AU-11309 Lake Leake - Water Management Area → polygon "Launceston and North East"
+  - AU-11310 Craigbourne Lake Water Management Area → polygon "South East"
+  - AU-11311 Woods Lake Water Management Area → polygon "South East"
+  - AU-11312 Pet Dam - Water Management Area → polygon "West and North West"
+  - AU-1769 King Island Conservation Reserve → polygon "West and North West"
+  - AU-8678 Seven Mile Beach - State Beach → polygon "Hobart"
+  - AU-8695 White State Beach → polygon "South East"
+
+### Public/ABS_2016  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2016/MapServer/0
+- WHY: official, credit terms, named polygons; closes 33 (name + pin 0, pin only 33): a pin inside a designation polygon is not a sure match
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2016/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field SA4_NAME16 · 4 records · sample Hobart / Launceston and North East / South East
+- closes: 33 of 60 tested missing parks (by name 0, pin only 33; 76 of the area's 2871 missing parks lie in the layer's extent)
+  - AU-0579 Kent Group National Park → polygon "Launceston and North East"
+  - AU-11291 Great Lake Water Management Area → polygon "South East"
+  - AU-11292 Arthurs Lake - Water Management Area → polygon "South East"
+  - AU-11293 Romaine Reservoir - Water Management Area → polygon "West and North West"
+  - AU-11294 Lake Sorell - Water Management Area → polygon "South East"
+  - AU-11295 Lake Crescent - Water Management Area → polygon "South East"
+  - AU-11296 Curries River Reservoir - Water Management Area → polygon "Launceston and North East"
+  - AU-11297 Brandy Pond - Water Management Area → polygon "Launceston and North East"
+  - AU-11298 Bruins Pond - Water Management Area → polygon "Launceston and North East"
+  - AU-11299 Four Springs Lake - Water Management Area → polygon "Launceston and North East"
+  - AU-11300 Brushy Lagoon - Water Management Area → polygon "Launceston and North East"
+  - AU-11301 Lake Trevallyn - Water Management Area → polygon "Launceston and North East"
+  - AU-11302 Risdon Brook Reservoir - Water Management Area → polygon "Hobart"
+  - AU-11303 Waterworks Reservoirs - Water Management Area → polygon "Hobart"
+  - AU-11305 Gordons Reservoir Water Management Area → polygon "Hobart"
+  - AU-11306 Lake Pedder - Water Management Area → polygon "South East"
+  - AU-11307 Lake Gordon Water Management Area → polygon "South East"
+  - AU-11308 Tooms Lake - Water Management Area → polygon "Launceston and North East"
+  - AU-11309 Lake Leake - Water Management Area → polygon "Launceston and North East"
+  - AU-11310 Craigbourne Lake Water Management Area → polygon "South East"
+  - AU-11311 Woods Lake Water Management Area → polygon "South East"
+  - AU-11312 Pet Dam - Water Management Area → polygon "West and North West"
+  - AU-1769 King Island Conservation Reserve → polygon "West and North West"
+  - AU-8678 Seven Mile Beach - State Beach → polygon "Hobart"
+  - AU-8695 White State Beach → polygon "South East"
 
 ### SSSI units (England)  ·  GB  ·  from harvester
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/SSSI_Units_England/FeatureServer/1
@@ -47,7 +245,205 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
   - GB-0198 Thames Basin Heaths SPA - Yateley Heath Woods Site of Significant Scientific Interest → polygon "Castle Bottom to Yateley and Hawley Commons"
 - TEST: ok
 
-## WATER-ONLY (1)
+### Public/NaturalEnvironment  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/4
+- WHY: official, credit terms, named polygons; closes 24 (name + pin 2, pin only 22): a pin inside a designation polygon is not a sure match
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 138 records · sample Patriarch / Sellars Lagoon / Yarra
+- closes: 24 of 57 tested missing parks (by name 2, pin only 22; 57 of the area's 2871 missing parks lie in the layer's extent)
+  - AU-11291 Great Lake Water Management Area → polygon "Tamar"
+  - AU-11292 Arthurs Lake - Water Management Area → polygon "Tamar"
+  - AU-11294 Lake Sorell - Water Management Area → polygon "Derwent"
+  - AU-11295 Lake Crescent - Water Management Area → polygon "Derwent"
+  - AU-11296 Curries River Reservoir - Water Management Area → polygon "Curries"
+  - AU-11297 Brandy Pond - Water Management Area → polygon "Tamar"
+  - AU-11298 Bruins Pond - Water Management Area → polygon "Tamar"
+  - AU-11299 Four Springs Lake - Water Management Area → polygon "Tamar"
+  - AU-11300 Brushy Lagoon - Water Management Area → polygon "Tamar"
+  - AU-11301 Lake Trevallyn - Water Management Area → polygon "Tamar"
+  - AU-11302 Risdon Brook Reservoir - Water Management Area → polygon "Derwent"
+  - AU-11303 Waterworks Reservoirs - Water Management Area → polygon "Derwent"
+  - AU-11305 Gordons Reservoir Water Management Area → polygon "Pittwater"
+  - AU-11306 Lake Pedder - Water Management Area → polygon "Gordon"
+  - AU-11307 Lake Gordon Water Management Area → polygon "Gordon"
+  - AU-11308 Tooms Lake - Water Management Area → polygon "Tamar"
+  - AU-11309 Lake Leake - Water Management Area → polygon "Tamar"
+  - AU-11310 Craigbourne Lake Water Management Area → polygon "Pittwater"
+  - AU-11311 Woods Lake Water Management Area → polygon "Tamar"
+  - AU-11312 Pet Dam - Water Management Area → polygon "Emu"
+  - AU-8811 Bellerive Beach - State Beach → polygon "Derwent"
+  - AU-8860 Long Beach - State Beach → polygon "Derwent"
+  - AU-8864 Flat Rock Beach - State Beach → polygon "Derwent"
+  - AU-8929 ANZAC Park → polygon "Derwent"
+
+### Landgate_Public_Maps/Map_of_Bush_Fire_Prone_Areas_3  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Map_of_Bush_Fire_Prone_Areas_3/MapServer/7
+- WHY: official, credit terms, named polygons; closes 16 (name + pin 1, pin only 15): a pin inside a designation polygon is not a sure match
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: CREDIT · source item page · "Landgate/SLIP/OBRM Landgate/SLIP/OBRM" · item https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Map_of_Bush_Fire_Prone_Areas_3/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field name · 139 records · sample COOROW, SHIRE OF / KONDININ, SHIRE OF / SHARK BAY, SHIRE OF
+- closes: 16 of 60 tested missing parks (by name 1, pin only 15; 2871 of the area's 2871 missing parks lie in the layer's extent)
+  - AU-0004 Yawuru Birragun Conservation Park → polygon "BROOME, SHIRE OF"
+  - AU-0027 Tunnel Creek National Park → polygon "DERBY/WEST KIMBERLEY, SHIRE OF"
+  - AU-0034 Swan Estuary Marine Park → polygon "PERTH, CITY OF"
+  - AU-0040 Shoalwater Islands Marine Park → polygon "ROCKINGHAM, CITY OF"
+  - AU-0042 Shark Bay Marine Park → polygon "SHARK BAY, SHIRE OF"
+  - AU-0058 Ningaloo Marine Park → polygon "CARNARVON, SHIRE OF"
+  - AU-0060 Ngari Capes Marine Park → polygon "AUGUSTA MARGARET RIVER, SHIRE OF"
+  - AU-0066 Mount Manning - Helena And Aurora Ranges Conservation Park → polygon "YILGARN, SHIRE OF"
+  - AU-0093 Lalang-garram / Camden Sound Marine Park → polygon "WYNDHAM-EAST KIMBERLEY, SHIRE OF"
+  - AU-0099 Wunaamin Conservation Park → polygon "DERBY/WEST KIMBERLEY, SHIRE OF"
+  - AU-0106 Jurien Bay Marine Park → polygon "DANDARAGAN, SHIRE OF"
+  - AU-0126 Geikie Gorge National Park → polygon "DERBY/WEST KIMBERLEY, SHIRE OF"
+  - AU-0127 Geikie Gorge Conservation Park → polygon "DERBY/WEST KIMBERLEY, SHIRE OF"
+  - AU-0135 Eighty Mile Beach Marine Park → polygon "BROOME, SHIRE OF"
+  - AU-0162 Brooking Gorge Conservation Park → polygon "DERBY/WEST KIMBERLEY, SHIRE OF"
+  - AU-0506 McCorkill State Forest → polygon "NANNUP, SHIRE OF"
+
+### Public/EmergencyManagementPublic  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/EmergencyManagementPublic/MapServer/1
+- WHY: official, credit terms, named polygons; closes 6 (name + pin 3, pin only 3): a pin inside a designation polygon is not a sure match
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST © State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/EmergencyManagementPublic/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field FIRE_NAME · 10427 records · sample Bushfire - 8/12/1988 / Cambridge Street Reserve / Cambridge Street Reserve
+- closes: 6 of 60 tested missing parks (by name 3, pin only 3; 75 of the area's 2871 missing parks lie in the layer's extent)
+  - AU-11297 Brandy Pond - Water Management Area → polygon "Beaconsfield - Brandy Creek"
+  - AU-11298 Bruins Pond - Water Management Area → polygon "Beaconsfield - Brandy Creek"
+  - AU-11303 Waterworks Reservoirs - Water Management Area → polygon "1967 Fire"
+  - AU-11306 Lake Pedder - Water Management Area → polygon "Lake Pedder"
+  - AU-11307 Lake Gordon Water Management Area → polygon "Lake Gordon (Starfish fire)"
+  - AU-11310 Craigbourne Lake Water Management Area → polygon "1967 Fire"
+
+### ogc_services/Australian_Marine_Parks  ·  AU  ·  from harvester
+- url: https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Australian_Marine_Parks/MapServer/0
+- WHY: official, credit terms, named polygons; closes 2 (name + pin 0, pin only 2): a pin inside a designation polygon is not a sure match
+- publisher: gis.environment.gov.au → official (government host gis.environment.gov.au)
+- terms: CREDIT · source item page · "Australian Marine Parks © Commonwealth of Australia, Australian Government Department of Climate Change, Energy, th" · item https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Australian_Marine_Parks/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NETNAME · 216 records · sample South-west / South-west / Temperate East
+- closes: 2 of 60 tested missing parks (by name 0, pin only 2; 2871 of the area's 2871 missing parks lie in the layer's extent)
+  - AU-0002 Willis Island National Park → polygon "Coral Sea"
+  - AU-0046 Rowley Shoals Marine Park → polygon "North-west"
+
+### ogc_services/Australian_Marine_Parks_Outer_Boundary/0  ·  AU  ·  from harvester
+- url: https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Australian_Marine_Parks_Outer_Boundary/MapServer/0
+- WHY: official, open terms, named polygons; closes 2 (name + pin 0, pin only 2): a pin inside a designation polygon is not a sure match
+- publisher: gis.environment.gov.au → official (government host gis.environment.gov.au)
+- terms: OPEN · source item page · "This dataset is released under Creative Commons by Attribution 4.0 International (CC BY 4.0). Australian Marine Parks © Commonwealth of A" · item https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Australian_Marine_Parks_Outer_Boundary/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NETNAME · 61 records · sample South-east / North / North-west
+- closes: 2 of 60 tested missing parks (by name 0, pin only 2; 2864 of the area's 2871 missing parks lie in the layer's extent)
+  - AU-0002 Willis Island National Park → polygon "Coral Sea"
+  - AU-0046 Rowley Shoals Marine Park → polygon "North-west"
+
+### ogc_services/Indigenous_Protected_Areas/0  ·  AU  ·  from harvester
+- url: https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Indigenous_Protected_Areas/FeatureServer/0
+- WHY: official, credit terms, named polygons; closes 2 (name + pin 2, pin only 0): a pin inside a designation polygon is not a sure match
+- publisher: gis.environment.gov.au → official (government host gis.environment.gov.au)
+- terms: CREDIT · source item page · "When using this dataset for analysis or mapping you must always acknowledge the National Indigenous Australians Agency and the Department of Climate Change, Energy," · item https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Indigenous_Protected_Areas/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 120 records · sample Angkum / Anindilyakwa / Anindilyakwa
+- closes: 2 of 60 tested missing parks (by name 2, pin only 0; 2871 of the area's 2871 missing parks lie in the layer's extent)
+  - AU-0004 Yawuru Birragun Conservation Park → polygon "Yawuru"
+  - AU-0717 Vernon Islands Conservation Reserve → polygon "Tiwi Islands"
+
+### ogc_services/World_Heritage_Areas/0  ·  AU  ·  from harvester
+- url: https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/World_Heritage_Areas/MapServer/0
+- WHY: official, open terms, named polygons; closes 2 (name + pin 2, pin only 0): a pin inside a designation polygon is not a sure match
+- publisher: gis.environment.gov.au → official (government host gis.environment.gov.au)
+- terms: OPEN · source item page · "Creative Commons by Attribution 4.0 International (CC BY 4.0) Australian Government Department of Agricult" · item https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/World_Heritage_Areas/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 49 records · sample Australian Convict Sites (Brickendon - Woolmers Buffer Zone) / Australian Convict Sites (Brickendon - Woolmers) / Australian Convict Sites (Old Government House and Domain Bu
+- closes: 2 of 60 tested missing parks (by name 2, pin only 0; 2864 of the area's 2871 missing parks lie in the layer's extent)
+  - AU-0042 Shark Bay Marine Park → polygon "Shark Bay, Western Australia"
+  - AU-0058 Ningaloo Marine Park → polygon "Ningaloo Coast"
+
+### Public/ABS_2011  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer/1
+- WHY: official, credit terms, named polygons; closes 1 (name + pin 0, pin only 1): a pin inside a designation polygon is not a sure match
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field SA3_NAME · 15 records · sample Brighton / Hobart - North East / Hobart - North West
+- closes: 1 of 2 tested missing parks (by name 0, pin only 1; 76 of the area's 2871 missing parks lie in the layer's extent)
+  - AU-0579 Kent Group National Park → polygon "North East"
+
+### Public/ABS_2016  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2016/MapServer/1
+- WHY: official, credit terms, named polygons; closes 1 (name + pin 0, pin only 1): a pin inside a designation polygon is not a sure match
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2016/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field SA3_NAME16 · 15 records · sample Brighton / Hobart - North East / Hobart - North West
+- closes: 1 of 2 tested missing parks (by name 0, pin only 1; 76 of the area's 2871 missing parks lie in the layer's extent)
+  - AU-0579 Kent Group National Park → polygon "North East"
+
+### Public/CadastreAndAdministrative  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrative/MapServer/4
+- WHY: official, credit terms, named polygons; closes 1 (name + pin 0, pin only 1): a pin inside a designation polygon is not a sure match
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST &copy; State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrative/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 29 records · sample Burnie / Huon Valley / Flinders
+- closes: 1 of 2 tested missing parks (by name 0, pin only 1; 76 of the area's 2871 missing parks lie in the layer's extent)
+  - AU-0579 Kent Group National Park → polygon "Flinders"
+
+### Public/Indexes  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Indexes/MapServer/65
+- WHY: official, credit terms, named polygons; closes 1 (name + pin 1, pin only 0): a pin inside a designation polygon is not a sure match
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST &#169 State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Indexes/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field MAP_NAME · 95 records · sample AVOCA / LAKE LEAKE / SWANSTON
+- closes: 1 of 5 tested missing parks (by name 1, pin only 0; 76 of the area's 2871 missing parks lie in the layer's extent)
+  - AU-0579 Kent Group National Park → polygon "KENT GROUP"
+
+### Public/MarineAndCoastal  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/MarineAndCoastal/MapServer/92
+- WHY: official, credit terms, named polygons; closes 1 (name + pin 1, pin only 0): a pin inside a designation polygon is not a sure match
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/MarineAndCoastal/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field GA_NAME · 57 records · sample Pitt Water / Pitt Water / Gardners Bay
+- closes: 1 of 55 tested missing parks (by name 1, pin only 0; 55 of the area's 2871 missing parks lie in the layer's extent)
+  - AU-11304 Pipe Clay Lagoon - Water Management Area → polygon "Pipe Clay Lagoon"
+
+### Public/OpenDataWFS  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer/2
+- WHY: official, credit terms, named polygons; closes 1 (name + pin 0, pin only 1): a pin inside a designation polygon is not a sure match
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST &#169 State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field O_NAME · 57546 records · sample Landslide Hazard Area / Landslide Hazard Area / Landslide Hazard Area
+- closes: 1 of 46 tested missing parks (by name 0, pin only 1; 46 of the area's 2871 missing parks lie in the layer's extent)
+  - AU-8859 Kingston Beach - State Beach → polygon "Heritage Precinct"
+
+### Public/PWSPublic  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer/0
+- WHY: official, credit terms, named polygons; closes 1 (name + pin 0, pin only 1): a pin inside a designation polygon is not a sure match
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field SITE_NAME · 29 records · sample Leven FC / Lake St Clair FC / Overland Track FC
+- closes: 1 of 60 tested missing parks (by name 0, pin only 1; 515 of the area's 2871 missing parks lie in the layer's extent)
+  - AU-0579 Kent Group National Park → polygon "Flinders Island FC"
+
+## WATER-ONLY (3)
+
+### ogc_services/Ramsar_Wetlands  ·  AU  ·  from harvester
+- url: https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Ramsar_Wetlands/FeatureServer/0
+- WHY: water only: for the 2-fer owner step only (lakes / reservoirs / water bodies never go in the key as a park outline); otherwise READY: official, open terms, named polygons; closes 6 (name + pin 2, pin only 4): a pin inside a designation polygon is not a sure match
+- publisher: gis.environment.gov.au → official (government host gis.environment.gov.au)
+- FLAG: water only: for the 2-fer owner step only
+- terms: OPEN · source item page · "Creative Commons by Attribution 4.0 International (CC BY 4.0) Australian Government Department of Agricult" · item https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Ramsar_Wetlands/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field RAMSAR_NAME · 120 records · sample Pitt Water-Orielton Lagoon / Kerang Wetlands / Lavinia
+- closes: 6 of 60 tested missing parks (by name 2, pin only 4; 2862 of the area's 2871 missing parks lie in the layer's extent)
+  - AU-0004 Yawuru Birragun Conservation Park → polygon "Roebuck Bay"
+  - AU-0187 Yaringa Marine National Park → polygon "Western Port"
+  - AU-0293 Nooramunga Coastal & Marine Park → polygon "Corner Inlet"
+  - AU-0450 Corner Inlet Marine National Park → polygon "Corner Inlet"
+  - AU-0451 Corner Inlet Coastal & Marine Park → polygon "Corner Inlet"
+  - AU-0460 Churchill Island Marine National Park → polygon "Western Port"
+
+### Public/NaturalEnvironment  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/5
+- WHY: water only: for the 2-fer owner step only (lakes / reservoirs / water bodies never go in the key as a park outline); otherwise READY: official, credit terms, named polygons; closes 1 (name + pin 1, pin only 0): a pin inside a designation polygon is not a sure match
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- FLAG: water only: for the 2-fer owner step only
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 192 records · sample Pats / Seal / Chew Tobacco Creek
+- closes: 1 of 3 tested missing parks (by name 1, pin only 0; 57 of the area's 2871 missing parks lie in the layer's extent)
+  - AU-11291 Great Lake Water Management Area → polygon "Great Lake"
 
 ### USACE reservoirs (Army Corps of Engineers)  ·  US  ·  from chat 9
 - url: https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_rez/FeatureServer/0
@@ -90,7 +486,70 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
   - CZ-0139 Ještěd Nature Park → polygon "Ještěd"
 - TEST: ok
 
-## ASK-THE-PUBLISHER (2)
+## ASK-THE-PUBLISHER (10)
+
+### AerialPhotoViewer/Orthophoto_Coverage_Area  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/AerialPhotoViewer/Orthophoto_Coverage_Area/MapServer/0
+- WHY: nothing stated about use on the item page or the service
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/AerialPhotoViewer/Orthophoto_Coverage_Area/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field PROJ_NAME · 8385 records · sample 42000 Revision 0910 / 42000 Revision 0910 / 42000 Revision 0910
+- closes: 40 of 60 tested missing parks (by name 3, pin only 37; 77 of the area's 2871 missing parks lie in the layer's extent)
+  - AU-0579 Kent Group National Park → polygon "Bass Strait Is. (Kent Group)"
+  - AU-10758 Pardoe Northdown Conservation Area → polygon "Low Water Mark"
+  - AU-11291 Great Lake Water Management Area → polygon "42000 Revision 0910"
+  - AU-11292 Arthurs Lake - Water Management Area → polygon "42000 Revision 0910"
+  - AU-11293 Romaine Reservoir - Water Management Area → polygon "A135 Urban 2011-12"
+  - AU-11294 Lake Sorell - Water Management Area → polygon "WOOLNORTH 1:20000 COLOUR"
+  - AU-11295 Lake Crescent - Water Management Area → polygon "42000 Revision 0910"
+  - AU-11296 Curries River Reservoir - Water Management Area → polygon "NORTH EAST REVISION 2005-06"
+  - AU-11297 Brandy Pond - Water Management Area → polygon "West Tamar Municipality 25cm"
+  - AU-11298 Bruins Pond - Water Management Area → polygon "West Tamar Municipality 25cm"
+  - AU-11299 Four Springs Lake - Water Management Area → polygon "CENTRAL NORTH REVISION  2007-08"
+  - AU-11300 Brushy Lagoon - Water Management Area → polygon "CENTRAL NORTH REVISION  2007-08"
+  - AU-11301 Lake Trevallyn - Water Management Area → polygon "CENTRAL NORTH REVISION  2007-08"
+  - AU-11302 Risdon Brook Reservoir - Water Management Area → polygon "HUON - DERWENT: URBAN ORTHO"
+  - AU-11303 Waterworks Reservoirs - Water Management Area → polygon "HUON - DERWENT: URBAN ORTHO"
+  - AU-11304 Pipe Clay Lagoon - Water Management Area → polygon "SOUTHERN REVISION 2007"
+  - AU-11305 Gordons Reservoir Water Management Area → polygon "HUON - DERWENT : URBAN OPM"
+  - AU-11306 Lake Pedder - Water Management Area → polygon "SOUTH WEST REVISION"
+  - AU-11307 Lake Gordon Water Management Area → polygon "SOUTH WEST REVISION  2006-07"
+  - AU-11308 Tooms Lake - Water Management Area → polygon "CENTRAL EAST REVISION 2005-06"
+  - AU-11309 Lake Leake - Water Management Area → polygon "42000 Revision 0910"
+  - AU-11310 Craigbourne Lake Water Management Area → polygon "CRAIGBOURNE DAM"
+  - AU-11311 Woods Lake Water Management Area → polygon "42000 Revision 0910"
+  - AU-11312 Pet Dam - Water Management Area → polygon "NORTH WEST FORESTRY  2006-07"
+  - AU-1769 King Island Conservation Reserve → polygon "LWM 2011-12 24000V2"
+
+### AerialPhotoViewer/Aerial_Photo_Coverage_Areas  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/AerialPhotoViewer/Aerial_Photo_Coverage_Areas/MapServer/0
+- WHY: nothing stated about use on the item page or the service
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/AerialPhotoViewer/Aerial_Photo_Coverage_Areas/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field PROJ_NAME · 186461 records · sample SOUTH EAST   FORESTRY 95 / NORTH WEST  FORESTRY 96-97 / NORTH EAST  FORESTRY EXTN.
+- closes: 10 of 60 tested missing parks (by name 0, pin only 10; 207 of the area's 2871 missing parks lie in the layer's extent)
+  - AU-0579 Kent Group National Park → polygon "LWM 2011-12 24000V3"
+  - AU-10147 Bare Back Cove State Beach → polygon "BASS STRAIT"
+  - AU-10180 Chinaman Long Beach State Beach → polygon "BASS STRAIT"
+  - AU-10185 Cotters Beach State Beach → polygon "BASS STRAIT"
+  - AU-10195 Darby Beach State Beach → polygon "BASS STRAIT"
+  - AU-10207 Red Bluff Beach State Beach → polygon "BASS STRAIT"
+  - AU-10212 Fairy Cove State Beach → polygon "BASS STRAIT"
+  - AU-10217 Five Mile Beach National Park → polygon "BASS STRAIT"
+  - AU-10247 Johnny Souey Cove State Beach → polygon "BASS STRAIT"
+  - AU-10248 Keijsers Beach State Beach → polygon "BASS STRAIT"
+
+### Public/NVAdata  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/6
+- WHY: nothing stated about use on the item page or the service
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field SPECIES_NAME · 5186 records · sample Rubus fruticosus / Ulex europaeus / Hypericum perforatum subsp. veronense
+- closes: 4 of 60 tested missing parks (by name 0, pin only 4; 74 of the area's 2871 missing parks lie in the layer's extent)
+  - AU-10758 Pardoe Northdown Conservation Area → polygon "Asparagus asparagoides"
+  - AU-11304 Pipe Clay Lagoon - Water Management Area → polygon "Brachionichthys hirsutus"
+  - AU-8812 Nutgrove Beach - State Beach → polygon "Brachionichthys hirsutus"
+  - AU-8858 Howrah Beach - State Beach → polygon "Brachionichthys hirsutus"
 
 ### SCDNR managed lands (public viewer) on Clemson's ArcGIS Online account  ·  US-SC  ·  from chat 9
 - url: https://services1.arcgis.com/x5wCko8UnSi4h0CB/arcgis/rest/services/SCDNR_Managed_Lands_Public_Viewer/FeatureServer/0
@@ -102,6 +561,15 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
   - US-9229 Wild Turkey Wildlife Management Area → polygon "Unnamed WMA"
 - TEST: ok
 
+### Public/CadastreAndAdministrativeV2  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrativeV2/MapServer/1
+- WHY: nothing stated about use on the item page or the service
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrativeV2/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 3601 records · sample None / None / None
+- closes: 1 of 56 tested missing parks (by name 1, pin only 0; 56 of the area's 2871 missing parks lie in the layer's extent)
+  - AU-11307 Lake Gordon Water Management Area → polygon "Lake Gordon"
+
 ### PEI provincial parks (GeoLinc, ENV polygon layer)  ·  CA-PE  ·  from chat 9
 - url: https://gis.princeedwardisland.ca/server/rest/services/GeoLincData/GeoLinc_provincial_park_polygon_ENV/MapServer/0
 - WHY: nothing stated about use on the item page or the service
@@ -112,7 +580,39 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 36 missing parks lie in the layer's extent)
 - TEST: ok
 
-## RETRY (2)
+### Public/CadastreAndAdministrativeV2  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrativeV2/MapServer/5
+- WHY: nothing stated about use on the item page or the service
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrativeV2/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 6 records · sample BB103H HWP2 / CE333C 2SWP / FN029F HWP2
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 41 of the area's 2871 missing parks lie in the layer's extent)
+
+### Public/NVAdata  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/7
+- WHY: nothing stated about use on the item page or the service
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field SPECIES_NAME · 14 records · sample Digitalis purpurea / Ulex europaeus / Ulex europaeus
+- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 18 of the area's 2871 missing parks lie in the layer's extent)
+
+### Public/NaturalEnvironmentV2  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironmentV2/MapServer/12
+- WHY: nothing stated about use on the item page or the service
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironmentV2/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field SCHED_NAME · 50187 records · sample Alkaline pans / Alkaline pans / Alkaline pans
+- closes: 0 of 57 tested missing parks (by name 0, pin only 0; 76 of the area's 2871 missing parks lie in the layer's extent)
+
+### Public/PlanningOnline  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PlanningOnline/MapServer/3
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PlanningOnline/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field O_NAME · 57546 records · sample Landslide Hazard Area / Landslide Hazard Area / Landslide Hazard Area
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 46 of the area's 2871 missing parks lie in the layer's extent)
+
+## RETRY (61)
 
 ### My favorite camping spots (a hobby map)  ·  US-KY  ·  from chat 9
 - url: https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0
@@ -125,14 +625,486 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Slovenia protected areas (ARSO, INSPIRE PS WFS)  ·  W-SI  ·  from chat 9
 - url: https://prostor4.gov.si/ows2-ins/ps/wfs
-- WHY: did not open (rest): probed again next run (failed 1 of 3)
+- WHY: did not open (rest): probed again next run (failed 2 of 3)
 - publisher: Agencija RS za okolje (ARSO) / Slovenian Environment Agency → official (government host prostor4.gov.si)
 - terms: OPEN · source GetCapabilities + queue row · "ATOM feed rights: 'No limitations'"
 - facts: wfs · status rest
 - closes: not probed: WFS point query not built
 - TEST: ok
 
-## REJECT (4)
+### Landgate_Public_Maps/Marine_Map_WA_3  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/5
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: CREDIT · source item page · "WALIS WALIS" · item https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Landgate_Public_Maps/Marine_Map_WA_3  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/6
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: CREDIT · source item page · "WALIS WALIS" · item https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Landgate_Public_Maps/Marine_Map_WA_3  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/10
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: CREDIT · source item page · "WALIS WALIS" · item https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Landgate_Public_Maps/Marine_Map_WA_3  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/11
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: CREDIT · source item page · "WALIS WALIS" · item https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Landgate_Public_Maps/Marine_Map_WA_3  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/12
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: CREDIT · source item page · "WALIS WALIS" · item https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Landgate_Public_Maps/Marine_Map_WA_3  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/14
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: CREDIT · source item page · "WALIS WALIS" · item https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/ABS_2011  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer/2
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/ABS_2011  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer/3
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/ABS_2011  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer/4
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/ABS_2011  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer/5
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/ABS_2011  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer/6
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/ABS_2011  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer/7
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/ABS_2016  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2016/MapServer/2
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2016/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/ABS_2016  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2016/MapServer/3
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2016/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/ABS_2016  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2016/MapServer/4
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2016/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/ABS_2016  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2016/MapServer/5
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2016/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/ABS_2016  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2016/MapServer/6
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2016/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/ABS_2016  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2016/MapServer/7
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2016/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/CadastreAndAdministrative  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrative/MapServer/5
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST &copy; State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrative/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/CadastreAndAdministrative  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrative/MapServer/96
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST &copy; State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrative/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/CadastreAndAdministrative  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrative/MapServer/6
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST &copy; State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrative/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/CadastreAndAdministrative  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrative/MapServer/7
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST &copy; State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrative/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/CadastreAndAdministrativeV2  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrativeV2/MapServer/6
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrativeV2/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/CadastreAndAdministrativeV2  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrativeV2/MapServer/10
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrativeV2/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/CadastreAndAdministrativeV2  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrativeV2/MapServer/15
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrativeV2/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/EmergencyManagementPublic  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/EmergencyManagementPublic/MapServer/8
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST © State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/EmergencyManagementPublic/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/EmergencyManagementPublic  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/EmergencyManagementPublic/MapServer/9
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST © State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/EmergencyManagementPublic/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/EmergencyManagementPublic  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/EmergencyManagementPublic/MapServer/13
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST © State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/EmergencyManagementPublic/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/EmergencyManagementPublic  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/EmergencyManagementPublic/MapServer/14
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST © State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/EmergencyManagementPublic/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/EmergencyManagementPublic  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/EmergencyManagementPublic/MapServer/15
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST © State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/EmergencyManagementPublic/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/EmergencyManagementPublic  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/EmergencyManagementPublic/MapServer/21
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST © State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/EmergencyManagementPublic/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/Indexes  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Indexes/MapServer/1
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Indexes/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/Indexes  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Indexes/MapServer/2
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Indexes/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/Indexes  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Indexes/MapServer/3
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Indexes/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/Indexes  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Indexes/MapServer/4
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Indexes/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/Indexes  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Indexes/MapServer/12
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Indexes/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/Indexes  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Indexes/MapServer/13
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Indexes/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/MarineAndCoastal  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/MarineAndCoastal/MapServer/1
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/MarineAndCoastal/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/MarineAndCoastal  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/MarineAndCoastal/MapServer/2
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/MarineAndCoastal/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/NVAdata  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/10
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/NVAdata  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/11
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/NVAdata  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/13
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/NVAdata  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/17
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/NaturalEnvironment  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/6
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/NaturalEnvironment  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/7
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/NaturalEnvironment  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/10
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/NaturalEnvironment  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/12
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/NaturalEnvironment  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/16
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/OpenDataWFS  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer/8
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/PWSPublic  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer/2
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/PWSPublic  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer/3
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/PWSPublic  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer/4
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/PWSPublic  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer/5
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/PWSPublic  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer/8
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/PWSPublic  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer/10
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/Planning  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Planning/MapServer/70
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Planning/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/Planning  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Planning/MapServer/72
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Planning/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/Planning  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Planning/MapServer/74
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Planning/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Public/Planning  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Planning/MapServer/77
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Planning/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+## REJECT (42)
 
 ### Nevada State Parks boundaries (Division of State Parks, VS Boundary Map)  ·  US-NV  ·  from chat 9
 - url: https://services7.arcgis.com/5hLFVlePaucIMGhw/arcgis/rest/services/VS_Boundary_Map_2_WFL1/FeatureServer/2
@@ -171,6 +1143,310 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - facts: arcgis-layer · esriGeometryPolygon · name field NAME · 255 records · last edit 2018-07-05 · sample Withnell Fold / Woodcote / Woodcote
 - closes: 0 of 60 tested missing parks (by name 0, pin only 0; 3357 of the area's 3357 missing parks lie in the layer's extent)
 - TEST: ok
+
+### NIAA_Administrative_Boundaries_2020  ·  AU  ·  from harvester
+- url: https://services9.arcgis.com/EPcAWuPcSWtfB9jL/arcgis/rest/services/NIAA_Administrative_Boundaries_2020/FeatureServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: National Indigenous Australians Agency → official (government words: Agency)
+- terms: NON-COMMERCIAL · source item page · "Licence: Creative Commons - Attribution-NonCommercial 4.0 International Access rights: Open Security classification: OFFICIAL National Indigeno" · item https://www.arcgis.com/home/item.html?id=1a3b79f01c924a689ee2ec9bf5500ee0 · owner indigenous_aus · org National Indigenous Australians Agency
+- facts: arcgis-layer · esriGeometryPolygon · 44 records · last edit 2026-10-21
+- closes: not probed
+
+### NIAA_Administrative_Boundaries_2020  ·  AU  ·  from harvester
+- url: https://services9.arcgis.com/EPcAWuPcSWtfB9jL/arcgis/rest/services/NIAA_Administrative_Boundaries_2020/FeatureServer/1
+- WHY: no name field: an outline needs a name to match a park
+- publisher: National Indigenous Australians Agency → official (government words: Agency)
+- terms: NON-COMMERCIAL · source item page · "Licence: Creative Commons - Attribution-NonCommercial 4.0 International Access rights: Open Security classification: OFFICIAL National Indigeno" · item https://www.arcgis.com/home/item.html?id=1a3b79f01c924a689ee2ec9bf5500ee0 · owner indigenous_aus · org National Indigenous Australians Agency
+- facts: arcgis-layer · esriGeometryPolygon · 44 records · last edit 2026-10-21
+- closes: not probed
+
+### NIAA_Administrative_Boundaries_2020  ·  AU  ·  from harvester
+- url: https://services9.arcgis.com/EPcAWuPcSWtfB9jL/arcgis/rest/services/NIAA_Administrative_Boundaries_2020/FeatureServer/2
+- WHY: no name field: an outline needs a name to match a park
+- publisher: National Indigenous Australians Agency → official (government words: Agency)
+- terms: NON-COMMERCIAL · source item page · "Licence: Creative Commons - Attribution-NonCommercial 4.0 International Access rights: Open Security classification: OFFICIAL National Indigeno" · item https://www.arcgis.com/home/item.html?id=1a3b79f01c924a689ee2ec9bf5500ee0 · owner indigenous_aus · org National Indigenous Australians Agency
+- facts: arcgis-layer · esriGeometryPolygon · 44 records · last edit 2026-10-21
+- closes: not probed
+
+### NIAA_Administrative_Boundaries_2020  ·  AU  ·  from harvester
+- url: https://services9.arcgis.com/EPcAWuPcSWtfB9jL/arcgis/rest/services/NIAA_Administrative_Boundaries_2020/FeatureServer/3
+- WHY: no name field: an outline needs a name to match a park
+- publisher: National Indigenous Australians Agency → official (government words: Agency)
+- terms: NON-COMMERCIAL · source item page · "Licence: Creative Commons - Attribution-NonCommercial 4.0 International Access rights: Open Security classification: OFFICIAL National Indigeno" · item https://www.arcgis.com/home/item.html?id=1a3b79f01c924a689ee2ec9bf5500ee0 · owner indigenous_aus · org National Indigenous Australians Agency
+- facts: arcgis-layer · esriGeometryPolygon · 11 records · last edit 2026-10-21
+- closes: not probed
+
+### NIAA_Administrative_Boundaries_2020  ·  AU  ·  from harvester
+- url: https://services9.arcgis.com/EPcAWuPcSWtfB9jL/arcgis/rest/services/NIAA_Administrative_Boundaries_2020/FeatureServer/4
+- WHY: no name field: an outline needs a name to match a park
+- publisher: National Indigenous Australians Agency → official (government words: Agency)
+- terms: NON-COMMERCIAL · source item page · "Licence: Creative Commons - Attribution-NonCommercial 4.0 International Access rights: Open Security classification: OFFICIAL National Indigeno" · item https://www.arcgis.com/home/item.html?id=1a3b79f01c924a689ee2ec9bf5500ee0 · owner indigenous_aus · org National Indigenous Australians Agency
+- facts: arcgis-layer · esriGeometryPolygon · 11 records · last edit 2026-10-21
+- closes: not probed
+
+### NIAA_Administrative_Boundaries_2020  ·  AU  ·  from harvester
+- url: https://services9.arcgis.com/EPcAWuPcSWtfB9jL/arcgis/rest/services/NIAA_Administrative_Boundaries_2020/FeatureServer/5
+- WHY: no name field: an outline needs a name to match a park
+- publisher: National Indigenous Australians Agency → official (government words: Agency)
+- terms: NON-COMMERCIAL · source item page · "Licence: Creative Commons - Attribution-NonCommercial 4.0 International Access rights: Open Security classification: OFFICIAL National Indigeno" · item https://www.arcgis.com/home/item.html?id=1a3b79f01c924a689ee2ec9bf5500ee0 · owner indigenous_aus · org National Indigenous Australians Agency
+- facts: arcgis-layer · esriGeometryPolygon · 11 records · last edit 2026-10-21
+- closes: not probed
+
+### NIAA_Administrative_Boundaries_2020  ·  AU  ·  from harvester
+- url: https://services9.arcgis.com/EPcAWuPcSWtfB9jL/arcgis/rest/services/NIAA_Administrative_Boundaries_2020/FeatureServer/6
+- WHY: no name field: an outline needs a name to match a park
+- publisher: National Indigenous Australians Agency → official (government words: Agency)
+- terms: NON-COMMERCIAL · source item page · "Licence: Creative Commons - Attribution-NonCommercial 4.0 International Access rights: Open Security classification: OFFICIAL National Indigeno" · item https://www.arcgis.com/home/item.html?id=1a3b79f01c924a689ee2ec9bf5500ee0 · owner indigenous_aus · org National Indigenous Australians Agency
+- facts: arcgis-layer · esriGeometryPolygon · 11 records · last edit 2026-10-21
+- closes: not probed
+
+### Landgate_Public_Maps/Map_of_Bush_Fire_Prone_Areas_3  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Map_of_Bush_Fire_Prone_Areas_3/MapServer/6
+- WHY: no name field: an outline needs a name to match a park
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: CREDIT · source item page · "Landgate/SLIP/OBRM Landgate/SLIP/OBRM" · item https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Map_of_Bush_Fire_Prone_Areas_3/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 1569895 records
+- closes: not probed
+
+### Landgate_Public_Maps/Map_of_Bush_Fire_Prone_Areas_3  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Map_of_Bush_Fire_Prone_Areas_3/MapServer/11
+- WHY: no name field: an outline needs a name to match a park
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: CREDIT · source item page · "Landgate/SLIP/OBRM Landgate/SLIP/OBRM" · item https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Map_of_Bush_Fire_Prone_Areas_3/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 148 records
+- closes: not probed
+
+### Landgate_Public_Maps/Marine_Map_WA_3  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/2
+- WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: CREDIT · source item page · "WALIS WALIS" · item https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field name · 32 records · sample Albany / Barker Bay Albany / Batavia NHL
+- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 2871 of the area's 2871 missing parks lie in the layer's extent)
+
+### Landgate_Public_Maps/Marine_Map_WA_3  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/3
+- WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: CREDIT · source item page · "WALIS WALIS" · item https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field name · 18 records · sample PORT OF BALLA BALLA / VARANUS ISLAND PORT AUTHORITY / WYNDHAM PORT AUTHORITY
+- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 2871 of the area's 2871 missing parks lie in the layer's extent)
+
+### Public/CadastreAndAdministrative  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrative/MapServer/1
+- WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST &copy; State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrative/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field FEAT_NAME · 9111 records · sample None / None / None
+- closes: 0 of 56 tested missing parks (by name 0, pin only 0; 56 of the area's 2871 missing parks lie in the layer's extent)
+
+### Public/CadastreAndAdministrative  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrative/MapServer/2
+- WHY: no name field: an outline needs a name to match a park
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST &copy; State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrative/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 1250 records
+- closes: not probed
+
+### Public/CadastreAndAdministrative  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrative/MapServer/3
+- WHY: no name field: an outline needs a name to match a park
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST &copy; State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrative/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 4393 records
+- closes: not probed
+
+### Public/CadastreAndAdministrativeV2  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrativeV2/MapServer/2
+- WHY: no name field: an outline needs a name to match a park
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrativeV2/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 8319 records
+- closes: not probed
+
+### Public/CadastreAndAdministrativeV2  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrativeV2/MapServer/3
+- WHY: no name field: an outline needs a name to match a park
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrativeV2/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 9443 records
+- closes: not probed
+
+### Public/CadastreAndAdministrativeV2  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrativeV2/MapServer/4
+- WHY: no name field: an outline needs a name to match a park
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrativeV2/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 172 records
+- closes: not probed
+
+### Public/EmergencyManagementPublic  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/EmergencyManagementPublic/MapServer/2
+- WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST © State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/EmergencyManagementPublic/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field FIRE_NAME · 9562 records · sample None / BS122H Bark Heap / Native Plains Road
+- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 75 of the area's 2871 missing parks lie in the layer's extent)
+
+### Public/MarineAndCoastal  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/MarineAndCoastal/MapServer/87
+- WHY: no name field: an outline needs a name to match a park
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/MarineAndCoastal/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 199 records
+- closes: not probed
+
+### Public/MarineAndCoastal  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/MarineAndCoastal/MapServer/89
+- WHY: no name field: an outline needs a name to match a park
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/MarineAndCoastal/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 14 records
+- closes: not probed
+
+### Public/MarineAndCoastal  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/MarineAndCoastal/MapServer/97
+- WHY: no name field: an outline needs a name to match a park
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/MarineAndCoastal/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 156 records
+- closes: not probed
+
+### Public/MarineAndCoastal  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/MarineAndCoastal/MapServer/96
+- WHY: no name field: an outline needs a name to match a park
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/MarineAndCoastal/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 2321 records
+- closes: not probed
+
+### Public/MarineAndCoastal  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/MarineAndCoastal/MapServer/99
+- WHY: no name field: an outline needs a name to match a park
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/MarineAndCoastal/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 42 records
+- closes: not probed
+
+### Public/NaturalEnvironment  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/1
+- WHY: no name field: an outline needs a name to match a park
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 126488 records
+- closes: not probed
+
+### Public/NaturalEnvironmentV2  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironmentV2/MapServer/7
+- WHY: no name field: an outline needs a name to match a park
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironmentV2/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 482138 records
+- closes: not probed
+
+### Public/NaturalEnvironmentV2  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironmentV2/MapServer/8
+- WHY: no name field: an outline needs a name to match a park
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironmentV2/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 482138 records
+- closes: not probed
+
+### Public/NaturalEnvironmentV2  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironmentV2/MapServer/9
+- WHY: no name field: an outline needs a name to match a park
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironmentV2/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 482138 records
+- closes: not probed
+
+### Public/NaturalEnvironmentV2  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironmentV2/MapServer/10
+- WHY: no name field: an outline needs a name to match a park
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironmentV2/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 482138 records
+- closes: not probed
+
+### Public/OpenDataWFS  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST &#169 State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 721 records
+- closes: not probed
+
+### Public/OpenDataWFS  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer/1
+- WHY: no name field: an outline needs a name to match a park
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST &#169 State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 721 records
+- closes: not probed
+
+### Public/OpenDataWFS  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer/4
+- WHY: no name field: an outline needs a name to match a park
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST &#169 State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 744 records
+- closes: not probed
+
+### Public/OpenDataWFS  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer/5
+- WHY: no name field: an outline needs a name to match a park
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST &#169 State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 3853 records
+- closes: not probed
+
+### Public/OpenDataWFS  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer/6
+- WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST &#169 State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field TILE_NAME · 22 records · sample e557n5239 / e557n5240 / e557n5241
+- closes: 0 of 1 tested missing parks (by name 0, pin only 0; 1 of the area's 2871 missing parks lie in the layer's extent)
+
+### Public/OpenDataWFS  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer/7
+- WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST &#169 State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field TILE_NAME · 557 records · sample filnd_5835561 / filnd_5835562 / filnd_5845560
+- closes: 0 of 4 tested missing parks (by name 0, pin only 0; 56 of the area's 2871 missing parks lie in the layer's extent)
+
+### Public/PWSPublic  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer/1
+- WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field SITE_NAME · 4 records · sample Whole State / Whole State / Whole State
+- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 515 of the area's 2871 missing parks lie in the layer's extent)
+
+### Public/Planning  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Planning/MapServer/67
+- WHY: no name field: an outline needs a name to match a park
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Planning/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 54264 records
+- closes: not probed
+
+### Public/Planning  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Planning/MapServer/68
+- WHY: no name field: an outline needs a name to match a park
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Planning/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 48577 records
+- closes: not probed
+
+### Public/Planning  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Planning/MapServer/69
+- WHY: no name field: an outline needs a name to match a park
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: CREDIT · source item page · "the LIST State of Tasmania the LIST State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Planning/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon
+- closes: not probed
 
 ## Known-answer test rows
 

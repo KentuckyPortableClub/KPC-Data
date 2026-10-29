@@ -3,16 +3,61 @@
  "hosts": {
   "prostor4.gov.si": 1793278595.936402
  },
- "last_run": "2026-10-28",
+ "last_run": "2026-10-29",
  "manners": {
-  "arcgis_exempt": 3,
+  "arcgis_exempt": 1654,
   "errors": 0,
-  "requests": 3,
+  "requests": 1654,
   "rested": 1,
   "robots": 0,
   "strikes": 0
  },
  "rows": {
+  "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Australian_Marine_Parks/MapServer": {
+   "fails": 0,
+   "probed": "2026-10-29",
+   "retry": false,
+   "sig": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Australian_Marine_Parks/MapServer|ogc_services/Australian_Marine_Parks|gis.environment.gov.au|This dataset is released under Creative Commons by Attribution 4.0 International (CC BY 4.0).||",
+   "verdicts": [
+    "READY"
+   ]
+  },
+  "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Australian_Marine_Parks_Outer_Boundary/MapServer/0": {
+   "fails": 0,
+   "probed": "2026-10-29",
+   "retry": false,
+   "sig": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Australian_Marine_Parks_Outer_Boundary/MapServer/0|ogc_services/Australian_Marine_Parks_Outer_Boundary/0|gis.environment.gov.au|Licence:          CC - Attribution (CC BY 4.0)    This data has been licensed under the Creative Commons Attribution 4.0 International Licence. More information can be found at:  https://creativecommo||",
+   "verdicts": [
+    "READY"
+   ]
+  },
+  "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Indigenous_Protected_Areas/FeatureServer/0": {
+   "fails": 0,
+   "probed": "2026-10-29",
+   "retry": false,
+   "sig": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Indigenous_Protected_Areas/FeatureServer/0|ogc_services/Indigenous_Protected_Areas/0|gis.environment.gov.au|Licence:      Attribution 3.0 Australia (CC BY 3.0 AU)  This data has been licensed under the Creative Commons Attribution 3.0 Australia Licence. More information can be found at:  https://creativecom||",
+   "verdicts": [
+    "READY"
+   ]
+  },
+  "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Ramsar_Wetlands/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-29",
+   "retry": false,
+   "sig": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Ramsar_Wetlands/FeatureServer|ogc_services/Ramsar_Wetlands|gis.environment.gov.au|﻿ License:   Creative Commons Attribution 4.0    Access rights:  Open   Security classification:  OFFICIAL||",
+   "verdicts": [
+    "WATER-ONLY"
+   ]
+  },
+  "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/World_Heritage_Areas/MapServer/0": {
+   "fails": 0,
+   "probed": "2026-10-29",
+   "retry": false,
+   "sig": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/World_Heritage_Areas/MapServer/0|ogc_services/World_Heritage_Areas/0|gis.environment.gov.au|Licence:    Attribution 4.0 International (CC BY 4.0)  This data has been licensed under the Creative Commons Attribution 4.0 International Licence. More information can be found at:&nbsp; https://cre||",
+   "verdicts": [
+    "READY"
+   ]
+  },
   "https://gis.nature.cz/arcgis/rest/services/ObecnaOchrana/PrirodniPark/MapServer/0": {
    "probed": "2026-10-28",
    "retry": false,
@@ -30,11 +75,38 @@
    ]
   },
   "https://prostor4.gov.si/ows2-ins/ps/wfs": {
-   "fails": 1,
-   "probed": "2026-10-28",
+   "fails": 2,
+   "probed": "2026-10-29",
    "retry": true,
    "sig": "https://prostor4.gov.si/ows2-ins/ps/wfs?service=wfs&version=2.0.0&request=GetCapabilities|Slovenia protected areas (ARSO, INSPIRE PS WFS)|Agencija RS za okolje (ARSO) / Slovenian Environment Agency|ATOM feed rights: 'No limitations'|WFS (not ArcGIS): the host did not resolve from a GitHub runner on Oct 28 (DNS); ATOM download feed http://gis.arso.gov.si/related/atom/inspire/datafeeds/zav_obm_poli.xml (GML, 2021-12-10). Needs the typename read from GetCapabilities.|READY (WFS) or did-not-open",
    "verdicts": [
+    "RETRY"
+   ]
+  },
+  "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Map_of_Bush_Fire_Prone_Areas_3/MapServer": {
+   "fails": 0,
+   "probed": "2026-10-29",
+   "retry": false,
+   "sig": "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Map_of_Bush_Fire_Prone_Areas_3/MapServer|Landgate_Public_Maps/Map_of_Bush_Fire_Prone_Areas_3|public-services.slip.wa.gov.au|Landgate/SLIP/OBRM||",
+   "verdicts": [
+    "REJECT",
+    "READY",
+    "REJECT"
+   ]
+  },
+  "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer": {
+   "fails": 1,
+   "probed": "2026-10-29",
+   "retry": true,
+   "sig": "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer|Landgate_Public_Maps/Marine_Map_WA_3|public-services.slip.wa.gov.au|WALIS||",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY",
     "RETRY"
    ]
   },
@@ -70,6 +142,246 @@
     "REJECT"
    ]
   },
+  "https://services.thelist.tas.gov.au/arcgis/rest/services/AerialPhotoViewer/Aerial_Photo_Coverage_Areas/MapServer": {
+   "fails": 0,
+   "probed": "2026-10-29",
+   "retry": false,
+   "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/AerialPhotoViewer/Aerial_Photo_Coverage_Areas/MapServer|AerialPhotoViewer/Aerial_Photo_Coverage_Areas|services.thelist.tas.gov.au|||",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services.thelist.tas.gov.au/arcgis/rest/services/AerialPhotoViewer/Orthophoto_Coverage_Area/MapServer": {
+   "fails": 0,
+   "probed": "2026-10-29",
+   "retry": false,
+   "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/AerialPhotoViewer/Orthophoto_Coverage_Area/MapServer|AerialPhotoViewer/Orthophoto_Coverage_Area|services.thelist.tas.gov.au|||",
+   "verdicts": [
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer": {
+   "fails": 1,
+   "probed": "2026-10-29",
+   "retry": true,
+   "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer|Public/ABS_2011|services.thelist.tas.gov.au|the LIST  State of Tasmania||",
+   "verdicts": [
+    "READY",
+    "READY",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY"
+   ]
+  },
+  "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2016/MapServer": {
+   "fails": 1,
+   "probed": "2026-10-29",
+   "retry": true,
+   "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2016/MapServer|Public/ABS_2016|services.thelist.tas.gov.au|the LIST  State of Tasmania||",
+   "verdicts": [
+    "READY",
+    "READY",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY"
+   ]
+  },
+  "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrative/MapServer": {
+   "fails": 1,
+   "probed": "2026-10-29",
+   "retry": true,
+   "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrative/MapServer|Public/CadastreAndAdministrative|services.thelist.tas.gov.au|the LIST  &copy; State of Tasmania||",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "READY",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY"
+   ]
+  },
+  "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrativeV2/MapServer": {
+   "fails": 1,
+   "probed": "2026-10-29",
+   "retry": true,
+   "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrativeV2/MapServer|Public/CadastreAndAdministrativeV2|services.thelist.tas.gov.au|||",
+   "verdicts": [
+    "ASK-THE-PUBLISHER",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "ASK-THE-PUBLISHER",
+    "RETRY",
+    "RETRY",
+    "RETRY"
+   ]
+  },
+  "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreParcels/MapServer": {
+   "fails": 0,
+   "probed": "2026-10-29",
+   "retry": false,
+   "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreParcels/MapServer|Public/CadastreParcels|services.thelist.tas.gov.au|the LIST  State of Tasmania||",
+   "verdicts": [
+    "READY"
+   ]
+  },
+  "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/EmergencyManagementPublic/MapServer": {
+   "fails": 1,
+   "probed": "2026-10-29",
+   "retry": true,
+   "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/EmergencyManagementPublic/MapServer|Public/EmergencyManagementPublic|services.thelist.tas.gov.au|the LIST  © State of Tasmania||",
+   "verdicts": [
+    "READY",
+    "REJECT",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY"
+   ]
+  },
+  "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Indexes/MapServer": {
+   "fails": 1,
+   "probed": "2026-10-29",
+   "retry": true,
+   "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Indexes/MapServer|Public/Indexes|services.thelist.tas.gov.au|the LIST  State of Tasmania||",
+   "verdicts": [
+    "READY",
+    "READY",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY"
+   ]
+  },
+  "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/MarineAndCoastal/MapServer": {
+   "fails": 1,
+   "probed": "2026-10-29",
+   "retry": true,
+   "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/MarineAndCoastal/MapServer|Public/MarineAndCoastal|services.thelist.tas.gov.au|the LIST  State of Tasmania||",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "READY",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "RETRY",
+    "RETRY"
+   ]
+  },
+  "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer": {
+   "fails": 1,
+   "probed": "2026-10-29",
+   "retry": true,
+   "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer|Public/NVAdata|services.thelist.tas.gov.au|||",
+   "verdicts": [
+    "ASK-THE-PUBLISHER",
+    "ASK-THE-PUBLISHER",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY"
+   ]
+  },
+  "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer": {
+   "fails": 1,
+   "probed": "2026-10-29",
+   "retry": true,
+   "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer|Public/NaturalEnvironment|services.thelist.tas.gov.au|the LIST  State of Tasmania||",
+   "verdicts": [
+    "REJECT",
+    "READY",
+    "WATER-ONLY",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY"
+   ]
+  },
+  "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironmentV2/MapServer": {
+   "fails": 0,
+   "probed": "2026-10-29",
+   "retry": false,
+   "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironmentV2/MapServer|Public/NaturalEnvironmentV2|services.thelist.tas.gov.au|||",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer": {
+   "fails": 1,
+   "probed": "2026-10-29",
+   "retry": true,
+   "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer|Public/OpenDataWFS|services.thelist.tas.gov.au|the LIST  State of Tasmania||",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "READY",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "RETRY"
+   ]
+  },
+  "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer": {
+   "fails": 1,
+   "probed": "2026-10-29",
+   "retry": true,
+   "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer|Public/PWSPublic|services.thelist.tas.gov.au|the LIST  State of Tasmania||",
+   "verdicts": [
+    "READY",
+    "REJECT",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY"
+   ]
+  },
+  "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Planning/MapServer": {
+   "fails": 1,
+   "probed": "2026-10-29",
+   "retry": true,
+   "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Planning/MapServer|Public/Planning|services.thelist.tas.gov.au|||",
+   "verdicts": [
+    "READY",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY"
+   ]
+  },
+  "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PlanningOnline/MapServer": {
+   "fails": 0,
+   "probed": "2026-10-29",
+   "retry": false,
+   "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PlanningOnline/MapServer|Public/PlanningOnline|services.thelist.tas.gov.au|the LIST  State of Tasmania||",
+   "verdicts": [
+    "READY",
+    "ASK-THE-PUBLISHER"
+   ]
+  },
   "https://services1.arcgis.com/x5wCko8UnSi4h0CB/arcgis/rest/services/SCDNR_Managed_Lands_Public_Viewer/FeatureServer/0": {
    "probed": "2026-10-28",
    "retry": false,
@@ -102,9 +414,24 @@
     "WATER-ONLY"
    ]
   },
+  "https://services9.arcgis.com/EPcAWuPcSWtfB9jL/arcgis/rest/services/NIAA_Administrative_Boundaries_2020/FeatureServer": {
+   "fails": 0,
+   "probed": "2026-10-29",
+   "retry": false,
+   "sig": "https://services9.arcgis.com/EPcAWuPcSWtfB9jL/arcgis/rest/services/NIAA_Administrative_Boundaries_2020/FeatureServer|NIAA_Administrative_Boundaries_2020|National Indigenous Australians Agency|Licence:     Creative Commons - Attribution-NonCommercial 4.0 International     Access rights: Open   Security classification: OFFICIAL&nbsp;||",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT"
+   ]
+  },
   "https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0": {
-   "fails": 3,
-   "probed": "2026-10-28",
+   "fails": 4,
+   "probed": "2026-10-29",
    "retry": false,
    "sig": "https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0|My favorite camping spots (a hobby map)|hobby account (personal map)||test row (h): a made-up hobby layer on a non-government account; the bot marks it RETRY (did not open) and after three runs sends the url to chat 9; a real hobby layer that opens is REJECT (not official)|REJECT or did-not-open",
    "verdicts": [
@@ -113,17 +440,17 @@
   }
  },
  "stat": {
-  "ask": 0,
-  "did_not_open": 2,
+  "ask": 8,
+  "did_not_open": 61,
   "live_only": 0,
-  "probed": 2,
-  "ready": 0,
-  "reject": 0,
-  "retry": 2,
-  "rows": 11,
+  "probed": 129,
+  "ready": 20,
+  "reject": 38,
+  "retry": 61,
+  "rows": 335,
   "skipped_fresh": 9,
   "tests_miss": 0,
   "tests_ok": 2,
-  "water_only": 0
+  "water_only": 2
  }
 }
