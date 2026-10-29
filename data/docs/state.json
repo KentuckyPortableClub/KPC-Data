@@ -162,10 +162,31 @@
    "updated": "2026-10-29"
   },
   "US-MA": {
-   "status": "partial",
+   "status": "done",
    "parks": 421,
-   "checked": 14,
-   "left": 407,
+   "checked": 421,
+   "left": 0,
+   "updated": "2026-10-29"
+  },
+  "US-VT": {
+   "status": "done",
+   "parks": 109,
+   "checked": 109,
+   "left": 0,
+   "updated": "2026-10-29"
+  },
+  "US-NH": {
+   "status": "done",
+   "parks": 206,
+   "checked": 206,
+   "left": 0,
+   "updated": "2026-10-29"
+  },
+  "US-ME": {
+   "status": "partial",
+   "parks": 148,
+   "checked": 31,
+   "left": 117,
    "updated": "2026-10-29"
   }
  },
@@ -188,32 +209,33 @@
   "iowaculture.gov": 1793316751.8942606,
   "www.cgcounty.org": 1793316859.6578937,
   "www.lclt.org": 1793322015.230936,
-  "sojournertruthstatepark.info": 1793325011.1974332
+  "sojournertruthstatepark.info": 1793325011.1974332,
+  "www.mass-trails.org": 1793326495.1067936
  },
  "last": {
   "when": "2026-10-29",
   "areas": [
-   "US-NY",
-   "US-NJ",
-   "US-CT",
-   "US-RI",
    "US-MA",
    "US-VT",
    "US-NH",
-   "US-ME"
+   "US-ME",
+   "US-MD",
+   "US-DE",
+   "US-DC",
+   "US-AR"
   ],
   "stat": {
-   "requests": 2123,
-   "parks": 842,
-   "maps_ok": 470,
-   "maps_found": 442,
-   "dates": 148,
-   "rules": 653,
-   "browser": 65,
-   "robots": 43,
+   "requests": 1532,
+   "parks": 753,
+   "maps_ok": 371,
+   "maps_found": 349,
+   "dates": 6,
+   "rules": 226,
+   "browser": 498,
+   "robots": 4,
    "strikes": 3,
    "errors": 3,
-   "skipped_fresh": 375
+   "skipped_fresh": 14
   }
  }
 }
