@@ -721,7 +721,7 @@
   },
   "PL": {
    "status": "done",
-   "started": "2026-10-28",
+   "started": "2026-10-29",
    "done": [
     "http://mapy.geoportal.gov.pl/wss/service/ATOM/httpauth/atom/PS",
     "https://mapserver.bdl.lasy.gov.pl/ArcGIS/services/WMS_BDL_kat_wlasnosci/MapServer/WMSServer",
@@ -729,6 +729,24 @@
     "https://wfs.bdl.lasy.gov.pl/geoserver/BDL/ows"
    ],
    "log": [
+    {
+     "step": "known",
+     "what": "https://ogcapi.bdl.lasy.gov.pl: 20 OGC API collections, 20 look like park layers"
+    },
+    {
+     "step": "known",
+     "what": "https://ogcapi.bdl.lasy.gov.pl",
+     "found": true
+    },
+    {
+     "step": "known",
+     "what": "https://wfs.bdl.lasy.gov.pl/geoserver/BDL/ows: 20 feature types, 20 look like park layers"
+    },
+    {
+     "step": "known",
+     "what": "https://wfs.bdl.lasy.gov.pl/geoserver/BDL/ows",
+     "found": true
+    },
     {
      "step": "server",
      "what": "https://powietrze.gios.gov.pl/arcgis/rest/services: HTTP 404"
@@ -740,94 +758,6 @@
     {
      "step": "wfs",
      "what": "https://mapserver.bdl.lasy.gov.pl/ArcGIS/services/WMS_BDL_kat_wlasnosci/MapServer/WMSServer: 0 feature types, 0 look like park layers"
-    },
-    {
-     "step": "wfs",
-     "what": "https://ogcapi.bdl.lasy.gov.pl: 0 feature types, 0 look like park layers"
-    },
-    {
-     "step": "wfs",
-     "what": "https://wfs.bdl.lasy.gov.pl/geoserver/BDL/ows: 0 feature types, 0 look like park layers"
-    },
-    {
-     "catalog": "https://api.dane.gov.pl/1.4",
-     "keyword": "park narodowy",
-     "hits": 30,
-     "services_read": 0,
-     "downloads_listed": 6
-    },
-    {
-     "catalog": "https://api.dane.gov.pl/1.4",
-     "keyword": "park krajobrazowy",
-     "hits": 30,
-     "services_read": 0,
-     "downloads_listed": 6
-    },
-    {
-     "catalog": "https://api.dane.gov.pl/1.4",
-     "keyword": "rezerwat przyrody",
-     "hits": 30,
-     "services_read": 0,
-     "downloads_listed": 0
-    },
-    {
-     "catalog": "https://api.dane.gov.pl/1.4",
-     "keyword": "formy ochrony przyrody",
-     "hits": 30,
-     "services_read": 0,
-     "downloads_listed": 3
-    },
-    {
-     "agol": "park narodowy",
-     "hits": 2,
-     "read": 0
-    },
-    {
-     "agol": "park krajobrazowy",
-     "hits": 0,
-     "read": 0
-    },
-    {
-     "agol": "rezerwat przyrody",
-     "hits": 0,
-     "read": 0
-    },
-    {
-     "agol": "formy ochrony przyrody",
-     "hits": 0,
-     "read": 0
-    },
-    {
-     "agol": "obszar chroniony",
-     "hits": 0,
-     "read": 0
-    },
-    {
-     "step": "known",
-     "what": "https://ogcapi.bdl.lasy.gov.pl: 20 OGC API collections, 0 look like park layers"
-    },
-    {
-     "step": "known",
-     "what": "https://ogcapi.bdl.lasy.gov.pl",
-     "found": false
-    },
-    {
-     "step": "known",
-     "what": "https://powietrze.gios.gov.pl/arcgis/rest/services/MPP/FormyOchronyPrzyrody/MapServer",
-     "error": "HTTP 404"
-    },
-    {
-     "step": "known",
-     "what": "https://wfs.bdl.lasy.gov.pl/geoserver/BDL/ows: 20 feature types, 0 look like park layers"
-    },
-    {
-     "step": "known",
-     "what": "https://wfs.bdl.lasy.gov.pl/geoserver/BDL/ows",
-     "found": false
-    },
-    {
-     "step": "server",
-     "what": "https://powietrze.gios.gov.pl/arcgis/rest/services: HTTP 404"
     },
     {
      "catalog": "https://api.dane.gov.pl/1.4",
@@ -893,7 +823,8 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-28"
+   "redo": "2026-10-29",
+   "finished": "2026-10-29"
   },
   "AU": {
    "status": "done",
@@ -1713,14 +1644,34 @@
   },
   "NL": {
    "status": "done",
-   "started": "2026-10-28",
+   "started": "2026-10-29",
    "done": [
+    "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1",
+    "https://api.pdok.nl/rvo/nationale-parken-geharmoniseerd/ogc/v1",
     "https://services-eu1.arcgis.com/4D1GBrbE6xp1T4YG/arcgis/rest/services/NWP_Huidig_gebruik_Noordzee/FeatureServer",
     "https://services-eu1.arcgis.com/4D1GBrbE6xp1T4YG/arcgis/rest/services/NWP_Natuurgebieden_Noordzee/FeatureServer",
     "https://services-eu1.arcgis.com/4D1GBrbE6xp1T4YG/arcgis/rest/services/NWP_Overzichtskaart_Waterbeleid_uitvoering_WFL1/FeatureServer",
     "https://services-eu1.arcgis.com/4D1GBrbE6xp1T4YG/arcgis/rest/services/NWP_Structuurvisiekaart_Noordzee/FeatureServer"
    ],
    "log": [
+    {
+     "step": "known",
+     "what": "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1: 0 feature types, 0 look like park layers"
+    },
+    {
+     "step": "known",
+     "what": "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1",
+     "found": false
+    },
+    {
+     "step": "known",
+     "what": "https://api.pdok.nl/rvo/nationale-parken-geharmoniseerd/ogc/v1: 0 feature types, 0 look like park layers"
+    },
+    {
+     "step": "known",
+     "what": "https://api.pdok.nl/rvo/nationale-parken-geharmoniseerd/ogc/v1",
+     "found": false
+    },
     {
      "catalog": "https://data.overheid.nl/data",
      "keyword": "nationaal park",
@@ -1772,7 +1723,8 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-28"
+   "redo": "2026-10-29",
+   "finished": "2026-10-29"
   },
   "CH": {
    "status": "done",
@@ -2178,8 +2130,8 @@
    "finished": "2026-10-28"
   },
   "AT": {
-   "status": "done",
-   "started": "2026-10-28",
+   "status": "nothing seeded: not searched (EEA lead only)",
+   "started": "2026-10-29",
    "done": [
     "https://gis.tirol.gv.at/arcgis/rest/services/Service_Public/ogd_natur/MapServer",
     "https://gis.tirol.gv.at/arcgis/rest/services/Service_Public/ogd_umwelt/MapServer"
@@ -2241,12 +2193,15 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-28"
+   "redo": "2026-10-29",
+   "finished": "2026-10-29"
   },
   "SE": {
    "status": "done",
-   "started": "2026-10-28",
+   "started": "2026-10-29",
    "done": [
+    "https://geodata.naturvardsverket.se/andra_skydd/wms",
+    "https://geodata.naturvardsverket.se/naturvardsregistret/wfs",
     "https://services2.arcgis.com/FYilPmW8sKfN6ZQM/arcgis/rest/services/Ras_210506/FeatureServer",
     "https://services2.arcgis.com/FYilPmW8sKfN6ZQM/arcgis/rest/services/Ras_KulturarvRU_WFL1/FeatureServer",
     "https://services2.arcgis.com/FYilPmW8sKfN6ZQM/arcgis/rest/services/Ras_Miljö_Anläggning__WFL1/FeatureServer",
@@ -2257,6 +2212,24 @@
     "https://services2.arcgis.com/FYilPmW8sKfN6ZQM/arcgis/rest/services/Ras__alla_verksamhetstyper/FeatureServer"
    ],
    "log": [
+    {
+     "step": "known",
+     "what": "https://geodata.naturvardsverket.se/andra_skydd/wms: 0 feature types, 0 look like park layers"
+    },
+    {
+     "step": "known",
+     "what": "https://geodata.naturvardsverket.se/andra_skydd/wms",
+     "found": false
+    },
+    {
+     "step": "known",
+     "what": "https://geodata.naturvardsverket.se/naturvardsregistret/wfs: 2 feature types, 2 look like park layers"
+    },
+    {
+     "step": "known",
+     "what": "https://geodata.naturvardsverket.se/naturvardsregistret/wfs",
+     "found": true
+    },
     {
      "agol": "nationalpark",
      "hits": 50,
@@ -2288,7 +2261,8 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-28"
+   "redo": "2026-10-29",
+   "finished": "2026-10-29"
   },
   "SI": {
    "status": "done",
@@ -4255,47 +4229,30 @@
   }
  },
  "last_run": {
-  "date": "2026-10-28",
+  "date": "2026-10-29",
   "stats": {
-   "requests": 264,
+   "requests": 321,
    "hits": 0,
-   "leads": 8,
+   "leads": 11,
    "already_read": 0,
-   "skipped": 0,
-   "not_official": 653,
-   "robots": 6,
-   "strikes": 12,
-   "errors": 32
+   "skipped": 5,
+   "not_official": 179,
+   "robots": 2,
+   "strikes": 0,
+   "errors": 15
   },
   "countries": [
-   "NZ done: 274 leads (A 79), known-good found 1 of 1",
-   "DO done: 0 leads (A 0), known-good found 0 of 0",
-   "BR done: 0 leads (A 0), known-good found 0 of 0",
-   "KR done: 0 leads (A 0), known-good found 0 of 0",
-   "MX done: 0 leads (A 0), known-good found 0 of 0",
-   "TH done: 0 leads (A 0), known-good found 0 of 0",
-   "ZA done: 1 leads (A 0), known-good found 0 of 0",
-   "AR done: 0 leads (A 0), known-good found 0 of 0",
-   "CL done: 0 leads (A 0), known-good found 0 of 0",
-   "CO done: 1 leads (A 0), known-good found 0 of 0",
-   "PH done: 0 leads (A 0), known-good found 0 of 0",
-   "TR done: 0 leads (A 0), known-good found 0 of 0",
-   "RU done: 0 leads (A 0), known-good found 0 of 0",
-   "CN done: 1 leads (A 0), known-good found 0 of 0"
+   "PL done: 3 leads (A 0), known-good found 2 of 2",
+   "NL done: 5 leads (A 3), known-good found 0 of 2",
+   "SE done: 6 leads (A 1), known-good found 1 of 2",
+   "AT nothing seeded: not searched: 1 leads (A 0), known-good found 0 of 0"
   ],
-  "dead_servers": [
-   "mapas.parquesnacionales.gov.co",
-   "maps.cundinamarca.gov.co",
-   "maps.mpi.govt.nz",
-   "www.sciencebase.gov"
-  ],
+  "dead_servers": [],
   "robots_refused": {
-   "maps.waikatoregion.govt.nz": 2,
-   "datos.gob.cl": 4
+   "gis.tirol.gv.at": 2
   },
   "robots_said": {
-   "maps.waikatoregion.govt.nz": "User-Agent: * | Disallow: /arcgis/ | Disallow: /arcgishosting/ | Disallow: /arcgisimage/",
-   "datos.gob.cl": "User-agent: * | Disallow: /dataset/rate/ | Disallow: /revision/ | Disallow: /dataset/*/history | Disallow: /api/ | Crawl-Delay: 10"
+   "gis.tirol.gv.at": "User-agent: * | Disallow: /"
   },
   "robots_exempted_hosts (HQ ruling Oct 27: ArcGIS REST API paths only)": {}
  },

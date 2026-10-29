@@ -1,8 +1,8 @@
 {
  "about": "World harvester leads for Austria (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "AT",
- "date": "2026-10-28",
- "status": "done",
+ "date": "2026-10-29",
+ "status": "nothing seeded: not searched (EEA lead only)",
  "steps_done": [
   "known",
   "servers",
@@ -15,10 +15,29 @@
  ],
  "bands": {
   "A": 0,
-  "B": 0,
+  "B": 1,
   "C": 0
  },
  "known_good_found": [],
  "known_good_missed": [],
- "leads": {}
+ "known_log": [],
+ "leads": {
+  "eea-cdda:AT": {
+   "url": "https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/CDDA_Dyna_WM/MapServer",
+   "cc": "AT",
+   "title": "EEA nationally designated areas (CDDA / NatDA): Austria rows",
+   "publisher": "European Environment Agency",
+   "catalog": "EEA (every member state)",
+   "licence": "EEA standard re-use policy (credit the EEA)",
+   "date": "",
+   "found": "2026-10-29",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [],
+   "grade": 3,
+   "band": "B",
+   "note": "filter the layer by the country code (AT); one official layer covers every member state"
+  }
+ }
 }

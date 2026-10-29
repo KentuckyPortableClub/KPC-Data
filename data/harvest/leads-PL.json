@@ -1,7 +1,7 @@
 {
  "about": "World harvester leads for Poland (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "PL",
- "date": "2026-10-28",
+ "date": "2026-10-29",
  "status": "done",
  "steps_done": [
   "known",
@@ -15,262 +15,258 @@
  ],
  "bands": {
   "A": 0,
-  "B": 0,
-  "C": 13
+  "B": 3,
+  "C": 0
  },
- "known_good_found": [],
- "known_good_missed": [
+ "known_good_found": [
   "https://ogcapi.bdl.lasy.gov.pl",
-  "https://powietrze.gios.gov.pl/arcgis/rest/services/MPP/FormyOchronyPrzyrody/MapServer",
   "https://wfs.bdl.lasy.gov.pl/geoserver/BDL/ows"
  ],
+ "known_good_missed": [],
+ "known_log": [
+  {
+   "step": "known",
+   "what": "https://ogcapi.bdl.lasy.gov.pl: 20 OGC API collections, 20 look like park layers"
+  },
+  {
+   "step": "known",
+   "what": "https://ogcapi.bdl.lasy.gov.pl",
+   "found": true
+  },
+  {
+   "step": "known",
+   "what": "https://wfs.bdl.lasy.gov.pl/geoserver/BDL/ows: 20 feature types, 20 look like park layers"
+  },
+  {
+   "step": "known",
+   "what": "https://wfs.bdl.lasy.gov.pl/geoserver/BDL/ows",
+   "found": true
+  }
+ ],
  "leads": {
-  "dl:372": {
-   "url": "https://api.dane.gov.pl/1.4",
+  "eea-cdda:PL": {
+   "url": "https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/CDDA_Dyna_WM/MapServer",
    "cc": "PL",
-   "title": "Dane statystyczne dotyczące wniosków o udzielenie <mark>ochrony</mark> międzynarodowej w R",
-   "publisher": "",
-   "catalog": "catalog api.dane.gov.pl",
-   "licence": "",
-   "date": "2024-03-19",
-   "found": "2026-10-28",
+   "title": "EEA nationally designated areas (CDDA / NatDA): Poland rows",
+   "publisher": "European Environment Agency",
+   "catalog": "EEA (every member state)",
+   "licence": "EEA standard re-use policy (credit the EEA)",
+   "date": "",
+   "found": "2026-10-29",
    "gaps": [
-    "outline?"
+    "outline"
    ],
-   "kind": "download, needs a loader",
-   "formats": [],
    "layers": [],
-   "grade": 2,
-   "band": "C",
-   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+   "grade": 3,
+   "band": "B",
+   "note": "filter the layer by the country code (PL); one official layer covers every member state"
   },
-  "dl:582": {
-   "url": "https://api.dane.gov.pl/1.4",
+  "https://ogcapi.bdl.lasy.gov.pl": {
+   "url": "https://ogcapi.bdl.lasy.gov.pl",
    "cc": "PL",
-   "title": "Decyzje ministra właściwego do spraw wyznań religijnych oraz mniejszości <mark>narodowych<",
-   "publisher": "",
-   "catalog": "catalog api.dane.gov.pl",
+   "title": "OGC API ogcapi.bdl.lasy.gov.pl",
+   "publisher": "ogcapi.bdl.lasy.gov.pl",
+   "catalog": "OGC API collections",
    "licence": "",
-   "date": "2026-01-13",
-   "found": "2026-10-28",
+   "date": "",
+   "found": "2026-10-29",
    "gaps": [
-    "outline?"
+    "outline"
    ],
-   "kind": "download, needs a loader",
-   "formats": [],
-   "layers": [],
-   "grade": 2,
-   "band": "C",
-   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+   "layers": [
+    {
+     "name": "RDLP",
+     "type": "rdlp",
+     "geom": "unknown (OGC API)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    },
+    {
+     "name": "Nadleśnictwa",
+     "type": "nadlesnictwa",
+     "geom": "unknown (OGC API)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    },
+    {
+     "name": "Leśnictwa",
+     "type": "lesnictwa",
+     "geom": "unknown (OGC API)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    },
+    {
+     "name": "RDLP Białystok wydzielenia",
+     "type": "RDLP_Bialystok_wydzielenia",
+     "geom": "unknown (OGC API)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    },
+    {
+     "name": "RDLP Katowice wydzielenia",
+     "type": "RDLP_Katowice_wydzielenia",
+     "geom": "unknown (OGC API)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    },
+    {
+     "name": "RDLP Kraków wydzielenia",
+     "type": "RDLP_Krakow_wydzielenia",
+     "geom": "unknown (OGC API)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    },
+    {
+     "name": "RDLP Krosno wydzielenia",
+     "type": "RDLP_Krosno_wydzielenia",
+     "geom": "unknown (OGC API)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    },
+    {
+     "name": "RDLP Lublin wydzielenia",
+     "type": "RDLP_Lublin_wydzielenia",
+     "geom": "unknown (OGC API)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    },
+    {
+     "name": "RDLP Łódź wydzielenia",
+     "type": "RDLP_Lodz_wydzielenia",
+     "geom": "unknown (OGC API)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    },
+    {
+     "name": "RDLP Olsztyn wydzielenia",
+     "type": "RDLP_Olsztyn_wydzielenia",
+     "geom": "unknown (OGC API)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    },
+    {
+     "name": "RDLP Piła wydzielenia",
+     "type": "RDLP_Pila_wydzielenia",
+     "geom": "unknown (OGC API)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    },
+    {
+     "name": "RDLP Poznań wydzielenia",
+     "type": "RDLP_Poznan_wydzielenia",
+     "geom": "unknown (OGC API)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    }
+   ],
+   "note": "20 collections listed",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 3,
+   "band": "B",
+   "known_good": true
   },
-  "dl:2285": {
-   "url": "https://api.dane.gov.pl/1.4",
+  "https://wfs.bdl.lasy.gov.pl/geoserver/bdl/ows": {
+   "url": "https://wfs.bdl.lasy.gov.pl/geoserver/BDL/ows",
    "cc": "PL",
-   "title": "Formularze KS2017 <mark>Park</mark> centralny</mark>",
-   "publisher": "",
-   "catalog": "catalog api.dane.gov.pl",
-   "licence": "",
-   "date": "2020-06-17",
-   "found": "2026-10-28",
+   "title": "WFS wfs.bdl.lasy.gov.pl",
+   "publisher": "OSGeo",
+   "catalog": "WFS capabilities",
+   "licence": "NONE NONE",
+   "date": "",
+   "found": "2026-10-29",
    "gaps": [
-    "outline?"
+    "outline"
    ],
-   "kind": "download, needs a loader",
-   "formats": [],
-   "layers": [],
-   "grade": 2,
-   "band": "C",
-   "note": "a file, not a service: chat 8 decides if it is worth a loader"
-  },
-  "dl:347": {
-   "url": "https://api.dane.gov.pl/1.4",
-   "cc": "PL",
-   "title": "Jednostki, którym przyznano dotacje celowe w części 43 budżetu państwa „Wyznania religijne",
-   "publisher": "",
-   "catalog": "catalog api.dane.gov.pl",
-   "licence": "",
-   "date": "2026-01-13",
-   "found": "2026-10-28",
-   "gaps": [
-    "outline?"
+   "layers": [
+    {
+     "name": "Leśnictwa",
+     "type": "BDL:Leśnictwa",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    },
+    {
+     "name": "Nadleśnictwa",
+     "type": "BDL:Nadleśnictwa",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    },
+    {
+     "name": "RDLP",
+     "type": "BDL:RDLP",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    },
+    {
+     "name": "RDLP Białystok wydzielenia",
+     "type": "BDL:RDLP_Białystok_wydzielenia",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    },
+    {
+     "name": "RDLP Gdańsk wydzielenia",
+     "type": "BDL:RDLP_Gdańsk_wydzielenia",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    },
+    {
+     "name": "RDLP Katowice wydzielenia",
+     "type": "BDL:RDLP_Katowice_wydzielenia",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    },
+    {
+     "name": "RDLP Kraków wydzielenia",
+     "type": "BDL:RDLP_Kraków_wydzielenia",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    },
+    {
+     "name": "RDLP Krosno wydzielenia",
+     "type": "BDL:RDLP_Krosno_wydzielenia",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    },
+    {
+     "name": "RDLP Lublin wydzielenia",
+     "type": "BDL:RDLP_Lublin_wydzielenia",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    },
+    {
+     "name": "RDLP Olsztyn wydzielenia",
+     "type": "BDL:RDLP_Olsztyn_wydzielenia",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    },
+    {
+     "name": "RDLP Piła wydzielenia",
+     "type": "BDL:RDLP_Piła_wydzielenia",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    },
+    {
+     "name": "RDLP Poznań wydzielenia",
+     "type": "BDL:RDLP_Poznań_wydzielenia",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    }
    ],
-   "kind": "download, needs a loader",
-   "formats": [],
-   "layers": [],
-   "grade": 2,
-   "band": "C",
-   "note": "a file, not a service: chat 8 decides if it is worth a loader"
-  },
-  "dl:431": {
-   "url": "https://api.dane.gov.pl/1.4",
-   "cc": "PL",
-   "title": "NSP 2011 - Wybrane tablice dotyczące przynależności <mark>narodowo</mark>-etnicznej, język",
-   "publisher": "",
-   "catalog": "catalog api.dane.gov.pl",
-   "licence": "",
-   "date": "2024-03-19",
-   "found": "2026-10-28",
-   "gaps": [
-    "outline?"
-   ],
-   "kind": "download, needs a loader",
-   "formats": [],
-   "layers": [],
-   "grade": 2,
-   "band": "C",
-   "note": "a file, not a service: chat 8 decides if it is worth a loader"
-  },
-  "dl:276": {
-   "url": "https://api.dane.gov.pl/1.4",
-   "cc": "PL",
-   "title": "Nauka języków mniejszości <mark>narodowych</mark>, etnicznych i języka regionalnego</mark>",
-   "publisher": "",
-   "catalog": "catalog api.dane.gov.pl",
-   "licence": "",
-   "date": "2026-04-09",
-   "found": "2026-10-28",
-   "gaps": [
-    "outline?"
-   ],
-   "kind": "download, needs a loader",
-   "formats": [],
-   "layers": [],
-   "grade": 2,
-   "band": "C",
-   "note": "a file, not a service: chat 8 decides if it is worth a loader"
-  },
-  "dl:383": {
-   "url": "https://api.dane.gov.pl/1.4",
-   "cc": "PL",
-   "title": "Polska Klasyfikacja Obiektów Budowlanych (PKOB)",
-   "publisher": "",
-   "catalog": "catalog api.dane.gov.pl",
-   "licence": "",
-   "date": "2025-01-23",
-   "found": "2026-10-28",
-   "gaps": [
-    "outline?"
-   ],
-   "kind": "download, needs a loader",
-   "formats": [],
-   "layers": [],
-   "grade": 2,
-   "band": "C",
-   "note": "a file, not a service: chat 8 decides if it is worth a loader"
-  },
-  "dl:243": {
-   "url": "https://api.dane.gov.pl/1.4",
-   "cc": "PL",
-   "title": "Porównania międzynarodowe",
-   "publisher": "",
-   "catalog": "catalog api.dane.gov.pl",
-   "licence": "",
-   "date": "2025-01-23",
-   "found": "2026-10-28",
-   "gaps": [
-    "outline?"
-   ],
-   "kind": "download, needs a loader",
-   "formats": [],
-   "layers": [],
-   "grade": 2,
-   "band": "C",
-   "note": "a file, not a service: chat 8 decides if it is worth a loader"
-  },
-  "dl:3239": {
-   "url": "https://api.dane.gov.pl/1.4",
-   "cc": "PL",
-   "title": "Program priorytetowy \"Ochrona i przywracanie różnorodności biologicznej i <mark>krajobrazo",
-   "publisher": "",
-   "catalog": "catalog api.dane.gov.pl",
-   "licence": "",
-   "date": "2024-03-19",
-   "found": "2026-10-28",
-   "gaps": [
-    "outline?"
-   ],
-   "kind": "download, needs a loader",
-   "formats": [],
-   "layers": [],
-   "grade": 2,
-   "band": "C",
-   "note": "a file, not a service: chat 8 decides if it is worth a loader"
-  },
-  "dl:561": {
-   "url": "https://api.dane.gov.pl/1.4",
-   "cc": "PL",
-   "title": "Strategia komunikacji Funduszy Europejskich w Polsce w ramach <mark>Narodowej</mark> Strat",
-   "publisher": "",
-   "catalog": "catalog api.dane.gov.pl",
-   "licence": "",
-   "date": "2024-03-19",
-   "found": "2026-10-28",
-   "gaps": [
-    "outline?"
-   ],
-   "kind": "download, needs a loader",
-   "formats": [],
-   "layers": [],
-   "grade": 2,
-   "band": "C",
-   "note": "a file, not a service: chat 8 decides if it is worth a loader"
-  },
-  "dl:3364": {
-   "url": "https://api.dane.gov.pl/1.4",
-   "cc": "PL",
-   "title": "Wykaz chronionych danych DGA Babiogórskiego <mark>Parku</mark> Narodowego</mark>",
-   "publisher": "",
-   "catalog": "catalog api.dane.gov.pl",
-   "licence": "",
-   "date": "2024-03-19",
-   "found": "2026-10-28",
-   "gaps": [
-    "outline?"
-   ],
-   "kind": "download, needs a loader",
-   "formats": [],
-   "layers": [],
-   "grade": 2,
-   "band": "C",
-   "note": "a file, not a service: chat 8 decides if it is worth a loader"
-  },
-  "dl:3501": {
-   "url": "https://api.dane.gov.pl/1.4",
-   "cc": "PL",
-   "title": "Wykaz zasobów chronionych danych DGA - Olsztyński <mark>Park</mark> Naukowo-Technologiczny",
-   "publisher": "",
-   "catalog": "catalog api.dane.gov.pl",
-   "licence": "",
-   "date": "2024-03-19",
-   "found": "2026-10-28",
-   "gaps": [
-    "outline?"
-   ],
-   "kind": "download, needs a loader",
-   "formats": [],
-   "layers": [],
-   "grade": 2,
-   "band": "C",
-   "note": "a file, not a service: chat 8 decides if it is worth a loader"
-  },
-  "dl:3320": {
-   "url": "https://api.dane.gov.pl/1.4",
-   "cc": "PL",
-   "title": "Wykaz zasobów chronionych danych DGA - Wigierski <mark>Park</mark> Narodowy</mark>",
-   "publisher": "",
-   "catalog": "catalog api.dane.gov.pl",
-   "licence": "",
-   "date": "2024-03-19",
-   "found": "2026-10-28",
-   "gaps": [
-    "outline?"
-   ],
-   "kind": "download, needs a loader",
-   "formats": [],
-   "layers": [],
-   "grade": 2,
-   "band": "C",
-   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+   "note": "20 feature types listed",
+   "grade": 3,
+   "band": "B",
+   "known_good": true
   }
  }
 }

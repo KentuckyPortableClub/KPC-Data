@@ -1,5 +1,5 @@
 # World harvester: top leads (official park GIS outside North America)
-Last run 2026-10-28. Leads only: chat 8 grades them; nothing here is in the key. WDPA never used.
+Last run 2026-10-29. Leads only: chat 8 grades them; nothing here is in the key. WDPA never used.
 
 | Band | Country | Title | What it is | Publisher | Licence | Date | Address |
 |---|---|---|---|---|---|---|---|
@@ -158,47 +158,30 @@ access constraints t | 2024-10-18 | https://services.arcgis.com/JJzESW51TqeY9uat
 ## Last run
 ```
 {
- "date": "2026-10-28",
+ "date": "2026-10-29",
  "stats": {
-  "requests": 264,
+  "requests": 321,
   "hits": 0,
-  "leads": 8,
+  "leads": 11,
   "already_read": 0,
-  "skipped": 0,
-  "not_official": 653,
-  "robots": 6,
-  "strikes": 12,
-  "errors": 32
+  "skipped": 5,
+  "not_official": 179,
+  "robots": 2,
+  "strikes": 0,
+  "errors": 15
  },
  "countries": [
-  "NZ done: 274 leads (A 79), known-good found 1 of 1",
-  "DO done: 0 leads (A 0), known-good found 0 of 0",
-  "BR done: 0 leads (A 0), known-good found 0 of 0",
-  "KR done: 0 leads (A 0), known-good found 0 of 0",
-  "MX done: 0 leads (A 0), known-good found 0 of 0",
-  "TH done: 0 leads (A 0), known-good found 0 of 0",
-  "ZA done: 1 leads (A 0), known-good found 0 of 0",
-  "AR done: 0 leads (A 0), known-good found 0 of 0",
-  "CL done: 0 leads (A 0), known-good found 0 of 0",
-  "CO done: 1 leads (A 0), known-good found 0 of 0",
-  "PH done: 0 leads (A 0), known-good found 0 of 0",
-  "TR done: 0 leads (A 0), known-good found 0 of 0",
-  "RU done: 0 leads (A 0), known-good found 0 of 0",
-  "CN done: 1 leads (A 0), known-good found 0 of 0"
+  "PL done: 3 leads (A 0), known-good found 2 of 2",
+  "NL done: 5 leads (A 3), known-good found 0 of 2",
+  "SE done: 6 leads (A 1), known-good found 1 of 2",
+  "AT nothing seeded: not searched: 1 leads (A 0), known-good found 0 of 0"
  ],
- "dead_servers": [
-  "mapas.parquesnacionales.gov.co",
-  "maps.cundinamarca.gov.co",
-  "maps.mpi.govt.nz",
-  "www.sciencebase.gov"
- ],
+ "dead_servers": [],
  "robots_refused": {
-  "maps.waikatoregion.govt.nz": 2,
-  "datos.gob.cl": 4
+  "gis.tirol.gv.at": 2
  },
  "robots_said": {
-  "maps.waikatoregion.govt.nz": "User-Agent: * | Disallow: /arcgis/ | Disallow: /arcgishosting/ | Disallow: /arcgisimage/",
-  "datos.gob.cl": "User-agent: * | Disallow: /dataset/rate/ | Disallow: /revision/ | Disallow: /dataset/*/history | Disallow: /api/ | Crawl-Delay: 10"
+  "gis.tirol.gv.at": "User-agent: * | Disallow: /"
  },
  "robots_exempted_hosts (HQ ruling Oct 27: ArcGIS REST API paths only)": {}
 }

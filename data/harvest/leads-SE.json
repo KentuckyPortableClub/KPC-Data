@@ -1,7 +1,7 @@
 {
  "about": "World harvester leads for Sweden (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "SE",
- "date": "2026-10-28",
+ "date": "2026-10-29",
  "status": "done",
  "steps_done": [
   "known",
@@ -15,11 +15,35 @@
  ],
  "bands": {
   "A": 1,
-  "B": 3,
+  "B": 5,
   "C": 0
  },
- "known_good_found": [],
- "known_good_missed": [],
+ "known_good_found": [
+  "https://geodata.naturvardsverket.se/naturvardsregistret/wfs"
+ ],
+ "known_good_missed": [
+  "https://geodata.naturvardsverket.se/andra_skydd/wms"
+ ],
+ "known_log": [
+  {
+   "step": "known",
+   "what": "https://geodata.naturvardsverket.se/andra_skydd/wms: 0 feature types, 0 look like park layers"
+  },
+  {
+   "step": "known",
+   "what": "https://geodata.naturvardsverket.se/andra_skydd/wms",
+   "found": false
+  },
+  {
+   "step": "known",
+   "what": "https://geodata.naturvardsverket.se/naturvardsregistret/wfs: 2 feature types, 2 look like park layers"
+  },
+  {
+   "step": "known",
+   "what": "https://geodata.naturvardsverket.se/naturvardsregistret/wfs",
+   "found": true
+  }
+ ],
  "leads": {
   "https://services2.arcgis.com/fyilpmw8skfn6zqm/arcgis/rest/services/ras__alla_verksamhetstyper_dash": {
    "url": "https://services2.arcgis.com/FYilPmW8sKfN6ZQM/arcgis/rest/services/Ras__Alla_verksamhetstyper_Dash/FeatureServer",
@@ -29,7 +53,7 @@
    "catalog": "ArcGIS Online search",
    "licence": "",
    "date": "2024-01-19",
-   "found": "2026-10-28",
+   "found": "2026-10-29",
    "gaps": [
     "outline"
    ],
@@ -114,7 +138,7 @@
    "catalog": "ArcGIS Online search",
    "licence": "",
    "date": "2021-05-31",
-   "found": "2026-10-28",
+   "found": "2026-10-29",
    "gaps": [
     "outline"
    ],
@@ -313,7 +337,7 @@
    "catalog": "ArcGIS Online search",
    "licence": "",
    "date": "2024-01-19",
-   "found": "2026-10-28",
+   "found": "2026-10-29",
    "gaps": [
     "outline"
    ],
@@ -512,7 +536,7 @@
    "catalog": "ArcGIS Online search",
    "licence": "",
    "date": "2024-01-19",
-   "found": "2026-10-28",
+   "found": "2026-10-29",
    "gaps": [
     "outline"
    ],
@@ -552,6 +576,56 @@
    "licence_note": "licence unknown: chat 8 asks",
    "grade": 4,
    "band": "B"
+  },
+  "eea-cdda:SE": {
+   "url": "https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/CDDA_Dyna_WM/MapServer",
+   "cc": "SE",
+   "title": "EEA nationally designated areas (CDDA / NatDA): Sweden rows",
+   "publisher": "European Environment Agency",
+   "catalog": "EEA (every member state)",
+   "licence": "EEA standard re-use policy (credit the EEA)",
+   "date": "",
+   "found": "2026-10-29",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [],
+   "grade": 3,
+   "band": "B",
+   "note": "filter the layer by the country code (SE); one official layer covers every member state"
+  },
+  "https://geodata.naturvardsverket.se/naturvardsregistret/wfs": {
+   "url": "https://geodata.naturvardsverket.se/naturvardsregistret/wfs",
+   "cc": "SE",
+   "title": "WFS geodata.naturvardsverket.se",
+   "publisher": "geodata.naturvardsverket.se",
+   "catalog": "WFS capabilities",
+   "licence": " ",
+   "date": "",
+   "found": "2026-10-29",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "name": "SkyddadeOmraden",
+     "type": "Naturvardsregistret_WFS:SkyddadeOmraden",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    },
+    {
+     "name": "SkyddadePunkter",
+     "type": "Naturvardsregistret_WFS:SkyddadePunkter",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    }
+   ],
+   "note": "2 feature types listed",
+   "grade": 3,
+   "band": "B",
+   "known_good": true
   }
  }
 }

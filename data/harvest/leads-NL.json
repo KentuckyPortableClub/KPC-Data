@@ -1,7 +1,7 @@
 {
  "about": "World harvester leads for Netherlands (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "NL",
- "date": "2026-10-28",
+ "date": "2026-10-29",
  "status": "done",
  "steps_done": [
   "known",
@@ -15,11 +15,34 @@
  ],
  "bands": {
   "A": 3,
-  "B": 1,
+  "B": 2,
   "C": 0
  },
  "known_good_found": [],
- "known_good_missed": [],
+ "known_good_missed": [
+  "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1",
+  "https://api.pdok.nl/rvo/nationale-parken-geharmoniseerd/ogc/v1"
+ ],
+ "known_log": [
+  {
+   "step": "known",
+   "what": "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1: 0 feature types, 0 look like park layers"
+  },
+  {
+   "step": "known",
+   "what": "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1",
+   "found": false
+  },
+  {
+   "step": "known",
+   "what": "https://api.pdok.nl/rvo/nationale-parken-geharmoniseerd/ogc/v1: 0 feature types, 0 look like park layers"
+  },
+  {
+   "step": "known",
+   "what": "https://api.pdok.nl/rvo/nationale-parken-geharmoniseerd/ogc/v1",
+   "found": false
+  }
+ ],
  "leads": {
   "https://services-eu1.arcgis.com/4d1gbrbe6xp1t4yg/arcgis/rest/services/nwp_huidig_gebruik_noordzee": {
    "url": "https://services-eu1.arcgis.com/4D1GBrbE6xp1T4YG/arcgis/rest/services/NWP_Huidig_gebruik_Noordzee/FeatureServer",
@@ -29,7 +52,7 @@
    "catalog": "ArcGIS Online search",
    "licence": "In de NWP-viewer staan de kaarten zoals ze zijn vastgesteld in maart 2022. Die kaarten zijn ‘bevroren’ en passen we niet aan tot 2027, ook al zijn er in de tussentijd wijzigingen of ontdekken we nog f",
    "date": "2025-09-08",
-   "found": "2026-10-28",
+   "found": "2026-10-29",
    "gaps": [
     "access",
     "outline"
@@ -323,7 +346,7 @@
    "catalog": "ArcGIS Online search",
    "licence": "In de NWP-viewer staan de kaarten zoals ze zijn vastgesteld in maart 2022. Die kaarten zijn ‘bevroren’ en passen we niet aan tot 2027, ook al zijn er in de tussentijd wijzigingen of ontdekken we nog f",
    "date": "2025-09-08",
-   "found": "2026-10-28",
+   "found": "2026-10-29",
    "gaps": [
     "outline"
    ],
@@ -557,7 +580,7 @@
    "catalog": "ArcGIS Online search",
    "licence": "In de NWP-viewer staan de kaarten zoals ze zijn vastgesteld in maart 2022. Die kaarten zijn ‘bevroren’ en passen we niet aan tot 2027, ook al zijn er in de tussentijd wijzigingen of ontdekken we nog f",
    "date": "2025-09-08",
-   "found": "2026-10-28",
+   "found": "2026-10-29",
    "gaps": [
     "outline"
    ],
@@ -861,7 +884,7 @@
    "catalog": "ArcGIS Online search",
    "licence": "In de NWP-viewer staan de kaarten zoals ze zijn vastgesteld in maart 2022. Die kaarten zijn ‘bevroren’ en passen we niet aan tot 2027, ook al zijn er in de tussentijd wijzigingen of ontdekken we nog f",
    "date": "2025-09-08",
-   "found": "2026-10-28",
+   "found": "2026-10-29",
    "gaps": [
     "access",
     "outline"
@@ -1122,6 +1145,23 @@
    "note": "NWP_Overzichtskaart Waterbeleid uitvoering",
    "grade": 4,
    "band": "B"
+  },
+  "eea-cdda:NL": {
+   "url": "https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/CDDA_Dyna_WM/MapServer",
+   "cc": "NL",
+   "title": "EEA nationally designated areas (CDDA / NatDA): Netherlands rows",
+   "publisher": "European Environment Agency",
+   "catalog": "EEA (every member state)",
+   "licence": "EEA standard re-use policy (credit the EEA)",
+   "date": "",
+   "found": "2026-10-29",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [],
+   "grade": 3,
+   "band": "B",
+   "note": "filter the layer by the country code (NL); one official layer covers every member state"
   }
  }
 }
