@@ -1,15 +1,15 @@
 # Closures super-bot: review (2026-10-29; RULE SHEET D; compared quietly, nothing on cards until GO)
 
-Run: 2026-10-29T04:34Z · requests 105 · pages 82 · PDFs 17 · sentences read 401 · unmatched 131 · look-alikes skipped 243 · sources failed 1
+Run: 2026-10-29T04:57Z · requests 106 · pages 82 · PDFs 17 · sentences read 402 · unmatched 131 · look-alikes skipped 240 · sources failed 1
 
-## Kentucky gate: **FAIL** — 15 of 32 of Kentucky's own reader's items found here on the same park (46%); 42 only here
+## Kentucky gate: **FAIL** — 18 of 32 of Kentucky's own reader's items found here on the same park (56%); 41 only here
 
 ## Sources that failed this run
 
 - US-KY ky-parks-api: rest (host resting after an earlier strike; last items kept) (https://parks.ky.gov/api/default/alerts?$top=100)
 
-## US-KY (done, read 2026-10-29T04:34)
-whole 3 · part 19 · hunt 16 · seasonal 0 · note 21 · taken_down 0 · 0 banners
+## US-KY (done, read 2026-10-29T04:57)
+whole 3 · part 19 · hunt 16 · seasonal 0 · note 22 · taken_down 0 · 0 banners
 
 Sources that failed (last items kept): ky-parks-api (rest (host resting after an earlier strike; last items kept))
 
@@ -51,11 +51,8 @@ Unmatched (two parks or none; for chat 11 to judge):
 - ​​Waterfowl Zones [ky-fw-quota] · no park name shares a word
 - Accessible/ Mobility-Impaired WMA | [ky-fw-public-land] · no park name shares a word
 
-### Side-by-side vs Kentucky's own reader (kpc_park_alerts.py + hc-): matched 15 · only here 42 · only there 17
+### Side-by-side vs Kentucky's own reader (kpc_park_alerts.py + hc-): matched 18 · only here 41 · only there 14
 
-- ONLY THERE: US-11181 pa-fs-tornado-damaged-area-closure-london-pulaski-counties-US-11181: Tornado Damaged Area Closure in London, Pulaski counties — Entering or occupying any portion of the 
-- ONLY THERE: US-11181 pa-fs-red-river-gorge-suspension-bridge-impassable-US-11181: Red River Gorge Suspension Bridge Impassable — The suspension footbridge near KY 715 in the Red Rive
-- ONLY THERE: US-11181 pa-fs-hawk-creek-sinking-creek-trail-bridges-impassable-US-11181: Hawk Creek, Sinking Creek trail bridges impassable — The Hawk Creek and Sinking Creek suspension bri
 - ONLY THERE: US-4687 hc-US-4687-2026-11-07: Kentucky Fish & Wildlife: Nov 7–8: closed to everyone except drawn hunters (and one helper each) for
 - ONLY THERE: US-3834 hc-US-3834-2026-11-07: Kentucky Fish & Wildlife: Nov 7–8: closed to everyone except drawn hunters (and one helper each) for
 - ONLY THERE: US-3831 hc-US-3831-2026-11-15: Kentucky Fish & Wildlife: Nov 15–Jan 15: closed to all hunting and public access, except waterfowl a
