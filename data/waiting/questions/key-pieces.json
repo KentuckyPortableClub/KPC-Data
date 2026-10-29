@@ -1,25 +1,1006 @@
 {
  "about": "RULE SHEET G step 2: held similar-name key pieces, one question each. Chat 11 fills answer (YES / NO) + checked_by + how (the agency map it looked at); chat 2 rechecks and writes overrides.json. 'pins' = POTA pin may be wrong (information only).",
- "built": "2026-10-29 17:39Z",
- "open": 0,
+ "built": "2026-10-29 18:26Z",
+ "open": 42,
  "questions": [
   {
-   "area": "US-ND",
-   "ref": "US-0437",
-   "park": "White Horse Hill Game Preserve",
-   "record": 5429,
-   "record_name": "White Horse Hill National Game Preserve",
-   "acres": 1630,
+   "area": "US-CA",
+   "ref": "US-4383",
+   "park": "Rogue River-Siskiyou National Forest",
+   "record": 2919,
+   "record_name": "Siskiyou National Forest",
+   "acres": 31543,
    "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
-   "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=5429&outFields=*&returnGeometry=false&f=html",
-   "pota_link": "https://pota.app/#/park/US-0437",
+   "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=2919&outFields=*&returnGeometry=false&f=html",
+   "pota_link": "https://pota.app/#/park/US-4383",
    "question": "Is this piece part of that park on the agency's own map? YES / NO",
-   "answer": "YES",
-   "checked_by": "chat 11 (Sonnet), Oct 29",
-   "how": "Same preserve: POTA US-0437 links the FWS page fws.gov/refuge/white-horse-hill-national-game-preserve (formerly Sully's Hill); FWS puts it at 47.9858,-98.9788, 1.5 km east of the POTA pin 47.9877,-98.9989, same name, same agency (U.S. Fish and Wildlife Service). Size: FWS page says 994 ac, record says 1,630 ac (the fenced refuge vs the whole preserve; Wikipedia ~1,670). I could not open the FWS map image from my session (look-up bot not used), so this is name + agency + place, not a look at the map."
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-CT",
+   "ref": "US-6861",
+   "park": "Great Pond / Massacoe State Forest",
+   "record": 52998,
+   "record_name": "Massacoe State Forest",
+   "acres": 1,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=52998&outFields=*&returnGeometry=false&f=html",
+   "pota_link": "https://pota.app/#/park/US-6861",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-CT",
+   "ref": "US-6861",
+   "park": "Great Pond / Massacoe State Forest",
+   "record": "sgctb2112",
+   "record_name": "Massacoe State Forest",
+   "acres": 0,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "",
+   "pota_link": "https://pota.app/#/park/US-6861",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-FL",
+   "ref": "US-3656",
+   "park": "Beker - South Fork State Park",
+   "record": "fnl2768",
+   "record_name": "South Fork State Park",
+   "acres": 1129,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "",
+   "pota_link": "https://pota.app/#/park/US-3656",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-FL",
+   "ref": "US-3656",
+   "park": "Beker - South Fork State Park",
+   "record": "sgfla102",
+   "record_name": "South Fork State Park",
+   "acres": 1129,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "",
+   "pota_link": "https://pota.app/#/park/US-3656",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-GA",
+   "ref": "US-7456",
+   "park": "Dahlonega Gold Museum State Historic Site",
+   "record": 195096,
+   "record_name": "Dahlonega Museum Historic Site",
+   "acres": 1,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=195096&outFields=*&returnGeometry=false&f=html",
+   "pota_link": "https://pota.app/#/park/US-7456",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-ID",
+   "ref": "US-12298",
+   "park": "Gamlin Lake Recreation Site BLM Recreation Management Area",
+   "record": "rst13894",
+   "record_name": "Gamlin Lake",
+   "acres": 2495,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "",
+   "pota_link": "https://pota.app/#/park/US-12298",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-MD",
+   "ref": "US-4365",
+   "park": "North Point Battlefield State Park",
+   "record": 56688,
+   "record_name": "North Point Sp",
+   "acres": 80,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=56688&outFields=*&returnGeometry=false&f=html",
+   "pota_link": "https://pota.app/#/park/US-4365",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-ME",
+   "ref": "US-0450",
+   "park": "Lake Umbagog National Wildlife Refuge",
+   "record": 5382,
+   "record_name": "Umbagog National Wildlife Refuge",
+   "acres": 11239,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=5382&outFields=*&returnGeometry=false&f=html",
+   "pota_link": "https://pota.app/#/park/US-0450",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-ME",
+   "ref": "US-0450",
+   "park": "Lake Umbagog National Wildlife Refuge",
+   "record": 4425,
+   "record_name": "Umbagog National Wildlife Refuge",
+   "acres": 11219,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=4425&outFields=*&returnGeometry=false&f=html",
+   "pota_link": "https://pota.app/#/park/US-0450",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-MI",
+   "ref": "US-13570",
+   "park": "Gladwin Field Trial Wildlife Management Area",
+   "record": "sgmib88",
+   "record_name": "Gladwin State Game Area",
+   "acres": 1354,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "",
+   "pota_link": "https://pota.app/#/park/US-13570",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-MN",
+   "ref": "US-11698",
+   "park": "Seminary Fen SNA State Sanctuary",
+   "record": 207775,
+   "record_name": "Seminary Fen State Scientific and Natural Area",
+   "acres": 73,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=207775&outFields=*&returnGeometry=false&f=html",
+   "pota_link": "https://pota.app/#/park/US-11698",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-MO",
+   "ref": "US-3359",
+   "park": "Missouri State Museum/Jefferson Landing State Historic Site",
+   "record": 210078,
+   "record_name": "Jefferson Landing State Historic Site",
+   "acres": 3,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=210078&outFields=*&returnGeometry=false&f=html",
+   "pota_link": "https://pota.app/#/park/US-3359",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-MO",
+   "ref": "US-9753",
+   "park": "Katy Trail Rock Island Spur State Park",
+   "record": "sgmoa1631",
+   "record_name": "Rock Island Trail",
+   "acres": 172,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "",
+   "pota_link": "https://pota.app/#/park/US-9753",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-NH",
+   "ref": "US-8023",
+   "park": "Robert Frost Farm State Historic Site",
+   "record": "nhc10571",
+   "record_name": "Frost Farm Historical Site",
+   "acres": 0,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "",
+   "pota_link": "https://pota.app/#/park/US-8023",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-NH",
+   "ref": "US-8023",
+   "park": "Robert Frost Farm State Historic Site",
+   "record": "sgnha10571",
+   "record_name": "Frost Farm Historical Site",
+   "acres": 0,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "",
+   "pota_link": "https://pota.app/#/park/US-8023",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-NY",
+   "ref": "US-8299",
+   "park": "Old Erie Canal State Historical Park",
+   "record": 232525,
+   "record_name": "Erie Canal",
+   "acres": 17563,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=232525&outFields=*&returnGeometry=false&f=html",
+   "pota_link": "https://pota.app/#/park/US-8299",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-NY",
+   "ref": "US-8319",
+   "park": "Palisades Interstate Park",
+   "record": "sgnyb545",
+   "record_name": "Palisades",
+   "acres": 35,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "",
+   "pota_link": "https://pota.app/#/park/US-8319",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-OR",
+   "ref": "US-4383",
+   "park": "Rogue River-Siskiyou National Forest",
+   "record": 2920,
+   "record_name": "Siskiyou National Forest",
+   "acres": 1058444,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=2920&outFields=*&returnGeometry=false&f=html",
+   "pota_link": "https://pota.app/#/park/US-4383",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-RI",
+   "ref": "US-2873",
+   "park": "Fishermen's Memorial State Park",
+   "record": 57170,
+   "record_name": "Fisherman's",
+   "acres": 80,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=57170&outFields=*&returnGeometry=false&f=html",
+   "pota_link": "https://pota.app/#/park/US-2873",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-RI",
+   "ref": "US-5484",
+   "park": "George Washington Memorial State Forest",
+   "record": 57173,
+   "record_name": "George Washington",
+   "acres": 0,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=57173&outFields=*&returnGeometry=false&f=html",
+   "pota_link": "https://pota.app/#/park/US-5484",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2955",
+   "park": "Wilson Cumberland Trail State Park",
+   "record": 256171,
+   "record_name": "Cumberland Trail",
+   "acres": 11893,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=256171&outFields=*&returnGeometry=false&f=html",
+   "pota_link": "https://pota.app/#/park/US-2955",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2976",
+   "park": "Sgt. Alvin C. York State Park",
+   "record": 255586,
+   "record_name": "Alvin C York",
+   "acres": 336,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=255586&outFields=*&returnGeometry=false&f=html",
+   "pota_link": "https://pota.app/#/park/US-2976",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7565",
+   "park": "AEDC and Woods Reservoir Wildlife Management Area",
+   "record": "sgtni131",
+   "record_name": "Woods Reservoir Refuge",
+   "acres": 810,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "",
+   "pota_link": "https://pota.app/#/park/US-7565",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-TX",
+   "ref": "US-6545",
+   "park": "Candy Cain Abshier Wildlife Management Area",
+   "record": "sgtxc91",
+   "record_name": "Candy Abshier WMA",
+   "acres": 0,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "",
+   "pota_link": "https://pota.app/#/park/US-6545",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-11092",
+   "park": "Midway Utah State Fish Hatchery",
+   "record": "sgutb151",
+   "record_name": "Midway Hatchery",
+   "acres": 0,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "",
+   "pota_link": "https://pota.app/#/park/US-11092",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-12145",
+   "park": "Doc's Beach OHV Staging Area BLM Recreation Management Area",
+   "record": "rma10016",
+   "record_name": "Docs Beach Staging Area",
+   "acres": 4,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "",
+   "pota_link": "https://pota.app/#/park/US-12145",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-12145",
+   "park": "Doc's Beach OHV Staging Area BLM Recreation Management Area",
+   "record": "rst10016",
+   "record_name": "Docs Beach Staging Area",
+   "acres": 4,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "",
+   "pota_link": "https://pota.app/#/park/US-12145",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-3064",
+   "park": "Camp Floyd/Stagecoach Inn State Park",
+   "record": "sguta116",
+   "record_name": "Stagecoach Inn",
+   "acres": 0,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "",
+   "pota_link": "https://pota.app/#/park/US-3064",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-3064",
+   "park": "Camp Floyd/Stagecoach Inn State Park",
+   "record": "sguta164",
+   "record_name": "Stagecoach Inn",
+   "acres": 0,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "",
+   "pota_link": "https://pota.app/#/park/US-3064",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-5955",
+   "park": "Farmington Bay State Waterfowl Management Area",
+   "record": 263937,
+   "record_name": "Farmington Bay State Wildlife Area",
+   "acres": 3555,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=263937&outFields=*&returnGeometry=false&f=html",
+   "pota_link": "https://pota.app/#/park/US-5955",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-6027",
+   "park": "Topaz Mountain Rockhound Area BLM Recreation Management Area",
+   "record": "rst9580",
+   "record_name": "Topaz Mountain",
+   "acres": 1603,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "",
+   "pota_link": "https://pota.app/#/park/US-6027",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-WA",
+   "ref": "US-10409",
+   "park": "Jackson House State Park Heritage State Historic Site",
+   "record": 271460,
+   "record_name": "Jackson House",
+   "acres": 1,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=271460&outFields=*&returnGeometry=false&f=html",
+   "pota_link": "https://pota.app/#/park/US-10409",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-WA",
+   "ref": "US-12545",
+   "park": "Cottonwood Island Wildlife Area",
+   "record": "sgwab1371",
+   "record_name": "Island",
+   "acres": 0,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "",
+   "pota_link": "https://pota.app/#/park/US-12545",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-WA",
+   "ref": "US-12545",
+   "park": "Cottonwood Island Wildlife Area",
+   "record": "sgwaf1371",
+   "record_name": "Island",
+   "acres": 0,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "",
+   "pota_link": "https://pota.app/#/park/US-12545",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-WA",
+   "ref": "US-12549",
+   "park": "Leque Island State Wildlife Area",
+   "record": "sgwab1371",
+   "record_name": "Island",
+   "acres": 0,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "",
+   "pota_link": "https://pota.app/#/park/US-12549",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-WA",
+   "ref": "US-12549",
+   "park": "Leque Island State Wildlife Area",
+   "record": "sgwaf1371",
+   "record_name": "Island",
+   "acres": 0,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "",
+   "pota_link": "https://pota.app/#/park/US-12549",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-WA",
+   "ref": "US-12830",
+   "park": "Old Ruby State Park State Heritage Area",
+   "record": 271501,
+   "record_name": "Old Ruby",
+   "acres": 7,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=271501&outFields=*&returnGeometry=false&f=html",
+   "pota_link": "https://pota.app/#/park/US-12830",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-WA",
+   "ref": "US-12830",
+   "park": "Old Ruby State Park State Heritage Area",
+   "record": "sgwaa128",
+   "record_name": "Old Ruby",
+   "acres": 7,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "",
+   "pota_link": "https://pota.app/#/park/US-12830",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-12068",
+   "park": "Big Rib River State Fish and Wildlife Area",
+   "record": 272833,
+   "record_name": "Rib River Fishery Area",
+   "acres": 224,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=272833&outFields=*&returnGeometry=false&f=html",
+   "pota_link": "https://pota.app/#/park/US-12068",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-WY",
+   "ref": "US-10790",
+   "park": "Laramie Peak State Wildlife Habitat Management Area",
+   "record": "sgwyc14160",
+   "record_name": "Laramie Peak",
+   "acres": 0,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "",
+   "pota_link": "https://pota.app/#/park/US-10790",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
+  },
+  {
+   "area": "US-WY",
+   "ref": "US-12728",
+   "park": "Fall Creek State Wildlife Habitat Management Area",
+   "record": "sgwyd10124",
+   "record_name": "Fall Creek",
+   "acres": 0,
+   "why": "held (rule G-1): a similar-name piece more than 2 km from the pin and from every passed piece",
+   "record_link": "",
+   "pota_link": "https://pota.app/#/park/US-12728",
+   "question": "Is this piece part of that park on the agency's own map? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null
   }
  ],
  "pins": [
+  {
+   "area": "US-AK",
+   "ref": "US-0150",
+   "park": "Kodiak National Wildlife Refuge",
+   "pota_link": "https://pota.app/#/park/US-0150"
+  },
+  {
+   "area": "US-AK",
+   "ref": "US-10281",
+   "park": "White Mountains National Recreation Area BLM Recreation Management Area",
+   "pota_link": "https://pota.app/#/park/US-10281"
+  },
+  {
+   "area": "US-AK",
+   "ref": "US-6332",
+   "park": "Hatcher Pass State Natural Area",
+   "pota_link": "https://pota.app/#/park/US-6332"
+  },
+  {
+   "area": "US-AK",
+   "ref": "US-7191",
+   "park": "Anchor River State Recreation Area",
+   "pota_link": "https://pota.app/#/park/US-7191"
+  },
+  {
+   "area": "US-AK",
+   "ref": "US-7242",
+   "park": "Portage Cove State Recreation Site",
+   "pota_link": "https://pota.app/#/park/US-7242"
+  },
+  {
+   "area": "US-AL",
+   "ref": "US-0384",
+   "park": "Grand Bay National Wildlife Refuge",
+   "pota_link": "https://pota.app/#/park/US-0384"
+  },
+  {
+   "area": "US-AL",
+   "ref": "US-0642",
+   "park": "Natchez Trace Parkway National Parkway",
+   "pota_link": "https://pota.app/#/park/US-0642"
+  },
+  {
+   "area": "US-AL",
+   "ref": "US-11033",
+   "park": "The Portland Landing Conservation Reserve",
+   "pota_link": "https://pota.app/#/park/US-11033"
+  },
+  {
+   "area": "US-AL",
+   "ref": "US-12996",
+   "park": "Fowl River Access Site BLM Recreation Management Area",
+   "pota_link": "https://pota.app/#/park/US-12996"
+  },
+  {
+   "area": "US-AL",
+   "ref": "US-3701",
+   "park": "Pike County Pocosin Complex State Fish and Wildlife Area",
+   "pota_link": "https://pota.app/#/park/US-3701"
+  },
+  {
+   "area": "US-AR",
+   "ref": "US-7271",
+   "park": "Camp Robinson Wildlife Management Area",
+   "pota_link": "https://pota.app/#/park/US-7271"
+  },
+  {
+   "area": "US-AR",
+   "ref": "US-7274",
+   "park": "Cedar Creek Wildlife Management Area",
+   "pota_link": "https://pota.app/#/park/US-7274"
+  },
+  {
+   "area": "US-AZ",
+   "ref": "US-0676",
+   "park": "Lake Mead National Recreation Area",
+   "pota_link": "https://pota.app/#/park/US-0676"
+  },
+  {
+   "area": "US-AZ",
+   "ref": "US-6090",
+   "park": "Beaver Dam Mountain Wilderness Area",
+   "pota_link": "https://pota.app/#/park/US-6090"
+  },
+  {
+   "area": "US-CA",
+   "ref": "US-0197",
+   "park": "Kern National Wild and Scenic River",
+   "pota_link": "https://pota.app/#/park/US-0197"
+  },
+  {
+   "area": "US-CA",
+   "ref": "US-0203",
+   "park": "North Central Valley Wildlife Management Area",
+   "pota_link": "https://pota.app/#/park/US-0203"
+  },
+  {
+   "area": "US-CA",
+   "ref": "US-0211",
+   "park": "San Luis National Wildlife Refuge",
+   "pota_link": "https://pota.app/#/park/US-0211"
+  },
+  {
+   "area": "US-CA",
+   "ref": "US-3523",
+   "park": "Oceano Dunes State Recreation Area",
+   "pota_link": "https://pota.app/#/park/US-3523"
+  },
+  {
+   "area": "US-CO",
+   "ref": "US-0185",
+   "park": "Hugo State Wildlife Area",
+   "pota_link": "https://pota.app/#/park/US-0185"
+  },
+  {
+   "area": "US-CO",
+   "ref": "US-0943",
+   "park": "Hovenweep National Monument",
+   "pota_link": "https://pota.app/#/park/US-0943"
+  },
+  {
+   "area": "US-CO",
+   "ref": "US-12185",
+   "park": "Grand Junction: West Lake State Wildlife Area",
+   "pota_link": "https://pota.app/#/park/US-12185"
+  },
+  {
+   "area": "US-CO",
+   "ref": "US-1249",
+   "park": "Vega State Park",
+   "pota_link": "https://pota.app/#/park/US-1249"
+  },
+  {
+   "area": "US-CO",
+   "ref": "US-9594",
+   "park": "Gunnison Gorge BLM National Conservation Area",
+   "pota_link": "https://pota.app/#/park/US-9594"
+  },
+  {
+   "area": "US-CO",
+   "ref": "US-9605",
+   "park": "Alma State Wildlife Area",
+   "pota_link": "https://pota.app/#/park/US-9605"
+  },
+  {
+   "area": "US-CO",
+   "ref": "US-9620",
+   "park": "Bodo State Wildlife Area",
+   "pota_link": "https://pota.app/#/park/US-9620"
+  },
+  {
+   "area": "US-CO",
+   "ref": "US-9622",
+   "park": "Bosque Del Oso State Wildlife Area",
+   "pota_link": "https://pota.app/#/park/US-9622"
+  },
+  {
+   "area": "US-CO",
+   "ref": "US-9631",
+   "park": "Coalbed Canyon State Wildlife Area",
+   "pota_link": "https://pota.app/#/park/US-9631"
+  },
+  {
+   "area": "US-CO",
+   "ref": "US-9632",
+   "park": "Cochetopa State Wildlife Area",
+   "pota_link": "https://pota.app/#/park/US-9632"
+  },
+  {
+   "area": "US-CO",
+   "ref": "US-9635",
+   "park": "Colorow Mountain State Wildlife Area",
+   "pota_link": "https://pota.app/#/park/US-9635"
+  },
+  {
+   "area": "US-CO",
+   "ref": "US-9638",
+   "park": "Dan Noble State Wildlife Area",
+   "pota_link": "https://pota.app/#/park/US-9638"
+  },
+  {
+   "area": "US-CO",
+   "ref": "US-9639",
+   "park": "Deadman State Wildlife Area",
+   "pota_link": "https://pota.app/#/park/US-9639"
+  },
+  {
+   "area": "US-CT",
+   "ref": "US-1696",
+   "park": "Mianus River State Park",
+   "pota_link": "https://pota.app/#/park/US-1696"
+  },
+  {
+   "area": "US-DC",
+   "ref": "US-0670",
+   "park": "George Washington Memorial Parkway",
+   "pota_link": "https://pota.app/#/park/US-0670"
+  },
+  {
+   "area": "US-FL",
+   "ref": "US-3660",
+   "park": "Suwannee River Wilderness State Trail",
+   "pota_link": "https://pota.app/#/park/US-3660"
+  },
+  {
+   "area": "US-IA",
+   "ref": "US-4236",
+   "park": "Upper Mississippi River National Wildlife Refuge",
+   "pota_link": "https://pota.app/#/park/US-4236"
+  },
+  {
+   "area": "US-ID",
+   "ref": "US-0070",
+   "park": "Yellowstone National Park",
+   "pota_link": "https://pota.app/#/park/US-0070"
+  },
+  {
+   "area": "US-ID",
+   "ref": "US-13296",
+   "park": "Upper Salmon River Access BLM Recreation Management Area",
+   "pota_link": "https://pota.app/#/park/US-13296"
+  },
+  {
+   "area": "US-ID",
+   "ref": "US-4387",
+   "park": "Wallowa-Whitman National Forest",
+   "pota_link": "https://pota.app/#/park/US-4387"
+  },
+  {
+   "area": "US-ID",
+   "ref": "US-4398",
+   "park": "Uinta-Wasatch-Cache National Forest",
+   "pota_link": "https://pota.app/#/park/US-4398"
+  },
+  {
+   "area": "US-ID",
+   "ref": "US-4505",
+   "park": "Kootenai National Forest",
+   "pota_link": "https://pota.app/#/park/US-4505"
+  },
+  {
+   "area": "US-ID",
+   "ref": "US-5616",
+   "park": "Red River Wildlife Management Area",
+   "pota_link": "https://pota.app/#/park/US-5616"
+  },
+  {
+   "area": "US-IL",
+   "ref": "US-0272",
+   "park": "Port Louisa National Wildlife Refuge",
+   "pota_link": "https://pota.app/#/park/US-0272"
+  },
+  {
+   "area": "US-IL",
+   "ref": "US-0376",
+   "park": "Great River National Wildlife Refuge",
+   "pota_link": "https://pota.app/#/park/US-0376"
+  },
+  {
+   "area": "US-IL",
+   "ref": "US-4136",
+   "park": "Kinkaid Lake State Fish and Wildlife Area",
+   "pota_link": "https://pota.app/#/park/US-4136"
+  },
+  {
+   "area": "US-IN",
+   "ref": "US-12020",
+   "park": "Prophetstown Fen State Nature Preserve",
+   "pota_link": "https://pota.app/#/park/US-12020"
+  },
+  {
+   "area": "US-LA",
+   "ref": "US-0723",
+   "park": "Vicksburg National Military Park",
+   "pota_link": "https://pota.app/#/park/US-0723"
+  },
+  {
+   "area": "US-MA",
+   "ref": "US-11401",
+   "park": "Cummington Wildlife Management Area",
+   "pota_link": "https://pota.app/#/park/US-11401"
+  },
+  {
+   "area": "US-MA",
+   "ref": "US-11631",
+   "park": "Hartley Reservoir Wildlife Management Area",
+   "pota_link": "https://pota.app/#/park/US-11631"
+  },
+  {
+   "area": "US-MD",
+   "ref": "US-7749",
+   "park": "Pocomoke Sound Wildlife Management Area",
+   "pota_link": "https://pota.app/#/park/US-7749"
+  },
+  {
+   "area": "US-MD",
+   "ref": "US-7760",
+   "park": "Nanjemoy Creek Wildlife Management Area",
+   "pota_link": "https://pota.app/#/park/US-7760"
+  },
+  {
+   "area": "US-MI",
+   "ref": "US-10717",
+   "park": "Sylvania Wilderness Area",
+   "pota_link": "https://pota.app/#/park/US-10717"
+  },
+  {
+   "area": "US-MN",
+   "ref": "US-0361",
+   "park": "Hamden Slough National Wildlife Refuge",
+   "pota_link": "https://pota.app/#/park/US-0361"
+  },
+  {
+   "area": "US-MN",
+   "ref": "US-11023",
+   "park": "Egret Island SNA State Conservation Area",
+   "pota_link": "https://pota.app/#/park/US-11023"
+  },
+  {
+   "area": "US-MN",
+   "ref": "US-12152",
+   "park": "Canosia Wildlife Management Area",
+   "pota_link": "https://pota.app/#/park/US-12152"
+  },
+  {
+   "area": "US-MN",
+   "ref": "US-13354",
+   "park": "Pelican Lake Wildlife Management Area",
+   "pota_link": "https://pota.app/#/park/US-13354"
+  },
+  {
+   "area": "US-MN",
+   "ref": "US-9387",
+   "park": "Luce Line State Trail",
+   "pota_link": "https://pota.app/#/park/US-9387"
+  },
+  {
+   "area": "US-MS",
+   "ref": "US-0722",
+   "park": "Shiloh National Battlefield",
+   "pota_link": "https://pota.app/#/park/US-0722"
+  },
+  {
+   "area": "US-MT",
+   "ref": "US-0070",
+   "park": "Yellowstone National Park",
+   "pota_link": "https://pota.app/#/park/US-0070"
+  },
+  {
+   "area": "US-NC",
+   "ref": "US-0566",
+   "park": "Great Dismal Swamp National Wildlife Refuge",
+   "pota_link": "https://pota.app/#/park/US-0566"
+  },
+  {
+   "area": "US-NC",
+   "ref": "US-12717",
+   "park": "Deep River State Trail",
+   "pota_link": "https://pota.app/#/park/US-12717"
+  },
+  {
+   "area": "US-NC",
+   "ref": "US-9758",
+   "park": "Chattooga National Wild and Scenic River",
+   "pota_link": "https://pota.app/#/park/US-9758"
+  },
   {
    "area": "US-ND",
    "ref": "US-5742",
@@ -31,6 +1012,534 @@
    "ref": "US-7707",
    "park": "Maclean Bottoms Wildlife Management Area",
    "pota_link": "https://pota.app/#/park/US-7707"
+  },
+  {
+   "area": "US-NE",
+   "ref": "US-9356",
+   "park": "Willow Lake Wildlife Management Area",
+   "pota_link": "https://pota.app/#/park/US-9356"
+  },
+  {
+   "area": "US-NH",
+   "ref": "US-4868",
+   "park": "Annett State Forest",
+   "pota_link": "https://pota.app/#/park/US-4868"
+  },
+  {
+   "area": "US-NH",
+   "ref": "US-4886",
+   "park": "Connecticut Lakes State Forest",
+   "pota_link": "https://pota.app/#/park/US-4886"
+  },
+  {
+   "area": "US-NH",
+   "ref": "US-4894",
+   "park": "Davis-White State Forest",
+   "pota_link": "https://pota.app/#/park/US-4894"
+  },
+  {
+   "area": "US-NH",
+   "ref": "US-4926",
+   "park": "Lovewell Mountain State Forest",
+   "pota_link": "https://pota.app/#/park/US-4926"
+  },
+  {
+   "area": "US-NH",
+   "ref": "US-4933",
+   "park": "Merrimack River State Forest",
+   "pota_link": "https://pota.app/#/park/US-4933"
+  },
+  {
+   "area": "US-NH",
+   "ref": "US-4934",
+   "park": "Merriman State Forest",
+   "pota_link": "https://pota.app/#/park/US-4934"
+  },
+  {
+   "area": "US-NH",
+   "ref": "US-4955",
+   "park": "Saltmarsh Pond State Forest",
+   "pota_link": "https://pota.app/#/park/US-4955"
+  },
+  {
+   "area": "US-NH",
+   "ref": "US-8396",
+   "park": "Nashua River Rail Trail State Trail",
+   "pota_link": "https://pota.app/#/park/US-8396"
+  },
+  {
+   "area": "US-NJ",
+   "ref": "US-0680",
+   "park": "Gateway National Recreation Area",
+   "pota_link": "https://pota.app/#/park/US-0680"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-10844",
+   "park": "Diamond BLM Herd Management Area",
+   "pota_link": "https://pota.app/#/park/US-10844"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-11913",
+   "park": "Bad Lands BLM Wilderness Area",
+   "pota_link": "https://pota.app/#/park/US-11913"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-13017",
+   "park": "Agusta Mountains BLM Herd Management Area",
+   "pota_link": "https://pota.app/#/park/US-13017"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-13018",
+   "park": "Black Rock Range East/West BLM Herd Management Area",
+   "pota_link": "https://pota.app/#/park/US-13018"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-13024",
+   "park": "Callaghan BLM Herd Management Area",
+   "pota_link": "https://pota.app/#/park/US-13024"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-13034",
+   "park": "Goshute BLM Herd Management Area",
+   "pota_link": "https://pota.app/#/park/US-13034"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-13039",
+   "park": "Owyhee River Wilderness Area",
+   "pota_link": "https://pota.app/#/park/US-13039"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-13048",
+   "park": "Rocky Hills BLM Herd Management Area",
+   "pota_link": "https://pota.app/#/park/US-13048"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-13128",
+   "park": "Jackson Mountains BLM Herd Management Area",
+   "pota_link": "https://pota.app/#/park/US-13128"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-13130",
+   "park": "Lava Beds BLM Herd Management Area",
+   "pota_link": "https://pota.app/#/park/US-13130"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-13132",
+   "park": "Seven Mile BLM Herd Management Area",
+   "pota_link": "https://pota.app/#/park/US-13132"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-13134",
+   "park": "Rock Creek BLM Herd Management Area",
+   "pota_link": "https://pota.app/#/park/US-13134"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-13138",
+   "park": "Wassuk BLM Herd Management Area",
+   "pota_link": "https://pota.app/#/park/US-13138"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-13139",
+   "park": "Muddy Mountains BLM Herd Management Area",
+   "pota_link": "https://pota.app/#/park/US-13139"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-13145",
+   "park": "Warm Springs Canyon BLM Herd Management Area",
+   "pota_link": "https://pota.app/#/park/US-13145"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-13194",
+   "park": "Egan Crest Trailhead BLM Recreation Management Area",
+   "pota_link": "https://pota.app/#/park/US-13194"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-9246",
+   "park": "East Fork High Rock Canyon Wilderness Area",
+   "pota_link": "https://pota.app/#/park/US-9246"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-9247",
+   "park": "Eldorado BLM Wilderness Area",
+   "pota_link": "https://pota.app/#/park/US-9247"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-9258",
+   "park": "Ireteba Peaks BLM Wilderness Area",
+   "pota_link": "https://pota.app/#/park/US-9258"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-9273",
+   "park": "North Jackson Mountains Wilderness Area",
+   "pota_link": "https://pota.app/#/park/US-9273"
+  },
+  {
+   "area": "US-NY",
+   "ref": "US-0456",
+   "park": "Wallkill River National Wildlife Refuge",
+   "pota_link": "https://pota.app/#/park/US-0456"
+  },
+  {
+   "area": "US-NY",
+   "ref": "US-10292",
+   "park": "Watson's East Triangle Complex State Preserve",
+   "pota_link": "https://pota.app/#/park/US-10292"
+  },
+  {
+   "area": "US-NY",
+   "ref": "US-10293",
+   "park": "Raquette Boreal Complex State Preserve",
+   "pota_link": "https://pota.app/#/park/US-10293"
+  },
+  {
+   "area": "US-NY",
+   "ref": "US-8319",
+   "park": "Palisades Interstate Park",
+   "pota_link": "https://pota.app/#/park/US-8319"
+  },
+  {
+   "area": "US-NY",
+   "ref": "US-9037",
+   "park": "Allegheny Reservoir Wildlife Management Area",
+   "pota_link": "https://pota.app/#/park/US-9037"
+  },
+  {
+   "area": "US-OH",
+   "ref": "US-9470",
+   "park": "Jockey Hollow State Wildlife Area",
+   "pota_link": "https://pota.app/#/park/US-9470"
+  },
+  {
+   "area": "US-OK",
+   "ref": "US-12027",
+   "park": "Altus-Lugert State Fishing Lake",
+   "pota_link": "https://pota.app/#/park/US-12027"
+  },
+  {
+   "area": "US-OK",
+   "ref": "US-12028",
+   "park": "Barren Fork Wildlife Management Area",
+   "pota_link": "https://pota.app/#/park/US-12028"
+  },
+  {
+   "area": "US-OK",
+   "ref": "US-6361",
+   "park": "McGee Creek Wildlife Management Area",
+   "pota_link": "https://pota.app/#/park/US-6361"
+  },
+  {
+   "area": "US-OK",
+   "ref": "US-7481",
+   "park": "Rita Blanca National Grassland",
+   "pota_link": "https://pota.app/#/park/US-7481"
+  },
+  {
+   "area": "US-OK",
+   "ref": "US-7682",
+   "park": "Lake Vanderwork State Fishing Lake",
+   "pota_link": "https://pota.app/#/park/US-7682"
+  },
+  {
+   "area": "US-OK",
+   "ref": "US-8140",
+   "park": "Gary Sherrer Wildlife Management Area",
+   "pota_link": "https://pota.app/#/park/US-8140"
+  },
+  {
+   "area": "US-OR",
+   "ref": "US-0199",
+   "park": "Lower Klamath National Wildlife Refuge",
+   "pota_link": "https://pota.app/#/park/US-0199"
+  },
+  {
+   "area": "US-OR",
+   "ref": "US-4457",
+   "park": "Klamath National Forest",
+   "pota_link": "https://pota.app/#/park/US-4457"
+  },
+  {
+   "area": "US-OR",
+   "ref": "US-9159",
+   "park": "Lower Deschutes National Wild and Scenic River",
+   "pota_link": "https://pota.app/#/park/US-9159"
+  },
+  {
+   "area": "US-PA",
+   "ref": "US-0733",
+   "park": "First State National Historical Park",
+   "pota_link": "https://pota.app/#/park/US-0733"
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-0716",
+   "park": "Chickamauga and Chattanooga National Military Park",
+   "pota_link": "https://pota.app/#/park/US-0716"
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-6275",
+   "park": "Walls of Jericho State Natural Area",
+   "pota_link": "https://pota.app/#/park/US-6275"
+  },
+  {
+   "area": "US-TX",
+   "ref": "US-7480",
+   "park": "Black Kettle National Grassland",
+   "pota_link": "https://pota.app/#/park/US-7480"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-0921",
+   "park": "Dinosaur National Monument",
+   "pota_link": "https://pota.app/#/park/US-0921"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-10972",
+   "park": "Beartrap Canyon BLM Wild and Scenic River",
+   "pota_link": "https://pota.app/#/park/US-10972"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-11007",
+   "park": "White River BLM Recreation Management Area",
+   "pota_link": "https://pota.app/#/park/US-11007"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-11115",
+   "park": "North Fork Virgin River BLM Wild and Scenic River",
+   "pota_link": "https://pota.app/#/park/US-11115"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-11748",
+   "park": "Cedar Mesa BLM Special Recreation Management Area",
+   "pota_link": "https://pota.app/#/park/US-11748"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-5758",
+   "park": "Dolores River BLM Recreation Management Area",
+   "pota_link": "https://pota.app/#/park/US-5758"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-5782",
+   "park": "Indian Creek BLM Special Recreation Management Area",
+   "pota_link": "https://pota.app/#/park/US-5782"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-5789",
+   "park": "Behind the Rocks Wilderness Area",
+   "pota_link": "https://pota.app/#/park/US-5789"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-5828",
+   "park": "Dark Canyon BLM Special Recreation Management Area",
+   "pota_link": "https://pota.app/#/park/US-5828"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-5833",
+   "park": "Horseshoe Canyon (North) BLM Wilderness Area",
+   "pota_link": "https://pota.app/#/park/US-5833"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-5869",
+   "park": "9 Mile Canyon BLM Recreation Management Area",
+   "pota_link": "https://pota.app/#/park/US-5869"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-5897",
+   "park": "Lower Last Chance BLM Wilderness Area",
+   "pota_link": "https://pota.app/#/park/US-5897"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-6007",
+   "park": "Cedar Mountain BLM Herd Management Area",
+   "pota_link": "https://pota.app/#/park/US-6007"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-6090",
+   "park": "Beaver Dam Mountain Wilderness Area",
+   "pota_link": "https://pota.app/#/park/US-6090"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-9291",
+   "park": "White Rock Range BLM National Conservation Area",
+   "pota_link": "https://pota.app/#/park/US-9291"
+  },
+  {
+   "area": "US-VA",
+   "ref": "US-0573",
+   "park": "Wallops Island National Wildlife Refuge",
+   "pota_link": "https://pota.app/#/park/US-0573"
+  },
+  {
+   "area": "US-VA",
+   "ref": "US-0671",
+   "park": "Assateague Island National Seashore",
+   "pota_link": "https://pota.app/#/park/US-0671"
+  },
+  {
+   "area": "US-VA",
+   "ref": "US-3378",
+   "park": "Blue Ridge National Parkway",
+   "pota_link": "https://pota.app/#/park/US-3378"
+  },
+  {
+   "area": "US-VT",
+   "ref": "US-5532",
+   "park": "Hapgood State Forest",
+   "pota_link": "https://pota.app/#/park/US-5532"
+  },
+  {
+   "area": "US-VT",
+   "ref": "US-5538",
+   "park": "Lower Clarendon Gorge State Forest",
+   "pota_link": "https://pota.app/#/park/US-5538"
+  },
+  {
+   "area": "US-VT",
+   "ref": "US-5553",
+   "park": "Camels Hump State Forest",
+   "pota_link": "https://pota.app/#/park/US-5553"
+  },
+  {
+   "area": "US-WA",
+   "ref": "US-0054",
+   "park": "Nez Perce National Historical Park",
+   "pota_link": "https://pota.app/#/park/US-0054"
+  },
+  {
+   "area": "US-WA",
+   "ref": "US-5640",
+   "park": "Lewis and Clark National Historical Park",
+   "pota_link": "https://pota.app/#/park/US-5640"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-12601",
+   "park": "Hackmatack National Wildlife Refuge",
+   "pota_link": "https://pota.app/#/park/US-12601"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-4352",
+   "park": "Kettle Moraine State Forest",
+   "pota_link": "https://pota.app/#/park/US-4352"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-9800",
+   "park": "Hank Aaron State Trail",
+   "pota_link": "https://pota.app/#/park/US-9800"
+  },
+  {
+   "area": "US-WV",
+   "ref": "US-0015",
+   "park": "Chesapeake and Ohio Canal National Historical Park",
+   "pota_link": "https://pota.app/#/park/US-0015"
+  },
+  {
+   "area": "US-WV",
+   "ref": "US-7027",
+   "park": "Slatyfork Wildlife Management Area",
+   "pota_link": "https://pota.app/#/park/US-7027"
+  },
+  {
+   "area": "US-WV",
+   "ref": "US-7043",
+   "park": "Tate Lohr Wildlife Management Area",
+   "pota_link": "https://pota.app/#/park/US-7043"
+  },
+  {
+   "area": "US-WY",
+   "ref": "US-10816",
+   "park": "Saratoga National Fish Hatchery",
+   "pota_link": "https://pota.app/#/park/US-10816"
+  },
+  {
+   "area": "US-WY",
+   "ref": "US-4394",
+   "park": "Ashley National Forest",
+   "pota_link": "https://pota.app/#/park/US-4394"
+  },
+  {
+   "area": "US-WY",
+   "ref": "US-4403",
+   "park": "Medicine Bow - Routt National Forest",
+   "pota_link": "https://pota.app/#/park/US-4403"
+  },
+  {
+   "area": "US-WY",
+   "ref": "US-4475",
+   "park": "Caribou-Targhee National Forest",
+   "pota_link": "https://pota.app/#/park/US-4475"
+  },
+  {
+   "area": "US-WY",
+   "ref": "US-4524",
+   "park": "Black Hills National Forest",
+   "pota_link": "https://pota.app/#/park/US-4524"
+  },
+  {
+   "area": "US-WY",
+   "ref": "US-6135",
+   "park": "Pennock Mountain Wildlife Management Area",
+   "pota_link": "https://pota.app/#/park/US-6135"
+  },
+  {
+   "area": "US-WY",
+   "ref": "US-6197",
+   "park": "Popo Agie Wilderness Area",
+   "pota_link": "https://pota.app/#/park/US-6197"
+  },
+  {
+   "area": "US-WY",
+   "ref": "US-6202",
+   "park": "North Absaroka Wilderness Area",
+   "pota_link": "https://pota.app/#/park/US-6202"
+  },
+  {
+   "area": "US-WY",
+   "ref": "US-6204",
+   "park": "Little Colorado BLM Herd Management Area",
+   "pota_link": "https://pota.app/#/park/US-6204"
+  },
+  {
+   "area": "US-WY",
+   "ref": "US-6218",
+   "park": "Boulder Lake BLM Recreation Management Area",
+   "pota_link": "https://pota.app/#/park/US-6218"
   }
  ]
 }
