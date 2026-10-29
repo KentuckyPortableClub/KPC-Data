@@ -33,10 +33,12 @@ LINKS = pathlib.Path(os.environ.get('LINKS') or 'links')
 T0 = time.time(); LIMIT = float(os.environ.get('MINUTES') or 55) * 60
 REFRESH_DAYS = int(os.environ.get('REFRESH_DAYS') or 90)
 TODAY = time.strftime('%Y-%m-%d')
-VER = 9   # Oct 28 night: PDF line-break hyphens joined, '9 to 5' after open/daily/hours, 'Open dawn to dusk' + 'Hiking … sunrise to sunset' count; VER 8 = Oct 28 night: the gate counts only key rows whose wording is on a page we read; VER 7 = Oct 28 11 AM: whole-PDF read when a slice is unreadable, browser read for script pages, '24/7', agency-wide key rows left out of the gate; VER 6 = Oct 28 10:15 AM (regrade 3): headings ending ':' dropped, no statewide licence prices / nationwide notices / legal text, campground hours apart, days need a time; VER 5 =: debug text for gate misses; VER 4 =: the page-list unpack fix; VER 3 was the 6:40 AM (chat 11's grade + regrade): schedule / labelled rows count; questions, events, '$N million' never; attraction hours labelled
+VER = 10   # Oct 28 11:30 PM (Brandon ruling 'Season'): a line with no day and no time ('Open year-round', 'seasonal') goes to `season`, `hours` keeps only lines with a day or a time; a park whose pages print no hours says so (`hours_note`); VER 9 = Oct 28 night: PDF line-break hyphens joined, '9 to 5' after open/daily/hours, 'Open dawn to dusk' + 'Hiking … sunrise to sunset' count; VER 8 = Oct 28 night: the gate counts only key rows whose wording is on a page we read; VER 7 = Oct 28 11 AM: whole-PDF read when a slice is unreadable, browser read for script pages, '24/7', agency-wide key rows left out of the gate; VER 6 = Oct 28 10:15 AM (regrade 3): headings ending ':' dropped, no statewide licence prices / nationwide notices / legal text, campground hours apart, days need a time; VER 5 =: debug text for gate misses; VER 4 =: the page-list unpack fix; VER 3 was the 6:40 AM (chat 11's grade + regrade): schedule / labelled rows count; questions, events, '$N million' never; attraction hours labelled
 QUEUE = T.QUEUE
 STAT = {'parks': 0, 'pages_read': 0, 'hours': 0, 'fees': 0, 'permits': 0, 'none': 0, 'no_page': 0, 'skipped_fresh': 0, 'errors': 0}
 
+DAYWORD = re.compile(r'\b(?:mon|tue|tues|wed|thu|thur|thurs|fri|sat|sun)(?:day)?s?\b|\bweekdays?\b|\bweekends?\b|\bdaily\b|\bevery day\b|\b(?:seven|7) days\b|\bholidays?\b', re.I)
+CLOCK = re.compile(r'24/7|24 hours|\d{1,2}(?::\d\d)?\s*(?:a\.?m\.?|p\.?m\.?)|\b\d{1,2}\s*(?:to|-|–)\s*\d{1,2}\b|noon|midnight|daylight|dawn|dusk|sunrise|sunset|sundown|\bdark\b', re.I)
 TIME = r'(?:24/7|24 hours a day|open 24 hours|(?<=open )\d{1,2}\s*(?:to|-|–)\s*\d{1,2}\b|(?<=daily )\d{1,2}\s*(?:to|-|–)\s*\d{1,2}\b|(?<=hours: )\d{1,2}\s*(?:to|-|–)\s*\d{1,2}\b|\d{1,2}(?::\d\d)?\s*(?:a\.?m\.?|p\.?m\.?)|noon|midnight|daylight|dawn|dusk|sunrise|sunset|sundown|dark|24 hours|year[- ]round|seasonal)'
 DAYS = r'(?:mon|tues?|wed|thurs?|fri|sat|sun)[a-z]*\.?'
 HOURS_RX = re.compile(r'([^.;\n]{0,160}?\b(?:open|hours?|closed|closes|gates?|access(?:ible)?|day[- ]use)\b[^.;\n]{0,160}?\b' + TIME + r'[^.;\n]{0,120}|[^.;\n]{0,120}\b' + TIME + r'\s*(?:to|-|–|until|till|through)\s*' + TIME + r'[^.;\n]{0,120}|[^.;\n]{0,120}\b' + DAYS + r'\s*(?:to|-|–|through|thru)\s*' + DAYS + r'[^.;\n]{0,120})', re.I)
@@ -96,7 +98,7 @@ def is_heading(sen):
 def facts_in(text, park_name='', url=''):
     """{'hours', 'fees', 'permits', 'other_fees', 'office_hours', 'attraction_fees'}: each a list of the agency's own sentences.
     H-R2 a hit needs a subject; H-R3 hunting-season hours are a separate label; H-R4 a fee for one attraction is labelled so."""
-    out = {'hours': [], 'fees': [], 'permits': [], 'other_fees': [], 'office_hours': [], 'hunting_hours': [], 'attraction_fees': [], 'attraction_hours': [], 'campground_hours': []}
+    out = {'hours': [], 'fees': [], 'permits': [], 'other_fees': [], 'office_hours': [], 'hunting_hours': [], 'attraction_fees': [], 'attraction_hours': [], 'campground_hours': [], 'season': []}
     seen = set()
     cn = [w for w in T.core(park_name).split() if len(w) > 2][:3]
     def put(k, s):
@@ -119,6 +121,7 @@ def facts_in(text, park_name='', url=''):
             elif OFFICE.search(sen) and not re.search(r'\b(park|area|refuge|forest|grounds|gates?|trails?|day[- ]use)\b', sen, re.I): put('office_hours', sen)
             elif HOURS_BAD.search(sen): continue
             elif BUILDING.search(sen) and not re.search(r'\b(park|area|refuge|forest|grounds|gates?|trails?|day[- ]use|preserve|sanctuary|property|lands?)\b', sen, re.I): put('attraction_hours', sen)   # 'The Memorial Building closes at 4:30 pm' is that building's time
+            elif not CLOCK.search(sen) and not DAYWORD.search(sen): put('season', sen)   # v10 (Brandon 'Season'): 'Open year-round' = a season fact, not hours
             else: put('hours', sen)
         if FEE_RX.search(sen):
             if not has_subject or MILLION.search(sen): continue
@@ -138,7 +141,7 @@ def one_park(ref, park, web, docs, ky):
     kl = (HKEY.get(ref) or {}).get('link')   # Kentucky's hand-checked hours page (answer key) is read too: it IS the agency's page
     if kl and kl.startswith('http') and kl not in [p[0] for p in pages]: pages.insert(0, (kl, 'hours page (Kentucky hours answer key)'))
     if not pages: r['status'] = 'no official page on file'; STAT['no_page'] += 1; return r
-    for k in ('office_hours', 'hunting_hours', 'attraction_fees', 'attraction_hours', 'campground_hours'): r[k] = []
+    for k in ('office_hours', 'hunting_hours', 'attraction_fees', 'attraction_hours', 'campground_hours', 'season'): r[k] = []
     for u, why in pages:
         if late(): break
         if TOPIC_PAGE.search(u): r['pages'].append({'url': u, 'why': why, 'status': 'skipped: another topic (field trips / programs / seasons)'}); continue
@@ -155,19 +158,20 @@ def one_park(ref, park, web, docs, ky):
         if os.environ.get('TEST') == '1' and ref in HKEY and (HKEY[ref].get('hours') or HKEY[ref].get('fee')) and not (f['hours'] or f['fees']):   # the gate's parks: keep what the page said around 'hours' / 'open' so a MISS can be read
             m = re.search(r'(?i)(hours|open|admission|fee)', text); r.setdefault('debug', []).append({'url': u, 'kind': kind, 'text': ' '.join(text[max(0, (m.start() if m else 0) - 200):(m.start() if m else 0) + 600].split())})
         tour = bool(TOURISM.search(u))   # H-R5: a tourism site is state government, not the park's agency: labelled, kept apart
-        for k in ('hours', 'fees', 'permits', 'other_fees', 'office_hours', 'hunting_hours', 'attraction_fees', 'attraction_hours', 'campground_hours'):
+        for k in ('hours', 'fees', 'permits', 'other_fees', 'office_hours', 'hunting_hours', 'attraction_fees', 'attraction_hours', 'campground_hours', 'season'):
             for s in f[k]:
                 row = {'line': s, 'url': u, 'read': TODAY}
                 if tour: row['src_note'] = 'tourism site (state government), not the park agency'
                 if len(r[k]) < 6: r[k].append(row)
         if r['hours'] and r['fees']: break
-    for k in ('hours', 'fees', 'permits', 'office_hours', 'attraction_fees', 'attraction_hours', 'campground_hours', 'hunting_hours', 'other_fees'):
+    for k in ('hours', 'fees', 'permits', 'office_hours', 'attraction_fees', 'attraction_hours', 'campground_hours', 'hunting_hours', 'other_fees', 'season'):
         seen = set(); kept = []
         for x in r.get(k) or []:
             key = re.sub(r'[^a-z0-9]', '', x['line'].lower())[:70]
             if key in seen: continue
             seen.add(key); kept.append(x)
         r[k] = kept
+    if not r['hours'] and any(p['status'] == 'ok' for p in r['pages']): r['hours_note'] = 'the agency pages we read print no hours' + (' (season only)' if r.get('season') else '')   # chat 11: say it, never an empty box
     r['status'] = 'ok' if (r['hours'] or r['fees'] or r['permits']) else ('nothing found' if any(p['status'] == 'ok' for p in r['pages']) else 'no page opened')
     for k in ('hours', 'fees', 'permits'):
         if r[k]: STAT[k] += 1
@@ -196,18 +200,21 @@ def run_area(area, state, web, docs_all, ky):
         except Exception as e:  # noqa: BLE001
             STAT['errors'] += 1; D['parks'][ref] = {'n': parks[ref]['n'], 'status': 'bot error: ' + str(e)[:80], 'checked': TODAY, 'ver': VER, 'hours': [], 'fees': [], 'permits': []}
         done += 1
+    _old = T.load(f, {}) or {}; before = {'hours_lines': sum(len(r.get('hours') or []) for r in (_old.get('parks') or {}).values())}
     D['read'] = TODAY; D['counts'] = counts(D)
     T.save(f, D)
+    notice(f"{area} COUNT: hours lines {before.get('hours_lines', '?')} -> {D['counts']['hours_lines']}, season lines {D['counts']['season_lines']} (Brandon 'Season' ruling)")
     left = sum(1 for r in parks if r not in D['parks'])
     state['areas'][area] = {'status': 'done' if left == 0 else 'partial', 'parks': len(parks), 'checked': len(D['parks']), 'left': left, 'updated': TODAY, 'counts': D['counts']}
     notice(f"{area}: {done} parks read this chunk ({fresh} fresh, {left} left) · {D['counts']}")
 
 
 def counts(D):
-    c = {'parks': len(D['parks']), 'hours': 0, 'fees': 0, 'permits': 0, 'nothing': 0, 'no_page': 0}
+    c = {'parks': len(D['parks']), 'hours': 0, 'fees': 0, 'permits': 0, 'nothing': 0, 'no_page': 0, 'season': 0, 'hours_lines': 0, 'season_lines': 0}
     for r in D['parks'].values():
-        for k in ('hours', 'fees', 'permits'):
+        for k in ('hours', 'fees', 'permits', 'season'):
             if r.get(k): c[k] += 1
+        c['hours_lines'] += len(r.get('hours') or []); c['season_lines'] += len(r.get('season') or [])
         if r.get('status') == 'nothing found': c['nothing'] += 1
         if 'no official page' in str(r.get('status')): c['no_page'] += 1
     return c
