@@ -9,6 +9,29 @@
    "area": "ky",
    "state": "US-KY",
    "refs": [
+    "US-10107",
+    "US-4484"
+   ],
+   "names": {
+    "US-10107": "Big South Fork National Wild and Scenic River",
+    "US-4484": "Daniel Boone National Forest"
+   },
+   "what": "not sure",
+   "kind": "area",
+   "size": "2509.9 ac",
+   "sort": 2509.9,
+   "reason": "the outlines overlap, but the Forest Service ownership map (Basic Ownership, 2015 data) does not show this patch as the agency's land (that map may be out of date): check the official map; PAD-US cross-check",
+   "id": "US-10107+US-4484@area@36.624,-84.565",
+   "sources": {
+    "US-10107": "read live from the agency 2026-10-29 \u00b7 https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_Wild_RIvers_Corridors_WM_gdb/FeatureServer/0 (item efefe7342aa4460aaf8697e17deb4146, read 2026-10-29)",
+    "US-4484": "read live from the agency 2026-10-29"
+   },
+   "checked": "2026-10-29"
+  },
+  {
+   "area": "ky",
+   "state": "US-KY",
+   "refs": [
     "US-12079",
     "US-4484"
    ],
@@ -45,6 +68,48 @@
    "sort": 479.6,
    "reason": "water only: boat or kayak",
    "id": "US-0050+US-10105@area@channel@37.220,-86.062",
+   "sources": {
+    "USGS water": "saved copy of the USGS map, read 2026-10-28"
+   },
+   "checked": "2026-10-29"
+  },
+  {
+   "area": "ky",
+   "state": "US-KY",
+   "refs": [
+    "US-10103",
+    "US-11181"
+   ],
+   "names": {},
+   "what": "not sure",
+   "kind": "trail",
+   "size": "14520 yd of line",
+   "sort": 331.9,
+   "reason": "no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
+   "id": "US-10103+US-11181@trail@36.849,-84.330",
+   "sources": {
+    "US-10103": "read live from the agency 2026-10-29 \u00b7 https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_Wild_RIvers_Corridors_WM_gdb/FeatureServer/0 (item efefe7342aa4460aaf8697e17deb4146, read 2026-10-29)",
+    "US-11181": "official line (trails bot)"
+   },
+   "checked": "2026-10-29"
+  },
+  {
+   "area": "ky",
+   "state": "US-KY",
+   "refs": [
+    "US-10103",
+    "US-4484"
+   ],
+   "names": {
+    "US-10103": "The Cumberland River Wilderness Area",
+    "US-4484": "Daniel Boone National Forest"
+   },
+   "what": "water only (boat spot): is there really no land?",
+   "kind": "area",
+   "size": "220.0 ac",
+   "sort": 220.0,
+   "reason": "water only: boat or kayak",
+   "id": "US-10103+US-4484@area@channel@36.842,-84.344",
    "sources": {
     "USGS water": "saved copy of the USGS map, read 2026-10-28"
    },
@@ -93,28 +158,6 @@
    "sources": {
     "US-0019": "read live from the agency 2026-10-29",
     "US-10164": "read live from the agency 2026-10-29",
-    "USGS water": "saved copy of the USGS map, read 2026-10-28"
-   },
-   "checked": "2026-10-29"
-  },
-  {
-   "area": "ky",
-   "state": "US-KY",
-   "refs": [
-    "US-10103",
-    "US-4484"
-   ],
-   "names": {
-    "US-10103": "The Cumberland River Wilderness Area",
-    "US-4484": "Daniel Boone National Forest"
-   },
-   "what": "water only (boat spot): is there really no land?",
-   "kind": "area",
-   "size": "81.9 ac",
-   "sort": 81.9,
-   "reason": "water only: boat or kayak",
-   "id": "US-10103+US-4484@area@channel@36.758,-84.289",
-   "sources": {
     "USGS water": "saved copy of the USGS map, read 2026-10-28"
    },
    "checked": "2026-10-29"
@@ -661,25 +704,6 @@
   },
   {
    "area": "ky",
-   "state": "",
-   "refs": [
-    "US-10103",
-    "US-1277"
-   ],
-   "names": {},
-   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
-   "kind": "pair",
-   "size": "18 same-day activations",
-   "sort": 18.0,
-   "reason": "dropped in pass 2",
-   "id": "US-10103+US-1277@pota",
-   "sources": {
-    "POTA history": "activated together by the same call on the same day (18x, POTA history) / old guide (Oct 13 Kentucky 2-fers guide)"
-   },
-   "checked": "2026-10-29"
-  },
-  {
-   "area": "ky",
    "state": "US-KY",
    "refs": [
     "US-10128",
@@ -695,25 +719,6 @@
    "sources": {
     "US-10128": "read live from the agency 2026-10-29",
     "US-4572": "official line (trails bot)"
-   },
-   "checked": "2026-10-29"
-  },
-  {
-   "area": "ky",
-   "state": "",
-   "refs": [
-    "US-0686",
-    "US-10107"
-   ],
-   "names": {},
-   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
-   "kind": "pair",
-   "size": "17 same-day activations",
-   "sort": 17.0,
-   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
-   "id": "US-0686+US-10107@pota",
-   "sources": {
-    "POTA history": "activated together by the same call on the same day (17x, POTA history) / old guide (Oct 13 Kentucky 2-fers guide)"
    },
    "checked": "2026-10-29"
   },
@@ -957,7 +962,7 @@
    "kind": "pair",
    "size": "11 same-day activations",
    "sort": 11.0,
-   "reason": "dropped in pass 3",
+   "reason": "dropped: Big South Fork is Park Service land beside Forest Service land (ruling Oct 27)",
    "id": "US-0686+US-4484@pota",
    "sources": {
     "POTA history": "activated together by the same call on the same day (11x, POTA history) / outlines about 0 m apart"
@@ -1228,7 +1233,7 @@
    "kind": "pair",
    "size": "8 same-day activations",
    "sort": 8.0,
-   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "reason": "dropped: Big South Fork is Park Service land beside Forest Service land (ruling Oct 27)",
    "id": "US-10107+US-4484@pota",
    "sources": {
     "POTA history": "activated together by the same call on the same day (8x, POTA history) / outlines about 0 m apart"
@@ -1479,6 +1484,25 @@
    "id": "US-4688+US-7968@pota",
    "sources": {
     "POTA history": "activated together by the same call on the same day (6x, POTA history) / outlines about 952 m apart"
+   },
+   "checked": "2026-10-29"
+  },
+  {
+   "area": "ky",
+   "state": "",
+   "refs": [
+    "US-10103",
+    "US-11181"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "5 same-day activations",
+   "sort": 5.0,
+   "reason": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "id": "US-10103+US-11181@pota",
+   "sources": {
+    "POTA history": "activated together by the same call on the same day (5x, POTA history) / hand list (ky-trail-parks.json) / old guide (Oct 13 Kentucky 2-fers guide)"
    },
    "checked": "2026-10-29"
   },

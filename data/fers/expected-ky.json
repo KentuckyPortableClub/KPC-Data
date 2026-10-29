@@ -12,9 +12,9 @@
  "date": "2026-10-29",
  "pass": true,
  "counts": {
-  "FOUND": 88,
-  "DROPPED": 77,
-  "NEVER LOOKED AT": 266
+  "FOUND": 94,
+  "DROPPED": 76,
+  "NEVER LOOKED AT": 261
  },
  "FOUND": [
   {
@@ -54,6 +54,17 @@
   {
    "refs": [
     "US-0686",
+    "US-10107"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (17x, POTA history)",
+    "old guide (Oct 13 Kentucky 2-fers guide)"
+   ],
+   "row": "US-0686+US-10107@area@36.624,-84.565"
+  },
+  {
+   "refs": [
+    "US-0686",
     "US-11181"
    ],
    "why_expected": [
@@ -84,6 +95,28 @@
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
    "row": "US-0703+US-3790@same land@36.503,-88.061"
+  },
+  {
+   "refs": [
+    "US-0703",
+    "US-3790",
+    "US-3791"
+   ],
+   "why_expected": [
+    "hand list (ky-trail-parks.json)"
+   ],
+   "row": "each pair has a row"
+  },
+  {
+   "refs": [
+    "US-0703",
+    "US-3791"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (7x, POTA history)",
+    "old guide (Oct 13 Kentucky 2-fers guide)"
+   ],
+   "row": "US-0703+US-3791@river@36.501,-88.068"
   },
   {
    "refs": [
@@ -162,6 +195,17 @@
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
    "row": "US-10102+US-7966@trail@37.082,-82.798"
+  },
+  {
+   "refs": [
+    "US-10103",
+    "US-1277"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (18x, POTA history)",
+    "old guide (Oct 13 Kentucky 2-fers guide)"
+   ],
+   "row": "US-10103+US-1277@area@36.837,-84.329"
   },
   {
    "refs": [
@@ -676,6 +720,17 @@
   },
   {
    "refs": [
+    "US-3790",
+    "US-3791"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (8x, POTA history)",
+    "old guide (Oct 13 Kentucky 2-fers guide)"
+   ],
+   "row": "US-3790+US-3791@river@36.501,-88.066"
+  },
+  {
+   "refs": [
     "US-3791",
     "US-3792"
    ],
@@ -887,6 +942,16 @@
   },
   {
    "refs": [
+    "US-3831",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "row": "US-3831+US-4572@river@38.738,-82.942"
+  },
+  {
+   "refs": [
     "US-3837",
     "US-4572"
    ],
@@ -1036,18 +1101,6 @@
   {
    "refs": [
     "US-0686",
-    "US-10107"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (17x, POTA history)",
-    "old guide (Oct 13 Kentucky 2-fers guide)"
-   ],
-   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
-   "rule": "rule 4 / rule 5"
-  },
-  {
-   "refs": [
-    "US-0686",
     "US-10111"
    ],
    "why_expected": [
@@ -1066,8 +1119,8 @@
     "activated together by the same call on the same day (11x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "dropped in pass 3",
-   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
+   "reason": "dropped: Big South Fork is Park Service land beside Forest Service land (ruling Oct 27)",
+   "rule": "Kentucky ruling (Brandon / HQ Oct 27)"
   },
   {
    "refs": [
@@ -1121,14 +1174,15 @@
   {
    "refs": [
     "US-10103",
-    "US-1277"
+    "US-11181"
    ],
    "why_expected": [
-    "activated together by the same call on the same day (18x, POTA history)",
+    "activated together by the same call on the same day (5x, POTA history)",
+    "hand list (ky-trail-parks.json)",
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
-   "reason": "dropped in pass 2",
-   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
+   "reason": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "rule": "rule 7 (NOT SURE is kept out)"
   },
   {
    "refs": [
@@ -1163,8 +1217,8 @@
     "activated together by the same call on the same day (8x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
-   "rule": "rule 4 / rule 5"
+   "reason": "dropped: Big South Fork is Park Service land beside Forest Service land (ruling Oct 27)",
+   "rule": "Kentucky ruling (Brandon / HQ Oct 27)"
   },
   {
    "refs": [
@@ -2026,28 +2080,6 @@
   },
   {
    "refs": [
-    "US-0703",
-    "US-3790",
-    "US-3791"
-   ],
-   "why_expected": [
-    "hand list (ky-trail-parks.json)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
-    "US-0703",
-    "US-3791"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (7x, POTA history)",
-    "old guide (Oct 13 Kentucky 2-fers guide)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
     "US-0724",
     "US-3791"
    ],
@@ -2276,18 +2308,6 @@
     "activated together by the same call on the same day (5x, POTA history)"
    ],
    "reason": "US-10102: Pine Mountain State Scenic Trail is a line park: no official trail line yet"
-  },
-  {
-   "refs": [
-    "US-10103",
-    "US-11181"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (5x, POTA history)",
-    "hand list (ky-trail-parks.json)",
-    "old guide (Oct 13 Kentucky 2-fers guide)"
-   ],
-   "reason": "US-11181: no official boundary"
   },
   {
    "refs": [
@@ -3867,17 +3887,6 @@
   },
   {
    "refs": [
-    "US-3790",
-    "US-3791"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (8x, POTA history)",
-    "old guide (Oct 13 Kentucky 2-fers guide)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
     "US-3791",
     "US-3795"
    ],
@@ -4351,16 +4360,6 @@
    ],
    "why_expected": [
     "activated together by the same call on the same day (4x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3831",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (5x, POTA history)"
    ],
    "reason": "US-4572: no official boundary"
   },
