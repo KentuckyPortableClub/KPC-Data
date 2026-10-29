@@ -11,7 +11,7 @@ ONE batch, run by hand (waiting-room workflow, mode 'release-approved') on the d
     state file goes through the waiting room's own checks (kpc_waiting_room.py) like any bot file: a file that fails is HELD;
   - nothing without an approval moves. Writes data/waiting/released.jsonl (what went out). Never fails.
   python3 kpc_release_approved.py [--dry]"""
-import json, math, os, pathlib, sys, time
+import json, math, os, pathlib, re, sys, time
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
 import kpc_waiting_room as W  # noqa: E402
 
@@ -60,7 +60,9 @@ def main():
     items = A.get('items') or []
     log = []
     for it in items:
-        if not str(it.get('chat11') or '').strip(): log.append({'item': it, 'result': 'skipped: no chat 11 verdict'}); continue
+        v = str(it.get('chat11') or '').strip()
+        if not (re.match(r'^(YES|PASS)\b', v, re.I) and str(it.get('by') or '').strip().lower() == 'chat 11'):   # Brandon 5:16 PM: 'Waiting Room 11 has to approve': only chat 11's own written YES / PASS
+            log.append({'item': it, 'result': 'skipped: no YES / PASS written by chat 11'}); continue
         if it.get('what') == 'keyed-parking':
             files, n = keyed_parking()
             for rel, new, k in files:
