@@ -2,21 +2,21 @@
  "about": "Park truth checker: official acreage vs our outline, handover hints, second-witness score. Review lists only: nothing here changes a key or a card.",
  "area": "US-VA",
  "counts": {
-  "agree": 6,
+  "agree": 5,
   "handover_hints": 16,
   "no_page": 0,
   "no_size": 35,
-  "off": 73,
+  "off": 58,
   "ours_unknown": 0,
   "parks": 184,
   "retired": 0,
-  "unsure": 42,
+  "unsure": 58,
   "weak": 5,
   "with_outline": 156
  },
  "parks": {
   "US-0016": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Colonial National Historical Park",
    "official": null,
@@ -115,24 +115,22 @@
    },
    "sizes": [],
    "t": "National Historical Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no size on page"
   },
   "US-0019": {
-   "checked": "2026-10-28",
+   "cause": "whole park compared (POTA lists it in 2 states: {'US-TN': 5365, 'US-VA': 15109})",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Cumberland Gap National Historical Park",
-   "official": {
-    "acres": 14000.0,
-    "as": "14,000 acres",
-    "clean": false,
-    "line": "ioneers. Walk where 300,000 people crossed the Appalachians to settle America. Explore 85 miles of trails and 14,000 acres of wilderness. Stand in 3 states at once. Explore a cave, see Hensley Settlement, or camp under the stars. Co",
-    "read": "2026-10-28",
-    "url": "https://www.nps.gov/cuga/index.htm",
-    "why": "history"
-   },
+   "note": "whole park compared (POTA lists it in 2 states: {'US-TN': 5365, 'US-VA': 15109})",
+   "official": null,
    "ours": {
-    "acres": 15109,
+    "acres": 20474,
+    "acres_by_state": {
+     "US-TN": 5365,
+     "US-VA": 15109
+    },
     "manager": "",
     "pieces": [
      [
@@ -180,7 +178,8 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 0
+    "unknown_pieces": 0,
+    "whole_park": true
    },
    "owner_now": null,
    "pages": [
@@ -220,13 +219,12 @@
      "why": "NPS news releases"
     }
    ],
-   "pct": 8,
-   "same_agency": false,
-   "score": 8,
+   "pct": null,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -241,12 +239,12 @@
     }
    ],
    "t": "National Historical Park",
-   "ver": 7,
-   "verdict": "agree"
+   "ver": 8,
+   "verdict": "unsure"
   },
   "US-0064": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Shenandoah National Park",
    "official": {
@@ -254,7 +252,7 @@
     "as": "200,000 acres",
     "clean": false,
     "line": "ing with cascading waterfalls, spectacular vistas, fields of wildflowers, and quiet wooded hollows. With over 200,000 acres of protected lands that are haven to deer, songbirds, and black bear, there's so much to explore...and your j",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.nps.gov/shen/index.htm",
     "why": "total-looking"
    },
@@ -422,12 +420,12 @@
     }
    ],
    "t": "National Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-0560": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Back Bay National Wildlife Refuge",
    "official": {
@@ -435,7 +433,7 @@
     "as": "4,589 acre",
     "clean": true,
     "line": "ed on June 6, 1938 in the southeastern corner of the City of Virginia Beach (then Princess Anne County), as a 4,589-acre refuge. The original 1938 Executive Order established Back Bay NWR “….as a refuge and breeding ground for mig",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.fws.gov/refuge/back-bay/about-us",
     "why": "clean total"
    },
@@ -550,11 +548,11 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-0561": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Chincoteague National Wildlife Refuge",
    "official": null,
@@ -653,11 +651,11 @@
    },
    "sizes": [],
    "t": "National Wildlife Refuge",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no size on page"
   },
   "US-0562": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [
     {
      "date_hint": null,
@@ -766,12 +764,12 @@
    },
    "sizes": [],
    "t": "National Wildlife Refuge",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no size on page"
   },
   "US-0563": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [
     {
      "date_hint": null,
@@ -788,7 +786,7 @@
     "as": "207 acre",
     "clean": false,
     "line": "ively remote area of upland forests and freshwater marshes that extend into the Potomac River. Great Marsh, a 207-acre tidal freshwater marsh, is a valuable feature of the refuge, and is home to one of Virginia’s largest great b",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.fws.gov/refuge/elizabeth-hartwell-mason-neck/about-us",
     "why": "total-looking"
    },
@@ -892,12 +890,12 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-0564": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Featherstone National Wildlife Refuge",
    "official": {
@@ -905,7 +903,7 @@
     "as": "325 acre",
     "clean": true,
     "line": "sit Us Activities Rules & Policies Events News Library Species Map Featherstone National Wildlife Refuge is a 325 acre sanctuary of upland forest and freshwater tidal marsh, which provides critical habitat for migratory birds, w",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.fws.gov/refuge/featherstone/",
     "why": "clean total"
    },
@@ -1002,9 +1000,9 @@
      "as": "164 acres",
      "clean": false,
      "line": "that land to officially establish the refuge. At the time, Featherstone National Wildlife Refuge consisted of 164 acres of land along Farm Creek in eastern Prince William County. An additional 161 acres of land were acquired for",
-     "total_like": true,
+     "total_like": false,
      "url": "https://www.fws.gov/refuge/featherstone/about-us",
-     "why": "total-looking"
+     "why": "part (a lake, a purchase, a campground…)"
     },
     {
      "acres": 161.0,
@@ -1017,12 +1015,13 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-0565": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-10-29",
    "n": "Fisherman Island National Wildlife Refuge",
    "official": null,
    "ours": {
@@ -1100,12 +1099,12 @@
    },
    "sizes": [],
    "t": "National Wildlife Refuge",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no size on page"
   },
   "US-0566": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [
     {
      "date_hint": "1974",
@@ -1117,17 +1116,22 @@
     }
    ],
    "n": "Great Dismal Swamp National Wildlife Refuge",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-NC': 82768, 'US-VA': 253119})",
    "official": {
     "acres": 113000.0,
     "as": "113,000 acres",
     "clean": false,
     "line": "among a bustling metropolis with a population of nearly 1,000,000 people in the surrounding communities. With 113,000 acres of forested wetlands and over 40 miles of trails, the refuge provides an opportunity for solitude and respite",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.fws.gov/refuge/great-dismal-swamp/about-us",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 253119,
+    "acres": 335887,
+    "acres_by_state": {
+     "US-NC": 82768,
+     "US-VA": 253119
+    },
     "manager": "",
     "pieces": [
      [
@@ -1181,7 +1185,8 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 0
+    "unknown_pieces": 0,
+    "whole_park": true
    },
    "owner_now": "The Nature Conservancy",
    "pages": [
@@ -1196,7 +1201,7 @@
      "why": "about / history page of the park's site"
     }
    ],
-   "pct": 124,
+   "pct": 197,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -1244,12 +1249,12 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-0567": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "James River National Wildlife Refuge",
    "official": {
@@ -1257,7 +1262,7 @@
     "as": "4,800 acres",
     "clean": true,
     "line": "County, Virginia, and approximately 30 miles southeast of Richmond, the State capital. The refuge encompasses 4,800 acres of pine-dominated, moist hardwood, and floodplain forests; freshwater marsh and shrub swamp; aquatic habitats",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.fws.gov/refuge/james_river/",
     "why": "clean total"
    },
@@ -1367,12 +1372,12 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-0569": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Occoquan Bay National Wildlife Refuge",
    "official": {
@@ -1380,7 +1385,7 @@
     "as": "642 acres",
     "clean": false,
     "line": "arn, hunt, fish, or just watch wildlife Occoquan Bay National Wildlife Refuge has opportunities for you. With 642 acres, the refuge has 4 miles of trails, an information center, interpretive kiosks, a photography blind, a gazebo,",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "http://www.fws.gov/refuge/occoquan-bay/visit-us",
     "why": "total-looking"
    },
@@ -1485,12 +1490,12 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-0572": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Rappahannock River Valley National Wildlife Refuge",
    "official": {
@@ -1498,7 +1503,7 @@
     "as": "20,000 acres",
     "clean": false,
     "line": "and water spanning Essex, King George, Caroline, Richmond, and Westmoreland counties. Our goal is to protect 20,000 acres of important wildlife habitats along the Rappahannock River and its major tributaries. Our partners and volun",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.fws.gov/refuge/rappahannock-river-valley/about-us",
     "why": "total-looking"
    },
@@ -1622,12 +1627,13 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-0573": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-10-29",
    "n": "Wallops Island National Wildlife Refuge",
    "official": null,
    "ours": {
@@ -1685,12 +1691,12 @@
    },
    "sizes": [],
    "t": "National Wildlife Refuge",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no size on page"
   },
   "US-0577": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Clinch River State Park",
    "official": {
@@ -1698,7 +1704,7 @@
     "as": "400 acres",
     "clean": true,
     "line": "ional resources. It will be the first blueway state park in Virginia. It will consist of several smaller (250-400 acres) anchor properties connected by multiple canoe/kayak access points along a 100-mile stretch of the Clinch Riv",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/clinch-river",
     "why": "clean total"
    },
@@ -1824,17 +1830,23 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-0670": {
-   "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-10-28",
+   "cause": "whole park compared (POTA lists it in 3 states: {'US-DC': 135, 'US-MD': 2379, 'US-VA': 6253})",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "George Washington Memorial Parkway",
+   "note": "whole park compared (POTA lists it in 3 states: {'US-DC': 135, 'US-MD': 2379, 'US-VA': 6253})",
    "official": null,
    "ours": {
-    "acres": 6253,
+    "acres": 8767,
+    "acres_by_state": {
+     "US-DC": 135,
+     "US-MD": 2379,
+     "US-VA": 6253
+    },
     "manager": "",
     "pieces": [
      [
@@ -1858,7 +1870,8 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 1,
+    "whole_park": true
    },
    "owner_now": null,
    "pages": [
@@ -1900,16 +1913,21 @@
     }
    ],
    "t": "Memorial Parkway",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-0671": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Assateague Island National Seashore",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-MD': 26977, 'US-VA': 33174})",
    "official": null,
    "ours": {
-    "acres": 33174,
+    "acres": 60151,
+    "acres_by_state": {
+     "US-MD": 26977,
+     "US-VA": 33174
+    },
     "manager": "",
     "pieces": [
      [
@@ -1927,7 +1945,8 @@
     ],
     "pin": "well outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 0
+    "unknown_pieces": 0,
+    "whole_park": true
    },
    "owner_now": null,
    "pages": [
@@ -1967,12 +1986,12 @@
    },
    "sizes": [],
    "t": "National Seashore",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no size on page"
   },
   "US-0691": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Prince William Forest Park",
    "official": {
@@ -1980,7 +1999,7 @@
     "as": "1940 acres",
     "clean": false,
     "line": "o Create Recreational Demonstration Area Program 1936: Bill to Propose Chopawamsic Recreational Demonstration Area 1940: Law to Make Chopawamsic Recreational Demonstration Area a Unit of the National Park Service 1948: Law to Cha",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.nps.gov/prwi/learn/management/lawsandpolicies.htm",
     "why": "total-looking"
    },
@@ -2090,11 +2109,11 @@
     }
    ],
    "t": "Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-0692": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Wolf Trap National Park",
    "official": null,
@@ -2151,11 +2170,11 @@
    },
    "sizes": [],
    "t": "National Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no size on page"
   },
   "US-0707": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Petersburg National Battlefield",
    "official": null,
@@ -2259,11 +2278,11 @@
    },
    "sizes": [],
    "t": "National Battlefield",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no size on page"
   },
   "US-0712": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [
     {
      "date_hint": "2018",
@@ -2376,11 +2395,11 @@
    },
    "sizes": [],
    "t": "National Battlefield",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no size on page"
   },
   "US-0713": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Richmond National Battlefield",
    "official": null,
@@ -2484,11 +2503,11 @@
    },
    "sizes": [],
    "t": "National Battlefield",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no size on page"
   },
   "US-0717": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Fredericksburg and Spotsylvania National Military Park",
    "official": null,
@@ -2545,11 +2564,11 @@
    },
    "sizes": [],
    "t": "National Military Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no size on page"
   },
   "US-0726": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Appomattox Court House National Historical Park",
    "official": null,
@@ -2653,11 +2672,11 @@
    },
    "sizes": [],
    "t": "National Historical Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no size on page"
   },
   "US-0730": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Cedar Creek and Belle Grove National Historical Park",
    "official": null,
@@ -2756,16 +2775,22 @@
    },
    "sizes": [],
    "t": "National Historical Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no size on page"
   },
   "US-0735": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Harpers Ferry National Historical Park",
+   "note": "whole park compared (POTA lists it in 3 states: {'US-MD': 798, 'US-WV': 2184, 'US-VA': 969})",
    "official": null,
    "ours": {
-    "acres": 969,
+    "acres": 3951,
+    "acres_by_state": {
+     "US-MD": 798,
+     "US-VA": 969,
+     "US-WV": 2184
+    },
     "manager": "",
     "pieces": [
      [
@@ -2801,7 +2826,8 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 0
+    "unknown_pieces": 0,
+    "whole_park": true
    },
    "owner_now": null,
    "pages": [
@@ -2846,12 +2872,12 @@
    },
    "sizes": [],
    "t": "National Historical Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no size on page"
   },
   "US-0844": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Maggie L. Walker National Historic Site",
    "official": {
@@ -2859,7 +2885,7 @@
     "as": "1978 Acre",
     "clean": false,
     "line": "L Walker National Historic Site Contact Us Park Statistics Designations National Historic Site - November 10, 1978 Acreage Gross Area Acres for FY 2016 - 1 Gross Area Acres for FY 2015 - 1 Visitation Total Recreation Visits for F",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.nps.gov/mawa/learn/management/statistics.htm",
     "why": "total-looking"
    },
@@ -2944,23 +2970,15 @@
     }
    ],
    "t": "National Historic Site",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-0905": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Booker T. Washington National Monument",
-   "official": {
-    "acres": 207.0,
-    "as": "207 acre",
-    "clean": false,
-    "line": "Booker T. Washington National Monument • Virginia Booker T. Washington was born a slave in April 1856 on the 207-acre farm of James Burroughs. After the Civil War, Washington became the first principal of Tuskegee Normal and In",
-    "read": "2026-10-28",
-    "url": "https://www.nps.gov/bowa/index.htm",
-    "why": "total-looking"
-   },
+   "official": null,
    "ours": {
     "acres": 483,
     "manager": "",
@@ -3015,6 +3033,16 @@
     },
     {
      "status": "ok",
+     "url": "https://www.nps.gov/bowa/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/bowa/planyourvisit/guidedtours.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
      "url": "https://www.nps.gov/bowa/learn/management/lawsandpolicies.htm",
      "why": "rules page (documents bot)"
     },
@@ -3029,13 +3057,12 @@
      "why": "NPS news releases"
     }
    ],
-   "pct": 133,
-   "same_agency": false,
-   "score": 6,
+   "pct": null,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -3044,18 +3071,27 @@
      "as": "207 acre",
      "clean": false,
      "line": "Booker T. Washington National Monument • Virginia Booker T. Washington was born a slave in April 1856 on the 207-acre farm of James Burroughs. After the Civil War, Washington became the first principal of Tuskegee Normal and In",
-     "total_like": true,
+     "total_like": false,
      "url": "https://www.nps.gov/bowa/index.htm",
-     "why": "total-looking"
+     "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
+     "acres": 207.0,
+     "as": "207 acre",
+     "clean": false,
+     "line": "ghs Plantation. In 1850, James and Elizabeth Burroughs brought their children and ten enslaved people to this 207-acre tobacco farm in southwestern Virginia. Though called a plantation, the property resembled the smaller farms t",
+     "total_like": false,
+     "url": "https://www.nps.gov/bowa/learn/index.htm",
+     "why": "history"
     }
    ],
    "t": "National Monument",
-   "ver": 7,
-   "verdict": "off"
+   "ver": 8,
+   "verdict": "unsure"
   },
   "US-0929": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 4 acres, no total words near it)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Fort Monroe National Monument",
    "official": {
@@ -3063,7 +3099,7 @@
     "as": "4 acres",
     "clean": false,
     "line": "the area. Justification for certain closures is based on the protection of cultural and natural resources. a. Area 4 (Formerly known as Dog Beach) (Permit required) b. Marsh areas c. Rip Rap Rocks d. Building #212, 232, 214, En",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.nps.gov/fomr/learn/management/lawsandpolicies.htm",
     "why": "no total words near it"
    },
@@ -3137,12 +3173,12 @@
     }
    ],
    "t": "National Monument",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-0935": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "George Washington Birthplace National Monument",
    "official": {
@@ -3150,7 +3186,7 @@
     "as": "551 acres",
     "clean": false,
     "line": "ia George Washington Birthplace National Monument is located in the Northern Neck of Virginia. It encompasses 551 acres of land where seven generations of the Washington family lived and where George Washington was born in 1732.",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.nps.gov/gewa/index.htm",
     "why": "total-looking"
    },
@@ -3219,11 +3255,11 @@
     }
    ],
    "t": "National Monument",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-10015": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Accotink Bay Wildlife Refuge",
    "official": {
@@ -3231,7 +3267,7 @@
     "as": "1,200 acre",
     "clean": false,
     "line": "d & Wildlife Trail Piedmont Region Mason Neck Loop Accotink Bay Wildlife Refuge, Fort Belvoir Description The 1,200-acre Accotink Bay Wildlife Refuge offers well-maintained trails through deciduous forests that descend to the bay",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://dwr.virginia.gov/vbwt/sites/accotink-bay-wildlife-refuge-fort-belvoir/",
     "why": "total-looking"
    },
@@ -3284,22 +3320,22 @@
     }
    ],
    "t": "Wildlife Refuge",
-   "ver": 7,
+   "ver": 8,
    "verdict": "agree"
   },
   "US-10507": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Rock Castle Gorge National Recreation Trail",
    "ours": null,
    "score": null,
    "t": "National Recreation Trail",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no outline"
   },
   "US-11672": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Harrison Lake National Fish Hatchery",
    "official": {
@@ -3307,7 +3343,7 @@
     "as": "444 acre",
     "clean": true,
     "line": "sion 11110 Kimages Road Charles City, VA 23030-2844 Plan Your Visit Harrison Lake National Fish Hatchery is a 444-acre facility of the U.S. Fish and Wildlife Service located in the quiet rural setting of Virginia&#x27;s historic",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.fws.gov/fish-hatchery/harrison-lake",
     "why": "clean total"
    },
@@ -3405,12 +3441,12 @@
     }
    ],
    "t": "National Fish Hatchery",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-11719": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Culpeper Battlefield State Park",
    "official": {
@@ -3418,7 +3454,7 @@
     "as": "2,500 acres",
     "clean": false,
     "line": "fields State Park is Virginia&rsquo;s 43rd state park. This park will enable visitors to experience more than 2,500 acres of historic battlefield land. These properties were preserved by the American Battlefield Trust and the Brand",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/culpeper-battlefields",
     "why": "total-looking"
    },
@@ -3514,12 +3550,12 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-12716": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Hayfields State Park",
    "official": {
@@ -3527,7 +3563,7 @@
     "as": "1034 acres",
     "clean": false,
     "line": "n. Look for a straight gravel road flanked by a long line of pine trees (this is 524 Hayfields Ln). Park Size 1034 acres Share this page Follow us Cabins, camping OVERNIGHT FACILITIES There are no overnight facilities at this time",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/hayfields",
     "why": "total-looking"
    },
@@ -3614,12 +3650,12 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-1290": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 16,000 acre, no total words near it)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Bear Creek Lake State Park",
    "official": {
@@ -3627,7 +3663,7 @@
     "as": "16,000 acre",
     "clean": false,
     "line": "picnicking, an archery range and playgrounds. Guests also enjoy the park's trails and access to the adjoining 16,000-acre Cumberland State Forest, including the 14-mile Cumberland Multi-use Trail, which is available for hiking, bik",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/bear-creek-lake",
     "why": "no total words near it"
    },
@@ -3771,12 +3807,12 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-1291": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Belle Isle State Park",
    "official": {
@@ -3784,7 +3820,7 @@
     "as": "33 acre",
     "clean": false,
     "line": "f Belle Isle's overnight accommodations . Lodges | Bunkhouse | Camping Lodges The Bel Air Overnight Area is a 33-acre peninsula of land at the mouth of Deep Creek in Lancaster County. Views of beautiful sunsets over the Rappaha",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/belle-isle",
     "why": "total-looking"
    },
@@ -3892,11 +3928,11 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-1292": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Breaks Interstate State Park",
    "official": null,
@@ -3961,12 +3997,12 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no size on page"
   },
   "US-1293": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 2,587 acres, no total words near it)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Caledon State Park",
    "official": {
@@ -3974,7 +4010,7 @@
     "as": "2,587 acres",
     "clean": false,
     "line": "r, 30 minutes; Tidewater/Norfolk/Virginia Beach, 3 hours, 30 minutes; Roanoke, 3 hours, 30 minutes. Park Size 2,587 acres. Share this page Follow us Cabins, camping OVERNIGHT FACILITIES Enjoy a unique and peaceful camping experienc",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/caledon",
     "why": "no total words near it"
    },
@@ -4088,12 +4124,12 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-1294": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 1,947 acres, no total words near it)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Chippokes Plantation State Park",
    "official": {
@@ -4101,7 +4137,7 @@
     "as": "1,947 acres",
     "clean": false,
     "line": "ia: 2 - 3 hours; Richmond: 1.5 hours; Tidewater/Norfolk/Virginia Beach: 1.5 hours; Roanoke: 4 hours Park Size 1,947 acres. Share this page Follow us Cabins, camping OVERNIGHT FACILITIES Cabins, yurts and camping. For information on",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/chippokes-plantation",
     "why": "no total words near it"
    },
@@ -4233,12 +4269,12 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-1295": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Claytor Lake State Park",
    "official": {
@@ -4246,7 +4282,7 @@
     "as": "472 acres",
     "clean": false,
     "line": "hours; Roanoke, 1 hour List of in-park GPS addresses of amenities See a Google map of the amenities Park Size 472 acres. Lake size, 4,500 acres; 21 miles long. The park has approximately four miles of lake frontage. Share this pa",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/claytor-lake",
     "why": "total-looking"
    },
@@ -4377,12 +4413,12 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-1296": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 6,500 acres, no total words near it)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Douthat State Park",
    "official": {
@@ -4390,7 +4426,7 @@
     "as": "6,500 acres",
     "clean": false,
     "line": "n Roanoke. Also be sure to tour the Dixie Caverns. White Sulphur Springs, W. Va .: The Greenbrier, nestled in 6,500 acres of the Alleghany Mountains, features golf, tennis, horseback riding, mineral baths and spacious accommodation",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/douthat",
     "why": "no total words near it"
    },
@@ -4558,12 +4594,12 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-1297": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Fairy Stone State Park",
    "official": {
@@ -4571,7 +4607,7 @@
     "as": "168 acre",
     "clean": false,
     "line": "swimming beach. Swimming elsewhere in the park is prohibited. Click here for park fees . FISHING, BOATING The 168-acre Fairy Stone Lake is great for family fishing and boating. Paddle this serene lake in your canoe or kayak. Boa",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/fairy-stone",
     "why": "total-looking"
    },
@@ -4714,12 +4750,12 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-1298": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 4,321 acres, no total words near it)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "False Cape State Park",
    "official": {
@@ -4727,7 +4763,7 @@
     "as": "4,321 acres",
     "clean": false,
     "line": "Drive Time: From Virginia Beach's oceanfront to Little Island city parking lot is about 40 minutes. Park Size 4,321 acres. Beach Size: 5.9 miles of beachfront, extending to the North Carolina line. Share this page Follow us Cabins,",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/false-cape",
     "why": "no total words near it"
    },
@@ -4859,12 +4895,12 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-1299": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 2,888 acres, no total words near it)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "First Landing State Park",
    "official": {
@@ -4872,7 +4908,7 @@
     "as": "2,888 acres",
     "clean": false,
     "line": "rfolk/Virginia Beach, 20-30 minutes (this facility is in the area); Roanoke, five and a half hours. Park Size 2,888 acres; 1.5 miles of Chesapeake Bay beach Share this page Follow us Cabins, camping OVERNIGHT FACILITIES For informa",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/first-landing",
     "why": "no total words near it"
    },
@@ -4971,12 +5007,12 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-1300": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 4,520 acres, no total words near it)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [
     {
      "date_hint": null,
@@ -4993,7 +5029,7 @@
     "as": "4,520 acres",
     "clean": false,
     "line": "ater, Norfolk, Virginia Beach, 7.5 hours; TriCities, Tennessee, 1.5 hours; Winston-Salem, 1.5 hours Park Size 4,520 acres. Various elevation: Entrance - 3,698 feet; Visitor Center - 4,953 feet; Little Pinnacle - 5,089 feet. Share t",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/grayson-highlands",
     "why": "no total words near it"
    },
@@ -5107,12 +5143,12 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-1301": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 1,291 acres, no total words near it)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "High Bridge Trail State Park",
    "official": {
@@ -5120,7 +5156,7 @@
     "as": "1,291 acres",
     "clean": false,
     "line": "dash; Portajohn &ndash; Mile Marker 21.9 W &ndash; Located at the parking lot at 1779 Pamplin Road. Park Size 1,291 acres. Share this page Follow us Cabins, camping OVERNIGHT FACILITIES There are no overnight facilities. For inform",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/high-bridge-trail",
     "why": "no total words near it"
    },
@@ -5234,12 +5270,12 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-1302": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 560 acres, no total words near it)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Holliday Lake State Park",
    "official": {
@@ -5247,7 +5283,7 @@
     "as": "560 acres",
     "clean": false,
     "line": "a half hours; Richmond, two hours; Tidewater/Norfolk/Virginia Beach, four hours; Roanoke, two hours Park Size 560 acres. Lake: 119 acres. Share this page Follow us Cabins, camping OVERNIGHT FACILITIES For information on the avail",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/holliday-lake",
     "why": "no total words near it"
    },
@@ -5370,22 +5406,22 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-1303": {
-   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-10-28",
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 3,334 acres, no total words near it)",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Hungry Mother State Park",
    "official": {
-    "acres": 108.0,
-    "as": "108 acre",
+    "acres": 3334.0,
+    "as": "3,334 acres",
     "clean": false,
-    "line": "weekends and holidays. Operating hours are weather-dependent. Click here for park fees. FISHING, BOATING The 108-acre Hungry Mother Lake within the park supports a host of sport fish, including largemouth, smallmouth, hybrid st",
-    "read": "2026-10-28",
+    "line": "ginia Beach, six hours; Roanoke, two hours; Bristol, Va., 45 minutes; Charlotte, N.C., three hours. Park Size 3,334 acres. The lake is 108 acres. Share this page Follow us Cabins, camping OVERNIGHT FACILITIES Cabins, a lodge, yurts",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/hungry-mother",
-    "why": "total-looking"
+    "why": "no total words near it"
    },
    "ours": {
     "acres": 12733,
@@ -5453,17 +5489,27 @@
     },
     {
      "status": "ok",
+     "url": "https://www.dcr.virginia.gov/state-parks/nature-and-history-programs",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.dcr.virginia.gov/state-parks/picnicshelter-fees",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
      "url": "https://www.dcr.virginia.gov/state-parks/document/hm-campgrounds-b-and-c.pdf",
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 11690,
+   "pct": 282,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -5499,9 +5545,9 @@
      "as": "108 acre",
      "clean": false,
      "line": "weekends and holidays. Operating hours are weather-dependent. Click here for park fees. FISHING, BOATING The 108-acre Hungry Mother Lake within the park supports a host of sport fish, including largemouth, smallmouth, hybrid st",
-     "total_like": true,
+     "total_like": false,
      "url": "https://www.dcr.virginia.gov/state-parks/hungry-mother",
-     "why": "total-looking"
+     "why": "part (a lake, a purchase, a campground…)"
     },
     {
      "acres": 800.0,
@@ -5532,12 +5578,12 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
-   "verdict": "off"
+   "ver": 8,
+   "verdict": "unsure"
   },
   "US-1304": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "James River State Park",
    "official": {
@@ -5545,7 +5591,7 @@
     "as": "1,561 acres",
     "clean": false,
     "line": "right onto State Rt 605 (Riverside Dr.). Travel seven miles, turn left onto State Rt 606 (Park Rd). Park Size 1,561 acres. Share this page Follow us Cabins, camping OVERNIGHT FACILITIES The park has primitive camping, regular campi",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/james-river",
     "why": "total-looking"
    },
@@ -5644,12 +5690,12 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-1305": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Kiptopeke State Park",
    "official": {
@@ -5657,7 +5703,7 @@
     "as": "562 acres",
     "clean": false,
     "line": "station was bought in 2000. In 2009 another 26 acres were bought, bringing the park&rsquo;s total acreage to 562 acres. A total of 126 acres has been reforested in the park. FRIENDS GROUP The Friends of Kiptopeke State Park is d",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/kiptopeke",
     "why": "total-looking"
    },
@@ -5806,11 +5852,11 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-1306": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Lake Anna State Park",
    "official": {
@@ -5818,7 +5864,7 @@
     "as": "13,000 acres",
     "clean": true,
     "line": "e miles. The park sign will be on your left. Park Size 3,127 acres with 10 miles of lake frontage. Lake size: 13,000 acres. Share this page Follow us Cabins, camping OVERNIGHT FACILITIES For information on the availability of overni",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/lake-anna",
     "why": "clean total"
    },
@@ -5954,12 +6000,12 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "agree"
   },
   "US-1307": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 556 acres, no total words near it)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Leesylvania State Park",
    "official": {
@@ -5967,7 +6013,7 @@
     "as": "556 acres",
     "clean": false,
     "line": ", one and a half hours; Tidewater/Norfolk/Virginia Beach, two and a half hours; Roanoke, four hours Park Size 556 acres. Share this page Follow us Cabins, camping OVERNIGHT FACILITIES From March - October, a small, tents-only pri",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/leesylvania",
     "why": "no total words near it"
    },
@@ -6081,12 +6127,12 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-1308": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 1,856 acres, no total words near it)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Mason Neck State Park",
    "official": {
@@ -6094,7 +6140,7 @@
     "as": "1,856 acres",
     "clean": false,
     "line": "Tidewater/Norfolk/Virginia Beach, three hours; Richmond, one and a half hours; Roanoke, four hours. Park Size 1,856 acres. Share this page Follow us Cabins, camping OVERNIGHT FACILITIES None - day-use park. For information on the a",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/mason-neck",
     "why": "no total words near it"
    },
@@ -6208,12 +6254,12 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-1309": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Natural Tunnel State Park",
    "official": {
@@ -6221,7 +6267,7 @@
     "as": "909 acres",
     "clean": false,
     "line": "enn., one and a half hours; Winston-Salem, N.C., three hours; Lexington, Ky., two and a half hours. Park Size 909 acres. The tunnel is 850 feet long and 100 feet high inside. Share this page Follow us Cabins, camping OVERNIGHT FA",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/natural-tunnel",
     "why": "total-looking"
    },
@@ -6325,12 +6371,12 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-1310": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 1216.6 acres, no total words near it)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [
     {
      "date_hint": null,
@@ -6355,7 +6401,7 @@
     "as": "1216.6 acres",
     "clean": false,
     "line": "st . Drive Times: Charlotte, N.C., 2 hours; Knoxville, Tenn., 3 hours; Winston-Salem, N.C., 1 hour. Park Size 1216.6 acres. Share this page Follow us Cabins, camping OVERNIGHT FACILITIES Camping; no cabins. Overnight accommodations",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/new-river-trail",
     "why": "no total words near it"
    },
@@ -6469,12 +6515,12 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-1311": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Occoneechee State Park",
    "official": {
@@ -6482,7 +6528,7 @@
     "as": "1900 acre",
     "clean": true,
     "line": "horse brought to the park. Occoneechee Wildlife Management Area The Occoneechee Wildlife Management Area is a 1900 acre tract of land that operates in the same manner as any other WMA. Learn more about WMAs . Occoneechee WMA host",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/occoneechee",
     "why": "clean total"
    },
@@ -6610,12 +6656,12 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-1312": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [
     {
      "date_hint": "1945",
@@ -6640,7 +6686,7 @@
     "as": "7,919 acres",
     "clean": false,
     "line": "n Express at satellite parking lots and at the main entrance's contact station when it's unstaffed. Park Size 7,919 acres. Swift Creek Lake: 225 acres. Beaver Lake: 24 acres. Camp 7 lake: 7 acres. Share this page Follow us Cabins,",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/pocahontas",
     "why": "total-looking"
    },
@@ -6784,12 +6830,13 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-1313": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-10-29",
    "n": "Powhatan State Park",
    "official": null,
    "ours": {
@@ -6867,12 +6914,12 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no size on page"
   },
   "US-1314": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 379 acres, no total words near it)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Sailor's Creek Battlefield State Park",
    "official": {
@@ -6880,7 +6927,7 @@
     "as": "379 acres",
     "clean": false,
     "line": "d a half hours; Tidewater/Norfolk/Virginia Beach, two and a half to three hours; Roanoke, two hours Park Size 379 acres. Share this page Follow us Cabins, camping OVERNIGHT FACILITIES None. For information on availability of othe",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/sailors-creek",
     "why": "no total words near it"
    },
@@ -6989,12 +7036,12 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-1315": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Seven Bends State Park",
    "official": {
@@ -7002,7 +7049,7 @@
     "as": "1,052 acres",
     "clean": true,
     "line": "ates of operation, please email the park office at sevenbends@dcr.virginia.gov . HISTORY The park consists of 1,052 acres situated in the geographically unique Seven Bends area of the North Fork of the Shenandoah River. The majorit",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/seven-bends",
     "why": "clean total"
    },
@@ -7142,12 +7189,12 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-1316": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Shenandoah River State Park",
    "official": {
@@ -7155,7 +7202,7 @@
     "as": "1,600 acres",
     "clean": false,
     "line": "h River Raymond R. \"Andy\" Guest Jr. State Park is on the South Fork of the Shenandoah River and has more than 1,600 acres along 5.2 miles of shoreline. The park opened in June 1999. In addition to the meandering river frontage, the",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/shenandoah-river",
     "why": "total-looking"
    },
@@ -7313,12 +7360,12 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-1317": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 10 acres, no total words near it)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Shot Tower State Park",
    "official": {
@@ -7326,7 +7373,7 @@
     "as": "10 acres",
     "clean": false,
     "line": "five hours; Tidewater/Norfolk/Virginia Beach: seven and a half hours; Roanoke, one and a half hours Park Size 10 acres. Share this page Cabins, camping OVERNIGHT FACILITIES None - day use only, but see New River Trail State Park",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/shot-tower",
     "why": "no total words near it"
    },
@@ -7417,11 +7464,11 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-1318": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Sky Meadows State Park",
    "official": {
@@ -7429,7 +7476,7 @@
     "as": "7,883 acre",
     "clean": false,
     "line": "to the nearby Ashby's Gap, which gave settlers access to the Shenandoah Valley. In 1731, Lord Fairfax sold a 7,883-acre tract of land just south of Ashby&rsquo;s Gap to James Ball. Ball died in 1754, and his land was divided amon",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/sky-meadows",
     "why": "history"
    },
@@ -7530,7 +7577,7 @@
      "line": "engage visitors and help connect them with farming practices that formed its unique pastoral landscape. This 1,860-acre park has scenic views, woodlands and the rolling pastures of a historic farm that captures the colonial throu",
      "total_like": false,
      "url": "https://www.dcr.virginia.gov/state-parks/sky-meadows",
-     "why": "another park / unit named in the sentence"
+     "why": "part (a lake, a purchase, a campground…)"
     },
     {
      "acres": 1860.0,
@@ -7597,12 +7644,12 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "agree"
   },
   "US-1319": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Smith Mountain Lake State Park",
    "official": {
@@ -7610,7 +7657,7 @@
     "as": "1,248 acre",
     "clean": false,
     "line": "Mountain Lake State Park, you probably think of summer boating and swimming. But the fun doesn’t stop at this 1,248-acre park just because it’s winter. Holiday shopping at Virginia State Parks By Starr Anderson Posted November 18,",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/blog/park/Smith Mountain Lake State Park/",
     "why": "total-looking"
    },
@@ -7733,12 +7780,12 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-1320": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Southwest Virginia Museum State Park",
    "official": {
@@ -7746,7 +7793,7 @@
     "as": "1.5 acres",
     "clean": false,
     "line": "anoke, 4 hours; Knoxville, Tenn., 2 hours; Lexington, Ky., 2.5 hours; Winston-Salem, N.C., 3 hours. Park Size 1.5 acres. Share this page Follow us Cabins, camping OVERNIGHT FACILITIES Poplar Hill Cottage is the perfect mountain g",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/southwest-virginia-museum",
     "why": "total-looking"
    },
@@ -7859,12 +7906,12 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-1321": {
    "cause": "the agency figure may cover several states; our outline may be this state's share only",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Staunton River State Park",
    "note": "the agency figure may cover several states; our outline may be this state's share only",
@@ -7873,7 +7920,7 @@
     "as": "2,400 acre",
     "clean": true,
     "line": "25 miles from the North Carolina border, Staunton River offers much to families and outdoor enthusiasts. The 2,400-acre park offers woodlands, meadows and shoreline along the Dan and Staunton rivers. Cabins built in the 1930s by",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/staunton-river",
     "why": "clean total"
    },
@@ -8022,12 +8069,12 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-1322": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Staunton River Battlefield State Park",
    "official": {
@@ -8035,7 +8082,7 @@
     "as": "300 acre",
     "clean": true,
     "line": "the Virginia State Parks Know Before You Go information before you visit. General Information This park is a 300-acre Civil War historic site where a ragtag group of 700 Confederate old men and young boys beat the odds and held",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/staunton-river-battlefield",
     "why": "clean total"
    },
@@ -8152,12 +8199,12 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-1323": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 548 acre, no total words near it)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Twin Lakes State Park",
    "official": {
@@ -8165,7 +8212,7 @@
     "as": "548 acre",
     "clean": false,
     "line": "s Know Before You Go information before you visit. General Information In the heart of central Virginia, this 548-acre, historic park offers many cultural, environmental and recreational activities. Overnight accommodations incl",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/twin-lakes",
     "why": "no total words near it"
    },
@@ -8306,12 +8353,12 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-1324": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 1,321 acres, no total words near it)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Westmoreland State Park",
    "official": {
@@ -8319,7 +8366,7 @@
     "as": "1,321 acres",
     "clean": false,
     "line": "half hours; Tidewater/Norfolk/Virginia Beach, two and a half hours; Roanoke, five and a half hours Park Size 1,321 acres. Share this page Follow us Cabins, camping OVERNIGHT FACILITIES Cabins, camping, group camp, camping cabins.",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/westmoreland",
     "why": "no total words near it"
    },
@@ -8409,12 +8456,12 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-1325": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Wilderness Road State Park",
    "official": {
@@ -8422,7 +8469,7 @@
     "as": "327 acres",
     "clean": false,
     "line": "is about 8 miles on the left (Martin&rsquo;s Station Trail) across from Elydale Elementary School. Park Size 327 acres. Share this page Follow us Cabins, camping OVERNIGHT FACILITIES The park offers primitive camping for groups.",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/wilderness-road",
     "why": "total-looking"
    },
@@ -8521,12 +8568,12 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-1326": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "York River State Park",
    "official": {
@@ -8534,7 +8581,7 @@
     "as": "525 acre",
     "clean": false,
     "line": "AUNDRY None at this park. ENVIRONMENTAL EDUCATION CENTER Under development. SPECIAL FEATURES Taskinas Creek's 525-acre watershed is one of four sites along the York River designated as a Chesapeake Bay National Estuarine Researc",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/york-river",
     "why": "total-looking"
    },
@@ -8651,12 +8698,12 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-2364": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 645 acres, no total words near it)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [
     {
      "date_hint": "2020",
@@ -8673,7 +8720,7 @@
     "as": "645 acres",
     "clean": false,
     "line": "d, approximately .7 mile, turn left at the circle onto Timberneck Farm Road to the park entry gate. Park Size 645 acres Share this page Follow us Cabins, camping OVERNIGHT FACILITIES Camping with sites for vehicle camping as well",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/machicomoco",
     "why": "no total words near it"
    },
@@ -8758,16 +8805,21 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-3378": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Blue Ridge National Parkway",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-NC': 105545, 'US-VA': 39421})",
    "official": null,
    "ours": {
-    "acres": 39421,
+    "acres": 144966,
+    "acres_by_state": {
+     "US-NC": 105545,
+     "US-VA": 39421
+    },
     "manager": "",
     "pieces": [
      [
@@ -8821,7 +8873,8 @@
     ],
     "pin": "well outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 2
+    "unknown_pieces": 2,
+    "whole_park": true
    },
    "owner_now": null,
    "pages": [
@@ -8861,12 +8914,12 @@
    },
    "sizes": [],
    "t": "National Parkway",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no size on page"
   },
   "US-3972": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [
     {
      "date_hint": "2023",
@@ -8883,7 +8936,7 @@
     "as": "1,500 acres",
     "clean": false,
     "line": "state would not own the Natural Bridge property until the debt was paid off but took over management of about 1,500 acres here on Sept. 24, 2016. In 2022, the Virginia General Assembly passed a bill to pay off the remaining debt, a",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/natural-bridge",
     "why": "total-looking"
    },
@@ -9003,13 +9056,14 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-4526": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-10-29",
    "n": "George Washington & Jefferson National Forest",
    "official": {
     "acres": 1800000.0,
@@ -9120,72 +9174,72 @@
     }
    ],
    "t": "National Forest",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-4556": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Appalachian Trail National Scenic Trail",
    "ours": null,
    "score": null,
    "t": "National Scenic Trail",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no outline"
   },
   "US-4564": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Potomac Heritage Trail National Scenic Trail",
    "ours": null,
    "score": null,
    "t": "National Scenic Trail",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no outline"
   },
   "US-4567": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Captain John Smith Chesapeake National Historic Trail",
    "ours": null,
    "score": null,
    "t": "National Historic Trail",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no outline"
   },
   "US-4577": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Overmountain Victory National Historic Trail",
    "ours": null,
    "score": null,
    "t": "National Historic Trail",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no outline"
   },
   "US-4581": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Star-Spangled Banner National Historic Trail",
    "ours": null,
    "score": null,
    "t": "National Historic Trail",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no outline"
   },
   "US-4582": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Washington-Rochambeau Revolutionary Route National Historic Trail",
    "ours": null,
    "score": null,
    "t": "National Historic Trail",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no outline"
   },
   "US-5503": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Appomattox-Buckingham State Forest",
    "official": {
@@ -9193,7 +9247,7 @@
     "as": "19,513 acres",
     "clean": false,
     "line": "st Overview The Appomattox-Buckingham State Forest (ABSF) is Virginia&#x2019;s largest state forest, covering 19,513 acres in Appomattox and Buckingham counties. It is managed for sustainable timber production, demonstration of scie",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/appomattox-buckingham-state-forest/",
     "why": "total-looking"
    },
@@ -9296,12 +9350,12 @@
     }
    ],
    "t": "State Forest",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-5506": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [
     {
      "date_hint": null,
@@ -9318,7 +9372,7 @@
     "as": "128 acre",
     "clean": true,
     "line": "am Area Contacts Find a Forester Upcoming Events Browne State Forest &#xA0; Overview Browne State Forest is a 128-acre property in Essex County, consisting of mostly loblolly pine forest, with some wetlands along Dragon Run Swam",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/browne-state-forest/",
     "why": "clean total"
    },
@@ -9393,12 +9447,12 @@
     }
    ],
    "t": "State Forest",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-5507": {
    "cause": "the agency figure may cover several states; our outline may be this state's share only",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Channels State Forest",
    "note": "the agency figure may cover several states; our outline may be this state's share only",
@@ -9407,7 +9461,7 @@
     "as": "4,836 acres",
     "clean": true,
     "line": "rking along Highway 80 is not permitted and violators will be ticketed. Overview Channels State Forest covers 4,836 acres in Washington and Russell counties. Management focuses on demonstration of scientific forest management, appl",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/channels-state-forest/",
     "why": "clean total"
    },
@@ -9520,12 +9574,12 @@
     }
    ],
    "t": "State Forest",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-5508": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [
     {
      "date_hint": "2012",
@@ -9542,7 +9596,7 @@
     "as": "440 acres",
     "clean": true,
     "line": "nd a Forester Upcoming Events Chesterfield State Forest &#xA0; Overview Chesterfield State Forest encompasses 440 acres of mostly loblolly pine forest in Chesterfield County. It is managed for multiple uses, including timber, pas",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/chesterfield-state-forest/",
     "why": "clean total"
    },
@@ -9614,12 +9668,12 @@
     }
    ],
    "t": "State Forest",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-5509": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [
     {
      "date_hint": null,
@@ -9636,7 +9690,7 @@
     "as": "397 acre",
     "clean": true,
     "line": "zzleloader seasons. Dogs will not be allowed to chase bear or deer on the forest. Overview Chilton Woods is a 397-acre state forest in Lancaster County. Management focuses on demonstration of sustainable forest management practi",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/chilton-woods-state-forest/",
     "why": "clean total"
    },
@@ -9702,12 +9756,12 @@
     }
    ],
    "t": "State Forest",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-5510": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Conway-Robinson Memorial State Forest",
    "official": {
@@ -9715,7 +9769,7 @@
     "as": "440 acre",
     "clean": true,
     "line": "Nov. 23 and Dec. 7, 2026.&#xA0; Overview Conway Robinson State Forest, located in Prince William County, is a 440-acre woodland oasis in a heavily-developed suburban area. Management focuses on demonstration of scientific forest",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/conway-robinson-memorial-state-forest/",
     "why": "clean total"
    },
@@ -9795,12 +9849,12 @@
     }
    ],
    "t": "State Forest",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-5511": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [
     {
      "date_hint": null,
@@ -9817,7 +9871,7 @@
     "as": "264 acre",
     "clean": false,
     "line": "ry Office Directory Program Area Contacts Find a Forester Upcoming Events Crawfords State Forest Overview The 264-acre Crawfords State Forest borders the Chickahominy River and Schiminoe Creek in New Kent County. The forest&#x20",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/crawfords-state-forest/",
     "why": "total-looking"
    },
@@ -9901,12 +9955,12 @@
     }
    ],
    "t": "State Forest",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-5512": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [
     {
      "date_hint": "1954",
@@ -9923,7 +9977,7 @@
     "as": "16,154 acres",
     "clean": false,
     "line": "l be constructed as soon as possible. Overview Cumberland State Forest is Virginia&#x2019;s second largest at 16,154 acres. Most of the forest is in Cumberland County, with a small portion in Buckingham County. It has a diversity of",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/cumberland-state-forest/",
     "why": "total-looking"
    },
@@ -9989,12 +10043,12 @@
     }
    ],
    "t": "State Forest",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-5514": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Dragon Run State Forest",
    "official": {
@@ -10002,7 +10056,7 @@
     "as": "9,563 acres",
     "clean": false,
     "line": "ea Contacts Find a Forester Upcoming Events Dragon Run State Forest Overview Dragon Run State Forest occupies 9,563 acres in King and Queen County. This forest of mostly loblolly pine is managed for multiple uses: watershed protect",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/dragon-run-state-forest/",
     "why": "total-looking"
    },
@@ -10145,12 +10199,12 @@
     }
    ],
    "t": "State Forest",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-5515": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Hawks State Forest",
    "official": null,
@@ -10220,12 +10274,12 @@
     }
    ],
    "t": "State Forest",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-5516": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [
     {
      "date_hint": "1968",
@@ -10242,7 +10296,7 @@
     "as": "422 acre",
     "clean": false,
     "line": "tory Office Directory Program Area Contacts Find a Forester Upcoming Events Lesesne State Forest Overview The 422-acre Lesesne State Forest is located in Nelson County, on the lower slopes of Three Ridges Mountain. Its primary u",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/lesense-state-forest/",
     "why": "total-looking"
    },
@@ -10317,12 +10371,12 @@
     }
    ],
    "t": "State Forest",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-5517": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Matthews State Forest",
    "official": {
@@ -10330,7 +10384,7 @@
     "as": "566 acre",
     "clean": false,
     "line": "hed map are closed until further notice. Treatments will occur intermittently throughout August. Overview The 566-acre Matthews State Forest is located in Grayson County, just west of Galax. The mixed hardwood and white pine sta",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/matthews-state-forest/",
     "why": "total-looking"
    },
@@ -10452,12 +10506,12 @@
     }
    ],
    "t": "State Forest",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-5518": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Moore's Creek State Forest",
    "official": null,
@@ -10527,12 +10581,12 @@
     }
    ],
    "t": "State Forest",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-5519": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Niday Place State Forest",
    "official": {
@@ -10540,7 +10594,7 @@
     "as": "264.5 acre",
     "clean": true,
     "line": "tory Program Area Contacts Find a Forester Upcoming Events Niday Place State Forest Overview Niday Place is a 264.5-acre state forest in Craig County. Its primary uses are natural resource conservation and demonstration of forestr",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/niday-place-state-forest/",
     "why": "clean total"
    },
@@ -10611,12 +10665,12 @@
     }
    ],
    "t": "State Forest",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-5521": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Paul State Forest",
    "official": {
@@ -10624,7 +10678,7 @@
     "as": "20 acre",
     "clean": false,
     "line": "uture but young enough to recover from any damage from the harvest. An improvement thinning will be done on a 20-acre area of an upland hardwood stand. The objective of the thinning is to concentrate growing resources on desira",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/paul-state-forest/",
     "why": "total-looking"
    },
@@ -10731,12 +10785,12 @@
     }
    ],
    "t": "State Forest",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-5522": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Prince Edward-Gallion State Forest",
    "official": {
@@ -10744,7 +10798,7 @@
     "as": "6,491 acre",
     "clean": false,
     "line": "d a Forester Upcoming Events Prince Edward-Gallion State Forest Overview Located in Prince Edward County, the 6,491-acre Prince Edward-Gallion&#xA0;State Forest&#xA0;was Virginia&#x2019;s first&#xA0;state&#xA0;forest. It features",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/prince-edward-gallion-state-forest/",
     "why": "total-looking"
    },
@@ -10840,12 +10894,12 @@
     }
    ],
    "t": "State Forest",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-5523": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Sandy Point State Forest",
    "official": {
@@ -10853,7 +10907,7 @@
     "as": "2,074 acres",
     "clean": false,
     "line": "tacts Find a Forester Upcoming Events Sandy Point State Forest Overview The Sandy Point State Forest occupies 2,074 acres in King William County. Its name is derived from the prominence of land, including marsh and swamp land, whic",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/sandy-point-state-forest/",
     "why": "total-looking"
    },
@@ -10937,12 +10991,12 @@
     }
    ],
    "t": "State Forest",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-5525": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Whitney State Forest",
    "official": {
@@ -10950,7 +11004,7 @@
     "as": "148 acre",
     "clean": false,
     "line": "tory Office Directory Program Area Contacts Find a Forester Upcoming Events Whitney State Forest Overview The 148-acre Whitney State Forest is located in Fauquier County. Management focuses on demonstration of scientific forest",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/whitney-state-forest/",
     "why": "total-looking"
    },
@@ -11021,12 +11075,12 @@
     }
    ],
    "t": "State Forest",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-5526": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 4 acre, no total words near it)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Zoar State Forest",
    "official": {
@@ -11034,7 +11088,7 @@
     "as": "4 acre",
     "clean": false,
     "line": "ding opportunities in education and recreation, and a variety of wildlife habitats. Water resources include a 4-acre pond, 2,000 feet of waterfront on Herring Creek, and 6,600 feet of waterfront on the Mattaponi River. The pro",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/zoar-state-forest/",
     "why": "no total words near it"
    },
@@ -11138,12 +11192,12 @@
     }
    ],
    "t": "State Forest",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-7636": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 1,089 acres, no total words near it)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Widewater State Park",
    "official": {
@@ -11151,7 +11205,7 @@
     "as": "1,089 acres",
     "clean": false,
     "line": "one and a half hours; Tidewater-Norfolk-Virginia Beach, two and a half hours; Roanoke, four hours. Park Size 1,089 acres. Share this page Follow us Cabins, camping OVERNIGHT FACILITIES Widewater has no cabins or full-service campi",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/widewater",
     "why": "no total words near it"
    },
@@ -11248,23 +11302,15 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-7784": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-10-28",
+   "cause": "a number 13 parks share from one page (66,000 ac): an agency total, not this park",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Bethel Beach State Natural Area",
-   "official": {
-    "acres": 66000.0,
-    "as": "66,000 acres",
-    "clean": false,
-    "line": "ved from voluntary contributions through a state income tax check-off. Sixty nine preserves encompassing over 66,000 acres now comprise the Virginia Natural Area Preserves System . Natural area conservation does not end with land pr",
-    "read": "2026-10-28",
-    "url": "https://www.dcr.virginia.gov/natural-heritage/mission",
-    "why": "total-looking"
-   },
+   "official": null,
    "ours": {
     "acres": 359,
     "manager": "",
@@ -11333,7 +11379,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 99,
+   "pct": null,
    "same_agency": false,
    "score": 5,
    "score_parts": {
@@ -11354,23 +11400,15 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 7,
-   "verdict": "off"
+   "ver": 8,
+   "verdict": "unsure"
   },
   "US-7785": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-10-28",
+   "cause": "a number 13 parks share from one page (66,000 ac): an agency total, not this park",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Buffalo Mountain State Natural Area",
-   "official": {
-    "acres": 66000.0,
-    "as": "66,000 acres",
-    "clean": false,
-    "line": "ved from voluntary contributions through a state income tax check-off. Sixty nine preserves encompassing over 66,000 acres now comprise the Virginia Natural Area Preserves System . Natural area conservation does not end with land pr",
-    "read": "2026-10-28",
-    "url": "https://www.dcr.virginia.gov/natural-heritage/mission",
-    "why": "total-looking"
-   },
+   "official": null,
    "ours": {
     "acres": 6507,
     "manager": "",
@@ -11451,7 +11489,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 90,
+   "pct": null,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -11472,23 +11510,15 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 7,
-   "verdict": "off"
+   "ver": 8,
+   "verdict": "unsure"
   },
   "US-7787": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-10-28",
+   "cause": "a number 13 parks share from one page (66,000 ac): an agency total, not this park",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Bush Mill Stream State Natural Area",
-   "official": {
-    "acres": 66000.0,
-    "as": "66,000 acres",
-    "clean": false,
-    "line": "ved from voluntary contributions through a state income tax check-off. Sixty nine preserves encompassing over 66,000 acres now comprise the Virginia Natural Area Preserves System . Natural area conservation does not end with land pr",
-    "read": "2026-10-28",
-    "url": "https://www.dcr.virginia.gov/natural-heritage/mission",
-    "why": "total-looking"
-   },
+   "official": null,
    "ours": {
     "acres": 579,
     "manager": "",
@@ -11563,7 +11593,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 99,
+   "pct": null,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -11584,23 +11614,15 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 7,
-   "verdict": "off"
+   "ver": 8,
+   "verdict": "unsure"
   },
   "US-7788": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-10-28",
+   "cause": "a number 13 parks share from one page (66,000 ac): an agency total, not this park",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Cape Charles State Natural Area",
-   "official": {
-    "acres": 66000.0,
-    "as": "66,000 acres",
-    "clean": false,
-    "line": "ved from voluntary contributions through a state income tax check-off. Sixty nine preserves encompassing over 66,000 acres now comprise the Virginia Natural Area Preserves System . Natural area conservation does not end with land pr",
-    "read": "2026-10-28",
-    "url": "https://www.dcr.virginia.gov/natural-heritage/mission",
-    "why": "total-looking"
-   },
+   "official": null,
    "ours": {
     "acres": 192,
     "manager": "",
@@ -11675,7 +11697,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 100,
+   "pct": null,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -11696,23 +11718,15 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 7,
-   "verdict": "off"
+   "ver": 8,
+   "verdict": "unsure"
   },
   "US-7789": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-10-28",
+   "cause": "a number 13 parks share from one page (66,000 ac): an agency total, not this park",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Chub Sandhill State Natural Area",
-   "official": {
-    "acres": 66000.0,
-    "as": "66,000 acres",
-    "clean": false,
-    "line": "ved from voluntary contributions through a state income tax check-off. Sixty nine preserves encompassing over 66,000 acres now comprise the Virginia Natural Area Preserves System . Natural area conservation does not end with land pr",
-    "read": "2026-10-28",
-    "url": "https://www.dcr.virginia.gov/natural-heritage/mission",
-    "why": "total-looking"
-   },
+   "official": null,
    "ours": {
     "acres": 4272,
     "manager": "",
@@ -11793,7 +11807,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 94,
+   "pct": null,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -11823,23 +11837,15 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 7,
-   "verdict": "off"
+   "ver": 8,
+   "verdict": "unsure"
   },
   "US-7790": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-10-28",
+   "cause": "a number 13 parks share from one page (66,000 ac): an agency total, not this park",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Cleveland Barrens State Natural Area",
-   "official": {
-    "acres": 66000.0,
-    "as": "66,000 acres",
-    "clean": false,
-    "line": "ved from voluntary contributions through a state income tax check-off. Sixty nine preserves encompassing over 66,000 acres now comprise the Virginia Natural Area Preserves System . Natural area conservation does not end with land pr",
-    "read": "2026-10-28",
-    "url": "https://www.dcr.virginia.gov/natural-heritage/mission",
-    "why": "total-looking"
-   },
+   "official": null,
    "ours": {
     "acres": 4259,
     "manager": "",
@@ -11920,7 +11926,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 94,
+   "pct": null,
    "same_agency": false,
    "score": 5,
    "score_parts": {
@@ -11950,12 +11956,12 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 7,
-   "verdict": "off"
+   "ver": 8,
+   "verdict": "unsure"
   },
   "US-7791": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Crow's Nest State Natural Area",
    "official": {
@@ -11963,7 +11969,7 @@
     "as": "3,056 acres",
     "clean": false,
     "line": "their Potomac Hills parcel in 2020, bringing the total area of Virginia's 54th state natural area preserve to 3,056 acres. Funding for the original two tracts came from a variety of sources including DCR, Stafford County, the Virgi",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/natural-heritage/natural-area-preserves/crowsnest",
     "why": "total-looking"
    },
@@ -12104,12 +12110,12 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-7793": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Dameron Marsh State Natural Area",
    "official": {
@@ -12117,7 +12123,7 @@
     "as": "316 acre",
     "clean": false,
     "line": "resources at Dameron Marsh. If you arrive to find the preserve at full capacity, please come back later. The 316-acre Dameron Marsh Natural Area Preserve is one in a series of protected lands that line the western and eastern s",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/natural-heritage/natural-area-preserves/dameron",
     "why": "total-looking"
    },
@@ -12188,12 +12194,12 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-7794": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Goshen Pass State Natural Area",
    "official": {
@@ -12201,7 +12207,7 @@
     "as": "936 acre",
     "clean": false,
     "line": "e-rare damselfly called the Appalachian jewelwing ( Calopteryx angustipennis ) , and several rare plants. The 936-acre preserve, which encompasses the southwest face of the gorge, was dedicated as a State Natural Area Preserve i",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/natural-heritage/natural-area-preserves/goshen",
     "why": "total-looking"
    },
@@ -12322,23 +12328,15 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-7795": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-10-28",
+   "cause": "a number 13 parks share from one page (66,000 ac): an agency total, not this park",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Grassy Hill State Natural Area",
-   "official": {
-    "acres": 66000.0,
-    "as": "66,000 acres",
-    "clean": false,
-    "line": "ved from voluntary contributions through a state income tax check-off. Sixty nine preserves encompassing over 66,000 acres now comprise the Virginia Natural Area Preserves System . Natural area conservation does not end with land pr",
-    "read": "2026-10-28",
-    "url": "https://www.dcr.virginia.gov/natural-heritage/mission",
-    "why": "total-looking"
-   },
+   "official": null,
    "ours": {
     "acres": 5855,
     "manager": "",
@@ -12424,7 +12422,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 91,
+   "pct": null,
    "same_agency": false,
    "score": 5,
    "score_parts": {
@@ -12472,23 +12470,15 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 7,
-   "verdict": "off"
+   "ver": 8,
+   "verdict": "unsure"
   },
   "US-7797": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-10-28",
+   "cause": "a number 13 parks share from one page (66,000 ac): an agency total, not this park",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Hughlett Point State Natural Area",
-   "official": {
-    "acres": 66000.0,
-    "as": "66,000 acres",
-    "clean": false,
-    "line": "ved from voluntary contributions through a state income tax check-off. Sixty nine preserves encompassing over 66,000 acres now comprise the Virginia Natural Area Preserves System . Natural area conservation does not end with land pr",
-    "read": "2026-10-28",
-    "url": "https://www.dcr.virginia.gov/natural-heritage/mission",
-    "why": "total-looking"
-   },
+   "official": null,
    "ours": {
     "acres": 814,
     "manager": "",
@@ -12545,7 +12535,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 99,
+   "pct": null,
    "same_agency": false,
    "score": 5,
    "score_parts": {
@@ -12566,12 +12556,12 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 7,
-   "verdict": "off"
+   "ver": 8,
+   "verdict": "unsure"
   },
   "US-7798": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Magothy Bay State Natural Area",
    "official": {
@@ -12579,7 +12569,7 @@
     "as": "445 acre",
     "clean": false,
     "line": "toric artifacts are prohibited on all Virginia Natural Area Preserves. Learn more. SITE DESCRIPTION: --> This 445-acre preserve encompasses woodlands, forested wetlands and extensive salt marshes. These communities provide habit",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/natural-heritage/natural-area-preserves/magothybay",
     "why": "total-looking"
    },
@@ -12683,23 +12673,15 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-7799": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-10-28",
+   "cause": "a number 13 parks share from one page (66,000 ac): an agency total, not this park",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Mutton Hunk Fen State Natural Area",
-   "official": {
-    "acres": 66000.0,
-    "as": "66,000 acres",
-    "clean": false,
-    "line": "ved from voluntary contributions through a state income tax check-off. Sixty nine preserves encompassing over 66,000 acres now comprise the Virginia Natural Area Preserves System . Natural area conservation does not end with land pr",
-    "read": "2026-10-28",
-    "url": "https://www.dcr.virginia.gov/natural-heritage/mission",
-    "why": "total-looking"
-   },
+   "official": null,
    "ours": {
     "acres": 1964,
     "manager": "",
@@ -12785,7 +12767,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 97,
+   "pct": null,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -12824,23 +12806,15 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 7,
-   "verdict": "off"
+   "ver": 8,
+   "verdict": "unsure"
   },
   "US-7801": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-10-28",
+   "cause": "a number 13 parks share from one page (66,000 ac): an agency total, not this park",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Pinnacle State Natural Area",
-   "official": {
-    "acres": 66000.0,
-    "as": "66,000 acres",
-    "clean": false,
-    "line": "ved from voluntary contributions through a state income tax check-off. Sixty nine preserves encompassing over 66,000 acres now comprise the Virginia Natural Area Preserves System . Natural area conservation does not end with land pr",
-    "read": "2026-10-28",
-    "url": "https://www.dcr.virginia.gov/natural-heritage/mission",
-    "why": "total-looking"
-   },
+   "official": null,
    "ours": {
     "acres": 4070,
     "manager": "",
@@ -12926,7 +12900,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 94,
+   "pct": null,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -12947,23 +12921,15 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 7,
-   "verdict": "off"
+   "ver": 8,
+   "verdict": "unsure"
   },
   "US-7802": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-10-28",
+   "cause": "a number 13 parks share from one page (66,000 ac): an agency total, not this park",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Poor Mountain State Natural Area",
-   "official": {
-    "acres": 66000.0,
-    "as": "66,000 acres",
-    "clean": false,
-    "line": "ved from voluntary contributions through a state income tax check-off. Sixty nine preserves encompassing over 66,000 acres now comprise the Virginia Natural Area Preserves System . Natural area conservation does not end with land pr",
-    "read": "2026-10-28",
-    "url": "https://www.dcr.virginia.gov/natural-heritage/mission",
-    "why": "total-looking"
-   },
+   "official": null,
    "ours": {
     "acres": 4645,
     "manager": "",
@@ -13044,7 +13010,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 93,
+   "pct": null,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -13065,23 +13031,15 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 7,
-   "verdict": "off"
+   "ver": 8,
+   "verdict": "unsure"
   },
   "US-7803": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-10-28",
+   "cause": "a number 13 parks share from one page (66,000 ac): an agency total, not this park",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Savage Neck Dunes State Natural Area",
-   "official": {
-    "acres": 66000.0,
-    "as": "66,000 acres",
-    "clean": false,
-    "line": "ved from voluntary contributions through a state income tax check-off. Sixty nine preserves encompassing over 66,000 acres now comprise the Virginia Natural Area Preserves System . Natural area conservation does not end with land pr",
-    "read": "2026-10-28",
-    "url": "https://www.dcr.virginia.gov/natural-heritage/mission",
-    "why": "total-looking"
-   },
+   "official": null,
    "ours": {
     "acres": 1188,
     "manager": "",
@@ -13155,7 +13113,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 98,
+   "pct": null,
    "same_agency": false,
    "score": 5,
    "score_parts": {
@@ -13185,11 +13143,11 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 7,
-   "verdict": "off"
+   "ver": 8,
+   "verdict": "unsure"
   },
   "US-7804": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Great Falls Park",
    "official": {
@@ -13197,7 +13155,7 @@
     "as": "800 acre",
     "clean": true,
     "line": "ry of this country. Great Falls Park has many opportunities to explore history and nature, all in a beautiful 800-acre park only 15 miles from the Nation's Capital. Plan your visit About the park Great Falls, Virginia NPS The Po",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.nps.gov/grfa/index.htm",
     "why": "clean total"
    },
@@ -13284,52 +13242,52 @@
     }
    ],
    "t": "Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "agree"
   },
   "US-8203": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Cape Henry National Memorial",
    "ours": null,
    "score": null,
    "t": "National Memorial",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no outline"
   },
   "US-8204": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Yorktown National Battlefield",
    "ours": null,
    "score": null,
    "t": "National Battlefield",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no outline"
   },
   "US-9897": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Jamestowne National Historical Site",
    "ours": null,
    "score": null,
    "t": "National Historical Site",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no outline"
   },
   "US-9898": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Mount Vernon National Historic Trail",
    "ours": null,
    "score": null,
    "t": "National Historic Trail",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no outline"
   },
   "US-9899": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 2 acres, no total words near it)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Fort Hunt National Historical Site",
    "official": {
@@ -13337,7 +13295,7 @@
     "as": "2 acres",
     "clean": false,
     "line": "ane at Site 17, wooded areas between C&O Canal and Lock 10 parking lot, north to Lock 14, and delineated work Area 2 from Rock Run culvert to Potomac River required to address the ongoing safety concerns from DC Water emergency",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.nps.gov/gwmp/learn/management/lawsandpolicies.htm",
     "why": "no total words near it"
    },
@@ -13398,32 +13356,32 @@
     }
    ],
    "t": "National Historical Site",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-9900": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Fort Marcy National Historical Site",
    "ours": null,
    "score": null,
    "t": "National Historical Site",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no outline"
   },
   "US-9901": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Civil War Defenses of Washington National Historic Trail",
    "ours": null,
    "score": null,
    "t": "National Historic Trail",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no outline"
   },
   "US-9902": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Colonial National Parkway",
    "official": null,
@@ -13485,13 +13443,14 @@
     }
    ],
    "t": "National Parkway",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-9903": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-10-29",
    "n": "Mount Rogers National Recreation Area",
    "official": null,
    "ours": {
@@ -13537,41 +13496,41 @@
     }
    ],
    "t": "National Recreation Area",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-9904": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Apple Orchard Falls National Recreation Trail",
    "ours": null,
    "score": null,
    "t": "National Recreation Trail",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no outline"
   },
   "US-9905": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Cascades National Recreation Trail",
    "ours": null,
    "score": null,
    "t": "National Recreation Trail",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no outline"
   },
   "US-9906": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Cornelius Creek National Recreation Trail",
    "ours": null,
    "score": null,
    "t": "National Recreation Trail",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no outline"
   },
   "US-9907": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "First Landing National Recreation Trail",
    "official": null,
@@ -13613,82 +13572,82 @@
    },
    "sizes": [],
    "t": "National Recreation Trail",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no size on page"
   },
   "US-9908": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Hoop Hole National Recreation Trail",
    "ours": null,
    "score": null,
    "t": "National Recreation Trail",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no outline"
   },
   "US-9909": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Little Stony Creek National Recreation Trail",
    "ours": null,
    "score": null,
    "t": "National Recreation Trail",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no outline"
   },
   "US-9910": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Massanutten National Recreation Trail",
    "ours": null,
    "score": null,
    "t": "National Recreation Trail",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no outline"
   },
   "US-9920": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Mount Rogers National Recreation Trail",
    "ours": null,
    "score": null,
    "t": "National Recreation Trail",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no outline"
   },
   "US-9922": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "The Lion's Tale National Recreation Trail",
    "ours": null,
    "score": null,
    "t": "National Recreation Trail",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no outline"
   },
   "US-9923": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Virginia Creeper National Recreation Trail",
    "ours": null,
    "score": null,
    "t": "National Recreation Trail",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no outline"
   },
   "US-9925": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Wild Oak National Recreation Trail",
    "ours": null,
    "score": null,
    "t": "National Recreation Trail",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no outline"
   },
   "US-9926": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Big Woods State Forest",
    "official": {
@@ -13696,7 +13655,7 @@
     "as": "3,179 acre",
     "clean": false,
     "line": "oods Wildlife Management Area . Both of these tracts lie immediately south of The Nature Conservancy&#x2019;s 3,179-acre Piney Grove Preserve . This makes for a continuous block of forest, about 7,587 acres in size, that is protec",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/big-woods/",
     "why": "total-looking"
    },
@@ -13824,12 +13783,12 @@
     }
    ],
    "t": "State Forest",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-9927": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 2,531 acres, no total words near it)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Charlotte State Forest",
    "official": {
@@ -13837,7 +13796,7 @@
     "as": "2,531 acres",
     "clean": false,
     "line": "roperties of Stanley Land and Lumber were purchased in 2019 by The Conservation Fund, and in 2020, a portion (2,531 acres) of the properties were sold to the Commonwealth of Virginia &#x2013; Department of Forestry for what would b",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/charlotte-state-forest/",
     "why": "no total words near it"
    },
@@ -13990,12 +13949,12 @@
     }
    ],
    "t": "State Forest",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-9928": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 85.736 acres, no total words near it)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Devil's Backbone State Forest",
    "official": {
@@ -14003,7 +13962,7 @@
     "as": "85.736 acres",
     "clean": false,
     "line": "Bernice I. Hoffman deeded by gift 537.048 acres to the Virginia Department of Forestry between 1995 and 2013. 85.736 acres was purchased from the Hoffman Estate in 2016. Mrs. Judith Dyke by conveyance of title gifted 44.171 acres in",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/devils-backbone/",
     "why": "no total words near it"
    },
@@ -14143,12 +14102,12 @@
     }
    ],
    "t": "State Forest",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-9929": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "First Mountain State Forest",
    "official": {
@@ -14156,7 +14115,7 @@
     "as": "573 acres",
     "clean": true,
     "line": "orester Upcoming Events First Mountain State Forest &#xA0; &#xA0; Overview First Mountain State Forest covers 573 acres in Rockingham County. Management focuses on demonstration of scientific forest management, applied forest res",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/first-mountain-state-forest/",
     "why": "clean total"
    },
@@ -14236,12 +14195,12 @@
     }
    ],
    "t": "State Forest",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-9930": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Old Flat State Forest",
    "official": {
@@ -14249,7 +14208,7 @@
     "as": "320 acres",
     "clean": false,
     "line": "m Area Contacts Find a Forester Upcoming Events Old Flat State Forest Overview Old Flat State Forest occupies 320 acres in Grayson County. It is used for research, demonstration of forestry practices, and education. With the exce",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/old-flat-state-forest/",
     "why": "total-looking"
    },
@@ -14320,33 +14279,25 @@
     }
    ],
    "t": "State Forest",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-9931": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Frontier Culture Museum State Historic Site",
    "ours": null,
    "score": null,
    "t": "State Historic Site",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no outline"
   },
   "US-9932": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-10-28",
+   "cause": "a number 13 parks share from one page (66,000 ac): an agency total, not this park",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "The Channels State Natural Area",
-   "official": {
-    "acres": 66000.0,
-    "as": "66,000 acres",
-    "clean": false,
-    "line": "ved from voluntary contributions through a state income tax check-off. Sixty nine preserves encompassing over 66,000 acres now comprise the Virginia Natural Area Preserves System . Natural area conservation does not end with land pr",
-    "read": "2026-10-28",
-    "url": "https://www.dcr.virginia.gov/natural-heritage/mission",
-    "why": "total-looking"
-   },
+   "official": null,
    "ours": {
     "acres": 2163,
     "manager": "",
@@ -14402,7 +14353,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 97,
+   "pct": null,
    "same_agency": false,
    "score": 5,
    "score_parts": {
@@ -14441,42 +14392,42 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 7,
-   "verdict": "off"
+   "ver": 8,
+   "verdict": "unsure"
   },
   "US-9933": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Beaches to Bluegrass State Trail",
    "ours": null,
    "score": null,
    "t": "State Trail",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no outline"
   },
   "US-9934": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "James River Heritage State Trail",
    "ours": null,
    "score": null,
    "t": "State Trail",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no outline"
   },
   "US-9935": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Virginia Bird & Wildlife State Trail",
    "ours": null,
    "score": null,
    "t": "State Trail",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no outline"
   },
   "US-9936": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [
     {
      "date_hint": "2022",
@@ -14493,7 +14444,7 @@
     "as": "884 acres",
     "clean": false,
     "line": "ard: Sweet Run State Park By Guest Blogger Posted July 09, 2026 Sweet Run State Park, founded in 2023, offers 884 acres and 11 miles of trails through diverse habitats. Remote Gordon Pond provides quiet beauty, rich wildlife and",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.dcr.virginia.gov/state-parks/blog/park/Sweet Run State Park/",
     "why": "total-looking"
    },
@@ -14602,11 +14553,11 @@
     }
    ],
    "t": "State Park",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-9937": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Meadowood BLM Special Recreation Management Area",
    "official": {
@@ -14614,7 +14565,7 @@
     "as": "800 acres",
     "clean": false,
     "line": "miles of mountain biking trails. It is the site of 2 fishing ponds (one of which is universally accessible), 800 acres of forest and meadows, environmental education programs, equestrian facilities, geocaching, and bird watching",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.blm.gov/visit/meadowood-special-recreation-management-area",
     "why": "part (a lake, a purchase, a campground…)"
    },
@@ -14667,23 +14618,16 @@
     }
    ],
    "t": "BLM Special Recreation Management Area",
-   "ver": 7,
+   "ver": 8,
    "verdict": "agree"
   },
   "US-9938": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 1.8 million acres, no total words near it)",
+   "cause": "a number 6 parks share from one page (1,800,000 ac): an agency total, not this park",
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-10-29",
    "n": "Barbours Creek Wilderness Area",
-   "official": {
-    "acres": 1800000.0,
-    "as": "1.8 million acres",
-    "clean": false,
-    "line": "p Explore your forests Experience lush woodlands, cold mountain streams, and unique mountaintop balds on over 1.8 million acres of Appalachian forests. Recreation Opportunities T T T Welcome to the George Washington & Jefferson National",
-    "read": "2026-10-28",
-    "url": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
-    "why": "no total words near it"
-   },
+   "official": null,
    "ours": {
     "acres": 11014,
     "manager": "",
@@ -14713,7 +14657,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 99,
+   "pct": null,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -14743,23 +14687,16 @@
     }
    ],
    "t": "Wilderness Area",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-9939": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 1.8 million acres, no total words near it)",
+   "cause": "a number 6 parks share from one page (1,800,000 ac): an agency total, not this park",
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-10-29",
    "n": "Beartown Wilderness Area",
-   "official": {
-    "acres": 1800000.0,
-    "as": "1.8 million acres",
-    "clean": false,
-    "line": "p Explore your forests Experience lush woodlands, cold mountain streams, and unique mountaintop balds on over 1.8 million acres of Appalachian forests. Recreation Opportunities T T T Welcome to the George Washington & Jefferson National",
-    "read": "2026-10-28",
-    "url": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
-    "why": "no total words near it"
-   },
+   "official": null,
    "ours": {
     "acres": 11223,
     "manager": "",
@@ -14789,7 +14726,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 99,
+   "pct": null,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -14819,13 +14756,14 @@
     }
    ],
    "t": "Wilderness Area",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-9940": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-10-29",
    "n": "Brush Mountain Wilderness Area",
    "official": null,
    "ours": {
@@ -14898,13 +14836,14 @@
     }
    ],
    "t": "Wilderness Area",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-9941": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-10-29",
    "n": "Brush Mountain East Wilderness Area",
    "official": null,
    "ours": {
@@ -14971,13 +14910,14 @@
     }
    ],
    "t": "Wilderness Area",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-9942": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-10-29",
    "n": "Garden Mountain Wilderness Area",
    "official": null,
    "ours": {
@@ -15038,23 +14978,16 @@
     }
    ],
    "t": "Wilderness Area",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-9943": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 1.8 million acres, no total words near it)",
+   "cause": "a number 6 parks share from one page (1,800,000 ac): an agency total, not this park",
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-10-29",
    "n": "Hunting Camp Creek Wilderness Area",
-   "official": {
-    "acres": 1800000.0,
-    "as": "1.8 million acres",
-    "clean": false,
-    "line": "p Explore your forests Experience lush woodlands, cold mountain streams, and unique mountaintop balds on over 1.8 million acres of Appalachian forests. Recreation Opportunities T T T Welcome to the George Washington & Jefferson National",
-    "read": "2026-10-28",
-    "url": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
-    "why": "no total words near it"
-   },
+   "official": null,
    "ours": {
     "acres": 8471,
     "manager": "",
@@ -15078,7 +15011,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 100,
+   "pct": null,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -15108,23 +15041,16 @@
     }
    ],
    "t": "Wilderness Area",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-9944": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 1.8 million acres, no total words near it)",
+   "cause": "a number 6 parks share from one page (1,800,000 ac): an agency total, not this park",
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-10-29",
    "n": "James River Face Wilderness Area",
-   "official": {
-    "acres": 1800000.0,
-    "as": "1.8 million acres",
-    "clean": false,
-    "line": "p Explore your forests Experience lush woodlands, cold mountain streams, and unique mountaintop balds on over 1.8 million acres of Appalachian forests. Recreation Opportunities T T T Welcome to the George Washington & Jefferson National",
-    "read": "2026-10-28",
-    "url": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
-    "why": "no total words near it"
-   },
+   "official": null,
    "ours": {
     "acres": 17754,
     "manager": "",
@@ -15154,7 +15080,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 99,
+   "pct": null,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -15184,23 +15110,16 @@
     }
    ],
    "t": "Wilderness Area",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-9945": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 1.8 million acres, no total words near it)",
+   "cause": "a number 6 parks share from one page (1,800,000 ac): an agency total, not this park",
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-10-29",
    "n": "Kimberling Creek Wilderness Area",
-   "official": {
-    "acres": 1800000.0,
-    "as": "1.8 million acres",
-    "clean": false,
-    "line": "p Explore your forests Experience lush woodlands, cold mountain streams, and unique mountaintop balds on over 1.8 million acres of Appalachian forests. Recreation Opportunities T T T Welcome to the George Washington & Jefferson National",
-    "read": "2026-10-28",
-    "url": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
-    "why": "no total words near it"
-   },
+   "official": null,
    "ours": {
     "acres": 12365,
     "manager": "",
@@ -15230,7 +15149,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 99,
+   "pct": null,
    "same_agency": false,
    "score": 5,
    "score_parts": {
@@ -15260,23 +15179,16 @@
     }
    ],
    "t": "Wilderness Area",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-9946": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 1.8 million acres, no total words near it)",
+   "cause": "a number 6 parks share from one page (1,800,000 ac): an agency total, not this park",
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-10-29",
    "n": "Lewis Fork Wilderness Area",
-   "official": {
-    "acres": 1800000.0,
-    "as": "1.8 million acres",
-    "clean": false,
-    "line": "p Explore your forests Experience lush woodlands, cold mountain streams, and unique mountaintop balds on over 1.8 million acres of Appalachian forests. Recreation Opportunities T T T Welcome to the George Washington & Jefferson National",
-    "read": "2026-10-28",
-    "url": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
-    "why": "no total words near it"
-   },
+   "official": null,
    "ours": {
     "acres": 12155,
     "manager": "",
@@ -15306,7 +15218,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 99,
+   "pct": null,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -15336,12 +15248,13 @@
     }
    ],
    "t": "Wilderness Area",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-9947": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-10-29",
    "n": "Little Dry Run Wilderness Area",
    "official": null,
    "ours": {
@@ -15383,12 +15296,13 @@
    },
    "sizes": [],
    "t": "Wilderness Area",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no size on page"
   },
   "US-9948": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-10-29",
    "n": "Little Wilson Creek Wilderness Area",
    "official": null,
    "ours": {
@@ -15435,12 +15349,13 @@
    },
    "sizes": [],
    "t": "Wilderness Area",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no size on page"
   },
   "US-9949": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-10-29",
    "n": "Mountain Lake Wilderness Area",
    "official": null,
    "ours": {
@@ -15487,12 +15402,13 @@
    },
    "sizes": [],
    "t": "Wilderness Area",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no size on page"
   },
   "US-9950": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-10-29",
    "n": "Peters Mountain Wilderness Area",
    "official": null,
    "ours": {
@@ -15539,12 +15455,13 @@
    },
    "sizes": [],
    "t": "Wilderness Area",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no size on page"
   },
   "US-9951": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-10-29",
    "n": "Priest Wilderness Area",
    "official": null,
    "ours": {
@@ -15591,12 +15508,13 @@
    },
    "sizes": [],
    "t": "Wilderness Area",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no size on page"
   },
   "US-9952": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-10-29",
    "n": "Raccoon Branch Wilderness Area",
    "official": null,
    "ours": {
@@ -15638,12 +15556,13 @@
    },
    "sizes": [],
    "t": "Wilderness Area",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no size on page"
   },
   "US-9953": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-10-29",
    "n": "Ramseys Draft Wilderness Area",
    "official": null,
    "ours": {
@@ -15685,12 +15604,13 @@
    },
    "sizes": [],
    "t": "Wilderness Area",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no size on page"
   },
   "US-9954": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-10-29",
    "n": "Rich Hole Wilderness Area",
    "official": null,
    "ours": {
@@ -15732,12 +15652,13 @@
    },
    "sizes": [],
    "t": "Wilderness Area",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no size on page"
   },
   "US-9955": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-10-29",
    "n": "St. Mary's Wilderness Area",
    "official": null,
    "ours": {
@@ -15779,12 +15700,13 @@
    },
    "sizes": [],
    "t": "Wilderness Area",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no size on page"
   },
   "US-9956": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-10-29",
    "n": "Shawvers Run Wilderness Area",
    "official": null,
    "ours": {
@@ -15826,12 +15748,12 @@
    },
    "sizes": [],
    "t": "Wilderness Area",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no size on page"
   },
   "US-9957": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Shenandoah Wilderness Area",
    "official": {
@@ -15839,7 +15761,7 @@
     "as": "79,579 acres",
     "clean": true,
     "line": "otected as wilderness, the highest form of protection for our public lands. Shenandoah National Park contains 79,579 acres of congressionally designated wilderness, nearly 40% of the park’s acreage. This makes the Shenandoah Wildern",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://www.nps.gov/shen/learn/wilderness.htm",
     "why": "clean total"
    },
@@ -15965,12 +15887,13 @@
     }
    ],
    "t": "Wilderness Area",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-9958": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-10-29",
    "n": "Stone Mountain Wilderness Area",
    "official": null,
    "ours": {
@@ -16018,12 +15941,13 @@
    },
    "sizes": [],
    "t": "Wilderness Area",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no size on page"
   },
   "US-9959": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-10-29",
    "n": "Three Ridges Wilderness Area",
    "official": null,
    "ours": {
@@ -16065,12 +15989,13 @@
    },
    "sizes": [],
    "t": "Wilderness Area",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no size on page"
   },
   "US-9960": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-10-29",
    "n": "Thunder Ridge Wilderness Area",
    "official": null,
    "ours": {
@@ -16112,22 +16037,22 @@
    },
    "sizes": [],
    "t": "Wilderness Area",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no size on page"
   },
   "US-9961": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Dyke Marsh Wildlife Reserve",
    "ours": null,
    "score": null,
    "t": "Wildlife Reserve",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no outline"
   },
   "US-9966": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Vic Thomas Striped Bass State Fish Hatchery",
    "official": {
@@ -16135,7 +16060,7 @@
     "as": "55 acres",
     "clean": false,
     "line": "mmonwealth waters. Background The Virginia Department of Wildlife Resources’ Vic Thomas Fish Hatchery sits on 55 acres along the banks of the Staunton (Roanoke) River in southeastern Campbell County. The hatchery was originally",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://dwr.virginia.gov/fishing/fish-stocking/state-hatcheries/vic-thomas-fish-hatchery/",
     "why": "total-looking"
    },
@@ -16209,12 +16134,12 @@
     }
    ],
    "t": "State Fish Hatchery",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-9967": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "King and Queen State Fish Hatchery",
    "official": null,
@@ -16296,12 +16221,12 @@
     }
    ],
    "t": "State Fish Hatchery",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-9968": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Buller State Fish Hatchery",
    "official": {
@@ -16309,7 +16234,7 @@
     "as": "147 acres",
     "clean": true,
     "line": "in Smyth County Virginia, 8 miles south of Marion near the community of Thomas Bridge. The property comprises 147 acres of land, of which only 35 acres have been developed. The South Fork of the Holston River that flows through t",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://dwr.virginia.gov/fishing/fish-stocking/state-hatcheries/buller-fish-hatchery/",
     "why": "clean total"
    },
@@ -16389,11 +16314,11 @@
     }
    ],
    "t": "State Fish Hatchery",
-   "ver": 7,
+   "ver": 8,
    "verdict": "off"
   },
   "US-9969": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Front Royal State Fish Hatchery",
    "official": null,
@@ -16447,11 +16372,11 @@
    },
    "sizes": [],
    "t": "State Fish Hatchery",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no size on page"
   },
   "US-9970": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Marion Trout State Fish Hatchery",
    "official": null,
@@ -16523,11 +16448,11 @@
    },
    "sizes": [],
    "t": "State Fish Hatchery",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no size on page"
   },
   "US-9971": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Montebello State Fish Hatchery",
    "official": null,
@@ -16581,12 +16506,12 @@
    },
    "sizes": [],
    "t": "State Fish Hatchery",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no size on page"
   },
   "US-9972": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Coursey Spring State Fish Hatchery",
    "official": null,
@@ -16662,12 +16587,12 @@
     }
    ],
    "t": "State Fish Hatchery",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-9973": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 100 acre, no total words near it)",
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Wytheville Trout State Fish Hatchery",
    "official": {
@@ -16675,7 +16600,7 @@
     "as": "100 acre",
     "clean": false,
     "line": "Wildlife Resources (DWR) in 1983. Two deep, underground upwelling aquifers, both of which are located on the 100-acre DWR property surrounding the hatchery complex, supply source water for the facility. Both water sources are h",
-    "read": "2026-10-28",
+    "read": "2026-10-29",
     "url": "https://dwr.virginia.gov/fishing/fish-stocking/state-hatcheries/wytheville-fish-hatchery/",
     "why": "no total words near it"
    },
@@ -16740,11 +16665,11 @@
     }
    ],
    "t": "State Fish Hatchery",
-   "ver": 7,
+   "ver": 8,
    "verdict": "unsure"
   },
   "US-9974": {
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "handover": [],
    "n": "Paint Bank State Fish Hatchery",
    "official": null,
@@ -16798,9 +16723,9 @@
    },
    "sizes": [],
    "t": "State Fish Hatchery",
-   "ver": 7,
+   "ver": 8,
    "verdict": "no size on page"
   }
  },
- "read": "2026-10-28"
+ "read": "2026-10-29"
 }
