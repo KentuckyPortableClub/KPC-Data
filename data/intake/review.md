@@ -5,11 +5,11 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 | verdict | rows |
 |---|---|
 | READY | 8 |
-| WATER-ONLY | 2 |
+| WATER-ONLY | 4 |
 | LIVE-ONLY | 1 |
-| ASK-THE-PUBLISHER | 13 |
-| RETRY | 36 |
-| REJECT | 94 |
+| ASK-THE-PUBLISHER | 15 |
+| RETRY | 66 |
+| REJECT | 108 |
 
 ## READY (8)
 
@@ -177,7 +177,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
   - AU-0042 Shark Bay Marine Park → polygon "Shark Bay, Western Australia"
   - AU-0058 Ningaloo Marine Park → polygon "Ningaloo Coast"
 
-## WATER-ONLY (2)
+## WATER-ONLY (4)
 
 ### ogc_services/Ramsar_Wetlands  ·  AU  ·  from harvester
 - url: https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Ramsar_Wetlands/FeatureServer/0
@@ -203,6 +203,24 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - facts: arcgis-layer · esriGeometryPolygon · name field NAME · 418 records · last edit 2024-04-02 · sample Two Rivers Reservoir / Santa Rosa Reservoir / Conchas Reservoir
 - closes: 0 of 60 tested missing parks (by name 0, pin only 0; 1245 of the area's 1274 missing parks lie in the layer's extent)
 - TEST: ok
+
+### SLIP_Public_Services/Environment  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment/MapServer/3
+- WHY: water only: for the 2-fer owner step only (lakes / reservoirs / water bodies never go in the key as a park outline); otherwise ASK-THE-PUBLISHER: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- FLAG: water only: for the 2-fer owner step only
+- terms: OPEN · source item page · "You are provided access to publicly available data on the terms and conditions of SLIP Transaction - Personal Use Licence, unless you a" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field cwt_suite_name
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 2871 of the area's 2871 missing parks lie in the layer's extent)
+
+### SLIP_Public_Services/Environment_WFS  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment_WFS/MapServer/3
+- WHY: water only: for the 2-fer owner step only (lakes / reservoirs / water bodies never go in the key as a park outline); otherwise ASK-THE-PUBLISHER: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- FLAG: water only: for the 2-fer owner step only
+- terms: OPEN · source item page · "You are provided access to publicly available data on the terms and conditions of SLIP Transaction - Personal Use Licence, unless you a" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment_WFS/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field cwt_suite_name
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 2871 of the area's 2871 missing parks lie in the layer's extent)
 
 ## LIVE-ONLY (1)
 
@@ -235,7 +253,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
   - CZ-0139 Ještěd Nature Park → polygon "Ještěd"
 - TEST: ok
 
-## ASK-THE-PUBLISHER (13)
+## ASK-THE-PUBLISHER (15)
 
 ### AerialPhotoViewer/Orthophoto_Coverage_Area  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/AerialPhotoViewer/Orthophoto_Coverage_Area/MapServer/0
@@ -299,6 +317,16 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
   - AU-11304 Pipe Clay Lagoon - Water Management Area → polygon "Brachionichthys hirsutus"
   - AU-8812 Nutgrove Beach - State Beach → polygon "Brachionichthys hirsutus"
   - AU-8858 Howrah Beach - State Beach → polygon "Brachionichthys hirsutus"
+
+### SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer/0
+- WHY: nothing stated about use on the item page or the service
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NOTHING STATED · source item page · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field name · 18 records · sample Kimberley Gillnet and Barramundi Fishery / Kimberley Gillnet and Barramundi Fishery / Kimberley Gillnet and Barramundi Fishery
+- closes: 2 of 60 tested missing parks (by name 0, pin only 2; 2871 of the area's 2871 missing parks lie in the layer's extent)
+  - AU-0004 Yawuru Birragun Conservation Park → polygon "Kimberley Gillnet and Barramundi Fishery"
+  - AU-0058 Ningaloo Marine Park → polygon "Point Maud to Tantabiddi Closure"
 
 ### SCDNR managed lands (public viewer) on Clemson's ArcGIS Online account  ·  US-SC  ·  from chat 9
 - url: https://services1.arcgis.com/x5wCko8UnSi4h0CB/arcgis/rest/services/SCDNR_Managed_Lands_Public_Viewer/FeatureServer/0
@@ -384,7 +412,15 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - facts: arcgis-layer · esriGeometryPolygon · name field AREA_NAME · 2 records · sample Kent Group Marine Nature Reserve - Restricted Fishing Zone / Port Davey Marine Nature Reserve 
 - closes: 0 of 2 tested missing parks (by name 0, pin only 0; 229 of the area's 2871 missing parks lie in the layer's extent)
 
-## RETRY (36)
+### SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer/1
+- WHY: nothing stated about use on the item page or the service
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NOTHING STATED · source item page · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field name · 63 records · sample Aquaculture Instrument of Exemption / Aquaculture Instrument of Exemption / Aquaculture Instrument of Exemption
+- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 2871 of the area's 2871 missing parks lie in the layer's extent)
+
+## RETRY (66)
 
 ### My favorite camping spots (a hobby map)  ·  US-KY  ·  from chat 9
 - url: https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0
@@ -582,7 +618,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Public/TopographyAndRelief  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/20
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: CREDIT · source item page · "the LIST State of Tasmania the LIST © State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
 - facts: status budget
@@ -590,7 +626,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Public/TopographyAndRelief  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/21
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: CREDIT · source item page · "the LIST State of Tasmania the LIST © State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
 - facts: status budget
@@ -598,7 +634,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Public/TopographyAndRelief  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/22
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: CREDIT · source item page · "the LIST State of Tasmania the LIST © State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
 - facts: status budget
@@ -606,7 +642,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Public/TopographyAndRelief  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/23
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: CREDIT · source item page · "the LIST State of Tasmania the LIST © State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
 - facts: status budget
@@ -614,7 +650,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Public/TopographyAndRelief  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/27
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: CREDIT · source item page · "the LIST State of Tasmania the LIST © State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
 - facts: status budget
@@ -622,7 +658,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Public/TopographyAndRelief  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/35
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: CREDIT · source item page · "the LIST State of Tasmania the LIST © State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
 - facts: status budget
@@ -630,7 +666,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Public/WildFisheries  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/2
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/info/iteminfo
 - facts: status budget
@@ -638,7 +674,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Public/WildFisheries  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/4
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/info/iteminfo
 - facts: status budget
@@ -646,7 +682,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Public/WildFisheries  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/5
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/info/iteminfo
 - facts: status budget
@@ -654,7 +690,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Public/WildFisheries  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/6
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/info/iteminfo
 - facts: status budget
@@ -662,7 +698,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Public/WildFisheries  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/7
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/info/iteminfo
 - facts: status budget
@@ -670,13 +706,319 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Public/WildFisheries  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/8
-- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/info/iteminfo
 - facts: status budget
 - closes: not probed
 
-## REJECT (94)
+### SLIP_Public_Services/Boundaries  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/2
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### SLIP_Public_Services/Boundaries  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/3
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### SLIP_Public_Services/Boundaries  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/4
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### SLIP_Public_Services/Boundaries  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/5
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### SLIP_Public_Services/Boundaries  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/51
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### SLIP_Public_Services/Boundaries  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/52
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### SLIP_Public_Services/Boundaries_WFS  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer/2
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### SLIP_Public_Services/Boundaries_WFS  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer/3
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### SLIP_Public_Services/Boundaries_WFS  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer/4
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### SLIP_Public_Services/Boundaries_WFS  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer/5
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### SLIP_Public_Services/Boundaries_WFS  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer/36
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### SLIP_Public_Services/Boundaries_WFS  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer/37
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer/2
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NOTHING STATED · source item page · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer/3
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NOTHING STATED · source item page · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer/5
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NOTHING STATED · source item page · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer/6
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NOTHING STATED · source item page · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer/7
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NOTHING STATED · source item page · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer/8
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NOTHING STATED · source item page · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### SLIP_Public_Services/Environment  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment/MapServer/4
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reprodu" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### SLIP_Public_Services/Environment  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment/MapServer/5
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reprodu" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### SLIP_Public_Services/Environment  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment/MapServer/83
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reprodu" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### SLIP_Public_Services/Environment  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment/MapServer/84
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reprodu" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### SLIP_Public_Services/Environment_WFS  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment_WFS/MapServer/4
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reprodu" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment_WFS/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### SLIP_Public_Services/Environment_WFS  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment_WFS/MapServer/5
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reprodu" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment_WFS/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### SLIP_Public_Services/Environment_WFS  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment_WFS/MapServer/83
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reprodu" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment_WFS/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### SLIP_Public_Services/Environment_WFS  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment_WFS/MapServer/84
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reprodu" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment_WFS/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### SLIP_Public_Services/Farming  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming/MapServer/4
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: CREDIT · source item page · "SLIP SLIP" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### SLIP_Public_Services/Farming  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming/MapServer/5
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: CREDIT · source item page · "SLIP SLIP" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### SLIP_Public_Services/Farming  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming/MapServer/6
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: CREDIT · source item page · "SLIP SLIP" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### SLIP_Public_Services/Farming  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming/MapServer/7
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: CREDIT · source item page · "SLIP SLIP" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+## REJECT (108)
+
+### SLIP_Public_Services/Boundaries  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/0
+- WHY: NOT A PARK LAYER (coverage): closes 60 but only 0 by name (READY needs 3+ name matches and 25%+ of the closes)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field name · 18 records · sample ACT and Jervis Bay / Central Desert / Geraldton
+- closes: 60 of 60 tested missing parks (by name 0, pin only 60; 2871 of the area's 2871 missing parks lie in the layer's extent)
+  - AU-0002 Willis Island National Park → polygon "Cape York Region"
+  - AU-0004 Yawuru Birragun Conservation Park → polygon "Kimberley"
+  - AU-0027 Tunnel Creek National Park → polygon "Kimberley"
+  - AU-0034 Swan Estuary Marine Park → polygon "South West"
+  - AU-0040 Shoalwater Islands Marine Park → polygon "South West"
+  - AU-0042 Shark Bay Marine Park → polygon "Geraldton"
+  - AU-0046 Rowley Shoals Marine Park → polygon "Kimberley"
+  - AU-0058 Ningaloo Marine Park → polygon "Geraldton"
+  - AU-0060 Ngari Capes Marine Park → polygon "South West"
+  - AU-0066 Mount Manning - Helena And Aurora Ranges Conservation Park → polygon "South West"
+  - AU-0082 Marmion Marine Park → polygon "South West"
+  - AU-0093 Lalang-garram / Camden Sound Marine Park → polygon "Kimberley"
+  - AU-0099 Wunaamin Conservation Park → polygon "Kimberley"
+  - AU-0106 Jurien Bay Marine Park → polygon "South West"
+  - AU-0126 Geikie Gorge National Park → polygon "Kimberley"
+  - AU-0127 Geikie Gorge Conservation Park → polygon "Kimberley"
+  - AU-0135 Eighty Mile Beach Marine Park → polygon "Kimberley"
+  - AU-0162 Brooking Gorge Conservation Park → polygon "Kimberley"
+  - AU-0181 You Yangs Regional Park → polygon "Victoria"
+  - AU-0184 Yarrawonga Regional Park → polygon "New South Wales"
+  - AU-0187 Yaringa Marine National Park → polygon "Victoria"
+  - AU-0196 Woowookarung Regional Park → polygon "Victoria"
+  - AU-0197 Wonthaggi Heathlands Nature Conservation Reserve → polygon "Victoria"
+  - AU-0199 Wodonga Regional Park → polygon "Victoria"
+  - AU-0216 Wandong Regional Park → polygon "Victoria"
+
+### SLIP_Public_Services/Boundaries_WFS  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer/0
+- WHY: NOT A PARK LAYER (coverage): closes 60 but only 0 by name (READY needs 3+ name matches and 25%+ of the closes)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field name · 18 records · sample ACT and Jervis Bay / Central Desert / Geraldton
+- closes: 60 of 60 tested missing parks (by name 0, pin only 60; 2871 of the area's 2871 missing parks lie in the layer's extent)
+  - AU-0002 Willis Island National Park → polygon "Cape York Region"
+  - AU-0004 Yawuru Birragun Conservation Park → polygon "Kimberley"
+  - AU-0027 Tunnel Creek National Park → polygon "Kimberley"
+  - AU-0034 Swan Estuary Marine Park → polygon "South West"
+  - AU-0040 Shoalwater Islands Marine Park → polygon "South West"
+  - AU-0042 Shark Bay Marine Park → polygon "Geraldton"
+  - AU-0046 Rowley Shoals Marine Park → polygon "Kimberley"
+  - AU-0058 Ningaloo Marine Park → polygon "Geraldton"
+  - AU-0060 Ngari Capes Marine Park → polygon "South West"
+  - AU-0066 Mount Manning - Helena And Aurora Ranges Conservation Park → polygon "South West"
+  - AU-0082 Marmion Marine Park → polygon "South West"
+  - AU-0093 Lalang-garram / Camden Sound Marine Park → polygon "Kimberley"
+  - AU-0099 Wunaamin Conservation Park → polygon "Kimberley"
+  - AU-0106 Jurien Bay Marine Park → polygon "South West"
+  - AU-0126 Geikie Gorge National Park → polygon "Kimberley"
+  - AU-0127 Geikie Gorge Conservation Park → polygon "Kimberley"
+  - AU-0135 Eighty Mile Beach Marine Park → polygon "Kimberley"
+  - AU-0162 Brooking Gorge Conservation Park → polygon "Kimberley"
+  - AU-0181 You Yangs Regional Park → polygon "Victoria"
+  - AU-0184 Yarrawonga Regional Park → polygon "New South Wales"
+  - AU-0187 Yaringa Marine National Park → polygon "Victoria"
+  - AU-0196 Woowookarung Regional Park → polygon "Victoria"
+  - AU-0197 Wonthaggi Heathlands Nature Conservation Reserve → polygon "Victoria"
+  - AU-0199 Wodonga Regional Park → polygon "Victoria"
+  - AU-0216 Wandong Regional Park → polygon "Victoria"
 
 ### Public/NaturalEnvironment  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/4
@@ -1462,6 +1804,102 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - terms: CREDIT · source item page · "the LIST State of Tasmania the LIST &copy; State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field NAME · 432 records · sample None / None / None
 - closes: 0 of 2 tested missing parks (by name 0, pin only 0; 80 of the area's 2871 missing parks lie in the layer's extent)
+
+### SLIP_Public_Services/Boundaries  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/1
+- WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field name · 107 records · sample Ballidu / Beverley / Boyup Brook
+- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 2871 of the area's 2871 missing parks lie in the layer's extent)
+
+### SLIP_Public_Services/Boundaries_WFS  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer/1
+- WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reproduce, distribute, commercialise or creat" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field name · 107 records · sample Ballidu / Beverley / Boyup Brook
+- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 2871 of the area's 2871 missing parks lie in the layer's extent)
+
+### SLIP_Public_Services/Environment  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment/MapServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: OPEN · source item page · "You are provided access to publicly available data on the terms and conditions of SLIP Transaction - Personal Use Licence, unless you a" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 772 records
+- closes: not probed
+
+### SLIP_Public_Services/Environment  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment/MapServer/1
+- WHY: no name field: an outline needs a name to match a park
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: OPEN · source item page · "You are provided access to publicly available data on the terms and conditions of SLIP Transaction - Personal Use Licence, unless you a" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 18 records
+- closes: not probed
+
+### SLIP_Public_Services/Environment  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment/MapServer/2
+- WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reprodu" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field name · 6 records · sample Point Quobba Fish Habitat Protection Area / Abrolhos Islands Fish Habitat Protection Area / Cottesloe Reef Fish Habitat Protection Area
+- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 2871 of the area's 2871 missing parks lie in the layer's extent)
+
+### SLIP_Public_Services/Environment_WFS  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment_WFS/MapServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: OPEN · source item page · "You are provided access to publicly available data on the terms and conditions of SLIP Transaction - Personal Use Licence, unless you a" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment_WFS/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 772 records
+- closes: not probed
+
+### SLIP_Public_Services/Environment_WFS  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment_WFS/MapServer/1
+- WHY: no name field: an outline needs a name to match a park
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: OPEN · source item page · "You are provided access to publicly available data on the terms and conditions of SLIP Transaction - Personal Use Licence, unless you a" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment_WFS/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 18 records
+- closes: not probed
+
+### SLIP_Public_Services/Environment_WFS  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment_WFS/MapServer/2
+- WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reprodu" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment_WFS/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field name · 6 records · sample Point Quobba Fish Habitat Protection Area / Abrolhos Islands Fish Habitat Protection Area / Cottesloe Reef Fish Habitat Protection Area
+- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 2871 of the area's 2871 missing parks lie in the layer's extent)
+
+### SLIP_Public_Services/Farming  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming/MapServer/0
+- WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: CREDIT · source item page · "SLIP SLIP" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field name · 30445 records · sample NORTHAMPTON / NORTHAMPTON / WYNDHAM-EAST KIMBERLEY
+- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 2871 of the area's 2871 missing parks lie in the layer's extent)
+
+### SLIP_Public_Services/Farming  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming/MapServer/1
+- WHY: no name field: an outline needs a name to match a park
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: CREDIT · source item page · "SLIP SLIP" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 33713 records
+- closes: not probed
+
+### SLIP_Public_Services/Farming  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming/MapServer/2
+- WHY: no name field: an outline needs a name to match a park
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: CREDIT · source item page · "SLIP SLIP" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 39128 records
+- closes: not probed
+
+### SLIP_Public_Services/Farming  ·  AU  ·  from harvester
+- url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming/MapServer/3
+- WHY: no name field: an outline needs a name to match a park
+- publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
+- terms: CREDIT · source item page · "SLIP SLIP" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon
+- closes: not probed
 
 ## Known-answer test rows
 
