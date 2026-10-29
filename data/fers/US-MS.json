@@ -1515,11 +1515,12 @@
   },
   {
    "acres": 8.7,
+   "acres_all": 17.3,
    "box": [
-    -88.87772,
+    -88.89712,
     33.27427,
     -88.87078,
-    33.28639
+    33.2967
    ],
    "center": [
     33.286253,
@@ -1628,6 +1629,19 @@
     1,
     1
    ],
+   "patches": 2,
+   "pins": [
+    {
+     "at": [
+      33.304035,
+      -88.907526
+     ],
+     "from": "road",
+     "name": "public road",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 101
+    }
+   ],
    "pins_inside": {
     "US-0390": false,
     "US-7085": true
@@ -1664,6 +1678,17 @@
    "wide_m": 35
   },
   {
+   "access": null,
+   "access_pin": {
+    "at": [
+     33.304035,
+     -88.907526
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 101
+   },
    "acres": 8.6,
    "box": [
     -88.89712,
@@ -1675,8 +1700,12 @@
     33.286208,
     -88.893731
    ],
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "found": "2026-10-28",
+   "ground": [
+    "federal",
+    "state"
+   ],
    "id": "US-0390+US-7085@area@33.286,-88.888",
    "kind": "area",
    "lines": {
@@ -1816,15 +1845,34 @@
     ]
    },
    "lines_read": "2026-10-29",
+   "list": "Very tight (members only)",
    "map_dates": {
-    "US-0390": "downloaded 2026-10-28",
-    "US-7085": "downloaded 2026-10-28"
+    "US-0390": "downloaded 2026-10-29",
+    "US-7085": "downloaded 2026-10-29"
+   },
+   "maps": [
+    [
+     "US-0390",
+     "https://www.fws.gov/refuge/noxubee/"
+    ],
+    [
+     "US-7085",
+     "https://www.mdwfp.com/wildlife-hunting/wma/region/east-central/john-w-starr/"
+    ]
+   ],
+   "mixed_owners": [
+    "FED",
+    "STAT"
+   ],
+   "names": {
+    "US-0390": "Noxubee National Wildlife Refuge",
+    "US-7085": "John W. Starr Wildlife Management Area"
    },
    "notes": [
     "check the agency's closures and seasons before you go",
     "restricted access (PAD-US): check the agency rules"
    ],
-   "ownership": "the ownership map shows more than one owner across the spot: FED:FWS, STATE",
+   "ownership": "public land (federal + state)",
    "passes": [
     1,
     1,
@@ -1877,7 +1925,7 @@
      33.293126
     ]
    ],
-   "status": "not sure: the ownership map shows more than one owner across the spot: FED:FWS, STATE",
+   "status": "merged into one row: US-0390+US-7085@area@33.286,-88.878",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 25
   },

@@ -58246,6 +58246,23 @@
    "wide_m": 10
   },
   {
+   "access": [
+    38.648214,
+    -77.164799,
+    "Trailhead: T300 Mason Neck NWR (Virginia DCR)",
+    "US-1308",
+    794
+   ],
+   "access_pin": {
+    "at": [
+     38.647971,
+     -77.167328
+    ],
+    "from": "road",
+    "name": "High Point Rd",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
    "acres": 5.2,
    "box": [
     -77.16846,
@@ -58257,8 +58274,12 @@
     38.654837,
     -77.168342
    ],
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "found": "2026-10-28",
+   "ground": [
+    "federal",
+    "state"
+   ],
    "id": "US-0563+US-1308@area@38.652,-77.168",
    "kind": "area",
    "lines": {
@@ -58662,15 +58683,34 @@
     ]
    },
    "lines_read": "2026-10-29",
+   "list": "Very tight (members only)",
    "map_dates": {
-    "US-0563": "downloaded 2026-10-28",
-    "US-1308": "downloaded 2026-10-28"
+    "US-0563": "downloaded 2026-10-29",
+    "US-1308": "downloaded 2026-10-29"
+   },
+   "maps": [
+    [
+     "US-0563",
+     "https://www.fws.gov/refuge/mason_neck/"
+    ],
+    [
+     "US-1308",
+     "https://www.dcr.virginia.gov/state-parks/document/data/mason-neck-geo-map.pdf"
+    ]
+   ],
+   "mixed_owners": [
+    "FED",
+    "STAT"
+   ],
+   "names": {
+    "US-0563": "Elizabeth Hartwell Mason Neck National Wildlife Refuge",
+    "US-1308": "Mason Neck State Park"
    },
    "notes": [
     "check the agency's closures and seasons before you go",
     "restricted access (PAD-US): check the agency rules"
    ],
-   "ownership": "the ownership map shows more than one owner across the spot: FED:FWS, STATE",
+   "ownership": "public land (federal + state)",
    "passes": [
     1,
     1,
@@ -58706,7 +58746,7 @@
      38.654882
     ]
    ],
-   "status": "not sure: the ownership map shows more than one owner across the spot: FED:FWS, STATE",
+   "status": "very tight: could be map error: check both official maps on the ground",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 23
   },
@@ -99355,7 +99395,7 @@
    "box": [
     -77.07114,
     38.83887,
-    -77.03948,
+    -76.95288,
     38.901
    ],
    "center": [
@@ -99366,7 +99406,7 @@
    "found": "2026-10-28",
    "id": "US-4564+US-4581@trail@38.854,-77.047",
    "kind": "trail",
-   "len_m": 3856,
+   "len_m": 3998,
    "len_main": 3165,
    "line_source": {
     "US-4564": {
@@ -99422,21 +99462,11 @@
     },
     {
      "at": [
-      38.900829,
-      -77.070932
+      38.866634,
+      -76.95312
      ],
      "from": "road",
-     "name": "George Washington Memorial Pkwy",
-     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-     "walk_m": 0
-    },
-    {
-     "at": [
-      38.900829,
-      -77.070932
-     ],
-     "from": "road",
-     "name": "George Washington Memorial Pkwy",
+     "name": "38th St SE",
      "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
      "walk_m": 0
     }
@@ -99484,9 +99514,20 @@
     ]
    ],
    "status": "candidate",
-   "stretches": 3
+   "stretches": 2
   },
   {
+   "access": null,
+   "access_pin": {
+    "at": [
+     38.866634,
+     -76.95312
+    ],
+    "from": "road",
+    "name": "38th St SE",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
    "box": [
     -76.95407,
     38.86622,
@@ -99497,19 +99538,55 @@
     38.866581,
     -76.952927
    ],
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "found": "2026-10-28",
+   "ground": [
+    "Park Service",
+    "local"
+   ],
    "id": "US-4564+US-4581@trail@38.867,-76.953",
    "kind": "trail",
    "len_m": 142,
+   "line_source": {
+    "US-4564": {
+     "by": "National Park Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4564.json"
+    },
+    "US-4581": {
+     "by": "National Park Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4581.json",
+     "note": "approximate line (national historic trail, about 1:100,000)"
+    }
+   },
    "map_dates": {
     "US-4564": "official line (trails bot)",
     "US-4581": "official line (trails bot)"
    },
+   "maps": [
+    [
+     "US-4564",
+     "https://www.nps.gov/pohe/planyourvisit/maps.htm"
+    ],
+    [
+     "US-4581",
+     "https://www.nps.gov/stsp/upload/508-StarSpangled-Side2-2.pdf"
+    ]
+   ],
+   "mixed_owners": [
+    "FED:NPS",
+    "LOCAL"
+   ],
+   "names": {
+    "US-4564": "Potomac Heritage Trail National Scenic Trail",
+    "US-4581": "Star-Spangled Banner National Historic Trail"
+   },
+   "note": "approximate line: Star-Spangled Banner National Historic Trail",
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
-   "ownership": "the ownership map shows more than one owner across the spot: FED:NPS, LOCAL",
+   "ownership": "public land (Park Service + local)",
    "passes": [
     1,
     1,
@@ -99661,7 +99738,7 @@
      38.86628
     ]
    ],
-   "status": "not sure: the ownership map shows more than one owner across the spot: FED:NPS, LOCAL"
+   "status": "merged into one row: US-4564+US-4581@trail@38.854,-77.047"
   },
   {
    "box": [
@@ -102738,6 +102815,17 @@
    "zone_wide_m": 65.9
   },
   {
+   "access": null,
+   "access_pin": {
+    "at": [
+     38.680446,
+     -77.219567
+    ],
+    "from": "road",
+    "name": "Old Colchester Rd",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
    "box": [
     -77.20822,
     38.66077,
@@ -102748,19 +102836,48 @@
     38.661759,
     -77.19376
    ],
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "found": "2026-10-28",
+   "ground": [
+    "BLM",
+    "local"
+   ],
    "id": "US-4564+US-9937@trail@38.662,-77.194",
    "kind": "trail",
    "len_m": 4756,
+   "line_source": {
+    "US-4564": {
+     "by": "National Park Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4564.json"
+    }
+   },
    "map_dates": {
     "US-4564": "official line (trails bot)",
-    "US-9937": "downloaded 2026-10-28"
+    "US-9937": "downloaded 2026-10-29"
+   },
+   "maps": [
+    [
+     "US-4564",
+     "https://www.nps.gov/pohe/planyourvisit/maps.htm"
+    ],
+    [
+     "US-9937",
+     "https://www.blm.gov/visit/meadowood-special-recreation-management-area"
+    ]
+   ],
+   "mixed_owners": [
+    "FED:BLM",
+    "LOCAL"
+   ],
+   "names": {
+    "US-4564": "Potomac Heritage Trail National Scenic Trail",
+    "US-9937": "Meadowood BLM Special Recreation Management Area"
    },
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
-   "ownership": "the ownership map shows more than one owner across the spot: FED:BLM, LOCAL",
+   "ownership": "public land (BLM + local)",
    "passes": [
     1,
     1,
@@ -102789,7 +102906,8 @@
      38.67709
     ]
    ],
-   "status": "not sure: the ownership map shows more than one owner across the spot: FED:BLM, LOCAL",
+   "status": "candidate",
+   "strip_wide_m": 70.0,
    "zone": [
     [
      [

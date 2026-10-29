@@ -25765,6 +25765,23 @@
    "wide_m": 20
   },
   {
+   "access": [
+    25.194788,
+    -80.345915,
+    "Parking: Key Largo Charlemagne Blvd. (Florida DEP)",
+    "US-1886",
+    17431
+   ],
+   "access_pin": {
+    "at": [
+     25.337412,
+     -80.272603
+    ],
+    "from": "road",
+    "name": "Harbour House",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 752
+   },
    "acres": 1.5,
    "box": [
     -80.27522,
@@ -25776,8 +25793,12 @@
     25.338264,
     -80.274127
    ],
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "found": "2026-10-28",
+   "ground": [
+    "federal",
+    "state"
+   ],
    "id": "US-0236+US-1886@area@25.339,-80.275",
    "kind": "area",
    "lines": {
@@ -26251,15 +26272,34 @@
     ]
    },
    "lines_read": "2026-10-29",
+   "list": "Very tight (members only)",
    "map_dates": {
-    "US-0236": "downloaded 2026-10-28",
-    "US-1886": "downloaded 2026-10-28"
+    "US-0236": "downloaded 2026-10-29",
+    "US-1886": "downloaded 2026-10-29"
+   },
+   "maps": [
+    [
+     "US-0236",
+     "https://www.fws.gov/refuge/crocodile_lake/"
+    ],
+    [
+     "US-1886",
+     "https://www.floridastateparks.org/parks-and-trails/john-pennekamp-coral-reef-state-park"
+    ]
+   ],
+   "mixed_owners": [
+    "FED",
+    "STAT"
+   ],
+   "names": {
+    "US-0236": "Crocodile Lake National Wildlife Refuge",
+    "US-1886": "John Pennekamp Coral Reef State Park"
    },
    "notes": [
     "check the agency's closures and seasons before you go",
     "restricted access (PAD-US): check the agency rules"
    ],
-   "ownership": "the ownership map shows more than one owner across the spot: FED:FWS, STATE",
+   "ownership": "public land (federal + state)",
    "passes": [
     1,
     1,
@@ -26319,7 +26359,7 @@
      25.339033
     ]
    ],
-   "status": "not sure: the ownership map shows more than one owner across the spot: FED:FWS, STATE",
+   "status": "very tight: could be map error: check both official maps on the ground",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 23
   },
@@ -100759,6 +100799,7 @@
   },
   {
    "acres": 46.1,
+   "acres_all": 47.1,
    "box": [
     -81.49084,
     29.11039,
@@ -103981,6 +104022,19 @@
     1,
     1
    ],
+   "patches": 2,
+   "pins": [
+    {
+     "at": [
+      29.141153,
+      -81.438655
+     ],
+     "from": "road",
+     "name": "Bluffton Dr",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 398
+    }
+   ],
    "pins_inside": {
     "US-0246": true,
     "US-4627": true
@@ -104803,6 +104857,23 @@
    "wide_m": 39
   },
   {
+   "access": [
+    29.172361,
+    -81.407444,
+    "Entrance (Florida Fish and Wildlife Conservation Commission)",
+    "US-4627",
+    4545
+   ],
+   "access_pin": {
+    "at": [
+     29.141153,
+     -81.438655
+    ],
+    "from": "road",
+    "name": "Bluffton Dr",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 398
+   },
    "acres": 1.0,
    "box": [
     -81.43412,
@@ -104814,8 +104885,12 @@
     29.138515,
     -81.433971
    ],
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "found": "2026-10-28",
+   "ground": [
+    "federal",
+    "state"
+   ],
    "id": "US-0246+US-4627@area@29.142,-81.432",
    "kind": "area",
    "lines": {
@@ -104897,15 +104972,34 @@
     ]
    },
    "lines_read": "2026-10-29",
+   "list": "Very tight (members only)",
    "map_dates": {
-    "US-0246": "downloaded 2026-10-28",
-    "US-4627": "downloaded 2026-10-28"
+    "US-0246": "downloaded 2026-10-29",
+    "US-4627": "downloaded 2026-10-29"
+   },
+   "maps": [
+    [
+     "US-0246",
+     "https://www.fws.gov/refuge/lake_woodruff/"
+    ],
+    [
+     "US-4627",
+     "https://www.fdacs.gov/Forest-Wildfire/Our-Forests/State-Forests/Lake-George-State-Forest"
+    ]
+   ],
+   "mixed_owners": [
+    "FED",
+    "STAT"
+   ],
+   "names": {
+    "US-0246": "Lake Woodruff National Wildlife Refuge",
+    "US-4627": "Lake George State Forest"
    },
    "notes": [
     "check the agency's closures and seasons before you go",
     "restricted access (PAD-US): check the agency rules"
    ],
-   "ownership": "the ownership map shows more than one owner across the spot: FED:FWS, STATE",
+   "ownership": "public land (federal + state)",
    "passes": [
     1,
     1,
@@ -104933,7 +105027,7 @@
      29.138243
     ]
    ],
-   "status": "not sure: the ownership map shows more than one owner across the spot: FED:FWS, STATE",
+   "status": "merged into one row: US-0246+US-4627@area@29.120,-81.486",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 23
   },
@@ -105472,6 +105566,23 @@
    "wide_m": 10
   },
   {
+   "access": [
+    25.049674,
+    -80.489315,
+    "Boat ramp / launch: Sunset Point Park Public Boat Ramp Florida Bay (Florida Fish and Wildlife Conservation Commission)",
+    "US-3620",
+    97080
+   ],
+   "access_pin": {
+    "at": [
+     24.66998,
+     -81.361321
+    ],
+    "from": "road",
+    "name": "Loma Ln",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 5
+   },
    "acres": 0.6,
    "box": [
     -81.3546,
@@ -105483,8 +105594,12 @@
     24.669786,
     -81.354501
    ],
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "found": "2026-10-28",
+   "ground": [
+    "federal",
+    "state"
+   ],
    "id": "US-0250+US-3620@area@24.670,-81.354",
    "kind": "area",
    "lines": {
@@ -105700,15 +105815,34 @@
     ]
    },
    "lines_read": "2026-10-29",
+   "list": "Very tight (members only)",
    "map_dates": {
-    "US-0250": "downloaded 2026-10-28",
-    "US-3620": "downloaded 2026-10-28"
+    "US-0250": "downloaded 2026-10-29",
+    "US-3620": "downloaded 2026-10-29"
+   },
+   "maps": [
+    [
+     "US-0250",
+     "https://www.fws.gov/refuge/national_key_deer_refuge/"
+    ],
+    [
+     "US-3620",
+     "https://www.floridastateparks.org/parks-and-trails/florida-keys-overseas-heritage-trail"
+    ]
+   ],
+   "mixed_owners": [
+    "FED",
+    "STAT"
+   ],
+   "names": {
+    "US-0250": "National Key Deer National Wildlife Refuge",
+    "US-3620": "Florida Keys Overseas Heritage Trail State Park"
    },
    "notes": [
     "check the agency's closures and seasons before you go",
     "restricted access (PAD-US): check the agency rules"
    ],
-   "ownership": "the ownership map shows more than one owner across the spot: FED:FWS, STATE",
+   "ownership": "public land (federal + state)",
    "passes": [
     1,
     1,
@@ -105740,7 +105874,7 @@
      24.669876
     ]
    ],
-   "status": "not sure: the ownership map shows more than one owner across the spot: FED:FWS, STATE",
+   "status": "very tight: could be map error: check both official maps on the ground",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 25
   },
@@ -106335,6 +106469,17 @@
    "wide_m": 10
   },
   {
+   "access": null,
+   "access_pin": {
+    "at": [
+     24.71305,
+     -81.434977
+    ],
+    "from": "road",
+    "name": "Dorn Rd",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 10
+   },
    "acres": 2.3,
    "box": [
     -81.42015,
@@ -106346,8 +106491,12 @@
     24.69839,
     -81.418028
    ],
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "found": "2026-10-28",
+   "ground": [
+    "federal",
+    "state"
+   ],
    "id": "US-0250+US-6303@area@24.698,-81.420",
    "kind": "area",
    "lines": {
@@ -107021,15 +107170,34 @@
     ]
    },
    "lines_read": "2026-10-29",
+   "list": "Very tight (members only)",
    "map_dates": {
-    "US-0250": "downloaded 2026-10-28",
-    "US-6303": "downloaded 2026-10-28"
+    "US-0250": "downloaded 2026-10-29",
+    "US-6303": "downloaded 2026-10-29"
+   },
+   "maps": [
+    [
+     "US-0250",
+     "https://www.fws.gov/refuge/national_key_deer_refuge/"
+    ],
+    [
+     "US-6303",
+     "https://myfwc.com/recreation/lead/florida-keys/"
+    ]
+   ],
+   "mixed_owners": [
+    "FED",
+    "STAT"
+   ],
+   "names": {
+    "US-0250": "National Key Deer National Wildlife Refuge",
+    "US-6303": "Florida Keys Wildlife Area"
    },
    "notes": [
     "check the agency's closures and seasons before you go",
     "restricted access (PAD-US): check the agency rules"
    ],
-   "ownership": "the ownership map shows more than one owner across the spot: FED:FWS, STATE",
+   "ownership": "public land (federal + state)",
    "passes": [
     1,
     1,
@@ -107061,7 +107229,7 @@
      24.69848
     ]
    ],
-   "status": "not sure: the ownership map shows more than one owner across the spot: FED:FWS, STATE",
+   "status": "very tight: could be map error: check both official maps on the ground",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 25
   },
@@ -107291,11 +107459,12 @@
   },
   {
    "acres": 4.6,
+   "acres_all": 15.2,
    "box": [
     -84.4983,
-    29.99942,
-    -84.49451,
-    30.00711
+    29.99612,
+    -84.47506,
+    30.01077
    ],
    "center": [
     29.999691,
@@ -107465,6 +107634,19 @@
     1,
     1
    ],
+   "patches": 2,
+   "pins": [
+    {
+     "at": [
+      29.999656,
+      -84.498281
+     ],
+     "from": "road",
+     "name": "Ochlockonee River State Park",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 0
+    }
+   ],
    "pins_inside": {
     "US-0256": true,
     "US-1907": true
@@ -107559,6 +107741,23 @@
    "wide_m": 10
   },
   {
+   "access": [
+    30.008426,
+    -84.474654,
+    "Boat ramp / launch: Ochlockonee River State Park - Group Campsite (Reservation (Florida Fish and Wildlife Conservation Commission)",
+    "US-1907",
+    567
+   ],
+   "access_pin": {
+    "at": [
+     29.999656,
+     -84.498281
+    ],
+    "from": "road",
+    "name": "Ochlockonee River State Park",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
    "acres": 10.6,
    "box": [
     -84.48533,
@@ -107570,8 +107769,12 @@
     30.010679,
     -84.479936
    ],
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "found": "2026-10-28",
+   "ground": [
+    "federal",
+    "state"
+   ],
    "id": "US-0256+US-1907@area@30.011,-84.485",
    "kind": "area",
    "lines": {
@@ -107939,15 +108142,34 @@
     ]
    },
    "lines_read": "2026-10-29",
+   "list": "Very tight (members only)",
    "map_dates": {
-    "US-0256": "downloaded 2026-10-28",
-    "US-1907": "downloaded 2026-10-28"
+    "US-0256": "downloaded 2026-10-29",
+    "US-1907": "downloaded 2026-10-29"
+   },
+   "maps": [
+    [
+     "US-0256",
+     "https://www.fws.gov/refuge/st_marks/"
+    ],
+    [
+     "US-1907",
+     "https://www.floridastateparks.org/parks-and-trails/ochlockonee-river-state-park"
+    ]
+   ],
+   "mixed_owners": [
+    "FED",
+    "STAT"
+   ],
+   "names": {
+    "US-0256": "St. Marks National Wildlife Refuge",
+    "US-1907": "Ochlockonee River State Park"
    },
    "notes": [
     "check the agency's closures and seasons before you go",
     "restricted access (PAD-US): check the agency rules"
    ],
-   "ownership": "the ownership map shows more than one owner across the spot: FED:FWS, STATE",
+   "ownership": "public land (federal + state)",
    "passes": [
     1,
     1,
@@ -107991,7 +108213,7 @@
      30.010634
     ]
    ],
-   "status": "not sure: the ownership map shows more than one owner across the spot: FED:FWS, STATE",
+   "status": "merged into one row: US-0256+US-1907@area@30.000,-84.496",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 25
   },

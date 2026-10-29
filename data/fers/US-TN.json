@@ -53941,6 +53941,23 @@
    "wide_m": 10
   },
   {
+   "access": [
+    35.626078,
+    -89.860283,
+    "Parking (pavement inventory)",
+    "US-2947",
+    1734
+   ],
+   "access_pin": {
+    "at": [
+     35.613421,
+     -89.872479
+    ],
+    "from": "road",
+    "name": "Old Fulton Rd",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 115
+   },
    "acres": 0.9,
    "box": [
     -89.8769,
@@ -53952,8 +53969,12 @@
     35.618118,
     -89.876793
    ],
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "found": "2026-10-28",
+   "ground": [
+    "federal",
+    "state"
+   ],
    "id": "US-0537+US-2947@area@35.618,-89.877",
    "kind": "area",
    "lines": {
@@ -54157,15 +54178,34 @@
     ]
    },
    "lines_read": "2026-10-29",
+   "list": "Very tight (members only)",
    "map_dates": {
-    "US-0537": "downloaded 2026-10-28",
-    "US-2947": "downloaded 2026-10-28"
+    "US-0537": "downloaded 2026-10-29",
+    "US-2947": "downloaded 2026-10-29"
+   },
+   "maps": [
+    [
+     "US-0537",
+     "https://www.fws.gov/refuge/Lower_Hatchie/"
+    ],
+    [
+     "US-2947",
+     "https://tnstateparks.com/parks/fort-pillow"
+    ]
+   ],
+   "mixed_owners": [
+    "FED",
+    "STAT"
+   ],
+   "names": {
+    "US-0537": "Lower Hatchie National Wildlife Refuge",
+    "US-2947": "Fort Pillow State Park"
    },
    "notes": [
     "check the agency's closures and seasons before you go",
     "restricted access (PAD-US): check the agency rules"
    ],
-   "ownership": "the ownership map shows more than one owner across the spot: FED:FWS, STATE",
+   "ownership": "public land (federal + state)",
    "passes": [
     1,
     1,
@@ -54193,7 +54233,7 @@
      35.616084
     ]
    ],
-   "status": "not sure: the ownership map shows more than one owner across the spot: FED:FWS, STATE",
+   "status": "very tight: could be map error: check both official maps on the ground",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 25
   },
@@ -292430,7 +292470,7 @@
      36.29223
     ]
    ],
-   "status": "candidate",
+   "status": "dropped: two park numbers joined to one record by name, pins 12 km apart and not both inside the same part of it (a wrong join in the key)",
    "stretches": 21
   },
   {
@@ -442300,7 +442340,7 @@
     "US-7581": "Cordell Hull Waterfowl Refuge Wildlife Management Area"
    },
    "note": "both park numbers are joined to the same official outline (Cordell Hull WMA); POTA lists them separately: check POTA's current list",
-   "owner_here": "owner not published",
+   "owner_here": "federal land (from the outline both numbers are joined to)",
    "passes": [
     1,
     1,

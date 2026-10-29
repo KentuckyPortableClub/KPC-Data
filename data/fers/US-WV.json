@@ -73099,6 +73099,23 @@
    "wide_m": 10
   },
   {
+   "access": [
+    37.536772,
+    -80.982821,
+    "Boat ramp / launch (WV Division of Natural Resources; mixed site owners)",
+    "US-1820",
+    2599
+   ],
+   "access_pin": {
+    "at": [
+     37.547044,
+     -80.986626
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 451
+   },
    "acres": 5.5,
    "box": [
     -80.99443,
@@ -73110,8 +73127,12 @@
     37.558473,
     -80.994146
    ],
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "found": "2026-10-28",
+   "ground": [
+    "state",
+    "unk"
+   ],
    "id": "US-0697+US-1804+US-1820@area@37.557,-80.994",
    "kind": "area",
    "lines": {
@@ -73351,15 +73372,44 @@
     ]
    },
    "lines_read": "2026-10-29",
+   "list": "Very tight (members only)",
    "map_dates": {
-    "US-0697": "downloaded 2026-10-28",
-    "US-1804": "downloaded 2026-10-28",
-    "US-1820": "downloaded 2026-10-28"
+    "US-0697": "downloaded 2026-10-29",
+    "US-1804": "downloaded 2026-10-29",
+    "US-1820": "downloaded 2026-10-29"
+   },
+   "maps": [
+    [
+     "US-0697",
+     "https://www.nps.gov/blue/index.htm"
+    ],
+    [
+     "US-1804",
+     "https://wvstateparks.com/park/bluestone-state-park/"
+    ],
+    [
+     "US-1820",
+     "https://wvstateparks.com/park/pipestem-resort-state-park/"
+    ]
+   ],
+   "mixed_owners": [
+    "STATE",
+    "UNK"
+   ],
+   "names": {
+    "US-0697": "Bluestone National Wild and Scenic River",
+    "US-1804": "Bluestone State Park",
+    "US-1820": "Pipestem Resort State Park"
    },
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
-   "ownership": "the ownership map shows more than one owner across the spot: STATE, UNK",
+   "ownership": "public land (state + unk)",
+   "pairs_around": [
+    "US-0697+US-1804",
+    "US-0697+US-1820",
+    "US-1804+US-1820"
+   ],
    "passes": [
     1,
     1,
@@ -73421,7 +73471,7 @@
      37.558609
     ]
    ],
-   "status": "not sure: the ownership map shows more than one owner across the spot: STATE, UNK",
+   "status": "very tight: could be map error: check both official maps on the ground",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 23
   },
@@ -75710,6 +75760,7 @@
     "US-1804": "Bluestone State Park"
    },
    "nfer_here": [
+    "US-0697+US-1804+US-1820@area@37.557,-80.994",
     "US-0697+US-1804+US-7037@area@37.601,-80.946"
    ],
    "notes": [
@@ -78847,6 +78898,9 @@
     "US-0697": "Bluestone National Wild and Scenic River",
     "US-1820": "Pipestem Resort State Park"
    },
+   "nfer_here": [
+    "US-0697+US-1804+US-1820@area@37.557,-80.994"
+   ],
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
@@ -104644,6 +104698,23 @@
    "wide_m": 10
   },
   {
+   "access": [
+    37.536772,
+    -80.982821,
+    "Boat ramp / launch (WV Division of Natural Resources; mixed site owners)",
+    "US-1820",
+    2244
+   ],
+   "access_pin": {
+    "at": [
+     37.546674,
+     -80.986503
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 419
+   },
    "acres": 7.1,
    "box": [
     -80.99442,
@@ -104655,8 +104726,12 @@
     37.554941,
     -80.99414
    ],
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "found": "2026-10-28",
+   "ground": [
+    "state",
+    "unk"
+   ],
    "id": "US-1804+US-1820@area@37.559,-80.994",
    "kind": "area",
    "lines": {
@@ -104860,14 +104935,36 @@
     ]
    },
    "lines_read": "2026-10-29",
+   "list": "Very tight (members only)",
    "map_dates": {
-    "US-1804": "downloaded 2026-10-28",
-    "US-1820": "downloaded 2026-10-28"
+    "US-1804": "downloaded 2026-10-29",
+    "US-1820": "downloaded 2026-10-29"
    },
+   "maps": [
+    [
+     "US-1804",
+     "https://wvstateparks.com/park/bluestone-state-park/"
+    ],
+    [
+     "US-1820",
+     "https://wvstateparks.com/park/pipestem-resort-state-park/"
+    ]
+   ],
+   "mixed_owners": [
+    "STATE",
+    "UNK"
+   ],
+   "names": {
+    "US-1804": "Bluestone State Park",
+    "US-1820": "Pipestem Resort State Park"
+   },
+   "nfer_here": [
+    "US-0697+US-1804+US-1820@area@37.557,-80.994"
+   ],
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
-   "ownership": "the ownership map shows more than one owner across the spot: STATE, UNK",
+   "ownership": "public land (state + unk)",
    "passes": [
     1,
     1,
@@ -104951,7 +105048,7 @@
      37.558377
     ]
    ],
-   "status": "not sure: the ownership map shows more than one owner across the spot: STATE, UNK",
+   "status": "very tight: could be map error: check both official maps on the ground",
    "tier": "very tight: could be map error: check both official maps on the ground",
    "wide_m": 25
   },

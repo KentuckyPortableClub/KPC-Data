@@ -898,18 +898,21 @@
     "US-4564",
     "US-9937"
    ],
-   "names": {},
-   "what": "not sure",
+   "names": {
+    "US-4564": "Potomac Heritage Trail National Scenic Trail",
+    "US-9937": "Meadowood BLM Special Recreation Management Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
    "kind": "trail",
    "size": "5201 yd of line",
    "sort": 118.9,
-   "reason": "the ownership map shows more than one owner across the spot: FED:BLM, LOCAL",
+   "reason": "candidate \u00b7 ['FED:BLM', 'LOCAL']",
    "id": "US-4564+US-9937@trail@38.662,-77.194",
    "sources": {
     "US-4564": "official line (trails bot)",
-    "US-9937": "downloaded 2026-10-28"
+    "US-9937": "downloaded 2026-10-29"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "southeast",
@@ -3689,25 +3692,6 @@
    "area": "southeast",
    "state": "",
    "refs": [
-    "US-4564",
-    "US-9937"
-   ],
-   "names": {},
-   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
-   "kind": "pair",
-   "size": "55 same-day activations",
-   "sort": 55.0,
-   "reason": "not sure: the ownership map shows more than one owner across the spot: FED:BLM, LOCAL",
-   "id": "US-4564+US-9937@pota",
-   "sources": {
-    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (55x, POTA history)"
-   },
-   "checked": "2026-10-29"
-  },
-  {
-   "area": "southeast",
-   "state": "",
-   "refs": [
     "US-0662",
     "US-2177"
    ],
@@ -5627,25 +5611,6 @@
    "area": "southeast",
    "state": "",
    "refs": [
-    "US-0563",
-    "US-1308"
-   ],
-   "names": {},
-   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
-   "kind": "pair",
-   "size": "43 same-day activations",
-   "sort": 43.0,
-   "reason": "not sure: the ownership map shows more than one owner across the spot: FED:FWS, STATE",
-   "id": "US-0563+US-1308@pota",
-   "sources": {
-    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (43x, POTA history)"
-   },
-   "checked": "2026-10-29"
-  },
-  {
-   "area": "southeast",
-   "state": "",
-   "refs": [
     "US-1861",
     "US-4636"
    ],
@@ -7386,25 +7351,6 @@
    "id": "US-8361+US-8367@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (37x, POTA history)"
-   },
-   "checked": "2026-10-29"
-  },
-  {
-   "area": "southeast",
-   "state": "",
-   "refs": [
-    "US-0236",
-    "US-1886"
-   ],
-   "names": {},
-   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
-   "kind": "pair",
-   "size": "36 same-day activations",
-   "sort": 36.0,
-   "reason": "not sure: the ownership map shows more than one owner across the spot: FED:FWS, STATE",
-   "id": "US-0236+US-1886@pota",
-   "sources": {
-    "POTA history": "activated together by the same call on the same day (36x, POTA history) / outlines about 0 m apart"
    },
    "checked": "2026-10-29"
   },
@@ -11892,44 +11838,6 @@
    "id": "US-0245+US-1877@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (27x, POTA history)"
-   },
-   "checked": "2026-10-29"
-  },
-  {
-   "area": "southeast",
-   "state": "",
-   "refs": [
-    "US-0250",
-    "US-6303"
-   ],
-   "names": {},
-   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
-   "kind": "pair",
-   "size": "27 same-day activations",
-   "sort": 27.0,
-   "reason": "dropped in pass 3",
-   "id": "US-0250+US-6303@pota",
-   "sources": {
-    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (27x, POTA history)"
-   },
-   "checked": "2026-10-29"
-  },
-  {
-   "area": "southeast",
-   "state": "",
-   "refs": [
-    "US-1804",
-    "US-1820"
-   ],
-   "names": {},
-   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
-   "kind": "pair",
-   "size": "27 same-day activations",
-   "sort": 27.0,
-   "reason": "dropped in pass 3",
-   "id": "US-1804+US-1820@pota",
-   "sources": {
-    "POTA history": "activated together by the same call on the same day (27x, POTA history) / outlines about 0 m apart"
    },
    "checked": "2026-10-29"
   },
@@ -17370,25 +17278,6 @@
    "area": "southeast",
    "state": "",
    "refs": [
-    "US-0250",
-    "US-3620"
-   ],
-   "names": {},
-   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
-   "kind": "pair",
-   "size": "21 same-day activations",
-   "sort": 21.0,
-   "reason": "dropped in pass 2",
-   "id": "US-0250+US-3620@pota",
-   "sources": {
-    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (21x, POTA history)"
-   },
-   "checked": "2026-10-29"
-  },
-  {
-   "area": "southeast",
-   "state": "",
-   "refs": [
     "US-10601",
     "US-8707"
    ],
@@ -18709,25 +18598,6 @@
    "sort": 20.0,
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "id": "US-0416+US-6934@pota",
-   "sources": {
-    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (20x, POTA history)"
-   },
-   "checked": "2026-10-29"
-  },
-  {
-   "area": "southeast",
-   "state": "",
-   "refs": [
-    "US-0537",
-    "US-2947"
-   ],
-   "names": {},
-   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
-   "kind": "pair",
-   "size": "20 same-day activations",
-   "sort": 20.0,
-   "reason": "dropped in pass 3",
-   "id": "US-0537+US-2947@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (20x, POTA history)"
    },
@@ -43669,26 +43539,6 @@
   },
   {
    "area": "southeast",
-   "state": "US-FL",
-   "refs": [
-    "US-0256",
-    "US-1907"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "10.6 ac",
-   "sort": 10.6,
-   "reason": "the ownership map shows more than one owner across the spot: FED:FWS, STATE",
-   "id": "US-0256+US-1907@area@30.011,-84.485",
-   "sources": {
-    "US-0256": "downloaded 2026-10-28",
-    "US-1907": "downloaded 2026-10-28"
-   },
-   "checked": "2026-10-28"
-  },
-  {
-   "area": "southeast",
    "state": "US-TN",
    "refs": [
     "US-3940",
@@ -48900,26 +48750,6 @@
   },
   {
    "area": "southeast",
-   "state": "US-MS",
-   "refs": [
-    "US-0390",
-    "US-7085"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "8.6 ac",
-   "sort": 8.6,
-   "reason": "the ownership map shows more than one owner across the spot: FED:FWS, STATE",
-   "id": "US-0390+US-7085@area@33.286,-88.888",
-   "sources": {
-    "US-0390": "downloaded 2026-10-28",
-    "US-7085": "downloaded 2026-10-28"
-   },
-   "checked": "2026-10-28"
-  },
-  {
-   "area": "southeast",
    "state": "US-SC",
    "refs": [
     "US-4577",
@@ -49933,18 +49763,21 @@
     "US-1804",
     "US-1820"
    ],
-   "names": {},
-   "what": "not sure",
+   "names": {
+    "US-1804": "Bluestone State Park",
+    "US-1820": "Pipestem Resort State Park"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
    "kind": "area",
    "size": "7.1 ac",
    "sort": 7.1,
-   "reason": "the ownership map shows more than one owner across the spot: STATE, UNK",
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['STATE', 'UNK']",
    "id": "US-1804+US-1820@area@37.559,-80.994",
    "sources": {
-    "US-1804": "downloaded 2026-10-28",
-    "US-1820": "downloaded 2026-10-28"
+    "US-1804": "downloaded 2026-10-29",
+    "US-1820": "downloaded 2026-10-29"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "southeast",
@@ -52536,19 +52369,23 @@
     "US-1804",
     "US-1820"
    ],
-   "names": {},
-   "what": "not sure",
+   "names": {
+    "US-0697": "Bluestone National Wild and Scenic River",
+    "US-1804": "Bluestone State Park",
+    "US-1820": "Pipestem Resort State Park"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
    "kind": "area",
    "size": "5.5 ac",
    "sort": 5.5,
-   "reason": "the ownership map shows more than one owner across the spot: STATE, UNK",
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['STATE', 'UNK']",
    "id": "US-0697+US-1804+US-1820@area@37.557,-80.994",
    "sources": {
-    "US-0697": "downloaded 2026-10-28",
-    "US-1804": "downloaded 2026-10-28",
-    "US-1820": "downloaded 2026-10-28"
+    "US-0697": "downloaded 2026-10-29",
+    "US-1804": "downloaded 2026-10-29",
+    "US-1820": "downloaded 2026-10-29"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "southeast",
@@ -52557,18 +52394,21 @@
     "US-0563",
     "US-1308"
    ],
-   "names": {},
-   "what": "not sure",
+   "names": {
+    "US-0563": "Elizabeth Hartwell Mason Neck National Wildlife Refuge",
+    "US-1308": "Mason Neck State Park"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
    "kind": "area",
    "size": "5.2 ac",
    "sort": 5.2,
-   "reason": "the ownership map shows more than one owner across the spot: FED:FWS, STATE",
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED', 'STAT']",
    "id": "US-0563+US-1308@area@38.652,-77.168",
    "sources": {
-    "US-0563": "downloaded 2026-10-28",
-    "US-1308": "downloaded 2026-10-28"
+    "US-0563": "downloaded 2026-10-29",
+    "US-1308": "downloaded 2026-10-29"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "southeast",
@@ -53695,6 +53535,25 @@
    "area": "southeast",
    "state": "",
    "refs": [
+    "US-6893",
+    "US-6894"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "5 same-day activations",
+   "sort": 5.0,
+   "reason": "dropped: two park numbers joined to one record by name, pins 34 km apart and not both inside the same part of it (a wrong join in the key)",
+   "id": "US-6893+US-6894@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (5x, POTA history)"
+   },
+   "checked": "2026-10-29"
+  },
+  {
+   "area": "southeast",
+   "state": "",
+   "refs": [
     "US-6908",
     "US-6930"
    ],
@@ -53996,18 +53855,21 @@
     "US-0250",
     "US-6303"
    ],
-   "names": {},
-   "what": "not sure",
+   "names": {
+    "US-0250": "National Key Deer National Wildlife Refuge",
+    "US-6303": "Florida Keys Wildlife Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
    "kind": "area",
    "size": "2.3 ac",
    "sort": 2.3,
-   "reason": "the ownership map shows more than one owner across the spot: FED:FWS, STATE",
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED', 'STAT']",
    "id": "US-0250+US-6303@area@24.698,-81.420",
    "sources": {
-    "US-0250": "downloaded 2026-10-28",
-    "US-6303": "downloaded 2026-10-28"
+    "US-0250": "downloaded 2026-10-29",
+    "US-6303": "downloaded 2026-10-29"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "southeast",
@@ -54080,38 +53942,21 @@
     "US-0236",
     "US-1886"
    ],
-   "names": {},
-   "what": "not sure",
+   "names": {
+    "US-0236": "Crocodile Lake National Wildlife Refuge",
+    "US-1886": "John Pennekamp Coral Reef State Park"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
    "kind": "area",
    "size": "1.5 ac",
    "sort": 1.5,
-   "reason": "the ownership map shows more than one owner across the spot: FED:FWS, STATE",
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED', 'STAT']",
    "id": "US-0236+US-1886@area@25.339,-80.275",
    "sources": {
-    "US-0236": "downloaded 2026-10-28",
-    "US-1886": "downloaded 2026-10-28"
+    "US-0236": "downloaded 2026-10-29",
+    "US-1886": "downloaded 2026-10-29"
    },
-   "checked": "2026-10-28"
-  },
-  {
-   "area": "southeast",
-   "state": "US-NC",
-   "refs": [
-    "US-0417",
-    "US-2749"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "1.4 ac",
-   "sort": 1.4,
-   "reason": "the ownership map shows more than one owner across the spot: FED:FWS, STATE",
-   "id": "US-0417+US-2749@area@35.876,-76.278",
-   "sources": {
-    "US-0417": "downloaded 2026-10-28",
-    "US-2749": "downloaded 2026-10-28"
-   },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "southeast",
@@ -54155,43 +54000,26 @@
   },
   {
    "area": "southeast",
-   "state": "US-FL",
-   "refs": [
-    "US-0246",
-    "US-4627"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "1.0 ac",
-   "sort": 1.0,
-   "reason": "the ownership map shows more than one owner across the spot: FED:FWS, STATE",
-   "id": "US-0246+US-4627@area@29.142,-81.432",
-   "sources": {
-    "US-0246": "downloaded 2026-10-28",
-    "US-4627": "downloaded 2026-10-28"
-   },
-   "checked": "2026-10-28"
-  },
-  {
-   "area": "southeast",
    "state": "US-TN",
    "refs": [
     "US-0537",
     "US-2947"
    ],
-   "names": {},
-   "what": "not sure",
+   "names": {
+    "US-0537": "Lower Hatchie National Wildlife Refuge",
+    "US-2947": "Fort Pillow State Park"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
    "kind": "area",
    "size": "0.9 ac",
    "sort": 0.9,
-   "reason": "the ownership map shows more than one owner across the spot: FED:FWS, STATE",
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED', 'STAT']",
    "id": "US-0537+US-2947@area@35.618,-89.877",
    "sources": {
-    "US-0537": "downloaded 2026-10-28",
-    "US-2947": "downloaded 2026-10-28"
+    "US-0537": "downloaded 2026-10-29",
+    "US-2947": "downloaded 2026-10-29"
    },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   },
   {
    "area": "southeast",
@@ -54247,38 +54075,21 @@
     "US-0250",
     "US-3620"
    ],
-   "names": {},
-   "what": "not sure",
+   "names": {
+    "US-0250": "National Key Deer National Wildlife Refuge",
+    "US-3620": "Florida Keys Overseas Heritage Trail State Park"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
    "kind": "area",
    "size": "0.6 ac",
    "sort": 0.6,
-   "reason": "the ownership map shows more than one owner across the spot: FED:FWS, STATE",
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED', 'STAT']",
    "id": "US-0250+US-3620@area@24.670,-81.354",
    "sources": {
-    "US-0250": "downloaded 2026-10-28",
-    "US-3620": "downloaded 2026-10-28"
+    "US-0250": "downloaded 2026-10-29",
+    "US-3620": "downloaded 2026-10-29"
    },
-   "checked": "2026-10-28"
-  },
-  {
-   "area": "southeast",
-   "state": "US-SC",
-   "refs": [
-    "US-3879",
-    "US-9225"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "0.5 ac",
-   "sort": 0.5,
-   "reason": "the ownership map shows more than one owner across the spot: STATE, UNK",
-   "id": "US-3879+US-9225@area@34.680,-83.326",
-   "sources": {
-    "US-3879": "downloaded 2026-10-28",
-    "US-9225": "downloaded 2026-10-28"
-   },
-   "checked": "2026-10-28"
+   "checked": "2026-10-29"
   }
  ]
 }

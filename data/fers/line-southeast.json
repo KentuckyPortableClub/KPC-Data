@@ -13,16 +13,14 @@
   "US-MS"
  ],
  "since": "2026-10-28",
- "date": "2026-10-29 10:13 UTC",
- "verdict": "PART READY FOR CHAT 8",
- "why": [
-  "US-NC: 1 live 'same land' rows with pins over 30 km apart (a wrong join in the key): US-6893+US-6894@same land@36.311,-76.687"
- ],
+ "date": "2026-10-29 11:43 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
  "known_answers": "19/19 on 2026-10-29",
  "missing_check": {
-  "FOUND": 533,
-  "DROPPED": 1533,
-  "NEVER LOOKED AT": 14397
+  "FOUND": 539,
+  "DROPPED": 1527,
+  "NEVER LOOKED AT": 14376
  },
  "report": {
   "pass1": {
@@ -49,7 +47,7 @@
  },
  "files": {
   "US-TN": "data/fers/US-TN.json",
-  "US-NC": "data/fers/US-NC.json.gz",
+  "US-NC": "data/fers/US-NC.json",
   "US-VA": "data/fers/US-VA.json",
   "US-WV": "data/fers/US-WV.json",
   "US-GA": "data/fers/US-GA.json",
@@ -65,56 +63,51 @@
   "unfinished": 0,
   "not_sure": {
    "the outlines overlap, but the PAD-US Park Service fee record": 2,
-   "the ownership map shows more than one owner across the spot": 1,
    "no public owner on the ownership map": 1,
    "low-confidence outline for Land Between the Lakes National R": 1
   },
-  "dropped": 518,
+  "dropped": 519,
   "merged": 86
  },
  "US-NC": {
   "rows": 901,
-  "live": 93,
+  "live": 92,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "the ownership map shows more than one owner across the spot": 1,
    "the outlines overlap, but the PAD-US Park Service fee record": 2,
    "the outlines overlap, but the Forest Service ownership map": 1
   },
-  "dropped": 594,
-  "merged": 210
+  "dropped": 595,
+  "merged": 211
  },
  "US-VA": {
   "rows": 148,
-  "live": 50,
+  "live": 52,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "the ownership map shows more than one owner across the spot": 3,
    "no public owner on the ownership map": 2
   },
   "dropped": 35,
-  "merged": 58
+  "merged": 59
  },
  "US-WV": {
   "rows": 292,
-  "live": 30,
+  "live": 32,
   "waiting": 0,
   "unfinished": 0,
-  "not_sure": {
-   "the ownership map shows more than one owner across the spot": 2
-  },
+  "not_sure": {},
   "dropped": 214,
   "merged": 46
  },
  "US-GA": {
   "rows": 289,
-  "live": 56,
+  "live": 55,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {},
-  "dropped": 168,
+  "dropped": 169,
   "merged": 65
  },
  "US-AL": {
@@ -128,11 +121,10 @@
  },
  "US-SC": {
   "rows": 234,
-  "live": 29,
+  "live": 30,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "the ownership map shows more than one owner across the spot": 1,
    "no public owner on the ownership map": 2
   },
   "dropped": 127,
@@ -140,17 +132,16 @@
  },
  "US-FL": {
   "rows": 1273,
-  "live": 202,
+  "live": 205,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "the ownership map shows more than one owner across the spot": 5,
    "no public owner on the ownership map": 9,
    "owner not known for Suwannee River State Park": 1,
    "owner not known for Apalachicola River Wildlife Area": 3
   },
   "dropped": 778,
-  "merged": 275
+  "merged": 277
  },
  "US-MS": {
   "rows": 95,
@@ -158,17 +149,17 @@
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "the ownership map shows more than one owner across the spot": 1,
    "the official outline of Canal Section Wildlife Management Ar": 3,
    "the official outline of Twin Oaks Wildlife Management Area c": 1,
    "the official outline of Okatibbee Wildlife Management Area c": 1,
    "the official outline of Ward Bayou Wildlife Management Area": 1
   },
   "dropped": 31,
-  "merged": 48
+  "merged": 49
  },
  "states_ready": [
   "US-TN",
+  "US-NC",
   "US-VA",
   "US-WV",
   "US-GA",
@@ -177,7 +168,5 @@
   "US-FL",
   "US-MS"
  ],
- "states_held": [
-  "US-NC"
- ]
+ "states_held": []
 }
