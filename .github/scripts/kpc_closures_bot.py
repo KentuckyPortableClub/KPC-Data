@@ -268,6 +268,9 @@ def nth_weekday_dates(s, year):
     return frm, d + dt.timedelta(days - 1)
 
 
+CAMP_OK_RX = re.compile(r'\b(?:primitive |overnight |tent |designated )?camping (?:is |will be )?(?:allowed|permitted)\b|\bcamp(?:ing)? (?:only )?(?:is )?(?:allowed|permitted) (?:in|at|on)\b|\bdesignated camp(?:ing )?(?:sites?|areas?) (?:are )?(?:available|provided)\b', re.I)
+
+
 def classify(sent, ctx=None):
     """ONE sentence -> None (nothing for us), {'skip': why} (a look-alike, logged as unreadable) or
     {'class': whole|part|hunt|seasonal|note, 'note_kind': ..., 'what': ..., 'from': date, 'to': date, 'flags': {...}, 'lang': en|fr}.
@@ -318,6 +321,9 @@ def classify(sent, ctx=None):
         return {'skip': "a quota-hunt RESULTS table row (applicants, harvest %, odds = last season), not this season's closure (round 10)"}
     if ctx.get('hunt_page') and re.search(r'\b(?:shooting|target|tube|archery|rifle|club)\s+ranges?\b|\bthe range\b', low):
         return {'skip': 'a shooting-range note, not the park (Sheet 2)'}
+    if ctx.get('hunt_page') and CAMP_OK_RX.search(s) and not re.search(r'\b(?:no|not|prohibited|never|except)\b', low):
+        return {'from': None, 'to': None, 'dates_clear': True, 'flags': {'emergency': False, 'longterm': True, 'annually': False}, 'lang': 'en',
+                'class': 'note', 'note_kind': 'camping_allowed', 'what': '\u26fa Camping allowed at this WMA'}   # Brandon Oct 28 9:35 PM: short, no campground details
     if ctx.get('hunt_page') and re.search(r'\bonly open (?:during|for) (?:the )?(?:\w+ )?quota hunts?\b', low):
         return {'from': None, 'to': None, 'dates_clear': True, 'flags': {'emergency': False, 'longterm': True, 'annually': False}, 'lang': 'en',
                 'class': 'note', 'note_kind': 'land', 'what': 'open only to drawn quota hunters (closed to the public the rest of the year)'}
@@ -361,14 +367,20 @@ def classify(sent, ctx=None):
         return {**base, 'class': 'note', 'note_kind': 'permit', 'what': 'permit needed'}
     if RULES_RX.search(s) and not re.search(r'\b(entering|occupying|entry|access)\b', low) and not WHOLE_PHRASE.search(s) \
             and not (has_close and re.search(r'\b(road|trail|campground|area|unit|portion)s?\b[^.]{0,30}\bclos', low)):
-        return {**base, 'class': 'note', 'note_kind': 'rules', 'what': 'camping or fire rule'}            # CL-3
+        # Brandon Oct 28 9:35 PM: a standing prohibition ('camping prohibited', 'no ATVs / horseback') = NO note; only a dated or
+        # declared FIRE order (burn ban, fire restriction, stage 1/2) stays a note (CL-3)
+        if not (frm or to) and not re.search(r'\b(burn ban|fire (?:ban|restriction|danger|order)s?|stage [12]|red flag)\b', low):
+            return {'skip': "a standing prohibition: no note (Brandon Oct 28 9:35 PM)"}
+        return {**base, 'class': 'note', 'note_kind': 'rules', 'what': 'fire order' if re.search(r'\bfire|burn', low) else 'camping or fire rule'}   # CL-3
     if VEHICLE_RX.search(s) and not VEHICLE_NOT.search(s):
         return {**base, 'class': 'note', 'note_kind': 'vehicles', 'what': _object(s, ctx) or 'road closed to vehicles'}   # GA2 / G4
     if not has_close:
         if CAUTION_RX.search(s) and re.search(r'\b(suspended|out of service|closed|closure|limited|not guaranteed|lapse|shutdown|low water|high water|boil water|algae|algal|bloom)\b', low):
             return {**base, 'class': 'note', 'note_kind': 'caution', 'what': 'caution'}
         if CAUTION_RX.search(s): return {'skip': 'a safety tip with no place or service named (chat 11 regrade)'}
-        if HUNT_SEASON_RX.search(s): return {**base, 'class': 'note', 'note_kind': 'season', 'what': 'hunting season'}
+        if HUNT_SEASON_RX.search(s):
+            if not (frm or to): return {'skip': 'a hunting-season line with no date: not an item (chat 11)'}
+            return {**base, 'class': 'note', 'note_kind': 'season', 'what': 'hunting season'}
         return None
     if re.search(r'lapse in appropriations|shutdown', low) and not WHOLE_PHRASE.search(s) and not re.search(r'park (is )?closed|closed to all', low):
         return {**base, 'class': 'note', 'note_kind': 'caution', 'what': 'services limited'}              # D-R7
@@ -585,6 +597,8 @@ def entries_from_lines(lines, park_hint=None, hunt=False):
         for sent in split_sentences(ln):
             if CLOSE_RX.search(sent) or PERMIT_RX.search(sent) or LAND_RX.search(sent) or CAUTION_RX.search(sent) or RULES_RX.search(sent) or HUNT_RX.search(sent) or HUNT_SEASON_RX.search(sent):
                 out.append({'head': head, 'names': names, 'updated': upd, 'sent': sent[:600], 'year': year, 'hunt_page': hunt})
+            elif hunt and CAMP_OK_RX.search(sent):
+                out.append({'head': head, 'names': names, 'updated': upd, 'sent': sent[:600], 'year': year, 'hunt_page': True})
             elif hunt and HUNT_ROW.search(sent) and (D1.search(sent) or DNUM.search(sent)):
                 out.append({'head': head, 'names': names, 'updated': upd, 'sent': sent[:600], 'year': year, 'hunt_page': True})
     return out
@@ -1137,6 +1151,19 @@ NO_PARK = [   # round 9 (chat 11 round 8): KDFWR alerts about places POTA does n
 ]
 
 
+def nearest_name(t, area):
+    """Chat 11 (Oct 28): an unmatched notice is listed WITH the park whose name shares the most words, so a person can judge the
+    match (a hint in the review file only: never a tie)."""
+    try:
+        GEN = {'lake', 'lakes', 'river', 'state', 'park', 'parks', 'area', 'areas', 'wildlife', 'management', 'boat', 'ramp', 'ramps', 'closed', 'closure', 'temporarily', 'national', 'forest', 'creek', 'west', 'east', 'north', 'south', 'county', 'recreation', 'trail', 'road', 'bridge', 'access', 'public', 'site', 'center', 'nature', 'preserve', 'refuge', 'fish', 'repairs', 'activity', 'activities', 'boating', 'recreational'}
+        w = _words(t) - GEN; best = (0, '')
+        for ref, v in park_list(area).items():
+            k = len(w & (_words(v[0]) - GEN))
+            if k > best[0]: best = (k, f'{v[0]} ({ref})')
+        return best[1] if best[0] >= 1 else ''
+    except Exception: return ''  # noqa: BLE001
+
+
 def why_no_park(t):
     return next((w for rx, w in NO_PARK if re.search(rx, str(t), re.I)), '')
 
@@ -1546,7 +1573,12 @@ def write_review(state, review):
         oos = sum(v.get('out_of_state') or 0 for v in (D.get('sources') or {}).values())
         if oos: L += [f'Dropped as another state\'s place (multi-state forest): {oos} notices', '']
         um = [(s, u) for s, v in (D.get('sources') or {}).items() for u in (v.get('unmatched') or [])]
-        if um: L += ['Unmatched (two parks or none; for chat 8): ' + '; '.join(f'{u} [{s}]' + (f' = {why_no_park(u)}' if why_no_park(u) else '') for s, u in um[:30]), '']
+        if um:
+            L += ['Unmatched (two parks or none; for chat 11 to judge):']
+            for s, u in um[:30]:
+                nn = nearest_name(u, area)
+                L.append(f'- {u} [{s}]' + (f' = {why_no_park(u)}' if why_no_park(u) else '') + (f' · nearest park name: {nn}' if nn else ' · no park name shares a word'))
+            L.append('')
         own = ky_own_items() if area == 'US-KY' else uc_by_area.get(area)
         if own is not None:
             who = "Kentucky's own reader (kpc_park_alerts.py + hc-)" if area == 'US-KY' else 'data/alerts/us-parks.json (uc- items)'
@@ -1578,7 +1610,11 @@ SELFTEST = [  # (sentence, context, expected class, expected note_kind or what-c
     ("Flint Ridge Road is closed for repaving through Nov 15.", {'updated': dt.date(2026, 10, 10)}, 'part', 'flint ridge road', (None, dt.date(2026, 11, 15))),
     ("Entering or occupying any portion of the tornado-damaged National Forest System lands in Pulaski and Laurel Counties is prohibited.", {}, 'part', 'tornado', (None, None)),
     ("Park closed to all visitors.", {}, 'whole', None, (None, None)),
-    ("Camping within 300 feet of National Forest System Road 918 is prohibited.", {}, 'note', 'rules', (None, None)),
+    ("Camping within 300 feet of National Forest System Road 918 is prohibited.", {}, None, None, None),   # Brandon Oct 28 9:35 PM: prohibitions = no note
+    ("ATVs, horseback riding, and camping are prohibited.", {'hunt_page': True}, None, None, None),
+    ("A countywide burn ban is in effect; campfires are prohibited.", {}, 'note', 'rules', (None, None)),
+    ("Primitive camping is permitted in designated areas only.", {'hunt_page': True}, 'note', 'camping_allowed', (None, None)),
+    ("No camping is permitted on the WMA.", {'hunt_page': True}, None, None, None),
     # look-alikes: none of these may become a closure (D-R1)
     ("The trail is not closed.", {}, None, None, None),
     ("The Fort Henry Trail has reopened after storm damage.", {}, None, None, None),
