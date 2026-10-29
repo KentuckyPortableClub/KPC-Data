@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """KPC BOT MANNERS (Fable, chat 10 'bot workshop', Oct 28 2026). ONE small module every workshop bot imports, so the house
 rules are written once: robots.txt obeyed (exemptions: ArcGIS's documented REST API by path, /rest/services/ and /sharing/rest/,
-HQ Oct 27; and the keyed government APIs RIDB + NPS API, HQ (chat 7) Oct 29 'KEYED GOVERNMENT APIS'), 1 request / 2 s per host, back-off on 429 / 5xx, three strikes
+HQ Oct 27), 1 request / 2 s per host, back-off on 429 / 5xx, three strikes
 = that host rests a day (remembered across runs in the bot's state file), range reads for PDFs, a User-Agent that names the club
 site and never an email. Nothing here decides anything about a park: it only fetches politely.
 
@@ -13,9 +13,7 @@ import re, time, urllib.error, urllib.parse, urllib.request, urllib.robotparser
 
 SITE = 'https://kentuckyportableclub.github.io/KPC-Links/'
 ARCGIS_API = re.compile(r'/(rest/services|sharing/rest)/', re.I)
-# HQ (chat 7) Oct 29 12:11 AM (CLAUDE.md 'KEYED GOVERNMENT APIS'): official government data APIs that issue program keys are used
-# with our key even if robots.txt disallows, same manners (2 s per host, back-off, three strikes). Plain pages still obey robots.
-KEYED_API = re.compile(r'^(ridb\.recreation\.gov|developer\.nps\.gov)$', re.I)
+# Oct 29 5:38 AM (Brandon: 'I never said yes to that'): NO keyed-API exception; robots.txt is obeyed everywhere except ArcGIS REST.
 
 
 class Manners:
@@ -36,8 +34,6 @@ class Manners:
         h = self.host(u)
         if ARCGIS_API.search(urllib.parse.urlparse(u).path or ''):
             self.stat['arcgis_exempt'] += 1; return True      # HQ Oct 27 10:57 PM: documented REST API paths only
-        if KEYED_API.match(h) and '/api/' in (urllib.parse.urlparse(u).path or ''):
-            self.stat['keyed_api'] = self.stat.get('keyed_api', 0) + 1; return True   # HQ (chat 7) Oct 29: RIDB + NPS API with our key
         if h not in self.robots:
             rp = urllib.robotparser.RobotFileParser()
             try:
