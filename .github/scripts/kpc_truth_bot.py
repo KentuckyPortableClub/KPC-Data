@@ -48,7 +48,7 @@ REFRESH_DAYS = int(os.environ.get('REFRESH_DAYS') or 7)
 TOL = 0.15
 PDF_FIRST = 400_000
 TODAY = time.strftime('%Y-%m-%d')
-VER = 12   # Oct 28 (chat 11's KY grade): '708, 879' parse + summed lakes, other-unit pages, history words + stale years, unsure carries a cause, own-page handover hints, quoted URLs, 10-row gate, same-agency label
+VER = 13   # Oct 28 (chat 11's KY grade): '708, 879' parse + summed lakes, other-unit pages, history words + stale years, unsure carries a cause, own-page handover hints, quoted URLs, 10-row gate, same-agency label
 QUEUE = ['US-KY',
          'US-TN', 'US-NC', 'US-VA', 'US-WV', 'US-GA', 'US-AL', 'US-SC', 'US-FL', 'US-MS',
          'US-IN', 'US-IL', 'US-MO', 'US-WI', 'US-MN', 'US-IA', 'US-ND', 'US-SD',
@@ -78,7 +78,7 @@ TOTALWORD = re.compile(r'encompass|cover|consist|compris|total|spans|protects|in
                        r'(?:park|area|refuge|forest|preserve|reserve|site|tract|property|monument|seashore|lakeshore|wma|lands?) (?:of|is|has|contains|covers|totals?|encompasses|includes) ', re.I)
 # V4 fix 3: HISTORY / marketing words always win (a land grant, a deed, 'of wilderness'); PART words lose to a CLEAN total sentence
 HISTORY = re.compile(r'\bgrants?\b|grant of|conveyed|deeded|\bpatent|totall?ing|of wilderness|originally|\bonce\b|land grant|granted|surveyed|'
-                     r'(?:established|founded|created|designated|dedicated|opened|acquired|purchased)\b[^.;]{0,60}\b(?:1[6-9]\d\d|20[01]\d)\b|\bgoal\b|\bplans? to\b|\bauthorized\b|\bapproved\b|\bproposed\b|acquisition boundary|\bup to\b|\bwill (?:protect|cover|include|enable|allow|let)', re.I)   # v9: 'established in 1938 as a 4,589-acre refuge', 'our goal is to protect 20,000 acres'
+                     r'(?:established|founded|created|designated|dedicated|opened|acquired|purchased)\b[^.;]{0,60}\b(?:1[6-9]\d\d|20[01]\d)\b|\bgoal\b|\bplans? to\b|\bauthorized\b|\bapproved\b|\bproposed\b|acquisition boundary|\bup to\b|\bwill (?:protect|cover|include|enable|allow|let)|\b(?:19|20)\d\d\b[^.;]{0,40}\bdonat|\bdonat\w*\b[^.;]{0,60}\b(?:19|20)\d\d\b', re.I)   # v13: 'In 2019, 10 acres were donated … to establish' = history   # v9: 'established in 1938 as a 4,589-acre refuge', 'our goal is to protect 20,000 acres'
 OLD_YEAR = re.compile(r'in (?:1[6-8]\d\d|19[0-4]\d)', re.I)   # an old year BEFORE the number ('In 1931, 800 acres were donated'): history
 PART = re.compile(r'\blake\b.*\bacre|acre[- ]lake|reservoir|pond|campground|campsite|parking|picnic|golf|cemetery|garden|\blawns?\b|\bfields?\b|\bpools?\b|beach|marsh of|wetland of|per acre|acre[- ]feet|acre feet|acres? (?:of|in) (?:water|lake|pond|wetland|crop|timber|hunting|fields?)|'
                   r'burn|harvest|logged|planted|restored|treated|easement|acquired|purchas|added|expansion|donat|'
@@ -255,8 +255,16 @@ def judge(ours, sizes):
     if not ours: return 'ours unknown', (sizes[0] if sizes else None), None
     usable = [s for s in sizes if s['why'] not in UNIT_WHYS]
     agree = [s for s in usable if off_by(ours, s['acres']) is not None and off_by(ours, s['acres']) <= TOL]
-    if agree:
-        best = min(agree, key=lambda s: off_by(ours, s['acres'])); return 'agree', best, round(off_by(ours, best['acres']) * 100)
+    clean = [s for s in usable if s.get('clean')]
+    strong_agree = [s for s in agree if s.get('clean') or s.get('total')]
+    if agree and (strong_agree or not clean):
+        pool = strong_agree or agree
+        best = min(pool, key=lambda s: off_by(ours, s['acres'])); return 'agree', best, round(off_by(ours, best['acres']) * 100)
+    if agree and clean:   # v13 (Kentucky Ridge): a map label / no-total number that matches ours never beats the agency's CLEAN total sentence
+        best = dict(min(clean, key=lambda s: off_by(ours, s['acres'])))
+        w = min(agree, key=lambda s: off_by(ours, s['acres']))
+        best['why'] = (best.get('why') or 'clean total') + f"; the agency's pages disagree: another of its pages says {w['as']} (that one matches our outline)"
+        return 'off', best, round(off_by(ours, best['acres']) * 100)
     for pool in ([s for s in usable if s.get('clean')], [s for s in usable if s['total']]):
         if pool:
             best = min(pool, key=lambda s: off_by(ours, s['acres']))
@@ -724,7 +732,15 @@ def run_area(area, state, web, docs_all, ky, ak, retired, bscore, news):
         try:
             new = one_park(ref, park, ours, web, docs, ky, retired, bscore.get(ref))
             if old and old.get('verdict') not in (None, 'not read', 'no official page on file') and not any(p.get('status') == 'ok' for p in new.get('pages') or []):
-                old['last_read_failed'] = TODAY; old['ver'] = VER; new = old   # every page failed (403 / rest): keep what we knew
+                old['last_read_failed'] = TODAY; old['ver'] = VER
+                if ours:                                  # v13 (GW & Jefferson): the kept row takes TODAY's outline numbers (whole park), then is judged again
+                    old['ours'] = ours
+                    oa = (old.get('official') or {}).get('acres')
+                    if oa and old.get('verdict') in ('off', 'agree'):
+                        ob = off_by(ours['acres'], oa)
+                        if ob is not None: old['verdict'] = 'agree' if ob <= TOL else 'off'; old['pct'] = round(ob * 100)
+                    if ours.get('whole_park'): old['note'] = f"whole park compared (POTA lists it in {len(ours.get('acres_by_state') or {})} states: {ours.get('acres_by_state')})"
+                new = old   # every page failed (403 / rest): keep what we knew
             D['parks'][ref] = new
         except Exception as e:  # noqa: BLE001
             STAT['errors'] += 1
@@ -857,7 +873,7 @@ KNOWN_ANSWERS = [   # R6 + chat 11's grade (Oct 28): the Kentucky gate; PASS onl
     ('US-10104', 'Red River WSR: official acres is not 879 (the "708, 879" parse)', lambda p, D: _off(p).get('acres') != 879),
     ('US-0295', 'Clarks River NWR: official acres is not the 73,962 land grant', lambda p, D: _off(p).get('acres') != 73962),
     ('US-0703+US-3790', 'Fort Donelson and Fort Heiman do not share one official page', lambda p, D: not (_off(D['parks'].get('US-0703') or {}).get('url')) or _off(D['parks'].get('US-0703') or {}).get('url') != _off(D['parks'].get('US-3790') or {}).get('url')),
-    ('US-10098', 'Green River NWR OFF (clean 9,500 vs ours)', lambda p, D: p.get('verdict') == 'off'),
+    ('US-10098', "Green River NWR is never the 2019 '10 acres donated' line (FWS took down the 9,500-ac page Oct 29: the old row cannot be checked)", lambda p, D: _off(p).get('acres') != 10 and p.get('verdict') != 'agree'),
     ('US-4689', 'Kentucky Ridge SF OFF (15,251 vs 11,736 = 23%)', lambda p, D: p.get('verdict') == 'off'),
     ('US-3800', 'Cedar Creek Lake WMA OFF (ours 2,390 vs 796)', lambda p, D: p.get('verdict') == 'off' and (p.get('ours') or {}).get('acres') == 2390 and _off(p).get('acres') == 796),
     ('US-0050', "Mammoth Cave OFF with cause 'boundary vs owned'", lambda p, D: p.get('verdict') == 'off' and 'boundary vs owned' in str(p.get('cause') or '')),
@@ -874,6 +890,7 @@ SIZE_CASES = [   # v11 (chat 11, Oct 28 9 PM): real sentences from the VA / IL g
     ('Kentucky Ridge State Forest', 'Kentucky Ridge State Forest consists of 15,251 acres and was acquired by lease in 1930, as part of the Land Use and Resettlement Program.', 'total', 15251),
     ('Big Oak Tree State Park', 'Big Oak Tree State Park covers 1,029 acres along Big Oak Road in Mississippi County.', 'total', 1029),
     ('Reelfoot National Wildlife Refuge', 'The refuge was established in 1941 as a 10,428-acre refuge.', 'not_total', 10428),
+    ('Green River National Wildlife Refuge', 'In 2019, 10-acres were donated by Southern Conservation Corporation to establish Green River National Wildlife Refuge under the', 'none_total', 10),
 ]
 
 
@@ -881,7 +898,7 @@ def size_cases():
     bad = []
     for name, sent, want, acres in SIZE_CASES:
         got = [s for s in sizes_in(sent, name) if abs(s['acres'] - acres) < 0.6]
-        ok = (not got) if want == 'none' else (bool(got) and not any(s['total'] for s in got)) if want == 'not_total' else any(s['total'] for s in got)
+        ok = (not got) if want == 'none' else (not got or all(s['why'] in EXCLUDED for s in got)) if want == 'none_total' else (bool(got) and not any(s['total'] for s in got)) if want == 'not_total' else any(s['total'] for s in got)
         if not ok: bad.append(f'known sentence wrong ({want} {acres:g}): {sent[:50]}')
     return bad
 
@@ -947,7 +964,7 @@ def main():
     for area in areas:
         if late(): break
         run_area(area, state, web, docs_all, kyd, ak, retired, bscore, news)
-    if os.environ.get('TEST') == '1': ky_test(state)
+    if os.environ.get('TEST') == '1' and 'US-KY' in areas: ky_test(state)   # v13: the Kentucky gate only on a Kentucky run (it was stamping KY's FAIL on VA / IL)
     state['hosts'] = M.resting()
     state['last'] = {'when': TODAY, 'areas': areas[:8], 'stat': STAT, 'manners': M.stat}
     save(OUT / 'state.json', state)
