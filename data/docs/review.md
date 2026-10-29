@@ -13,8 +13,8 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-GA | 237 | 139 | 93 | 124 | 16 | 82 | 41 | 98 | 41 | 60 | 0 |
 | US-AL | 155 | 82 | 62 | 41 | 11 | 25 | 46 | 73 | 34 | 4 | 0 |
 | US-SC | 167 | 26 | 15 | 23 | 2 | 15 | 9 | 141 | 67 | 0 | 0 |
-| US-FL | 460 | 165 | 149 | 143 | 19 | 122 | 24 | 295 | 66 | 89 | 0 |
-| US-MS | 155 | 33 | 26 | 20 | 0 | 19 | 14 | 122 | 46 | 92 | 0 |
+| US-FL | 460 | 165 | 149 | 143 | 19 | 122 | 24 | 295 | 63 | 22 | 0 |
+| US-MS | 155 | 33 | 25 | 21 | 0 | 19 | 14 | 122 | 45 | 93 | 0 |
 | US-IN | 229 | 22 | 19 | 19 | 1 | 7 | 14 | 207 | 11 | 0 | 0 |
 | US-IL | 219 | 99 | 93 | 30 | 5 | 80 | 14 | 120 | 166 | 0 | 0 |
 | US-MO | 561 | 513 | 499 | 498 | 241 | 199 | 73 | 48 | 27 | 2 | 0 |
@@ -865,9 +865,9 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-8349 | Gourd Island State Conservation Area | https://aws.sjrwmd.com/SJRWMD/lands/recreation/Gourd_Island_Conservation_Area.pdf | pdf ✓name · linked from the agency page (aws.sjrwmd. | 2023 (file stamp 2023 (older than the posting 2025 ) · posted Jan 22, 2025 |  ✗ |  |
 | US-8336 | Bayard State Conservation Area | https://aws.sjrwmd.com/SJRWMD/lands/recreation/JP-Hall-Bayard_Conservation_Area.pdf | pdf ✓name · linked from the agency page (aws.sjrwmd. | date unknown (date unknown, checked 2026-10-29) · posted Jan 22, 2025 |  ✗ |  |
 | US-8343 | Deep Creek State Conservation Area | https://aws.sjrwmd.com/SJRWMD/lands/recreation/Deep_Creek_Conservation_Area.pdf | pdf ✓name · combined map: covers 3 units · linked from the agency page (aws.sjrwmd. | 2023 (file stamp 2023 (older than the posting 2025 ) · posted Jan 22, 2025 |  ✗ |  |
-| US-4470 | Apalachicola National Forest | https://www.fs.usda.gov/r08/florida/maps-guides | page · forest map only; forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted December 16, 2025 | https://www.fs.usda.gov/r08/florida ✓ |  |
-| US-4472 | Osceola National Forest | https://www.fs.usda.gov/r08/florida/maps-guides | page · forest map only; forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted December 16, 2025 | https://www.fs.usda.gov/r08/florida ✓ |  |
-| US-4471 | Ocala National Forest | https://www.fs.usda.gov/r08/florida/maps-guides | page · forest map only; forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted December 16, 2025 | https://www.fs.usda.gov/r08/florida ✓ |  |
+| US-4470 | Apalachicola National Forest | https://www.fs.usda.gov/r08/florida/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted December 16, 2025 | https://www.fs.usda.gov/r08/florida ✓ |  |
+| US-4472 | Osceola National Forest | https://www.fs.usda.gov/r08/florida/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted December 16, 2025 | https://www.fs.usda.gov/r08/florida ✓ |  |
+| US-4471 | Ocala National Forest | https://www.fs.usda.gov/r08/florida/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted December 16, 2025 | https://www.fs.usda.gov/r08/florida ✓ |  |
 
 ### US-FL no map yet (295): the reason
 - US-0007 Biscayne Bay National Park: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.nps.gov/bisc/planyourvisit/maps.htm)
@@ -886,7 +886,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - US-12127 Stormwater Treatment Area 1 West State Conser: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.sfwmd.gov/sites/default/files/documents/map_showing_public; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.sfwmd.gov/sites/default/files/documents/trailguide_sta1w.p)
 - US-12128 Stormwater Treatment Area 1 East State Conser: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.sfwmd.gov/sites/default/files/documents/map_showing_public; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.sfwmd.gov/sites/default/files/documents/trailguide_sta1e.p)
 - US-12135 Myakka River — Flatford Swamp State Conservat: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
-- US-12136 Deep Creek Preserve Desoto County State Conse: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
+- US-12136 Deep Creek Preserve Desoto County State Conse: opened, a statewide map viewer, not this park's map (chat 8 F2) (needs browser: the page refused a plain reader (HTTP 403))
 - US-13011 Shoal River Headwaters State Park: no map link on file and none on the park page (needs browser: host on the browser list)
 - US-1829 Alafia River State Park: no map link on file and none on the park page (needs browser: host on the browser list)
 - US-1830 Alfred B.Maclay Gardens State Park: no map link on file and none on the park page (needs browser: host on the browser list)
@@ -928,7 +928,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-0383 | Dahomey National Wildlife Refuge | https://www.fws.gov/refuge/dahomey/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/policies ✓ |  |
 | US-0393 | Tallahatchie National Wildlife Refuge | https://www.fws.gov/refuge/tallahatchie/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://doifwsnextprod.prod.acquia-sites.com/sites/default/files/2026- ✗ |  |
 | US-0709 | Tupelo National Battlefield | https://www.nps.gov/tupe/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted March 7, 2016 | https://www.nps.gov/tupe/learn/management/lawsandpolicies.htm ✗ |  |
-| US-2547 | Natchez State Park | https://www.nps.gov/natc/planyourvisit/maps.htm#GlobalNav-toggle | page · the agency site | — (date unknown, checked 2026-10-29) · posted March 7, 2016 | https://www.nps.gov/natc/learn/management/lawsandpolicies.htm ✓ |  |
+| US-2547 | Natchez State Park | https://www.nps.gov/natc/planyourvisit/maps.htm | page ✓name · linked from the agency page (nps.gov) | date unknown (date unknown, checked 2026-10-29) · posted March 7, 2016 |  ✗ |  |
 | US-0661 | Gulf Islands National Seashore | https://www.nps.gov/guis/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted July 23, 2025 | https://www.nps.gov/guis/learn/management/lawsandpolicies.htm ✓ |  |
 | US-4560 | Natchez Trace Trail National Scenic Trai | https://www.nps.gov/natt/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted September 10, 2020 | https://www.nps.gov/natt/learn/management/lawsandpolicies.htm ✓ |  |
 | US-0723 | Vicksburg National Military Park | https://www.nps.gov/vick/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted June 18, 2024 | https://www.nps.gov/vick/learn/management/lawsandpolicies.htm ✓ |  |
@@ -2823,11 +2823,9 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - US-0446 Funk WPA Wetland Management District: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.fws.gov/refuge/rainwater-basin-wetland-management-district)
 
 ## robots.txt said no (hosts we did not read)
-- app.box.com: 1 addresses (User-agent: Twitterbot | Disallow: / | Allow: /representation  # Twitter needs to be able to display)
-- doifwsnextprod.prod.acquia-sites.com: 2 addresses (User-agent: * | Disallow: /)
-- embed.widencdn.net: 2 addresses (User-agent: Twitterbot | Disallow: | User-agent: * | Allow: /img/3shape/ | Allow: /pdf/*/3shape/ | A)
-- www.blakeleypark.com: 2 addresses (User-agent: * | Disallow: /admin/ | Disallow: /App_Browsers/ | Disallow: /App_Code/ | Disallow: /App)
-- www.google.com: 1 addresses (User-agent: * | User-agent: Yandex | Disallow: /search | Allow: /search/about | Allow: /search/howse)
+- doifwsnextprod.prod.acquia-sites.com: 3 addresses (User-agent: * | Disallow: /)
+- maps.apple.com: 11 addresses (User-agent: * | Allow: /guides?*curated=* | Allow: /guides/?*curated=* | Allow: /guides?*publisher=*)
+- www.fdacs.gov: 37 addresses (User-agent: * | Disallow: / | User-agent: Googlebot | User-agent: Bingbot | User-agent: BingPreview )
 
 ## hosts resting a day (three strikes)
 - apps.dnr.wi.gov
@@ -2854,4 +2852,4 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - www.tn.gov
 - www.usna.usda.gov
 - www.virginiastateparks.gov
-- www.wildlifesouth.com
+- www5.swfwmd.state.fl.us

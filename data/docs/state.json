@@ -85,11 +85,10 @@
    "updated": "2026-10-29"
   },
   "US-IL": {
-   "status": "done",
+   "status": "failed",
    "parks": 219,
-   "checked": 219,
-   "left": 0,
-   "updated": "2026-10-29"
+   "updated": "2026-10-29",
+   "why": "maps 99 -> 58"
   },
   "US-WI": {
    "status": "failed",
@@ -253,7 +252,6 @@
   }
  },
  "hosts": {
-  "www.wildlifesouth.com": 1793289030.942602,
   "www.mdwfp.com": 1793292164.6644764,
   "www.in.gov": 1793292908.0953734,
   "in.gov": 1793293058.6274643,
@@ -277,32 +275,33 @@
   "www.tn.gov": 1793365737.419028,
   "tennesseerivervalleygeotourism.org": 1793366218.1591492,
   "wolfememorial.com": 1793366796.4594877,
-  "www.virginiastateparks.gov": 1793367635.065476
+  "www.virginiastateparks.gov": 1793367635.065476,
+  "www5.swfwmd.state.fl.us": 1793373160.1014225
  },
  "last": {
   "when": "2026-10-29",
   "areas": [
-   "US-GA",
-   "US-AL",
-   "US-SC",
    "US-FL",
    "US-MS",
    "US-IN",
    "US-IL",
-   "US-MO"
+   "US-MO",
+   "US-WI",
+   "US-MN",
+   "US-IA"
   ],
   "stat": {
-   "requests": 1666,
-   "parks": 653,
-   "maps_ok": 305,
-   "maps_found": 230,
-   "dates": 28,
-   "rules": 290,
-   "browser": 54,
-   "robots": 8,
-   "strikes": 0,
-   "errors": 0,
-   "skipped_fresh": 55
+   "requests": 1495,
+   "parks": 918,
+   "maps_ok": 217,
+   "maps_found": 189,
+   "dates": 22,
+   "rules": 321,
+   "browser": 268,
+   "robots": 51,
+   "strikes": 3,
+   "errors": 3,
+   "skipped_fresh": 149
   }
  }
 }
