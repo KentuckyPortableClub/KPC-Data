@@ -85,10 +85,11 @@
    "updated": "2026-10-29"
   },
   "US-IL": {
-   "status": "failed",
+   "status": "done",
    "parks": 219,
-   "updated": "2026-10-29",
-   "why": "maps 99 -> 58"
+   "checked": 219,
+   "left": 0,
+   "updated": "2026-10-29"
   },
   "US-WI": {
    "status": "failed",
@@ -252,9 +253,6 @@
   }
  },
  "hosts": {
-  "www.mdwfp.com": 1793292164.6644764,
-  "www.in.gov": 1793292908.0953734,
-  "in.gov": 1793293058.6274643,
   "www.jekyllisland.com": 1793302402.685001,
   "www.sos.mo.gov": 1793310223.15825,
   "map.co.door.wi.us": 1793314121.8248734,
@@ -281,27 +279,27 @@
  "last": {
   "when": "2026-10-29",
   "areas": [
-   "US-FL",
-   "US-MS",
-   "US-IN",
    "US-IL",
    "US-MO",
    "US-WI",
    "US-MN",
-   "US-IA"
+   "US-IA",
+   "US-ND",
+   "US-SD",
+   "US-PA"
   ],
   "stat": {
-   "requests": 1495,
-   "parks": 918,
-   "maps_ok": 217,
-   "maps_found": 189,
-   "dates": 22,
-   "rules": 321,
-   "browser": 268,
-   "robots": 51,
-   "strikes": 3,
-   "errors": 3,
-   "skipped_fresh": 149
+   "requests": 1565,
+   "parks": 550,
+   "maps_ok": 389,
+   "maps_found": 375,
+   "dates": 111,
+   "rules": 210,
+   "browser": 150,
+   "robots": 0,
+   "strikes": 0,
+   "errors": 0,
+   "skipped_fresh": 4
   }
  }
 }
