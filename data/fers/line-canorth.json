@@ -1,0 +1,95 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "canorth",
+ "states": [
+  "CA-YT",
+  "CA-NT",
+  "CA-NU"
+ ],
+ "since": "2026-10-29",
+ "date": "2026-10-29 05:06 UTC",
+ "verdict": "STOPPED",
+ "why": [
+  "water not checked: CA-YT: 4 rows (the USGS water map / files had no answer there): never READY with one",
+  "water not checked: CA-NT: 1 rows (the USGS water map / files had no answer there): never READY with one",
+  "water not checked: CA-NU: 4 rows (the USGS water map / files had no answer there): never READY with one"
+ ],
+ "known_answers": "19/19 on 2026-10-29",
+ "missing_check": {
+  "FOUND": 0,
+  "DROPPED": 0,
+  "NEVER LOOKED AT": 0
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-29",
+   "pairs tested": 18,
+   "pairs whose boxes touch": 18
+  },
+  "pass2": {
+   "agree with the pass before": 280,
+   "date": "2026-10-29",
+   "pairs tested": 12
+  },
+  "pass3": {
+   "agree with the pass before": 195,
+   "date": "2026-10-29",
+   "pairs tested": 12
+  },
+  "pass5": {
+   "checked": 9,
+   "date": "2026-10-29",
+   "pairs tested": 0,
+   "still not checked": 9
+  }
+ },
+ "files": {
+  "CA-YT": "data/fers/CA-YT.json",
+  "CA-NT": "data/fers/CA-NT.json",
+  "CA-NU": "data/fers/CA-NU.json"
+ },
+ "CA-YT": {
+  "rows": 94,
+  "live": 2,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "water not checked": 4
+  },
+  "dropped": 20,
+  "merged": 68
+ },
+ "water_weak": {
+  "CA-YT": 4,
+  "CA-NT": 1,
+  "CA-NU": 4
+ },
+ "CA-NT": {
+  "rows": 34,
+  "live": 0,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "water not checked": 1
+  },
+  "dropped": 32,
+  "merged": 1
+ },
+ "CA-NU": {
+  "rows": 234,
+  "live": 0,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "water not checked": 4
+  },
+  "dropped": 112,
+  "merged": 118
+ },
+ "states_ready": [],
+ "states_held": [
+  "CA-NT",
+  "CA-NU",
+  "CA-YT"
+ ]
+}
