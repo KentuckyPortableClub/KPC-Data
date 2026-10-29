@@ -6,17 +6,6 @@
  "pass5": "2026-10-29",
  "spots": [
   {
-   "access": null,
-   "access_pin": {
-    "at": [
-     34.263594,
-     -106.101988
-    ],
-    "from": "road",
-    "name": "Wsmr S Route 41",
-    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
-    "walk_m": 0
-   },
    "box": [
     -106.10772,
     34.25575,
@@ -47,7 +36,6 @@
     "US-11814": "Salinas Pueblo Missions, Quarai unit, National Monument"
    },
    "note": "both park numbers are joined to the same official outline (Salinas Pueblo Missions National Monument); POTA lists them separately: check POTA's current list",
-   "owner_here": "Park Service land (from the outline both numbers are joined to)",
    "passes": [
     1,
     1,
@@ -95,7 +83,7 @@
      34.26372
     ]
    ],
-   "status": "candidate"
+   "status": "dropped: two park numbers joined to one record by name, pins 18 km apart and not both inside it (a wrong join in the key)"
   },
   {
    "access": null,
@@ -452,6 +440,2174 @@
     ]
    ],
    "status": "candidate"
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     42.377804,
+     -108.49728
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
+   "box": [
+    -108.53636,
+    42.37362,
+    -108.51105,
+    42.37481
+   ],
+   "center": [
+    42.374048,
+    -108.523665
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "ground": [
+    "BLM"
+   ],
+   "id": "US-4558+US-4566@trail@42.375,-108.510",
+   "kind": "trail",
+   "len_m": 2094,
+   "line_source": {
+    "US-4558": {
+     "by": "U.S. Forest Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4558.json"
+    },
+    "US-4566": {
+     "by": "National Park Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4566.json",
+     "note": "approximate line (national historic trail, about 1:100,000)"
+    }
+   },
+   "map_dates": {
+    "US-4558": "official line (trails bot)",
+    "US-4566": "official line (trails bot)"
+   },
+   "maps": [
+    [
+     "US-4558",
+     "https://www.fs.usda.gov/managing-land/trails/cdt"
+    ],
+    [
+     "US-4566",
+     "https://www.nps.gov/cali/planyourvisit/maps.htm"
+    ]
+   ],
+   "names": {
+    "US-4558": "Continental Divide Trail National Scenic Trail",
+    "US-4566": "California National Historic Trail"
+   },
+   "note": "approximate line: California National Historic Trail",
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (BLM)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-4558": true,
+    "US-4566": true
+   },
+   "refs": [
+    "US-4558",
+    "US-4566"
+   ],
+   "shape": [
+    [
+     -108.511058,
+     42.374812
+    ],
+    [
+     -108.511691,
+     42.374541
+    ],
+    [
+     -108.53297,
+     42.373664
+    ],
+    [
+     -108.534186,
+     42.373628
+    ],
+    [
+     -108.536363,
+     42.373822
+    ]
+   ],
+   "status": "merged into one row: US-4558+US-4566@trail@42.391,-108.451"
+  },
+  {
+   "box": [
+    -108.59115,
+    42.39021,
+    -108.58728,
+    42.39026
+   ],
+   "center": [
+    42.390233,
+    -108.589078
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "ground": [
+    "private"
+   ],
+   "id": "US-4558+US-4566@trail@42.390,-108.591",
+   "kind": "trail",
+   "len_m": 296,
+   "map_dates": {
+    "US-4558": "official line (trails bot)",
+    "US-4566": "official line (trails bot)"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "private land at the spot (ownership map): counts only for its own park number, never a 2-fer",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-4558": true,
+    "US-4566": true
+   },
+   "private_part": "private land at 1 of 1 points of the patch (PAD-US): that piece is cut out and counts only for its own park",
+   "refs": [
+    "US-4558",
+    "US-4566"
+   ],
+   "shape": [
+    [
+     -108.587288,
+     42.390209
+    ],
+    [
+     -108.59084,
+     42.390254
+    ]
+   ],
+   "status": "dropped: private land at the spot (ownership map): counts only for its own park number, never a 2-fer"
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     42.392,
+     -108.459974
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
+   "box": [
+    -108.65101,
+    42.37362,
+    -108.42171,
+    42.4314
+   ],
+   "center": [
+    42.388348,
+    -108.424137
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "ground": [
+    "BLM"
+   ],
+   "id": "US-4558+US-4566@trail@42.391,-108.451",
+   "kind": "trail",
+   "len_m": 7009,
+   "len_main": 4815,
+   "line_source": {
+    "US-4558": {
+     "by": "U.S. Forest Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4558.json"
+    },
+    "US-4566": {
+     "by": "National Park Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4566.json",
+     "note": "approximate line (national historic trail, about 1:100,000)"
+    }
+   },
+   "map_dates": {
+    "US-4558": "official line (trails bot)",
+    "US-4566": "official line (trails bot)"
+   },
+   "maps": [
+    [
+     "US-4558",
+     "https://www.fs.usda.gov/managing-land/trails/cdt"
+    ],
+    [
+     "US-4566",
+     "https://www.nps.gov/cali/planyourvisit/maps.htm"
+    ]
+   ],
+   "names": {
+    "US-4558": "Continental Divide Trail National Scenic Trail",
+    "US-4566": "California National Historic Trail"
+   },
+   "note": "approximate line: California National Historic Trail",
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (BLM)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins": [
+    {
+     "at": [
+      42.392,
+      -108.459974
+     ],
+     "from": "road",
+     "name": "public road",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 0
+    },
+    {
+     "at": [
+      42.377804,
+      -108.49728
+     ],
+     "from": "road",
+     "name": "public road",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 0
+    },
+    {
+     "at": [
+      42.431184,
+      -108.650888
+     ],
+     "from": "road",
+     "name": "Oregon Trl",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 0
+    }
+   ],
+   "pins_inside": {
+    "US-4558": true,
+    "US-4566": true
+   },
+   "refs": [
+    "US-4558",
+    "US-4566"
+   ],
+   "shape": [
+    [
+     -108.426938,
+     42.387682
+    ],
+    [
+     -108.44978,
+     42.391317
+    ],
+    [
+     -108.45827,
+     42.3919
+    ],
+    [
+     -108.458756,
+     42.391887
+    ],
+    [
+     -108.47233,
+     42.39096
+    ],
+    [
+     -108.472537,
+     42.390883
+    ],
+    [
+     -108.476368,
+     42.387849
+    ]
+   ],
+   "status": "candidate",
+   "stretches": 3
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     42.431184,
+     -108.650888
+    ],
+    "from": "road",
+    "name": "Oregon Trl",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
+   "box": [
+    -108.65101,
+    42.43074,
+    -108.65017,
+    42.4314
+   ],
+   "center": [
+    42.431066,
+    -108.650587
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "ground": [
+    "BLM"
+   ],
+   "id": "US-4558+US-4566@trail@42.431,-108.651",
+   "kind": "trail",
+   "len_m": 100,
+   "line_source": {
+    "US-4558": {
+     "by": "U.S. Forest Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4558.json"
+    },
+    "US-4566": {
+     "by": "National Park Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4566.json",
+     "note": "approximate line (national historic trail, about 1:100,000)"
+    }
+   },
+   "map_dates": {
+    "US-4558": "official line (trails bot)",
+    "US-4566": "official line (trails bot)"
+   },
+   "maps": [
+    [
+     "US-4558",
+     "https://www.fs.usda.gov/managing-land/trails/cdt"
+    ],
+    [
+     "US-4566",
+     "https://www.nps.gov/cali/planyourvisit/maps.htm"
+    ]
+   ],
+   "names": {
+    "US-4558": "Continental Divide Trail National Scenic Trail",
+    "US-4566": "California National Historic Trail"
+   },
+   "note": "approximate line: California National Historic Trail",
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (BLM)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-4558": true,
+    "US-4566": true
+   },
+   "refs": [
+    "US-4558",
+    "US-4566"
+   ],
+   "shape": [
+    [
+     -108.650169,
+     42.430737
+    ],
+    [
+     -108.65019,
+     42.430754
+    ],
+    [
+     -108.650211,
+     42.43077
+    ],
+    [
+     -108.650232,
+     42.430787
+    ],
+    [
+     -108.650253,
+     42.430803
+    ],
+    [
+     -108.650273,
+     42.43082
+    ],
+    [
+     -108.650294,
+     42.430836
+    ],
+    [
+     -108.650315,
+     42.430852
+    ],
+    [
+     -108.650336,
+     42.430869
+    ],
+    [
+     -108.650357,
+     42.430885
+    ],
+    [
+     -108.650378,
+     42.430902
+    ],
+    [
+     -108.650399,
+     42.430918
+    ],
+    [
+     -108.65042,
+     42.430935
+    ],
+    [
+     -108.650441,
+     42.430951
+    ],
+    [
+     -108.650462,
+     42.430967
+    ],
+    [
+     -108.650483,
+     42.430984
+    ],
+    [
+     -108.650504,
+     42.431
+    ],
+    [
+     -108.650525,
+     42.431017
+    ],
+    [
+     -108.650546,
+     42.431033
+    ],
+    [
+     -108.650566,
+     42.43105
+    ],
+    [
+     -108.650587,
+     42.431066
+    ],
+    [
+     -108.650608,
+     42.431082
+    ],
+    [
+     -108.650629,
+     42.431099
+    ],
+    [
+     -108.65065,
+     42.431115
+    ],
+    [
+     -108.650671,
+     42.431132
+    ],
+    [
+     -108.650692,
+     42.431148
+    ],
+    [
+     -108.650713,
+     42.431165
+    ],
+    [
+     -108.650734,
+     42.431181
+    ],
+    [
+     -108.650755,
+     42.431197
+    ],
+    [
+     -108.650776,
+     42.431214
+    ],
+    [
+     -108.650797,
+     42.43123
+    ],
+    [
+     -108.650818,
+     42.431247
+    ],
+    [
+     -108.650839,
+     42.431263
+    ],
+    [
+     -108.650859,
+     42.43128
+    ],
+    [
+     -108.65088,
+     42.431296
+    ],
+    [
+     -108.650901,
+     42.431312
+    ],
+    [
+     -108.650922,
+     42.431329
+    ],
+    [
+     -108.650943,
+     42.431345
+    ],
+    [
+     -108.650964,
+     42.431362
+    ],
+    [
+     -108.650985,
+     42.431378
+    ],
+    [
+     -108.651006,
+     42.431395
+    ]
+   ],
+   "status": "merged into one row: US-4558+US-4566@trail@42.391,-108.451"
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     36.192422,
+     -106.741131
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 146
+   },
+   "box": [
+    -106.7684,
+    36.19263,
+    -106.4848,
+    38.22609
+   ],
+   "center": [
+    36.192672,
+    -106.742726
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "ground": [
+    "Forest Service"
+   ],
+   "id": "US-4558+US-4575@trail@36.193,-106.743",
+   "kind": "trail",
+   "len_m": 861,
+   "len_main": 422,
+   "line_source": {
+    "US-4558": {
+     "by": "U.S. Forest Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4558.json"
+    },
+    "US-4575": {
+     "by": "National Park Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4575.json",
+     "note": "approximate line (national historic trail, about 1:100,000)"
+    }
+   },
+   "map_dates": {
+    "US-4558": "official line (trails bot)",
+    "US-4575": "official line (trails bot)"
+   },
+   "maps": [
+    [
+     "US-4558",
+     "https://www.fs.usda.gov/managing-land/trails/cdt"
+    ],
+    [
+     "US-4575",
+     "https://www.nps.gov/olsp/planyourvisit/upload/National-Park-Service-Old-Spanish-Brochure-Map-508.pdf"
+    ]
+   ],
+   "names": {
+    "US-4558": "Continental Divide Trail National Scenic Trail",
+    "US-4575": "Old Spanish National Historic Trail"
+   },
+   "note": "approximate line: Old Spanish National Historic Trail",
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (Forest Service)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins": [
+    {
+     "at": [
+      36.398492,
+      -106.485568
+     ],
+     "from": "road",
+     "name": "public road",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 25
+    },
+    {
+     "at": [
+      36.195409,
+      -106.766675
+     ],
+     "from": "road",
+     "name": "Forest Rd 103",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 84
+    },
+    {
+     "at": [
+      36.192422,
+      -106.741131
+     ],
+     "from": "road",
+     "name": "public road",
+     "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+     "walk_m": 146
+    }
+   ],
+   "pins_inside": {
+    "US-4558": true,
+    "US-4575": true
+   },
+   "refs": [
+    "US-4558",
+    "US-4575"
+   ],
+   "shape": [
+    [
+     -106.744961,
+     36.192945
+    ],
+    [
+     -106.744683,
+     36.192731
+    ],
+    [
+     -106.741332,
+     36.192629
+    ],
+    [
+     -106.740497,
+     36.192997
+    ]
+   ],
+   "status": "candidate",
+   "stretches": 4
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     36.195409,
+     -106.766675
+    ],
+    "from": "road",
+    "name": "Forest Rd 103",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 84
+   },
+   "box": [
+    -106.7684,
+    36.19527,
+    -106.76677,
+    36.19567
+   ],
+   "center": [
+    36.195471,
+    -106.76757
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "ground": [
+    "Forest Service"
+   ],
+   "id": "US-4558+US-4575@trail@36.195,-106.768",
+   "kind": "trail",
+   "len_m": 153,
+   "line_source": {
+    "US-4558": {
+     "by": "U.S. Forest Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4558.json"
+    },
+    "US-4575": {
+     "by": "National Park Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4575.json",
+     "note": "approximate line (national historic trail, about 1:100,000)"
+    }
+   },
+   "map_dates": {
+    "US-4558": "official line (trails bot)",
+    "US-4575": "official line (trails bot)"
+   },
+   "maps": [
+    [
+     "US-4558",
+     "https://www.fs.usda.gov/managing-land/trails/cdt"
+    ],
+    [
+     "US-4575",
+     "https://www.nps.gov/olsp/planyourvisit/upload/National-Park-Service-Old-Spanish-Brochure-Map-508.pdf"
+    ]
+   ],
+   "names": {
+    "US-4558": "Continental Divide Trail National Scenic Trail",
+    "US-4575": "Old Spanish National Historic Trail"
+   },
+   "note": "approximate line: Old Spanish National Historic Trail",
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (Forest Service)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-4558": true,
+    "US-4575": true
+   },
+   "refs": [
+    "US-4558",
+    "US-4575"
+   ],
+   "shape": [
+    [
+     -106.768397,
+     36.195267
+    ],
+    [
+     -106.76837,
+     36.195274
+    ],
+    [
+     -106.768343,
+     36.19528
+    ],
+    [
+     -106.768317,
+     36.195287
+    ],
+    [
+     -106.76829,
+     36.195294
+    ],
+    [
+     -106.768263,
+     36.1953
+    ],
+    [
+     -106.768237,
+     36.195307
+    ],
+    [
+     -106.76821,
+     36.195313
+    ],
+    [
+     -106.768183,
+     36.19532
+    ],
+    [
+     -106.768157,
+     36.195327
+    ],
+    [
+     -106.76813,
+     36.195333
+    ],
+    [
+     -106.768103,
+     36.19534
+    ],
+    [
+     -106.768077,
+     36.195346
+    ],
+    [
+     -106.76805,
+     36.195353
+    ],
+    [
+     -106.768023,
+     36.195359
+    ],
+    [
+     -106.767997,
+     36.195366
+    ],
+    [
+     -106.76797,
+     36.195373
+    ],
+    [
+     -106.767943,
+     36.195379
+    ],
+    [
+     -106.767917,
+     36.195386
+    ],
+    [
+     -106.76789,
+     36.195392
+    ],
+    [
+     -106.767863,
+     36.195399
+    ],
+    [
+     -106.767837,
+     36.195406
+    ],
+    [
+     -106.76781,
+     36.195412
+    ],
+    [
+     -106.767783,
+     36.195419
+    ],
+    [
+     -106.767757,
+     36.195425
+    ],
+    [
+     -106.76773,
+     36.195432
+    ],
+    [
+     -106.767703,
+     36.195439
+    ],
+    [
+     -106.767677,
+     36.195445
+    ],
+    [
+     -106.76765,
+     36.195452
+    ],
+    [
+     -106.767623,
+     36.195458
+    ],
+    [
+     -106.767597,
+     36.195465
+    ],
+    [
+     -106.76757,
+     36.195471
+    ],
+    [
+     -106.767543,
+     36.195478
+    ],
+    [
+     -106.767517,
+     36.195485
+    ],
+    [
+     -106.76749,
+     36.195491
+    ],
+    [
+     -106.767463,
+     36.195498
+    ],
+    [
+     -106.767437,
+     36.195504
+    ],
+    [
+     -106.76741,
+     36.195511
+    ],
+    [
+     -106.767383,
+     36.195518
+    ],
+    [
+     -106.767357,
+     36.195524
+    ],
+    [
+     -106.76733,
+     36.195531
+    ],
+    [
+     -106.767303,
+     36.195537
+    ],
+    [
+     -106.767277,
+     36.195544
+    ],
+    [
+     -106.76725,
+     36.195551
+    ],
+    [
+     -106.767223,
+     36.195557
+    ],
+    [
+     -106.767197,
+     36.195564
+    ],
+    [
+     -106.76717,
+     36.19557
+    ],
+    [
+     -106.767143,
+     36.195577
+    ],
+    [
+     -106.767117,
+     36.195583
+    ],
+    [
+     -106.76709,
+     36.19559
+    ],
+    [
+     -106.767063,
+     36.195597
+    ],
+    [
+     -106.767037,
+     36.195603
+    ],
+    [
+     -106.76701,
+     36.19561
+    ],
+    [
+     -106.766983,
+     36.195616
+    ],
+    [
+     -106.766957,
+     36.195623
+    ],
+    [
+     -106.76693,
+     36.19563
+    ],
+    [
+     -106.766903,
+     36.195636
+    ],
+    [
+     -106.766877,
+     36.195643
+    ],
+    [
+     -106.76685,
+     36.195649
+    ],
+    [
+     -106.766823,
+     36.195656
+    ],
+    [
+     -106.766797,
+     36.195663
+    ],
+    [
+     -106.76677,
+     36.195669
+    ]
+   ],
+   "status": "merged into one row: US-4558+US-4575@trail@36.193,-106.743"
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     36.398492,
+     -106.485568
+    ],
+    "from": "road",
+    "name": "public road",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 25
+   },
+   "box": [
+    -106.48583,
+    36.39811,
+    -106.4848,
+    36.39907
+   ],
+   "center": [
+    36.39859,
+    -106.485315
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "ground": [
+    "Forest Service"
+   ],
+   "id": "US-4558+US-4575@trail@36.398,-106.485",
+   "kind": "trail",
+   "len_m": 141,
+   "line_source": {
+    "US-4558": {
+     "by": "U.S. Forest Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4558.json"
+    },
+    "US-4575": {
+     "by": "National Park Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4575.json",
+     "note": "approximate line (national historic trail, about 1:100,000)"
+    }
+   },
+   "map_dates": {
+    "US-4558": "official line (trails bot)",
+    "US-4575": "official line (trails bot)"
+   },
+   "maps": [
+    [
+     "US-4558",
+     "https://www.fs.usda.gov/managing-land/trails/cdt"
+    ],
+    [
+     "US-4575",
+     "https://www.nps.gov/olsp/planyourvisit/upload/National-Park-Service-Old-Spanish-Brochure-Map-508.pdf"
+    ]
+   ],
+   "names": {
+    "US-4558": "Continental Divide Trail National Scenic Trail",
+    "US-4575": "Old Spanish National Historic Trail"
+   },
+   "note": "approximate line: Old Spanish National Historic Trail",
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (Forest Service)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-4558": true,
+    "US-4575": true
+   },
+   "refs": [
+    "US-4558",
+    "US-4575"
+   ],
+   "shape": [
+    [
+     -106.48583,
+     36.399069
+    ],
+    [
+     -106.485812,
+     36.399052
+    ],
+    [
+     -106.485793,
+     36.399035
+    ],
+    [
+     -106.485775,
+     36.399018
+    ],
+    [
+     -106.485756,
+     36.399001
+    ],
+    [
+     -106.485738,
+     36.398984
+    ],
+    [
+     -106.48572,
+     36.398967
+    ],
+    [
+     -106.485701,
+     36.398949
+    ],
+    [
+     -106.485683,
+     36.398932
+    ],
+    [
+     -106.485664,
+     36.398915
+    ],
+    [
+     -106.485646,
+     36.398898
+    ],
+    [
+     -106.485628,
+     36.398881
+    ],
+    [
+     -106.485609,
+     36.398864
+    ],
+    [
+     -106.485591,
+     36.398847
+    ],
+    [
+     -106.485572,
+     36.39883
+    ],
+    [
+     -106.485554,
+     36.398813
+    ],
+    [
+     -106.485536,
+     36.398795
+    ],
+    [
+     -106.485517,
+     36.398778
+    ],
+    [
+     -106.485499,
+     36.398761
+    ],
+    [
+     -106.48548,
+     36.398744
+    ],
+    [
+     -106.485462,
+     36.398727
+    ],
+    [
+     -106.485444,
+     36.39871
+    ],
+    [
+     -106.485425,
+     36.398693
+    ],
+    [
+     -106.485407,
+     36.398676
+    ],
+    [
+     -106.485388,
+     36.398659
+    ],
+    [
+     -106.48537,
+     36.398641
+    ],
+    [
+     -106.485352,
+     36.398624
+    ],
+    [
+     -106.485333,
+     36.398607
+    ],
+    [
+     -106.485315,
+     36.39859
+    ],
+    [
+     -106.485296,
+     36.398573
+    ],
+    [
+     -106.485278,
+     36.398556
+    ],
+    [
+     -106.485259,
+     36.398539
+    ],
+    [
+     -106.485241,
+     36.398522
+    ],
+    [
+     -106.485223,
+     36.398505
+    ],
+    [
+     -106.485204,
+     36.398487
+    ],
+    [
+     -106.485186,
+     36.39847
+    ],
+    [
+     -106.485167,
+     36.398453
+    ],
+    [
+     -106.485149,
+     36.398436
+    ],
+    [
+     -106.485131,
+     36.398419
+    ],
+    [
+     -106.485112,
+     36.398402
+    ],
+    [
+     -106.485094,
+     36.398385
+    ],
+    [
+     -106.485075,
+     36.398368
+    ],
+    [
+     -106.485057,
+     36.398351
+    ],
+    [
+     -106.485039,
+     36.398333
+    ],
+    [
+     -106.48502,
+     36.398316
+    ],
+    [
+     -106.485002,
+     36.398299
+    ],
+    [
+     -106.484983,
+     36.398282
+    ],
+    [
+     -106.484965,
+     36.398265
+    ],
+    [
+     -106.484947,
+     36.398248
+    ],
+    [
+     -106.484928,
+     36.398231
+    ],
+    [
+     -106.48491,
+     36.398214
+    ],
+    [
+     -106.484891,
+     36.398197
+    ],
+    [
+     -106.484873,
+     36.398179
+    ],
+    [
+     -106.484855,
+     36.398162
+    ],
+    [
+     -106.484836,
+     36.398145
+    ],
+    [
+     -106.484818,
+     36.398128
+    ],
+    [
+     -106.484799,
+     36.398111
+    ]
+   ],
+   "status": "merged into one row: US-4558+US-4575@trail@36.193,-106.743"
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     38.225467,
+     -106.586061
+    ],
+    "from": "road",
+    "name": "Co Rd Nn 14",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 223
+   },
+   "box": [
+    -106.58687,
+    38.22538,
+    -106.58547,
+    38.22609
+   ],
+   "center": [
+    38.225735,
+    -106.586168
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "ground": [
+    "Forest Service"
+   ],
+   "id": "US-4558+US-4575@trail@38.226,-106.586",
+   "kind": "trail",
+   "len_m": 145,
+   "line_source": {
+    "US-4558": {
+     "by": "U.S. Forest Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4558.json"
+    },
+    "US-4575": {
+     "by": "National Park Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4575.json",
+     "note": "approximate line (national historic trail, about 1:100,000)"
+    }
+   },
+   "map_dates": {
+    "US-4558": "official line (trails bot)",
+    "US-4575": "official line (trails bot)"
+   },
+   "maps": [
+    [
+     "US-4558",
+     "https://www.fs.usda.gov/managing-land/trails/cdt"
+    ],
+    [
+     "US-4575",
+     "https://www.nps.gov/olsp/planyourvisit/upload/National-Park-Service-Old-Spanish-Brochure-Map-508.pdf"
+    ]
+   ],
+   "names": {
+    "US-4558": "Continental Divide Trail National Scenic Trail",
+    "US-4575": "Old Spanish National Historic Trail"
+   },
+   "note": "approximate line: Old Spanish National Historic Trail",
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (Forest Service)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-4558": true,
+    "US-4575": true
+   },
+   "refs": [
+    "US-4558",
+    "US-4575"
+   ],
+   "shape": [
+    [
+     -106.586867,
+     38.225382
+    ],
+    [
+     -106.586843,
+     38.225394
+    ],
+    [
+     -106.586819,
+     38.225406
+    ],
+    [
+     -106.586795,
+     38.225419
+    ],
+    [
+     -106.586771,
+     38.225431
+    ],
+    [
+     -106.586747,
+     38.225443
+    ],
+    [
+     -106.586723,
+     38.225455
+    ],
+    [
+     -106.586698,
+     38.225467
+    ],
+    [
+     -106.586674,
+     38.225479
+    ],
+    [
+     -106.58665,
+     38.225492
+    ],
+    [
+     -106.586626,
+     38.225504
+    ],
+    [
+     -106.586602,
+     38.225516
+    ],
+    [
+     -106.586578,
+     38.225528
+    ],
+    [
+     -106.586554,
+     38.22554
+    ],
+    [
+     -106.58653,
+     38.225552
+    ],
+    [
+     -106.586505,
+     38.225565
+    ],
+    [
+     -106.586481,
+     38.225577
+    ],
+    [
+     -106.586457,
+     38.225589
+    ],
+    [
+     -106.586433,
+     38.225601
+    ],
+    [
+     -106.586409,
+     38.225613
+    ],
+    [
+     -106.586385,
+     38.225626
+    ],
+    [
+     -106.586361,
+     38.225638
+    ],
+    [
+     -106.586337,
+     38.22565
+    ],
+    [
+     -106.586312,
+     38.225662
+    ],
+    [
+     -106.586288,
+     38.225674
+    ],
+    [
+     -106.586264,
+     38.225686
+    ],
+    [
+     -106.58624,
+     38.225699
+    ],
+    [
+     -106.586216,
+     38.225711
+    ],
+    [
+     -106.586192,
+     38.225723
+    ],
+    [
+     -106.586168,
+     38.225735
+    ],
+    [
+     -106.586144,
+     38.225747
+    ],
+    [
+     -106.586119,
+     38.225759
+    ],
+    [
+     -106.586095,
+     38.225772
+    ],
+    [
+     -106.586071,
+     38.225784
+    ],
+    [
+     -106.586047,
+     38.225796
+    ],
+    [
+     -106.586023,
+     38.225808
+    ],
+    [
+     -106.585999,
+     38.22582
+    ],
+    [
+     -106.585975,
+     38.225833
+    ],
+    [
+     -106.585951,
+     38.225845
+    ],
+    [
+     -106.585926,
+     38.225857
+    ],
+    [
+     -106.585902,
+     38.225869
+    ],
+    [
+     -106.585878,
+     38.225881
+    ],
+    [
+     -106.585854,
+     38.225893
+    ],
+    [
+     -106.58583,
+     38.225906
+    ],
+    [
+     -106.585806,
+     38.225918
+    ],
+    [
+     -106.585782,
+     38.22593
+    ],
+    [
+     -106.585758,
+     38.225942
+    ],
+    [
+     -106.585733,
+     38.225954
+    ],
+    [
+     -106.585709,
+     38.225967
+    ],
+    [
+     -106.585685,
+     38.225979
+    ],
+    [
+     -106.585661,
+     38.225991
+    ],
+    [
+     -106.585637,
+     38.226003
+    ],
+    [
+     -106.585613,
+     38.226015
+    ],
+    [
+     -106.585589,
+     38.226027
+    ],
+    [
+     -106.585564,
+     38.22604
+    ],
+    [
+     -106.58554,
+     38.226052
+    ],
+    [
+     -106.585516,
+     38.226064
+    ],
+    [
+     -106.585492,
+     38.226076
+    ],
+    [
+     -106.585468,
+     38.226088
+    ]
+   ],
+   "status": "merged into one row: US-4558+US-4575@trail@36.193,-106.743"
+  },
+  {
+   "access": null,
+   "access_pin": {
+    "at": [
+     42.431239,
+     -108.650847
+    ],
+    "from": "road",
+    "name": "Oregon Trl",
+    "note": "closest spot inside every park to that public access, straight line; check the road / lot is open and public",
+    "walk_m": 0
+   },
+   "box": [
+    -108.65103,
+    42.43074,
+    -108.65017,
+    42.43141
+   ],
+   "center": [
+    42.431082,
+    -108.650608
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "ground": [
+    "BLM"
+   ],
+   "id": "US-4558+US-4578@trail@42.431,-108.651",
+   "kind": "trail",
+   "len_m": 103,
+   "line_source": {
+    "US-4558": {
+     "by": "U.S. Forest Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4558.json"
+    },
+    "US-4578": {
+     "by": "National Park Service",
+     "date": "not recorded",
+     "line": "data/trails/US-4578.json",
+     "note": "approximate line (national historic trail, about 1:100,000)"
+    }
+   },
+   "map_dates": {
+    "US-4558": "official line (trails bot)",
+    "US-4578": "official line (trails bot)"
+   },
+   "maps": [
+    [
+     "US-4558",
+     "https://www.fs.usda.gov/managing-land/trails/cdt"
+    ],
+    [
+     "US-4578",
+     "https://www.nps.gov/poex/planyourvisit/upload/National-Park-Service-Pony-Express-Map-508.pdf"
+    ]
+   ],
+   "names": {
+    "US-4558": "Continental Divide Trail National Scenic Trail",
+    "US-4578": "Pony Express National Historic Trail"
+   },
+   "note": "approximate line: Pony Express National Historic Trail",
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "public land (BLM)",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-4558": true,
+    "US-4578": true
+   },
+   "refs": [
+    "US-4558",
+    "US-4578"
+   ],
+   "shape": [
+    [
+     -108.650169,
+     42.430737
+    ],
+    [
+     -108.65019,
+     42.430754
+    ],
+    [
+     -108.650211,
+     42.43077
+    ],
+    [
+     -108.650232,
+     42.430787
+    ],
+    [
+     -108.650253,
+     42.430803
+    ],
+    [
+     -108.650273,
+     42.43082
+    ],
+    [
+     -108.650294,
+     42.430836
+    ],
+    [
+     -108.650315,
+     42.430852
+    ],
+    [
+     -108.650336,
+     42.430869
+    ],
+    [
+     -108.650357,
+     42.430885
+    ],
+    [
+     -108.650378,
+     42.430902
+    ],
+    [
+     -108.650399,
+     42.430918
+    ],
+    [
+     -108.65042,
+     42.430935
+    ],
+    [
+     -108.650441,
+     42.430951
+    ],
+    [
+     -108.650462,
+     42.430967
+    ],
+    [
+     -108.650483,
+     42.430984
+    ],
+    [
+     -108.650504,
+     42.431
+    ],
+    [
+     -108.650525,
+     42.431017
+    ],
+    [
+     -108.650546,
+     42.431033
+    ],
+    [
+     -108.650566,
+     42.43105
+    ],
+    [
+     -108.650587,
+     42.431066
+    ],
+    [
+     -108.650608,
+     42.431082
+    ],
+    [
+     -108.650629,
+     42.431099
+    ],
+    [
+     -108.65065,
+     42.431115
+    ],
+    [
+     -108.650671,
+     42.431132
+    ],
+    [
+     -108.650692,
+     42.431148
+    ],
+    [
+     -108.650713,
+     42.431165
+    ],
+    [
+     -108.650734,
+     42.431181
+    ],
+    [
+     -108.650755,
+     42.431197
+    ],
+    [
+     -108.650776,
+     42.431214
+    ],
+    [
+     -108.650797,
+     42.43123
+    ],
+    [
+     -108.650818,
+     42.431247
+    ],
+    [
+     -108.650839,
+     42.431263
+    ],
+    [
+     -108.650859,
+     42.43128
+    ],
+    [
+     -108.65088,
+     42.431296
+    ],
+    [
+     -108.650901,
+     42.431312
+    ],
+    [
+     -108.650922,
+     42.431329
+    ],
+    [
+     -108.650943,
+     42.431345
+    ],
+    [
+     -108.650964,
+     42.431362
+    ],
+    [
+     -108.650985,
+     42.431378
+    ],
+    [
+     -108.651006,
+     42.431395
+    ],
+    [
+     -108.651027,
+     42.431411
+    ]
+   ],
+   "status": "candidate"
+  },
+  {
+   "box": [
+    -108.71217,
+    32.34293,
+    -108.71111,
+    32.34385
+   ],
+   "center": [
+    32.343399,
+    -108.711629
+   ],
+   "checked": "2026-10-29",
+   "found": "2026-10-29",
+   "ground": [],
+   "id": "US-4558+US-9757@trail@32.343,-108.712",
+   "kind": "trail",
+   "len_m": 143,
+   "map_dates": {
+    "US-4558": "official line (trails bot)",
+    "US-9757": "official line (trails bot)"
+   },
+   "notes": [
+    "check the agency's closures and seasons before you go"
+   ],
+   "ownership": "no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "passes": [
+    1,
+    1,
+    1
+   ],
+   "pins_inside": {
+    "US-4558": true,
+    "US-9757": true
+   },
+   "refs": [
+    "US-4558",
+    "US-9757"
+   ],
+   "shape": [
+    [
+     -108.712168,
+     32.342929
+    ],
+    [
+     -108.712149,
+     32.342945
+    ],
+    [
+     -108.71213,
+     32.342962
+    ],
+    [
+     -108.712112,
+     32.342978
+    ],
+    [
+     -108.712093,
+     32.342994
+    ],
+    [
+     -108.712075,
+     32.34301
+    ],
+    [
+     -108.712056,
+     32.343026
+    ],
+    [
+     -108.712038,
+     32.343043
+    ],
+    [
+     -108.712019,
+     32.343059
+    ],
+    [
+     -108.712001,
+     32.343075
+    ],
+    [
+     -108.711982,
+     32.343091
+    ],
+    [
+     -108.711963,
+     32.343108
+    ],
+    [
+     -108.711945,
+     32.343124
+    ],
+    [
+     -108.711926,
+     32.34314
+    ],
+    [
+     -108.711908,
+     32.343156
+    ],
+    [
+     -108.711889,
+     32.343172
+    ],
+    [
+     -108.711871,
+     32.343189
+    ],
+    [
+     -108.711852,
+     32.343205
+    ],
+    [
+     -108.711834,
+     32.343221
+    ],
+    [
+     -108.711815,
+     32.343237
+    ],
+    [
+     -108.711796,
+     32.343253
+    ],
+    [
+     -108.711778,
+     32.34327
+    ],
+    [
+     -108.711759,
+     32.343286
+    ],
+    [
+     -108.711741,
+     32.343302
+    ],
+    [
+     -108.711722,
+     32.343318
+    ],
+    [
+     -108.711704,
+     32.343334
+    ],
+    [
+     -108.711685,
+     32.343351
+    ],
+    [
+     -108.711667,
+     32.343367
+    ],
+    [
+     -108.711648,
+     32.343383
+    ],
+    [
+     -108.711629,
+     32.343399
+    ],
+    [
+     -108.711611,
+     32.343415
+    ],
+    [
+     -108.711592,
+     32.343432
+    ],
+    [
+     -108.711574,
+     32.343448
+    ],
+    [
+     -108.711555,
+     32.343464
+    ],
+    [
+     -108.711537,
+     32.34348
+    ],
+    [
+     -108.711518,
+     32.343497
+    ],
+    [
+     -108.711499,
+     32.343513
+    ],
+    [
+     -108.711481,
+     32.343529
+    ],
+    [
+     -108.711462,
+     32.343545
+    ],
+    [
+     -108.711444,
+     32.343561
+    ],
+    [
+     -108.711425,
+     32.343578
+    ],
+    [
+     -108.711407,
+     32.343594
+    ],
+    [
+     -108.711388,
+     32.34361
+    ],
+    [
+     -108.71137,
+     32.343626
+    ],
+    [
+     -108.711351,
+     32.343642
+    ],
+    [
+     -108.711332,
+     32.343659
+    ],
+    [
+     -108.711314,
+     32.343675
+    ],
+    [
+     -108.711295,
+     32.343691
+    ],
+    [
+     -108.711277,
+     32.343707
+    ],
+    [
+     -108.711258,
+     32.343723
+    ],
+    [
+     -108.71124,
+     32.34374
+    ],
+    [
+     -108.711221,
+     32.343756
+    ],
+    [
+     -108.711203,
+     32.343772
+    ],
+    [
+     -108.711184,
+     32.343788
+    ],
+    [
+     -108.711165,
+     32.343804
+    ],
+    [
+     -108.711147,
+     32.343821
+    ],
+    [
+     -108.711128,
+     32.343837
+    ],
+    [
+     -108.71111,
+     32.343853
+    ]
+   ],
+   "status": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "unknown_part": "no owner on the maps at 1 of 1 points of the patch: only that piece is not sure"
   }
  ],
  "st": "US-NM"
