@@ -213,7 +213,7 @@ HOURS_RX = re.compile(r"\b(is|are)\s+open\b[^.]*\b(a\.?m\.?|p\.?m\.?)|\bopen (fr
 HUNT_RX = re.compile(r"quota hunt|drawn (hunters?|permit|applicants?)|managed (deer |elk |turkey )?hunts?|controlled hunt|youth(-only)? hunt|except (drawn|permitted|quota|selected) hunters?|closed to all other (public )?use|closed to (non-hunters|the general public|all users? except)|hunters? (with|holding) [^.]{0,40}permits? only|lottery hunt", re.I)
 STANDING_RX = re.compile(r"\b(is|are|shall be|will be)\s+(?:strictly\s+|also\s+)?(prohibited|not (?:allowed|permitted)|unlawful|illegal|forbidden)\b|\bshall not\b|\bmust not\b|\bunlicensed vehicles?\b|\bgroups? (?:of more than|over|larger than) \w+\b|\bdischarg\w* (?:a |of )?firearms?\b|\bsteep banks\b|\bnot permitted\b|\bno (?:camping|fires?|campfires?|alcohol|pets|dogs|swimming|glass)\b(?![^.]*\bclos)", re.I)
 SEASON_RULE = re.compile(r"\b(season|seasons)\b[^.]{0,60}\b(open|closed)\b|\bclosed to (?:modern gun |archery |muzzleloader |crossbow |firearms? )?(?:deer |turkey |rabbit |squirrel |quail |dove |waterfowl |small game |elk |bear )?(?:hunting|trapping)\b(?! and)", re.I)
-HUNT_WORDS = re.compile(r"\bclos(?:ed|ure|es|ing)\b|no public access|except (?:drawn|quota|permitted|selected) hunters?|quota hunt|permit hunt|drawn hunters?|closed to all other|closed to everyone|closed to the public|closed to (?:non-?hunters|public use|all public)", re.I)
+HUNT_WORDS = re.compile(r"\bclos(?:ed|ure|es|ing)\b|no public access|^[^|]*\b(?:wma|wildlife management area)\b[^|]*\|[^|]*\|| \| |except (?:drawn|quota|permitted|selected) hunters?|quota hunt|permit hunt|drawn hunters?|closed to all other|closed to everyone|closed to the public|closed to (?:non-?hunters|public use|all public)", re.I)
 # the hunting season a WMA page talks about: Sep-Aug; 'Nov. 7-8' on a page read in October 2026 = Nov 2026; 'Jan. 15' = Jan 2027
 SEASON_YEAR = TODAY.year if TODAY.month >= 7 else TODAY.year - 1
 HUNT_SEASON_RX = re.compile(r"\b(deer|turkey|dove|waterfowl|duck|small game|archery|firearms?|muzzleloader|modern gun|elk|bear|squirrel|rabbit|quail)\s+(gun |archery )?season\b", re.I)
@@ -518,7 +518,7 @@ def entries_from_lines(lines, park_hint=None, hunt=False):
                     upd = dt.date(int(mu.group(3)), MON.get(mu.group(1).lower().rstrip('.'), 1), int(mu.group(2))); ln = mu.group(4).strip()
             except ValueError: upd = None
             if not ln: continue
-        if hunt and ' | ' in ln and HUNT_ROW.search(ln) and (D1.search(ln) or DNUM.search(ln)):      # a quota-hunt TABLE ROW: WMA | hunt | dates
+        if hunt and ' | ' in ln and (HUNT_ROW.search(ln) or re.search(r'\b(wma|wildlife management area|unit|tract|area)\b', ln.split(' | ')[0], re.I)) and (D1.search(ln) or DNUM.search(ln)):      # a quota-hunt TABLE ROW: WMA | dates | permits
             cells = [c.strip() for c in ln.split(' | ') if c.strip()]
             first = cells[0] if cells and len(cells[0]) < 70 and not D1.search(cells[0]) and not DNUM.search(cells[0]) else ''
             out.append({'head': first or head, 'names': ([first] if first else names), 'updated': upd, 'sent': ln[:400], 'year': year, 'hunt_page': True}); continue
@@ -547,6 +547,11 @@ SAMPLE_WMA = """<h1>Clay WMA</h1><p>The area is closed to all other hunting Nov.
 LAST_HTML = {}
 BROWSER_LOG = []
 CHILDREN = {}      # landing page url -> the sub-pages it led to (listed on the source as 'children')
+LINKS_DEBUG = {}   # TEST=1: every same-host link of a hunt landing page
+ROWS_DEBUG = {}    # TEST=1: the first 5 parsed rows of each child page + what the matcher said
+
+
+def _zw(t): return ' '.join(re.sub(r'[\u200b\u200c\u200d\ufeff\u00a0]', ' ', str(t or '')).split())
 
 
 def safe_url(u):
@@ -865,12 +870,16 @@ def src_page(url, refs=None, pdfs=True, home=None, hunt=False, depth=0):
     rows = page_rows(body, url, refs, home, hunt)
     if hunt and kind == 'html' and not OFFLINE and depth == 0 and not late():        # a hunt LANDING page: the tables sit on the species sub-pages
         host = M.host(url); kids, seen = [], set()
-        for u, txt in links_in(body, url):
+        all_links = links_in(body, url)
+        if TEST: LINKS_DEBUG[url] = [{'text': _zw(t)[:50], 'url': u[:160]} for u, t in all_links if M.host(u) == host][:60]
+        for u, txt in all_links:
             if len(kids) >= 8: break
             lu = u.split('#')[0]
             if M.host(u) != host or lu in seen or lu.split('?')[0] == url.split('?')[0] or lu.lower().split('?')[0].endswith('.pdf'): continue
-            if re.fullmatch(r'\s*(deer|dove|waterfowl|sandhill crane|pheasant|elk|turkey|quota hunts?|quota hunt (dates|info|information))\s*', txt, re.I) or 'quota' in lu.lower():
-                seen.add(lu); kids.append((lu, txt))
+            t = _zw(txt).lower(); pl = urllib.parse.urlparse(lu).path.lower()
+            if (len(t) <= 40 and re.search(r'\b(deer|dove|waterfowl|crane|pheasant|elk|turkey|quota)\b', t)) or 'quota' in lu.lower() \
+                    or ('hunt/pages/' in pl and re.search(r'quota|deer|dove|pheasant|crane', pl)):
+                seen.add(lu); kids.append((lu, _zw(txt)))
         for u, txt in kids:
             if late(): break
             try:
@@ -878,6 +887,9 @@ def src_page(url, refs=None, pdfs=True, home=None, hunt=False, depth=0):
                 for r in sub: r['child'] = u
                 rows += sub
                 CHILDREN.setdefault(url, []).append({'url': u, 'text': txt[:40], 'rows': len(sub)})
+                if TEST and not sub:
+                    tx = page_text(LAST_HTML.get(u, '')) if LAST_HTML.get(u) else ''
+                    CHILDREN[url][-1]['text_debug'] = tx[:400]
             except Exception as e:  # noqa: BLE001
                 CHILDREN.setdefault(url, []).append({'url': u, 'text': txt[:40], 'error': str(e)[:80]})
     if kind == 'html' and pdfs and not late():                        # CL-7: a PDF closure list linked from the page, by range
@@ -1189,6 +1201,7 @@ def process_area(K, area, state, review):
             rows, ok, why = [], False, str(e)[:160]
         if not ok:                                                                   # keep the last items: a failed read never reopens a park
             skipped = why.startswith('needs ') or why.startswith('D-R8')
+            if why == 'rest': why = 'rest (host resting after an earlier strike; last items kept)'
             if not skipped: STAT['sources_failed'] += 1
             items += old
             srcs[sid] = {'agency': agency, 'url': url, 'kind': kind, 'ok': False, 'skipped': skipped, 'why': why, 'n': len(old), 'n_prev': ps.get('n', 0),
@@ -1204,6 +1217,9 @@ def process_area(K, area, state, review):
                 unreadable.append({'src': sid, 'why': r['status_only'], 'link': r.get('link')}); continue
             sents = [r['sent']] if r.get('sent') else split_sentences(((r.get('title') or '') + '. ' + (r.get('text') or '')).strip('. '))
             refs_, part = tie(K, r, parks, area, sid)
+            if TEST and r.get('child'):
+                rd = ROWS_DEBUG.setdefault(r['child'], [])
+                if len(rd) < 5: rd.append({'row': (r.get('sent') or r.get('text') or '')[:200], 'names': r.get('names'), 'matcher': refs_})
             if refs_ == ['OUT-OF-STATE']: out_state += 1; continue                 # a multi-state unit's notice about another state
             if not refs_:
                 if any(CLOSE_RX.search(x) for x in sents):
@@ -1256,9 +1272,11 @@ def process_area(K, area, state, review):
                 oit.update({'taken_down': TODAY.isoformat(), 'kind': 'Park notice', 'stale': 'notice taken down: check the agency page',
                             'expires': (TODAY + dt.timedelta(days=TAKEN_DOWN_DAYS)).isoformat(), 'label': f'ℹ️ Notice taken down: check the agency page ({oit.get("agency", "")}; was: {oit.get("details", "")[:160]})'})
             items.append(oit)
-        if CHILDREN.get(url): srcs.setdefault(sid, {})
+        if CHILDREN.get(url):
+            for c in CHILDREN[url]:
+                if ROWS_DEBUG.get(c['url']): c['rows_debug'] = ROWS_DEBUG[c['url']]
         srcs[sid] = {'agency': agency, 'url': url, 'kind': kind, 'ok': True, 'rows': len(rows), 'n': n, 'n_prev': ps.get('n', 0), 'out_of_state': out_state,
-                     **({'children': CHILDREN[url]} if CHILDREN.get(url) else {}),
+                     **({'children': CHILDREN[url]} if CHILDREN.get(url) else {}), **({'links_debug': LINKS_DEBUG[url]} if LINKS_DEBUG.get(url) else {}),
                      'unmatched': sorted(set(unmatched))[:25], 'last_ok': TODAY.isoformat(), 'fails': 0}
         if how == 'hunt-page' and TEST and not any(it.get('class') == 'hunt' and it['id'] in now_ids for it in items):
             m = re.search(r'closed|quota|drawn', page_txt, re.I)
@@ -1504,6 +1522,8 @@ SELFTEST = [  # (sentence, context, expected class, expected note_kind or what-c
     ("Entry into areas closed for protection of threatened and endangered species at Cave Run Lake and Laurel River Lake is prohibited.", {}, None, None, None),
     ("Currently, the trail is closed between the two trailheads.", {'head': 'Cliffside Trail #519 Closure'}, 'part', 'cliffside trail #519', (None, None)),
     ("This road is closed for culvert repair.", {'head': 'Road 214 Temporary Closure'}, 'part', 'road 214', (None, None)),
+    ("Ballard WMA | Nov. 7-8 | 50 permits |", {'hunt_page': True}, 'hunt', None, (dt.date(SEASON_YEAR, 11, 7), dt.date(SEASON_YEAR, 11, 8))),
+    ("Clay WMA | Dec 5-6, 2026 | 25 |", {'hunt_page': True}, 'hunt', None, (dt.date(2026, 12, 5), dt.date(2026, 12, 6))),
     ("Ballard WMA | Deer | Nov 7–8 | closed to everyone except drawn hunters (and one helper each) |", {'hunt_page': True}, 'hunt', None, (dt.date(SEASON_YEAR, 11, 7), dt.date(SEASON_YEAR, 11, 8))),
 ]
 
@@ -1555,9 +1575,9 @@ def selftest():
     print(('ok   ' if ok else 'FAIL ') + f"ended: to={cl and cl.get('to')} < today = not shown"); bad += not ok
     a = {'ref': 'R', 'details': '"Cliffside Trail #519 Closure"', 'title': ''}; b = {'ref': 'R', 'details': '"Cliffside Trail #519 is closed between Noes and Sawyer ramps."', 'title': 'Cliffside Trail #519 Closure'}
     ok = drop_title_twins([a, b]) == [b]; print(('ok   ' if ok else 'FAIL ') + 'title-only twin merged'); bad += not ok
-    land = '<p>Click below to navigate to the species you are interested in:</p><a href="/Hunt/Pages/Deer-Quota-Hunts.aspx">DEER</a> <a href="/Hunt/Pages/Dove.aspx">DOVE</a> <a href="https://fw.ky.gov/Hunt/Pages/Waterfowl-Quota.aspx">WATERFOWL</a> <a href="https://other.gov/x">DEER</a> <a href="/Hunt/Pages/Quota-Hunts.aspx">Quota Hunts</a> <a href="/Home">Home</a>'
+    land = '<p>Click below to navigate to the species you are interested in:</p><a href="/Hunt/Pages/Deer-Quota-Hunts.aspx">\u200bDEER\u200b\u200b</a> <a href="/Hunt/Pages/Dove.aspx">DOVE</a> <a href="https://fw.ky.gov/Hunt/Pages/Waterfowl-Quota.aspx">WATERFOWL</a> <a href="https://other.gov/x">DEER</a> <a href="/Hunt/Pages/Quota-Hunts.aspx">Quota Hunts</a> <a href="/Home">Home</a>'
     picks = [u for u, t in links_in(land, 'https://fw.ky.gov/Hunt/Pages/Quota-Hunts.aspx') if Manners.host(u) == 'fw.ky.gov' and u.split('?')[0] != 'https://fw.ky.gov/Hunt/Pages/Quota-Hunts.aspx'
-             and (re.fullmatch(r'\s*(deer|dove|waterfowl|sandhill crane|pheasant|elk|turkey|quota hunts?)\s*', t, re.I) or 'quota' in u.lower())]
+             and ((len(_zw(t)) <= 40 and re.search(r'\b(deer|dove|waterfowl|crane|pheasant|elk|turkey|quota)\b', _zw(t).lower())) or 'quota' in u.lower())]
     ok = picks == ['https://fw.ky.gov/Hunt/Pages/Deer-Quota-Hunts.aspx', 'https://fw.ky.gov/Hunt/Pages/Dove.aspx', 'https://fw.ky.gov/Hunt/Pages/Waterfowl-Quota.aspx']
     print(('ok   ' if ok else 'FAIL ') + f'landing-page children: {len(picks)} same-host species links (other host + Home left out)'); bad += not ok
     # the object of the Marben sentence
