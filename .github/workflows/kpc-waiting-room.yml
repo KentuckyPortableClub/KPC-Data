@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: 'replay | check | undo | undo-bot | release'
+        description: 'replay | check | undo | undo-bot | release | questions'
         default: 'replay'
       target:
         description: 'undo / release: the live path (data/access/US-NY.json; undo: add @2 or @3 to go 2 or 3 copies back); undo-bot: the bot (access, campfed, docs, hours, truth, ...)'
@@ -53,6 +53,7 @@ jobs:
             undo) python3 .github/scripts/kpc_waiting_room.py undo "${{ inputs.target }}" ;;
             undo-bot) python3 .github/scripts/kpc_waiting_room.py undo-bot "${{ inputs.target }}" "${{ inputs.area }}" ;;
             release) python3 .github/scripts/kpc_waiting_room.py release "${{ inputs.target }}" ;;
+            questions) python3 .github/scripts/kpc_key_questions.py ;;   # RULE SHEET G step 2: held key pieces -> one question each for chat 11
             *) echo "::notice title=Waiting room::unknown mode $M" ;;
           esac
       - name: Save (data/waiting + data/status, plus the live files an undo / release / promotion changed)
