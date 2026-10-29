@@ -241,6 +241,31 @@ SUBJ4_RX = re.compile(r"^(?:the\s+)?(.{2,110}?)\s+(?:clos(?:ed|es)|ferm(?:é|ée
 FR_RX = re.compile(r"ferm(é|ée|és|ées|eture)|jusqu'à nouvel ordre|interdit|secteur|sentier", re.I)
 
 
+NTH = {'first': 1, '1st': 1, 'second': 2, '2nd': 2, 'third': 3, '3rd': 3, 'fourth': 4, '4th': 4, 'last': -1}
+WDAY = {'monday': 0, 'tuesday': 1, 'wednesday': 2, 'thursday': 3, 'friday': 4, 'saturday': 5, 'sunday': 6}
+MONTHN = {'january': 1, 'february': 2, 'march': 3, 'april': 4, 'may': 5, 'june': 6, 'july': 7, 'august': 8, 'september': 9, 'october': 10, 'november': 11, 'december': 12}
+NTH_RX = re.compile(r'\b(first|1st|second|2nd|third|3rd|fourth|4th|last) (monday|tuesday|wednesday|thursday|friday|saturday|sunday) (?:in|of) (january|february|march|april|may|june|july|august|september|october|november|december)\b', re.I)
+
+
+def nth_weekday_dates(s, year):
+    """Round 10: KDFWR WMA pages give quota dates as RULES ('the two-day quota hunt that starts the first Saturday in November',
+    'closed during (and day before)', 'second Saturday in December during odd-numbered years'). -> (from, to) | 'not this year' | None."""
+    m = NTH_RX.search(s)
+    if not m: return None
+    low = s.lower()
+    mon = MONTHN[m.group(3).lower()]; yr = year if mon >= 7 else year + 1
+    if re.search(r'odd-?numbered years', low) and yr % 2 == 0: return 'not this year'
+    if re.search(r'even-?numbered years', low) and yr % 2 == 1: return 'not this year'
+    n, wd = NTH[m.group(1).lower()], WDAY[m.group(2).lower()]
+    if n > 0:
+        d = dt.date(yr, mon, 1); d += dt.timedelta((wd - d.weekday()) % 7); d += dt.timedelta(7 * (n - 1))
+    else:
+        d = (dt.date(yr + (mon == 12), mon % 12 + 1, 1) - dt.timedelta(1)); d -= dt.timedelta((d.weekday() - wd) % 7)
+    days = 2 if re.search(r'\btwo-?day\b', low) else 3 if re.search(r'\bthree-?day\b', low) else 4 if re.search(r'\bfour-?day\b', low) else 1
+    frm = d - dt.timedelta(1) if re.search(r'\bday before\b', low) else d
+    return frm, d + dt.timedelta(days - 1)
+
+
 def classify(sent, ctx=None):
     """ONE sentence -> None (nothing for us), {'skip': why} (a look-alike, logged as unreadable) or
     {'class': whole|part|hunt|seasonal|note, 'note_kind': ..., 'what': ..., 'from': date, 'to': date, 'flags': {...}, 'lang': en|fr}.
@@ -281,6 +306,17 @@ def classify(sent, ctx=None):
         low = s.lower()
     if ctx.get('hunt_page') and SEASON_RULE.search(s) and not re.search(r'\b(all|public|everyone|access|entry|non-?hunters|all other (?:public )?use|all users)\b', low):
         return {'skip': 'a hunting-season rule (a game season closed), not a land closure (HQ Oct 28)'}
+    if ctx.get('hunt_page') and ' | ' in s and (re.search(r'\|\s*\d+(?:\.\d+)?\s*%\s*\|', s) or re.search(r'\|\s*1\s*:\s*\d', s) or len(re.findall(r'\|\s*\d+(?:\.\d+)?\s*(?=\|)', s)) >= 3):
+        return {'skip': "a quota-hunt RESULTS table row (applicants, harvest %, odds = last season), not this season's closure (round 10)"}
+    if ctx.get('hunt_page') and re.search(r'\b(?:shooting|target|tube|archery|rifle|club)\s+ranges?\b|\bthe range\b', low):
+        return {'skip': 'a shooting-range note, not the park (Sheet 2)'}
+    if ctx.get('hunt_page') and re.search(r'\bonly open (?:during|for) (?:the )?(?:\w+ )?quota hunts?\b', low):
+        return {'from': None, 'to': None, 'dates_clear': True, 'flags': {'emergency': False, 'longterm': True, 'annually': False}, 'lang': 'en',
+                'class': 'note', 'note_kind': 'land', 'what': 'open only to drawn quota hunters (closed to the public the rest of the year)'}
+    if ctx.get('hunt_page') and HUNT_WORDS.search(s) and not NEG_RX.search(s) and (nd := nth_weekday_dates(s, SEASON_YEAR)):
+        if nd == 'not this year': return {'skip': 'a quota hunt held in other years only (odd / even-numbered years)'}
+        return {'from': nd[0], 'to': nd[1], 'dates_clear': True, 'flags': {'emergency': False, 'longterm': False, 'annually': True}, 'lang': 'en',
+                'class': 'hunt', 'what': 'closed to non-hunters', 'hunt_item': True}
     if ctx.get('hunt_page') and HUNT_WORDS.search(s) and not NEG_RX.search(s) and (D1.search(s) or DNUM.search(s) or D1FR.search(s)):
         frm0, to0, clear0 = parse_dates(s, ctx.get('updated'), ctx.get('year') or SEASON_YEAR, season=True)
         if frm0 or to0:                                                                 # CL-2 (HQ Oct 28 fix 1): a dated hunt closure on a WMA page = closed to non-hunters
@@ -1561,6 +1597,10 @@ SELFTEST = [  # (sentence, context, expected class, expected note_kind or what-c
     ("Laurel River Lake and Lake Cumberland Camping Prohibitions. 1) Camping within 300 feet of the high water line is prohibited.", {}, None, None, None),
     ("• If transportation to and from blinds is provided by KDFWR (times of high water), each hunter must", {'hunt_page': True}, None, None, None),
     ("following waterfowl season", {'hunt_page': True}, None, None, None),
+    # round 10: last season's results tables are never closures; rule-worded dates are computed for this season
+    ("Clay WMA | Nov. 1-2 | 29 | 19 | 0.31 | 37% | 1 : 2.5 |", {'hunt_page': True}, None, None, None),
+    ("Closed during (and day before) the two-day quota hunt that starts the first Saturday in November.", {'hunt_page': True}, 'hunt', None, (dt.date(SEASON_YEAR, 11, 1) + dt.timedelta((5 - dt.date(SEASON_YEAR, 11, 1).weekday()) % 7 - 1), dt.date(SEASON_YEAR, 11, 1) + dt.timedelta((5 - dt.date(SEASON_YEAR, 11, 1).weekday()) % 7 + 1))),
+    ("The range will also be closed for some facility-wide events that will be announced in advance, and on Nov. 11.", {'hunt_page': True}, None, None, None),
     ("The huntable portion of Lloyd WMA will be closed to all access Nov. 14-21, except for hunters drawn for and participating in the deer quota hunt.", {'hunt_page': True}, 'hunt', None, (dt.date(SEASON_YEAR, 11, 14), dt.date(SEASON_YEAR, 11, 21))),
     ("Currently, the trail is closed between the two trailheads.", {'head': 'Cliffside Trail #519 Closure'}, 'part', 'cliffside trail #519', (None, None)),
     ("This road is closed for culvert repair.", {'head': 'Road 214 Temporary Closure'}, 'part', 'road 214', (None, None)),
