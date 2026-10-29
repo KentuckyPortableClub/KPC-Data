@@ -1282,6 +1282,7 @@ def area_ctx(area):
 NO_PARK = [   # round 9 (chat 11 round 8): KDFWR alerts about places POTA does not number: kept OUT of park items (never guessed onto a park), named in the review
     (r'\baj jolly|a\.\s?j\.\s?jolly', 'no POTA park: A.J. Jolly Lake is a Campbell County park lake'),
     (r'\bsympson lake', 'no POTA park: Sympson Lake is a KDFWR lake (Nelson County)'),
+    (r'\bgreen river lake wma|green river lake wildlife', 'no POTA park: Green River Lake WMA has no POTA number (Green River Lake State Park US-1259 is another park)'),
     (r'\bwest point boat ramp', 'no POTA park: the West Point ramp is a KDFWR Ohio River ramp'),
     (r'\blaurel bridge boat ramp|\blaurel river lake\b', 'not tied: Laurel River Lake lies inside Daniel Boone NF (US-4484) but is not its own park; the ramp\'s land owner is not known here (NOT SURE = kept out)'),
 ]
@@ -1478,6 +1479,9 @@ def process_area(K, area, state, review):
                 rd = ROWS_DEBUG.setdefault(r['child'], [])
                 if len(rd) < 5: rd.append({'row': (r.get('sent') or r.get('text') or '')[:200], 'names': r.get('names'), 'matcher': refs_})
             if refs_ == ['OUT-OF-STATE']: out_state += 1; continue                 # a multi-state unit's notice about another state
+            lbl = ' '.join(str(r.get(k) or '') for k in ('head', 'name', 'title'))
+            if refs_ and re.search(r'\bwma\b|wildlife management area', lbl, re.I):   # Oct 29 (chat 8 KY hunt list): 'Green River Lake WMA' is not Green River Lake State Park
+                refs_ = [q for q in refs_ if re.search(r'\bwma\b|wildlife management|wildlife area|state forest|refuge', parks.get(q, ('',))[0], re.I)]
             if not refs_:
                 if any(CLOSE_RX.search(x) for x in sents):
                     unmatched.append(clean((r.get('head') or r.get('name') or r.get('title') or sents[0]), 80)); STAT['unmatched'] += 1
