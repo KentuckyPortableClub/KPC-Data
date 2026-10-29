@@ -2836,7 +2836,6 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - wolfememorial.com
 - www.agfc
 - www.cgcounty.org
-- www.jekyllisland.com
 - www.lclt.org
 - www.mass-trails.org
 - www.sos.mo.gov
