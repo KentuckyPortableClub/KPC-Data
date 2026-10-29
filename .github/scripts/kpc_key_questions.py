@@ -28,7 +28,7 @@ def main():
         st = pathlib.Path(f).stem
         for ref, r in ((load(f, {}) or {}).get('parks') or {}).items():
             for c in r.get('c') or []:
-                if not (isinstance(c, list) and len(c) > 3 and 'held (rule G-1)' in str(c[3])): continue
+                if not (isinstance(c, list) and len(c) > 3 and ('held (rule G-1)' in str(c[3]) or 'check (rule R-G8)' in str(c[3]))): continue   # Oct 29: R-G8 CHECK pieces too
                 rid = c[0]
                 q = {'area': st, 'ref': ref, 'park': r.get('n'), 'record': rid, 'record_name': c[1], 'acres': c[2], 'why': c[3],
                      'record_link': PADUS.format(rid) if isinstance(rid, int) else '', 'pota_link': f'https://pota.app/#/park/{ref}',
