@@ -1162,13 +1162,14 @@ def hand_list(area, pl):
         except Exception: log['unmatched'].append(f"bad dates: {r}"[:120]); continue  # noqa: BLE001
         if not r.get('ref'): log['unmatched'].append(str(r.get('name'))[:80]); continue
         log['rows'] += 1
-        closed = (r.get('kind') or 'closed') == 'closed'
+        kind = r.get('kind') or 'closed'
+        closed, part = kind == 'closed', kind == 'part'   # 'part' (Brandon Oct 29 9:25 AM): one tract closed to the public (West Kentucky WMA Tract 1)
         what = r.get('what') or 'deer quota hunt'
-        sent = (f"{r.get('dates') or frm.strftime('%b %-d')}: closed to everyone except drawn hunters (and one helper each) for the {what} ({r.get('name') or ''})" if closed
+        sent = r.get('text') or (f"{r.get('dates') or frm.strftime('%b %-d')}: closed to everyone except drawn hunters (and one helper each) for the {what} ({r.get('name') or ''})" if closed
                 else f"{r.get('dates') or frm.strftime('%b %-d')}: {what} for drawn hunters ({r.get('name') or ''}); the area stays open")
         cl = {'from': frm, 'to': to, 'dates_clear': True, 'flags': {'emergency': False, 'longterm': False, 'annually': False}, 'lang': 'en',
-              **({'class': 'hunt', 'what': 'closed to non-hunters', 'hunt_item': True} if closed else {'class': 'note', 'note_kind': 'season', 'what': 'quota hunt dates (the area stays open)'})}
-        log['closures' if closed else 'notes'] += 1
+              **({'class': 'hunt', 'what': 'closed to non-hunters', 'hunt_item': True} if closed else {'class': 'part', 'what': f"{what} closed"} if part else {'class': 'note', 'note_kind': 'quota', 'what': 'quota hunt dates (the area stays open)'})}
+        log['closures' if (closed or part) else 'notes'] += 1
         rows.append({'name': None, 'names': [r.get('name') or ''], 'head': r.get('name') or '', 'refs': [r['ref']], 'home': [], 'title': f"{r.get('name') or ''}: {what}",
                      'text': sent, 'sent': sent, 'end': None, 'at': None, 'link': r.get('page') or d.get('source') or pl.get('people_page') or pl.get('url'),
                      'date': None, 'year': SEASON_YEAR, 'hunt_page': True, 'plug_cl': cl})
@@ -1401,7 +1402,7 @@ def card_line(it):
     if c == 'seasonal': return f'📅 SEASONAL: {it.get("what") or ""}{when}: {q} ({ag})'
     k = it.get('note_kind')
     return {'permit': f'🎫 Permit needed: {q} ({ag})', 'vehicles': f'🚗 Closed to vehicles, open on foot: {q} ({ag})',
-            'land': f'ℹ️ May not be public land now: {q} ({ag})', 'season': f'🦌 Hunting season: {q} ({ag})'}.get(k, f'ℹ️ Note: {q} ({ag})')
+            'land': f'ℹ️ May not be public land now: {q} ({ag})', 'season': f'🦌 Hunting season: {q} ({ag})', 'quota': f'🦌 Quota hunt: {q} ({ag})'}.get(k, f'ℹ️ Note: {q} ({ag})')
 
 
 def build_item(sid, agency, ref, cl, sent, row, area, first_seen):
