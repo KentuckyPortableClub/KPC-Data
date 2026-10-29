@@ -1,0 +1,64 @@
+name: KPC waiting room (by hand only; NOT switched on)
+# Oct 28 2026 night (chat 10, Opus): RULE SHEET F (KPC-Links .claude/notes/mapping.md). The checker that looks at every CHANGED
+# data file before it goes live: kpc_waiting_room.py. NO SCHEDULE and no bot writes to data/waiting/in/ yet: Brandon's GO switches
+# it on, bot by bot. Promotion also needs the repo variable WAITING_ON=1 (Settings -> Secrets and variables -> Actions -> Variables).
+# Modes: replay (the replay test: real bad outputs from git history must all HOLD, good outputs must all PASS) · check (every file in
+# data/waiting/in/) · undo (one file) · undo-bot (one bot, optionally one area) · release (a person approved a held file).
+# Never goes red (EMAIL rule): every step continues on error; the only save is data/waiting + data/status.
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'replay | check | undo | undo-bot | release'
+        default: 'replay'
+      target:
+        description: 'undo / release: the live path (data/access/US-NY.json); undo-bot: the bot (access, campfed, docs, hours, truth, ...)'
+        default: ''
+      area:
+        description: 'undo-bot only: one area (e.g. US-KY); blank = every area'
+        default: ''
+permissions:
+  contents: write
+concurrency:
+  group: kpc-waiting-room
+  cancel-in-progress: false
+jobs:
+  waiting:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+          fetch-depth: 0
+      - name: KPC-Links (park outlines of the states, hand-checked campgrounds, retired parks, campground files; read-only)
+        uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Run the waiting room
+        continue-on-error: true
+        env:
+          LINKS: ../links
+          NET: '1'
+          WAITING_ON: ${{ vars.WAITING_ON }}
+        run: |
+          cd kpcdata
+          M="${{ inputs.mode }}"
+          case "$M" in
+            replay) python3 .github/scripts/kpc_waiting_room.py replay ;;
+            check) python3 .github/scripts/kpc_waiting_room.py check --promote ;;
+            undo) python3 .github/scripts/kpc_waiting_room.py undo "${{ inputs.target }}" ;;
+            undo-bot) python3 .github/scripts/kpc_waiting_room.py undo-bot "${{ inputs.target }}" "${{ inputs.area }}" ;;
+            release) python3 .github/scripts/kpc_waiting_room.py release "${{ inputs.target }}" ;;
+            *) echo "::notice title=Waiting room::unknown mode $M" ;;
+          esac
+      - name: Save (data/waiting + data/status, plus the live files an undo / release / promotion changed)
+        continue-on-error: true
+        run: |
+          cd kpcdata
+          D="data/waiting data/status"
+          if [ "${{ inputs.mode }}" != replay ]; then D="data"; fi
+          bash ../links/.github/scripts/kpc_push_data.sh . "waiting room: ${{ inputs.mode }} ${{ inputs.target }}" $D || true
