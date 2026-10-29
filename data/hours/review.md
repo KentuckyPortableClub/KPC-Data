@@ -1,6 +1,6 @@
 # Hours, fees & permits bot: review (facts only; nothing here reaches a card until Brandon's GO)
 
-Updated 2026-10-28. Every line is the agency's own sentence (H2). Refresh every 0 days.
+Updated 2026-10-29. Every line is the agency's own sentence (H2). Refresh every 0 days.
 
 | area | parks | hours | fees | permits | nothing found | no page |
 |---|---|---|---|---|---|---|
@@ -45,4 +45,4 @@ Updated 2026-10-28. Every line is the agency's own sentence (H2). Refresh every 
 
 ## Kentucky test gate (H4)
 
-- 2026-10-28: **FAIL** · hours rows 10/27 opened (37%; 27 in the key; 10 agency-wide rule rows left out); Otter Creek Wed–Sun MISS; Buckley $8 ok (US-3802); Peabody permit ok; US-3781 MISS, US-1251 ok, US-1254 ok, US-7950 ok, US-7708 ok, US-7954 ok, US-7967 ok, US-7968 MISS, US-7958 ok, US-7951 MISS, US-4690 MISS, US-3779 ok, US-3783 MISS, US-3784 MISS, US-3785 MISS, US-10172 no page opened, US-3788 MISS, US-13598 MISS, US-13607 MISS, US-13606 MISS, US-13600 MISS, US-3802 ok, US-13601 MISS, US-10173 ok, US-13599 MISS, US-3792 MISS, US-8144 MISS, US-10099 MISS
+- 2026-10-29: **FAIL** · hours rows 10/16 with the key's wording on a page we read (62%; 16 in the key; 10 agency-wide rule rows + 11 rows whose wording is on no page read ['US-3781', 'US-4690', 'US-3788', 'US-13598', 'US-13607', 'US-13606', 'US-13600', 'US-13601', 'US-13599', 'US-3792', 'US-10099'] left out); Otter Creek Wed–Sun MISS; Buckley $8 ok (US-3802); Peabody permit ok; US-1251 ok, US-1254 ok, US-7950 ok, US-7708 ok, US-7954 ok, US-7967 ok, US-7968 MISS, US-7958 ok, US-7951 MISS, US-3779 ok, US-3783 MISS, US-3784 MISS, US-3785 MISS, US-10172 no page opened, US-3802 ok, US-10173 ok, US-8144 MISS
