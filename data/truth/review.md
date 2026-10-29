@@ -4,7 +4,7 @@ Updated 2026-10-29. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 
 | area | parks | with outline | agree | OFF (>15%) | unsure | no size | ours unknown | handover hints | retired | weak (≤4) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| US-KY | 193 | 189 | 109 | **5** | 10 | 65 | 0 | 5 | 0 | 26 |
+| US-KY | 193 | 189 | 108 | **6** | 10 | 65 | 0 | 5 | 0 | 26 |
 | US-TN | 277 | 254 | 2 | **7** | 4 | 237 | 2 | 3 | 0 | 10 |
 | US-NC | 253 | 219 | 3 | **28** | 40 | 147 | 0 | 19 | 0 | 9 |
 | US-VA | 184 | 156 | 5 | **51** | 60 | 40 | 0 | 16 | 0 | 4 |
@@ -20,7 +20,7 @@ Updated 2026-10-29. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 
 ## US-KY
 
-**Agree:** 109 parks: 104 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 5 agree (second agency).
+**Agree:** 108 parks: 104 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 4 agree (second agency).
 
 **Size more than 15% off (our outline vs the agency):**
 
@@ -28,19 +28,20 @@ Updated 2026-10-29. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 - US-0050 Mammoth Cave National Park: ours 71,228 ac vs agency 52,830 acres (= 52,830 ac; 35% off) · cause: boundary vs owned: our line may be the authorized boundary, the agency counts owned land (rule 1: use owned land) · [www.nps.gov](https://www.nps.gov/maca/learn/management/statistics.htm) · “the web site. Geographic Figures All elevations are listed as Height above mean sea level (AMSL) Total Area: 52,830 acres (21,380 hectares) Lowest Surface Eleva”
 - US-12752 Green River State Natural Area: ours 304 ac vs agency 440 acres (= 440 ac; 31% off) · cause: agency bigger: our outline may miss a tract · [eec.ky.gov](https://eec.ky.gov/Nature-Preserves/Locations/Pages/Rush-Island-Bottoms.aspx) · “e hiking trails as well and canoe access. Access Type: Open to Public County: Hart Region: Green River Region Size: 440 Owner: ​Office of Kentucky Nature Preser”
 - US-0703 Fort Donelson National Battlefield: ours 1,295 ac vs agency 1007 acres (= 1,007 ac; 29% off) · cause: boundary vs owned: our line may be the authorized boundary, the agency counts owned land (rule 1: use owned land) · stale: agency figure is 'as of 2010' · [www.nps.gov](https://www.nps.gov/fodo/learn/management/statistics.htm) · “Site All NPS Exiting nps.gov Cancel Fort Donelson National Battlefield Contact Us Park Statistics Park Size: 1007 acres (as of 2010) Annual Visitation: Total Vi”
+- US-4689 Kentucky Ridge State Forest: ours 11,736 ac vs agency 15,251 acres (= 15,251 ac; 23% off) · cause: agency bigger: our outline may miss a tract · [eec.ky.gov](https://eec.ky.gov/Natural-Resources/Forestry/ky-state-forests/Pages/Kentucky-Ridge-State-Forest.aspx) · “cky Ridge State Forest Main Content ​​​​Kentucky Ridge State Forest ​​Kentucky Ridge State Forest consists of 15,251 acres and was acquired by lease in 1930, as”
 - US-1264 Levi Jackson Wilderness Road State Park: ours 722 ac vs agency 896 acres (= 896 ac; 19% off) · cause: agency bigger: our outline may miss a tract · [levijacksonpark.com](https://levijacksonpark.com/history/) · “erness Road Park is a city park located just south of London, Kentucky in Laurel County. The park encompasses 896 acres and includes a section of the Wilderness”
 
 **Unsure (no clean total found; the nearest number is only a guess):**
 
 - US-0019 Cumberland Gap National Historical Park: ours 24,225 ac · cause: whole park compared (POTA lists it in 2 states: {'US-TN': 5365, 'US-VA': 15109})
 - US-0608 Ohio River Islands National Wildlife Refuge: ours 5,468 ac · cause: whole park compared (POTA lists it in 1 states: {'US-WV': 5468}) · [www.fws.gov](https://www.fws.gov/refuge/ohio-river-islands/about-us)
-- US-10098 Green River National Wildlife Refuge: ours 2,186 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 10 acres, no total words near it) · [www.fws.gov](https://www.fws.gov/refuge/green-river)
+- US-10098 Green River National Wildlife Refuge: ours 2,186 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-10104 Red River National Wild and Scenic River: ours 1,049 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 708,000 acres, no total words near it) · [www.fs.usda.gov](https://www.fs.usda.gov/r08/danielboone)
 - US-10107 Big South Fork National Wild and Scenic River: ours 2,487 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-3792 Land Between the Lakes National Recreation Area: ours 106,948 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 170,000 acres, no total words near it) · [landbetweenthelakes.us](https://landbetweenthelakes.us/)
 - US-3801 Clifty Wilderness Area: ours 12,484 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 708,000 acres, no total words near it) · [www.fs.usda.gov](https://www.fs.usda.gov/r08/danielboone)
 - US-3832 Stone Mountain Wildlife Management Area: ours 2,026 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-4526 George Washington & Jefferson National Forest: ours 856 ac · cause: the agency figure may cover several states; our outline may be this state's share only · [www.fs.usda.gov](https://www.fs.usda.gov/gwj)
+- US-4526 George Washington & Jefferson National Forest: ours 2,889,386 ac · cause: the agency figure may cover several states; our outline may be this state's share only · [www.fs.usda.gov](https://www.fs.usda.gov/gwj)
 - US-7962 Little South Fork State Natural Area: ours 2,220 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 3145.42 acres, no total words near it) · [eec.ky.gov](https://eec.ky.gov/Nature-Preserves/Locations/Pages/Burnett-WWCA.aspx)
 
 **Handover / closure hints (a person decides; nothing applied):**
@@ -239,7 +240,7 @@ Updated 2026-10-29. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 - US-0935 George Washington Birthplace National Monument: ours 1,031 ac vs agency 551 acres (= 551 ac; 87% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [www.nps.gov](https://www.nps.gov/gewa/index.htm) · “ia George Washington Birthplace National Monument is located in the Northern Neck of Virginia. It encompasses 551 acres of land where seven generations of the W”
 - US-0064 Shenandoah National Park: ours 366,221 ac vs agency 200,000 acres (= 200,000 ac; 83% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [www.nps.gov](https://www.nps.gov/shen/index.htm) · “ing with cascading waterfalls, spectacular vistas, fields of wildflowers, and quiet wooded hollows. With over 200,000 acres of protected lands that are haven to”
 - US-9968 Buller State Fish Hatchery: ours 264 ac vs agency 147 acres (= 147 ac; 80% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [dwr.virginia.gov](https://dwr.virginia.gov/fishing/fish-stocking/state-hatcheries/buller-fish-hatchery/) · “in Smyth County Virginia, 8 miles south of Marion near the community of Thomas Bridge. The property comprises 147 acres of land, of which only 35 acres have bee”
-- US-4526 George Washington & Jefferson National Forest: ours 2,889,386 ac vs agency 1.8 million acres (= 1,800,000 ac; 61% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.fs.usda.gov](https://www.fs.usda.gov/gwj) · “West Virginia, the George Washington and Jefferson National Forest blankets the Blue Ridge mountains offering 1.8 million acres of lush woodlands, unique mounta”
+- US-4526 George Washington & Jefferson National Forest: ours 2,763,128 ac vs agency 1.8 million acres (= 1,800,000 ac; 54% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.fs.usda.gov](https://www.fs.usda.gov/gwj) · “West Virginia, the George Washington and Jefferson National Forest blankets the Blue Ridge mountains offering 1.8 million acres of lush woodlands, unique mounta”
 
 **Unsure (no clean total found; the nearest number is only a guess):**
 
@@ -1136,4 +1137,4 @@ You · [www.fws.gov](https://www.fws.gov/refuge/chassahowitzka/about-us)
 
 ## Kentucky test gate
 
-- 2026-10-29: **PASS** · US-VA: 51 off rows, no shared numbers / agency pages / part sentences / one-state cross-state compares
+- 2026-10-29: **PASS** · US-1264 ok (Levi Jackson OFF (722 vs ~896) + a hint naming the City of London; verdict off, agency 896 acres) · US-8144 ok (Otter Creek: a hint naming Meade; verdict agree, agency 2,221 acres) · US-10105 ok (Green WSR: official page is not Mammoth Cave's (/maca/); verdict no size on page, agency None) · US-10104 ok (Red River WSR: official acres is not 879 (the "708, 879" parse); verdict unsure, agency 708,000 acres) · US-0295 ok (Clarks River NWR: official acres is not the 73,962 land grant; verdict no size on page, agency None) · US-0703+US-3790 ok (Fort Donelson and Fort Heiman do not share one official page; verdict off, agency 1007 acres) · US-10098 ok (Green River NWR is never the 2019 '10 acres donated' line (FWS took down the 9,500-ac page Oct 29: the old row cannot be checked); verdict unsure, agency None) · US-4689 ok (Kentucky Ridge SF OFF (15,251 vs 11,736 = 23%); verdict off, agency 15,251 acres) · US-3800 ok (Cedar Creek Lake WMA OFF (ours 2,390 vs 796); verdict off, agency 796 acres) · US-0050 ok (Mammoth Cave OFF with cause 'boundary vs owned'; verdict off, agency 52,830 acres)

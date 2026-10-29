@@ -103,11 +103,11 @@
   "US-KY": {
    "checked": 193,
    "counts": {
-    "agree": 109,
+    "agree": 108,
     "handover_hints": 5,
     "no_page": 0,
     "no_size": 65,
-    "off": 5,
+    "off": 6,
     "ours_unknown": 0,
     "parks": 193,
     "retired": 0,
@@ -117,7 +117,7 @@
    },
    "left": 0,
    "parks": 193,
-   "status": "failed",
+   "status": "done",
    "updated": "2026-10-29"
   },
   "US-MO": {
@@ -237,7 +237,7 @@
    },
    "left": 0,
    "parks": 184,
-   "status": "done",
+   "status": "failed",
    "updated": "2026-10-29"
   },
   "US-WV": {
@@ -282,29 +282,30 @@
  },
  "last": {
   "areas": [
-   "US-VA"
+   "US-KY"
   ],
   "manners": {
    "arcgis_exempt": 0,
+   "browser": 48,
    "errors": 0,
-   "requests": 445,
-   "rested": 30,
-   "robots": 1,
-   "strikes": 0
+   "requests": 579,
+   "rested": 11,
+   "robots": 0,
+   "strikes": 1
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 16,
-   "no_size": 40,
+   "handover_hints": 5,
+   "no_size": 65,
    "ours_unknown": 0,
-   "pages_read": 356,
-   "parks": 184,
+   "pages_read": 373,
+   "parks": 193,
    "retired": 0,
-   "size_agree": 5,
-   "size_off": 51,
-   "size_unsure": 60,
+   "size_agree": 108,
+   "size_off": 6,
+   "size_unsure": 10,
    "skipped_fresh": 0,
-   "with_outline": 156
+   "with_outline": 189
   },
   "when": "2026-10-29"
  },
@@ -382,9 +383,50 @@
  },
  "proven": "2026-10-29",
  "test": {
-  "area": "US-VA",
   "result": "PASS",
+  "rows": [
+   {
+    "ok": true,
+    "ref": "US-1264"
+   },
+   {
+    "ok": true,
+    "ref": "US-8144"
+   },
+   {
+    "ok": true,
+    "ref": "US-10105"
+   },
+   {
+    "ok": true,
+    "ref": "US-10104"
+   },
+   {
+    "ok": true,
+    "ref": "US-0295"
+   },
+   {
+    "ok": true,
+    "ref": "US-0703+US-3790"
+   },
+   {
+    "ok": true,
+    "ref": "US-10098"
+   },
+   {
+    "ok": true,
+    "ref": "US-4689"
+   },
+   {
+    "ok": true,
+    "ref": "US-3800"
+   },
+   {
+    "ok": true,
+    "ref": "US-0050"
+   }
+  ],
   "when": "2026-10-29",
-  "why": "US-VA: 51 off rows, no shared numbers / agency pages / part sentences / one-state cross-state compares"
+  "why": "US-1264 ok (Levi Jackson OFF (722 vs ~896) + a hint naming the City of London; verdict off, agency 896 acres) · US-8144 ok (Otter Creek: a hint naming Meade; verdict agree, agency 2,221 acres) · US-10105 ok (Green WSR: official page is not Mammoth Cave's (/maca/); verdict no size on page, agency None) · US-10104 ok (Red River WSR: official acres is not 879 (the \"708, 879\" parse); verdict unsure, agency 708,000 acres) · US-0295 ok (Clarks River NWR: official acres is not the 73,962 land grant; verdict no size on page, agency None) · US-0703+US-3790 ok (Fort Donelson and Fort Heiman do not share one official page; verdict off, agency 1007 acres) · US-10098 ok (Green River NWR is never the 2019 '10 acres donated' line (FWS took down the 9,500-ac page Oct 29: the old row cannot be checked); verdict unsure, agency None) · US-4689 ok (Kentucky Ridge SF OFF (15,251 vs 11,736 = 23%); verdict off, agency 15,251 acres) · US-3800 ok (Cedar Creek Lake WMA OFF (ours 2,390 vs 796); verdict off, agency 796 acres) · US-0050 ok (Mammoth Cave OFF with cause 'boundary vs owned'; verdict off, agency 52,830 acres)"
  }
 }
