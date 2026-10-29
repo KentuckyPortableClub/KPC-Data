@@ -1,8 +1,8 @@
 {
  "about": "World harvester leads for Estonia (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "EE",
- "date": "2026-10-28",
- "status": "done",
+ "date": "2026-10-29",
+ "status": "nothing seeded: not searched (EEA lead only) · 4 catalog / search errors (see failures)",
  "steps_done": [
   "known",
   "servers",
@@ -16,9 +16,58 @@
  "bands": {
   "A": 0,
   "B": 0,
-  "C": 0
+  "C": 1
  },
+ "failures": [
+  {
+   "catalog": "https://avaandmed.eesti.ee",
+   "keyword": "rahvuspark",
+   "error": "HTTP 404"
+  },
+  {
+   "catalog": "https://avaandmed.eesti.ee",
+   "keyword": "kaitseala",
+   "error": "HTTP 404"
+  },
+  {
+   "catalog": "https://avaandmed.eesti.ee",
+   "keyword": "looduskaitseala",
+   "error": "HTTP 404"
+  },
+  {
+   "catalog": "https://avaandmed.eesti.ee",
+   "keyword": "maastikukaitseala",
+   "error": "HTTP 404"
+  }
+ ],
+ "rejected_orgs": [
+  [
+   [
+    "?",
+    2
+   ]
+  ]
+ ],
  "known_good_found": [],
  "known_good_missed": [],
- "leads": {}
+ "known_log": [],
+ "leads": {
+  "eea-cdda:EE": {
+   "url": "https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/CDDA_Dyna_WM/MapServer",
+   "cc": "EE",
+   "title": "EEA nationally designated areas (CDDA / NatDA): Estonia rows",
+   "publisher": "European Environment Agency",
+   "catalog": "EEA (every member state)",
+   "licence": "EEA says some sites of this country may not be redistributed",
+   "date": "",
+   "found": "2026-10-29",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [],
+   "grade": 1,
+   "band": "C",
+   "note": "filter the layer by the country code (EE); one official layer covers every member state; LICENCE: list only, never store"
+  }
+ }
 }

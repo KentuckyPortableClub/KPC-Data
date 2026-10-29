@@ -1,24 +1,460 @@
 {
  "about": "World harvester leads for Finland (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "FI",
- "date": "2026-10-28",
- "status": "done",
+ "date": "2026-10-29",
+ "status": "paused (out of time, will carry on)",
  "steps_done": [
-  "known",
-  "servers",
-  "wfs",
-  "orgs",
-  "catalogs",
-  "downloads",
-  "search",
-  "eea"
+  "known"
  ],
  "bands": {
   "A": 0,
-  "B": 0,
+  "B": 1,
   "C": 0
  },
- "known_good_found": [],
- "known_good_missed": [],
- "leads": {}
+ "failures": [],
+ "rejected_orgs": [],
+ "known_good_found": [
+  "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/suojelualueet/MapServer"
+ ],
+ "known_good_missed": [
+  "https://paikkatieto.ymparisto.fi/geoserver/wfs"
+ ],
+ "known_log": [
+  {
+   "step": "known",
+   "what": "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/suojelualueet/MapServer",
+   "found": true
+  },
+  {
+   "step": "known",
+   "what": "https://paikkatieto.ymparisto.fi/geoserver/wfs: HTTP 404"
+  },
+  {
+   "step": "known",
+   "what": "https://paikkatieto.ymparisto.fi/geoserver/wfs",
+   "found": false
+  }
+ ],
+ "leads": {
+  "https://gtkdata.gtk.fi/arcgis/rest/services/tukes/suojelualueet": {
+   "url": "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/suojelualueet/MapServer",
+   "cc": "FI",
+   "title": "Tukes/suojelualueet",
+   "publisher": "gtkdata.gtk.fi",
+   "catalog": "known-good (chat 8)",
+   "licence": "",
+   "date": "",
+   "found": "2026-10-29",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 1,
+     "name": "Luontodirektiivi (SAC, SAC/SPA)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID_1",
+      "Shape",
+      "objectid",
+      "naturatunn",
+      "suojeluper",
+      "versiotunn",
+      "nimisuomi",
+      "nimiruotsi",
+      "aluetyyppi",
+      "tietolomak",
+      "paatospvm",
+      "paatospala",
+      "paatospitu",
+      "meripalapr",
+      "paatosasia",
+      "ensisijlaj",
+      "aluejaviiv",
+      "vpdsuoj",
+      "lisatieto",
+      "luontipvm"
+     ],
+     "records": 1642,
+     "sample": [
+      "Nuuksio",
+      "Petkelsuo",
+      "Päivärinteen laidun"
+     ],
+     "name_field": "nimisuomi"
+    },
+    {
+     "id": 2,
+     "name": "Lintudirektiivi (SPA, SAC/SPA)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID_1",
+      "Shape",
+      "objectid",
+      "naturatunn",
+      "suojeluper",
+      "versiotunn",
+      "nimisuomi",
+      "nimiruotsi",
+      "aluetyyppi",
+      "tietolomak",
+      "paatospvm",
+      "paatospala",
+      "paatospitu",
+      "meripalapr",
+      "paatosasia",
+      "ensisijlaj",
+      "aluejaviiv",
+      "vpdsuoj",
+      "lisatieto",
+      "luontipvm"
+     ],
+     "records": 458,
+     "sample": [
+      "Tammisaaren ja Hangon saariston ja Pohjanpitäjänla",
+      "Läppträsket",
+      "Inkoon saaristo"
+     ],
+     "name_field": "nimisuomi"
+    },
+    {
+     "id": 5,
+     "name": "Luonnonsuojelu_alueet",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "Shape",
+      "KohdeId",
+      "LsAlueTunn",
+      "Nimi",
+      "NimiRuotsi",
+      "KohdeTyypp",
+      "TyyppiLyhe",
+      "TyyppiNimi",
+      "PaatPvm",
+      "PaatNimi",
+      "PaatURL",
+      "ViimPaatPv",
+      "ViimPaatNi",
+      "Voimaantul",
+      "LakiPerust",
+      "LakkautusP",
+      "CDDATunnus",
+      "IUCNKatego",
+      "IUCNLuokka"
+     ],
+     "records": 1088,
+     "sample": [
+      "Annjalonin luonnonsuojelualue",
+      "Elimyssalon luonnonsuojelualue (Ystävyyden puisto)",
+      "Espoonlahden luonnonsuojelualue"
+     ],
+     "name_field": "Nimi"
+    },
+    {
+     "id": 7,
+     "name": "Yksityisten maalla olevat suojelualueet",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "Shape",
+      "KohdeId",
+      "LsAlueTunn",
+      "Nimi",
+      "NimiRuotsi",
+      "KohdeTyypp",
+      "TyyppiLyhe",
+      "TyyppiNimi",
+      "PaatPvm",
+      "PaatNimi",
+      "PaatURL",
+      "ViimPaatPv",
+      "ViimPaatNi",
+      "LakiPerust",
+      "LakkautusP",
+      "CDDATunnus",
+      "IUCNKatego",
+      "IUCNLuokka",
+      "LPAlue"
+     ],
+     "records": 16576,
+     "sample": [
+      "Kaunissaaren merenrantaniitty 1/3",
+      "Nuhjakan aluekokonaisuus",
+      "Punakivi-Ahvenjärvi. kohde 46"
+     ],
+     "name_field": "Nimi"
+    },
+    {
+     "id": 8,
+     "name": "Luonnonsuojeluohjelma-alueet",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID_1",
+      "Shape",
+      "OBJECTID",
+      "LsoAlueTun",
+      "Luokka",
+      "Subtype",
+      "Nimi",
+      "DigPohja",
+      "DigOrg",
+      "MuutosPvm",
+      "Lisatieto",
+      "Shape_STAr",
+      "Shape_STLe",
+      "Shape_Length",
+      "Shape_Area"
+     ],
+     "records": 2362,
+     "sample": [
+      "Pomokaira",
+      "Mustakero",
+      "Ylläs-Pallas"
+     ],
+     "name_field": "Nimi"
+    },
+    {
+     "id": 9,
+     "name": "Koskiensuojelulain nojalla suojellut joet, kosket ja valuma-alueet",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "Shape",
+      "KoskiAlueT",
+      "Nimi",
+      "Luokka",
+      "Selite",
+      "DigPohja",
+      "MuutosPvm",
+      "ValumaTunn",
+      "Lisatieto",
+      "RauhoitusP",
+      "Shape_STAr",
+      "Shape_STLe",
+      "Shape_Length",
+      "Shape_Area"
+     ],
+     "records": 58,
+     "sample": [
+      "Näätämöjoen vesistö",
+      "Juutuanjoki ja sen yläpuoliset vesistöt",
+      "Tornionjoen ja Muonionjoen sivuvesistöt"
+     ],
+     "name_field": "Nimi"
+    },
+    {
+     "id": 3,
+     "name": "Ehdotus luontodirektiivin perusteella (SCI)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID_1",
+      "Shape",
+      "objectid",
+      "naturatunn",
+      "suojeluper",
+      "versiotunn",
+      "nimisuomi",
+      "nimiruotsi",
+      "aluetyyppi",
+      "tietolomak",
+      "paatospvm",
+      "paatospala",
+      "paatospitu",
+      "meripalapr",
+      "paatosasia",
+      "ensisijlaj",
+      "aluejaviiv",
+      "vpdsuoj",
+      "lisatieto",
+      "luontipvm"
+     ],
+     "records": 3,
+     "sample": [
+      "Tulliniemen linnustonsuojelualue",
+      "Saaristomeri",
+      "Södra Sandbäck"
+     ],
+     "name_field": "nimisuomi"
+    },
+    {
+     "id": 6,
+     "name": "Erämaa_alueet",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "Shape",
+      "KohdeId",
+      "LsAlueTunn",
+      "Nimi",
+      "NimiRuotsi",
+      "KohdeTyypp",
+      "TyyppiLyhe",
+      "TyyppiNimi",
+      "PaatPvm",
+      "PaatNimi",
+      "PaatURL",
+      "ViimPaatPv",
+      "ViimPaatNi",
+      "Voimaantul",
+      "LakiPerust",
+      "LakkautusP",
+      "CDDATunnus",
+      "IUCNKatego",
+      "IUCNLuokka"
+     ],
+     "records": 12,
+     "sample": [
+      "Hammastunturin erämaa",
+      "Kaldoaivin erämaa",
+      "Kemihaaran erämaa"
+     ],
+     "name_field": "Nimi"
+    },
+    {
+     "id": 10,
+     "name": "Arvokkaat kallioalueet",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID_1",
+      "Shape",
+      "objectid",
+      "lskallioal",
+      "nimi",
+      "luokka",
+      "digpohja",
+      "digorg",
+      "muutospvm",
+      "arvoluokka",
+      "selitearvo",
+      "lisatieto",
+      "area_m2",
+      "perimeter_",
+      "Shape_Length",
+      "Shape_Area"
+     ],
+     "records": 1286,
+     "sample": [
+      "Lullinvuori-Kontinvuori",
+      "Kinkovuori-Raudanriutta",
+      "Haukkavuori-Rappukallio"
+     ],
+     "name_field": "nimi"
+    },
+    {
+     "id": 11,
+     "name": "Arvokkaat kivikot",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "Shape",
+      "Tunnus",
+      "Luokka",
+      "Nimi",
+      "Tyyppi",
+      "Arvoluokka",
+      "DigOrg",
+      "Linkki",
+      "Shape_STAr",
+      "Shape_STLe",
+      "Shape_Length",
+      "Shape_Area"
+     ],
+     "records": 472,
+     "sample": [
+      "Katajasuon kivikko",
+      "Romvuori",
+      "Komiharju"
+     ],
+     "name_field": "Nimi"
+    },
+    {
+     "id": 12,
+     "name": "Arvokkaat moreenimuodostumat",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "Shape",
+      "MuodTunnus",
+      "Luokka",
+      "MuodTyyppi",
+      "ArvoLuokka",
+      "Nimi",
+      "DigOrg",
+      "Linkki",
+      "MuutosPvm",
+      "Shape_STAr",
+      "Shape_STLe",
+      "Shape_Length",
+      "Shape_Area"
+     ],
+     "records": 607,
+     "sample": [
+      "Vellinginmäki",
+      "Vehkaniemenmäki",
+      "Sillantaussuon kumpumoreenialue"
+     ],
+     "name_field": "Nimi"
+    },
+    {
+     "id": 13,
+     "name": "Arvokkaat tuuli- ja rantakerrostumat",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "Shape",
+      "MuodTunnus",
+      "Nimi",
+      "Luokka",
+      "MuodTyyppi",
+      "ArvoLuokka",
+      "DigOrg",
+      "Linkki",
+      "MuutosPvm",
+      "Shape_STAr",
+      "Shape_STLe",
+      "Shape_Length",
+      "Shape_Area"
+     ],
+     "records": 417,
+     "sample": [
+      "Ahvenjärven dyynit",
+      "Sompanen",
+      "Tuuliharju"
+     ],
+     "name_field": "Nimi"
+    }
+   ],
+   "note": "known-good service",
+   "licence_note": "licence unknown: chat 8 asks",
+   "grade": 4,
+   "band": "B",
+   "publisher_note": "not a government publisher: take the agency's own copy if one exists",
+   "known_good": true
+  }
+ }
 }

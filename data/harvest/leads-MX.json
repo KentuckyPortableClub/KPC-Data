@@ -1,8 +1,8 @@
 {
  "about": "World harvester leads for Mexico (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "MX",
- "date": "2026-10-28",
- "status": "done",
+ "date": "2026-10-29",
+ "status": "done · 4 catalog / search errors (see failures)",
  "steps_done": [
   "known",
   "servers",
@@ -18,7 +18,69 @@
   "B": 0,
   "C": 0
  },
+ "failures": [
+  {
+   "step": "known",
+   "what": "https://serverags1.economia.gob.mx/arcgis/rest/services/SDE_EXTERNAS/CAPAS_EXTERNAS_V2/MapServer/2",
+   "error": "no answer three times: left alone for a day"
+  },
+  {
+   "catalog": "https://datos.gob.mx",
+   "keyword": "área natural protegida",
+   "error": "HTTP 403"
+  },
+  {
+   "catalog": "https://datos.gob.mx",
+   "keyword": "parque nacional",
+   "error": "HTTP 403"
+  },
+  {
+   "catalog": "https://datos.gob.mx",
+   "keyword": "reserva de la biosfera",
+   "error": "HTTP 403"
+  },
+  {
+   "catalog": "https://datos.gob.mx",
+   "keyword": "ANP",
+   "error": "HTTP 403"
+  }
+ ],
+ "rejected_orgs": [
+  [
+   [
+    "?",
+    12
+   ]
+  ],
+  [
+   [
+    "?",
+    5
+   ]
+  ],
+  [
+   [
+    "?",
+    4
+   ]
+  ],
+  [
+   [
+    "?",
+    38
+   ]
+  ]
+ ],
  "known_good_found": [],
- "known_good_missed": [],
+ "known_good_missed": [
+  "https://serverags1.economia.gob.mx/arcgis/rest/services/SDE_EXTERNAS/CAPAS_EXTERNAS_V2/MapServer/2"
+ ],
+ "known_log": [
+  {
+   "step": "known",
+   "what": "https://serverags1.economia.gob.mx/arcgis/rest/services/SDE_EXTERNAS/CAPAS_EXTERNAS_V2/MapServer/2",
+   "error": "no answer three times: left alone for a day"
+  }
+ ],
  "leads": {}
 }

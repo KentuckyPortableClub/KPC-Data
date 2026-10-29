@@ -133,9 +133,17 @@ access constraints t | 2024-10-18 | https://services.arcgis.com/JJzESW51TqeY9uat
 | A | AU | SLIP_Public_Services/Soil_Landscape_WFS | park / protected-area polygons (no name field seen); park / protected- | public-services.slip.wa.gov.au | SLIP / LANDGATE |  | https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Soil_Landscape_WFS/MapServer |
 | A | AU | SLIP_Public_Services/Water | trail / path lines; named area polygons | public-services.slip.wa.gov.au | SLIP / LANDGATE |  | https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water/MapServer |
 | A | AU | SLIP_Public_Services/Water_FS | trail / path lines; named area polygons | public-services.slip.wa.gov.au | SLIP / LANDGATE |  | https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Water_FS/MapServer |
+| A | CL | GEF_MONTANA/PE_APROTEGIDAS | park / protected-area polygons with a name field; park / protected-are | arcgis.mma.gob.cl | licence unknown: chat 8 asks |  | https://arcgis.mma.gob.cl/server/rest/services/GEF_MONTANA/PE_APROTEGIDAS/FeatureServer |
+| A | CL | MMA/HUMEDALES_URBANOS | park / protected-area polygons with a name field | arcgis.mma.gob.cl | licence unknown: chat 8 asks |  | https://arcgis.mma.gob.cl/server/rest/services/MMA/HUMEDALES_URBANOS/FeatureServer |
+| A | CL | SIMBIO/SIMBIO_AP | park / protected-area polygons with a name field; park / protected-are | arcgis.mma.gob.cl | licence unknown: chat 8 asks |  | https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_AP/FeatureServer |
+| A | CL | SIMBIO/SIMBIO_ECORREGIONES | park / protected-area polygons with a name field; park / protected-are | arcgis.mma.gob.cl | licence unknown: chat 8 asks |  | https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_ECORREGIONES/FeatureServer |
+| A | CL | SIMBIO/SIMBIO_HUMEDALES | park / protected-area polygons with a name field; park / protected-are | arcgis.mma.gob.cl | licence unknown: chat 8 asks |  | https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_HUMEDALES/FeatureServer |
+| A | CL | SIMBIO/SIMBIO_INICIATIVAS_RE | park / protected-area polygons with a name field; park / protected-are | arcgis.mma.gob.cl | licence unknown: chat 8 asks |  | https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_INICIATIVAS_RE/FeatureServer |
 | C | CN | Global_Important_Plant_Areas | park / protected-area polygons with a name field; park points (sites / | Plantlife International | Global Important Plant Area Dataset    T | 2026-10-12 | https://services8.arcgis.com/WjAwg84s4EayFLBd/arcgis/rest/services/Global_Important_Plant_Areas/FeatureServer |
 | A | DE | FFH | park / protected-area polygons with a name field | World Wide Fund for Nature | Verfügbarkeit: -Offenheit der Lizenz:  F | 2024-01-22 | https://services1.arcgis.com/RTK5Unh1Z71JKIiR/arcgis/rest/services/FFH/FeatureServer |
 | A | DE | Vogelschutzgebiete | park / protected-area polygons with a name field | World Wide Fund for Nature | Verfügbarkeit: -Offenheit der Lizenz:  F | 2024-01-22 | https://services1.arcgis.com/RTK5Unh1Z71JKIiR/arcgis/rest/services/Vogelschutzgebiete/FeatureServer |
+| A | ES | nco/Biosfera | park points (sites / entrances); park / protected-area polygons with a | nco.ign.es | licence unknown: chat 8 asks |  | https://nco.ign.es/server/rest/services/nco/Biosfera/MapServer |
+| A | ES | nco/ParquesNaturales | park points (sites / entrances); park / protected-area polygons with a | nco.ign.es | licence unknown: chat 8 asks |  | https://nco.ign.es/server/rest/services/nco/ParquesNaturales/MapServer |
 | A | GB | Agricultural_Land_Classification_Post_1988 | park / protected-area polygons (no name field seen) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2023-06-06 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Agricultural_Land_Classification_Post_1988/FeatureServer |
 | A | GB | Aquaculture | park points (sites / entrances); park points (sites / entrances) | Defra group ArcGIS Online organisati | Marine Management Organisation, CEFAS | 2019-06-27 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Aquaculture/FeatureServer |
 | A | GB | Biosphere_Reserves_England | park / protected-area polygons with a name field | Defra group ArcGIS Online organisati | There are no public access constraints t | 2026-04-21 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Biosphere_Reserves_England/FeatureServer |
@@ -146,51 +154,49 @@ access constraints t | 2024-10-18 | https://services.arcgis.com/JJzESW51TqeY9uat
 | A | GB | Countryside_Stewardship_Scheme_2016_Options_Englan | park points (sites / entrances) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2026-07-02 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Countryside_Stewardship_Scheme_2016_Options_England/FeatureServer |
 | A | GB | Doorstep_Greens_England | park points (sites / entrances) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2024-02-05 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Doorstep_Greens_England/FeatureServer |
 | A | GB | East_Dartmoor_SSSI_NVC | park / protected-area polygons (no name field seen) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2026-04-21 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/East_Dartmoor_SSSI_NVC/FeatureServer |
-| A | GB | Energy_Crops_Scheme_ECS_Agreements | park / protected-area polygons (no name field seen) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2024-03-25 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Energy_Crops_Scheme_ECS_Agreements/FeatureServer |
-| A | GB | England_Coast_Path_Coastal_Margin | park / protected-area polygons (no name field seen) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2026-09-29 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/England_Coast_Path_Coastal_Margin/FeatureServer |
-| A | GB | England_Peat_Map_Collated_Upland_Peat_Erosion_and_ | park / protected-area polygons (no name field seen) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2025-05-12 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/England_Peat_Map_Collated_Upland_Peat_Erosion_and_Drainage/FeatureServer |
-| A | GB | England_Peat_Map_Peatland_Restoration_Register | park / protected-area polygons (no name field seen) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2026-10-22 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/England_Peat_Map_Peatland_Restoration_Register/FeatureServer |
-| A | GB | England_Peat_Map_Upland_Peat_Erosion_and_Drainage_ | park / protected-area polygons (no name field seen); park / protected- | Defra group ArcGIS Online organisati | There are no public access constraints t | 2026-02-23 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/England_Peat_Map_Upland_Peat_Erosion_and_Drainage_Bare_Peat/FeatureServer |
-| A | GB | England_Peat_Map_Upland_Peat_Erosion_and_Drainage_ | park / protected-area polygons (no name field seen) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2025-05-14 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/England_Peat_Map_Upland_Peat_Erosion_and_Drainage_Grip_Dams/FeatureServer |
-| A | GB | England_Peat_Map_Upland_Peat_Erosion_and_Drainage_ | park / protected-area polygons (no name field seen) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2025-05-14 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/England_Peat_Map_Upland_Peat_Erosion_and_Drainage_Grips/FeatureServer |
-| A | GB | England_Peat_Map_Upland_Peat_Erosion_and_Drainage_ | park / protected-area polygons (no name field seen) | Defra group ArcGIS Online organisati | There are no public access constraints t | 2025-05-14 | https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/England_Peat_Map_Upland_Peat_Erosion_and_Drainage_Gullies/FeatureServer |
 
 ## Last run
 ```
 {
  "date": "2026-10-29",
  "stats": {
-  "requests": 56,
+  "requests": 1569,
   "hits": 0,
-  "leads": 8,
+  "leads": 39,
   "already_read": 0,
-  "skipped": 2,
-  "not_official": 85,
-  "robots": 39,
-  "strikes": 13,
-  "errors": 50,
-  "retried_json": 5
+  "skipped": 112,
+  "not_official": 234,
+  "robots": 12,
+  "strikes": 9,
+  "errors": 35
  },
  "countries": [
-  "NL done: 13 leads (A 3), known-good found 2 of 2"
+  "MX done · 4 catalog / search errors: 0 leads (A 0), known-good found 0 of 1",
+  "RO nothing seeded: not searched: 1 leads (A 0), known-good found 0 of 0",
+  "CL done: 16 leads (A 6), known-good found 0 of 1",
+  "EE nothing seeded: not searched: 1 leads (A 0), known-good found 0 of 0",
+  "DO nothing seeded: not searched: 0 leads (A 0), known-good found 0 of 0",
+  "HU nothing seeded: not searched: 1 leads (A 0), known-good found 0 of 0",
+  "LT nothing seeded: not searched: 1 leads (A 0), known-good found 0 of 0",
+  "AR nothing seeded: not searched · 4 catalog / search errors: 0 leads (A 0), known-good found 0 of 0",
+  "ES done: 20 leads (A 2), known-good found 1 of 2",
+  "TH nothing seeded: not searched · 4 catalog / search errors: 0 leads (A 0), known-good found 0 of 0",
+  "FI paused: 1 leads (A 0), known-good found 1 of 2"
  ],
  "dead_servers": [
-  "geodata.nationaalgeoregister.nl",
-  "geoservices.portaalnatuurenlandschap.nl",
-  "ogc-geoservices.bij12.nl",
-  "servicespub.risicokaart.nl"
+  "data.gov.lt",
+  "serverags1.economia.gob.mx",
+  "wms.mapama.gob.es"
  ],
  "robots_refused": {
-  "geoservices.zuid-holland.nl": 7,
-  "kaartportaal.drenthe.nl": 20,
-  "services.geodataoverijssel.nl": 6,
-  "services.geodata-utrecht.nl": 6
+  "data.gov.ro": 4,
+  "datos.gob.cl": 4,
+  "datos.gob.ar": 4
  },
  "robots_said": {
-  "geoservices.zuid-holland.nl": "User-agent: Geocortex | Disallow: | User-agent: * | Disallow: /",
-  "kaartportaal.drenthe.nl": "User-Agent: * | Disallow: / | User-Agent: MS Search 6.0 Robot | Disallow: /",
-  "services.geodataoverijssel.nl": "User-agent: * | Disallow: /",
-  "services.geodata-utrecht.nl": "User-agent: * | Disallow: /"
+  "data.gov.ro": "User-agent: * | Disallow: /dataset/rate/ | Disallow: /revision/ | Disallow: /dataset/*/history | Disallow: /api/ | Crawl-Delay: 10",
+  "datos.gob.cl": "User-agent: * | Disallow: /dataset/rate/ | Disallow: /revision/ | Disallow: /dataset/*/history | Disallow: /api/ | Crawl-Delay: 10",
+  "datos.gob.ar": "User-agent: * | Disallow: /dataset/rate/ | Disallow: /revision/ | Disallow: /dataset/*/history | Disallow: /api/ | Crawl-Delay: 10"
  },
  "robots_exempted_hosts (HQ ruling Oct 27: ArcGIS REST API paths only)": {}
 }

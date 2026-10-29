@@ -1,8 +1,8 @@
 {
  "about": "World harvester leads for Lithuania (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "LT",
- "date": "2026-10-28",
- "status": "done",
+ "date": "2026-10-29",
+ "status": "nothing seeded: not searched (EEA lead only) · 4 catalog / search errors (see failures)",
  "steps_done": [
   "known",
   "servers",
@@ -15,10 +15,65 @@
  ],
  "bands": {
   "A": 0,
-  "B": 0,
+  "B": 1,
   "C": 0
  },
+ "failures": [
+  {
+   "catalog": "https://data.gov.lt",
+   "keyword": "nacionalinis parkas",
+   "error": "HTTP 500 three times: left alone for a day"
+  },
+  {
+   "catalog": "https://data.gov.lt",
+   "keyword": "regioninis parkas",
+   "error": "server left alone (strikes)"
+  },
+  {
+   "catalog": "https://data.gov.lt",
+   "keyword": "draustinis",
+   "error": "server left alone (strikes)"
+  },
+  {
+   "catalog": "https://data.gov.lt",
+   "keyword": "saugoma teritorija",
+   "error": "server left alone (strikes)"
+  }
+ ],
+ "rejected_orgs": [
+  [
+   [
+    "?",
+    1
+   ]
+  ],
+  [
+   [
+    "?",
+    1
+   ]
+  ]
+ ],
  "known_good_found": [],
  "known_good_missed": [],
- "leads": {}
+ "known_log": [],
+ "leads": {
+  "eea-cdda:LT": {
+   "url": "https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/CDDA_Dyna_WM/MapServer",
+   "cc": "LT",
+   "title": "EEA nationally designated areas (CDDA / NatDA): Lithuania rows",
+   "publisher": "European Environment Agency",
+   "catalog": "EEA (every member state)",
+   "licence": "EEA standard re-use policy (credit the EEA)",
+   "date": "",
+   "found": "2026-10-29",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [],
+   "grade": 3,
+   "band": "B",
+   "note": "filter the layer by the country code (LT); one official layer covers every member state"
+  }
+ }
 }

@@ -1507,33 +1507,138 @@
   },
   "ES": {
    "status": "done",
-   "started": "2026-10-28",
-   "done": [],
+   "started": "2026-10-29",
+   "done": [
+    "https://nco.ign.es/server/rest/services/ccsseu/CaminoSantiagoEuropa/MapServer",
+    "https://nco.ign.es/server/rest/services/ccsseu/CaminoSantiagoEuropa_Asociaciones/MapServer",
+    "https://nco.ign.es/server/rest/services/ccsseu/CaminoSantiagoEuropa_alojamiento/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/ArchivosEstatales/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/BienesDeInteresCultural/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/Biosfera/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/CaminoArteRupestrePrehistorico/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/CaminoDeLaPasion_BTT/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/CaminoDeLaPasion_GRA/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/CaminoDeLaPasion_MOT/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/CaminoDelCid/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/CaminoDelCid_BTT/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/CaminoDelCid_CIC/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/CaminoDelCid_MOT/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/CaminoDelCid_hitos/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/CaminoSantiago/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/CaminoSantiago_Asociaciones/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/CaminoSantiago_UNESCO/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/CaminoSantiago_alojamiento/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/Camino_Santiago_Accesible/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/CaminosGuadalupe/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/CaminosNaturales/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/EuroVelo/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/GR/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/Geoparques/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/IMBA/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/IMBA_Search/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/Museos_y_Colecciones/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/PR/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/Paradores/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/ParquesNacionales/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/ParquesNaturales/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/PatrimonioMundial/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/PatronatoDeTurismo/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/REAJ/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/RTVE/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/RutaTeresiana/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/RutasCarlosV/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/SL/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/ViaDeLaPlata/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/VíasVerdes/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/eltiempo/MapServer",
+    "https://nco.ign.es/server/rest/services/nco/urdaibai_interes_aqueo_00002/MapServer",
+    "https://nco.ign.es/server/rest/services/urdaibai/urdaibai_aves/MapServer",
+    "https://nco.ign.es/server/rest/services/urdaibai/urdaibai_enp_prod/MapServer",
+    "https://nco.ign.es/server/rest/services/urdaibai/urdaibai_interes_arqueo_00002/MapServer",
+    "https://nco.ign.es/server/rest/services/urdaibai/urdaibai_interes_arqueo_wd/MapServer",
+    "https://nco.ign.es/server/rest/services/urdaibai/urdaibai_interes_cultural_nco/MapServer",
+    "https://nco.ign.es/server/rest/services/urdaibai/urdaibai_patrimonio/MapServer",
+    "https://nco.ign.es/server/rest/services/urdaibai/urdaibai_pmc_camino/MapServer",
+    "https://nco.ign.es/server/rest/services/urdaibai/urdaibai_zonificacion2/MapServer",
+    "https://nco.ign.es/server/rest/services/urdaibai/urdiabai_ligs/MapServer",
+    "https://wms.mapama.gob.es/sig/Biodiversidad/ENP"
+   ],
    "log": [
+    {
+     "step": "known",
+     "what": "https://nco.ign.es/server/rest/services/nco/ParquesNacionales/MapServer",
+     "found": true
+    },
+    {
+     "step": "known",
+     "what": "https://wms.mapama.gob.es/sig/Biodiversidad/ENP: no answer three times: left alone for a day"
+    },
+    {
+     "step": "known",
+     "what": "https://wms.mapama.gob.es/sig/Biodiversidad/ENP",
+     "found": false
+    },
+    {
+     "step": "server",
+     "what": "https://nco.ign.es/server/rest/services: 8 folders, 50 services read"
+    },
     {
      "agol": "parque nacional",
      "hits": 10,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       10
+      ]
+     ]
     },
     {
      "agol": "parque natural",
      "hits": 1,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       1
+      ]
+     ]
     },
     {
      "agol": "espacio natural protegido",
      "hits": 17,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       16
+      ],
+      [
+       "Contenidos Esri España",
+       1
+      ]
+     ]
     },
     {
      "agol": "reserva natural",
      "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
     },
     {
      "agol": "red natura",
      "hits": 29,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       21
+      ],
+      [
+       "Contenidos Esri España",
+       8
+      ]
+     ]
     }
    ],
    "steps": [
@@ -1546,7 +1651,8 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-28"
+   "redo": "2026-10-29",
+   "finished": "2026-10-29"
   },
   "IT": {
    "status": "done",
@@ -2332,49 +2438,53 @@
    "finished": "2026-10-28"
   },
   "RO": {
-   "status": "done",
-   "started": "2026-10-28",
+   "status": "nothing seeded: not searched (EEA lead only) · 4 catalog / search errors (see failures)",
+   "started": "2026-10-29",
    "done": [],
    "log": [
     {
      "catalog": "https://data.gov.ro",
      "keyword": "parc național",
-     "error": "no answer three times: left alone for a day"
+     "error": "robots.txt says no"
     },
     {
      "catalog": "https://data.gov.ro",
      "keyword": "parc natural",
-     "error": "server left alone (strikes)"
+     "error": "robots.txt says no"
     },
     {
      "catalog": "https://data.gov.ro",
      "keyword": "arie protejată",
-     "error": "server left alone (strikes)"
+     "error": "robots.txt says no"
     },
     {
      "catalog": "https://data.gov.ro",
      "keyword": "rezervație",
-     "error": "server left alone (strikes)"
+     "error": "robots.txt says no"
     },
     {
      "agol": "parc național",
      "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
     },
     {
      "agol": "parc natural",
      "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
     },
     {
      "agol": "arie protejată",
      "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
     },
     {
      "agol": "rezervație",
      "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
     }
    ],
    "steps": [
@@ -2387,7 +2497,8 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-28"
+   "redo": "2026-10-29",
+   "finished": "2026-10-29"
   },
   "AT": {
    "status": "nothing seeded: not searched (EEA lead only)",
@@ -3195,87 +3306,127 @@
    "finished": "2026-10-28"
   },
   "FI": {
-   "status": "done",
-   "started": "2026-10-28",
-   "done": [],
+   "status": "paused (out of time, will carry on)",
+   "started": "2026-10-29",
+   "done": [
+    "https://gtkdata.gtk.fi/arcgis/rest/services/1GE_Europe/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/1GE_bedrock_surface_B/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/EMODnet/EMODnet_3_Geology/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/EMODnet/EMODnet_Geology/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/EST_1GE_surface/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/FinStrati/Kalliopera/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/FinStrati/Kalliopera07112018/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/FinStrati/Kalliopera20210322/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/FinStrati/Kalliopera22/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/FinStrati/Kalliopera_NO_CAHE/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Fodd/GeophysicMaps/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Fodd/fmd/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Fodd/fmd_v4/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Fodd/fodd_FDM_MASTER/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Fodd/fodd_FDM_v5/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Fodd/fods_lithology/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Fodd/metallogenic_aeras/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Fodd/metallogenic_areas/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/GTKWFS/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/GTKWMS/GTKWMS/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/GTKWMS/GTKWMS_test/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/GTK_Bedrock_and_Superficial_Geology/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/GTK_Bedrock_and_Superficial_Geology2/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Hasu/hasu1000/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Hasu/hasu250_02072018/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Hasu/hasukairaus02072018/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Hasu/hasumuutMustaliuske/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Hasu/maapera/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Hasu/maaperaNew25092017/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Inspire/GTK_Bedrock_and_Superficial_Geology/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Inspire/pangeo/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Kansannayte/Kansannayte/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Kansannayte/Kansannayte_v11/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Kansannayte/Kansannayte_v12/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Kansannayte/geology_geophysics/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/LaosOneGeology/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/20201124_GeophysicsTest/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/20220125_Mines_deposits/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/MDaE/20221018_Mines_deposits/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/20210429_KorkeusAineisto/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/20210603Maapera/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/2022Kalliopera/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/2022_Merenpohja/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/2023Kalliopera/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/Ei_pohjakarttaa/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/KalliokiviainesMaa_aines/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/Kalliopera/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/KorkeusAineisto2018JP/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/KorkeusAineisto2020JP/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/Maanpeitepaksuus/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/Maapera/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/Maapera31102019/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/Merenpohja/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/PohjavesiEP/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/Syke17062019/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Maankamara/geoenergia/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Maapeitepaksuus_1m/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/SampleWorldCities/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/suojelualueet/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/inspire_ge_geology/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/kallionpinnan_korkeustaso_1m/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/kalliopinnan_korkeustaso_1m/MapServer",
+    "https://gtkdata.gtk.fi/arcgis/rest/services/kunnat/MapServer",
+    "https://paikkatieto.ymparisto.fi/geoserver/wfs"
+   ],
    "log": [
     {
-     "catalog": "https://www.avoindata.fi/data",
-     "keyword": "kansallispuisto",
-     "error": "HTTP 403"
+     "step": "known",
+     "what": "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/suojelualueet/MapServer",
+     "found": true
     },
     {
-     "catalog": "https://www.avoindata.fi/data",
-     "keyword": "luonnonsuojelualue",
-     "error": "HTTP 403"
+     "step": "known",
+     "what": "https://paikkatieto.ymparisto.fi/geoserver/wfs: HTTP 404"
     },
     {
-     "catalog": "https://www.avoindata.fi/data",
-     "keyword": "luonnonpuisto",
-     "error": "HTTP 403"
+     "step": "known",
+     "what": "https://paikkatieto.ymparisto.fi/geoserver/wfs",
+     "found": false
     },
     {
-     "catalog": "https://www.avoindata.fi/data",
-     "keyword": "suojelualue",
-     "error": "HTTP 403"
-    },
-    {
-     "agol": "kansallispuisto",
-     "hits": 0,
-     "read": 0
-    },
-    {
-     "agol": "luonnonsuojelualue",
-     "hits": 11,
-     "read": 0
-    },
-    {
-     "agol": "luonnonpuisto",
-     "hits": 0,
-     "read": 0
-    },
-    {
-     "agol": "suojelualue",
-     "hits": 14,
-     "read": 0
+     "step": "server",
+     "what": "https://gtkdata.gtk.fi/arcgis/rest/services: 25 folders, 62 services read"
     }
    ],
    "steps": [
-    "known",
-    "servers",
-    "wfs",
-    "orgs",
-    "catalogs",
-    "downloads",
-    "search",
-    "eea"
+    "known"
    ],
-   "finished": "2026-10-28"
+   "redo": "2026-10-29"
   },
   "HU": {
-   "status": "done",
-   "started": "2026-10-28",
+   "status": "nothing seeded: not searched (EEA lead only)",
+   "started": "2026-10-29",
    "done": [],
    "log": [
     {
      "agol": "nemzeti park",
      "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
     },
     {
      "agol": "tájvédelmi körzet",
      "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
     },
     {
      "agol": "természetvédelmi terület",
      "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
     },
     {
      "agol": "védett terület",
      "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
     }
    ],
    "steps": [
@@ -3288,11 +3439,12 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-28"
+   "redo": "2026-10-29",
+   "finished": "2026-10-29"
   },
   "EE": {
-   "status": "done",
-   "started": "2026-10-28",
+   "status": "nothing seeded: not searched (EEA lead only) · 4 catalog / search errors (see failures)",
+   "started": "2026-10-29",
    "done": [],
    "log": [
     {
@@ -3318,22 +3470,31 @@
     {
      "agol": "rahvuspark",
      "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
     },
     {
      "agol": "kaitseala",
      "hits": 2,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       2
+      ]
+     ]
     },
     {
      "agol": "looduskaitseala",
      "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
     },
     {
      "agol": "maastikukaitseala",
      "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
     }
    ],
    "steps": [
@@ -3346,7 +3507,8 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-28"
+   "redo": "2026-10-29",
+   "finished": "2026-10-29"
   },
   "LV": {
    "status": "done",
@@ -3407,8 +3569,8 @@
    "finished": "2026-10-28"
   },
   "LT": {
-   "status": "done",
-   "started": "2026-10-28",
+   "status": "nothing seeded: not searched (EEA lead only) · 4 catalog / search errors (see failures)",
+   "started": "2026-10-29",
    "done": [],
    "log": [
     {
@@ -3434,22 +3596,36 @@
     {
      "agol": "nacionalinis parkas",
      "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
     },
     {
      "agol": "regioninis parkas",
      "hits": 1,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       1
+      ]
+     ]
     },
     {
      "agol": "draustinis",
      "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
     },
     {
      "agol": "saugoma teritorija",
      "hits": 1,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       1
+      ]
+     ]
     }
    ],
    "steps": [
@@ -3462,7 +3638,8 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-28"
+   "redo": "2026-10-29",
+   "finished": "2026-10-29"
   },
   "LU": {
    "status": "done",
@@ -3907,29 +4084,43 @@
    "finished": "2026-10-28"
   },
   "DO": {
-   "status": "done",
-   "started": "2026-10-28",
+   "status": "nothing seeded: not searched",
+   "started": "2026-10-29",
    "done": [],
    "log": [
     {
      "agol": "parque nacional",
      "hits": 3,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       3
+      ]
+     ]
     },
     {
      "agol": "área protegida",
      "hits": 6,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       6
+      ]
+     ]
     },
     {
      "agol": "reserva científica",
      "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
     },
     {
      "agol": "monumento natural",
      "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
     }
    ],
    "steps": [
@@ -3942,7 +4133,8 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-28"
+   "redo": "2026-10-29",
+   "finished": "2026-10-29"
   },
   "BR": {
    "status": "done",
@@ -4048,10 +4240,19 @@
    "finished": "2026-10-28"
   },
   "MX": {
-   "status": "done",
-   "started": "2026-10-28",
+   "status": "done · 4 catalog / search errors (see failures)",
+   "started": "2026-10-29",
    "done": [],
    "log": [
+    {
+     "step": "known",
+     "what": "https://serverags1.economia.gob.mx/arcgis/rest/services/SDE_EXTERNAS/CAPAS_EXTERNAS_V2/MapServer/2",
+     "error": "no answer three times: left alone for a day"
+    },
+    {
+     "step": "server",
+     "what": "https://serverags1.economia.gob.mx/arcgis/rest/services: server left alone (strikes)"
+    },
     {
      "catalog": "https://datos.gob.mx",
      "keyword": "área natural protegida",
@@ -4075,22 +4276,46 @@
     {
      "agol": "área natural protegida",
      "hits": 12,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       12
+      ]
+     ]
     },
     {
      "agol": "parque nacional",
      "hits": 5,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       5
+      ]
+     ]
     },
     {
      "agol": "reserva de la biosfera",
      "hits": 4,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       4
+      ]
+     ]
     },
     {
      "agol": "ANP",
      "hits": 38,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       38
+      ]
+     ]
     }
    ],
    "steps": [
@@ -4103,11 +4328,12 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-28"
+   "redo": "2026-10-29",
+   "finished": "2026-10-29"
   },
   "TH": {
-   "status": "done",
-   "started": "2026-10-28",
+   "status": "nothing seeded: not searched · 4 catalog / search errors (see failures)",
+   "started": "2026-10-29",
    "done": [],
    "log": [
     {
@@ -4133,22 +4359,36 @@
     {
      "agol": "อุทยานแห่งชาติ",
      "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
     },
     {
      "agol": "เขตรักษาพันธุ์สัตว์ป่า",
      "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
     },
     {
      "agol": "national park",
      "hits": 30,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       30
+      ]
+     ]
     },
     {
      "agol": "wildlife sanctuary",
      "hits": 4,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       4
+      ]
+     ]
     }
    ],
    "steps": [
@@ -4161,7 +4401,8 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-28"
+   "redo": "2026-10-29",
+   "finished": "2026-10-29"
   },
   "ZA": {
    "status": "done",
@@ -4204,49 +4445,68 @@
    "finished": "2026-10-28"
   },
   "AR": {
-   "status": "done",
-   "started": "2026-10-28",
+   "status": "nothing seeded: not searched · 4 catalog / search errors (see failures)",
+   "started": "2026-10-29",
    "done": [],
    "log": [
     {
      "catalog": "https://datos.gob.ar",
      "keyword": "parque nacional",
-     "error": "HTTP 400"
+     "error": "robots.txt says no"
     },
     {
      "catalog": "https://datos.gob.ar",
      "keyword": "área protegida",
-     "error": "HTTP 400"
+     "error": "robots.txt says no"
     },
     {
      "catalog": "https://datos.gob.ar",
      "keyword": "reserva natural",
-     "error": "HTTP 400"
+     "error": "robots.txt says no"
     },
     {
      "catalog": "https://datos.gob.ar",
      "keyword": "parque provincial",
-     "error": "HTTP 400"
+     "error": "robots.txt says no"
     },
     {
      "agol": "parque nacional",
      "hits": 2,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       2
+      ]
+     ]
     },
     {
      "agol": "área protegida",
      "hits": 16,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       16
+      ]
+     ]
     },
     {
      "agol": "reserva natural",
      "hits": 1,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "World Wide Fund for Nature",
+       1
+      ]
+     ]
     },
     {
      "agol": "parque provincial",
      "hits": 0,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": []
     }
    ],
    "steps": [
@@ -4259,13 +4519,72 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-28"
+   "redo": "2026-10-29",
+   "finished": "2026-10-29"
   },
   "CL": {
    "status": "done",
-   "started": "2026-10-28",
-   "done": [],
+   "started": "2026-10-29",
+   "done": [
+    "https://arcgis.mma.gob.cl/server/rest/services/GEF_MONTANA/PER_MASCARAS/MapServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/GEF_MONTANA/PER_OAZ_PP/MapServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/GEF_MONTANA/PER_OAZ_SINTESIS/MapServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/GEF_MONTANA/PER_REL_BIO/MapServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/GEF_MONTANA/PE_AESTUDIO/FeatureServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/GEF_MONTANA/PE_AESTUDIO/MapServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/GEF_MONTANA/PE_APROTEGIDAS/FeatureServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/GEF_MONTANA/PE_APROTEGIDAS/MapServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/GEF_MONTANA/PE_INFRA_ECOLOGICA/FeatureServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/GEF_MONTANA/PE_INFRA_ECOLOGICA/MapServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/GEF_MONTANA/PE_ZONAS_CONFLICTO/FeatureServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/GEF_MONTANA/PE_ZONAS_CONFLICTO/MapServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/GEF_MONTANA/Planificación_Ecológica_Raster/MapServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/MMA/HUMEDALES_URBANOS/FeatureServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/MMA/HUMEDALES_URBANOS/MapServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/MMA/LIMITES_URBANOS/MapServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/MMA/MMA_LIMITESDIFROL/MapServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/ObsEspecies/OBSESPECIES/MapServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/RED_MONITOREO/RED_MONITOREO/MapServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/SIAT/FS_ACTIVOS/FeatureServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/SIAT/FS_ACTIVOS/MapServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/SIAT/GRILLA_SIAT/MapServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/SIAT/SIAT/MapServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/SIAT/SIAT_PUBLICO/MapServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_AP/FeatureServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_AP/MapServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_CATASTRO_BN/MapServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_COT/MapServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_DIVISION_ADMINISTRATIVA/MapServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_DIVISION_CUENCA/MapServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_ECORREGIONES/FeatureServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_ECORREGIONES/MapServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_ECOSRELEVANCIAS/MapServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_ECOS_MARINOS/MapServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_ECOS_TERRESTRES/MapServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_ECOS_TERRESTRES_V/MapServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_EXSITU/MapServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_HIDROGRAFIA/MapServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_HUMEDALES/FeatureServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_HUMEDALES/MapServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_INICIATIVAS_RE/FeatureServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_INICIATIVAS_RE/MapServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_INVENTARIOS_MOP/MapServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_MON_HUMEDALES/MapServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_PLANES_RECOGE/FeatureServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_PLANES_RECOGE/MapServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_PLAN_ECO_LOCAL/MapServer",
+    "https://arcgis.mma.gob.cl/server/rest/services/SIMBIO/SIMBIO_SPPC/MapServer"
+   ],
    "log": [
+    {
+     "step": "known",
+     "what": "https://arcgis.mma.gob.cl/server/rest/services/IDE/Biodiversidad_IDE/MapServer",
+     "error": "server error: {'code': 499, 'message': 'Token Required', 'details': []}"
+    },
+    {
+     "step": "server",
+     "what": "https://arcgis.mma.gob.cl/server/rest/services: 10 folders, 47 services read"
+    },
     {
      "catalog": "https://datos.gob.cl",
      "keyword": "parque nacional",
@@ -4289,22 +4608,46 @@
     {
      "agol": "parque nacional",
      "hits": 14,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       14
+      ]
+     ]
     },
     {
      "agol": "reserva nacional",
      "hits": 13,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       13
+      ]
+     ]
     },
     {
      "agol": "área silvestre protegida",
      "hits": 12,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       12
+      ]
+     ]
     },
     {
      "agol": "monumento natural",
      "hits": 3,
-     "read": 0
+     "read": 0,
+     "rejected_orgs": [
+      [
+       "?",
+       3
+      ]
+     ]
     }
    ],
    "steps": [
@@ -4317,7 +4660,8 @@
     "search",
     "eea"
    ],
-   "finished": "2026-10-28"
+   "redo": "2026-10-29",
+   "finished": "2026-10-29"
   },
   "CO": {
    "status": "done",
@@ -4529,37 +4873,43 @@
  "last_run": {
   "date": "2026-10-29",
   "stats": {
-   "requests": 56,
+   "requests": 1569,
    "hits": 0,
-   "leads": 8,
+   "leads": 39,
    "already_read": 0,
-   "skipped": 2,
-   "not_official": 85,
-   "robots": 39,
-   "strikes": 13,
-   "errors": 50,
-   "retried_json": 5
+   "skipped": 112,
+   "not_official": 234,
+   "robots": 12,
+   "strikes": 9,
+   "errors": 35
   },
   "countries": [
-   "NL done: 13 leads (A 3), known-good found 2 of 2"
+   "MX done · 4 catalog / search errors: 0 leads (A 0), known-good found 0 of 1",
+   "RO nothing seeded: not searched: 1 leads (A 0), known-good found 0 of 0",
+   "CL done: 16 leads (A 6), known-good found 0 of 1",
+   "EE nothing seeded: not searched: 1 leads (A 0), known-good found 0 of 0",
+   "DO nothing seeded: not searched: 0 leads (A 0), known-good found 0 of 0",
+   "HU nothing seeded: not searched: 1 leads (A 0), known-good found 0 of 0",
+   "LT nothing seeded: not searched: 1 leads (A 0), known-good found 0 of 0",
+   "AR nothing seeded: not searched · 4 catalog / search errors: 0 leads (A 0), known-good found 0 of 0",
+   "ES done: 20 leads (A 2), known-good found 1 of 2",
+   "TH nothing seeded: not searched · 4 catalog / search errors: 0 leads (A 0), known-good found 0 of 0",
+   "FI paused: 1 leads (A 0), known-good found 1 of 2"
   ],
   "dead_servers": [
-   "geodata.nationaalgeoregister.nl",
-   "geoservices.portaalnatuurenlandschap.nl",
-   "ogc-geoservices.bij12.nl",
-   "servicespub.risicokaart.nl"
+   "data.gov.lt",
+   "serverags1.economia.gob.mx",
+   "wms.mapama.gob.es"
   ],
   "robots_refused": {
-   "geoservices.zuid-holland.nl": 7,
-   "kaartportaal.drenthe.nl": 20,
-   "services.geodataoverijssel.nl": 6,
-   "services.geodata-utrecht.nl": 6
+   "data.gov.ro": 4,
+   "datos.gob.cl": 4,
+   "datos.gob.ar": 4
   },
   "robots_said": {
-   "geoservices.zuid-holland.nl": "User-agent: Geocortex | Disallow: | User-agent: * | Disallow: /",
-   "kaartportaal.drenthe.nl": "User-Agent: * | Disallow: / | User-Agent: MS Search 6.0 Robot | Disallow: /",
-   "services.geodataoverijssel.nl": "User-agent: * | Disallow: /",
-   "services.geodata-utrecht.nl": "User-agent: * | Disallow: /"
+   "data.gov.ro": "User-agent: * | Disallow: /dataset/rate/ | Disallow: /revision/ | Disallow: /dataset/*/history | Disallow: /api/ | Crawl-Delay: 10",
+   "datos.gob.cl": "User-agent: * | Disallow: /dataset/rate/ | Disallow: /revision/ | Disallow: /dataset/*/history | Disallow: /api/ | Crawl-Delay: 10",
+   "datos.gob.ar": "User-agent: * | Disallow: /dataset/rate/ | Disallow: /revision/ | Disallow: /dataset/*/history | Disallow: /api/ | Crawl-Delay: 10"
   },
   "robots_exempted_hosts (HQ ruling Oct 27: ArcGIS REST API paths only)": {}
  },

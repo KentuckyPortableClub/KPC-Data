@@ -1,8 +1,8 @@
 {
  "about": "World harvester leads for Argentina (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "AR",
- "date": "2026-10-28",
- "status": "done",
+ "date": "2026-10-29",
+ "status": "nothing seeded: not searched · 4 catalog / search errors (see failures)",
  "steps_done": [
   "known",
   "servers",
@@ -18,7 +18,50 @@
   "B": 0,
   "C": 0
  },
+ "failures": [
+  {
+   "catalog": "https://datos.gob.ar",
+   "keyword": "parque nacional",
+   "error": "robots.txt says no"
+  },
+  {
+   "catalog": "https://datos.gob.ar",
+   "keyword": "área protegida",
+   "error": "robots.txt says no"
+  },
+  {
+   "catalog": "https://datos.gob.ar",
+   "keyword": "reserva natural",
+   "error": "robots.txt says no"
+  },
+  {
+   "catalog": "https://datos.gob.ar",
+   "keyword": "parque provincial",
+   "error": "robots.txt says no"
+  }
+ ],
+ "rejected_orgs": [
+  [
+   [
+    "?",
+    2
+   ]
+  ],
+  [
+   [
+    "?",
+    16
+   ]
+  ],
+  [
+   [
+    "World Wide Fund for Nature",
+    1
+   ]
+  ]
+ ],
  "known_good_found": [],
  "known_good_missed": [],
+ "known_log": [],
  "leads": {}
 }

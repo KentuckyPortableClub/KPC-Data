@@ -1,8 +1,8 @@
 {
  "about": "World harvester leads for Thailand (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "TH",
- "date": "2026-10-28",
- "status": "done",
+ "date": "2026-10-29",
+ "status": "nothing seeded: not searched · 4 catalog / search errors (see failures)",
  "steps_done": [
   "known",
   "servers",
@@ -18,7 +18,44 @@
   "B": 0,
   "C": 0
  },
+ "failures": [
+  {
+   "catalog": "https://data.go.th",
+   "keyword": "อุทยานแห่งชาติ",
+   "error": "HTTP 403"
+  },
+  {
+   "catalog": "https://data.go.th",
+   "keyword": "เขตรักษาพันธุ์สัตว์ป่า",
+   "error": "HTTP 403"
+  },
+  {
+   "catalog": "https://data.go.th",
+   "keyword": "national park",
+   "error": "HTTP 403"
+  },
+  {
+   "catalog": "https://data.go.th",
+   "keyword": "wildlife sanctuary",
+   "error": "HTTP 403"
+  }
+ ],
+ "rejected_orgs": [
+  [
+   [
+    "?",
+    30
+   ]
+  ],
+  [
+   [
+    "?",
+    4
+   ]
+  ]
+ ],
  "known_good_found": [],
  "known_good_missed": [],
+ "known_log": [],
  "leads": {}
 }
