@@ -261,7 +261,9 @@ def nth_weekday_dates(s, year):
         d = dt.date(yr, mon, 1); d += dt.timedelta((wd - d.weekday()) % 7); d += dt.timedelta(7 * (n - 1))
     else:
         d = (dt.date(yr + (mon == 12), mon % 12 + 1, 1) - dt.timedelta(1)); d -= dt.timedelta((d.weekday() - wd) % 7)
-    days = 2 if re.search(r'\btwo-?day\b', low) else 3 if re.search(r'\bthree-?day\b', low) else 4 if re.search(r'\bfour-?day\b', low) else 1
+    WN = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6, 'seven': 7}
+    md = re.search(r'\b(one|two|three|four|five|six|seven|\d)(?:\s*\(\d\))?(?:-day\b|\s+(?:consecutive\s+)?days\b)', low)
+    days = (WN.get(md.group(1)) or int(md.group(1))) if md else 1   # 'two-day', 'four (4) consecutive days'
     frm = d - dt.timedelta(1) if re.search(r'\bday before\b', low) else d
     return frm, d + dt.timedelta(days - 1)
 
@@ -296,6 +298,12 @@ def classify(sent, ctx=None):
         return {'skip': 'standing hours (closed on holidays / weekends), park info not a closure (chat 11 round 8)'}
     if re.search(r'\bprohibitions\b', low) and not _dated and not re.search(r'\b(is|are) (?:temporarily )?closed\b', low):
         return {'skip': "a standing prohibitions order ('Camping Prohibitions'), not a dated closure (chat 11 round 8)"}
+    if re.search(r'\bcheck (?:the |our )?(?:online )?calendar\b|\bcall (?:the )?(?:area |wma )?office for\b|\bcontact the (?:wma |area )?office\b', low) and not _dated:
+        return {'skip': "a pointer ('check online calendar or call the office for closures'), not a notice (chat 11 r9/r10)"}
+    if ctx.get('hunt_page') and re.search(r'\blimit (?:one|two|three|four|five|six|\d+)\b|\bantler(?:ed|less)\b', low) and not re.search(r'\b(?:all access|public access|closed to all|everyone|entry)\b', low):
+        return {'skip': 'a bag limit, not a closure (chat 11 r9/r10)'}
+    if ctx.get('hunt_page') and re.search(r'\bseasons?\b', low) and not re.search(r'\b(?:all access|public access|closed to all|closed to the public|everyone|non-?hunters|entry|all users|all other (?:public )?use|public use)\b', low):
+        return {'skip': "a hunting-season rule ('Open for December muzzleloader deer season'), not a land closure (HQ Oct 28)"}
     if (re.match(r'^\s*[•·▪*]', s) and not re.search(r'\bclos', low)) or re.match(r'(?i)^\s*following\b', s) or (len(s) < 25 and not _dated):
         return {'skip': 'a fragment (a bullet, a "following…" tail or under 25 characters) (chat 11 round 8)'}
     s = re.sub(r'^(?:currently|at this time|at present|presently|please note|note|effective immediately|until further notice|as of now|today)\s*[,:]?\s+', '', s, flags=re.I)
@@ -306,7 +314,7 @@ def classify(sent, ctx=None):
         low = s.lower()
     if ctx.get('hunt_page') and SEASON_RULE.search(s) and not re.search(r'\b(all|public|everyone|access|entry|non-?hunters|all other (?:public )?use|all users)\b', low):
         return {'skip': 'a hunting-season rule (a game season closed), not a land closure (HQ Oct 28)'}
-    if ctx.get('hunt_page') and ' | ' in s and (re.search(r'\|\s*\d+(?:\.\d+)?\s*%\s*\|', s) or re.search(r'\|\s*1\s*:\s*\d', s) or len(re.findall(r'\|\s*\d+(?:\.\d+)?\s*(?=\|)', s)) >= 3):
+    if ctx.get('hunt_page') and ' | ' in s and (re.search(r'\|\s*\d+(?:\.\d+)?\s*%\s*\|', s) or re.search(r'\|\s*1\s*:\s*\d', s) or len(re.findall(r'\|\s*(?:\d+(?:\.\d+)?|-|NA|N/A)\s*(?=\|)', s)) >= 3):
         return {'skip': "a quota-hunt RESULTS table row (applicants, harvest %, odds = last season), not this season's closure (round 10)"}
     if ctx.get('hunt_page') and re.search(r'\b(?:shooting|target|tube|archery|rifle|club)\s+ranges?\b|\bthe range\b', low):
         return {'skip': 'a shooting-range note, not the park (Sheet 2)'}
@@ -1133,6 +1141,21 @@ def why_no_park(t):
     return next((w for rx, w in NO_PARK if re.search(rx, str(t), re.I)), '')
 
 
+def still_valid(it, area):
+    """Round 11 (chat 11 r9/r10 grade): an item CARRIED OVER from an earlier run (kept on a failed read, kept to its end date, or
+    'taken down') is re-checked against TODAY's rules: a sentence today's rules skip, or another state's place, is dropped
+    outright (not shown as 'taken down'), so a rule fix cleans the file the same run."""
+    d = re.sub(r'^["\u201c]|["\u201d]$', '', str(it.get('details') or '').strip())
+    if not d: return True
+    try:
+        hunt = it.get('class') == 'hunt' or str(it.get('src', '')).startswith(('ky-wma', 'ky-fw'))
+        cl = classify(d, {'hunt_page': hunt, 'year': SEASON_YEAR})
+        if cl and cl.get('skip'): return False
+        if str(it.get('src', '')).startswith('fs-') and in_state({'sent': d, 'title': it.get('title') or '', 'home': [it.get('ref')]}, area, it['src']) is False: return False
+    except Exception: return True  # noqa: BLE001
+    return True
+
+
 def in_state(row, area, sid):
     """Rule (HQ Oct 28): a multi-state forest's notice counts for this area only when it names this state, one of its counties,
     one of the unit's ranger districts here, or ties to a park here; a notice naming another state is dropped. Single-state units
@@ -1274,7 +1297,7 @@ def process_area(K, area, state, review):
             skipped = why.startswith('needs ') or why.startswith('D-R8')
             if why == 'rest': why = 'rest (host resting after an earlier strike; last items kept)'
             if not skipped: STAT['sources_failed'] += 1
-            items += old
+            items += [o for o in old if still_valid(o, area)]
             srcs[sid] = {'agency': agency, 'url': url, 'kind': kind, 'ok': False, 'skipped': skipped, 'why': why, 'n': len(old), 'n_prev': ps.get('n', 0),
                          'unmatched': ps.get('unmatched', []), 'last_ok': ps.get('last_ok'), 'fails': 0 if skipped else (ps.get('fails') or 0) + 1}
             continue
@@ -1331,8 +1354,11 @@ def process_area(K, area, state, review):
                         now_ids.add(it['id']); items.append(it)
             n += got
         # A5 / D-R5: an old item not in this good read stays until GONE_READS good reads miss it (dated ones until their end)
+        fresh = {(it['ref'], re.sub(r'\W+', ' ', str(it.get('details') or '')).strip().lower()) for it in items if it['id'] in now_ids}
         for oit in old:
             if oit['id'] in now_ids: continue
+            if (oit['ref'], re.sub(r'\W+', ' ', str(oit.get('details') or '')).strip().lower()) in fresh: continue   # round 11: same sentence re-read under a new id (now dated / re-classed) = one item
+            if not still_valid(oit, area): STAT['unreadable'] += 1; continue   # round 11: today's rules drop it
             if oit.get('taken_down'):
                 if (TODAY - dt.date.fromisoformat(oit['taken_down'])).days <= TAKEN_DOWN_DAYS: items.append(oit)
                 continue
@@ -1597,6 +1623,10 @@ SELFTEST = [  # (sentence, context, expected class, expected note_kind or what-c
     ("Laurel River Lake and Lake Cumberland Camping Prohibitions. 1) Camping within 300 feet of the high water line is prohibited.", {}, None, None, None),
     ("• If transportation to and from blinds is provided by KDFWR (times of high water), each hunter must", {'hunt_page': True}, None, None, None),
     ("following waterfowl season", {'hunt_page': True}, None, None, None),
+    ("Check online calendar or call Area office for closures or events.", {}, None, None, None),
+    ("Limit four, only one of which may be antlered, during quota hunt.", {'hunt_page': True}, None, None, None),
+    ("Open for December muzzleloader deer season.", {'hunt_page': True}, None, None, None),
+    ("All deer hunting seasons on this WMA are closed during quota hunts except for drawn hunters.", {'hunt_page': True}, None, None, None),
     # round 10: last season's results tables are never closures; rule-worded dates are computed for this season
     ("Clay WMA | Nov. 1-2 | 29 | 19 | 0.31 | 37% | 1 : 2.5 |", {'hunt_page': True}, None, None, None),
     ("Closed during (and day before) the two-day quota hunt that starts the first Saturday in November.", {'hunt_page': True}, 'hunt', None, (dt.date(SEASON_YEAR, 11, 1) + dt.timedelta((5 - dt.date(SEASON_YEAR, 11, 1).weekday()) % 7 - 1), dt.date(SEASON_YEAR, 11, 1) + dt.timedelta((5 - dt.date(SEASON_YEAR, 11, 1).weekday()) % 7 + 1))),
@@ -1663,6 +1693,10 @@ def selftest():
              and ((len(_zw(t)) <= 40 and re.search(r'\b(deer|dove|waterfowl|crane|pheasant|elk|turkey|quota)\b', _zw(t).lower())) or 'quota' in u.lower())]
     ok = picks == ['https://fw.ky.gov/Hunt/Pages/Deer-Quota-Hunts.aspx', 'https://fw.ky.gov/Hunt/Pages/Dove.aspx', 'https://fw.ky.gov/Hunt/Pages/Waterfowl-Quota.aspx']
     print(('ok   ' if ok else 'FAIL ') + f'landing-page children: {len(picks)} same-host species links (other host + Home left out)'); bad += not ok
+    ok = (not still_valid({'details': '"Youth Under 16 - Free, no permit needed"', 'class': 'note', 'src': 'fws-clarks-river', 'ref': 'US-0295'}, 'US-KY')
+          and not still_valid({'details': 'Clay WMA | Nov. 1-2 | 29 | 19 | 0.31 | 37% | 1 : 2.5 |', 'class': 'hunt', 'src': 'ky-fw-quota', 'ref': 'US-10124'}, 'US-KY')
+          and still_valid({'details': '"Road 214 Temporary closure between roads 215 and 372 due to a failing culvert."', 'class': 'part', 'src': 'ky-lbl-site', 'ref': 'US-3792'}, 'US-KY'))
+    print(('ok   ' if ok else 'FAIL ') + 'carried-over items are re-checked against today\'s rules (junk dropped, a real closure kept)'); bad += not ok
     aspx = '<html><body><form id="aspnetForm" action="detail.aspx">' + '<div class="pad">x</div>' * 300 + '<h1>Lloyd WMA</h1><p>Exceptions: The huntable portion of Lloyd WMA will be closed to all access Nov. 14-21, except for hunters drawn for and participating in the deer quota hunt.</p></form></body></html>'
     hr = [r for r in page_rows(aspx, 'https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=153', ['US-3805'], None, True) if 'Nov. 14-21' in r['sent']]
     ok = bool(hr); print(('ok   ' if ok else 'FAIL ') + 'an ASP.NET page wrapped in one <form> is still read (KDFWR WMA pages)'); bad += not ok
