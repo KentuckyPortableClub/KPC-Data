@@ -788,6 +788,11 @@ def main():
             r['why'] = f"did not open ({(r.get('probe') or {}).get('status')}): probed again next run"
             qr = qrows.get(r.get('queue_url') or r.get('url'))
             if qr: r['test'] = test_result(qr, 'RETRY', r.get('overlap') or '')
+        if r.get('verdict') == 'READY' and not r.get('approved') and (r.get('from') or '') not in ('chat 8', 'chat 9'):   # Oct 29: today's READY rule applies to rows judged before it
+            cl = r.get('closes') if isinstance(r.get('closes'), dict) else {}
+            n, byname = cl.get('n') or 0, cl.get('by_name') or 0
+            if COVERAGE.search(' '.join(str(v or '') for v in (r.get('name'), r.get('title')))) or (n and (byname < 3 or byname < 0.25 * n)):
+                r['verdict'] = 'REJECT'; r['why'] = f'judged again by the Oct 29 READY rule: closes {n}, by name {byname} (READY needs 3+ name matches and 25%+; never a coverage layer)'
     ready['rows'] = [r for r in old.values() if still_queued(r)]; ready['updated'] = TODAY
     save(OUT / 'ready.json', ready)
     counts = write_review(ready['rows'], state)
