@@ -4,51 +4,56 @@
  "states": [
   "US-MI"
  ],
- "since": "2026-10-28",
- "date": "2026-10-28 21:36 UTC",
+ "since": "2026-10-29",
+ "date": "2026-10-29 04:48 UTC",
  "verdict": "READY FOR CHAT 8",
  "why": [],
- "known_answers": "18/18 on 2026-10-28",
+ "known_answers": "19/19 on 2026-10-29",
  "missing_check": {
-  "FOUND": 113,
-  "DROPPED": 222,
-  "NEVER LOOKED AT": 4043
+  "FOUND": 81,
+  "DROPPED": 216,
+  "NEVER LOOKED AT": 4081
  },
  "report": {
   "pass1": {
-   "date": "2026-10-28",
-   "pairs tested": 1072,
-   "pairs whose boxes touch": 1072
+   "date": "2026-10-29",
+   "pairs tested": 728,
+   "pairs whose boxes touch": 728
   },
   "pass2": {
-   "agree with the pass before": 654,
-   "date": "2026-10-28",
-   "pairs tested": 153
+   "agree with the pass before": 369,
+   "date": "2026-10-29",
+   "pairs tested": 115
   },
   "pass3": {
-   "agree with the pass before": 0,
-   "date": "2026-10-28",
-   "pairs tested": 0
+   "agree with the pass before": 308,
+   "date": "2026-10-29",
+   "pairs tested": 115
   },
   "pass5": {
-   "checked": 36,
-   "date": "2026-10-28",
+   "checked": 37,
+   "date": "2026-10-29",
    "pairs tested": 0,
    "still not checked": 0
   }
  },
+ "files": {
+  "US-MI": "data/fers/US-MI.json"
+ },
  "US-MI": {
-  "rows": 701,
-  "live": 120,
+  "rows": 412,
+  "live": 92,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "the ownership map shows more than one owner across the spot": 1,
-   "no public owner on the ownership map": 16,
-   "the outlines overlap, but the PAD-US state fee records does": 2,
-   "the outlines overlap, but the PAD-US state fee records / For": 1
+   "the outlines overlap, but the PAD-US state fee records does": 1,
+   "no public owner on the ownership map": 8
   },
-  "dropped": 242,
-  "merged": 319
- }
+  "dropped": 136,
+  "merged": 175
+ },
+ "states_ready": [
+  "US-MI"
+ ],
+ "states_held": []
 }
