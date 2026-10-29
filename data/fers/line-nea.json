@@ -9,20 +9,14 @@
   "US-DC"
  ],
  "since": "2026-10-29",
- "date": "2026-10-29 03:49 UTC",
- "verdict": "STOPPED",
- "why": [
-  "Kentucky known-answers test not passing (18/19 on 2026-10-29)",
-  "water not checked: US-PA: 1 rows (the USGS water map / files had no answer there): never READY with one",
-  "water not checked: US-DE: 43 rows (the USGS water map / files had no answer there): never READY with one",
-  "water not checked: US-MD: 29 rows (the USGS water map / files had no answer there): never READY with one",
-  "water not checked: US-DC: 10 rows (the USGS water map / files had no answer there): never READY with one"
- ],
- "known_answers": "18/19 on 2026-10-29",
+ "date": "2026-10-29 04:20 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
+ "known_answers": "19/19 on 2026-10-29",
  "missing_check": {
-  "FOUND": 179,
-  "DROPPED": 756,
-  "NEVER LOOKED AT": 5559
+  "FOUND": 245,
+  "DROPPED": 630,
+  "NEVER LOOKED AT": 5619
  },
  "report": {
   "pass1": {
@@ -55,21 +49,13 @@
   "US-DC": "data/fers/US-DC.json"
  },
  "US-PA": {
-  "rows": 653,
-  "live": 78,
+  "rows": 652,
+  "live": 79,
   "waiting": 0,
   "unfinished": 0,
-  "not_sure": {
-   "water not checked": 1
-  },
-  "dropped": 429,
+  "not_sure": {},
+  "dropped": 428,
   "merged": 145
- },
- "water_weak": {
-  "US-PA": 1,
-  "US-DE": 43,
-  "US-MD": 29,
-  "US-DC": 10
  },
  "US-NJ": {
   "rows": 170,
@@ -81,46 +67,42 @@
   "merged": 53
  },
  "US-DE": {
-  "rows": 272,
-  "live": 36,
+  "rows": 350,
+  "live": 79,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "no public owner on the ownership map": 3,
-   "water not checked": 43
+   "no public owner on the ownership map": 4
   },
-  "dropped": 105,
-  "merged": 85
+  "dropped": 47,
+  "merged": 220
  },
  "US-MD": {
-  "rows": 263,
-  "live": 50,
+  "rows": 323,
+  "live": 79,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "water not checked": 29,
-   "no public owner on the ownership map": 1
+   "no public owner on the ownership map": 3
   },
-  "dropped": 112,
-  "merged": 71
+  "dropped": 102,
+  "merged": 139
  },
  "US-DC": {
   "rows": 23,
-  "live": 2,
+  "live": 12,
   "waiting": 0,
   "unfinished": 0,
-  "not_sure": {
-   "water not checked": 10
-  },
-  "dropped": 10,
-  "merged": 1
+  "not_sure": {},
+  "dropped": 1,
+  "merged": 10
  },
- "states_ready": [],
- "states_held": [
+ "states_ready": [
   "US-PA",
   "US-NJ",
   "US-DE",
   "US-MD",
   "US-DC"
- ]
+ ],
+ "states_held": []
 }
