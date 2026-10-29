@@ -5,12 +5,12 @@
   "agree": 109,
   "handover_hints": 5,
   "no_page": 0,
-  "no_size": 66,
+  "no_size": 65,
   "off": 5,
   "ours_unknown": 0,
   "parks": 193,
   "retired": 0,
-  "unsure": 9,
+  "unsure": 10,
   "weak": 26,
   "with_outline": 189
  },
@@ -104,7 +104,7 @@
     }
    ],
    "t": "National / NPS",
-   "ver": 11,
+   "ver": 12,
    "verdict": "unsure"
   },
   "US-0050": {
@@ -209,7 +209,7 @@
     }
    ],
    "t": "National Park",
-   "ver": 11,
+   "ver": 12,
    "verdict": "off"
   },
   "US-0295": {
@@ -271,7 +271,7 @@
    },
    "sizes": [],
    "t": "National / NPS",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-0538": {
@@ -321,6 +321,11 @@
      "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/reelfoot/about-us",
      "why": "FWS refuge about page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/reelfoot",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
     }
    ],
    "pct": null,
@@ -333,7 +338,7 @@
    },
    "sizes": [],
    "t": "National / NPS",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-0608": {
@@ -438,7 +443,7 @@
     }
    ],
    "t": "National / NPS",
-   "ver": 11,
+   "ver": 12,
    "verdict": "unsure"
   },
   "US-0686": {
@@ -536,7 +541,7 @@
     }
    ],
    "t": "National Recreation Area",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-0703": {
@@ -644,7 +649,7 @@
     }
    ],
    "t": "National / NPS",
-   "ver": 11,
+   "ver": 12,
    "verdict": "off"
   },
   "US-0724": {
@@ -705,14 +710,24 @@
    },
    "sizes": [],
    "t": "National / NPS",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-10098": {
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 10 acres, no total words near it)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Green River National Wildlife Refuge",
-   "official": null,
+   "official": {
+    "acres": 10.0,
+    "as": "10 acres",
+    "clean": false,
+    "line": "ublic Use Regulations Brochure for more information. More About What We Do Special Use Permits About In 2019, 10-acres were donated by Southern Conservation Corporation to establish Green River National Wildlife Refuge under the",
+    "read": "2026-10-29",
+    "sent": "In 2019, 10-acres were donated by Southern Conservation Corporation to establish Green River National Wildlife Refuge under the National Wildlife Refuge System Administration Act of 1966.",
+    "url": "https://www.fws.gov/refuge/green-river",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 2186,
     "manager": "State",
@@ -749,9 +764,15 @@
      "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/green-river/about-us",
      "why": "FWS refuge about page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/green-river",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
     }
    ],
-   "pct": null,
+   "pct": 21760,
+   "same_agency": true,
    "score": 6,
    "score_parts": {
     "name": 2,
@@ -759,10 +780,20 @@
     "size": 1,
     "source": 1
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 10.0,
+     "as": "10 acres",
+     "clean": false,
+     "line": "ublic Use Regulations Brochure for more information. More About What We Do Special Use Permits About In 2019, 10-acres were donated by Southern Conservation Corporation to establish Green River National Wildlife Refuge under the",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/green-river",
+     "why": "no total words near it"
+    }
+   ],
    "t": "National / NPS",
-   "ver": 11,
-   "verdict": "no size on page"
+   "ver": 12,
+   "verdict": "unsure"
   },
   "US-10099": {
    "checked": "2026-10-29",
@@ -813,7 +844,7 @@
    },
    "sizes": [],
    "t": "Fish Hatchery",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-10102": {
@@ -859,7 +890,7 @@
    },
    "sizes": [],
    "t": "Trail",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-10103": {
@@ -910,7 +941,7 @@
    },
    "sizes": [],
    "t": "River / Wilderness",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-10104": {
@@ -1004,7 +1035,7 @@
     }
    ],
    "t": "National / NPS",
-   "ver": 11,
+   "ver": 12,
    "verdict": "unsure"
   },
   "US-10105": {
@@ -1061,7 +1092,7 @@
    },
    "sizes": [],
    "t": "National / NPS",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-10106": {
@@ -1112,7 +1143,7 @@
    },
    "sizes": [],
    "t": "National / NPS",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-10107": {
@@ -1174,7 +1205,7 @@
     }
    ],
    "t": "National / NPS",
-   "ver": 11,
+   "ver": 12,
    "verdict": "unsure"
   },
   "US-10111": {
@@ -1225,7 +1256,7 @@
    },
    "sizes": [],
    "t": "National / NPS",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-10112": {
@@ -1276,7 +1307,7 @@
    },
    "sizes": [],
    "t": "National / NPS",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-10121": {
@@ -1351,7 +1382,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-10124": {
@@ -1417,7 +1448,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-10128": {
@@ -1492,7 +1523,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-10131": {
@@ -1567,7 +1598,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-10137": {
@@ -1642,7 +1673,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-10138": {
@@ -1708,7 +1739,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-10139": {
@@ -1786,6 +1817,15 @@
      "why": "no total words near it"
     },
     {
+     "acres": 115.0,
+     "as": "115 acres",
+     "clean": false,
+     "line": "cription Two portions of this national forest extend into Kentucky, 742 acres in Letcher County on KY 932 and 115 acres in Pike County, access also by trail up Vanover Hollow from KY 197. Both tracts on the Kentucky-Virginia bord",
+     "total_like": false,
+     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9078",
+     "why": "part of a sum"
+    },
+    {
      "acres": 857.0,
      "as": "857 acres",
      "clean": false,
@@ -1796,7 +1836,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-10140": {
@@ -1862,7 +1902,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-10141": {
@@ -1946,7 +1986,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-10145": {
@@ -2021,7 +2061,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-10146": {
@@ -2123,7 +2163,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-10148": {
@@ -2207,7 +2247,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-10153": {
@@ -2282,7 +2322,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-10155": {
@@ -2384,7 +2424,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-10157": {
@@ -2468,7 +2508,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-10158": {
@@ -2552,7 +2592,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-10159": {
@@ -2654,7 +2694,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-10160": {
@@ -2729,7 +2769,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-10161": {
@@ -2804,7 +2844,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-10162": {
@@ -2870,7 +2910,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-10164": {
@@ -2954,7 +2994,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-10166": {
@@ -3038,7 +3078,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-10167": {
@@ -3113,7 +3153,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-10168": {
@@ -3179,7 +3219,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-10170": {
@@ -3258,7 +3298,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-10171": {
@@ -3328,7 +3368,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-10172": {
@@ -3338,7 +3378,7 @@
    "ours": null,
    "score": null,
    "t": "Other",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no outline"
   },
   "US-10173": {
@@ -3384,7 +3424,7 @@
    },
    "sizes": [],
    "t": "State Facility",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-11181": {
@@ -3394,7 +3434,7 @@
    "ours": null,
    "score": null,
    "t": "Trail",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no outline"
   },
   "US-11274": {
@@ -3478,7 +3518,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-12079": {
@@ -3530,7 +3570,7 @@
    },
    "sizes": [],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-12083": {
@@ -3610,7 +3650,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-1251": {
@@ -3661,7 +3701,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-1252": {
@@ -3712,7 +3752,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-1253": {
@@ -3763,7 +3803,7 @@
    },
    "sizes": [],
    "t": "Trail",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-1254": {
@@ -3814,7 +3854,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-1255": {
@@ -3880,7 +3920,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-1256": {
@@ -3931,7 +3971,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-1257": {
@@ -3982,7 +4022,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-1258": {
@@ -4033,7 +4073,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-1259": {
@@ -4090,7 +4130,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-1260": {
@@ -4147,7 +4187,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-1261": {
@@ -4204,7 +4244,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-1262": {
@@ -4261,7 +4301,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-1263": {
@@ -4312,7 +4352,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-1264": {
@@ -4396,7 +4436,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 11,
+   "ver": 12,
    "verdict": "off"
   },
   "US-1265": {
@@ -4447,7 +4487,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-1266": {
@@ -4498,7 +4538,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-1267": {
@@ -4549,7 +4589,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-1268": {
@@ -4600,7 +4640,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-1269": {
@@ -4651,7 +4691,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-1270": {
@@ -4702,7 +4742,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-1271": {
@@ -4753,7 +4793,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-1272": {
@@ -4804,7 +4844,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-1273": {
@@ -4855,7 +4895,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-1274": {
@@ -4912,7 +4952,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-1275": {
@@ -4963,7 +5003,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-12752": {
@@ -5040,7 +5080,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 11,
+   "ver": 12,
    "verdict": "off"
   },
   "US-1276": {
@@ -5091,7 +5131,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-1277": {
@@ -5148,7 +5188,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-1278": {
@@ -5205,7 +5245,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-1279": {
@@ -5256,7 +5296,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-1280": {
@@ -5313,7 +5353,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-1281": {
@@ -5370,7 +5410,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-1282": {
@@ -5427,7 +5467,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-1283": {
@@ -5478,7 +5518,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-1284": {
@@ -5529,7 +5569,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-1285": {
@@ -5580,7 +5620,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-1286": {
@@ -5637,7 +5677,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-1287": {
@@ -5688,7 +5728,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-1288": {
@@ -5745,7 +5785,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-1289": {
@@ -5796,7 +5836,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-12971": {
@@ -5885,7 +5925,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-12972": {
@@ -5926,7 +5966,7 @@
    },
    "sizes": [],
    "t": "Nature Preserve",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-12974": {
@@ -6001,7 +6041,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-13598": {
@@ -6062,7 +6102,7 @@
     }
    ],
    "t": "State Fishing Lake",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-13599": {
@@ -6132,7 +6172,7 @@
     }
    ],
    "t": "State Fishing Lake",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-13600": {
@@ -6193,7 +6233,7 @@
     }
    ],
    "t": "State Fishing Lake",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-13601": {
@@ -6254,7 +6294,7 @@
     }
    ],
    "t": "State Fishing Lake",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-13606": {
@@ -6315,7 +6355,7 @@
     }
    ],
    "t": "State Fishing Lake",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-13607": {
@@ -6376,7 +6416,7 @@
     }
    ],
    "t": "State Fishing Lake",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3779": {
@@ -6427,7 +6467,7 @@
    },
    "sizes": [],
    "t": "Other",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-3781": {
@@ -6483,7 +6523,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-3782": {
@@ -6534,7 +6574,7 @@
    },
    "sizes": [],
    "t": "Other",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-3783": {
@@ -6585,7 +6625,7 @@
    },
    "sizes": [],
    "t": "Other",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-3784": {
@@ -6636,7 +6676,7 @@
    },
    "sizes": [],
    "t": "Other",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-3785": {
@@ -6687,7 +6727,7 @@
    },
    "sizes": [],
    "t": "Other",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-3786": {
@@ -6738,7 +6778,7 @@
    },
    "sizes": [],
    "t": "Other",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-3787": {
@@ -6779,7 +6819,7 @@
    },
    "sizes": [],
    "t": "Other",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-3788": {
@@ -6830,7 +6870,7 @@
    },
    "sizes": [],
    "t": "Other",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-3789": {
@@ -6871,7 +6911,7 @@
    },
    "sizes": [],
    "t": "Other",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-3790": {
@@ -6919,7 +6959,7 @@
    },
    "sizes": [],
    "t": "National / NPS",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-3791": {
@@ -6929,7 +6969,7 @@
    "ours": null,
    "score": null,
    "t": "National / NPS",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no outline"
   },
   "US-3792": {
@@ -7005,7 +7045,7 @@
     }
    ],
    "t": "National Recreation Area",
-   "ver": 11,
+   "ver": 12,
    "verdict": "unsure"
   },
   "US-3793": {
@@ -7098,7 +7138,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3794": {
@@ -7218,7 +7258,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3795": {
@@ -7284,7 +7324,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3796": {
@@ -7368,7 +7408,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3797": {
@@ -7497,7 +7537,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3798": {
@@ -7563,7 +7603,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3799": {
@@ -7665,7 +7705,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3800": {
@@ -7777,7 +7817,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "off"
   },
   "US-3801": {
@@ -7871,7 +7911,7 @@
     }
    ],
    "t": "River / Wilderness",
-   "ver": 11,
+   "ver": 12,
    "verdict": "unsure"
   },
   "US-3802": {
@@ -7937,7 +7977,7 @@
     }
    ],
    "t": "Sanctuary",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3803": {
@@ -8012,7 +8052,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3804": {
@@ -8078,7 +8118,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3805": {
@@ -8162,7 +8202,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3806": {
@@ -8237,7 +8277,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3807": {
@@ -8366,7 +8406,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3808": {
@@ -8441,7 +8481,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3809": {
@@ -8525,7 +8565,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3810": {
@@ -8609,7 +8649,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3811": {
@@ -8675,7 +8715,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3812": {
@@ -8750,7 +8790,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3813": {
@@ -8879,7 +8919,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3814": {
@@ -8926,7 +8966,7 @@
    },
    "sizes": [],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-3815": {
@@ -9028,7 +9068,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3816": {
@@ -9103,7 +9143,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3817": {
@@ -9187,7 +9227,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3818": {
@@ -9253,7 +9293,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3819": {
@@ -9328,7 +9368,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3820": {
@@ -9430,7 +9470,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3821": {
@@ -9496,7 +9536,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3822": {
@@ -9571,7 +9611,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3823": {
@@ -9700,7 +9740,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3824": {
@@ -9766,7 +9806,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3825": {
@@ -9850,7 +9890,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3826": {
@@ -9916,7 +9956,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3827": {
@@ -10036,7 +10076,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3828": {
@@ -10120,7 +10160,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3829": {
@@ -10213,7 +10253,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3830": {
@@ -10297,7 +10337,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3831": {
@@ -10363,7 +10403,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3832": {
@@ -10426,7 +10466,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "unsure"
   },
   "US-3833": {
@@ -10492,7 +10532,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3834": {
@@ -10567,7 +10607,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3835": {
@@ -10633,7 +10673,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3836": {
@@ -10717,7 +10757,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3837": {
@@ -10801,7 +10841,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3838": {
@@ -10867,7 +10907,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3839": {
@@ -10978,7 +11018,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-3840": {
@@ -11062,7 +11102,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-4484": {
@@ -11155,7 +11195,7 @@
     }
    ],
    "t": "National Forest",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-4526": {
@@ -11255,7 +11295,7 @@
     }
    ],
    "t": "National Forest",
-   "ver": 11,
+   "ver": 12,
    "verdict": "unsure"
   },
   "US-4572": {
@@ -11265,7 +11305,7 @@
    "ours": null,
    "score": null,
    "t": "National / NPS",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no outline"
   },
   "US-4687": {
@@ -11340,7 +11380,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-4688": {
@@ -11443,7 +11483,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-4689": {
@@ -11484,16 +11524,6 @@
     },
     {
      "status": "ok",
-     "url": "https://eec.ky.gov/Natural-Resources/Forestry/about-kdf/Pages/default.aspx",
-     "why": "about / history page of the park's site"
-    },
-    {
-     "status": "ok",
-     "url": "https://eec.ky.gov/Natural-Resources/Forestry/Pages/Forest-Facts.aspx",
-     "why": "about / history page of the park's site"
-    },
-    {
-     "status": "ok",
      "url": "https://eec.ky.gov/Natural-Resources/Forestry/Documents/KentuckyRidgeStateForest_ALL.pdf",
      "why": "official map (Kentucky answer key)"
     }
@@ -11511,29 +11541,11 @@
     {
      "acres": 15251.0,
      "as": "15,251 acres",
-     "clean": false,
+     "clean": true,
      "line": "cky Ridge State Forest Main Content ​​​​Kentucky Ridge State Forest ​​Kentucky Ridge State Forest consists of 15,251 acres and was acquired by lease in 1930, as part of the Land Use and Resettlement Program. The lease was sustained",
-     "total_like": false,
+     "total_like": true,
      "url": "https://eec.ky.gov/Natural-Resources/Forestry/ky-state-forests/Pages/Kentucky-Ridge-State-Forest.aspx",
-     "why": "history"
-    },
-    {
-     "acres": 12400000.0,
-     "as": "12.4 million acres",
-     "clean": false,
-     "line": "of the most diverse hardwood species mix in the nation. Forty-nine percent of Kentucky is forestland - that's 12.4 million acres of forests. Eighty-eight percent of Kentucky's forestland is owned by private landowners. Seventy-five percen",
-     "total_like": false,
-     "url": "https://eec.ky.gov/Natural-Resources/Forestry/Pages/Forest-Facts.aspx",
-     "why": "another park / unit named in the sentence"
-    },
-    {
-     "acres": 178925.0,
-     "as": "178,925 acres",
-     "clean": false,
-     "line": "in Kentucky are caused by humans. The worst fire year in Kentucky in recent history was 2001 with a total of 178,925 acres burned. Unlike the western United States, hand crews put out most of the wildland fires in Kentucky. Aircraft",
-     "total_like": false,
-     "url": "https://eec.ky.gov/Natural-Resources/Forestry/Pages/Forest-Facts.aspx",
-     "why": "part (a lake, a purchase, a campground…)"
+     "why": "clean total"
     },
     {
      "acres": 11794.0,
@@ -11546,7 +11558,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-4690": {
@@ -11691,7 +11703,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-4692": {
@@ -11771,7 +11783,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-4693": {
@@ -11883,7 +11895,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-7708": {
@@ -11949,7 +11961,7 @@
    },
    "sizes": [],
    "t": "National / NPS",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-7890": {
@@ -12000,7 +12012,7 @@
    },
    "sizes": [],
    "t": "Other",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-7950": {
@@ -12061,7 +12073,7 @@
    },
    "sizes": [],
    "t": "National / NPS",
-   "ver": 11,
+   "ver": 12,
    "verdict": "no size on page"
   },
   "US-7951": {
@@ -12172,7 +12184,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-7952": {
@@ -12247,7 +12259,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-7953": {
@@ -12358,7 +12370,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-7954": {
@@ -12437,7 +12449,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-7955": {
@@ -12507,7 +12519,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-7956": {
@@ -12577,7 +12589,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-7957": {
@@ -12670,7 +12682,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-7958": {
@@ -12763,7 +12775,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-7959": {
@@ -12865,7 +12877,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-7960": {
@@ -12944,7 +12956,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-7961": {
@@ -13015,7 +13027,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-7962": {
@@ -13087,7 +13099,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 11,
+   "ver": 12,
    "verdict": "unsure"
   },
   "US-7963": {
@@ -13180,7 +13192,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-7964": {
@@ -13260,7 +13272,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-7965": {
@@ -13362,7 +13374,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-7966": {
@@ -13465,7 +13477,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-7967": {
@@ -13558,7 +13570,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-7968": {
@@ -13628,7 +13640,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-7970": {
@@ -13689,7 +13701,7 @@
     }
    ],
    "t": "Nature Preserve",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-8144": {
@@ -13789,7 +13801,7 @@
     }
    ],
    "t": "Recreation Area",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   },
   "US-9756": {
@@ -13855,7 +13867,7 @@
     }
    ],
    "t": "WMA",
-   "ver": 11,
+   "ver": 12,
    "verdict": "agree"
   }
  },
