@@ -1,6 +1,1350 @@
 {
  "about": "ONE BIG 'NEEDS A HUMAN LOOK' LIST (HQ + Brandon Oct 28): every NOT SURE row, POTA pairs our outlines do not confirm, water-only rows, river slots; one row per pair; an area's rows are replaced on each run. Chat 8 works it after the US queue.",
  "areas": {
+  "caabbc": {
+   "area": "caabbc",
+   "date": "2026-10-29",
+   "states": [
+    "CA-AB",
+    "CA-BC"
+   ],
+   "rows": [
+    {
+     "area": "caabbc",
+     "state": "CA-AB",
+     "refs": [
+      "CA-3116",
+      "CA-3118"
+     ],
+     "names": {
+      "CA-3116": "Richardson Lake Migratory Bird Sanctuary",
+      "CA-3118": "Richardson Wildland Provincial Park"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "26437.7 ac",
+     "sort": 26437.7,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-3116+CA-3118@area@58.401,-111.085",
+     "sources": {
+      "CA-3116": "downloaded 2026-10-29",
+      "CA-3118": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-BC",
+     "refs": [
+      "CA-3724",
+      "CA-4065"
+     ],
+     "names": {
+      "CA-3724": "Lanz and Cox Islands Provincial Park",
+      "CA-4065": "Scott Islands Marine Protected Area"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "8429.3 ac",
+     "sort": 8429.3,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-3724+CA-4065@area@50.792,-128.656",
+     "sources": {
+      "CA-3724": "downloaded 2026-10-29",
+      "CA-4065": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-BC",
+     "refs": [
+      "CA-0711",
+      "CA-4065"
+     ],
+     "names": {
+      "CA-0711": "Cape Scott Provincial Park",
+      "CA-4065": "Scott Islands Marine Protected Area"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "7230.2 ac",
+     "sort": 7230.2,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0711+CA-4065@area@50.698,-128.381",
+     "sources": {
+      "CA-0711": "downloaded 2026-10-29",
+      "CA-4065": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-AB",
+     "refs": [
+      "CA-0674",
+      "CA-6112"
+     ],
+     "names": {
+      "CA-0674": "Sheep River Provincial Park",
+      "CA-6112": "Kananaskis Country Provincial Park"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "712.2 ac",
+     "sort": 712.2,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0674+CA-6112@area@50.641,-114.492",
+     "sources": {
+      "CA-0674": "downloaded 2026-10-29",
+      "CA-6112": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-BC",
+     "refs": [
+      "CA-3228",
+      "CA-4214"
+     ],
+     "names": {
+      "CA-3228": "Lac du Bois Grasslands Protected Area",
+      "CA-4214": "Tranquille Wildlife Management Area"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "647.5 ac",
+     "sort": 647.5,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-3228+CA-4214@area@50.720,-120.500",
+     "sources": {
+      "CA-3228": "downloaded 2026-10-29",
+      "CA-4214": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-AB",
+     "refs": [
+      "CA-0040",
+      "CA-3167"
+     ],
+     "names": {
+      "CA-0040": "Jasper National Park",
+      "CA-3167": "Willmore Wilderness Park"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "640.7 ac",
+     "sort": 640.7,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0040+CA-3167@area@53.372,-119.409",
+     "sources": {
+      "CA-0040": "downloaded 2026-10-29",
+      "CA-3167": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-AB",
+     "refs": [
+      "CA-0647",
+      "CA-6112"
+     ],
+     "names": {
+      "CA-0647": "Elbow River Provincial Recreation Area",
+      "CA-6112": "Kananaskis Country Provincial Park"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "586.4 ac",
+     "sort": 586.4,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0647+CA-6112@area@50.895,-114.698",
+     "sources": {
+      "CA-0647": "downloaded 2026-10-29",
+      "CA-6112": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-BC",
+     "refs": [
+      "CA-3539",
+      "CA-4026"
+     ],
+     "names": {
+      "CA-3539": "George C. Reifel Migratory Bird Sanctuary",
+      "CA-4026": "Roberts Bank Wildlife Management Area"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "565.1 ac",
+     "sort": 565.1,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-3539+CA-4026@area@49.098,-123.198",
+     "sources": {
+      "CA-3539": "downloaded 2026-10-29",
+      "CA-4026": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-AB",
+     "refs": [
+      "CA-0005",
+      "CA-0040"
+     ],
+     "names": {
+      "CA-0005": "Banff National Park",
+      "CA-0040": "Jasper National Park"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "507.4 ac",
+     "sort": 507.4,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0005+CA-0040@area@52.210,-117.162",
+     "sources": {
+      "CA-0005": "downloaded 2026-10-29",
+      "CA-0040": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-AB",
+     "refs": [
+      "CA-0115",
+      "CA-3118"
+     ],
+     "names": {
+      "CA-0115": "Wood Buffalo National Park",
+      "CA-3118": "Richardson Wildland Provincial Park"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "479.6 ac",
+     "sort": 479.6,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0115+CA-3118@area@58.649,-111.038",
+     "sources": {
+      "CA-0115": "downloaded 2026-10-29",
+      "CA-3118": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-BC",
+     "refs": [
+      "CA-3193",
+      "CA-3194"
+     ],
+     "names": {
+      "CA-3193": "Babine Lake (Pinkut Creek Site) Marine Park",
+      "CA-3194": "Babine Lake (Smithers Landing Site) Marine Park"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "447.2 ac",
+     "sort": 447.2,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-3193+CA-3194@area@54.560,-125.710",
+     "sources": {
+      "CA-3193": "downloaded 2026-10-29",
+      "CA-3194": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-BC",
+     "refs": [
+      "CA-0001",
+      "CA-3539"
+     ],
+     "names": {
+      "CA-0001": "Alaksen National Wildlife Area",
+      "CA-3539": "George C. Reifel Migratory Bird Sanctuary"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "354.3 ac",
+     "sort": 354.3,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0001+CA-3539@area@49.103,-123.179",
+     "sources": {
+      "CA-0001": "downloaded 2026-10-29",
+      "CA-3539": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-AB",
+     "refs": [
+      "CA-0672",
+      "CA-3125"
+     ],
+     "names": {
+      "CA-0672": "Saskatoon Island Provincial Park",
+      "CA-3125": "Saskatoon Lake Migratory Bird Sanctuary"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "287.1 ac",
+     "sort": 287.1,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0672+CA-3125@area@55.206,-119.080",
+     "sources": {
+      "CA-0672": "downloaded 2026-10-29",
+      "CA-3125": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-AB",
+     "refs": [
+      "CA-2971",
+      "CA-2972"
+     ],
+     "names": {
+      "CA-2971": "Castle Provincial Park",
+      "CA-2972": "Castle Wildland Provincial Park"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "276.8 ac",
+     "sort": 276.8,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-2971+CA-2972@area@49.388,-114.449",
+     "sources": {
+      "CA-2971": "downloaded 2026-10-29",
+      "CA-2972": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-AB",
+     "refs": [
+      "CA-0040",
+      "CA-3845"
+     ],
+     "names": {
+      "CA-0040": "Jasper National Park",
+      "CA-3845": "Mount Robson Protected Area"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "236.4 ac",
+     "sort": 236.4,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0040+CA-3845@area@53.128,-119.044",
+     "sources": {
+      "CA-0040": "downloaded 2026-10-29",
+      "CA-3845": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-AB",
+     "refs": [
+      "CA-0040",
+      "CA-3847"
+     ],
+     "names": {
+      "CA-0040": "Jasper National Park",
+      "CA-3847": "Mount Robson Provincial Park"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "236.4 ac",
+     "sort": 236.4,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0040+CA-3847@area@53.128,-119.044",
+     "sources": {
+      "CA-0040": "downloaded 2026-10-29",
+      "CA-3847": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-AB",
+     "refs": [
+      "CA-0040",
+      "CA-3119"
+     ],
+     "names": {
+      "CA-0040": "Jasper National Park",
+      "CA-3119": "Rock Lake - Solomon Creek Wildland Provincial Park"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "222.7 ac",
+     "sort": 222.7,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0040+CA-3119@area@53.292,-117.918",
+     "sources": {
+      "CA-0040": "downloaded 2026-10-29",
+      "CA-3119": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-AB",
+     "refs": [
+      "CA-1177",
+      "CA-6112"
+     ],
+     "names": {
+      "CA-1177": "Elbow Falls Provincial Recreation Area",
+      "CA-6112": "Kananaskis Country Provincial Park"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "213.3 ac",
+     "sort": 213.3,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-1177+CA-6112@area@50.865,-114.795",
+     "sources": {
+      "CA-1177": "downloaded 2026-10-29",
+      "CA-6112": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-BC",
+     "refs": [
+      "CA-3506",
+      "CA-3615"
+     ],
+     "names": {
+      "CA-3506": "Fiordland Conservation Area",
+      "CA-3615": "Huchsduwachsdu Nuyem Jees / Kitlope Heritage Conservation Area"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "161.2 ac",
+     "sort": 161.2,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-3506+CA-3615@area@52.889,-127.870",
+     "sources": {
+      "CA-3506": "downloaded 2026-10-29",
+      "CA-3615": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-AB",
+     "refs": [
+      "CA-0115",
+      "CA-2932"
+     ],
+     "names": {
+      "CA-0115": "Wood Buffalo National Park",
+      "CA-2932": "Birch River Wildland Provincial Park"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "146.0 ac",
+     "sort": 146.0,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0115+CA-2932@area@58.079,-114.000",
+     "sources": {
+      "CA-0115": "downloaded 2026-10-29",
+      "CA-2932": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-AB",
+     "refs": [
+      "CA-0040",
+      "CA-3163"
+     ],
+     "names": {
+      "CA-0040": "Jasper National Park",
+      "CA-3163": "Whitehorse Wildland Provincial Park"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "115.0 ac",
+     "sort": 115.0,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0040+CA-3163@area@52.897,-117.405",
+     "sources": {
+      "CA-0040": "downloaded 2026-10-29",
+      "CA-3163": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-BC",
+     "refs": [
+      "CA-3672",
+      "CA-3674"
+     ],
+     "names": {
+      "CA-3672": "Khutzeymateen Provincial Park",
+      "CA-3674": "Khyex Conservation Area"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "100.7 ac",
+     "sort": 100.7,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-3672+CA-3674@area@54.519,-129.713",
+     "sources": {
+      "CA-3672": "downloaded 2026-10-29",
+      "CA-3674": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-AB",
+     "refs": [
+      "CA-0677",
+      "CA-3017"
+     ],
+     "names": {
+      "CA-0677": "Spray Valley Provincial Park",
+      "CA-3017": "Evan-Thomas Provincial Recreation Area"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "70.0 ac",
+     "sort": 70.0,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0677+CA-3017@area@50.883,-115.153",
+     "sources": {
+      "CA-0677": "downloaded 2026-10-29",
+      "CA-3017": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-AB",
+     "refs": [
+      "CA-5522",
+      "CA-6112"
+     ],
+     "names": {
+      "CA-5522": "Ing's Mine Provincial Recreation Area",
+      "CA-6112": "Kananaskis Country Provincial Park"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "67.6 ac",
+     "sort": 67.6,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-5522+CA-6112@area@50.905,-114.801",
+     "sources": {
+      "CA-5522": "downloaded 2026-10-29",
+      "CA-6112": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-AB",
+     "refs": [
+      "CA-0685",
+      "CA-6112"
+     ],
+     "names": {
+      "CA-0685": "West Bragg Creek Provincial Recreation Area",
+      "CA-6112": "Kananaskis Country Provincial Park"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "62.5 ac",
+     "sort": 62.5,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0685+CA-6112@area@50.949,-114.695",
+     "sources": {
+      "CA-0685": "downloaded 2026-10-29",
+      "CA-6112": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-AB",
+     "refs": [
+      "CA-0005",
+      "CA-3829"
+     ],
+     "names": {
+      "CA-0005": "Banff National Park",
+      "CA-3829": "Mount Assiniboine Provincial Park"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "60.0 ac",
+     "sort": 60.0,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0005+CA-3829@area@50.948,-115.610",
+     "sources": {
+      "CA-0005": "downloaded 2026-10-29",
+      "CA-3829": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-BC",
+     "refs": [
+      "CA-3917",
+      "CA-4258"
+     ],
+     "names": {
+      "CA-3917": "Oak Bay Islands Ecological Reserve",
+      "CA-4258": "Victoria Harbour Migratory Bird Sanctuary"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "44.4 ac",
+     "sort": 44.4,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-3917+CA-4258@area@48.444,-123.272",
+     "sources": {
+      "CA-3917": "downloaded 2026-10-29",
+      "CA-4258": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-AB",
+     "refs": [
+      "CA-0664",
+      "CA-0726"
+     ],
+     "names": {
+      "CA-0664": "Peter Lougheed Provincial Park",
+      "CA-0726": "Height of the Rockies Provincial Park"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "40.1 ac",
+     "sort": 40.1,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0664+CA-0726@area@50.683,-115.296",
+     "sources": {
+      "CA-0664": "downloaded 2026-10-29",
+      "CA-0726": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-BC",
+     "refs": [
+      "CA-3347",
+      "CA-4241"
+     ],
+     "names": {
+      "CA-3347": "Clendinning Provincial Park",
+      "CA-4241": "Upper Elaho Valley Conservancy Protected Area"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "37.6 ac",
+     "sort": 37.6,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-3347+CA-4241@area@50.474,-123.616",
+     "sources": {
+      "CA-3347": "downloaded 2026-10-29",
+      "CA-4241": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-AB",
+     "refs": [
+      "CA-0040",
+      "CA-3161"
+     ],
+     "names": {
+      "CA-0040": "Jasper National Park",
+      "CA-3161": "White Goat Natural Area"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "35.1 ac",
+     "sort": 35.1,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0040+CA-3161@area@52.214,-117.026",
+     "sources": {
+      "CA-0040": "downloaded 2026-10-29",
+      "CA-3161": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-AB",
+     "refs": [
+      "CA-6112",
+      "CA-6587"
+     ],
+     "names": {
+      "CA-6112": "Kananaskis Country Provincial Park",
+      "CA-6587": "Lusk Creek Provincial Recreation Area"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "33.5 ac",
+     "sort": 33.5,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-6112+CA-6587@area@51.033,-115.010",
+     "sources": {
+      "CA-6112": "downloaded 2026-10-29",
+      "CA-6587": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-AB",
+     "refs": [
+      "CA-0115",
+      "CA-2988"
+     ],
+     "names": {
+      "CA-0115": "Wood Buffalo National Park",
+      "CA-2988": "Kazan Wildland Provincial Park"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "27.8 ac",
+     "sort": 27.8,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0115+CA-2988@area@59.161,-111.429",
+     "sources": {
+      "CA-0115": "downloaded 2026-10-29",
+      "CA-2988": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-AB",
+     "refs": [
+      "CA-0040",
+      "CA-3582"
+     ],
+     "names": {
+      "CA-0040": "Jasper National Park",
+      "CA-3582": "Hamber Provincial Park"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "26.1 ac",
+     "sort": 26.1,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0040+CA-3582@area@52.470,-117.964",
+     "sources": {
+      "CA-0040": "downloaded 2026-10-29",
+      "CA-3582": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-BC",
+     "refs": [
+      "CA-0018",
+      "CA-3362"
+     ],
+     "names": {
+      "CA-0018": "Columbia National Wildlife Area",
+      "CA-3362": "Columbia Wetlands Wildlife Management Area"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "23.5 ac",
+     "sort": 23.5,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0018+CA-3362@area@50.929,-116.401",
+     "sources": {
+      "CA-0018": "downloaded 2026-10-29",
+      "CA-3362": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-BC",
+     "refs": [
+      "CA-3871",
+      "CA-4212"
+     ],
+     "names": {
+      "CA-3871": "Naikoon Provincial Park",
+      "CA-4212": "Tow Hill Ecological Reserve"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "22.6 ac",
+     "sort": 22.6,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-3871+CA-4212@area@54.045,-131.830",
+     "sources": {
+      "CA-3871": "downloaded 2026-10-29",
+      "CA-4212": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-AB",
+     "refs": [
+      "CA-2947",
+      "CA-6112"
+     ],
+     "names": {
+      "CA-2947": "Bluerock Wildland Provincial Park",
+      "CA-6112": "Kananaskis Country Provincial Park"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "18.6 ac",
+     "sort": 18.6,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-2947+CA-6112@area@50.683,-114.765",
+     "sources": {
+      "CA-2947": "downloaded 2026-10-29",
+      "CA-6112": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-BC",
+     "refs": [
+      "CA-4218",
+      "CA-4258"
+     ],
+     "names": {
+      "CA-4218": "Trial Islands Ecological Reserve",
+      "CA-4258": "Victoria Harbour Migratory Bird Sanctuary"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "14.2 ac",
+     "sort": 14.2,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-4218+CA-4258@area@48.401,-123.304",
+     "sources": {
+      "CA-4218": "downloaded 2026-10-29",
+      "CA-4258": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-AB",
+     "refs": [
+      "CA-0005",
+      "CA-0117"
+     ],
+     "names": {
+      "CA-0005": "Banff National Park",
+      "CA-0117": "Yoho National Park"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "11.0 ac",
+     "sort": 11.0,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0005+CA-0117@area@51.450,-116.288",
+     "sources": {
+      "CA-0005": "downloaded 2026-10-29",
+      "CA-0117": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-AB",
+     "refs": [
+      "CA-0664",
+      "CA-0719"
+     ],
+     "names": {
+      "CA-0664": "Peter Lougheed Provincial Park",
+      "CA-0719": "Elk Lakes Provincial Park"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "10.6 ac",
+     "sort": 10.6,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0664+CA-0719@area@50.543,-115.192",
+     "sources": {
+      "CA-0664": "downloaded 2026-10-29",
+      "CA-0719": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-BC",
+     "refs": [
+      "CA-0105",
+      "CA-4253"
+     ],
+     "names": {
+      "CA-0105": "Vaseux-Bighorn National Wildlife Area",
+      "CA-4253": "Vaseux Lake Provincial Park"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "10.6 ac",
+     "sort": 10.6,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0105+CA-4253@area@49.299,-119.530",
+     "sources": {
+      "CA-0105": "downloaded 2026-10-29",
+      "CA-4253": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-BC",
+     "refs": [
+      "CA-0105",
+      "CA-4254"
+     ],
+     "names": {
+      "CA-0105": "Vaseux-Bighorn National Wildlife Area",
+      "CA-4254": "Vaseux Lake Migratory Bird Sanctuary"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "10.6 ac",
+     "sort": 10.6,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0105+CA-4254@area@49.299,-119.530",
+     "sources": {
+      "CA-0105": "downloaded 2026-10-29",
+      "CA-4254": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-BC",
+     "refs": [
+      "CA-3791",
+      "CA-4239"
+     ],
+     "names": {
+      "CA-3791": "Maxtaktsm'aa / Union Passage Conservation Area",
+      "CA-4239": "Union Passage Marine Park"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "9.1 ac",
+     "sort": 9.1,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-3791+CA-4239@area@53.406,-129.454",
+     "sources": {
+      "CA-3791": "downloaded 2026-10-29",
+      "CA-4239": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-BC",
+     "refs": [
+      "CA-0045",
+      "CA-3829"
+     ],
+     "names": {
+      "CA-0045": "Kootenay National Park",
+      "CA-3829": "Mount Assiniboine Provincial Park"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "8.2 ac",
+     "sort": 8.2,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0045+CA-3829@area@51.066,-115.850",
+     "sources": {
+      "CA-0045": "downloaded 2026-10-29",
+      "CA-3829": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-BC",
+     "refs": [
+      "CA-4191",
+      "CA-4258"
+     ],
+     "names": {
+      "CA-4191": "Ten Mile Point Ecological Reserve",
+      "CA-4258": "Victoria Harbour Migratory Bird Sanctuary"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "7.9 ac",
+     "sort": 7.9,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-4191+CA-4258@area@48.451,-123.266",
+     "sources": {
+      "CA-4191": "downloaded 2026-10-29",
+      "CA-4258": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-AB",
+     "refs": [
+      "CA-0005",
+      "CA-0726"
+     ],
+     "names": {
+      "CA-0005": "Banff National Park",
+      "CA-0726": "Height of the Rockies Provincial Park"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "4.4 ac",
+     "sort": 4.4,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0005+CA-0726@area@50.712,-115.385",
+     "sources": {
+      "CA-0005": "downloaded 2026-10-29",
+      "CA-0726": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-BC",
+     "refs": [
+      "CA-3624",
+      "CA-4122"
+     ],
+     "names": {
+      "CA-3624": "Inkaneep Provincial Park",
+      "CA-4122": "South Okanagan Wildlife Management Area"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "3.2 ac",
+     "sort": 3.2,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-3624+CA-4122@area@49.226,-119.545",
+     "sources": {
+      "CA-3624": "downloaded 2026-10-29",
+      "CA-4122": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-AB",
+     "refs": [
+      "CA-0005",
+      "CA-3829"
+     ],
+     "names": {
+      "CA-0005": "Banff National Park",
+      "CA-3829": "Mount Assiniboine Provincial Park"
+     },
+     "what": "more than one owner on the patch (all public): live, look later",
+     "kind": "area",
+     "size": "3.0 ac",
+     "sort": 3.0,
+     "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:CANADA', 'STATE']",
+     "id": "CA-0005+CA-3829@area@51.079,-115.860",
+     "sources": {
+      "CA-0005": "downloaded 2026-10-29",
+      "CA-3829": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-AB",
+     "refs": [
+      "CA-2971",
+      "CA-3159"
+     ],
+     "names": {
+      "CA-2971": "Castle Provincial Park",
+      "CA-3159": "West Castle Wetlands Ecological Reserve"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "3.0 ac",
+     "sort": 3.0,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-2971+CA-3159@area@49.337,-114.413",
+     "sources": {
+      "CA-2971": "downloaded 2026-10-29",
+      "CA-3159": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-BC",
+     "refs": [
+      "CA-3303",
+      "CA-3615"
+     ],
+     "names": {
+      "CA-3303": "Cascade-Sutslem Conservation Area",
+      "CA-3615": "Huchsduwachsdu Nuyem Jees / Kitlope Heritage Conservation Area"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "2.8 ac",
+     "sort": 2.8,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-3303+CA-3615@area@52.774,-127.728",
+     "sources": {
+      "CA-3303": "downloaded 2026-10-29",
+      "CA-3615": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-AB",
+     "refs": [
+      "CA-0109",
+      "CA-0691"
+     ],
+     "names": {
+      "CA-0109": "Waterton Biosphere Reserve",
+      "CA-0691": "Akamina-Kishinena Provincial Park"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "2.4 ac",
+     "sort": 2.4,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0109+CA-0691@area@49.085,-114.124",
+     "sources": {
+      "CA-0109": "downloaded 2026-10-29",
+      "CA-0691": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-AB",
+     "refs": [
+      "CA-0110",
+      "CA-0691"
+     ],
+     "names": {
+      "CA-0110": "Waterton Lakes National Park",
+      "CA-0691": "Akamina-Kishinena Provincial Park"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "2.4 ac",
+     "sort": 2.4,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0110+CA-0691@area@49.092,-114.132",
+     "sources": {
+      "CA-0110": "downloaded 2026-10-29",
+      "CA-0691": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-AB",
+     "refs": [
+      "CA-0005",
+      "CA-0045"
+     ],
+     "names": {
+      "CA-0005": "Banff National Park",
+      "CA-0045": "Kootenay National Park"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "2.1 ac",
+     "sort": 2.1,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0005+CA-0045@area@51.296,-116.217",
+     "sources": {
+      "CA-0005": "downloaded 2026-10-29",
+      "CA-0045": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-BC",
+     "refs": [
+      "CA-0032",
+      "CA-3393"
+     ],
+     "names": {
+      "CA-0032": "Gwaii Haanas and Haida National Park",
+      "CA-3393": "Daawuuxusda Heritage Site Conservation Area"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "2.0 ac",
+     "sort": 2.0,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0032+CA-3393@area@52.734,-132.106",
+     "sources": {
+      "CA-0032": "downloaded 2026-10-29",
+      "CA-3393": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-AB",
+     "refs": [
+      "CA-0040",
+      "CA-3845"
+     ],
+     "names": {
+      "CA-0040": "Jasper National Park",
+      "CA-3845": "Mount Robson Protected Area"
+     },
+     "what": "more than one owner on the patch (all public): live, look later",
+     "kind": "area",
+     "size": "1.3 ac",
+     "sort": 1.3,
+     "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:CANADA', 'STATE']",
+     "id": "CA-0040+CA-3845@area@53.189,-118.861",
+     "sources": {
+      "CA-0040": "downloaded 2026-10-29",
+      "CA-3845": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-AB",
+     "refs": [
+      "CA-0040",
+      "CA-3847"
+     ],
+     "names": {
+      "CA-0040": "Jasper National Park",
+      "CA-3847": "Mount Robson Provincial Park"
+     },
+     "what": "more than one owner on the patch (all public): live, look later",
+     "kind": "area",
+     "size": "1.3 ac",
+     "sort": 1.3,
+     "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:CANADA', 'STATE']",
+     "id": "CA-0040+CA-3847@area@53.189,-118.861",
+     "sources": {
+      "CA-0040": "downloaded 2026-10-29",
+      "CA-3847": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-BC",
+     "refs": [
+      "CA-3615",
+      "CA-4243"
+     ],
+     "names": {
+      "CA-3615": "Huchsduwachsdu Nuyem Jees / Kitlope Heritage Conservation Area",
+      "CA-4243": "Upper Kimsquit River Conservancy Protected Area"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "1.3 ac",
+     "sort": 1.3,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-3615+CA-4243@area@53.087,-127.442",
+     "sources": {
+      "CA-3615": "downloaded 2026-10-29",
+      "CA-4243": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-BC",
+     "refs": [
+      "CA-4145",
+      "CA-4245"
+     ],
+     "names": {
+      "CA-4145": "Stein Valley Nlaka'pamux Heritage Park Protected Area",
+      "CA-4245": "Upper Rogers K\u00f3l\u0331ii7 Conservancy Protected Area"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "1.0 ac",
+     "sort": 1.0,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-4145+CA-4245@area@50.121,-122.228",
+     "sources": {
+      "CA-4145": "downloaded 2026-10-29",
+      "CA-4245": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "caabbc",
+     "state": "CA-AB",
+     "refs": [
+      "CA-0040",
+      "CA-3846"
+     ],
+     "names": {
+      "CA-0040": "Jasper National Park",
+      "CA-3846": "Mount Robson Corridor Protected Area"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "0.6 ac",
+     "sort": 0.6,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0040+CA-3846@area@52.892,-118.465",
+     "sources": {
+      "CA-0040": "downloaded 2026-10-29",
+      "CA-3846": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    }
+   ]
+  },
   "caatl": {
    "area": "caatl",
    "date": "2026-10-29",
@@ -169,6 +1513,510 @@
      "sources": {
       "CA-4837": "downloaded 2026-10-29",
       "CA-4849": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    }
+   ]
+  },
+  "cambsk": {
+   "area": "cambsk",
+   "date": "2026-10-29",
+   "states": [
+    "CA-MB",
+    "CA-SK"
+   ],
+   "rows": [
+    {
+     "area": "cambsk",
+     "state": "CA-MB",
+     "refs": [
+      "CA-0545",
+      "CA-2474"
+     ],
+     "names": {
+      "CA-0545": "Grass River Provincial Park",
+      "CA-2474": "Palsa Hazel Ecological Reserve"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "4487.2 ac",
+     "sort": 4487.2,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0545+CA-2474@area@54.497,-101.353",
+     "sources": {
+      "CA-0545": "downloaded 2026-10-29",
+      "CA-2474": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "cambsk",
+     "state": "CA-MB",
+     "refs": [
+      "CA-0108",
+      "CA-2395"
+     ],
+     "names": {
+      "CA-0108": "Wapusk National Park",
+      "CA-2395": "Churchill Wildlife Management Area"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "1704.0 ac",
+     "sort": 1704.0,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0108+CA-2395@area@57.105,-92.544",
+     "sources": {
+      "CA-0108": "downloaded 2026-10-29",
+      "CA-2395": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "cambsk",
+     "state": "CA-SK",
+     "refs": [
+      "CA-2838",
+      "CA-2839"
+     ],
+     "names": {
+      "CA-2838": "Scent Grass Lake Migratory Bird Sanctuary",
+      "CA-2839": "Scentgrass Lake Game Preserve"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "1534.4 ac",
+     "sort": 1534.4,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-2838+CA-2839@area@52.957,-108.152",
+     "sources": {
+      "CA-2838": "downloaded 2026-10-29",
+      "CA-2839": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "cambsk",
+     "state": "CA-SK",
+     "refs": [
+      "CA-2894",
+      "CA-2896"
+     ],
+     "names": {
+      "CA-2894": "Wascana Centre Regional Park Recreation Site",
+      "CA-2896": "Wascana Lake Migratory Bird Sanctuary"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "291.2 ac",
+     "sort": 291.2,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-2894+CA-2896@area@50.423,-104.586",
+     "sources": {
+      "CA-2894": "downloaded 2026-10-29",
+      "CA-2896": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "cambsk",
+     "state": "CA-SK",
+     "refs": [
+      "CA-2653",
+      "CA-2654"
+     ],
+     "names": {
+      "CA-2653": "Fir River Ecological Reserve",
+      "CA-2654": "Fir River Road Recreation Site"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "254.7 ac",
+     "sort": 254.7,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-2653+CA-2654@area@53.105,-102.679",
+     "sources": {
+      "CA-2653": "downloaded 2026-10-29",
+      "CA-2654": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "cambsk",
+     "state": "CA-SK",
+     "refs": [
+      "CA-0081",
+      "CA-2717"
+     ],
+     "names": {
+      "CA-0081": "Raven Island National Wildlife Area",
+      "CA-2717": "Lenore Lake Migratory Bird Sanctuary"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "233.2 ac",
+     "sort": 233.2,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0081+CA-2717@area@52.437,-104.995",
+     "sources": {
+      "CA-0081": "downloaded 2026-10-29",
+      "CA-2717": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "cambsk",
+     "state": "CA-SK",
+     "refs": [
+      "CA-1117",
+      "CA-2605"
+     ],
+     "names": {
+      "CA-1117": "Lake Charron Regional Park",
+      "CA-2605": "Charron Lake Recreation Site"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "109.7 ac",
+     "sort": 109.7,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-1117+CA-2605@area@52.402,-104.311",
+     "sources": {
+      "CA-1117": "downloaded 2026-10-29",
+      "CA-2605": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "cambsk",
+     "state": "CA-SK",
+     "refs": [
+      "CA-0051",
+      "CA-1118"
+     ],
+     "names": {
+      "CA-0051": "Last Mountain Lake National Wildlife Area",
+      "CA-1118": "Last Mountain Regional Park"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "74.8 ac",
+     "sort": 74.8,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0051+CA-1118@area@51.403,-105.267",
+     "sources": {
+      "CA-0051": "downloaded 2026-10-29",
+      "CA-1118": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "cambsk",
+     "state": "CA-SK",
+     "refs": [
+      "CA-1118",
+      "CA-2711"
+     ],
+     "names": {
+      "CA-1118": "Last Mountain Regional Park",
+      "CA-2711": "Last Mountain Lake Migratory Bird Sanctuary"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "74.8 ac",
+     "sort": 74.8,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-1118+CA-2711@area@51.403,-105.267",
+     "sources": {
+      "CA-1118": "downloaded 2026-10-29",
+      "CA-2711": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "cambsk",
+     "state": "CA-SK",
+     "refs": [
+      "CA-2653",
+      "CA-2677"
+     ],
+     "names": {
+      "CA-2653": "Fir River Ecological Reserve",
+      "CA-2677": "Greenbush River Ecological Reserve"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "56.0 ac",
+     "sort": 56.0,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-2653+CA-2677@area@52.984,-102.609",
+     "sources": {
+      "CA-2653": "downloaded 2026-10-29",
+      "CA-2677": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "cambsk",
+     "state": "CA-SK",
+     "refs": [
+      "CA-2676",
+      "CA-2677"
+     ],
+     "names": {
+      "CA-2676": "Greenbush River Recreation Site",
+      "CA-2677": "Greenbush River Ecological Reserve"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "18.1 ac",
+     "sort": 18.1,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-2676+CA-2677@area@52.848,-102.687",
+     "sources": {
+      "CA-2676": "downloaded 2026-10-29",
+      "CA-2677": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "cambsk",
+     "state": "CA-SK",
+     "refs": [
+      "CA-2740",
+      "CA-2741"
+     ],
+     "names": {
+      "CA-2740": "Matador Protected Area",
+      "CA-2741": "Matador Grasslands Protected Area"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "9.9 ac",
+     "sort": 9.9,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-2740+CA-2741@area@50.678,-107.719",
+     "sources": {
+      "CA-2740": "downloaded 2026-10-29",
+      "CA-2741": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    }
+   ]
+  },
+  "canorth": {
+   "area": "canorth",
+   "date": "2026-10-29",
+   "states": [
+    "CA-YT",
+    "CA-NT",
+    "CA-NU"
+   ],
+   "rows": [
+    {
+     "area": "canorth",
+     "state": "CA-NU",
+     "refs": [
+      "CA-0091",
+      "CA-4569"
+     ],
+     "names": {
+      "CA-0091": "Sirmilik National Park",
+      "CA-4569": "Bylot Island Migratory Bird Sanctuary"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "2431423.5 ac",
+     "sort": 2431423.5,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0091+CA-4569@area@73.453,-80.033",
+     "sources": {
+      "CA-0091": "downloaded 2026-10-29",
+      "CA-4569": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "canorth",
+     "state": "CA-YT",
+     "refs": [
+      "CA-0106",
+      "CA-4623"
+     ],
+     "names": {
+      "CA-0106": "Vuntut National Park",
+      "CA-4623": "Old Crow Flats Special Management Area Habitat Protection Area"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "1088036.4 ac",
+     "sort": 1088036.4,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0106+CA-4623@area@68.375,-138.616",
+     "sources": {
+      "CA-0106": "downloaded 2026-10-29",
+      "CA-4623": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "canorth",
+     "state": "CA-NU",
+     "refs": [
+      "CA-4569",
+      "CA-4594"
+     ],
+     "names": {
+      "CA-4569": "Bylot Island Migratory Bird Sanctuary",
+      "CA-4594": "Tallurutiup Imanga / Lancaster Sound NMCA National Marine Area"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "189453.5 ac",
+     "sort": 189453.5,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-4569+CA-4594@area@73.348,-76.870",
+     "sources": {
+      "CA-4569": "downloaded 2026-10-29",
+      "CA-4594": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "canorth",
+     "state": "CA-YT",
+     "refs": [
+      "CA-0044",
+      "CA-0842"
+     ],
+     "names": {
+      "CA-0044": "Kluane National Park",
+      "CA-0842": "Asi Keyi Territorial Park"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "8727.6 ac",
+     "sort": 8727.6,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0044+CA-0842@area@61.233,-140.516",
+     "sources": {
+      "CA-0044": "downloaded 2026-10-29",
+      "CA-0842": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "canorth",
+     "state": "CA-NT",
+     "refs": [
+      "CA-4332",
+      "CA-4344"
+     ],
+     "names": {
+      "CA-4332": "Kendall Island Migratory Bird Sanctuary",
+      "CA-4344": "Tarium Niryutait Marine Protected Area"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "644.0 ac",
+     "sort": 644.0,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-4332+CA-4344@area@69.445,-135.541",
+     "sources": {
+      "CA-4332": "downloaded 2026-10-29",
+      "CA-4344": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "canorth",
+     "state": "CA-YT",
+     "refs": [
+      "CA-0039",
+      "CA-0106"
+     ],
+     "names": {
+      "CA-0039": "Ivvavik National Park",
+      "CA-0106": "Vuntut National Park"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "511.0 ac",
+     "sort": 511.0,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0039+CA-0106@area@68.558,-140.978",
+     "sources": {
+      "CA-0039": "downloaded 2026-10-29",
+      "CA-0106": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "canorth",
+     "state": "CA-YT",
+     "refs": [
+      "CA-0039",
+      "CA-4623"
+     ],
+     "names": {
+      "CA-0039": "Ivvavik National Park",
+      "CA-4623": "Old Crow Flats Special Management Area Habitat Protection Area"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "304.8 ac",
+     "sort": 304.8,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0039+CA-4623@area@68.564,-140.893",
+     "sources": {
+      "CA-0039": "downloaded 2026-10-29",
+      "CA-4623": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "canorth",
+     "state": "CA-NU",
+     "refs": [
+      "CA-0091",
+      "CA-4594"
+     ],
+     "names": {
+      "CA-0091": "Sirmilik National Park",
+      "CA-4594": "Tallurutiup Imanga / Lancaster Sound NMCA National Marine Area"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "222.3 ac",
+     "sort": 222.3,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0091+CA-4594@area@73.383,-83.641",
+     "sources": {
+      "CA-0091": "downloaded 2026-10-29",
+      "CA-4594": "downloaded 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "canorth",
+     "state": "CA-NU",
+     "refs": [
+      "CA-0070",
+      "CA-0127"
+     ],
+     "names": {
+      "CA-0070": "Polar Bear Pass National Wildlife Area",
+      "CA-0127": "Qausuittuq National Park"
+     },
+     "what": "water map weak here (fix later: a better water source)",
+     "kind": "area",
+     "size": "163.7 ac",
+     "sort": 163.7,
+     "reason": "water not checked (the USGS water map did not answer): run pass 5",
+     "id": "CA-0070+CA-0127@area@75.756,-101.185",
+     "sources": {
+      "CA-0070": "downloaded 2026-10-29",
+      "CA-0127": "downloaded 2026-10-29"
      },
      "checked": "2026-10-29"
     }
@@ -93799,6 +95647,23 @@
    "rows": [
     {
      "area": "southeast",
+     "state": "US-MS",
+     "refs": [
+      "US-7091",
+      "US-7127"
+     ],
+     "names": {},
+     "what": "not sure",
+     "kind": "area",
+     "size": "4285.1 ac",
+     "sort": 4285.1,
+     "reason": "the official outline of Okatibbee Wildlife Management Area could not be read in pass 2 (the next run tries again)",
+     "id": "US-7091+US-7127@area@32.563,-88.808",
+     "sources": {},
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "southeast",
      "state": "US-VA",
      "refs": [
       "US-0561",
@@ -99787,6 +101652,23 @@
      "sources": {
       "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (42x, POTA history)"
      },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "southeast",
+     "state": "US-MS",
+     "refs": [
+      "US-7095",
+      "US-7096"
+     ],
+     "names": {},
+     "what": "not sure",
+     "kind": "area",
+     "size": "41.4 ac",
+     "sort": 41.4,
+     "reason": "the official outline of Canal Section Wildlife Management Area could not be read in pass 2 (the next run tries again)",
+     "id": "US-7095+US-7096@area@34.479,-88.347",
+     "sources": {},
      "checked": "2026-10-29"
     },
     {
@@ -109828,6 +111710,23 @@
     },
     {
      "area": "southeast",
+     "state": "US-MS",
+     "refs": [
+      "US-0642",
+      "US-7096"
+     ],
+     "names": {},
+     "what": "not sure",
+     "kind": "area",
+     "size": "22.2 ac",
+     "sort": 22.2,
+     "reason": "the official outline of Canal Section Wildlife Management Area could not be read in pass 2 (the next run tries again)",
+     "id": "US-0642+US-7096@area@34.505,-88.326",
+     "sources": {},
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "southeast",
      "state": "",
      "refs": [
       "US-0519",
@@ -112410,6 +114309,23 @@
       "US-4581": "official line (trails bot)"
      },
      "checked": "2026-10-28"
+    },
+    {
+     "area": "southeast",
+     "state": "US-MS",
+     "refs": [
+      "US-7108",
+      "US-7112"
+     ],
+     "names": {},
+     "what": "not sure",
+     "kind": "area",
+     "size": "20.4 ac",
+     "sort": 20.4,
+     "reason": "the official outline of Ward Bayou Wildlife Management Area could not be read in pass 2 (the next run tries again)",
+     "id": "US-7108+US-7112@area@30.676,-88.602",
+     "sources": {},
+     "checked": "2026-10-29"
     },
     {
      "area": "southeast",
@@ -118115,25 +120031,6 @@
      "area": "southeast",
      "state": "",
      "refs": [
-      "US-7108",
-      "US-7112"
-     ],
-     "names": {},
-     "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
-     "kind": "pair",
-     "size": "17 same-day activations",
-     "sort": 17.0,
-     "reason": "waiting for pass 2",
-     "id": "US-7108+US-7112@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (17x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
       "US-0158",
       "US-1037"
      ],
@@ -119683,25 +121580,6 @@
      "sort": 16.0,
      "reason": "dropped in pass 3",
      "id": "US-6844+US-6888@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (16x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-7091",
-      "US-7127"
-     ],
-     "names": {},
-     "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
-     "kind": "pair",
-     "size": "16 same-day activations",
-     "sort": 16.0,
-     "reason": "waiting for pass 2",
-     "id": "US-7091+US-7127@pota",
      "sources": {
       "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (16x, POTA history)"
      },
@@ -143702,6 +145580,23 @@
     },
     {
      "area": "southeast",
+     "state": "US-MS",
+     "refs": [
+      "US-4560",
+      "US-7096"
+     ],
+     "names": {},
+     "what": "not sure",
+     "kind": "trail",
+     "size": "307 yd of line",
+     "sort": 7.0,
+     "reason": "the official outline of Canal Section Wildlife Management Area could not be read in pass 2 (the next run tries again)",
+     "id": "US-4560+US-7096@trail@34.506,-88.326",
+     "sources": {},
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "southeast",
      "state": "",
      "refs": [
       "US-0007",
@@ -144588,25 +146483,6 @@
      "sort": 7.0,
      "reason": "dropped in pass 2",
      "id": "US-4472+US-8716@pota",
-     "sources": {
-      "POTA history": "activated together by the same call on the same day (7x, POTA history) / outlines about 0 m apart"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "southeast",
-     "state": "",
-     "refs": [
-      "US-4495",
-      "US-7079"
-     ],
-     "names": {},
-     "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
-     "kind": "pair",
-     "size": "7 same-day activations",
-     "sort": 7.0,
-     "reason": "waiting for pass 2",
-     "id": "US-4495+US-7079@pota",
      "sources": {
       "POTA history": "activated together by the same call on the same day (7x, POTA history) / outlines about 0 m apart"
      },
@@ -147868,6 +149744,23 @@
       "US-2749": "downloaded 2026-10-28"
      },
      "checked": "2026-10-28"
+    },
+    {
+     "area": "southeast",
+     "state": "US-MS",
+     "refs": [
+      "US-4495",
+      "US-7079"
+     ],
+     "names": {},
+     "what": "not sure",
+     "kind": "area",
+     "size": "1.4 ac",
+     "sort": 1.4,
+     "reason": "the official outline of Twin Oaks Wildlife Management Area could not be read in pass 2 (the next run tries again)",
+     "id": "US-4495+US-7079@area@32.803,-90.838",
+     "sources": {},
+     "checked": "2026-10-29"
     },
     {
      "area": "southeast",
