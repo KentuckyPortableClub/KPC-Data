@@ -39,7 +39,7 @@ HOW TO RUN
   NPS_API_KEY, RIDB_API_KEY (secrets; skipped with a status line when absent). `--selftest` runs the sentence and matcher tests
   with no web at all. Prints 'LEFT=<n>' (areas still to read this cycle). Never fails (exit 0).
 """
-import csv, datetime as dt, email.utils, html as _html, io, json, os, pathlib, re, sys, time, types, urllib.parse
+import csv, datetime as dt, email.utils, html as _html, io, json, os, pathlib, re, sys, time, types, urllib.parse, urllib.request
 import xml.etree.ElementTree as ET
 
 HERE = pathlib.Path(__file__).resolve().parent
@@ -384,6 +384,8 @@ def classify(sent, ctx=None):
             if not (frm or to): return {'skip': 'a hunting-season line with no date: not an item (chat 11)'}
             return {**base, 'class': 'note', 'note_kind': 'season', 'what': 'hunting season'}
         return None
+    if not (frm or to) and re.search(r'\bduring (?:the\s+)?[^.]{0,40}\b(field trials?|quota hunts?|special hunts?|events?|tournaments?|competitions?)\b', low):
+        return {**base, 'class': 'note', 'note_kind': 'caution', 'what': 'closed during ' + re.search(r'\bduring (?:the\s+)?([^.]{0,60})', low).group(1).strip() + ' (dates not given: check the agency page)'}   # Oct 29 (HQ): Clay WMA fox-hunting field trials, no dates = a note
     if re.search(r'lapse in appropriations|shutdown', low) and not WHOLE_PHRASE.search(s) and not re.search(r'park (is )?closed|closed to all', low):
         return {**base, 'class': 'note', 'note_kind': 'caution', 'what': 'services limited'}              # D-R7
     what = _object(s, ctx)
@@ -421,6 +423,8 @@ def classify(sent, ctx=None):
 
 def _object(s, ctx):
     """The thing the sentence closes: 'Roads 995E and 955B', 'the boardwalk', 'Lake Margery at Marben PFA' -> 'Lake Margery'."""
+    m = re.search(r"\bclos(?:ure|ing) of (?:the\s+)?(?:historic\s+|popular\s+)?([A-Z][\w'.-]*(?:\s+(?:[A-Z][\w'.-]*|of|the|and)){0,6}\s+(?:Bridge|Trail|Road|Campground|Overlook|Tipple|Loop|Area|Ramp|Beach|Tunnel|Boardwalk|Footbridge|Arch|Falls))\b", s)
+    if m: return m.group(1)   # Oct 29 (HQ 9:55 AM): 'temporary closure of the historic Blue Heron Tipple Bridge' -> the bridge, a PART of the park
     for rx in (SUBJ_RX, SUBJ2_RX, SUBJ3_RX, SUBJ4_RX):
         m = rx.search(s)
         if m:
@@ -863,8 +867,14 @@ FEEDS = {  # area: (id, agency, page for people, reader)   (the 10 feed states o
 
 # ---- Kentucky State Parks' own alert list (the same list kpc_park_alerts.ky_state_parks reads)
 def src_ky_parks(url):
-    j, st = read_json(url)
-    if j is None: raise RuntimeError(st)
+    # Oct 29 (HQ 9:55 AM: feed down since Oct 28 'host resting'): ask EXACTLY the way the old KPC-Links reader does (kpc_park_alerts.py,
+    # every 3 h, works): its short User-Agent, JSON only, ONE try, and never through the shared strike counter, so page reads of other
+    # parks.ky.gov pages can no longer put this feed to rest.
+    try:
+        req = urllib.request.Request(url, headers={'User-Agent': 'KPC club bot (kentuckyportableclub.github.io)', 'Accept': 'application/json'})
+        with urllib.request.urlopen(req, timeout=60) as r: j = json.loads(r.read().decode('utf-8', 'replace'))
+    except Exception as e:  # noqa: BLE001
+        raise RuntimeError(f'parks.ky.gov alerts did not answer ({type(e).__name__}: {str(e)[:60]}); one try only, last items kept')
     rows = []
     for a in j.get('value') or []:
         title, text = clean(a.get('Title'), 160), clean(a.get('Text'))
@@ -1509,6 +1519,8 @@ def process_area(K, area, state, review):
                     if pit: it['seen'] = pit.get('seen') or it['seen']; it['confirmed'] = (pit.get('confirmed') or 1) + 1
                     if it['class'] == 'whole' and kind != 'feed' and not (it['from'] or it['to'] or it['updated']) and it['confirmed'] >= 2 and not it.get('as_of'):
                         it['kind'] = 'Park notice'; it['stale'] = 'unverified notice: the agency page says closed, no date. Check the agency page.'   # D-R4
+                    if it['class'] == 'whole' and page_txt and sent[:40] in page_txt:   # Oct 29 (HQ): a WHOLE closure carries the page text around it, so a person can confirm it
+                        k = page_txt.find(sent[:40]); it['context'] = page_txt[max(0, k - 400):k + 400]
                     now_ids.add(it['id']); items.append(it); got += 1
             if not got and kind == 'feed' and not r.get('sent'):
                 # a feed row with a status word only ('Full Closure', 'Partially open'): the status is the agency's sentence
@@ -1747,6 +1759,8 @@ def write_review(state, review):
 
 # ======================================================================================= self test (no web)
 SELFTEST = [  # (sentence, context, expected class, expected note_kind or what-contains, expected dates)
+    ('Big South Fork NRRA has announced the temporary closure of the historic Blue Heron Tipple Bridge, effective immediately in the interest of visitor safety.', {'names': ['Big South Fork'], 'park': 'Big South Fork National River and Recreation Area'}, 'part', 'bridge', None),   # Oct 29 HQ: a named bridge = PART
+    ('This WMA is closed to the public during quota fox hunting field trials.', {'names': ['Clay WMA'], 'park': 'Clay WMA'}, 'note', 'caution', None),   # Oct 29 HQ: no dates = a note
     ("Big Basin Redwoods State Park is closed to all access until further notice.", {'park': 'Big Basin Redwoods State Park'}, 'whole', None, (None, None)),
     ("Roads 995E and 955B are temporarily closed.", {'names': ["John's Mountain WMA"]}, 'part', 'roads 995e', (None, None)),
     ("The campground is closed for the season, Nov 1 - Mar 31.", {'updated': dt.date(2026, 10, 20)}, 'seasonal', 'campground', (dt.date(2026, 11, 1), dt.date(2027, 3, 31))),
