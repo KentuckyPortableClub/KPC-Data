@@ -1,0 +1,57 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "ut",
+ "states": [
+  "US-UT"
+ ],
+ "since": "2026-10-28",
+ "date": "2026-10-29 00:56 UTC",
+ "verdict": "STOPPED",
+ "why": [
+  "US-UT: 150 rows still waiting for a pass (out of time: run the worker again)",
+  "water service: US-UT: 1 rows not checked because the USGS water map did not answer (run the worker again)"
+ ],
+ "known_answers": "18/18 on 2026-10-28",
+ "missing_check": {
+  "FOUND": 15,
+  "DROPPED": 212,
+  "NEVER LOOKED AT": 2854
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-28",
+   "pairs tested": 762,
+   "pairs whose boxes touch": 762
+  },
+  "pass2": {
+   "agree with the pass before": 841,
+   "date": "2026-10-28",
+   "pairs tested": 299
+  },
+  "pass3": {
+   "agree with the pass before": 291,
+   "date": "2026-10-28",
+   "pairs tested": 281
+  },
+  "pass5": {
+   "checked": 20,
+   "date": "2026-10-28",
+   "pairs tested": 0,
+   "still not checked": 1
+  }
+ },
+ "US-UT": {
+  "rows": 1022,
+  "live": 49,
+  "waiting": 150,
+  "unfinished": 0,
+  "not_sure": {
+   "the agency ownership map did not answer": 22,
+   "no public owner on the ownership map": 2,
+   "the ownership map shows more than one owner across the spot": 1,
+   "water not checked": 1
+  },
+  "dropped": 717,
+  "merged": 80
+ }
+}
