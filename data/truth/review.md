@@ -5,7 +5,7 @@ Updated 2026-10-29. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 | area | parks | with outline | agree | OFF (>15%) | unsure | no size | ours unknown | handover hints | retired | weak (≤4) |
 |---|---|---|---|---|---|---|---|---|---|---|
 | US-KY | 193 | 189 | 99 | **8** | 9 | 73 | 0 | 7 | 0 | 29 |
-| US-TN | 277 | 254 | 1 | **8** | 4 | 237 | 2 | 3 | 0 | 11 |
+| US-TN | 277 | 254 | 2 | **7** | 4 | 237 | 2 | 3 | 0 | 10 |
 | US-NC | 253 | 219 | 3 | **28** | 40 | 147 | 0 | 19 | 0 | 9 |
 | US-VA | 184 | 156 | 5 | **58** | 58 | 35 | 0 | 16 | 0 | 5 |
 | US-WV | 172 | 160 | 1 | **20** | 102 | 37 | 0 | 0 | 0 | 2 |
@@ -60,22 +60,21 @@ Updated 2026-10-29. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 
 ## US-TN
 
-**Agree:** 1 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 1 agree (second agency).
+**Agree:** 2 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 2 agree (second agency).
 
 **Size more than 15% off (our outline vs the agency):**
 
 - US-6234 Bays Mountain State Natural Area: ours 12,192 ac vs agency 3,788 acre (= 3,788 ac; 222% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.baysmountain.com](https://www.baysmountain.com/park-overview/) · “ve Closed Christmas Day Closed Bays Mountain Park & Planetarium, nestled in scenic Kingsport, Tennessee, is a 3,788 acre nature preserve and the largest city ow”
 - US-6235 Beaman Park State Natural Area: ours 4,584 ac vs agency 2300 acres (= 2,300 ac; 99% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.nashville.gov](https://www.nashville.gov/departments/parks/nature-centers-and-natural-areas/beaman-park-nature-center) · “getops and deep hollows only found in this rich ecosystem. serves as a jump-off point for exploring more than 2300 acres of Nashville's premier state natural ar”
-- US-0716 Chickamauga and Chattanooga National Military Park: ours 3,447 ac vs agency 9,000 acres (= 9,000 ac; 62% off) · cause: agency bigger: our outline may miss a tract · [www.nps.gov](https://www.nps.gov/chch/learn/historyculture/places.htm) · “since served as a model for most national military and historical parks. Today the park encompasses more than 9,000 acres of battlefields, monuments, and forest”
 - US-0539 Tennessee National Wildlife Refuge: ours 21,684 ac vs agency 51,000 acre (= 51,000 ac; 57% off) · cause: agency bigger: our outline may miss a tract · [www.fws.gov](https://www.fws.gov/refuge/tennessee/) · “ng, and taking a drive to see wildlife are all popular activities on Tennessee National Wildlife Refuge. This 51,000 acre refuge has miles of peaceful refuge ro”
-- US-0034 Great Smoky Mountains National Park: ours 241,082 ac vs agency 522,427 acres (= 522,427 ac; 54% off) · cause: agency bigger: our outline may miss a tract · [www.nps.gov](https://www.nps.gov/grsm/learn/management/statistics.htm) · “t Smoky Mountains National Park Contact Us Park Statistics Acreage Great Smoky Mountains National Park covers 522,427 acres (800 miles 2 ), divided almost evenl”
+- US-0034 Great Smoky Mountains National Park: ours 801,399 ac vs agency 522,427 acres (= 522,427 ac; 53% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.nps.gov](https://www.nps.gov/grsm/learn/management/statistics.htm) · “t Smoky Mountains National Park Contact Us Park Statistics Acreage Great Smoky Mountains National Park covers 522,427 acres (800 miles 2 ), divided almost evenl”
 - US-0534 Cross Creeks National Wildlife Refuge: ours 13,158 ac vs agency 8,862 acres (= 8,862 ac; 48% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.fws.gov](https://www.fws.gov/refuge/cross-creeks) · “migratory birds with an emphasis placed on providing habitat for wintering waterfowl. Today, the refuge spans 8,862 acres. The mixture of open water, wetlands, ”
 - US-0686 Big South Fork National Recreation Area: ours 85,042 ac vs agency 125,000 acres (= 125,000 ac; 32% off) · cause: agency bigger: our outline may miss a tract · [www.nps.gov](https://www.nps.gov/biso/index.htm) · “This Site All NPS Exiting nps.gov Cancel Big South Fork National River & Recreation Area • KY,TN Encompassing 125,000 acres of the Cumberland Plateau, Big South”
 - US-0703 Fort Donelson National Battlefield: ours 845 ac vs agency 1007 acres (= 1,007 ac; 16% off) · cause: agency bigger: our outline may miss a tract · stale: agency figure is 'as of 2010' · [www.nps.gov](https://www.nps.gov/fodo/learn/management/statistics.htm) · “Site All NPS Exiting nps.gov Cancel Fort Donelson National Battlefield Contact Us Park Statistics Park Size: 1007 acres (as of 2010) Annual Visitation: Total Vi”
 
 **Unsure (no clean total found; the nearest number is only a guess):**
 
-- US-0019 Cumberland Gap National Historical Park: ours 5,365 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-0019 Cumberland Gap National Historical Park: ours 20,474 ac · cause: whole park compared (POTA lists it in 2 states: {'US-TN': 5365, 'US-VA': 15109})
 - US-0533 Chickasaw National Wildlife Refuge: ours 48,286 ac · cause: the agency figure may cover several states; our outline may be this state's share only · [fws.gov](https://fws.gov/refuge/chickasaw/)
 - US-0536 Lake Isom National Wildlife Refuge: ours 3,626 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-3792 Land Between the Lakes National Recreation Area: ours 234,975 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 170,000 acres, no total words near it) · [landbetweenthelakes.us](https://landbetweenthelakes.us/)
