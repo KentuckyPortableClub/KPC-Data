@@ -48,7 +48,7 @@ REFRESH_DAYS = int(os.environ.get('REFRESH_DAYS') or 7)
 TOL = 0.15
 PDF_FIRST = 400_000
 TODAY = time.strftime('%Y-%m-%d')
-VER = 14   # Oct 29 (Fable, chat 8's VA/IL grade): copies of one tract across PAD-US fee / designation / state layers folded before summing (dissolve_pieces)
+VER = 15   # Oct 29 (Fable, chat 8's VA/IL grade): copies of one tract across PAD-US fee / designation / state layers folded before summing (dissolve_pieces)
 # VER 13: Oct 28 (chat 11's KY grade): '708, 879' parse + summed lakes, other-unit pages, history words + stale years, unsure carries a cause, own-page handover hints, quoted URLs, 10-row gate, same-agency label
 QUEUE = ['US-KY',
          'US-TN', 'US-NC', 'US-VA', 'US-WV', 'US-GA', 'US-AL', 'US-SC', 'US-FL', 'US-MS',
@@ -86,7 +86,7 @@ PART = re.compile(r'\blake\b.*\bacre|acre[- ]lake|reservoir|pond|campground|camp
                   r'included in the|part of the \d|within the \d|lies within|is part of|portion of the \d|complex|together with', re.I)
 NOTTOTAL = re.compile(HISTORY.pattern + '|' + PART.pattern, re.I)   # kept for readers of the old name
 # HARD parts: never a park total, even in a sentence that names the park (a lake, water, habitat, acre-feet, a campground)
-NEAR_PART = re.compile(r'within the park|\bplots?\b|adjacent|surrounding|in the middle of|\bfarm\b|statewide|across the state|state[- ]wide|preserve system|natural area preserves|manages (?:more than |over |about |nearly )?[\d,.]+ (?:million )?acres|acres? of public land|acres? (?:of )?(?:state|public) (?:land|lands|forests?|parks?) (?:statewide|across)', re.I)   # v9: only within 45 chars of the number (not 'surrounding communities' at the far end of the sentence)
+NEAR_PART = re.compile(r'open to (?:walk-in |public )?(?:hunting|fishing|trapping)|\bacres of the site\b|\bused \d[\d,]* acres\b|within the park|\bplots?\b|adjacent|surrounding|in the middle of|\bfarm\b|statewide|across the state|state[- ]wide|preserve system|natural area preserves|manages (?:more than |over |about |nearly )?[\d,.]+ (?:million )?acres|acres? of public land|acres? (?:of )?(?:state|public) (?:land|lands|forests?|parks?) (?:statewide|across)', re.I)   # v9: only within 45 chars of the number (not 'surrounding communities' at the far end of the sentence)
 HARD_PART = re.compile(r'acre[- ]lake|\blake\b[^.]{0,30}\bacres?\b|acres? (?:of|in) (?:water|lakes?|ponds?|wetlands?|crops?|timber|hunting|fields?|habitat|\w+ habitat|wilderness|forest lands?|national forest)|per acre|acre[- ]?feet|impoundment|campground|campsite|parking|picnic|golf|cemetery|food plots?|moist[- ]soil|\bconserve\b', re.I)
 # candidates never chosen as the official number (history, another unit, a page of another unit, a summed part)
 EXCLUDED = ('history', 'part of a sum', 'another park / unit named in the sentence', "a page of another unit; the sentence does not name this park",
@@ -226,6 +226,7 @@ def sizes_in(text, name, other_unit=False, is_pdf=False):
                          and re.search(r'\b(?:consists of|comprises|encompasses|covers|totals?|contains|includes|is|spans)\s+(?:about |approximately |nearly |over |more than |some )?$', text[max(0, m.start() - 40):m.start()], re.I)
                          and h.start() > sl.find(n.strip().lower()) >= 0)]   # v12: 'consists of 15,251 acres and was acquired by lease in 1930' = today's size; the year is the lease's
             if hist_hits or OLD_YEAR.search(left_of(text, m.start())): looks = False; why = 'history'
+            if a >= 1_000_000 and not re.search(r'national (?:forest|park|preserve|wildlife refuge|recreation area|monument)|wilderness|grassland', name, re.I): looks = False; why = why or 'a statewide / agency-wide total (over a million acres) on a park that is not a big federal unit'   # v15: IL I&M Canal 4.4 million
             if a < 5 and not label and not re.search(r'\b(?:is|covers|encompasses|consists of|comprises|totals?|protects)\s+(?:an?\s+|about\s+|approximately\s+|nearly\s+|just\s+)?' + re.escape(n.strip()), sl): looks = False; why = why or 'a tiny number without size wording'   # v11: Ozark Hills '1 acres' fragment
             hard = (bool(HARD_PART.search(strip_name(sl))) or bool(NEAR_PART.search(strip_name(text[max(0, m.start() - 45):m.end() + 45].lower())))) and not label; soft = bool(PART.search(strip_name(sl))) and not label   # the SAME sentence, not the neighbour's
             clean = bool(looks and not why and (label or ((name_in or own_subject) and CLEAN.search(sl))) and not hard)
@@ -401,10 +402,19 @@ def ours_key(rec):
         pieces.append([r[0], r[1], a, (r[3] if len(r) > 3 else '')[:60]])
     kept, dis = dissolve_pieces(pieces)
     acres = sum(p[2] for p in kept)
+    fams = {}
+    for p in kept: fams.setdefault(piece_family(p[0]), []).append(p)
+    if len(fams) >= 2:   # v15 (chat 11, Oct 29: Dragon Run 19,282 = PAD-US 9,563 + the state layer's 9,719): two LAYER FAMILIES naming the same park are two copies of
+        tot = {f: sum(q[2] for q in v) for f, v in fams.items()}   # one land: the larger family's total is our size, never the sum (the union is at least the larger copy)
+        big = max(tot, key=tot.get)
+        if sum(tot.values()) > tot[big] * 1.05:
+            dis = dict(dis, families={f: round(v) for f, v in tot.items()}, family_used=big, family_fold=round(sum(tot.values()) - tot[big]))
+            kept = fams[big]; acres = tot[big]
     far = rec.get('far')
     pin = 'inside' if not far else 'just outside' if far == 'edge' else 'well outside' if far in ('well outside', 'outside') else str(far)
     srcs = sorted({str(p[3]).split('·')[-1].strip() for p in pieces if '·' in str(p[3])}) or (['USGS PAD-US'] if any(isinstance(p[0], int) for p in pieces) else [])
     out = {'acres': round(acres), 'pieces': kept[:8], 'src': ', '.join(srcs)[:160], 'pin': pin, 'manager': '', 'unknown_pieces': unknown}
+    if dis.get('family_used'): out['family_fold'] = f"layers {dis['families']}: one land in {len(dis['families'])} layers, the {dis['family_used']} copy used ({dis['family_fold']:,} ac of copies not added)"
     if dis['copies'] or dis['parts']:
         out['dissolved'] = dis
         out['note'] = f"{dis['records']} joined records = {dis['tracts']} tracts: {dis['copies']} copies of a tract (same acres, another layer) and {dis['parts']} fee tracts under a designation record folded; summed {dis['before']} -> {dis['after']} acres"
@@ -939,6 +949,9 @@ SIZE_CASES = [   # v11 (chat 11, Oct 28 9 PM): real sentences from the VA / IL g
     ('Kentucky Ridge State Forest', 'Kentucky Ridge State Forest consists of 15,251 acres and was acquired by lease in 1930, as part of the Land Use and Resettlement Program.', 'total', 15251),
     ('Big Oak Tree State Park', 'Big Oak Tree State Park covers 1,029 acres along Big Oak Road in Mississippi County.', 'total', 1029),
     ('Reelfoot National Wildlife Refuge', 'The refuge was established in 1941 as a 10,428-acre refuge.', 'not_total', 10428),
+    ('Sanganois State Fish and Wildlife Area', 'Sanganois has 500 acres open to walk-in hunting during the waterfowl season.', 'not_total', 500),
+    ('Pyramid State Recreation Area', 'In the 1970s SIU used 924 acres of the site for reclamation research.', 'not_total', 924),
+    ('Illinois and Michigan Canal State Trail', 'Illinois has 4.4 million acres of forest land.', 'not_total', 4400000),
     ('Green River National Wildlife Refuge', 'In 2019, 10-acres were donated by Southern Conservation Corporation to establish Green River National Wildlife Refuge under the', 'none_total', 10),
 ]
 
