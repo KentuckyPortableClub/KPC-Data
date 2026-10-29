@@ -247,9 +247,11 @@ def walk_service(svc, cc, leads, known, govwords, catalog, publisher='', licence
         named = [L for L in lays if (PARKW.search(L.get('name') or '') or TRAILW.search(L.get('name') or '')) and not GENERIC.search(L.get('name') or '')]
         want = [L for L in lays if str(L.get('id')) in ONLY_LAYER.get(key_of(svc), set())]
         rest = [L for L in lays if L not in named and L not in want and not GENERIC.search(L.get('name') or '')][:max(0, MAX_LAYERS - len(named))]
+        kgs = key_of(svc) in KG_NOW   # Oct 29 (chat 8 + Fable): a seeded known-good service skips the park-word filter (Poland's forest layers were dropped)
+        if kgs: rest = [L for L in lays if L not in named and L not in want][:MAX_LAYERS]
         for L in (want + named[:150] + rest):
             if late(): break
-            try: rows.append(probe_layer(f"{svc.rstrip('/')}/{L.get('id')}", d.get('name') or svc.split('/services/')[-1], force=L in want))
+            try: rows.append(probe_layer(f"{svc.rstrip('/')}/{L.get('id')}", d.get('name') or svc.split('/services/')[-1], force=(L in want) or kgs))
             except Exception as e: rows.append({'id': L.get('id'), 'error': str(e)[:60]})  # noqa: BLE001
     add_lead(leads, cc, svc, svc.split('/services/')[-1].replace('/FeatureServer', '').replace('/MapServer', ''), publisher or host_of(svc), catalog, lic, date, rows, known, govwords, note)
 
@@ -293,8 +295,9 @@ def wfs_capabilities(u, cc, leads, known, govwords):
     lic = ' '.join(re.findall(r'<(?:ows:)?(?:AccessConstraints|Fees)>([^<]{0,160})<', xml))[:200]
     prov = ' '.join(re.findall(r'<(?:ows:)?ProviderName>([^<]{0,80})<', xml))
     rows = []
+    kgs = key_of(base) in KG_NOW   # Oct 29: a seeded known-good endpoint skips the park-word filter
     for nm, title in types:
-        gap, why = classify(title or nm, 'Polygon', ['name'])   # WFS types do not say their geometry up front: assumed polygons, chat 8 checks
+        gap, why = classify(title or nm, 'Polygon', ['name'], force=kgs)   # WFS types do not say their geometry up front: assumed polygons, chat 8 checks
         if gap: rows.append({'name': (title or nm)[:70], 'type': nm[:80], 'geom': 'unknown (WFS)', 'gap': gap, 'is': why + ' (geometry not read)'})
     add_lead(leads, cc, base, 'WFS ' + host_of(base), prov or host_of(base), 'WFS capabilities', lic, '', rows, known, govwords, f'{len(types)} feature types listed')
     return f'{base}: {len(types)} feature types, {len(rows)} look like park layers'
@@ -307,7 +310,7 @@ def ogc_collections(base, cc, leads, known, govwords):
     rows = []
     for c in cols[:300]:
         nm, ti = str(c.get('id') or ''), str(c.get('title') or '')
-        gap, why = classify(ti or nm, 'Polygon', ['name'])
+        gap, why = classify(ti or nm, 'Polygon', ['name'], force=key_of(base) in KG_NOW)
         if gap: rows.append({'name': (ti or nm)[:70], 'type': nm[:80], 'geom': 'unknown (OGC API)', 'gap': gap, 'is': why + ' (geometry not read)'})
     add_lead(leads, cc, base, 'OGC API ' + host_of(base), host_of(base), 'OGC API collections', '', '', rows, known, govwords, f'{len(cols)} collections listed')
     return f'{base}: {len(cols)} OGC API collections, {len(rows)} look like park layers'
@@ -440,6 +443,10 @@ def catalog(kind, base, c, cc, leads, known, govwords, done, log):
 
 
 # ------------------------------------------------------------------ one country
+EEA_CDDA = 'https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/CDDA_Dyna_WM/MapServer'
+NOT_EU = ('GB', 'NO', 'CH', 'AU', 'JP', 'NZ', 'AR', 'BR', 'CL', 'CN', 'CO', 'DO', 'KR', 'MX', 'PH', 'RU', 'TH', 'TR', 'ZA')
+
+
 def run_country(cc, c, cfg, state, known):
     govwords = cfg['govwords']
     TRUSTED_ORGS.clear(); TRUSTED_ORGS.update(c.get('official_orgs') or [])
@@ -479,13 +486,23 @@ def run_country(cc, c, cfg, state, known):
         elif step == 'search':
             agol_search(c, cc, leads, known, govwords, done, log)
         elif step == 'eea':
+            if c.get('stage') == 1 and cc not in NOT_EU:   # Oct 29 (Fable c, chat 8): EVERY EU country gets the EEA nationally designated areas layer as a lead
+                restricted = cc in ('EE', 'IE', 'TR')
+                leads['eea-cdda:' + cc] = {'url': EEA_CDDA, 'cc': cc, 'title': f"EEA nationally designated areas (CDDA / NatDA): {c['name']} rows", 'publisher': 'European Environment Agency',
+                                           'catalog': 'EEA (every member state)', 'licence': 'EEA standard re-use policy (credit the EEA)' if not restricted else 'EEA says some sites of this country may not be redistributed',
+                                           'date': '', 'found': RUN, 'gaps': ['outline'], 'layers': [], 'grade': 3 if not restricted else 1, 'band': 'B' if not restricted else 'C',
+                                           'note': f"filter the layer by the country code ({cc}); one official layer covers every member state" + ('; LICENCE: list only, never store' if restricted else '')}
             if c.get('stage') == 1 and cc not in ('GB', 'NO', 'CH', 'AU', 'JP') and not state.get('eea_done'):
                 log.append({'step': 'eea', 'what': walk_server('https://bio.discomap.eea.europa.eu/arcgis/rest/services', cc, leads, known, govwords, done)})
                 state['eea_done'] = RUN
         if not late(): st['steps'].append(step)
         st['done'] = sorted(done)
         save_country(cc, c, leads, st)
-    if len(st['steps']) == len(steps): st['status'] = 'done'; st['finished'] = RUN
+    if len(st['steps']) == len(steps):
+        seeded = len(c.get('servers') or []) + len(c.get('ogc') or []) + len(c.get('agol_orgs') or []) + len(c.get('known_good') or [])
+        own = [k for k in leads if not str(k).startswith('eea-cdda:')]
+        st['status'] = 'done' if (seeded or own) else ('nothing seeded: not searched (EEA lead only)' if leads else 'nothing seeded: not searched')   # Oct 29 (Fable b): never 'done, 0 leads'
+        st['finished'] = RUN
     else: st['status'] = 'paused (out of time, will carry on)'
     save_country(cc, c, leads, st)
     return leads, st
@@ -498,11 +515,13 @@ def save_country(cc, c, leads, st):
     bands = {b: sum(1 for v in leads.values() if v.get('band') == b) for b in 'ABC'}
     save(OUT / f'leads-{cc}.json', {'about': f"World harvester leads for {c['name']} (official park GIS only; leads for chat 8, never added to the key by the bot).",
                                     'cc': cc, 'date': RUN, 'status': st['status'], 'steps_done': st['steps'], 'bands': bands,
-                                    'known_good_found': kg_found, 'known_good_missed': kg_missed,
+                                    'known_good_found': kg_found, 'known_good_missed': kg_missed, 'known_log': [l for l in (st.get('log') or []) if l.get('step') == 'known'][-30:],
                                     'leads': dict(sorted(leads.items(), key=lambda kv: (-kv[1].get('grade', 0), kv[1].get('title', ''))))})
 
 
 KNOWN = set()
+BEFORE = {}
+START_ISO = time.strftime('%Y-%m-%dT%H:%MZ', time.gmtime())
 
 
 def main():
@@ -523,9 +542,16 @@ def main():
             save(OUT / f'leads-{cc}.json', {'leads': {}})
         elif state['countries'].get(cc, {}).get('status') == 'done' and os.environ.get('COUNTRIES'): state['countries'][cc]['steps'] = []   # a named country is redone
         for h in list(DEAD): pass
+        BEFORE[cc] = len(load(OUT / f'leads-{cc}.json', {}).get('leads') or {})
         leads, st = run_country(cc, c, cfg, state, KNOWN)
         done_now.append(f"{cc} {st['status'].split(' (')[0]}: {len(leads)} leads (A {sum(1 for v in leads.values() if v.get('band')=='A')}), known-good found {len(load(OUT / f'leads-{cc}.json', {}).get('known_good_found') or [])} of {len(c.get('known_good') or [])}")
         save(OUT / 'state.json', state)
+    try:
+        save(OUT / 'last_run.json', {'about': "One row per harvester run (Fable a / chat 8 wish 6): 'not redone' and 'redone, same answer' look different.",
+                                     'run_id': os.environ.get('GITHUB_RUN_ID') or 'local', 'started': START_ISO, 'finished': time.strftime('%Y-%m-%dT%H:%MZ', time.gmtime()),
+                                     'countries': {cc: {'leads_before': BEFORE.get(cc), 'leads_after': len(load(OUT / f'leads-{cc}.json', {}).get('leads') or {}),
+                                                        'status': state['countries'].get(cc, {}).get('status')} for cc in BEFORE}})
+    except Exception as e: notice(f'last_run.json not written: {e}')  # noqa: BLE001
     state['last_run'] = {'date': RUN, 'stats': STAT, 'countries': done_now, 'dead_servers': sorted(DEAD),
                          'robots_refused': ROBOTS_REFUSED, 'robots_said': {h: ROBOTS_SAID.get(h, '') for h in ROBOTS_REFUSED},
                          'robots_exempted_hosts (HQ ruling Oct 27: ArcGIS REST API paths only)': ROBOTS_EXEMPTED}

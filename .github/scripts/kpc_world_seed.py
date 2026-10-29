@@ -77,6 +77,10 @@ EXTRA = {
     'DE': {'drop_known': ['https://geodienste.bfn.de/ogc/wfs/'], 'known_good': ['https://geodienste.bfn.de/ogc/wfs/schutzgebiet'], 'ogc': ['https://geodienste.bfn.de/ogc/wfs/schutzgebiet'],
            'drop_catalogs': ['govdata.de']},
     # JP: the real sources are FILE downloads (chat 8's OFFICIAL_MAPS/WORLD/JP_desk.md): listed as 'needs a loader'
+    # PL (chat 8 KPC_HarvesterSeeds_desk.md, Oct 29): the GIOS FormyOchronyPrzyrody address is a 404: dropped
+    # FI (chat 8): SYKE's old ArcGIS ended in 2023; its GeoServer replaced it (CC BY 4.0)
+    'FI': {'ogc': ['https://paikkatieto.ymparisto.fi/geoserver/wfs'], 'known_good': ['https://paikkatieto.ymparisto.fi/geoserver/wfs']},
+    'PL': {'drop_known': ['https://powietrze.gios.gov.pl/arcgis/rest/services/MPP/FormyOchronyPrzyrody/MapServer']},
     'JP': {'downloads': [{'url': 'https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-A10-v3_1.html', 'title': 'MLIT National Land Numerical Information A10: natural park areas',
                           'publisher': 'Ministry of Land, Infrastructure, Transport and Tourism (MLIT)', 'licence': 'see the page (MLIT terms)'}]},
 }
@@ -105,6 +109,36 @@ def main():
                      'servers': sorted(servers), 'agol_orgs': sorted(orgs), 'ogc': sorted(ogc), 'catalog_pages': sorted(pages)[:40],
                      'known_good': sorted(u for u in urls if re.search(r'/rest/services/|wfs|ows|ogcapi', u, re.I))[:60],
                      'research': [os.path.relpath(f, LINKS) for pat in files for f in glob.glob(str(LINKS / '.claude/build/research' / pat))]}
+    # Oct 29 (chat 8's KPC_HarvesterSeeds_desk.md, section 1): the seed table is read straight from chat 8's file (one list, one place):
+    # an ArcGIS address -> servers (+ known_good when it names a service), WFS / WMS / OGC API / STAC -> ogc + known_good, a page -> downloads
+    sb = LINKS / '.claude/build/research/KPC_HarvesterSeeds_desk.md'
+    added = 0
+    if sb.exists():
+        sec = sb.read_text(encoding='utf-8').split('## 2.')[0]
+        for line in sec.splitlines():
+            m = re.match(r'^\|\s*([A-Z]{2})\s*\|(.*)$', line)
+            if not m or m.group(1) not in seeds: continue
+            cc, rest = m.group(1), m.group(2)
+            cells = [c.strip() for c in rest.split('|')]
+            kind = (cells[1] if len(cells) > 1 else '').lower()
+            grade = (cells[2] if len(cells) > 2 else '')
+            c0 = cells[0] if cells else ''
+            for mu in re.finditer(r'https?://[^\s<>)|,`"\']+', c0):
+                u = mu.group(0).rstrip('.,;)')
+                if re.search(r'getcapabilities|\.\.\.', u, re.I) or c0[mu.end():mu.end() + 3] == '...' or re.search(r'\bold\s*$', c0[:mu.start()]): continue   # '…/wfs/...' is shortened; 'old https://…' has ended
+                S = seeds[cc]
+                if re.search(r'/rest/services', u, re.I):
+                    root = re.match(r'(https?://[^?#]*?/rest/services)', u, re.I).group(1)
+                    S['servers'] = sorted(set(S['servers']) | {root})
+                    if re.search(r'(Feature|Map)Server', u): S['known_good'] = sorted(set(S['known_good']) | {u})
+                elif re.search(r'wfs|wms|ogc|stac|/ows\b|geoserver', u + ' ' + kind, re.I):
+                    S['ogc'] = sorted(set(S['ogc']) | {u}); S['known_good'] = sorted(set(S['known_good']) | {u})
+                elif 'download' in kind:
+                    S.setdefault('downloads', [])
+                    if not any(d.get('url') == u for d in S['downloads']): S['downloads'].append({'url': u, 'title': f'chat 8 seed ({grade[:20]})', 'publisher': '', 'licence': (cells[3] if len(cells) > 3 else '')[:160]})
+                else: continue
+                S.setdefault('seed_book', []).append(u); added += 1
+    print(f'::notice title=World harvester seed::{added} addresses added from chat 8\'s seed book (KPC_HarvesterSeeds_desk.md)', flush=True)
     # Oct 28 (chat 8's harvester grade, KPC_HarvesterGrade_desk.md): fixes the seed cannot learn from the research text
     for cc, add in EXTRA.items():
         if cc not in seeds: continue

@@ -41,6 +41,10 @@
      "publisher": "Ministry of Land, Infrastructure, Transport and Tourism (MLIT)",
      "licence": "see the page (MLIT terms)"
     }
+   ],
+   "seed_book": [
+    "https://www.biodic.go.jp/trialSystem/EN/info/nps.html",
+    "https://nlftp.mlit.go.jp/ksj/"
    ]
   },
   "GB": {
@@ -94,11 +98,11 @@
    ],
    "research": [
     ".claude/build/research/WORLD/KPC_W_GB_desk.md",
-    ".claude/build/research/UK/KPC_UK_England_desk.md",
     ".claude/build/research/UK/KPC_UK_Wales_desk.md",
     ".claude/build/research/UK/KPC_UK_Scotland_desk.md",
-    ".claude/build/research/UK/KPC_UK_Summary_desk.md",
-    ".claude/build/research/UK/KPC_UK_NorthernIreland_desk.md"
+    ".claude/build/research/UK/KPC_UK_England_desk.md",
+    ".claude/build/research/UK/KPC_UK_NorthernIreland_desk.md",
+    ".claude/build/research/UK/KPC_UK_Summary_desk.md"
    ]
   },
   "DE": {
@@ -132,6 +136,9 @@
    ],
    "research": [
     ".claude/build/research/WORLD/KPC_W_DE_desk.md"
+   ],
+   "seed_book": [
+    "https://geodienste.bfn.de/ogc/wfs/"
    ]
   },
   "PL": {
@@ -169,7 +176,6 @@
    "catalog_pages": [],
    "known_good": [
     "https://ogcapi.bdl.lasy.gov.pl",
-    "https://powietrze.gios.gov.pl/arcgis/rest/services/MPP/FormyOchronyPrzyrody/MapServer",
     "https://wfs.bdl.lasy.gov.pl/geoserver/BDL/ows"
    ],
    "research": [
@@ -293,13 +299,33 @@
    "stage": 1,
    "order": 7,
    "official_orgs": [],
-   "servers": [],
+   "servers": [
+    "https://nco.ign.es/server/rest/services"
+   ],
    "agol_orgs": [],
-   "ogc": [],
+   "ogc": [
+    "https://wms.mapama.gob.es/sig/Biodiversidad/ENP"
+   ],
    "catalog_pages": [],
-   "known_good": [],
+   "known_good": [
+    "https://nco.ign.es/server/rest/services/nco/ParquesNacionales/MapServer",
+    "https://wms.mapama.gob.es/sig/Biodiversidad/ENP"
+   ],
    "research": [
     ".claude/build/research/WORLD/KPC_W_ES_desk.md"
+   ],
+   "seed_book": [
+    "https://wms.mapama.gob.es/sig/Biodiversidad/ENP",
+    "https://www.miteco.gob.es/es/biodiversidad/servicios/banco-datos-naturaleza/informacion-disponible/",
+    "https://nco.ign.es/server/rest/services/nco/ParquesNacionales/MapServer"
+   ],
+   "downloads": [
+    {
+     "url": "https://www.miteco.gob.es/es/biodiversidad/servicios/banco-datos-naturaleza/informacion-disponible/",
+     "title": "chat 8 seed (B)",
+     "publisher": "",
+     "licence": "already in my ES file"
+    }
    ]
   },
   "IT": {
@@ -392,11 +418,21 @@
    "official_orgs": [],
    "servers": [],
    "agol_orgs": [],
-   "ogc": [],
+   "ogc": [
+    "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1",
+    "https://api.pdok.nl/rvo/nationale-parken-geharmoniseerd/ogc/v1"
+   ],
    "catalog_pages": [],
-   "known_good": [],
+   "known_good": [
+    "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1",
+    "https://api.pdok.nl/rvo/nationale-parken-geharmoniseerd/ogc/v1"
+   ],
    "research": [
     ".claude/build/research/WORLD/KPC_W_NL_desk.md"
+   ],
+   "seed_book": [
+    "https://api.pdok.nl/rvo/nationale-parken-geharmoniseerd/ogc/v1",
+    "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1"
    ]
   },
   "CH": {
@@ -425,11 +461,18 @@
    "official_orgs": [],
    "servers": [],
    "agol_orgs": [],
-   "ogc": [],
+   "ogc": [
+    "https://data.geo.admin.ch/api/stac/v0.9/collections/ch.bafu.schutzgebiete-paerke_nationaler_bedeutung"
+   ],
    "catalog_pages": [],
-   "known_good": [],
+   "known_good": [
+    "https://data.geo.admin.ch/api/stac/v0.9/collections/ch.bafu.schutzgebiete-paerke_nationaler_bedeutung"
+   ],
    "research": [
     ".claude/build/research/WORLD/KPC_W_CH_desk.md"
+   ],
+   "seed_book": [
+    "https://data.geo.admin.ch/api/stac/v0.9/collections/ch.bafu.schutzgebiete-paerke_nationaler_bedeutung"
    ]
   },
   "PT": {
@@ -545,11 +588,21 @@
    "official_orgs": [],
    "servers": [],
    "agol_orgs": [],
-   "ogc": [],
+   "ogc": [
+    "https://geodata.naturvardsverket.se/andra_skydd/wms",
+    "https://geodata.naturvardsverket.se/naturvardsregistret/wfs"
+   ],
    "catalog_pages": [],
-   "known_good": [],
+   "known_good": [
+    "https://geodata.naturvardsverket.se/andra_skydd/wms",
+    "https://geodata.naturvardsverket.se/naturvardsregistret/wfs"
+   ],
    "research": [
     ".claude/build/research/WORLD/KPC_W_SE_desk.md"
+   ],
+   "seed_book": [
+    "https://geodata.naturvardsverket.se/naturvardsregistret/wfs",
+    "https://geodata.naturvardsverket.se/andra_skydd/wms"
    ]
   },
   "SI": {
@@ -792,13 +845,23 @@
    "stage": 1,
    "order": 23,
    "official_orgs": [],
-   "servers": [],
+   "servers": [
+    "https://gtkdata.gtk.fi/arcgis/rest/services"
+   ],
    "agol_orgs": [],
-   "ogc": [],
+   "ogc": [
+    "https://paikkatieto.ymparisto.fi/geoserver/wfs"
+   ],
    "catalog_pages": [],
-   "known_good": [],
+   "known_good": [
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/suojelualueet/MapServer",
+    "https://paikkatieto.ymparisto.fi/geoserver/wfs"
+   ],
    "research": [
     ".claude/build/research/WORLD/KPC_W_FI_desk.md"
+   ],
+   "seed_book": [
+    "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/suojelualueet/MapServer"
    ]
   },
   "HU": {
@@ -1052,6 +1115,17 @@
    "known_good": [],
    "research": [
     ".claude/build/research/WORLD/KPC_Y_BR_desk.md"
+   ],
+   "downloads": [
+    {
+     "url": "https://portal-espacial.sibbr.gov.br/ws/layers/view/more/uc_federal_pi_4326_iso88591_dbf_fix",
+     "title": "chat 8 seed (B)",
+     "publisher": "",
+     "licence": "SiBBr is the Biodiversity Information System (ICMBio data); downloads, not a server"
+    }
+   ],
+   "seed_book": [
+    "https://portal-espacial.sibbr.gov.br/ws/layers/view/more/uc_federal_pi_4326_iso88591_dbf_fix"
    ]
   },
   "KR": {
@@ -1101,13 +1175,20 @@
    "stage": 2,
    "order": 33,
    "official_orgs": [],
-   "servers": [],
+   "servers": [
+    "https://serverags1.economia.gob.mx/arcgis/rest/services"
+   ],
    "agol_orgs": [],
    "ogc": [],
    "catalog_pages": [],
-   "known_good": [],
+   "known_good": [
+    "https://serverags1.economia.gob.mx/arcgis/rest/services/SDE_EXTERNAS/CAPAS_EXTERNAS_V2/MapServer/2"
+   ],
    "research": [
     ".claude/build/research/WORLD/KPC_X3_MX_CENTRALAM_desk.md"
+   ],
+   "seed_book": [
+    "https://serverags1.economia.gob.mx/arcgis/rest/services/SDE_EXTERNAS/CAPAS_EXTERNAS_V2/MapServer/2"
    ]
   },
   "TH": {
@@ -1155,12 +1236,22 @@
    "stage": 3,
    "order": 35,
    "official_orgs": [],
-   "servers": [],
+   "servers": [
+    "https://dffeportal.environment.gov.za/hosting/rest/services",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services"
+   ],
    "agol_orgs": [],
    "ogc": [],
    "catalog_pages": [],
-   "known_good": [],
-   "research": []
+   "known_good": [
+    "https://dffeportal.environment.gov.za/hosting/rest/services/PACA/SAPAD_Buffer/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1"
+   ],
+   "research": [],
+   "seed_book": [
+    "https://dffeportal.environment.gov.za/hosting/rest/services/PACA/SAPAD_Buffer/MapServer",
+    "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1"
+   ]
   },
   "AR": {
    "name": "Argentina",
@@ -1209,12 +1300,19 @@
    "stage": 3,
    "order": 37,
    "official_orgs": [],
-   "servers": [],
+   "servers": [
+    "https://arcgis.mma.gob.cl/server/rest/services"
+   ],
    "agol_orgs": [],
    "ogc": [],
    "catalog_pages": [],
-   "known_good": [],
-   "research": []
+   "known_good": [
+    "https://arcgis.mma.gob.cl/server/rest/services/IDE/Biodiversidad_IDE/MapServer"
+   ],
+   "research": [],
+   "seed_book": [
+    "https://arcgis.mma.gob.cl/server/rest/services/IDE/Biodiversidad_IDE/MapServer"
+   ]
   },
   "CO": {
    "name": "Colombia",
@@ -1231,12 +1329,19 @@
    "stage": 3,
    "order": 38,
    "official_orgs": [],
-   "servers": [],
+   "servers": [
+    "https://mapas.parquesnacionales.gov.co/arcgis/rest/services"
+   ],
    "agol_orgs": [],
    "ogc": [],
    "catalog_pages": [],
-   "known_good": [],
-   "research": []
+   "known_good": [
+    "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/runap/FeatureServer"
+   ],
+   "research": [],
+   "seed_book": [
+    "https://mapas.parquesnacionales.gov.co/arcgis/rest/services/pnn/runap/FeatureServer"
+   ]
   },
   "PH": {
    "name": "Philippines",
