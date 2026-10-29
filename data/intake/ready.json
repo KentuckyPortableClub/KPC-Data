@@ -1050,7 +1050,7 @@
    "queue_licence": "ATOM feed rights: 'No limitations'",
    "queue_note": "WFS (not ArcGIS): the host did not resolve from a GitHub runner on Oct 28 (DNS); ATOM download feed http://gis.arso.gov.si/related/atom/inspire/datafeeds/zav_obm_poli.xml (GML, 2021-12-10). Needs the typename read from GetCapabilities.",
    "queue_url": "https://prostor4.gov.si/ows2-ins/ps/wfs",
-   "retry": true,
+   "retry": false,
    "sig": "https://prostor4.gov.si/ows2-ins/ps/wfs?service=wfs&version=2.0.0&request=GetCapabilities|Slovenia protected areas (ARSO, INSPIRE PS WFS)|Agencija RS za okolje (ARSO) / Slovenian Environment Agency|ATOM feed rights: 'No limitations'|WFS (not ArcGIS): the host did not resolve from a GitHub runner on Oct 28 (DNS); ATOM download feed http://gis.arso.gov.si/related/atom/inspire/datafeeds/zav_obm_poli.xml (GML, 2021-12-10). Needs the typename read from GetCapabilities.|READY (WFS) or did-not-open",
    "terms": {
     "class": "OPEN",
@@ -1062,7 +1062,7 @@
    "url": "https://prostor4.gov.si/ows2-ins/ps/wfs",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (rest): probed again next run (failed 2 of 3)"
+   "why": "did not open 3 times (rest): chat 9 checks the url"
   },
   {
    "approved": null,
@@ -3588,7 +3588,7 @@
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/5",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -3665,7 +3665,7 @@
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/6",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -3742,7 +3742,7 @@
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/10",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -3819,7 +3819,7 @@
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/11",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -3896,7 +3896,7 @@
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/12",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -3973,7 +3973,7 @@
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer/14",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -4222,7 +4222,7 @@
        "Population [SA1] - 2011"
       ]
      ],
-     "service_name": "<b>Australian Bureau of Statistics (ABS) Census 2011 data including the Tasmanian Government derived Treasury population projections that are originally based on the 2011 Census.<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
+     "service_name": "Australian Bureau of Statistics (ABS) Census 2011 data including the Tasmanian Government derived Treasury population projections that are originally based on the 2011 Census."
     },
     "service_item": ""
    },
@@ -4243,7 +4243,7 @@
     "credit": " the LIST  State of Tasmania",
     "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer/info/iteminfo",
     "licence_text": "",
-    "line": "the LIST State of Tasmania the LIST State of Tasmania",
+    "line": "the LIST State of Tasmania the LIST © State of Tasmania",
     "source": "item page",
     "title": "ABS_2011"
    },
@@ -4342,7 +4342,7 @@
        "Population [SA1] - 2011"
       ]
      ],
-     "service_name": "<b>Australian Bureau of Statistics (ABS) Census 2011 data including the Tasmanian Government derived Treasury population projections that are originally based on the 2011 Census.<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
+     "service_name": "Australian Bureau of Statistics (ABS) Census 2011 data including the Tasmanian Government derived Treasury population projections that are originally based on the 2011 Census."
     },
     "service_item": ""
    },
@@ -4363,7 +4363,7 @@
     "credit": " the LIST  State of Tasmania",
     "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer/info/iteminfo",
     "licence_text": "",
-    "line": "the LIST State of Tasmania the LIST State of Tasmania",
+    "line": "the LIST State of Tasmania the LIST © State of Tasmania",
     "source": "item page",
     "title": "ABS_2011"
    },
@@ -4418,7 +4418,7 @@
        "Population [SA1] - 2011"
       ]
      ],
-     "service_name": "<b>Australian Bureau of Statistics (ABS) Census 2011 data including the Tasmanian Government derived Treasury population projections that are originally based on the 2011 Census.<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
+     "service_name": "Australian Bureau of Statistics (ABS) Census 2011 data including the Tasmanian Government derived Treasury population projections that are originally based on the 2011 Census."
     },
     "status": "budget"
    },
@@ -4440,7 +4440,7 @@
     "credit": " the LIST  State of Tasmania",
     "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer/info/iteminfo",
     "licence_text": "",
-    "line": "the LIST State of Tasmania the LIST State of Tasmania",
+    "line": "the LIST State of Tasmania the LIST © State of Tasmania",
     "source": "item page",
     "title": "ABS_2011"
    },
@@ -4449,7 +4449,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer/2",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -4495,7 +4495,7 @@
        "Population [SA1] - 2011"
       ]
      ],
-     "service_name": "<b>Australian Bureau of Statistics (ABS) Census 2011 data including the Tasmanian Government derived Treasury population projections that are originally based on the 2011 Census.<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
+     "service_name": "Australian Bureau of Statistics (ABS) Census 2011 data including the Tasmanian Government derived Treasury population projections that are originally based on the 2011 Census."
     },
     "status": "budget"
    },
@@ -4517,7 +4517,7 @@
     "credit": " the LIST  State of Tasmania",
     "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer/info/iteminfo",
     "licence_text": "",
-    "line": "the LIST State of Tasmania the LIST State of Tasmania",
+    "line": "the LIST State of Tasmania the LIST © State of Tasmania",
     "source": "item page",
     "title": "ABS_2011"
    },
@@ -4526,7 +4526,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer/3",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -4572,7 +4572,7 @@
        "Population [SA1] - 2011"
       ]
      ],
-     "service_name": "<b>Australian Bureau of Statistics (ABS) Census 2011 data including the Tasmanian Government derived Treasury population projections that are originally based on the 2011 Census.<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
+     "service_name": "Australian Bureau of Statistics (ABS) Census 2011 data including the Tasmanian Government derived Treasury population projections that are originally based on the 2011 Census."
     },
     "status": "budget"
    },
@@ -4594,7 +4594,7 @@
     "credit": " the LIST  State of Tasmania",
     "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer/info/iteminfo",
     "licence_text": "",
-    "line": "the LIST State of Tasmania the LIST State of Tasmania",
+    "line": "the LIST State of Tasmania the LIST © State of Tasmania",
     "source": "item page",
     "title": "ABS_2011"
    },
@@ -4603,7 +4603,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer/4",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -4649,7 +4649,7 @@
        "Population [SA1] - 2011"
       ]
      ],
-     "service_name": "<b>Australian Bureau of Statistics (ABS) Census 2011 data including the Tasmanian Government derived Treasury population projections that are originally based on the 2011 Census.<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
+     "service_name": "Australian Bureau of Statistics (ABS) Census 2011 data including the Tasmanian Government derived Treasury population projections that are originally based on the 2011 Census."
     },
     "status": "budget"
    },
@@ -4671,7 +4671,7 @@
     "credit": " the LIST  State of Tasmania",
     "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer/info/iteminfo",
     "licence_text": "",
-    "line": "the LIST State of Tasmania the LIST State of Tasmania",
+    "line": "the LIST State of Tasmania the LIST © State of Tasmania",
     "source": "item page",
     "title": "ABS_2011"
    },
@@ -4680,7 +4680,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer/5",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -4726,7 +4726,7 @@
        "Population [SA1] - 2011"
       ]
      ],
-     "service_name": "<b>Australian Bureau of Statistics (ABS) Census 2011 data including the Tasmanian Government derived Treasury population projections that are originally based on the 2011 Census.<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
+     "service_name": "Australian Bureau of Statistics (ABS) Census 2011 data including the Tasmanian Government derived Treasury population projections that are originally based on the 2011 Census."
     },
     "status": "budget"
    },
@@ -4748,7 +4748,7 @@
     "credit": " the LIST  State of Tasmania",
     "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer/info/iteminfo",
     "licence_text": "",
-    "line": "the LIST State of Tasmania the LIST State of Tasmania",
+    "line": "the LIST State of Tasmania the LIST © State of Tasmania",
     "source": "item page",
     "title": "ABS_2011"
    },
@@ -4757,7 +4757,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer/6",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -4803,7 +4803,7 @@
        "Population [SA1] - 2011"
       ]
      ],
-     "service_name": "<b>Australian Bureau of Statistics (ABS) Census 2011 data including the Tasmanian Government derived Treasury population projections that are originally based on the 2011 Census.<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
+     "service_name": "Australian Bureau of Statistics (ABS) Census 2011 data including the Tasmanian Government derived Treasury population projections that are originally based on the 2011 Census."
     },
     "status": "budget"
    },
@@ -4825,7 +4825,7 @@
     "credit": " the LIST  State of Tasmania",
     "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer/info/iteminfo",
     "licence_text": "",
-    "line": "the LIST State of Tasmania the LIST State of Tasmania",
+    "line": "the LIST State of Tasmania the LIST © State of Tasmania",
     "source": "item page",
     "title": "ABS_2011"
    },
@@ -4834,7 +4834,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer/7",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -5316,7 +5316,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2016/MapServer/2",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -5393,7 +5393,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2016/MapServer/3",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -5470,7 +5470,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2016/MapServer/4",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -5547,7 +5547,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2016/MapServer/5",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -5624,7 +5624,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2016/MapServer/6",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -5701,7 +5701,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2016/MapServer/7",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -6236,7 +6236,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrative/MapServer/5",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -6313,7 +6313,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrative/MapServer/96",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -6390,7 +6390,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrative/MapServer/6",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -6467,7 +6467,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrative/MapServer/7",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -7066,7 +7066,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrativeV2/MapServer/6",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -7143,7 +7143,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrativeV2/MapServer/10",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -7220,7 +7220,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrativeV2/MapServer/15",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -7861,7 +7861,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/EmergencyManagementPublic/MapServer/8",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -7938,7 +7938,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/EmergencyManagementPublic/MapServer/9",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -8015,7 +8015,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/EmergencyManagementPublic/MapServer/13",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -8092,7 +8092,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/EmergencyManagementPublic/MapServer/14",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -8169,7 +8169,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/EmergencyManagementPublic/MapServer/15",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -8246,7 +8246,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/EmergencyManagementPublic/MapServer/21",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -8851,7 +8851,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Indexes/MapServer/1",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -8928,7 +8928,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Indexes/MapServer/2",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -9005,7 +9005,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Indexes/MapServer/3",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -9082,7 +9082,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Indexes/MapServer/4",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -9159,7 +9159,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Indexes/MapServer/12",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -9236,7 +9236,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Indexes/MapServer/13",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -9921,7 +9921,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/MarineAndCoastal/MapServer/1",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -9998,7 +9998,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/MarineAndCoastal/MapServer/2",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -10365,7 +10365,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/10",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -10434,7 +10434,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/11",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -10503,7 +10503,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/13",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -10572,7 +10572,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/17",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -10640,7 +10640,7 @@
        "Threatened Fauna Polygon"
       ]
      ],
-     "service_name": "<b>Flora and Fauna data including threatened species, NVA observations and vegetation communities.<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
+     "service_name": "Flora and Fauna data including threatened species, NVA observations and vegetation communities."
     },
     "service_item": ""
    },
@@ -10661,7 +10661,7 @@
     "credit": " the LIST  State of Tasmania",
     "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo",
     "licence_text": "",
-    "line": "the LIST State of Tasmania the LIST State of Tasmania",
+    "line": "the LIST State of Tasmania",
     "source": "item page",
     "title": "NaturalEnvironment"
    },
@@ -10880,7 +10880,7 @@
        "Threatened Fauna Polygon"
       ]
      ],
-     "service_name": "<b>Flora and Fauna data including threatened species, NVA observations and vegetation communities.<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
+     "service_name": "Flora and Fauna data including threatened species, NVA observations and vegetation communities."
     },
     "service_item": ""
    },
@@ -10901,7 +10901,7 @@
     "credit": " the LIST  State of Tasmania",
     "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo",
     "licence_text": "",
-    "line": "the LIST State of Tasmania the LIST State of Tasmania",
+    "line": "the LIST State of Tasmania",
     "source": "item page",
     "title": "NaturalEnvironment"
    },
@@ -11008,7 +11008,7 @@
        "Threatened Fauna Polygon"
       ]
      ],
-     "service_name": "<b>Flora and Fauna data including threatened species, NVA observations and vegetation communities.<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
+     "service_name": "Flora and Fauna data including threatened species, NVA observations and vegetation communities."
     },
     "service_item": ""
    },
@@ -11029,7 +11029,7 @@
     "credit": " the LIST  State of Tasmania",
     "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo",
     "licence_text": "",
-    "line": "the LIST State of Tasmania the LIST State of Tasmania",
+    "line": "the LIST State of Tasmania",
     "source": "item page",
     "title": "NaturalEnvironment"
    },
@@ -11084,7 +11084,7 @@
        "Threatened Fauna Polygon"
       ]
      ],
-     "service_name": "<b>Flora and Fauna data including threatened species, NVA observations and vegetation communities.<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
+     "service_name": "Flora and Fauna data including threatened species, NVA observations and vegetation communities."
     },
     "status": "budget"
    },
@@ -11106,7 +11106,7 @@
     "credit": " the LIST  State of Tasmania",
     "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo",
     "licence_text": "",
-    "line": "the LIST State of Tasmania the LIST State of Tasmania",
+    "line": "the LIST State of Tasmania",
     "source": "item page",
     "title": "NaturalEnvironment"
    },
@@ -11115,7 +11115,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/6",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -11161,7 +11161,7 @@
        "Threatened Fauna Polygon"
       ]
      ],
-     "service_name": "<b>Flora and Fauna data including threatened species, NVA observations and vegetation communities.<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
+     "service_name": "Flora and Fauna data including threatened species, NVA observations and vegetation communities."
     },
     "status": "budget"
    },
@@ -11183,7 +11183,7 @@
     "credit": " the LIST  State of Tasmania",
     "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo",
     "licence_text": "",
-    "line": "the LIST State of Tasmania the LIST State of Tasmania",
+    "line": "the LIST State of Tasmania",
     "source": "item page",
     "title": "NaturalEnvironment"
    },
@@ -11192,7 +11192,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/7",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -11238,7 +11238,7 @@
        "Threatened Fauna Polygon"
       ]
      ],
-     "service_name": "<b>Flora and Fauna data including threatened species, NVA observations and vegetation communities.<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
+     "service_name": "Flora and Fauna data including threatened species, NVA observations and vegetation communities."
     },
     "status": "budget"
    },
@@ -11260,7 +11260,7 @@
     "credit": " the LIST  State of Tasmania",
     "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo",
     "licence_text": "",
-    "line": "the LIST State of Tasmania the LIST State of Tasmania",
+    "line": "the LIST State of Tasmania",
     "source": "item page",
     "title": "NaturalEnvironment"
    },
@@ -11269,7 +11269,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/10",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -11315,7 +11315,7 @@
        "Threatened Fauna Polygon"
       ]
      ],
-     "service_name": "<b>Flora and Fauna data including threatened species, NVA observations and vegetation communities.<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
+     "service_name": "Flora and Fauna data including threatened species, NVA observations and vegetation communities."
     },
     "status": "budget"
    },
@@ -11337,7 +11337,7 @@
     "credit": " the LIST  State of Tasmania",
     "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo",
     "licence_text": "",
-    "line": "the LIST State of Tasmania the LIST State of Tasmania",
+    "line": "the LIST State of Tasmania",
     "source": "item page",
     "title": "NaturalEnvironment"
    },
@@ -11346,7 +11346,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/12",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -11392,7 +11392,7 @@
        "Threatened Fauna Polygon"
       ]
      ],
-     "service_name": "<b>Flora and Fauna data including threatened species, NVA observations and vegetation communities.<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
+     "service_name": "Flora and Fauna data including threatened species, NVA observations and vegetation communities."
     },
     "status": "budget"
    },
@@ -11414,7 +11414,7 @@
     "credit": " the LIST  State of Tasmania",
     "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/info/iteminfo",
     "licence_text": "",
-    "line": "the LIST State of Tasmania the LIST State of Tasmania",
+    "line": "the LIST State of Tasmania",
     "source": "item page",
     "title": "NaturalEnvironment"
    },
@@ -11423,7 +11423,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer/16",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -12779,7 +12779,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer/8",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -13101,7 +13101,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer/2",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -13178,7 +13178,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer/3",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -13255,7 +13255,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer/4",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -13332,7 +13332,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer/5",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -13409,7 +13409,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer/8",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -13486,7 +13486,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer/10",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -13768,7 +13768,7 @@
        "Former STRLUS’s Greater Hobart Urban Growth Boundary"
       ]
      ],
-     "service_name": "<b>Southern Tasmanian Councils Authority (STCA) planning schemes areas including special areas, planning zones and zone boundaries. Please be aware that the planning scheme data is currently under review and many zones may be currently missing as a consequence. (Last updated 15/12/2015).<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
+     "service_name": "Southern Tasmanian Councils Authority (STCA) planning schemes areas including special areas, planning zones and zone boundaries. Please be aware that the planning scheme data is currently under review and many zones may be currently missing as a consequence. (Last updated 15/12/2015)."
     },
     "service_item": ""
    },
@@ -13866,7 +13866,7 @@
        "Former STRLUS’s Greater Hobart Urban Growth Boundary"
       ]
      ],
-     "service_name": "<b>Southern Tasmanian Councils Authority (STCA) planning schemes areas including special areas, planning zones and zone boundaries. Please be aware that the planning scheme data is currently under review and many zones may be currently missing as a consequence. (Last updated 15/12/2015).<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
+     "service_name": "Southern Tasmanian Councils Authority (STCA) planning schemes areas including special areas, planning zones and zone boundaries. Please be aware that the planning scheme data is currently under review and many zones may be currently missing as a consequence. (Last updated 15/12/2015)."
     },
     "service_item": ""
    },
@@ -13887,7 +13887,7 @@
     "credit": " the LIST  State of Tasmania",
     "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Planning/MapServer/info/iteminfo",
     "licence_text": "",
-    "line": "the LIST State of Tasmania the LIST State of Tasmania",
+    "line": "the LIST State of Tasmania",
     "source": "item page",
     "title": "Planning"
    },
@@ -13990,7 +13990,7 @@
        "Former STRLUS’s Greater Hobart Urban Growth Boundary"
       ]
      ],
-     "service_name": "<b>Southern Tasmanian Councils Authority (STCA) planning schemes areas including special areas, planning zones and zone boundaries. Please be aware that the planning scheme data is currently under review and many zones may be currently missing as a consequence. (Last updated 15/12/2015).<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
+     "service_name": "Southern Tasmanian Councils Authority (STCA) planning schemes areas including special areas, planning zones and zone boundaries. Please be aware that the planning scheme data is currently under review and many zones may be currently missing as a consequence. (Last updated 15/12/2015)."
     },
     "service_item": ""
    },
@@ -14011,7 +14011,7 @@
     "credit": " the LIST  State of Tasmania",
     "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Planning/MapServer/info/iteminfo",
     "licence_text": "",
-    "line": "the LIST State of Tasmania the LIST State of Tasmania",
+    "line": "the LIST State of Tasmania",
     "source": "item page",
     "title": "Planning"
    },
@@ -14086,7 +14086,7 @@
        "Former STRLUS’s Greater Hobart Urban Growth Boundary"
       ]
      ],
-     "service_name": "<b>Southern Tasmanian Councils Authority (STCA) planning schemes areas including special areas, planning zones and zone boundaries. Please be aware that the planning scheme data is currently under review and many zones may be currently missing as a consequence. (Last updated 15/12/2015).<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
+     "service_name": "Southern Tasmanian Councils Authority (STCA) planning schemes areas including special areas, planning zones and zone boundaries. Please be aware that the planning scheme data is currently under review and many zones may be currently missing as a consequence. (Last updated 15/12/2015)."
     },
     "service_item": ""
    },
@@ -14107,7 +14107,7 @@
     "credit": " the LIST  State of Tasmania",
     "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Planning/MapServer/info/iteminfo",
     "licence_text": "",
-    "line": "the LIST State of Tasmania the LIST State of Tasmania",
+    "line": "the LIST State of Tasmania",
     "source": "item page",
     "title": "Planning"
    },
@@ -14162,7 +14162,7 @@
        "Former STRLUS’s Greater Hobart Urban Growth Boundary"
       ]
      ],
-     "service_name": "<b>Southern Tasmanian Councils Authority (STCA) planning schemes areas including special areas, planning zones and zone boundaries. Please be aware that the planning scheme data is currently under review and many zones may be currently missing as a consequence. (Last updated 15/12/2015).<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
+     "service_name": "Southern Tasmanian Councils Authority (STCA) planning schemes areas including special areas, planning zones and zone boundaries. Please be aware that the planning scheme data is currently under review and many zones may be currently missing as a consequence. (Last updated 15/12/2015)."
     },
     "status": "budget"
    },
@@ -14184,7 +14184,7 @@
     "credit": " the LIST  State of Tasmania",
     "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Planning/MapServer/info/iteminfo",
     "licence_text": "",
-    "line": "the LIST State of Tasmania the LIST State of Tasmania",
+    "line": "the LIST State of Tasmania",
     "source": "item page",
     "title": "Planning"
    },
@@ -14193,7 +14193,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Planning/MapServer/70",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -14239,7 +14239,7 @@
        "Former STRLUS’s Greater Hobart Urban Growth Boundary"
       ]
      ],
-     "service_name": "<b>Southern Tasmanian Councils Authority (STCA) planning schemes areas including special areas, planning zones and zone boundaries. Please be aware that the planning scheme data is currently under review and many zones may be currently missing as a consequence. (Last updated 15/12/2015).<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
+     "service_name": "Southern Tasmanian Councils Authority (STCA) planning schemes areas including special areas, planning zones and zone boundaries. Please be aware that the planning scheme data is currently under review and many zones may be currently missing as a consequence. (Last updated 15/12/2015)."
     },
     "status": "budget"
    },
@@ -14261,7 +14261,7 @@
     "credit": " the LIST  State of Tasmania",
     "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Planning/MapServer/info/iteminfo",
     "licence_text": "",
-    "line": "the LIST State of Tasmania the LIST State of Tasmania",
+    "line": "the LIST State of Tasmania",
     "source": "item page",
     "title": "Planning"
    },
@@ -14270,7 +14270,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Planning/MapServer/72",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -14316,7 +14316,7 @@
        "Former STRLUS’s Greater Hobart Urban Growth Boundary"
       ]
      ],
-     "service_name": "<b>Southern Tasmanian Councils Authority (STCA) planning schemes areas including special areas, planning zones and zone boundaries. Please be aware that the planning scheme data is currently under review and many zones may be currently missing as a consequence. (Last updated 15/12/2015).<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
+     "service_name": "Southern Tasmanian Councils Authority (STCA) planning schemes areas including special areas, planning zones and zone boundaries. Please be aware that the planning scheme data is currently under review and many zones may be currently missing as a consequence. (Last updated 15/12/2015)."
     },
     "status": "budget"
    },
@@ -14338,7 +14338,7 @@
     "credit": " the LIST  State of Tasmania",
     "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Planning/MapServer/info/iteminfo",
     "licence_text": "",
-    "line": "the LIST State of Tasmania the LIST State of Tasmania",
+    "line": "the LIST State of Tasmania",
     "source": "item page",
     "title": "Planning"
    },
@@ -14347,7 +14347,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Planning/MapServer/74",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -14393,7 +14393,7 @@
        "Former STRLUS’s Greater Hobart Urban Growth Boundary"
       ]
      ],
-     "service_name": "<b>Southern Tasmanian Councils Authority (STCA) planning schemes areas including special areas, planning zones and zone boundaries. Please be aware that the planning scheme data is currently under review and many zones may be currently missing as a consequence. (Last updated 15/12/2015).<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
+     "service_name": "Southern Tasmanian Councils Authority (STCA) planning schemes areas including special areas, planning zones and zone boundaries. Please be aware that the planning scheme data is currently under review and many zones may be currently missing as a consequence. (Last updated 15/12/2015)."
     },
     "status": "budget"
    },
@@ -14415,7 +14415,7 @@
     "credit": " the LIST  State of Tasmania",
     "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Planning/MapServer/info/iteminfo",
     "licence_text": "",
-    "line": "the LIST State of Tasmania the LIST State of Tasmania",
+    "line": "the LIST State of Tasmania",
     "source": "item page",
     "title": "Planning"
    },
@@ -14424,7 +14424,7 @@
    "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Planning/MapServer/77",
    "ver": 1,
    "verdict": "RETRY",
-   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+   "why": "did not open (budget): probed again next run (failed 2 of 3)"
   },
   {
    "approved": null,
@@ -14852,6 +14852,1397 @@
    "ver": 1,
    "verdict": "ASK-THE-PUBLISHER",
    "why": "official and usable, but no missing parks were tested (none listed for the area or no time)"
+  },
+  {
+   "approved": null,
+   "area": "AU",
+   "closes": {
+    "by_name": 0,
+    "in_extent": 80,
+    "missing_in_area": 2871,
+    "n": 0,
+    "parks": [],
+    "pin_only": 0,
+    "tested": 60
+   },
+   "from": "harvester",
+   "overlap": "",
+   "probe": {
+    "copyright": "<a href='https://creativecommons.org/licenses/by/3.0/au/' target='_blank'><img src='https://licensebuttons.net/l/by/3.0/88x31.png' alt='Creative Commons (BY)' /></a><a href='http://www.thelist.tas.gov.au' target='_blank'>the LIST</a> &copy; State of Tasmania",
+    "count": 17965,
+    "description": "LIST Hydrographic Area depicts all waterbody and associated polygon features in the hydrographic theme including lakes, estuaries, dams, mudflats, swamps and coastal flats. It contains attributes that allow area features to be delivered in separate layers and with attributes.  The data set is held as regions which allow area features to overlap. Please review the LIST Web Services Terms and Condit",
+    "extent": [
+     15976418.193,
+     -5444575.34,
+     16541257.351,
+     -4742633.297,
+     3857
+    ],
+    "fields": [
+     "OBJECTID",
+     "HYDAREA_ID",
+     "HYDARTY1",
+     "HYDARTY2",
+     "NAME",
+     "NOM_REG_NO",
+     "HYD_CLASS",
+     "PERENNIAL",
+     "EXISTING",
+     "WC_BED_TY",
+     "RELGRND",
+     "INUSE",
+     "ISLANDTYPE",
+     "ELEVATION",
+     "COMP_AREA",
+     "SHAPE"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "layer_name": "Wetlands",
+    "name_field": "NAME",
+    "opened": true,
+    "polygons": true,
+    "sample": [
+     "None",
+     "None",
+     "None"
+    ],
+    "service": {
+     "layers_listed": 61,
+     "polygon_layers": [
+      [
+       18,
+       "Wetlands"
+      ],
+      [
+       19,
+       "Coastal Flat and Salt Pan"
+      ],
+      [
+       20,
+       "Submerged Reef"
+      ],
+      [
+       21,
+       "Water Bodies - Submerged Trees"
+      ],
+      [
+       22,
+       "Water Bodies - Water Body and Watercourse [Major]"
+      ],
+      [
+       23,
+       "Water Bodies - Water Body and Watercourse [All]"
+      ],
+      [
+       27,
+       "Climate Futures LIDAR Coverage"
+      ],
+      [
+       35,
+       "Building Footprints"
+      ]
+     ],
+     "service_name": "Topographic feature typically found on a map such as roads, contours, rivers, points of interest and railway lines."
+    },
+    "service_item": ""
+   },
+   "probed": "2026-10-29",
+   "publisher": "services.thelist.tas.gov.au",
+   "publisher_test": [
+    "official",
+    "government host services.thelist.tas.gov.au"
+   ],
+   "queue_licence": "the LIST © State of Tasmania",
+   "queue_note": "",
+   "queue_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer",
+   "requests_used": 65,
+   "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer|Public/TopographyAndRelief|services.thelist.tas.gov.au|the LIST © State of Tasmania||",
+   "terms": {
+    "about": "Topographic feature typically found on a map such as roads, contours, rivers, points of interest and railway lines. For Services Terms and Conditions, please see the LIST Web Services Terms and Conditions (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf) Topographic feat",
+    "class": "CREDIT",
+    "credit": " the LIST  State of Tasmania",
+    "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo",
+    "licence_text": "",
+    "line": "the LIST State of Tasmania the LIST &copy; State of Tasmania",
+    "source": "item page",
+    "title": "TopographyAndRelief"
+   },
+   "test": "",
+   "title": "Public/TopographyAndRelief",
+   "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/18",
+   "ver": 1,
+   "verdict": "REJECT",
+   "why": "official and usable, but it closes none of the area's missing parks (nothing to gain yet)"
+  },
+  {
+   "approved": null,
+   "area": "AU",
+   "closes": {
+    "by_name": 0,
+    "in_extent": 80,
+    "missing_in_area": 2871,
+    "n": 0,
+    "note": "stopped early (time or request budget)",
+    "parks": [],
+    "pin_only": 0,
+    "tested": 2
+   },
+   "from": "harvester",
+   "overlap": "",
+   "probe": {
+    "copyright": "<a href='https://creativecommons.org/licenses/by/3.0/au/' target='_blank'><img src='https://licensebuttons.net/l/by/3.0/88x31.png' alt='Creative Commons (BY)' /></a><a href='http://www.thelist.tas.gov.au' target='_blank'>the LIST</a> &copy; State of Tasmania",
+    "count": 432,
+    "description": "LIST Hydrographic Area depicts all waterbody and associated polygon features in the hydrographic theme including lakes, estuaries, dams, mudflats, swamps and coastal flats. It contains attributes that allow area features to be delivered in separate layers and with attributes.  The data set is held as regions which allow area features to overlap. Please review the LIST Web Services Terms and Condit",
+    "extent": [
+     15976418.193,
+     -5444575.34,
+     16541257.351,
+     -4742633.297,
+     3857
+    ],
+    "fields": [
+     "OBJECTID",
+     "HYDAREA_ID",
+     "HYDARTY1",
+     "HYDARTY2",
+     "NAME",
+     "NOM_REG_NO",
+     "HYD_CLASS",
+     "PERENNIAL",
+     "EXISTING",
+     "WC_BED_TY",
+     "RELGRND",
+     "INUSE",
+     "ISLANDTYPE",
+     "ELEVATION",
+     "COMP_AREA",
+     "SHAPE"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "layer_name": "Coastal Flat and Salt Pan",
+    "name_field": "NAME",
+    "opened": true,
+    "polygons": true,
+    "sample": [
+     "None",
+     "None",
+     "None"
+    ],
+    "service": {
+     "layers_listed": 61,
+     "polygon_layers": [
+      [
+       18,
+       "Wetlands"
+      ],
+      [
+       19,
+       "Coastal Flat and Salt Pan"
+      ],
+      [
+       20,
+       "Submerged Reef"
+      ],
+      [
+       21,
+       "Water Bodies - Submerged Trees"
+      ],
+      [
+       22,
+       "Water Bodies - Water Body and Watercourse [Major]"
+      ],
+      [
+       23,
+       "Water Bodies - Water Body and Watercourse [All]"
+      ],
+      [
+       27,
+       "Climate Futures LIDAR Coverage"
+      ],
+      [
+       35,
+       "Building Footprints"
+      ]
+     ],
+     "service_name": "Topographic feature typically found on a map such as roads, contours, rivers, points of interest and railway lines."
+    },
+    "service_item": ""
+   },
+   "probed": "2026-10-29",
+   "publisher": "services.thelist.tas.gov.au",
+   "publisher_test": [
+    "official",
+    "government host services.thelist.tas.gov.au"
+   ],
+   "queue_licence": "the LIST © State of Tasmania",
+   "queue_note": "",
+   "queue_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer",
+   "requests_used": 70,
+   "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer|Public/TopographyAndRelief|services.thelist.tas.gov.au|the LIST © State of Tasmania||",
+   "terms": {
+    "about": "Topographic feature typically found on a map such as roads, contours, rivers, points of interest and railway lines. For Services Terms and Conditions, please see the LIST Web Services Terms and Conditions (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf) Topographic feat",
+    "class": "CREDIT",
+    "credit": " the LIST  State of Tasmania",
+    "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo",
+    "licence_text": "",
+    "line": "the LIST State of Tasmania the LIST &copy; State of Tasmania",
+    "source": "item page",
+    "title": "TopographyAndRelief"
+   },
+   "test": "",
+   "title": "Public/TopographyAndRelief",
+   "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/19",
+   "ver": 1,
+   "verdict": "REJECT",
+   "why": "official and usable, but it closes none of the area's missing parks (nothing to gain yet)"
+  },
+  {
+   "approved": null,
+   "area": "AU",
+   "closes": "not probed",
+   "from": "harvester",
+   "overlap": "",
+   "probe": {
+    "opened": false,
+    "service": {
+     "layers_listed": 61,
+     "polygon_layers": [
+      [
+       18,
+       "Wetlands"
+      ],
+      [
+       19,
+       "Coastal Flat and Salt Pan"
+      ],
+      [
+       20,
+       "Submerged Reef"
+      ],
+      [
+       21,
+       "Water Bodies - Submerged Trees"
+      ],
+      [
+       22,
+       "Water Bodies - Water Body and Watercourse [Major]"
+      ],
+      [
+       23,
+       "Water Bodies - Water Body and Watercourse [All]"
+      ],
+      [
+       27,
+       "Climate Futures LIDAR Coverage"
+      ],
+      [
+       35,
+       "Building Footprints"
+      ]
+     ],
+     "service_name": "Topographic feature typically found on a map such as roads, contours, rivers, points of interest and railway lines."
+    },
+    "status": "budget"
+   },
+   "probed": "2026-10-29",
+   "publisher": "services.thelist.tas.gov.au",
+   "publisher_test": [
+    "official",
+    "government host services.thelist.tas.gov.au"
+   ],
+   "queue_licence": "the LIST © State of Tasmania",
+   "queue_note": "",
+   "queue_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer",
+   "requests_used": 70,
+   "retry": true,
+   "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer|Public/TopographyAndRelief|services.thelist.tas.gov.au|the LIST © State of Tasmania||",
+   "terms": {
+    "about": "Topographic feature typically found on a map such as roads, contours, rivers, points of interest and railway lines. For Services Terms and Conditions, please see the LIST Web Services Terms and Conditions (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf) Topographic feat",
+    "class": "CREDIT",
+    "credit": " the LIST  State of Tasmania",
+    "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo",
+    "licence_text": "",
+    "line": "the LIST State of Tasmania the LIST © State of Tasmania",
+    "source": "item page",
+    "title": "TopographyAndRelief"
+   },
+   "test": "",
+   "title": "Public/TopographyAndRelief",
+   "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/20",
+   "ver": 1,
+   "verdict": "RETRY",
+   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+  },
+  {
+   "approved": null,
+   "area": "AU",
+   "closes": "not probed",
+   "from": "harvester",
+   "overlap": "",
+   "probe": {
+    "opened": false,
+    "service": {
+     "layers_listed": 61,
+     "polygon_layers": [
+      [
+       18,
+       "Wetlands"
+      ],
+      [
+       19,
+       "Coastal Flat and Salt Pan"
+      ],
+      [
+       20,
+       "Submerged Reef"
+      ],
+      [
+       21,
+       "Water Bodies - Submerged Trees"
+      ],
+      [
+       22,
+       "Water Bodies - Water Body and Watercourse [Major]"
+      ],
+      [
+       23,
+       "Water Bodies - Water Body and Watercourse [All]"
+      ],
+      [
+       27,
+       "Climate Futures LIDAR Coverage"
+      ],
+      [
+       35,
+       "Building Footprints"
+      ]
+     ],
+     "service_name": "Topographic feature typically found on a map such as roads, contours, rivers, points of interest and railway lines."
+    },
+    "status": "budget"
+   },
+   "probed": "2026-10-29",
+   "publisher": "services.thelist.tas.gov.au",
+   "publisher_test": [
+    "official",
+    "government host services.thelist.tas.gov.au"
+   ],
+   "queue_licence": "the LIST © State of Tasmania",
+   "queue_note": "",
+   "queue_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer",
+   "requests_used": 70,
+   "retry": true,
+   "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer|Public/TopographyAndRelief|services.thelist.tas.gov.au|the LIST © State of Tasmania||",
+   "terms": {
+    "about": "Topographic feature typically found on a map such as roads, contours, rivers, points of interest and railway lines. For Services Terms and Conditions, please see the LIST Web Services Terms and Conditions (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf) Topographic feat",
+    "class": "CREDIT",
+    "credit": " the LIST  State of Tasmania",
+    "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo",
+    "licence_text": "",
+    "line": "the LIST State of Tasmania the LIST © State of Tasmania",
+    "source": "item page",
+    "title": "TopographyAndRelief"
+   },
+   "test": "",
+   "title": "Public/TopographyAndRelief",
+   "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/21",
+   "ver": 1,
+   "verdict": "RETRY",
+   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+  },
+  {
+   "approved": null,
+   "area": "AU",
+   "closes": "not probed",
+   "from": "harvester",
+   "overlap": "",
+   "probe": {
+    "opened": false,
+    "service": {
+     "layers_listed": 61,
+     "polygon_layers": [
+      [
+       18,
+       "Wetlands"
+      ],
+      [
+       19,
+       "Coastal Flat and Salt Pan"
+      ],
+      [
+       20,
+       "Submerged Reef"
+      ],
+      [
+       21,
+       "Water Bodies - Submerged Trees"
+      ],
+      [
+       22,
+       "Water Bodies - Water Body and Watercourse [Major]"
+      ],
+      [
+       23,
+       "Water Bodies - Water Body and Watercourse [All]"
+      ],
+      [
+       27,
+       "Climate Futures LIDAR Coverage"
+      ],
+      [
+       35,
+       "Building Footprints"
+      ]
+     ],
+     "service_name": "Topographic feature typically found on a map such as roads, contours, rivers, points of interest and railway lines."
+    },
+    "status": "budget"
+   },
+   "probed": "2026-10-29",
+   "publisher": "services.thelist.tas.gov.au",
+   "publisher_test": [
+    "official",
+    "government host services.thelist.tas.gov.au"
+   ],
+   "queue_licence": "the LIST © State of Tasmania",
+   "queue_note": "",
+   "queue_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer",
+   "requests_used": 70,
+   "retry": true,
+   "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer|Public/TopographyAndRelief|services.thelist.tas.gov.au|the LIST © State of Tasmania||",
+   "terms": {
+    "about": "Topographic feature typically found on a map such as roads, contours, rivers, points of interest and railway lines. For Services Terms and Conditions, please see the LIST Web Services Terms and Conditions (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf) Topographic feat",
+    "class": "CREDIT",
+    "credit": " the LIST  State of Tasmania",
+    "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo",
+    "licence_text": "",
+    "line": "the LIST State of Tasmania the LIST © State of Tasmania",
+    "source": "item page",
+    "title": "TopographyAndRelief"
+   },
+   "test": "",
+   "title": "Public/TopographyAndRelief",
+   "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/22",
+   "ver": 1,
+   "verdict": "RETRY",
+   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+  },
+  {
+   "approved": null,
+   "area": "AU",
+   "closes": "not probed",
+   "from": "harvester",
+   "overlap": "",
+   "probe": {
+    "opened": false,
+    "service": {
+     "layers_listed": 61,
+     "polygon_layers": [
+      [
+       18,
+       "Wetlands"
+      ],
+      [
+       19,
+       "Coastal Flat and Salt Pan"
+      ],
+      [
+       20,
+       "Submerged Reef"
+      ],
+      [
+       21,
+       "Water Bodies - Submerged Trees"
+      ],
+      [
+       22,
+       "Water Bodies - Water Body and Watercourse [Major]"
+      ],
+      [
+       23,
+       "Water Bodies - Water Body and Watercourse [All]"
+      ],
+      [
+       27,
+       "Climate Futures LIDAR Coverage"
+      ],
+      [
+       35,
+       "Building Footprints"
+      ]
+     ],
+     "service_name": "Topographic feature typically found on a map such as roads, contours, rivers, points of interest and railway lines."
+    },
+    "status": "budget"
+   },
+   "probed": "2026-10-29",
+   "publisher": "services.thelist.tas.gov.au",
+   "publisher_test": [
+    "official",
+    "government host services.thelist.tas.gov.au"
+   ],
+   "queue_licence": "the LIST © State of Tasmania",
+   "queue_note": "",
+   "queue_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer",
+   "requests_used": 70,
+   "retry": true,
+   "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer|Public/TopographyAndRelief|services.thelist.tas.gov.au|the LIST © State of Tasmania||",
+   "terms": {
+    "about": "Topographic feature typically found on a map such as roads, contours, rivers, points of interest and railway lines. For Services Terms and Conditions, please see the LIST Web Services Terms and Conditions (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf) Topographic feat",
+    "class": "CREDIT",
+    "credit": " the LIST  State of Tasmania",
+    "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo",
+    "licence_text": "",
+    "line": "the LIST State of Tasmania the LIST © State of Tasmania",
+    "source": "item page",
+    "title": "TopographyAndRelief"
+   },
+   "test": "",
+   "title": "Public/TopographyAndRelief",
+   "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/23",
+   "ver": 1,
+   "verdict": "RETRY",
+   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+  },
+  {
+   "approved": null,
+   "area": "AU",
+   "closes": "not probed",
+   "from": "harvester",
+   "overlap": "",
+   "probe": {
+    "opened": false,
+    "service": {
+     "layers_listed": 61,
+     "polygon_layers": [
+      [
+       18,
+       "Wetlands"
+      ],
+      [
+       19,
+       "Coastal Flat and Salt Pan"
+      ],
+      [
+       20,
+       "Submerged Reef"
+      ],
+      [
+       21,
+       "Water Bodies - Submerged Trees"
+      ],
+      [
+       22,
+       "Water Bodies - Water Body and Watercourse [Major]"
+      ],
+      [
+       23,
+       "Water Bodies - Water Body and Watercourse [All]"
+      ],
+      [
+       27,
+       "Climate Futures LIDAR Coverage"
+      ],
+      [
+       35,
+       "Building Footprints"
+      ]
+     ],
+     "service_name": "Topographic feature typically found on a map such as roads, contours, rivers, points of interest and railway lines."
+    },
+    "status": "budget"
+   },
+   "probed": "2026-10-29",
+   "publisher": "services.thelist.tas.gov.au",
+   "publisher_test": [
+    "official",
+    "government host services.thelist.tas.gov.au"
+   ],
+   "queue_licence": "the LIST © State of Tasmania",
+   "queue_note": "",
+   "queue_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer",
+   "requests_used": 70,
+   "retry": true,
+   "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer|Public/TopographyAndRelief|services.thelist.tas.gov.au|the LIST © State of Tasmania||",
+   "terms": {
+    "about": "Topographic feature typically found on a map such as roads, contours, rivers, points of interest and railway lines. For Services Terms and Conditions, please see the LIST Web Services Terms and Conditions (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf) Topographic feat",
+    "class": "CREDIT",
+    "credit": " the LIST  State of Tasmania",
+    "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo",
+    "licence_text": "",
+    "line": "the LIST State of Tasmania the LIST © State of Tasmania",
+    "source": "item page",
+    "title": "TopographyAndRelief"
+   },
+   "test": "",
+   "title": "Public/TopographyAndRelief",
+   "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/27",
+   "ver": 1,
+   "verdict": "RETRY",
+   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+  },
+  {
+   "approved": null,
+   "area": "AU",
+   "closes": "not probed",
+   "from": "harvester",
+   "overlap": "",
+   "probe": {
+    "opened": false,
+    "service": {
+     "layers_listed": 61,
+     "polygon_layers": [
+      [
+       18,
+       "Wetlands"
+      ],
+      [
+       19,
+       "Coastal Flat and Salt Pan"
+      ],
+      [
+       20,
+       "Submerged Reef"
+      ],
+      [
+       21,
+       "Water Bodies - Submerged Trees"
+      ],
+      [
+       22,
+       "Water Bodies - Water Body and Watercourse [Major]"
+      ],
+      [
+       23,
+       "Water Bodies - Water Body and Watercourse [All]"
+      ],
+      [
+       27,
+       "Climate Futures LIDAR Coverage"
+      ],
+      [
+       35,
+       "Building Footprints"
+      ]
+     ],
+     "service_name": "Topographic feature typically found on a map such as roads, contours, rivers, points of interest and railway lines."
+    },
+    "status": "budget"
+   },
+   "probed": "2026-10-29",
+   "publisher": "services.thelist.tas.gov.au",
+   "publisher_test": [
+    "official",
+    "government host services.thelist.tas.gov.au"
+   ],
+   "queue_licence": "the LIST © State of Tasmania",
+   "queue_note": "",
+   "queue_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer",
+   "requests_used": 70,
+   "retry": true,
+   "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer|Public/TopographyAndRelief|services.thelist.tas.gov.au|the LIST © State of Tasmania||",
+   "terms": {
+    "about": "Topographic feature typically found on a map such as roads, contours, rivers, points of interest and railway lines. For Services Terms and Conditions, please see the LIST Web Services Terms and Conditions (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf) Topographic feat",
+    "class": "CREDIT",
+    "credit": " the LIST  State of Tasmania",
+    "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo",
+    "licence_text": "",
+    "line": "the LIST State of Tasmania the LIST © State of Tasmania",
+    "source": "item page",
+    "title": "TopographyAndRelief"
+   },
+   "test": "",
+   "title": "Public/TopographyAndRelief",
+   "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/35",
+   "ver": 1,
+   "verdict": "RETRY",
+   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+  },
+  {
+   "approved": null,
+   "area": "AU",
+   "closes": {
+    "by_name": 0,
+    "in_extent": 229,
+    "missing_in_area": 2871,
+    "n": 0,
+    "parks": [],
+    "pin_only": 0,
+    "tested": 60
+   },
+   "from": "harvester",
+   "overlap": "",
+   "probe": {
+    "copyright": "",
+    "count": 6,
+    "description": "Marine Reserves - No Fishing",
+    "extent": [
+     15947753.927,
+     -5973738.715,
+     17119898.69,
+     -4714510.455,
+     3857
+    ],
+    "fields": [
+     "OBJECTID",
+     "AREA_NAME",
+     "DESCRIPTION",
+     "MARINE_NATURE_RESERVE_NO_FISH",
+     "SHAPE"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "layer_name": "Marine Reserves - No Fishing",
+    "name_field": "AREA_NAME",
+    "opened": true,
+    "polygons": true,
+    "sample": [
+     "Ninepin Point Marine Nature Reserve",
+     "Port Davey/Bathurst Harbour Marine Nature Reserve - No Fishi",
+     "Maria Island Marine Nature Reserve - No Fishing Zone"
+    ],
+    "service": {
+     "layers_listed": 40,
+     "polygon_layers": [
+      [
+       1,
+       "Marine Reserves - No Fishing"
+      ],
+      [
+       3,
+       "Marine Reserves - Restricted Fishing"
+      ],
+      [
+       2,
+       "Marine Parks - No Fishing"
+      ],
+      [
+       4,
+       "Research Areas"
+      ],
+      [
+       5,
+       "Shark Refuge Areas"
+      ],
+      [
+       6,
+       "Abalone - No Take"
+      ],
+      [
+       7,
+       "Abalone - No Take or Possession"
+      ],
+      [
+       8,
+       "Rock Lobster - No Fishing"
+      ]
+     ],
+     "service_name": "<b>Service for WildFisheries<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
+    },
+    "service_item": ""
+   },
+   "probed": "2026-10-29",
+   "publisher": "services.thelist.tas.gov.au",
+   "publisher_test": [
+    "official",
+    "government host services.thelist.tas.gov.au"
+   ],
+   "queue_licence": "",
+   "queue_note": "",
+   "queue_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer",
+   "requests_used": 65,
+   "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer|Public/WildFisheries|services.thelist.tas.gov.au|||",
+   "terms": {
+    "about": "Service for WildFisheries For Services Terms and Conditions, please see the LIST Web Services Terms and Conditions (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf) Service for WildFisheries For Services Terms and Conditions, please see the LIST Web Services Terms and Co",
+    "class": "NOTHING STATED",
+    "credit": "",
+    "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/info/iteminfo",
+    "licence_text": "",
+    "line": "",
+    "source": "item page",
+    "title": "WildFisheries"
+   },
+   "test": "",
+   "title": "Public/WildFisheries",
+   "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/1",
+   "ver": 1,
+   "verdict": "ASK-THE-PUBLISHER",
+   "why": "nothing stated about use on the item page or the service"
+  },
+  {
+   "approved": null,
+   "area": "AU",
+   "closes": {
+    "by_name": 0,
+    "in_extent": 229,
+    "missing_in_area": 2871,
+    "n": 0,
+    "note": "stopped early (time or request budget)",
+    "parks": [],
+    "pin_only": 0,
+    "tested": 2
+   },
+   "from": "harvester",
+   "overlap": "",
+   "probe": {
+    "copyright": "",
+    "count": 2,
+    "description": "Marine Reserves - Restricted Fishing",
+    "extent": [
+     15947753.927,
+     -5973738.715,
+     17119898.69,
+     -4714510.455,
+     3857
+    ],
+    "fields": [
+     "OBJECTID",
+     "AREA_NAME",
+     "DESCRIPTION",
+     "MARINE_NATURE_RESERVE_RESTRICT",
+     "SHAPE"
+    ],
+    "geometry": "esriGeometryPolygon",
+    "kind": "arcgis-layer",
+    "layer_name": "Marine Reserves - Restricted Fishing",
+    "name_field": "AREA_NAME",
+    "opened": true,
+    "polygons": true,
+    "sample": [
+     "Kent Group Marine Nature Reserve - Restricted Fishing Zone",
+     "Port Davey Marine Nature Reserve "
+    ],
+    "service": {
+     "layers_listed": 40,
+     "polygon_layers": [
+      [
+       1,
+       "Marine Reserves - No Fishing"
+      ],
+      [
+       3,
+       "Marine Reserves - Restricted Fishing"
+      ],
+      [
+       2,
+       "Marine Parks - No Fishing"
+      ],
+      [
+       4,
+       "Research Areas"
+      ],
+      [
+       5,
+       "Shark Refuge Areas"
+      ],
+      [
+       6,
+       "Abalone - No Take"
+      ],
+      [
+       7,
+       "Abalone - No Take or Possession"
+      ],
+      [
+       8,
+       "Rock Lobster - No Fishing"
+      ]
+     ],
+     "service_name": "<b>Service for WildFisheries<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
+    },
+    "service_item": ""
+   },
+   "probed": "2026-10-29",
+   "publisher": "services.thelist.tas.gov.au",
+   "publisher_test": [
+    "official",
+    "government host services.thelist.tas.gov.au"
+   ],
+   "queue_licence": "",
+   "queue_note": "",
+   "queue_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer",
+   "requests_used": 70,
+   "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer|Public/WildFisheries|services.thelist.tas.gov.au|||",
+   "terms": {
+    "about": "Service for WildFisheries For Services Terms and Conditions, please see the LIST Web Services Terms and Conditions (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf) Service for WildFisheries For Services Terms and Conditions, please see the LIST Web Services Terms and Co",
+    "class": "NOTHING STATED",
+    "credit": "",
+    "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/info/iteminfo",
+    "licence_text": "",
+    "line": "",
+    "source": "item page",
+    "title": "WildFisheries"
+   },
+   "test": "",
+   "title": "Public/WildFisheries",
+   "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/3",
+   "ver": 1,
+   "verdict": "ASK-THE-PUBLISHER",
+   "why": "nothing stated about use on the item page or the service"
+  },
+  {
+   "approved": null,
+   "area": "AU",
+   "closes": "not probed",
+   "from": "harvester",
+   "overlap": "",
+   "probe": {
+    "opened": false,
+    "service": {
+     "layers_listed": 40,
+     "polygon_layers": [
+      [
+       1,
+       "Marine Reserves - No Fishing"
+      ],
+      [
+       3,
+       "Marine Reserves - Restricted Fishing"
+      ],
+      [
+       2,
+       "Marine Parks - No Fishing"
+      ],
+      [
+       4,
+       "Research Areas"
+      ],
+      [
+       5,
+       "Shark Refuge Areas"
+      ],
+      [
+       6,
+       "Abalone - No Take"
+      ],
+      [
+       7,
+       "Abalone - No Take or Possession"
+      ],
+      [
+       8,
+       "Rock Lobster - No Fishing"
+      ]
+     ],
+     "service_name": "<b>Service for WildFisheries<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
+    },
+    "status": "budget"
+   },
+   "probed": "2026-10-29",
+   "publisher": "services.thelist.tas.gov.au",
+   "publisher_test": [
+    "official",
+    "government host services.thelist.tas.gov.au"
+   ],
+   "queue_licence": "",
+   "queue_note": "",
+   "queue_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer",
+   "requests_used": 70,
+   "retry": true,
+   "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer|Public/WildFisheries|services.thelist.tas.gov.au|||",
+   "terms": {
+    "about": "Service for WildFisheries For Services Terms and Conditions, please see the LIST Web Services Terms and Conditions (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf) Service for WildFisheries For Services Terms and Conditions, please see the LIST Web Services Terms and Co",
+    "class": "NOTHING STATED",
+    "credit": "",
+    "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/info/iteminfo",
+    "licence_text": "",
+    "line": "",
+    "source": "item page",
+    "title": "WildFisheries"
+   },
+   "test": "",
+   "title": "Public/WildFisheries",
+   "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/2",
+   "ver": 1,
+   "verdict": "RETRY",
+   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+  },
+  {
+   "approved": null,
+   "area": "AU",
+   "closes": "not probed",
+   "from": "harvester",
+   "overlap": "",
+   "probe": {
+    "opened": false,
+    "service": {
+     "layers_listed": 40,
+     "polygon_layers": [
+      [
+       1,
+       "Marine Reserves - No Fishing"
+      ],
+      [
+       3,
+       "Marine Reserves - Restricted Fishing"
+      ],
+      [
+       2,
+       "Marine Parks - No Fishing"
+      ],
+      [
+       4,
+       "Research Areas"
+      ],
+      [
+       5,
+       "Shark Refuge Areas"
+      ],
+      [
+       6,
+       "Abalone - No Take"
+      ],
+      [
+       7,
+       "Abalone - No Take or Possession"
+      ],
+      [
+       8,
+       "Rock Lobster - No Fishing"
+      ]
+     ],
+     "service_name": "<b>Service for WildFisheries<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
+    },
+    "status": "budget"
+   },
+   "probed": "2026-10-29",
+   "publisher": "services.thelist.tas.gov.au",
+   "publisher_test": [
+    "official",
+    "government host services.thelist.tas.gov.au"
+   ],
+   "queue_licence": "",
+   "queue_note": "",
+   "queue_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer",
+   "requests_used": 70,
+   "retry": true,
+   "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer|Public/WildFisheries|services.thelist.tas.gov.au|||",
+   "terms": {
+    "about": "Service for WildFisheries For Services Terms and Conditions, please see the LIST Web Services Terms and Conditions (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf) Service for WildFisheries For Services Terms and Conditions, please see the LIST Web Services Terms and Co",
+    "class": "NOTHING STATED",
+    "credit": "",
+    "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/info/iteminfo",
+    "licence_text": "",
+    "line": "",
+    "source": "item page",
+    "title": "WildFisheries"
+   },
+   "test": "",
+   "title": "Public/WildFisheries",
+   "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/4",
+   "ver": 1,
+   "verdict": "RETRY",
+   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+  },
+  {
+   "approved": null,
+   "area": "AU",
+   "closes": "not probed",
+   "from": "harvester",
+   "overlap": "",
+   "probe": {
+    "opened": false,
+    "service": {
+     "layers_listed": 40,
+     "polygon_layers": [
+      [
+       1,
+       "Marine Reserves - No Fishing"
+      ],
+      [
+       3,
+       "Marine Reserves - Restricted Fishing"
+      ],
+      [
+       2,
+       "Marine Parks - No Fishing"
+      ],
+      [
+       4,
+       "Research Areas"
+      ],
+      [
+       5,
+       "Shark Refuge Areas"
+      ],
+      [
+       6,
+       "Abalone - No Take"
+      ],
+      [
+       7,
+       "Abalone - No Take or Possession"
+      ],
+      [
+       8,
+       "Rock Lobster - No Fishing"
+      ]
+     ],
+     "service_name": "<b>Service for WildFisheries<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
+    },
+    "status": "budget"
+   },
+   "probed": "2026-10-29",
+   "publisher": "services.thelist.tas.gov.au",
+   "publisher_test": [
+    "official",
+    "government host services.thelist.tas.gov.au"
+   ],
+   "queue_licence": "",
+   "queue_note": "",
+   "queue_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer",
+   "requests_used": 70,
+   "retry": true,
+   "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer|Public/WildFisheries|services.thelist.tas.gov.au|||",
+   "terms": {
+    "about": "Service for WildFisheries For Services Terms and Conditions, please see the LIST Web Services Terms and Conditions (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf) Service for WildFisheries For Services Terms and Conditions, please see the LIST Web Services Terms and Co",
+    "class": "NOTHING STATED",
+    "credit": "",
+    "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/info/iteminfo",
+    "licence_text": "",
+    "line": "",
+    "source": "item page",
+    "title": "WildFisheries"
+   },
+   "test": "",
+   "title": "Public/WildFisheries",
+   "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/5",
+   "ver": 1,
+   "verdict": "RETRY",
+   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+  },
+  {
+   "approved": null,
+   "area": "AU",
+   "closes": "not probed",
+   "from": "harvester",
+   "overlap": "",
+   "probe": {
+    "opened": false,
+    "service": {
+     "layers_listed": 40,
+     "polygon_layers": [
+      [
+       1,
+       "Marine Reserves - No Fishing"
+      ],
+      [
+       3,
+       "Marine Reserves - Restricted Fishing"
+      ],
+      [
+       2,
+       "Marine Parks - No Fishing"
+      ],
+      [
+       4,
+       "Research Areas"
+      ],
+      [
+       5,
+       "Shark Refuge Areas"
+      ],
+      [
+       6,
+       "Abalone - No Take"
+      ],
+      [
+       7,
+       "Abalone - No Take or Possession"
+      ],
+      [
+       8,
+       "Rock Lobster - No Fishing"
+      ]
+     ],
+     "service_name": "<b>Service for WildFisheries<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
+    },
+    "status": "budget"
+   },
+   "probed": "2026-10-29",
+   "publisher": "services.thelist.tas.gov.au",
+   "publisher_test": [
+    "official",
+    "government host services.thelist.tas.gov.au"
+   ],
+   "queue_licence": "",
+   "queue_note": "",
+   "queue_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer",
+   "requests_used": 70,
+   "retry": true,
+   "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer|Public/WildFisheries|services.thelist.tas.gov.au|||",
+   "terms": {
+    "about": "Service for WildFisheries For Services Terms and Conditions, please see the LIST Web Services Terms and Conditions (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf) Service for WildFisheries For Services Terms and Conditions, please see the LIST Web Services Terms and Co",
+    "class": "NOTHING STATED",
+    "credit": "",
+    "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/info/iteminfo",
+    "licence_text": "",
+    "line": "",
+    "source": "item page",
+    "title": "WildFisheries"
+   },
+   "test": "",
+   "title": "Public/WildFisheries",
+   "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/6",
+   "ver": 1,
+   "verdict": "RETRY",
+   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+  },
+  {
+   "approved": null,
+   "area": "AU",
+   "closes": "not probed",
+   "from": "harvester",
+   "overlap": "",
+   "probe": {
+    "opened": false,
+    "service": {
+     "layers_listed": 40,
+     "polygon_layers": [
+      [
+       1,
+       "Marine Reserves - No Fishing"
+      ],
+      [
+       3,
+       "Marine Reserves - Restricted Fishing"
+      ],
+      [
+       2,
+       "Marine Parks - No Fishing"
+      ],
+      [
+       4,
+       "Research Areas"
+      ],
+      [
+       5,
+       "Shark Refuge Areas"
+      ],
+      [
+       6,
+       "Abalone - No Take"
+      ],
+      [
+       7,
+       "Abalone - No Take or Possession"
+      ],
+      [
+       8,
+       "Rock Lobster - No Fishing"
+      ]
+     ],
+     "service_name": "<b>Service for WildFisheries<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
+    },
+    "status": "budget"
+   },
+   "probed": "2026-10-29",
+   "publisher": "services.thelist.tas.gov.au",
+   "publisher_test": [
+    "official",
+    "government host services.thelist.tas.gov.au"
+   ],
+   "queue_licence": "",
+   "queue_note": "",
+   "queue_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer",
+   "requests_used": 70,
+   "retry": true,
+   "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer|Public/WildFisheries|services.thelist.tas.gov.au|||",
+   "terms": {
+    "about": "Service for WildFisheries For Services Terms and Conditions, please see the LIST Web Services Terms and Conditions (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf) Service for WildFisheries For Services Terms and Conditions, please see the LIST Web Services Terms and Co",
+    "class": "NOTHING STATED",
+    "credit": "",
+    "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/info/iteminfo",
+    "licence_text": "",
+    "line": "",
+    "source": "item page",
+    "title": "WildFisheries"
+   },
+   "test": "",
+   "title": "Public/WildFisheries",
+   "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/7",
+   "ver": 1,
+   "verdict": "RETRY",
+   "why": "did not open (budget): probed again next run (failed 1 of 3)"
+  },
+  {
+   "approved": null,
+   "area": "AU",
+   "closes": "not probed",
+   "from": "harvester",
+   "overlap": "",
+   "probe": {
+    "opened": false,
+    "service": {
+     "layers_listed": 40,
+     "polygon_layers": [
+      [
+       1,
+       "Marine Reserves - No Fishing"
+      ],
+      [
+       3,
+       "Marine Reserves - Restricted Fishing"
+      ],
+      [
+       2,
+       "Marine Parks - No Fishing"
+      ],
+      [
+       4,
+       "Research Areas"
+      ],
+      [
+       5,
+       "Shark Refuge Areas"
+      ],
+      [
+       6,
+       "Abalone - No Take"
+      ],
+      [
+       7,
+       "Abalone - No Take or Possession"
+      ],
+      [
+       8,
+       "Rock Lobster - No Fishing"
+      ]
+     ],
+     "service_name": "<b>Service for WildFisheries<br><br>For Services Terms and Conditions, please see the<br><a href=\"http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf\" target=\"_blank\">LIST Web Services Terms and Conditions</a></b> (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf)"
+    },
+    "status": "budget"
+   },
+   "probed": "2026-10-29",
+   "publisher": "services.thelist.tas.gov.au",
+   "publisher_test": [
+    "official",
+    "government host services.thelist.tas.gov.au"
+   ],
+   "queue_licence": "",
+   "queue_note": "",
+   "queue_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer",
+   "requests_used": 70,
+   "retry": true,
+   "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer|Public/WildFisheries|services.thelist.tas.gov.au|||",
+   "terms": {
+    "about": "Service for WildFisheries For Services Terms and Conditions, please see the LIST Web Services Terms and Conditions (http://listdata.thelist.tas.gov.au/public/LISTWebServicesTermsConditions.pdf) Service for WildFisheries For Services Terms and Conditions, please see the LIST Web Services Terms and Co",
+    "class": "NOTHING STATED",
+    "credit": "",
+    "item_url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/info/iteminfo",
+    "licence_text": "",
+    "line": "",
+    "source": "item page",
+    "title": "WildFisheries"
+   },
+   "test": "",
+   "title": "Public/WildFisheries",
+   "url": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer/8",
+   "ver": 1,
+   "verdict": "RETRY",
+   "why": "did not open (budget): probed again next run (failed 1 of 3)"
   }
  ],
  "updated": "2026-10-29"

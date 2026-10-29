@@ -5,9 +5,9 @@
  },
  "last_run": "2026-10-29",
  "manners": {
-  "arcgis_exempt": 1654,
+  "arcgis_exempt": 1053,
   "errors": 0,
-  "requests": 1654,
+  "requests": 1053,
   "rested": 1,
   "robots": 0,
   "strikes": 0
@@ -75,9 +75,9 @@
    ]
   },
   "https://prostor4.gov.si/ows2-ins/ps/wfs": {
-   "fails": 2,
+   "fails": 3,
    "probed": "2026-10-29",
-   "retry": true,
+   "retry": false,
    "sig": "https://prostor4.gov.si/ows2-ins/ps/wfs?service=wfs&version=2.0.0&request=GetCapabilities|Slovenia protected areas (ARSO, INSPIRE PS WFS)|Agencija RS za okolje (ARSO) / Slovenian Environment Agency|ATOM feed rights: 'No limitations'|WFS (not ArcGIS): the host did not resolve from a GitHub runner on Oct 28 (DNS); ATOM download feed http://gis.arso.gov.si/related/atom/inspire/datafeeds/zav_obm_poli.xml (GML, 2021-12-10). Needs the typename read from GetCapabilities.|READY (WFS) or did-not-open",
    "verdicts": [
     "RETRY"
@@ -95,7 +95,7 @@
    ]
   },
   "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-29",
    "retry": true,
    "sig": "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer|Landgate_Public_Maps/Marine_Map_WA_3|public-services.slip.wa.gov.au|WALIS||",
@@ -161,7 +161,7 @@
    ]
   },
   "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-29",
    "retry": true,
    "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2011/MapServer|Public/ABS_2011|services.thelist.tas.gov.au|the LIST  State of Tasmania||",
@@ -177,7 +177,7 @@
    ]
   },
   "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2016/MapServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-29",
    "retry": true,
    "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/ABS_2016/MapServer|Public/ABS_2016|services.thelist.tas.gov.au|the LIST  State of Tasmania||",
@@ -193,7 +193,7 @@
    ]
   },
   "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrative/MapServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-29",
    "retry": true,
    "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrative/MapServer|Public/CadastreAndAdministrative|services.thelist.tas.gov.au|the LIST  &copy; State of Tasmania||",
@@ -209,7 +209,7 @@
    ]
   },
   "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrativeV2/MapServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-29",
    "retry": true,
    "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrativeV2/MapServer|Public/CadastreAndAdministrativeV2|services.thelist.tas.gov.au|||",
@@ -234,7 +234,7 @@
    ]
   },
   "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/EmergencyManagementPublic/MapServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-29",
    "retry": true,
    "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/EmergencyManagementPublic/MapServer|Public/EmergencyManagementPublic|services.thelist.tas.gov.au|the LIST  © State of Tasmania||",
@@ -250,7 +250,7 @@
    ]
   },
   "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Indexes/MapServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-29",
    "retry": true,
    "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Indexes/MapServer|Public/Indexes|services.thelist.tas.gov.au|the LIST  State of Tasmania||",
@@ -266,7 +266,7 @@
    ]
   },
   "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/MarineAndCoastal/MapServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-29",
    "retry": true,
    "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/MarineAndCoastal/MapServer|Public/MarineAndCoastal|services.thelist.tas.gov.au|the LIST  State of Tasmania||",
@@ -282,7 +282,7 @@
    ]
   },
   "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-29",
    "retry": true,
    "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer|Public/NVAdata|services.thelist.tas.gov.au|||",
@@ -296,7 +296,7 @@
    ]
   },
   "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-29",
    "retry": true,
    "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer|Public/NaturalEnvironment|services.thelist.tas.gov.au|the LIST  State of Tasmania||",
@@ -325,7 +325,7 @@
    ]
   },
   "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-29",
    "retry": true,
    "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer|Public/OpenDataWFS|services.thelist.tas.gov.au|the LIST  State of Tasmania||",
@@ -341,7 +341,7 @@
    ]
   },
   "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-29",
    "retry": true,
    "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer|Public/PWSPublic|services.thelist.tas.gov.au|the LIST  State of Tasmania||",
@@ -357,7 +357,7 @@
    ]
   },
   "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Planning/MapServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-29",
    "retry": true,
    "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/Planning/MapServer|Public/Planning|services.thelist.tas.gov.au|||",
@@ -380,6 +380,38 @@
    "verdicts": [
     "READY",
     "ASK-THE-PUBLISHER"
+   ]
+  },
+  "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer": {
+   "fails": 1,
+   "probed": "2026-10-29",
+   "retry": true,
+   "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer|Public/TopographyAndRelief|services.thelist.tas.gov.au|the LIST © State of Tasmania||",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY"
+   ]
+  },
+  "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer": {
+   "fails": 1,
+   "probed": "2026-10-29",
+   "retry": true,
+   "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer|Public/WildFisheries|services.thelist.tas.gov.au|||",
+   "verdicts": [
+    "ASK-THE-PUBLISHER",
+    "ASK-THE-PUBLISHER",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY"
    ]
   },
   "https://services1.arcgis.com/x5wCko8UnSi4h0CB/arcgis/rest/services/SCDNR_Managed_Lands_Public_Viewer/FeatureServer/0": {
@@ -430,7 +462,7 @@
    ]
   },
   "https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0": {
-   "fails": 4,
+   "fails": 5,
    "probed": "2026-10-29",
    "retry": false,
    "sig": "https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0|My favorite camping spots (a hobby map)|hobby account (personal map)||test row (h): a made-up hobby layer on a non-government account; the bot marks it RETRY (did not open) and after three runs sends the url to chat 9; a real hobby layer that opens is REJECT (not official)|REJECT or did-not-open",
@@ -440,17 +472,17 @@
   }
  },
  "stat": {
-  "ask": 8,
-  "did_not_open": 61,
+  "ask": 6,
+  "did_not_open": 73,
   "live_only": 0,
-  "probed": 129,
-  "ready": 20,
-  "reject": 38,
-  "retry": 61,
+  "probed": 120,
+  "ready": 13,
+  "reject": 27,
+  "retry": 73,
   "rows": 335,
-  "skipped_fresh": 9,
+  "skipped_fresh": 21,
   "tests_miss": 0,
   "tests_ok": 2,
-  "water_only": 2
+  "water_only": 1
  }
 }
