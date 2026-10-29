@@ -140,15 +140,22 @@ Source file: `data/truth/US-VA.json`
  "n": "Petersburg National Battlefield",
  "official": null,
  "ours": {
-  "acres": 3020,
+  "acres": 2702,
   "dissolved": {
    "after": 3020,
    "before": 6741,
    "copies": 1,
+   "families": {
+    "padus": 2702,
+    "sgvae": 318
+   },
+   "family_fold": 318,
+   "family_used": "padus",
    "parts": 57,
    "records": 64,
    "tracts": 6
   },
+  "family_fold": "layers {'padus': 2702, 'sgvae': 318}: one land in 2 layers, the padus copy used (318 ac of copies not added)",
   "manager": "",
   "note": "64 joined records = 6 tracts: 1 copies of a tract (same acres, another layer) and 57 fee tracts under a designation record folded; summed 6741 -> 3020 acres",
   "pieces": [
@@ -156,36 +163,6 @@ Source file: `data/truth/US-VA.json`
     3101,
     "Petersburg National Battlefield",
     2702,
-    "name"
-   ],
-   [
-    "sgvae491709",
-    "Petersburg National Battlefield Park",
-    185,
-    "name"
-   ],
-   [
-    "sgvae491774",
-    "Petersburg National Battlefield Park",
-    50,
-    "name"
-   ],
-   [
-    "sgvae492501",
-    "Petersburg National Battlefield Park",
-    49,
-    "name"
-   ],
-   [
-    "sgvae491757",
-    "Petersburg National Battlefield Park",
-    18,
-    "name"
-   ],
-   [
-    "sgvae491748",
-    "Petersburg National Battlefield Park",
-    16,
     "name"
    ]
   ],
@@ -335,6 +312,7 @@ Source file: `data/truth/US-VA.json`
 ## US-9968 Buller State Fish Hatchery
 ```json
 {
+ "cause": "agency bigger: our outline may miss a tract",
  "checked": "2026-10-29",
  "handover": [],
  "n": "Buller State Fish Hatchery",
@@ -349,15 +327,22 @@ Source file: `data/truth/US-VA.json`
   "why": "clean total"
  },
  "ours": {
-  "acres": 148,
+  "acres": 116,
   "dissolved": {
    "after": 148,
    "before": 264,
    "copies": 0,
+   "families": {
+    "padus": 116,
+    "sgvae": 32
+   },
+   "family_fold": 32,
+   "family_used": "padus",
    "parts": 2,
    "records": 4,
    "tracts": 2
   },
+  "family_fold": "layers {'padus': 116, 'sgvae': 32}: one land in 2 layers, the padus copy used (32 ac of copies not added)",
   "manager": "",
   "note": "4 joined records = 2 tracts: 0 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 264 -> 148 acres",
   "pieces": [
@@ -366,12 +351,6 @@ Source file: `data/truth/US-VA.json`
     "Buller Fish Hatchery",
     116,
     "name"
-   ],
-   [
-    "sgvae486787",
-    "Buller Fish Hatchery",
-    32,
-    "name"
    ]
   ],
   "pin": "inside",
@@ -379,11 +358,11 @@ Source file: `data/truth/US-VA.json`
   "unknown_pieces": 0
  },
  "owner_now": null,
- "pct": 1,
+ "pct": 21,
  "same_agency": false,
- "score": 8,
+ "score": 6,
  "t": "State Fish Hatchery",
- "verdict": "agree"
+ "verdict": "off"
 }
 ```
 
@@ -487,37 +466,14 @@ Source file: `data/truth/US-VA.json`
  "n": "Booker T. Washington National Monument",
  "official": null,
  "ours": {
-  "acres": 483,
+  "acres": 244,
+  "family_fold": "layers {'padus': 244, 'sgvae': 239}: one land in 2 layers, the padus copy used (239 ac of copies not added)",
   "manager": "",
   "pieces": [
    [
     3342,
     "Booker T. Washington National Monument",
     244,
-    "name"
-   ],
-   [
-    "sgvae491708",
-    "Booker T. Washington National Monument",
-    200,
-    "name"
-   ],
-   [
-    "sgvae491706",
-    "Booker T. Washington National Monument",
-    18,
-    "name"
-   ],
-   [
-    "sgvae491704",
-    "Booker T. Washington National Monument",
-    15,
-    "name"
-   ],
-   [
-    "sgvae491705",
-    "Booker T. Washington National Monument",
-    6,
     "name"
    ]
   ],
@@ -536,30 +492,36 @@ Source file: `data/truth/US-VA.json`
 ## US-1326 York River State Park
 ```json
 {
- "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
  "checked": "2026-10-29",
  "handover": [],
  "n": "York River State Park",
  "official": {
-  "acres": 525.0,
-  "as": "525 acre",
+  "acres": 2954.0,
+  "as": "2,954 acres",
   "clean": false,
-  "line": "AUNDRY None at this park. ENVIRONMENTAL EDUCATION CENTER Under development. SPECIAL FEATURES Taskinas Creek's 525-acre watershed is one of four sites along the York River designated as a Chesapeake Bay National Estuarine Researc",
+  "line": "e hour; Tidewater/Norfolk/Virginia Beach, one hour; Fredericksburg, two hours; Roanoke, five hours. Park Size 2,954 acres. Share this page Follow us Cabins, camping OVERNIGHT FACILITIES York River is a day-use park with no overnigh",
   "read": "2026-10-29",
-  "sent": "Taskinas Creek's 525-acre watershed is one of four sites along the York River designated as a Chesapeake Bay National Estuarine Research Reserve.",
+  "sent": "2,954 acres.",
   "url": "https://www.dcr.virginia.gov/state-parks/york-river",
-  "why": "total-looking"
+  "why": "no total words near it"
  },
  "ours": {
-  "acres": 5286,
+  "acres": 2910,
   "dissolved": {
    "after": 5286,
    "before": 11573,
    "copies": 7,
+   "families": {
+    "padus": 2376,
+    "sgvad": 2910
+   },
+   "family_fold": 2376,
+   "family_used": "sgvad",
    "parts": 0,
    "records": 12,
    "tracts": 5
   },
+  "family_fold": "layers {'sgvad': 2910, 'padus': 2376}: one land in 2 layers, the sgvad copy used (2,376 ac of copies not added)",
   "manager": "",
   "note": "12 joined records = 5 tracts: 7 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 11573 -> 5286 acres",
   "pieces": [
@@ -570,27 +532,9 @@ Source file: `data/truth/US-VA.json`
     "name"
    ],
    [
-    54692,
-    "York River State Park",
-    2286,
-    "name"
-   ],
-   [
     "sgvad293",
     "York River State Park",
     401,
-    "name"
-   ],
-   [
-    54690,
-    "York River State Park",
-    45,
-    "name"
-   ],
-   [
-    270692,
-    "York River State Park",
-    45,
     "name"
    ]
   ],
@@ -599,10 +543,10 @@ Source file: `data/truth/US-VA.json`
   "unknown_pieces": 0
  },
  "owner_now": null,
- "pct": 907,
+ "pct": 1,
  "same_agency": false,
- "score": 6,
+ "score": 8,
  "t": "State Park",
- "verdict": "off"
+ "verdict": "agree"
 }
 ```

@@ -2,15 +2,15 @@
  "about": "Park truth checker: official acreage vs our outline, handover hints, second-witness score. Review lists only: nothing here changes a key or a card.",
  "area": "US-VA",
  "counts": {
-  "agree": 40,
+  "agree": 65,
   "handover_hints": 16,
   "no_page": 0,
   "no_size": 40,
-  "off": 32,
+  "off": 16,
   "ours_unknown": 0,
   "parks": 184,
   "retired": 0,
-  "unsure": 44,
+  "unsure": 35,
   "weak": 4,
   "with_outline": 156
  },
@@ -21,24 +21,25 @@
    "n": "Colonial National Historical Park",
    "official": null,
    "ours": {
-    "acres": 18125,
+    "acres": 10244,
     "dissolved": {
      "after": 18125,
      "before": 19530,
      "copies": 0,
+     "families": {
+      "padus": 7881,
+      "sgvae": 10244
+     },
+     "family_fold": 7881,
+     "family_used": "sgvae",
      "parts": 10,
      "records": 18,
      "tracts": 8
     },
+    "family_fold": "layers {'padus': 7881, 'sgvae': 10244}: one land in 2 layers, the sgvae copy used (7,881 ac of copies not added)",
     "manager": "",
     "note": "18 joined records = 8 tracts: 0 copies of a tract (same acres, another layer) and 10 fee tracts under a designation record folded; summed 19530 -> 18125 acres",
     "pieces": [
-     [
-      3195,
-      "Colonial National Historical Park",
-      7881,
-      "name"
-     ],
      [
       "sgvae490681",
       "Colonial National Historical Park",
@@ -125,7 +126,7 @@
    },
    "sizes": [],
    "t": "National Historical Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-0019": {
@@ -254,11 +255,10 @@
     }
    ],
    "t": "National Historical Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-0064": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Shenandoah National Park",
@@ -273,15 +273,22 @@
     "why": "total-looking"
    },
    "ours": {
-    "acres": 364608,
+    "acres": 196637,
     "dissolved": {
      "after": 364608,
      "before": 366221,
      "copies": 5,
+     "families": {
+      "padus": 196637,
+      "sgvae": 167971
+     },
+     "family_fold": 167971,
+     "family_used": "padus",
      "parts": 24,
      "records": 164,
      "tracts": 135
     },
+    "family_fold": "layers {'padus': 196637, 'sgvae': 167971}: one land in 2 layers, the padus copy used (167,971 ac of copies not added)",
     "manager": "",
     "note": "164 joined records = 135 tracts: 5 copies of a tract (same acres, another layer) and 24 fee tracts under a designation record folded; summed 366221 -> 364608 acres",
     "pieces": [
@@ -292,45 +299,9 @@
       "name"
      ],
      [
-      "sgvae492329",
+      271117,
       "Shenandoah National Park",
-      37221,
-      "name"
-     ],
-     [
-      "sgvae492450",
-      "Shenandoah National Park",
-      36436,
-      "name"
-     ],
-     [
-      "sgvae492344",
-      "Shenandoah National Park",
-      27819,
-      "name"
-     ],
-     [
-      "sgvae492460",
-      "Shenandoah National Park",
-      17775,
-      "name"
-     ],
-     [
-      "sgvae492332",
-      "Shenandoah National Park",
-      13111,
-      "name"
-     ],
-     [
-      "sgvae492461",
-      "Shenandoah National Park",
-      8790,
-      "name"
-     ],
-     [
-      "sgvae492449",
-      "Shenandoah National Park",
-      3919,
+      847,
       "name"
      ]
     ],
@@ -362,13 +333,13 @@
      "why": "NPS news releases"
     }
    ],
-   "pct": 82,
+   "pct": 2,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -446,8 +417,8 @@
     }
    ],
    "t": "National Park",
-   "ver": 14,
-   "verdict": "off"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-0560": {
    "checked": "2026-10-29",
@@ -564,7 +535,7 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-0561": {
@@ -670,7 +641,7 @@
    },
    "sizes": [],
    "t": "National Wildlife Refuge",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-0562": {
@@ -688,15 +659,22 @@
    "n": "Eastern Shore of Virginia National Wildlife Refuge",
    "official": null,
    "ours": {
-    "acres": 1918,
+    "acres": 1327,
     "dissolved": {
      "after": 1918,
      "before": 4018,
      "copies": 1,
+     "families": {
+      "padus": 1327,
+      "sgvae": 591
+     },
+     "family_fold": 591,
+     "family_used": "padus",
      "parts": 41,
      "records": 50,
      "tracts": 8
     },
+    "family_fold": "layers {'padus': 1327, 'sgvae': 591}: one land in 2 layers, the padus copy used (591 ac of copies not added)",
     "manager": "",
     "note": "50 joined records = 8 tracts: 1 copies of a tract (same acres, another layer) and 41 fee tracts under a designation record folded; summed 4018 -> 1918 acres",
     "pieces": [
@@ -704,48 +682,6 @@
       3800,
       "Eastern Shore Of Virginia National Wildlife Refuge",
       1327,
-      "name"
-     ],
-     [
-      "sgvae490679",
-      "Eastern Shore of Virginia National Wildlife Refuge",
-      238,
-      "name"
-     ],
-     [
-      "sgvae490635",
-      "Eastern Shore of Virginia National Wildlife Refuge",
-      157,
-      "name"
-     ],
-     [
-      "sgvae490644",
-      "Eastern Shore of Virginia National Wildlife Refuge",
-      64,
-      "name"
-     ],
-     [
-      "sgvae490650",
-      "Eastern Shore of Virginia National Wildlife Refuge",
-      60,
-      "name"
-     ],
-     [
-      "sgvae490646",
-      "Eastern Shore of Virginia National Wildlife Refuge",
-      38,
-      "name"
-     ],
-     [
-      "sgvae490665",
-      "Eastern Shore of Virginia National Wildlife Refuge",
-      27,
-      "name"
-     ],
-     [
-      "sgvae490637",
-      "Eastern Shore of Virginia National Wildlife Refuge",
-      7,
       "name"
      ]
     ],
@@ -797,7 +733,7 @@
    },
    "sizes": [],
    "t": "National Wildlife Refuge",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-0563": {
@@ -825,15 +761,22 @@
     "why": "total-looking"
    },
    "ours": {
-    "acres": 2633,
+    "acres": 1468,
     "dissolved": {
      "after": 2633,
      "before": 5418,
      "copies": 1,
+     "families": {
+      "padus": 1468,
+      "sgvae": 1165
+     },
+     "family_fold": 1165,
+     "family_used": "padus",
      "parts": 24,
      "records": 35,
      "tracts": 10
     },
+    "family_fold": "layers {'padus': 1468, 'sgvae': 1165}: one land in 2 layers, the padus copy used (1,165 ac of copies not added)",
     "manager": "",
     "note": "35 joined records = 10 tracts: 1 copies of a tract (same acres, another layer) and 24 fee tracts under a designation record folded; summed 5418 -> 2633 acres",
     "pieces": [
@@ -842,48 +785,6 @@
       "Elizabeth Hartwell Mason Neck National Wildlife Refuge",
       1468,
       "name"
-     ],
-     [
-      "sgvae492286",
-      "Mason Neck National Wildlife Refuge",
-      789,
-      "words"
-     ],
-     [
-      "sgvae492287",
-      "Mason Neck National Wildlife Refuge",
-      174,
-      "words"
-     ],
-     [
-      "sgvae490445",
-      "Mason Neck National Wildlife Refuge",
-      105,
-      "words"
-     ],
-     [
-      "sgvae490440",
-      "Mason Neck National Wildlife Refuge",
-      83,
-      "words"
-     ],
-     [
-      "sgvae490428",
-      "Mason Neck National Wildlife Refuge",
-      4,
-      "words"
-     ],
-     [
-      "sgvae490434",
-      "Mason Neck National Wildlife Refuge",
-      4,
-      "words"
-     ],
-     [
-      "sgvae490439",
-      "Mason Neck National Wildlife Refuge",
-      4,
-      "words"
      ]
     ],
     "pin": "inside",
@@ -903,7 +804,7 @@
      "why": "about / history page of the park's site"
     }
    ],
-   "pct": 1172,
+   "pct": 609,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -933,7 +834,7 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-0564": {
@@ -952,7 +853,8 @@
     "why": "clean total"
    },
    "ours": {
-    "acres": 936,
+    "acres": 607,
+    "family_fold": "layers {'padus': 607, 'sgvae': 329}: one land in 2 layers, the padus copy used (329 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
@@ -962,21 +864,9 @@
       "name"
      ],
      [
-      "sgvae491850",
-      "Featherstone National Wildlife Refuge",
-      281,
-      "name"
-     ],
-     [
       4786,
       "Featherstone National Wildlife Refuge",
       268,
-      "name"
-     ],
-     [
-      "sgvae491851",
-      "Featherstone National Wildlife Refuge",
-      48,
       "name"
      ]
     ],
@@ -1008,7 +898,7 @@
      "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
     }
    ],
-   "pct": 188,
+   "pct": 87,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -1074,7 +964,7 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-0565": {
@@ -1084,7 +974,8 @@
    "n": "Fisherman Island National Wildlife Refuge",
    "official": null,
    "ours": {
-    "acres": 6147,
+    "acres": 3970,
+    "family_fold": "layers {'padus': 3970, 'sgvae': 2177}: one land in 2 layers, the padus copy used (2,177 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
@@ -1097,42 +988,6 @@
       3850,
       "Fisherman Island National Wildlife Refuge",
       1921,
-      "name"
-     ],
-     [
-      "sgvae490584",
-      "Fisherman Island National Wildlife Refuge",
-      698,
-      "name"
-     ],
-     [
-      "sgvae490585",
-      "Fisherman Island National Wildlife Refuge",
-      516,
-      "name"
-     ],
-     [
-      "sgvae490421",
-      "Fisherman Island National Wildlife Refuge",
-      502,
-      "name"
-     ],
-     [
-      "sgvae490583",
-      "Fisherman Island National Wildlife Refuge",
-      350,
-      "name"
-     ],
-     [
-      "sgvae490582",
-      "Fisherman Island National Wildlife Refuge",
-      82,
-      "name"
-     ],
-     [
-      "sgvae490586",
-      "Fisherman Island National Wildlife Refuge",
-      25,
       "name"
      ]
     ],
@@ -1158,11 +1013,10 @@
    },
    "sizes": [],
    "t": "National Wildlife Refuge",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-0566": {
-   "cause": "whole park compared (POTA lists it in 2 states: {'US-NC': 27628, 'US-VA': 166121})",
    "checked": "2026-10-29",
    "handover": [
     {
@@ -1175,31 +1029,38 @@
     }
    ],
    "n": "Great Dismal Swamp National Wildlife Refuge",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-NC': 27628, 'US-VA': 166121})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-NC': 27628, 'US-VA': 86451})",
    "official": {
-    "acres": 49097.0,
-    "as": "49,097 acres",
+    "acres": 113000.0,
+    "as": "113,000 acres",
     "clean": false,
-    "line": "ion of this resource began in 1973, when the Union Camp Corporation (a local forest products company) donated 49,097acres to The Nature Conservancy. The Nature Conservancy conveyed the donated land to the federal government, which,",
+    "line": "onal Wildlife Refuge contains some of the most important wildlife habitat in the mid-Atlantic region. At near 113,000 acres, the refuge is the largest intact remnant of a vast swamp that once covered more than one million acres. Lear",
     "read": "2026-10-29",
-    "sent": "Formal protection of this resource began in 1973, when the Union Camp Corporation (a local forest products company) donated 49,097acres to The Nature Conservancy.",
-    "url": "https://www.fws.gov/refuge/great-dismal-swamp/about-us",
-    "why": "no total words near it"
+    "sent": "At near 113,000 acres, the refuge is the largest intact remnant of a vast swamp that once covered more than one million acres.",
+    "url": "https://www.fws.gov/refuge/great_dismal_swamp/",
+    "why": "history"
    },
    "ours": {
-    "acres": 193749,
+    "acres": 114079,
     "acres_by_state": {
      "US-NC": 27628,
-     "US-VA": 166121
+     "US-VA": 86451
     },
     "dissolved": {
      "after": 166121,
      "before": 253119,
      "copies": 2,
+     "families": {
+      "padus": 86451,
+      "sgvae": 79670
+     },
+     "family_fold": 79670,
+     "family_used": "padus",
      "parts": 6,
      "records": 15,
      "tracts": 7
     },
+    "family_fold": "layers {'padus': 86451, 'sgvae': 79670}: one land in 2 layers, the padus copy used (79,670 ac of copies not added)",
     "manager": "",
     "note": "15 joined records = 7 tracts: 2 copies of a tract (same acres, another layer) and 6 fee tracts under a designation record folded; summed 253119 -> 166121 acres",
     "pieces": [
@@ -1207,42 +1068,6 @@
       4828,
       "Great Dismal Swamp National Wildlife Refuge",
       86451,
-      "name"
-     ],
-     [
-      "sgvae490548",
-      "Great Dismal Swamp National Wildlife Refuge",
-      78895,
-      "name"
-     ],
-     [
-      "sgvae492275",
-      "Great Dismal Swamp National Wildlife Refuge",
-      492,
-      "name"
-     ],
-     [
-      "sgvae490953",
-      "Great Dismal Swamp National Wildlife Refuge",
-      196,
-      "name"
-     ],
-     [
-      "sgvae490543",
-      "Great Dismal Swamp National Wildlife Refuge",
-      69,
-      "name"
-     ],
-     [
-      "sgvae490544",
-      "Great Dismal Swamp National Wildlife Refuge",
-      9,
-      "name"
-     ],
-     [
-      "sgvae492284",
-      "Great Dismal Swamp National Wildlife Refuge",
-      9,
       "name"
      ]
     ],
@@ -1289,13 +1114,13 @@
      "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
     }
    ],
-   "pct": 295,
+   "pct": 1,
    "same_agency": false,
-   "score": 7,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -1337,8 +1162,8 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 14,
-   "verdict": "unsure"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-0567": {
    "checked": "2026-10-29",
@@ -1438,7 +1263,7 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-0569": {
@@ -1552,7 +1377,7 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-0572": {
@@ -1562,15 +1387,22 @@
    "n": "Rappahannock River Valley National Wildlife Refuge",
    "official": null,
    "ours": {
-    "acres": 12524,
+    "acres": 7664,
     "dissolved": {
      "after": 12524,
      "before": 25158,
      "copies": 1,
+     "families": {
+      "padus": 7664,
+      "sgvae": 4860
+     },
+     "family_fold": 4860,
+     "family_used": "padus",
      "parts": 43,
      "records": 52,
      "tracts": 8
     },
+    "family_fold": "layers {'padus': 7664, 'sgvae': 4860}: one land in 2 layers, the padus copy used (4,860 ac of copies not added)",
     "manager": "",
     "note": "52 joined records = 8 tracts: 1 copies of a tract (same acres, another layer) and 43 fee tracts under a designation record folded; summed 25158 -> 12524 acres",
     "pieces": [
@@ -1578,48 +1410,6 @@
       5216,
       "Rappahannock River Valley National Wildlife Refuge",
       7664,
-      "name"
-     ],
-     [
-      "sgvae490138",
-      "Rappahannock River Valley National Wildlife Refuge",
-      1022,
-      "name"
-     ],
-     [
-      "sgvae490145",
-      "Rappahannock River Valley National Wildlife Refuge",
-      947,
-      "name"
-     ],
-     [
-      "sgvae490144",
-      "Rappahannock River Valley National Wildlife Refuge",
-      847,
-      "name"
-     ],
-     [
-      "sgvae495436",
-      "Rappahannock River Valley National Wildlife Refuge",
-      816,
-      "name"
-     ],
-     [
-      "sgvae490149",
-      "Rappahannock River Valley National Wildlife Refuge",
-      719,
-      "name"
-     ],
-     [
-      "sgvae495435",
-      "Rappahannock River Valley National Wildlife Refuge",
-      257,
-      "name"
-     ],
-     [
-      "sgvae491852",
-      "Rappahannock River Valley National Wildlife Refuge",
-      252,
       "name"
      ]
     ],
@@ -1708,7 +1498,7 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-0573": {
@@ -1718,15 +1508,22 @@
    "n": "Wallops Island National Wildlife Refuge",
    "official": null,
    "ours": {
-    "acres": 733,
+    "acres": 373,
     "dissolved": {
      "after": 733,
      "before": 1093,
      "copies": 1,
+     "families": {
+      "padus": 360,
+      "sgvae": 373
+     },
+     "family_fold": 360,
+     "family_used": "sgvae",
      "parts": 0,
      "records": 3,
      "tracts": 2
     },
+    "family_fold": "layers {'sgvae': 373, 'padus': 360}: one land in 2 layers, the sgvae copy used (360 ac of copies not added)",
     "manager": "",
     "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1093 -> 733 acres",
     "pieces": [
@@ -1734,12 +1531,6 @@
       "sgvae490625",
       "Wallops Island National Wildlife Refuge",
       373,
-      "name"
-     ],
-     [
-      4448,
-      "Wallops Island National Wildlife Refuge",
-      360,
       "name"
      ]
     ],
@@ -1775,7 +1566,7 @@
    },
    "sizes": [],
    "t": "National Wildlife Refuge",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-0577": {
@@ -1794,15 +1585,22 @@
     "why": "clean total"
    },
    "ours": {
-    "acres": 1126,
+    "acres": 620,
     "dissolved": {
      "after": 1126,
      "before": 4084,
      "copies": 24,
+     "families": {
+      "padus": 506,
+      "sgvad": 620
+     },
+     "family_fold": 506,
+     "family_used": "sgvad",
      "parts": 11,
      "records": 41,
      "tracts": 6
     },
+    "family_fold": "layers {'sgvad': 620, 'padus': 506}: one land in 2 layers, the sgvad copy used (506 ac of copies not added)",
     "manager": "",
     "note": "41 joined records = 6 tracts: 24 copies of a tract (same acres, another layer) and 11 fee tracts under a designation record folded; summed 4084 -> 1126 acres",
     "pieces": [
@@ -1813,33 +1611,9 @@
       "name"
      ],
      [
-      54557,
-      "Clinch River State Park",
-      271,
-      "name"
-     ],
-     [
-      54556,
-      "Clinch River State Park",
-      233,
-      "name"
-     ],
-     [
       "sgvad403",
       "Clinch River State Park",
       185,
-      "name"
-     ],
-     [
-      271167,
-      "Clinch River State Park",
-      1,
-      "name"
-     ],
-     [
-      271168,
-      "Clinch River State Park",
-      1,
       "name"
      ]
     ],
@@ -1860,7 +1634,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 182,
+   "pct": 55,
    "same_agency": false,
    "score": 5,
    "score_parts": {
@@ -1908,7 +1682,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-0670": {
@@ -1985,33 +1759,28 @@
    },
    "sizes": [],
    "t": "Memorial Parkway",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-0671": {
    "checked": "2026-10-29",
    "handover": [],
    "n": "Assateague Island National Seashore",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-MD': 26977, 'US-VA': 33174})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-MD': 26977, 'US-VA': 20366})",
    "official": null,
    "ours": {
-    "acres": 60151,
+    "acres": 47343,
     "acres_by_state": {
      "US-MD": 26977,
-     "US-VA": 33174
+     "US-VA": 20366
     },
+    "family_fold": "layers {'padus': 20366, 'sgvae': 12808}: one land in 2 layers, the padus copy used (12,808 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
       3322,
       "Assateague Island National Seashore",
       20366,
-      "name"
-     ],
-     [
-      "sgvae490557",
-      "Assateague Island National Seashore",
-      12808,
       "name"
      ]
     ],
@@ -2063,7 +1832,7 @@
    },
    "sizes": [],
    "t": "National Seashore",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-0691": {
@@ -2072,15 +1841,22 @@
    "n": "Prince William Forest Park",
    "official": null,
    "ours": {
-    "acres": 25080,
+    "acres": 12589,
     "dissolved": {
      "after": 25080,
      "before": 25143,
      "copies": 0,
+     "families": {
+      "padus": 12589,
+      "sgvae": 12491
+     },
+     "family_fold": 12491,
+     "family_used": "padus",
      "parts": 12,
      "records": 16,
      "tracts": 4
     },
+    "family_fold": "layers {'padus': 12589, 'sgvae': 12491}: one land in 2 layers, the padus copy used (12,491 ac of copies not added)",
     "manager": "",
     "note": "16 joined records = 4 tracts: 0 copies of a tract (same acres, another layer) and 12 fee tracts under a designation record folded; summed 25143 -> 25080 acres",
     "pieces": [
@@ -2088,24 +1864,6 @@
       3540,
       "Prince William Forest Park",
       12589,
-      "name"
-     ],
-     [
-      "sgvae491471",
-      "Prince William Forest Park",
-      10775,
-      "name"
-     ],
-     [
-      "sgvae490607",
-      "Prince William Forest Park",
-      1695,
-      "name"
-     ],
-     [
-      "sgvae491477",
-      "Prince William Forest Park",
-      21,
       "name"
      ]
     ],
@@ -2152,7 +1910,7 @@
    },
    "sizes": [],
    "t": "Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-0692": {
@@ -2214,7 +1972,7 @@
    },
    "sizes": [],
    "t": "National Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-0707": {
@@ -2223,15 +1981,22 @@
    "n": "Petersburg National Battlefield",
    "official": null,
    "ours": {
-    "acres": 3020,
+    "acres": 2702,
     "dissolved": {
      "after": 3020,
      "before": 6741,
      "copies": 1,
+     "families": {
+      "padus": 2702,
+      "sgvae": 318
+     },
+     "family_fold": 318,
+     "family_used": "padus",
      "parts": 57,
      "records": 64,
      "tracts": 6
     },
+    "family_fold": "layers {'padus': 2702, 'sgvae': 318}: one land in 2 layers, the padus copy used (318 ac of copies not added)",
     "manager": "",
     "note": "64 joined records = 6 tracts: 1 copies of a tract (same acres, another layer) and 57 fee tracts under a designation record folded; summed 6741 -> 3020 acres",
     "pieces": [
@@ -2239,36 +2004,6 @@
       3101,
       "Petersburg National Battlefield",
       2702,
-      "name"
-     ],
-     [
-      "sgvae491709",
-      "Petersburg National Battlefield Park",
-      185,
-      "name"
-     ],
-     [
-      "sgvae491774",
-      "Petersburg National Battlefield Park",
-      50,
-      "name"
-     ],
-     [
-      "sgvae492501",
-      "Petersburg National Battlefield Park",
-      49,
-      "name"
-     ],
-     [
-      "sgvae491757",
-      "Petersburg National Battlefield Park",
-      18,
-      "name"
-     ],
-     [
-      "sgvae491748",
-      "Petersburg National Battlefield Park",
-      16,
       "name"
      ]
     ],
@@ -2320,7 +2055,7 @@
    },
    "sizes": [],
    "t": "National Battlefield",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-0712": {
@@ -2338,15 +2073,10 @@
    "n": "Manassas National Battlefield",
    "official": null,
    "ours": {
-    "acres": 8912,
+    "acres": 4493,
+    "family_fold": "layers {'padus': 4419, 'sgvae': 4493}: one land in 2 layers, the sgvae copy used (4,419 ac of copies not added)",
     "manager": "",
     "pieces": [
-     [
-      3106,
-      "Manassas National Battlefield Park",
-      4419,
-      "name"
-     ],
      [
       "sgvae491612",
       "Manassas National Battlefield Park",
@@ -2387,6 +2117,12 @@
       "sgvae491597",
       "Manassas National Battlefield Park",
       171,
+      "name"
+     ],
+     [
+      "sgvae491623",
+      "Manassas National Battlefield Park",
+      157,
       "name"
      ]
     ],
@@ -2438,7 +2174,7 @@
    },
    "sizes": [],
    "t": "National Battlefield",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-0713": {
@@ -2447,15 +2183,22 @@
    "n": "Richmond National Battlefield",
    "official": null,
    "ours": {
-    "acres": 5623,
+    "acres": 4126,
     "dissolved": {
      "after": 5623,
      "before": 9100,
      "copies": 1,
+     "families": {
+      "padus": 4126,
+      "sgvae": 1497
+     },
+     "family_fold": 1497,
+     "family_used": "padus",
      "parts": 40,
      "records": 48,
      "tracts": 7
     },
+    "family_fold": "layers {'padus': 4126, 'sgvae': 1497}: one land in 2 layers, the padus copy used (1,497 ac of copies not added)",
     "manager": "",
     "note": "48 joined records = 7 tracts: 1 copies of a tract (same acres, another layer) and 40 fee tracts under a designation record folded; summed 9100 -> 5623 acres",
     "pieces": [
@@ -2463,42 +2206,6 @@
       3107,
       "Richmond National Battlefield Park",
       4126,
-      "name"
-     ],
-     [
-      "sgvae491539",
-      "Richmond National Battlefield Park",
-      888,
-      "name"
-     ],
-     [
-      "sgvae491542",
-      "Richmond National Battlefield Park",
-      243,
-      "name"
-     ],
-     [
-      "sgvae491789",
-      "Richmond National Battlefield Park",
-      139,
-      "name"
-     ],
-     [
-      "sgvae491788",
-      "Richmond National Battlefield Park",
-      96,
-      "name"
-     ],
-     [
-      "sgvae491095",
-      "Richmond National Battlefield Park",
-      92,
-      "name"
-     ],
-     [
-      "sgvae491530",
-      "Richmond National Battlefield Park",
-      39,
       "name"
      ]
     ],
@@ -2550,7 +2257,7 @@
    },
    "sizes": [],
    "t": "National Battlefield",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-0717": {
@@ -2612,7 +2319,7 @@
    },
    "sizes": [],
    "t": "National Military Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-0726": {
@@ -2621,15 +2328,22 @@
    "n": "Appomattox Court House National Historical Park",
    "official": null,
    "ours": {
-    "acres": 2951,
+    "acres": 1702,
     "dissolved": {
      "after": 2951,
      "before": 3518,
      "copies": 0,
+     "families": {
+      "padus": 1702,
+      "sgvae": 1249
+     },
+     "family_fold": 1249,
+     "family_used": "padus",
      "parts": 28,
      "records": 35,
      "tracts": 7
     },
+    "family_fold": "layers {'padus': 1702, 'sgvae': 1249}: one land in 2 layers, the padus copy used (1,249 ac of copies not added)",
     "manager": "",
     "note": "35 joined records = 7 tracts: 0 copies of a tract (same acres, another layer) and 28 fee tracts under a designation record folded; summed 3518 -> 2951 acres",
     "pieces": [
@@ -2637,42 +2351,6 @@
       3185,
       "Appomattox Court House National Historical Park",
       1702,
-      "name"
-     ],
-     [
-      "sgvae491578",
-      "Appomattox Court House National Historical Park",
-      961,
-      "name"
-     ],
-     [
-      "sgvae491550",
-      "Appomattox Court House National Historical Park",
-      192,
-      "name"
-     ],
-     [
-      "sgvae491559",
-      "Appomattox Court House National Historical Park",
-      69,
-      "name"
-     ],
-     [
-      "sgvae491562",
-      "Appomattox Court House National Historical Park",
-      23,
-      "name"
-     ],
-     [
-      "sgvae491563",
-      "Appomattox Court House National Historical Park",
-      2,
-      "name"
-     ],
-     [
-      "sgvae491570",
-      "Appomattox Court House National Historical Park",
-      2,
       "name"
      ]
     ],
@@ -2724,7 +2402,7 @@
    },
    "sizes": [],
    "t": "National Historical Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-0730": {
@@ -2733,15 +2411,22 @@
    "n": "Cedar Creek and Belle Grove National Historical Park",
    "official": null,
    "ours": {
-    "acres": 187,
+    "acres": 128,
     "dissolved": {
      "after": 187,
      "before": 240,
      "copies": 0,
+     "families": {
+      "padus": 128,
+      "sgvae": 59
+     },
+     "family_fold": 59,
+     "family_used": "padus",
      "parts": 6,
      "records": 11,
      "tracts": 5
     },
+    "family_fold": "layers {'padus': 128, 'sgvae': 59}: one land in 2 layers, the padus copy used (59 ac of copies not added)",
     "manager": "",
     "note": "11 joined records = 5 tracts: 0 copies of a tract (same acres, another layer) and 6 fee tracts under a designation record folded; summed 240 -> 187 acres",
     "pieces": [
@@ -2749,30 +2434,6 @@
       3190,
       "Cedar Creek and Belle Grove National Historical Park",
       128,
-      "name"
-     ],
-     [
-      "sgvae491102",
-      "Cedar Creek and Belle Grove National Historical Park",
-      43,
-      "name"
-     ],
-     [
-      "sgvae491843",
-      "Cedar Creek and Belle Grove National Historical Park",
-      10,
-      "name"
-     ],
-     [
-      "sgvae491798",
-      "Cedar Creek and Belle Grove National Historical Park",
-      5,
-      "name"
-     ],
-     [
-      "sgvae491784",
-      "Cedar Creek and Belle Grove National Historical Park",
-      1,
       "name"
      ]
     ],
@@ -2819,52 +2480,29 @@
    },
    "sizes": [],
    "t": "National Historical Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-0735": {
    "checked": "2026-10-29",
    "handover": [],
    "n": "Harpers Ferry National Historical Park",
-   "note": "whole park compared (POTA lists it in 3 states: {'US-MD': 798, 'US-WV': 2184, 'US-VA': 969})",
+   "note": "whole park compared (POTA lists it in 3 states: {'US-MD': 798, 'US-WV': 2184, 'US-VA': 488})",
    "official": null,
    "ours": {
-    "acres": 3951,
+    "acres": 3470,
     "acres_by_state": {
      "US-MD": 798,
-     "US-VA": 969,
+     "US-VA": 488,
      "US-WV": 2184
     },
+    "family_fold": "layers {'padus': 488, 'sgvae': 481}: one land in 2 layers, the padus copy used (481 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
       3206,
       "Harpers Ferry National Historical Park",
       488,
-      "name"
-     ],
-     [
-      "sgvae491780",
-      "Harpers Ferry National Historical Park",
-      370,
-      "name"
-     ],
-     [
-      "sgvae491781",
-      "Harpers Ferry National Historical Park",
-      86,
-      "name"
-     ],
-     [
-      "sgvae491783",
-      "Harpers Ferry National Historical Park",
-      14,
-      "name"
-     ],
-     [
-      "sgvae491782",
-      "Harpers Ferry National Historical Park",
-      11,
       "name"
      ]
     ],
@@ -2922,7 +2560,7 @@
    },
    "sizes": [],
    "t": "National Historical Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-0844": {
@@ -2998,7 +2636,7 @@
    },
    "sizes": [],
    "t": "National Historic Site",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-0905": {
@@ -3008,37 +2646,14 @@
    "n": "Booker T. Washington National Monument",
    "official": null,
    "ours": {
-    "acres": 483,
+    "acres": 244,
+    "family_fold": "layers {'padus': 244, 'sgvae': 239}: one land in 2 layers, the padus copy used (239 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
       3342,
       "Booker T. Washington National Monument",
       244,
-      "name"
-     ],
-     [
-      "sgvae491708",
-      "Booker T. Washington National Monument",
-      200,
-      "name"
-     ],
-     [
-      "sgvae491706",
-      "Booker T. Washington National Monument",
-      18,
-      "name"
-     ],
-     [
-      "sgvae491704",
-      "Booker T. Washington National Monument",
-      15,
-      "name"
-     ],
-     [
-      "sgvae491705",
-      "Booker T. Washington National Monument",
-      6,
       "name"
      ]
     ],
@@ -3109,7 +2724,7 @@
     }
    ],
    "t": "National Monument",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-0929": {
@@ -3118,19 +2733,14 @@
    "n": "Fort Monroe National Monument",
    "official": null,
    "ours": {
-    "acres": 687,
+    "acres": 565,
+    "family_fold": "layers {'sgvae': 565, 'padus': 122}: one land in 2 layers, the sgvae copy used (122 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
       "sgvae490590",
       "Fort Monroe National Monument",
       565,
-      "name"
-     ],
-     [
-      3370,
-      "Fort Monroe National Monument",
-      122,
       "name"
      ]
     ],
@@ -3177,11 +2787,10 @@
    },
    "sizes": [],
    "t": "National Monument",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-0935": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "George Washington Birthplace National Monument",
@@ -3196,19 +2805,14 @@
     "why": "total-looking"
    },
    "ours": {
-    "acres": 1031,
+    "acres": 556,
+    "family_fold": "layers {'padus': 556, 'sgvae': 475}: one land in 2 layers, the padus copy used (475 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
       3376,
       "George Washington Birthplace National Monument",
       556,
-      "name"
-     ],
-     [
-      "sgvae490556",
-      "George Washington Birthplace National Monument",
-      475,
       "name"
      ]
     ],
@@ -3240,13 +2844,13 @@
      "why": "NPS news releases"
     }
    ],
-   "pct": 87,
+   "pct": 1,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -3261,8 +2865,8 @@
     }
    ],
    "t": "National Monument",
-   "ver": 14,
-   "verdict": "off"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-10015": {
    "checked": "2026-10-29",
@@ -3328,7 +2932,7 @@
     }
    ],
    "t": "Wildlife Refuge",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-10507": {
@@ -3338,11 +2942,10 @@
    "ours": null,
    "score": null,
    "t": "National Recreation Trail",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-11672": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Harrison Lake National Fish Hatchery",
@@ -3357,15 +2960,22 @@
     "why": "clean total"
    },
    "ours": {
-    "acres": 733,
+    "acres": 400,
     "dissolved": {
      "after": 733,
      "before": 1129,
      "copies": 1,
+     "families": {
+      "padus": 400,
+      "sgvae": 333
+     },
+     "family_fold": 333,
+     "family_used": "padus",
      "parts": 0,
      "records": 7,
      "tracts": 6
     },
+    "family_fold": "layers {'padus': 400, 'sgvae': 333}: one land in 2 layers, the padus copy used (333 ac of copies not added)",
     "manager": "",
     "note": "7 joined records = 6 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1129 -> 733 acres",
     "pieces": [
@@ -3373,36 +2983,6 @@
       3926,
       "Harrison Lake National Fish Hatchery",
       400,
-      "name"
-     ],
-     [
-      "sgvae491822",
-      "Harrison Lake National Fish Hatchery",
-      180,
-      "name"
-     ],
-     [
-      "sgvae490602",
-      "Harrison Lake National Fish Hatchery",
-      125,
-      "name"
-     ],
-     [
-      "sgvae491824",
-      "Harrison Lake National Fish Hatchery",
-      16,
-      "name"
-     ],
-     [
-      "sgvae491823",
-      "Harrison Lake National Fish Hatchery",
-      11,
-      "name"
-     ],
-     [
-      "sgvae491825",
-      "Harrison Lake National Fish Hatchery",
-      1,
       "name"
      ]
     ],
@@ -3424,13 +3004,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 65,
+   "pct": 10,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -3454,8 +3034,8 @@
     }
    ],
    "t": "National Fish Hatchery",
-   "ver": 14,
-   "verdict": "off"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-11719": {
    "checked": "2026-10-29",
@@ -3555,7 +3135,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-12716": {
@@ -3642,7 +3222,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-1290": {
@@ -3769,43 +3349,43 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-1291": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Belle Isle State Park",
    "official": {
-    "acres": 33.0,
-    "as": "33 acre",
+    "acres": 892.0,
+    "as": "892 acres",
     "clean": false,
-    "line": "f Belle Isle's overnight accommodations . Lodges | Bunkhouse | Camping Lodges The Bel Air Overnight Area is a 33-acre peninsula of land at the mouth of Deep Creek in Lancaster County. Views of beautiful sunsets over the Rappaha",
+    "line": "a: two hours; Richmond: two hours; Tidewater/Norfolk/Virginia Beach: two hours; Roanoke: five hours Park Size 892 acres. Share this page Follow us Cabins, camping OVERNIGHT FACILITIES Bel Air Overnight Area (Bel Air house and Gue",
     "read": "2026-10-29",
-    "sent": "The Bel Air Overnight Area is a 33-acre peninsula of land at the mouth of Deep Creek in Lancaster County.",
+    "sent": "892 acres.",
     "url": "https://www.dcr.virginia.gov/state-parks/belle-isle",
-    "why": "total-looking"
+    "why": "no total words near it"
    },
    "ours": {
-    "acres": 1601,
+    "acres": 866,
     "dissolved": {
      "after": 1601,
      "before": 3508,
      "copies": 11,
+     "families": {
+      "padus": 866,
+      "sgvad": 735
+     },
+     "family_fold": 735,
+     "family_used": "padus",
      "parts": 4,
      "records": 21,
      "tracts": 6
     },
+    "family_fold": "layers {'sgvad': 735, 'padus': 866}: one land in 2 layers, the padus copy used (735 ac of copies not added)",
     "manager": "",
     "note": "21 joined records = 6 tracts: 11 copies of a tract (same acres, another layer) and 4 fee tracts under a designation record folded; summed 3508 -> 1601 acres",
     "pieces": [
-     [
-      "sgvad381",
-      "Belle Isle State Park",
-      702,
-      "name"
-     ],
      [
       54546,
       "Belle Isle State Park",
@@ -3816,12 +3396,6 @@
       270607,
       "Belle Isle State Park",
       187,
-      "name"
-     ],
-     [
-      "sgvad386",
-      "Belle Isle State Park",
-      33,
       "name"
      ],
      [
@@ -3854,13 +3428,13 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 4752,
+   "pct": 3,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -3884,8 +3458,8 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
-   "verdict": "off"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-1292": {
    "checked": "2026-10-29",
@@ -3893,15 +3467,22 @@
    "n": "Breaks Interstate State Park",
    "official": null,
    "ours": {
-    "acres": 4002,
+    "acres": 3056,
     "dissolved": {
      "after": 4002,
      "before": 4948,
      "copies": 1,
+     "families": {
+      "padus": 3056,
+      "sgvad": 946
+     },
+     "family_fold": 946,
+     "family_used": "padus",
      "parts": 0,
      "records": 3,
      "tracts": 2
     },
+    "family_fold": "layers {'padus': 3056, 'sgvad': 946}: one land in 2 layers, the padus copy used (946 ac of copies not added)",
     "manager": "",
     "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 4948 -> 4002 acres",
     "pieces": [
@@ -3909,12 +3490,6 @@
       201467,
       "Breaks Interstate Park",
       3056,
-      "name"
-     ],
-     [
-      "sgvad319",
-      "Breaks Interstate Park",
-      946,
       "name"
      ]
     ],
@@ -3950,11 +3525,10 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-1293": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 2,587 acres, no total words near it)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Caledon State Park",
@@ -3969,15 +3543,23 @@
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 3074,
+    "acres": 2587,
     "dissolved": {
      "after": 3074,
      "before": 11337,
      "copies": 7,
+     "families": {
+      "padus": 16,
+      "sgvad": 471,
+      "sgvae": 2587
+     },
+     "family_fold": 487,
+     "family_used": "sgvae",
      "parts": 4,
      "records": 16,
      "tracts": 5
     },
+    "family_fold": "layers {'sgvae': 2587, 'sgvad': 471, 'padus': 16}: one land in 3 layers, the sgvae copy used (487 ac of copies not added)",
     "manager": "",
     "note": "16 joined records = 5 tracts: 7 copies of a tract (same acres, another layer) and 4 fee tracts under a designation record folded; summed 11337 -> 3074 acres",
     "pieces": [
@@ -3985,30 +3567,6 @@
       "sgvae486621",
       "Caledon State Park",
       2587,
-      "name"
-     ],
-     [
-      "sgvad405",
-      "Caledon State Park",
-      276,
-      "name"
-     ],
-     [
-      "sgvad406",
-      "Caledon State Park",
-      195,
-      "name"
-     ],
-     [
-      54550,
-      "Caledon State Park",
-      8,
-      "name"
-     ],
-     [
-      270612,
-      "Caledon State Park",
-      8,
       "name"
      ]
     ],
@@ -4039,13 +3597,13 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 19,
+   "pct": 0,
    "same_agency": false,
-   "score": 7,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -4060,8 +3618,8 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
-   "verdict": "unsure"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-1294": {
    "checked": "2026-10-29",
@@ -4175,7 +3733,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-1295": {
@@ -4193,15 +3751,22 @@
     "why": "total-looking"
    },
    "ours": {
-    "acres": 511,
+    "acres": 475,
     "dissolved": {
      "after": 511,
      "before": 1898,
      "copies": 4,
+     "families": {
+      "padus": 475,
+      "sgvad": 36
+     },
+     "family_fold": 36,
+     "family_used": "padus",
      "parts": 2,
      "records": 9,
      "tracts": 3
     },
+    "family_fold": "layers {'padus': 475, 'sgvad': 36}: one land in 2 layers, the padus copy used (36 ac of copies not added)",
     "manager": "",
     "note": "9 joined records = 3 tracts: 4 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 1898 -> 511 acres",
     "pieces": [
@@ -4209,18 +3774,6 @@
       270617,
       "Claytor Lake State Park",
       475,
-      "name"
-     ],
-     [
-      "sgvad376",
-      "Claytor Lake State Park",
-      35,
-      "name"
-     ],
-     [
-      "sgvad377",
-      "Claytor Lake State Park",
-      1,
       "name"
      ]
     ],
@@ -4241,7 +3794,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 8,
+   "pct": 1,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -4289,7 +3842,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-1296": {
@@ -4440,34 +3993,40 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-1297": {
-   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Fairy Stone State Park",
    "official": {
-    "acres": 168.0,
-    "as": "168 acre",
+    "acres": 4741.0,
+    "as": "4,741 acres",
     "clean": false,
-    "line": "swimming beach. Swimming elsewhere in the park is prohibited. Click here for park fees . FISHING, BOATING The 168-acre Fairy Stone Lake is great for family fishing and boating. Paddle this serene lake in your canoe or kayak. Boa",
+    "line": "ington, DC); Richmond, four hours; Tidewater/ Norfolk/Virginia Beach, five hours; Roanoke, one hour Park Size 4,741 acres, 168-acre lake adjoining the Philpott Reservoir. Share this page Follow us Cabins, camping OVERNIGHT FACILITI",
     "read": "2026-10-29",
-    "sent": "The 168-acre Fairy Stone Lake is great for family fishing and boating.",
+    "sent": "4,741 acres, 168-acre lake adjoining the Philpott Reservoir.",
     "url": "https://www.dcr.virginia.gov/state-parks/fairy-stone",
-    "why": "total-looking"
+    "why": "part (a lake, a purchase, a campground…)"
    },
    "ours": {
-    "acres": 10085,
+    "acres": 5446,
     "dissolved": {
      "after": 10085,
      "before": 20272,
      "copies": 4,
+     "families": {
+      "padus": 5446,
+      "sgvad": 4639
+     },
+     "family_fold": 4639,
+     "family_used": "padus",
      "parts": 0,
      "records": 7,
      "tracts": 3
     },
+    "family_fold": "layers {'padus': 5446, 'sgvad': 4639}: one land in 2 layers, the padus copy used (4,639 ac of copies not added)",
     "manager": "",
     "note": "7 joined records = 3 tracts: 4 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 20272 -> 10085 acres",
     "pieces": [
@@ -4475,12 +4034,6 @@
       54562,
       "Fairy Stone State Park",
       5344,
-      "name"
-     ],
-     [
-      "sgvad140",
-      "Fairy Stone State Park",
-      4639,
       "name"
      ],
      [
@@ -4512,13 +4065,13 @@
      "why": "official map (parkinfo-web)"
     }
    ],
-   "pct": 5903,
+   "pct": 15,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -4578,8 +4131,8 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
-   "verdict": "off"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-1298": {
    "checked": "2026-10-29",
@@ -4698,11 +4251,10 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-1299": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 2,888 acres, no total words near it)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "First Landing State Park",
@@ -4717,15 +4269,22 @@
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 5632,
+    "acres": 2916,
     "dissolved": {
      "after": 5632,
      "before": 11264,
      "copies": 2,
+     "families": {
+      "padus": 2916,
+      "sgvad": 2716
+     },
+     "family_fold": 2716,
+     "family_used": "padus",
      "parts": 0,
      "records": 4,
      "tracts": 2
     },
+    "family_fold": "layers {'padus': 2916, 'sgvad': 2716}: one land in 2 layers, the padus copy used (2,716 ac of copies not added)",
     "manager": "",
     "note": "4 joined records = 2 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 11264 -> 5632 acres",
     "pieces": [
@@ -4733,12 +4292,6 @@
       54565,
       "First Landing State Park",
       2916,
-      "name"
-     ],
-     [
-      "sgvad36",
-      "First Landing State Park",
-      2716,
       "name"
      ]
     ],
@@ -4774,13 +4327,13 @@
      "why": "official map (parkinfo-web)"
     }
    ],
-   "pct": 95,
+   "pct": 1,
    "same_agency": false,
-   "score": 7,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -4804,8 +4357,8 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
-   "verdict": "unsure"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-1300": {
    "checked": "2026-10-29",
@@ -4916,10 +4469,11 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-1301": {
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 1,291 acres, no total words near it)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "High Bridge Trail State Park",
@@ -4934,24 +4488,25 @@
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 1344,
+    "acres": 735,
     "dissolved": {
      "after": 1344,
      "before": 6312,
      "copies": 30,
+     "families": {
+      "padus": 735,
+      "sgvac": 609
+     },
+     "family_fold": 609,
+     "family_used": "padus",
      "parts": 12,
      "records": 47,
      "tracts": 5
     },
+    "family_fold": "layers {'sgvac': 609, 'padus': 735}: one land in 2 layers, the padus copy used (609 ac of copies not added)",
     "manager": "",
     "note": "47 joined records = 5 tracts: 30 copies of a tract (same acres, another layer) and 12 fee tracts under a designation record folded; summed 6312 -> 1344 acres",
     "pieces": [
-     [
-      "sgvac27",
-      "High Bridge Trail State Park",
-      608,
-      "name"
-     ],
      [
       54571,
       "High Bridge Trail State Park",
@@ -4968,12 +4523,6 @@
       271081,
       "High Bridge Trail State Park",
       30,
-      "name"
-     ],
-     [
-      "sgvac26",
-      "High Bridge Trail State Park",
-      1,
       "name"
      ]
     ],
@@ -5004,13 +4553,13 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 4,
+   "pct": 43,
    "same_agency": false,
-   "score": 8,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -5025,8 +4574,8 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
-   "verdict": "agree"
+   "ver": 15,
+   "verdict": "unsure"
   },
   "US-1302": {
    "checked": "2026-10-29",
@@ -5124,11 +4673,10 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-1303": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 3,334 acres, no total words near it)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Hungry Mother State Park",
@@ -5143,15 +4691,23 @@
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 6192,
+    "acres": 3270,
     "dissolved": {
      "after": 6192,
      "before": 12733,
      "copies": 14,
+     "families": {
+      "padus": 3270,
+      "sgvad": 2180,
+      "sgvae": 742
+     },
+     "family_fold": 2922,
+     "family_used": "padus",
      "parts": 8,
      "records": 30,
      "tracts": 8
     },
+    "family_fold": "layers {'padus': 3270, 'sgvad': 2180, 'sgvae': 742}: one land in 3 layers, the padus copy used (2,922 ac of copies not added)",
     "manager": "",
     "note": "30 joined records = 8 tracts: 14 copies of a tract (same acres, another layer) and 8 fee tracts under a designation record folded; summed 12733 -> 6192 acres",
     "pieces": [
@@ -5159,18 +4715,6 @@
       270635,
       "Hungry Mother State Park",
       2653,
-      "name"
-     ],
-     [
-      "sgvad125",
-      "Hungry Mother State Park",
-      2180,
-      "name"
-     ],
-     [
-      "sgvae486307",
-      "Hungry Mother State Park",
-      742,
       "name"
      ],
      [
@@ -5231,13 +4775,13 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 86,
+   "pct": 2,
    "same_agency": false,
-   "score": 7,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -5297,11 +4841,10 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
-   "verdict": "unsure"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-1304": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "James River State Park",
@@ -5316,15 +4859,23 @@
     "why": "total-looking"
    },
    "ours": {
-    "acres": 2507,
+    "acres": 1656,
     "dissolved": {
      "after": 2507,
      "before": 8958,
      "copies": 17,
+     "families": {
+      "padus": 1656,
+      "sgvac": 2,
+      "sgvad": 849
+     },
+     "family_fold": 851,
+     "family_used": "padus",
      "parts": 7,
      "records": 32,
      "tracts": 8
     },
+    "family_fold": "layers {'padus': 1656, 'sgvad': 849, 'sgvac': 2}: one land in 3 layers, the padus copy used (851 ac of copies not added)",
     "manager": "",
     "note": "32 joined records = 8 tracts: 17 copies of a tract (same acres, another layer) and 7 fee tracts under a designation record folded; summed 8958 -> 2507 acres",
     "pieces": [
@@ -5332,12 +4883,6 @@
       270639,
       "James River State Park",
       1500,
-      "name"
-     ],
-     [
-      "sgvad397",
-      "James River State Park",
-      849,
       "name"
      ],
      [
@@ -5369,12 +4914,6 @@
       "James River State Park",
       3,
       "name"
-     ],
-     [
-      "sgvac14",
-      "James River State Park",
-      2,
-      "name"
      ]
     ],
     "pin": "inside",
@@ -5394,13 +4933,13 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 61,
+   "pct": 6,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -5415,34 +4954,40 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
-   "verdict": "off"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-1305": {
-   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Kiptopeke State Park",
    "official": {
-    "acres": 562.0,
-    "as": "562 acres",
+    "acres": 375.0,
+    "as": "375 acres",
     "clean": false,
-    "line": "station was bought in 2000. In 2009 another 26 acres were bought, bringing the park&rsquo;s total acreage to 562 acres. A total of 126 acres has been reforested in the park. FRIENDS GROUP The Friends of Kiptopeke State Park is d",
+    "line": "peake Bay Bridge Tunnel was opened. In May 1992 the Virginia Department of Conservation and Recreation bought 375 acres from John Maddox, who had operated the property as Kiptopeke Beach Family Resort. The park opened on Memorial",
     "read": "2026-10-29",
-    "sent": "In 2009 another 26 acres were bought, bringing the park&rsquo;s total acreage to 562 acres.",
+    "sent": "In May 1992 the Virginia Department of Conservation and Recreation bought 375 acres from John Maddox, who had operated the property as Kiptopeke Beach Family Resort.",
     "url": "https://www.dcr.virginia.gov/state-parks/kiptopeke",
-    "why": "total-looking"
+    "why": "no total words near it"
    },
    "ours": {
-    "acres": 700,
+    "acres": 375,
     "dissolved": {
      "after": 700,
      "before": 2202,
      "copies": 10,
+     "families": {
+      "padus": 325,
+      "sgvad": 375
+     },
+     "family_fold": 325,
+     "family_used": "sgvad",
      "parts": 2,
      "records": 17,
      "tracts": 5
     },
+    "family_fold": "layers {'sgvad': 375, 'padus': 325}: one land in 2 layers, the sgvad copy used (325 ac of copies not added)",
     "manager": "",
     "note": "17 joined records = 5 tracts: 10 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 2202 -> 700 acres",
     "pieces": [
@@ -5450,30 +4995,6 @@
       "sgvad122",
       "Kiptopeke State Park",
       375,
-      "name"
-     ],
-     [
-      54587,
-      "Kiptopeke State Park",
-      161,
-      "name"
-     ],
-     [
-      270640,
-      "Kiptopeke State Park",
-      161,
-      "name"
-     ],
-     [
-      271171,
-      "Kiptopeke State Park",
-      2,
-      "name"
-     ],
-     [
-      54590,
-      "Kiptopeke State Park",
-      1,
       "name"
      ]
     ],
@@ -5499,13 +5020,13 @@
      "why": "official map (parkinfo-web)"
     }
    ],
-   "pct": 25,
+   "pct": 0,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -5565,8 +5086,8 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
-   "verdict": "off"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-1306": {
    "cause": "agency bigger: our outline may miss a tract",
@@ -5691,7 +5212,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-1307": {
@@ -5782,10 +5303,11 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-1308": {
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 1,856 acres, no total words near it)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Mason Neck State Park",
@@ -5800,15 +5322,22 @@
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 1815,
+    "acres": 1222,
     "dissolved": {
      "after": 1815,
      "before": 7347,
      "copies": 12,
+     "families": {
+      "padus": 1222,
+      "sgvad": 593
+     },
+     "family_fold": 593,
+     "family_used": "padus",
      "parts": 8,
      "records": 24,
      "tracts": 4
     },
+    "family_fold": "layers {'padus': 1222, 'sgvad': 593}: one land in 2 layers, the padus copy used (593 ac of copies not added)",
     "manager": "",
     "note": "24 joined records = 4 tracts: 12 copies of a tract (same acres, another layer) and 8 fee tracts under a designation record folded; summed 7347 -> 1815 acres",
     "pieces": [
@@ -5816,24 +5345,6 @@
       270647,
       "Mason Neck State Park",
       1222,
-      "name"
-     ],
-     [
-      "sgvad269",
-      "Mason Neck State Park",
-      251,
-      "name"
-     ],
-     [
-      "sgvad30",
-      "Mason Neck State Park",
-      242,
-      "name"
-     ],
-     [
-      "sgvad271",
-      "Mason Neck State Park",
-      100,
       "name"
      ]
     ],
@@ -5864,13 +5375,13 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 2,
+   "pct": 34,
    "same_agency": false,
-   "score": 8,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -5885,8 +5396,8 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
-   "verdict": "agree"
+   "ver": 15,
+   "verdict": "unsure"
   },
   "US-1309": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
@@ -5904,15 +5415,23 @@
     "why": "total-looking"
    },
    "ours": {
-    "acres": 1630,
+    "acres": 1114,
     "dissolved": {
      "after": 1630,
      "before": 4069,
      "copies": 42,
+     "families": {
+      "padus": 1114,
+      "sgvad": 359,
+      "sgvae": 157
+     },
+     "family_fold": 516,
+     "family_used": "padus",
      "parts": 37,
      "records": 88,
      "tracts": 9
     },
+    "family_fold": "layers {'padus': 1114, 'sgvae': 157, 'sgvad': 359}: one land in 3 layers, the padus copy used (516 ac of copies not added)",
     "manager": "",
     "note": "88 joined records = 9 tracts: 42 copies of a tract (same acres, another layer) and 37 fee tracts under a designation record folded; summed 4069 -> 1630 acres",
     "pieces": [
@@ -5920,24 +5439,6 @@
       270652,
       "Natural Tunnel State Park",
       886,
-      "name"
-     ],
-     [
-      "sgvae486869",
-      "Natural Tunnel State Park",
-      157,
-      "name"
-     ],
-     [
-      "sgvad362",
-      "Natural Tunnel State Park",
-      152,
-      "name"
-     ],
-     [
-      "sgvad225",
-      "Natural Tunnel State Park",
-      144,
       "name"
      ],
      [
@@ -5950,18 +5451,6 @@
       271084,
       "Natural Tunnel State Park",
       114,
-      "name"
-     ],
-     [
-      "sgvad223",
-      "Natural Tunnel State Park",
-      28,
-      "name"
-     ],
-     [
-      "sgvad187",
-      "Natural Tunnel State Park",
-      18,
       "name"
      ]
     ],
@@ -5982,7 +5471,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 79,
+   "pct": 23,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -6003,11 +5492,10 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-1310": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 1216.6 acres, no total words near it)",
    "checked": "2026-10-29",
    "handover": [
     {
@@ -6039,15 +5527,22 @@
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 2222,
+    "acres": 1312,
     "dissolved": {
      "after": 2222,
      "before": 5442,
      "copies": 97,
+     "families": {
+      "padus": 1312,
+      "sgvad": 910
+     },
+     "family_fold": 910,
+     "family_used": "padus",
      "parts": 37,
      "records": 159,
      "tracts": 25
     },
+    "family_fold": "layers {'padus': 1312, 'sgvad': 910}: one land in 2 layers, the padus copy used (910 ac of copies not added)",
     "manager": "",
     "note": "159 joined records = 25 tracts: 97 copies of a tract (same acres, another layer) and 37 fee tracts under a designation record folded; summed 5442 -> 2222 acres",
     "pieces": [
@@ -6070,33 +5565,33 @@
       "name"
      ],
      [
-      "sgvad88",
-      "New River Trail State Park",
-      162,
-      "name"
-     ],
-     [
-      "sgvad91",
-      "New River Trail State Park",
-      131,
-      "name"
-     ],
-     [
       54623,
       "New River Trail State Park",
       125,
       "name"
      ],
      [
-      "sgvad90",
-      "New River Trail State Park",
-      110,
-      "name"
-     ],
-     [
       270388,
       "New River Trail State Park",
       86,
+      "name"
+     ],
+     [
+      54631,
+      "New River Trail State Park",
+      44,
+      "name"
+     ],
+     [
+      270655,
+      "New River Trail State Park",
+      44,
+      "name"
+     ],
+     [
+      54632,
+      "New River Trail State Park",
+      42,
       "name"
      ]
     ],
@@ -6127,13 +5622,13 @@
      "why": "official map (parkinfo-web)"
     }
    ],
-   "pct": 83,
+   "pct": 8,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -6148,8 +5643,8 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
-   "verdict": "unsure"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-1311": {
    "checked": "2026-10-29",
@@ -6282,7 +5777,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-1312": {
@@ -6438,7 +5933,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-1313": {
@@ -6495,7 +5990,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-1314": {
@@ -6514,15 +6009,22 @@
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 656,
+    "acres": 559,
     "dissolved": {
      "after": 656,
      "before": 1676,
      "copies": 16,
+     "families": {
+      "padus": 559,
+      "sgvac": 97
+     },
+     "family_fold": 97,
+     "family_used": "padus",
      "parts": 4,
      "records": 26,
      "tracts": 6
     },
+    "family_fold": "layers {'padus': 559, 'sgvac': 97}: one land in 2 layers, the padus copy used (97 ac of copies not added)",
     "manager": "",
     "note": "26 joined records = 6 tracts: 16 copies of a tract (same acres, another layer) and 4 fee tracts under a designation record folded; summed 1676 -> 656 acres",
     "pieces": [
@@ -6536,12 +6038,6 @@
       54648,
       "Sailors Creek Battlefield State Park",
       212,
-      "name"
-     ],
-     [
-      "sgvac16",
-      "Sailors Creek Battlefield State Park",
-      97,
       "name"
      ],
      [
@@ -6590,7 +6086,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 73,
+   "pct": 47,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -6611,7 +6107,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-1315": {
@@ -6722,7 +6218,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-1316": {
@@ -6740,15 +6236,22 @@
     "why": "total-looking"
    },
    "ours": {
-    "acres": 1795,
+    "acres": 1624,
     "dissolved": {
      "after": 1795,
      "before": 6483,
      "copies": 9,
+     "families": {
+      "padus": 1624,
+      "sgvad": 171
+     },
+     "family_fold": 171,
+     "family_used": "padus",
      "parts": 5,
      "records": 17,
      "tracts": 3
     },
+    "family_fold": "layers {'padus': 1624, 'sgvad': 171}: one land in 2 layers, the padus copy used (171 ac of copies not added)",
     "manager": "",
     "note": "17 joined records = 3 tracts: 9 copies of a tract (same acres, another layer) and 5 fee tracts under a designation record folded; summed 6483 -> 1795 acres",
     "pieces": [
@@ -6762,12 +6265,6 @@
       270603,
       "Andy Guest/Shenandoah River State Park",
       195,
-      "name"
-     ],
-     [
-      "sgvad208",
-      "Shenandoah River State Park",
-      171,
       "name"
      ]
     ],
@@ -6788,7 +6285,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 12,
+   "pct": 2,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -6872,7 +6369,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-1317": {
@@ -6891,15 +6388,22 @@
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 23,
+    "acres": 16,
     "dissolved": {
      "after": 23,
      "before": 30,
      "copies": 1,
+     "families": {
+      "padus": 16,
+      "sgvad": 7
+     },
+     "family_fold": 7,
+     "family_used": "padus",
      "parts": 0,
      "records": 4,
      "tracts": 3
     },
+    "family_fold": "layers {'padus': 16, 'sgvad': 7}: one land in 2 layers, the padus copy used (7 ac of copies not added)",
     "manager": "",
     "note": "4 joined records = 3 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 30 -> 23 acres",
     "pieces": [
@@ -6913,12 +6417,6 @@
       270668,
       "Shot Tower Historic State Park",
       8,
-      "words"
-     ],
-     [
-      "sgvad173",
-      "Shot Tower Historic State Park",
-      7,
       "words"
      ]
     ],
@@ -6944,11 +6442,11 @@
      "why": "about / history page of the park's site"
     }
    ],
-   "pct": 130,
+   "pct": 60,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
-    "name": 1,
+    "name": 2,
     "pin": 2,
     "size": 1,
     "source": 2
@@ -6965,7 +6463,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-1318": {
@@ -6983,15 +6481,22 @@
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 1871,
+    "acres": 1626,
     "dissolved": {
      "after": 1871,
      "before": 7466,
      "copies": 10,
+     "families": {
+      "padus": 1626,
+      "sgvad": 245
+     },
+     "family_fold": 245,
+     "family_used": "padus",
      "parts": 2,
      "records": 18,
      "tracts": 6
     },
+    "family_fold": "layers {'padus': 1626, 'sgvad': 245}: one land in 2 layers, the padus copy used (245 ac of copies not added)",
     "manager": "",
     "note": "18 joined records = 6 tracts: 10 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 7466 -> 1871 acres",
     "pieces": [
@@ -7005,30 +6510,6 @@
       54658,
       "Sky Meadows State Park",
       490,
-      "name"
-     ],
-     [
-      "sgvad162",
-      "Sky Meadows State Park",
-      113,
-      "name"
-     ],
-     [
-      "sgvad160",
-      "Sky Meadows State Park",
-      96,
-      "name"
-     ],
-     [
-      "sgvad163",
-      "Sky Meadows State Park",
-      25,
-      "name"
-     ],
-     [
-      "sgvad161",
-      "Sky Meadows State Park",
-      11,
       "name"
      ]
     ],
@@ -7059,7 +6540,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 1,
+   "pct": 13,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -7143,7 +6624,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-1319": {
@@ -7162,15 +6643,22 @@
     "why": "total-looking"
    },
    "ours": {
-    "acres": 2242,
+    "acres": 1852,
     "dissolved": {
      "after": 2242,
      "before": 5930,
      "copies": 31,
+     "families": {
+      "padus": 1852,
+      "sgvad": 390
+     },
+     "family_fold": 390,
+     "family_used": "padus",
      "parts": 31,
      "records": 69,
      "tracts": 7
     },
+    "family_fold": "layers {'padus': 1852, 'sgvad': 390}: one land in 2 layers, the padus copy used (390 ac of copies not added)",
     "manager": "",
     "note": "69 joined records = 7 tracts: 31 copies of a tract (same acres, another layer) and 31 fee tracts under a designation record folded; summed 5930 -> 2242 acres",
     "pieces": [
@@ -7203,18 +6691,6 @@
       "Smith Mountain Lake State Park",
       287,
       "name"
-     ],
-     [
-      "sgvad169",
-      "Smith Mountain Lake State Park",
-      195,
-      "name"
-     ],
-     [
-      "sgvad190",
-      "Smith Mountain Lake State Park",
-      195,
-      "name"
      ]
     ],
     "pin": "inside",
@@ -7244,7 +6720,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 80,
+   "pct": 48,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -7274,7 +6750,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-1320": {
@@ -7369,7 +6845,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-1321": {
@@ -7389,15 +6865,22 @@
     "why": "clean total"
    },
    "ours": {
-    "acres": 6114,
+    "acres": 4159,
     "dissolved": {
      "after": 6114,
      "before": 11769,
      "copies": 9,
+     "families": {
+      "padus": 4159,
+      "sgvad": 1955
+     },
+     "family_fold": 1955,
+     "family_used": "padus",
      "parts": 2,
      "records": 18,
      "tracts": 7
     },
+    "family_fold": "layers {'padus': 4159, 'sgvad': 1955}: one land in 2 layers, the padus copy used (1,955 ac of copies not added)",
     "manager": "",
     "note": "18 joined records = 7 tracts: 9 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 11769 -> 6114 acres",
     "pieces": [
@@ -7414,21 +6897,9 @@
       "name"
      ],
      [
-      "sgvad367",
-      "Staunton River State Park",
-      1380,
-      "name"
-     ],
-     [
       270684,
       "Staunton River State Park",
       1007,
-      "name"
-     ],
-     [
-      "sgvad366",
-      "Staunton River State Park",
-      575,
       "name"
      ],
      [
@@ -7461,7 +6932,7 @@
      "why": "official map (parkinfo-web)"
     }
    ],
-   "pct": 155,
+   "pct": 73,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -7527,7 +6998,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-1322": {
@@ -7657,7 +7128,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-1323": {
@@ -7780,7 +7251,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-1324": {
@@ -7870,11 +7341,10 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-1325": {
-   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Wilderness Road State Park",
@@ -7889,15 +7359,22 @@
     "why": "total-looking"
    },
    "ours": {
-    "acres": 427,
+    "acres": 279,
     "dissolved": {
      "after": 427,
      "before": 1570,
      "copies": 9,
+     "families": {
+      "padus": 279,
+      "sgvad": 148
+     },
+     "family_fold": 148,
+     "family_used": "padus",
      "parts": 5,
      "records": 19,
      "tracts": 5
     },
+    "family_fold": "layers {'padus': 279, 'sgvad': 148}: one land in 2 layers, the padus copy used (148 ac of copies not added)",
     "manager": "",
     "note": "19 joined records = 5 tracts: 9 copies of a tract (same acres, another layer) and 5 fee tracts under a designation record folded; summed 1570 -> 427 acres",
     "pieces": [
@@ -7905,18 +7382,6 @@
       270691,
       "Wilderness Road State Park",
       275,
-      "name"
-     ],
-     [
-      "sgvad141",
-      "Wilderness Road State Park",
-      124,
-      "name"
-     ],
-     [
-      "sgvad143",
-      "Wilderness Road State Park",
-      24,
       "name"
      ],
      [
@@ -7949,13 +7414,13 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 31,
+   "pct": 15,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -7970,34 +7435,40 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
-   "verdict": "off"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-1326": {
-   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
    "checked": "2026-10-29",
    "handover": [],
    "n": "York River State Park",
    "official": {
-    "acres": 525.0,
-    "as": "525 acre",
+    "acres": 2954.0,
+    "as": "2,954 acres",
     "clean": false,
-    "line": "AUNDRY None at this park. ENVIRONMENTAL EDUCATION CENTER Under development. SPECIAL FEATURES Taskinas Creek's 525-acre watershed is one of four sites along the York River designated as a Chesapeake Bay National Estuarine Researc",
+    "line": "e hour; Tidewater/Norfolk/Virginia Beach, one hour; Fredericksburg, two hours; Roanoke, five hours. Park Size 2,954 acres. Share this page Follow us Cabins, camping OVERNIGHT FACILITIES York River is a day-use park with no overnigh",
     "read": "2026-10-29",
-    "sent": "Taskinas Creek's 525-acre watershed is one of four sites along the York River designated as a Chesapeake Bay National Estuarine Research Reserve.",
+    "sent": "2,954 acres.",
     "url": "https://www.dcr.virginia.gov/state-parks/york-river",
-    "why": "total-looking"
+    "why": "no total words near it"
    },
    "ours": {
-    "acres": 5286,
+    "acres": 2910,
     "dissolved": {
      "after": 5286,
      "before": 11573,
      "copies": 7,
+     "families": {
+      "padus": 2376,
+      "sgvad": 2910
+     },
+     "family_fold": 2376,
+     "family_used": "sgvad",
      "parts": 0,
      "records": 12,
      "tracts": 5
     },
+    "family_fold": "layers {'sgvad': 2910, 'padus': 2376}: one land in 2 layers, the sgvad copy used (2,376 ac of copies not added)",
     "manager": "",
     "note": "12 joined records = 5 tracts: 7 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 11573 -> 5286 acres",
     "pieces": [
@@ -8008,27 +7479,9 @@
       "name"
      ],
      [
-      54692,
-      "York River State Park",
-      2286,
-      "name"
-     ],
-     [
       "sgvad293",
       "York River State Park",
       401,
-      "name"
-     ],
-     [
-      54690,
-      "York River State Park",
-      45,
-      "name"
-     ],
-     [
-      270692,
-      "York River State Park",
-      45,
       "name"
      ]
     ],
@@ -8049,13 +7502,13 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 907,
+   "pct": 1,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -8088,8 +7541,8 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
-   "verdict": "off"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-2364": {
    "checked": "2026-10-29",
@@ -8182,29 +7635,36 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-3378": {
    "checked": "2026-10-29",
    "handover": [],
    "n": "Blue Ridge National Parkway",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-NC': 52788, 'US-VA': 37281})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-NC': 52788, 'US-VA': 35237})",
    "official": null,
    "ours": {
-    "acres": 90069,
+    "acres": 88025,
     "acres_by_state": {
      "US-NC": 52788,
-     "US-VA": 37281
+     "US-VA": 35237
     },
     "dissolved": {
      "after": 37281,
      "before": 39421,
      "copies": 0,
+     "families": {
+      "padus": 35237,
+      "sgvae": 2044
+     },
+     "family_fold": 2044,
+     "family_used": "padus",
      "parts": 37,
      "records": 46,
      "tracts": 9
     },
+    "family_fold": "layers {'padus': 35237, 'sgvae': 2044}: one land in 2 layers, the padus copy used (2,044 ac of copies not added)",
     "manager": "",
     "note": "46 joined records = 9 tracts: 0 copies of a tract (same acres, another layer) and 37 fee tracts under a designation record folded; summed 39421 -> 37281 acres",
     "pieces": [
@@ -8213,48 +7673,6 @@
       "Blue Ridge Parkway",
       35237,
       "reviewed"
-     ],
-     [
-      "sgvae491462",
-      "Blue Ridge Parkway National Park",
-      1575,
-      "words"
-     ],
-     [
-      "sgvae491179",
-      "Blue Ridge Parkway National Park",
-      152,
-      "words"
-     ],
-     [
-      "sgvae491146",
-      "Blue Ridge Parkway National Park",
-      123,
-      "words"
-     ],
-     [
-      "sgvae491138",
-      "Blue Ridge Parkway National Park",
-      100,
-      "words"
-     ],
-     [
-      "sgvae491173",
-      "Blue Ridge Parkway National Park",
-      30,
-      "words"
-     ],
-     [
-      "sgvae491175",
-      "Blue Ridge Parkway National Park",
-      30,
-      "words"
-     ],
-     [
-      "sgvae491176",
-      "Blue Ridge Parkway National Park",
-      30,
-      "words"
      ]
     ],
     "pin": "well outside",
@@ -8305,7 +7723,7 @@
    },
    "sizes": [],
    "t": "National Parkway",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-3972": {
@@ -8332,15 +7750,22 @@
     "why": "total-looking"
    },
    "ours": {
-    "acres": 1637,
+    "acres": 1531,
     "dissolved": {
      "after": 1637,
      "before": 4803,
      "copies": 4,
+     "families": {
+      "padus": 1531,
+      "sgvad": 106
+     },
+     "family_fold": 106,
+     "family_used": "padus",
      "parts": 0,
      "records": 7,
      "tracts": 3
     },
+    "family_fold": "layers {'padus': 1531, 'sgvad': 106}: one land in 2 layers, the padus copy used (106 ac of copies not added)",
     "manager": "",
     "note": "7 joined records = 3 tracts: 4 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 4803 -> 1637 acres",
     "pieces": [
@@ -8348,18 +7773,6 @@
       270387,
       "Natural Bridge State Park",
       1531,
-      "name"
-     ],
-     [
-      "sgvad374",
-      "Natural Bridge State Park",
-      85,
-      "name"
-     ],
-     [
-      "sgvad373",
-      "Natural Bridge State Park",
-      21,
       "name"
      ]
     ],
@@ -8375,7 +7788,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 9,
+   "pct": 2,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -8423,7 +7836,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-4526": {
@@ -8432,7 +7845,7 @@
    "handover": [],
    "last_read_failed": "2026-10-29",
    "n": "George Washington & Jefferson National Forest",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-WV': 126258, 'US-VA': 2694224})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-WV': 126258, 'US-VA': 1673580})",
    "official": {
     "acres": 1800000.0,
     "as": "1.8 million acres",
@@ -8443,19 +7856,26 @@
     "why": "total-looking"
    },
    "ours": {
-    "acres": 2820482,
+    "acres": 1799838,
     "acres_by_state": {
-     "US-VA": 2694224,
+     "US-VA": 1673580,
      "US-WV": 126258
     },
     "dissolved": {
      "after": 2694224,
      "before": 2763128,
      "copies": 9,
+     "families": {
+      "padus": 1673580,
+      "sgvae": 1020644
+     },
+     "family_fold": 1020644,
+     "family_used": "padus",
      "parts": 29,
      "records": 144,
      "tracts": 106
     },
+    "family_fold": "layers {'padus': 1673580, 'sgvae': 1020644}: one land in 2 layers, the padus copy used (1,020,644 ac of copies not added)",
     "manager": "",
     "note": "144 joined records = 106 tracts: 9 copies of a tract (same acres, another layer) and 29 fee tracts under a designation record folded; summed 2763128 -> 2694224 acres",
     "pieces": [
@@ -8472,39 +7892,15 @@
       "name"
      ],
      [
-      "sgvae490181",
+      271121,
       "George Washington and Jefferson National Forest",
-      322012,
+      455,
       "name"
      ],
      [
-      "sgvae491505",
+      271123,
       "George Washington and Jefferson National Forest",
-      201446,
-      "name"
-     ],
-     [
-      "sgvae490597",
-      "George Washington and Jefferson National Forest",
-      77518,
-      "name"
-     ],
-     [
-      "sgvae490239",
-      "George Washington and Jefferson National Forest",
-      58718,
-      "name"
-     ],
-     [
-      "sgvae490296",
-      "George Washington and Jefferson National Forest",
-      55992,
-      "name"
-     ],
-     [
-      "sgvae491485",
-      "George Washington and Jefferson National Forest",
-      52513,
+      144,
       "name"
      ]
     ],
@@ -8530,7 +7926,7 @@
      "why": "official map (parkinfo-web)"
     }
    ],
-   "pct": 57,
+   "pct": 0,
    "same_agency": false,
    "score": 4,
    "score_parts": {
@@ -8560,8 +7956,8 @@
     }
    ],
    "t": "National Forest",
-   "ver": 14,
-   "verdict": "off"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-4556": {
    "checked": "2026-10-29",
@@ -8570,7 +7966,7 @@
    "ours": null,
    "score": null,
    "t": "National Scenic Trail",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-4564": {
@@ -8580,7 +7976,7 @@
    "ours": null,
    "score": null,
    "t": "National Scenic Trail",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-4567": {
@@ -8590,7 +7986,7 @@
    "ours": null,
    "score": null,
    "t": "National Historic Trail",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-4577": {
@@ -8600,7 +7996,7 @@
    "ours": null,
    "score": null,
    "t": "National Historic Trail",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-4581": {
@@ -8610,7 +8006,7 @@
    "ours": null,
    "score": null,
    "t": "National Historic Trail",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-4582": {
@@ -8620,11 +8016,10 @@
    "ours": null,
    "score": null,
    "t": "National Historic Trail",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-5503": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Appomattox-Buckingham State Forest",
@@ -8639,15 +8034,23 @@
     "why": "total-looking"
    },
    "ours": {
-    "acres": 49122,
+    "acres": 20064,
     "dissolved": {
      "after": 49122,
      "before": 68557,
      "copies": 1,
+     "families": {
+      "padus": 20064,
+      "sgvaa": 19512,
+      "sgvae": 9546
+     },
+     "family_fold": 29058,
+     "family_used": "padus",
      "parts": 0,
      "records": 4,
      "tracts": 3
     },
+    "family_fold": "layers {'padus': 20064, 'sgvaa': 19512, 'sgvae': 9546}: one land in 3 layers, the padus copy used (29,058 ac of copies not added)",
     "manager": "",
     "note": "4 joined records = 3 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 68557 -> 49122 acres",
     "pieces": [
@@ -8655,18 +8058,6 @@
       270411,
       "Appomattox-Buckingham State Forest",
       20064,
-      "name"
-     ],
-     [
-      "sgvaa28",
-      "Appomattox-Buckingham State Forest",
-      19512,
-      "name"
-     ],
-     [
-      "sgvae486659",
-      "Appomattox-Buckingham State Forest",
-      9546,
       "name"
      ]
     ],
@@ -8693,13 +8084,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 152,
+   "pct": 3,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -8741,8 +8132,8 @@
     }
    ],
    "t": "State Forest",
-   "ver": 14,
-   "verdict": "off"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-5506": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
@@ -8836,7 +8227,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-5507": {
@@ -8961,7 +8352,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-5508": {
@@ -9058,7 +8449,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-5509": {
@@ -9137,7 +8528,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-5510": {
@@ -9221,7 +8612,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-5511": {
@@ -9249,24 +8640,25 @@
     "why": "total-looking"
    },
    "ours": {
-    "acres": 824,
+    "acres": 528,
     "dissolved": {
      "after": 824,
      "before": 1088,
      "copies": 1,
+     "families": {
+      "padus": 528,
+      "sgvae": 296
+     },
+     "family_fold": 296,
+     "family_used": "padus",
      "parts": 0,
      "records": 4,
      "tracts": 3
     },
+    "family_fold": "layers {'sgvae': 296, 'padus': 528}: one land in 2 layers, the padus copy used (296 ac of copies not added)",
     "manager": "",
     "note": "4 joined records = 3 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1088 -> 824 acres",
     "pieces": [
-     [
-      "sgvae486633",
-      "Crawford State Forest",
-      296,
-      "name"
-     ],
      [
       57428,
       "Crawford State Forest",
@@ -9292,7 +8684,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 212,
+   "pct": 100,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -9322,7 +8714,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-5512": {
@@ -9408,11 +8800,10 @@
     }
    ],
    "t": "State Forest",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-5514": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Dragon Run State Forest",
@@ -9427,24 +8818,25 @@
     "why": "total-looking"
    },
    "ours": {
-    "acres": 19282,
+    "acres": 9719,
     "dissolved": {
      "after": 19282,
      "before": 38407,
      "copies": 1,
+     "families": {
+      "padus": 9563,
+      "sgvae": 9719
+     },
+     "family_fold": 9563,
+     "family_used": "sgvae",
      "parts": 2,
      "records": 7,
      "tracts": 4
     },
+    "family_fold": "layers {'padus': 9563, 'sgvae': 9719}: one land in 2 layers, the sgvae copy used (9,563 ac of copies not added)",
     "manager": "",
     "note": "7 joined records = 4 tracts: 1 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 38407 -> 19282 acres",
     "pieces": [
-     [
-      270421,
-      "Dragon Run State Forest",
-      9563,
-      "name"
-     ],
      [
       "sgvae486814",
       "Dragon Run State Forest",
@@ -9481,13 +8873,13 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 102,
+   "pct": 2,
    "same_agency": false,
-   "score": 5,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -9556,8 +8948,8 @@
     }
    ],
    "t": "State Forest",
-   "ver": 14,
-   "verdict": "off"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-5515": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
@@ -9628,11 +9020,10 @@
     }
    ],
    "t": "State Forest",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-5516": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
    "checked": "2026-10-29",
    "handover": [
     {
@@ -9656,15 +9047,22 @@
     "why": "total-looking"
    },
    "ours": {
-    "acres": 825,
+    "acres": 427,
     "dissolved": {
      "after": 825,
      "before": 1675,
      "copies": 2,
+     "families": {
+      "padus": 398,
+      "sgvaa": 427
+     },
+     "family_fold": 398,
+     "family_used": "sgvaa",
      "parts": 0,
      "records": 4,
      "tracts": 2
     },
+    "family_fold": "layers {'sgvaa': 427, 'padus': 398}: one land in 2 layers, the sgvaa copy used (398 ac of copies not added)",
     "manager": "",
     "note": "4 joined records = 2 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1675 -> 825 acres",
     "pieces": [
@@ -9672,12 +9070,6 @@
       "sgvaa42",
       "Lesesne State Forest",
       427,
-      "name"
-     ],
-     [
-      57439,
-      "Lesesne State Forest",
-      398,
       "name"
      ]
     ],
@@ -9693,13 +9085,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 95,
+   "pct": 1,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -9723,11 +9115,10 @@
     }
    ],
    "t": "State Forest",
-   "ver": 14,
-   "verdict": "off"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-5517": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Matthews State Forest",
@@ -9742,15 +9133,22 @@
     "why": "total-looking"
    },
    "ours": {
-    "acres": 734,
+    "acres": 569,
     "dissolved": {
      "after": 734,
      "before": 2269,
      "copies": 2,
+     "families": {
+      "padus": 569,
+      "sgvae": 165
+     },
+     "family_fold": 165,
+     "family_used": "padus",
      "parts": 2,
      "records": 8,
      "tracts": 4
     },
+    "family_fold": "layers {'padus': 569, 'sgvae': 165}: one land in 2 layers, the padus copy used (165 ac of copies not added)",
     "manager": "",
     "note": "8 joined records = 4 tracts: 2 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 2269 -> 734 acres",
     "pieces": [
@@ -9758,24 +9156,6 @@
       270423,
       "Judge Matthews State Forest",
       569,
-      "words"
-     ],
-     [
-      "sgvae486396",
-      "Judge Matthews State Forest",
-      77,
-      "words"
-     ],
-     [
-      "sgvae486397",
-      "Judge Matthews State Forest",
-      50,
-      "words"
-     ],
-     [
-      "sgvae486398",
-      "Judge Matthews State Forest",
-      38,
       "words"
      ]
     ],
@@ -9796,13 +9176,13 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 30,
+   "pct": 1,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -9844,8 +9224,8 @@
     }
    ],
    "t": "State Forest",
-   "ver": 14,
-   "verdict": "off"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-5518": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
@@ -9910,11 +9290,10 @@
     }
    ],
    "t": "State Forest",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-5519": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Niday Place State Forest",
@@ -9929,15 +9308,22 @@
     "why": "clean total"
    },
    "ours": {
-    "acres": 433,
+    "acres": 244,
     "dissolved": {
      "after": 433,
      "before": 809,
      "copies": 2,
+     "families": {
+      "sgvaa": 244,
+      "sgvae": 189
+     },
+     "family_fold": 189,
+     "family_used": "sgvaa",
      "parts": 0,
      "records": 4,
      "tracts": 2
     },
+    "family_fold": "layers {'sgvaa': 244, 'sgvae': 189}: one land in 2 layers, the sgvaa copy used (189 ac of copies not added)",
     "manager": "",
     "note": "4 joined records = 2 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 809 -> 433 acres",
     "pieces": [
@@ -9945,12 +9331,6 @@
       "sgvaa45",
       "Niday Place State Forest",
       244,
-      "name"
-     ],
-     [
-      "sgvae486654",
-      "Niday Place State Forest",
-      189,
       "name"
      ]
     ],
@@ -9971,13 +9351,13 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 64,
+   "pct": 8,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -9992,8 +9372,8 @@
     }
    ],
    "t": "State Forest",
-   "ver": 14,
-   "verdict": "off"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-5521": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
@@ -10011,15 +9391,22 @@
     "why": "total-looking"
    },
    "ours": {
-    "acres": 527,
+    "acres": 354,
     "dissolved": {
      "after": 527,
      "before": 700,
      "copies": 1,
+     "families": {
+      "padus": 354,
+      "sgvaa": 173
+     },
+     "family_fold": 173,
+     "family_used": "padus",
      "parts": 0,
      "records": 4,
      "tracts": 3
     },
+    "family_fold": "layers {'padus': 354, 'sgvaa': 173}: one land in 2 layers, the padus copy used (173 ac of copies not added)",
     "manager": "",
     "note": "4 joined records = 3 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 700 -> 527 acres",
     "pieces": [
@@ -10033,12 +9420,6 @@
       270428,
       "Paul State Forest",
       177,
-      "name"
-     ],
-     [
-      "sgvaa47",
-      "Paul State Forest",
-      173,
       "name"
      ]
     ],
@@ -10059,7 +9440,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 2535,
+   "pct": 1670,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -10116,7 +9497,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-5522": {
@@ -10228,11 +9609,10 @@
     }
    ],
    "t": "State Forest",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-5523": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Sandy Point State Forest",
@@ -10247,24 +9627,25 @@
     "why": "total-looking"
    },
    "ours": {
-    "acres": 4167,
+    "acres": 2093,
     "dissolved": {
      "after": 4167,
      "before": 8297,
      "copies": 4,
+     "families": {
+      "sgvaa": 2074,
+      "sgvae": 2093
+     },
+     "family_fold": 2074,
+     "family_used": "sgvae",
      "parts": 0,
      "records": 7,
      "tracts": 3
     },
+    "family_fold": "layers {'sgvaa': 2074, 'sgvae': 2093}: one land in 2 layers, the sgvae copy used (2,074 ac of copies not added)",
     "manager": "",
     "note": "7 joined records = 3 tracts: 4 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 8297 -> 4167 acres",
     "pieces": [
-     [
-      "sgvaa49",
-      "Sandy Point State Forest",
-      2074,
-      "name"
-     ],
      [
       "sgvae486826",
       "Sandy Point State Forest",
@@ -10295,13 +9676,13 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 101,
+   "pct": 1,
    "same_agency": false,
-   "score": 5,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -10316,8 +9697,8 @@
     }
    ],
    "t": "State Forest",
-   "ver": 14,
-   "verdict": "off"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-5525": {
    "checked": "2026-10-29",
@@ -10391,34 +9772,40 @@
     }
    ],
    "t": "State Forest",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-5526": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 4 acre, a tiny number without size wording)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Zoar State Forest",
    "official": {
-    "acres": 4.0,
-    "as": "4 acre",
+    "acres": 378.0,
+    "as": "378 acres",
     "clean": false,
-    "line": "ding opportunities in education and recreation, and a variety of wildlife habitats. Water resources include a 4-acre pond, 2,000 feet of waterfront on Herring Creek, and 6,600 feet of waterfront on the Mattaponi River. The pro",
+    "line": "Zoar State Forest - General Map King William County - 378 acres • Legend State Forest V,1//,/,l Agricultural Fields Gate I) Parking ~ Historic Farmstead m Canoe Laun",
     "read": "2026-10-29",
-    "sent": "Water resources include a 4-acre pond, 2,000 feet of waterfront on Herring Creek, and 6,600 feet of waterfront on the Mattaponi River.",
-    "url": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/zoar-state-forest/",
-    "why": "a tiny number without size wording"
+    "sent": "King William County - 378 acres",
+    "url": "https://www.dof.virginia.gov/wp-content/uploads/Zoar-SF-General-Map.pdf",
+    "why": "a map label (no sentence)"
    },
    "ours": {
-    "acres": 448,
+    "acres": 378,
     "dissolved": {
      "after": 448,
      "before": 1578,
      "copies": 3,
+     "families": {
+      "sgvaa": 378,
+      "sgvae": 70
+     },
+     "family_fold": 70,
+     "family_used": "sgvaa",
      "parts": 0,
      "records": 5,
      "tracts": 2
     },
+    "family_fold": "layers {'sgvaa': 378, 'sgvae': 70}: one land in 2 layers, the sgvaa copy used (70 ac of copies not added)",
     "manager": "",
     "note": "5 joined records = 2 tracts: 3 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1578 -> 448 acres",
     "pieces": [
@@ -10426,12 +9813,6 @@
       "sgvaa52",
       "Zoar State Forest",
       378,
-      "name"
-     ],
-     [
-      "sgvae486637",
-      "Zoar State Forest",
-      70,
       "name"
      ]
     ],
@@ -10452,13 +9833,13 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 11100,
+   "pct": 0,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -10500,11 +9881,10 @@
     }
    ],
    "t": "State Forest",
-   "ver": 14,
-   "verdict": "unsure"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-7636": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 1,089 acres, no total words near it)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Widewater State Park",
@@ -10519,15 +9899,23 @@
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 2258,
+    "acres": 1089,
     "dissolved": {
      "after": 2258,
      "before": 5517,
      "copies": 3,
+     "families": {
+      "padus": 1042,
+      "sgvad": 1089,
+      "sgvae": 127
+     },
+     "family_fold": 1169,
+     "family_used": "sgvad",
      "parts": 0,
      "records": 6,
      "tracts": 3
     },
+    "family_fold": "layers {'sgvad': 1089, 'padus': 1042, 'sgvae': 127}: one land in 3 layers, the sgvad copy used (1,169 ac of copies not added)",
     "manager": "",
     "note": "6 joined records = 3 tracts: 3 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 5517 -> 2258 acres",
     "pieces": [
@@ -10535,18 +9923,6 @@
       "sgvad180",
       "Widewater State Park",
       1089,
-      "name"
-     ],
-     [
-      270688,
-      "Widewater State Park",
-      1042,
-      "name"
-     ],
-     [
-      "sgvae486972",
-      "Widewater State Park",
-      127,
       "name"
      ]
     ],
@@ -10577,13 +9953,13 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 107,
+   "pct": 0,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -10598,34 +9974,35 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
-   "verdict": "unsure"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-7784": {
-   "cause": "a number 12 parks share from one page (66,000 ac): an agency total, not this park",
+   "cause": "a number 10 parks share from one page (66,000 ac): an agency total, not this park",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Bethel Beach State Natural Area",
    "official": null,
    "ours": {
-    "acres": 218,
+    "acres": 113,
     "dissolved": {
      "after": 218,
      "before": 359,
      "copies": 1,
+     "families": {
+      "padus": 113,
+      "sgvab": 105
+     },
+     "family_fold": 105,
+     "family_used": "padus",
      "parts": 2,
      "records": 6,
      "tracts": 3
     },
+    "family_fold": "layers {'sgvab': 105, 'padus': 113}: one land in 2 layers, the padus copy used (105 ac of copies not added)",
     "manager": "",
     "note": "6 joined records = 3 tracts: 1 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 359 -> 218 acres",
     "pieces": [
-     [
-      "sgvab3",
-      "Bethel Beach",
-      105,
-      "name"
-     ],
      [
       270543,
       "Bethel Beach State Natural Area Preserve",
@@ -10688,25 +10065,33 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-7785": {
-   "cause": "a number 12 parks share from one page (66,000 ac): an agency total, not this park",
+   "cause": "a number 10 parks share from one page (66,000 ac): an agency total, not this park",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Buffalo Mountain State Natural Area",
    "official": null,
    "ours": {
-    "acres": 3267,
+    "acres": 2121,
     "dissolved": {
      "after": 3267,
      "before": 6507,
      "copies": 3,
+     "families": {
+      "padus": 146,
+      "sgvab": 2121,
+      "sgvae": 1000
+     },
+     "family_fold": 1146,
+     "family_used": "sgvab",
      "parts": 2,
      "records": 9,
      "tracts": 4
     },
+    "family_fold": "layers {'sgvab': 2121, 'sgvae': 1000, 'padus': 146}: one land in 3 layers, the sgvab copy used (1,146 ac of copies not added)",
     "manager": "",
     "note": "9 joined records = 4 tracts: 3 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 6507 -> 3267 acres",
     "pieces": [
@@ -10714,24 +10099,6 @@
       "sgvab8",
       "Buffalo Mountain",
       2121,
-      "name"
-     ],
-     [
-      "sgvae486705",
-      "Buffalo Mountain State Natural Area Preserve",
-      1000,
-      "name"
-     ],
-     [
-      54410,
-      "Buffalo Mountain State Natural Area Preserve",
-      140,
-      "name"
-     ],
-     [
-      54411,
-      "Buffalo Mountain State Natural Area Preserve",
-      6,
       "name"
      ]
     ],
@@ -10784,34 +10151,35 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-7787": {
-   "cause": "a number 12 parks share from one page (66,000 ac): an agency total, not this park",
+   "cause": "a number 10 parks share from one page (66,000 ac): an agency total, not this park",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Bush Mill Stream State Natural Area",
    "official": null,
    "ours": {
-    "acres": 435,
+    "acres": 291,
     "dissolved": {
      "after": 435,
      "before": 579,
      "copies": 2,
+     "families": {
+      "padus": 291,
+      "sgvab": 144
+     },
+     "family_fold": 144,
+     "family_used": "padus",
      "parts": 0,
      "records": 7,
      "tracts": 5
     },
+    "family_fold": "layers {'sgvab': 144, 'padus': 291}: one land in 2 layers, the padus copy used (144 ac of copies not added)",
     "manager": "",
     "note": "7 joined records = 5 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 579 -> 435 acres",
     "pieces": [
-     [
-      "sgvab10",
-      "Bush Mill Stream",
-      144,
-      "name"
-     ],
      [
       270546,
       "Bush Mill Stream State Natural Area Preserve",
@@ -10886,25 +10254,32 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-7788": {
-   "cause": "a number 12 parks share from one page (66,000 ac): an agency total, not this park",
+   "cause": "a number 10 parks share from one page (66,000 ac): an agency total, not this park",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Cape Charles State Natural Area",
    "official": null,
    "ours": {
-    "acres": 71,
+    "acres": 50,
     "dissolved": {
      "after": 71,
      "before": 192,
      "copies": 1,
+     "families": {
+      "padus": 21,
+      "sgvab": 50
+     },
+     "family_fold": 21,
+     "family_used": "sgvab",
      "parts": 4,
      "records": 7,
      "tracts": 2
     },
+    "family_fold": "layers {'sgvab': 50, 'padus': 21}: one land in 2 layers, the sgvab copy used (21 ac of copies not added)",
     "manager": "",
     "note": "7 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 4 fee tracts under a designation record folded; summed 192 -> 71 acres",
     "pieces": [
@@ -10912,12 +10287,6 @@
       "sgvab12",
       "Cape Charles",
       50,
-      "name"
-     ],
-     [
-      271062,
-      "Cape Charles",
-      21,
       "name"
      ]
     ],
@@ -10970,25 +10339,32 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-7789": {
-   "cause": "a number 12 parks share from one page (66,000 ac): an agency total, not this park",
+   "cause": "a number 10 parks share from one page (66,000 ac): an agency total, not this park",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Chub Sandhill State Natural Area",
    "official": null,
    "ours": {
-    "acres": 1745,
+    "acres": 1066,
     "dissolved": {
      "after": 1745,
      "before": 4272,
      "copies": 5,
+     "families": {
+      "padus": 679,
+      "sgvab": 1066
+     },
+     "family_fold": 679,
+     "family_used": "sgvab",
      "parts": 3,
      "records": 12,
      "tracts": 4
     },
+    "family_fold": "layers {'sgvab': 1066, 'padus': 679}: one land in 2 layers, the sgvab copy used (679 ac of copies not added)",
     "manager": "",
     "note": "12 joined records = 4 tracts: 5 copies of a tract (same acres, another layer) and 3 fee tracts under a designation record folded; summed 4272 -> 1745 acres",
     "pieces": [
@@ -10997,24 +10373,6 @@
       "Chub Sandhill",
       1066,
       "name"
-     ],
-     [
-      54424,
-      "Chub Sandhill State Natural Area Preserve",
-      467,
-      "words"
-     ],
-     [
-      270552,
-      "Chub Sandhill State Natural Area Preserve",
-      166,
-      "name"
-     ],
-     [
-      54423,
-      "Chub Sandhill State Natural Area Preserve",
-      46,
-      "words"
      ]
     ],
     "pin": "inside",
@@ -11075,25 +10433,32 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-7790": {
-   "cause": "a number 12 parks share from one page (66,000 ac): an agency total, not this park",
+   "cause": "a number 10 parks share from one page (66,000 ac): an agency total, not this park",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Cleveland Barrens State Natural Area",
    "official": null,
    "ours": {
-    "acres": 1849,
+    "acres": 1288,
     "dissolved": {
      "after": 1849,
      "before": 4259,
      "copies": 3,
+     "families": {
+      "padus": 561,
+      "sgvab": 1288
+     },
+     "family_fold": 561,
+     "family_used": "sgvab",
      "parts": 6,
      "records": 12,
      "tracts": 3
     },
+    "family_fold": "layers {'sgvab': 1288, 'padus': 561}: one land in 2 layers, the sgvab copy used (561 ac of copies not added)",
     "manager": "",
     "note": "12 joined records = 3 tracts: 3 copies of a tract (same acres, another layer) and 6 fee tracts under a designation record folded; summed 4259 -> 1849 acres",
     "pieces": [
@@ -11101,18 +10466,6 @@
       "sgvab19",
       "Cleveland Barrens",
       1288,
-      "name"
-     ],
-     [
-      54425,
-      "Cleveland Barrens State Natural Area Preserve",
-      501,
-      "name"
-     ],
-     [
-      54426,
-      "Cleveland Barrens State Natural Area Preserve",
-      60,
       "name"
      ]
     ],
@@ -11174,11 +10527,10 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-7791": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Crow's Nest State Natural Area",
@@ -11193,15 +10545,23 @@
     "why": "total-looking"
    },
    "ours": {
-    "acres": 6220,
+    "acres": 3343,
     "dissolved": {
      "after": 6220,
      "before": 12496,
      "copies": 3,
+     "families": {
+      "padus": 2873,
+      "sgvab": 3343,
+      "sgvae": 4
+     },
+     "family_fold": 2877,
+     "family_used": "sgvab",
      "parts": 5,
      "records": 13,
      "tracts": 5
     },
+    "family_fold": "layers {'sgvab': 3343, 'padus': 2873, 'sgvae': 4}: one land in 3 layers, the sgvab copy used (2,877 ac of copies not added)",
     "manager": "",
     "note": "13 joined records = 5 tracts: 3 copies of a tract (same acres, another layer) and 5 fee tracts under a designation record folded; summed 12496 -> 6220 acres",
     "pieces": [
@@ -11210,30 +10570,6 @@
       "Crow's Nest",
       3343,
       "name"
-     ],
-     [
-      54431,
-      "Crow's Nest State Natural Area Preserve",
-      1771,
-      "words"
-     ],
-     [
-      54432,
-      "Crow's Nest State Natural Area Preserve",
-      1102,
-      "words"
-     ],
-     [
-      "sgvae487168",
-      "Crow's Nest State Natural Area Preserve",
-      3,
-      "words"
-     ],
-     [
-      "sgvae487059",
-      "Crow's Nest State Natural Area Preserve",
-      1,
-      "words"
      ]
     ],
     "pin": "just outside",
@@ -11264,13 +10600,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 104,
+   "pct": 9,
    "same_agency": false,
-   "score": 5,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -11321,8 +10657,8 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 14,
-   "verdict": "off"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-7793": {
    "checked": "2026-10-29",
@@ -11397,7 +10733,7 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-7794": {
@@ -11536,25 +10872,40 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-7795": {
-   "cause": "a number 12 parks share from one page (66,000 ac): an agency total, not this park",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Grassy Hill State Natural Area",
-   "official": null,
+   "official": {
+    "acres": 1295.0,
+    "as": "1,295 acre",
+    "clean": false,
+    "line": "along the ridge top and side slopes. Most of the trail system is in the Grassy Hill Natural Area Preserve, a 1,295-acre site owned and managed by the Virginia Department of Conservation and Recreation. Nearly three miles of Grass",
+    "read": "2026-10-29",
+    "sent": "Grassy Hill Natural Area Preserve, a 1,295-acre",
+    "url": "https://www.dcr.virginia.gov/natural-heritage/document/grassyhilltrailguide.pdf",
+    "why": "total-looking"
+   },
    "ours": {
-    "acres": 2561,
+    "acres": 1488,
     "dissolved": {
      "after": 2561,
      "before": 5855,
      "copies": 5,
+     "families": {
+      "padus": 1073,
+      "sgvab": 1488
+     },
+     "family_fold": 1073,
+     "family_used": "sgvab",
      "parts": 4,
      "records": 13,
      "tracts": 4
     },
+    "family_fold": "layers {'sgvab': 1488, 'padus': 1073}: one land in 2 layers, the sgvab copy used (1,073 ac of copies not added)",
     "manager": "",
     "note": "13 joined records = 4 tracts: 5 copies of a tract (same acres, another layer) and 4 fee tracts under a designation record folded; summed 5855 -> 2561 acres",
     "pieces": [
@@ -11563,24 +10914,6 @@
       "Grassy Hill",
       1488,
       "name"
-     ],
-     [
-      54449,
-      "Grassy Hill State Natural Area Preserve",
-      854,
-      "words"
-     ],
-     [
-      270567,
-      "Grassy Hill State Natural Area Preserve",
-      145,
-      "name"
-     ],
-     [
-      54450,
-      "Grassy Hill State Natural Area Preserve",
-      74,
-      "words"
      ]
     ],
     "pin": "just outside",
@@ -11616,13 +10949,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": null,
+   "pct": 15,
    "same_agency": false,
-   "score": 5,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -11664,11 +10997,11 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 14,
-   "verdict": "unsure"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-7797": {
-   "cause": "a number 12 parks share from one page (66,000 ac): an agency total, not this park",
+   "cause": "a number 10 parks share from one page (66,000 ac): an agency total, not this park",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Hughlett Point State Natural Area",
@@ -11742,7 +11075,7 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-7798": {
@@ -11827,25 +11160,32 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-7799": {
-   "cause": "a number 12 parks share from one page (66,000 ac): an agency total, not this park",
+   "cause": "a number 10 parks share from one page (66,000 ac): an agency total, not this park",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Mutton Hunk Fen State Natural Area",
    "official": null,
    "ours": {
-    "acres": 928,
+    "acres": 516,
     "dissolved": {
      "after": 928,
      "before": 1964,
      "copies": 2,
+     "families": {
+      "sgvab": 516,
+      "sgvae": 412
+     },
+     "family_fold": 412,
+     "family_used": "sgvab",
      "parts": 2,
      "records": 8,
      "tracts": 4
     },
+    "family_fold": "layers {'sgvab': 516, 'sgvae': 412}: one land in 2 layers, the sgvab copy used (412 ac of copies not added)",
     "manager": "",
     "note": "8 joined records = 4 tracts: 2 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 1964 -> 928 acres",
     "pieces": [
@@ -11853,24 +11193,6 @@
       "sgvab48",
       "Mutton Hunk Fen",
       516,
-      "name"
-     ],
-     [
-      "sgvae486683",
-      "Mutton Hunk Fen State Natural Area Preserve",
-      306,
-      "name"
-     ],
-     [
-      "sgvae486685",
-      "Mutton Hunk Fen State Natural Area Preserve",
-      69,
-      "name"
-     ],
-     [
-      "sgvae486686",
-      "Mutton Hunk Fen State Natural Area Preserve",
-      37,
       "name"
      ]
     ],
@@ -11946,25 +11268,33 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-7801": {
-   "cause": "a number 12 parks share from one page (66,000 ac): an agency total, not this park",
+   "cause": "a number 10 parks share from one page (66,000 ac): an agency total, not this park",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Pinnacle State Natural Area",
    "official": null,
    "ours": {
-    "acres": 1410,
+    "acres": 1269,
     "dissolved": {
      "after": 1410,
      "before": 4070,
      "copies": 6,
+     "families": {
+      "padus": 101,
+      "sgvab": 1269,
+      "sgvae": 40
+     },
+     "family_fold": 141,
+     "family_used": "sgvab",
      "parts": 16,
      "records": 26,
      "tracts": 4
     },
+    "family_fold": "layers {'sgvab': 1269, 'padus': 101, 'sgvae': 40}: one land in 3 layers, the sgvab copy used (141 ac of copies not added)",
     "manager": "",
     "note": "26 joined records = 4 tracts: 6 copies of a tract (same acres, another layer) and 16 fee tracts under a designation record folded; summed 4070 -> 1410 acres",
     "pieces": [
@@ -11972,24 +11302,6 @@
       "sgvab59",
       "Pinnacle",
       1269,
-      "name"
-     ],
-     [
-      54492,
-      "Pinnacle State Natural Area Preserve",
-      75,
-      "words"
-     ],
-     [
-      "sgvae486260",
-      "Pinnacle State Natural Area Preserve",
-      40,
-      "words"
-     ],
-     [
-      270325,
-      "Pinnacle State Natural Area Preserve",
-      26,
       "name"
      ]
     ],
@@ -12047,25 +11359,32 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-7802": {
-   "cause": "a number 12 parks share from one page (66,000 ac): an agency total, not this park",
+   "cause": "a number 10 parks share from one page (66,000 ac): an agency total, not this park",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Poor Mountain State Natural Area",
    "official": null,
    "ours": {
-    "acres": 1632,
+    "acres": 1404,
     "dissolved": {
      "after": 1632,
      "before": 4645,
      "copies": 5,
+     "families": {
+      "padus": 228,
+      "sgvab": 1404
+     },
+     "family_fold": 228,
+     "family_used": "sgvab",
      "parts": 12,
      "records": 21,
      "tracts": 4
     },
+    "family_fold": "layers {'sgvab': 1404, 'padus': 228}: one land in 2 layers, the sgvab copy used (228 ac of copies not added)",
     "manager": "",
     "note": "21 joined records = 4 tracts: 5 copies of a tract (same acres, another layer) and 12 fee tracts under a designation record folded; summed 4645 -> 1632 acres",
     "pieces": [
@@ -12073,24 +11392,6 @@
       "sgvab60",
       "Poor Mountain",
       1404,
-      "name"
-     ],
-     [
-      271183,
-      "Poor Mountain",
-      78,
-      "name"
-     ],
-     [
-      54501,
-      "Poor Mountain State Natural Area Preserve",
-      75,
-      "words"
-     ],
-     [
-      271071,
-      "Poor Mountain",
-      75,
       "name"
      ]
     ],
@@ -12143,25 +11444,40 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-7803": {
-   "cause": "a number 12 parks share from one page (66,000 ac): an agency total, not this park",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Savage Neck Dunes State Natural Area",
-   "official": null,
+   "official": {
+    "acres": 298.0,
+    "as": "298 acre",
+    "clean": false,
+    "line": "gging and removal, coolers, tents, canopies, carts or other wheeled items. Learn more. SITE DESCRIPTION: This 298-acre preserve contains outstanding Chesapeake Bay beach, dune, and maritime forest communities, migratory songbird",
+    "read": "2026-10-29",
+    "sent": "This 298-acre preserve contains outstanding Chesapeake Bay beach, dune, and maritime forest communities, migratory songbird habitat, and the largest population of the globally rare he federally protected northeastern beach tiger beetles ( Habroscelimorpha dorsalis dorsalis",
+    "url": "https://www.dcr.virginia.gov/natural-heritage/natural-area-preserves/savage",
+    "why": "part (a lake, a purchase, a campground…)"
+   },
    "ours": {
-    "acres": 594,
+    "acres": 298,
     "dissolved": {
      "after": 594,
      "before": 1188,
      "copies": 3,
+     "families": {
+      "padus": 296,
+      "sgvab": 298
+     },
+     "family_fold": 296,
+     "family_used": "sgvab",
      "parts": 0,
      "records": 6,
      "tracts": 3
     },
+    "family_fold": "layers {'sgvab': 298, 'padus': 296}: one land in 2 layers, the sgvab copy used (296 ac of copies not added)",
     "manager": "",
     "note": "6 joined records = 3 tracts: 3 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1188 -> 594 acres",
     "pieces": [
@@ -12169,18 +11485,6 @@
       "sgvab62",
       "Savage Neck Dunes",
       298,
-      "name"
-     ],
-     [
-      54506,
-      "Savage Neck Dunes State Natural Area Preserve",
-      151,
-      "name"
-     ],
-     [
-      54505,
-      "Savage Neck Dunes State Natural Area Preserve",
-      145,
       "name"
      ]
     ],
@@ -12217,13 +11521,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": null,
+   "pct": 0,
    "same_agency": false,
-   "score": 5,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -12247,8 +11551,8 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 14,
-   "verdict": "unsure"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-7804": {
    "checked": "2026-10-29",
@@ -12348,7 +11652,7 @@
     }
    ],
    "t": "Park",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-8203": {
@@ -12358,7 +11662,7 @@
    "ours": null,
    "score": null,
    "t": "National Memorial",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-8204": {
@@ -12368,7 +11672,7 @@
    "ours": null,
    "score": null,
    "t": "National Battlefield",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-9897": {
@@ -12378,7 +11682,7 @@
    "ours": null,
    "score": null,
    "t": "National Historical Site",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-9898": {
@@ -12388,7 +11692,7 @@
    "ours": null,
    "score": null,
    "t": "National Historic Trail",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-9899": {
@@ -12442,7 +11746,7 @@
    },
    "sizes": [],
    "t": "National Historical Site",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-9900": {
@@ -12452,7 +11756,7 @@
    "ours": null,
    "score": null,
    "t": "National Historical Site",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-9901": {
@@ -12462,7 +11766,7 @@
    "ours": null,
    "score": null,
    "t": "National Historic Trail",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-9902": {
@@ -12530,7 +11834,7 @@
     }
    ],
    "t": "National Parkway",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-9903": {
@@ -12583,7 +11887,7 @@
     }
    ],
    "t": "National Recreation Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-9904": {
@@ -12593,7 +11897,7 @@
    "ours": null,
    "score": null,
    "t": "National Recreation Trail",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-9905": {
@@ -12603,7 +11907,7 @@
    "ours": null,
    "score": null,
    "t": "National Recreation Trail",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-9906": {
@@ -12613,7 +11917,7 @@
    "ours": null,
    "score": null,
    "t": "National Recreation Trail",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-9907": {
@@ -12659,7 +11963,7 @@
    },
    "sizes": [],
    "t": "National Recreation Trail",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-9908": {
@@ -12669,7 +11973,7 @@
    "ours": null,
    "score": null,
    "t": "National Recreation Trail",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-9909": {
@@ -12679,7 +11983,7 @@
    "ours": null,
    "score": null,
    "t": "National Recreation Trail",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-9910": {
@@ -12689,7 +11993,7 @@
    "ours": null,
    "score": null,
    "t": "National Recreation Trail",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-9920": {
@@ -12699,7 +12003,7 @@
    "ours": null,
    "score": null,
    "t": "National Recreation Trail",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-9922": {
@@ -12709,7 +12013,7 @@
    "ours": null,
    "score": null,
    "t": "National Recreation Trail",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-9923": {
@@ -12719,7 +12023,7 @@
    "ours": null,
    "score": null,
    "t": "National Recreation Trail",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-9925": {
@@ -12729,7 +12033,7 @@
    "ours": null,
    "score": null,
    "t": "National Recreation Trail",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-9926": {
@@ -12849,34 +12153,41 @@
     }
    ],
    "t": "State Forest",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-9927": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 800 acres, no total words near it)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Charlotte State Forest",
    "official": {
-    "acres": 800.0,
-    "as": "800 acres",
+    "acres": 6504.0,
+    "as": "6,504 acres",
     "clean": false,
-    "line": "ake the forest an exceptional forest for public use, wildlife, research, and timber production. Approximately 800 acres of forested wetland provide unparalleled waterfowl habitat and its five miles of Roanoke and Wards Fork Creek",
+    "line": "Find a Forester Upcoming Events Charlotte State Forest Overview The Charlotte State Forest (Charlotte SF) is 6,504 acres (2,531 acres acquired in late 2020 as phase I, 2,474 acres acquired in 2021 as phase II, 683 acres acquired i",
     "read": "2026-10-29",
-    "sent": "Approximately 800 acres of forested wetland provide unparalleled waterfowl habitat and its five miles of Roanoke and Wards Fork Creeks provide habitat for Virginia-threatened Carolina darter while protecting water quality flowing into the US Army Corps of Engineer&#x2019;s John H.",
+    "sent": "The Charlotte State Forest (Charlotte SF) is 6,504 acres (2,531 acres acquired in late 2020 as phase I, 2,474 acres acquired in 2021 as phase II, 683 acres acquired in 2023 as phase III, and 231 acres acquired in 2025 as phase IV, and 585 acres acquired in 2026 as phase V) in Charlotte County.",
     "url": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/charlotte-state-forest/",
-    "why": "no total words near it"
+    "why": "part (a lake, a purchase, a campground…)"
    },
    "ours": {
-    "acres": 12188,
+    "acres": 6503,
     "dissolved": {
      "after": 12188,
      "before": 22196,
      "copies": 2,
+     "families": {
+      "padus": 5002,
+      "sgvaa": 6503,
+      "sgvae": 683
+     },
+     "family_fold": 5685,
+     "family_used": "sgvaa",
      "parts": 2,
      "records": 8,
      "tracts": 4
     },
+    "family_fold": "layers {'sgvaa': 6503, 'padus': 5002, 'sgvae': 683}: one land in 3 layers, the sgvaa copy used (5,685 ac of copies not added)",
     "manager": "",
     "note": "8 joined records = 4 tracts: 2 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 22196 -> 12188 acres",
     "pieces": [
@@ -12884,24 +12195,6 @@
       "sgvaa27",
       "Charlotte State Forest",
       6503,
-      "name"
-     ],
-     [
-      270714,
-      "Charlotte State Forest",
-      5002,
-      "name"
-     ],
-     [
-      "sgvae487066",
-      "Charlotte State Forest",
-      360,
-      "name"
-     ],
-     [
-      "sgvae487068",
-      "Charlotte State Forest",
-      323,
       "name"
      ]
     ],
@@ -12922,13 +12215,13 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 1424,
+   "pct": 0,
    "same_agency": false,
-   "score": 7,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -13006,34 +12299,40 @@
     }
    ],
    "t": "State Forest",
-   "ver": 14,
-   "verdict": "unsure"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-9928": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 44.171 acres, no total words near it)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Devil's Backbone State Forest",
    "official": {
-    "acres": 44.2,
-    "as": "44.171 acres",
+    "acres": 706.0,
+    "as": "706 acres",
     "clean": false,
-    "line": "3. 85.736 acres was purchased from the Hoffman Estate in 2016. Mrs. Judith Dyke by conveyance of title gifted 44.171 acres in 2002. An additional 26.627 acres was acquired through quitclaim deed in 2008. Forest Management Forest Man",
+    "line": "Devil's Backbone State Forest - General Map Shenandoah County - 706 acres Legend State Forest Gate mParking Roads and Trails I = State Route I/ I / Forest Road I{ I\\ I . Gate",
     "read": "2026-10-29",
-    "sent": "Judith Dyke by conveyance of title gifted 44.171 acres in 2002.",
-    "url": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/devils-backbone/",
-    "why": "no total words near it"
+    "sent": "Shenandoah County - 706 acres",
+    "url": "https://www.dof.virginia.gov/wp-content/uploads/Devils-Backbone-SF-General-Map.pdf",
+    "why": "a map label (no sentence)"
    },
    "ours": {
-    "acres": 1289,
+    "acres": 717,
     "dissolved": {
      "after": 1289,
      "before": 2115,
      "copies": 4,
+     "families": {
+      "padus": 572,
+      "sgvaa": 717
+     },
+     "family_fold": 572,
+     "family_used": "sgvaa",
      "parts": 0,
      "records": 10,
      "tracts": 6
     },
+    "family_fold": "layers {'sgvaa': 717, 'padus': 572}: one land in 2 layers, the sgvaa copy used (572 ac of copies not added)",
     "manager": "",
     "note": "10 joined records = 6 tracts: 4 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 2115 -> 1289 acres",
     "pieces": [
@@ -13041,36 +12340,6 @@
       "sgvaa38",
       "Devil's Backbone State Forest",
       717,
-      "name"
-     ],
-     [
-      57430,
-      "Devils Backbone State Forest",
-      360,
-      "name"
-     ],
-     [
-      57432,
-      "Devils Backbone State Forest",
-      86,
-      "name"
-     ],
-     [
-      270420,
-      "Devils Backbone State Forest",
-      86,
-      "name"
-     ],
-     [
-      57431,
-      "Devils Backbone State Forest",
-      20,
-      "name"
-     ],
-     [
-      270419,
-      "Devils Backbone State Forest",
-      20,
       "name"
      ]
     ],
@@ -13091,13 +12360,13 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 2816,
+   "pct": 2,
    "same_agency": false,
-   "score": 7,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -13157,11 +12426,10 @@
     }
    ],
    "t": "State Forest",
-   "ver": 14,
-   "verdict": "unsure"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-9929": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "First Mountain State Forest",
@@ -13176,15 +12444,22 @@
     "why": "clean total"
    },
    "ours": {
-    "acres": 1203,
+    "acres": 620,
     "dissolved": {
      "after": 1203,
      "before": 2397,
      "copies": 2,
+     "families": {
+      "padus": 620,
+      "sgvae": 583
+     },
+     "family_fold": 583,
+     "family_used": "padus",
      "parts": 0,
      "records": 4,
      "tracts": 2
     },
+    "family_fold": "layers {'padus': 620, 'sgvae': 583}: one land in 2 layers, the padus copy used (583 ac of copies not added)",
     "manager": "",
     "note": "4 joined records = 2 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 2397 -> 1203 acres",
     "pieces": [
@@ -13192,12 +12467,6 @@
       57435,
       "First Mountain State Forest",
       620,
-      "name"
-     ],
-     [
-      "sgvae487000",
-      "First Mountain State Forest",
-      583,
       "name"
      ]
     ],
@@ -13218,13 +12487,13 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 110,
+   "pct": 8,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -13248,8 +12517,8 @@
     }
    ],
    "t": "State Forest",
-   "ver": 14,
-   "verdict": "off"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-9930": {
    "checked": "2026-10-29",
@@ -13323,7 +12592,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-9931": {
@@ -13333,7 +12602,7 @@
    "ours": null,
    "score": null,
    "t": "State Historic Site",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-9932": {
@@ -13442,7 +12711,7 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-9933": {
@@ -13452,7 +12721,7 @@
    "ours": null,
    "score": null,
    "t": "State Trail",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-9934": {
@@ -13462,7 +12731,7 @@
    "ours": null,
    "score": null,
    "t": "State Trail",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-9935": {
@@ -13472,10 +12741,11 @@
    "ours": null,
    "score": null,
    "t": "State Trail",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-9936": {
+   "cause": "agency bigger: our outline may miss a tract",
    "checked": "2026-10-29",
    "handover": [
     {
@@ -13499,15 +12769,22 @@
     "why": "total-looking"
    },
    "ours": {
-    "acres": 884,
+    "acres": 604,
     "dissolved": {
      "after": 884,
      "before": 2372,
      "copies": 3,
+     "families": {
+      "padus": 604,
+      "sgvad": 280
+     },
+     "family_fold": 280,
+     "family_used": "padus",
      "parts": 0,
      "records": 5,
      "tracts": 2
     },
+    "family_fold": "layers {'padus': 604, 'sgvad': 280}: one land in 2 layers, the padus copy used (280 ac of copies not added)",
     "manager": "",
     "note": "5 joined records = 2 tracts: 3 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 2372 -> 884 acres",
     "pieces": [
@@ -13515,12 +12792,6 @@
       54680,
       "Sweet Run State Park",
       604,
-      "name"
-     ],
-     [
-      "sgvad316",
-      "Sweet Run State Park",
-      280,
       "name"
      ]
     ],
@@ -13546,13 +12817,13 @@
      "why": "about / history page of the park's site"
     }
    ],
-   "pct": 0,
+   "pct": 32,
    "same_agency": false,
-   "score": 8,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 0,
     "source": 2
    },
    "sizes": [
@@ -13585,8 +12856,8 @@
     }
    ],
    "t": "State Park",
-   "ver": 14,
-   "verdict": "agree"
+   "ver": 15,
+   "verdict": "off"
   },
   "US-9937": {
    "checked": "2026-10-29",
@@ -13652,7 +12923,7 @@
     }
    ],
    "t": "BLM Special Recreation Management Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "agree"
   },
   "US-9938": {
@@ -13724,7 +12995,7 @@
     }
    ],
    "t": "Wilderness Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-9939": {
@@ -13796,7 +13067,7 @@
     }
    ],
    "t": "Wilderness Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-9940": {
@@ -13873,7 +13144,7 @@
     }
    ],
    "t": "Wilderness Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-9941": {
@@ -13950,7 +13221,7 @@
     }
    ],
    "t": "Wilderness Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-9942": {
@@ -14021,7 +13292,7 @@
     }
    ],
    "t": "Wilderness Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-9943": {
@@ -14084,7 +13355,7 @@
     }
    ],
    "t": "Wilderness Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-9944": {
@@ -14156,7 +13427,7 @@
     }
    ],
    "t": "Wilderness Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-9945": {
@@ -14167,19 +13438,14 @@
    "n": "Kimberling Creek Wilderness Area",
    "official": null,
    "ours": {
-    "acres": 12365,
+    "acres": 6273,
+    "family_fold": "layers {'sgvae': 6273, 'wld': 6092}: one land in 2 layers, the sgvae copy used (6,092 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
       "sgvae500349",
       "Kimberling Creek NF Wilderness Area",
       6273,
-      "name"
-     ],
-     [
-      "wld252",
-      "Kimberling Creek Wilderness",
-      6092,
       "name"
      ]
     ],
@@ -14225,7 +13491,7 @@
     }
    ],
    "t": "Wilderness Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-9946": {
@@ -14297,7 +13563,7 @@
     }
    ],
    "t": "Wilderness Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-9947": {
@@ -14348,7 +13614,7 @@
    },
    "sizes": [],
    "t": "Wilderness Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-9948": {
@@ -14404,7 +13670,7 @@
    },
    "sizes": [],
    "t": "Wilderness Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-9949": {
@@ -14414,19 +13680,14 @@
    "n": "Mountain Lake Wilderness Area",
    "official": null,
    "ours": {
-    "acres": 29890,
+    "acres": 16585,
+    "family_fold": "layers {'wld': 16585, 'sgvae': 13305}: one land in 2 layers, the wld copy used (13,305 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
       "wld288",
       "Mountain Lake Wilderness",
       16585,
-      "name"
-     ],
-     [
-      "sgvae500353",
-      "Mountain Lake NF Wilderness Area",
-      13305,
       "name"
      ]
     ],
@@ -14457,7 +13718,7 @@
    },
    "sizes": [],
    "t": "Wilderness Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-9950": {
@@ -14513,7 +13774,7 @@
    },
    "sizes": [],
    "t": "Wilderness Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-9951": {
@@ -14569,7 +13830,7 @@
    },
    "sizes": [],
    "t": "Wilderness Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-9952": {
@@ -14620,7 +13881,7 @@
    },
    "sizes": [],
    "t": "Wilderness Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-9953": {
@@ -14671,7 +13932,7 @@
    },
    "sizes": [],
    "t": "Wilderness Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-9954": {
@@ -14722,7 +13983,7 @@
    },
    "sizes": [],
    "t": "Wilderness Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-9955": {
@@ -14773,7 +14034,7 @@
    },
    "sizes": [],
    "t": "Wilderness Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-9956": {
@@ -14824,7 +14085,7 @@
    },
    "sizes": [],
    "t": "Wilderness Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-9957": {
@@ -14965,7 +14226,7 @@
     }
    ],
    "t": "Wilderness Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-9958": {
@@ -15016,7 +14277,7 @@
    },
    "sizes": [],
    "t": "Wilderness Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-9959": {
@@ -15067,7 +14328,7 @@
    },
    "sizes": [],
    "t": "Wilderness Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-9960": {
@@ -15118,7 +14379,7 @@
    },
    "sizes": [],
    "t": "Wilderness Area",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-9961": {
@@ -15128,7 +14389,7 @@
    "ours": null,
    "score": null,
    "t": "Wildlife Reserve",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-9966": {
@@ -15220,7 +14481,7 @@
     }
    ],
    "t": "State Fish Hatchery",
-   "ver": 14,
+   "ver": 15,
    "verdict": "off"
   },
   "US-9967": {
@@ -15311,10 +14572,11 @@
     }
    ],
    "t": "State Fish Hatchery",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-9968": {
+   "cause": "agency bigger: our outline may miss a tract",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Buller State Fish Hatchery",
@@ -15329,15 +14591,22 @@
     "why": "clean total"
    },
    "ours": {
-    "acres": 148,
+    "acres": 116,
     "dissolved": {
      "after": 148,
      "before": 264,
      "copies": 0,
+     "families": {
+      "padus": 116,
+      "sgvae": 32
+     },
+     "family_fold": 32,
+     "family_used": "padus",
      "parts": 2,
      "records": 4,
      "tracts": 2
     },
+    "family_fold": "layers {'padus': 116, 'sgvae': 32}: one land in 2 layers, the padus copy used (32 ac of copies not added)",
     "manager": "",
     "note": "4 joined records = 2 tracts: 0 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 264 -> 148 acres",
     "pieces": [
@@ -15345,12 +14614,6 @@
       270527,
       "Buller Fish Hatchery",
       116,
-      "name"
-     ],
-     [
-      "sgvae486787",
-      "Buller Fish Hatchery",
-      32,
       "name"
      ]
     ],
@@ -15372,13 +14635,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 1,
+   "pct": 21,
    "same_agency": false,
-   "score": 8,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 0,
     "source": 2
    },
    "sizes": [
@@ -15402,8 +14665,8 @@
     }
    ],
    "t": "State Fish Hatchery",
-   "ver": 14,
-   "verdict": "agree"
+   "ver": 15,
+   "verdict": "off"
   },
   "US-9969": {
    "checked": "2026-10-29",
@@ -15464,7 +14727,7 @@
    },
    "sizes": [],
    "t": "State Fish Hatchery",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-9970": {
@@ -15473,15 +14736,22 @@
    "n": "Marion Trout State Fish Hatchery",
    "official": null,
    "ours": {
-    "acres": 281,
+    "acres": 176,
     "dissolved": {
      "after": 281,
      "before": 528,
      "copies": 1,
+     "families": {
+      "padus": 176,
+      "sgvae": 105
+     },
+     "family_fold": 105,
+     "family_used": "padus",
      "parts": 2,
      "records": 6,
      "tracts": 3
     },
+    "family_fold": "layers {'padus': 176, 'sgvae': 105}: one land in 2 layers, the padus copy used (105 ac of copies not added)",
     "manager": "",
     "note": "6 joined records = 3 tracts: 1 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 528 -> 281 acres",
     "pieces": [
@@ -15489,18 +14759,6 @@
       270532,
       "Marion Fish Hatchery",
       176,
-      "words"
-     ],
-     [
-      "sgvae486790",
-      "Marion Fish Hatchery",
-      94,
-      "words"
-     ],
-     [
-      "sgvae486789",
-      "Marion Fish Hatchery",
-      11,
       "words"
      ]
     ],
@@ -15532,7 +14790,7 @@
    },
    "sizes": [],
    "t": "State Fish Hatchery",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-9971": {
@@ -15594,7 +14852,7 @@
    },
    "sizes": [],
    "t": "State Fish Hatchery",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-9972": {
@@ -15679,7 +14937,7 @@
     }
    ],
    "t": "State Fish Hatchery",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-9973": {
@@ -15698,25 +14956,14 @@
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 160,
+    "acres": 134,
+    "family_fold": "layers {'sgvae': 134, 'padus': 26}: one land in 2 layers, the sgvae copy used (26 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
       "sgvae486472",
       "Wytheville State Fish Hatchery",
       134,
-      "name"
-     ],
-     [
-      58219,
-      "Wytheville Fish Hatchery",
-      13,
-      "name"
-     ],
-     [
-      270536,
-      "Wytheville Fish Hatchery",
-      13,
       "name"
      ]
     ],
@@ -15738,7 +14985,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 60,
+   "pct": 34,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -15759,7 +15006,7 @@
     }
    ],
    "t": "State Fish Hatchery",
-   "ver": 14,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-9974": {
@@ -15821,7 +15068,7 @@
    },
    "sizes": [],
    "t": "State Fish Hatchery",
-   "ver": 14,
+   "ver": 15,
    "verdict": "no size on page"
   }
  },
