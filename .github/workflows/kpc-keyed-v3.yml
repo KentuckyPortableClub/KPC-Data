@@ -1,0 +1,43 @@
+name: KPC keyed pull HOLD v3 (temporary, chat 9; no new calls)
+# Oct 29 (HQ 11:22-11:27 rulings): rebuilds data/access-leads/keyed-pull-hold.json from the SAVED copy, testing each point
+# against the park's saved outline (KPC-Links boundary-cache release). Calls neither Recreation.gov nor the Park Service.
+# By hand only, never fails. DELETE this file + the script after the run.
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: kpc-keyed-v3
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v5
+      - name: KPC-Links scripts + saved outlines (read only)
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git clone -q --depth 1 --filter=blob:none --no-checkout https://github.com/KentuckyPortableClub/KPC-Links links
+          git -C links sparse-checkout set --no-cone .github/scripts && git -C links checkout -q
+          mkdir -p cache/us
+          gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'US-*.json.gz' -D cache/us --clobber || true
+          rm -f cache/us/prev-* || true
+          ls cache/us | wc -l
+      - run: python3 .github/scripts/kpc_keyed_v3.py || true
+        continue-on-error: true
+        env:
+          LINKS_SCRIPTS: links/.github/scripts
+          GEO_CACHE: cache/us
+          GEO_CACHE_MODE: use
+      - name: Save
+        continue-on-error: true
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/access-leads/keyed-pull-hold.json 2>/dev/null || exit 0
+          git diff --cached --quiet && exit 0
+          git commit -qm 'Keyed pull HOLD v3 (rebuilt from the saved copy; not live)'
+          for i in 1 2 3; do git pull -q --rebase --autostash && git push -q && exit 0; sleep $((i*8)); done
+          true
