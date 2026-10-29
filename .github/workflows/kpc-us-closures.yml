@@ -1,11 +1,10 @@
 name: KPC US park closures (state agencies)
+# OFF since Oct 29 (Brandon's SCOPE: no closures outside Kentucky): timer removed, by hand only (the script also stops unless FORCE_RUN=1).
 # Moved here from KPC-Links Oct 27 (storage plan Stage 2, step B5; chat 5; the closure watcher itself is chat 2's).
 # Reads the state agencies' own closure feeds and ties them to POTA parks -> data/alerts/us-parks.json (pages read it here).
 # KPC-Links keeps a small merge job (its kpc-us-closures.yml, 30 min later) that copies these 'uc-' items into its
 # kpc-conditions.json, the small file the park cards need. Posts nothing. Every 6 hours + by hand. Never fails. No secrets.
 on:
-  schedule:
-    - cron: '23 1,7,13,19 * * *'
   workflow_dispatch:
 permissions:
   contents: write
