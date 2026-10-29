@@ -496,6 +496,19 @@
      "new": "live"
     }
    ]
+  },
+  {
+   "name": "G5: a big-change hold with no stamp still HOLDS (stamps.json empty)",
+   "repo": "data",
+   "expect": "HOLD",
+   "catch": "new candidate pairs|candidate pairs are still",
+   "files": [
+    {
+     "path": "data/fers/US-OH.json",
+     "new": "live",
+     "transform": "near_swap:0.16"
+    }
+   ]
   }
  ]
 }

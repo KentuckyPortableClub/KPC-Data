@@ -73,6 +73,8 @@ def st_of(path):
 _PARKS = {}
 def parks(st):
     """POTA park pins for a state: [name, ?, type, ..., lat, lon] rows from data/parkinfo (the shared park list, not a bot's own)."""
+    if st not in _PARKS and st.startswith('CA-'):   # Canada: POTA's own list (data/canada.json), same row shape as parkinfo
+        _PARKS[st] = {r[1]: [r[2], '', '', None, None, r[3], r[4]] for r in (load(DATA / 'data' / 'canada.json', {}) or {}).get('rows') or [] if r[0] == 'POTA' and (r[3], r[4]) != (0, 0)}
     if st not in _PARKS:
         _PARKS[st] = (load(DATA / 'data' / 'parkinfo' / f'US-{st}.json', {}) or load(LINKS / 'data' / 'parkinfo' / f'US-{st}.json', {}) or {}).get('parks')
         if not _PARKS[st] and st == 'KY':   # Kentucky's pins live in the site's own park data (KPC-Links kpc-ky-data.json)
@@ -140,7 +142,8 @@ def share(urls, n_parks, cap=20, pct=.10):
 # each: (path, new, live, ctx) -> (holds [reasons], notes [info]); raise Unsure when it cannot judge. ctx['set'] = {path: new} of the batch.
 
 def c_access(path, new, live, ctx):
-    st = st_of(path); P = parks(st); K = known('access')
+    ca = area_of(path).startswith('CA-')
+    st = st_of(path); P = parks('CA-' if ca else st); K = known('access')
     holds, notes = [], []
     far, outside, unknown, n_new = [], 0, 0, 0
     for ref, pts in (new.get('parks') or {}).items():
@@ -151,7 +154,7 @@ def c_access(path, new, live, ctx):
             n_new += 1
             if abs(q[0]) < .01 and abs(q[1]) < .01: outside += 1; continue
             if v[5] is not None and not line and km(v[5], v[6], q[0], q[1]) > K.get('far_km', 100): far.append((ref, round(km(v[5], v[6], q[0], q[1]))))
-            elif not in_state(st, q[0], q[1], .3): outside += 1
+            elif not ca and not in_state(st, q[0], q[1], .3): outside += 1   # Canada: no province outlines on file; the 100 km pin test still runs
     n_old = sum(len(v) for v in ((live or {}).get('parks') or {}).values())
     if far: holds.append(f'F-A1 {len(far)} points over {K.get("far_km", 100)} km from their park pin (not a line park), e.g. ' + ', '.join(f'{r} {k} km' for r, k in far[:3]))
     if drop(n_old, n_new, .6, 20): holds.append(f'F-A2 points {n_old} -> {n_new} (more than 40% gone)')
@@ -577,6 +580,7 @@ def closures_filter(path, new, live):
 
 # ------------------------------------------------------------------------------------------------ routing (unknown kind = HOLD)
 ROUTES = [
+    (r'^data/access/index\.json$', 'info', lambda path, new, live, ctx: ([], ['the access index: passes when it reads as JSON'])),
     (r'^data/access/[^/]+\.json$', 'access', c_access),
     (r'^data/campfed/US-[A-Z]{2}\.json$', 'campfed', c_campfed),
     (r'^data/campstate/US-[A-Z]{2}\.json$', 'campstate', c_campstate),
@@ -620,6 +624,23 @@ def rows_in(d):
     return 0
 
 
+BIG_CHANGE = re.compile(r'over 30% change|live candidate pairs are still there|new candidate pairs since|more than 40% gone|more than 1% lost|under half|over 10% fewer|more than 1% or 5 gone')
+
+
+def apply_stamp(path, kind, holds):
+    """G5 (Brandon Oct 29 7:26 AM 'Yes'): after an INTENDED rule change, one narrow stamp (by Brandon, or chat 8 for him) naming the rule
+    and the areas waives ONLY the 'big change' alarms for those files, for 7 days; every other check still runs. Stamps live in
+    data/waiting/known/stamps.json: {"stamps": [{"rule": "NS label fix", "kind": "fers", "areas": ["CA-NS"], "by": "Brandon", "date": "2026-10-29"}]}."""
+    area = area_of(path) or ('US-' + st_of(path) if st_of(path) else '')
+    keep, waived = [], []
+    for h in holds:
+        s = next((s for s in (known('stamps').get('stamps') or []) if BIG_CHANGE.search(h) and s.get('kind') in (kind, '*') and area in (s.get('areas') or [])
+                  and s.get('by') and str(s.get('date', '')) <= TODAY.isoformat() <= str(s.get('until') or (dt.date.fromisoformat(str(s['date'])) + dt.timedelta(days=7)).isoformat())), None)
+        if s: waived.append(f"G5 stamp '{s.get('rule')}' ({s.get('by')}, {s.get('date')}) waived: {h}")
+        else: keep.append(h)
+    return keep, waived
+
+
 def judge(path, new, live, twin=None, ctx=None):
     """-> {'path','kind','verdict': PASS|HOLD|LIVE-FILTERED,'why': [..],'notes': [..], 'out': file to publish (closures)}"""
     ctx = ctx or {}
@@ -640,7 +661,8 @@ def judge(path, new, live, twin=None, ctx=None):
         holds, notes = fn(path, new, live, ctx)
         h2, _ = c_status(path, new, live, ctx) if kind != 'status' else ([], [])
         holds += h2
-        res.update(verdict='HOLD' if holds else 'PASS', why=holds, notes=res['notes'] + notes)
+        holds, waived = apply_stamp(path, kind, holds)
+        res.update(verdict='HOLD' if holds else 'PASS', why=holds, notes=res['notes'] + notes + waived)
     except Unsure as e: res.update(verdict='HOLD', why=[f'F-4 unsure: {e}'])
     except Exception as e:  # noqa: BLE001  (own error = hold, fail closed)
         res.update(verdict='HOLD', why=[f'F-4 checker error: {type(e).__name__}: {str(e)[:160]}'])

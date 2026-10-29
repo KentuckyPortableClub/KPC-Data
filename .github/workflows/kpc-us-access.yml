@@ -54,7 +54,13 @@ jobs:
         if: always()
         continue-on-error: true
         run: |
-          mkdir -p kpcdata/data/access/ && rm -rf kpcdata/data/access/ && cp -a data/access kpcdata/data/access 2>/dev/null || true
+          # Oct 29 (Brandon's GO, the WAITING ROOM PILOT): changed access files no longer go live directly. They go to
+          # data/waiting/in/, and the waiting room (kpc_waiting_room.py, Rule Sheet F) promotes each one that passes; a held file
+          # stays waiting (the old one stays live) and a look line goes to chat 11 (data/status/inbox-checkers.md).
+          mkdir -p kpcdata/data/waiting/in/data/access; n=0
+          for f in data/access/*.json; do b=$(basename "$f"); if ! cmp -s "$f" "kpcdata/data/access/$b"; then cp "$f" "kpcdata/data/waiting/in/data/access/$b"; n=$((n+1)); fi; done
+          echo "::notice title=Waiting room pilot::$n changed access files sent to the waiting room"
+          (cd kpcdata && LINKS=.. NET=1 WAITING_ON=1 python3 .github/scripts/kpc_waiting_room.py check --promote) || true
           for f in data/status/*.json; do [ "$f" -nt /tmp/kpc-start ] && ! cmp -s "$f" "kpcdata/$f" && mkdir -p kpcdata/data/status && cp "$f" "kpcdata/$f"; done; true
           # Oct 28 self-grade: one 'grade me' (or 'FAILED its gate') line per batch for the checkers (data/status/inbox-checkers.md)
           if [ -s /tmp/kpc-gate.txt ]; then IFS=$'\t' read -r G A N < /tmp/kpc-gate.txt
