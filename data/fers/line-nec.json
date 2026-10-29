@@ -8,13 +8,13 @@
   "US-ME"
  ],
  "since": "2026-10-29",
- "date": "2026-10-29 02:34 UTC",
+ "date": "2026-10-29 05:57 UTC",
  "verdict": "READY FOR CHAT 8",
  "why": [],
- "known_answers": "18/18 on 2026-10-29",
+ "known_answers": "19/19 on 2026-10-29",
  "missing_check": {
-  "FOUND": 90,
-  "DROPPED": 305,
+  "FOUND": 91,
+  "DROPPED": 304,
   "NEVER LOOKED AT": 1527
  },
  "report": {
@@ -24,14 +24,14 @@
    "pairs whose boxes touch": 1933
   },
   "pass2": {
-   "agree with the pass before": 548,
+   "agree with the pass before": 549,
    "date": "2026-10-29",
    "pairs tested": 255
   },
   "pass3": {
-   "agree with the pass before": 329,
+   "agree with the pass before": 331,
    "date": "2026-10-29",
-   "pairs tested": 238
+   "pairs tested": 239
   },
   "pass5": {
    "checked": 44,
@@ -47,47 +47,54 @@
   "US-ME": "data/fers/US-ME.json"
  },
  "US-MA": {
-  "rows": 485,
-  "live": 76,
+  "rows": 503,
+  "live": 87,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "no public owner on the ownership map": 1
   },
-  "dropped": 206,
-  "merged": 202
+  "dropped": 207,
+  "merged": 208
  },
  "US-VT": {
-  "rows": 90,
-  "live": 7,
+  "rows": 94,
+  "live": 9,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "no public owner on the ownership map": 1
   },
   "dropped": 54,
-  "merged": 28
+  "merged": 30
  },
  "US-NH": {
-  "rows": 158,
-  "live": 24,
+  "rows": 167,
+  "live": 28,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "the outlines overlap, but the Forest Service ownership map": 4
   },
-  "dropped": 53,
-  "merged": 77
+  "dropped": 56,
+  "merged": 79
  },
  "US-ME": {
-  "rows": 53,
-  "live": 19,
+  "rows": 23,
+  "live": 4,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "no public owner on the ownership map": 2
   },
-  "dropped": 18,
-  "merged": 14
- }
+  "dropped": 12,
+  "merged": 5
+ },
+ "states_ready": [
+  "US-MA",
+  "US-VT",
+  "US-NH",
+  "US-ME"
+ ],
+ "states_held": []
 }

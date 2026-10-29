@@ -12,8 +12,8 @@
  "date": "2026-10-29",
  "pass": true,
  "counts": {
-  "FOUND": 90,
-  "DROPPED": 305,
+  "FOUND": 91,
+  "DROPPED": 304,
   "NEVER LOOKED AT": 1527
  },
  "FOUND": [
@@ -152,6 +152,17 @@
   {
    "refs": [
     "US-0891",
+    "US-2430"
+   ],
+   "why_expected": [
+    "POTA shows one session logged both parks",
+    "activated together by the same call on the same day (165x, POTA history)"
+   ],
+   "row": "US-0891+US-2430@river@41.809,-71.118"
+  },
+  {
+   "refs": [
+    "US-0891",
     "US-2446"
    ],
    "why_expected": [
@@ -179,7 +190,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "row": "US-0897+US-4714@river@42.259,-72.942"
+   "row": "US-0897+US-4714@river@42.249,-72.923"
   },
   {
    "refs": [
@@ -1458,18 +1469,6 @@
     "activated together by the same call on the same day (1x, POTA history)"
    ],
    "reason": "dropped in pass 3",
-   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
-  },
-  {
-   "refs": [
-    "US-0891",
-    "US-2430"
-   ],
-   "why_expected": [
-    "POTA shows one session logged both parks",
-    "activated together by the same call on the same day (165x, POTA history)"
-   ],
-   "reason": "dropped in pass 2",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   },
   {
