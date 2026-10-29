@@ -13,11 +13,9 @@
   "US-MS"
  ],
  "since": "2026-10-28",
- "date": "2026-10-29 01:43 UTC",
+ "date": "2026-10-29 02:18 UTC",
  "verdict": "STOPPED",
  "why": [
-  "water service: US-TN: 1 rows not checked because the USGS water map did not answer (run the worker again)",
-  "water service: US-VA: 13 rows not checked because the USGS water map did not answer (run the worker again)",
   "US-MS: 24 rows still waiting for a pass (out of time: run the worker again)"
  ],
  "known_answers": "18/18 on 2026-10-29",
@@ -43,15 +41,26 @@
    "pairs tested": 0
   },
   "pass5": {
-   "checked": 437,
+   "checked": 414,
    "date": "2026-10-29",
    "pairs tested": 0,
    "still not checked": 1
   }
  },
+ "files": {
+  "US-TN": "data/fers/US-TN.json",
+  "US-NC": "data/fers/US-NC.json",
+  "US-VA": "data/fers/US-VA.json",
+  "US-WV": "data/fers/US-WV.json",
+  "US-GA": "data/fers/US-GA.json",
+  "US-AL": "data/fers/US-AL.json",
+  "US-SC": "data/fers/US-SC.json",
+  "US-FL": "data/fers/US-FL.json",
+  "US-MS": "data/fers/US-MS.json"
+ },
  "US-TN": {
-  "rows": 688,
-  "live": 82,
+  "rows": 687,
+  "live": 81,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
@@ -63,6 +72,10 @@
   },
   "dropped": 514,
   "merged": 86
+ },
+ "water_weak": {
+  "US-TN": 1,
+  "US-VA": 13
  },
  "US-NC": {
   "rows": 901,
@@ -78,8 +91,8 @@
   "merged": 210
  },
  "US-VA": {
-  "rows": 144,
-  "live": 43,
+  "rows": 143,
+  "live": 42,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
