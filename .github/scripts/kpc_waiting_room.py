@@ -275,9 +275,11 @@ def c_hours(path, new, live, ctx):
             if lines and len(notime) / len(lines) > .2: holds.append(f'F-H3 {len(notime)} of {len(lines)} hours lines have no time, e.g. "{notime[0][:60]}"')
         heads = [l for r in P.values() for x in (r.get(kind) or []) for l in [x.get('line') or ''] if l.strip().endswith(':')]
         if heads: holds.append(f'F-H4 {len(heads)} {kind} lines are headings ending ":"')
-    for ref, rule in (known('hours').get(st_of(path)) or {}).items():
+    for key, rule in (known('hours').get(st_of(path)) or {}).items():
+        ref = rule.get('ref') or key   # Oct 28 (Fable): a key may carry a suffix so one park can have several rules; 'ref' names the park
         txt = json.dumps((P.get(ref) or {}).get(rule['field']) or '')
         if rule.get('never') and re.search(rule['never'], txt, re.I): holds.append(f"F-K known answer: {ref} {rule['field']} must never match '{rule['never']}'")
+        if rule.get('must') and not re.search(rule['must'], txt, re.I): holds.append(f"F-K known answer: {ref} {rule['field']} must still carry '{rule['must']}' ({rule.get('what', '')[:50]})")
     return holds, notes
 
 

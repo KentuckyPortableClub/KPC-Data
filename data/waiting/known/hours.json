@@ -1,12 +1,71 @@
 {
- "about": "Permanent known answers for the hours / fees / permits bot (F-K).",
+ "about": "Permanent known answers for the hours / fees / permits bot (F-K). 'never' = the field must not match; 'must' = the field must match (a row the bot must keep finding; chat 11 verified each on the agency page, Oct 28).",
  "KY": {
   "US-10173": {
    "field": "fees",
-   "never": "million"
+   "never": "million",
+   "what": "Kentucky Horse Park: '$5 Million Renovation' headline is not a fee"
+  },
+  "US-7954": {
+   "field": "hours",
+   "must": "3\\s*pm\\s*to\\s*dusk",
+   "what": "Blackacre: weekdays 3 pm to dusk (eec.ky.gov Blackacre page)"
+  },
+  "US-10099": {
+   "field": "hours",
+   "must": "8:?00\\s*am\\s*-\\s*4:?00\\s*pm",
+   "what": "Wolf Creek hatchery 8-4 (fws.gov)"
+  },
+  "US-10099f": {
+   "ref": "US-10099",
+   "field": "fees",
+   "must": "no fee",
+   "what": "Wolf Creek: no fee to visit"
+  },
+  "US-1274": {
+   "field": "hours",
+   "must": "9\\s*am\\s*to\\s*5\\s*pm",
+   "what": "Blue Licks museum March 16 - Oct 31, 9-5 (parks.ky.gov)"
+  },
+  "US-1254": {
+   "field": "hours",
+   "must": "10\\s*pm",
+   "what": "Tom Sawyer: park closes daily at 10 pm"
+  },
+  "US-7963": {
+   "field": "hours",
+   "must": "sunrise to sunset",
+   "what": "Pilot Knob preserve sunrise to sunset (eec.ky.gov brochure)"
+  },
+  "US-3779": {
+   "field": "hours",
+   "must": "9\\s*am\\s*to\\s*4\\s*pm",
+   "what": "Big Bone Lick: mid-March to mid-Nov daily 9-4"
+  },
+  "US-0538": {
+   "field": "hours",
+   "must": "8\\s*am\\s*-\\s*4\\s*pm",
+   "what": "Reelfoot NWR office 8-4"
+  },
+  "US-3828": {
+   "field": "fees",
+   "must": "Peabody WMA User Permit \\$15\\.86",
+   "what": "Peabody: the $15.86 user permit IS this park's fee"
+  },
+  "US-3828n": {
+   "ref": "US-3828",
+   "field": "fees",
+   "never": "Shooting Range Permit",
+   "what": "Peabody: the statewide $5.29 range permit is NOT this park's fee (chat 11 Oct 28)"
+  },
+  "US-3813": {
+   "field": "permits",
+   "never": "In some (areas|public-use regions)",
+   "what": "Griffith Woods: statewide hunting-page sentence is not this area's permit (chat 11 Oct 28)"
   }
  },
  "flaws": [
-  "Oct 28: Horse Park '$5 million' as a fee; statewide licence prices ($31.71 turkey) as a park's fee (F-H1)"
+  "Oct 28: Horse Park '$5 million' as a fee; statewide licence prices ($31.71 turkey) as a park's fee (F-H1)",
+  "Oct 28 (chat 11): statewide permit sentences ('In some areas, a user permit is required') filed on single WMAs; headings ending ':'; duplicates"
  ]
 }
