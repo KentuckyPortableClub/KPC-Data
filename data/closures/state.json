@@ -3,16 +3,16 @@
  "areas": {
   "US-KY": {
    "counts": {
-    "hunt": 11,
-    "note": 59,
-    "part": 20,
+    "hunt": 0,
+    "note": 80,
+    "part": 0,
     "seasonal": 0,
-    "taken_down": 1,
+    "taken_down": 0,
     "whole": 1
    },
    "failed": 0,
-   "items": 92,
-   "read": "2026-10-29T14:56Z",
+   "items": 81,
+   "read": "2026-10-29T15:19Z",
    "sources": 73,
    "status": "done"
   }
@@ -44,13 +44,13 @@
    "sentences": 429,
    "sources_failed": 0,
    "unmatched": 139,
-   "unreadable": 234
+   "unreadable": 261
   },
-  "when": "2026-10-29T14:56Z"
+  "when": "2026-10-29T15:19Z"
  },
  "test": {
   "matched": 29,
-  "only_here": 60,
+  "only_here": 51,
   "only_there": [
    "hc-US-3831-2026-11-15",
    "hc-US-3797-2026-10-15",
@@ -59,6 +59,6 @@
   "own": 32,
   "result": "PASS",
   "when": "2026-10-29",
-  "why": "29 of 32 of Kentucky's own reader's items found here on the same park (90%); 60 only here"
+  "why": "29 of 32 of Kentucky's own reader's items found here on the same park (90%); 51 only here"
  }
 }
