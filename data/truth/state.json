@@ -43,22 +43,22 @@
   "US-GA": {
    "checked": 237,
    "counts": {
-    "agree": 18,
-    "handover_hints": 12,
+    "agree": 129,
+    "handover_hints": 10,
     "no_page": 0,
     "no_size": 26,
-    "off": 141,
+    "off": 45,
     "ours_unknown": 0,
     "parks": 237,
     "retired": 0,
-    "unsure": 35,
-    "weak": 8,
+    "unsure": 20,
+    "weak": 4,
     "with_outline": 220
    },
    "left": 0,
    "parks": 237,
    "status": "done",
-   "updated": "2026-10-28"
+   "updated": "2026-10-29"
   },
   "US-IL": {
    "checked": 219,
@@ -281,30 +281,30 @@
  },
  "last": {
   "areas": [
-   "US-KY"
+   "US-GA"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "browser": 48,
+   "browser": 1,
    "errors": 0,
-   "requests": 575,
-   "rested": 10,
+   "requests": 487,
+   "rested": 7,
    "robots": 0,
-   "strikes": 0
+   "strikes": 5
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 5,
-   "no_size": 65,
+   "handover_hints": 10,
+   "no_size": 26,
    "ours_unknown": 0,
-   "pages_read": 372,
-   "parks": 193,
+   "pages_read": 365,
+   "parks": 237,
    "retired": 0,
-   "size_agree": 110,
-   "size_off": 5,
-   "size_unsure": 9,
+   "size_agree": 129,
+   "size_off": 45,
+   "size_unsure": 20,
    "skipped_fresh": 0,
-   "with_outline": 189
+   "with_outline": 220
   },
   "when": "2026-10-29"
  },
@@ -326,7 +326,7 @@
   },
   "https://georgiawildlife.com/news": {
    "links": 0,
-   "read": "2026-10-28",
+   "read": "2026-10-29",
    "status": "HTTP 403"
   },
   "https://kentuckytourism.com/industry/news": {
@@ -382,50 +382,9 @@
  },
  "proven": "2026-10-29",
  "test": {
-  "result": "FAIL",
-  "rows": [
-   {
-    "ok": true,
-    "ref": "US-1264"
-   },
-   {
-    "ok": true,
-    "ref": "US-8144"
-   },
-   {
-    "ok": true,
-    "ref": "US-10105"
-   },
-   {
-    "ok": true,
-    "ref": "US-10104"
-   },
-   {
-    "ok": true,
-    "ref": "US-0295"
-   },
-   {
-    "ok": true,
-    "ref": "US-0703+US-3790"
-   },
-   {
-    "ok": true,
-    "ref": "US-10098"
-   },
-   {
-    "ok": true,
-    "ref": "US-4689"
-   },
-   {
-    "ok": false,
-    "ref": "US-3800"
-   },
-   {
-    "ok": true,
-    "ref": "US-0050"
-   }
-  ],
+  "area": "US-GA",
+  "result": "PASS",
   "when": "2026-10-29",
-  "why": "US-1264 ok (Levi Jackson OFF (722 vs ~896) + a hint naming the City of London; verdict off, agency 896 acres) · US-8144 ok (Otter Creek: a hint naming Meade; verdict agree, agency 2,221 acres) · US-10105 ok (Green WSR: official page is not Mammoth Cave's (/maca/); verdict no size on page, agency None) · US-10104 ok (Red River WSR: official acres is not 879 (the \"708, 879\" parse); verdict unsure, agency 708,000 acres) · US-0295 ok (Clarks River NWR: official acres is not the 73,962 land grant; verdict no size on page, agency None) · US-0703+US-3790 ok (Fort Donelson and Fort Heiman do not share one official page; verdict off, agency 1007 acres) · US-10098 ok (Green River NWR is never the 2019 '10 acres donated' line (FWS took down the 9,500-ac page Oct 29: the old row cannot be checked); verdict unsure, agency None) · US-4689 ok (Kentucky Ridge SF OFF (15,251 vs 11,736 = 23%); verdict off, agency 15,251 acres) · US-3800 MISS (Cedar Creek Lake WMA OFF (ours 2,390 vs 796); verdict agree, agency 796 acres) · US-0050 ok (Mammoth Cave OFF with cause 'boundary vs owned'; verdict off, agency 52,830 acres)"
+  "why": "US-GA: 45 off rows, no shared numbers / agency pages / part sentences / one-state cross-state compares"
  }
 }
