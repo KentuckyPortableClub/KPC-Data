@@ -12,6 +12,29 @@
      "area": "ky",
      "state": "US-KY",
      "refs": [
+      "US-10107",
+      "US-4484"
+     ],
+     "names": {
+      "US-10107": "Big South Fork National Wild and Scenic River",
+      "US-4484": "Daniel Boone National Forest"
+     },
+     "what": "not sure",
+     "kind": "area",
+     "size": "2509.9 ac",
+     "sort": 2509.9,
+     "reason": "the outlines overlap, but the Forest Service ownership map (Basic Ownership, 2015 data) does not show this patch as the agency's land (that map may be out of date): check the official map; PAD-US cross-check",
+     "id": "US-10107+US-4484@area@36.624,-84.565",
+     "sources": {
+      "US-10107": "read live from the agency 2026-10-29 \u00b7 https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_Wild_RIvers_Corridors_WM_gdb/FeatureServer/0 (item efefe7342aa4460aaf8697e17deb4146, read 2026-10-29)",
+      "US-4484": "read live from the agency 2026-10-29"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "ky",
+     "state": "US-KY",
+     "refs": [
       "US-12079",
       "US-4484"
      ],
@@ -48,6 +71,48 @@
      "sort": 479.6,
      "reason": "water only: boat or kayak",
      "id": "US-0050+US-10105@area@channel@37.220,-86.062",
+     "sources": {
+      "USGS water": "saved copy of the USGS map, read 2026-10-28"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "ky",
+     "state": "US-KY",
+     "refs": [
+      "US-10103",
+      "US-11181"
+     ],
+     "names": {},
+     "what": "not sure",
+     "kind": "trail",
+     "size": "14520 yd of line",
+     "sort": 331.9,
+     "reason": "no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations \u00b7 no owner on the maps at 1 of 1 points of the patch: only that piece is not sure",
+     "id": "US-10103+US-11181@trail@36.849,-84.330",
+     "sources": {
+      "US-10103": "read live from the agency 2026-10-29 \u00b7 https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_Wild_RIvers_Corridors_WM_gdb/FeatureServer/0 (item efefe7342aa4460aaf8697e17deb4146, read 2026-10-29)",
+      "US-11181": "official line (trails bot)"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "ky",
+     "state": "US-KY",
+     "refs": [
+      "US-10103",
+      "US-4484"
+     ],
+     "names": {
+      "US-10103": "The Cumberland River Wilderness Area",
+      "US-4484": "Daniel Boone National Forest"
+     },
+     "what": "water only (boat spot): is there really no land?",
+     "kind": "area",
+     "size": "220.0 ac",
+     "sort": 220.0,
+     "reason": "water only: boat or kayak",
+     "id": "US-10103+US-4484@area@channel@36.842,-84.344",
      "sources": {
       "USGS water": "saved copy of the USGS map, read 2026-10-28"
      },
@@ -96,28 +161,6 @@
      "sources": {
       "US-0019": "read live from the agency 2026-10-29",
       "US-10164": "read live from the agency 2026-10-29",
-      "USGS water": "saved copy of the USGS map, read 2026-10-28"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "ky",
-     "state": "US-KY",
-     "refs": [
-      "US-10103",
-      "US-4484"
-     ],
-     "names": {
-      "US-10103": "The Cumberland River Wilderness Area",
-      "US-4484": "Daniel Boone National Forest"
-     },
-     "what": "water only (boat spot): is there really no land?",
-     "kind": "area",
-     "size": "81.9 ac",
-     "sort": 81.9,
-     "reason": "water only: boat or kayak",
-     "id": "US-10103+US-4484@area@channel@36.758,-84.289",
-     "sources": {
       "USGS water": "saved copy of the USGS map, read 2026-10-28"
      },
      "checked": "2026-10-29"
@@ -664,25 +707,6 @@
     },
     {
      "area": "ky",
-     "state": "",
-     "refs": [
-      "US-10103",
-      "US-1277"
-     ],
-     "names": {},
-     "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
-     "kind": "pair",
-     "size": "18 same-day activations",
-     "sort": 18.0,
-     "reason": "dropped in pass 2",
-     "id": "US-10103+US-1277@pota",
-     "sources": {
-      "POTA history": "activated together by the same call on the same day (18x, POTA history) / old guide (Oct 13 Kentucky 2-fers guide)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "ky",
      "state": "US-KY",
      "refs": [
       "US-10128",
@@ -698,25 +722,6 @@
      "sources": {
       "US-10128": "read live from the agency 2026-10-29",
       "US-4572": "official line (trails bot)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "ky",
-     "state": "",
-     "refs": [
-      "US-0686",
-      "US-10107"
-     ],
-     "names": {},
-     "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
-     "kind": "pair",
-     "size": "17 same-day activations",
-     "sort": 17.0,
-     "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
-     "id": "US-0686+US-10107@pota",
-     "sources": {
-      "POTA history": "activated together by the same call on the same day (17x, POTA history) / old guide (Oct 13 Kentucky 2-fers guide)"
      },
      "checked": "2026-10-29"
     },
@@ -960,7 +965,7 @@
      "kind": "pair",
      "size": "11 same-day activations",
      "sort": 11.0,
-     "reason": "dropped in pass 3",
+     "reason": "dropped: Big South Fork is Park Service land beside Forest Service land (ruling Oct 27)",
      "id": "US-0686+US-4484@pota",
      "sources": {
       "POTA history": "activated together by the same call on the same day (11x, POTA history) / outlines about 0 m apart"
@@ -1231,7 +1236,7 @@
      "kind": "pair",
      "size": "8 same-day activations",
      "sort": 8.0,
-     "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+     "reason": "dropped: Big South Fork is Park Service land beside Forest Service land (ruling Oct 27)",
      "id": "US-10107+US-4484@pota",
      "sources": {
       "POTA history": "activated together by the same call on the same day (8x, POTA history) / outlines about 0 m apart"
@@ -1482,6 +1487,25 @@
      "id": "US-4688+US-7968@pota",
      "sources": {
       "POTA history": "activated together by the same call on the same day (6x, POTA history) / outlines about 952 m apart"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "ky",
+     "state": "",
+     "refs": [
+      "US-10103",
+      "US-11181"
+     ],
+     "names": {},
+     "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+     "kind": "pair",
+     "size": "5 same-day activations",
+     "sort": 5.0,
+     "reason": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+     "id": "US-10103+US-11181@pota",
+     "sources": {
+      "POTA history": "activated together by the same call on the same day (5x, POTA history) / hand list (ky-trail-parks.json) / old guide (Oct 13 Kentucky 2-fers guide)"
      },
      "checked": "2026-10-29"
     },
@@ -28170,78 +28194,6 @@
      "area": "nea",
      "state": "US-MD",
      "refs": [
-      "US-4767",
-      "US-7779"
-     ],
-     "names": {
-      "US-4767": "Pocomoke State Forest",
-      "US-7779": "Pocomoke River Wildlife Management Area"
-     },
-     "what": "water map weak here (fix later: a better water source)",
-     "kind": "area",
-     "size": "8059.4 ac",
-     "sort": 8059.4,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-4767+US-7779@area@38.209,-75.532",
-     "sources": {
-      "US-4767": "downloaded 2026-10-29",
-      "US-7779": "downloaded 2026-10-29",
-      "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "nea",
-     "state": "US-MD",
-     "refs": [
-      "US-4767",
-      "US-6384"
-     ],
-     "names": {
-      "US-4767": "Pocomoke State Forest",
-      "US-6384": "Pocomoke River State Park"
-     },
-     "what": "water map weak here (fix later: a better water source)",
-     "kind": "area",
-     "size": "8059.2 ac",
-     "sort": 8059.2,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-4767+US-6384@area@38.209,-75.532",
-     "sources": {
-      "US-4767": "downloaded 2026-10-29",
-      "US-6384": "downloaded 2026-10-29",
-      "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "nea",
-     "state": "US-PA",
-     "refs": [
-      "US-0619",
-      "US-12234"
-     ],
-     "names": {
-      "US-0619": "Allegheny National Forest",
-      "US-12234": "Allegheny National Wild & Scenic River"
-     },
-     "what": "water map weak here (fix later: a better water source)",
-     "kind": "area",
-     "size": "5364.9 ac",
-     "sort": 5364.9,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-0619+US-12234@area@41.833,-79.264",
-     "sources": {
-      "US-0619": "downloaded 2026-10-29",
-      "US-12234": "downloaded 2026-10-29",
-      "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "nea",
-     "state": "US-MD",
-     "refs": [
       "US-0333",
       "US-4567"
      ],
@@ -28327,30 +28279,6 @@
      "sources": {
       "US-4567": "official line (trails bot)",
       "US-7736": "downloaded 2026-10-29"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "nea",
-     "state": "US-PA",
-     "refs": [
-      "US-0619",
-      "US-12235"
-     ],
-     "names": {
-      "US-0619": "Allegheny National Forest",
-      "US-12235": "Clarion National Wild and Scenic River"
-     },
-     "what": "water map weak here (fix later: a better water source)",
-     "kind": "area",
-     "size": "2840.0 ac",
-     "sort": 2840.0,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-0619+US-12235@area@41.378,-78.849",
-     "sources": {
-      "US-0619": "downloaded 2026-10-29",
-      "US-12235": "downloaded 2026-10-29",
-      "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
      },
      "checked": "2026-10-29"
     },
@@ -28612,30 +28540,6 @@
      "sources": {
       "US-1590": "downloaded 2026-10-29",
       "US-4567": "official line (trails bot)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "nea",
-     "state": "US-PA",
-     "refs": [
-      "US-12235",
-      "US-5464"
-     ],
-     "names": {
-      "US-12235": "Clarion National Wild and Scenic River",
-      "US-5464": "Clear Creek State Forest"
-     },
-     "what": "water map weak here (fix later: a better water source)",
-     "kind": "area",
-     "size": "555.1 ac",
-     "sort": 555.1,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-12235+US-5464@area@41.348,-79.021",
-     "sources": {
-      "US-12235": "downloaded 2026-10-29",
-      "US-5464": "downloaded 2026-10-29",
-      "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
      },
      "checked": "2026-10-29"
     },
@@ -29316,30 +29220,6 @@
      "id": "US-0666+US-1566@pota",
      "sources": {
       "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (155x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "nea",
-     "state": "US-PA",
-     "refs": [
-      "US-5472",
-      "US-8733"
-     ],
-     "names": {
-      "US-5472": "Moshannon State Forest",
-      "US-8733": "PA 034 State Game Land"
-     },
-     "what": "water map weak here (fix later: a better water source)",
-     "kind": "area",
-     "size": "153.9 ac",
-     "sort": 153.9,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-5472+US-8733@area@41.279,-78.377",
-     "sources": {
-      "US-5472": "downloaded 2026-10-29",
-      "US-8733": "downloaded 2026-10-29",
-      "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
      },
      "checked": "2026-10-29"
     },
@@ -31700,29 +31580,6 @@
      "id": "US-1384+US-1426@pota",
      "sources": {
       "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (42x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "nea",
-     "state": "US-PA",
-     "refs": [
-      "US-5472",
-      "US-8789"
-     ],
-     "names": {
-      "US-5472": "Moshannon State Forest",
-      "US-8789": "PA 090 State Game Land"
-     },
-     "what": "water map weak here (fix later: a better water source)",
-     "kind": "area",
-     "size": "41.5 ac",
-     "sort": 41.5,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-5472+US-8789@area@41.120,-78.487",
-     "sources": {
-      "US-5472": "downloaded 2026-10-29",
-      "US-8789": "downloaded 2026-10-29"
      },
      "checked": "2026-10-29"
     },
@@ -71915,25 +71772,6 @@
      "area": "nea",
      "state": "",
      "refs": [
-      "US-5472",
-      "US-8789"
-     ],
-     "names": {},
-     "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
-     "kind": "pair",
-     "size": "3 same-day activations",
-     "sort": 3.0,
-     "reason": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-5472+US-8789@pota",
-     "sources": {
-      "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (3x, POTA history)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "nea",
-     "state": "",
-     "refs": [
       "US-5473",
       "US-8985"
      ],
@@ -96409,30 +96247,6 @@
    "rows": [
     {
      "area": "neb",
-     "state": "US-NY",
-     "refs": [
-      "US-8096",
-      "US-8097"
-     ],
-     "names": {
-      "US-8096": "South Hill (Oneida County) State Forest",
-      "US-8097": "South Hill (Delaware and Otsego County) State Forest"
-     },
-     "what": "water map weak here (fix later: a better water source)",
-     "kind": "area",
-     "size": "2427.6 ac",
-     "sort": 2427.6,
-     "reason": "water not checked (the USGS water map did not answer): run pass 5",
-     "id": "US-8096+US-8097@area@42.356,-75.460",
-     "sources": {
-      "US-8096": "downloaded 2026-10-29",
-      "US-8097": "downloaded 2026-10-29",
-      "USGS water": "USGS NHDPlus HR file 2023-07-13 (the same NHDPlus HR water, from USGS's download files)"
-     },
-     "checked": "2026-10-29"
-    },
-    {
-     "area": "neb",
      "state": "",
      "refs": [
       "US-2149",
@@ -101448,6 +101262,28 @@
      "id": "US-9124+US-9132@pota",
      "sources": {
       "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "neb",
+     "state": "US-RI",
+     "refs": [
+      "US-2869",
+      "US-7971"
+     ],
+     "names": {
+      "US-2869": "Blackstone River State Park",
+      "US-7971": "Blackstone River Valley National Historical Park"
+     },
+     "what": "water only (boat spot): is there really no land?",
+     "kind": "area",
+     "size": "10.3 ac",
+     "sort": 10.3,
+     "reason": "water only: boat or kayak",
+     "id": "US-2869+US-7971@area@channel@41.940,-71.440",
+     "sources": {
+      "USGS water": "USGS NHDPlus HR file 2023-07-13 (the same NHDPlus HR water, from USGS's download files)"
      },
      "checked": "2026-10-29"
     },
@@ -161750,6 +161586,28 @@
     },
     {
      "area": "southeast",
+     "state": "US-VA",
+     "refs": [
+      "US-0561",
+      "US-0671"
+     ],
+     "names": {
+      "US-0561": "Chincoteague National Wildlife Refuge",
+      "US-0671": "Assateague Island National Seashore"
+     },
+     "what": "water only (boat spot): is there really no land?",
+     "kind": "area",
+     "size": "1264.8 ac",
+     "sort": 1264.8,
+     "reason": "water only: boat or kayak",
+     "id": "US-0561+US-0671@area@channel@37.908,-75.341",
+     "sources": {
+      "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "southeast",
      "state": "",
      "refs": [
       "US-3627",
@@ -173605,6 +173463,28 @@
      "id": "US-6877+US-6935@pota",
      "sources": {
       "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (28x, POTA history)"
+     },
+     "checked": "2026-10-29"
+    },
+    {
+     "area": "southeast",
+     "state": "US-TN",
+     "refs": [
+      "US-0685",
+      "US-3931"
+     ],
+     "names": {
+      "US-0685": "Obed National Wild and Scenic River",
+      "US-3931": "Catoosa Wildlife Management Area"
+     },
+     "what": "water only (boat spot): is there really no land?",
+     "kind": "area",
+     "size": "27.2 ac",
+     "sort": 27.2,
+     "reason": "water only: boat or kayak",
+     "id": "US-0685+US-3931@area@channel@36.079,-84.765",
+     "sources": {
+      "USGS water": "saved copy of the USGS map, read 2026-10-28"
      },
      "checked": "2026-10-29"
     },
