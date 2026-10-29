@@ -9,29 +9,6 @@
    "area": "ky",
    "state": "US-KY",
    "refs": [
-    "US-0050",
-    "US-10105"
-   ],
-   "names": {
-    "US-0050": "Mammoth Cave National Park",
-    "US-10105": "The Green National Wild and Scenic River"
-   },
-   "what": "not sure",
-   "kind": "area",
-   "size": "6852.4 ac",
-   "sort": 6852.4,
-   "reason": "the outlines overlap, but the the Park Service's own land tracts (Land Resources Division; PAD-US fee records when it does not answer) does not show this patch as the agency's land (that map may be out of date): check the official map; PAD-US cross-check",
-   "id": "US-0050+US-10105@area@37.171,-86.155",
-   "sources": {
-    "US-0050": "read live from the agency 2026-10-29",
-    "US-10105": "read live from the agency 2026-10-29 \u00b7 https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_Wild_RIvers_Corridors_WM_gdb/FeatureServer/0 (item efefe7342aa4460aaf8697e17deb4146, read 2026-10-29)"
-   },
-   "checked": "2026-10-29"
-  },
-  {
-   "area": "ky",
-   "state": "US-KY",
-   "refs": [
     "US-12079",
     "US-4484"
    ],
@@ -63,7 +40,7 @@
    "kind": "pair",
    "size": "295 same-day activations",
    "sort": 295.0,
-   "reason": "not sure: the outlines overlap, but the the Park Service's own land tracts (Land Resources Division; PAD-US fee records when it does not answer) does not show this patch as the agency's land (that map",
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "id": "US-0050+US-10105@pota",
    "sources": {
     "POTA history": "activated together by the same call on the same day (295x, POTA history) / old guide (Oct 13 Kentucky 2-fers guide)"
@@ -92,6 +69,28 @@
     "US-4572": "official line (trails bot)"
    },
    "checked": "2026-10-28"
+  },
+  {
+   "area": "ky",
+   "state": "US-KY",
+   "refs": [
+    "US-10103",
+    "US-4484"
+   ],
+   "names": {
+    "US-10103": "The Cumberland River Wilderness Area",
+    "US-4484": "Daniel Boone National Forest"
+   },
+   "what": "water only (boat spot): is there really no land?",
+   "kind": "area",
+   "size": "81.9 ac",
+   "sort": 81.9,
+   "reason": "water only: boat or kayak",
+   "id": "US-10103+US-4484@area@channel@36.758,-84.289",
+   "sources": {
+    "USGS water": "saved copy of the USGS map, read 2026-10-28"
+   },
+   "checked": "2026-10-29"
   },
   {
    "area": "ky",
@@ -169,6 +168,28 @@
    "id": "US-1287+US-4692@pota",
    "sources": {
     "POTA history": "activated together by the same call on the same day (60x, POTA history) / outlines about 0 m apart"
+   },
+   "checked": "2026-10-29"
+  },
+  {
+   "area": "ky",
+   "state": "US-KY",
+   "refs": [
+    "US-10106",
+    "US-4484"
+   ],
+   "names": {
+    "US-10106": "The Rockcastle National Wild and Scenic River",
+    "US-4484": "Daniel Boone National Forest"
+   },
+   "what": "water only (boat spot): is there really no land?",
+   "kind": "area",
+   "size": "55.8 ac",
+   "sort": 55.8,
+   "reason": "water only: boat or kayak",
+   "id": "US-10106+US-4484@area@channel@37.165,-84.294",
+   "sources": {
+    "USGS water": "saved copy of the USGS map, read 2026-10-28"
    },
    "checked": "2026-10-29"
   },
@@ -341,6 +362,28 @@
    "sources": {
     "US-10102": "official line (trails bot)",
     "US-10112": "read live from the agency 2026-10-29 \u00b7 https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_Wild_RIvers_Corridors_WM_gdb/FeatureServer/0 (item efefe7342aa4460aaf8697e17deb4146, read 2026-10-29)"
+   },
+   "checked": "2026-10-29"
+  },
+  {
+   "area": "ky",
+   "state": "US-KY",
+   "refs": [
+    "US-10160",
+    "US-4484"
+   ],
+   "names": {
+    "US-10160": "Rockcastle River Wildlife Management Area",
+    "US-4484": "Daniel Boone National Forest"
+   },
+   "what": "water only (boat spot): is there really no land?",
+   "kind": "area",
+   "size": "22.9 ac",
+   "sort": 22.9,
+   "reason": "water only: boat or kayak",
+   "id": "US-10160+US-4484@area@channel@37.099,-84.334",
+   "sources": {
+    "USGS water": "saved copy of the USGS map, read 2026-10-28"
    },
    "checked": "2026-10-29"
   },
@@ -1273,6 +1316,28 @@
    "id": "US-3804+US-3832@pota",
    "sources": {
     "POTA history": "activated together by the same call on the same day (5x, POTA history) / outlines about 0 m apart"
+   },
+   "checked": "2026-10-29"
+  },
+  {
+   "area": "ky",
+   "state": "US-KY",
+   "refs": [
+    "US-10168",
+    "US-4484"
+   ],
+   "names": {
+    "US-10168": "Sunny Brook Wildlife Management Area",
+    "US-4484": "Daniel Boone National Forest"
+   },
+   "what": "water only (boat spot): is there really no land?",
+   "kind": "area",
+   "size": "4.5 ac",
+   "sort": 4.5,
+   "reason": "water only: boat or kayak",
+   "id": "US-10168+US-4484@area@channel@38.224,-83.381",
+   "sources": {
+    "USGS water": "saved copy of the USGS map, read 2026-10-28"
    },
    "checked": "2026-10-29"
   },

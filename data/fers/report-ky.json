@@ -2,7 +2,7 @@
  "about": "Counts from the 2-fer bot (kpc_fers.py). Hidden: data only.",
  "pass1": {
   "cell_m": 20.0,
-  "date": "2026-10-28",
+  "date": "2026-10-29",
   "left out": {
    "approximate": 0,
    "no outline": 4,
@@ -10,9 +10,9 @@
    "pin well outside": 0
   },
   "official parks": 199,
-  "pairs tested": 120,
-  "pairs whose boxes touch": 120,
-  "parks done by the box test": 163,
+  "pairs tested": 6,
+  "pairs whose boxes touch": 6,
+  "parks done by the box test": 195,
   "parks whose outline could not be read": 0,
   "pass": 1,
   "problems": [
@@ -22,18 +22,18 @@
   "with official lines": 11
  },
  "pass2": {
-  "agree with the pass before": 39,
+  "agree with the pass before": 0,
   "cell_m": 10.0,
-  "date": "2026-10-28",
+  "date": "2026-10-29",
   "left out": {
    "approximate": 0,
    "no outline": 4,
    "no pin": 0,
    "pin well outside": 0
   },
-  "new here only (not counted)": 81,
+  "new here only (not counted)": 0,
   "official parks": 199,
-  "pairs tested": 24,
+  "pairs tested": 0,
   "parks whose outline could not be read": 0,
   "parks with a saved copy only (no fresh download possible)": 0,
   "pass": 2,
@@ -41,7 +41,7 @@
   "with official lines": 11
  },
  "pass3": {
-  "agree with the pass before": 32,
+  "agree with the pass before": 0,
   "cell_m": 5.0,
   "date": "2026-10-29",
   "left out": {
@@ -50,9 +50,9 @@
    "no pin": 0,
    "pin well outside": 0
   },
-  "new here only (not counted)": 64,
+  "new here only (not counted)": 0,
   "official parks": 199,
-  "pairs tested": 22,
+  "pairs tested": 0,
   "parks whose outline could not be read": 0,
   "parks with a saved copy only (no fresh download possible)": 0,
   "pass": 3,
@@ -90,7 +90,8 @@
   "pairs tested": 0,
   "pass": 5,
   "problems": [],
-  "spots given their boundary lines": 49,
+  "river channels listed as water only (boat spots)": 4,
+  "spots given their boundary lines": 48,
   "still not checked": 0,
   "trail stretches given their true zone": 76,
   "water only": 0,
@@ -103,12 +104,12 @@
    "candidates (saved outline only)": 1,
    "lines": 222,
    "n-fers": 20,
-   "not sure": 9,
-   "pass1": 426,
-   "pass2": 370,
-   "spots": 426,
+   "not sure": 8,
+   "pass1": 429,
+   "pass2": 373,
+   "spots": 429,
    "very tight": 3,
-   "water only": 1
+   "water only": 5
   }
  }
 }
