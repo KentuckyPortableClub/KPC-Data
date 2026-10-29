@@ -4,7 +4,7 @@ Updated 2026-10-29. Every line is the agency's own sentence (H2). Refresh every 
 
 | area | parks | hours | fees | permits | nothing found | no page |
 |---|---|---|---|---|---|---|
-| US-KY | 193 | 41 | 8 | 8 | 143 | 0 |
+| US-KY | 193 | 41 | 8 | 2 | 144 | 0 |
 
 ## US-KY: 12-park sample for chat 8
 

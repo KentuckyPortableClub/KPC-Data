@@ -48,37 +48,30 @@ Source file: `data/hours/US-KY.json`
 }
 ```
 
-## US-3837 West Kentucky Wildlife Management Area
+## US-4572 Lewis and Clark National Historic Trail
 ```json
 {
  "attraction_fees": [],
- "attraction_hours": [
-  {
-   "line": "Archery range (mobility-impaired accessible) with 10-50 yard targets open daily during daylight hours, wildlife viewing areas (Tupelo Swamp) , the fishing pier at \"Disabled Access Pond\" is handicap assessable.",
-   "read": "2026-10-29",
-   "scope": "attraction",
-   "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=137"
-  }
- ],
+ "attraction_hours": [],
  "campground_hours": [],
  "checked": "2026-10-29",
- "fees": [],
+ "fees": [
+  {
+   "line": "All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).",
+   "read": "2026-10-29",
+   "url": "https://www.nps.gov/lecl/planyourvisit/fees.htm"
+  }
+ ],
  "hours": [],
  "hours_note": "the agency pages we read print no hours",
  "hunting_hours": [],
- "n": "West Kentucky Wildlife Management Area",
+ "n": "Lewis and Clark National Historic Trail",
  "office_hours": [],
  "other_fees": [],
- "permits": [
-  {
-   "line": "An annual or one-day shooting range permit is now required to use firearms and archery equipment on any department managed, l​eased or affiliated shooting range.",
-   "read": "2026-10-29",
-   "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=137"
-  }
- ],
+ "permits": [],
  "season": [],
  "status": "ok",
- "t": "WMA"
+ "t": "National / NPS"
 }
 ```
 
@@ -283,13 +276,7 @@ Source file: `data/hours/US-KY.json`
  "n": "Miller Welch Wildlife Management Area",
  "office_hours": [],
  "other_fees": [],
- "permits": [
-  {
-   "line": "An annual or one-day shooting range permit is now required to use firearms and archery equipment on any department managed, l​eased or affiliated shooting range.",
-   "read": "2026-10-29",
-   "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=15"
-  }
- ],
+ "permits": [],
  "season": [],
  "status": "ok",
  "t": "WMA"
@@ -320,13 +307,7 @@ Source file: `data/hours/US-KY.json`
  "n": "Higginson-Henry Wildlife Management Area",
  "office_hours": [],
  "other_fees": [],
- "permits": [
-  {
-   "line": "An annual or one-day shooting range permit is now required to use firearms and archery equipment on any department managed, l​eased or affiliated shooting range.",
-   "read": "2026-10-29",
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=132"
-  }
- ],
+ "permits": [],
  "season": [],
  "status": "ok",
  "t": "WMA"
@@ -470,13 +451,7 @@ Source file: `data/hours/US-KY.json`
  "n": "John A. Kleber Wildlife Management Area",
  "office_hours": [],
  "other_fees": [],
- "permits": [
-  {
-   "line": "An annual or one-day shooting range permit is now required to use firearms and archery equipment on any department managed, l​eased or affiliated shooting range.",
-   "read": "2026-10-29",
-   "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=14"
-  }
- ],
+ "permits": [],
  "season": [],
  "status": "ok",
  "t": "WMA"
