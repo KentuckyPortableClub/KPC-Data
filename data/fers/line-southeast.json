@@ -13,15 +13,13 @@
   "US-MS"
  ],
  "since": "2026-10-28",
- "date": "2026-10-29 04:12 UTC",
- "verdict": "PART READY FOR CHAT 8",
- "why": [
-  "US-MS: 24 rows still waiting for a pass (out of time: run the worker again)"
- ],
+ "date": "2026-10-29 05:09 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
  "known_answers": "19/19 on 2026-10-29",
  "missing_check": {
-  "FOUND": 530,
-  "DROPPED": 1536,
+  "FOUND": 534,
+  "DROPPED": 1532,
   "NEVER LOOKED AT": 14397
  },
  "report": {
@@ -87,7 +85,7 @@
  },
  "US-VA": {
   "rows": 148,
-  "live": 51,
+  "live": 50,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
@@ -95,7 +93,7 @@
    "no public owner on the ownership map": 2
   },
   "dropped": 35,
-  "merged": 57
+  "merged": 58
  },
  "US-WV": {
   "rows": 292,
@@ -155,13 +153,17 @@
  "US-MS": {
   "rows": 95,
   "live": 9,
-  "waiting": 24,
+  "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "the ownership map shows more than one owner across the spot": 1
+   "the ownership map shows more than one owner across the spot": 1,
+   "the official outline of Canal Section Wildlife Management Ar": 3,
+   "the official outline of Twin Oaks Wildlife Management Area c": 1,
+   "the official outline of Okatibbee Wildlife Management Area c": 1,
+   "the official outline of Ward Bayou Wildlife Management Area": 1
   },
   "dropped": 31,
-  "merged": 30
+  "merged": 48
  },
  "states_ready": [
   "US-TN",
@@ -171,9 +173,8 @@
   "US-GA",
   "US-AL",
   "US-SC",
-  "US-FL"
- ],
- "states_held": [
+  "US-FL",
   "US-MS"
- ]
+ ],
+ "states_held": []
 }
