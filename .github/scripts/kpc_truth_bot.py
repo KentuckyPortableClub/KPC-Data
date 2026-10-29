@@ -467,6 +467,7 @@ def candidate_pages(ref, park, web, docs, ky):
     def add(u, why):
         u = (u or '').strip()
         if not u.startswith('http') or BAD_PAGE.search(u): return
+        if re.search(WRONG_PAGE.get(ref, '$^'), u, re.I): return   # another unit's page (any source)
         if u not in [x[0] for x in out]: out.append((u, why))
     k = ky.get(ref) or {}
     if not re.search(WRONG_PAGE.get(ref, '$^'), str(k.get('web') or ''), re.I):   # Oct 29 (Fable / chat 8 (3)): a site link that is ANOTHER unit's page is not read
