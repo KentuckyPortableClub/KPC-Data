@@ -463,6 +463,9 @@ def closes(lu, nf, miss, budget, ext=None):
 
 
 # ---- the verdict
+COVERAGE = re.compile(r'cadast|parcel|\babs\b|census|\bindex\b|grid|quad|planning|zoning|fire|emergency|boundar(?:y|ies) of (?:counties|states)|tax ?lot|land ?use', re.I)
+
+
 def verdict(row, probe, terms_class, pub, over, cl):
     """READY · LIVE-ONLY · ASK-THE-PUBLISHER · REJECT with a one-sentence WHY."""
     if not probe.get('opened'): return 'REJECT', f"did not open ({probe.get('status')}) and no item search hit on the publisher: url to confirm"
@@ -480,7 +483,13 @@ def verdict(row, probe, terms_class, pub, over, cl):
     if terms_class == 'NOTHING STATED': return ('ASK-THE-PUBLISHER' if pub == 'official' else 'REJECT'), 'nothing stated about use on the item page or the service'
     if pub == 'unsure': return 'ASK-THE-PUBLISHER', 'publisher unsure: no government word found, ask who publishes it'
     requested = (row.get('from') or '') in ('chat 8', 'chat 9')
-    if (cl or {}).get('n', 0) >= 1 or requested:
+    if COVERAGE.search(' '.join(str(x or '') for x in (probe.get('name'), (probe.get('service') or {}).get('service_name'), row.get('title')))):
+        return 'REJECT', 'NOT A PARK LAYER (coverage: parcels / census / index / planning / fire): it covers the whole land, so every pin falls inside (chat 11, Oct 29)'
+    n, byname = (cl or {}).get('n', 0), (cl or {}).get('by_name', 0)
+    if n and not requested and (byname < 3 or byname < 0.25 * n):   # chat 11 (Oct 29): 16 of 21 READY 'closed' parks by pin only
+        if byname >= 0.25 * n: return 'REJECT', f"closes only {byname} park(s) by name (READY needs 3+ name matches): a park layer, but too little to gain yet"
+        return 'REJECT', f"NOT A PARK LAYER (coverage): closes {n} but only {byname} by name (READY needs 3+ name matches and 25%+ of the closes)"
+    if n >= 1 or requested:
         return 'READY', f"official, {terms_class.lower()} terms, named polygons" + (f"; closes {cl['n']} (name + pin {cl.get('by_name', 0)}, pin only {cl.get('pin_only', 0)}): a pin inside a designation polygon is not a sure match" if (cl or {}).get('n') else '; requested by ' + row.get('from'))
     if cl and cl.get('tested', 0) == 0: return 'ASK-THE-PUBLISHER', 'official and usable, but no missing parks were tested (none listed for the area or no time)'
     return 'REJECT', 'official and usable, but it closes none of the area\'s missing parks (nothing to gain yet)'
@@ -576,7 +585,8 @@ def probe_row(row, known, hosts, trusted, govwords, miss_cache):
         terms.update({'class': tclass, 'line': tline, 'source': source})
         pub, why_pub = publisher_test(row, p, terms, trusted, govwords)
         cl = None
-        if p.get('opened') and p.get('polygons') and p.get('name_field') and not over.startswith('already read') and pub != 'not official' and tclass not in ('CLOSED',):
+        if p.get('opened') and p.get('polygons') and p.get('name_field') and not over.startswith('already read') and pub != 'not official' and tclass not in ('CLOSED',) \
+                and not COVERAGE.search(' '.join(str(x or '') for x in (p.get('name'), svc_info.get('service_name') if svc_info else '', row.get('title')))):   # chat 11: coverage layers are rejected before probing
             if area not in miss_cache: miss_cache[area] = missing(area) if area else []
             cl = closes(lu, p['name_field'], miss_cache[area], budget, p.get('extent'))
             cl['missing_in_area'] = len(miss_cache[area])
@@ -784,7 +794,8 @@ def main():
     state['hosts'] = M.resting(); state['last_run'] = TODAY; state['stat'] = STAT; state['manners'] = M.stat
     left = sum(1 for row in queue if strip_query(row.get('url')) and not (state['rows'].get(strip_query(row.get('url'))) or {}).get('probed') or (state['rows'].get(strip_query(row.get('url'))) or {}).get('retry'))
     save(OUT / 'state.json', state)
-    notice(f"COUNT: queue rows {len(queue)} (+{fed} fed from the harvester tonight) / probed tonight {done} / READY {STAT.get('ready', 0)} / RETRY {STAT.get('retry', 0)} / REJECT {STAT.get('reject', 0)}")
+    rb = sum(1 for r in ready['rows'] if r.get('verdict') == 'READY' and isinstance(r.get('closes'), dict) and (r['closes'].get('by_name') or 0) >= 3)
+    notice(f"COUNT: queue rows {len(queue)} (+{fed} fed from the harvester tonight) / probed tonight {done} / READY {STAT.get('ready', 0)} / RETRY {STAT.get('retry', 0)} / REJECT {STAT.get('reject', 0)} · READY in the whole list: by name {rb}, by pin only {sum(1 for r in ready['rows'] if r.get('verdict') == 'READY') - rb}")
     notice(f'probed {done} rows this run: ' + ' · '.join(f'{v} {counts[v]}' for v in ORDER) + f' (whole list); did not open {STAT["did_not_open"]}; manners {M.stat}')
     if TEST or STAT['tests_ok'] or STAT['tests_miss']:
         tests = [r for r in ready['rows'] if r.get('test')]
