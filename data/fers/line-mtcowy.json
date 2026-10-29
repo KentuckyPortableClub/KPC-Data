@@ -1,0 +1,76 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "mtcowy",
+ "states": [
+  "US-CO",
+  "US-WY"
+ ],
+ "since": "2026-10-29",
+ "date": "2026-10-29 08:17 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
+ "known_answers": "19/19 on 2026-10-29",
+ "missing_check": {
+  "FOUND": 76,
+  "DROPPED": 184,
+  "NEVER LOOKED AT": 2960
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-29",
+   "pairs tested": 468,
+   "pairs whose boxes touch": 468
+  },
+  "pass2": {
+   "agree with the pass before": 1772,
+   "date": "2026-10-29",
+   "pairs tested": 230
+  },
+  "pass3": {
+   "agree with the pass before": 430,
+   "date": "2026-10-29",
+   "pairs tested": 228
+  },
+  "pass5": {
+   "checked": 83,
+   "date": "2026-10-29",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-CO": "data/fers/US-CO.json",
+  "US-WY": "data/fers/US-WY.json"
+ },
+ "US-CO": {
+  "rows": 605,
+  "live": 20,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "the agency ownership map did not answer": 6
+  },
+  "dropped": 464,
+  "merged": 115
+ },
+ "US-WY": {
+  "rows": 1392,
+  "live": 69,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "the agency ownership map did not answer": 42,
+   "low-confidence outline for Sinks Canyon BLM Recreation Manag": 1,
+   "low-confidence outline": 1,
+   "no public owner on the ownership map": 1,
+   "low-confidence outline for Flaming Gorge National Recreation": 1
+  },
+  "dropped": 1108,
+  "merged": 169
+ },
+ "states_ready": [
+  "US-CO",
+  "US-WY"
+ ],
+ "states_held": []
+}
