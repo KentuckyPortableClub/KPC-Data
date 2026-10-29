@@ -1,0 +1,64 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "caqc",
+ "states": [
+  "CA-QC"
+ ],
+ "since": "2026-10-29",
+ "date": "2026-10-29 04:54 UTC",
+ "verdict": "STOPPED",
+ "why": [
+  "CA-QC: 532 rows still waiting for a pass (out of time: run the worker again)",
+  "water not checked: CA-QC: 10 rows (the USGS water map / files had no answer there): never READY with one"
+ ],
+ "known_answers": "19/19 on 2026-10-29",
+ "missing_check": {
+  "FOUND": 0,
+  "DROPPED": 5,
+  "NEVER LOOKED AT": 0
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-29",
+   "pairs tested": 419,
+   "pairs whose boxes touch": 419
+  },
+  "pass2": {
+   "agree with the pass before": 0,
+   "date": "2026-10-29",
+   "pairs tested": 0
+  },
+  "pass3": {
+   "agree with the pass before": 217,
+   "date": "2026-10-29",
+   "pairs tested": 23
+  },
+  "pass5": {
+   "checked": 13,
+   "date": "2026-10-29",
+   "pairs tested": 0,
+   "still not checked": 11
+  }
+ },
+ "files": {
+  "CA-QC": "data/fers/CA-QC.json"
+ },
+ "CA-QC": {
+  "rows": 885,
+  "live": 5,
+  "waiting": 532,
+  "unfinished": 0,
+  "not_sure": {
+   "water not checked": 10
+  },
+  "dropped": 128,
+  "merged": 210
+ },
+ "water_weak": {
+  "CA-QC": 10
+ },
+ "states_ready": [],
+ "states_held": [
+  "CA-QC"
+ ]
+}
