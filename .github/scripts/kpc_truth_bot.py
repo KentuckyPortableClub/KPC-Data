@@ -48,7 +48,7 @@ REFRESH_DAYS = int(os.environ.get('REFRESH_DAYS') or 7)
 TOL = 0.15
 PDF_FIRST = 400_000
 TODAY = time.strftime('%Y-%m-%d')
-VER = 8   # Oct 28 (chat 11's KY grade): '708, 879' parse + summed lakes, other-unit pages, history words + stale years, unsure carries a cause, own-page handover hints, quoted URLs, 10-row gate, same-agency label
+VER = 9   # Oct 28 (chat 11's KY grade): '708, 879' parse + summed lakes, other-unit pages, history words + stale years, unsure carries a cause, own-page handover hints, quoted URLs, 10-row gate, same-agency label
 QUEUE = ['US-KY',
          'US-TN', 'US-NC', 'US-VA', 'US-WV', 'US-GA', 'US-AL', 'US-SC', 'US-FL', 'US-MS',
          'US-IN', 'US-IL', 'US-MO', 'US-WI', 'US-MN', 'US-IA', 'US-ND', 'US-SD',
@@ -75,14 +75,16 @@ SUMRX = re.compile(r'(?<![\d.,])((?:' + PNUM + r'(?:\s*-?\s*acres?)?\s*,\s*)*' +
 TOTALWORD = re.compile(r'encompass|cover|consist|compris|total|spans|protects|includes|spread over|acre (?:park|area|refuge|forest|preserve|reserve|site|tract|property|wma|wildlife|recreation|lake|monument|seashore|lakeshore)|'
                        r'(?:park|area|refuge|forest|preserve|reserve|site|tract|property|monument|seashore|lakeshore|wma|lands?) (?:of|is|has|contains|covers|totals?|encompasses|includes) ', re.I)
 # V4 fix 3: HISTORY / marketing words always win (a land grant, a deed, 'of wilderness'); PART words lose to a CLEAN total sentence
-HISTORY = re.compile(r'\bgrants?\b|grant of|conveyed|deeded|\bpatent|totall?ing|of wilderness|originally|\bonce\b|land grant|granted|surveyed', re.I)
+HISTORY = re.compile(r'\bgrants?\b|grant of|conveyed|deeded|\bpatent|totall?ing|of wilderness|originally|\bonce\b|land grant|granted|surveyed|'
+                     r'(?:established|founded|created|designated|dedicated|opened|acquired|purchased)\b[^.;]{0,60}\b(?:1[6-9]\d\d|20[01]\d)\b|\bgoal\b|\bplans? to\b|\bauthorized\b|\bapproved\b|\bproposed\b|acquisition boundary|\bup to\b|\bwill (?:protect|cover|include)', re.I)   # v9: 'established in 1938 as a 4,589-acre refuge', 'our goal is to protect 20,000 acres'
 OLD_YEAR = re.compile(r'in (?:1[6-8]\d\d|19[0-4]\d)', re.I)   # an old year BEFORE the number ('In 1931, 800 acres were donated'): history
 PART = re.compile(r'\blake\b.*\bacre|acre[- ]lake|reservoir|pond|campground|campsite|parking|picnic|golf|cemetery|garden|\blawns?\b|\bfields?\b|\bpools?\b|beach|marsh of|wetland of|per acre|acre[- ]feet|acre feet|acres? (?:of|in) (?:water|lake|pond|wetland|crop|timber|hunting|fields?)|'
                   r'burn|harvest|logged|planted|restored|treated|easement|acquired|purchas|added|expansion|donat|'
                   r'included in the|part of the \d|within the \d|lies within|is part of|portion of the \d|complex|together with', re.I)
 NOTTOTAL = re.compile(HISTORY.pattern + '|' + PART.pattern, re.I)   # kept for readers of the old name
 # HARD parts: never a park total, even in a sentence that names the park (a lake, water, habitat, acre-feet, a campground)
-HARD_PART = re.compile(r'within the park|\bplots?\b|adjacent|surrounding|in the middle of|\bfarm\b|statewide|across the state|state[- ]wide|preserve system|natural area preserves|manages (?:more than |over |about |nearly )?[\d,.]+ (?:million )?acres|acres? of public land|acres? (?:of )?(?:state|public) (?:land|lands|forests?|parks?) (?:statewide|across)|acre[- ]lake|\blake\b[^.]{0,30}\bacres?\b|acres? (?:of|in) (?:water|lakes?|ponds?|wetlands?|crops?|timber|hunting|fields?|habitat|\w+ habitat|wilderness|forest lands?|national forest)|per acre|acre[- ]?feet|impoundment|campground|campsite|parking|picnic|golf|cemetery|food plots?|moist[- ]soil|\bconserve\b', re.I)
+NEAR_PART = re.compile(r'within the park|\bplots?\b|adjacent|surrounding|in the middle of|\bfarm\b|statewide|across the state|state[- ]wide|preserve system|natural area preserves|manages (?:more than |over |about |nearly )?[\d,.]+ (?:million )?acres|acres? of public land|acres? (?:of )?(?:state|public) (?:land|lands|forests?|parks?) (?:statewide|across)', re.I)   # v9: only within 45 chars of the number (not 'surrounding communities' at the far end of the sentence)
+HARD_PART = re.compile(r'acre[- ]lake|\blake\b[^.]{0,30}\bacres?\b|acres? (?:of|in) (?:water|lakes?|ponds?|wetlands?|crops?|timber|hunting|fields?|habitat|\w+ habitat|wilderness|forest lands?|national forest)|per acre|acre[- ]?feet|impoundment|campground|campsite|parking|picnic|golf|cemetery|food plots?|moist[- ]soil|\bconserve\b', re.I)
 # candidates never chosen as the official number (history, another unit, a page of another unit, a summed part)
 EXCLUDED = ('history', 'part of a sum', 'another park / unit named in the sentence', "a page of another unit; the sentence does not name this park",
             'a national unit on a state park page', 'a state unit on a national park page', 'part (a lake, a purchase, a campground…)', 'a map label (no sentence)')   # Oct 28 regrade 2: a lake or a map label is never the guess shown
@@ -212,7 +214,7 @@ def sizes_in(text, name, other_unit=False, is_pdf=False):
             if is_pdf and not (label or (name_in and len(sent.split()) >= 6)): looks = False; why = 'a map label (no sentence)'   # Cumberland Gap '15 acres', Taylorsville '248': labels on a map PDF
             if any(a0 <= m.start() < b0 for a0, b0 in sums): looks = False; why = 'part of a sum'
             if HISTORY.search(sl) or OLD_YEAR.search(left_of(text, m.start())): looks = False; why = 'history'
-            hard = bool(HARD_PART.search(strip_name(sl))) and not label; soft = bool(PART.search(strip_name(sl))) and not label   # the SAME sentence, not the neighbour's
+            hard = (bool(HARD_PART.search(strip_name(sl))) or bool(NEAR_PART.search(strip_name(text[max(0, m.start() - 45):m.end() + 45].lower())))) and not label; soft = bool(PART.search(strip_name(sl))) and not label   # the SAME sentence, not the neighbour's
             clean = bool(looks and not why and (label or ((name_in or own_subject) and CLEAN.search(sl))) and not hard)
             if looks and not why and (hard or (soft and not clean)): looks = False; why = 'part (a lake, a purchase, a campground…)'
             if looks and DESIG.get('state') and re.search(r'\bnational\b', near) and not re.search(r'\bstate\b', near): looks = clean = False; why = 'a national unit on a state park page'
@@ -864,8 +866,9 @@ def area_test(area, D):
         if len(refs) >= 3: bad.append(f'{len(refs)} parks share {k[0]:,.0f} ac from {k[1][:60]}')
     for ref, r in offs:
         u = r['official'].get('url', '')
-        if re.search(r'/mission|/about(?:-us)?/?$|didyouknow|/wildlife-management-areas/?$|/state-forests/?$', u): bad.append(f'{ref}: an agency-wide page {u[:60]}')
-        if HARD_PART.search(re.sub(r'[^a-z0-9 ]', ' ', core(r['official'].get('line', '')))): bad.append(f"{ref}: a part sentence: {r['official'].get('line', '')[:80]}")
+        if re.search(r'/mission|didyouknow|/wildlife-management-areas/?$|/state-forests/?$', u) or (SHARED.get(u, 0) >= 3): bad.append(f'{ref}: an agency-wide page {u[:60]}')
+        ln = r['official'].get('line', '').lower(); mm = re.search(r'\d[\d,.]*\s*(?:million\s*)?[- ]?(?:acres?|hectares?)', ln)
+        if mm and (HARD_PART.search(ln) or NEAR_PART.search(ln[max(0, mm.start() - 45):mm.end() + 45])): bad.append(f"{ref}: a part sentence: {r['official'].get('line', '')[:80]}")
     for ref, r in D['parks'].items():
         if len(REF_STATES.get(ref) or []) > 1 and r.get('verdict') == 'off' and not (r.get('ours') or {}).get('whole_park'): bad.append(f'{ref}: cross-state park compared one state only')
     res = 'PASS' if not bad else 'FAIL'

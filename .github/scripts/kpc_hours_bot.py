@@ -33,11 +33,11 @@ LINKS = pathlib.Path(os.environ.get('LINKS') or 'links')
 T0 = time.time(); LIMIT = float(os.environ.get('MINUTES') or 55) * 60
 REFRESH_DAYS = int(os.environ.get('REFRESH_DAYS') or 90)
 TODAY = time.strftime('%Y-%m-%d')
-VER = 8   # Oct 28 night: the gate counts only key rows whose wording is on a page we read; VER 7 = Oct 28 11 AM: whole-PDF read when a slice is unreadable, browser read for script pages, '24/7', agency-wide key rows left out of the gate; VER 6 = Oct 28 10:15 AM (regrade 3): headings ending ':' dropped, no statewide licence prices / nationwide notices / legal text, campground hours apart, days need a time; VER 5 =: debug text for gate misses; VER 4 =: the page-list unpack fix; VER 3 was the 6:40 AM (chat 11's grade + regrade): schedule / labelled rows count; questions, events, '$N million' never; attraction hours labelled
+VER = 9   # Oct 28 night: PDF line-break hyphens joined, '9 to 5' after open/daily/hours, 'Open dawn to dusk' + 'Hiking … sunrise to sunset' count; VER 8 = Oct 28 night: the gate counts only key rows whose wording is on a page we read; VER 7 = Oct 28 11 AM: whole-PDF read when a slice is unreadable, browser read for script pages, '24/7', agency-wide key rows left out of the gate; VER 6 = Oct 28 10:15 AM (regrade 3): headings ending ':' dropped, no statewide licence prices / nationwide notices / legal text, campground hours apart, days need a time; VER 5 =: debug text for gate misses; VER 4 =: the page-list unpack fix; VER 3 was the 6:40 AM (chat 11's grade + regrade): schedule / labelled rows count; questions, events, '$N million' never; attraction hours labelled
 QUEUE = T.QUEUE
 STAT = {'parks': 0, 'pages_read': 0, 'hours': 0, 'fees': 0, 'permits': 0, 'none': 0, 'no_page': 0, 'skipped_fresh': 0, 'errors': 0}
 
-TIME = r'(?:24/7|24 hours a day|open 24 hours|\d{1,2}(?::\d\d)?\s*(?:a\.?m\.?|p\.?m\.?)|noon|midnight|daylight|dawn|dusk|sunrise|sunset|sundown|dark|24 hours|year[- ]round|seasonal)'
+TIME = r'(?:24/7|24 hours a day|open 24 hours|(?<=open )\d{1,2}\s*(?:to|-|–)\s*\d{1,2}\b|(?<=daily )\d{1,2}\s*(?:to|-|–)\s*\d{1,2}\b|(?<=hours: )\d{1,2}\s*(?:to|-|–)\s*\d{1,2}\b|\d{1,2}(?::\d\d)?\s*(?:a\.?m\.?|p\.?m\.?)|noon|midnight|daylight|dawn|dusk|sunrise|sunset|sundown|dark|24 hours|year[- ]round|seasonal)'
 DAYS = r'(?:mon|tues?|wed|thurs?|fri|sat|sun)[a-z]*\.?'
 HOURS_RX = re.compile(r'([^.;\n]{0,160}?\b(?:open|hours?|closed|closes|gates?|access(?:ible)?|day[- ]use)\b[^.;\n]{0,160}?\b' + TIME + r'[^.;\n]{0,120}|[^.;\n]{0,120}\b' + TIME + r'\s*(?:to|-|–|until|till|through)\s*' + TIME + r'[^.;\n]{0,120}|[^.;\n]{0,120}\b' + DAYS + r'\s*(?:to|-|–|through|thru)\s*' + DAYS + r'[^.;\n]{0,120})', re.I)
 HOURS_BAD = re.compile(r'office hours|customer service|phone|call center|visitor cent(?:er|re) hours|museum hours|gift shop|restaurant|lodge|pool hours|store hours|marina hours|golf|rental|cabin|cottage|campground office|check[- ]in|check[- ]out|headquarters|business hours|hatchery hours', re.I)
@@ -57,11 +57,11 @@ def clean(s): return ' '.join(s.split())[:MAXLEN]
 
 
 ABBR = re.compile(r'\b(jan|feb|mar|apr|jun|jul|aug|sept?|oct|nov|dec|mon|tues?|wed|thurs?|fri|sat|sun|u\.s|st|mt|ft|dr|mr|mrs|ms|no|vs|etc|approx|inc|co|ave|rd|hwy|rte)\.(?=\s)', re.I)
-SUBJECT = re.compile(r'\b(memorial|building|birthplace|homestead|park|parks|area|areas|refuge|forest|preserve|reserve|sanctuary|site|grounds|trails?|gates?|day[- ]use|visitors?|public|property|lands?|wma|lake|beach|campground|office|visitor cent(?:er|re)|museum|building|lodge|center|centre|headquarters|range|hatchery|cave|tours?|we|it)\b', re.I)
+SUBJECT = re.compile(r'\b(hiking|hikers|walking|access|open|memorial|building|birthplace|homestead|park|parks|area|areas|refuge|forest|preserve|reserve|sanctuary|site|grounds|trails?|gates?|day[- ]use|visitors?|public|property|lands?|wma|lake|beach|campground|office|visitor cent(?:er|re)|museum|building|lodge|center|centre|headquarters|range|hatchery|cave|tours?|we|it)\b', re.I)
 OFFICE = re.compile(r'office|headquarters|visitor cent|business hours|call|phone', re.I)
 BUILDING = re.compile(r'memorial building|memorial|museum|visitor cent(?:er|re)|lodge|cabin|tour|cave tours?|house|mansion|gift shop|restaurant|pool|marina|gallery|exhibit|planetarium|center|centre', re.I)
 HUNTSEASON = re.compile(r'season|hunting|hunters|quota|shooting hours|legal (?:shooting|hunting)|dove|deer|turkey|waterfowl|grouse|quail|squirrel', re.I)
-SCHEDULE = re.compile(r'^\s*(?:' + DAYS + r'(?:\s*(?:-|–|to|through|thru)\s*' + DAYS + r')?|daily|every day|year[- ]round|seven days a week|7 days a week|summer|winter|spring|fall|' + TIME + r')\b', re.I)
+SCHEDULE = re.compile(r'^\s*(?:open|hours|' + DAYS + r'(?:\s*(?:-|–|to|through|thru)\s*' + DAYS + r')?|daily|every day|year[- ]round|seven days a week|7 days a week|summer|winter|spring|fall|' + TIME + r')\b', re.I)
 LABELLED = re.compile(r'^\s*(?:park |visitor |general |operating |day[- ]use |gate )?(?:hours|open|opens|closed|admission|entrance fee|entry fee|day[- ]use fee|parking fee|fees?|permits?)\s*[:\-–]\s*\S', re.I)
 EVENT = re.compile(r'performance|concert|show begins|meet (?:&|and) greet|festival|parade|race day|gates? open at \d{1,2}(?::\d\d)? ?[ap]m\s*\|?\s*(?:performance|show)|tickets? (?:go )?on sale|registration (?:opens|begins)|event (?:begins|starts)|doors open|fireworks|celebration|camp(?:s)? for kids|summer camp', re.I)
 MILLION = re.compile(r'\$\s?[\d.,]+\s*(?:million|billion|m\b|k\b)|million|renovation|grant|budget|funding|raised', re.I)
@@ -73,6 +73,7 @@ TOURISM = re.compile(r'kentuckytourism\.com|visit[a-z]+\.com|tourism', re.I)
 
 
 def sentences(text):
+    text = re.sub(r'(\w)- (?=[a-z])', r'\1', text)   # v9: a PDF's line-break hyphens ('Wednes- day') joined back
     """Sentences of a page with abbreviations protected (H-R1: never cut at 'Nov.', 'a.m.', 'U.S.', 'St.')."""
     t = re.sub(r'\b([apAP])\.\s?[mM]\.(?=\s+[A-Z(]|\s*$)', r'\1m.', text)   # '4:30 p.m. Park grounds…' ends a sentence
     t = re.sub(r'\b([ap])\.\s?m\.', r'\1m', t, flags=re.I)                               # '10 p.m. to 7 a.m.' does not
