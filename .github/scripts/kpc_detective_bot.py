@@ -54,7 +54,8 @@ REFRESH_DAYS = int(os.environ.get('REFRESH_DAYS') or 30)
 MAXREQ = int(os.environ.get('MAXREQ') or 8)
 PARK_CAP = int(os.environ.get('PARKS') or 0)
 TODAY = time.strftime('%Y-%m-%d')
-VER = 3   # Oct 28 (HQ, 2nd fix): the park's own name is never a hint, attribute dumps never answer tract / acreage, every step's outcome is written, units names the page read
+VER = 4   # Oct 28 (chat 11's grade): steps 3-4 retried then 'blocked: <status>', only park documents followed, 'different unit' notes, labelled 'Size: N' rows count
+# VER 3   # Oct 28 (HQ, 2nd fix): the park's own name is never a hint, attribute dumps never answer tract / acreage, every step's outcome is written, units names the page read
 SIZE_TOL = 0.25     # 'similar size': within 25% (the observations-log threshold); the truth checker's 15% is for AGREEMENT of a size we already trust
 PADUS = 'https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0'   # same as kpc-bounds.js
 PADUS_FIELDS = 'OBJECTID,Unit_Nm,Loc_Nm,Mang_Name,Loc_Mang,Des_Tp,Pub_Access,GIS_Acres,Category'
@@ -272,20 +273,24 @@ def official_org(name, area):
 
 
 # ---- polite JSON
-def J(u, params=None, budget=None):
+LAST = {'status': ''}   # the last J() status, so a step can write 'blocked: <status>'
+
+
+def J(u, params=None, budget=None, timeout=25, limit=None):
     """One polite GET that returns parsed JSON or None. budget = the park's request counter (a list of one int)."""
     if budget is not None:
-        if budget[0] >= MAXREQ or late(): return None
+        if budget[0] >= (limit or MAXREQ) or late(): LAST['status'] = 'budget'; return None
         budget[0] += 1
     STAT['requests'] += 1
     url = u + ('?' + urllib.parse.urlencode(params) if params else '')
-    st, _h, body, _f = M.get(url, timeout=25, accept='application/json,*/*;q=0.5')
+    st, _h, body, _f = M.get(url, timeout=timeout, accept='application/json,*/*;q=0.5')
+    LAST['status'] = str(st)
     if st != 200 or not body:
         if st not in ('rest', 'robots'): STAT['errors'] += 1
         return None
     try: j = json.loads(body.decode('utf-8', 'replace'))
     except Exception: return None  # noqa: BLE001
-    if isinstance(j, dict) and j.get('error'): return None
+    if isinstance(j, dict) and j.get('error'): LAST['status'] = 'error: ' + str((j['error'] or {}).get('message') if isinstance(j['error'], dict) else j['error'])[:60]; return None
     if budget is not None and len(budget) > 1: budget[1] += 1
     return j
 
@@ -572,9 +577,11 @@ FACT_RX = {
 }
 FACT_RX['outline'] = re.compile(r'\b(boundary|boundaries|map|outline|acres?|units?|tracts?)\b', re.I)
 FACT_RX['free text'] = re.compile('|'.join(r.pattern for k, r in FACT_RX.items() if k not in ('outline',)), re.I)
+PARK_DOC = re.compile(r'park|preserve|natural area|nature|wma|wildlife|forest|tract|acquisition|acquire|khlcf|heritage land|management plan|master plan|land|trail|refuge|recreation|conservation', re.I)
 DOC_WORDS = re.compile(r'\.pdf\b|brochure|management plan|master plan|annual report|report|acquisition|khlcf|heritage land|tract|land purchase|property|parcel|trail map|park map|boundary|fact sheet|history', re.I)
 TERMS_WALL = re.compile(r'(?:i\s+)?(?:agree|accept)\b.{0,80}(?:terms|conditions|disclaimer)|terms (?:of use|and conditions).{0,80}(?:agree|accept|continue)|click (?:here )?to (?:agree|accept|continue)|sign in|log ?in|password|captcha|access denied|subscription required|robots? (?:are )?not (?:allowed|permitted)|automated (?:access|queries) (?:is|are) (?:not permitted|prohibited)', re.I)
 SENT_SPLIT = re.compile(r'(?<=[.!?])\s+(?=[A-Z"(])|\n+')
+SKIPPED = [0]   # documents skipped this question: not about parks
 STATQ = {'questions': 0, 'answered': 0, 'partly': 0, 'not_found': 0, 'blocked': 0, 'skipped_done': 0}
 
 
@@ -643,6 +650,7 @@ def pick_links(html, base, name, hints, n=4):
         blob = (t + ' ' + u).lower()
         if not DOC_WORDS.search(blob): continue
         if re.search(r'facebook|twitter|youtube|instagram|mailto|\.(jpg|png|gif|zip|kmz|xlsx?)$', blob): continue
+        if not (PARK_DOC.search(blob) or any(w in blob for w in core_words(name))): SKIPPED[0] += 1; continue   # V4: Title VI reports, air regulations… are not about parks
         score = 3 * any(h in blob for h in hints) + 2 * any(w in blob for w in core_words(name)) + (1 if '.pdf' in blob else 0)
         yr = re.findall(r'20[12]\d', blob); score += (int(yr[-1]) - 2000) / 100 if yr else 0
         rows.append((score, u, t))
@@ -688,6 +696,13 @@ def answers_question(find, what, hints):
     return what in ks
 
 
+def q_unit(name):
+    """The unit named in brackets or after a dash in the question's park name: 'Green River SNA (Boiling Springs unit)' -> 'boiling springs'."""
+    m = re.search(r'\(([^)]+?)(?:\s+unit|\s+tract|\s+section)?\)|[-–:]\s*([^-–:]+?)(?:\s+unit|\s+tract)?\s*$', name or '')
+    u = (m.group(1) or m.group(2)) if m else ''
+    return low(u) if u and len(u) > 3 else ''
+
+
 def layer_context(name, hints, what, la, lo, area, budget, tried, finds):
     """Step 1: the polygons with the park's name under the pin (and, for acreage, within NEAR_M) in every layer we read.
     Each is a context find; an 'outline' question or a polygon that names the asked tract is an answer."""
@@ -708,7 +723,10 @@ def layer_context(name, hints, what, la, lo, area, budget, tried, finds):
             if not (named or tract_hit): continue
             line = '; '.join(f'{k}={v}' for k, v in a.items() if isinstance(v, (str, int, float)) and str(v).strip() and not re.search(r'objectid|shape|globalid', k, re.I))[:240]
             matched += 1
-            finds.append({'step': '1 our layers', 'kind': 'attributes', 'role': 'answer' if (what == 'outline' or (tract_hit and what not in ('acreage',))) else 'context', 'fact': f'polygon {"under the pin" if what != "acreage" else "under or near the pin"} in a layer we read: "{pname}"' + (f', {acres_of(a)} ac' if acres_of(a) else ''),
+            unit_note = ''
+            qu = q_unit(name)
+            if qu and qu not in pname.lower() and judge_name(name, pname) in ('match', 'mismatch'): unit_note = 'a different unit of the same ' + (re.search(r'(natural area|nature preserve|state park|wma|wildlife management area|forest|refuge|park)', low(name)) or [None, 'park'])[1]
+            finds.append({'step': '1 our layers', 'kind': 'attributes', 'note': unit_note, 'role': 'answer' if (what == 'outline' or (tract_hit and what not in ('acreage',))) else 'context', 'fact': f'polygon {"under the pin" if what != "acreage" else "under or near the pin"} in a layer we read: "{pname}"' + (f', {acres_of(a)} ac' if acres_of(a) else ''),
                           'line': line, 'url': lu, 'date': TODAY, 'poly': pname, 'acres': acres_of(a)})
         if hits: tried[-1]['result'] = f'{matched} named polygon(s) of {len(hits)}' if matched else 'opened, nothing matched the name' 
 
@@ -721,6 +739,7 @@ def follow_reports(url, html, name, hints, what, budget, tried, finds, done):
         if n >= 6 or budget[0] >= QMAX - 3 or late(): break
         blob = (t + ' ' + u)
         if '.pdf' not in u.lower() or not REPORT_LINK.search(blob) or u in done: continue
+        if not (PARK_DOC.search(blob) or any(w in blob.lower() for w in core_words(name))): SKIPPED[0] += 1; done.add(u); continue   # V4: only park / land documents
         done.add(u); n += 1
         tried.append({'step': 2, 'url': u, 'what': 'report PDF: ' + (t or '')[:60]})
         if budget[0] >= QMAX: break
@@ -737,6 +756,34 @@ def follow_reports(url, html, name, hints, what, budget, tried, finds, done):
                 finds.append(f)
             if any(f.get('role') == 'answer' for f in finds): return True
     return False
+
+
+SIZE_LABEL = re.compile(r'(?:park\s+|preserve\s+|area\s+|total\s+)?(?:size|acreage|acres|area)\s*[:=]\s*(\d[\d,]*(?:\.\d+)?)\s*(acres?|ac\b|hectares?|ha\b)?', re.I)
+
+
+def page_sizes(text, name):
+    """Sizes on an agency page: kpc_truth_bot.sizes_in (clean / total / why) when it imports, plus the label rule ('Size: 440',
+    'Acreage: 1,007 acres' rows count as a labelled total). -> [{'acres','as','line','clean','total','why'}] best first."""
+    out = []
+    try:
+        import kpc_truth_bot as TB
+        TB.M = M
+        for r in TB.sizes_in(text, name):
+            out.append({'acres': r.get('acres'), 'as': r.get('as'), 'line': (r.get('line') or '')[:240], 'clean': r.get('clean'), 'total': r.get('total'), 'why': r.get('why')})
+    except Exception as e: out.append({'acres': None, 'as': '', 'line': f'(truth checker reader not available: {e})', 'clean': False, 'total': False, 'why': 'reader missing'})  # noqa: BLE001
+    out = [o for o in out if o.get('acres')]
+    for m in SIZE_LABEL.finditer(text or ''):
+        n = float(m.group(1).replace(',', '')); unit = m.group(2) or 'acres'
+        a = n * 2.47105 if unit.lower().startswith(('hectare', 'ha')) else n
+        if a < 0.5: continue
+        s0 = max(0, m.start() - 60); line = ' '.join(text[s0:m.end() + 40].split())[:240]
+        same = [o for o in out if abs((o['acres'] or 0) - a) < 0.6]
+        if same:   # the label rule: a 'Size: N' row is a labelled total even when the truth reader saw no total words near it
+            for o in same: o.update({'clean': True, 'total': True, 'why': 'labelled size row'})
+            continue
+        out.append({'acres': round(a, 1), 'as': f'{m.group(1)} {unit}', 'line': line, 'clean': True, 'total': True, 'why': 'labelled size row'})
+    out.sort(key=lambda o: (0 if o.get('clean') else 1 if o.get('total') else 2))
+    return out
 
 
 def add_facts(L, url, step, what, hints, finds, tried=None):
@@ -758,7 +805,7 @@ def hunt_question(q, P, area):
     pk = park_of(ref, P)
     name = q.get('park') or (pk[0] if pk else '')
     hints = {h for h in hints_of(note) if h not in low(name) and not any(h == w for w in core_words(name))}   # V3: the park's own name is never a hint (it made every polygon a 'tract hit')
-    tried = []; budget = [0, 0]; blocked = []; finds = []; done = set()
+    tried = []; budget = [0, 0]; blocked = []; finds = []; done = set(); SKIPPED[0] = 0
     if not pk and not name: return {'result': 'NOT FOUND', 'not found': 'park unknown: no pin or page for this reference', 'tried': [], 'finds': []}
     la, lo, page, county, off = (pk[2], pk[3], pk[4], pk[5], pk[6]) if pk else (None, None, '', '', '')
     answered = lambda: any(f.get('role') == 'answer' for f in finds)  # noqa: E731
@@ -773,7 +820,11 @@ def hunt_question(q, P, area):
             st, text, html = read_html(page, budget)
             if st == 'ok':
                 add_facts(facts_in(text, name, hints, what), page, '2 agency page', what, hints, finds, tried)
-                if what == 'acreage':   # the page's own size sentence is kept even when the first find already answered
+                if what == 'acreage':   # the page's own size: the truth checker's reader (V4: a labelled 'Size: 440' row counts, label rule), else our sentence reader
+                    for sz in page_sizes(text, name)[:2]:
+                        if not any(f.get('line') == sz['line'] for f in finds):
+                            f = {'step': '2 agency page', 'role': 'answer' if sz.get('clean') or sz.get('total') else 'context', 'fact': f"agency page size: {sz['as']} ({sz.get('why') or 'size row'})", 'line': sz['line'], 'url': page, 'date': TODAY, 'acres': sz.get('acres')}
+                            finds.append(f)
                     for line, kinds in facts_in(text, name, hints, 'acreage')[:1]:
                         if not any(f.get('line') == line for f in finds): finds.append({'step': '2 agency page', 'role': 'context', 'fact': 'agency page size: ' + line[:160], 'line': line, 'url': page, 'date': TODAY})
                 docs += pick_links(html, page, name, hints, 3)
@@ -793,15 +844,26 @@ def hunt_question(q, P, area):
             st, text, _h = read_html(u, budget)
             if st != 'ok': tried[-1]['result'] = f'did not open ({st})'; continue
             add_facts(facts_in(text, name, hints, what), u, '2 agency documents', what, hints, finds, tried)
-    # 3 the state open-data portal
+    # 3 the state open-data portal (V4: a second try on a different base; 'blocked: <status>' when both fail)
     if not answered() and budget[0] < QMAX - 2:
         sn = STATE_NAMES.get(area[3:], '')
         qn = ' '.join(sorted(core_words(name)))[:60]
         tried.append({'step': 3, 'url': 'https://hub.arcgis.com/api/v3/datasets?q=' + urllib.parse.quote(f'{qn} {sn}'), 'what': 'open-data search'})
-        j = J('https://hub.arcgis.com/api/v3/datasets', {'q': f'{qn} {sn}'.strip(), 'page[size]': 6, 'f': 'json'}, budget)
-        tried[-1]['result'] = 'did not open' if j is None else ('nothing matched' if not (j or {}).get('data') else f'{len(j.get("data") or [])} dataset(s), none official' )
-        for d in (j or {}).get('data') or []:
-            at = d.get('attributes') or {}
+        rows = []; st1 = ''
+        j = J('https://hub.arcgis.com/api/v3/datasets', {'q': f'{qn} {sn}'.strip(), 'page[size]': 6, 'f': 'json'}, budget, limit=QMAX)
+        if j is None:
+            st1 = LAST['status']
+            tried.append({'step': 3, 'url': 'https://www.arcgis.com/sharing/rest/search?q=' + urllib.parse.quote(f'{qn} {sn}'), 'what': 'open-data search (second try, ArcGIS Online)'})
+            j2 = J('https://www.arcgis.com/sharing/rest/search', {'q': f'{qn} {sn} AND (type:"Feature Service" OR type:"Map Service")', 'num': 6, 'f': 'json'}, budget, limit=QMAX)
+            if j2 is None:
+                tried[-2]['result'] = f'blocked: {st1}'; tried[-1]['result'] = f'blocked: {LAST["status"]}'
+            else:
+                tried[-2]['result'] = f'did not open ({st1}); second try opened'
+                rows = [{'name': it.get('title') or '', 'orgName': it.get('owner') or '', 'url': it.get('url') or '', 'description': it.get('snippet') or ''} for it in j2.get('results') or []]
+        else: rows = [d.get('attributes') or {} for d in j.get('data') or []]
+        if j is not None or rows:
+            tried[-1]['result'] = 'nothing matched' if not rows else f'{len(rows)} dataset(s), none official'
+        for at in rows:
             title = at.get('name') or ''
             if judge_name(name, title) in ('match', 'mismatch') and official_org(at.get('orgName') or at.get('source') or '', area):
                 tried[-1]['result'] = f'opened, dataset "{title}"'
@@ -811,8 +873,16 @@ def hunt_question(q, P, area):
     # 4 PAD-US at the pin
     if not answered() and la is not None and budget[0] < QMAX - 1 and what in ('outline', 'free text') + CONTEXT_KINDS:
         tried.append({'step': 4, 'url': PADUS, 'what': 'PAD-US point query'})
-        j = J(PADUS + '/query', {'geometry': f'{lo},{la}', 'geometryType': 'esriGeometryPoint', 'inSR': 4326, 'spatialRel': 'esriSpatialRelIntersects', 'outFields': '*', 'returnGeometry': 'false', 'f': 'json'}, budget)
-        tried[-1]['result'] = 'did not open' if j is None else ('nothing under the pin' if not (j or {}).get('features') else f'{len(j["features"])} record(s)')
+        qp = {'geometry': f'{lo},{la}', 'geometryType': 'esriGeometryPoint', 'inSR': 4326, 'spatialRel': 'esriSpatialRelIntersects', 'outFields': '*', 'returnGeometry': 'false', 'f': 'json'}
+        j = J(PADUS + '/query', qp, budget, timeout=25, limit=QMAX)
+        if j is None:   # V4: second try: wake the service (layer page, f=json), then the query again with a longer timeout
+            st1 = LAST['status']
+            tried.append({'step': 4, 'url': PADUS + '?f=json', 'what': 'PAD-US second try (layer page, then the query with a 40 s timeout)'})
+            meta = J(PADUS, {'f': 'json'}, budget, timeout=40, limit=QMAX)
+            j = J(PADUS + '/query', qp, budget, timeout=40, limit=QMAX) if meta is not None or budget[0] < QMAX else None
+            if j is None: tried[-2]['result'] = f'blocked: {st1}'; tried[-1]['result'] = f'blocked: {LAST["status"]}'
+            else: tried[-2]['result'] = f'did not open ({st1}); second try opened'
+        if j is not None: tried[-1]['result'] = 'nothing under the pin' if not j.get('features') else f'{len(j["features"])} record(s)' 
         for ft in (j or {}).get('features') or []:
             a = ft.get('attributes') or {}
             if PAD_NEVER.search(str(a.get('Category') or '') + ' ' + str(a.get('Des_Tp') or '')): continue
@@ -837,10 +907,11 @@ def hunt_question(q, P, area):
         st, text, _h = read_html(r['url'], budget)
         if st != 'ok': tried[-1]['result'] = f'did not open ({st})'; continue
         add_facts(facts_in(text, name, hints, what if what != 'tract' else 'free text'), r['url'], '6 news releases', what, hints, finds, tried)
+    if SKIPPED[0]: tried.append({'step': 2, 'url': '', 'what': f'{SKIPPED[0]} document link(s) not followed', 'result': 'skipped: not about parks'})
     res = {'finds': finds, 'tried': tried, 'answer': next((f for f in finds if f.get('role') == 'answer'), None)}
     if what == 'acreage':   # every polygon with the park's name under / near the pin, their acres and the sum, vs the agency's sentence
         polys = [f for f in finds if f.get('step') == '1 our layers']
-        agency = next((f for f in finds if f.get('step') == '2 agency page' and 'acre' in f.get('line', '').lower()), None)
+        agency = next((f for f in finds if f.get('step') == '2 agency page' and (f.get('acres') or 'acre' in f.get('line', '').lower())), None)
         tot = sum(f.get('acres') or 0 for f in polys)
         pg = next((t for t in tried if t.get('step') == 2 and t.get('what') == 'agency park page'), None)
         page_note = (f'the agency page {pg["url"]} ({pg.get("result") or "?"})' if pg else 'no agency page on file for this park')
@@ -905,7 +976,7 @@ def answers_md(A):
         chain = [f for f in v.get('finds') or [] if f is not a]
         if chain:
             L.append('- the chain:')
-            for f in chain[:10]: L.append(f'  - step {f.get("step")} ({f.get("role")}): {f.get("fact")} · "{(f.get("line") or "")[:160]}" · {f.get("url")}')
+            for f in chain[:10]: L.append(f'  - step {f.get("step")} ({f.get("role")}): {f.get("fact")} · "{(f.get("line") or "")[:160]}" · {f.get("url")}' + (f' · note: {f["note"]}' if f.get('note') else ''))
         L.append('- steps tried:')
         for t in v.get('tried') or []: L.append(f'  - step {t.get("step")}: {t.get("what")} {t.get("url")} → {t.get("result") or "not reached"}')
         if v.get('blocked'): L.append(f'- blocked by terms / robots: {", ".join(v["blocked"])}')
@@ -937,6 +1008,16 @@ def selftest_facts():
         rush_dump = {'kind': 'attributes', 'line': 'MA_ID=768.0; MANAME=Green River State Natural Area (Rush Island Bottoms); UNIT_TYPE=State Natural Area; MA_OWNER=Office of Kentucky Nature Preserves; ACRES=139.25; PUB_ACCESS=Open'}
         got = answers_question(rush_dump, (q.get('what') or '').lower(), hq); ok &= not got
         print(f'real row {q.get("id")}: what={q.get("what")} hints={sorted(hq)} → Rush Island attribute dump answers? {got} ({"ok" if not got else "WRONG"})')
+    sz = page_sizes('Rush Island Bottoms\nLocation: Hart County\nSize: 440\nOpen to the public.', 'Green River State Natural Area')
+    got = bool(sz) and abs((sz[0].get('acres') or 0) - 440) < 1; ok &= got
+    print(f'size row: "Size: 440" → {sz[0] if sz else None} ({"ok" if got else "MISSED"})')
+    got = q_unit('Green River State Natural Area (Boiling Springs unit)') == 'boiling springs'; ok &= got
+    print(f'unit of the question: {q_unit("Green River State Natural Area (Boiling Springs unit)")!r} ({"ok" if got else "WRONG"})')
+    pk = [(u, t) for u, t in [('https://eec.ky.gov/a/Title-VI-Report.pdf', 'Title VI report'), ('https://eec.ky.gov/a/KNP-KHLCF-2019-Annual-Report.pdf', 'KHLCF 2019 Annual Report'), ('https://eec.ky.gov/a/Air-Regulation-History.pdf', 'Air regulation history')]]
+    html = ''.join(f'<a href="{u}">{t}</a>' for u, t in pk)
+    SKIPPED[0] = 0; picked = pick_links(html, 'https://eec.ky.gov/', 'Green River State Natural Area', set(), 4)
+    got = [u for u, _ in picked] == ['https://eec.ky.gov/a/KNP-KHLCF-2019-Annual-Report.pdf'] and SKIPPED[0] == 2; ok &= got
+    print(f'park documents only: picked {[t for _, t in picked]}, skipped {SKIPPED[0]} ({"ok" if got else "WRONG"})')
     rush = {'line': 'NAME=Green River State Natural Area (Rush Island Bottoms); ACRES=139.25; MANAGER=KNP'}
     timber = {'line': 'Green River State Natural Area, Timber Lane, KNP, Hart, 115.75'}
     page = {'line': 'Boiling Springs State Nature Preserve covers 440 acres in Hart County.'}
