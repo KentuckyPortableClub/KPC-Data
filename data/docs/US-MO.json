@@ -1728,8 +1728,8 @@
    "checked": "2026-10-29",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 6 parks was dropped: https://cwd-interactive-maps-mdcgis.hub.arcgis.com/)",
+    "how": "the page in a browser ('CWD Interactive Hub')"
    },
    "rules": {
     "url": "https://mdc.mo.gov/discover-nature/places/regulations",
@@ -1741,7 +1741,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-10-29"
   },
   "US-10576": {
    "n": "Rush Creek State Conservation Area",
@@ -1750,8 +1751,8 @@
    "checked": "2026-10-29",
    "map": {
     "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "status": "no map (one file shared by 6 parks was dropped: https://cwd-interactive-maps-mdcgis.hub.arcgis.com/)",
+    "how": "the page in a browser ('CWD Interactive Hub')"
    },
    "rules": {
     "url": "https://mdc.mo.gov/discover-nature/places/regulations",
@@ -1763,7 +1764,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-10-29"
   },
   "US-10577": {
    "n": "Pigg's Landing Access State Conservation Area",
@@ -3707,19 +3709,9 @@
    "page": "https://mdc.mo.gov/discover-nature/places/chalk-bluff-trail-access",
    "checked": "2026-10-29",
    "map": {
-    "url": "https://cwd-interactive-maps-mdcgis.hub.arcgis.com/",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-29",
-    "how": "a link on the park's page ('CWD Interactive Hub')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-29",
-    "covers": 0,
-    "via": "linked from the agency page (cwd-interactive-maps-mdcgis.hub.arcgis.com)",
-    "date_label": "date unknown"
+    "url": "",
+    "status": "no map (one file shared by 6 parks was dropped: https://cwd-interactive-maps-mdcgis.hub.arcgis.com/)",
+    "how": "a link on the park's page ('CWD Interactive Hub')"
    },
    "rules": {
     "url": "https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp",
@@ -4591,19 +4583,9 @@
    "page": "https://mdc.mo.gov/discover-nature/places/mary-lawson-conservation-area",
    "checked": "2026-10-29",
    "map": {
-    "url": "https://cwd-interactive-maps-mdcgis.hub.arcgis.com/",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-29",
-    "how": "a link on the park's page ('CWD Interactive Hub')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-29",
-    "covers": 0,
-    "via": "linked from the agency page (cwd-interactive-maps-mdcgis.hub.arcgis.com)",
-    "date_label": "date unknown"
+    "url": "",
+    "status": "no map (one file shared by 6 parks was dropped: https://cwd-interactive-maps-mdcgis.hub.arcgis.com/)",
+    "how": "a link on the park's page ('CWD Interactive Hub')"
    },
    "rules": {
     "url": "https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp",
@@ -7573,19 +7555,9 @@
    "page": "https://mostateparks.com/historic-site/sappington-african-american-cemetery-state-historic-site",
    "checked": "2026-10-29",
    "map": {
-    "url": "https://mostateparks.com/basic-page/locator-map",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-29",
-    "how": "a link on the park's page ('View Full State Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": true,
-    "checked": "2026-10-29",
-    "covers": 0,
-    "via": "the agency site",
-    "date_label": "date unknown"
+    "url": "",
+    "status": "no map (one file shared by 13 parks was dropped: https://mostateparks.com/basic-page/locator-map)",
+    "how": "a link on the park's page ('View Full State Map')"
    },
    "rules": {
     "url": "https://mostateparks.com/page/55066/rules-and-regulations",
@@ -7605,8 +7577,8 @@
    "checked": "2026-10-29",
    "map": {
     "url": "",
-    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://mdc.mo.gov/media/area/map/8705)",
-    "how": "on file (parkinfo-web / Kentucky answer key)"
+    "status": "no map (one file shared by 6 parks was dropped: https://cwd-interactive-maps-mdcgis.hub.arcgis.com/)",
+    "how": "the page in a browser ('CWD Interactive Hub')"
    },
    "rules": {
     "url": "https://mdc.mo.gov/discover-nature/places/regulations",
@@ -7634,7 +7606,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-10-29"
   },
   "US-1745": {
    "n": "Babler Memorial State Park",
@@ -8169,19 +8142,9 @@
    "page": "https://mostateparks.com/park/harry-s-truman-state-park",
    "checked": "2026-10-29",
    "map": {
-    "url": "https://mostateparks.com/media/pdf/harry-s-truman-state-park-map",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-29",
-    "how": "a link on the park's page ('Park Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": true,
-    "checked": "2026-10-29",
-    "covers": 0,
-    "via": "the agency site",
-    "date_label": "date unknown"
+    "url": "",
+    "status": "no map (one file shared by 13 parks was dropped: https://mostateparks.com/basic-page/locator-map)",
+    "how": "the page in a browser ('Locator Map')"
    },
    "rules": {
     "url": "https://mostateparks.com/page/55066/rules-and-regulations",
@@ -8209,7 +8172,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-10-29"
   },
   "US-1763": {
    "n": "Hawn State Park",
@@ -8419,19 +8383,9 @@
    "page": "https://mostateparks.com/park/lake-wappapello-state-park",
    "checked": "2026-10-29",
    "map": {
-    "url": "https://mostateparks.com/media/pdf/lake-wappapello-state-park",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-29",
-    "how": "a link on the park's page ('Park Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": true,
-    "checked": "2026-10-29",
-    "covers": 0,
-    "via": "the agency site",
-    "date_label": "date unknown"
+    "url": "",
+    "status": "no map (one file shared by 13 parks was dropped: https://mostateparks.com/basic-page/locator-map)",
+    "how": "the page in a browser ('Locator Map')"
    },
    "rules": {
     "url": "https://mostateparks.com/page/55066/rules-and-regulations",
@@ -8443,7 +8397,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the map link refused a plain reader (HTTP 403)",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-10-29"
   },
   "US-1770": {
    "n": "Lewis and Clark State Park",
@@ -8482,19 +8437,9 @@
    "page": "https://mostateparks.com/park/long-branch-state-park",
    "checked": "2026-10-29",
    "map": {
-    "url": "https://mostateparks.com/media/pdf/long-branch-state-park-map",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-29",
-    "how": "a link on the park's page ('Park Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": true,
-    "checked": "2026-10-29",
-    "covers": 0,
-    "via": "the agency site",
-    "date_label": "date unknown"
+    "url": "",
+    "status": "no map (one file shared by 13 parks was dropped: https://mostateparks.com/basic-page/locator-map)",
+    "how": "the page in a browser ('Locator Map')"
    },
    "rules": {
     "url": "https://mostateparks.com/page/55066/rules-and-regulations",
@@ -8506,7 +8451,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the map link refused a plain reader (HTTP 403)",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-10-29"
   },
   "US-1772": {
    "n": "Mark Twain State Park",
@@ -8514,19 +8460,9 @@
    "page": "https://mostateparks.com/park/mark-twain-state-park",
    "checked": "2026-10-29",
    "map": {
-    "url": "https://mostateparks.com/basic-page/locator-map",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-29",
-    "how": "a link on the park's page ('View Full State Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": true,
-    "checked": "2026-10-29",
-    "covers": 0,
-    "via": "the agency site",
-    "date_label": "date unknown"
+    "url": "",
+    "status": "no map (one file shared by 13 parks was dropped: https://mostateparks.com/basic-page/locator-map)",
+    "how": "a link on the park's page ('View Full State Map')"
    },
    "rules": {
     "url": "https://mostateparks.com/page/55066/rules-and-regulations",
@@ -8536,7 +8472,9 @@
    "agency": "Missouri State Parks",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
    "needs_browser": "the map link refused a plain reader (HTTP 403)",
    "ver": 7
   },
@@ -8765,19 +8703,9 @@
    "page": "https://mostateparks.com/park/pomme-de-terre-state-park",
    "checked": "2026-10-29",
    "map": {
-    "url": "https://mostateparks.com/media/pdf/color-park-map-pomme-de-terre",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-29",
-    "how": "a link on the park's page ('Park Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": true,
-    "checked": "2026-10-29",
-    "covers": 0,
-    "via": "the agency site",
-    "date_label": "date unknown"
+    "url": "",
+    "status": "no map (one file shared by 13 parks was dropped: https://mostateparks.com/basic-page/locator-map)",
+    "how": "the page in a browser ('Locator Map')"
    },
    "rules": {
     "url": "https://mostateparks.com/page/55066/rules-and-regulations",
@@ -8789,7 +8717,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "the map link refused a plain reader (HTTP 403)",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-10-29"
   },
   "US-1779": {
    "n": "Prairie State Park",
@@ -9126,19 +9055,9 @@
    "page": "https://mostateparks.com/park/stockton-state-park",
    "checked": "2026-10-29",
    "map": {
-    "url": "https://mostateparks.com/media/pdf/stockton-state-park-map",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-29",
-    "how": "a link on the park's page ('Park Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": true,
-    "checked": "2026-10-29",
-    "covers": 0,
-    "via": "the agency site",
-    "date_label": "date unknown"
+    "url": "",
+    "status": "no map (one file shared by 13 parks was dropped: https://mostateparks.com/basic-page/locator-map)",
+    "how": "the page in a browser ('Locator Map')"
    },
    "rules": {
     "url": "https://mostateparks.com/page/55066/rules-and-regulations",
@@ -9166,7 +9085,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-10-29"
   },
   "US-1787": {
    "n": "Table Rock State Park",
@@ -9175,8 +9095,8 @@
    "checked": "2026-10-29",
    "map": {
     "url": "",
-    "status": "no working map link (tried: HTTP 403 http://www.swl.usace.army.mil/Portals/50/docs/tablerocklake/TABLE%20RO)",
-    "how": "on file (parkinfo-web / Kentucky answer key)"
+    "status": "no map (one file shared by 13 parks was dropped: https://mostateparks.com/basic-page/locator-map)",
+    "how": "the page in a browser ('Locator Map')"
    },
    "rules": {
     "url": "https://mostateparks.com/page/55066/rules-and-regulations",
@@ -9206,7 +9126,8 @@
      "via": "on file, checked by a person or the link harvester (swl.usace.army.mil)"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-10-29"
   },
   "US-1788": {
    "n": "Taum Sauk Mountain State Park",
@@ -9495,19 +9416,9 @@
    "page": "https://mostateparks.com/park/watkins-mill-state-park",
    "checked": "2026-10-29",
    "map": {
-    "url": "https://mostateparks.com/basic-page/locator-map",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-29",
-    "how": "a link on the park's page ('View Full State Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": true,
-    "checked": "2026-10-29",
-    "covers": 0,
-    "via": "the agency site",
-    "date_label": "date unknown"
+    "url": "",
+    "status": "no map (one file shared by 13 parks was dropped: https://mostateparks.com/basic-page/locator-map)",
+    "how": "a link on the park's page ('View Full State Map')"
    },
    "rules": {
     "url": "https://mostateparks.com/page/55066/rules-and-regulations",
@@ -9665,19 +9576,9 @@
    "page": "https://mostateparks.com/historic-site/battle-lexington-state-historic-site",
    "checked": "2026-10-29",
    "map": {
-    "url": "https://mostateparks.com/basic-page/locator-map",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-29",
-    "how": "a link on the park's page ('View Full State Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": true,
-    "checked": "2026-10-29",
-    "covers": 0,
-    "via": "the agency site",
-    "date_label": "date unknown"
+    "url": "",
+    "status": "no map (one file shared by 13 parks was dropped: https://mostateparks.com/basic-page/locator-map)",
+    "how": "a link on the park's page ('View Full State Map')"
    },
    "rules": {
     "url": "https://mostateparks.com/page/55066/rules-and-regulations",
@@ -9696,19 +9597,9 @@
    "page": "https://mostateparks.com/historic-site/battle-pilot-knob-state-historic-site",
    "checked": "2026-10-29",
    "map": {
-    "url": "https://mostateparks.com/basic-page/locator-map",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-29",
-    "how": "a link on the park's page ('View Full State Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": true,
-    "checked": "2026-10-29",
-    "covers": 0,
-    "via": "the agency site",
-    "date_label": "date unknown"
+    "url": "",
+    "status": "no map (one file shared by 13 parks was dropped: https://mostateparks.com/basic-page/locator-map)",
+    "how": "a link on the park's page ('View Full State Map')"
    },
    "rules": {
     "url": "https://mostateparks.com/page/55066/rules-and-regulations",
@@ -9888,19 +9779,9 @@
    "page": "https://mostateparks.com/park/felix-valle-house-state-historic-site",
    "checked": "2026-10-29",
    "map": {
-    "url": "https://mostateparks.com/basic-page/locator-map",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-29",
-    "how": "a link on the park's page ('View Full State Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": true,
-    "checked": "2026-10-29",
-    "covers": 0,
-    "via": "the agency site",
-    "date_label": "date unknown"
+    "url": "",
+    "status": "no map (one file shared by 13 parks was dropped: https://mostateparks.com/basic-page/locator-map)",
+    "how": "a link on the park's page ('View Full State Map')"
    },
    "rules": {
     "url": "https://mostateparks.com/page/55066/rules-and-regulations",
@@ -10126,19 +10007,9 @@
    "page": "https://mostateparks.com/historic-site/missouri-mines-state-historic-site",
    "checked": "2026-10-29",
    "map": {
-    "url": "https://mostateparks.com/basic-page/locator-map",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-29",
-    "how": "a link on the park's page ('View Full State Map')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": true,
-    "checked": "2026-10-29",
-    "covers": 0,
-    "via": "the agency site",
-    "date_label": "date unknown"
+    "url": "",
+    "status": "no map (one file shared by 13 parks was dropped: https://mostateparks.com/basic-page/locator-map)",
+    "how": "a link on the park's page ('View Full State Map')"
    },
    "rules": {
     "url": "https://mostateparks.com/page/55066/rules-and-regulations",
@@ -10600,9 +10471,18 @@
    "page": "https://www.fs.usda.gov/mtnf",
    "checked": "2026-10-29",
    "map": {
-    "url": "",
-    "status": "no map link on file and none on the park page",
-    "how": ""
+    "url": "https://www.fs.usda.gov/r09/marktwain/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-29",
+    "how": "the page in a browser ('Get a Map')",
+    "page": "https://www.fs.usda.gov/mtnf",
+    "posted": "October 8, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-10-29",
+    "via": "the agency site",
+    "kind_note": "forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r09/marktwain",
@@ -10614,7 +10494,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-10-29"
   },
   "US-4566": {
    "n": "California National Historic Trail",
@@ -10672,7 +10553,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-4576": {
    "n": "Oregon National Historic Trail",
@@ -10703,7 +10584,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-4578": {
    "n": "Pony Express National Historic Trail",
@@ -10734,7 +10615,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-4579": {
    "n": "Santa Fe National Historic Trail",
@@ -10766,7 +10647,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-4587": {
    "n": "Harry S. Truman Birthplace State Historic Site",
@@ -10789,7 +10670,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-4591": {
    "n": "World War I Museum National Memorial",
@@ -10820,7 +10701,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-4838": {
    "n": "Busiek State Forest",
@@ -10851,7 +10732,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-4839": {
    "n": "Lester R. Davis Memorial State Forest",
@@ -10883,7 +10764,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-4840": {
    "n": "Reifsnider State Forest",
@@ -10914,7 +10795,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-4842": {
    "n": "Vanderhoef (Archie and Gracie) Memorial State Forest",
@@ -10945,7 +10826,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-4843": {
    "n": "Murphy (John F.) Memorial State Forest",
@@ -10976,7 +10857,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-5636": {
    "n": "White Nursery State Forest",
@@ -11007,7 +10888,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-5637": {
    "n": "Holland State Forest",
@@ -11038,7 +10919,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-5638": {
    "n": "Funk  Memorial State Forest",
@@ -11069,7 +10950,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-5696": {
    "n": "Angeline State Conservation Area",
@@ -11101,7 +10982,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-5697": {
    "n": "Atlanta Wildlife Area",
@@ -11133,7 +11014,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-5698": {
    "n": "Blind Pony State Conservation Area",
@@ -11164,7 +11045,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-5699": {
    "n": "August A. Busch Memorial State Conservation Area",
@@ -11196,7 +11077,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-5700": {
    "n": "Grand Pass State Conservation Area",
@@ -11228,7 +11109,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-5701": {
    "n": "Fountain Grove State Conservation Area",
@@ -11260,7 +11141,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-5702": {
    "n": "Hartell (Ronald and Maude) State Conservation Area",
@@ -11291,7 +11172,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-5703": {
    "n": "Hunnewell Lake State Conservation Area",
@@ -11322,7 +11203,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-5704": {
    "n": "Indian Trail State Conservation Area",
@@ -11354,7 +11235,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-5705": {
    "n": "Lake Paho State Conservation Area",
@@ -11385,7 +11266,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-5706": {
    "n": "Little Dixie Lake State Conservation Area",
@@ -11416,7 +11297,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-5707": {
    "n": "Lost Valley State Fish and Wildlife Area",
@@ -11448,7 +11329,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-5708": {
    "n": "Montrose State Conservation Area",
@@ -11480,7 +11361,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-5709": {
    "n": "Nodaway State Conservation Area",
@@ -11512,7 +11393,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-5710": {
    "n": "Platte Falls State Conservation Area",
@@ -11543,7 +11424,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-5711": {
    "n": "Pony Express Lake State Conservation Area",
@@ -11574,7 +11455,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-5712": {
    "n": "James A. Reed Memorial Wildlife Area",
@@ -11608,7 +11489,7 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-5713": {
    "n": "Jay Nixon State Park",
@@ -11631,7 +11512,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-5714": {
    "n": "Shepherd of the Hills State Park",
@@ -11654,7 +11535,7 @@
    "notes": [
     "park page: HTTP 404"
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-5715": {
    "n": "Roger Pryor Pioneer Backcountry State Park",
@@ -11707,7 +11588,7 @@
      "via": "the agency site"
     }
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-5716": {
    "n": "Bruce R. Watkins Cultural Heritage Center State Park",
@@ -11728,7 +11609,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6469": {
    "n": "Ferguson Herold State Conservation Area",
@@ -11759,7 +11640,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6470": {
    "n": "Burr Oak Woods State Conservation Area",
@@ -11791,7 +11672,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6471": {
    "n": "Lone Jack Lake State Conservation Area",
@@ -11822,7 +11703,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6472": {
    "n": "Anita B Gorman Discovery Center State Conservation Area",
@@ -11853,7 +11734,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6474": {
    "n": "Guy B Park State Conservation Area",
@@ -11884,7 +11765,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6475": {
    "n": "Kendzora State Conservation Area",
@@ -11915,7 +11796,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6476": {
    "n": "Cooley Lake State Conservation Area",
@@ -11946,7 +11827,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6477": {
    "n": "Amarugia Highlands State Conservation Area",
@@ -11977,7 +11858,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6478": {
    "n": "Maple Leaf Lake State Conservation Area",
@@ -12009,7 +11890,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6479": {
    "n": "Crooked River State Conservation Area",
@@ -12040,7 +11921,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6480": {
    "n": "Poague Haysler State Conservation Area",
@@ -12071,7 +11952,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6481": {
    "n": "Harmony Mission Lake State Conservation Area",
@@ -12102,7 +11983,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6482": {
    "n": "Schell-Osage State Conservation Area",
@@ -12134,7 +12015,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6483": {
    "n": "King Lake State Conservation Area",
@@ -12165,7 +12046,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6484": {
    "n": "Lamine River State Conservation Area",
@@ -12197,7 +12078,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6485": {
    "n": "Happy Holler Lake State Conservation Area",
@@ -12228,7 +12109,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6486": {
    "n": "Ben Branch Lake State Conservation Area",
@@ -12259,7 +12140,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6487": {
    "n": "Apple Creek State Conservation Area",
@@ -12291,7 +12172,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6488": {
    "n": "Duck Creek State Conservation Area",
@@ -12322,7 +12203,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6489": {
    "n": "Howell Island State Conservation Area",
@@ -12354,7 +12235,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6490": {
    "n": "Daniel Boone State Conservation Area",
@@ -12385,7 +12266,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6491": {
    "n": "Peck Ranch State Conservation Area",
@@ -12417,7 +12298,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6492": {
    "n": "Weldon Spring State Conservation Area",
@@ -12449,7 +12330,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6493": {
    "n": "General Watkins State Conservation Area",
@@ -12480,7 +12361,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6494": {
    "n": "Columbia Bottom State Conservation Area",
@@ -12512,7 +12393,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6495": {
    "n": "Little Black State Conservation Area",
@@ -12543,7 +12424,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6496": {
    "n": "Otter Slough State Conservation Area",
@@ -12574,7 +12455,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6497": {
    "n": "Coon Island State Conservation Area",
@@ -12606,7 +12487,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6498": {
    "n": "Current River State Conservation Area",
@@ -12638,7 +12519,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6499": {
    "n": "Huzzah State Conservation Area",
@@ -12670,7 +12551,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6500": {
    "n": "Meramec State Conservation Area",
@@ -12701,7 +12582,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6501": {
    "n": "Lake Girardeau State Conservation Area",
@@ -12748,7 +12629,7 @@
      "via": "the agency site"
     }
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-6502": {
    "n": "Castor River State Conservation Area",
@@ -12779,7 +12660,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6503": {
    "n": "Magnolia Hollow State Conservation Area",
@@ -12810,7 +12691,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6504": {
    "n": "Millstream Gardens State Conservation Area",
@@ -12842,7 +12723,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6505": {
    "n": "Diggs-Marshall State Conservation Area",
@@ -12873,7 +12754,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6506": {
    "n": "Whetstone Creek State Conservation Area",
@@ -12904,7 +12785,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6507": {
    "n": "Rebel's Cove State Conservation Area",
@@ -12937,7 +12818,7 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6508": {
    "n": "Rinquelin Trail Lake State Conservation Area",
@@ -12968,7 +12849,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6509": {
    "n": "Painted Rock State Conservation Area",
@@ -13001,7 +12882,7 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6510": {
    "n": "Bois D'Arc State Conservation Area",
@@ -13034,7 +12915,7 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6511": {
    "n": "Rocky Fork Lakes State Conservation Area",
@@ -13065,7 +12946,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6512": {
    "n": "Locust Creek State Conservation Area",
@@ -13098,7 +12979,7 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6513": {
    "n": "Poosey State Conservation Area",
@@ -13129,7 +13010,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6514": {
    "n": "Big Buffalo Creek State Conservation Area",
@@ -13160,7 +13041,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6515": {
    "n": "Bob Brown State Conservation Area",
@@ -13192,7 +13073,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6516": {
    "n": "Manito Lake State Conservation Area",
@@ -13223,7 +13104,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6517": {
    "n": "Diana Bend State Conservation Area",
@@ -13255,7 +13136,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6518": {
    "n": "Fiery Fork State Conservation Area",
@@ -13287,7 +13168,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6519": {
    "n": "Prairie Home State Conservation Area",
@@ -13319,7 +13200,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6520": {
    "n": "Grand Trace State Conservation Area",
@@ -13352,7 +13233,7 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6521": {
    "n": "Shawnee Trail State Conservation Area",
@@ -13383,7 +13264,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6522": {
    "n": "Emmett and Leah Seat Memorial State Conservation Area",
@@ -13414,7 +13295,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6523": {
    "n": "Thurnau State Conservation Area",
@@ -13445,7 +13326,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6524": {
    "n": "Eagle Bluffs State Conservation Area",
@@ -13477,7 +13358,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6525": {
    "n": "Bilby Ranch Lake State Conservation Area",
@@ -13509,7 +13390,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6526": {
    "n": "Rudolf Bennitt State Conservation Area",
@@ -13540,7 +13421,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6527": {
    "n": "Thomas Hill Reservoir State Conservation Area",
@@ -13573,7 +13454,7 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6528": {
    "n": "Lead Mine State Conservation Area",
@@ -13605,7 +13486,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6529": {
    "n": "Truman Reservoir Management Lands State Park",
@@ -13637,7 +13518,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6530": {
    "n": "Sever Lake State Conservation Area",
@@ -13668,7 +13549,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-6531": {
    "n": "Deer Ridge State Conservation Area",
@@ -13699,7 +13580,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7189": {
    "n": "Beaver Creek State Recreation Area",
@@ -13736,7 +13617,7 @@
      "via": "on file, checked by a person or the link harvester (mdc.mo.gov)"
     }
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-7496": {
    "n": "Fox Valley State Conservation Area",
@@ -13768,7 +13649,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7497": {
    "n": "Frost Island State Conservation Area",
@@ -13800,7 +13681,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7498": {
    "n": "Danville State Conservation Area",
@@ -13831,7 +13712,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7500": {
    "n": "Saeger Woods State Conservation Area",
@@ -13863,7 +13744,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7501": {
    "n": "Belcher Branch Lake State Conservation Area",
@@ -13895,7 +13776,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7502": {
    "n": "A. Busch Jr at Four Rivers Wetland Reserve",
@@ -13927,7 +13808,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7503": {
    "n": "Bushwacker Lake State Conservation Area",
@@ -13961,7 +13842,7 @@
    "handover": [],
    "notes": [],
    "card_note": "Overview map: no map of this park alone was found.",
-   "ver": 6
+   "ver": 7
   },
   "US-7512": {
    "n": "Baltimore Bend State Conservation Area",
@@ -13992,7 +13873,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7513": {
    "n": "Bismarck State Conservation Area",
@@ -14024,7 +13905,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7514": {
    "n": "Marshall Junction State Conservation Area",
@@ -14058,7 +13939,7 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7515": {
    "n": "Schifferdecker Memorial State Conservation Area",
@@ -14089,7 +13970,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7516": {
    "n": "White Memorial State Conservation Area",
@@ -14121,7 +14002,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7517": {
    "n": "Settle's Ford State Conservation Area",
@@ -14154,7 +14035,7 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7519": {
    "n": "Bridger State Conservation Area",
@@ -14185,7 +14066,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7521": {
    "n": "Bluffwoods State Conservation Area",
@@ -14217,7 +14098,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7586": {
    "n": "Toronto Springs State Conservation Area",
@@ -14248,7 +14129,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7604": {
    "n": "Rochester Falls State Conservation Area",
@@ -14279,7 +14160,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7654": {
    "n": "Hazel Hill Lake State Conservation Area",
@@ -14310,7 +14191,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7655": {
    "n": "J.N. Turkey Kearn Memorial Wildlife Area",
@@ -14342,7 +14223,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7656": {
    "n": "Ralph and Martha Perry Memorial State Wildlife Area",
@@ -14373,7 +14254,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7657": {
    "n": "Connor O. Fewel State Conservation Area",
@@ -14404,7 +14285,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7658": {
    "n": "Flight Lake Conservation Reserve",
@@ -14436,7 +14317,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7659": {
    "n": "Huckleberry Ridge Conservation Reserve",
@@ -14467,7 +14348,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7660": {
    "n": "Fort Crowder Conservation Reserve",
@@ -14499,7 +14380,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7661": {
    "n": "Douglas Branch Conservation Reserve",
@@ -14531,7 +14412,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7662": {
    "n": "James R. Harter Conservation Reserve",
@@ -14562,7 +14443,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7663": {
    "n": "Edward Anderson Conservation Reserve",
@@ -14595,7 +14476,7 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7664": {
    "n": "Dupont Reservation Conservation Reserve",
@@ -14626,7 +14507,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7665": {
    "n": "Ted Shanks Conservation Reserve",
@@ -14658,7 +14539,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7666": {
    "n": "Davisdale Conservation Reserve",
@@ -14689,7 +14570,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7667": {
    "n": "Wellsville Lake Conservation Reserve",
@@ -14720,7 +14601,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7668": {
    "n": "Little Lost Creek Conservation Reserve",
@@ -14751,7 +14632,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7669": {
    "n": "Flag Spring Conservation Reserve",
@@ -14782,7 +14663,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7670": {
    "n": "Bittern Bottoms Conservation Reserve",
@@ -14813,7 +14694,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7671": {
    "n": "Dorsett Hill Prairie Conservation Reserve",
@@ -14845,7 +14726,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7672": {
    "n": "Sni-A Bar Conservation Reserve",
@@ -14876,7 +14757,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7673": {
    "n": "Liberty Bend Conservation Reserve",
@@ -14908,7 +14789,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7674": {
    "n": "Maple Woods Natural Area",
@@ -14940,7 +14821,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7675": {
    "n": "Foxglove Conservation Reserve",
@@ -14971,7 +14852,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7676": {
    "n": "Hardin Conservation Reserve",
@@ -15002,7 +14883,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7677": {
    "n": "Pigeon Hill Conservation Reserve",
@@ -15033,7 +14914,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7678": {
    "n": "Lick Creek Conservation Reserve",
@@ -15064,7 +14945,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7679": {
    "n": "Moniteau Creek Conservation Reserve",
@@ -15095,7 +14976,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7680": {
    "n": "Upper Mississippi Conservation Reserve",
@@ -15127,7 +15008,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7681": {
    "n": "William R Logan Conservation Reserve",
@@ -15158,7 +15039,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7836": {
    "n": "Ozark State Trail",
@@ -15189,7 +15070,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7837": {
    "n": "Taberville Prairie State Conservation Area",
@@ -15221,7 +15102,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7840": {
    "n": "Elam Bend State Conservation Area",
@@ -15252,7 +15133,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7846": {
    "n": "Gallatin State Conservation Area",
@@ -15283,7 +15164,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7851": {
    "n": "Marais Temps Clair State Conservation Area",
@@ -15315,7 +15196,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7863": {
    "n": "Little Bean Marsh State Conservation Area",
@@ -15346,7 +15227,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7864": {
    "n": "Paint Brush Prairie State Conservation Area",
@@ -15378,7 +15259,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7868": {
    "n": "Pawnee Prairie State Natural Area",
@@ -15410,7 +15291,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7873": {
    "n": "Agency State Conservation Area",
@@ -15441,7 +15322,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7874": {
    "n": "Arthur Dupree Memorial State Conservation Area",
@@ -15472,7 +15353,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-7875": {
    "n": "Aspinwall Bend State Conservation Area",
@@ -15523,7 +15404,7 @@
     }
    ],
    "card_note": "Overview map: no map of this park alone was found.",
-   "ver": 6
+   "ver": 7
   },
   "US-7984": {
    "n": "St Genevieve (Beauvais House) National Historical Park",
@@ -15544,7 +15425,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8229": {
    "n": "Brickyard Hill State Conservation Area",
@@ -15576,7 +15457,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8230": {
    "n": "Corning State Conservation Area",
@@ -15608,7 +15489,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8231": {
    "n": "Deroin Bend State Conservation Area",
@@ -15640,7 +15521,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8232": {
    "n": "Lower Hamburg Bend State Conservation Area",
@@ -15671,7 +15552,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8233": {
    "n": "Rush Bottoms State Conservation Area",
@@ -15702,7 +15583,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8234": {
    "n": "Star School Hill Prairie State Conservation Area",
@@ -15734,7 +15615,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8235": {
    "n": "Wolf Creek Bend State Conservation Area",
@@ -15765,7 +15646,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8236": {
    "n": "B.K. Leach Memorial State Conservation Area",
@@ -15796,7 +15677,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8237": {
    "n": "Bee Creek State Conservation Area",
@@ -15827,7 +15708,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8238": {
    "n": "Bethel Prairie State Conservation Area",
@@ -15859,7 +15740,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8239": {
    "n": "Black Island State Conservation Area",
@@ -15890,7 +15771,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8240": {
    "n": "Bonanza State Conservation Area",
@@ -15924,7 +15805,7 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8241": {
    "n": "Bristow State Conservation Area",
@@ -15955,7 +15836,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8242": {
    "n": "Buffalo Wallow State Conservation Area",
@@ -15987,7 +15868,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8243": {
    "n": "Bunch Hollow State Conservation Area",
@@ -16018,7 +15899,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8244": {
    "n": "Caney State Conservation Area",
@@ -16049,7 +15930,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8245": {
    "n": "Clear Creek State Conservation Area",
@@ -16080,7 +15961,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8246": {
    "n": "Cuivre Island State Conservation Area",
@@ -16112,7 +15993,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8247": {
    "n": "Dorris Creek Prairie State Conservation Area",
@@ -16144,7 +16025,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8248": {
    "n": "Fourche Creek State Conservation Area",
@@ -16175,7 +16056,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8249": {
    "n": "Girvin State Conservation Area",
@@ -16207,7 +16088,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8251": {
    "n": "Honey Creek State Conservation Area",
@@ -16241,7 +16122,7 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8252": {
    "n": "Ketcherside Mountain State Conservation Area",
@@ -16273,7 +16154,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8253": {
    "n": "Little Compton Lake State Conservation Area",
@@ -16304,7 +16185,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8254": {
    "n": "Mincy State Conservation Area",
@@ -16335,7 +16216,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8255": {
    "n": "Mo-No-I Prairie State Conservation Area",
@@ -16367,7 +16248,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8256": {
    "n": "Monkey Mountain State Conservation Area",
@@ -16399,7 +16280,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8257": {
    "n": "Osage Prairie State Conservation Area",
@@ -16431,7 +16312,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8258": {
    "n": "Pa Sole Prairie State Conservation Area",
@@ -16463,7 +16344,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8259": {
    "n": "Pelican Island State Conservation Area",
@@ -16494,7 +16375,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8260": {
    "n": "Ranacker State Conservation Area",
@@ -16525,7 +16406,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8261": {
    "n": "Redwing Prairie State Conservation Area",
@@ -16557,7 +16438,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8262": {
    "n": "Riverbreaks State Conservation Area",
@@ -16589,7 +16470,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8263": {
    "n": "Treaty Line State Conservation Area",
@@ -16621,7 +16502,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8264": {
    "n": "White Ranch State Conservation Area",
@@ -16653,7 +16534,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8265": {
    "n": "Worthwine Island State Conservation Area",
@@ -16684,7 +16565,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8266": {
    "n": "Yellow Creek State Conservation Area",
@@ -16715,7 +16596,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8268": {
    "n": "Nishnabotna State Conservation Area",
@@ -16746,7 +16627,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8274": {
    "n": "Risch State Conservation Area",
@@ -16777,7 +16658,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8275": {
    "n": "Stoney Point Prairie State Conservation Area",
@@ -16808,7 +16689,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8276": {
    "n": "Sky Prairie State Conservation Area",
@@ -16840,7 +16721,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8277": {
    "n": "Bluff Springs State Conservation Area",
@@ -16872,7 +16753,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8278": {
    "n": "Brush Creek State Conservation Area",
@@ -16906,7 +16787,7 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8279": {
    "n": "Marion Bottoms State Conservation Area",
@@ -16938,7 +16819,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8280": {
    "n": "Three Creeks State Conservation Area",
@@ -16969,7 +16850,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8281": {
    "n": "Buford Mountain State Conservation Area",
@@ -17001,7 +16882,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8282": {
    "n": "University Forest State Conservation Area",
@@ -17033,7 +16914,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8284": {
    "n": "Birdsong State Conservation Area",
@@ -17065,7 +16946,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8285": {
    "n": "Little River State Conservation Area",
@@ -17098,7 +16979,7 @@
    ],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8286": {
    "n": "Hornersville State Conservation Area",
@@ -17130,7 +17011,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8301": {
    "n": "Ripgut Prairie State Conservation Area",
@@ -17162,7 +17043,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8302": {
    "n": "Old Town Access State Conservation Area",
@@ -17193,7 +17074,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8304": {
    "n": "McGee Family State Conservation Area",
@@ -17224,7 +17105,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8308": {
    "n": "Pilot Knob State Conservation Area",
@@ -17255,7 +17136,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8309": {
    "n": "Dr Harry and Lina Berrier Memorial State Conservation Area",
@@ -17286,7 +17167,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8310": {
    "n": "Urich State Conservation Area",
@@ -17317,7 +17198,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8314": {
    "n": "Pacific Palisades State Conservation Area",
@@ -17349,7 +17230,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8315": {
    "n": "Rockwoods State Conservation Area",
@@ -17381,7 +17262,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8502": {
    "n": "Mussel Fork State Conservation Area",
@@ -17412,7 +17293,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8503": {
    "n": "Union Ridge State Conservation Area",
@@ -17444,7 +17325,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8504": {
    "n": "Sugar Creek State Conservation Area",
@@ -17483,7 +17364,7 @@
      "via": "the agency site"
     }
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-8505": {
    "n": "Indian Hills State Conservation Area",
@@ -17515,7 +17396,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8506": {
    "n": "Hidden Hollow State Conservation Area",
@@ -17546,7 +17427,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8507": {
    "n": "LaBarque Creek State Conservation Area",
@@ -17577,7 +17458,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8508": {
    "n": "Big Creek State Conservation Area",
@@ -17609,7 +17490,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8509": {
    "n": "Shoemaker State Conservation Area",
@@ -17640,7 +17521,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8510": {
    "n": "Ruth and Paul Henning Conservation Area State Conservation Area",
@@ -17672,7 +17553,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8511": {
    "n": "White River Balds Natural Area State Conservation Area",
@@ -17680,19 +17561,9 @@
    "page": "https://mdc.mo.gov/discover-nature/places/natural-areas/white-river-balds",
    "checked": "2026-10-29",
    "map": {
-    "url": "https://cwd-interactive-maps-mdcgis.hub.arcgis.com/",
-    "status": "ok",
-    "kind": "page",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-29",
-    "how": "a link on the park's page ('CWD Interactive Hub')",
-    "posted": "",
-    "posted_how": "",
-    "names_park": false,
-    "checked": "2026-10-29",
-    "covers": 0,
-    "via": "linked from the agency page (cwd-interactive-maps-mdcgis.hub.arcgis.com)",
-    "date_label": "date unknown"
+    "url": "",
+    "status": "no map (one file shared by 6 parks was dropped: https://cwd-interactive-maps-mdcgis.hub.arcgis.com/)",
+    "how": "a link on the park's page ('CWD Interactive Hub')"
    },
    "rules": {
     "url": "https://mdc.mo.gov/discover-nature/places/regulations",
@@ -17703,7 +17574,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-8512": {
    "n": "Springfield Conservation Nature Center State Conservation Area",
@@ -17734,7 +17605,7 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   },
   "US-9753": {
    "n": "Katy Trail Rock Island Spur State Park",
@@ -17781,7 +17652,7 @@
      "via": "the agency site"
     }
    ],
-   "ver": 6
+   "ver": 7
   },
   "US-9757": {
    "n": "Butterfield Overland National Historic Trail",
@@ -17812,24 +17683,24 @@
    "runs": [],
    "handover": [],
    "notes": [],
-   "ver": 6
+   "ver": 7
   }
  },
  "read": "2026-10-29",
  "counts": {
   "parks": 561,
-  "map ok": 510,
-  "map found by the bot": 496,
+  "map ok": 496,
+  "map found by the bot": 482,
   "date on the map": 241,
-  "posted date only": 200,
-  "date unknown": 69,
-  "no map": 51,
+  "posted date only": 201,
+  "date unknown": 54,
+  "no map": 65,
   "rules ok": 26,
-  "needs browser": 11,
+  "needs browser": 1,
   "handover hints": 0,
   "runs hints": 19,
   "host resting / robots": 0,
-  "map names the park": 504,
+  "map names the park": 492,
   "region overview only": 3
  }
 }
