@@ -21,7 +21,7 @@ Use:  kpc_waiting_room.py check   [--promote]        every file under data/waiti
       kpc_waiting_room.py release <live path>        a person approved a held file: it goes live (previous copy kept)
 Env: DATA (KPC-Data checkout, default .) · LINKS (KPC-Links checkout, default ../links) · NET=1 (link re-tests may use the
      network) · WAITING_ON=1 (promotion allowed; unset = report only)."""
-import copy, datetime as dt, glob, json, math, os, pathlib, random, re, shutil, subprocess, sys, time, urllib.request
+import copy, datetime as dt, glob, json, math, os, pathlib, random, re, shutil, subprocess, sys, time, urllib.parse, urllib.request
 
 DATA = pathlib.Path(os.environ.get('DATA') or '.')
 LINKS = pathlib.Path(os.environ.get('LINKS') or '../links')
@@ -353,6 +353,22 @@ NAME_STOP = set('state park parks national forest wildlife management area wma t
 def name_words(s): return {w for w in re.findall(r'[a-z0-9]+', str(s or '').lower()) if len(w) > 2 and w not in NAME_STOP}
 
 
+PADUS = 'https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query'
+def padus_boxes(ids):
+    """{OBJECTID: (minlon, minlat, maxlon, maxlat)} read from PAD-US (generalised geometry, 100 ids per request, 2 s apart)."""
+    out = {}
+    for i in range(0, len(ids), 100):
+        q = urllib.parse.urlencode({'objectIds': ','.join(map(str, ids[i:i + 100])), 'outFields': 'OBJECTID', 'returnGeometry': 'true', 'outSR': 4326, 'maxAllowableOffset': .005, 'f': 'json'})
+        try:
+            with urllib.request.urlopen(urllib.request.Request(PADUS + '?' + q, headers={'User-Agent': UA}), timeout=90) as r: d = json.load(r)
+        except Exception as e: raise Unsure(f'PAD-US did not answer the shape test ({type(e).__name__})')  # noqa: BLE001
+        for f in d.get('features') or []:
+            pts = [pt for ring in (f.get('geometry') or {}).get('rings') or [] for pt in ring]
+            if pts: out[(f.get('attributes') or {}).get('OBJECTID')] = (min(p[0] for p in pts), min(p[1] for p in pts), max(p[0] for p in pts), max(p[1] for p in pts))
+        time.sleep(2)
+    return out
+
+
 def c_key(path, new, live, ctx):
     holds, notes = [], []
     retired = set(((load(LINKS / 'data' / 'retired-refs.json', {}) or {}).get('refs') or {}) if isinstance((load(LINKS / 'data' / 'retired-refs.json', {}) or {}).get('refs'), (dict, list)) else [])
@@ -381,6 +397,26 @@ def c_key(path, new, live, ctx):
     if nn >= 20:
         lim = max(.05, (ob / on + .02) if on >= 20 else .10)
         if nb / nn > lim: holds.append(f'F-O2 {nb} of {nn} outlines carry a layer name that shares no word with the park ({nb / nn:.0%}; live {ob}/{on or 0}): outlines swapped to other parks?')
+    # chat 8 retest 2 (A2d): the park's NAME must still be POTA's name (the shared park list), so a bot cannot rename a park to fit a swapped layer
+    try: plist = parks(st_of(path)) if area_of(path).startswith('US') else {r[1]: [r[2]] for r in (load(DATA / 'data' / 'canada.json', {}) or {}).get('rows') or [] if r[0] == 'POTA' and r[1].startswith(area_of(path)[:2])}
+    except Unsure: plist = {}
+    ren = [ref for ref, r in P.items() if ref in plist and r.get('n') and name_words(r['n']) and name_words(plist[ref][0]) and not (name_words(r['n']) & name_words(plist[ref][0]))]
+    if len(ren) > max(2, .01 * max(len(P), 1)): holds.append(f'F-O2 {len(ren)} parks carry a name that is not POTA\'s (renamed to fit a layer?), e.g. ' + ', '.join(f"{q} '{P[q]['n'][:30]}'" for q in ren[:3]))
+    # chat 8 retest 2: the SHAPE test by a different path: outlines that changed since the live file (or 60 at random in a first file) are read
+    # straight from PAD-US (ArcGIS REST, the one robots exception), and the park's POTA pin must be inside the outline's box or within 5 km of it
+    if NET:
+        oldm = {ref: sorted(str(m[0]) for m in (r.get('m') or [])) for ref, r in O.items()}
+        cand = [ref for ref, r in P.items() if r.get('m') and any(isinstance(m[0], int) for m in r['m']) and (not O or sorted(str(m[0]) for m in r['m']) != oldm.get(ref))]
+        random.Random(str(TODAY) + str(path)).shuffle(cand); cand = cand[:60]
+        if cand:
+            boxes = padus_boxes(sorted({m[0] for ref in cand for m in P[ref]['m'] if isinstance(m[0], int)}))
+            off = []
+            for ref in cand:
+                pin = pin_of(ref); bx = [boxes[m[0]] for m in P[ref]['m'] if m[0] in boxes]
+                if not pin or not bx: continue
+                if not any(b[1] - .05 <= pin[0] <= b[3] + .05 and b[0] - .07 <= pin[1] <= b[2] + .07 for b in bx): off.append(ref)
+            notes.append(f'F-O4 shape test: {len(cand)} changed outlines read from PAD-US, {len(off)} far from the park pin')
+            if len(off) > max(1, .05 * len(cand)): holds.append(f'F-O4 {len(off)} of {len(cand)} changed outlines sit 5+ km from the park\'s pin (read from PAD-US itself), e.g. ' + ', '.join(off[:3]))
     for name in known('key').get('keep_names') or []:
         hit = [r for r in P.values() if name.lower() in str(r.get('n', '')).lower()]
         if hit and not any(has_outline(r) for r in hit): holds.append(f'F-K known answer: {name} must keep its outline')
@@ -419,6 +455,8 @@ def c_fers(path, new, live, ctx):
     np_ = {frozenset(s.get('refs') or []) for s in S if str(s.get('status', '')).startswith('candidate')}   # like for like: the rows shown as 2-fers
     if len(op) >= 3 and len(op & np_) < .8 * len(op): holds.append(f'F-2 only {len(op & np_)} of {len(op)} live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)')
     elif 1 <= len(op) <= 2 and not (op & np_): holds.append(f'F-2 small area: all {len(op)} live candidate pair(s) gone')
+    if len(op) >= 3 and len(np_ - op) > max(2, .10 * len(op)):   # chat 8 retest 1: near-miss swaps (a partner moved to a park 20 km away) add NEW pairs
+        holds.append(f'F-2 {len(np_ - op)} new candidate pairs since the live file (over 10% of {len(op)}): a person looks at them first, e.g. ' + ', '.join('+'.join(sorted(q)) for q in sorted(np_ - op, key=sorted)[:3]))
     if O and not S: holds.append(f'F-2 every row gone (live had {len(O)})')
     # chat 8 attack 3: a far-apart pair is a wrong join for EVERY kind (area / trail / river too), not only 'same land'
     far2 = []
@@ -497,7 +535,7 @@ def c_pota(path, new, live, ctx):
 def c_status(path, new, live, ctx):
     """Any file with a READY status must have no 'not checked / no answer' rows (Michigan water lesson)."""
     txt = json.dumps(new).lower()
-    st = str(new.get('status') or new.get('verdict') or '').upper()
+    st = str(new.get('status') or new.get('verdict') or new.get('state') or '').upper()   # chat 8 retest 6: 'state' too
     n = len(re.findall(r'store not read|not checked', txt)); r = len(re.findall(r'no answer|unanswered|did not answer|map not answered', txt))
     ready = 'READY' in st and 'STOPPED' not in st   # chat 8 attack 6: the real words are 'READY FOR CHAT 8' / 'PART READY FOR CHAT 8'
     holds = [f'F-S1 status {st[:30]} with {n} rows STORE NOT READ / not checked (must be STOPPED)'] if ready and n else []
@@ -711,6 +749,7 @@ def mode_release(rel):
     if '..' in str(rel) or str(rel).startswith('/') or not str(rel).startswith('data/'): print(f'::notice title=Waiting room release::refused: {rel} is not a data/ path'); return
     src = W / 'in' / rel
     if not src.exists(): print(f'::notice title=Waiting room release::nothing held at {rel}'); return
+    if load(src) is None: print(f'::notice title=Waiting room release::refused: {rel} does not read as JSON'); return   # chat 8 retest 5
     promote_file(rel, None, raw=src); src.unlink(); log_action('release', rel)
     print(f'::notice title=Waiting room release::{rel} released by a person (previous copy kept for undo)')
 
@@ -764,6 +803,21 @@ def transform(d, how):
             if a != b and pa and pb and km(pa[0], pa[1], pb[0], pb[1]) > 150:
                 add.append({'id': f'FAKE{i}', 'kind': 'area', 'refs': [a, b], 'status': 'candidate', 'passes': [1, 1, 1], 'center': [pa[0], pa[1]]})
         d['spots'] = S + add
+    elif op == 'near_swap':             # chat 8 retest 1: a share of candidate pairs get a partner moved to another park within 20 km
+        C = [s for s in d.get('spots') or [] if isinstance(s, dict) and str(s.get('status', '')).startswith('candidate')]
+        allr = sorted({r for s in d.get('spots') or [] if isinstance(s, dict) for r in s.get('refs') or []} | set(parks(st_of(d.get('st') or 'US-OH.json') or 'OH')))
+        n = 0
+        for s in C:
+            if n >= max(1, int(len(C) * float(arg))): break
+            a, b = s['refs'][0], s['refs'][-1]; pa = pin_of(b)
+            if not pa: continue
+            near = [r for r in allr if r not in s['refs'] and pin_of(r) and km(pa[0], pa[1], *pin_of(r)[:2]) < 20]
+            if near: s['refs'] = [a, near[0]]; s['id'] = 'NEAR' + str(n); n += 1
+    elif op == 'shuffle_rename':        # chat 8 retest 2 (A2d): outlines swapped AND the park renamed to the swapped layer's name
+        P = [r for r in (d.get('parks') or {}).values() if r.get('m')]
+        ms = [r['m'] for r in P]
+        for i, r in enumerate(P[:int(len(P) * float(arg or 1))]):
+            r['m'] = ms[(i + 11) % len(ms)]; r['n'] = r['m'][0][1]
     elif op == 'status_unchecked':      # A6: a real status word with unchecked rows
         d['status'] = arg
         for s in (d.get('spots') or [])[:40]:

@@ -459,6 +459,43 @@
      "new": "live"
     }
    ]
+  },
+  {
+   "name": "ATTACK R1 (chat 8 retest): Ohio 2-fers, 16% of pairs moved to a park within 20 km",
+   "repo": "data",
+   "expect": "HOLD",
+   "catch": "new candidate pairs",
+   "files": [
+    {
+     "path": "data/fers/US-OH.json",
+     "new": "live",
+     "transform": "near_swap:0.16"
+    }
+   ]
+  },
+  {
+   "name": "ATTACK R2 (chat 8 retest A2d): Ohio key, 10% of outlines swapped AND the parks renamed to fit",
+   "repo": "data",
+   "expect": "HOLD",
+   "catch": "not POTA",
+   "files": [
+    {
+     "path": "data/us-key/US-OH.json",
+     "new": "live",
+     "transform": "shuffle_rename:0.1"
+    }
+   ]
+  },
+  {
+   "name": "GOOD: Ohio outline key unchanged",
+   "repo": "data",
+   "expect": "PASS",
+   "files": [
+    {
+     "path": "data/us-key/US-OH.json",
+     "new": "live"
+    }
+   ]
   }
  ]
 }

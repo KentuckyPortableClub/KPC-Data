@@ -70,10 +70,37 @@ def gate(bot, area, result, why):
     INBOX.write_text(old.rstrip('\n') + '\n' + line + '\n', encoding='utf-8'); print('status: gate FAIL line added')
 
 
+def waiting_room_health():
+    """RED when the waiting room is switched on (a heartbeat or files waiting) and its heartbeat is over 36 h old, or a file has sat in
+    data/waiting/in/ over 3 days (age = the file's last commit). Writes ONE look line to the checkers' inbox a day when red."""
+    import subprocess, datetime as dt
+    W = STATUS.parent / 'waiting'
+    hb = W / 'heartbeat.json'; files = [p for p in (W / 'in').rglob('*') if p.is_file() and p.name != '.keep'] if (W / 'in').exists() else []
+    if not (W / 'switched-on').exists() and not files: return {'last_run': TODAY, 'result': 'green', 'made': 'not switched on (no data/waiting/switched-on marker, nothing waiting)', 'waiting_on': "Brandon's GO"}   # the GO commit adds the marker
+    why = []
+    now = dt.datetime.now(dt.timezone.utc)
+    try: age_h = (now - dt.datetime.strptime(json.load(open(hb))['ok'], '%Y-%m-%dT%H:%MZ').replace(tzinfo=dt.timezone.utc)).total_seconds() / 3600
+    except Exception: age_h = 999  # noqa: BLE001
+    if age_h > 36: why.append(f'heartbeat {age_h:.0f} h old (the waiting room has not run)')
+    old = []
+    for p in files:
+        try: ct = int(subprocess.run(['git', '-C', str(STATUS.parent.parent), 'log', '-1', '--format=%ct', '--', str(p.relative_to(STATUS.parent.parent))], capture_output=True, text=True).stdout.strip() or 0)
+        except Exception: ct = 0  # noqa: BLE001
+        if ct and (now.timestamp() - ct) > 3 * 86400: old.append(p.name)
+    if old: why.append(f'{len(old)} files waiting over 3 days in data/waiting/in/ (e.g. {old[0]})')
+    if why:
+        line = f'- FROM WAITING ROOM HEALTH ({TODAY}): RED: ' + ' · '.join(why)
+        txt = INBOX.read_text(encoding='utf-8') if INBOX.exists() else HEAD
+        if line not in txt: INBOX.write_text(txt.rstrip('\n') + '\n' + line + '\n', encoding='utf-8')
+    return {'last_run': TODAY, 'result': 'red' if why else 'green', 'made': ' · '.join(why) or f'heartbeat {age_h:.0f} h old, {len(files)} files waiting', 'waiting_on': 'chat 11 (look at the waiting room run)' if why else 'nothing'}
+
+
 def board(bot, result, made, waiting, areas=''):
     STATUS.mkdir(parents=True, exist_ok=True)
     try: b = json.load(open(BOARD, encoding='utf-8'))
     except Exception: b = {'about': 'KPC bot status board: per bot the last run, green / red, what it made, what is waiting on whom. Written by kpc_status.py from each workflow; a members-only page reads it later.', 'bots': {}}  # noqa: BLE001
+    try: b['bots']['waiting room'] = waiting_room_health()   # chat 8 retest 4: every bot that writes the board also checks the checker
+    except Exception: pass  # noqa: BLE001
     b['bots'][bot] = {'last_run': TODAY, 'run': run_link(), 'result': 'green' if result.lower().startswith('g') else 'red', 'made': made[:300], 'waiting_on': waiting[:200], 'areas': areas[:300]}
     b['updated'] = TODAY
     BOARD.write_text(json.dumps(b, ensure_ascii=False, indent=1, sort_keys=True) + '\n', encoding='utf-8')
