@@ -1,9 +1,9 @@
 {
  "about": "Spots where the boundaries of two or more POTA parks may overlap, by the 2-FER RULES FOR THE WHOLE WORLD (Brandon Oct 27, notes/mapping.md): the park = where its designation legally applies (national forests + grasslands = Forest Service-OWNED land only, never proclamation lines); public land open to the public; layered = real, side by side = not (ownership step: PAD-US / CPCAD at the spot, read at up to 5 points of the patch; no public owner there = not sure); a patch 50 yards across in every park ('small' = 50-100 yards; 25-50 yards = the separate 'very tight' list, members only; under 25 = not kept); line-only trails / rivers by POTA's 100-ft rule from the line or the river EDGE (USGS NHD); pins never count. Status: 'candidate' = all checks passed; 'not sure: …' and 'water only: boat or kayak' are separate lists, never the main one; n-fers up to 9; 'Same land, two park numbers' (two numbers on one official outline) is shown with that label; 'dropped: …' says why. Every decided spot shows 'checked' + 'map_dates'. Parks with no official boundary: missing-<region>.json. HIDDEN, not reviewed: passes [saved, fresh, finest] must all be 1 and status 'candidate' before a person looks. Wording when shown (house rule, Oct 27): '⚠️ Parks' boundaries may overlap here, but we can't confirm it. Check both official boundary maps and make your own call before you count it.' Tool pages carry the FULL notice from .claude/notes/notices.md.",
  "pass1": "2026-10-28",
- "pass2": "2026-10-28",
- "pass3": "2026-10-28",
- "pass5": "2026-10-28",
+ "pass2": "2026-10-29",
+ "pass3": "2026-10-29",
+ "pass5": "2026-10-29",
  "spots": [
   {
    "acres": 0.0,
@@ -223,10 +223,12 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
+   "list": "Very tight (members only)",
    "map_dates": {
     "US-0607": "downloaded 2026-10-28",
-    "US-0632": "downloaded 2026-10-28"
+    "US-0632": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-0607": "Canaan Valley National Wildlife Refuge",
@@ -263,9 +265,9 @@
      39.079037
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "very tight: could be map error: check both official maps on the ground",
    "tier": "very tight: could be map error: check both official maps on the ground",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 31
   },
   {
@@ -2514,10 +2516,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0632": "downloaded 2026-10-28",
-    "US-12436": "downloaded 2026-10-28"
+    "US-12436": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-0632": "Monongahela National Forest",
@@ -3037,8 +3040,8 @@
      37.907634
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 3494
   },
   {
@@ -9313,10 +9316,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0632": "downloaded 2026-10-28",
-    "US-12437": "downloaded 2026-10-28"
+    "US-12437": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-0632": "Monongahela National Forest",
@@ -10016,8 +10020,8 @@
      38.283444
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 7555
   },
   {
@@ -11584,10 +11588,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0632": "downloaded 2026-10-28",
-    "US-12438": "downloaded 2026-10-28"
+    "US-12438": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-0632": "Monongahela National Forest",
@@ -12031,8 +12036,8 @@
      39.071472
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 6132
   },
   {
@@ -13623,10 +13628,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0632": "downloaded 2026-10-28",
-    "US-12439": "downloaded 2026-10-28"
+    "US-12439": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-0632": "Monongahela National Forest",
@@ -14198,8 +14204,8 @@
      38.811298
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 3133
   },
   {
@@ -16030,10 +16036,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0632": "downloaded 2026-10-28",
-    "US-12440": "downloaded 2026-10-28"
+    "US-12440": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-0632": "Monongahela National Forest",
@@ -16841,8 +16848,8 @@
      38.750348
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 3515
   },
   {
@@ -22057,10 +22064,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0632": "downloaded 2026-10-28",
-    "US-12441": "downloaded 2026-10-28"
+    "US-12441": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-0632": "Monongahela National Forest",
@@ -22684,8 +22692,8 @@
      39.065965
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 7132
   },
   {
@@ -24794,10 +24802,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0632": "downloaded 2026-10-28",
-    "US-12442": "downloaded 2026-10-28"
+    "US-12442": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-0632": "Monongahela National Forest",
@@ -25641,8 +25650,8 @@
      38.960275
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 3659
   },
   {
@@ -25868,7 +25877,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0632": "downloaded 2026-10-28",
     "US-12443": "downloaded 2026-10-28",
@@ -26800,11 +26809,12 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0632": "downloaded 2026-10-28",
     "US-12443": "downloaded 2026-10-28",
-    "US-5583": "downloaded 2026-10-28"
+    "US-5583": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-0632": "Monongahela National Forest",
@@ -26813,6 +26823,13 @@
    },
    "notes": [
     "check the agency's closures and seasons before you go"
+   ],
+   "pairs_around": [
+    "US-0632+US-12443",
+    "US-0632+US-5583"
+   ],
+   "pairs_here": [
+    "US-12443+US-5583"
    ],
    "passes": [
     1,
@@ -26933,8 +26950,8 @@
     ]
    ],
    "small": "small overlap: tight fit, check carefully",
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 61
   },
   {
@@ -30168,15 +30185,19 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0632": "downloaded 2026-10-28",
-    "US-12443": "downloaded 2026-10-28"
+    "US-12443": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-0632": "Monongahela National Forest",
     "US-12443": "Spice Run Wilderness Area"
    },
+   "nfer_here": [
+    "US-0632+US-12443+US-5583@area@38.054,-80.215"
+   ],
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
@@ -31195,8 +31216,8 @@
      38.040692
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 3473
   },
   {
@@ -32921,7 +32942,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0632": "downloaded 2026-10-28",
     "US-1808": "downloaded 2026-10-28"
@@ -34218,7 +34239,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0632": "downloaded 2026-10-28",
     "US-1808": "downloaded 2026-10-28"
@@ -35515,7 +35536,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0632": "downloaded 2026-10-28",
     "US-1808": "downloaded 2026-10-28"
@@ -40972,10 +40993,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0632": "downloaded 2026-10-28",
-    "US-1808": "downloaded 2026-10-28"
+    "US-1808": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-0632": "Monongahela National Forest",
@@ -41693,8 +41715,8 @@
     ]
    ],
    "small": "small overlap: tight fit, check carefully",
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 51
   },
   {
@@ -45093,7 +45115,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0632": "downloaded 2026-10-28",
     "US-1808": "downloaded 2026-10-28"
@@ -45986,7 +46008,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0632": "downloaded 2026-10-28",
     "US-1827": "downloaded 2026-10-28"
@@ -46862,10 +46884,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0632": "downloaded 2026-10-28",
-    "US-1827": "downloaded 2026-10-28"
+    "US-1827": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-0632": "Monongahela National Forest",
@@ -46955,8 +46978,8 @@
     ]
    ],
    "small": "small overlap: tight fit, check carefully",
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 81
   },
   {
@@ -47203,7 +47226,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0632": "downloaded 2026-10-28",
     "US-1827": "downloaded 2026-10-28"
@@ -47600,7 +47623,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0632": "downloaded 2026-10-28",
     "US-1827": "downloaded 2026-10-28"
@@ -48029,7 +48052,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0632": "downloaded 2026-10-28",
     "US-1827": "downloaded 2026-10-28"
@@ -53978,15 +54001,19 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0632": "downloaded 2026-10-28",
-    "US-5583": "downloaded 2026-10-28"
+    "US-5583": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-0632": "Monongahela National Forest",
     "US-5583": "Calvin Price State Forest"
    },
+   "nfer_here": [
+    "US-0632+US-12443+US-5583@area@38.054,-80.215"
+   ],
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
@@ -54350,8 +54377,8 @@
      38.053173
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 149
   },
   {
@@ -54982,7 +55009,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0632": "downloaded 2026-10-28",
     "US-5583": "downloaded 2026-10-28"
@@ -55984,7 +56011,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0632": "downloaded 2026-10-28",
     "US-5583": "downloaded 2026-10-28"
@@ -56696,7 +56723,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0632": "downloaded 2026-10-28",
     "US-5583": "downloaded 2026-10-28"
@@ -57455,7 +57482,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0632": "downloaded 2026-10-28",
     "US-5583": "downloaded 2026-10-28"
@@ -58457,7 +58484,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0632": "downloaded 2026-10-28",
     "US-5583": "downloaded 2026-10-28"
@@ -59459,7 +59486,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0632": "downloaded 2026-10-28",
     "US-5583": "downloaded 2026-10-28"
@@ -60759,10 +60786,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0632": "downloaded 2026-10-28",
-    "US-5589": "downloaded 2026-10-28"
+    "US-5589": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-0632": "Monongahela National Forest",
@@ -61027,8 +61055,8 @@
      38.290843
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 135
   },
   {
@@ -61697,7 +61725,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0632": "downloaded 2026-10-28",
     "US-5589": "downloaded 2026-10-28"
@@ -62633,7 +62661,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0632": "downloaded 2026-10-28",
     "US-5589": "downloaded 2026-10-28"
@@ -63569,7 +63597,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0632": "downloaded 2026-10-28",
     "US-5589": "downloaded 2026-10-28"
@@ -64834,10 +64862,12 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
+   "list": "Very tight (members only)",
    "map_dates": {
     "US-0632": "downloaded 2026-10-28",
-    "US-7025": "downloaded 2026-10-28"
+    "US-7025": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-0632": "Monongahela National Forest",
@@ -64898,9 +64928,9 @@
      38.321744
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "very tight: could be map error: check both official maps on the ground",
    "tier": "very tight: could be map error: check both official maps on the ground",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 35
   },
   {
@@ -65157,7 +65187,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0632": "downloaded 2026-10-28",
     "US-7025": "downloaded 2026-10-28"
@@ -65478,7 +65508,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0632": "downloaded 2026-10-28",
     "US-7025": "downloaded 2026-10-28"
@@ -65800,10 +65830,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0632": "downloaded 2026-10-28",
-    "US-7026": "downloaded 2026-10-28"
+    "US-7026": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-0632": "Monongahela National Forest",
@@ -65892,8 +65923,8 @@
     ]
    ],
    "small": "small overlap: tight fit, check carefully",
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 53
   },
   {
@@ -66057,7 +66088,7 @@
     ]
    ],
    "zone_acres": 0.25,
-   "zone_read": "2026-10-28",
+   "zone_read": "2026-10-29",
    "zone_wide_m": 20.0
   },
   {
@@ -66325,7 +66356,7 @@
     ]
    ],
    "zone_acres": 8.95,
-   "zone_read": "2026-10-28",
+   "zone_read": "2026-10-29",
    "zone_wide_m": 57.9
   },
   {
@@ -66566,7 +66597,7 @@
     ]
    ],
    "zone_acres": 3.74,
-   "zone_read": "2026-10-28",
+   "zone_read": "2026-10-29",
    "zone_wide_m": 30.0
   },
   {
@@ -66706,7 +66737,7 @@
     ]
    ],
    "zone_acres": 8.33,
-   "zone_read": "2026-10-28",
+   "zone_read": "2026-10-29",
    "zone_wide_m": 52.0
   },
   {
@@ -66822,7 +66853,7 @@
     ]
    ],
    "zone_acres": 2.42,
-   "zone_read": "2026-10-28",
+   "zone_read": "2026-10-29",
    "zone_wide_m": 42.0
   },
   {
@@ -67058,7 +67089,7 @@
     ]
    ],
    "zone_acres": 0.37,
-   "zone_read": "2026-10-28",
+   "zone_read": "2026-10-29",
    "zone_wide_m": 22.0
   },
   {
@@ -67202,7 +67233,7 @@
     ]
    ],
    "zone_acres": 1.01,
-   "zone_read": "2026-10-28",
+   "zone_read": "2026-10-29",
    "zone_wide_m": 22.0
   },
   {
@@ -67450,7 +67481,7 @@
     ]
    ],
    "zone_acres": 0.48,
-   "zone_read": "2026-10-28",
+   "zone_read": "2026-10-29",
    "zone_wide_m": 22.0
   },
   {
@@ -67666,7 +67697,7 @@
     ]
    ],
    "zone_acres": 0.3,
-   "zone_read": "2026-10-28",
+   "zone_read": "2026-10-29",
    "zone_wide_m": 28.0
   },
   {
@@ -68086,7 +68117,7 @@
     ]
    ],
    "zone_acres": 38.46,
-   "zone_read": "2026-10-28",
+   "zone_read": "2026-10-29",
    "zone_wide_m": 42.0
   },
   {
@@ -68724,7 +68755,7 @@
     ]
    ],
    "zone_acres": 0.9,
-   "zone_read": "2026-10-28",
+   "zone_read": "2026-10-29",
    "zone_wide_m": 30.0
   },
   {
@@ -69148,7 +69179,7 @@
     ]
    ],
    "zone_acres": 4.71,
-   "zone_read": "2026-10-28",
+   "zone_read": "2026-10-29",
    "zone_wide_m": 36.0
   },
   {
@@ -69340,7 +69371,7 @@
     ]
    ],
    "zone_acres": 7.93,
-   "zone_read": "2026-10-28",
+   "zone_read": "2026-10-29",
    "zone_wide_m": 62.0
   },
   {
@@ -69617,7 +69648,7 @@
     ]
    ],
    "zone_acres": 8.26,
-   "zone_read": "2026-10-28",
+   "zone_read": "2026-10-29",
    "zone_wide_m": 53.9
   },
   {
@@ -69965,7 +69996,7 @@
     ]
    ],
    "zone_acres": 11.69,
-   "zone_read": "2026-10-28",
+   "zone_read": "2026-10-29",
    "zone_wide_m": 70.0
   },
   {
@@ -70440,7 +70471,7 @@
     ]
    ],
    "zone_acres": 32.06,
-   "zone_read": "2026-10-28",
+   "zone_read": "2026-10-29",
    "zone_wide_m": 43.9
   },
   {
@@ -70560,7 +70591,7 @@
     ]
    ],
    "zone_acres": 1.43,
-   "zone_read": "2026-10-28",
+   "zone_read": "2026-10-29",
    "zone_wide_m": 36.0
   },
   {
@@ -71090,7 +71121,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0695": "downloaded 2026-10-28",
     "US-9755": "downloaded 2026-10-28"
@@ -71217,8 +71248,8 @@
      38.216031
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 915
   },
   {
@@ -73263,7 +73294,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0697": "downloaded 2026-10-28",
     "US-1804": "downloaded 2026-10-28",
@@ -73548,11 +73579,13 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
+   "list": "Very tight (members only)",
    "map_dates": {
     "US-0697": "downloaded 2026-10-28",
     "US-1804": "downloaded 2026-10-28",
-    "US-7037": "downloaded 2026-10-28"
+    "US-7037": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-0697": "Bluestone National Wild and Scenic River",
@@ -73561,6 +73594,13 @@
    },
    "notes": [
     "check the agency's closures and seasons before you go"
+   ],
+   "pairs_around": [
+    "US-0697+US-1804",
+    "US-1804+US-7037"
+   ],
+   "pairs_here": [
+    "US-0697+US-7037"
    ],
    "passes": [
     1,
@@ -73599,9 +73639,9 @@
      37.601662
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "very tight: could be map error: check both official maps on the ground",
    "tier": "very tight: could be map error: check both official maps on the ground",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 45
   },
   {
@@ -75600,15 +75640,19 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0697": "downloaded 2026-10-28",
-    "US-1804": "downloaded 2026-10-28"
+    "US-1804": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-0697": "Bluestone National Wild and Scenic River",
     "US-1804": "Bluestone State Park"
    },
+   "nfer_here": [
+    "US-0697+US-1804+US-7037@area@37.601,-80.946"
+   ],
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
@@ -76583,8 +76627,8 @@
      37.598133
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 1660
   },
   {
@@ -78731,10 +78775,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0697": "downloaded 2026-10-28",
-    "US-1820": "downloaded 2026-10-28"
+    "US-1820": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-0697": "Bluestone National Wild and Scenic River",
@@ -79598,8 +79643,8 @@
      37.554622
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 890
   },
   {
@@ -79716,10 +79761,12 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
+   "list": "Very tight (members only)",
    "map_dates": {
     "US-0697": "downloaded 2026-10-28",
-    "US-7037": "downloaded 2026-10-28"
+    "US-7037": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-0697": "Bluestone National Wild and Scenic River",
@@ -79759,9 +79806,9 @@
      37.601687
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "merged into one row: US-0697+US-1804+US-7037@area@37.601,-80.946 (the same patch as the 3-fer)",
    "tier": "very tight: could be map error: check both official maps on the ground",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 39
   },
   {
@@ -80468,7 +80515,7 @@
     ]
    ],
    "zone_acres": 24.35,
-   "zone_read": "2026-10-28",
+   "zone_read": "2026-10-29",
    "zone_wide_m": 70.0
   },
   {
@@ -80618,7 +80665,7 @@
     ]
    ],
    "zone_acres": 12.45,
-   "zone_read": "2026-10-28",
+   "zone_read": "2026-10-29",
    "zone_wide_m": 70.0
   },
   {
@@ -80744,7 +80791,7 @@
     ]
    ],
    "zone_acres": 2.42,
-   "zone_read": "2026-10-28",
+   "zone_read": "2026-10-29",
    "zone_wide_m": 42.0
   },
   {
@@ -80941,7 +80988,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-12443": "downloaded 2026-10-28",
     "US-5583": "downloaded 2026-10-28"
@@ -81682,10 +81729,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-12443": "downloaded 2026-10-28",
-    "US-5583": "downloaded 2026-10-28"
+    "US-5583": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-12443": "Spice Run Wilderness Area",
@@ -81811,8 +81859,8 @@
     ]
    ],
    "small": "small overlap: tight fit, check carefully",
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "merged into one row: US-0632+US-12443+US-5583@area@38.054,-80.215 (the same patch as the 3-fer)",
+   "water_checked": "2026-10-29",
    "wide_m": 67
   },
   {
@@ -99133,10 +99181,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-1800": "downloaded 2026-10-28",
-    "US-7046": "downloaded 2026-10-28"
+    "US-7046": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-1800": "Beech Fork State Park",
@@ -100205,8 +100254,8 @@
      38.30523
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 2577
   },
   {
@@ -103835,7 +103884,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-1800": "downloaded 2026-10-28",
     "US-7046": "downloaded 2026-10-28"
@@ -104745,7 +104794,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-1804": "downloaded 2026-10-28",
     "US-1820": "downloaded 2026-10-28"
@@ -118521,15 +118570,19 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-1804": "downloaded 2026-10-28",
-    "US-7037": "downloaded 2026-10-28"
+    "US-7037": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-1804": "Bluestone State Park",
     "US-7037": "Bluestone Lake Wildlife Management Area"
    },
+   "nfer_here": [
+    "US-0697+US-1804+US-7037@area@37.601,-80.946"
+   ],
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
@@ -119460,8 +119513,8 @@
      37.527402
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 4149
   },
   {
@@ -122144,10 +122197,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-1817": "downloaded 2026-10-28",
-    "US-7040": "downloaded 2026-10-28"
+    "US-7040": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-1817": "Moncove Lake State Park",
@@ -122423,8 +122477,8 @@
      37.618393
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 213
   },
   {
@@ -122794,7 +122848,7 @@
     ]
    ],
    "zone_acres": 0.83,
-   "zone_read": "2026-10-28",
+   "zone_read": "2026-10-29",
    "zone_wide_m": 28.0
   },
   {
@@ -123362,7 +123416,7 @@
     ]
    ],
    "zone_acres": 12.32,
-   "zone_read": "2026-10-28",
+   "zone_read": "2026-10-29",
    "zone_wide_m": 70.0
   },
   {
@@ -125863,10 +125917,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-4526": "downloaded 2026-10-28",
-    "US-9949": "downloaded 2026-10-28"
+    "US-9949": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-4526": "George Washington & Jefferson National Forest",
@@ -126146,8 +126201,8 @@
      37.44708
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 2991
   },
   {
@@ -126294,7 +126349,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-4526": "downloaded 2026-10-28",
     "US-9950": "downloaded 2026-10-28"
@@ -126497,7 +126552,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-4526": "downloaded 2026-10-28",
     "US-9950": "downloaded 2026-10-28"
@@ -127234,10 +127289,12 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
+   "list": "Very tight (members only)",
    "map_dates": {
     "US-4526": "downloaded 2026-10-28",
-    "US-9950": "downloaded 2026-10-28"
+    "US-9950": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-4526": "George Washington & Jefferson National Forest",
@@ -127322,9 +127379,9 @@
      37.445812
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "very tight: could be map error: check both official maps on the ground",
    "tier": "very tight: could be map error: check both official maps on the ground",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 31
   },
   {
@@ -127667,7 +127724,7 @@
    "status": "merged into one row: US-5589+US-9742@trail@38.367,-79.935",
    "zone": [],
    "zone_acres": 0.15,
-   "zone_read": "2026-10-28",
+   "zone_read": "2026-10-29",
    "zone_wide_m": 14.0
   },
   {
@@ -127954,7 +128011,7 @@
     ]
    ],
    "zone_acres": 16.15,
-   "zone_read": "2026-10-28",
+   "zone_read": "2026-10-29",
    "zone_wide_m": 70.0
   },
   {
@@ -148471,10 +148528,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-7031": "downloaded 2026-10-28",
-    "US-9755": "downloaded 2026-10-28"
+    "US-9755": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-7031": "Summersville Lake Wildlife Management Area",
@@ -149578,8 +149636,8 @@
      38.297624
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 2657
   },
   {

@@ -13,24 +13,21 @@
   "US-MS"
  ],
  "since": "2026-10-28",
- "date": "2026-10-28 22:45 UTC",
+ "date": "2026-10-29 00:16 UTC",
  "verdict": "STOPPED",
  "why": [
-  "water service: US-TN: 47 rows not checked because the USGS water map did not answer (run the worker again)",
-  "water service: US-NC: 101 rows not checked because the USGS water map did not answer (run the worker again)",
-  "water service: US-VA: 32 rows not checked because the USGS water map did not answer (run the worker again)",
-  "water service: US-WV: 28 rows not checked because the USGS water map did not answer (run the worker again)",
-  "water service: US-GA: 50 rows not checked because the USGS water map did not answer (run the worker again)",
-  "water service: US-AL: 18 rows not checked because the USGS water map did not answer (run the worker again)",
-  "water service: US-SC: 21 rows not checked because the USGS water map did not answer (run the worker again)",
-  "water service: US-FL: 94 rows not checked because the USGS water map did not answer (run the worker again)",
-  "US-MS: 24 rows still waiting for a pass (out of time: run the worker again)",
-  "water service: US-MS: 6 rows not checked because the USGS water map did not answer (run the worker again)"
+  "water service: US-TN: 36 rows not checked because the USGS water map did not answer (run the worker again)",
+  "water service: US-NC: 67 rows not checked because the USGS water map did not answer (run the worker again)",
+  "water service: US-VA: 20 rows not checked because the USGS water map did not answer (run the worker again)",
+  "water service: US-GA: 27 rows not checked because the USGS water map did not answer (run the worker again)",
+  "water service: US-AL: 6 rows not checked because the USGS water map did not answer (run the worker again)",
+  "water service: US-SC: 6 rows not checked because the USGS water map did not answer (run the worker again)",
+  "US-MS: 24 rows still waiting for a pass (out of time: run the worker again)"
  ],
  "known_answers": "18/18 on 2026-10-28",
  "missing_check": {
-  "FOUND": 307,
-  "DROPPED": 1763,
+  "FOUND": 444,
+  "DROPPED": 1626,
   "NEVER LOOKED AT": 14393
  },
  "report": {
@@ -41,30 +38,30 @@
   },
   "pass2": {
    "agree with the pass before": 0,
-   "date": "2026-10-28",
+   "date": "2026-10-29",
    "pairs tested": 0
   },
   "pass3": {
    "agree with the pass before": 0,
-   "date": "2026-10-28",
+   "date": "2026-10-29",
    "pairs tested": 0
   },
   "pass5": {
-   "checked": 17,
-   "date": "2026-10-28",
+   "checked": 455,
+   "date": "2026-10-29",
    "pairs tested": 0,
-   "still not checked": 3
+   "still not checked": 149
   }
  },
  "US-TN": {
   "rows": 687,
-  "live": 35,
+  "live": 46,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "the outlines overlap, but the PAD-US Park Service fee record": 2,
    "the ownership map shows more than one owner across the spot": 1,
-   "water not checked": 47,
+   "water not checked": 36,
    "no public owner on the ownership map": 1,
    "low-confidence outline for Land Between the Lakes National R": 1
   },
@@ -73,72 +70,71 @@
  },
  "US-NC": {
   "rows": 901,
-  "live": 17,
+  "live": 48,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "water not checked": 101,
    "the ownership map shows more than one owner across the spot": 1,
    "the outlines overlap, but the PAD-US Park Service fee record": 2,
+   "water not checked": 67,
    "the outlines overlap, but the Forest Service ownership map": 1
   },
   "dropped": 593,
-  "merged": 186
+  "merged": 189
  },
  "US-VA": {
   "rows": 143,
-  "live": 24,
+  "live": 35,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "water not checked": 32,
    "the ownership map shows more than one owner across the spot": 3,
+   "water not checked": 20,
    "no public owner on the ownership map": 1
   },
   "dropped": 35,
-  "merged": 48
+  "merged": 49
  },
  "US-WV": {
   "rows": 292,
-  "live": 4,
+  "live": 30,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "water not checked": 28,
    "the ownership map shows more than one owner across the spot": 2
   },
   "dropped": 214,
-  "merged": 44
+  "merged": 46
  },
  "US-GA": {
   "rows": 289,
-  "live": 10,
+  "live": 33,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "water not checked": 50
+   "water not checked": 27
   },
   "dropped": 166,
   "merged": 63
  },
  "US-AL": {
   "rows": 77,
-  "live": 6,
+  "live": 17,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "water not checked": 18
+   "water not checked": 6
   },
   "dropped": 39,
-  "merged": 14
+  "merged": 15
  },
  "US-SC": {
   "rows": 234,
-  "live": 9,
+  "live": 24,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "water not checked": 21,
+   "water not checked": 6,
    "the ownership map shows more than one owner across the spot": 1,
    "no public owner on the ownership map": 2
   },
@@ -147,26 +143,24 @@
  },
  "US-FL": {
   "rows": 1273,
-  "live": 112,
+  "live": 202,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "water not checked": 94,
    "the ownership map shows more than one owner across the spot": 5,
    "no public owner on the ownership map": 9,
    "owner not known for Suwannee River State Park": 1,
    "owner not known for Apalachicola River Wildlife Area": 3
   },
   "dropped": 778,
-  "merged": 271
+  "merged": 275
  },
  "US-MS": {
   "rows": 95,
-  "live": 3,
+  "live": 9,
   "waiting": 24,
   "unfinished": 0,
   "not_sure": {
-   "water not checked": 6,
    "the ownership map shows more than one owner across the spot": 1
   },
   "dropped": 31,

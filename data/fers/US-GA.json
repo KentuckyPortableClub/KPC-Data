@@ -1,9 +1,9 @@
 {
  "about": "Spots where the boundaries of two or more POTA parks may overlap, by the 2-FER RULES FOR THE WHOLE WORLD (Brandon Oct 27, notes/mapping.md): the park = where its designation legally applies (national forests + grasslands = Forest Service-OWNED land only, never proclamation lines); public land open to the public; layered = real, side by side = not (ownership step: PAD-US / CPCAD at the spot, read at up to 5 points of the patch; no public owner there = not sure); a patch 50 yards across in every park ('small' = 50-100 yards; 25-50 yards = the separate 'very tight' list, members only; under 25 = not kept); line-only trails / rivers by POTA's 100-ft rule from the line or the river EDGE (USGS NHD); pins never count. Status: 'candidate' = all checks passed; 'not sure: …' and 'water only: boat or kayak' are separate lists, never the main one; n-fers up to 9; 'Same land, two park numbers' (two numbers on one official outline) is shown with that label; 'dropped: …' says why. Every decided spot shows 'checked' + 'map_dates'. Parks with no official boundary: missing-<region>.json. HIDDEN, not reviewed: passes [saved, fresh, finest] must all be 1 and status 'candidate' before a person looks. Wording when shown (house rule, Oct 27): '⚠️ Parks' boundaries may overlap here, but we can't confirm it. Check both official boundary maps and make your own call before you count it.' Tool pages carry the FULL notice from .claude/notes/notices.md.",
  "pass1": "2026-10-28",
- "pass2": "2026-10-28",
- "pass3": "2026-10-28",
- "pass5": "2026-10-28",
+ "pass2": "2026-10-29",
+ "pass3": "2026-10-29",
+ "pass5": "2026-10-29",
  "spots": [
   {
    "acres": 122.2,
@@ -163,10 +163,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0259": "downloaded 2026-10-28",
-    "US-3751": "downloaded 2026-10-28"
+    "US-3751": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-0259": "Banks Lake National Wildlife Refuge",
@@ -211,8 +212,8 @@
      31.01408
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 185
   },
   {
@@ -2721,10 +2722,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0260": "downloaded 2026-10-28",
-    "US-3774": "downloaded 2026-10-28"
+    "US-3774": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-0260": "Blackbeard Island National Wildlife Refuge",
@@ -2811,8 +2813,8 @@
     ]
    ],
    "small": "small overlap: tight fit, check carefully",
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 65
   },
   {
@@ -3341,7 +3343,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0260": "downloaded 2026-10-28",
     "US-3774": "downloaded 2026-10-28"
@@ -3909,7 +3911,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0260": "downloaded 2026-10-28",
     "US-3774": "downloaded 2026-10-28"
@@ -4175,7 +4177,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0263": "downloaded 2026-10-28",
     "US-3746": "downloaded 2026-10-28"
@@ -4507,10 +4509,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0263": "downloaded 2026-10-28",
-    "US-3746": "downloaded 2026-10-28"
+    "US-3746": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-0263": "Okefenokee National Wildlife Refuge",
@@ -4564,8 +4567,8 @@
      31.067003
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 943
   },
   {
@@ -4962,10 +4965,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0263": "downloaded 2026-10-28",
-    "US-4626": "downloaded 2026-10-28"
+    "US-4626": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-0263": "Okefenokee National Wildlife Refuge",
@@ -5028,8 +5032,8 @@
     ]
    ],
    "small": "small overlap: tight fit, check carefully",
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 67
   },
   {
@@ -5380,7 +5384,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0263": "downloaded 2026-10-28",
     "US-4626": "downloaded 2026-10-28"
@@ -5636,10 +5640,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0263": "downloaded 2026-10-28",
-    "US-4651": "downloaded 2026-10-28"
+    "US-4651": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-0263": "Okefenokee National Wildlife Refuge",
@@ -5704,8 +5709,8 @@
      31.067045
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 243
   },
   {
@@ -5916,10 +5921,12 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
+   "list": "Very tight (members only)",
    "map_dates": {
     "US-0264": "downloaded 2026-10-28",
-    "US-3720": "downloaded 2026-10-28"
+    "US-3720": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-0264": "Piedmont National Wildlife Refuge",
@@ -5964,9 +5971,9 @@
      33.055639
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "very tight: could be map error: check both official maps on the ground",
    "tier": "very tight: could be map error: check both official maps on the ground",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 45
   },
   {
@@ -6115,7 +6122,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0662": "downloaded 2026-10-28",
     "US-7860": "downloaded 2026-10-28"
@@ -6163,8 +6170,8 @@
     ]
    ],
    "small": "small overlap: tight fit, check carefully",
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 53
   },
   {
@@ -7241,10 +7248,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-12416": "downloaded 2026-10-28",
-    "US-3738": "downloaded 2026-10-28"
+    "US-3738": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-12416": "Little River (GA) Wildlife Management Area",
@@ -7648,8 +7656,8 @@
      33.313532
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 1609
   },
   {
@@ -7786,7 +7794,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-12417": "downloaded 2026-10-28",
     "US-4473": "downloaded 2026-10-28"
@@ -13236,7 +13244,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-12417": "downloaded 2026-10-28",
     "US-4473": "downloaded 2026-10-28"
@@ -14105,7 +14113,7 @@
     ]
    ],
    "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 5746
   },
   {
@@ -14136,7 +14144,7 @@
     34.741359,
     -84.34458
    ],
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "found": "2026-10-28",
    "id": "US-12417+US-7452@same land@34.741,-84.345",
    "kind": "same land",
@@ -17428,7 +17436,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-12418": "downloaded 2026-10-28",
     "US-2202": "downloaded 2026-10-28",
@@ -17493,7 +17501,7 @@
     ]
    ],
    "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 105
   },
   {
@@ -17812,7 +17820,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-12418": "downloaded 2026-10-28",
     "US-2202": "downloaded 2026-10-28",
@@ -27503,7 +27511,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-12418": "downloaded 2026-10-28",
     "US-2202": "downloaded 2026-10-28"
@@ -28387,7 +28395,7 @@
     ]
    ],
    "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 1717
   },
   {
@@ -29166,7 +29174,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-12418": "downloaded 2026-10-28",
     "US-4473": "downloaded 2026-10-28"
@@ -29227,7 +29235,7 @@
     ]
    ],
    "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 105
   },
   {
@@ -29452,7 +29460,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-12418": "downloaded 2026-10-28",
     "US-4473": "downloaded 2026-10-28"
@@ -29660,7 +29668,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-12421": "downloaded 2026-10-28",
     "US-2166": "downloaded 2026-10-28"
@@ -29704,7 +29712,7 @@
     ]
    ],
    "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 105
   },
   {
@@ -29877,7 +29885,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2166": "downloaded 2026-10-28",
     "US-4473": "downloaded 2026-10-28"
@@ -29934,7 +29942,7 @@
    ],
    "small": "small overlap: tight fit, check carefully",
    "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 55
   },
   {
@@ -30283,7 +30291,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2167": "downloaded 2026-10-28",
     "US-4473": "downloaded 2026-10-28"
@@ -30360,7 +30368,7 @@
    ],
    "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
    "tier": "very tight: could be map error: check both official maps on the ground",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 31
   },
   {
@@ -32197,7 +32205,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2171": "downloaded 2026-10-28",
     "US-7448": "downloaded 2026-10-28"
@@ -32509,7 +32517,7 @@
     ]
    ],
    "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 133
   },
   {
@@ -38150,10 +38158,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2175": "downloaded 2026-10-28",
-    "US-7852": "downloaded 2026-10-28"
+    "US-7852": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-2175": "Fort McAllister State Park",
@@ -39030,8 +39039,8 @@
      31.885278
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 1278
   },
   {
@@ -39166,7 +39175,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2175": "downloaded 2026-10-28",
     "US-7852": "downloaded 2026-10-28"
@@ -39456,7 +39465,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2176": "downloaded 2026-10-28",
     "US-4473": "downloaded 2026-10-28"
@@ -39505,7 +39514,7 @@
    ],
    "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
    "tier": "very tight: could be map error: check both official maps on the ground",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 45
   },
   {
@@ -40805,10 +40814,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2188": "downloaded 2026-10-28",
-    "US-3746": "downloaded 2026-10-28"
+    "US-3746": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-2188": "Laura S. Walker State Park",
@@ -41024,8 +41034,8 @@
      31.14151
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 147
   },
   {
@@ -41804,10 +41814,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2188": "downloaded 2026-10-28",
-    "US-4651": "downloaded 2026-10-28"
+    "US-4651": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-2188": "Laura S. Walker State Park",
@@ -41948,8 +41959,8 @@
      31.145037
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 123
   },
   {
@@ -42728,7 +42739,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2188": "downloaded 2026-10-28",
     "US-4651": "downloaded 2026-10-28"
@@ -43070,7 +43081,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2192": "downloaded 2026-10-28",
     "US-4473": "downloaded 2026-10-28"
@@ -43119,7 +43130,7 @@
    ],
    "small": "small overlap: tight fit, check carefully",
    "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 75
   },
   {
@@ -72762,7 +72773,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2196": "downloaded 2026-10-28",
     "US-3747": "downloaded 2026-10-28"
@@ -73343,7 +73354,7 @@
     ]
    ],
    "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 884
   },
   {
@@ -75732,7 +75743,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2196": "downloaded 2026-10-28",
     "US-3747": "downloaded 2026-10-28"
@@ -82626,7 +82637,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2196": "downloaded 2026-10-28",
     "US-3747": "downloaded 2026-10-28"
@@ -86076,7 +86087,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2196": "downloaded 2026-10-28",
     "US-3747": "downloaded 2026-10-28"
@@ -93640,11 +93651,12 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2197": "downloaded 2026-10-28",
     "US-3775": "downloaded 2026-10-28",
-    "US-9786": "downloaded 2026-10-28"
+    "US-9786": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-2197": "Seminole State Park",
@@ -93654,6 +93666,11 @@
    "notes": [
     "check the agency's closures and seasons before you go",
     "restricted access (PAD-US): check the agency rules"
+   ],
+   "pairs_around": [
+    "US-2197+US-3775",
+    "US-2197+US-9786",
+    "US-3775+US-9786"
    ],
    "passes": [
     1,
@@ -94085,8 +94102,8 @@
      30.830464
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 277
   },
   {
@@ -101269,7 +101286,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2197": "downloaded 2026-10-28",
     "US-3775": "downloaded 2026-10-28",
@@ -109176,15 +109193,19 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2197": "downloaded 2026-10-28",
-    "US-3775": "downloaded 2026-10-28"
+    "US-3775": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-2197": "Seminole State Park",
     "US-3775": "Silver Lake Wildlife Management Area"
    },
+   "nfer_here": [
+    "US-2197+US-3775+US-9786@area@30.800,-84.768"
+   ],
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
@@ -109724,8 +109745,8 @@
      30.830238
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 315
   },
   {
@@ -117188,7 +117209,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2197": "downloaded 2026-10-28",
     "US-3775": "downloaded 2026-10-28"
@@ -124918,11 +124939,12 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2197": "downloaded 2026-10-28",
     "US-7470": "downloaded 2026-10-28",
-    "US-9786": "downloaded 2026-10-28"
+    "US-9786": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-2197": "Seminole State Park",
@@ -124932,6 +124954,11 @@
    "notes": [
     "check the agency's closures and seasons before you go",
     "restricted access (PAD-US): check the agency rules"
+   ],
+   "pairs_around": [
+    "US-2197+US-7470",
+    "US-2197+US-9786",
+    "US-7470+US-9786"
    ],
    "passes": [
     1,
@@ -125363,8 +125390,8 @@
      30.830464
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 277
   },
   {
@@ -132547,7 +132574,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2197": "downloaded 2026-10-28",
     "US-7470": "downloaded 2026-10-28",
@@ -140454,15 +140481,19 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2197": "downloaded 2026-10-28",
-    "US-7470": "downloaded 2026-10-28"
+    "US-7470": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-2197": "Seminole State Park",
     "US-7470": "Silver Lake State Fishing Lake"
    },
+   "nfer_here": [
+    "US-2197+US-7470+US-9786@area@30.800,-84.768"
+   ],
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
@@ -141002,8 +141033,8 @@
      30.830238
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 315
   },
   {
@@ -148466,7 +148497,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2197": "downloaded 2026-10-28",
     "US-7470": "downloaded 2026-10-28"
@@ -150160,7 +150191,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2197": "downloaded 2026-10-28",
     "US-9786": "downloaded 2026-10-28"
@@ -175439,7 +175470,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2197": "downloaded 2026-10-28",
     "US-9786": "downloaded 2026-10-28"
@@ -180154,7 +180185,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2197": "downloaded 2026-10-28",
     "US-9786": "downloaded 2026-10-28"
@@ -205561,7 +205592,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2197": "downloaded 2026-10-28",
     "US-9786": "downloaded 2026-10-28"
@@ -210276,7 +210307,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2197": "downloaded 2026-10-28",
     "US-9786": "downloaded 2026-10-28"
@@ -235683,7 +235714,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2197": "downloaded 2026-10-28",
     "US-9786": "downloaded 2026-10-28"
@@ -261486,7 +261517,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2197": "downloaded 2026-10-28",
     "US-9786": "downloaded 2026-10-28"
@@ -287289,7 +287320,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2197": "downloaded 2026-10-28",
     "US-9786": "downloaded 2026-10-28"
@@ -313092,7 +313123,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2197": "downloaded 2026-10-28",
     "US-9786": "downloaded 2026-10-28"
@@ -351727,15 +351758,20 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2197": "downloaded 2026-10-28",
-    "US-9786": "downloaded 2026-10-28"
+    "US-9786": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-2197": "Seminole State Park",
     "US-9786": "Lake Seminole Wildlife Management Area"
    },
+   "nfer_here": [
+    "US-2197+US-3775+US-9786@area@30.800,-84.768",
+    "US-2197+US-7470+US-9786@area@30.800,-84.768"
+   ],
    "notes": [
     "check the agency's closures and seasons before you go",
     "restricted access (PAD-US): check the agency rules"
@@ -352932,8 +352968,8 @@
      30.84171
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 1071
   },
   {
@@ -385912,7 +385948,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2197": "downloaded 2026-10-28",
     "US-9786": "downloaded 2026-10-28"
@@ -420095,7 +420131,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2197": "downloaded 2026-10-28",
     "US-9786": "downloaded 2026-10-28"
@@ -454278,7 +454314,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2197": "downloaded 2026-10-28",
     "US-9786": "downloaded 2026-10-28"
@@ -457789,7 +457825,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2197": "downloaded 2026-10-28",
     "US-9786": "downloaded 2026-10-28"
@@ -460400,7 +460436,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2197": "downloaded 2026-10-28",
     "US-9786": "downloaded 2026-10-28"
@@ -461007,7 +461043,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2199": "downloaded 2026-10-28",
     "US-3718": "downloaded 2026-10-28"
@@ -461071,7 +461107,7 @@
     ]
    ],
    "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 385
   },
   {
@@ -462234,7 +462270,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2202": "downloaded 2026-10-28",
     "US-4473": "downloaded 2026-10-28"
@@ -462295,7 +462331,7 @@
     ]
    ],
    "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 105
   },
   {
@@ -462520,7 +462556,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2202": "downloaded 2026-10-28",
     "US-4473": "downloaded 2026-10-28"
@@ -463101,7 +463137,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-2206": "downloaded 2026-10-28",
     "US-4473": "downloaded 2026-10-28"
@@ -463165,7 +463201,7 @@
     ]
    ],
    "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 219
   },
   {
@@ -465868,10 +465904,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-3740": "downloaded 2026-10-28",
-    "US-3773": "downloaded 2026-10-28"
+    "US-3773": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-3740": "Clayhole Swamp Wildlife Management Area",
@@ -466415,8 +466452,8 @@
      31.423612
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 1809
   },
   {
@@ -466485,7 +466522,7 @@
     34.617461,
     -84.638169
    ],
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "found": "2026-10-28",
    "id": "US-3741+US-7899@same land@34.617,-84.638",
    "kind": "same land",
@@ -466961,7 +466998,7 @@
     34.370861,
     -84.177749
    ],
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "found": "2026-10-28",
    "id": "US-3743+US-4650@same land@34.371,-84.178",
    "kind": "same land",
@@ -467378,7 +467415,7 @@
     31.122265,
     -82.279127
    ],
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "found": "2026-10-28",
    "id": "US-3746+US-4651@same land@31.122,-82.279",
    "kind": "same land",
@@ -477170,7 +477207,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-3758": "downloaded 2026-10-28",
     "US-4473": "downloaded 2026-10-28"
@@ -478019,7 +478056,7 @@
     ]
    ],
    "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 3990
   },
   {
@@ -481560,10 +481597,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-3761": "downloaded 2026-10-28",
-    "US-3762": "downloaded 2026-10-28"
+    "US-3762": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-3761": "Oaky Woods Wildlife Management Area",
@@ -481705,8 +481743,8 @@
     ]
    ],
    "small": "small overlap: tight fit, check carefully",
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 55
   },
   {
@@ -483405,7 +483443,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-3761": "downloaded 2026-10-28",
     "US-3762": "downloaded 2026-10-28"
@@ -484092,7 +484130,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-3761": "downloaded 2026-10-28",
     "US-3762": "downloaded 2026-10-28"
@@ -484645,7 +484683,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-3761": "downloaded 2026-10-28",
     "US-3762": "downloaded 2026-10-28"
@@ -488462,10 +488500,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-3761": "downloaded 2026-10-28",
-    "US-7461": "downloaded 2026-10-28"
+    "US-7461": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-3761": "Oaky Woods Wildlife Management Area",
@@ -488607,8 +488646,8 @@
     ]
    ],
    "small": "small overlap: tight fit, check carefully",
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 55
   },
   {
@@ -490307,7 +490346,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-3761": "downloaded 2026-10-28",
     "US-7461": "downloaded 2026-10-28"
@@ -490994,7 +491033,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-3761": "downloaded 2026-10-28",
     "US-7461": "downloaded 2026-10-28"
@@ -491547,7 +491586,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-3761": "downloaded 2026-10-28",
     "US-7461": "downloaded 2026-10-28"
@@ -492376,10 +492415,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-3761": "downloaded 2026-10-28",
-    "US-7900": "downloaded 2026-10-28"
+    "US-7900": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-3761": "Oaky Woods Wildlife Management Area",
@@ -492495,8 +492535,8 @@
      32.634036
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 935
   },
   {
@@ -492527,7 +492567,7 @@
     32.414649,
     -83.477447
    ],
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "found": "2026-10-28",
    "id": "US-3762+US-7461@same land@32.415,-83.477",
    "kind": "same land",
@@ -497148,10 +497188,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-3767": "downloaded 2026-10-28",
-    "US-3773": "downloaded 2026-10-28"
+    "US-3773": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-3767": "Penholoway Swamp Wildlife Management Area",
@@ -497576,8 +497617,8 @@
     ]
    ],
    "small": "small overlap: tight fit, check carefully",
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 49
   },
   {
@@ -497676,7 +497717,7 @@
     30.805705,
     -84.736153
    ],
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "found": "2026-10-28",
    "id": "US-3775+US-7470@same land@30.806,-84.736",
    "kind": "same land",
@@ -530113,15 +530154,19 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-3775": "downloaded 2026-10-28",
-    "US-9786": "downloaded 2026-10-28"
+    "US-9786": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-3775": "Silver Lake Wildlife Management Area",
     "US-9786": "Lake Seminole Wildlife Management Area"
    },
+   "nfer_here": [
+    "US-2197+US-3775+US-9786@area@30.800,-84.768"
+   ],
    "notes": [
     "check the agency's closures and seasons before you go",
     "restricted access (PAD-US): check the agency rules"
@@ -531053,8 +531098,8 @@
      30.82701
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 525
   },
   {
@@ -534930,7 +534975,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-4473": "downloaded 2026-10-28",
     "US-7135": "downloaded 2026-10-28"
@@ -535235,7 +535280,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-4473": "downloaded 2026-10-28",
     "US-7135": "downloaded 2026-10-28"
@@ -546206,7 +546251,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-4473": "downloaded 2026-10-28",
     "US-7135": "downloaded 2026-10-28"
@@ -546956,7 +547001,7 @@
     ]
    ],
    "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 6385
   },
   {
@@ -579375,7 +579420,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-4473": "downloaded 2026-10-28",
     "US-7137": "downloaded 2026-10-28"
@@ -580044,7 +580089,7 @@
     ]
    ],
    "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 4997
   },
   {
@@ -580173,7 +580218,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-4473": "downloaded 2026-10-28",
     "US-7138": "downloaded 2026-10-28",
@@ -581010,7 +581055,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-4473": "downloaded 2026-10-28",
     "US-7138": "downloaded 2026-10-28",
@@ -581060,7 +581105,7 @@
     ]
    ],
    "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 385
   },
   {
@@ -592536,7 +592581,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-4473": "downloaded 2026-10-28",
     "US-7138": "downloaded 2026-10-28"
@@ -593372,7 +593417,7 @@
     ]
    ],
    "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 4651
   },
   {
@@ -625987,7 +626032,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-4473": "downloaded 2026-10-28",
     "US-7446": "downloaded 2026-10-28"
@@ -626635,7 +626680,7 @@
     ]
    ],
    "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 8385
   },
   {
@@ -626764,7 +626809,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-4473": "downloaded 2026-10-28",
     "US-7447": "downloaded 2026-10-28"
@@ -626913,7 +626958,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-4473": "downloaded 2026-10-28",
     "US-7447": "downloaded 2026-10-28"
@@ -660442,7 +660487,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-4473": "downloaded 2026-10-28",
     "US-7447": "downloaded 2026-10-28"
@@ -661644,7 +661689,7 @@
     ]
    ],
    "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 5895
   },
   {
@@ -676337,7 +676382,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-4473": "downloaded 2026-10-28",
     "US-7450": "downloaded 2026-10-28"
@@ -677305,7 +677350,7 @@
     ]
    ],
    "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 5385
   },
   {
@@ -688960,7 +689005,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-4473": "downloaded 2026-10-28",
     "US-7451": "downloaded 2026-10-28"
@@ -689913,7 +689958,7 @@
     ]
    ],
    "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 4383
   },
   {
@@ -690022,7 +690067,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-4473": "downloaded 2026-10-28",
     "US-7452": "downloaded 2026-10-28"
@@ -695450,7 +695495,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-4473": "downloaded 2026-10-28",
     "US-7452": "downloaded 2026-10-28"
@@ -696319,7 +696364,7 @@
     ]
    ],
    "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 5746
   },
   {
@@ -705332,7 +705377,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-4473": "downloaded 2026-10-28",
     "US-7455": "downloaded 2026-10-28"
@@ -706016,7 +706061,7 @@
     ]
    ],
    "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 5760
   },
   {
@@ -706123,7 +706168,7 @@
     32.787945,
     -84.421558
    ],
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "found": "2026-10-28",
    "id": "US-4586+US-7462@same land@32.788,-84.422",
    "kind": "same land",
@@ -710644,7 +710689,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-4653": "downloaded 2026-10-28",
     "US-7895": "downloaded 2026-10-28"
@@ -710945,7 +710990,7 @@
     ]
    ],
    "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 595
   },
   {
@@ -711108,7 +711153,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-7138": "downloaded 2026-10-28",
     "US-7447": "downloaded 2026-10-28"
@@ -711851,7 +711896,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-7138": "downloaded 2026-10-28",
     "US-7447": "downloaded 2026-10-28"
@@ -711913,7 +711958,7 @@
     ]
    ],
    "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 385
   },
   {
@@ -712212,7 +712257,7 @@
     33.439661,
     -83.734222
    ],
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "found": "2026-10-28",
    "id": "US-7141+US-7467@same land@33.440,-83.734",
    "kind": "same land",
@@ -743574,15 +743619,19 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-7470": "downloaded 2026-10-28",
-    "US-9786": "downloaded 2026-10-28"
+    "US-9786": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-7470": "Silver Lake State Fishing Lake",
     "US-9786": "Lake Seminole Wildlife Management Area"
    },
+   "nfer_here": [
+    "US-2197+US-7470+US-9786@area@30.800,-84.768"
+   ],
    "notes": [
     "check the agency's closures and seasons before you go",
     "restricted access (PAD-US): check the agency rules"
@@ -744514,8 +744563,8 @@
      30.82701
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 525
   },
   {
@@ -744546,7 +744595,7 @@
     32.406884,
     -84.611484
    ],
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "found": "2026-10-28",
    "id": "US-7906+US-9797@same land@32.407,-84.611",
    "kind": "same land",
@@ -744695,7 +744744,7 @@
     32.555434,
     -84.387434
    ],
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "found": "2026-10-28",
    "id": "US-7914+US-9795@same land@32.555,-84.387",
    "kind": "same land",

@@ -1,9 +1,9 @@
 {
  "about": "Spots where the boundaries of two or more POTA parks may overlap, by the 2-FER RULES FOR THE WHOLE WORLD (Brandon Oct 27, notes/mapping.md): the park = where its designation legally applies (national forests + grasslands = Forest Service-OWNED land only, never proclamation lines); public land open to the public; layered = real, side by side = not (ownership step: PAD-US / CPCAD at the spot, read at up to 5 points of the patch; no public owner there = not sure); a patch 50 yards across in every park ('small' = 50-100 yards; 25-50 yards = the separate 'very tight' list, members only; under 25 = not kept); line-only trails / rivers by POTA's 100-ft rule from the line or the river EDGE (USGS NHD); pins never count. Status: 'candidate' = all checks passed; 'not sure: …' and 'water only: boat or kayak' are separate lists, never the main one; n-fers up to 9; 'Same land, two park numbers' (two numbers on one official outline) is shown with that label; 'dropped: …' says why. Every decided spot shows 'checked' + 'map_dates'. Parks with no official boundary: missing-<region>.json. HIDDEN, not reviewed: passes [saved, fresh, finest] must all be 1 and status 'candidate' before a person looks. Wording when shown (house rule, Oct 27): '⚠️ Parks' boundaries may overlap here, but we can't confirm it. Check both official boundary maps and make your own call before you count it.' Tool pages carry the FULL notice from .claude/notes/notices.md.",
  "pass1": "2026-10-28",
- "pass2": "2026-10-28",
- "pass3": "2026-10-28",
- "pass5": "2026-10-28",
+ "pass2": "2026-10-29",
+ "pass3": "2026-10-29",
+ "pass5": "2026-10-29",
  "spots": [
   {
    "access": null,
@@ -596,7 +596,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "list": "Very tight (members only)",
    "map_dates": {
     "US-0137": "downloaded 2026-10-28",
@@ -722,7 +722,7 @@
    ],
    "status": "very tight: could be map error: check both official maps on the ground",
    "tier": "very tight: could be map error: check both official maps on the ground",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 23
   },
   {
@@ -1213,7 +1213,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0141": "downloaded 2026-10-28",
     "US-9844": "downloaded 2026-10-28"
@@ -1279,7 +1279,7 @@
    ],
    "small": "small overlap: tight fit, check carefully",
    "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 51
   },
   {
@@ -4104,10 +4104,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-0158": "downloaded 2026-10-28",
-    "US-3683": "downloaded 2026-10-28"
+    "US-3683": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-0158": "Mountain Longleaf National Wildlife Refuge",
@@ -4756,8 +4757,8 @@
      33.699916
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 1515
   },
   {
@@ -4952,11 +4953,12 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-1037": "downloaded 2026-10-28",
     "US-3682": "downloaded 2026-10-28",
-    "US-4450": "downloaded 2026-10-28"
+    "US-4450": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-1037": "Cheaha Resort State Park",
@@ -4965,6 +4967,13 @@
    },
    "notes": [
     "check the agency's closures and seasons before you go"
+   ],
+   "pairs_around": [
+    "US-1037+US-4450",
+    "US-3682+US-4450"
+   ],
+   "pairs_here": [
+    "US-1037+US-3682"
    ],
    "passes": [
     1,
@@ -5003,8 +5012,8 @@
      33.454608
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 405
   },
   {
@@ -5103,10 +5112,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-1037": "downloaded 2026-10-28",
-    "US-3682": "downloaded 2026-10-28"
+    "US-3682": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-1037": "Cheaha Resort State Park",
@@ -5154,8 +5164,8 @@
      33.454878
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "merged into one row: US-1037+US-3682+US-4450@area@33.453,-85.816 (the same patch as the 3-fer)",
+   "water_checked": "2026-10-29",
    "wide_m": 405
   },
   {
@@ -6802,15 +6812,19 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-1037": "downloaded 2026-10-28",
-    "US-4450": "downloaded 2026-10-28"
+    "US-4450": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-1037": "Cheaha Resort State Park",
     "US-4450": "Talladega National Forest"
    },
+   "nfer_here": [
+    "US-1037+US-3682+US-4450@area@33.453,-85.816"
+   ],
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
@@ -6894,8 +6908,8 @@
      33.4691
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 1205
   },
   {
@@ -7036,7 +7050,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-1037": "downloaded 2026-10-28",
     "US-4450": "downloaded 2026-10-28"
@@ -7274,7 +7288,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-1037": "downloaded 2026-10-28",
     "US-4450": "downloaded 2026-10-28"
@@ -7416,7 +7430,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-1037": "downloaded 2026-10-28",
     "US-4450": "downloaded 2026-10-28"
@@ -7504,7 +7518,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-1037": "downloaded 2026-10-28",
     "US-4450": "downloaded 2026-10-28"
@@ -7732,7 +7746,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-1037": "downloaded 2026-10-28",
     "US-4450": "downloaded 2026-10-28"
@@ -7848,7 +7862,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-1037": "downloaded 2026-10-28",
     "US-4450": "downloaded 2026-10-28"
@@ -8004,7 +8018,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-1037": "downloaded 2026-10-28",
     "US-4450": "downloaded 2026-10-28"
@@ -14912,7 +14926,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-10396": "downloaded 2026-10-28",
     "US-3706": "downloaded 2026-10-28",
@@ -16020,7 +16034,7 @@
     ]
    ],
    "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 5109
   },
   {
@@ -20787,7 +20801,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-10396": "downloaded 2026-10-28",
     "US-3706": "downloaded 2026-10-28"
@@ -21859,7 +21873,7 @@
     ]
    ],
    "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 6598
   },
   {
@@ -51310,7 +51324,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-10396": "downloaded 2026-10-28",
     "US-4452": "downloaded 2026-10-28"
@@ -52066,7 +52080,7 @@
     ]
    ],
    "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 5535
   },
   {
@@ -52525,7 +52539,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-10428": "downloaded 2026-10-28",
     "US-3694": "downloaded 2026-10-28"
@@ -52784,7 +52798,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-10428": "downloaded 2026-10-28",
     "US-3694": "downloaded 2026-10-28"
@@ -53839,7 +53853,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-10428": "downloaded 2026-10-28",
     "US-3694": "downloaded 2026-10-28"
@@ -54264,7 +54278,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-10428": "downloaded 2026-10-28",
     "US-3694": "downloaded 2026-10-28"
@@ -60395,7 +60409,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-10428": "downloaded 2026-10-28",
     "US-3694": "downloaded 2026-10-28"
@@ -60773,7 +60787,7 @@
     ]
    ],
    "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 4045
   },
   {
@@ -60911,7 +60925,7 @@
     32.194839,
     -87.079959
    ],
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "found": "2026-10-28",
    "id": "US-12964+US-9919@same land@32.195,-87.080",
    "kind": "same land",
@@ -62149,15 +62163,19 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-3682": "downloaded 2026-10-28",
-    "US-4450": "downloaded 2026-10-28"
+    "US-4450": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-3682": "Cheaha Wilderness Area",
     "US-4450": "Talladega National Forest"
    },
+   "nfer_here": [
+    "US-1037+US-3682+US-4450@area@33.453,-85.816"
+   ],
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
@@ -62540,8 +62558,8 @@
      33.45548
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 3785
   },
   {
@@ -70719,10 +70737,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-3683": "downloaded 2026-10-28",
-    "US-4450": "downloaded 2026-10-28"
+    "US-4450": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-3683": "Choccolocco Wildlife Management Area",
@@ -71206,8 +71225,8 @@
      33.739044
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 6556
   },
   {
@@ -71494,10 +71513,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-3683": "downloaded 2026-10-28",
-    "US-4595": "downloaded 2026-10-28"
+    "US-4595": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-3683": "Choccolocco Wildlife Management Area",
@@ -71646,8 +71666,8 @@
      33.722005
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 1595
   },
   {
@@ -71820,7 +71840,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "list": "Very tight (members only)",
    "map_dates": {
     "US-3685": "downloaded 2026-10-28",
@@ -71905,7 +71925,7 @@
    ],
    "status": "very tight: could be map error: check both official maps on the ground",
    "tier": "very tight: could be map error: check both official maps on the ground",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 25
   },
   {
@@ -72001,7 +72021,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "list": "Very tight (members only)",
    "map_dates": {
     "US-3685": "downloaded 2026-10-28",
@@ -75359,10 +75379,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-3687": "downloaded 2026-10-28",
-    "US-4450": "downloaded 2026-10-28"
+    "US-4450": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-3687": "Dugger Mountain Wilderness National Forest",
@@ -76534,8 +76555,8 @@
      33.891383
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 3732
   },
   {
@@ -76831,7 +76852,7 @@
     ]
    ],
    "zone_acres": 112.69,
-   "zone_read": "2026-10-28",
+   "zone_read": "2026-10-29",
    "zone_wide_m": 70.0
   },
   {
@@ -76942,7 +76963,7 @@
     ]
    ],
    "zone_acres": 14.17,
-   "zone_read": "2026-10-28",
+   "zone_read": "2026-10-29",
    "zone_wide_m": 65.9
   },
   {
@@ -76973,7 +76994,7 @@
     31.130678,
     -86.21806
    ],
-   "checked": "2026-10-28",
+   "checked": "2026-10-29",
    "found": "2026-10-28",
    "id": "US-3690+US-4596@same land@31.131,-86.218",
    "kind": "same land",
@@ -84484,10 +84505,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-3693": "downloaded 2026-10-28",
-    "US-4450": "downloaded 2026-10-28"
+    "US-4450": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-3693": "Hollins Wildlife Management Area",
@@ -85099,8 +85121,8 @@
      33.262666
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 3814
   },
   {
@@ -91209,7 +91231,7 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-3706": "downloaded 2026-10-28",
     "US-4452": "downloaded 2026-10-28"
@@ -92277,7 +92299,7 @@
     ]
    ],
    "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "water_checked": "2026-10-29",
    "wide_m": 5112
   },
   {
@@ -92410,7 +92432,7 @@
     ]
    ],
    "zone_acres": 0.28,
-   "zone_read": "2026-10-28",
+   "zone_read": "2026-10-29",
    "zone_wide_m": 28.0
   },
   {
@@ -94334,10 +94356,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-4449": "downloaded 2026-10-28",
-    "US-9911": "downloaded 2026-10-28"
+    "US-9911": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-4449": "Conecuh National Forest",
@@ -94689,8 +94712,8 @@
      31.050351
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 3084
   },
   {
@@ -101779,10 +101802,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-4449": "downloaded 2026-10-28",
-    "US-9912": "downloaded 2026-10-28"
+    "US-9912": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-4449": "Conecuh National Forest",
@@ -102494,8 +102518,8 @@
      31.15931
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 4228
   },
   {
@@ -114472,10 +114496,11 @@
      ]
     ]
    },
-   "lines_read": "2026-10-28",
+   "lines_read": "2026-10-29",
    "map_dates": {
     "US-4450": "downloaded 2026-10-28",
-    "US-9924": "downloaded 2026-10-28"
+    "US-9924": "downloaded 2026-10-28",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-4450": "Talladega National Forest",
@@ -115511,8 +115536,8 @@
      33.002297
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "water_checked": "2026-10-28",
+   "status": "candidate",
+   "water_checked": "2026-10-29",
    "wide_m": 4270
   },
   {
