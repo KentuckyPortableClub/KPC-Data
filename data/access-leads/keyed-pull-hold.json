@@ -27,7 +27,15 @@
    "shared": 50
   },
   "lon_flipped": 1,
-  "v1": 2818
+  "v1": 2818,
+  "v3b": {
+   "made": "2026-10-29 chat 9 after chat 11 v3 grade (26/30)",
+   "dropped_wilderness_wsa": 53,
+   "dropped_guard_station": 10,
+   "points": 1862,
+   "parks": 442,
+   "ski_areas_for_HQ": 14
+  }
  },
  "ky_camps": [
   {
@@ -655,15 +663,6 @@
     },
     {
      "rule": "ridb-recarea-name",
-     "la": 36.695,
-     "lo": -118.773,
-     "label": "Facility: Jennie Lakes Wilderness (nearby, outside the park line)",
-     "src": "RIDB facility 242768 (rec area Sequoia National Forest)",
-     "where": "outside",
-     "km": 1.62
-    },
-    {
-     "rule": "ridb-recarea-name",
      "la": 36.7778,
      "lo": -118.96,
      "label": "Facility: Cherry Gap Winter Trailhead",
@@ -779,166 +778,6 @@
     }
    ]
   },
-  "US-0147": {
-   "n": "Izembek National Wildlife Refuge",
-   "st": "AK",
-   "outline": true,
-   "pts": [
-    {
-     "rule": "ridb-recarea-name",
-     "la": 55.204498,
-     "lo": -162.718387,
-     "label": "Facility: Izembek Wilderness (nearby, outside the park line)",
-     "src": "RIDB facility 12810 (rec area Izembek National Wildlife Refuge)",
-     "where": "outside",
-     "km": 1.15
-    }
-   ]
-  },
-  "US-0163": {
-   "n": "Big Lake National Wildlife Refuge",
-   "st": "AR",
-   "outline": true,
-   "pts": [
-    {
-     "rule": "ridb-recarea-name",
-     "la": 35.854027,
-     "lo": -90.137115,
-     "label": "Facility: Big Lake Wilderness",
-     "src": "RIDB facility 12788 (rec area Big Lake National Wildlife Refuge)",
-     "where": "edge",
-     "km": 0.01
-    }
-   ]
-  },
-  "US-0194": {
-   "n": "Havasu National Wildlife Refuge",
-   "st": "CA",
-   "outline": true,
-   "pts": [
-    {
-     "rule": "ridb-recarea-name",
-     "la": 34.837018,
-     "lo": -114.620287,
-     "label": "Facility: Havasu Wilderness",
-     "src": "RIDB facility 12805 (rec area Havasu National Wildlife Refuge)",
-     "where": "inside",
-     "km": 0.0
-    }
-   ]
-  },
-  "US-0234": {
-   "n": "Cedar Keys National Wildlife Refuge",
-   "st": "FL",
-   "outline": true,
-   "pts": [
-    {
-     "rule": "ridb-recarea-name",
-     "la": 29.100427,
-     "lo": -83.070288,
-     "label": "Facility: Cedar Keys Wilderness",
-     "src": "RIDB facility 12796 (rec area Cedar Keys National Wildlife Refuge)",
-     "where": "inside",
-     "km": 0.0
-    }
-   ]
-  },
-  "US-0235": {
-   "n": "Chassahowitzka National Wildlife Refuge",
-   "st": "FL",
-   "outline": true,
-   "pts": [
-    {
-     "rule": "ridb-recarea-name",
-     "la": 28.714603,
-     "lo": -82.577276,
-     "label": "Facility: Chassahowitzka Wilderness (nearby, outside the park line)",
-     "src": "RIDB facility 12799 (rec area Chassahowitzka National Wildlife Refuge)",
-     "where": "outside",
-     "km": 2.46
-    }
-   ]
-  },
-  "US-0243": {
-   "n": "J.N. Ding Darling National Wildlife Refuge",
-   "st": "FL",
-   "outline": true,
-   "pts": [
-    {
-     "rule": "ridb-recarea-name",
-     "la": 26.445509,
-     "lo": -82.112371,
-     "label": "Facility: J.N. Ding Darling Wilderness",
-     "src": "RIDB facility 12780 (rec area J.N. \"Ding\" Darling National Wildlife Refuge)",
-     "where": "inside",
-     "km": 0.0
-    }
-   ]
-  },
-  "US-0246": {
-   "n": "Lake Woodruff National Wildlife Refuge",
-   "st": "FL",
-   "outline": true,
-   "pts": [
-    {
-     "rule": "ridb-recarea-name",
-     "la": 29.107194,
-     "lo": -81.355791,
-     "label": "Facility: Lake Woodruff Wilderness",
-     "src": "RIDB facility 12815 (rec area Lake Woodruff National Wildlife Refuge)",
-     "where": "inside",
-     "km": 0.0
-    }
-   ]
-  },
-  "US-0250": {
-   "n": "National Key Deer National Wildlife Refuge",
-   "st": "FL",
-   "outline": true,
-   "pts": [
-    {
-     "rule": "ridb-recarea-name",
-     "la": 24.690496,
-     "lo": -81.381503,
-     "label": "Facility: Florida Keys Wilderness",
-     "src": "RIDB facility 12801 (rec area National Key Deer Refuge)",
-     "where": "inside",
-     "km": 0.0
-    }
-   ]
-  },
-  "US-0256": {
-   "n": "St. Marks National Wildlife Refuge",
-   "st": "FL",
-   "outline": true,
-   "pts": [
-    {
-     "rule": "ridb-recarea-name",
-     "la": 30.151541,
-     "lo": -84.147329,
-     "label": "Facility: St. Marks Wilderness",
-     "src": "RIDB facility 12835 (rec area St. Marks National Wildlife Refuge)",
-     "where": "inside",
-     "km": 0.0
-    }
-   ]
-  },
-  "US-0260": {
-   "n": "Blackbeard Island National Wildlife Refuge",
-   "st": "GA",
-   "outline": true,
-   "pts": [
-    {
-     "rule": "ridb-recarea-name",
-     "la": 31.489594,
-     "lo": -81.209143,
-     "label": "Facility: Blackbeard Island Wilderness",
-     "src": "RIDB facility 12789 (rec area Blackbeard Island National Wildlife Refuge)",
-     "where": "inside",
-     "km": 0.0
-    }
-   ]
-  },
   "US-0278": {
    "n": "Kootenai National Wildlife Refuge",
    "st": "ID",
@@ -952,230 +791,6 @@
      "src": "RIDB facility 265501 (rec area Idaho Panhandle National Forests)",
      "where": "outside",
      "km": 4.98
-    }
-   ]
-  },
-  "US-0282": {
-   "n": "Crab Orchard National Wildlife Refuge",
-   "st": "IL",
-   "outline": true,
-   "pts": [
-    {
-     "rule": "ridb-recarea-name",
-     "la": 37.60888,
-     "lo": -89.089082,
-     "label": "Facility: Crab Orchard Wilderness",
-     "src": "RIDB facility 12800 (rec area Crab Orchard National Wildlife Refuge)",
-     "where": "inside",
-     "km": 0.0
-    }
-   ]
-  },
-  "US-0311": {
-   "n": "Lacassine National Wildlife Refuge",
-   "st": "LA",
-   "outline": true,
-   "pts": [
-    {
-     "rule": "ridb-recarea-name",
-     "la": 30.00368,
-     "lo": -92.781279,
-     "label": "Facility: Lacassine Wilderness",
-     "src": "RIDB facility 12814 (rec area Lacassine National Wildlife Refuge)",
-     "where": "edge",
-     "km": 0.02
-    }
-   ]
-  },
-  "US-0324": {
-   "n": "Monomoy National Wildlife Refuge",
-   "st": "MA",
-   "outline": true,
-   "pts": [
-    {
-     "rule": "ridb-recarea-name",
-     "la": 41.657865,
-     "lo": -69.95915,
-     "label": "Facility: Monomoy Wilderness",
-     "src": "RIDB facility 12821 (rec area Monomoy National Wildlife Refuge)",
-     "where": "edge",
-     "km": 0.06
-    }
-   ]
-  },
-  "US-0341": {
-   "n": "Moosehorn National Wildlife Refuge",
-   "st": "ME",
-   "outline": true,
-   "pts": [
-    {
-     "rule": "ridb-recarea-name",
-     "la": 45.114975,
-     "lo": -67.281082,
-     "label": "Facility: Moosehorn (Baring Unit) Wilderness",
-     "src": "RIDB facility 12822 (rec area Moosehorn National Wildlife Refuge)",
-     "where": "inside",
-     "km": 0.0
-    }
-   ]
-  },
-  "US-0348": {
-   "n": "Huron National Wildlife Refuge",
-   "st": "MI",
-   "outline": true,
-   "pts": [
-    {
-     "rule": "ridb-recarea-name",
-     "la": 46.962264,
-     "lo": -87.998907,
-     "label": "Facility: Huron Islands Wilderness",
-     "src": "RIDB facility 12807 (rec area Huron National Wildlife Refuge)",
-     "where": "inside",
-     "km": 0.0
-    }
-   ]
-  },
-  "US-0354": {
-   "n": "Agassiz National Wildlife Refuge",
-   "st": "MN",
-   "outline": true,
-   "pts": [
-    {
-     "rule": "ridb-recarea-name",
-     "la": 48.299781,
-     "lo": -95.982482,
-     "label": "Facility: Agassiz Wilderness",
-     "src": "RIDB facility 12783 (rec area Agassiz National Wildlife Refuge)",
-     "where": "inside",
-     "km": 0.0
-    }
-   ]
-  },
-  "US-0371": {
-   "n": "Tamarac National Wildlife Refuge",
-   "st": "MN",
-   "outline": true,
-   "pts": [
-    {
-     "rule": "ridb-recarea-name",
-     "la": 46.957924,
-     "lo": -95.654751,
-     "label": "Facility: Tamarac Wilderness",
-     "src": "RIDB facility 12837 (rec area Tamarac National Wildlife Refuge)",
-     "where": "inside",
-     "km": 0.0
-    }
-   ]
-  },
-  "US-0377": {
-   "n": "Mingo National Wildlife Refuge",
-   "st": "MO",
-   "outline": true,
-   "pts": [
-    {
-     "rule": "ridb-recarea-name",
-     "la": 36.969243,
-     "lo": -90.150115,
-     "label": "Facility: Mingo Wilderness",
-     "src": "RIDB facility 12819 (rec area Mingo National Wildlife Refuge)",
-     "where": "inside",
-     "km": 0.0
-    }
-   ]
-  },
-  "US-0423": {
-   "n": "Chase Lake National Wildlife Refuge",
-   "st": "ND",
-   "outline": true,
-   "pts": [
-    {
-     "rule": "ridb-recarea-name",
-     "la": 47.022661,
-     "lo": -99.461417,
-     "label": "Facility: Chase Lake Wilderness",
-     "src": "RIDB facility 12798 (rec area Chase Lake National Wildlife Refuge)",
-     "where": "inside",
-     "km": 0.0
-    }
-   ]
-  },
-  "US-0435": {
-   "n": "Lostwood National Wildlife Refuge",
-   "st": "ND",
-   "outline": true,
-   "pts": [
-    {
-     "rule": "ridb-recarea-name",
-     "la": 48.641682,
-     "lo": -102.403361,
-     "label": "Facility: Lostwood Wilderness",
-     "src": "RIDB facility 12816 (rec area Lostwood National Wildlife Refuge)",
-     "where": "inside",
-     "km": 0.0
-    }
-   ]
-  },
-  "US-0443": {
-   "n": "Fort Niobrara National Wildlife Refuge",
-   "st": "NE",
-   "outline": true,
-   "pts": [
-    {
-     "rule": "ridb-recarea-name",
-     "la": 42.893222,
-     "lo": -100.476967,
-     "label": "Facility: Fort Niobrara Wilderness",
-     "src": "RIDB facility 12803 (rec area Fort Niobrara National Wildlife Refuge)",
-     "where": "inside",
-     "km": 0.0
-    }
-   ]
-  },
-  "US-0454": {
-   "n": "Great Swamp National Wildlife Refuge",
-   "st": "NJ",
-   "outline": true,
-   "pts": [
-    {
-     "rule": "ridb-recarea-name",
-     "la": 40.719296,
-     "lo": -74.525859,
-     "label": "Facility: Great Swamp National Wildlife Refuge Wilderness",
-     "src": "RIDB facility 12804 (rec area Great Swamp National Wildlife Refuge)",
-     "where": "inside",
-     "km": 0.0
-    }
-   ]
-  },
-  "US-0493": {
-   "n": "Wichita Mountains National Wildlife Refuge",
-   "st": "OK",
-   "outline": true,
-   "pts": [
-    {
-     "rule": "ridb-recarea-name",
-     "la": 34.710644,
-     "lo": -98.623426,
-     "label": "Facility: Wichita Mountains Wilderness",
-     "src": "RIDB facility 12781 (rec area Wichita Mountains Wildlife Refuge)",
-     "where": "inside",
-     "km": 0.0
-    }
-   ]
-  },
-  "US-0518": {
-   "n": "Cape Romain National Wildlife Refuge",
-   "st": "SC",
-   "outline": true,
-   "pts": [
-    {
-     "rule": "ridb-recarea-name",
-     "la": 32.975035,
-     "lo": -79.669316,
-     "label": "Facility: Cape Romain Wilderness (nearby, outside the park line)",
-     "src": "RIDB facility 12795 (rec area Cape Romain National Wildlife Refuge)",
-     "where": "outside",
-     "km": 2.15
     }
    ]
   },
@@ -1993,22 +1608,6 @@
     }
    ]
   },
-  "US-10718": {
-   "n": "Sturgeon River Gorge Wilderness Area",
-   "st": "MI",
-   "outline": true,
-   "pts": [
-    {
-     "rule": "ridb-facility-name",
-     "la": 46.618118,
-     "lo": -88.698634,
-     "label": "Facility: Sturgeon River Gorge Wilderness",
-     "src": "RIDB facility 238242 (rec area Ottawa National Forest)",
-     "where": "inside",
-     "km": 0.0
-    }
-   ]
-  },
   "US-10753": {
    "n": "Woodrat Mountain Paragliding BLM Recreation Management Area",
    "st": "OR",
@@ -2233,22 +1832,6 @@
     }
    ]
   },
-  "US-10926": {
-   "n": "Buffalo Hump BLM WSA Wilderness Area",
-   "st": "WY",
-   "outline": false,
-   "pts": [
-    {
-     "rule": "ridb-facility-name",
-     "la": 42.023085,
-     "lo": -109.316443,
-     "label": "Facility: Buffalo Hump WSA",
-     "src": "RIDB facility 273315",
-     "where": "no outline",
-     "km": 0.04
-    }
-   ]
-  },
   "US-10929": {
    "n": "Cottonwood Creek Trailhead BLM Recreation Management Area",
    "st": "WY",
@@ -2262,134 +1845,6 @@
      "src": "RIDB facility 254047",
      "where": "no outline",
      "km": 0.17
-    }
-   ]
-  },
-  "US-10930": {
-   "n": "Devil's Playground BLM WSA Wilderness Area",
-   "st": "WY",
-   "outline": false,
-   "pts": [
-    {
-     "rule": "ridb-facility-name",
-     "la": 41.17,
-     "lo": -109.74,
-     "label": "Facility: Devils Playground WSA",
-     "src": "RIDB facility 273327",
-     "where": "no outline",
-     "km": 0.0
-    }
-   ]
-  },
-  "US-10932": {
-   "n": "Honeycomb Buttes BLM WSA Wilderness Area",
-   "st": "WY",
-   "outline": false,
-   "pts": [
-    {
-     "rule": "ridb-facility-name",
-     "la": 42.242526,
-     "lo": -108.663244,
-     "label": "Facility: Honeycomb Buttes WSA",
-     "src": "RIDB facility 273316",
-     "where": "no outline",
-     "km": 0.02
-    }
-   ]
-  },
-  "US-10939": {
-   "n": "Red Creek Badlands BLM WSA Wilderness Area",
-   "st": "WY",
-   "outline": false,
-   "pts": [
-    {
-     "rule": "ridb-facility-name",
-     "la": 41.095567,
-     "lo": -109.127567,
-     "label": "Facility: Red Creek Badlands WSA",
-     "src": "RIDB facility 273319",
-     "where": "no outline",
-     "km": 0.04
-    }
-   ]
-  },
-  "US-10940": {
-   "n": "Red Lake BLM WSA Wilderness Area",
-   "st": "WY",
-   "outline": false,
-   "pts": [
-    {
-     "rule": "ridb-facility-name",
-     "la": 41.965214,
-     "lo": -108.449742,
-     "label": "Facility: Red Lake WSA",
-     "src": "RIDB facility 273321",
-     "where": "no outline",
-     "km": 0.02
-    }
-   ]
-  },
-  "US-10941": {
-   "n": "Sand Dunes BLM WSA Wilderness Area",
-   "st": "WY",
-   "outline": false,
-   "pts": [
-    {
-     "rule": "ridb-facility-name",
-     "la": 42.026891,
-     "lo": -109.214538,
-     "label": "Facility: Sand Dunes WSA",
-     "src": "RIDB facility 273322",
-     "where": "no outline",
-     "km": 0.04
-    }
-   ]
-  },
-  "US-10942": {
-   "n": "South Pinnacles BLM WSA Wilderness Area",
-   "st": "WY",
-   "outline": false,
-   "pts": [
-    {
-     "rule": "ridb-facility-name",
-     "la": 42.008479,
-     "lo": -108.723157,
-     "label": "Facility: South Pinnacles WSA",
-     "src": "RIDB facility 273323",
-     "where": "no outline",
-     "km": 0.01
-    }
-   ]
-  },
-  "US-10944": {
-   "n": "Twin Buttes BLM WSA Wilderness Area",
-   "st": "WY",
-   "outline": false,
-   "pts": [
-    {
-     "rule": "ridb-facility-name",
-     "la": 41.196366,
-     "lo": -109.697275,
-     "label": "Facility: Twin Buttes WSA",
-     "src": "RIDB facility 273324",
-     "where": "no outline",
-     "km": 0.02
-    }
-   ]
-  },
-  "US-10945": {
-   "n": "Whitehorse Creek BLM WSA Wilderness Area",
-   "st": "WY",
-   "outline": false,
-   "pts": [
-    {
-     "rule": "ridb-facility-name",
-     "la": 42.27474,
-     "lo": -108.896886,
-     "label": "Facility: Whitehorse Creek WSA",
-     "src": "RIDB facility 273325",
-     "where": "no outline",
-     "km": 0.01
     }
    ]
   },
@@ -2442,22 +1897,6 @@
      "src": "RIDB facility 257233 (rec area Gooseberry Mesa National Recreation Trail)",
      "where": "no outline",
      "km": 0.78
-    }
-   ]
-  },
-  "US-11019": {
-   "n": "Shining Rock Wilderness Area",
-   "st": "NC",
-   "outline": true,
-   "pts": [
-    {
-     "rule": "ridb-facility-name",
-     "la": 35.364699,
-     "lo": -82.816938,
-     "label": "Facility: Big East Fork 357 Shining Rock Wilderness",
-     "src": "RIDB facility 265066 (rec area National Forests in North Carolina)",
-     "where": "edge",
-     "km": 0.03
     }
    ]
   },
@@ -2666,22 +2105,6 @@
      "src": "RIDB facility 256895",
      "where": "no outline",
      "km": 0.03
-    }
-   ]
-  },
-  "US-11271": {
-   "n": "Joyce Kilmer-Slickrock Wilderness Area",
-   "st": "NC",
-   "outline": true,
-   "pts": [
-    {
-     "rule": "ridb-facility-name",
-     "la": 35.3736955,
-     "lo": -83.9776504,
-     "label": "Facility: Joyce Kilmer-Slickrock Wilderness Area",
-     "src": "RIDB facility 266519 (rec area National Forests in North Carolina)",
-     "where": "inside",
-     "km": 0.0
     }
    ]
   },
@@ -3980,22 +3403,6 @@
      "src": "RIDB facility 249999 (rec area Canyon Ferry Lake)",
      "where": "outside",
      "km": 1.55
-    }
-   ]
-  },
-  "US-12695": {
-   "n": "Bull River Wildlife Management Area",
-   "st": "MT",
-   "outline": true,
-   "pts": [
-    {
-     "rule": "ridb-facility-name",
-     "la": 48.1097222,
-     "lo": -115.7813889,
-     "label": "Campground: BULL RIVER GUARD STATION (nearby, outside the park line)",
-     "src": "RIDB facility 234402 (rec area Kootenai National Forest)",
-     "where": "outside",
-     "km": 10.06
     }
    ]
   },
@@ -5546,15 +4953,6 @@
     },
     {
      "rule": "ridb-recarea-name",
-     "la": 44.265881,
-     "lo": -118.397,
-     "label": "Campground: SHORT CREEK GUARD STATION",
-     "src": "RIDB facility 233248 (rec area Malheur National Forest)",
-     "where": "inside",
-     "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
      "la": 44.25659259,
      "lo": -118.7538459,
      "label": "Facility: Buckhorn Meadows Trailhead",
@@ -5740,28 +5138,10 @@
     },
     {
      "rule": "ridb-recarea-name",
-     "la": 44.251023,
-     "lo": -124.04191,
-     "label": "Facility: Cummins Creek Wilderness",
-     "src": "RIDB facility 264609 (rec area Siuslaw National Forest)",
-     "where": "inside",
-     "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
      "la": 44.1884462,
      "lo": -124.114433,
      "label": "Facility: Ocean Beach Day Use",
      "src": "RIDB facility 264617 (rec area Siuslaw National Forest)",
-     "where": "inside",
-     "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 44.179849,
-     "lo": -124.055729,
-     "label": "Facility: Rock Creek Wilderness",
-     "src": "RIDB facility 264623 (rec area Siuslaw National Forest)",
      "where": "inside",
      "km": 0.0
     },
@@ -6615,24 +5995,6 @@
     },
     {
      "rule": "ridb-recarea-name",
-     "la": 39.1408333,
-     "lo": -111.4580556,
-     "label": "Campground: INDIAN CREEK GUARD STATION",
-     "src": "RIDB facility 233167 (rec area Manti-La Sal National Forest)",
-     "where": "inside",
-     "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 39.3122222,
-     "lo": -111.4294444,
-     "label": "Campground: SEELY CREEK GUARD STATION",
-     "src": "RIDB facility 233168 (rec area Manti-La Sal National Forest)",
-     "where": "inside",
-     "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
      "la": 39.1208333,
      "lo": -111.6005556,
      "label": "Campground: TWIN LAKE CAMPGROUND",
@@ -6781,15 +6143,6 @@
      "src": "RIDB facility 247355 (rec area Uinta-Wasatch-Cache National Forest)",
      "where": "inside",
      "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 41.6591667,
-     "lo": -111.6744444,
-     "label": "Campground: BLACKSMITH FORK GUARD STATION",
-     "src": "RIDB facility 251565 (rec area Uinta-Wasatch-Cache National Forest)",
-     "where": "inside",
-     "km": 0.0
     }
    ]
   },
@@ -6876,24 +6229,6 @@
      "lo": -106.024512,
      "label": "Facility: Williams Fork Trailhead",
      "src": "RIDB facility 241286 (rec area Arapaho & Roosevelt National Forests Pawnee NG)",
-     "where": "inside",
-     "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 39.771348,
-     "lo": -105.899088,
-     "label": "Facility: Vasquez Peak Wilderness",
-     "src": "RIDB facility 250786 (rec area Arapaho & Roosevelt National Forests Pawnee NG)",
-     "where": "inside",
-     "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 39.746036,
-     "lo": -105.892867,
-     "label": "Facility: James Peak Wilderness",
-     "src": "RIDB facility 250789 (rec area Arapaho & Roosevelt National Forests Pawnee NG)",
      "where": "inside",
      "km": 0.0
     }
@@ -7701,15 +7036,6 @@
     },
     {
      "rule": "ridb-recarea-name",
-     "la": 40.632431,
-     "lo": -105.483542,
-     "label": "Facility: Cache la Poudre Wilderness",
-     "src": "RIDB facility 250785 (rec area Arapaho & Roosevelt National Forests Pawnee NG)",
-     "where": "inside",
-     "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
      "la": 40.6963011,
      "lo": -105.2730393,
      "label": "Facility: Cache la Poudre North Park Scenic Byway",
@@ -8086,15 +7412,6 @@
    "st": "AR",
    "outline": true,
    "pts": [
-    {
-     "rule": "ridb-recarea-name",
-     "la": 35.8364,
-     "lo": -92.9737667,
-     "label": "Facility: Richland Creek Wilderness",
-     "src": "RIDB facility 241320 (rec area Ozark-St. Francis National Forests)",
-     "where": "inside",
-     "km": 0.0
-    },
     {
      "rule": "ridb-recarea-name",
      "la": 35.510618,
@@ -8840,15 +8157,6 @@
      "lo": -112.38518,
      "label": "Facility: Lynx Lake Recreation Area",
      "src": "RIDB facility 237968 (rec area Prescott National Forest)",
-     "where": "inside",
-     "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 34.637586,
-     "lo": -112.55579,
-     "label": "Facility: Granite Mountain Wilderness",
-     "src": "RIDB facility 237969 (rec area Prescott National Forest)",
      "where": "inside",
      "km": 0.0
     },
@@ -9861,15 +9169,6 @@
     },
     {
      "rule": "ridb-recarea-name",
-     "la": 32.7827,
-     "lo": -116.6489,
-     "label": "Facility: Pine Creek/Hauser Wilderness Area",
-     "src": "RIDB facility 242515 (rec area Cleveland National Forest)",
-     "where": "inside",
-     "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
      "la": 32.9872,
      "lo": -116.6624,
      "label": "Facility: San Diego River Gorge Area",
@@ -10746,15 +10045,6 @@
      "lo": -122.654994,
      "label": "Facility: Bathhouse Trailhead",
      "src": "RIDB facility 242370 (rec area Mendocino National Forest)",
-     "where": "inside",
-     "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 39.526677,
-     "lo": -123.131332,
-     "label": "Facility: Sanhedrin Wilderness",
-     "src": "RIDB facility 242378 (rec area Mendocino National Forest)",
      "where": "inside",
      "km": 0.0
     },
@@ -12036,15 +11326,6 @@
      "src": "RIDB facility 242657 (rec area Sequoia National Forest)",
      "where": "edge",
      "km": 0.08
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 35.912,
-     "lo": -118.207,
-     "label": "Facility: Domeland Wilderness",
-     "src": "RIDB facility 242706 (rec area Sequoia National Forest)",
-     "where": "inside",
-     "km": 0.0
     },
     {
      "rule": "ridb-recarea-name",
@@ -13573,15 +12854,6 @@
     },
     {
      "rule": "ridb-recarea-name",
-     "la": 44.1368611,
-     "lo": -115.3229111,
-     "label": "Campground: WARM SPRINGS GUARD STATION",
-     "src": "RIDB facility 232400 (rec area Boise National Forest)",
-     "where": "inside",
-     "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
      "la": 44.2659306,
      "lo": -115.8800194,
      "label": "Campground: RATTLESNAKE",
@@ -13823,15 +13095,6 @@
     },
     {
      "rule": "ridb-recarea-name",
-     "la": 46.55408092,
-     "lo": -115.43799601,
-     "label": "Facility: Weitas Guard Station",
-     "src": "RIDB facility 240773 (rec area Nez Perce-Clearwater National Forests)",
-     "where": "inside",
-     "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
      "la": 46.114661,
      "lo": -115.205219,
      "label": "Facility: Fog Mountain Trailhead",
@@ -13938,15 +13201,6 @@
      "lo": -116.3866667,
      "label": "Campground: EVERGREEN CAMPGROUND",
      "src": "RIDB facility 234616 (rec area Payette National Forest)",
-     "where": "inside",
-     "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 44.7758333,
-     "lo": -115.9438889,
-     "label": "Campground: PADDY FLAT GUARD STATION",
-     "src": "RIDB facility 250043 (rec area Payette National Forest)",
      "where": "inside",
      "km": 0.0
     },
@@ -14121,15 +13375,6 @@
      "lo": -88.737993,
      "label": "Facility: Simpson Barrens Natural Area",
      "src": "RIDB facility 244072 (rec area Shawnee National Forest)",
-     "where": "inside",
-     "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 37.56333,
-     "lo": -88.6425,
-     "label": "Facility: Burden Fall Wilderness",
-     "src": "RIDB facility 244079 (rec area Shawnee National Forest)",
      "where": "inside",
      "km": 0.0
     },
@@ -16726,15 +15971,6 @@
      "src": "RIDB facility 246553 (rec area Green Mountain & Finger Lakes National Forests)",
      "where": "outside",
      "km": 0.71
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 43.15871,
-     "lo": -73.04051,
-     "label": "Facility: Lye Brook Wilderness",
-     "src": "RIDB facility 246570 (rec area Green Mountain & Finger Lakes National Forests)",
-     "where": "inside",
-     "km": 0.0
     }
    ]
   },
@@ -17304,15 +16540,6 @@
     },
     {
      "rule": "ridb-recarea-name",
-     "la": 46.288521,
-     "lo": -91.140169,
-     "label": "Facility: Porcupine Lake Wilderness",
-     "src": "RIDB facility 249618 (rec area Chequamegon-Nicolet NF)",
-     "where": "inside",
-     "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
      "la": 46.3059,
      "lo": -91.2174,
      "label": "Facility: Lake Owen Recreation Area",
@@ -17535,22 +16762,6 @@
      "src": "RIDB facility 232393 (rec area Green Mountain & Finger Lakes National Forests)",
      "where": "outside",
      "km": 4.2
-    }
-   ]
-  },
-  "US-5573": {
-   "n": "Teanaway State Forest",
-   "st": "WA",
-   "outline": false,
-   "pts": [
-    {
-     "rule": "ridb-facility-name",
-     "la": 47.3597222,
-     "lo": -120.8552778,
-     "label": "Campground: TEANAWAY GUARD STATION",
-     "src": "RIDB facility 234126 (rec area Okanogan-Wenatchee National Forest)",
-     "where": "no outline",
-     "km": 9.57
     }
    ]
   },
@@ -18929,22 +18140,6 @@
     }
    ]
   },
-  "US-6127": {
-   "n": "Savage Run Wilderness Area",
-   "st": "WY",
-   "outline": true,
-   "pts": [
-    {
-     "rule": "ridb-facility-name",
-     "la": 41.21886513,
-     "lo": -106.3608288,
-     "label": "Facility: Savage Run Wilderness (nearby, outside the park line)",
-     "src": "RIDB facility 252222 (rec area Medicine Bow-Routt NFs & Thunder Basin NG)",
-     "where": "outside",
-     "km": 0.15
-    }
-   ]
-  },
   "US-6129": {
    "n": "National Historic Trails Interpretive Center National Historic Site",
    "st": "WY",
@@ -19086,15 +18281,6 @@
      "src": "RIDB facility 272290",
      "where": "no outline",
      "km": 0.02
-    },
-    {
-     "rule": "ridb-facility-name",
-     "la": 42.241381,
-     "lo": -108.851762,
-     "label": "Facility: Oregon Buttes WSA",
-     "src": "RIDB facility 273318",
-     "where": "no outline",
-     "km": 12.7
     }
    ]
   },
@@ -19474,15 +18660,6 @@
      "lo": -114.871023,
      "label": "Facility: Tin Cup Hiker Trailhead",
      "src": "RIDB facility 245146 (rec area Sawtooth National Forest)",
-     "where": "inside",
-     "km": 0.0
-    },
-    {
-     "rule": "ridb-recarea-name",
-     "la": 43.9996,
-     "lo": -115.0659,
-     "label": "Facility: Sawtooth Wilderness",
-     "src": "RIDB facility 245157 (rec area Sawtooth National Forest)",
      "where": "inside",
      "km": 0.0
     },
@@ -20343,15 +19520,6 @@
    "pts": [
     {
      "rule": "ridb-facility-name",
-     "la": 47.9094444,
-     "lo": -113.8352778,
-     "label": "Campground: SWAN GUARD STATION (nearby, outside the park line)",
-     "src": "RIDB facility 233272 (rec area Flathead National Forest)",
-     "where": "outside",
-     "km": 0.29
-    },
-    {
-     "rule": "ridb-facility-name",
      "la": 47.93639,
      "lo": -113.85056,
      "label": "Campground: SWAN LAKE CAMPGROUND (nearby, outside the park line)",
@@ -20733,5 +19901,6 @@
     }
    ]
   }
- }
+ },
+ "ky_camps_note": "Only Houchin Ferry is in the keyed data. LBL self-service camps (10), Fenton and Breaks Interstate are NOT in Recreation.gov (searched the KY / TN / VA facility lists by name), so no keyed point exists for them."
 }
