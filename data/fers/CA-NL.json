@@ -247,6 +247,9 @@
    "checked": "2026-10-29",
    "found": "2026-10-29",
    "id": "CA-0097+CA-4546@area@48.581,-53.822",
+   "info": {
+    "water_pct": 0
+   },
    "kind": "area",
    "lines": {
     "CA-0097": [
@@ -557,7 +560,8 @@
    "lines_read": "2026-10-29",
    "map_dates": {
     "CA-0097": "downloaded 2026-10-29",
-    "CA-4546": "downloaded 2026-10-29"
+    "CA-4546": "downloaded 2026-10-29",
+    "water": "NRCan NHN file 2026-10-29 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
    },
    "names": {
     "CA-0097": "Terra Nova National Park",
@@ -635,7 +639,7 @@
     ]
    ],
    "small": "small overlap: tight fit, check carefully",
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 79
   },
@@ -3045,7 +3049,7 @@
      48.69
     ]
    ],
-   "status": "candidate",
+   "status": "dropped: two park numbers joined to one record by name, pins 20 km apart and not both inside it (a wrong join in the key)",
    "stretches": 3
   },
   {

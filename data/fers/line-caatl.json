@@ -8,14 +8,10 @@
   "CA-NL"
  ],
  "since": "2026-10-29",
- "date": "2026-10-29 04:54 UTC",
+ "date": "2026-10-29 06:09 UTC",
  "verdict": "PART READY FOR CHAT 8",
  "why": [
-  "CA-NB: 505 rows still waiting for a pass (out of time: run the worker again)",
-  "water not checked: CA-NB: 4 rows (the USGS water map / files had no answer there): never READY with one",
-  "CA-NS: 168 rows still waiting for a pass (out of time: run the worker again)",
-  "water not checked: CA-NS: 2 rows (the USGS water map / files had no answer there): never READY with one",
-  "water not checked: CA-NL: 1 rows (the USGS water map / files had no answer there): never READY with one"
+  "water not checked: CA-NB: 2 rows (the USGS water map / files had no answer there): never READY with one"
  ],
  "known_answers": "19/19 on 2026-10-29",
  "missing_check": {
@@ -35,15 +31,15 @@
    "pairs tested": 0
   },
   "pass3": {
-   "agree with the pass before": 10,
+   "agree with the pass before": 0,
    "date": "2026-10-29",
-   "pairs tested": 16
+   "pairs tested": 0
   },
   "pass5": {
    "checked": 7,
    "date": "2026-10-29",
    "pairs tested": 0,
-   "still not checked": 7
+   "still not checked": 2
   }
  },
  "files": {
@@ -54,30 +50,123 @@
  },
  "CA-NB": {
   "rows": 641,
-  "live": 39,
-  "waiting": 505,
+  "live": 24,
+  "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "water not checked": 4
+   "the official outline of New Brunswick #25 Wildlife Managemen": 4,
+   "the official outline of McManus Hill Protected Area could no": 2,
+   "water not checked": 2,
+   "the official outline of New Brunswick #24 Wildlife Managemen": 16,
+   "the official outline of New Brunswick #23 Wildlife Managemen": 11,
+   "the official outline of Black River Protected Area could not": 1,
+   "the official outline of New Brunswick #14 Wildlife Managemen": 9,
+   "the official outline of New Brunswick #8 Wildlife Management": 24,
+   "the official outline of New Brunswick #17 Wildlife Managemen": 13,
+   "the official outline of New Brunswick #11 Wildlife Managemen": 5,
+   "the official outline of New Brunswick #2 Wildlife Management": 10,
+   "the official outline of New Brunswick #7 Wildlife Management": 21,
+   "the official outline of New Brunswick #4 Wildlife Management": 16,
+   "the official outline of New Brunswick #5 Wildlife Management": 2,
+   "the official outline of New Brunswick #12 Wildlife Managemen": 8,
+   "the official outline of New Brunswick #15 Wildlife Managemen": 15,
+   "the official outline of New Brunswick #21 Wildlife Managemen": 6,
+   "the official outline of New Brunswick #16 Wildlife Managemen": 30,
+   "the official outline of New Brunswick #6 Wildlife Management": 5,
+   "the official outline of Spednic Lake Recreation Park, New Br": 1,
+   "the official outline of New Brunswick #10 Wildlife Managemen": 20,
+   "the official outline of Caledonia Gorge Nature Reserve, New": 1,
+   "the official outline of New Brunswick #3 Wildlife Management": 13,
+   "the official outline of New Brunswick #18 Wildlife Managemen": 8,
+   "the official outline of New Brunswick #1 Wildlife Management": 4,
+   "the official outline of New Brunswick #22 Wildlife Managemen": 10,
+   "the official outline of Lepreau River Wildlife Management Ar": 3,
+   "the official outline of Big Bald Mountain Protected Area, Ne": 1,
+   "the official outline of Black River Protected Area, New Brun": 1,
+   "the official outline of New Brunswick #19 Wildlife Managemen": 9,
+   "the official outline of Blueberry Brook Protected Area, New": 2,
+   "the official outline of Brantville Protected Area, New Bruns": 1,
+   "the official outline of Brookvale Protected Area, New Brunsw": 2,
+   "the official outline of Canaan River Wildlife Management Are": 1,
+   "the official outline of East Cloverdale Protected Area, New": 1,
+   "the official outline of Eight Mile Brook Protected Area, New": 1,
+   "the official outline of Hay Brook Protected Area, New Brunsw": 1,
+   "the official outline of New Brunswick #9 Wildlife Management": 2,
+   "the official outline of Lewis Mountain Protected Area, New B": 1,
+   "the official outline of Little Salmon River Protected Area,": 1,
+   "the official outline of Little Southwest Miramichi River Pro": 1,
+   "the official outline of McManus Hill Protected Area, New Bru": 1,
+   "the official outline of Monument Brook Protected Area, North": 2,
+   "the official outline of Monument Brook Protected Area, New B": 1,
+   "the official outline of Mount Denys Protected Area, New Brun": 1,
+   "the official outline of North Lake Protected Area, New Bruns": 1,
+   "the official outline of North Pole Stream Protected Area, Ne": 1,
+   "the official outline of Partridge Valley East Protected Area": 1,
+   "the official outline of Partridge Valley West Protected Area": 1,
+   "the official outline of Patapedia River Protected Area, New": 1,
+   "the official outline of Pokiok Stream Protected Area, New Br": 1,
+   "the official outline of Pollard Brook Protected Area, New Br": 1,
+   "the official outline of New Brunswick #13 Wildlife Managemen": 4,
+   "the official outline of Spednic Lake Protected Natural Area,": 1,
+   "the official outline of Stillwater Brook Protected Area, New": 1,
+   "the official outline of Tamarack Brook Protected Area, New B": 1,
+   "the official outline of North Lake Provincial Park, New Brun": 1,
+   "the official outline of Kings Landing Wildlife Management Ar": 1
   },
-  "dropped": 83,
-  "merged": 10
+  "dropped": 100,
+  "merged": 211
  },
  "water_weak": {
-  "CA-NB": 4,
-  "CA-NS": 2,
-  "CA-NL": 1
+  "CA-NB": 2
  },
  "CA-NS": {
   "rows": 402,
-  "live": 187,
-  "waiting": 168,
+  "live": 163,
+  "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "water not checked": 2
+   "the official outline of Cape Breton Highlands National Park": 1,
+   "the official outline of Kejimkujik National Park, Savary Pro": 1,
+   "the official outline of Kejimkujik National Park, Shelburne": 2,
+   "the official outline of Kejimkujik National Park, Tobeatic W": 1,
+   "the official outline of Kejimkujik National Park, Coldbrook": 1,
+   "the official outline of Kejimkujik National Park, Minard Bro": 1,
+   "the official outline of Baddeck River Wilderness Area could": 2,
+   "the official outline of Pomquet Beach Provincial Park, Monks": 1,
+   "the official outline of Battery Provincial Park could not be": 1,
+   "the official outline of Bayswater Beach Provincial Park coul": 1,
+   "the official outline of Canso Coastal Barrens Wilderness Are": 1,
+   "the official outline of Indian Fields Provincial Park, Tobea": 1,
+   "the official outline of Lake George Provincial Park, Cloud L": 1,
+   "the official outline of Lake George Provincial Park, Northpo": 1,
+   "the official outline of Long Lake Provincial Park, Terence B": 1,
+   "the official outline of Lambs Lake Nature Reserve could not": 1,
+   "the official outline of Queensland Beach Provincial Park, Sh": 2,
+   "the official outline of Queensland Beach Provincial Park, To": 1,
+   "the official outline of Queensland Beach Provincial Park, Co": 1,
+   "the official outline of Salsman Provincial Park, South Panuk": 1,
+   "the official outline of Savary Provincial Park, Tobeatic Wil": 1,
+   "the official outline of Savary Provincial Park, Coldbrook Pr": 1,
+   "the official outline of Tidnish Dock Provincial Park, Tidnis": 1,
+   "the official outline of William E. deGarthe Memorial Provinc": 2,
+   "the official outline of Amherst Point Bird Sanctuary, Moose": 1,
+   "the official outline of Blue Mountain - Birch Cove Lakes Wil": 1,
+   "the official outline of Boggy Lake Wilderness Area, Toadfish": 1,
+   "the official outline of Humes River Wilderness Area, Trout B": 1,
+   "the official outline of Long Lake Nature Reserve, South Panu": 1,
+   "the official outline of Martin Brook Nature Reserve, Tobeati": 1,
+   "the official outline of Medway Lakes Wilderness Area, West B": 1,
+   "the official outline of Old Annapolis Road Nature Reserve, I": 1,
+   "the official outline of Lake-O-Law Provincial Park could not": 1,
+   "the official outline of Shelburne Heritage River Wilderness": 2,
+   "the official outline of Sporting Lake Nature Reserve, Tobeat": 1,
+   "the official outline of The Stillwaters Wilderness Area coul": 1,
+   "the official outline of Tobeatic Wilderness Area, Shelburne": 1,
+   "the official outline of Tusket River Ecological Area Wildern": 1,
+   "the official outline of Coldbrook Provincial Park, Shelburne": 1
   },
-  "dropped": 2,
-  "merged": 43
+  "dropped": 28,
+  "merged": 167
  },
  "CA-PE": {
   "rows": 2,
@@ -93,18 +182,16 @@
   "live": 1,
   "waiting": 0,
   "unfinished": 0,
-  "not_sure": {
-   "water not checked": 1
-  },
-  "dropped": 12,
+  "not_sure": {},
+  "dropped": 13,
   "merged": 3
  },
  "states_ready": [
-  "CA-PE"
+  "CA-NS",
+  "CA-PE",
+  "CA-NL"
  ],
  "states_held": [
-  "CA-NB",
-  "CA-NL",
-  "CA-NS"
+  "CA-NB"
  ]
 }
