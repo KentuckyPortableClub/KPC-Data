@@ -243,19 +243,11 @@ Source file: `data/truth/US-VA.json`
 ## US-7794 Goshen Pass State Natural Area
 ```json
 {
- "cause": "our union: one of our pieces alone matches the agency (double count?)",
+ "cause": "a number 14 parks share from one page (66,000 ac): an agency total, not this park",
  "checked": "2026-10-29",
  "handover": [],
  "n": "Goshen Pass State Natural Area",
- "official": {
-  "acres": 936.0,
-  "as": "936 acre",
-  "clean": false,
-  "line": "e-rare damselfly called the Appalachian jewelwing ( Calopteryx angustipennis ) , and several rare plants. The 936-acre preserve, which encompasses the southwest face of the gorge, was dedicated as a State Natural Area Preserve i",
-  "read": "2026-10-29",
-  "url": "https://www.dcr.virginia.gov/natural-heritage/natural-area-preserves/goshen",
-  "why": "total-looking"
- },
+ "official": null,
  "ours": {
   "acres": 3827,
   "manager": "",
@@ -308,11 +300,11 @@ Source file: `data/truth/US-VA.json`
   "unknown_pieces": 0
  },
  "owner_now": null,
- "pct": 309,
+ "pct": null,
  "same_agency": false,
  "score": 5,
  "t": "State Natural Area",
- "verdict": "off"
+ "verdict": "unsure"
 }
 ```
 

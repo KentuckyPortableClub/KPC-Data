@@ -6,11 +6,11 @@
   "handover_hints": 16,
   "no_page": 0,
   "no_size": 35,
-  "off": 58,
+  "off": 55,
   "ours_unknown": 0,
   "parks": 184,
   "retired": 0,
-  "unsure": 58,
+  "unsure": 61,
   "weak": 5,
   "with_outline": 156
  },
@@ -115,7 +115,7 @@
    },
    "sizes": [],
    "t": "National Historical Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no size on page"
   },
   "US-0019": {
@@ -239,7 +239,7 @@
     }
    ],
    "t": "National Historical Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-0064": {
@@ -420,22 +420,22 @@
     }
    ],
    "t": "National Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-0560": {
-   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+   "cause": "our union: one of our pieces alone matches the agency (double count?)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Back Bay National Wildlife Refuge",
    "official": {
-    "acres": 4589.0,
-    "as": "4,589 acre",
-    "clean": true,
-    "line": "ed on June 6, 1938 in the southeastern corner of the City of Virginia Beach (then Princess Anne County), as a 4,589-acre refuge. The original 1938 Executive Order established Back Bay NWR “….as a refuge and breeding ground for mig",
+    "acres": 9175.0,
+    "as": "9,175 acres",
+    "clean": false,
+    "line": "enhance wildlife habitat in the area immediately surrounding the Back Bay. Since 1988 the Refuge has grown to 9,175 acres, protecting critical habitat for wildlife. A local non-profit organization, the Friends of Back Bay, was inst",
     "read": "2026-10-29",
     "url": "https://www.fws.gov/refuge/back-bay/about-us",
-    "why": "clean total"
+    "why": "total-looking"
    },
    "ours": {
     "acres": 26226,
@@ -518,7 +518,7 @@
      "why": "FWS refuge about page"
     }
    ],
-   "pct": 471,
+   "pct": 186,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -531,11 +531,11 @@
     {
      "acres": 4589.0,
      "as": "4,589 acre",
-     "clean": true,
+     "clean": false,
      "line": "ed on June 6, 1938 in the southeastern corner of the City of Virginia Beach (then Princess Anne County), as a 4,589-acre refuge. The original 1938 Executive Order established Back Bay NWR “….as a refuge and breeding ground for mig",
-     "total_like": true,
+     "total_like": false,
      "url": "https://www.fws.gov/refuge/back-bay/about-us",
-     "why": "clean total"
+     "why": "history"
     },
     {
      "acres": 9175.0,
@@ -548,7 +548,7 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-0561": {
@@ -651,7 +651,7 @@
    },
    "sizes": [],
    "t": "National Wildlife Refuge",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no size on page"
   },
   "US-0562": {
@@ -764,7 +764,7 @@
    },
    "sizes": [],
    "t": "National Wildlife Refuge",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no size on page"
   },
   "US-0563": {
@@ -890,7 +890,7 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-0564": {
@@ -1015,7 +1015,7 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-0565": {
@@ -1099,11 +1099,11 @@
    },
    "sizes": [],
    "t": "National Wildlife Refuge",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no size on page"
   },
   "US-0566": {
-   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+   "cause": "whole park compared (POTA lists it in 2 states: {'US-NC': 82768, 'US-VA': 253119})",
    "checked": "2026-10-29",
    "handover": [
     {
@@ -1118,13 +1118,13 @@
    "n": "Great Dismal Swamp National Wildlife Refuge",
    "note": "whole park compared (POTA lists it in 2 states: {'US-NC': 82768, 'US-VA': 253119})",
    "official": {
-    "acres": 113000.0,
-    "as": "113,000 acres",
+    "acres": 49097.0,
+    "as": "49,097 acres",
     "clean": false,
-    "line": "among a bustling metropolis with a population of nearly 1,000,000 people in the surrounding communities. With 113,000 acres of forested wetlands and over 40 miles of trails, the refuge provides an opportunity for solitude and respite",
+    "line": "ion of this resource began in 1973, when the Union Camp Corporation (a local forest products company) donated 49,097acres to The Nature Conservancy. The Nature Conservancy conveyed the donated land to the federal government, which,",
     "read": "2026-10-29",
     "url": "https://www.fws.gov/refuge/great-dismal-swamp/about-us",
-    "why": "total-looking"
+    "why": "no total words near it"
    },
    "ours": {
     "acres": 335887,
@@ -1199,15 +1199,31 @@
      "status": "ok",
      "url": "https://www.fws.gov/refuge/great-dismal-swamp/about-us",
      "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/great-dismal-swamp/visit-us",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/great-dismal-swamp/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/great/about-us",
+     "why": "FWS refuge about page"
     }
    ],
-   "pct": 197,
+   "pct": 584,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -1243,14 +1259,14 @@
      "as": "113,000 acres",
      "clean": false,
      "line": "among a bustling metropolis with a population of nearly 1,000,000 people in the surrounding communities. With 113,000 acres of forested wetlands and over 40 miles of trails, the refuge provides an opportunity for solitude and respite",
-     "total_like": true,
+     "total_like": false,
      "url": "https://www.fws.gov/refuge/great-dismal-swamp/about-us",
-     "why": "total-looking"
+     "why": "part (a lake, a purchase, a campground…)"
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 8,
-   "verdict": "off"
+   "ver": 9,
+   "verdict": "unsure"
   },
   "US-0567": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
@@ -1357,9 +1373,9 @@
      "as": "4800 acres",
      "clean": false,
      "line": "ap James River NWR was established in 1991 to protect bald eagles and other species of special concern within 4800 acres of forests and wetlands. Management of these lands focus on conserving habitats to benefit and promote health",
-     "total_like": true,
+     "total_like": false,
      "url": "https://www.fws.gov/refuge/james_river/",
-     "why": "total-looking"
+     "why": "history"
     },
     {
      "acres": 4800.0,
@@ -1372,7 +1388,7 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-0569": {
@@ -1490,23 +1506,15 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-0572": {
-   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Rappahannock River Valley National Wildlife Refuge",
-   "official": {
-    "acres": 20000.0,
-    "as": "20,000 acres",
-    "clean": false,
-    "line": "and water spanning Essex, King George, Caroline, Richmond, and Westmoreland counties. Our goal is to protect 20,000 acres of important wildlife habitats along the Rappahannock River and its major tributaries. Our partners and volun",
-    "read": "2026-10-29",
-    "url": "https://www.fws.gov/refuge/rappahannock-river-valley/about-us",
-    "why": "total-looking"
-   },
+   "official": null,
    "ours": {
     "acres": 25158,
     "manager": "",
@@ -1577,6 +1585,11 @@
      "why": "about / history page of the park's site"
     },
     {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/rappahannock-river-valley/visit-us",
+     "why": "about / history page of the park's site"
+    },
+    {
      "other_unit": true,
      "status": "ok",
      "url": "https://www.fws.gov/refuge/rappahannock-river-valley/visit-us/rules-policies",
@@ -1588,13 +1601,12 @@
      "why": "FWS refuge about page"
     }
    ],
-   "pct": 26,
-   "same_agency": false,
-   "score": 6,
+   "pct": null,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -1605,16 +1617,16 @@
      "line": "tract of land for the refuge in 1996. Rappahannock River Valley National Wildlife Refuge's goal is to protect 20,000 acres of wetlands and its associated uplands along the Rappahannock River and its major tributaries. This refuge wa",
      "total_like": false,
      "url": "https://www.fws.gov/refuge/rappahannock_river_valley/",
-     "why": "part (a lake, a purchase, a campground…)"
+     "why": "history"
     },
     {
      "acres": 20000.0,
      "as": "20,000 acres",
      "clean": false,
      "line": "and water spanning Essex, King George, Caroline, Richmond, and Westmoreland counties. Our goal is to protect 20,000 acres of important wildlife habitats along the Rappahannock River and its major tributaries. Our partners and volun",
-     "total_like": true,
+     "total_like": false,
      "url": "https://www.fws.gov/refuge/rappahannock-river-valley/about-us",
-     "why": "total-looking"
+     "why": "history"
     },
     {
      "acres": 4800.0,
@@ -1623,12 +1635,21 @@
      "line": "ge James River NWR was established in 1991 to protect bald eagles and other species of special concern within 4800 acres of forests and wetlands. Management of these lands focus on conserving habitats to benefit and promote health",
      "total_like": false,
      "url": "https://www.fws.gov/refuge/rappahannock-river-valley/about-us",
-     "why": "another park / unit named in the sentence"
+     "why": "history"
+    },
+    {
+     "acres": 4800.0,
+     "as": "4800 acres",
+     "clean": false,
+     "line": "ge James River NWR was established in 1991 to protect bald eagles and other species of special concern within 4800 acres of forests and wetlands. Management of these lands focus on conserving habitats to benefit and promote health",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/rappahannock-river-valley/visit-us",
+     "why": "history"
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 8,
-   "verdict": "off"
+   "ver": 9,
+   "verdict": "unsure"
   },
   "US-0573": {
    "checked": "2026-10-28",
@@ -1691,7 +1712,7 @@
    },
    "sizes": [],
    "t": "National Wildlife Refuge",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no size on page"
   },
   "US-0577": {
@@ -1830,7 +1851,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-0670": {
@@ -1913,7 +1934,7 @@
     }
    ],
    "t": "Memorial Parkway",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-0671": {
@@ -1986,7 +2007,7 @@
    },
    "sizes": [],
    "t": "National Seashore",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no size on page"
   },
   "US-0691": {
@@ -2109,7 +2130,7 @@
     }
    ],
    "t": "Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-0692": {
@@ -2170,7 +2191,7 @@
    },
    "sizes": [],
    "t": "National Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no size on page"
   },
   "US-0707": {
@@ -2278,7 +2299,7 @@
    },
    "sizes": [],
    "t": "National Battlefield",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no size on page"
   },
   "US-0712": {
@@ -2395,7 +2416,7 @@
    },
    "sizes": [],
    "t": "National Battlefield",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no size on page"
   },
   "US-0713": {
@@ -2503,7 +2524,7 @@
    },
    "sizes": [],
    "t": "National Battlefield",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no size on page"
   },
   "US-0717": {
@@ -2564,7 +2585,7 @@
    },
    "sizes": [],
    "t": "National Military Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no size on page"
   },
   "US-0726": {
@@ -2672,7 +2693,7 @@
    },
    "sizes": [],
    "t": "National Historical Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no size on page"
   },
   "US-0730": {
@@ -2775,7 +2796,7 @@
    },
    "sizes": [],
    "t": "National Historical Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no size on page"
   },
   "US-0735": {
@@ -2872,7 +2893,7 @@
    },
    "sizes": [],
    "t": "National Historical Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no size on page"
   },
   "US-0844": {
@@ -2970,7 +2991,7 @@
     }
    ],
    "t": "National Historic Site",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-0905": {
@@ -3086,7 +3107,7 @@
     }
    ],
    "t": "National Monument",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-0929": {
@@ -3173,7 +3194,7 @@
     }
    ],
    "t": "National Monument",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-0935": {
@@ -3255,7 +3276,7 @@
     }
    ],
    "t": "National Monument",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-10015": {
@@ -3320,7 +3341,7 @@
     }
    ],
    "t": "Wildlife Refuge",
-   "ver": 8,
+   "ver": 9,
    "verdict": "agree"
   },
   "US-10507": {
@@ -3330,7 +3351,7 @@
    "ours": null,
    "score": null,
    "t": "National Recreation Trail",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no outline"
   },
   "US-11672": {
@@ -3435,13 +3456,13 @@
      "as": "99 acre",
      "clean": false,
      "line": "icking at the hatchery grounds. We have a hike-walking trail that follows Herring Creek and travels up to the 99-acre Harrison Lake, where you can also enjoy boating (non-motorized) and fishing. Visit Virginia Fishing Regulatio",
-     "total_like": true,
+     "total_like": false,
      "url": "https://www.fws.gov/fish-hatchery/harrison-lake",
-     "why": "total-looking"
+     "why": "history"
     }
    ],
    "t": "National Fish Hatchery",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-11719": {
@@ -3550,7 +3571,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-12716": {
@@ -3650,7 +3671,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-1290": {
@@ -3807,7 +3828,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-1291": {
@@ -3928,7 +3949,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-1292": {
@@ -3997,7 +4018,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no size on page"
   },
   "US-1293": {
@@ -4124,7 +4145,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-1294": {
@@ -4269,7 +4290,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-1295": {
@@ -4413,7 +4434,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-1296": {
@@ -4594,7 +4615,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-1297": {
@@ -4750,7 +4771,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-1298": {
@@ -4895,7 +4916,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-1299": {
@@ -5007,7 +5028,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-1300": {
@@ -5143,7 +5164,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-1301": {
@@ -5270,7 +5291,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-1302": {
@@ -5406,7 +5427,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-1303": {
@@ -5578,7 +5599,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-1304": {
@@ -5690,7 +5711,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-1305": {
@@ -5852,7 +5873,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-1306": {
@@ -6000,7 +6021,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "agree"
   },
   "US-1307": {
@@ -6127,7 +6148,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-1308": {
@@ -6254,7 +6275,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-1309": {
@@ -6371,7 +6392,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-1310": {
@@ -6515,7 +6536,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-1311": {
@@ -6656,7 +6677,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-1312": {
@@ -6830,7 +6851,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-1313": {
@@ -6914,7 +6935,7 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no size on page"
   },
   "US-1314": {
@@ -7036,7 +7057,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-1315": {
@@ -7189,7 +7210,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-1316": {
@@ -7311,7 +7332,7 @@
      "line": "nacks are available at the visitor center. HISTORY The first component of Shenandoah River State Park was the 922-acre Jeni Tract, which was acquired in 1994 as part of a 1992 state bond referendum. In addition to the Jeni tract",
      "total_like": false,
      "url": "https://www.dcr.virginia.gov/state-parks/shenandoah-river",
-     "why": "part (a lake, a purchase, a campground…)"
+     "why": "history"
     },
     {
      "acres": 171.0,
@@ -7360,7 +7381,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-1317": {
@@ -7464,7 +7485,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-1318": {
@@ -7577,7 +7598,7 @@
      "line": "engage visitors and help connect them with farming practices that formed its unique pastoral landscape. This 1,860-acre park has scenic views, woodlands and the rolling pastures of a historic farm that captures the colonial throu",
      "total_like": false,
      "url": "https://www.dcr.virginia.gov/state-parks/sky-meadows",
-     "why": "part (a lake, a purchase, a campground…)"
+     "why": "another park / unit named in the sentence"
     },
     {
      "acres": 1860.0,
@@ -7644,7 +7665,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "agree"
   },
   "US-1319": {
@@ -7780,7 +7801,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-1320": {
@@ -7906,7 +7927,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-1321": {
@@ -8069,7 +8090,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-1322": {
@@ -8199,7 +8220,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-1323": {
@@ -8353,7 +8374,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-1324": {
@@ -8456,7 +8477,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-1325": {
@@ -8568,7 +8589,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-1326": {
@@ -8698,7 +8719,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-2364": {
@@ -8805,7 +8826,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-3378": {
@@ -8914,7 +8935,7 @@
    },
    "sizes": [],
    "t": "National Parkway",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no size on page"
   },
   "US-3972": {
@@ -9056,7 +9077,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-4526": {
@@ -9174,7 +9195,7 @@
     }
    ],
    "t": "National Forest",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-4556": {
@@ -9184,7 +9205,7 @@
    "ours": null,
    "score": null,
    "t": "National Scenic Trail",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no outline"
   },
   "US-4564": {
@@ -9194,7 +9215,7 @@
    "ours": null,
    "score": null,
    "t": "National Scenic Trail",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no outline"
   },
   "US-4567": {
@@ -9204,7 +9225,7 @@
    "ours": null,
    "score": null,
    "t": "National Historic Trail",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no outline"
   },
   "US-4577": {
@@ -9214,7 +9235,7 @@
    "ours": null,
    "score": null,
    "t": "National Historic Trail",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no outline"
   },
   "US-4581": {
@@ -9224,7 +9245,7 @@
    "ours": null,
    "score": null,
    "t": "National Historic Trail",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no outline"
   },
   "US-4582": {
@@ -9234,7 +9255,7 @@
    "ours": null,
    "score": null,
    "t": "National Historic Trail",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no outline"
   },
   "US-5503": {
@@ -9350,7 +9371,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-5506": {
@@ -9447,7 +9468,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-5507": {
@@ -9574,7 +9595,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-5508": {
@@ -9668,7 +9689,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-5509": {
@@ -9756,7 +9777,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-5510": {
@@ -9849,7 +9870,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-5511": {
@@ -9955,7 +9976,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-5512": {
@@ -10043,7 +10064,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-5514": {
@@ -10199,7 +10220,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-5515": {
@@ -10274,7 +10295,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-5516": {
@@ -10371,7 +10392,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-5517": {
@@ -10506,7 +10527,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-5518": {
@@ -10581,7 +10602,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-5519": {
@@ -10665,7 +10686,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-5521": {
@@ -10785,7 +10806,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-5522": {
@@ -10894,7 +10915,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-5523": {
@@ -10991,7 +11012,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-5525": {
@@ -11075,7 +11096,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-5526": {
@@ -11192,7 +11213,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-7636": {
@@ -11302,11 +11323,11 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-7784": {
-   "cause": "a number 13 parks share from one page (66,000 ac): an agency total, not this park",
+   "cause": "a number 14 parks share from one page (66,000 ac): an agency total, not this park",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Bethel Beach State Natural Area",
@@ -11400,11 +11421,11 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-7785": {
-   "cause": "a number 13 parks share from one page (66,000 ac): an agency total, not this park",
+   "cause": "a number 14 parks share from one page (66,000 ac): an agency total, not this park",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Buffalo Mountain State Natural Area",
@@ -11510,11 +11531,11 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-7787": {
-   "cause": "a number 13 parks share from one page (66,000 ac): an agency total, not this park",
+   "cause": "a number 14 parks share from one page (66,000 ac): an agency total, not this park",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Bush Mill Stream State Natural Area",
@@ -11614,11 +11635,11 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-7788": {
-   "cause": "a number 13 parks share from one page (66,000 ac): an agency total, not this park",
+   "cause": "a number 14 parks share from one page (66,000 ac): an agency total, not this park",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Cape Charles State Natural Area",
@@ -11718,11 +11739,11 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-7789": {
-   "cause": "a number 13 parks share from one page (66,000 ac): an agency total, not this park",
+   "cause": "a number 14 parks share from one page (66,000 ac): an agency total, not this park",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Chub Sandhill State Natural Area",
@@ -11837,11 +11858,11 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-7790": {
-   "cause": "a number 13 parks share from one page (66,000 ac): an agency total, not this park",
+   "cause": "a number 14 parks share from one page (66,000 ac): an agency total, not this park",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Cleveland Barrens State Natural Area",
@@ -11956,7 +11977,7 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-7791": {
@@ -12110,7 +12131,7 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-7793": {
@@ -12194,23 +12215,15 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-7794": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
+   "cause": "a number 14 parks share from one page (66,000 ac): an agency total, not this park",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Goshen Pass State Natural Area",
-   "official": {
-    "acres": 936.0,
-    "as": "936 acre",
-    "clean": false,
-    "line": "e-rare damselfly called the Appalachian jewelwing ( Calopteryx angustipennis ) , and several rare plants. The 936-acre preserve, which encompasses the southwest face of the gorge, was dedicated as a State Natural Area Preserve i",
-    "read": "2026-10-29",
-    "url": "https://www.dcr.virginia.gov/natural-heritage/natural-area-preserves/goshen",
-    "why": "total-looking"
-   },
+   "official": null,
    "ours": {
     "acres": 3827,
     "manager": "",
@@ -12271,6 +12284,16 @@
     },
     {
      "status": "ok",
+     "url": "https://www.dcr.virginia.gov/natural-heritage/about",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.dcr.virginia.gov/natural-heritage/mission",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
      "url": "https://www.dcr.virginia.gov/natural-heritage/document/pggoshenpass.pdf",
      "why": "official map (parkinfo-web)"
     },
@@ -12280,7 +12303,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 309,
+   "pct": null,
    "same_agency": false,
    "score": 5,
    "score_parts": {
@@ -12295,8 +12318,17 @@
      "as": "936 acre",
      "clean": false,
      "line": "e-rare damselfly called the Appalachian jewelwing ( Calopteryx angustipennis ) , and several rare plants. The 936-acre preserve, which encompasses the southwest face of the gorge, was dedicated as a State Natural Area Preserve i",
-     "total_like": true,
+     "total_like": false,
      "url": "https://www.dcr.virginia.gov/natural-heritage/natural-area-preserves/goshen",
+     "why": "history"
+    },
+    {
+     "acres": 66000.0,
+     "as": "66,000 acres",
+     "clean": false,
+     "line": "ved from voluntary contributions through a state income tax check-off. Sixty nine preserves encompassing over 66,000 acres now comprise the Virginia Natural Area Preserves System . Natural area conservation does not end with land pr",
+     "total_like": true,
+     "url": "https://www.dcr.virginia.gov/natural-heritage/mission",
      "why": "total-looking"
     },
     {
@@ -12328,11 +12360,11 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 8,
-   "verdict": "off"
+   "ver": 9,
+   "verdict": "unsure"
   },
   "US-7795": {
-   "cause": "a number 13 parks share from one page (66,000 ac): an agency total, not this park",
+   "cause": "a number 14 parks share from one page (66,000 ac): an agency total, not this park",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Grassy Hill State Natural Area",
@@ -12448,7 +12480,7 @@
      "line": "RGINIA Department of Conservation and Recreation’s NATURAL HERITAGE PROGRAM The History of Grassy Hill The 1,295-acre preserve was dedicated in 1999 to protect rare plants and natural communities found on Grassy Hill. The prop",
      "total_like": false,
      "url": "https://www.dcr.virginia.gov/natural-heritage/document/grassyhilltrailguide.pdf",
-     "why": "a map label (no sentence)"
+     "why": "history"
     },
     {
      "acres": 40000.0,
@@ -12470,11 +12502,11 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-7797": {
-   "cause": "a number 13 parks share from one page (66,000 ac): an agency total, not this park",
+   "cause": "a number 14 parks share from one page (66,000 ac): an agency total, not this park",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Hughlett Point State Natural Area",
@@ -12556,7 +12588,7 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-7798": {
@@ -12673,11 +12705,11 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-7799": {
-   "cause": "a number 13 parks share from one page (66,000 ac): an agency total, not this park",
+   "cause": "a number 14 parks share from one page (66,000 ac): an agency total, not this park",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Mutton Hunk Fen State Natural Area",
@@ -12806,11 +12838,11 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-7801": {
-   "cause": "a number 13 parks share from one page (66,000 ac): an agency total, not this park",
+   "cause": "a number 14 parks share from one page (66,000 ac): an agency total, not this park",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Pinnacle State Natural Area",
@@ -12921,11 +12953,11 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-7802": {
-   "cause": "a number 13 parks share from one page (66,000 ac): an agency total, not this park",
+   "cause": "a number 14 parks share from one page (66,000 ac): an agency total, not this park",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Poor Mountain State Natural Area",
@@ -13031,11 +13063,11 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-7803": {
-   "cause": "a number 13 parks share from one page (66,000 ac): an agency total, not this park",
+   "cause": "a number 14 parks share from one page (66,000 ac): an agency total, not this park",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Savage Neck Dunes State Natural Area",
@@ -13143,7 +13175,7 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-7804": {
@@ -13242,7 +13274,7 @@
     }
    ],
    "t": "Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "agree"
   },
   "US-8203": {
@@ -13252,7 +13284,7 @@
    "ours": null,
    "score": null,
    "t": "National Memorial",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no outline"
   },
   "US-8204": {
@@ -13262,7 +13294,7 @@
    "ours": null,
    "score": null,
    "t": "National Battlefield",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no outline"
   },
   "US-9897": {
@@ -13272,7 +13304,7 @@
    "ours": null,
    "score": null,
    "t": "National Historical Site",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no outline"
   },
   "US-9898": {
@@ -13282,7 +13314,7 @@
    "ours": null,
    "score": null,
    "t": "National Historic Trail",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no outline"
   },
   "US-9899": {
@@ -13356,7 +13388,7 @@
     }
    ],
    "t": "National Historical Site",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-9900": {
@@ -13366,7 +13398,7 @@
    "ours": null,
    "score": null,
    "t": "National Historical Site",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no outline"
   },
   "US-9901": {
@@ -13376,7 +13408,7 @@
    "ours": null,
    "score": null,
    "t": "National Historic Trail",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no outline"
   },
   "US-9902": {
@@ -13443,7 +13475,7 @@
     }
    ],
    "t": "National Parkway",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-9903": {
@@ -13496,7 +13528,7 @@
     }
    ],
    "t": "National Recreation Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-9904": {
@@ -13506,7 +13538,7 @@
    "ours": null,
    "score": null,
    "t": "National Recreation Trail",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no outline"
   },
   "US-9905": {
@@ -13516,7 +13548,7 @@
    "ours": null,
    "score": null,
    "t": "National Recreation Trail",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no outline"
   },
   "US-9906": {
@@ -13526,7 +13558,7 @@
    "ours": null,
    "score": null,
    "t": "National Recreation Trail",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no outline"
   },
   "US-9907": {
@@ -13572,7 +13604,7 @@
    },
    "sizes": [],
    "t": "National Recreation Trail",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no size on page"
   },
   "US-9908": {
@@ -13582,7 +13614,7 @@
    "ours": null,
    "score": null,
    "t": "National Recreation Trail",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no outline"
   },
   "US-9909": {
@@ -13592,7 +13624,7 @@
    "ours": null,
    "score": null,
    "t": "National Recreation Trail",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no outline"
   },
   "US-9910": {
@@ -13602,7 +13634,7 @@
    "ours": null,
    "score": null,
    "t": "National Recreation Trail",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no outline"
   },
   "US-9920": {
@@ -13612,7 +13644,7 @@
    "ours": null,
    "score": null,
    "t": "National Recreation Trail",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no outline"
   },
   "US-9922": {
@@ -13622,7 +13654,7 @@
    "ours": null,
    "score": null,
    "t": "National Recreation Trail",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no outline"
   },
   "US-9923": {
@@ -13632,7 +13664,7 @@
    "ours": null,
    "score": null,
    "t": "National Recreation Trail",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no outline"
   },
   "US-9925": {
@@ -13642,7 +13674,7 @@
    "ours": null,
    "score": null,
    "t": "National Recreation Trail",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no outline"
   },
   "US-9926": {
@@ -13783,19 +13815,19 @@
     }
    ],
    "t": "State Forest",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-9927": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 2,531 acres, no total words near it)",
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 800 acres, no total words near it)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Charlotte State Forest",
    "official": {
-    "acres": 2531.0,
-    "as": "2,531 acres",
+    "acres": 800.0,
+    "as": "800 acres",
     "clean": false,
-    "line": "roperties of Stanley Land and Lumber were purchased in 2019 by The Conservation Fund, and in 2020, a portion (2,531 acres) of the properties were sold to the Commonwealth of Virginia &#x2013; Department of Forestry for what would b",
+    "line": "ake the forest an exceptional forest for public use, wildlife, research, and timber production. Approximately 800 acres of forested wetland provide unparalleled waterfowl habitat and its five miles of Roanoke and Wards Fork Creek",
     "read": "2026-10-29",
     "url": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/charlotte-state-forest/",
     "why": "no total words near it"
@@ -13865,7 +13897,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 777,
+   "pct": 2674,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -13945,23 +13977,23 @@
      "line": "roperties of Stanley Land and Lumber were purchased in 2019 by The Conservation Fund, and in 2020, a portion (2,531 acres) of the properties were sold to the Commonwealth of Virginia &#x2013; Department of Forestry for what would b",
      "total_like": false,
      "url": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/charlotte-state-forest/",
-     "why": "no total words near it"
+     "why": "history"
     }
    ],
    "t": "State Forest",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-9928": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 85.736 acres, no total words near it)",
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 44.171 acres, no total words near it)",
    "checked": "2026-10-29",
    "handover": [],
    "n": "Devil's Backbone State Forest",
    "official": {
-    "acres": 85.7,
-    "as": "85.736 acres",
+    "acres": 44.2,
+    "as": "44.171 acres",
     "clean": false,
-    "line": "Bernice I. Hoffman deeded by gift 537.048 acres to the Virginia Department of Forestry between 1995 and 2013. 85.736 acres was purchased from the Hoffman Estate in 2016. Mrs. Judith Dyke by conveyance of title gifted 44.171 acres in",
+    "line": "3. 85.736 acres was purchased from the Hoffman Estate in 2016. Mrs. Judith Dyke by conveyance of title gifted 44.171 acres in 2002. An additional 26.627 acres was acquired through quitclaim deed in 2008. Forest Management Forest Man",
     "read": "2026-10-29",
     "url": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/devils-backbone/",
     "why": "no total words near it"
@@ -14036,7 +14068,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 2368,
+   "pct": 4685,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -14071,7 +14103,7 @@
      "line": "Bernice I. Hoffman deeded by gift 537.048 acres to the Virginia Department of Forestry between 1995 and 2013. 85.736 acres was purchased from the Hoffman Estate in 2016. Mrs. Judith Dyke by conveyance of title gifted 44.171 acres in",
      "total_like": false,
      "url": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/devils-backbone/",
-     "why": "no total words near it"
+     "why": "history"
     },
     {
      "acres": 44.2,
@@ -14089,7 +14121,7 @@
      "line": "he Hoffman Estate in 2016. Mrs. Judith Dyke by conveyance of title gifted 44.171 acres in 2002. An additional 26.627 acres was acquired through quitclaim deed in 2008. Forest Management Forest Management Management objectives for th",
      "total_like": false,
      "url": "https://dof.virginia.gov/education-and-recreation/state-forests/virginia-state-forests/devils-backbone/",
-     "why": "no total words near it"
+     "why": "history"
     },
     {
      "acres": 706.0,
@@ -14102,7 +14134,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-9929": {
@@ -14195,7 +14227,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-9930": {
@@ -14279,7 +14311,7 @@
     }
    ],
    "t": "State Forest",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-9931": {
@@ -14289,11 +14321,11 @@
    "ours": null,
    "score": null,
    "t": "State Historic Site",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no outline"
   },
   "US-9932": {
-   "cause": "a number 13 parks share from one page (66,000 ac): an agency total, not this park",
+   "cause": "a number 14 parks share from one page (66,000 ac): an agency total, not this park",
    "checked": "2026-10-29",
    "handover": [],
    "n": "The Channels State Natural Area",
@@ -14392,7 +14424,7 @@
     }
    ],
    "t": "State Natural Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-9933": {
@@ -14402,7 +14434,7 @@
    "ours": null,
    "score": null,
    "t": "State Trail",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no outline"
   },
   "US-9934": {
@@ -14412,7 +14444,7 @@
    "ours": null,
    "score": null,
    "t": "State Trail",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no outline"
   },
   "US-9935": {
@@ -14422,7 +14454,7 @@
    "ours": null,
    "score": null,
    "t": "State Trail",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no outline"
   },
   "US-9936": {
@@ -14553,7 +14585,7 @@
     }
    ],
    "t": "State Park",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-9937": {
@@ -14618,7 +14650,7 @@
     }
    ],
    "t": "BLM Special Recreation Management Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "agree"
   },
   "US-9938": {
@@ -14687,7 +14719,7 @@
     }
    ],
    "t": "Wilderness Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-9939": {
@@ -14756,7 +14788,7 @@
     }
    ],
    "t": "Wilderness Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-9940": {
@@ -14836,7 +14868,7 @@
     }
    ],
    "t": "Wilderness Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-9941": {
@@ -14910,7 +14942,7 @@
     }
    ],
    "t": "Wilderness Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-9942": {
@@ -14978,7 +15010,7 @@
     }
    ],
    "t": "Wilderness Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-9943": {
@@ -15041,7 +15073,7 @@
     }
    ],
    "t": "Wilderness Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-9944": {
@@ -15110,7 +15142,7 @@
     }
    ],
    "t": "Wilderness Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-9945": {
@@ -15179,7 +15211,7 @@
     }
    ],
    "t": "Wilderness Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-9946": {
@@ -15248,7 +15280,7 @@
     }
    ],
    "t": "Wilderness Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-9947": {
@@ -15296,7 +15328,7 @@
    },
    "sizes": [],
    "t": "Wilderness Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no size on page"
   },
   "US-9948": {
@@ -15349,7 +15381,7 @@
    },
    "sizes": [],
    "t": "Wilderness Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no size on page"
   },
   "US-9949": {
@@ -15402,7 +15434,7 @@
    },
    "sizes": [],
    "t": "Wilderness Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no size on page"
   },
   "US-9950": {
@@ -15455,7 +15487,7 @@
    },
    "sizes": [],
    "t": "Wilderness Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no size on page"
   },
   "US-9951": {
@@ -15508,7 +15540,7 @@
    },
    "sizes": [],
    "t": "Wilderness Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no size on page"
   },
   "US-9952": {
@@ -15556,7 +15588,7 @@
    },
    "sizes": [],
    "t": "Wilderness Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no size on page"
   },
   "US-9953": {
@@ -15604,7 +15636,7 @@
    },
    "sizes": [],
    "t": "Wilderness Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no size on page"
   },
   "US-9954": {
@@ -15652,7 +15684,7 @@
    },
    "sizes": [],
    "t": "Wilderness Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no size on page"
   },
   "US-9955": {
@@ -15700,7 +15732,7 @@
    },
    "sizes": [],
    "t": "Wilderness Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no size on page"
   },
   "US-9956": {
@@ -15748,7 +15780,7 @@
    },
    "sizes": [],
    "t": "Wilderness Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no size on page"
   },
   "US-9957": {
@@ -15887,7 +15919,7 @@
     }
    ],
    "t": "Wilderness Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-9958": {
@@ -15941,7 +15973,7 @@
    },
    "sizes": [],
    "t": "Wilderness Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no size on page"
   },
   "US-9959": {
@@ -15989,7 +16021,7 @@
    },
    "sizes": [],
    "t": "Wilderness Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no size on page"
   },
   "US-9960": {
@@ -16037,7 +16069,7 @@
    },
    "sizes": [],
    "t": "Wilderness Area",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no size on page"
   },
   "US-9961": {
@@ -16047,7 +16079,7 @@
    "ours": null,
    "score": null,
    "t": "Wildlife Reserve",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no outline"
   },
   "US-9966": {
@@ -16134,7 +16166,7 @@
     }
    ],
    "t": "State Fish Hatchery",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-9967": {
@@ -16221,7 +16253,7 @@
     }
    ],
    "t": "State Fish Hatchery",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-9968": {
@@ -16314,7 +16346,7 @@
     }
    ],
    "t": "State Fish Hatchery",
-   "ver": 8,
+   "ver": 9,
    "verdict": "off"
   },
   "US-9969": {
@@ -16372,7 +16404,7 @@
    },
    "sizes": [],
    "t": "State Fish Hatchery",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no size on page"
   },
   "US-9970": {
@@ -16448,7 +16480,7 @@
    },
    "sizes": [],
    "t": "State Fish Hatchery",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no size on page"
   },
   "US-9971": {
@@ -16506,7 +16538,7 @@
    },
    "sizes": [],
    "t": "State Fish Hatchery",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no size on page"
   },
   "US-9972": {
@@ -16587,7 +16619,7 @@
     }
    ],
    "t": "State Fish Hatchery",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-9973": {
@@ -16665,7 +16697,7 @@
     }
    ],
    "t": "State Fish Hatchery",
-   "ver": 8,
+   "ver": 9,
    "verdict": "unsure"
   },
   "US-9974": {
@@ -16723,7 +16755,7 @@
    },
    "sizes": [],
    "t": "State Fish Hatchery",
-   "ver": 8,
+   "ver": 9,
    "verdict": "no size on page"
   }
  },
