@@ -1067,11 +1067,11 @@
     "US-11648": "Fillmore Wildlife Management Area",
     "US-4396": "Fishlake National Forest"
    },
-   "what": "water map weak here (fix later: a better water source)",
+   "what": "more than one owner on the patch (all public): live, look later",
    "kind": "area",
    "size": "93.2 ac",
    "sort": 93.2,
-   "reason": "water not checked (the USGS water map did not answer): run pass 5 \u00b7 ['FED:USFS', 'STATE']",
+   "reason": "candidate \u00b7 ['FED:USFS', 'STATE']",
    "id": "US-11648+US-4396@area@39.156,-112.184",
    "sources": {
     "US-11648": "downloaded 2026-10-29",
@@ -2770,7 +2770,8 @@
    "id": "US-0895+US-6028@area@37.445,-113.115",
    "sources": {
     "US-0895": "downloaded 2026-10-29",
-    "US-6028": "downloaded 2026-10-29"
+    "US-6028": "downloaded 2026-10-29",
+    "USGS water": "saved copy of the USGS map, read 2026-10-29"
    },
    "checked": "2026-10-29"
   },
