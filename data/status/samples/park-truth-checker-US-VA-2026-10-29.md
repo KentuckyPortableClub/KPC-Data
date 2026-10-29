@@ -104,6 +104,7 @@ Source file: `data/truth/US-VA.json`
   "clean": true,
   "line": "otected as wilderness, the highest form of protection for our public lands. Shenandoah National Park contains 79,579 acres of congressionally designated wilderness, nearly 40% of the park’s acreage. This makes the Shenandoah Wildern",
   "read": "2026-10-29",
+  "sent": "Shenandoah National Park contains 79,579 acres of congressionally designated wilderness, nearly 40% of the park’s acreage.",
   "url": "https://www.nps.gov/shen/learn/wilderness.htm",
   "why": "clean total"
  },
@@ -321,6 +322,7 @@ Source file: `data/truth/US-VA.json`
   "clean": false,
   "line": "ane at Site 17, wooded areas between C&O Canal and Lock 10 parking lot, north to Lock 14, and delineated work Area 2 from Rock Run culvert to Potomac River required to address the ongoing safety concerns from DC Water emergency",
   "read": "2026-10-29",
+  "sent": "Record of Determination for Temporary Closure of the Clara Barton Parkway Right Lane at Site 17, wooded areas between C&O Canal and Lock 10 parking lot, north to Lock 14, and delineated work Area 2 from Rock Run culvert to Potomac River required to address the ongoing safety concerns from DC Water e",
   "url": "https://www.nps.gov/gwmp/learn/management/lawsandpolicies.htm",
   "why": "no total words near it"
  },
@@ -361,6 +363,7 @@ Source file: `data/truth/US-VA.json`
   "clean": true,
   "line": "in Smyth County Virginia, 8 miles south of Marion near the community of Thomas Bridge. The property comprises 147 acres of land, of which only 35 acres have been developed. The South Fork of the Holston River that flows through t",
   "read": "2026-10-29",
+  "sent": "The property comprises 147 acres of land, of which only 35 acres have been developed.",
   "url": "https://dwr.virginia.gov/fishing/fish-stocking/state-hatcheries/buller-fish-hatchery/",
   "why": "clean total"
  },
@@ -571,6 +574,7 @@ Source file: `data/truth/US-VA.json`
   "clean": false,
   "line": "AUNDRY None at this park. ENVIRONMENTAL EDUCATION CENTER Under development. SPECIAL FEATURES Taskinas Creek's 525-acre watershed is one of four sites along the York River designated as a Chesapeake Bay National Estuarine Researc",
   "read": "2026-10-29",
+  "sent": "Taskinas Creek's 525-acre watershed is one of four sites along the York River designated as a Chesapeake Bay National Estuarine Research Reserve.",
   "url": "https://www.dcr.virginia.gov/state-parks/york-river",
   "why": "total-looking"
  },
