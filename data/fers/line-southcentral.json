@@ -10,7 +10,7 @@
   "US-NE"
  ],
  "since": "2026-10-28",
- "date": "2026-10-29 10:13 UTC",
+ "date": "2026-10-29 11:37 UTC",
  "verdict": "PART READY FOR CHAT 8",
  "why": [
   "US-NE: 1 live 'same land' rows with pins over 30 km apart (a wrong join in the key): US-2621+US-4015@same land@40.992,-96.206"
@@ -19,7 +19,7 @@
  "missing_check": {
   "FOUND": 120,
   "DROPPED": 206,
-  "NEVER LOOKED AT": 9112
+  "NEVER LOOKED AT": 9097
  },
  "report": {
   "pass1": {
@@ -33,9 +33,9 @@
    "pairs tested": 157
   },
   "pass3": {
-   "agree with the pass before": 170,
+   "agree with the pass before": 0,
    "date": "2026-10-29",
-   "pairs tested": 75
+   "pairs tested": 0
   },
   "pass5": {
    "checked": 78,
@@ -113,19 +113,18 @@
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "the ownership map shows more than one owner across the spot": 1,
    "no public owner on the ownership map": 1
   },
   "dropped": 9,
-  "merged": 28
+  "merged": 29
  },
  "US-NE": {
   "rows": 51,
-  "live": 17,
+  "live": 16,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {},
-  "dropped": 7,
+  "dropped": 8,
   "merged": 27
  },
  "states_ready": [
