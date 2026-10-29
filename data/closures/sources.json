@@ -123,5 +123,31 @@
     "North River"
    ]
   }
+ },
+ "hunt_plugs_about": "ONE HUNT PLUG PER STATE (Brandon Oct 28 9:00 PM: 'that won't work for every state'). A plug says where that state prints its per-area hunt dates and how to read them. kind 'quota-table-pdf' = a guide table (one row per area: number, area, dates) + the area's OWN page sentence that says it closes during the quota hunt (Fable Oct 29): table dates + closing sentence = a closure; a row whose area page has no closing sentence = a note (the area stays open). A state with NO plug gets NO invented closures: its cards show the state's hunting seasons + 'check <agency> for area closures' (fallback). New states come from chat 8's KPC_HuntClosureSources_desk.md; nothing new is shown without Brandon's GO.",
+ "hunt_plugs": {
+  "US-KY": {
+   "kind": "quota-table-pdf",
+   "agency": "Kentucky Fish and Wildlife",
+   "url": "https://www.fw.ky.gov/Hunt/Documents/HuntingGuideQuotaHunts.pdf",
+   "people_page": "https://fw.ky.gov/Hunt/Pages/Quota-Hunts.aspx",
+   "table": "2026-27 DEER QUOTA HUNT CHOICES",
+   "season": "2026-27",
+   "row_rx": "(?m)^\\s*(?P<n>\\d{1,2})\\s+(?P<name>[A-Z][^\\n]{2,90}?)\\s+(?P<dates>(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sept?|Oct|Nov|Dec)\\.?\\s*\\d{1,2}(?:\\s*[-–]\\s*(?:(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sept?|Oct|Nov|Dec)\\.?\\s*)?\\d{1,2})?)\\b",
+   "what": "deer quota hunt",
+   "closing_rx": "(?:\\b(?:area|wma|property|portion|unit|tract|public|everyone|all (?:other )?(?:users|use|access))\\b.{0,60}\\bclos\\w*.{0,120}\\bquota hunts?\\b|^\\s*(?:the area is |is )?closed (?:during|for).{0,40}\\bquota hunts?\\b|\\bclos\\w* to all access\\b.{0,120}\\bquota\\b|\\bclosed during \\(and day before\\).{0,40}\\bquota hunt)",
+   "season_only_rx": "\\bseasons?\\b.{0,40}\\bclosed\\b.{0,60}\\bquota hunts?\\b|\\bclosed to .{0,40}\\bseasons?\\b.{0,60}\\bquota hunts?\\b",
+   "area_pages": "KPC-Links data/ky-hunting.json wma",
+   "extra_pages": {
+    "US-4687": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=26",
+    "US-3831": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9067"
+   },
+   "gate_also": {
+    "US-11181": [
+     "US-4484"
+    ]
+   },
+   "grey_area": "G-H1 (for Brandon / chat 8): a WMA page that only says a deer SEASON is closed during the quota hunt ('Closed to archery/crossbow deer season during department-administered quota hunts') is filed as a NOTE (the area stays open), not 'closed to everyone'. The Oct 25 hand list files those WMAs as closed to everyone: rule which is right."
+  }
  }
 }

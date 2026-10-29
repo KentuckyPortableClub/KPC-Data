@@ -652,6 +652,7 @@ def read(url, pdf=False):
     html = body.decode('utf-8', 'replace')
     if len(LAST_HTML) > 8: LAST_HTML.clear()
     LAST_HTML[url] = html
+    if 'Public_Lands_Search' in url or url in PLUG_PAGES: AREA_TXT[url] = page_text(html)[:30000]   # the hunt plug reads these again
     return True, 'html', html, 'ok'
 
 
@@ -1090,7 +1091,100 @@ def sources_for(area):
     for x in S:
         if x[2] and x[2] in firsts: continue
         firsts[x[2] or x[0]] = x
-    return list(firsts.values())
+    out = list(firsts.values())
+    pl = plug_for(area)
+    if pl and pl.get('url'): out.append((f'{area.lower()}-hunt-plug', pl.get('agency') or 'state agency', pl['url'], 'feed', 'quota-plug', 'state', [], []))   # ONE HUNT PLUG PER STATE
+    return out
+
+
+AREA_TXT = {}; PLUG_PAGES = set(); PLUG_LOG = {}
+TYPEW = [(r'\bwmas?\b|\bwildlife management areas?\b', 'Wildlife Management Area'), (r'\bstate forests?\b', 'State Forest'),
+         (r'\bstate (?:resort |nature )?parks?\b', 'State Park'), (r'\bstate nature preserves?\b', 'State Nature Preserve'), (r'\b(?:nwr|national wildlife refuge)\b', 'National Wildlife Refuge')]
+
+
+def _lw(s): return str(s or '').lower()
+
+
+def plug_for(area):
+    return ((load(OUT / 'sources.json', {}) or load('data/closures/sources.json', {})).get('hunt_plugs') or {}).get(area)
+
+
+def plug_refs(name, parks):
+    """'Kleber and Rich WMAs #1' -> the parks 'John A. Kleber WMA' + 'Dr. James R. Rich WMA'; 'Big Rivers WMA & State Forest #2' -> both;
+    a part with no type word takes the type of the part after it. A part must match exactly ONE park of that type, else it is listed unmatched."""
+    n = re.sub(r'#\s*\d+|\bmobility[- ]impaired\*?|\byouth(?: mentor)?\b|\*', ' ', name, flags=re.I)
+    parts = [x.strip(' -') for x in re.split(r'\s+(?:&|and)\s+|/', n) if x.strip(' -')]
+    typed = []
+    for i, ptx in enumerate(parts):
+        t = next((nm for rx, nm in TYPEW if re.search(rx, ptx, re.I)), None)
+        core_ = ptx
+        for rx, _ in TYPEW: core_ = re.sub(rx, ' ', core_, flags=re.I)
+        typed.append([' '.join(core_.split()), t])
+    for i in range(len(typed) - 1, -1, -1):                 # 'Kleber and Rich WMAs': Kleber takes WMA from the part after it
+        if not typed[i][1] and i + 1 < len(typed): typed[i][1] = typed[i + 1][1]
+    for i in range(len(typed)):                              # 'Big Rivers WMA & State Forest': the bare 'State Forest' takes the name before it
+        if not typed[i][0] and i > 0: typed[i][0] = typed[i - 1][0]
+    refs, miss = [], []
+    for core_, t in typed:
+        if not core_ or not t: miss.append(f'{core_ or "?"} ({t or "no type"})'); continue
+        ws = [w for w in re.findall(r"[a-z0-9']+", _lw(core_)) if len(w) > 1]
+        hits = [r for r, v in parks.items() if (t.lower() in _lw(v[0]) or (t == 'State Park' and 'state resort park' in _lw(v[0])))
+                and all(re.search(r'\b' + re.escape(w) + r'\b', _lw(v[0])) for w in ws)]
+        if len(hits) == 1: refs.append(hits[0])
+        else: miss.append(f'{core_} {t}' + (f' ({len(hits)} parks)' if hits else ''))
+    return refs, miss
+
+
+def src_quota_plug(area, pl, parks):
+    """ONE HUNT PLUG PER STATE, kind 'quota-table-pdf' (Fable, Oct 29): the guide's table gives the DATES, the area's own page gives
+    the RULE. Table row + a closing sentence on the area page = a hunt closure ('closed to everyone except drawn hunters'); a row
+    whose page has no closing sentence = a note (the area stays open). Never a date the guide does not print."""
+    if pl.get('kind') != 'quota-table-pdf': raise RuntimeError(f"hunt plug kind {pl.get('kind')!r} not built yet")
+    st, hd, body, final = M.get(safe_url(pl['url']))
+    STAT['requests'] += 1
+    if st not in (200, 206): raise RuntimeError(f'HTTP {st}' if isinstance(st, int) else str(st))
+    txt = pdf_text(body, 40)
+    if pl.get('table') and pl['table'].lower() in txt.lower(): txt = txt[txt.lower().index(pl['table'].lower()):]
+    pages = {}
+    if 'ky-hunting.json' in str(pl.get('area_pages') or ''):
+        for ref, v in ((load(LINKS / 'data' / 'ky-hunting.json', {}) or {}).get('wma') or {}).items():
+            if v.get('link'): pages[ref] = safe_url(v['link'])
+    for ref, u in (pl.get('extra_pages') or {}).items(): pages[ref] = safe_url(u)
+    PLUG_PAGES.update(pages.values())
+    log = PLUG_LOG[area] = {'rows': 0, 'closures': 0, 'notes': 0, 'unmatched': [], 'no_page': [], 'evidence': {}}
+    rows = []
+    close_rx = re.compile(pl.get('closing_rx') or r'$^', re.I); season_rx = re.compile(pl.get('season_only_rx') or r'$^', re.I)
+    for m in re.finditer(pl['row_rx'], txt):
+        log['rows'] += 1
+        name, dates = ' '.join(m.group('name').split()), ' '.join(m.group('dates').split())
+        refs, miss = plug_refs(name, parks)
+        log['unmatched'] += [f"#{m.group('n')} {x}" for x in miss]
+        frm, to, clear = parse_dates(dates, None, SEASON_YEAR, season=True)
+        if not frm: continue
+        for ref in refs:
+            u = pages.get(ref)
+            if not u: log['no_page'].append(f"#{m.group('n')} {ref}"); continue
+            ptxt = AREA_TXT.get(u)
+            if ptxt is None and not late():
+                ok, k, h, s_ = read(u); ptxt = AREA_TXT.get(u) or (page_text(h) if ok and k == 'html' else '')
+            sents = split_sentences(ptxt or '')
+            close = next((s for s in sents if close_rx.search(s) and not season_rx.search(s)), '')
+            season = next((s for s in sents if season_rx.search(s)), '')
+            f2 = frm - dt.timedelta(days=1) if close and re.search(r'day before', close, re.I) else frm
+            if close:
+                sent = f"{dates}: closed to everyone except drawn hunters (and one helper each) for the {pl.get('what') or 'quota hunt'} ({name}, hunt #{m.group('n')}; the area page: \"{close[:150]}\")"
+                cl = {'from': f2, 'to': to, 'dates_clear': clear, 'flags': {'emergency': False, 'longterm': False, 'annually': False}, 'lang': 'en', 'class': 'hunt', 'what': 'closed to non-hunters', 'hunt_item': True}
+                log['closures'] += 1
+            else:
+                sent = f"{dates}: {pl.get('what') or 'quota hunt'} for drawn hunters ({name}, hunt #{m.group('n')}); the area page does not say the area closes" + (f" (it says: \"{season[:120]}\")" if season else '')
+                cl = {'from': frm, 'to': to, 'dates_clear': clear, 'flags': {'emergency': False, 'longterm': False, 'annually': False}, 'lang': 'en', 'class': 'note', 'note_kind': 'season', 'what': 'quota hunt dates (the area stays open)'}
+                log['notes'] += 1
+            log['evidence'][f"#{m.group('n')} {ref}"] = (close or season or 'no quota sentence on the area page')[:160]
+            rows.append({'name': None, 'names': [name], 'head': name, 'refs': [ref], 'home': [], 'title': f"{name}: {pl.get('what') or 'quota hunt'}", 'text': sent, 'sent': sent,
+                         'end': None, 'at': None, 'link': pl.get('people_page') or pl['url'], 'date': None, 'year': SEASON_YEAR, 'hunt_page': True, 'plug_cl': cl})
+    notice(f"{area} HUNT PLUG COUNT: guide rows read {log['rows']}, closures made {log['closures']}, notes {log['notes']}, unmatched {len(log['unmatched'])}, no area page {len(log['no_page'])}")
+    if not log['rows']: raise RuntimeError('the guide table was not found (layout changed?): last items kept')
+    return rows
 
 
 def rows_of(sid, agency, url, kind, how, refs, area, parks, home=None):
@@ -1102,6 +1196,7 @@ def rows_of(sid, agency, url, kind, how, refs, area, parks, home=None):
     if how == 'fs-alerts': return src_fs_alerts(url, refs, home)
     if how == 'links': return src_links(url, refs)
     if how == 'hunt-page': return src_page(url, refs, home=home, hunt=True)
+    if how == 'quota-plug': return src_quota_plug(area, plug_for(area) or {}, parks)
     if how == 'fws':                                                        # the refuge HOME page carries the alerts banner; '/visit-us' is often 404
         home_u = re.sub(r'/visit-us/?$', '', url)
         rows = src_page(home_u, refs, pdfs=False, home=home)
@@ -1352,7 +1447,7 @@ def process_area(K, area, state, review):
             got = 0
             for sent in sents:
                 STAT['sentences'] += 1
-                cl = classify(sent, ctx)
+                cl = dict(r['plug_cl']) if r.get('plug_cl') else classify(sent, ctx)   # a hunt-plug row is already judged (table dates + area page rule)
                 if cl is None: continue
                 if cl.get('skip'): unreadable.append({'src': sid, 'why': cl['skip'], 'sent': sent[:160]}); STAT['unreadable'] += 1; continue
                 if part and cl['class'] in ('whole', 'hunt') and not cl.get('hunt_item') and not cl.get('what', '').lower().startswith(part.lower()[:4]): cl = {**cl, 'class': 'part', 'what': part}
@@ -1411,10 +1506,19 @@ def process_area(K, area, state, review):
             items += [it for it in prev_items.values() if it['src'] == sid]
             srcs[sid] = {**(prev_src.get(sid) or {}), 'ok': (prev_src.get(sid) or {}).get('ok', False), 'why': 'not reached this run (out of time)'}
     items = drop_title_twins(merge_items(items))
+    plugd = [(it['ref'], it.get('from')) for it in items if str(it.get('src', '')).endswith('-hunt-plug') and it.get('class') == 'hunt' and it.get('from')]
+    def _twin(it):
+        if str(it.get('src', '')).endswith('-hunt-plug') or it.get('class') != 'hunt' or not it.get('from'): return False
+        return any(r == it['ref'] and abs((dt.date.fromisoformat(f) - dt.date.fromisoformat(it['from'])).days) <= 1 for r, f in plugd)
+    items = [it for it in items if not _twin(it)]   # one hunt closure per park and date: the plug's (table dates) wins
     banners = mass_banners(items, area)
     D = {'area': area, 'read': NOW, 'ver': VER, 'about': 'Closures super-bot (RULE SHEET D). details = the agency\'s own sentence. Nothing here is on a card until Brandon\'s GO (CL-5).',
          'sources': srcs, 'items': sorted(items, key=lambda x: (x['ref'], x['id'])), 'banners': banners,
          'unreadable': unreadable[:80], 'counts': counts(items)}
+    pl = plug_for(area)
+    D['hunt_source'] = ({'plug': pl.get('kind'), 'url': pl.get('url'), 'season': pl.get('season'), **(PLUG_LOG.get(area) or {})} if pl else
+                        {'plug': None, 'note': "No per-area hunt closure source for this state yet: NO closures are invented; the cards show the state's hunting "
+                                               "seasons + 'check the agency for area closures' (Brandon Oct 28 9:00 PM)", 'agency_pages': [s.get('url') for s in srcs.values() if s.get('url')][:3]})
     save(out_f, D)
     state['areas'][area] = {'status': 'partial' if stopped else 'done', 'read': NOW, 'items': len(items), 'sources': len(srcs),
                             'failed': sum(1 for s in srcs.values() if not s.get('ok')), 'counts': D['counts']}
@@ -1512,7 +1616,7 @@ def side_by_side(area, D, own, label):
         hit = None
         ow = _words(o['text'])
         for it in mine:
-            if it['ref'] != o['ref']: continue
+            if it['ref'] != o['ref'] and it['ref'] not in (((plug_for(area) or {}).get('gate_also') or {}).get(o['ref']) or []): continue   # Fable rule d: a Sheltowee item on forest land counts for the forest too
             if len(ow & _words(it['details'] + ' ' + (it.get('title') or ''))) >= 2: hit = it; break
             if o.get('kind') == 'Hunt closure' and it['class'] == 'hunt':
                 m = re.search(r'(\d{4}-\d\d-\d\d)$', oid)
@@ -1733,6 +1837,12 @@ def selftest():
           and not still_valid({'details': 'Clay WMA | Nov. 1-2 | 29 | 19 | 0.31 | 37% | 1 : 2.5 |', 'class': 'hunt', 'src': 'ky-fw-quota', 'ref': 'US-10124'}, 'US-KY')
           and still_valid({'details': '"Road 214 Temporary closure between roads 215 and 372 due to a failing culvert."', 'class': 'part', 'src': 'ky-lbl-site', 'ref': 'US-3792'}, 'US-KY'))
     print(('ok   ' if ok else 'FAIL ') + 'carried-over items are re-checked against today\'s rules (junk dropped, a real closure kept)'); bad += not ok
+    try: P_ = park_list('US-KY')
+    except Exception: P_ = {}  # noqa: BLE001
+    if P_:
+        r1, _ = plug_refs('Kleber and Rich WMAs #2', P_); r2, m2 = plug_refs('Green River Lake & Dennis-Gray WMAs', P_); r3, _ = plug_refs('Pennyrile State Forest/Tradewater WMA', P_)
+        ok = sorted(r1) == ['US-3809', 'US-3816'] and r2 == ['US-3806'] and m2 and sorted(r3) == ['US-3834', 'US-4692']
+        print(('ok   ' if ok else 'FAIL ') + 'hunt plug: guide names -> parks (Kleber + Rich, Dennis-Gray only, Pennyrile SF + Tradewater)'); bad += not ok
     aspx = '<html><body><form id="aspnetForm" action="detail.aspx">' + '<div class="pad">x</div>' * 300 + '<h1>Lloyd WMA</h1><p>Exceptions: The huntable portion of Lloyd WMA will be closed to all access Nov. 14-21, except for hunters drawn for and participating in the deer quota hunt.</p></form></body></html>'
     hr = [r for r in page_rows(aspx, 'https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=153', ['US-3805'], None, True) if 'Nov. 14-21' in r['sent']]
     ok = bool(hr); print(('ok   ' if ok else 'FAIL ') + 'an ASP.NET page wrapped in one <form> is still read (KDFWR WMA pages)'); bad += not ok
