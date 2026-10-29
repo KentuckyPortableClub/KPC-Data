@@ -1,0 +1,93 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "nec",
+ "states": [
+  "US-MA",
+  "US-VT",
+  "US-NH",
+  "US-ME"
+ ],
+ "since": "2026-10-29",
+ "date": "2026-10-29 02:34 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
+ "known_answers": "18/18 on 2026-10-29",
+ "missing_check": {
+  "FOUND": 90,
+  "DROPPED": 305,
+  "NEVER LOOKED AT": 1527
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-29",
+   "pairs tested": 1933,
+   "pairs whose boxes touch": 1933
+  },
+  "pass2": {
+   "agree with the pass before": 548,
+   "date": "2026-10-29",
+   "pairs tested": 255
+  },
+  "pass3": {
+   "agree with the pass before": 329,
+   "date": "2026-10-29",
+   "pairs tested": 238
+  },
+  "pass5": {
+   "checked": 44,
+   "date": "2026-10-29",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-MA": "data/fers/US-MA.json",
+  "US-VT": "data/fers/US-VT.json",
+  "US-NH": "data/fers/US-NH.json",
+  "US-ME": "data/fers/US-ME.json"
+ },
+ "US-MA": {
+  "rows": 485,
+  "live": 76,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "no public owner on the ownership map": 1
+  },
+  "dropped": 206,
+  "merged": 202
+ },
+ "US-VT": {
+  "rows": 90,
+  "live": 7,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "no public owner on the ownership map": 1
+  },
+  "dropped": 54,
+  "merged": 28
+ },
+ "US-NH": {
+  "rows": 158,
+  "live": 24,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "the outlines overlap, but the Forest Service ownership map": 4
+  },
+  "dropped": 53,
+  "merged": 77
+ },
+ "US-ME": {
+  "rows": 53,
+  "live": 19,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "no public owner on the ownership map": 2
+  },
+  "dropped": 18,
+  "merged": 14
+ }
+}
