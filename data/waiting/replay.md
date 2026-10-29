@@ -1,5 +1,5 @@
 # Waiting room REPLAY TEST
-Run 2026-10-29 12:14Z: **PASS** (34 of 34 cases right). Every real bad output must be HELD (or, closures, have its bad rows taken out); every good output must PASS.
+Run 2026-10-29 12:33Z: **PASS** (37 of 37 cases right). Every real bad output must be HELD (or, closures, have its bad rows taken out); every good output must PASS.
 
 | result | case | expect | what the checker said |
 |---|---|---|---|
@@ -21,15 +21,15 @@ Run 2026-10-29 12:14Z: **PASS** (34 of 34 cases right). Every real bad output mu
 | ok | CANADA KEY: retired CA-2156 still outlined (Oct 28 01:49) | HOLD | HOLD: F-O3 retired parks still outlined: CA-2156 / HOLD: F-O3 retired parks still in the outline index: CA-2045, CA-2156, CA-2160, CA-2161, CA-2266 |
 | ok | DOCS: map / rules links that answer an error (simulated: 3 parks pointing at pages that do not exist) | HOLD | HOLD: F-D3 3 of 3 re-tested links dead, e.g. https://www.nps.gov/kpc-replay-dead-link-2.htm; no live copy: first time this file is published |
 | ok | 2-FERS: a known pair dropped (simulated: Mammoth Cave x Green River removed from the live KY file) | HOLD | HOLD: F-K known 2-fer missing: US-0050+US-10105@area@37.17,-86.15; F-K known 2-fer missing: US-0050 + US-10105 |
-| ok | 2-FERS: live 'same land' wrong joins (NY sister-name state forests 'Lost Nation (St. Lawrence)' + '(Allegany)', 377 km; Robert Moses x2, 503 km) | HOLD | HOLD: F-S3 3 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-2028+US-2061+US-4374 500 km, US-2028+US-4374 500 km, US-2061+US-4374 500 km; F-S2  |
+| ok | 2-FERS: live 'same land' wrong joins (NY sister-name state forests 'Lost Nation (St. Lawrence)' + '(Allegany)', 377 km; Robert Moses x2, 503 km) | HOLD | HOLD: F-S2 3 same-land rows with pins 30+ km apart (wrong joins), e.g. US-5060+US-9141 68 km (sister names), US-5060+US-9141 68 km (sister names), US-5304+US-8097 52  |
 | ok | GOOD: Kentucky 2-fers (live) | PASS | PASS:  |
 | ok | GOOD: Canada key, Ontario (live) | PASS | PASS:  |
 | ok | GOOD: Kentucky federal campgrounds (live, after the Oct 29 sweep) | PASS | PASS:  |
 | ok | GOOD: NY access after the 100 km fix (Oct 29 02:27 vs the run before) | PASS | PASS:  |
-| ok | ATTACK A1 (chat 8): Ohio 2-fers, every candidate pair wrong, same count | HOLD | HOLD: F-2 only 0 of 25 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-S3 4 live rows whose two park pins are  |
-| ok | ATTACK A1 (chat 8): Indiana 2-fers, pairs rotated | HOLD | HOLD: F-2 only 1 of 51 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-S3 27 live rows whose two park pins are |
-| ok | ATTACK A2 (chat 8): Ohio outline key, outlines shuffled to other parks | HOLD | HOLD: F-O2 263 of 270 outlines carry a layer name that shares no word with the park (97%; live 4/270): outlines swapped to other parks? |
-| ok | ATTACK A3 (chat 8): Illinois 2-fers + 20% fake far-apart area rows | HOLD | HOLD: F-2 candidates 12 -> 27 (over 30% change); F-S3 9 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-0282+US-10094 313 km, US-0987+US-4159 4 |
+| ok | ATTACK A1 (chat 8): Ohio 2-fers, every candidate pair wrong, same count | HOLD | HOLD: F-2 only 0 of 25 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 25 new candidate pairs since the live |
+| ok | ATTACK A1 (chat 8): Indiana 2-fers, pairs rotated | HOLD | HOLD: F-2 only 1 of 51 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 49 new candidate pairs since the live |
+| ok | ATTACK A2 (chat 8): Ohio outline key, outlines shuffled to other parks | HOLD | HOLD: F-O2 263 of 270 outlines carry a layer name that shares no word with the park (97%; live 4/270): outlines swapped to other parks?; F-O4 59 of 60 changed outline |
+| ok | ATTACK A3 (chat 8): Illinois 2-fers + 20% fake far-apart area rows | HOLD | HOLD: F-2 candidates 12 -> 27 (over 30% change); F-2 15 new candidate pairs since the live file (over 10% of 12): a person looks at them first, e.g. US-0281+US-4112,  |
 | ok | ATTACK A4 (chat 8): New Mexico 2-fers wiped (2 candidates) | HOLD | HOLD: F-2 only 0 of 4 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 every row gone (live had 12) |
 | ok | ATTACK A5 (chat 8): a .gz twin of live Wisconsin 2-fers with 18% of the rows | HOLD | HOLD: F-4 data/fers/US-WI.json.gz replaces live data/fers/US-WI.json (other format) with 67 rows for 374 (over 10% fewer) |
 | ok | ATTACK A6 (chat 8): status PART READY FOR CHAT 8 with 40 unchecked rows | HOLD | HOLD: F-S1 status PART READY FOR CHAT 8 with 40 rows STORE NOT READ / not checked (must be STOPPED) |
@@ -37,3 +37,6 @@ Run 2026-10-29 12:14Z: **PASS** (34 of 34 cases right). Every real bad output mu
 | ok | GOOD B1 (chat 8): Kentucky closures naming the Indiana bat, Washington County, the Virginia state line, West Virginia hunters | PASS | PASS:  |
 | ok | GOOD B1b (chat 8): the same rows with no park number (word test) | PASS | PASS:  |
 | ok | GOOD: Ohio 2-fers unchanged (chat 8 baseline) | PASS | PASS:  |
+| ok | ATTACK R1 (chat 8 retest): Ohio 2-fers, 16% of pairs moved to a park within 20 km | HOLD | HOLD: F-2 4 new candidate pairs since the live file (over 10% of 25): a person looks at them first, e.g. US-1935+US-9431, US-1936+US-5641, US-1940+US-1943 |
+| ok | ATTACK R2 (chat 8 retest A2d): Ohio key, 10% of outlines swapped AND the parks renamed to fit | HOLD | HOLD: F-O2 27 parks carry a name that is not POTA's (renamed to fit a layer?), e.g. US-0020 'VetoLakeWA', US-0482 'GrtCouncilSP', US-0483 'LAWRENCE WOODS'; F-O4 24 of |
+| ok | GOOD: Ohio outline key unchanged | PASS | PASS:  |
