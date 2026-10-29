@@ -91,14 +91,14 @@ def robots_ok(u):
 ROBOTS_REFUSED = {}
 
 
-def get(u, params=None, timeout=30, raw=False):
+def get(u, params=None, timeout=30, raw=False, plain=False):
     """Polite GET: 2 s per server, robots, back-off on 429 / 5xx, three strikes and the server is left alone for a day."""
     h = host_of(u)
     if DEAD.get(h, 0) > time.time(): raise RuntimeError('server left alone (strikes)')
     if not robots_ok(u): raise RuntimeError('robots.txt says no')
     q = dict(params or {})
-    if not raw: q.setdefault('f', 'json')
-    full = u + (('&' if '?' in u else '?') + urllib.parse.urlencode(q) if q else '')
+    if not raw and not plain: q.setdefault('f', 'json')   # plain = a catalog API (CKAN): no ArcGIS 'f=json', spaces as %20 (chat 9 Oct 29: data.overheid.nl answers 400 otherwise)
+    full = u + (('&' if '?' in u else '?') + urllib.parse.urlencode(q, quote_via=urllib.parse.quote if plain else urllib.parse.quote_plus) if q else '')
     for attempt in range(3):
         w = GAP * (2 ** STRIKE.get(h, 0)) - (time.time() - LAST.get(h, 0))
         if w > 0: time.sleep(w)
@@ -401,10 +401,10 @@ def catalog(kind, base, c, cc, leads, known, govwords, done, log):
         if late(): break
         try:
             if kind == 'ckan':
-                try: j = get(f'{base}/api/3/action/package_search', {'q': kw, 'rows': 30})
+                try: j = get(f'{base}/api/3/action/package_search', {'q': kw.replace('"', ''), 'rows': 30}, plain=True)
                 except RuntimeError as e:
                     if 'HTTP 400' not in str(e): raise
-                    j = get(f'{base}/api/3/action/package_search', {'q': ' AND '.join(kw.split()), 'rows': 20})   # Oct 28: data.gov.uk / e-gov answered 400 to the phrase
+                    j = get(f'{base}/api/3/action/package_search', {'q': ' AND '.join(kw.replace('"', '').split()), 'rows': 20}, plain=True)   # Oct 28: data.gov.uk / e-gov answered 400 to the phrase
                 items = (j.get('result') or {}).get('results') or []
             elif kind == 'datagouv': j = get(f'{base}/datasets/', {'q': kw, 'page_size': 30}); items = j.get('data') or []
             elif kind == 'dane': j = get(f'{base}/datasets', {'q': kw, 'per_page': 30}); items = [dict((x.get('attributes') or {}), id=x.get('id'), resources=[]) for x in j.get('data') or []]
