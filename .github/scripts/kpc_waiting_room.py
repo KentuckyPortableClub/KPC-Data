@@ -90,15 +90,17 @@ def pin_of(ref):
         for f in glob.glob(str(DATA / 'data' / 'parkinfo' / 'US-*.json')) + glob.glob(str(LINKS / 'data' / 'parkinfo' / 'US-*.json')):
             st_f = pathlib.Path(f).stem
             for r, v in ((load(f, {}) or {}).get('parks') or {}).items():
-                if len(v) > 6 and v[5] is not None:
+                if len(v) > 6 and v[5] is not None and (v[5], v[6]) != (0, 0):
                     if r in _ALLPINS and _ALLPINS[r][3] != st_f: _ALLPINS[r] = (*_ALLPINS[r][:2], _ALLPINS[r][2], 'multi')
                     else: _ALLPINS.setdefault(r, (v[5], v[6], f'{v[0]} {v[2] or ""}', st_f))
         for x in (load(LINKS / 'kpc-ky-data.json', {}) or {}).get('parks', []):
             if x.get('c') and x.get('la') is not None: _ALLPINS.setdefault(x['c'], (x['la'], x['lo'], f"{x.get('n', '')} {x.get('t', '')}", 'US-KY'))
+        for row in (load(DATA / 'data' / 'canada.json', {}) or {}).get('rows') or []:   # chat 8 B2: Canada's POTA pins (the shared park list)
+            if len(row) > 4 and row[0] == 'POTA' and row[3] is not None and (row[3], row[4]) != (0, 0): _ALLPINS.setdefault(row[1], (row[3], row[4], row[2], 'CA'))   # 0,0 = no pin
     return _ALLPINS.get(ref)
 
 
-BIG_RX = re.compile(r'national forest|national grassland|wilderness|national recreation area|national park\b|national monument|' + LINE_RX.pattern, re.I)   # NOT state forests (NY's sister-name forests are small)
+BIG_RX = re.compile(r'national forest|national grassland|wilderness|national recreation area|national park\b|national monument|national preserve|national conservation area|maritime|islands? national wildlife refuge|' + LINE_RX.pattern, re.I)   # NOT state forests (NY's sister-name forests are small)
 SISTER = re.compile(r'^\s*(.+?)\s*\(([^)]*)\)')
 
 
@@ -345,6 +347,12 @@ def c_leads(path, new, live, ctx):
 def has_outline(r): return bool((r or {}).get('m') or (r or {}).get('c'))
 
 
+NAME_STOP = set('state park parks national forest wildlife management area wma the of and nature preserve recreation lake river natural historic '
+                'site county city regional reserve conservation memorial trail wilderness refuge nwr sp sf creek fish game public lands land unit at on in '
+                'de la le du des provincial'.split())
+def name_words(s): return {w for w in re.findall(r'[a-z0-9]+', str(s or '').lower()) if len(w) > 2 and w not in NAME_STOP}
+
+
 def c_key(path, new, live, ctx):
     holds, notes = [], []
     retired = set(((load(LINKS / 'data' / 'retired-refs.json', {}) or {}).get('refs') or {}) if isinstance((load(LINKS / 'data' / 'retired-refs.json', {}) or {}).get('refs'), (dict, list)) else [])
@@ -359,6 +367,20 @@ def c_key(path, new, live, ctx):
     if n_old >= 20 and n_new < .99 * n_old: holds.append(f'F-O1 outlines {n_old} -> {n_new} (more than 1% lost)')
     bad = sorted(r for r in P if r in retired and has_outline(P[r]))
     if bad: holds.append(f'F-O3 retired parks still outlined: {", ".join(bad[:5])}')
+    # chat 8 attack 2 (an outline swapped to another park, the NS label / NY same-name bugs): the outline's own layer names must share a
+    # word with the park's name. Live keys miss on 0-4% (spelling: 'DeSoto', 'Norfork'); a shuffled key misses on nearly all.
+    def miss_rate(PP):
+        n = bad = 0
+        for r in PP.values():
+            mw = set().union(*[name_words(m[1]) for m in (r.get('m') or []) if isinstance(m, list) and len(m) > 1]) if r.get('m') else set()
+            nw = name_words(r.get('n'))
+            if not (mw and nw): continue
+            n += 1; bad += not (mw & nw)
+        return n, bad
+    nn, nb = miss_rate(P); on, ob = miss_rate(O)
+    if nn >= 20:
+        lim = max(.05, (ob / on + .02) if on >= 20 else .10)
+        if nb / nn > lim: holds.append(f'F-O2 {nb} of {nn} outlines carry a layer name that shares no word with the park ({nb / nn:.0%}; live {ob}/{on or 0}): outlines swapped to other parks?')
     for name in known('key').get('keep_names') or []:
         hit = [r for r in P.values() if name.lower() in str(r.get('n', '')).lower()]
         if hit and not any(has_outline(r) for r in hit): holds.append(f'F-K known answer: {name} must keep its outline')
@@ -388,6 +410,25 @@ def c_fers(path, new, live, ctx):
     if ons >= 5 and abs(ns - ons) / ons > .3: holds.append(f'F-2 NOT SURE {ons} -> {ns} (over 30% change)')
     for p in ('pass1', 'pass2', 'pass3'):
         if not new.get(p): holds.append(f'F-2 {p} missing: the 2-fer passes did not all run')
+        elif not re.match(r'^20\d\d-\d\d-\d\d', str(new.get(p))): holds.append(f'F-2 {p} is not a run date ({str(new.get(p))[:20]}): the bot\'s own field, not trusted')
+    if S and not all(isinstance(s.get('passes'), list) and len(s['passes']) >= 3 for s in S):   # chat 8 attack 7: every row must show what each pass did (independent of the pass1-3 flags)
+        holds.append(f"F-2 {sum(1 for s in S if not (isinstance(s.get('passes'), list) and len(s['passes']) >= 3))} rows without a passes record: the passes did not all look at them")
+    # chat 8 attack 1 + 4: WHICH pairs, not how many. A pair = its park numbers (stable when an outline moves).
+    LIVE_ST = ('candidate', 'very tight', 'water only', 'merged into')
+    op = {frozenset(s.get('refs') or []) for s in O if str(s.get('status', '')).startswith('candidate')}
+    np_ = {frozenset(s.get('refs') or []) for s in S if str(s.get('status', '')).startswith('candidate')}   # like for like: the rows shown as 2-fers
+    if len(op) >= 3 and len(op & np_) < .8 * len(op): holds.append(f'F-2 only {len(op & np_)} of {len(op)} live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)')
+    elif 1 <= len(op) <= 2 and not (op & np_): holds.append(f'F-2 small area: all {len(op)} live candidate pair(s) gone')
+    if O and not S: holds.append(f'F-2 every row gone (live had {len(O)})')
+    # chat 8 attack 3: a far-apart pair is a wrong join for EVERY kind (area / trail / river too), not only 'same land'
+    far2 = []
+    for s in S:
+        if s.get('kind') == 'same land' or not str(s.get('status', '')).startswith(LIVE_ST): continue
+        pins = [pin_of(r) for r in (s.get('refs') or [])]
+        if any(pp is None for pp in pins): continue
+        d = max((km(a[0], a[1], b[0], b[1]) for i, a in enumerate(pins) for b in pins[i + 1:]), default=0)
+        if d > 100 and not any(pp[3] == 'multi' or BIG_RX.search(pp[2]) for pp in pins): far2.append(f"{'+'.join(s.get('refs') or [])} {d:.0f} km")
+    if far2: holds.append(f'F-S3 {len(far2)} live rows whose two park pins are 100+ km apart (wrong joins), e.g. ' + ', '.join(sorted(set(far2))[:3]))
     # F-S2 (Fable review): a LIVE 'same land, two park numbers' row whose two pins are 30+ km apart is a wrong join; a missing pin = hold (fail closed)
     far, nopin = [], []
     for s in S:
@@ -403,16 +444,16 @@ def c_fers(path, new, live, ctx):
     if nopin: holds.append(f'F-4 unsure: {len(nopin)} same-land rows with a park pin missing, e.g. {nopin[0]}')
     # first file for an area: a near-empty file must not pass just because there is nothing to compare with
     if live is None:
-        st = st_of(path); ok_n = ((load(DATA / 'data' / 'us-key' / f'US-{st}.json', {}) or {}).get('counts') or {}).get('matched') or 0
+        st = st_of(path); ok_n = ((load(DATA / 'data' / ('ca-key' if area_of(path).startswith('CA') else 'us-key') / f'{area_of(path)}.json', {}) or {}).get('counts') or {}).get('matched') or 0
         if ok_n >= 50 and len(S) < ok_n / 50: holds.append(f'F-2 near-empty first file: {len(S)} rows for a state with {ok_n} outlined parks')
     # F-K by a STABLE key (Fable note c): the PAIR of park numbers (never the spot id, which changes when an outline changes). Live =
     # candidate / very tight / water only / merged into another row. Pairs come from the hand files, never from the 2-fer bot's own gate.
     live_rows = [set(s.get('refs') or []) for s in S if str(s.get('status', '')).startswith(('candidate', 'very tight', 'water only', 'merged into'))]
     keys_live = {spot_key(s) for s in S if str(s.get('status', '')).startswith(('candidate', 'very tight', 'water only', 'merged into'))}
     ids_live = {s.get('id') for s in S if str(s.get('status', '')).startswith(('candidate', 'very tight', 'water only', 'merged into'))}
-    for k in (known('fers').get(f'US-{st_of(path)}') or {}).get('keys') or []:   # G2 (Brandon Oct 29 6:50 AM)
+    for k in (known('fers').get(area_of(path)) or {}).get('keys') or []:   # G2 (Brandon Oct 29 6:50 AM)
         if k.get('key') not in keys_live and not (set(k.get('alias_ids') or []) & ids_live): holds.append(f"F-K known 2-fer missing: {k.get('key')}")
-    for pair, line in known_pairs(st_of(path)):
+    for pair, line in known_pairs(area_of(path)):
         ok = any(set(pair) <= rs for rs in live_rows)
         if not ok and line and len(pair) > 2:   # a 3-park entry also passes when each trail x park pair is live (Fort Donelson + Fort Heiman = one shore)
             ok = all(any({line, o} <= rs for rs in live_rows) for o in pair if o != line)
@@ -428,8 +469,13 @@ def spot_key(s):
     return '+'.join(sorted(s.get('refs') or [])) + '@' + str(s.get('kind') or '') + '@' + loc
 
 
+def area_of(path):
+    m = re.search(r'\b((?:US|CA)-[A-Z]{2})\.json', pathlib.Path(path).name)
+    return m.group(1) if m else ''
+
+
 def known_pairs(st):
-    K = known('fers').get(f'US-{st}') or {}
+    K = known('fers').get(st if '-' in st else f'US-{st}') or {}
     pairs = [(list(p), None) for p in (K.get('pairs') or [])]
     if K.get('from_trail_file'):   # KPC-Links ky-trail-parks.json: the hand-checked river-bank / trail-inside pairs (the same rule chat 2 uses)
         tp = load(LINKS / 'ky-trail-parks.json', {}) or {}
@@ -453,8 +499,9 @@ def c_status(path, new, live, ctx):
     txt = json.dumps(new).lower()
     st = str(new.get('status') or new.get('verdict') or '').upper()
     n = len(re.findall(r'store not read|not checked', txt)); r = len(re.findall(r'no answer|unanswered|did not answer|map not answered', txt))
-    holds = [f'F-S1 status READY with {n} rows STORE NOT READ / not checked (must be STOPPED)'] if st == 'READY' and n else []
-    notes = [f'F-S1 {r} rows where a map did not answer: review, not a stop (aligned with the 2-fer line checker, Fable note d)'] if st == 'READY' and r else []
+    ready = 'READY' in st and 'STOPPED' not in st   # chat 8 attack 6: the real words are 'READY FOR CHAT 8' / 'PART READY FOR CHAT 8'
+    holds = [f'F-S1 status {st[:30]} with {n} rows STORE NOT READ / not checked (must be STOPPED)'] if ready and n else []
+    notes = [f'F-S1 {r} rows where a map did not answer: review, not a stop (aligned with the 2-fer line checker, Fable note d)'] if ready and r else []
     return holds, notes
 
 
@@ -465,16 +512,21 @@ def closures_filter(path, new, live):
     if not isinstance(items, list): return None, ['F-3 garbled closures file (no items list): the old one stays, stamped "as of"']
     if not items and len((live or {}).get('items') or []) >= 5: return None, [f'F-3 empty closures file (live had {len((live or {}).get("items"))}): the old one stays, stamped "as of"']
     keep, gone, seen = [], [], set()
+    try: own = set(parks(st)) if st else None
+    except Unsure: own = None
     for it in items:
         d = str(it.get('details') or ''); low = d.lower(); why = ''
         if it.get('to') and str(it['to']) < TODAY.isoformat(): why = 'ended'
         elif RES_ROW.search(d): why = 'a results table row'
         elif re.search(r'\bfree\b|no permit needed|federal holidays|prohibitions\b', low) and not it.get('from'): why = 'a fee / hours / standing note'
         elif re.search(r'\b(?:is|are) prohibited\b|in violation of', low) and not it.get('from') and not it.get('to') and it.get('class') in ('note', None): why = 'a standing rule'
-        else:
+        elif it.get('ref') and own is not None:   # chat 8 B1: the row's park number decides (the shared park list), never words in the text
+            if it['ref'] not in own: why = f"another state (park {it['ref']} is not on the US-{st} park list)"
+        else:   # no park number: the word test, with a state name only in a place role ('Indiana bat', 'Washington County', 'state line' are not)
+            pl = re.sub(r'\b(?:indiana|virginia|townsend\'?s|gray|grey|northern long-eared) bats?\b|\b[a-z]+(?: [a-z]+)? (?:county|parish|counties)\b|\b[a-z]+(?: [a-z]+)? (?:state )?(?:line|border)\b|\b[a-z]+(?: [a-z]+)? (?:hunters|residents|license|licence)s?\b', ' ', low)
             for ab, nm in STATE_NAMES.items():
-                if ab != st and (re.search(rf'\b(?:County|Co\.|City|Parish),?\s+{ab}\b|,\s*{ab}\s*\)', d) or (nm.lower() in low and not (nm == 'Virginia' and 'west virginia' in low and st == 'WV'))):
-                    if STATE_NAMES.get(st, '').lower() not in low: why = f'another state ({ab})'; break
+                if ab != st and (re.search(rf'\b(?:County|Co\.|City|Parish),?\s+{ab}\b|,\s*{ab}\s*\)', d) or (nm.lower() in pl and not (nm == 'Virginia' and 'west virginia' in pl and st == 'WV'))):
+                    if STATE_NAMES.get(st, '').lower() not in pl: why = f'another state ({ab})'; break
         k = (it.get('ref'), re.sub(r'\W+', ' ', low).strip())
         if not why and k in seen: why = 'a duplicate'
         if why: gone.append(f'{it.get("ref")}: {why}: {d[:60]}'); continue
@@ -498,7 +550,8 @@ ROUTES = [
     (r'^data/access-leads/[^/]+\.json$', 'leads', c_leads),
     (r'^data/(?:us|ca)-key/[^/]+\.json$', 'key', c_key),
     (r'^data/intake/ready\.json$', 'intake', c_intake),
-    (r'^data/fers/US-[A-Z]{2}\.json$', 'fers', c_fers),
+    (r'^data/fers/(?:US|CA)-[A-Z]{2}\.json$', 'fers', c_fers),   # chat 8 B2: Canada too (Canada's POTA pins from data/canada.json)
+    (r'^data/fers/(?:line|missing|same-outline|expected|looked)-[a-z]+\.json$', 'info', lambda path, new, live, ctx: ([], ['an info file: passes when it reads as JSON (chat 8 B2)'])),
     (r'^data/pota/index\.json$', 'pota', c_pota),
     (r'^data/closures/(?:US|CA)-[A-Z]{2}\.json$', 'closures', None),
     (r'^data/review/[^/]+\.json$', 'status', c_status),
@@ -513,13 +566,34 @@ def kind_of(path):
     return None, None
 
 
-def judge(path, new, live, ctx):
+def live_of(rel, twin=None):
+    """chat 8 attack 5: x.json and x.json.gz are ONE file. -> (live, twin_note): the live copy under either name; both live = hold."""
+    rel = str(rel); base = re.sub(r'\.gz$', '', rel); names = [base, base + '.gz']
+    have = [n for n in names if (DATA / n).exists()] if twin is None else twin
+    if len(have) == 2: return load(DATA / rel) or load(DATA / [n for n in names if n != rel][0]), 'both'
+    if have and have[0] != rel: return load(DATA / have[0]), have[0]
+    return (load(DATA / rel) if have else None), None
+
+
+def rows_in(d):
+    for k in ('spots', 'parks', 'items', 'camps', 'leads', 'rows'):
+        v = (d or {}).get(k)
+        if isinstance(v, (list, dict)): return len(v)
+    return 0
+
+
+def judge(path, new, live, twin=None, ctx=None):
     """-> {'path','kind','verdict': PASS|HOLD|LIVE-FILTERED,'why': [..],'notes': [..], 'out': file to publish (closures)}"""
+    ctx = ctx or {}
     kind, fn = kind_of(path)
     res = {'path': str(path), 'kind': kind or 'unknown', 'why': [], 'notes': []}
     try:
         if new is None: raise Unsure('the new file does not read as JSON')
         if kind is None: raise Unsure('no check written for this kind of file (fail closed)')
+        if twin == 'both': res.update(verdict='HOLD', why=[f'F-4 both {re.sub(r".gz$", "", str(path))} and its .gz are live: two copies, the page reads one (chat 8 attack 5)']); return res
+        if twin and rows_in(live) and rows_in(new) < .9 * rows_in(live):
+            res.update(verdict='HOLD', why=[f'F-4 {path} replaces live {twin} (other format) with {rows_in(new)} rows for {rows_in(live)} (over 10% fewer)']); return res
+        if twin: res['notes'].append(f'replaces live {twin} (same file, other format): promotion removes the old name')
         if kind == 'closures':
             out, gone = closures_filter(path, new, live)
             if out is None: res.update(verdict='HOLD', why=gone); return res
@@ -546,10 +620,12 @@ def mode_check(promote):
     ctx = {'set': batch}
     out = []
     for rel, new in batch.items():
-        r = judge(rel, new, load(DATA / rel), ctx); out.append(r)
+        r = judge(rel, new, *live_of(rel), ctx=ctx); out.append(r)
         if on and r['verdict'] in ('PASS', 'LIVE-FILTERED'):
             promote_file(rel, r.get('out'), raw=(W / 'in' / rel))
             (W / 'in' / rel).unlink()
+            tw = live_of(rel)[1]
+            if tw and tw not in ('both', rel) and (DATA / tw).exists(): keep_generation(tw); (DATA / tw).unlink()   # one name only (chat 8 attack 5)
     held = [r for r in out if r['verdict'] == 'HOLD']
     rep = {'checked': dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%dT%H:%MZ'), 'switched_on': on, 'results': [{k: v for k, v in r.items() if k != 'out'} for r in out]}
     W.mkdir(parents=True, exist_ok=True)
@@ -557,20 +633,26 @@ def mode_check(promote):
     with open(W / 'verdicts.jsonl', 'a', encoding='utf-8') as fh:   # Fable note b: one line per verdict, kept, so thresholds can be tuned from a month of data
         for r in out: fh.write(json.dumps({'date': rep['checked'], 'kind': r['kind'], 'path': r['path'], 'verdict': r['verdict'], 'why': r['why'][:4], 'notes': r['notes'][:3]}, ensure_ascii=False) + '\n')
     json.dump({'ok': rep['checked']}, open(W / 'heartbeat.json', 'w'))
-    if held:
-        inbox = DATA / 'data' / 'status' / 'inbox-checkers.md'
-        old = inbox.read_text(encoding='utf-8') if inbox.exists() else ''
-        new_lines = [look_line(r) for r in held if look_line(r).split(' held: ')[0] not in old]
-        if new_lines: inbox.write_text(old.rstrip('\n') + '\n' + '\n'.join(new_lines) + '\n', encoding='utf-8')
+    since = load(W / 'held-since.json', {}) or {}
+    since = {k: v for k, v in since.items() if any(r['path'] == k for r in held)}   # a file no longer held drops out
+    for r in held: since.setdefault(r['path'], TODAY.isoformat())
+    json.dump(since, open(W / 'held-since.json', 'w'), indent=1)
+    inbox = DATA / 'data' / 'status' / 'inbox-checkers.md'
+    old = inbox.read_text(encoding='utf-8').splitlines() if inbox.exists() else []
+    if held or any(l.startswith('- FROM WAITING ROOM') for l in old):   # chat 8 C2 + C4: ONE line per held file (replaced, never repeated), with its age
+        keep = [l for l in old if not l.startswith('- FROM WAITING ROOM')]
+        for r in held:
+            days = (TODAY - dt.date.fromisoformat(since[r['path']])).days
+            keep.append(look_line(r).replace(f'({TODAY})', f"(held since {since[r['path']]}" + (f', {days} days' if days else '') + ')'))
+        inbox.parent.mkdir(parents=True, exist_ok=True); inbox.write_text('\n'.join(keep) + '\n', encoding='utf-8')
     print(f'::notice title=Waiting room::{len(out)} files: {sum(r["verdict"] != "HOLD" for r in out)} pass, {len(held)} held' + ('' if on else ' (NOT switched on: nothing promoted)'))
 
 
 def promote_file(rel, content=None, raw=None):
     """Fable c: the file goes live EXACTLY as the bot wrote it (its own bytes: indent, gzip), so git sees only real changes. Only a
     closures file with rows taken out is rewritten (indented, like the bot writes it)."""
-    live = DATA / rel; prev = W / 'previous' / rel
-    prev.parent.mkdir(parents=True, exist_ok=True)
-    if live.exists(): shutil.copy2(live, prev)
+    live = DATA / rel
+    if live.exists(): keep_generation(rel)
     live.parent.mkdir(parents=True, exist_ok=True)
     if content is None and raw is not None: shutil.copy2(raw, live); return
     if str(rel).endswith('.gz'):
@@ -579,13 +661,34 @@ def promote_file(rel, content=None, raw=None):
     else: json.dump(content, open(live, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
 
 
-def mode_undo(rel):
-    live, prev = DATA / rel, W / 'previous' / rel
-    if not prev.exists(): print(f'::notice title=Waiting room undo::no previous copy of {rel}'); return False
+GENS = 3   # chat 8 C1: keep the last 3 live copies (previous = 1, previous-2, previous-3), so undo can step past a bad copy that slipped through
+
+
+def gen_dir(g): return W / ('previous' if g == 1 else f'previous-{g}')
+
+
+def keep_generation(rel):
+    for g in range(GENS, 1, -1):
+        src, dst = gen_dir(g - 1) / rel, gen_dir(g) / rel
+        if src.exists(): dst.parent.mkdir(parents=True, exist_ok=True); shutil.copy2(src, dst)
+    p1 = gen_dir(1) / rel; p1.parent.mkdir(parents=True, exist_ok=True); shutil.copy2(DATA / rel, p1)
+
+
+def mode_undo(rel, gen=1):
+    rel, _, g = str(rel).partition('@'); gen = int(g or gen)   # 'data/access/US-NY.json@2' = two copies back
+    live, prev = DATA / rel, gen_dir(gen) / rel
+    if not prev.exists(): print(f'::notice title=Waiting room undo::no copy {gen} back of {rel}'); return False
     tmp = live.read_bytes() if live.exists() else None
     shutil.copy2(prev, live)
-    if tmp is not None: prev.write_bytes(tmp)     # the copy we replaced becomes 'previous' (undo of the undo)
-    print(f'::notice title=Waiting room undo::{rel} put back to the previous good copy'); return True
+    if tmp is not None and gen == 1: prev.write_bytes(tmp)     # the copy we replaced becomes 'previous' (undo of the undo)
+    log_action('undo', f'{rel}@{gen}')
+    print(f'::notice title=Waiting room undo::{rel} put back to the copy {gen} back'); return True
+
+
+def log_action(what, rel):
+    W.mkdir(parents=True, exist_ok=True)
+    with open(W / 'verdicts.jsonl', 'a', encoding='utf-8') as fh:   # chat 8 C3: who / when for every undo and release
+        fh.write(json.dumps({'date': dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%dT%H:%MZ'), 'kind': what, 'path': rel, 'verdict': what.upper(), 'by': os.environ.get('GITHUB_ACTOR') or 'local'}) + '\n')
 
 
 BOT_FOLDERS = {'access': 'data/access', 'campfed': 'data/campfed', 'campstate': 'data/campstate', 'campinfo': 'data/campinfo', 'trails': 'data/trails',
@@ -605,9 +708,10 @@ def mode_undo_bot(bot, area=''):
 
 
 def mode_release(rel):
+    if '..' in str(rel) or str(rel).startswith('/') or not str(rel).startswith('data/'): print(f'::notice title=Waiting room release::refused: {rel} is not a data/ path'); return
     src = W / 'in' / rel
     if not src.exists(): print(f'::notice title=Waiting room release::nothing held at {rel}'); return
-    promote_file(rel, None, raw=src); src.unlink()
+    promote_file(rel, None, raw=src); src.unlink(); log_action('release', rel)
     print(f'::notice title=Waiting room release::{rel} released by a person (previous copy kept for undo)')
 
 
@@ -640,6 +744,34 @@ def transform(d, how):
         d['spots'] = [s for s in d.get('spots') or [] if not (isinstance(s, dict) and want <= set(s.get('refs') or []))]
     elif op == 'set':                   # 'set:{"status":"READY","rows":[...]}'
         d = json.loads(arg)
+    # ---- chat 8's attacks (Oct 29), kept as permanent replay cases
+    elif op == 'rotate_refs':           # A1: every candidate pair wrong, same count, new ids
+        C = [s for s in d.get('spots') or [] if isinstance(s, dict) and str(s.get('status', '')).startswith('candidate')]
+        refs = [s['refs'][0] for s in C]
+        for i, s in enumerate(C):
+            s['refs'] = [refs[i], refs[(i + 7) % len(refs)]] if len(refs) > 7 else s['refs'][::-1] + ['US-99999']; s['id'] = 'X' + str(i)
+    elif op == 'shuffle_outlines':      # A2: every outline moved to another park, same count
+        P = [r for r in (d.get('parks') or {}).values() if r.get('m')]
+        ms = [r['m'] for r in P]
+        for i, r in enumerate(P): r['m'] = ms[(i + 11) % len(ms)]
+    elif op == 'fake_area':             # A3: 20% fake 'area' rows between far-apart parks
+        S = [s for s in d.get('spots') or [] if isinstance(s, dict)]
+        refs = sorted({r for s in S for r in s.get('refs') or []})
+        add = []
+        for i in range(int(len(S) * float(arg))):
+            a, b = refs[i % len(refs)], refs[(i * 37 + len(refs) // 2) % len(refs)]
+            pa, pb = pin_of(a), pin_of(b)
+            if a != b and pa and pb and km(pa[0], pa[1], pb[0], pb[1]) > 150:
+                add.append({'id': f'FAKE{i}', 'kind': 'area', 'refs': [a, b], 'status': 'candidate', 'passes': [1, 1, 1], 'center': [pa[0], pa[1]]})
+        d['spots'] = S + add
+    elif op == 'status_unchecked':      # A6: a real status word with unchecked rows
+        d['status'] = arg
+        for s in (d.get('spots') or [])[:40]:
+            if isinstance(s, dict): s['water'] = 'not checked'
+    elif op == 'fake_passes':           # A7: truthy pass flags, no pass record on the rows
+        for k in ('pass1', 'pass2', 'pass3'): d[k] = True
+        for s in d.get('spots') or []:
+            if isinstance(s, dict): s.pop('passes', None)
     return d
 
 
@@ -651,12 +783,13 @@ def mode_replay():
         try:
             batch, live = {}, {}
             for f in c['files']:
-                new = git_json(c['repo'], f['new'], f['path'])
+                new = git_json(c['repo'], f['new'], f.get('src_path') or f['path'])
                 if f.get('transform'): new = transform(new, f['transform'])
                 batch[f['path']] = new
-                live[f['path']] = git_json(c['repo'], f.get('live', 'live'), f['path']) if f.get('live') != 'none' else None
+                lp = f.get('live_path') or f['path']   # chat 8 attack 5: the live copy may sit under the other name (.json vs .json.gz)
+                live[f['path']] = (git_json(c['repo'], f.get('live', 'live'), lp) if f.get('live') != 'none' else None, None if lp == f['path'] else ('both' if f.get('both') else lp))
             ctx = {'set': batch}
-            res = [judge(p, n, live[p], ctx) for p, n in batch.items()]
+            res = [judge(p, n, *live[p], ctx=ctx) for p, n in batch.items()]
         except Exception as e:  # noqa: BLE001
             res = [{'path': '?', 'verdict': 'HOLD', 'why': [f'case could not load: {e}'], 'notes': []}]
         caught = any(r['verdict'] in ('HOLD', 'LIVE-FILTERED') and (not c.get('catch') or re.search(c['catch'], ' '.join(r['why'] + r['notes']), re.I)) for r in res)

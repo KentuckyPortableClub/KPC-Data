@@ -12,7 +12,7 @@ on:
         description: 'replay | check | undo | undo-bot | release'
         default: 'replay'
       target:
-        description: 'undo / release: the live path (data/access/US-NY.json); undo-bot: the bot (access, campfed, docs, hours, truth, ...)'
+        description: 'undo / release: the live path (data/access/US-NY.json; undo: add @2 or @3 to go 2 or 3 copies back); undo-bot: the bot (access, campfed, docs, hours, truth, ...)'
         default: ''
       area:
         description: 'undo-bot only: one area (e.g. US-KY); blank = every area'

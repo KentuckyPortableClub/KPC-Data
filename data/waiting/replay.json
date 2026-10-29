@@ -316,6 +316,149 @@
    ],
    "expect": "PASS",
    "catch": ""
+  },
+  {
+   "name": "ATTACK A1 (chat 8): Ohio 2-fers, every candidate pair wrong, same count",
+   "repo": "data",
+   "expect": "HOLD",
+   "catch": "F-2 only",
+   "files": [
+    {
+     "path": "data/fers/US-OH.json",
+     "new": "live",
+     "transform": "rotate_refs"
+    }
+   ]
+  },
+  {
+   "name": "ATTACK A1 (chat 8): Indiana 2-fers, pairs rotated",
+   "repo": "data",
+   "expect": "HOLD",
+   "catch": "F-2 only",
+   "files": [
+    {
+     "path": "data/fers/US-IN.json",
+     "new": "live",
+     "transform": "rotate_refs"
+    }
+   ]
+  },
+  {
+   "name": "ATTACK A2 (chat 8): Ohio outline key, outlines shuffled to other parks",
+   "repo": "data",
+   "expect": "HOLD",
+   "catch": "F-O2",
+   "files": [
+    {
+     "path": "data/us-key/US-OH.json",
+     "new": "live",
+     "transform": "shuffle_outlines"
+    }
+   ]
+  },
+  {
+   "name": "ATTACK A3 (chat 8): Illinois 2-fers + 20% fake far-apart area rows",
+   "repo": "data",
+   "expect": "HOLD",
+   "catch": "F-S3",
+   "files": [
+    {
+     "path": "data/fers/US-IL.json",
+     "new": "live",
+     "transform": "fake_area:0.2"
+    }
+   ]
+  },
+  {
+   "name": "ATTACK A4 (chat 8): New Mexico 2-fers wiped (2 candidates)",
+   "repo": "data",
+   "expect": "HOLD",
+   "catch": "small area|every row gone",
+   "files": [
+    {
+     "path": "data/fers/US-NM.json",
+     "new": "live",
+     "transform": "shrink:0"
+    }
+   ]
+  },
+  {
+   "name": "ATTACK A5 (chat 8): a .gz twin of live Wisconsin 2-fers with 18% of the rows",
+   "repo": "data",
+   "expect": "HOLD",
+   "catch": "other format",
+   "files": [
+    {
+     "path": "data/fers/US-WI.json.gz",
+     "src_path": "data/fers/US-WI.json",
+     "live_path": "data/fers/US-WI.json",
+     "new": "live",
+     "transform": "shrink:0.18"
+    }
+   ]
+  },
+  {
+   "name": "ATTACK A6 (chat 8): status PART READY FOR CHAT 8 with 40 unchecked rows",
+   "repo": "data",
+   "expect": "HOLD",
+   "catch": "F-S1",
+   "files": [
+    {
+     "path": "data/fers/US-OH.json",
+     "new": "live",
+     "transform": "status_unchecked:PART READY FOR CHAT 8"
+    }
+   ]
+  },
+  {
+   "name": "ATTACK A7 (chat 8): truthy pass flags, no pass record on any row",
+   "repo": "data",
+   "expect": "HOLD",
+   "catch": "not a run date|passes record",
+   "files": [
+    {
+     "path": "data/fers/US-OH.json",
+     "new": "live",
+     "transform": "fake_passes"
+    }
+   ]
+  },
+  {
+   "name": "GOOD B1 (chat 8): Kentucky closures naming the Indiana bat, Washington County, the Virginia state line, West Virginia hunters",
+   "repo": "data",
+   "expect": "PASS",
+   "files": [
+    {
+     "path": "data/closures/US-KY.json",
+     "new": "live",
+     "live": "none",
+     "transform": "set:{\"items\": [{\"ref\": \"US-0019\", \"class\": \"whole\", \"from\": \"2026-11-01\", \"to\": \"2026-12-31\", \"details\": \"Cave closed to protect the Indiana bat (white-nose syndrome).\"}, {\"ref\": \"US-0050\", \"class\": \"note\", \"from\": \"2026-11-01\", \"to\": \"2026-12-31\", \"details\": \"Road closed at the Washington County line for bridge work.\"}, {\"ref\": \"US-0295\", \"class\": \"note\", \"from\": \"2026-11-01\", \"to\": \"2026-12-31\", \"details\": \"Boat ramp near the Virginia state line closed for repairs.\"}, {\"ref\": \"US-0538\", \"class\": \"hunt\", \"from\": \"2026-11-14\", \"to\": \"2026-11-30\", \"details\": \"Closed for the quota deer hunt; West Virginia hunters with a Kentucky licence welcome.\"}, {\"ref\": \"US-0608\", \"class\": \"note\", \"from\": \"2026-11-01\", \"to\": \"2026-12-31\", \"details\": \"Trail closed after storm damage.\"}]}"
+    }
+   ]
+  },
+  {
+   "name": "GOOD B1b (chat 8): the same rows with no park number (word test)",
+   "repo": "data",
+   "expect": "PASS",
+   "files": [
+    {
+     "path": "data/closures/US-KY.json",
+     "new": "live",
+     "live": "none",
+     "transform": "set:{\"items\": [{\"ref\": null, \"class\": \"whole\", \"from\": \"2026-11-01\", \"to\": \"2026-12-31\", \"details\": \"Cave closed to protect the Indiana bat (white-nose syndrome).\"}, {\"ref\": null, \"class\": \"note\", \"from\": \"2026-11-01\", \"to\": \"2026-12-31\", \"details\": \"Road closed at the Washington County line for bridge work.\"}, {\"ref\": null, \"class\": \"note\", \"from\": \"2026-11-01\", \"to\": \"2026-12-31\", \"details\": \"Boat ramp near the Virginia state line closed for repairs.\"}, {\"ref\": null, \"class\": \"hunt\", \"from\": \"2026-11-14\", \"to\": \"2026-11-30\", \"details\": \"Closed for the quota deer hunt; West Virginia hunters with a Kentucky licence welcome.\"}, {\"ref\": null, \"class\": \"note\", \"from\": \"2026-11-01\", \"to\": \"2026-12-31\", \"details\": \"Trail closed after storm damage.\"}]}"
+    }
+   ]
+  },
+  {
+   "name": "GOOD: Ohio 2-fers unchanged (chat 8 baseline)",
+   "repo": "data",
+   "expect": "PASS",
+   "files": [
+    {
+     "path": "data/fers/US-OH.json",
+     "new": "live"
+    }
+   ]
   }
  ]
 }
