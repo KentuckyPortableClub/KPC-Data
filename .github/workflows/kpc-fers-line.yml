@@ -277,6 +277,9 @@ jobs:
               except Exception: ns.append(f'{x}: no file')
           url = f"https://github.com/{os.environ['REPO']}/actions/runs/{os.environ['GITHUB_RUN_ID']}"
           if v.get('verdict', '').startswith('READY'): line = f"- FROM BOT 2-fer line (chat 2; {time.strftime('%Y-%m-%d')}): grade me: {' '.join(st)} ({t}) — READY · known {v.get('known_answers')} · {'; '.join(ns)} · files data/fers/<state>.json + line-{t}.json + missing-{t}.json · [run]({url})"
+          elif v.get('verdict', '').startswith('PART'):   # Oct 28 10:31 PM (Brandon): the good states go out, the held ones wait for a rerun
+              line = (f"- FROM BOT 2-fer line (chat 2; {time.strftime('%Y-%m-%d')}): grade me: {' '.join(v.get('states_ready') or [])} ({t}) — PART READY · "
+                      f"HELD for a rerun (on the review list): {' '.join(v.get('states_held') or [])}: {'; '.join(v.get('why') or [])[:250]} · {'; '.join(ns)} · [run]({url})")
           else: line = f"- FROM BOT 2-fer line (chat 2; {time.strftime('%Y-%m-%d')}): STOPPED (not for grading): {' '.join(st)} ({t}) — {'; '.join(v.get('why') or [])[:300]} · {'; '.join(ns)} · [run]({url})"
           for f in ('kpcdata/data/status/inbox-checkers.md', 'kpcdata/data/status/inbox-chat-8.md'):
               os.makedirs(os.path.dirname(f), exist_ok=True)

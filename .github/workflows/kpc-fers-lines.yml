@@ -104,7 +104,8 @@ jobs:
               try: v = json.load(open(f"data/fers/line-{l['tag']}.json"))
               except Exception: continue
               why = v.get('why') or []
-              if v.get('verdict') == 'STOPPED' and why and all(str(w).startswith('water service') for w in why):
+              # Oct 28 10:31 PM: an area held (fully or in part) ONLY on water gets one retry round
+              if v.get('verdict') in ('STOPPED', 'PART READY FOR CHAT 8') and why and all(str(w).startswith(('water service', 'water not checked')) for w in why):
                   out.append(f"{l['states']}|{l['tag']}@worker")
           print('; '.join(out))
           PY
