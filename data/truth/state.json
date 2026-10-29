@@ -247,18 +247,18 @@
     "handover_hints": 0,
     "no_page": 0,
     "no_size": 37,
-    "off": 96,
+    "off": 20,
     "ours_unknown": 0,
     "parks": 172,
     "retired": 0,
-    "unsure": 26,
-    "weak": 5,
+    "unsure": 102,
+    "weak": 2,
     "with_outline": 160
    },
    "left": 0,
    "parks": 172,
    "status": "done",
-   "updated": "2026-10-28"
+   "updated": "2026-10-29"
   }
  },
  "hosts": {
@@ -282,31 +282,31 @@
  },
  "last": {
   "areas": [
-   "US-MO"
+   "US-WV"
   ],
   "manners": {
    "arcgis_exempt": 0,
    "errors": 0,
-   "requests": 1426,
-   "rested": 2,
+   "requests": 312,
+   "rested": 25,
    "robots": 0,
-   "strikes": 6
+   "strikes": 0
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 15,
-   "no_size": 92,
-   "ours_unknown": 8,
-   "pages_read": 1276,
-   "parks": 561,
+   "handover_hints": 0,
+   "no_size": 37,
+   "ours_unknown": 0,
+   "pages_read": 293,
+   "parks": 172,
    "retired": 0,
-   "size_agree": 73,
-   "size_off": 130,
-   "size_unsure": 242,
+   "size_agree": 1,
+   "size_off": 20,
+   "size_unsure": 102,
    "skipped_fresh": 0,
-   "with_outline": 545
+   "with_outline": 160
   },
-  "when": "2026-10-28"
+  "when": "2026-10-29"
  },
  "news": {
   "https://dwr.virginia.gov/news/": {
@@ -351,7 +351,7 @@
   },
   "https://wvdnr.gov/news/": {
    "links": 166,
-   "read": "2026-10-28",
+   "read": "2026-10-29",
    "status": "ok"
   },
   "https://www.dcr.virginia.gov/news": {
@@ -380,7 +380,7 @@
    "status": "rest"
   }
  },
- "proven": "2026-10-28",
+ "proven": "2026-10-29",
  "test": {
   "result": "PASS",
   "rows": [
@@ -425,7 +425,7 @@
     "ref": "US-0050"
    }
   ],
-  "when": "2026-10-28",
+  "when": "2026-10-29",
   "why": "US-1264 ok (Levi Jackson OFF (722 vs ~896) + a hint naming the City of London; verdict off, agency 896 acres) · US-8144 ok (Otter Creek: a hint naming Meade; verdict agree, agency 2,261 acre) · US-10105 ok (Green WSR: official page is not Mammoth Cave's (/maca/); verdict no size on page, agency None) · US-10104 ok (Red River WSR: official acres is not 879 (the \"708, 879\" parse); verdict unsure, agency 708,000 acres) · US-0295 ok (Clarks River NWR: official acres is not the 73,962 land grant; verdict unsure, agency 6 million acres) · US-0703+US-3790 ok (Fort Donelson and Fort Heiman do not share one official page; verdict off, agency 1007 acres) · US-10098 ok (Green River NWR OFF (clean 9,500 vs ours); verdict off, agency 9,500 acres) · US-4689 ok (Kentucky Ridge SF OFF (15,251 vs 11,736 = 23%); verdict off, agency 15,251 acres) · US-3800 ok (Cedar Creek Lake WMA OFF (ours 2,390 vs 796); verdict off, agency 796 acres) · US-0050 ok (Mammoth Cave OFF with cause 'boundary vs owned'; verdict off, agency 52,830 acres)"
  }
 }
