@@ -10,9 +10,9 @@
    "pin well outside": 0
   },
   "official parks": 199,
-  "pairs tested": 6,
-  "pairs whose boxes touch": 6,
-  "parks done by the box test": 195,
+  "pairs tested": 51,
+  "pairs whose boxes touch": 51,
+  "parks done by the box test": 180,
   "parks whose outline could not be read": 0,
   "pass": 1,
   "problems": [
@@ -22,7 +22,7 @@
   "with official lines": 11
  },
  "pass2": {
-  "agree with the pass before": 0,
+  "agree with the pass before": 20,
   "cell_m": 10.0,
   "date": "2026-10-29",
   "left out": {
@@ -31,17 +31,17 @@
    "no pin": 0,
    "pin well outside": 0
   },
-  "new here only (not counted)": 0,
+  "new here only (not counted)": 6,
   "official parks": 199,
-  "pairs tested": 0,
+  "pairs tested": 7,
   "parks whose outline could not be read": 0,
-  "parks with a saved copy only (no fresh download possible)": 0,
+  "parks with a saved copy only (no fresh download possible)": 1,
   "pass": 2,
   "problems": [],
   "with official lines": 11
  },
  "pass3": {
-  "agree with the pass before": 0,
+  "agree with the pass before": 16,
   "cell_m": 5.0,
   "date": "2026-10-29",
   "left out": {
@@ -50,11 +50,11 @@
    "no pin": 0,
    "pin well outside": 0
   },
-  "new here only (not counted)": 0,
+  "new here only (not counted)": 2,
   "official parks": 199,
-  "pairs tested": 0,
+  "pairs tested": 7,
   "parks whose outline could not be read": 0,
-  "parks with a saved copy only (no fresh download possible)": 0,
+  "parks with a saved copy only (no fresh download possible)": 1,
   "pass": 3,
   "problems": [],
   "with official lines": 11
@@ -78,7 +78,7 @@
  },
  "pass5": {
   "cell_m": 5.0,
-  "checked": 24,
+  "checked": 29,
   "date": "2026-10-29",
   "left out": {
    "approximate": 0,
@@ -90,8 +90,8 @@
   "pairs tested": 0,
   "pass": 5,
   "problems": [],
-  "river channels listed as water only (boat spots)": 4,
-  "spots given their boundary lines": 48,
+  "river channel boat rows taken out (ruling Oct 28 8:17 PM)": 4,
+  "spots given their boundary lines": 53,
   "still not checked": 0,
   "trail stretches given their true zone": 76,
   "water only": 0,
@@ -100,16 +100,16 @@
  },
  "per state": {
   "US-KY": {
-   "candidates": 63,
+   "candidates": 66,
    "candidates (saved outline only)": 1,
-   "lines": 222,
+   "lines": 219,
    "n-fers": 20,
-   "not sure": 8,
-   "pass1": 429,
-   "pass2": 373,
-   "spots": 429,
+   "not sure": 4,
+   "pass1": 423,
+   "pass2": 367,
+   "spots": 423,
    "very tight": 3,
-   "water only": 5
+   "water only": 1
   }
  }
 }
