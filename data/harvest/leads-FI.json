@@ -78,6 +78,26 @@
    "catalog": "https://www.avoindata.fi/data",
    "keyword": "suojelualue",
    "error": "HTTP 403"
+  },
+  {
+   "catalog": "https://www.avoindata.fi/data",
+   "keyword": "kansallispuisto",
+   "error": "HTTP 403"
+  },
+  {
+   "catalog": "https://www.avoindata.fi/data",
+   "keyword": "luonnonsuojelualue",
+   "error": "HTTP 403"
+  },
+  {
+   "catalog": "https://www.avoindata.fi/data",
+   "keyword": "luonnonpuisto",
+   "error": "HTTP 403"
+  },
+  {
+   "catalog": "https://www.avoindata.fi/data",
+   "keyword": "suojelualue",
+   "error": "HTTP 403"
   }
  ],
  "rejected_orgs": [
@@ -125,6 +145,20 @@
   "https://paikkatieto.ymparisto.fi/geoserver/wfs"
  ],
  "known_log": [
+  {
+   "step": "known",
+   "what": "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/suojelualueet/MapServer",
+   "found": true
+  },
+  {
+   "step": "known",
+   "what": "https://paikkatieto.ymparisto.fi/geoserver/wfs: HTTP 404"
+  },
+  {
+   "step": "known",
+   "what": "https://paikkatieto.ymparisto.fi/geoserver/wfs",
+   "found": false
+  },
   {
    "step": "known",
    "what": "https://gtkdata.gtk.fi/arcgis/rest/services/Tukes/suojelualueet/MapServer",

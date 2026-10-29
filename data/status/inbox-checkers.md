@@ -28,3 +28,4 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM BOT world harvester (2026-10-29): grade me: PL ES NL RO AT SE FI HU EE LT DO MX TH AR CL data/harvest/leads-<CC>.json — chunk 2 · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/40931405621)
 - FROM BOT world harvester (2026-10-29): grade me: PL ES NL RO AT SE FI HU EE LT DO MX TH AR CL data/harvest/leads-<CC>.json — chunk 3 · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/40931405621)
 - FROM BOT world harvester (2026-10-29): grade me: PL ES NL RO AT SE FI HU EE LT DO MX TH AR CL data/harvest/leads-<CC>.json — chunk 4 · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/40931405621)
+- FROM BOT world harvester (2026-10-29): grade me: PL ES NL RO AT SE FI HU EE LT DO MX TH AR CL data/harvest/leads-<CC>.json — chunk 5 · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/40931405621)
