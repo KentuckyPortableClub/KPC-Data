@@ -9,19 +9,19 @@
   "US-DC"
  ],
  "since": "2026-10-29",
- "date": "2026-10-29 03:30 UTC",
+ "date": "2026-10-29 03:49 UTC",
  "verdict": "STOPPED",
  "why": [
   "Kentucky known-answers test not passing (18/19 on 2026-10-29)",
-  "water not checked: US-PA: 6 rows (the USGS water map / files had no answer there): never READY with one",
+  "water not checked: US-PA: 1 rows (the USGS water map / files had no answer there): never READY with one",
   "water not checked: US-DE: 43 rows (the USGS water map / files had no answer there): never READY with one",
-  "water not checked: US-MD: 31 rows (the USGS water map / files had no answer there): never READY with one",
+  "water not checked: US-MD: 29 rows (the USGS water map / files had no answer there): never READY with one",
   "water not checked: US-DC: 10 rows (the USGS water map / files had no answer there): never READY with one"
  ],
  "known_answers": "18/19 on 2026-10-29",
  "missing_check": {
-  "FOUND": 178,
-  "DROPPED": 757,
+  "FOUND": 179,
+  "DROPPED": 756,
   "NEVER LOOKED AT": 5559
  },
  "report": {
@@ -36,15 +36,15 @@
    "pairs tested": 470
   },
   "pass3": {
-   "agree with the pass before": 540,
+   "agree with the pass before": 0,
    "date": "2026-10-29",
-   "pairs tested": 453
+   "pairs tested": 0
   },
   "pass5": {
-   "checked": 145,
+   "checked": 144,
    "date": "2026-10-29",
    "pairs tested": 0,
-   "still not checked": 8
+   "still not checked": 0
   }
  },
  "files": {
@@ -56,19 +56,19 @@
  },
  "US-PA": {
   "rows": 653,
-  "live": 73,
+  "live": 78,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "water not checked": 6
+   "water not checked": 1
   },
   "dropped": 429,
   "merged": 145
  },
  "water_weak": {
-  "US-PA": 6,
+  "US-PA": 1,
   "US-DE": 43,
-  "US-MD": 31,
+  "US-MD": 29,
   "US-DC": 10
  },
  "US-NJ": {
@@ -94,11 +94,11 @@
  },
  "US-MD": {
   "rows": 263,
-  "live": 48,
+  "live": 50,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "water not checked": 31,
+   "water not checked": 29,
    "no public owner on the ownership map": 1
   },
   "dropped": 112,
@@ -114,5 +114,13 @@
   },
   "dropped": 10,
   "merged": 1
- }
+ },
+ "states_ready": [],
+ "states_held": [
+  "US-PA",
+  "US-NJ",
+  "US-DE",
+  "US-MD",
+  "US-DC"
+ ]
 }

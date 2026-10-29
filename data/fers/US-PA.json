@@ -10090,7 +10090,7 @@
    "id": "US-0619+US-12234@area@41.833,-79.264",
    "info": {
     "cut_ac": 131.7,
-    "water_pct": 3
+    "water_pct": 4
    },
    "kind": "area",
    "lines": {
@@ -53507,7 +53507,7 @@
      41.837989
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 706
   },
@@ -56529,6 +56529,7 @@
    ],
    "ownership": "public land (Forest Service + state)",
    "pairs_around": [
+    "US-0619+US-12235",
     "US-12235+US-8743"
    ],
    "passes": [
@@ -58223,7 +58224,7 @@
    "id": "US-0619+US-12235@area@41.378,-78.849",
    "info": {
     "cut_ac": 0.4,
-    "water_pct": 1
+    "water_pct": 2
    },
    "kind": "area",
    "lines": {
@@ -74340,6 +74341,9 @@
     "US-0619": "Allegheny National Forest",
     "US-12235": "Clarion National Wild and Scenic River"
    },
+   "nfer_here": [
+    "US-0619+US-12235+US-8743@area@41.384,-78.857"
+   ],
    "notes": [
     "check the agency's closures and seasons before you go"
    ],
@@ -75009,7 +75013,7 @@
      41.410684
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 575
   },
@@ -102425,7 +102429,7 @@
    ],
    "id": "US-12235+US-5464@area@41.348,-79.021",
    "info": {
-    "water_pct": 2
+    "water_pct": 0
    },
    "kind": "area",
    "lines": {
@@ -110334,7 +110338,7 @@
      41.357093
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 396
   },
@@ -279693,7 +279697,7 @@
      41.279501
     ]
    ],
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 105
   },
@@ -279758,6 +279762,9 @@
    "checked": "2026-10-29",
    "found": "2026-10-29",
    "id": "US-5472+US-8789@area@41.120,-78.487",
+   "info": {
+    "water_pct": 0
+   },
    "kind": "area",
    "lines": {
     "US-5472": [
@@ -279870,7 +279877,8 @@
    "lines_read": "2026-10-29",
    "map_dates": {
     "US-5472": "downloaded 2026-10-29",
-    "US-8789": "downloaded 2026-10-29"
+    "US-8789": "downloaded 2026-10-29",
+    "USGS water": "USGS NHDPlus HR file 2022-03-24 (the same NHDPlus HR water, from USGS's download files)"
    },
    "names": {
     "US-5472": "Moshannon State Forest",
@@ -279923,7 +279931,7 @@
     ]
    ],
    "small": "small overlap: tight fit, check carefully",
-   "status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "status": "candidate",
    "water_checked": "2026-10-29",
    "wide_m": 55
   },
