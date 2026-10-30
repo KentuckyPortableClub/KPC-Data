@@ -73,6 +73,12 @@ def main():
         elif it.get('path'):
             if not str(it.get('chat2') or '').strip(): log.append({'item': it, 'result': "skipped: no chat 2 recheck (Rule G-4)"}); continue
             rel = str(it['path']).replace('data/waiting/in/', '')
+            if rel.endswith('/') and (W.W / 'in' / rel).is_dir():   # a whole folder approved (a key rebuild: data/us-key/)
+                for f in sorted((W.W / 'in' / rel).rglob('*.json*')):
+                    r2 = str(f.relative_to(W.W / 'in'))
+                    if not DRY: W.mode_release(r2)
+                    log.append({'item': r2, 'result': 'released (approved folder)'})
+                continue
             if (W.W / 'in' / rel).exists():
                 if not DRY: W.mode_release(rel)
                 log.append({'item': rel, 'result': 'released (approved)'})

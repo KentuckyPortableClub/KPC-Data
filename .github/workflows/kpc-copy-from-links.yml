@@ -33,10 +33,16 @@ jobs:
           # Oct 29 8:25 PM (Brandon 7:48 PM release GO, chat 11 RELEASE YES): the Rule G keys data/us-key + data/ca-key are back in
           # Oct 29 10:15 PM (chat 2): data/us-key HELD again until chat 11 passes the next rebuild's sample (the waiting-room hold for
           # the key bot is not wired yet); chat 2 puts it back after chat 11's YES
-          DIRS="data/ca-key data/world-bounds data/pota data/canada-bounds data/world-key data/campfed data/campstate data/campstate-manual data/nwr"
+          DIRS="data/world-bounds data/pota data/canada-bounds data/world-key data/campfed data/campstate data/campstate-manual data/nwr"
           FILES="data/northam.json data/canada.json data/parkinfo-web.json data/boundary-score.json data/boundary-report.json data/state-gis-found.json data/access-layers.json data/state-gis.json"
           for d in $DIRS; do [ -d "links/$d" ] && mkdir -p "kpcdata/$d" && rsync -a --delete "links/$d/" "kpcdata/$d/"; done
           for f in $FILES; do [ -f "links/$f" ] && mkdir -p "kpcdata/$(dirname $f)" && cp "links/$f" "kpcdata/$f"; done
+          # Oct 29 10:25 PM (chat 2 request, Brandon 10:21 PM 'map key bot isn't hooked into the waiting room yet'): the keys come over into
+          # a working copy, then every CHANGED key file goes to data/waiting/in/ (checked: outlines lost, names vs POTA, retired parks,
+          # PAD-US shape test) and the live key stays as it was; chat 11 approves (+ chat 2 rechecks) in data/waiting/approved.json, and
+          # the waiting-room workflow mode release-approved puts it live. A Rule G change on purpose = a G5 stamp (big-change alarm only).
+          for d in data/us-key data/ca-key; do [ -d "links/$d" ] && mkdir -p "kpcdata/$d" && rsync -a "links/$d/" "kpcdata/$d/"; done
+          (cd kpcdata && LINKS=../links python3 .github/scripts/kpc_waiting_room.py divert data/us-key data/ca-key) || true
           echo "::notice title=Step B3 copy::$(du -sh kpcdata/data | cut -f1) in kpcdata/data"
       - name: Save (once)
         continue-on-error: true

@@ -89,6 +89,7 @@ jobs:
           pip install -q numpy opencv-python-headless || true
           mkdir -p cache/us cache/ca bundle/http data/fers
           # A6: only this area's files travel (own states, the tag's files, known answers, POTA pairs): never the world files
+          (cd kpcdata && LINKS=.. python3 .github/scripts/kpc_waiting_room.py resume data/fers) || true   # Oct 29 (chat 2 + Brandon 10:22 PM): work on from the HELD 2-fer files
           for st in $STATES; do for f in kpcdata/data/fers/$st.json kpcdata/data/fers/$st.json.gz kpcdata/data/fers/pota-pairs-$st.json; do [ -f "$f" ] && cp "$f" data/fers/; done; done
           for f in kpcdata/data/fers/known-answers.json kpcdata/data/fers/*-$RUN_TAG.json; do [ -f "$f" ] && cp "$f" data/fers/; done
           for f in data/fers/*.json.gz; do [ -f "$f" ] && gunzip -f "$f"; done
@@ -305,6 +306,7 @@ jobs:
               open(f, 'a').write(line + '\n')
           print(line)
           PY
+          (cd kpcdata && LINKS=.. python3 .github/scripts/kpc_waiting_room.py divert data/fers) || true   # Oct 29 (chat 2 + Brandon 10:22 PM): changed 2-fer files wait in data/waiting/in/ (checked, chat 11 approves), the live ones stay
           STRICT=1 bash .github/scripts/kpc_push_data.sh kpcdata "2-fer line ${{ inputs.tag }} (hidden data)" data || exit 1
   broke:
     # Oct 28 (HQ queue rule 3): a line whose fetcher / worker broke is recorded; the queue goes on to the next area, but TWO
