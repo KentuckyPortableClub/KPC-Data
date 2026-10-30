@@ -59,15 +59,19 @@ jobs:
           path: code
           sparse-checkout: .github/scripts
           persist-credentials: false
+      - uses: actions/checkout@v5
+        with:
+          ref: picture-maps
+          path: pm
       - name: Browser + PDF tools
         continue-on-error: true
-        run: (sudo apt-get install -y -q poppler-utils >/dev/null 2>&1 || true); pip install -q playwright pypdf && python3 -m playwright install --with-deps chromium >/dev/null 2>&1 || true
+        run: (sudo apt-get install -y -q poppler-utils >/dev/null 2>&1 || true); pip install -q playwright pypdf pillow && python3 -m playwright install --with-deps chromium >/dev/null 2>&1 || true
       - name: Answer
         continue-on-error: true
         run: |
           cd lk; git pull -q origin lookup || true
           if [ -f "answers/$(basename '${{ matrix.req }}')" ]; then echo "::notice title=Look-up bot::already answered"; exit 0; fi
-          LOOKUP_ROOT=. python3 ../code/.github/scripts/kpc_lookup.py run "${{ matrix.req }}" || true
+          LOOKUP_ROOT=. PIC_ROOT=../pm python3 ../code/.github/scripts/kpc_lookup.py run "${{ matrix.req }}" || true
       - name: Save the answer
         continue-on-error: true
         run: |
@@ -77,4 +81,16 @@ jobs:
           git diff --cached --quiet && exit 0
           git commit -qm "look-up bot: answered $(basename '${{ matrix.req }}')"
           for i in 1 2 3 4 5; do git pull -q --rebase origin lookup && git push -q origin HEAD:lookup && exit 0; sleep $((i*7)); done
+          true
+      - name: Save the picture map (kind save-map; branch picture-maps, Oct 30)
+        continue-on-error: true
+        run: |
+          cd pm
+          N=$(git status --porcelain maps rows | wc -l); [ "$N" = 0 ] && exit 0
+          mkdir -p /tmp/new && cp -a maps rows /tmp/new/
+          git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for i in 1 2 3 4 5; do
+            git fetch -q origin picture-maps && git reset -q --hard origin/picture-maps && cp -a /tmp/new/maps /tmp/new/rows . &&
+            PIC_ROOT=. python3 ../code/.github/scripts/kpc_lookup.py map-index && git add -A && git commit -qm "picture map: $(basename '${{ matrix.req }}')" &&
+            git push -q origin HEAD:picture-maps && exit 0; sleep $((i*7)); done
           true
