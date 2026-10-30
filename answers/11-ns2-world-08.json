@@ -1,0 +1,298 @@
+{
+ "request": "requests/11-ns2-world-08.json",
+ "id": "11-ns2-world-08",
+ "chat": 11,
+ "kind": "map-check",
+ "report": "Chat 11 NOT SURE map check (world, SE, SK, ZA): screenshots in order: 1=SE-1977 (record); 2=SE-2009 (record); 3=SK-0003 (record); 4=SK-0006 (record); 5=SK-0008 (record); 6=ZA-0061 (record); 7=ZA-0061 (map). Record pages are WHOLE-page shots (the record's fields are below the query form; the text is in each result too). Map shots: the POTA pin is the marker in the middle (zoom 14).",
+ "asked": {
+  "chat": 11,
+  "kind": "map-check",
+  "screenshot": true,
+  "report": "Chat 11 NOT SURE map check (world, SE, SK, ZA): screenshots in order: 1=SE-1977 (record); 2=SE-2009 (record); 3=SK-0003 (record); 4=SK-0006 (record); 5=SK-0008 (record); 6=ZA-0061 (record); 7=ZA-0061 (map). Record pages are WHOLE-page shots (the record's fields are below the query form; the text is in each result too). Map shots: the POTA pin is the marker in the middle (zoom 14).",
+  "items": [
+   {
+    "ref": "SE-1977",
+    "park": "Klibbalsreservatet Nature Reserve",
+    "record": "Klibbalreservatet",
+    "area": "SE"
+   },
+   {
+    "ref": "SE-2009",
+    "park": "Grimestorp Nature Reserve",
+    "record": "Grimmestorp",
+    "area": "SE"
+   },
+   {
+    "ref": "SK-0003",
+    "park": "Slovenský raj National Park",
+    "record": "Slovenský raj- OP",
+    "area": "SK"
+   },
+   {
+    "ref": "SK-0006",
+    "park": "Veľká Fatra National Park",
+    "record": "Veľká Fatra- OP",
+    "area": "SK"
+   },
+   {
+    "ref": "SK-0008",
+    "park": "Slovenský kras National Park",
+    "record": "Slovenský kras- OP",
+    "area": "SK"
+   },
+   {
+    "ref": "ZA-0061",
+    "park": "Lotheni Nature Reserve",
+    "record": "Loteni Nature Reserve",
+    "area": "ZA"
+   }
+  ],
+  "urls": [
+   {
+    "url": "https://natura2000.eea.europa.eu/Natura2000/SDF.aspx?site=25085",
+    "full": true
+   },
+   {
+    "url": "https://natura2000.eea.europa.eu/Natura2000/SDF.aspx?site=24538",
+    "full": true
+   },
+   {
+    "url": "https://eunis.eea.europa.eu/sites/74780",
+    "full": true
+   },
+   {
+    "url": "https://eunis.eea.europa.eu/sites/79349",
+    "full": true
+   },
+   {
+    "url": "https://eunis.eea.europa.eu/sites/75148",
+    "full": true
+   },
+   {
+    "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1/query?objectIds=640&outFields=*&returnGeometry=false&f=html",
+    "full": true
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fdpmegis.dpme.gov.za%2Farcgis%2Frest%2Fservices%2FEnvironmental2%2FMapServer%2F1&center=29.5289%2C-29.4545&level=14&marker=29.5289%2C-29.4545%2C4326%2CPOTA+pin",
+    "steps": [
+     {
+      "wait": 12000
+     }
+    ]
+   }
+  ]
+ },
+ "answered": "2026-10-30 20:43Z",
+ "results": [
+  {
+   "url": "https://natura2000.eea.europa.eu/Natura2000/SDF.aspx?site=25085",
+   "status": 200,
+   "final_url": "https://natura2000.eea.europa.eu/Natura2000/sdf/#/sdf?site=25085",
+   "title": "Natura 2000 SDF",
+   "text": "NATURA 2000 - STANDARD DATA FORM\nSelect a release\nError loading data",
+   "links": [
+    {
+     "url": "https://natura2000.eea.europa.eu/",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns2-world-08-1.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://natura2000.eea.europa.eu/Natura2000/SDF.aspx?site=24538",
+   "status": 200,
+   "final_url": "https://natura2000.eea.europa.eu/Natura2000/sdf/#/sdf?site=24538",
+   "title": "Natura 2000 SDF",
+   "text": "NATURA 2000 - STANDARD DATA FORM\nSelect a release\nError loading data",
+   "links": [
+    {
+     "url": "https://natura2000.eea.europa.eu/",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns2-world-08-2.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://eunis.eea.europa.eu/sites/74780",
+   "status": 404,
+   "final_url": "https://eunis.eea.europa.eu/sites/74780",
+   "title": "EUNIS - Application retired",
+   "text": "Dear EUNIS user,\nThe EUNIS web application is retired. The software behind it can no longer be maintained. The underpinning EUNIS database continues to be updated, and its content is integrated into the Biodiversity Information System for Europe, BISE. The European Environment Agency is still improving the visualisation and layout of the EUNIS content in BISE. In case you don’t find the information you used to access from the EUNIS web application, please contact us at bise@eea.europa.eu.\nSearch habitats in BISE\nhttps://biodiversity.europa.eu/resources/search-habitat\nSearch species in BISE\nhttps://biodiversity.europa.eu/resources/search-species\nSearch protected and conserved areas in BISE\nhttps://biodiversity.europa.eu/resources/search-protected-areas\nEuropean Environment Agency — bise@eea.europa.eu",
+   "links": [
+    {
+     "url": "https://biodiversity.europa.eu/resources/search-habitat",
+     "text": "Search habitats in BISE\nhttps://biodiversity.europa.eu/resources/search-habitat"
+    },
+    {
+     "url": "https://biodiversity.europa.eu/resources/search-species",
+     "text": "Search species in BISE\nhttps://biodiversity.europa.eu/resources/search-species"
+    },
+    {
+     "url": "https://biodiversity.europa.eu/resources/search-protected-areas",
+     "text": "Search protected and conserved areas in BISE\nhttps://biodiversity.europa.eu/resources/search-protect"
+    }
+   ],
+   "screenshot": "answers/11-ns2-world-08-3.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://eunis.eea.europa.eu/sites/79349",
+   "status": 404,
+   "final_url": "https://eunis.eea.europa.eu/sites/79349",
+   "title": "EUNIS - Application retired",
+   "text": "Dear EUNIS user,\nThe EUNIS web application is retired. The software behind it can no longer be maintained. The underpinning EUNIS database continues to be updated, and its content is integrated into the Biodiversity Information System for Europe, BISE. The European Environment Agency is still improving the visualisation and layout of the EUNIS content in BISE. In case you don’t find the information you used to access from the EUNIS web application, please contact us at bise@eea.europa.eu.\nSearch habitats in BISE\nhttps://biodiversity.europa.eu/resources/search-habitat\nSearch species in BISE\nhttps://biodiversity.europa.eu/resources/search-species\nSearch protected and conserved areas in BISE\nhttps://biodiversity.europa.eu/resources/search-protected-areas\nEuropean Environment Agency — bise@eea.europa.eu",
+   "links": [
+    {
+     "url": "https://biodiversity.europa.eu/resources/search-habitat",
+     "text": "Search habitats in BISE\nhttps://biodiversity.europa.eu/resources/search-habitat"
+    },
+    {
+     "url": "https://biodiversity.europa.eu/resources/search-species",
+     "text": "Search species in BISE\nhttps://biodiversity.europa.eu/resources/search-species"
+    },
+    {
+     "url": "https://biodiversity.europa.eu/resources/search-protected-areas",
+     "text": "Search protected and conserved areas in BISE\nhttps://biodiversity.europa.eu/resources/search-protect"
+    }
+   ],
+   "screenshot": "answers/11-ns2-world-08-4.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://eunis.eea.europa.eu/sites/75148",
+   "status": 404,
+   "final_url": "https://eunis.eea.europa.eu/sites/75148",
+   "title": "EUNIS - Application retired",
+   "text": "Dear EUNIS user,\nThe EUNIS web application is retired. The software behind it can no longer be maintained. The underpinning EUNIS database continues to be updated, and its content is integrated into the Biodiversity Information System for Europe, BISE. The European Environment Agency is still improving the visualisation and layout of the EUNIS content in BISE. In case you don’t find the information you used to access from the EUNIS web application, please contact us at bise@eea.europa.eu.\nSearch habitats in BISE\nhttps://biodiversity.europa.eu/resources/search-habitat\nSearch species in BISE\nhttps://biodiversity.europa.eu/resources/search-species\nSearch protected and conserved areas in BISE\nhttps://biodiversity.europa.eu/resources/search-protected-areas\nEuropean Environment Agency — bise@eea.europa.eu",
+   "links": [
+    {
+     "url": "https://biodiversity.europa.eu/resources/search-habitat",
+     "text": "Search habitats in BISE\nhttps://biodiversity.europa.eu/resources/search-habitat"
+    },
+    {
+     "url": "https://biodiversity.europa.eu/resources/search-species",
+     "text": "Search species in BISE\nhttps://biodiversity.europa.eu/resources/search-species"
+    },
+    {
+     "url": "https://biodiversity.europa.eu/resources/search-protected-areas",
+     "text": "Search protected and conserved areas in BISE\nhttps://biodiversity.europa.eu/resources/search-protect"
+    }
+   ],
+   "screenshot": "answers/11-ns2-world-08-5.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1/query?objectIds=640&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1/query?objectIds=640&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: Protected Areas (DFFE2022Q1) (ID: 1)",
+   "text": "ArcGIS REST Services Directory Login\nHome > services > Environmental2 (MapServer) > Protected Areas (DFFE2022Q1) > query API Reference\nQuery: Protected Areas (DFFE2022Q1) (ID: 1)\nWhere:\nText:\nObject IDs:\nTime:\nTime Relation:\nInclude start and end\nInclude start and exclude end\nExclude start and include end\nExclude start and end\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nReturn True Curves: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nReturn IDs Only: True False\nReturn Count Only: True False\nOrder By Fields:\nGroup By Fields (For Statistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nResult Offset:\nResult Record Count:\nReturn Extent Only: True False\nSQL Format:\nNone\nStandard\nNative\nDatum Transformation:\nParameter Values:\nRange Values:\nQuantization Parameters:\nFeature Encoding:\nEsriDefault\nFormat:\nHTML\nJSON\nKMZ\nGeoJSON\nPBF\n# records: 1\nOBJECTID: 640\nWDPAID: 555563898\nCUR_NME: Loteni Nature Reserve\nWMCM_TYPE: National\nMAJ_TYPE: PA\nSITE_TYPE: Nature Reserve\nD_DCLAR: -528595200000\nLEGAL_STAT: Designated\nGIS_AREA: 3937.54994277\nPROC_DOC: https://portal.environment.gov.za/PortalDownloads/PACA_Gazettes/PA/NR/Loteni_NR.pdf\nShape_Length: 0.3358295686418009\nShape_Area: 0.0036618863477833126",
+   "links": [
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/login?returnUrl=https://dpmegis.dpme.gov.za/arcgis/rest/services",
+     "text": "Login"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer",
+     "text": "Environmental2 (MapServer)"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1",
+     "text": "Protected Areas (DFFE2022Q1)"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1/query",
+     "text": "query"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/help/en/rest/router.html?f=rest/services/Environmental2/MapServer/1/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1/640",
+     "text": "640"
+    }
+   ],
+   "screenshot": "answers/11-ns2-world-08-6.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fdpmegis.dpme.gov.za%2Farcgis%2Frest%2Fservices%2FEnvironmental2%2FMapServer%2F1&center=29.5289%2C-29.4545&level=14&marker=29.5289%2C-29.4545%2C4326%2CPOTA+pin",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fdpmegis.dpme.gov.za%2Farcgis%2Frest%2Fservices%2FEnvironmental2%2FMapServer%2F1&center=29.5289%2C-29.4545&level=14&marker=29.5289%2C-29.4545%2C4326%2CPOTA+pin",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nEsri South Africa | Esri | TomTom | Garmin | NASA | NGA | USGS | METI/NASA | Depratment of Environment Affairs, DEA\nPowered by Esri\nPOTA+pin",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns2-world-08-7.jpg",
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 57,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 1
+ },
+ "short": "7 result(s), 4 read OK, 7 screenshot(s)"
+}
