@@ -1,0 +1,21 @@
+{
+ "chat": 8,
+ "kind": "layer-probe",
+ "report": "chat 8 for Fable's more-layers task: BLM recreation SITE polygons/points (UT ID WY OR AZ CO + national), USFS developed sites. Geometry, name field, field list please.",
+ "layers": [
+  "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
+  "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+  "https://gis.blm.gov/utarcgis/rest/services/Recreation/BLM_UT_RecAreas/MapServer/0",
+  "https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Area_Poly/MapServer/0",
+  "https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Site_Point/MapServer/0",
+  "https://gis.blm.gov/wyarcgis/rest/services/recreation/BLM_WY_Recreation_Areas_HUB/MapServer/0",
+  "https://gis.blm.gov/wyarcgis/rest/services/recreation/BLM_WY_Recreation_Features_HUB/MapServer/0",
+  "https://gis.blm.gov/orarcgis/rest/services/Recreation/BLM_OR_Recreation_Management_Areas/MapServer/0",
+  "https://gis.blm.gov/azarcgis/rest/services/recreation/BLM_AZ_RECS/MapServer/0",
+  "https://gis.blm.gov/coarcgis/rest/services/recreation/BLM_CO_Recreation/MapServer/0",
+  "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer/23",
+  "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation_Sites_Facilities/MapServer/1",
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_DevelopedSite_01/MapServer/0",
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_InfraRecreationSites_01/MapServer/0"
+ ]
+}
