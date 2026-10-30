@@ -1,0 +1,43 @@
+{
+ "request": "requests/9-nmx-ks-1.json",
+ "id": "9-nmx-ks-1",
+ "chat": 9,
+ "kind": "page",
+ "report": "NMX KS: official page name check, 1 pages: page title, H1 / main heading, any official-name line, the agency, map / GIS / boundary links (text only)",
+ "asked": {
+  "chat": 9,
+  "kind": "page",
+  "report": "NMX KS: official page name check, 1 pages: page title, H1 / main heading, any official-name line, the agency, map / GIS / boundary links (text only)",
+  "urls": [
+   "https://www.ksoutdoors.gov/about-kdwp/where-we-work/fish-hatcheries/pratt-hatchery"
+  ],
+  "refs": [
+   [
+    "US-13456",
+    "Pratt Fish Hatchery State Fish Hatchery"
+   ]
+  ]
+ },
+ "answered": "2026-10-30 02:12Z",
+ "results": [
+  {
+   "url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/fish-hatcheries/pratt-hatchery",
+   "status": 403,
+   "final_url": "https://www.ksoutdoors.gov/about-kdwp/where-we-work/fish-hatcheries/pratt-hatchery",
+   "title": "Access Denied",
+   "text": "Access Denied\nYou don't have permission to access \"http://www.ksoutdoors.gov/$(SERVE_403)/about-kdwp/where-we-work/fish-hatcheries/pratt-hatchery?\" on this server.\nReference #18.5a67cd17.1793326373.5d2b5bf\nhttps://errors.edgesuite.net/18.5a67cd17.1793326373.5d2b5bf",
+   "links": [],
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 1,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 0 read OK, 0 screenshot(s)"
+}
