@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-US-5258.json",
+ "id": "10-auto-US-5258",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "US-5258",
+  "name": "Pochuck State Forest",
+  "agency": "government agency (dec.ny.gov)",
+  "url": "https://dec.ny.gov/sites/default/files/mappochuck.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-10-30 11:49Z",
+ "results": [
+  {
+   "url": "https://dec.ny.gov/sites/default/files/mappochuck.pdf",
+   "map_url": "https://dec.ny.gov/sites/default/files/mappochuck.pdf",
+   "saved": [
+    "maps/US-5258_pochuck-state-forest.jpg"
+   ],
+   "bytes": 366400,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 2,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
