@@ -1,0 +1,41 @@
+name: KPC look-up branch tidy (weekly)
+# Oct 29 2026 (chat 10, Brandon 7:22 PM 'protect size on both repos'): Sunday, the look-up bot's orphan branch `lookup` drops answers
+# that were read or are over 7 days old, and when the branch (history included) passes 150 MB it is squashed to ONE fresh commit with
+# the current files, so old screenshots really leave the repo. Main never holds look-up files. Never goes red.
+on:
+  schedule:
+    - cron: '23 11 * * 0'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  tidy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: lookup
+          path: lk
+          fetch-depth: 0
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+          path: code
+          sparse-checkout: .github/scripts
+          persist-credentials: false
+      - name: Tidy + squash when over 150 MB
+        continue-on-error: true
+        run: |
+          cd lk
+          git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          LOOKUP_ROOT=. python3 ../code/.github/scripts/kpc_lookup.py tidy || true
+          git add -A; git diff --cached --quiet || git commit -qm 'look-up bot: weekly tidy'
+          KB=$(git count-objects -v | awk '/size-pack|^size:/{s+=$2} END{print s}')
+          echo "::notice title=Look-up branch::history $((KB/1024)) MB, $(git rev-list --count HEAD) commits, files $(du -sm --exclude=.git . | cut -f1) MB"
+          if [ "$KB" -gt 153600 ]; then
+            git checkout -q --orphan fresh && git add -A && git commit -qm "look-up branch squashed $(date -u +%F) (was $((KB/1024)) MB with history)"
+            git push -q -f origin fresh:lookup && echo "::notice title=Look-up branch::squashed to one commit"
+          else
+            for i in 1 2 3; do git pull -q --rebase origin lookup && git push -q origin HEAD:lookup && break; sleep 5; done
+          fi
+          true
