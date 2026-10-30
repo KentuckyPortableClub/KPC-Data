@@ -1,0 +1,1072 @@
+{
+ "request": "requests/9-pt-MI.json",
+ "id": "9-pt-MI",
+ "chat": 9,
+ "kind": "probe",
+ "report": "HQ 8:20 AM pin test MI: 16 Fable-row parks vs chat 3's layers",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "HQ 8:20 AM pin test MI: 16 Fable-row parks vs chat 3's layers",
+  "probe": {
+   "about": "Pin-in-polygon at the POTA pin of every MI park in its Fable file vs chat 3's untested layers. Refs in order of points: US-12802,US-4774,US-4775,US-4776,US-4777,US-4778,US-4779,US-6728,US-6808,US-6809,US-6813,US-6814,US-6815,US-6817,US-6821,US-6822",
+   "refs": [
+    "US-12802",
+    "US-4774",
+    "US-4775",
+    "US-4776",
+    "US-4777",
+    "US-4778",
+    "US-4779",
+    "US-6728",
+    "US-6808",
+    "US-6809",
+    "US-6813",
+    "US-6814",
+    "US-6815",
+    "US-6817",
+    "US-6821",
+    "US-6822"
+   ],
+   "pointq": [
+    {
+     "st": "MI",
+     "url": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/2",
+     "note": "MI DNR Forest Management Units",
+     "points": [
+      [
+       46.6215,
+       -89.3912
+      ],
+      [
+       44.7903,
+       -84.8364
+      ],
+      [
+       46.135,
+       -87.824
+      ],
+      [
+       45.524,
+       -87.4008
+      ],
+      [
+       46.677,
+       -85.7723
+      ],
+      [
+       45.4495,
+       -84.7302
+      ],
+      [
+       43.9647,
+       -85.7985
+      ],
+      [
+       45.1142,
+       -86.0108
+      ],
+      [
+       45.413,
+       -87.352
+      ],
+      [
+       47.4722,
+       -87.9044
+      ],
+      [
+       45.5915,
+       -84.1643
+      ],
+      [
+       47.3782,
+       -88.0276
+      ],
+      [
+       43.2685,
+       -82.5278
+      ],
+      [
+       46.716,
+       -85.3601
+      ],
+      [
+       45.7784,
+       -84.7219
+      ],
+      [
+       46.7586,
+       -84.9666
+      ]
+     ]
+    },
+    {
+     "st": "MI",
+     "url": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRReferenceAssetsOPENDATA/FeatureServer/10",
+     "note": "MI DNR Managed Sites",
+     "points": [
+      [
+       46.6215,
+       -89.3912
+      ],
+      [
+       44.7903,
+       -84.8364
+      ],
+      [
+       46.135,
+       -87.824
+      ],
+      [
+       45.524,
+       -87.4008
+      ],
+      [
+       46.677,
+       -85.7723
+      ],
+      [
+       45.4495,
+       -84.7302
+      ],
+      [
+       43.9647,
+       -85.7985
+      ],
+      [
+       45.1142,
+       -86.0108
+      ],
+      [
+       45.413,
+       -87.352
+      ],
+      [
+       47.4722,
+       -87.9044
+      ],
+      [
+       45.5915,
+       -84.1643
+      ],
+      [
+       47.3782,
+       -88.0276
+      ],
+      [
+       43.2685,
+       -82.5278
+      ],
+      [
+       46.716,
+       -85.3601
+      ],
+      [
+       45.7784,
+       -84.7219
+      ],
+      [
+       46.7586,
+       -84.9666
+      ]
+     ]
+    },
+    {
+     "st": "MI",
+     "url": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/7",
+     "note": "MI DNR Wildlife Management Units",
+     "points": [
+      [
+       46.6215,
+       -89.3912
+      ],
+      [
+       44.7903,
+       -84.8364
+      ],
+      [
+       46.135,
+       -87.824
+      ],
+      [
+       45.524,
+       -87.4008
+      ],
+      [
+       46.677,
+       -85.7723
+      ],
+      [
+       45.4495,
+       -84.7302
+      ],
+      [
+       43.9647,
+       -85.7985
+      ],
+      [
+       45.1142,
+       -86.0108
+      ],
+      [
+       45.413,
+       -87.352
+      ],
+      [
+       47.4722,
+       -87.9044
+      ],
+      [
+       45.5915,
+       -84.1643
+      ],
+      [
+       47.3782,
+       -88.0276
+      ],
+      [
+       43.2685,
+       -82.5278
+      ],
+      [
+       46.716,
+       -85.3601
+      ],
+      [
+       45.7784,
+       -84.7219
+      ],
+      [
+       46.7586,
+       -84.9666
+      ]
+     ]
+    },
+    {
+     "st": "MI",
+     "url": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRLOTSParcelsOPENDATA/FeatureServer/13",
+     "note": "MI DNR Project Boundaries",
+     "points": [
+      [
+       46.6215,
+       -89.3912
+      ],
+      [
+       44.7903,
+       -84.8364
+      ],
+      [
+       46.135,
+       -87.824
+      ],
+      [
+       45.524,
+       -87.4008
+      ],
+      [
+       46.677,
+       -85.7723
+      ],
+      [
+       45.4495,
+       -84.7302
+      ],
+      [
+       43.9647,
+       -85.7985
+      ],
+      [
+       45.1142,
+       -86.0108
+      ],
+      [
+       45.413,
+       -87.352
+      ],
+      [
+       47.4722,
+       -87.9044
+      ],
+      [
+       45.5915,
+       -84.1643
+      ],
+      [
+       47.3782,
+       -88.0276
+      ],
+      [
+       43.2685,
+       -82.5278
+      ],
+      [
+       46.716,
+       -85.3601
+      ],
+      [
+       45.7784,
+       -84.7219
+      ],
+      [
+       46.7586,
+       -84.9666
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-30 13:45Z",
+ "results": {
+  "about": "Pin-in-polygon at the POTA pin of every MI park in its Fable file vs chat 3's untested layers. Refs in order of points: US-12802,US-4774,US-4775,US-4776,US-4777,US-4778,US-4779,US-6728,US-6808,US-6809,US-6813,US-6814,US-6815,US-6817,US-6821,US-6822",
+  "date": "2026-10-30",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "MI",
+    "url": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/2",
+    "note": "MI DNR Forest Management Units",
+    "hits": [
+     {
+      "layer": "2 DNR Forest Management Units",
+      "point": [
+       46.6215,
+       -89.3912
+      ],
+      "attrs": {
+       "ForestManagementUnit": "Baraga",
+       "ForestManagementUnitNumber": 11,
+       "UnitManager": "Brad Carlson",
+       "UnitManagerEmail": "carlsonb@michigan.gov",
+       "District": "Western Upper Peninsula",
+       "DistrictLabel": "WUP",
+       "created_user": "MichiganDNR",
+       "created_date": 1787145875759,
+       "last_edited_user": "MichiganDNR",
+       "last_edited_date": 1787145875759
+      }
+     },
+     {
+      "layer": "2 DNR Forest Management Units",
+      "point": [
+       44.7903,
+       -84.8364
+      ],
+      "attrs": {
+       "ForestManagementUnit": "Grayling",
+       "ForestManagementUnitNumber": 72,
+       "UnitManager": "Thomas Barnes",
+       "UnitManagerEmail": "barnest2@michigan.gov",
+       "District": "North Eastern Lower Peninsula",
+       "DistrictLabel": "NELP",
+       "created_user": "MichiganDNR",
+       "created_date": 1787145875759,
+       "last_edited_user": "MichiganDNR",
+       "last_edited_date": 1787145875759
+      }
+     },
+     {
+      "layer": "2 DNR Forest Management Units",
+      "point": [
+       46.135,
+       -87.824
+      ],
+      "attrs": {
+       "ForestManagementUnit": "Escanaba",
+       "ForestManagementUnitNumber": 33,
+       "UnitManager": "Daniel Racine",
+       "UnitManagerEmail": "racined@michigan.gov",
+       "District": "Western Upper Peninsula",
+       "DistrictLabel": "WUP",
+       "created_user": "MichiganDNR",
+       "created_date": 1787145875759,
+       "last_edited_user": "MichiganDNR",
+       "last_edited_date": 1787145875759
+      }
+     },
+     {
+      "layer": "2 DNR Forest Management Units",
+      "point": [
+       45.524,
+       -87.4008
+      ],
+      "attrs": {
+       "ForestManagementUnit": "Escanaba",
+       "ForestManagementUnitNumber": 33,
+       "UnitManager": "Daniel Racine",
+       "UnitManagerEmail": "racined@michigan.gov",
+       "District": "Western Upper Peninsula",
+       "DistrictLabel": "WUP",
+       "created_user": "MichiganDNR",
+       "created_date": 1787145875759,
+       "last_edited_user": "MichiganDNR",
+       "last_edited_date": 1787145875759
+      }
+     },
+     {
+      "layer": "2 DNR Forest Management Units",
+      "point": [
+       46.677,
+       -85.7723
+      ],
+      "attrs": {
+       "ForestManagementUnit": "Newberry",
+       "ForestManagementUnitNumber": 42,
+       "UnitManager": "Keith Magnusson",
+       "UnitManagerEmail": "magnussonk@michigan.gov",
+       "District": "Eastern Upper Peninsula",
+       "DistrictLabel": "EUP",
+       "created_user": "MichiganDNR",
+       "created_date": 1787145875759,
+       "last_edited_user": "MichiganDNR",
+       "last_edited_date": 1787145875759
+      }
+     },
+     {
+      "layer": "2 DNR Forest Management Units",
+      "point": [
+       45.4495,
+       -84.7302
+      ],
+      "attrs": {
+       "ForestManagementUnit": "Gaylord",
+       "ForestManagementUnitNumber": 52,
+       "UnitManager": "Lucas Merrick",
+       "UnitManagerEmail": "merrickl@michigan.gov",
+       "District": "North Eastern Lower Peninsula",
+       "DistrictLabel": "NELP",
+       "created_user": "MichiganDNR",
+       "created_date": 1787145875759,
+       "last_edited_user": "MichiganDNR",
+       "last_edited_date": 1787145875759
+      }
+     },
+     {
+      "layer": "2 DNR Forest Management Units",
+      "point": [
+       43.9647,
+       -85.7985
+      ],
+      "attrs": {
+       "ForestManagementUnit": "Cadillac",
+       "ForestManagementUnitNumber": 63,
+       "UnitManager": "David Fisher",
+       "UnitManagerEmail": "fisherd1@michigan.gov",
+       "District": "North Western Lower Peninsula",
+       "DistrictLabel": "NWLP",
+       "created_user": "MichiganDNR",
+       "created_date": 1787145875759,
+       "last_edited_user": "MichiganDNR",
+       "last_edited_date": 1787145875759
+      }
+     },
+     {
+      "layer": "2 DNR Forest Management Units",
+      "point": [
+       45.1142,
+       -86.0108
+      ],
+      "attrs": {
+       "ForestManagementUnit": "Traverse City",
+       "ForestManagementUnitNumber": 61,
+       "UnitManager": "Matthew Edison",
+       "UnitManagerEmail": "edisonm@michigan.gov",
+       "District": "North Western Lower Peninsula",
+       "DistrictLabel": "NWLP",
+       "created_user": "MichiganDNR",
+       "created_date": 1787145875759,
+       "last_edited_user": "MichiganDNR",
+       "last_edited_date": 1787145875759
+      }
+     },
+     {
+      "layer": "2 DNR Forest Management Units",
+      "point": [
+       45.413,
+       -87.352
+      ],
+      "attrs": {
+       "ForestManagementUnit": "Escanaba",
+       "ForestManagementUnitNumber": 33,
+       "UnitManager": "Daniel Racine",
+       "UnitManagerEmail": "racined@michigan.gov",
+       "District": "Western Upper Peninsula",
+       "DistrictLabel": "WUP",
+       "created_user": "MichiganDNR",
+       "created_date": 1787145875759,
+       "last_edited_user": "MichiganDNR",
+       "last_edited_date": 1787145875759
+      }
+     },
+     {
+      "layer": "2 DNR Forest Management Units",
+      "point": [
+       47.4722,
+       -87.9044
+      ],
+      "attrs": {
+       "ForestManagementUnit": "Baraga",
+       "ForestManagementUnitNumber": 11,
+       "UnitManager": "Brad Carlson",
+       "UnitManagerEmail": "carlsonb@michigan.gov",
+       "District": "Western Upper Peninsula",
+       "DistrictLabel": "WUP",
+       "created_user": "MichiganDNR",
+       "created_date": 1787145875759,
+       "last_edited_user": "MichiganDNR",
+       "last_edited_date": 1787145875759
+      }
+     },
+     {
+      "layer": "2 DNR Forest Management Units",
+      "point": [
+       45.5915,
+       -84.1643
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 DNR Forest Management Units",
+      "point": [
+       47.3782,
+       -88.0276
+      ],
+      "attrs": {
+       "ForestManagementUnit": "Baraga",
+       "ForestManagementUnitNumber": 11,
+       "UnitManager": "Brad Carlson",
+       "UnitManagerEmail": "carlsonb@michigan.gov",
+       "District": "Western Upper Peninsula",
+       "DistrictLabel": "WUP",
+       "created_user": "MichiganDNR",
+       "created_date": 1787145875759,
+       "last_edited_user": "MichiganDNR",
+       "last_edited_date": 1787145875759
+      }
+     },
+     {
+      "layer": "2 DNR Forest Management Units",
+      "point": [
+       43.2685,
+       -82.5278
+      ],
+      "attrs": {
+       "ForestManagementUnit": "Southern",
+       "ForestManagementUnitNumber": 99,
+       "UnitManager": "Jeff Vasher",
+       "UnitManagerEmail": "vasherj@michigan.gov",
+       "District": "North Western Lower Peninsula",
+       "DistrictLabel": "NWLP",
+       "created_user": "MichiganDNR",
+       "created_date": 1787145875759,
+       "last_edited_user": "MichiganDNR",
+       "last_edited_date": 1787145875759
+      }
+     },
+     {
+      "layer": "2 DNR Forest Management Units",
+      "point": [
+       46.716,
+       -85.3601
+      ],
+      "attrs": {
+       "ForestManagementUnit": "Newberry",
+       "ForestManagementUnitNumber": 42,
+       "UnitManager": "Keith Magnusson",
+       "UnitManagerEmail": "magnussonk@michigan.gov",
+       "District": "Eastern Upper Peninsula",
+       "DistrictLabel": "EUP",
+       "created_user": "MichiganDNR",
+       "created_date": 1787145875759,
+       "last_edited_user": "MichiganDNR",
+       "last_edited_date": 1787145875759
+      }
+     },
+     {
+      "layer": "2 DNR Forest Management Units",
+      "point": [
+       45.7784,
+       -84.7219
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 DNR Forest Management Units",
+      "point": [
+       46.7586,
+       -84.9666
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "MI",
+    "url": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRReferenceAssetsOPENDATA/FeatureServer/10",
+    "note": "MI DNR Managed Sites",
+    "hits": [
+     {
+      "layer": "10 DNR Managed Site",
+      "skipped": "not a polygon layer (esriGeometryPoint)"
+     }
+    ]
+   },
+   {
+    "st": "MI",
+    "url": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/7",
+    "note": "MI DNR Wildlife Management Units",
+    "hits": [
+     {
+      "layer": "7 DNR Wildlife Management Units",
+      "point": [
+       46.6215,
+       -89.3912
+      ],
+      "attrs": {
+       "ManagementUnitLabel": "Northern Michigan Region",
+       "UnitManager": "David Lemmien",
+       "UnitMangerEmail": "LemmienD",
+       "created_user": "MichiganDNR",
+       "created_date": 1787145899333,
+       "last_edited_user": "MichiganDNR",
+       "last_edited_date": 1787145899333,
+       "ManagementUnit": "Upper Peninsula Region"
+      }
+     },
+     {
+      "layer": "7 DNR Wildlife Management Units",
+      "point": [
+       44.7903,
+       -84.8364
+      ],
+      "attrs": {
+       "ManagementUnitLabel": "Northern Michigan Region",
+       "UnitManager": "John Niewoonder",
+       "UnitMangerEmail": "NiewoonderJ",
+       "created_user": "MichiganDNR",
+       "created_date": 1787145899333,
+       "last_edited_user": "MichiganDNR",
+       "last_edited_date": 1787145899333,
+       "ManagementUnit": "Northern Lower Peninsula Region"
+      }
+     },
+     {
+      "layer": "7 DNR Wildlife Management Units",
+      "point": [
+       46.135,
+       -87.824
+      ],
+      "attrs": {
+       "ManagementUnitLabel": "Northern Michigan Region",
+       "UnitManager": "David Lemmien",
+       "UnitMangerEmail": "LemmienD",
+       "created_user": "MichiganDNR",
+       "created_date": 1787145899333,
+       "last_edited_user": "MichiganDNR",
+       "last_edited_date": 1787145899333,
+       "ManagementUnit": "Upper Peninsula Region"
+      }
+     },
+     {
+      "layer": "7 DNR Wildlife Management Units",
+      "point": [
+       45.524,
+       -87.4008
+      ],
+      "attrs": {
+       "ManagementUnitLabel": "Northern Michigan Region",
+       "UnitManager": "David Lemmien",
+       "UnitMangerEmail": "LemmienD",
+       "created_user": "MichiganDNR",
+       "created_date": 1787145899333,
+       "last_edited_user": "MichiganDNR",
+       "last_edited_date": 1787145899333,
+       "ManagementUnit": "Upper Peninsula Region"
+      }
+     },
+     {
+      "layer": "7 DNR Wildlife Management Units",
+      "point": [
+       46.677,
+       -85.7723
+      ],
+      "attrs": {
+       "ManagementUnitLabel": "Northern Michigan Region",
+       "UnitManager": "David Lemmien",
+       "UnitMangerEmail": "LemmienD",
+       "created_user": "MichiganDNR",
+       "created_date": 1787145899333,
+       "last_edited_user": "MichiganDNR",
+       "last_edited_date": 1787145899333,
+       "ManagementUnit": "Upper Peninsula Region"
+      }
+     },
+     {
+      "layer": "7 DNR Wildlife Management Units",
+      "point": [
+       45.4495,
+       -84.7302
+      ],
+      "attrs": {
+       "ManagementUnitLabel": "Northern Michigan Region",
+       "UnitManager": "John Niewoonder",
+       "UnitMangerEmail": "NiewoonderJ",
+       "created_user": "MichiganDNR",
+       "created_date": 1787145899333,
+       "last_edited_user": "MichiganDNR",
+       "last_edited_date": 1787145899333,
+       "ManagementUnit": "Northern Lower Peninsula Region"
+      }
+     },
+     {
+      "layer": "7 DNR Wildlife Management Units",
+      "point": [
+       43.9647,
+       -85.7985
+      ],
+      "attrs": {
+       "ManagementUnitLabel": "Northern Michigan Region",
+       "UnitManager": "John Niewoonder",
+       "UnitMangerEmail": "NiewoonderJ",
+       "created_user": "MichiganDNR",
+       "created_date": 1787145899333,
+       "last_edited_user": "MichiganDNR",
+       "last_edited_date": 1787145899333,
+       "ManagementUnit": "Northern Lower Peninsula Region"
+      }
+     },
+     {
+      "layer": "7 DNR Wildlife Management Units",
+      "point": [
+       45.1142,
+       -86.0108
+      ],
+      "attrs": {
+       "ManagementUnitLabel": "Northern Michigan Region",
+       "UnitManager": "John Niewoonder",
+       "UnitMangerEmail": "NiewoonderJ",
+       "created_user": "MichiganDNR",
+       "created_date": 1787145899333,
+       "last_edited_user": "MichiganDNR",
+       "last_edited_date": 1787145899333,
+       "ManagementUnit": "Northern Lower Peninsula Region"
+      }
+     },
+     {
+      "layer": "7 DNR Wildlife Management Units",
+      "point": [
+       45.413,
+       -87.352
+      ],
+      "attrs": {
+       "ManagementUnitLabel": "Northern Michigan Region",
+       "UnitManager": "David Lemmien",
+       "UnitMangerEmail": "LemmienD",
+       "created_user": "MichiganDNR",
+       "created_date": 1787145899333,
+       "last_edited_user": "MichiganDNR",
+       "last_edited_date": 1787145899333,
+       "ManagementUnit": "Upper Peninsula Region"
+      }
+     },
+     {
+      "layer": "7 DNR Wildlife Management Units",
+      "point": [
+       47.4722,
+       -87.9044
+      ],
+      "attrs": {
+       "ManagementUnitLabel": "Northern Michigan Region",
+       "UnitManager": "David Lemmien",
+       "UnitMangerEmail": "LemmienD",
+       "created_user": "MichiganDNR",
+       "created_date": 1787145899333,
+       "last_edited_user": "MichiganDNR",
+       "last_edited_date": 1787145899333,
+       "ManagementUnit": "Upper Peninsula Region"
+      }
+     },
+     {
+      "layer": "7 DNR Wildlife Management Units",
+      "point": [
+       45.5915,
+       -84.1643
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "7 DNR Wildlife Management Units",
+      "point": [
+       47.3782,
+       -88.0276
+      ],
+      "attrs": {
+       "ManagementUnitLabel": "Northern Michigan Region",
+       "UnitManager": "David Lemmien",
+       "UnitMangerEmail": "LemmienD",
+       "created_user": "MichiganDNR",
+       "created_date": 1787145899333,
+       "last_edited_user": "MichiganDNR",
+       "last_edited_date": 1787145899333,
+       "ManagementUnit": "Upper Peninsula Region"
+      }
+     },
+     {
+      "layer": "7 DNR Wildlife Management Units",
+      "point": [
+       43.2685,
+       -82.5278
+      ],
+      "attrs": {
+       "ManagementUnitLabel": "Southern Michigan Region",
+       "UnitManager": "Joseph Robison",
+       "UnitMangerEmail": "RobisonJ",
+       "created_user": "MichiganDNR",
+       "created_date": 1787145899333,
+       "last_edited_user": "MichiganDNR",
+       "last_edited_date": 1787145899333,
+       "ManagementUnit": "Southeastern LP Region"
+      }
+     },
+     {
+      "layer": "7 DNR Wildlife Management Units",
+      "point": [
+       46.716,
+       -85.3601
+      ],
+      "attrs": {
+       "ManagementUnitLabel": "Northern Michigan Region",
+       "UnitManager": "David Lemmien",
+       "UnitMangerEmail": "LemmienD",
+       "created_user": "MichiganDNR",
+       "created_date": 1787145899333,
+       "last_edited_user": "MichiganDNR",
+       "last_edited_date": 1787145899333,
+       "ManagementUnit": "Upper Peninsula Region"
+      }
+     },
+     {
+      "layer": "7 DNR Wildlife Management Units",
+      "point": [
+       45.7784,
+       -84.7219
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "7 DNR Wildlife Management Units",
+      "point": [
+       46.7586,
+       -84.9666
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "MI",
+    "url": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRLOTSParcelsOPENDATA/FeatureServer/13",
+    "note": "MI DNR Project Boundaries",
+    "hits": [
+     {
+      "layer": "13 Project Boundary",
+      "point": [
+       46.6215,
+       -89.3912
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "13 Project Boundary",
+      "point": [
+       44.7903,
+       -84.8364
+      ],
+      "attrs": {
+       "ProjectID": 164,
+       "UnitName": "Grayling Forest Management Unit",
+       "Division": "Forestry",
+       "GISAcres": 38820,
+       "GISSquareMiles": 61,
+       "PLSSBase": "USGS quads",
+       "created_user": "MichiganDNR",
+       "created_date": 1793105947625,
+       "last_edited_user": "MichiganDNR",
+       "last_edited_date": 1793105947625
+      }
+     },
+     {
+      "layer": "13 Project Boundary",
+      "point": [
+       46.135,
+       -87.824
+      ],
+      "attrs": {
+       "ProjectID": 157,
+       "UnitName": "Crystal Falls Forest Management Unit",
+       "Division": "Forestry",
+       "GISAcres": 168703,
+       "GISSquareMiles": 264,
+       "PLSSBase": "USGS quads",
+       "created_user": "MichiganDNR",
+       "created_date": 1793105947625,
+       "last_edited_user": "MichiganDNR",
+       "last_edited_date": 1793105947625
+      }
+     },
+     {
+      "layer": "13 Project Boundary",
+      "point": [
+       45.524,
+       -87.4008
+      ],
+      "attrs": {
+       "ProjectID": 159,
+       "UnitName": "Escanaba Forest Management Unit",
+       "Division": "Forestry",
+       "GISAcres": 73270,
+       "GISSquareMiles": 114,
+       "PLSSBase": "USGS quads",
+       "created_user": "MichiganDNR",
+       "created_date": 1793105947625,
+       "last_edited_user": "MichiganDNR",
+       "last_edited_date": 1793105947625
+      }
+     },
+     {
+      "layer": "13 Project Boundary",
+      "point": [
+       46.677,
+       -85.7723
+      ],
+      "attrs": {
+       "ProjectID": 167,
+       "UnitName": "Newberry Forest Management Unit",
+       "Division": "Forestry",
+       "GISAcres": 345972,
+       "GISSquareMiles": 541,
+       "PLSSBase": "USGS quads",
+       "created_user": "MichiganDNR",
+       "created_date": 1793105947625,
+       "last_edited_user": "MichiganDNR",
+       "last_edited_date": 1793105947625
+      }
+     },
+     {
+      "layer": "13 Project Boundary",
+      "point": [
+       45.4495,
+       -84.7302
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "13 Project Boundary",
+      "point": [
+       43.9647,
+       -85.7985
+      ],
+      "attrs": {
+       "ProjectID": 155,
+       "UnitName": "Cadillac Forest Management Unit",
+       "Division": "Forestry",
+       "GISAcres": 69157,
+       "GISSquareMiles": 108,
+       "PLSSBase": "USGS quads",
+       "created_user": "MichiganDNR",
+       "created_date": 1793105947625,
+       "last_edited_user": "MichiganDNR",
+       "last_edited_date": 1793105947625
+      }
+     },
+     {
+      "layer": "13 Project Boundary",
+      "point": [
+       45.1142,
+       -86.0108
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "13 Project Boundary",
+      "point": [
+       45.413,
+       -87.352
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "13 Project Boundary",
+      "point": [
+       47.4722,
+       -87.9044
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "13 Project Boundary",
+      "point": [
+       45.5915,
+       -84.1643
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "13 Project Boundary",
+      "point": [
+       47.3782,
+       -88.0276
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "13 Project Boundary",
+      "point": [
+       43.2685,
+       -82.5278
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "13 Project Boundary",
+      "point": [
+       46.716,
+       -85.3601
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "13 Project Boundary",
+      "point": [
+       45.7784,
+       -84.7219
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "13 Project Boundary",
+      "point": [
+       46.7586,
+       -84.9666
+      ],
+      "nohit": true
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 117,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
