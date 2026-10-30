@@ -6,10 +6,7 @@ name: KPC 2-fer small batches (hidden)
 on:
   schedule:
     - cron: '23 10 * * *'
-  # Oct 29 11:40 PM (BOT E, plan KPC_Key_And_2fer_Automation_Plan.md): also right after the waiting room ran (a key release)
-  workflow_run:
-    workflows: ['KPC waiting room (by hand only; NOT switched on)']
-    types: [completed]
+  # Oct 29 11:30 PM: after a key release the waiting room (chat 10, BOT D) dispatches this workflow itself (force=yes)
   workflow_dispatch:
     inputs:
       force:
