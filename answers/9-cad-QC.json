@@ -1,0 +1,613 @@
+{
+ "request": "requests/9-cad-QC.json",
+ "id": "9-cad-QC",
+ "chat": 9,
+ "kind": "probe",
+ "report": "CA dive QC: re-run P-2 for 4 name-agreeing parks to get the layer URL",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "CA dive QC: re-run P-2 for 4 name-agreeing parks to get the layer URL",
+  "probe": {
+   "about": "Canada dive (HQ 9:30 AM): refs in order of points: CA-4969,CA-4986,CA-5005,CA-5052",
+   "refs": [
+    "CA-4969",
+    "CA-4986",
+    "CA-5005",
+    "CA-5052"
+   ],
+   "pointq": [
+    {
+     "st": "QC",
+     "url": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/0",
+     "note": "Québec Aire",
+     "points": [
+      [
+       46.4717,
+       -73.7217
+      ],
+      [
+       47.9537,
+       -69.8128
+      ],
+      [
+       45.4295,
+       -73.5932
+      ],
+      [
+       49.0422,
+       -68.4513
+      ]
+     ]
+    },
+    {
+     "st": "QC",
+     "url": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/3",
+     "note": "Québec Parc",
+     "points": [
+      [
+       46.4717,
+       -73.7217
+      ],
+      [
+       47.9537,
+       -69.8128
+      ],
+      [
+       45.4295,
+       -73.5932
+      ],
+      [
+       49.0422,
+       -68.4513
+      ]
+     ]
+    },
+    {
+     "st": "QC",
+     "url": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/4",
+     "note": "Québec Parc ~1",
+     "points": [
+      [
+       46.4717,
+       -73.7217
+      ],
+      [
+       47.9537,
+       -69.8128
+      ],
+      [
+       45.4295,
+       -73.5932
+      ],
+      [
+       49.0422,
+       -68.4513
+      ]
+     ]
+    },
+    {
+     "st": "QC",
+     "url": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/5",
+     "note": "Québec Parc ~2",
+     "points": [
+      [
+       46.4717,
+       -73.7217
+      ],
+      [
+       47.9537,
+       -69.8128
+      ],
+      [
+       45.4295,
+       -73.5932
+      ],
+      [
+       49.0422,
+       -68.4513
+      ]
+     ]
+    },
+    {
+     "st": "QC",
+     "url": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/6",
+     "note": "Québec Parc ~3",
+     "points": [
+      [
+       46.4717,
+       -73.7217
+      ],
+      [
+       47.9537,
+       -69.8128
+      ],
+      [
+       45.4295,
+       -73.5932
+      ],
+      [
+       49.0422,
+       -68.4513
+      ]
+     ]
+    },
+    {
+     "st": "QC",
+     "url": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/10",
+     "note": "Québec Refug",
+     "points": [
+      [
+       46.4717,
+       -73.7217
+      ],
+      [
+       47.9537,
+       -69.8128
+      ],
+      [
+       45.4295,
+       -73.5932
+      ],
+      [
+       49.0422,
+       -68.4513
+      ]
+     ]
+    },
+    {
+     "st": "QC",
+     "url": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/11",
+     "note": "Québec Réser",
+     "points": [
+      [
+       46.4717,
+       -73.7217
+      ],
+      [
+       47.9537,
+       -69.8128
+      ],
+      [
+       45.4295,
+       -73.5932
+      ],
+      [
+       49.0422,
+       -68.4513
+      ]
+     ]
+    },
+    {
+     "st": "QC",
+     "url": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/16",
+     "note": "Québec Zone",
+     "points": [
+      [
+       46.4717,
+       -73.7217
+      ],
+      [
+       47.9537,
+       -69.8128
+      ],
+      [
+       45.4295,
+       -73.5932
+      ],
+      [
+       49.0422,
+       -68.4513
+      ]
+     ]
+    },
+    {
+     "st": "QC",
+     "url": "https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/10",
+     "note": "Québec ecolo",
+     "points": [
+      [
+       46.4717,
+       -73.7217
+      ],
+      [
+       47.9537,
+       -69.8128
+      ],
+      [
+       45.4295,
+       -73.5932
+      ],
+      [
+       49.0422,
+       -68.4513
+      ]
+     ]
+    },
+    {
+     "st": "QC",
+     "url": "https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/23",
+     "note": "Québec prote",
+     "points": [
+      [
+       46.4717,
+       -73.7217
+      ],
+      [
+       47.9537,
+       -69.8128
+      ],
+      [
+       45.4295,
+       -73.5932
+      ],
+      [
+       49.0422,
+       -68.4513
+      ]
+     ]
+    },
+    {
+     "st": "QC",
+     "url": "https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/12",
+     "note": "Québec recog",
+     "points": [
+      [
+       46.4717,
+       -73.7217
+      ],
+      [
+       47.9537,
+       -69.8128
+      ],
+      [
+       45.4295,
+       -73.5932
+      ],
+      [
+       49.0422,
+       -68.4513
+      ]
+     ]
+    },
+    {
+     "st": "QC",
+     "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/10",
+     "note": "Ontario fede",
+     "points": [
+      [
+       46.4717,
+       -73.7217
+      ],
+      [
+       47.9537,
+       -69.8128
+      ],
+      [
+       45.4295,
+       -73.5932
+      ],
+      [
+       49.0422,
+       -68.4513
+      ]
+     ]
+    },
+    {
+     "st": "QC",
+     "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "note": "cpcad",
+     "points": [
+      [
+       46.4717,
+       -73.7217
+      ],
+      [
+       47.9537,
+       -69.8128
+      ],
+      [
+       45.4295,
+       -73.5932
+      ],
+      [
+       49.0422,
+       -68.4513
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-30 14:33Z",
+ "results": {
+  "about": "Canada dive (HQ 9:30 AM): refs in order of points: CA-4969,CA-4986,CA-5005,CA-5052",
+  "date": "2026-10-30",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "QC",
+    "url": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/0",
+    "note": "Québec Aire",
+    "hits": [
+     {
+      "layer": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/0",
+      "error": "{'code': 400, 'message': 'Failed to execute query.', 'details': []}"
+     }
+    ]
+   },
+   {
+    "st": "QC",
+    "url": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/3",
+    "note": "Québec Parc",
+    "hits": [
+     {
+      "layer": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/3",
+      "error": "{'code': 400, 'message': 'Failed to execute query.', 'details': []}"
+     }
+    ]
+   },
+   {
+    "st": "QC",
+    "url": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/4",
+    "note": "Québec Parc ~1",
+    "hits": [
+     {
+      "layer": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/4",
+      "error": "{'code': 400, 'message': 'Failed to execute query.', 'details': []}"
+     }
+    ]
+   },
+   {
+    "st": "QC",
+    "url": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/5",
+    "note": "Québec Parc ~2",
+    "hits": [
+     {
+      "layer": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/5",
+      "error": "{'code': 400, 'message': 'Failed to execute query.', 'details': []}"
+     }
+    ]
+   },
+   {
+    "st": "QC",
+    "url": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/6",
+    "note": "Québec Parc ~3",
+    "hits": [
+     {
+      "layer": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/6",
+      "error": "{'code': 400, 'message': 'Failed to execute query.', 'details': []}"
+     }
+    ]
+   },
+   {
+    "st": "QC",
+    "url": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/10",
+    "note": "Québec Refug",
+    "hits": [
+     {
+      "layer": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/10",
+      "error": "{'code': 400, 'message': 'Failed to execute query.', 'details': []}"
+     }
+    ]
+   },
+   {
+    "st": "QC",
+    "url": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/11",
+    "note": "Québec Réser",
+    "hits": [
+     {
+      "layer": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/11",
+      "error": "{'code': 400, 'message': 'Failed to execute query.', 'details': []}"
+     }
+    ]
+   },
+   {
+    "st": "QC",
+    "url": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/16",
+    "note": "Québec Zone",
+    "hits": [
+     {
+      "layer": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/16",
+      "error": "{'code': 400, 'message': 'Failed to execute query.', 'details': []}"
+     }
+    ]
+   },
+   {
+    "st": "QC",
+    "url": "https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/10",
+    "note": "Québec ecolo",
+    "hits": [
+     {
+      "layer": "10 AP - Réserves écologiques - MELCCFP",
+      "point": [
+       46.4717,
+       -73.7217
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 AP - Réserves écologiques - MELCCFP",
+      "point": [
+       47.9537,
+       -69.8128
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 AP - Réserves écologiques - MELCCFP",
+      "point": [
+       45.4295,
+       -73.5932
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 AP - Réserves écologiques - MELCCFP",
+      "point": [
+       49.0422,
+       -68.4513
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "QC",
+    "url": "https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/23",
+    "note": "Québec prote",
+    "hits": [
+     {
+      "layer": "23 Ensemble des aires protégées et autres mesures de conservation efficaces",
+      "point": [
+       46.4717,
+       -73.7217
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "23 Ensemble des aires protégées et autres mesures de conservation efficaces",
+      "point": [
+       47.9537,
+       -69.8128
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "23 Ensemble des aires protégées et autres mesures de conservation efficaces",
+      "point": [
+       45.4295,
+       -73.5932
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "23 Ensemble des aires protégées et autres mesures de conservation efficaces",
+      "point": [
+       49.0422,
+       -68.4513
+      ],
+      "attrs": {
+       "DESIG_GR": "Milieu naturel de conservation volontaire",
+       "DESIGNOM": "Milieu naturel de conservation volontaire",
+       "TOPONYME": "Milieu naturel de conservation volontaire Parc nature de Pointe-aux-Outardes",
+       "RESPONSABL": "Municipalité de Pointe-aux-Outardes",
+       "BIOME": "T",
+       "UICN": "VI",
+       "HA_LEGAL": 91.162,
+       "DA_CREATIO": "1900-01-01",
+       "LONDMS": "68° 25' 60,0\" O",
+       "LATDMS": "49° 03' 00,0\" N",
+       "MACODE": 1557,
+       "LIEN": "http://www.environnement.gouv.qc.ca/biodiversite/prive/terres-priv.htm",
+       "DESIG_NO": 134
+      }
+     }
+    ]
+   },
+   {
+    "st": "QC",
+    "url": "https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/12",
+    "note": "Québec recog",
+    "hits": [
+     {
+      "layer": "12 AP - Réserves naturelles reconnues - MELCCFP",
+      "point": [
+       46.4717,
+       -73.7217
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "12 AP - Réserves naturelles reconnues - MELCCFP",
+      "point": [
+       47.9537,
+       -69.8128
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "12 AP - Réserves naturelles reconnues - MELCCFP",
+      "point": [
+       45.4295,
+       -73.5932
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "12 AP - Réserves naturelles reconnues - MELCCFP",
+      "point": [
+       49.0422,
+       -68.4513
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "QC",
+    "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/10",
+    "note": "Ontario fede",
+    "hits": [
+     {
+      "layer": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/10",
+      "error": "{'code': 400, 'message': 'Failed to execute query.', 'details': []}"
+     }
+    ]
+   },
+   {
+    "st": "QC",
+    "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+    "note": "cpcad",
+    "hits": [
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.4717,
+       -73.7217
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       47.9537,
+       -69.8128
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       45.4295,
+       -73.5932
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.0422,
+       -68.4513
+      ],
+      "nohit": true
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 127,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
