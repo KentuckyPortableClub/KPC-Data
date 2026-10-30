@@ -1,0 +1,4222 @@
+{
+ "request": "requests/9-cap2-nb-5.json",
+ "id": "9-cap2-nb-5",
+ "chat": 9,
+ "kind": "probe",
+ "report": "CAP2 NB 5: 40 parks, 7 layers",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "CAP2 NB 5: 40 parks, 7 layers",
+  "probe": {
+   "about": "HQ 7:05 PM Canada P-2: point-in-polygon at the pin of no-outline parks (NB, 40 parks) against the province's key layers + CPCAD / federal. Refs in point order: CA-6462,CA-6463,CA-6464,CA-6465,CA-6466,CA-6469,CA-6470,CA-6472,CA-6475,CA-6477,CA-6478,CA-6479,CA-6480,CA-6485,CA-6487,CA-6488,CA-6489,CA-6491,CA-6492,CA-6493,CA-6494,CA-6495,CA-6496,CA-6498,CA-6499,CA-6500,CA-6501,CA-6515,CA-6516,CA-6517,CA-6519,CA-6520,CA-6521,CA-6530,CA-6555,CA-6579,CA-6584,CA-6586,CA-6590,CA-6591. PREP only, no tracing. Results to chat 2 + Canada Fable file.",
+   "refs": [
+    "CA-6462",
+    "CA-6463",
+    "CA-6464",
+    "CA-6465",
+    "CA-6466",
+    "CA-6469",
+    "CA-6470",
+    "CA-6472",
+    "CA-6475",
+    "CA-6477",
+    "CA-6478",
+    "CA-6479",
+    "CA-6480",
+    "CA-6485",
+    "CA-6487",
+    "CA-6488",
+    "CA-6489",
+    "CA-6491",
+    "CA-6492",
+    "CA-6493",
+    "CA-6494",
+    "CA-6495",
+    "CA-6496",
+    "CA-6498",
+    "CA-6499",
+    "CA-6500",
+    "CA-6501",
+    "CA-6515",
+    "CA-6516",
+    "CA-6517",
+    "CA-6519",
+    "CA-6520",
+    "CA-6521",
+    "CA-6530",
+    "CA-6555",
+    "CA-6579",
+    "CA-6584",
+    "CA-6586",
+    "CA-6590",
+    "CA-6591"
+   ],
+   "pointq": [
+    {
+     "st": "NB",
+     "url": "https://gis-erd-der.gnb.ca/server/rest/services/OpenData/WMZ/MapServer/0",
+     "note": "NB WMZ",
+     "points": [
+      [
+       47.0254,
+       -65.4658
+      ],
+      [
+       45.9007,
+       -64.5165
+      ],
+      [
+       45.6279,
+       -67.4334
+      ],
+      [
+       45.8572,
+       -67.5249
+      ],
+      [
+       45.2603,
+       -66.0853
+      ],
+      [
+       46.2187,
+       -64.5559
+      ],
+      [
+       45.8997,
+       -64.5166
+      ],
+      [
+       46.617,
+       -65.3046
+      ],
+      [
+       45.9954,
+       -67.234
+      ],
+      [
+       45.3687,
+       -65.5121
+      ],
+      [
+       45.9944,
+       -67.4997
+      ],
+      [
+       47.459,
+       -67.9513
+      ],
+      [
+       47.8007,
+       -66.6501
+      ],
+      [
+       46.6912,
+       -64.7313
+      ],
+      [
+       46.2126,
+       -66.6132
+      ],
+      [
+       47.6563,
+       -65.6253
+      ],
+      [
+       45.925,
+       -64.6438
+      ],
+      [
+       46.1462,
+       -66.7841
+      ],
+      [
+       45.9545,
+       -65.1682
+      ],
+      [
+       47.0043,
+       -65.5671
+      ],
+      [
+       45.8488,
+       -64.5769
+      ],
+      [
+       46.0898,
+       -64.7704
+      ],
+      [
+       47.0015,
+       -65.5654
+      ],
+      [
+       46.5491,
+       -67.6792
+      ],
+      [
+       46.0292,
+       -67.5432
+      ],
+      [
+       47.7221,
+       -64.6606
+      ],
+      [
+       46.1704,
+       -64.3423
+      ],
+      [
+       46.0858,
+       -64.7834
+      ],
+      [
+       45.2752,
+       -66.0673
+      ],
+      [
+       46.4727,
+       -67.5795
+      ],
+      [
+       46.1374,
+       -64.902
+      ],
+      [
+       46.2946,
+       -64.5605
+      ],
+      [
+       45.2884,
+       -66.036
+      ],
+      [
+       47.4417,
+       -65.7072
+      ],
+      [
+       46.0613,
+       -64.8046
+      ],
+      [
+       46.02,
+       -64.1019
+      ],
+      [
+       46.2352,
+       -64.4318
+      ],
+      [
+       47.774,
+       -65.0113
+      ],
+      [
+       46.2211,
+       -64.6943
+      ],
+      [
+       46.3173,
+       -64.7269
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "NB",
+     "url": "https://geonb.snb.ca/arcgis/rest/services/GeoNB_DNR_ProvincialParks/MapServer/0",
+     "note": "NB-PP Govern",
+     "points": [
+      [
+       47.0254,
+       -65.4658
+      ],
+      [
+       45.9007,
+       -64.5165
+      ],
+      [
+       45.6279,
+       -67.4334
+      ],
+      [
+       45.8572,
+       -67.5249
+      ],
+      [
+       45.2603,
+       -66.0853
+      ],
+      [
+       46.2187,
+       -64.5559
+      ],
+      [
+       45.8997,
+       -64.5166
+      ],
+      [
+       46.617,
+       -65.3046
+      ],
+      [
+       45.9954,
+       -67.234
+      ],
+      [
+       45.3687,
+       -65.5121
+      ],
+      [
+       45.9944,
+       -67.4997
+      ],
+      [
+       47.459,
+       -67.9513
+      ],
+      [
+       47.8007,
+       -66.6501
+      ],
+      [
+       46.6912,
+       -64.7313
+      ],
+      [
+       46.2126,
+       -66.6132
+      ],
+      [
+       47.6563,
+       -65.6253
+      ],
+      [
+       45.925,
+       -64.6438
+      ],
+      [
+       46.1462,
+       -66.7841
+      ],
+      [
+       45.9545,
+       -65.1682
+      ],
+      [
+       47.0043,
+       -65.5671
+      ],
+      [
+       45.8488,
+       -64.5769
+      ],
+      [
+       46.0898,
+       -64.7704
+      ],
+      [
+       47.0015,
+       -65.5654
+      ],
+      [
+       46.5491,
+       -67.6792
+      ],
+      [
+       46.0292,
+       -67.5432
+      ],
+      [
+       47.7221,
+       -64.6606
+      ],
+      [
+       46.1704,
+       -64.3423
+      ],
+      [
+       46.0858,
+       -64.7834
+      ],
+      [
+       45.2752,
+       -66.0673
+      ],
+      [
+       46.4727,
+       -67.5795
+      ],
+      [
+       46.1374,
+       -64.902
+      ],
+      [
+       46.2946,
+       -64.5605
+      ],
+      [
+       45.2884,
+       -66.036
+      ],
+      [
+       47.4417,
+       -65.7072
+      ],
+      [
+       46.0613,
+       -64.8046
+      ],
+      [
+       46.02,
+       -64.1019
+      ],
+      [
+       46.2352,
+       -64.4318
+      ],
+      [
+       47.774,
+       -65.0113
+      ],
+      [
+       46.2211,
+       -64.6943
+      ],
+      [
+       46.3173,
+       -64.7269
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "NB",
+     "url": "https://gis-erd-der.gnb.ca/server/rest/services/OpenData/PNAs/FeatureServer/0",
+     "note": "New Brunswic",
+     "points": [
+      [
+       47.0254,
+       -65.4658
+      ],
+      [
+       45.9007,
+       -64.5165
+      ],
+      [
+       45.6279,
+       -67.4334
+      ],
+      [
+       45.8572,
+       -67.5249
+      ],
+      [
+       45.2603,
+       -66.0853
+      ],
+      [
+       46.2187,
+       -64.5559
+      ],
+      [
+       45.8997,
+       -64.5166
+      ],
+      [
+       46.617,
+       -65.3046
+      ],
+      [
+       45.9954,
+       -67.234
+      ],
+      [
+       45.3687,
+       -65.5121
+      ],
+      [
+       45.9944,
+       -67.4997
+      ],
+      [
+       47.459,
+       -67.9513
+      ],
+      [
+       47.8007,
+       -66.6501
+      ],
+      [
+       46.6912,
+       -64.7313
+      ],
+      [
+       46.2126,
+       -66.6132
+      ],
+      [
+       47.6563,
+       -65.6253
+      ],
+      [
+       45.925,
+       -64.6438
+      ],
+      [
+       46.1462,
+       -66.7841
+      ],
+      [
+       45.9545,
+       -65.1682
+      ],
+      [
+       47.0043,
+       -65.5671
+      ],
+      [
+       45.8488,
+       -64.5769
+      ],
+      [
+       46.0898,
+       -64.7704
+      ],
+      [
+       47.0015,
+       -65.5654
+      ],
+      [
+       46.5491,
+       -67.6792
+      ],
+      [
+       46.0292,
+       -67.5432
+      ],
+      [
+       47.7221,
+       -64.6606
+      ],
+      [
+       46.1704,
+       -64.3423
+      ],
+      [
+       46.0858,
+       -64.7834
+      ],
+      [
+       45.2752,
+       -66.0673
+      ],
+      [
+       46.4727,
+       -67.5795
+      ],
+      [
+       46.1374,
+       -64.902
+      ],
+      [
+       46.2946,
+       -64.5605
+      ],
+      [
+       45.2884,
+       -66.036
+      ],
+      [
+       47.4417,
+       -65.7072
+      ],
+      [
+       46.0613,
+       -64.8046
+      ],
+      [
+       46.02,
+       -64.1019
+      ],
+      [
+       46.2352,
+       -64.4318
+      ],
+      [
+       47.774,
+       -65.0113
+      ],
+      [
+       46.2211,
+       -64.6943
+      ],
+      [
+       46.3173,
+       -64.7269
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "NB",
+     "url": "https://gis-erd-der.gnb.ca/server/rest/services/OpenData/Nature_Legacy_Protected_Areas/FeatureServer/0",
+     "note": "New Brunswic~1",
+     "points": [
+      [
+       47.0254,
+       -65.4658
+      ],
+      [
+       45.9007,
+       -64.5165
+      ],
+      [
+       45.6279,
+       -67.4334
+      ],
+      [
+       45.8572,
+       -67.5249
+      ],
+      [
+       45.2603,
+       -66.0853
+      ],
+      [
+       46.2187,
+       -64.5559
+      ],
+      [
+       45.8997,
+       -64.5166
+      ],
+      [
+       46.617,
+       -65.3046
+      ],
+      [
+       45.9954,
+       -67.234
+      ],
+      [
+       45.3687,
+       -65.5121
+      ],
+      [
+       45.9944,
+       -67.4997
+      ],
+      [
+       47.459,
+       -67.9513
+      ],
+      [
+       47.8007,
+       -66.6501
+      ],
+      [
+       46.6912,
+       -64.7313
+      ],
+      [
+       46.2126,
+       -66.6132
+      ],
+      [
+       47.6563,
+       -65.6253
+      ],
+      [
+       45.925,
+       -64.6438
+      ],
+      [
+       46.1462,
+       -66.7841
+      ],
+      [
+       45.9545,
+       -65.1682
+      ],
+      [
+       47.0043,
+       -65.5671
+      ],
+      [
+       45.8488,
+       -64.5769
+      ],
+      [
+       46.0898,
+       -64.7704
+      ],
+      [
+       47.0015,
+       -65.5654
+      ],
+      [
+       46.5491,
+       -67.6792
+      ],
+      [
+       46.0292,
+       -67.5432
+      ],
+      [
+       47.7221,
+       -64.6606
+      ],
+      [
+       46.1704,
+       -64.3423
+      ],
+      [
+       46.0858,
+       -64.7834
+      ],
+      [
+       45.2752,
+       -66.0673
+      ],
+      [
+       46.4727,
+       -67.5795
+      ],
+      [
+       46.1374,
+       -64.902
+      ],
+      [
+       46.2946,
+       -64.5605
+      ],
+      [
+       45.2884,
+       -66.036
+      ],
+      [
+       47.4417,
+       -65.7072
+      ],
+      [
+       46.0613,
+       -64.8046
+      ],
+      [
+       46.02,
+       -64.1019
+      ],
+      [
+       46.2352,
+       -64.4318
+      ],
+      [
+       47.774,
+       -65.0113
+      ],
+      [
+       46.2211,
+       -64.6943
+      ],
+      [
+       46.3173,
+       -64.7269
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "NB",
+     "url": "https://gis-erd-der.gnb.ca/server/rest/services/OpenData/WildlifeRefuge/MapServer/0",
+     "note": "New Brunswic~2",
+     "points": [
+      [
+       47.0254,
+       -65.4658
+      ],
+      [
+       45.9007,
+       -64.5165
+      ],
+      [
+       45.6279,
+       -67.4334
+      ],
+      [
+       45.8572,
+       -67.5249
+      ],
+      [
+       45.2603,
+       -66.0853
+      ],
+      [
+       46.2187,
+       -64.5559
+      ],
+      [
+       45.8997,
+       -64.5166
+      ],
+      [
+       46.617,
+       -65.3046
+      ],
+      [
+       45.9954,
+       -67.234
+      ],
+      [
+       45.3687,
+       -65.5121
+      ],
+      [
+       45.9944,
+       -67.4997
+      ],
+      [
+       47.459,
+       -67.9513
+      ],
+      [
+       47.8007,
+       -66.6501
+      ],
+      [
+       46.6912,
+       -64.7313
+      ],
+      [
+       46.2126,
+       -66.6132
+      ],
+      [
+       47.6563,
+       -65.6253
+      ],
+      [
+       45.925,
+       -64.6438
+      ],
+      [
+       46.1462,
+       -66.7841
+      ],
+      [
+       45.9545,
+       -65.1682
+      ],
+      [
+       47.0043,
+       -65.5671
+      ],
+      [
+       45.8488,
+       -64.5769
+      ],
+      [
+       46.0898,
+       -64.7704
+      ],
+      [
+       47.0015,
+       -65.5654
+      ],
+      [
+       46.5491,
+       -67.6792
+      ],
+      [
+       46.0292,
+       -67.5432
+      ],
+      [
+       47.7221,
+       -64.6606
+      ],
+      [
+       46.1704,
+       -64.3423
+      ],
+      [
+       46.0858,
+       -64.7834
+      ],
+      [
+       45.2752,
+       -66.0673
+      ],
+      [
+       46.4727,
+       -67.5795
+      ],
+      [
+       46.1374,
+       -64.902
+      ],
+      [
+       46.2946,
+       -64.5605
+      ],
+      [
+       45.2884,
+       -66.036
+      ],
+      [
+       47.4417,
+       -65.7072
+      ],
+      [
+       46.0613,
+       -64.8046
+      ],
+      [
+       46.02,
+       -64.1019
+      ],
+      [
+       46.2352,
+       -64.4318
+      ],
+      [
+       47.774,
+       -65.0113
+      ],
+      [
+       46.2211,
+       -64.6943
+      ],
+      [
+       46.3173,
+       -64.7269
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "NB",
+     "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/10",
+     "note": "Ontario fede",
+     "points": [
+      [
+       47.0254,
+       -65.4658
+      ],
+      [
+       45.9007,
+       -64.5165
+      ],
+      [
+       45.6279,
+       -67.4334
+      ],
+      [
+       45.8572,
+       -67.5249
+      ],
+      [
+       45.2603,
+       -66.0853
+      ],
+      [
+       46.2187,
+       -64.5559
+      ],
+      [
+       45.8997,
+       -64.5166
+      ],
+      [
+       46.617,
+       -65.3046
+      ],
+      [
+       45.9954,
+       -67.234
+      ],
+      [
+       45.3687,
+       -65.5121
+      ],
+      [
+       45.9944,
+       -67.4997
+      ],
+      [
+       47.459,
+       -67.9513
+      ],
+      [
+       47.8007,
+       -66.6501
+      ],
+      [
+       46.6912,
+       -64.7313
+      ],
+      [
+       46.2126,
+       -66.6132
+      ],
+      [
+       47.6563,
+       -65.6253
+      ],
+      [
+       45.925,
+       -64.6438
+      ],
+      [
+       46.1462,
+       -66.7841
+      ],
+      [
+       45.9545,
+       -65.1682
+      ],
+      [
+       47.0043,
+       -65.5671
+      ],
+      [
+       45.8488,
+       -64.5769
+      ],
+      [
+       46.0898,
+       -64.7704
+      ],
+      [
+       47.0015,
+       -65.5654
+      ],
+      [
+       46.5491,
+       -67.6792
+      ],
+      [
+       46.0292,
+       -67.5432
+      ],
+      [
+       47.7221,
+       -64.6606
+      ],
+      [
+       46.1704,
+       -64.3423
+      ],
+      [
+       46.0858,
+       -64.7834
+      ],
+      [
+       45.2752,
+       -66.0673
+      ],
+      [
+       46.4727,
+       -67.5795
+      ],
+      [
+       46.1374,
+       -64.902
+      ],
+      [
+       46.2946,
+       -64.5605
+      ],
+      [
+       45.2884,
+       -66.036
+      ],
+      [
+       47.4417,
+       -65.7072
+      ],
+      [
+       46.0613,
+       -64.8046
+      ],
+      [
+       46.02,
+       -64.1019
+      ],
+      [
+       46.2352,
+       -64.4318
+      ],
+      [
+       47.774,
+       -65.0113
+      ],
+      [
+       46.2211,
+       -64.6943
+      ],
+      [
+       46.3173,
+       -64.7269
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "NB",
+     "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "note": "cpcad",
+     "points": [
+      [
+       47.0254,
+       -65.4658
+      ],
+      [
+       45.9007,
+       -64.5165
+      ],
+      [
+       45.6279,
+       -67.4334
+      ],
+      [
+       45.8572,
+       -67.5249
+      ],
+      [
+       45.2603,
+       -66.0853
+      ],
+      [
+       46.2187,
+       -64.5559
+      ],
+      [
+       45.8997,
+       -64.5166
+      ],
+      [
+       46.617,
+       -65.3046
+      ],
+      [
+       45.9954,
+       -67.234
+      ],
+      [
+       45.3687,
+       -65.5121
+      ],
+      [
+       45.9944,
+       -67.4997
+      ],
+      [
+       47.459,
+       -67.9513
+      ],
+      [
+       47.8007,
+       -66.6501
+      ],
+      [
+       46.6912,
+       -64.7313
+      ],
+      [
+       46.2126,
+       -66.6132
+      ],
+      [
+       47.6563,
+       -65.6253
+      ],
+      [
+       45.925,
+       -64.6438
+      ],
+      [
+       46.1462,
+       -66.7841
+      ],
+      [
+       45.9545,
+       -65.1682
+      ],
+      [
+       47.0043,
+       -65.5671
+      ],
+      [
+       45.8488,
+       -64.5769
+      ],
+      [
+       46.0898,
+       -64.7704
+      ],
+      [
+       47.0015,
+       -65.5654
+      ],
+      [
+       46.5491,
+       -67.6792
+      ],
+      [
+       46.0292,
+       -67.5432
+      ],
+      [
+       47.7221,
+       -64.6606
+      ],
+      [
+       46.1704,
+       -64.3423
+      ],
+      [
+       46.0858,
+       -64.7834
+      ],
+      [
+       45.2752,
+       -66.0673
+      ],
+      [
+       46.4727,
+       -67.5795
+      ],
+      [
+       46.1374,
+       -64.902
+      ],
+      [
+       46.2946,
+       -64.5605
+      ],
+      [
+       45.2884,
+       -66.036
+      ],
+      [
+       47.4417,
+       -65.7072
+      ],
+      [
+       46.0613,
+       -64.8046
+      ],
+      [
+       46.02,
+       -64.1019
+      ],
+      [
+       46.2352,
+       -64.4318
+      ],
+      [
+       47.774,
+       -65.0113
+      ],
+      [
+       46.2211,
+       -64.6943
+      ],
+      [
+       46.3173,
+       -64.7269
+      ]
+     ],
+     "dist": 100
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-30 00:34Z",
+ "results": {
+  "about": "HQ 7:05 PM Canada P-2: point-in-polygon at the pin of no-outline parks (NB, 40 parks) against the province's key layers + CPCAD / federal. Refs in point order: CA-6462,CA-6463,CA-6464,CA-6465,CA-6466,CA-6469,CA-6470,CA-6472,CA-6475,CA-6477,CA-6478,CA-6479,CA-6480,CA-6485,CA-6487,CA-6488,CA-6489,CA-6491,CA-6492,CA-6493,CA-6494,CA-6495,CA-6496,CA-6498,CA-6499,CA-6500,CA-6501,CA-6515,CA-6516,CA-6517,CA-6519,CA-6520,CA-6521,CA-6530,CA-6555,CA-6579,CA-6584,CA-6586,CA-6590,CA-6591. PREP only, no tracing. Results to chat 2 + Canada Fable file.",
+  "date": "2026-10-30",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "NB",
+    "url": "https://gis-erd-der.gnb.ca/server/rest/services/OpenData/WMZ/MapServer/0",
+    "note": "NB WMZ",
+    "hits": [
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       47.0254,
+       -65.4658
+      ],
+      "attrs": {
+       "WMZ": 14
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       45.9007,
+       -64.5165
+      ],
+      "attrs": {
+       "WMZ": 25
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       45.6279,
+       -67.4334
+      ],
+      "attrs": {
+       "WMZ": 15
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       45.8572,
+       -67.5249
+      ],
+      "attrs": {
+       "WMZ": 15
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       45.2603,
+       -66.0853
+      ],
+      "attrs": {
+       "WMZ": 23
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       46.2187,
+       -64.5559
+      ],
+      "attrs": {
+       "WMZ": 19
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       45.8997,
+       -64.5166
+      ],
+      "attrs": {
+       "WMZ": 25
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       46.617,
+       -65.3046
+      ],
+      "attrs": {
+       "WMZ": 14
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       45.9954,
+       -67.234
+      ],
+      "attrs": {
+       "WMZ": 16
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       45.3687,
+       -65.5121
+      ],
+      "attrs": {
+       "WMZ": 23
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       45.9944,
+       -67.4997
+      ],
+      "attrs": {
+       "WMZ": 15
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       47.459,
+       -67.9513
+      ],
+      "attrs": {
+       "WMZ": 2
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       47.8007,
+       -66.6501
+      ],
+      "attrs": {
+       "WMZ": 4
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       46.6912,
+       -64.7313
+      ],
+      "attrs": {
+       "WMZ": 19
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       46.2126,
+       -66.6132
+      ],
+      "attrs": {
+       "WMZ": 16
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       47.6563,
+       -65.6253
+      ],
+      "attrs": {
+       "WMZ": 5
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       45.925,
+       -64.6438
+      ],
+      "attrs": {
+       "WMZ": 24
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       46.1462,
+       -66.7841
+      ],
+      "attrs": {
+       "WMZ": 16
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       45.9545,
+       -65.1682
+      ],
+      "attrs": {
+       "WMZ": 22
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       47.0043,
+       -65.5671
+      ],
+      "attrs": {
+       "WMZ": 7
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       47.0043,
+       -65.5671
+      ],
+      "attrs": {
+       "WMZ": 8
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       45.8488,
+       -64.5769
+      ],
+      "attrs": {
+       "WMZ": 24
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       46.0898,
+       -64.7704
+      ],
+      "attrs": {
+       "WMZ": 19
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       47.0015,
+       -65.5654
+      ],
+      "attrs": {
+       "WMZ": 8
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       46.5491,
+       -67.6792
+      ],
+      "attrs": {
+       "WMZ": 10
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       46.0292,
+       -67.5432
+      ],
+      "attrs": {
+       "WMZ": 15
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       47.7221,
+       -64.6606
+      ],
+      "attrs": {
+       "WMZ": 9
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       46.1704,
+       -64.3423
+      ],
+      "attrs": {
+       "WMZ": 25
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       46.0858,
+       -64.7834
+      ],
+      "attrs": {
+       "WMZ": 19
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       45.2752,
+       -66.0673
+      ],
+      "attrs": {
+       "WMZ": 23
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       46.4727,
+       -67.5795
+      ],
+      "attrs": {
+       "WMZ": 10
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       46.4727,
+       -67.5795
+      ],
+      "attrs": {
+       "WMZ": 16
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       46.1374,
+       -64.902
+      ],
+      "attrs": {
+       "WMZ": 19
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       46.2946,
+       -64.5605
+      ],
+      "attrs": {
+       "WMZ": 19
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       45.2884,
+       -66.036
+      ],
+      "attrs": {
+       "WMZ": 23
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       47.4417,
+       -65.7072
+      ],
+      "attrs": {
+       "WMZ": 5
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       46.0613,
+       -64.8046
+      ],
+      "attrs": {
+       "WMZ": 24
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       46.02,
+       -64.1019
+      ],
+      "attrs": {
+       "WMZ": 25
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       46.2352,
+       -64.4318
+      ],
+      "attrs": {
+       "WMZ": 25
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       47.774,
+       -65.0113
+      ],
+      "attrs": {
+       "WMZ": 9
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       46.2211,
+       -64.6943
+      ],
+      "attrs": {
+       "WMZ": 19
+      }
+     },
+     {
+      "layer": "0 Wildlife Management Zones",
+      "point": [
+       46.3173,
+       -64.7269
+      ],
+      "attrs": {
+       "WMZ": 19
+      }
+     }
+    ]
+   },
+   {
+    "st": "NB",
+    "url": "https://geonb.snb.ca/arcgis/rest/services/GeoNB_DNR_ProvincialParks/MapServer/0",
+    "note": "NB-PP Govern",
+    "hits": [
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       47.0254,
+       -65.4658
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       45.9007,
+       -64.5165
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       45.6279,
+       -67.4334
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       45.8572,
+       -67.5249
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       45.2603,
+       -66.0853
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       46.2187,
+       -64.5559
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       45.8997,
+       -64.5166
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       46.617,
+       -65.3046
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       45.9954,
+       -67.234
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       45.3687,
+       -65.5121
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       45.9944,
+       -67.4997
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       47.459,
+       -67.9513
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       47.8007,
+       -66.6501
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       46.6912,
+       -64.7313
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       46.2126,
+       -66.6132
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       47.6563,
+       -65.6253
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       45.925,
+       -64.6438
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       46.1462,
+       -66.7841
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       45.9545,
+       -65.1682
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       47.0043,
+       -65.5671
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       45.8488,
+       -64.5769
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       46.0898,
+       -64.7704
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       47.0015,
+       -65.5654
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       46.5491,
+       -67.6792
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       46.0292,
+       -67.5432
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       47.7221,
+       -64.6606
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       46.1704,
+       -64.3423
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       46.0858,
+       -64.7834
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       45.2752,
+       -66.0673
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       46.4727,
+       -67.5795
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       46.1374,
+       -64.902
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       46.2946,
+       -64.5605
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       45.2884,
+       -66.036
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       47.4417,
+       -65.7072
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       46.0613,
+       -64.8046
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       46.02,
+       -64.1019
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       46.2352,
+       -64.4318
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       47.774,
+       -65.0113
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       46.2211,
+       -64.6943
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       46.3173,
+       -64.7269
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "NB",
+    "url": "https://gis-erd-der.gnb.ca/server/rest/services/OpenData/PNAs/FeatureServer/0",
+    "note": "New Brunswic",
+    "hits": [
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       47.0254,
+       -65.4658
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       45.9007,
+       -64.5165
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       45.6279,
+       -67.4334
+      ],
+      "attrs": {
+       "NAME": "Spednic Lake",
+       "SOURCE": "Survey",
+       "CLASS": "II",
+       "SURVEY": "544A - 17",
+       "NOM": "Lac Spednic",
+       "GRP": "134 / 135 / 145",
+       "HECTARES": 25784.51496703,
+       "OWNER": "Crown/Corounne",
+       "IUCN_CATEGORY": "II",
+       "MANAGED_BY": "Department of Natural Resources",
+       "YEAR_PROTECTED": 2003,
+       "YEAR_AMENDED": 0,
+       "PNA_CODE": "SpLk"
+      }
+     },
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       45.8572,
+       -67.5249
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       45.2603,
+       -66.0853
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       46.2187,
+       -64.5559
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       45.8997,
+       -64.5166
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       46.617,
+       -65.3046
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       45.9954,
+       -67.234
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       45.3687,
+       -65.5121
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       45.9944,
+       -67.4997
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       47.459,
+       -67.9513
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       47.8007,
+       -66.6501
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       46.6912,
+       -64.7313
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       46.2126,
+       -66.6132
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       47.6563,
+       -65.6253
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       45.925,
+       -64.6438
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       46.1462,
+       -66.7841
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       45.9545,
+       -65.1682
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       47.0043,
+       -65.5671
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       45.8488,
+       -64.5769
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       46.0898,
+       -64.7704
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       47.0015,
+       -65.5654
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       46.5491,
+       -67.6792
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       46.0292,
+       -67.5432
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       47.7221,
+       -64.6606
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       46.1704,
+       -64.3423
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       46.0858,
+       -64.7834
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       45.2752,
+       -66.0673
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       46.4727,
+       -67.5795
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       46.1374,
+       -64.902
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       46.2946,
+       -64.5605
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       45.2884,
+       -66.036
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       47.4417,
+       -65.7072
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       46.0613,
+       -64.8046
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       46.02,
+       -64.1019
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       46.2352,
+       -64.4318
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       47.774,
+       -65.0113
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       46.2211,
+       -64.6943
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected Natural Areas",
+      "point": [
+       46.3173,
+       -64.7269
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "NB",
+    "url": "https://gis-erd-der.gnb.ca/server/rest/services/OpenData/Nature_Legacy_Protected_Areas/FeatureServer/0",
+    "note": "New Brunswic~1",
+    "hits": [
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       47.0254,
+       -65.4658
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       45.9007,
+       -64.5165
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       45.6279,
+       -67.4334
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       45.8572,
+       -67.5249
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       45.2603,
+       -66.0853
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       46.2187,
+       -64.5559
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       45.8997,
+       -64.5166
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       46.617,
+       -65.3046
+      ],
+      "attrs": {
+       "UID_": "4000300",
+       "NAME": "Kouchibouguacis River",
+       "NOM": "Riviere Kouchibouguacis",
+       "PROTECTION_DATE": 1657756800000,
+       "PROTECTION_STATUS": "Protected / Protégée"
+      }
+     },
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       45.9954,
+       -67.234
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       45.3687,
+       -65.5121
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       45.9944,
+       -67.4997
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       47.459,
+       -67.9513
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       47.8007,
+       -66.6501
+      ],
+      "attrs": {
+       "UID_": "4015800",
+       "NAME": "Popelogan Lake",
+       "NOM": "1",
+       "PROTECTION_DATE": 1677715200000,
+       "PROTECTION_STATUS": "Protected / Protégée"
+      }
+     },
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       46.6912,
+       -64.7313
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       46.2126,
+       -66.6132
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       47.6563,
+       -65.6253
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       45.925,
+       -64.6438
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       46.1462,
+       -66.7841
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       45.9545,
+       -65.1682
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       47.0043,
+       -65.5671
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       45.8488,
+       -64.5769
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       46.0898,
+       -64.7704
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       47.0015,
+       -65.5654
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       46.5491,
+       -67.6792
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       46.0292,
+       -67.5432
+      ],
+      "attrs": {
+       "UID_": "4003000",
+       "NAME": "Hays Falls",
+       "NOM": "Chutes Hays",
+       "PROTECTION_DATE": 1657756800000,
+       "PROTECTION_STATUS": "Protected / Protégée"
+      }
+     },
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       47.7221,
+       -64.6606
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       46.1704,
+       -64.3423
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       46.0858,
+       -64.7834
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       45.2752,
+       -66.0673
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       46.4727,
+       -67.5795
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       46.1374,
+       -64.902
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       46.2946,
+       -64.5605
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       45.2884,
+       -66.036
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       47.4417,
+       -65.7072
+      ],
+      "attrs": {
+       "UID_": "4010201",
+       "NAME": "Nepisiguit River (Extension)",
+       "NOM": "1",
+       "PROTECTION_DATE": 1677715200000,
+       "PROTECTION_STATUS": "Protected / Protégée"
+      }
+     },
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       46.0613,
+       -64.8046
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       46.02,
+       -64.1019
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       46.2352,
+       -64.4318
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       47.774,
+       -65.0113
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       46.2211,
+       -64.6943
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Nature Legacy protected areas",
+      "point": [
+       46.3173,
+       -64.7269
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "NB",
+    "url": "https://gis-erd-der.gnb.ca/server/rest/services/OpenData/WildlifeRefuge/MapServer/0",
+    "note": "New Brunswic~2",
+    "hits": [
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       47.0254,
+       -65.4658
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       45.9007,
+       -64.5165
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       45.6279,
+       -67.4334
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       45.8572,
+       -67.5249
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       45.2603,
+       -66.0853
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       46.2187,
+       -64.5559
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       45.8997,
+       -64.5166
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       46.617,
+       -65.3046
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       45.9954,
+       -67.234
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       45.3687,
+       -65.5121
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       45.9944,
+       -67.4997
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       47.459,
+       -67.9513
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       47.8007,
+       -66.6501
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       46.6912,
+       -64.7313
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       46.2126,
+       -66.6132
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       47.6563,
+       -65.6253
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       45.925,
+       -64.6438
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       46.1462,
+       -66.7841
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       45.9545,
+       -65.1682
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       47.0043,
+       -65.5671
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       45.8488,
+       -64.5769
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       46.0898,
+       -64.7704
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       47.0015,
+       -65.5654
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       46.5491,
+       -67.6792
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       46.0292,
+       -67.5432
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       47.7221,
+       -64.6606
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       46.1704,
+       -64.3423
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       46.0858,
+       -64.7834
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       45.2752,
+       -66.0673
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       46.4727,
+       -67.5795
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       46.1374,
+       -64.902
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       46.2946,
+       -64.5605
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       45.2884,
+       -66.036
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       47.4417,
+       -65.7072
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       46.0613,
+       -64.8046
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       46.02,
+       -64.1019
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       46.2352,
+       -64.4318
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       47.774,
+       -65.0113
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       46.2211,
+       -64.6943
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Wildlife Refuges",
+      "point": [
+       46.3173,
+       -64.7269
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "NB",
+    "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/10",
+    "note": "Ontario fede",
+    "hits": [
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       47.0254,
+       -65.4658
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       45.9007,
+       -64.5165
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       45.6279,
+       -67.4334
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       45.8572,
+       -67.5249
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       45.2603,
+       -66.0853
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.2187,
+       -64.5559
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       45.8997,
+       -64.5166
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.617,
+       -65.3046
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       45.9954,
+       -67.234
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       45.3687,
+       -65.5121
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       45.9944,
+       -67.4997
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       47.459,
+       -67.9513
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       47.8007,
+       -66.6501
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.6912,
+       -64.7313
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.2126,
+       -66.6132
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       47.6563,
+       -65.6253
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       45.925,
+       -64.6438
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.1462,
+       -66.7841
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       45.9545,
+       -65.1682
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       47.0043,
+       -65.5671
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       45.8488,
+       -64.5769
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.0898,
+       -64.7704
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       47.0015,
+       -65.5654
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.5491,
+       -67.6792
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.0292,
+       -67.5432
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       47.7221,
+       -64.6606
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.1704,
+       -64.3423
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.0858,
+       -64.7834
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       45.2752,
+       -66.0673
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.4727,
+       -67.5795
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.1374,
+       -64.902
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.2946,
+       -64.5605
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       45.2884,
+       -66.036
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       47.4417,
+       -65.7072
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.0613,
+       -64.8046
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.02,
+       -64.1019
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.2352,
+       -64.4318
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       47.774,
+       -65.0113
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.2211,
+       -64.6943
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.3173,
+       -64.7269
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "NB",
+    "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+    "note": "cpcad",
+    "hits": [
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       47.0254,
+       -65.4658
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       45.9007,
+       -64.5165
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       45.6279,
+       -67.4334
+      ],
+      "attrs": {
+       "NAME_E": "Spednic Lake",
+       "NAME_F": "Lac Spednic",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 2003,
+       "ESTYEAR": 2003,
+       "BIOME": "T",
+       "LOC": 4,
+       "O_AREA_HA": 25784.101,
+       "PARENT_ID": 130003000,
+       "ZONE_ID": 130003000,
+       "MECH_E": "Protected Natural Areas Act",
+       "TYPE_E": "Protected Natural Area",
+       "OWNER_TYPE": 2,
+       "OWNER_E": "Department of Natural Resources and Energy Development, Government of New Brunswick",
+       "GOV_TYPE": 2,
+       "MGMT_E": "Forest Planning & Stewardship Branch, Department of Natural Resources and Energy Development, Government of New Brunswick",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 13,
+       "JUR_ID": "SpLk",
+       "MPLAN": 0,
+       "MPLAN_REF": "https://laws.gnb.ca/en/showdoc/cs/P-19.01",
+       "M_EFF": 0,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       45.8572,
+       -67.5249
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       45.2603,
+       -66.0853
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.2187,
+       -64.5559
+      ],
+      "attrs": {
+       "NAME_E": "Scallop Buffer Zone (SFA 22)",
+       "NAME_F": "Zone tampon pour la pêche au pétoncle (ZPP 22)",
+       "PA_OECM_DF": 2,
+       "IPCA": 0,
+       "IUCN_CAT": 9,
+       "STATUS": 1,
+       "QUALYEAR": 2017,
+       "ESTYEAR": 2005,
+       "BIOME": "M",
+       "LOC": 15,
+       "O_AREA_HA": 285278.38,
+       "PARENT_ID": 700340000,
+       "ZONE_ID": 700340000,
+       "MECH_E": "Fisheries Act ( 1985, c. F-14 )",
+       "TYPE_E": "Other Effective Area-Based Conservation Measure",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Government of Canada",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Fisheries And Oceans Canada",
+       "NO_TAKE": 4,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 1,
+       "PROVIDER": 70,
+       "MPLAN": 0,
+       "PA_BIOME": "Marine other effective area-based conservation measure"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       45.8997,
+       -64.5166
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.617,
+       -65.3046
+      ],
+      "attrs": {
+       "NAME_E": "4000300",
+       "NAME_F": "4000300",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 2022,
+       "ESTYEAR": 2022,
+       "BIOME": "T",
+       "LOC": 4,
+       "O_AREA_HA": 2624.181,
+       "PARENT_ID": 134000300,
+       "ZONE_ID": 134000300,
+       "MECH_E": "Conservation Easements Act",
+       "TYPE_E": "Nature Legacy protected area",
+       "OWNER_TYPE": 2,
+       "OWNER_E": "Department of Natural Resources and Energy Development, Government of New Brunswick",
+       "GOV_TYPE": 2,
+       "MGMT_E": "Forest Planning & Stewardship Branch, Department of Natural Resources and Energy Development, Government of New Brunswick",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 13,
+       "JUR_ID": "4000300",
+       "MPLAN": 0,
+       "MPLAN_REF": "https://laws.gnb.ca/en/showfulldoc/cs/2011-c.130//20221109",
+       "M_EFF": 0,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       45.9954,
+       -67.234
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       45.3687,
+       -65.5121
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       45.9944,
+       -67.4997
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       47.459,
+       -67.9513
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       47.8007,
+       -66.6501
+      ],
+      "attrs": {
+       "NAME_E": "4015800",
+       "NAME_F": "4015800",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 2022,
+       "BIOME": "T",
+       "LOC": 4,
+       "O_AREA_HA": 869.529,
+       "PARENT_ID": 134015800,
+       "ZONE_ID": 134015800,
+       "MECH_E": "Conservation Easements Act",
+       "TYPE_E": "Nature Legacy protected area",
+       "OWNER_TYPE": 2,
+       "OWNER_E": "Department of Natural Resources and Energy Development, Government of New Brunswick",
+       "GOV_TYPE": 2,
+       "MGMT_E": "Forest Planning & Stewardship Branch, Department of Natural Resources and Energy Development, Government of New Brunswick",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 13,
+       "JUR_ID": "4015800",
+       "MPLAN": 0,
+       "MPLAN_REF": "https://laws.gnb.ca/en/showfulldoc/cs/2011-c.130//20221109",
+       "M_EFF": 0,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.6912,
+       -64.7313
+      ],
+      "attrs": {
+       "NAME_E": "Privately Protected Area (NCC 120274)",
+       "NAME_F": "Aires protégées à governance privée (CNC 120274)",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 5,
+       "STATUS": 2,
+       "QUALYEAR": 2023,
+       "ESTYEAR": 2009,
+       "BIOME": "T",
+       "LOC": 4,
+       "O_AREA_HA": 20.553498871159185,
+       "PARENT_ID": 157007100,
+       "ZONE_ID": 157007101,
+       "ZONEDESC_E": "Parcel 01",
+       "MECH_E": "Fee-Simple Ownership",
+       "TYPE_E": "Privately Protected Area",
+       "OWNER_TYPE": 8,
+       "OWNER_E": "Nature Conservancy of Canada",
+       "GOV_TYPE": 8,
+       "MGMT_E": "Nature Conservancy of Canada",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 15,
+       "JUR_ID": "NCC Parcel ID 120451",
+       "MPLAN": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.6912,
+       -64.7313
+      ],
+      "attrs": {
+       "NAME_E": "Scallop Buffer Zone (SFA 22)",
+       "NAME_F": "Zone tampon pour la pêche au pétoncle (ZPP 22)",
+       "PA_OECM_DF": 2,
+       "IPCA": 0,
+       "IUCN_CAT": 9,
+       "STATUS": 1,
+       "QUALYEAR": 2017,
+       "ESTYEAR": 2005,
+       "BIOME": "M",
+       "LOC": 15,
+       "O_AREA_HA": 285278.38,
+       "PARENT_ID": 700340000,
+       "ZONE_ID": 700340000,
+       "MECH_E": "Fisheries Act ( 1985, c. F-14 )",
+       "TYPE_E": "Other Effective Area-Based Conservation Measure",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Government of Canada",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Fisheries And Oceans Canada",
+       "NO_TAKE": 4,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 1,
+       "PROVIDER": 70,
+       "MPLAN": 0,
+       "PA_BIOME": "Marine other effective area-based conservation measure"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.2126,
+       -66.6132
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       47.6563,
+       -65.6253
+      ],
+      "attrs": {
+       "NAME_E": "Scallop Buffer Zone (SFA 21)",
+       "NAME_F": "Zone tampon pour la pêche au pétoncle (ZPP 21)",
+       "PA_OECM_DF": 2,
+       "IPCA": 0,
+       "IUCN_CAT": 9,
+       "STATUS": 1,
+       "QUALYEAR": 2017,
+       "ESTYEAR": 1999,
+       "BIOME": "M",
+       "LOC": 15,
+       "O_AREA_HA": 47706.93,
+       "PARENT_ID": 700330000,
+       "ZONE_ID": 700330000,
+       "MECH_E": "Fisheries Act ( 1985, c. F-14 )",
+       "TYPE_E": "Other Effective Area-Based Conservation Measure",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Government of Canada",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Fisheries And Oceans Canada",
+       "NO_TAKE": 4,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 1,
+       "PROVIDER": 70,
+       "MPLAN": 0,
+       "PA_BIOME": "Marine other effective area-based conservation measure"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       45.925,
+       -64.6438
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.1462,
+       -66.7841
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       45.9545,
+       -65.1682
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       47.0043,
+       -65.5671
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       45.8488,
+       -64.5769
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.0898,
+       -64.7704
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       47.0015,
+       -65.5654
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.5491,
+       -67.6792
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.0292,
+       -67.5432
+      ],
+      "attrs": {
+       "NAME_E": "4003000",
+       "NAME_F": "4003000",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 2022,
+       "ESTYEAR": 2022,
+       "BIOME": "T",
+       "LOC": 4,
+       "O_AREA_HA": 66.97,
+       "PARENT_ID": 134003000,
+       "ZONE_ID": 134003000,
+       "MECH_E": "Conservation Easements Act",
+       "TYPE_E": "Nature Legacy protected area",
+       "OWNER_TYPE": 2,
+       "OWNER_E": "Department of Natural Resources and Energy Development, Government of New Brunswick",
+       "GOV_TYPE": 2,
+       "MGMT_E": "Forest Planning & Stewardship Branch, Department of Natural Resources and Energy Development, Government of New Brunswick",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 13,
+       "JUR_ID": "4003000",
+       "MPLAN": 0,
+       "MPLAN_REF": "https://laws.gnb.ca/en/showfulldoc/cs/2011-c.130//20221109",
+       "M_EFF": 0,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       47.7221,
+       -64.6606
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.1704,
+       -64.3423
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.0858,
+       -64.7834
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       45.2752,
+       -66.0673
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.4727,
+       -67.5795
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.1374,
+       -64.902
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.2946,
+       -64.5605
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       45.2884,
+       -66.036
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       47.4417,
+       -65.7072
+      ],
+      "attrs": {
+       "NAME_E": "4010201",
+       "NAME_F": "4010201",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 2022,
+       "BIOME": "T",
+       "LOC": 4,
+       "O_AREA_HA": 789.299,
+       "PARENT_ID": 134010200,
+       "ZONE_ID": 134010201,
+       "MECH_E": "Conservation Easements Act",
+       "TYPE_E": "Nature Legacy protected area",
+       "OWNER_TYPE": 2,
+       "OWNER_E": "Department of Natural Resources and Energy Development, Government of New Brunswick",
+       "GOV_TYPE": 2,
+       "MGMT_E": "Forest Planning & Stewardship Branch, Department of Natural Resources and Energy Development, Government of New Brunswick",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 13,
+       "JUR_ID": "4010201",
+       "MPLAN": 0,
+       "MPLAN_REF": "https://laws.gnb.ca/en/showfulldoc/cs/2011-c.130//20221109",
+       "M_EFF": 0,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.0613,
+       -64.8046
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.02,
+       -64.1019
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.2352,
+       -64.4318
+      ],
+      "attrs": {
+       "NAME_E": "Privately Protected Area (NCC 120214)",
+       "NAME_F": "Aires protégées à governance privée (CNC 120214)",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 5,
+       "STATUS": 2,
+       "QUALYEAR": 2023,
+       "ESTYEAR": 2005,
+       "BIOME": "T",
+       "LOC": 4,
+       "O_AREA_HA": 1.4355460540124727,
+       "PARENT_ID": 157006400,
+       "ZONE_ID": 157006401,
+       "ZONEDESC_E": "Parcel 01",
+       "MECH_E": "Fee-Simple Ownership",
+       "TYPE_E": "Privately Protected Area",
+       "OWNER_TYPE": 8,
+       "OWNER_E": "Nature Conservancy of Canada",
+       "GOV_TYPE": 8,
+       "MGMT_E": "Nature Conservancy of Canada",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 15,
+       "JUR_ID": "NCC Parcel ID 120166",
+       "MPLAN": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.2352,
+       -64.4318
+      ],
+      "attrs": {
+       "NAME_E": "Privately Protected Area (NCC 120214)",
+       "NAME_F": "Aires protégées à governance privée (CNC 120214)",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 5,
+       "STATUS": 2,
+       "QUALYEAR": 2023,
+       "ESTYEAR": 2005,
+       "BIOME": "T",
+       "LOC": 4,
+       "O_AREA_HA": 0.7253096111105074,
+       "PARENT_ID": 157006400,
+       "ZONE_ID": 157006402,
+       "ZONEDESC_E": "Parcel 02",
+       "MECH_E": "Fee-Simple Ownership",
+       "TYPE_E": "Privately Protected Area",
+       "OWNER_TYPE": 8,
+       "OWNER_E": "Nature Conservancy of Canada",
+       "GOV_TYPE": 8,
+       "MGMT_E": "Nature Conservancy of Canada",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 15,
+       "JUR_ID": "NCC Parcel ID 120167",
+       "MPLAN": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.2352,
+       -64.4318
+      ],
+      "attrs": {
+       "NAME_E": "Privately Protected Area (NCC 120214)",
+       "NAME_F": "Aires protégées à governance privée (CNC 120214)",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 5,
+       "STATUS": 2,
+       "QUALYEAR": 2023,
+       "ESTYEAR": 2005,
+       "BIOME": "T",
+       "LOC": 4,
+       "O_AREA_HA": 0.6855234661182762,
+       "PARENT_ID": 157006400,
+       "ZONE_ID": 157006403,
+       "ZONEDESC_E": "Parcel 03",
+       "MECH_E": "Fee-Simple Ownership",
+       "TYPE_E": "Privately Protected Area",
+       "OWNER_TYPE": 8,
+       "OWNER_E": "Nature Conservancy of Canada",
+       "GOV_TYPE": 8,
+       "MGMT_E": "Nature Conservancy of Canada",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 15,
+       "JUR_ID": "NCC Parcel ID 120168",
+       "MPLAN": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.2352,
+       -64.4318
+      ],
+      "attrs": {
+       "NAME_E": "Privately Protected Area (NCC 120214)",
+       "NAME_F": "Aires protégées à governance privée (CNC 120214)",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 5,
+       "STATUS": 2,
+       "QUALYEAR": 2023,
+       "ESTYEAR": 2005,
+       "BIOME": "T",
+       "LOC": 4,
+       "O_AREA_HA": 0.7250060113747515,
+       "PARENT_ID": 157006400,
+       "ZONE_ID": 157006404,
+       "ZONEDESC_E": "Parcel 04",
+       "MECH_E": "Fee-Simple Ownership",
+       "TYPE_E": "Privately Protected Area",
+       "OWNER_TYPE": 8,
+       "OWNER_E": "Nature Conservancy of Canada",
+       "GOV_TYPE": 8,
+       "MGMT_E": "Nature Conservancy of Canada",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 15,
+       "JUR_ID": "NCC Parcel ID 120169",
+       "MPLAN": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.2352,
+       -64.4318
+      ],
+      "attrs": {
+       "NAME_E": "Privately Protected Area (NCC 120214)",
+       "NAME_F": "Aires protégées à governance privée (CNC 120214)",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 5,
+       "STATUS": 2,
+       "QUALYEAR": 2023,
+       "ESTYEAR": 2005,
+       "BIOME": "T",
+       "LOC": 4,
+       "O_AREA_HA": 2.1437902230961843,
+       "PARENT_ID": 157006400,
+       "ZONE_ID": 157006406,
+       "ZONEDESC_E": "Parcel 06",
+       "MECH_E": "Fee-Simple Ownership",
+       "TYPE_E": "Privately Protected Area",
+       "OWNER_TYPE": 8,
+       "OWNER_E": "Nature Conservancy of Canada",
+       "GOV_TYPE": 8,
+       "MGMT_E": "Nature Conservancy of Canada",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 15,
+       "JUR_ID": "NCC Parcel ID 120171",
+       "MPLAN": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.2352,
+       -64.4318
+      ],
+      "attrs": {
+       "NAME_E": "Privately Protected Area (NCC 120214)",
+       "NAME_F": "Aires protégées à governance privée (CNC 120214)",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 5,
+       "STATUS": 2,
+       "QUALYEAR": 2023,
+       "ESTYEAR": 2005,
+       "BIOME": "T",
+       "LOC": 4,
+       "O_AREA_HA": 0.44633306325782635,
+       "PARENT_ID": 157006400,
+       "ZONE_ID": 157006407,
+       "ZONEDESC_E": "Parcel 07",
+       "MECH_E": "Fee-Simple Ownership",
+       "TYPE_E": "Privately Protected Area",
+       "OWNER_TYPE": 8,
+       "OWNER_E": "Nature Conservancy of Canada",
+       "GOV_TYPE": 8,
+       "MGMT_E": "Nature Conservancy of Canada",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 15,
+       "JUR_ID": "NCC Parcel ID 120172",
+       "MPLAN": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.2352,
+       -64.4318
+      ],
+      "attrs": {
+       "NAME_E": "Privately Protected Area (NCC 120214)",
+       "NAME_F": "Aires protégées à governance privée (CNC 120214)",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 5,
+       "STATUS": 2,
+       "QUALYEAR": 2023,
+       "ESTYEAR": 2005,
+       "BIOME": "T",
+       "LOC": 4,
+       "O_AREA_HA": 0.6962422989656758,
+       "PARENT_ID": 157006400,
+       "ZONE_ID": 157006408,
+       "ZONEDESC_E": "Parcel 08",
+       "MECH_E": "Fee-Simple Ownership",
+       "TYPE_E": "Privately Protected Area",
+       "OWNER_TYPE": 8,
+       "OWNER_E": "Nature Conservancy of Canada",
+       "GOV_TYPE": 8,
+       "MGMT_E": "Nature Conservancy of Canada",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 15,
+       "JUR_ID": "NCC Parcel ID 120173",
+       "MPLAN": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.2352,
+       -64.4318
+      ],
+      "attrs": {
+       "NAME_E": "Privately Protected Area (NCC 120214)",
+       "NAME_F": "Aires protégées à governance privée (CNC 120214)",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 5,
+       "STATUS": 2,
+       "QUALYEAR": 2023,
+       "ESTYEAR": 2005,
+       "BIOME": "T",
+       "LOC": 4,
+       "O_AREA_HA": 0.8376386740487114,
+       "PARENT_ID": 157006400,
+       "ZONE_ID": 157006410,
+       "ZONEDESC_E": "Parcel 10",
+       "MECH_E": "Fee-Simple Ownership",
+       "TYPE_E": "Privately Protected Area",
+       "OWNER_TYPE": 8,
+       "OWNER_E": "Nature Conservancy of Canada",
+       "GOV_TYPE": 8,
+       "MGMT_E": "Nature Conservancy of Canada",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 15,
+       "JUR_ID": "NCC Parcel ID 120363",
+       "MPLAN": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       47.774,
+       -65.0113
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.2211,
+       -64.6943
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.3173,
+       -64.7269
+      ],
+      "nohit": true
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 644,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
