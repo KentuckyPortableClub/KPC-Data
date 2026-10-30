@@ -1,0 +1,36 @@
+{
+ "request": "requests/10-pm-US-11944.json",
+ "id": "10-pm-US-11944",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "backfill: picture-map-only row in the US Fable file (HQ Oct 29 11:12 PM)",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "US-11944",
+  "name": "Dankworth Pond State Park",
+  "agency": "Arizona State Parks",
+  "url": "https://azstateparks.com/dankworth-pond",
+  "pages": 1,
+  "hint": "dapo dankworth",
+  "report": "backfill: picture-map-only row in the US Fable file (HQ Oct 29 11:12 PM)"
+ },
+ "answered": "2026-10-30 06:32Z",
+ "results": [
+  {
+   "url": "https://azstateparks.com/dankworth-pond",
+   "error": "answer 403",
+   "looked": []
+  }
+ ],
+ "seconds": 2,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 1,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 0 read OK"
+}
