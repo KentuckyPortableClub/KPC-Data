@@ -1,0 +1,513 @@
+{
+ "request": "requests/11-ns2-us-16.json",
+ "id": "11-ns2-us-16",
+ "chat": 11,
+ "kind": "map-check",
+ "report": "Chat 11 NOT SURE map check (us, US-OR): screenshots in order: 1=US-10008 (record); 2=US-10008 (map); 3=US-10055 (map); 4=US-10358 (map); 5=US-10358 (map); 6=US-10358 (map); 7=US-10358 (map). Record pages are WHOLE-page shots (the record's fields are below the query form; the text is in each result too). Map shots: the POTA pin is the marker in the middle (zoom 14).",
+ "asked": {
+  "chat": 11,
+  "kind": "map-check",
+  "screenshot": true,
+  "report": "Chat 11 NOT SURE map check (us, US-OR): screenshots in order: 1=US-10008 (record); 2=US-10008 (map); 3=US-10055 (map); 4=US-10358 (map); 5=US-10358 (map); 6=US-10358 (map); 7=US-10358 (map). Record pages are WHOLE-page shots (the record's fields are below the query form; the text is in each result too). Map shots: the POTA pin is the marker in the middle (zoom 14).",
+  "items": [
+   {
+    "ref": "US-10008",
+    "park": "Klamath Hills BLM Recreation Management Area",
+    "record": "Lower Klamath Hills",
+    "area": "US-OR"
+   },
+   {
+    "ref": "US-10055",
+    "park": "Cline Buttes OHV BLM RMA",
+    "record": "",
+    "area": "US-OR"
+   },
+   {
+    "ref": "US-10358",
+    "park": "Shotgun Creek BLM Recreation Management Area",
+    "record": "Shotgun Creek Backcountry Byway",
+    "area": "US-OR"
+   },
+   {
+    "ref": "US-10358",
+    "park": "Shotgun Creek BLM Recreation Management Area",
+    "record": "Shotgun Creek Backcountry Byway",
+    "area": "US-OR"
+   },
+   {
+    "ref": "US-10358",
+    "park": "Shotgun Creek BLM Recreation Management Area",
+    "record": "Shotgun Creek Backcountry Byway",
+    "area": "US-OR"
+   },
+   {
+    "ref": "US-10358",
+    "park": "Shotgun Creek BLM Recreation Management Area",
+    "record": "Shotgun Creek Backcountry Byway",
+    "area": "US-OR"
+   }
+  ],
+  "urls": [
+   {
+    "url": "https://gis.blm.gov/orarcgis/rest/services/Recreation/BLM_OR_Recreation_Management_Areas/MapServer/0/query?objectIds=111&outFields=*&returnGeometry=false&f=html",
+    "full": true
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.blm.gov%2Forarcgis%2Frest%2Fservices%2FRecreation%2FBLM_OR_Recreation_Management_Areas%2FMapServer%2F0&center=-121.754%2C42.0609&level=14&marker=-121.754%2C42.0609%2C4326%2CPOTA+pin",
+    "steps": [
+     {
+      "wait": 12000
+     }
+    ]
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-121.335%2C44.2884&level=14&marker=-121.335%2C44.2884%2C4326%2CPOTA+pin",
+    "steps": [
+     {
+      "wait": 12000
+     }
+    ]
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-122.846%2C44.2288&level=14&marker=-122.846%2C44.2288%2C4326%2CPOTA+pin",
+    "steps": [
+     {
+      "wait": 12000
+     }
+    ]
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-122.846%2C44.2288&level=14&marker=-122.846%2C44.2288%2C4326%2CPOTA+pin",
+    "steps": [
+     {
+      "wait": 12000
+     }
+    ]
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-122.846%2C44.2288&level=14&marker=-122.846%2C44.2288%2C4326%2CPOTA+pin",
+    "steps": [
+     {
+      "wait": 12000
+     }
+    ]
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-122.846%2C44.2288&level=14&marker=-122.846%2C44.2288%2C4326%2CPOTA+pin",
+    "steps": [
+     {
+      "wait": 12000
+     }
+    ]
+   }
+  ]
+ },
+ "answered": "2026-10-30 20:34Z",
+ "results": [
+  {
+   "url": "https://gis.blm.gov/orarcgis/rest/services/Recreation/BLM_OR_Recreation_Management_Areas/MapServer/0/query?objectIds=111&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://gis.blm.gov/orarcgis/rest/services/Recreation/BLM_OR_Recreation_Management_Areas/MapServer/0/query?objectIds=111&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: BLM OR Recreation Management Areas (ID: 0)",
+   "text": "ArcGIS REST Services Directory Login\nHome > services > Recreation > BLM_OR_Recreation_Management_Areas (MapServer) > BLM OR Recreation Management Areas > query API Reference\nQuery: BLM OR Recreation Management Areas (ID: 0)\nWhere:\nText:\nObject IDs:\nTime:\nTime Relation:\nInclude start and end\nInclude start and exclude end\nExclude start and include end\nExclude start and end\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nReturn True Curves: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nReturn IDs Only: True False\nReturn Count Only: True False\nOrder By Fields:\nGroup By Fields (For Statistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nResult Offset:\nResult Record Count:\nReturn Extent Only: True False\nSQL Format:\nNone\nStandard\nNative\nDatum Transformation:\nParameter Values:\nRange Values:\nQuantization Parameters:\nUnique IDs:\nReturn Unique IDs Only: True False\nFeature Encoding:\nEsriDefault\nFormat:\nHTML\nJSON\nKMZ\nGeoJSON\nPBF\n# records: 1\nOBJECTID: 111\nRMA_DSG: ERMA\nRMA_NAME: Lower Klamath Hills\nRMZ_NAME: null\nBLM_ORG_CD: ORL04\nPLANID: Southwestern Oregon RMP 2016\nGIS_ACRES: 1595.63151069\nGLOBALID: {1BB7F84C-2A16-4946-9063-CD2D060BE9AC}\nSHAPE_Length: 0.17803445751897545\nSHAPE_Area: 7.028733880076477E-4\nWEB_DOC_PATH: https://eplanning.blm.gov/public_projects/lup/57902/88402/105789/Klamath_Falls_RMA.pdf#page=22",
+   "links": [
+    {
+     "url": "https://gis.blm.gov/orarcgis/login/?returnUrl=https://gis.blm.gov/orarcgis/rest/services&app=rest",
+     "text": "Login"
+    },
+    {
+     "url": "https://gis.blm.gov/orarcgis/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://gis.blm.gov/orarcgis/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://gis.blm.gov/orarcgis/rest/services/Recreation",
+     "text": "Recreation"
+    },
+    {
+     "url": "https://gis.blm.gov/orarcgis/rest/services/Recreation/BLM_OR_Recreation_Management_Areas/MapServer",
+     "text": "BLM_OR_Recreation_Management_Areas (MapServer)"
+    },
+    {
+     "url": "https://gis.blm.gov/orarcgis/rest/services/Recreation/BLM_OR_Recreation_Management_Areas/MapServer/0",
+     "text": "BLM OR Recreation Management Areas"
+    },
+    {
+     "url": "https://gis.blm.gov/orarcgis/rest/services/Recreation/BLM_OR_Recreation_Management_Areas/MapServer/0/query",
+     "text": "query"
+    },
+    {
+     "url": "https://gis.blm.gov/orarcgis/help/en/rest/router.html?f=rest/services/Recreation/BLM_OR_Recreation_Management_Areas/MapServer/0/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://gis.blm.gov/orarcgis/rest/services/Recreation/BLM_OR_Recreation_Management_Areas/MapServer/0/111",
+     "text": "111"
+    }
+   ],
+   "screenshot": "answers/11-ns2-us-16-1.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.blm.gov%2Forarcgis%2Frest%2Fservices%2FRecreation%2FBLM_OR_Recreation_Management_Areas%2FMapServer%2F0&center=-121.754%2C42.0609&level=14&marker=-121.754%2C42.0609%2C4326%2CPOTA+pin",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.blm.gov%2Forarcgis%2Frest%2Fservices%2FRecreation%2FBLM_OR_Recreation_Management_Areas%2FMapServer%2F0&center=-121.754%2C42.0609&level=14&marker=-121.754%2C42.0609%2C4326%2CPOTA+pin",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nOregon State Parks | State of Oregon GEO | Esri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | Bureau of Land Management | EPA | NPS | US Census Bureau | USDA | USFWS | Bureau of Land Management (BLM), Oregon State Office\nPowered by Esri\nPOTA+pin",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns2-us-16-2.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-121.335%2C44.2884&level=14&marker=-121.335%2C44.2884%2C4326%2CPOTA+pin",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-121.335%2C44.2884&level=14&marker=-121.335%2C44.2884%2C4326%2CPOTA+pin",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nOregon State Parks | State of Oregon GEO | Esri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | Bureau of Land Management | EPA | NPS | US Census Bureau | USDA | USFWS\nPowered by Esri\nPOTA+pin",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns2-us-16-3.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-122.846%2C44.2288&level=14&marker=-122.846%2C44.2288%2C4326%2CPOTA+pin",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-122.846%2C44.2288&level=14&marker=-122.846%2C44.2288%2C4326%2CPOTA+pin",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nOregon State Parks | State of Oregon GEO | Esri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | Bureau of Land Management | EPA | NPS | US Census Bureau | USDA | USFWS\nPowered by Esri\nPOTA+pin",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns2-us-16-4.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-122.846%2C44.2288&level=14&marker=-122.846%2C44.2288%2C4326%2CPOTA+pin",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-122.846%2C44.2288&level=14&marker=-122.846%2C44.2288%2C4326%2CPOTA+pin",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nOregon State Parks | State of Oregon GEO | Esri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | Bureau of Land Management | EPA | NPS | US Census Bureau | USDA | USFWS\nPowered by Esri\nPOTA+pin",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns2-us-16-5.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-122.846%2C44.2288&level=14&marker=-122.846%2C44.2288%2C4326%2CPOTA+pin",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-122.846%2C44.2288&level=14&marker=-122.846%2C44.2288%2C4326%2CPOTA+pin",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nOregon State Parks | State of Oregon GEO | Esri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | Bureau of Land Management | EPA | NPS | US Census Bureau | USDA | USFWS\nPowered by Esri\nPOTA+pin",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns2-us-16-6.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-122.846%2C44.2288&level=14&marker=-122.846%2C44.2288%2C4326%2CPOTA+pin",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-122.846%2C44.2288&level=14&marker=-122.846%2C44.2288%2C4326%2CPOTA+pin",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nOregon State Parks | State of Oregon GEO | Esri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | Bureau of Land Management | EPA | NPS | US Census Bureau | USDA | USFWS\nPowered by Esri\nPOTA+pin",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns2-us-16-7.jpg",
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 189,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 1
+ },
+ "short": "7 result(s), 7 read OK, 7 screenshot(s)"
+}
