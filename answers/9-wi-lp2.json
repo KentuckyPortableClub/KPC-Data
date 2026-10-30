@@ -1,0 +1,67 @@
+{
+ "request": "requests/9-wi-lp2.json",
+ "id": "9-wi-lp2",
+ "chat": 9,
+ "kind": "layer-probe",
+ "report": "WI-LP2: real WI DNR service names (from folder listing): layers, geometry, name/owner/access fields, licence",
+ "asked": {
+  "chat": 9,
+  "kind": "layer-probe",
+  "report": "WI-LP2: real WI DNR service names (from folder listing): layers, geometry, name/owner/access fields, licence",
+  "layers": [
+   "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_DNR_MGD_PROP_WTM_Ext/MapServer",
+   "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_DNR_Managed_Lands_Dissolved_WTM_Ext/MapServer",
+   "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_DNR_REC_OPPS_WTM_Ext/MapServer",
+   "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer",
+   "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/NHC_SNA_WTM_Ext/MapServer",
+   "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_DNR_PUBLIC_LAND_WTM_Ext/MapServer/0",
+   "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_DNR_PUBLIC_LAND_WTM_Ext/MapServer/5",
+   "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_DNR_PUBLIC_LAND_WTM_Ext/MapServer/6"
+  ]
+ },
+ "answered": "2026-10-30 11:29Z",
+ "results": [
+  {
+   "url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_DNR_MGD_PROP_WTM_Ext/MapServer",
+   "error": "<urlopen error timed out>"
+  },
+  {
+   "url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_DNR_Managed_Lands_Dissolved_WTM_Ext/MapServer",
+   "error": "<urlopen error timed out>"
+  },
+  {
+   "url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_DNR_REC_OPPS_WTM_Ext/MapServer",
+   "error": "<urlopen error timed out>"
+  },
+  {
+   "url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer",
+   "error": "<urlopen error timed out>"
+  },
+  {
+   "url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/NHC_SNA_WTM_Ext/MapServer",
+   "error": "<urlopen error timed out>"
+  },
+  {
+   "url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_DNR_PUBLIC_LAND_WTM_Ext/MapServer/0",
+   "error": "<urlopen error timed out>"
+  },
+  {
+   "url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_DNR_PUBLIC_LAND_WTM_Ext/MapServer/5",
+   "error": "<urlopen error timed out>"
+  },
+  {
+   "url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_DNR_PUBLIC_LAND_WTM_Ext/MapServer/6",
+   "error": "<urlopen error timed out>"
+  }
+ ],
+ "seconds": 1490,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "8 result(s), 0 read OK"
+}
