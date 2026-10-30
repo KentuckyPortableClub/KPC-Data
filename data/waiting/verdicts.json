@@ -1,7 +1,23 @@
 {
- "checked": "2026-10-30T01:40Z",
+ "checked": "2026-10-30T01:52Z",
  "switched_on": false,
  "results": [
+  {
+   "path": "data/campinfo/US-KY.json",
+   "kind": "campinfo",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/docs/US-WI.json",
+   "kind": "docs",
+   "why": [
+    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
+  },
   {
    "path": "data/hours/US-KY.json",
    "kind": "hours",

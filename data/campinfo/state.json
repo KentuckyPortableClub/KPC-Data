@@ -2,25 +2,25 @@
  "areas": {
   "US-KY": {
    "camps": 109,
-   "checked": 103,
+   "checked": 100,
    "counts": {
-    "camps": 103,
-    "needs_browser": 22,
-    "needs_key": 0,
+    "camps": 100,
+    "needs_browser": 3,
+    "needs_key": 35,
     "no_page": 0,
     "not_official": 0,
-    "ok": 74,
-    "other": 7,
+    "ok": 51,
+    "other": 11,
     "resting": 0,
     "robots": 0,
-    "with_booking": 86,
-    "with_elevation": 88,
-    "with_facts": 80,
-    "with_sites": 58
+    "with_booking": 51,
+    "with_elevation": 96,
+    "with_facts": 60,
+    "with_sites": 22
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-10-29"
+   "updated": "2026-10-30"
   }
  },
  "cell_status": {
@@ -34,44 +34,44 @@
     "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2025-12-31?category=State&subcategory=Mobile%20Broadband",
     "status": "FCC as of 2025-12-31: 0 mobile coverage files for the state (point lookup = step 2, not built)"
    },
-   "read": "2026-10-29"
+   "read": "2026-10-30"
   }
  },
  "hosts": {},
  "ky_check": {
-  "agree": 106,
-  "bot_blank": 192,
+  "agree": 111,
+  "bot_blank": 186,
   "campgrounds": 67,
-  "differ": 11,
+  "differ": 12,
   "fact_tally": {
    "dump_station": {
-    "right": 5,
+    "right": 4,
     "wrong": 0
    },
    "electric": {
-    "right": 26,
-    "wrong": 3
+    "right": 32,
+    "wrong": 4
    },
    "sewer": {
-    "right": 9,
-    "wrong": 2
+    "right": 7,
+    "wrong": 1
    },
    "showers": {
-    "right": 18,
+    "right": 20,
     "wrong": 0
    },
    "sites": {
     "right": 20,
-    "wrong": 1
+    "wrong": 2
    },
    "water": {
-    "right": 17,
+    "right": 20,
     "wrong": 1
    }
   },
   "gate": {
    "fact_pct": 93,
-   "pct": 91,
+   "pct": 90,
    "provenance": [],
    "result": "PASS",
    "rows": [
@@ -106,7 +106,7 @@
      "why": "Higginson-Henry WMA: no camping season (hunting season dates are not the camping season)"
     },
     {
-     "got": "True from “Site 82. Loop D: One restroom located near Site 108. Additional amenities; coin-operated s”",
+     "got": "None from “”",
      "ok": true,
      "why": "Mammoth Cave: showers from a real sentence or null, never the 'Shower Types' menu heading"
     },
@@ -121,12 +121,12 @@
      "why": "Bandy Creek: phone is not the (877) reservation line"
     },
     {
-     "got": "(423) 286-7275",
+     "got": null,
      "ok": true,
      "why": "Bear Creek Horse Camp: phone is not the (877) reservation line"
     },
     {
-     "got": "(423) 286-7275",
+     "got": null,
      "ok": true,
      "why": "Blue Heron: phone is not the (877) reservation line"
     },
@@ -156,8 +156,8 @@
      "why": "Fort Boonesborough: site count read from the state park page (key 163, so >= 100)"
     }
    ],
-   "when": "2026-10-29",
-   "why": "FACTS vs hand key: 95/102 right = 93% (need 80%, at least 10 filled; sites 20/21, electric 26/29, water 17/18, sewer 9/11, dump_station 5/5, showers 18/18) · 0 fee/site values from the wrong page or sentence (need 0) · known answers 16 right of 16 read, 0 waiting on the secret, 0 warn · all-field agreement 106/117 = 91% ('some' = agree; KEY_WRONG left out)"
+   "when": "2026-10-30",
+   "why": "FACTS vs hand key: 103/111 right = 93% (need 80%, at least 10 filled; sites 20/22, electric 32/36, water 20/21, sewer 7/8, dump_station 4/4, showers 20/20) · 0 fee/site values from the wrong page or sentence (need 0) · known answers 16 right of 16 read, 0 waiting on the secret, 0 warn · all-field agreement 111/123 = 90% ('some' = agree; KEY_WRONG left out)"
   },
   "key_wrong": [
    {
@@ -233,13 +233,13 @@
    {
     "fields": {
      "electric": "agree (True)",
-     "phone": "agree ((423) 286-7275)",
+     "phone": "bot blank (key: (423) 286-7275)",
      "showers": "agree (True)",
      "sites": "agree (45)"
     },
     "id": "blue-heron-campground-ky",
     "name": "Blue Heron Campground (KY)",
-    "status": "ok"
+    "status": "ok (browser)"
    },
    {
     "fields": {
@@ -254,15 +254,15 @@
    },
    {
     "fields": {
-     "electric": "agree (False)",
-     "phone": "agree ((423) 569-9778)",
-     "sewer": "agree (False)",
-     "sites": "agree (6)",
-     "water": "agree (False)"
+     "electric": "bot blank (key: False)",
+     "phone": "bot blank (key: (423) 569-9778)",
+     "sewer": "bot blank (key: False)",
+     "sites": "bot blank (key: 6)",
+     "water": "bot blank (key: False)"
     },
     "id": "alum-ford-campground-ky",
     "name": "Alum Ford Campground (KY)",
-    "status": "ok"
+    "status": "ok (browser)"
    },
    {
     "fields": {
@@ -300,13 +300,13 @@
    },
    {
     "fields": {
-     "electric": "bot blank (key: False)",
+     "electric": "DIFFER bot True vs key False",
      "sites": "bot blank (key: 39)",
-     "water": "bot blank (key: True)"
+     "water": "agree (True)"
     },
     "id": "carr-creek-campground",
     "name": "Carr Creek Campground",
-    "status": "ok, no campground facts in the page text: needs browser?"
+    "status": "ok (browser)"
    },
    {
     "fields": {
@@ -314,13 +314,13 @@
      "dump_station": "bot blank (key: True)",
      "electric": "bot blank (key: True)",
      "phone": "bot blank (key: (606) 286-4411)",
-     "showers": "bot blank (key: True)",
+     "showers": "agree (True)",
      "sites": "bot blank (key: 128)",
      "water": "bot blank (key: True)"
     },
     "id": "carter-caves-campground",
     "name": "Carter Caves Campground",
-    "status": "ok, no campground facts in the page text: needs browser?"
+    "status": "ok (browser)"
    },
    {
     "fields": {
@@ -346,7 +346,7 @@
     },
     "id": "ridgeline-clifty-campgrounds",
     "name": "Ridgeline & Clifty Campgrounds",
-    "status": "ok, no campground facts in the page text: needs browser?"
+    "status": "ok, no campground facts even in a browser"
    },
    {
     "fields": {
@@ -423,11 +423,11 @@
    {
     "fields": {
      "electric": "KEY WRONG (bot False, key False): left out",
-     "phone": "DIFFER bot (606) 663-8100 vs key (606) 784-6428",
-     "sewer": "agree (False)",
+     "phone": "bot blank (key: (606) 784-6428)",
+     "sewer": "bot blank (key: False)",
      "showers": "agree (True)",
      "sites": "agree (54)",
-     "water": "agree (False)"
+     "water": "bot blank (key: False)"
     },
     "id": "koomer-ridge-campground",
     "name": "Koomer Ridge Campground",
@@ -549,14 +549,14 @@
    {
     "fields": {
      "amps": "bot blank (key: [50])",
-     "electric": "bot blank (key: True)",
-     "phone": "bot blank (key: (606) 474-6856)",
-     "sites": "bot blank (key: 69)",
-     "water": "bot blank (key: True)"
+     "electric": "agree (True)",
+     "phone": "DIFFER bot (606) 474-4513 vs key (606) 474-6856",
+     "sites": "agree (69) [bot: 71]",
+     "water": "agree (True)"
     },
     "id": "grayson-lake-campground",
     "name": "Grayson Lake Campground",
-    "status": "ok, no campground facts in the page text: needs browser?"
+    "status": "ok (browser)"
    },
    {
     "fields": {
@@ -567,7 +567,7 @@
     },
     "id": "green-river-lake-campground",
     "name": "Green River Lake Campground",
-    "status": "ok, no campground facts in the page text: needs browser?"
+    "status": "ok (browser)"
    },
    {
     "fields": {
@@ -603,7 +603,7 @@
     },
     "id": "john-james-audubon-campground",
     "name": "John James Audubon Campground",
-    "status": "ok, no campground facts in the page text: needs browser?"
+    "status": "ok (browser)"
    },
    {
     "fields": {
@@ -615,7 +615,7 @@
     },
     "id": "kenlake-campground",
     "name": "Kenlake Campground",
-    "status": "ok, no campground facts in the page text: needs browser?"
+    "status": "ok (browser)"
    },
    {
     "fields": {
@@ -625,50 +625,50 @@
     },
     "id": "kentucky-dam-village-campground",
     "name": "Kentucky Dam Village Campground",
-    "status": "ok, no campground facts in the page text: needs browser?"
+    "status": "ok, no campground facts even in a browser"
    },
    {
     "fields": {
-     "electric": "bot blank (key: True)",
-     "sites": "bot blank (key: 159)"
+     "electric": "agree (True)",
+     "sites": "DIFFER bot 84 vs key 159"
     },
     "id": "kincaid-lake-campground",
     "name": "Kincaid Lake Campground",
-    "status": "ok, no campground facts in the page text: needs browser?"
+    "status": "ok (browser)"
    },
    {
     "fields": {
      "amps": "bot blank (key: [30])",
-     "electric": "bot blank (key: True)",
+     "electric": "agree (True)",
      "sites": "bot blank (key: 79)",
-     "water": "bot blank (key: True)"
+     "water": "agree (True)"
     },
     "id": "lake-barkley-campground",
     "name": "Lake Barkley Campground",
-    "status": "ok, no campground facts in the page text: needs browser?"
+    "status": "ok (browser)"
    },
    {
     "fields": {
-     "electric": "bot blank (key: True)",
+     "electric": "agree (True)",
      "phone": "bot blank (key: (270) 343-3111)",
      "sewer": "bot blank (key: True)",
      "sites": "bot blank (key: 87)",
-     "water": "bot blank (key: True)"
+     "water": "agree (True)"
     },
     "id": "lake-cumberland-campground",
     "name": "Lake Cumberland Campground",
-    "status": "ok, no campground facts in the page text: needs browser?"
+    "status": "ok (browser)"
    },
    {
     "fields": {
      "amps": "bot blank (key: [30])",
-     "electric": "bot blank (key: True)",
+     "electric": "agree (True)",
      "sites": "bot blank (key: 25)",
-     "water": "bot blank (key: True)"
+     "water": "agree (True)"
     },
     "id": "lake-malone-campground",
     "name": "Lake Malone Campground",
-    "status": "ok, no campground facts in the page text: needs browser?"
+    "status": "ok (browser)"
    },
    {
     "fields": {
@@ -742,17 +742,17 @@
    },
    {
     "fields": {
-     "dump_station": "agree (True)",
-     "electric": "DIFFER bot True vs key False",
-     "phone": "agree ((270) 758-2424)",
-     "sewer": "DIFFER bot True vs key False",
-     "showers": "agree (True)",
-     "sites": "agree (111)",
-     "water": "agree (False)"
+     "dump_station": "bot blank (key: True)",
+     "electric": "bot blank (key: False)",
+     "phone": "bot blank (key: (270) 758-2424)",
+     "sewer": "bot blank (key: False)",
+     "showers": "bot blank (key: True)",
+     "sites": "bot blank (key: 111)",
+     "water": "bot blank (key: False)"
     },
     "id": "mammoth-cave-campground",
     "name": "Mammoth Cave Campground",
-    "status": "ok"
+    "status": "ok, no campground facts even in a browser"
    },
    {
     "fields": {
@@ -780,37 +780,37 @@
    {
     "fields": {
      "amps": "bot blank (key: [50])",
-     "electric": "bot blank (key: True)",
+     "electric": "agree (True)",
      "phone": "bot blank (key: (502) 348-3502)",
      "sewer": "bot blank (key: True)",
      "sites": "bot blank (key: 49)",
-     "water": "bot blank (key: True)"
+     "water": "agree (True)"
     },
     "id": "my-old-kentucky-home-campground",
     "name": "My Old Kentucky Home Campground",
-    "status": "ok, no campground facts in the page text: needs browser?"
+    "status": "ok (browser)"
    },
    {
     "fields": {
      "amps": "bot blank (key: [20])",
-     "electric": "bot blank (key: True)",
+     "electric": "agree (True)",
      "phone": "bot blank (key: (606) 663-2214)",
      "sites": "bot blank (key: 86)",
      "water": "bot blank (key: True)"
     },
     "id": "whittleton-middle-fork-campgrounds",
     "name": "Whittleton & Middle Fork Campgrounds",
-    "status": "ok, no campground facts in the page text: needs browser?"
+    "status": "ok (browser)"
    },
    {
     "fields": {
-     "electric": "bot blank (key: False)",
-     "showers": "bot blank (key: True)",
+     "electric": "DIFFER bot True vs key False",
+     "showers": "agree (True)",
      "sites": "bot blank (key: 65)"
     },
     "id": "nolin-lake-campground",
     "name": "Nolin Lake Campground",
-    "status": "ok, no campground facts in the page text: needs browser?"
+    "status": "ok (browser)"
    },
    {
     "fields": {
@@ -844,7 +844,7 @@
     },
     "id": "pennyrile-forest-campground",
     "name": "Pennyrile Forest Campground",
-    "status": "ok, no campground facts in the page text: needs browser?"
+    "status": "ok, no campground facts even in a browser"
    },
    {
     "fields": {
@@ -852,13 +852,13 @@
      "dump_station": "bot blank (key: True)",
      "electric": "bot blank (key: True)",
      "sewer": "bot blank (key: True)",
-     "showers": "bot blank (key: True)",
+     "showers": "agree (True)",
      "sites": "bot blank (key: 75)",
      "water": "bot blank (key: True)"
     },
     "id": "taylorsville-lake-campground",
     "name": "Taylorsville Lake Campground",
-    "status": "ok, no campground facts in the page text: needs browser?"
+    "status": "ok (browser)"
    },
    {
     "fields": {
@@ -876,12 +876,12 @@
    {
     "fields": {
      "electric": "bot blank (key: True)",
-     "sites": "bot blank (key: 47)",
+     "sites": "agree (47)",
      "water": "bot blank (key: True)"
     },
     "id": "yatesville-lake-campground",
     "name": "Yatesville Lake Campground",
-    "status": "ok, no campground facts in the page text: needs browser?"
+    "status": "ok (browser)"
    },
    {
     "fields": {
@@ -954,7 +954,7 @@
     },
     "id": "kingdom-come-primitive-campsites",
     "name": "Kingdom Come primitive campsites",
-    "status": "ok, no campground facts in the page text: needs browser?"
+    "status": "ok (browser)"
    },
    {
     "fields": {
@@ -987,7 +987,7 @@
     "status": "ok, no campground facts even in a browser"
    }
   ],
-  "when": "2026-10-29"
+  "when": "2026-10-30"
  },
  "last": {
   "areas": [
@@ -997,34 +997,33 @@
   "manners": {
    "arcgis_exempt": 0,
    "errors": 0,
-   "keyed_api": 123,
-   "requests": 322,
+   "requests": 231,
    "rested": 0,
    "robots": 0,
    "strikes": 0
   },
-  "ridb_key": true,
+  "ridb_key": false,
   "stat": {
-   "browser": 22,
+   "browser": 41,
    "camps": 109,
-   "elevations": 91,
+   "elevations": 105,
    "errors": 0,
-   "needs_browser": 30,
-   "needs_key": 0,
+   "needs_browser": 14,
+   "needs_key": 42,
    "no_page": 0,
    "not_official": 0,
-   "ok": 123,
+   "ok": 97,
    "pages_read": 80,
    "resting": 0,
-   "ridb_calls": 123,
+   "ridb_calls": 0,
    "robots": 0,
    "skipped_fresh": 0
   },
-  "when": "2026-10-29"
+  "when": "2026-10-30"
  },
  "test": {
   "result": "PASS",
-  "when": "2026-10-29",
-  "why": "FACTS vs hand key: 95/102 right = 93% (need 80%, at least 10 filled; sites 20/21, electric 26/29, water 17/18, sewer 9/11, dump_station 5/5, showers 18/18) · 0 fee/site values from the wrong page or sentence (need 0) · known answers 16 right of 16 read, 0 waiting on the secret, 0 warn · all-field agreement 106/117 = 91% ('some' = agree; KEY_WRONG left out)"
+  "when": "2026-10-30",
+  "why": "FACTS vs hand key: 103/111 right = 93% (need 80%, at least 10 filled; sites 20/22, electric 32/36, water 20/21, sewer 7/8, dump_station 4/4, showers 20/20) · 0 fee/site values from the wrong page or sentence (need 0) · known answers 16 right of 16 read, 0 waiting on the secret, 0 warn · all-field agreement 111/123 = 90% ('some' = agree; KEY_WRONG left out)"
  }
 }
