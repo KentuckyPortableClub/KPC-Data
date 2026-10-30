@@ -1,7 +1,7 @@
 {
  "about": "GIS hunter candidates (Rule G R-G7 steps 2-3): chat 11 answers YES / NO + checked_by + how (the agency map looked at); chat 2 rechecks (G-4) and joins in the key. 'name mismatch' = the official record's name differs from POTA's.",
  "built": "2026-10-30",
- "open": 204,
+ "open": 55,
  "questions": [
   {
    "area": "US-IA",
@@ -1662,7 +1662,7 @@
    "park": "Simon Canyon ACEC BLM Special Recreation Management Area",
    "kind": "name match",
    "record": 14029,
-   "record_name": "Simón Canyon (Recreation Area)",
+   "record_name": "Sim\u00f3n Canyon (Recreation Area)",
    "acres_approx": 3888,
    "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
    "agency": "BLM recreation SITE polygons (national, 3,478)",
@@ -6058,9 +6058,9 @@
    "record_link": "https://services.aadnc-aandc.gc.ca/arcgis/rest/services/nms20/nms/MapServer/21/query?objectIds=648&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-0831",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "name agrees (spelling/French form), kind of place agrees, size plausible; the agency record (names + acres only; map not seen)",
    "source": "gis-hunter"
   },
   {
@@ -6076,9 +6076,9 @@
    "record_link": "https://gis.princeedwardisland.ca/server/rest/services/GeoLinc_Provincial_Parks/MapServer/0/query?objectIds=13&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-0856",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6094,9 +6094,9 @@
    "record_link": "https://gis.princeedwardisland.ca/server/rest/services/GeoLinc_Provincial_Parks/MapServer/0/query?objectIds=27&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-0862",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6112,9 +6112,9 @@
    "record_link": "https://gis.princeedwardisland.ca/server/rest/services/GeoLinc_Provincial_Parks/MapServer/0/query?objectIds=19&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-0865",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6130,9 +6130,9 @@
    "record_link": "https://gis.princeedwardisland.ca/server/rest/services/GeoLinc_Provincial_Parks/MapServer/0/query?objectIds=14&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-0869",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6148,9 +6148,9 @@
    "record_link": "https://gis.princeedwardisland.ca/server/rest/services/GeoLinc_Provincial_Parks/MapServer/0/query?objectIds=32&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6594",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6166,9 +6166,9 @@
    "record_link": "https://gis.princeedwardisland.ca/server/rest/services/GeoLinc_Provincial_Parks/MapServer/0/query?objectIds=28&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-0863",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6184,9 +6184,9 @@
    "record_link": "https://gis.princeedwardisland.ca/server/rest/services/GeoLinc_Provincial_Parks/MapServer/0/query?objectIds=15&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-0874",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6202,9 +6202,9 @@
    "record_link": "https://gis.princeedwardisland.ca/server/rest/services/GeoLinc_Provincial_Parks/MapServer/0/query?objectIds=22&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-0880",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6220,9 +6220,9 @@
    "record_link": "https://www.apps.geomatics.gov.nt.ca/arcgis/rest/services/GNWT/Environment_LCC/MapServer/195/query?objectIds=40304&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-0752",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6238,9 +6238,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=21896&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-5477",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6256,9 +6256,9 @@
    "record_link": "https://geospatial.alberta.ca/titan/rest/services/boundary/land_use_management/MapServer/11/query?objectIds=36&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-2991",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6274,9 +6274,9 @@
    "record_link": "https://geospatial.alberta.ca/titan/rest/services/boundary/land_use_management/MapServer/11/query?objectIds=32&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-3018",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6292,9 +6292,9 @@
    "record_link": "https://geospatial.alberta.ca/titan/rest/services/boundary/land_use_management/MapServer/11/query?objectIds=35&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-3076",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6310,9 +6310,9 @@
    "record_link": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0/query?objectIds=87&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-3076",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6328,9 +6328,9 @@
    "record_link": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0/query?objectIds=433&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-3157",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6346,9 +6346,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22053&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-3157",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6364,9 +6364,9 @@
    "record_link": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0/query?objectIds=3&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-4771",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6382,9 +6382,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22053&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-4776",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6400,9 +6400,9 @@
    "record_link": "https://geospatial.alberta.ca/titan/rest/services/boundary/land_use_management/MapServer/11/query?objectIds=50&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-5377",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6418,9 +6418,9 @@
    "record_link": "https://geospatial.alberta.ca/titan/rest/services/boundary/land_use_management/MapServer/11/query?objectIds=30&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6126",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6436,9 +6436,9 @@
    "record_link": "https://geospatial.alberta.ca/titan/rest/services/boundary/land_use_management/MapServer/11/query?objectIds=57&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6134",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6454,9 +6454,9 @@
    "record_link": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0/query?objectIds=467&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-2969",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6472,9 +6472,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=18999&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-2969",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6490,9 +6490,9 @@
    "record_link": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0/query?objectIds=477&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-3111",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6508,9 +6508,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=18838&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-3111",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6526,9 +6526,9 @@
    "record_link": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0/query?objectIds=435&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-4773",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6544,9 +6544,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=21984&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-4773",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6562,9 +6562,9 @@
    "record_link": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0/query?objectIds=436&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-4779",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6580,9 +6580,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22007&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-4779",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6598,9 +6598,9 @@
    "record_link": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0/query?objectIds=436&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-4780",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6616,9 +6616,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22007&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-4780",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6634,9 +6634,9 @@
    "record_link": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0/query?objectIds=435&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6075",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6652,9 +6652,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=21984&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6075",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6670,9 +6670,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22046&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-4820",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6688,9 +6688,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=29&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6166",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6706,9 +6706,9 @@
    "record_link": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/3/query?objectIds=25&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6263",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6724,9 +6724,9 @@
    "record_link": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/0/query?objectIds=14&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6265",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6742,9 +6742,9 @@
    "record_link": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/3/query?objectIds=25&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6268",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6760,9 +6760,9 @@
    "record_link": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/3/query?objectIds=22&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6282",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6778,9 +6778,9 @@
    "record_link": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/0/query?objectIds=18&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-5737",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6796,9 +6796,9 @@
    "record_link": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/3/query?objectIds=22&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6259",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6814,9 +6814,9 @@
    "record_link": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/0/query?objectIds=8&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6275",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6832,9 +6832,9 @@
    "record_link": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/3/query?objectIds=23&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6276",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6850,9 +6850,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=17879&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-2390",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6868,9 +6868,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=18025&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-5465",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6887,8 +6887,8 @@
    "pota_link": "https://pota.app/#/park/CA-2464",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NOT SURE: close name or a part/variant; needs the agency page",
    "source": "gis-hunter"
   },
   {
@@ -6904,9 +6904,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=18242&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-2793",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -6923,8 +6923,8 @@
    "pota_link": "https://pota.app/#/park/CA-2897",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NOT SURE: close name or a part/variant; needs the agency page",
    "source": "gis-hunter"
   },
   {
@@ -6941,8 +6941,8 @@
    "pota_link": "https://pota.app/#/park/CA-2897",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NOT SURE: close name or a part/variant; needs the agency page",
    "source": "gis-hunter"
   },
   {
@@ -6959,8 +6959,8 @@
    "pota_link": "https://pota.app/#/park/CA-2897",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NOT SURE: close name or a part/variant; needs the agency page",
    "source": "gis-hunter"
   },
   {
@@ -6977,8 +6977,8 @@
    "pota_link": "https://pota.app/#/park/CA-2897",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NOT SURE: close name or a part/variant; needs the agency page",
    "source": "gis-hunter"
   },
   {
@@ -6994,9 +6994,9 @@
    "record_link": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsTitled/MapServer/6/query?objectIds=36&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-2912",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7012,9 +7012,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22308&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6061",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7030,9 +7030,9 @@
    "record_link": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsTitled/MapServer/0/query?objectIds=39&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-4926",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "name agrees (spelling/French form), kind of place agrees, size plausible; the agency record (names + acres only; map not seen)",
    "source": "gis-hunter"
   },
   {
@@ -7048,9 +7048,9 @@
    "record_link": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsTitled/MapServer/0/query?objectIds=113&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-4933",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "name agrees (spelling/French form), kind of place agrees, size plausible; the agency record (names + acres only; map not seen)",
    "source": "gis-hunter"
   },
   {
@@ -7067,8 +7067,8 @@
    "pota_link": "https://pota.app/#/park/CA-1156",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NOT SURE: close name or a part/variant; needs the agency page",
    "source": "gis-hunter"
   },
   {
@@ -7084,9 +7084,9 @@
    "record_link": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsTitled/MapServer/0/query?objectIds=113&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-2560",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7102,9 +7102,9 @@
    "record_link": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/4/query?objectIds=3246&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-2720",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7120,9 +7120,9 @@
    "record_link": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/1/query?objectIds=3246&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-2720",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7138,9 +7138,9 @@
    "record_link": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/4/query?objectIds=3246&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-2720",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7156,9 +7156,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=18468&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-2720",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7174,9 +7174,9 @@
    "record_link": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/4/query?objectIds=3246&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-2727",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7192,9 +7192,9 @@
    "record_link": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/1/query?objectIds=3246&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-2727",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7210,9 +7210,9 @@
    "record_link": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/4/query?objectIds=3246&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-2727",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7228,9 +7228,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=18468&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-2727",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7246,9 +7246,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=18231&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-2775",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7264,9 +7264,9 @@
    "record_link": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/4/query?objectIds=3246&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-2779",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7282,9 +7282,9 @@
    "record_link": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/1/query?objectIds=3246&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-2779",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7300,9 +7300,9 @@
    "record_link": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/4/query?objectIds=3246&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-2779",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7318,9 +7318,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=18468&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-2779",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7336,9 +7336,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=18195&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-2857",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7354,9 +7354,9 @@
    "record_link": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsTitled/MapServer/0/query?objectIds=113&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-4928",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7372,9 +7372,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=18195&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-5139",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7390,9 +7390,9 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82/query?objectIds=6121423&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-5326",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7408,9 +7408,9 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82/query?objectIds=6120928&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-3199",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7426,9 +7426,9 @@
    "record_link": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82/query?objectIds=6117457&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-3739",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7444,9 +7444,9 @@
    "record_link": "https://nsgiwa.novascotia.ca/arcgis/rest/services/PLAN/PLANCrownLandsWM84V1/MapServer/0/query?objectIds=10648&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-0465",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7462,9 +7462,9 @@
    "record_link": "https://nsgiwa.novascotia.ca/arcgis/rest/services/ENV/ENV_NS_Prot_Area_Sys_UT83/MapServer/0/query?objectIds=570&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6189",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7480,9 +7480,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=811&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6189",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7498,9 +7498,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=1495&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6567",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7516,9 +7516,9 @@
    "record_link": "https://nsgiwa.novascotia.ca/arcgis/rest/services/PLAN/PLANCrownLandsWM84V1/MapServer/0/query?objectIds=11827&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-0478",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7534,9 +7534,9 @@
    "record_link": "https://nsgiwa.novascotia.ca/arcgis/rest/services/PLAN/PLANCrownLandsWM84V1/MapServer/0/query?objectIds=4471&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-0892",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7552,9 +7552,9 @@
    "record_link": "https://nsgiwa.novascotia.ca/arcgis/rest/services/PLAN/PLANCrownLandsWM84V1/MapServer/0/query?objectIds=17391&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-0903",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7570,9 +7570,9 @@
    "record_link": "https://nsgiwa.novascotia.ca/arcgis/rest/services/PLAN/PLANCrownLandsWM84V1/MapServer/0/query?objectIds=10344&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-1799",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7588,9 +7588,9 @@
    "record_link": "https://nsgiwa.novascotia.ca/arcgis/rest/services/PLAN/PLANCrownLandsWM84V1/MapServer/0/query?objectIds=8053&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-1848",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7606,9 +7606,9 @@
    "record_link": "https://nsgiwa.novascotia.ca/arcgis/rest/services/PLAN/PLANCrownLandsWM84V1/MapServer/0/query?objectIds=3312&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-1867",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7624,9 +7624,9 @@
    "record_link": "https://nsgiwa.novascotia.ca/arcgis/rest/services/PLAN/PLANCrownLandsWM84V1/MapServer/0/query?objectIds=8346&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-1904",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7642,9 +7642,9 @@
    "record_link": "https://nsgiwa.novascotia.ca/arcgis/rest/services/PLAN/PLANCrownLandsWM84V1/MapServer/0/query?objectIds=5092&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-5446",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7660,9 +7660,9 @@
    "record_link": "https://nsgiwa.novascotia.ca/arcgis/rest/services/PLAN/PLANCrownLandsWM84V1/MapServer/0/query?objectIds=772&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6178",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7678,9 +7678,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=21926&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6191",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7696,9 +7696,9 @@
    "record_link": "https://novarocmaps.novascotia.ca/arcgis/rest/services/NovaRoc/MapServer/29/query?objectIds=4&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6375",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7714,9 +7714,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22058&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6375",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7732,9 +7732,9 @@
    "record_link": "https://nsgiwa.novascotia.ca/arcgis/rest/services/PLAN/PLANCrownLandsWM84V1/MapServer/0/query?objectIds=8802&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6483",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7750,9 +7750,9 @@
    "record_link": "https://nsgiwa.novascotia.ca/arcgis/rest/services/PLAN/PLANCrownLandsWM84V1/MapServer/0/query?objectIds=10434&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6553",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7768,9 +7768,9 @@
    "record_link": "https://nsgiwa.novascotia.ca/arcgis/rest/services/PLAN/PLANCrownLandsWM84V1/MapServer/0/query?objectIds=12370&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6559",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7786,9 +7786,9 @@
    "record_link": "https://nsgiwa.novascotia.ca/arcgis/rest/services/PLAN/PLANCrownLandsWM84V1/MapServer/0/query?objectIds=12801&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6560",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7804,9 +7804,9 @@
    "record_link": "https://nsgiwa.novascotia.ca/arcgis/rest/services/PLAN/PLANCrownLandsWM84V1/MapServer/0/query?objectIds=13895&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6565",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7822,9 +7822,9 @@
    "record_link": "https://nsgiwa.novascotia.ca/arcgis/rest/services/PLAN/PLANCrownLandsWM84V1/MapServer/0/query?objectIds=1005&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6570",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7840,9 +7840,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22296&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-0785",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7858,9 +7858,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=3177&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-4438",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7876,9 +7876,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=3663&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-4444",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7894,9 +7894,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=3607&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6480",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7912,9 +7912,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=6669&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6584",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7930,9 +7930,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=3666&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6481",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7948,9 +7948,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=21919&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-0778",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -7967,8 +7967,8 @@
    "pota_link": "https://pota.app/#/park/CA-5202",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NOT SURE: close name or a part/variant; needs the agency page",
    "source": "gis-hunter"
   },
   {
@@ -7985,8 +7985,8 @@
    "pota_link": "https://pota.app/#/park/CA-5203",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NOT SURE: close name or a part/variant; needs the agency page",
    "source": "gis-hunter"
   },
   {
@@ -8002,9 +8002,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=21919&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6444",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -8020,9 +8020,9 @@
    "record_link": "https://gis-erd-der.gnb.ca/server/rest/services/OpenData/WMZ/MapServer/0",
    "pota_link": "https://pota.app/#/park/CA-6471",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -8038,9 +8038,9 @@
    "record_link": "https://gis-erd-der.gnb.ca/server/rest/services/OpenData/WMZ/MapServer/0",
    "pota_link": "https://pota.app/#/park/CA-6482",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -8056,9 +8056,9 @@
    "record_link": "https://gis-erd-der.gnb.ca/server/rest/services/OpenData/WMZ/MapServer/0",
    "pota_link": "https://pota.app/#/park/CA-6522",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -8074,9 +8074,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=16436&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-0195",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -8092,9 +8092,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=5992&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-0234",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -8110,9 +8110,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=16243&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-1300",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -8128,9 +8128,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=16396&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-1305",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -8146,9 +8146,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=16422&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-1340",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -8164,9 +8164,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=16387&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-1394",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -8182,9 +8182,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=15890&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-1439",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -8200,9 +8200,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=16510&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-1467",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -8218,9 +8218,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=16387&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-1559",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -8236,9 +8236,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=15937&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-1566",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -8254,9 +8254,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=16468&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-1599",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -8272,9 +8272,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=16387&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-1707",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -8290,9 +8290,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=21992&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-4857",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -8308,9 +8308,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=16999&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-5364",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -8326,9 +8326,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=16483&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-5507",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -8344,9 +8344,9 @@
    "record_link": "https://maps2.grca.on.ca/server/rest/services/Hosted/LANDMGNT_CA_Lands/FeatureServer/0",
    "pota_link": "https://pota.app/#/park/CA-5646",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -8362,9 +8362,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22041&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6181",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -8380,9 +8380,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22063&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6199",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -8398,9 +8398,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22313&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6514",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -8416,9 +8416,9 @@
    "record_link": "https://maps2.grca.on.ca/server/rest/services/ORCA_Public/ORCA_Annual_Report_CAs/MapServer/2/query?objectIds=12&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-5118",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -8434,9 +8434,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=17102&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-6617",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "name agrees (spelling/French form), kind of place agrees, size plausible; the agency record (names + acres only; map not seen)",
    "source": "gis-hunter"
   },
   {
@@ -8453,8 +8453,8 @@
    "pota_link": "https://pota.app/#/park/CA-6619",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NOT SURE: close name or a part/variant; needs the agency page",
    "source": "gis-hunter"
   },
   {
@@ -8470,9 +8470,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=17049&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-0063",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -8489,8 +8489,8 @@
    "pota_link": "https://pota.app/#/park/CA-1312",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NOT SURE: close name or a part/variant; needs the agency page",
    "source": "gis-hunter"
   },
   {
@@ -8506,9 +8506,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22410&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-1349",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -8524,9 +8524,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=17732&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-1408",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -8542,9 +8542,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=16999&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-1651",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -8560,9 +8560,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=5736&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-5099",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -8578,9 +8578,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=5936&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-5352",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -8596,9 +8596,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=17364&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-5557",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -8614,9 +8614,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=5966&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-5636",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -8632,9 +8632,9 @@
    "record_link": "https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/4/query?objectIds=814&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-5981",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -8650,45 +8650,45 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22291&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-0960",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
    "area": "CA-QC",
    "ref": "CA-1922",
-   "park": "Banc-des-AmÃ©ricains Marine Nature Reserve",
+   "park": "Banc-des-Am\u00c3\u00a9ricains Marine Nature Reserve",
    "kind": "name match",
    "record": 15658,
-   "record_name": "Proposed Banc-des-Américains Aquatic Reserve",
+   "record_name": "Proposed Banc-des-Am\u00e9ricains Aquatic Reserve",
    "acres_approx": 244846,
    "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
    "agency": "CPCAD / Parks Canada",
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=15658&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-1922",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
    "area": "CA-QC",
    "ref": "CA-1922",
-   "park": "Banc-des-AmÃ©ricains Marine Nature Reserve",
+   "park": "Banc-des-Am\u00c3\u00a9ricains Marine Nature Reserve",
    "kind": "name match",
    "record": 21940,
-   "record_name": "Banc-des-Américains Marine Protected Area",
+   "record_name": "Banc-des-Am\u00e9ricains Marine Protected Area",
    "acres_approx": 74307,
    "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
    "agency": "CPCAD / Parks Canada",
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=21940&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-1922",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -8705,44 +8705,44 @@
    "pota_link": "https://pota.app/#/park/CA-0511",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NOT SURE: close name or a part/variant; needs the agency page",
    "source": "gis-hunter"
   },
   {
    "area": "CA-QC",
    "ref": "CA-1005",
-   "park": "Parc régional de la Forêt Ouareau Regional Park",
+   "park": "Parc r\u00e9gional de la For\u00eat Ouareau Regional Park",
    "kind": "name match",
    "record": null,
-   "record_name": "Parc régional de la Forêt Ouareau",
+   "record_name": "Parc r\u00e9gional de la For\u00eat Ouareau",
    "acres_approx": 39238,
    "layer": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/6",
-   "agency": "Québec Parc ~3",
+   "agency": "Qu\u00e9bec Parc ~3",
    "record_link": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/6",
    "pota_link": "https://pota.app/#/park/CA-1005",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "name agrees (spelling/French form), kind of place agrees, size plausible; the agency record (names + acres only; map not seen)",
    "source": "gis-hunter"
   },
   {
    "area": "CA-QC",
    "ref": "CA-1006",
-   "park": "Parc régional Montagne du Diable Regional Park",
+   "park": "Parc r\u00e9gional Montagne du Diable Regional Park",
    "kind": "name match",
    "record": null,
-   "record_name": "Parc régional de la Montagne du Diable",
+   "record_name": "Parc r\u00e9gional de la Montagne du Diable",
    "acres_approx": 23928,
    "layer": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/6",
-   "agency": "Québec Parc ~3",
+   "agency": "Qu\u00e9bec Parc ~3",
    "record_link": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/6",
    "pota_link": "https://pota.app/#/park/CA-1006",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "name agrees (spelling/French form), kind of place agrees, size plausible; the agency record (names + acres only; map not seen)",
    "source": "gis-hunter"
   },
   {
@@ -8751,22 +8751,22 @@
    "park": "Parc regional Kiamika Regional Park",
    "kind": "name match",
    "record": null,
-   "record_name": "Parc régional du réservoir Kiamika",
+   "record_name": "Parc r\u00e9gional du r\u00e9servoir Kiamika",
    "acres_approx": 33980,
    "layer": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/6",
-   "agency": "Québec Parc ~3",
+   "agency": "Qu\u00e9bec Parc ~3",
    "record_link": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/6",
    "pota_link": "https://pota.app/#/park/CA-4972",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "name agrees (spelling/French form), kind of place agrees, size plausible; the agency record (names + acres only; map not seen)",
    "source": "gis-hunter"
   },
   {
    "area": "CA-QC",
    "ref": "CA-0985",
-   "park": "Parc écologique Jean-Paul-Forand du Mont-Shefford Ecological Reserve",
+   "park": "Parc \u00e9cologique Jean-Paul-Forand du Mont-Shefford Ecological Reserve",
    "kind": "name match",
    "record": 14585,
    "record_name": "Canton-de-Shefford Nature Reserve",
@@ -8776,45 +8776,45 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=14585&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-0985",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
    "area": "CA-QC",
    "ref": "CA-1011",
-   "park": "Parc régional du Massif du Sud Regional Park",
+   "park": "Parc r\u00e9gional du Massif du Sud Regional Park",
    "kind": "name match",
    "record": null,
-   "record_name": "Parc régional du Massif du Sud",
+   "record_name": "Parc r\u00e9gional du Massif du Sud",
    "acres_approx": 27980,
    "layer": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/6",
-   "agency": "Québec Parc ~3",
+   "agency": "Qu\u00e9bec Parc ~3",
    "record_link": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/6",
    "pota_link": "https://pota.app/#/park/CA-1011",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "name agrees (spelling/French form), kind of place agrees, size plausible; the agency record (names + acres only; map not seen)",
    "source": "gis-hunter"
   },
   {
    "area": "CA-QC",
    "ref": "CA-1012",
-   "park": "Parc régional du Mont-Ham Regional Park",
+   "park": "Parc r\u00e9gional du Mont-Ham Regional Park",
    "kind": "name match",
    "record": null,
-   "record_name": "Parc régional du Mont-Ham",
+   "record_name": "Parc r\u00e9gional du Mont-Ham",
    "acres_approx": 4920,
    "layer": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/6",
-   "agency": "Québec Parc ~3",
+   "agency": "Qu\u00e9bec Parc ~3",
    "record_link": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/6",
    "pota_link": "https://pota.app/#/park/CA-1012",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "name agrees (spelling/French form), kind of place agrees, size plausible; the agency record (names + acres only; map not seen)",
    "source": "gis-hunter"
   },
   {
@@ -8823,16 +8823,16 @@
    "park": "Parc regional de la Chute-a-Bull Regional Park",
    "kind": "name match",
    "record": null,
-   "record_name": "Parc régional de la Chute-à-Bull",
+   "record_name": "Parc r\u00e9gional de la Chute-\u00e0-Bull",
    "acres_approx": 454,
    "layer": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/6",
-   "agency": "Québec Parc ~3",
+   "agency": "Qu\u00e9bec Parc ~3",
    "record_link": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/6",
    "pota_link": "https://pota.app/#/park/CA-4963",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "name agrees (spelling/French form), kind of place agrees, size plausible; the agency record (names + acres only; map not seen)",
    "source": "gis-hunter"
   },
   {
@@ -8841,16 +8841,16 @@
    "park": "Parc regional de la Seigneurie-du-Lac-Matapedia Regional Park",
    "kind": "name match",
    "record": null,
-   "record_name": "Parc régional de la Seigneurie du Lac Matapédia",
+   "record_name": "Parc r\u00e9gional de la Seigneurie du Lac Matap\u00e9dia",
    "acres_approx": 41900,
    "layer": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/6",
-   "agency": "Québec Parc ~3",
+   "agency": "Qu\u00e9bec Parc ~3",
    "record_link": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/6",
    "pota_link": "https://pota.app/#/park/CA-4966",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "name agrees (spelling/French form), kind of place agrees, size plausible; the agency record (names + acres only; map not seen)",
    "source": "gis-hunter"
   },
   {
@@ -8859,7 +8859,7 @@
    "park": "Archipel des Sept Iles Regional Park",
    "kind": "name match",
    "record": 15787,
-   "record_name": "Archipel-de-Sept-Îles Land set aside",
+   "record_name": "Archipel-de-Sept-\u00celes Land set aside",
    "acres_approx": 16281,
    "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
    "agency": "CPCAD / Parks Canada",
@@ -8867,8 +8867,8 @@
    "pota_link": "https://pota.app/#/park/CA-4999",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NOT SURE: close name or a part/variant; needs the agency page",
    "source": "gis-hunter"
   },
   {
@@ -8877,16 +8877,16 @@
    "park": "Parc ecoforestier de Johnville Regional Park",
    "kind": "name match",
    "record": 12716,
-   "record_name": "Tourbière de Johnville (partie Université Bishop/Sherbrooke - servitude) Natural Area Under Private Stewardship",
+   "record_name": "Tourbi\u00e8re de Johnville (partie Universit\u00e9 Bishop/Sherbrooke - servitude) Natural Area Under Private Stewardship",
    "acres_approx": 421,
    "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
    "agency": "CPCAD / Parks Canada",
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=12716&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-5044",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a different place / the same record offered to several parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -8895,16 +8895,16 @@
    "park": "Parc du Marecage-des-Scots Regional Park",
    "kind": "name match",
    "record": null,
-   "record_name": "Parc régional du Marécage des Scots",
+   "record_name": "Parc r\u00e9gional du Mar\u00e9cage des Scots",
    "acres_approx": 8115,
    "layer": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/6",
-   "agency": "Québec Parc ~3",
+   "agency": "Qu\u00e9bec Parc ~3",
    "record_link": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/6",
    "pota_link": "https://pota.app/#/park/CA-5051",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "name agrees (spelling/French form), kind of place agrees, size plausible; the agency record (names + acres only; map not seen)",
    "source": "gis-hunter"
   },
   {
@@ -8920,9 +8920,9 @@
    "record_link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=11058&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/CA-5052",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "name agrees (spelling/French form), kind of place agrees, size plausible; the agency record (names + acres only; map not seen)",
    "source": "gis-hunter"
   },
   {
@@ -8931,16 +8931,16 @@
    "park": "Foret Montmorency Regional Park",
    "kind": "name mismatch",
    "record": null,
-   "record_name": "Réserve faunique des Laurentides",
+   "record_name": "R\u00e9serve faunique des Laurentides",
    "acres_approx": 1930983,
    "layer": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/11",
-   "agency": "Québec Réser",
+   "agency": "Qu\u00e9bec R\u00e9ser",
    "record_link": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/11",
    "pota_link": "https://pota.app/#/park/CA-5054",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 30)",
+   "how": "NO: a much bigger parent area (names + acres only)",
    "source": "gis-hunter"
   }
  ]
