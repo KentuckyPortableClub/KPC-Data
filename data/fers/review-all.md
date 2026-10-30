@@ -1225,7 +1225,7 @@ Written by the 2-fer line's checker. Chat 8 works it after the US queue. Nothing
 | HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides | US-6406 + US-7696 | 8 same-day activations | dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only) | POTA history: POTA shows one session logged both parks / activated together by the same call on the same day (8x, POTA h |
 | HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides | US-2215 + US-2223 | 5 same-day activations | dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only) | POTA history: activated together by the same call on the same day (5x, POTA history) / outlines about 0 m apart |
 
-## ia (80 rows, 2026-10-29)
+## ia (80 rows, 2026-10-30)
 
 1 rows to look at + 79 POTA-history hints (only the 30 strongest shown here; all in review-all.json)
 | what | parks | size | reason | sources |
