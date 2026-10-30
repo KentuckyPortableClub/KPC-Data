@@ -1,0 +1,142 @@
+{
+ "request": "requests/9-cad-YT.json",
+ "id": "9-cad-YT",
+ "chat": 9,
+ "kind": "probe",
+ "report": "CA dive YT: re-run P-2 for 1 name-agreeing parks to get the layer URL",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "CA dive YT: re-run P-2 for 1 name-agreeing parks to get the layer URL",
+  "probe": {
+   "about": "Canada dive (HQ 9:30 AM): refs in order of points: CA-6265",
+   "refs": [
+    "CA-6265"
+   ],
+   "pointq": [
+    {
+     "st": "YT",
+     "url": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/0",
+     "note": "Yukon campgr",
+     "points": [
+      [
+       60.316,
+       -134.27
+      ]
+     ]
+    },
+    {
+     "st": "YT",
+     "url": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/3",
+     "note": "Yukon parks",
+     "points": [
+      [
+       60.316,
+       -134.27
+      ]
+     ]
+    },
+    {
+     "st": "YT",
+     "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/10",
+     "note": "Ontario fede",
+     "points": [
+      [
+       60.316,
+       -134.27
+      ]
+     ]
+    },
+    {
+     "st": "YT",
+     "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "note": "cpcad",
+     "points": [
+      [
+       60.316,
+       -134.27
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-30 14:33Z",
+ "results": {
+  "about": "Canada dive (HQ 9:30 AM): refs in order of points: CA-6265",
+  "date": "2026-10-30",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "YT",
+    "url": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/0",
+    "note": "Yukon campgr",
+    "hits": [
+     {
+      "layer": "0 Parks and Campgrounds - Surveyed",
+      "point": [
+       60.316,
+       -134.27
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "YT",
+    "url": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/3",
+    "note": "Yukon parks",
+    "hits": [
+     {
+      "layer": "3 Park and Protected Areas - 250k",
+      "point": [
+       60.316,
+       -134.27
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "YT",
+    "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/10",
+    "note": "Ontario fede",
+    "hits": [
+     {
+      "layer": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/10",
+      "error": "{'code': 400, 'message': 'Failed to execute query.', 'details': []}"
+     }
+    ]
+   },
+   {
+    "st": "YT",
+    "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+    "note": "cpcad",
+    "hits": [
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       60.316,
+       -134.27
+      ],
+      "nohit": true
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 21,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
