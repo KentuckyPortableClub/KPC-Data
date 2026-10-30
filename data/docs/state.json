@@ -92,10 +92,11 @@
    "updated": "2026-10-29"
   },
   "US-WI": {
-   "status": "failed",
+   "status": "done",
    "parks": 348,
-   "updated": "2026-10-29",
-   "why": "maps 294 -> 113"
+   "checked": 348,
+   "left": 0,
+   "updated": "2026-10-30"
   },
   "US-MN": {
    "status": "done",
@@ -253,12 +254,6 @@
   }
  },
  "hosts": {
-  "www.sos.mo.gov": 1793310223.15825,
-  "map.co.door.wi.us": 1793314121.8248734,
-  "mobile-maps-files.dnr.state.mn.us": 1793316407.4270828,
-  "iowaculture.gov": 1793316751.8942606,
-  "www.cgcounty.org": 1793316859.6578937,
-  "www.lclt.org": 1793322015.230936,
   "sojournertruthstatepark.info": 1793325011.1974332,
   "www.mass-trails.org": 1793326495.1067936,
   "www.usna.usda.gov": 1793332248.1578314,
@@ -273,15 +268,16 @@
   "tennesseerivervalleygeotourism.org": 1793366218.1591492,
   "wolfememorial.com": 1793366796.4594877,
   "www.virginiastateparks.gov": 1793367635.065476,
-  "www5.swfwmd.state.fl.us": 1793373160.1014225
+  "www5.swfwmd.state.fl.us": 1793373160.1014225,
+  "map.co.door.wi.us": 1793408717.0830843
  },
  "last": {
-  "when": "2026-10-29",
+  "when": "2026-10-30",
   "areas": [
    "US-WI"
   ],
   "stat": {
-   "requests": 520,
+   "requests": 524,
    "parks": 348,
    "maps_ok": 115,
    "maps_found": 108,
@@ -289,9 +285,10 @@
    "rules": 23,
    "browser": 6,
    "robots": 106,
-   "strikes": 0,
-   "errors": 0,
-   "skipped_fresh": 0
+   "strikes": 4,
+   "errors": 4,
+   "skipped_fresh": 0,
+   "kept_on_rest": 180
   }
  }
 }

@@ -1,12 +1,12 @@
 {
- "checked": "2026-10-30T01:17Z",
+ "checked": "2026-10-30T01:18Z",
  "switched_on": false,
  "results": [
   {
-   "path": "data/truth/US-KY.json",
-   "kind": "truth",
+   "path": "data/docs/US-WI.json",
+   "kind": "docs",
    "why": [
-    "F-K known answer US-3800: Cedar Creek Lake WMA OFF at 796 ac (now verdict agree, 796.0 ac)"
+    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
    ],
    "notes": [],
    "verdict": "HOLD"
