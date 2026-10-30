@@ -2,6 +2,428 @@
 
 Written by the 2-fer line's checker. Chat 8 works it after the US queue. Nothing here is shown to anyone.
 
+## ab (12 rows, 2026-10-30)
+
+| what | parks | size | reason | sources |
+|---|---|---|---|---|
+| more than one owner on the patch (all public): live, look later | CA-3116 Richardson Lake Migratory Bird Sanctuary + CA-3118 Richardson Wildland Provincial Park | 26437.7 ac | candidate · ['FED:CANADA', 'STATE'] | CA-3116: downloaded 2026-10-30; CA-3118: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+| more than one owner on the patch (all public): live, look later | CA-0040 Jasper National Park + CA-3167 Willmore Wilderness Park | 9571.7 ac | candidate · ['FED:CANADA', 'STATE'] | CA-0040: downloaded 2026-10-30; CA-3167: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+| more than one owner on the patch (all public): live, look later | CA-0040 Jasper National Park + CA-3119 Rock Lake - Solomon Creek Wildland Provincial Park | 2881.6 ac | candidate · ['FED:CANADA', 'STATE'] | CA-0040: downloaded 2026-10-30; CA-3119: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+| water only (boat spot): is there really no land? | CA-0115 + CA-3118 | 943.1 ac | water only: boat or kayak | CA-0115: downloaded 2026-10-30; CA-3118: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+| more than one owner on the patch (all public): live, look later | CA-0115 Wood Buffalo National Park + CA-3118 Richardson Wildland Provincial Park | 479.6 ac | candidate · ['FED:CANADA', 'STATE'] | CA-0115: downloaded 2026-10-30; CA-3118: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+| more than one owner on the patch (all public): live, look later | CA-0040 Jasper National Park + CA-3163 Whitehorse Wildland Provincial Park | 460.0 ac | candidate · ['FED:CANADA', 'STATE'] | CA-0040: downloaded 2026-10-30; CA-3163: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+| more than one owner on the patch (all public): live, look later | CA-0672 Saskatoon Island Provincial Park + CA-3125 Saskatoon Lake Migratory Bird Sanctuary | 287.1 ac | candidate · ['FED:CANADA', 'STATE'] | CA-0672: downloaded 2026-10-30; CA-3125: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+| water only (boat spot): is there really no land? | CA-0115 + CA-2988 | 166.8 ac | water only: boat or kayak | CA-0115: downloaded 2026-10-30; CA-2988: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+| more than one owner on the patch (all public): live, look later | CA-0115 Wood Buffalo National Park + CA-2932 Birch River Wildland Provincial Park | 146.0 ac | candidate · ['FED:CANADA', 'STATE'] | CA-0115: downloaded 2026-10-30; CA-2932: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+| more than one owner on the patch (all public): live, look later | CA-0040 Jasper National Park + CA-3161 White Goat Natural Area | 105.3 ac | candidate · ['FED:CANADA', 'STATE'] | CA-0040: downloaded 2026-10-30; CA-3161: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+| not sure | CA-5522 + CA-6112 | 67.6 ac | no public owner on the ownership map (CPCAD) at any part of the spot: could be private land under the designations · no owner on the maps at 5 of 5 points of th | CA-5522: downloaded 2026-10-30; CA-6112: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+| not sure | CA-6112 + CA-6587 | 33.5 ac | no public owner on the ownership map (CPCAD) at any part of the spot: could be private land under the designations · no owner on the maps at 5 of 5 points of th | CA-6112: downloaded 2026-10-30; CA-6587: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+
+## atl (404 rows, 2026-10-30)
+
+| what | parks | size | reason | sources |
+|---|---|---|---|---|
+| not sure | CA-0779 + CA-6544 | 69802.8 ac | the official outline of New Brunswick #5 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4517 + CA-6537 | 64835.0 ac | the official outline of New Brunswick #15 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0795 + CA-6537 | 64379.1 ac | the official outline of New Brunswick #15 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0780 + CA-6542 | 62270.0 ac | the official outline of New Brunswick #7 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-6509 + CA-6510 | 56391.1 ac | the official outline of New Brunswick #18 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0046 + CA-6507 | 55709.1 ac | the official outline of New Brunswick #14 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4381 + CA-6509 | 54835.0 ac | the official outline of New Brunswick #18 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0024 + CA-6535 | 50900.2 ac | the official outline of New Brunswick #23 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0025 + CA-6535 | 50900.2 ac | the official outline of New Brunswick #23 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0788 + CA-6542 | 42615.1 ac | the official outline of New Brunswick #7 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0772 + CA-6518 | 31518.9 ac | the official outline of New Brunswick #8 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4466 + CA-6542 | 29160.8 ac | the official outline of New Brunswick #7 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4381 + CA-6509 + CA-6510 | 24786.2 ac | the official outline of New Brunswick #18 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| part of the patch private or owner unknown: live, look later | CA-4381 Canaan Bog Protected Area + CA-6510 Canaan River Wildlife Management Area | 24708.4 ac | candidate · no owner on the maps at 1 of 5 points of the patch: only that piece is not sure | CA-4381: downloaded 2026-10-30; CA-6510: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+| not sure | CA-4418 + CA-6546 | 23755.2 ac | the official outline of New Brunswick #3 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1234 + CA-6550 | 17361.0 ac | the official outline of New Brunswick #12 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4465 + CA-6538 | 15596.7 ac | the official outline of New Brunswick #16 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4369 + CA-6507 | 14420.9 ac | the official outline of New Brunswick #14 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1238 + CA-6539 | 12386.9 ac | the official outline of New Brunswick #17 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4380 + CA-6539 | 11652.3 ac | the official outline of New Brunswick #17 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4367 + CA-6550 | 11361.8 ac | the official outline of New Brunswick #12 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4473 + CA-6545 | 11147.1 ac | the official outline of New Brunswick #4 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1233 + CA-6550 | 9589.2 ac | the official outline of New Brunswick #12 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4491 + CA-6545 | 9236.4 ac | the official outline of New Brunswick #4 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4456 + CA-6545 | 8721.1 ac | the official outline of New Brunswick #4 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4422 + CA-6509 | 8657.0 ac | the official outline of New Brunswick #18 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0768 + CA-6541 | 8382.8 ac | the official outline of New Brunswick #11 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1225 + CA-6503 | 8356.6 ac | the official outline of New Brunswick #24 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4525 + CA-6518 | 8284.8 ac | the official outline of New Brunswick #8 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4524 + CA-6518 | 8283.6 ac | the official outline of New Brunswick #8 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4378 + CA-6539 | 8239.9 ac | the official outline of New Brunswick #17 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0073 + CA-6539 | 8115.4 ac | the official outline of New Brunswick #17 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-6543 + CA-6598 | 8046.6 ac | the official outline of New Brunswick #9 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4489 + CA-6537 | 7661.4 ac | the official outline of New Brunswick #15 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4392 + CA-6546 | 7578.5 ac | the official outline of New Brunswick #3 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4368 + CA-6535 | 7410.1 ac | the official outline of New Brunswick #23 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4447 + CA-6542 | 6905.0 ac | the official outline of New Brunswick #7 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4373 + CA-6545 | 6751.2 ac | the official outline of New Brunswick #4 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4433 + CA-6518 | 6459.0 ac | the official outline of New Brunswick #8 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-6234 + CA-6535 | 6382.4 ac | the official outline of New Brunswick #23 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4434 + CA-6542 | 6036.8 ac | the official outline of New Brunswick #7 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4409 + CA-6548 | 5942.7 ac | the official outline of New Brunswick #1 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4476 + CA-6541 | 5926.8 ac | the official outline of New Brunswick #11 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4362 + CA-6546 | 5870.8 ac | the official outline of New Brunswick #3 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4488 + CA-6540 | 5809.7 ac | the official outline of New Brunswick #10 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4410 + CA-6545 | 5613.9 ac | the official outline of New Brunswick #4 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4387 + CA-6546 | 5602.5 ac | the official outline of New Brunswick #3 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4363 + CA-6542 | 5512.0 ac | the official outline of New Brunswick #7 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4521 + CA-6545 | 5507.9 ac | the official outline of New Brunswick #4 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4354 + CA-6548 | 5181.8 ac | the official outline of New Brunswick #1 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4389 + CA-6546 | 5092.5 ac | the official outline of New Brunswick #3 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4507 + CA-6551 | 4416.1 ac | the official outline of New Brunswick #13 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1229 + CA-6546 | 4372.9 ac | the official outline of New Brunswick #3 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4359 + CA-6518 | 4339.9 ac | the official outline of New Brunswick #8 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4430 + CA-6535 | 4240.1 ac | the official outline of New Brunswick #23 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4519 + CA-6545 | 4153.8 ac | the official outline of New Brunswick #4 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4494 + CA-6546 | 4075.7 ac | the official outline of New Brunswick #3 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4479 + CA-6509 | 4062.5 ac | the official outline of New Brunswick #18 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0100 + CA-6505 | 4051.4 ac | the official outline of New Brunswick #25 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1236 + CA-6518 | 3919.8 ac | the official outline of New Brunswick #8 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5204 + CA-6538 | 3745.2 ac | the official outline of New Brunswick #16 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4513 + CA-6542 | 3715.6 ac | the official outline of New Brunswick #7 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4472 + CA-6542 | 3478.9 ac | the official outline of New Brunswick #7 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4529 + CA-6538 | 3386.9 ac | the official outline of New Brunswick #16 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1237 + CA-6545 | 3330.1 ac | the official outline of New Brunswick #4 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4478 + CA-6509 | 3282.7 ac | the official outline of New Brunswick #18 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4366 + CA-6503 | 3242.6 ac | the official outline of New Brunswick #24 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4443 + CA-6540 | 3234.0 ac | the official outline of New Brunswick #10 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1257 + CA-6545 | 3221.4 ac | the official outline of New Brunswick #4 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4481 + CA-6542 | 3131.4 ac | the official outline of New Brunswick #7 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0780 + CA-6550 | 2965.1 ac | the official outline of New Brunswick #12 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4431 + CA-6542 | 2951.0 ac | the official outline of New Brunswick #7 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4390 + CA-6538 | 2861.9 ac | the official outline of New Brunswick #16 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0796 + CA-6545 | 2839.8 ac | the official outline of New Brunswick #4 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4375 + CA-6509 | 2800.6 ac | the official outline of New Brunswick #18 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4382 + CA-6538 | 2759.9 ac | the official outline of New Brunswick #16 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4542 + CA-6538 | 2583.1 ac | the official outline of New Brunswick #16 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4350 + CA-6518 | 2546.4 ac | the official outline of New Brunswick #8 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1221 + CA-6518 | 2541.0 ac | the official outline of New Brunswick #8 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4455 + CA-6546 | 2521.9 ac | the official outline of New Brunswick #3 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4537 + CA-6538 | 2519.6 ac | the official outline of New Brunswick #16 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4349 + CA-6542 | 2456.4 ac | the official outline of New Brunswick #7 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0024 + CA-6503 | 2394.6 ac | the official outline of New Brunswick #24 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0025 + CA-6503 | 2394.6 ac | the official outline of New Brunswick #24 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4518 + CA-6550 | 2335.5 ac | the official outline of New Brunswick #12 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4484 + CA-6518 | 2268.4 ac | the official outline of New Brunswick #8 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4487 + CA-6535 | 2151.5 ac | the official outline of New Brunswick #23 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4429 + CA-6539 | 2134.8 ac | the official outline of New Brunswick #17 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4534 + CA-6550 | 2118.3 ac | the official outline of New Brunswick #12 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4531 + CA-6551 | 2107.9 ac | the official outline of New Brunswick #13 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4503 + CA-6535 | 2044.4 ac | the official outline of New Brunswick #23 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4356 + CA-6518 | 1967.8 ac | the official outline of New Brunswick #8 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4439 + CA-6537 | 1877.4 ac | the official outline of New Brunswick #15 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4490 + CA-6546 | 1789.9 ac | the official outline of New Brunswick #3 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4492 + CA-6540 | 1787.0 ac | the official outline of New Brunswick #10 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4496 + CA-6547 | 1785.1 ac | the official outline of New Brunswick #2 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4374 + CA-6518 | 1753.1 ac | the official outline of New Brunswick #8 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4538 + CA-6509 | 1721.7 ac | the official outline of New Brunswick #18 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4415 + CA-6538 | 1705.9 ac | the official outline of New Brunswick #16 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4498 + CA-6518 | 1567.8 ac | the official outline of New Brunswick #8 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4464 + CA-6542 | 1564.3 ac | the official outline of New Brunswick #7 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4510 + CA-6538 | 1564.0 ac | the official outline of New Brunswick #16 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4514 + CA-6518 | 1560.0 ac | the official outline of New Brunswick #8 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4440 + CA-6539 | 1494.2 ac | the official outline of New Brunswick #17 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4394 + CA-6547 | 1478.2 ac | the official outline of New Brunswick #2 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4445 + CA-6545 | 1458.8 ac | the official outline of New Brunswick #4 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4377 + CA-6549 | 1413.4 ac | the official outline of New Brunswick #6 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4398 + CA-6539 | 1405.3 ac | the official outline of New Brunswick #17 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0784 + CA-6538 | 1404.3 ac | the official outline of New Brunswick #16 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4533 + CA-6503 | 1386.1 ac | the official outline of New Brunswick #24 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4458 + CA-6542 | 1330.8 ac | the official outline of New Brunswick #7 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4480 + CA-6546 | 1329.9 ac | the official outline of New Brunswick #3 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1259 + CA-6540 | 1312.4 ac | the official outline of New Brunswick #10 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4371 + CA-6540 | 1303.8 ac | the official outline of New Brunswick #10 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4425 + CA-6503 | 1284.2 ac | the official outline of New Brunswick #24 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4470 + CA-6518 | 1264.2 ac | the official outline of New Brunswick #8 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4511 + CA-6537 | 1239.8 ac | the official outline of New Brunswick #15 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0774 + CA-6542 | 1199.0 ac | the official outline of New Brunswick #7 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4412 + CA-6507 | 1187.7 ac | the official outline of New Brunswick #14 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4407 + CA-6547 | 1167.6 ac | the official outline of New Brunswick #2 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4402 + CA-6518 | 1158.6 ac | the official outline of New Brunswick #8 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4411 + CA-6537 | 1126.6 ac | the official outline of New Brunswick #15 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4365 + CA-6537 | 1121.2 ac | the official outline of New Brunswick #15 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4435 + CA-6546 | 1118.1 ac | the official outline of New Brunswick #3 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4352 + CA-6538 | 1109.6 ac | the official outline of New Brunswick #16 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4451 + CA-6538 | 1096.9 ac | the official outline of New Brunswick #16 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1222 + CA-6545 | 997.9 ac | the official outline of New Brunswick #4 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4399 + CA-6538 | 995.6 ac | the official outline of New Brunswick #16 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0014 + CA-6505 | 993.5 ac | the official outline of New Brunswick #25 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4379 + CA-6518 | 958.4 ac | the official outline of New Brunswick #8 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4398 + CA-6551 | 939.4 ac | the official outline of New Brunswick #13 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0090 + CA-6503 | 932.8 ac | the official outline of New Brunswick #24 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4396 + CA-6546 | 919.3 ac | the official outline of New Brunswick #3 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4427 + CA-6539 | 909.0 ac | the official outline of New Brunswick #17 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4441 + CA-6542 | 887.1 ac | the official outline of New Brunswick #7 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4405 + CA-6518 | 879.1 ac | the official outline of New Brunswick #8 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4361 + CA-6546 | 856.7 ac | the official outline of New Brunswick #3 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1247 + CA-6538 | 837.3 ac | the official outline of New Brunswick #16 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4416 + CA-6540 | 830.2 ac | the official outline of New Brunswick #10 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4536 + CA-6545 | 829.2 ac | the official outline of New Brunswick #4 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4459 + CA-6503 | 824.4 ac | the official outline of New Brunswick #24 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4499 + CA-6507 | 800.3 ac | the official outline of New Brunswick #14 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4370 + CA-6504 | 772.8 ac | the official outline of New Brunswick #19 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4446 + CA-6535 | 760.4 ac | the official outline of New Brunswick #23 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1228 + CA-6540 | 720.2 ac | the official outline of New Brunswick #10 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4440 + CA-6538 | 692.2 ac | the official outline of New Brunswick #16 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1230 + CA-6509 | 687.5 ac | the official outline of New Brunswick #18 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4364 + CA-6549 | 662.9 ac | the official outline of New Brunswick #6 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4454 + CA-6537 | 652.2 ac | the official outline of New Brunswick #15 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4500 + CA-6537 | 628.6 ac | the official outline of New Brunswick #15 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4391 + CA-6537 | 623.7 ac | the official outline of New Brunswick #15 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4385 + CA-6537 | 598.4 ac | the official outline of New Brunswick #15 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0767 + CA-6507 | 569.2 ac | the official outline of New Brunswick #14 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4457 + CA-6542 | 557.0 ac | the official outline of New Brunswick #7 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4408 + CA-6538 | 550.9 ac | the official outline of New Brunswick #16 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5226 + CA-6538 | 528.8 ac | the official outline of New Brunswick #16 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4509 + CA-6551 | 525.7 ac | the official outline of New Brunswick #13 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4527 + CA-6537 | 518.5 ac | the official outline of New Brunswick #15 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4535 + CA-6503 | 504.8 ac | the official outline of New Brunswick #24 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0024 + CA-4487 + CA-6535 | 474.4 ac | the official outline of New Brunswick #23 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0025 + CA-4487 + CA-6535 | 474.4 ac | the official outline of New Brunswick #23 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-6546 + CA-6547 | 465.8 ac | the official outline of New Brunswick #3 Wildlife Management Area, New Brunswick #2 Wildlife Management Area could not be read in pass 2 (the next run tries aga |  |
+| not sure | CA-0072 + CA-6518 | 435.6 ac | the official outline of New Brunswick #8 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4449 + CA-6540 | 416.4 ac | the official outline of New Brunswick #10 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4452 + CA-6542 | 415.9 ac | the official outline of New Brunswick #7 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4495 + CA-6547 | 402.2 ac | the official outline of New Brunswick #2 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-6508 + CA-6509 | 386.8 ac | the official outline of New Brunswick #22 Wildlife Management Area, New Brunswick #18 Wildlife Management Area could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-4372 + CA-6546 | 380.9 ac | the official outline of New Brunswick #3 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-6103 + CA-6537 | 373.7 ac | the official outline of New Brunswick #15 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4471 + CA-6537 | 373.3 ac | the official outline of New Brunswick #15 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-6538 + CA-6540 | 365.6 ac | the official outline of New Brunswick #16 Wildlife Management Area, New Brunswick #10 Wildlife Management Area could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-4483 + CA-6535 | 362.5 ac | the official outline of New Brunswick #23 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-6544 + CA-6545 | 362.3 ac | the official outline of New Brunswick #5 Wildlife Management Area, New Brunswick #4 Wildlife Management Area could not be read in pass 2 (the next run tries aga |  |
+| not sure | CA-4383 + CA-6503 | 351.5 ac | the official outline of New Brunswick #24 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-6508 + CA-6535 | 347.6 ac | the official outline of New Brunswick #22 Wildlife Management Area, New Brunswick #23 Wildlife Management Area could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-4532 + CA-6540 | 347.5 ac | the official outline of New Brunswick #10 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-6452 + CA-6537 | 340.4 ac | the official outline of New Brunswick #15 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4528 + CA-6542 | 338.3 ac | the official outline of New Brunswick #7 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4419 + CA-6505 | 330.9 ac | the official outline of New Brunswick #25 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0777 + CA-6503 | 329.7 ac | the official outline of New Brunswick #24 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4353 + CA-6538 | 328.6 ac | the official outline of New Brunswick #16 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-6541 + CA-6550 | 320.6 ac | the official outline of New Brunswick #11 Wildlife Management Area, New Brunswick #12 Wildlife Management Area could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-0046 + CA-4369 + CA-6507 | 319.9 ac | the official outline of New Brunswick #14 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-6542 + CA-6550 | 315.3 ac | the official outline of New Brunswick #7 Wildlife Management Area, New Brunswick #12 Wildlife Management Area could not be read in pass 2 (the next run tries ag |  |
+| not sure | CA-4453 + CA-6543 | 309.7 ac | the official outline of New Brunswick #9 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-6537 + CA-6538 | 309.7 ac | the official outline of New Brunswick #15 Wildlife Management Area, New Brunswick #16 Wildlife Management Area could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-6507 + CA-6551 | 295.1 ac | the official outline of New Brunswick #14 Wildlife Management Area, New Brunswick #13 Wildlife Management Area could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-6518 + CA-6543 | 292.0 ac | the official outline of New Brunswick #8 Wildlife Management Area, New Brunswick #9 Wildlife Management Area could not be read in pass 2 (the next run tries aga |  |
+| not sure | CA-4400 + CA-6507 | 289.0 ac | the official outline of New Brunswick #14 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-6545 + CA-6546 | 282.9 ac | the official outline of New Brunswick #4 Wildlife Management Area, New Brunswick #3 Wildlife Management Area could not be read in pass 2 (the next run tries aga |  |
+| not sure | CA-6504 + CA-6509 | 279.2 ac | the official outline of New Brunswick #19 Wildlife Management Area, New Brunswick #18 Wildlife Management Area could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-4450 + CA-6540 | 266.9 ac | the official outline of New Brunswick #10 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-6550 + CA-6551 | 266.1 ac | the official outline of New Brunswick #12 Wildlife Management Area, New Brunswick #13 Wildlife Management Area could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-6541 + CA-6542 | 262.3 ac | the official outline of New Brunswick #11 Wildlife Management Area, New Brunswick #7 Wildlife Management Area could not be read in pass 2 (the next run tries ag |  |
+| not sure | CA-4426 + CA-6549 | 260.1 ac | the official outline of New Brunswick #6 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4395 + CA-6537 | 260.0 ac | the official outline of New Brunswick #15 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-6547 + CA-6549 | 254.5 ac | the official outline of New Brunswick #2 Wildlife Management Area, New Brunswick #6 Wildlife Management Area could not be read in pass 2 (the next run tries aga |  |
+| not sure | CA-4388 + CA-6535 | 251.6 ac | the official outline of New Brunswick #23 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-6504 + CA-6507 | 249.4 ac | the official outline of New Brunswick #19 Wildlife Management Area, New Brunswick #14 Wildlife Management Area could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-4474 + CA-6537 | 246.6 ac | the official outline of New Brunswick #15 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-6508 + CA-6527 | 245.7 ac | the official outline of New Brunswick #22 Wildlife Management Area, New Brunswick #21 Wildlife Management Area could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-6538 + CA-6539 | 240.3 ac | the official outline of New Brunswick #16 Wildlife Management Area, New Brunswick #17 Wildlife Management Area could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-1246 + CA-6538 | 237.7 ac | the official outline of New Brunswick #16 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4520 + CA-6538 | 236.2 ac | the official outline of New Brunswick #16 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-6509 + CA-6551 | 232.4 ac | the official outline of New Brunswick #18 Wildlife Management Area, New Brunswick #13 Wildlife Management Area could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-4499 + CA-6504 | 229.6 ac | the official outline of New Brunswick #19 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-6540 + CA-6541 | 229.3 ac | the official outline of New Brunswick #10 Wildlife Management Area, New Brunswick #11 Wildlife Management Area could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-6542 + CA-6544 | 229.2 ac | the official outline of New Brunswick #7 Wildlife Management Area, New Brunswick #5 Wildlife Management Area could not be read in pass 2 (the next run tries aga |  |
+| not sure | CA-6527 + CA-6539 | 221.4 ac | the official outline of New Brunswick #21 Wildlife Management Area, New Brunswick #17 Wildlife Management Area could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-6518 + CA-6542 | 191.3 ac | the official outline of New Brunswick #8 Wildlife Management Area, New Brunswick #7 Wildlife Management Area could not be read in pass 2 (the next run tries aga |  |
+| not sure | CA-6509 + CA-6539 | 184.7 ac | the official outline of New Brunswick #18 Wildlife Management Area, New Brunswick #17 Wildlife Management Area could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-6539 + CA-6551 | 184.5 ac | the official outline of New Brunswick #17 Wildlife Management Area, New Brunswick #13 Wildlife Management Area could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-1235 + CA-6548 | 180.6 ac | the official outline of New Brunswick #1 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-6503 + CA-6508 | 178.0 ac | the official outline of New Brunswick #24 Wildlife Management Area, New Brunswick #22 Wildlife Management Area could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-6541 + CA-6549 | 173.5 ac | the official outline of New Brunswick #11 Wildlife Management Area, New Brunswick #6 Wildlife Management Area could not be read in pass 2 (the next run tries ag |  |
+| not sure | CA-0792 + CA-6505 | 172.9 ac | the official outline of New Brunswick #25 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0781 + CA-6537 | 171.8 ac | the official outline of New Brunswick #15 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4486 + CA-6537 | 170.0 ac | the official outline of New Brunswick #15 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4393 + CA-6537 | 166.4 ac | the official outline of New Brunswick #15 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4423 + CA-6540 | 163.7 ac | the official outline of New Brunswick #10 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4403 + CA-6542 | 162.2 ac | the official outline of New Brunswick #7 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1245 + CA-6508 | 161.3 ac | the official outline of New Brunswick #22 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-6518 + CA-6544 | 160.8 ac | the official outline of New Brunswick #8 Wildlife Management Area, New Brunswick #5 Wildlife Management Area could not be read in pass 2 (the next run tries aga |  |
+| not sure | CA-5208 + CA-6527 | 154.7 ac | the official outline of New Brunswick #21 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1249 + CA-6539 | 154.0 ac | the official outline of New Brunswick #17 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4512 + CA-6540 | 154.0 ac | the official outline of New Brunswick #10 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-6538 + CA-6550 | 153.0 ac | the official outline of New Brunswick #16 Wildlife Management Area, New Brunswick #12 Wildlife Management Area could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-6503 + CA-6505 | 148.3 ac | the official outline of New Brunswick #24 Wildlife Management Area, New Brunswick #25 Wildlife Management Area could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-6545 + CA-6549 | 148.2 ac | the official outline of New Brunswick #4 Wildlife Management Area, New Brunswick #6 Wildlife Management Area could not be read in pass 2 (the next run tries aga |  |
+| not sure | CA-6377 + CA-6518 | 147.5 ac | the official outline of New Brunswick #8 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-6503 + CA-6535 | 144.7 ac | the official outline of New Brunswick #24 Wildlife Management Area, New Brunswick #23 Wildlife Management Area could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-4367 + CA-6542 | 144.5 ac | the official outline of New Brunswick #7 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-6527 + CA-6538 | 144.4 ac | the official outline of New Brunswick #21 Wildlife Management Area, New Brunswick #16 Wildlife Management Area could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-6389 + CA-6504 | 143.1 ac | the official outline of New Brunswick #19 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-6542 + CA-6545 | 141.3 ac | the official outline of New Brunswick #7 Wildlife Management Area, New Brunswick #4 Wildlife Management Area could not be read in pass 2 (the next run tries aga |  |
+| not sure | CA-4515 + CA-6546 | 138.3 ac | the official outline of New Brunswick #3 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4508 + CA-6540 | 136.5 ac | the official outline of New Brunswick #10 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4468 + CA-6549 | 132.9 ac | the official outline of New Brunswick #6 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0024 + CA-4446 + CA-6535 | 131.3 ac | the official outline of New Brunswick #23 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0025 + CA-4446 + CA-6535 | 131.3 ac | the official outline of New Brunswick #23 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-6539 + CA-6550 | 130.0 ac | the official outline of New Brunswick #17 Wildlife Management Area, New Brunswick #12 Wildlife Management Area could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-6390 + CA-6508 | 124.6 ac | the official outline of New Brunswick #22 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-6542 + CA-6551 | 124.4 ac | the official outline of New Brunswick #7 Wildlife Management Area, New Brunswick #13 Wildlife Management Area could not be read in pass 2 (the next run tries ag |  |
+| not sure | CA-6503 + CA-6504 | 122.1 ac | the official outline of New Brunswick #24 Wildlife Management Area, New Brunswick #19 Wildlife Management Area could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-4357 + CA-6538 | 121.9 ac | the official outline of New Brunswick #16 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-6508 + CA-6539 | 117.2 ac | the official outline of New Brunswick #22 Wildlife Management Area, New Brunswick #17 Wildlife Management Area could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-0771 + CA-6548 | 117.1 ac | the official outline of New Brunswick #1 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-6542 + CA-6549 | 117.0 ac | the official outline of New Brunswick #7 Wildlife Management Area, New Brunswick #6 Wildlife Management Area could not be read in pass 2 (the next run tries aga |  |
+| not sure | CA-6540 + CA-6549 | 116.9 ac | the official outline of New Brunswick #10 Wildlife Management Area, New Brunswick #6 Wildlife Management Area could not be read in pass 2 (the next run tries ag |  |
+| not sure | CA-6504 + CA-6505 | 116.7 ac | the official outline of New Brunswick #19 Wildlife Management Area, New Brunswick #25 Wildlife Management Area could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-5150 + CA-6537 | 108.2 ac | the official outline of New Brunswick #15 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-6547 + CA-6548 | 92.9 ac | the official outline of New Brunswick #2 Wildlife Management Area, New Brunswick #1 Wildlife Management Area could not be read in pass 2 (the next run tries aga |  |
+| not sure | CA-6507 + CA-6518 | 87.6 ac | the official outline of New Brunswick #14 Wildlife Management Area, New Brunswick #8 Wildlife Management Area could not be read in pass 2 (the next run tries ag |  |
+| not sure | CA-5195 + CA-6503 | 87.5 ac | the official outline of New Brunswick #24 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4808 + CA-6542 | 83.9 ac | the official outline of New Brunswick #7 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-6527 + CA-6537 | 79.2 ac | the official outline of New Brunswick #21 Wildlife Management Area, New Brunswick #15 Wildlife Management Area could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-0789 + CA-6505 | 78.8 ac | the official outline of New Brunswick #25 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4418 + CA-6547 | 77.2 ac | the official outline of New Brunswick #2 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1258 + CA-6518 | 71.8 ac | the official outline of New Brunswick #8 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-6537 + CA-6540 | 71.0 ac | the official outline of New Brunswick #15 Wildlife Management Area, New Brunswick #10 Wildlife Management Area could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-4501 + CA-6540 | 66.2 ac | the official outline of New Brunswick #10 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5216 + CA-6508 | 62.0 ac | the official outline of New Brunswick #22 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0775 + CA-6545 | 61.0 ac | the official outline of New Brunswick #4 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5225 + CA-6538 | 60.2 ac | the official outline of New Brunswick #16 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0788 + CA-6549 | 57.3 ac | the official outline of New Brunswick #6 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4420 + CA-6518 | 56.5 ac | the official outline of New Brunswick #8 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0024 + CA-4535 + CA-6503 | 56.2 ac | the official outline of New Brunswick #24 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0025 + CA-4535 + CA-6503 | 56.2 ac | the official outline of New Brunswick #24 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1740 + CA-6505 | 55.8 ac | the official outline of New Brunswick #25 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1226 + CA-6503 | 51.6 ac | the official outline of New Brunswick #24 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1253 + CA-6508 | 47.8 ac | the official outline of New Brunswick #22 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0788 + CA-4466 + CA-6542 | 41.3 ac | the official outline of New Brunswick #7 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4360 + CA-6540 | 39.3 ac | the official outline of New Brunswick #10 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4418 + CA-6546 + CA-6547 | 37.7 ac | the official outline of New Brunswick #3 Wildlife Management Area, New Brunswick #2 Wildlife Management Area could not be read in pass 2 (the next run tries aga |  |
+| not sure | CA-1224 + CA-6535 | 37.2 ac | the official outline of New Brunswick #23 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5165 + CA-6507 | 36.5 ac | the official outline of New Brunswick #14 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4417 + CA-6543 | 35.7 ac | the official outline of New Brunswick #9 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0788 + CA-6542 + CA-6549 | 26.6 ac | the official outline of New Brunswick #7 Wildlife Management Area, New Brunswick #6 Wildlife Management Area could not be read in pass 2 (the next run tries aga |  |
+| not sure | CA-6504 + CA-6508 | 26.5 ac | the official outline of New Brunswick #19 Wildlife Management Area, New Brunswick #22 Wildlife Management Area could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-6546 + CA-6549 | 23.6 ac | the official outline of New Brunswick #3 Wildlife Management Area, New Brunswick #6 Wildlife Management Area could not be read in pass 2 (the next run tries aga |  |
+| not sure | CA-4406 + CA-6540 | 23.5 ac | the official outline of New Brunswick #10 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5182 + CA-6535 | 23.3 ac | the official outline of New Brunswick #23 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4460 + CA-6507 | 23.2 ac | the official outline of New Brunswick #14 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1220 + CA-6540 | 21.0 ac | the official outline of New Brunswick #10 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5167 + CA-6540 | 20.8 ac | the official outline of New Brunswick #10 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1225 + CA-4425 + CA-6503 | 20.3 ac | the official outline of New Brunswick #24 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-6538 + CA-6541 | 20.3 ac | the official outline of New Brunswick #16 Wildlife Management Area, New Brunswick #11 Wildlife Management Area could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-4397 + CA-6548 | 19.9 ac | the official outline of New Brunswick #1 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0024 + CA-6503 + CA-6535 | 18.5 ac | the official outline of New Brunswick #24 Wildlife Management Area, New Brunswick #23 Wildlife Management Area could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-0025 + CA-6503 + CA-6535 | 18.5 ac | the official outline of New Brunswick #24 Wildlife Management Area, New Brunswick #23 Wildlife Management Area could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-4368 + CA-6234 + CA-6535 | 18.2 ac | the official outline of New Brunswick #23 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5251 + CA-6527 | 17.5 ac | the official outline of New Brunswick #21 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4362 + CA-6546 + CA-6547 | 17.3 ac | the official outline of New Brunswick #3 Wildlife Management Area, New Brunswick #2 Wildlife Management Area could not be read in pass 2 (the next run tries aga |  |
+| not sure | CA-4442 + CA-6504 | 16.2 ac | the official outline of New Brunswick #19 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5235 + CA-6538 | 15.3 ac | the official outline of New Brunswick #16 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4362 + CA-6547 | 14.5 ac | the official outline of New Brunswick #2 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5196 + CA-6538 | 13.3 ac | the official outline of New Brunswick #16 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4367 + CA-6542 + CA-6550 | 13.1 ac | the official outline of New Brunswick #7 Wildlife Management Area, New Brunswick #12 Wildlife Management Area could not be read in pass 2 (the next run tries ag |  |
+| not sure | CA-4379 + CA-4498 + CA-6518 | 13.1 ac | the official outline of New Brunswick #8 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| more than one owner on the patch (all public): live, look later | CA-0024 Fundy Biosphere Reserve + CA-4535 Upper Salmon River Protected Area | 12.6 ac | very tight: could be map error: check both official maps on the ground · ['FED:CANADA', 'STATE'] | CA-0024: downloaded 2026-10-30; CA-4535: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+| more than one owner on the patch (all public): live, look later | CA-0025 Fundy National Park + CA-4535 Upper Salmon River Protected Area | 12.6 ac | very tight: could be map error: check both official maps on the ground · ['FED:CANADA', 'STATE'] | CA-0025: downloaded 2026-10-30; CA-4535: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+| not sure | CA-4535 + CA-6503 + CA-6535 | 11.3 ac | the official outline of New Brunswick #24 Wildlife Management Area, New Brunswick #23 Wildlife Management Area could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-5218 + CA-6508 | 10.6 ac | the official outline of New Brunswick #22 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4482 + CA-6509 | 10.3 ac | the official outline of New Brunswick #18 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4535 + CA-6535 | 9.5 ac | the official outline of New Brunswick #23 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0780 + CA-6542 + CA-6550 | 9.1 ac | the official outline of New Brunswick #7 Wildlife Management Area, New Brunswick #12 Wildlife Management Area could not be read in pass 2 (the next run tries ag |  |
+| not sure | CA-4372 + CA-6545 | 8.9 ac | the official outline of New Brunswick #4 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4418 + CA-4435 + CA-6546 | 8.1 ac | the official outline of New Brunswick #3 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4389 + CA-6545 | 7.4 ac | the official outline of New Brunswick #4 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4440 + CA-4510 + CA-6538 | 7.1 ac | the official outline of New Brunswick #16 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0024 + CA-4535 + CA-6503 + CA-6535 | 6.2 ac | the official outline of New Brunswick #24 Wildlife Management Area, New Brunswick #23 Wildlife Management Area could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-0025 + CA-4535 + CA-6503 + CA-6535 | 6.2 ac | the official outline of New Brunswick #24 Wildlife Management Area, New Brunswick #23 Wildlife Management Area could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-4455 + CA-6546 + CA-6547 | 6.2 ac | the official outline of New Brunswick #3 Wildlife Management Area, New Brunswick #2 Wildlife Management Area could not be read in pass 2 (the next run tries aga |  |
+| not sure | CA-4455 + CA-6547 | 6.0 ac | the official outline of New Brunswick #2 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4388 + CA-4430 + CA-6535 | 5.7 ac | the official outline of New Brunswick #23 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4478 + CA-4479 + CA-6509 | 5.6 ac | the official outline of New Brunswick #18 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4440 + CA-4465 + CA-6538 | 5.3 ac | the official outline of New Brunswick #16 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4368 + CA-4503 + CA-6535 | 5.2 ac | the official outline of New Brunswick #23 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4422 + CA-4538 + CA-6509 | 5.1 ac | the official outline of New Brunswick #18 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4369 + CA-4412 + CA-6507 | 4.8 ac | the official outline of New Brunswick #14 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0024 + CA-4535 + CA-6535 | 3.8 ac | the official outline of New Brunswick #23 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0025 + CA-4535 + CA-6535 | 3.8 ac | the official outline of New Brunswick #23 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| more than one owner on the patch (all public): live, look later | CA-0024 Fundy Biosphere Reserve + CA-4446 McManus Hill Protected Area | 3.7 ac | very tight: could be map error: check both official maps on the ground · ['FED:CANADA', 'STATE'] | CA-0024: downloaded 2026-10-30; CA-4446: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+| more than one owner on the patch (all public): live, look later | CA-0025 Fundy National Park + CA-4446 McManus Hill Protected Area | 3.7 ac | very tight: could be map error: check both official maps on the ground · ['FED:CANADA', 'STATE'] | CA-0025: downloaded 2026-10-30; CA-4446: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+| not sure | CA-4361 + CA-6547 | 3.4 ac | the official outline of New Brunswick #2 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4372 + CA-6545 + CA-6546 | 3.4 ac | the official outline of New Brunswick #4 Wildlife Management Area, New Brunswick #3 Wildlife Management Area could not be read in pass 2 (the next run tries aga |  |
+| not sure | CA-4454 + CA-4471 + CA-6537 | 3.4 ac | the official outline of New Brunswick #15 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4454 + CA-6103 + CA-6537 | 3.4 ac | the official outline of New Brunswick #15 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1913 + CA-6111 | 3.4 ac | no public owner on the ownership map (CPCAD) at any part of the spot: could be private land under the designations · no owner on the maps at 5 of 5 points of th | CA-1913: downloaded 2026-10-30; CA-6111: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+| not sure | CA-4375 + CA-6508 | 3.3 ac | the official outline of New Brunswick #22 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| water only (boat spot): is there really no land? | CA-1887 + CA-4837 | 3.2 ac | water only: boat or kayak | CA-1887: downloaded 2026-10-30; CA-4837: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+| not sure | CA-1257 + CA-4473 + CA-6545 | 3.1 ac | the official outline of New Brunswick #4 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5153 + CA-6538 | 3.0 ac | the official outline of New Brunswick #16 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4431 + CA-4472 + CA-6542 | 2.9 ac | the official outline of New Brunswick #7 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-6504 + CA-6551 | 2.9 ac | the official outline of New Brunswick #19 Wildlife Management Area, New Brunswick #13 Wildlife Management Area could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-4531 + CA-6509 + CA-6551 | 2.8 ac | the official outline of New Brunswick #18 Wildlife Management Area, New Brunswick #13 Wildlife Management Area could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-6490 + CA-6539 | 2.6 ac | the official outline of New Brunswick #17 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1257 + CA-4456 + CA-6545 | 2.4 ac | the official outline of New Brunswick #4 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4430 + CA-6234 + CA-6535 | 2.3 ac | the official outline of New Brunswick #23 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1235 + CA-4409 + CA-6548 | 2.0 ac | the official outline of New Brunswick #1 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4389 + CA-6545 + CA-6546 | 2.0 ac | the official outline of New Brunswick #4 Wildlife Management Area, New Brunswick #3 Wildlife Management Area could not be read in pass 2 (the next run tries aga |  |
+| not sure | CA-4411 + CA-4471 + CA-6537 | 1.9 ac | the official outline of New Brunswick #15 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4411 + CA-6103 + CA-6537 | 1.9 ac | the official outline of New Brunswick #15 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4456 + CA-6544 | 1.9 ac | the official outline of New Brunswick #5 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4499 + CA-6504 + CA-6507 | 1.9 ac | the official outline of New Brunswick #19 Wildlife Management Area, New Brunswick #14 Wildlife Management Area could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-1250 + CA-6518 | 1.6 ac | the official outline of New Brunswick #8 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4361 + CA-6546 + CA-6547 | 1.5 ac | the official outline of New Brunswick #3 Wildlife Management Area, New Brunswick #2 Wildlife Management Area could not be read in pass 2 (the next run tries aga |  |
+| not sure | CA-6497 + CA-6518 | 1.5 ac | the official outline of New Brunswick #8 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1229 + CA-4387 + CA-6546 | 1.3 ac | the official outline of New Brunswick #3 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4468 + CA-6541 + CA-6549 | 1.3 ac | the official outline of New Brunswick #11 Wildlife Management Area, New Brunswick #6 Wildlife Management Area could not be read in pass 2 (the next run tries ag |  |
+| not sure | CA-0885 + CA-5495 | 1.3 ac | no public owner on the ownership map (CPCAD) at any part of the spot: could be private land under the designations · no owner on the maps at 5 of 5 points of th | CA-0885: downloaded 2026-10-30; CA-5495: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+| not sure | CA-0772 + CA-4524 + CA-6518 | 1.0 ac | the official outline of New Brunswick #8 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0772 + CA-4525 + CA-6518 | 1.0 ac | the official outline of New Brunswick #8 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1222 + CA-4410 + CA-6545 | 1.0 ac | the official outline of New Brunswick #4 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4385 + CA-4391 + CA-6537 | 1.0 ac | the official outline of New Brunswick #15 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4422 + CA-6551 | 1.0 ac | the official outline of New Brunswick #13 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0780 + CA-1233 + CA-6550 | 0.6 ac | the official outline of New Brunswick #12 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4422 + CA-6509 + CA-6551 | 0.6 ac | the official outline of New Brunswick #18 Wildlife Management Area, New Brunswick #13 Wildlife Management Area could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-4465 + CA-4537 + CA-6538 | 0.6 ac | the official outline of New Brunswick #16 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0073 + CA-1238 + CA-6539 | 0.5 ac | the official outline of New Brunswick #17 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4349 + CA-6541 + CA-6542 | 0.5 ac | the official outline of New Brunswick #11 Wildlife Management Area, New Brunswick #7 Wildlife Management Area could not be read in pass 2 (the next run tries ag |  |
+| not sure | CA-4375 + CA-6508 + CA-6509 | 0.5 ac | the official outline of New Brunswick #22 Wildlife Management Area, New Brunswick #18 Wildlife Management Area could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-4382 + CA-4542 + CA-6538 | 0.5 ac | the official outline of New Brunswick #16 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4456 + CA-6544 + CA-6545 | 0.5 ac | the official outline of New Brunswick #5 Wildlife Management Area, New Brunswick #4 Wildlife Management Area could not be read in pass 2 (the next run tries aga |  |
+| not sure | CA-5187 + CA-6518 | 0.5 ac | the official outline of New Brunswick #8 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1257 + CA-4491 + CA-6545 | 0.4 ac | the official outline of New Brunswick #4 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4465 + CA-4510 + CA-6538 | 0.4 ac | the official outline of New Brunswick #16 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4349 + CA-6541 | 0.2 ac | the official outline of New Brunswick #11 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4468 + CA-6541 | 0.2 ac | the official outline of New Brunswick #11 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4531 + CA-6509 | 0.2 ac | the official outline of New Brunswick #18 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-6538 + CA-6541 + CA-6550 | 0.2 ac | the official outline of New Brunswick #16 Wildlife Management Area, New Brunswick #11 Wildlife Management Area, New Brunswick #12 Wildlife Management Area could |  |
+| not sure | CA-6540 + CA-6541 + CA-6549 | 0.2 ac | the official outline of New Brunswick #10 Wildlife Management Area, New Brunswick #11 Wildlife Management Area, New Brunswick #6 Wildlife Management Area could  |  |
+| not sure | CA-6541 + CA-6542 + CA-6549 | 0.2 ac | the official outline of New Brunswick #11 Wildlife Management Area, New Brunswick #7 Wildlife Management Area, New Brunswick #6 Wildlife Management Area could n |  |
+| not sure | CA-6545 + CA-6546 + CA-6549 | 0.2 ac | the official outline of New Brunswick #4 Wildlife Management Area, New Brunswick #3 Wildlife Management Area, New Brunswick #6 Wildlife Management Area could no |  |
+| not sure | CA-0771 + CA-6547 + CA-6548 | 0.1 ac | the official outline of New Brunswick #2 Wildlife Management Area, New Brunswick #1 Wildlife Management Area could not be read in pass 2 (the next run tries aga |  |
+| not sure | CA-0771 + CA-6547 | 0.1 ac | the official outline of New Brunswick #2 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4440 + CA-4465 + CA-4510 + CA-6538 | 0.1 ac | the official outline of New Brunswick #16 Wildlife Management Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-6503 + CA-6504 + CA-6505 | 0.1 ac | the official outline of New Brunswick #24 Wildlife Management Area, New Brunswick #19 Wildlife Management Area, New Brunswick #25 Wildlife Management Area could |  |
+| not sure | CA-6503 + CA-6504 + CA-6508 | 0.1 ac | the official outline of New Brunswick #24 Wildlife Management Area, New Brunswick #19 Wildlife Management Area, New Brunswick #22 Wildlife Management Area could |  |
+| not sure | CA-6503 + CA-6508 + CA-6535 | 0.1 ac | the official outline of New Brunswick #24 Wildlife Management Area, New Brunswick #22 Wildlife Management Area, New Brunswick #23 Wildlife Management Area could |  |
+| not sure | CA-6504 + CA-6507 + CA-6551 | 0.1 ac | the official outline of New Brunswick #19 Wildlife Management Area, New Brunswick #14 Wildlife Management Area, New Brunswick #13 Wildlife Management Area could |  |
+| not sure | CA-6504 + CA-6508 + CA-6509 | 0.1 ac | the official outline of New Brunswick #19 Wildlife Management Area, New Brunswick #22 Wildlife Management Area, New Brunswick #18 Wildlife Management Area could |  |
+| not sure | CA-6504 + CA-6509 + CA-6551 | 0.1 ac | the official outline of New Brunswick #19 Wildlife Management Area, New Brunswick #18 Wildlife Management Area, New Brunswick #13 Wildlife Management Area could |  |
+| not sure | CA-6507 + CA-6518 + CA-6542 + CA-6551 | 0.1 ac | the official outline of New Brunswick #14 Wildlife Management Area, New Brunswick #8 Wildlife Management Area, New Brunswick #7 Wildlife Management Area, New Br |  |
+| not sure | CA-6507 + CA-6518 + CA-6542 | 0.1 ac | the official outline of New Brunswick #14 Wildlife Management Area, New Brunswick #8 Wildlife Management Area, New Brunswick #7 Wildlife Management Area could n |  |
+| not sure | CA-6507 + CA-6518 + CA-6551 | 0.1 ac | the official outline of New Brunswick #14 Wildlife Management Area, New Brunswick #8 Wildlife Management Area, New Brunswick #13 Wildlife Management Area could  |  |
+| not sure | CA-6507 + CA-6542 + CA-6551 | 0.1 ac | the official outline of New Brunswick #14 Wildlife Management Area, New Brunswick #7 Wildlife Management Area, New Brunswick #13 Wildlife Management Area could  |  |
+| not sure | CA-6507 + CA-6542 | 0.1 ac | the official outline of New Brunswick #14 Wildlife Management Area, New Brunswick #7 Wildlife Management Area could not be read in pass 2 (the next run tries ag |  |
+| not sure | CA-6508 + CA-6509 + CA-6539 | 0.1 ac | the official outline of New Brunswick #22 Wildlife Management Area, New Brunswick #18 Wildlife Management Area, New Brunswick #17 Wildlife Management Area could |  |
+| not sure | CA-6508 + CA-6527 + CA-6539 | 0.1 ac | the official outline of New Brunswick #22 Wildlife Management Area, New Brunswick #21 Wildlife Management Area, New Brunswick #17 Wildlife Management Area could |  |
+| not sure | CA-6509 + CA-6539 + CA-6551 | 0.1 ac | the official outline of New Brunswick #18 Wildlife Management Area, New Brunswick #17 Wildlife Management Area, New Brunswick #13 Wildlife Management Area could |  |
+| not sure | CA-6518 + CA-6542 + CA-6551 | 0.1 ac | the official outline of New Brunswick #8 Wildlife Management Area, New Brunswick #7 Wildlife Management Area, New Brunswick #13 Wildlife Management Area could n |  |
+| not sure | CA-6518 + CA-6551 | 0.1 ac | the official outline of New Brunswick #8 Wildlife Management Area, New Brunswick #13 Wildlife Management Area could not be read in pass 2 (the next run tries ag |  |
+| not sure | CA-6527 + CA-6537 + CA-6538 | 0.1 ac | the official outline of New Brunswick #21 Wildlife Management Area, New Brunswick #15 Wildlife Management Area, New Brunswick #16 Wildlife Management Area could |  |
+| not sure | CA-6527 + CA-6538 + CA-6539 | 0.1 ac | the official outline of New Brunswick #21 Wildlife Management Area, New Brunswick #16 Wildlife Management Area, New Brunswick #17 Wildlife Management Area could |  |
+| not sure | CA-6537 + CA-6538 + CA-6540 | 0.1 ac | the official outline of New Brunswick #15 Wildlife Management Area, New Brunswick #16 Wildlife Management Area, New Brunswick #10 Wildlife Management Area could |  |
+| not sure | CA-6538 + CA-6539 + CA-6550 | 0.1 ac | the official outline of New Brunswick #16 Wildlife Management Area, New Brunswick #17 Wildlife Management Area, New Brunswick #12 Wildlife Management Area could |  |
+| not sure | CA-6538 + CA-6540 + CA-6541 | 0.1 ac | the official outline of New Brunswick #16 Wildlife Management Area, New Brunswick #10 Wildlife Management Area, New Brunswick #11 Wildlife Management Area could |  |
+| not sure | CA-6539 + CA-6550 + CA-6551 | 0.1 ac | the official outline of New Brunswick #17 Wildlife Management Area, New Brunswick #12 Wildlife Management Area, New Brunswick #13 Wildlife Management Area could |  |
+| not sure | CA-6541 + CA-6542 + CA-6550 | 0.1 ac | the official outline of New Brunswick #11 Wildlife Management Area, New Brunswick #7 Wildlife Management Area, New Brunswick #12 Wildlife Management Area could  |  |
+
 ## az (135 rows, 2026-10-30)
 
 11 rows to look at + 124 POTA-history hints (only the 30 strongest shown here; all in review-all.json)
@@ -48,6 +470,36 @@ Written by the 2-fer line's checker. Chat 8 works it after the US queue. Nothing
 | HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides | US-0030 + US-0964 | 19 same-day activations | not tested: the outlines' boxes do not touch (the parks are apart on the official maps) | POTA history: POTA shows one session logged both parks / activated together by the same call on the same day (19x, POTA  |
 | HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides | US-1064 + US-7381 | 19 same-day activations | not tested: the outlines' boxes do not touch (the parks are apart on the official maps) | POTA history: POTA shows one session logged both parks / activated together by the same call on the same day (19x, POTA  |
 | HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides | US-4557 + US-4571 | 18 same-day activations | looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line) | POTA history: POTA shows one session logged both parks / activated together by the same call on the same day (18x, POTA  |
+
+## bc (25 rows, 2026-10-30)
+
+| what | parks | size | reason | sources |
+|---|---|---|---|---|
+| more than one owner on the patch (all public): live, look later | CA-3724 Lanz and Cox Islands Provincial Park + CA-4065 Scott Islands Marine Protected Area | 8429.3 ac | candidate · ['FED:CANADA', 'STATE'] | CA-3724: downloaded 2026-10-30; CA-4065: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+| more than one owner on the patch (all public): live, look later | CA-0711 Cape Scott Provincial Park + CA-4065 Scott Islands Marine Protected Area | 7230.2 ac | candidate · ['FED:CANADA', 'STATE'] | CA-0711: downloaded 2026-10-30; CA-4065: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+| water map weak here (fix later: a better water source) | CA-3193 Babine Lake (Pinkut Creek Site) Marine Park + CA-3194 Babine Lake (Smithers Landing Site) Marine Park | 1295.5 ac | water not checked (the USGS water map did not answer): run pass 5 | CA-3193: downloaded 2026-10-30; CA-3194: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+| water map weak here (fix later: a better water source) | CA-3539 George C. Reifel Migratory Bird Sanctuary + CA-4026 Roberts Bank Wildlife Management Area | 565.1 ac | water not checked (the USGS water map did not answer): run pass 5 | CA-3539: downloaded 2026-10-30; CA-4026: downloaded 2026-10-30 |
+| water map weak here (fix later: a better water source) | CA-0001 Alaksen National Wildlife Area + CA-3539 George C. Reifel Migratory Bird Sanctuary | 354.3 ac | water not checked (the USGS water map did not answer): run pass 5 | CA-0001: downloaded 2026-10-30; CA-3539: downloaded 2026-10-30 |
+| water map weak here (fix later: a better water source) | CA-3834 Mount Elphinstone Provincial Park + CA-4027 Roberts Creek Provincial Park | 177.1 ac | water not checked (the USGS water map did not answer): run pass 5 | CA-3834: downloaded 2026-10-30; CA-4027: downloaded 2026-10-30 |
+| water map weak here (fix later: a better water source) | CA-3506 Fiordland Conservation Area + CA-3615 Huchsduwachsdu Nuyem Jees / Kitlope Heritage Conservation Area | 161.2 ac | water not checked (the USGS water map did not answer): run pass 5 | CA-3506: downloaded 2026-10-30; CA-3615: downloaded 2026-10-30 |
+| water map weak here (fix later: a better water source) | CA-0750 Yahk Provincial Park + CA-3543 Gilnockie Creek Ecological Reserve | 133.2 ac | water not checked (the USGS water map did not answer): run pass 5 | CA-0750: downloaded 2026-10-30; CA-3543: downloaded 2026-10-30 |
+| water map weak here (fix later: a better water source) | CA-3542 Gilnockie Provincial Park + CA-3543 Gilnockie Creek Ecological Reserve | 133.2 ac | water not checked (the USGS water map did not answer): run pass 5 | CA-3542: downloaded 2026-10-30; CA-3543: downloaded 2026-10-30 |
+| water map weak here (fix later: a better water source) | CA-3672 Khutzeymateen Provincial Park + CA-3674 Khyex Conservation Area | 100.7 ac | water not checked (the USGS water map did not answer): run pass 5 | CA-3672: downloaded 2026-10-30; CA-3674: downloaded 2026-10-30 |
+| more than one owner on the patch (all public): live, look later | CA-0018 Columbia National Wildlife Area + CA-3362 Columbia Wetlands Wildlife Management Area | 60.9 ac | candidate · ['FED:CANADA', 'STATE'] | CA-0018: downloaded 2026-10-30; CA-3362: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+| water map weak here (fix later: a better water source) | CA-3917 Oak Bay Islands Ecological Reserve + CA-4258 Victoria Harbour Migratory Bird Sanctuary | 44.4 ac | water not checked (the USGS water map did not answer): run pass 5 | CA-3917: downloaded 2026-10-30; CA-4258: downloaded 2026-10-30 |
+| more than one owner on the patch (all public): live, look later | CA-0105 Vaseux-Bighorn National Wildlife Area + CA-4253 Vaseux Lake Provincial Park | 21.2 ac | candidate · ['FED:CANADA', 'STATE'] | CA-0105: downloaded 2026-10-30; CA-4253: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+| more than one owner on the patch (all public): live, look later | CA-0105 Vaseux-Bighorn National Wildlife Area + CA-4254 Vaseux Lake Migratory Bird Sanctuary | 21.2 ac | candidate · ['FED:CANADA', 'STATE'] | CA-0105: downloaded 2026-10-30; CA-4254: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+| not sure | CA-3209 + CA-4044 | 17.8 ac | the official outline of Ruckle Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-3245 + CA-6382 | 16.9 ac | the official outline of Stewart Farm Historic Site could not be read in pass 2 (the next run tries again) |  |
+| water map weak here (fix later: a better water source) | CA-4218 Trial Islands Ecological Reserve + CA-4258 Victoria Harbour Migratory Bird Sanctuary | 14.2 ac | water not checked (the USGS water map did not answer): run pass 5 | CA-4218: downloaded 2026-10-30; CA-4258: downloaded 2026-10-30 |
+| more than one owner on the patch (all public): live, look later | CA-0045 Kootenay National Park + CA-3829 Mount Assiniboine Provincial Park | 8.2 ac | candidate · ['FED:CANADA', 'STATE'] | CA-0045: downloaded 2026-10-30; CA-3829: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+| water map weak here (fix later: a better water source) | CA-4191 Ten Mile Point Ecological Reserve + CA-4258 Victoria Harbour Migratory Bird Sanctuary | 7.9 ac | water not checked (the USGS water map did not answer): run pass 5 | CA-4191: downloaded 2026-10-30; CA-4258: downloaded 2026-10-30 |
+| not sure | CA-3944 + CA-4012 | 5.4 ac | the official outline of Rathtrevor Beach Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| water map weak here (fix later: a better water source) | CA-3303 Cascade-Sutslem Conservation Area + CA-3615 Huchsduwachsdu Nuyem Jees / Kitlope Heritage Conservation Area | 2.8 ac | water not checked (the USGS water map did not answer): run pass 5 | CA-3303: downloaded 2026-10-30; CA-3615: downloaded 2026-10-30 |
+| more than one owner on the patch (all public): live, look later | CA-0032 Gwaii Haanas and Haida National Park + CA-3393 Daawuuxusda Heritage Site Conservation Area | 2.0 ac | very tight: could be map error: check both official maps on the ground · ['FED:CANADA', 'STATE'] | CA-0032: downloaded 2026-10-30; CA-3393: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+| water map weak here (fix later: a better water source) | CA-3615 Huchsduwachsdu Nuyem Jees / Kitlope Heritage Conservation Area + CA-4243 Upper Kimsquit River Conservancy Protec | 1.3 ac | water not checked (the USGS water map did not answer): run pass 5 | CA-3615: downloaded 2026-10-30; CA-4243: downloaded 2026-10-30 |
+| not sure | CA-4787 + CA-4789 | 0.2 ac | the official outline of Fisgard Lighthouse National Historic Site, Fort Rodd Hill National Historic Site could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0117 + CA-4798 | 0.1 ac | the official outline of Twin Falls Tea House National Historic Site could not be read in pass 2 (the next run tries again) |  |
 
 ## caabbc (40 rows, 2026-10-29)
 
@@ -869,6 +1321,18 @@ Written by the 2-fer line's checker. Chat 8 works it after the US queue. Nothing
 | HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides | US-1277 + US-3794 | 12 same-day activations | looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line) | POTA history: activated together by the same call on the same day (12x, POTA history) / outlines about 0 m apart |
 | HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides | US-3793 + US-3797 | 12 same-day activations | looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line) | POTA history: activated together by the same call on the same day (12x, POTA history) / outlines about 0 m apart |
 
+## mbsk (7 rows, 2026-10-30)
+
+| what | parks | size | reason | sources |
+|---|---|---|---|---|
+| water map weak here (fix later: a better water source) | CA-0541 Fisher Bay Provincial Park + CA-2460 Moose Creek Wildlife Management Area | 6620.7 ac | water not checked (the USGS water map did not answer): run pass 5 | CA-0541: downloaded 2026-10-30; CA-2460: downloaded 2026-10-30 |
+| not sure | CA-0108 Wapusk National Park + CA-2395 Churchill Wildlife Management Area | 6194.0 ac | this spot is 4480 km from Churchill Wildlife Management Area's POTA pin: its outline may hold a far piece of a same-named place, or the record is a wrong join ( | CA-0108: downloaded 2026-10-30; CA-2395: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+| more than one owner on the patch (all public): live, look later | CA-2838 Scent Grass Lake Migratory Bird Sanctuary + CA-2839 Scentgrass Lake Game Preserve | 1534.4 ac | candidate · ['FED:CANADA', 'STATE'] | CA-2838: downloaded 2026-10-30; CA-2839: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+| more than one owner on the patch (all public): live, look later | CA-2894 Wascana Centre Regional Park Recreation Site + CA-2896 Wascana Lake Migratory Bird Sanctuary | 291.2 ac | candidate · ['FED:CANADA', 'STATE'] | CA-2894: downloaded 2026-10-30; CA-2896: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+| more than one owner on the patch (all public): live, look later | CA-0081 Raven Island National Wildlife Area + CA-2717 Lenore Lake Migratory Bird Sanctuary | 233.2 ac | candidate · ['FED:CANADA', 'STATE'] | CA-0081: downloaded 2026-10-30; CA-2717: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+| more than one owner on the patch (all public): live, look later | CA-0083 Riding Mountain Biosphere Reserve + CA-2476 Parkland Wildlife Management Area | 79.8 ac | candidate · ['FED:CANADA', 'STATE'] | CA-0083: downloaded 2026-10-30; CA-2476: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+| more than one owner on the patch (all public): live, look later | CA-0084 Riding Mountain National Park + CA-2476 Parkland Wildlife Management Area | 79.8 ac | candidate · ['FED:CANADA', 'STATE'] | CA-0084: downloaded 2026-10-30; CA-2476: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+
 ## me (9 rows, 2026-10-30)
 
 0 rows to look at + 9 POTA-history hints (only the 30 strongest shown here; all in review-all.json)
@@ -1043,7 +1507,6 @@ Written by the 2-fer line's checker. Chat 8 works it after the US queue. Nothing
 36 rows to look at + 261 POTA-history hints (only the 30 strongest shown here; all in review-all.json)
 | what | parks | size | reason | sources |
 |---|---|---|---|---|
-| water map weak here (fix later: a better water source) | US-4491 Superior National Forest + US-4795 Finland State Forest | 225704.0 ac | water not checked (the USGS water map did not answer): run pass 5 | US-4491: downloaded 2026-10-30; US-4795: downloaded 2026-10-30; USGS water: USGS NHDPlus HR file 2020-04-16 (the same NH |
 | more than one owner on the patch (all public): live, look later | US-4490 Chippewa National Forest + US-4784 Big Fork State Forest | 143511.3 ac | candidate · ['FED:USFS', 'STATE'] | US-4490: downloaded 2026-10-30; US-4784: downloaded 2026-10-30; USGS water: USGS NHDPlus HR file 2020-04-16 (the same NH |
 | more than one owner on the patch (all public): live, look later | US-4491 Superior National Forest + US-4806 Kabetogama State Forest | 83907.2 ac | candidate · ['FED:NPS', 'FED:USFS'] | US-4491: downloaded 2026-10-30; US-4806: downloaded 2026-10-30; USGS water: USGS NHDPlus HR file 2020-04-16 (the same NH |
 | more than one owner on the patch (all public): live, look later | US-4490 Chippewa National Forest + US-4788 Buena Vista State Forest | 10520.8 ac | candidate · ['FED:USFS', 'STATE'] | US-4490: downloaded 2026-10-30; US-4788: downloaded 2026-10-30; USGS water: USGS NHDPlus HR file 2020-04-16 (the same NH |
@@ -1063,10 +1526,11 @@ Written by the 2-fer line's checker. Chat 8 works it after the US queue. Nothing
 | not sure | US-13562 Gores Pool #3 Wildlife Management Area + US-4822 Richard J. Dorer Memorial Hardwood State Forest | 108.1 ac | this spot is 130 km from Richard J. Dorer Memorial Hardwood State Forest's POTA pin: its outline may hold a far piece of a same-named place, or the record is a  | US-13562: downloaded 2026-10-30; US-4822: downloaded 2026-10-30; USGS water: USGS NHDPlus HR file 2020-04-16 (the same N |
 | more than one owner on the patch (all public): live, look later | US-0067 Voyageurs National Park + US-4807 Koochiching State Forest | 103.8 ac | very tight: could be map error: check both official maps on the ground · ['FED:NPS', 'STATE'] | US-0067: downloaded 2026-10-30; US-4807: downloaded 2026-10-30; USGS water: USGS NHDPlus HR file 2020-04-16 (the same NH |
 | more than one owner on the patch (all public): live, look later | US-4490 Chippewa National Forest + US-4817 Paul Bunyan State Forest | 55.3 ac | very tight: could be map error: check both official maps on the ground · ['FED:USFS', 'STATE'] | US-4490: downloaded 2026-10-30; US-4817: downloaded 2026-10-30; USGS water: USGS NHDPlus HR file 2020-04-16 (the same NH |
-| water map weak here (fix later: a better water source) | US-4490 Chippewa National Forest + US-4799 George Washington State Forest | 54.9 ac | water not checked (the USGS water map did not answer): run pass 5 · ['FED:USFS', 'STATE'] | US-4490: downloaded 2026-10-30; US-4799: downloaded 2026-10-30; USGS water: USGS NHDPlus HR file 2020-04-16 (the same NH |
+| more than one owner on the patch (all public): live, look later | US-4490 Chippewa National Forest + US-4799 George Washington State Forest | 54.9 ac | very tight: could be map error: check both official maps on the ground · ['FED:USFS', 'STATE'] | US-4490: downloaded 2026-10-30; US-4799: downloaded 2026-10-30; USGS water: USGS NHDPlus HR file 2020-04-16 (the same NH |
 | more than one owner on the patch (all public): live, look later | US-0067 Voyageurs National Park + US-4491 Superior National Forest | 45.0 ac | candidate · ['FED:NPS', 'FED:USFS'] | US-0067: downloaded 2026-10-30; US-4491: downloaded 2026-10-30; USGS water: USGS NHDPlus HR file 2020-04-16 (the same NH |
 | not sure | US-12811 Beaver Creek Wildlife Management Area + US-2505 Lake Shetek State Park | 40.1 ac | this spot is 269 km from Beaver Creek Wildlife Management Area's POTA pin: its outline may hold a far piece of a same-named place, or the record is a wrong join | US-12811: downloaded 2026-10-30; US-2505: downloaded 2026-10-30; USGS water: USGS NHDPlus HR file 2020-04-16 (the same N |
 | water only (boat spot): is there really no land? | US-4491 Superior National Forest + US-4805 Lake Jeanette State Forest | 35.2 ac | water only: boat or kayak | USGS water: USGS NHDPlus HR file 2020-04-16 (the same NHDPlus HR water, from USGS's download files) |
+| water only (boat spot): is there really no land? | US-4491 Superior National Forest + US-4795 Finland State Forest | 20.5 ac | water only: boat or kayak | USGS water: saved copy of the USGS map, read 2026-10-30 |
 | water only (boat spot): is there really no land? | US-2468 + US-4782 | 20.4 ac | water only: boat or kayak | US-2468: downloaded 2026-10-30; US-4782: downloaded 2026-10-30; USGS water: USGS NHDPlus HR file 2020-04-16 (the same NH |
 | water only (boat spot): is there really no land? | US-4491 Superior National Forest + US-4801 Grand Portage State Forest | 8.0 ac | water only: boat or kayak | USGS water: USGS NHDPlus HR file 2020-04-16 (the same NHDPlus HR water, from USGS's download files) |
 | water only (boat spot): is there really no land? | US-0067 Voyageurs National Park + US-4806 Kabetogama State Forest | 6.7 ac | water only: boat or kayak | USGS water: USGS NHDPlus HR file 2020-04-16 (the same NHDPlus HR water, from USGS's download files) |
@@ -1618,6 +2082,13 @@ Written by the 2-fer line's checker. Chat 8 works it after the US queue. Nothing
 | HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides | US-0012 + US-2703 | 15 same-day activations | not tested: the outlines' boxes do not touch (the parks are apart on the official maps) | POTA history: POTA shows one session logged both parks / activated together by the same call on the same day (15x, POTA  |
 | HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides | US-11789 + US-4552 | 15 same-day activations | not tested: the outlines' boxes do not touch (the parks are apart on the official maps) | POTA history: POTA shows one session logged both parks / activated together by the same call on the same day (15x, POTA  |
 
+## north (2 rows, 2026-10-30)
+
+| what | parks | size | reason | sources |
+|---|---|---|---|---|
+| water map weak here (fix later: a better water source) | CA-0044 Kluane National Park + CA-0842 Asi Keyi Territorial Park | 150695.7 ac | water not checked (the USGS water map did not answer): run pass 5 · ['FED:CANADA', 'STATE'] | CA-0044: downloaded 2026-10-30; CA-0842: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+| not sure | CA-0039 Ivvavik National Park + CA-4623 Old Crow Flats Special Management Area Habitat Protection Area | 3352.8 ac | this spot is 141 km from Old Crow Flats Special Management Area Habitat Protection Area's POTA pin: its outline may hold a far piece of a same-named place, or t | CA-0039: downloaded 2026-10-30; CA-4623: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+
 ## oh (86 rows, 2026-10-30)
 
 9 rows to look at + 77 POTA-history hints (only the 30 strongest shown here; all in review-all.json)
@@ -1662,6 +2133,313 @@ Written by the 2-fer line's checker. Chat 8 works it after the US queue. Nothing
 | HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides | US-1951 + US-5449 | 28 same-day activations | dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only) | POTA history: activated together by the same call on the same day (28x, POTA history) / outlines about 0 m apart |
 | HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides | US-0737 + US-9497 | 27 same-day activations | looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line) | POTA history: activated together by the same call on the same day (27x, POTA history) / outlines about 0 m apart |
 | HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides | US-1965 + US-9424 | 27 same-day activations | dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only) | POTA history: activated together by the same call on the same day (27x, POTA history) / outlines about 0 m apart |
+
+## on (302 rows, 2026-10-30)
+
+| what | parks | size | reason | sources |
+|---|---|---|---|---|
+| not sure | CA-0305 + CA-0306 | 22567.0 ac | the official outline of Mississagi Delta Provincial Park, Mississagi River Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0050 + CA-0394 | 15645.8 ac | the official outline of Lake Superior National Marine Area, Slate Islands Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0010 + CA-0168 | 11596.2 ac | the official outline of Bruce Peninsula National Park, Cabot Head Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0444 + CA-1483 | 3248.6 ac | the official outline of Woodland Caribou Provincial Park, Little Grand Rapids Dedicated Conservation Reserve could not be read in pass 2 (the next run tries aga |  |
+| not sure | CA-0343 + CA-1344 | 2695.6 ac | the official outline of Pipestone River Provincial Park, Cat Lake-Slate Falls Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0050 + CA-0395 | 2556.4 ac | the official outline of Lake Superior National Marine Area, Sleeping Giant Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0010 + CA-0241 | 2442.0 ac | the official outline of Bruce Peninsula National Park, Johnston Harbour-Pine Tree Point Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1475 + CA-1483 | 2107.5 ac | the official outline of Lake Country  (Weeskayjahk Ohtahzhoganiing) Conservation Reserve, Little Grand Rapids Dedicated Conservation Reserve could not be read i |  |
+| not sure | CA-1483 + CA-1699 | 2107.5 ac | the official outline of Little Grand Rapids Dedicated Conservation Reserve, Weeskayjahk Ohtahzhoganeeng Provincial Park could not be read in pass 2 (the next ru |  |
+| not sure | CA-0010 + CA-5628 | 73613 yd of line | the official outline of Bruce Peninsula National Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0050 + CA-0201 | 1552.3 ac | the official outline of Lake Superior National Marine Area, Edward Island Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0402 + CA-4867 | 779.4 ac | the official outline of St. Joseph's Island Migratory Bird Sanctuary could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0168 + CA-5628 | 31490 yd of line | the official outline of Cabot Head Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5628 + CA-6608 | 25899 yd of line | no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations · no owner on the maps at 1 of 1 points of the patch: onl | CA-5628: official line (trails bot); CA-6608: downloaded 2026-10-30 |
+| not sure | CA-1475 + CA-1572 | 558.5 ac | the official outline of Lake Country  (Weeskayjahk Ohtahzhoganiing) Conservation Reserve, Pauingassi Dedicated Protected Area could not be read in pass 2 (the n |  |
+| not sure | CA-1572 + CA-1699 | 558.5 ac | the official outline of Pauingassi Dedicated Protected Area, Weeskayjahk Ohtahzhoganeeng Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0271 + CA-5628 | 22859 yd of line | the official outline of Lion's Head Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0148 + CA-5628 | 21441 yd of line | the official outline of Bayview Escarpment Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0229 + CA-5628 | 19912 yd of line | the official outline of Hockley Valley Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5628 + CA-6003 | 19204 yd of line | no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations · no owner on the maps at 1 of 1 points of the patch: onl | CA-5628: official line (trails bot); CA-6003: official line (trails bot) |
+| not sure | CA-0308 + CA-5628 | 18597 yd of line | the official outline of Mono Cliffs Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5372 + CA-5628 | 18328 yd of line | the official outline of Silver Creek Conservation Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5105 + CA-5628 | 18302 yd of line | no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations · no owner on the maps at 1 of 1 points of the patch: onl | CA-5105: downloaded 2026-10-30; CA-5628: official line (trails bot) |
+| not sure | CA-0352 + CA-5628 | 17771 yd of line | the official outline of Pretty River Valley Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1440 + CA-5628 | 17756 yd of line | no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations · no owner on the maps at 1 of 1 points of the patch: onl | CA-1440: downloaded 2026-10-30; CA-5628: official line (trails bot) |
+| not sure | CA-1483 + CA-1572 | 355.6 ac | the official outline of Little Grand Rapids Dedicated Conservation Reserve, Pauingassi Dedicated Protected Area could not be read in pass 2 (the next run tries  |  |
+| not sure | CA-1541 + CA-5628 | 15551 yd of line | no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations · no owner on the maps at 1 of 1 points of the patch: onl | CA-1541: downloaded 2026-10-30; CA-5628: official line (trails bot) |
+| not sure | CA-0231 + CA-5628 | 14722 yd of line | the official outline of Hope Bay Forest Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5628 + CA-5665 | 14515 yd of line | no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations · no owner on the maps at 1 of 1 points of the patch: onl | CA-5628: official line (trails bot); CA-5665: downloaded 2026-10-30 |
+| not sure | CA-0164 + CA-5628 | 14350 yd of line | the official outline of Boyne Valley Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1673 + CA-5143 | 324.2 ac | the official outline of Little Cataraqui Creek Conservation Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5100 + CA-5628 | 13976 yd of line | the official outline of Glen Haffy Conservation Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0050 + CA-0346 | 288.9 ac | the official outline of Lake Superior National Marine Area, Porphyry Island Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0196 + CA-5628 | 12192 yd of line | the official outline of Duncan Escarpment Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0214 + CA-5628 | 11837 yd of line | the official outline of Forks of the Credit Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1046 + CA-5628 | 11297 yd of line | no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations · no owner on the maps at 1 of 1 points of the patch: onl | CA-1046: downloaded 2026-10-30; CA-5628: official line (trails bot) |
+| not sure | CA-0419 + CA-6003 | 11193 yd of line | the official outline of Upper Canada Migratory Bird Sanctuary could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1043 + CA-5628 | 10986 yd of line | no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations · no owner on the maps at 1 of 1 points of the patch: onl | CA-1043: downloaded 2026-10-30; CA-5628: official line (trails bot) |
+| not sure | CA-1429 + CA-1552 | 245.1 ac | the official outline of Groundhog River Waterway Provincial Park, Northern Claybelt Forest Complex Conservation Reserve could not be read in pass 2 (the next ru |  |
+| not sure | CA-5627 + CA-5628 | 10648 yd of line | no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations · no owner on the maps at 1 of 1 points of the patch: onl | CA-5627: downloaded 2026-10-30; CA-5628: official line (trails bot) |
+| not sure | CA-0322 + CA-5628 | 10429 yd of line | the official outline of Nottawasaga Lookout Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0021 + CA-5628 | 10115 yd of line | the official outline of Fathom Five National Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0318 + CA-5628 | 9911 yd of line | the official outline of Noisy River Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0410 + CA-1715 | 224.6 ac | the official outline of The Shoals Provincial Park, Windermere Goldie Lake Complex Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5628 + CA-6611 | 9739 yd of line | no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations · no owner on the maps at 1 of 1 points of the patch: onl | CA-5628: official line (trails bot); CA-6611: downloaded 2026-10-30 |
+| not sure | CA-0444 + CA-1377 | 218.7 ac | the official outline of Woodland Caribou Provincial Park, Eagle-Snowshoe Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0260 + CA-0324 | 217.7 ac | the official outline of Lady Evelyn-Smoothwater Provincial Park, Obabika River Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0165 + CA-0423 | 197.7 ac | the official outline of Brightsand River Provincial Park, Wabakimi Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5628 + CA-6008 | 8599 yd of line | no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations · no owner on the maps at 1 of 1 points of the patch: onl | CA-5628: official line (trails bot); CA-6008: downloaded 2026-10-30 |
+| not sure | CA-5628 + CA-5658 | 8100 yd of line | no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations · no owner on the maps at 1 of 1 points of the patch: onl | CA-5628: official line (trails bot); CA-5658: downloaded 2026-10-30 |
+| not sure | CA-0396 + CA-5628 | 7994 yd of line | the official outline of Smokey Head-White Bluff Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5093 + CA-5628 | 7908 yd of line | the official outline of Bruce's Mill Conservation Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0260 + CA-1453 | 175.3 ac | the official outline of Lady Evelyn-Smoothwater Provincial Park, Jim Edwards Lake Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0423 + CA-1521 | 175.3 ac | the official outline of Wabakimi Provincial Park, Mojikit Lake Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0368 + CA-1599 | 7664 yd of line | the official outline of Rondeau Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0416 + CA-1672 | 175.2 ac | the official outline of Trout Lake Provincial Park, Trout Lake Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5628 + CA-5653 | 7648 yd of line | no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations · no owner on the maps at 1 of 1 points of the patch: onl | CA-5628: official line (trails bot); CA-5653: downloaded 2026-10-30 |
+| not sure | CA-0067 + CA-6003 | 7291 yd of line | the official outline of Point Pelee National Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0252 + CA-0253 | 164.4 ac | the official outline of Killarney Provincial Park, Killarney Lakelands and Headwaters Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4882 + CA-5542 | 160.0 ac | the official outline of Rideau Canal National Historic Site, Foley Mountain Conservation Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1310 + CA-1344 | 158.1 ac | the official outline of Beekahncheekahmeeng Deebahncheekayweehn Eenahohnahnuhn Provincial Park, Cat Lake-Slate Falls Conservation Reserve could not be read in p |  |
+| not sure | CA-1344 + CA-1577 | 158.1 ac | the official outline of Cat Lake-Slate Falls Conservation Reserve, Pikangikum Cultural Landscape Waterways Protected Area could not be read in pass 2 (the next  |  |
+| not sure | CA-5628 + CA-5959 | 6721 yd of line | no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations · no owner on the maps at 1 of 1 points of the patch: onl | CA-5628: official line (trails bot); CA-5959: downloaded 2026-10-30 |
+| not sure | CA-5373 + CA-5628 | 6704 yd of line | the official outline of Terra Cotta Conservation Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0312 + CA-4882 | 149.8 ac | the official outline of Murphys Point Provincial Park, Rideau Canal National Historic Site could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5578 + CA-5628 | 6553 yd of line | no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations · no owner on the maps at 1 of 1 points of the patch: onl | CA-5578: downloaded 2026-10-30; CA-5628: official line (trails bot) |
+| not sure | CA-0157 + CA-0293 | 144.0 ac | the official outline of Blind River Provincial Park, Matinenda Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5628 + CA-6609 | 6255 yd of line | no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations · no owner on the maps at 1 of 1 points of the patch: onl | CA-5628: official line (trails bot); CA-6609: downloaded 2026-10-30 |
+| not sure | CA-5112 + CA-5628 | 6138 yd of line | the official outline of Palgrave Forest and Wildlife Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1307 + CA-5628 | 5838 yd of line | the official outline of Beamer Memorial Conservation Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0250 + CA-1549 | 129.8 ac | the official outline of Kesagami Provincial Park, North Of The North French River Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0260 + CA-1551 | 129.2 ac | the official outline of Lady Evelyn-Smoothwater Provincial Park, North Yorston Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5092 + CA-5628 | 5643 yd of line | no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations · no owner on the maps at 1 of 1 points of the patch: onl | CA-5092: downloaded 2026-10-30; CA-5628: official line (trails bot) |
+| not sure | CA-1297 + CA-5628 | 5621 yd of line | no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations · no owner on the maps at 1 of 1 points of the patch: onl | CA-1297: downloaded 2026-10-30; CA-5628: official line (trails bot) |
+| not sure | CA-0387 + CA-5628 | 5589 yd of line | the official outline of Short Hills Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0137 + CA-1593 | 123.1 ac | the official outline of Algoma Headwaters Provincial Park, Ranger North Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0050 + CA-1479 | 122.6 ac | the official outline of Lake Superior National Marine Area, Lake Superior North Shore Conservation Reserve could not be read in pass 2 (the next run tries again |  |
+| not sure | CA-0364 + CA-4882 | 121.4 ac | the official outline of Rideau Migratory Bird Sanctuary, Rideau Canal National Historic Site could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1380 + CA-1650 | 113.5 ac | the official outline of East Lady Evelyn Lake Conservation Reserve, Sugar Lake Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5359 + CA-5628 | 4963 yd of line | the official outline of Dundas Valley Conservation Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5628 + CA-5656 | 4862 yd of line | no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations · no owner on the maps at 1 of 1 points of the patch: onl | CA-5628: official line (trails bot); CA-5656: downloaded 2026-10-30 |
+| not sure | CA-0417 + CA-1643 | 108.3 ac | the official outline of Turkey Point Provincial Park, St. Williams Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0134 + CA-0423 | 107.2 ac | the official outline of Albany River Provincial Park, Wabakimi Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0228 + CA-1552 | 107.0 ac | the official outline of Hicks-Oke Bog Provincial Park, Northern Claybelt Forest Complex Conservation Reserve could not be read in pass 2 (the next run tries aga |  |
+| not sure | CA-5312 + CA-5628 | 4424 yd of line | the official outline of Nottawasaga Bluffs Conservation Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0428 + CA-1383 | 99.7 ac | the official outline of Wenebegon River Provincial Park, East Wenebegon Forest Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0267 + CA-1381 | 98.1 ac | the official outline of Larder River Waterway Provincial Park, East Larder River Bedrock Conifer Conservation Reserve could not be read in pass 2 (the next run  |  |
+| not sure | CA-1430 + CA-1564 | 97.9 ac | the official outline of Gull River Provincial Park, Ottertooth Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0197 + CA-0441 | 96.6 ac | the official outline of Eagle Dogtooth Provincial Park, Winnange Lake Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5628 + CA-5654 | 4091 yd of line | no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations · no owner on the maps at 1 of 1 points of the patch: onl | CA-5628: official line (trails bot); CA-5654: downloaded 2026-10-30 |
+| not sure | CA-1490 + CA-5628 | 4003 yd of line | the official outline of Louth Conservation Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1310 + CA-1475 | 91.2 ac | the official outline of Beekahncheekahmeeng Deebahncheekayweehn Eenahohnahnuhn Provincial Park, Lake Country  (Weeskayjahk Ohtahzhoganiing) Conservation Reserve |  |
+| not sure | CA-1310 + CA-1699 | 91.2 ac | the official outline of Beekahncheekahmeeng Deebahncheekayweehn Eenahohnahnuhn Provincial Park, Weeskayjahk Ohtahzhoganeeng Provincial Park could not be read in |  |
+| not sure | CA-1475 + CA-1577 | 91.2 ac | the official outline of Lake Country  (Weeskayjahk Ohtahzhoganiing) Conservation Reserve, Pikangikum Cultural Landscape Waterways Protected Area could not be re |  |
+| not sure | CA-1577 + CA-1699 | 91.2 ac | the official outline of Pikangikum Cultural Landscape Waterways Protected Area, Weeskayjahk Ohtahzhoganeeng Provincial Park could not be read in pass 2 (the nex |  |
+| not sure | CA-0050 + CA-1282 | 90.0 ac | the official outline of Lake Superior National Marine Area, Agate Island Wilderness Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4882 + CA-5956 | 89.8 ac | the official outline of Rideau Canal National Historic Site, Perth Wildlife Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1639 + CA-5628 | 3666 yd of line | the official outline of Spencer Gorge Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0324 + CA-1324 | 83.7 ac | the official outline of Obabika River Provincial Park, Bob Lake Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0243 + CA-1430 | 82.8 ac | the official outline of Kaiashk Provincial Park, Gull River Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5572 + CA-5628 | 3590 yd of line | the official outline of Woolverton Conservation Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5628 + CA-5943 | 3549 yd of line | no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations · no owner on the maps at 1 of 1 points of the patch: onl | CA-5628: official line (trails bot); CA-5943: downloaded 2026-10-30 |
+| not sure | CA-0337 + CA-1564 | 79.7 ac | the official outline of Pantagruel Creek Provincial Park, Ottertooth Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0424 + CA-1686 | 77.8 ac | the official outline of Wakami Lake Provincial Park, Wakami Lake Provincial Park Addition Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0256 + CA-0423 | 77.0 ac | the official outline of Kopka River Provincial Park, Wabakimi Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1556 + CA-1564 | 75.8 ac | the official outline of Obonga-Ottertooth Provincial Park, Ottertooth Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0006 + CA-6003 | 3241 yd of line | the official outline of Big Creek National Wildlife Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5574 + CA-5628 | 3235 yd of line | the official outline of Cave Springs Conservation Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1598 + CA-5628 | 3089 yd of line | the official outline of Rockway Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0266 + CA-1635 | 69.3 ac | the official outline of Lake Superior Provincial Park, South Michipicoten River-Superior Shoreline Conservation Reserve could not be read in pass 2 (the next ru |  |
+| not sure | CA-0403 + CA-1402 | 69.3 ac | the official outline of Steel River Provincial Park, Fishnet Lake Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4882 + CA-5955 | 67.0 ac | the official outline of Rideau Canal National Historic Site, Mill Pond Conservation Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5628 + CA-6610 | 2898 yd of line | no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations · no owner on the maps at 1 of 1 points of the patch: onl | CA-5628: official line (trails bot); CA-6610: downloaded 2026-10-30 |
+| not sure | CA-1447 + CA-5628 | 2805 yd of line | the official outline of Iroquoia Heights Conservation Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1046 + CA-5536 | 2784 yd of line | no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations · no owner on the maps at 1 of 1 points of the patch: onl | CA-1046: downloaded 2026-10-30; CA-5536: official line (trails bot) |
+| not sure | CA-5141 + CA-6003 | 2729 yd of line | the official outline of Lemoine Point Conservation Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5669 + CA-6003 | 2632 yd of line | no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations · no owner on the maps at 1 of 1 points of the patch: onl | CA-5669: downloaded 2026-10-30; CA-6003: official line (trails bot) |
+| not sure | CA-0260 + CA-1629 | 56.0 ac | the official outline of Lady Evelyn-Smoothwater Provincial Park, Smith Lake Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0417 + CA-6003 | 2380 yd of line | the official outline of Turkey Point Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0444 + CA-1475 | 54.2 ac | the official outline of Woodland Caribou Provincial Park, Lake Country  (Weeskayjahk Ohtahzhoganiing) Conservation Reserve could not be read in pass 2 (the next |  |
+| not sure | CA-0444 + CA-1699 | 54.2 ac | the official outline of Woodland Caribou Provincial Park, Weeskayjahk Ohtahzhoganeeng Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1397 + CA-5628 | 2356 yd of line | the official outline of Felker's Falls Conservation Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0189 + CA-6003 | 2327 yd of line | the official outline of Darlington Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0397 + CA-1551 | 52.7 ac | the official outline of Solace Provincial Park, North Yorston Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5573 + CA-5628 | 2238 yd of line | the official outline of Mountainview Conservation Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5563 + CA-5628 | 2157 yd of line | the official outline of Limehouse Conservation Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0010 + CA-0273 | 47.1 ac | the official outline of Bruce Peninsula National Park, Little Cove Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1375 + CA-6003 | 2059 yd of line | the official outline of DuPont Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0137 + CA-1419 | 47.0 ac | the official outline of Algoma Headwaters Provincial Park, Goulais River Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0052 + CA-6003 | 2005 yd of line | the official outline of Long Point Biosphere Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0279 + CA-6003 | 2005 yd of line | the official outline of Long Point Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0050 + CA-0370 | 44.2 ac | the official outline of Lake Superior National Marine Area, Ruby Lake Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0284 + CA-1500 | 43.7 ac | the official outline of Makobe-Grays River Provincial Park, Makobe-Grays Ice Margin Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1544 + CA-1545 | 43.3 ac | the official outline of Nipigon Palisades Conservation Reserve, Nipigon River Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0324 + CA-1650 | 41.1 ac | the official outline of Obabika River Provincial Park, Sugar Lake Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0078 + CA-0354 | 40.5 ac | the official outline of Pukaskwa National Park, Pukaskwa River Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0050 + CA-0386 | 36.4 ac | the official outline of Lake Superior National Marine Area, Shesheeb Bay Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5353 + CA-5628 | 1586 yd of line | the official outline of Belfountain Conservation Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0190 + CA-5628 | 1537 yd of line | the official outline of Devils Glen Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5358 + CA-5628 | 1519 yd of line | the official outline of Devil's Punch Bowl Conservation Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5566 + CA-5628 | 1519 yd of line | the official outline of Saltfleet Conservation Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1576 + CA-6003 | 1463 yd of line | the official outline of Petticoat Creek Conservation Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1538 + CA-1684 | 32.8 ac | the official outline of Naiscoot Forest Conservation Reserve, Wahwashkesh-Naiscoot Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0381 + CA-6003 | 1392 yd of line | the official outline of Selkirk Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1541 + CA-5536 | 1386 yd of line | no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations · no owner on the maps at 1 of 1 points of the patch: onl | CA-1541: downloaded 2026-10-30; CA-5536: official line (trails bot) |
+| not sure | CA-0423 + CA-1710 | 31.2 ac | the official outline of Wabakimi Provincial Park, Whitesand Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0367 + CA-6003 | 1346 yd of line | the official outline of Rock Point Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1319 + CA-4882 | 30.6 ac | the official outline of Black Rapids Creek Conservation Reserve, Rideau Canal National Historic Site could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0256 + CA-1556 | 30.4 ac | the official outline of Kopka River Provincial Park, Obonga-Ottertooth Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0143 + CA-0304 | 30.3 ac | the official outline of Aubrey Falls Provincial Park, Mississagi Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0143 + CA-0306 | 30.3 ac | the official outline of Aubrey Falls Provincial Park, Mississagi River Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0240 + CA-6003 | 1320 yd of line | the official outline of John E. Pearce Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0140 + CA-0152 | 29.1 ac | the official outline of Arrowhead Provincial Park, Big East River Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1323 + CA-5628 | 1272 yd of line | the official outline of Borer's Falls Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0050 + CA-0353 | 28.5 ac | the official outline of Lake Superior National Marine Area, Puff Island Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4882 + CA-5295 | 28.5 ac | the official outline of Rideau Canal National Historic Site, Baxter Conservation Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5370 + CA-6003 | 1235 yd of line | the official outline of Rattray Marsh Conservation Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0094 + CA-6003 | 1192 yd of line | no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations · no owner on the maps at 1 of 1 points of the patch: onl | CA-0094: downloaded 2026-10-30; CA-6003: official line (trails bot) |
+| not sure | CA-0182 + CA-6003 | 1171 yd of line | the official outline of Clear Creek Forest Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0273 + CA-5628 | 1129 yd of line | the official outline of Little Cove Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0222 + CA-1423 | 25.1 ac | the official outline of Gravel River Provincial Park, Gravel River Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0365 + CA-4882 | 25.1 ac | the official outline of Rideau River Provincial Park, Rideau Canal National Historic Site could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1310 + CA-1568 | 23.3 ac | the official outline of Beekahncheekahmeeng Deebahncheekayweehn Eenahohnahnuhn Provincial Park, Pahngwahshahshk Ohweemushkeeg Provincial Park could not be read  |  |
+| not sure | CA-1568 + CA-1577 | 23.3 ac | the official outline of Pahngwahshahshk Ohweemushkeeg Provincial Park, Pikangikum Cultural Landscape Waterways Protected Area could not be read in pass 2 (the n |  |
+| not sure | CA-1494 + CA-6003 | 1013 yd of line | the official outline of Lynde Shores Conservation Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0213 + CA-0428 | 22.1 ac | the official outline of Five Mile Lake Provincial Park, Wenebegon River Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5358 + CA-5565 | 831 yd of line | the official outline of Devil's Punch Bowl Conservation Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5565 + CA-5566 | 831 yd of line | the official outline of Saltfleet Conservation Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4882 + CA-5642 | 18.9 ac | the official outline of Rideau Canal National Historic Site, Rock Dunder Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0099 + CA-6003 | 815 yd of line | the official outline of Thousand Islands National Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5142 + CA-6003 | 804 yd of line | the official outline of Parrott's Bay Conservation Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0174 + CA-6003 | 778 yd of line | the official outline of Cedar Creek Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0372 + CA-1478 | 17.5 ac | the official outline of Sable Islands Provincial Park, Lake Of The Woods Waters Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0407 + CA-1551 | 16.6 ac | the official outline of Sturgeon River Provincial Park, North Yorston Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1385 + CA-4882 | 15.9 ac | the official outline of Chapman Mills Conservation Area, Rideau Canal National Historic Site could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0418 + CA-1339 | 15.6 ac | the official outline of Turtle River-White Otter Lake Provincial Park, Campus Lake Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0294 + CA-0373 | 14.8 ac | the official outline of Mattawa River Provincial Park, Samuel de Champlain Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0324 + CA-1453 | 14.4 ac | the official outline of Obabika River Provincial Park, Jim Edwards Lake Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0313 + CA-0314 | 14.1 ac | the official outline of Nagagami Lake Provincial Park, Nagagamisis Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1643 + CA-6003 | 617 yd of line | the official outline of St. Williams Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5596 + CA-6003 | 616 yd of line | no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations · no owner on the maps at 1 of 1 points of the patch: onl | CA-5596: downloaded 2026-10-30; CA-6003: official line (trails bot) |
+| not sure | CA-1413 + CA-1507 | 12.9 ac | the official outline of Gibson River Conservation Reserve, McCrae Lake Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1413 + CA-1508 | 12.9 ac | the official outline of Gibson River Conservation Reserve, McCrae Lake Wilderness Area Conservation Reserve could not be read in pass 2 (the next run tries agai |  |
+| not sure | CA-0154 + CA-0304 | 12.8 ac | the official outline of Biscotasi Lake Provincial Park, Mississagi Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0154 + CA-0306 | 12.8 ac | the official outline of Biscotasi Lake Provincial Park, Mississagi River Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0408 + CA-1442 | 12.8 ac | the official outline of Temagami River Provincial Park, Holdridge Creek Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5559 + CA-6003 | 550 yd of line | the official outline of Tommy Thompson Park Conservation Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0197 + CA-0371 | 12.0 ac | the official outline of Eagle Dogtooth Provincial Park, Rushing River Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5628 + CA-5657 | 502 yd of line | no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations · no owner on the maps at 1 of 1 points of the patch: onl | CA-5628: official line (trails bot); CA-5657: downloaded 2026-10-30 |
+| not sure | CA-0238 + CA-6003 | 471 yd of line | the official outline of James N. Allan Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0078 + CA-0435 | 10.4 ac | the official outline of Pukaskwa National Park, White Lake Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0302 + CA-1495 | 10.3 ac | the official outline of Misery Bay Provincial Park, Mac's Bay Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0138 + CA-1420 | 10.0 ac | the official outline of Algonquin Provincial Park, Grant's Creek Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0444 + CA-1458 | 10.0 ac | the official outline of Woodland Caribou Provincial Park, Kahnahmaykoosayseekahk Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0295 + CA-0430 | 9.9 ac | the official outline of Maynard Lake Provincial Park, West English River Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0347 + CA-6003 | 419 yd of line | the official outline of Port Bruce Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0221 + CA-1613 | 8.8 ac | the official outline of Gibson River Provincial Park, Severn River Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0257 + CA-1470 | 8.7 ac | the official outline of La Cloche Provincial Park, La Cloche Ridge Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0351 + CA-6003 | 366 yd of line | the official outline of Presqu'ile Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0412 + CA-0430 | 8.4 ac | the official outline of Tide Lake Provincial Park, West English River Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0283 + CA-1449 | 8.1 ac | the official outline of Magnetawan River Provincial Park, Island Lake Forest And Barrens Conservation Reserve could not be read in pass 2 (the next run tries ag |  |
+| not sure | CA-0138 + CA-0193 | 8.0 ac | the official outline of Algonquin Provincial Park, Dividing Lake Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0239 + CA-1322 | 8.0 ac | the official outline of Jocko Rivers Provincial Park, Blue Lake End Moraine Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0138 + CA-0163 | 7.9 ac | the official outline of Algonquin Provincial Park, Bonnechere River Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0050 + CA-1318 | 7.8 ac | the official outline of Lake Superior National Marine Area, Black Bay Bog Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1324 + CA-1580 | 7.8 ac | the official outline of Bob Lake Conservation Reserve, Pinetorch Lake Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1673 + CA-6003 | 330 yd of line | the official outline of Little Cataraqui Creek Conservation Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0137 + CA-0142 | 7.4 ac | the official outline of Algoma Headwaters Provincial Park, Aubinadong-Nushatogaini Rivers Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1526 + CA-1613 | 7.4 ac | the official outline of Morrison Lake Wetland Conservation Reserve, Severn River Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0305 + CA-0320 | 7.1 ac | the official outline of Mississagi Delta Provincial Park, North Channel Inshore Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5536 + CA-5628 | 283 yd of line | no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations · no owner on the maps at 1 of 1 points of the patch: onl | CA-5536: official line (trails bot); CA-5628: official line (trails bot) |
+| not sure | CA-5633 + CA-6003 | 283 yd of line | the official outline of Bowmanville Valley Conservation Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5942 + CA-6003 | 283 yd of line | the official outline of Bowmanville Westside Marshes Conservation Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0304 + CA-0320 | 6.3 ac | the official outline of Mississagi Provincial Park, North Channel Inshore Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0050 + CA-0360 | 6.0 ac | the official outline of Lake Superior National Marine Area, Rainbow Falls Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1453 + CA-1580 | 5.9 ac | the official outline of Jim Edwards Lake Conservation Reserve, Pinetorch Lake Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0050 + CA-0222 | 5.8 ac | the official outline of Lake Superior National Marine Area, Gravel River Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0260 + CA-0407 | 5.8 ac | the official outline of Lady Evelyn-Smoothwater Provincial Park, Sturgeon River Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5593 + CA-6003 | 252 yd of line | the official outline of Wainfleet Wetlands Conservation Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0138 + CA-1317 | 5.7 ac | the official outline of Algonquin Provincial Park, Bissett Creek Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0283 + CA-1538 | 5.5 ac | the official outline of Magnetawan River Provincial Park, Naiscoot Forest Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0266 + CA-0309 | 5.3 ac | the official outline of Lake Superior Provincial Park, Montreal River Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5143 + CA-6003 | 229 yd of line | no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations · no owner on the maps at 1 of 1 points of the patch: onl | CA-5143: downloaded 2026-10-30; CA-6003: official line (trails bot) |
+| not sure | CA-6003 + CA-6370 | 222 yd of line | no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations · no owner on the maps at 1 of 1 points of the patch: onl | CA-6003: official line (trails bot); CA-6370: downloaded 2026-10-30 |
+| not sure | CA-0379 + CA-1479 | 5.0 ac | the official outline of Schreiber Channel Provincial Park, Lake Superior North Shore Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1297 + CA-6003 | 211 yd of line | no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations · no owner on the maps at 1 of 1 points of the patch: onl | CA-1297: downloaded 2026-10-30; CA-6003: official line (trails bot) |
+| not sure | CA-1638 + CA-4882 | 4.8 ac | the official outline of Rideau Canal National Historic Site could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0050 + CA-0379 | 4.7 ac | the official outline of Lake Superior National Marine Area, Schreiber Channel Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0154 + CA-0399 | 4.4 ac | the official outline of Biscotasi Lake Provincial Park, Spanish River Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0208 + CA-0382 | 4.2 ac | the official outline of Fawn River Provincial Park, Severn River Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1506 + CA-4882 | 4.0 ac | the official outline of McCarthy Woods Natural Area, Rideau Canal National Historic Site could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0138 + CA-0152 | 3.9 ac | the official outline of Algonquin Provincial Park, Big East River Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0260 + CA-0397 | 3.8 ac | the official outline of Lady Evelyn-Smoothwater Provincial Park, Solace Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1324 + CA-1453 | 3.8 ac | the official outline of Bob Lake Conservation Reserve, Jim Edwards Lake Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4863 + CA-5628 | 166 yd of line | the official outline of Fort George National Historic Site could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0053 + CA-0279 | 3.7 ac | the official outline of Long Point Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0245 + CA-1462 | 3.6 ac | the official outline of Kama Hills Provincial Park, Kama Cliffs Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0304 + CA-1039 | 3.5 ac | the official outline of Mississagi Provincial Park, Aubinadong River Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0306 + CA-1039 | 3.5 ac | the official outline of Mississagi River Provincial Park, Aubinadong River Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5564 + CA-5628 | 151 yd of line | no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations · no owner on the maps at 1 of 1 points of the patch: onl | CA-5564: downloaded 2026-10-30; CA-5628: official line (trails bot) |
+| not sure | CA-5577 + CA-6003 | 151 yd of line | no public owner on the ownership map (CPCAD) at the spot: could be private land under the designations · no owner on the maps at 1 of 1 points of the patch: onl | CA-5577: downloaded 2026-10-30; CA-6003: official line (trails bot) |
+| not sure | CA-0276 + CA-0304 | 3.3 ac | the official outline of Little White River Provincial Park, Mississagi Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1355 + CA-1356 | 3.3 ac | the official outline of Cognashene Lake Conservation Reserve, Cognashene Point Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0138 + CA-0162 | 3.2 ac | the official outline of Algonquin Provincial Park, Bonnechere Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0165 + CA-1675 | 3.2 ac | the official outline of Brightsand River Provincial Park, Upper English River Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0345 + CA-0440 | 3.2 ac | the official outline of Polar Bear Provincial Park, Winisk River Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5593 + CA-5595 | 3.2 ac | the official outline of Wainfleet Wetlands Conservation Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0260 + CA-0284 | 3.0 ac | the official outline of Lady Evelyn-Smoothwater Provincial Park, Makobe-Grays River Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0423 + CA-1292 | 2.9 ac | the official outline of Wabakimi Provincial Park, Attwood River Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0431 + CA-1520 | 2.9 ac | the official outline of West Montreal River Provincial Park, Mistinikon Lake Uplands Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0317 + CA-1449 | 2.7 ac | the official outline of Noganosh Lake Provincial Park, Island Lake Forest And Barrens Conservation Reserve could not be read in pass 2 (the next run tries again |  |
+| not sure | CA-0276 + CA-0306 | 2.6 ac | the official outline of Little White River Provincial Park, Mississagi River Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0138 + CA-1301 | 104 yd of line | the official outline of Algonquin Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0143 + CA-0428 | 2.4 ac | the official outline of Aubrey Falls Provincial Park, Wenebegon River Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0397 + CA-0407 | 2.4 ac | the official outline of Solace Provincial Park, Sturgeon River Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1514 + CA-6622 | 2.4 ac | the official outline of Mellon Lake Conservation Reserve, Sheffield Conservation Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0304 + CA-1530 | 2.3 ac | the official outline of Mississagi Provincial Park, Mozhabong Lake Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0306 + CA-1530 | 2.3 ac | the official outline of Mississagi River Provincial Park, Mozhabong Lake Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1310 + CA-1602 | 2.3 ac | the official outline of Beekahncheekahmeeng Deebahncheekayweehn Eenahohnahnuhn Provincial Park, Sahkeesuhkuh Weesuhkaheegahn Provincial Park could not be read i |  |
+| not sure | CA-1577 + CA-1602 | 2.3 ac | the official outline of Pikangikum Cultural Landscape Waterways Protected Area, Sahkeesuhkuh Weesuhkaheegahn Provincial Park could not be read in pass 2 (the ne |  |
+| not sure | CA-5670 + CA-5671 | 2.3 ac | the official outline of Wilket Creek Park Wilderness Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0131 + CA-0261 | 2.2 ac | the official outline of Abitibi-De-Troyes Provincial Park, Lake Abitibi Islands Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0324 + CA-0407 | 2.2 ac | the official outline of Obabika River Provincial Park, Sturgeon River Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1488 + CA-1669 | 2.2 ac | the official outline of Loon Lake Wetland Conservation Reserve, Torrance Barrens Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0134 + CA-1292 | 2.1 ac | the official outline of Albany River Provincial Park, Attwood River Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0336 + CA-5628 | 82 yd of line | the official outline of Pancake Bay Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0138 + CA-1038 | 1.8 ac | the official outline of Algonquin Provincial Park, Amable du Fond River Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-5671 + CA-5895 | 1.8 ac | the official outline of Wilket Creek Park Wilderness Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0138 + CA-0334 | 1.7 ac | the official outline of Algonquin Provincial Park, Oxtongue River-Ragged Falls Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0218 + CA-0363 | 1.7 ac | the official outline of French River Provincial Park, Restoule Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0398 + CA-1401 | 1.7 ac | the official outline of South Bay Provincial Park, Fish Bay Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0283 + CA-0317 | 1.6 ac | the official outline of Magnetawan River Provincial Park, Noganosh Lake Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0431 + CA-1706 | 1.5 ac | the official outline of West Montreal River Provincial Park, Whitefish Lakes Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0180 + CA-0407 | 1.4 ac | the official outline of Chiniguchi Waterway Provincial Park, Sturgeon River Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0197 + CA-1372 | 1.3 ac | the official outline of Eagle Dogtooth Provincial Park, Dryberry Lake Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0138 + CA-0330 | 1.2 ac | the official outline of Algonquin Provincial Park, Opeongo River Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1461 + CA-1514 | 1.2 ac | the official outline of Kaladar Jackpine Barrens Conservation Reserve, Mellon Lake Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0331 + CA-0343 | 1.1 ac | the official outline of Otoskwin-Attawapiskat River Provincial Park, Pipestone River Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1613 + CA-1669 | 1.1 ac | the official outline of Severn River Conservation Reserve, Torrance Barrens Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1492 + CA-1522 | 0.9 ac | the official outline of Lower Moon River Conservation Reserve, Moon River Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0342 + CA-6003 | 33 yd of line | the official outline of Pinery Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-4863 + CA-6003 | 33 yd of line | the official outline of Fort George National Historic Site could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0306 + CA-0366 | 0.7 ac | the official outline of Mississagi River Provincial Park, River Aux Sables Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0218 + CA-0398 | 0.6 ac | the official outline of French River Provincial Park, South Bay Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0304 + CA-0366 | 0.6 ac | the official outline of Mississagi Provincial Park, River Aux Sables Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0305 + CA-0306 + CA-1594 | 0.6 ac | the official outline of Mississagi Delta Provincial Park, Mississagi River Provincial Park, Rawhide Lake Conservation Reserve could not be read in pass 2 (the n |  |
+| not sure | CA-4882 + CA-5957 | 0.6 ac | the official outline of Rideau Canal National Historic Site could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0165 + CA-0256 | 0.5 ac | the official outline of Brightsand River Provincial Park, Kopka River Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0264 + CA-6003 | 22 yd of line | the official outline of Lake on the Mountain Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0304 + CA-1594 | 0.5 ac | the official outline of Mississagi Provincial Park, Rawhide Lake Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0306 + CA-1594 | 0.5 ac | the official outline of Mississagi River Provincial Park, Rawhide Lake Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1546 + CA-1584 | 0.5 ac | the official outline of North Georgian Bay Shoreline And Islands Conservation Reserve, Pointe Au Baril Forests And Wetlands Conservation Reserve could not be re |  |
+| not sure | CA-0138 + CA-1302 | 0.4 ac | the official outline of Algonquin Provincial Park, Barron River Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0260 + CA-0324 + CA-1453 | 0.4 ac | the official outline of Lady Evelyn-Smoothwater Provincial Park, Obabika River Provincial Park, Jim Edwards Lake Conservation Reserve could not be read in pass  |  |
+| not sure | CA-0026 + CA-0326 | 0.2 ac | the official outline of Georgian Bay Islands National Park, O'Donnell Point Provincial Park could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0197 + CA-1378 | 0.2 ac | the official outline of Eagle Dogtooth Provincial Park, Eagle Lake Islands Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0260 + CA-0397 + CA-1551 | 0.2 ac | the official outline of Lady Evelyn-Smoothwater Provincial Park, Solace Provincial Park, North Yorston Conservation Reserve could not be read in pass 2 (the nex |  |
+| not sure | CA-0261 + CA-1509 | 0.2 ac | the official outline of Lake Abitibi Islands Provincial Park, McDougal Point Peninsula Conservation Reserve could not be read in pass 2 (the next run tries agai |  |
+| not sure | CA-0050 + CA-0379 + CA-1479 | 0.1 ac | the official outline of Lake Superior National Marine Area, Schreiber Channel Provincial Park, Lake Superior North Shore Conservation Reserve could not be read  |  |
+| not sure | CA-0260 + CA-0407 + CA-1551 | 0.1 ac | the official outline of Lady Evelyn-Smoothwater Provincial Park, Sturgeon River Provincial Park, North Yorston Conservation Reserve could not be read in pass 2  |  |
+| not sure | CA-0324 + CA-1324 + CA-1453 | 0.1 ac | the official outline of Obabika River Provincial Park, Bob Lake Conservation Reserve, Jim Edwards Lake Conservation Reserve could not be read in pass 2 (the nex |  |
+| not sure | CA-0376 + CA-1592 | 0.1 ac | the official outline of Sandpoint Island Provincial Park, Rainy Lake Islands Conservation Reserve could not be read in pass 2 (the next run tries again) |  |
 
 ## pa (241 rows, 2026-10-30)
 
@@ -1928,6 +2706,119 @@ Written by the 2-fer line's checker. Chat 8 works it after the US queue. Nothing
 | HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides | US-3190 + US-4563 | 45 same-day activations | dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only) | POTA history: POTA shows one session logged both parks / activated together by the same call on the same day (45x, POTA  |
 | HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides | US-4572 + US-9553 | 43 same-day activations | not tested: the outlines' boxes do not touch (the parks are apart on the official maps) | POTA history: POTA shows one session logged both parks / activated together by the same call on the same day (43x, POTA  |
 | HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides | US-0731 + US-2862 | 42 same-day activations | dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only) | POTA history: POTA shows one session logged both parks / activated together by the same call on the same day (42x, POTA  |
+
+## qc (108 rows, 2026-10-30)
+
+| what | parks | size | reason | sources |
+|---|---|---|---|---|
+| not sure | CA-1928 + CA-2220 | 20456.9 ac | the official outline of Ashuapmushuan Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0502 + CA-1026 | 7312.1 ac | the official outline of Réserve faunique des Laurentides Wildlife Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0497 + CA-1025 | 7156.1 ac | the official outline of Réserve faunique des Chic-Chocs Wildlife Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1027 + CA-2312 | 2861.7 ac | the official outline of Réserve faunique La Vérendrye Wildlife Reserve, Zec Kipawa Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2208 + CA-2327 | 2585.5 ac | the official outline of Port-Cartier-Sept-Iles Nature Reserve, Zec Matimek Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2070 + CA-2320 | 2511.5 ac | the official outline of Zec La Lièvre Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1026 + CA-2289 | 2190.1 ac | the official outline of Réserve faunique des Laurentides Wildlife Reserve, ZEC Batiscan-Neilson Nature Reserve could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-1028 + CA-2130 | 2072.4 ac | the official outline of Réserve faunique Mastigouche Wildlife Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1029 + CA-2323 | 1986.3 ac | the official outline of Réserve faunique Rouge-Matawin Wildlife Reserve, Zec Maison-de-Pierre Nature Reserve could not be read in pass 2 (the next run tries aga |  |
+| not sure | CA-1023 + CA-2297 | 1675.7 ac | the official outline of Réserve faunique de Matane Wildlife Reserve, Zec Casault Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1027 + CA-2296 | 1464.4 ac | the official outline of Réserve faunique La Vérendrye Wildlife Reserve, Zec Capitachouane Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| more than one owner on the patch (all public): live, look later | CA-0033 Île Bonaventure et du Rocher Perce National Park + CA-1961 Bonaventure Island and Perce Rock Bird Sanctuary | 1442.4 ac | candidate · ['FED:CANADA', 'STATE'] | CA-0033: downloaded 2026-10-30; CA-1961: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+| not sure | CA-0509 + CA-1029 | 1429.1 ac | the official outline of Réserve faunique Rouge-Matawin Wildlife Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2242 + CA-2370 | 1215.1 ac | the official outline of Saint-Maurice Reserve Nature Reserve, Zec Wessonneau Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0047 + CA-1028 | 1137.7 ac | the official outline of La Mauricie National Park, Réserve faunique Mastigouche Wildlife Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1027 + CA-2339 | 908.5 ac | the official outline of Réserve faunique La Vérendrye Wildlife Reserve, Zec Petawaga Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1026 + CA-2324 | 870.6 ac | the official outline of Réserve faunique des Laurentides Wildlife Reserve, Zec Mars-Moulin Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| more than one owner on the patch (all public): live, look later | CA-0037 Îles de l'Estuaire National Wildlife Area + CA-0086 Saguenay-St. Lawrence National Marine Park | 792.6 ac | candidate · ['FED:CANADA', 'STATE'] | CA-0037: downloaded 2026-10-30; CA-0086: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+| not sure | CA-1029 + CA-2301 | 776.3 ac | the official outline of Réserve faunique Rouge-Matawin Wildlife Reserve, Zec Collin Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2179 + CA-2321 | 770.6 ac | the official outline of Zec Louise-Gosford Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2209 + CA-2286 | 746.3 ac | the official outline of Port-Daniel  Reserve Nature Reserve, ZEC des Anses Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1027 + CA-2293 | 730.3 ac | the official outline of Réserve faunique La Vérendrye Wildlife Reserve, Zec Bras-Coupé-Désert Nature Reserve could not be read in pass 2 (the next run tries aga |  |
+| not sure | CA-1028 + CA-2333 | 663.6 ac | the official outline of Réserve faunique Mastigouche Wildlife Reserve, Zec Des Nymphes Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1026 + CA-2313 | 489.2 ac | the official outline of Réserve faunique des Laurentides Wildlife Reserve, Zec Kiskissink Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0510 + CA-2325 | 468.8 ac | the official outline of Zec Martin-Valin Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1023 + CA-2295 | 457.4 ac | the official outline of Réserve faunique de Matane Wildlife Reserve, Zec Cap-Chat Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0500 + CA-2326 | 374.6 ac | the official outline of Zec Des Martres Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0499 + CA-2326 | 356.9 ac | the official outline of Zec Des Martres Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0500 + CA-2316 | 347.8 ac | the official outline of Zec Lac-Brébeuf Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1026 + CA-2260 | 299.9 ac | the official outline of Réserve faunique des Laurentides Wildlife Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2293 + CA-2341 | 294.4 ac | the official outline of Zec Bras-Coupé-Désert Nature Reserve, ZEC Pontiac Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0509 + CA-2318 | 293.6 ac | the official outline of Zec Lavigne Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2128 + CA-2300 | 279.0 ac | the official outline of Zec Chauvin Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1025 + CA-2354 | 251.8 ac | the official outline of Réserve faunique des Chic-Chocs Wildlife Reserve, ZEC Riviere Madeleine Nature Reserve could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-1029 + CA-2292 | 245.1 ac | the official outline of Réserve faunique Rouge-Matawin Wildlife Reserve, Zec Boullé Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0499 + CA-1026 | 219.0 ac | the official outline of Réserve faunique des Laurentides Wildlife Reserve could not be read in pass 2 (the next run tries again) |  |
+| more than one owner on the patch (all public): live, look later | CA-0004 Baie de l'Isle-Verte National Wildlife Area + CA-2068 Isle Verte Migratory Bird Sanctuary | 216.3 ac | candidate · ['FED:CANADA', 'STATE'] | CA-0004: downloaded 2026-10-30; CA-2068: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+| not sure | CA-2168 + CA-2218 | 209.1 ac | the official outline of Rimouski Reserve Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1026 + CA-2326 | 181.9 ac | the official outline of Réserve faunique des Laurentides Wildlife Reserve, Zec Des Martres Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1023 + CA-2355 | 181.7 ac | the official outline of Réserve faunique de Matane Wildlife Reserve, ZEC de la Riviere Matane Nature Reserve could not be read in pass 2 (the next run tries aga |  |
+| not sure | CA-2296 + CA-2305 | 178.1 ac | the official outline of Zec Capitachouane Nature Reserve, Zec Festubert Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2307 + CA-2309 | 149.6 ac | the official outline of Zec Fremont Nature Reserve, Zec Gros-Brochet Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2319 + CA-2330 | 147.6 ac | the official outline of Zec Lesueur Nature Reserve, Zec Mitchinamecus Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2211 + CA-2289 | 144.0 ac | the official outline of Portneuf Reserve faunique Nature Reserve, ZEC Batiscan-Neilson Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0496 + CA-2366 | 138.1 ac | the official outline of Zec Saint-Romain Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2304 + CA-2322 | 122.7 ac | the official outline of Zec Dumoine Nature Reserve, Zec Maganasipi Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2325 + CA-2361 | 119.2 ac | the official outline of Zec Martin-Valin Nature Reserve, ZEC de la Riviere Sainte Marguerite Nature Reserve could not be read in pass 2 (the next run tries agai |  |
+| not sure | CA-2342 + CA-2365 | 116.8 ac | the official outline of Zec Rapides-des-Joachims Nature Reserve, Zec Saint-Patrice Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2290 + CA-2311 | 111.4 ac | the official outline of ZEC de la Bessonne Nature Reserve, Zec Jeannotte Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2078 + CA-2347 | 105.4 ac | the official outline of ZEC de la Riviere Bonaventure Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2095 + CA-2310 | 104.9 ac | the official outline of Zec Jaro Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0495 + CA-2294 | 101.9 ac | the official outline of Zec Buteux-Bas-Saguenay Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2211 + CA-2367 | 100.0 ac | the official outline of Portneuf Reserve faunique Nature Reserve, Zec Tawachiche Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2291 + CA-2313 | 94.8 ac | the official outline of Zec Borgia Nature Reserve, Zec Kiskissink Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2292 + CA-2301 | 93.3 ac | the official outline of Zec Boullé Nature Reserve, Zec Collin Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2300 + CA-2361 | 93.3 ac | the official outline of Zec Chauvin Nature Reserve, ZEC de la Riviere Sainte Marguerite Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2286 + CA-2337 | 91.7 ac | the official outline of ZEC des Anses Nature Reserve, ZEC Pabok Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2313 + CA-2329 | 90.2 ac | the official outline of Zec Kiskissink Nature Reserve, Zec Menokeosawin Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2323 + CA-2328 | 85.3 ac | the official outline of Zec Maison-de-Pierre Nature Reserve, Zec Mazana Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2292 + CA-2328 | 79.2 ac | the official outline of Zec Boullé Nature Reserve, Zec Mazana Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2211 + CA-2290 | 74.2 ac | the official outline of Portneuf Reserve faunique Nature Reserve, ZEC de la Bessonne Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2304 + CA-2342 | 73.8 ac | the official outline of Zec Dumoine Nature Reserve, Zec Rapides-des-Joachims Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1023 + CA-2010 | 67.7 ac | the official outline of Réserve faunique de Matane Wildlife Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2306 + CA-2353 | 67.3 ac | the official outline of Zec Forestville Nature Reserve, ZEC de la Riviere Laval Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1026 + CA-2277 | 63.8 ac | the official outline of Réserve faunique des Laurentides Wildlife Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2209 + CA-2337 | 63.2 ac | the official outline of Port-Daniel  Reserve Nature Reserve, ZEC Pabok Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2018 + CA-2361 | 61.4 ac | the official outline of ZEC de la Riviere Sainte Marguerite Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2295 + CA-2348 | 58.6 ac | the official outline of Zec Cap-Chat Nature Reserve, ZEC de la Riviere Cap Chat Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0500 + CA-2315 | 58.3 ac | the official outline of Zec Lac-au-Sable Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1023 + CA-2348 | 55.1 ac | the official outline of Réserve faunique de Matane Wildlife Reserve, ZEC de la Riviere Cap Chat Nature Reserve could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-2315 + CA-2326 | 48.5 ac | the official outline of Zec Lac-au-Sable Nature Reserve, Zec Des Martres Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| more than one owner on the patch (all public): live, look later | CA-0086 Saguenay-St. Lawrence National Marine Park + CA-0495 Fjord-du-Saguenay National Park | 47.5 ac | very tight: could be map error: check both official maps on the ground · ['FED:CANADA', 'STATE'] | CA-0086: downloaded 2026-10-30; CA-0495: downloaded 2026-10-30 |
+| not sure | CA-2018 + CA-2325 | 46.0 ac | the official outline of Zec Martin-Valin Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2211 + CA-2311 | 44.4 ac | the official outline of Portneuf Reserve faunique Nature Reserve, Zec Jeannotte Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2319 + CA-2339 | 43.3 ac | the official outline of Zec Lesueur Nature Reserve, Zec Petawaga Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2291 + CA-2329 | 40.6 ac | the official outline of Zec Borgia Nature Reserve, Zec Menokeosawin Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2287 + CA-2364 | 37.4 ac | the official outline of ZEC Baillargeon Nature Reserve, ZEC de la Riviere York Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2164 + CA-2334 | 32.2 ac | the official outline of ZEC de l'Oie Blanche de Montmagny Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1975 + CA-2288 | 27.1 ac | the official outline of ZEC du Bas-Saint-Laurent Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2073 + CA-2365 | 27.1 ac | the official outline of Zec Saint-Patrice Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2023 + CA-2308 | 27.0 ac | the official outline of ZEC de la Grande Riviere Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2235 + CA-2365 | 23.8 ac | the official outline of Zec Saint-Patrice Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1027 + CA-1969 | 19.8 ac | the official outline of Réserve faunique La Vérendrye Wildlife Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2309 + CA-2370 | 19.1 ac | the official outline of Zec Gros-Brochet Nature Reserve, Zec Wessonneau Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2292 + CA-2323 | 17.1 ac | the official outline of Zec Boullé Nature Reserve, Zec Maison-de-Pierre Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2232 + CA-2293 | 15.6 ac | the official outline of Zec Bras-Coupé-Désert Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2285 + CA-2315 | 15.6 ac | the official outline of ZEC Anse-St-Jean Nature Reserve, Zec Lac-au-Sable Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1923 + CA-2342 | 14.2 ac | the official outline of Zec Rapides-des-Joachims Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1029 + CA-2292 + CA-2301 | 13.3 ac | the official outline of Réserve faunique Rouge-Matawin Wildlife Reserve, Zec Boullé Nature Reserve, Zec Collin Nature Reserve could not be read in pass 2 (the n |  |
+| not sure | CA-2005 + CA-2340 | 11.0 ac | the official outline of ZEC de la Petite Riviere Cascapedia Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2209 + CA-2286 + CA-2337 | 10.1 ac | the official outline of Port-Daniel  Reserve Nature Reserve, ZEC des Anses Nature Reserve, ZEC Pabok Nature Reserve could not be read in pass 2 (the next run tr |  |
+| not sure | CA-2256 + CA-2289 | 4.1 ac | the official outline of ZEC Batiscan-Neilson Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| water only (boat spot): is there really no land? | CA-0086 + CA-0495 | 2.5 ac | water only: boat or kayak | CA-0086: downloaded 2026-10-30; CA-0495: downloaded 2026-10-30; water: NRCan NHN file 2026-10-30 (Natural Resources Cana |
+| not sure | CA-1918 + CA-2342 | 2.5 ac | the official outline of Zec Rapides-des-Joachims Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0497 + CA-1023 | 1.6 ac | the official outline of Réserve faunique de Matane Wildlife Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-1023 + CA-2295 + CA-2348 | 1.6 ac | the official outline of Réserve faunique de Matane Wildlife Reserve, Zec Cap-Chat Nature Reserve, ZEC de la Riviere Cap Chat Nature Reserve could not be read in |  |
+| not sure | CA-1959 + CA-1996 | 1.6 ac | the official outline of Deux Montagnes Preserve Wildlife Area could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0497 + CA-2354 | 1.2 ac | the official outline of ZEC Riviere Madeleine Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0510 + CA-2361 | 1.2 ac | the official outline of ZEC de la Riviere Sainte Marguerite Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0495 + CA-2362 | 1.1 ac | the official outline of ZEC de la Riviere Saint Jean du Saguenay Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0497 + CA-1025 + CA-2354 | 1.1 ac | the official outline of Réserve faunique des Chic-Chocs Wildlife Reserve, ZEC Riviere Madeleine Nature Reserve could not be read in pass 2 (the next run tries a |  |
+| not sure | CA-0510 + CA-2325 + CA-2361 | 1.1 ac | the official outline of Zec Martin-Valin Nature Reserve, ZEC de la Riviere Sainte Marguerite Nature Reserve could not be read in pass 2 (the next run tries agai |  |
+| not sure | CA-2288 + CA-2356 | 0.8 ac | the official outline of ZEC du Bas-Saint-Laurent Nature Reserve, ZEC de la Riviere Mitis Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0497 + CA-1023 + CA-2010 | 0.3 ac | the official outline of Réserve faunique de Matane Wildlife Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0495 + CA-2361 | 0.2 ac | the official outline of ZEC de la Riviere Sainte Marguerite Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0086 + CA-0495 + CA-2361 | 0.1 ac | the official outline of ZEC de la Riviere Sainte Marguerite Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-0086 + CA-2361 | 0.1 ac | the official outline of ZEC de la Riviere Sainte Marguerite Nature Reserve could not be read in pass 2 (the next run tries again) |  |
+| not sure | CA-2292 + CA-2323 + CA-2328 | 0.1 ac | the official outline of Zec Boullé Nature Reserve, Zec Maison-de-Pierre Nature Reserve, Zec Mazana Nature Reserve could not be read in pass 2 (the next run trie |  |
 
 ## ri (55 rows, 2026-10-30)
 
