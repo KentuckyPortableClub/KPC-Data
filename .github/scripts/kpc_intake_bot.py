@@ -39,6 +39,8 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from kpc_manners import Manners  # noqa: E402
 
 OUT = pathlib.Path(os.environ.get('OUT') or 'data/intake')
+sys.path.insert(0, str(pathlib.Path(__file__).parent))
+import kpc_order as O
 QUEUE_FILE = pathlib.Path(os.environ.get('QUEUE') or 'data/intake/queue.json')
 LINKS = pathlib.Path(os.environ.get('LINKS') or 'links')
 T0 = time.time(); LIMIT = float(os.environ.get('MINUTES') or 55) * 60
@@ -738,6 +740,7 @@ def main():
         fresh = prev.get('probed') and days_ago(prev['probed']) < REFRESH_DAYS and prev.get('sig') == sig(row) and not prev.get('retry') and not stale_fail and 'RETRY' not in (prev.get('verdicts') or [])
         if fresh and not want: STAT['skipped_fresh'] += 1; continue
         todo.append(row)
+    todo.sort(key=lambda r: O.rank({k: r.get(k) for k in ('area', 'title', 'closes', 'note', 'url')}))   # Brandon Oct 30 12:44 PM: US + Canada first, then North America, W1-W10
     hv = [r for r in todo if r.get('from') == 'harvester']
     today_h = sum(1 for r in queue if r.get('from') == 'harvester' and (state['rows'].get(strip_query(r.get('url'))) or {}).get('probed') == TODAY)
     cap = max(0, FEED_MAX - today_h)                                    # FEED_MAX per NIGHT, whatever the number of chunks

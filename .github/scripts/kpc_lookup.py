@@ -42,7 +42,11 @@ def ans_path(req): return ANS / (pathlib.Path(req).stem + '.json')
 
 def todo():
     out = []
-    for p in sorted(REQ.glob('*.json')) if REQ.exists() else []:
+    try:
+        sys.path.insert(0, str(pathlib.Path(__file__).parent)); import kpc_order as O
+        rk = lambda p: (O.rank(p.read_text(encoding='utf-8', errors='replace')[:20000]), p.name)   # US + CA first (Brandon Oct 30 12:44 PM)
+    except Exception: rk = lambda p: p.name  # noqa: BLE001
+    for p in sorted(REQ.glob('*.json') if REQ.exists() else [], key=rk):
         if not ans_path(p).exists(): out.append(str(p.relative_to(ROOT)))
     print(json.dumps(out[:30]))
 

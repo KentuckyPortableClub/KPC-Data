@@ -30,9 +30,12 @@ def main():
         except ValueError: days = None
         v = last.get(rel) or last.get(key) or {}
         held.append((s or '9999', rel, days, v.get('verdict') or '?', '; '.join(v.get('why') or [])[:220]))
-    held.sort()
+    try:
+        sys.path.insert(0, str(pathlib.Path(__file__).parent)); import kpc_order as O
+        held.sort(key=lambda h: (O.rank(h[1]), h))   # US + CA first, then North America, W1-W10 (Brandon Oct 30 12:44 PM); oldest first inside
+    except Exception: held.sort()  # noqa: BLE001
     L = [f'# Waiting room: morning list ({today})', '', 'For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in data/waiting/approved.json; the nightly run lets it out.', '',
-         f'## Held files: {len(held)} (oldest first)', '', '| since | days | file | last check | why |', '|---|---|---|---|---|']
+         f'## Held files: {len(held)} (US + Canada first, then North America, W1-W10, rest; oldest first inside)', '', '| since | days | file | last check | why |', '|---|---|---|---|---|']
     L += [f"| {s if s != '9999' else '?'} | {d if d is not None else '?'} | {rel} | {vd} | {why.replace('|', '/')} |" for s, rel, d, vd, why in held] or ['| - | - | nothing held | - | - |']
     L += ['', '## Questions waiting for an answer', '', '| file | open | total |', '|---|---|---|']
     for q in sorted((W / 'questions').glob('*.json')):

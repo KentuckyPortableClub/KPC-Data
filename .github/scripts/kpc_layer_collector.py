@@ -14,6 +14,7 @@ import datetime as dt, json, math, os, pathlib, re, sys, time, urllib.parse
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
 import kpc_tiers as T  # noqa: E402
+import kpc_order as O  # noqa: E402
 try:
     from kpc_manners import Manners
     M = Manners('KPC layer collector (chat 10)')
@@ -167,7 +168,7 @@ def test_crawled(want, log, qs, queue, seen, n):
     """Each crawler-listed layer, once: ONE query per 120 open pins of its area (multipoint), the hit polygons judged by the name
     tiers; SURE / LIKELY = a question for chat 11 (same file + shape as the LAYER lines) and the layer to the intake queue."""
     done = 0
-    for area, lname, url, field in crawled_layers(want):
+    for area, lname, url, field in sorted(crawled_layers(want), key=lambda x: O.rank(x[0])):   # US + CA first (Brandon Oct 30 12:44 PM)
         k = f'crawl|{area}|{url}'
         if k in log: continue
         if done >= CRAWL_MAX: break
@@ -223,7 +224,7 @@ def main():
     queue = load(QUEUE, {'rows': []}) or {'rows': []}
     seen = {r.get('url') for r in queue.get('rows') or []}
     n = {'new': 0, 'asked': 0, 'queued': 0, 'failed': 0, 'evidence': 0}
-    for f in sorted((LINKS / '.claude' / 'build' / 'research' / 'fable').glob('*.md')):
+    for f in sorted((LINKS / '.claude' / 'build' / 'research' / 'fable').glob('*.md'), key=lambda f: (O.rank(f.stem), f.stem)):
         if want and f.stem not in want: continue
         for line in f.read_text(encoding='utf-8').splitlines():
             m = LINE.match(line.strip())
