@@ -1,15 +1,15 @@
 {
  "about": "us-key: the HELD build (data/waiting/in/data/us-key/) vs the LIVE key (data/us-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'us-key'). Written by kpc_key_summary.py.",
- "made": "2026-10-30 04:45 UTC",
+ "made": "2026-10-30 06:47 UTC",
  "totals": {
-  "gained": 51,
-  "lost": 1,
-  "pieces_changed": 322,
-  "grade_changed": 30
+  "gained": 50,
+  "lost": 3,
+  "pieces_changed": 320,
+  "grade_changed": 28
  },
  "per_area": {
   "US-AK": {
-   "gained": 2,
+   "gained": 1,
    "lost": 1,
    "pieces_changed": 4,
    "grade_changed": 0
@@ -178,9 +178,9 @@
   },
   "US-NV": {
    "gained": 2,
-   "lost": 0,
-   "pieces_changed": 35,
-   "grade_changed": 1
+   "lost": 1,
+   "pieces_changed": 34,
+   "grade_changed": 0
   },
   "US-NY": {
    "gained": 0,
@@ -196,9 +196,9 @@
   },
   "US-OR": {
    "gained": 8,
-   "lost": 0,
-   "pieces_changed": 67,
-   "grade_changed": 2
+   "lost": 1,
+   "pieces_changed": 66,
+   "grade_changed": 1
   },
   "US-RI": {
    "gained": 1,
@@ -256,37 +256,6 @@
   }
  },
  "gained": [
-  {
-   "area": "US-AK",
-   "ref": "US-10464",
-   "name": "Chena Wayside State Recreation Site",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "sgaka122",
-     "Chena River State Recreation Site",
-     27,
-     "alias name (pin inside): Chena River State Recreation Site"
-    ],
-    [
-     "sgake122",
-     "Chena River State Recreation Site",
-     27,
-     "alias name (pin inside): Chena River State Recreation Site"
-    ],
-    [
-     "sgakf122",
-     "Chena River State Recreation Site",
-     27,
-     "alias name (pin inside): Chena River State Recreation Site"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-10464"
-  },
   {
    "area": "US-AK",
    "ref": "US-11244",
@@ -976,6 +945,31 @@
   },
   {
    "area": "US-OR",
+   "ref": "US-10476",
+   "name": "Monument BLM Recreation Management Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgord10426",
+     "Monument GS",
+     1,
+     "same name (POTA writes the kind into the name) + pin inside"
+    ],
+    [
+     "sgord10427",
+     "Monument GS",
+     1,
+     "same name (POTA writes the kind into the name) + pin inside"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-10476"
+  },
+  {
+   "area": "US-OR",
    "ref": "US-10486",
    "name": "Warner Wetland Reserve",
    "old_grade": "pin",
@@ -1052,25 +1046,6 @@
   },
   {
    "area": "US-OR",
-   "ref": "US-4383",
-   "name": "Rogue River-Siskiyou National Forest",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "2920",
-     "Siskiyou National Forest",
-     1058444,
-     "reviewed"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-4383"
-  },
-  {
-   "area": "US-OR",
    "ref": "US-9983",
    "name": "Valley of the Giants Outstanding Natural Area",
    "old_grade": "pin",
@@ -1096,10 +1071,28 @@
    "new_grade": "official",
    "new_pieces": [
     [
-     "57173",
-     "George Washington",
-     0,
-     "reviewed"
+     "57294",
+     "George Washington Management Area",
+     3202,
+     "same name (POTA writes the kind into the name) + pin inside"
+    ],
+    [
+     "sgria30",
+     "George Washington Management Area",
+     2831,
+     "same name (POTA writes the kind into the name) + pin inside"
+    ],
+    [
+     "sgrib28",
+     "George Washington Management Area",
+     2831,
+     "same name (POTA writes the kind into the name) + pin inside"
+    ],
+    [
+     "sgric30",
+     "George Washington Management Area",
+     2831,
+     "same name (POTA writes the kind into the name) + pin inside"
     ]
    ],
    "old_pieces": [],
@@ -1320,6 +1313,53 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-11828"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-13181",
+   "name": "Pine Forest BLM Recreation Management Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "rst11394",
+     "Pine Forest Creeks RMZ",
+     76970,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-13181"
+  },
+  {
+   "area": "US-OR",
+   "ref": "US-12841",
+   "name": "Fawn Creek BLM Recreation Management Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "rma11245",
+     "Fawn Creek Campground",
+     3,
+     "words"
+    ],
+    [
+     "rst11245",
+     "Fawn Creek Campground",
+     3,
+     "words"
+    ]
+   ],
+   "held_now": [
+    "held (rule G-1): a similar-name piece more than 2 km from the pin and ",
+    "held (rule G-1): a similar-name piece more than 2 km from the pin and "
+   ],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-12841"
   }
  ],
  "grade_changed": [
@@ -2086,34 +2126,6 @@
    "pota": "https://pota.app/#/park/US-13150"
   },
   {
-   "area": "US-NV",
-   "ref": "US-13181",
-   "name": "Pine Forest BLM Recreation Management Area",
-   "old_grade": "approximate",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "sgakh1214",
-     "Pine Forest",
-     16227,
-     "name"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "rst11394",
-     "Pine Forest Creeks RMZ",
-     76970,
-     "words"
-    ]
-   ],
-   "held_now": [
-    "check (rule R-G8): bigger than the park's own record"
-   ],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-13181"
-  },
-  {
    "area": "US-NY",
    "ref": "US-2057",
    "name": "Franny Reese State Park",
@@ -2150,59 +2162,6 @@
    "held_now": [],
    "by_answer": true,
    "pota": "https://pota.app/#/park/US-2057"
-  },
-  {
-   "area": "US-OR",
-   "ref": "US-12841",
-   "name": "Fawn Creek BLM Recreation Management Area",
-   "old_grade": "approximate",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "rma11245",
-     "Fawn Creek Campground",
-     3,
-     "words"
-    ],
-    [
-     "rst11245",
-     "Fawn Creek Campground",
-     3,
-     "words"
-    ],
-    [
-     "sgakg11245",
-     "Fawn Creek Campground",
-     3,
-     "words"
-    ],
-    [
-     "rst12757",
-     "Fawn Creek Campground",
-     0,
-     "reviewed"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "rma11245",
-     "Fawn Creek Campground",
-     3,
-     "words"
-    ],
-    [
-     "rst11245",
-     "Fawn Creek Campground",
-     3,
-     "words"
-    ]
-   ],
-   "held_now": [
-    "held (rule G-1): a similar-name piece more than 2 km from the pin and ",
-    "held (rule G-1): a similar-name piece more than 2 km from the pin and "
-   ],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-12841"
   },
   {
    "area": "US-OR",
@@ -2815,6 +2774,43 @@
    "pota": "https://pota.app/#/park/US-3064"
   },
   {
+   "area": "US-RI",
+   "ref": "US-5484",
+   "name": "George Washington Memorial State Forest",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "57294",
+     "George Washington Management Area",
+     3202,
+     "same name (POTA writes the kind into the name) + pin inside"
+    ],
+    [
+     "sgria30",
+     "George Washington Management Area",
+     2831,
+     "same name (POTA writes the kind into the name) + pin inside"
+    ],
+    [
+     "sgrib28",
+     "George Washington Management Area",
+     2831,
+     "same name (POTA writes the kind into the name) + pin inside"
+    ],
+    [
+     "sgric30",
+     "George Washington Management Area",
+     2831,
+     "same name (POTA writes the kind into the name) + pin inside"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-5484"
+  },
+  {
    "area": "US-MI",
    "ref": "US-6675",
    "name": "Fraser State Game Land",
@@ -2863,90 +2859,6 @@
    "held_now": [],
    "by_answer": true,
    "pota": "https://pota.app/#/park/US-6675"
-  },
-  {
-   "area": "US-OR",
-   "ref": "US-12841",
-   "name": "Fawn Creek BLM Recreation Management Area",
-   "old_grade": "approximate",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "rma11245",
-     "Fawn Creek Campground",
-     3,
-     "words"
-    ],
-    [
-     "rst11245",
-     "Fawn Creek Campground",
-     3,
-     "words"
-    ],
-    [
-     "sgakg11245",
-     "Fawn Creek Campground",
-     3,
-     "words"
-    ],
-    [
-     "rst12757",
-     "Fawn Creek Campground",
-     0,
-     "reviewed"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "rma11245",
-     "Fawn Creek Campground",
-     3,
-     "words"
-    ],
-    [
-     "rst11245",
-     "Fawn Creek Campground",
-     3,
-     "words"
-    ]
-   ],
-   "held_now": [
-    "held (rule G-1): a similar-name piece more than 2 km from the pin and ",
-    "held (rule G-1): a similar-name piece more than 2 km from the pin and "
-   ],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-12841"
-  },
-  {
-   "area": "US-AK",
-   "ref": "US-10464",
-   "name": "Chena Wayside State Recreation Site",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "sgaka122",
-     "Chena River State Recreation Site",
-     27,
-     "alias name (pin inside): Chena River State Recreation Site"
-    ],
-    [
-     "sgake122",
-     "Chena River State Recreation Site",
-     27,
-     "alias name (pin inside): Chena River State Recreation Site"
-    ],
-    [
-     "sgakf122",
-     "Chena River State Recreation Site",
-     27,
-     "alias name (pin inside): Chena River State Recreation Site"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-10464"
   },
   {
    "area": "US-NH",
@@ -3185,6 +3097,31 @@
    "held_now": [],
    "by_answer": true,
    "pota": "https://pota.app/#/park/US-11807"
+  },
+  {
+   "area": "US-OR",
+   "ref": "US-10476",
+   "name": "Monument BLM Recreation Management Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgord10426",
+     "Monument GS",
+     1,
+     "same name (POTA writes the kind into the name) + pin inside"
+    ],
+    [
+     "sgord10427",
+     "Monument GS",
+     1,
+     "same name (POTA writes the kind into the name) + pin inside"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-10476"
   },
   {
    "area": "US-MN",
@@ -3524,34 +3461,6 @@
    "pota": "https://pota.app/#/park/US-13383"
   },
   {
-   "area": "US-NV",
-   "ref": "US-13181",
-   "name": "Pine Forest BLM Recreation Management Area",
-   "old_grade": "approximate",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "sgakh1214",
-     "Pine Forest",
-     16227,
-     "name"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "rst11394",
-     "Pine Forest Creeks RMZ",
-     76970,
-     "words"
-    ]
-   ],
-   "held_now": [
-    "check (rule R-G8): bigger than the park's own record"
-   ],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-13181"
-  },
-  {
    "area": "US-AK",
    "ref": "US-11828",
    "name": "Fortymile BLM Wild and Scenic River",
@@ -3569,6 +3478,25 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-11828"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-13181",
+   "name": "Pine Forest BLM Recreation Management Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "rst11394",
+     "Pine Forest Creeks RMZ",
+     76970,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-13181"
   },
   {
    "area": "US-AZ",
