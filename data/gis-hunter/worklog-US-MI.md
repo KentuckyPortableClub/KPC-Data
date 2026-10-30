@@ -12,7 +12,7 @@
 | US-13166 | Black River National Recreation Area | R-G7 step 2 | USGS PAD-US: 'Ottawa National Forest' (record 3074, ~986,817 ac, pin inside) · container: one record under 4 parks | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
 | US-13168 | Lake Michigan National Recreation Area | R-G7 step 2 | USGS PAD-US: 'Manistee National Forest' (record 3060, ~533,866 ac, pin inside) · no shared proper word | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
 | US-13169 | Lake Ottawa National Recreation Area | R-G7 step 2 | USGS PAD-US: 'Ottawa National Forest' (record 3074, ~986,817 ac, pin inside) · container: one record under 4 parks | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
-| US-13170 | Bay De Noc/Grand Island National Recreation Trail | R-G7 step 2 | USGS PAD-US: 'Hiawatha National Forest' (record 3052, ~894,731 ac, pin inside) · container: one record under 3 parks | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
+| US-13170 | Bay De Noc/Grand Island National Recreation Trail | R-G7 step 2 | USGS PAD-US: 'Hiawatha National Forest' (record 3052, ~894,731 ac, pin inside) · container: one record under 3 parks | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | US-13171 | Betsie Valley State Trail | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | US-13172 | North Central State Trail | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | US-13174 | North Eastern State Trail | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |

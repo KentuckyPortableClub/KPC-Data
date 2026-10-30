@@ -37,6 +37,7 @@
    "tried": [
     "A Indiana DNR: hit",
     "A Indiana DNR Nature Preserves (credit: IN: no polygon at the pin",
+    "A Indiana DNR + INHD (all managed lands): no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"mongoquinong\": 0 lead(s)"
    ],
@@ -66,6 +67,7 @@
    "tried": [
     "A Indiana DNR: no polygon at the pin",
     "A Indiana DNR Nature Preserves (credit: IN: no polygon at the pin",
+    "A Indiana DNR + INHD (all managed lands): no polygon at the pin",
     "A USGS PAD-US: hit"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
@@ -86,6 +88,7 @@
    "tried": [
     "A Indiana DNR: no polygon at the pin",
     "A Indiana DNR Nature Preserves (credit: IN: no polygon at the pin",
+    "A Indiana DNR + INHD (all managed lands): no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"spencer\": 1 lead(s)"
    ],
@@ -115,8 +118,9 @@
    "tried": [
     "A Indiana DNR: no polygon at the pin",
     "A Indiana DNR Nature Preserves (credit: IN: no polygon at the pin",
+    "A Indiana DNR + INHD (all managed lands): no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"indian celina\": 0 lead(s)"
+    "B ArcGIS Online search \"celina indian\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -168,8 +172,9 @@
    "tried": [
     "A Indiana DNR: hit",
     "A Indiana DNR Nature Preserves (credit: IN: no polygon at the pin",
+    "A Indiana DNR + INHD (all managed lands): no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"little turtle\": 0 lead(s)"
+    "B ArcGIS Online search \"turtle little\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -182,6 +187,16 @@
      "verdict": "inside-other",
      "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
      "agency": "Indiana DNR",
+     "record": 4577,
+     "record_name": "Monroe Lake",
+     "acres_approx": 141,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLandsAll_DNR_INHD_IN_SP/FeatureServer/0",
+     "agency": "Indiana DNR + INHD (all managed lands)",
      "record": 4577,
      "record_name": "Monroe Lake",
      "acres_approx": 141,
@@ -207,6 +222,7 @@
    "tried": [
     "A Indiana DNR: hit",
     "A Indiana DNR Nature Preserves (credit: IN: no polygon at the pin",
+    "A Indiana DNR + INHD (all managed lands): hit",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"moores\": 0 lead(s)"
    ],
@@ -260,6 +276,7 @@
    "tried": [
     "A Indiana DNR: hit",
     "A Indiana DNR Nature Preserves (credit: IN: no polygon at the pin",
+    "A Indiana DNR + INHD (all managed lands): no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"quah kil\": 0 lead(s)"
    ],
@@ -274,6 +291,16 @@
      "verdict": "inside-other",
      "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
      "agency": "Indiana DNR",
+     "record": 4576,
+     "record_name": "Monroe Lake",
+     "acres_approx": 19073,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLandsAll_DNR_INHD_IN_SP/FeatureServer/0",
+     "agency": "Indiana DNR + INHD (all managed lands)",
      "record": 4576,
      "record_name": "Monroe Lake",
      "acres_approx": 19073,
@@ -299,6 +326,7 @@
    "tried": [
     "A Indiana DNR: hit",
     "A Indiana DNR Nature Preserves (credit: IN: no polygon at the pin",
+    "A Indiana DNR + INHD (all managed lands): hit",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"allens\": 0 lead(s)"
    ],
@@ -318,12 +346,23 @@
      "acres_approx": 772,
      "tier": "UNLIKELY",
      "why": "no shared proper word"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLandsAll_DNR_INHD_IN_SP/FeatureServer/0",
+     "agency": "Indiana DNR + INHD (all managed lands)",
+     "record": 3226,
+     "record_name": "Cagles Mill Lake",
+     "acres_approx": 772,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
    "tried": [
     "A Indiana DNR: hit",
     "A Indiana DNR Nature Preserves (credit: IN: no polygon at the pin",
+    "A Indiana DNR + INHD (all managed lands): hit",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"lieber\": 0 lead(s)"
    ],
@@ -338,6 +377,16 @@
      "verdict": "inside-other",
      "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
      "agency": "Indiana DNR",
+     "record": 4575,
+     "record_name": "Monroe Lake",
+     "acres_approx": 710,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLandsAll_DNR_INHD_IN_SP/FeatureServer/0",
+     "agency": "Indiana DNR + INHD (all managed lands)",
      "record": 4575,
      "record_name": "Monroe Lake",
      "acres_approx": 710,
@@ -363,6 +412,7 @@
    "tried": [
     "A Indiana DNR: hit",
     "A Indiana DNR Nature Preserves (credit: IN: no polygon at the pin",
+    "A Indiana DNR + INHD (all managed lands): hit",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"fairfax\": 0 lead(s)"
    ],
@@ -377,6 +427,16 @@
      "verdict": "inside-other",
      "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
      "agency": "Indiana DNR",
+     "record": 4580,
+     "record_name": "Monroe Lake",
+     "acres_approx": 314,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLandsAll_DNR_INHD_IN_SP/FeatureServer/0",
+     "agency": "Indiana DNR + INHD (all managed lands)",
      "record": 4580,
      "record_name": "Monroe Lake",
      "acres_approx": 314,
@@ -402,6 +462,7 @@
    "tried": [
     "A Indiana DNR: hit",
     "A Indiana DNR Nature Preserves (credit: IN: no polygon at the pin",
+    "A Indiana DNR + INHD (all managed lands): hit",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"salt\": 0 lead(s)"
    ],
@@ -431,6 +492,7 @@
    "tried": [
     "A Indiana DNR: no polygon at the pin",
     "A Indiana DNR Nature Preserves (credit: IN: no polygon at the pin",
+    "A Indiana DNR + INHD (all managed lands): no polygon at the pin",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"grove pine\": 0 lead(s)"
    ],
@@ -453,37 +515,8 @@
     },
     {
      "verdict": "inside-other",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "agency": "USGS PAD-US",
-     "record": 2527,
-     "record_name": "Monroe Recreation Area",
-     "acres_approx": 26480,
-     "Mang_Name": "USACE",
-     "Des_Tp": "REC",
-     "Own_Type": "UNK",
-     "GIS_Acres": 25720,
-     "tier": "UNLIKELY",
-     "why": "container: one record under 7 parks"
-    }
-   ],
-   "leads": [],
-   "tried": [
-    "A Indiana DNR: hit",
-    "A Indiana DNR Nature Preserves (credit: IN: no polygon at the pin",
-    "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"crooked\": 0 lead(s)"
-   ],
-   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
-  },
-  "US-5692": {
-   "park": "Cartop State Recreation Area",
-   "area": "US-IN",
-   "why_not": "name-mismatch",
-   "hits": [
-    {
-     "verdict": "inside-other",
-     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
-     "agency": "Indiana DNR",
+     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLandsAll_DNR_INHD_IN_SP/FeatureServer/0",
+     "agency": "Indiana DNR + INHD (all managed lands)",
      "record": 4576,
      "record_name": "Monroe Lake",
      "acres_approx": 19073,
@@ -509,6 +542,57 @@
    "tried": [
     "A Indiana DNR: hit",
     "A Indiana DNR Nature Preserves (credit: IN: no polygon at the pin",
+    "A Indiana DNR + INHD (all managed lands): hit",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"crooked\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-5692": {
+   "park": "Cartop State Recreation Area",
+   "area": "US-IN",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
+     "agency": "Indiana DNR",
+     "record": 4576,
+     "record_name": "Monroe Lake",
+     "acres_approx": 19073,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLandsAll_DNR_INHD_IN_SP/FeatureServer/0",
+     "agency": "Indiana DNR + INHD (all managed lands)",
+     "record": 4576,
+     "record_name": "Monroe Lake",
+     "acres_approx": 19073,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2527,
+     "record_name": "Monroe Recreation Area",
+     "acres_approx": 26480,
+     "Mang_Name": "USACE",
+     "Des_Tp": "REC",
+     "Own_Type": "UNK",
+     "GIS_Acres": 25720,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 7 parks"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Indiana DNR: hit",
+    "A Indiana DNR Nature Preserves (credit: IN: no polygon at the pin",
+    "A Indiana DNR + INHD (all managed lands): hit",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"cartop\": 0 lead(s)"
    ],
@@ -523,6 +607,7 @@
    "tried": [
     "A Indiana DNR: no polygon at the pin",
     "A Indiana DNR Nature Preserves (credit: IN: no polygon at the pin",
+    "A Indiana DNR + INHD (all managed lands): no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"harmony new\": 0 lead(s)"
    ],
@@ -537,6 +622,7 @@
    "tried": [
     "A Indiana DNR: no polygon at the pin",
     "A Indiana DNR Nature Preserves (credit: IN: no polygon at the pin",
+    "A Indiana DNR + INHD (all managed lands): no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"mansion lanier\": 0 lead(s)"
    ],
@@ -551,6 +637,7 @@
    "tried": [
     "A Indiana DNR: no polygon at the pin",
     "A Indiana DNR Nature Preserves (credit: IN: no polygon at the pin",
+    "A Indiana DNR + INHD (all managed lands): no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
     "B ArcGIS Online search \"coffin house levi\": 0 lead(s)"
    ],
@@ -573,37 +660,8 @@
     },
     {
      "verdict": "inside-other",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "agency": "USGS PAD-US",
-     "record": 2526,
-     "record_name": "Mississinewa Recreation Area",
-     "acres_approx": 15017,
-     "Mang_Name": "USACE",
-     "Des_Tp": "REC",
-     "Own_Type": "UNK",
-     "GIS_Acres": 15067,
-     "tier": "UNLIKELY",
-     "why": "no shared proper word"
-    }
-   ],
-   "leads": [],
-   "tried": [
-    "A Indiana DNR: hit",
-    "A Indiana DNR Nature Preserves (credit: IN: no polygon at the pin",
-    "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"bridge red\": 0 lead(s)"
-   ],
-   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
-  },
-  "US-7843": {
-   "park": "Pearson Mill State Recreation Area",
-   "area": "US-IN",
-   "why_not": "name-mismatch",
-   "hits": [
-    {
-     "verdict": "inside-other",
-     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
-     "agency": "Indiana DNR",
+     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLandsAll_DNR_INHD_IN_SP/FeatureServer/0",
+     "agency": "Indiana DNR + INHD (all managed lands)",
      "record": 4563,
      "record_name": "Mississinewa Lake",
      "acres_approx": 13078,
@@ -629,6 +687,57 @@
    "tried": [
     "A Indiana DNR: hit",
     "A Indiana DNR Nature Preserves (credit: IN: no polygon at the pin",
+    "A Indiana DNR + INHD (all managed lands): hit",
+    "A USGS PAD-US: hit",
+    "B ArcGIS Online search \"bridge red\": 0 lead(s)"
+   ],
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
+  },
+  "US-7843": {
+   "park": "Pearson Mill State Recreation Area",
+   "area": "US-IN",
+   "why_not": "name-mismatch",
+   "hits": [
+    {
+     "verdict": "inside-other",
+     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
+     "agency": "Indiana DNR",
+     "record": 4563,
+     "record_name": "Mississinewa Lake",
+     "acres_approx": 13078,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLandsAll_DNR_INHD_IN_SP/FeatureServer/0",
+     "agency": "Indiana DNR + INHD (all managed lands)",
+     "record": 4563,
+     "record_name": "Mississinewa Lake",
+     "acres_approx": 13078,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    },
+    {
+     "verdict": "inside-other",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "agency": "USGS PAD-US",
+     "record": 2526,
+     "record_name": "Mississinewa Recreation Area",
+     "acres_approx": 15017,
+     "Mang_Name": "USACE",
+     "Des_Tp": "REC",
+     "Own_Type": "UNK",
+     "GIS_Acres": 15067,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
+    }
+   ],
+   "leads": [],
+   "tried": [
+    "A Indiana DNR: hit",
+    "A Indiana DNR Nature Preserves (credit: IN: no polygon at the pin",
+    "A Indiana DNR + INHD (all managed lands): hit",
     "A USGS PAD-US: hit",
     "B ArcGIS Online search \"pearson mill\": 0 lead(s)"
    ],

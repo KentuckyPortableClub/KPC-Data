@@ -416,7 +416,7 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"salmon scenic wild\": 0 lead(s)"
+    "B ArcGIS Online search \"scenic salmon wild\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -513,7 +513,7 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
     "A USGS PAD-US: hit",
-    "B ArcGIS Online search \"section foreman maupin\": 0 lead(s)"
+    "B ArcGIS Online search \"foreman section maupin\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -1006,7 +1006,7 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"rock lone\": 0 lead(s)"
+    "B ArcGIS Online search \"lone rock\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
@@ -1126,7 +1126,7 @@
     "A BLM Areas of Critical Environmental Conc: no polygon at the pin",
     "A BLM Oregon/Washington recreation managem: no polygon at the pin",
     "A USGS PAD-US: no polygon at the pin",
-    "B ArcGIS Online search \"quartzville special kiosk\": 0 lead(s)"
+    "B ArcGIS Online search \"quartzville special byway\": 0 lead(s)"
    ],
    "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
@@ -1748,14 +1748,14 @@
    ],
    "leads": [
     {
-     "title": "Rogue River-Siskiyou NF Recreation Areas",
-     "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0",
+     "title": "Rogue River-Siskiyou NF Administrative Boundary",
+     "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_ForestSystemBoundaries_01/MapServer/1",
      "owner": "USFSRegion06",
      "type": "Feature Service"
     },
     {
-     "title": "Rogue River-Siskiyou NF Administrative Boundary",
-     "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_ForestSystemBoundaries_01/MapServer/1",
+     "title": "Rogue River-Siskiyou NF Recreation Areas",
+     "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0",
      "owner": "USFSRegion06",
      "type": "Feature Service"
     }
