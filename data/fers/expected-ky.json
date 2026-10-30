@@ -2,19 +2,19 @@
  "filter": {
   "rule": "pairs expected only from POTA history are kept when the outlines are within 1000 m (box to box), or a park has no outline, or one session logged both",
   "left_out_far": 2148,
-  "kept_no_outline": 246,
+  "kept_no_outline": 40,
   "kept_same_session": 0,
-  "kept_not_measured": 0,
+  "kept_not_measured": 206,
   "outlines_measured": 188
  },
  "about": "MISSING CHECK (chat 2, Oct 27 2026; HQ 3:46 PM, Brandon: 'chat 8 can't verify what's missing'). For each area of a 2-fer run, every See kpc_fers_expected.py. Chat 8 reviews DROPPED + NEVER LOOKED AT.",
  "area": "ky",
- "date": "2026-10-29",
+ "date": "2026-10-30",
  "pass": true,
  "counts": {
   "FOUND": 94,
-  "DROPPED": 76,
-  "NEVER LOOKED AT": 261
+  "DROPPED": 221,
+  "NEVER LOOKED AT": 116
  },
  "FOUND": [
   {
@@ -347,7 +347,7 @@
     "activated together by the same call on the same day (9x, POTA history)",
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
-   "row": "US-10121+US-11181@trail@37.000,-84.278"
+   "row": "US-10121+US-11181@trail@36.999,-84.279"
   },
   {
    "refs": [
@@ -391,7 +391,7 @@
     "activated together by the same call on the same day (27x, POTA history)",
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
-   "row": "US-10139+US-4526@same land@37.093,-82.734"
+   "row": "US-10139+US-4526@same land@37.093,-82.733"
   },
   {
    "refs": [
@@ -649,7 +649,7 @@
     "activated together by the same call on the same day (2x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "row": "US-1275+US-4484@area@37.313,-83.446"
+   "row": "US-1275+US-4484@area@37.312,-83.446"
   },
   {
    "refs": [
@@ -660,7 +660,7 @@
     "activated together by the same call on the same day (19x, POTA history)",
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
-   "row": "US-1276+US-12971@area@38.380,-83.131"
+   "row": "US-1276+US-12971@area@38.380,-83.130"
   },
   {
    "refs": [
@@ -704,7 +704,7 @@
     "hand list (ky-trail-parks.json)",
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
-   "row": "US-1282+US-3791@river@36.779,-88.139"
+   "row": "US-1282+US-3791@river@36.788,-88.147"
   },
   {
    "refs": [
@@ -716,7 +716,7 @@
     "hand list (ky-trail-parks.json)",
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
-   "row": "US-1283+US-3791@river@37.000,-88.282"
+   "row": "US-1283+US-3791@river@37.000,-88.284"
   },
   {
    "refs": [
@@ -750,7 +750,7 @@
     "activated together by the same call on the same day (6x, POTA history)",
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
-   "row": "US-3791+US-3793+US-4572@river@37.145,-89.081"
+   "row": "US-3791+US-3793+US-4572@river@37.145,-89.087"
   },
   {
    "refs": [
@@ -761,7 +761,7 @@
    "why_expected": [
     "hand list (ky-trail-parks.json)"
    ],
-   "row": "US-3791+US-3793+US-4572@river@37.145,-89.081"
+   "row": "US-3791+US-3793+US-4572@river@37.145,-89.087"
   },
   {
    "refs": [
@@ -817,7 +817,7 @@
    "why_expected": [
     "activated together by the same call on the same day (8x, POTA history)"
    ],
-   "row": "US-3791+US-3827@river@36.590,-89.131"
+   "row": "US-3791+US-3827@river@36.590,-89.143"
   },
   {
    "refs": [
@@ -860,7 +860,7 @@
     "activated together by the same call on the same day (197x, POTA history)",
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
-   "row": "US-3791+US-3793+US-4572@river@37.145,-89.081"
+   "row": "US-3791+US-3793+US-4572@river@37.145,-89.087"
   },
   {
    "refs": [
@@ -881,7 +881,7 @@
     "activated together by the same call on the same day (6x, POTA history)",
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
-   "row": "US-3791+US-3793+US-4572@river@37.145,-89.081"
+   "row": "US-3791+US-3793+US-4572@river@37.145,-89.087"
   },
   {
    "refs": [
@@ -938,7 +938,7 @@
     "hand list (ky-trail-parks.json)",
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
-   "row": "US-3830+US-4572@river@37.782,-87.903"
+   "row": "US-3830+US-4572@river@37.782,-87.904"
   },
   {
    "refs": [
@@ -1058,7 +1058,7 @@
     "hand list (ky-trail-parks.json)",
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
-   "row": "US-4572+US-8144@river@37.958,-86.029"
+   "row": "US-4572+US-8144@river@37.958,-86.028"
   }
  ],
  "DROPPED": [
@@ -1070,6 +1070,28 @@
    "why_expected": [
     "activated together by the same call on the same day (9x, POTA history)",
     "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0050",
+    "US-3791"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (9x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0050",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (7x, POTA history)"
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
@@ -1089,11 +1111,44 @@
   {
    "refs": [
     "US-0295",
+    "US-3791"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (7x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0295",
     "US-3819"
    ],
    "why_expected": [
     "activated together by the same call on the same day (9x, POTA history)",
     "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0295",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0538",
+    "US-3791"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (8x, POTA history)"
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
@@ -1136,6 +1191,28 @@
   },
   {
    "refs": [
+    "US-0724",
+    "US-3791"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0724",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
     "US-10098",
     "US-1260"
    ],
@@ -1143,8 +1220,19 @@
     "activated together by the same call on the same day (18x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "dropped in pass 3",
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
+  },
+  {
+   "refs": [
+    "US-10098",
+    "US-3791"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
   },
   {
    "refs": [
@@ -1173,6 +1261,29 @@
   },
   {
    "refs": [
+    "US-10102",
+    "US-10112",
+    "US-7966"
+   ],
+   "why_expected": [
+    "hand list (ky-trail-parks.json)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-10102",
+    "US-3814"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (12x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
     "US-10103",
     "US-11181"
    ],
@@ -1187,11 +1298,90 @@
   {
    "refs": [
     "US-10103",
+    "US-11181",
+    "US-1277"
+   ],
+   "why_expected": [
+    "hand list (ky-trail-parks.json)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-10103",
+    "US-11181",
+    "US-4484"
+   ],
+   "why_expected": [
+    "hand list (ky-trail-parks.json)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-10103",
     "US-3794"
    ],
    "why_expected": [
     "activated together by the same call on the same day (7x, POTA history)",
     "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-10104",
+    "US-11181"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (6x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-10104",
+    "US-3791"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-10105",
+    "US-3791"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (8x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-10105",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (6x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-10106",
+    "US-11181"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (6x, POTA history)"
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
@@ -1247,6 +1437,17 @@
   {
    "refs": [
     "US-10128",
+    "US-3791"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-10128",
     "US-4572"
    ],
    "why_expected": [
@@ -1254,6 +1455,17 @@
    ],
    "reason": "not sure: no public owner on PAD-US at the spot, and KDFWR's own page names no owner for Ferguson Creek Wildlife Management Area (a person adds it to data/ky-wma-owners.json)",
    "rule": "rule 7 (NOT SURE is kept out)"
+  },
+  {
+   "refs": [
+    "US-10137",
+    "US-3791"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
   },
   {
    "refs": [
@@ -1269,6 +1481,17 @@
   },
   {
    "refs": [
+    "US-10137",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
     "US-10138",
     "US-10159"
    ],
@@ -1276,7 +1499,7 @@
     "activated together by the same call on the same day (2x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "dropped in pass 2",
+   "reason": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   },
   {
@@ -1312,8 +1535,19 @@
     "activated together by the same call on the same day (22x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "dropped in pass 3",
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
+  },
+  {
+   "refs": [
+    "US-10141",
+    "US-11181"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
   },
   {
    "refs": [
@@ -1336,8 +1570,19 @@
     "activated together by the same call on the same day (7x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "dropped in pass 3",
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
+  },
+  {
+   "refs": [
+    "US-10145",
+    "US-11181"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
   },
   {
    "refs": [
@@ -1377,12 +1622,34 @@
   },
   {
    "refs": [
+    "US-10153",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
     "US-10155",
     "US-4484"
    ],
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)",
     "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-10157",
+    "US-11181"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (6x, POTA history)"
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
@@ -1413,12 +1680,291 @@
   },
   {
    "refs": [
+    "US-10160",
+    "US-11181"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (7x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-10161",
+    "US-3791"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-10161",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (4x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-10162",
+    "US-11181"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-10166",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-10168",
+    "US-11181"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (4x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-10170",
+    "US-11181"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-10171",
+    "US-11181"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-10173",
+    "US-11181"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
     "US-10173",
     "US-4484"
    ],
    "why_expected": [
     "activated together by the same call on the same day (6x, POTA history)",
     "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-10173",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-11181",
+    "US-12079"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-11181",
+    "US-12083"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-11181",
+    "US-1257"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (6x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-11181",
+    "US-1264"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-11181",
+    "US-1275"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-11181",
+    "US-1277"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (11x, POTA history)",
+    "hand list (ky-trail-parks.json)",
+    "old guide (Oct 13 Kentucky 2-fers guide)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-11181",
+    "US-1286"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (19x, POTA history)",
+    "hand list (ky-trail-parks.json)",
+    "old guide (Oct 13 Kentucky 2-fers guide)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-11181",
+    "US-1288"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-11181",
+    "US-3782"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-11181",
+    "US-3794"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-11181",
+    "US-3798"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (6x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-11181",
+    "US-3825"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-11181",
+    "US-7708"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (7x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-11181",
+    "US-7963"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-11181",
+    "US-7964"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (6x, POTA history)"
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
@@ -1449,12 +1995,56 @@
   },
   {
    "refs": [
+    "US-1253",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-1254",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (209x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-1255",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
     "US-1256",
     "US-4484"
    ],
    "why_expected": [
     "activated together by the same call on the same day (11x, POTA history)",
     "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-1256",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (7x, POTA history)"
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
@@ -1473,12 +2063,67 @@
   },
   {
    "refs": [
+    "US-1258",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-1259",
+    "US-3791"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-1259",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (4x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-1260",
+    "US-3791"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
     "US-1260",
     "US-3830"
    ],
    "why_expected": [
     "activated together by the same call on the same day (11x, POTA history)",
     "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-1261",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
@@ -1497,12 +2142,100 @@
   },
   {
    "refs": [
+    "US-1263",
+    "US-3791"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-1263",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-1264",
+    "US-3791"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
     "US-1264",
     "US-4484"
    ],
    "why_expected": [
     "activated together by the same call on the same day (12x, POTA history)",
     "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-1265",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-1266",
+    "US-3791"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (13x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-1266",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (4x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-1267",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-1268",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
@@ -1521,12 +2254,56 @@
   },
   {
    "refs": [
+    "US-1269",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-1271",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (10x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
     "US-1272",
     "US-3839"
    ],
    "why_expected": [
     "activated together by the same call on the same day (15x, POTA history)",
-    "outlines come within 86 m of each other"
+    "outlines come within 80 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-1273",
+    "US-3791"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (4x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-1274",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
@@ -1546,13 +2323,24 @@
   {
    "refs": [
     "US-1276",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (6x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-1276",
     "US-4693"
    ],
    "why_expected": [
     "activated together by the same call on the same day (45x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "dropped in pass 3",
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   },
   {
@@ -1576,8 +2364,30 @@
     "activated together by the same call on the same day (48x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "dropped in pass 2",
+   "reason": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
+  },
+  {
+   "refs": [
+    "US-1280",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (7x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-1281",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
   },
   {
    "refs": [
@@ -1587,6 +2397,28 @@
    "why_expected": [
     "activated together by the same call on the same day (37x, POTA history)",
     "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-1283",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-1284",
+    "US-3791"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (11x, POTA history)"
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
@@ -1605,6 +2437,17 @@
   },
   {
    "refs": [
+    "US-1285",
+    "US-3791"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
     "US-1286",
     "US-4484"
    ],
@@ -1612,8 +2455,30 @@
     "activated together by the same call on the same day (47x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "dropped in pass 3",
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
+  },
+  {
+   "refs": [
+    "US-1287",
+    "US-3791"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (6x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-1287",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
   },
   {
    "refs": [
@@ -1624,7 +2489,7 @@
     "activated together by the same call on the same day (60x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "dropped in pass 2",
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   },
   {
@@ -1648,8 +2513,30 @@
     "activated together by the same call on the same day (21x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "dropped in pass 3",
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
+  },
+  {
+   "refs": [
+    "US-1289",
+    "US-3791"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-12971",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
   },
   {
    "refs": [
@@ -1660,8 +2547,52 @@
     "activated together by the same call on the same day (15x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "dropped in pass 3",
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
+  },
+  {
+   "refs": [
+    "US-12972",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-12974",
+    "US-3791"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-12974",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-13598",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
   },
   {
    "refs": [
@@ -1671,6 +2602,17 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)",
     "outlines come within 28 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-13601",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
@@ -1689,12 +2631,58 @@
   },
   {
    "refs": [
+    "US-3779",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (197x, POTA history)",
+    "hand list (ky-trail-parks.json)",
+    "old guide (Oct 13 Kentucky 2-fers guide)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3781",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
     "US-3782",
     "US-4484"
    ],
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)",
     "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3783",
+    "US-3791"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (15x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3785",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
@@ -1713,12 +2701,58 @@
   },
   {
    "refs": [
+    "US-3786",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
     "US-3787",
     "US-4484"
    ],
    "why_expected": [
     "activated together by the same call on the same day (11x, POTA history)",
     "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3787",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3788",
+    "US-3791"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (10x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3788",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (9x, POTA history)",
+    "hand list (ky-trail-parks.json)",
+    "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
@@ -1732,8 +2766,241 @@
     "activated together by the same call on the same day (33x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "dropped in pass 2",
+   "reason": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
+  },
+  {
+   "refs": [
+    "US-3791",
+    "US-3795"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (4x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3791",
+    "US-3796"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)",
+    "old guide (Oct 13 Kentucky 2-fers guide)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3791",
+    "US-3803"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (8x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3791",
+    "US-3806"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3791",
+    "US-3815"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3791",
+    "US-3817"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (3x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3791",
+    "US-3818"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3791",
+    "US-3819"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (7x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3791",
+    "US-3822"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3791",
+    "US-3828"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (6x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3791",
+    "US-3829"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3791",
+    "US-3830"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3791",
+    "US-3834"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3791",
+    "US-4690"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3791",
+    "US-4692"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (6x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3791",
+    "US-7951"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3791",
+    "US-7952"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3791",
+    "US-7957"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3791",
+    "US-7965"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (4x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3791",
+    "US-8144"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3792",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (4x, POTA history)",
+    "old guide (Oct 13 Kentucky 2-fers guide)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
   },
   {
    "refs": [
@@ -1768,8 +3035,19 @@
     "activated together by the same call on the same day (4x, POTA history)",
     "old guide (Oct 13 Kentucky 2-fers guide)"
    ],
-   "reason": "dropped in pass 3",
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
+  },
+  {
+   "refs": [
+    "US-3800",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
   },
   {
    "refs": [
@@ -1785,6 +3063,17 @@
   },
   {
    "refs": [
+    "US-3802",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
     "US-3804",
     "US-3832"
    ],
@@ -1792,8 +3081,52 @@
     "activated together by the same call on the same day (5x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "dropped in pass 3",
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
+  },
+  {
+   "refs": [
+    "US-3805",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (4x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3806",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (4x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3807",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3810",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (17x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
   },
   {
    "refs": [
@@ -1803,6 +3136,17 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)",
     "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3811",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
@@ -1822,14 +3166,36 @@
   {
    "refs": [
     "US-3814",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3814",
     "US-7966"
    ],
    "why_expected": [
     "activated together by the same call on the same day (16x, POTA history)",
-    "outlines about 0 m apart"
+    "outlines come within 14 m of each other"
    ],
-   "reason": "dropped in pass 2",
-   "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3815",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
   },
   {
    "refs": [
@@ -1845,12 +3211,102 @@
   },
   {
    "refs": [
+    "US-3817",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3820",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3822",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3823",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (3x, POTA history)",
+    "hand list (ky-trail-parks.json)",
+    "old guide (Oct 13 Kentucky 2-fers guide)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
     "US-3825",
     "US-4484"
    ],
    "why_expected": [
     "activated together by the same call on the same day (6x, POTA history)",
     "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3825",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3826",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (4x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3828",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3829",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (4x, POTA history)"
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
@@ -1882,13 +3338,24 @@
   {
    "refs": [
     "US-3834",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3834",
     "US-4692"
    ],
    "why_expected": [
     "activated together by the same call on the same day (21x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "dropped in pass 3",
+   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
   },
   {
@@ -1899,6 +3366,39 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)",
     "outlines about 0 m apart"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3836",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-3839",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-4484",
+    "US-4572"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
    ],
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "rule": "rule 4 / rule 5"
@@ -1972,8 +3472,118 @@
     "activated together by the same call on the same day (8x, POTA history)",
     "outlines about 0 m apart"
    ],
-   "reason": "dropped in pass 2",
+   "reason": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "rule": "rule 4 (the shared patch did not hold up on the fresher, finer official outlines)"
+  },
+  {
+   "refs": [
+    "US-4572",
+    "US-4687"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (2x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-4572",
+    "US-4690"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-4572",
+    "US-4692"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-4572",
+    "US-4693"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (4x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-4572",
+    "US-7890"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-4572",
+    "US-7954"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (65x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-4572",
+    "US-7956"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (6x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-4572",
+    "US-7957"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (5x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-4572",
+    "US-7966"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (1x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-4572",
+    "US-9756"
+   ],
+   "why_expected": [
+    "activated together by the same call on the same day (12x, POTA history)"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
   }
  ],
  "NEVER LOOKED AT": [
@@ -1985,7 +3595,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-10102: Pine Mountain State Scenic Trail is a line park: no official trail line yet"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -1995,7 +3605,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-10102: Pine Mountain State Scenic Trail is a line park: no official trail line yet"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2005,7 +3615,7 @@
    "why_expected": [
     "activated together by the same call on the same day (4x, POTA history)"
    ],
-   "reason": "US-11181: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2020,93 +3630,13 @@
   },
   {
    "refs": [
-    "US-0050",
-    "US-3791"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (9x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
-    "US-0050",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (7x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-0295",
-    "US-3791"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (7x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
-    "US-0295",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (2x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-0538",
-    "US-3791"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (8x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
     "US-0538",
     "US-4572"
    ],
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-0724",
-    "US-3791"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (2x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
-    "US-0724",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (5x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-10098",
-    "US-3791"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2116,7 +3646,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-10102: Pine Mountain State Scenic Trail is a line park: no official trail line yet"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2126,7 +3656,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-11181: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2136,18 +3666,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-10102: Pine Mountain State Scenic Trail is a line park: no official trail line yet"
-  },
-  {
-   "refs": [
-    "US-10102",
-    "US-10112",
-    "US-7966"
-   ],
-   "why_expected": [
-    "hand list (ky-trail-parks.json)"
-   ],
-   "reason": "US-10102: Pine Mountain State Scenic Trail is a line park: no official trail line yet"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2157,7 +3676,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-10102: Pine Mountain State Scenic Trail is a line park: no official trail line yet"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2167,7 +3686,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-10102: Pine Mountain State Scenic Trail is a line park: no official trail line yet"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2177,7 +3696,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-10102: Pine Mountain State Scenic Trail is a line park: no official trail line yet"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2187,7 +3706,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-10102: Pine Mountain State Scenic Trail is a line park: no official trail line yet"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2197,7 +3716,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-10102: Pine Mountain State Scenic Trail is a line park: no official trail line yet"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2207,7 +3726,7 @@
    "why_expected": [
     "activated together by the same call on the same day (25x, POTA history)"
    ],
-   "reason": "US-10102: Pine Mountain State Scenic Trail is a line park: no official trail line yet"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2217,7 +3736,7 @@
    "why_expected": [
     "activated together by the same call on the same day (7x, POTA history)"
    ],
-   "reason": "US-10102: Pine Mountain State Scenic Trail is a line park: no official trail line yet"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2227,7 +3746,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-10102: Pine Mountain State Scenic Trail is a line park: no official trail line yet"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2237,7 +3756,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-10102: Pine Mountain State Scenic Trail is a line park: no official trail line yet"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2247,17 +3766,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-10102: Pine Mountain State Scenic Trail is a line park: no official trail line yet"
-  },
-  {
-   "refs": [
-    "US-10102",
-    "US-3814"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (12x, POTA history)"
-   ],
-   "reason": "US-10102: Pine Mountain State Scenic Trail is a line park: no official trail line yet"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2267,7 +3776,7 @@
    "why_expected": [
     "activated together by the same call on the same day (5x, POTA history)"
    ],
-   "reason": "US-10102: Pine Mountain State Scenic Trail is a line park: no official trail line yet"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2277,7 +3786,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-10102: Pine Mountain State Scenic Trail is a line park: no official trail line yet"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2287,7 +3796,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-10102: Pine Mountain State Scenic Trail is a line park: no official trail line yet"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2297,7 +3806,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-10102: Pine Mountain State Scenic Trail is a line park: no official trail line yet"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2307,49 +3816,7 @@
    "why_expected": [
     "activated together by the same call on the same day (5x, POTA history)"
    ],
-   "reason": "US-10102: Pine Mountain State Scenic Trail is a line park: no official trail line yet"
-  },
-  {
-   "refs": [
-    "US-10103",
-    "US-11181",
-    "US-1277"
-   ],
-   "why_expected": [
-    "hand list (ky-trail-parks.json)"
-   ],
-   "reason": "US-11181: no official boundary"
-  },
-  {
-   "refs": [
-    "US-10103",
-    "US-11181",
-    "US-4484"
-   ],
-   "why_expected": [
-    "hand list (ky-trail-parks.json)"
-   ],
-   "reason": "US-11181: no official boundary"
-  },
-  {
-   "refs": [
-    "US-10104",
-    "US-11181"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (6x, POTA history)"
-   ],
-   "reason": "US-11181: no official boundary"
-  },
-  {
-   "refs": [
-    "US-10104",
-    "US-3791"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2359,37 +3826,7 @@
    "why_expected": [
     "activated together by the same call on the same day (4x, POTA history)"
    ],
-   "reason": "US-11181: no official boundary"
-  },
-  {
-   "refs": [
-    "US-10105",
-    "US-3791"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (8x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
-    "US-10105",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (6x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-10106",
-    "US-11181"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (6x, POTA history)"
-   ],
-   "reason": "US-11181: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2420,79 +3857,19 @@
    ],
    "why_expected": [
     "activated together by the same call on the same day (8x, POTA history)",
-    "outlines about 186 m apart"
+    "outlines about 177 m apart"
    ],
    "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
-    "US-10128",
-    "US-3791"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (3x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
-    "US-10137",
-    "US-3791"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
-    "US-10137",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (2x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-10141",
-    "US-11181"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-11181: no official boundary"
-  },
-  {
-   "refs": [
-    "US-10145",
-    "US-11181"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (3x, POTA history)"
-   ],
-   "reason": "US-11181: no official boundary"
-  },
-  {
-   "refs": [
     "US-10153",
     "US-11181"
    ],
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-11181: no official boundary"
-  },
-  {
-   "refs": [
-    "US-10153",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2502,57 +3879,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-11181: no official boundary"
-  },
-  {
-   "refs": [
-    "US-10157",
-    "US-11181"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (6x, POTA history)"
-   ],
-   "reason": "US-11181: no official boundary"
-  },
-  {
-   "refs": [
-    "US-10160",
-    "US-11181"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (7x, POTA history)"
-   ],
-   "reason": "US-11181: no official boundary"
-  },
-  {
-   "refs": [
-    "US-10161",
-    "US-3791"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
-    "US-10161",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (4x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-10162",
-    "US-11181"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (2x, POTA history)"
-   ],
-   "reason": "US-11181: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2563,16 +3890,6 @@
     "activated together by the same call on the same day (1x, POTA history)"
    ],
    "reason": "US-10172: no official boundary"
-  },
-  {
-   "refs": [
-    "US-10166",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (2x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
   },
   {
    "refs": [
@@ -2582,7 +3899,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-11181: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -2593,16 +3910,6 @@
     "activated together by the same call on the same day (2x, POTA history)"
    ],
    "reason": "US-10172: no official boundary"
-  },
-  {
-   "refs": [
-    "US-10168",
-    "US-11181"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (4x, POTA history)"
-   ],
-   "reason": "US-11181: no official boundary"
   },
   {
    "refs": [
@@ -2614,26 +3921,6 @@
     "outlines about 320 m apart"
    ],
    "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
-  },
-  {
-   "refs": [
-    "US-10170",
-    "US-11181"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (5x, POTA history)"
-   ],
-   "reason": "US-11181: no official boundary"
-  },
-  {
-   "refs": [
-    "US-10171",
-    "US-11181"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (2x, POTA history)"
-   ],
-   "reason": "US-11181: no official boundary"
   },
   {
    "refs": [
@@ -2943,7 +4230,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-10172: no official boundary; US-4572: no official boundary"
+   "reason": "US-10172: no official boundary"
   },
   {
    "refs": [
@@ -3017,53 +4304,13 @@
   },
   {
    "refs": [
-    "US-10173",
-    "US-11181"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-11181: no official boundary"
-  },
-  {
-   "refs": [
-    "US-10173",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (2x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
     "US-11181",
     "US-11274"
    ],
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-11181: no official boundary"
-  },
-  {
-   "refs": [
-    "US-11181",
-    "US-12079"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (2x, POTA history)"
-   ],
-   "reason": "US-11181: no official boundary"
-  },
-  {
-   "refs": [
-    "US-11181",
-    "US-12083"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-11181: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3073,7 +4320,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-11181: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3083,17 +4330,7 @@
    "why_expected": [
     "activated together by the same call on the same day (4x, POTA history)"
    ],
-   "reason": "US-11181: no official boundary"
-  },
-  {
-   "refs": [
-    "US-11181",
-    "US-1257"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (6x, POTA history)"
-   ],
-   "reason": "US-11181: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3103,7 +4340,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-11181: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3113,17 +4350,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-11181: no official boundary"
-  },
-  {
-   "refs": [
-    "US-11181",
-    "US-1264"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (5x, POTA history)"
-   ],
-   "reason": "US-11181: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3133,7 +4360,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-11181: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3143,7 +4370,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-11181: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3153,17 +4380,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-11181: no official boundary"
-  },
-  {
-   "refs": [
-    "US-11181",
-    "US-1275"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (2x, POTA history)"
-   ],
-   "reason": "US-11181: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3173,19 +4390,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-11181: no official boundary"
-  },
-  {
-   "refs": [
-    "US-11181",
-    "US-1277"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (11x, POTA history)",
-    "hand list (ky-trail-parks.json)",
-    "old guide (Oct 13 Kentucky 2-fers guide)"
-   ],
-   "reason": "US-11181: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3195,7 +4400,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-11181: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3205,59 +4410,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-11181: no official boundary"
-  },
-  {
-   "refs": [
-    "US-11181",
-    "US-1286"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (19x, POTA history)",
-    "hand list (ky-trail-parks.json)",
-    "old guide (Oct 13 Kentucky 2-fers guide)"
-   ],
-   "reason": "US-11181: no official boundary"
-  },
-  {
-   "refs": [
-    "US-11181",
-    "US-1288"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-11181: no official boundary"
-  },
-  {
-   "refs": [
-    "US-11181",
-    "US-3782"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (2x, POTA history)"
-   ],
-   "reason": "US-11181: no official boundary"
-  },
-  {
-   "refs": [
-    "US-11181",
-    "US-3794"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (5x, POTA history)"
-   ],
-   "reason": "US-11181: no official boundary"
-  },
-  {
-   "refs": [
-    "US-11181",
-    "US-3798"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (6x, POTA history)"
-   ],
-   "reason": "US-11181: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3267,17 +4420,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-11181: no official boundary"
-  },
-  {
-   "refs": [
-    "US-11181",
-    "US-3825"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (2x, POTA history)"
-   ],
-   "reason": "US-11181: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3287,7 +4430,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-11181: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3297,7 +4440,7 @@
    "why_expected": [
     "activated together by the same call on the same day (3x, POTA history)"
    ],
-   "reason": "US-11181: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3307,17 +4450,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-11181: no official boundary"
-  },
-  {
-   "refs": [
-    "US-11181",
-    "US-7708"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (7x, POTA history)"
-   ],
-   "reason": "US-11181: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3327,7 +4460,7 @@
    "why_expected": [
     "activated together by the same call on the same day (4x, POTA history)"
    ],
-   "reason": "US-11181: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3337,27 +4470,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-11181: no official boundary"
-  },
-  {
-   "refs": [
-    "US-11181",
-    "US-7963"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (2x, POTA history)"
-   ],
-   "reason": "US-11181: no official boundary"
-  },
-  {
-   "refs": [
-    "US-11181",
-    "US-7964"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (6x, POTA history)"
-   ],
-   "reason": "US-11181: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3389,207 +4502,7 @@
    "why_expected": [
     "activated together by the same call on the same day (9x, POTA history)"
    ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-1253",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (2x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-1254",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (209x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-1255",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-1256",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (7x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-1258",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (3x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-1259",
-    "US-3791"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
-    "US-1259",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (4x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-1260",
-    "US-3791"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (5x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
-    "US-1261",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-1263",
-    "US-3791"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (3x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
-    "US-1263",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-1264",
-    "US-3791"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
-    "US-1265",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (2x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-1266",
-    "US-3791"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (13x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
-    "US-1266",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (4x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-1267",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (5x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-1268",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (2x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-1269",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (3x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-1271",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (10x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-1273",
-    "US-3791"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (4x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3599,27 +4512,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-1274",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-1276",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (6x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3629,27 +4522,7 @@
    "why_expected": [
     "activated together by the same call on the same day (5x, POTA history)"
    ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-1280",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (7x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-1281",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3659,27 +4532,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-1283",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (5x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-1284",
-    "US-3791"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (11x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3689,17 +4542,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-1285",
-    "US-3791"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -3709,312 +4552,7 @@
    "why_expected": [
     "activated together by the same call on the same day (4x, POTA history)"
    ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-1287",
-    "US-3791"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (6x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
-    "US-1287",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-1289",
-    "US-3791"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
-    "US-12971",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-12972",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-12974",
-    "US-3791"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
-    "US-12974",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-13598",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-13601",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3779",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (197x, POTA history)",
-    "hand list (ky-trail-parks.json)",
-    "old guide (Oct 13 Kentucky 2-fers guide)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3781",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3783",
-    "US-3791"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (15x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3785",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3786",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (2x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3787",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3788",
-    "US-3791"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (10x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3788",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (9x, POTA history)",
-    "hand list (ky-trail-parks.json)",
-    "old guide (Oct 13 Kentucky 2-fers guide)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3791",
-    "US-3795"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (4x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3791",
-    "US-3796"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (2x, POTA history)",
-    "old guide (Oct 13 Kentucky 2-fers guide)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3791",
-    "US-3803"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (8x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3791",
-    "US-3806"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3791",
-    "US-3815"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3791",
-    "US-3817"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (3x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3791",
-    "US-3818"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (5x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3791",
-    "US-3819"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (7x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3791",
-    "US-3822"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3791",
-    "US-3828"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (6x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3791",
-    "US-3829"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3791",
-    "US-3830"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3791",
-    "US-3834"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (5x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4024,108 +4562,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3791",
-    "US-4690"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3791",
-    "US-4692"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (6x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3791",
-    "US-7951"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3791",
-    "US-7952"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3791",
-    "US-7957"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (5x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3791",
-    "US-7965"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (4x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3791",
-    "US-8144"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-3791: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3792",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (4x, POTA history)",
-    "old guide (Oct 13 Kentucky 2-fers guide)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3800",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3802",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4146,37 +4583,7 @@
    "why_expected": [
     "activated together by the same call on the same day (6x, POTA history)"
    ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3805",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (4x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3806",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (4x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3807",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4185,7 +4592,7 @@
    ],
    "why_expected": [
     "activated together by the same call on the same day (12x, POTA history)",
-    "outlines about 143 m apart"
+    "outlines about 154 m apart"
    ],
    "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
@@ -4197,7 +4604,7 @@
    "why_expected": [
     "activated together by the same call on the same day (6x, POTA history)"
    ],
-   "reason": "US-4572: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4212,63 +4619,13 @@
   },
   {
    "refs": [
-    "US-3810",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (17x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3811",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3814",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3815",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (5x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3817",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (5x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
     "US-3819",
     "US-4572"
    ],
    "why_expected": [
     "activated together by the same call on the same day (5x, POTA history)"
    ],
-   "reason": "US-4572: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4283,85 +4640,13 @@
   },
   {
    "refs": [
-    "US-3820",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3822",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (2x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3823",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (3x, POTA history)",
-    "hand list (ky-trail-parks.json)",
-    "old guide (Oct 13 Kentucky 2-fers guide)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3825",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3826",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (4x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
     "US-3827",
     "US-4572"
    ],
    "why_expected": [
     "activated together by the same call on the same day (4x, POTA history)"
    ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3828",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3829",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (4x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4371,27 +4656,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3834",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3836",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (2x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4412,37 +4677,7 @@
    "why_expected": [
     "activated together by the same call on the same day (9x, POTA history)"
    ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-3839",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-4484",
-    "US-4572"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (2x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-4572",
-    "US-4687"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (2x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4452,47 +4687,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-4572",
-    "US-4690"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (5x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-4572",
-    "US-4692"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-4572",
-    "US-4693"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (4x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-4572",
-    "US-7890"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4502,37 +4697,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-4572",
-    "US-7954"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (65x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-4572",
-    "US-7956"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (6x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-4572",
-    "US-7957"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (5x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4542,17 +4707,7 @@
    "why_expected": [
     "activated together by the same call on the same day (2x, POTA history)"
    ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-4572",
-    "US-7966"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4562,7 +4717,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4572,17 +4727,7 @@
    "why_expected": [
     "activated together by the same call on the same day (1x, POTA history)"
    ],
-   "reason": "US-4572: no official boundary"
-  },
-  {
-   "refs": [
-    "US-4572",
-    "US-9756"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (12x, POTA history)"
-   ],
-   "reason": "US-4572: no official boundary"
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
   {
    "refs": [
@@ -4591,7 +4736,7 @@
    ],
    "why_expected": [
     "activated together by the same call on the same day (13x, POTA history)",
-    "outlines about 249 m apart"
+    "outlines about 258 m apart"
    ],
    "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
   },
