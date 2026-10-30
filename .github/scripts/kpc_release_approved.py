@@ -59,7 +59,10 @@ def main():
     A = W.load(W.W / 'approved.json', {}) or {}
     items = A.get('items') or []
     log = []
+    U = W.load(W.W / 'approved-used.json', {}) or {}   # Oct 29 11:25 PM (nightly timer): a YES is used ONCE, so an old YES never lets out a LATER rebuild
     for it in items:
+        key = json.dumps(it, sort_keys=True, ensure_ascii=False)
+        if key in U: continue
         v = str(it.get('chat11') or '').strip()
         if not (re.match(r'^(YES|PASS)\b', v, re.I) and str(it.get('by') or '').strip().lower() == 'chat 11'):   # Brandon 5:16 PM: 'Waiting Room 11 has to approve': only chat 11's own written YES / PASS
             log.append({'item': it, 'result': 'skipped: no YES / PASS written by chat 11'}); continue
@@ -83,6 +86,20 @@ def main():
                 if not DRY: W.mode_release(rel)
                 log.append({'item': rel, 'result': 'released (approved)'})
             else: log.append({'item': rel, 'result': 'nothing waiting there'})
+    if not DRY:
+        for it in items:
+            k = json.dumps(it, sort_keys=True, ensure_ascii=False)
+            if k not in U and any(l.get('item') == it.get('what') or (it.get('path') and str(l.get('item', '')).startswith(str(it['path']).replace('data/waiting/in/', '').rstrip('/'))) for l in log if 'result' not in l or l['result'].startswith('released')):
+                U[k] = time.strftime('%Y-%m-%dT%H:%MZ', time.gmtime())
+        json.dump(U, open(W.W / 'approved-used.json', 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
+        keys = sorted({str(l['item']) for l in log if str(l.get('result', '')).startswith('released') and re.match(r'^data/(us|ca)-key/', str(l.get('item', '')))})
+        if keys:   # chat 2 BOT E (11:20 PM): which states' outlines just went live, so the 2-fers rerun only there
+            sha = os.popen(f'git -C "{W.DATA}" rev-parse HEAD 2>/dev/null').read().strip()
+            sts = sorted({m.group(1) for k in keys for m in [re.search(r'/((?:US|CA)-[A-Z]{2})\.json', k)] if m})
+            json.dump({'date': time.strftime('%Y-%m-%dT%H:%MZ', time.gmtime()), 'sha_before': sha, 'files': keys, 'states': sts,
+                       'previous': 'data/waiting/previous/ (the live copies just replaced)'}, open(W.W / 'released-key.json', 'w', encoding='utf-8'), indent=1)
+            open('/tmp/kpc-key-released', 'w').write(' '.join(sts))
+            print(f'::notice title=Release approved::key released for {len(sts)} areas: data/waiting/released-key.json written for the 2-fer rerun')
     if not DRY and any(l.get('item') == 'keyed-parking' for l in log):
         os.environ['WAITING_ON'] = '1'; os.environ['PROMOTE_KINDS'] = 'access'; W.mode_check(True)   # the keyed files pass the same checks as any bot file
     with open(W.W / 'released.jsonl', 'a', encoding='utf-8') as fh:

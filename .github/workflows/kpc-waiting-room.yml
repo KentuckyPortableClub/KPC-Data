@@ -1,4 +1,4 @@
-name: KPC waiting room (by hand only; NOT switched on)
+name: KPC waiting room (by hand; nightly release-approved)
 # Oct 28 2026 night (chat 10, Opus): RULE SHEET F (KPC-Links .claude/notes/mapping.md). The checker that looks at every CHANGED
 # data file before it goes live: kpc_waiting_room.py. NO SCHEDULE and no bot writes to data/waiting/in/ yet: Brandon's GO switches
 # it on, bot by bot. Promotion also needs the repo variable WAITING_ON=1 (Settings -> Secrets and variables -> Actions -> Variables).
@@ -6,6 +6,8 @@ name: KPC waiting room (by hand only; NOT switched on)
 # data/waiting/in/) · undo (one file) · undo-bot (one bot, optionally one area) · release (a person approved a held file).
 # Never goes red (EMAIL rule): every step continues on error; the only save is data/waiting + data/status.
 on:
+  schedule:
+    - cron: '13 11 * * *'   # Oct 29 11:25 PM (chat 2 BOT D, Brandon 11:18 PM 'build it!'): nightly release-approved, after the 10:41 UTC daily copy
   workflow_dispatch:
     inputs:
       mode:
@@ -19,6 +21,7 @@ on:
         default: ''
 permissions:
   contents: write
+  actions: write
 concurrency:
   group: kpc-waiting-room
   cancel-in-progress: false
@@ -46,7 +49,7 @@ jobs:
           WAITING_ON: ${{ vars.WAITING_ON }}
         run: |
           cd kpcdata
-          M="${{ inputs.mode }}"
+          M="${{ inputs.mode || 'release-approved' }}"
           case "$M" in
             replay) python3 .github/scripts/kpc_waiting_room.py replay ;;
             check) python3 .github/scripts/kpc_waiting_room.py check --promote ;;
@@ -62,5 +65,14 @@ jobs:
         run: |
           cd kpcdata
           D="data/waiting data/status"
-          if [ "${{ inputs.mode }}" != replay ]; then D="data"; fi
-          bash ../links/.github/scripts/kpc_push_data.sh . "waiting room: ${{ inputs.mode }} ${{ inputs.target }}" $D || true
+          if [ "${{ inputs.mode || 'release-approved' }}" != replay ]; then D="data"; fi
+          bash ../links/.github/scripts/kpc_push_data.sh . "waiting room: ${{ inputs.mode || 'release-approved (nightly)' }} ${{ inputs.target }}" $D || true
+      - name: A key went live -> the 2-fers rerun for those states (chat 2 BOT E reads data/waiting/released-key.json)
+        if: always()
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          [ -f /tmp/kpc-key-released ] || exit 0
+          gh api -X POST repos/${{ github.repository }}/actions/workflows/kpc-fers-pending.yml/dispatches -f ref=main -f 'inputs[force]=yes' || true
+          echo "::notice title=Waiting room::2-fer rerun started for $(cat /tmp/kpc-key-released)"
