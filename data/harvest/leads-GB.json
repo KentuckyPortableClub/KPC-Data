@@ -1,28 +1,28 @@
 {
  "about": "World harvester leads for United Kingdom (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "GB",
- "date": "2026-10-28",
- "status": "done",
- "steps_done": [
-  "known",
-  "servers",
-  "wfs",
-  "orgs",
-  "catalogs",
-  "downloads",
-  "search",
-  "eea"
- ],
+ "date": "2026-10-30",
+ "status": "paused (out of time, will carry on)",
+ "steps_done": [],
  "bands": {
   "A": 162,
   "B": 66,
   "C": 72
  },
+ "failures": [],
+ "rejected_orgs": [],
  "known_good_found": [
   "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/ArcGIS/rest/services/Core_Data_Non_WMS/FeatureServer/50",
   "https://services.arcgis.com/JJzESW51TqeY9uat/ArcGIS/rest/services/National_Trails_England/FeatureServer"
  ],
  "known_good_missed": [],
+ "known_log": [
+  {
+   "step": "known",
+   "what": "https://services-eu1.arcgis.com/0zuv5ZFEncBv7NQQ/ArcGIS/rest/services/Core_Data_Non_WMS/FeatureServer/50",
+   "found": true
+  }
+ ],
  "leads": {
   "https://services.arcgis.com/jjzesw51tqey9uat/arcgis/rest/services/ancient_woodland_england": {
    "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Ancient_Woodland_England/FeatureServer",
@@ -9826,11 +9826,42 @@
      "name_field": "Name"
     },
     {
+     "id": 135,
+     "name": "ProtectedWrecks_ENG_HistoricEngland",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "ListEntry",
+      "Name",
+      "DesigDate",
+      "LegacyUID",
+      "SInumber",
+      "AmendDate",
+      "Latitude",
+      "Longitude",
+      "Easting",
+      "Northing",
+      "AREA_HA",
+      "Hyperlink",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 57,
+     "sample": [
+      "HMS/m A1",
+      "YARMOUTH ROADS",
+      "STUDLAND BAY WRECK"
+     ],
+     "name_field": "Name"
+    },
+    {
      "id": 136,
      "name": "ProtectedWrecks_WALES_Cadw",
      "geom": "Polygon",
      "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
+     "is": "known-good layer (chat 8)",
      "fields": [
       "OBJECTID",
       "RecordNumb",
@@ -9862,7 +9893,7 @@
      "name": "ConclusiveRegisteredCommonLand_ENG_NaturalEngland",
      "geom": "Polygon",
      "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
+     "is": "known-good layer (chat 8)",
      "fields": [
       "OBJECTID_1",
       "OBJECTID",
@@ -9895,7 +9926,7 @@
      "name": "ConservationAreas_WALES_WelshGov",
      "geom": "Polygon",
      "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
+     "is": "known-good layer (chat 8)",
      "fields": [
       "OBJECTID",
       "localplann",
@@ -9922,7 +9953,7 @@
      "name": "CountryParks_WALES_NRW",
      "geom": "Polygon",
      "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
+     "is": "known-good layer (chat 8)",
      "fields": [
       "OBJECTID",
       "Name",
@@ -9955,7 +9986,7 @@
      "name": "NationalParks_WALES_NRW",
      "geom": "Polygon",
      "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
+     "is": "known-good layer (chat 8)",
      "fields": [
       "OBJECTID_1",
       "OBJECTID",
@@ -9986,7 +10017,7 @@
      "name": "NationalScenicAreas_SCOT_ScotGov",
      "geom": "Polygon",
      "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
+     "is": "known-good layer (chat 8)",
      "fields": [
       "OBJECTID",
       "FIRST_NAME",
@@ -10015,7 +10046,7 @@
      "name": "NatureReservesSNH_SCOT_NatureScot",
      "geom": "Polygon",
      "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
+     "is": "known-good layer (chat 8)",
      "fields": [
       "OBJECTID",
       "NAME",
@@ -10069,7 +10100,7 @@
      "name": "NTLandLimitedAccess_ENGWALES_NationalTrust",
      "geom": "Polygon",
      "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
+     "is": "known-good layer (chat 8)",
      "fields": [
       "OBJECTID_1",
       "OBJECTID",
@@ -10092,71 +10123,37 @@
      "name_field": "Name"
     },
     {
-     "id": 54,
-     "name": "RSPBReserveBoundaries_UK_RSPB",
+     "id": 53,
+     "name": "RegisteredHistoricParksAndGardens_WALES_Cadw",
      "geom": "Polygon",
      "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
+     "is": "known-good layer (chat 8)",
      "fields": [
-      "OBJECTID_1",
       "OBJECTID",
-      "FeatureId",
-      "Name",
-      "Sensitive",
-      "Type",
-      "Access",
-      "LastUpdate",
-      "GlobalID",
-      "SHAPE_Leng",
-      "Shape_Le_1",
-      "OBJECTID_12",
-      "Shape_Le_2",
+      "reference_",
+      "site_name_",
+      "site_name0",
+      "designatio",
+      "main_phase",
+      "main_phas0",
+      "site_type_",
+      "site_type0",
+      "la_en",
+      "la_cy",
+      "community",
+      "report_en",
+      "report_cy",
+      "grade_grad",
       "Shape__Area",
       "Shape__Length"
      ],
-     "records": 99,
+     "records": 384,
      "sample": [
-      "NORTH WARREN",
-      "YNYS-HIR",
-      "VALLEY WETLANDS"
+      "Brynkinalt",
+      "Tredegar Park",
+      "Mostyn Hall"
      ],
-     "name_field": "Name"
-    },
-    {
-     "id": 62,
-     "name": "SSSI_WALES_NRW",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
-     "fields": [
-      "OBJECTID_1",
-      "OBJECTID",
-      "SSSI_Name",
-      "SSSI_ID",
-      "SSSI_Code",
-      "First_Noti",
-      "Last_Notif",
-      "Confirmed",
-      "Last_Edite",
-      "Registered",
-      "Cartesian_",
-      "Spherical_",
-      "Centre_X",
-      "Centre_Y",
-      "OSMM_Date",
-      "Type",
-      "Status",
-      "OBJECTID_12",
-      "Shape_Leng",
-      "Shape__Area"
-     ],
-     "records": 1080,
-     "sample": [
-      "Cwrt y Bela a Springdale",
-      "Twyni Chwitffordd, Morfa Landimor a Bae Brychdwn /",
-      "Dinas Bran"
-     ],
-     "name_field": "SSSI_Name"
+     "name_field": "site_name_"
     }
    ],
    "note": "known-good layer 50",

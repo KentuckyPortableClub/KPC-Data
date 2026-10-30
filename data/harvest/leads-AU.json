@@ -1,23 +1,24 @@
 {
  "about": "World harvester leads for Australia (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "AU",
- "date": "2026-10-28",
- "status": "done",
+ "date": "2026-10-30",
+ "status": "paused (out of time, will carry on)",
  "steps_done": [
-  "orgs",
-  "known",
-  "servers",
-  "wfs",
-  "catalogs",
-  "downloads",
-  "search",
-  "eea"
+  "known"
  ],
  "bands": {
   "A": 46,
   "B": 11,
   "C": 0
  },
+ "failures": [
+  {
+   "step": "known",
+   "what": "https://gisext.qfes.qld.gov.au/arcgis/rest/services/Hosted/Protected_areas/FeatureServer/0",
+   "error": "no answer three times: left alone for a day"
+  }
+ ],
+ "rejected_orgs": [],
  "known_good_found": [
   "https://opendata.maps.vic.gov.au/geoserver/wfs",
   "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Property_and_Planning/MapServer/15",
@@ -26,6 +27,37 @@
  ],
  "known_good_missed": [
   "https://gisext.qfes.qld.gov.au/arcgis/rest/services/Hosted/Protected_areas/FeatureServer/0"
+ ],
+ "known_log": [
+  {
+   "step": "known",
+   "what": "https://gisext.qfes.qld.gov.au/arcgis/rest/services/Hosted/Protected_areas/FeatureServer/0",
+   "error": "no answer three times: left alone for a day"
+  },
+  {
+   "step": "known",
+   "what": "https://opendata.maps.vic.gov.au/geoserver/wfs: 300 feature types, 300 look like park layers"
+  },
+  {
+   "step": "known",
+   "what": "https://opendata.maps.vic.gov.au/geoserver/wfs",
+   "found": true
+  },
+  {
+   "step": "known",
+   "what": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Property_and_Planning/MapServer/15",
+   "found": false
+  },
+  {
+   "step": "known",
+   "what": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/ArcGIS/rest/services/Protected_areas/FeatureServer",
+   "found": true
+  },
+  {
+   "step": "known",
+   "what": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer/26",
+   "found": true
+  }
  ],
  "leads": {
   "https://services9.arcgis.com/epcawupcswtfb9jl/arcgis/rest/services/niaa_administrative_boundaries_2020": {
@@ -709,148 +741,6 @@
       "st_perimeter(shape)"
      ],
      "records": 148
-    }
-   ],
-   "note": "",
-   "grade": 5,
-   "band": "A"
-  },
-  "https://public-services.slip.wa.gov.au/public/rest/services/landgate_public_maps/marine_map_wa_3": {
-   "url": "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer",
-   "cc": "AU",
-   "title": "Landgate_Public_Maps/Marine_Map_WA_3",
-   "publisher": "public-services.slip.wa.gov.au",
-   "catalog": "agency server public-services.slip.wa.gov.au",
-   "licence": "WALIS",
-   "date": "",
-   "found": "2026-10-28",
-   "gaps": [
-    "outline"
-   ],
-   "layers": [
-    {
-     "id": 15,
-     "name": "Local Government Authority (LGA) Boundaries (LGATE-233)",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
-     "fields": [
-      "objectid",
-      "boundary_id",
-      "type_code",
-      "type_description",
-      "feature_number",
-      "name",
-      "abs_lga_number",
-      "postcode",
-      "land_area",
-      "area_derivation",
-      "shape",
-      "st_perimeter(shape)"
-     ],
-     "records": 139,
-     "sample": [
-      "COOROW, SHIRE OF",
-      "KONDININ, SHIRE OF",
-      "SHARK BAY, SHIRE OF"
-     ],
-     "name_field": "name"
-    },
-    {
-     "id": 28,
-     "name": "Primary Sediment Cell Boundary (DOT-010)",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
-     "fields": [
-      "objectid",
-      "sediment_cell_id",
-      "cell_type",
-      "cell_name",
-      "coastal_region",
-      "offshore_boundary",
-      "onshore_boundary",
-      "from_point",
-      "to_point",
-      "shape",
-      "fr_alongshore_bndry_marine_sect",
-      "fr_alongshore_bndry_terrl_sect",
-      "to_alongshore_bndry_marine_sect",
-      "to_alongshore_bndry_terrl_sect",
-      "st_perimeter(shape)"
-     ],
-     "records": 23,
-     "sample": [
-      "Bluff Point to Nunginjay Spring Coast N",
-      "Whale Boat Cove to Bluff Point",
-      "Glenfield to Whale Boat Cove"
-     ],
-     "name_field": "cell_name"
-    },
-    {
-     "id": 29,
-     "name": "Secondary Sediment Cell Boundary (DOT-011)",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
-     "fields": [
-      "objectid",
-      "shape",
-      "sediment_cell_id",
-      "sediment_cell_boundary_id",
-      "cell_type",
-      "cell_name",
-      "coastal_region",
-      "offshore_boundary",
-      "onshore_boundary",
-      "from_point",
-      "to_point",
-      "fr_alongshore_bndry_marine_sect",
-      "fr_alongshore_bndry_terrl_sect",
-      "to_alongshore_bndry_marine_sect",
-      "to_alongshore_bndry_terrl_sect",
-      "area_km",
-      "st_perimeter(shape)"
-     ],
-     "records": 73,
-     "sample": [
-      "Moore River to Ledge",
-      "Cliff Head to Leander Point",
-      "Fisherman Islands to South Illawong"
-     ],
-     "name_field": "cell_name"
-    },
-    {
-     "id": 30,
-     "name": "Tertiary Sediment Cell Boundary (DOT-012)",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
-     "fields": [
-      "objectid",
-      "shape",
-      "sediment_cell_id",
-      "sediment_cell_boundary_id",
-      "cell_type",
-      "cell_name",
-      "coastal_region",
-      "offshore_boundary",
-      "onshore_boundary",
-      "from_point",
-      "to_point",
-      "fr_alongshore_bndry_marine_sect",
-      "fr_alongshore_bndry_terrl_sect",
-      "to_alongshore_bndry_marine_sect",
-      "to_alongshore_bndry_terrl_sect",
-      "st_perimeter(shape)"
-     ],
-     "records": 80,
-     "sample": [
-      "Point Daking to Point Templar",
-      "Seal Island to Bird Island",
-      "Safety Bay to Mersey Point"
-     ],
-     "name_field": "cell_name"
     }
    ],
    "note": "",
@@ -2654,7 +2544,7 @@
       "SHAPE.AREA",
       "SHAPE.LEN"
      ],
-     "records": 46957,
+     "records": 46955,
      "sample": [
       "None",
       "None",
@@ -2667,7 +2557,7 @@
      "name": "LIST Local Government Reserves",
      "geom": "Polygon",
      "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
+     "is": "known-good layer (chat 8)",
      "fields": [
       "OBJECTID",
       "CID",
@@ -2696,7 +2586,7 @@
      "name": "LIST Marine Nature Reserves",
      "geom": "Polygon",
      "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
+     "is": "known-good layer (chat 8)",
      "fields": [
       "OBJECTID",
       "CID",
@@ -2732,7 +2622,7 @@
      "name": "LIST Private Reserves",
      "geom": "Polygon",
      "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
+     "is": "known-good layer (chat 8)",
      "fields": [
       "OBJECTID",
       "CID",
@@ -2768,7 +2658,7 @@
      "name": "LIST Ramsar Wetlands",
      "geom": "Polygon",
      "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
+     "is": "known-good layer (chat 8)",
      "fields": [
       "OBJECTID",
       "CID",
@@ -2797,220 +2687,193 @@
      "name_field": "NAME"
     },
     {
-     "id": 22,
-     "name": "LIST Hydrographic Areas",
+     "id": 0,
+     "name": "Climate Futures Tasmania - Scenario A2",
      "geom": "Polygon",
-     "gap": "area",
-     "is": "named area polygons (no park word: never band A)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
      "fields": [
       "OBJECTID",
-      "HYDAREA_ID",
-      "HYDARTY1",
-      "HYDARTY2",
-      "NAME",
-      "NOM_REG_NO",
-      "SEC_NAME",
-      "SEC_NOMREG",
-      "TER_NAME",
-      "TER_NOMREG",
-      "HYD_CLASS",
-      "PERENNIAL",
-      "EXISTING",
-      "WC_BED_TY",
-      "RELGRND",
-      "INUSE",
-      "ISLANDTYPE",
-      "ELEVATION",
-      "COMP_AREA",
-      "UFI"
+      "ID",
+      "PE_A2_1",
+      "PE_A2_2",
+      "PE_A2_3",
+      "RF_A2_1",
+      "RF_A2_2",
+      "RF_A2_3",
+      "RH_A2_1",
+      "RH_A2_2",
+      "RH_A2_3",
+      "TM_A2_1",
+      "TM_A2_2",
+      "TM_A2_3",
+      "FROM_A2_0",
+      "FROM_A2_1",
+      "FROM_A2_2",
+      "FROM_A2_3",
+      "SPIM_A2_1",
+      "SPIM_A2_2"
      ],
-     "records": 237938,
-     "sample": [
-      "None",
-      "Ormley Creek",
-      "None"
-     ],
-     "name_field": "NAME"
+     "records": 721
     },
     {
-     "id": 44,
-     "name": "LIST Water Management Areas",
+     "id": 1,
+     "name": "Climate Futures Tasmania - Scenario B1",
      "geom": "Polygon",
-     "gap": "area",
-     "is": "named area polygons (no park word: never band A)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
      "fields": [
       "OBJECTID",
-      "PROC_PLAN",
-      "REGION_NO",
-      "INDEX_PLAN",
-      "CATCH_NO",
-      "CATCH_NAME",
       "ID",
+      "PE_B1_1",
+      "PE_B1_2",
+      "PE_B1_3",
+      "RF_B1_1",
+      "RF_B1_2",
+      "RF_B1_3",
+      "RH_B1_1",
+      "RH_B1_2",
+      "RH_B1_3",
+      "TM_B1_1",
+      "TM_B1_2",
+      "TM_B1_3",
       "SHAPE_FID",
       "LIST_GUID",
       "SHAPE",
       "SHAPE.AREA",
       "SHAPE.LEN"
      ],
-     "records": 206,
-     "sample": [
-      "Furneaux Islands",
-      "Furneaux Islands",
-      "Furneaux Islands"
-     ],
-     "name_field": "CATCH_NAME"
+     "records": 721
     },
     {
-     "id": 53,
-     "name": "LIST Water Management Plan Areas",
-     "geom": "Polygon",
-     "gap": "area",
-     "is": "named area polygons (no park word: never band A)",
-     "fields": [
-      "OBJECTID",
-      "AREA_ID",
-      "PLAN_NAME",
-      "SHORT_NAME",
-      "AREA_TYPE",
-      "STATUS",
-      "DRAFT_PLAN",
-      "ADOPTED",
-      "EFFECTIVE",
-      "SHAPE"
-     ],
-     "records": 12,
-     "sample": [
-      "Ansons River Catchment Water Management Plan",
-      "Lakes Sorell and Crescent Water Management Plan",
-      "River Clyde Catchment Water Management Plan (Septe"
-     ],
-     "name_field": "PLAN_NAME"
-    },
-    {
-     "id": 14,
-     "name": "LIST Cadastral Parcels",
+     "id": 2,
+     "name": "Interim Planning Scheme - Overlays",
      "geom": "Polygon",
      "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
+     "is": "known-good layer (chat 8)",
      "fields": [
       "OBJECTID",
-      "CID",
-      "VOLUME",
-      "FOLIO",
-      "PID",
-      "POT_PID",
-      "LPI",
-      "CAD_TYPE1",
-      "CAD_TYPE2",
-      "TENURE_TY",
-      "FEAT_NAME",
-      "STRATA_LEV",
-      "COMP_AREA",
-      "MEAS_AREA",
-      "UFI",
-      "SHAPE"
-     ],
-     "records": 439963,
-     "sample": [
-      "None",
-      "None",
-      "None"
-     ],
-     "name_field": "FEAT_NAME"
-    },
-    {
-     "id": 22,
-     "name": "LIST Hydrographic Areas",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
-     "fields": [
-      "OBJECTID",
-      "HYDAREA_ID",
-      "HYDARTY1",
-      "HYDARTY2",
-      "NAME",
-      "NOM_REG_NO",
-      "SEC_NAME",
-      "SEC_NOMREG",
-      "TER_NAME",
-      "TER_NOMREG",
-      "HYD_CLASS",
-      "PERENNIAL",
-      "EXISTING",
-      "WC_BED_TY",
-      "RELGRND",
-      "INUSE",
-      "ISLANDTYPE",
-      "ELEVATION",
-      "COMP_AREA",
-      "UFI"
-     ],
-     "records": 237938,
-     "sample": [
-      "None",
-      "Ormley Creek",
-      "None"
-     ],
-     "name_field": "NAME"
-    },
-    {
-     "id": 28,
-     "name": "LIST Local Government Areas",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
-     "fields": [
-      "OBJECTID",
-      "LGA_ID",
-      "NAME",
-      "LGA_CODE",
-      "PLAN_REF",
-      "GAZ_DATE",
-      "NOM_REG_NO",
-      "UFI",
-      "CREATED_ON",
+      "O_CODE",
+      "O_NAME",
+      "SCHEMECODE",
+      "PLANSCHEME",
+      "DESC_",
+      "CLASS",
+      "SCHEMEDATE",
+      "COMMENTS",
+      "DISCLAIMER",
       "LIST_GUID",
       "SHAPE",
       "SHAPE.AREA",
       "SHAPE.LEN"
      ],
-     "records": 29,
+     "records": 57546,
      "sample": [
-      "Burnie",
-      "Huon Valley",
-      "Flinders"
+      "Landslide Hazard Area",
+      "Landslide Hazard Area",
+      "Landslide Hazard Area"
      ],
-     "name_field": "NAME"
+     "name_field": "O_NAME"
     },
     {
-     "id": 29,
-     "name": "LIST Local Government Reserves",
+     "id": 4,
+     "name": "Interim Planning Scheme -  Zoning",
      "geom": "Polygon",
      "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
+     "is": "known-good layer (chat 8)",
      "fields": [
       "OBJECTID",
-      "CID",
-      "CATEGORY",
-      "FEAT_NAME",
-      "COMP_AREA",
-      "MEAS_AREA",
-      "UFI",
-      "FMP",
-      "CREATED_ON",
+      "ZONECODE",
+      "ZONE",
+      "SCHEMECODE",
+      "PLANSCHEME",
+      "SCHEMEDATE",
+      "COMMENTS",
+      "DISCLAIMER",
       "LIST_GUID",
       "SHAPE",
       "SHAPE.AREA",
       "SHAPE.LEN"
      ],
-     "records": 1650,
-     "sample": [
-      "None",
-      "None",
-      "None"
+     "records": 744
+    },
+    {
+     "id": 5,
+     "name": "LIDAR Climate Futures Index",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "TILENO",
+      "DIMAPID",
+      "PROJECTID",
+      "MINX",
+      "MINY",
+      "MAXX",
+      "MAXY",
+      "HASXYZ",
+      "HASASCIIGRD",
+      "HASLAS",
+      "SHAPE_FID",
+      "LIST_GUID",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
      ],
-     "name_field": "FEAT_NAME"
+     "records": 3853
+    },
+    {
+     "id": 6,
+     "name": "LiDAR Coal Mines Port Arthur Index",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "TILE_NUM",
+      "TILE_NAME",
+      "XMIN",
+      "YMIN",
+      "XMAX",
+      "YMAX",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 22,
+     "sample": [
+      "e557n5239",
+      "e557n5240",
+      "e557n5241"
+     ],
+     "name_field": "TILE_NAME"
+    },
+    {
+     "id": 7,
+     "name": "LiDAR DPAC Coastal Index",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "TILE_ID",
+      "TILE_NAME",
+      "XMIN",
+      "YMIN",
+      "XMAX",
+      "YMAX",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "records": 557,
+     "sample": [
+      "filnd_5835561",
+      "filnd_5835562",
+      "filnd_5845560"
+     ],
+     "name_field": "TILE_NAME"
     }
    ],
    "note": "",
@@ -3805,15 +3668,51 @@
    "date": "",
    "found": "2026-10-28",
    "gaps": [
+    "area",
     "outline"
    ],
    "layers": [
     {
+     "id": 4,
+     "name": "Regional Parks (DBCA-026)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid",
+      "rpk_reg_park",
+      "shape",
+      "st_perimeter(shape)"
+     ],
+     "records": 159
+    },
+    {
+     "id": 27,
+     "name": "Land Conservation Districts (DPIRD-029)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "lcd_name",
+      "id",
+      "shape",
+      "st_perimeter(shape)"
+     ],
+     "records": 149,
+     "sample": [
+      "NORTH KIMBERLEY",
+      "KENT RIVER",
+      "STIRLING"
+     ],
+     "name_field": "lcd_name"
+    },
+    {
      "id": 0,
      "name": "Representative Aboriginal and Torres Strait Islander Body Boundaries (",
      "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
      "fields": [
       "objectid",
       "ogc_fid",
@@ -3841,8 +3740,8 @@
      "id": 1,
      "name": "ESL DFES Polygons (DFES-013)",
      "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
      "fields": [
       "objectid",
       "name",
@@ -3865,8 +3764,8 @@
      "id": 2,
      "name": "DFES Regions (DFES-015)",
      "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
      "fields": [
       "objectid",
       "name",
@@ -3890,8 +3789,8 @@
      "id": 3,
      "name": "Fire and Rescue Services District (DFES-016)",
      "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
      "fields": [
       "objectid",
       "name",
@@ -3910,25 +3809,11 @@
      "name_field": "name"
     },
     {
-     "id": 4,
-     "name": "Regional Parks (DBCA-026)",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons (no name field seen)",
-     "fields": [
-      "objectid",
-      "rpk_reg_park",
-      "shape",
-      "st_perimeter(shape)"
-     ],
-     "records": 159
-    },
-    {
      "id": 5,
      "name": "DBCA Region Boundaries (DBCA-022)",
      "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
      "fields": [
       "objectid",
       "drg_region_name",
@@ -3949,8 +3834,8 @@
      "id": 6,
      "name": "State Environmental (Cockburn Sound) Policy Boundaries (DWER-058)",
      "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
      "fields": [
       "objectid",
       "boundary_name",
@@ -3967,8 +3852,8 @@
      "id": 8,
      "name": "DBCA District Boundaries (DBCA-023)",
      "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
      "fields": [
       "objectid",
       "ddt_district_name",
@@ -3988,8 +3873,8 @@
      "id": 9,
      "name": "Department of Water and Environmental Regulation Regional Boundaries (",
      "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
      "fields": [
       "objectid",
       "objectid_lg",
@@ -4015,8 +3900,8 @@
      "id": 10,
      "name": "Water Demand Region Boundaries (DWER-002)",
      "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
      "fields": [
       "objectid",
       "abs_name",
@@ -4035,8 +3920,8 @@
      "id": 12,
      "name": "Port Authorities (LGATE-243)",
      "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
      "fields": [
       "objectid",
       "boundary_id",
@@ -4058,33 +3943,6 @@
       "WYNDHAM PORT AUTHORITY"
      ],
      "name_field": "name"
-    },
-    {
-     "id": 14,
-     "name": "Local Government Authority (LGA) Boundaries (LGATE-233)",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
-     "fields": [
-      "objectid",
-      "boundary_id",
-      "type_code",
-      "type_description",
-      "feature_number",
-      "name",
-      "abs_lga_number",
-      "postcode",
-      "land_area",
-      "area_derivation",
-      "shape"
-     ],
-     "records": 139,
-     "sample": [
-      "COOROW, SHIRE OF",
-      "KONDININ, SHIRE OF",
-      "SHARK BAY, SHIRE OF"
-     ],
-     "name_field": "name"
     }
    ],
    "note": "",
@@ -4101,15 +3959,51 @@
    "date": "",
    "found": "2026-10-28",
    "gaps": [
+    "area",
     "outline"
    ],
    "layers": [
     {
+     "id": 4,
+     "name": "Regional Parks (DBCA-026)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid",
+      "rpk_reg_park",
+      "shape",
+      "st_perimeter(shape)"
+     ],
+     "records": 159
+    },
+    {
+     "id": 30,
+     "name": "Land Conservation Districts (DPIRD-029)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "lcd_name",
+      "id",
+      "shape",
+      "st_perimeter(shape)"
+     ],
+     "records": 149,
+     "sample": [
+      "NORTH KIMBERLEY",
+      "KENT RIVER",
+      "STIRLING"
+     ],
+     "name_field": "lcd_name"
+    },
+    {
      "id": 0,
      "name": "Representative Aboriginal and Torres Strait Islander Body Boundaries (",
      "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
      "fields": [
       "objectid",
       "ogc_fid",
@@ -4137,8 +4031,8 @@
      "id": 1,
      "name": "ESL DFES Polygons (DFES-013)",
      "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
      "fields": [
       "objectid",
       "name",
@@ -4161,8 +4055,8 @@
      "id": 2,
      "name": "DFES Regions (DFES-015)",
      "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
      "fields": [
       "objectid",
       "name",
@@ -4185,8 +4079,8 @@
      "id": 3,
      "name": "Fire and Rescue Services District (DFES-016)",
      "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
      "fields": [
       "objectid",
       "name",
@@ -4205,25 +4099,11 @@
      "name_field": "name"
     },
     {
-     "id": 4,
-     "name": "Regional Parks (DBCA-026)",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons (no name field seen)",
-     "fields": [
-      "objectid",
-      "rpk_reg_park",
-      "shape",
-      "st_perimeter(shape)"
-     ],
-     "records": 159
-    },
-    {
      "id": 5,
      "name": "DBCA Region Boundaries (DBCA-022)",
      "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
      "fields": [
       "objectid",
       "drg_region_name",
@@ -4244,8 +4124,8 @@
      "id": 6,
      "name": "State Environmental (Cockburn Sound) Policy Boundaries (DWER-058)",
      "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
      "fields": [
       "objectid",
       "boundary_name",
@@ -4263,8 +4143,8 @@
      "id": 7,
      "name": "DBCA District Boundaries (DBCA-023)",
      "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
      "fields": [
       "objectid",
       "ddt_district_name",
@@ -4284,8 +4164,8 @@
      "id": 38,
      "name": "Department of Water and Environmental Regulation Regional Boundaries (",
      "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
      "fields": [
       "objectid",
       "objectid_lg",
@@ -4311,8 +4191,8 @@
      "id": 39,
      "name": "Water Demand Region Boundaries (DWER-002)",
      "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
      "fields": [
       "objectid",
       "abs_name",
@@ -4331,8 +4211,8 @@
      "id": 11,
      "name": "Port Authorities (LGATE-243)",
      "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
      "fields": [
       "objectid",
       "boundary_id",
@@ -4354,31 +4234,347 @@
       "WYNDHAM PORT AUTHORITY"
      ],
      "name_field": "name"
-    },
+    }
+   ],
+   "note": "",
+   "grade": 5,
+   "band": "A"
+  },
+  "https://public-services.slip.wa.gov.au/public/rest/services/slip_public_services/dpird_fisheries_guide": {
+   "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide/MapServer",
+   "cc": "AU",
+   "title": "SLIP_Public_Services/DPIRD_Fisheries_Guide",
+   "publisher": "public-services.slip.wa.gov.au",
+   "catalog": "agency server public-services.slip.wa.gov.au",
+   "licence": "LANDGATE/SLIP",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "outline"
+   ],
+   "layers": [
     {
-     "id": 12,
-     "name": "Local Government Authority (LGA) Boundaries (LGATE-233)",
+     "id": 17,
+     "name": "Ocean Park (IOE)",
      "geom": "Polygon",
      "gap": "outline",
-     "is": "named area polygons",
+     "is": "park / protected-area polygons with a name field",
      "fields": [
       "objectid",
-      "boundary_id",
-      "type_code",
-      "type_description",
-      "feature_number",
+      "ufi",
+      "act",
       "name",
-      "abs_lga_number",
-      "postcode",
-      "land_area",
-      "area_derivation",
+      "short_na",
+      "legal",
+      "descript",
+      "exem_no",
+      "expiry",
+      "link",
       "shape"
      ],
-     "records": 139,
+     "records": 0,
+     "sample": [],
+     "name_field": "name"
+    },
+    {
+     "id": 117,
+     "name": "Prohibition on Commercial Fishing (Jurien Bay Marine Park) Order 2005",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "ufi",
+      "act",
+      "name",
+      "order_type",
+      "ord_notice",
+      "legal",
+      "descript",
+      "link",
+      "shape",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "records": 18,
      "sample": [
-      "COOROW, SHIRE OF",
-      "KONDININ, SHIRE OF",
-      "SHARK BAY, SHIRE OF"
+      "Prohibition on Commercial Fishing (Jurien Bay Mari",
+      "Prohibition on Commercial Fishing (Jurien Bay Mari",
+      "Prohibition on Commercial Fishing (Jurien Bay Mari"
+     ],
+     "name_field": "name"
+    },
+    {
+     "id": 120,
+     "name": "Prohibition on Commercial Fishing (Marmion Marine Park) Order",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "ufi",
+      "act",
+      "name",
+      "order_type",
+      "ord_notice",
+      "legal",
+      "descript",
+      "link",
+      "shape",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "records": 9,
+     "sample": [
+      "Prohibition on Commercial Fishing (Marmion Marine ",
+      "Prohibition on Commercial Fishing (Marmion Marine ",
+      "Prohibition on Commercial Fishing (Marmion Marine "
+     ],
+     "name_field": "name"
+    },
+    {
+     "id": 122,
+     "name": "Prohibition on Commercial Fishing (Ningaloo Marine Park) Order 2005",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "ufi",
+      "act",
+      "name",
+      "order_type",
+      "ord_notice",
+      "legal",
+      "descript",
+      "link",
+      "shape",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "records": 46,
+     "sample": [
+      "Prohibition on Commercial Fishing (Ningaloo Marine",
+      "Prohibition on Commercial Fishing (Ningaloo Marine",
+      "Prohibition on Commercial Fishing (Ningaloo Marine"
+     ],
+     "name_field": "name"
+    },
+    {
+     "id": 124,
+     "name": "Prohibition on Commercial Fishing (Shark Bay Marine Park) Order 2004",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "ufi",
+      "act",
+      "name",
+      "order_type",
+      "ord_notice",
+      "legal",
+      "descript",
+      "link",
+      "shape",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "records": 19,
+     "sample": [
+      "Prohibition on Commercial Fishing (Shark Bay Marin",
+      "Prohibition on Commercial Fishing (Shark Bay Marin",
+      "Prohibition on Commercial Fishing (Shark Bay Marin"
+     ],
+     "name_field": "name"
+    },
+    {
+     "id": 125,
+     "name": "Prohibition on Commercial Fishing (Shoalwater Islands Marine Park) Ord",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "ufi",
+      "act",
+      "name",
+      "order_type",
+      "ord_notice",
+      "legal",
+      "descript",
+      "link",
+      "shape",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "records": 8,
+     "sample": [
+      "Prohibition on Commercial Fishing (Shoalwater Isla",
+      "Prohibition on Commercial Fishing (Shoalwater Isla",
+      "Prohibition on Commercial Fishing (Shoalwater Isla"
+     ],
+     "name_field": "name"
+    },
+    {
+     "id": 250,
+     "name": "Prohibition on Fishing (Bardi Jawi Gaarra Marine Park) Order 2025",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "ufi",
+      "act",
+      "name",
+      "order_type",
+      "ord_notice",
+      "legal",
+      "descript",
+      "link",
+      "shape",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "records": 19,
+     "sample": [
+      "Prohibition on Fishing (Bardi Jawi Gaarra Marine P",
+      "Prohibition on Fishing (Bardi Jawi Gaarra Marine P",
+      "Prohibition on Fishing (Bardi Jawi Gaarra Marine P"
+     ],
+     "name_field": "name"
+    },
+    {
+     "id": 128,
+     "name": "Prohibition on Fishing (Barrow Island Marine Park and Montebellos Isla",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "ufi",
+      "act",
+      "name",
+      "order_type",
+      "ord_notice",
+      "legal",
+      "descript",
+      "link",
+      "shape",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "records": 0,
+     "sample": [],
+     "name_field": "name"
+    },
+    {
+     "id": 132,
+     "name": "Prohibition on Fishing (Eighty Mile Beach Marine Park) Order 2018",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "ufi",
+      "act",
+      "name",
+      "order_type",
+      "ord_notice",
+      "legal",
+      "descript",
+      "link",
+      "shape",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "records": 7,
+     "sample": [
+      "Prohibition on Fishing (Eighty Mile Beach Marine P",
+      "Prohibition on Fishing (Eighty Mile Beach Marine P",
+      "Prohibition on Fishing (Eighty Mile Beach Marine P"
+     ],
+     "name_field": "name"
+    },
+    {
+     "id": 135,
+     "name": "Prohibition on Fishing (Hamelin Pool Marine Nature Reserve) Order 2004",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "ufi",
+      "act",
+      "name",
+      "order_type",
+      "ord_notice",
+      "legal",
+      "descript",
+      "link",
+      "shape",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "records": 1,
+     "sample": [
+      "Prohibition on Fishing (Hamelin Pool Marine Nature"
+     ],
+     "name_field": "name"
+    },
+    {
+     "id": 136,
+     "name": "Prohibition on Fishing (Lalang-garram / Camden Sound Marine Park) Join",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "ufi",
+      "act",
+      "name",
+      "order_type",
+      "ord_notice",
+      "legal",
+      "descript",
+      "link",
+      "shape",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "records": 3,
+     "sample": [
+      "Prohibition on Fishing (Lalang-garram / Camden Sou",
+      "Prohibition on Fishing (Lalang-garram / Camden Sou",
+      "Prohibition on Fishing (Lalang-garram / Camden Sou"
+     ],
+     "name_field": "name"
+    },
+    {
+     "id": 137,
+     "name": "Prohibition on Fishing (Lalang-garram / Camden Sound Marine Park) Orde",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "ufi",
+      "act",
+      "name",
+      "order_type",
+      "ord_notice",
+      "legal",
+      "descript",
+      "link",
+      "shape",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "records": 5,
+     "sample": [
+      "Prohibition on Fishing (Lalang-garram / Camden Sou",
+      "Prohibition on Fishing (Lalang-garram / Camden Sou",
+      "Prohibition on Fishing (Lalang-garram / Camden Sou"
      ],
      "name_field": "name"
     }
@@ -4397,6 +4593,7 @@
    "date": "",
    "found": "2026-10-28",
    "gaps": [
+    "area",
     "outline"
    ],
    "layers": [
@@ -4429,34 +4626,6 @@
      "name_field": "name"
     },
     {
-     "id": 9,
-     "name": "S 43 5. Designated Fishing Zones",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
-     "fields": [
-      "objectid",
-      "shape",
-      "ufi",
-      "act",
-      "name",
-      "order_type",
-      "ord_notice",
-      "legal",
-      "descript",
-      "link",
-      "st_area(shape)",
-      "st_perimeter(shape)"
-     ],
-     "records": 25,
-     "sample": [
-      "Bettys and Normans Beaches Designated Fishing Zone",
-      "Boat Harbour East Designated Fishing Zone",
-      "Fisheries Beach Designated Fishing Zone"
-     ],
-     "name_field": "name"
-    },
-    {
      "id": 10,
      "name": "S115 Fish Habitat Protection Areas",
      "geom": "Polygon",
@@ -4485,11 +4654,39 @@
      "name_field": "name"
     },
     {
+     "id": 9,
+     "name": "S 43 5. Designated Fishing Zones",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "objectid",
+      "shape",
+      "ufi",
+      "act",
+      "name",
+      "order_type",
+      "ord_notice",
+      "legal",
+      "descript",
+      "link",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "records": 25,
+     "sample": [
+      "Bettys and Normans Beaches Designated Fishing Zone",
+      "Boat Harbour East Designated Fishing Zone",
+      "Fisheries Beach Designated Fishing Zone"
+     ],
+     "name_field": "name"
+    },
+    {
      "id": 13,
      "name": "Abrolhos Islands and Mid-West Trawl Limited Entry Fishery (CMP)",
      "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
      "fields": [
       "objectid",
       "ufi",
@@ -4515,8 +4712,8 @@
      "id": 16,
      "name": "Cockburn Sound (Fish Net) Limited Entry Fishery (CMP)",
      "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
      "fields": [
       "objectid",
       "ufi",
@@ -4542,8 +4739,8 @@
      "id": 17,
      "name": "Cockburn Sound (Line and Pot) Limited Entry Fishery (CMP)",
      "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
      "fields": [
       "objectid",
       "ufi",
@@ -4567,8 +4764,8 @@
      "id": 18,
      "name": "Cockburn Sound (Mussel) Limited Entry Fishery (CMP)",
      "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
      "fields": [
       "objectid",
       "ufi",
@@ -4592,8 +4789,8 @@
      "id": 22,
      "name": "Kimberley Gillnet and Barramundi Limited Entry Fishery (CMP)",
      "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
      "fields": [
       "objectid",
       "ufi",
@@ -4619,8 +4816,8 @@
      "id": 26,
      "name": "Nickol Bay Prawn Limited Entry Fishery (CMP)",
      "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
      "fields": [
       "objectid",
       "ufi",
@@ -4646,8 +4843,8 @@
      "id": 29,
      "name": "Onslow Prawn Limited Entry Fishery (CMP)",
      "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
      "fields": [
       "objectid",
       "ufi",
@@ -4673,8 +4870,8 @@
      "id": 33,
      "name": "Shark Bay Beach Seine and Mesh Net Limited Entry Fishery (CMP)",
      "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
      "fields": [
       "objectid",
       "ufi",
@@ -4698,8 +4895,8 @@
      "id": 35,
      "name": "Shark Bay Prawn Limited Entry Fishery (CMP)",
      "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
      "fields": [
       "objectid",
       "ufi",
@@ -5231,110 +5428,6 @@
      "name_field": "srp_name"
     },
     {
-     "id": 21,
-     "name": "EPP 2003 Western Swamp Tortoise Policy Boundary (DWER-062)",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
-     "fields": [
-      "oid",
-      "gid",
-      "pfi",
-      "ufi",
-      "theme",
-      "name",
-      "policy",
-      "protecting",
-      "gaz_status",
-      "gaz_date",
-      "ablsh_date",
-      "comment",
-      "othr_bndys",
-      "polystatus",
-      "createdate",
-      "edit_date",
-      "retiredate",
-      "auth_date",
-      "extent",
-      "display_by"
-     ],
-     "records": 1,
-     "sample": [
-      "Western Swamp Tortoise EPP"
-     ],
-     "name_field": "name"
-    },
-    {
-     "id": 23,
-     "name": "Kwinana - Atmospheric Waste Policy Boundary (DWER-065)",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
-     "fields": [
-      "oid",
-      "gid",
-      "pfi",
-      "ufi",
-      "theme",
-      "name",
-      "policy",
-      "protecting",
-      "gaz_status",
-      "gaz_date",
-      "ablsh_date",
-      "comment",
-      "othr_bndys",
-      "polystatus",
-      "createdate",
-      "edit_date",
-      "retiredate",
-      "auth_date",
-      "extent",
-      "display_by"
-     ],
-     "records": 1,
-     "sample": [
-      "Kwinana EPP"
-     ],
-     "name_field": "name"
-    },
-    {
-     "id": 116,
-     "name": "Aquatic GDE in the Fitzroy Water Planning Area (DWER-126)",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
-     "fields": [
-      "objectid",
-      "gde_type",
-      "gde_name",
-      "eco_type",
-      "eco_stype",
-      "eco_name",
-      "gde_likeli",
-      "aq_name",
-      "aq_type",
-      "aq_confin",
-      "aq_connect",
-      "gw_area",
-      "gw_subarea",
-      "sw_area",
-      "sw_subarea",
-      "sw_catch",
-      "gw_dtgw",
-      "gw_dep_con",
-      "eco_wreg",
-      "dom_water"
-     ],
-     "records": 14575,
-     "sample": [
-      "Hann River",
-      "Hann River Hann River",
-      "Hann River Manning Creek"
-     ],
-     "name_field": "gde_name"
-    },
-    {
      "id": 27,
      "name": "Forest Management Plan 2014-2023 (DBCA-041)",
      "geom": "Polygon",
@@ -5385,6 +5478,51 @@
       "st_perimeter(shape)"
      ],
      "records": 213
+    },
+    {
+     "id": 76,
+     "name": "Regional Forest Agreement (RFA) Boundary (DBCA-081)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid",
+      "rfa_type",
+      "shape",
+      "st_area(shape)",
+      "st_perimeter(shape)"
+     ],
+     "records": 1
+    },
+    {
+     "id": 28,
+     "name": "Walpole Wilderness Peat Wetlands - Unreviewed (DBCA-042)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid",
+      "www_poly_id",
+      "www_area_m2",
+      "shape",
+      "st_perimeter(shape)"
+     ],
+     "records": 454
+    },
+    {
+     "id": 29,
+     "name": "Geomorphic Wetlands Leeuwin Naturaliste Ridge and Donnybrook to Nannup",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid",
+      "wgl_boundary_comments",
+      "wgl_wetlands_classification",
+      "shape",
+      "st_perimeter(shape)"
+     ],
+     "records": 934
     }
    ],
    "note": "",
@@ -7289,6 +7427,245 @@
    "grade": 5,
    "band": "A"
   },
+  "https://public-services.slip.wa.gov.au/public/rest/services/landgate_public_maps/marine_map_wa_3": {
+   "url": "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer",
+   "cc": "AU",
+   "title": "Landgate_Public_Maps/Marine_Map_WA_3",
+   "publisher": "public-services.slip.wa.gov.au",
+   "catalog": "agency server public-services.slip.wa.gov.au",
+   "licence": "WALIS",
+   "date": "",
+   "found": "2026-10-28",
+   "gaps": [
+    "area",
+    "outline"
+   ],
+   "layers": [
+    {
+     "id": 28,
+     "name": "Primary Sediment Cell Boundary (DOT-010)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "objectid",
+      "sediment_cell_id",
+      "cell_type",
+      "cell_name",
+      "coastal_region",
+      "offshore_boundary",
+      "onshore_boundary",
+      "from_point",
+      "to_point",
+      "shape",
+      "fr_alongshore_bndry_marine_sect",
+      "fr_alongshore_bndry_terrl_sect",
+      "to_alongshore_bndry_marine_sect",
+      "to_alongshore_bndry_terrl_sect",
+      "st_perimeter(shape)"
+     ],
+     "records": 23,
+     "sample": [
+      "Bluff Point to Nunginjay Spring Coast N",
+      "Whale Boat Cove to Bluff Point",
+      "Glenfield to Whale Boat Cove"
+     ],
+     "name_field": "cell_name"
+    },
+    {
+     "id": 29,
+     "name": "Secondary Sediment Cell Boundary (DOT-011)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "objectid",
+      "shape",
+      "sediment_cell_id",
+      "sediment_cell_boundary_id",
+      "cell_type",
+      "cell_name",
+      "coastal_region",
+      "offshore_boundary",
+      "onshore_boundary",
+      "from_point",
+      "to_point",
+      "fr_alongshore_bndry_marine_sect",
+      "fr_alongshore_bndry_terrl_sect",
+      "to_alongshore_bndry_marine_sect",
+      "to_alongshore_bndry_terrl_sect",
+      "area_km",
+      "st_perimeter(shape)"
+     ],
+     "records": 73,
+     "sample": [
+      "Moore River to Ledge",
+      "Cliff Head to Leander Point",
+      "Fisherman Islands to South Illawong"
+     ],
+     "name_field": "cell_name"
+    },
+    {
+     "id": 30,
+     "name": "Tertiary Sediment Cell Boundary (DOT-012)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "objectid",
+      "shape",
+      "sediment_cell_id",
+      "sediment_cell_boundary_id",
+      "cell_type",
+      "cell_name",
+      "coastal_region",
+      "offshore_boundary",
+      "onshore_boundary",
+      "from_point",
+      "to_point",
+      "fr_alongshore_bndry_marine_sect",
+      "fr_alongshore_bndry_terrl_sect",
+      "to_alongshore_bndry_marine_sect",
+      "to_alongshore_bndry_terrl_sect",
+      "st_perimeter(shape)"
+     ],
+     "records": 80,
+     "sample": [
+      "Point Daking to Point Templar",
+      "Seal Island to Bird Island",
+      "Safety Bay to Mersey Point"
+     ],
+     "name_field": "cell_name"
+    },
+    {
+     "id": 15,
+     "name": "Local Government Authority (LGA) Boundaries (LGATE-233)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "named area polygons",
+     "fields": [
+      "objectid",
+      "boundary_id",
+      "type_code",
+      "type_description",
+      "feature_number",
+      "name",
+      "abs_lga_number",
+      "postcode",
+      "land_area",
+      "area_derivation",
+      "shape",
+      "st_perimeter(shape)"
+     ],
+     "records": 139,
+     "sample": [
+      "COOROW, SHIRE OF",
+      "KONDININ, SHIRE OF",
+      "SHARK BAY, SHIRE OF"
+     ],
+     "name_field": "name"
+    },
+    {
+     "id": 28,
+     "name": "Primary Sediment Cell Boundary (DOT-010)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "named area polygons",
+     "fields": [
+      "objectid",
+      "sediment_cell_id",
+      "cell_type",
+      "cell_name",
+      "coastal_region",
+      "offshore_boundary",
+      "onshore_boundary",
+      "from_point",
+      "to_point",
+      "shape",
+      "fr_alongshore_bndry_marine_sect",
+      "fr_alongshore_bndry_terrl_sect",
+      "to_alongshore_bndry_marine_sect",
+      "to_alongshore_bndry_terrl_sect",
+      "st_perimeter(shape)"
+     ],
+     "records": 23,
+     "sample": [
+      "Bluff Point to Nunginjay Spring Coast N",
+      "Whale Boat Cove to Bluff Point",
+      "Glenfield to Whale Boat Cove"
+     ],
+     "name_field": "cell_name"
+    },
+    {
+     "id": 29,
+     "name": "Secondary Sediment Cell Boundary (DOT-011)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "named area polygons",
+     "fields": [
+      "objectid",
+      "shape",
+      "sediment_cell_id",
+      "sediment_cell_boundary_id",
+      "cell_type",
+      "cell_name",
+      "coastal_region",
+      "offshore_boundary",
+      "onshore_boundary",
+      "from_point",
+      "to_point",
+      "fr_alongshore_bndry_marine_sect",
+      "fr_alongshore_bndry_terrl_sect",
+      "to_alongshore_bndry_marine_sect",
+      "to_alongshore_bndry_terrl_sect",
+      "area_km",
+      "st_perimeter(shape)"
+     ],
+     "records": 73,
+     "sample": [
+      "Moore River to Ledge",
+      "Cliff Head to Leander Point",
+      "Fisherman Islands to South Illawong"
+     ],
+     "name_field": "cell_name"
+    },
+    {
+     "id": 30,
+     "name": "Tertiary Sediment Cell Boundary (DOT-012)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "named area polygons",
+     "fields": [
+      "objectid",
+      "shape",
+      "sediment_cell_id",
+      "sediment_cell_boundary_id",
+      "cell_type",
+      "cell_name",
+      "coastal_region",
+      "offshore_boundary",
+      "onshore_boundary",
+      "from_point",
+      "to_point",
+      "fr_alongshore_bndry_marine_sect",
+      "fr_alongshore_bndry_terrl_sect",
+      "to_alongshore_bndry_marine_sect",
+      "to_alongshore_bndry_terrl_sect",
+      "st_perimeter(shape)"
+     ],
+     "records": 80,
+     "sample": [
+      "Point Daking to Point Templar",
+      "Seal Island to Bird Island",
+      "Safety Bay to Mersey Point"
+     ],
+     "name_field": "cell_name"
+    }
+   ],
+   "note": "",
+   "grade": 4,
+   "band": "B"
+  },
   "https://services-ap1.arcgis.com/s047i49vh0d2nqim/arcgis/rest/services/protected_areas": {
    "url": "https://services-ap1.arcgis.com/s047i49VH0D2nqIM/ArcGIS/rest/services/Protected_areas/FeatureServer",
    "cc": "AU",
@@ -7302,6 +7679,42 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 177,
+     "name": "Protected_areas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "LOT",
+      "PLAN_",
+      "LOTPLAN",
+      "SYSINTCODE",
+      "ESTATENAME",
+      "NAMEABBREV",
+      "NAME_CAPS",
+      "EST_TYPE",
+      "EST_TENURE",
+      "LEGISLATED",
+      "GAZ_AREAHA",
+      "ZONE",
+      "IUCN_CODE",
+      "GLR_NUMBER",
+      "QPWS_REG",
+      "CURGAZDATE",
+      "SHIRE",
+      "FEAT_NAME_",
+      "PA_AREAHA"
+     ],
+     "records": 1926,
+     "sample": [
+      "Melsonby (Gaarraay) National Park (Cape York Penin",
+      "Daintree National Park (Cape York Peninsula Aborig",
+      "Daintree National Park (Cape York Peninsula Aborig"
+     ],
+     "name_field": "ESTATENAME"
+    },
     {
      "id": 177,
      "name": "Protected_areas",
@@ -7673,47 +8086,6 @@
    "grade": 4,
    "band": "B"
   },
-  "https://public-services.slip.wa.gov.au/public/rest/services/slip_public_services/dpird_fisheries_guide": {
-   "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide/MapServer",
-   "cc": "AU",
-   "title": "SLIP_Public_Services/DPIRD_Fisheries_Guide",
-   "publisher": "public-services.slip.wa.gov.au",
-   "catalog": "agency server public-services.slip.wa.gov.au",
-   "licence": "LANDGATE/SLIP",
-   "date": "",
-   "found": "2026-10-28",
-   "gaps": [
-    "outline"
-   ],
-   "layers": [
-    {
-     "id": 17,
-     "name": "Ocean Park (IOE)",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
-     "fields": [
-      "objectid",
-      "ufi",
-      "act",
-      "name",
-      "short_na",
-      "legal",
-      "descript",
-      "exem_no",
-      "expiry",
-      "link",
-      "shape"
-     ],
-     "records": 0,
-     "sample": [],
-     "name_field": "name"
-    }
-   ],
-   "note": "",
-   "grade": 4,
-   "band": "B"
-  },
   "https://public-services.slip.wa.gov.au/public/rest/services/slip_public_services/people_and_society_wfs": {
    "url": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/People_and_Society_WFS/MapServer",
    "cc": "AU",
@@ -7831,88 +8203,88 @@
    ],
    "layers": [
     {
-     "name": "biologically_important_areas",
-     "type": "open-data-platform:biologically_important_areas",
-     "geom": "unknown (WFS)",
-     "gap": "area",
-     "is": "named area polygons (no park word: never band A) (geometry not read)"
-    },
-    {
-     "name": "bushbank_target_landscapes",
-     "type": "open-data-platform:bushbank_target_landscapes",
+     "name": "ad_deeca_region",
+     "type": "open-data-platform:ad_deeca_region",
      "geom": "unknown (WFS)",
      "gap": "outline",
-     "is": "park / protected-area polygons with a name field (geometry not read)"
+     "is": "known-good layer (chat 8) (geometry not read)"
     },
     {
-     "name": "cad_area_bdy",
-     "type": "open-data-platform:cad_area_bdy",
+     "name": "ad_lga_area_polygon",
+     "type": "open-data-platform:ad_lga_area_polygon",
      "geom": "unknown (WFS)",
-     "gap": "area",
-     "is": "named area polygons (no park word: never band A) (geometry not read)"
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
     },
     {
-     "name": "el_grnd_type_area_polygon",
-     "type": "open-data-platform:el_grnd_type_area_polygon",
+     "name": "ad_locality_area_polygon",
+     "type": "open-data-platform:ad_locality_area_polygon",
      "geom": "unknown (WFS)",
-     "gap": "area",
-     "is": "named area polygons (no park word: never band A) (geometry not read)"
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
     },
     {
-     "name": "el_relief_area",
-     "type": "open-data-platform:el_relief_area",
+     "name": "ad_vicgov_region",
+     "type": "open-data-platform:ad_vicgov_region",
      "geom": "unknown (WFS)",
-     "gap": "area",
-     "is": "named area polygons (no park word: never band A) (geometry not read)"
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
     },
     {
-     "name": "el_relief_area_fuzzy",
-     "type": "open-data-platform:el_relief_area_fuzzy",
+     "name": "address",
+     "type": "open-data-platform:address",
      "geom": "unknown (WFS)",
-     "gap": "area",
-     "is": "named area polygons (no park word: never band A) (geometry not read)"
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
     },
     {
-     "name": "fmz100_v_zone",
-     "type": "open-data-platform:fmz100_v_zone",
+     "name": "address_main",
+     "type": "open-data-platform:address_main",
      "geom": "unknown (WFS)",
-     "gap": "area",
-     "is": "named area polygons (no park word: never band A) (geometry not read)"
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
     },
     {
-     "name": "fr_framework_area_line",
-     "type": "open-data-platform:fr_framework_area_line",
+     "name": "address_sup",
+     "type": "open-data-platform:address_sup",
      "geom": "unknown (WFS)",
-     "gap": "area",
-     "is": "named area polygons (no park word: never band A) (geometry not read)"
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
     },
     {
-     "name": "fr_framework_area_polygon",
-     "type": "open-data-platform:fr_framework_area_polygon",
+     "name": "altern100_polygon",
+     "type": "open-data-platform:altern100_polygon",
      "geom": "unknown (WFS)",
-     "gap": "area",
-     "is": "named area polygons (no park word: never band A) (geometry not read)"
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
     },
     {
-     "name": "frv_legislated_boundary",
-     "type": "open-data-platform:frv_legislated_boundary",
+     "name": "anasurv",
+     "type": "open-data-platform:anasurv",
      "geom": "unknown (WFS)",
-     "gap": "area",
-     "is": "named area polygons (no park word: never band A) (geometry not read)"
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
     },
     {
-     "name": "frv_response_area",
-     "type": "open-data-platform:frv_response_area",
+     "name": "annotation_text",
+     "type": "open-data-platform:annotation_text",
      "geom": "unknown (WFS)",
-     "gap": "area",
-     "is": "named area polygons (no park word: never band A) (geometry not read)"
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
     },
     {
-     "name": "gma_zone",
-     "type": "open-data-platform:gma_zone",
+     "name": "apiary",
+     "type": "open-data-platform:apiary",
      "geom": "unknown (WFS)",
-     "gap": "area",
-     "is": "named area polygons (no park word: never band A) (geometry not read)"
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
+    },
+    {
+     "name": "aquifer_sal_basal",
+     "type": "open-data-platform:aquifer_sal_basal",
+     "geom": "unknown (WFS)",
+     "gap": "outline",
+     "is": "known-good layer (chat 8) (geometry not read)"
     }
    ],
    "note": "300 feature types listed",
