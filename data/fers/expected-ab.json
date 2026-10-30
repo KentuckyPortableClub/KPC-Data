@@ -1,0 +1,144 @@
+{
+ "filter": {
+  "rule": "pairs expected only from POTA history are kept when the outlines are within 1000 m (box to box), or a park has no outline, or one session logged both",
+  "left_out_far": 0,
+  "kept_no_outline": 0,
+  "kept_same_session": 0,
+  "kept_not_measured": 0,
+  "outlines_measured": 393
+ },
+ "about": "MISSING CHECK (chat 2, Oct 27 2026; HQ 3:46 PM, Brandon: 'chat 8 can't verify what's missing'). For each area of a 2-fer run, every See kpc_fers_expected.py. Chat 8 reviews DROPPED + NEVER LOOKED AT.",
+ "area": "CA-AB",
+ "date": "2026-10-30",
+ "pass": true,
+ "counts": {
+  "FOUND": 0,
+  "DROPPED": 11,
+  "NEVER LOOKED AT": 0
+ },
+ "FOUND": [],
+ "DROPPED": [
+  {
+   "refs": [
+    "CA-0636",
+    "CA-6112"
+   ],
+   "why_expected": [
+    "outlines come within 44 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-0646",
+    "CA-2946"
+   ],
+   "why_expected": [
+    "outlines come within 50 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-0647",
+    "CA-0656"
+   ],
+   "why_expected": [
+    "outlines come within 50 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-0656",
+    "CA-6112"
+   ],
+   "why_expected": [
+    "outlines come within 20 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-1171",
+    "CA-5494"
+   ],
+   "why_expected": [
+    "outlines come within 10 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-2949",
+    "CA-6112"
+   ],
+   "why_expected": [
+    "outlines come within 44 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-2963",
+    "CA-3133"
+   ],
+   "why_expected": [
+    "outlines come within 40 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-2995",
+    "CA-6112"
+   ],
+   "why_expected": [
+    "outlines come within 30 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-3010",
+    "CA-3017"
+   ],
+   "why_expected": [
+    "outlines come within 60 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-3010",
+    "CA-5534"
+   ],
+   "why_expected": [
+    "outlines come within 58 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-3021",
+    "CA-3153"
+   ],
+   "why_expected": [
+    "outlines come within 50 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  }
+ ],
+ "NEVER LOOKED AT": []
+}
