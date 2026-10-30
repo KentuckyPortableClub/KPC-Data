@@ -1,0 +1,1558 @@
+{
+ "request": "requests/9-p2-nc.json",
+ "id": "9-p2-nc",
+ "chat": 9,
+ "kind": "probe",
+ "report": "p2 NC: 19 parks, 5 layers",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "p2 NC: 19 parks, 5 layers",
+  "probe": {
+   "about": "P-2 (HQ 6:20 PM): point-in-polygon at the pin of every open Fable-list park against every polygon layer in state-gis.json for the state + national layers (BLM rec polygons, FWS approved, NPS legal boundary). State NC: 19 parks. Refs in order of points: US-10263,US-10388,US-10389,US-10399,US-12414,US-12662,US-3854,US-6848,US-8010,US-8011,US-8226,US-10259,US-10398,US-3851,US-6837,US-6847,US-6852,US-6963,US-10511. Results to chat 8 / chat 3 (Fable file WORK LOG rows).",
+   "refs": [
+    "US-10263",
+    "US-10388",
+    "US-10389",
+    "US-10399",
+    "US-12414",
+    "US-12662",
+    "US-3854",
+    "US-6848",
+    "US-8010",
+    "US-8011",
+    "US-8226",
+    "US-10259",
+    "US-10398",
+    "US-3851",
+    "US-6837",
+    "US-6847",
+    "US-6852",
+    "US-6963",
+    "US-10511"
+   ],
+   "pointq": [
+    {
+     "st": "NC",
+     "url": "https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0",
+     "note": "NC NC Natural Heritage Program, NC Dept of ",
+     "points": [
+      [
+       35.4715,
+       -76.8144
+      ],
+      [
+       35.4769,
+       -76.8138
+      ],
+      [
+       35.1529,
+       -84.1791
+      ],
+      [
+       35.1472,
+       -84.1797
+      ],
+      [
+       36.4312,
+       -81.1544
+      ],
+      [
+       35.7617,
+       -82.9778
+      ],
+      [
+       35.7273,
+       -78.2057
+      ],
+      [
+       35.0779,
+       -80.8818
+      ],
+      [
+       35.0089,
+       -79.6281
+      ],
+      [
+       35.2846,
+       -82.7919
+      ],
+      [
+       35.0354,
+       -79.2065
+      ],
+      [
+       35.8428,
+       -80.131
+      ],
+      [
+       35.0205,
+       -83.7854
+      ],
+      [
+       36.0345,
+       -79.0489
+      ],
+      [
+       35.2604,
+       -77.5816
+      ],
+      [
+       35.6898,
+       -80.4301
+      ],
+      [
+       35.7806,
+       -78.6391
+      ],
+      [
+       36.4771,
+       -78.3785
+      ],
+      [
+       34.862,
+       -78.7296
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "NC",
+     "url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/gamelands_general/FeatureServer/21",
+     "note": "NC NCWRC (owner ncwildlife.gov)",
+     "points": [
+      [
+       35.4715,
+       -76.8144
+      ],
+      [
+       35.4769,
+       -76.8138
+      ],
+      [
+       35.1529,
+       -84.1791
+      ],
+      [
+       35.1472,
+       -84.1797
+      ],
+      [
+       36.4312,
+       -81.1544
+      ],
+      [
+       35.7617,
+       -82.9778
+      ],
+      [
+       35.7273,
+       -78.2057
+      ],
+      [
+       35.0779,
+       -80.8818
+      ],
+      [
+       35.0089,
+       -79.6281
+      ],
+      [
+       35.2846,
+       -82.7919
+      ],
+      [
+       35.0354,
+       -79.2065
+      ],
+      [
+       35.8428,
+       -80.131
+      ],
+      [
+       35.0205,
+       -83.7854
+      ],
+      [
+       36.0345,
+       -79.0489
+      ],
+      [
+       35.2604,
+       -77.5816
+      ],
+      [
+       35.6898,
+       -80.4301
+      ],
+      [
+       35.7806,
+       -78.6391
+      ],
+      [
+       36.4771,
+       -78.3785
+      ],
+      [
+       34.862,
+       -78.7296
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "note": "BLM recreation site polygons within 2 km",
+     "points": [
+      [
+       35.4715,
+       -76.8144
+      ],
+      [
+       35.4769,
+       -76.8138
+      ],
+      [
+       35.1529,
+       -84.1791
+      ],
+      [
+       35.1472,
+       -84.1797
+      ],
+      [
+       36.4312,
+       -81.1544
+      ],
+      [
+       35.7617,
+       -82.9778
+      ],
+      [
+       35.7273,
+       -78.2057
+      ],
+      [
+       35.0779,
+       -80.8818
+      ],
+      [
+       35.0089,
+       -79.6281
+      ],
+      [
+       35.2846,
+       -82.7919
+      ],
+      [
+       35.0354,
+       -79.2065
+      ],
+      [
+       35.8428,
+       -80.131
+      ],
+      [
+       35.0205,
+       -83.7854
+      ],
+      [
+       36.0345,
+       -79.0489
+      ],
+      [
+       35.2604,
+       -77.5816
+      ],
+      [
+       35.6898,
+       -80.4301
+      ],
+      [
+       35.7806,
+       -78.6391
+      ],
+      [
+       36.4771,
+       -78.3785
+      ],
+      [
+       34.862,
+       -78.7296
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+     "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+     "points": [
+      [
+       35.4715,
+       -76.8144
+      ],
+      [
+       35.4769,
+       -76.8138
+      ],
+      [
+       35.1529,
+       -84.1791
+      ],
+      [
+       35.1472,
+       -84.1797
+      ],
+      [
+       36.4312,
+       -81.1544
+      ],
+      [
+       35.7617,
+       -82.9778
+      ],
+      [
+       35.7273,
+       -78.2057
+      ],
+      [
+       35.0779,
+       -80.8818
+      ],
+      [
+       35.0089,
+       -79.6281
+      ],
+      [
+       35.2846,
+       -82.7919
+      ],
+      [
+       35.0354,
+       -79.2065
+      ],
+      [
+       35.8428,
+       -80.131
+      ],
+      [
+       35.0205,
+       -83.7854
+      ],
+      [
+       36.0345,
+       -79.0489
+      ],
+      [
+       35.2604,
+       -77.5816
+      ],
+      [
+       35.6898,
+       -80.4301
+      ],
+      [
+       35.7806,
+       -78.6391
+      ],
+      [
+       36.4771,
+       -78.3785
+      ],
+      [
+       34.862,
+       -78.7296
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "note": "NPS legal boundary",
+     "points": [
+      [
+       35.4715,
+       -76.8144
+      ],
+      [
+       35.4769,
+       -76.8138
+      ],
+      [
+       35.1529,
+       -84.1791
+      ],
+      [
+       35.1472,
+       -84.1797
+      ],
+      [
+       36.4312,
+       -81.1544
+      ],
+      [
+       35.7617,
+       -82.9778
+      ],
+      [
+       35.7273,
+       -78.2057
+      ],
+      [
+       35.0779,
+       -80.8818
+      ],
+      [
+       35.0089,
+       -79.6281
+      ],
+      [
+       35.2846,
+       -82.7919
+      ],
+      [
+       35.0354,
+       -79.2065
+      ],
+      [
+       35.8428,
+       -80.131
+      ],
+      [
+       35.0205,
+       -83.7854
+      ],
+      [
+       36.0345,
+       -79.0489
+      ],
+      [
+       35.2604,
+       -77.5816
+      ],
+      [
+       35.6898,
+       -80.4301
+      ],
+      [
+       35.7806,
+       -78.6391
+      ],
+      [
+       36.4771,
+       -78.3785
+      ],
+      [
+       34.862,
+       -78.7296
+      ]
+     ],
+     "dist": 100
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-30 01:45Z",
+ "results": {
+  "about": "P-2 (HQ 6:20 PM): point-in-polygon at the pin of every open Fable-list park against every polygon layer in state-gis.json for the state + national layers (BLM rec polygons, FWS approved, NPS legal boundary). State NC: 19 parks. Refs in order of points: US-10263,US-10388,US-10389,US-10399,US-12414,US-12662,US-3854,US-6848,US-8010,US-8011,US-8226,US-10259,US-10398,US-3851,US-6837,US-6847,US-6852,US-6963,US-10511. Results to chat 8 / chat 3 (Fable file WORK LOG rows).",
+  "date": "2026-10-30",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "NC",
+    "url": "https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0",
+    "note": "NC NC Natural Heritage Program, NC Dept of ",
+    "hits": [
+     {
+      "layer": "0 Managed Areas",
+      "point": [
+       35.4715,
+       -76.8144
+      ],
+      "attrs": {
+       "MA_ID": 1514,
+       "ACRES": 9.09,
+       "MA_NAME": "Historic Bath State Historic Site",
+       "OWNER": "NC DNCR, Division of State Historic Sites and Properties",
+       "OWNER_TYPE": "State",
+       "CATEGORY": "Fee",
+       "GIS_SRC": "nc_beaufort_parcels_poly.shp",
+       "SRC_DATE": "2022-03-24",
+       "GAP_STATUS": "3 - managed for multiple uses - subject to extractive (e.g. mining or logging) or OHV use",
+       "SYMBOLOGY": "State",
+       "LABEL": "Historic Bath SHA",
+       "DATA_DATE": "2026-10-01"
+      }
+     },
+     {
+      "layer": "0 Managed Areas",
+      "point": [
+       35.4769,
+       -76.8138
+      ],
+      "attrs": {
+       "MA_ID": 1514,
+       "ACRES": 9.09,
+       "MA_NAME": "Historic Bath State Historic Site",
+       "OWNER": "NC DNCR, Division of State Historic Sites and Properties",
+       "OWNER_TYPE": "State",
+       "CATEGORY": "Fee",
+       "GIS_SRC": "nc_beaufort_parcels_poly.shp",
+       "SRC_DATE": "2022-03-24",
+       "GAP_STATUS": "3 - managed for multiple uses - subject to extractive (e.g. mining or logging) or OHV use",
+       "SYMBOLOGY": "State",
+       "LABEL": "Historic Bath SHA",
+       "DATA_DATE": "2026-10-01"
+      }
+     },
+     {
+      "layer": "0 Managed Areas",
+      "point": [
+       35.1529,
+       -84.1791
+      ],
+      "attrs": {
+       "MA_ID": 3006,
+       "ACRES": 423.31,
+       "MA_NAME": "Tennessee Valley Authority - Hiwassee Dam",
+       "OWNER": "Tennessee Valley Authority",
+       "OWNER_TYPE": "Federal",
+       "CATEGORY": "Fee",
+       "GAP_STATUS": "3 - managed for multiple uses - subject to extractive (e.g. mining or logging) or OHV use",
+       "SYMBOLOGY": "Federal",
+       "LABEL": "TVA - Hiw Dam",
+       "DATA_DATE": "2026-10-01"
+      }
+     },
+     {
+      "layer": "0 Managed Areas",
+      "point": [
+       35.1529,
+       -84.1791
+      ],
+      "attrs": {
+       "MA_ID": 24653,
+       "ACRES": 6400.5,
+       "MA_NAME": "Tennessee Valley Authority - Hiwassee Lake",
+       "OWNER": "Tennessee Valley Authority",
+       "OWNER_TYPE": "Federal",
+       "CATEGORY": "Fee",
+       "GIS_SRC": "NC One Map",
+       "SRC_DATE": "2025-04-23",
+       "GAP_STATUS": "3 - managed for multiple uses - subject to extractive (e.g. mining or logging) or OHV use",
+       "SYMBOLOGY": "Federal",
+       "LABEL": "TVA Hiw Lk",
+       "DATA_DATE": "2026-10-01"
+      }
+     },
+     {
+      "layer": "0 Managed Areas",
+      "point": [
+       35.1472,
+       -84.1797
+      ],
+      "attrs": {
+       "MA_ID": 3007,
+       "ACRES": 1085.85,
+       "MA_NAME": "Tennessee Valley Authority - Apalachia Lake",
+       "OWNER": "Tennessee Valley Authority",
+       "OWNER_TYPE": "Federal",
+       "CATEGORY": "Fee",
+       "GAP_STATUS": "3 - managed for multiple uses - subject to extractive (e.g. mining or logging) or OHV use",
+       "SYMBOLOGY": "Federal",
+       "LABEL": "TVA - Ap Lake",
+       "DATA_DATE": "2026-10-01"
+      }
+     },
+     {
+      "layer": "0 Managed Areas",
+      "point": [
+       35.1472,
+       -84.1797
+      ],
+      "attrs": {
+       "MA_ID": 3006,
+       "ACRES": 423.31,
+       "MA_NAME": "Tennessee Valley Authority - Hiwassee Dam",
+       "OWNER": "Tennessee Valley Authority",
+       "OWNER_TYPE": "Federal",
+       "CATEGORY": "Fee",
+       "GAP_STATUS": "3 - managed for multiple uses - subject to extractive (e.g. mining or logging) or OHV use",
+       "SYMBOLOGY": "Federal",
+       "LABEL": "TVA - Hiw Dam",
+       "DATA_DATE": "2026-10-01"
+      }
+     },
+     {
+      "layer": "0 Managed Areas",
+      "point": [
+       36.4312,
+       -81.1544
+      ],
+      "attrs": {
+       "MA_ID": 444,
+       "ACRES": 52788.34,
+       "MA_NAME": "Blue Ridge Parkway",
+       "OWNER": "US National Park Service",
+       "OWNER_TYPE": "Federal",
+       "CATEGORY": "Fee",
+       "GIS_SRC": "Blue_Ridge_Parkway_Boundary_2013-08-05.shp and OneMap NC Parcels (Polygon",
+       "SRC_DATE": "2026-02-01",
+       "GAP_STATUS": "1 - managed for biodiversity - disturbance events proceed or are mimicked",
+       "SYMBOLOGY": "Federal",
+       "LABEL": "Blue Ridge Parkway",
+       "DATA_DATE": "2026-10-01"
+      }
+     },
+     {
+      "layer": "0 Managed Areas",
+      "point": [
+       35.7617,
+       -82.9778
+      ],
+      "attrs": {
+       "MA_ID": 239,
+       "ACRES": 154037.98,
+       "MA_NAME": "Pisgah National Forest - Appalachian Ranger District",
+       "OWNER": "US Forest Service",
+       "OWNER_TYPE": "Federal",
+       "CATEGORY": "Fee",
+       "GIS_SRC": "SurfOwnClip2NFsNCwithDistrictID.shp",
+       "SRC_DATE": "2013-06-27",
+       "GAP_STATUS": "3 - managed for multiple uses - subject to extractive (e.g. mining or logging) or OHV use",
+       "SYMBOLOGY": "Federal",
+       "LABEL": "Pisgah NF-Appalachian RD",
+       "DATA_DATE": "2026-10-01"
+      }
+     },
+     {
+      "layer": "0 Managed Areas",
+      "point": [
+       35.7273,
+       -78.2057
+      ],
+      "attrs": {
+       "MA_ID": 14334,
+       "ACRES": 4035.4,
+       "MA_NAME": "City of Wilson - Buckhorn Reservoir",
+       "OWNER": "City of Wilson",
+       "OWNER_TYPE": "Local Government",
+       "CATEGORY": "Fee",
+       "GIS_SRC": "nc_johnston_parcels_poly.shp",
+       "SRC_DATE": "2020-06-23",
+       "GAP_STATUS": "3 - managed for multiple uses - subject to extractive (e.g. mining or logging) or OHV use",
+       "SYMBOLOGY": "Local Government",
+       "LABEL": "Wilson OS",
+       "DATA_DATE": "2026-10-01"
+      }
+     },
+     {
+      "layer": "0 Managed Areas",
+      "point": [
+       35.7273,
+       -78.2057
+      ],
+      "attrs": {
+       "MA_ID": 13895,
+       "ACRES": 9.66,
+       "MA_NAME": "Triangle Land Conservancy Preserve",
+       "OWNER": "Triangle Land Conservancy",
+       "OWNER_TYPE": "Private",
+       "CATEGORY": "Fee",
+       "GIS_SRC": "land_projects_poly.shp",
+       "SRC_DATE": "2020-07-31",
+       "GAP_STATUS": "2 - managed for biodiversity - disturbance events suppressed",
+       "SYMBOLOGY": "Private",
+       "LABEL": "TLC Pres",
+       "DATA_DATE": "2026-10-01"
+      }
+     },
+     {
+      "layer": "0 Managed Areas",
+      "point": [
+       35.0779,
+       -80.8818
+      ],
+      "attrs": {
+       "MA_ID": 1518,
+       "ACRES": 19.58,
+       "MA_NAME": "Polk Memorial State Historic Site",
+       "OWNER": "NC DNCR, Division of State Historic Sites and Properties",
+       "OWNER_TYPE": "State",
+       "CATEGORY": "Fee",
+       "GIS_SRC": "nc_mecklenburg_parcels_poly.shp",
+       "SRC_DATE": "2022-03-10",
+       "GAP_STATUS": "3 - managed for multiple uses - subject to extractive (e.g. mining or logging) or OHV use",
+       "SYMBOLOGY": "State",
+       "LABEL": "Polk Mem SHA",
+       "DATA_DATE": "2026-10-01"
+      }
+     },
+     {
+      "layer": "0 Managed Areas",
+      "point": [
+       35.0089,
+       -79.6281
+      ],
+      "attrs": {
+       "MA_ID": 614,
+       "ACRES": 65210.35,
+       "MA_NAME": "Sandhills Game Land",
+       "OWNER": "NC Wildlife Resources Commission",
+       "OWNER_TYPE": "State",
+       "CATEGORY": "Fee",
+       "GIS_SRC": "WRC owned lands feature service",
+       "SRC_DATE": "2025-11-18",
+       "GAP_STATUS": "2 - managed for biodiversity - disturbance events suppressed",
+       "SYMBOLOGY": "State",
+       "LABEL": "Sandhills GL",
+       "DATA_DATE": "2026-10-01"
+      }
+     },
+     {
+      "layer": "0 Managed Areas",
+      "point": [
+       35.2846,
+       -82.7919
+      ],
+      "attrs": {
+       "MA_ID": 1564,
+       "ACRES": 1586.68,
+       "MA_NAME": "Pisgah National Forest - Looking Glass Rock Scenic Area",
+       "OWNER": "US Forest Service",
+       "OWNER_TYPE": "Federal",
+       "CATEGORY": "Fee",
+       "GIS_SRC": "pisgah_basic_own.shp",
+       "SRC_DATE": "2008-11",
+       "GAP_STATUS": "2 - managed for biodiversity - disturbance events suppressed",
+       "SYMBOLOGY": "Federal",
+       "LABEL": "Pisgah NF-Looking Glass Rock Scenic Area",
+       "DATA_DATE": "2026-10-01"
+      }
+     },
+     {
+      "layer": "0 Managed Areas",
+      "point": [
+       35.2846,
+       -82.7919
+      ],
+      "attrs": {
+       "MA_ID": 395,
+       "ACRES": 166009.68,
+       "MA_NAME": "Pisgah National Forest - Pisgah Ranger District",
+       "OWNER": "US Forest Service",
+       "OWNER_TYPE": "Federal",
+       "CATEGORY": "Fee",
+       "GIS_SRC": "SurfOwnClip2NFsNCwithDistrictID.shp",
+       "SRC_DATE": "2013-06-27",
+       "GAP_STATUS": "3 - managed for multiple uses - subject to extractive (e.g. mining or logging) or OHV use",
+       "SYMBOLOGY": "Federal",
+       "LABEL": "Pisgah NF-Pisgah RD",
+       "DATA_DATE": "2026-10-01"
+      }
+     },
+     {
+      "layer": "0 Managed Areas",
+      "point": [
+       35.2846,
+       -82.7919
+      ],
+      "attrs": {
+       "MA_ID": 23374,
+       "ACRES": 1739,
+       "MA_NAME": "Looking Glass Rock Special Interest Area",
+       "OWNER": "US Forest Service",
+       "OWNER_TYPE": "Federal",
+       "CATEGORY": "Other",
+       "GIS_SRC": "Final_Plan.gdb",
+       "SRC_DATE": "2023-02-17",
+       "GAP_STATUS": "1 - managed for biodiversity - disturbance events proceed or are mimicked",
+       "SYMBOLOGY": "Other Protection",
+       "LABEL": "Looking Glass Rock SIA",
+       "DATA_DATE": "2026-10-01"
+      }
+     },
+     {
+      "layer": "0 Managed Areas",
+      "point": [
+       35.0354,
+       -79.2065
+      ],
+      "attrs": {
+       "MA_ID": 948,
+       "ACRES": 1021.21,
+       "MA_NAME": "Nicholson Creek Game Land",
+       "OWNER": "NC Wildlife Resources Commission",
+       "OWNER_TYPE": "State",
+       "CATEGORY": "Fee",
+       "GIS_SRC": "2010 D3 GL Boundary.shp",
+       "SRC_DATE": "2010",
+       "GAP_STATUS": "2 - managed for biodiversity - disturbance events suppressed",
+       "SYMBOLOGY": "State",
+       "LABEL": "Nicholson Ck GL",
+       "DATA_DATE": "2026-10-01"
+      }
+     },
+     {
+      "layer": "0 Managed Areas",
+      "point": [
+       35.0354,
+       -79.2065
+      ],
+      "attrs": {
+       "MA_ID": 1592,
+       "ACRES": 827.27,
+       "MA_NAME": "Nicholson Creek Game Land Dedicated Nature Preserve",
+       "OWNER": "NC DNCR, Natural Heritage Program",
+       "OWNER_TYPE": "State",
+       "CATEGORY": "Easement",
+       "GIS_SRC": "NCNHP Biotics database",
+       "SRC_DATE": "2014-10",
+       "GAP_STATUS": "1 - managed for biodiversity - disturbance events proceed or are mimicked",
+       "SYMBOLOGY": "Dedicated Nature Preserve",
+       "LABEL": "Nicholson Ck GL DNP",
+       "DATA_DATE": "2026-10-01"
+      }
+     },
+     {
+      "layer": "0 Managed Areas",
+      "point": [
+       35.8428,
+       -80.131
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Managed Areas",
+      "point": [
+       35.0205,
+       -83.7854
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Managed Areas",
+      "point": [
+       36.0345,
+       -79.0489
+      ],
+      "attrs": {
+       "MA_ID": 13914,
+       "ACRES": 606.76,
+       "MA_NAME": "Triangle Land Conservancy Preserve",
+       "OWNER": "Triangle Land Conservancy",
+       "OWNER_TYPE": "Private",
+       "CATEGORY": "Fee",
+       "GIS_SRC": "land_projects_poly.shp",
+       "SRC_DATE": "2020-07-31",
+       "GAP_STATUS": "2 - managed for biodiversity - disturbance events suppressed",
+       "SYMBOLOGY": "Private",
+       "LABEL": "TLC Pres",
+       "DATA_DATE": "2026-10-01"
+      }
+     },
+     {
+      "layer": "0 Managed Areas",
+      "point": [
+       36.0345,
+       -79.0489
+      ],
+      "attrs": {
+       "MA_ID": 15834,
+       "ACRES": 605.18,
+       "MA_NAME": "Eno River Association Easement",
+       "OWNER": "Eno River Association",
+       "OWNER_TYPE": "Private",
+       "CATEGORY": "Easement",
+       "GIS_SRC": "ERA_2020_CEs.shp.shp",
+       "SRC_DATE": "2021-02-25",
+       "GAP_STATUS": "3 - managed for multiple uses - subject to extractive (e.g. mining or logging) or OHV use",
+       "SYMBOLOGY": "Easement",
+       "LABEL": "Eno R Assn Eas",
+       "DATA_DATE": "2026-10-01"
+      }
+     },
+     {
+      "layer": "0 Managed Areas",
+      "point": [
+       36.0345,
+       -79.0489
+      ],
+      "attrs": {
+       "MA_ID": 3615,
+       "ACRES": 263.1,
+       "MA_NAME": "NC Land and Water Fund Conservation Agreement",
+       "OWNER": "NC DNCR, NC Land and Water Fund",
+       "OWNER_TYPE": "State",
+       "CATEGORY": "Easement",
+       "GIS_SRC": "orange_72522.shp",
+       "SRC_DATE": "2022-07-24",
+       "GAP_STATUS": "2 - managed for biodiversity - disturbance events suppressed",
+       "SYMBOLOGY": "Easement",
+       "LABEL": "LWF Cons Agrmnt",
+       "DATA_DATE": "2026-10-01"
+      }
+     },
+     {
+      "layer": "0 Managed Areas",
+      "point": [
+       36.0345,
+       -79.0489
+      ],
+      "attrs": {
+       "MA_ID": 10401,
+       "ACRES": 162.37,
+       "MA_NAME": "Orange County Easement",
+       "OWNER": "Orange County",
+       "OWNER_TYPE": "Local Government",
+       "CATEGORY": "Easement",
+       "GIS_SRC": "ConservationEasements.shp",
+       "SRC_DATE": "2019-06-24",
+       "GAP_STATUS": "3 - managed for multiple uses - subject to extractive (e.g. mining or logging) or OHV use",
+       "SYMBOLOGY": "Easement",
+       "LABEL": "Orange Co Eas",
+       "DATA_DATE": "2026-10-01"
+      }
+     },
+     {
+      "layer": "0 Managed Areas",
+      "point": [
+       35.2604,
+       -77.5816
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Managed Areas",
+      "point": [
+       35.6898,
+       -80.4301
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Managed Areas",
+      "point": [
+       35.7806,
+       -78.6391
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Managed Areas",
+      "point": [
+       36.4771,
+       -78.3785
+      ],
+      "attrs": {
+       "MA_ID": 81,
+       "ACRES": 25509.53,
+       "MA_NAME": "Kerr Reservoir",
+       "OWNER": "US Army Corps of Engineers",
+       "OWNER_TYPE": "Federal",
+       "CATEGORY": "Fee",
+       "GIS_SRC": "Kerr_Reservoir.shp",
+       "SRC_DATE": "2011-12-22",
+       "GAP_STATUS": "3 - managed for multiple uses - subject to extractive (e.g. mining or logging) or OHV use",
+       "SYMBOLOGY": "Federal",
+       "LABEL": "Kerr Res",
+       "DATA_DATE": "2026-10-01"
+      }
+     },
+     {
+      "layer": "0 Managed Areas",
+      "point": [
+       34.862,
+       -78.7296
+      ],
+      "attrs": {
+       "MA_ID": 115,
+       "ACRES": 11077.15,
+       "MA_NAME": "Suggs Mill Pond Game Land",
+       "OWNER": "NC Wildlife Resources Commission",
+       "OWNER_TYPE": "State",
+       "CATEGORY": "Fee",
+       "GIS_SRC": "Game_Lands_-_detail.shp",
+       "SRC_DATE": "2022-02-18",
+       "GAP_STATUS": "2 - managed for biodiversity - disturbance events suppressed",
+       "SYMBOLOGY": "State",
+       "LABEL": "Suggs Mill Pond GL",
+       "DATA_DATE": "2026-10-01"
+      }
+     },
+     {
+      "layer": "0 Managed Areas",
+      "point": [
+       34.862,
+       -78.7296
+      ],
+      "attrs": {
+       "MA_ID": 3467,
+       "ACRES": 1181.43,
+       "MA_NAME": "NC Land and Water Fund Project",
+       "OWNER": "NC DNCR, NC Land and Water Fund",
+       "OWNER_TYPE": "State",
+       "CATEGORY": "Other",
+       "GIS_SRC": "eoy82421.shp",
+       "SRC_DATE": "2021-08-24",
+       "GAP_STATUS": "3 - managed for multiple uses - subject to extractive (e.g. mining or logging) or OHV use",
+       "SYMBOLOGY": "Other Protection",
+       "LABEL": "LWF Proj",
+       "DATA_DATE": "2026-10-01"
+      }
+     },
+     {
+      "layer": "0 Managed Areas",
+      "point": [
+       34.862,
+       -78.7296
+      ],
+      "attrs": {
+       "MA_ID": 99,
+       "ACRES": 10562.03,
+       "MA_NAME": "Suggs Mill Pond Game Land Dedicated Nature Preserve",
+       "OWNER": "NC DNCR, Natural Heritage Program",
+       "OWNER_TYPE": "State",
+       "CATEGORY": "Easement",
+       "GIS_SRC": "NCNHP Biotics database",
+       "SRC_DATE": "2014-10",
+       "GAP_STATUS": "1 - managed for biodiversity - disturbance events proceed or are mimicked",
+       "SYMBOLOGY": "Dedicated Nature Preserve",
+       "LABEL": "Suggs Mill Pond GL DNP",
+       "DATA_DATE": "2026-10-01"
+      }
+     }
+    ]
+   },
+   {
+    "st": "NC",
+    "url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/gamelands_general/FeatureServer/21",
+    "note": "NC NCWRC (owner ncwildlife.gov)",
+    "hits": [
+     {
+      "layer": "21 Game Lands - general",
+      "point": [
+       35.4715,
+       -76.8144
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "21 Game Lands - general",
+      "point": [
+       35.4769,
+       -76.8138
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "21 Game Lands - general",
+      "point": [
+       35.1529,
+       -84.1791
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "21 Game Lands - general",
+      "point": [
+       35.1472,
+       -84.1797
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "21 Game Lands - general",
+      "point": [
+       36.4312,
+       -81.1544
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "21 Game Lands - general",
+      "point": [
+       35.7617,
+       -82.9778
+      ],
+      "attrs": {
+       "GML_HAB": "Pisgah",
+       "SUM_ACRES": 517773.8199187395,
+       "GameLandID": 57
+      }
+     },
+     {
+      "layer": "21 Game Lands - general",
+      "point": [
+       35.7273,
+       -78.2057
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "21 Game Lands - general",
+      "point": [
+       35.0779,
+       -80.8818
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "21 Game Lands - general",
+      "point": [
+       35.0089,
+       -79.6281
+      ],
+      "attrs": {
+       "GML_HAB": "Sandhills",
+       "SUM_ACRES": 65234.917326941526,
+       "GameLandID": 65
+      }
+     },
+     {
+      "layer": "21 Game Lands - general",
+      "point": [
+       35.2846,
+       -82.7919
+      ],
+      "attrs": {
+       "GML_HAB": "Pisgah",
+       "SUM_ACRES": 517773.8199187395,
+       "GameLandID": 57
+      }
+     },
+     {
+      "layer": "21 Game Lands - general",
+      "point": [
+       35.0354,
+       -79.2065
+      ],
+      "attrs": {
+       "GML_HAB": "Nicholson Creek",
+       "SUM_ACRES": 1021.209950339255,
+       "GameLandID": 52
+      }
+     },
+     {
+      "layer": "21 Game Lands - general",
+      "point": [
+       35.8428,
+       -80.131
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "21 Game Lands - general",
+      "point": [
+       35.0205,
+       -83.7854
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "21 Game Lands - general",
+      "point": [
+       36.0345,
+       -79.0489
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "21 Game Lands - general",
+      "point": [
+       35.2604,
+       -77.5816
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "21 Game Lands - general",
+      "point": [
+       35.6898,
+       -80.4301
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "21 Game Lands - general",
+      "point": [
+       35.7806,
+       -78.6391
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "21 Game Lands - general",
+      "point": [
+       36.4771,
+       -78.3785
+      ],
+      "attrs": {
+       "GML_HAB": "Vance",
+       "SUM_ACRES": 853.3889419294724,
+       "GameLandID": 79
+      }
+     },
+     {
+      "layer": "21 Game Lands - general",
+      "point": [
+       34.862,
+       -78.7296
+      ],
+      "attrs": {
+       "GML_HAB": "Suggs Mill Pond",
+       "SUM_ACRES": 11116.8747532618,
+       "GameLandID": 71
+      }
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+    "note": "BLM recreation site polygons within 2 km",
+    "hits": [
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       35.4715,
+       -76.8144
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       35.4769,
+       -76.8138
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       35.1529,
+       -84.1791
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       35.1472,
+       -84.1797
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       36.4312,
+       -81.1544
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       35.7617,
+       -82.9778
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       35.7273,
+       -78.2057
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       35.0779,
+       -80.8818
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       35.0089,
+       -79.6281
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       35.2846,
+       -82.7919
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       35.0354,
+       -79.2065
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       35.8428,
+       -80.131
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       35.0205,
+       -83.7854
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       36.0345,
+       -79.0489
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       35.2604,
+       -77.5816
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       35.6898,
+       -80.4301
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       35.7806,
+       -78.6391
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       36.4771,
+       -78.3785
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       34.862,
+       -78.7296
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+    "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+    "hits": [
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       35.4715,
+       -76.8144
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       35.4769,
+       -76.8138
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       35.1529,
+       -84.1791
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       35.1472,
+       -84.1797
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       36.4312,
+       -81.1544
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       35.7617,
+       -82.9778
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       35.7273,
+       -78.2057
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       35.0779,
+       -80.8818
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       35.0089,
+       -79.6281
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       35.2846,
+       -82.7919
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       35.0354,
+       -79.2065
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       35.8428,
+       -80.131
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       35.0205,
+       -83.7854
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       36.0345,
+       -79.0489
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       35.2604,
+       -77.5816
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       35.6898,
+       -80.4301
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       35.7806,
+       -78.6391
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       36.4771,
+       -78.3785
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       34.862,
+       -78.7296
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+    "note": "NPS legal boundary",
+    "hits": [
+     {
+      "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+      "error": "{'code': 400, 'message': 'Cannot perform query. Invalid query parameters.', 'details': ['24204: The "
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 183,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
