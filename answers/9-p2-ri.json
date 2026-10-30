@@ -1,0 +1,288 @@
+{
+ "request": "requests/9-p2-ri.json",
+ "id": "9-p2-ri",
+ "chat": 9,
+ "kind": "probe",
+ "report": "p2 RI: 1 parks, 7 layers",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "p2 RI: 1 parks, 7 layers",
+  "probe": {
+   "about": "P-2 (HQ 6:20 PM): point-in-polygon at the pin of every open Fable-list park against every polygon layer in state-gis.json for the state + national layers (BLM rec polygons, FWS approved, NPS legal boundary). State RI: 1 parks. Refs in order of points: US-10545. Results to chat 8 / chat 3 (Fable file WORK LOG rows).",
+   "refs": [
+    "US-10545"
+   ],
+   "pointq": [
+    {
+     "st": "RI",
+     "url": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
+     "note": "RI Rhode Island DEM",
+     "points": [
+      [
+       41.522,
+       -71.6411
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "RI",
+     "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
+     "note": "RI Rhode Island DEM",
+     "points": [
+      [
+       41.522,
+       -71.6411
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "RI",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "note": "RI National Park Service (legal boundary)",
+     "points": [
+      [
+       41.522,
+       -71.6411
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "RI",
+     "url": "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3",
+     "note": "RI Rhode Island DEM (state conservation lan",
+     "points": [
+      [
+       41.522,
+       -71.6411
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "note": "BLM recreation site polygons within 2 km",
+     "points": [
+      [
+       41.522,
+       -71.6411
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+     "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+     "points": [
+      [
+       41.522,
+       -71.6411
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "note": "NPS legal boundary",
+     "points": [
+      [
+       41.522,
+       -71.6411
+      ]
+     ],
+     "dist": 100
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-30 01:51Z",
+ "results": {
+  "about": "P-2 (HQ 6:20 PM): point-in-polygon at the pin of every open Fable-list park against every polygon layer in state-gis.json for the state + national layers (BLM rec polygons, FWS approved, NPS legal boundary). State RI: 1 parks. Refs in order of points: US-10545. Results to chat 8 / chat 3 (Fable file WORK LOG rows).",
+  "date": "2026-10-30",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "RI",
+    "url": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
+    "note": "RI Rhode Island DEM",
+    "hits": [
+     {
+      "layer": "0 State Conservation Land",
+      "point": [
+       41.522,
+       -71.6411
+      ],
+      "attrs": {
+       "DEM_ID": "6078",
+       "DEM_DIV": "Forest Environment",
+       "DEM_AREA": "deCoppet Preserve",
+       "NAME": "deCoppett",
+       "ACQ_TYPE": "Fee Title",
+       "HUNTING": "No",
+       "FISHING": "Yes",
+       "Pub_Access": "YES",
+       "Poly_Src": "PSUR",
+       "Acres": 1825.22721331,
+       "BondFund": "No",
+       "NPS_6f": "N",
+       "PrimUse": "Management Area",
+       "ManArea": "Yes",
+       "DEM_Managed": "Yes",
+       "DeedAcres": 1825.18565039,
+       "USFW_GrntID": "NA",
+       "SurvURL": "https://rigov.sharepoint.com/sites/DEM-NR-PD-Team/Shared%20Documents/LandAcquisition/Legal_Records/6078%20de%20Coppet%20Survey.pdf",
+       "DeedURL": "https://rigov.sharepoint.com/sites/DEM-NR-PD-Team/Shared%20Documents/LandAcquisition/Legal_Records/6078%20DeCoppet%20Richmond%206078.pdf",
+       "Year": "2014"
+      }
+     }
+    ]
+   },
+   {
+    "st": "RI",
+    "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
+    "note": "RI Rhode Island DEM",
+    "hits": [
+     {
+      "layer": "0 ENV_Conservation_Lands_State_2026_spf",
+      "point": [
+       41.522,
+       -71.6411
+      ],
+      "attrs": {
+       "DEM_ID": "6078",
+       "DEM_DIV": "Forest Environment",
+       "DEM_AREA": "deCoppet Preserve",
+       "NAME": "deCoppett",
+       "ACQ_TYPE": "Fee Title",
+       "HUNTING": "No",
+       "FISHING": "Yes",
+       "Pub_Access": "YES",
+       "Poly_Src": "PSUR",
+       "Acres": 1825.22721331,
+       "BondFund": "No",
+       "NPS_6f": "N",
+       "PrimUse": "Management Area",
+       "ManArea": "Yes",
+       "DEM_Managed": "Yes",
+       "DeedAcres": 1825.18565039,
+       "FedAid": "No",
+       "USFW_GrntID": "NA",
+       "SurvURL": "https://rigov.sharepoint.com/sites/DEM-NR-PD-Team/Shared%20Documents/LandAcquisition/Legal_Records/6078%20de%20Coppet%20Survey.pdf",
+       "DeedURL": "https://rigov.sharepoint.com/sites/DEM-NR-PD-Team/Shared%20Documents/LandAcquisition/Legal_Records/6078%20DeCoppet%20Richmond%206078.pdf",
+       "Year": "2014"
+      }
+     }
+    ]
+   },
+   {
+    "st": "RI",
+    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+    "note": "RI National Park Service (legal boundary)",
+    "hits": [
+     {
+      "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+      "error": "{'code': 400, 'message': 'Cannot perform query. Invalid query parameters.', 'details': ['24204: The "
+     }
+    ]
+   },
+   {
+    "st": "RI",
+    "url": "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3",
+    "note": "RI Rhode Island DEM (state conservation lan",
+    "hits": [
+     {
+      "layer": "3 State Conservation Land",
+      "point": [
+       41.522,
+       -71.6411
+      ],
+      "attrs": {
+       "DEM_ID": "6078",
+       "DEM_DIV": "Forest Environment",
+       "DEM_AREA": "deCoppet Preserve",
+       "NAME": "deCoppett",
+       "ACQ_TYPE": "Fee Title",
+       "HUNTING": "No",
+       "FISHING": "Yes",
+       "Pub_Access": "YES",
+       "Poly_Src": "PSUR",
+       "Acres": 1825.22721331,
+       "BondFund": "No",
+       "NPS_6f": "N",
+       "PrimUse": "Management Area",
+       "ManArea": "Yes",
+       "DEM_Managed": "Yes",
+       "DeedAcres": 1825.18565039,
+       "FedAid": "No",
+       "USFW_GrntID": "NA",
+       "SurvURL": "https://rigov.sharepoint.com/sites/DEM-NR-PD-Team/Shared%20Documents/LandAcquisition/Legal_Records/6078%20de%20Coppet%20Survey.pdf",
+       "DeedURL": "https://rigov.sharepoint.com/sites/DEM-NR-PD-Team/Shared%20Documents/LandAcquisition/Legal_Records/6078%20DeCoppet%20Richmond%206078.pdf",
+       "Year": "2014"
+      }
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+    "note": "BLM recreation site polygons within 2 km",
+    "hits": [
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       41.522,
+       -71.6411
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+    "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+    "hits": [
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       41.522,
+       -71.6411
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+    "note": "NPS legal boundary",
+    "hits": [
+     {
+      "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+      "error": "{'code': 400, 'message': 'Cannot perform query. Invalid query parameters.', 'details': ['24204: The "
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 39,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
