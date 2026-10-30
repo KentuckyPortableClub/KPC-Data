@@ -1,0 +1,384 @@
+{
+ "request": "requests/9-cad-NB.json",
+ "id": "9-cad-NB",
+ "chat": 9,
+ "kind": "probe",
+ "report": "CA dive NB: re-run P-2 for 5 name-agreeing parks to get the layer URL",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "CA dive NB: re-run P-2 for 5 name-agreeing parks to get the layer URL",
+  "probe": {
+   "about": "Canada dive (HQ 9:30 AM): refs in order of points: CA-0793,CA-5154,CA-5202,CA-5203,CA-5259",
+   "refs": [
+    "CA-0793",
+    "CA-5154",
+    "CA-5202",
+    "CA-5203",
+    "CA-5259"
+   ],
+   "pointq": [
+    {
+     "st": "NB",
+     "url": "https://gis-erd-der.gnb.ca/server/rest/services/OpenData/WMZ/MapServer/0",
+     "note": "NB WMZ",
+     "points": [
+      [
+       45.1341,
+       -67.1107
+      ],
+      [
+       46.1576,
+       -63.8065
+      ],
+      [
+       45.0991,
+       -67.0342
+      ],
+      [
+       48.0092,
+       -64.4931
+      ],
+      [
+       45.8771,
+       -66.9779
+      ]
+     ]
+    },
+    {
+     "st": "NB",
+     "url": "https://geonb.snb.ca/arcgis/rest/services/GeoNB_DNR_ProvincialParks/MapServer/0",
+     "note": "NB-PP Govern",
+     "points": [
+      [
+       45.1341,
+       -67.1107
+      ],
+      [
+       46.1576,
+       -63.8065
+      ],
+      [
+       45.0991,
+       -67.0342
+      ],
+      [
+       48.0092,
+       -64.4931
+      ],
+      [
+       45.8771,
+       -66.9779
+      ]
+     ]
+    },
+    {
+     "st": "NB",
+     "url": "https://gis-erd-der.gnb.ca/server/rest/services/OpenData/PNAs/FeatureServer/0",
+     "note": "New Brunswic",
+     "points": [
+      [
+       45.1341,
+       -67.1107
+      ],
+      [
+       46.1576,
+       -63.8065
+      ],
+      [
+       45.0991,
+       -67.0342
+      ],
+      [
+       48.0092,
+       -64.4931
+      ],
+      [
+       45.8771,
+       -66.9779
+      ]
+     ]
+    },
+    {
+     "st": "NB",
+     "url": "https://gis-erd-der.gnb.ca/server/rest/services/OpenData/Nature_Legacy_Protected_Areas/FeatureServer/0",
+     "note": "New Brunswic~1",
+     "points": [
+      [
+       45.1341,
+       -67.1107
+      ],
+      [
+       46.1576,
+       -63.8065
+      ],
+      [
+       45.0991,
+       -67.0342
+      ],
+      [
+       48.0092,
+       -64.4931
+      ],
+      [
+       45.8771,
+       -66.9779
+      ]
+     ]
+    },
+    {
+     "st": "NB",
+     "url": "https://gis-erd-der.gnb.ca/server/rest/services/OpenData/WildlifeRefuge/MapServer/0",
+     "note": "New Brunswic~2",
+     "points": [
+      [
+       45.1341,
+       -67.1107
+      ],
+      [
+       46.1576,
+       -63.8065
+      ],
+      [
+       45.0991,
+       -67.0342
+      ],
+      [
+       48.0092,
+       -64.4931
+      ],
+      [
+       45.8771,
+       -66.9779
+      ]
+     ]
+    },
+    {
+     "st": "NB",
+     "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/10",
+     "note": "Ontario fede",
+     "points": [
+      [
+       45.1341,
+       -67.1107
+      ],
+      [
+       46.1576,
+       -63.8065
+      ],
+      [
+       45.0991,
+       -67.0342
+      ],
+      [
+       48.0092,
+       -64.4931
+      ],
+      [
+       45.8771,
+       -66.9779
+      ]
+     ]
+    },
+    {
+     "st": "NB",
+     "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "note": "cpcad",
+     "points": [
+      [
+       45.1341,
+       -67.1107
+      ],
+      [
+       46.1576,
+       -63.8065
+      ],
+      [
+       45.0991,
+       -67.0342
+      ],
+      [
+       48.0092,
+       -64.4931
+      ],
+      [
+       45.8771,
+       -66.9779
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-30 14:30Z",
+ "results": {
+  "about": "Canada dive (HQ 9:30 AM): refs in order of points: CA-0793,CA-5154,CA-5202,CA-5203,CA-5259",
+  "date": "2026-10-30",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "NB",
+    "url": "https://gis-erd-der.gnb.ca/server/rest/services/OpenData/WMZ/MapServer/0",
+    "note": "NB WMZ",
+    "hits": [
+     {
+      "layer": "https://gis-erd-der.gnb.ca/server/rest/services/OpenData/WMZ/MapServer/0",
+      "error": "{'code': 400, 'message': 'Failed to execute query.', 'details': []}"
+     }
+    ]
+   },
+   {
+    "st": "NB",
+    "url": "https://geonb.snb.ca/arcgis/rest/services/GeoNB_DNR_ProvincialParks/MapServer/0",
+    "note": "NB-PP Govern",
+    "hits": [
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       45.1341,
+       -67.1107
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       46.1576,
+       -63.8065
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       45.0991,
+       -67.0342
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       48.0092,
+       -64.4931
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Provincial Parks",
+      "point": [
+       45.8771,
+       -66.9779
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "NB",
+    "url": "https://gis-erd-der.gnb.ca/server/rest/services/OpenData/PNAs/FeatureServer/0",
+    "note": "New Brunswic",
+    "hits": [
+     {
+      "layer": "https://gis-erd-der.gnb.ca/server/rest/services/OpenData/PNAs/FeatureServer/0",
+      "error": "{'code': 400, 'message': 'Unable to complete operation.', 'details': ['Unable to perform query opera"
+     }
+    ]
+   },
+   {
+    "st": "NB",
+    "url": "https://gis-erd-der.gnb.ca/server/rest/services/OpenData/Nature_Legacy_Protected_Areas/FeatureServer/0",
+    "note": "New Brunswic~1",
+    "hits": [
+     {
+      "layer": "https://gis-erd-der.gnb.ca/server/rest/services/OpenData/Nature_Legacy_Protected_Areas/FeatureServer/0",
+      "error": "{'code': 400, 'message': 'Unable to complete operation.', 'details': ['Unable to perform query opera"
+     }
+    ]
+   },
+   {
+    "st": "NB",
+    "url": "https://gis-erd-der.gnb.ca/server/rest/services/OpenData/WildlifeRefuge/MapServer/0",
+    "note": "New Brunswic~2",
+    "hits": [
+     {
+      "layer": "https://gis-erd-der.gnb.ca/server/rest/services/OpenData/WildlifeRefuge/MapServer/0",
+      "error": "{'code': 400, 'message': 'Failed to execute query.', 'details': []}"
+     }
+    ]
+   },
+   {
+    "st": "NB",
+    "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/10",
+    "note": "Ontario fede",
+    "hits": [
+     {
+      "layer": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/10",
+      "error": "{'code': 400, 'message': 'Failed to execute query.', 'details': []}"
+     }
+    ]
+   },
+   {
+    "st": "NB",
+    "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+    "note": "cpcad",
+    "hits": [
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       45.1341,
+       -67.1107
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.1576,
+       -63.8065
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       45.0991,
+       -67.0342
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       48.0092,
+       -64.4931
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       45.8771,
+       -66.9779
+      ],
+      "nohit": true
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 69,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
