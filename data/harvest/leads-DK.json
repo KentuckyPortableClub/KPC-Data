@@ -95,6 +95,32 @@
       "Overdrev"
      ],
      "name_field": "natyp_navn"
+    },
+    {
+     "id": 4,
+     "name": "Beskyttede naturtyper",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "temakode",
+      "systid_fra",
+      "oprindkode",
+      "statuskode",
+      "off_kode",
+      "natyp_navn",
+      "aendr_kode",
+      "besig_dato",
+      "ObjectID",
+      "SHAPE"
+     ],
+     "records": 320074,
+     "sample": [
+      "Eng",
+      "Overdrev",
+      "Overdrev"
+     ],
+     "name_field": "natyp_navn"
     }
    ],
    "note": "",

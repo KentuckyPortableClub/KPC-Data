@@ -97,6 +97,36 @@
       "Condominios de Aldeia"
      ],
      "name_field": "nome_aviso"
+    },
+    {
+     "id": 0,
+     "name": "Candidaturas Aprovadas ICNF",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "id_aviso",
+      "id_candidatura",
+      "ano",
+      "nome_aviso",
+      "GlobalID",
+      "created_user",
+      "Shape__Area",
+      "Shape__Length",
+      "data_i",
+      "data_f",
+      "data_repro",
+      "finan_t_aprov",
+      "area_aprov_ha"
+     ],
+     "records": 342,
+     "sample": [
+      "Condominios de Aldeia",
+      "Condominios de Aldeia",
+      "Condominios de Aldeia"
+     ],
+     "name_field": "nome_aviso"
     }
    ],
    "note": "",
@@ -117,6 +147,88 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Limites das Reservas da Biosfera",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "id",
+      "geom",
+      "nome",
+      "area_ha"
+     ],
+     "records": 8,
+     "sample": [
+      "Berlengas",
+      "Boquilobo",
+      "Geres"
+     ],
+     "name_field": "nome"
+    },
+    {
+     "id": 1,
+     "name": "Zonamento das Reservas da Biosfera",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "id",
+      "geom",
+      "zone",
+      "zona_pt",
+      "area_ha",
+      "nome"
+     ],
+     "records": 57,
+     "sample": [
+      "Geres",
+      "Geres",
+      "Geres"
+     ],
+     "name_field": "nome"
+    },
+    {
+     "id": 0,
+     "name": "Limites das Reservas da Biosfera",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "id",
+      "nome",
+      "area_ha"
+     ],
+     "records": 8,
+     "sample": [
+      "Berlengas",
+      "Boquilobo",
+      "Geres"
+     ],
+     "name_field": "nome"
+    },
+    {
+     "id": 1,
+     "name": "Zonamento das Reservas da Biosfera",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "id",
+      "zone",
+      "zona_pt",
+      "area_ha",
+      "nome"
+     ],
+     "records": 57,
+     "sample": [
+      "Geres",
+      "Geres",
+      "Geres"
+     ],
+     "name_field": "nome"
+    },
     {
      "id": 0,
      "name": "Limites das Reservas da Biosfera",
@@ -546,7 +658,7 @@
      "name": "Áreas de Intervenção Específica",
      "geom": "Polygon",
      "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
+     "is": "known-good layer (chat 8)",
      "fields": [
       "objectid",
       "poap",
@@ -593,7 +705,7 @@
      "name": "Regimes de Proteção",
      "geom": "Polygon",
      "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
+     "is": "known-good layer (chat 8)",
      "fields": [
       "objectid",
       "poap",
@@ -687,6 +799,33 @@
       "Peneda / Geres"
      ],
      "name_field": "site_name"
+    },
+    {
+     "id": 1,
+     "name": "Habitats Naturais e Semi-Naturais PSRN2000",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "id",
+      "geom",
+      "site_code",
+      "site_name",
+      "cod_hab_n1",
+      "habitat_n1",
+      "cod_hab_n2",
+      "habitat_n2",
+      "cod_hab_n3",
+      "habitat_n3",
+      "area_ha"
+     ],
+     "records": 21105,
+     "sample": [
+      "Peneda / Geres",
+      "Peneda / Geres",
+      "Peneda / Geres"
+     ],
+     "name_field": "site_name"
     }
    ],
    "note": "",
@@ -707,6 +846,28 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Sítios de Importância Comunitária",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "id",
+      "gid",
+      "site_code",
+      "site_name",
+      "area__ha_",
+      "tipo"
+     ],
+     "records": 63,
+     "sample": [
+      "Alvão/Marão",
+      "Alvito/Cuba",
+      "Arade/Odelouca"
+     ],
+     "name_field": "site_name"
+    },
     {
      "id": 0,
      "name": "Sítios de Importância Comunitária",
@@ -895,6 +1056,69 @@
       "Alva da Senhora da Vitória"
      ],
      "name_field": "NOME"
+    },
+    {
+     "id": 0,
+     "name": "REFLOA_RF",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NOME",
+      "ENT_GES",
+      "GES_DR",
+      "FIRST_CODIGO",
+      "FIRST_ID_MAPER",
+      "FIRST_ID_RF",
+      "FIRST_TIPOLOGIA",
+      "FIRST_REGIME",
+      "FIRST_PROPRIEDA",
+      "SUM_AREA_HA",
+      "FIRST_REG_FLO",
+      "FIRST_GES_ICNF",
+      "FIRST_DR_Num",
+      "Shape__Area",
+      "Shape__Length",
+      "GlobalID",
+      "created_user",
+      "created_date",
+      "last_edited_user"
+     ],
+     "records": 211,
+     "sample": [
+      "Alva da Água de Madeiros",
+      "Alva da Mina de Azeche",
+      "Alva da Senhora da Vitória"
+     ],
+     "name_field": "NOME"
+    },
+    {
+     "id": 1,
+     "name": "REFLOA_AICNF",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "NOME",
+      "ENT_GES",
+      "FIRST_CODIGO",
+      "SUM_AREA_HA",
+      "FIRST_REG_FLO",
+      "GlobalID",
+      "created_user",
+      "created_date",
+      "last_edited_user",
+      "last_edited_date"
+     ],
+     "records": 196,
+     "sample": [
+      "Alva da Água de Madeiros",
+      "Alva da Mina de Azeche",
+      "Alva da Senhora da Vitória"
+     ],
+     "name_field": "NOME"
     }
    ],
    "note": "",
@@ -915,6 +1139,48 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Distribuição aves 2013-2018",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "id",
+      "code",
+      "maptype",
+      "category",
+      "isocode",
+      "refgrid",
+      "sensitive",
+      "species"
+     ],
+     "records": 194
+    },
+    {
+     "id": 1,
+     "name": "Distribuição aves 2008-2012",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "id",
+      "code",
+      "category",
+      "maptype",
+      "isocode",
+      "season",
+      "area",
+      "n2k_name"
+     ],
+     "records": 190,
+     "sample": [
+      "Milvus migrans",
+      "Milvus milvus",
+      "Circus aeruginosus"
+     ],
+     "name_field": "n2k_name"
+    },
     {
      "id": 0,
      "name": "Distribuição aves 2013-2018",
@@ -1583,6 +1849,95 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Áreas sujeitas a exploração extrativa",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "id",
+      "geom",
+      "peap",
+      "tipo_area",
+      "aie_cat",
+      "aie_nome",
+      "area_ha",
+      "aie_cod"
+     ],
+     "records": 6,
+     "sample": [
+      "Moleanos",
+      "Codaçal",
+      "Cabeça Veada"
+     ],
+     "name_field": "aie_nome"
+    },
+    {
+     "id": 1,
+     "name": "Áreas de especial interesse para a fauna",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "id",
+      "geom",
+      "peap",
+      "tipo_area",
+      "aie_cat",
+      "aie_nome",
+      "area_ha",
+      "aie_cod"
+     ],
+     "records": 17,
+     "sample": [
+      "Candeeiros Norte",
+      "Alecrineiros",
+      "Pena dos Corvos"
+     ],
+     "name_field": "aie_nome"
+    },
+    {
+     "id": 2,
+     "name": "Geossítios, sítios de interesse cultural e abrigos de especial interes",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "id",
+      "geom",
+      "peap",
+      "tipo_area",
+      "aie_nome",
+      "aie_cod",
+      "aie_cat",
+      "ESRI_OID"
+     ],
+     "records": 54
+    },
+    {
+     "id": 3,
+     "name": "Geossítios, sítios de interesse cultural e abrigos de especial interes",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "id",
+      "geom",
+      "aie_cod",
+      "peap",
+      "tipo_area",
+      "aie_cat",
+      "aie_nome"
+     ],
+     "records": 57,
+     "sample": [
+      "Complexo da Fórnia, Corte geológico do Barranco do",
+      "Complexo da Depressão de Alvados",
+      "Cós carvalhos"
+     ],
+     "name_field": "aie_nome"
+    },
     {
      "id": 0,
      "name": "Áreas sujeitas a exploração extrativa",
@@ -3110,6 +3465,22 @@
       "data"
      ],
      "records": 11297
+    },
+    {
+     "id": 0,
+     "name": "Atlas dos anfíbios e répteis",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "id",
+      "geom",
+      "objectid",
+      "especie",
+      "subesp",
+      "data"
+     ],
+     "records": 11297
     }
    ],
    "note": "",
@@ -3129,6 +3500,21 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Atlas dos morcegos",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "id",
+      "geom",
+      "objectid",
+      "especie",
+      "tipo"
+     ],
+     "records": 61
+    },
     {
      "id": 0,
      "name": "Atlas dos morcegos",
@@ -3178,6 +3564,26 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Reservas Biogenéticas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "id",
+      "geom",
+      "nome",
+      "area_ha"
+     ],
+     "records": 8,
+     "sample": [
+      "Berlengas",
+      "Mata da Margaraca",
+      "Matas de Palheiros/Albergaria"
+     ],
+     "name_field": "nome"
+    },
     {
      "id": 0,
      "name": "Reservas Biogenéticas",
@@ -3469,6 +3875,26 @@
       "Terras de Cavaleiros"
      ],
      "name_field": "nome"
+    },
+    {
+     "id": 1,
+     "name": "Geoparques",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "id",
+      "geom",
+      "nome",
+      "area_ha"
+     ],
+     "records": 6,
+     "sample": [
+      "Naturtejo da Meseta Meridional",
+      "Arouca",
+      "Terras de Cavaleiros"
+     ],
+     "name_field": "nome"
     }
    ],
    "note": "",
@@ -3489,6 +3915,43 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "II Aves - Censos geral",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "id",
+      "geom",
+      "quadricula",
+      "cod_especi",
+      "especie",
+      "cod_contat",
+      "descricao",
+      "nidifica"
+     ],
+     "records": 67103
+    },
+    {
+     "id": 1,
+     "name": "II Aves - Censos dirigido",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "id",
+      "geom",
+      "utm10tot_i",
+      "quadricula",
+      "cod_especi",
+      "especie",
+      "cod_contat",
+      "descricao",
+      "nidifica"
+     ],
+     "records": 3450
+    },
     {
      "id": 0,
      "name": "II Aves - Censos geral",
@@ -3694,6 +4157,63 @@
       "area_ha"
      ],
      "records": 674
+    },
+    {
+     "id": 0,
+     "name": "Índice de aridez 1980-2010",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "id",
+      "gid",
+      "grid_code",
+      "area_ha",
+      "indaride"
+     ],
+     "records": 536
+    },
+    {
+     "id": 1,
+     "name": "Índice de aridez 1960-1990",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "id",
+      "grid_code",
+      "area_ha",
+      "indaride"
+     ],
+     "records": 857
+    },
+    {
+     "id": 2,
+     "name": "Índice de aridez 1970-2000",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "id",
+      "grid_code",
+      "indaride",
+      "area_ha"
+     ],
+     "records": 439
+    },
+    {
+     "id": 3,
+     "name": "Índice de aridez 2000-2010",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "id",
+      "gridcode",
+      "indaride",
+      "area_ha"
+     ],
+     "records": 674
     }
    ],
    "note": "",
@@ -3714,6 +4234,29 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Conveção RAMSAR",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "id",
+      "geom",
+      "codigo",
+      "codigo_pt",
+      "nome",
+      "data_desig",
+      "area_ha"
+     ],
+     "records": 19,
+     "sample": [
+      "Estuário do Mondego",
+      "Estuário do Sado",
+      "Estuário do Tejo"
+     ],
+     "name_field": "nome"
+    },
     {
      "id": 0,
      "name": "Conveção RAMSAR",
@@ -3780,6 +4323,71 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Zonas de Proteção Especial",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "id",
+      "geom",
+      "site_code",
+      "site_name",
+      "tipo",
+      "area__ha_"
+     ],
+     "records": 42,
+     "sample": [
+      "Monchique",
+      "Caldeirão",
+      "Estuários dos Rios Minho e Coura"
+     ],
+     "name_field": "site_name"
+    },
+    {
+     "id": 0,
+     "name": "Zonas de Proteção Especial",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "id",
+      "site_code",
+      "site_name",
+      "tipo",
+      "area__ha_"
+     ],
+     "records": 42,
+     "sample": [
+      "Monchique",
+      "Caldeirão",
+      "Estuários dos Rios Minho e Coura"
+     ],
+     "name_field": "site_name"
+    },
+    {
+     "id": 1,
+     "name": "Sítios de Importância Comunitária",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "id",
+      "gid",
+      "site_code",
+      "site_name",
+      "area__ha_",
+      "tipo"
+     ],
+     "records": 63,
+     "sample": [
+      "Alvão/Marão",
+      "Alvito/Cuba",
+      "Arade/Odelouca"
+     ],
+     "name_field": "site_name"
+    },
     {
      "id": 0,
      "name": "Zonas de Proteção Especial",
@@ -4027,6 +4635,55 @@
       "Arrábida"
      ],
      "name_field": "nome_ap"
+    },
+    {
+     "id": 0,
+     "name": "RNAP - Limites",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "id",
+      "geom",
+      "nome_ap",
+      "classifica",
+      "publica1",
+      "publica2",
+      "jurisdicao",
+      "area_ha",
+      "sigla"
+     ],
+     "records": 56,
+     "sample": [
+      "Peneda-Gerês",
+      "Alvão",
+      "Arrábida"
+     ],
+     "name_field": "nome_ap"
+    },
+    {
+     "id": 0,
+     "name": "RNAP - Limites",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "id",
+      "nome_ap",
+      "classifica",
+      "publica1",
+      "publica2",
+      "jurisdicao",
+      "area_ha",
+      "sigla"
+     ],
+     "records": 56,
+     "sample": [
+      "Peneda-Gerês",
+      "Alvão",
+      "Arrábida"
+     ],
+     "name_field": "nome_ap"
     }
    ],
    "note": "",
@@ -4046,6 +4703,56 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Rede Primária FGC",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Cod_Troco",
+      "Cod_Seccao",
+      "Categoria",
+      "Rotacao",
+      "Resp_NsR",
+      "Aprov_PRA",
+      "D_AprovPRA",
+      "Area_ha",
+      "created_user_orig",
+      "created_date_orig",
+      "GlobalID"
+     ],
+     "records": 7229
+    },
+    {
+     "id": 3,
+     "name": "RPFGC em concurso",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Cod_Troco",
+      "Lote_CP10",
+      "Lote_CP21",
+      "Empresa_CP10",
+      "Empresa_CP21",
+      "Estado_CP10",
+      "Estado_CP21",
+      "Estruturante",
+      "Fonte_Geo",
+      "Data_Geo",
+      "CP10_Area",
+      "CP10_AInter",
+      "CP21_Area",
+      "CP21_AInter",
+      "Estado_CP05",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 741
+    },
     {
      "id": 0,
      "name": "Rede Primária FGC",
@@ -4254,6 +4961,51 @@
       "RIBEIRA DE AGUIAR"
      ],
      "name_field": "nome_zif"
+    },
+    {
+     "id": 0,
+     "name": "Zonas de Intervenção Florestal",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "id",
+      "geom",
+      "id_zif",
+      "anoconstit",
+      "mesconstit",
+      "nome_zif",
+      "area_ha"
+     ],
+     "records": 276,
+     "sample": [
+      "VARGE E GUADRAMIL",
+      "CHACIM E PEREDO",
+      "RIBEIRA DE AGUIAR"
+     ],
+     "name_field": "nome_zif"
+    },
+    {
+     "id": 0,
+     "name": "Zonas de Intervenção Florestal",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "id",
+      "id_zif",
+      "anoconstit",
+      "mesconstit",
+      "nome_zif",
+      "area_ha"
+     ],
+     "records": 276,
+     "sample": [
+      "VARGE E GUADRAMIL",
+      "CHACIM E PEREDO",
+      "RIBEIRA DE AGUIAR"
+     ],
+     "name_field": "nome_zif"
     }
    ],
    "note": "",
@@ -4275,6 +5027,49 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Zonas de Proteção Especial",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "id",
+      "geom",
+      "site_code",
+      "site_name",
+      "tipo",
+      "area__ha_"
+     ],
+     "records": 42,
+     "sample": [
+      "Monchique",
+      "Caldeirão",
+      "Estuários dos Rios Minho e Coura"
+     ],
+     "name_field": "site_name"
+    },
+    {
+     "id": 0,
+     "name": "Zonas de Proteção Especial",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "id",
+      "site_code",
+      "site_name",
+      "tipo",
+      "area__ha_"
+     ],
+     "records": 42,
+     "sample": [
+      "Monchique",
+      "Caldeirão",
+      "Estuários dos Rios Minho e Coura"
+     ],
+     "name_field": "site_name"
+    },
     {
      "id": 0,
      "name": "Zonas de Proteção Especial",
@@ -4763,6 +5558,52 @@
       "a_global"
      ],
      "records": 2804
+    },
+    {
+     "id": 0,
+     "name": "Distribuição de espécies - 2013-1018",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "id",
+      "objectid",
+      "code",
+      "maptype",
+      "category",
+      "refgrid",
+      "species",
+      "gr_taxon",
+      "region",
+      "a_range",
+      "a_popula",
+      "a_habitat",
+      "a_futuras",
+      "a_global",
+      "a_trend"
+     ],
+     "records": 378
+    },
+    {
+     "id": 1,
+     "name": "Distribuição de espécies - 2007-2012",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "id",
+      "art17_code",
+      "maptype",
+      "category",
+      "ms",
+      "gr_taxon",
+      "species",
+      "a_popula",
+      "a_habitat",
+      "a_futuras",
+      "a_global"
+     ],
+     "records": 2804
     }
    ],
    "note": "",
@@ -4783,6 +5624,46 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 7,
+     "name": "Cedro-do-atlas (cedrus atlantica)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "gid",
+      "reg_prov",
+      "area_ha",
+      "geom",
+      "nome_comum",
+      "nomw_cientifico"
+     ],
+     "records": 1,
+     "sample": [
+      "Cedro-do-atlas"
+     ],
+     "name_field": "nome_comum"
+    },
+    {
+     "id": 12,
+     "name": "Freixo-nacional (fraxinus angustifolia)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "gid",
+      "reg_prov",
+      "area_ha",
+      "geom",
+      "nome_comum",
+      "nome_cientifico"
+     ],
+     "records": 1,
+     "sample": [
+      "Freixo-nacional"
+     ],
+     "name_field": "nome_comum"
+    },
     {
      "id": 7,
      "name": "Cedro-do-atlas (cedrus atlantica)",
@@ -4919,6 +5800,25 @@
       "Shape__Length"
      ],
      "records": 27505
+    },
+    {
+     "id": 0,
+     "name": "UNM_ClassePerigosidade",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "objectid",
+      "Perigosidade",
+      "ClassePerigosidade",
+      "Ano",
+      "Maquina1",
+      "AreaBIntersect",
+      "ProgramaFinanciamento",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 27505
     }
    ],
    "note": "",
@@ -4940,6 +5840,53 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "SF_MATRIZ_3857",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "nregisto",
+      "rvf",
+      "areapoly",
+      "codequipa",
+      "pp_sf",
+      "usomaquina",
+      "maquinaunm",
+      "alfaiaunm",
+      "dataactividade",
+      "datainicio",
+      "datafim",
+      "nsapadoresflorestais",
+      "kmviatura",
+      "idtipo",
+      "idsubtipo",
+      "idintervencao",
+      "idservico",
+      "idunidades",
+      "quantidade",
+      "observ"
+     ],
+     "records": 79
+    },
+    {
+     "id": 2,
+     "name": "SF_Poligonos_3857",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "area_ha",
+      "perimetro",
+      "GlobalID",
+      "nregisto",
+      "OBJECTID",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 64
+    },
     {
      "id": 0,
      "name": "SF_MATRIZ_3857",
@@ -5100,6 +6047,30 @@
       "Maquina3"
      ],
      "records": 3025
+    },
+    {
+     "id": 8,
+     "name": "EXECPoligonos",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Entidade",
+      "usosolo",
+      "emincendio",
+      "Area_ha",
+      "ano",
+      "AmbitoTerr",
+      "nuts3_cod",
+      "Shape__Area",
+      "Shape__Length",
+      "GlobalID",
+      "Maquina1",
+      "Maquina2",
+      "Maquina3"
+     ],
+     "records": 3025
     }
    ],
    "note": "",
@@ -5120,6 +6091,42 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "FC_PedidoTratores",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "GlobalID",
+      "datareq",
+      "regiao",
+      "entidade",
+      "nome",
+      "local_interv",
+      "tipotrabalho",
+      "maquina",
+      "alfaia",
+      "data_inicio",
+      "data_fim",
+      "info_acessos",
+      "notas",
+      "n_registo",
+      "username",
+      "palavrapasse",
+      "area_ha",
+      "perimetro_km",
+      "caract",
+      "OBJECTID"
+     ],
+     "records": 11,
+     "sample": [
+      "antonio ",
+      "Pedro Monteiro",
+      "Rui Almeida"
+     ],
+     "name_field": "nome"
+    },
     {
      "id": 0,
      "name": "FC_PedidoTratores",
@@ -5305,6 +6312,53 @@
       "Shape__Length"
      ],
      "records": 86
+    },
+    {
+     "id": 0,
+     "name": "FC_MatrizTrabalhoRealizado",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "GlobalID",
+      "operador",
+      "idmaquina",
+      "idalfaia",
+      "datahorainicio",
+      "datahorafim",
+      "nhorastrabalho",
+      "danospatrimonio",
+      "danosequipamento",
+      "utilizador",
+      "palavrapasse",
+      "usosolo",
+      "op",
+      "os",
+      "declive",
+      "pedregosidade",
+      "temarvores",
+      "povoamento",
+      "linhasrvd",
+      "afloramrochosos"
+     ],
+     "records": 34
+    },
+    {
+     "id": 2,
+     "name": "FC_TrabalhoRealizado_poligono",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "GlobalID",
+      "n_registo",
+      "OBJECTID",
+      "Area_ha",
+      "Perimetro_km",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 86
     }
    ],
    "note": "",
@@ -5325,6 +6379,34 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "PMDFCI",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "DICO",
+      "Distrito",
+      "CONCELHO",
+      "Morada",
+      "Localidade",
+      "Telefone",
+      "email",
+      "web",
+      "Nome",
+      "LinkPublico",
+      "GeraçãoPlano",
+      "Em_Vigor_Actualizado",
+      "Data_Desactualizacao",
+      "LinkMapa",
+      "DOCs",
+      "Descarregar_IG",
+      "AREA_HA",
+      "ESRI_OID"
+     ],
+     "records": 278
+    },
     {
      "id": 0,
      "name": "PMDFCI",
@@ -5753,6 +6835,36 @@
       "datainicio"
      ],
      "records": 311
+    },
+    {
+     "id": 0,
+     "name": "FC_SF_ActividadeDiaria",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "dataactividade",
+      "nsapadoresflorestais",
+      "kmviatura",
+      "idtipo",
+      "idsubtipo",
+      "idservico",
+      "idintervencao",
+      "idunidades",
+      "quantidade",
+      "area_ha",
+      "perimetro",
+      "GlobalID",
+      "OBJECTID",
+      "pp_sf",
+      "codequipa",
+      "observ",
+      "usomaquina",
+      "maquinaunm",
+      "alfaiaunm",
+      "datainicio"
+     ],
+     "records": 311
     }
    ],
    "note": "",
@@ -5773,6 +6885,30 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Alterações REFLOA",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "OBJECTID",
+      "Tipo",
+      "Data",
+      "UF",
+      "Cod_UF",
+      "Area_ha",
+      "P_Rubus",
+      "P_Rubus_Link",
+      "DataEdicao",
+      "Editor",
+      "TipoGeral",
+      "Shape__Area",
+      "Shape__Length",
+      "Notas"
+     ],
+     "records": 140
+    },
     {
      "id": 0,
      "name": "Alterações REFLOA",
@@ -5945,6 +7081,59 @@
       "Shape__Length"
      ],
      "records": 0
+    },
+    {
+     "id": 0,
+     "name": "FC_AlertasREFLOA",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "GlobalID",
+      "regiao",
+      "tipo_apf",
+      "nome_apf",
+      "codigo",
+      "area_ha",
+      "regime",
+      "gestao",
+      "aux_zoom",
+      "proponente",
+      "prop_uorg",
+      "prop_email",
+      "inicio",
+      "fim",
+      "data_hora",
+      "OBJECTID",
+      "created_user",
+      "created_date",
+      "last_edited_user",
+      "last_edited_date"
+     ],
+     "records": 0,
+     "sample": [],
+     "name_field": "nome_apf"
+    },
+    {
+     "id": 1,
+     "name": "FC_LocaisAlertaREFLOA",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "tipo_imp",
+      "desc_imp",
+      "Link_Tab",
+      "GlobalID",
+      "OBJECTID",
+      "created_user",
+      "created_date",
+      "last_edited_user",
+      "last_edited_date",
+      "Shape__Area",
+      "Shape__Length"
+     ],
+     "records": 0
     }
    ],
    "note": "",
@@ -5965,6 +7154,28 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Proposta de republicação dos limites do PNSAC",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "OBJECTID",
+      "Shape",
+      "AP_SIGLA",
+      "AP_NOME",
+      "jurisdição",
+      "class",
+      "Shape_Length",
+      "Shape_Area"
+     ],
+     "records": 1,
+     "sample": [
+      "Parque Natural das Serras de Aire e Candeeiros"
+     ],
+     "name_field": "AP_NOME"
+    },
     {
      "id": 0,
      "name": "Proposta de republicação dos limites do PNSAC",
@@ -6029,6 +7240,57 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 3,
+     "name": "Georreferencia",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "objectid",
+      "globalid",
+      "uniquerowid",
+      "departamento",
+      "uo",
+      "created_user",
+      "created_date",
+      "last_edited_user",
+      "last_edited_date"
+     ],
+     "records": 0
+    },
+    {
+     "id": 4,
+     "name": "Registos",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "objectid",
+      "globalid",
+      "direcao",
+      "cod_entrada",
+      "ano",
+      "nome_req",
+      "morada_req",
+      "nif",
+      "tema_geral",
+      "tema_espec",
+      "tipologia",
+      "parecer",
+      "condiciona",
+      "situacao",
+      "observ",
+      "data_parecer",
+      "parentrowid",
+      "created_user",
+      "created_date",
+      "last_edited_user"
+     ],
+     "records": 0,
+     "sample": [],
+     "name_field": "nome_req"
+    },
     {
      "id": 3,
      "name": "Georreferencia",
@@ -7039,6 +8301,34 @@
       "geom"
      ],
      "records": 345
+    },
+    {
+     "id": 0,
+     "name": "Atlas dos bivalves",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "gid",
+      "ano",
+      "bacia",
+      "rio",
+      "anod_ana",
+      "anod_cyg",
+      "corb_flu",
+      "marg_mar",
+      "musc_lac",
+      "pisi_cas",
+      "pisi_mil",
+      "pisi_nit",
+      "pisi_per",
+      "pisi_sub",
+      "poto_lit",
+      "unio_del",
+      "unio_tum",
+      "geom"
+     ],
+     "records": 345
     }
    ],
    "note": "",
@@ -7112,6 +8402,33 @@
       "area_ha"
      ],
      "records": 5
+    },
+    {
+     "id": 0,
+     "name": "Direções Regionais da Conservação da Natureza e das Florestas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "id",
+      "geom",
+      "drcnf",
+      "area_ha"
+     ],
+     "records": 5
+    },
+    {
+     "id": 0,
+     "name": "Direções Regionais da Conservação da Natureza e das Florestas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons (no name field seen)",
+     "fields": [
+      "id",
+      "drcnf",
+      "area_ha"
+     ],
+     "records": 5
     }
    ],
    "note": "",
@@ -7131,6 +8448,78 @@
     "access"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "IFN - fotopontos 2015",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "id",
+      "usosolo",
+      "ocupprinci",
+      "ocupsecund",
+      "tipo",
+      "perccobert",
+      "sobcoberto",
+      "dimensmanc"
+     ],
+     "records": 356358
+    },
+    {
+     "id": 1,
+     "name": "IFN - fotopontos 2010",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "id",
+      "usosolo",
+      "ocupprinci",
+      "ocupsecund",
+      "tipo",
+      "perccobert",
+      "sobcoberto",
+      "dimensmanc"
+     ],
+     "records": 356358
+    },
+    {
+     "id": 2,
+     "name": "IFN - fotopontos 2005",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "id",
+      "usosolo",
+      "ocupprinci",
+      "ocupsecund",
+      "tipo",
+      "perccobert",
+      "sobcoberto",
+      "dimensmanc"
+     ],
+     "records": 356358
+    },
+    {
+     "id": 3,
+     "name": "IFN - fotopontos 1995",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "id",
+      "usosolo",
+      "ocupprinci",
+      "ocupsecund",
+      "tipo",
+      "perccobert",
+      "sobcoberto",
+      "dimensmanc"
+     ],
+     "records": 356358
+    },
     {
      "id": 0,
      "name": "IFN - fotopontos 2015",
@@ -7353,6 +8742,36 @@
       "localida_1"
      ],
      "records": 91
+    },
+    {
+     "id": 0,
+     "name": "Locais ICNF",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "id",
+      "objectid",
+      "codigo_loc",
+      "local",
+      "servico",
+      "abreviatur",
+      "x",
+      "y",
+      "designacao",
+      "arteria",
+      "morada_lin",
+      "morada_l_1",
+      "tipo",
+      "número",
+      "andar",
+      "lado",
+      "cp4",
+      "cp3",
+      "localidade",
+      "localida_1"
+     ],
+     "records": 91
     }
    ],
    "note": "",
@@ -7372,6 +8791,22 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Zonas Especiais de Conservação (ZEC)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "park / protected-area polygons with a name field",
+     "fields": [
+      "id",
+      "geom",
+      "site_code",
+      "site_name",
+      "tipo",
+      "area_ha"
+     ],
+     "count_err": "server error: {'code': 400, 'message': 'Failed to "
+    },
     {
      "id": 0,
      "name": "Zonas Especiais de Conservação (ZEC)",
@@ -7423,6 +8858,28 @@
     "area"
    ],
    "layers": [
+    {
+     "id": 0,
+     "name": "Proposta de republicação dos limites do PNLN",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "Shape",
+      "nome",
+      "classifica",
+      "jurisdicao",
+      "sigla",
+      "Shape_Length",
+      "Shape_Area"
+     ],
+     "records": 1,
+     "sample": [
+      "pnln"
+     ],
+     "name_field": "nome"
+    },
     {
      "id": 0,
      "name": "Proposta de republicação dos limites do PNLN",
@@ -7528,6 +8985,27 @@
       "Parque Nacional da Peneda-Gerês"
      ],
      "name_field": "Nome"
+    },
+    {
+     "id": 2,
+     "name": "Proposta de republicação dos limites do PNPG",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "Shape",
+      "Nome",
+      "Classifica",
+      "area",
+      "Jurisdicao",
+      "Sigla"
+     ],
+     "records": 1,
+     "sample": [
+      "Parque Nacional da Peneda-Gerês"
+     ],
+     "name_field": "Nome"
     }
    ],
    "note": "",
@@ -7549,6 +9027,30 @@
     "area"
    ],
    "layers": [
+    {
+     "id": 2,
+     "name": "Proposta de republicação dos limites do PNSSM",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "OBJECTID",
+      "Shape",
+      "Shape_Leng",
+      "nome",
+      "classifica",
+      "area_ha",
+      "jurisdicao",
+      "sigla",
+      "Shape_Length",
+      "Shape_Area"
+     ],
+     "records": 1,
+     "sample": [
+      "Parque Natural da Serra de São Mamede"
+     ],
+     "name_field": "nome"
+    },
     {
      "id": 2,
      "name": "Proposta de republicação dos limites do PNSSM",
@@ -8294,6 +9796,21 @@
       "x_coord"
      ],
      "records": 0
+    },
+    {
+     "id": 0,
+     "name": "Inventário Nacional de Geossítios",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "id",
+      "geom",
+      "geossitios",
+      "y_coord",
+      "x_coord"
+     ],
+     "records": 0
     }
    ],
    "note": "",
@@ -8352,6 +9869,26 @@
       "abunda_ds"
      ],
      "records": 0
+    },
+    {
+     "id": 0,
+     "name": "Regeneração natural - IFN",
+     "geom": "Point",
+     "gap": "access",
+     "is": "park points (sites / entrances)",
+     "fields": [
+      "id",
+      "geom",
+      "objectid",
+      "id_parcela",
+      "nutsii",
+      "nutsiii",
+      "op_mancha",
+      "cod",
+      "abundancia",
+      "abunda_ds"
+     ],
+     "records": 0
     }
    ],
    "note": "",
@@ -8371,6 +9908,23 @@
     "area"
    ],
    "layers": [
+    {
+     "id": 2,
+     "name": "RNLS_limites",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "FID",
+      "Shape",
+      "Nome",
+      "Classifica",
+      "Area_ha",
+      "jurisdicao",
+      "Sigla"
+     ],
+     "records": 1
+    },
     {
      "id": 2,
      "name": "RNLS_limites",

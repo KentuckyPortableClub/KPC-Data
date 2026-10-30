@@ -4,8 +4,11 @@
  "parks": 142,
  "open": 142,
  "key_candidates": 0,
- "layer_candidates": 60,
+ "layer_candidates": 52,
  "layers_tried": [
+  "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1",
+  "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1",
+  "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/2",
   "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1",
   "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/1",
   "https://dpmegis.dpme.gov.za/arcgis/rest/services/Environmental2/MapServer/2",
@@ -17,10 +20,7 @@
   "https://dffeportal.environment.gov.za/hosting/rest/services/PACA/SAPAD/MapServer/7",
   "https://dffeportal.environment.gov.za/hosting/rest/services/PACA/SAPAD/MapServer/8",
   "https://dffeportal.environment.gov.za/hosting/rest/services/PACA/SAPAD/MapServer/6",
-  "https://dffeportal.environment.gov.za/hosting/rest/services/PACA/SAPAD_Buffer/MapServer/1",
-  "https://dffeportal.environment.gov.za/hosting/rest/services/PACA/SAPAD_Buffer/MapServer/2",
-  "https://dffeportal.environment.gov.za/hosting/rest/services/PACA/SAPAD_Buffer/MapServer/3",
-  "https://dffeportal.environment.gov.za/hosting/rest/services/PACA/SAPAD_Buffer/MapServer/4"
+  "https://dffeportal.environment.gov.za/hosting/rest/services/PACA/SAPAD_Buffer/MapServer/1"
  ],
  "no_layer_groups": {
   "nature reserve": [
@@ -75,8 +75,7 @@
    "ZA-0062",
    "ZA-0184",
    "ZA-0051",
-   "ZA-0079",
-   "ZA-0049"
+   "ZA-0079"
   ],
   "marloth park": [
    "ZA-0143"
@@ -134,7 +133,7 @@
    "ZA-0081"
   ]
  },
- "layers_found_new": 7,
+ "layers_found_new": 0,
  "stage1": "paused (time): carries on next chunk",
- "seconds": 102
+ "seconds": 132
 }

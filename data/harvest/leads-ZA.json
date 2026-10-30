@@ -109,6 +109,74 @@
       "Shape_Area"
      ],
      "records": 48
+    },
+    {
+     "id": 1,
+     "name": "Protected Areas (DFFE2022Q1)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "Shape",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "PROC_DOC",
+      "Shape_Length",
+      "Shape_Area"
+     ],
+     "records": 1634
+    },
+    {
+     "id": 1,
+     "name": "Protected Areas (DFFE2022Q1)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "Shape",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "PROC_DOC",
+      "Shape_Length",
+      "Shape_Area"
+     ],
+     "records": 1634
+    },
+    {
+     "id": 2,
+     "name": "Conservation Areas (DFFE2022Q1)",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "Shape",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "Shape_Length",
+      "Shape_Area"
+     ],
+     "records": 48
     }
    ],
    "note": "known-good layer 1",
@@ -549,6 +617,78 @@
       "Shape.STLength()"
      ],
      "records": 1284
+    },
+    {
+     "id": 1,
+     "name": "ENV_DB.LDR.National_Park_10kmB",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "PROC_DOC",
+      "BUFF_DIST",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 1679
+    },
+    {
+     "id": 2,
+     "name": "ENV_DB.LDR.Nature_Reserve_5kmB",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "PROC_DOC",
+      "BUFF_DIST",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 29588
+    },
+    {
+     "id": 3,
+     "name": "ENV_DB.LDR.Forest_Nature_Reserve_5kmB",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "WDPAID",
+      "CUR_NME",
+      "WMCM_TYPE",
+      "MAJ_TYPE",
+      "SITE_TYPE",
+      "D_DCLAR",
+      "LEGAL_STAT",
+      "GIS_AREA",
+      "PROC_DOC",
+      "BUFF_DIST",
+      "Shape",
+      "Shape.STArea()",
+      "Shape.STLength()"
+     ],
+     "records": 1300
     }
    ],
    "note": "known-good service",

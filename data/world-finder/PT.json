@@ -3,11 +3,12 @@
  "run": "2026-10-30",
  "parks": 410,
  "open": 187,
- "key_candidates": 51,
+ "key_candidates": 3,
  "layer_candidates": 0,
  "layers_tried": [
   "https://sigservices.icnf.pt/server/rest/services/ApoiosICNF/Candidaturas__Aprovadas/FeatureServer/0",
   "https://sigservices.icnf.pt/server/rest/services/ApoiosICNF/Candidaturas__Aprovadas/FeatureServer/0",
+  "https://sigservices.icnf.pt/server/rest/services/ApoiosICNF/Candidaturas__Aprovadas/FeatureServer/0",
   "https://sigservices.icnf.pt/server/rest/services/BDG/BIOSFERA/FeatureServer/0",
   "https://sigservices.icnf.pt/server/rest/services/BDG/BIOSFERA/FeatureServer/1",
   "https://sigservices.icnf.pt/server/rest/services/BDG/BIOSFERA/FeatureServer/0",
@@ -16,11 +17,10 @@
   "https://sigservices.icnf.pt/server/rest/services/BDG/BIOSFERA/FeatureServer/1",
   "https://sigservices.icnf.pt/server/rest/services/BDG/BIOSFERA/FeatureServer/0",
   "https://sigservices.icnf.pt/server/rest/services/BDG/BIOSFERA/FeatureServer/1",
-  "https://sigservices.icnf.pt/server/rest/services/BDG/POAP/FeatureServer/5",
-  "https://sigservices.icnf.pt/server/rest/services/BDG/POAP/FeatureServer/7",
-  "https://sigservices.icnf.pt/server/rest/services/BDG/POAP/FeatureServer/8",
-  "https://sigservices.icnf.pt/server/rest/services/BDG/POAP/FeatureServer/9",
-  "https://sigservices.icnf.pt/server/rest/services/BDG/POAP/FeatureServer/5"
+  "https://sigservices.icnf.pt/server/rest/services/BDG/BIOSFERA/FeatureServer/0",
+  "https://sigservices.icnf.pt/server/rest/services/BDG/BIOSFERA/FeatureServer/1",
+  "https://sigservices.icnf.pt/server/rest/services/BDG/BIOSFERA/FeatureServer/0",
+  "https://sigservices.icnf.pt/server/rest/services/BDG/BIOSFERA/FeatureServer/1"
  ],
  "no_layer_groups": {
   "forest reserve": [
@@ -124,5 +124,5 @@
  },
  "layers_found_new": 0,
  "stage1": "paused (time): carries on next chunk",
- "seconds": 1552
+ "seconds": 1537
 }
