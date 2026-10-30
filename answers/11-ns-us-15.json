@@ -1,0 +1,566 @@
+{
+ "request": "requests/11-ns-us-15.json",
+ "id": "11-ns-us-15",
+ "chat": 11,
+ "kind": "map-check",
+ "report": "Chat 11 NOT SURE map check (us, US-NY, US-OH): screenshots in order: 1=US-8102 (record); 2=US-8102 (map); 3=US-8102 (map); 4=US-9095 (record); 5=US-9095 (map); 6=US-9095 (map); 7=US-9095 (map); 8=US-9423 (map). The map shots are centred on the POTA pin (zoom 14).",
+ "asked": {
+  "chat": 11,
+  "kind": "map-check",
+  "screenshot": true,
+  "report": "Chat 11 NOT SURE map check (us, US-NY, US-OH): screenshots in order: 1=US-8102 (record); 2=US-8102 (map); 3=US-8102 (map); 4=US-9095 (record); 5=US-9095 (map); 6=US-9095 (map); 7=US-9095 (map); 8=US-9423 (map). The map shots are centred on the POTA pin (zoom 14).",
+  "items": [
+   {
+    "ref": "US-8102",
+    "park": "Catharine Creek Wildlife Management Area",
+    "record": "Catharine Creek Fishing Access",
+    "area": "US-NY"
+   },
+   {
+    "ref": "US-8102",
+    "park": "Catharine Creek Wildlife Management Area",
+    "record": "Catharine Creek Fishing Access",
+    "area": "US-NY"
+   },
+   {
+    "ref": "US-9095",
+    "park": "Indian River Wildlife Management Area",
+    "record": "Indian River Fishing Access",
+    "area": "US-NY"
+   },
+   {
+    "ref": "US-9095",
+    "park": "Indian River Wildlife Management Area",
+    "record": "Indian River Fishing Access",
+    "area": "US-NY"
+   },
+   {
+    "ref": "US-9095",
+    "park": "Indian River WMA",
+    "record": "",
+    "area": "US-NY"
+   },
+   {
+    "ref": "US-9423",
+    "park": "Miller Nature Sanctuary State Nature Preserve",
+    "record": "RFGrrMrStNP",
+    "area": "US-OH"
+   }
+  ],
+  "urls": [
+   "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=236947&outFields=*&returnGeometry=false&f=html",
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-76.8554%2C42.3524&level=14",
+    "steps": [
+     {
+      "wait": 10000
+     }
+    ]
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-76.8554%2C42.3524&level=14",
+    "steps": [
+     {
+      "wait": 10000
+     }
+    ]
+   },
+   "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=236972&outFields=*&returnGeometry=false&f=html",
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-75.7468%2C44.2703&level=14",
+    "steps": [
+     {
+      "wait": 10000
+     }
+    ]
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-75.7468%2C44.2703&level=14",
+    "steps": [
+     {
+      "wait": 10000
+     }
+    ]
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-75.7468%2C44.2703&level=14",
+    "steps": [
+     {
+      "wait": 10000
+     }
+    ]
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-83.3936%2C39.2018&level=14",
+    "steps": [
+     {
+      "wait": 10000
+     }
+    ]
+   }
+  ]
+ },
+ "answered": "2026-10-30 17:56Z",
+ "results": [
+  {
+   "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=236947&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=236947&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: PADUS4_0_FeeManagers (ID: 0)",
+   "text": "ArcGIS REST Services Directory Login | Get Token\nHome > services > PAD-US > PAD_US (MapServer) > PADUS4_0_FeeManagers > query API Reference\nQuery: PADUS4_0_FeeManagers (ID: 0)\nWhere:\nText:\nObject IDs:\nTime:\nTime Relation:\nInclude start and end\nInclude start and exclude end\nExclude start and include end\nExclude start and end\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nReturn True Curves: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nReturn IDs Only: True False\nReturn Count Only: True False\nOrder By Fields:\nGroup By Fields (For Statistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nResult Offset:\nResult Record Count:\nReturn Extent Only: True False\nSQL Format:\nNone\nStandard\nNative\nDatum Transformation:\nParameter Values:\nRange Values:\nQuantization Parameters:\nFeature Encoding:\nEsriDefault\nFormat:\nHTML\nJSON\nKMZ\nGeoJSON\nPBF\n# records: 1\nOBJECTID: 236947\nFeatClass: Fee\nCategory: Fee\nOwn_Type: STAT\nOwn_Name: SDC\nLoc_Own: NYS Department of Environmental Conservation\nMang_Type: STAT\nMang_Name: SDC\nLoc_Mang: NYS Department of Environmental Conservation\nDes_Tp: SREC\nLoc_Ds: FISHING ACCESS\nUnit_Nm: Catharine Creek Fishing Access\nLoc_Nm: CATHARINE CREEK FISHING ACCESS\nState_Nm: NY\nAgg_Src: NYNHP_PADUS4_0Fee_ NYPAD_2_Fee_NY\nGIS_Src: DEC_GISCREATOR.dlf_dec_lands.sde\nSrc_Date: 2021/10/13\nGIS_Acres: 3\nSource_PAID: NYPAD-212140\nWDPA_Cd: 0\nPub_Access: OA\nAccess_Src: NYSDEC\nAccess_Dt: 2021\nGAP_Sts: 4\nGAPCdSrc: NYNHP\nGAPCdDt: 2021\nIUCN_Cat: Unassigned\nIUCNCtSrc: GAP - Default\nIUCNCtDt: 2024\nDate_Est:\nComments:\nEsmtHldr:\nEHoldTyp:\nWebServiceMangName: SDC\nTranspPct: null\nShape_Length: 1193.5462729623848\nShape_Area: 21733.356520994857",
+   "links": [
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/rest/login",
+     "text": "Login"
+    },
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/tokens/",
+     "text": "Get Token"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US",
+     "text": "PAD-US"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer",
+     "text": "PAD_US (MapServer)"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "text": "PADUS4_0_FeeManagers"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query",
+     "text": "query"
+    },
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/help/en/rest/router.html?f=rest/services/PAD-US/PAD_US/MapServer/0/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/236947",
+     "text": "236947"
+    }
+   ],
+   "screenshot": "answers/11-ns-us-15-1.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-76.8554%2C42.3524&level=14",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-76.8554%2C42.3524&level=14",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nTime series with field values\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\ndata.pa.gov | Esri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | EPA | NPS | US Census Bureau | USDA | USFWS\nPowered by Esri",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns-us-15-2.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-76.8554%2C42.3524&level=14",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-76.8554%2C42.3524&level=14",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nTime series with field values\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\ndata.pa.gov | Esri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | EPA | NPS | US Census Bureau | USDA | USFWS\nPowered by Esri",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns-us-15-3.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=236972&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=236972&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: PADUS4_0_FeeManagers (ID: 0)",
+   "text": "ArcGIS REST Services Directory Login | Get Token\nHome > services > PAD-US > PAD_US (MapServer) > PADUS4_0_FeeManagers > query API Reference\nQuery: PADUS4_0_FeeManagers (ID: 0)\nWhere:\nText:\nObject IDs:\nTime:\nTime Relation:\nInclude start and end\nInclude start and exclude end\nExclude start and include end\nExclude start and end\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nReturn True Curves: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nReturn IDs Only: True False\nReturn Count Only: True False\nOrder By Fields:\nGroup By Fields (For Statistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nResult Offset:\nResult Record Count:\nReturn Extent Only: True False\nSQL Format:\nNone\nStandard\nNative\nDatum Transformation:\nParameter Values:\nRange Values:\nQuantization Parameters:\nFeature Encoding:\nEsriDefault\nFormat:\nHTML\nJSON\nKMZ\nGeoJSON\nPBF\n# records: 1\nOBJECTID: 236972\nFeatClass: Fee\nCategory: Fee\nOwn_Type: STAT\nOwn_Name: SDC\nLoc_Own: NYS Department of Environmental Conservation\nMang_Type: STAT\nMang_Name: SDC\nLoc_Mang: NYS Department of Environmental Conservation\nDes_Tp: SREC\nLoc_Ds: FISHING ACCESS\nUnit_Nm: Indian River Fishing Access\nLoc_Nm: INDIAN RIVER FISHING ACCESS\nState_Nm: NY\nAgg_Src: NYNHP_PADUS4_0Fee_ NYPAD_2_Fee_NY\nGIS_Src: DEC_GISCREATOR.dlf_dec_lands.sde\nSrc_Date: 2021/10/13\nGIS_Acres: 0\nSource_PAID: NYPAD-210559\nWDPA_Cd: 0\nPub_Access: OA\nAccess_Src: NYSDEC\nAccess_Dt: 2021\nGAP_Sts: 4\nGAPCdSrc: NYNHP\nGAPCdDt: 2021\nIUCN_Cat: Unassigned\nIUCNCtSrc: GAP - Default\nIUCNCtDt: 2024\nDate_Est:\nComments:\nEsmtHldr:\nEHoldTyp:\nWebServiceMangName: SDC\nTranspPct: null\nShape_Length: 166.00434230538667\nShape_Area: 1719.986289467239",
+   "links": [
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/rest/login",
+     "text": "Login"
+    },
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/tokens/",
+     "text": "Get Token"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US",
+     "text": "PAD-US"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer",
+     "text": "PAD_US (MapServer)"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "text": "PADUS4_0_FeeManagers"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query",
+     "text": "query"
+    },
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/help/en/rest/router.html?f=rest/services/PAD-US/PAD_US/MapServer/0/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/236972",
+     "text": "236972"
+    }
+   ],
+   "screenshot": "answers/11-ns-us-15-4.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-75.7468%2C44.2703&level=14",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-75.7468%2C44.2703&level=14",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nTime series with field values\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nProvince of Ontario | Esri Canada | Esri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | EPA | NPS | US Census Bureau | USDA | USFWS | NRCan | Parks Canada\nPowered by Esri",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns-us-15-5.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-75.7468%2C44.2703&level=14",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-75.7468%2C44.2703&level=14",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nTime series with field values\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nProvince of Ontario | Esri Canada | Esri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | EPA | NPS | US Census Bureau | USDA | USFWS | NRCan | Parks Canada\nPowered by Esri",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns-us-15-6.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-75.7468%2C44.2703&level=14",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-75.7468%2C44.2703&level=14",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nTime series with field values\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nProvince of Ontario | Esri Canada | Esri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | EPA | NPS | US Census Bureau | USDA | USFWS | NRCan | Parks Canada\nPowered by Esri",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns-us-15-7.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-83.3936%2C39.2018&level=14",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-83.3936%2C39.2018&level=14",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nTime series with field values\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nOhio Rail Development Commission | VGIN | Esri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | EPA | NPS | US Census Bureau | USDA | USFWS\nPowered by Esri",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns-us-15-8.jpg",
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 103,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 2
+ },
+ "short": "8 result(s), 8 read OK, 8 screenshot(s)"
+}
