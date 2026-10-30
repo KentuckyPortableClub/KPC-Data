@@ -1,11 +1,11 @@
 # Closures super-bot: review (2026-10-30; RULE SHEET D; compared quietly, nothing on cards until GO)
 
-Run: 2026-10-30T09:47Z · requests 105 · pages 83 · PDFs 17 · sentences read 460 · unmatched 122 · look-alikes skipped 262 · sources failed 0
+Run: 2026-10-30T11:55Z · requests 105 · pages 83 · PDFs 17 · sentences read 460 · unmatched 122 · look-alikes skipped 261 · sources failed 0
 
-## Kentucky gate: **PASS** — 30 of 32 of Kentucky's own reader's items found here on the same park (93%); 55 only here
+## Kentucky gate: **PASS** — 30 of 32 of Kentucky's own reader's items found here on the same park (93%); 54 only here
 
-## US-KY (done, read 2026-10-30T09:47)
-whole 3 · part 0 · hunt 0 · seasonal 0 · note 78 · taken_down 0 · 0 banners
+## US-KY (done, read 2026-10-30T11:55)
+whole 0 · part 0 · hunt 0 · seasonal 0 · note 80 · taken_down 0 · 0 banners
 
 KDFWR pages with no hunt item (the real wording, TEST=1): ky-fw-quota: …Quota Hunts - Kentucky Department of Fish & Wildlife Skip to main navigation Skip to main content Ky. gov An Official Website of the Commonwealth of Kentucky Search Page Image Quota Hunts Home Hunt Qu… ‖ ky-fw-public-land: …to ensure the most enjoyable time afield. Always consult Kentucky's hunting and fishing guides because regulations differ between areas and sometimes change. Be aware of applicable hunting seasons or quota (drawing) hunts , which could impact your plans. If you have additional questions, call 1-800 ‖ ky-wma-us-10121: …8.28%, wetland 0.00%, open water 0.27%. Regulations Closures Due to Recent Storms The only areas open and accessible to the public are those adjacent to Highway 192. All other areas of the WMA remain closed due to extensive storm damage and ongoing cleanup efforts. Visitors to the accessible areas  ‖ ky-wma-us-10124: …water 0.59%. Regulations Fall Hunting Season: Open under statewide rules and regulations in effect for the county. Exceptions: Archery and crossbow hunting are prohibited on the main tract during the quota fox hunting field trials, Sept. 9-12, Sept. 23-26 and Feb. 24-27, 2027. Closed to modern gun  ‖ ky-wma-us-10128: page text 960 chars, no closed / quota word ‖ ky-wma-us-10131: page text 1034 chars, no closed / quota word ‖ ky-wma-us-10137: page text 1288 chars, no closed / quota word ‖ ky-wma-us-10138: …Heirs. Directions & Description The Hoskins HAA is divided into numerous tracts within Clay, Harlan, and Leslie Counties. Habitat types vary on the WMA, but a majority of the property is a mixture of closed canopy forest and reclaimed mine lands in varying stages of regeneration. Hunters should exp ‖ ky-wma-us-10139: page text 908 chars, no closed / quota word ‖ ky-wma-us-10140: page text 1039 chars, no closed / quota word ‖ ky-wma-us-10141: …all Hunting Season: Open under statewide rules and regulations in effect for the county. Directions & Description 4 miles west of Pineville on KY 92, borders Kentucky Ridge State Forest. Access roads closed except during open hunting seasons. Mountainous terrain, primarily forested with some early  ‖ ky-wma-us-10145: page text 824 chars, no closed / quota word
 
@@ -43,7 +43,7 @@ Unmatched (two parks or none; for chat 11 to judge):
 - BLIND RESTRICTIONS [ky-fw-public-land] · no park name shares a word
 - Big Rivers WMA (noon Central to 5 p.m.) in Union County and at the Roberts Tract [ky-fw-public-land] · nearest park name: Big Rivers Wildlife Management Area (US-3796)
 
-### Side-by-side vs Kentucky's own reader (kpc_park_alerts.py + hc-): matched 30 · only here 55 · only there 2
+### Side-by-side vs Kentucky's own reader (kpc_park_alerts.py + hc-): matched 30 · only here 54 · only there 2
 
 - ONLY THERE: US-3831 hc-US-3831-2026-11-15: Kentucky Fish & Wildlife: Nov 15–Jan 15: closed to all hunting and public access, except waterfowl a
 - ONLY THERE: US-7951 pa-nps-B489F041-FD1B-40F2-992D-9D36C841B7E5-US-7951: Green River Ferry Temporarily Out of Service — The Green River Ferry has temporarily suspended opera
