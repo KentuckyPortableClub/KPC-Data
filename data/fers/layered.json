@@ -1,6 +1,6 @@
 {
  "about": "Layered-land list (federal x state POTA pairs, rule R4; chat 2 bot, from chat 8's list): new pairs appended each run, filled columns kept. 'layered' = PAD-US fee owner at the patch: FED owns = layered (2-fer), state owns = hard boundary. Not the verdict: the line decides.",
- "made": "2026-10-29",
+ "made": "2026-10-30",
  "pairs": [
   {
    "area": "US-AK",
@@ -1823,6 +1823,94 @@
   {
    "area": "US-AZ",
    "refs": [
+    "US-1055",
+    "US-4429"
+   ],
+   "names": {
+    "US-1055": "Catalina State Park",
+    "US-4429": "Coronado National Forest"
+   },
+   "federal": [
+    "US-4429"
+   ],
+   "state": [
+    "US-1055"
+   ],
+   "pota_type": {
+    "US-1055": "State Park",
+    "US-4429": "National Forest"
+   },
+   "added": "2026-10-30",
+   "rows": 1,
+   "status": "candidate",
+   "acres": 5433.1,
+   "checked": "2026-10-29",
+   "center": [
+    32.433122,
+    -110.911719
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Coronado National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [],
+   "layered": "FED owns (layered: R4 2-fer)"
+  },
+  {
+   "area": "US-AZ",
+   "refs": [
+    "US-1063",
+    "US-4557"
+   ],
+   "names": {
+    "US-1063": "Oracle State Park",
+    "US-4557": "Arizona Trail National Scenic Trail"
+   },
+   "federal": [
+    "US-4557"
+   ],
+   "state": [
+    "US-1063"
+   ],
+   "pota_type": {
+    "US-1063": "State Park",
+    "US-4557": "National Scenic Trail"
+   },
+   "added": "2026-10-30",
+   "rows": 1,
+   "status": "candidate",
+   "acres": 0,
+   "checked": "2026-10-29",
+   "center": [
+    32.624112,
+    -110.719531
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Oracle State Park",
+     "Own_Type": "STAT",
+     "Own_Name": "SPR",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SPR",
+     "Des_Tp": "SP",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "STAT",
+   "other_parks_here": [],
+   "layered": "state owns (hard boundary: R4 not a 2-fer)"
+  },
+  {
+   "area": "US-AZ",
+   "refs": [
     "US-1068",
     "US-4428"
    ],
@@ -1908,6 +1996,50 @@
    "pad_at_patch": [
     {
      "Unit_Nm": "Tonto National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [],
+   "layered": "FED owns (layered: R4 2-fer)"
+  },
+  {
+   "area": "US-AZ",
+   "refs": [
+    "US-11979",
+    "US-4427"
+   ],
+   "names": {
+    "US-11979": "Allen Severson State Wildlife Area",
+    "US-4427": "Apache-Sitgreaves National Forest"
+   },
+   "federal": [
+    "US-4427"
+   ],
+   "state": [
+    "US-11979"
+   ],
+   "pota_type": {
+    "US-11979": "State Wildlife Area",
+    "US-4427": "National Forest"
+   },
+   "added": "2026-10-30",
+   "rows": 2,
+   "status": "candidate",
+   "acres": 199.3,
+   "checked": "2026-10-29",
+   "center": [
+    34.304376,
+    -110.027182
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Sitgreaves National Forest",
      "Own_Type": "FED",
      "Own_Name": "USFS",
      "Mang_Type": "FED",
@@ -2009,6 +2141,50 @@
    "owner_at_patch": "STAT",
    "other_parks_here": [],
    "layered": "state owns (hard boundary: R4 not a 2-fer)"
+  },
+  {
+   "area": "US-AZ",
+   "refs": [
+    "US-3672",
+    "US-4427"
+   ],
+   "names": {
+    "US-3672": "Fool Hollow Lake State Recreation Area",
+    "US-4427": "Apache-Sitgreaves National Forest"
+   },
+   "federal": [
+    "US-4427"
+   ],
+   "state": [
+    "US-3672"
+   ],
+   "pota_type": {
+    "US-3672": "State Recreation Area",
+    "US-4427": "National Forest"
+   },
+   "added": "2026-10-30",
+   "rows": 1,
+   "status": "candidate",
+   "acres": 717.5,
+   "checked": "2026-10-29",
+   "center": [
+    34.268649,
+    -110.074425
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Sitgreaves National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [],
+   "layered": "FED owns (layered: R4 2-fer)"
   },
   {
    "area": "US-CA",
@@ -3346,14 +3522,14 @@
    ],
    "rows": 3,
    "acres": 55.2,
-   "status": "merged into one row: US-1126+US-4454@are",
+   "status": "candidate",
    "checked": "2026-10-29",
    "kinds": [
     "area"
    ],
    "center": [
-    32.933836,
-    -116.506884
+    33.363469,
+    -116.576299
    ],
    "pad_at_patch": [
     {
@@ -3628,39 +3804,6 @@
   {
    "area": "US-CA",
    "refs": [
-    "US-1168",
-    "US-4540"
-   ],
-   "names": {
-    "US-1168": "MacKerricher State Park State Park",
-    "US-4540": "California Coastal National Monument National Monument"
-   },
-   "federal": [
-    "US-4540"
-   ],
-   "state": [
-    "US-1168"
-   ],
-   "ground": [],
-   "rows": 1,
-   "acres": 1.0,
-   "status": "not sure: the outlines overlap, but the ",
-   "checked": "2026-10-29",
-   "kinds": [
-    "area"
-   ],
-   "center": [
-    39.469947,
-    -123.809088
-   ],
-   "pad_at_patch": [],
-   "owner_at_patch": "no fee record",
-   "other_parks_here": [],
-   "layered": "mixed / unknown: look"
-  },
-  {
-   "area": "US-CA",
-   "refs": [
     "US-1171",
     "US-4459"
    ],
@@ -3711,49 +3854,6 @@
    "owner_at_patch": "FED",
    "other_parks_here": [],
    "layered": "FED owns (layered: R4 2-fer)"
-  },
-  {
-   "area": "US-CA",
-   "refs": [
-    "US-1172",
-    "US-4540"
-   ],
-   "names": {
-    "US-1172": "Mendocino Headlands State Park State Park",
-    "US-4540": "California Coastal National Monument National Monument"
-   },
-   "federal": [
-    "US-4540"
-   ],
-   "state": [
-    "US-1172"
-   ],
-   "ground": [],
-   "rows": 1,
-   "acres": 6.3,
-   "status": "not sure: the outlines overlap, but the ",
-   "checked": "2026-10-29",
-   "kinds": [
-    "area"
-   ],
-   "center": [
-    39.306866,
-    -123.812181
-   ],
-   "pad_at_patch": [
-    {
-     "Unit_Nm": "Mendocino Headlands State Park",
-     "Own_Type": "STAT",
-     "Own_Name": "SPR",
-     "Mang_Type": "STAT",
-     "Mang_Name": "SPR",
-     "Des_Tp": "SP",
-     "Category": "Fee"
-    }
-   ],
-   "owner_at_patch": "STAT",
-   "other_parks_here": [],
-   "layered": "state owns (hard boundary: R4 not a 2-fer)"
   },
   {
    "area": "US-CA",
@@ -4062,39 +4162,6 @@
     }
    ],
    "owner_at_patch": "FED + STAT",
-   "other_parks_here": [],
-   "layered": "mixed / unknown: look"
-  },
-  {
-   "area": "US-CA",
-   "refs": [
-    "US-1192",
-    "US-4540"
-   ],
-   "names": {
-    "US-1192": "Russian Gulch State Park State Park",
-    "US-4540": "California Coastal National Monument National Monument"
-   },
-   "federal": [
-    "US-4540"
-   ],
-   "state": [
-    "US-1192"
-   ],
-   "ground": [],
-   "rows": 1,
-   "acres": 1.0,
-   "status": "not sure: the outlines overlap, but the ",
-   "checked": "2026-10-29",
-   "kinds": [
-    "area"
-   ],
-   "center": [
-    39.32953,
-    -123.813618
-   ],
-   "pad_at_patch": [],
-   "owner_at_patch": "no fee record",
    "other_parks_here": [],
    "layered": "mixed / unknown: look"
   },
@@ -29150,7 +29217,7 @@
    "rows": 1,
    "acres": 15.0,
    "status": "candidate",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -29214,7 +29281,7 @@
    "rows": 1,
    "acres": 1.6,
    "status": "very tight: could be map error: check bo",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -29285,7 +29352,7 @@
    "rows": 4,
    "acres": 5.4,
    "status": "very tight: could be map error: check bo",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -29356,7 +29423,7 @@
    "rows": 1,
    "acres": 28.6,
    "status": "candidate",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -29420,7 +29487,7 @@
    "rows": 10,
    "acres": 154.0,
    "status": "candidate",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -29483,7 +29550,7 @@
    "rows": 1,
    "acres": 158.5,
    "status": "candidate",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -29528,7 +29595,7 @@
    "rows": 3,
    "acres": 50.7,
    "status": "candidate",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -29573,7 +29640,7 @@
    "rows": 2,
    "acres": 1324.0,
    "status": "candidate",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -29618,7 +29685,7 @@
    "rows": 8,
    "acres": 6705.8,
    "status": "candidate",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -29670,7 +29737,7 @@
    "rows": 1,
    "acres": 1.1,
    "status": "candidate",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -29715,7 +29782,7 @@
    "rows": 1,
    "acres": 3530.2,
    "status": "candidate",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -29767,7 +29834,7 @@
    "rows": 6,
    "acres": 2662.8,
    "status": "candidate",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -29821,7 +29888,7 @@
    "rows": 3,
    "acres": 310.5,
    "status": "candidate",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -29875,7 +29942,7 @@
    "rows": 1,
    "acres": 112.8,
    "status": "candidate",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -29920,7 +29987,7 @@
    "rows": 3,
    "acres": 1550.8,
    "status": "candidate",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -29974,7 +30041,7 @@
    "rows": 7,
    "acres": 404.0,
    "status": "candidate",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -30028,7 +30095,7 @@
    "rows": 1,
    "acres": 95.4,
    "status": "candidate",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -30089,7 +30156,7 @@
    "rows": 1,
    "acres": 6.0,
    "status": "candidate",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -30143,7 +30210,7 @@
    "rows": 1,
    "acres": 329.2,
    "status": "candidate",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -30192,84 +30259,57 @@
    "layered": "state owns (hard boundary: R4 not a 2-fer)"
   },
   {
-   "area": "US-NJ",
+   "area": "US-NM",
    "refs": [
-    "US-1613",
-    "US-4582"
+    "US-2686",
+    "US-4514"
    ],
    "names": {
-    "US-1613": "Delaware and Raritan Canal State Park State Park",
-    "US-4582": "Washington-Rochambeau Revolutionary Route National Historic Trail National Historic Trail"
+    "US-2686": "Bluewater State Park",
+    "US-4514": "Cibola National Forest"
    },
    "federal": [
-    "US-4582"
+    "US-4514"
    ],
    "state": [
-    "US-1613"
+    "US-2686"
    ],
-   "ground": [
-    "state"
-   ],
-   "rows": 9,
-   "acres": 0,
-   "status": "candidate",
-   "checked": "2026-10-29",
-   "kinds": [
-    "trail"
-   ],
-   "center": [
-    40.439949,
-    -74.611409
-   ],
-   "pad_at_patch": [],
-   "owner_at_patch": "no fee record",
-   "other_parks_here": [],
-   "layered": "mixed / unknown: look"
-  },
-  {
-   "area": "US-NJ",
-   "refs": [
-    "US-1628",
-    "US-4582"
-   ],
-   "names": {
-    "US-1628": "Princeton Battlefield State Park State Park",
-    "US-4582": "Washington-Rochambeau Revolutionary Route National Historic Trail National Historic Trail"
+   "pota_type": {
+    "US-2686": "State Park",
+    "US-4514": "National Forest"
    },
-   "federal": [
-    "US-4582"
-   ],
-   "state": [
-    "US-1628"
-   ],
-   "ground": [
-    "state"
-   ],
+   "added": "2026-10-30",
    "rows": 1,
-   "acres": 0,
-   "status": "candidate",
+   "status": "very tight: could be map error: check both official maps on the ground",
+   "acres": 1.5,
    "checked": "2026-10-29",
-   "kinds": [
-    "trail"
-   ],
    "center": [
-    40.335272,
-    -74.678891
+    35.304262,
+    -108.152999
    ],
    "pad_at_patch": [
     {
-     "Unit_Nm": "Princeton Battlefield State Park",
+     "Unit_Nm": "Cibola National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Bluewater Lake State Park",
      "Own_Type": "STAT",
-     "Own_Name": "SDC",
+     "Own_Name": "SPR",
      "Mang_Type": "STAT",
-     "Mang_Name": "SDNR",
+     "Mang_Name": "SPR",
      "Des_Tp": "SP",
      "Category": "Fee"
     }
    ],
-   "owner_at_patch": "STAT",
+   "owner_at_patch": "FED + STAT",
    "other_parks_here": [],
-   "layered": "state owns (hard boundary: R4 not a 2-fer)"
+   "layered": "mixed / unknown: look"
   },
   {
    "area": "US-NV",
@@ -30535,125 +30575,6 @@
   {
    "area": "US-NV",
    "refs": [
-    "US-13129",
-    "US-2631"
-   ],
-   "names": {
-    "US-13129": "Lahontan BLM Herd Management Area BLM Herd Management Area",
-    "US-2631": "Fort Churchill State Park State Park"
-   },
-   "federal": [
-    "US-13129"
-   ],
-   "state": [
-    "US-2631"
-   ],
-   "ground": [],
-   "rows": 1,
-   "acres": 342.9,
-   "status": "not sure: the agency ownership map did n",
-   "checked": "2026-10-29",
-   "kinds": [
-    "area"
-   ],
-   "center": [
-    39.311575,
-    -119.163473
-   ],
-   "pad_at_patch": [
-    {
-     "Unit_Nm": "Fort Churchill State Historic Park",
-     "Own_Type": "STAT",
-     "Own_Name": "SDOL",
-     "Mang_Type": "STAT",
-     "Mang_Name": "SPR",
-     "Des_Tp": "SHCA",
-     "Category": "Fee"
-    }
-   ],
-   "owner_at_patch": "STAT",
-   "other_parks_here": [],
-   "layered": "state owns (hard boundary: R4 not a 2-fer)"
-  },
-  {
-   "area": "US-NV",
-   "refs": [
-    "US-13129",
-    "US-4441"
-   ],
-   "names": {
-    "US-13129": "Lahontan BLM Herd Management Area BLM Herd Management Area",
-    "US-4441": "Lahontan State Recreation Area State Recreation Area"
-   },
-   "federal": [
-    "US-13129"
-   ],
-   "state": [
-    "US-4441"
-   ],
-   "ground": [],
-   "rows": 1,
-   "acres": 2065.2,
-   "status": "not sure: the agency ownership map did n",
-   "checked": "2026-10-29",
-   "kinds": [
-    "area"
-   ],
-   "center": [
-    39.323328,
-    -119.127146
-   ],
-   "pad_at_patch": [],
-   "owner_at_patch": "no fee record",
-   "other_parks_here": [],
-   "layered": "mixed / unknown: look"
-  },
-  {
-   "area": "US-NV",
-   "refs": [
-    "US-13139",
-    "US-2637"
-   ],
-   "names": {
-    "US-13139": "Muddy Mountains BLM Herd Management Area BLM Herd Management Area",
-    "US-2637": "Valley of Fire State Park State Park"
-   },
-   "federal": [
-    "US-13139"
-   ],
-   "state": [
-    "US-2637"
-   ],
-   "ground": [],
-   "rows": 1,
-   "acres": 8420.9,
-   "status": "not sure: the agency ownership map did n",
-   "checked": "2026-10-29",
-   "kinds": [
-    "area"
-   ],
-   "center": [
-    36.407745,
-    -114.46238
-   ],
-   "pad_at_patch": [
-    {
-     "Unit_Nm": "Valley of Fire State Park",
-     "Own_Type": "STAT",
-     "Own_Name": "SDOL",
-     "Mang_Type": "STAT",
-     "Mang_Name": "SPR",
-     "Des_Tp": "SP",
-     "Category": "Fee"
-    }
-   ],
-   "owner_at_patch": "STAT",
-   "other_parks_here": [],
-   "layered": "state owns (hard boundary: R4 not a 2-fer)"
-  },
-  {
-   "area": "US-NV",
-   "refs": [
     "US-13223",
     "US-4445"
    ],
@@ -30759,7 +30680,7 @@
    ],
    "rows": 2,
    "acres": 589.5,
-   "status": "merged into one row: US-2626+US-4391@are",
+   "status": "candidate",
    "checked": "2026-10-29",
    "kinds": [
     "area"
@@ -31215,7 +31136,7 @@
     "US-7494": "National Conservation Area"
    },
    "added": "2026-10-29",
-   "rows": 12,
+   "rows": 11,
    "status": "not sure: the agency ownership map did not answer",
    "acres": 541.1,
    "checked": "2026-10-29",
@@ -31602,50 +31523,6 @@
   {
    "area": "US-NV",
    "refs": [
-    "US-4444",
-    "US-9239"
-   ],
-   "names": {
-    "US-4444": "Rye Patch State Recreation Area",
-    "US-9239": "Black Rock Desert - High Rock Canyon Emigrant Trails National Conservation Area"
-   },
-   "federal": [
-    "US-9239"
-   ],
-   "state": [
-    "US-4444"
-   ],
-   "pota_type": {
-    "US-4444": "State Recreation Area",
-    "US-9239": "National Conservation Area"
-   },
-   "added": "2026-10-29",
-   "rows": 1,
-   "status": "not sure: the agency ownership map did not answer",
-   "acres": 1.0,
-   "checked": "2026-10-29",
-   "center": [
-    40.706078,
-    -118.298415
-   ],
-   "pad_at_patch": [
-    {
-     "Unit_Nm": "Rye Patch State Recreation Area",
-     "Own_Type": "FED",
-     "Own_Name": "USBR",
-     "Mang_Type": "FED",
-     "Mang_Name": "USBR",
-     "Des_Tp": "REC",
-     "Category": "Fee"
-    }
-   ],
-   "owner_at_patch": "FED",
-   "other_parks_here": [],
-   "layered": "FED owns (layered: R4 2-fer)"
-  },
-  {
-   "area": "US-NV",
-   "refs": [
     "US-4445",
     "US-4566"
    ],
@@ -31999,7 +31876,7 @@
    "rows": 2,
    "acres": 11.4,
    "status": "merged into one row: US-0482+US-9479@are",
-   "checked": "2026-10-28",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -32051,7 +31928,7 @@
    "rows": 4,
    "acres": 50.4,
    "status": "merged into one row: US-0483+US-1944@are",
-   "checked": "2026-10-28",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -32111,8 +31988,8 @@
    "ground": [],
    "rows": 1,
    "acres": 18.1,
-   "status": "not sure: the ownership map shows more t",
-   "checked": "2026-10-28",
+   "status": "candidate",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -32172,14 +32049,14 @@
    "ground": [],
    "rows": 5,
    "acres": 115.5,
-   "status": "merged into one row: US-1939+US-4521@are",
-   "checked": "2026-10-28",
+   "status": "candidate",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
    "center": [
-    39.525415,
-    -82.056738
+    39.540925,
+    -82.062273
    ],
    "pad_at_patch": [
     {
@@ -32225,7 +32102,7 @@
    "rows": 2,
    "acres": 6.6,
    "status": "very tight: could be map error: check bo",
-   "checked": "2026-10-28",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -32242,6 +32119,112 @@
      "Mang_Name": "USFS",
      "Des_Tp": "NF",
      "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [],
+   "layered": "FED owns (layered: R4 2-fer)"
+  },
+  {
+   "area": "US-OH",
+   "refs": [
+    "US-4521",
+    "US-9506"
+   ],
+   "names": {
+    "US-4521": "Wayne National Forest",
+    "US-9506": "Symmes Township State Wildlife Area"
+   },
+   "federal": [
+    "US-4521"
+   ],
+   "state": [
+    "US-9506"
+   ],
+   "pota_type": {
+    "US-4521": "National Forest",
+    "US-9506": "State Wildlife Area"
+   },
+   "added": "2026-10-30",
+   "rows": 1,
+   "status": "very tight: could be map error: check both official maps on the ground",
+   "acres": 3.5,
+   "checked": "2026-10-30",
+   "center": [
+    38.72093,
+    -82.503591
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Wayne National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Symmes Township Wildlife Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SDNR",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-OH",
+   "refs": [
+    "US-4521",
+    "US-9514"
+   ],
+   "names": {
+    "US-4521": "Wayne National Forest",
+    "US-9514": "Wallace H. O'Dowd State Wildlife Area"
+   },
+   "federal": [
+    "US-4521"
+   ],
+   "state": [
+    "US-9514"
+   ],
+   "pota_type": {
+    "US-4521": "National Forest",
+    "US-9514": "State Wildlife Area"
+   },
+   "added": "2026-10-30",
+   "rows": 10,
+   "status": "candidate",
+   "acres": 18.8,
+   "checked": "2026-10-30",
+   "center": [
+    39.557844,
+    -82.196944
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Wayne National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Sunday Creek Coal Co Wildlife Area",
+     "Own_Type": "UNK",
+     "Own_Name": "UNK",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SCA",
+     "Category": "Other"
     }
    ],
    "owner_at_patch": "FED",
@@ -33426,8 +33409,8 @@
    "acres": 117.1,
    "checked": "2026-10-29",
    "center": [
-    42.617917,
-    -121.083538
+    42.428337,
+    -121.557107
    ],
    "pad_at_patch": [
     {
@@ -33472,7 +33455,7 @@
    "ground": [
     "state"
    ],
-   "rows": 2,
+   "rows": 3,
    "acres": 0,
    "status": "candidate",
    "checked": "2026-10-29",
@@ -33480,8 +33463,8 @@
     "river"
    ],
    "center": [
-    45.139083,
-    -121.36129
+    45.139103,
+    -121.361382
    ],
    "pad_at_patch": [],
    "owner_at_patch": "no fee record",
@@ -33532,6 +33515,50 @@
    "owner_at_patch": "STAT",
    "other_parks_here": [],
    "layered": "state owns (hard boundary: R4 not a 2-fer)"
+  },
+  {
+   "area": "US-OR",
+   "refs": [
+    "US-10481",
+    "US-2840"
+   ],
+   "names": {
+    "US-10481": "Wild Horse Basin Wilderness Area",
+    "US-2840": "Lake Owyhee State Park"
+   },
+   "federal": [
+    "US-10481"
+   ],
+   "state": [
+    "US-2840"
+   ],
+   "pota_type": {
+    "US-10481": "Wilderness Area",
+    "US-2840": "State Park"
+   },
+   "added": "2026-10-30",
+   "rows": 4,
+   "status": "candidate",
+   "acres": 60.2,
+   "checked": "2026-10-29",
+   "center": [
+    43.594356,
+    -117.325434
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Owyhee Reservoir",
+     "Own_Type": "FED",
+     "Own_Name": "USBR",
+     "Mang_Type": "FED",
+     "Mang_Name": "USBR",
+     "Des_Tp": "RMA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [],
+   "layered": "FED owns (layered: R4 2-fer)"
   },
   {
    "area": "US-OR",
@@ -33629,6 +33656,66 @@
   {
    "area": "US-OR",
    "refs": [
+    "US-10502",
+    "US-4387"
+   ],
+   "names": {
+    "US-10502": "Elkhorn State Wildlife Area",
+    "US-4387": "Wallowa-Whitman National Forest"
+   },
+   "federal": [
+    "US-4387"
+   ],
+   "state": [
+    "US-10502"
+   ],
+   "pota_type": {
+    "US-10502": "State Wildlife Area",
+    "US-4387": "National Forest"
+   },
+   "added": "2026-10-30",
+   "rows": 1,
+   "status": "candidate",
+   "acres": 120.6,
+   "checked": "2026-10-29",
+   "center": [
+    44.681803,
+    -117.954925
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Whitman National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Elkhorn Wildlife Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SFW",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [
+    [
+     "US-2568",
+     "Elkhorn State Park",
+     "Elkhorn Wildlife Area",
+     "STAT"
+    ]
+   ],
+   "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-OR",
+   "refs": [
     "US-10503",
     "US-4381"
    ],
@@ -33684,6 +33771,50 @@
     ]
    ],
    "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-OR",
+   "refs": [
+    "US-10537",
+    "US-2840"
+   ],
+   "names": {
+    "US-10537": "Three Fingers BLM Herd Management Area",
+    "US-2840": "Lake Owyhee State Park"
+   },
+   "federal": [
+    "US-10537"
+   ],
+   "state": [
+    "US-2840"
+   ],
+   "pota_type": {
+    "US-10537": "BLM Herd Management Area",
+    "US-2840": "State Park"
+   },
+   "added": "2026-10-30",
+   "rows": 2,
+   "status": "not sure: the agency ownership map did not answer",
+   "acres": 502.9,
+   "checked": "2026-10-29",
+   "center": [
+    43.594416,
+    -117.318566
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Owyhee Reservoir",
+     "Own_Type": "FED",
+     "Own_Name": "USBR",
+     "Mang_Type": "FED",
+     "Mang_Name": "USBR",
+     "Des_Tp": "RMA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [],
+   "layered": "FED owns (layered: R4 2-fer)"
   },
   {
    "area": "US-OR",
@@ -33777,6 +33908,74 @@
     }
    ],
    "owner_at_patch": "FED + STAT",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-OR",
+   "refs": [
+    "US-12347",
+    "US-12954"
+   ],
+   "names": {
+    "US-12347": "Grande Ronde National Wild and Scenic River",
+    "US-12954": "Wenaha State Fish and Wildlife Area"
+   },
+   "federal": [
+    "US-12347"
+   ],
+   "state": [
+    "US-12954"
+   ],
+   "pota_type": {
+    "US-12347": "National Wild and Scenic River",
+    "US-12954": "State Fish and Wildlife Area"
+   },
+   "added": "2026-10-30",
+   "rows": 4,
+   "status": "candidate",
+   "acres": 198.3,
+   "checked": "2026-10-29",
+   "center": [
+    45.953672,
+    -117.42921
+   ],
+   "pad_at_patch": [],
+   "owner_at_patch": "no fee record",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-OR",
+   "refs": [
+    "US-12348",
+    "US-9564"
+   ],
+   "names": {
+    "US-12348": "Wallowa BLM Wild and Scenic River",
+    "US-9564": "Minam State Recreation Area"
+   },
+   "federal": [
+    "US-12348"
+   ],
+   "state": [
+    "US-9564"
+   ],
+   "pota_type": {
+    "US-12348": "BLM Wild and Scenic River",
+    "US-9564": "State Recreation Area"
+   },
+   "added": "2026-10-30",
+   "rows": 1,
+   "status": "candidate",
+   "acres": 0,
+   "checked": "2026-10-29",
+   "center": [
+    45.644154,
+    -117.733273
+   ],
+   "pad_at_patch": [],
+   "owner_at_patch": "no fee record",
    "other_parks_here": [],
    "layered": "mixed / unknown: look"
   },
@@ -33933,34 +34132,44 @@
   {
    "area": "US-OR",
    "refs": [
-    "US-12950",
-    "US-9159"
+    "US-12944",
+    "US-4385"
    ],
    "names": {
-    "US-12950": "Lower Deschutes State Fish and Wildlife Area State Fish and Wildlife Area",
-    "US-9159": "Lower Deschutes National Wild and Scenic River National Wild and Scenic River"
+    "US-12944": "Bridge Creek State Fish and Wildlife Area",
+    "US-4385": "Umatilla National Forest"
    },
    "federal": [
-    "US-9159"
+    "US-4385"
    ],
    "state": [
-    "US-12950"
+    "US-12944"
    ],
-   "ground": [],
-   "rows": 1,
-   "acres": 0,
+   "pota_type": {
+    "US-12944": "State Fish and Wildlife Area",
+    "US-4385": "National Forest"
+   },
+   "added": "2026-10-30",
+   "rows": 3,
    "status": "candidate",
+   "acres": 68.0,
    "checked": "2026-10-29",
-   "kinds": [
-    "same land"
-   ],
    "center": [
-    45.437462,
-    -120.852356
+    45.03517,
+    -118.898072
    ],
    "pad_at_patch": [
     {
-     "Unit_Nm": "Lower Deschutes Wildlife Area",
+     "Unit_Nm": "Umatilla National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Bridge Creek Wildlife Area",
      "Own_Type": "STAT",
      "Own_Name": "SFW",
      "Mang_Type": "STAT",
@@ -33969,9 +34178,9 @@
      "Category": "Fee"
     }
    ],
-   "owner_at_patch": "STAT",
+   "owner_at_patch": "FED + STAT",
    "other_parks_here": [],
-   "layered": "state owns (hard boundary: R4 not a 2-fer)"
+   "layered": "mixed / unknown: look"
   },
   {
    "area": "US-OR",
@@ -34093,6 +34302,66 @@
    "owner_at_patch": "FED",
    "other_parks_here": [],
    "layered": "FED owns (layered: R4 2-fer)"
+  },
+  {
+   "area": "US-OR",
+   "refs": [
+    "US-2812",
+    "US-4380"
+   ],
+   "names": {
+    "US-2812": "Bates State Park",
+    "US-4380": "Malheur National Forest"
+   },
+   "federal": [
+    "US-4380"
+   ],
+   "state": [
+    "US-2812"
+   ],
+   "pota_type": {
+    "US-2812": "State Park",
+    "US-4380": "National Forest"
+   },
+   "added": "2026-10-30",
+   "rows": 1,
+   "status": "very tight: could be map error: check both official maps on the ground",
+   "acres": 1.2,
+   "checked": "2026-10-29",
+   "center": [
+    44.587696,
+    -118.505603
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Malheur National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Bates State Park",
+     "Own_Type": "STAT",
+     "Own_Name": "SPR",
+     "Mang_Type": "LOC",
+     "Mang_Name": "CITY",
+     "Des_Tp": "LP",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [
+    [
+     "US-5101",
+     "Bates State Forest",
+     "Bates State Park",
+     "STAT"
+    ]
+   ],
+   "layered": "mixed / unknown: look"
   },
   {
    "area": "US-OR",
@@ -34315,49 +34584,6 @@
   {
    "area": "US-OR",
    "refs": [
-    "US-2858",
-    "US-4389"
-   ],
-   "names": {
-    "US-2858": "Tub Springs State Park State Park",
-    "US-4389": "Cascade-Siskiyou National Monument National Monument"
-   },
-   "federal": [
-    "US-4389"
-   ],
-   "state": [
-    "US-2858"
-   ],
-   "ground": [],
-   "rows": 1,
-   "acres": 44.4,
-   "status": "not sure: the agency ownership map did n",
-   "checked": "2026-10-29",
-   "kinds": [
-    "area"
-   ],
-   "center": [
-    42.116212,
-    -122.441872
-   ],
-   "pad_at_patch": [
-    {
-     "Unit_Nm": "Tub Springs State Wayside",
-     "Own_Type": "STAT",
-     "Own_Name": "SPR",
-     "Mang_Type": "LOC",
-     "Mang_Name": "CITY",
-     "Des_Tp": "SREC",
-     "Category": "Fee"
-    }
-   ],
-   "owner_at_patch": "STAT",
-   "other_parks_here": [],
-   "layered": "state owns (hard boundary: R4 not a 2-fer)"
-  },
-  {
-   "area": "US-OR",
-   "refs": [
     "US-2860",
     "US-4384"
    ],
@@ -34383,8 +34609,8 @@
     "area"
    ],
    "center": [
-    43.637462,
-    -124.189967
+    43.632217,
+    -124.184132
    ],
    "pad_at_patch": [
     {
@@ -34409,6 +34635,50 @@
    "owner_at_patch": "FED + STAT",
    "other_parks_here": [],
    "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-OR",
+   "refs": [
+    "US-2863",
+    "US-4387"
+   ],
+   "names": {
+    "US-2863": "Wallowa Lake State Park",
+    "US-4387": "Wallowa-Whitman National Forest"
+   },
+   "federal": [
+    "US-4387"
+   ],
+   "state": [
+    "US-2863"
+   ],
+   "pota_type": {
+    "US-2863": "State Park",
+    "US-4387": "National Forest"
+   },
+   "added": "2026-10-30",
+   "rows": 1,
+   "status": "very tight: could be map error: check both official maps on the ground",
+   "acres": 3.7,
+   "checked": "2026-10-29",
+   "center": [
+    45.292982,
+    -117.218075
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Wallowa National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [],
+   "layered": "FED owns (layered: R4 2-fer)"
   },
   {
    "area": "US-OR",
@@ -34548,50 +34818,6 @@
    "pad_at_patch": [
     {
      "Unit_Nm": "Winema National Forest",
-     "Own_Type": "FED",
-     "Own_Name": "USFS",
-     "Mang_Type": "FED",
-     "Mang_Name": "USFS",
-     "Des_Tp": "NF",
-     "Category": "Fee"
-    }
-   ],
-   "owner_at_patch": "FED",
-   "other_parks_here": [],
-   "layered": "FED owns (layered: R4 2-fer)"
-  },
-  {
-   "area": "US-OR",
-   "refs": [
-    "US-4381",
-    "US-9155"
-   ],
-   "names": {
-    "US-4381": "Mount Hood National Forest",
-    "US-9155": "Historic Columbia River Highway State Trail"
-   },
-   "federal": [
-    "US-4381"
-   ],
-   "state": [
-    "US-9155"
-   ],
-   "pota_type": {
-    "US-4381": "National Forest",
-    "US-9155": "State Trail"
-   },
-   "added": "2026-10-29",
-   "rows": 1,
-   "status": "candidate",
-   "acres": 11.1,
-   "checked": "2026-10-29",
-   "center": [
-    45.7043,
-    -121.485544
-   ],
-   "pad_at_patch": [
-    {
-     "Unit_Nm": "Mt. Hood National Forest",
      "Own_Type": "FED",
      "Own_Name": "USFS",
      "Mang_Type": "FED",
@@ -34888,7 +35114,7 @@
    "rows": 2,
    "acres": 17.3,
    "status": "very tight: could be map error: check bo",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -34950,7 +35176,7 @@
    "rows": 1,
    "acres": 71.4,
    "status": "very tight: could be map error: check bo",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -35012,7 +35238,7 @@
    "rows": 1,
    "acres": 10.7,
    "status": "very tight: could be map error: check bo",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -35074,7 +35300,7 @@
    "rows": 2,
    "acres": 3.4,
    "status": "water only: boat or kayak",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -35135,7 +35361,7 @@
    "rows": 3,
    "acres": 1204.0,
    "status": "candidate",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -35205,7 +35431,7 @@
    "rows": 1,
    "acres": 20.0,
    "status": "candidate",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -35259,7 +35485,7 @@
    "rows": 1,
    "acres": 979.3,
    "status": "candidate",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -35313,7 +35539,7 @@
    "rows": 1,
    "acres": 740.0,
    "status": "candidate",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -35340,41 +35566,6 @@
    "area": "US-PA",
    "refs": [
     "US-0684",
-    "US-1613"
-   ],
-   "names": {
-    "US-0684": "Lower Delaware National Wild and Scenic River National Wild and Scenic River",
-    "US-1613": "Delaware and Raritan Canal State Park State Park"
-   },
-   "federal": [
-    "US-0684"
-   ],
-   "state": [
-    "US-1613"
-   ],
-   "ground": [
-    "state"
-   ],
-   "rows": 1,
-   "acres": 0,
-   "status": "candidate",
-   "checked": "2026-10-29",
-   "kinds": [
-    "river"
-   ],
-   "center": [
-    40.410295,
-    -74.998517
-   ],
-   "pad_at_patch": [],
-   "owner_at_patch": "no fee record",
-   "other_parks_here": [],
-   "layered": "mixed / unknown: look"
-  },
-  {
-   "area": "US-PA",
-   "refs": [
-    "US-0684",
     "US-8755"
    ],
    "names": {
@@ -35393,7 +35584,7 @@
    "rows": 1,
    "acres": 0,
    "status": "candidate",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "kinds": [
     "river"
    ],
@@ -35439,7 +35630,7 @@
    "rows": 1,
    "acres": 10.0,
    "status": "candidate",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -35503,7 +35694,7 @@
    "rows": 3,
    "acres": 21.2,
    "status": "candidate",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -35557,7 +35748,7 @@
    "rows": 1,
    "acres": 785.3,
    "status": "candidate",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -35609,7 +35800,7 @@
    "rows": 1,
    "acres": 59.9,
    "status": "candidate",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -35654,7 +35845,7 @@
    "rows": 4,
    "acres": 827.0,
    "status": "candidate",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -35699,7 +35890,7 @@
    "rows": 1,
    "acres": 22.6,
    "status": "candidate",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -35744,7 +35935,7 @@
    "rows": 15,
    "acres": 555.1,
    "status": "candidate",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -35796,7 +35987,7 @@
    "rows": 1,
    "acres": 205.7,
    "status": "candidate",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -35841,7 +36032,7 @@
    "rows": 3,
    "acres": 2674.2,
    "status": "candidate",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -35886,7 +36077,7 @@
    "rows": 1,
    "acres": 398.6,
    "status": "candidate",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -35931,7 +36122,7 @@
    "rows": 1,
    "acres": 24.2,
    "status": "candidate",
-   "checked": "2026-10-29",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -35942,51 +36133,6 @@
    "pad_at_patch": [
     {
      "Unit_Nm": "State Game Land 283",
-     "Own_Type": "STAT",
-     "Own_Name": "OTHS",
-     "Mang_Type": "STAT",
-     "Mang_Name": "SFW",
-     "Des_Tp": "SRMA",
-     "Category": "Fee"
-    }
-   ],
-   "owner_at_patch": "STAT",
-   "other_parks_here": [],
-   "layered": "state owns (hard boundary: R4 not a 2-fer)"
-  },
-  {
-   "area": "US-PA",
-   "refs": [
-    "US-13538",
-    "US-4567"
-   ],
-   "names": {
-    "US-13538": "PA 319 State Game Land State Game Land",
-    "US-4567": "Captain John Smith Chesapeake National Historic Trail National Historic Trail"
-   },
-   "federal": [
-    "US-4567"
-   ],
-   "state": [
-    "US-13538"
-   ],
-   "ground": [
-    "state"
-   ],
-   "rows": 1,
-   "acres": 0,
-   "status": "candidate",
-   "checked": "2026-10-29",
-   "kinds": [
-    "river"
-   ],
-   "center": [
-    40.360629,
-    -76.972693
-   ],
-   "pad_at_patch": [
-    {
-     "Unit_Nm": "State Game Land 319",
      "Own_Type": "STAT",
      "Own_Name": "OTHS",
      "Mang_Type": "STAT",
@@ -36838,7 +36984,7 @@
    "rows": 2,
    "acres": 94.4,
    "status": "candidate",
-   "checked": "2026-10-28",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -36881,7 +37027,7 @@
    "rows": 1,
    "acres": 110.7,
    "status": "candidate",
-   "checked": "2026-10-28",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -36924,7 +37070,7 @@
    "rows": 1,
    "acres": 61.5,
    "status": "candidate",
-   "checked": "2026-10-28",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -36976,7 +37122,7 @@
    "rows": 1,
    "acres": 306.9,
    "status": "candidate",
-   "checked": "2026-10-28",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -37019,7 +37165,7 @@
    "rows": 2,
    "acres": 4830.6,
    "status": "candidate",
-   "checked": "2026-10-28",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -37078,7 +37224,7 @@
    "rows": 1,
    "acres": 184.1,
    "status": "candidate",
-   "checked": "2026-10-28",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -37130,7 +37276,7 @@
    "rows": 2,
    "acres": 165.6,
    "status": "candidate",
-   "checked": "2026-10-28",
+   "checked": "2026-10-30",
    "kinds": [
     "area"
    ],
@@ -39801,6 +39947,1036 @@
    "layered": "mixed / unknown: look"
   },
   {
+   "area": "US-UT",
+   "refs": [
+    "US-11205",
+    "US-4397"
+   ],
+   "names": {
+    "US-11205": "Manti Face Wildlife Management Area",
+    "US-4397": "Manti-La Sal National Forest"
+   },
+   "federal": [
+    "US-4397"
+   ],
+   "state": [
+    "US-11205"
+   ],
+   "pota_type": {
+    "US-11205": "Wildlife Management Area",
+    "US-4397": "National Forest"
+   },
+   "added": "2026-10-30",
+   "rows": 1,
+   "status": "very tight: could be map error: check both official maps on the ground",
+   "acres": 17.9,
+   "checked": "2026-10-29",
+   "center": [
+    39.285306,
+    -111.578603
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Manti-La Sal National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Mainti Face State Wildlife Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SDNR",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-UT",
+   "refs": [
+    "US-11346",
+    "US-4397"
+   ],
+   "names": {
+    "US-11346": "Twelve Mile State Wildlife Area",
+    "US-4397": "Manti-La Sal National Forest"
+   },
+   "federal": [
+    "US-4397"
+   ],
+   "state": [
+    "US-11346"
+   ],
+   "pota_type": {
+    "US-11346": "State Wildlife Area",
+    "US-4397": "National Forest"
+   },
+   "added": "2026-10-30",
+   "rows": 1,
+   "status": "very tight: could be map error: check both official maps on the ground",
+   "acres": 14.3,
+   "checked": "2026-10-29",
+   "center": [
+    39.094601,
+    -111.661298
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Manti-La Sal National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Mayfield State Wildlife Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SDNR",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-UT",
+   "refs": [
+    "US-11350",
+    "US-4396"
+   ],
+   "names": {
+    "US-11350": "Willow Creek State Wildlife Management Area",
+    "US-4396": "Fishlake National Forest"
+   },
+   "federal": [
+    "US-4396"
+   ],
+   "state": [
+    "US-11350"
+   ],
+   "pota_type": {
+    "US-11350": "Wildlife Management Area",
+    "US-4396": "National Forest"
+   },
+   "added": "2026-10-30",
+   "rows": 1,
+   "status": "very tight: could be map error: check both official maps on the ground",
+   "acres": 15.4,
+   "checked": "2026-10-29",
+   "center": [
+    39.003919,
+    -111.738042
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Fishlake National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Utah State Department of Wildlife Resources 78",
+     "Own_Type": "STAT",
+     "Own_Name": "SDNR",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-UT",
+   "refs": [
+    "US-11646",
+    "US-4397"
+   ],
+   "names": {
+    "US-11646": "Dairy Fork Wildlife Management Area",
+    "US-4397": "Manti-La Sal National Forest"
+   },
+   "federal": [
+    "US-4397"
+   ],
+   "state": [
+    "US-11646"
+   ],
+   "pota_type": {
+    "US-11646": "Wildlife Management Area",
+    "US-4397": "National Forest"
+   },
+   "added": "2026-10-30",
+   "rows": 4,
+   "status": "candidate",
+   "acres": 82.2,
+   "checked": "2026-10-29",
+   "center": [
+    39.941908,
+    -111.386597
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Manti-La Sal National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Dairy Fork State Wildlife Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SDNR",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-UT",
+   "refs": [
+    "US-11648",
+    "US-4396"
+   ],
+   "names": {
+    "US-11648": "Fillmore Wildlife Management Area",
+    "US-4396": "Fishlake National Forest"
+   },
+   "federal": [
+    "US-4396"
+   ],
+   "state": [
+    "US-11648"
+   ],
+   "pota_type": {
+    "US-11648": "Wildlife Management Area",
+    "US-4396": "National Forest"
+   },
+   "added": "2026-10-30",
+   "rows": 6,
+   "status": "candidate",
+   "acres": 48.3,
+   "checked": "2026-10-29",
+   "center": [
+    39.127037,
+    -112.184525
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Fishlake National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Millard State Wildlife Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SDNR",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-UT",
+   "refs": [
+    "US-11742",
+    "US-4395"
+   ],
+   "names": {
+    "US-11742": "Yankee Meadows Wildlife Management Area",
+    "US-4395": "Dixie National Forest"
+   },
+   "federal": [
+    "US-4395"
+   ],
+   "state": [
+    "US-11742"
+   ],
+   "pota_type": {
+    "US-11742": "Wildlife Management Area",
+    "US-4395": "National Forest"
+   },
+   "added": "2026-10-30",
+   "rows": 1,
+   "status": "very tight: could be map error: check both official maps on the ground",
+   "acres": 4.2,
+   "checked": "2026-10-29",
+   "center": [
+    37.757017,
+    -112.771304
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Dixie National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Yankee Meadows State Wildlife Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SDNR",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-UT",
+   "refs": [
+    "US-13603",
+    "US-4397"
+   ],
+   "names": {
+    "US-13603": "Bald Mountain Wildlife Management Area",
+    "US-4397": "Manti-La Sal National Forest"
+   },
+   "federal": [
+    "US-4397"
+   ],
+   "state": [
+    "US-13603"
+   ],
+   "pota_type": {
+    "US-13603": "Wildlife Management Area",
+    "US-4397": "National Forest"
+   },
+   "added": "2026-10-30",
+   "rows": 1,
+   "status": "very tight: could be map error: check both official maps on the ground",
+   "acres": 6.5,
+   "checked": "2026-10-29",
+   "center": [
+    39.326597,
+    -111.522981
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Manti-La Sal National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Bald Mountain State Wildlife Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SDNR",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [
+    [
+     "US-5094",
+     "Bald Mountain State Forest",
+     "Bald Mountain State Wildlife Area",
+     "STAT"
+    ]
+   ],
+   "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-UT",
+   "refs": [
+    "US-3066",
+    "US-5794"
+   ],
+   "names": {
+    "US-3066": "Dead Horse Point State Park",
+    "US-5794": "Colorado Riverway BLM Recreation Management Area"
+   },
+   "federal": [
+    "US-5794"
+   ],
+   "state": [
+    "US-3066"
+   ],
+   "pota_type": {
+    "US-3066": "State Park",
+    "US-5794": "BLM Recreation Management Area"
+   },
+   "added": "2026-10-30",
+   "rows": 1,
+   "status": "not sure: the agency ownership map did not answer",
+   "acres": 51.6,
+   "checked": "2026-10-29",
+   "center": [
+    38.493395,
+    -109.7261
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Moab Field Office",
+     "Own_Type": "FED",
+     "Own_Name": "BLM",
+     "Mang_Type": "FED",
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [],
+   "layered": "FED owns (layered: R4 2-fer)"
+  },
+  {
+   "area": "US-UT",
+   "refs": [
+    "US-3071",
+    "US-4396"
+   ],
+   "names": {
+    "US-3071": "Fremont Indian State Park",
+    "US-4396": "Fishlake National Forest"
+   },
+   "federal": [
+    "US-4396"
+   ],
+   "state": [
+    "US-3071"
+   ],
+   "pota_type": {
+    "US-3071": "State Park",
+    "US-4396": "National Forest"
+   },
+   "added": "2026-10-30",
+   "rows": 1,
+   "status": "candidate",
+   "acres": 15.7,
+   "checked": "2026-10-29",
+   "center": [
+    38.572853,
+    -112.35048
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Fishlake National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Fremont Indian State Park",
+     "Own_Type": "STAT",
+     "Own_Name": "SDNR",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SPR",
+     "Des_Tp": "SP",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-UT",
+   "refs": [
+    "US-3073",
+    "US-5864"
+   ],
+   "names": {
+    "US-3073": "Goblin Valley State Park",
+    "US-5864": "Big Wild Horse Mesa BLM Wilderness Area"
+   },
+   "federal": [
+    "US-5864"
+   ],
+   "state": [
+    "US-3073"
+   ],
+   "pota_type": {
+    "US-3073": "State Park",
+    "US-5864": "Wilderness Area"
+   },
+   "added": "2026-10-30",
+   "rows": 5,
+   "status": "candidate",
+   "acres": 4.3,
+   "checked": "2026-10-29",
+   "center": [
+    38.569536,
+    -110.742096
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Price Field Office",
+     "Own_Type": "FED",
+     "Own_Name": "BLM",
+     "Mang_Type": "FED",
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [],
+   "layered": "FED owns (layered: R4 2-fer)"
+  },
+  {
+   "area": "US-UT",
+   "refs": [
+    "US-3073",
+    "US-5867"
+   ],
+   "names": {
+    "US-3073": "Goblin Valley State Park",
+    "US-5867": "San Rafael Swell BLM Recreation Management Area"
+   },
+   "federal": [
+    "US-5867"
+   ],
+   "state": [
+    "US-3073"
+   ],
+   "pota_type": {
+    "US-3073": "State Park",
+    "US-5867": "BLM Recreation Management Area"
+   },
+   "added": "2026-10-30",
+   "rows": 2,
+   "status": "merged into one row: US-3073+US-5867@area@38.597,-110.701 (the same not-sure pair, shown o",
+   "acres": 3678.3,
+   "checked": "2026-10-29",
+   "center": [
+    38.575674,
+    -110.752373
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Price Field Office",
+     "Own_Type": "FED",
+     "Own_Name": "BLM",
+     "Mang_Type": "FED",
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [],
+   "layered": "FED owns (layered: R4 2-fer)"
+  },
+  {
+   "area": "US-UT",
+   "refs": [
+    "US-3086",
+    "US-6063"
+   ],
+   "names": {
+    "US-3086": "Quail Creek State Park",
+    "US-6063": "Red Cliffs BLM Recreation Management Area"
+   },
+   "federal": [
+    "US-6063"
+   ],
+   "state": [
+    "US-3086"
+   ],
+   "pota_type": {
+    "US-3086": "State Park",
+    "US-6063": "BLM Recreation Management Area"
+   },
+   "added": "2026-10-30",
+   "rows": 1,
+   "status": "not sure: the agency ownership map did not answer",
+   "acres": 96.0,
+   "checked": "2026-10-29",
+   "center": [
+    37.198136,
+    -113.378932
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "St. George Field Office",
+     "Own_Type": "FED",
+     "Own_Name": "BLM",
+     "Mang_Type": "FED",
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [],
+   "layered": "FED owns (layered: R4 2-fer)"
+  },
+  {
+   "area": "US-UT",
+   "refs": [
+    "US-3086",
+    "US-6077"
+   ],
+   "names": {
+    "US-3086": "Quail Creek State Park",
+    "US-6077": "Red Cliffs BLM National Conservation Area"
+   },
+   "federal": [
+    "US-6077"
+   ],
+   "state": [
+    "US-3086"
+   ],
+   "pota_type": {
+    "US-3086": "State Park",
+    "US-6077": "BLM National Conservation Area"
+   },
+   "added": "2026-10-30",
+   "rows": 1,
+   "status": "not sure: the agency ownership map did not answer",
+   "acres": 95.9,
+   "checked": "2026-10-29",
+   "center": [
+    37.198136,
+    -113.378932
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "St. George Field Office",
+     "Own_Type": "FED",
+     "Own_Name": "BLM",
+     "Mang_Type": "FED",
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [],
+   "layered": "FED owns (layered: R4 2-fer)"
+  },
+  {
+   "area": "US-UT",
+   "refs": [
+    "US-3091",
+    "US-6063"
+   ],
+   "names": {
+    "US-3091": "Snow Canyon State Park",
+    "US-6063": "Red Cliffs BLM Recreation Management Area"
+   },
+   "federal": [
+    "US-6063"
+   ],
+   "state": [
+    "US-3091"
+   ],
+   "pota_type": {
+    "US-3091": "State Park",
+    "US-6063": "BLM Recreation Management Area"
+   },
+   "added": "2026-10-30",
+   "rows": 1,
+   "status": "not sure: the agency ownership map did not answer",
+   "acres": 6314.6,
+   "checked": "2026-10-29",
+   "center": [
+    37.185906,
+    -113.643573
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Snow Canyon State Park",
+     "Own_Type": "STAT",
+     "Own_Name": "SDNR",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SPR",
+     "Des_Tp": "SP",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "STAT",
+   "other_parks_here": [],
+   "layered": "state owns (hard boundary: R4 not a 2-fer)"
+  },
+  {
+   "area": "US-UT",
+   "refs": [
+    "US-3091",
+    "US-6077"
+   ],
+   "names": {
+    "US-3091": "Snow Canyon State Park",
+    "US-6077": "Red Cliffs BLM National Conservation Area"
+   },
+   "federal": [
+    "US-6077"
+   ],
+   "state": [
+    "US-3091"
+   ],
+   "pota_type": {
+    "US-3091": "State Park",
+    "US-6077": "BLM National Conservation Area"
+   },
+   "added": "2026-10-30",
+   "rows": 1,
+   "status": "not sure: the agency ownership map did not answer",
+   "acres": 6309.1,
+   "checked": "2026-10-29",
+   "center": [
+    37.185906,
+    -113.643573
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Snow Canyon State Park",
+     "Own_Type": "STAT",
+     "Own_Name": "SDNR",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SPR",
+     "Des_Tp": "SP",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "STAT",
+   "other_parks_here": [],
+   "layered": "state owns (hard boundary: R4 not a 2-fer)"
+  },
+  {
+   "area": "US-UT",
+   "refs": [
+    "US-4397",
+    "US-5925"
+   ],
+   "names": {
+    "US-4397": "Manti-La Sal National Forest",
+    "US-5925": "Lasson Draw Wildlife Management Area"
+   },
+   "federal": [
+    "US-4397"
+   ],
+   "state": [
+    "US-5925"
+   ],
+   "pota_type": {
+    "US-4397": "National Forest",
+    "US-5925": "Wildlife Management Area"
+   },
+   "added": "2026-10-30",
+   "rows": 1,
+   "status": "very tight: could be map error: check both official maps on the ground",
+   "acres": 22.5,
+   "checked": "2026-10-29",
+   "center": [
+    39.873976,
+    -111.508395
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Manti-La Sal National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Lasson Draw State Wildlife Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SDNR",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-UT",
+   "refs": [
+    "US-4398",
+    "US-5838"
+   ],
+   "names": {
+    "US-4398": "Uinta-Wasatch-Cache National Forest",
+    "US-5838": "Millville-Providence State Wildlife Management Area"
+   },
+   "federal": [
+    "US-4398"
+   ],
+   "state": [
+    "US-5838"
+   ],
+   "pota_type": {
+    "US-4398": "National Forest",
+    "US-5838": "Wildlife Management Area"
+   },
+   "added": "2026-10-30",
+   "rows": 2,
+   "status": "candidate",
+   "acres": 40.8,
+   "checked": "2026-10-29",
+   "center": [
+    41.700565,
+    -111.775821
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Cache National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Millville Face State Wildlife Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SDNR",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-UT",
+   "refs": [
+    "US-4398",
+    "US-5933"
+   ],
+   "names": {
+    "US-4398": "Uinta-Wasatch-Cache National Forest",
+    "US-5933": "Hardware Ranch Wildlife Management Area"
+   },
+   "federal": [
+    "US-4398"
+   ],
+   "state": [
+    "US-5933"
+   ],
+   "pota_type": {
+    "US-4398": "National Forest",
+    "US-5933": "Wildlife Management Area"
+   },
+   "added": "2026-10-30",
+   "rows": 2,
+   "status": "very tight: could be map error: check both official maps on the ground",
+   "acres": 4.0,
+   "checked": "2026-10-29",
+   "center": [
+    41.614307,
+    -111.661777
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Cache National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [],
+   "layered": "FED owns (layered: R4 2-fer)"
+  },
+  {
+   "area": "US-UT",
+   "refs": [
+    "US-4398",
+    "US-5947"
+   ],
+   "names": {
+    "US-4398": "Uinta-Wasatch-Cache National Forest",
+    "US-5947": "Middle Fork State Wildlife Management Area"
+   },
+   "federal": [
+    "US-4398"
+   ],
+   "state": [
+    "US-5947"
+   ],
+   "pota_type": {
+    "US-4398": "National Forest",
+    "US-5947": "Wildlife Management Area"
+   },
+   "added": "2026-10-30",
+   "rows": 2,
+   "status": "candidate",
+   "acres": 739.5,
+   "checked": "2026-10-29",
+   "center": [
+    41.317786,
+    -111.731895
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Cache National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [],
+   "layered": "FED owns (layered: R4 2-fer)"
+  },
+  {
+   "area": "US-UT",
+   "refs": [
+    "US-5780",
+    "US-5790"
+   ],
+   "names": {
+    "US-5780": "Grandstaff Canyon BLM Recreation Management Area",
+    "US-5790": "Sand Flats State Recreation Area"
+   },
+   "federal": [
+    "US-5780"
+   ],
+   "state": [
+    "US-5790"
+   ],
+   "pota_type": {
+    "US-5780": "BLM Recreation Management Area",
+    "US-5790": "State Recreation Area"
+   },
+   "added": "2026-10-30",
+   "rows": 6,
+   "status": "merged into one row: US-5780+US-5790@area@38.595,-109.476 (the same not-sure pair, shown o",
+   "acres": 6.1,
+   "checked": "2026-10-29",
+   "center": [
+    38.584116,
+    -109.416225
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Moab Field Office",
+     "Own_Type": "FED",
+     "Own_Name": "BLM",
+     "Mang_Type": "FED",
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [],
+   "layered": "FED owns (layered: R4 2-fer)"
+  },
+  {
+   "area": "US-UT",
+   "refs": [
+    "US-5948",
+    "US-5949"
+   ],
+   "names": {
+    "US-5948": "Mount Nebo USFS Wilderness Area",
+    "US-5949": "Santaquin Wildlife Management Area"
+   },
+   "federal": [
+    "US-5948"
+   ],
+   "state": [
+    "US-5949"
+   ],
+   "pota_type": {
+    "US-5948": "Wilderness Area",
+    "US-5949": "Wildlife Management Area"
+   },
+   "added": "2026-10-30",
+   "rows": 3,
+   "status": "candidate",
+   "acres": 11.0,
+   "checked": "2026-10-29",
+   "center": [
+    39.897812,
+    -111.766143
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Uinta National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Santaquin State Wildlife Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SDNR",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
+  },
+  {
    "area": "US-VA",
    "refs": [
     "US-0560",
@@ -40931,6 +42107,68 @@
   {
    "area": "US-WA",
    "refs": [
+    "US-0595",
+    "US-10407"
+   ],
+   "names": {
+    "US-0595": "Turnbull National Wildlife Refuge",
+    "US-10407": "Columbia Plateau State Park Trail State Trail"
+   },
+   "federal": [
+    "US-0595"
+   ],
+   "state": [
+    "US-10407"
+   ],
+   "pota_type": {
+    "US-0595": "National Wildlife Refuge",
+    "US-10407": "State Trail"
+   },
+   "added": "2026-10-30",
+   "rows": 1,
+   "status": "candidate",
+   "acres": 26.9,
+   "checked": "2026-10-29",
+   "center": [
+    47.405176,
+    -117.641688
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Turnbull National Wildlife Refuge",
+     "Own_Type": "FED",
+     "Own_Name": "FWS",
+     "Mang_Type": "FED",
+     "Mang_Name": "FWS",
+     "Des_Tp": "NWR",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Turnbull National Wildlife Refuge",
+     "Own_Type": "FED",
+     "Own_Name": "FWS",
+     "Mang_Type": "FED",
+     "Mang_Name": "FWS",
+     "Des_Tp": "NWR",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Columbia Plateau Trail",
+     "Own_Type": "STAT",
+     "Own_Name": "SPR",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SPR",
+     "Des_Tp": "SREC",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
+  },
+  {
+   "area": "US-WA",
+   "refs": [
     "US-0597",
     "US-3220"
    ],
@@ -41196,375 +42434,6 @@
    "area": "US-WA",
    "refs": [
     "US-12461",
-    "US-3162"
-   ],
-   "names": {
-    "US-12461": "San Juan Islands BLM National Monument National Monument",
-    "US-3162": "Blind Island Marine State Park State Park"
-   },
-   "federal": [
-    "US-12461"
-   ],
-   "state": [
-    "US-3162"
-   ],
-   "ground": [],
-   "rows": 1,
-   "acres": 2.9,
-   "status": "not sure: the agency ownership map did n",
-   "checked": "2026-10-29",
-   "kinds": [
-    "area"
-   ],
-   "center": [
-    48.584987,
-    -122.937002
-   ],
-   "pad_at_patch": [
-    {
-     "Unit_Nm": "Spokane Wenatchee Field Office",
-     "Own_Type": "FED",
-     "Own_Name": "BLM",
-     "Mang_Type": "FED",
-     "Mang_Name": "BLM",
-     "Des_Tp": "PUB",
-     "Category": "Fee"
-    },
-    {
-     "Unit_Nm": "Blind Island",
-     "Own_Type": "STAT",
-     "Own_Name": "SPR",
-     "Mang_Type": "STAT",
-     "Mang_Name": "SPR",
-     "Des_Tp": "SP",
-     "Category": "Fee"
-    }
-   ],
-   "owner_at_patch": "FED + STAT",
-   "other_parks_here": [],
-   "layered": "mixed / unknown: look"
-  },
-  {
-   "area": "US-WA",
-   "refs": [
-    "US-12461",
-    "US-3172"
-   ],
-   "names": {
-    "US-12461": "San Juan Islands BLM National Monument National Monument",
-    "US-3172": "Clark Island Marine State Park State Park"
-   },
-   "federal": [
-    "US-12461"
-   ],
-   "state": [
-    "US-3172"
-   ],
-   "ground": [],
-   "rows": 1,
-   "acres": 52.6,
-   "status": "not sure: the agency ownership map did n",
-   "checked": "2026-10-29",
-   "kinds": [
-    "area"
-   ],
-   "center": [
-    48.700949,
-    -122.76456
-   ],
-   "pad_at_patch": [
-    {
-     "Unit_Nm": "Clark Island",
-     "Own_Type": "STAT",
-     "Own_Name": "SPR",
-     "Mang_Type": "STAT",
-     "Mang_Name": "SPR",
-     "Des_Tp": "SP",
-     "Category": "Fee"
-    }
-   ],
-   "owner_at_patch": "STAT",
-   "other_parks_here": [],
-   "layered": "state owns (hard boundary: R4 not a 2-fer)"
-  },
-  {
-   "area": "US-WA",
-   "refs": [
-    "US-12461",
-    "US-3180"
-   ],
-   "names": {
-    "US-12461": "San Juan Islands BLM National Monument National Monument",
-    "US-3180": "Deception Pass State Park State Park"
-   },
-   "federal": [
-    "US-12461"
-   ],
-   "state": [
-    "US-3180"
-   ],
-   "ground": [],
-   "rows": 1,
-   "acres": 368.8,
-   "status": "not sure: the agency ownership map did n",
-   "checked": "2026-10-29",
-   "kinds": [
-    "area"
-   ],
-   "center": [
-    48.417635,
-    -122.674042
-   ],
-   "pad_at_patch": [
-    {
-     "Unit_Nm": "Deception Pass",
-     "Own_Type": "STAT",
-     "Own_Name": "SPR",
-     "Mang_Type": "STAT",
-     "Mang_Name": "SPR",
-     "Des_Tp": "SP",
-     "Category": "Fee"
-    }
-   ],
-   "owner_at_patch": "STAT",
-   "other_parks_here": [],
-   "layered": "state owns (hard boundary: R4 not a 2-fer)"
-  },
-  {
-   "area": "US-WA",
-   "refs": [
-    "US-12461",
-    "US-3181"
-   ],
-   "names": {
-    "US-12461": "San Juan Islands BLM National Monument National Monument",
-    "US-3181": "Doe Island Marine State Park State Park"
-   },
-   "federal": [
-    "US-12461"
-   ],
-   "state": [
-    "US-3181"
-   ],
-   "ground": [],
-   "rows": 1,
-   "acres": 10.5,
-   "status": "not sure: the agency ownership map did n",
-   "checked": "2026-10-29",
-   "kinds": [
-    "area"
-   ],
-   "center": [
-    48.632984,
-    -122.787813
-   ],
-   "pad_at_patch": [
-    {
-     "Unit_Nm": "Doe Island",
-     "Own_Type": "STAT",
-     "Own_Name": "SPR",
-     "Mang_Type": "STAT",
-     "Mang_Name": "SPR",
-     "Des_Tp": "SP",
-     "Category": "Fee"
-    }
-   ],
-   "owner_at_patch": "STAT",
-   "other_parks_here": [],
-   "layered": "state owns (hard boundary: R4 not a 2-fer)"
-  },
-  {
-   "area": "US-WA",
-   "refs": [
-    "US-12461",
-    "US-3204"
-   ],
-   "names": {
-    "US-12461": "San Juan Islands BLM National Monument National Monument",
-    "US-3204": "James Island Marine State Park State Park"
-   },
-   "federal": [
-    "US-12461"
-   ],
-   "state": [
-    "US-3204"
-   ],
-   "ground": [],
-   "rows": 1,
-   "acres": 578.8,
-   "status": "not sure: the agency ownership map did n",
-   "checked": "2026-10-29",
-   "kinds": [
-    "area"
-   ],
-   "center": [
-    48.510637,
-    -122.773876
-   ],
-   "pad_at_patch": [
-    {
-     "Unit_Nm": "James Island",
-     "Own_Type": "STAT",
-     "Own_Name": "SPR",
-     "Mang_Type": "STAT",
-     "Mang_Name": "SPR",
-     "Des_Tp": "SP",
-     "Category": "Fee"
-    }
-   ],
-   "owner_at_patch": "STAT",
-   "other_parks_here": [],
-   "layered": "state owns (hard boundary: R4 not a 2-fer)"
-  },
-  {
-   "area": "US-WA",
-   "refs": [
-    "US-12461",
-    "US-3207"
-   ],
-   "names": {
-    "US-12461": "San Juan Islands BLM National Monument National Monument",
-    "US-3207": "Jones Island Marine State Park State Park"
-   },
-   "federal": [
-    "US-12461"
-   ],
-   "state": [
-    "US-3207"
-   ],
-   "ground": [],
-   "rows": 1,
-   "acres": 732.2,
-   "status": "not sure: the agency ownership map did n",
-   "checked": "2026-10-29",
-   "kinds": [
-    "area"
-   ],
-   "center": [
-    48.615092,
-    -123.045833
-   ],
-   "pad_at_patch": [
-    {
-     "Unit_Nm": "Jones Island",
-     "Own_Type": "STAT",
-     "Own_Name": "SPR",
-     "Mang_Type": "STAT",
-     "Mang_Name": "SPR",
-     "Des_Tp": "SP",
-     "Category": "Fee"
-    }
-   ],
-   "owner_at_patch": "STAT",
-   "other_parks_here": [],
-   "layered": "state owns (hard boundary: R4 not a 2-fer)"
-  },
-  {
-   "area": "US-WA",
-   "refs": [
-    "US-12461",
-    "US-3223"
-   ],
-   "names": {
-    "US-12461": "San Juan Islands BLM National Monument National Monument",
-    "US-3223": "Lime Kiln Point State Park State Park"
-   },
-   "federal": [
-    "US-12461"
-   ],
-   "state": [
-    "US-3223"
-   ],
-   "ground": [],
-   "rows": 1,
-   "acres": 43.1,
-   "status": "not sure: the agency ownership map did n",
-   "checked": "2026-10-29",
-   "kinds": [
-    "area"
-   ],
-   "center": [
-    48.516319,
-    -123.149875
-   ],
-   "pad_at_patch": [
-    {
-     "Unit_Nm": "Lime Kiln Point",
-     "Own_Type": "STAT",
-     "Own_Name": "SPR",
-     "Mang_Type": "STAT",
-     "Mang_Name": "SPR",
-     "Des_Tp": "SP",
-     "Category": "Fee"
-    }
-   ],
-   "owner_at_patch": "STAT",
-   "other_parks_here": [],
-   "layered": "state owns (hard boundary: R4 not a 2-fer)"
-  },
-  {
-   "area": "US-WA",
-   "refs": [
-    "US-12461",
-    "US-3229"
-   ],
-   "names": {
-    "US-12461": "San Juan Islands BLM National Monument National Monument",
-    "US-3229": "Matia Island Marine State Park State Park"
-   },
-   "federal": [
-    "US-12461"
-   ],
-   "state": [
-    "US-3229"
-   ],
-   "ground": [],
-   "rows": 1,
-   "acres": 5.2,
-   "status": "not sure: the agency ownership map did n",
-   "checked": "2026-10-29",
-   "kinds": [
-    "area"
-   ],
-   "center": [
-    48.747602,
-    -122.841387
-   ],
-   "pad_at_patch": [
-    {
-     "Unit_Nm": "San Juan Islands National Wildlife Refuge",
-     "Own_Type": "FED",
-     "Own_Name": "FWS",
-     "Mang_Type": "FED",
-     "Mang_Name": "FWS",
-     "Des_Tp": "NWR",
-     "Category": "Fee"
-    },
-    {
-     "Unit_Nm": "San Juan Islands National Wildlife Refuge",
-     "Own_Type": "FED",
-     "Own_Name": "FWS",
-     "Mang_Type": "FED",
-     "Mang_Name": "FWS",
-     "Des_Tp": "NWR",
-     "Category": "Fee"
-    }
-   ],
-   "owner_at_patch": "FED",
-   "other_parks_here": [
-    [
-     "US-0592",
-     "San Juan Islands National Wildlife Refuge",
-     "San Juan Islands National Wildlife Refuge",
-     "FED"
-    ]
-   ],
-   "layered": "FED owns (layered: R4 2-fer)"
-  },
-  {
-   "area": "US-WA",
-   "refs": [
-    "US-12461",
     "US-3232"
    ],
    "names": {
@@ -41578,7 +42447,7 @@
     "US-3232"
    ],
    "ground": [],
-   "rows": 3,
+   "rows": 2,
    "acres": 6108.2,
    "status": "merged into one row: US-12461+US-3232@ar",
    "checked": "2026-10-29",
@@ -41633,323 +42502,6 @@
    "area": "US-WA",
    "refs": [
     "US-12461",
-    "US-3237"
-   ],
-   "names": {
-    "US-12461": "San Juan Islands BLM National Monument National Monument",
-    "US-3237": "Obstruction Pass State Park State Park"
-   },
-   "federal": [
-    "US-12461"
-   ],
-   "state": [
-    "US-3237"
-   ],
-   "ground": [],
-   "rows": 1,
-   "acres": 80.8,
-   "status": "not sure: the agency ownership map did n",
-   "checked": "2026-10-29",
-   "kinds": [
-    "area"
-   ],
-   "center": [
-    48.604349,
-    -122.827585
-   ],
-   "pad_at_patch": [
-    {
-     "Unit_Nm": "Obstruction Pass State Park",
-     "Own_Type": "STAT",
-     "Own_Name": "SPR",
-     "Mang_Type": "STAT",
-     "Mang_Name": "SPR",
-     "Des_Tp": "SP",
-     "Category": "Fee"
-    },
-    {
-     "Unit_Nm": "Washington State Department of Natural Resources (WADNR) State Resource Management Area",
-     "Own_Type": "STAT",
-     "Own_Name": "SDNR",
-     "Mang_Type": "STAT",
-     "Mang_Name": "SDNR",
-     "Des_Tp": "SRMA",
-     "Category": "Fee"
-    },
-    {
-     "Unit_Nm": "Moran",
-     "Own_Type": "STAT",
-     "Own_Name": "SPR",
-     "Mang_Type": "STAT",
-     "Mang_Name": "SPR",
-     "Des_Tp": "SP",
-     "Category": "Fee"
-    }
-   ],
-   "owner_at_patch": "STAT",
-   "other_parks_here": [
-    [
-     "US-3232",
-     "Moran State Park",
-     "Moran",
-     "STAT"
-    ]
-   ],
-   "layered": "state owns (hard boundary: R4 not a 2-fer)"
-  },
-  {
-   "area": "US-WA",
-   "refs": [
-    "US-12461",
-    "US-3245"
-   ],
-   "names": {
-    "US-12461": "San Juan Islands BLM National Monument National Monument",
-    "US-3245": "Patos Island Marine State Park State Park"
-   },
-   "federal": [
-    "US-12461"
-   ],
-   "state": [
-    "US-3245"
-   ],
-   "ground": [],
-   "rows": 1,
-   "acres": 229.0,
-   "status": "not sure: the agency ownership map did n",
-   "checked": "2026-10-29",
-   "kinds": [
-    "area"
-   ],
-   "center": [
-    48.783646,
-    -122.953614
-   ],
-   "pad_at_patch": [
-    {
-     "Unit_Nm": "Spokane Wenatchee Field Office",
-     "Own_Type": "FED",
-     "Own_Name": "BLM",
-     "Mang_Type": "FED",
-     "Mang_Name": "BLM",
-     "Des_Tp": "PUB",
-     "Category": "Fee"
-    },
-    {
-     "Unit_Nm": "Patos Island",
-     "Own_Type": "STAT",
-     "Own_Name": "SPR",
-     "Mang_Type": "STAT",
-     "Mang_Name": "SPR",
-     "Des_Tp": "SP",
-     "Category": "Fee"
-    }
-   ],
-   "owner_at_patch": "FED + STAT",
-   "other_parks_here": [],
-   "layered": "mixed / unknown: look"
-  },
-  {
-   "area": "US-WA",
-   "refs": [
-    "US-12461",
-    "US-3251"
-   ],
-   "names": {
-    "US-12461": "San Juan Islands BLM National Monument National Monument",
-    "US-3251": "Posey Island Marine State Park State Park"
-   },
-   "federal": [
-    "US-12461"
-   ],
-   "state": [
-    "US-3251"
-   ],
-   "ground": [],
-   "rows": 1,
-   "acres": 1.3,
-   "status": "not sure: the agency ownership map did n",
-   "checked": "2026-10-29",
-   "kinds": [
-    "area"
-   ],
-   "center": [
-    48.618301,
-    -123.168031
-   ],
-   "pad_at_patch": [
-    {
-     "Unit_Nm": "Spokane Wenatchee Field Office",
-     "Own_Type": "FED",
-     "Own_Name": "BLM",
-     "Mang_Type": "FED",
-     "Mang_Name": "BLM",
-     "Des_Tp": "PUB",
-     "Category": "Fee"
-    },
-    {
-     "Unit_Nm": "Posey Island",
-     "Own_Type": "STAT",
-     "Own_Name": "SPR",
-     "Mang_Type": "STAT",
-     "Mang_Name": "SPR",
-     "Des_Tp": "SP",
-     "Category": "Fee"
-    }
-   ],
-   "owner_at_patch": "FED + STAT",
-   "other_parks_here": [],
-   "layered": "mixed / unknown: look"
-  },
-  {
-   "area": "US-WA",
-   "refs": [
-    "US-12461",
-    "US-3268"
-   ],
-   "names": {
-    "US-12461": "San Juan Islands BLM National Monument National Monument",
-    "US-3268": "Skagit Island Marine State Park State Park"
-   },
-   "federal": [
-    "US-12461"
-   ],
-   "state": [
-    "US-3268"
-   ],
-   "ground": [],
-   "rows": 1,
-   "acres": 355.3,
-   "status": "not sure: the agency ownership map did n",
-   "checked": "2026-10-29",
-   "kinds": [
-    "area"
-   ],
-   "center": [
-    48.417633,
-    -122.674044
-   ],
-   "pad_at_patch": [
-    {
-     "Unit_Nm": "Deception Pass",
-     "Own_Type": "STAT",
-     "Own_Name": "SPR",
-     "Mang_Type": "STAT",
-     "Mang_Name": "SPR",
-     "Des_Tp": "SP",
-     "Category": "Fee"
-    }
-   ],
-   "owner_at_patch": "STAT",
-   "other_parks_here": [
-    [
-     "US-3180",
-     "Deception Pass State Park",
-     "Deception Pass",
-     "STAT"
-    ]
-   ],
-   "layered": "state owns (hard boundary: R4 not a 2-fer)"
-  },
-  {
-   "area": "US-WA",
-   "refs": [
-    "US-12461",
-    "US-3269"
-   ],
-   "names": {
-    "US-12461": "San Juan Islands BLM National Monument National Monument",
-    "US-3269": "Skull Island State Park State Park"
-   },
-   "federal": [
-    "US-12461"
-   ],
-   "state": [
-    "US-3269"
-   ],
-   "ground": [],
-   "rows": 1,
-   "acres": 3.4,
-   "status": "not sure: the agency ownership map did n",
-   "checked": "2026-10-29",
-   "kinds": [
-    "area"
-   ],
-   "center": [
-    48.639453,
-    -122.986157
-   ],
-   "pad_at_patch": [
-    {
-     "Unit_Nm": "Spokane Wenatchee Field Office",
-     "Own_Type": "FED",
-     "Own_Name": "BLM",
-     "Mang_Type": "FED",
-     "Mang_Name": "BLM",
-     "Des_Tp": "PUB",
-     "Category": "Fee"
-    },
-    {
-     "Unit_Nm": "Skull Island",
-     "Own_Type": "STAT",
-     "Own_Name": "SPR",
-     "Mang_Type": "STAT",
-     "Mang_Name": "SPR",
-     "Des_Tp": "SP",
-     "Category": "Fee"
-    }
-   ],
-   "owner_at_patch": "FED + STAT",
-   "other_parks_here": [],
-   "layered": "mixed / unknown: look"
-  },
-  {
-   "area": "US-WA",
-   "refs": [
-    "US-12461",
-    "US-3271"
-   ],
-   "names": {
-    "US-12461": "San Juan Islands BLM National Monument National Monument",
-    "US-3271": "Spencer Spit State Park State Park"
-   },
-   "federal": [
-    "US-12461"
-   ],
-   "state": [
-    "US-3271"
-   ],
-   "ground": [],
-   "rows": 1,
-   "acres": 202.2,
-   "status": "not sure: the agency ownership map did n",
-   "checked": "2026-10-29",
-   "kinds": [
-    "area"
-   ],
-   "center": [
-    48.535966,
-    -122.860727
-   ],
-   "pad_at_patch": [
-    {
-     "Unit_Nm": "Spencer Spit",
-     "Own_Type": "STAT",
-     "Own_Name": "SPR",
-     "Mang_Type": "STAT",
-     "Mang_Name": "SPR",
-     "Des_Tp": "SP",
-     "Category": "Fee"
-    }
-   ],
-   "owner_at_patch": "STAT",
-   "other_parks_here": [],
-   "layered": "state owns (hard boundary: R4 not a 2-fer)"
-  },
-  {
-   "area": "US-WA",
-   "refs": [
-    "US-12461",
     "US-3278"
    ],
    "names": {
@@ -41963,7 +42515,7 @@
     "US-3278"
    ],
    "ground": [],
-   "rows": 4,
+   "rows": 3,
    "acres": 435.6,
    "status": "merged into one row: US-12461+US-3278@ar",
    "checked": "2026-10-29",
@@ -41988,108 +42540,6 @@
    "owner_at_patch": "STAT",
    "other_parks_here": [],
    "layered": "state owns (hard boundary: R4 not a 2-fer)"
-  },
-  {
-   "area": "US-WA",
-   "refs": [
-    "US-12461",
-    "US-3279"
-   ],
-   "names": {
-    "US-12461": "San Juan Islands BLM National Monument National Monument",
-    "US-3279": "Sucia Island State Park State Park"
-   },
-   "federal": [
-    "US-12461"
-   ],
-   "state": [
-    "US-3279"
-   ],
-   "ground": [],
-   "rows": 1,
-   "acres": 825.7,
-   "status": "not sure: the agency ownership map did n",
-   "checked": "2026-10-29",
-   "kinds": [
-    "area"
-   ],
-   "center": [
-    48.756738,
-    -122.909555
-   ],
-   "pad_at_patch": [
-    {
-     "Unit_Nm": "Sucia Island",
-     "Own_Type": "STAT",
-     "Own_Name": "SPR",
-     "Mang_Type": "STAT",
-     "Mang_Name": "SPR",
-     "Des_Tp": "SP",
-     "Category": "Fee"
-    }
-   ],
-   "owner_at_patch": "STAT",
-   "other_parks_here": [],
-   "layered": "state owns (hard boundary: R4 not a 2-fer)"
-  },
-  {
-   "area": "US-WA",
-   "refs": [
-    "US-12461",
-    "US-3283"
-   ],
-   "names": {
-    "US-12461": "San Juan Islands BLM National Monument National Monument",
-    "US-3283": "Turn Island Marine State Park State Park"
-   },
-   "federal": [
-    "US-12461"
-   ],
-   "state": [
-    "US-3283"
-   ],
-   "ground": [],
-   "rows": 1,
-   "acres": 35.1,
-   "status": "not sure: the agency ownership map did n",
-   "checked": "2026-10-29",
-   "kinds": [
-    "area"
-   ],
-   "center": [
-    48.532924,
-    -122.971027
-   ],
-   "pad_at_patch": [
-    {
-     "Unit_Nm": "San Juan Islands National Wildlife Refuge",
-     "Own_Type": "FED",
-     "Own_Name": "FWS",
-     "Mang_Type": "FED",
-     "Mang_Name": "FWS",
-     "Des_Tp": "NWR",
-     "Category": "Fee"
-    },
-    {
-     "Unit_Nm": "San Juan Islands National Wildlife Refuge",
-     "Own_Type": "FED",
-     "Own_Name": "FWS",
-     "Mang_Type": "FED",
-     "Mang_Name": "FWS",
-     "Des_Tp": "NWR",
-     "Category": "Fee"
-    }
-   ],
-   "owner_at_patch": "FED",
-   "other_parks_here": [
-    [
-     "US-0592",
-     "San Juan Islands National Wildlife Refuge",
-     "San Juan Islands National Wildlife Refuge",
-     "FED"
-    ]
-   ],
-   "layered": "FED owns (layered: R4 2-fer)"
   },
   {
    "area": "US-WA",
@@ -42296,158 +42746,6 @@
   {
    "area": "US-WA",
    "refs": [
-    "US-3203",
-    "US-4530"
-   ],
-   "names": {
-    "US-3203": "Palouse to Cascades State Park State Trail State Trail",
-    "US-4530": "Mount Baker-Snoqualmie National Forest National Forest"
-   },
-   "federal": [
-    "US-4530"
-   ],
-   "state": [
-    "US-3203"
-   ],
-   "ground": [
-    "Forest Service",
-    "state"
-   ],
-   "rows": 13,
-   "acres": 86.6,
-   "status": "candidate",
-   "checked": "2026-10-29",
-   "kinds": [
-    "area"
-   ],
-   "center": [
-    47.386958,
-    -121.472604
-   ],
-   "pad_at_patch": [
-    {
-     "Unit_Nm": "Snoqualmie National Forest",
-     "Own_Type": "FED",
-     "Own_Name": "USFS",
-     "Mang_Type": "FED",
-     "Mang_Name": "USFS",
-     "Des_Tp": "NF",
-     "Category": "Fee"
-    },
-    {
-     "Unit_Nm": "Iron Horse",
-     "Own_Type": "STAT",
-     "Own_Name": "SPR",
-     "Mang_Type": "STAT",
-     "Mang_Name": "SPR",
-     "Des_Tp": "SP",
-     "Category": "Fee"
-    }
-   ],
-   "owner_at_patch": "FED + STAT",
-   "other_parks_here": [],
-   "layered": "mixed / unknown: look"
-  },
-  {
-   "area": "US-WA",
-   "refs": [
-    "US-3203",
-    "US-4531"
-   ],
-   "names": {
-    "US-3203": "Palouse to Cascades State Park State Trail State Trail",
-    "US-4531": "Okanogan-Wenatchee National Forest National Forest"
-   },
-   "federal": [
-    "US-4531"
-   ],
-   "state": [
-    "US-3203"
-   ],
-   "ground": [],
-   "rows": 13,
-   "acres": 185.1,
-   "status": "candidate",
-   "checked": "2026-10-29",
-   "kinds": [
-    "area"
-   ],
-   "center": [
-    47.29523,
-    -121.319841
-   ],
-   "pad_at_patch": [
-    {
-     "Unit_Nm": "Wenatchee National Forest",
-     "Own_Type": "FED",
-     "Own_Name": "USFS",
-     "Mang_Type": "FED",
-     "Mang_Name": "USFS",
-     "Des_Tp": "NF",
-     "Category": "Fee"
-    },
-    {
-     "Unit_Nm": "Iron Horse",
-     "Own_Type": "STAT",
-     "Own_Name": "SPR",
-     "Mang_Type": "STAT",
-     "Mang_Name": "SPR",
-     "Des_Tp": "SP",
-     "Category": "Fee"
-    }
-   ],
-   "owner_at_patch": "FED + STAT",
-   "other_parks_here": [],
-   "layered": "mixed / unknown: look"
-  },
-  {
-   "area": "US-WA",
-   "refs": [
-    "US-3203",
-    "US-4562"
-   ],
-   "names": {
-    "US-3203": "Palouse to Cascades State Park State Trail State Trail",
-    "US-4562": "Pacific Crest Trail National Scenic Trail National Scenic Trail"
-   },
-   "federal": [
-    "US-4562"
-   ],
-   "state": [
-    "US-3203"
-   ],
-   "ground": [
-    "Forest Service"
-   ],
-   "rows": 1,
-   "acres": 0,
-   "status": "candidate",
-   "checked": "2026-10-29",
-   "kinds": [
-    "trail"
-   ],
-   "center": [
-    47.395533,
-    -121.44037
-   ],
-   "pad_at_patch": [
-    {
-     "Unit_Nm": "Snoqualmie National Forest",
-     "Own_Type": "FED",
-     "Own_Name": "USFS",
-     "Mang_Type": "FED",
-     "Mang_Name": "USFS",
-     "Des_Tp": "NF",
-     "Category": "Fee"
-    }
-   ],
-   "owner_at_patch": "FED",
-   "other_parks_here": [],
-   "layered": "FED owns (layered: R4 2-fer)"
-  },
-  {
-   "area": "US-WA",
-   "refs": [
     "US-3233",
     "US-4530"
    ],
@@ -42464,14 +42762,14 @@
    "ground": [],
    "rows": 2,
    "acres": 56.6,
-   "status": "very tight: could be map error: check bo",
+   "status": "candidate",
    "checked": "2026-10-29",
    "kinds": [
     "area"
    ],
    "center": [
-    48.058304,
-    -121.781159
+    48.065268,
+    -121.798025
    ],
    "pad_at_patch": [
     {
@@ -42769,7 +43067,30 @@
    "center": [
     45.394641,
     -92.663931
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Lower Saint Croix National Scenic Riverway",
+     "Own_Type": "FED",
+     "Own_Name": "NPS",
+     "Mang_Type": "FED",
+     "Mang_Name": "NPS",
+     "Des_Tp": "WSR",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Interstate State Park",
+     "Own_Type": "STAT",
+     "Own_Name": "SDNR",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SPR",
+     "Des_Tp": "SP",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
   },
   {
    "area": "US-WI",
@@ -42798,7 +43119,21 @@
    "center": [
     45.900261,
     -92.698142
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Saint Croix National Scenic Riverway",
+     "Own_Type": "FED",
+     "Own_Name": "NPS",
+     "Mang_Type": "FED",
+     "Mang_Name": "NPS",
+     "Des_Tp": "WSR",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [],
+   "layered": "FED owns (layered: R4 2-fer)"
   },
   {
    "area": "US-WI",
@@ -42827,7 +43162,21 @@
    "center": [
     45.557192,
     -92.760638
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Saint Croix National Scenic Riverway",
+     "Own_Type": "FED",
+     "Own_Name": "NPS",
+     "Mang_Type": "FED",
+     "Mang_Name": "NPS",
+     "Des_Tp": "WSR",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [],
+   "layered": "FED owns (layered: R4 2-fer)"
   },
   {
    "area": "US-WI",
@@ -42856,7 +43205,21 @@
    "center": [
     45.228457,
     -92.76287
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Lower Saint Croix National Scenic Riverway",
+     "Own_Type": "FED",
+     "Own_Name": "NPS",
+     "Mang_Type": "FED",
+     "Mang_Name": "NPS",
+     "Des_Tp": "WSR",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [],
+   "layered": "FED owns (layered: R4 2-fer)"
   },
   {
    "area": "US-WI",
@@ -42885,7 +43248,21 @@
    "center": [
     45.371975,
     -92.677177
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Interstate Park-Iansr",
+     "Own_Type": "STAT",
+     "Own_Name": "SDNR",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SP",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "STAT",
+   "other_parks_here": [],
+   "layered": "state owns (hard boundary: R4 not a 2-fer)"
   },
   {
    "area": "US-WI",
@@ -42914,7 +43291,30 @@
    "center": [
     45.574509,
     -92.879117
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Saint Croix National Scenic Riverway",
+     "Own_Type": "FED",
+     "Own_Name": "NPS",
+     "Mang_Type": "FED",
+     "Mang_Name": "NPS",
+     "Des_Tp": "WSR",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Governor Knowles State Forest",
+     "Own_Type": "STAT",
+     "Own_Name": "SDNR",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SRMA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
   },
   {
    "area": "US-WI",
@@ -42943,7 +43343,21 @@
    "center": [
     45.806886,
     -92.761579
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Saint Croix National Scenic Riverway",
+     "Own_Type": "FED",
+     "Own_Name": "NPS",
+     "Mang_Type": "FED",
+     "Mang_Name": "NPS",
+     "Des_Tp": "WSR",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [],
+   "layered": "FED owns (layered: R4 2-fer)"
   },
   {
    "area": "US-WI",
@@ -42972,7 +43386,21 @@
    "center": [
     46.067125,
     -92.32879
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Saint Croix National Scenic Riverway",
+     "Own_Type": "FED",
+     "Own_Name": "NPS",
+     "Mang_Type": "FED",
+     "Mang_Name": "NPS",
+     "Des_Tp": "WSR",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [],
+   "layered": "FED owns (layered: R4 2-fer)"
   },
   {
    "area": "US-WI",
@@ -43001,7 +43429,21 @@
    "center": [
     45.350898,
     -92.685374
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Lower Saint Croix National Scenic Riverway",
+     "Own_Type": "FED",
+     "Own_Name": "NPS",
+     "Mang_Type": "FED",
+     "Mang_Name": "NPS",
+     "Des_Tp": "WSR",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [],
+   "layered": "FED owns (layered: R4 2-fer)"
   },
   {
    "area": "US-WI",
@@ -43030,7 +43472,21 @@
    "center": [
     46.080029,
     -92.124786
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Namekagon Barrens Wildlife Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SDNR",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SREC",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "STAT",
+   "other_parks_here": [],
+   "layered": "state owns (hard boundary: R4 not a 2-fer)"
   },
   {
    "area": "US-WI",
@@ -43059,7 +43515,39 @@
    "center": [
     43.103816,
     -91.160326
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Upper Mississippi River National Wildlife And Fish Refuge",
+     "Own_Type": "FED",
+     "Own_Name": "FWS",
+     "Mang_Type": "FED",
+     "Mang_Name": "FWS",
+     "Des_Tp": "NWR",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Upper Mississippi River National Wildlife And Fish Refuge",
+     "Own_Type": "FED",
+     "Own_Name": "FWS",
+     "Mang_Type": "FED",
+     "Mang_Name": "FWS",
+     "Des_Tp": "NWR",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Lower Wisconsin State Riverway",
+     "Own_Type": "STAT",
+     "Own_Name": "SDNR",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
   },
   {
    "area": "US-WI",
@@ -43088,7 +43576,39 @@
    "center": [
     44.423533,
     -92.034151
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Upper Mississippi River National Wildlife And Fish Refuge",
+     "Own_Type": "FED",
+     "Own_Name": "FWS",
+     "Mang_Type": "FED",
+     "Mang_Name": "FWS",
+     "Des_Tp": "NWR",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Upper Mississippi River National Wildlife And Fish Refuge",
+     "Own_Type": "FED",
+     "Own_Name": "FWS",
+     "Mang_Type": "FED",
+     "Mang_Name": "FWS",
+     "Des_Tp": "NWR",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Tiffany Wildlife Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SDNR",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SREC",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
   },
   {
    "area": "US-WI",
@@ -43117,7 +43637,39 @@
    "center": [
     43.981725,
     -91.329269
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Upper Mississippi River National Wildlife And Fish Refuge",
+     "Own_Type": "FED",
+     "Own_Name": "FWS",
+     "Mang_Type": "FED",
+     "Mang_Name": "FWS",
+     "Des_Tp": "NWR",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Upper Mississippi River National Wildlife And Fish Refuge",
+     "Own_Type": "FED",
+     "Own_Name": "FWS",
+     "Mang_Type": "FED",
+     "Mang_Name": "FWS",
+     "Des_Tp": "NWR",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Van Loon Wildlife Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SDNR",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SREC",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
   },
   {
    "area": "US-WI",
@@ -43146,7 +43698,30 @@
    "center": [
     43.34666,
     -89.601903
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Ice Age Trail",
+     "Own_Type": "STAT",
+     "Own_Name": "SDNR",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SREC",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Ice Age Trail - Sd",
+     "Own_Type": "STAT",
+     "Own_Name": "SDNR",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SP",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "STAT",
+   "other_parks_here": [],
+   "layered": "state owns (hard boundary: R4 not a 2-fer)"
   },
   {
    "area": "US-WV",
@@ -43175,7 +43750,30 @@
    "center": [
     38.463881,
     -79.940434
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Monongahela National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Cass Scenic Railroad State Park",
+     "Own_Type": "STAT",
+     "Own_Name": "SDNR",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SP",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
   },
   {
    "area": "US-WV",
@@ -43204,7 +43802,30 @@
    "center": [
     38.12874,
     -80.151802
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Monongahela National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Watoga State Park",
+     "Own_Type": "STAT",
+     "Own_Name": "SDNR",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SP",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
   },
   {
    "area": "US-WV",
@@ -43233,7 +43854,39 @@
    "center": [
     38.053671,
     -80.165138
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Monongahela National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Calvin Price State Forest",
+     "Own_Type": "STAT",
+     "Own_Name": "SDNR",
+     "Mang_Type": "UNK",
+     "Mang_Name": "UNK",
+     "Des_Tp": "SRMA",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Calvin Price State Forest",
+     "Own_Type": "STAT",
+     "Own_Name": "SDNR",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SRMA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
   },
   {
    "area": "US-WV",
@@ -43262,7 +43915,30 @@
    "center": [
     38.265521,
     -79.972597
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Monongahela National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Seneca State Forest",
+     "Own_Type": "STAT",
+     "Own_Name": "SDNR",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SRMA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
   },
   {
    "area": "US-WV",
@@ -43291,7 +43967,30 @@
    "center": [
     38.320342,
     -80.199552
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Monongahela National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Handley Wildlife Management Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SDNR",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
   },
   {
    "area": "US-WV",
@@ -43320,7 +44019,30 @@
    "center": [
     38.691348,
     -79.940604
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Monongahela National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Huttonsville State Farm Wildlife Management Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SDNR",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
   },
   {
    "area": "US-WV",
@@ -43350,7 +44072,11 @@
    "center": [
     38.319158,
     -79.965515
-   ]
+   ],
+   "pad_at_patch": [],
+   "owner_at_patch": "no fee record",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
   },
   {
    "area": "US-WV",
@@ -43379,7 +44105,30 @@
    "center": [
     38.214449,
     -80.892323
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Summersville Recreation Area",
+     "Own_Type": "UNK",
+     "Own_Name": "UNK",
+     "Mang_Type": "FED",
+     "Mang_Name": "USACE",
+     "Des_Tp": "REC",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Gauley River National Recreation Area",
+     "Own_Type": "FED",
+     "Own_Name": "NPS",
+     "Mang_Type": "FED",
+     "Mang_Name": "NPS",
+     "Des_Tp": "NRA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + UNK",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
   },
   {
    "area": "US-WV",
@@ -43408,7 +44157,30 @@
    "center": [
     37.590085,
     -80.963484
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Bluestone Recreation Area",
+     "Own_Type": "UNK",
+     "Own_Name": "UNK",
+     "Mang_Type": "FED",
+     "Mang_Name": "USACE",
+     "Des_Tp": "REC",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Bluestone National Scenic River",
+     "Own_Type": "FED",
+     "Own_Name": "NPS",
+     "Mang_Type": "FED",
+     "Mang_Name": "NPS",
+     "Des_Tp": "WSR",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + UNK",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
   },
   {
    "area": "US-WV",
@@ -43437,7 +44209,21 @@
    "center": [
     37.545396,
     -81.00558
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Pipestem Resort State Park",
+     "Own_Type": "STAT",
+     "Own_Name": "SDNR",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SP",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "STAT",
+   "other_parks_here": [],
+   "layered": "state owns (hard boundary: R4 not a 2-fer)"
   },
   {
    "area": "US-WV",
@@ -43466,7 +44252,37 @@
    "center": [
     37.601145,
     -80.944773
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Bluestone Recreation Area",
+     "Own_Type": "UNK",
+     "Own_Name": "UNK",
+     "Mang_Type": "FED",
+     "Mang_Name": "USACE",
+     "Des_Tp": "REC",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Bluestone Lake Wildlife Management Area",
+     "Own_Type": "FED",
+     "Own_Name": "USACE",
+     "Mang_Type": "JNT",
+     "Mang_Name": "JNT",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + UNK",
+   "other_parks_here": [
+    [
+     "US-1804",
+     "Bluestone State Park",
+     "Bluestone Recreation Area",
+     "UNK"
+    ]
+   ],
+   "layered": "mixed / unknown: look"
   },
   {
    "area": "US-WV",
@@ -43496,7 +44312,37 @@
    "center": [
     38.05338,
     -80.165863
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Monongahela National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Calvin Price State Forest",
+     "Own_Type": "STAT",
+     "Own_Name": "SDNR",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SDNR",
+     "Des_Tp": "SRMA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [
+    [
+     "US-0632",
+     "Monongahela National Forest",
+     "Monongahela National Forest",
+     "FED"
+    ]
+   ],
+   "layered": "mixed / unknown: look"
   },
   {
    "area": "US-WY",
@@ -43525,7 +44371,21 @@
    "center": [
     42.051951,
     -107.804294
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Chain Lakes Wildlife Habitat Management Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SFW",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "STAT",
+   "other_parks_here": [],
+   "layered": "state owns (hard boundary: R4 not a 2-fer)"
   },
   {
    "area": "US-WY",
@@ -43554,7 +44414,30 @@
    "center": [
     41.97124,
     -107.757705
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Rawlins Field Office",
+     "Own_Type": "FED",
+     "Own_Name": "BLM",
+     "Mang_Type": "FED",
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Chain Lakes Wildlife Habitat Management Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SFW",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
   },
   {
    "area": "US-WY",
@@ -43583,7 +44466,28 @@
    "center": [
     42.756471,
     -108.800925
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Sinks Canyon",
+     "Own_Type": "STAT",
+     "Own_Name": "SPR",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SPR",
+     "Des_Tp": "SP",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "STAT",
+   "other_parks_here": [
+    [
+     "US-3302",
+     "Sinks Canyon State Park",
+     "Sinks Canyon",
+     "STAT"
+    ]
+   ],
+   "layered": "state owns (hard boundary: R4 not a 2-fer)"
   },
   {
    "area": "US-WY",
@@ -43615,7 +44519,30 @@
    "center": [
     42.95372,
     -109.831186
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Bridger National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Soda Lake Wildlife Habitat Management Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SFW",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
   },
   {
    "area": "US-WY",
@@ -43644,7 +44571,21 @@
    "center": [
     42.756302,
     -108.79957
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Sinks Canyon",
+     "Own_Type": "STAT",
+     "Own_Name": "SPR",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SPR",
+     "Des_Tp": "SP",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "STAT",
+   "other_parks_here": [],
+   "layered": "state owns (hard boundary: R4 not a 2-fer)"
   },
   {
    "area": "US-WY",
@@ -43675,7 +44616,21 @@
    "center": [
     43.385525,
     -108.142485
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Lander Field Office",
+     "Own_Type": "FED",
+     "Own_Name": "BLM",
+     "Mang_Type": "FED",
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [],
+   "layered": "FED owns (layered: R4 2-fer)"
   },
   {
    "area": "US-WY",
@@ -43706,7 +44661,30 @@
    "center": [
     44.347152,
     -107.514262
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Worland Field Office",
+     "Own_Type": "FED",
+     "Own_Name": "BLM",
+     "Mang_Type": "FED",
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Medicine Lodge Wildlife Habitat Management Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SFW",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
   },
   {
    "area": "US-WY",
@@ -43735,7 +44713,11 @@
    "center": [
     43.569925,
     -110.300475
-   ]
+   ],
+   "pad_at_patch": [],
+   "owner_at_patch": "no fee record",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
   },
   {
    "area": "US-WY",
@@ -43767,7 +44749,30 @@
    "center": [
     42.862637,
     -109.681323
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Bridger National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Fall Creek Wildlife Habitat Management Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SFW",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
   },
   {
    "area": "US-WY",
@@ -43798,7 +44803,21 @@
    "center": [
     42.738755,
     -108.8301
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Shoshone National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [],
+   "layered": "FED owns (layered: R4 2-fer)"
   },
   {
    "area": "US-WY",
@@ -43830,7 +44849,30 @@
    "center": [
     41.175921,
     -106.051338
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Medicine Bow National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Forbes/Sheep Mountain Wildlife Habitat Management Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SFW",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
   },
   {
    "area": "US-WY",
@@ -43862,7 +44904,21 @@
    "center": [
     41.582962,
     -106.307101
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Medicine Bow National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [],
+   "layered": "FED owns (layered: R4 2-fer)"
   },
   {
    "area": "US-WY",
@@ -43894,7 +44950,30 @@
    "center": [
     44.413462,
     -106.920865
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Bighorn National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Bud Love Wildlife Habitat Management Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SFW",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
   },
   {
    "area": "US-WY",
@@ -43927,7 +45006,30 @@
    "center": [
     43.138788,
     -110.99691
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Bridger National Forest",
+     "Own_Type": "FED",
+     "Own_Name": "USFS",
+     "Mang_Type": "FED",
+     "Mang_Name": "USFS",
+     "Des_Tp": "NF",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Greys River Wildlife Habitat Management Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SFW",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
   },
   {
    "area": "US-WY",
@@ -43956,7 +45058,30 @@
    "center": [
     43.582982,
     -106.978464
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Buffalo Field Office",
+     "Own_Type": "FED",
+     "Own_Name": "BLM",
+     "Mang_Type": "FED",
+     "Mang_Name": "BLM",
+     "Des_Tp": "PUB",
+     "Category": "Fee"
+    },
+    {
+     "Unit_Nm": "Ed O. Taylor Wildlife Habitat Management Area",
+     "Own_Type": "STAT",
+     "Own_Name": "SFW",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SFW",
+     "Des_Tp": "SCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED + STAT",
+   "other_parks_here": [],
+   "layered": "mixed / unknown: look"
   },
   {
    "area": "US-WY",
@@ -43987,7 +45112,28 @@
    "center": [
     44.938685,
     -108.234102
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Bighorn Canyon National Recreation Area",
+     "Own_Type": "FED",
+     "Own_Name": "NPS",
+     "Mang_Type": "FED",
+     "Mang_Name": "NPS",
+     "Des_Tp": "NRA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "FED",
+   "other_parks_here": [
+    [
+     "US-0674",
+     "Bighorn Canyon National Recreation Area",
+     "Bighorn Canyon National Recreation Area",
+     "FED"
+    ]
+   ],
+   "layered": "FED owns (layered: R4 2-fer)"
   },
   {
    "area": "US-WY",
@@ -44016,7 +45162,21 @@
    "center": [
     41.676449,
     -108.791672
-   ]
+   ],
+   "pad_at_patch": [
+    {
+     "Unit_Nm": "Point of Rocks Stage Station",
+     "Own_Type": "STAT",
+     "Own_Name": "SPR",
+     "Mang_Type": "STAT",
+     "Mang_Name": "SPR",
+     "Des_Tp": "SHCA",
+     "Category": "Fee"
+    }
+   ],
+   "owner_at_patch": "STAT",
+   "other_parks_here": [],
+   "layered": "state owns (hard boundary: R4 not a 2-fer)"
   }
  ]
 }
