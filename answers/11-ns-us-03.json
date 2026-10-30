@@ -1,0 +1,678 @@
+{
+ "request": "requests/11-ns-us-03.json",
+ "id": "11-ns-us-03",
+ "chat": 11,
+ "kind": "map-check",
+ "report": "Chat 11 NOT SURE map check (us, US-CA, US-CO): screenshots in order: 1=US-11584 (record); 2=US-11584 (map); 3=US-4383 (map); 4=US-6446 (record); 5=US-6446 (map); 6=US-6448 (record); 7=US-6448 (map); 8=US-6448 (record); 9=US-6448 (map); 10=US-10540 (record); 11=US-10540 (map). The map shots are centred on the POTA pin (zoom 14).",
+ "asked": {
+  "chat": 11,
+  "kind": "map-check",
+  "screenshot": true,
+  "report": "Chat 11 NOT SURE map check (us, US-CA, US-CO): screenshots in order: 1=US-11584 (record); 2=US-11584 (map); 3=US-4383 (map); 4=US-6446 (record); 5=US-6446 (map); 6=US-6448 (record); 7=US-6448 (map); 8=US-6448 (record); 9=US-6448 (map); 10=US-10540 (record); 11=US-10540 (map). The map shots are centred on the POTA pin (zoom 14).",
+  "items": [
+   {
+    "ref": "US-11584",
+    "park": "Panoche Hills BLM Special Recreation Management Area",
+    "record": "Panoche/Coalinga",
+    "area": "US-CA"
+   },
+   {
+    "ref": "US-4383",
+    "park": "Rogue River-Siskiyou NF",
+    "record": "",
+    "area": "US-CA"
+   },
+   {
+    "ref": "US-6446",
+    "park": "Brannan Island State Recreation Area",
+    "record": "Brannan Island Fishing Access",
+    "area": "US-CA"
+   },
+   {
+    "ref": "US-6448",
+    "park": "William Randolph Hearst Memorial State Beach",
+    "record": "Hearst San Simeon SP",
+    "area": "US-CA"
+   },
+   {
+    "ref": "US-6448",
+    "park": "William Randolph Hearst Memorial State Beach",
+    "record": "Hearst San Simeon State Park",
+    "area": "US-CA"
+   },
+   {
+    "ref": "US-10540",
+    "park": "Bellevue-Watson State Fish Hatchery",
+    "record": "Watson Lake SFU",
+    "area": "US-CO"
+   }
+  ],
+  "urls": [
+   "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=463&outFields=*&returnGeometry=false&f=html",
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.blm.gov%2Farcgis%2Frest%2Fservices%2Flands%2FBLM_Natl_ACEC%2FMapServer%2F0&center=-120.812%2C36.7091&level=14",
+    "steps": [
+     {
+      "wait": 10000
+     }
+    ]
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-123.961%2C41.9816&level=14",
+    "steps": [
+     {
+      "wait": 10000
+     }
+    ]
+   },
+   "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=183659&outFields=*&returnGeometry=false&f=html",
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-121.697%2C38.1101&level=14",
+    "steps": [
+     {
+      "wait": 10000
+     }
+    ]
+   },
+   "https://services2.arcgis.com/Uq9r85Potqm3MfRV/ArcGIS/rest/services/ParkBoundaries/FeatureServer/0/query?objectIds=798&outFields=*&returnGeometry=false&f=html",
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fservices2.arcgis.com%2FUq9r85Potqm3MfRV%2FArcGIS%2Frest%2Fservices%2FParkBoundaries%2FFeatureServer%2F0&center=-121.187%2C35.6438&level=14",
+    "steps": [
+     {
+      "wait": 10000
+     }
+    ]
+   },
+   "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=183989&outFields=*&returnGeometry=false&f=html",
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-121.187%2C35.6438&level=14",
+    "steps": [
+     {
+      "wait": 10000
+     }
+    ]
+   },
+   "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/arcgis/rest/services/CPWAdminData/FeatureServer/5/query?objectIds=881&outFields=*&returnGeometry=false&f=html",
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fservices5.arcgis.com%2FttNGmDvKQA7oeDQ3%2Farcgis%2Frest%2Fservices%2FCPWAdminData%2FFeatureServer%2F5&center=-105.17%2C40.6322&level=14",
+    "steps": [
+     {
+      "wait": 10000
+     }
+    ]
+   }
+  ]
+ },
+ "answered": "2026-10-30 17:47Z",
+ "results": [
+  {
+   "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=463&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=463&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: ACEC Designated Polygons (ID: 0)",
+   "text": "ArcGIS REST Services Directory\nHome > services > lands > BLM_Natl_ACEC (MapServer) > ACEC Designated Polygons > query API Reference\nQuery: ACEC Designated Polygons (ID: 0)\nWhere:\nText:\nObject IDs:\nTime:\nTime Relation:\nInclude start and end\nInclude start and exclude end\nExclude start and include end\nExclude start and end\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nReturn True Curves: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nReturn IDs Only: True False\nReturn Count Only: True False\nOrder By Fields:\nGroup By Fields (For Statistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nResult Offset:\nResult Record Count:\nReturn Extent Only: True False\nSQL Format:\nNone\nStandard\nNative\nDatum Transformation:\nParameter Values:\nRange Values:\nQuantization Parameters:\nUnique IDs:\nReturn Unique IDs Only: True False\nFeature Encoding:\nEsriDefault\nFormat:\nHTML\nJSON\nKMZ\nGeoJSON\nPBF\n# records: 1\nOBJECTID: 463\nACEC_NAME: Panoche/Coalinga\nLUP_NAME: Hollister\nROD_DATE: 1189123200000\nGIS_ACRES: 55209.60894279\nADMIN_ST: CA\nGlobalID: {12B51358-412D-472C-8AFE-36EAB0F88325}\nOriginal_GlobalID: {22BCC2D3-4471-4C7B-843A-A3E2EA6B7208}\nShape.STArea(): 0.02246150722330068\nShape.STLength(): 4.945247031478734\nNEPA_NUM: DOI-BLM-CA-C090-2006-0021-EIS\nACEC_RLVNCE_CUL: YES\nACEC_RLVNCE_FRSC: NO\nACEC_RLVNCE_HIS: YES\nACEC_RLVNCE_NHAZ: NO\nACEC_RLVNCE_NPRO: YES\nACEC_RLVNCE_NSYS: YES\nACEC_RLVNCE_SCE: NO\nACEC_RLVNCE_WRSC: YES\nACEC_IMPRTNCE_QLTS: YES\nACEC_IMPRTNCE_IMPRTNCE: YES\nACEC_IMPRTNCE_CNTRBTN: YES\nACEC_IMPRTNCE_THRT: NO\nSPCL_MGMT_ATTN_RX_PRTCT: YES\nSPCL_MGMT_ATTN_RX_PRVNT: YES",
+   "links": [
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services/lands",
+     "text": "lands"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer",
+     "text": "BLM_Natl_ACEC (MapServer)"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+     "text": "ACEC Designated Polygons"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query",
+     "text": "query"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/help/en/rest/router.html?f=rest/services/lands/BLM_Natl_ACEC/MapServer/0/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/463",
+     "text": "463"
+    }
+   ],
+   "screenshot": "answers/11-ns-us-03-1.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.blm.gov%2Farcgis%2Frest%2Fservices%2Flands%2FBLM_Natl_ACEC%2FMapServer%2F0&center=-120.812%2C36.7091&level=14",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.blm.gov%2Farcgis%2Frest%2Fservices%2Flands%2FBLM_Natl_ACEC%2FMapServer%2F0&center=-120.812%2C36.7091&level=14",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nTime series with field values\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nFresno County Dept. PWP | California State Parks | Esri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | Bureau of Land Management | EPA | NPS | US Census Bureau | USDA | USFWS | Bureau of Land Management, Headquarters (HQ)\nPowered by Esri",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns-us-03-2.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-123.961%2C41.9816&level=14",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-123.961%2C41.9816&level=14",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nTime series with field values\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nCalifornia State Parks | Esri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | Bureau of Land Management | EPA | NPS | US Census Bureau | USDA | USFWS\nPowered by Esri",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns-us-03-3.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=183659&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=183659&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: PADUS4_0_FeeManagers (ID: 0)",
+   "text": "ArcGIS REST Services Directory Login | Get Token\nHome > services > PAD-US > PAD_US (MapServer) > PADUS4_0_FeeManagers > query API Reference\nQuery: PADUS4_0_FeeManagers (ID: 0)\nWhere:\nText:\nObject IDs:\nTime:\nTime Relation:\nInclude start and end\nInclude start and exclude end\nExclude start and include end\nExclude start and end\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nReturn True Curves: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nReturn IDs Only: True False\nReturn Count Only: True False\nOrder By Fields:\nGroup By Fields (For Statistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nResult Offset:\nResult Record Count:\nReturn Extent Only: True False\nSQL Format:\nNone\nStandard\nNative\nDatum Transformation:\nParameter Values:\nRange Values:\nQuantization Parameters:\nFeature Encoding:\nEsriDefault\nFormat:\nHTML\nJSON\nKMZ\nGeoJSON\nPBF\n# records: 1\nOBJECTID: 183659\nFeatClass: Fee\nCategory: Fee\nOwn_Type: STAT\nOwn_Name: SFW\nLoc_Own: California Department of Fish and Wildlife\nMang_Type: STAT\nMang_Name: SFW\nLoc_Mang: California Department of Fish and Wildlife\nDes_Tp: SREC\nLoc_Ds:\nUnit_Nm: Brannan Island Fishing Access\nLoc_Nm: Brannan Island Fishing Access\nState_Nm: CA\nAgg_Src: GIN_PADUS4_0Fee_Cpad_2022b_CA\nGIS_Src: CPAD_2022b_Holdings.shp\nSrc_Date: 2022/12/20\nGIS_Acres: 7\nSource_PAID: 18062\nWDPA_Cd: 0\nPub_Access: OA\nAccess_Src: GreenInfo Network\nAccess_Dt: 2020\nGAP_Sts: 4\nGAPCdSrc: GreenInfo Network\nGAPCdDt: 2020\nIUCN_Cat: Unassigned\nIUCNCtSrc: GAP - Default\nIUCNCtDt: 2024\nDate_Est:\nComments:\nEsmtHldr:\nEHoldTyp:\nWebServiceMangName: SFW\nTranspPct: null\nShape_Length: 1940.7209593158861\nShape_Area: 47939.958853303695",
+   "links": [
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/rest/login",
+     "text": "Login"
+    },
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/tokens/",
+     "text": "Get Token"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US",
+     "text": "PAD-US"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer",
+     "text": "PAD_US (MapServer)"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "text": "PADUS4_0_FeeManagers"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query",
+     "text": "query"
+    },
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/help/en/rest/router.html?f=rest/services/PAD-US/PAD_US/MapServer/0/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/183659",
+     "text": "183659"
+    }
+   ],
+   "screenshot": "answers/11-ns-us-03-4.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-121.697%2C38.1101&level=14",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-121.697%2C38.1101&level=14",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nTime series with field values\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nCounty of Sacramento | California State Parks | Esri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | Bureau of Land Management | EPA | NPS | US Census Bureau | USDA | USFWS\nPowered by Esri",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns-us-03-5.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/ArcGIS/rest/services/ParkBoundaries/FeatureServer/0/query?objectIds=798&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/ArcGIS/rest/services/ParkBoundaries/FeatureServer/0/query?objectIds=798&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: ParkBoundaries (ID: 0)",
+   "text": "ArcGIS REST Services Directory\nHome > services > ParkBoundaries (FeatureServer) > ParkBoundaries > query | API Reference\nQuery: ParkBoundaries (ID: 0)\nWhere:\nObject IDs:\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nDisjoint\nRelation\nResult Type:\nNone\nStandard\nTile\nDistance:\nUnits:\nMeters\nMiles\nFeet\nKilometers\nNautical Miles\nUS NauticalMiles\nOut Distance:\nRelation:\nReturn Geodetic: True False\nOut Fields:\nReturn Geometry: True False\nReturn Centroid: True False\nReturn Envelope: True False\nFeature Encoding:\nesriDefault\nesriCompressedShapeBuffer\nGeometry MultiPatch Option:\nNone\nxyFootprint\nstripMaterials\nembedMaterials\nexternalizeTextures\nextent\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nDefault Spatial Reference:\nDatum Transformation:\nApply VCS Projection: True False\nReturn IDs Only: True False\nReturn Unique IDs Only: True False\nReturn Count Only: True False\nReturn Extent Only: True False\nReturn Query Geometry: True False\nReturn Distinct Values: True False\nCache Hint True False\nCollation:\nOrder By Fields:\nGroup By Fields (For Statistics):\nReturn Aggregate Ids: True False\nOutput Statistics:\nHaving:\nResult Offset:\nResult Record Count:\nReturnZ: True False\nReturnM: True False\nReturn True Curves: True False\nReturn Exceeded Limit Features: True False\nReturn Exceeded Limit Geometries: True False\nQuantization Parameters:\nSQL Format:\nnone\nstandard\nnative\nFormat:\nHTML\nJSON\nGEOJSON\nPBF\n# results: 1\nFID: 798\nGISACRES: 1689.65662506\nUNITNAME: Hearst San Simeon SP\nGISID: GIS0000343\nSUBTYPE: Park Unit or Property\nUNITNBR: 487\nSHARE:\nShape_Leng: 80882.3834441\nGlobalID: 73307018-eed0-45d6-849f-14d27ae2a099\nShape__Area: 10511434.8125\nShape__Length: 80882.3834440868\nNearMPA:\nMPAs_nearby:",
+   "links": [
+    {
+     "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/ArcGIS/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/ArcGIS/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/ArcGIS/rest/services/ParkBoundaries/FeatureServer",
+     "text": "ParkBoundaries (FeatureServer)"
+    },
+    {
+     "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/ArcGIS/rest/services/ParkBoundaries/FeatureServer/0",
+     "text": "ParkBoundaries"
+    },
+    {
+     "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/ArcGIS/rest/services/ParkBoundaries/FeatureServer/0/query",
+     "text": "query"
+    },
+    {
+     "url": "http://resources.arcgis.com/en/help/arcgis-rest-api/",
+     "text": "API Reference"
+    }
+   ],
+   "screenshot": "answers/11-ns-us-03-6.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fservices2.arcgis.com%2FUq9r85Potqm3MfRV%2FArcGIS%2Frest%2Fservices%2FParkBoundaries%2FFeatureServer%2F0&center=-121.187%2C35.6438&level=14",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fservices2.arcgis.com%2FUq9r85Potqm3MfRV%2FArcGIS%2Frest%2Fservices%2FParkBoundaries%2FFeatureServer%2F0&center=-121.187%2C35.6438&level=14",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nCalifornia State Parks | Esri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | Bureau of Land Management | EPA | NPS | US Census Bureau | USDA | USFWS | California State Parks: Enterprise Geographic Information Systems\nPowered by Esri",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns-us-03-7.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=183989&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=183989&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: PADUS4_0_FeeManagers (ID: 0)",
+   "text": "ArcGIS REST Services Directory Login | Get Token\nHome > services > PAD-US > PAD_US (MapServer) > PADUS4_0_FeeManagers > query API Reference\nQuery: PADUS4_0_FeeManagers (ID: 0)\nWhere:\nText:\nObject IDs:\nTime:\nTime Relation:\nInclude start and end\nInclude start and exclude end\nExclude start and include end\nExclude start and end\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nReturn True Curves: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nReturn IDs Only: True False\nReturn Count Only: True False\nOrder By Fields:\nGroup By Fields (For Statistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nResult Offset:\nResult Record Count:\nReturn Extent Only: True False\nSQL Format:\nNone\nStandard\nNative\nDatum Transformation:\nParameter Values:\nRange Values:\nQuantization Parameters:\nFeature Encoding:\nEsriDefault\nFormat:\nHTML\nJSON\nKMZ\nGeoJSON\nPBF\n# records: 1\nOBJECTID: 183989\nFeatClass: Fee\nCategory: Fee\nOwn_Type: STAT\nOwn_Name: SPR\nLoc_Own: California Department of Parks and Recreation\nMang_Type: STAT\nMang_Name: SPR\nLoc_Mang: California Department of Parks and Recreation\nDes_Tp: SP\nLoc_Ds:\nUnit_Nm: Hearst San Simeon State Park\nLoc_Nm: Hearst San Simeon State Park\nState_Nm: CA\nAgg_Src: GIN_PADUS4_0Fee_Cpad_2022b_CA\nGIS_Src: CPAD_2022b_Holdings.shp\nSrc_Date: 2022/12/20\nGIS_Acres: 7\nSource_PAID: 1892\nWDPA_Cd: 0\nPub_Access: OA\nAccess_Src: GreenInfo Network\nAccess_Dt: 2020\nGAP_Sts: 4\nGAPCdSrc: GreenInfo Network\nGAPCdDt: 2020\nIUCN_Cat: Unassigned\nIUCNCtSrc: GAP - Default\nIUCNCtDt: 2024\nDate_Est: 1932\nComments: http://www.parks.ca.gov/?page_id=590\nEsmtHldr:\nEHoldTyp:\nWebServiceMangName: SPR\nTranspPct: null\nShape_Length: 909.0557457443988\nShape_Area: 43456.68376617808",
+   "links": [
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/rest/login",
+     "text": "Login"
+    },
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/tokens/",
+     "text": "Get Token"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US",
+     "text": "PAD-US"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer",
+     "text": "PAD_US (MapServer)"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "text": "PADUS4_0_FeeManagers"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query",
+     "text": "query"
+    },
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/help/en/rest/router.html?f=rest/services/PAD-US/PAD_US/MapServer/0/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/183989",
+     "text": "183989"
+    }
+   ],
+   "screenshot": "answers/11-ns-us-03-8.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-121.187%2C35.6438&level=14",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-121.187%2C35.6438&level=14",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nTime series with field values\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nCalifornia State Parks | Esri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | Bureau of Land Management | EPA | NPS | US Census Bureau | USDA | USFWS\nPowered by Esri",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns-us-03-9.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/arcgis/rest/services/CPWAdminData/FeatureServer/5/query?objectIds=881&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/arcgis/rest/services/CPWAdminData/FeatureServer/5/query?objectIds=881&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: CPW Managed Properties (public access only) (ID: 5)",
+   "text": "ArcGIS REST Services Directory\nHome > services > CPWAdminData (FeatureServer) > CPW Managed Properties (public access only) > query | API Reference\nQuery: CPW Managed Properties (public access only) (ID: 5)\nWhere:\nObject IDs:\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nDisjoint\nRelation\nResult Type:\nNone\nStandard\nTile\nDistance:\nUnits:\nMeters\nMiles\nFeet\nKilometers\nNautical Miles\nUS NauticalMiles\nOut Distance:\nRelation:\nReturn Geodetic: True False\nOut Fields:\nReturn Geometry: True False\nReturn Centroid: True False\nReturn Envelope: True False\nFeature Encoding:\nesriDefault\nesriCompressedShapeBuffer\nGeometry MultiPatch Option:\nNone\nxyFootprint\nstripMaterials\nembedMaterials\nexternalizeTextures\nextent\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nDefault Spatial Reference:\nDatum Transformation:\nApply VCS Projection: True False\nReturn IDs Only: True False\nReturn Unique IDs Only: True False\nReturn Count Only: True False\nReturn Extent Only: True False\nReturn Query Geometry: True False\nReturn Distinct Values: True False\nCache Hint True False\nCollation:\nOrder By Fields:\nGroup By Fields (For Statistics):\nReturn Aggregate Ids: True False\nOutput Statistics:\nHaving:\nResult Offset:\nResult Record Count:\nReturnZ: True False\nReturnM: True False\nReturn True Curves: True False\nReturn Exceeded Limit Features: True False\nReturn Exceeded Limit Geometries: True False\nQuantization Parameters:\nSQL Format:\nnone\nstandard\nnative\nFormat:\nHTML\nJSON\nGEOJSON\nPBF\n# results: 1\nFID: 881\nPropName: Watson Lake SFU\nPropType: SFU\nAcres: 11.66697326\nLastUpdate: Generated from CPWParcels on 08/27/2026\nGlobalID: {DA79AF40-8465-4582-9B4D-C14363912C7C}\nCPW_URL: https://cpw.state.co.us/hatchery/bellvue-watson\nShape__Area: 82130.41796875\nShape__Length: 1445.11134518227\nGlobalID_2: 2b4293ee-edc6-4e1e-9f93-f56328845f8b",
+   "links": [
+    {
+     "url": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer",
+     "text": "CPWAdminData (FeatureServer)"
+    },
+    {
+     "url": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/5",
+     "text": "CPW Managed Properties (public access only)"
+    },
+    {
+     "url": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/5/query",
+     "text": "query"
+    },
+    {
+     "url": "http://resources.arcgis.com/en/help/arcgis-rest-api/",
+     "text": "API Reference"
+    }
+   ],
+   "screenshot": "answers/11-ns-us-03-10.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fservices5.arcgis.com%2FttNGmDvKQA7oeDQ3%2Farcgis%2Frest%2Fservices%2FCPWAdminData%2FFeatureServer%2F5&center=-105.17%2C40.6322&level=14",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fservices5.arcgis.com%2FttNGmDvKQA7oeDQ3%2Farcgis%2Frest%2Fservices%2FCPWAdminData%2FFeatureServer%2F5&center=-105.17%2C40.6322&level=14",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nTime series with field values\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nEsri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | EPA | NPS | US Census Bureau | USDA | USFWS | Colorado Parks and Wildlife\nPowered by Esri",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns-us-03-11.jpg",
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 104,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 5
+ },
+ "short": "11 result(s), 11 read OK, 11 screenshot(s)"
+}
