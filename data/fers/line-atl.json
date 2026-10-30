@@ -1,0 +1,120 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "atl",
+ "states": [
+  "CA-NB",
+  "CA-NS",
+  "CA-PE",
+  "CA-NL"
+ ],
+ "since": "2026-10-30",
+ "date": "2026-10-30 14:37 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
+ "known_answers": "19/19 on 2026-10-30",
+ "missing_check": {
+  "FOUND": 0,
+  "DROPPED": 20,
+  "NEVER LOOKED AT": 0
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-30",
+   "pairs tested": 737,
+   "pairs whose boxes touch": 737
+  },
+  "pass2": {
+   "agree with the pass before": 207,
+   "date": "2026-10-30",
+   "pairs tested": 95
+  },
+  "pass3": {
+   "agree with the pass before": 29,
+   "date": "2026-10-30",
+   "pairs tested": 86
+  },
+  "pass5": {
+   "checked": 15,
+   "date": "2026-10-30",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "CA-NB": "data/fers/CA-NB.json",
+  "CA-NS": "data/fers/CA-NS.json",
+  "CA-PE": "data/fers/CA-PE.json",
+  "CA-NL": "data/fers/CA-NL.json"
+ },
+ "CA-NB": {
+  "rows": 747,
+  "live": 14,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "the official outline of New Brunswick #25 Wildlife Managemen": 5,
+   "the official outline of New Brunswick #23 Wildlife Managemen": 23,
+   "the official outline of New Brunswick #24 Wildlife Managemen": 28,
+   "the official outline of New Brunswick #14 Wildlife Managemen": 17,
+   "the official outline of New Brunswick #8 Wildlife Management": 32,
+   "the official outline of New Brunswick #17 Wildlife Managemen": 14,
+   "the official outline of New Brunswick #11 Wildlife Managemen": 11,
+   "the official outline of New Brunswick #2 Wildlife Management": 12,
+   "the official outline of New Brunswick #1 Wildlife Management": 6,
+   "the official outline of New Brunswick #7 Wildlife Management": 34,
+   "the official outline of New Brunswick #4 Wildlife Management": 25,
+   "the official outline of New Brunswick #5 Wildlife Management": 4,
+   "the official outline of New Brunswick #12 Wildlife Managemen": 8,
+   "the official outline of New Brunswick #15 Wildlife Managemen": 29,
+   "the official outline of New Brunswick #16 Wildlife Managemen": 38,
+   "the official outline of New Brunswick #6 Wildlife Management": 5,
+   "the official outline of New Brunswick #10 Wildlife Managemen": 21,
+   "the official outline of New Brunswick #3 Wildlife Management": 24,
+   "the official outline of New Brunswick #18 Wildlife Managemen": 18,
+   "the official outline of New Brunswick #22 Wildlife Managemen": 13,
+   "the official outline of New Brunswick #19 Wildlife Managemen": 13,
+   "the official outline of New Brunswick #13 Wildlife Managemen": 5,
+   "the official outline of New Brunswick #9 Wildlife Management": 3,
+   "the official outline of New Brunswick #21 Wildlife Managemen": 7
+  },
+  "dropped": 67,
+  "merged": 271
+ },
+ "CA-NS": {
+  "rows": 222,
+  "live": 12,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "no public owner on the ownership map": 2,
+   "the official outline of New Brunswick #25 Wildlife Managemen": 1
+  },
+  "dropped": 149,
+  "merged": 58
+ },
+ "CA-PE": {
+  "rows": 0,
+  "live": 0,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 0,
+  "merged": 0
+ },
+ "CA-NL": {
+  "rows": 14,
+  "live": 1,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 12,
+  "merged": 1
+ },
+ "states_ready": [
+  "CA-NB",
+  "CA-NS",
+  "CA-PE",
+  "CA-NL"
+ ],
+ "states_held": []
+}

@@ -1,0 +1,140 @@
+{
+ "about": "Counts from the 2-fer bot (kpc_fers.py). Hidden: data only.",
+ "pass1": {
+  "cell_m": 20.0,
+  "date": "2026-10-30",
+  "left out": {
+   "Kentucky (own list)": "all (ky-overlaps.geojson)",
+   "approximate": 424,
+   "no outline": 3482,
+   "no pin": 0,
+   "pin well outside": 0
+  },
+  "missing boundary": 229,
+  "official parks": 702,
+  "pairs tested": 737,
+  "pairs whose boxes touch": 737,
+  "parks done by the box test": 270,
+  "parks whose outline could not be read": 0,
+  "pass": 1,
+  "problems": [
+   "W&S river corridors joined as area parks: 15",
+   "75 trail parks tested by their official line (R5), not their polygon: CA-3546, CA-4786, CA-5595, US-10093, US-10733, US-11151, US-11152, US-12717, US-1301, US-1310",
+   "same land left out (pins far apart): CA-0790+CA-4467 9.4 km; CA-4524+CA-4525 31.3 km; CA-4524+CA-4525 31.3 km; CA-4524+CA-4525 31.3 km; CA-4524+CA-4525 31.3 km; CA-4555+CA-4556 20.0 km; CA-4555+CA-4556 20.0 km; CA-4555+CA-4556 20.0 km"
+  ],
+  "same land left out: pins far apart, not both inside the outline": 8,
+  "with official lines": 0
+ },
+ "pass2": {
+  "agree with the pass before": 207,
+  "cell_m": 10.0,
+  "date": "2026-10-30",
+  "left out": {
+   "Kentucky (own list)": "all (ky-overlaps.geojson)",
+   "approximate": 424,
+   "no outline": 3482,
+   "no pin": 0,
+   "pin well outside": 0
+  },
+  "new here only (not counted)": 81,
+  "official parks": 702,
+  "pairs tested": 95,
+  "parks whose outline could not be read": 24,
+  "parks with a saved copy only (no fresh download possible)": 0,
+  "pass": 2,
+  "problems": [
+   "W&S river corridors joined as area parks: 15",
+   "75 trail parks tested by their official line (R5), not their polygon: CA-3546, CA-4786, CA-5595, US-10093, US-10733, US-11151, US-11152, US-12717, US-1301, US-1310"
+  ],
+  "with official lines": 0
+ },
+ "pass3": {
+  "agree with the pass before": 29,
+  "cell_m": 5.0,
+  "date": "2026-10-30",
+  "left out": {
+   "Kentucky (own list)": "all (ky-overlaps.geojson)",
+   "approximate": 424,
+   "no outline": 3482,
+   "no pin": 0,
+   "pin well outside": 0
+  },
+  "new here only (not counted)": 8,
+  "official parks": 702,
+  "pairs tested": 86,
+  "parks whose outline could not be read": 0,
+  "parks with a saved copy only (no fresh download possible)": 0,
+  "pass": 3,
+  "problems": [
+   "W&S river corridors joined as area parks: 15",
+   "75 trail parks tested by their official line (R5), not their polygon: CA-3546, CA-4786, CA-5595, US-10093, US-10733, US-11151, US-11152, US-12717, US-1301, US-1310"
+  ],
+  "with official lines": 0
+ },
+ "pass5": {
+  "cell_m": 5.0,
+  "checked": 15,
+  "date": "2026-10-30",
+  "left out": {
+   "Kentucky (own list)": "all (ky-overlaps.geojson)",
+   "approximate": 424,
+   "no outline": 3482,
+   "no pin": 0,
+   "pin well outside": 0
+  },
+  "live rows held: spot far from a state park pin (rule B13)": 0,
+  "official parks": 702,
+  "pairs tested": 0,
+  "pass": 5,
+  "problems": [
+   "W&S river corridors joined as area parks: 15",
+   "75 trail parks tested by their official line (R5), not their polygon: CA-3546, CA-4786, CA-5595, US-10093, US-10733, US-11151, US-11152, US-12717, US-1301, US-1310"
+  ],
+  "river channels listed as water only (boat spots)": 0,
+  "same land dropped: wrong join": 1,
+  "spots given their boundary lines": 29,
+  "still not checked": 0,
+  "trail stretches given their true zone": 0,
+  "water only": 0,
+  "water retries (won / tries)": "0 / 0",
+  "with official lines": 0
+ },
+ "per state": {
+  "CA-NB": {
+   "candidates": 10,
+   "candidates (saved outline only)": 0,
+   "lines": 7,
+   "n-fers": 133,
+   "not sure": 395,
+   "pass1": 747,
+   "pass2": 76,
+   "spots": 747,
+   "very tight": 4,
+   "water only": 0
+  },
+  "CA-NL": {
+   "candidates": 1,
+   "candidates (saved outline only)": 0,
+   "lines": 0,
+   "n-fers": 0,
+   "not sure": 0,
+   "pass1": 14,
+   "pass2": 14,
+   "spots": 14,
+   "very tight": 0,
+   "water only": 0
+  },
+  "CA-NS": {
+   "candidates": 10,
+   "candidates (saved outline only)": 0,
+   "lines": 56,
+   "n-fers": 2,
+   "not sure": 3,
+   "pass1": 222,
+   "pass2": 180,
+   "spots": 222,
+   "very tight": 1,
+   "water only": 1
+  }
+ }
+}

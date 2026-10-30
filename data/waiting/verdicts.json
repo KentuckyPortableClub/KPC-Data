@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-30T14:36Z",
+ "checked": "2026-10-30T14:37Z",
  "switched_on": false,
  "results": [
   {
@@ -131,14 +131,30 @@
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/CA-MB.json",
+   "path": "data/fers/CA-NB.json",
+   "kind": "fers",
+   "why": [
+    "F-S3 10 live rows whose two park pins are 100+ km apart (wrong joins), e.g. CA-6540+CA-6549 125 km, CA-6542+CA-6545 114 km"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
+  },
+  {
+   "path": "data/fers/CA-NL.json",
    "kind": "fers",
    "why": [],
    "notes": [],
    "verdict": "PASS"
   },
   {
-   "path": "data/fers/CA-SK.json",
+   "path": "data/fers/CA-NS.json",
+   "kind": "fers",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/fers/CA-PE.json",
    "kind": "fers",
    "why": [],
    "notes": [],
