@@ -607,6 +607,7 @@ ROUTES = [
     (r'^data/truth/US-[A-Z]{2}\.json$', 'truth', c_truth),
     (r'^data/access-leads/[^/]+\.json$', 'leads', c_leads),
     (r'^data/(?:us|ca)-key/[^/]+\.json$', 'key', c_key),
+    (r'^data/world-key/[A-Z]{2}\.json$', 'key', c_key),   # Oct 30 5:55 AM (chat 2; Brandon 'world boundaries a go'): the world key is held + checked like the US / Canada keys
     (r'^data/intake/ready\.json$', 'intake', c_intake),
     (r'^data/wwff/[^/]+\.json$', 'wwff', c_wwff),   # Oct 29 10:55 PM (chat 2 8:20 PM)
     (r'^data/fers/(?:US|CA)-[A-Z]{2}\.json$', 'fers', c_fers),   # chat 8 B2: Canada too (Canada's POTA pins from data/canada.json)

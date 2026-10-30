@@ -25,7 +25,7 @@ def parks_of(folder):
     out = {}
     for f in sorted(glob.glob(str(folder / '*.json'))):
         name = pathlib.Path(f).stem
-        if not (name.startswith('US-') or name.startswith('CA-')) or len(name) != 5: continue
+        if not ((name.startswith('US-') or name.startswith('CA-')) and len(name) == 5) and not (len(name) == 2 and name.isupper()): continue   # world key: AU.json, DE.json…
         for r, p in ((load(f, {}) or {}).get('parks') or {}).items():
             if isinstance(p, dict): out[(name, r)] = p
     return out
@@ -86,7 +86,7 @@ def one(key):
 
 
 def main():
-    for key in ('us-key', 'ca-key'):
+    for key in ('us-key', 'ca-key', 'world-key'):
         r = one(key)
         if r: print(f'::notice title=Key summary ({key})::held build vs live: {r[0]}; sample of {r[1]} in data/waiting/preview/{key}-changes.json')
 
