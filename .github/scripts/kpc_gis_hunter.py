@@ -167,6 +167,24 @@ def step_a(area, todo, P, R):
 
 
 # ------------------------------------------------------------------------------------------------ step B
+# Oct 30 (chat 10, after the Canada pass: 'Furthest Head' watersheds and drone photos came back as leads): a lead must look like a
+# park / protected-area layer from a government publisher in the right country; photos, flights, watersheds, census etc. never.
+LEAD_PARK = re.compile(r'park|parc|reserve|réserve|protected|conservation|wildlife|faune|refuge|forest|forêt|recreation|boundar|limite|'
+                       r'natural area|heritage|historic|wilderness|preserve|sanctuary|wma|sra|management area|lands?\b|ecolog', re.I)
+LEAD_JUNK = re.compile(r'photo|drone|flight|imagery|aerial|watershed|census|survey point|camera|traffic|crash|parcel|zoning|story ?map|'
+                       r'dashboard|survey123|test|sample|copy|demo|student|class|tutorial|hydro|stream|culvert|well|wells|sign|trail ?count', re.I)
+LEAD_GOV = re.compile(r'gov|state|province|provincial|county|city|town|parks|wildlife|dnr|dep\b|deq|natural|resources|environment|conserv|'
+                      r'forest|fish|nps|usfws|blm|usfs|usace|esri_?canada|gc_?ca|canada|ministry|ministere|ville|municipal|district|authority|agency|department', re.I)
+
+
+def lead_ok(x, area):
+    t, u, o = x.get('title') or '', x.get('url') or '', x.get('owner') or ''
+    if LEAD_JUNK.search(t) or not LEAD_PARK.search(t + ' ' + (x.get('snippet') or '')): return False
+    if area.startswith('CA-') and re.search(r'\.(gov|us)/|usda|usgs|nps\.gov|fws\.gov', u, re.I): return False   # a US layer never closes a Canadian park
+    if area.startswith('US-') and re.search(r'\.gc\.ca/|\.ca/', u, re.I): return False
+    return bool(re.search(r'\.(gov|gc\.ca|gouv\.qc\.ca|state\.[a-z]{2}\.us|[a-z]{2}\.us)/', u, re.I)) or bool(LEAD_GOV.search(o))
+
+
 def step_b(area, todo, P, R, queue):
     n = 0
     for r in todo:
@@ -182,7 +200,7 @@ def step_b(area, todo, P, R, queue):
             res = (json.loads(body.decode('utf-8', 'replace')) if isinstance(st, int) and st < 400 else {}).get('results') or []
         except Exception as e:  # noqa: BLE001
             R[r]['tried'].append(f'B ArcGIS Online search: {str(e)[:60]}'); continue
-        leads = [x for x in res if len(words(x.get('title')) & core) >= min(2, len(core)) and x.get('url')]
+        leads = [x for x in res if len(words(x.get('title')) & core) >= min(2, len(core)) and x.get('url') and lead_ok(x, area)]
         R[r]['tried'].append(f'B ArcGIS Online search "{q}": {len(leads)} lead(s)')
         for x in leads[:3]:
             R[r]['leads'].append({'title': x.get('title'), 'url': x.get('url'), 'owner': x.get('owner'), 'type': x.get('type')})
