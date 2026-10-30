@@ -7730,39 +7730,11 @@
      "name_field": "cell_name"
     },
     {
-     "id": 15,
-     "name": "Local Government Authority (LGA) Boundaries (LGATE-233)",
-     "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
-     "fields": [
-      "objectid",
-      "boundary_id",
-      "type_code",
-      "type_description",
-      "feature_number",
-      "name",
-      "abs_lga_number",
-      "postcode",
-      "land_area",
-      "area_derivation",
-      "shape",
-      "st_perimeter(shape)"
-     ],
-     "records": 139,
-     "sample": [
-      "COOROW, SHIRE OF",
-      "KONDININ, SHIRE OF",
-      "SHARK BAY, SHIRE OF"
-     ],
-     "name_field": "name"
-    },
-    {
      "id": 28,
      "name": "Primary Sediment Cell Boundary (DOT-010)",
      "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
      "fields": [
       "objectid",
       "sediment_cell_id",
@@ -7792,8 +7764,8 @@
      "id": 29,
      "name": "Secondary Sediment Cell Boundary (DOT-011)",
      "geom": "Polygon",
-     "gap": "outline",
-     "is": "named area polygons",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
      "fields": [
       "objectid",
       "shape",
@@ -7820,6 +7792,38 @@
       "Fisherman Islands to South Illawong"
      ],
      "name_field": "cell_name"
+    },
+    {
+     "id": 30,
+     "name": "Tertiary Sediment Cell Boundary (DOT-012)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "objectid",
+      "shape",
+      "sediment_cell_id",
+      "sediment_cell_boundary_id",
+      "cell_type",
+      "cell_name",
+      "coastal_region",
+      "offshore_boundary",
+      "onshore_boundary",
+      "from_point",
+      "to_point",
+      "fr_alongshore_bndry_marine_sect",
+      "fr_alongshore_bndry_terrl_sect",
+      "to_alongshore_bndry_marine_sect",
+      "to_alongshore_bndry_terrl_sect",
+      "st_perimeter(shape)"
+     ],
+     "records": 80,
+     "sample": [
+      "Point Daking to Point Templar",
+      "Seal Island to Bird Island",
+      "Safety Bay to Mersey Point"
+     ],
+     "name_field": "cell_name"
     }
    ],
    "note": "",
@@ -7839,6 +7843,42 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 177,
+     "name": "Protected_areas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "LOT",
+      "PLAN_",
+      "LOTPLAN",
+      "SYSINTCODE",
+      "ESTATENAME",
+      "NAMEABBREV",
+      "NAME_CAPS",
+      "EST_TYPE",
+      "EST_TENURE",
+      "LEGISLATED",
+      "GAZ_AREAHA",
+      "ZONE",
+      "IUCN_CODE",
+      "GLR_NUMBER",
+      "QPWS_REG",
+      "CURGAZDATE",
+      "SHIRE",
+      "FEAT_NAME_",
+      "PA_AREAHA"
+     ],
+     "records": 1926,
+     "sample": [
+      "Melsonby (Gaarraay) National Park (Cape York Penin",
+      "Daintree National Park (Cape York Peninsula Aborig",
+      "Daintree National Park (Cape York Peninsula Aborig"
+     ],
+     "name_field": "ESTATENAME"
+    },
     {
      "id": 177,
      "name": "Protected_areas",
