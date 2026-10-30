@@ -1,0 +1,1120 @@
+{
+ "request": "requests/9-p2-mi.json",
+ "id": "9-p2-mi",
+ "chat": 9,
+ "kind": "probe",
+ "report": "p2 MI: 16 parks, 5 layers",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "p2 MI: 16 parks, 5 layers",
+  "probe": {
+   "about": "P-2 (HQ 6:20 PM): point-in-polygon at the pin of every open Fable-list park against every polygon layer in state-gis.json for the state + national layers (BLM rec polygons, FWS approved, NPS legal boundary). State MI: 16 parks. Refs in order of points: US-12802,US-4775,US-4777,US-4779,US-6728,US-4774,US-4776,US-4778,US-6808,US-6809,US-6813,US-6814,US-6815,US-6817,US-6821,US-6822. Results to chat 8 / chat 3 (Fable file WORK LOG rows).",
+   "refs": [
+    "US-12802",
+    "US-4775",
+    "US-4777",
+    "US-4779",
+    "US-6728",
+    "US-4774",
+    "US-4776",
+    "US-4778",
+    "US-6808",
+    "US-6809",
+    "US-6813",
+    "US-6814",
+    "US-6815",
+    "US-6817",
+    "US-6821",
+    "US-6822"
+   ],
+   "pointq": [
+    {
+     "st": "MI",
+     "url": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/8",
+     "note": "MI Michigan DNR Parks & Recreation",
+     "points": [
+      [
+       46.6215,
+       -89.3912
+      ],
+      [
+       46.135,
+       -87.824
+      ],
+      [
+       46.677,
+       -85.7723
+      ],
+      [
+       43.9647,
+       -85.7985
+      ],
+      [
+       45.1142,
+       -86.0108
+      ],
+      [
+       44.7903,
+       -84.8364
+      ],
+      [
+       45.524,
+       -87.4008
+      ],
+      [
+       45.4495,
+       -84.7302
+      ],
+      [
+       45.413,
+       -87.352
+      ],
+      [
+       47.4722,
+       -87.9044
+      ],
+      [
+       45.5915,
+       -84.1643
+      ],
+      [
+       47.3782,
+       -88.0276
+      ],
+      [
+       43.2685,
+       -82.5278
+      ],
+      [
+       46.716,
+       -85.3601
+      ],
+      [
+       45.7784,
+       -84.7219
+      ],
+      [
+       46.7586,
+       -84.9666
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "MI",
+     "url": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2",
+     "note": "MI Michigan Department of Natural Resources",
+     "points": [
+      [
+       46.6215,
+       -89.3912
+      ],
+      [
+       46.135,
+       -87.824
+      ],
+      [
+       46.677,
+       -85.7723
+      ],
+      [
+       43.9647,
+       -85.7985
+      ],
+      [
+       45.1142,
+       -86.0108
+      ],
+      [
+       44.7903,
+       -84.8364
+      ],
+      [
+       45.524,
+       -87.4008
+      ],
+      [
+       45.4495,
+       -84.7302
+      ],
+      [
+       45.413,
+       -87.352
+      ],
+      [
+       47.4722,
+       -87.9044
+      ],
+      [
+       45.5915,
+       -84.1643
+      ],
+      [
+       47.3782,
+       -88.0276
+      ],
+      [
+       43.2685,
+       -82.5278
+      ],
+      [
+       46.716,
+       -85.3601
+      ],
+      [
+       45.7784,
+       -84.7219
+      ],
+      [
+       46.7586,
+       -84.9666
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "note": "BLM recreation site polygons within 2 km",
+     "points": [
+      [
+       46.6215,
+       -89.3912
+      ],
+      [
+       46.135,
+       -87.824
+      ],
+      [
+       46.677,
+       -85.7723
+      ],
+      [
+       43.9647,
+       -85.7985
+      ],
+      [
+       45.1142,
+       -86.0108
+      ],
+      [
+       44.7903,
+       -84.8364
+      ],
+      [
+       45.524,
+       -87.4008
+      ],
+      [
+       45.4495,
+       -84.7302
+      ],
+      [
+       45.413,
+       -87.352
+      ],
+      [
+       47.4722,
+       -87.9044
+      ],
+      [
+       45.5915,
+       -84.1643
+      ],
+      [
+       47.3782,
+       -88.0276
+      ],
+      [
+       43.2685,
+       -82.5278
+      ],
+      [
+       46.716,
+       -85.3601
+      ],
+      [
+       45.7784,
+       -84.7219
+      ],
+      [
+       46.7586,
+       -84.9666
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+     "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+     "points": [
+      [
+       46.6215,
+       -89.3912
+      ],
+      [
+       46.135,
+       -87.824
+      ],
+      [
+       46.677,
+       -85.7723
+      ],
+      [
+       43.9647,
+       -85.7985
+      ],
+      [
+       45.1142,
+       -86.0108
+      ],
+      [
+       44.7903,
+       -84.8364
+      ],
+      [
+       45.524,
+       -87.4008
+      ],
+      [
+       45.4495,
+       -84.7302
+      ],
+      [
+       45.413,
+       -87.352
+      ],
+      [
+       47.4722,
+       -87.9044
+      ],
+      [
+       45.5915,
+       -84.1643
+      ],
+      [
+       47.3782,
+       -88.0276
+      ],
+      [
+       43.2685,
+       -82.5278
+      ],
+      [
+       46.716,
+       -85.3601
+      ],
+      [
+       45.7784,
+       -84.7219
+      ],
+      [
+       46.7586,
+       -84.9666
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "ALL",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "note": "NPS legal boundary",
+     "points": [
+      [
+       46.6215,
+       -89.3912
+      ],
+      [
+       46.135,
+       -87.824
+      ],
+      [
+       46.677,
+       -85.7723
+      ],
+      [
+       43.9647,
+       -85.7985
+      ],
+      [
+       45.1142,
+       -86.0108
+      ],
+      [
+       44.7903,
+       -84.8364
+      ],
+      [
+       45.524,
+       -87.4008
+      ],
+      [
+       45.4495,
+       -84.7302
+      ],
+      [
+       45.413,
+       -87.352
+      ],
+      [
+       47.4722,
+       -87.9044
+      ],
+      [
+       45.5915,
+       -84.1643
+      ],
+      [
+       47.3782,
+       -88.0276
+      ],
+      [
+       43.2685,
+       -82.5278
+      ],
+      [
+       46.716,
+       -85.3601
+      ],
+      [
+       45.7784,
+       -84.7219
+      ],
+      [
+       46.7586,
+       -84.9666
+      ]
+     ],
+     "dist": 100
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-30 01:28Z",
+ "results": {
+  "about": "P-2 (HQ 6:20 PM): point-in-polygon at the pin of every open Fable-list park against every polygon layer in state-gis.json for the state + national layers (BLM rec polygons, FWS approved, NPS legal boundary). State MI: 16 parks. Refs in order of points: US-12802,US-4775,US-4777,US-4779,US-6728,US-4774,US-4776,US-4778,US-6808,US-6809,US-6813,US-6814,US-6815,US-6817,US-6821,US-6822. Results to chat 8 / chat 3 (Fable file WORK LOG rows).",
+  "date": "2026-10-30",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "MI",
+    "url": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/8",
+    "note": "MI Michigan DNR Parks & Recreation",
+    "hits": [
+     {
+      "layer": "8 DNR Parks Unit Boundary",
+      "point": [
+       46.6215,
+       -89.3912
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "8 DNR Parks Unit Boundary",
+      "point": [
+       46.135,
+       -87.824
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "8 DNR Parks Unit Boundary",
+      "point": [
+       46.677,
+       -85.7723
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "8 DNR Parks Unit Boundary",
+      "point": [
+       43.9647,
+       -85.7985
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "8 DNR Parks Unit Boundary",
+      "point": [
+       45.1142,
+       -86.0108
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "8 DNR Parks Unit Boundary",
+      "point": [
+       44.7903,
+       -84.8364
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "8 DNR Parks Unit Boundary",
+      "point": [
+       45.524,
+       -87.4008
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "8 DNR Parks Unit Boundary",
+      "point": [
+       45.4495,
+       -84.7302
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "8 DNR Parks Unit Boundary",
+      "point": [
+       45.413,
+       -87.352
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "8 DNR Parks Unit Boundary",
+      "point": [
+       47.4722,
+       -87.9044
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "8 DNR Parks Unit Boundary",
+      "point": [
+       45.5915,
+       -84.1643
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "8 DNR Parks Unit Boundary",
+      "point": [
+       47.3782,
+       -88.0276
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "8 DNR Parks Unit Boundary",
+      "point": [
+       43.2685,
+       -82.5278
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "8 DNR Parks Unit Boundary",
+      "point": [
+       46.716,
+       -85.3601
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "8 DNR Parks Unit Boundary",
+      "point": [
+       45.7784,
+       -84.7219
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "8 DNR Parks Unit Boundary",
+      "point": [
+       46.7586,
+       -84.9666
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "MI",
+    "url": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2",
+    "note": "MI Michigan Department of Natural Resources",
+    "hits": [
+     {
+      "layer": "2 Wildlife Property Boundary",
+      "point": [
+       46.6215,
+       -89.3912
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife Property Boundary",
+      "point": [
+       46.135,
+       -87.824
+      ],
+      "attrs": {
+       "AreaType": "Grouse Enhanced Management Site",
+       "OfficialWLDProjectAreaName": "Ralph Grouse Enhanced Mgmt.Sys.(GEMS)(SWMA)",
+       "last_edited_date": 1791297729391,
+       "last_edited_user": "MichiganDNR",
+       "created_date": 1791297729391,
+       "created_user": "MichiganDNR",
+       "Acres": 5304.52723758
+      }
+     },
+     {
+      "layer": "2 Wildlife Property Boundary",
+      "point": [
+       46.677,
+       -85.7723
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife Property Boundary",
+      "point": [
+       43.9647,
+       -85.7985
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife Property Boundary",
+      "point": [
+       45.1142,
+       -86.0108
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife Property Boundary",
+      "point": [
+       44.7903,
+       -84.8364
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife Property Boundary",
+      "point": [
+       45.524,
+       -87.4008
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife Property Boundary",
+      "point": [
+       45.4495,
+       -84.7302
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife Property Boundary",
+      "point": [
+       45.413,
+       -87.352
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife Property Boundary",
+      "point": [
+       47.4722,
+       -87.9044
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife Property Boundary",
+      "point": [
+       45.5915,
+       -84.1643
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife Property Boundary",
+      "point": [
+       47.3782,
+       -88.0276
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife Property Boundary",
+      "point": [
+       43.2685,
+       -82.5278
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife Property Boundary",
+      "point": [
+       46.716,
+       -85.3601
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife Property Boundary",
+      "point": [
+       45.7784,
+       -84.7219
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 Wildlife Property Boundary",
+      "point": [
+       46.7586,
+       -84.9666
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+    "note": "BLM recreation site polygons within 2 km",
+    "hits": [
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       46.6215,
+       -89.3912
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       46.135,
+       -87.824
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       46.677,
+       -85.7723
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       43.9647,
+       -85.7985
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       45.1142,
+       -86.0108
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       44.7903,
+       -84.8364
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       45.524,
+       -87.4008
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       45.4495,
+       -84.7302
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       45.413,
+       -87.352
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       47.4722,
+       -87.9044
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       45.5915,
+       -84.1643
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       47.3782,
+       -88.0276
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       43.2685,
+       -82.5278
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       46.716,
+       -85.3601
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       45.7784,
+       -84.7219
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 BLM Natl Recreation Site Polygons",
+      "point": [
+       46.7586,
+       -84.9666
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSApproved_Authoritative/FeatureServer/0",
+    "note": "FWS approved boundaries within 500 m (hatcheries, refuges, WPAs)",
+    "hits": [
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       46.6215,
+       -89.3912
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       46.135,
+       -87.824
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       46.677,
+       -85.7723
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       43.9647,
+       -85.7985
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       45.1142,
+       -86.0108
+      ],
+      "attrs": {
+       "CostCenter": "FF03RMCH00",
+       "CMPXNAME": "N/A",
+       "ORGNAME": "MICHIGAN ISLANDS NATIONAL WILDLIFE REFUGE",
+       "ORGCODE": 31522,
+       "IFWS": "412",
+       "LIT": "MCH",
+       "GISACRES": 33855630.30194848,
+       "MAXACRES": 10730,
+       "APPTYPE": 1,
+       "RSL_TYPE": "NWR",
+       "FWSREGION": "3",
+       "LABELNAME": "Michigan Islands NWR",
+       "CreatedDate": 1588880908000,
+       "ModifiedDate": 1736257410000,
+       "IntReg": "3"
+      }
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       44.7903,
+       -84.8364
+      ],
+      "attrs": {
+       "CostCenter": "FF03RKIW00",
+       "CMPXNAME": "N/A",
+       "ORGNAME": "KIRTLANDS WARBLER WILDLIFE MANAGEMENT AREA",
+       "ORGCODE": 31513,
+       "IFWS": "970",
+       "LIT": "KIW",
+       "GISACRES": 2997535.83747014,
+       "MAXACRES": 7500,
+       "APPTYPE": 1,
+       "RSL_TYPE": "NWR",
+       "FWSREGION": "3",
+       "LABELNAME": "Kirtlands Warbler WMA",
+       "CreatedDate": 1588880908000,
+       "ModifiedDate": 1716501631000,
+       "IntReg": "3"
+      }
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       45.524,
+       -87.4008
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       45.4495,
+       -84.7302
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       45.413,
+       -87.352
+      ],
+      "attrs": {
+       "CostCenter": "FF03RMCH00",
+       "CMPXNAME": "N/A",
+       "ORGNAME": "MICHIGAN ISLANDS NATIONAL WILDLIFE REFUGE",
+       "ORGCODE": 31522,
+       "IFWS": "412",
+       "LIT": "MCH",
+       "GISACRES": 33855630.30194848,
+       "MAXACRES": 10730,
+       "APPTYPE": 1,
+       "RSL_TYPE": "NWR",
+       "FWSREGION": "3",
+       "LABELNAME": "Michigan Islands NWR",
+       "CreatedDate": 1588880908000,
+       "ModifiedDate": 1736257410000,
+       "IntReg": "3"
+      }
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       45.413,
+       -87.352
+      ],
+      "attrs": {
+       "CostCenter": "FF03RGRB00",
+       "CMPXNAME": "N/A",
+       "ORGNAME": "GREEN BAY NATIONAL WILDLIFE REFUGE",
+       "ORGCODE": 32522,
+       "IFWS": "65",
+       "LIT": "GRB",
+       "GISACRES": 2102171.41583693,
+       "MAXACRES": 4452,
+       "APPTYPE": 1,
+       "RSL_TYPE": "NWR",
+       "FWSREGION": "3",
+       "LABELNAME": "Green Bay NWR",
+       "CreatedDate": 1588880908000,
+       "ModifiedDate": 1691435396000,
+       "IntReg": "3"
+      }
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       47.4722,
+       -87.9044
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       45.5915,
+       -84.1643
+      ],
+      "attrs": {
+       "CostCenter": "FF03RMCH00",
+       "CMPXNAME": "N/A",
+       "ORGNAME": "MICHIGAN ISLANDS NATIONAL WILDLIFE REFUGE",
+       "ORGCODE": 31522,
+       "IFWS": "412",
+       "LIT": "MCH",
+       "GISACRES": 33855630.30194848,
+       "MAXACRES": 10730,
+       "APPTYPE": 1,
+       "RSL_TYPE": "NWR",
+       "FWSREGION": "3",
+       "LABELNAME": "Michigan Islands NWR",
+       "CreatedDate": 1588880908000,
+       "ModifiedDate": 1736257410000,
+       "IntReg": "3"
+      }
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       45.5915,
+       -84.1643
+      ],
+      "attrs": {
+       "CostCenter": "FF03RKIW00",
+       "CMPXNAME": "N/A",
+       "ORGNAME": "KIRTLANDS WARBLER WILDLIFE MANAGEMENT AREA",
+       "ORGCODE": 31513,
+       "IFWS": "970",
+       "LIT": "KIW",
+       "GISACRES": 2997535.83747014,
+       "MAXACRES": 7500,
+       "APPTYPE": 1,
+       "RSL_TYPE": "NWR",
+       "FWSREGION": "3",
+       "LABELNAME": "Kirtlands Warbler WMA",
+       "CreatedDate": 1588880908000,
+       "ModifiedDate": 1716501631000,
+       "IntReg": "3"
+      }
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       47.3782,
+       -88.0276
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       43.2685,
+       -82.5278
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       46.716,
+       -85.3601
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       45.7784,
+       -84.7219
+      ],
+      "attrs": {
+       "CostCenter": "FF03RMCH00",
+       "CMPXNAME": "N/A",
+       "ORGNAME": "MICHIGAN ISLANDS NATIONAL WILDLIFE REFUGE",
+       "ORGCODE": 31522,
+       "IFWS": "412",
+       "LIT": "MCH",
+       "GISACRES": 33855630.30194848,
+       "MAXACRES": 10730,
+       "APPTYPE": 1,
+       "RSL_TYPE": "NWR",
+       "FWSREGION": "3",
+       "LABELNAME": "Michigan Islands NWR",
+       "CreatedDate": 1588880908000,
+       "ModifiedDate": 1736257410000,
+       "IntReg": "3"
+      }
+     },
+     {
+      "layer": "0 FWSApproved",
+      "point": [
+       46.7586,
+       -84.9666
+      ],
+      "attrs": {
+       "CostCenter": "FF03RMCH00",
+       "CMPXNAME": "N/A",
+       "ORGNAME": "MICHIGAN ISLANDS NATIONAL WILDLIFE REFUGE",
+       "ORGCODE": 31522,
+       "IFWS": "412",
+       "LIT": "MCH",
+       "GISACRES": 33855630.30194848,
+       "MAXACRES": 10730,
+       "APPTYPE": 1,
+       "RSL_TYPE": "NWR",
+       "FWSREGION": "3",
+       "LABELNAME": "Michigan Islands NWR",
+       "CreatedDate": 1588880908000,
+       "ModifiedDate": 1736257410000,
+       "IntReg": "3"
+      }
+     }
+    ]
+   },
+   {
+    "st": "ALL",
+    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+    "note": "NPS legal boundary",
+    "hits": [
+     {
+      "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+      "error": "{'code': 400, 'message': 'Cannot perform query. Invalid query parameters.', 'details': ['24204: The "
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 154,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
