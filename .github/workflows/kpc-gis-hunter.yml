@@ -18,6 +18,12 @@ on:
       chain:
         description: 'How many MORE jobs may follow by themselves when areas remain (0 = none)'
         default: '4'
+      pass:
+        description: 'A name for a full pass (e.g. key-2026-10-30): every area once more even if it ran today; blank = skip areas already run today'
+        default: ''
+      then:
+        description: 'When this country is finished, start this country next (e.g. CA); blank = stop'
+        default: ''
 permissions:
   contents: write
   actions: write
@@ -51,12 +57,15 @@ jobs:
           LINKS: ../links
           AREAS: ${{ inputs.areas }}
           COUNTRY: ${{ inputs.country }}
+          PASS: ${{ inputs.pass }}
         run: |
           cd kpcdata
           N=${{ inputs.chunks }}; [ "$N" -gt 5 ] && N=5
           for i in $(seq 1 $N); do
+            python3 .github/scripts/kpc_keep_answers.py questions data/waiting/questions/gis-hunter.json || true; python3 .github/scripts/kpc_keep_answers.py state data/gis-hunter/state.json || true   # Oct 30: never save over chat 11's answers (chunk 2 of the world run did)
             MINUTES=55 python3 .github/scripts/kpc_gis_hunter.py | tee /tmp/h.log || true
             python3 .github/scripts/kpc_status.py board "GIS hunter" green "chunk $i: data/gis-hunter + questions" "chat 11 answers data/waiting/questions/gis-hunter.json" || true
+            python3 .github/scripts/kpc_keep_answers.py questions data/waiting/questions/gis-hunter.json || true; python3 .github/scripts/kpc_keep_answers.py state data/gis-hunter/state.json || true   # Oct 30: never save over chat 11's answers (chunk 2 of the world run did)
             bash ../links/.github/scripts/kpc_push_data.sh . "GIS hunter: chunk $i (hidden)" data/gis-hunter data/intake/queue.json data/waiting/questions data/status || true
             L=$(grep -o '^LEFT=[0-9]*' /tmp/h.log | tail -1 | cut -d= -f2); echo "LEFT=$L" >> "$GITHUB_ENV"
             [ "${L:-0}" = 0 ] && break
@@ -68,4 +77,10 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           C=$(( ${{ inputs.chain }} - 1 ))
-          gh workflow run kpc-gis-hunter.yml -R ${{ github.repository }} -f country=${{ inputs.country }} -f areas= -f chunks=5 -f chain=$C || true
+          gh workflow run kpc-gis-hunter.yml -R ${{ github.repository }} -f country=${{ inputs.country }} -f areas= -f chunks=5 -f chain=$C -f pass="${{ inputs.pass }}" -f then="${{ inputs.then }}" || true
+      - name: This country is finished, so the next country starts (then)
+        if: ${{ env.LEFT == '0' && inputs.then != '' && inputs.areas == '' }}
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run kpc-gis-hunter.yml -R ${{ github.repository }} -f country=${{ inputs.then }} -f areas= -f chunks=5 -f chain=4 -f pass="${{ inputs.pass }}" -f then= || true

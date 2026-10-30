@@ -253,7 +253,9 @@ def main():
     if not want and os.environ.get('COUNTRY') == 'CA': pool = ca_pool()
     elif any(a.startswith('CA-') for a in want): pool.update(ca_pool())
     state = load(OUT / 'state.json', {}) or {}
-    areas = [a for a in want if a in pool] if want else sorted((a for a in pool if (state.get(a) or {}).get('run') != TODAY), key=lambda a: len(pool[a]))
+    PASS = os.environ.get('PASS') or ''   # Oct 30 (Brandon 11:42 PM rerun; key rebuild auto-start): a named pass = every area again once, whatever day it last ran
+    def fresh(a): s = state.get(a) or {}; return (s.get('pass') != PASS) if PASS else (s.get('run') != TODAY)
+    areas = [a for a in want if a in pool] if want else sorted((a for a in pool if fresh(a)), key=lambda a: len(pool[a]))
     queue = load('data/intake/queue.json', {'rows': []}) or {'rows': []}
     queue['seen'] = {r.get('url') for r in queue.get('rows') or []}
     done_R = {}
@@ -271,12 +273,12 @@ def main():
         notice(f"{area} COUNT: open {len(R)} / step A: name match {nm}, name mismatch {mm}, inside-other {sum(1 for x in R.values() if x['verdict'].startswith('inside'))} / step B leads {sum(1 for x in R.values() if x['verdict'].startswith('lead'))} / nothing {sum(1 for x in R.values() if x['verdict'] == 'no layer found')}")
         empty = [r for r, x in R.items() if x['verdict'] == 'no layer found' and not x['tried']]
         if empty: notice(f'{area} BUG: {len(empty)} parks say no layer with nothing tried, e.g. {empty[0]}')
-        state[area] = {'run': TODAY, 'open': len(R), 'candidates': nm + mm}
+        state[area] = {'run': TODAY, 'open': len(R), 'candidates': nm + mm, **({'pass': PASS} if PASS else {})}
     if done_R: write_questions(done_R)
     queue.pop('seen', None)
     json.dump(queue, open('data/intake/queue.json', 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
     OUT.mkdir(parents=True, exist_ok=True); json.dump(state, open(OUT / 'state.json', 'w'), indent=1)
-    left = [a for a in (pool if not want else want) if a in pool and (state.get(a) or {}).get('run') != TODAY]
+    left = [a for a in (pool if not want else want) if a in pool and fresh(a)]
     print(f'LEFT={len(left)}')
     notice(f"done {len(done_R)} areas ({', '.join(done_R)[:300]}); {len(left)} left; manners {M.stat}")
 
