@@ -57,6 +57,24 @@ jobs:
         run: |
           (cd kpcdata && LINKS=../links python3 .github/scripts/kpc_hunter_trigger.py > /tmp/hunt.txt) || true; cat /tmp/hunt.txt || true
           bash links/.github/scripts/kpc_push_data.sh kpcdata "Site data copied from KPC-Links (Step B3)" data locations-pota.json locations-sota.json locations-wwff.json
+      - name: The look-up branch (the new-park pipeline files a page read there)
+        continue-on-error: true
+        uses: actions/checkout@v5
+        with:
+          ref: lookup
+          path: lk
+      - name: New parks with no outline -> one hunter areas-run + one look-up read (HQ Oct 30 7:40 AM (b); never posts)
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          (cd kpcdata && LINKS=../links LOOKUP_ROOT=../lk python3 .github/scripts/kpc_new_park_flow.py > /tmp/newp.txt) || true; cat /tmp/newp.txt || true
+          bash links/.github/scripts/kpc_push_data.sh kpcdata "new-park pipeline: handled list" data/gis-hunter/new-parks.json || true
+          (cd lk && git config user.name 'github-actions[bot]' && git config user.email '41898282+github-actions[bot]@users.noreply.github.com' && git add requests && ! git diff --cached --quiet && git commit -qm 'new-park pipeline: page reads' && for i in 1 2 3; do git pull -q --rebase origin lookup && git push -q origin HEAD:lookup && break; sleep 5; done) || true
+          A=$(grep -o '^AREAS=.*' /tmp/newp.txt | cut -d= -f2)
+          if [ -n "$A" ] && ! grep -q '^RUN=' /tmp/hunt.txt 2>/dev/null; then   # a full pass already started covers them (two queued runs would cancel each other)
+            gh api -X POST repos/${{ github.repository }}/actions/workflows/kpc-gis-hunter.yml/dispatches -f ref=main -f "inputs[areas]=$A" -f 'inputs[chunks]=2' -f 'inputs[chain]=0' || true
+          fi
       - name: The map key or the layer list changed, so the GIS hunter starts one full pass (Brandon Oct 29 11:50 PM)
         continue-on-error: true
         env:

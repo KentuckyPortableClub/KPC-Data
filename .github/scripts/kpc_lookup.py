@@ -7,6 +7,7 @@ browser) answers it, each request on its OWN job (up to 6 at once), so a big one
 WHERE    KPC-Data, ORPHAN BRANCH `lookup` (never main, so nothing here grows main and the whole branch can be squashed):
            requests/<chat>-<id>.json   answers/<chat>-<id>.json (+ <chat>-<id>-<n>.jpg)   read/<chat>-<id> (empty file = 'I read it')
 REQUEST  {"chat": 11, "kind": "page", "urls": ["https://..."], "screenshot": true, "report": "is the area closed?"}
+         The same URL(s) + kind answered in the last 7 days is REUSED (answer says 'reused'); add "fresh": true to force a new read.
   kind  page        text (first 15,000 characters), links, optional screenshot
         map-check   the same + always a screenshot; a PDF renders page 1 (ask "pages": 3 for up to 3)
         layer-probe ArcGIS layers (chat 9's probe)    parcel  owner + parcel id per point on a parcel layer    probe  a chat-9 config
@@ -160,6 +161,10 @@ def run(req):
     out = {'request': str(req), 'id': rid, 'chat': q.get('chat'), 'kind': kind, 'report': q.get('report') or '', 'asked': q,
            'answered': time.strftime('%Y-%m-%d %H:%MZ', time.gmtime()), 'results': []}
     t0 = time.time()
+    hit = reuse(q, rid, kind)   # Oct 30 (HQ 7:40 AM): the same URL(s) + kind answered within 7 days = that answer again, no new fetch
+    if hit:
+        out.update({'results': hit['results'], 'reused': hit['id'], 'reused_from': hit.get('answered'), 'seconds': 0, 'short': f"reused the answer of {hit['id']} ({hit.get('answered')})"})
+        ans_path(req).write_text(json.dumps(out, indent=1, ensure_ascii=False) + '\n'); notice(f"{rid}: {out['short']}"); return
     try:
         if kind in ('page', 'map-check'):
             for i, u in enumerate((q.get('urls') or [])[:URLS_MAX]):
@@ -300,6 +305,28 @@ def map_cleanup():
             f.unlink(); gone.append(row['ref'])
     map_index()
     print(f"::notice title=Picture maps::cleanup: {len(gone)} deleted (park now has an official outline){': ' + ', '.join(gone[:20]) if gone else ''}")
+
+
+def cache_key(q, kind):
+    if kind in ('page', 'map-check'): return kind + '|' + '|'.join(sorted(q.get('urls') or [])) + f"|p{q.get('pages') or 1}|s{bool(q.get('screenshot'))}"
+    if kind == 'layer-probe': return kind + '|' + '|'.join(sorted(str(x.get('url') if isinstance(x, dict) else x) for x in q.get('layers') or []))
+    if kind == 'parcel': return kind + '|' + json.dumps({k: q.get(k) for k in ('layer', 'points')}, sort_keys=True)
+    return ''   # probe / save-map: never reused (a save-map writes a file; a probe config changes)
+
+
+def reuse(q, rid, kind):
+    k = cache_key(q, kind)
+    if not k or q.get('fresh'): return None
+    for a in sorted(ANS.glob('*.json')) if ANS.exists() else []:
+        if a.stem == rid: continue
+        try:
+            o = json.load(open(a))
+            if o.get('reused') or o.get('error'): continue
+            if cache_key(o.get('asked') or {}, o.get('kind')) != k: continue
+            if time.time() - time.mktime(time.strptime(o.get('answered', '')[:10], '%Y-%m-%d')) > KEEP_DAYS * 86400: continue
+            return o
+        except Exception: continue  # noqa: BLE001
+    return None
 
 
 def tidy():
