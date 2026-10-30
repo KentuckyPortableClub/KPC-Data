@@ -1,0 +1,59 @@
+{
+ "area": "north",
+ "date": "2026-10-30",
+ "states": [
+  "CA-YT",
+  "CA-NT",
+  "CA-NU"
+ ],
+ "rows": [
+  {
+   "area": "north",
+   "state": "CA-YT",
+   "refs": [
+    "CA-0044",
+    "CA-0842"
+   ],
+   "names": {
+    "CA-0044": "Kluane National Park",
+    "CA-0842": "Asi Keyi Territorial Park"
+   },
+   "what": "water map weak here (fix later: a better water source)",
+   "kind": "area",
+   "size": "150695.7 ac",
+   "sort": 150695.7,
+   "reason": "water not checked (the USGS water map did not answer): run pass 5 \u00b7 ['FED:CANADA', 'STATE']",
+   "id": "CA-0044+CA-0842@area@61.254,-140.886",
+   "sources": {
+    "CA-0044": "downloaded 2026-10-30",
+    "CA-0842": "downloaded 2026-10-30",
+    "water": "NRCan NHN file 2026-10-30 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
+   },
+   "checked": "2026-10-30"
+  },
+  {
+   "area": "north",
+   "state": "CA-YT",
+   "refs": [
+    "CA-0039",
+    "CA-4623"
+   ],
+   "names": {
+    "CA-0039": "Ivvavik National Park",
+    "CA-4623": "Old Crow Flats Special Management Area Habitat Protection Area"
+   },
+   "what": "not sure",
+   "kind": "area",
+   "size": "3352.8 ac",
+   "sort": 3352.8,
+   "reason": "this spot is 141 km from Old Crow Flats Special Management Area Habitat Protection Area's POTA pin: its outline may hold a far piece of a same-named place, or the record is a wrong join (held until checked; rule B13)",
+   "id": "CA-0039+CA-4623@area@68.566,-140.906",
+   "sources": {
+    "CA-0039": "downloaded 2026-10-30",
+    "CA-4623": "downloaded 2026-10-30",
+    "water": "NRCan NHN file 2026-10-30 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
+   },
+   "checked": "2026-10-30"
+  }
+ ]
+}

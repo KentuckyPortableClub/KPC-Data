@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-30T14:37Z",
+ "checked": "2026-10-30T14:39Z",
  "switched_on": false,
  "results": [
   {
@@ -131,34 +131,29 @@
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/CA-NB.json",
+   "path": "data/fers/CA-NT.json",
+   "kind": "fers",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/fers/CA-NU.json",
    "kind": "fers",
    "why": [
-    "F-S3 10 live rows whose two park pins are 100+ km apart (wrong joins), e.g. CA-6540+CA-6549 125 km, CA-6542+CA-6545 114 km"
+    "F-S3 1 live rows whose two park pins are 100+ km apart (wrong joins), e.g. CA-4569+CA-4594 202 km"
    ],
    "notes": [],
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/CA-NL.json",
+   "path": "data/fers/CA-YT.json",
    "kind": "fers",
-   "why": [],
+   "why": [
+    "F-2 only 4 of 6 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)"
+   ],
    "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/fers/CA-NS.json",
-   "kind": "fers",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/fers/CA-PE.json",
-   "kind": "fers",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/fers/US-AZ.json",
