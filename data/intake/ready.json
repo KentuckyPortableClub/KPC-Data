@@ -21519,7 +21519,7 @@
    "why": "did not open 3 times (budget): chat 9 checks the url"
   },
   {
-   "approved": null,
+   "approved": true,
    "area": "CA-BC",
    "closes": {
     "by_name": 39,
@@ -21815,7 +21815,10 @@
    "url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
    "ver": 1,
    "verdict": "READY",
-   "why": "official, credit terms, named polygons; closes 42 (name + pin 39, pin only 3): a pin inside a designation polygon is not a sure match"
+   "why": "official, credit terms, named polygons; closes 42 (name + pin 39, pin only 3): a pin inside a designation polygon is not a sure match",
+   "approved_by": "auto (AUTO-2)",
+   "approved_note": "35 SURE names, e.g. CA-3178 A.H.P. Matthew Park; CA-3180 Allco Park; CA-3183 Ambleside Park",
+   "approved_on": "2026-10-30"
   },
   {
    "approved": null,

@@ -1,7 +1,7 @@
 {
  "about": "GIS hunter candidates (Rule G R-G7 steps 2-3; tiers T-1..T-6 in mapping.md). SURE = same proper name: chat 2 rechecks (G-4) and joins; chat 11 grades a 10% sample. LIKELY = part of the name shared: chat 11 answers YES / NO + checked_by + how. UNLIKELY rows are not asked (evidence in data/gis-hunter/<area>.json).",
  "built": "2026-10-30",
- "open": 63,
+ "open": 61,
  "sure_open": 5,
  "likely_open": 35,
  "never_reasked": 0,
@@ -8072,10 +8072,12 @@
    "record_link": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/Maine_Conserved_Lands_Fee/FeatureServer/0/query?objectIds=59957&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-8287",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "US-ME",
@@ -8092,10 +8094,12 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=207532&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-8287",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
-   "source": "gis-hunter"
+   "answer": "YES",
+   "checked_by": "auto recheck (AUTO-1)",
+   "how": "AUTO-1: pin inside the record; record under this park only and not another park's outline; size sane; a layer the key reads; no NO before on this record or park; kinds agree",
+   "source": "gis-hunter",
+   "auto": true,
+   "sample_for_chat11": false
   },
   {
    "area": "US-ME",
@@ -8115,7 +8119,8 @@
    "answer": null,
    "checked_by": null,
    "how": null,
-   "source": "gis-hunter"
+   "source": "gis-hunter",
+   "auto_recheck": "NOT PASSED: the park is a ecological kind the record does not name"
   },
   {
    "area": "US-CO",
@@ -8240,7 +8245,8 @@
    "answer": null,
    "checked_by": null,
    "how": null,
-   "source": "gis-hunter"
+   "source": "gis-hunter",
+   "auto_recheck": "NOT PASSED: chat 11 already said NO to another record for this park; the park is a natural kind the record does not name"
   },
   {
    "area": "US-MD",
@@ -8322,7 +8328,8 @@
    "checked_by": "chat 11 (Oct 29-30)",
    "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter",
-   "rechecked_by_chat2": null
+   "rechecked_by_chat2": null,
+   "auto_recheck": "NOT PASSED: the park is a historic kind the record does not name"
   },
   {
    "area": "US-GA",
@@ -9116,5 +9123,6 @@
    "source": "gis-hunter",
    "rechecked_by_chat2": null
   }
- ]
+ ],
+ "auto_yes": 2
 }
