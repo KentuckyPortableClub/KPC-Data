@@ -4,6 +4,8 @@ name: KPC world finder v2 (stage 1, hidden)
 # let it eat'). STAGE 1 only (W9 / W2 off). Biggest gap first, France last; chains itself until the world list is done or the stop
 # time passes. Hidden data only (freeze): candidates for chat 11, leads for the intake. Never goes red.
 on:
+  schedule:
+    - cron: '23 */6 * * *'   # Oct 30 (Brandon 6:01 AM 'set timer'): 5 chunks every 6 h = round the clock until stage 1 is done (then each run finds nothing and stops)
   workflow_dispatch:
     inputs:
       countries:
@@ -49,7 +51,7 @@ jobs:
           COUNTRIES: ${{ inputs.countries }}
         run: |
           cd kpcdata
-          N=${{ inputs.chunks }}; [ "$N" -gt 5 ] && N=5
+          N=${{ inputs.chunks || 5 }}; [ "$N" -gt 5 ] && N=5
           for i in $(seq 1 $N); do
             if [ -n "${{ inputs.stop_at }}" ] && [ "$(date -u +%Y-%m-%dT%H:%M)" \> "${{ inputs.stop_at }}" ]; then echo "::notice title=World finder v2::stop time reached: shutting off"; echo "STOP=1" >> "$GITHUB_ENV"; break; fi
             python3 .github/scripts/kpc_keep_answers.py questions data/waiting/questions/world-finder.json || true; python3 .github/scripts/kpc_keep_answers.py state data/world-finder/state.json || true   # Oct 30: never save over chat 11's answers (chunk 2 of the world run did)

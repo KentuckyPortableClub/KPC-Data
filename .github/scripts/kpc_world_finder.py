@@ -60,7 +60,10 @@ def gap_queue(pins, state):
         matched = {r for r, v in K.items() if v.get('m')}
         open_ = [r for r in P if r not in matched]
         if open_: rows.append((cc, open_, K))
-    rows.sort(key=lambda x: (x[0] == 'FR', -len(x[1])))   # biggest gap first, France last (Fable)
+    # biggest gap first, France last (Fable); Oct 30 (Brandon 6:01 AM, timer 24/7): ROUND ROBIN: countries never touched come first
+    # (biggest gap first), a paused big country goes to the back until the others had their turn (oldest touch first)
+    def touched(cc): s = state.get(cc) or {}; return s.get('touched') or (s.get('run') if s.get('stage1') else '') or ''
+    rows.sort(key=lambda x: (x[0] == 'FR', bool(touched(x[0])), touched(x[0]), -len(x[1])))
     return [r for r in rows if (state.get(r[0]) or {}).get('stage1') != 'done']
 
 
@@ -198,7 +201,7 @@ def main():
     for cc, open_, K in queue:
         if late(): break
         rec = run_country(cc, open_, K, pins[cc], cfg, table, hstate, Q)
-        state[cc] = {'stage1': rec['stage1'], 'run': TODAY, 'open': rec['open'], 'candidates': rec['key_candidates'] + rec['layer_candidates']}
+        state[cc] = {'stage1': rec['stage1'], 'run': TODAY, 'touched': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()), 'open': rec['open'], 'candidates': rec['key_candidates'] + rec['layer_candidates']}
         ran.append(cc)
         H.save(H.OUT / 'state.json', hstate)
         json.dump(state, open(OUT / 'state.json', 'w'), indent=1)
