@@ -1,0 +1,56 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "ri",
+ "states": [
+  "US-RI"
+ ],
+ "since": "2026-10-30",
+ "date": "2026-10-30 04:36 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
+ "known_answers": "19/19 on 2026-10-30",
+ "missing_check": {
+  "FOUND": 3,
+  "DROPPED": 15,
+  "NEVER LOOKED AT": 290
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-30",
+   "pairs tested": 17,
+   "pairs whose boxes touch": 17
+  },
+  "pass2": {
+   "agree with the pass before": 9,
+   "date": "2026-10-30",
+   "pairs tested": 6
+  },
+  "pass3": {
+   "agree with the pass before": 3,
+   "date": "2026-10-30",
+   "pairs tested": 6
+  },
+  "pass5": {
+   "checked": 2,
+   "date": "2026-10-30",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-RI": "data/fers/US-RI.json"
+ },
+ "US-RI": {
+  "rows": 11,
+  "live": 4,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 6,
+  "merged": 1
+ },
+ "states_ready": [
+  "US-RI"
+ ],
+ "states_held": []
+}

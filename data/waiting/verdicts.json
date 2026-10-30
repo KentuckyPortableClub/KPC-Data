@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-30T01:52Z",
+ "checked": "2026-10-30T04:36Z",
  "switched_on": false,
  "results": [
   {
@@ -14,6 +14,15 @@
    "kind": "docs",
    "why": [
     "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
+  },
+  {
+   "path": "data/fers/US-RI.json",
+   "kind": "fers",
+   "why": [
+    "F-2 only 3 of 4 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)"
    ],
    "notes": [],
    "verdict": "HOLD"
