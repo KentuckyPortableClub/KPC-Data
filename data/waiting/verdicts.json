@@ -131,12 +131,14 @@
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/CA-BC.json",
+   "path": "data/fers/CA-ON.json.gz",
    "kind": "fers",
    "why": [
-    "F-2 NOT SURE 13 -> 18 (over 30% change)"
+    "F-S3 54 live rows whose two park pins are 100+ km apart (wrong joins), e.g. CA-0154+CA-0304 102 km, CA-0444+CA-1699 118 km"
    ],
-   "notes": [],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
    "verdict": "HOLD"
   },
   {
