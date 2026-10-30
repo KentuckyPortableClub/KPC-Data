@@ -1,0 +1,1826 @@
+{
+ "request": "requests/9-cap2-pe-1.json",
+ "id": "9-cap2-pe-1",
+ "chat": 9,
+ "kind": "probe",
+ "report": "CAP2 PE 1: 35 parks, 4 layers",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "CAP2 PE 1: 35 parks, 4 layers",
+  "probe": {
+   "about": "HQ 7:05 PM Canada P-2: point-in-polygon at the pin of no-outline parks (PE, 35 parks) against the province's key layers + CPCAD / federal. Refs in point order: CA-0856,CA-0862,CA-0865,CA-0869,CA-6373,CA-6439,CA-6594,CA-0852,CA-0853,CA-0860,CA-0863,CA-0874,CA-0875,CA-0878,CA-0880,CA-4657,CA-4673,CA-4696,CA-4721,CA-4748,CA-4766,CA-4891,CA-4893,CA-4894,CA-5288,CA-5414,CA-5418,CA-5419,CA-5753,CA-5755,CA-5776,CA-5779,CA-5788,CA-5791,CA-6172. PREP only, no tracing. Results to chat 2 + Canada Fable file.",
+   "refs": [
+    "CA-0856",
+    "CA-0862",
+    "CA-0865",
+    "CA-0869",
+    "CA-6373",
+    "CA-6439",
+    "CA-6594",
+    "CA-0852",
+    "CA-0853",
+    "CA-0860",
+    "CA-0863",
+    "CA-0874",
+    "CA-0875",
+    "CA-0878",
+    "CA-0880",
+    "CA-4657",
+    "CA-4673",
+    "CA-4696",
+    "CA-4721",
+    "CA-4748",
+    "CA-4766",
+    "CA-4891",
+    "CA-4893",
+    "CA-4894",
+    "CA-5288",
+    "CA-5414",
+    "CA-5418",
+    "CA-5419",
+    "CA-5753",
+    "CA-5755",
+    "CA-5776",
+    "CA-5779",
+    "CA-5788",
+    "CA-5791",
+    "CA-6172"
+   ],
+   "pointq": [
+    {
+     "st": "PE",
+     "url": "https://gis.princeedwardisland.ca/server/rest/services/GeoLincData/GeoLinc_Wildlife_Management_Area/MapServer/0",
+     "note": "PE Province",
+     "points": [
+      [
+       46.2804,
+       -63.4096
+      ],
+      [
+       46.8489,
+       -64.0144
+      ],
+      [
+       46.3998,
+       -63.8514
+      ],
+      [
+       45.9664,
+       -62.7174
+      ],
+      [
+       46.9461,
+       -63.9946
+      ],
+      [
+       46.3753,
+       -63.7891
+      ],
+      [
+       46.0556,
+       -62.9105
+      ],
+      [
+       46.3794,
+       -62.109
+      ],
+      [
+       46.516,
+       -63.8316
+      ],
+      [
+       46.3029,
+       -63.7457
+      ],
+      [
+       46.0228,
+       -62.562
+      ],
+      [
+       46.369,
+       -62.1339
+      ],
+      [
+       46.261,
+       -62.3797
+      ],
+      [
+       46.1983,
+       -63.0639
+      ],
+      [
+       45.951,
+       -62.7446
+      ],
+      [
+       46.4418,
+       -62.7477
+      ],
+      [
+       46.4528,
+       -61.9717
+      ],
+      [
+       46.5177,
+       -63.7732
+      ],
+      [
+       47.0571,
+       -63.9965
+      ],
+      [
+       46.2384,
+       -63.5434
+      ],
+      [
+       46.2292,
+       -63.1406
+      ],
+      [
+       46.2521,
+       -63.1275
+      ],
+      [
+       46.4905,
+       -63.3824
+      ],
+      [
+       46.1957,
+       -63.1362
+      ],
+      [
+       46.4299,
+       -63.1429
+      ],
+      [
+       46.4233,
+       -63.2833
+      ],
+      [
+       46.1814,
+       -62.5611
+      ],
+      [
+       46.4373,
+       -63.6403
+      ],
+      [
+       46.0036,
+       -62.4583
+      ],
+      [
+       46.5339,
+       -63.507
+      ],
+      [
+       46.7942,
+       -64.0624
+      ],
+      [
+       46.0502,
+       -63.0391
+      ],
+      [
+       46.4087,
+       -63.7655
+      ],
+      [
+       46.1614,
+       -62.8233
+      ],
+      [
+       46.316,
+       -63.811
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "PE",
+     "url": "https://gis.princeedwardisland.ca/server/rest/services/GeoLinc_Provincial_Parks/MapServer/0",
+     "note": "PE-PP Govern",
+     "points": [
+      [
+       46.2804,
+       -63.4096
+      ],
+      [
+       46.8489,
+       -64.0144
+      ],
+      [
+       46.3998,
+       -63.8514
+      ],
+      [
+       45.9664,
+       -62.7174
+      ],
+      [
+       46.9461,
+       -63.9946
+      ],
+      [
+       46.3753,
+       -63.7891
+      ],
+      [
+       46.0556,
+       -62.9105
+      ],
+      [
+       46.3794,
+       -62.109
+      ],
+      [
+       46.516,
+       -63.8316
+      ],
+      [
+       46.3029,
+       -63.7457
+      ],
+      [
+       46.0228,
+       -62.562
+      ],
+      [
+       46.369,
+       -62.1339
+      ],
+      [
+       46.261,
+       -62.3797
+      ],
+      [
+       46.1983,
+       -63.0639
+      ],
+      [
+       45.951,
+       -62.7446
+      ],
+      [
+       46.4418,
+       -62.7477
+      ],
+      [
+       46.4528,
+       -61.9717
+      ],
+      [
+       46.5177,
+       -63.7732
+      ],
+      [
+       47.0571,
+       -63.9965
+      ],
+      [
+       46.2384,
+       -63.5434
+      ],
+      [
+       46.2292,
+       -63.1406
+      ],
+      [
+       46.2521,
+       -63.1275
+      ],
+      [
+       46.4905,
+       -63.3824
+      ],
+      [
+       46.1957,
+       -63.1362
+      ],
+      [
+       46.4299,
+       -63.1429
+      ],
+      [
+       46.4233,
+       -63.2833
+      ],
+      [
+       46.1814,
+       -62.5611
+      ],
+      [
+       46.4373,
+       -63.6403
+      ],
+      [
+       46.0036,
+       -62.4583
+      ],
+      [
+       46.5339,
+       -63.507
+      ],
+      [
+       46.7942,
+       -64.0624
+      ],
+      [
+       46.0502,
+       -63.0391
+      ],
+      [
+       46.4087,
+       -63.7655
+      ],
+      [
+       46.1614,
+       -62.8233
+      ],
+      [
+       46.316,
+       -63.811
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "PE",
+     "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/10",
+     "note": "Ontario fede",
+     "points": [
+      [
+       46.2804,
+       -63.4096
+      ],
+      [
+       46.8489,
+       -64.0144
+      ],
+      [
+       46.3998,
+       -63.8514
+      ],
+      [
+       45.9664,
+       -62.7174
+      ],
+      [
+       46.9461,
+       -63.9946
+      ],
+      [
+       46.3753,
+       -63.7891
+      ],
+      [
+       46.0556,
+       -62.9105
+      ],
+      [
+       46.3794,
+       -62.109
+      ],
+      [
+       46.516,
+       -63.8316
+      ],
+      [
+       46.3029,
+       -63.7457
+      ],
+      [
+       46.0228,
+       -62.562
+      ],
+      [
+       46.369,
+       -62.1339
+      ],
+      [
+       46.261,
+       -62.3797
+      ],
+      [
+       46.1983,
+       -63.0639
+      ],
+      [
+       45.951,
+       -62.7446
+      ],
+      [
+       46.4418,
+       -62.7477
+      ],
+      [
+       46.4528,
+       -61.9717
+      ],
+      [
+       46.5177,
+       -63.7732
+      ],
+      [
+       47.0571,
+       -63.9965
+      ],
+      [
+       46.2384,
+       -63.5434
+      ],
+      [
+       46.2292,
+       -63.1406
+      ],
+      [
+       46.2521,
+       -63.1275
+      ],
+      [
+       46.4905,
+       -63.3824
+      ],
+      [
+       46.1957,
+       -63.1362
+      ],
+      [
+       46.4299,
+       -63.1429
+      ],
+      [
+       46.4233,
+       -63.2833
+      ],
+      [
+       46.1814,
+       -62.5611
+      ],
+      [
+       46.4373,
+       -63.6403
+      ],
+      [
+       46.0036,
+       -62.4583
+      ],
+      [
+       46.5339,
+       -63.507
+      ],
+      [
+       46.7942,
+       -64.0624
+      ],
+      [
+       46.0502,
+       -63.0391
+      ],
+      [
+       46.4087,
+       -63.7655
+      ],
+      [
+       46.1614,
+       -62.8233
+      ],
+      [
+       46.316,
+       -63.811
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "PE",
+     "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "note": "cpcad",
+     "points": [
+      [
+       46.2804,
+       -63.4096
+      ],
+      [
+       46.8489,
+       -64.0144
+      ],
+      [
+       46.3998,
+       -63.8514
+      ],
+      [
+       45.9664,
+       -62.7174
+      ],
+      [
+       46.9461,
+       -63.9946
+      ],
+      [
+       46.3753,
+       -63.7891
+      ],
+      [
+       46.0556,
+       -62.9105
+      ],
+      [
+       46.3794,
+       -62.109
+      ],
+      [
+       46.516,
+       -63.8316
+      ],
+      [
+       46.3029,
+       -63.7457
+      ],
+      [
+       46.0228,
+       -62.562
+      ],
+      [
+       46.369,
+       -62.1339
+      ],
+      [
+       46.261,
+       -62.3797
+      ],
+      [
+       46.1983,
+       -63.0639
+      ],
+      [
+       45.951,
+       -62.7446
+      ],
+      [
+       46.4418,
+       -62.7477
+      ],
+      [
+       46.4528,
+       -61.9717
+      ],
+      [
+       46.5177,
+       -63.7732
+      ],
+      [
+       47.0571,
+       -63.9965
+      ],
+      [
+       46.2384,
+       -63.5434
+      ],
+      [
+       46.2292,
+       -63.1406
+      ],
+      [
+       46.2521,
+       -63.1275
+      ],
+      [
+       46.4905,
+       -63.3824
+      ],
+      [
+       46.1957,
+       -63.1362
+      ],
+      [
+       46.4299,
+       -63.1429
+      ],
+      [
+       46.4233,
+       -63.2833
+      ],
+      [
+       46.1814,
+       -62.5611
+      ],
+      [
+       46.4373,
+       -63.6403
+      ],
+      [
+       46.0036,
+       -62.4583
+      ],
+      [
+       46.5339,
+       -63.507
+      ],
+      [
+       46.7942,
+       -64.0624
+      ],
+      [
+       46.0502,
+       -63.0391
+      ],
+      [
+       46.4087,
+       -63.7655
+      ],
+      [
+       46.1614,
+       -62.8233
+      ],
+      [
+       46.316,
+       -63.811
+      ]
+     ],
+     "dist": 100
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-30 00:43Z",
+ "results": {
+  "about": "HQ 7:05 PM Canada P-2: point-in-polygon at the pin of no-outline parks (PE, 35 parks) against the province's key layers + CPCAD / federal. Refs in point order: CA-0856,CA-0862,CA-0865,CA-0869,CA-6373,CA-6439,CA-6594,CA-0852,CA-0853,CA-0860,CA-0863,CA-0874,CA-0875,CA-0878,CA-0880,CA-4657,CA-4673,CA-4696,CA-4721,CA-4748,CA-4766,CA-4891,CA-4893,CA-4894,CA-5288,CA-5414,CA-5418,CA-5419,CA-5753,CA-5755,CA-5776,CA-5779,CA-5788,CA-5791,CA-6172. PREP only, no tracing. Results to chat 2 + Canada Fable file.",
+  "date": "2026-10-30",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "PE",
+    "url": "https://gis.princeedwardisland.ca/server/rest/services/GeoLincData/GeoLinc_Wildlife_Management_Area/MapServer/0",
+    "note": "PE Province",
+    "hits": [
+     {
+      "layer": "0 WildlifeManagementArea2025",
+      "point": [
+       46.2804,
+       -63.4096
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 WildlifeManagementArea2025",
+      "point": [
+       46.8489,
+       -64.0144
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 WildlifeManagementArea2025",
+      "point": [
+       46.3998,
+       -63.8514
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 WildlifeManagementArea2025",
+      "point": [
+       45.9664,
+       -62.7174
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 WildlifeManagementArea2025",
+      "point": [
+       46.9461,
+       -63.9946
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 WildlifeManagementArea2025",
+      "point": [
+       46.3753,
+       -63.7891
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 WildlifeManagementArea2025",
+      "point": [
+       46.0556,
+       -62.9105
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 WildlifeManagementArea2025",
+      "point": [
+       46.3794,
+       -62.109
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 WildlifeManagementArea2025",
+      "point": [
+       46.516,
+       -63.8316
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 WildlifeManagementArea2025",
+      "point": [
+       46.3029,
+       -63.7457
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 WildlifeManagementArea2025",
+      "point": [
+       46.0228,
+       -62.562
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 WildlifeManagementArea2025",
+      "point": [
+       46.369,
+       -62.1339
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 WildlifeManagementArea2025",
+      "point": [
+       46.261,
+       -62.3797
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 WildlifeManagementArea2025",
+      "point": [
+       46.1983,
+       -63.0639
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 WildlifeManagementArea2025",
+      "point": [
+       45.951,
+       -62.7446
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 WildlifeManagementArea2025",
+      "point": [
+       46.4418,
+       -62.7477
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 WildlifeManagementArea2025",
+      "point": [
+       46.4528,
+       -61.9717
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 WildlifeManagementArea2025",
+      "point": [
+       46.5177,
+       -63.7732
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "https://gis.princeedwardisland.ca/server/rest/services/GeoLincData/GeoLinc_Wildlife_Management_Area/MapServer/0",
+      "error": "<urlopen error [Errno 111] Connection refused>"
+     }
+    ]
+   },
+   {
+    "st": "PE",
+    "url": "https://gis.princeedwardisland.ca/server/rest/services/GeoLinc_Provincial_Parks/MapServer/0",
+    "note": "PE-PP Govern",
+    "hits": [
+     {
+      "layer": "https://gis.princeedwardisland.ca/server/rest/services/GeoLinc_Provincial_Parks/MapServer/0",
+      "error": "<urlopen error [Errno 111] Connection refused>"
+     }
+    ]
+   },
+   {
+    "st": "PE",
+    "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/10",
+    "note": "Ontario fede",
+    "hits": [
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.2804,
+       -63.4096
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.8489,
+       -64.0144
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.3998,
+       -63.8514
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       45.9664,
+       -62.7174
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.9461,
+       -63.9946
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.3753,
+       -63.7891
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.0556,
+       -62.9105
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.3794,
+       -62.109
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.516,
+       -63.8316
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.3029,
+       -63.7457
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.0228,
+       -62.562
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.369,
+       -62.1339
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.261,
+       -62.3797
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.1983,
+       -63.0639
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       45.951,
+       -62.7446
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.4418,
+       -62.7477
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.4528,
+       -61.9717
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.5177,
+       -63.7732
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       47.0571,
+       -63.9965
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.2384,
+       -63.5434
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.2292,
+       -63.1406
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.2521,
+       -63.1275
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.4905,
+       -63.3824
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.1957,
+       -63.1362
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.4299,
+       -63.1429
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.4233,
+       -63.2833
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.1814,
+       -62.5611
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.4373,
+       -63.6403
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.0036,
+       -62.4583
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.5339,
+       -63.507
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.7942,
+       -64.0624
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.0502,
+       -63.0391
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.4087,
+       -63.7655
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.1614,
+       -62.8233
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       46.316,
+       -63.811
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "PE",
+    "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+    "note": "cpcad",
+    "hits": [
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.2804,
+       -63.4096
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.8489,
+       -64.0144
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.3998,
+       -63.8514
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       45.9664,
+       -62.7174
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.9461,
+       -63.9946
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.3753,
+       -63.7891
+      ],
+      "attrs": {
+       "NAME_E": "Privately Protected Area (NCC 142051)",
+       "NAME_F": "Aires protégées à governance privée (CNC 142051)",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 5,
+       "STATUS": 2,
+       "QUALYEAR": 2023,
+       "ESTYEAR": 2015,
+       "BIOME": "T",
+       "LOC": 10,
+       "O_AREA_HA": 40.42427399224755,
+       "PARENT_ID": 159001500,
+       "ZONE_ID": 159001500,
+       "MECH_E": "Fee-Simple Ownership",
+       "TYPE_E": "Privately Protected Area",
+       "OWNER_TYPE": 8,
+       "OWNER_E": "Nature Conservancy of Canada",
+       "GOV_TYPE": 8,
+       "MGMT_E": "Nature Conservancy of Canada",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 15,
+       "JUR_ID": "NCC Parcel ID 145352",
+       "MPLAN": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.3753,
+       -63.7891
+      ],
+      "attrs": {
+       "NAME_E": "Scallop Buffer Zone (SFA 22)",
+       "NAME_F": "Zone tampon pour la pêche au pétoncle (ZPP 22)",
+       "PA_OECM_DF": 2,
+       "IPCA": 0,
+       "IUCN_CAT": 9,
+       "STATUS": 1,
+       "QUALYEAR": 2017,
+       "ESTYEAR": 2005,
+       "BIOME": "M",
+       "LOC": 15,
+       "O_AREA_HA": 285278.38,
+       "PARENT_ID": 700340000,
+       "ZONE_ID": 700340000,
+       "MECH_E": "Fisheries Act ( 1985, c. F-14 )",
+       "TYPE_E": "Other Effective Area-Based Conservation Measure",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Government of Canada",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Fisheries And Oceans Canada",
+       "NO_TAKE": 4,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 1,
+       "PROVIDER": 70,
+       "MPLAN": 0,
+       "PA_BIOME": "Marine other effective area-based conservation measure"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.0556,
+       -62.9105
+      ],
+      "attrs": {
+       "NAME_E": "Scallop Buffer Zone (SFA 24)",
+       "NAME_F": "Zone tampon pour la pêche au pétoncle (ZPP 24)",
+       "PA_OECM_DF": 2,
+       "IPCA": 0,
+       "IUCN_CAT": 9,
+       "STATUS": 1,
+       "QUALYEAR": 2017,
+       "ESTYEAR": 1996,
+       "BIOME": "M",
+       "LOC": 15,
+       "O_AREA_HA": 209495.52,
+       "PARENT_ID": 700350000,
+       "ZONE_ID": 700350000,
+       "MECH_E": "Fisheries Act ( 1985, c. F-14 )",
+       "TYPE_E": "Other Effective Area-Based Conservation Measure",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Government of Canada",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Fisheries And Oceans Canada",
+       "NO_TAKE": 4,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 1,
+       "PROVIDER": 70,
+       "MPLAN": 0,
+       "PA_BIOME": "Marine other effective area-based conservation measure"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.3794,
+       -62.109
+      ],
+      "attrs": {
+       "NAME_E": "Basin Head Sand Dunes Natural Area",
+       "NAME_F": "Basin Head Sand Dunes Natural Area",
+       "PA_OECM_DF": 1,
+       "IUCN_CAT": 4,
+       "STATUS": 1,
+       "QUALYEAR": 1995,
+       "BIOME": "T",
+       "LOC": 10,
+       "O_AREA_HA": 154.08688164479355,
+       "PARENT_ID": 111103005,
+       "ZONE_ID": 111103005,
+       "MECH_E": "PEI Natural Areas Protection Act",
+       "TYPE_E": "Provincially Owned Natural Area",
+       "OWNER_TYPE": 2,
+       "OWNER_E": "PEI Department of Environment, Energy & Climate Action",
+       "GOV_TYPE": 2,
+       "MGMT_E": "PEI Department of Environment, Energy & Climate Action",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 11,
+       "JUR_ID": "108043",
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.3794,
+       -62.109
+      ],
+      "attrs": {
+       "NAME_E": "Basin Head Marine Protected Area",
+       "NAME_F": "Zone de protection marine de Basin Head",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 8,
+       "STATUS": 1,
+       "QUALYEAR": 2005,
+       "ESTYEAR": 2005,
+       "BIOME": "M",
+       "LOC": 15,
+       "O_AREA_HA": 35.41,
+       "PARENT_ID": 700030000,
+       "ZONE_ID": 700030200,
+       "ZONEDESC_E": "Zone 2",
+       "MECH_E": "Oceans Act ( 1996, c. 31 )",
+       "TYPE_E": "Marine Protected Area",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Government of Canada",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Fisheries And Oceans Canada",
+       "NO_TAKE": 4,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 70,
+       "JUR_ID": "10",
+       "MPLAN": 1,
+       "MPLAN_REF": "http://www.dfo-mpo.gc.ca/oceans/mpa-zpm/basin-head/index-eng.html",
+       "PA_BIOME": "Marine protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.516,
+       -63.8316
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.3029,
+       -63.7457
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.0228,
+       -62.562
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.369,
+       -62.1339
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.261,
+       -62.3797
+      ],
+      "attrs": {
+       "NAME_E": "Scallop Buffer Zone (SFA 24)",
+       "NAME_F": "Zone tampon pour la pêche au pétoncle (ZPP 24)",
+       "PA_OECM_DF": 2,
+       "IPCA": 0,
+       "IUCN_CAT": 9,
+       "STATUS": 1,
+       "QUALYEAR": 2017,
+       "ESTYEAR": 1996,
+       "BIOME": "M",
+       "LOC": 15,
+       "O_AREA_HA": 209495.52,
+       "PARENT_ID": 700350000,
+       "ZONE_ID": 700350000,
+       "MECH_E": "Fisheries Act ( 1985, c. F-14 )",
+       "TYPE_E": "Other Effective Area-Based Conservation Measure",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Government of Canada",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Fisheries And Oceans Canada",
+       "NO_TAKE": 4,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 1,
+       "PROVIDER": 70,
+       "MPLAN": 0,
+       "PA_BIOME": "Marine other effective area-based conservation measure"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.1983,
+       -63.0639
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       45.951,
+       -62.7446
+      ],
+      "attrs": {
+       "NAME_E": "Scallop Buffer Zone (SFA 24)",
+       "NAME_F": "Zone tampon pour la pêche au pétoncle (ZPP 24)",
+       "PA_OECM_DF": 2,
+       "IPCA": 0,
+       "IUCN_CAT": 9,
+       "STATUS": 1,
+       "QUALYEAR": 2017,
+       "ESTYEAR": 1996,
+       "BIOME": "M",
+       "LOC": 15,
+       "O_AREA_HA": 209495.52,
+       "PARENT_ID": 700350000,
+       "ZONE_ID": 700350000,
+       "MECH_E": "Fisheries Act ( 1985, c. F-14 )",
+       "TYPE_E": "Other Effective Area-Based Conservation Measure",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Government of Canada",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Fisheries And Oceans Canada",
+       "NO_TAKE": 4,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 1,
+       "PROVIDER": 70,
+       "MPLAN": 0,
+       "PA_BIOME": "Marine other effective area-based conservation measure"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.4418,
+       -62.7477
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.4528,
+       -61.9717
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.5177,
+       -63.7732
+      ],
+      "attrs": {
+       "NAME_E": "Bunbury (Big Courtin) Island Natural Area",
+       "NAME_F": "Bunbury (Big Courtin) Island Natural Area",
+       "PA_OECM_DF": 1,
+       "IUCN_CAT": 4,
+       "STATUS": 1,
+       "QUALYEAR": 1999,
+       "BIOME": "T",
+       "LOC": 10,
+       "O_AREA_HA": 56.161360357945235,
+       "PARENT_ID": 111108004,
+       "ZONE_ID": 111108004,
+       "MECH_E": "PEI Natural Areas Protection Act",
+       "TYPE_E": "Privately Owned Natural Area (INT)",
+       "OWNER_TYPE": 8,
+       "OWNER_E": "Island Nature Trust",
+       "GOV_TYPE": 8,
+       "MGMT_E": "Island Nature Trust",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 11,
+       "JUR_ID": "606681",
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.5177,
+       -63.7732
+      ],
+      "attrs": {
+       "NAME_E": "Bunbury (Big Courtin) Island Natural Area",
+       "NAME_F": "Bunbury (Big Courtin) Island Natural Area",
+       "PA_OECM_DF": 1,
+       "IUCN_CAT": 4,
+       "STATUS": 1,
+       "QUALYEAR": 2016,
+       "BIOME": "T",
+       "LOC": 10,
+       "O_AREA_HA": 13.102157994323168,
+       "PARENT_ID": 111108004,
+       "ZONE_ID": 111108104,
+       "MECH_E": "PEI Natural Areas Protection Act",
+       "TYPE_E": "Privately Owned Natural Area (INT)",
+       "OWNER_TYPE": 8,
+       "OWNER_E": "Island Nature Trust",
+       "GOV_TYPE": 8,
+       "MGMT_E": "Island Nature Trust",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 11,
+       "JUR_ID": "606681-109",
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       47.0571,
+       -63.9965
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.2384,
+       -63.5434
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.2292,
+       -63.1406
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.2521,
+       -63.1275
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.4905,
+       -63.3824
+      ],
+      "attrs": {
+       "NAME_E": "Prince Edward Island National Park Of Canada",
+       "NAME_F": "Parc national du Canada de l'Île-du-Prince-Édouard",
+       "PA_OECM_DF": 1,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 1937,
+       "ESTYEAR": 1937,
+       "BIOME": "T",
+       "LOC": 10,
+       "O_AREA_HA": 2717,
+       "PARENT_ID": 717200000,
+       "ZONE_ID": 717200000,
+       "MECH_E": "Canada National Parks Act",
+       "TYPE_E": "National Park",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Parks Canada Agency",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Parks Canada Agency",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 71,
+       "JUR_ID": "PCA",
+       "MPLAN": 1,
+       "MPLAN_REF": "http://www.pc.gc.ca/",
+       "M_EFF": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.1957,
+       -63.1362
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.4299,
+       -63.1429
+      ],
+      "attrs": {
+       "NAME_E": "Prince Edward Island National Park Of Canada",
+       "NAME_F": "Parc national du Canada de l'Île-du-Prince-Édouard",
+       "PA_OECM_DF": 1,
+       "IUCN_CAT": 3,
+       "STATUS": 1,
+       "QUALYEAR": 1937,
+       "ESTYEAR": 1937,
+       "BIOME": "T",
+       "LOC": 10,
+       "O_AREA_HA": 2717,
+       "PARENT_ID": 717200000,
+       "ZONE_ID": 717200000,
+       "MECH_E": "Canada National Parks Act",
+       "TYPE_E": "National Park",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Parks Canada Agency",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Parks Canada Agency",
+       "SUBSRIGHT": "A",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 71,
+       "JUR_ID": "PCA",
+       "MPLAN": 1,
+       "MPLAN_REF": "http://www.pc.gc.ca/",
+       "M_EFF": 1,
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.4233,
+       -63.2833
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.1814,
+       -62.5611
+      ],
+      "attrs": {
+       "NAME_E": "Scallop Buffer Zone (SFA 24)",
+       "NAME_F": "Zone tampon pour la pêche au pétoncle (ZPP 24)",
+       "PA_OECM_DF": 2,
+       "IPCA": 0,
+       "IUCN_CAT": 9,
+       "STATUS": 1,
+       "QUALYEAR": 2017,
+       "ESTYEAR": 1996,
+       "BIOME": "M",
+       "LOC": 15,
+       "O_AREA_HA": 209495.52,
+       "PARENT_ID": 700350000,
+       "ZONE_ID": 700350000,
+       "MECH_E": "Fisheries Act ( 1985, c. F-14 )",
+       "TYPE_E": "Other Effective Area-Based Conservation Measure",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Government of Canada",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Fisheries And Oceans Canada",
+       "NO_TAKE": 4,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 1,
+       "PROVIDER": 70,
+       "MPLAN": 0,
+       "PA_BIOME": "Marine other effective area-based conservation measure"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.4373,
+       -63.6403
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.0036,
+       -62.4583
+      ],
+      "attrs": {
+       "NAME_E": "Scallop Buffer Zone (SFA 24)",
+       "NAME_F": "Zone tampon pour la pêche au pétoncle (ZPP 24)",
+       "PA_OECM_DF": 2,
+       "IPCA": 0,
+       "IUCN_CAT": 9,
+       "STATUS": 1,
+       "QUALYEAR": 2017,
+       "ESTYEAR": 1996,
+       "BIOME": "M",
+       "LOC": 15,
+       "O_AREA_HA": 209495.52,
+       "PARENT_ID": 700350000,
+       "ZONE_ID": 700350000,
+       "MECH_E": "Fisheries Act ( 1985, c. F-14 )",
+       "TYPE_E": "Other Effective Area-Based Conservation Measure",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Government of Canada",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Fisheries And Oceans Canada",
+       "NO_TAKE": 4,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 1,
+       "PROVIDER": 70,
+       "MPLAN": 0,
+       "PA_BIOME": "Marine other effective area-based conservation measure"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.5339,
+       -63.507
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.7942,
+       -64.0624
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.0502,
+       -63.0391
+      ],
+      "attrs": {
+       "NAME_E": "Scallop Buffer Zone (SFA 24)",
+       "NAME_F": "Zone tampon pour la pêche au pétoncle (ZPP 24)",
+       "PA_OECM_DF": 2,
+       "IPCA": 0,
+       "IUCN_CAT": 9,
+       "STATUS": 1,
+       "QUALYEAR": 2017,
+       "ESTYEAR": 1996,
+       "BIOME": "M",
+       "LOC": 15,
+       "O_AREA_HA": 209495.52,
+       "PARENT_ID": 700350000,
+       "ZONE_ID": 700350000,
+       "MECH_E": "Fisheries Act ( 1985, c. F-14 )",
+       "TYPE_E": "Other Effective Area-Based Conservation Measure",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Government of Canada",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Fisheries And Oceans Canada",
+       "NO_TAKE": 4,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 1,
+       "PROVIDER": 70,
+       "MPLAN": 0,
+       "PA_BIOME": "Marine other effective area-based conservation measure"
+      }
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.4087,
+       -63.7655
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.1614,
+       -62.8233
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       46.316,
+       -63.811
+      ],
+      "attrs": {
+       "NAME_E": "Scallop Buffer Zone (SFA 22)",
+       "NAME_F": "Zone tampon pour la pêche au pétoncle (ZPP 22)",
+       "PA_OECM_DF": 2,
+       "IPCA": 0,
+       "IUCN_CAT": 9,
+       "STATUS": 1,
+       "QUALYEAR": 2017,
+       "ESTYEAR": 2005,
+       "BIOME": "M",
+       "LOC": 15,
+       "O_AREA_HA": 285278.38,
+       "PARENT_ID": 700340000,
+       "ZONE_ID": 700340000,
+       "MECH_E": "Fisheries Act ( 1985, c. F-14 )",
+       "TYPE_E": "Other Effective Area-Based Conservation Measure",
+       "OWNER_TYPE": 1,
+       "OWNER_E": "Government of Canada",
+       "GOV_TYPE": 1,
+       "MGMT_E": "Fisheries And Oceans Canada",
+       "NO_TAKE": 4,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 1,
+       "PROVIDER": 70,
+       "MPLAN": 0,
+       "PA_BIOME": "Marine other effective area-based conservation measure"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 322,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
