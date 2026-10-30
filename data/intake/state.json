@@ -2,6 +2,7 @@
  "gate": "PASS",
  "hosts": {
   "arcgisdv.bnsf.com": 1793426837.135451,
+  "biology.usgs.gov": 1793429060.184678,
   "enterprise-dev.gisdata.mn.gov": 1793424987.8499336,
   "geoengine.utc.edu": 1793424734.3816242,
   "prostor4.gov.si": 1793422320.6667879,
@@ -9,18 +10,18 @@
  },
  "last_run": "2026-10-30",
  "manners": {
-  "arcgis_exempt": 1943,
-  "errors": 6,
-  "requests": 1947,
-  "rested": 36,
+  "arcgis_exempt": 1551,
+  "errors": 3,
+  "requests": 1553,
+  "rested": 41,
   "robots": 0,
-  "strikes": 6
+  "strikes": 3
  },
  "rows": {
   "http://biology.usgs.gov/arcgis/rest/services/nvcp/Canyon_De_Chelly_NM/MapServer": {
-   "fails": 2,
+   "fails": 3,
    "probed": "2026-10-30",
-   "retry": true,
+   "retry": false,
    "sig": "http://biology.usgs.gov/arcgis/rest/services/nvcp/Canyon_De_Chelly_NM/MapServer|Canyon De Chelly National Monument, AZ (Data Basin Dataset)|||ArcGIS Online search for Canyon de Chelly National Monument (owner consbio)|",
    "verdicts": [
     "RETRY"
@@ -54,7 +55,7 @@
    ]
   },
   "https://arcgisdv.bnsf.com/arcgis/rest/services/UAS_Products/Amory/MapServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://arcgisdv.bnsf.com/arcgis/rest/services/UAS_Products/Amory/MapServer|Amory|||ArcGIS Online search for Amory Recreation Area State Recreation Area (owner Corporate_GIS)|",
@@ -97,9 +98,9 @@
    ]
   },
   "https://enterprise-dev.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/plan_mndnr_fisheries_acquisition/FeatureServer": {
-   "fails": 2,
+   "fails": 3,
    "probed": "2026-10-30",
-   "retry": true,
+   "retry": false,
    "sig": "https://enterprise-dev.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/plan_mndnr_fisheries_acquisition/FeatureServer|State Aquatic Management Area (AMA) Aquisitions|||ArcGIS Online search for Forest Lake AMA Aquatic Reserve (owner commons_etl_user)|",
    "verdicts": [
     "RETRY"
@@ -134,9 +135,9 @@
    ]
   },
   "https://geoengine.utc.edu:6443/arcgis/rest/services/UTC/TVAwaterAccess/FeatureServer": {
-   "fails": 2,
+   "fails": 3,
    "probed": "2026-10-30",
-   "retry": true,
+   "retry": false,
    "sig": "https://geoengine.utc.edu:6443/arcgis/rest/services/UTC/TVAwaterAccess/FeatureServer|Flint River Access|||ArcGIS Online search for TVA Flint Creek Access National Park (owner andrewmindermann)|",
    "verdicts": [
     "RETRY"
@@ -329,9 +330,9 @@
    ]
   },
   "https://maps.disasters.nasa.gov/ags03/rest/services/brasil_flood_202405/blackmarble_hd/MapServer": {
-   "fails": 2,
+   "fails": 3,
    "probed": "2026-10-30",
-   "retry": true,
+   "retry": false,
    "sig": "https://maps.disasters.nasa.gov/ags03/rest/services/brasil_flood_202405/blackmarble_hd/MapServer|Black Marble High Definition (BMHD) in Porto Alegre for the May 2024 Brasil Floods|||ArcGIS Online search for Black River State Park (owner gwlayne_NASA)|",
    "verdicts": [
     "RETRY"
@@ -495,7 +496,7 @@
    ]
   },
   "https://prostor4.gov.si/ows2-ins/ps/wfs": {
-   "fails": 7,
+   "fails": 8,
    "probed": "2026-10-30",
    "retry": false,
    "sig": "https://prostor4.gov.si/ows2-ins/ps/wfs?service=wfs&version=2.0.0&request=GetCapabilities|Slovenia protected areas (ARSO, INSPIRE PS WFS)|Agencija RS za okolje (ARSO) / Slovenian Environment Agency|ATOM feed rights: 'No limitations'|WFS (not ArcGIS): the host did not resolve from a GitHub runner on Oct 28 (DNS); ATOM download feed http://gis.arso.gov.si/related/atom/inspire/datafeeds/zav_obm_poli.xml (GML, 2021-12-10). Needs the typename read from GetCapabilities.|READY (WFS) or did-not-open",
@@ -515,7 +516,7 @@
    ]
   },
   "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer": {
-   "fails": 5,
+   "fails": 6,
    "probed": "2026-10-30",
    "retry": false,
    "sig": "https://public-services.slip.wa.gov.au/public/rest/services/Landgate_Public_Maps/Marine_Map_WA_3/MapServer|Landgate_Public_Maps/Marine_Map_WA_3|public-services.slip.wa.gov.au|WALIS||",
@@ -531,9 +532,9 @@
    ]
   },
   "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer": {
-   "fails": 2,
+   "fails": 3,
    "probed": "2026-10-30",
-   "retry": true,
+   "retry": false,
    "sig": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer|SLIP_Public_Services/Boundaries|public-services.slip.wa.gov.au|SLIP/Landgate||",
    "verdicts": [
     "REJECT",
@@ -547,9 +548,9 @@
    ]
   },
   "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer": {
-   "fails": 2,
+   "fails": 3,
    "probed": "2026-10-30",
-   "retry": true,
+   "retry": false,
    "sig": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries_WFS/MapServer|SLIP_Public_Services/Boundaries_WFS|public-services.slip.wa.gov.au|LANDGATE/SLIP||",
    "verdicts": [
     "REJECT",
@@ -563,9 +564,9 @@
    ]
   },
   "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer": {
-   "fails": 2,
+   "fails": 3,
    "probed": "2026-10-30",
-   "retry": true,
+   "retry": false,
    "sig": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer|SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS|public-services.slip.wa.gov.au|||",
    "verdicts": [
     "ASK-THE-PUBLISHER",
@@ -579,19 +580,24 @@
    ]
   },
   "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment/MapServer": {
-   "fails": 0,
+   "fails": 1,
    "probed": "2026-10-30",
-   "retry": false,
+   "retry": true,
    "sig": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment/MapServer|SLIP_Public_Services/Environment|public-services.slip.wa.gov.au|You are provided access to publicly available data on the terms and conditions of SLIP Transaction - Personal Use Licence, unless you are otherwise permitted to use under a SLIP Subscription Licence. ||",
    "verdicts": [
     "REJECT",
     "REJECT",
-    "REJECT"
+    "REJECT",
+    "WATER-ONLY",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY"
    ]
   },
   "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment_WFS/MapServer": {
-   "fails": 1,
-   "probed": "2026-10-29",
+   "fails": 2,
+   "probed": "2026-10-30",
    "retry": true,
    "sig": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment_WFS/MapServer|SLIP_Public_Services/Environment_WFS|public-services.slip.wa.gov.au|You are provided access to publicly available data on the terms and conditions of SLIP Transaction - Personal Use Licence, unless you are otherwise permitted to use under a SLIP Subscription Licence. ||",
    "verdicts": [
@@ -606,8 +612,8 @@
    ]
   },
   "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming/MapServer": {
-   "fails": 1,
-   "probed": "2026-10-29",
+   "fails": 2,
+   "probed": "2026-10-30",
    "retry": true,
    "sig": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming/MapServer|SLIP_Public_Services/Farming|public-services.slip.wa.gov.au|SLIP||",
    "verdicts": [
@@ -619,6 +625,176 @@
     "RETRY",
     "RETRY",
     "RETRY"
+   ]
+  },
+  "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming_WFS/MapServer": {
+   "fails": 1,
+   "probed": "2026-10-30",
+   "retry": true,
+   "sig": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming_WFS/MapServer|SLIP_Public_Services/Farming_WFS|public-services.slip.wa.gov.au|SLIP||",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "ASK-THE-PUBLISHER",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY"
+   ]
+  },
+  "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Industry_and_Mining/MapServer": {
+   "fails": 1,
+   "probed": "2026-10-30",
+   "retry": true,
+   "sig": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Industry_and_Mining/MapServer|SLIP_Public_Services/Industry_and_Mining|public-services.slip.wa.gov.au|SLIP / LANDGATE||",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY"
+   ]
+  },
+  "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Industry_and_Mining_WFS/MapServer": {
+   "fails": 1,
+   "probed": "2026-10-30",
+   "retry": true,
+   "sig": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Industry_and_Mining_WFS/MapServer|SLIP_Public_Services/Industry_and_Mining_WFS|public-services.slip.wa.gov.au|SLIP / LANDGATE||",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY"
+   ]
+  },
+  "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Infrastructure_and_Utilities_WFS/MapServer": {
+   "fails": 1,
+   "probed": "2026-10-30",
+   "retry": true,
+   "sig": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Infrastructure_and_Utilities_WFS/MapServer|SLIP_Public_Services/Infrastructure_and_Utilities_WFS|public-services.slip.wa.gov.au|You are provided access to publicly available data on the terms and conditions of SLIP Transaction - Personal Use Licence, unless you are otherwise permitted to use under a SLIP Subscription Licence. ||",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY"
+   ]
+  },
+  "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Marine_and_Estuaries/MapServer": {
+   "fails": 1,
+   "probed": "2026-10-30",
+   "retry": true,
+   "sig": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Marine_and_Estuaries/MapServer|SLIP_Public_Services/Marine_and_Estuaries|public-services.slip.wa.gov.au|||",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY"
+   ]
+  },
+  "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/People_and_Society/MapServer": {
+   "fails": 1,
+   "probed": "2026-10-30",
+   "retry": true,
+   "sig": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/People_and_Society/MapServer|SLIP_Public_Services/People_and_Society|public-services.slip.wa.gov.au|LANDGATE/SLIP||",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY",
+    "RETRY"
+   ]
+  },
+  "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals/MapServer": {
+   "fails": 1,
+   "probed": "2026-10-30",
+   "retry": true,
+   "sig": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals/MapServer|SLIP_Public_Services/Plants_and_Animals|public-services.slip.wa.gov.au|LANDGATE/SLIP||",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "RETRY",
+    "RETRY"
+   ]
+  },
+  "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals_WFS/MapServer": {
+   "fails": 1,
+   "probed": "2026-10-30",
+   "retry": true,
+   "sig": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Plants_and_Animals_WFS/MapServer|SLIP_Public_Services/Plants_and_Animals_WFS|public-services.slip.wa.gov.au|LANDGATE/SLIP||",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "RETRY",
+    "RETRY"
+   ]
+  },
+  "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Property_and_Planning_WFS/MapServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Property_and_Planning_WFS/MapServer|SLIP_Public_Services/Property_and_Planning_WFS|public-services.slip.wa.gov.au|SLIP / LANDGATE||",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Soil_Landscape/MapServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Soil_Landscape/MapServer|SLIP_Public_Services/Soil_Landscape|public-services.slip.wa.gov.au|LANDGATE/SLIP||",
+   "verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT",
+    "REJECT"
+   ]
+  },
+  "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Soil_Landscape_WFS/MapServer": {
+   "fails": 0,
+   "probed": "2026-10-30",
+   "retry": false,
+   "sig": "https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Soil_Landscape_WFS/MapServer|SLIP_Public_Services/Soil_Landscape_WFS|public-services.slip.wa.gov.au|SLIP / LANDGATE||",
+   "verdicts": [
+    "REJECT",
+    "REJECT"
    ]
   },
   "https://services-ap1.arcgis.com/7jIYowrTWizM57Ga/arcgis/rest/services/Rencana_Infrastruktur_Pengelolaan_Air_Limbah_dan_Persampahan/FeatureServer": {
@@ -732,9 +908,9 @@
    ]
   },
   "https://services.arcgis.com/0c8NSBwqhllp50N7/arcgis/rest/services/Watershed of the Blanchard River/FeatureServer": {
-   "fails": 2,
+   "fails": 3,
    "probed": "2026-10-30",
-   "retry": true,
+   "retry": false,
    "sig": "https://services.arcgis.com/0c8NSBwqhllp50N7/arcgis/rest/services/Watershed of the Blanchard River/FeatureServer|Watershed of the Blanchard River|||ArcGIS Online search for Blanchard State Forest (owner brwp1237)|",
    "verdicts": [
     "RETRY"
@@ -759,7 +935,7 @@
    ]
   },
   "https://services.arcgis.com/3cD3npevdeqC4ysX/arcgis/rest/services/MP_RV_Lot_Hammer_Head_View_Layer/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services.arcgis.com/3cD3npevdeqC4ysX/arcgis/rest/services/MP_RV_Lot_Hammer_Head_View_Layer/FeatureServer|MP RV Lot Hammer Head View Layer|||ArcGIS Online search for Hammer Creek Recreation Site BLM Recreation Management Area (owner LSD@MPHOA)|",
@@ -777,7 +953,7 @@
    ]
   },
   "https://services.arcgis.com/7cbqsWqMe170dJ3k/arcgis/rest/services/040723_Hwy__271_–_Hwy__64__Towson_Ave____Fort_Smith__WFL1/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services.arcgis.com/7cbqsWqMe170dJ3k/arcgis/rest/services/040723_Hwy__271_–_Hwy__64__Towson_Ave____Fort_Smith__WFL1/FeatureServer|040723 Hwy_ 271 – Hwy_ 64 _Towson Ave__ _Fort Smith__WFL1|||ArcGIS Online search for Fort Towson State Historic Site (owner Gina.Hopkins@ardot.gov_ardot)|",
@@ -943,7 +1119,7 @@
    ]
   },
   "https://services.arcgis.com/Kky1VmxJleu73HxO/arcgis/rest/services/Columbus_State_Community_College_(Points)_to_National_Parks/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services.arcgis.com/Kky1VmxJleu73HxO/arcgis/rest/services/Columbus_State_Community_College_(Points)_to_National_Parks/FeatureServer|Routes from Columbus State Community College to National Parks ASC|||ArcGIS Online search for Columbus Lake State Recreation Area (owner acriss2_ColumbusState)|",
@@ -952,7 +1128,7 @@
    ]
   },
   "https://services.arcgis.com/M7jfYoTaLM0yE75d/arcgis/rest/services/Area_Caney_Fork_Fields/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services.arcgis.com/M7jfYoTaLM0yE75d/arcgis/rest/services/Area_Caney_Fork_Fields/FeatureServer|Area_Caney_Fork_Fields|||ArcGIS Online search for Caney Creek Wildlife Management Area (owner kjensen_Skid)|",
@@ -961,7 +1137,7 @@
    ]
   },
   "https://services.arcgis.com/M7jfYoTaLM0yE75d/arcgis/rest/services/Caney_Fork_Bulk_Density_2020_Prediction/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services.arcgis.com/M7jfYoTaLM0yE75d/arcgis/rest/services/Caney_Fork_Bulk_Density_2020_Prediction/FeatureServer|Caney_Fork_Bulk_Density_2020_Prediction|||ArcGIS Online search for Caney Creek Wildlife Management Area (owner kjensen_Skid)|",
@@ -970,7 +1146,7 @@
    ]
   },
   "https://services.arcgis.com/M7jfYoTaLM0yE75d/arcgis/rest/services/Caney_Fork_Bulk_Density_2020_data_Prediction/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services.arcgis.com/M7jfYoTaLM0yE75d/arcgis/rest/services/Caney_Fork_Bulk_Density_2020_data_Prediction/FeatureServer|Caney_Fork_Bulk_Density_2020_data_Prediction|||ArcGIS Online search for Caney Creek Wildlife Management Area (owner kjensen_Skid)|",
@@ -1006,7 +1182,7 @@
    ]
   },
   "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/Nashvilles_Highland_Rim_Forest/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/Nashvilles_Highland_Rim_Forest/FeatureServer|Nashvilles Highland Rim Forest|||ArcGIS Online search for Rim Lake BLM Recreation Management Area (owner emily_granstaff@fws.gov_fws)|",
@@ -1070,7 +1246,7 @@
    ]
   },
   "https://services.arcgis.com/RmCCgQtiZLDCtblq/arcgis/rest/services/SlidingWindows_ARTESIA_view_33808/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services.arcgis.com/RmCCgQtiZLDCtblq/arcgis/rest/services/SlidingWindows_ARTESIA_view_33808/FeatureServer|SlidingWindows_ARTESIA_view_V1|||ArcGIS Online search for Artesia Lake State Wildlife Area (owner JRuben@isd.lacounty.gov_lacounty)|",
@@ -1097,7 +1273,7 @@
    ]
   },
   "https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/a31962/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/a31962/FeatureServer|Tui Chub in Dixie Valley Distribution in Nevada|||ArcGIS Online search for Dixie Valley Recreation Site (owner NDOW_DEV)|",
@@ -1106,7 +1282,7 @@
    ]
   },
   "https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/a86e58/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/a86e58/FeatureServer|Dixie Valley Toad Distribution in Nevada|||ArcGIS Online search for Dixie Valley Recreation Site (owner NDOW_DEV)|",
@@ -1115,7 +1291,7 @@
    ]
   },
   "https://services.arcgis.com/TI8AEdeaqI5HEMqo/arcgis/rest/services/Trails_Connected_to_the_Razorback_Regional_Greenway/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services.arcgis.com/TI8AEdeaqI5HEMqo/arcgis/rest/services/Trails_Connected_to_the_Razorback_Regional_Greenway/FeatureServer|Trails_Connected_to_the_Razorback_Regional_Greenway|||ArcGIS Online search for The Razorback Regional Greenway National Recreation Trail (owner gogeographics)|",
@@ -1151,7 +1327,7 @@
    ]
   },
   "https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/OR_Clatsop_MOC_Web_Draft_20240131/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/OR_Clatsop_MOC_Web_Draft_20240131/FeatureServer|Clatsop County, Oregon (MOC) - Draft Floodplains (2024.01.31) - Feature Service|||ArcGIS Online search for Clatsop State Forest (owner FEMA_Region10_Mitigation)|",
@@ -1160,7 +1336,7 @@
    ]
   },
   "https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/OR_Clatsop_Web_Draft_FRP_20241217/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/OR_Clatsop_Web_Draft_FRP_20241217/FeatureServer|Clatsop County, Oregon (Mouth of the Columbia) - Flood Risk Products (2024.12.02) - FS|||ArcGIS Online search for Clatsop State Forest (owner FEMA_Region10_Mitigation)|",
@@ -1169,7 +1345,7 @@
    ]
   },
   "https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/OR_Clatsop_Web_Effective/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/OR_Clatsop_Web_Effective/FeatureServer|Clatsop County, Oregon - Effective Floodplains (2018.09.23) - Feature Service|||ArcGIS Online search for Clatsop State Forest (owner FEMA_Region10_Mitigation)|",
@@ -1187,9 +1363,9 @@
    ]
   },
   "https://services.arcgis.com/XORNS2fPFySPlBgy/arcgis/rest/services/Walnut_Woods_Park_JWT/FeatureServer": {
-   "fails": 2,
+   "fails": 3,
    "probed": "2026-10-30",
-   "retry": true,
+   "retry": false,
    "sig": "https://services.arcgis.com/XORNS2fPFySPlBgy/arcgis/rest/services/Walnut_Woods_Park_JWT/FeatureServer|Walnut Woods Park JWT|||ArcGIS Online search for Walnut Woods State Conservation Area (owner BCrat82)|",
    "verdicts": [
     "RETRY"
@@ -1206,7 +1382,7 @@
    ]
   },
   "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Dugway_Proving_Grounds/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Dugway_Proving_Grounds/FeatureServer|Dugway Proving Grounds|||ArcGIS Online search for Dugway Recreation Site BLM Recreation Management Area (owner dwrwmi)|",
@@ -1282,7 +1458,7 @@
    ]
   },
   "https://services.arcgis.com/cJ9YHowT8TU7DUyn/arcgis/rest/services/CLM___Climate_Indicator_First_Leaf_Dates__EPA_/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services.arcgis.com/cJ9YHowT8TU7DUyn/arcgis/rest/services/CLM___Climate_Indicator_First_Leaf_Dates__EPA_/FeatureServer|Climate Indicator First Leaf Dates (EPA 2021)|||ArcGIS Online search for Leaf River Wildlife Management Area (owner EPA_GEO)|",
@@ -1291,7 +1467,7 @@
    ]
   },
   "https://services.arcgis.com/cJ9YHowT8TU7DUyn/arcgis/rest/services/Oklahoma_Tribal_Statistical_Areas__DOC___EPA_2023_/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services.arcgis.com/cJ9YHowT8TU7DUyn/arcgis/rest/services/Oklahoma_Tribal_Statistical_Areas__DOC___EPA_2023_/FeatureServer|Oklahoma Tribal Statistical Areas|||ArcGIS Online search for Oklahoma City National Memorial (owner EPA_GEO)|",
@@ -1309,7 +1485,7 @@
    ]
   },
   "https://services.arcgis.com/fLeGjb7u4uXqeF9q/arcgis/rest/services/Leaf_Collection_Areas/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/arcgis/rest/services/Leaf_Collection_Areas/FeatureServer|Leaf_Collection_Areas|||ArcGIS Online search for Leaf River Wildlife Management Area (owner maps.phl.data)|",
@@ -1327,7 +1503,7 @@
    ]
   },
   "https://services.arcgis.com/jDGuO8tYggdCCnUJ/arcgis/rest/services/EastBayNorthShoreImpactedCTs/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services.arcgis.com/jDGuO8tYggdCCnUJ/arcgis/rest/services/EastBayNorthShoreImpactedCTs/FeatureServer|East Bay North Shore Impacted Census Tracts|||ArcGIS Online search for East Shore BLM Recreation Management Area (owner Ferrar@FracTracker.org)|",
@@ -1336,7 +1512,7 @@
    ]
   },
   "https://services.arcgis.com/jDGuO8tYggdCCnUJ/arcgis/rest/services/EastBayNorthShoreMarineTerminals/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services.arcgis.com/jDGuO8tYggdCCnUJ/arcgis/rest/services/EastBayNorthShoreMarineTerminals/FeatureServer|East Bay North Shore Marine Terminals|||ArcGIS Online search for East Shore BLM Recreation Management Area (owner Ferrar@FracTracker.org)|",
@@ -1354,7 +1530,7 @@
    ]
   },
   "https://services.arcgis.com/kIA6yS9KDGqZL7U3/arcgis/rest/services/North_Santiam_Tour_POI/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services.arcgis.com/kIA6yS9KDGqZL7U3/arcgis/rest/services/North_Santiam_Tour_POI/FeatureServer|North_Santiam_Tour_POI|||ArcGIS Online search for Santiam State Forest (owner SalemGIS)|",
@@ -1433,7 +1609,7 @@
    ]
   },
   "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Active_Transportation/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Active_Transportation/FeatureServer|Morgan State St Active Transportation|||ArcGIS Online search for Morgan Creek Recreation Site BLM Recreation Management Area (owner cmccullock@jub.com_uplan)|",
@@ -1442,7 +1618,7 @@
    ]
   },
   "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/CottonwoodCanyonRoutes/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/CottonwoodCanyonRoutes/FeatureServer|Cottonwood Canyons Route Travel Times|||ArcGIS Online search for Cottonwood Recreation Site BLM Recreation Management Area (owner bteran@utah.gov_uplan)|",
@@ -1451,7 +1627,7 @@
    ]
   },
   "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Cottonwood_Canyon_Weather_FME/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Cottonwood_Canyon_Weather_FME/FeatureServer|Cottonwood Canyon Weather Monitoring Data|||ArcGIS Online search for Cottonwood Recreation Site BLM Recreation Management Area (owner bteran@utah.gov_uplan)|",
@@ -1460,7 +1636,7 @@
    ]
   },
   "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/R1_Morgan_State_St_Intersections/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/R1_Morgan_State_St_Intersections/FeatureServer|R1 Morgan State St Intersections|||ArcGIS Online search for Morgan Creek Recreation Site BLM Recreation Management Area (owner cmccullock@jub.com_uplan)|",
@@ -1469,7 +1645,7 @@
    ]
   },
   "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/R1_Morgan_State_St_Study_Segments/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/R1_Morgan_State_St_Study_Segments/FeatureServer|R1 Morgan State St Study Segments|||ArcGIS Online search for Morgan Creek Recreation Site BLM Recreation Management Area (owner cmccullock@jub.com_uplan)|",
@@ -1478,7 +1654,7 @@
    ]
   },
   "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Region_Four_South_Parowan_Pine_Canyon_Drive_Alt_Model_1/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Region_Four_South_Parowan_Pine_Canyon_Drive_Alt_Model_1/FeatureServer|Region Four South Parowan Pine Canyon Drive Alt Model 1|||ArcGIS Online search for Pine Canyon WMA State Conservation Area (owner bdavis1@utah.gov_uplan)|",
@@ -1487,7 +1663,7 @@
    ]
   },
   "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Region_Four_South_Parowan_Pine_Canyon_Drive_Alt_Model_2/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Region_Four_South_Parowan_Pine_Canyon_Drive_Alt_Model_2/FeatureServer|Region Four South Parowan Pine Canyon Drive Alt Model 2|||ArcGIS Online search for Pine Canyon WMA State Conservation Area (owner bdavis1@utah.gov_uplan)|",
@@ -1496,7 +1672,7 @@
    ]
   },
   "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Region_Four_South_Parowan_Pine_Canyon_Drive_Alt_Model_3/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Region_Four_South_Parowan_Pine_Canyon_Drive_Alt_Model_3/FeatureServer|Region Four South Parowan Pine Canyon Drive Alt Model 3|||ArcGIS Online search for Pine Canyon WMA State Conservation Area (owner bdavis1@utah.gov_uplan)|",
@@ -1514,7 +1690,7 @@
    ]
   },
   "https://services.arcgis.com/pGfbNJoYypmNq86F/arcgis/rest/services/DDAC_DR_384_26_Enid_OK_0426_TOR_Partner_Vew/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services.arcgis.com/pGfbNJoYypmNq86F/arcgis/rest/services/DDAC_DR_384_26_Enid_OK_0426_TOR_Partner_Vew/FeatureServer|DDAC_DR_384_26_Enid_OK_0426_TOR_Partner_Vew|||ArcGIS Online search for Enid Lake State Recreation Area (owner DCSBGI)|",
@@ -1635,7 +1811,7 @@
    ]
   },
   "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Antelope_Reservoir_Fish_Advisory/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Antelope_Reservoir_Fish_Advisory/FeatureServer|Antelope Reservoir Fish Advisory|||ArcGIS Online search for Antelope Reservoir BLM Recreation Management Area (owner rachel.saltzman_oha)|",
@@ -1689,7 +1865,7 @@
    ]
   },
   "https://services.arcgis.com/vj9gtZvrLEtbnUyw/arcgis/rest/services/NI_Areas_of_Outstanding_Natural_Beauty_AONB/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services.arcgis.com/vj9gtZvrLEtbnUyw/arcgis/rest/services/NI_Areas_of_Outstanding_Natural_Beauty_AONB/FeatureServer|NI Areas of Outstanding Natural Beauty AONB|||ArcGIS Online search for Mt Rose Scenic Byway Area of Outstanding Natural Beauty (owner sam.brown)|",
@@ -1698,7 +1874,7 @@
    ]
   },
   "https://services.arcgis.com/wjcPoefzjpzCgffS/arcgis/rest/services/Wildfire_Smoke_Forecast_in_Canada_(Feature_Service)_-ServiceDefinition/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services.arcgis.com/wjcPoefzjpzCgffS/arcgis/rest/services/Wildfire_Smoke_Forecast_in_Canada_(Feature_Service)_-ServiceDefinition/FeatureServer|Wildfire Smoke Forecast in Canada - Feature Service|||ArcGIS Online search for Smoke Creek BLM National Conservation Area (owner EsriCanadaContent)|",
@@ -1716,7 +1892,7 @@
    ]
   },
   "https://services.arcgis.com/yq3FgOI44hYHAFVZ/arcgis/rest/services/Bear_Gulch_Dam_Failure_Area/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services.arcgis.com/yq3FgOI44hYHAFVZ/arcgis/rest/services/Bear_Gulch_Dam_Failure_Area/FeatureServer|Bear Gulch Dam Failure Area|||ArcGIS Online search for Bear Gulch BLM Wilderness Area (owner sanmateocountygis)|",
@@ -1725,7 +1901,7 @@
    ]
   },
   "https://services.arcgis.com/zmBQLV64TsFvEpV0/arcgis/rest/services/The_Wash_and_North_Norfolk_Coast_SAC/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services.arcgis.com/zmBQLV64TsFvEpV0/arcgis/rest/services/The_Wash_and_North_Norfolk_Coast_SAC/FeatureServer|The Wash and North Norfolk Coast SAC|||ArcGIS Online search for North Wash BLM Recreation Management Area (owner 303434_rhdhv)|",
@@ -1882,7 +2058,7 @@
    ]
   },
   "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer": {
-   "fails": 5,
+   "fails": 6,
    "probed": "2026-10-30",
    "retry": false,
    "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer|Public/NVAdata|services.thelist.tas.gov.au|||",
@@ -1896,7 +2072,7 @@
    ]
   },
   "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer": {
-   "fails": 5,
+   "fails": 6,
    "probed": "2026-10-30",
    "retry": false,
    "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironment/MapServer|Public/NaturalEnvironment|services.thelist.tas.gov.au|the LIST  State of Tasmania||",
@@ -1925,7 +2101,7 @@
    ]
   },
   "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer": {
-   "fails": 5,
+   "fails": 6,
    "probed": "2026-10-30",
    "retry": false,
    "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer|Public/OpenDataWFS|services.thelist.tas.gov.au|the LIST  State of Tasmania||",
@@ -1941,7 +2117,7 @@
    ]
   },
   "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer": {
-   "fails": 5,
+   "fails": 6,
    "probed": "2026-10-30",
    "retry": false,
    "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/PWSPublic/MapServer|Public/PWSPublic|services.thelist.tas.gov.au|the LIST  State of Tasmania||",
@@ -1983,7 +2159,7 @@
    ]
   },
   "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer": {
-   "fails": 3,
+   "fails": 4,
    "probed": "2026-10-30",
    "retry": false,
    "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer|Public/TopographyAndRelief|services.thelist.tas.gov.au|the LIST © State of Tasmania||",
@@ -1999,7 +2175,7 @@
    ]
   },
   "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer": {
-   "fails": 3,
+   "fails": 4,
    "probed": "2026-10-30",
    "retry": false,
    "sig": "https://services.thelist.tas.gov.au/arcgis/rest/services/Public/WildFisheries/MapServer|Public/WildFisheries|services.thelist.tas.gov.au|||",
@@ -3092,7 +3268,7 @@
    ]
   },
   "https://services1.arcgis.com/utVR6GjejYAZciWt/arcgis/rest/services/Schools Buffer Mallo/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services1.arcgis.com/utVR6GjejYAZciWt/arcgis/rest/services/Schools Buffer Mallo/FeatureServer|Schools Buffer Mallo|||ArcGIS Online search for Mallo Trail BLM Recreation Management Area (owner mcmaher)|",
@@ -3101,9 +3277,9 @@
    ]
   },
   "https://services1.arcgis.com/uujCiiEZAflDbdxE/arcgis/rest/services/Red Rocks Insta360 Video/FeatureServer": {
-   "fails": 2,
+   "fails": 3,
    "probed": "2026-10-30",
-   "retry": true,
+   "retry": false,
    "sig": "https://services1.arcgis.com/uujCiiEZAflDbdxE/arcgis/rest/services/Red Rocks Insta360 Video/FeatureServer|Red Rocks Insta360 Oriented Imagery Video|||ArcGIS Online search for Red Rocks State Historic Site (owner bconnolly_IVT5)|",
    "verdicts": [
     "RETRY"
@@ -3145,7 +3321,7 @@
    ]
   },
   "https://services2.arcgis.com/1RKb5IC5HFxsUYMS/arcgis/rest/services/Chickasaw Nation/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services2.arcgis.com/1RKb5IC5HFxsUYMS/arcgis/rest/services/Chickasaw Nation/FeatureServer|Chickasaw Nation|||ArcGIS Online search for Chickasaw Wildlife Management Area (owner okdps_workforce)|",
@@ -3540,18 +3716,18 @@
    ]
   },
   "https://services2.arcgis.com/VNo0ht0YPXJoI4oE/arcgis/rest/services/Travel from Jessie's Office (45 Minutes - Mon@1730)/FeatureServer": {
-   "fails": 2,
+   "fails": 3,
    "probed": "2026-10-30",
-   "retry": true,
+   "retry": false,
    "sig": "https://services2.arcgis.com/VNo0ht0YPXJoI4oE/arcgis/rest/services/Travel from Jessie's Office (45 Minutes - Mon@1730)/FeatureServer|Travel from Jessie's Office (45 Minutes - Mon@1730)|||ArcGIS Online search for Lake Jessie State Historic Site (owner paccetturo)|",
    "verdicts": [
     "RETRY"
    ]
   },
   "https://services2.arcgis.com/VNo0ht0YPXJoI4oE/arcgis/rest/services/Travel from Jessie's Office (45 Minutes - no traffic)/FeatureServer": {
-   "fails": 2,
+   "fails": 3,
    "probed": "2026-10-30",
-   "retry": true,
+   "retry": false,
    "sig": "https://services2.arcgis.com/VNo0ht0YPXJoI4oE/arcgis/rest/services/Travel from Jessie's Office (45 Minutes - no traffic)/FeatureServer|Travel from Jessie's Office (45 Minutes - no traffic)|||ArcGIS Online search for Lake Jessie State Historic Site (owner paccetturo)|",
    "verdicts": [
     "RETRY"
@@ -3666,9 +3842,9 @@
    ]
   },
   "https://services2.arcgis.com/eEZvYWeDAf8dVYvQ/arcgis/rest/services/Lieber/FeatureServer": {
-   "fails": 2,
+   "fails": 3,
    "probed": "2026-10-30",
-   "retry": true,
+   "retry": false,
    "sig": "https://services2.arcgis.com/eEZvYWeDAf8dVYvQ/arcgis/rest/services/Lieber/FeatureServer|Lieber|||ArcGIS Online search for Lieber State Recreation Area (owner humanum)|",
    "verdicts": [
     "RETRY"
@@ -3767,7 +3943,7 @@
    ]
   },
   "https://services2.arcgis.com/tq962RLzFDqUbUrN/arcgis/rest/services/LittleMissouriRiver_Analysis_line/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services2.arcgis.com/tq962RLzFDqUbUrN/arcgis/rest/services/LittleMissouriRiver_Analysis_line/FeatureServer|Little Missouri River|||ArcGIS Online search for Little Missouri River Access State Recreation Area (owner rm_geoplanner)|",
@@ -4121,7 +4297,7 @@
    ]
   },
   "https://services4.arcgis.com/9lICIlhSEuRFezSF/arcgis/rest/services/Southwest Asia All data/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services4.arcgis.com/9lICIlhSEuRFezSF/arcgis/rest/services/Southwest Asia All data/FeatureServer|Layer: Southwest Asia All Data|||ArcGIS Online search for Southwest Trail State Trail (owner GaDOE_SocialStudies_Atlas)|",
@@ -4139,18 +4315,18 @@
    ]
   },
   "https://services4.arcgis.com/ctnv3S90gv4qdwQ1/arcgis/rest/services/Bog Brook Road to Bog Pond Snowmobile Trail 35 Foot Right-Of-Way/FeatureServer": {
-   "fails": 2,
+   "fails": 3,
    "probed": "2026-10-30",
-   "retry": true,
+   "retry": false,
    "sig": "https://services4.arcgis.com/ctnv3S90gv4qdwQ1/arcgis/rest/services/Bog Brook Road to Bog Pond Snowmobile Trail 35 Foot Right-Of-Way/FeatureServer|Bog Brook Road to Bog Pond Snowmobile Trail 35 Foot Right-Of-Way|||ArcGIS Online search for Bog Brook Wildlife Management Area (owner awilson_linwood)|",
    "verdicts": [
     "RETRY"
    ]
   },
   "https://services4.arcgis.com/ctnv3S90gv4qdwQ1/arcgis/rest/services/Bog Brook Road to Lost River Self Storage 35 Foot Right-Of-Way/FeatureServer": {
-   "fails": 2,
+   "fails": 3,
    "probed": "2026-10-30",
-   "retry": true,
+   "retry": false,
    "sig": "https://services4.arcgis.com/ctnv3S90gv4qdwQ1/arcgis/rest/services/Bog Brook Road to Lost River Self Storage 35 Foot Right-Of-Way/FeatureServer|Bog Brook Road to Lost River Self Storage 35 Foot Right-Of-Way|||ArcGIS Online search for Bog Brook Wildlife Management Area (owner awilson_linwood)|",
    "verdicts": [
     "RETRY"
@@ -4479,7 +4655,7 @@
    ]
   },
   "https://services5.arcgis.com/xrfXlDMHLr5elsRb/arcgis/rest/services/Eagle_Harbor_Township_Recreation_Area/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services5.arcgis.com/xrfXlDMHLr5elsRb/arcgis/rest/services/Eagle_Harbor_Township_Recreation_Area/FeatureServer|Eagle Harbor Township Recreation Area|||ArcGIS Online search for Eagle Harbor State Harbor (owner KeweenawCVB)|",
@@ -4540,7 +4716,7 @@
    ]
   },
   "https://services6.arcgis.com/BAJNi3EgCdtQ1BCG/arcgis/rest/services/Amory Port NorthProperty Outline Publish185/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services6.arcgis.com/BAJNi3EgCdtQ1BCG/arcgis/rest/services/Amory Port NorthProperty Outline Publish185/FeatureServer|Amory Port North- property Outline|||ArcGIS Online search for Amory Recreation Area State Recreation Area (owner recruit_giswebtech)|",
@@ -4549,7 +4725,7 @@
    ]
   },
   "https://services6.arcgis.com/BAJNi3EgCdtQ1BCG/arcgis/rest/services/Amory Port SouthProperty Outline Publish185/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services6.arcgis.com/BAJNi3EgCdtQ1BCG/arcgis/rest/services/Amory Port SouthProperty Outline Publish185/FeatureServer|Amory Port South- property Outline|||ArcGIS Online search for Amory Recreation Area State Recreation Area (owner recruit_giswebtech)|",
@@ -4661,9 +4837,9 @@
    ]
   },
   "https://services6.arcgis.com/UbKyMceXgEVeTOEF/arcgis/rest/services/Captain_John_Smith_Chesapeake_National_Historic_Trail/FeatureServer": {
-   "fails": 2,
+   "fails": 3,
    "probed": "2026-10-30",
-   "retry": true,
+   "retry": false,
    "sig": "https://services6.arcgis.com/UbKyMceXgEVeTOEF/arcgis/rest/services/Captain_John_Smith_Chesapeake_National_Historic_Trail/FeatureServer|Captain John Smith Chesapeake National Historic Trail|||ArcGIS Online search for Captain John Smith Chesapeake National Historic Trail (owner ccherava)|",
    "verdicts": [
     "RETRY"
@@ -4776,18 +4952,18 @@
    ]
   },
   "https://services6.arcgis.com/p1YcgwPVVSqE29MG/arcgis/rest/services/Cypremort_Point_State_Park/FeatureServer": {
-   "fails": 2,
+   "fails": 3,
    "probed": "2026-10-30",
-   "retry": true,
+   "retry": false,
    "sig": "https://services6.arcgis.com/p1YcgwPVVSqE29MG/arcgis/rest/services/Cypremort_Point_State_Park/FeatureServer|Cypremort_Point_State_Park|||ArcGIS Online search for Cypremort Point State Park (owner lastateparks)|",
    "verdicts": [
     "RETRY"
    ]
   },
   "https://services6.arcgis.com/p1YcgwPVVSqE29MG/arcgis/rest/services/Jimmie_Davis_State_Park/FeatureServer": {
-   "fails": 2,
+   "fails": 3,
    "probed": "2026-10-30",
-   "retry": true,
+   "retry": false,
    "sig": "https://services6.arcgis.com/p1YcgwPVVSqE29MG/arcgis/rest/services/Jimmie_Davis_State_Park/FeatureServer|Jimmie_Davis_State_Park|||ArcGIS Online search for Jimmie Davis State Park (owner lastateparks)|",
    "verdicts": [
     "RETRY"
@@ -4821,18 +4997,18 @@
    ]
   },
   "https://services6.arcgis.com/v4iVHCxJx9aueHAS/arcgis/rest/services/Iceland_Honeymoon_2024_WFL/FeatureServer": {
-   "fails": 2,
+   "fails": 3,
    "probed": "2026-10-30",
-   "retry": true,
+   "retry": false,
    "sig": "https://services6.arcgis.com/v4iVHCxJx9aueHAS/arcgis/rest/services/Iceland_Honeymoon_2024_WFL/FeatureServer|Iceland Honeymoon 2024_WFL|||ArcGIS Online search for Honeymoon Historic Trail National Historic Trail (owner brokell)|",
    "verdicts": [
     "RETRY"
    ]
   },
   "https://services6.arcgis.com/v4iVHCxJx9aueHAS/arcgis/rest/services/Iceland_Honeymoon_2024_WFL1/FeatureServer": {
-   "fails": 2,
+   "fails": 3,
    "probed": "2026-10-30",
-   "retry": true,
+   "retry": false,
    "sig": "https://services6.arcgis.com/v4iVHCxJx9aueHAS/arcgis/rest/services/Iceland_Honeymoon_2024_WFL1/FeatureServer|Iceland Honeymoon 2024_WFL1|||ArcGIS Online search for Honeymoon Historic Trail National Historic Trail (owner brokell)|",
    "verdicts": [
     "RETRY"
@@ -4919,9 +5095,9 @@
    ]
   },
   "https://services7.arcgis.com/V2n9y2bh8WyGKmfd/arcgis/rest/services/Little_Turtle_WFL1/FeatureServer": {
-   "fails": 2,
+   "fails": 3,
    "probed": "2026-10-30",
-   "retry": true,
+   "retry": false,
    "sig": "https://services7.arcgis.com/V2n9y2bh8WyGKmfd/arcgis/rest/services/Little_Turtle_WFL1/FeatureServer|Little Turtle_WFL1|||ArcGIS Online search for Little Turtle State Recreation Area (owner Steven.Wahweotten_Pokagon)|",
    "verdicts": [
     "RETRY"
@@ -4974,18 +5150,18 @@
    ]
   },
   "https://services7.arcgis.com/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields (time-enabled)/FeatureServer": {
-   "fails": 2,
+   "fails": 3,
    "probed": "2026-10-30",
-   "retry": true,
+   "retry": false,
    "sig": "https://services7.arcgis.com/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields (time-enabled)/FeatureServer|Civil War Battlefields (time-enabled)|||ArcGIS Online search for African American Civil War National Memorial (owner mm.sappleton)|",
    "verdicts": [
     "RETRY"
    ]
   },
   "https://services7.arcgis.com/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields Plus/FeatureServer": {
-   "fails": 2,
+   "fails": 3,
    "probed": "2026-10-30",
-   "retry": true,
+   "retry": false,
    "sig": "https://services7.arcgis.com/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields Plus/FeatureServer|Civil War Battlefields|||ArcGIS Online search for African American Civil War National Memorial (owner mm.atlas)|",
    "verdicts": [
     "RETRY"
@@ -5138,7 +5314,7 @@
    ]
   },
   "https://services8.arcgis.com/KGBGlBOYYCt9pths/arcgis/rest/services/Flint_River/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services8.arcgis.com/KGBGlBOYYCt9pths/arcgis/rest/services/Flint_River/FeatureServer|Flint River|||ArcGIS Online search for Flint State Park (owner mforde2_NatMathSci)|",
@@ -5235,7 +5411,7 @@
    ]
   },
   "https://services8.arcgis.com/hXvEEDqm4wdlfwhu/arcgis/rest/services/Escanaba_RSX/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services8.arcgis.com/hXvEEDqm4wdlfwhu/arcgis/rest/services/Escanaba_RSX/FeatureServer|Escanaba_RSX|||ArcGIS Online search for Escanaba River State Forest (owner kthomastu)|",
@@ -5244,7 +5420,7 @@
    ]
   },
   "https://services8.arcgis.com/jyRjbKRFHP2c3g5n/arcgis/rest/services/PARCELS_Lone_Rock_Ranch/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services8.arcgis.com/jyRjbKRFHP2c3g5n/arcgis/rest/services/PARCELS_Lone_Rock_Ranch/FeatureServer|PARCELS Lone Rock Ranch|||ArcGIS Online search for Lone Rock BLM Recreation Management Area (owner rat9045)|",
@@ -5271,9 +5447,9 @@
    ]
   },
   "https://services9.arcgis.com/4ikJ2iF3itbByOVD/arcgis/rest/services/Lincoln_forestplan_alts_wilderness_AltE/FeatureServer": {
-   "fails": 2,
+   "fails": 3,
    "probed": "2026-10-30",
-   "retry": true,
+   "retry": false,
    "sig": "https://services9.arcgis.com/4ikJ2iF3itbByOVD/arcgis/rest/services/Lincoln_forestplan_alts_wilderness_AltE/FeatureServer|Lincoln_forestplan_alts_wilderness_AltE|||ArcGIS Online search for Lincoln State Historic Site (owner rob.lavie_EMPSI)|",
    "verdicts": [
     "RETRY"
@@ -5308,9 +5484,9 @@
    ]
   },
   "https://services9.arcgis.com/BPqQmonW4XsiPHS3/arcgis/rest/services/Spencer_Ramp_Sidewalk/FeatureServer": {
-   "fails": 2,
+   "fails": 3,
    "probed": "2026-10-30",
-   "retry": true,
+   "retry": false,
    "sig": "https://services9.arcgis.com/BPqQmonW4XsiPHS3/arcgis/rest/services/Spencer_Ramp_Sidewalk/FeatureServer|Spencer_Ramp_Sidewalk|||ArcGIS Online search for Spencer County State Forest (owner WCundiff@SpencerMA.gov)|",
    "verdicts": [
     "RETRY"
@@ -5447,7 +5623,7 @@
    ]
   },
   "https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0": {
-   "fails": 9,
+   "fails": 10,
    "probed": "2026-10-30",
    "retry": false,
    "sig": "https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0|My favorite camping spots (a hobby map)|hobby account (personal map)||test row (h): a made-up hobby layer on a non-government account; the bot marks it RETRY (did not open) and after three runs sends the url to chat 9; a real hobby layer that opens is REJECT (not official)|REJECT or did-not-open",
@@ -5456,16 +5632,16 @@
    ]
   },
   "https://services9.arcgis.com/soy9dtLUh5hYXg8U/arcgis/rest/services/FNST Master/FeatureServer": {
-   "fails": 2,
+   "fails": 3,
    "probed": "2026-10-30",
-   "retry": true,
+   "retry": false,
    "sig": "https://services9.arcgis.com/soy9dtLUh5hYXg8U/arcgis/rest/services/FNST Master/FeatureServer|Florida National Scenic Trail Line|||ArcGIS Online search for Florida Trail National Scenic Trail (owner FloridaTrailAssociation)|",
    "verdicts": [
     "RETRY"
    ]
   },
   "https://services9.arcgis.com/yLH7EZZOcLJAgxVh/arcgis/rest/services/alltrailsshp/FeatureServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://services9.arcgis.com/yLH7EZZOcLJAgxVh/arcgis/rest/services/alltrailsshp/FeatureServer|Sugarloaf Mountain Trails|||ArcGIS Online search for Sugarloaf Mountain State Recreation Area (owner sugarloaf46)|",
@@ -5632,9 +5808,9 @@
    ]
   },
   "https://tiles.arcgis.com/tiles/V2n9y2bh8WyGKmfd/arcgis/rest/services/Little_Turtle_WTL1/MapServer": {
-   "fails": 2,
+   "fails": 3,
    "probed": "2026-10-30",
-   "retry": true,
+   "retry": false,
    "sig": "https://tiles.arcgis.com/tiles/V2n9y2bh8WyGKmfd/arcgis/rest/services/Little_Turtle_WTL1/MapServer|Little Turtle_WTL1|||ArcGIS Online search for Little Turtle State Recreation Area (owner Steven.Wahweotten_Pokagon)|",
    "verdicts": [
     "RETRY"
@@ -5666,7 +5842,7 @@
    ]
   },
   "https://tiles.arcgis.com/tiles/YpWVqIbOT80sKVHP/arcgis/rest/services/2005_US_Civil_War_Map_WM/MapServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://tiles.arcgis.com/tiles/YpWVqIbOT80sKVHP/arcgis/rest/services/2005_US_Civil_War_Map_WM/MapServer|2005 US Civil War Map (Web Mercator)|||ArcGIS Online search for Civil War Trail State Trail (owner ericjanota)|",
@@ -5825,7 +6001,7 @@
    ]
   },
   "https://utility.arcgis.com/usrsvcs/servers/18b2fd714fb74dbab4891e71f9120aea/rest/services/Basemaps/SantiamAerial/MapServer": {
-   "fails": 1,
+   "fails": 2,
    "probed": "2026-10-30",
    "retry": true,
    "sig": "https://utility.arcgis.com/usrsvcs/servers/18b2fd714fb74dbab4891e71f9120aea/rest/services/Basemaps/SantiamAerial/MapServer|Oregon Dept of Forestry - Santiam Aerials|||ArcGIS Online search for Santiam State Forest (owner Marion_County)|",
@@ -5835,17 +6011,17 @@
   }
  },
  "stat": {
-  "ask": 43,
-  "did_not_open": 127,
+  "ask": 7,
+  "did_not_open": 178,
   "live_only": 0,
-  "probed": 441,
+  "probed": 259,
   "ready": 0,
-  "reject": 264,
-  "retry": 127,
+  "reject": 72,
+  "retry": 178,
   "rows": 898,
-  "skipped_fresh": 338,
+  "skipped_fresh": 510,
   "tests_miss": 0,
   "tests_ok": 2,
-  "water_only": 7
+  "water_only": 2
  }
 }
