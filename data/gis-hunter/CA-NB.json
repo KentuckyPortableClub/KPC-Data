@@ -5,6 +5,7 @@
  "parks": {
   "CA-0448": {
    "park": "Roosevelt Campobello International Park",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -22,6 +23,7 @@
   },
   "CA-0776": {
    "park": "North Head Park Recreation Park",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -39,28 +41,10 @@
   },
   "CA-0782": {
    "park": "Lakeside Recreation Park",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
-   "leads": [
-    {
-     "title": "Lakeside, ON - May 16, 2025 - Drone Flight Paths",
-     "url": "https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/Lakeside_Drone_Flight_Paths/FeatureServer",
-     "owner": "ajaffe22_eng",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Lakeside, ON - May 16, 2025 - Drone Photos",
-     "url": "https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/Lakeside_ON_Drone_Photos/FeatureServer",
-     "owner": "ajaffe22_eng",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Lakeside, ON - May 16, 2025 - Survey Route",
-     "url": "https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/LakesideON_Survey_Route/FeatureServer",
-     "owner": "ajaffe22_eng",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A NB WMZ: no answer (404)",
     "A NB-PP Govern: no polygon at the pin",
@@ -69,12 +53,13 @@
     "A New Brunswic~2: no answer (404)",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"lakeside\": 7 lead(s)"
+    "B ArcGIS Online search \"lakeside\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-0783": {
    "park": "MacNichol-Orser Conservation Easement Natural Area",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -92,6 +77,7 @@
   },
   "CA-0785": {
    "park": "Mary's Point Ramsar Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [
     {
@@ -100,7 +86,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 22296,
      "record_name": "Shepody National Wildlife Area",
-     "acres_approx": 2575
+     "acres_approx": 2575,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -113,10 +101,11 @@
     "A CPCAD / Parks Canada: hit",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-0787": {
    "park": "Middle Island Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -134,28 +123,10 @@
   },
   "CA-0794": {
    "park": "Shea Lake Natural Area",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
-   "leads": [
-    {
-     "title": "Tussock_Within_Buffers_Shea",
-     "url": "https://services2.arcgis.com/s4BHXC1DIySGIjoG/arcgis/rest/services/Tussock_Within_Buffers_Shea/FeatureServer",
-     "owner": "lperetz_wesleyan",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Mrs_Shea Trash Collection",
-     "url": "https://services4.arcgis.com/F3r6faJEFz95LR6M/arcgis/rest/services/Mrs_Shea_Trash_Collection/FeatureServer",
-     "owner": "jennifer_vadnais@redlandsschools.net_RedlandsUSD",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Shea_Hamblin_Health_Index",
-     "url": "https://services.arcgis.com/QI0dObYawrKkuwDp/arcgis/rest/services/Shea_Hamblin_Health_Index/FeatureServer",
-     "owner": "sheahamblin",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A NB WMZ: no answer (404)",
     "A NB-PP Govern: no polygon at the pin",
@@ -164,12 +135,13 @@
     "A New Brunswic~2: no answer (404)",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"shea\": 4 lead(s)"
+    "B ArcGIS Online search \"shea\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-0797": {
    "park": "Tetagouche Falls Recreation Park",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -187,6 +159,7 @@
   },
   "CA-0800": {
    "park": "Youghall Beach Recreation Park",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -204,28 +177,10 @@
   },
   "CA-1231": {
    "park": "Daly Point Nature Reserve",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
-   "leads": [
-    {
-     "title": "Daly_Point_Areas_of_Interest",
-     "url": "https://services.arcgis.com/036S6vZ8Km7lO7Hl/arcgis/rest/services/Daly_Point_Areas_of_Interest/FeatureServer",
-     "owner": "Gordon_Dixon",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Daly_Point_Trails",
-     "url": "https://services.arcgis.com/036S6vZ8Km7lO7Hl/arcgis/rest/services/Daly_Point_Trails/FeatureServer",
-     "owner": "Gordon_Dixon",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Daly_Point_Boundary",
-     "url": "https://services.arcgis.com/036S6vZ8Km7lO7Hl/arcgis/rest/services/Daly_Point_Boundary/FeatureServer",
-     "owner": "Gordon_Dixon",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A NB WMZ: no answer (404)",
     "A NB-PP Govern: no polygon at the pin",
@@ -234,12 +189,13 @@
     "A New Brunswic~2: no answer (404)",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"point daly\": 4 lead(s)"
+    "B ArcGIS Online search \"point daly\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-1239": {
    "park": "Grindstone Island Conservation Nature Reserve",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -257,22 +213,10 @@
   },
   "CA-1240": {
    "park": "Hyla Park Nature Reserve",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
-   "leads": [
-    {
-     "title": "Potential Hyla versicolor PVC Study Sites_WFL1",
-     "url": "https://services1.arcgis.com/YiULsZbgRKmBtdZN/arcgis/rest/services/Potential_Hyla_versicolor_PVC_Study_Sites_WFL1/FeatureServer",
-     "owner": "mrgorton@uvm.edu_UVM",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Gray Treefrog (Hyla versicolor)",
-     "url": "https://services1.arcgis.com/O7h3OCRVxKceyg19/arcgis/rest/services/Gray Treefrog (Hyla versicolor)/FeatureServer",
-     "owner": "nelso527_UWM",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A NB WMZ: no answer (404)",
     "A NB-PP Govern: no polygon at the pin",
@@ -281,12 +225,13 @@
     "A New Brunswic~2: no answer (404)",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"hyla\": 2 lead(s)"
+    "B ArcGIS Online search \"hyla\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-1242": {
    "park": "James C. Yerxa Nature Reserve",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -304,6 +249,7 @@
   },
   "CA-1248": {
    "park": "Pagan Point Nature Reserve",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -315,34 +261,16 @@
     "A New Brunswic~2: no answer (404)",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"pagan point\": 0 lead(s)"
+    "B ArcGIS Online search \"point pagan\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "CA-1251": {
    "park": "Rockwood Park Nature Reserve",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
-   "leads": [
-    {
-     "title": "Rockwood Sensitive Area",
-     "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/RSA/FeatureServer",
-     "owner": "Manitoba_Government",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Rockwood PUD - Service Area Outline",
-     "url": "https://services5.arcgis.com/3DoY8p7EnUTzaIE7/arcgis/rest/services/Rockwood_PUD_Line/FeatureServer",
-     "owner": "Fairview1908",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Rockwood_Boundary",
-     "url": "https://services5.arcgis.com/3DoY8p7EnUTzaIE7/arcgis/rest/services/Rockwood_Boundary/FeatureServer",
-     "owner": "Fairview1908",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A NB WMZ: no answer (404)",
     "A NB-PP Govern: no polygon at the pin",
@@ -351,34 +279,16 @@
     "A New Brunswic~2: no answer (404)",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"rockwood\": 4 lead(s)"
+    "B ArcGIS Online search \"rockwood\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-1255": {
    "park": "Sugar Island Nature Reserve",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
-   "leads": [
-    {
-     "title": "UMBS Osborn Preserve on Sugar Island: historic map",
-     "url": "https://services1.arcgis.com/4ezfu5dIwH83BUNL/arcgis/rest/services/UMBS_Osborn_Preserve_on_Sugar_Island_WFL1/FeatureServer",
-     "owner": "jtallant_umich",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Landcover Osborn Preserve circa 1930s for UMBS on Sugar Island ",
-     "url": "https://services1.arcgis.com/4ezfu5dIwH83BUNL/arcgis/rest/services/Landcover_Osborn_Preserve_circa_1930s_for_UMBS_on_Sugar_Island_/FeatureServer",
-     "owner": "jtallant_umich",
-     "type": "Feature Service"
-    },
-    {
-     "title": "UMBS Osborn Preserve on Sugar Island_WTL1",
-     "url": "https://tiles.arcgis.com/tiles/4ezfu5dIwH83BUNL/arcgis/rest/services/UMBS_Osborn_Preserve_on_Sugar_Island_WTL1/MapServer",
-     "owner": "jtallant_umich",
-     "type": "Map Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A NB WMZ: no answer (404)",
     "A NB-PP Govern: no polygon at the pin",
@@ -387,12 +297,13 @@
     "A New Brunswic~2: no answer (404)",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"island sugar\": 3 lead(s)"
+    "B ArcGIS Online search \"island sugar\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-4355": {
    "park": "Bantalor Protected Area",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -410,6 +321,7 @@
   },
   "CA-4438": {
    "park": "Martial Brook Protected Area",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [
     {
@@ -418,7 +330,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 3177,
      "record_name": "Magaguadavic River",
-     "acres_approx": 5145
+     "acres_approx": 5145,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -431,10 +345,11 @@
     "A CPCAD / Parks Canada: hit",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-4444": {
    "park": "McCoy Brook Protected Area",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [
     {
@@ -443,7 +358,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 3663,
      "record_name": "4021400",
-     "acres_approx": 1808
+     "acres_approx": 1808,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -456,10 +373,11 @@
     "A CPCAD / Parks Canada: hit",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-4463": {
    "park": "Notre-Dame-de l'assompton Monument Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -477,6 +395,7 @@
   },
   "CA-4493": {
    "park": "Portage Lakes Protected Area",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -494,28 +413,10 @@
   },
   "CA-4522": {
    "park": "Stony Brook Protected Area",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
-   "leads": [
-    {
-     "title": "Two Foot Topographic Contours - Stony Brook-Merrimack River (0107000612) - smoothed",
-     "url": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EDP_LiDAR_Contours_2ft_01070006_smooth/FeatureServer/14",
-     "owner": "NHGRANIT",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Stony_Brook_Watershed_Raster",
-     "url": "https://tiles.arcgis.com/tiles/nV0HyP5uKL48nAKr/arcgis/rest/services/Stony_Brook_Watershed_Raster/MapServer",
-     "owner": "jesse.robert_UMS",
-     "type": "Map Service"
-    },
-    {
-     "title": "Stony Brook Medicine Layers",
-     "url": "https://services2.arcgis.com/cPVqgcKAQtE6xCja/arcgis/rest/services/jhon9904_esri_com_healthgis_Stony_Brook_Medicine_Layers/FeatureServer",
-     "owner": "agent_demo",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A NB WMZ: no answer (404)",
     "A NB-PP Govern: no polygon at the pin",
@@ -524,12 +425,13 @@
     "A New Brunswic~2: no answer (404)",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"brook stony\": 3 lead(s)"
+    "B ArcGIS Online search \"brook stony\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-4809": {
    "park": "Boishebert Refuge National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -547,6 +449,7 @@
   },
   "CA-4810": {
    "park": "Carleton Martello Tower National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -564,6 +467,7 @@
   },
   "CA-4811": {
    "park": "Fort Beausejour & Fort Cumberland National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -575,12 +479,13 @@
     "A New Brunswic~2: no answer (404)",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"beausejour cumberland fort\": 0 lead(s)"
+    "B ArcGIS Online search \"cumberland beausejour fort\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "CA-4813": {
    "park": "La Coupe Dry Dock National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -598,6 +503,7 @@
   },
   "CA-4814": {
    "park": "Monument-Lefebvre National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -615,6 +521,7 @@
   },
   "CA-4815": {
    "park": "St. Andrews Blockhouse National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -632,6 +539,7 @@
   },
   "CA-4943": {
    "park": "Fort Nerepis National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -649,6 +557,7 @@
   },
   "CA-4944": {
    "park": "Fort Howe National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -660,12 +569,13 @@
     "A New Brunswic~2: no answer (404)",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"howe fort\": 0 lead(s)"
+    "B ArcGIS Online search \"fort howe\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "CA-5085": {
    "park": "Stonehammer UNESCO Global Geopark",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -677,12 +587,13 @@
     "A New Brunswic~2: no answer (404)",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"stonehammer geopark unesco\": 0 lead(s)"
+    "B ArcGIS Online search \"stonehammer geopark global\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "CA-5134": {
    "park": "Gateway Wetland Nature Trails Conservation Area",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -700,6 +611,7 @@
   },
   "CA-5135": {
    "park": "Sir Douglas Hazen Recreation Park",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -717,6 +629,7 @@
   },
   "CA-5136": {
    "park": "Fort Hughes Military Blockhouse National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -734,6 +647,7 @@
   },
   "CA-5137": {
    "park": "Thatch Road Trail (MacDougal) National Recreation Trail",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -751,6 +665,7 @@
   },
   "CA-5147": {
    "park": "1 Chipman Hill National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -768,6 +683,7 @@
   },
   "CA-5148": {
    "park": "Arts Building National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -785,6 +701,7 @@
   },
   "CA-5149": {
    "park": "Bayswater Lighthouse National Heritage Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -802,6 +719,7 @@
   },
   "CA-5155": {
    "park": "Chandler House / Rocklyn National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -819,6 +737,7 @@
   },
   "CA-5156": {
    "park": "Christ Church Anglican National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -830,34 +749,16 @@
     "A New Brunswic~2: no answer (404)",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"anglican church christ\": 0 lead(s)"
+    "B ArcGIS Online search \"anglican christ church\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "CA-5160": {
    "park": "Connell Park Recreation Park",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
-   "leads": [
-    {
-     "title": "J Connell Hazard",
-     "url": "https://services5.arcgis.com/yJIzOba1Y8CkuPt9/arcgis/rest/services/J_Connell_Hazard/FeatureServer",
-     "owner": "magno001",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Jo_Anna_Connell_CrimeSafetyIndex",
-     "url": "https://services5.arcgis.com/yJIzOba1Y8CkuPt9/arcgis/rest/services/Jo_Anna_Connell_CrimeSafetyIndex/FeatureServer",
-     "owner": "magno001",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Social Pinpoint O Connell ST Traffic Consultation",
-     "url": "https://services.arcgis.com/BzylpWnjWP0tW4nL/arcgis/rest/services/Social_Pinpoint_O_Connell_ST_Traffic_Consultation/FeatureServer",
-     "owner": "s.Henadeera_AdelaideCity",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A NB WMZ: no answer (404)",
     "A NB-PP Govern: no polygon at the pin",
@@ -866,12 +767,13 @@
     "A New Brunswic~2: no answer (404)",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"connell\": 3 lead(s)"
+    "B ArcGIS Online search \"connell\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-5162": {
    "park": "Coronation Park Recreation Park",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [
@@ -896,6 +798,7 @@
   },
   "CA-5163": {
    "park": "Denys Fort / Habitation National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -913,6 +816,7 @@
   },
   "CA-5169": {
    "park": "East Riverside Kingshurst Park Recreation Park",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -929,6 +833,7 @@
   },
   "CA-5171": {
    "park": "Ferris Street Forest and Wetland Nature Reserve",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -945,6 +850,7 @@
   },
   "CA-5172": {
    "park": "Fredericton Botanic Garden Conservation Area",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -961,6 +867,7 @@
   },
   "CA-5178": {
    "park": "George M Stirrett Nature Reserve",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -977,6 +884,7 @@
   },
   "CA-5179": {
    "park": "Greenock Church National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -993,6 +901,7 @@
   },
   "CA-5181": {
    "park": "Hammond River Park Nature Park",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1009,6 +918,7 @@
   },
   "CA-5183": {
    "park": "Hanwell Recreation Park",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1025,6 +935,7 @@
   },
   "CA-5184": {
    "park": "Henry Park Recreation Park",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1041,6 +952,7 @@
   },
   "CA-5185": {
    "park": "Imperial / Bi-Capitol Theatre National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1057,6 +969,7 @@
   },
   "CA-5189": {
    "park": "Kingsbrae Garden Conservation Area",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1073,6 +986,7 @@
   },
   "CA-5193": {
    "park": "Malloy Field Recreation Park",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1089,6 +1003,7 @@
   },
   "CA-5197": {
    "park": "Marine Hospital National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1105,6 +1020,7 @@
   },
   "CA-5198": {
    "park": "Marysville Cotton Mill National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1121,6 +1037,7 @@
   },
   "CA-5199": {
    "park": "Marysville Historic District National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1137,6 +1054,7 @@
   },
   "CA-5200": {
    "park": "McAdam Railway Station (Canadian Pacific) National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1153,6 +1071,7 @@
   },
   "CA-5210": {
    "park": "Number 2 Mechanics' Volunteer Company Engine House National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1169,6 +1088,7 @@
   },
   "CA-5213": {
    "park": "Ordnance Building National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1185,6 +1105,7 @@
   },
   "CA-5214": {
    "park": "Partridge Island Quarantine Station National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1201,6 +1122,7 @@
   },
   "CA-5215": {
    "park": "Prince William Streetscape National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1217,6 +1139,7 @@
   },
   "CA-5217": {
    "park": "Reading Street Park Recreation Park",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1233,6 +1156,7 @@
   },
   "CA-5220": {
    "park": "Rothesay Railway Station (European and North American) National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1249,6 +1173,7 @@
   },
   "CA-5221": {
    "park": "Saint John City Market National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1265,6 +1190,7 @@
   },
   "CA-5222": {
    "park": "Saint John County Court House National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1281,6 +1207,7 @@
   },
   "CA-5223": {
    "park": "Sand Point Lighthouse National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1297,6 +1224,7 @@
   },
   "CA-5227": {
    "park": "St. Andrews Historic District National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1313,6 +1241,7 @@
   },
   "CA-5228": {
    "park": "St. Luke's Anglican Church National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1329,6 +1258,7 @@
   },
   "CA-5230": {
    "park": "St. Stephen Post Office National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1345,6 +1275,7 @@
   },
   "CA-5232": {
    "park": "Tilley House National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1361,6 +1292,7 @@
   },
   "CA-5233": {
    "park": "Mahsusuwi-monihkuk Nature Reserve",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1377,6 +1309,7 @@
   },
   "CA-5234": {
    "park": "Tonge's Island National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1393,6 +1326,7 @@
   },
   "CA-5236": {
    "park": "William Brydone Jack Observatory National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1409,6 +1343,7 @@
   },
   "CA-5238": {
    "park": "Belmont House / R. Wilmot Home National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1425,6 +1360,7 @@
   },
   "CA-5239": {
    "park": "Charlotte County Court House National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1441,6 +1377,7 @@
   },
   "CA-5241": {
    "park": "Fort Jemseg National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1457,6 +1394,7 @@
   },
   "CA-5242": {
    "park": "Fort La Tour National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1473,6 +1411,7 @@
   },
   "CA-5245": {
    "park": "Hartland Covered Bridge National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1489,6 +1428,7 @@
   },
   "CA-5246": {
    "park": "Loyalist House National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1505,6 +1445,7 @@
   },
   "CA-5247": {
    "park": "Mehtawtik (Meductic) Village National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1521,6 +1462,7 @@
   },
   "CA-5249": {
    "park": "Blackville Recreation Park",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1537,6 +1479,7 @@
   },
   "CA-5252": {
    "park": "Burton Park Recreation Park",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1553,6 +1496,7 @@
   },
   "CA-5255": {
    "park": "Ecological Park of the Acadian Peninsula Ecological Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1569,6 +1513,7 @@
   },
   "CA-5258": {
    "park": "Killarney Lake Park Recreation Park",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1585,6 +1530,7 @@
   },
   "CA-5262": {
    "park": "Metepenagiag Heritage Park National Heritage Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1601,6 +1547,7 @@
   },
   "CA-5264": {
    "park": "O'Connell Park Recreation Park",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1617,6 +1564,7 @@
   },
   "CA-5265": {
    "park": "Princess Louise Park Recreation Park",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1633,6 +1581,7 @@
   },
   "CA-5267": {
    "park": "Rotary Memorial Park Recreation Park",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1649,6 +1598,7 @@
   },
   "CA-5268": {
    "park": "Rotary Nature Park",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1665,6 +1615,7 @@
   },
   "CA-5270": {
    "park": "St. John's Anglican Church / Stone Church National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1681,6 +1632,7 @@
   },
   "CA-5271": {
    "park": "Sussex Nature Walkway Conservation Area",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1697,6 +1649,7 @@
   },
   "CA-5274": {
    "park": "Wolastoq Park National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1713,6 +1666,7 @@
   },
   "CA-5545": {
    "park": "Trinity Royal Heritage Conservation Area",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1729,6 +1683,7 @@
   },
   "CA-5672": {
    "park": "Bi-Centennial Park Recreation Park",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1745,6 +1700,7 @@
   },
   "CA-5674": {
    "park": "Chatham Waterfront Trail Recreation Park",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1761,6 +1717,7 @@
   },
   "CA-5678": {
    "park": "Deer Park Recreation Park",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1777,6 +1734,7 @@
   },
   "CA-5686": {
    "park": "Gondola Point Beach Recreation Park",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1793,6 +1751,7 @@
   },
   "CA-5688": {
    "park": "Hillside Trail National Scenic Trail",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1809,6 +1768,7 @@
   },
   "CA-5691": {
    "park": "Jervis Bay-Ross Memorial Park Natural Monument",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1825,6 +1785,7 @@
   },
   "CA-5693": {
    "park": "King's Square (Founding of New Brunswick) National Heritage Area",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1841,6 +1802,7 @@
   },
   "CA-5699": {
    "park": "United Empire Loyalists Burial Ground Natural Monument",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1857,6 +1819,7 @@
   },
   "CA-5702": {
    "park": "Matthew's Cove Park",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1873,6 +1836,7 @@
   },
   "CA-5703": {
    "park": "Meenan's Cove Park",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1889,6 +1853,7 @@
   },
   "CA-5704": {
    "park": "Mispec Park Recreation Park",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1905,6 +1870,7 @@
   },
   "CA-5706": {
    "park": "Pines Conservation Park National Heritage Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1921,6 +1887,7 @@
   },
   "CA-5707": {
    "park": "Pte. David Robert Greenslade Peace Park Recreation Park",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1937,6 +1904,7 @@
   },
   "CA-5708": {
    "park": "Public Gardens (Saint John) Recreation Park",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1953,6 +1921,7 @@
   },
   "CA-5711": {
    "park": "Queen Square (St. John) Recreation Park",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1969,6 +1938,7 @@
   },
   "CA-5726": {
    "park": "Trinity Church and Rectory National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -1985,6 +1955,7 @@
   },
   "CA-6102": {
    "park": "Oxbow National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2001,6 +1972,7 @@
   },
   "CA-6106": {
    "park": "Our Lady of the Assumption Cathedral National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2017,6 +1989,7 @@
   },
   "CA-6113": {
    "park": "St. John/Wolastoq Heritage River National Heritage Area",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2033,6 +2006,7 @@
   },
   "CA-6218": {
    "park": "Saint John Harbour Defensive Network provincial Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2049,6 +2023,7 @@
   },
   "CA-6235": {
    "park": "Victoria County Court House Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2065,6 +2040,7 @@
   },
   "CA-6236": {
    "park": "P'tit Sault Blockhouse Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2081,6 +2057,7 @@
   },
   "CA-6237": {
    "park": "Église Saint-Pierre-aux-Liens Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2097,6 +2074,7 @@
   },
   "CA-6239": {
    "park": "Old Bathurst Post Office Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2113,6 +2091,7 @@
   },
   "CA-6240": {
    "park": "CN Railways (Intercolonial Railway) Station Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2129,6 +2108,7 @@
   },
   "CA-6241": {
    "park": "Old Carleton County Courthouse Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2145,6 +2125,7 @@
   },
   "CA-6242": {
    "park": "Church of Saint Andrew & Saint David Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2161,6 +2142,7 @@
   },
   "CA-6243": {
    "park": "Kings County Courthouse Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2177,6 +2159,7 @@
   },
   "CA-6244": {
    "park": "St. Paul's Anglican Church Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2193,6 +2176,7 @@
   },
   "CA-6245": {
    "park": "Fort Tipperary Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2209,6 +2193,7 @@
   },
   "CA-6246": {
    "park": "St. David's Presbyterian Church Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2225,6 +2210,7 @@
   },
   "CA-6247": {
    "park": "Mineral Free Baptist Meetinghouse Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2241,6 +2227,7 @@
   },
   "CA-6248": {
    "park": "Coverdale United Church Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2257,6 +2244,7 @@
   },
   "CA-6254": {
    "park": "Gabriel Girard Provincial Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2273,6 +2261,7 @@
   },
   "CA-6312": {
    "park": "Larry's Gulch Lodge Provincial Park",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2289,6 +2278,7 @@
   },
   "CA-6376": {
    "park": "Ortho Robichaud Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2305,6 +2295,7 @@
   },
   "CA-6379": {
    "park": "St. Peters & St. Pauls Church Provincial Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2321,6 +2312,7 @@
   },
   "CA-6380": {
    "park": "Convent of the Immaculate Conception Provincial Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2337,6 +2329,7 @@
   },
   "CA-6384": {
    "park": "Kingston Historic District Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2353,6 +2346,7 @@
   },
   "CA-6385": {
    "park": "Vieille Église de Saint-Henri de Barachois Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2369,6 +2363,7 @@
   },
   "CA-6386": {
    "park": "Beaverbrook House Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2385,6 +2380,7 @@
   },
   "CA-6387": {
    "park": "Saint-Antoine l'Ermite Church Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2401,6 +2397,7 @@
   },
   "CA-6388": {
    "park": "Dobson Recreational Trail Recreation Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2417,6 +2414,7 @@
   },
   "CA-6391": {
    "park": "Escuminac Disaster Monument Provincial Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2433,6 +2431,7 @@
   },
   "CA-6392": {
    "park": "French Fort Cove Nature Recreation Area",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2449,6 +2448,7 @@
   },
   "CA-6393": {
    "park": "Pointe-aux-Pères Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2465,6 +2465,7 @@
   },
   "CA-6394": {
    "park": "St. Lawrence Anglican Church Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2481,6 +2482,7 @@
   },
   "CA-6400": {
    "park": "Seal Cove Smoked Herring Stands National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2497,6 +2499,7 @@
   },
   "CA-6428": {
    "park": "Campbell Carriage Factory Museum Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2513,6 +2516,7 @@
   },
   "CA-6434": {
    "park": "Morice's Mill Pond Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2529,6 +2533,7 @@
   },
   "CA-6435": {
    "park": "Charlotte County Goal Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2545,6 +2550,7 @@
   },
   "CA-6436": {
    "park": "Hampton Goal (Jail) Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2561,6 +2567,7 @@
   },
   "CA-6441": {
    "park": "Cathedral of the Immaculate Conception Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2577,6 +2584,7 @@
   },
   "CA-6442": {
    "park": "Saint John the Baptist Anglican Church Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2593,6 +2601,7 @@
   },
   "CA-6443": {
    "park": "Edmundston CPR Station Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2609,6 +2618,7 @@
   },
   "CA-6445": {
    "park": "Grotto and Calvary Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2625,6 +2635,7 @@
   },
   "CA-6446": {
    "park": "Beaubassin / Ancient Indian Portage National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2641,6 +2652,7 @@
   },
   "CA-6447": {
    "park": "HMS Plumper Shipwreck Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2657,6 +2669,7 @@
   },
   "CA-6448": {
    "park": "The Church of St. Mary the Virgin Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2673,6 +2686,7 @@
   },
   "CA-6450": {
    "park": "Yorkshire Immigration National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2689,6 +2703,7 @@
   },
   "CA-6451": {
    "park": "Battle of Petitcodiac Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2705,6 +2720,7 @@
   },
   "CA-6455": {
    "park": "Saltwater Pool and Bathhouse Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2721,6 +2737,7 @@
   },
   "CA-6456": {
    "park": "Point Escuminac Nature Reserve",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2737,6 +2754,7 @@
   },
   "CA-6457": {
    "park": "Monseignor Marcel-François Richard Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2753,6 +2771,7 @@
   },
   "CA-6460": {
    "park": "Former St. James United Church Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2769,6 +2788,7 @@
   },
   "CA-6461": {
    "park": "First Export of Coal National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2785,6 +2805,7 @@
   },
   "CA-6462": {
    "park": "Old St. Michael's Rectory Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2801,6 +2822,7 @@
   },
   "CA-6463": {
    "park": "Keillor House Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2817,6 +2839,7 @@
   },
   "CA-6464": {
    "park": "Diggity Site Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2833,6 +2856,7 @@
   },
   "CA-6465": {
    "park": "Shrine to Saint Francis of Assisi Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2849,6 +2873,7 @@
   },
   "CA-6466": {
    "park": "Reversing Falls Bridges Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2865,6 +2890,7 @@
   },
   "CA-6469": {
    "park": "Men of Letters National Historical Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2881,6 +2907,7 @@
   },
   "CA-6470": {
    "park": "Sir Albert James Smith National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2897,6 +2924,7 @@
   },
   "CA-6472": {
    "park": "Eastern Lowlands Ecological Area",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2913,6 +2941,7 @@
   },
   "CA-6475": {
    "park": "St. John River National Heritage Area",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2929,6 +2958,7 @@
   },
   "CA-6477": {
    "park": "Fundy Coastal Ecological Area",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2945,6 +2975,7 @@
   },
   "CA-6478": {
    "park": "Valley Lowlands Ecological Area",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2961,6 +2992,7 @@
   },
   "CA-6479": {
    "park": "Central Uplands Ecological Area",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -2977,6 +3009,7 @@
   },
   "CA-6480": {
    "park": "Northern Uplands Ecological Area",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [
     {
@@ -2985,7 +3018,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 3607,
      "record_name": "4015800",
-     "acres_approx": 2160
+     "acres_approx": 2160,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -2998,10 +3033,11 @@
     "A CPCAD / Parks Canada: hit",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-6485": {
    "park": "Cap-Lumiere Nature Reserve",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -3018,6 +3054,7 @@
   },
   "CA-6487": {
    "park": "42nd Highland Memorial Cemetery Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -3034,6 +3071,7 @@
   },
   "CA-6488": {
    "park": "Walker Trading Establishment Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -3050,6 +3088,7 @@
   },
   "CA-6489": {
    "park": "Hon. William Henry Steeves National Historical Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -3066,6 +3105,7 @@
   },
   "CA-6491": {
    "park": "Welsh Chapel Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -3082,6 +3122,7 @@
   },
   "CA-6492": {
    "park": "Petitcodiac - Washademoak Portage National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -3098,6 +3139,7 @@
   },
   "CA-6493": {
    "park": "William Davidson National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -3114,6 +3156,7 @@
   },
   "CA-6494": {
    "park": "Rt. Hon. Richard Bedford Bennett National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -3130,6 +3173,7 @@
   },
   "CA-6495": {
    "park": "Joseph Broussard dit Beausoleil National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -3146,6 +3190,7 @@
   },
   "CA-6496": {
    "park": "Peter Mitchell National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -3162,6 +3207,7 @@
   },
   "CA-6498": {
    "park": "Beechwood Community Park",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -3178,6 +3224,7 @@
   },
   "CA-6499": {
    "park": "Meductic-Eel River Portage National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [
     {
@@ -3186,7 +3233,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 3457,
      "record_name": "4003000",
-     "acres_approx": 145
+     "acres_approx": 145,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -3199,10 +3248,11 @@
     "A CPCAD / Parks Canada: hit",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-6500": {
    "park": "Big Shippegan Shore Light National Heritage Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -3219,6 +3269,7 @@
   },
   "CA-6501": {
    "park": "Cormier-Village Ecological Park",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -3235,6 +3286,7 @@
   },
   "CA-6515": {
    "park": "Intercolonial Railway National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -3251,6 +3303,7 @@
   },
   "CA-6516": {
    "park": "The Marco Polo National Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -3267,6 +3320,7 @@
   },
   "CA-6517": {
    "park": "Shogomoc Railway Site Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -3283,6 +3337,7 @@
   },
   "CA-6519": {
    "park": "Lutz Mountain Heritage Museum & Meeting House Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -3299,6 +3354,7 @@
   },
   "CA-6520": {
    "park": "Musée des Pionniers Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -3315,6 +3371,7 @@
   },
   "CA-6521": {
    "park": "Artillery Regiments of Canada National Memorial",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -3331,6 +3388,7 @@
   },
   "CA-6530": {
    "park": "Sentier Nepisiguit Mi’gmaq Trail Recreation Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -3347,6 +3405,7 @@
   },
   "CA-6555": {
    "park": "Riverview's Peace Park National Memorial",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -3363,6 +3422,7 @@
   },
   "CA-6579": {
    "park": "Missaguash - Baie Verte Portage Historic Site",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -3379,6 +3439,7 @@
   },
   "CA-6584": {
    "park": "Grand Barachois Nature Reserve",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [
     {
@@ -3387,7 +3448,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 6669,
      "record_name": "Privately Protected Area (NCC 120214)",
-     "acres_approx": 1
+     "acres_approx": 1,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -3400,10 +3463,11 @@
     "A CPCAD / Parks Canada: hit",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-6586": {
    "park": "Return of the Acadians National Monument",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -3420,6 +3484,7 @@
   },
   "CA-6590": {
    "park": "Shediac Bay Watershed Ecological Area",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -3436,6 +3501,7 @@
   },
   "CA-6591": {
    "park": "Cocagne River Watershed Ecological Area",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -3452,6 +3518,7 @@
   },
   "CA-6597": {
    "park": "Richibucto Watershed Ecological Area",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -3468,6 +3535,7 @@
   },
   "CA-6602": {
    "park": "Saint-Louis-de-Kent War Memorial National Monument",
+   "area": "CA-NB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -3484,6 +3552,7 @@
   },
   "CA-0793": {
    "park": "Saint Croix Island National Historic Site",
+   "area": "CA-NB",
    "why_not": "check",
    "hits": [],
    "leads": [],
@@ -3500,6 +3569,7 @@
   },
   "CA-6481": {
    "park": "New Brunswick Highlands Ecological Area",
+   "area": "CA-NB",
    "why_not": "check",
    "hits": [
     {
@@ -3508,7 +3578,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 3666,
      "record_name": "4021700",
-     "acres_approx": 880
+     "acres_approx": 880,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -3521,10 +3593,11 @@
     "A CPCAD / Parks Canada: hit",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-6536": {
    "park": "New Brunswick #20 Wilderness Area",
+   "area": "CA-NB",
    "why_not": "check",
    "hits": [],
    "leads": [],
@@ -3541,6 +3614,7 @@
   },
   "CA-0778": {
    "park": "Ile-Aux-Foins (Hay Island) Recreation Park",
+   "area": "CA-NB",
    "why_not": "nothing near",
    "hits": [
     {
@@ -3549,7 +3623,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 21919,
      "record_name": "Miramichi Bay Closure",
-     "acres_approx": 359542
+     "acres_approx": 359542,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     }
    ],
    "leads": [],
@@ -3562,10 +3638,11 @@
     "A CPCAD / Parks Canada: hit",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-4526": {
    "park": "Tabusintac Lagoon and River Estuary Ramsar Site",
+   "area": "CA-NB",
    "why_not": "nothing near",
    "hits": [
     {
@@ -3574,7 +3651,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 21919,
      "record_name": "Miramichi Bay Closure",
-     "acres_approx": 359542
+     "acres_approx": 359542,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     }
    ],
    "leads": [],
@@ -3587,10 +3666,11 @@
     "A CPCAD / Parks Canada: hit",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-4530": {
    "park": "Wilson's Point (Enclosure) Park Historic Site",
+   "area": "CA-NB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3607,6 +3687,7 @@
   },
   "CA-4812": {
    "park": "Fort Gaspareaux National Historic Site",
+   "area": "CA-NB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3623,6 +3704,7 @@
   },
   "CA-5081": {
    "park": "International Appalachian Trail (IAT) National Scenic Trail",
+   "area": "CA-NB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3639,6 +3721,7 @@
   },
   "CA-5138": {
    "park": "Odell Park and Odell Arboretum Recreation Park",
+   "area": "CA-NB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3655,6 +3738,7 @@
   },
   "CA-5154": {
    "park": "Cape Jourimain Lighthouse National Heritage Site",
+   "area": "CA-NB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3671,6 +3755,7 @@
   },
   "CA-5157": {
    "park": "Christ Church Cathedral National Historic Site",
+   "area": "CA-NB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3687,6 +3772,7 @@
   },
   "CA-5159": {
    "park": "Connell House National Historic Site",
+   "area": "CA-NB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3703,6 +3789,7 @@
   },
   "CA-5173": {
    "park": "Fredericton Military National Historic Site",
+   "area": "CA-NB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3719,6 +3806,7 @@
   },
   "CA-5174": {
    "park": "Fredericton Railway Bridge (Bill Thorpe Walking Bridge) Recreation Site",
+   "area": "CA-NB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3735,6 +3823,7 @@
   },
   "CA-5177": {
    "park": "Frye Lake Nature Reserve",
+   "area": "CA-NB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3751,6 +3840,7 @@
   },
   "CA-5186": {
    "park": "Inch Arran Point Front Range National Historic Site",
+   "area": "CA-NB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3767,6 +3857,7 @@
   },
   "CA-5191": {
    "park": "Long Eddy Point National Heritage Site",
+   "area": "CA-NB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3783,6 +3874,7 @@
   },
   "CA-5192": {
    "park": "Machias Seal Island Lighthouse National Historic Site",
+   "area": "CA-NB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3799,6 +3891,7 @@
   },
   "CA-5202": {
    "park": "Ministers Island Pre-contact Sites National Historic Site",
+   "area": "CA-NB",
    "why_not": "nothing near",
    "hits": [
     {
@@ -3807,7 +3900,9 @@
      "agency": "NB-PP Govern",
      "record": 20,
      "record_name": "Minister's Island",
-     "acres_approx": 495
+     "acres_approx": 495,
+     "tier": "LIKELY",
+     "why": "shared island, minister; extra: park contact, pre / record -"
     }
    ],
    "leads": [],
@@ -3820,10 +3915,11 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "CA-5203": {
    "park": "Miscou Island Lighthouse National Historic Site",
+   "area": "CA-NB",
    "why_not": "nothing near",
    "hits": [
     {
@@ -3832,7 +3928,9 @@
      "agency": "NB-PP Govern",
      "record": 21,
      "record_name": "Miscou",
-     "acres_approx": 12
+     "acres_approx": 12,
+     "tier": "LIKELY",
+     "why": "shared miscou; extra: park island, lighthouse / record -"
     }
    ],
    "leads": [],
@@ -3845,10 +3943,11 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "CA-5205": {
    "park": "Navy Island & Leigh Williamson Nature Reserve",
+   "area": "CA-NB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3865,6 +3964,7 @@
   },
   "CA-5211": {
    "park": "Officers' Square National Heritage Site",
+   "area": "CA-NB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3881,6 +3981,7 @@
   },
   "CA-5212": {
    "park": "Old Government House National Historic Site",
+   "area": "CA-NB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3897,6 +3998,7 @@
   },
   "CA-5229": {
    "park": "St. Paul's United Church National Historic Site",
+   "area": "CA-NB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3913,6 +4015,7 @@
   },
   "CA-5237": {
    "park": "Ganong Nature Park Natural Area",
+   "area": "CA-NB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3929,6 +4032,7 @@
   },
   "CA-5240": {
    "park": "Fort Charnisay National Historic Site",
+   "area": "CA-NB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3945,6 +4049,7 @@
   },
   "CA-5243": {
    "park": "Fort Nashwaak (Naxoat) National Historic Site",
+   "area": "CA-NB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3961,6 +4066,7 @@
   },
   "CA-5244": {
    "park": "Fredericton City Hall National Historic Site",
+   "area": "CA-NB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3977,6 +4083,7 @@
   },
   "CA-5248": {
    "park": "York County Court House National Historic Site",
+   "area": "CA-NB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3993,6 +4100,7 @@
   },
   "CA-5253": {
    "park": "Carleton Park Recreation Park",
+   "area": "CA-NB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4009,6 +4117,7 @@
   },
   "CA-5259": {
    "park": "Kings Landing Historic Settlement Historic Site",
+   "area": "CA-NB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4025,6 +4134,7 @@
   },
   "CA-5269": {
    "park": "St. Anne's Chapel of Ease National Historic Site",
+   "area": "CA-NB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4041,6 +4151,7 @@
   },
   "CA-5273": {
    "park": "Wilmot Park Recreation Park",
+   "area": "CA-NB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4057,6 +4168,7 @@
   },
   "CA-6444": {
    "park": "Point Escuminac Lighttower Historic Site",
+   "area": "CA-NB",
    "why_not": "nothing near",
    "hits": [
     {
@@ -4065,7 +4177,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 21919,
      "record_name": "Miramichi Bay Closure",
-     "acres_approx": 359542
+     "acres_approx": 359542,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     }
    ],
    "leads": [],
@@ -4078,10 +4192,11 @@
     "A CPCAD / Parks Canada: hit",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-6449": {
    "park": "Chapelle Sainte-Anne de Beaumont Provincial Historic Site",
+   "area": "CA-NB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4098,6 +4213,7 @@
   },
   "CA-6453": {
    "park": "System of Tide Gates (Aboiteaux) National Historic Site",
+   "area": "CA-NB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4114,6 +4230,7 @@
   },
   "CA-6458": {
    "park": "Former Lightkeeper's Residence (Gannet Rock) Historic Site",
+   "area": "CA-NB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4130,6 +4247,7 @@
   },
   "CA-6459": {
    "park": "Gannet Rock Light Tower Historic Site",
+   "area": "CA-NB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4146,6 +4264,7 @@
   },
   "CA-6471": {
    "park": "Nicolas Denys National Historic Site",
+   "area": "CA-NB",
    "why_not": "nothing near",
    "hits": [
     {
@@ -4154,7 +4273,9 @@
      "agency": "NB WMZ",
      "record": null,
      "record_name": "",
-     "acres_approx": 773951
+     "acres_approx": 773951,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -4167,10 +4288,11 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-6482": {
    "park": "Grand Lake Lowlands Ecological Area",
+   "area": "CA-NB",
    "why_not": "nothing near",
    "hits": [
     {
@@ -4179,7 +4301,9 @@
      "agency": "NB WMZ",
      "record": null,
      "record_name": "",
-     "acres_approx": 739407
+     "acres_approx": 739407,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -4192,10 +4316,11 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-6522": {
    "park": "Stickney Area Veterans National Memorial",
+   "area": "CA-NB",
    "why_not": "nothing near",
    "hits": [
     {
@@ -4204,7 +4329,9 @@
      "agency": "NB WMZ",
      "record": null,
      "record_name": "",
-     "acres_approx": 1021917
+     "acres_approx": 1021917,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -4217,7 +4344,7 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   }
  }
 }

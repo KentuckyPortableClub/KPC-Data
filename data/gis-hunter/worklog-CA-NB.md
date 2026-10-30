@@ -4,29 +4,29 @@
 |---|---|---|---|---|---|---|
 | CA-0448 | Roosevelt Campobello International Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-0776 | North Head Park Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-0778 | Ile-Aux-Foins (Hay Island) Recreation Park | R-G7 step 2 | CPCAD / Parks Canada: 'Miramichi Bay Closure' (record 21919, ~359,542 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
-| CA-0782 | Lakeside Recreation Park | R-G7 step 3 | lead Lakeside, ON - May 16, 2025 - Drone Flight Paths (https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/Lakeside_Drone_Flight_Paths/FeatureServer); lead Lakeside, ON - May 16, 2025 - Drone Photos (https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/Lakeside_ON_Drone_Ph | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
+| CA-0778 | Ile-Aux-Foins (Hay Island) Recreation Park | R-G7 step 2 | CPCAD / Parks Canada: 'Miramichi Bay Closure' (record 21919, ~359,542 ac, pin inside) · container: one record under 3 parks | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
+| CA-0782 | Lakeside Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-0783 | MacNichol-Orser Conservation Easement Natural Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-0785 | Mary's Point Ramsar Site | R-G7 step 2 | CPCAD / Parks Canada: 'Shepody National Wildlife Area' (record 22296, ~2,575 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
+| CA-0785 | Mary's Point Ramsar Site | R-G7 step 2 | CPCAD / Parks Canada: 'Shepody National Wildlife Area' (record 22296, ~2,575 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-0787 | Middle Island Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-0793 | Saint Croix Island National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-0794 | Shea Lake Natural Area | R-G7 step 3 | lead Tussock_Within_Buffers_Shea (https://services2.arcgis.com/s4BHXC1DIySGIjoG/arcgis/rest/services/Tussock_Within_Buffers_Shea/FeatureServer); lead Mrs_Shea Trash Collection (https://services4.arcgis.com/F3r6faJEFz95LR6M/arcgis/rest/services/Mrs_Shea_Trash_Collection/FeatureServer) | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
+| CA-0794 | Shea Lake Natural Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-0797 | Tetagouche Falls Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-0800 | Youghall Beach Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-1231 | Daly Point Nature Reserve | R-G7 step 3 | lead Daly_Point_Areas_of_Interest (https://services.arcgis.com/036S6vZ8Km7lO7Hl/arcgis/rest/services/Daly_Point_Areas_of_Interest/FeatureServer); lead Daly_Point_Trails (https://services.arcgis.com/036S6vZ8Km7lO7Hl/arcgis/rest/services/Daly_Point_Trails/FeatureServer) | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
+| CA-1231 | Daly Point Nature Reserve | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-1239 | Grindstone Island Conservation Nature Reserve | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-1240 | Hyla Park Nature Reserve | R-G7 step 3 | lead Potential Hyla versicolor PVC Study Sites_WFL1 (https://services1.arcgis.com/YiULsZbgRKmBtdZN/arcgis/rest/services/Potential_Hyla_versicolor_PVC_Study_Sites_WFL1/FeatureServer); lead Gray Treefrog (Hyla versicolor) (https://services1.arcgis.com/O7h3OCRVxKceyg19/arcgis/rest/services/Gray Treefro | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
+| CA-1240 | Hyla Park Nature Reserve | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-1242 | James C. Yerxa Nature Reserve | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-1248 | Pagan Point Nature Reserve | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-1251 | Rockwood Park Nature Reserve | R-G7 step 3 | lead Rockwood Sensitive Area (https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/RSA/FeatureServer); lead Rockwood PUD - Service Area Outline (https://services5.arcgis.com/3DoY8p7EnUTzaIE7/arcgis/rest/services/Rockwood_PUD_Line/FeatureServer) | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
-| CA-1255 | Sugar Island Nature Reserve | R-G7 step 3 | lead UMBS Osborn Preserve on Sugar Island: historic map (https://services1.arcgis.com/4ezfu5dIwH83BUNL/arcgis/rest/services/UMBS_Osborn_Preserve_on_Sugar_Island_WFL1/FeatureServer); lead Landcover Osborn Preserve circa 1930s for UMBS on Sugar Island  (https://services1.arcgis.com/4ezfu5dIwH83BUNL/ar | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
+| CA-1251 | Rockwood Park Nature Reserve | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
+| CA-1255 | Sugar Island Nature Reserve | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4355 | Bantalor Protected Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-4438 | Martial Brook Protected Area | R-G7 step 2 | CPCAD / Parks Canada: 'Magaguadavic River' (record 3177, ~5,145 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
-| CA-4444 | McCoy Brook Protected Area | R-G7 step 2 | CPCAD / Parks Canada: '4021400' (record 3663, ~1,808 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
+| CA-4438 | Martial Brook Protected Area | R-G7 step 2 | CPCAD / Parks Canada: 'Magaguadavic River' (record 3177, ~5,145 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
+| CA-4444 | McCoy Brook Protected Area | R-G7 step 2 | CPCAD / Parks Canada: '4021400' (record 3663, ~1,808 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-4463 | Notre-Dame-de l'assompton Monument Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4493 | Portage Lakes Protected Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-4522 | Stony Brook Protected Area | R-G7 step 3 | lead Two Foot Topographic Contours - Stony Brook-Merrimack River (0107000612) - smoothed (https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EDP_LiDAR_Contours_2ft_01070006_smooth/FeatureServer/14); lead Stony_Brook_Watershed_Raster (https://tiles.arcgis.com/tiles/nV0HyP5uKL48nAKr/arcgis/rest/se | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
-| CA-4526 | Tabusintac Lagoon and River Estuary Ramsar Site | R-G7 step 2 | CPCAD / Parks Canada: 'Miramichi Bay Closure' (record 21919, ~359,542 ac, pin inside) | inside-other (bigger area with another name: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
+| CA-4522 | Stony Brook Protected Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
+| CA-4526 | Tabusintac Lagoon and River Estuary Ramsar Site | R-G7 step 2 | CPCAD / Parks Canada: 'Miramichi Bay Closure' (record 21919, ~359,542 ac, pin inside) · container: one record under 3 parks | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-4530 | Wilson's Point (Enclosure) Park Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4809 | Boishebert Refuge National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4810 | Carleton Martello Tower National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
@@ -52,7 +52,7 @@
 | CA-5156 | Christ Church Anglican National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5157 | Christ Church Cathedral National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5159 | Connell House National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-5160 | Connell Park Recreation Park | R-G7 step 3 | lead J Connell Hazard (https://services5.arcgis.com/yJIzOba1Y8CkuPt9/arcgis/rest/services/J_Connell_Hazard/FeatureServer); lead Jo_Anna_Connell_CrimeSafetyIndex (https://services5.arcgis.com/yJIzOba1Y8CkuPt9/arcgis/rest/services/Jo_Anna_Connell_CrimeSafetyIndex/FeatureServer) | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
+| CA-5160 | Connell Park Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5162 | Coronation Park Recreation Park | R-G7 step 3 | lead Coronation Park Residents Association (https://maps.oakville.ca/oakgis/rest/services/ArcGISOnline/AGO_ResidentsAssociationMap/MapServer/5) | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
 | CA-5163 | Denys Fort / Habitation National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5169 | East Riverside Kingshurst Park Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
@@ -76,8 +76,8 @@
 | CA-5198 | Marysville Cotton Mill National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5199 | Marysville Historic District National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5200 | McAdam Railway Station (Canadian Pacific) National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-5202 | Ministers Island Pre-contact Sites National Historic Site | R-G7 step 2 | NB-PP Govern: 'Minister's Island' (record 20, ~495 ac, pin inside) | candidate: name match | 2026-10-30 | gis-hunter |
-| CA-5203 | Miscou Island Lighthouse National Historic Site | R-G7 step 2 | NB-PP Govern: 'Miscou' (record 21, ~12 ac, pin inside) | candidate: name match | 2026-10-30 | gis-hunter |
+| CA-5202 | Ministers Island Pre-contact Sites National Historic Site | R-G7 step 2 | NB-PP Govern: 'Minister's Island' (record 20, ~495 ac, pin inside) · shared island, minister; extra: park contact, pre / record - | candidate: LIKELY (part of the name shared) | 2026-10-30 | gis-hunter |
+| CA-5203 | Miscou Island Lighthouse National Historic Site | R-G7 step 2 | NB-PP Govern: 'Miscou' (record 21, ~12 ac, pin inside) · shared miscou; extra: park island, lighthouse / record - | candidate: LIKELY (part of the name shared) | 2026-10-30 | gis-hunter |
 | CA-5205 | Navy Island & Leigh Williamson Nature Reserve | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5210 | Number 2 Mechanics' Volunteer Company Engine House National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5211 | Officers' Square National Heritage Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
@@ -182,7 +182,7 @@
 | CA-6441 | Cathedral of the Immaculate Conception Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-6442 | Saint John the Baptist Anglican Church Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-6443 | Edmundston CPR Station Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-6444 | Point Escuminac Lighttower Historic Site | R-G7 step 2 | CPCAD / Parks Canada: 'Miramichi Bay Closure' (record 21919, ~359,542 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
+| CA-6444 | Point Escuminac Lighttower Historic Site | R-G7 step 2 | CPCAD / Parks Canada: 'Miramichi Bay Closure' (record 21919, ~359,542 ac, pin inside) · container: one record under 3 parks | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-6445 | Grotto and Calvary Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-6446 | Beaubassin / Ancient Indian Portage National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-6447 | HMS Plumper Shipwreck Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
@@ -205,15 +205,15 @@
 | CA-6466 | Reversing Falls Bridges Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-6469 | Men of Letters National Historical Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-6470 | Sir Albert James Smith National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-6471 | Nicolas Denys National Historic Site | R-G7 step 2 | NB WMZ: '' (record None, ~773,951 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
+| CA-6471 | Nicolas Denys National Historic Site | R-G7 step 2 | NB WMZ: '' (record None, ~773,951 ac, pin inside) · no proper name to compare | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-6472 | Eastern Lowlands Ecological Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-6475 | St. John River National Heritage Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-6477 | Fundy Coastal Ecological Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-6478 | Valley Lowlands Ecological Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-6479 | Central Uplands Ecological Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-6480 | Northern Uplands Ecological Area | R-G7 step 2 | CPCAD / Parks Canada: '4015800' (record 3607, ~2,160 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
-| CA-6481 | New Brunswick Highlands Ecological Area | R-G7 step 2 | CPCAD / Parks Canada: '4021700' (record 3666, ~880 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
-| CA-6482 | Grand Lake Lowlands Ecological Area | R-G7 step 2 | NB WMZ: '' (record None, ~739,407 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
+| CA-6480 | Northern Uplands Ecological Area | R-G7 step 2 | CPCAD / Parks Canada: '4015800' (record 3607, ~2,160 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
+| CA-6481 | New Brunswick Highlands Ecological Area | R-G7 step 2 | CPCAD / Parks Canada: '4021700' (record 3666, ~880 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
+| CA-6482 | Grand Lake Lowlands Ecological Area | R-G7 step 2 | NB WMZ: '' (record None, ~739,407 ac, pin inside) · no proper name to compare | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-6485 | Cap-Lumiere Nature Reserve | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-6487 | 42nd Highland Memorial Cemetery Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-6488 | Walker Trading Establishment Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
@@ -225,7 +225,7 @@
 | CA-6495 | Joseph Broussard dit Beausoleil National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-6496 | Peter Mitchell National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-6498 | Beechwood Community Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-6499 | Meductic-Eel River Portage National Historic Site | R-G7 step 2 | CPCAD / Parks Canada: '4003000' (record 3457, ~145 ac, pin inside) | inside-other (bigger area with another name: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
+| CA-6499 | Meductic-Eel River Portage National Historic Site | R-G7 step 2 | CPCAD / Parks Canada: '4003000' (record 3457, ~145 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-6500 | Big Shippegan Shore Light National Heritage Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-6501 | Cormier-Village Ecological Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-6515 | Intercolonial Railway National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
@@ -234,12 +234,12 @@
 | CA-6519 | Lutz Mountain Heritage Museum & Meeting House Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-6520 | Musée des Pionniers Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-6521 | Artillery Regiments of Canada National Memorial | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-6522 | Stickney Area Veterans National Memorial | R-G7 step 2 | NB WMZ: '' (record None, ~1,021,917 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
+| CA-6522 | Stickney Area Veterans National Memorial | R-G7 step 2 | NB WMZ: '' (record None, ~1,021,917 ac, pin inside) · no proper name to compare | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-6530 | Sentier Nepisiguit Mi’gmaq Trail Recreation Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-6536 | New Brunswick #20 Wilderness Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-6555 | Riverview's Peace Park National Memorial | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-6579 | Missaguash - Baie Verte Portage Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-6584 | Grand Barachois Nature Reserve | R-G7 step 2 | CPCAD / Parks Canada: 'Privately Protected Area (NCC 120214)' (record 6669, ~1 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
+| CA-6584 | Grand Barachois Nature Reserve | R-G7 step 2 | CPCAD / Parks Canada: 'Privately Protected Area (NCC 120214)' (record 6669, ~1 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-6586 | Return of the Acadians National Monument | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-6590 | Shediac Bay Watershed Ecological Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-6591 | Cocagne River Watershed Ecological Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |

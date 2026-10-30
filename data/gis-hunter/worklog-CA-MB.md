@@ -2,10 +2,10 @@
 
 | ref | park | step | what was found | result | date | by |
 |---|---|---|---|---|---|---|
-| CA-0527 | Birch Island Provincial Park | R-G7 step 3 | lead Birch Island Boardwalk Survey (https://services9.arcgis.com/lK1pL02NmD23fAgi/arcgis/rest/services/boardwalk/FeatureServer); lead Proposed Boundary _ Birch Island (https://services3.arcgis.com/Byd0XH4lLctQNFNt/arcgis/rest/services/Proposed_Boundary___Birch_Island/FeatureServer) | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
+| CA-0527 | Birch Island Provincial Park | R-G7 step 3 | lead Proposed Boundary _ Birch Island (https://services3.arcgis.com/Byd0XH4lLctQNFNt/arcgis/rest/services/Proposed_Boundary___Birch_Island/FeatureServer) | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
 | CA-0558 | North Steeprock Lake Provincial Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-0572 | Whittier Recreation Park | R-G7 step 3 | lead Whittier Greenway Trail (https://services6.arcgis.com/ep2P4aOWGVVBct0i/arcgis/rest/services/Greenway_Trail/FeatureServer); lead Whittier City Boundary (https://services6.arcgis.com/ep2P4aOWGVVBct0i/arcgis/rest/services/Whittier_City_Boundary/FeatureServer) | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
-| CA-1048 | Assiniboine Park | R-G7 step 3 | lead Assiniboine Basin and Subbasins (https://services2.arcgis.com/FOAjZu7OcdPEtbC0/arcgis/rest/services/Assiniboine_Basin_and_Subbasins/FeatureServer); lead Assiniboine Park_WK4_Nazy_WFL1 (https://services6.arcgis.com/HQUud09zgy3Asw9X/arcgis/rest/services/Assiniboine_Park_WK4_Nazy_WFL1/FeatureServe | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
+| CA-0572 | Whittier Recreation Park | R-G7 step 3 | lead Whittier City Boundary (https://services6.arcgis.com/ep2P4aOWGVVBct0i/arcgis/rest/services/Whittier_City_Boundary/FeatureServer) | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
+| CA-1048 | Assiniboine Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-1050 | Grassy Narrows Marsh Wildlife Reserve | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-1053 | International Peace Garden International Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-1055 | Lower Fort Garry National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
@@ -15,38 +15,38 @@
 | CA-1079 | The Forks National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-1091 | York Factory Provincial Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-2373 | Primrose Wayside Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-2390 | Cape Tatnam Wildlife Management Area | R-G7 step 2 | CPCAD / Parks Canada: 'Kaskatamagan Wildlife Management Area' (record 17879, ~615,122 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
+| CA-2390 | Cape Tatnam Wildlife Management Area | R-G7 step 2 | CPCAD / Parks Canada: 'Kaskatamagan Wildlife Management Area' (record 17879, ~615,122 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-2407 | Ellice-Archie Wildlife Management Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-2408 | Ernie O' Dowda Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-2410 | Ethelbert (Duck Mountain) Wildlife Management Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-2411 | Fort Douglas Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-2412 | Gardenton-Pansy (Gardenton) Wildlife Management Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-2413 | Gardenton-Pansy (Pansy) Wildlife Management Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-2431 | King Edward Recreation Park | R-G7 step 3 | lead King_Edward_Court (https://services8.arcgis.com/cbDaIA5xFnHBUlC1/arcgis/rest/services/King_Edward_Court/FeatureServer) | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
+| CA-2431 | King Edward Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-2433 | Lagimodiere-Gaboury Park Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-2443 | Birch River (Community Pasture) Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-2444 | Lenswood (Community Pasture) Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-2454 | Manitoba - Ontario Interprovincial Wildlife Management Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-2464 | Narcisse Provincial Park | R-G7 step 2 | CPCAD / Parks Canada: 'Narcisse Wildlife Management Area' (record 17838, ~317 ac, pin inside) | candidate: name match | 2026-10-30 | gis-hunter |
+| CA-2464 | Narcisse Provincial Park | R-G7 step 2 | CPCAD / Parks Canada: 'Narcisse Wildlife Management Area' (record 17838, ~317 ac, pin inside) · same proper name | candidate: SURE (same proper name) | 2026-10-30 | gis-hunter |
 | CA-2475 | Parc Joseph Royal Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-2478 | Pimachiowin Aki (Pauingassi) Wildlife Management Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-2486 | Pimitotah (Bloodvein) Wildlife Management Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-2496 | Provencher Park Recreation Park | R-G7 step 3 | lead Provencher_classification (https://services.arcgis.com/F7DSX1DSNSiWmOqh/arcgis/rest/services/Provencher_classification/FeatureServer) | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
-| CA-2503 | Sandilands Provincial Forest Wildlife Management Area | R-G7 step 3 | lead 11883 Sandilands Primary School (https://services2.arcgis.com/87sPZyfeHLR17cT5/arcgis/rest/services/11883_Sandilands_Primary_School/FeatureServer); lead LCC Land Sandilands (https://services-eu1.arcgis.com/RADx9zTaG8EcAZqr/arcgis/rest/services/LCC_Land_Sandilands/FeatureServer) | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
-| CA-2527 | Vimy Ridge Memorial Park Recreation Park | R-G7 step 3 | lead Vimy Ridge Battle Map_WFL1 (https://services.arcgis.com/QI0dObYawrKkuwDp/arcgis/rest/services/Vimy_Ridge_Battle_Map_WFL1/FeatureServer); lead Vimy_Ridge (https://services.arcgis.com/QI0dObYawrKkuwDp/arcgis/rest/services/Vimy_Ridge/FeatureServer) | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
-| CA-2529 | Wallace Lake Wildlife Management Area | R-G7 step 3 | lead the national wallace monument vistor survey - open data (https://services-eu1.arcgis.com/cECIr59LclpO818r/arcgis/rest/services/sc_open_data_wallace_monument/FeatureServer); lead Wallace Bay Explorable Site Map_WTL1 (https://tiles.arcgis.com/tiles/aUc3DXYy7nXdT755/arcgis/rest/services/Wallace_Ba | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
+| CA-2496 | Provencher Park Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
+| CA-2503 | Sandilands Provincial Forest Wildlife Management Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
+| CA-2527 | Vimy Ridge Memorial Park Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
+| CA-2529 | Wallace Lake Wildlife Management Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4799 | Forts Rouge, Garry and Gibraltar National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4800 | Linear Mounds National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4803 | Riding Mountain Park East Gate Registration Complex National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4805 | St. Andrews Rectory National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-5120 | Buhler Recreation Park | R-G7 step 3 | lead Detroit_Demographics_Hannah_Buhler (https://services.arcgis.com/uEH09Hfm70zI2ZxR/arcgis/rest/services/Detroit_Demographics_Hannah_Buhler/FeatureServer) | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
+| CA-5120 | Buhler Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5122 | Fraser's Grove Park Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5123 | Kilcona Park Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5124 | La Barriere Park Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-5126 | Maple Grove Park Recreation Park | R-G7 step 3 | lead Maple_Grove_Planting_Sites (https://services.arcgis.com/nD1JmvAORRtTorXS/arcgis/rest/services/Maple_Grove_Planting_Sites/FeatureServer); lead Maple Grove Improvements WebMap_WFL1 (https://services3.arcgis.com/soGk71T8v9KDKT0C/arcgis/rest/services/Maple_Grove_Improvements_WebMap_WFL1/FeatureServ | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
+| CA-5126 | Maple Grove Park Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5127 | Neepawa Court House / Beautiful Plains County Court Building National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5129 | Shirley Render Park Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-5465 | Tall Grass Prairie Preserve Natural Area | R-G7 step 2 | CPCAD / Parks Canada: 'Loewen - MHHC' (record 18025, ~332 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
+| CA-5465 | Tall Grass Prairie Preserve Natural Area | R-G7 step 2 | CPCAD / Parks Canada: 'Loewen - MHHC' (record 18025, ~332 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-5961 | Battle of Seven Oaks National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5962 | BCATP Hangar No. 1 National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5963 | Bonnycastle Park Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |

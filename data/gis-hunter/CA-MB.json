@@ -5,6 +5,7 @@
  "parks": {
   "CA-1050": {
    "park": "Grassy Narrows Marsh Wildlife Reserve",
+   "area": "CA-MB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -22,6 +23,7 @@
   },
   "CA-2390": {
    "park": "Cape Tatnam Wildlife Management Area",
+   "area": "CA-MB",
    "why_not": "pin inside",
    "hits": [
     {
@@ -30,7 +32,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 17879,
      "record_name": "Kaskatamagan Wildlife Management Area",
-     "acres_approx": 615122
+     "acres_approx": 615122,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -43,10 +47,11 @@
     "A CPCAD / Parks Canada: hit",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-2410": {
    "park": "Ethelbert (Duck Mountain) Wildlife Management Area",
+   "area": "CA-MB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -64,6 +69,7 @@
   },
   "CA-2454": {
    "park": "Manitoba - Ontario Interprovincial Wildlife Management Area",
+   "area": "CA-MB",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -81,6 +87,7 @@
   },
   "CA-5465": {
    "park": "Tall Grass Prairie Preserve Natural Area",
+   "area": "CA-MB",
    "why_not": "pin inside",
    "hits": [
     {
@@ -89,7 +96,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 18025,
      "record_name": "Loewen - MHHC",
-     "acres_approx": 332
+     "acres_approx": 332,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -102,29 +111,18 @@
     "A CPCAD / Parks Canada: hit",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-0527": {
    "park": "Birch Island Provincial Park",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [
     {
-     "title": "Birch Island Boardwalk Survey",
-     "url": "https://services9.arcgis.com/lK1pL02NmD23fAgi/arcgis/rest/services/boardwalk/FeatureServer",
-     "owner": "HVGB_GISTech",
-     "type": "Feature Service"
-    },
-    {
      "title": "Proposed Boundary _ Birch Island",
      "url": "https://services3.arcgis.com/Byd0XH4lLctQNFNt/arcgis/rest/services/Proposed_Boundary___Birch_Island/FeatureServer",
      "owner": "ThompsonNicolaRegionalDistrict",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Birch Island Trails",
-     "url": "https://services9.arcgis.com/lK1pL02NmD23fAgi/arcgis/rest/services/Birch_Island_Trails/FeatureServer",
-     "owner": "HVGB_GISTech",
      "type": "Feature Service"
     }
    ],
@@ -136,12 +134,13 @@
     "A Manitoba wil~2: no answer (404)",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"island birch\": 3 lead(s)"
+    "B ArcGIS Online search \"island birch\": 1 lead(s)"
    ],
    "verdict": "lead: new layer queued for intake"
   },
   "CA-0558": {
    "park": "North Steeprock Lake Provincial Park",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -159,26 +158,15 @@
   },
   "CA-0572": {
    "park": "Whittier Recreation Park",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [
-    {
-     "title": "Whittier Greenway Trail",
-     "url": "https://services6.arcgis.com/ep2P4aOWGVVBct0i/arcgis/rest/services/Greenway_Trail/FeatureServer",
-     "owner": "CityOfWhittierGIS",
-     "type": "Feature Service"
-    },
     {
      "title": "Whittier City Boundary",
      "url": "https://services6.arcgis.com/ep2P4aOWGVVBct0i/arcgis/rest/services/Whittier_City_Boundary/FeatureServer",
      "owner": "CityOfWhittierGIS",
      "type": "Feature Service"
-    },
-    {
-     "title": "Whittier Police Beats",
-     "url": "https://services6.arcgis.com/ep2P4aOWGVVBct0i/arcgis/rest/services/PD_Beats/FeatureServer",
-     "owner": "CityOfWhittierGIS",
-     "type": "Feature Service"
     }
    ],
    "tried": [
@@ -189,34 +177,16 @@
     "A Manitoba wil~2: no answer (404)",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"whittier\": 4 lead(s)"
+    "B ArcGIS Online search \"whittier\": 1 lead(s)"
    ],
    "verdict": "lead: new layer queued for intake"
   },
   "CA-1048": {
    "park": "Assiniboine Park",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
-   "leads": [
-    {
-     "title": "Assiniboine Basin and Subbasins",
-     "url": "https://services2.arcgis.com/FOAjZu7OcdPEtbC0/arcgis/rest/services/Assiniboine_Basin_and_Subbasins/FeatureServer",
-     "owner": "IJC_Authoritative",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Assiniboine Park_WK4_Nazy_WFL1",
-     "url": "https://services6.arcgis.com/HQUud09zgy3Asw9X/arcgis/rest/services/Assiniboine_Park_WK4_Nazy_WFL1/FeatureServer",
-     "owner": "yaghoobn_UnivMB",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Assiniboine Park Trails and Attractions Map_WFL1",
-     "url": "https://services6.arcgis.com/HQUud09zgy3Asw9X/arcgis/rest/services/Assiniboine_Park_Trails_and_Attractions_Map_WFL1/FeatureServer",
-     "owner": "dycki3_UnivMB",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Manitoba Par: no answer (404)",
     "A Manitoba wil: no answer (404)",
@@ -225,12 +195,13 @@
     "A Manitoba wil~2: no answer (404)",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"assiniboine\": 3 lead(s)"
+    "B ArcGIS Online search \"assiniboine\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-1053": {
    "park": "International Peace Garden International Park",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -248,6 +219,7 @@
   },
   "CA-1055": {
    "park": "Lower Fort Garry National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -265,6 +237,7 @@
   },
   "CA-1058": {
    "park": "Mennonite Heritage Village Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -282,6 +255,7 @@
   },
   "CA-1067": {
    "park": "Prince of Wales Fort National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -299,6 +273,7 @@
   },
   "CA-1069": {
    "park": "Riel House National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -316,6 +291,7 @@
   },
   "CA-1079": {
    "park": "The Forks National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -333,6 +309,7 @@
   },
   "CA-1091": {
    "park": "York Factory Provincial Park",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -350,6 +327,7 @@
   },
   "CA-2373": {
    "park": "Primrose Wayside Recreation Park",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -367,6 +345,7 @@
   },
   "CA-2407": {
    "park": "Ellice-Archie Wildlife Management Area",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -378,12 +357,13 @@
     "A Manitoba wil~2: no answer (404)",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"archie ellice\": 0 lead(s)"
+    "B ArcGIS Online search \"ellice archie\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "CA-2408": {
    "park": "Ernie O' Dowda Recreation Park",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -401,6 +381,7 @@
   },
   "CA-2411": {
    "park": "Fort Douglas Recreation Park",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -418,6 +399,7 @@
   },
   "CA-2412": {
    "park": "Gardenton-Pansy (Gardenton) Wildlife Management Area",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -435,6 +417,7 @@
   },
   "CA-2413": {
    "park": "Gardenton-Pansy (Pansy) Wildlife Management Area",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -452,16 +435,10 @@
   },
   "CA-2431": {
    "park": "King Edward Recreation Park",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
-   "leads": [
-    {
-     "title": "King_Edward_Court",
-     "url": "https://services8.arcgis.com/cbDaIA5xFnHBUlC1/arcgis/rest/services/King_Edward_Court/FeatureServer",
-     "owner": "Urban_Brooks",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Manitoba Par: no answer (404)",
     "A Manitoba wil: no answer (404)",
@@ -470,12 +447,13 @@
     "A Manitoba wil~2: no answer (404)",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"edward king\": 1 lead(s)"
+    "B ArcGIS Online search \"edward king\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-2433": {
    "park": "Lagimodiere-Gaboury Park Recreation Park",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -493,6 +471,7 @@
   },
   "CA-2443": {
    "park": "Birch River (Community Pasture) Conservation Area",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -510,6 +489,7 @@
   },
   "CA-2444": {
    "park": "Lenswood (Community Pasture) Conservation Area",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -527,6 +507,7 @@
   },
   "CA-2464": {
    "park": "Narcisse Provincial Park",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [
     {
@@ -535,7 +516,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 17838,
      "record_name": "Narcisse Wildlife Management Area",
-     "acres_approx": 317
+     "acres_approx": 317,
+     "tier": "SURE",
+     "why": "same proper name"
     }
    ],
    "leads": [],
@@ -548,10 +531,11 @@
     "A CPCAD / Parks Canada: hit",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-2475": {
    "park": "Parc Joseph Royal Recreation Park",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -569,6 +553,7 @@
   },
   "CA-2478": {
    "park": "Pimachiowin Aki (Pauingassi) Wildlife Management Area",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -586,6 +571,7 @@
   },
   "CA-2486": {
    "park": "Pimitotah (Bloodvein) Wildlife Management Area",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -603,126 +589,7 @@
   },
   "CA-2496": {
    "park": "Provencher Park Recreation Park",
-   "why_not": "nothing near",
-   "hits": [],
-   "leads": [
-    {
-     "title": "Provencher_classification",
-     "url": "https://services.arcgis.com/F7DSX1DSNSiWmOqh/arcgis/rest/services/Provencher_classification/FeatureServer",
-     "owner": "jessie.pearl@tnc.org_TNC",
-     "type": "Feature Service"
-    }
-   ],
-   "tried": [
-    "A Manitoba Par: no answer (404)",
-    "A Manitoba wil: no answer (404)",
-    "A Manitoba wil: no answer (404)",
-    "A Manitoba wil~1: no answer (404)",
-    "A Manitoba wil~2: no answer (404)",
-    "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"provencher\": 1 lead(s)"
-   ],
-   "verdict": "lead: new layer queued for intake"
-  },
-  "CA-2503": {
-   "park": "Sandilands Provincial Forest Wildlife Management Area",
-   "why_not": "nothing near",
-   "hits": [],
-   "leads": [
-    {
-     "title": "11883 Sandilands Primary School",
-     "url": "https://services2.arcgis.com/87sPZyfeHLR17cT5/arcgis/rest/services/11883_Sandilands_Primary_School/FeatureServer",
-     "owner": "UG_Arbor",
-     "type": "Feature Service"
-    },
-    {
-     "title": "LCC Land Sandilands",
-     "url": "https://services-eu1.arcgis.com/RADx9zTaG8EcAZqr/arcgis/rest/services/LCC_Land_Sandilands/FeatureServer",
-     "owner": "liam.nelson_lincslrf4",
-     "type": "Feature Service"
-    }
-   ],
-   "tried": [
-    "A Manitoba Par: no answer (404)",
-    "A Manitoba wil: no answer (404)",
-    "A Manitoba wil: no answer (404)",
-    "A Manitoba wil~1: no answer (404)",
-    "A Manitoba wil~2: no answer (404)",
-    "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"sandilands\": 2 lead(s)"
-   ],
-   "verdict": "lead: new layer queued for intake"
-  },
-  "CA-2527": {
-   "park": "Vimy Ridge Memorial Park Recreation Park",
-   "why_not": "nothing near",
-   "hits": [],
-   "leads": [
-    {
-     "title": "Vimy Ridge Battle Map_WFL1",
-     "url": "https://services.arcgis.com/QI0dObYawrKkuwDp/arcgis/rest/services/Vimy_Ridge_Battle_Map_WFL1/FeatureServer",
-     "owner": "DSSSGeography",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Vimy_Ridge",
-     "url": "https://services.arcgis.com/QI0dObYawrKkuwDp/arcgis/rest/services/Vimy_Ridge/FeatureServer",
-     "owner": "nicholasloiselle",
-     "type": "Feature Service"
-    }
-   ],
-   "tried": [
-    "A Manitoba Par: no answer (404)",
-    "A Manitoba wil: no answer (404)",
-    "A Manitoba wil: no answer (404)",
-    "A Manitoba wil~1: no answer (404)",
-    "A Manitoba wil~2: no answer (404)",
-    "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"ridge vimy\": 2 lead(s)"
-   ],
-   "verdict": "lead: new layer queued for intake"
-  },
-  "CA-2529": {
-   "park": "Wallace Lake Wildlife Management Area",
-   "why_not": "nothing near",
-   "hits": [],
-   "leads": [
-    {
-     "title": "the national wallace monument vistor survey - open data",
-     "url": "https://services-eu1.arcgis.com/cECIr59LclpO818r/arcgis/rest/services/sc_open_data_wallace_monument/FeatureServer",
-     "owner": "gis@stirling",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Wallace Bay Explorable Site Map_WTL1",
-     "url": "https://tiles.arcgis.com/tiles/aUc3DXYy7nXdT755/arcgis/rest/services/Wallace_Bay_Explorable_Site_Map_WTL1/MapServer",
-     "owner": "jollerhead_mta",
-     "type": "Map Service"
-    },
-    {
-     "title": "wallace",
-     "url": "https://services2.arcgis.com/Fq3mfY2kJ1WCOiyn/arcgis/rest/services/wallace/FeatureServer",
-     "owner": "ACCGIS_Admin",
-     "type": "Feature Service"
-    }
-   ],
-   "tried": [
-    "A Manitoba Par: no answer (404)",
-    "A Manitoba wil: no answer (404)",
-    "A Manitoba wil: no answer (404)",
-    "A Manitoba wil~1: no answer (404)",
-    "A Manitoba wil~2: no answer (404)",
-    "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"wallace\": 8 lead(s)"
-   ],
-   "verdict": "lead: new layer queued for intake"
-  },
-  "CA-4799": {
-   "park": "Forts Rouge, Garry and Gibraltar National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -734,12 +601,85 @@
     "A Manitoba wil~2: no answer (404)",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"gibraltar rouge garry\": 0 lead(s)"
+    "B ArcGIS Online search \"provencher\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-2503": {
+   "park": "Sandilands Provincial Forest Wildlife Management Area",
+   "area": "CA-MB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Manitoba Par: no answer (404)",
+    "A Manitoba wil: no answer (404)",
+    "A Manitoba wil: no answer (404)",
+    "A Manitoba wil~1: no answer (404)",
+    "A Manitoba wil~2: no answer (404)",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"sandilands\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-2527": {
+   "park": "Vimy Ridge Memorial Park Recreation Park",
+   "area": "CA-MB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Manitoba Par: no answer (404)",
+    "A Manitoba wil: no answer (404)",
+    "A Manitoba wil: no answer (404)",
+    "A Manitoba wil~1: no answer (404)",
+    "A Manitoba wil~2: no answer (404)",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"ridge vimy\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-2529": {
+   "park": "Wallace Lake Wildlife Management Area",
+   "area": "CA-MB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Manitoba Par: no answer (404)",
+    "A Manitoba wil: no answer (404)",
+    "A Manitoba wil: no answer (404)",
+    "A Manitoba wil~1: no answer (404)",
+    "A Manitoba wil~2: no answer (404)",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"wallace\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-4799": {
+   "park": "Forts Rouge, Garry and Gibraltar National Historic Site",
+   "area": "CA-MB",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Manitoba Par: no answer (404)",
+    "A Manitoba wil: no answer (404)",
+    "A Manitoba wil: no answer (404)",
+    "A Manitoba wil~1: no answer (404)",
+    "A Manitoba wil~2: no answer (404)",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"gibraltar garry rouge\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "CA-4800": {
    "park": "Linear Mounds National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -757,6 +697,7 @@
   },
   "CA-4803": {
    "park": "Riding Mountain Park East Gate Registration Complex National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -774,6 +715,7 @@
   },
   "CA-4805": {
    "park": "St. Andrews Rectory National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -791,16 +733,10 @@
   },
   "CA-5120": {
    "park": "Buhler Recreation Park",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
-   "leads": [
-    {
-     "title": "Detroit_Demographics_Hannah_Buhler",
-     "url": "https://services.arcgis.com/uEH09Hfm70zI2ZxR/arcgis/rest/services/Detroit_Demographics_Hannah_Buhler/FeatureServer",
-     "owner": "buhle005_CSUSM_GIS_Lab",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Manitoba Par: no answer (404)",
     "A Manitoba wil: no answer (404)",
@@ -809,12 +745,13 @@
     "A Manitoba wil~2: no answer (404)",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"buhler\": 1 lead(s)"
+    "B ArcGIS Online search \"buhler\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-5122": {
    "park": "Fraser's Grove Park Recreation Park",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -832,6 +769,7 @@
   },
   "CA-5123": {
    "park": "Kilcona Park Recreation Park",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -849,6 +787,7 @@
   },
   "CA-5124": {
    "park": "La Barriere Park Recreation Park",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -866,22 +805,10 @@
   },
   "CA-5126": {
    "park": "Maple Grove Park Recreation Park",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
-   "leads": [
-    {
-     "title": "Maple_Grove_Planting_Sites",
-     "url": "https://services.arcgis.com/nD1JmvAORRtTorXS/arcgis/rest/services/Maple_Grove_Planting_Sites/FeatureServer",
-     "owner": "Paul.Kortebein@threeriversparks.org_trpd",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Maple Grove Improvements WebMap_WFL1",
-     "url": "https://services3.arcgis.com/soGk71T8v9KDKT0C/arcgis/rest/services/Maple_Grove_Improvements_WebMap_WFL1/FeatureServer",
-     "owner": "cmwcadmin",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Manitoba Par: no answer (404)",
     "A Manitoba wil: no answer (404)",
@@ -890,12 +817,13 @@
     "A Manitoba wil~2: no answer (404)",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"maple grove\": 2 lead(s)"
+    "B ArcGIS Online search \"maple grove\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-5127": {
    "park": "Neepawa Court House / Beautiful Plains County Court Building National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -912,6 +840,7 @@
   },
   "CA-5129": {
    "park": "Shirley Render Park Recreation Park",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -928,6 +857,7 @@
   },
   "CA-5961": {
    "park": "Battle of Seven Oaks National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -944,6 +874,7 @@
   },
   "CA-5962": {
    "park": "BCATP Hangar No. 1 National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -960,6 +891,7 @@
   },
   "CA-5963": {
    "park": "Bonnycastle Park Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -976,6 +908,7 @@
   },
   "CA-5964": {
    "park": "Bruce Park Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -992,6 +925,7 @@
   },
   "CA-5965": {
    "park": "Camp Hughes National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1008,6 +942,7 @@
   },
   "CA-5967": {
    "park": "Churchill Rocket Research Range National Heritage Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1024,6 +959,7 @@
   },
   "CA-5969": {
    "park": "Dalnavert National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1040,6 +976,7 @@
   },
   "CA-5970": {
    "park": "Dominion Exhibition Display Building No. 2 National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1056,6 +993,7 @@
   },
   "CA-5971": {
    "park": "Dufferin Park Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1072,6 +1010,7 @@
   },
   "CA-5973": {
    "park": "Exchange District National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1088,6 +1027,7 @@
   },
   "CA-5974": {
    "park": "First Homestead in Western Canada National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1104,6 +1044,7 @@
   },
   "CA-5976": {
    "park": "Fort Churchill National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1120,6 +1061,7 @@
   },
   "CA-5977": {
    "park": "Fort Dufferin National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1136,6 +1078,7 @@
   },
   "CA-5978": {
    "park": "Fort Garry Hotel National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1152,6 +1095,7 @@
   },
   "CA-5979": {
    "park": "Fort La Reine National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1168,6 +1112,7 @@
   },
   "CA-5980": {
    "park": "Grey Nuns Convent National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1184,6 +1129,7 @@
   },
   "CA-6021": {
    "park": "Holy Trinity Anglican Church National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1200,6 +1146,7 @@
   },
   "CA-6022": {
    "park": "Inglis Grain Elevators National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1216,6 +1163,7 @@
   },
   "CA-6023": {
    "park": "Maison Gabrielle-Roy National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1232,6 +1180,7 @@
   },
   "CA-6024": {
    "park": "Metropolitan Theatre National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1248,6 +1197,7 @@
   },
   "CA-6025": {
    "park": "Miami Railway Station (Canadian Northern) National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1264,6 +1214,7 @@
   },
   "CA-6026": {
    "park": "Miss Davis' School Residence / Twin Oaks National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1280,6 +1231,7 @@
   },
   "CA-6027": {
    "park": "Neubergthal Street Village National Park",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1296,6 +1248,7 @@
   },
   "CA-6028": {
    "park": "Norway House National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1312,6 +1265,7 @@
   },
   "CA-6029": {
    "park": "Pantages Playhouse Theatre National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1328,6 +1282,7 @@
   },
   "CA-6030": {
    "park": "Portage La Prairie Public Building National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1344,6 +1299,7 @@
   },
   "CA-6031": {
    "park": "Ralph Connor House National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1360,6 +1316,7 @@
   },
   "CA-6032": {
    "park": "Red River Floodway National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1376,6 +1333,7 @@
   },
   "CA-6034": {
    "park": "Royal Manitoba Theatre Centre National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1392,6 +1350,7 @@
   },
   "CA-6035": {
    "park": "Sea Horse Gully Remains National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1408,6 +1367,7 @@
   },
   "CA-6036": {
    "park": "St. Andrew's Anglican Church National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1424,6 +1384,7 @@
   },
   "CA-6037": {
    "park": "St. Andrews Caméré Curtain Bridge Dam National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1440,6 +1401,7 @@
   },
   "CA-6038": {
    "park": "St. Boniface City Hall National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1456,6 +1418,7 @@
   },
   "CA-6039": {
    "park": "St. Boniface Hospital Nurses' Residence National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1472,6 +1435,7 @@
   },
   "CA-6040": {
    "park": "St. Michael's Ukrainian Greek Orthodox Church National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1488,6 +1452,7 @@
   },
   "CA-6041": {
    "park": "Ukrainian Catholic Church of the Resurrection National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1504,6 +1469,7 @@
   },
   "CA-6042": {
    "park": "Ukrainian Catholic Church of the Immaculate Conception National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1520,6 +1486,7 @@
   },
   "CA-6043": {
    "park": "Ukrainian Labour Temple National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1536,6 +1503,7 @@
   },
   "CA-6044": {
    "park": "Union Station (Canadian National) National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1552,6 +1520,7 @@
   },
   "CA-6045": {
    "park": "Walker (Burton Cummings) Theatre National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1568,6 +1537,7 @@
   },
   "CA-6046": {
    "park": "Wasyl Negrych Pioneer Homestead National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1584,6 +1554,7 @@
   },
   "CA-6047": {
    "park": "William Whyte Park / Fort Douglas Cairn Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1600,6 +1571,7 @@
   },
   "CA-6048": {
    "park": "Winnipeg Law Courts National Historic Site",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1616,6 +1588,7 @@
   },
   "CA-6468": {
    "park": "Centre of Canada Park",
+   "area": "CA-MB",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],

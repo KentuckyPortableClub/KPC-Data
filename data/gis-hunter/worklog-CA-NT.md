@@ -4,7 +4,7 @@
 |---|---|---|---|---|---|---|
 | CA-0002 | Aulavik National Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-0751 | Blackstone Territorial Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-0752 | Cameron Falls Trail Territorial Park | R-G7 step 2 | NT GNWT Envi: 'Hidden Lake Territorial Park' (record 40304, ~6,854 ac, pin inside) | candidate: name match | 2026-10-30 | gis-hunter |
+| CA-0752 | Cameron Falls Trail Territorial Park | R-G7 step 2 | NT GNWT Envi: 'Hidden Lake Territorial Park' (record 40304, ~6,854 ac, pin inside) · one shared word (territorial) only | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-0753 | Chan Lake Territorial Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-0754 | Fort Simpson Territorial Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-0755 | Fred Henne Territorial Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
@@ -37,18 +37,18 @@
 | CA-4341 | Prosperous Lake Territorial Territorial Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4343 | Sambaa Deh Falls Territorial Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4345 | Tetlit Gwinjik Territorial Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-4347 | Whooping Crane Summer Range Ramsar Site | R-G7 step 2 | CPCAD / Parks Canada: 'Wood Buffalo National Park Of Canada' (record 22055, ~2,280,590 ac, pin inside) | inside-other (several park records under the pin: R-G7 step 4) | 2026-10-30 | gis-hunter |
+| CA-4347 | Whooping Crane Summer Range Ramsar Site | R-G7 step 2 | CPCAD / Parks Canada: 'Wood Buffalo National Park Of Canada' (record 22055, ~2,280,590 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-4348 | Yellowknife River Territorial Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4571 | Coppermine Heritage River Wilderness Preserve | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4597 | Thelon Sanctuary Wilderness Preserve | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5470 | Church of Our Lady of Good Hope National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5471 | Deline Fishery / Franklin's Fort National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5472 | Ehdaa National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-5473 | Fort McPherson National Historic Site | R-G7 step 3 | lead Travel Time from Fort McPherson (30, 60, 90 Minutes) (https://services.arcgis.com/LT9qt2fqxnAQ174b/arcgis/rest/services/Travel Time from Fort McPherson (30, 60, 90 Minutes)/FeatureServer); lead Travel from Fort McPherson (30, 60, 90 Minutes) (https://services.arcgis.com/LT9qt2fqxnAQ174b/arcgis/ | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
-| CA-5474 | Fort Reliance National Historic Site | R-G7 step 2 | CPCAD / Parks Canada: 'Thaidene Nene National Park Reserve Of Canada' (record 22045, ~3,424,712 ac, pin inside) | inside-other (several park records under the pin: R-G7 step 4) | 2026-10-30 | gis-hunter |
+| CA-5473 | Fort McPherson National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
+| CA-5474 | Fort Reliance National Historic Site | R-G7 step 2 | CPCAD / Parks Canada: 'Thaidene Nene National Park Reserve Of Canada' (record 22045, ~3,424,712 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-5475 | Fort Resolution National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5476 | Hay River Mission Sites National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-5477 | Kittigazuit Archaeological Sites National Historic Site | R-G7 step 2 | CPCAD / Parks Canada: 'Tarium Niryutait Marine Protected Area' (record 21896, ~112,996 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
+| CA-5477 | Kittigazuit Archaeological Sites National Historic Site | R-G7 step 2 | CPCAD / Parks Canada: 'Tarium Niryutait Marine Protected Area' (record 21896, ~112,996 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-5478 | Nagwichoonjik (Mackenzie River) National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5479 | Parry's Rock Wintering Site National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5480 | Tsa Tue Biosphere Reserve UNESCO Biosphere Reserve | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |

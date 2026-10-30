@@ -5,6 +5,7 @@
  "parks": {
   "CA-0752": {
    "park": "Cameron Falls Trail Territorial Park",
+   "area": "CA-NT",
    "why_not": "pin inside",
    "hits": [
     {
@@ -13,7 +14,9 @@
      "agency": "NT GNWT Envi",
      "record": 40304,
      "record_name": "Hidden Lake Territorial Park",
-     "acres_approx": 6854
+     "acres_approx": 6854,
+     "tier": "UNLIKELY",
+     "why": "one shared word (territorial) only"
     }
    ],
    "leads": [],
@@ -22,10 +25,11 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-4347": {
    "park": "Whooping Crane Summer Range Ramsar Site",
+   "area": "CA-NT",
    "why_not": "pin inside",
    "hits": [
     {
@@ -34,7 +38,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 22055,
      "record_name": "Wood Buffalo National Park Of Canada",
-     "acres_approx": 2280590
+     "acres_approx": 2280590,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "name mismatch",
@@ -42,7 +48,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 42,
      "record_name": "",
-     "acres_approx": 10973361
+     "acres_approx": 10973361,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -51,10 +59,11 @@
     "A CPCAD / Parks Canada: hit",
     "A CPCAD / Parks Canada: hit"
    ],
-   "verdict": "inside-other (several park records under the pin: R-G7 step 4)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-5474": {
    "park": "Fort Reliance National Historic Site",
+   "area": "CA-NT",
    "why_not": "pin inside",
    "hits": [
     {
@@ -63,7 +72,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 22045,
      "record_name": "Thaidene Nene National Park Reserve Of Canada",
-     "acres_approx": 3424712
+     "acres_approx": 3424712,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "name mismatch",
@@ -71,7 +82,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 52,
      "record_name": "",
-     "acres_approx": 3447477
+     "acres_approx": 3447477,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -80,10 +93,11 @@
     "A CPCAD / Parks Canada: hit",
     "A CPCAD / Parks Canada: hit"
    ],
-   "verdict": "inside-other (several park records under the pin: R-G7 step 4)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-5477": {
    "park": "Kittigazuit Archaeological Sites National Historic Site",
+   "area": "CA-NT",
    "why_not": "pin inside",
    "hits": [
     {
@@ -92,7 +106,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 21896,
      "record_name": "Tarium Niryutait Marine Protected Area",
-     "acres_approx": 112996
+     "acres_approx": 112996,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -101,10 +117,11 @@
     "A CPCAD / Parks Canada: hit",
     "A CPCAD / Parks Canada: no polygon at the pin"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-0002": {
    "park": "Aulavik National Park",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -118,6 +135,7 @@
   },
   "CA-0751": {
    "park": "Blackstone Territorial Park",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -131,6 +149,7 @@
   },
   "CA-0753": {
    "park": "Chan Lake Territorial Park",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -144,6 +163,7 @@
   },
   "CA-0754": {
    "park": "Fort Simpson Territorial Park",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -157,6 +177,7 @@
   },
   "CA-0755": {
    "park": "Fred Henne Territorial Park",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -170,6 +191,7 @@
   },
   "CA-0756": {
    "park": "Hay River Territorial Park",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -183,6 +205,7 @@
   },
   "CA-0758": {
    "park": "Jak Territorial Park",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -196,6 +219,7 @@
   },
   "CA-0759": {
    "park": "Lady Evelyn Falls Territorial Park",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -209,6 +233,7 @@
   },
   "CA-0760": {
    "park": "Madeline Lake Territorial Park",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -222,6 +247,7 @@
   },
   "CA-0761": {
    "park": "Nitainlaii Territorial Park",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -235,6 +261,7 @@
   },
   "CA-0762": {
    "park": "Prelude Lake Territorial Park",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -248,6 +275,7 @@
   },
   "CA-0763": {
    "park": "Queen Elizabeth Territorial Park",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -261,6 +289,7 @@
   },
   "CA-0764": {
    "park": "Reid Lake Territorial Park",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -274,6 +303,7 @@
   },
   "CA-0765": {
    "park": "Twin Falls Gorge Territorial Park",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -287,6 +317,7 @@
   },
   "CA-4316": {
    "park": "60th Parallel Territorial Park",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -300,6 +331,7 @@
   },
   "CA-4317": {
    "park": "Alexandra Falls Day Use Area Territorial Park",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -313,6 +345,7 @@
   },
   "CA-4319": {
    "park": "",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -321,6 +354,7 @@
   },
   "CA-4322": {
    "park": "Cameron River Crossing Territorial Park",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -334,6 +368,7 @@
   },
   "CA-4324": {
    "park": "Dory Point Territorial Park",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -347,6 +382,7 @@
   },
   "CA-4326": {
    "park": "Fort Providence Territorial Park",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -360,6 +396,7 @@
   },
   "CA-4327": {
    "park": "Fort Smith Mission Territorial Park",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -373,6 +410,7 @@
   },
   "CA-4329": {
    "park": "Happy Valley Territorial Park",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -386,6 +424,7 @@
   },
   "CA-4330": {
    "park": "Kakisa River Territorial Park",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -399,6 +438,7 @@
   },
   "CA-4333": {
    "park": "Little Buffalo River Crossing Territorial Park",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -412,6 +452,7 @@
   },
   "CA-4334": {
    "park": "Little Buffalo River Falls Territorial Park",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -425,6 +466,7 @@
   },
   "CA-4335": {
    "park": "Louise Falls Campground & Day Use Area Territorial Park",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -438,6 +480,7 @@
   },
   "CA-4336": {
    "park": "McKinnon Territorial Park",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -451,6 +494,7 @@
   },
   "CA-4337": {
    "park": "McNallie Creek Territorial Park",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -464,6 +508,7 @@
   },
   "CA-4338": {
    "park": "North Arm Territorial Park",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -477,6 +522,7 @@
   },
   "CA-4339": {
    "park": "Pontoon Lake Territorial Park",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -490,6 +536,7 @@
   },
   "CA-4340": {
    "park": "Powder Point Territorial Park",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -503,6 +550,7 @@
   },
   "CA-4341": {
    "park": "Prosperous Lake Territorial Territorial Park",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -516,6 +564,7 @@
   },
   "CA-4343": {
    "park": "Sambaa Deh Falls Territorial Park",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -529,6 +578,7 @@
   },
   "CA-4345": {
    "park": "Tetlit Gwinjik Territorial Park",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -542,6 +592,7 @@
   },
   "CA-4348": {
    "park": "Yellowknife River Territorial Park",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -549,12 +600,13 @@
     "A NT GNWT Envi: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "B ArcGIS Online search \"territorial yellowknife\": 0 lead(s)"
+    "B ArcGIS Online search \"yellowknife territorial\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "CA-4571": {
    "park": "Coppermine Heritage River Wilderness Preserve",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -568,6 +620,7 @@
   },
   "CA-4597": {
    "park": "Thelon Sanctuary Wilderness Preserve",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -581,6 +634,7 @@
   },
   "CA-5470": {
    "park": "Church of Our Lady of Good Hope National Historic Site",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -588,12 +642,13 @@
     "A NT GNWT Envi: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "B ArcGIS Online search \"church good hope\": 0 lead(s)"
+    "B ArcGIS Online search \"church good lady\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "CA-5471": {
    "park": "Deline Fishery / Franklin's Fort National Historic Site",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -607,6 +662,7 @@
   },
   "CA-5472": {
    "park": "Ehdaa National Historic Site",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -620,32 +676,21 @@
   },
   "CA-5473": {
    "park": "Fort McPherson National Historic Site",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
-   "leads": [
-    {
-     "title": "Travel Time from Fort McPherson (30, 60, 90 Minutes)",
-     "url": "https://services.arcgis.com/LT9qt2fqxnAQ174b/arcgis/rest/services/Travel Time from Fort McPherson (30, 60, 90 Minutes)/FeatureServer",
-     "owner": "gpower3",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Travel from Fort McPherson (30, 60, 90 Minutes)",
-     "url": "https://services.arcgis.com/LT9qt2fqxnAQ174b/arcgis/rest/services/Travel from Fort McPherson (30, 60, 90 Minutes)/FeatureServer",
-     "owner": "gpower3",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A NT GNWT Envi: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "B ArcGIS Online search \"mcpherson fort\": 2 lead(s)"
+    "B ArcGIS Online search \"mcpherson fort\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-5475": {
    "park": "Fort Resolution National Historic Site",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -658,6 +703,7 @@
   },
   "CA-5476": {
    "park": "Hay River Mission Sites National Historic Site",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -670,6 +716,7 @@
   },
   "CA-5478": {
    "park": "Nagwichoonjik (Mackenzie River) National Historic Site",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -682,6 +729,7 @@
   },
   "CA-5479": {
    "park": "Parry's Rock Wintering Site National Historic Site",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -694,6 +742,7 @@
   },
   "CA-5480": {
    "park": "Tsa Tue Biosphere Reserve UNESCO Biosphere Reserve",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -706,6 +755,7 @@
   },
   "CA-6347": {
    "park": "Paniksak Territorial Park",
+   "area": "CA-NT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],

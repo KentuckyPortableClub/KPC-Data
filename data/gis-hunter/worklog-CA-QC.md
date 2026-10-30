@@ -5,14 +5,14 @@
 | CA-0015 | Charlevoix Biosphere Reserve | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-0049 | Lac Saint-Pierre Biosphere Reserve | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-0054 | Manicouagan-Uapishka (Monts Groulx) Biosphere Reserve | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-0511 | Mount Royal Regional Park | R-G7 step 2 | Québec prote: '' (record 57, ~488 ac, pin inside) | candidate: name match | 2026-10-30 | gis-hunter |
+| CA-0511 | Mount Royal Regional Park | R-G7 step 2 | Québec prote: '' (record 57, ~488 ac, pin inside) · no proper name to compare | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-0514 | Parc de l'Île-Charron Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-0515 | Parc de la Chute-Montmorency Provincial Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-0956 | Boisé de Marly Forest Reserve | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-0957 | Boisé de Tequenonday Forest Reserve | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-0958 | Boisé des Compagnons-de-Cartier Forest Reserve | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-0959 | La Promenade Samuel-De Champlain Provincial Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-0960 | Morgan Arboretum Forest Reserve | R-G7 step 2 | CPCAD / Parks Canada: 'Senneville Bird Sanctuary' (record 22291, ~1,352 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
+| CA-0960 | Morgan Arboretum Forest Reserve | R-G7 step 2 | CPCAD / Parks Canada: 'Senneville Bird Sanctuary' (record 22291, ~1,352 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-0961 | Parc André-J.-Côté Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-0962 | Parc Angrignon Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-0964 | Parc Cartier-Roberval Archeological Reserve | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
@@ -34,7 +34,7 @@
 | CA-0982 | Parc du lac Claude Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-0983 | Parc du Mont-Fortin Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-0984 | Parc du Mont-Jacob Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-0985 | Parc écologique Jean-Paul-Forand du Mont-Shefford Ecological Reserve | R-G7 step 2 | Québec prote: '' (record 3647, ~287 ac, pin inside) | candidate: name match | 2026-10-30 | gis-hunter |
+| CA-0985 | Parc écologique Jean-Paul-Forand du Mont-Shefford Ecological Reserve | R-G7 step 2 | Québec prote: '' (record 3647, ~287 ac, pin inside) · no proper name to compare | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-0986 | Parc Frédéric-Back Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-0987 | Parc Hermitage (Pointe-Claire) Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-0988 | Parc Historique de la Croix de Sainte-Anne Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
@@ -43,32 +43,32 @@
 | CA-0991 | Parc Jean-Baptiste Rolland Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-0992 | Parc La Fontaine Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-0993 | Parc Lafontaine Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-0994 | Parc Maisonneuve Regional Park | R-G7 step 3 | lead agrile_parc_maisonneuve_1 (https://services5.arcgis.com/ncjvTc8Zi7Btecnp/arcgis/rest/services/agrile_parc_maisonneuve_1/FeatureServer); lead arbres_parc_maisonneuve (https://services5.arcgis.com/ncjvTc8Zi7Btecnp/arcgis/rest/services/arbres_parc_maisonneuve/FeatureServer) | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
+| CA-0994 | Parc Maisonneuve Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-0995 | Parc-nature de l'Île-de-la-Visitation Nature Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-1000 | Parc-nature du Ruisseau-De Montigny Nature Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-1001 | Parc naturel Terra-Cotta Nature Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-1002 | Parc Regard-sur-le-Fleuve Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-1003 | Parc régional Bois de Belle-Rivière Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-1004 | Parc régional de Beauharnois-Salaberry Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-1005 | Parc régional de la Forêt Ouareau Regional Park | R-G7 step 2 | Québec Parc ~3: 'Parc régional de la Forêt Ouareau' (record None, ~39,238 ac, pin inside) | candidate: name match | 2026-10-30 | gis-hunter |
-| CA-1006 | Parc régional Montagne du Diable Regional Park | R-G7 step 2 | Québec Parc ~3: 'Parc régional de la Montagne du Diable' (record None, ~23,928 ac, pin inside) | candidate: name match | 2026-10-30 | gis-hunter |
+| CA-1005 | Parc régional de la Forêt Ouareau Regional Park | R-G7 step 2 | Québec Parc ~3: 'Parc régional de la Forêt Ouareau' (record None, ~39,238 ac, pin inside) · same name, but 8 parks share this record (sectors of one park, or a container) | candidate: LIKELY (part of the name shared) | 2026-10-30 | gis-hunter |
+| CA-1006 | Parc régional Montagne du Diable Regional Park | R-G7 step 2 | Québec Parc ~3: 'Parc régional de la Montagne du Diable' (record None, ~23,928 ac, pin inside) · same name, but 8 parks share this record (sectors of one park, or a container) | candidate: LIKELY (part of the name shared) | 2026-10-30 | gis-hunter |
 | CA-1007 | Parc régional de la Rivière-du-Nord (Chutes Wilson) Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-1008 | Parc régional des Appalaches Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-1009 | Parc régional des Chutes Monte-à-Peine-et-des-Dalles Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-1010 | Parc régional des Grèves Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-1011 | Parc régional du Massif du Sud Regional Park | R-G7 step 2 | Québec Parc ~3: 'Parc régional du Massif du Sud' (record None, ~27,980 ac, pin inside) | candidate: name match | 2026-10-30 | gis-hunter |
-| CA-1012 | Parc régional du Mont-Ham Regional Park | R-G7 step 2 | Québec Parc ~3: 'Parc régional du Mont-Ham' (record None, ~4,920 ac, pin inside) | candidate: name match | 2026-10-30 | gis-hunter |
+| CA-1011 | Parc régional du Massif du Sud Regional Park | R-G7 step 2 | Québec Parc ~3: 'Parc régional du Massif du Sud' (record None, ~27,980 ac, pin inside) · same name, but 8 parks share this record (sectors of one park, or a container) | candidate: LIKELY (part of the name shared) | 2026-10-30 | gis-hunter |
+| CA-1012 | Parc régional du Mont-Ham Regional Park | R-G7 step 2 | Québec Parc ~3: 'Parc régional du Mont-Ham' (record None, ~4,920 ac, pin inside) · same name, but 8 parks share this record (sectors of one park, or a container) | candidate: LIKELY (part of the name shared) | 2026-10-30 | gis-hunter |
 | CA-1013 | Parc regional du Poisson Blanc Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-1015 | Parc riverain de la Sainte-Anne Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-1016 | Parc Rosaire-Gauthier Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-1017 | Parc Sir William Price (aka Parc Ball) Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-1018 | Parc Stewart (Stewart Hall) Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-1019 | Plaines d'Abraham National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-1020 | RécréoParc de Sainte-Catherine Regional Park | R-G7 step 2 | Québec prote: '' (record 2156, ~1,601 ac, pin inside) | inside-other (several park records under the pin: R-G7 step 4) | 2026-10-30 | gis-hunter |
+| CA-1020 | RécréoParc de Sainte-Catherine Regional Park | R-G7 step 2 | Québec prote: '' (record 2156, ~1,601 ac, pin inside) · no proper name to compare | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-1031 | Réserve naturelle de Pointe-Yamachiche Nature Reserve | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-1036 | Vallee Bras-du-Nord Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-1037 | Zone Portuaire de Chicoutimi Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-1922 | Banc-des-AmÃ©ricains Marine Nature Reserve | R-G7 step 2 | Québec prote: '' (record 4832, ~244,846 ac, pin inside) | candidate: name match | 2026-10-30 | gis-hunter |
+| CA-1922 | Banc-des-AmÃ©ricains Marine Nature Reserve | R-G7 step 2 | CPCAD / Parks Canada: 'Banc-des-Américains Marine Protected Area' (record 21940, ~74,307 ac, pin inside) · same proper name (marine) | candidate: SURE (same proper name) | 2026-10-30 | gis-hunter |
 | CA-1929 | Baie Comeau Important Bird Area Nature Reserve | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-1944 | Le poste de traite de Chicoutimi National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-1945 | Château Frontenac National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
@@ -95,9 +95,9 @@
 | CA-2029 | Parc Irenee-Benoit Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-2033 | Parc Leon-Arcand Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-2034 | Parc Lineaire Le P'tit Train du Nord Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-2039 | Ile aux Fraises Migratory Bird Sanctuary | R-G7 step 2 | Québec Parc : 'Parc marin du Saguenay - Saint-Laurent' (record None, ~305,410 ac, pin inside) | inside-other (several park records under the pin: R-G7 step 4) | 2026-10-30 | gis-hunter |
-| CA-2042 | Ile Blanche Migratory Bird Sanctuary | R-G7 step 2 | Québec Parc : 'Parc marin du Saguenay - Saint-Laurent' (record None, ~305,410 ac, pin inside) | inside-other (several park records under the pin: R-G7 step 4) | 2026-10-30 | gis-hunter |
-| CA-2043 | Perce UNESCO Global Geopark | R-G7 step 3 | lead Unesco_Global_Geoparks_2023_05_05_Public (https://services8.arcgis.com/EmWvvrOhuQfw1gSw/arcgis/rest/services/Unesco_Global_Geoparks_2023_05_05_Public/FeatureServer); lead UNESCO_GLOBAL_GEOPARKS_2018_12_01 (https://services8.arcgis.com/EmWvvrOhuQfw1gSw/arcgis/rest/services/UNESCO_GLOBAL_GEOPARKS | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
+| CA-2039 | Ile aux Fraises Migratory Bird Sanctuary | R-G7 step 2 | Québec Parc : 'Parc marin du Saguenay - Saint-Laurent' (record None, ~305,410 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
+| CA-2042 | Ile Blanche Migratory Bird Sanctuary | R-G7 step 2 | Québec Parc : 'Parc marin du Saguenay - Saint-Laurent' (record None, ~305,410 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
+| CA-2043 | Perce UNESCO Global Geopark | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-2046 | Parc Parent Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-2048 | Parc Prevost Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-2049 | Parc Val-des-Monts Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
@@ -184,7 +184,7 @@
 | CA-4913 | Louis S. St. Laurent National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4915 | Maillou House National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4916 | Manoir Papineau National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-4917 | Montmorency Park National Historic Site | R-G7 step 3 | lead Occupation du sol 2021 en 11 postes de légende Soisy-sous-Montmorency (https://geoweb.iau-idf.fr/agsmap1/rest/services/OPENDATA/OpendataIAU4/MapServer/21); lead Occupation du sol 2021 en 11 postes de légende Montmorency (https://geoweb.iau-idf.fr/agsmap1/rest/services/OPENDATA/OpendataIAU4/MapS | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
+| CA-4917 | Montmorency Park National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4918 | Pointe-au-Père Lighthouse National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4919 | Quebec Garrison Club National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4920 | Sainte-Anne-de-Bellevue Canal National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
@@ -198,7 +198,7 @@
 | CA-4947 | Parc Nature Eco-Odyssee Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4948 | Parc regional du Mont-Saint-Joseph Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4949 | Parc Aventures Cap Jaseux Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-4950 | Parc cotier Kiskotuk Regional Park | R-G7 step 2 | Québec prote: '' (record 3578, ~1,232 ac, pin inside) | inside-other (several park records under the pin: R-G7 step 4) | 2026-10-30 | gis-hunter |
+| CA-4950 | Parc cotier Kiskotuk Regional Park | R-G7 step 2 | Québec prote: '' (record 3578, ~1,232 ac, pin inside) · no proper name to compare | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-4951 | Parc de Gros-Cap Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4952 | Parc de la caverne Trou de la Fee Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4953 | Parc de la Gorge de Coaticook Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
@@ -211,16 +211,16 @@
 | CA-4960 | Parc Michel-Chartrand Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4961 | Parc Nature La Gabelle Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4962 | Parc naturel regional de Portneuf Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-4963 | Parc regional de la Chute-a-Bull Regional Park | R-G7 step 2 | Québec Parc ~3: 'Parc régional de la Chute-à-Bull' (record None, ~454 ac, pin inside) | candidate: name match | 2026-10-30 | gis-hunter |
+| CA-4963 | Parc regional de la Chute-a-Bull Regional Park | R-G7 step 2 | Québec Parc ~3: 'Parc régional de la Chute-à-Bull' (record None, ~454 ac, pin inside) · same name, but 8 parks share this record (sectors of one park, or a container) | candidate: LIKELY (part of the name shared) | 2026-10-30 | gis-hunter |
 | CA-4964 | Parc regional de la riviere Gentilly Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4965 | Parc régional de la rivière Mitis Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-4966 | Parc regional de la Seigneurie-du-Lac-Matapedia Regional Park | R-G7 step 2 | Québec Parc ~3: 'Parc régional de la Seigneurie du Lac Matapédia' (record None, ~41,900 ac, pin inside) | candidate: name match | 2026-10-30 | gis-hunter |
+| CA-4966 | Parc regional de la Seigneurie-du-Lac-Matapedia Regional Park | R-G7 step 2 | Québec Parc ~3: 'Parc régional de la Seigneurie du Lac Matapédia' (record None, ~41,900 ac, pin inside) · same name, but 8 parks share this record (sectors of one park, or a container) | candidate: LIKELY (part of the name shared) | 2026-10-30 | gis-hunter |
 | CA-4967 | Parc regional des Grandes-Coulees Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4968 | Parc régional des Grandes-Rivières du lac Saint-Jean Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4969 | Parc regional des Sept-Chutes Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4970 | Parc regional du Lac 31 Milles Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4971 | Parc regional du Lac Taureau Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-4972 | Parc regional Kiamika Regional Park | R-G7 step 2 | Québec Parc ~3: 'Parc régional du réservoir Kiamika' (record None, ~33,980 ac, pin inside) | candidate: name match | 2026-10-30 | gis-hunter |
+| CA-4972 | Parc regional Kiamika Regional Park | R-G7 step 2 | Québec Parc ~3: 'Parc régional du réservoir Kiamika' (record None, ~33,980 ac, pin inside) · container: one record under 8 parks | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-4973 | Parc des Voltigeurs Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4974 | Parc du Sanctuaire St-Majorique Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4975 | Parc regional de la Foret Drummond Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
@@ -246,7 +246,7 @@
 | CA-4996 | Parc de la Riviere-Bourbon Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4997 | Parc écomaritime de l'Anse-du-Port Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4998 | Site regional de la montagne de la Croix Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-4999 | Archipel des Sept Iles Regional Park | R-G7 step 2 | Québec prote: '' (record 5512, ~16,278 ac, pin inside) | candidate: name match | 2026-10-30 | gis-hunter |
+| CA-4999 | Archipel des Sept Iles Regional Park | R-G7 step 2 | Québec prote: '' (record 5512, ~16,278 ac, pin inside) · no proper name to compare | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-5000 | Centre d'interpretation des marais sales Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5001 | Parc des Chutes de Montauban Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5002 | Parc des Montagnes Noires de Ripon Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
@@ -286,16 +286,16 @@
 | CA-5040 | Parc Lucien-Blanchard Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5041 | Parc regional du Mont Morissette Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5043 | Parc Saint-Jean-Bosco Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-5044 | Parc ecoforestier de Johnville Regional Park | R-G7 step 2 | Québec prote: '' (record 622, ~421 ac, pin inside) | candidate: name match | 2026-10-30 | gis-hunter |
+| CA-5044 | Parc ecoforestier de Johnville Regional Park | R-G7 step 2 | Québec prote: '' (record 622, ~421 ac, pin inside) · no proper name to compare | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-5045 | Domaine Taschereau - Parc nature Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5046 | Parc du Mont Arthabaska Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5047 | Sentier ecologique de Nedelec Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5049 | Parc Harold F. Baldwin (Mont Pinacle) Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5050 | Parc des Pionniers (Saint-Donat) Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-5051 | Parc du Marecage-des-Scots Regional Park | R-G7 step 2 | Québec Parc ~3: 'Parc régional du Marécage des Scots' (record None, ~8,115 ac, pin inside) | candidate: name match | 2026-10-30 | gis-hunter |
-| CA-5052 | Parc Nature de Pointe-aux-Outardes Regional Park | R-G7 step 2 | Québec prote: '' (record 5534, ~235 ac, pin inside) | candidate: name match | 2026-10-30 | gis-hunter |
+| CA-5051 | Parc du Marecage-des-Scots Regional Park | R-G7 step 2 | Québec Parc ~3: 'Parc régional du Marécage des Scots' (record None, ~8,115 ac, pin inside) · same name, but 8 parks share this record (sectors of one park, or a container) | candidate: LIKELY (part of the name shared) | 2026-10-30 | gis-hunter |
+| CA-5052 | Parc Nature de Pointe-aux-Outardes Regional Park | R-G7 step 2 | Québec prote: '' (record 5534, ~235 ac, pin inside) · no proper name to compare | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-5053 | Parc des Chutes-de-la Petite-Rivière-Bostonnais Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-5054 | Foret Montmorency Regional Park | R-G7 step 2 | Québec Réser: 'Réserve faunique des Laurentides' (record None, ~1,930,983 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
+| CA-5054 | Foret Montmorency Regional Park | R-G7 step 2 | Québec Réser: 'Réserve faunique des Laurentides' (record None, ~1,930,983 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-5055 | Les Sentiers de la Presqu'île Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5056 | Parc du Grand-Heron Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5057 | Le site des Chutes et Marais Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
@@ -355,7 +355,7 @@
 | CA-5883 | Davie Shipyard National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5884 | De Salaberry House National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5886 | Erskine and American United Church National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-5888 | First Geodetic Survey Station National Historic Site | R-G7 step 2 | Québec Parc ~1: 'Parc de la Gatineau' (record None, ~89,067 ac, pin inside) | inside-other (several park records under the pin: R-G7 step 4) | 2026-10-30 | gis-hunter |
+| CA-5888 | First Geodetic Survey Station National Historic Site | R-G7 step 2 | Québec Parc ~1: 'Parc de la Gatineau' (record None, ~89,067 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-5889 | Former Montréal Custom House National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5890 | Former Shawinigan Aluminum Smelting Complex National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5891 | Fort Charlesbourg Royal National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |

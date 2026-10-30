@@ -2,47 +2,47 @@
 
 | ref | park | step | what was found | result | date | by |
 |---|---|---|---|---|---|---|
-| CA-0023 | Frontenac Arch Biosphere Reserve | R-G7 step 3 | lead Frontenac Arch Biosphere Region Boundary (https://services2.arcgis.com/NzAqpeLbvbvoP3qh/arcgis/rest/services/Frontenac_Arch_Biosphere_Region_Boundary/FeatureServer); lead Frontenac Arch Biosphere Region Boundary (https://services6.arcgis.com/sMxDdLiczOFCdYFP/arcgis/rest/services/Frontenac_Arch_ | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
+| CA-0023 | Frontenac Arch Biosphere Reserve | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-0027 | Georgian Bay Littoral Biosphere Reserve | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-0063 | Niagara Escarpment Biosphere Reserve | R-G7 step 2 | CPCAD / Parks Canada: 'Limehouse Conservation Area' (record 17049, ~164 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
+| CA-0063 | Niagara Escarpment Biosphere Reserve | R-G7 step 2 | CPCAD / Parks Canada: 'Limehouse Conservation Area' (record 17049, ~164 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-0177 | Chapleau Crown Game Preserve | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-0195 | Morning Glory Provincial Nature Reserve | R-G7 step 2 | CPCAD / Parks Canada: 'Duclos Point Provincial Park (Nature Reserve Class)' (record 16436, ~257 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
-| CA-0234 | Ipperwash Dunes & Swales Nature Reserve | R-G7 step 2 | CPCAD / Parks Canada: 'Privately Protected Area (NCC 141947)' (record 5992, ~42 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
-| CA-0259 | La Verendrye Provincial Park | R-G7 step 3 | lead Verendrye 09162026 (https://services6.arcgis.com/UkoLw93M3W6E4ewW/arcgis/rest/services/Verendrye_09162026/FeatureServer) | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
-| CA-0268 | Le Pate Provincial Park | R-G7 step 3 | lead Pate_Nelson_1358_Hundley_Road_Slocomb_AL_36375_to_Lee_County_Line (https://services7.arcgis.com/jF2q3LPxL7PETdYk/arcgis/rest/services/Pate_Nelson_1358_Hundley_Road_Slocomb_AL_36375_to_Lee_County_Line/FeatureServer); lead PATE De Zalmhaven Rotterdam_WSL2 (https://services5.arcgis.com/fxnFqGOVRzV | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
+| CA-0195 | Morning Glory Provincial Nature Reserve | R-G7 step 2 | CPCAD / Parks Canada: 'Duclos Point Provincial Park (Nature Reserve Class)' (record 16436, ~257 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
+| CA-0234 | Ipperwash Dunes & Swales Nature Reserve | R-G7 step 2 | CPCAD / Parks Canada: 'Privately Protected Area (NCC 141947)' (record 5992, ~42 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
+| CA-0259 | La Verendrye Provincial Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
+| CA-0268 | Le Pate Provincial Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-1280 | Abitibi Lake Narrows Wilderness Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-1298 | Bannister Lake Complex Conservation Reserve | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-1300 | Barron Canyon Conservation Reserve | R-G7 step 2 | CPCAD / Parks Canada: 'Algonquin Provincial Park (Natural Environment Class)' (record 16243, ~634,979 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
-| CA-1301 | Barron Canyon National Geologic Trail | R-G7 step 2 | CPCAD / Parks Canada: 'Algonquin Provincial Park (Natural Environment Class)' (record 16243, ~634,979 ac, pin inside) | inside-other (bigger area with another name: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
-| CA-1305 | Bat Cave Wilderness Area | R-G7 step 2 | CPCAD / Parks Canada: 'Cavern Lake Provincial Park (Nature Reserve Class)' (record 16396, ~433 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
-| CA-1312 | Beverly Swamp Conservation Area | R-G7 step 2 | CPCAD / Parks Canada: 'Beverley Swamp Natural Area' (record 16998, ~1,687 ac, pin inside) | candidate: name match | 2026-10-30 | gis-hunter |
-| CA-1340 | Cape Henrietta-Maria Conservation Reserve | R-G7 step 2 | CPCAD / Parks Canada: 'Polar Bear Provincial Park' (record 16422, ~5,651,279 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
-| CA-1346 | Cedar Valley Conservation Area | R-G7 step 3 | lead Cedar Valley College Disabilities Services (https://services.arcgis.com/6dxqrE38upDMg1va/arcgis/rest/services/CVC_DSM_MapSvc/FeatureServer); lead Cedar Valley Highway _ Scenario Model Results (https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Cedar_Valley_Highway___Scenario_Mode | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
-| CA-1349 | Remic Rapids and Bate Island Conservation Park | R-G7 step 2 | CPCAD / Parks Canada: 'Champlain Bridge And Lemieux Islands' (record 22410, ~2 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
-| CA-1366 | Decew Falls Conservation Area | R-G7 step 3 | lead Niagara Falls and Decew (https://services1.arcgis.com/ZXPUOG4dA7682sDQ/arcgis/rest/services/Niagara_Falls_and_Decew/FeatureServer) | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
-| CA-1368 | North Maple Regional Park | R-G7 step 3 | lead North Maple Regional Park (https://services2.arcgis.com/9LnN9037wYhPG904/arcgis/rest/services/North_Maple_Regional_Park/FeatureServer) | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
+| CA-1300 | Barron Canyon Conservation Reserve | R-G7 step 2 | CPCAD / Parks Canada: 'Algonquin Provincial Park (Natural Environment Class)' (record 16243, ~634,979 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
+| CA-1301 | Barron Canyon National Geologic Trail | R-G7 step 2 | CPCAD / Parks Canada: 'Algonquin Provincial Park (Natural Environment Class)' (record 16243, ~634,979 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
+| CA-1305 | Bat Cave Wilderness Area | R-G7 step 2 | CPCAD / Parks Canada: 'Cavern Lake Provincial Park (Nature Reserve Class)' (record 16396, ~433 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
+| CA-1312 | Beverly Swamp Conservation Area | R-G7 step 2 | CPCAD / Parks Canada: 'Beverley Swamp Natural Area' (record 16998, ~1,687 ac, pin inside) · same name, different kind (conservation vs natural); this layer / this area's LIKELY rows under 10% YES so far (demoted) | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
+| CA-1340 | Cape Henrietta-Maria Conservation Reserve | R-G7 step 2 | CPCAD / Parks Canada: 'Polar Bear Provincial Park' (record 16422, ~5,651,279 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
+| CA-1346 | Cedar Valley Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
+| CA-1349 | Remic Rapids and Bate Island Conservation Park | R-G7 step 2 | CPCAD / Parks Canada: 'Champlain Bridge And Lemieux Islands' (record 22410, ~2 ac, pin inside) · one shared word (island) only | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
+| CA-1366 | Decew Falls Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
+| CA-1368 | North Maple Regional Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-1386 | Eau Claire Gorge Conservation Reserve | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-1394 | Fairy Point Wilderness Area | R-G7 step 2 | CPCAD / Parks Canada: 'Missinaibi Provincial Park (Waterway Class)' (record 16387, ~282,828 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
-| CA-1408 | Ganley Harbour Wilderness Area | R-G7 step 2 | CPCAD / Parks Canada: 'Lake Superior Highlands Conservation Reserve' (record 17732, ~131,732 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
-| CA-1439 | Hilliardton Marsh Conservation Reserve | R-G7 step 2 | CPCAD / Parks Canada: 'Blanche River Conservation Reserve' (record 15890, ~13,619 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
-| CA-1467 | Kishkebus Lake Wilderness Area | R-G7 step 2 | CPCAD / Parks Canada: 'Bon Echo Provincial Park (Natural Environment Class)' (record 16510, ~20,378 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
+| CA-1394 | Fairy Point Wilderness Area | R-G7 step 2 | CPCAD / Parks Canada: 'Missinaibi Provincial Park (Waterway Class)' (record 16387, ~282,828 ac, pin inside) · container: one record under 3 parks | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
+| CA-1408 | Ganley Harbour Wilderness Area | R-G7 step 2 | CPCAD / Parks Canada: 'Lake Superior Highlands Conservation Reserve' (record 17732, ~131,732 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
+| CA-1439 | Hilliardton Marsh Conservation Reserve | R-G7 step 2 | CPCAD / Parks Canada: 'Blanche River Conservation Reserve' (record 15890, ~13,619 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
+| CA-1467 | Kishkebus Lake Wilderness Area | R-G7 step 2 | CPCAD / Parks Canada: 'Bon Echo Provincial Park (Natural Environment Class)' (record 16510, ~20,378 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-1512 | McLaughlin Bay Reserve Wildlife Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-1535 | Murray Overlook Scenic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-1542 | New Brunswick House Post Wilderness Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-1559 | Old Brunswick House Wilderness Area | R-G7 step 2 | CPCAD / Parks Canada: 'Missinaibi Provincial Park (Waterway Class)' (record 16387, ~282,828 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
-| CA-1566 | Outer Barn Island Wilderness Area | R-G7 step 2 | CPCAD / Parks Canada: 'Lake Nipigon Conservation Reserve' (record 15937, ~424,654 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
+| CA-1559 | Old Brunswick House Wilderness Area | R-G7 step 2 | CPCAD / Parks Canada: 'Missinaibi Provincial Park (Waterway Class)' (record 16387, ~282,828 ac, pin inside) · container: one record under 3 parks | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
+| CA-1566 | Outer Barn Island Wilderness Area | R-G7 step 2 | CPCAD / Parks Canada: 'Lake Nipigon Conservation Reserve' (record 15937, ~424,654 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-1573 | Peisk Lake (Payshk Ohsahgaheegahn) Conservation Reserve | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-1574 | Petawawa Centennial Park Conservation Reserve | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-1587 | Tiffany Falls Conservation Area | R-G7 step 3 | lead Tiffany Falls Poll Species_fieldworker (https://services6.arcgis.com/43lzadyJDgUhaZ62/arcgis/rest/services/survey123_f207772ef17543788446db399826ebaf_fieldworker/FeatureServer) | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
+| CA-1587 | Tiffany Falls Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-1596 | Hog's Back Conservation Reserve | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-1599 | South Point Trail (Rondeau) Provincial Park | R-G7 step 2 | CPCAD / Parks Canada: 'Rondeau Provincial Park (Natural Environment Class)' (record 16468, ~8,047 ac, pin inside) | candidate: name match | 2026-10-30 | gis-hunter |
+| CA-1599 | South Point Trail (Rondeau) Provincial Park | R-G7 step 2 | CPCAD / Parks Canada: 'Rondeau Provincial Park (Natural Environment Class)' (record 16468, ~8,047 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-1620 | Sherman Falls Conservation Reserve | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-1621 | Shirleys Bay Conservation Reserve | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-1651 | Summit Muskeg Preserve Conservation Reserve | R-G7 step 2 | CPCAD / Parks Canada: 'Dundas Valley Conservation Area' (record 16999, ~2,914 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
+| CA-1651 | Summit Muskeg Preserve Conservation Reserve | R-G7 step 2 | CPCAD / Parks Canada: 'Dundas Valley Conservation Area' (record 16999, ~2,914 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-1657 | Glengarry Landing National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-1658 | Sunnidale Recreation Park | R-G7 step 3 | lead Sunnidale_parking_dots (https://services3.arcgis.com/C964zBpHgJUpj4d0/arcgis/rest/services/Sunnidale_parking_dots/FeatureServer); lead Sunnidale_Trails (https://services3.arcgis.com/C964zBpHgJUpj4d0/arcgis/rest/services/Sunnidale_Trails/FeatureServer) | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
-| CA-1659 | Dumfries Conservation Area | R-G7 step 3 | lead Distribution Pipe Network Dumfries and Galloway (https://services-eu1.arcgis.com/UnrqlFBt9cFAdjsP/arcgis/rest/services/Distribution_Pipe_Network_Dumfries_and_Galloway/FeatureServer); lead Dumfries & Galloway TTG Management Plans (https://services7.arcgis.com/VtA8FmgpdQAUxVEF/ArcGIS/rest/service | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
-| CA-1660 | Edenvale Conservation Area | R-G7 step 3 | lead Buffer_of_Edenvale_Hospitals (https://services-eu1.arcgis.com/183O4es8xCoQDsBe/arcgis/rest/services/Buffer_of_Edenvale_Hospitals/FeatureServer); lead Travel_from_Edenvale_Hospitals_(2_3_Kilometers) (https://services-eu1.arcgis.com/183O4es8xCoQDsBe/arcgis/rest/services/Travel_from_Edenvale_Hospi | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
+| CA-1658 | Sunnidale Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
+| CA-1659 | Dumfries Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
+| CA-1660 | Edenvale Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-1661 | Fort Willow Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-1668 | Toogood Pond Park Conservation Reserve | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-1678 | New Lowell Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
@@ -51,11 +51,11 @@
 | CA-1695 | Lake Wawanosh Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-1696 | Wawanosh Park Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-1697 | Wawanosh Valley Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-1707 | Whitefish Falls Wilderness Area | R-G7 step 2 | CPCAD / Parks Canada: 'Missinaibi Provincial Park (Waterway Class)' (record 16387, ~282,828 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
+| CA-1707 | Whitefish Falls Wilderness Area | R-G7 step 2 | CPCAD / Parks Canada: 'Missinaibi Provincial Park (Waterway Class)' (record 16387, ~282,828 ac, pin inside) · container: one record under 3 parks | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-4853 | Battle Hill National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4854 | Battle of Cooks Mills National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4855 | Battle of the Windmill National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-4857 | Beausoleil Island National Historic Site | R-G7 step 2 | CPCAD / Parks Canada: 'Georgian Bay Islands National Park Of Canada' (record 21992, ~3,010 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
+| CA-4857 | Beausoleil Island National Historic Site | R-G7 step 2 | CPCAD / Parks Canada: 'Georgian Bay Islands National Park Of Canada' (record 21992, ~3,010 ac, pin inside) · one shared word (island) only | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-4858 | Bellevue House National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4859 | Bethune Memorial House National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4860 | Bois Blanc Island Lighthouse and Blockhouse National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
@@ -86,7 +86,7 @@
 | CA-5084 | South March Highlands Conservation Forest Natural Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5094 | Central Chambers National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5095 | Central Experimental Farm National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-5099 | Forested Dunes Nature Reserve | R-G7 step 2 | CPCAD / Parks Canada: 'Privately Protected Area (NCC 140618)' (record 5736, ~143 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
+| CA-5099 | Forested Dunes Nature Reserve | R-G7 step 2 | CPCAD / Parks Canada: 'Privately Protected Area (NCC 140618)' (record 5736, ~143 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-5101 | Glenorchy Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5106 | Langevin National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5109 | National Arts Centre National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
@@ -96,7 +96,7 @@
 | CA-5115 | Public Grounds of the Parliament Buildings National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5116 | Rideau Hall and Landscaped Grounds National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5117 | Royal Canadian Mint National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-5118 | Selwyn Beach Conservation Reserve | R-G7 step 2 | ON-ORCA Oton: '' (record 12, ~76 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
+| CA-5118 | Selwyn Beach Conservation Reserve | R-G7 step 2 | ON-ORCA Oton: '' (record 12, ~76 ac, pin inside) · no proper name to compare | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-5290 | Amherstburg First Baptist Church National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5292 | Amherstburg Navy Yard National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5293 | Ann Baillie Building National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
@@ -119,19 +119,19 @@
 | CA-5315 | Utopia Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5316 | Wolseley Barracks National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5351 | Battle of Stoney Creek National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-5352 | Backus Woods Forest Reserve | R-G7 step 2 | CPCAD / Parks Canada: 'Privately Protected Area (NCC 141091)' (record 5936, ~332 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
+| CA-5352 | Backus Woods Forest Reserve | R-G7 step 2 | CPCAD / Parks Canada: 'Privately Protected Area (NCC 141091)' (record 5936, ~332 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-5354 | Burlington Heights National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5356 | Confederation Beach Park Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5360 | Dundurn Castle National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5362 | Fifty Point Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-5364 | Griffin House National Historic Site | R-G7 step 2 | CPCAD / Parks Canada: 'Dundas Valley Conservation Area' (record 16999, ~2,914 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
+| CA-5364 | Griffin House National Historic Site | R-G7 step 2 | CPCAD / Parks Canada: 'Dundas Valley Conservation Area' (record 16999, ~2,914 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-5365 | Hamilton Waterworks National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5367 | McQuesten House / Whitehern National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5369 | Her Majesty's / St. Paul's Chapel of the Mohawks National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5371 | Royal Botanical Gardens National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5505 | Oro African Methodist Episcopal Church National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5506 | Nine Mile Portage Heritage Trail Recreation Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-5507 | Fort Norfolk National Historic Site | R-G7 step 2 | CPCAD / Parks Canada: 'Turkey Point Provincial Park (Recreational Class)' (record 16483, ~720 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
+| CA-5507 | Fort Norfolk National Historic Site | R-G7 step 2 | CPCAD / Parks Canada: 'Turkey Point Provincial Park (Recreational Class)' (record 16483, ~720 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-5527 | Waterloo Pioneer Memorial Tower National Heritage Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5528 | Mackenzie Glen District Park Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5535 | Airmen's Park National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
@@ -140,9 +140,9 @@
 | CA-5550 | Bathurst Glen Golf Course Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5553 | Bond Lake Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5556 | Glassco Park Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-5557 | East Duffins Headwaters Conservation Area | R-G7 step 2 | CPCAD / Parks Canada: 'Glen Major Forest' (record 17364, ~850 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
+| CA-5557 | East Duffins Headwaters Conservation Area | R-G7 step 2 | CPCAD / Parks Canada: 'Glen Major Forest' (record 17364, ~850 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-5560 | West Duffins Headwaters Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-5565 | Dofasco 2000 Trail Conservation Area | R-G7 step 2 | CPCAD / Parks Canada: 'Devil's Punch Bowl Conservation Area & Saltfleet Conservation Area' (record 17086, ~341 ac, pin inside) | inside-other (bigger area with another name: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
+| CA-5565 | Dofasco 2000 Trail Conservation Area | R-G7 step 2 | CPCAD / Parks Canada: 'Devil's Punch Bowl Conservation Area & Saltfleet Conservation Area' (record 17086, ~341 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-5567 | Canal Park Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5605 | FWR Dickson Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5607 | Starkey Hill Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
@@ -165,20 +165,20 @@
 | CA-5624 | Kirk-Cousins Management Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5625 | Union Pond Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5626 | Kettle Creek Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-5628 | Bruce Trail National Recreation Trail | R-G7 step 2 | ON-GSCA Grey: 'Inglis Falls' (record 1012, ~480 ac, pin inside) | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
+| CA-5628 | Bruce Trail National Recreation Trail | R-G7 step 2 | ON-GSCA Grey: 'Inglis Falls' (record 1012, ~480 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-5631 | Cavan Swamp Wildlife Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5634 | Highland Glen Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-5636 | Hazel Bird Nature Reserve | R-G7 step 2 | CPCAD / Parks Canada: 'Privately Protected Area (NCC 141284)' (record 5966, ~99 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
+| CA-5636 | Hazel Bird Nature Reserve | R-G7 step 2 | CPCAD / Parks Canada: 'Privately Protected Area (NCC 141284)' (record 5966, ~99 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-5641 | Sylvan Glen Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5644 | Pinhey’s Point National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5645 | Ball's Mill Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-5646 | Ganaraska Millennium Conservation Area | R-G7 step 2 | ON-GANA Gana: 'Conservation Area' (record None, ~47 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
-| CA-5650 | Thurne Parks Conservation Area | R-G7 step 3 | lead WFD_Thurne_Combined_WB_Catchment (https://services8.arcgis.com/GeRKIvCqdDH9Kg03/arcgis/rest/services/WFD_Thurne_Combined_WB_Catchment/FeatureServer); lead Thurne Parish (https://services7.arcgis.com/NXULfNGIlsKmpCJD/arcgis/rest/services/Thurne_Parish/FeatureServer) | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
+| CA-5646 | Ganaraska Millennium Conservation Area | R-G7 step 2 | ON-GANA Gana: 'Conservation Area' (record None, ~47 ac, pin inside) · no proper name to compare | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
+| CA-5650 | Thurne Parks Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5659 | Bognor-Marsh Management Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5662 | Administration Centre & Arboretum Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5663 | Hepworth Management Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5664 | Massie Hills Management Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-5666 | Bighead River Management Area | R-G7 step 3 | lead FWS Midwest and Northeast Regions FAC Bighead and Silver Carp eDNA Data Feature Layer View (https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/USFWS_Great_Lakes_Region_3_Bighead_and_Silver_Carp_eDNA_Data_Feature_Layer_View/FeatureServer); lead Bighead_Carp_Hot_Spots (https://serv | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
+| CA-5666 | Bighead River Management Area | R-G7 step 3 | lead FWS Midwest and Northeast Regions FAC Bighead and Silver Carp eDNA Data Feature Layer View (https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/USFWS_Great_Lakes_Region_3_Bighead_and_Silver_Carp_eDNA_Data_Feature_Layer_View/FeatureServer) | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
 | CA-5925 | Falls Reserve Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5926 | Larose Forest Recreation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5927 | Castle Kilbride National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
@@ -198,7 +198,7 @@
 | CA-5954 | Maplelawn & Gardens National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5958 | Hampton Park Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5960 | William T. Foster Woods National Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-5981 | Allen Park Conservation Area | R-G7 step 2 | ON-SVCA Grey: 'Allan Park Management Unit' (record 814, ~269 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
+| CA-5981 | Allen Park Conservation Area | R-G7 step 2 | ON-SVCA Grey: 'Allan Park Management Unit' (record 814, ~269 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-5989 | Sulpher Spring Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5993 | Burgess Park Trail Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5998 | Fullarton Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
@@ -218,8 +218,8 @@
 | CA-6097 | Tower at Christian Island National Heritage Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-6139 | Fingal Wildlife Management Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-6155 | Fisher Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-6181 | Cedar Island Cathcart Tower National Heritage Site | R-G7 step 2 | CPCAD / Parks Canada: 'Thousand Islands National Park Of Canada' (record 22041, ~5,635 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
-| CA-6199 | Smiths Falls Bascule Bridge National Historic Site | R-G7 step 2 | CPCAD / Parks Canada: 'Rideau Canal National Historic Site' (record 22063, ~51,227 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
+| CA-6181 | Cedar Island Cathcart Tower National Heritage Site | R-G7 step 2 | CPCAD / Parks Canada: 'Thousand Islands National Park Of Canada' (record 22041, ~5,635 ac, pin inside) · one shared word (island) only | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
+| CA-6199 | Smiths Falls Bascule Bridge National Historic Site | R-G7 step 2 | CPCAD / Parks Canada: 'Rideau Canal National Historic Site' (record 22063, ~51,227 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-6204 | Vincent Massey Conservation Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-6209 | High Falls Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-6210 | Battle of Chippawa (Battlefield Park) National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
@@ -246,7 +246,7 @@
 | CA-6511 | Humber River National Wild & Scenic River | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-6512 | Kìwekì Point National Park | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-6513 | Brockville Railway Tunnel Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-6514 | Battle of Crysler's Farm National Historic Site | R-G7 step 2 | CPCAD / Parks Canada: 'Upper Canada Migratory Bird Sanctuary' (record 22313, ~6,451 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
+| CA-6514 | Battle of Crysler's Farm National Historic Site | R-G7 step 2 | CPCAD / Parks Canada: 'Upper Canada Migratory Bird Sanctuary' (record 22313, ~6,451 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-6604 | Mattawa Island Conservation Area | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-6617 | H. R. Frink Conservation Area | R-G7 step 2 | CPCAD / Parks Canada: 'H.R. Frink Conservation Area' (record 17102, ~499 ac, pin inside) | candidate: name match | 2026-10-30 | gis-hunter |
-| CA-6619 | Depot Lakes Conservation Area | R-G7 step 2 | CPCAD / Parks Canada: 'Depot Lakes Conservation Area South Conservation Reserve' (record 17153, ~1,177 ac, pin inside) | candidate: name match | 2026-10-30 | gis-hunter |
+| CA-6617 | H. R. Frink Conservation Area | R-G7 step 2 | CPCAD / Parks Canada: 'H.R. Frink Conservation Area' (record 17102, ~499 ac, pin inside) · same proper name (conservation) | candidate: SURE (same proper name) | 2026-10-30 | gis-hunter |
+| CA-6619 | Depot Lakes Conservation Area | R-G7 step 2 | CPCAD / Parks Canada: 'Depot Lakes Conservation Area South Conservation Reserve' (record 17153, ~1,177 ac, pin inside) · shared depot, lake; extra: park - / record south; this layer / this area's LIKELY rows under 10% YES so far (demoted) | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |

@@ -5,6 +5,7 @@
  "parks": {
   "CA-0514": {
    "park": "Parc de l'Île-Charron Recreation Park",
+   "area": "CA-QC",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -28,6 +29,7 @@
   },
   "CA-0960": {
    "park": "Morgan Arboretum Forest Reserve",
+   "area": "CA-QC",
    "why_not": "pin inside",
    "hits": [
     {
@@ -36,7 +38,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 22291,
      "record_name": "Senneville Bird Sanctuary",
-     "acres_approx": 1352
+     "acres_approx": 1352,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -55,10 +59,11 @@
     "A CPCAD / Parks Canada: hit",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-0971": {
    "park": "Parc de la Pointe-aux-Pins Recreation Park",
+   "area": "CA-QC",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -82,6 +87,7 @@
   },
   "CA-0980": {
    "park": "Parc du Bois-de-Coulonge Regional Park",
+   "area": "CA-QC",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -105,6 +111,7 @@
   },
   "CA-1002": {
    "park": "Parc Regard-sur-le-Fleuve Recreation Park",
+   "area": "CA-QC",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -128,6 +135,7 @@
   },
   "CA-1020": {
    "park": "RécréoParc de Sainte-Catherine Regional Park",
+   "area": "CA-QC",
    "why_not": "pin inside",
    "hits": [
     {
@@ -136,7 +144,9 @@
      "agency": "Québec prote",
      "record": 2156,
      "record_name": "",
-     "acres_approx": 1601
+     "acres_approx": 1601,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     },
     {
      "verdict": "name mismatch",
@@ -144,7 +154,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 22156,
      "record_name": "Île aux Hérons Bird Sanctuary",
-     "acres_approx": 1352
+     "acres_approx": 1352,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -163,10 +175,11 @@
     "A CPCAD / Parks Canada: hit",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "inside-other (several park records under the pin: R-G7 step 4)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-1922": {
    "park": "Banc-des-AmÃ©ricains Marine Nature Reserve",
+   "area": "CA-QC",
    "why_not": "pin inside",
    "hits": [
     {
@@ -175,7 +188,9 @@
      "agency": "Québec prote",
      "record": 4832,
      "record_name": "",
-     "acres_approx": 244846
+     "acres_approx": 244846,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     },
     {
      "verdict": "name match",
@@ -183,7 +198,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 15658,
      "record_name": "Proposed Banc-des-Américains Aquatic Reserve",
-     "acres_approx": 244846
+     "acres_approx": 244846,
+     "tier": "UNLIKELY",
+     "why": "shared amaricain, banc; extra: park - / record aquatic, proposed; this layer / this area's LIKELY rows under 10% YES so far (demoted)"
     },
     {
      "verdict": "name match",
@@ -191,7 +208,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 21940,
      "record_name": "Banc-des-Américains Marine Protected Area",
-     "acres_approx": 74307
+     "acres_approx": 74307,
+     "tier": "SURE",
+     "why": "same proper name (marine)"
     }
    ],
    "leads": [],
@@ -210,10 +229,11 @@
     "A CPCAD / Parks Canada: hit",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-1929": {
    "park": "Baie Comeau Important Bird Area Nature Reserve",
+   "area": "CA-QC",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -237,6 +257,7 @@
   },
   "CA-1945": {
    "park": "Château Frontenac National Historic Site",
+   "area": "CA-QC",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -260,6 +281,7 @@
   },
   "CA-1954": {
    "park": "Parc de la Maison-des-Gouverneurs National Historic Site",
+   "area": "CA-QC",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -283,28 +305,10 @@
   },
   "CA-2043": {
    "park": "Perce UNESCO Global Geopark",
+   "area": "CA-QC",
    "why_not": "pin inside",
    "hits": [],
-   "leads": [
-    {
-     "title": "Unesco_Global_Geoparks_2023_05_05_Public",
-     "url": "https://services8.arcgis.com/EmWvvrOhuQfw1gSw/arcgis/rest/services/Unesco_Global_Geoparks_2023_05_05_Public/FeatureServer",
-     "owner": "staridasgeography_NHMC",
-     "type": "Feature Service"
-    },
-    {
-     "title": "UNESCO_GLOBAL_GEOPARKS_2018_12_01",
-     "url": "https://services8.arcgis.com/EmWvvrOhuQfw1gSw/arcgis/rest/services/UNESCO_GLOBAL_GEOPARKS_2018_12_01/FeatureServer",
-     "owner": "staridasgeography_NHMC",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Cavan Marble Arch Caves Global Geopark Boundary",
-     "url": "https://services-eu1.arcgis.com/v5dOXTEOb7ZHdNyQ/arcgis/rest/services/Cavan_Marble_Arch_Caves_Global_Geopark_Boundary/FeatureServer",
-     "owner": "Heritage_Council_Admin",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Québec Aire : no polygon at the pin",
     "A Québec Parc : no polygon at the pin",
@@ -319,12 +323,13 @@
     "A Québec recog: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"geopark unesco global\": 5 lead(s)"
+    "B ArcGIS Online search \"geopark global unesco\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-2165": {
    "park": "Montreal Archipelago Ecological Park Nature Reserve",
+   "area": "CA-QC",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -348,6 +353,7 @@
   },
   "CA-2233": {
    "park": "Parc de la Maison-Valois Recreation Park",
+   "area": "CA-QC",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -371,6 +377,7 @@
   },
   "CA-2250": {
    "park": "Fort Richelieu National Historic Site",
+   "area": "CA-QC",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -394,6 +401,7 @@
   },
   "CA-4897": {
    "park": "Battle of the Restigouche National Historic Site",
+   "area": "CA-QC",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -417,6 +425,7 @@
   },
   "CA-4906": {
    "park": "57 63 St. Louis Street National Historic Site",
+   "area": "CA-QC",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -440,6 +449,7 @@
   },
   "CA-4909": {
    "park": "Fortifications of Quebec National Historic Site",
+   "area": "CA-QC",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -463,6 +473,7 @@
   },
   "CA-4915": {
    "park": "Maillou House National Historic Site",
+   "area": "CA-QC",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -486,28 +497,10 @@
   },
   "CA-4917": {
    "park": "Montmorency Park National Historic Site",
+   "area": "CA-QC",
    "why_not": "pin inside",
    "hits": [],
-   "leads": [
-    {
-     "title": "Occupation du sol 2021 en 11 postes de légende Soisy-sous-Montmorency",
-     "url": "https://geoweb.iau-idf.fr/agsmap1/rest/services/OPENDATA/OpendataIAU4/MapServer/21",
-     "owner": "CAPV_ADMIN",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Occupation du sol 2021 en 11 postes de légende Montmorency",
-     "url": "https://geoweb.iau-idf.fr/agsmap1/rest/services/OPENDATA/OpendataIAU4/MapServer/21",
-     "owner": "CAPV_ADMIN",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Limites communales Soisy-sous-Montmorency",
-     "url": "https://services2.arcgis.com/rDH2Z04XoJ9VRLop/arcgis/rest/services/Limitesadministratives_SoisysousMontmorency/FeatureServer",
-     "owner": "CAPV_ADMIN",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Québec Aire : no polygon at the pin",
     "A Québec Parc : no polygon at the pin",
@@ -522,12 +515,13 @@
     "A Québec recog: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"montmorency\": 7 lead(s)"
+    "B ArcGIS Online search \"montmorency\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-4919": {
    "park": "Quebec Garrison Club National Historic Site",
+   "area": "CA-QC",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -551,6 +545,7 @@
   },
   "CA-4921": {
    "park": "Saint Louis Forts and Chateaux National Historic Site",
+   "area": "CA-QC",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -568,12 +563,13 @@
     "A Québec recog: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"chateaux louis forts\": 0 lead(s)"
+    "B ArcGIS Online search \"chateaux saint forts\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "CA-4923": {
    "park": "Sir George-Étienne Cartier National Historic Site",
+   "area": "CA-QC",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -591,12 +587,13 @@
     "A Québec recog: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"cartier étienne george\": 0 lead(s)"
+    "B ArcGIS Online search \"étienne cartier george\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "CA-4950": {
    "park": "Parc cotier Kiskotuk Regional Park",
+   "area": "CA-QC",
    "why_not": "pin inside",
    "hits": [
     {
@@ -605,7 +602,9 @@
      "agency": "Québec prote",
      "record": 3578,
      "record_name": "",
-     "acres_approx": 1232
+     "acres_approx": 1232,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     },
     {
      "verdict": "name mismatch",
@@ -613,7 +612,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 22071,
      "record_name": "Baie de L'Isle-Verte National Wildlife Area",
-     "acres_approx": 1200
+     "acres_approx": 1200,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -632,10 +633,11 @@
     "A CPCAD / Parks Canada: hit",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "inside-other (several park records under the pin: R-G7 step 4)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-5034": {
    "park": "Bois Summit Regional Park",
+   "area": "CA-QC",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -659,6 +661,7 @@
   },
   "CA-5871": {
    "park": "Bonsecours Market National Historic Site",
+   "area": "CA-QC",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -682,6 +685,7 @@
   },
   "CA-5873": {
    "park": "Capitol Theatre / Québec Auditorium National Historic Site",
+   "area": "CA-QC",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -699,12 +703,13 @@
     "A Québec recog: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"auditorium theatre capitol\": 0 lead(s)"
+    "B ArcGIS Online search \"auditorium capitol theatre\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "CA-5884": {
    "park": "De Salaberry House National Historic Site",
+   "area": "CA-QC",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -728,6 +733,7 @@
   },
   "CA-5888": {
    "park": "First Geodetic Survey Station National Historic Site",
+   "area": "CA-QC",
    "why_not": "pin inside",
    "hits": [
     {
@@ -736,7 +742,9 @@
      "agency": "Québec Parc ~1",
      "record": null,
      "record_name": "Parc de la Gatineau",
-     "acres_approx": 89067
+     "acres_approx": 89067,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "name mismatch",
@@ -744,7 +752,9 @@
      "agency": "Québec prote",
      "record": 1347,
      "record_name": "",
-     "acres_approx": 89063
+     "acres_approx": 89063,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     },
     {
      "verdict": "name mismatch",
@@ -752,7 +762,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 22414,
      "record_name": "Gatineau Park",
-     "acres_approx": 89063
+     "acres_approx": 89063,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -771,10 +783,11 @@
     "A CPCAD / Parks Canada: hit",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "inside-other (several park records under the pin: R-G7 step 4)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-5889": {
    "park": "Former Montréal Custom House National Historic Site",
+   "area": "CA-QC",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -792,12 +805,13 @@
     "A Québec recog: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"montréal custom former\": 0 lead(s)"
+    "B ArcGIS Online search \"montréal former custom\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "CA-5892": {
    "park": "Fort Crevier National Historical Site",
+   "area": "CA-QC",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -821,6 +835,7 @@
   },
   "CA-5893": {
    "park": "Fort Laprairie National Historic Site",
+   "area": "CA-QC",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -844,6 +859,7 @@
   },
   "CA-5900": {
    "park": "Girardin House National Historic Site",
+   "area": "CA-QC",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -867,6 +883,7 @@
   },
   "CA-6316": {
    "park": "Brise-glace Ernest Lapointe National Heritage Site",
+   "area": "CA-QC",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -884,12 +901,13 @@
     "A Québec recog: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"heritage lapointe ernest\": 0 lead(s)"
+    "B ArcGIS Online search \"lapointe heritage ernest\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "CA-6413": {
    "park": "Site historique de La Grave Historic Site",
+   "area": "CA-QC",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -913,6 +931,7 @@
   },
   "CA-0511": {
    "park": "Mount Royal Regional Park",
+   "area": "CA-QC",
    "why_not": "check",
    "hits": [
     {
@@ -921,7 +940,9 @@
      "agency": "Québec prote",
      "record": 57,
      "record_name": "",
-     "acres_approx": 488
+     "acres_approx": 488,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     },
     {
      "verdict": "name match",
@@ -929,7 +950,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 11057,
      "record_name": "Parc du Mont-Royal Natural Area Under Private Stewardship",
-     "acres_approx": 488
+     "acres_approx": 488,
+     "tier": "UNLIKELY",
+     "why": "one shared word (royal) only"
     }
    ],
    "leads": [],
@@ -948,10 +971,11 @@
     "A CPCAD / Parks Canada: hit",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-0515": {
    "park": "Parc de la Chute-Montmorency Provincial Park",
+   "area": "CA-QC",
    "why_not": "check",
    "hits": [],
    "leads": [],
@@ -975,6 +999,7 @@
   },
   "CA-0964": {
    "park": "Parc Cartier-Roberval Archeological Reserve",
+   "area": "CA-QC",
    "why_not": "check",
    "hits": [],
    "leads": [],
@@ -998,28 +1023,10 @@
   },
   "CA-0994": {
    "park": "Parc Maisonneuve Regional Park",
+   "area": "CA-QC",
    "why_not": "check",
    "hits": [],
-   "leads": [
-    {
-     "title": "agrile_parc_maisonneuve_1",
-     "url": "https://services5.arcgis.com/ncjvTc8Zi7Btecnp/arcgis/rest/services/agrile_parc_maisonneuve_1/FeatureServer",
-     "owner": "boilarsa_udem",
-     "type": "Feature Service"
-    },
-    {
-     "title": "arbres_parc_maisonneuve",
-     "url": "https://services5.arcgis.com/ncjvTc8Zi7Btecnp/arcgis/rest/services/arbres_parc_maisonneuve/FeatureServer",
-     "owner": "boilarsa_udem",
-     "type": "Feature Service"
-    },
-    {
-     "title": "parc_maisonneuve_1",
-     "url": "https://services5.arcgis.com/ncjvTc8Zi7Btecnp/arcgis/rest/services/parc_maisonneuve_1/FeatureServer",
-     "owner": "boilarsa_udem",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Québec Aire : no polygon at the pin",
     "A Québec Parc : no polygon at the pin",
@@ -1034,12 +1041,13 @@
     "A Québec recog: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"maisonneuve\": 4 lead(s)"
+    "B ArcGIS Online search \"maisonneuve\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-1003": {
    "park": "Parc régional Bois de Belle-Rivière Regional Park",
+   "area": "CA-QC",
    "why_not": "check",
    "hits": [],
    "leads": [],
@@ -1063,6 +1071,7 @@
   },
   "CA-1005": {
    "park": "Parc régional de la Forêt Ouareau Regional Park",
+   "area": "CA-QC",
    "why_not": "check",
    "hits": [
     {
@@ -1071,7 +1080,9 @@
      "agency": "Québec Parc ~3",
      "record": null,
      "record_name": "Parc régional de la Forêt Ouareau",
-     "acres_approx": 39238
+     "acres_approx": 39238,
+     "tier": "LIKELY",
+     "why": "same name, but 8 parks share this record (sectors of one park, or a container)"
     }
    ],
    "leads": [],
@@ -1090,10 +1101,11 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "CA-1006": {
    "park": "Parc régional Montagne du Diable Regional Park",
+   "area": "CA-QC",
    "why_not": "check",
    "hits": [
     {
@@ -1102,7 +1114,9 @@
      "agency": "Québec Parc ~3",
      "record": null,
      "record_name": "Parc régional de la Montagne du Diable",
-     "acres_approx": 23928
+     "acres_approx": 23928,
+     "tier": "LIKELY",
+     "why": "same name, but 8 parks share this record (sectors of one park, or a container)"
     }
    ],
    "leads": [],
@@ -1121,10 +1135,11 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "CA-1944": {
    "park": "Le poste de traite de Chicoutimi National Historic Site",
+   "area": "CA-QC",
    "why_not": "check",
    "hits": [],
    "leads": [],
@@ -1148,6 +1163,7 @@
   },
   "CA-4922": {
    "park": "Saint-Ours Canal National Historic Site",
+   "area": "CA-QC",
    "why_not": "check",
    "hits": [],
    "leads": [],
@@ -1165,12 +1181,13 @@
     "A Québec recog: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"canal saint ours\": 0 lead(s)"
+    "B ArcGIS Online search \"saint canal ours\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "CA-4969": {
    "park": "Parc regional des Sept-Chutes Regional Park",
+   "area": "CA-QC",
    "why_not": "check",
    "hits": [],
    "leads": [],
@@ -1194,6 +1211,7 @@
   },
   "CA-4972": {
    "park": "Parc regional Kiamika Regional Park",
+   "area": "CA-QC",
    "why_not": "check",
    "hits": [
     {
@@ -1202,7 +1220,9 @@
      "agency": "Québec Parc ~3",
      "record": null,
      "record_name": "Parc régional du réservoir Kiamika",
-     "acres_approx": 33980
+     "acres_approx": 33980,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 8 parks"
     }
    ],
    "leads": [],
@@ -1221,10 +1241,11 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-5855": {
    "park": "Arvida National Historic Site",
+   "area": "CA-QC",
    "why_not": "check",
    "hits": [],
    "leads": [],
@@ -1248,6 +1269,7 @@
   },
   "CA-5857": {
    "park": "Banc de Pêche de Paspébiac National Historic Site",
+   "area": "CA-QC",
    "why_not": "check",
    "hits": [],
    "leads": [],
@@ -1271,6 +1293,7 @@
   },
   "CA-5898": {
    "park": "Fort Trois-Rivières National Historic Site",
+   "area": "CA-QC",
    "why_not": "check",
    "hits": [],
    "leads": [],
@@ -1294,6 +1317,7 @@
   },
   "CA-0015": {
    "park": "Charlevoix Biosphere Reserve",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1317,6 +1341,7 @@
   },
   "CA-0049": {
    "park": "Lac Saint-Pierre Biosphere Reserve",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1339,6 +1364,7 @@
   },
   "CA-0054": {
    "park": "Manicouagan-Uapishka (Monts Groulx) Biosphere Reserve",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1361,6 +1387,7 @@
   },
   "CA-0956": {
    "park": "Boisé de Marly Forest Reserve",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1383,6 +1410,7 @@
   },
   "CA-0957": {
    "park": "Boisé de Tequenonday Forest Reserve",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1405,6 +1433,7 @@
   },
   "CA-0958": {
    "park": "Boisé des Compagnons-de-Cartier Forest Reserve",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1427,6 +1456,7 @@
   },
   "CA-0959": {
    "park": "La Promenade Samuel-De Champlain Provincial Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1449,6 +1479,7 @@
   },
   "CA-0961": {
    "park": "Parc André-J.-Côté Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1471,6 +1502,7 @@
   },
   "CA-0962": {
    "park": "Parc Angrignon Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1493,6 +1525,7 @@
   },
   "CA-0965": {
    "park": "Parc Centenaire William Cosgrove Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1515,6 +1548,7 @@
   },
   "CA-0966": {
    "park": "Parc Centennial Hall / Memorial Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1537,6 +1571,7 @@
   },
   "CA-0967": {
    "park": "Parc de l’Île-Lebel Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1559,6 +1594,7 @@
   },
   "CA-0968": {
    "park": "Parc de l'Île Melville Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1581,6 +1617,7 @@
   },
   "CA-0969": {
    "park": "Parc de l'Île Saint-Quentin Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1603,6 +1640,7 @@
   },
   "CA-0970": {
    "park": "Parc de la Plage-Jacques-Cartier Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1625,6 +1663,7 @@
   },
   "CA-0973": {
    "park": "Parc de la Rivière-du-Moulin Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1647,6 +1686,7 @@
   },
   "CA-0974": {
    "park": "Parc de la Source Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1669,6 +1709,7 @@
   },
   "CA-0975": {
    "park": "Parc des Braves National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1691,6 +1732,7 @@
   },
   "CA-0976": {
    "park": "Parc des Eaux-Vives Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1713,6 +1755,7 @@
   },
   "CA-0978": {
    "park": "Parc des Pionniers (Vercheres) Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1735,6 +1778,7 @@
   },
   "CA-0979": {
    "park": "Parc du Bassin Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1757,6 +1801,7 @@
   },
   "CA-0981": {
    "park": "Parc du Domaine-Vert Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1779,6 +1824,7 @@
   },
   "CA-0982": {
    "park": "Parc du lac Claude Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1801,6 +1847,7 @@
   },
   "CA-0983": {
    "park": "Parc du Mont-Fortin Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1823,6 +1870,7 @@
   },
   "CA-0984": {
    "park": "Parc du Mont-Jacob Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1845,6 +1893,7 @@
   },
   "CA-0985": {
    "park": "Parc écologique Jean-Paul-Forand du Mont-Shefford Ecological Reserve",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [
     {
@@ -1853,7 +1902,9 @@
      "agency": "Québec prote",
      "record": 3647,
      "record_name": "",
-     "acres_approx": 287
+     "acres_approx": 287,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     },
     {
      "verdict": "name mismatch",
@@ -1861,7 +1912,9 @@
      "agency": "Québec recog",
      "record": 3647,
      "record_name": "",
-     "acres_approx": 287
+     "acres_approx": 287,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     },
     {
      "verdict": "name match",
@@ -1869,7 +1922,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 14585,
      "record_name": "Canton-de-Shefford Nature Reserve",
-     "acres_approx": 287
+     "acres_approx": 287,
+     "tier": "UNLIKELY",
+     "why": "shared shefford; extra: park ecologique, forand, jean, mont, paul / record canton; this layer / this area's LIKELY rows under 10% YES so far (demoted)"
     }
    ],
    "leads": [],
@@ -1888,10 +1943,11 @@
     "A CPCAD / Parks Canada: hit",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-0986": {
    "park": "Parc Frédéric-Back Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1914,6 +1970,7 @@
   },
   "CA-0987": {
    "park": "Parc Hermitage (Pointe-Claire) Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1936,6 +1993,7 @@
   },
   "CA-0988": {
    "park": "Parc Historique de la Croix de Sainte-Anne Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1958,6 +2016,7 @@
   },
   "CA-0989": {
    "park": "Parc J.-C.-Wilson (secteur chutes Wilson) Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1980,6 +2039,7 @@
   },
   "CA-0990": {
    "park": "Parc Jarry Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2002,6 +2062,7 @@
   },
   "CA-0991": {
    "park": "Parc Jean-Baptiste Rolland Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2024,6 +2085,7 @@
   },
   "CA-0992": {
    "park": "Parc La Fontaine Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2046,6 +2108,7 @@
   },
   "CA-0993": {
    "park": "Parc Lafontaine Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2068,6 +2131,7 @@
   },
   "CA-0995": {
    "park": "Parc-nature de l'Île-de-la-Visitation Nature Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2090,6 +2154,7 @@
   },
   "CA-1000": {
    "park": "Parc-nature du Ruisseau-De Montigny Nature Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2112,6 +2177,7 @@
   },
   "CA-1001": {
    "park": "Parc naturel Terra-Cotta Nature Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2134,6 +2200,7 @@
   },
   "CA-1004": {
    "park": "Parc régional de Beauharnois-Salaberry Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2156,6 +2223,7 @@
   },
   "CA-1007": {
    "park": "Parc régional de la Rivière-du-Nord (Chutes Wilson) Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2178,6 +2246,7 @@
   },
   "CA-1008": {
    "park": "Parc régional des Appalaches Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2200,6 +2269,7 @@
   },
   "CA-1009": {
    "park": "Parc régional des Chutes Monte-à-Peine-et-des-Dalles Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2222,6 +2292,7 @@
   },
   "CA-1010": {
    "park": "Parc régional des Grèves Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2244,6 +2315,7 @@
   },
   "CA-1011": {
    "park": "Parc régional du Massif du Sud Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [
     {
@@ -2252,7 +2324,9 @@
      "agency": "Québec Parc ~3",
      "record": null,
      "record_name": "Parc régional du Massif du Sud",
-     "acres_approx": 27980
+     "acres_approx": 27980,
+     "tier": "LIKELY",
+     "why": "same name, but 8 parks share this record (sectors of one park, or a container)"
     }
    ],
    "leads": [],
@@ -2271,10 +2345,11 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "CA-1012": {
    "park": "Parc régional du Mont-Ham Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [
     {
@@ -2283,7 +2358,9 @@
      "agency": "Québec Parc ~3",
      "record": null,
      "record_name": "Parc régional du Mont-Ham",
-     "acres_approx": 4920
+     "acres_approx": 4920,
+     "tier": "LIKELY",
+     "why": "same name, but 8 parks share this record (sectors of one park, or a container)"
     }
    ],
    "leads": [],
@@ -2302,10 +2379,11 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "CA-1013": {
    "park": "Parc regional du Poisson Blanc Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2328,6 +2406,7 @@
   },
   "CA-1015": {
    "park": "Parc riverain de la Sainte-Anne Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2350,6 +2429,7 @@
   },
   "CA-1016": {
    "park": "Parc Rosaire-Gauthier Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2372,6 +2452,7 @@
   },
   "CA-1017": {
    "park": "Parc Sir William Price (aka Parc Ball) Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2394,6 +2475,7 @@
   },
   "CA-1018": {
    "park": "Parc Stewart (Stewart Hall) Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2416,6 +2498,7 @@
   },
   "CA-1019": {
    "park": "Plaines d'Abraham National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2438,6 +2521,7 @@
   },
   "CA-1031": {
    "park": "Réserve naturelle de Pointe-Yamachiche Nature Reserve",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2460,6 +2544,7 @@
   },
   "CA-1036": {
    "park": "Vallee Bras-du-Nord Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2482,6 +2567,7 @@
   },
   "CA-1037": {
    "park": "Zone Portuaire de Chicoutimi Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2504,6 +2590,7 @@
   },
   "CA-1955": {
    "park": "Parc de la Pointe-Valaine Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2526,6 +2613,7 @@
   },
   "CA-1957": {
    "park": "Centre de plein air Roger-Cabana Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2548,6 +2636,7 @@
   },
   "CA-1958": {
    "park": "Domaine Laurentien Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2570,6 +2659,7 @@
   },
   "CA-1962": {
    "park": "Parc des pionniers (Abercorn) Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2592,6 +2682,7 @@
   },
   "CA-1964": {
    "park": "",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2600,6 +2691,7 @@
   },
   "CA-1966": {
    "park": "Canyon Sainte-Anne Nature Reserve",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2622,6 +2714,7 @@
   },
   "CA-1972": {
    "park": "Centre recreatif du lac Echo Nature Reserve",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2644,6 +2737,7 @@
   },
   "CA-1974": {
    "park": "",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2652,6 +2746,7 @@
   },
   "CA-1983": {
    "park": "Espace vert Louis-Morin Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2674,6 +2769,7 @@
   },
   "CA-1984": {
    "park": "Parc Basler Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2696,6 +2792,7 @@
   },
   "CA-1997": {
    "park": "",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2704,6 +2801,7 @@
   },
   "CA-2000": {
    "park": "",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2712,6 +2810,7 @@
   },
   "CA-2007": {
    "park": "",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2720,6 +2819,7 @@
   },
   "CA-2016": {
    "park": "Parc Chante Bois Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2742,6 +2842,7 @@
   },
   "CA-2017": {
    "park": "Parc Chopin Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2764,6 +2865,7 @@
   },
   "CA-2025": {
    "park": "Parc de la Coulee Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2786,6 +2888,7 @@
   },
   "CA-2026": {
    "park": "Parc du Clos-Fourtet Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2808,6 +2911,7 @@
   },
   "CA-2027": {
    "park": "Parc du Corridor Aerobique Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2830,6 +2934,7 @@
   },
   "CA-2028": {
    "park": "Parc Henri-Piette Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2852,6 +2957,7 @@
   },
   "CA-2029": {
    "park": "Parc Irenee-Benoit Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2874,6 +2980,7 @@
   },
   "CA-2033": {
    "park": "Parc Leon-Arcand Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2896,6 +3003,7 @@
   },
   "CA-2034": {
    "park": "Parc Lineaire Le P'tit Train du Nord Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2918,6 +3026,7 @@
   },
   "CA-2039": {
    "park": "Ile aux Fraises Migratory Bird Sanctuary",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [
     {
@@ -2926,7 +3035,9 @@
      "agency": "Québec Parc ",
      "record": null,
      "record_name": "Parc marin du Saguenay - Saint-Laurent",
-     "acres_approx": 305410
+     "acres_approx": 305410,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "name mismatch",
@@ -2934,7 +3045,9 @@
      "agency": "Québec prote",
      "record": 3060,
      "record_name": "",
-     "acres_approx": 305362
+     "acres_approx": 305362,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     },
     {
      "verdict": "name mismatch",
@@ -2942,7 +3055,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 10838,
      "record_name": "Saguenay-St. Lawrence Marine Park",
-     "acres_approx": 305363
+     "acres_approx": 305363,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "name mismatch",
@@ -2950,7 +3065,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 22037,
      "record_name": "Saguenay-St. Lawrence Marine Park",
-     "acres_approx": 305368
+     "acres_approx": 305368,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -2969,10 +3086,11 @@
     "A CPCAD / Parks Canada: hit",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "inside-other (several park records under the pin: R-G7 step 4)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-2042": {
    "park": "Ile Blanche Migratory Bird Sanctuary",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [
     {
@@ -2981,7 +3099,9 @@
      "agency": "Québec Parc ",
      "record": null,
      "record_name": "Parc marin du Saguenay - Saint-Laurent",
-     "acres_approx": 305410
+     "acres_approx": 305410,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "name mismatch",
@@ -2989,7 +3109,9 @@
      "agency": "Québec prote",
      "record": 2155,
      "record_name": "",
-     "acres_approx": 815
+     "acres_approx": 815,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     },
     {
      "verdict": "name mismatch",
@@ -2997,7 +3119,9 @@
      "agency": "Québec prote",
      "record": 3060,
      "record_name": "",
-     "acres_approx": 305362
+     "acres_approx": 305362,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     },
     {
      "verdict": "name mismatch",
@@ -3005,7 +3129,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 10838,
      "record_name": "Saguenay-St. Lawrence Marine Park",
-     "acres_approx": 305363
+     "acres_approx": 305363,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "name mismatch",
@@ -3013,7 +3139,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 22037,
      "record_name": "Saguenay-St. Lawrence Marine Park",
-     "acres_approx": 305368
+     "acres_approx": 305368,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "name mismatch",
@@ -3021,7 +3149,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 22160,
      "record_name": "Estuary Islands National Wildlife Area",
-     "acres_approx": 815
+     "acres_approx": 815,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -3040,10 +3170,11 @@
     "A CPCAD / Parks Canada: hit",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "inside-other (several park records under the pin: R-G7 step 4)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-2046": {
    "park": "Parc Parent Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3066,6 +3197,7 @@
   },
   "CA-2048": {
    "park": "Parc Prevost Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3088,6 +3220,7 @@
   },
   "CA-2049": {
    "park": "Parc Val-des-Monts Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3110,6 +3243,7 @@
   },
   "CA-2052": {
    "park": "Parc du Vieux-Moulin de Pointe-aux-Trembles Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3132,6 +3266,7 @@
   },
   "CA-2053": {
    "park": "Parc des Cascades de Rawdon Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3154,6 +3289,7 @@
   },
   "CA-2056": {
    "park": "",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3162,6 +3298,7 @@
   },
   "CA-2058": {
    "park": "",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3170,6 +3307,7 @@
   },
   "CA-2061": {
    "park": "",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3178,6 +3316,7 @@
   },
   "CA-2064": {
    "park": "",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3186,6 +3325,7 @@
   },
   "CA-2072": {
    "park": "",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3194,6 +3334,7 @@
   },
   "CA-2080": {
    "park": "",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3202,6 +3343,7 @@
   },
   "CA-2082": {
    "park": "",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3210,6 +3352,7 @@
   },
   "CA-2083": {
    "park": "Lac-Beauchamp Park (Regional) Nature Reserve",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3232,6 +3375,7 @@
   },
   "CA-2084": {
    "park": "",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3240,6 +3384,7 @@
   },
   "CA-2088": {
    "park": "Parc Saint-Louis Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3262,6 +3407,7 @@
   },
   "CA-2089": {
    "park": "",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3270,6 +3416,7 @@
   },
   "CA-2092": {
    "park": "",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3278,6 +3425,7 @@
   },
   "CA-2093": {
    "park": "",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3286,6 +3434,7 @@
   },
   "CA-2097": {
    "park": "",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3294,6 +3443,7 @@
   },
   "CA-2099": {
    "park": "",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3302,6 +3452,7 @@
   },
   "CA-2103": {
    "park": "",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3310,6 +3461,7 @@
   },
   "CA-2105": {
    "park": "",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3318,6 +3470,7 @@
   },
   "CA-2108": {
    "park": "Parc Eco Laurentides Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3340,6 +3493,7 @@
   },
   "CA-2116": {
    "park": "Parc Bouvrette Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3362,6 +3516,7 @@
   },
   "CA-2121": {
    "park": "Sommet Morin Heights Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3384,6 +3539,7 @@
   },
   "CA-2122": {
    "park": "Parc Arthur-Helms Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3406,6 +3562,7 @@
   },
   "CA-2137": {
    "park": "",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3414,6 +3571,7 @@
   },
   "CA-2140": {
    "park": "Parc de la commune Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3436,6 +3594,7 @@
   },
   "CA-2143": {
    "park": "Parc de la Prucheraie Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3458,6 +3617,7 @@
   },
   "CA-2144": {
    "park": "Parc de la Vieille-Ecole Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3480,6 +3640,7 @@
   },
   "CA-2145": {
    "park": "Parc Ludger-Duvernay - St-Jerome Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3502,6 +3663,7 @@
   },
   "CA-2146": {
    "park": "Parc des Jardins Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3524,6 +3686,7 @@
   },
   "CA-2147": {
    "park": "Parc Henri-Daoust Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3546,6 +3709,7 @@
   },
   "CA-2150": {
    "park": "Parc Maurice-St-Pierre Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3568,6 +3732,7 @@
   },
   "CA-2154": {
    "park": "Parc Melançon Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3590,6 +3755,7 @@
   },
   "CA-2155": {
    "park": "Parc Michael-Desbiens Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3612,6 +3778,7 @@
   },
   "CA-2159": {
    "park": "Parc nature du Lac-Jerome Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3634,6 +3801,7 @@
   },
   "CA-2171": {
    "park": "",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3642,6 +3810,7 @@
   },
   "CA-2172": {
    "park": "Parc Christopher Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3664,6 +3833,7 @@
   },
   "CA-2174": {
    "park": "Parc du Mont-Comi (Regional) Nature Reserve",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3686,6 +3856,7 @@
   },
   "CA-2175": {
    "park": "",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3694,6 +3865,7 @@
   },
   "CA-2176": {
    "park": "Parc Jean-Drapeau Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3716,6 +3888,7 @@
   },
   "CA-2194": {
    "park": "Parc du Mont-Loup-Garou Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3738,6 +3911,7 @@
   },
   "CA-2196": {
    "park": "Place Émilie-Gamelin Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3760,6 +3934,7 @@
   },
   "CA-2198": {
    "park": "",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3768,6 +3943,7 @@
   },
   "CA-2219": {
    "park": "Parc Central Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3790,6 +3966,7 @@
   },
   "CA-2223": {
    "park": "",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3798,6 +3975,7 @@
   },
   "CA-2228": {
    "park": "",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3806,6 +3984,7 @@
   },
   "CA-2238": {
    "park": "",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3814,6 +3993,7 @@
   },
   "CA-2241": {
    "park": "",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3822,6 +4002,7 @@
   },
   "CA-2246": {
    "park": "",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3830,6 +4011,7 @@
   },
   "CA-2247": {
    "park": "Sentiers Plein Air Ste-Anne-des-Lacs Nature Reserve",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3852,6 +4034,7 @@
   },
   "CA-2249": {
    "park": "Parc Le Rocher Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3874,6 +4057,7 @@
   },
   "CA-2251": {
    "park": "Lac Beattie Nature Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3896,6 +4080,7 @@
   },
   "CA-2261": {
    "park": "",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3904,6 +4089,7 @@
   },
   "CA-2264": {
    "park": "Parc Léry-MacDonald Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3926,6 +4112,7 @@
   },
   "CA-2269": {
    "park": "Parc Pierre-Dalcourt Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3948,6 +4135,7 @@
   },
   "CA-2271": {
    "park": "Parc de la biche Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3970,6 +4158,7 @@
   },
   "CA-2274": {
    "park": "",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3978,6 +4167,7 @@
   },
   "CA-2299": {
    "park": "Zec Chapeau-de-Paille Nature Reserve",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4000,6 +4190,7 @@
   },
   "CA-2331": {
    "park": "Zec Nordique Nature Reserve",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4022,6 +4213,7 @@
   },
   "CA-2332": {
    "park": "Zec Normandie Nature Reserve",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4044,6 +4236,7 @@
   },
   "CA-2343": {
    "park": "Zec Restigo Nature Reserve",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4066,6 +4259,7 @@
   },
   "CA-2346": {
    "park": "Zec Rivière-Blanche Nature Reserve",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4088,6 +4282,7 @@
   },
   "CA-4141": {
    "park": "Parc métropolitain des rivières du Nord et Bellefeuille Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4110,6 +4305,7 @@
   },
   "CA-4896": {
    "park": "Battle of the Chateauguay National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4132,6 +4328,7 @@
   },
   "CA-4898": {
    "park": "Carillon Barracks National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4154,6 +4351,7 @@
   },
   "CA-4899": {
    "park": "Carillon Canal National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4176,6 +4374,7 @@
   },
   "CA-4900": {
    "park": "Cartier-Brébeuf National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4198,6 +4397,7 @@
   },
   "CA-4901": {
    "park": "Chambly Canal National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4220,6 +4420,7 @@
   },
   "CA-4902": {
    "park": "Coteau du Lac National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4242,6 +4443,7 @@
   },
   "CA-4903": {
    "park": "Forges du Saint Maurice National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4264,6 +4466,7 @@
   },
   "CA-4904": {
    "park": "Fort Chambly National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4286,6 +4489,7 @@
   },
   "CA-4907": {
    "park": "Fort Ste. Therese National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4308,6 +4512,7 @@
   },
   "CA-4908": {
    "park": "Fort Temiscamingue National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4330,6 +4535,7 @@
   },
   "CA-4911": {
    "park": "Lachine Canal National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4352,6 +4558,7 @@
   },
   "CA-4912": {
    "park": "Lévis Forts National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4374,6 +4581,7 @@
   },
   "CA-4913": {
    "park": "Louis S. St. Laurent National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4396,6 +4604,7 @@
   },
   "CA-4916": {
    "park": "Manoir Papineau National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4418,6 +4627,7 @@
   },
   "CA-4918": {
    "park": "Pointe-au-Père Lighthouse National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4440,6 +4650,7 @@
   },
   "CA-4920": {
    "park": "Sainte-Anne-de-Bellevue Canal National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4462,6 +4673,7 @@
   },
   "CA-4924": {
    "park": "Sir Wilfrid Laurier National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4484,6 +4696,7 @@
   },
   "CA-4925": {
    "park": "The Fur Trade at Lachine National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4506,6 +4719,7 @@
   },
   "CA-4945": {
    "park": "Base de plein air Sainte-Foy Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4528,6 +4742,7 @@
   },
   "CA-4946": {
    "park": "Canyon des Portes de l'Enfer Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4550,6 +4765,7 @@
   },
   "CA-4947": {
    "park": "Parc Nature Eco-Odyssee Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4572,6 +4788,7 @@
   },
   "CA-4948": {
    "park": "Parc regional du Mont-Saint-Joseph Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4594,6 +4811,7 @@
   },
   "CA-4949": {
    "park": "Parc Aventures Cap Jaseux Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4616,6 +4834,7 @@
   },
   "CA-4951": {
    "park": "Parc de Gros-Cap Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4638,6 +4857,7 @@
   },
   "CA-4952": {
    "park": "Parc de la caverne Trou de la Fee Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4660,6 +4880,7 @@
   },
   "CA-4953": {
    "park": "Parc de la Gorge de Coaticook Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4682,6 +4903,7 @@
   },
   "CA-4954": {
    "park": "Parc de la Riviere de Terrebonne Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4704,6 +4926,7 @@
   },
   "CA-4955": {
    "park": "Parc d'Escalade et de Randonnee de la Montagne d'Argent Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4726,6 +4949,7 @@
   },
   "CA-4956": {
    "park": "Parc des Chutes Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4748,6 +4972,7 @@
   },
   "CA-4957": {
    "park": "Parc des Chutes de Sainte-Ursule Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4770,6 +4995,7 @@
   },
   "CA-4958": {
    "park": "Parc des Chutes Dorwin Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4792,6 +5018,7 @@
   },
   "CA-4959": {
    "park": "Parc Les Salines Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4814,6 +5041,7 @@
   },
   "CA-4960": {
    "park": "Parc Michel-Chartrand Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4836,6 +5064,7 @@
   },
   "CA-4961": {
    "park": "Parc Nature La Gabelle Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4858,6 +5087,7 @@
   },
   "CA-4962": {
    "park": "Parc naturel regional de Portneuf Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4880,6 +5110,7 @@
   },
   "CA-4963": {
    "park": "Parc regional de la Chute-a-Bull Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [
     {
@@ -4888,7 +5119,9 @@
      "agency": "Québec Parc ~3",
      "record": null,
      "record_name": "Parc régional de la Chute-à-Bull",
-     "acres_approx": 454
+     "acres_approx": 454,
+     "tier": "LIKELY",
+     "why": "same name, but 8 parks share this record (sectors of one park, or a container)"
     }
    ],
    "leads": [],
@@ -4907,10 +5140,11 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "CA-4964": {
    "park": "Parc regional de la riviere Gentilly Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4933,6 +5167,7 @@
   },
   "CA-4965": {
    "park": "Parc régional de la rivière Mitis Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -4955,6 +5190,7 @@
   },
   "CA-4966": {
    "park": "Parc regional de la Seigneurie-du-Lac-Matapedia Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [
     {
@@ -4963,7 +5199,9 @@
      "agency": "Québec Parc ~3",
      "record": null,
      "record_name": "Parc régional de la Seigneurie du Lac Matapédia",
-     "acres_approx": 41900
+     "acres_approx": 41900,
+     "tier": "LIKELY",
+     "why": "same name, but 8 parks share this record (sectors of one park, or a container)"
     }
    ],
    "leads": [],
@@ -4982,10 +5220,11 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "CA-4967": {
    "park": "Parc regional des Grandes-Coulees Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5008,6 +5247,7 @@
   },
   "CA-4968": {
    "park": "Parc régional des Grandes-Rivières du lac Saint-Jean Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5030,6 +5270,7 @@
   },
   "CA-4970": {
    "park": "Parc regional du Lac 31 Milles Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5052,6 +5293,7 @@
   },
   "CA-4971": {
    "park": "Parc regional du Lac Taureau Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5074,6 +5316,7 @@
   },
   "CA-4973": {
    "park": "Parc des Voltigeurs Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5096,6 +5339,7 @@
   },
   "CA-4974": {
    "park": "Parc du Sanctuaire St-Majorique Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5118,6 +5362,7 @@
   },
   "CA-4975": {
    "park": "Parc regional de la Foret Drummond Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5140,6 +5385,7 @@
   },
   "CA-4976": {
    "park": "Parc de la Rivière Batiscan Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5162,6 +5408,7 @@
   },
   "CA-4977": {
    "park": "Côte Boisée Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5184,6 +5431,7 @@
   },
   "CA-4978": {
    "park": "Parc regional Saint-Bernard Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5206,6 +5454,7 @@
   },
   "CA-4979": {
    "park": "Parc ecologique Godefroy Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5228,6 +5477,7 @@
   },
   "CA-4980": {
    "park": "Marais Laperriere Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5250,6 +5500,7 @@
   },
   "CA-4981": {
    "park": "Rivière-à-Mars (Passe à Saumons) Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5272,6 +5523,7 @@
   },
   "CA-4982": {
    "park": "Parc des Chutes Rouillard Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5294,6 +5546,7 @@
   },
   "CA-4983": {
    "park": "La Foret recreative de Val-d'Or Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5316,6 +5569,7 @@
   },
   "CA-4985": {
    "park": "Parc historique de la Poudriere de Windsor Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5338,6 +5592,7 @@
   },
   "CA-4986": {
    "park": "Parc de la Baie-des-Rochers Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5360,6 +5615,7 @@
   },
   "CA-4987": {
    "park": "Parc de la chute Sainte-Agathe-de-Lotbiniere Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5382,6 +5638,7 @@
   },
   "CA-4988": {
    "park": "Parc de la Promenade-Bellerive Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5404,6 +5661,7 @@
   },
   "CA-4989": {
    "park": "Les Portes du bout du monde Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5426,6 +5684,7 @@
   },
   "CA-4990": {
    "park": "Le Bois de l'équerre Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5448,6 +5707,7 @@
   },
   "CA-4991": {
    "park": "Centre d'interpretation du Ruisseau McFee Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5470,6 +5730,7 @@
   },
   "CA-4992": {
    "park": "Foret Piche-Lemoine Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5492,6 +5753,7 @@
   },
   "CA-4993": {
    "park": "Station touristique Duchesnay Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5514,6 +5776,7 @@
   },
   "CA-4994": {
    "park": "Parc Daniel-Johnson Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5536,6 +5799,7 @@
   },
   "CA-4995": {
    "park": "Parc de la Pointe Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5558,6 +5822,7 @@
   },
   "CA-4996": {
    "park": "Parc de la Riviere-Bourbon Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5580,6 +5845,7 @@
   },
   "CA-4997": {
    "park": "Parc écomaritime de l'Anse-du-Port Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5602,6 +5868,7 @@
   },
   "CA-4998": {
    "park": "Site regional de la montagne de la Croix Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5624,6 +5891,7 @@
   },
   "CA-4999": {
    "park": "Archipel des Sept Iles Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [
     {
@@ -5632,7 +5900,9 @@
      "agency": "Québec prote",
      "record": 5512,
      "record_name": "",
-     "acres_approx": 16278
+     "acres_approx": 16278,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     },
     {
      "verdict": "name match",
@@ -5640,7 +5910,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 15787,
      "record_name": "Archipel-de-Sept-Îles Land set aside",
-     "acres_approx": 16281
+     "acres_approx": 16281,
+     "tier": "UNLIKELY",
+     "why": "shared archipel, ile, sept; extra: park - / record aside, set; this layer / this area's LIKELY rows under 10% YES so far (demoted)"
     }
    ],
    "leads": [],
@@ -5659,10 +5931,11 @@
     "A CPCAD / Parks Canada: hit",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-5000": {
    "park": "Centre d'interpretation des marais sales Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5685,6 +5958,7 @@
   },
   "CA-5001": {
    "park": "Parc des Chutes de Montauban Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5707,6 +5981,7 @@
   },
   "CA-5002": {
    "park": "Parc des Montagnes Noires de Ripon Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5729,6 +6004,7 @@
   },
   "CA-5003": {
    "park": "Parc regional Obalski Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5751,6 +6027,7 @@
   },
   "CA-5005": {
    "park": "Parc des Rapides Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5773,6 +6050,7 @@
   },
   "CA-5006": {
    "park": "Chute Kabir Kouba Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5795,6 +6073,7 @@
   },
   "CA-5007": {
    "park": "Parc des Chutes-de-la-Chaudière Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5817,6 +6096,7 @@
   },
   "CA-5008": {
    "park": "Societe de conservation d'interpretation et de recherche de Berthier et ses Iles Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5839,6 +6119,7 @@
   },
   "CA-5009": {
    "park": "Refuge faunique Marguerite-D'Youville (Ile Saint-Bernard) Wildlife Refuge",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5861,6 +6142,7 @@
   },
   "CA-5010": {
    "park": "Parc René-Lévesque Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5883,6 +6165,7 @@
   },
   "CA-5011": {
    "park": "Baie de Beauport Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5905,6 +6188,7 @@
   },
   "CA-5012": {
    "park": "Marais de la Rivière-aux-Cerises Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5927,6 +6211,7 @@
   },
   "CA-5013": {
    "park": "Parc du Boisé-des-Frères-du-Sacré-Coeur Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5949,6 +6234,7 @@
   },
   "CA-5014": {
    "park": "Parc Valero Les écarts Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5971,6 +6257,7 @@
   },
   "CA-5015": {
    "park": "Chute a Philomene Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -5993,6 +6280,7 @@
   },
   "CA-5016": {
    "park": "Sentier pedestre et poste d'observation Grand Heron Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -6015,6 +6303,7 @@
   },
   "CA-5017": {
    "park": "Parc du Reservoir-Beaudet Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -6037,6 +6326,7 @@
   },
   "CA-5018": {
    "park": "Promenade de la Gorge de la Magog Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -6059,6 +6349,7 @@
   },
   "CA-5019": {
    "park": "Parc regional des Iles-de-Saint-Timothee Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -6081,6 +6372,7 @@
   },
   "CA-5020": {
    "park": "Domaine de Maizerets Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -6103,6 +6395,7 @@
   },
   "CA-5021": {
    "park": "Parc de la Pointe Taylor Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -6125,6 +6418,7 @@
   },
   "CA-5024": {
    "park": "Parc Bellerive (Beaulac-Garthby) Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -6147,6 +6441,7 @@
   },
   "CA-5025": {
    "park": "Domaine du Radar Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -6169,6 +6464,7 @@
   },
   "CA-5026": {
    "park": "Parc de la Frontiere Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -6191,6 +6487,7 @@
   },
   "CA-5027": {
    "park": "Parc du Sacre-Coeur (Saint-Felicien) Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -6213,6 +6510,7 @@
   },
   "CA-5028": {
    "park": "Chute Manitou Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -6235,6 +6533,7 @@
   },
   "CA-5029": {
    "park": "Parc historique de la Pointe-du-Moulin Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -6257,6 +6556,7 @@
   },
   "CA-5030": {
    "park": "Parc des Chutes Coulonge Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -6279,6 +6579,7 @@
   },
   "CA-5031": {
    "park": "Centre ecologique de Port-au-Saumon Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -6301,6 +6602,7 @@
   },
   "CA-5032": {
    "park": "Centre de la nature de Laval Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -6323,6 +6625,7 @@
   },
   "CA-5033": {
    "park": "Parc Bernard-Landry Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -6345,6 +6648,7 @@
   },
   "CA-5035": {
    "park": "Parc de la riviere Bell Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -6367,6 +6671,7 @@
   },
   "CA-5036": {
    "park": "Parc familial des Berges Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -6389,6 +6694,7 @@
   },
   "CA-5038": {
    "park": "Parc de l'etang Burbank Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -6411,6 +6717,7 @@
   },
   "CA-5039": {
    "park": "Parc ecologique Le Renouveau Rosaire-Senecal Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -6433,6 +6740,7 @@
   },
   "CA-5040": {
    "park": "Parc Lucien-Blanchard Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -6455,6 +6763,7 @@
   },
   "CA-5041": {
    "park": "Parc regional du Mont Morissette Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -6477,6 +6786,7 @@
   },
   "CA-5043": {
    "park": "Parc Saint-Jean-Bosco Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -6499,6 +6809,7 @@
   },
   "CA-5044": {
    "park": "Parc ecoforestier de Johnville Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [
     {
@@ -6507,7 +6818,9 @@
      "agency": "Québec prote",
      "record": 622,
      "record_name": "",
-     "acres_approx": 421
+     "acres_approx": 421,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     },
     {
      "verdict": "name match",
@@ -6515,7 +6828,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 12716,
      "record_name": "Tourbière de Johnville (partie Université Bishop/Sherbrooke - servitude) Natural Area Under Private Stewardship",
-     "acres_approx": 421
+     "acres_approx": 421,
+     "tier": "UNLIKELY",
+     "why": "shared johnville; extra: park ecoforestier / record private, stewardship, tourbiere, under; this layer / this area's LIKELY rows under 10% YES so far (demoted)"
     }
    ],
    "leads": [],
@@ -6534,10 +6849,11 @@
     "A CPCAD / Parks Canada: hit",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-5045": {
    "park": "Domaine Taschereau - Parc nature Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -6560,6 +6876,7 @@
   },
   "CA-5046": {
    "park": "Parc du Mont Arthabaska Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -6582,6 +6899,7 @@
   },
   "CA-5047": {
    "park": "Sentier ecologique de Nedelec Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -6604,6 +6922,7 @@
   },
   "CA-5049": {
    "park": "Parc Harold F. Baldwin (Mont Pinacle) Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -6626,6 +6945,7 @@
   },
   "CA-5050": {
    "park": "Parc des Pionniers (Saint-Donat) Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -6648,6 +6968,7 @@
   },
   "CA-5051": {
    "park": "Parc du Marecage-des-Scots Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [
     {
@@ -6656,7 +6977,9 @@
      "agency": "Québec Parc ~3",
      "record": null,
      "record_name": "Parc régional du Marécage des Scots",
-     "acres_approx": 8115
+     "acres_approx": 8115,
+     "tier": "LIKELY",
+     "why": "same name, but 8 parks share this record (sectors of one park, or a container)"
     }
    ],
    "leads": [],
@@ -6675,10 +6998,11 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "CA-5052": {
    "park": "Parc Nature de Pointe-aux-Outardes Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [
     {
@@ -6687,7 +7011,9 @@
      "agency": "Québec prote",
      "record": 5534,
      "record_name": "",
-     "acres_approx": 235
+     "acres_approx": 235,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     },
     {
      "verdict": "name match",
@@ -6695,7 +7021,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 11058,
      "record_name": "Parc nature de Pointe-aux-Outardes Natural Area Under Private Stewardship",
-     "acres_approx": 235
+     "acres_approx": 235,
+     "tier": "UNLIKELY",
+     "why": "shared aux, outarde, pointe; extra: park - / record private, stewardship, under; this layer / this area's LIKELY rows under 10% YES so far (demoted)"
     }
    ],
    "leads": [],
@@ -6714,10 +7042,11 @@
     "A CPCAD / Parks Canada: hit",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-5053": {
    "park": "Parc des Chutes-de-la Petite-Rivière-Bostonnais Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -6740,6 +7069,7 @@
   },
   "CA-5054": {
    "park": "Foret Montmorency Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [
     {
@@ -6748,7 +7078,9 @@
      "agency": "Québec Réser",
      "record": null,
      "record_name": "Réserve faunique des Laurentides",
-     "acres_approx": 1930983
+     "acres_approx": 1930983,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -6767,10 +7099,11 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-5055": {
    "park": "Les Sentiers de la Presqu'île Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -6793,6 +7126,7 @@
   },
   "CA-5056": {
    "park": "Parc du Grand-Heron Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -6815,6 +7149,7 @@
   },
   "CA-5057": {
    "park": "Le site des Chutes et Marais Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -6837,6 +7172,7 @@
   },
   "CA-5058": {
    "park": "Parc Beausejour Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -6859,6 +7195,7 @@
   },
   "CA-5059": {
    "park": "Parc d'environnement naturel de Sutton Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -6881,6 +7218,7 @@
   },
   "CA-5060": {
    "park": "Parc de la Riviere-aux-Rochers - Piege a saumon Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -6903,6 +7241,7 @@
   },
   "CA-5061": {
    "park": "Parc de la riviere Doncaster Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -6925,6 +7264,7 @@
   },
   "CA-5062": {
    "park": "Chutes de Plaisance Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -6947,6 +7287,7 @@
   },
   "CA-5063": {
    "park": "Parc de la foret ancienne du Mont Wright Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -6969,6 +7310,7 @@
   },
   "CA-5064": {
    "park": "Centre d'observation du saumon atlantique Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -6991,6 +7333,7 @@
   },
   "CA-5065": {
    "park": "Domaine Saint-Bernard Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7013,6 +7356,7 @@
   },
   "CA-5066": {
    "park": "Parc des Chutes d'Armagh Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7035,6 +7379,7 @@
   },
   "CA-5067": {
    "park": "Parc Decouverte Nature Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7057,6 +7402,7 @@
   },
   "CA-5068": {
    "park": "Parc des Moulins (Qc) Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7079,6 +7425,7 @@
   },
   "CA-5069": {
    "park": "Parc André-Auger Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7101,6 +7448,7 @@
   },
   "CA-5070": {
    "park": "Chute a Grandmaison Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7123,6 +7471,7 @@
   },
   "CA-5071": {
    "park": "Parc des Rapides-du-Diable Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7145,6 +7494,7 @@
   },
   "CA-5072": {
    "park": "Parc de la Taiga Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7167,6 +7517,7 @@
   },
   "CA-5073": {
    "park": "Parc des Deux Rivieres Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7189,6 +7540,7 @@
   },
   "CA-5074": {
    "park": "Arboretum de la Presqu'Ile Croft Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7211,6 +7563,7 @@
   },
   "CA-5075": {
    "park": "Marais Real-D.-Carbonneau Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7233,6 +7586,7 @@
   },
   "CA-5076": {
    "park": "Parc de l'Ile Ronde de Beauceville Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7255,6 +7609,7 @@
   },
   "CA-5077": {
    "park": "Parc de la Riviere-aux-Sables Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7277,6 +7632,7 @@
   },
   "CA-5078": {
    "park": "Montagne a Coton Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7299,6 +7655,7 @@
   },
   "CA-5079": {
    "park": "Parc du Temps-qui-passe Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7321,6 +7678,7 @@
   },
   "CA-5080": {
    "park": "Reseau du mont Oak Regional Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7343,6 +7701,7 @@
   },
   "CA-5852": {
    "park": "Acton Vale Railway Station (Grand Trunk) National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7365,6 +7724,7 @@
   },
   "CA-5853": {
    "park": "Alert Hangar National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7387,6 +7747,7 @@
   },
   "CA-5854": {
    "park": "Apitipik National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7409,6 +7770,7 @@
   },
   "CA-5856": {
    "park": "Atwater Library of the Mechanics' Institute of Montreal National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7431,6 +7793,7 @@
   },
   "CA-5858": {
    "park": "Bank of Montréal National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7453,6 +7816,7 @@
   },
   "CA-5859": {
    "park": "Battle of Eccles Hill National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7475,6 +7839,7 @@
   },
   "CA-5860": {
    "park": "Battle of Lacolle National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7497,6 +7862,7 @@
   },
   "CA-5861": {
    "park": "Battle of Rivière des Prairies / Battle of Coulée Grou National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7519,6 +7885,7 @@
   },
   "CA-5862": {
    "park": "Battle of September 6th, 1775 National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7541,6 +7908,7 @@
   },
   "CA-5863": {
    "park": "Battle of the Lake of Two Mountains National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7563,6 +7931,7 @@
   },
   "CA-5864": {
    "park": "Beauharnois Power Development National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7585,6 +7954,7 @@
   },
   "CA-5865": {
    "park": "Belvédère Albert-Gascon National Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7607,6 +7977,7 @@
   },
   "CA-5866": {
    "park": "Beth Israël Cemetery National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7629,6 +8000,7 @@
   },
   "CA-5867": {
    "park": "Black Watch (Royal Highland Regiment) of Canada Armoury National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7651,6 +8023,7 @@
   },
   "CA-5868": {
    "park": "Blanc-Sablon National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7673,6 +8046,7 @@
   },
   "CA-5869": {
    "park": "Bolton-Est Town Hall National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7695,6 +8069,7 @@
   },
   "CA-5870": {
    "park": "Bon-Pasteur Chapel National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7717,6 +8092,7 @@
   },
   "CA-5872": {
    "park": "Cap-des-Rosiers Lighthouse National Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7739,6 +8115,7 @@
   },
   "CA-5874": {
    "park": "Caughnawaga Mission / Mission of St. Francis Xavier National Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7761,6 +8138,7 @@
   },
   "CA-5875": {
    "park": "Caughnawaga Presbytery National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7783,6 +8161,7 @@
   },
   "CA-5876": {
    "park": "Chapais House National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7805,6 +8184,7 @@
   },
   "CA-5878": {
    "park": "Christ Church Cathedral National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7827,6 +8207,7 @@
   },
   "CA-5879": {
    "park": "Church of Notre-Dame-de-la-Défense National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7849,6 +8230,7 @@
   },
   "CA-5880": {
    "park": "Church of Notre-Dame-de-la-Présentation National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7871,6 +8253,7 @@
   },
   "CA-5881": {
    "park": "Church of Saint-Léon-de-Westmount National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7893,6 +8276,7 @@
   },
   "CA-5882": {
    "park": "Church of Sainte-Marie National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7915,6 +8299,7 @@
   },
   "CA-5883": {
    "park": "Davie Shipyard National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7937,6 +8322,7 @@
   },
   "CA-5886": {
    "park": "Erskine and American United Church National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7959,6 +8345,7 @@
   },
   "CA-5890": {
    "park": "Former Shawinigan Aluminum Smelting Complex National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -7981,6 +8368,7 @@
   },
   "CA-5891": {
    "park": "Fort Charlesbourg Royal National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8003,6 +8391,7 @@
   },
   "CA-5894": {
    "park": "Fort Longueuil National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8025,6 +8414,7 @@
   },
   "CA-5896": {
    "park": "Fort Saint-Jean National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8047,6 +8437,7 @@
   },
   "CA-5897": {
    "park": "Fort St-Louis National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8069,6 +8460,7 @@
   },
   "CA-5899": {
    "park": "George Stephen House / Mount Stephen Club National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8091,6 +8483,7 @@
   },
   "CA-5902": {
    "park": "Parc Aimé-Maillé Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8113,6 +8506,7 @@
   },
   "CA-5903": {
    "park": "Parc Bourget Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8135,6 +8529,7 @@
   },
   "CA-5904": {
    "park": "Parc de l'Écluse Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8157,6 +8552,7 @@
   },
   "CA-5905": {
    "park": "Parc de l'Île-Perreault Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8179,6 +8575,7 @@
   },
   "CA-5906": {
    "park": "Parc de la Durantaye Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8201,6 +8598,7 @@
   },
   "CA-5907": {
    "park": "Parc de la Faune Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8223,6 +8621,7 @@
   },
   "CA-5908": {
    "park": "Parc de la Promenade Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8245,6 +8644,7 @@
   },
   "CA-5910": {
    "park": "Parc de la Salette Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8267,6 +8667,7 @@
   },
   "CA-5911": {
    "park": "Parc des 14 Îles [Parc des Quatorze-Îles] Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8289,6 +8690,7 @@
   },
   "CA-5912": {
    "park": "Parc des Hauteurs Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8311,6 +8713,7 @@
   },
   "CA-5913": {
    "park": "Parc des Patriarches Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8333,6 +8736,7 @@
   },
   "CA-5914": {
    "park": "Parc des Sourires Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8355,6 +8759,7 @@
   },
   "CA-5915": {
    "park": "Parc Ducharme Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8377,6 +8782,7 @@
   },
   "CA-5916": {
    "park": "Parc École Prévost Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8399,6 +8805,7 @@
   },
   "CA-5917": {
    "park": "Parc J.-Georges-Dunnigan Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8421,6 +8828,7 @@
   },
   "CA-5918": {
    "park": "Parc Jacques-Locas Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8443,6 +8851,7 @@
   },
   "CA-5920": {
    "park": "Parc Maurice-Tessier Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8465,6 +8874,7 @@
   },
   "CA-5921": {
    "park": "Parc Sandra Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8487,6 +8897,7 @@
   },
   "CA-5922": {
    "park": "Parc Théobald-Paquette Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8509,6 +8920,7 @@
   },
   "CA-5923": {
    "park": "Parc Urgel-Carrière Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8531,6 +8943,7 @@
   },
   "CA-5924": {
    "park": "Pavillon du Lac Bleu Recreation Park",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8553,6 +8966,7 @@
   },
   "CA-6205": {
    "park": "Île-Verte Lighthouse National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8575,6 +8989,7 @@
   },
   "CA-6206": {
    "park": "L'Isle-Verte Court House National Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8597,6 +9012,7 @@
   },
   "CA-6310": {
    "park": "Canadian Pacific Railway Station (Vallée-Jonction) National Heritage Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8619,6 +9035,7 @@
   },
   "CA-6402": {
    "park": "Phare de l'Île-du-Havre-aux-Maisons Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8641,6 +9058,7 @@
   },
   "CA-6403": {
    "park": "Presbytère du Bassin Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8663,6 +9081,7 @@
   },
   "CA-6405": {
    "park": "Presbytère du Havre-aux-Maisons Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8685,6 +9104,7 @@
   },
   "CA-6406": {
    "park": "Église de Saint-François-Xavier Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8707,6 +9127,7 @@
   },
   "CA-6407": {
    "park": "Phare de l'Anse-à-la-Cabane Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8729,6 +9150,7 @@
   },
   "CA-6408": {
    "park": "Phare de l'Île-Brion Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8751,6 +9173,7 @@
   },
   "CA-6409": {
    "park": "Phare du Borgot Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8773,6 +9196,7 @@
   },
   "CA-6410": {
    "park": "École Saint-Joseph Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8795,6 +9219,7 @@
   },
   "CA-6411": {
    "park": "Église All Saints Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8817,6 +9242,7 @@
   },
   "CA-6412": {
    "park": "Phare de l'Île-d'Entrée Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8839,6 +9265,7 @@
   },
   "CA-6414": {
    "park": "Fumoirs de la Pointe-Basse Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8861,6 +9288,7 @@
   },
   "CA-6415": {
    "park": "Église de Saint-Pierre-de-La Vernière Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8883,6 +9311,7 @@
   },
   "CA-6416": {
    "park": "Vieux couvent de Havre-aux-Maisons Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8905,6 +9334,7 @@
   },
   "CA-6417": {
    "park": "Église Saint-Peter-by-the-Sea Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8927,6 +9357,7 @@
   },
   "CA-6418": {
    "park": "Église de Saint-Joseph Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -8949,6 +9380,7 @@
   },
   "CA-6419": {
    "park": "Maison Lenoblet-Du Plessis Historic Site",
+   "area": "CA-QC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],

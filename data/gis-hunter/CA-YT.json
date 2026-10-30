@@ -5,6 +5,7 @@
  "parks": {
   "CA-4600": {
    "park": "Alsek River National Heritage Area",
+   "area": "CA-YT",
    "why_not": "pin inside",
    "hits": [
     {
@@ -13,7 +14,9 @@
      "agency": "Yukon campgr",
      "record": 31,
      "record_name": "",
-     "acres_approx": 958254
+     "acres_approx": 958254,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     },
     {
      "verdict": "inside-other",
@@ -21,7 +24,9 @@
      "agency": "Yukon parks ",
      "record": 22,
      "record_name": "Kluane",
-     "acres_approx": 5408636
+     "acres_approx": 5408636,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     },
     {
      "verdict": "inside-other",
@@ -29,7 +34,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 22011,
      "record_name": "Kluane National Park Reserve Of Canada",
-     "acres_approx": 5388298
+     "acres_approx": 5388298,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -40,10 +47,11 @@
     "A CPCAD / Parks Canada: no answer (404)",
     "B ArcGIS Online search \"heritage alsek\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-4601": {
    "park": "Bonnet Plume River National Heritage Area",
+   "area": "CA-YT",
    "why_not": "pin inside",
    "hits": [
     {
@@ -52,7 +60,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 21775,
      "record_name": "Peel Watershed LMU 8",
-     "acres_approx": 4682247
+     "acres_approx": 4682247,
+     "tier": "UNLIKELY",
+     "why": "container word in the record name (zone / district / county / SSSI ...)"
     }
    ],
    "leads": [],
@@ -63,31 +73,26 @@
     "A CPCAD / Parks Canada: no answer (404)",
     "B ArcGIS Online search \"heritage bonnet plume\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-4628": {
    "park": "Spruce Beetle Trail Recreation Site",
+   "area": "CA-YT",
    "why_not": "pin inside",
    "hits": [],
-   "leads": [
-    {
-     "title": "San Miguel Spruce Beetle_WFL1",
-     "url": "https://services6.arcgis.com/vROErdrJCJ1A5ggw/arcgis/rest/services/San_Miguel_Spruce_Beetle_WFL1/FeatureServer",
-     "owner": "sanmiguelwatershed",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Yukon campgr: no polygon at the pin",
     "A Yukon parks : no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"beetle spruce\": 1 lead(s)"
+    "B ArcGIS Online search \"beetle spruce\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-4631": {
    "park": "Tatshenshini River National Heritage Area",
+   "area": "CA-YT",
    "why_not": "pin inside",
    "hits": [
     {
@@ -96,7 +101,9 @@
      "agency": "Yukon parks ",
      "record": 23,
      "record_name": "Kluane",
-     "acres_approx": 835553
+     "acres_approx": 835553,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -107,10 +114,11 @@
     "A CPCAD / Parks Canada: no answer (404)",
     "B ArcGIS Online search \"tatshenshini heritage\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-6263": {
    "park": "Tarfu Lake Campground Recreation Site",
+   "area": "CA-YT",
    "why_not": "pin inside",
    "hits": [
     {
@@ -119,7 +127,9 @@
      "agency": "Yukon parks ",
      "record": 25,
      "record_name": "Agay Mene",
-     "acres_approx": 177339
+     "acres_approx": 177339,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -129,10 +139,11 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-6264": {
    "park": "Takhini River Campground Recreation Site",
+   "area": "CA-YT",
    "why_not": "pin inside",
    "hits": [
     {
@@ -141,7 +152,9 @@
      "agency": "Yukon parks ",
      "record": 4,
      "record_name": "Kusawa",
-     "acres_approx": 752208
+     "acres_approx": 752208,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -149,7 +162,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 21764,
      "record_name": "Kusawa",
-     "acres_approx": 751664
+     "acres_approx": 751664,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -160,10 +175,11 @@
     "A CPCAD / Parks Canada: no answer (404)",
     "B ArcGIS Online search \"campground takhini\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-6265": {
    "park": "Tagish Bridge Recreation Site",
+   "area": "CA-YT",
    "why_not": "pin inside",
    "hits": [
     {
@@ -172,7 +188,9 @@
      "agency": "Yukon campgr",
      "record": 14,
      "record_name": "",
-     "acres_approx": 0
+     "acres_approx": 0,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -182,10 +200,11 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-6268": {
    "park": "Snafu Lake Campground Recreation Site",
+   "area": "CA-YT",
    "why_not": "pin inside",
    "hits": [
     {
@@ -194,7 +213,9 @@
      "agency": "Yukon parks ",
      "record": 25,
      "record_name": "Agay Mene",
-     "acres_approx": 177339
+     "acres_approx": 177339,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -204,10 +225,11 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-6282": {
    "park": "Kathleen Lake Campground and Rec. Site National Park",
+   "area": "CA-YT",
    "why_not": "pin inside",
    "hits": [
     {
@@ -216,7 +238,9 @@
      "agency": "Yukon parks ",
      "record": 22,
      "record_name": "Kluane",
-     "acres_approx": 5408636
+     "acres_approx": 5408636,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     }
    ],
    "leads": [],
@@ -226,10 +250,11 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-0844": {
    "park": "Five Finger Rapids Recreation Park",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -238,78 +263,43 @@
     "A Yukon parks : no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"finger rapids five\": 0 lead(s)"
+    "B ArcGIS Online search \"rapids finger five\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "CA-0845": {
    "park": "Five Mile Lake Recreation Park",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
-   "leads": [
-    {
-     "title": "Chatham County - Five Mile Insurance Districts",
-     "url": "https://gisservices.chathamcountync.gov/opendataagol/rest/services/Fire/Chatham_FiveMileInsuranceDistricts/MapServer",
-     "owner": "Chatham01",
-     "type": "Map Service"
-    },
-    {
-     "title": "FIVE MILE DRIVE DISTANCE FROM CONWAY SC FIRE STATIONS",
-     "url": "https://services.arcgis.com/hnx6Tshv9A7VucmF/arcgis/rest/services/FIVE_MILE_DRIVE_DISTANCE_FROM_CONWAY_SC_FIRE_STATIONS/FeatureServer",
-     "owner": "stwECU1122",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Five Mile Reach of All Snoco Fire Stations",
-     "url": "https://services7.arcgis.com/JL4XvjbjMVWH4R8h/arcgis/rest/services/FiveMile_All_Stations/FeatureServer",
-     "owner": "esexton",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Yukon campgr: no polygon at the pin",
     "A Yukon parks : no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"mile five\": 8 lead(s)"
+    "B ArcGIS Online search \"mile five\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-4602": {
    "park": "Conrad Park Recreation Park",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
-   "leads": [
-    {
-     "title": "Conrad_Zoning",
-     "url": "https://services5.arcgis.com/IxTFx7t7oe2NViid/arcgis/rest/services/Conrad_Zoning/FeatureServer",
-     "owner": "conradmt",
-     "type": "Feature Service"
-    },
-    {
-     "title": "AerialImage_CMCCL_1_Conrad_Memorial",
-     "url": "https://tiles.arcgis.com/tiles/LTisjkyAR6ZTffiz/arcgis/rest/services/AerialImage_CMCCL_1_Conrad_Memorial_V1/MapServer",
-     "owner": "plotboxmapping",
-     "type": "Map Service"
-    },
-    {
-     "title": "Overlays_CMCCL_1_Conrad_Memorial",
-     "url": "https://tiles.arcgis.com/tiles/LTisjkyAR6ZTffiz/arcgis/rest/services/CMCCL_1_Conrad_Memorial_V1/MapServer",
-     "owner": "plotboxmapping",
-     "type": "Map Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Yukon campgr: no polygon at the pin",
     "A Yukon parks : no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"conrad\": 5 lead(s)"
+    "B ArcGIS Online search \"conrad\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-4607": {
    "park": "Fort Selkirk Historic Site Habitat Protection Area",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -324,6 +314,7 @@
   },
   "CA-4610": {
    "park": "Kookatsoon Lake Recreation Park",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -338,6 +329,7 @@
   },
   "CA-4613": {
    "park": "Liard Canyon Recreation Park",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -352,6 +344,7 @@
   },
   "CA-4614": {
    "park": "Marsh Lake Regional Park",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [
@@ -360,18 +353,6 @@
      "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/Marsh_Migration/FeatureServer",
      "owner": "Abby.Stepanauskas@maine.gov_maine",
      "type": "Feature Service"
-    },
-    {
-     "title": "Marsh Migration Suitability Analysis 4-foot SLR",
-     "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_MarshMigration/MapServer",
-     "owner": "FirstMap@De",
-     "type": "Map Service"
-    },
-    {
-     "title": "2100 Marsh Migration Areas: Upland Gross Potential with Developed Lands",
-     "url": "https://tiles.arcgis.com/tiles/7iJyYTjCtKsZS1LR/arcgis/rest/services/marsh_migration_up_hi_gp_dev/MapServer",
-     "owner": "Marc_Carullo",
-     "type": "Map Service"
     }
    ],
    "tried": [
@@ -379,45 +360,28 @@
     "A Yukon parks : no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"marsh\": 6 lead(s)"
+    "B ArcGIS Online search \"marsh\": 1 lead(s)"
    ],
    "verdict": "lead: new layer queued for intake"
   },
   "CA-4615": {
    "park": "Morley River Recreation Park",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
-   "leads": [
-    {
-     "title": "BLM ID Craters of the Moon and Morley Nelson Birds of Prey",
-     "url": "https://gis.blm.gov/idarcgis/rest/services/nlcs/BLM_ID_Craters_of_the_Moon_and_Morley_Nelson_Birds_of_Prey/FeatureServer",
-     "owner": "ggoodwin@blm.gov_BLM_EGIS",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Morley CA",
-     "url": "https://services1.arcgis.com/brSffcdOV7o1pDVT/arcgis/rest/services/Morley_CA/FeatureServer",
-     "owner": "nazia.fazal@leeds.gov.uk_LeedsCC",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Morley NCMT",
-     "url": "https://services1.arcgis.com/brSffcdOV7o1pDVT/arcgis/rest/services/Morley/FeatureServer",
-     "owner": "ashley.crow_LeedsCC",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Yukon campgr: no polygon at the pin",
     "A Yukon parks : no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"morley\": 6 lead(s)"
+    "B ArcGIS Online search \"morley\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-4616": {
    "park": "Nisutlin River Recreation Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -432,6 +396,7 @@
   },
   "CA-4619": {
    "park": "T'aw Ta'ar National Historic Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -445,27 +410,22 @@
   },
   "CA-4624": {
    "park": "Otter Falls Recreation Park",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
-   "leads": [
-    {
-     "title": "18_Otter Falls Road",
-     "url": "https://tiles.arcgis.com/tiles/RpVCghfSj7XHqAKQ/arcgis/rest/services/18_OtterFallsRoad/MapServer",
-     "owner": "thompsn0",
-     "type": "Map Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Yukon campgr: no polygon at the pin",
     "A Yukon parks : no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"falls otter\": 1 lead(s)"
+    "B ArcGIS Online search \"falls otter\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-4626": {
    "park": "Rampart House Habitat Protection Area",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -480,6 +440,7 @@
   },
   "CA-4627": {
    "park": "Rancheria Falls Recreation Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -494,6 +455,7 @@
   },
   "CA-4632": {
    "park": "Thirty Mile - Yukon River National Heritage Area",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -508,6 +470,7 @@
   },
   "CA-4633": {
    "park": "Thirty Mile River Habitat Protection Area",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -522,6 +485,7 @@
   },
   "CA-4936": {
    "park": "Dawson Historical Complex National Historic Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -536,39 +500,22 @@
   },
   "CA-4937": {
    "park": "Dredge No. 4 National Historic Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
-   "leads": [
-    {
-     "title": "CESWG Project Dredge Locations",
-     "url": "https://services2.arcgis.com/Lyb3EnSIm9Hcc5Fv/arcgis/rest/services/CESWG_Active_Dredge_Locations/FeatureServer",
-     "owner": "ceswg-od",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Suction Dredge Special Regulations - 2020 [ds788]",
-     "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds788_fpu/FeatureServer",
-     "owner": "BIOS_Admin",
-     "type": "Feature Service"
-    },
-    {
-     "title": "MVP Navigation Dredge Cut Areas 2003 to 2019",
-     "url": "https://services6.arcgis.com/ym4vv2kwBujSjhwm/arcgis/rest/services/dredge_cut_areas_2003_to_2019/FeatureServer",
-     "owner": "kjh_mvp",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Yukon campgr: no polygon at the pin",
     "A Yukon parks : no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"dredge\": 5 lead(s)"
+    "B ArcGIS Online search \"dredge\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-4938": {
    "park": "Former Territorial Court House National Historic Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -583,54 +530,7 @@
   },
   "CA-4939": {
    "park": "S.S. Keno National Historic Site",
-   "why_not": "nothing near",
-   "hits": [],
-   "leads": [
-    {
-     "title": "Keno",
-     "url": "https://services1.arcgis.com/1Wj8xAact2ptcedL/arcgis/rest/services/Keno/FeatureServer",
-     "owner": "mjbowey",
-     "type": "Feature Service"
-    }
-   ],
-   "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"keno\": 1 lead(s)"
-   ],
-   "verdict": "lead: new layer queued for intake"
-  },
-  "CA-4940": {
-   "park": "S.S. Klondike National Historic Site",
-   "why_not": "nothing near",
-   "hits": [],
-   "leads": [
-    {
-     "title": "Klondike National Historic District",
-     "url": "https://services8.arcgis.com/2Oj4p0oK7rnTYNHA/arcgis/rest/services/Klondike_National_Historic_District/FeatureServer",
-     "owner": "GIS_stonecrestga",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Klondike Road",
-     "url": "https://services1.arcgis.com/O1JpcwDW8sjYuddV/arcgis/rest/services/service_324a2160beeb4a6c80b63e4daef58211/FeatureServer",
-     "owner": "matthew.gore_fdot3",
-     "type": "Feature Service"
-    }
-   ],
-   "tried": [
-    "A Yukon campgr: no polygon at the pin",
-    "A Yukon parks : no polygon at the pin",
-    "A CPCAD / Parks Canada: no polygon at the pin",
-    "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"klondike\": 2 lead(s)"
-   ],
-   "verdict": "lead: new layer queued for intake"
-  },
-  "CA-5286": {
-   "park": "Canadian Bank of Commerce National Historic Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -639,12 +539,43 @@
     "A Yukon parks : no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"commerce canadian bank\": 0 lead(s)"
+    "B ArcGIS Online search \"keno\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-4940": {
+   "park": "S.S. Klondike National Historic Site",
+   "area": "CA-YT",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Yukon campgr: no polygon at the pin",
+    "A Yukon parks : no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"klondike\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5286": {
+   "park": "Canadian Bank of Commerce National Historic Site",
+   "area": "CA-YT",
+   "why_not": "nothing near",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A Yukon campgr: no polygon at the pin",
+    "A Yukon parks : no polygon at the pin",
+    "A CPCAD / Parks Canada: no polygon at the pin",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"canadian commerce bank\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "CA-5287": {
    "park": "Tr'ochek National Historic Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -659,6 +590,7 @@
   },
   "CA-5449": {
    "park": "Aishihik Lake Recreation Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -673,6 +605,7 @@
   },
   "CA-5451": {
    "park": "Lapierre House (Zheh Gwatsal) Nature Reserve",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -687,39 +620,22 @@
   },
   "CA-5452": {
    "park": "Simpson Lake Recreation Park",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
-   "leads": [
-    {
-     "title": "Arbuckle-Simpson Hydrologic Study (Open Data)",
-     "url": "https://owrb.csa.ou.edu/server/rest/services/Special_Studies/Arbuckle_Simpson/MapServer",
-     "owner": "OWRBOnline",
-     "type": "Map Service"
-    },
-    {
-     "title": "Arbuckle-Simpson Hydrologic Study",
-     "url": "https://owrb.csa.ou.edu/server/rest/services/Special_Studies/Arbuckle_Simpson/MapServer",
-     "owner": "OWRBOnline",
-     "type": "Map Service"
-    },
-    {
-     "title": "Simpson County Public Schools 1",
-     "url": "https://services1.arcgis.com/GWbDzXVIBphv2Dgx/arcgis/rest/services/Simpson_County_Public_Schools_1/FeatureServer",
-     "owner": "cparsons0085_Spring24",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Yukon campgr: no polygon at the pin",
     "A Yukon parks : no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"simpson\": 5 lead(s)"
+    "B ArcGIS Online search \"simpson\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-5453": {
    "park": "Teslin Lake Recreation Park",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -734,6 +650,7 @@
   },
   "CA-5454": {
    "park": "Discovery Claim (Claim 37903) National Historic Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -742,12 +659,13 @@
     "A Yukon parks : no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"discovery claim 37903\": 0 lead(s)"
+    "B ArcGIS Online search \"discovery 37903 claim\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "CA-5455": {
    "park": "Old Territorial Administration Building National Historic Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -762,6 +680,7 @@
   },
   "CA-5456": {
    "park": "St. Paul's Anglican Church National Historic Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -776,6 +695,7 @@
   },
   "CA-5458": {
    "park": "Yukon Hotel National Historic Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -790,6 +710,7 @@
   },
   "CA-5737": {
    "park": "Big Creek Recreation Park",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [
     {
@@ -798,7 +719,9 @@
      "agency": "Yukon campgr",
      "record": 18,
      "record_name": "",
-     "acres_approx": 4
+     "acres_approx": 4,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -808,126 +731,79 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-5738": {
    "park": "Lake Laberge Recreation Park",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
-   "leads": [
-    {
-     "title": "Laberge caribou herd range",
-     "url": "https://services.arcgis.com/bwohQix8s7zRvYC9/arcgis/rest/services/Laberge_Herd_Range/FeatureServer",
-     "owner": "Yukon.government.wildlife",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Yukon campgr: no polygon at the pin",
     "A Yukon parks : no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"laberge\": 1 lead(s)"
+    "B ArcGIS Online search \"laberge\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-5739": {
    "park": "Lucky Lake Recreation Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
-   "leads": [
-    {
-     "title": "Lucky_Star_ALTA_SurveyPoints",
-     "url": "https://services.arcgis.com/eDGut86ch1ami1yK/arcgis/rest/services/Lucky_Star_ALTA_SurveyPoints/FeatureServer",
-     "owner": "rsirdoreus",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Yukon campgr: no polygon at the pin",
     "A Yukon parks : no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"lucky\": 1 lead(s)"
+    "B ArcGIS Online search \"lucky\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-5743": {
    "park": "Twin Lakes Recreation Park",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
-   "leads": [
-    {
-     "title": "Twin_Lakes_Development_Level_2_(Areas)",
-     "url": "https://services3.arcgis.com/p1XMcn4KWrkdZVeA/arcgis/rest/services/Twin_Lakes_Development_Level_2_(Areas)/FeatureServer",
-     "owner": "okanoganDEM",
-     "type": "Feature Service"
-    },
-    {
-     "title": "PEF_Twin_Lakes",
-     "url": "https://services1.arcgis.com/OoHBsnqevYljcMGr/arcgis/rest/services/PEF_Twin_Lakes/FeatureServer",
-     "owner": "geog467.redteam_JMU",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Twin Lakes Watershed",
-     "url": "https://services.arcgis.com/0ahKkMERRbqrhR00/arcgis/rest/services/Twin_Lakes_Watershed/FeatureServer",
-     "owner": "HVAMaps_HVAtoday",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Yukon campgr: no polygon at the pin",
     "A Yukon parks : no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"lakes twin\": 5 lead(s)"
+    "B ArcGIS Online search \"lakes twin\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-5744": {
    "park": "Watson Lake Recreation Park",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
-   "leads": [
-    {
-     "title": "Watson Grinding Manufacturing B",
-     "url": "https://services.arcgis.com/NummVBqZSIJKUeVR/arcgis/rest/services/Watson_Grinding_Manufacturing_B/FeatureServer",
-     "owner": "e165791_MyCity",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Yukon campgr: no polygon at the pin",
     "A Yukon parks : no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"watson\": 1 lead(s)"
+    "B ArcGIS Online search \"watson\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-5745": {
    "park": "Wolf Creek Recreation Park",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [
-    {
-     "title": "FWS R2 ES Mexican Wolf Project  2020 Occupied Range Map",
-     "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/2020_Occupied_Range/FeatureServer",
-     "owner": "colby_gardner@fws.gov_fws",
-     "type": "Feature Service"
-    },
     {
      "title": "Gray Wolf and Eastern Wolf Historical Range",
      "url": "https://services.arcgis.com/RCbhhjhpPZMzteoU/arcgis/rest/services/Gray Wolf and Eastern Wolf Historical Range/FeatureServer",
      "owner": "conservationGIS0",
      "type": "Feature Service"
-    },
-    {
-     "title": "Wolf Regions and Management Units (2026 Season)",
-     "url": "https://services3.arcgis.com/Cdxz8r11hT0MGzg1/arcgis/rest/services/ADMBND_HD_WOLF_MANAGEUNITS/FeatureServer",
-     "owner": "MtFishWildlifeParks",
-     "type": "Feature Service"
     }
    ],
    "tried": [
@@ -935,45 +811,28 @@
     "A Yukon parks : no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"wolf\": 8 lead(s)"
+    "B ArcGIS Online search \"wolf\": 1 lead(s)"
    ],
    "verdict": "lead: new layer queued for intake"
   },
   "CA-5746": {
    "park": "Wye Lake Recreation Park",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
-   "leads": [
-    {
-     "title": "Wye Connectors",
-     "url": "https://maps.lacity.org/lahub/rest/services/Sewer_Information/MapServer/2",
-     "owner": "lahub_admin",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Wye Fittings",
-     "url": "https://maps.roundrocktexas.gov/un/rest/services/WastewaterUN_AGO/vw_Wye_Fittings/MapServer/1",
-     "owner": "roundrockgis",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Wye",
-     "url": "https://services6.arcgis.com/JjJzcTHADvUflwt9/arcgis/rest/services/Wye/FeatureServer",
-     "owner": "FoxChapelAC",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A Yukon campgr: no polygon at the pin",
     "A Yukon parks : no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"wye\": 4 lead(s)"
+    "B ArcGIS Online search \"wye\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-6258": {
    "park": "Congdon Creek Campground Territorial Park",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -987,6 +846,7 @@
   },
   "CA-6259": {
    "park": "Dezadeash Lake Campground Territorial Park",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [
     {
@@ -995,7 +855,9 @@
      "agency": "Yukon parks ",
      "record": 22,
      "record_name": "Kluane",
-     "acres_approx": 5408636
+     "acres_approx": 5408636,
+     "tier": "UNLIKELY",
+     "why": "container: one record under 3 parks"
     }
    ],
    "leads": [],
@@ -1005,10 +867,11 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-6260": {
    "park": "Yukon River Campground Recreation Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1022,6 +885,7 @@
   },
   "CA-6262": {
    "park": "Tatchun Creek Campground Recreation Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1035,6 +899,7 @@
   },
   "CA-6266": {
    "park": "Squanga Lake Campground Recreation Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1048,6 +913,7 @@
   },
   "CA-6267": {
    "park": "Snag Junction Campground Recreation Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1061,6 +927,7 @@
   },
   "CA-6269": {
    "park": "Rock River Campground Recreation Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1074,6 +941,7 @@
   },
   "CA-6270": {
    "park": "Quiet Lake South Campground Recreation Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1087,6 +955,7 @@
   },
   "CA-6271": {
    "park": "Quiet Lake North Campground Recreation Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1100,6 +969,7 @@
   },
   "CA-6272": {
    "park": "Pine Lake Campground Recreation Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1113,6 +983,7 @@
   },
   "CA-6273": {
    "park": "Nunatuk Campground Recreation Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1126,6 +997,7 @@
   },
   "CA-6274": {
    "park": "Nahanni Range Campground Recreation Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1139,6 +1011,7 @@
   },
   "CA-6275": {
    "park": "Moose Creek Campground Recreation Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [
     {
@@ -1147,7 +1020,9 @@
      "agency": "Yukon campgr",
      "record": 8,
      "record_name": "",
-     "acres_approx": 243
+     "acres_approx": 243,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -1157,10 +1032,11 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-6276": {
    "park": "Million Dollar Falls Campground Territorial Park",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [
     {
@@ -1169,7 +1045,9 @@
      "agency": "Yukon parks ",
      "record": 23,
      "record_name": "Kluane",
-     "acres_approx": 835553
+     "acres_approx": 835553,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -1179,10 +1057,11 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-6277": {
    "park": "Little Salmon Lake Campground Recreation Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1196,6 +1075,7 @@
   },
   "CA-6278": {
    "park": "Lapie Canyon Campground Recreation Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1209,6 +1089,7 @@
   },
   "CA-6279": {
    "park": "Lake Creek Campground Recreation Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1222,6 +1103,7 @@
   },
   "CA-6281": {
    "park": "Klondike River Campground Recreation Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1235,6 +1117,7 @@
   },
   "CA-6283": {
    "park": "Johnson Lake Campground Recreation Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1248,6 +1131,7 @@
   },
   "CA-6284": {
    "park": "Frenchman Lake Campground Recreation Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1261,6 +1145,7 @@
   },
   "CA-6285": {
    "park": "Frances Lake Campground Recreation Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1274,6 +1159,7 @@
   },
   "CA-6286": {
    "park": "Fox Lake Campground Recreation Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1287,6 +1173,7 @@
   },
   "CA-6287": {
    "park": "Ethel Lake Campground Recreation Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1300,6 +1187,7 @@
   },
   "CA-6288": {
    "park": "Engineer Creek Campground Recreation Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1313,6 +1201,7 @@
   },
   "CA-6289": {
    "park": "Drury Creek Campground Recreation Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1326,6 +1215,7 @@
   },
   "CA-6299": {
    "park": "Caribou Hotel Historic Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1339,6 +1229,7 @@
   },
   "CA-6300": {
    "park": "Dawson City Telegraph Office Historic Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1352,6 +1243,7 @@
   },
   "CA-6301": {
    "park": "The Yukon Sawmill Company Office Historic Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1365,6 +1257,7 @@
   },
   "CA-6302": {
    "park": "Mayo Legion Hall Historic Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1378,6 +1271,7 @@
   },
   "CA-6303": {
    "park": "Archdeacon McDonald Memorial Church and St Luke’s Church Historic Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1391,6 +1285,7 @@
   },
   "CA-6304": {
    "park": "Gindehchik-Rampart House Historic Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1404,6 +1299,7 @@
   },
   "CA-6305": {
    "park": "Watson Lake Air Terminal Building Historic Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1417,6 +1313,7 @@
   },
   "CA-6306": {
    "park": "Watson Lake Sign Post Forest Historic Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1430,6 +1327,7 @@
   },
   "CA-6307": {
    "park": "Old Log Church and Rectory Historic Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1443,6 +1341,7 @@
   },
   "CA-6308": {
    "park": "AJ Goddard Shipwreck Archeological Reserve",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1456,6 +1355,7 @@
   },
   "CA-6309": {
    "park": "The Mabel McIntyre House(Mining Recorder's Office) Historic Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1469,6 +1369,7 @@
   },
   "CA-6313": {
    "park": "Carcross Desert Recreation Park",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1482,6 +1383,7 @@
   },
   "CA-6314": {
    "park": "Robinson Roadhouse Historic Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1495,6 +1397,7 @@
   },
   "CA-6330": {
    "park": "Whitehorse Telegraph Office Historic Site",
+   "area": "CA-YT",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],

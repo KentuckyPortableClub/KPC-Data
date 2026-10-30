@@ -5,6 +5,7 @@
  "parks": {
   "CA-0465": {
    "park": "Lawrencetown Beach Provincial Park",
+   "area": "CA-NS",
    "why_not": "pin inside",
    "hits": [
     {
@@ -13,7 +14,9 @@
      "agency": "Nova Scotia ~1",
      "record": 10648,
      "record_name": "",
-     "acres_approx": 1
+     "acres_approx": 1,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -27,10 +30,11 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-0941": {
    "park": "Rainbow Haven Beach Provincial Park",
+   "area": "CA-NS",
    "why_not": "pin inside",
    "hits": [
     {
@@ -39,7 +43,9 @@
      "agency": "Nova Scotia ~1",
      "record": 10463,
      "record_name": "",
-     "acres_approx": 41
+     "acres_approx": 41,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     },
     {
      "verdict": "name mismatch",
@@ -47,7 +53,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 1626,
      "record_name": "Cole Harbour - Lawrencetown Provincial Park",
-     "acres_approx": 1709
+     "acres_approx": 1709,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -61,10 +69,11 @@
     "A CPCAD / Parks Canada: hit",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "inside-other (several park records under the pin: R-G7 step 4)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-1851": {
    "park": "Shut-in Island Nature Reserve",
+   "area": "CA-NS",
    "why_not": "pin inside",
    "hits": [
     {
@@ -73,7 +82,9 @@
      "agency": "Nova Scotia ",
      "record": 1031,
      "record_name": "St. Margarets Bay Islands Nature Reserve",
-     "acres_approx": 97
+     "acres_approx": 97,
+     "tier": "UNLIKELY",
+     "why": "one shared word (island) only"
     },
     {
      "verdict": "name mismatch",
@@ -81,7 +92,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 1550,
      "record_name": "St. Margarets Bay Islands Nature Reserve",
-     "acres_approx": 97
+     "acres_approx": 97,
+     "tier": "UNLIKELY",
+     "why": "one shared word (island) only"
     }
    ],
    "leads": [],
@@ -95,10 +108,11 @@
     "A CPCAD / Parks Canada: hit",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "inside-other (several park records under the pin: R-G7 step 4)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-4830": {
    "park": "Charles Fort National Historic Site",
+   "area": "CA-NS",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -117,6 +131,7 @@
   },
   "CA-5798": {
    "park": "Annapolis County Court House National Historic Site",
+   "area": "CA-NS",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -129,12 +144,13 @@
     "A Nova Scotia ~2: no answer (404)",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"annapolis house court\": 0 lead(s)"
+    "B ArcGIS Online search \"annapolis court house\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "CA-5808": {
    "park": "Enragée Point Lighthouse National Heritage Site",
+   "area": "CA-NS",
    "why_not": "pin inside",
    "hits": [
     {
@@ -143,7 +159,9 @@
      "agency": "Nova Scotia ",
      "record": 34,
      "record_name": "Cape Breton Highlands National Park Of Canada",
-     "acres_approx": 8
+     "acres_approx": 8,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "name mismatch",
@@ -151,7 +169,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 21986,
      "record_name": "Cape Breton Highlands National Park Of Canada",
-     "acres_approx": 233335
+     "acres_approx": 233335,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -165,10 +185,11 @@
     "A CPCAD / Parks Canada: hit",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "inside-other (several park records under the pin: R-G7 step 4)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-5819": {
    "park": "Halifax WWII Coastal Defences National Historic Site",
+   "area": "CA-NS",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -181,12 +202,13 @@
     "A Nova Scotia ~2: no answer (404)",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"defences coastal halifax\": 0 lead(s)"
+    "B ArcGIS Online search \"defences halifax coastal\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "CA-6189": {
    "park": "Peter Island Lighthouse National Heritage Site",
+   "area": "CA-NS",
    "why_not": "pin inside",
    "hits": [
     {
@@ -195,7 +217,9 @@
      "agency": "Nova Scotia ",
      "record": 570,
      "record_name": "Peter's Island Conservation Lands",
-     "acres_approx": 3
+     "acres_approx": 3,
+     "tier": "LIKELY",
+     "why": "shared island, peter; extra: park lighthouse / record -"
     },
     {
      "verdict": "name match",
@@ -203,7 +227,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 811,
      "record_name": "Peter's Island Conservation Lands",
-     "acres_approx": 3
+     "acres_approx": 3,
+     "tier": "UNLIKELY",
+     "why": "shared island, peter; extra: park lighthouse / record -; this layer / this area's LIKELY rows under 10% YES so far (demoted)"
     }
    ],
    "leads": [],
@@ -217,10 +243,11 @@
     "A CPCAD / Parks Canada: hit",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "CA-6567": {
    "park": "Roseway Beach Provincial Park",
+   "area": "CA-NS",
    "why_not": "pin inside",
    "hits": [
     {
@@ -229,7 +256,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 1495,
      "record_name": "Bowers Meadows Wilderness Area",
-     "acres_approx": 108
+     "acres_approx": 108,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -243,32 +272,14 @@
     "A CPCAD / Parks Canada: hit",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-4842": {
    "park": "Marconi National Historic Site",
+   "area": "CA-NS",
    "why_not": "check",
    "hits": [],
-   "leads": [
-    {
-     "title": "Servidão Rádio Eléctrica (Rádio Marconi) - Telecomunicações",
-     "url": "http://geoportal.cm-amadora.pt/ArcGIS/rest/services/5_PMOTS_PDM_condicionantes/MapServer/21",
-     "owner": "benitezm_uji",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Marconi_Plat_o56003",
-     "url": "https://tiles.arcgis.com/tiles/5ITF23HWARq3AMd2/arcgis/rest/services/Marconi_Plat_o56003/MapServer",
-     "owner": "daygeckoart",
-     "type": "Map Service"
-    },
-    {
-     "title": "Ortho_Marconi_2024feb19",
-     "url": "https://tiles.arcgis.com/tiles/5ITF23HWARq3AMd2/arcgis/rest/services/Ortho_Marconi_2024feb19/MapServer",
-     "owner": "daygeckoart",
-     "type": "Map Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A NS-F111 Nova: no answer (404)",
     "A NS-NHS Nova : no answer (404)",
@@ -278,34 +289,16 @@
     "A Nova Scotia ~2: no answer (404)",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"marconi\": 4 lead(s)"
+    "B ArcGIS Online search \"marconi\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-4847": {
    "park": "St. Peters National Historic Site",
+   "area": "CA-NS",
    "why_not": "check",
    "hits": [],
-   "leads": [
-    {
-     "title": "County Road 209 from Sandridge to Peters Creek Bridge",
-     "url": "https://services9.arcgis.com/pH6fw9gU2oojPvt8/arcgis/rest/services/County_Road_209_from_Sandridge_to_Peters_Creek_Bridge/FeatureServer",
-     "owner": "Linda.Hess_WGI",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Immaculate Conception to Vatican St Peters Basillica",
-     "url": "https://services4.arcgis.com/XFJPoGkgEm6C1oy0/arcgis/rest/services/Immaculate Conception to Vatican St Peters Basillica/FeatureServer",
-     "owner": "studentpublisher_fairms",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Peters TWP Zoning Districts 2026",
-     "url": "https://services3.arcgis.com/DvTqoyLKkslnGFR5/arcgis/rest/services/Zoning_Districts_2026/FeatureServer",
-     "owner": "jkennedy_SpatialDataLogic",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A NS-F111 Nova: no answer (404)",
     "A NS-NHS Nova : no answer (404)",
@@ -315,12 +308,13 @@
     "A Nova Scotia ~2: no answer (404)",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"peters\": 4 lead(s)"
+    "B ArcGIS Online search \"peters\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-5805": {
    "park": "Chapman House National Historic Site",
+   "area": "CA-NS",
    "why_not": "check",
    "hits": [],
    "leads": [],
@@ -339,6 +333,7 @@
   },
   "CA-5813": {
    "park": "Grand-Pré Rural Historic District National Historic Site",
+   "area": "CA-NS",
    "why_not": "check",
    "hits": [],
    "leads": [],
@@ -351,28 +346,16 @@
     "A Nova Scotia ~2: no answer (404)",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"district grand rural\": 0 lead(s)"
+    "B ArcGIS Online search \"district rural grand\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "CA-0092": {
    "park": "South West Nova Biosphere Reserve",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
-   "leads": [
-    {
-     "title": "Study Area _ Southwest Nova Scotia Biosphere Reserve _Benjamin Ross__WFL1",
-     "url": "https://services1.arcgis.com/9NvE8jKNWWlDGsUJ/arcgis/rest/services/Study_Area___Southwest_Nova_Scotia_Biosphere_Reserve__Benjamin_Ross__WFL1/FeatureServer",
-     "owner": "rossben2_utoronto",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Southwest Nova Biosphere Region Study Area_WFL1",
-     "url": "https://services1.arcgis.com/9NvE8jKNWWlDGsUJ/arcgis/rest/services/Southwest_Nova_Biosphere_Region_Study_Area_WFL1/FeatureServer",
-     "owner": "hespemil_utoronto",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A NS-F111 Nova: no answer (404)",
     "A NS-NHS Nova : no answer (404)",
@@ -382,12 +365,13 @@
     "A Nova Scotia ~2: no answer (404)",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"biosphere south nova\": 2 lead(s)"
+    "B ArcGIS Online search \"biosphere south west\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-0453": {
    "park": "Bras d'Or Lake Biosphere Reserve",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -406,6 +390,7 @@
   },
   "CA-0461": {
    "park": "Fort Point Lighthouse Provincial Park",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -424,6 +409,7 @@
   },
   "CA-0478": {
    "park": "Scots Bay Provincial Park",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [
     {
@@ -432,7 +418,9 @@
      "agency": "Nova Scotia ~1",
      "record": 11827,
      "record_name": "",
-     "acres_approx": 0
+     "acres_approx": 0,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -446,10 +434,11 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-0479": {
    "park": "Sherbrooke Provincial Park",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -468,15 +457,10 @@
   },
   "CA-0485": {
    "park": "Trout Brook Provincial Park",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [
-    {
-     "title": "Brook Trout Conservation Zone within New Jersey",
-     "url": "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/Brook_Trout_Conservation_Zone/FeatureServer",
-     "owner": "NJDEPBGIS",
-     "type": "Feature Service"
-    },
     {
      "title": "FH: Brook Trout Reserves Layer - PROD",
      "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/Brook_Trout_Map_V4_WFL1/FeatureServer",
@@ -499,12 +483,13 @@
     "A Nova Scotia ~2: no answer (404)",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"trout brook\": 8 lead(s)"
+    "B ArcGIS Online search \"brook trout\": 2 lead(s)"
    ],
    "verdict": "lead: new layer queued for intake"
   },
   "CA-0882": {
    "park": "Balmoral Mills Provincial Park",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -523,6 +508,7 @@
   },
   "CA-0892": {
    "park": "Burnt Island Provincial Park",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [
     {
@@ -531,7 +517,9 @@
      "agency": "Nova Scotia ~1",
      "record": 4471,
      "record_name": "",
-     "acres_approx": 5
+     "acres_approx": 5,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -545,10 +533,11 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-0894": {
    "park": "Caddell Rapids Lookoff Provincial Park",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -561,12 +550,13 @@
     "A Nova Scotia ~2: no answer (404)",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"caddell lookoff rapids\": 0 lead(s)"
+    "B ArcGIS Online search \"lookoff caddell rapids\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "CA-0903": {
    "park": "Cookville Provincial Park",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [
     {
@@ -575,7 +565,9 @@
      "agency": "Nova Scotia ~1",
      "record": 17391,
      "record_name": "",
-     "acres_approx": 2
+     "acres_approx": 2,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -589,10 +581,11 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-0919": {
    "park": "Joggins Fossil Cliffs World Heritage Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -605,12 +598,13 @@
     "A Nova Scotia ~2: no answer (404)",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"heritage joggins fossil\": 0 lead(s)"
+    "B ArcGIS Online search \"heritage joggins cliffs\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "CA-0929": {
    "park": "MacCormack Beach Provincial Park",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -629,6 +623,7 @@
   },
   "CA-1759": {
    "park": "Elderbank Provincial Park",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -647,6 +642,7 @@
   },
   "CA-1766": {
    "park": "Blomidon Lookoff Provincial Park",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -665,6 +661,7 @@
   },
   "CA-1771": {
    "park": "Hubbards Provincial Park",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -683,6 +680,7 @@
   },
   "CA-1791": {
    "park": "MacElmons Pond Provincial Park",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -701,6 +699,7 @@
   },
   "CA-1794": {
    "park": "Marie Joseph Provincial Park",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -719,6 +718,7 @@
   },
   "CA-1799": {
    "park": "McCormacks Beach Provincial Park",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [
     {
@@ -727,7 +727,9 @@
      "agency": "Nova Scotia ~1",
      "record": 10344,
      "record_name": "",
-     "acres_approx": 16
+     "acres_approx": 16,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -741,10 +743,11 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-1845": {
    "park": "Cape Jack Beach Provincial Park",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -757,12 +760,13 @@
     "A Nova Scotia ~2: no answer (404)",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"beach jack cape\": 0 lead(s)"
+    "B ArcGIS Online search \"beach cape jack\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "CA-1848": {
    "park": "Shubie Park Recreation Park",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [
     {
@@ -771,7 +775,9 @@
      "agency": "Nova Scotia ~1",
      "record": 8053,
      "record_name": "",
-     "acres_approx": 4
+     "acres_approx": 4,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -785,32 +791,14 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-1849": {
    "park": "Shubenacadie Provincial  Park Provincial Wildlife Area",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
-   "leads": [
-    {
-     "title": "Shubenacadie Aquifer Protection Overlay Zone",
-     "url": "https://services.arcgis.com/mrvsguor7fEXSaqM/arcgis/rest/services/Shubenacadie_Aquifer/FeatureServer",
-     "owner": "tscott_easthants",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Shubenacadie Lakes Floodplain Study",
-     "url": "https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Shubenacadie_Lakes_Floodplain_Study/FeatureServer",
-     "owner": "opendata_HRM",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Shubenacadie and Stewiacke River",
-     "url": "https://services1.arcgis.com/jYHC0Oa2n7z2uKcM/arcgis/rest/services/Shubenacadie_and_Stewiacke_River/FeatureServer",
-     "owner": "lh432061@dal.ca2",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A NS-F111 Nova: no answer (404)",
     "A NS-NHS Nova : no answer (404)",
@@ -820,22 +808,16 @@
     "A Nova Scotia ~2: no answer (404)",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"shubenacadie\": 5 lead(s)"
+    "B ArcGIS Online search \"shubenacadie\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-1863": {
    "park": "Southern Bight-Minas Basin Ramsar Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
-   "leads": [
-    {
-     "title": "Northern and Southern Murray-Darling Basin Boundary",
-     "url": "https://services8.arcgis.com/5xxEi7I2m6ml97fE/arcgis/rest/services/North_southern_basin_gdb/FeatureServer",
-     "owner": "MDBAGISPUBLISHER",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A NS-F111 Nova: no answer (404)",
     "A NS-NHS Nova : no answer (404)",
@@ -845,12 +827,13 @@
     "A Nova Scotia ~2: no answer (404)",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"southern ramsar basin\": 1 lead(s)"
+    "B ArcGIS Online search \"southern ramsar basin\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-1867": {
    "park": "Spry Bay Provincial Park",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [
     {
@@ -859,7 +842,9 @@
      "agency": "Nova Scotia ~1",
      "record": 3312,
      "record_name": "",
-     "acres_approx": 0
+     "acres_approx": 0,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -873,10 +858,11 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-1876": {
    "park": "Irish Cove Provincial Park",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -895,6 +881,7 @@
   },
   "CA-1893": {
    "park": "Open Hearth Park Recreation Park",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -913,6 +900,7 @@
   },
   "CA-1902": {
    "park": "Tusket River Lookoff Provincial Park",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [
     {
@@ -921,7 +909,9 @@
      "agency": "Nova Scotia ~1",
      "record": 14925,
      "record_name": "",
-     "acres_approx": 1
+     "acres_approx": 1,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -936,10 +926,11 @@
     "A CPCAD / Parks Canada: no answer (404)",
     "B ArcGIS Online search \"lookoff tusket\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-1904": {
    "park": "Blind Bay Provincial Park",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [
     {
@@ -948,7 +939,9 @@
      "agency": "Nova Scotia ~1",
      "record": 8346,
      "record_name": "",
-     "acres_approx": 217
+     "acres_approx": 217,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -962,10 +955,11 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-3053": {
    "park": "Lahave Sunset Park Conservation Area",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -978,28 +972,16 @@
     "A Nova Scotia ~2: no answer (404)",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"lahave sunset\": 0 lead(s)"
+    "B ArcGIS Online search \"sunset lahave\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "CA-4827": {
    "park": "Beaubassin National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
-   "leads": [
-    {
-     "title": "ZONAGE_BEAUBASSIN",
-     "url": "https://services7.arcgis.com/ixihoGz4QXyz0Lzr/arcgis/rest/services/ZONAGE_BEAUBASSIN/FeatureServer",
-     "owner": "ELMO3812",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Beaubassin Est Partial Zoning Clip",
-     "url": "https://services2.arcgis.com/EFg39h3DBNzpxORa/arcgis/rest/services/BE_Zoning_CA_Clip/FeatureServer",
-     "owner": "diego_NBSE",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A NS-F111 Nova: no answer (404)",
     "A NS-NHS Nova : no answer (404)",
@@ -1009,12 +991,13 @@
     "A Nova Scotia ~2: no answer (404)",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"beaubassin\": 2 lead(s)"
+    "B ArcGIS Online search \"beaubassin\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-4829": {
    "park": "Canso Islands National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1033,6 +1016,7 @@
   },
   "CA-4831": {
    "park": "D'Anville's Encampment National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1051,6 +1035,7 @@
   },
   "CA-4836": {
    "park": "Fort Sainte Marie de Grace National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1069,6 +1054,7 @@
   },
   "CA-4843": {
    "park": "Melanson Settlement National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1087,6 +1073,7 @@
   },
   "CA-4846": {
    "park": "Royal Battery National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1105,6 +1092,7 @@
   },
   "CA-5424": {
    "park": "Acacia Grove / Prescott House National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1117,12 +1105,13 @@
     "A Nova Scotia ~2: no answer (404)",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"prescott acacia house\": 0 lead(s)"
+    "B ArcGIS Online search \"prescott acacia grove\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "CA-5425": {
    "park": "Admiralty House National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1141,22 +1130,10 @@
   },
   "CA-5427": {
    "park": "Halifax City Hall National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
-   "leads": [
-    {
-     "title": "Perceptions of The Piece Hall Halifax_fieldworker",
-     "url": "https://services.arcgis.com/LQBWfNRGL1xivDEV/arcgis/rest/services/survey123_111c587100984e129ee5c7e075f771e4_fieldworker/FeatureServer",
-     "owner": "S210454",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Piece Hall and Halifax Town Centre Perceptions questionnaire. - Copy_fieldworker",
-     "url": "https://services.arcgis.com/LQBWfNRGL1xivDEV/arcgis/rest/services/survey123_d653b32dc13344b4af0240de42d541a8_fieldworker/FeatureServer",
-     "owner": "S211775",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A NS-F111 Nova: no answer (404)",
     "A NS-NHS Nova : no answer (404)",
@@ -1166,28 +1143,16 @@
     "A Nova Scotia ~2: no answer (404)",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"halifax hall\": 2 lead(s)"
+    "B ArcGIS Online search \"halifax hall\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-5428": {
    "park": "Halifax Public Gardens National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
-   "leads": [
-    {
-     "title": "Halifax Public Gardens Damaged Trees",
-     "url": "https://services7.arcgis.com/AJbWLzAgoYuSYK87/arcgis/rest/services/HPG_Damaged_Trees/FeatureServer",
-     "owner": "twohlsclagel_SenecaMC",
-     "type": "Feature Service"
-    },
-    {
-     "title": "All Halifax Public Gardens Trees",
-     "url": "https://services7.arcgis.com/AJbWLzAgoYuSYK87/arcgis/rest/services/Public_Trees/FeatureServer",
-     "owner": "twohlsclagel_SenecaMC",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A NS-F111 Nova: no answer (404)",
     "A NS-NHS Nova : no answer (404)",
@@ -1197,22 +1162,16 @@
     "A Nova Scotia ~2: no answer (404)",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"gardens halifax\": 2 lead(s)"
+    "B ArcGIS Online search \"halifax gardens\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-5430": {
    "park": "Pier 21 National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
-   "leads": [
-    {
-     "title": "Pier and Dock Construction Prohibition",
-     "url": "https://services2.arcgis.com/1UvBaQ5y1ubjUPmd/arcgis/rest/services/Pier_and_Dock_Construction_Prohibition/FeatureServer",
-     "owner": "aaron.petersen@piercecountywa.gov_piercecowa",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A NS-F111 Nova: no answer (404)",
     "A NS-NHS Nova : no answer (404)",
@@ -1222,12 +1181,13 @@
     "A Nova Scotia ~2: no answer (404)",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"pier\": 1 lead(s)"
+    "B ArcGIS Online search \"pier\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-5431": {
    "park": "Springhill Coal Mining National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1246,6 +1206,7 @@
   },
   "CA-5432": {
    "park": "S.S. Acadia National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1263,6 +1224,7 @@
   },
   "CA-5435": {
    "park": "Cliffs of Fundy Geopark",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1280,6 +1242,7 @@
   },
   "CA-5443": {
    "park": "Membertou Heritage Park National Historical Park",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1297,6 +1260,7 @@
   },
   "CA-5446": {
    "park": "Ross Ferry Provincial Park",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [
     {
@@ -1305,7 +1269,9 @@
      "agency": "Nova Scotia ~1",
      "record": 5092,
      "record_name": "",
-     "acres_approx": 3
+     "acres_approx": 3,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -1319,10 +1285,11 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-5448": {
    "park": "Thinkers Lodge National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1340,6 +1307,7 @@
   },
   "CA-5537": {
    "park": "Lock 5 Park Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1357,6 +1325,7 @@
   },
   "CA-5796": {
    "park": "Africville National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1374,6 +1343,7 @@
   },
   "CA-5797": {
    "park": "Akins House National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1391,6 +1361,7 @@
   },
   "CA-5799": {
    "park": "Annapolis Royal Historic District National Heritage Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1408,6 +1379,7 @@
   },
   "CA-5800": {
    "park": "Antigonish County Court House National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1425,6 +1397,7 @@
   },
   "CA-5801": {
    "park": "Argyle Township Court House and Gaol National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1442,6 +1415,7 @@
   },
   "CA-5802": {
    "park": "Black-Binney House National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1459,6 +1433,7 @@
   },
   "CA-5803": {
    "park": "Cast Iron Façade / Coomb's Old English Shoe Store National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1476,6 +1451,7 @@
   },
   "CA-5804": {
    "park": "Chapel Island National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1493,6 +1469,7 @@
   },
   "CA-5806": {
    "park": "Covenanter Church National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1510,6 +1487,7 @@
   },
   "CA-5807": {
    "park": "Debert Palaeo-Indian Site National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1527,6 +1505,7 @@
   },
   "CA-5809": {
    "park": "Fernwood National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1544,6 +1523,7 @@
   },
   "CA-5810": {
    "park": "Five Islands Lighthouse Park National Heritage Area",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1561,6 +1541,7 @@
   },
   "CA-5811": {
    "park": "Fort Needham Memorial Park National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1578,6 +1559,7 @@
   },
   "CA-5812": {
    "park": "Government House (Halifax) National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1595,6 +1577,7 @@
   },
   "CA-5814": {
    "park": "Granville Block National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1612,6 +1595,7 @@
   },
   "CA-5815": {
    "park": "Halifax Court House National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1629,6 +1613,7 @@
   },
   "CA-5816": {
    "park": "Halifax Dockyard National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1646,6 +1631,7 @@
   },
   "CA-5817": {
    "park": "Halifax Drill Hall National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1663,6 +1649,7 @@
   },
   "CA-5818": {
    "park": "Halifax Waterfront Buildings National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1680,6 +1667,7 @@
   },
   "CA-5820": {
    "park": "Henry House National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1697,6 +1685,7 @@
   },
   "CA-5821": {
    "park": "HMCS Sackville National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1714,6 +1703,7 @@
   },
   "CA-5822": {
    "park": "Hydrostone District National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1731,6 +1721,7 @@
   },
   "CA-5823": {
    "park": "Jonathan McCully House National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1748,6 +1739,7 @@
   },
   "CA-5824": {
    "park": "King's College National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1765,6 +1757,7 @@
   },
   "CA-5825": {
    "park": "Knaut-Rhuland House National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1782,6 +1775,7 @@
   },
   "CA-5826": {
    "park": "Ladies' Seminary National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1799,6 +1793,7 @@
   },
   "CA-5827": {
    "park": "Little Dutch (Deutsch) Church National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1816,6 +1811,7 @@
   },
   "CA-5828": {
    "park": "Liverpool Town Hall National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1833,6 +1829,7 @@
   },
   "CA-5829": {
    "park": "Lunenburg Academy National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1850,6 +1847,7 @@
   },
   "CA-5831": {
    "park": "Memorial Tower National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1867,6 +1865,7 @@
   },
   "CA-5833": {
    "park": "Old Barrington Meeting House National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1884,6 +1883,7 @@
   },
   "CA-5834": {
    "park": "Old Burying Ground National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1901,6 +1901,7 @@
   },
   "CA-5835": {
    "park": "Pictou Academy National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1918,6 +1919,7 @@
   },
   "CA-5836": {
    "park": "Pictou Railway Station (Intercolonial) National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1935,6 +1937,7 @@
   },
   "CA-5838": {
    "park": "Sainte-Anne / Port Dauphin National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1952,6 +1955,7 @@
   },
   "CA-5839": {
    "park": "Sinclair Inn / Farmer's Hotel National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1969,6 +1973,7 @@
   },
   "CA-5840": {
    "park": "Sir Frederick Borden Residence National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1986,6 +1991,7 @@
   },
   "CA-5841": {
    "park": "St. George's Anglican Church / Round Church National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2003,6 +2009,7 @@
   },
   "CA-5842": {
    "park": "St. John's Anglican Church National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2020,6 +2027,7 @@
   },
   "CA-5843": {
    "park": "St. Mary's Basilica National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2037,6 +2045,7 @@
   },
   "CA-5844": {
    "park": "St. Paul's Anglican Church National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2054,6 +2063,7 @@
   },
   "CA-5845": {
    "park": "Sydney WWII Coastal Defences National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2071,6 +2081,7 @@
   },
   "CA-5846": {
    "park": "Trinity Anglican Church National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2088,6 +2099,7 @@
   },
   "CA-5847": {
    "park": "Truro Post Office National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2105,6 +2117,7 @@
   },
   "CA-5849": {
    "park": "Bishop Park ( Annapolis Royal) Recreation Park",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2122,6 +2135,7 @@
   },
   "CA-5850": {
    "park": "Annapolis River Causeway Park Recreation Park",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2139,6 +2153,7 @@
   },
   "CA-6105": {
    "park": "de Gannes-Cosby House National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2156,6 +2171,7 @@
   },
   "CA-6109": {
    "park": "Truro Old Normal College National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2173,6 +2189,7 @@
   },
   "CA-6110": {
    "park": "Old Town Lunenburg National Historic District",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2190,6 +2207,7 @@
   },
   "CA-6137": {
    "park": "Margaree River National Heritage Area",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2207,6 +2225,7 @@
   },
   "CA-6176": {
    "park": "Boars Head Lighthouse National Heritage Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2224,6 +2243,7 @@
   },
   "CA-6177": {
    "park": "Brier Island Lighthouse National Heritage Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2241,6 +2261,7 @@
   },
   "CA-6178": {
    "park": "Cape George Lighthouse National Heritage Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [
     {
@@ -2249,7 +2270,9 @@
      "agency": "Nova Scotia ~1",
      "record": 772,
      "record_name": "",
-     "acres_approx": 64
+     "acres_approx": 64,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -2263,10 +2286,11 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-6179": {
    "park": "Cape St. Mary's Lighthouse National Heritage Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2284,6 +2308,7 @@
   },
   "CA-6180": {
    "park": "Coldspring Head Lighthouse National Heritage Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2301,6 +2326,7 @@
   },
   "CA-6182": {
    "park": "Gillis Point Lighthouse National Heritage Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2318,6 +2344,7 @@
   },
   "CA-6183": {
    "park": "Grand Passage Lighthouse National Heritage Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2335,6 +2362,7 @@
   },
   "CA-6184": {
    "park": "Isaacs Harbour Lighthouse National Heritage Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2352,6 +2380,7 @@
   },
   "CA-6185": {
    "park": "Margaree Harbour Rear Range Lighthouse National Heritage Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2369,6 +2398,7 @@
   },
   "CA-6186": {
    "park": "Margaree Harbour Front Range Lighthouse National Heritage Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2386,6 +2416,7 @@
   },
   "CA-6187": {
    "park": "Margaretsville Lighthouse National Heritage Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2403,6 +2434,7 @@
   },
   "CA-6188": {
    "park": "Neil's Harbour Lighthouse National Heritage Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2420,6 +2452,7 @@
   },
   "CA-6190": {
    "park": "Port Mouton Lighthouse National Heritage Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2437,6 +2470,7 @@
   },
   "CA-6191": {
    "park": "Pictou Island South Lighthouse National Heritage Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [
     {
@@ -2445,7 +2479,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 21926,
      "record_name": "Scallop Buffer Zone (SFA 24)",
-     "acres_approx": 509393
+     "acres_approx": 509393,
+     "tier": "UNLIKELY",
+     "why": "container word in the record name (zone / district / county / SSSI ...)"
     }
    ],
    "leads": [],
@@ -2459,10 +2495,11 @@
     "A CPCAD / Parks Canada: hit",
     "A CPCAD / Parks Canada: no polygon at the pin"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-6192": {
    "park": "Prim Point Lighthouse National Heritage Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2480,6 +2517,7 @@
   },
   "CA-6193": {
    "park": "Queensport Lighthouse National Heritage Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2497,6 +2535,7 @@
   },
   "CA-6194": {
    "park": "Schafner Point Lighthouse National Heritage Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2514,6 +2553,7 @@
   },
   "CA-6195": {
    "park": "St. Paul Island Southwest (Dingwell) Lighthouse National Heritage Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2531,6 +2571,7 @@
   },
   "CA-6196": {
    "park": "Terence Bay Lighthouse National Heritage Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2548,6 +2589,7 @@
   },
   "CA-6197": {
    "park": "Victoria Beach Lighthouse National Heritage Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2565,6 +2607,7 @@
   },
   "CA-6198": {
    "park": "Wallace Harbour Sector Lighthouse National Heritage Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2582,6 +2625,7 @@
   },
   "CA-6224": {
    "park": "Long Lake Bog Nature Reserve",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2599,6 +2643,7 @@
   },
   "CA-6249": {
    "park": "Peggy's Cove Lighthouse National Heritage Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2616,6 +2661,7 @@
   },
   "CA-6251": {
    "park": "Grand Parade National Heritage Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2633,6 +2679,7 @@
   },
   "CA-6252": {
    "park": "Scott Manor House National Heritage Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2650,6 +2697,7 @@
   },
   "CA-6253": {
    "park": "Moirs Ltd. Power House Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2667,6 +2715,7 @@
   },
   "CA-6292": {
    "park": "Uniacke House Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2684,6 +2733,7 @@
   },
   "CA-6293": {
    "park": "Amherst Intercolonial Railway Station Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2701,6 +2751,7 @@
   },
   "CA-6294": {
    "park": "Annapolis Royal Train Station Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2718,6 +2769,7 @@
   },
   "CA-6321": {
    "park": "Atlantic Bulwark National Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2735,6 +2787,7 @@
   },
   "CA-6322": {
    "park": "Quaker House Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2752,6 +2805,7 @@
   },
   "CA-6323": {
    "park": "Former Hampton Gray Memorial School National Heritage Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2769,6 +2823,7 @@
   },
   "CA-6324": {
    "park": "Van Steenburgh and Polaris Buildings National Heritage Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2786,6 +2841,7 @@
   },
   "CA-6325": {
    "park": "Spencer's Island Lighthouse National Heritage Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2803,6 +2859,7 @@
   },
   "CA-6326": {
    "park": "Via Rail Station National Heritage Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2820,6 +2877,7 @@
   },
   "CA-6327": {
    "park": "Canadian Pacific Railway Station National Heritage Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2837,6 +2895,7 @@
   },
   "CA-6328": {
    "park": "Wolfville Canadian Pacific National Heritage Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2854,6 +2913,7 @@
   },
   "CA-6361": {
    "park": "Sutherland Steam Mill Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2871,6 +2931,7 @@
   },
   "CA-6372": {
    "park": "Cape Sable Island Lighthouse National Heritage Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2888,6 +2949,7 @@
   },
   "CA-6374": {
    "park": "Sydney and Louisburg Railway Station Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2905,6 +2967,7 @@
   },
   "CA-6375": {
    "park": "Louisbourg Lighthouse (The Tower) Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [
     {
@@ -2913,7 +2976,9 @@
      "agency": "NS-NHS Nova ",
      "record": 4,
      "record_name": "Fortress of Louisbourg",
-     "acres_approx": 14420
+     "acres_approx": 14420,
+     "tier": "LIKELY",
+     "why": "shared louisbourg; extra: park lighthouse / record fortress"
     },
     {
      "verdict": "name match",
@@ -2921,7 +2986,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 22058,
      "record_name": "Fortress of Louisbourg National Historic site",
-     "acres_approx": 14666
+     "acres_approx": 14666,
+     "tier": "UNLIKELY",
+     "why": "shared louisbourg; extra: park lighthouse / record fortress; this layer / this area's LIKELY rows under 10% YES so far (demoted)"
     }
    ],
    "leads": [],
@@ -2935,10 +3002,11 @@
     "A CPCAD / Parks Canada: hit",
     "A CPCAD / Parks Canada: no polygon at the pin"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: LIKELY (part of the name shared)"
   },
   "CA-6467": {
    "park": "Tidnish Bridge Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2956,6 +3024,7 @@
   },
   "CA-6483": {
    "park": "Roxbury Provincial Park",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [
     {
@@ -2964,7 +3033,9 @@
      "agency": "Nova Scotia ~1",
      "record": 8802,
      "record_name": "",
-     "acres_approx": 16
+     "acres_approx": 16,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -2978,10 +3049,11 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-6502": {
    "park": "Wallace River Railway Swing Bridge Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2999,6 +3071,7 @@
   },
   "CA-6506": {
    "park": "Hay Cove Provincial Park Reserve",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3016,6 +3089,7 @@
   },
   "CA-6553": {
    "park": "Portobello Provincial Park",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [
     {
@@ -3024,7 +3098,9 @@
      "agency": "Nova Scotia ~1",
      "record": 10434,
      "record_name": "",
-     "acres_approx": 4
+     "acres_approx": 4,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -3038,10 +3114,11 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-6554": {
    "park": "Musquodoboit Harbour Railway Historic Site",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3059,6 +3136,7 @@
   },
   "CA-6557": {
    "park": "Louis Head Provincial Park",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3076,6 +3154,7 @@
   },
   "CA-6558": {
    "park": "Horne Settlement Provincial Park",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3093,6 +3172,7 @@
   },
   "CA-6559": {
    "park": "Hirtles Beach Provincial Park",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [
     {
@@ -3101,7 +3181,9 @@
      "agency": "Nova Scotia ~1",
      "record": 12370,
      "record_name": "",
-     "acres_approx": 11
+     "acres_approx": 11,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -3115,10 +3197,11 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-6560": {
    "park": "Kingsburg Beach Provincial Park",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [
     {
@@ -3127,7 +3210,9 @@
      "agency": "Nova Scotia ~1",
      "record": 12801,
      "record_name": "",
-     "acres_approx": 1
+     "acres_approx": 1,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -3141,10 +3226,11 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-6561": {
    "park": "Medway River Provincial Park",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [
     {
@@ -3153,7 +3239,9 @@
      "agency": "Nova Scotia ~1",
      "record": 13242,
      "record_name": "",
-     "acres_approx": 10
+     "acres_approx": 10,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -3167,10 +3255,11 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-6562": {
    "park": "Mersey River Provincial Park",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [
     {
@@ -3179,7 +3268,9 @@
      "agency": "Nova Scotia ~1",
      "record": 13448,
      "record_name": "",
-     "acres_approx": 328
+     "acres_approx": 328,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -3193,10 +3284,11 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-6563": {
    "park": "Baker Inlet Provincial Park",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3214,6 +3306,7 @@
   },
   "CA-6565": {
    "park": "Bulls Head Provincial Park",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [
     {
@@ -3222,7 +3315,9 @@
      "agency": "Nova Scotia ~1",
      "record": 13895,
      "record_name": "",
-     "acres_approx": 5
+     "acres_approx": 5,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -3236,10 +3331,11 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-6568": {
    "park": "Pinehurst Provincial Park",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3257,6 +3353,7 @@
   },
   "CA-6569": {
    "park": "Linwood Provincial Park",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -3274,6 +3371,7 @@
   },
   "CA-6570": {
    "park": "Mahoney Beach Provincial Park",
+   "area": "CA-NS",
    "why_not": "nothing near",
    "hits": [
     {
@@ -3282,7 +3380,9 @@
      "agency": "Nova Scotia ~1",
      "record": 1005,
      "record_name": "",
-     "acres_approx": 20
+     "acres_approx": 20,
+     "tier": "UNLIKELY",
+     "why": "no proper name to compare"
     }
    ],
    "leads": [],
@@ -3296,7 +3396,7 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   }
  }
 }

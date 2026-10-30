@@ -8,13 +8,13 @@
 | CA-4817 | Castle Hill National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4818 | Hawthorne Cottage National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4819 | Hopedale Mission National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-4820 | Kitjigattalik - Ramah Chert Quarries National Historic Site | R-G7 step 2 | CPCAD / Parks Canada: 'Torngat Mountains National Park Of Canada' (record 22046, ~2,393,495 ac, pin inside) | candidate: name mismatch | 2026-10-30 | gis-hunter |
-| CA-4821 | L'Anse aux Meadows National Historic Site | R-G7 step 3 | lead LAnse Aux Meadows Map_WFL1 (https://services1.arcgis.com/0j6vZbECadDEXdAS/arcgis/rest/services/LAnse_Aux_Meadows_Map_WFL1/FeatureServer); lead L'Anse Aux Meadows (https://services.arcgis.com/ld3ZUQ1nPsV3RdE7/arcgis/rest/services/LAnse_Aux_Meadows/FeatureServer) | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
+| CA-4820 | Kitjigattalik - Ramah Chert Quarries National Historic Site | R-G7 step 2 | CPCAD / Parks Canada: 'Torngat Mountains National Park Of Canada' (record 22046, ~2,393,495 ac, pin inside) · no shared proper word | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
+| CA-4821 | L'Anse aux Meadows National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4822 | Port au Choix National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4823 | Red Bay National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-4824 | Ryan Premises National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-4825 | Signal Hill National Historic Site | R-G7 step 3 | lead Signal Hill Zoning Districts (https://services9.arcgis.com/LUBoZWfQwvBnZCmP/arcgis/rest/services/Zoning_2023/FeatureServer); lead Signal Hill Land Use Districts (https://services9.arcgis.com/LUBoZWfQwvBnZCmP/arcgis/rest/services/Land_Use/FeatureServer) | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
-| CA-4942 | Captain James Cook National Historic Site | R-G7 step 3 | lead Second Voyage led by Captain James Cook on HMS Resolution (https://services9.arcgis.com/WGilu1i2IRlWIWQG/arcgis/rest/services/Second_Voyage_led_by_Captain_James_Cook_on_HMS_Resolution/FeatureServer) | lead: new layer queued for intake | 2026-10-30 | gis-hunter |
+| CA-4825 | Signal Hill National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
+| CA-4942 | Captain James Cook National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5132 | L'Anse Amour National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5275 | Discovery Geopark | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-5276 | Fleur de Lys Soapstone Quarries National Historic Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
@@ -58,7 +58,7 @@
 | CA-6163 | Woody Point Lighthouse National Heritage Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-6164 | Rocky Point Lighthouse National Heritage Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-6165 | St. Jacques Island Lighthouse National Heritage Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
-| CA-6166 | Cape St. Mary's Lighthouse National Heritage Site | R-G7 step 2 | CPCAD / Parks Canada: 'Cape St. Mary's Ecological Reserve' (record 29, ~2,760 ac, pin inside) | candidate: name match | 2026-10-30 | gis-hunter |
+| CA-6166 | Cape St. Mary's Lighthouse National Heritage Site | R-G7 step 2 | CPCAD / Parks Canada: 'Cape St. Mary's Ecological Reserve' (record 29, ~2,760 ac, pin inside) · shared cape, mary, saint; extra: park lighthouse / record -; this layer / this area's LIKELY rows under 10% YES so far (demoted) | inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership) | 2026-10-30 | gis-hunter |
 | CA-6167 | Heart's Content Lighthouse National Heritage Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-6168 | Green Point Lighthouse National Heritage Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |
 | CA-6169 | Long Point (Twillingate) Lighthouse National Heritage Site | R-G7 step 3 | nothing | no layer found | 2026-10-30 | gis-hunter |

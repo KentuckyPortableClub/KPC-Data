@@ -5,6 +5,7 @@
  "parks": {
   "CA-0831": {
    "park": "Inuujarvik Territorial Park",
+   "area": "CA-NU",
    "why_not": "pin inside",
    "hits": [
     {
@@ -13,7 +14,9 @@
      "agency": "NU-TP Crown-",
      "record": 648,
      "record_name": "Inuujaarvik Territorial Park",
-     "acres_approx": 2
+     "acres_approx": 2,
+     "tier": "SURE",
+     "why": "same proper name"
     }
    ],
    "leads": [],
@@ -22,10 +25,11 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin"
    ],
-   "verdict": "candidate: name match"
+   "verdict": "candidate: SURE (same proper name)"
   },
   "CA-4590": {
    "park": "Soper Heritage River National Heritage Area",
+   "area": "CA-NU",
    "why_not": "pin inside",
    "hits": [
     {
@@ -34,7 +38,9 @@
      "agency": "NU-TP Crown-",
      "record": 642,
      "record_name": "Katannilik Territorial Park",
-     "acres_approx": 358364
+     "acres_approx": 358364,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     },
     {
      "verdict": "inside-other",
@@ -42,7 +48,9 @@
      "agency": "CPCAD / Parks Canada",
      "record": 21858,
      "record_name": "Katannilik Territorial Park",
-     "acres_approx": 358405
+     "acres_approx": 358405,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -52,62 +60,39 @@
     "A CPCAD / Parks Canada: no polygon at the pin",
     "B ArcGIS Online search \"heritage soper\": 0 lead(s)"
    ],
-   "verdict": "inside-other (bigger area with another name: R-G7 step 4 ownership)"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-4575": {
    "park": "Fossil Creek Trail Wilderness Preserve",
+   "area": "CA-NU",
    "why_not": "nothing near",
    "hits": [],
-   "leads": [
-    {
-     "title": "Significant Fossil Sites",
-     "url": "https://services1.arcgis.com/VAI453sU9tG9rSmh/arcgis/rest/services/Geology_Fossil_Sites_features/FeatureServer",
-     "owner": "Maps.com_carto",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Important Fossil Areas",
-     "url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_land_and_natural_resource/MapServer/11",
-     "owner": "Province.Of.British.Columbia",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Geology_Fossil_Sites_features",
-     "url": "https://services1.arcgis.com/VAI453sU9tG9rSmh/arcgis/rest/services/Geology_Fossil_Sites_features/FeatureServer",
-     "owner": "Maps.com_carto",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A NU-TP Crown-: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "B ArcGIS Online search \"fossil\": 8 lead(s)"
+    "B ArcGIS Online search \"fossil\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-4580": {
    "park": "Kazan Heritage River National Heritage Area",
+   "area": "CA-NU",
    "why_not": "nothing near",
    "hits": [],
-   "leads": [
-    {
-     "title": "Kazan Heritage River VSEC ᐊᕙᖅᑑᖅ ᑰᒃ",
-     "url": "https://services1.arcgis.com/qyNLAUrSftTAYBj7/arcgis/rest/services/Kazan_River_/FeatureServer",
-     "owner": "agerhartz_nunavut",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A NU-TP Crown-: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "B ArcGIS Online search \"heritage kazan\": 1 lead(s)"
+    "B ArcGIS Online search \"heritage kazan\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-4585": {
    "park": "Northwest Passage Trail Territorial Park",
+   "area": "CA-NU",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -121,6 +106,7 @@
   },
   "CA-4588": {
    "park": "Rasmussen Lowlands Ramsar Site",
+   "area": "CA-NU",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -134,6 +120,7 @@
   },
   "CA-4852": {
    "park": "Wrecks of HMS Erebus and HMS Terror National Historic Site",
+   "area": "CA-NU",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -141,12 +128,13 @@
     "A NU-TP Crown-: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "B ArcGIS Online search \"wrecks erebus terror\": 0 lead(s)"
+    "B ArcGIS Online search \"terror wrecks erebus\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "CA-5285": {
    "park": "Kodlunarn Island National Historic Site",
+   "area": "CA-NU",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -160,6 +148,7 @@
   },
   "CA-5466": {
    "park": "Blacklead Island Whaling Station National Historic Site",
+   "area": "CA-NU",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -173,6 +162,7 @@
   },
   "CA-5467": {
    "park": "Bloody Falls National Historic Site",
+   "area": "CA-NU",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -186,6 +176,7 @@
   },
   "CA-5468": {
    "park": "Inuksuk National Historic Site",
+   "area": "CA-NU",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -199,38 +190,21 @@
   },
   "CA-5469": {
    "park": "Port Refuge National Historic Site",
+   "area": "CA-NU",
    "why_not": "nothing near",
    "hits": [],
-   "leads": [
-    {
-     "title": "World Port Index (Twenty Fifth Edition)",
-     "url": "https://services9.arcgis.com/j1CY4yzWfwptbTWN/arcgis/rest/services/WorldPortIndex_WFL1/FeatureServer",
-     "owner": "spk578",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Port of Tacoma Website Redesign Web Map Layers",
-     "url": "https://services1.arcgis.com/Z3QKm39v9Qbs2IR5/arcgis/rest/services/Port_of_Tacoma_website_redesign_testing/FeatureServer",
-     "owner": "barcher_POT",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Designated Port Areas (DPAs)",
-     "url": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Massachusetts_Designated_Port_Areas/FeatureServer",
-     "owner": "MassCZM",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A NU-TP Crown-: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
     "A CPCAD / Parks Canada: no polygon at the pin",
-    "B ArcGIS Online search \"port\": 4 lead(s)"
+    "B ArcGIS Online search \"port\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-5735": {
    "park": "Arvia'juaq and Qikiqtaarjuk National Historic Site",
+   "area": "CA-NU",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -244,6 +218,7 @@
   },
   "CA-5736": {
    "park": "Fall Caribou Crossing National Historic Site",
+   "area": "CA-NU",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],

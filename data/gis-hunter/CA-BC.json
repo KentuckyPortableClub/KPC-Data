@@ -5,28 +5,23 @@
  "parks": {
   "CA-3186": {
    "park": "Nisga'a Memorial Lava Bed Provincial Park",
+   "area": "CA-BC",
    "why_not": "pin inside",
    "hits": [],
-   "leads": [
-    {
-     "title": "Nisga’a Memorial Lava Bed Park Comments_fieldworker",
-     "url": "https://services3.arcgis.com/V6CSJCQOs0jUJNOw/arcgis/rest/services/survey123_3e63cb512c644486a9dd5e51818f1317_fieldworker/FeatureServer",
-     "owner": "nbctourismadmin",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"nisga lava bed\": 1 lead(s)"
+    "B ArcGIS Online search \"nisga lava bed\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-3211": {
    "park": "Becher's Prairie Provincial Park",
+   "area": "CA-BC",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -42,6 +37,7 @@
   },
   "CA-3334": {
    "park": "Chukachida Protected Area",
+   "area": "CA-BC",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -57,6 +53,7 @@
   },
   "CA-3476": {
    "park": "Endeavour Hydrothermal Vents Marine Protected Area",
+   "area": "CA-BC",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -72,6 +69,7 @@
   },
   "CA-3636": {
    "park": "Jericho Beach Park",
+   "area": "CA-BC",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -87,6 +85,7 @@
   },
   "CA-4793": {
    "park": "Kicking Horse Pass National Historic Site",
+   "area": "CA-BC",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -102,6 +101,7 @@
   },
   "CA-4795": {
    "park": "Nan Sdins National Historic Site",
+   "area": "CA-BC",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -117,6 +117,7 @@
   },
   "CA-4796": {
    "park": "Rogers Pass National Historic Site",
+   "area": "CA-BC",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -132,6 +133,7 @@
   },
   "CA-5326": {
    "park": "Hatley Park National Historic Site",
+   "area": "CA-BC",
    "why_not": "pin inside",
    "hits": [
     {
@@ -140,7 +142,9 @@
      "agency": "BC-HP Govern",
      "record": 6121423,
      "record_name": "a08b281a-e511-415f-9e06-f362ee8b649f",
-     "acres_approx": 537
+     "acres_approx": 537,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -151,78 +155,11 @@
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-5344": {
    "park": "The West Coast Trail National Park",
-   "why_not": "pin inside",
-   "hits": [],
-   "leads": [
-    {
-     "title": "West Coast USA Eelgrass Maximum Observed Extent",
-     "url": "https://gis.psmfc.org/server/rest/services/PMEP/PMEP_West_Coast_USA_Eelgrass_Maximum_Observed_Extent/MapServer",
-     "owner": "PSMFC_GIS",
-     "type": "Map Service"
-    },
-    {
-     "title": "West Coast USA Nearshore CMECS Substrate Habitat and Data Quality",
-     "url": "https://gis.psmfc.org/server/rest/services/PMEP/West_Coast_Nearshore_CMECS_Substrate_Habitat/MapServer",
-     "owner": "PSMFC_GIS",
-     "type": "Map Service"
-    },
-    {
-     "title": "West Coast USA Nearshore CMECS Biotic Habitat",
-     "url": "https://gis.psmfc.org/server/rest/services/PMEP/West_Coast_Nearshore_CMECS_Biotic_Habitat/MapServer",
-     "owner": "PSMFC_GIS",
-     "type": "Map Service"
-    }
-   ],
-   "tried": [
-    "A BC recreatio: no polygon at the pin",
-    "A BC-HCA Gover: no polygon at the pin",
-    "A BC-HP Govern: no polygon at the pin",
-    "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
-    "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"coast west\": 8 lead(s)"
-   ],
-   "verdict": "lead: new layer queued for intake"
-  },
-  "CA-5346": {
-   "park": "Thompson Regional Park",
-   "why_not": "pin inside",
-   "hits": [],
-   "leads": [
-    {
-     "title": "Thompson River Basin and Subbasins",
-     "url": "https://services2.arcgis.com/FOAjZu7OcdPEtbC0/arcgis/rest/services/Thompson_River_Basin_and_Subbasins/FeatureServer",
-     "owner": "IJC_Authoritative",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Thompson Okanagan Aquatic Ecosystem Monitoring Watersheds",
-     "url": "https://services1.arcgis.com/xeMpV7tU1t4KD3Ei/arcgis/rest/services/Thompson_Okanagan_Aquatic_Ecosystem_Monitoring_Watersheds/FeatureServer",
-     "owner": "EM.Drought",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Big_Thompson_AllData",
-     "url": "https://services1.arcgis.com/KNdRU5cN6ENqCTjk/arcgis/rest/services/Big_Thompson_AllData/FeatureServer",
-     "owner": "jlc4_CSUrams8",
-     "type": "Feature Service"
-    }
-   ],
-   "tried": [
-    "A BC recreatio: no polygon at the pin",
-    "A BC-HCA Gover: no polygon at the pin",
-    "A BC-HP Govern: no polygon at the pin",
-    "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
-    "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"thompson\": 5 lead(s)"
-   ],
-   "verdict": "lead: new layer queued for intake"
-  },
-  "CA-5483": {
-   "park": "SGang Gwaay National Heritage Site",
+   "area": "CA-BC",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -232,12 +169,45 @@
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"heritage gwaay sgang\": 0 lead(s)"
+    "B ArcGIS Online search \"coast west\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5346": {
+   "park": "Thompson Regional Park",
+   "area": "CA-BC",
+   "why_not": "pin inside",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A BC recreatio: no polygon at the pin",
+    "A BC-HCA Gover: no polygon at the pin",
+    "A BC-HP Govern: no polygon at the pin",
+    "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"thompson\": 0 lead(s)"
+   ],
+   "verdict": "no layer found"
+  },
+  "CA-5483": {
+   "park": "SGang Gwaay National Heritage Site",
+   "area": "CA-BC",
+   "why_not": "pin inside",
+   "hits": [],
+   "leads": [],
+   "tried": [
+    "A BC recreatio: no polygon at the pin",
+    "A BC-HCA Gover: no polygon at the pin",
+    "A BC-HP Govern: no polygon at the pin",
+    "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
+    "A CPCAD / Parks Canada: no answer (404)",
+    "B ArcGIS Online search \"heritage sgang gwaay\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "CA-6133": {
    "park": "Kicking Horse River National Heritage Area",
+   "area": "CA-BC",
    "why_not": "pin inside",
    "hits": [],
    "leads": [],
@@ -253,6 +223,7 @@
   },
   "CA-3199": {
    "park": "Barkerville Historic Town and Park National Historic Site",
+   "area": "CA-BC",
    "why_not": "check",
    "hits": [
     {
@@ -261,7 +232,9 @@
      "agency": "BC-HP Govern",
      "record": 6120928,
      "record_name": "8f66e0f3-a791-476b-87a7-eabcc313fad9",
-     "acres_approx": 1590
+     "acres_approx": 1590,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -272,78 +245,43 @@
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-3282": {
    "park": "Delta Nature Reserve",
+   "area": "CA-BC",
    "why_not": "check",
    "hits": [],
-   "leads": [
-    {
-     "title": "Legal Delta",
-     "url": "https://services5.arcgis.com/netd7RBEFAa05HUC/arcgis/rest/services/Legal_Delta/FeatureServer",
-     "owner": "DSC_DSC",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Egypt Exploration Society Delta Survey Sites_WFL1",
-     "url": "https://services-eu1.arcgis.com/3pnT0aZIJbLTeP2N/arcgis/rest/services/Egypt_Exploration_Society_Delta_Survey_Sites_WFL1/FeatureServer",
-     "owner": "EESMapping",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Fish Restoration Program Monitoring - San Joaquin Delta [ds2802]",
-     "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds2802_fmu/FeatureServer",
-     "owner": "BIOS_Admin",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"delta\": 8 lead(s)"
+    "B ArcGIS Online search \"delta\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-3427": {
    "park": "Douglas Park",
+   "area": "CA-BC",
    "why_not": "check",
    "hits": [],
-   "leads": [
-    {
-     "title": "Douglas County Boundary",
-     "url": "https://services.arcgis.com/pDAi2YK0L0QxVJHj/arcgis/rest/services/Douglas_County_Boundary/FeatureServer",
-     "owner": "Nataliya2",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Douglas County, Kansas Boundary",
-     "url": "https://gis.dgcoks.gov/server/rest/services/County_Boundary/FeatureServer",
-     "owner": "gis_lawrenceks",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Douglas County, NE Buildings",
-     "url": "https://services6.arcgis.com/Do88DoK2xjTUCXd1/arcgis/rest/services/Douglas_County_NE_Buildings/FeatureServer",
-     "owner": "dkensok_osm",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"douglas\": 8 lead(s)"
+    "B ArcGIS Online search \"douglas\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-3679": {
    "park": "Kilby Provincial Park",
+   "area": "CA-BC",
    "why_not": "check",
    "hits": [],
    "leads": [],
@@ -359,6 +297,7 @@
   },
   "CA-3688": {
    "park": "Mount Douglas Park",
+   "area": "CA-BC",
    "why_not": "check",
    "hits": [],
    "leads": [],
@@ -374,6 +313,7 @@
   },
   "CA-3739": {
    "park": "Lighthouse Park",
+   "area": "CA-BC",
    "why_not": "check",
    "hits": [
     {
@@ -382,7 +322,9 @@
      "agency": "BC-HP Govern",
      "record": 6117457,
      "record_name": "14387c09-1022-4a68-befc-c358f4b36010",
-     "acres_approx": 2
+     "acres_approx": 2,
+     "tier": "UNLIKELY",
+     "why": "no shared proper word"
     }
    ],
    "leads": [],
@@ -393,10 +335,11 @@
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)"
    ],
-   "verdict": "candidate: name mismatch"
+   "verdict": "inside-other (a record under the pin, name far off or a container: R-G7 step 4 ownership)"
   },
   "CA-3800": {
    "park": "Memorial Park",
+   "area": "CA-BC",
    "why_not": "check",
    "hits": [],
    "leads": [],
@@ -411,6 +354,7 @@
   },
   "CA-3882": {
    "park": "Navvy Jack Point Park",
+   "area": "CA-BC",
    "why_not": "check",
    "hits": [],
    "leads": [],
@@ -426,6 +370,7 @@
   },
   "CA-3966": {
    "park": "Pitt Meadows Athletic Park Recreation Site",
+   "area": "CA-BC",
    "why_not": "check",
    "hits": [],
    "leads": [],
@@ -441,74 +386,39 @@
   },
   "CA-4023": {
    "park": "Riverview Forest Park",
+   "area": "CA-BC",
    "why_not": "check",
    "hits": [],
-   "leads": [
-    {
-     "title": "OR_Tillamook_Client _ Tracy Chung _ Property Profile _ 14050 Riverview Meadows Ln _ 9_2024",
-     "url": "https://services.arcgis.com/VYsrLd1WbPJ93eyz/arcgis/rest/services/OR_Tillamook_Client___Tracy_Chung___Property_Profile___14050_Riverview_Meadows_Ln___9_2024/FeatureServer",
-     "owner": "afalkner_FATCO",
-     "type": "Feature Service"
-    },
-    {
-     "title": "2841012_Riverview_Utilities",
-     "url": "https://services3.arcgis.com/pRlvqHiHEualRyC4/arcgis/rest/services/2841012_Riverview_Utilities/FeatureServer",
-     "owner": "kwl_admin",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Riverview Town Limits",
-     "url": "https://services2.arcgis.com/EFg39h3DBNzpxORa/arcgis/rest/services/Riverview_Town_Limits/FeatureServer",
-     "owner": "diego_NBSE",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"riverview\": 7 lead(s)"
+    "B ArcGIS Online search \"riverview\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-5499": {
    "park": "Crippen Regional Park",
+   "area": "CA-BC",
    "why_not": "check",
    "hits": [],
-   "leads": [
-    {
-     "title": "Arts Employment Donnell Crippen_WFL1",
-     "url": "https://services1.arcgis.com/uCzmkROI93nvI5HX/arcgis/rest/services/Arts_Employment_Donnell_Crippen_WFL1/FeatureServer",
-     "owner": "dcrippen_UNCCharlotte",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Cost of Living Index Donnell Crippen_WFL1",
-     "url": "https://services1.arcgis.com/uCzmkROI93nvI5HX/arcgis/rest/services/Cost_of_Living_Index_Donnell_Crippen_WFL1/FeatureServer",
-     "owner": "dcrippen_UNCCharlotte",
-     "type": "Feature Service"
-    },
-    {
-     "title": "311 Debris Overgrowth Donnell Crippen_WFL1",
-     "url": "https://services1.arcgis.com/uCzmkROI93nvI5HX/arcgis/rest/services/311_Debris_Overgrowth_Donnell_Crippen_WFL1/FeatureServer",
-     "owner": "dcrippen_UNCCharlotte",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"crippen\": 3 lead(s)"
+    "B ArcGIS Online search \"crippen\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-5500": {
    "park": "Deas Island Regional Park",
+   "area": "CA-BC",
    "why_not": "check",
    "hits": [],
    "leads": [],
@@ -524,15 +434,10 @@
   },
   "CA-5539": {
    "park": "Uplands Park Natural Area",
+   "area": "CA-BC",
    "why_not": "check",
    "hits": [],
    "leads": [
-    {
-     "title": "Eugene Significant Goal 5 Uplands",
-     "url": "https://services3.arcgis.com/F7NiRLGNbA2hh7gE/arcgis/rest/services/Eugene_Significant_Goal_5_Uplands/FeatureServer",
-     "owner": "City_of_Eugene",
-     "type": "Feature Service"
-    },
     {
      "title": "Uplands_to_Wetlands_2100_Polygon",
      "url": "https://services.arcgis.com/njFNhDsUCentVYJW/arcgis/rest/services/Uplands_to_Wetlands_2100_Polygon/FeatureServer",
@@ -546,12 +451,13 @@
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"uplands\": 2 lead(s)"
+    "B ArcGIS Online search \"uplands\": 1 lead(s)"
    ],
    "verdict": "lead: new layer queued for intake"
   },
   "CA-5540": {
    "park": "Beacon Hill Park",
+   "area": "CA-BC",
    "why_not": "check",
    "hits": [],
    "leads": [
@@ -559,18 +465,6 @@
      "title": "Beacon Hill Home Zone Boundary Line",
      "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/BeaconHillHZ_Boundary/FeatureServer",
      "owner": "Transportation_SeattleCityGIS",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Find Locations in Beacon Hill 2 (Areas)",
-     "url": "https://services5.arcgis.com/LGTJWfnE6CJdd5tX/arcgis/rest/services/Find Locations in Beacon Hill 2 (Areas)/FeatureServer",
-     "owner": "Rcouillens",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Beacon Hill (Areas)",
-     "url": "https://services5.arcgis.com/LGTJWfnE6CJdd5tX/arcgis/rest/services/Find Locations in Beacon Hill (Areas)/FeatureServer",
-     "owner": "Rcouillens",
      "type": "Feature Service"
     }
    ],
@@ -580,12 +474,13 @@
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"beacon hill\": 7 lead(s)"
+    "B ArcGIS Online search \"beacon hill\": 1 lead(s)"
    ],
    "verdict": "lead: new layer queued for intake"
   },
   "CA-6398": {
    "park": "Craigflower Manor House National Historic Site",
+   "area": "CA-BC",
    "why_not": "check",
    "hits": [],
    "leads": [],
@@ -601,6 +496,7 @@
   },
   "CA-0017": {
    "park": "Clayoquot Sound Biosphere Reserve",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -610,12 +506,13 @@
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"clayoquot biosphere sound\": 0 lead(s)"
+    "B ArcGIS Online search \"biosphere clayoquot sound\": 0 lead(s)"
    ],
    "verdict": "no layer found"
   },
   "CA-0060": {
    "park": "Mount Arrowsmith Biosphere Reserve",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -631,108 +528,55 @@
   },
   "CA-3178": {
    "park": "A.H.P. Matthew Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
-   "leads": [
-    {
-     "title": "Haiti - Road Obstacles ( After Hurricane Matthew)",
-     "url": "https://services8.arcgis.com/tPY1NaqA2ETpJ86A/arcgis/rest/services/Haiti__Road_Obstacles_(_After_Hurricane_Matthew)/FeatureServer",
-     "owner": "Caribbean_GeoPortal",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Hurricane Matthew gust footprint - Tropical Storm Risk, University College London",
-     "url": "https://services8.arcgis.com/tPY1NaqA2ETpJ86A/arcgis/rest/services/Hurricane_Matthew_gust_footprint__Tropical_Storm_Risk_University_College_London/FeatureServer",
-     "owner": "Caribbean_GeoPortal",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Post-Hurricane Matthew Lidar Derived Elevation",
-     "url": "https://tiles.arcgis.com/tiles/v01gqwM5QqNysAAi/arcgis/rest/services/Post_Hurricane_Matthew/MapServer",
-     "owner": "bnwilliams@usgs.gov_USGS",
-     "type": "Map Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"matthew\": 8 lead(s)"
+    "B ArcGIS Online search \"matthew\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-3180": {
    "park": "Allco Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
-   "leads": [
-    {
-     "title": "allco",
-     "url": "https://services3.arcgis.com/HAlPU25WRBupnLll/arcgis/rest/services/allco/FeatureServer",
-     "owner": "GisBedford",
-     "type": "Feature Service"
-    },
-    {
-     "title": "KIPDA_AllCo",
-     "url": "https://services5.arcgis.com/SRuaqVyoD8TEQJga/arcgis/rest/services/KIPDA_AllCo/FeatureServer",
-     "owner": "zher",
-     "type": "Feature Service"
-    },
-    {
-     "title": "RD_AllCO",
-     "url": "https://services.arcgis.com/vQ8kO5zdqETeirEL/arcgis/rest/services/AllCO/FeatureServer",
-     "owner": "mlwh232@uky.edu_UKY_EDU",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"allco\": 3 lead(s)"
+    "B ArcGIS Online search \"allco\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-3183": {
    "park": "Ambleside Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
-   "leads": [
-    {
-     "title": "Stagshaw_Garden_and_Ambleside",
-     "url": "https://tiles-eu1.arcgis.com/NPIbx47lsIiu2pqz/arcgis/rest/services/Stagshaw_Garden_and_Ambleside/MapServer",
-     "owner": "NationalTrust.Public",
-     "type": "Map Service"
-    },
-    {
-     "title": "Ambleside Project_WFL1",
-     "url": "https://services8.arcgis.com/oHICVpGrCiKD6Mgr/arcgis/rest/services/Ambleside_Project_WFL1/FeatureServer",
-     "owner": "Moustafa_Eweda",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Ambleside_10min_Buffer",
-     "url": "https://services5.arcgis.com/eZ3AleDZdwnqtB9E/arcgis/rest/services/Ambleside_10min_Buffer/FeatureServer",
-     "owner": "olivia.simard_consorllc",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"ambleside\": 6 lead(s)"
+    "B ArcGIS Online search \"ambleside\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-3200": {
    "park": "Barnet Marine Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -748,6 +592,7 @@
   },
   "CA-3241": {
    "park": "Bonnie Schrenk Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -763,68 +608,39 @@
   },
   "CA-3258": {
    "park": "Bright Angel Regional Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
-   "leads": [
-    {
-     "title": "Bright_Angel_Trail",
-     "url": "https://services1.arcgis.com/QweyPk0HoFrLzJR6/arcgis/rest/services/Bright_Angel_Trail/FeatureServer",
-     "owner": "Lumberjack_Lane",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Map_Display_Bright_Angel",
-     "url": "https://services3.arcgis.com/0OPQIK59PJJqLK0A/arcgis/rest/services/Map_Display_Bright_Angel/FeatureServer",
-     "owner": "mapgeohub",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"bright angel\": 2 lead(s)"
+    "B ArcGIS Online search \"bright angel\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-3267": {
    "park": "Buckingham Park Protected Area",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
-   "leads": [
-    {
-     "title": "Buckingham Soils",
-     "url": "https://services1.arcgis.com/OoHBsnqevYljcMGr/arcgis/rest/services/Buckingham_Soils/FeatureServer",
-     "owner": "geog467.redteam_JMU",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Buckingham Roads",
-     "url": "https://services6.arcgis.com/cGI8zn9Oo7U9dF6z/arcgis/rest/services/Buckingham_Roads/FeatureServer",
-     "owner": "DPMC_GIS",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Parcels_Buckingham_2020",
-     "url": "https://services6.arcgis.com/cGI8zn9Oo7U9dF6z/arcgis/rest/services/Parcels_Buckingham_2020/FeatureServer",
-     "owner": "DPMC_GIS",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"buckingham\": 6 lead(s)"
+    "B ArcGIS Online search \"buckingham\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-3272": {
    "park": "Buntzen Lake Recreation Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -840,6 +656,7 @@
   },
   "CA-3278": {
    "park": "Burnaby Mountain Conservation Area",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -855,6 +672,7 @@
   },
   "CA-3298": {
    "park": "Cardiff Mountain Ecological Reserve",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -870,24 +688,19 @@
   },
   "CA-3300": {
    "park": "Cariboo Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [
     {
-     "title": "FSR Conditions Cariboo Natural Resource Region View",
-     "url": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/FSR_Conditions_Cariboo_Natural_Resource_Region_1/FeatureServer",
-     "owner": "PX.RCBGIS",
+     "title": "Non-Productive Forest for the Cariboo Region",
+     "url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_reg_land_and_natural_resource/MapServer/20",
+     "owner": "Province.Of.British.Columbia",
      "type": "Feature Service"
     },
     {
-     "title": "Timing Windows for Work in and About Waterbodies in the Cariboo Natural Resource Region - Generalized View",
-     "url": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/Timing_Windows_for_the_Cariboo_Natural_Resource_Region_Generalized_View/FeatureServer",
-     "owner": "PX.RCBGIS",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Seral Stage Assessment Amalgamation Units for the Cariboo Natural Resource Region",
-     "url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_reg_land_and_natural_resource/MapServer/28",
+     "title": "Predicted Spawning Periods for Reduced Risk Work Windows for Quesnel and Central Cariboo Districts",
+     "url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_reg_land_and_natural_resource/MapServer/6",
      "owner": "Province.Of.British.Columbia",
      "type": "Feature Service"
     }
@@ -898,46 +711,29 @@
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"cariboo\": 8 lead(s)"
+    "B ArcGIS Online search \"cariboo\": 2 lead(s)"
    ],
    "verdict": "lead: new layer queued for intake"
   },
   "CA-3304": {
    "park": "Castle Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
-   "leads": [
-    {
-     "title": "Delaware New Castle County Parcels",
-     "url": "https://gis.nccde.org/agsserver/rest/services/BaseMaps/Base_Layers/MapServer/",
-     "owner": "FirstMap@De",
-     "type": "Map Service"
-    },
-    {
-     "title": "Castle Hayne (Tch) Aquifer Chloride",
-     "url": "https://services2.arcgis.com/kCu40SDxsCGcuUWO/arcgis/rest/services/Castle_Hayne/FeatureServer",
-     "owner": "spollock3_ncdenr",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Crown Castle Small Cell Sites",
-     "url": "https://services7.arcgis.com/HJ6NuXYZF6fDjms9/arcgis/rest/services/Customer_Small_Cell_Site_Locations_View/FeatureServer",
-     "owner": "TMorita@dpw.lacounty.gov_lacounty",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"castle\": 8 lead(s)"
+    "B ArcGIS Online search \"castle\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-3307": {
    "park": "Cedar Creek Park Conservation Area",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [
@@ -948,16 +744,10 @@
      "type": "Feature Service"
     },
     {
-     "title": "Cedar Park Ball Fields",
-     "url": "https://gis.cedarparktexas.gov/mapping/rest/services/VIEW/BallFields/MapServer",
-     "owner": "chris.martinez_CedarPark",
-     "type": "Map Service"
-    },
-    {
-     "title": "Cedar Park Civil Boundaries",
-     "url": "https://gisrest.cedarparktexas.gov/cpgis/rest/services/Planning/CivilBoundaries/MapServer",
-     "owner": "chris.martinez_CedarPark",
-     "type": "Map Service"
+     "title": "Yellow-Cedar Decline 1986 to 2024 - Annual",
+     "url": "https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/Cumulative_Yellow_Cedar_Decline_Append_1980s_to_2024/FeatureServer",
+     "owner": "ForestHealthAlaskaRegion",
+     "type": "Feature Service"
     }
    ],
    "tried": [
@@ -966,46 +756,29 @@
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"cedar\": 8 lead(s)"
+    "B ArcGIS Online search \"cedar\": 2 lead(s)"
    ],
    "verdict": "lead: new layer queued for intake"
   },
   "CA-3310": {
    "park": "Cates Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
-   "leads": [
-    {
-     "title": "Cates Landing Transmission Lines",
-     "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/Cates_Landing_Transmission_Lines/FeatureServer",
-     "owner": "TVA-GIS",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Cates Landing Substations",
-     "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/Cates_Landing_Substations/FeatureServer",
-     "owner": "TVA-GIS",
-     "type": "Feature Service"
-    },
-    {
-     "title": "Cates Landing Tax Parcels",
-     "url": "https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/Cates_Landing_Tax_Parcels/FeatureServer",
-     "owner": "TVA-GIS",
-     "type": "Feature Service"
-    }
-   ],
+   "leads": [],
    "tried": [
     "A BC recreatio: no polygon at the pin",
     "A BC-HCA Gover: no polygon at the pin",
     "A BC-HP Govern: no polygon at the pin",
     "A CPCAD / Parks Canada: Expecting ',' delimiter: line 1 column 2999959 (char 2999958",
     "A CPCAD / Parks Canada: no answer (404)",
-    "B ArcGIS Online search \"cates\": 5 lead(s)"
+    "B ArcGIS Online search \"cates\": 0 lead(s)"
    ],
-   "verdict": "lead: new layer queued for intake"
+   "verdict": "no layer found"
   },
   "CA-3313": {
    "park": "Cedar Greens Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1020,6 +793,7 @@
   },
   "CA-3339": {
    "park": "Citadel Heights Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1034,6 +808,7 @@
   },
   "CA-3358": {
    "park": "Colony Farm Community Gardens at ƛ̓éxətəm Regional Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1048,6 +823,7 @@
   },
   "CA-3359": {
    "park": "ƛ̓éxətəm Regional Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1062,6 +838,7 @@
   },
   "CA-3376": {
    "park": "Coutts Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1076,6 +853,7 @@
   },
   "CA-3394": {
    "park": "Dacre Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1090,6 +868,7 @@
   },
   "CA-3407": {
    "park": "Deer Lake Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1104,6 +883,7 @@
   },
   "CA-3415": {
    "park": "Devonian Harbour Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1118,6 +898,7 @@
   },
   "CA-3422": {
    "park": "Discovery Town Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1132,6 +913,7 @@
   },
   "CA-3453": {
    "park": "Eastern Drive Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1146,6 +928,7 @@
   },
   "CA-3469": {
    "park": "Elks Park Protected Area",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1160,6 +943,7 @@
   },
   "CA-3493": {
    "park": "Evans Lake Ecological Reserve",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1174,6 +958,7 @@
   },
   "CA-3508": {
    "park": "Fleetwood Meadows Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1188,6 +973,7 @@
   },
   "CA-3513": {
    "park": "Burnaby Fraser Foreshore Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1202,6 +988,7 @@
   },
   "CA-3514": {
    "park": "Forest Hills Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1216,6 +1003,7 @@
   },
   "CA-3515": {
    "park": "Forsyth Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1230,6 +1018,7 @@
   },
   "CA-3518": {
    "park": "Fortress Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1244,6 +1033,7 @@
   },
   "CA-3532": {
    "park": "Frost Road Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1258,6 +1048,7 @@
   },
   "CA-3537": {
    "park": "Garibaldi Park Recreation Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1272,6 +1063,7 @@
   },
   "CA-3538": {
    "park": "Gates Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1286,6 +1078,7 @@
   },
   "CA-3591": {
    "park": "Hawthorne Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1300,6 +1093,7 @@
   },
   "CA-3601": {
    "park": "Hickey Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1314,6 +1108,7 @@
   },
   "CA-3603": {
    "park": "Hillcrest Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1328,6 +1123,7 @@
   },
   "CA-3606": {
    "park": "Holland Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1342,6 +1138,7 @@
   },
   "CA-3617": {
    "park": "Hugo Ray Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1356,6 +1153,7 @@
   },
   "CA-3618": {
    "park": "Hume Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1370,6 +1168,7 @@
   },
   "CA-3633": {
    "park": "James Kennedy Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1384,6 +1183,7 @@
   },
   "CA-3642": {
    "park": "John Lawson Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1398,6 +1198,7 @@
   },
   "CA-3712": {
    "park": "Kroeker Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1412,6 +1213,7 @@
   },
   "CA-3741": {
    "park": "Lions Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1426,6 +1228,7 @@
   },
   "CA-3743": {
    "park": "Little Cates Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1440,6 +1243,7 @@
   },
   "CA-3746": {
    "park": "Locarno Beach Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1454,6 +1258,7 @@
   },
   "CA-3773": {
    "park": "Maple Green Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1468,6 +1273,7 @@
   },
   "CA-3774": {
    "park": "Maple Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1482,6 +1288,7 @@
   },
   "CA-3775": {
    "park": "Maple Ridge Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1496,6 +1303,7 @@
   },
   "CA-3777": {
    "park": "Maquabeak Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1510,6 +1318,7 @@
   },
   "CA-3778": {
    "park": "Maquinna Marine Provincial Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1524,6 +1333,7 @@
   },
   "CA-3786": {
    "park": "Margaret Pigott Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1538,6 +1348,7 @@
   },
   "CA-3792": {
    "park": "McClughan Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1552,6 +1363,7 @@
   },
   "CA-3801": {
    "park": "Memorial South Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1566,6 +1378,7 @@
   },
   "CA-3826": {
    "park": "Morningside Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1580,6 +1393,7 @@
   },
   "CA-3859": {
    "park": "Mundy Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1594,6 +1408,7 @@
   },
   "CA-3860": {
    "park": "Murdo Frazer Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1608,6 +1423,7 @@
   },
   "CA-3865": {
    "park": "Myrtle Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1622,6 +1438,7 @@
   },
   "CA-3888": {
    "park": "Negiy / Nekite Estuary Conservancy Protected Area",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1636,6 +1453,7 @@
   },
   "CA-3918": {
    "park": "Oak Meadows Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1650,6 +1468,7 @@
   },
   "CA-3943": {
    "park": "Parkgate Recreation Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1664,6 +1483,7 @@
   },
   "CA-3960": {
    "park": "Pine River Breaks Provincial Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1678,6 +1498,7 @@
   },
   "CA-3968": {
    "park": "Pitt River Regional Greenway Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1692,6 +1513,7 @@
   },
   "CA-4022": {
    "park": "Riley Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1706,6 +1528,7 @@
   },
   "CA-4025": {
    "park": "Robert Burnaby Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1720,6 +1543,7 @@
   },
   "CA-4031": {
    "park": "Roche Point Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1734,6 +1558,7 @@
   },
   "CA-4043": {
    "park": "Routley Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1748,6 +1573,7 @@
   },
   "CA-4068": {
    "park": "Sequoia Ridge Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1762,6 +1588,7 @@
   },
   "CA-4071": {
    "park": "Settlers Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1776,6 +1603,7 @@
   },
   "CA-4106": {
    "park": "Skyline Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1790,6 +1618,7 @@
   },
   "CA-4128": {
    "park": "Spanish Banks Beach Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1804,6 +1633,7 @@
   },
   "CA-4184": {
    "park": "Tatlow Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1818,6 +1648,7 @@
   },
   "CA-4187": {
    "park": "Taylor Landing Provincial Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1832,6 +1663,7 @@
   },
   "CA-4209": {
    "park": "Topham Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1846,6 +1678,7 @@
   },
   "CA-4230": {
    "park": "Douglas Taylor Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1860,6 +1693,7 @@
   },
   "CA-4232": {
    "park": "Jackman Wetlands Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1874,6 +1708,7 @@
   },
   "CA-4251": {
    "park": "VanDusen Botanical Gardens",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1888,6 +1723,7 @@
   },
   "CA-4260": {
    "park": "Volunteer Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1902,6 +1738,7 @@
   },
   "CA-4268": {
    "park": "Walnut Grove Community Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1916,6 +1753,7 @@
   },
   "CA-4280": {
    "park": "West Langley Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1930,6 +1768,7 @@
   },
   "CA-4791": {
    "park": "Gitwangak Battle Hill National Historic Site",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1944,6 +1783,7 @@
   },
   "CA-4794": {
    "park": "Kootenae House National Historic Site",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1958,6 +1798,7 @@
   },
   "CA-5168": {
    "park": "Hudson Bay Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1972,6 +1813,7 @@
   },
   "CA-5323": {
    "park": "Central Community Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -1986,6 +1828,7 @@
   },
   "CA-5324": {
    "park": "Fairfield Recreation Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2000,6 +1843,7 @@
   },
   "CA-5325": {
    "park": "Fort Hope National Historic Site",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2014,6 +1858,7 @@
   },
   "CA-5327": {
    "park": "Island 22 Regional Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2028,6 +1873,7 @@
   },
   "CA-5331": {
    "park": "Kelowna City Recreation Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2042,6 +1888,7 @@
   },
   "CA-5341": {
    "park": "Rotary Beach Recreation Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2056,6 +1903,7 @@
   },
   "CA-5343": {
    "park": "Skaha Lake Recreation Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2070,6 +1918,7 @@
   },
   "CA-5349": {
    "park": "Gwynne Vaughan Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2084,6 +1933,7 @@
   },
   "CA-5350": {
    "park": "Tumbler Ridge UNESCO Global Geopark",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2098,6 +1948,7 @@
   },
   "CA-5501": {
    "park": "Grouse Mountain Regional Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2112,6 +1963,7 @@
   },
   "CA-5544": {
    "park": "Stoney Hill Regional Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2126,6 +1978,7 @@
   },
   "CA-5547": {
    "park": "Thomas Hayes Ecological Reserve",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2140,6 +1993,7 @@
   },
   "CA-5548": {
    "park": "Blackie Spit Recreation Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2154,6 +2008,7 @@
   },
   "CA-5667": {
    "park": "Mount Tolmie Park",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2168,6 +2023,7 @@
   },
   "CA-6132": {
    "park": "Fraser River National Heritage Area",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
@@ -2182,6 +2038,7 @@
   },
   "CA-6369": {
    "park": "Cape Mudge Lighthouse National Historic Site",
+   "area": "CA-BC",
    "why_not": "nothing near",
    "hits": [],
    "leads": [],
