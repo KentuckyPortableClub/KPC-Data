@@ -1,0 +1,298 @@
+{
+ "request": "requests/9-wi-lp1.json",
+ "id": "9-wi-lp1",
+ "chat": 9,
+ "kind": "layer-probe",
+ "report": "WI Public Access Lands viewer sources (HQ 9:12 PM): layers, geometry, name + EASE_USE_CODE / owner fields, licence line",
+ "asked": {
+  "chat": 9,
+  "kind": "layer-probe",
+  "report": "WI Public Access Lands viewer sources (HQ 9:12 PM): layers, geometry, name + EASE_USE_CODE / owner fields, licence line",
+  "layers": [
+   "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_DNR_MGD_PROPERTY_WTM_Ext/MapServer",
+   "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_DNR_PUBLIC_LAND_WTM_Ext/MapServer",
+   "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_DNR_PARCEL_DETAIL_WTM_Ext/MapServer"
+  ]
+ },
+ "answered": "2026-10-30 03:28Z",
+ "results": [
+  {
+   "url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_DNR_MGD_PROPERTY_WTM_Ext/MapServer",
+   "error": "{'code': 404, 'message': 'Service LF_DML/LF_DNR_MGD_PROPERTY_WTM_Ext/MapServer not found ', 'details': []}"
+  },
+  {
+   "st": "",
+   "kind": "",
+   "url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_DNR_PUBLIC_LAND_WTM_Ext/MapServer",
+   "answers": true,
+   "service": "LF_DNR_PUBLIC_LAND_WTM_Ext",
+   "licence": "DNR-IT, US Forest Service, National Park Service, US Fish and Wildlife Services, Wisconsin County Forests, Bureau of Commissioners of Public Lands",
+   "years_in_text": [],
+   "description": "Map service combines county and federal public land. Feature classes are maintained by DNR-IT and sourced from the individual entity.",
+   "item_licence": "Data is public, no use constraints.",
+   "item_credits": "DNR-IT, US Forest Service, National Park Service, US Fish and Wildlife Services, Wisconsin County Forests, Bureau of Commissioners of Public Lands",
+   "item_about": "Map service combines county and federal public land. Feature classes are maintained by DNR-IT and sourced from the individual entity. Map service combines county and federal public land.",
+   "layers": [
+    {
+     "id": 5,
+     "name": "Local Park",
+     "geom": "Polygon",
+     "nameField": "PROP_NAME",
+     "ownerField": "",
+     "typeField": "AUXCLASS",
+     "fields": [
+      "OBJECTID",
+      "COUNTY_NAME",
+      "PROP_NAME",
+      "ACREAGE_AMT",
+      "COMMENT_TEXT",
+      "ORIG_HRZ_COLL_MTHD_CODE",
+      "ORIG_HRZ_COLL_DATE",
+      "ORIG_HRZ_COLL_MTHD_TEXT",
+      "ORIG_HRZ_REF_SYS_CODE",
+      "LAST_UPDATE_DATE",
+      "LAST_UPDATE_USER_NAME",
+      "SELECT_FLAG",
+      "AUXCLASS",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "last_edit": "1970-01-01",
+     "layer_copyright": "Several Wisconsin County Land Information Offices and Regional Planning Commissions, the City of Madison, the City of Wisconsin Rapids, University of Wisconsin - Madison geospatial data repository, Ge",
+     "records": 8560,
+     "sample": [
+      "Allens Grove Park",
+      "Anders Park",
+      "Badger Girl Scout Camp",
+      "Baywood Heights Park",
+      "Big Foot Nature Study Area",
+      "Birge Fountain Park",
+      "Boat Access",
+      "Boat Access"
+     ],
+     "type_values": [
+      "X3",
+      "X4"
+     ]
+    },
+    {
+     "id": 0,
+     "name": "County Forests",
+     "geom": "Polygon",
+     "nameField": "FR_PROP_NAME",
+     "ownerField": "",
+     "typeField": "",
+     "fields": [
+      "OBJECTID",
+      "SHAPE",
+      "FR_PROP_CODE",
+      "FR_PROP_NAME",
+      "LAST_CHANGED_DATE",
+      "LAST_CHANGED_BY",
+      "ORIG_HRZ_COLL_MTHD_CODE",
+      "ORIG_HRZ_COLL_MTHD_TEXT",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "last_edit": "1970-01-01",
+     "layer_copyright": "",
+     "records": 30,
+     "sample": [
+      "ADAMS COUNTY FOREST",
+      "ASHLAND COUNTY FOREST",
+      "BARRON COUNTY FOREST",
+      "BAYFIELD COUNTY FOREST",
+      "BURNETT COUNTY FOREST",
+      "CHIPPEWA COUNTY FOREST",
+      "CLARK COUNTY FOREST",
+      "DOUGLAS COUNTY FOREST"
+     ]
+    },
+    {
+     "id": 6,
+     "name": "Conservation Reserve Land",
+     "geom": "Polygon",
+     "nameField": "PROP_NAME",
+     "ownerField": "OWNER_TYPE",
+     "typeField": "",
+     "fields": [
+      "OBJECTID",
+      "PROP_NAME",
+      "OWNER_TYPE",
+      "OWNER_DESC",
+      "LAST_UPDATE_DATE",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "last_edit": "1970-01-01",
+     "layer_copyright": "",
+     "records": 1,
+     "sample": [
+      "Kickapoo Valley Reserve"
+     ],
+     "owner_values": [
+      "Local/Tribal/Federal"
+     ]
+    },
+    {
+     "id": 1,
+     "name": "Board of Commissioners of Public Lands",
+     "geom": "Polygon",
+     "nameField": "DNR_REGION_NAME",
+     "ownerField": "",
+     "typeField": "",
+     "fields": [
+      "OBJECTID",
+      "PLSS_DTRSQQ_CODE",
+      "GLO_ACRE_AMT",
+      "PLSS_SS_OR_GOVLOT_DESCR",
+      "DATA_LAST_UPDATE_DATE",
+      "DNR_REGION_NAME",
+      "PLSS_RNG_DIR_NUM_CODE",
+      "PLSS_RNG_ID",
+      "PLSS_TWN_ID",
+      "PLSS_SCTN_ID",
+      "PLSS_Q_SCTN_NUM_CODE",
+      "PLSS_QQ_SCTN_NUM_CODE",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "last_edit": "1970-01-01",
+     "layer_copyright": "Wisconsin Board of Commissioners of Public Lands",
+     "records": 1914,
+     "sample": [
+      "Northern",
+      "Northern",
+      "Northern",
+      "Northern",
+      "Northern",
+      "Northern",
+      "Northern",
+      "Northern"
+     ]
+    },
+    {
+     "id": 2,
+     "name": "US Fish & Wildlife Service",
+     "geom": "Polygon",
+     "nameField": "CMPXNAME",
+     "ownerField": "",
+     "typeField": "INTTYPE1",
+     "fields": [
+      "OBJECTID",
+      "CMPXNAME",
+      "ORGNAME",
+      "DIVNAME",
+      "UNITNAME",
+      "SUBUNAME",
+      "ORGCODE",
+      "MGMTCODE",
+      "IFWS",
+      "LIT",
+      "GISACRES",
+      "DOCACRES",
+      "SURACRES",
+      "STATUS",
+      "INTTYPE1",
+      "INTTYPE2",
+      "TRACTNO",
+      "COMMENTS",
+      "INTIDNO",
+      "RSL_TYPE",
+      "FWSREGION",
+      "SHAPE_LENG",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "last_edit": "1970-01-01",
+     "layer_copyright": "U.S. Fish and Wildlife Service, National Wildlife Refuge System, Division of Realty",
+     "records": 10797,
+     "sample": [
+      "N/A",
+      "DETROIT LAKES WETLAND MANAGEMENT DISTRIC",
+      "N/A",
+      "N/A",
+      "IOWA WETLAND MANAGEMENT DISTRICT",
+      "N/A",
+      "N/A",
+      "N/A"
+     ],
+     "type_values": [
+      "O"
+     ]
+    },
+    {
+     "id": 3,
+     "name": "National Park Service",
+     "geom": "Polygon",
+     "nameField": "PROP_NAME",
+     "ownerField": "",
+     "typeField": "",
+     "fields": [
+      "OBJECTID",
+      "PROP_TYPE",
+      "PROP_NAME",
+      "SOURCE",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "last_edit": "1970-01-01",
+     "layer_copyright": "National Parks Service - Land Resources Division, WASO-FC",
+     "records": 1395,
+     "sample": [
+      "Apostle Islands National Lakeshore",
+      "Apostle Islands National Lakeshore",
+      "Apostle Islands National Lakeshore",
+      "Apostle Islands National Lakeshore",
+      "Apostle Islands National Lakeshore",
+      "Apostle Islands National Lakeshore",
+      "Apostle Islands National Lakeshore",
+      "Apostle Islands National Lakeshore"
+     ]
+    },
+    {
+     "id": 4,
+     "name": "US Forest Service",
+     "geom": "Polygon",
+     "nameField": "NAME_ORIG",
+     "ownerField": "",
+     "typeField": "",
+     "fields": [
+      "OBJECTID",
+      "NAME_ORIG",
+      "NAME1",
+      "NAME2",
+      "SHAPE",
+      "SHAPE.AREA",
+      "SHAPE.LEN"
+     ],
+     "last_edit": "1970-01-01",
+     "layer_copyright": "USDA Forest Service, Chequamegon-Nicolet National Forest",
+     "records": 1,
+     "sample": [
+      "USDA FOREST SERVICE"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_DNR_PARCEL_DETAIL_WTM_Ext/MapServer",
+   "error": "{'code': 404, 'message': 'Service LF_DML/LF_DNR_PARCEL_DETAIL_WTM_Ext/MapServer not found ', 'details': []}"
+  }
+ ],
+ "seconds": 65,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "3 result(s), 1 read OK"
+}
