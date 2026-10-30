@@ -1,20 +1,20 @@
 {
  "filter": {
   "rule": "pairs expected only from POTA history are kept when the outlines are within 1000 m (box to box), or a park has no outline, or one session logged both",
-  "left_out_far": 1181,
-  "kept_no_outline": 111,
+  "left_out_far": 1189,
+  "kept_no_outline": 103,
   "kept_same_session": 521,
   "kept_not_measured": 16,
-  "outlines_measured": 171
+  "outlines_measured": 172
  },
  "about": "MISSING CHECK (chat 2, Oct 27 2026; HQ 3:46 PM, Brandon: 'chat 8 can't verify what's missing'). For each area of a 2-fer run, every See kpc_fers_expected.py. Chat 8 reviews DROPPED + NEVER LOOKED AT.",
  "area": "US-IA",
- "date": "2026-10-29",
+ "date": "2026-10-30",
  "pass": true,
  "counts": {
   "FOUND": 2,
   "DROPPED": 5,
-  "NEVER LOOKED AT": 679
+  "NEVER LOOKED AT": 671
  },
  "FOUND": [
   {
@@ -2072,16 +2072,6 @@
   {
    "refs": [
     "US-11306",
-    "US-11877"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-11877: no official boundary"
-  },
-  {
-   "refs": [
-    "US-11306",
     "US-11878"
    ],
    "why_expected": [
@@ -2148,16 +2138,6 @@
   {
    "refs": [
     "US-11307",
-    "US-11877"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-11877: no official boundary"
-  },
-  {
-   "refs": [
-    "US-11307",
     "US-11878"
    ],
    "why_expected": [
@@ -2209,16 +2189,6 @@
     "activated together by the same call on the same day (2x, POTA history)"
    ],
    "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
-  },
-  {
-   "refs": [
-    "US-11323",
-    "US-11877"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-11877: no official boundary"
   },
   {
    "refs": [
@@ -2285,16 +2255,6 @@
     "activated together by the same call on the same day (1x, POTA history)"
    ],
    "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)"
-  },
-  {
-   "refs": [
-    "US-11324",
-    "US-11877"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (4x, POTA history)"
-   ],
-   "reason": "US-11877: no official boundary"
   },
   {
    "refs": [
@@ -2441,51 +2401,11 @@
   {
    "refs": [
     "US-11877",
-    "US-2305"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (3x, POTA history)"
-   ],
-   "reason": "US-11877: no official boundary"
-  },
-  {
-   "refs": [
-    "US-11877",
-    "US-4377"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (2x, POTA history)"
-   ],
-   "reason": "US-11877: no official boundary"
-  },
-  {
-   "refs": [
-    "US-11877",
-    "US-9319"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
-   ],
-   "reason": "US-11877: no official boundary"
-  },
-  {
-   "refs": [
-    "US-11877",
     "US-9348"
    ],
    "why_expected": [
     "POTA shows one session logged both parks",
     "activated together by the same call on the same day (2x, POTA history)"
-   ],
-   "reason": "US-11877: no official boundary"
-  },
-  {
-   "refs": [
-    "US-11877",
-    "US-9349"
-   ],
-   "why_expected": [
-    "activated together by the same call on the same day (1x, POTA history)"
    ],
    "reason": "US-11877: no official boundary"
   },
