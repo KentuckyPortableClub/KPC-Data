@@ -238,6 +238,20 @@ def length_km(g):
     return sum(km(a[1], a[0], b[1], b[0]) for l in lines for a, b in zip(l, l[1:]))
 
 
+def c_wwff(path, new, live, ctx):
+    """WWFF directory, one file per prefix (chat 2 8:20 PM: ready to wire). Wrong = empty, a read that half-answered (under 80% of the
+    saved rows), or the same reference twice."""
+    holds = []
+    rows = new if isinstance(new, list) else (new or {}).get('refs') or []
+    old = live if isinstance(live, list) else (live or {}).get('refs') or []
+    if not rows: holds.append('F-W1 the directory file is empty')
+    if old and len(rows) < .8 * len(old): holds.append(f'F-W2 rows {len(old)} -> {len(rows)} (under 80% of the saved list)')
+    refs = [r[0] if isinstance(r, list) and r else (r.get('reference') or r.get('ref')) if isinstance(r, dict) else None for r in rows]
+    d = len(refs) - len(set(refs))
+    if d: holds.append(f'F-W3 {d} references listed twice')
+    return holds, []
+
+
 def c_trails(path, new, live, ctx):
     holds, notes = [], []
     pn, po = coords(new.get('geometry')), coords((live or {}).get('geometry'))
@@ -594,6 +608,7 @@ ROUTES = [
     (r'^data/access-leads/[^/]+\.json$', 'leads', c_leads),
     (r'^data/(?:us|ca)-key/[^/]+\.json$', 'key', c_key),
     (r'^data/intake/ready\.json$', 'intake', c_intake),
+    (r'^data/wwff/[^/]+\.json$', 'wwff', c_wwff),   # Oct 29 10:55 PM (chat 2 8:20 PM)
     (r'^data/fers/(?:US|CA)-[A-Z]{2}\.json$', 'fers', c_fers),   # chat 8 B2: Canada too (Canada's POTA pins from data/canada.json)
     (r'^data/fers/(?:line|missing|same-outline|expected|looked)-[a-z]+\.json$', 'info', lambda path, new, live, ctx: ([], ['an info file: passes when it reads as JSON (chat 8 B2)'])),
     (r'^data/pota/index\.json$', 'pota', c_pota),
@@ -785,7 +800,7 @@ def log_action(what, rel):
 
 BOT_FOLDERS = {'access': 'data/access', 'campfed': 'data/campfed', 'campstate': 'data/campstate', 'campinfo': 'data/campinfo', 'trails': 'data/trails',
                'docs': 'data/docs', 'hours': 'data/hours', 'truth': 'data/truth', 'leads': 'data/access-leads', 'us-key': 'data/us-key', 'ca-key': 'data/ca-key',
-               'intake': 'data/intake', 'fers': 'data/fers', 'pota': 'data/pota', 'closures': 'data/closures'}
+               'intake': 'data/intake', 'fers': 'data/fers', 'pota': 'data/pota', 'closures': 'data/closures', 'wwff': 'data/wwff'}
 
 
 def mode_undo_bot(bot, area=''):

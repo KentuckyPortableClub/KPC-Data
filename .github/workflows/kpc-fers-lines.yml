@@ -110,7 +110,8 @@ jobs:
           # now keeps far and wrong pieces out of the outlines themselves, so the 2-fer rows no longer need this second guard
           NET=1 MINUTES=20 python3 links/.github/scripts/kpc_fers_layered.py data/fers data/parkinfo || true
           git config user.name kpc-bot; git config user.email bot@kpc.local
-          git add data/fers && git commit -qm "2-fer: far-spot check + layered-land list" || true
+          LINKS=links python3 .github/scripts/kpc_waiting_room.py divert data/fers || true   # Oct 29: a changed US/CA 2-fer file waits for chat 11 (the layered list stays live)
+          git add data/fers data/waiting && git commit -qm "2-fer: far-spot check + layered-land list" || true
           git pull -q --rebase || true; git push -q || true
       - name: The one big 'needs a human look' list from every area's file
         continue-on-error: true

@@ -34,7 +34,7 @@ jobs:
         with:
           path: kpcdata
       - name: Lay this repo's data over the checkout
-        run: touch /tmp/kpc-start; bash .github/scripts/kpc_overlay.sh kpcdata
+        run: touch /tmp/kpc-start; (cd kpcdata && LINKS=.. python3 .github/scripts/kpc_waiting_room.py resume data/trails) || true; bash .github/scripts/kpc_overlay.sh kpcdata   # Oct 29 (chat 2 8:20 PM): start from the HELD files
       - name: Build trail lines
         continue-on-error: true
         env:
@@ -52,4 +52,5 @@ jobs:
           if [ -s /tmp/kpc-gate.txt ]; then IFS=$'\t' read -r G A N < /tmp/kpc-gate.txt
             if [ "$G" = PASS ]; then STATUS_DIR=kpcdata/data/status python3 kpcdata/.github/scripts/kpc_status.py grade-me "kpc_state_trails" "${A:-all}" "data/trails/" "$N"
             else STATUS_DIR=kpcdata/data/status python3 kpcdata/.github/scripts/kpc_status.py gate "kpc_state_trails" "${A:-all}" FAIL "$N"; fi; fi; true
+          (cd kpcdata && LINKS=.. python3 .github/scripts/kpc_waiting_room.py divert data/trails) || true   # Oct 29 (chat 2 8:20 PM): changed files wait in data/waiting/in/ for chat 11, the live ones stay
           bash .github/scripts/kpc_push_data.sh kpcdata "State trails: POTA trail parks" data

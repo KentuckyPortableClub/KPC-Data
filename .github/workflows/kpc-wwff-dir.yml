@@ -26,7 +26,7 @@ jobs:
         with:
           path: kpcdata
       - name: Lay this repo's data over the checkout
-        run: touch /tmp/kpc-start; bash .github/scripts/kpc_overlay.sh kpcdata
+        run: touch /tmp/kpc-start; (cd kpcdata && LINKS=.. python3 .github/scripts/kpc_waiting_room.py resume data/wwff) || true; bash .github/scripts/kpc_overlay.sh kpcdata   # Oct 29 (chat 2 8:20 PM): start from the HELD files
       - name: Directories
         continue-on-error: true
         run: |
@@ -41,4 +41,5 @@ jobs:
           mkdir -p kpcdata/data/sota/ && rm -rf kpcdata/data/sota/ && cp -a data/sota kpcdata/data/sota 2>/dev/null || true
           mkdir -p kpcdata/data/names/ && rm -rf kpcdata/data/names/ && cp -a data/names kpcdata/data/names 2>/dev/null || true
           for f in data/status/*.json; do [ "$f" -nt /tmp/kpc-start ] && ! cmp -s "$f" "kpcdata/$f" && mkdir -p kpcdata/data/status && cp "$f" "kpcdata/$f"; done; true
+          (cd kpcdata && LINKS=.. python3 .github/scripts/kpc_waiting_room.py divert data/wwff) || true   # Oct 29 (chat 2 8:20 PM): changed files wait in data/waiting/in/ for chat 11, the live ones stay
           bash .github/scripts/kpc_push_data.sh kpcdata "Update WWFF directory copy" data
