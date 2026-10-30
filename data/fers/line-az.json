@@ -1,0 +1,58 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "az",
+ "states": [
+  "US-AZ"
+ ],
+ "since": "2026-10-30",
+ "date": "2026-10-30 07:20 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
+ "known_answers": "19/19 on 2026-10-30",
+ "missing_check": {
+  "FOUND": 36,
+  "DROPPED": 172,
+  "NEVER LOOKED AT": 351
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-30",
+   "pairs tested": 395,
+   "pairs whose boxes touch": 395
+  },
+  "pass2": {
+   "agree with the pass before": 656,
+   "date": "2026-10-30",
+   "pairs tested": 82
+  },
+  "pass3": {
+   "agree with the pass before": 417,
+   "date": "2026-10-30",
+   "pairs tested": 78
+  },
+  "pass5": {
+   "checked": 11,
+   "date": "2026-10-30",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-AZ": "data/fers/US-AZ.json"
+ },
+ "US-AZ": {
+  "rows": 682,
+  "live": 36,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "no public owner on the ownership map": 4
+  },
+  "dropped": 281,
+  "merged": 361
+ },
+ "states_ready": [
+  "US-AZ"
+ ],
+ "states_held": []
+}
