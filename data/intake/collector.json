@@ -1,0 +1,912 @@
+{
+ "CA-6134|https://geospatial.alberta.ca/titan/rest/services/boundary/land_use_management/MapServer/11": {
+  "ref": "CA-6134",
+  "area": "CA-AB",
+  "url": "https://geospatial.alberta.ca/titan/rest/services/boundary/land_use_management/MapServer/11",
+  "field": "PLUZ_NAME",
+  "status": "asked",
+  "why": "pin inside 'Athabasca Ranch' (9,811 ac), LIKELY: question for chat 11",
+  "date": "2026-10-30"
+ },
+ "CA-2969|https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0": {
+  "ref": "CA-2969",
+  "area": "CA-AB",
+  "url": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0",
+  "field": "NAME",
+  "status": "evidence",
+  "why": "pin inside 'Castle' (62,541 ac) but part of the name shared, record 62,541 ac far bigger than this kind of place: kept as evidence, not asked",
+  "date": "2026-10-30"
+ },
+ "CA-4773|https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0": {
+  "ref": "CA-4773",
+  "area": "CA-AB",
+  "url": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0",
+  "field": "NAME",
+  "status": "evidence",
+  "why": "pin inside 'Banff' (1,682,108 ac) but part of the name shared, record 1,682,108 ac far bigger than this kind of place: kept as evidence, not asked",
+  "date": "2026-10-30"
+ },
+ "CA-4779|https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0": {
+  "ref": "CA-4779",
+  "area": "CA-AB",
+  "url": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0",
+  "field": "NAME",
+  "status": "evidence",
+  "why": "pin inside 'Jasper' (2,752,918 ac) but part of the name shared, record 2,752,918 ac far bigger than this kind of place: kept as evidence, not asked",
+  "date": "2026-10-30"
+ },
+ "CA-4780|https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0": {
+  "ref": "CA-4780",
+  "area": "CA-AB",
+  "url": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0",
+  "field": "NAME",
+  "status": "evidence",
+  "why": "pin inside 'Jasper' (2,752,918 ac) but part of the name shared, record 2,752,918 ac far bigger than this kind of place: kept as evidence, not asked",
+  "date": "2026-10-30"
+ },
+ "CA-6075|https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0": {
+  "ref": "CA-6075",
+  "area": "CA-AB",
+  "url": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0",
+  "field": "NAME",
+  "status": "evidence",
+  "why": "pin inside 'Banff' (1,682,108 ac) but part of the name shared, record 1,682,108 ac far bigger than this kind of place: kept as evidence, not asked",
+  "date": "2026-10-30"
+ },
+ "CA-6087|https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0": {
+  "ref": "CA-6087",
+  "area": "CA-AB",
+  "url": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0",
+  "field": "NAME",
+  "status": "asked",
+  "why": "pin inside 'Dunvegan' (20 ac), LIKELY: question for chat 11",
+  "date": "2026-10-30"
+ },
+ "CA-2969|https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0": {
+  "ref": "CA-2969",
+  "area": "CA-AB",
+  "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+  "field": "NAME_E",
+  "status": "asked",
+  "why": "pin inside 'Castle Provincial Park' (7,760 ac), LIKELY: question for chat 11",
+  "date": "2026-10-30"
+ },
+ "CA-3591|https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0": {
+  "ref": "CA-3591",
+  "area": "CA-BC",
+  "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+  "field": "NAME_E",
+  "status": "failed",
+  "why": "pin outside: no polygon of this layer holds the POTA pin",
+  "date": "2026-10-30"
+ },
+ "CA-2373|https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/0": {
+  "ref": "CA-2373",
+  "area": "CA-MB",
+  "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/0",
+  "field": "NAME_E",
+  "status": "failed",
+  "why": "pin outside: no polygon of this layer holds the POTA pin",
+  "date": "2026-10-30"
+ },
+ "CA-2410|https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/0": {
+  "ref": "CA-2410",
+  "area": "CA-MB",
+  "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/0",
+  "field": "NAME",
+  "status": "evidence",
+  "why": "pin inside 'Duck Mountain' (35,815 ac) but no shared proper word: kept as evidence, not asked",
+  "date": "2026-10-30"
+ },
+ "CA-2464|https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/2": {
+  "ref": "CA-2464",
+  "area": "CA-MB",
+  "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/2",
+  "field": "NAME_E",
+  "status": "asked",
+  "why": "pin inside 'Narcisse Wildlife Management Area' (29,207 ac), SURE: question for chat 11",
+  "date": "2026-10-30"
+ },
+ "CA-5967|https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/2": {
+  "ref": "CA-5967",
+  "area": "CA-MB",
+  "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/2",
+  "field": "NAME_E",
+  "status": "evidence",
+  "why": "pin inside 'Churchill Wildlife Management Area' (2,060,751 ac) but part of the name shared, record 2,060,751 ac far bigger than this kind of place: kept as evidence, not asked",
+  "date": "2026-10-30"
+ },
+ "CA-0572|https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0": {
+  "ref": "CA-0572",
+  "area": "CA-MB",
+  "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+  "field": "NAME_E",
+  "status": "failed",
+  "why": "pin outside: no polygon of this layer holds the POTA pin",
+  "date": "2026-10-30"
+ },
+ "CA-2464|https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0": {
+  "ref": "CA-2464",
+  "area": "CA-MB",
+  "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+  "field": "NAME_E",
+  "status": "asked",
+  "why": "pin inside 'Narcisse Wildlife Management Area' (317 ac), SURE: question for chat 11",
+  "date": "2026-10-30"
+ },
+ "CA-0793|https://geonb.snb.ca/arcgis/rest/services/GeoNB_DNR_ProvincialParks/MapServer/0": {
+  "ref": "CA-0793",
+  "area": "CA-NB",
+  "url": "https://geonb.snb.ca/arcgis/rest/services/GeoNB_DNR_ProvincialParks/MapServer/0",
+  "field": "NAME",
+  "status": "failed",
+  "why": "pin outside: no polygon of this layer holds the POTA pin",
+  "date": "2026-10-30"
+ },
+ "CA-5202|https://geonb.snb.ca/arcgis/rest/services/GeoNB_DNR_ProvincialParks/MapServer/0": {
+  "ref": "CA-5202",
+  "area": "CA-NB",
+  "url": "https://geonb.snb.ca/arcgis/rest/services/GeoNB_DNR_ProvincialParks/MapServer/0",
+  "field": "NAME",
+  "status": "asked",
+  "why": "pin inside 'Minister's Island' (508 ac), LIKELY: question for chat 11",
+  "date": "2026-10-30"
+ },
+ "CA-5203|https://geonb.snb.ca/arcgis/rest/services/GeoNB_DNR_ProvincialParks/MapServer/0": {
+  "ref": "CA-5203",
+  "area": "CA-NB",
+  "url": "https://geonb.snb.ca/arcgis/rest/services/GeoNB_DNR_ProvincialParks/MapServer/0",
+  "field": "NAME",
+  "status": "asked",
+  "why": "pin inside 'Miscou' (11 ac), LIKELY: question for chat 11",
+  "date": "2026-10-30"
+ },
+ "CA-5203|https://gis-erd-der.gnb.ca/server/rest/services/OpenData/Nature_Legacy_Protected_Areas/FeatureServer/0": {
+  "ref": "CA-5203",
+  "area": "CA-NB",
+  "url": "https://gis-erd-der.gnb.ca/server/rest/services/OpenData/Nature_Legacy_Protected_Areas/FeatureServer/0",
+  "field": "NAME",
+  "status": "failed",
+  "why": "pin outside: no polygon of this layer holds the POTA pin",
+  "date": "2026-10-30"
+ },
+ "CA-5202|https://gis-erd-der.gnb.ca/server/rest/services/OpenData/WildlifeRefuge/MapServer/0": {
+  "ref": "CA-5202",
+  "area": "CA-NB",
+  "url": "https://gis-erd-der.gnb.ca/server/rest/services/OpenData/WildlifeRefuge/MapServer/0",
+  "field": "NAME",
+  "status": "asked",
+  "why": "pin inside 'Minister's Island Wildlife Management Area' (509 ac), LIKELY: question for chat 11",
+  "date": "2026-10-30"
+ },
+ "CA-5259|https://gis-erd-der.gnb.ca/server/rest/services/OpenData/WildlifeRefuge/MapServer/0": {
+  "ref": "CA-5259",
+  "area": "CA-NB",
+  "url": "https://gis-erd-der.gnb.ca/server/rest/services/OpenData/WildlifeRefuge/MapServer/0",
+  "field": "NAME",
+  "status": "asked",
+  "why": "pin inside 'Kings Landing Wildlife Management Area' (323 ac), LIKELY: question for chat 11",
+  "date": "2026-10-30"
+ },
+ "CA-5154|https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0": {
+  "ref": "CA-5154",
+  "area": "CA-NB",
+  "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+  "field": "NAME_E",
+  "status": "asked",
+  "why": "pin inside 'Cape Jourimain National Wildlife Area' (690 ac), LIKELY: question for chat 11",
+  "date": "2026-10-30"
+ },
+ "CA-6166|https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0": {
+  "ref": "CA-6166",
+  "area": "CA-NL",
+  "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+  "field": "NAME_E",
+  "status": "asked",
+  "why": "pin inside 'Cape St. Mary's Ecological Reserve' (2,747 ac), LIKELY: question for chat 11",
+  "date": "2026-10-30"
+ },
+ "CA-4842|https://novarocmaps.novascotia.ca/arcgis/rest/services/NovaRoc/MapServer/29": {
+  "ref": "CA-4842",
+  "area": "CA-NS",
+  "url": "https://novarocmaps.novascotia.ca/arcgis/rest/services/NovaRoc/MapServer/29",
+  "field": "NAME1",
+  "status": "failed",
+  "why": "pin outside: no polygon of this layer holds the POTA pin",
+  "date": "2026-10-30"
+ },
+ "CA-4847|https://novarocmaps.novascotia.ca/arcgis/rest/services/NovaRoc/MapServer/29": {
+  "ref": "CA-4847",
+  "area": "CA-NS",
+  "url": "https://novarocmaps.novascotia.ca/arcgis/rest/services/NovaRoc/MapServer/29",
+  "field": "NAME1",
+  "status": "asked",
+  "why": "pin inside 'St. Peters Canal' (17 ac), LIKELY: question for chat 11",
+  "date": "2026-10-30"
+ },
+ "CA-0465|https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/1": {
+  "ref": "CA-0465",
+  "area": "CA-NS",
+  "url": "https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/1",
+  "field": "PROT_NAME",
+  "status": "asked",
+  "why": "pin inside 'Cole Harbour - Lawrencetown Provincial Park' (1,826 ac), LIKELY: question for chat 11",
+  "date": "2026-10-30"
+ },
+ "CA-0485|https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/1": {
+  "ref": "CA-0485",
+  "area": "CA-NS",
+  "url": "https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/1",
+  "field": "PROT_NAME",
+  "status": "failed",
+  "why": "pin outside: no polygon of this layer holds the POTA pin",
+  "date": "2026-10-30"
+ },
+ "CA-6560|https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/1": {
+  "ref": "CA-6560",
+  "area": "CA-NS",
+  "url": "https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/1",
+  "field": "PROT_NAME",
+  "status": "failed",
+  "why": "pin outside: no polygon of this layer holds the POTA pin",
+  "date": "2026-10-30"
+ },
+ "CA-0485|https://nsgiwa.novascotia.ca/arcgis/rest/services/ENV/ENV_NS_Prot_Area_Sys_UT83/MapServer/0": {
+  "ref": "CA-0485",
+  "area": "CA-NS",
+  "url": "https://nsgiwa.novascotia.ca/arcgis/rest/services/ENV/ENV_NS_Prot_Area_Sys_UT83/MapServer/0",
+  "field": "Pro_Name",
+  "status": "failed",
+  "why": "pin outside: no polygon of this layer holds the POTA pin",
+  "date": "2026-10-30"
+ },
+ "CA-6560|https://nsgiwa.novascotia.ca/arcgis/rest/services/ENV/ENV_NS_Prot_Area_Sys_UT83/MapServer/0": {
+  "ref": "CA-6560",
+  "area": "CA-NS",
+  "url": "https://nsgiwa.novascotia.ca/arcgis/rest/services/ENV/ENV_NS_Prot_Area_Sys_UT83/MapServer/0",
+  "field": "Pro_Name",
+  "status": "failed",
+  "why": "pin outside: no polygon of this layer holds the POTA pin",
+  "date": "2026-10-30"
+ },
+ "CA-0465|https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System_V1/FeatureServer/1": {
+  "ref": "CA-0465",
+  "area": "CA-NS",
+  "url": "https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System_V1/FeatureServer/1",
+  "field": "PROT_NAME",
+  "status": "asked",
+  "why": "pin inside 'Cole Harbour - Lawrencetown Provincial Park' (1,826 ac), LIKELY: question for chat 11",
+  "date": "2026-10-30"
+ },
+ "CA-0485|https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System_V1/FeatureServer/1": {
+  "ref": "CA-0485",
+  "area": "CA-NS",
+  "url": "https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System_V1/FeatureServer/1",
+  "field": "PROT_NAME",
+  "status": "failed",
+  "why": "pin outside: no polygon of this layer holds the POTA pin",
+  "date": "2026-10-30"
+ },
+ "CA-6560|https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System_V1/FeatureServer/1": {
+  "ref": "CA-6560",
+  "area": "CA-NS",
+  "url": "https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System_V1/FeatureServer/1",
+  "field": "PROT_NAME",
+  "status": "failed",
+  "why": "pin outside: no polygon of this layer holds the POTA pin",
+  "date": "2026-10-30"
+ },
+ "CA-0465|https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0": {
+  "ref": "CA-0465",
+  "area": "CA-NS",
+  "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+  "field": "NAME_E",
+  "status": "asked",
+  "why": "pin inside 'Cole Harbour - Lawrencetown Provincial Park' (1,815 ac), LIKELY: question for chat 11",
+  "date": "2026-10-30"
+ },
+ "CA-0485|https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0": {
+  "ref": "CA-0485",
+  "area": "CA-NS",
+  "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+  "field": "NAME_E",
+  "status": "failed",
+  "why": "pin outside: no polygon of this layer holds the POTA pin",
+  "date": "2026-10-30"
+ },
+ "CA-6178|https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0": {
+  "ref": "CA-6178",
+  "area": "CA-NS",
+  "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+  "field": "NAME_E",
+  "status": "asked",
+  "why": "pin inside 'Cape George Provincial Park' (142 ac), LIKELY: question for chat 11",
+  "date": "2026-10-30"
+ },
+ "CA-6560|https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0": {
+  "ref": "CA-6560",
+  "area": "CA-NS",
+  "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+  "field": "NAME_E",
+  "status": "failed",
+  "why": "pin outside: no polygon of this layer holds the POTA pin",
+  "date": "2026-10-30"
+ },
+ "CA-5641|https://maps2.grca.on.ca/server/rest/services/Hosted/LANDMGNT_CA_Lands/FeatureServer/0": {
+  "ref": "CA-5641",
+  "area": "CA-ON",
+  "url": "https://maps2.grca.on.ca/server/rest/services/Hosted/LANDMGNT_CA_Lands/FeatureServer/0",
+  "field": "name",
+  "status": "failed",
+  "why": "pin outside: no polygon of this layer holds the POTA pin",
+  "date": "2026-10-30"
+ },
+ "CA-5645|https://maps2.grca.on.ca/server/rest/services/Hosted/LANDMGNT_CA_Lands/FeatureServer/0": {
+  "ref": "CA-5645",
+  "area": "CA-ON",
+  "url": "https://maps2.grca.on.ca/server/rest/services/Hosted/LANDMGNT_CA_Lands/FeatureServer/0",
+  "field": "name",
+  "status": "asked",
+  "why": "pin inside 'Ball's Mill C.A.' (30 ac), SURE: question for chat 11",
+  "date": "2026-10-30"
+ },
+ "CA-5650|https://maps2.grca.on.ca/server/rest/services/Hosted/LANDMGNT_CA_Lands/FeatureServer/0": {
+  "ref": "CA-5650",
+  "area": "CA-ON",
+  "url": "https://maps2.grca.on.ca/server/rest/services/Hosted/LANDMGNT_CA_Lands/FeatureServer/0",
+  "field": "name",
+  "status": "failed",
+  "why": "pin outside: no polygon of this layer holds the POTA pin",
+  "date": "2026-10-30"
+ },
+ "CA-5659|https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3": {
+  "ref": "CA-5659",
+  "area": "CA-ON",
+  "url": "https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3",
+  "field": "PROP_NAME",
+  "status": "failed",
+  "why": "pin outside: no polygon of this layer holds the POTA pin",
+  "date": "2026-10-30"
+ },
+ "CA-5663|https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3": {
+  "ref": "CA-5663",
+  "area": "CA-ON",
+  "url": "https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3",
+  "field": "PROP_NAME",
+  "status": "failed",
+  "why": "pin outside: no polygon of this layer holds the POTA pin",
+  "date": "2026-10-30"
+ },
+ "CA-5664|https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3": {
+  "ref": "CA-5664",
+  "area": "CA-ON",
+  "url": "https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3",
+  "field": "PROP_NAME",
+  "status": "failed",
+  "why": "pin outside: no polygon of this layer holds the POTA pin",
+  "date": "2026-10-30"
+ },
+ "CA-5666|https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3": {
+  "ref": "CA-5666",
+  "area": "CA-ON",
+  "url": "https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3",
+  "field": "PROP_NAME",
+  "status": "failed",
+  "why": "pin outside: no polygon of this layer holds the POTA pin",
+  "date": "2026-10-30"
+ },
+ "CA-5118|https://maps2.grca.on.ca/server/rest/services/ORCA_Public/ORCA_Annual_Report_CAs/MapServer/2": {
+  "ref": "CA-5118",
+  "area": "CA-ON",
+  "url": "https://maps2.grca.on.ca/server/rest/services/ORCA_Public/ORCA_Annual_Report_CAs/MapServer/2",
+  "field": "CANAME",
+  "status": "asked",
+  "why": "pin inside 'Selwyn Conservation Area' (72 ac), LIKELY: question for chat 11",
+  "date": "2026-10-30"
+ },
+ "CA-5631|https://maps2.grca.on.ca/server/rest/services/ORCA_Public/ORCA_Annual_Report_CAs/MapServer/2": {
+  "ref": "CA-5631",
+  "area": "CA-ON",
+  "url": "https://maps2.grca.on.ca/server/rest/services/ORCA_Public/ORCA_Annual_Report_CAs/MapServer/2",
+  "field": "CANAME",
+  "status": "failed",
+  "why": "pin outside: no polygon of this layer holds the POTA pin",
+  "date": "2026-10-30"
+ },
+ "CA-1596|https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0": {
+  "ref": "CA-1596",
+  "area": "CA-ON",
+  "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+  "field": "NAME_E",
+  "status": "failed",
+  "why": "pin outside: no polygon of this layer holds the POTA pin",
+  "date": "2026-10-30"
+ },
+ "CA-6002|https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0": {
+  "ref": "CA-6002",
+  "area": "CA-ON",
+  "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+  "field": "NAME_E",
+  "status": "failed",
+  "why": "pin outside: no polygon of this layer holds the POTA pin",
+  "date": "2026-10-30"
+ },
+ "CA-6617|https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0": {
+  "ref": "CA-6617",
+  "area": "CA-ON",
+  "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+  "field": "NAME_E",
+  "status": "asked",
+  "why": "pin inside 'H.R. Frink Conservation Area' (507 ac), SURE: question for chat 11",
+  "date": "2026-10-30"
+ },
+ "CA-6619|https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0": {
+  "ref": "CA-6619",
+  "area": "CA-ON",
+  "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+  "field": "NAME_E",
+  "status": "asked",
+  "why": "pin inside 'Depot Lakes Conservation Area South Conservation R' (1,305 ac), LIKELY: question for chat 11",
+  "date": "2026-10-30"
+ },
+ "CA-0852|https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0": {
+  "ref": "CA-0852",
+  "area": "CA-PE",
+  "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+  "field": "NAME_E",
+  "status": "failed",
+  "why": "pin outside: no polygon of this layer holds the POTA pin",
+  "date": "2026-10-30"
+ },
+ "CA-4696|https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0": {
+  "ref": "CA-4696",
+  "area": "CA-PE",
+  "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+  "field": "NAME_E",
+  "status": "failed",
+  "why": "pin outside: no polygon of this layer holds the POTA pin",
+  "date": "2026-10-30"
+ },
+ "CA-4969|https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/6": {
+  "ref": "CA-4969",
+  "area": "CA-QC",
+  "url": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/6",
+  "field": "NOM_OFFICIEL",
+  "status": "failed",
+  "why": "pin outside: no polygon of this layer holds the POTA pin",
+  "date": "2026-10-30"
+ },
+ "CA-4969|https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0": {
+  "ref": "CA-4969",
+  "area": "CA-QC",
+  "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+  "field": "NAME_E",
+  "status": "failed",
+  "why": "pin outside: no polygon of this layer holds the POTA pin",
+  "date": "2026-10-30"
+ },
+ "CA-4986|https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0": {
+  "ref": "CA-4986",
+  "area": "CA-QC",
+  "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+  "field": "NAME_E",
+  "status": "failed",
+  "why": "pin outside: no polygon of this layer holds the POTA pin",
+  "date": "2026-10-30"
+ },
+ "CA-5005|https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0": {
+  "ref": "CA-5005",
+  "area": "CA-QC",
+  "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+  "field": "NAME_E",
+  "status": "failed",
+  "why": "pin outside: no polygon of this layer holds the POTA pin",
+  "date": "2026-10-30"
+ },
+ "CA-5052|https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0": {
+  "ref": "CA-5052",
+  "area": "CA-QC",
+  "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+  "field": "NAME_E",
+  "status": "asked",
+  "why": "pin inside 'Parc nature de Pointe-aux-Outardes Natural Area Un' (221 ac), LIKELY: question for chat 11",
+  "date": "2026-10-30"
+ },
+ "CA-2727|https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/4": {
+  "ref": "CA-2727",
+  "area": "CA-SK",
+  "url": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/4",
+  "field": "PARKNM",
+  "status": "asked",
+  "why": "pin inside 'Armit River Recreation Site' (143 ac), LIKELY: question for chat 11",
+  "date": "2026-10-30"
+ },
+ "CA-2779|https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/4": {
+  "ref": "CA-2779",
+  "area": "CA-SK",
+  "url": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/4",
+  "field": "PARKNM",
+  "status": "asked",
+  "why": "pin inside 'Armit River Recreation Site' (143 ac), LIKELY: question for chat 11",
+  "date": "2026-10-30"
+ },
+ "CA-2897|https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/4": {
+  "ref": "CA-2897",
+  "area": "CA-SK",
+  "url": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/4",
+  "field": "PARKNM",
+  "status": "asked",
+  "why": "pin inside 'Wascana Valley Natural Area Recreation Site' (313 ac), LIKELY: question for chat 11",
+  "date": "2026-10-30"
+ },
+ "CA-4926|https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsTitled/MapServer/0": {
+  "ref": "CA-4926",
+  "area": "CA-SK",
+  "url": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsTitled/MapServer/0",
+  "field": "PARKNM",
+  "status": "asked",
+  "why": "pin inside 'BATOCHE NATIONAL HISTORIC PARK' (722 ac), SURE: question for chat 11",
+  "date": "2026-10-30"
+ },
+ "CA-4933|https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsTitled/MapServer/0": {
+  "ref": "CA-4933",
+  "area": "CA-SK",
+  "url": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsTitled/MapServer/0",
+  "field": "PARKNM",
+  "status": "asked",
+  "why": "pin inside 'FORT WALSH NATIONAL HISTORIC PARK' (1,617 ac), SURE: question for chat 11",
+  "date": "2026-10-30"
+ },
+ "CA-2727|https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/1": {
+  "ref": "CA-2727",
+  "area": "CA-SK",
+  "url": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/1",
+  "field": "PARKNM",
+  "status": "asked",
+  "why": "pin inside 'Armit River Recreation Site' (143 ac), LIKELY: question for chat 11",
+  "date": "2026-10-30"
+ },
+ "CA-2779|https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/1": {
+  "ref": "CA-2779",
+  "area": "CA-SK",
+  "url": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/1",
+  "field": "PARKNM",
+  "status": "asked",
+  "why": "pin inside 'Armit River Recreation Site' (143 ac), LIKELY: question for chat 11",
+  "date": "2026-10-30"
+ },
+ "CA-2897|https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/1": {
+  "ref": "CA-2897",
+  "area": "CA-SK",
+  "url": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/1",
+  "field": "PARKNM",
+  "status": "asked",
+  "why": "pin inside 'Wascana Valley Natural Area Recreation Site' (313 ac), LIKELY: question for chat 11",
+  "date": "2026-10-30"
+ },
+ "CA-2727|https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0": {
+  "ref": "CA-2727",
+  "area": "CA-SK",
+  "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+  "field": "NAME_E",
+  "status": "asked",
+  "why": "pin inside 'Armit River Recreation Site' (143 ac), LIKELY: question for chat 11",
+  "date": "2026-10-30"
+ },
+ "CA-2775|https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0": {
+  "ref": "CA-2775",
+  "area": "CA-SK",
+  "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+  "field": "NAME_E",
+  "status": "asked",
+  "why": "pin inside 'Nisbet South' (19,780 ac), LIKELY: question for chat 11",
+  "date": "2026-10-30"
+ },
+ "CA-2779|https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0": {
+  "ref": "CA-2779",
+  "area": "CA-SK",
+  "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+  "field": "NAME_E",
+  "status": "asked",
+  "why": "pin inside 'Armit River Recreation Site' (143 ac), LIKELY: question for chat 11",
+  "date": "2026-10-30"
+ },
+ "CA-2897|https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0": {
+  "ref": "CA-2897",
+  "area": "CA-SK",
+  "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+  "field": "NAME_E",
+  "status": "asked",
+  "why": "pin inside 'Wascana Valley Natural Area Recreation Site' (313 ac), LIKELY: question for chat 11",
+  "date": "2026-10-30"
+ },
+ "CA-6265|https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0": {
+  "ref": "CA-6265",
+  "area": "CA-YT",
+  "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+  "field": "NAME_E",
+  "status": "failed",
+  "why": "pin outside: no polygon of this layer holds the POTA pin",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/0": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/0",
+  "status": "no match",
+  "why": "13 open parks tested, 0 SURE / LIKELY hit(s)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/1": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/1",
+  "status": "failed",
+  "why": "RuntimeError: no name field",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/2": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/2",
+  "status": "asked",
+  "why": "13 open parks tested, 2 SURE / LIKELY hit(s)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/3": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/3",
+  "status": "failed",
+  "why": "RuntimeError: no name field",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/MapServer/0": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/MapServer/0",
+  "status": "no match",
+  "why": "13 open parks tested, 0 SURE / LIKELY hit(s)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/MapServer/1": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/MapServer/1",
+  "status": "failed",
+  "why": "RuntimeError: no name field",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/MapServer/2": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/MapServer/2",
+  "status": "asked",
+  "why": "13 open parks tested, 2 SURE / LIKELY hit(s)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/MapServer/3": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/MapServer/3",
+  "status": "failed",
+  "why": "RuntimeError: no name field",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Wildlife_Action_Plan/MapServer/0": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Wildlife_Action_Plan/MapServer/0",
+  "status": "failed",
+  "why": "RuntimeError: no name field",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Wildlife_Action_Plan/MapServer/1": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Wildlife_Action_Plan/MapServer/1",
+  "status": "failed",
+  "why": "RuntimeError: no name field",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Boundaries/FeatureServer/1": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Boundaries/FeatureServer/1",
+  "status": "failed",
+  "why": "RuntimeError: no name field",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Boundaries/FeatureServer/2": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Boundaries/FeatureServer/2",
+  "status": "no match",
+  "why": "13 open parks tested, 0 SURE / LIKELY hit(s)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Boundaries/FeatureServer/3": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Boundaries/FeatureServer/3",
+  "status": "no match",
+  "why": "13 open parks tested, 0 SURE / LIKELY hit(s)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Boundaries/FeatureServer/4": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Boundaries/FeatureServer/4",
+  "status": "no match",
+  "why": "13 open parks tested, 0 SURE / LIKELY hit(s)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Boundaries/MapServer/1": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Boundaries/MapServer/1",
+  "status": "failed",
+  "why": "RuntimeError: no name field",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Boundaries/MapServer/2": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Boundaries/MapServer/2",
+  "status": "no match",
+  "why": "13 open parks tested, 0 SURE / LIKELY hit(s)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Boundaries/MapServer/3": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Boundaries/MapServer/3",
+  "status": "no match",
+  "why": "13 open parks tested, 0 SURE / LIKELY hit(s)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Boundaries/MapServer/4": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Boundaries/MapServer/4",
+  "status": "no match",
+  "why": "13 open parks tested, 0 SURE / LIKELY hit(s)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_CPCN/FeatureServer/0": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_CPCN/FeatureServer/0",
+  "status": "failed",
+  "why": "RuntimeError: no name field",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_CPCN/FeatureServer/1": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_CPCN/FeatureServer/1",
+  "status": "failed",
+  "why": "RuntimeError: no name field",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_CPCN/MapServer/0": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_CPCN/MapServer/0",
+  "status": "failed",
+  "why": "RuntimeError: no name field",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_CPCN/MapServer/1": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_CPCN/MapServer/1",
+  "status": "failed",
+  "why": "RuntimeError: no name field",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Hub_Opportunity_Zones/FeatureServer/0": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Hub_Opportunity_Zones/FeatureServer/0",
+  "status": "no match",
+  "why": "13 open parks tested, 0 SURE / LIKELY hit(s)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Hub_Opportunity_Zones/FeatureServer/1": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Hub_Opportunity_Zones/FeatureServer/1",
+  "status": "failed",
+  "why": "RuntimeError: no name field",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Hub_Opportunity_Zones/MapServer/0": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Hub_Opportunity_Zones/MapServer/0",
+  "status": "no match",
+  "why": "13 open parks tested, 0 SURE / LIKELY hit(s)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Hub_Opportunity_Zones/MapServer/1": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Hub_Opportunity_Zones/MapServer/1",
+  "status": "failed",
+  "why": "RuntimeError: no name field",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/FeatureServer/1": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/FeatureServer/1",
+  "status": "no match",
+  "why": "13 open parks tested, 0 SURE / LIKELY hit(s)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/FeatureServer/2": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/FeatureServer/2",
+  "status": "asked",
+  "why": "13 open parks tested, 1 SURE / LIKELY hit(s)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/FeatureServer/3": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/FeatureServer/3",
+  "status": "asked",
+  "why": "13 open parks tested, 1 SURE / LIKELY hit(s)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/FeatureServer/4": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/FeatureServer/4",
+  "status": "failed",
+  "why": "RuntimeError: no name field",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/FeatureServer/5": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/FeatureServer/5",
+  "status": "no match",
+  "why": "13 open parks tested, 0 SURE / LIKELY hit(s)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/MapServer/1": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/MapServer/1",
+  "status": "no match",
+  "why": "13 open parks tested, 0 SURE / LIKELY hit(s)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/MapServer/2": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/MapServer/2",
+  "status": "asked",
+  "why": "13 open parks tested, 1 SURE / LIKELY hit(s)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/MapServer/3": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/MapServer/3",
+  "status": "asked",
+  "why": "13 open parks tested, 1 SURE / LIKELY hit(s)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/MapServer/4": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/MapServer/4",
+  "status": "failed",
+  "why": "RuntimeError: no name field",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/MapServer/5": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/MapServer/5",
+  "status": "no match",
+  "why": "13 open parks tested, 0 SURE / LIKELY hit(s)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Mosquito_Spray_Blocks/MapServer/0": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Mosquito_Spray_Blocks/MapServer/0",
+  "status": "failed",
+  "why": "RuntimeError: no name field",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_PoliceBeats/MapServer/0": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_PoliceBeats/MapServer/0",
+  "status": "failed",
+  "why": "RuntimeError: no name field",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Political_Boundaries/FeatureServer/0": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Political_Boundaries/FeatureServer/0",
+  "status": "failed",
+  "why": "RuntimeError: no name field",
+  "date": "2026-10-30"
+ },
+ "crawl|US-DE|https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Political_Boundaries/FeatureServer/1": {
+  "area": "US-DE",
+  "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Political_Boundaries/FeatureServer/1",
+  "status": "no match",
+  "why": "13 open parks tested, 0 SURE / LIKELY hit(s)",
+  "date": "2026-10-30"
+ }
+}

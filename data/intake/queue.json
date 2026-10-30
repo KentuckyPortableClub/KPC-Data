@@ -12387,6 +12387,268 @@
    "publisher": "kart.miljodirektoratet.no",
    "title": "friluftsliv_statlig_sikra",
    "url": "https://kart.miljodirektoratet.no/arcgis/rest/services/friluftsliv_statlig_sikra/MapServer"
+  },
+  {
+   "url": "https://geospatial.alberta.ca/titan/rest/services/boundary/land_use_management/MapServer/11",
+   "title": "AB-PLUZ Gove (LAYER line, CA-AB)",
+   "from": "chat 8 LAYER line",
+   "added": "2026-10-30",
+   "closes": [
+    "CA-6134"
+   ],
+   "note": "T-3 LIKELY: park 'Athabasca Ranch Public Land Use Zone Recreation Park' = record 'Athabasca Ranch'; P-2 test Oct 30 chat 9; pin unchanged"
+  },
+  {
+   "url": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0",
+   "title": "Alberta Park (LAYER line, CA-AB)",
+   "from": "chat 8 LAYER line",
+   "added": "2026-10-30",
+   "closes": [
+    "CA-2969"
+   ],
+   "note": "T-3 LIKELY: park 'Castle Falls Natural Area' = record 'Castle'; P-2 test Oct 30 chat 9; pin unchanged"
+  },
+  {
+   "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+   "title": "cpcad (LAYER line, CA-AB)",
+   "from": "chat 8 LAYER line",
+   "added": "2026-10-30",
+   "closes": [
+    "CA-2969"
+   ],
+   "note": "T-3 LIKELY: park 'Castle Falls Natural Area' = record 'Castle Provincial Park'; P-2 test Oct 30 chat 9; pin unchanged"
+  },
+  {
+   "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/0",
+   "title": "Manitoba Par (LAYER line, CA-MB)",
+   "from": "chat 8 LAYER line",
+   "added": "2026-10-30",
+   "closes": [
+    "CA-2373"
+   ],
+   "note": "T-3 LIKELY: park 'Primrose Wayside Recreation Park' = record 'Primrose Provincial Park'; P-2 test Oct 30 chat 9; pin unchanged"
+  },
+  {
+   "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/0",
+   "title": "Manitoba wil (LAYER line, CA-MB)",
+   "from": "chat 8 LAYER line",
+   "added": "2026-10-30",
+   "closes": [
+    "CA-2410"
+   ],
+   "note": "T-3 LIKELY: park 'Ethelbert (Duck Mountain) Wildlife Management Area' = record 'Duck Mountain'; P-2 test Oct 30 chat 9; pin unchanged"
+  },
+  {
+   "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/2",
+   "title": "Manitoba wil~2 (LAYER line, CA-MB)",
+   "from": "chat 8 LAYER line",
+   "added": "2026-10-30",
+   "closes": [
+    "CA-2464"
+   ],
+   "note": "T-2 SURE: park 'Narcisse Provincial Park' = record 'Narcisse Wildlife Management Area'; P-2 test Oct 30 chat 9; pin unchanged"
+  },
+  {
+   "url": "https://geonb.snb.ca/arcgis/rest/services/GeoNB_DNR_ProvincialParks/MapServer/0",
+   "title": "NB-PP Govern (LAYER line, CA-NB)",
+   "from": "chat 8 LAYER line",
+   "added": "2026-10-30",
+   "closes": [
+    "CA-0793"
+   ],
+   "note": "T-3 LIKELY: park 'Saint Croix Island National Historic Site' = record 'Saint Croix'; P-2 test Oct 30 chat 9; pin unchanged"
+  },
+  {
+   "url": "https://gis-erd-der.gnb.ca/server/rest/services/OpenData/Nature_Legacy_Protected_Areas/FeatureServer/0",
+   "title": "New Brunswic~1 (LAYER line, CA-NB)",
+   "from": "chat 8 LAYER line",
+   "added": "2026-10-30",
+   "closes": [
+    "CA-5203"
+   ],
+   "note": "T-3 LIKELY: park 'Miscou Island Lighthouse National Historic Site' = record 'Miscou Island'; P-2 test Oct 30 chat 9; pin unchanged"
+  },
+  {
+   "url": "https://gis-erd-der.gnb.ca/server/rest/services/OpenData/WildlifeRefuge/MapServer/0",
+   "title": "New Brunswic~2 (LAYER line, CA-NB)",
+   "from": "chat 8 LAYER line",
+   "added": "2026-10-30",
+   "closes": [
+    "CA-5202"
+   ],
+   "note": "T-3 LIKELY: park 'Ministers Island Pre-contact Sites National Historic Site' = record 'Minister's Island Wildlife Management Area'; P-2 test Oct 30 chat 9; pin unchanged"
+  },
+  {
+   "url": "https://novarocmaps.novascotia.ca/arcgis/rest/services/NovaRoc/MapServer/29",
+   "title": "NS-NHS Nova (LAYER line, CA-NS)",
+   "from": "chat 8 LAYER line",
+   "added": "2026-10-30",
+   "closes": [
+    "CA-4842"
+   ],
+   "note": "T-3 LIKELY: park 'Marconi National Historic Site' = record 'Marconi Wireless Station'; P-2 test Oct 30 chat 9; pin unchanged"
+  },
+  {
+   "url": "https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/1",
+   "title": "NS-PPA Nova (LAYER line, CA-NS)",
+   "from": "chat 8 LAYER line",
+   "added": "2026-10-30",
+   "closes": [
+    "CA-0465"
+   ],
+   "note": "T-3 LIKELY: park 'Lawrencetown Beach Provincial Park' = record 'Cole Harbour - Lawrencetown Provincial Park'; P-2 test Oct 30 chat 9; pin unchanged"
+  },
+  {
+   "url": "https://nsgiwa.novascotia.ca/arcgis/rest/services/ENV/ENV_NS_Prot_Area_Sys_UT83/MapServer/0",
+   "title": "Nova Scotia (LAYER line, CA-NS)",
+   "from": "chat 8 LAYER line",
+   "added": "2026-10-30",
+   "closes": [
+    "CA-0485"
+   ],
+   "note": "T-3 LIKELY: park 'Trout Brook Provincial Park' = record 'Trout Brook Wilderness Area'; P-2 test Oct 30 chat 9; pin unchanged"
+  },
+  {
+   "url": "https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System_V1/FeatureServer/1",
+   "title": "Nova Scotia ~2 (LAYER line, CA-NS)",
+   "from": "chat 8 LAYER line",
+   "added": "2026-10-30",
+   "closes": [
+    "CA-0465"
+   ],
+   "note": "T-3 LIKELY: park 'Lawrencetown Beach Provincial Park' = record 'Cole Harbour - Lawrencetown Provincial Park'; P-2 test Oct 30 chat 9; pin unchanged"
+  },
+  {
+   "url": "https://maps2.grca.on.ca/server/rest/services/Hosted/LANDMGNT_CA_Lands/FeatureServer/0",
+   "title": "ON-GANA Gana (LAYER line, CA-ON)",
+   "from": "chat 8 LAYER line",
+   "added": "2026-10-30",
+   "closes": [
+    "CA-5641"
+   ],
+   "note": "T-2 SURE: park 'Sylvan Glen Conservation Area' = record 'Sylvan Glen C.A.'; P-2 test Oct 30 chat 9; pin unchanged"
+  },
+  {
+   "url": "https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3",
+   "title": "ON-GSCA Grey (LAYER line, CA-ON)",
+   "from": "chat 8 LAYER line",
+   "added": "2026-10-30",
+   "closes": [
+    "CA-5659"
+   ],
+   "note": "T-2 SURE: park 'Bognor-Marsh Management Area' = record 'Bognor Marsh'; P-2 test Oct 30 chat 9; pin unchanged"
+  },
+  {
+   "url": "https://maps2.grca.on.ca/server/rest/services/ORCA_Public/ORCA_Annual_Report_CAs/MapServer/2",
+   "title": "ON-ORCA Oton (LAYER line, CA-ON)",
+   "from": "chat 8 LAYER line",
+   "added": "2026-10-30",
+   "closes": [
+    "CA-5118"
+   ],
+   "note": "T-2 SURE: park 'Selwyn Beach Conservation Reserve' = record 'Selwyn Conservation Area'; P-2 test Oct 30 chat 9; pin unchanged"
+  },
+  {
+   "url": "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/6",
+   "title": "Québec Parc ~3 (LAYER line, CA-QC)",
+   "from": "chat 8 LAYER line",
+   "added": "2026-10-30",
+   "closes": [
+    "CA-4969"
+   ],
+   "note": "T-3 LIKELY: park 'Parc regional des Sept-Chutes Regional Park' = record 'Parc régional des Sept-Chutes'; P-2 test Oct 30 chat 9; pin unchanged"
+  },
+  {
+   "url": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/4",
+   "title": "SK-ALL Gover (LAYER line, CA-SK)",
+   "from": "chat 8 LAYER line",
+   "added": "2026-10-30",
+   "closes": [
+    "CA-2727"
+   ],
+   "note": "T-3 LIKELY: park 'Lower Armit River Recreation Site' = record 'Armit River Recreation Site'; P-2 test Oct 30 chat 9; pin unchanged"
+  },
+  {
+   "url": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsTitled/MapServer/0",
+   "title": "SK-PT Govern (LAYER line, CA-SK)",
+   "from": "chat 8 LAYER line",
+   "added": "2026-10-30",
+   "closes": [
+    "CA-4926"
+   ],
+   "note": "T-2 SURE: park 'Batoche National Historic Site' = record 'BATOCHE NATIONAL HISTORIC PARK'; P-2 test Oct 30 chat 9; pin unchanged"
+  },
+  {
+   "url": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/1",
+   "title": "Saskatchewan~1 (LAYER line, CA-SK)",
+   "from": "chat 8 LAYER line",
+   "added": "2026-10-30",
+   "closes": [
+    "CA-2727"
+   ],
+   "note": "T-3 LIKELY: park 'Lower Armit River Recreation Site' = record 'Armit River Recreation Site'; P-2 test Oct 30 chat 9; pin unchanged"
+  },
+  {
+   "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/2",
+   "title": "Urban Tree Canopy Estimates (atlas crawler, US-DE)",
+   "from": "atlas crawler",
+   "added": "2026-10-30",
+   "closes": [
+    "US-12938",
+    "US-12939"
+   ],
+   "note": "2 SURE / LIKELY park(s) at the pins"
+  },
+  {
+   "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/MapServer/2",
+   "title": "Urban Tree Canopy Estimates (atlas crawler, US-DE)",
+   "from": "atlas crawler",
+   "added": "2026-10-30",
+   "closes": [
+    "US-12938",
+    "US-12939"
+   ],
+   "note": "2 SURE / LIKELY park(s) at the pins"
+  },
+  {
+   "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/FeatureServer/2",
+   "title": "Zip Codes (atlas crawler, US-DE)",
+   "from": "atlas crawler",
+   "added": "2026-10-30",
+   "closes": [
+    "US-9881"
+   ],
+   "note": "1 SURE / LIKELY park(s) at the pins"
+  },
+  {
+   "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/FeatureServer/3",
+   "title": "USGS Quarter Quad Index (atlas crawler, US-DE)",
+   "from": "atlas crawler",
+   "added": "2026-10-30",
+   "closes": [
+    "US-9881"
+   ],
+   "note": "1 SURE / LIKELY park(s) at the pins"
+  },
+  {
+   "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/MapServer/2",
+   "title": "Zip Codes (atlas crawler, US-DE)",
+   "from": "atlas crawler",
+   "added": "2026-10-30",
+   "closes": [
+    "US-9881"
+   ],
+   "note": "1 SURE / LIKELY park(s) at the pins"
+  },
+  {
+   "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Boundaries/DE_Index/MapServer/3",
+   "title": "USGS Quarter Quad Index (atlas crawler, US-DE)",
+   "from": "atlas crawler",
+   "added": "2026-10-30",
+   "closes": [
+    "US-9881"
+   ],
+   "note": "1 SURE / LIKELY park(s) at the pins"
   }
  ]
 }
