@@ -1,0 +1,58 @@
+name: KPC storage keeper (Sundays; measures all, cleans this repo)
+# Oct 30 2026 (chat 10; HQ 8:50 AM, Brandon 8:45 AM 'a bot to keep storage size down?'). Script: kpc_storage_keeper.py.
+# Measures KPC-Links / KPC-Data / kpc-app + the lookup and picture-maps branches; cleans KPC-Data's old artifacts, caches and stale
+# bot branches; squashes lookup past 150 MB and picture-maps past 300 MB (one fresh commit, same files). Never touches main's history.
+# Ends red ONLY when a repo is over its line (KPC-Links 650 MB, KPC-Data 400 MB) = the one email that matters.
+on:
+  schedule:
+    - cron: '7 9 * * 0'
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+  pull-requests: read
+concurrency:
+  group: kpc-storage
+  cancel-in-progress: false
+jobs:
+  keep:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: The orphan branches (measure, squash when over)
+        continue-on-error: true
+        run: |
+          git config --global user.name 'github-actions[bot]'; git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for b in lookup picture-maps; do
+            LIM=150; [ $b = picture-maps ] && LIM=300
+            rm -rf /tmp/$b && git clone -q --single-branch -b $b "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" /tmp/$b || continue
+            (cd /tmp/$b && git gc -q --prune=now 2>/dev/null; KB=$(git count-objects -v | awk '/size-pack|^size:/{s+=$2} END{print s}'); MB=$((KB/1024))
+             V=$(echo $b | tr 'a-z-' 'A-Z_'); echo "BRANCH_MB_$V=$MB" >> "$GITHUB_ENV"
+             if [ "$MB" -gt "$LIM" ]; then git checkout -q --orphan fresh && git add -A && git commit -qm "$b squashed $(date -u +%F) (was $MB MB with history)" && git push -q -f origin fresh:$b && echo "::notice title=Storage keeper::$b squashed ($MB MB > $LIM MB)"; fi) || true
+          done
+      - name: Measure + board line + history
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          python3 .github/scripts/kpc_storage_keeper.py measure | tee /tmp/m.txt || true
+          L=$(grep '^LINE=' /tmp/m.txt | cut -d= -f2-); O=$(grep '^OVER=' /tmp/m.txt | cut -d= -f2); echo "OVER=$O" >> "$GITHUB_ENV"
+          C=green; [ "$O" = 1 ] && C=red
+          python3 .github/scripts/kpc_status.py board "Storage keeper (weekly)" "$C" "$L" "HQ: over the line = decide (squash / move files); the keeper never rewrites main" || true
+      - name: Clean this repo (old artifacts, caches, stale bot branches)
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: python3 .github/scripts/kpc_storage_keeper.py clean || true
+      - name: Save (status only)
+        continue-on-error: true
+        run: |
+          git add data/status 2>/dev/null; git diff --cached --quiet && exit 0
+          git commit -qm 'storage keeper: weekly sizes'; for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done; true
+      - name: "Over the line? (the only red end = one email)"
+        if: ${{ env.OVER == '1' }}
+        run: |
+          echo "::error title=STORAGE WARNING::a repo is over its storage line, see the status board"
+          exit 1
