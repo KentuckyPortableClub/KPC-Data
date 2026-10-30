@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-US-9378.json",
+ "id": "10-auto-US-9378",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "US-9378",
+  "name": "Casey Jones State Trail",
+  "agency": "",
+  "url": "https://files.dnr.state.mn.us/maps/state_trails/casey_jones.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-10-30 11:37Z",
+ "results": [
+  {
+   "url": "https://files.dnr.state.mn.us/maps/state_trails/casey_jones.pdf",
+   "map_url": "https://files.dnr.state.mn.us/maps/state_trails/casey_jones.pdf",
+   "saved": [
+    "maps/US-9378_casey-jones-state-trail.jpg"
+   ],
+   "bytes": 306446,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
