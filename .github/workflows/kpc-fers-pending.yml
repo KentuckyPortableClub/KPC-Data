@@ -99,6 +99,12 @@ jobs:
           import json, os, subprocess
           try: done = json.load(open('links/.claude/build/research/fable-state-done.json'))
           except Exception: done = {}
+          # HQ Oct 30 6:55 AM: also read the Fable file's own 'STATE XX DONE' lines (chats 3 / 8 write them there): no hand step
+          import re
+          try:
+              for m_ in re.finditer(r'STATE\s+(?:US-)?([A-Z]{2})\s+DONE', open('links/.claude/build/research/KPC_MissingBoundaries_ForFable_desk.md', encoding='utf-8').read()):
+                  if m_.group(1) != 'XX': done.setdefault('US-' + m_.group(1), {'by': 'Fable file line'})   # 'STATE XX DONE' = the instruction text itself
+          except Exception: pass
           NK = 'data/fers/new-key-states.json'
           nk = json.load(open(NK)); have = set(nk.get('states') or [])
           HOLD = {'US-AK', 'US-KY'}
