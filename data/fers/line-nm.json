@@ -1,0 +1,58 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "nm",
+ "states": [
+  "US-NM"
+ ],
+ "since": "2026-10-30",
+ "date": "2026-10-30 05:42 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
+ "known_answers": "19/19 on 2026-10-30",
+ "missing_check": {
+  "FOUND": 24,
+  "DROPPED": 73,
+  "NEVER LOOKED AT": 450
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-30",
+   "pairs tested": 175,
+   "pairs whose boxes touch": 175
+  },
+  "pass2": {
+   "agree with the pass before": 169,
+   "date": "2026-10-30",
+   "pairs tested": 41
+  },
+  "pass3": {
+   "agree with the pass before": 82,
+   "date": "2026-10-30",
+   "pairs tested": 41
+  },
+  "pass5": {
+   "checked": 14,
+   "date": "2026-10-30",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-NM": "data/fers/US-NM.json"
+ },
+ "US-NM": {
+  "rows": 183,
+  "live": 24,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "the agency ownership map did not answer": 2
+  },
+  "dropped": 105,
+  "merged": 52
+ },
+ "states_ready": [
+  "US-NM"
+ ],
+ "states_held": []
+}

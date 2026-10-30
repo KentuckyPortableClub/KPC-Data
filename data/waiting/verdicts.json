@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-30T05:38Z",
+ "checked": "2026-10-30T05:42Z",
  "switched_on": false,
  "results": [
   {
@@ -19,10 +19,11 @@
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/US-CO.json",
+   "path": "data/fers/US-NM.json",
    "kind": "fers",
    "why": [
-    "F-2 NOT SURE 6 -> 3 (over 30% change)"
+    "F-2 only 5 of 9 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
+    "F-2 18 new candidate pairs since the live file (over 10% of 9): a person looks at them first, e.g. US-0012+US-4516, US-0678+US-4517, US-0752+US-4579"
    ],
    "notes": [],
    "verdict": "HOLD"
