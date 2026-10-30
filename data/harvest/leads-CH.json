@@ -1,8 +1,8 @@
 {
  "about": "World harvester leads for Switzerland (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "CH",
- "date": "2026-10-29",
- "status": "done",
+ "date": "2026-10-30",
+ "status": "started",
  "steps_done": [
   "known",
   "servers",
@@ -14,28 +14,7 @@
   "B": 0,
   "C": 0
  },
- "failures": [
-  {
-   "catalog": "https://opendata.swiss",
-   "keyword": "Nationalpark",
-   "error": "Expecting value: line 1 column 1 (char 0)"
-  },
-  {
-   "catalog": "https://opendata.swiss",
-   "keyword": "Naturpark",
-   "error": "Expecting value: line 1 column 1 (char 0)"
-  },
-  {
-   "catalog": "https://opendata.swiss",
-   "keyword": "Pärke",
-   "error": "Expecting value: line 1 column 1 (char 0)"
-  },
-  {
-   "catalog": "https://opendata.swiss",
-   "keyword": "Schutzgebiet",
-   "error": "Expecting value: line 1 column 1 (char 0)"
-  }
- ],
+ "failures": [],
  "rejected_orgs": [],
  "known_good_found": [],
  "known_good_missed": [

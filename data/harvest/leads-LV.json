@@ -1,7 +1,7 @@
 {
  "about": "World harvester leads for Latvia (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "LV",
- "date": "2026-10-28",
+ "date": "2026-10-30",
  "status": "done",
  "steps_done": [
   "known",
@@ -16,9 +16,48 @@
  "bands": {
   "A": 0,
   "B": 0,
-  "C": 0
+  "C": 1
  },
+ "failures": [],
+ "rejected_orgs": [
+  [
+   [
+    "?",
+    1
+   ]
+  ],
+  [
+   [
+    "?",
+    7
+   ]
+  ]
+ ],
  "known_good_found": [],
  "known_good_missed": [],
- "leads": {}
+ "known_log": [],
+ "leads": {
+  "dl:fa50b0fb-04f2-452f-ade9-f8448d94eefa": {
+   "url": "https://data.gov.lv/dati/dataset/mikroliegumi",
+   "cc": "LV",
+   "title": "Mikroliegumi",
+   "publisher": "Dabas aizsardzības pārvalde",
+   "catalog": "catalog data.gov.lv",
+   "licence": "CC0 1.0",
+   "date": "2026-07-24",
+   "found": "2026-10-30",
+   "gaps": [
+    "outline?"
+   ],
+   "kind": "download, needs a loader",
+   "formats": [
+    "SHP",
+    "gdb"
+   ],
+   "layers": [],
+   "grade": 2,
+   "band": "C",
+   "note": "a file, not a service: chat 8 decides if it is worth a loader"
+  }
+ }
 }

@@ -4067,7 +4067,13 @@
       "shape",
       "st_perimeter(shape)"
      ],
-     "records": 14
+     "records": 14,
+     "sample": [
+      "GREAT SOUTHERN",
+      "GOLDFIELDS/MIDLANDS",
+      "MIDWEST GASCOYNE"
+     ],
+     "name_field": "name"
     },
     {
      "id": 3,
@@ -4127,7 +4133,32 @@
       "st_area(shape)",
       "st_perimeter(shape)"
      ],
-     "records": 1
+     "records": 1,
+     "sample": [
+      "Cockburn Sound Management Council Boundary"
+     ],
+     "name_field": "boundary_name"
+    },
+    {
+     "id": 7,
+     "name": "DBCA District Boundaries (DBCA-023)",
+     "geom": "Polygon",
+     "gap": "area",
+     "is": "named area polygons (no park word: never band A)",
+     "fields": [
+      "objectid",
+      "ddt_district_name",
+      "ddt_office",
+      "shape",
+      "st_perimeter(shape)"
+     ],
+     "records": 17,
+     "sample": [
+      "ALBANY",
+      "BLACKWOOD",
+      "DONNELLY"
+     ],
+     "name_field": "ddt_district_name"
     },
     {
      "id": 38,
@@ -4201,34 +4232,6 @@
       "PORT OF BALLA BALLA",
       "VARANUS ISLAND PORT AUTHORITY",
       "WYNDHAM PORT AUTHORITY"
-     ],
-     "name_field": "name"
-    },
-    {
-     "id": 13,
-     "name": "Townsites (LGATE-248)",
-     "geom": "Polygon",
-     "gap": "area",
-     "is": "named area polygons (no park word: never band A)",
-     "fields": [
-      "objectid",
-      "boundary_id",
-      "type_code",
-      "type_description",
-      "feature_number",
-      "name",
-      "abs_lga_number",
-      "postcode",
-      "land_area",
-      "area_derivation",
-      "shape",
-      "st_perimeter(shape)"
-     ],
-     "records": 636,
-     "sample": [
-      "EJANDING",
-      "KULJA",
-      "KUNJIN"
      ],
      "name_field": "name"
     }
@@ -5477,63 +5480,49 @@
      "records": 213
     },
     {
-     "id": 0,
-     "name": "Forest Blocks (DBCA-025)",
+     "id": 76,
+     "name": "Regional Forest Agreement (RFA) Boundary (DBCA-081)",
      "geom": "Polygon",
      "gap": "outline",
      "is": "park / protected-area polygons (no name field seen)",
      "fields": [
       "objectid",
-      "sfb_block",
+      "rfa_type",
       "shape",
+      "st_area(shape)",
       "st_perimeter(shape)"
      ],
-     "records": 772
+     "records": 1
     },
     {
-     "id": 1,
-     "name": "Forest Disease Risk Areas (DBCA-024)",
+     "id": 28,
+     "name": "Walpole Wilderness Peat Wetlands - Unreviewed (DBCA-042)",
      "geom": "Polygon",
      "gap": "outline",
      "is": "park / protected-area polygons (no name field seen)",
      "fields": [
       "objectid",
-      "dra_text",
+      "www_poly_id",
+      "www_area_m2",
       "shape",
       "st_perimeter(shape)"
      ],
-     "records": 18
+     "records": 454
     },
     {
-     "id": 2,
-     "name": "Fish Habitat Protection Areas (DPIRD-049)",
+     "id": 29,
+     "name": "Geomorphic Wetlands Leeuwin Naturaliste Ridge and Donnybrook to Nannup",
      "geom": "Polygon",
      "gap": "outline",
-     "is": "park / protected-area polygons with a name field",
+     "is": "park / protected-area polygons (no name field seen)",
      "fields": [
       "objectid",
-      "name",
-      "act",
-      "comments",
-      "ufi",
-      "order_type",
-      "ord_notice",
-      "slp_amend",
-      "legal",
-      "descript",
-      "link",
-      "label",
-      "symbology",
+      "wgl_boundary_comments",
+      "wgl_wetlands_classification",
       "shape",
       "st_perimeter(shape)"
      ],
-     "records": 6,
-     "sample": [
-      "Point Quobba Fish Habitat Protection Area",
-      "Abrolhos Islands Fish Habitat Protection Area",
-      "Cottesloe Reef Fish Habitat Protection Area"
-     ],
-     "name_field": "name"
+     "records": 934
     }
    ],
    "note": "",
@@ -7508,7 +7497,13 @@
       "area_km",
       "st_perimeter(shape)"
      ],
-     "records": 73
+     "records": 73,
+     "sample": [
+      "Moore River to Ledge",
+      "Cliff Head to Leander Point",
+      "Fisherman Islands to South Illawong"
+     ],
+     "name_field": "cell_name"
     },
     {
      "id": 30,
@@ -7598,13 +7593,7 @@
       "area_km",
       "st_perimeter(shape)"
      ],
-     "records": 73,
-     "sample": [
-      "Moore River to Ledge",
-      "Cliff Head to Leander Point",
-      "Fisherman Islands to South Illawong"
-     ],
-     "name_field": "cell_name"
+     "records": 73
     },
     {
      "id": 30,
@@ -7848,6 +7837,42 @@
     "outline"
    ],
    "layers": [
+    {
+     "id": 177,
+     "name": "Protected_areas",
+     "geom": "Polygon",
+     "gap": "outline",
+     "is": "known-good layer (chat 8)",
+     "fields": [
+      "OBJECTID",
+      "LOT",
+      "PLAN_",
+      "LOTPLAN",
+      "SYSINTCODE",
+      "ESTATENAME",
+      "NAMEABBREV",
+      "NAME_CAPS",
+      "EST_TYPE",
+      "EST_TENURE",
+      "LEGISLATED",
+      "GAZ_AREAHA",
+      "ZONE",
+      "IUCN_CODE",
+      "GLR_NUMBER",
+      "QPWS_REG",
+      "CURGAZDATE",
+      "SHIRE",
+      "FEAT_NAME_",
+      "PA_AREAHA"
+     ],
+     "records": 1926,
+     "sample": [
+      "Melsonby (Gaarraay) National Park (Cape York Penin",
+      "Daintree National Park (Cape York Peninsula Aborig",
+      "Daintree National Park (Cape York Peninsula Aborig"
+     ],
+     "name_field": "ESTATENAME"
+    },
     {
      "id": 177,
      "name": "Protected_areas",
