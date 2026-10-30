@@ -13,6 +13,7 @@ on:
     - cron: '41 1 * * *'
 permissions:
   contents: write
+  actions: write
 concurrency:
   group: kpc-copy-from-links
   cancel-in-progress: false
@@ -50,4 +51,14 @@ jobs:
           echo "::notice title=Step B3 copy::$(du -sh kpcdata/data | cut -f1) in kpcdata/data"
       - name: Save (once)
         continue-on-error: true
-        run: bash links/.github/scripts/kpc_push_data.sh kpcdata "Site data copied from KPC-Links (Step B3)" data
+        run: |
+          (cd kpcdata && LINKS=../links python3 .github/scripts/kpc_hunter_trigger.py > /tmp/hunt.txt) || true; cat /tmp/hunt.txt || true
+          bash links/.github/scripts/kpc_push_data.sh kpcdata "Site data copied from KPC-Links (Step B3)" data
+      - name: The map key or the layer list changed, so the GIS hunter starts one full pass (Brandon Oct 29 11:50 PM)
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          R=$(grep -o '^RUN=.*' /tmp/hunt.txt 2>/dev/null) || exit 0
+          set -- $R; RUN=${1#RUN=}; THEN=${2#THEN=}; PASS=${3#PASS=}
+          gh api -X POST repos/${{ github.repository }}/actions/workflows/kpc-gis-hunter.yml/dispatches -f ref=main -f "inputs[country]=$RUN" -f 'inputs[chunks]=5' -f 'inputs[chain]=4' -f "inputs[pass]=$PASS" -f "inputs[then]=$THEN" || true
