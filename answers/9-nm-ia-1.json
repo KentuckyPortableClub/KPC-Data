@@ -1,0 +1,80 @@
+{
+ "request": "requests/9-nm-ia-1.json",
+ "id": "9-nm-ia-1",
+ "chat": 9,
+ "kind": "page",
+ "report": "NM IA: official page name check, 1 pages: page title, H1 / main heading, any official-name line, the agency, map / GIS / boundary links (text only)",
+ "asked": {
+  "chat": 9,
+  "kind": "page",
+  "report": "NM IA: official page name check, 1 pages: page title, H1 / main heading, any official-name line, the agency, map / GIS / boundary links (text only)",
+  "urls": [
+   "https://www.arcgis.com/apps/webappviewer/index.html?id=f9161b90cddb4fcfb35a96901882a4b7&query=Atlas_Web_Application_4143_1966%2CAREA_NAME%2CTEAL%20BASINS%20WPA"
+  ],
+  "refs": [
+   [
+    "US-9334",
+    "Teal Basins State Waterfowl Management Area"
+   ]
+  ]
+ },
+ "answered": "2026-10-30 01:48Z",
+ "results": [
+  {
+   "url": "https://www.arcgis.com/apps/webappviewer/index.html?id=f9161b90cddb4fcfb35a96901882a4b7&query=Atlas_Web_Application_4143_1966%2CAREA_NAME%2CTEAL%20BASINS%20WPA",
+   "status": 200,
+   "final_url": "https://www.arcgis.com/apps/webappviewer/index.html?id=f9161b90cddb4fcfb35a96901882a4b7&query=Atlas_Web_Application_4143_1966%2CAREA_NAME%2CTEAL%20BASINS%20WPA",
+   "title": "       Public Hunting Atlas",
+   "text": "Cerro Gordo County, Vantor | State of Iowa\nDNR Managed Public Hunting Area\nArea Name TEAL BASINS WPA\nAcres 151\nHabitat 1/5 Marsh, 4/5 Upland\nSpecies Pheasant, Waterfowl\nNon-toxic shot required for upland hunting? Yes\nContact Clear Lake Wildlife Unit\nContact Phone Number 641-829-3285\nMore Information More info\nZoom to\n300ft\nMove mouse to get coordinates\n+\n–\nThe layer, LiDAR_Color_Hillshade, cannot be added to the map.\nOK\nThe Iowa Hunting Atlas was designed to make it easier for hunters to locate areas that are open to public hunting. Every attempt has been made to accurately depict the boundaries and information in this map.\nPlease be advised that your use of this application may result in data charges imposed by your mobile network operator or your internet service provider.\nUsers must acknowledge the following:\nHunters should rely on boundary signs actually located on these areas to ensure they do not trespass onto private property that has not been opened to public hunting,\nHunters must verify that hunting is allowed on the area by reading the signs that are posted,\nHunters must ensure that they understand applicable hunting regulations, and\nHunters should help to maintain these publicly accessible areas by not littering and respecting other users of these areas.\nI agree to the above terms and conditions\nOK\nHeader Controller\nPublic Hunting Atlas\n...helping you scout out places to hunt in Iowa\nSkip to Header Controller\nSkip to Map",
+   "links": [
+    {
+     "url": "http://www.iowadnr.gov/Hunting/PlacestoHuntShoot/WildlifeManagementAreas.aspx",
+     "text": "More info"
+    },
+    {
+     "url": "https://www.iowadnr.gov/",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/apps/webappviewer/index.html?id=f9161b90cddb4fcfb35a96901882a4b7&query=Atlas_Web_Application_4143_1966%2CAREA_NAME%2CTEAL%20BASINS%20WPA#",
+     "text": "Sign in to null"
+    },
+    {
+     "url": "https://www.arcgis.com/apps/webappviewer/index.html?id=f9161b90cddb4fcfb35a96901882a4b7&query=Atlas_Web_Application_4143_1966%2CAREA_NAME%2CTEAL%20BASINS%20WPA",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/apps/webappviewer/index.html?id=f9161b90cddb4fcfb35a96901882a4b7&query=Atlas_Web_Application_4143_1966%2CAREA_NAME%2CTEAL%20BASINS%20WPA#",
+     "text": "Sign Out"
+    },
+    {
+     "url": "https://www.google.com/chrome/",
+     "text": ""
+    },
+    {
+     "url": "https://www.mozilla.org/firefox/",
+     "text": ""
+    },
+    {
+     "url": "https://www.apple.com/safari/",
+     "text": ""
+    },
+    {
+     "url": "https://www.microsoft.com/edge",
+     "text": ""
+    }
+   ],
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 5,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK, 0 screenshot(s)"
+}
