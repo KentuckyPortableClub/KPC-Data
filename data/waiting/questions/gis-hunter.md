@@ -1,6 +1,6 @@
 # GIS hunter questions for chat 11
 
-318 candidates, 318 open. Answer in gis-hunter.json.
+318 candidates: 67 YES, 208 NO, 43 NOT SURE (chat 11, Oct 30). Answer in gis-hunter.json.
 
 | area | park | kind | official record | ~acres | answer | links |
 |---|---|---|---|---|---|---|

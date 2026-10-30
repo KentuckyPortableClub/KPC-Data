@@ -1,7 +1,7 @@
 {
  "about": "GIS hunter candidates (Rule G R-G7 steps 2-3): chat 11 answers YES / NO + checked_by + how (the agency map looked at); chat 2 rechecks (G-4) and joins in the key. 'name mismatch' = the official record's name differs from POTA's.",
  "built": "2026-10-30",
- "open": 318,
+ "open": 43,
  "questions": [
   {
    "area": "US-IA",
@@ -16,9 +16,9 @@
    "record_link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9/query?objectIds=544&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-9334",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -34,9 +34,9 @@
    "record_link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=106299&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-9334",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -52,9 +52,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3710&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-9334",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -70,9 +70,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=4644&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-9334",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -88,9 +88,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=225338&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-6462",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -106,9 +106,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=74542&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-0620",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -124,9 +124,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=249818&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-0620",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -142,9 +142,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=74544&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-0621",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -160,9 +160,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=249819&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-0621",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -178,9 +178,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=75757&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-0622",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -196,9 +196,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=250668&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-0622",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -214,9 +214,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=74602&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-0623",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -232,9 +232,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=249881&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-0623",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -250,9 +250,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=203098&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-4568",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -268,9 +268,9 @@
    "record_link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=325&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-10687",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -287,8 +287,8 @@
    "pota_link": "https://pota.app/#/park/US-10540",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -305,8 +305,8 @@
    "pota_link": "https://pota.app/#/park/US-10540",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -322,9 +322,9 @@
    "record_link": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2/query?objectIds=1244&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-9683",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -340,9 +340,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3538&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-0655",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -358,9 +358,9 @@
    "record_link": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5/query?objectIds=233&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-4839",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -376,9 +376,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=210771&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-4839",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -394,9 +394,9 @@
    "record_link": "https://gis.dnr.mo.gov/server/rest/services/parks/Missouri_State_Parks_Boundaries/FeatureServer/0/query?objectIds=1589&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-5715",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the record is a different place (name differs from the park) (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -412,9 +412,9 @@
    "record_link": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/ArcGIS/rest/services/Connecticut_DEEP_Property/FeatureServer/0/query?objectIds=4215&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-7547",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -431,8 +431,8 @@
    "pota_link": "https://pota.app/#/park/US-1021",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -449,8 +449,8 @@
    "pota_link": "https://pota.app/#/park/US-10391",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -467,8 +467,8 @@
    "pota_link": "https://pota.app/#/park/US-10391",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -484,9 +484,9 @@
    "record_link": "https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/IllinoisProtectedLandsDH_1_22/FeatureServer/0/query?objectIds=1712&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-10661",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -502,9 +502,9 @@
    "record_link": "https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/IllinoisProtectedLandsDH_1_22/FeatureServer/0/query?objectIds=1150&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-10788",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the record is a different place (name differs from the park) (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -520,9 +520,9 @@
    "record_link": "https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/IllinoisProtectedLandsDH_1_22/FeatureServer/0/query?objectIds=1214&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-12640",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the record is a different place (name differs from the park) (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -538,9 +538,9 @@
    "record_link": "https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/IllinoisProtectedLandsDH_1_22/FeatureServer/0/query?objectIds=1422&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13298",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the record is a different place (name differs from the park) (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -556,9 +556,9 @@
    "record_link": "https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/IllinoisProtectedLandsDH_1_22/FeatureServer/0/query?objectIds=1404&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-4118",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the record is a different place (name differs from the park) (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -574,9 +574,9 @@
    "record_link": "https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/IllinoisProtectedLandsDH_1_22/FeatureServer/0/query?objectIds=1080&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-4153",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -592,9 +592,9 @@
    "record_link": "https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/IllinoisProtectedLandsDH_1_22/FeatureServer/0/query?objectIds=1080&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-4154",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -610,9 +610,9 @@
    "record_link": "https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/FeatureServer/0/query?objectIds=319&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-10751",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -628,9 +628,9 @@
    "record_link": "https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/FeatureServer/0/query?objectIds=334&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11231",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -646,9 +646,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=56574&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11231",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -664,9 +664,9 @@
    "record_link": "https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/FeatureServer/0/query?objectIds=132&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13564",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -682,9 +682,9 @@
    "record_link": "https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/FeatureServer/0/query?objectIds=406&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13564",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -701,8 +701,8 @@
    "pota_link": "https://pota.app/#/park/US-7768",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -718,9 +718,9 @@
    "record_link": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6/query?objectIds=3007&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-8021",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -736,9 +736,9 @@
    "record_link": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3/query?objectIds=791&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-8021",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -754,9 +754,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=56874&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-8021",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -772,9 +772,9 @@
    "record_link": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2/query?objectIds=1176&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-0971",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the record is a different place (name differs from the park) (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -790,9 +790,9 @@
    "record_link": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1/query?objectIds=302&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-6431",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -808,9 +808,9 @@
    "record_link": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0/query?objectIds=709260&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-10644",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -826,9 +826,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=272794&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-10644",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -844,9 +844,9 @@
    "record_link": "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38/query?objectIds=15&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-3100",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -862,9 +862,9 @@
    "record_link": "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38/query?objectIds=445&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-3118",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the record is a different place (name differs from the park) (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -880,9 +880,9 @@
    "record_link": "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38/query?objectIds=447&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-3121",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the record is a different place (name differs from the park) (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -898,9 +898,9 @@
    "record_link": "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38/query?objectIds=15&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-3122",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -916,9 +916,9 @@
    "record_link": "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38/query?objectIds=15&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-3135",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -934,9 +934,9 @@
    "record_link": "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38/query?objectIds=15&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-3139",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -952,9 +952,9 @@
    "record_link": "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38/query?objectIds=15&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-3142",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -970,9 +970,9 @@
    "record_link": "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38/query?objectIds=13&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-3144",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -988,9 +988,9 @@
    "record_link": "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38/query?objectIds=15&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-3145",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -1006,9 +1006,9 @@
    "record_link": "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38/query?objectIds=13&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-3149",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -1024,9 +1024,9 @@
    "record_link": "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38/query?objectIds=13&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-3150",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -1043,8 +1043,8 @@
    "pota_link": "https://pota.app/#/park/US-3375",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -1060,9 +1060,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=118464&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-4036",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -1078,9 +1078,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=117508&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-5656",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -1096,9 +1096,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=4183&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-2200",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -1114,9 +1114,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=5138&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-2200",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -1132,9 +1132,9 @@
    "record_link": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/ArcGIS/rest/services/State_Parks_Boundary/FeatureServer/0/query?objectIds=4&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-3724",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the record is a different place (name differs from the park) (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -1150,9 +1150,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=201861&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-3791",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -1169,8 +1169,8 @@
    "pota_link": "https://pota.app/#/park/US-4648",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -1187,8 +1187,8 @@
    "pota_link": "https://pota.app/#/park/US-4648",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -1205,8 +1205,8 @@
    "pota_link": "https://pota.app/#/park/US-4648",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -1223,8 +1223,8 @@
    "pota_link": "https://pota.app/#/park/US-7140",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -1240,9 +1240,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=2529&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-7471",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -1258,9 +1258,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=2572&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11218",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -1276,9 +1276,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=211523&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-12827",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -1294,9 +1294,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=167506&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11981",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -1313,8 +1313,8 @@
    "pota_link": "https://pota.app/#/park/US-12162",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -1330,9 +1330,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=85&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-6071",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -1348,9 +1348,9 @@
    "record_link": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Hatchery_Polys/FeatureServer/0/query?objectIds=6&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-7383",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -1366,9 +1366,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=2756&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-7383",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -1385,8 +1385,8 @@
    "pota_link": "https://pota.app/#/park/US-4208",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -1402,9 +1402,9 @@
    "record_link": "https://vcris.dhr.virginia.gov/arcgis/rest/services/dhr/dhr_public/MapServer/3/query?objectIds=1599328&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-8204",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -1420,9 +1420,9 @@
    "record_link": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/VAConservationLands/FeatureServer/0/query?objectIds=490554&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-9897",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -1439,8 +1439,8 @@
    "pota_link": "https://pota.app/#/park/US-9897",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -1456,9 +1456,9 @@
    "record_link": "https://vcris.dhr.virginia.gov/arcgis/rest/services/dhr/dhr_public/MapServer/3/query?objectIds=1770920&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-9897",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -1474,9 +1474,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3195&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-9897",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -1492,9 +1492,9 @@
    "record_link": "https://vcris.dhr.virginia.gov/arcgis/rest/services/dhr/dhr_public/MapServer/3/query?objectIds=778424&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-9900",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -1510,9 +1510,9 @@
    "record_link": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0/query?objectIds=101&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-0896",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -1528,9 +1528,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=191780&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-0896",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -1546,9 +1546,9 @@
    "record_link": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0/query?objectIds=51&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-3621",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the record is a different place (name differs from the park) (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -1564,9 +1564,9 @@
    "record_link": "https://services1.arcgis.com/59dBAbzYnRk8johU/arcgis/rest/services/SRWMD_LM_Ownership/FeatureServer/0",
    "pota_link": "https://pota.app/#/park/US-8696",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -1575,16 +1575,16 @@
    "park": "Simon Canyon ACEC BLM Special Recreation Management Area",
    "kind": "name match",
    "record": 14029,
-   "record_name": "Simón Canyon (Recreation Area)",
+   "record_name": "Sim\u00f3n Canyon (Recreation Area)",
    "acres_approx": 3888,
    "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
    "agency": "BLM recreation SITE polygons (national, 3,478)",
    "record_link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=14029&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11807",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -1600,9 +1600,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1693&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11807",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -1618,9 +1618,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=80742&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11823",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -1636,9 +1636,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1668&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-7876",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -1655,8 +1655,8 @@
    "pota_link": "https://pota.app/#/park/US-8618",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -1672,9 +1672,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=166719&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-0042",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -1690,9 +1690,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=1811&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13003",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -1708,9 +1708,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=1807&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13004",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -1726,9 +1726,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=1806&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13005",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -1744,9 +1744,9 @@
    "record_link": "https://conservationgis.alabama.gov/adcnrweb/rest/services/StateParks/MapServer/0/query?objectIds=9&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13083",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -1762,9 +1762,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=1818&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13083",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -1780,9 +1780,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=1816&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13311",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -1798,9 +1798,9 @@
    "record_link": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2/query?objectIds=935&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-0778",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -1816,9 +1816,9 @@
    "record_link": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0/query?objectIds=487&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-2081",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the record is a different place (name differs from the park) (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -1834,9 +1834,9 @@
    "record_link": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0/query?objectIds=594&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-2151",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the record is a different place (name differs from the park) (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -1852,9 +1852,9 @@
    "record_link": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2/query?objectIds=928&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-8061",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the record is a different place (name differs from the park) (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -1870,9 +1870,9 @@
    "record_link": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0/query?objectIds=540&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-8064",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the record is a different place (name differs from the park) (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -1888,9 +1888,9 @@
    "record_link": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2/query?objectIds=920&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-8081",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -1906,9 +1906,9 @@
    "record_link": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2/query?objectIds=920&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-8082",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -1924,9 +1924,9 @@
    "record_link": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2/query?objectIds=920&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-8083",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -1942,9 +1942,9 @@
    "record_link": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2/query?objectIds=920&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-8084",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -1960,9 +1960,9 @@
    "record_link": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2/query?objectIds=920&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-8085",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -1978,9 +1978,9 @@
    "record_link": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2/query?objectIds=920&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-8086",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -1996,9 +1996,9 @@
    "record_link": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2/query?objectIds=920&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-8087",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -2014,9 +2014,9 @@
    "record_link": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2/query?objectIds=920&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-8088",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -2032,9 +2032,9 @@
    "record_link": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2/query?objectIds=920&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-8089",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -2050,9 +2050,9 @@
    "record_link": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2/query?objectIds=920&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-8090",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -2068,9 +2068,9 @@
    "record_link": "https://kanplan.ksdot.gov/arcgis_web_adaptor/rest/services/Boundaries/State_Park_Area/MapServer/0/query?objectIds=577&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-2334",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the record is a different place (name differs from the park) (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -2086,9 +2086,9 @@
    "record_link": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0/query?objectIds=78&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-7393",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -2104,9 +2104,9 @@
    "record_link": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0/query?objectIds=18&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-7393",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -2122,9 +2122,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=2482&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-7393",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -2140,9 +2140,9 @@
    "record_link": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0/query?objectIds=63&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-7405",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -2158,9 +2158,9 @@
    "record_link": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0/query?objectIds=98&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-7405",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -2176,9 +2176,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=2481&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-7405",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -2195,8 +2195,8 @@
    "pota_link": "https://pota.app/#/park/US-9187",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -2212,9 +2212,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=608&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-10400",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -2230,9 +2230,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=498&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11336",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -2248,9 +2248,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=568&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11580",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -2267,8 +2267,8 @@
    "pota_link": "https://pota.app/#/park/US-11584",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -2284,9 +2284,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=10841&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-12957",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -2302,9 +2302,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=497&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13334",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -2320,9 +2320,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=648&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13499",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -2338,9 +2338,9 @@
    "record_link": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSApproved_Authoritative/FeatureServer/0/query?objectIds=715&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-3578",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -2356,9 +2356,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=4397&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-3578",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -2375,8 +2375,8 @@
    "pota_link": "https://pota.app/#/park/US-6448",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -2393,8 +2393,8 @@
    "pota_link": "https://pota.app/#/park/US-6448",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -2410,9 +2410,9 @@
    "record_link": "https://services.arcgis.com/8df8p0NlLFEShl0r/ArcGIS/rest/services/MN_State_Parks_and_Recreation_Areas/FeatureServer/2/query?objectIds=75&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-12377",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the record is a different place (name differs from the park) (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -2428,9 +2428,9 @@
    "record_link": "https://services.arcgis.com/8df8p0NlLFEShl0r/ArcGIS/rest/services/MN_State_Parks_and_Recreation_Areas/FeatureServer/2/query?objectIds=2&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-9384",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -2446,9 +2446,9 @@
    "record_link": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/plan_stateland_dnr/FeatureServer/10/query?objectIds=11006&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-9384",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -2464,9 +2464,9 @@
    "record_link": "https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0/query?objectIds=3872&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-10263",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the record is a different place (name differs from the park) (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -2482,9 +2482,9 @@
    "record_link": "https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0/query?objectIds=6597&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-10399",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -2500,9 +2500,9 @@
    "record_link": "https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0/query?objectIds=3491&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-10406",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the record is a different place (name differs from the park) (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -2518,9 +2518,9 @@
    "record_link": "https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0/query?objectIds=6597&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11238",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -2536,9 +2536,9 @@
    "record_link": "https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0/query?objectIds=215&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-12119",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -2554,9 +2554,9 @@
    "record_link": "https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0/query?objectIds=13377&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-12320",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -2572,9 +2572,9 @@
    "record_link": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/gamelands_general/FeatureServer/21/query?objectIds=96&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-12320",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -2590,9 +2590,9 @@
    "record_link": "https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0/query?objectIds=215&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-12371",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -2608,9 +2608,9 @@
    "record_link": "https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0/query?objectIds=215&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-12414",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -2626,9 +2626,9 @@
    "record_link": "https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0/query?objectIds=5870&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-12662",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -2645,8 +2645,8 @@
    "pota_link": "https://pota.app/#/park/US-3862",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -2663,8 +2663,8 @@
    "pota_link": "https://pota.app/#/park/US-3862",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -2681,8 +2681,8 @@
    "pota_link": "https://pota.app/#/park/US-3862",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -2699,8 +2699,8 @@
    "pota_link": "https://pota.app/#/park/US-3862",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -2717,8 +2717,8 @@
    "pota_link": "https://pota.app/#/park/US-3862",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -2734,9 +2734,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=214405&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-3863",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -2752,9 +2752,9 @@
    "record_link": "https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0/query?objectIds=6215&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-8010",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -2770,9 +2770,9 @@
    "record_link": "https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0/query?objectIds=5877&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-8011",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -2789,8 +2789,8 @@
    "pota_link": "https://pota.app/#/park/US-0694",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -2807,8 +2807,8 @@
    "pota_link": "https://pota.app/#/park/US-12315",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -2824,9 +2824,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=271379&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-12403",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -2842,9 +2842,9 @@
    "record_link": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0",
    "pota_link": "https://pota.app/#/park/US-13383",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -2861,8 +2861,8 @@
    "pota_link": "https://pota.app/#/park/US-13516",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -2879,8 +2879,8 @@
    "pota_link": "https://pota.app/#/park/US-4555",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -2896,9 +2896,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=1797&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-4555",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -2915,8 +2915,8 @@
    "pota_link": "https://pota.app/#/park/US-5565",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -2933,8 +2933,8 @@
    "pota_link": "https://pota.app/#/park/US-5568",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -2951,8 +2951,8 @@
    "pota_link": "https://pota.app/#/park/US-5569",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -2969,8 +2969,8 @@
    "pota_link": "https://pota.app/#/park/US-5571",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -2986,9 +2986,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=2916&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-5572",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -3005,8 +3005,8 @@
    "pota_link": "https://pota.app/#/park/US-5576",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -3022,9 +3022,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=138321&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-8663",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -3040,9 +3040,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=1368&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-0877",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -3058,9 +3058,9 @@
    "record_link": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2/query?objectIds=1197&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-0878",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -3076,9 +3076,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3294&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-0878",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -3094,9 +3094,9 @@
    "record_link": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2/query?objectIds=1218&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-0879",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -3112,9 +3112,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3315&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-0879",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -3130,9 +3130,9 @@
    "record_link": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2/query?objectIds=1214&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-0889",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -3148,9 +3148,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3310&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-0889",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -3166,9 +3166,9 @@
    "record_link": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2/query?objectIds=122&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-10464",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -3184,9 +3184,9 @@
    "record_link": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2/query?objectIds=122&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-10464",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -3202,9 +3202,9 @@
    "record_link": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2/query?objectIds=122&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-10464",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -3220,9 +3220,9 @@
    "record_link": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0/query?objectIds=1814&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11244",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -3238,9 +3238,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=11370&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11800",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -3256,9 +3256,9 @@
    "record_link": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0/query?objectIds=304&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11830",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -3274,9 +3274,9 @@
    "record_link": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0/query?objectIds=304&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11831",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -3292,9 +3292,9 @@
    "record_link": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0/query?objectIds=304&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11832",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -3310,9 +3310,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1734&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11833",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -3328,9 +3328,9 @@
    "record_link": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0/query?objectIds=346&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11835",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -3346,9 +3346,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=165808&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11835",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -3364,9 +3364,9 @@
    "record_link": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2/query?objectIds=37&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-7208",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -3382,9 +3382,9 @@
    "record_link": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2/query?objectIds=37&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-7208",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -3400,9 +3400,9 @@
    "record_link": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2/query?objectIds=37&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-7208",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -3418,9 +3418,9 @@
    "record_link": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2/query?objectIds=37&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-7209",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -3436,9 +3436,9 @@
    "record_link": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2/query?objectIds=37&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-7209",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -3454,9 +3454,9 @@
    "record_link": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2/query?objectIds=37&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-7209",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -3472,9 +3472,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3074&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13169",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -3490,9 +3490,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3609&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-6666",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -3508,9 +3508,9 @@
    "record_link": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2/query?objectIds=120&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-6713",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -3526,9 +3526,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=4442&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-6713",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -3544,9 +3544,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=5399&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-6713",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -3563,8 +3563,8 @@
    "pota_link": "https://pota.app/#/park/US-6796",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -3580,9 +3580,9 @@
    "record_link": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2/query?objectIds=145&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-7854",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -3598,9 +3598,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=71478&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-7854",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -3617,8 +3617,8 @@
    "pota_link": "https://pota.app/#/park/US-11165",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -3635,8 +3635,8 @@
    "pota_link": "https://pota.app/#/park/US-11165",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -3653,8 +3653,8 @@
    "pota_link": "https://pota.app/#/park/US-11352",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -3670,9 +3670,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3000&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-10258",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -3688,9 +3688,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=863&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11018",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -3706,9 +3706,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=116910&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11222",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -3724,9 +3724,9 @@
    "record_link": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0/query?objectIds=113&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11671",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -3742,9 +3742,9 @@
    "record_link": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1/query?objectIds=9&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11671",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -3760,9 +3760,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=2758&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11671",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -3778,9 +3778,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=312&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11778",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -3796,9 +3796,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=1595&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11778",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -3814,9 +3814,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=1585&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11864",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -3832,9 +3832,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=109&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-6342",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -3850,9 +3850,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=1586&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-8644",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -3869,8 +3869,8 @@
    "pota_link": "https://pota.app/#/park/US-10008",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -3886,9 +3886,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=2064&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-10008",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -3904,9 +3904,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1835&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-10023",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -3922,9 +3922,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=10853&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-10025",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -3940,9 +3940,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1935&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-10025",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -3958,9 +3958,9 @@
    "record_link": "https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0/query?objectIds=5132&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-10476",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -3976,9 +3976,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1816&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-10486",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -3994,9 +3994,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=11345&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-10488",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -4012,9 +4012,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1917&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-12462",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -4030,9 +4030,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=13530&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-12475",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -4048,9 +4048,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=2939&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-12978",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -4066,9 +4066,9 @@
    "record_link": "https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0/query?objectIds=2418&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-12988",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -4084,9 +4084,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1837&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13065",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -4102,9 +4102,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1815&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-9983",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -4120,9 +4120,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=292662&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-10829",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -4138,9 +4138,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=10710&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-10862",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -4156,9 +4156,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=11346&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-10863",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -4174,9 +4174,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=390&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-10883",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -4192,9 +4192,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=273814&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-10883",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -4210,9 +4210,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=273736&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-10893",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -4228,9 +4228,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=429&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-6162",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -4247,8 +4247,8 @@
    "pota_link": "https://pota.app/#/park/US-6184",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -4265,8 +4265,8 @@
    "pota_link": "https://pota.app/#/park/US-6185",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -4282,9 +4282,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=398&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-6186",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -4300,9 +4300,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1592&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-6193",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -4318,9 +4318,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1595&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-6199",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -4336,9 +4336,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=199838&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-10431",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -4354,9 +4354,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=199756&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11089",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -4372,9 +4372,9 @@
    "record_link": "https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Area_Poly/MapServer/0/query?objectIds=810&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11260",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -4390,9 +4390,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1194&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11282",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -4408,9 +4408,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=13878&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11308",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -4426,9 +4426,9 @@
    "record_link": "https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Area_Poly/MapServer/0/query?objectIds=850&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11308",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -4444,9 +4444,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=2306&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11308",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -4462,9 +4462,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=13901&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11310",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -4480,9 +4480,9 @@
    "record_link": "https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Area_Poly/MapServer/0/query?objectIds=845&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11310",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -4498,9 +4498,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=13910&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11328",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -4516,9 +4516,9 @@
    "record_link": "https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Area_Poly/MapServer/0/query?objectIds=856&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11328",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -4534,9 +4534,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=13749&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-12210",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -4553,8 +4553,8 @@
    "pota_link": "https://pota.app/#/park/US-12210",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -4570,9 +4570,9 @@
    "record_link": "https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Area_Poly/MapServer/0/query?objectIds=804&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-12210",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -4588,9 +4588,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=13893&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-12212",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -4606,9 +4606,9 @@
    "record_link": "https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Area_Poly/MapServer/0/query?objectIds=830&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-12212",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -4624,9 +4624,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=13897&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-12220",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -4642,9 +4642,9 @@
    "record_link": "https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Area_Poly/MapServer/0/query?objectIds=838&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-12220",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -4660,9 +4660,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=13921&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-12230",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -4678,9 +4678,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1123&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-12230",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -4696,9 +4696,9 @@
    "record_link": "https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Area_Poly/MapServer/0/query?objectIds=877&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-12230",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -4714,9 +4714,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=1937&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-12349",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -4732,9 +4732,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=13921&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13295",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -4750,9 +4750,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1123&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13295",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -4768,9 +4768,9 @@
    "record_link": "https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Area_Poly/MapServer/0/query?objectIds=877&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13295",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -4786,9 +4786,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=13897&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13577",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -4804,9 +4804,9 @@
    "record_link": "https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Area_Poly/MapServer/0/query?objectIds=838&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13577",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -4822,9 +4822,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=1935&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13577",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -4840,9 +4840,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=199787&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-2236",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -4858,9 +4858,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=199938&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-2238",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -4876,9 +4876,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=13893&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-7821",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -4894,9 +4894,9 @@
    "record_link": "https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Area_Poly/MapServer/0/query?objectIds=830&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-7821",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -4912,9 +4912,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1248&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13207",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -4930,9 +4930,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1243&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13222",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -4948,9 +4948,9 @@
    "record_link": "https://gis.blm.gov/nvarcgis/rest/services/BLM_Nevada_National_Landscape_Conservation_System/BLM_NV_National_Monument_National_Conservation_Area/MapServer/0/query?objectIds=4419&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13228",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -4966,9 +4966,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=2035&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13228",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -4984,9 +4984,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=230595&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13239",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -5002,9 +5002,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3508&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13241",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -5020,9 +5020,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=4282&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13248",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -5038,9 +5038,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=5239&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13248",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -5056,9 +5056,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=876&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13267",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -5074,9 +5074,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=2042&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13285",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -5092,9 +5092,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=10826&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13370",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -5110,9 +5110,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=804&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13410",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -5128,9 +5128,9 @@
    "record_link": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0/query?objectIds=563&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13482",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -5146,9 +5146,9 @@
    "record_link": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0",
    "pota_link": "https://pota.app/#/park/US-13482",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -5164,9 +5164,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=230144&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13482",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -5182,9 +5182,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=2039&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-13522",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -5200,9 +5200,9 @@
    "record_link": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/NDSP_State_Park_Bondaries/FeatureServer/1/query?objectIds=6&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-4438",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the record is a different place (name differs from the park) (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -5218,9 +5218,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1544&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-10987",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -5236,9 +5236,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=263950&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11090",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -5254,9 +5254,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=10819&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11117",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -5272,9 +5272,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=10818&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11176",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -5290,9 +5290,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1537&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11176",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -5308,9 +5308,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1540&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11193",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -5326,9 +5326,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1521&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-11763",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -5344,9 +5344,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=10016&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-12145",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -5362,9 +5362,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=10818&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-12150",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -5380,9 +5380,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1537&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-12150",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -5399,8 +5399,8 @@
    "pota_link": "https://pota.app/#/park/US-5759",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -5416,9 +5416,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=264277&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-5761",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -5434,9 +5434,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=10817&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-5797",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -5452,9 +5452,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=2103&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-5797",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -5470,9 +5470,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=14460&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-5800",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -5488,9 +5488,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=10818&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-5809",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -5506,9 +5506,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1537&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-5809",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -5524,9 +5524,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=9386&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-5819",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -5542,9 +5542,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=268643&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-5835",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -5560,9 +5560,9 @@
    "record_link": "https://gis.blm.gov/utarcgis/rest/services/Recreation/BLM_UT_RecAreas/MapServer/1/query?objectIds=57&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-5866",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -5578,9 +5578,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=9856&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-5866",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -5596,9 +5596,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1519&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-5866",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -5614,9 +5614,9 @@
    "record_link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=2107&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-5895",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -5632,9 +5632,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1506&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-5945",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -5650,9 +5650,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=9937&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-5981",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a different place or a different kind of unit, not the same park (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -5668,9 +5668,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1528&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-5998",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "YES",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "name agrees with the park, size fits, the agency record itself (names + acres only; map shape not seen)",
    "source": "gis-hunter"
   },
   {
@@ -5686,9 +5686,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=9145&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-6068",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: a much bigger parent area (forest, refuge, reservation or field office), not the park itself (names + acres only)",
    "source": "gis-hunter"
   },
   {
@@ -5705,8 +5705,8 @@
    "pota_link": "https://pota.app/#/park/US-6078",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
    "answer": null,
-   "checked_by": null,
-   "how": null,
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NOT SURE: plausible but a variant name, a part of the park, an unnamed record or a nested unit; needs the agency page/map; stays a pin",
    "source": "gis-hunter"
   },
   {
@@ -5722,9 +5722,9 @@
    "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?objectIds=1521&outFields=*&returnGeometry=false&f=html",
    "pota_link": "https://pota.app/#/park/US-6084",
    "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
-   "answer": null,
-   "checked_by": null,
-   "how": null,
+   "answer": "NO",
+   "checked_by": "chat 11 (Oct 29-30)",
+   "how": "NO: the same record is offered to several different parks (names + acres only)",
    "source": "gis-hunter"
   }
  ]
