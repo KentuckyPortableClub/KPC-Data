@@ -1,0 +1,686 @@
+{
+ "request": "requests/11-ns-us-23.json",
+ "id": "11-ns-us-23",
+ "chat": 11,
+ "kind": "map-check",
+ "report": "Chat 11 NOT SURE map check (us, US-WA): screenshots in order: 1=US-12551 (map); 2=US-12830 (map); 3=US-13516 (map); 4=US-13516 (map); 5=US-4555 (record); 6=US-4555 (map); 7=US-5565 (record); 8=US-5565 (map); 9=US-5568 (record); 10=US-5568 (map). The map shots are centred on the POTA pin (zoom 14).",
+ "asked": {
+  "chat": 11,
+  "kind": "map-check",
+  "screenshot": true,
+  "report": "Chat 11 NOT SURE map check (us, US-WA): screenshots in order: 1=US-12551 (map); 2=US-12830 (map); 3=US-13516 (map); 4=US-13516 (map); 5=US-4555 (record); 6=US-4555 (map); 7=US-5565 (record); 8=US-5565 (map); 9=US-5568 (record); 10=US-5568 (map). The map shots are centred on the POTA pin (zoom 14).",
+  "items": [
+   {
+    "ref": "US-12551",
+    "park": "Samish SWA",
+    "record": "",
+    "area": "US-WA"
+   },
+   {
+    "ref": "US-12830",
+    "park": "Old Ruby State Park Heritage Area",
+    "record": "",
+    "area": "US-WA"
+   },
+   {
+    "ref": "US-13516",
+    "park": "Horseshoe -Kitsap- State Fishing Lake",
+    "record": "Horseshoe Lake",
+    "area": "US-WA"
+   },
+   {
+    "ref": "US-4555",
+    "park": "Hanford Reach National Monument",
+    "record": "Hanford Reach National Monument, McGee Ranch/Riverlands Unit",
+    "area": "US-WA"
+   },
+   {
+    "ref": "US-5565",
+    "park": "Ahtanum State Forest",
+    "record": "",
+    "area": "US-WA"
+   },
+   {
+    "ref": "US-5568",
+    "park": "Elbe Hills-Tahoma State Forest",
+    "record": "",
+    "area": "US-WA"
+   }
+  ],
+  "urls": [
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-122.487%2C48.5477&level=14",
+    "steps": [
+     {
+      "wait": 10000
+     }
+    ]
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-119.727%2C48.4979&level=14",
+    "steps": [
+     {
+      "wait": 10000
+     }
+    ]
+   },
+   "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0",
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgeodataservices.wdfw.wa.gov%2Farcgis%2Frest%2Fservices%2FWP_RealEstate%2FManagedPlaces%2FMapServer%2F0&center=-122.667%2C47.407&level=14",
+    "steps": [
+     {
+      "wait": 10000
+     }
+    ]
+   },
+   "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1/query?objectIds=3978&outFields=*&returnGeometry=false&f=html",
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.dnr.wa.gov%2Fsite3%2Frest%2Fservices%2FPublic_Boundaries%2FWADNR_PUBLIC_Major_Public_Lands_NonDNR%2FMapServer%2F1&center=-119.732%2C46.6383&level=14",
+    "steps": [
+     {
+      "wait": 10000
+     }
+    ]
+   },
+   "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6/query?objectIds=3503949&outFields=*&returnGeometry=false&f=html",
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.dnr.wa.gov%2Fsite3%2Frest%2Fservices%2FPublic_Boundaries%2FWADNR_PUBLIC_Cadastre_OpenData%2FMapServer%2F6&center=-121.011%2C46.5179&level=14",
+    "steps": [
+     {
+      "wait": 10000
+     }
+    ]
+   },
+   "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6/query?objectIds=3495681&outFields=*&returnGeometry=false&f=html",
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.dnr.wa.gov%2Fsite3%2Frest%2Fservices%2FPublic_Boundaries%2FWADNR_PUBLIC_Cadastre_OpenData%2FMapServer%2F6&center=-122.094%2C46.7852&level=14",
+    "steps": [
+     {
+      "wait": 10000
+     }
+    ]
+   }
+  ]
+ },
+ "answered": "2026-10-30 17:59Z",
+ "results": [
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-122.487%2C48.5477&level=14",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-122.487%2C48.5477&level=14",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nTime series with field values\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nCounty of Skagit | WA State Parks GIS | Esri Canada | Esri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | Bureau of Land Management | EPA | NPS | US Census Bureau | USDA | USFWS | NRCan | Parks Canada\nPowered by Esri",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns-us-23-1.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-119.727%2C48.4979&level=14",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-119.727%2C48.4979&level=14",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nTime series with field values\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nWA State Parks GIS | Esri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | Bureau of Land Management | EPA | NPS | US Census Bureau | USDA | USFWS\nPowered by Esri",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns-us-23-2.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0",
+   "status": 200,
+   "final_url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0",
+   "title": "Layer: Boundaries (ID: 0)",
+   "text": "ArcGIS REST Services Directory Login | Get Token\nHome > services > WP_RealEstate > ManagedPlaces (MapServer) > Boundaries API Reference\nJSON\nLayer: Boundaries (ID: 0)\nName: Boundaries\nDisplay Field: ManagedPlaceName\nType: Feature Layer\nGeometry Type: esriGeometryPolygon\nDescription:\nCopyright Text:\nDefault Visibility: true\nMaxRecordCount: 2000\nMaxSelectionCount: 2000\nSupported Query Formats: JSON, geoJSON, PBF\nMin Scale: 0.0\nMax Scale: 0.0\nSupports Advanced Queries: true\nSupports Statistics: true\nHas Labels: true\nCan Modify Layer: true\nCan Scale Symbols: false\nUse Standardized Queries: true\nSupports Datum Transformation: true\nExtent:\nXMin: 649492.6455431432\nYMin: 104464.7131062299\nXMax: 2548332.001728222\nYMax: 1347599.2396274805\nSpatial Reference: 2927 (2927) LatestVCSWkid(0)\nDrawing Info:\nRenderer:\nUnique Value Renderer:\nField 1: PlaceTypeName\nField 2: N/A\nField 3: N/A\nField Delimiter: ,\nDefault Symbol:\nN/A\nDefault Label: N/A\nUniqueValueInfos:\nValue: Site\nLabel: Site\nDescription: N/A\nSymbol:\nStyle: esriSFSSolid\nColor: [255, 209, 46, 25]\nOutline:\nStyle: esriSLSSolid\nColor: [255, 206, 46, 255]\nWidth: 1\nValue: Access Area\nLabel: Access Area\nDescription: N/A\nSymbol:\nStyle: esriSFSSolid\nColor: [15, 67, 107, 127]\nOutline:\nStyle: esriSLSSolid\nColor: [16, 66, 105, 255]\nWidth: 1\nValue: Fish Hatchery\nLabel: Fish Hatchery\nDescription: N/A\nSymbol:\nStyle: esriSFSSolid\nColor: [7, 121, 170, 127]\nOutline:\nStyle: esriSLSSolid\nColor: [7, 119, 166, 255]\nWidth: 1\nValue: Public Fishing Easement\nLabel: Public Fishing Easement\nDescription: N/A\nSymbol:\nStyle: esriSFSSolid\nColor: [16, 66, 105, 76]\nOutline:\nStyle: esriSLSSolid\nColor: [15, 67, 107, 255]\nWidth: 0\nValue: Wildlife Area Unit\nLabel: Wildlife Area Unit\nDescription: N/A\nSymbol:\nStyle: esriSFSSolid\nColor: [0, 0, 0, 0]\nOutline:\nStyle: esriSLSSolid\nColor: [10, 110, 78, 255]\nWidth: 1\nValue: Wildlife Area\nLabel: Wildlife Area\nDescription: N/A\nSymbol:\nStyle: esriSFSSolid\nColor: [0, 123, 85, 76]\nOutline:\nStyle: esriSLSSolid\nColor: [0, 122, 84, 255]\nWidth: 0\nTransparency: 0\nLabeling Info:\nLabel Placement: esriServerPolygonPlacementAlwaysHorizontal\nLabel Expression: N/A\nUse Coded Values: true\nSymbol:\nColor: [0, 0, 0, 255]\nBackground Color: N/A\nOutline Color: N/A\nVertical Alignment: bottom\nHorizontal Alignment: left\nRight to Left: false\nAngle: 0\nXOffset: 0\nYOffset: 0\nSize: 9\nFont Family: Arial\nFont Style: normal\nFont Weight: normal\nFont Decoration: none\nMin. Scale: 100000.0\nMax. Scale: 0.0\nLabel Placement: esriServerPolygonPlacementAlwaysHorizontal\nLabel Expression: N/A\nUse Coded Values: true\nSymbol:\nColor: [0, 0, 0, 255]\nBackground Color: N/A\nOutline Color: N/A\nVertical Alignment: bottom\nHorizontal Alignment: left\nRight to Left: false\nAngle: 0\nXOffset: 0\nYOffset: 0\nSize: 9\nFont Family: Arial\nFont Style: normal\nFont Weight: normal\nFont Decoration: none\nMin. Scale: 100000.0\nMax. Scale: 0.0\nLabel Placement: esriServerPolygonPlacementAlwaysHorizontal\nLabel Expression: N/A\nUse Coded Values: true\nSymbol:\nColor: [0, 0, 0, 255]\nBackground Color: N/A\nOutline Color: N/A\nVertical Alignment: bottom\nHorizontal Alignment: left\nRight to Left: false\nAngle: 0\nXOffset: 0\nYOffset: 0\nSize: 8\nFont Family: Arial\nFont Style: normal\nFont Weight: normal\nFont Decoration: none\nMin. Scale: 100000.0\nMax. Scale: 0.0\nLabel Placement: esriServerPolygonPlacementAlwaysHorizontal\nLabel Expression: N/A\nUse Coded Values: true\nSymbol:\nColor: [0, 0, 0, 255]\nBackground Color: N/A\nOutline Color: N/A\nVertical Alignment: bottom\nHorizontal Alignment: left\nRight to Left: false\nAngle: 0\nXOffset: 0\nYOffset: 0\nSize: 8\nFont Family: Arial\nFont Style: italic\nFont Weight: normal\nFont Decoration: none\nMin. Scale: 100000.0\nMax. Scale: 0.0\nLabel Placement: esriServerPolygonPlacementAlwaysHorizontal\nLabel Expression: N/A\nUse Coded Values: true\nSymbol:\nColor: [0, 0, 0, 255]\nBackground Color: N/A\nOutline Color: N/A\nVertical Alignment: bottom\nHorizontal Alignment: left\nRight to Left: false\nAngle: 0\nXOffset: 0\nYOffset: 0\nSize: 12\nFont Family: Arial\nFont Style: normal\nFont Weight: bold\nFont Decoration: none\nMin. Scale: 0.0\nMax. Scale: NaN\nLabel Placement: esriServerPolygonPlacementAlwaysHorizontal\nLabel Expression: N/A\nUse Coded Values: true\nSymbol:\nColor: [0, 0, 0, 255]\nBackground Color: N/A\nOutline Color: N/A\nVertical Alignment: bottom\nHorizontal Alignment: left\nRight to Left: false\nAngle: 0\nXOffset: 0\nYOffset: 0\nSize: 10\nFont Family: Arial\nFont Style: normal\nFont Weight: normal\nFont Decoration: none\nMin. Scale: 0.0\nMax. Scale: 0.0\nFeature Draw Order:\nN/A\nAdvanced Query Capabilities:\nSupports Statistics: true\nSupports OrderBy: true\nSupports Distinct: true\nSupports Pagination: true\nSupports TrueCurve: true\nSupports Returning Query Extent: true\nSupports Query With Distance: true\nSupports Sql Expression: true\nSupports Query With ResultType: false\nSupports Returning Geometry Centroid: false\nSupports Binning LOD: false\nSupports Query With LOD Spatial Reference: false\nSupports Percentile Statistics: true\nSupports Having Clause: true\nSupports Count Distinct: true\nSupports Time Relation: true\nSupports Sql Format: false\nSupports Query Analytic: true\nSupports Query With Current User: true\nHasZ: false\nHasM: false\nHas Attachments: false\nHTML Popup Type: esriServerHTMLPopupTypeAsHTMLText\nType ID Field: null\nFields:\nManagedPlaceOID ( type: esriFieldTypeOID, alias: ManagedPlaceOID )\nManagedPlaceName ( type: esriFieldTypeString, alias: ManagedPlaceName, length: 256 )\nPlaceTypeID ( type: esriFieldTypeSmallInteger, alias: PlaceTypeID )\nPlaceTypeName ( type: esriFieldTypeString, alias: PlaceTypeName, length: 64 )\nRegion ( type: esriFieldTypeString, alias: Region, length: 256 )\nNotes ( type: esriFieldTypeString, alias: Notes, length: 1000 )\nMilesOfRoadsAndTrails ( type: esriFieldTypeDouble, alias: MilesOfRoadsAndTrails )\nMilesOfGreenDotRoads ( type: esriFieldTypeDouble, alias: MilesOfGreenDotRoads )\nParkingLots ( type: esriFieldTypeInteger, alias: ParkingLots )\nADAParkingStalls ( type: esriFieldTypeInteger, alias: ADAParkingStalls )\nBuildings ( type: esriFieldTypeInteger, alias: Buildings )\nHasOffice ( type: esriFieldTypeString, alias: HasOffice, length: 3 )\nHasADAOffice ( type: esriFieldTypeString, alias: HasADAOffice, length: 3 )\nHasRegionalHQ ( type: esriFieldTypeString, alias: HasRegionalHQ, length: 3 )\nHasADARegionalHQ ( type: esriFieldTypeString, alias: HasADARegionalHQ, length: 3 )\nHasVisitorCenter ( type: esriFieldTypeString, alias: HasVisitorCenter, length: 3 )\nHasADAVisitorCenter ( type: esriFieldTypeString, alias: HasADAVisitorCenter, length: 3 )\nRestrooms ( type: esriFieldTypeInteger, alias: Restrooms )\nADARestrooms ( type: esriFieldTypeInteger, alias: ADARestrooms )\nBoatRamps ( type: esriFieldTypeInteger, alias: BoatRamps )\nBoatRampSurfaceTypes ( type: esriFieldTypeString, alias: BoatRampSurfaceTypes, length: 255 )\nHandLaunches ( type: esriFieldTypeInteger, alias: HandLaunches )\nHasBoatRampWithADALoadingPlatform ( type: esriFieldTypeString, alias: HasBoatRampWithADALoadingPlatform, length: 3 )\nHasBoatRampWithBoardingFloat ( type: esriFieldTypeString, alias: HasBoatRampWithBoardingFloat, length: 3 )\nHasBoatRampWithADABoardingFloat ( type: esriFieldTypeString, alias: HasBoatRampWithADABoardingFloat, length: 3 )\nFishingPlatforms ( type: esriFieldTypeInteger, alias: FishingPlatforms )\nSignsOrKiosks ( type: esriFieldTypeInteger, alias: SignsOrKiosks )\nHuntingBlinds ( type: esriFieldTypeInteger, alias: HuntingBlinds )\nADAHuntingBlinds ( type: esriFieldTypeInteger, alias: ADAHuntingBlinds )\nCampgrounds ( type: esriFieldTypeInteger, alias: Campgrounds )\nTrailheads ( type: esriFieldTypeInteger, alias: Trailheads )\nViewpoints ( type: esriFieldTypeInteger, alias: Viewpoints )\nADAViewpoints ( type: esriFieldTypeInteger, alias: ADAViewpoints )\nShootingRanges ( type: esriFieldTypeInteger, alias: ShootingRanges )\nADAShootingRanges ( type: esriFieldTypeInteger, alias: ADAShootingRanges )\nWaterCrossings ( type: esriFieldTypeInteger, alias: WaterCrossings )\nShape ( type: esriFieldTypeGeometry, alias: Shape )\nShape.STArea() ( type: esriFieldTypeDouble, alias: Shape.STArea() )\nShape.STLength() ( type: esriFieldTypeDouble, alias: Shape.STLength() )\nIsWaterAccessSite ( type: esriFieldTypeString, alias: IsWaterAccessSite, length: 3 )\nSupported Operations: Query Query Attachments Query Analytic Generate Renderer Return Updates\nIteminfo Thumbnail Metadata",
+   "links": [
+    {
+     "url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/login",
+     "text": "Login"
+    },
+    {
+     "url": "https://geodataservices.wdfw.wa.gov/arcgis/tokens/",
+     "text": "Get Token"
+    },
+    {
+     "url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate",
+     "text": "WP_RealEstate"
+    },
+    {
+     "url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer",
+     "text": "ManagedPlaces (MapServer)"
+    },
+    {
+     "url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0",
+     "text": "Boundaries"
+    },
+    {
+     "url": "https://geodataservices.wdfw.wa.gov/arcgis/help/en/rest/router.html?f=rest/services/WP_RealEstate/ManagedPlaces/MapServer/0",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0?f=pjson",
+     "text": "JSON"
+    },
+    {
+     "url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/query",
+     "text": "Query"
+    },
+    {
+     "url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/queryAttachments",
+     "text": "Query Attachments"
+    },
+    {
+     "url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/queryAnalytic",
+     "text": "Query Analytic"
+    },
+    {
+     "url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/generateRenderer",
+     "text": "Generate Renderer"
+    },
+    {
+     "url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0?f=pjson&returnUpdates=true&",
+     "text": "Return Updates"
+    },
+    {
+     "url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/iteminfo",
+     "text": "Iteminfo"
+    },
+    {
+     "url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/thumbnail",
+     "text": "Thumbnail"
+    },
+    {
+     "url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/metadata",
+     "text": "Metadata"
+    }
+   ],
+   "screenshot": "answers/11-ns-us-23-3.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgeodataservices.wdfw.wa.gov%2Farcgis%2Frest%2Fservices%2FWP_RealEstate%2FManagedPlaces%2FMapServer%2F0&center=-122.667%2C47.407&level=14",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgeodataservices.wdfw.wa.gov%2Farcgis%2Frest%2Fservices%2FWP_RealEstate%2FManagedPlaces%2FMapServer%2F0&center=-122.667%2C47.407&level=14",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nTime series with field values\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nWA State Parks GIS | Esri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | Bureau of Land Management | EPA | NPS | US Census Bureau | USDA | USFWS\nPowered by Esri",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns-us-23-4.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1/query?objectIds=3978&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1/query?objectIds=3978&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: Non-DNR Major Public Lands (ID: 1)",
+   "text": "ArcGIS REST Services Directory Login\nHome > services > Public_Boundaries > WADNR_PUBLIC_Major_Public_Lands_NonDNR (MapServer) > Non-DNR Major Public Lands > query API Reference\nQuery: Non-DNR Major Public Lands (ID: 1)\nWhere:\nText:\nObject IDs:\nTime:\nTime Relation:\nInclude start and end\nInclude start and exclude end\nExclude start and include end\nExclude start and end\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nReturn True Curves: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nReturn IDs Only: True False\nReturn Count Only: True False\nOrder By Fields:\nGroup By Fields (For Statistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nResult Offset:\nResult Record Count:\nReturn Extent Only: True False\nSQL Format:\nNone\nStandard\nNative\nDatum Transformation:\nParameter Values:\nRange Values:\nQuantization Parameters:\nUnique IDs:\nReturn Unique IDs Only: True False\nFeature Encoding:\nEsriDefault\nFormat:\nHTML\nJSON\nKMZ\nGeoJSON\nPBF\n# records: 1\nOBJECTID: 3978\nNAME: Hanford Reach National Monument, McGee Ranch/Riverlands Unit\nOWNER: Federal Government\nMANAGER: US Department of Energy\nMANAGEMENT_TYPE: Other\nGLOBALID: {756A2084-DCE3-49AF-8617-9BB16A284EB9}",
+   "links": [
+    {
+     "url": "https://gis.dnr.wa.gov/site3/login/?returnUrl=https://gis.dnr.wa.gov/site3/rest/services&app=rest",
+     "text": "Login"
+    },
+    {
+     "url": "https://gis.dnr.wa.gov/site3/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://gis.dnr.wa.gov/site3/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries",
+     "text": "Public_Boundaries"
+    },
+    {
+     "url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer",
+     "text": "WADNR_PUBLIC_Major_Public_Lands_NonDNR (MapServer)"
+    },
+    {
+     "url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1",
+     "text": "Non-DNR Major Public Lands"
+    },
+    {
+     "url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1/query",
+     "text": "query"
+    },
+    {
+     "url": "https://gis.dnr.wa.gov/site3/help/en/rest/router.html?f=rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1/3978",
+     "text": "3978"
+    }
+   ],
+   "screenshot": "answers/11-ns-us-23-5.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.dnr.wa.gov%2Fsite3%2Frest%2Fservices%2FPublic_Boundaries%2FWADNR_PUBLIC_Major_Public_Lands_NonDNR%2FMapServer%2F1&center=-119.732%2C46.6383&level=14",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.dnr.wa.gov%2Fsite3%2Frest%2Fservices%2FPublic_Boundaries%2FWADNR_PUBLIC_Major_Public_Lands_NonDNR%2FMapServer%2F1&center=-119.732%2C46.6383&level=14",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nTime series with field values\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nWSU Facilities Services GIS | WA State Parks GIS | Esri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | Bureau of Land Management | EPA | NPS | US Census Bureau | USDA | USFWS\nPowered by Esri",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns-us-23-6.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6/query?objectIds=3503949&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6/query?objectIds=3503949&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: DNR Managed Land Parcels (ID: 6)",
+   "text": "ArcGIS REST Services Directory Login\nHome > services > Public_Boundaries > WADNR_PUBLIC_Cadastre_OpenData (MapServer) > DNR Managed Land Parcels > query API Reference\nQuery: DNR Managed Land Parcels (ID: 6)\nWhere:\nText:\nObject IDs:\nTime:\nTime Relation:\nInclude start and end\nInclude start and exclude end\nExclude start and include end\nExclude start and end\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nReturn True Curves: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nReturn IDs Only: True False\nReturn Count Only: True False\nOrder By Fields:\nGroup By Fields (For Statistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nResult Offset:\nResult Record Count:\nReturn Extent Only: True False\nSQL Format:\nNone\nStandard\nNative\nDatum Transformation:\nParameter Values:\nRange Values:\nQuantization Parameters:\nUnique IDs:\nReturn Unique IDs Only: True False\nFeature Encoding:\nEsriDefault\nFormat:\nHTML\nJSON\nKMZ\nGeoJSON\nPBF\n# records: 1\nOBJECTID: 3503949\nPARCEL_SYST_ID: 10601\nPARCEL_TYPE_CD: 1\nPARCEL_LABEL_NM: null\nPARCEL_NM: null\nREVERSION_RIGHTS_FLG: N\nOWN_RIGHT_DISPUTE_FLG: N\nSURFACE_RIGHTS_FLG: Y\nMINERAL_RIGHTS_FLG: Y\nTIMBER_RIGHTS_FLG: Y\nSURFACE_TRUST_CD: 3\nMINERAL_TRUST_CD: 3\nTIMBER_TRUST_CD: 3\nOWNER_AGENT_SYST_ID: 58706\nSTEWARD_AGENT_SYST_ID: 63986\nMANAGER_AGENT_SYST_ID: 63986\nTIMBER_OWNER_NM: null\nTIMBER_EXP_DT: null\nORIGINAL_PATENT_DT: null\nCOUNTY_JURISDICT_DESG_CD: 39\nCOUNTY_PARCEL_NO: null\nREGION_JURISDICT_DESG_CD: 100\nHCP_JURISDICT_DESG_CD: null\nHCP_DESG_CD: 1\nHCP_DESG_DT: 854611200000\nHCP_WITHDRAWAL_DT: null\nPARCEL_DESC_TXT: null\nEDIT_DATE: 1496874097000\nEDIT_STATUS: 1\nEDIT_WHO: JDUG490\nEASEMENT_TYPE_CD: null\nPARCEL_ACQUIRE_AUTH_NO: null\nPARCEL_DISPOSAL_AUTH_NO: null\nSHAPE.AREA: 2.8254569109425E7\nSHAPE.LEN: 21285.0617512834\nGLOBALID: {DE752D41-A586-47AF-93F7-46CD3A7E6859}",
+   "links": [
+    {
+     "url": "https://gis.dnr.wa.gov/site3/login/?returnUrl=https://gis.dnr.wa.gov/site3/rest/services&app=rest",
+     "text": "Login"
+    },
+    {
+     "url": "https://gis.dnr.wa.gov/site3/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://gis.dnr.wa.gov/site3/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries",
+     "text": "Public_Boundaries"
+    },
+    {
+     "url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer",
+     "text": "WADNR_PUBLIC_Cadastre_OpenData (MapServer)"
+    },
+    {
+     "url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6",
+     "text": "DNR Managed Land Parcels"
+    },
+    {
+     "url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6/query",
+     "text": "query"
+    },
+    {
+     "url": "https://gis.dnr.wa.gov/site3/help/en/rest/router.html?f=rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6/3503949",
+     "text": "3503949"
+    }
+   ],
+   "screenshot": "answers/11-ns-us-23-7.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.dnr.wa.gov%2Fsite3%2Frest%2Fservices%2FPublic_Boundaries%2FWADNR_PUBLIC_Cadastre_OpenData%2FMapServer%2F6&center=-121.011%2C46.5179&level=14",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.dnr.wa.gov%2Fsite3%2Frest%2Fservices%2FPublic_Boundaries%2FWADNR_PUBLIC_Cadastre_OpenData%2FMapServer%2F6&center=-121.011%2C46.5179&level=14",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nTime series with field values\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nWSU Facilities Services GIS | City of Yakima | WA State Parks GIS | Esri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | Bureau of Land Management | EPA | NPS | US Census Bureau | USDA | USFWS | Washington State Department of Natural Resources\nPowered by Esri",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns-us-23-8.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6/query?objectIds=3495681&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6/query?objectIds=3495681&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: DNR Managed Land Parcels (ID: 6)",
+   "text": "ArcGIS REST Services Directory Login\nHome > services > Public_Boundaries > WADNR_PUBLIC_Cadastre_OpenData (MapServer) > DNR Managed Land Parcels > query API Reference\nQuery: DNR Managed Land Parcels (ID: 6)\nWhere:\nText:\nObject IDs:\nTime:\nTime Relation:\nInclude start and end\nInclude start and exclude end\nExclude start and include end\nExclude start and end\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nReturn True Curves: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nReturn IDs Only: True False\nReturn Count Only: True False\nOrder By Fields:\nGroup By Fields (For Statistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nResult Offset:\nResult Record Count:\nReturn Extent Only: True False\nSQL Format:\nNone\nStandard\nNative\nDatum Transformation:\nParameter Values:\nRange Values:\nQuantization Parameters:\nUnique IDs:\nReturn Unique IDs Only: True False\nFeature Encoding:\nEsriDefault\nFormat:\nHTML\nJSON\nKMZ\nGeoJSON\nPBF\n# records: 1\nOBJECTID: 3495681\nPARCEL_SYST_ID: 8227\nPARCEL_TYPE_CD: 1\nPARCEL_LABEL_NM: null\nPARCEL_NM: null\nREVERSION_RIGHTS_FLG: N\nOWN_RIGHT_DISPUTE_FLG: N\nSURFACE_RIGHTS_FLG: Y\nMINERAL_RIGHTS_FLG: N\nTIMBER_RIGHTS_FLG: Y\nSURFACE_TRUST_CD: 1\nMINERAL_TRUST_CD: 0\nTIMBER_TRUST_CD: 1\nOWNER_AGENT_SYST_ID: 58706\nSTEWARD_AGENT_SYST_ID: 63986\nMANAGER_AGENT_SYST_ID: 63986\nTIMBER_OWNER_NM: null\nTIMBER_EXP_DT: null\nORIGINAL_PATENT_DT: null\nCOUNTY_JURISDICT_DESG_CD: 27\nCOUNTY_PARCEL_NO: null\nREGION_JURISDICT_DESG_CD: 900\nHCP_JURISDICT_DESG_CD: null\nHCP_DESG_CD: 1\nHCP_DESG_DT: 854611200000\nHCP_WITHDRAWAL_DT: null\nPARCEL_DESC_TXT: null\nEDIT_DATE: 1309330800000\nEDIT_STATUS: 1\nEDIT_WHO: jdug490\nEASEMENT_TYPE_CD: null\nPARCEL_ACQUIRE_AUTH_NO: null\nPARCEL_DISPOSAL_AUTH_NO: null\nSHAPE.AREA: 7083996.12437\nSHAPE.LEN: 10646.785392391801\nGLOBALID: {4DC1BFF9-0E5E-4502-91C8-E5C125BC4825}",
+   "links": [
+    {
+     "url": "https://gis.dnr.wa.gov/site3/login/?returnUrl=https://gis.dnr.wa.gov/site3/rest/services&app=rest",
+     "text": "Login"
+    },
+    {
+     "url": "https://gis.dnr.wa.gov/site3/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://gis.dnr.wa.gov/site3/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries",
+     "text": "Public_Boundaries"
+    },
+    {
+     "url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer",
+     "text": "WADNR_PUBLIC_Cadastre_OpenData (MapServer)"
+    },
+    {
+     "url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6",
+     "text": "DNR Managed Land Parcels"
+    },
+    {
+     "url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6/query",
+     "text": "query"
+    },
+    {
+     "url": "https://gis.dnr.wa.gov/site3/help/en/rest/router.html?f=rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6/3495681",
+     "text": "3495681"
+    }
+   ],
+   "screenshot": "answers/11-ns-us-23-9.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.dnr.wa.gov%2Fsite3%2Frest%2Fservices%2FPublic_Boundaries%2FWADNR_PUBLIC_Cadastre_OpenData%2FMapServer%2F6&center=-122.094%2C46.7852&level=14",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fgis.dnr.wa.gov%2Fsite3%2Frest%2Fservices%2FPublic_Boundaries%2FWADNR_PUBLIC_Cadastre_OpenData%2FMapServer%2F6&center=-122.094%2C46.7852&level=14",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nTime series with field values\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nWSU Facilities Services GIS | WA State Parks GIS | Esri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | Bureau of Land Management | EPA | NPS | US Census Bureau | USDA | USFWS | Washington State Department of Natural Resources\nPowered by Esri",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns-us-23-10.jpg",
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 97,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 4
+ },
+ "short": "10 result(s), 10 read OK, 10 screenshot(s)"
+}
