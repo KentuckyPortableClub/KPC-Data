@@ -97,7 +97,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | gis-hunter.json | 62 | 485 |
 | key-pieces.json | 76 | 307 |
 | not-sure-for-chat9.json | 146 | 146 |
-| world-finder.json | 61 | 2051 |
+| world-finder.json | 102 | 2092 |
 
 ## Approvals not used yet: 4
 
