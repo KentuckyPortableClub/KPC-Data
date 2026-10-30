@@ -21,10 +21,32 @@
    "left": 0,
    "status": "done",
    "updated": "2026-10-30"
+  },
+  "US-TN": {
+   "camps": 348,
+   "checked": 348,
+   "counts": {
+    "camps": 348,
+    "needs_browser": 0,
+    "needs_key": 81,
+    "no_page": 267,
+    "not_official": 0,
+    "ok": 0,
+    "other": 0,
+    "resting": 0,
+    "robots": 0,
+    "with_booking": 0,
+    "with_elevation": 348,
+    "with_sites": 0
+   },
+   "left": 0,
+   "status": "done",
+   "updated": "2026-10-30"
   }
  },
  "cell_status": {
-  "US-KY": "FCC as of 2025-12-31: 0 mobile coverage files for the state (point lookup = step 2, not built)"
+  "US-KY": "FCC as of 2025-12-31: 0 mobile coverage files for the state (point lookup = step 2, not built)",
+  "US-TN": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
  },
  "fcc": {
   "US-KY": {
@@ -33,6 +55,15 @@
     "files": [],
     "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2025-12-31?category=State&subcategory=Mobile%20Broadband",
     "status": "FCC as of 2025-12-31: 0 mobile coverage files for the state (point lookup = step 2, not built)"
+   },
+   "read": "2026-10-30"
+  },
+  "US-TN": {
+   "cell": {
+    "carriers": null,
+    "files": [],
+    "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2026-06-30?category=State&subcategory=Mobile%20Broadband",
+    "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
    },
    "read": "2026-10-30"
   }
@@ -991,29 +1022,28 @@
  },
  "last": {
   "areas": [
-   "US-KY"
+   "US-TN"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
    "errors": 0,
-   "requests": 231,
+   "requests": 351,
    "rested": 0,
    "robots": 0,
-   "strikes": 0
+   "strikes": 1
   },
   "ridb_key": false,
   "stat": {
-   "browser": 41,
-   "camps": 109,
-   "elevations": 105,
+   "camps": 348,
+   "elevations": 348,
    "errors": 0,
-   "needs_browser": 14,
-   "needs_key": 42,
-   "no_page": 0,
+   "needs_browser": 0,
+   "needs_key": 81,
+   "no_page": 267,
    "not_official": 0,
-   "ok": 97,
-   "pages_read": 80,
+   "ok": 0,
+   "pages_read": 0,
    "resting": 0,
    "ridb_calls": 0,
    "robots": 0,
