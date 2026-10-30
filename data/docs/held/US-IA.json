@@ -987,9 +987,17 @@
    "page": "https://www.iowadnr.gov/Places-to-Go/State-Parks/Iowa-State-Parks/Big-Creek-State-Park",
    "checked": "2026-10-30",
    "map": {
-    "url": "",
-    "status": "no working map link (tried: HTTP 404 https://www.iowadnr.gov/portals/idnr/uploads/parks/parkmaps/bigcreekma)",
-    "how": "on file (parkinfo-web / Kentucky answer key)"
+    "url": "https://www.iowadnr.gov/media/1248/download?inline",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "the page in a browser ('Big Creek State Park map and flyer \n(9.85 MB)\n.pdf')",
+    "page": "https://www.iowadnr.gov/Places-to-Go/State-Parks/Iowa-State-Parks/Big-Creek-State-Park",
+    "posted": "May 12, 2026",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-30",
+    "via": "the agency site"
    },
    "rules": {
     "url": "https://www.iowadnr.gov/places-go/state-parks/parks-use-rules-guidelines",
@@ -1000,9 +1008,7 @@
    "agency": "government agency (iowadnr.gov)",
    "runs": [],
    "handover": [],
-   "notes": [
-    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
-   ],
+   "notes": [],
    "needs_browser": "host on the browser list",
    "map_tried": [
     {
@@ -1020,7 +1026,8 @@
      "via": "the agency site"
     }
    ],
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-10-30"
   },
   "US-2282": {
    "n": "Blackhawk State Park",
@@ -1884,17 +1891,9 @@
    "page": "https://www.iowadnr.gov/Places-to-Go/State-Parks/Iowa-State-Parks/Palisades-Kepler-State-Park",
    "checked": "2026-10-30",
    "map": {
-    "url": "https://www.iowadnr.gov/media/1184/download?inline",
-    "status": "ok",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-30",
-    "how": "the page in a browser ('Palisades-Kepler State Park map and flyer \n(750.7 KB)\n.pdf')",
-    "page": "https://www.iowadnr.gov/Places-to-Go/State-Parks/Iowa-State-Parks/Palisades-Kepler-State-Park",
-    "posted": "May 19, 2026",
-    "posted_how": "posted: the server's file date",
-    "checked": "2026-10-30",
-    "via": "the agency site"
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "https://www.iowadnr.gov/places-go/state-parks/parks-use-rules-guidelines",
@@ -1905,10 +1904,11 @@
    "agency": "government agency (iowadnr.gov)",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
+   ],
    "needs_browser": "host on the browser list",
-   "ver": 7,
-   "browser_checked": "2026-10-30"
+   "ver": 7
   },
   "US-2311": {
    "n": "Pikes Peak State Park",

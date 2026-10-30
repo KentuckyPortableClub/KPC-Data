@@ -161,10 +161,11 @@
    "updated": "2026-10-30"
   },
   "US-MA": {
-   "status": "failed",
+   "status": "done",
    "parks": 421,
-   "updated": "2026-10-30",
-   "why": "maps 114 -> 77"
+   "checked": 421,
+   "left": 0,
+   "updated": "2026-10-30"
   },
   "US-VT": {
    "status": "done",
@@ -260,8 +261,8 @@
   "US-CO": {
    "status": "partial",
    "parks": 276,
-   "checked": 20,
-   "left": 256,
+   "checked": 35,
+   "left": 241,
    "updated": "2026-10-30"
   }
  },
@@ -284,17 +285,17 @@
    "US-LA"
   ],
   "stat": {
-   "requests": 1156,
-   "parks": 605,
-   "maps_ok": 284,
-   "maps_found": 257,
+   "requests": 1223,
+   "parks": 600,
+   "maps_ok": 313,
+   "maps_found": 290,
    "dates": 0,
-   "rules": 166,
-   "browser": 427,
+   "rules": 170,
+   "browser": 463,
    "robots": 0,
-   "strikes": 3,
-   "errors": 3,
-   "skipped_fresh": 1629
+   "strikes": 0,
+   "errors": 0,
+   "skipped_fresh": 1649
   }
  }
 }

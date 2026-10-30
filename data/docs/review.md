@@ -28,7 +28,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-NJ | 134 | 76 | 10 | 73 | 2 | 64 | 10 | 58 | 15 | 51 | 0 |
 | US-CT | 157 | 20 | 17 | 13 | 0 | 10 | 10 | 137 | 115 | 138 | 0 |
 | US-RI | 61 | 11 | 6 | 11 | 0 | 6 | 5 | 50 | 16 | 0 | 0 |
-| US-MA | 421 | 114 | 98 | 28 | 26 | 78 | 10 | 307 | 46 | 10 | 0 |
+| US-MA | 421 | 108 | 92 | 28 | 24 | 75 | 9 | 313 | 45 | 19 | 0 |
 | US-VT | 109 | 72 | 69 | 11 | 23 | 44 | 5 | 37 | 6 | 0 | 0 |
 | US-NH | 206 | 23 | 21 | 8 | 1 | 16 | 6 | 183 | 11 | 0 | 1 |
 | US-ME | 148 | 20 | 16 | 17 | 0 | 7 | 13 | 128 | 15 | 3 | 0 |
@@ -36,12 +36,12 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-DE | 89 | 7 | 6 | 7 | 0 | 5 | 2 | 82 | 7 | 0 | 0 |
 | US-DC | 35 | 32 | 5 | 32 | 0 | 32 | 0 | 3 | 32 | 0 | 0 |
 | US-AR | 306 | 61 | 43 | 60 | 4 | 35 | 22 | 244 | 47 | 194 | 0 |
-| US-LA | 123 | 27 | 23 | 26 | 1 | 6 | 20 | 96 | 26 | 30 | 0 |
+| US-LA | 123 | 27 | 23 | 26 | 1 | 6 | 20 | 96 | 26 | 29 | 0 |
 | US-OK | 205 | 97 | 91 | 46 | 2 | 66 | 29 | 104 | 40 | 2 | 0 |
 | US-TX | 222 | 116 | 31 | 105 | 46 | 47 | 23 | 106 | 89 | 3 | 0 |
 | US-KS | 145 | 16 | 10 | 15 | 1 | 11 | 4 | 129 | 15 | 12 | 0 |
 | US-NE | 5 | 4 | 4 | 4 | 0 | 0 | 4 | 1 | 5 | 0 | 0 |
-| US-CO | 20 | 8 | 1 | 8 | 0 | 7 | 1 | 12 | 9 | 10 | 0 |
+| US-CO | 35 | 14 | 4 | 14 | 0 | 11 | 3 | 21 | 15 | 11 | 0 |
 | US-OH | 276 | 17 | 5 | 16 | 0 | 14 | 3 | 259 | 274 | 0 | 0 |
 
 ## US-KY sample (random 12 per agency group, seed 28)
@@ -1980,43 +1980,43 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 ## US-MA sample (random 12 per agency group, seed 28)
 | ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
 |---|---|---|---|---|---|---|
-| US-0321 | Great Meadows National Wildlife Refuge | https://www.fws.gov/refuge/great-meadows/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/great-meadows/visit-us/rules-policies ✓ |  |
-| US-0327 | Oxbow National Wildlife Refuge | https://www.fws.gov/refuge/oxbow/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/oxbow/visit-us/rules-policies ✓ |  |
+| US-0321 | Great Meadows National Wildlife Refuge | https://www.fws.gov/refuge/great-meadows/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted — | https://www.fws.gov/refuge/great-meadows/visit-us/rules-policies ✓ |  |
+| US-0327 | Oxbow National Wildlife Refuge | https://www.fws.gov/refuge/oxbow/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted — | https://www.fws.gov/refuge/oxbow/visit-us/rules-policies ✓ |  |
 | US-0329 | Silvio O Conte National Wildlife Refuge | https://www.fws.gov/refuge/silvio-o-conte/visit-us | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted — | https://www.fws.gov/refuge/silvio-o-conte/visit-us/rules-policies ✓ |  |
-| US-0325 | Nantucket National Wildlife Refuge | https://www.fws.gov/refuge/nantucket/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/nantucket/visit-us/rules-policies ✓ |  |
-| US-0328 | Parker River National Wildlife Refuge | https://www.fws.gov/refuge/parker-river/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/parker-river/visit-us/rules-policies ✓ | managed by the U.S. Fish and Wildlife Service |
+| US-0325 | Nantucket National Wildlife Refuge | https://www.fws.gov/refuge/nantucket/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted — | https://www.fws.gov/refuge/nantucket/visit-us/rules-policies ✓ |  |
+| US-0328 | Parker River National Wildlife Refuge | https://www.fws.gov/refuge/parker-river/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted — | https://www.fws.gov/refuge/parker-river/visit-us/rules-policies ✓ | managed by the U.S. Fish and Wildlife Service |
 | US-0320 | Assabet River National Wildlife Refuge | https://www.fws.gov/refuge/assabet-river/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted — | https://www.fws.gov/refuge/assabet-river/visit-us/rules-policies ✓ |  |
-| US-0322 | Mashpee National Wildlife Refuge | https://www.fws.gov/refuge/mashpee/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/mashpee/visit-us/rules-policies ✓ |  |
-| US-0324 | Monomoy National Wildlife Refuge | https://www.fws.gov/refuge/monomoy/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/monomoy/visit-us/rules-policies ✓ |  |
+| US-0322 | Mashpee National Wildlife Refuge | https://www.fws.gov/refuge/mashpee/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted — | https://www.fws.gov/refuge/mashpee/visit-us/rules-policies ✓ |  |
+| US-0324 | Monomoy National Wildlife Refuge | https://www.fws.gov/sites/default/files/documents/2026-07/monomoy-public-access-map-7.8.26 | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted 2026-07 | https://www.fws.gov/refuge/monomoy/visit-us/rules-policies ✓ |  |
 | US-4748 | Warwick State Forest | https://www.mass.gov/doc/mt-grace-state-forest-trail-map/download | pdf · the agency site | 2014-05-21 (file stamp 2014 (older than the posting 2020 ) · posted Mar 24, 2020 |  ✗ |  |
 | US-4696 | Manuel F. Correllus State Forest | https://www.mass.gov/doc/manuel-f-correllus-state-forest-trail-map/download | pdf · the agency site | 2022-09-30 (the PDF file's own stamp (may be the print da) · posted Sep 30, 2022 | https://www.mass.gov/hunting-in-the-parks ✓ |  |
-| US-4698 | Freetown-Fall River State Forest | https://www.mass.gov/doc/freetown-trail-map/download | pdf · the agency site | — (date unknown, checked 2026-10-29) · posted Aug 27, 2017 |  ✗ |  |
+| US-4698 | Freetown-Fall River State Forest | https://www.mass.gov/doc/freetown-trail-map/download | pdf · the agency site | — (date unknown, checked 2026-10-30) · posted Aug 27, 2017 |  ✗ |  |
 | US-2451 | Nickerson State Park | https://www.mass.gov/doc/nickerson-state-park-trail-map/download | pdf · the agency site | 2015-06-23 (file stamp 2015 (older than the posting 2017 ) · posted Aug 27, 2017 |  ✗ |  |
-| US-4745 | Otter River State Forest | https://www.mass.gov/doc/otter-river-sf-trail-map/download | pdf · the agency site | — (date unknown, checked 2026-10-29) · posted Mar 24, 2020 | https://www.mass.gov/hunting-in-the-parks ✓ |  |
+| US-4745 | Otter River State Forest | https://www.mass.gov/doc/otter-river-sf-trail-map/download | pdf · the agency site | — (date unknown, checked 2026-10-30) · posted Mar 24, 2020 | https://www.mass.gov/hunting-in-the-parks ✓ |  |
 | US-2453 | Pilgrim Memorial State Park | https://www.mass.gov/doc/pilgrim-memorial-state-park-map/download | pdf · the agency site | 2024-08-06 (the PDF file's own stamp (may be the print da) · posted Aug 06, 2024 |  ✗ |  |
-| US-2448 | Moore State Park | https://www.mass.gov/doc/moore-state-park-map/download | pdf · the agency site | — (date unknown, checked 2026-10-29) · posted Aug 27, 2017 |  ✗ |  |
-| US-8415 | Mount Everett State Reserve | https://www.mass.gov/doc/mt-washington-state-forest-trail-map | page · the agency site | — (date unknown, checked 2026-10-29) · posted 2020-03-24 |  ✗ |  |
-| US-2465 | Wompatuck State Park | https://www.mass.gov/doc/wompatuck-state-park-trail-map/download | pdf · the agency site | — (date unknown, checked 2026-10-29) · posted Sep 14, 2020 | https://www.mass.gov/hunting-in-the-parks ✓ |  |
+| US-2448 | Moore State Park | https://www.mass.gov/doc/moore-state-park-map/download | pdf · the agency site | — (date unknown, checked 2026-10-30) · posted Aug 27, 2017 |  ✗ |  |
+| US-2465 | Wompatuck State Park | https://www.mass.gov/doc/wompatuck-state-park-trail-map/download | pdf · the agency site | — (date unknown, checked 2026-10-30) · posted Sep 14, 2020 | https://www.mass.gov/hunting-in-the-parks ✓ |  |
 | US-4368 | Wachusett Mountain Reservation State Par | https://www.mass.gov/doc/wachusett-mountain-state-reservation-trail-map/download | pdf · the agency site | 2014-06-20 (file stamp 2014 (older than the posting 2020 ) · posted Mar 24, 2020 |  ✗ |  |
-| US-2420 | Borderland State Park | https://www.mass.gov/doc/ames-nowell-state-park-trail-map/download | pdf · the agency site | — (date unknown, checked 2026-10-29) · posted Sep 06, 2017 | https://www.mass.gov/info-details/dcr-watershed-public-access-rules-an ✓ |  |
-| US-4747 | Mohawk Trail State Forest | https://www.mass.gov/doc/mohawk-trail-state-forest-trail-map/download | pdf · the agency site | — (date unknown, checked 2026-10-29) · posted Mar 24, 2020 |  ✗ |  |
-| US-0826 | Frederick Law Olmsted National Historic  | https://www.nps.gov/frla/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted March 1, 2024 | https://www.nps.gov/frla/learn/management/lawsandpolicies.htm ✓ |  |
-| US-0728 | Boston National Historical Park | https://www.nps.gov/bost/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted February 19, 2025 | https://www.nps.gov/bost/learn/management/lawsandpolicies.htm ✓ |  |
-| US-0742 | Lowell National Historical Park | https://www.nps.gov/lowe/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted June 29, 2022 | https://www.nps.gov/lowe/learn/management/lawsandpolicies.htm ✓ |  |
-| US-0802 | Boston African American National Histori | https://www.nps.gov/boaf/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted January 14, 2026 | https://www.nps.gov/boaf/learn/management/lawsandpolicies.htm ✓ |  |
-| US-0748 | New Bedford Whaling National Historical  | https://www.nps.gov/nebe/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted March 10, 2016 | https://www.nps.gov/nebe/learn/management/lawsandpolicies.htm ✓ |  |
-| US-0862 | Saugus Iron Works National Historic Site | https://www.nps.gov/sair/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted August 19, 2021 | https://www.nps.gov/sair/learn/management/superintendents-compendium.h ✓ |  |
-| US-4582 | Washington-Rochambeau Revolutionary Rout | https://www.nps.gov/waro/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted June 16, 2026 | https://www.nps.gov/waro/learn/management/lawsandpolicies.htm ✓ |  |
-| US-0863 | Springfield Armory National Historic Sit | https://www.nps.gov/spar/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted March 10, 2016 | https://www.nps.gov/spar/learn/management/lawsandpolicies.htm ✓ |  |
-| US-0838 | John Fitzgerald Kennedy National Histori | https://www.nps.gov/jofi/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted April 11, 2022 | https://www.nps.gov/jofi/learn/management/lawsandpolicies.htm ✓ |  |
+| US-2420 | Borderland State Park | https://www.mass.gov/doc/ames-nowell-state-park-trail-map/download | pdf · the agency site | — (date unknown, checked 2026-10-30) · posted Sep 06, 2017 | https://www.mass.gov/info-details/dcr-watershed-public-access-rules-an ✓ |  |
+| US-4747 | Mohawk Trail State Forest | https://www.mass.gov/doc/mohawk-trail-state-forest-trail-map/download | pdf · the agency site | — (date unknown, checked 2026-10-30) · posted Mar 24, 2020 |  ✗ |  |
+| US-4702 | F. Gilbert Hills State Forest | https://www.mass.gov/doc/f-gilbert-hills-trail-map/download | pdf · the agency site | — (date unknown, checked 2026-10-30) · posted Aug 27, 2017 |  ✗ |  |
+| US-0728 | Boston National Historical Park | https://www.nps.gov/bost/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted February 19, 2025 | https://www.nps.gov/bost/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0742 | Lowell National Historical Park | https://www.nps.gov/lowe/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted June 29, 2022 | https://www.nps.gov/lowe/learn/management/lawsandpolicies.htm ✓ |  |
+| US-2421 | Boston Harbor Islands National Recreatio | https://www.nps.gov/boha/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted July 18, 2025 | https://www.nps.gov/boha/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4556 | Appalachian Trail National Scenic Trail | https://www.nps.gov/appa/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted December 21, 2022 | https://www.nps.gov/appa/learn/management/lawsandpolicies.htm ✓ | is managed by the National Park Service |
+| US-0748 | New Bedford Whaling National Historical  | https://www.nps.gov/nebe/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted March 10, 2016 | https://www.nps.gov/nebe/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0862 | Saugus Iron Works National Historic Site | https://www.nps.gov/sair/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted August 19, 2021 | https://www.nps.gov/sair/learn/management/superintendents-compendium.h ✓ |  |
+| US-7971 | Blackstone River Valley National Histori | https://www.nps.gov/blrv/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted February 5, 2024 | https://www.nps.gov/blrv/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0863 | Springfield Armory National Historic Sit | https://www.nps.gov/spar/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted March 10, 2016 | https://www.nps.gov/spar/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0838 | John Fitzgerald Kennedy National Histori | https://www.nps.gov/jofi/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted April 11, 2022 | https://www.nps.gov/jofi/learn/management/lawsandpolicies.htm ✓ |  |
 | US-0843 | Longfellow House National Historic Site | https://www.nps.gov/long/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted January 3, 2023 | https://www.nps.gov/long/learn/management/lawsandpolicies.htm ✓ |  |
-| US-0745 | Minute Man National Historical Park | https://www.nps.gov/mima/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted October 8, 2021 | https://www.nps.gov/mima/learn/management/lawsandpolicies.htm ✓ |  |
-| US-7971 | Blackstone River Valley National Histori | https://www.nps.gov/blrv/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted February 5, 2024 | https://www.nps.gov/blrv/learn/management/lawsandpolicies.htm ✓ |  |
-| US-2418 | Bash Bish Falls State Park | https://parks.ny.gov/sites/default/files/TaconicCopakeFallsAreaTrailMapNorth.pdf | pdf · government host (parks.ny.gov) | — (date unknown, checked 2026-10-29) · posted Sep 26, 2025 |  ✗ |  |
-| US-4708 | Sutton State Forest | https://suttonmass.org/seasons/suttonstateforest/trailmap/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — |  ✗ |  |
+| US-0745 | Minute Man National Historical Park | https://www.nps.gov/mima/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted October 8, 2021 | https://www.nps.gov/mima/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0826 | Frederick Law Olmsted National Historic  | https://www.nps.gov/frla/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted March 1, 2024 | https://www.nps.gov/frla/learn/management/lawsandpolicies.htm ✓ |  |
+| US-2418 | Bash Bish Falls State Park | https://parks.ny.gov/sites/default/files/TaconicCopakeFallsAreaTrailMapNorth.pdf | pdf · government host (parks.ny.gov) | — (date unknown, checked 2026-10-30) · posted Sep 26, 2025 |  ✗ |  |
+| US-4708 | Sutton State Forest | https://suttonmass.org/seasons/suttonstateforest/trailmap/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted — |  ✗ |  |
 | US-0897 | Westfield National Wild and Scenic River | https://westfieldriverwildscenic.org/resources/visiting/maps-brochures | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted — |  ✗ |  |
 
-### US-MA no map yet (307): the reason
+### US-MA no map yet (313): the reason
 - US-0330 Thatcher Island National Wildlife Refuge: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.fws.gov/refuge/thacher-island/map)
 - US-0891 Taunton National Wild and Scenic River: no map link on file and none on the park page
 - US-11395 Abbott Brook Wildlife Management Area: opened, a statewide map viewer, not this park's map (chat 8 F2) (needs browser: host on the browser list)
@@ -2218,7 +2218,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-0001 | Acadia National Park | https://www.nps.gov/acad/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted August 27, 2026 | https://www.nps.gov/acad/learn/management/lawsandpolicies.htm ✓ |  |
 | US-11808 | Saint Croix Island International Histori | https://www.nps.gov/sacr/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted April 8, 2016 | https://www.nps.gov/sacr/learn/management/lawsandpolicies.htm ✓ |  |
 | US-4556 | Appalachian Trail National Scenic Trail | https://www.nps.gov/appa/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted December 21, 2022 | https://www.nps.gov/appa/learn/management/lawsandpolicies.htm ✓ | is managed by the National Park Service |
-| US-4512 | White Mountain National Forest | https://www.fs.usda.gov/r09/whitemountain/maps-guides | page · forest map only; forest map only · the agency site | — (date unknown, checked 2026-10-30) · posted March 31, 2026 | https://www.fs.usda.gov/r09/whitemountain ✓ |  |
+| US-4512 | White Mountain National Forest | https://www.fs.usda.gov/r09/whitemountain/maps-guides | page · forest map only; forest map only; forest · the agency site | — (date unknown, checked 2026-10-30) · posted March 31, 2026 | https://www.fs.usda.gov/r09/whitemountain ✓ |  |
 
 ### US-ME no map yet (128): the reason
 - US-0337 Carlton Pond Wetland Management District: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.fws.gov/office/carlton-pond-waterfowl-production-area/map)
@@ -2541,7 +2541,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - US-10413 Acadiana Conservation Corridor Wildlife Manag: no map link on file and none on the park page
 - US-10447 Audubon State Historic Site: HTTP 403 (needs browser: the page refused a plain reader (HTTP 403))
 - US-10448 Centenary State Historic Site: HTTP 403 (needs browser: the page refused a plain reader (HTTP 403))
-- US-10449 Fort Jessup State Historic Site: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
+- US-10449 Fort Jessup State Historic Site: HTTP 403 (needs browser: the page refused a plain reader (HTTP 403))
 - US-10450 Fort St. Jean Baptiste State Historic Site: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
 - US-10451 Longfellow-Evangeline State Historic Site: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
 - US-10452 Los Adaes State Historic Site: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
@@ -2831,15 +2831,21 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
 |---|---|---|---|---|---|---|
 | US-10540 | Bellevue-Watson State Fish Hatchery | https://cpw.state.co.us/sites/default/files/dam/ieozaiss1x/bellvue-watson-state-fish-hatch | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted Mar 18, 2026 |  ✗ | operated by Colorado Parks |
-| US-9683 | Amache National Historic Site | https://www.nps.gov/amch/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted April 22, 2025 | https://www.nps.gov/amch/learn/management/lawsandpolicies.htm ✓ |  |
-| US-4566 | California National Historic Trail | https://www.nps.gov/cali/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted August 28, 2026 | https://www.nps.gov/cali/learn/management/lawsandpolicies.htm ✓ |  |
-| US-4579 | Santa Fe National Historic Trail | https://www.nps.gov/safe/planyourvisit/upload/National-Park-Service-Santa-Fe-Trail-Map-508 | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted Mar 22, 2018 | https://www.nps.gov/safe/learn/management/lawsandpolicies.htm ✗ |  |
-| US-0008 | Black Canyon of the Gunnison National Pa | https://www.nps.gov/blca/planyourvisit/upload/Black_Canyon_unigrid_2023_508_web.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted 2023 | https://www.nps.gov/blca/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0222 | Baca National Wildlife Refuge | https://www.fws.gov/refuge/baca/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted — | https://www.fws.gov/refuge/baca/visit-us/rules-policies ✓ |  |
+| US-0220 | Alamosa National Wildlife Refuge | https://www.fws.gov/sites/default/files/documents/AlamosaRiverTrail%20Map.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted Nov 29, 2021 | https://www.fws.gov/refuge/alamosa/visit-us/rules-policies ✓ |  |
+| US-0221 | Arapaho National Wildlife Refuge | https://www.fws.gov/refuge/arapaho/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted — | https://www.fws.gov/refuge/arapaho/visit-us/rules-policies ✓ |  |
+| US-0059 | Rocky Mountain National Park | https://www.nps.gov/romo/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted August 31, 2026 | https://www.nps.gov/romo/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0051 | Mesa Verde National Park | https://www.nps.gov/meve/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted April 21, 2025 | https://www.nps.gov/meve/learn/management/lawsandpolicies.htm ✓ |  |
 | US-4575 | Old Spanish National Historic Trail | https://www.nps.gov/olsp/planyourvisit/upload/National-Park-Service-Old-Spanish-Brochure-M | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted Mar 22, 2018 | https://www.nps.gov/olsp/learn/management/lawsandpolicies.htm ✓ |  |
+| US-9683 | Amache National Historic Site | https://www.nps.gov/amch/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted April 22, 2025 | https://www.nps.gov/amch/learn/management/lawsandpolicies.htm ✓ |  |
 | US-4578 | Pony Express National Historic Trail | https://www.nps.gov/poex/planyourvisit/upload/National-Park-Service-Pony-Express-Map-508.p | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted Mar 22, 2018 | https://www.nps.gov/poex/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0033 | Great Sand Dunes National Park | https://www.nps.gov/grsa/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted February 15, 2023 | https://www.nps.gov/grsa/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0008 | Black Canyon of the Gunnison National Pa | https://www.nps.gov/blca/planyourvisit/upload/Black_Canyon_unigrid_2023_508_web.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted 2023 | https://www.nps.gov/blca/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4579 | Santa Fe National Historic Trail | https://www.nps.gov/safe/planyourvisit/upload/National-Park-Service-Santa-Fe-Trail-Map-508 | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted Mar 22, 2018 | https://www.nps.gov/safe/learn/management/lawsandpolicies.htm ✗ |  |
+| US-4566 | California National Historic Trail | https://www.nps.gov/cali/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted August 28, 2026 | https://www.nps.gov/cali/learn/management/lawsandpolicies.htm ✓ |  |
 | US-4558 | Continental Divide Trail National Scenic | https://www.fs.usda.gov/trails/continental-divide-nst | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-30) · posted — | https://www.fs.usda.gov/trails/continental-divide-nst/plan-visit/know- ✓ |  |
 
-### US-CO no map yet (12): the reason
+### US-CO no map yet (21): the reason
 - US-11902 Camp Hale National Monument: no map link on file and none on the park page (needs browser: host on the browser list)
 - US-11907 Calamity Camp BLM Historic Preservation Site: no map link on file and none on the park page (needs browser: host on the browser list)
 - US-11911 Damaree BLM Wilderness Area: no map link on file and none on the park page (needs browser: host on the browser list)
@@ -2852,6 +2858,15 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - US-5749 Kokopelli's Trail National Recreation Area: no map link on file and none on the park page (needs browser: host on the browser list)
 - US-9597 Kremmling BLM National Recreation Area: no map link on file and none on the park page (needs browser: host on the browser list)
 - US-9652 Grenada State Wildlife Area: no map link on file and none on the park page
+- US-0183 Penrose Commons National Recreation Area: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-0184 Ramah State Wildlife Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://cpw.state.co.us/sites/default/files/dam/vhuuk6xtqt/ramahswa_ge)
+- US-0185 Hugo State Wildlife Area: no map link on file and none on the park page
+- US-0188 Kinney Lake State Wildlife Area: no map link on file and none on the park page
+- US-0190 Flagler Reservoir State Wildlife Area: no map link on file and none on the park page
+- US-0191 Brush Hollow State Wildlife Area: no map link on file and none on the park page
+- US-0192 Beaver Creek State Wildlife Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://cpw.state.co.us/sites/default/files/dam/gane8l4dru/beavercreek)
+- US-0195 Ogden-Treat State Wildlife Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://cpw.state.co.us/sites/default/files/dam/luho5iquia/ogdentreats)
+- US-0223 Browns Park National Wildlife Refuge: 
 
 ## US-OH sample (random 12 per agency group, seed 28)
 | ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |

@@ -551,23 +551,456 @@
    "handover": [],
    "notes": [],
    "ver": 7
+  },
+  "US-0033": {
+   "n": "Great Sand Dunes National Park",
+   "t": "National Park",
+   "page": "https://www.nps.gov/grsa/index.htm",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.nps.gov/grsa/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "February 15, 2023",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/grsa/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0051": {
+   "n": "Mesa Verde National Park",
+   "t": "National Park",
+   "page": "https://www.nps.gov/meve/index.htm",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.nps.gov/meve/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "April 21, 2025",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/meve/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0059": {
+   "n": "Rocky Mountain National Park",
+   "t": "National Park",
+   "page": "https://www.nps.gov/romo/index.htm",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.nps.gov/romo/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "August 31, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/romo/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0183": {
+   "n": "Penrose Commons National Recreation Area",
+   "t": "National Recreation Area",
+   "page": "https://www.blm.gov/visit/penrose-common-rec-site",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Bureau of Land Management",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7
+  },
+  "US-0184": {
+   "n": "Ramah State Wildlife Area",
+   "t": "State Wildlife Area",
+   "page": "https://cpw.state.co.us/state-wildlife-areas/ramah-swa",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://cpw.state.co.us/sites/default/files/dam/vhuuk6xtqt/ramahswa_ge)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "Colorado Parks and Wildlife",
+   "runs": [
+    "managed by Colorado Parks"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://cpw.state.co.us/sites/default/files/dam/vhuuk6xtqt/ramahswa_geo.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-0185": {
+   "n": "Hugo State Wildlife Area",
+   "t": "State Wildlife Area",
+   "page": "https://cpw.state.co.us/swa/Hugo%20SWA",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-0188": {
+   "n": "Kinney Lake State Wildlife Area",
+   "t": "State Wildlife Area",
+   "page": "https://cpw.state.co.us/swa/Kinney%20Lake%20SWA",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-0190": {
+   "n": "Flagler Reservoir State Wildlife Area",
+   "t": "State Wildlife Area",
+   "page": "https://cpw.state.co.us/swa/Flagler%20Reservoir%20SWA",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-0191": {
+   "n": "Brush Hollow State Wildlife Area",
+   "t": "State Wildlife Area",
+   "page": "https://cpw.state.co.us/swa/Brush%20Hollow%20SWA",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: HTTP 404"
+   ],
+   "ver": 7
+  },
+  "US-0192": {
+   "n": "Beaver Creek State Wildlife Area",
+   "t": "State Wildlife Area",
+   "page": "https://cpw.state.co.us/state-wildlife-areas/beaver-creek-swa",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://cpw.state.co.us/sites/default/files/dam/gane8l4dru/beavercreek)",
+    "how": "a link on the park's page ('Download Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [
+    "managed by Colorado Parks"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://cpw.state.co.us/sites/default/files/dam/gane8l4dru/beavercreekswa_geo.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Download Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-0195": {
+   "n": "Ogden-Treat State Wildlife Area",
+   "t": "State Wildlife Area",
+   "page": "https://cpw.state.co.us/state-wildlife-areas/ogden-treat-swa",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://cpw.state.co.us/sites/default/files/dam/luho5iquia/ogdentreats)",
+    "how": "a link on the park's page ('Download Map')"
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [
+    "managed by Colorado Parks"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://cpw.state.co.us/sites/default/files/dam/luho5iquia/ogdentreatswa_geo.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Download Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-0220": {
+   "n": "Alamosa National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/alamosa",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.fws.gov/sites/default/files/documents/AlamosaRiverTrail%20Map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Alamosa River Trail Map.pdf') -> the page's 'AlamosaRiverTrail Map.pdf' file",
+    "posted": "Nov 29, 2021",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "page": "https://www.fws.gov/media/alamosa-river-trail-mappdf",
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/alamosa/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0221": {
+   "n": "Arapaho National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/arapaho",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.fws.gov/refuge/arapaho/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/arapaho/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0222": {
+   "n": "Baca National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/baca",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.fws.gov/refuge/baca/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/baca/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0223": {
+   "n": "Browns Park National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/browns-park",
+   "checked": "2026-10-30",
+   "map": null,
+   "rules": null,
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [
+    "is administered by the U.S. Fish and Wildlife Service"
+   ],
+   "handover": [],
+   "notes": [],
+   "ver": 7
   }
  },
  "read": "2026-10-30",
  "counts": {
-  "parks": 20,
-  "map ok": 8,
-  "map found by the bot": 1,
+  "parks": 35,
+  "map ok": 14,
+  "map found by the bot": 4,
   "date on the map": 0,
-  "posted date only": 7,
-  "date unknown": 1,
-  "no map": 12,
-  "rules ok": 9,
-  "needs browser": 10,
+  "posted date only": 11,
+  "date unknown": 3,
+  "no map": 21,
+  "rules ok": 15,
+  "needs browser": 11,
   "handover hints": 0,
-  "runs hints": 2,
+  "runs hints": 6,
   "host resting / robots": 0,
-  "map names the park": 8,
+  "map names the park": 14,
   "region overview only": 0
  }
 }
