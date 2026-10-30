@@ -1,0 +1,58 @@
+{
+ "chat": 10,
+ "kind": "map-check",
+ "screenshot": true,
+ "report": "chat 10 probe: why SHOW THIS PARK'S OUTLINE does nothing in the headless run (US-7041)",
+ "urls": [
+  {
+   "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html",
+   "read": [
+    ".leaflet-popup-content",
+    "#us-status"
+   ],
+   "steps": [
+    {
+     "wait": 2000
+    },
+    {
+     "fill": "#usq",
+     "text": "US-7041",
+     "wait": 1500
+    },
+    {
+     "click": ".kps-box button[data-i=\"0\"]",
+     "wait": 6000
+    },
+    {
+     "click": "a.ref:text-is(\"US-7041\")",
+     "wait": 4000
+    },
+    {
+     "eval": "(()=>{const bs=[...document.querySelectorAll('[data-a=\"bound\"]')];return JSON.stringify({n:bs.length,b:bs.map(b=>[b.textContent,!!b.onclick,b.isConnected,b.disabled,!!b.closest('.leaflet-popup')]),status:(document.getElementById('us-status')||{}).innerText,popups:document.querySelectorAll('.leaflet-popup').length})})()"
+    },
+    {
+     "click": ".leaflet-popup-content [data-a=\"bound\"]",
+     "wait": 1500
+    },
+    {
+     "eval": "(()=>{const bs=[...document.querySelectorAll('[data-a=\"bound\"]')];return JSON.stringify({n:bs.length,b:bs.map(b=>[b.textContent,!!b.onclick,b.isConnected,b.disabled,!!b.closest('.leaflet-popup')]),status:(document.getElementById('us-status')||{}).innerText,popups:document.querySelectorAll('.leaflet-popup').length})})()"
+    },
+    {
+     "wait": 12000
+    },
+    {
+     "eval": "(()=>{const bs=[...document.querySelectorAll('[data-a=\"bound\"]')];return JSON.stringify({n:bs.length,b:bs.map(b=>[b.textContent,!!b.onclick,b.isConnected,b.disabled,!!b.closest('.leaflet-popup')]),status:(document.getElementById('us-status')||{}).innerText,popups:document.querySelectorAll('.leaflet-popup').length})})()"
+    },
+    {
+     "eval": "(()=>{const b=document.querySelector('.leaflet-popup-content [data-a=\"bound\"]');if(!b)return 'no btn';b.dispatchEvent(new MouseEvent('click',{bubbles:true}));return 'js-clicked'})()"
+    },
+    {
+     "wait": 12000
+    },
+    {
+     "eval": "(()=>{const bs=[...document.querySelectorAll('[data-a=\"bound\"]')];return JSON.stringify({n:bs.length,b:bs.map(b=>[b.textContent,!!b.onclick,b.isConnected,b.disabled,!!b.closest('.leaflet-popup')]),status:(document.getElementById('us-status')||{}).innerText,popups:document.querySelectorAll('.leaflet-popup').length})})()"
+    }
+   ]
+  }
+ ]
+}
