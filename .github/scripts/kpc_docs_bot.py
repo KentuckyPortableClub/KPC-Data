@@ -473,6 +473,35 @@ def from_list(name, entry):
 
 
 # ------------------------------------------------------------------ one park
+FABLE = {}
+def fable_links():
+    """Oct 30 1:30 PM (Brandon: 'use the Fable list so it knows what we don't have'): every map / PDF / image link chat 8 and the
+    others wrote on a park's rows in the Fable book (KPC-Links .claude/build/research/fable/<area>.md) = a map candidate on file."""
+    if FABLE: return FABLE
+    for f in (LINKS / '.claude' / 'build' / 'research' / 'fable').glob('*.md'):
+        for line in open(f, encoding='utf-8', errors='replace'):
+            m = re.match(r'\|\s*((?:US|CA)-\d{4,5})\s*\|', line)
+            if not m: continue
+            for u in re.findall(r'https?://[^\s`)|<>"\']+|\b(?:[a-z0-9-]+\.)+(?:gov|us|ca|org|com|net)/[^\s`)|<>"\']+\.(?:pdf|jpe?g|png)\b', line, re.I):
+                u = u.rstrip('.,;')
+                if not u.lower().startswith('http'): u = 'https://' + u
+                if re.search(r'\.(pdf|jpe?g|png|gif)(?:$|[?#])|map', u, re.I) and 'pota.app' not in u:
+                    FABLE.setdefault(m.group(1), [])
+                    if u not in FABLE[m.group(1)]: FABLE[m.group(1)].append(u)
+    FABLE.setdefault('_', [])
+    return FABLE
+
+
+def no_outline():
+    """Parks the keys still have no OFFICIAL outline for (US, Canada, world): these go first in every area."""
+    out = set()
+    for pat in ('data/us-key/US-*.json', 'data/ca-key/CA-*.json', 'data/world-key/[A-Z][A-Z].json'):
+        for f in LINKS.glob(pat):
+            for r, v in ((load(f, {}) or {}).get('parks') or {}).items():
+                if not (isinstance(v, dict) and v.get('g') == 'official'): out.add(r)
+    return out
+
+
 def seeds(ref, pinfo, web, ky):
     """What is already on file: the park's own page, a map link (parkinfo-web / Kentucky 'off'), the agency's name."""
     v = pinfo.get(ref) or []
@@ -483,6 +512,8 @@ def seeds(ref, pinfo, web, ky):
     k = ky.get(ref) or {}
     for m in (k.get('off'), k.get('off2'), w.get('map')):
         if m and str(m).startswith('http') and 'pota.app' not in m and m not in maps: maps.append(m)
+    for m in fable_links().get(ref) or []:
+        if m not in maps: maps.append(m)
     if not page and k.get('web') and 'pota.app' not in k['web']: page = k['web']
     return {'name': v[0] if v else k.get('n', ref), 'type': v[2] if len(v) > 2 else '', 'page': page, 'maps': maps, 'agency': w.get('agency') or k.get('agency') or '',
             'ky_answer': k.get('off') or ''}
@@ -796,7 +827,8 @@ def run_area(area, state, web, lists, ky):
     if not parks: notice(f'{area}: no park list (data/parkinfo)'); state['areas'][area] = {'status': 'done', 'parks': 0, 'updated': TODAY}; return
     AREA_NAMES.clear(); AREA_NAMES.update({core(v[0] if isinstance(v, (list, tuple)) else (v.get('name', '') if isinstance(v, dict) else v)): k for k, v in parks.items()})
     done = 0; fresh = 0
-    for ref in sorted(parks):
+    NO = no_outline(); FL = fable_links()
+    for ref in sorted(parks, key=lambda r: (r not in FL, r not in NO, r)):   # Oct 30 1:30 PM: what we DON'T have first (Fable book, then no official outline)
         if late(): break
         old = D['parks'].get(ref)
         if old and old.get('ver', 1) >= VER and old.get('checked', '') >= time.strftime('%Y-%m-%d', time.gmtime(time.time() - REFRESH_DAYS * 86400)):
