@@ -1,0 +1,127 @@
+{
+ "request": "requests/8-parcel-tx2.json",
+ "id": "8-parcel-tx2",
+ "chat": 8,
+ "kind": "parcel",
+ "report": "P-3 TX retry with real statewide layer",
+ "asked": {
+  "chat": 8,
+  "kind": "parcel",
+  "report": "P-3 TX retry with real statewide layer",
+  "layer": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
+  "fields": "*",
+  "refs": [
+   "US-10272",
+   "US-10273",
+   "US-10275",
+   "US-12109",
+   "US-6560",
+   "US-6582",
+   "US-6601",
+   "US-6602"
+  ],
+  "points": [
+   [
+    31.9987,
+    -102.091
+   ],
+   [
+    35.0306,
+    -101.183
+   ],
+   [
+    28.6476,
+    -97.3827
+   ],
+   [
+    29.1556,
+    -95.6567
+   ],
+   [
+    30.2668,
+    -97.732
+   ],
+   [
+    31.5236,
+    -94.1151
+   ],
+   [
+    33.57,
+    -96.2075
+   ],
+   [
+    29.807,
+    -96.0977
+   ]
+  ]
+ },
+ "answered": "2026-10-30 01:12Z",
+ "results": [
+  {
+   "point": [
+    31.9987,
+    -102.091
+   ],
+   "error": "{'code': 400, 'extendedCode': -2147220222, 'message': 'Requested operation is not supported by this service.', 'details': ['The requested ca"
+  },
+  {
+   "point": [
+    35.0306,
+    -101.183
+   ],
+   "error": "{'code': 400, 'extendedCode': -2147220222, 'message': 'Requested operation is not supported by this service.', 'details': ['The requested ca"
+  },
+  {
+   "point": [
+    28.6476,
+    -97.3827
+   ],
+   "error": "{'code': 400, 'extendedCode': -2147220222, 'message': 'Requested operation is not supported by this service.', 'details': ['The requested ca"
+  },
+  {
+   "point": [
+    29.1556,
+    -95.6567
+   ],
+   "error": "{'code': 400, 'extendedCode': -2147220222, 'message': 'Requested operation is not supported by this service.', 'details': ['The requested ca"
+  },
+  {
+   "point": [
+    30.2668,
+    -97.732
+   ],
+   "error": "{'code': 400, 'extendedCode': -2147220222, 'message': 'Requested operation is not supported by this service.', 'details': ['The requested ca"
+  },
+  {
+   "point": [
+    31.5236,
+    -94.1151
+   ],
+   "error": "{'code': 400, 'extendedCode': -2147220222, 'message': 'Requested operation is not supported by this service.', 'details': ['The requested ca"
+  },
+  {
+   "point": [
+    33.57,
+    -96.2075
+   ],
+   "error": "{'code': 400, 'extendedCode': -2147220222, 'message': 'Requested operation is not supported by this service.', 'details': ['The requested ca"
+  },
+  {
+   "point": [
+    29.807,
+    -96.0977
+   ],
+   "error": "{'code': 400, 'extendedCode': -2147220222, 'message': 'Requested operation is not supported by this service.', 'details': ['The requested ca"
+  }
+ ],
+ "seconds": 14,
+ "manners": {
+  "requests": 8,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 8
+ },
+ "short": "8 result(s), 0 read OK"
+}
