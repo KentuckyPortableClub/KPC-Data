@@ -1,0 +1,98 @@
+{
+ "chat": 11,
+ "kind": "map-check",
+ "screenshot": true,
+ "report": "Chat 11 NOT SURE map check (us, US-LA, US-MA, US-MD): screenshots in order: 1=US-2369 (map); 2=US-11491 (map); 3=US-11491 (map); 4=US-11571 (map); 5=US-11571 (map); 6=US-7768 (record); 7=US-7768 (map). Record pages are WHOLE-page shots (the record's fields are below the query form; the text is in each result too). Map shots: the POTA pin is the marker in the middle (zoom 14).",
+ "items": [
+  {
+   "ref": "US-2369",
+   "park": "Lake D'Arbonne",
+   "record": "",
+   "area": "US-LA"
+  },
+  {
+   "ref": "US-11491",
+   "park": "Westfield Wildlife Management Area",
+   "record": "Westfield Watershed WCE",
+   "area": "US-MA"
+  },
+  {
+   "ref": "US-11491",
+   "park": "Westfield WMA",
+   "record": "",
+   "area": "US-MA"
+  },
+  {
+   "ref": "US-11571",
+   "park": "Ware River Wildlife Management Area",
+   "record": "Ware River Access - Barre",
+   "area": "US-MA"
+  },
+  {
+   "ref": "US-11571",
+   "park": "Ware River WMA",
+   "record": "",
+   "area": "US-MA"
+  },
+  {
+   "ref": "US-7768",
+   "park": "Frederick City Watershed Cooperative Wildlife Management Area",
+   "record": "Frederick Municipal Forest",
+   "area": "US-MD"
+  }
+ ],
+ "urls": [
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-92.4876%2C32.7765&level=14&marker=-92.4876%2C32.7765%2C4326%2CPOTA+pin",
+   "steps": [
+    {
+     "wait": 12000
+    }
+   ]
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-72.8211%2C42.114&level=14&marker=-72.8211%2C42.114%2C4326%2CPOTA+pin",
+   "steps": [
+    {
+     "wait": 12000
+    }
+   ]
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-72.8211%2C42.114&level=14&marker=-72.8211%2C42.114%2C4326%2CPOTA+pin",
+   "steps": [
+    {
+     "wait": 12000
+    }
+   ]
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-72.1676%2C42.3357&level=14&marker=-72.1676%2C42.3357%2C4326%2CPOTA+pin",
+   "steps": [
+    {
+     "wait": 12000
+    }
+   ]
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-72.1676%2C42.3357&level=14&marker=-72.1676%2C42.3357%2C4326%2CPOTA+pin",
+   "steps": [
+    {
+     "wait": 12000
+    }
+   ]
+  },
+  {
+   "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=16458&outFields=*&returnGeometry=false&f=html",
+   "full": true
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-77.4629%2C39.5258&level=14&marker=-77.4629%2C39.5258%2C4326%2CPOTA+pin",
+   "steps": [
+    {
+     "wait": 12000
+    }
+   ]
+  }
+ ]
+}

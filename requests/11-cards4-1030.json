@@ -1,0 +1,298 @@
+{
+ "chat": 11,
+ "kind": "map-check",
+ "screenshot": true,
+ "report": "cards4 (chat 10 for chat 11, Oct 30): cards3 pressed a hidden copy of the outline button; this one presses the button INSIDE the open card. read_text = [card] + [#us-status = Official / Approximate line]; -1..-10.jpg in order: US-13177 US-7041 US-3590 US-6853 US-11105 US-2218 US-10472 US-5567 US-11801 US-5865",
+ "urls": [
+  {
+   "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html",
+   "read": [
+    ".leaflet-popup-content",
+    "#us-status"
+   ],
+   "steps": [
+    {
+     "wait": 2000
+    },
+    {
+     "fill": "#usq",
+     "text": "US-13177",
+     "wait": 1500
+    },
+    {
+     "click": ".kps-box button[data-i=\"0\"]",
+     "wait": 6000
+    },
+    {
+     "click": "a.ref:text-is(\"US-13177\")",
+     "wait": 4000
+    },
+    {
+     "click": ".leaflet-popup-content [data-a=\"bound\"]",
+     "wait": 12000
+    }
+   ]
+  },
+  {
+   "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html",
+   "read": [
+    ".leaflet-popup-content",
+    "#us-status"
+   ],
+   "steps": [
+    {
+     "wait": 2000
+    },
+    {
+     "fill": "#usq",
+     "text": "US-7041",
+     "wait": 1500
+    },
+    {
+     "click": ".kps-box button[data-i=\"0\"]",
+     "wait": 6000
+    },
+    {
+     "click": "a.ref:text-is(\"US-7041\")",
+     "wait": 4000
+    },
+    {
+     "click": ".leaflet-popup-content [data-a=\"bound\"]",
+     "wait": 12000
+    }
+   ]
+  },
+  {
+   "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html",
+   "read": [
+    ".leaflet-popup-content",
+    "#us-status"
+   ],
+   "steps": [
+    {
+     "wait": 2000
+    },
+    {
+     "fill": "#usq",
+     "text": "US-3590",
+     "wait": 1500
+    },
+    {
+     "click": ".kps-box button[data-i=\"0\"]",
+     "wait": 6000
+    },
+    {
+     "click": "a.ref:text-is(\"US-3590\")",
+     "wait": 4000
+    },
+    {
+     "click": ".leaflet-popup-content [data-a=\"bound\"]",
+     "wait": 12000
+    }
+   ]
+  },
+  {
+   "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html",
+   "read": [
+    ".leaflet-popup-content",
+    "#us-status"
+   ],
+   "steps": [
+    {
+     "wait": 2000
+    },
+    {
+     "fill": "#usq",
+     "text": "US-6853",
+     "wait": 1500
+    },
+    {
+     "click": ".kps-box button[data-i=\"0\"]",
+     "wait": 6000
+    },
+    {
+     "click": "a.ref:text-is(\"US-6853\")",
+     "wait": 4000
+    },
+    {
+     "click": ".leaflet-popup-content [data-a=\"bound\"]",
+     "wait": 12000
+    }
+   ]
+  },
+  {
+   "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html",
+   "read": [
+    ".leaflet-popup-content",
+    "#us-status"
+   ],
+   "steps": [
+    {
+     "wait": 2000
+    },
+    {
+     "fill": "#usq",
+     "text": "US-11105",
+     "wait": 1500
+    },
+    {
+     "click": ".kps-box button[data-i=\"0\"]",
+     "wait": 6000
+    },
+    {
+     "click": "a.ref:text-is(\"US-11105\")",
+     "wait": 4000
+    },
+    {
+     "click": ".leaflet-popup-content [data-a=\"bound\"]",
+     "wait": 12000
+    }
+   ]
+  },
+  {
+   "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html",
+   "read": [
+    ".leaflet-popup-content",
+    "#us-status"
+   ],
+   "steps": [
+    {
+     "wait": 2000
+    },
+    {
+     "fill": "#usq",
+     "text": "US-2218",
+     "wait": 1500
+    },
+    {
+     "click": ".kps-box button[data-i=\"0\"]",
+     "wait": 6000
+    },
+    {
+     "click": "a.ref:text-is(\"US-2218\")",
+     "wait": 4000
+    },
+    {
+     "click": ".leaflet-popup-content [data-a=\"bound\"]",
+     "wait": 12000
+    }
+   ]
+  },
+  {
+   "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html",
+   "read": [
+    ".leaflet-popup-content",
+    "#us-status"
+   ],
+   "steps": [
+    {
+     "wait": 2000
+    },
+    {
+     "fill": "#usq",
+     "text": "US-10472",
+     "wait": 1500
+    },
+    {
+     "click": ".kps-box button[data-i=\"0\"]",
+     "wait": 6000
+    },
+    {
+     "click": "a.ref:text-is(\"US-10472\")",
+     "wait": 4000
+    },
+    {
+     "click": ".leaflet-popup-content [data-a=\"bound\"]",
+     "wait": 12000
+    }
+   ]
+  },
+  {
+   "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html",
+   "read": [
+    ".leaflet-popup-content",
+    "#us-status"
+   ],
+   "steps": [
+    {
+     "wait": 2000
+    },
+    {
+     "fill": "#usq",
+     "text": "US-5567",
+     "wait": 1500
+    },
+    {
+     "click": ".kps-box button[data-i=\"0\"]",
+     "wait": 6000
+    },
+    {
+     "click": "a.ref:text-is(\"US-5567\")",
+     "wait": 4000
+    },
+    {
+     "click": ".leaflet-popup-content [data-a=\"bound\"]",
+     "wait": 12000
+    }
+   ]
+  },
+  {
+   "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html",
+   "read": [
+    ".leaflet-popup-content",
+    "#us-status"
+   ],
+   "steps": [
+    {
+     "wait": 2000
+    },
+    {
+     "fill": "#usq",
+     "text": "US-11801",
+     "wait": 1500
+    },
+    {
+     "click": ".kps-box button[data-i=\"0\"]",
+     "wait": 6000
+    },
+    {
+     "click": "a.ref:text-is(\"US-11801\")",
+     "wait": 4000
+    },
+    {
+     "click": ".leaflet-popup-content [data-a=\"bound\"]",
+     "wait": 12000
+    }
+   ]
+  },
+  {
+   "url": "https://kentuckyportableclub.github.io/KPC-Links/kpc-planner-us.html",
+   "read": [
+    ".leaflet-popup-content",
+    "#us-status"
+   ],
+   "steps": [
+    {
+     "wait": 2000
+    },
+    {
+     "fill": "#usq",
+     "text": "US-5865",
+     "wait": 1500
+    },
+    {
+     "click": ".kps-box button[data-i=\"0\"]",
+     "wait": 6000
+    },
+    {
+     "click": "a.ref:text-is(\"US-5865\")",
+     "wait": 4000
+    },
+    {
+     "click": ".leaflet-popup-content [data-a=\"bound\"]",
+     "wait": 12000
+    }
+   ]
+  }
+ ]
+}
