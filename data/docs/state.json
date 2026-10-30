@@ -68,7 +68,7 @@
    "parks": 167,
    "checked": 167,
    "left": 0,
-   "updated": "2026-10-29"
+   "updated": "2026-10-30"
   },
   "US-MS": {
    "status": "done",
@@ -106,11 +106,10 @@
    "updated": "2026-10-29"
   },
   "US-IA": {
-   "status": "done",
+   "status": "failed",
    "parks": 181,
-   "checked": 181,
-   "left": 0,
-   "updated": "2026-10-29"
+   "updated": "2026-10-30",
+   "why": "maps 82 -> 64"
   },
   "US-ND": {
    "status": "done",
@@ -124,14 +123,14 @@
    "parks": 120,
    "checked": 120,
    "left": 0,
-   "updated": "2026-10-29"
+   "updated": "2026-10-30"
   },
   "US-PA": {
    "status": "done",
    "parks": 494,
    "checked": 494,
    "left": 0,
-   "updated": "2026-10-29"
+   "updated": "2026-10-30"
   },
   "US-NY": {
    "status": "done",
@@ -145,7 +144,7 @@
    "parks": 134,
    "checked": 134,
    "left": 0,
-   "updated": "2026-10-29"
+   "updated": "2026-10-30"
   },
   "US-CT": {
    "status": "done",
@@ -159,7 +158,7 @@
    "parks": 61,
    "checked": 61,
    "left": 0,
-   "updated": "2026-10-29"
+   "updated": "2026-10-30"
   },
   "US-MA": {
    "status": "done",
@@ -251,44 +250,44 @@
    "checked": 5,
    "left": 193,
    "updated": "2026-10-29"
+  },
+  "US-OH": {
+   "status": "done",
+   "parks": 276,
+   "checked": 276,
+   "left": 0,
+   "updated": "2026-10-30"
   }
  },
  "hosts": {
-  "sojournertruthstatepark.info": 1793325011.1974332,
-  "www.mass-trails.org": 1793326495.1067936,
-  "www.usna.usda.gov": 1793332248.1578314,
-  "fhwaapps.fhwa.dot.gov": 1793332633.3492808,
-  "www.agfc": 1793332866.3907526,
-  "mip.agri.arkansas.gov": 1793332986.7646573,
-  "dnrmaps.wi.gov": 1793353106.949125,
-  "apps.dnr.wi.gov": 1793353387.1758375,
-  "dnr.wi.gov": 1793353795.6671379,
-  "legacy.fws.gov": 1793362944.7849255,
-  "www.tn.gov": 1793365737.419028,
-  "tennesseerivervalleygeotourism.org": 1793366218.1591492,
-  "wolfememorial.com": 1793366796.4594877,
-  "www.virginiastateparks.gov": 1793367635.065476,
-  "www5.swfwmd.state.fl.us": 1793373160.1014225,
-  "map.co.door.wi.us": 1793408717.0830843
+  "map.co.door.wi.us": 1793408717.0830843,
+  "iowaculture.gov": 1793470401.4579036,
+  "www.cgcounty.org": 1793470509.805759
  },
  "last": {
   "when": "2026-10-30",
   "areas": [
-   "US-WI"
+   "US-SD",
+   "US-OH",
+   "US-IA",
+   "US-RI",
+   "US-NJ",
+   "US-SC",
+   "US-PA",
+   "US-LA"
   ],
   "stat": {
-   "requests": 524,
-   "parks": 348,
-   "maps_ok": 115,
-   "maps_found": 108,
-   "dates": 0,
-   "rules": 23,
-   "browser": 6,
-   "robots": 106,
-   "strikes": 4,
-   "errors": 4,
-   "skipped_fresh": 0,
-   "kept_on_rest": 180
+   "requests": 1898,
+   "parks": 826,
+   "maps_ok": 317,
+   "maps_found": 205,
+   "dates": 17,
+   "rules": 569,
+   "browser": 178,
+   "robots": 11,
+   "strikes": 6,
+   "errors": 6,
+   "skipped_fresh": 167
   }
  }
 }

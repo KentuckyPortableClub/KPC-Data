@@ -1,0 +1,4353 @@
+{
+ "area": "US-SD",
+ "about": "Official map + rules page + who runs it, per park (documents bot). Nothing here reaches a card until chat 8 grades it.",
+ "parks": {
+  "US-0005": {
+   "n": "Badlands National Park",
+   "t": "National Park",
+   "page": "https://www.nps.gov/badl/index.htm",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.nps.gov/badl/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "April 27, 2022",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/badl/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0068": {
+   "n": "Wind Cave National Park",
+   "t": "National Park",
+   "page": "https://www.nps.gov/wica/index.htm",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.nps.gov/wica/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "January 18, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/wica/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0525": {
+   "n": "Huron Wetland Management District",
+   "t": "Wetland Management District",
+   "page": "https://www.fws.gov/refuge/huron-wetland-management-district/visit-us",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.fws.gov/refuge/huron-wetland-management-district/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/huron-wetland-management-district/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0527": {
+   "n": "Lacreek National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/Lacreek/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.fws.gov/refuge/lacreek/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Interactive Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/locations/lacreek-national-wildlife-refuge/rules-and-policies",
+    "how": "a link on the park's page ('Rules and Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0528": {
+   "n": "Lake Andes National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/lake_andes/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.fws.gov/refuge/lake-andes/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/lake-andes/visit-us/rules-policies",
+    "how": "a link on the park's page ('Rules Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [
+    "is owned by the State of South Dakota"
+   ],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.fws.gov/media/lake-andes-complex-brochure",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-30",
+     "how": "a link on the park's page ('')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-0529": {
+   "n": "Madison Wetland Management District",
+   "t": "Wetland Management District",
+   "page": "https://www.fws.gov/refuge/madison-wetland-management-district",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.fws.gov/refuge/madison-wetland-management-district/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/madison-wetland-management-district/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0530": {
+   "n": "Sand Lake National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/sand_lake/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.fws.gov/refuge/sand-lake/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/sand-lake/visit-us/rules-policies",
+    "how": "a link on the park's page ('Rules Policies')",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0531": {
+   "n": "Waubay National Wildlife Refuge",
+   "t": "National Wildlife Refuge",
+   "page": "https://www.fws.gov/refuge/waubay/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.fws.gov/refuge/waubay/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/waubay/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_also": [
+    {
+     "url": "https://www.fws.gov/media/waubay-national-wildlife-refuge-wetland-management-district-brochure",
+     "status": "ok",
+     "kind": "page",
+     "date": null,
+     "date_how": "date unknown, checked 2026-10-30",
+     "how": "a link on the park's page ('General Brochure')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": true,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-0532": {
+   "n": "Waubay Wetland Management District",
+   "t": "Wetland Management District",
+   "page": "https://www.fws.gov/refuge/waubay-wetland-management-district",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.fws.gov/refuge/waubay-wetland-management-district/map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Map')",
+    "posted": "",
+    "posted_how": "",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.fws.gov/refuge/waubay-wetland-management-district/visit-us/rules-policies",
+    "how": "FWS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Fish and Wildlife Service",
+   "runs": [
+    "managed by the Fish and Wildlife Service"
+   ],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0675": {
+   "n": "Missouri National Recreational River National Wild & Scenic River",
+   "t": "National Wild & Scenic River",
+   "page": "https://www.nps.gov/mnrr/index.htm",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.nps.gov/mnrr/planyourvisit/maps.htm)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/mnrr/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://www.nps.gov/mnrr/planyourvisit/maps.htm",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "September 21, 2024",
+     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-0786": {
+   "n": "Mount Rushmore National Memorial",
+   "t": "National Memorial",
+   "page": "https://www.nps.gov/moru/index.htm",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.nps.gov/moru/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "October 6, 2022",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/moru/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0850": {
+   "n": "Minuteman Missile National Historic Site",
+   "t": "National Historic Site",
+   "page": "https://www.nps.gov/mimi/index.htm",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.nps.gov/mimi/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "March 31, 2016",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/mimi/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-0944": {
+   "n": "Jewel Cave National Monument",
+   "t": "National Monument",
+   "page": "https://www.nps.gov/jeca/index.htm",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.nps.gov/jeca/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "September 22, 2023",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/jeca/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-10319": {
+   "n": "South Scalp Creek State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/lakeside-use-areas/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 37 parks was dropped: https://unblock.federalregister.gov/)",
+    "how": "a link on the park's page ('Federal Navigation Rules')"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10320": {
+   "n": "South Wheeler State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/lakeside-use-areas/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 37 parks was dropped: https://unblock.federalregister.gov/)",
+    "how": "a link on the park's page ('Federal Navigation Rules')"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10321": {
+   "n": "Joe Day Bay State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/lakeside-use-areas/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 37 parks was dropped: https://unblock.federalregister.gov/)",
+    "how": "a link on the park's page ('Federal Navigation Rules')"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10322": {
+   "n": "South Shore State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/lakeside-use-areas/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 37 parks was dropped: https://unblock.federalregister.gov/)",
+    "how": "a link on the park's page ('Federal Navigation Rules')"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10323": {
+   "n": "White Swan State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/lakeside-use-areas/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 37 parks was dropped: https://unblock.federalregister.gov/)",
+    "how": "a link on the park's page ('Federal Navigation Rules')"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10324": {
+   "n": "Whetstone Bay State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/lakeside-use-areas/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 37 parks was dropped: https://unblock.federalregister.gov/)",
+    "how": "a link on the park's page ('Federal Navigation Rules')"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10325": {
+   "n": "West Shore State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/lakeside-use-areas/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 37 parks was dropped: https://unblock.federalregister.gov/)",
+    "how": "a link on the park's page ('Federal Navigation Rules')"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10326": {
+   "n": "Walth Bay State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/lakeside-use-areas/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 37 parks was dropped: https://unblock.federalregister.gov/)",
+    "how": "a link on the park's page ('Federal Navigation Rules')"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10327": {
+   "n": "Thomas Bay State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/lakeside-use-areas/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 37 parks was dropped: https://unblock.federalregister.gov/)",
+    "how": "a link on the park's page ('Federal Navigation Rules')"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10328": {
+   "n": "Sutton Bay State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/lakeside-use-areas/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 37 parks was dropped: https://unblock.federalregister.gov/)",
+    "how": "a link on the park's page ('Federal Navigation Rules')"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10329": {
+   "n": "Hugh Glass State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/lakeside-use-areas/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 37 parks was dropped: https://unblock.federalregister.gov/)",
+    "how": "a link on the park's page ('Federal Navigation Rules')"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10330": {
+   "n": "Newell Lake State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/lakeside-use-areas/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 37 parks was dropped: https://unblock.federalregister.gov/)",
+    "how": "a link on the park's page ('Federal Navigation Rules')"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10331": {
+   "n": "Bailey State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/lakeside-use-areas/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 37 parks was dropped: https://unblock.federalregister.gov/)",
+    "how": "a link on the park's page ('Federal Navigation Rules')"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10340": {
+   "n": "Wall Lake State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/lakeside-use-areas/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 37 parks was dropped: https://unblock.federalregister.gov/)",
+    "how": "a link on the park's page ('Federal Navigation Rules')"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10341": {
+   "n": "Clay County State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/lakeside-use-areas/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 37 parks was dropped: https://unblock.federalregister.gov/)",
+    "how": "a link on the park's page ('Federal Navigation Rules')"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10349": {
+   "n": "Sand Creek State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/lakeside-use-areas/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 37 parks was dropped: https://unblock.federalregister.gov/)",
+    "how": "a link on the park's page ('Federal Navigation Rules')"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10350": {
+   "n": "Tabor State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/lakeside-use-areas/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 37 parks was dropped: https://unblock.federalregister.gov/)",
+    "how": "a link on the park's page ('Federal Navigation Rules')"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10360": {
+   "n": "Shaw Creek State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/lakeside-use-areas/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 37 parks was dropped: https://unblock.federalregister.gov/)",
+    "how": "a link on the park's page ('Federal Navigation Rules')"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10361": {
+   "n": "Chantier Creek State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/lakeside-use-areas/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 37 parks was dropped: https://unblock.federalregister.gov/)",
+    "how": "a link on the park's page ('Federal Navigation Rules')"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10362": {
+   "n": "Peoria Flats State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/lakeside-use-areas/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 37 parks was dropped: https://unblock.federalregister.gov/)",
+    "how": "a link on the park's page ('Federal Navigation Rules')"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10363": {
+   "n": "DeGray State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/lakeside-use-areas/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 37 parks was dropped: https://unblock.federalregister.gov/)",
+    "how": "a link on the park's page ('Federal Navigation Rules')"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10364": {
+   "n": "Joe Creek State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/lakeside-use-areas/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 37 parks was dropped: https://unblock.federalregister.gov/)",
+    "how": "a link on the park's page ('Federal Navigation Rules')"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10365": {
+   "n": "Little Bend State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/lakeside-use-areas/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 37 parks was dropped: https://unblock.federalregister.gov/)",
+    "how": "a link on the park's page ('Federal Navigation Rules')"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10366": {
+   "n": "Foster Bay State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/lakeside-use-areas/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 37 parks was dropped: https://unblock.federalregister.gov/)",
+    "how": "a link on the park's page ('Federal Navigation Rules')"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10367": {
+   "n": "Minneconjou State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/lakeside-use-areas/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 37 parks was dropped: https://unblock.federalregister.gov/)",
+    "how": "a link on the park's page ('Federal Navigation Rules')"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10368": {
+   "n": "Bush's Landing State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/lakeside-use-areas/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 37 parks was dropped: https://unblock.federalregister.gov/)",
+    "how": "a link on the park's page ('Federal Navigation Rules')"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10369": {
+   "n": "East Shore State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/lakeside-use-areas/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 37 parks was dropped: https://unblock.federalregister.gov/)",
+    "how": "a link on the park's page ('Federal Navigation Rules')"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10370": {
+   "n": "Fort George State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/lakeside-use-areas/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 37 parks was dropped: https://unblock.federalregister.gov/)",
+    "how": "a link on the park's page ('Federal Navigation Rules')"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10371": {
+   "n": "Antelope Creek State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/lakeside-use-areas/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 37 parks was dropped: https://unblock.federalregister.gov/)",
+    "how": "a link on the park's page ('Federal Navigation Rules')"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10372": {
+   "n": "Spillway (Ft. Randall) State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/lakeside-use-areas/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 37 parks was dropped: https://unblock.federalregister.gov/)",
+    "how": "a link on the park's page ('Federal Navigation Rules')"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10373": {
+   "n": "East Whitelock State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/lakeside-use-areas/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 37 parks was dropped: https://unblock.federalregister.gov/)",
+    "how": "a link on the park's page ('Federal Navigation Rules')"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10374": {
+   "n": "Bob's Landing State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/lakeside-use-areas/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 37 parks was dropped: https://unblock.federalregister.gov/)",
+    "how": "a link on the park's page ('Federal Navigation Rules')"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10375": {
+   "n": "Dodge Draw State Vehicle Recreational Area",
+   "t": "State Vehicle Recreational Area",
+   "page": "https://gfp.sd.gov/lakeside-use-areas/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 37 parks was dropped: https://unblock.federalregister.gov/)",
+    "how": "a link on the park's page ('Federal Navigation Rules')"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10376": {
+   "n": "Le Beau State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/lakeside-use-areas/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 37 parks was dropped: https://unblock.federalregister.gov/)",
+    "how": "a link on the park's page ('Federal Navigation Rules')"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10377": {
+   "n": "Bowdle Beach State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/lakeside-use-areas/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 37 parks was dropped: https://unblock.federalregister.gov/)",
+    "how": "a link on the park's page ('Federal Navigation Rules')"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10378": {
+   "n": "Dude Ranch State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/lakeside-use-areas/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 37 parks was dropped: https://unblock.federalregister.gov/)",
+    "how": "a link on the park's page ('Federal Navigation Rules')"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-10379": {
+   "n": "Elm Creek State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/lakeside-use-areas/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 37 parks was dropped: https://unblock.federalregister.gov/)",
+    "how": "a link on the park's page ('Federal Navigation Rules')"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-11905": {
+   "n": "Centennial Trail State Trail",
+   "t": "State Trail",
+   "page": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://gfp.sd.gov/userdocs/centennial-trail-brochure.pdf&ved=2ahUKEwjp4oSyh9SIAxUB4MkDHXM7Ks0QFnoECBsQAQ&usg=AOvVaw2RF67g-FxDksjS82N40p0i",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [
+    "park page: robots"
+   ],
+   "ver": 7
+  },
+  "US-2916": {
+   "n": "Bear Butte State Park",
+   "t": "State Park",
+   "page": "https://gfp.sd.gov/parks/detail/bear-butte-state-park/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/bear_butte_trails.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Trail Map and Guide')",
+    "posted": "May 29, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-2917": {
+   "n": "Custer State Park",
+   "t": "State Park",
+   "page": "https://gfp.sd.gov/parks/detail/custer-state-park/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://gfp.sd.gov/userdocs/tatanka_scenic.pdf; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://gfp.sd.gov/userdocs/csp_trail_guide.pdf)",
+    "how": "a link on the park's page ('Park Overview Map')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/userdocs/tatanka_scenic.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Park Overview Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://gfp.sd.gov/userdocs/csp_trail_guide.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Custer State Park Trail Guide')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-2918": {
+   "n": "Fort Sisseton State Park",
+   "t": "State Park",
+   "page": "https://gfp.sd.gov/parks/detail/fort-sisseton-historic-state-park/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/fort_sisseton.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Campground Map')",
+    "posted": "Jul 01, 2024",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "kind_note": "campground map (nothing better found)",
+    "card_note": "Campground map: the agency has no park map.",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "card_note": "Campground map: the agency has no park map.",
+   "ver": 7
+  },
+  "US-2919": {
+   "n": "Good Earth State Park",
+   "t": "State Park",
+   "page": "https://gfp.sd.gov/parks/detail/good-earth-state-park/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/good_earth_trails.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Trail map and guide')",
+    "posted": "May 30, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-2920": {
+   "n": "Hartford Beach State Park",
+   "t": "State Park",
+   "page": "https://gfp.sd.gov/parks/detail/hartford-beach-state-park/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://gfp.sd.gov/userdocs/hartford_trails.pdf; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://gfp.sd.gov/userdocs/hartford_cgs.pdf)",
+    "how": "a link on the park's page ('Trail map and guide')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/userdocs/hartford_trails.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail map and guide')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://gfp.sd.gov/userdocs/hartford_cgs.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Campground Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-2921": {
+   "n": "Lake Herman State Park",
+   "t": "State Park",
+   "page": "https://gfp.sd.gov/parks/detail/lake-herman-state-park/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/lake-herman-cc-ski.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Cross-country Ski Trail Map')",
+    "posted": "Dec 12, 2017",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-2922": {
+   "n": "Newton Hills State Park",
+   "t": "State Park",
+   "page": "https://gfp.sd.gov/parks/detail/newton-hills-state-park/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/newton_hills_overview.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Overview Map')",
+    "posted": "May 30, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-2923": {
+   "n": "Oakwood Lakes State Park",
+   "t": "State Park",
+   "page": "https://gfp.sd.gov/parks/detail/oakwood-lakes-state-park/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://gfp.sd.gov/userdocs/ow_overview_handout.pdf; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://gfp.sd.gov/userdocs/ow_trail_handout.pdf)",
+    "how": "a link on the park's page ('Overview Map')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/userdocs/ow_overview_handout.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Overview Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://gfp.sd.gov/userdocs/ow_trail_handout.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trails Map and Guide')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-2924": {
+   "n": "Palisades State Park",
+   "t": "State Park",
+   "page": "https://gfp.sd.gov/parks/detail/palisades-state-park/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/palisades_overview.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Overview Map')",
+    "posted": "Apr 07, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-2925": {
+   "n": "Roy Lake State Park",
+   "t": "State Park",
+   "page": "https://gfp.sd.gov/parks/detail/roy-lake-state-park/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/roy_trails.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Trail Map')",
+    "posted": "Jun 04, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-2926": {
+   "n": "Sica Hollow State Park",
+   "t": "State Park",
+   "page": "https://gfp.sd.gov/parks/detail/sica-hollow-state-park/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://gfp.sd.gov/userdocs/sica_trails.pdf; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://gfp.sd.gov/userdocs/sica_cg.pdf)",
+    "how": "a link on the park's page ('Trail map and guide')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/userdocs/sica_trails.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail map and guide')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://gfp.sd.gov/userdocs/sica_cg.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Campground Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-2927": {
+   "n": "Union Grove State Park",
+   "t": "State Park",
+   "page": "https://gfp.sd.gov/parks/detail/union-grove-state-park/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/union-grove-trails.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "April 2015",
+    "date_how": "a month + year printed on the map",
+    "how": "a link on the park's page ('Trail Map and Guide')",
+    "posted": "Dec 12, 2017",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 1,
+    "via": "the agency site",
+    "date_label": "2015: check it is still current"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-4501": {
+   "n": "Custer Gallatin National Forest",
+   "t": "National Forest",
+   "page": "https://www.fs.usda.gov/main/custergallatin/home",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.fs.usda.gov/r01/custergallatin/alerts/hyalite-porcupine-buffalo-horn-summer-interim-travel-order-and-map-and",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "the page in a browser ('Hyalite Porcupine Buffalo Horn Summer Interim Travel Order and Map and Order # 0')",
+    "page": "https://www.fs.usda.gov/main/custergallatin/home",
+    "posted": "August 19, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-10-30",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r01/custergallatin",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-4524": {
+   "n": "Black Hills National Forest",
+   "t": "National Forest",
+   "page": "https://www.fs.usda.gov/blackhills",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.fs.usda.gov/sites/nfs/files/r02/blackhills/publication/Recreation%20Sites%20Map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "the page in a browser ('Recreation Sites Map')",
+    "page": "https://www.fs.usda.gov/r02/blackhills/maps-guides",
+    "posted": "Mar 17, 2025",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-30",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r02/blackhills",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "map page on the browser list (a download button may hide the file)",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-4572": {
+   "n": "Lewis and Clark National Historic Trail",
+   "t": "National Historic Trail",
+   "page": "https://www.nps.gov/lecl/index.htm",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.nps.gov/lecl/planyourvisit/maps.htm",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "on file (parkinfo-web / Kentucky answer key)",
+    "posted": "August 5, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "https://www.nps.gov/lecl/learn/management/lawsandpolicies.htm",
+    "how": "NPS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "National Park Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-5644": {
+   "n": "Fisher Grove State Park",
+   "t": "State Park",
+   "page": "https://gfp.sd.gov/parks/detail/fisher-grove-state-park/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-5645": {
+   "n": "Spirit Mound Historic Prairie State Park",
+   "t": "State Park",
+   "page": "https://gfp.sd.gov/parks/detail/spirit-mound-historic-prairie/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-7487": {
+   "n": "Buffalo Gap National Grassland",
+   "t": "National Grassland",
+   "page": "https://www.fs.usda.gov/recarea/nebraska/recarea/?recid=30329",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.fs.usda.gov/r02/nebraska/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/recarea/nebraska/recarea/?recid=30329",
+    "posted": "August 28, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-10-30",
+    "via": "the agency site",
+    "kind_note": "forest map only"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r02/nebraska",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-7488": {
+   "n": "Fort Pierre National Grassland",
+   "t": "National Grassland",
+   "page": "https://www.fs.usda.gov/recarea/nebraska/recarea/?recid=10637",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.fs.usda.gov/r02/nebraska/maps-guides",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "the page in a browser ('Visitor Maps and Guides')",
+    "page": "https://www.fs.usda.gov/recarea/nebraska/recarea/?recid=10637",
+    "posted": "August 28, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-10-30",
+    "via": "the agency site",
+    "kind_note": "forest map only"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r02/nebraska",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-7489": {
+   "n": "Grand River National Grassland",
+   "t": "National Grassland",
+   "page": "https://www.fs.usda.gov/recarea/dpg/recarea/?recid=79472",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://www.fs.usda.gov/r01/dpg/alerts/south-dakota-grassland-fire-danger-map",
+    "status": "ok",
+    "kind": "page",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "the page in a browser ('South Dakota Grassland Fire Danger Map')",
+    "page": "https://www.fs.usda.gov/recarea/dpg/recarea/?recid=79472",
+    "posted": "March 12, 2026",
+    "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
+    "checked": "2026-10-30",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "https://www.fs.usda.gov/r01/dpg",
+    "how": "USFS rules page (pattern + opened)",
+    "status": "ok"
+   },
+   "agency": "U.S. Forest Service",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "host on the browser list",
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-7844": {
+   "n": "Adams Homestead State Nature Preserve",
+   "t": "State Nature Preserve",
+   "page": "https://gfp.sd.gov/parks/detail/adams-homestead-and-nature-preserve/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-8155": {
+   "n": "Angostura State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/angostura-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/angostura-walking-map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Walking Map')",
+    "posted": "Jan 19, 2018",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 1,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-8156": {
+   "n": "Beaver Creek State Natural Area",
+   "t": "State Natural Area",
+   "page": "",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
+   },
+   "rules": {
+    "url": "",
+    "how": "",
+    "status": "not found"
+   },
+   "agency": "",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-8157": {
+   "n": "Big Sioux State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/big-sioux-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/big_sioux_trails.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Trail Map')",
+    "posted": "Feb 04, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-8158": {
+   "n": "Big Stone Island State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/big-stone-island-nature-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/Big_Stone_Island_Location_Map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2020-02-20",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Location Map')",
+    "posted": "Feb 24, 2020",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 2,
+    "via": "the agency site",
+    "kind_note": "combined map: covers 2 units",
+    "date_label": "2020: check it is still current"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-8159": {
+   "n": "Burke Lake State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/burke-lake-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/burke_lake.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Campground Map')",
+    "posted": "Mar 02, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "kind_note": "campground map (nothing better found)",
+    "card_note": "Campground map: the agency has no park map.",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "card_note": "Campground map: the agency has no park map.",
+   "ver": 7
+  },
+  "US-8160": {
+   "n": "Buryanek State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/buryanek-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/buryanek.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Campground Map')",
+    "posted": "Mar 02, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "kind_note": "campground map (nothing better found)",
+    "card_note": "Campground map: the agency has no park map.",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "card_note": "Campground map: the agency has no park map.",
+   "ver": 7
+  },
+  "US-8161": {
+   "n": "Chief White Crane State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/chief-white-crane-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/chief-white-crane-walking-map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2007-10-10",
+    "date_how": "file stamp 2007 (older than the posting 2017 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+    "how": "a link on the park's page ('Walking Map')",
+    "posted": "Dec 12, 2017",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "2007: check it is still current"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-8162": {
+   "n": "Cow Creek State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/cow-creek-recreation-area-/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/cow-creek-walking-map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2007-10-10",
+    "date_how": "file stamp 2007 (older than the posting 2017 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+    "how": "a link on the park's page ('Walking Map')",
+    "posted": "Dec 12, 2017",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "2007: check it is still current"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-8163": {
+   "n": "Farm Island State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/farm-island-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/farm_island_trails.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Trail Map and Guide')",
+    "posted": "May 29, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-8164": {
+   "n": "George S. Mickelson State Trail",
+   "t": "State Trail",
+   "page": "https://gfp.sd.gov/parks/detail/george-s--mickelson-trail/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://gfp.sd.gov/userdocs/gsmt_brochure.pdf; opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Trail Guide')"
+   },
+   "rules": {
+    "url": "https://gfp.sd.gov/parks/detail/george-s--mickelson-trail/pages/44/",
+    "how": "a link on the park's page ('Trail Policies and Etiquette')",
+    "status": "ok"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/userdocs/gsmt_brochure.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Guide')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-8165": {
+   "n": "Indian Creek State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/indian-creek-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/indian_creek_trails.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Trail map and guide')",
+    "posted": "May 30, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-8166": {
+   "n": "LaFramboise Island State Natural Area",
+   "t": "State Natural Area",
+   "page": "https://gfp.sd.gov/parks/detail/laframboise-island-nature-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/laframboise-island.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2005-02-03",
+    "date_how": "file stamp 2005 (older than the posting 2017 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+    "how": "a link on the park's page ('Location Map')",
+    "posted": "Dec 12, 2017",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 3,
+    "via": "the agency site",
+    "kind_note": "combined map: covers 3 units",
+    "date_label": "2005: check it is still current"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-8167": {
+   "n": "Lake Alvin State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/lake-alvin-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Maps')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-8168": {
+   "n": "Lake Cochrane State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/lake-cochrane-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/lake_cochrane.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Campground Map')",
+    "posted": "Feb 09, 2024",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "kind_note": "campground map (nothing better found)",
+    "card_note": "Campground map: the agency has no park map.",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "card_note": "Campground map: the agency has no park map.",
+   "ver": 7
+  },
+  "US-8169": {
+   "n": "Lake Hiddenwood State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/lake-hiddenwood-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/hiddenwood_trail_imagery.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Trail Map')",
+    "posted": "May 30, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-8170": {
+   "n": "Lake Louise State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/lake-louise-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/louise_trail.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Trails Map')",
+    "posted": "May 30, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-8171": {
+   "n": "Lake Poinsett State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/lake-poinsett-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/poinsett_trails.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Trails Map')",
+    "posted": "Nov 20, 2024",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-8172": {
+   "n": "Lake Thompson State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/lake-thompson-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/thompson_trails.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Trail Map')",
+    "posted": "May 30, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-8173": {
+   "n": "Lake Vermillion State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/lake-vermillion-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/vermillion_trails.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Trail Map')",
+    "posted": "Jun 28, 2024",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-8174": {
+   "n": "Lewis and Clark State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/lewis-and-clark-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/lc_trails.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "the page in a browser ('Trail Map')",
+    "page": "https://gfp.sd.gov/parks/detail/lewis-and-clark-recreation-area/",
+    "posted": "May 30, 2025",
+    "posted_how": "posted: the server's file date",
+    "checked": "2026-10-30",
+    "via": "the agency site"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "needs_browser": "the map link refused a plain reader (HTTP 403)",
+   "map_tried": [
+    {
+     "url": "http://www.nwo.usace.army.mil/Missions/DamandLakeProjects/MissouriRiverDams/GavinsPoint/BoatingRecreationMaps.aspx",
+     "status": "HTTP 403",
+     "kind": "",
+     "date": null,
+     "date_how": "",
+     "how": "on file (parkinfo-web / Kentucky answer key)",
+     "posted": "",
+     "posted_how": "",
+     "names_park": null,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "on file, checked by a person or the link harvester (nwo.usace.army.mil)"
+    },
+    {
+     "url": "https://gfp.sd.gov/userdocs/lc_trails.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://gfp.sd.gov/userdocs/clay_trails.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Clay County Trail Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7,
+   "browser_checked": "2026-10-30"
+  },
+  "US-8175": {
+   "n": "Little Moreau State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/little-moreau-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/little-moreau.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2006-03-22",
+    "date_how": "file stamp 2006 (older than the posting 2017 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+    "how": "a link on the park's page ('Location Map')",
+    "posted": "Dec 12, 2017",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 1,
+    "via": "the agency site",
+    "date_label": "2006: check it is still current"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-8176": {
+   "n": "Llewellyn Johns State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/llewellyn-johns-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/2020_Shadehill_Res_Area_Map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2020-01-09",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Location Map')",
+    "posted": "2020",
+    "posted_how": "a year in the file's name (an edition hint, not a printed date)",
+    "names_park": null,
+    "checked": "2026-10-30",
+    "covers": 2,
+    "via": "the agency site",
+    "kind_note": "combined map: covers 2 units",
+    "date_label": "2020: check it is still current"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-8177": {
+   "n": "Mina Lake State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/mina-lake-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/mina_trail_overview.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Trail Map and Guide')",
+    "posted": "May 30, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-8178": {
+   "n": "North Point State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/north-point-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://gfp.sd.gov/userdocs/n_point_overview.pdf; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://gfp.sd.gov/userdocs/lower_francis_case_area_parks.pdf)",
+    "how": "a link on the park's page ('Overview Map')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/userdocs/n_point_overview.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Overview Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://gfp.sd.gov/userdocs/lower_francis_case_area_parks.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Lower Lake Francis Case Parks Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-8179": {
+   "n": "North Wheeler State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/north-wheeler-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://gfp.sd.gov/userdocs/lower_francis_case_area_parks.pdf; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://gfp.sd.gov/userdocs/nwheeler_cg.pdf)",
+    "how": "a link on the park's page ('Lower Lake Francis Case Parks Map')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/userdocs/lower_francis_case_area_parks.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Lower Lake Francis Case Parks Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://gfp.sd.gov/userdocs/nwheeler_cg.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Campground Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-8180": {
+   "n": "Oahe Downstream State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/oahe-downstream-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://gfp.sd.gov/userdocs/ods_day_use.pdf; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://gfp.sd.gov/userdocs/ods_trails.pdf)",
+    "how": "a link on the park's page ('Day Use Area Map')"
+   },
+   "rules": {
+    "url": "https://gfp.sd.gov/userdocs/oahe-downstream-archery-range-map-rules.pdf",
+    "how": "a link on the park's page ('Archery Range Map and Rules')",
+    "status": "ok"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/userdocs/ods_day_use.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Day Use Area Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://gfp.sd.gov/userdocs/ods_trails.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Cottonwood Trail Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-8181": {
+   "n": "Okobojo Point State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/okobojo-point-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/okobojo-point-walking-map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2007-10-10",
+    "date_how": "file stamp 2007 (older than the posting 2017 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+    "how": "a link on the park's page ('Walking Map')",
+    "posted": "Dec 12, 2017",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "2007: check it is still current"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-8182": {
+   "n": "Pease Creek State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/pease-creek-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://gfp.sd.gov/userdocs/lower_francis_case_area_parks.pdf; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://gfp.sd.gov/userdocs/pease_cg.pdf)",
+    "how": "a link on the park's page ('Lower Lake Francis Case Parks Map')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/userdocs/lower_francis_case_area_parks.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Lower Lake Francis Case Parks Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://gfp.sd.gov/userdocs/pease_cg.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Campground Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-8183": {
+   "n": "Pelican Lake State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/pelican-lake-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/pelican_trails.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Trail Map and Guide')",
+    "posted": "Jun 03, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-8184": {
+   "n": "Pickerel Lake State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/pickerel-lake-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/pickerel-lake-walking-map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2007-10-10",
+    "date_how": "file stamp 2007 (older than the posting 2017 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+    "how": "a link on the park's page ('Walking Map')",
+    "posted": "Dec 12, 2017",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "2007: check it is still current"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-8185": {
+   "n": "Pierson Ranch State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/pierson-ranch-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/pierson-ranch-trails.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2006-04-13",
+    "date_how": "file stamp 2006 (older than the posting 2017 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+    "how": "a link on the park's page ('Trail Map and Guide')",
+    "posted": "Dec 12, 2017",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 2,
+    "via": "the agency site",
+    "kind_note": "combined map: covers 2 units",
+    "date_label": "2006: check it is still current"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-8186": {
+   "n": "Platte Creek State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/platte-creek-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/platte_creek_cg.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Campground Map')",
+    "posted": "Mar 02, 2026",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "kind_note": "campground map (nothing better found)",
+    "card_note": "Campground map: the agency has no park map.",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "card_note": "Campground map: the agency has no park map.",
+   "ver": 7
+  },
+  "US-8187": {
+   "n": "Randall Creek State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/randall-creek-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://gfp.sd.gov/userdocs/lower_francis_case_area_parks.pdf; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://gfp.sd.gov/userdocs/randall_cg.pdf)",
+    "how": "a link on the park's page ('Lower Lake Francis Case Parks Map')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/userdocs/lower_francis_case_area_parks.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Lower Lake Francis Case Parks Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://gfp.sd.gov/userdocs/randall_cg.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Campground Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-8188": {
+   "n": "Revheim Bay State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/revheim-bay-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://gfp.sd.gov/userdocs/revheim_trail.pdf; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://gfp.sd.gov/userdocs/revheim_archery.pdf)",
+    "how": "a link on the park's page ('Trail Map and Guide')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/userdocs/revheim_trail.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Trail Map and Guide')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://gfp.sd.gov/userdocs/revheim_archery.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Archery Range Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-8189": {
+   "n": "Richmond Lake State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/richmond-lake-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/richmond_trails.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Trails map and guide')",
+    "posted": "Jun 03, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-8190": {
+   "n": "Rocky Point State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/rocky-point-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/rocky-point-walking-map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2007-10-10",
+    "date_how": "file stamp 2007 (older than the posting 2017 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+    "how": "a link on the park's page ('Walking Map')",
+    "posted": "Dec 12, 2017",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "2007: check it is still current"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-8191": {
+   "n": "Sandy Shore State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/sandy-shore-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/sandy_shore.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Campground Map')",
+    "posted": "Jun 04, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "kind_note": "campground map (nothing better found)",
+    "card_note": "Campground map: the agency has no park map.",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "card_note": "Campground map: the agency has no park map.",
+   "ver": 7
+  },
+  "US-8192": {
+   "n": "Shadehill State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/shadehill-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/shadehill_area.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Area Map')",
+    "posted": "Jun 04, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-8193": {
+   "n": "Sheps Canyon State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/sheps-canyon-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/sheps_canyon_cg.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Campground Map')",
+    "posted": "Jun 04, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "kind_note": "campground map (nothing better found)",
+    "card_note": "Campground map: the agency has no park map.",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "card_note": "Campground map: the agency has no park map.",
+   "ver": 7
+  },
+  "US-8194": {
+   "n": "Snake Creek State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/snake-creek-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://gfp.sd.gov/userdocs/snake_north_cg.pdf; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://gfp.sd.gov/userdocs/snake_south_cg.pdf)",
+    "how": "a link on the park's page ('North Campground Map')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/userdocs/snake_north_cg.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('North Campground Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://gfp.sd.gov/userdocs/snake_south_cg.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('South Campground Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-8195": {
+   "n": "Spearfish Canyon Nature Recreation Area",
+   "t": "Nature Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/spearfish-canyon-nature-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/spearfish_canyon_trail_map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Trail Map')",
+    "posted": "Jun 04, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-8196": {
+   "n": "Spring Creek State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/spring-creek-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/spring-creek.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Overview Map')",
+    "posted": "Jul 01, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-8197": {
+   "n": "Springfield State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/springfield-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/springfield_cg.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": null,
+    "date_how": "date unknown, checked 2026-10-30",
+    "how": "a link on the park's page ('Campground Map')",
+    "posted": "Jan 03, 2025",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "kind_note": "campground map (nothing better found)",
+    "card_note": "Campground map: the agency has no park map.",
+    "date_label": "date unknown"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "card_note": "Campground map: the agency has no park map.",
+   "ver": 7
+  },
+  "US-8198": {
+   "n": "Swan Creek State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/swan-creek-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/swan-creek_campground.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2018-03-20",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Campground Map')",
+    "posted": "Mar 21, 2018",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 1,
+    "via": "the agency site",
+    "kind_note": "campground map (nothing better found)",
+    "card_note": "Campground map: the agency has no park map.",
+    "date_label": "2018: check it is still current"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "card_note": "Campground map: the agency has no park map.",
+   "ver": 7
+  },
+  "US-8199": {
+   "n": "Walker's Point State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/walker's-point-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "",
+    "status": "no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://gfp.sd.gov/userdocs/walkers_cg.pdf; opened, a page that does not name this park (a generic agency page is not its map) https://gfp.sd.gov/maps/)",
+    "how": "a link on the park's page ('Campground Map')"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "map_tried": [
+    {
+     "url": "https://gfp.sd.gov/userdocs/walkers_cg.pdf",
+     "status": "opened, a readable map that does not name this park (chat 8 F2: another unit / several units)",
+     "kind": "pdf",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Campground Map')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    },
+    {
+     "url": "https://gfp.sd.gov/maps/",
+     "status": "opened, a page that does not name this park (a generic agency page is not its map)",
+     "kind": "page",
+     "date": null,
+     "date_how": "",
+     "how": "a link on the park's page ('Maps')",
+     "posted": "",
+     "posted_how": "",
+     "names_park": false,
+     "checked": "2026-10-30",
+     "covers": 0,
+     "via": "the agency site"
+    }
+   ],
+   "ver": 7
+  },
+  "US-8200": {
+   "n": "West Bend State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/west-bend-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/west-bend-walking-map.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2007-10-10",
+    "date_how": "file stamp 2007 (older than the posting 2017 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
+    "how": "a link on the park's page ('Walking Map')",
+    "posted": "Oct 19, 2017",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 0,
+    "via": "the agency site",
+    "date_label": "2007: check it is still current"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  },
+  "US-8201": {
+   "n": "West Pollock State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/west-pollock-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/west-pollock-campground.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "November 2013",
+    "date_how": "a month + year printed on the map",
+    "how": "a link on the park's page ('Campground Map')",
+    "posted": "Oct 19, 2017",
+    "posted_how": "posted: the server's file date",
+    "names_park": true,
+    "checked": "2026-10-30",
+    "covers": 1,
+    "via": "the agency site",
+    "kind_note": "campground map (nothing better found)",
+    "card_note": "Campground map: the agency has no park map.",
+    "date_label": "2013: check it is still current"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "card_note": "Campground map: the agency has no park map.",
+   "ver": 7
+  },
+  "US-8202": {
+   "n": "West Whitlock State Recreation Area",
+   "t": "State Recreation Area",
+   "page": "https://gfp.sd.gov/parks/detail/west-whitlock-recreation-area/",
+   "checked": "2026-10-30",
+   "map": {
+    "url": "https://gfp.sd.gov/userdocs/west-whitlock_trail.pdf",
+    "status": "ok",
+    "kind": "pdf",
+    "date": "2018-03-20",
+    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
+    "how": "a link on the park's page ('Trail map and guide')",
+    "posted": "Mar 21, 2018",
+    "posted_how": "posted: the server's file date",
+    "names_park": "file",
+    "checked": "2026-10-30",
+    "covers": 1,
+    "via": "the agency site",
+    "date_label": "2018: check it is still current"
+   },
+   "rules": {
+    "url": "",
+    "status": "not found (a page shared by 60 parks was dropped: https://gfp.sd.gov/pages/regulations/)",
+    "how": "the agency-wide rules page (chat 8 survey)"
+   },
+   "agency": "government agency (gfp.sd.gov)",
+   "runs": [],
+   "handover": [],
+   "notes": [],
+   "ver": 7
+  }
+ },
+ "read": "2026-10-30",
+ "counts": {
+  "parks": 120,
+  "map ok": 63,
+  "map found by the bot": 57,
+  "date on the map": 15,
+  "posted date only": 41,
+  "date unknown": 7,
+  "no map": 57,
+  "rules ok": 21,
+  "needs browser": 0,
+  "handover hints": 0,
+  "runs hints": 2,
+  "host resting / robots": 0,
+  "map names the park": 56,
+  "region overview only": 0
+ }
+}

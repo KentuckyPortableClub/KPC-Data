@@ -1,12 +1,20 @@
 {
  "about": "KPC bot status board: per bot the last run, green / red, what it made, what is waiting on whom. Written by kpc_status.py from each workflow; a members-only page reads it later.",
  "bots": {
-  "campground info bot": {
-   "areas": "left: 51",
+  "GIS hunter": {
+   "areas": "",
    "last_run": "2026-10-30",
-   "made": "US-KY: done; {\"camps\": 100, \"needs_browser\": 3, \"needs_key\": 35, \"no_page\": 0, \"not_official\": 0, \"ok\": 51, \"other\": 11, \"resting\": 0, \"robots\": 0, \"with_booking\": 51, \"with_elevation\": 96, \"with_facts\": 60, \"with",
+   "made": "chunk 1: data/gis-hunter + questions",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/40982873929",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41093665549",
+   "waiting_on": "chat 11 answers data/waiting/questions/gis-hunter.json"
+  },
+  "campground info bot": {
+   "areas": "left: 62",
+   "last_run": "2026-10-30",
+   "made": "US-TN: done; {\"camps\": 348, \"needs_browser\": 0, \"needs_key\": 81, \"no_page\": 267, \"not_official\": 0, \"ok\": 0, \"other\": 0, \"resting\": 0, \"robots\": 0, \"with_booking\": 0, \"with_elevation\": 348, \"with_sites\": 0}",
+   "result": "green",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41088410718",
    "waiting_on": "chat 8 grades the sample; Brandon GO before any card"
   },
   "closures super-bot": {
@@ -35,10 +43,10 @@
   },
   "official documents bot": {
    "areas": "",
-   "last_run": "2026-10-29",
-   "made": "chunk 5 saved",
+   "last_run": "2026-10-30",
+   "made": "chunk 1 saved",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/40880515951",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41101365204",
    "waiting_on": "chat 8 grades review.md samples"
   },
   "park detective": {
@@ -59,14 +67,14 @@
   },
   "waiting room": {
    "last_run": "2026-10-30",
-   "made": "heartbeat 1 h old, 41 files waiting",
+   "made": "heartbeat 0 h old, 47 files waiting",
    "result": "green",
    "waiting_on": "nothing"
   },
   "world finder v2": {
    "areas": "",
    "last_run": "2026-10-30",
-   "made": "chunk 3: data/world-finder + questions",
+   "made": "chunk 1: data/world-finder + questions",
    "result": "green",
    "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41062053401",
    "waiting_on": "chat 11 answers data/waiting/questions/world-finder.json"
