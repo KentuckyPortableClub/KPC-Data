@@ -1,8 +1,8 @@
 {
  "about": "World harvester leads for Luxembourg (official park GIS only; leads for chat 8, never added to the key by the bot).",
  "cc": "LU",
- "date": "2026-10-28",
- "status": "done",
+ "date": "2026-10-30",
+ "status": "nothing seeded: not searched · 4 catalog / search errors (see failures)",
  "steps_done": [
   "known",
   "servers",
@@ -18,7 +18,31 @@
   "B": 0,
   "C": 0
  },
+ "failures": [
+  {
+   "catalog": "https://data.public.lu",
+   "keyword": "zone protégée",
+   "error": "HTTP 404"
+  },
+  {
+   "catalog": "https://data.public.lu",
+   "keyword": "réserve naturelle",
+   "error": "HTTP 404"
+  },
+  {
+   "catalog": "https://data.public.lu",
+   "keyword": "parc naturel",
+   "error": "HTTP 404"
+  },
+  {
+   "catalog": "https://data.public.lu",
+   "keyword": "zone Natura 2000",
+   "error": "HTTP 404"
+  }
+ ],
+ "rejected_orgs": [],
  "known_good_found": [],
  "known_good_missed": [],
+ "known_log": [],
  "leads": {}
 }

@@ -1,0 +1,71 @@
+{
+ "about": "World finder v2 candidates (stage 1, Fable's plan): chat 11 answers YES / NO against the agency's own map; chat 2 rechecks. 'name mismatch' = the record's name differs from POTA's. Big countries: answer a random sample first and report the hit rate (HQ).",
+ "built": "2026-10-30",
+ "open": 4,
+ "questions": [
+  {
+   "area": "NZ",
+   "ref": "NZ-0057",
+   "park": "Coromandel State Forest Park",
+   "kind": "name match",
+   "record": 155,
+   "record_name": "Hauraki - Coromandel Peninsula Place",
+   "acres_approx": 590142,
+   "layer": "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_CMS_Place_Boundaries/FeatureServer/0",
+   "source": "world finder (pin on a found layer)",
+   "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null,
+   "pota_link": "https://pota.app/#/park/NZ-0057"
+  },
+  {
+   "area": "NZ",
+   "ref": "NZ-0502",
+   "park": "Karamea Bluff Ecological Area",
+   "kind": "name match",
+   "record": 197,
+   "record_name": "Karamea Place",
+   "acres_approx": 354113,
+   "layer": "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_CMS_Place_Boundaries/FeatureServer/0",
+   "source": "world finder (pin on a found layer)",
+   "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null,
+   "pota_link": "https://pota.app/#/park/NZ-0502"
+  },
+  {
+   "area": "NZ",
+   "ref": "NZ-0911",
+   "park": "Mokohinau Islands High Protected Area",
+   "kind": "name match",
+   "record": 17181,
+   "record_name": "Mokohīnau Islands High Protection Area",
+   "acres_approx": 29222,
+   "layer": "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/DOC_Marine_Protections/FeatureServer/0",
+   "source": "world finder (pin on a found layer)",
+   "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null,
+   "pota_link": "https://pota.app/#/park/NZ-0911"
+  },
+  {
+   "area": "LU",
+   "ref": "LU-0049",
+   "park": "Vallée de la Haute-Sûre - Bruch/Pont Misère Protected Area",
+   "kind": "name match",
+   "record": 123879,
+   "record_name": "Vallée de la Haute-Sûre",
+   "layer": "EEA nationally designated areas",
+   "source": "world key (pin inside)",
+   "why": "same name, more than one kind of area",
+   "question": "Is this official record that park (the agency's own boundary for it)? YES / NO",
+   "answer": null,
+   "checked_by": null,
+   "how": null,
+   "pota_link": "https://pota.app/#/park/LU-0049"
+  }
+ ]
+}

@@ -1,14 +1,6 @@
 {
  "about": "KPC bot status board: per bot the last run, green / red, what it made, what is waiting on whom. Written by kpc_status.py from each workflow; a members-only page reads it later.",
  "bots": {
-  "GIS hunter": {
-   "areas": "",
-   "last_run": "2026-10-30",
-   "made": "chunk 1: data/gis-hunter + questions",
-   "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/40992618813",
-   "waiting_on": "chat 11 answers data/waiting/questions/gis-hunter.json"
-  },
   "campground info bot": {
    "areas": "left: 51",
    "last_run": "2026-10-30",
@@ -67,9 +59,17 @@
   },
   "waiting room": {
    "last_run": "2026-10-30",
-   "made": "heartbeat 1 h old, 4 files waiting",
+   "made": "heartbeat 2 h old, 4 files waiting",
    "result": "green",
    "waiting_on": "nothing"
+  },
+  "world finder v2": {
+   "areas": "",
+   "last_run": "2026-10-30",
+   "made": "chunk 1: data/world-finder + questions",
+   "result": "green",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/40996415501",
+   "waiting_on": "chat 11 answers data/waiting/questions/world-finder.json"
   }
  },
  "updated": "2026-10-30"
