@@ -1,0 +1,58 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "co",
+ "states": [
+  "US-CO"
+ ],
+ "since": "2026-10-30",
+ "date": "2026-10-30 05:38 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
+ "known_answers": "19/19 on 2026-10-30",
+ "missing_check": {
+  "FOUND": 18,
+  "DROPPED": 109,
+  "NEVER LOOKED AT": 1676
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-10-30",
+   "pairs tested": 161,
+   "pairs whose boxes touch": 161
+  },
+  "pass2": {
+   "agree with the pass before": 576,
+   "date": "2026-10-30",
+   "pairs tested": 56
+  },
+  "pass3": {
+   "agree with the pass before": 151,
+   "date": "2026-10-30",
+   "pairs tested": 56
+  },
+  "pass5": {
+   "checked": 19,
+   "date": "2026-10-30",
+   "pairs tested": 0,
+   "still not checked": 0
+  }
+ },
+ "files": {
+  "US-CO": "data/fers/US-CO.json"
+ },
+ "US-CO": {
+  "rows": 601,
+  "live": 20,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "the agency ownership map did not answer": 3
+  },
+  "dropped": 463,
+  "merged": 115
+ },
+ "states_ready": [
+  "US-CO"
+ ],
+ "states_held": []
+}
