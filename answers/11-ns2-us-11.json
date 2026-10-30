@@ -1,0 +1,607 @@
+{
+ "request": "requests/11-ns2-us-11.json",
+ "id": "11-ns2-us-11",
+ "chat": 11,
+ "kind": "map-check",
+ "report": "Chat 11 NOT SURE map check (us, US-ME, US-MI, US-MO): screenshots in order: 1=US-7979 (record); 2=US-7979 (map); 3=US-7979 (map); 4=US-6796 (record); 5=US-6796 (map); 6=US-11042 (record); 7=US-11042 (map); 8=US-7873 (map); 9=US-7873 (map). Record pages are WHOLE-page shots (the record's fields are below the query form; the text is in each result too). Map shots: the POTA pin is the marker in the middle (zoom 14).",
+ "asked": {
+  "chat": 11,
+  "kind": "map-check",
+  "screenshot": true,
+  "report": "Chat 11 NOT SURE map check (us, US-ME, US-MI, US-MO): screenshots in order: 1=US-7979 (record); 2=US-7979 (map); 3=US-7979 (map); 4=US-6796 (record); 5=US-6796 (map); 6=US-11042 (record); 7=US-11042 (map); 8=US-7873 (map); 9=US-7873 (map). Record pages are WHOLE-page shots (the record's fields are below the query form; the text is in each result too). Map shots: the POTA pin is the marker in the middle (zoom 14).",
+  "items": [
+   {
+    "ref": "US-7979",
+    "park": "Fort Popham State Historic Site",
+    "record": "Fort Baldwin -Popham Colony",
+    "area": "US-ME"
+   },
+   {
+    "ref": "US-7979",
+    "park": "Fort Popham",
+    "record": "",
+    "area": "US-ME"
+   },
+   {
+    "ref": "US-6796",
+    "park": "Tobico Marsh Wildlife Management Area",
+    "record": "Tobico Marsh Unit of Bay City State Park",
+    "area": "US-MI"
+   },
+   {
+    "ref": "US-11042",
+    "park": "Kahrs-Boger State Conservation Area",
+    "record": "Kahrs-Boger Park",
+    "area": "US-MO"
+   },
+   {
+    "ref": "US-7873",
+    "park": "Agency State Conservation Area",
+    "record": "Agency Access",
+    "area": "US-MO"
+   },
+   {
+    "ref": "US-7873",
+    "park": "Agency State Conservation Area",
+    "record": "Agency Access",
+    "area": "US-MO"
+   }
+  ],
+  "urls": [
+   {
+    "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=206989&outFields=*&returnGeometry=false&f=html",
+    "full": true
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-69.7841%2C43.7548&level=14&marker=-69.7841%2C43.7548%2C4326%2CPOTA+pin",
+    "steps": [
+     {
+      "wait": 12000
+     }
+    ]
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-69.7841%2C43.7548&level=14&marker=-69.7841%2C43.7548%2C4326%2CPOTA+pin",
+    "steps": [
+     {
+      "wait": 12000
+     }
+    ]
+   },
+   {
+    "url": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2/query?objectIds=215&outFields=*&returnGeometry=false&f=html",
+    "full": true
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fservices3.arcgis.com%2FJdnp1TjADvSDxMAX%2Farcgis%2Frest%2Fservices%2FDNRWILDLandsOPENDATA%2FFeatureServer%2F2&center=-83.9489%2C43.6958&level=14&marker=-83.9489%2C43.6958%2C4326%2CPOTA+pin",
+    "steps": [
+     {
+      "wait": 12000
+     }
+    ]
+   },
+   {
+    "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=210788&outFields=*&returnGeometry=false&f=html",
+    "full": true
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-93.1209%2C38.5786&level=14&marker=-93.1209%2C38.5786%2C4326%2CPOTA+pin",
+    "steps": [
+     {
+      "wait": 12000
+     }
+    ]
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-94.7332%2C39.6274&level=14&marker=-94.7332%2C39.6274%2C4326%2CPOTA+pin",
+    "steps": [
+     {
+      "wait": 12000
+     }
+    ]
+   },
+   {
+    "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-94.7332%2C39.6274&level=14&marker=-94.7332%2C39.6274%2C4326%2CPOTA+pin",
+    "steps": [
+     {
+      "wait": 12000
+     }
+    ]
+   }
+  ]
+ },
+ "answered": "2026-10-30 20:31Z",
+ "results": [
+  {
+   "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=206989&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=206989&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: PADUS4_0_FeeManagers (ID: 0)",
+   "text": "ArcGIS REST Services Directory Login | Get Token\nHome > services > PAD-US > PAD_US (MapServer) > PADUS4_0_FeeManagers > query API Reference\nQuery: PADUS4_0_FeeManagers (ID: 0)\nWhere:\nText:\nObject IDs:\nTime:\nTime Relation:\nInclude start and end\nInclude start and exclude end\nExclude start and include end\nExclude start and end\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nReturn True Curves: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nReturn IDs Only: True False\nReturn Count Only: True False\nOrder By Fields:\nGroup By Fields (For Statistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nResult Offset:\nResult Record Count:\nReturn Extent Only: True False\nSQL Format:\nNone\nStandard\nNative\nDatum Transformation:\nParameter Values:\nRange Values:\nQuantization Parameters:\nFeature Encoding:\nEsriDefault\nFormat:\nHTML\nJSON\nKMZ\nGeoJSON\nPBF\n# records: 1\nOBJECTID: 206989\nFeatClass: Fee\nCategory: Fee\nOwn_Type: STAT\nOwn_Name: SPR\nLoc_Own: Maine Bureau of Parks and Lands\nMang_Type: STAT\nMang_Name: SPR\nLoc_Mang: Maine Bureau of Parks and Lands\nDes_Tp: SHCA\nLoc_Ds: State Historic Site\nUnit_Nm: Fort Baldwin -Popham Colony\nLoc_Nm: Fort Baldwin -Popham Colony\nState_Nm: ME\nAgg_Src: MDACF_PADUS4_0_ME2022_Maine_Conserved_Lands_ME\nGIS_Src: Maine_Conserved_Lands.shp\nSrc_Date: 2021/04/16\nGIS_Acres: 36\nSource_PAID: 6777\nWDPA_Cd: 0\nPub_Access: XA\nAccess_Src: MDACF\nAccess_Dt: 2022\nGAP_Sts: 4\nGAPCdSrc: TNC\nGAPCdDt: 2023\nIUCN_Cat: Unassigned\nIUCNCtSrc: GAP - Default\nIUCNCtDt: 2024\nDate_Est:\nComments: - BPL lines fitted 9/24/13 LH-attribute edited 8/4/15 LH\nEsmtHldr:\nEHoldTyp:\nWebServiceMangName: SPR\nTranspPct: null\nShape_Length: 2472.7141526548353\nShape_Area: 280856.17532762827",
+   "links": [
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/rest/login",
+     "text": "Login"
+    },
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/tokens/",
+     "text": "Get Token"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US",
+     "text": "PAD-US"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer",
+     "text": "PAD_US (MapServer)"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "text": "PADUS4_0_FeeManagers"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query",
+     "text": "query"
+    },
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/help/en/rest/router.html?f=rest/services/PAD-US/PAD_US/MapServer/0/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/206989",
+     "text": "206989"
+    }
+   ],
+   "screenshot": "answers/11-ns2-us-11-1.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-69.7841%2C43.7548&level=14&marker=-69.7841%2C43.7548%2C4326%2CPOTA+pin",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-69.7841%2C43.7548&level=14&marker=-69.7841%2C43.7548%2C4326%2CPOTA+pin",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nEsri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | EPA | NPS | US Census Bureau | USDA | USFWS\nPowered by Esri\nPOTA+pin",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns2-us-11-2.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-69.7841%2C43.7548&level=14&marker=-69.7841%2C43.7548%2C4326%2CPOTA+pin",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-69.7841%2C43.7548&level=14&marker=-69.7841%2C43.7548%2C4326%2CPOTA+pin",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nEsri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | EPA | NPS | US Census Bureau | USDA | USFWS\nPowered by Esri\nPOTA+pin",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns2-us-11-3.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2/query?objectIds=215&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2/query?objectIds=215&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: Wildlife Property Boundary (ID: 2)",
+   "text": "ArcGIS REST Services Directory\nHome > services > DNRWILDLandsOPENDATA (FeatureServer) > Wildlife Property Boundary > query | API Reference\nQuery: Wildlife Property Boundary (ID: 2)\nWhere:\nObject IDs:\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nDisjoint\nRelation\nResult Type:\nNone\nStandard\nTile\nDistance:\nUnits:\nMeters\nMiles\nFeet\nKilometers\nNautical Miles\nUS NauticalMiles\nOut Distance:\nRelation:\nReturn Geodetic: True False\nOut Fields:\nReturn Geometry: True False\nReturn Centroid: True False\nReturn Envelope: True False\nFeature Encoding:\nesriDefault\nesriCompressedShapeBuffer\nGeometry MultiPatch Option:\nNone\nxyFootprint\nstripMaterials\nembedMaterials\nexternalizeTextures\nextent\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nDefault Spatial Reference:\nDatum Transformation:\nApply VCS Projection: True False\nReturn IDs Only: True False\nReturn Unique IDs Only: True False\nReturn Count Only: True False\nReturn Extent Only: True False\nReturn Query Geometry: True False\nReturn Distinct Values: True False\nCache Hint True False\nCollation:\nOrder By Fields:\nGroup By Fields (For Statistics):\nReturn Aggregate Ids: True False\nOutput Statistics:\nHaving:\nResult Offset:\nResult Record Count:\nReturnZ: True False\nReturnM: True False\nReturn True Curves: True False\nReturn Exceeded Limit Features: True False\nReturn Exceeded Limit Geometries: True False\nQuantization Parameters:\nSQL Format:\nnone\nstandard\nnative\nFormat:\nHTML\nJSON\nGEOJSON\nPBF\n# results: 1\nOBJECTID: 215\nGlobalID: 86aefaf3-6402-4bf9-9d1c-83f7f3dd92bf\nAreaType: Wildlife Managed Lands\nOfficialWLDProjectAreaName: Tobico Marsh Unit of Bay City State Park\nlast_edited_date: 10/6/2026 2:42:09 PM\nlast_edited_user: MichiganDNR\ncreated_date: 10/6/2026 2:42:09 PM\ncreated_user: MichiganDNR\nAcres: 2088.02692836\nShape__Area: 8488130.38720703\nShape__Length: 21367.2744878928",
+   "links": [
+    {
+     "url": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/ArcGIS/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/ArcGIS/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/ArcGIS/rest/services/DNRWILDLandsOPENDATA/FeatureServer",
+     "text": "DNRWILDLandsOPENDATA (FeatureServer)"
+    },
+    {
+     "url": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/ArcGIS/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2",
+     "text": "Wildlife Property Boundary"
+    },
+    {
+     "url": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/ArcGIS/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2/query",
+     "text": "query"
+    },
+    {
+     "url": "http://resources.arcgis.com/en/help/arcgis-rest-api/",
+     "text": "API Reference"
+    }
+   ],
+   "screenshot": "answers/11-ns2-us-11-4.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fservices3.arcgis.com%2FJdnp1TjADvSDxMAX%2Farcgis%2Frest%2Fservices%2FDNRWILDLandsOPENDATA%2FFeatureServer%2F2&center=-83.9489%2C43.6958&level=14&marker=-83.9489%2C43.6958%2C4326%2CPOTA+pin",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fservices3.arcgis.com%2FJdnp1TjADvSDxMAX%2Farcgis%2Frest%2Fservices%2FDNRWILDLandsOPENDATA%2FFeatureServer%2F2&center=-83.9489%2C43.6958&level=14&marker=-83.9489%2C43.6958%2C4326%2CPOTA+pin",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nProvince of Ontario | Esri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | EPA | NPS | US Census Bureau | USDA | USFWS | Michigan Department of Natural Resources\nPowered by Esri\nPOTA+pin",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns2-us-11-5.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=210788&outFields=*&returnGeometry=false&f=html",
+   "status": 200,
+   "final_url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=210788&outFields=*&returnGeometry=false&f=html",
+   "title": "Query: PADUS4_0_FeeManagers (ID: 0)",
+   "text": "ArcGIS REST Services Directory Login | Get Token\nHome > services > PAD-US > PAD_US (MapServer) > PADUS4_0_FeeManagers > query API Reference\nQuery: PADUS4_0_FeeManagers (ID: 0)\nWhere:\nText:\nObject IDs:\nTime:\nTime Relation:\nInclude start and end\nInclude start and exclude end\nExclude start and include end\nExclude start and end\nInput Geometry:\nGeometry Type:\nEnvelope\nPoint\nPolyline\nPolygon\nMultipoint\nInput Spatial Reference:\nSpatial Relationship:\nIntersects\nContains\nCrosses\nEnvelope Intersects\nIndex Intersects\nOverlaps\nTouches\nWithin\nRelation\nDistance:\nUnits:\nFeet\nMeters\nKilometers\nMiles\nNautical Miles\nUS Nautical Miles\nRelation:\nOut Fields:\nReturn Geometry: True False\nReturn True Curves: True False\nMax Allowable Offset:\nGeometry Precision:\nOutput Spatial Reference:\nHaving Clause:\nReturn IDs Only: True False\nReturn Count Only: True False\nOrder By Fields:\nGroup By Fields (For Statistics):\nOutput Statistics:\nReturnZ: True False\nReturnM: True False\nGeodatabase Version Name:\nHistoric Moment:\nReturn Distinct Values: True False\nResult Offset:\nResult Record Count:\nReturn Extent Only: True False\nSQL Format:\nNone\nStandard\nNative\nDatum Transformation:\nParameter Values:\nRange Values:\nQuantization Parameters:\nFeature Encoding:\nEsriDefault\nFormat:\nHTML\nJSON\nKMZ\nGeoJSON\nPBF\n# records: 1\nOBJECTID: 210788\nFeatClass: Fee\nCategory: Fee\nOwn_Type: STAT\nOwn_Name: SDC\nLoc_Own: Unknown\nMang_Type: UNK\nMang_Name: UNK\nLoc_Mang: Unknown\nDes_Tp: SP\nLoc_Ds: 3110\nUnit_Nm: Kahrs-Boger Park\nLoc_Nm: KAHRS-BOGER PARK\nState_Nm: MO\nAgg_Src: MoRAP_PADUS1_3_MO\nGIS_Src: mo_mdcland\nSrc_Date: 2011/09/00\nGIS_Acres: 106\nSource_PAID:\nWDPA_Cd: 44441390\nPub_Access: OA\nAccess_Src: GAP - Default\nAccess_Dt: 2024\nGAP_Sts: 2\nGAPCdSrc: GAP\nGAPCdDt: 2008\nIUCN_Cat: III\nIUCNCtSrc: GAP - Default\nIUCNCtDt: 2024\nDate_Est:\nComments:\nEsmtHldr:\nEHoldTyp:\nWebServiceMangName: UNK\nTranspPct: null\nShape_Length: 3667.8559976316424\nShape_Area: 704430.2166200154",
+   "links": [
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/rest/login",
+     "text": "Login"
+    },
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/tokens/",
+     "text": "Get Token"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services",
+     "text": "Home"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services",
+     "text": "services"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US",
+     "text": "PAD-US"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer",
+     "text": "PAD_US (MapServer)"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "text": "PADUS4_0_FeeManagers"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query",
+     "text": "query"
+    },
+    {
+     "url": "https://igskrd911spmpa2.cr.usgs.gov/arcgis/help/en/rest/router.html?f=rest/services/PAD-US/PAD_US/MapServer/0/query",
+     "text": "API Reference"
+    },
+    {
+     "url": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/210788",
+     "text": "210788"
+    }
+   ],
+   "screenshot": "answers/11-ns2-us-11-6.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-93.1209%2C38.5786&level=14&marker=-93.1209%2C38.5786%2C4326%2CPOTA+pin",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-93.1209%2C38.5786&level=14&marker=-93.1209%2C38.5786%2C4326%2CPOTA+pin",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nMissouri Dept. of Conservation | Missouri DNR | Esri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | EPA | NPS | US Census Bureau | USDA | USFWS\nPowered by Esri\nPOTA+pin",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns2-us-11-7.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-94.7332%2C39.6274&level=14&marker=-94.7332%2C39.6274%2C4326%2CPOTA+pin",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-94.7332%2C39.6274&level=14&marker=-94.7332%2C39.6274%2C4326%2CPOTA+pin",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nMissouri Dept. of Conservation | Missouri DNR | Esri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | EPA | NPS | US Census Bureau | USDA | USFWS\nPowered by Esri\nPOTA+pin",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns2-us-11-8.jpg",
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-94.7332%2C39.6274&level=14&marker=-94.7332%2C39.6274%2C4326%2CPOTA+pin",
+   "status": 200,
+   "steps": [
+    "ok"
+   ],
+   "final_url": "https://www.arcgis.com/apps/mapviewer/index.html?url=https%3A%2F%2Fedits.nationalmap.gov%2Farcgis%2Frest%2Fservices%2FPAD-US%2FPAD_US%2FMapServer%2F0&center=-94.7332%2C39.6274&level=14&marker=-94.7332%2C39.6274%2C4326%2CPOTA+pin",
+   "title": "Untitled map",
+   "text": "Untitled map\nSign In\nUse the selector above to switch between layers in the map.\nBlending\nNormal\nTransparency\nVisible range\nGet started\nYou can explore maps, add layers, and more without signing in. To save your work, sign in before creating your map.\nLearn more about Map Viewer\nMissouri Dept. of Conservation | Missouri DNR | Esri | TomTom | Garmin | SafeGraph | GeoTechnologies, Inc | NASA | NGA | USGS | METI/NASA | FEMA | EPA | NPS | US Census Bureau | USDA | USFWS\nPowered by Esri\nPOTA+pin",
+   "links": [
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": ""
+    },
+    {
+     "url": "https://www.arcgis.com/features/features.html",
+     "text": "Overview"
+    },
+    {
+     "url": "https://www.arcgis.com/features/plans/pricing.html",
+     "text": "Pricing"
+    },
+    {
+     "url": "https://www.arcgis.com/home/webscene/viewer.html",
+     "text": "Scene"
+    },
+    {
+     "url": "https://www.arcgis.com/home/groups.html",
+     "text": "Groups"
+    },
+    {
+     "url": "https://www.esri.com/",
+     "text": "Esri"
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm",
+     "text": ""
+    },
+    {
+     "url": "https://doc.arcgis.com/en/arcgis-online/create-maps/use-blend-modes-mv.htm",
+     "text": ""
+    }
+   ],
+   "screenshot": "answers/11-ns2-us-11-9.jpg",
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 184,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 3
+ },
+ "short": "9 result(s), 9 read OK, 9 screenshot(s)"
+}
