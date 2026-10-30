@@ -1,0 +1,167 @@
+{
+ "request": "requests/9-ns-pota1.json",
+ "id": "9-ns-pota1",
+ "chat": 9,
+ "kind": "page",
+ "report": "NOT SURE for chat 11: POTA park record (name, grid, type, agency) as the reference",
+ "asked": {
+  "chat": 9,
+  "kind": "page",
+  "urls": [
+   "https://api.pota.app/park/US-0694",
+   "https://api.pota.app/park/US-10008",
+   "https://api.pota.app/park/US-10055",
+   "https://api.pota.app/park/US-1021",
+   "https://api.pota.app/park/US-10231",
+   "https://api.pota.app/park/US-10237",
+   "https://api.pota.app/park/US-10318",
+   "https://api.pota.app/park/US-10358",
+   "https://api.pota.app/park/US-10391",
+   "https://api.pota.app/park/US-10540",
+   "https://api.pota.app/park/US-11026",
+   "https://api.pota.app/park/US-11042",
+   "https://api.pota.app/park/US-11092",
+   "https://api.pota.app/park/US-11165"
+  ],
+  "report": "NOT SURE for chat 11: POTA park record (name, grid, type, agency) as the reference"
+ },
+ "answered": "2026-10-30 03:33Z",
+ "results": [
+  {
+   "url": "https://api.pota.app/park/US-0694",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-0694",
+   "title": "",
+   "text": "{\"parkId\": 694, \"reference\": \"US-0694\", \"name\": \"Ebey's Landing Reserve\", \"latitude\": 48.205, \"longitude\": -122.706, \"grid4\": \"CN88\", \"grid6\": \"CN88pe\", \"parktypeId\": 207, \"active\": 1, \"parkComments\": null, \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Boat,Foot\", \"activationMethods\": \"Automobile,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://www.nps.gov/index.htm\", \"createdByAdmin\": null, \"parktypeDesc\": \"National Conservation Area\", \"locationDesc\": \"US-WA\", \"locationName\": \"Washington\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"N7AME\", \"firstActivationDate\": \"2016-06-02\"}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://api.pota.app/park/US-10008",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-10008",
+   "title": "",
+   "text": "{\"parkId\": 88310, \"reference\": \"US-10008\", \"name\": \"Klamath Hills\", \"latitude\": 42.0609, \"longitude\": -121.754, \"grid4\": \"CN92\", \"grid6\": \"CN92cb\", \"parktypeId\": 224, \"active\": 1, \"parkComments\": \"\", \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Foot\", \"activationMethods\": \"Automobile,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://www.blm.gov/visit/klamath-hills-recreation-area\", \"createdByAdmin\": \"Charlie Bottita\", \"parktypeDesc\": \"BLM Recreation Management Area\", \"locationDesc\": \"US-OR\", \"locationName\": \"Oregon\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"N7KPL\", \"firstActivationDate\": \"2024-03-05\"}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://api.pota.app/park/US-10055",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-10055",
+   "title": "",
+   "text": "{\"parkId\": 88362, \"reference\": \"US-10055\", \"name\": \"Cline Buttes OHV\", \"latitude\": 44.2884, \"longitude\": -121.335, \"grid4\": \"CN94\", \"grid6\": \"CN94hg\", \"parktypeId\": 224, \"active\": 1, \"parkComments\": \"There are north south sections. North of 126. Not clear on maps. But both North South are the same park. \", \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Foot\", \"activationMethods\": \"Automobile,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://www.blm.gov/sites/default/files/documents/files/PRI_ClineButtesCentralMotorizedTrailSystem_map.pdf\", \"createdByAdmin\": \"Charlie Bottita\", \"parktypeDesc\": \"BLM Recreation Management Area\", \"locationDesc\": \"US-OR\", \"locationName\": \"Oregon\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"K7PET\", \"firstActivationDate\": \"2023-10-21\"}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://api.pota.app/park/US-1021",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-1021",
+   "title": "",
+   "text": "{\"parkId\": 1021, \"reference\": \"US-1021\", \"name\": \"Sangchris Lake\", \"latitude\": 39.6499, \"longitude\": -89.4729, \"grid4\": \"EM59\", \"grid6\": \"EM59gp\", \"parktypeId\": 101, \"active\": 1, \"parkComments\": null, \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile\", \"activationMethods\": \"Automobile,Campground,Pedestrian,Shelter\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://dnr.illinois.gov/parks/park.sangchrislake.html\", \"createdByAdmin\": null, \"parktypeDesc\": \"State Park\", \"locationDesc\": \"US-IL\", \"locationName\": \"Illinois\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"N4CD\", \"firstActivationDate\": \"2017-08-04\"}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://api.pota.app/park/US-10231",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-10231",
+   "title": "",
+   "text": "{\"parkId\": 88634, \"reference\": \"US-10231\", \"name\": \"Limberlost Swamp\", \"latitude\": 40.5706, \"longitude\": -84.973, \"grid4\": \"EN70\", \"grid6\": \"EN70mn\", \"parktypeId\": 99, \"active\": 1, \"parkComments\": \"\", \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Foot\", \"activationMethods\": \"Automobile,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://www.in.gov/dnr/nature-preserves/files/np-limberlost-swamp.pdf\", \"createdByAdmin\": \"Kevin Duffy\", \"parktypeDesc\": \"State Nature Preserve\", \"locationDesc\": \"US-IN\", \"locationName\": \"Indiana\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"KD9MAB\", \"firstActivationDate\": \"2023-10-24\"}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://api.pota.app/park/US-10237",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-10237",
+   "title": "",
+   "text": "{\"parkId\": 88640, \"reference\": \"US-10237\", \"name\": \"Mongoquinong\", \"latitude\": 41.6957, \"longitude\": -85.314, \"grid4\": \"EN71\", \"grid6\": \"EN71iq\", \"parktypeId\": 99, \"active\": 1, \"parkComments\": \"No Trail, visitors should use caution as hunting is allowed in season.\", \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Foot\", \"activationMethods\": \"Automobile,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://www.in.gov/dnr/nature-preserves/files/np-Mongoquinong.pdf\", \"createdByAdmin\": \"Kevin Duffy\", \"parktypeDesc\": \"State Nature Preserve\", \"locationDesc\": \"US-IN\", \"locationName\": \"Indiana\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"KD9UDV\", \"firstActivationDate\": \"2023-10-23\"}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://api.pota.app/park/US-10318",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-10318",
+   "title": "",
+   "text": "{\"parkId\": 88769, \"reference\": \"US-10318\", \"name\": \"Chichaqua\", \"latitude\": 41.756, \"longitude\": -93.368, \"grid4\": \"EN31\", \"grid6\": \"EN31hs\", \"parktypeId\": 131, \"active\": 1, \"parkComments\": \"Wildlife area. Note that there is also county conservation grounds in the area which is not within the boundary of the POTA entity. Check the map and be sure you are within the boundary of the Iowa DNR owned and managed site. \", \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Foot\", \"activationMethods\": \"Automobile,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://www.arcgis.com/apps/webappviewer/index.html?id=f9161b90cddb4fcfb35a96901882a4b7&query=Atlas_Web_Application_4143_1966%2CAREA_NAME%2CCHICHAQUA%20WILDLIFE%20AREA\", \"createdByAdmin\": \"Pat Rundall\", \"parktypeDesc\": \"Wildlife Area\", \"locationDesc\": \"US-IA\", \"locationName\": \"Iowa\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"KC0UJC\", \"firstActivationDate\": \"2023-10-28\"}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://api.pota.app/park/US-10358",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-10358",
+   "title": "",
+   "text": "{\"parkId\": 88830, \"reference\": \"US-10358\", \"name\": \"Shotgun Creek\", \"latitude\": 44.2288, \"longitude\": -122.846, \"grid4\": \"CN84\", \"grid6\": \"CN84nf\", \"parktypeId\": 224, \"active\": 1, \"parkComments\": \" https://www.blm.gov/visit/shotgun-creek-recreation-site This park is separate from the OHV. \", \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Foot\", \"activationMethods\": \"Automobile,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://www.blm.gov/sites/blm.gov/files/documents/files/nwo_shotguncrkrec_brochure.pdf\", \"createdByAdmin\": \"Charlie Bottita\", \"parktypeDesc\": \"BLM Recreation Management Area\", \"locationDesc\": \"US-OR\", \"locationName\": \"Oregon\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"KA7NDI\", \"firstActivationDate\": \"2023-10-26\"}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://api.pota.app/park/US-10391",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-10391",
+   "title": "",
+   "text": "{\"parkId\": 88913, \"reference\": \"US-10391\", \"name\": \"Kishwaukee River\", \"latitude\": 42.0964, \"longitude\": -88.8755, \"grid4\": \"EN52\", \"grid6\": \"EN52nc\", \"parktypeId\": 88, \"active\": 1, \"parkComments\": \"\", \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Foot\", \"activationMethods\": \"Automobile,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://huntillinois.org/sites/kishwaukee-river-sfwa/#site-contact-info\", \"createdByAdmin\": \"Kenneth Curry\", \"parktypeDesc\": \"State Fish and Wildlife Area\", \"locationDesc\": \"US-IL\", \"locationName\": \"Illinois\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"W9AAT\", \"firstActivationDate\": \"2023-10-28\"}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://api.pota.app/park/US-10540",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-10540",
+   "title": "",
+   "text": "{\"parkId\": 89261, \"reference\": \"US-10540\", \"name\": \"Bellevue-Watson\", \"latitude\": 40.6322, \"longitude\": -105.17, \"grid4\": \"DN70\", \"grid6\": \"DN70jp\", \"parktypeId\": 232, \"active\": 1, \"parkComments\": \"Dogs are prohibited. Public access is prohibited along the west bank of the Poudre River adjacent to the employee housing. \", \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Foot\", \"activationMethods\": \"Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://cpw.state.co.us/hatchery/bellvue-watson\", \"createdByAdmin\": \"Sharon Agun\", \"parktypeDesc\": \"State Fish Hatchery\", \"locationDesc\": \"US-CO\", \"locationName\": \"Colorado\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"AB2SG\", \"firstActivationDate\": \"2023-11-11\"}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://api.pota.app/park/US-11026",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-11026",
+   "title": "",
+   "text": "{\"parkId\": 91587, \"reference\": \"US-11026\", \"name\": \"The Indian Mountain\", \"latitude\": 34.029, \"longitude\": -85.446, \"grid4\": \"EM74\", \"grid6\": \"EM74ga\", \"parktypeId\": 196, \"active\": 1, \"parkComments\": \"AT&T cell service was not good at 793 Kiosk\", \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Foot\", \"activationMethods\": \"Automobile,Campground,Pedestrian,Shelter\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://www.alabamaforeverwild.com/indian-mountain\", \"createdByAdmin\": \"David Guthrie\", \"parktypeDesc\": \"Conservation Area\", \"locationDesc\": \"US-AL\", \"locationName\": \"Alabama\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"KN4OK\", \"firstActivationDate\": \"2024-01-14\"}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://api.pota.app/park/US-11042",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-11042",
+   "title": "",
+   "text": "{\"parkId\": 91777, \"reference\": \"US-11042\", \"name\": \"Kahrs-Boger\", \"latitude\": 38.5786, \"longitude\": -93.1209, \"grid4\": \"EM38\", \"grid6\": \"EM38kn\", \"parktypeId\": 194, \"active\": 1, \"parkComments\": \"Very easy road-side Conservation Area with parking lot directly next to the road. Obvious sign, RF quiet. Easy to find.\", \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile\", \"activationMethods\": \"Automobile,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://mdc.mo.gov/discover-nature/places/kahrs-boger-park\", \"createdByAdmin\": \"John Ford\", \"parktypeDesc\": \"State Conservation Area\", \"locationDesc\": \"US-MO\", \"locationName\": \"Missouri\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"AB0O\", \"firstActivationDate\": \"2024-01-17\"}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://api.pota.app/park/US-11092",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-11092",
+   "title": "",
+   "text": "{\"parkId\": 92012, \"reference\": \"US-11092\", \"name\": \"Midway Utah\", \"latitude\": 40.498, \"longitude\": -111.469, \"grid4\": \"DN40\", \"grid6\": \"DN40gl\", \"parktypeId\": 232, \"active\": 1, \"parkComments\": \"When parking is open, all grounds are always closed for fish health. Obey all signs. Activation must be mobile-only (no extra-vehicular radios/antennas). Do not seek any grounds access or tours except by appointment made directly with the hatchery.\", \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile\", \"activationMethods\": \"Automobile\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://wildlife.utah.gov/\", \"createdByAdmin\": \"hanneyv\", \"parktypeDesc\": \"State Fish Hatchery\", \"locationDesc\": \"US-UT\", \"locationName\": \"Utah\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"KJ7BES\", \"firstActivationDate\": \"2024-01-29\"}",
+   "links": [],
+   "read_by": "headless browser"
+  },
+  {
+   "url": "https://api.pota.app/park/US-11165",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-11165",
+   "title": "",
+   "text": "{\"parkId\": 92568, \"reference\": \"US-11165\", \"name\": \"Chalk Bluff Battlefield Park\", \"latitude\": 36.4784, \"longitude\": -90.164, \"grid4\": \"EM46\", \"grid6\": \"EM46wl\", \"parktypeId\": 193, \"active\": 1, \"parkComments\": \"A small park that should be very RF quiet. \", \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile\", \"activationMethods\": \"Automobile,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://www.arkansas.com/st-francis/landmarks/chalk-bluff-battlefield-park\", \"createdByAdmin\": \"Eddie Daniel\", \"parktypeDesc\": \"Recreation Park\", \"locationDesc\": \"US-AR\", \"locationName\": \"Arkansas\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"N5MIG\", \"firstActivationDate\": \"2021-10-30\"}",
+   "links": [],
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 27,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "14 result(s), 14 read OK, 0 screenshot(s)"
+}
