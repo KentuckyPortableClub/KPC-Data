@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-US-8705.json",
+ "id": "10-auto-US-8705",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "US-8705",
+  "name": "Stephen Foster State Conservation Area",
+  "agency": "",
+  "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Stephen-Foster.jpg",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-10-30 11:37Z",
+ "results": [
+  {
+   "url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Stephen-Foster.jpg",
+   "map_url": "https://map.mysuwanneeriver.com/wp-content/uploads/2021/09/Stephen-Foster.jpg",
+   "saved": [
+    "maps/US-8705_stephen-foster-state-conservatio.jpg"
+   ],
+   "bytes": 402330,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 2,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
