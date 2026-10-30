@@ -6,11 +6,9 @@
   "US-IA"
  ],
  "since": "2026-10-30",
- "date": "2026-10-30 05:30 UTC",
- "verdict": "PART READY FOR CHAT 8",
- "why": [
-  "water not checked: US-MN: 2 rows (the USGS water map / files had no answer there): never READY with one"
- ],
+ "date": "2026-10-30 07:32 UTC",
+ "verdict": "READY FOR CHAT 8",
+ "why": [],
  "known_answers": "19/19 on 2026-10-30",
  "missing_check": {
   "FOUND": 126,
@@ -29,15 +27,15 @@
    "pairs tested": 166
   },
   "pass3": {
-   "agree with the pass before": 685,
+   "agree with the pass before": 0,
    "date": "2026-10-30",
-   "pairs tested": 166
+   "pairs tested": 0
   },
   "pass5": {
-   "checked": 71,
+   "checked": 69,
    "date": "2026-10-30",
    "pairs tested": 0,
-   "still not checked": 2
+   "still not checked": 0
   }
  },
  "files": {
@@ -45,21 +43,17 @@
   "US-IA": "data/fers/US-IA.json"
  },
  "US-MN": {
-  "rows": 937,
-  "live": 137,
+  "rows": 938,
+  "live": 140,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "no public owner on the ownership map": 8,
    "this spot is 269 km from Beaver Creek Wildlife Management Ar": 1,
-   "this spot is 130 km from Richard J. Dorer Memorial Hardwood": 1,
-   "water not checked": 2
+   "this spot is 130 km from Richard J. Dorer Memorial Hardwood": 1
   },
   "dropped": 378,
   "merged": 410
- },
- "water_weak": {
-  "US-MN": 2
  },
  "US-IA": {
   "rows": 2,
@@ -71,9 +65,8 @@
   "merged": 0
  },
  "states_ready": [
+  "US-MN",
   "US-IA"
  ],
- "states_held": [
-  "US-MN"
- ]
+ "states_held": []
 }

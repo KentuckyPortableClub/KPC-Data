@@ -10,30 +10,6 @@
    "area": "mnia",
    "state": "US-MN",
    "refs": [
-    "US-4491",
-    "US-4795"
-   ],
-   "names": {
-    "US-4491": "Superior National Forest",
-    "US-4795": "Finland State Forest"
-   },
-   "what": "water map weak here (fix later: a better water source)",
-   "kind": "area",
-   "size": "225704.0 ac",
-   "sort": 225704.0,
-   "reason": "water not checked (the USGS water map did not answer): run pass 5",
-   "id": "US-4491+US-4795@area@47.416,-91.413",
-   "sources": {
-    "US-4491": "downloaded 2026-10-30",
-    "US-4795": "downloaded 2026-10-30",
-    "USGS water": "USGS NHDPlus HR file 2020-04-16 (the same NHDPlus HR water, from USGS's download files)"
-   },
-   "checked": "2026-10-30"
-  },
-  {
-   "area": "mnia",
-   "state": "US-MN",
-   "refs": [
     "US-4490",
     "US-4784"
    ],
@@ -853,11 +829,11 @@
     "US-4490": "Chippewa National Forest",
     "US-4799": "George Washington State Forest"
    },
-   "what": "water map weak here (fix later: a better water source)",
+   "what": "more than one owner on the patch (all public): live, look later",
    "kind": "area",
    "size": "54.9 ac",
    "sort": 54.9,
-   "reason": "water not checked (the USGS water map did not answer): run pass 5 \u00b7 ['FED:USFS', 'STATE']",
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:USFS', 'STATE']",
    "id": "US-4490+US-4799@area@47.543,-93.491",
    "sources": {
     "US-4490": "downloaded 2026-10-30",
@@ -1883,6 +1859,28 @@
    "id": "US-2488+US-4795@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (21x, POTA history)"
+   },
+   "checked": "2026-10-30"
+  },
+  {
+   "area": "mnia",
+   "state": "US-MN",
+   "refs": [
+    "US-4491",
+    "US-4795"
+   ],
+   "names": {
+    "US-4491": "Superior National Forest",
+    "US-4795": "Finland State Forest"
+   },
+   "what": "water only (boat spot): is there really no land?",
+   "kind": "area",
+   "size": "20.5 ac",
+   "sort": 20.5,
+   "reason": "water only: boat or kayak",
+   "id": "US-4491+US-4795@area@channel@47.535,-91.612",
+   "sources": {
+    "USGS water": "saved copy of the USGS map, read 2026-10-30"
    },
    "checked": "2026-10-30"
   },
