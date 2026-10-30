@@ -908,5 +908,285 @@
   "status": "no match",
   "why": "13 open parks tested, 0 SURE / LIKELY hit(s)",
   "date": "2026-10-30"
+ },
+ "crawl|US-MA|https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/SurveyTownsFeatureService/FeatureServer/0": {
+  "area": "US-MA",
+  "url": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/SurveyTownsFeatureService/FeatureServer/0",
+  "status": "failed",
+  "why": "RuntimeError: Service not found",
+  "date": "2026-10-30"
+ },
+ "crawl|US-MA|https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/0": {
+  "area": "US-MA",
+  "url": "https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/0",
+  "status": "failed",
+  "why": "RuntimeError: no name field",
+  "date": "2026-10-30"
+ },
+ "crawl|US-MA|https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/DFW_Installations/FeatureServer/0": {
+  "area": "US-MA",
+  "url": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/DFW_Installations/FeatureServer/0",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPoint)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-MA|https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/DFW_Parking_for_Recreation_Maps_V3_view/FeatureServer/0": {
+  "area": "US-MA",
+  "url": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/DFW_Parking_for_Recreation_Maps_V3_view/FeatureServer/0",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPoint)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-MA|https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/LimitedAccessPoints_AGOL/FeatureServer/0": {
+  "area": "US-MA",
+  "url": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/LimitedAccessPoints_AGOL/FeatureServer/0",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPoint)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-MA|https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/LimitedAccess_AGOL/FeatureServer/0": {
+  "area": "US-MA",
+  "url": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/LimitedAccess_AGOL/FeatureServer/0",
+  "status": "no match",
+  "why": "16 open parks tested, 0 SURE / LIKELY hit(s)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-MA|https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/MassWildlifeLands/FeatureServer/0": {
+  "area": "US-MA",
+  "url": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/MassWildlifeLands/FeatureServer/0",
+  "status": "no match",
+  "why": "16 open parks tested, 0 SURE / LIKELY hit(s)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-MA|https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/NonDFGLands_AGOL/FeatureServer/0": {
+  "area": "US-MA",
+  "url": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/NonDFGLands_AGOL/FeatureServer/0",
+  "status": "no match",
+  "why": "16 open parks tested, 0 SURE / LIKELY hit(s)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-MA|https://services1.arcgis.com/hGdibHYSPO59RG1h/arcgis/rest/services/Massachusetts_Municipalities/FeatureServer/1": {
+  "area": "US-MA",
+  "url": "https://services1.arcgis.com/hGdibHYSPO59RG1h/arcgis/rest/services/Massachusetts_Municipalities/FeatureServer/1",
+  "status": "failed",
+  "why": "RuntimeError: no name field",
+  "date": "2026-10-30"
+ },
+ "crawl|US-OK|https://apps.fs.usda.gov/fsgisx05/rest/services/wo_nfs_gtac/IVMQuery/MapServer/1": {
+  "area": "US-OK",
+  "url": "https://apps.fs.usda.gov/fsgisx05/rest/services/wo_nfs_gtac/IVMQuery/MapServer/1",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPolyline)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-OK|https://apps.fs.usda.gov/fsgisx05/rest/services/wo_nfs_gtac/IVMQuery/MapServer/2": {
+  "area": "US-OK",
+  "url": "https://apps.fs.usda.gov/fsgisx05/rest/services/wo_nfs_gtac/IVMQuery/MapServer/2",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPolyline)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-OK|https://apps.fs.usda.gov/fsgisx05/rest/services/wo_nfs_gtac/IVMQuery/MapServer/4": {
+  "area": "US-OK",
+  "url": "https://apps.fs.usda.gov/fsgisx05/rest/services/wo_nfs_gtac/IVMQuery/MapServer/4",
+  "status": "failed",
+  "why": "RuntimeError: no name field",
+  "date": "2026-10-30"
+ },
+ "crawl|US-OK|https://apps.fs.usda.gov/fsgisx05/rest/services/wo_nfs_gtac/IVMQuery/MapServer/5": {
+  "area": "US-OK",
+  "url": "https://apps.fs.usda.gov/fsgisx05/rest/services/wo_nfs_gtac/IVMQuery/MapServer/5",
+  "status": "failed",
+  "why": "RuntimeError: no name field",
+  "date": "2026-10-30"
+ },
+ "crawl|US-OK|https://apps.fs.usda.gov/fsgisx05/rest/services/wo_nfs_gtac/IVMRecreation/MapServer/0": {
+  "area": "US-OK",
+  "url": "https://apps.fs.usda.gov/fsgisx05/rest/services/wo_nfs_gtac/IVMRecreation/MapServer/0",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPoint)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-OK|https://apps.fs.usda.gov/fsgisx05/rest/services/wo_nfs_gtac/IVMRoadTrailCentroids/MapServer/0": {
+  "area": "US-OK",
+  "url": "https://apps.fs.usda.gov/fsgisx05/rest/services/wo_nfs_gtac/IVMRoadTrailCentroids/MapServer/0",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPoint)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-OK|https://apps.fs.usda.gov/fsgisx05/rest/services/wo_nfs_gtac/IVMRoadTrailCentroids/MapServer/1": {
+  "area": "US-OK",
+  "url": "https://apps.fs.usda.gov/fsgisx05/rest/services/wo_nfs_gtac/IVMRoadTrailCentroids/MapServer/1",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPoint)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-OK|https://apps.fs.usda.gov/fsgisx05/rest/services/wo_nfs_gtac/IVMRoadTrailCentroids/MapServer/2": {
+  "area": "US-OK",
+  "url": "https://apps.fs.usda.gov/fsgisx05/rest/services/wo_nfs_gtac/IVMRoadTrailCentroids/MapServer/2",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPoint)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-OK|https://apps.fs.usda.gov/fsgisx05/rest/services/wo_nfs_gtac/IVMRoadTrailCentroids/MapServer/3": {
+  "area": "US-OK",
+  "url": "https://apps.fs.usda.gov/fsgisx05/rest/services/wo_nfs_gtac/IVMRoadTrailCentroids/MapServer/3",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPoint)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-OK|https://apps.fs.usda.gov/fsgisx05/rest/services/wo_nfs_gtac/IVMRoadTrailCentroids/MapServer/4": {
+  "area": "US-OK",
+  "url": "https://apps.fs.usda.gov/fsgisx05/rest/services/wo_nfs_gtac/IVMRoadTrailCentroids/MapServer/4",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPoint)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-OK|https://apps.fs.usda.gov/fsgisx05/rest/services/wo_nfs_gtac/IVMRoadTrailCentroids/MapServer/5": {
+  "area": "US-OK",
+  "url": "https://apps.fs.usda.gov/fsgisx05/rest/services/wo_nfs_gtac/IVMRoadTrailCentroids/MapServer/5",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPoint)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-OK|https://apps.fs.usda.gov/fsgisx05/rest/services/wo_nfs_gtac/IVMRoadTrailCentroids/MapServer/6": {
+  "area": "US-OK",
+  "url": "https://apps.fs.usda.gov/fsgisx05/rest/services/wo_nfs_gtac/IVMRoadTrailCentroids/MapServer/6",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPoint)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-OK|https://apps.fs.usda.gov/fsgisx05/rest/services/wo_nfs_gtac/IVMRoadTrailCentroids/MapServer/7": {
+  "area": "US-OK",
+  "url": "https://apps.fs.usda.gov/fsgisx05/rest/services/wo_nfs_gtac/IVMRoadTrailCentroids/MapServer/7",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPoint)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-OK|https://apps.fs.usda.gov/fsgisx05/rest/services/wo_nfs_gtac/IVMWilderness/MapServer/0": {
+  "area": "US-OK",
+  "url": "https://apps.fs.usda.gov/fsgisx05/rest/services/wo_nfs_gtac/IVMWilderness/MapServer/0",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPoint)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-OK|https://services1.arcgis.com/gGHDlz6USftL5Pau/ArcGIS/rest/services/NFG_ELMER_Online_View/FeatureServer/0": {
+  "area": "US-OK",
+  "url": "https://services1.arcgis.com/gGHDlz6USftL5Pau/ArcGIS/rest/services/NFG_ELMER_Online_View/FeatureServer/0",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPoint)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-OK|https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/DistrictOffices_Phones/FeatureServer/0": {
+  "area": "US-OK",
+  "url": "https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/DistrictOffices_Phones/FeatureServer/0",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (None)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-OK|https://services3.arcgis.com/T4QMspbfLg3qTGWY/ArcGIS/rest/services/WFIGS_Incident_Locations_Current/FeatureServer/0": {
+  "area": "US-OK",
+  "url": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/ArcGIS/rest/services/WFIGS_Incident_Locations_Current/FeatureServer/0",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPoint)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-OK|https://services9.arcgis.com/RHVPKKiFTONKtxq3/ArcGIS/rest/services/NWS_Watches_Warnings_v1/FeatureServer/6": {
+  "area": "US-OK",
+  "url": "https://services9.arcgis.com/RHVPKKiFTONKtxq3/ArcGIS/rest/services/NWS_Watches_Warnings_v1/FeatureServer/6",
+  "status": "failed",
+  "why": "RuntimeError: no name field",
+  "date": "2026-10-30"
+ },
+ "crawl|US-FL|https://services1.arcgis.com/gdr0FcZCwx1BmrQk/arcgis/rest/services/RecreationAmenitiesGeodatabase/FeatureServer/0": {
+  "area": "US-FL",
+  "url": "https://services1.arcgis.com/gdr0FcZCwx1BmrQk/arcgis/rest/services/RecreationAmenitiesGeodatabase/FeatureServer/0",
+  "status": "asked",
+  "why": "34 open parks tested, 1 SURE / LIKELY hit(s)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-FL|https://services1.arcgis.com/gdr0FcZCwx1BmrQk/arcgis/rest/services/RecreationGuide/FeatureServer/0": {
+  "area": "US-FL",
+  "url": "https://services1.arcgis.com/gdr0FcZCwx1BmrQk/arcgis/rest/services/RecreationGuide/FeatureServer/0",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPoint)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-FL|https://services1.arcgis.com/gdr0FcZCwx1BmrQk/arcgis/rest/services/RecreationGuide/FeatureServer/1": {
+  "area": "US-FL",
+  "url": "https://services1.arcgis.com/gdr0FcZCwx1BmrQk/arcgis/rest/services/RecreationGuide/FeatureServer/1",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPoint)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-FL|https://services1.arcgis.com/gdr0FcZCwx1BmrQk/arcgis/rest/services/RecreationGuide/FeatureServer/2": {
+  "area": "US-FL",
+  "url": "https://services1.arcgis.com/gdr0FcZCwx1BmrQk/arcgis/rest/services/RecreationGuide/FeatureServer/2",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPoint)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-FL|https://services1.arcgis.com/gdr0FcZCwx1BmrQk/arcgis/rest/services/RecreationGuide/FeatureServer/3": {
+  "area": "US-FL",
+  "url": "https://services1.arcgis.com/gdr0FcZCwx1BmrQk/arcgis/rest/services/RecreationGuide/FeatureServer/3",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPoint)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-FL|https://services1.arcgis.com/gdr0FcZCwx1BmrQk/arcgis/rest/services/RecreationGuide/FeatureServer/4": {
+  "area": "US-FL",
+  "url": "https://services1.arcgis.com/gdr0FcZCwx1BmrQk/arcgis/rest/services/RecreationGuide/FeatureServer/4",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPoint)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-FL|https://services1.arcgis.com/gdr0FcZCwx1BmrQk/arcgis/rest/services/RecreationGuide/FeatureServer/5": {
+  "area": "US-FL",
+  "url": "https://services1.arcgis.com/gdr0FcZCwx1BmrQk/arcgis/rest/services/RecreationGuide/FeatureServer/5",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPolyline)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-FL|https://services1.arcgis.com/gdr0FcZCwx1BmrQk/arcgis/rest/services/RecreationGuide/FeatureServer/6": {
+  "area": "US-FL",
+  "url": "https://services1.arcgis.com/gdr0FcZCwx1BmrQk/arcgis/rest/services/RecreationGuide/FeatureServer/6",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPolyline)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-FL|https://services1.arcgis.com/gdr0FcZCwx1BmrQk/arcgis/rest/services/RecreationGuide/FeatureServer/7": {
+  "area": "US-FL",
+  "url": "https://services1.arcgis.com/gdr0FcZCwx1BmrQk/arcgis/rest/services/RecreationGuide/FeatureServer/7",
+  "status": "asked",
+  "why": "34 open parks tested, 1 SURE / LIKELY hit(s)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-FL|https://www45.swfwmd.state.fl.us/arcgis12/rest/services/OpenData/Boundaries/MapServer/10": {
+  "area": "US-FL",
+  "url": "https://www45.swfwmd.state.fl.us/arcgis12/rest/services/OpenData/Boundaries/MapServer/10",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPolyline)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-IA|https://geoservices.iowa.gov/arcgis/rest/services/revenue/iowa_counties/FeatureServer/0": {
+  "area": "US-IA",
+  "url": "https://geoservices.iowa.gov/arcgis/rest/services/revenue/iowa_counties/FeatureServer/0",
+  "status": "no match",
+  "why": "5 open parks tested, 0 SURE / LIKELY hit(s)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-IA|https://services2.arcgis.com/r6iFVcMJeA4kB4GC/arcgis/rest/services/2026_WMA_Doves/FeatureServer/0": {
+  "area": "US-IA",
+  "url": "https://services2.arcgis.com/r6iFVcMJeA4kB4GC/arcgis/rest/services/2026_WMA_Doves/FeatureServer/0",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPoint)",
+  "date": "2026-10-30"
+ },
+ "crawl|US-IA|https://services2.arcgis.com/r6iFVcMJeA4kB4GC/arcgis/rest/services/Atlas_Web_Application/FeatureServer/0": {
+  "area": "US-IA",
+  "url": "https://services2.arcgis.com/r6iFVcMJeA4kB4GC/arcgis/rest/services/Atlas_Web_Application/FeatureServer/0",
+  "status": "failed",
+  "why": "RuntimeError: not polygons (esriGeometryPolyline)",
+  "date": "2026-10-30"
  }
 }
