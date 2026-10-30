@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-30T04:50Z",
+ "checked": "2026-10-30T04:56Z",
  "switched_on": false,
  "results": [
   {
@@ -19,13 +19,11 @@
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/US-ME.json",
+   "path": "data/fers/US-VA.json",
    "kind": "fers",
-   "why": [
-    "F-2 only 3 of 4 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/hours/US-KY.json",
