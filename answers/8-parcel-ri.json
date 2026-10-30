@@ -1,0 +1,67 @@
+{
+ "request": "requests/8-parcel-ri.json",
+ "id": "8-parcel-ri",
+ "chat": 8,
+ "kind": "parcel",
+ "report": "US-10545 Hillsdale Preserve Management Area, Richmond RI: owner + parcel id at the park's pin (container is deCoppet Preserve 1825ac, RIDEM owns a 45-ac parcel in Richmond per their own press page)",
+ "asked": {
+  "chat": 8,
+  "kind": "parcel",
+  "layer": "https://risegis.ri.gov/hosting/rest/services/RIDEM/Tax_Parcels/MapServer/0",
+  "points": [
+   [
+    41.522,
+    -71.6411
+   ]
+  ],
+  "report": "US-10545 Hillsdale Preserve Management Area, Richmond RI: owner + parcel id at the park's pin (container is deCoppet Preserve 1825ac, RIDEM owns a 45-ac parcel in Richmond per their own press page)"
+ },
+ "answered": "2026-10-30 13:27Z",
+ "results": [
+  {
+   "point": [
+    41.522,
+    -71.6411
+   ],
+   "owner": [
+    null
+   ],
+   "parcel_id": [
+    null
+   ],
+   "features": [
+    {
+     "OBJECTID": 424247,
+     "PlatLot": "RI 04D-001-000",
+     "Acres": 882.13876063,
+     "E911": null,
+     "TownCode": "RI",
+     "PctImp": null,
+     "PctDev": null,
+     "PctOS": null,
+     "E911_Type": null,
+     "IMP_sqft": null,
+     "Last_UPD": "2025",
+     "E911Desc": null,
+     "OverDW": null,
+     "PWS_Wshed": null,
+     "GW_Acquifer": null,
+     "GW_Recharge": null,
+     "CWHPA": null,
+     "EPA_Sole": null,
+     "PctForest": null
+    }
+   ]
+  }
+ ],
+ "seconds": 0,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 1
+ },
+ "short": "1 result(s), 1 read OK"
+}
