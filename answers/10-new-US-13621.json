@@ -1,0 +1,37 @@
+{
+ "request": "requests/10-new-US-13621.json",
+ "id": "10-new-US-13621",
+ "chat": 10,
+ "kind": "page",
+ "report": "new park US-13621 Desert Shield and Desert Storm National Memorial: its POTA record (website + agency) for the Fable book row",
+ "asked": {
+  "chat": 10,
+  "kind": "page",
+  "urls": [
+   "https://api.pota.app/park/US-13621"
+  ],
+  "report": "new park US-13621 Desert Shield and Desert Storm National Memorial: its POTA record (website + agency) for the Fable book row"
+ },
+ "answered": "2026-10-30 16:58Z",
+ "results": [
+  {
+   "url": "https://api.pota.app/park/US-13621",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-13621",
+   "title": "",
+   "text": "{\"parkId\": 144221, \"reference\": \"US-13621\", \"name\": \"Desert Shield and Desert Storm\", \"latitude\": 38.8915, \"longitude\": -77.0512, \"grid4\": \"FM18\", \"grid6\": \"FM18lv\", \"parktypeId\": 37, \"active\": 1, \"parkComments\": \"Site is open 24 hours a day. Small station footprint and discrete activating is recommended. Please be considerate of visitors. \", \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Foot\", \"activationMethods\": \"Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://www.nps.gov/dsds/index.htm\", \"createdByAdmin\": \"Christopher Dean\", \"parktypeDesc\": \"National Memorial\", \"locationDesc\": \"US-DC\", \"locationName\": \"District Of Columbia\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"W3DFP\", \"firstActivationDate\": \"2026-10-25\"}",
+   "links": [],
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 2,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK, 0 screenshot(s)"
+}
