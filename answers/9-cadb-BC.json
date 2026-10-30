@@ -1,0 +1,203 @@
+{
+ "request": "requests/9-cadb-BC.json",
+ "id": "9-cadb-BC",
+ "chat": 9,
+ "kind": "probe",
+ "report": "CA dive BC: re-run P-2 for 1 name-agreeing parks to get the layer URL",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "CA dive BC: re-run P-2 for 1 name-agreeing parks to get the layer URL",
+  "probe": {
+   "about": "Canada dive (HQ 9:30 AM): refs in order of points: CA-3591",
+   "refs": [
+    "CA-3591"
+   ],
+   "pointq": [
+    {
+     "st": "BC",
+     "url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/5",
+     "note": "BC recreatio",
+     "points": [
+      [
+       49.1938,
+       -122.826
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "BC",
+     "url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/46",
+     "note": "BC-HCA Gover",
+     "points": [
+      [
+       49.1938,
+       -122.826
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "BC",
+     "url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82",
+     "note": "BC-HP Govern",
+     "points": [
+      [
+       49.1938,
+       -122.826
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "BC",
+     "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/10",
+     "note": "Ontario fede",
+     "points": [
+      [
+       49.1938,
+       -122.826
+      ]
+     ],
+     "dist": 100
+    },
+    {
+     "st": "BC",
+     "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "note": "cpcad",
+     "points": [
+      [
+       49.1938,
+       -122.826
+      ]
+     ],
+     "dist": 100
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-30 14:47Z",
+ "results": {
+  "about": "Canada dive (HQ 9:30 AM): refs in order of points: CA-3591",
+  "date": "2026-10-30",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "BC",
+    "url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/5",
+    "note": "BC recreatio",
+    "hits": [
+     {
+      "layer": "5 Recreation Polygons",
+      "point": [
+       49.1938,
+       -122.826
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "BC",
+    "url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/46",
+    "note": "BC-HCA Gover",
+    "hits": [
+     {
+      "layer": "46 Heritage Conservation Areas of BC",
+      "point": [
+       49.1938,
+       -122.826
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "BC",
+    "url": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82",
+    "note": "BC-HP Govern",
+    "hits": [
+     {
+      "layer": "82 Historic Places Spatial Layer (Public View)",
+      "point": [
+       49.1938,
+       -122.826
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "BC",
+    "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/10",
+    "note": "Ontario fede",
+    "hits": [
+     {
+      "layer": "10 Federal Protected Area",
+      "point": [
+       49.1938,
+       -122.826
+      ],
+      "nohit": true
+     }
+    ]
+   },
+   {
+    "st": "BC",
+    "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+    "note": "cpcad",
+    "hits": [
+     {
+      "layer": "0 Protected and conserved area",
+      "point": [
+       49.1938,
+       -122.826
+      ],
+      "attrs": {
+       "NAME_E": "Hawthorne Rotary Park",
+       "NAME_F": "Hawthorne Rotary Park",
+       "PA_OECM_DF": 1,
+       "IPCA": 0,
+       "IUCN_CAT": 6,
+       "STATUS": 2,
+       "QUALYEAR": 2025,
+       "BIOME": "T",
+       "LOC": 2,
+       "O_AREA_HA": 20.150339,
+       "PARENT_ID": 550002630,
+       "ZONE_ID": 550002630,
+       "MECH_E": "Local Bylaws",
+       "TYPE_E": "Park",
+       "OWNER_TYPE": 3,
+       "OWNER_E": "City of Surrey",
+       "GOV_TYPE": 2,
+       "MGMT_E": "City of Surrey",
+       "NO_TAKE": 0,
+       "NO_TAKE_HA": 0,
+       "CONS_OBJ": 0,
+       "PROVIDER": 55,
+       "MPLAN": 1,
+       "MPLAN_REF": "https://www.surrey.ca/sites/default/files/media/documents/NAMPlanOverview.pdf",
+       "PA_BIOME": "Terrestrial protected area"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 25,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
