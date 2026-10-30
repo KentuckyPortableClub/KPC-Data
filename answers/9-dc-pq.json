@@ -1,0 +1,533 @@
+{
+ "request": "requests/9-dc-pq.json",
+ "id": "9-dc-pq",
+ "chat": 9,
+ "kind": "probe",
+ "report": "DC parks pin test vs NPS LRD boundaries (polygons) and NPS trail lines (within 150 m)",
+ "asked": {
+  "chat": 9,
+  "kind": "probe",
+  "report": "DC parks pin test vs NPS LRD boundaries (polygons) and NPS trail lines (within 150 m)",
+  "probe": {
+   "about": "HQ 5:50 PM DC pin-only parks. Refs in order of points: US-0015,US-0655,US-0657,US-13597,US-13621,US-7891,US-4564,US-4567,US-4581,US-4582,US-9898,US-9901",
+   "refs": [
+    "US-0015",
+    "US-0655",
+    "US-0657",
+    "US-13597",
+    "US-13621",
+    "US-7891",
+    "US-4564",
+    "US-4567",
+    "US-4581",
+    "US-4582",
+    "US-9898",
+    "US-9901"
+   ],
+   "pointq": [
+    {
+     "st": "DC",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+     "note": "NPS LRD boundaries",
+     "points": [
+      [
+       39.6007,
+       -77.8265
+      ],
+      [
+       38.8897,
+       -77.0282
+      ],
+      [
+       38.8948,
+       -77.035
+      ],
+      [
+       38.8796,
+       -77.0392
+      ],
+      [
+       38.8915,
+       -77.0512
+      ],
+      [
+       38.9165,
+       -77.0259
+      ],
+      [
+       38.6148,
+       -77.2748
+      ],
+      [
+       38.9049,
+       -77.0681
+      ],
+      [
+       39.2652,
+       -76.5836
+      ],
+      [
+       41.312,
+       -73.9709
+      ],
+      [
+       38.793,
+       -77.0496
+      ],
+      [
+       38.9346,
+       -77.126
+      ]
+     ]
+    },
+    {
+     "st": "DC",
+     "url": "https://services3.arcgis.com/OYP7N6mAJJCyH6hd/ArcGIS/rest/services/National_Historic_Trails/FeatureServer/0",
+     "note": "National Historic Trails lines",
+     "points": [
+      [
+       39.6007,
+       -77.8265
+      ],
+      [
+       38.8897,
+       -77.0282
+      ],
+      [
+       38.8948,
+       -77.035
+      ],
+      [
+       38.8796,
+       -77.0392
+      ],
+      [
+       38.8915,
+       -77.0512
+      ],
+      [
+       38.9165,
+       -77.0259
+      ],
+      [
+       38.6148,
+       -77.2748
+      ],
+      [
+       38.9049,
+       -77.0681
+      ],
+      [
+       39.2652,
+       -76.5836
+      ],
+      [
+       41.312,
+       -73.9709
+      ],
+      [
+       38.793,
+       -77.0496
+      ],
+      [
+       38.9346,
+       -77.126
+      ]
+     ],
+     "dist": 150
+    },
+    {
+     "st": "DC",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/ArcGIS/rest/services/POHE_Trail_Centerline_FTDS_view/FeatureServer/0",
+     "note": "POHE centerline",
+     "points": [
+      [
+       39.6007,
+       -77.8265
+      ],
+      [
+       38.8897,
+       -77.0282
+      ],
+      [
+       38.8948,
+       -77.035
+      ],
+      [
+       38.8796,
+       -77.0392
+      ],
+      [
+       38.8915,
+       -77.0512
+      ],
+      [
+       38.9165,
+       -77.0259
+      ],
+      [
+       38.6148,
+       -77.2748
+      ],
+      [
+       38.9049,
+       -77.0681
+      ],
+      [
+       39.2652,
+       -76.5836
+      ],
+      [
+       41.312,
+       -73.9709
+      ],
+      [
+       38.793,
+       -77.0496
+      ],
+      [
+       38.9346,
+       -77.126
+      ]
+     ],
+     "dist": 150
+    },
+    {
+     "st": "DC",
+     "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/CWDW_Circuit_Trails_2023_NPS/FeatureServer/19",
+     "note": "CWDW circuit trails",
+     "points": [
+      [
+       39.6007,
+       -77.8265
+      ],
+      [
+       38.8897,
+       -77.0282
+      ],
+      [
+       38.8948,
+       -77.035
+      ],
+      [
+       38.8796,
+       -77.0392
+      ],
+      [
+       38.8915,
+       -77.0512
+      ],
+      [
+       38.9165,
+       -77.0259
+      ],
+      [
+       38.6148,
+       -77.2748
+      ],
+      [
+       38.9049,
+       -77.0681
+      ],
+      [
+       39.2652,
+       -76.5836
+      ],
+      [
+       41.312,
+       -73.9709
+      ],
+      [
+       38.793,
+       -77.0496
+      ],
+      [
+       38.9346,
+       -77.126
+      ]
+     ],
+     "dist": 150
+    }
+   ]
+  }
+ },
+ "answered": "2026-10-30 22:46Z",
+ "results": {
+  "about": "HQ 5:50 PM DC pin-only parks. Refs in order of points: US-0015,US-0655,US-0657,US-13597,US-13621,US-7891,US-4564,US-4567,US-4581,US-4582,US-9898,US-9901",
+  "date": "2026-10-30",
+  "layers": [],
+  "searches": [],
+  "orgs": [],
+  "hubs": [],
+  "pages": [],
+  "pointq": [
+   {
+    "st": "DC",
+    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+    "note": "NPS LRD boundaries",
+    "hits": [
+     {
+      "layer": "2 nps_boundary",
+      "point": [
+       39.6007,
+       -77.8265
+      ],
+      "attrs": {
+       "UNIT_CODE": "CHOH",
+       "UNIT_NAME": "Chesapeake and Ohio Canal National Historical Park",
+       "DATE_EDIT": 1776124800000,
+       "STATE": "MD-DC-WV",
+       "REGION": "NCR",
+       "UNIT_TYPE": "National Historical Parks",
+       "METADATA": "https://landsnet.nps.gov/tractsnet/documents/CHOH/Metadata/choh_metadata.xml",
+       "PARKNAME": "Chesapeake and Ohio Canal National Historical Park",
+       "AreaID": 102,
+       "Status": "Official",
+       "IRMAReference": "https://irma.nps.gov/DataStore/DownloadFile/757730"
+      }
+     },
+     {
+      "layer": "2 nps_boundary",
+      "point": [
+       38.8897,
+       -77.0282
+      ],
+      "attrs": {
+       "UNIT_CODE": "MALL",
+       "UNIT_NAME": "National Mall",
+       "DATE_EDIT": 1787270400000,
+       "STATE": "DC",
+       "REGION": "NCR",
+       "UNIT_TYPE": "Other Designations",
+       "METADATA": "https://landsnet.nps.gov/tractsnet/documents/MALL/Metadata/mall_metadata.xml",
+       "PARKNAME": "National Mall",
+       "EditDate": 1787270400000,
+       "AreaID": 97,
+       "Status": "Official",
+       "IRMAReference": "https://irma.nps.gov/DataStore/DownloadFile/757730"
+      }
+     },
+     {
+      "layer": "2 nps_boundary",
+      "point": [
+       38.8948,
+       -77.035
+      ],
+      "attrs": {
+       "UNIT_CODE": "NACA",
+       "UNIT_NAME": "National Capital Parks",
+       "DATE_EDIT": 1790640000000,
+       "STATE": "DC-MD",
+       "REGION": "NCR",
+       "UNIT_TYPE": "Other Designations",
+       "METADATA": "https://landsnet.nps.gov/tractsnet/documents/NACA/Metadata/naca_metadata.xml",
+       "PARKNAME": "National Capital Parks",
+       "AreaID": 92,
+       "Status": "Official",
+       "IRMAReference": "https://irma.nps.gov/DataStore/DownloadFile/757730"
+      }
+     },
+     {
+      "layer": "2 nps_boundary",
+      "point": [
+       38.8796,
+       -77.0392
+      ],
+      "attrs": {
+       "UNIT_CODE": "NACA",
+       "UNIT_NAME": "National Capital Parks",
+       "DATE_EDIT": 1790640000000,
+       "STATE": "DC-MD",
+       "REGION": "NCR",
+       "UNIT_TYPE": "Other Designations",
+       "METADATA": "https://landsnet.nps.gov/tractsnet/documents/NACA/Metadata/naca_metadata.xml",
+       "PARKNAME": "National Capital Parks",
+       "AreaID": 92,
+       "Status": "Official",
+       "IRMAReference": "https://irma.nps.gov/DataStore/DownloadFile/757730"
+      }
+     },
+     {
+      "layer": "2 nps_boundary",
+      "point": [
+       38.8915,
+       -77.0512
+      ],
+      "attrs": {
+       "UNIT_CODE": "NACA",
+       "UNIT_NAME": "National Capital Parks",
+       "DATE_EDIT": 1790640000000,
+       "STATE": "DC-MD",
+       "REGION": "NCR",
+       "UNIT_TYPE": "Other Designations",
+       "METADATA": "https://landsnet.nps.gov/tractsnet/documents/NACA/Metadata/naca_metadata.xml",
+       "PARKNAME": "National Capital Parks",
+       "AreaID": 92,
+       "Status": "Official",
+       "IRMAReference": "https://irma.nps.gov/DataStore/DownloadFile/757730"
+      }
+     },
+     {
+      "layer": "2 nps_boundary",
+      "point": [
+       38.9165,
+       -77.0259
+      ],
+      "attrs": {
+       "UNIT_CODE": "NACA",
+       "UNIT_NAME": "National Capital Parks",
+       "DATE_EDIT": 1790640000000,
+       "STATE": "DC-MD",
+       "REGION": "NCR",
+       "UNIT_TYPE": "Other Designations",
+       "METADATA": "https://landsnet.nps.gov/tractsnet/documents/NACA/Metadata/naca_metadata.xml",
+       "PARKNAME": "National Capital Parks",
+       "AreaID": 92,
+       "Status": "Official",
+       "IRMAReference": "https://irma.nps.gov/DataStore/DownloadFile/757730"
+      }
+     },
+     {
+      "layer": "2 nps_boundary",
+      "point": [
+       38.6148,
+       -77.2748
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 nps_boundary",
+      "point": [
+       38.9049,
+       -77.0681
+      ],
+      "attrs": {
+       "UNIT_CODE": "NACA",
+       "UNIT_NAME": "National Capital Parks",
+       "DATE_EDIT": 1790640000000,
+       "STATE": "DC-MD",
+       "REGION": "NCR",
+       "UNIT_TYPE": "Other Designations",
+       "METADATA": "https://landsnet.nps.gov/tractsnet/documents/NACA/Metadata/naca_metadata.xml",
+       "PARKNAME": "National Capital Parks",
+       "AreaID": 92,
+       "Status": "Official",
+       "IRMAReference": "https://irma.nps.gov/DataStore/DownloadFile/757730"
+      }
+     },
+     {
+      "layer": "2 nps_boundary",
+      "point": [
+       39.2652,
+       -76.5836
+      ],
+      "attrs": {
+       "UNIT_CODE": "FOMC",
+       "UNIT_NAME": "Fort McHenry National Monument and Historic Shrine",
+       "DATE_EDIT": 1326412800000,
+       "STATE": "MD",
+       "REGION": "NER",
+       "UNIT_TYPE": "National Monuments",
+       "METADATA": "https://landsnet.nps.gov/tractsnet/documents/FOMC/Metadata/fomc_metadata.xml",
+       "PARKNAME": "Fort McHenry National Monument and Historic Shrine",
+       "AreaID": 143,
+       "Status": "Official",
+       "IRMAReference": "https://irma.nps.gov/DataStore/DownloadFile/757730"
+      }
+     },
+     {
+      "layer": "2 nps_boundary",
+      "point": [
+       41.312,
+       -73.9709
+      ],
+      "nohit": true
+     },
+     {
+      "layer": "2 nps_boundary",
+      "point": [
+       38.793,
+       -77.0496
+      ],
+      "attrs": {
+       "UNIT_CODE": "GWMP",
+       "UNIT_NAME": "George Washington Memorial Parkway",
+       "DATE_EDIT": 1790726400000,
+       "STATE": "MD-VA",
+       "REGION": "NCR",
+       "UNIT_TYPE": "Parkways",
+       "METADATA": "https://landsnet.nps.gov/tractsnet/documents/GWMP/Metadata/gwmp_metadata.xml",
+       "PARKNAME": "George Washington Memorial Parkway",
+       "AreaID": 107,
+       "Status": "Official",
+       "IRMAReference": "https://irma.nps.gov/DataStore/DownloadFile/757730"
+      }
+     },
+     {
+      "layer": "2 nps_boundary",
+      "point": [
+       38.9346,
+       -77.126
+      ],
+      "attrs": {
+       "UNIT_CODE": "GWMP",
+       "UNIT_NAME": "George Washington Memorial Parkway",
+       "DATE_EDIT": 1790726400000,
+       "STATE": "MD-VA",
+       "REGION": "NCR",
+       "UNIT_TYPE": "Parkways",
+       "METADATA": "https://landsnet.nps.gov/tractsnet/documents/GWMP/Metadata/gwmp_metadata.xml",
+       "PARKNAME": "George Washington Memorial Parkway",
+       "AreaID": 107,
+       "Status": "Official",
+       "IRMAReference": "https://irma.nps.gov/DataStore/DownloadFile/757730"
+      }
+     }
+    ]
+   },
+   {
+    "st": "DC",
+    "url": "https://services3.arcgis.com/OYP7N6mAJJCyH6hd/ArcGIS/rest/services/National_Historic_Trails/FeatureServer/0",
+    "note": "National Historic Trails lines",
+    "hits": [
+     {
+      "layer": "0 Historical_Trails_Lines",
+      "skipped": "not a polygon layer (esriGeometryPolyline)"
+     }
+    ]
+   },
+   {
+    "st": "DC",
+    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/ArcGIS/rest/services/POHE_Trail_Centerline_FTDS_view/FeatureServer/0",
+    "note": "POHE centerline",
+    "hits": [
+     {
+      "layer": "0 Potomac Heritage NST",
+      "skipped": "not a polygon layer (esriGeometryPolyline)"
+     }
+    ]
+   },
+   {
+    "st": "DC",
+    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/CWDW_Circuit_Trails_2023_NPS/FeatureServer/19",
+    "note": "CWDW circuit trails",
+    "hits": [
+     {
+      "layer": "19 Circuit Trails 2023",
+      "skipped": "not a polygon layer (esriGeometryPolyline)"
+     }
+    ]
+   }
+  ]
+ },
+ "seconds": 30,
+ "manners": {
+  "requests": 0,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}
