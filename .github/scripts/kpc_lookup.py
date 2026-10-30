@@ -103,7 +103,7 @@ def do_steps(pg, steps):
     return done
 
 
-def read_page(u, shot_path=None, pages=1, steps=None, read=None):
+def read_page(u, shot_path=None, pages=1, steps=None, read=None, full=False):
     r = {'url': u}
     if not M: r['status'] = 'no manners module: not read'; return r
     h = M.host(u)
@@ -138,7 +138,11 @@ def read_page(u, shot_path=None, pages=1, steps=None, read=None):
             r['links'] = [{'url': a, 'text': t[:100]} for a, t in pg.eval_on_selector_all('a[href]', 'els => els.map(e => [e.href, e.innerText])')
                           if a.startswith('http')][:LINKS_MAX]
             if shot_path:
-                pg.screenshot(path=str(shot_path), full_page=False, type='jpeg', quality=60); r['screenshot'] = str(shot_path)
+                if full:   # Oct 30 (chat 11 'cannot see'): a record page puts the answer BELOW its query form: the whole page, cut at 4000 px
+                    h = min(4000, pg.evaluate('document.body.scrollHeight') or 900)
+                    pg.screenshot(path=str(shot_path), clip={'x': 0, 'y': 0, 'width': 1280, 'height': h}, full_page=True, type='jpeg', quality=55)
+                else: pg.screenshot(path=str(shot_path), full_page=False, type='jpeg', quality=60)
+                r['screenshot'] = str(shot_path)
             pg.close(); r['read_by'] = 'headless browser'
             return r
         except Exception as e:  # noqa: BLE001
@@ -196,7 +200,7 @@ def run(req):
             for i, u in enumerate((q.get('urls') or [])[:URLS_MAX]):
                 shot = ANS / f'{rid}-{i + 1}.jpg' if (kind == 'map-check' or q.get('screenshot')) else None
                 if isinstance(u, dict):   # {url, steps, read}: clicks before the read (our own pages only)
-                    out['results'].append(read_page(u.get('url', ''), shot, int(q.get('pages') or 1), u.get('steps'), u.get('read')))
+                    out['results'].append(read_page(u.get('url', ''), shot, int(q.get('pages') or 1), u.get('steps'), u.get('read'), bool(u.get('full'))))
                 else: out['results'].append(read_page(u, shot, int(q.get('pages') or 1)))
         elif kind == 'layer-probe':
             import kpc_adds_probe as P
